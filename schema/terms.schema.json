@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matheigo.org/schema/terms.schema.json",
+  "title": "MathEigo term",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "_common.schema.json#/$defs/id" },
+    "ja": {
+      "type": "object",
+      "properties": {
+        "term": { "type": "string", "minLength": 1 },
+        "reading": { "type": "string", "minLength": 1, "description": "ひらがな。ローマ字は wanakana で自動生成する。" },
+        "alt": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["term", "reading"],
+      "additionalProperties": false
+    },
+    "en": {
+      "type": "object",
+      "properties": {
+        "term": { "type": "string", "minLength": 1 },
+        "alt": { "type": "array", "items": { "type": "string" }, "description": "Plain synonyms used in the same register as en.term." },
+        "variants": {
+          "type": "array",
+          "description": "Alternative wordings that belong to a DIFFERENT register than en.term. Use this, not alt, when the spoken and written forms diverge (移項: spoken \"move it over\" vs written \"subtract 3 from both sides\").",
+          "items": {
+            "type": "object",
+            "properties": {
+              "term": { "type": "string", "minLength": 1 },
+              "register": { "enum": ["spoken", "written", "both"] },
+              "note": { "type": "string" }
+            },
+            "required": ["term", "register"],
+            "additionalProperties": false
+          }
+        },
+        "uk": { "type": ["string", "null"], "description": "British variant, if it differs." },
+        "register": { "enum": ["spoken", "written", "both"] }
+      },
+      "required": ["term"],
+      "additionalProperties": false
+    },
+    "pos": { "enum": ["noun", "verb", "adjective", "phrase", "symbol"] },
+    "mapping": { "enum": ["exact", "near", "none"] },
+    "mapping_note": { "type": ["string", "null"] },
+    "domains": { "type": "array", "minItems": 1, "items": { "$ref": "_common.schema.json#/$defs/domain" } },
+    "level": { "$ref": "_common.schema.json#/$defs/level" },
+    "definition_ja": { "type": "string", "minLength": 1 },
+    "definition_en": { "type": "string", "minLength": 1 },
+    "latex": { "type": ["string", "null"] },
+    "spoken_en": { "type": ["string", "null"] },
+    "tts_text": { "type": "string" },
+    "respelling": { "type": "string" },
+    "ipa": { "type": "string" },
+    "audio": { "type": "string" },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "string", "minLength": 1 },
+          "ja": { "type": "string", "minLength": 1 },
+          "register": { "enum": ["spoken", "written"] }
+        },
+        "required": ["en", "ja", "register"],
+        "additionalProperties": false
+      }
+    },
+    "collocations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": { "en": { "type": "string" }, "ja": { "type": "string" } },
+        "required": ["en", "ja"],
+        "additionalProperties": false
+      }
+    },
+    "pitfalls": { "type": "array", "items": { "type": "string" } },
+    "related": { "type": "array", "items": { "$ref": "_common.schema.json#/$defs/id" } },
+    "evidence": { "$ref": "_common.schema.json#/$defs/evidence" },
+    "sources": { "$ref": "_common.schema.json#/$defs/sources" },
+    "confidence": { "$ref": "_common.schema.json#/$defs/confidence" },
+    "flags": { "$ref": "_common.schema.json#/$defs/flags" },
+    "reviewed": { "$ref": "_common.schema.json#/$defs/reviewed" },
+    "updated": { "$ref": "_common.schema.json#/$defs/date" }
+  },
+  "required": [
+    "id", "ja", "en", "pos", "mapping", "domains", "level",
+    "definition_ja", "definition_en", "sources", "confidence"
+  ],
+  "additionalProperties": false
+}

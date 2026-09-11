@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matheigo.org/schema/symbols.schema.json",
+  "title": "MathEigo symbol / expression reading",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "_common.schema.json#/$defs/id" },
+    "latex": { "type": "string", "minLength": 1 },
+    "spoken_en": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string", "minLength": 1 },
+          "register": { "enum": ["standard", "spoken", "written"] }
+        },
+        "required": ["text", "register"],
+        "additionalProperties": false
+      }
+    },
+    "spoken_ja": { "type": "string", "minLength": 1 },
+    "name_en": { "type": "string", "minLength": 1 },
+    "name_ja": { "type": "string", "minLength": 1 },
+    "term_ref": { "anyOf": [{ "$ref": "_common.schema.json#/$defs/id" }, { "type": "null" }] },
+    "level": { "$ref": "_common.schema.json#/$defs/level" },
+    "notes": { "type": "array", "items": { "type": "string" } },
+    "tts_text": { "type": "string" },
+    "respelling": { "type": "string" },
+    "ipa": { "type": "string" },
+    "audio": { "type": "string" },
+    "evidence": { "$ref": "_common.schema.json#/$defs/evidence" },
+    "sources": { "$ref": "_common.schema.json#/$defs/sources" },
+    "confidence": { "$ref": "_common.schema.json#/$defs/confidence" },
+    "flags": { "$ref": "_common.schema.json#/$defs/flags" },
+    "reviewed": { "$ref": "_common.schema.json#/$defs/reviewed" },
+    "updated": { "$ref": "_common.schema.json#/$defs/date" }
+  },
+  "required": ["id", "latex", "spoken_en", "spoken_ja", "name_en", "name_ja", "level", "sources", "confidence"],
+  "additionalProperties": false
+}

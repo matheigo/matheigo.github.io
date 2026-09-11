@@ -1,0 +1,29 @@
+{
+  "id": "explaining-solution-first-step",
+  "situation": "explaining-solution",
+  "intent": "自分の解き方を、順を追って説明し始める",
+  "en": "First I set the two expressions equal, then I solved for x and checked the answer.",
+  "ja": "まず 2 つの式を等号で結んで、x について解いて、最後に答えを確かめました。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "What I did was set them equal and solve for x.",
+      "register": "casual"
+    },
+    {
+      "en": "I started by setting the two expressions equal to each other.",
+      "register": "polite"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "sequence"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-10"
+}

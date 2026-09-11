@@ -1,0 +1,91 @@
+{
+  "id": "completing-the-square",
+  "ja": {
+    "term": "平方完成",
+    "reading": "へいほうかんせい",
+    "alt": [
+      "平方完成する"
+    ]
+  },
+  "en": {
+    "term": "completing the square",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3",
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "二次式を a(x−p)²+q の形に変形すること。頂点や最大最小を読み取るために使う。",
+  "definition_en": "Rewriting a quadratic as a(x−p)²+q so that the vertex, or the maximum or minimum, can be read off.",
+  "latex": "x^2 + 6x + 5 = (x+3)^2 - 4",
+  "spoken_en": "x squared plus six x plus five equals the quantity x plus three, squared, minus four",
+  "examples": [
+    {
+      "en": "Complete the square to find the vertex.",
+      "ja": "平方完成して頂点を求めなさい。",
+      "register": "written"
+    },
+    {
+      "en": "You could factor it, but completing the square is faster here.",
+      "ja": "因数分解でもできるけど、ここは平方完成のほうが速い。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "complete the square",
+      "ja": "平方完成する"
+    },
+    {
+      "en": "in vertex form",
+      "ja": "平方完成した形で"
+    }
+  ],
+  "pitfalls": [
+    "米国では平方完成した形を vertex form と呼び、その名前のほうが授業でよく出る。"
+  ],
+  "related": [
+    "quadratic-formula"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "平方完成",
+      "en": "Completing the square"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-10",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-10",
+  "evidence": {
+    "spoken": {
+      "completing the square": 27
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06"
+    ],
+    "counted": "2026-09-11"
+  }
+}

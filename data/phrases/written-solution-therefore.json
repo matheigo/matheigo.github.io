@@ -1,0 +1,30 @@
+{
+  "id": "written-solution-therefore",
+  "situation": "written-solution",
+  "intent": "答案で「よって」「したがって」と書く",
+  "en": "Therefore x = 3 is the only solution.",
+  "ja": "よって x=3 が唯一の解である。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Hence x = 3 is the only solution.",
+      "register": "written"
+    },
+    {
+      "en": "So x = 3 is the only solution.",
+      "register": "neutral",
+      "note": "米国の答案では so で十分な場面が多い。硬くしすぎない。"
+    }
+  ],
+  "tags": [
+    "writing",
+    "conclusion"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-10"
+}

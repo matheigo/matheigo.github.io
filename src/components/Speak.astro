@@ -1,0 +1,33 @@
+---
+interface Props {
+  text: string;
+  label?: string;
+}
+const { text, label = "音声で聞く" } = Astro.props;
+---
+
+<button class="speak" data-text={text} hidden>🔊 {label}</button>
+
+<script>
+  // Web Speech API (PLAN 7). If the device has no en-US voice the button stays hidden.
+  const synth = window.speechSynthesis;
+  if (synth) {
+    const reveal = () => {
+      const hasEn = synth.getVoices().some((v) => v.lang.toLowerCase().startsWith("en"));
+      if (!hasEn) return;
+      document.querySelectorAll<HTMLButtonElement>("button.speak").forEach((b) => (b.hidden = false));
+    };
+    reveal();
+    synth.addEventListener?.("voiceschanged", reveal);
+
+    document.addEventListener("click", (e) => {
+      const btn = (e.target as HTMLElement)?.closest("button.speak") as HTMLButtonElement | null;
+      if (!btn) return;
+      synth.cancel();
+      const u = new SpeechSynthesisUtterance(btn.dataset.text ?? "");
+      u.lang = "en-US";
+      u.rate = 0.92;
+      synth.speak(u);
+    });
+  }
+</script>

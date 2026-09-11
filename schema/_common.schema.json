@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matheigo.org/schema/_common.schema.json",
+  "title": "MathEigo shared definitions",
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "English kebab-case identifier. Must equal the filename stem."
+    },
+    "confidence": {
+      "enum": ["draft", "likely", "verified"],
+      "description": "draft -> likely -> verified. Only 'verified' is published by default (PLAN 8)."
+    },
+    "levelJP": {
+      "enum": ["小学校", "中1", "中2", "中3", "数I", "数A", "数II", "数B", "数III", "数C", "大学"]
+    },
+    "levelUS": {
+      "enum": [
+        "Pre-Algebra",
+        "Algebra 1",
+        "Geometry",
+        "Algebra 2",
+        "Integrated Math 1",
+        "Integrated Math 2",
+        "Integrated Math 3",
+        "Precalculus",
+        "AP Calculus AB",
+        "AP Calculus BC",
+        "AP Statistics",
+        "Calculus I",
+        "Calculus II",
+        "Calculus III",
+        "Linear Algebra",
+        "Intro Statistics",
+        "Discrete Math"
+      ]
+    },
+    "level": {
+      "type": "object",
+      "properties": {
+        "jp": { "type": "array", "items": { "$ref": "#/$defs/levelJP" } },
+        "us": { "type": "array", "items": { "$ref": "#/$defs/levelUS" } }
+      },
+      "required": ["jp", "us"],
+      "additionalProperties": false
+    },
+    "domain": {
+      "enum": [
+        "arithmetic",
+        "algebra",
+        "geometry",
+        "trigonometry",
+        "functions",
+        "sequences",
+        "calculus",
+        "analysis",
+        "linear-algebra",
+        "vectors",
+        "complex-numbers",
+        "number-theory",
+        "combinatorics",
+        "probability",
+        "statistics",
+        "discrete",
+        "logic",
+        "set-theory",
+        "proof",
+        "notation",
+        "classroom"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "wikipedia-langlink",
+            "wikidata",
+            "mext-translation",
+            "criced",
+            "nysed-glossary",
+            "reference",
+            "textbook",
+            "editorial"
+          ]
+        },
+        "ja": { "type": "string" },
+        "en": { "type": "string" },
+        "qid": { "type": "string", "pattern": "^Q[0-9]+$" },
+        "doc": { "type": "string" },
+        "title": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "note": { "type": "string" }
+      },
+      "required": ["type"],
+      "additionalProperties": false
+    },
+    "sources": { "type": "array", "items": { "$ref": "#/$defs/source" } },
+    "flags": {
+      "type": "array",
+      "description": "Machine or crosscheck findings that block promotion to 'verified'.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": { "type": "string" },
+          "note": { "type": "string" },
+          "raised": { "type": "string", "format": "date" }
+        },
+        "required": ["code", "note"],
+        "additionalProperties": false
+      }
+    },
+    "reviewed": {
+      "type": "object",
+      "properties": {
+        "machine": { "type": ["string", "null"], "format": "date" },
+        "audit": { "type": ["string", "null"], "format": "date" },
+        "human": { "type": ["string", "null"], "format": "date" }
+      },
+      "additionalProperties": false
+    },
+    "date": { "type": "string", "format": "date" },
+    "evidence": {
+      "type": "object",
+      "description": "Corpus counts behind the register split (PLAN 15). Raw observed totals. Written by scripts/corpus/decide.ts; never edited by hand.",
+      "properties": {
+        "spoken": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+        "written": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+        "sources": { "type": "array", "items": { "type": "string" } },
+        "counted": { "type": "string", "format": "date" }
+      },
+      "required": ["sources", "counted"],
+      "additionalProperties": false
+    },
+    "audio": {
+      "type": "object",
+      "description": "Pronunciation support (PLAN 14). All optional.",
+      "properties": {
+        "tts_text": { "type": "string" },
+        "respelling": { "type": "string" },
+        "ipa": { "type": "string" },
+        "audio": { "type": "string", "pattern": "^audio/[a-z]+/[a-z0-9-]+\\.(mp3|ogg)$" }
+      }
+    }
+  }
+}

@@ -1,0 +1,230 @@
+/* MathEigo — one column, two languages, a hairline between them.
+   Type and weight carry the hierarchy; nothing is boxed or shadowed. */
+
+:root {
+  --bg: #fdfdfc;
+  --fg: #121826;
+  --muted: #5c6679;
+  --rule: #e3e7ee;
+  --accent: #0b4f8a;
+  --accent-soft: #eef4fa;
+  --warn: #8a5a00;
+
+  --font-ja: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+  --font-en: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --measure: 34rem;
+  --step-0: 1rem;
+  --step-1: 1.2rem;
+  --step-2: 1.5rem;
+  --step-3: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f131b;
+    --fg: #e6eaf2;
+    --muted: #99a3b5;
+    --rule: #232a36;
+    --accent: #8ab8e8;
+    --accent-soft: #172231;
+    --warn: #d7a94a;
+  }
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-ja);
+  font-size: var(--step-0);
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+}
+
+.wrap {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 4rem;
+}
+
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:focus-visible,
+button:focus-visible,
+input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* masthead ---------------------------------------------------------------- */
+
+.masthead {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 1.5rem;
+}
+.masthead a.home {
+  font-weight: 700;
+  font-size: var(--step-1);
+  color: var(--fg);
+  text-decoration: none;
+}
+.masthead nav { margin-left: auto; display: flex; gap: 0.9rem; flex-wrap: wrap; }
+.masthead nav a { font-size: 0.875rem; color: var(--muted); text-decoration: none; }
+.masthead nav a:hover { color: var(--accent); }
+
+/* search ------------------------------------------------------------------ */
+
+#q {
+  width: 100%;
+  font: inherit;
+  font-size: var(--step-1);
+  padding: 0.7rem 0.85rem;
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
+#q::placeholder { color: var(--muted); }
+
+.hits { list-style: none; margin: 1.25rem 0 0; padding: 0; }
+.hit { border-top: 1px solid var(--rule); }
+.hit:last-child { border-bottom: 1px solid var(--rule); }
+.hit a {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.15rem 1rem;
+  padding: 0.7rem 0;
+  text-decoration: none;
+  color: inherit;
+}
+.hit a:hover .hit-en { text-decoration: underline; }
+.hit-ja { font-weight: 600; }
+.hit-en { font-family: var(--font-en); color: var(--accent); }
+.hit-reading,
+.hit-kind { font-size: 0.8125rem; color: var(--muted); }
+.hit-kind { justify-self: end; }
+
+/* term page --------------------------------------------------------------- */
+
+.term-head { margin: 0 0 1.5rem; }
+.term-ja { font-size: var(--step-3); font-weight: 700; line-height: 1.3; margin: 0; }
+.term-reading { color: var(--muted); font-size: 0.875rem; margin: 0.15rem 0 0; }
+.term-en {
+  font-family: var(--font-en);
+  font-size: var(--step-2);
+  color: var(--accent);
+  margin: 0.6rem 0 0;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--accent);
+}
+.term-en small { display: block; font-size: 0.8125rem; color: var(--muted); padding-top: 0.2rem; }
+
+/* the one loud element: the line you actually say out loud */
+.say {
+  margin: 1.5rem 0;
+  padding: 1rem 1.1rem;
+  background: var(--accent-soft);
+  border-radius: 8px;
+  font-family: var(--font-en);
+  font-size: var(--step-1);
+  line-height: 1.5;
+}
+.say .say-label { font-family: var(--font-ja); font-size: 0.8125rem; color: var(--muted); display: block; margin-bottom: 0.35rem; }
+.say button {
+  font: inherit;
+  font-size: 0.875rem;
+  margin-top: 0.6rem;
+  padding: 0.3rem 0.7rem;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.say button[hidden] { display: none; }
+
+section.block { margin: 2rem 0; }
+section.block > h2 {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--rule);
+}
+section.block p { margin: 0 0 0.6rem; }
+
+dl.pairs { margin: 0; }
+dl.pairs dt { font-family: var(--font-en); color: var(--accent); margin-top: 0.6rem; }
+dl.pairs dd { margin: 0; color: var(--muted); font-size: 0.9375rem; }
+
+ul.plain { margin: 0; padding-left: 1.1rem; }
+ul.plain li { margin-bottom: 0.35rem; }
+
+.example { margin: 0 0 0.9rem; }
+.example .en { font-family: var(--font-en); margin: 0; }
+.example .ja { margin: 0.1rem 0 0; color: var(--muted); font-size: 0.9375rem; }
+
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-family: var(--font-ja);
+  padding: 0.05rem 0.45rem;
+  border-radius: 4px;
+  border: 1px solid currentColor;
+  vertical-align: 0.15em;
+}
+.badge.unverified { color: var(--warn); }
+.badge.mapping { color: var(--muted); }
+
+.meta { font-size: 0.8125rem; color: var(--muted); }
+.meta ul { list-style: none; margin: 0.3rem 0 0; padding: 0; }
+
+table.grid { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
+table.grid th,
+table.grid td { text-align: left; vertical-align: top; padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid var(--rule); }
+table.grid th { color: var(--muted); font-weight: 600; font-size: 0.8125rem; }
+
+.katex-display { margin: 0.6rem 0; overflow-x: auto; overflow-y: hidden; }
+
+footer.site {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+/* 未確認（confidence: likely）の項目。既定では隠れている。 */
+html[data-unverified="hide"] [data-unverified-item] { display: none; }
+
+.masthead .toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  cursor: pointer;
+}
+.masthead .toggle input { accent-color: var(--accent); margin: 0; }
+
+.unverified-note {
+  margin: 0 0 1.25rem;
+  padding: 0.6rem 0.8rem;
+  border-left: 2px solid var(--warn);
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.empty-note { color: var(--muted); font-size: 0.9375rem; }

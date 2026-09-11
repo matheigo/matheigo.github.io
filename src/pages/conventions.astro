@@ -1,0 +1,36 @@
+---
+import Base from "../layouts/Base.astro";
+import { conventions, isUnverified } from "../lib/data";
+
+const categories = [...new Set(conventions.map((c) => c.category))];
+const CATEGORY_LABELS: Record<string, string> = {
+  notation: "記法", letters: "使う文字", terminology: "用語", "proof-style": "証明・答案",
+  handwriting: "手書き", calculator: "計算機", "classroom-culture": "教室の習慣",
+};
+---
+
+<Base title="日米の慣習差 — MathEigo" description="同じ数学でも、日本と米国で書き方・言い方が違うところ。">
+  <h1 class="term-ja" style="font-size:var(--step-2)">日米の慣習差</h1>
+  <p>内容は同じでも、書き方や言い方が違うところ。答案で減点されるのはたいていここです。</p>
+
+  {categories.map((cat) => (
+    <>
+      <h2 style="font-size:var(--step-1);margin-top:2rem">{CATEGORY_LABELS[cat] ?? cat}</h2>
+      <table class="grid">
+        <thead>
+          <tr><th>項目</th><th>日本</th><th>米国</th><th>答案では</th></tr>
+        </thead>
+        <tbody>
+          {conventions.filter((c) => c.category === cat).map((c) => (
+            <tr id={c.id} data-unverified-item={isUnverified(c) ? "" : undefined}>
+              <td><strong>{c.title_ja}</strong></td>
+              <td>{c.jp}</td>
+              <td>{c.us}</td>
+              <td>{c.advice_ja}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
+  ))}
+</Base>

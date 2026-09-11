@@ -1,0 +1,78 @@
+{
+  "id": "sign-chart",
+  "ja": {
+    "term": "増減表",
+    "reading": "ぞうげんひょう",
+    "alt": []
+  },
+  "en": {
+    "term": "sign chart",
+    "alt": [
+      "sign diagram"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "日本の増減表（x の行・f′(x) の行・f(x) の行を並べ、矢印で増減を書く表）は米国では定型として教えない。同じ判断は first-derivative test で行い、f′ の符号を数直線上に + と − で書く sign chart で示すのが普通。数IIIの凹凸まで入れた表も扱いは同じで、凹凸は f″ について別の sign chart を書く（concavity / second-derivative test）。答案に増減表を書いても減点はまずされないが、f′(x) と f(x) の行が何を表すか、矢印が increasing / decreasing を意味することを一言添えておく。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "導関数の符号を区間ごとに並べ、もとの関数の増減と極値を読み取る表。",
+  "definition_en": "A number line, or table, marked with the sign of the derivative on each interval, used to find where a function rises and falls.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Make a sign chart for f prime and see where it changes from plus to minus.",
+      "ja": "f′ の増減表を書いて、正から負に変わるところを見て。",
+      "register": "spoken"
+    },
+    {
+      "en": "By the first-derivative test, f has a local maximum at x = 1.",
+      "ja": "増減表より、f は x=1 で極大となる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "make a sign chart",
+      "ja": "増減表を書く"
+    },
+    {
+      "en": "f prime changes sign at x = 1",
+      "ja": "x=1 の前後で f′ の符号が変わる"
+    }
+  ],
+  "pitfalls": [
+    "「increase-decrease table」は直訳で、米国の教室では通じない。",
+    "極大・極小は local maximum / local minimum。最大・最小（区間全体）は absolute または global をつける。",
+    "凹凸は concave up / concave down。「上に凸」を convex upward と直訳しても通じにくい。"
+  ],
+  "related": [
+    "derivative-at-a-point"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-10",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-10"
+}

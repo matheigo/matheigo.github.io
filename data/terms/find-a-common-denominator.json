@@ -1,0 +1,94 @@
+{
+  "id": "find-a-common-denominator",
+  "ja": {
+    "term": "通分する",
+    "reading": "つうぶんする",
+    "alt": [
+      "通分"
+    ]
+  },
+  "en": {
+    "term": "find a common denominator",
+    "alt": [
+      "get a common denominator",
+      "put them over a common denominator"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "英語は動詞句で言う。名詞 1 語の対応はない。",
+  "domains": [
+    "arithmetic",
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "小学校",
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "分母の異なる分数を、分母をそろえた形に書き直すこと。",
+  "definition_en": "To rewrite fractions so that they share the same denominator.",
+  "latex": "\\frac{1}{2} + \\frac{1}{3} = \\frac{3}{6} + \\frac{2}{6}",
+  "spoken_en": "one half plus one third equals three sixths plus two sixths",
+  "examples": [
+    {
+      "en": "Get a common denominator first, then add the numerators.",
+      "ja": "まず通分して、それから分子を足す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Putting both terms over a common denominator gives a single fraction.",
+      "ja": "両方の項を通分すると 1 つの分数にまとまる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "the least common denominator (LCD)",
+      "ja": "最小公倍数を分母にした形"
+    },
+    {
+      "en": "reduce the fraction",
+      "ja": "約分する"
+    }
+  ],
+  "pitfalls": [
+    "約分（reduce / cancel）と通分（find a common denominator）は英語では別の言い方になる。まとめて一語では言えない。"
+  ],
+  "related": [],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-10",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-10",
+  "evidence": {
+    "spoken": {
+      "put them over a common denominator": 1
+    },
+    "sources": [
+      "mit-18.01"
+    ],
+    "counted": "2026-09-11"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-11"
+    }
+  ]
+}

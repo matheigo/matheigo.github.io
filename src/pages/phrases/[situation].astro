@@ -1,0 +1,52 @@
+---
+import Base from "../../layouts/Base.astro";
+import Speak from "../../components/Speak.astro";
+import { isUnverified, phrases, SITUATION_LABELS } from "../../lib/data";
+
+export function getStaticPaths() {
+  const used = [...new Set(phrases.map((p) => p.situation))];
+  return used.map((situation) => ({
+    params: { situation },
+    props: { items: phrases.filter((p) => p.situation === situation), situation },
+  }));
+}
+
+const { items, situation } = Astro.props;
+const label = SITUATION_LABELS[situation] ?? situation;
+const all = [...new Set(phrases.map((p) => p.situation))];
+---
+
+<Base title={`${label}のフレーズ — MathEigo`} description={`${label}で使う英語の言い回し。`}>
+  <h1 class="term-ja" style="font-size:var(--step-2)">{label}</h1>
+
+  <p class="meta">
+    {all.map((s) => (
+      <>
+        <a href={`/phrases/${s}`} style={s === situation ? "font-weight:700" : ""}>{SITUATION_LABELS[s] ?? s}</a>
+        {" ／ "}
+      </>
+    ))}
+  </p>
+
+  {items.map((p) => (
+    <section class="block" id={p.id} data-unverified-item={isUnverified(p) ? "" : undefined}>
+      <h2>{p.intent}</h2>
+      <div class="say">
+        {p.en}
+        <br />
+        <Speak text={p.en} />
+      </div>
+      <p class="meta">{p.ja}（{p.register}）</p>
+      {p.variants?.length ? (
+        <dl class="pairs">
+          {p.variants.map((v) => (
+            <>
+              <dt>{v.en}</dt>
+              <dd>{v.register}{v.note ? ` — ${v.note}` : ""}</dd>
+            </>
+          ))}
+        </dl>
+      ) : null}
+    </section>
+  ))}
+</Base>

@@ -1,0 +1,71 @@
+{
+  "id": "squeeze-theorem",
+  "ja": {
+    "term": "はさみうちの原理",
+    "reading": "はさみうちのげんり",
+    "alt": [
+      "はさみうちの定理"
+    ]
+  },
+  "en": {
+    "term": "squeeze theorem",
+    "alt": [],
+    "uk": "sandwich theorem",
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "analysis"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "g(x) ≦ f(x) ≦ h(x) で g と h が同じ極限をもつとき、f もその極限をもつという定理。",
+  "definition_en": "If g(x) ≤ f(x) ≤ h(x) and g and h have the same limit, then f has that limit too.",
+  "latex": "\\lim_{x \\to 0} x^2 \\sin\\frac{1}{x} = 0",
+  "spoken_en": "the limit as x goes to zero of x squared sine of one over x is zero",
+  "examples": [
+    {
+      "en": "This one is a squeeze theorem problem — bound it between negative x squared and x squared.",
+      "ja": "これははさみうちの問題。−x² と x² ではさんで。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "by the squeeze theorem",
+      "ja": "はさみうちの原理より"
+    },
+    {
+      "en": "squeeze it between",
+      "ja": "〜ではさむ"
+    }
+  ],
+  "pitfalls": [
+    "sandwich theorem は英国寄り。米国の教科書はほぼ squeeze theorem。"
+  ],
+  "related": [],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "はさみうちの原理",
+      "en": "Squeeze theorem"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-10",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-10"
+}

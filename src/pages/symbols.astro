@@ -1,0 +1,32 @@
+---
+import Base from "../layouts/Base.astro";
+import Math from "../components/Math.astro";
+import Speak from "../components/Speak.astro";
+import { isUnverified, symbols, termById } from "../lib/data";
+---
+
+<Base title="記号・式の読み上げ — MathEigo" description="数式を英語でどう読み上げるか。標準的な言い方と、教室で実際に使われる言い方。">
+  <h1 class="term-ja" style="font-size:var(--step-2)">記号・式の読み上げ</h1>
+  <p>板書の式を英語で声に出すときの言い方です。標準 (standard) は書き言葉寄り、話し言葉 (spoken) は教室でよく聞く縮めた言い方。</p>
+
+  {symbols.map((s) => (
+    <section class="block" id={s.id} data-unverified-item={isUnverified(s) ? "" : undefined}>
+      <h2>{s.name_ja} — {s.name_en}</h2>
+      <Math latex={s.latex} />
+      <div class="say">
+        {s.spoken_en.map((sp) => (
+          <div style="margin-bottom:0.3rem">
+            {sp.text}
+            <small style="color:var(--muted);font-size:0.8125rem"> ({sp.register})</small>
+          </div>
+        ))}
+        <span class="say-label" style="margin-top:0.4rem">日本語では: {s.spoken_ja}</span>
+        <Speak text={s.tts_text ?? s.spoken_en[0].text} />
+      </div>
+      {s.notes?.length ? <ul class="plain">{s.notes.map((n) => <li>{n}</li>)}</ul> : null}
+      {s.term_ref && termById.has(s.term_ref) ? (
+        <p class="meta"><a href={`/terms/${s.term_ref}`}>用語ページ: {termById.get(s.term_ref)!.ja.term}</a></p>
+      ) : null}
+    </section>
+  ))}
+</Base>

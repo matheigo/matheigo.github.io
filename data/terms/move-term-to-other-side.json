@@ -1,0 +1,113 @@
+{
+  "id": "move-term-to-other-side",
+  "ja": {
+    "term": "移項する",
+    "reading": "いこうする",
+    "alt": [
+      "移項"
+    ]
+  },
+  "en": {
+    "term": "move a term to the other side",
+    "alt": [],
+    "variants": [
+      {
+        "term": "move the 3x over to the other side",
+        "register": "spoken",
+        "note": "口頭では定番。bring it over / get it on the other side も同じ。"
+      },
+      {
+        "term": "bring it over to the other side",
+        "register": "spoken"
+      },
+      {
+        "term": "subtract 3 from both sides",
+        "register": "written",
+        "note": "答案ではこちら。Algebra 1 の先生は口頭でもこの「両辺に同じ操作」の言い方を好むことが多い。"
+      },
+      {
+        "term": "add 3 to both sides",
+        "register": "written"
+      }
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "英語には「移項」に当たる一語の名詞がない。**名詞 transposition は使わない（通じない）。**口頭では「反対側へ動かす」という言い方（move it over to the other side）が定番だが、書くときは同じ操作を「両辺から引く／両辺に足す」と述べるのが標準で、Algebra 1 の先生は口頭でもこちらを好むことが多い。つまり spoken と written で言い方が変わる語。",
+  "domains": [
+    "algebra",
+    "classroom"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "等式や不等式の項を、符号を変えて反対側へ移すこと。",
+  "definition_en": "To move a term to the other side of an equation or inequality, changing its sign.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Move the 3x over to the other side so the x's are together.",
+      "ja": "3x を移項して x をまとめて。",
+      "register": "spoken"
+    },
+    {
+      "en": "Subtracting 5 from both sides gives 2x = 8.",
+      "ja": "5 を移項して 2x = 8 となる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "get all the x's on one side",
+      "ja": "x を片側に集める"
+    },
+    {
+      "en": "isolate x",
+      "ja": "x について解く（x だけにする）"
+    }
+  ],
+  "pitfalls": [
+    "答案では「両辺から引く（subtract 3 from both sides）」と書く。move ... over は口頭向き。",
+    "名詞の transposition は米国の教室では通じない。動詞句で言う。"
+  ],
+  "related": [
+    "substitute"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-10",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-10",
+  "evidence": {
+    "spoken": {
+      "isolate x": 2
+    },
+    "sources": [
+      "mit-18.03"
+    ],
+    "counted": "2026-09-11"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-11"
+    }
+  ]
+}

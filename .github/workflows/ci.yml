@@ -1,0 +1,101 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: validate / spell / test / build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # Stage 1 of PLAN.md 8: machine checks. Any failure blocks the merge.
+      - name: Schema, duplicates, LaTeX, references
+        run: pnpm validate
+
+      - name: English spelling
+        run: pnpm spell
+
+      - name: Unit tests
+        run: pnpm test
+
+      - name: Build site and dataset
+        run: pnpm build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: dist/
+          retention-days: 7
+
+  crosscheck:
+    name: crosscheck (report only)
+    runs-on: ubuntu-latest
+    # Talks to the MediaWiki API, so it is advisory: a network hiccup must not
+    # block a PR. Run monthly over everything per PLAN.md 9 (Phase 6).
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm crosscheck
+
+  deploy:
+    name: deploy to GitHub Pages
+    needs: validate
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      # Public build: unverified entries are shipped but hidden behind an
+      # off-by-default toggle, and their pages carry noindex (PLAN 8).
+      - run: pnpm build
+        env:
+          MB_SHOW_UNVERIFIED: "0"
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

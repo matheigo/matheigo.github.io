@@ -1,0 +1,73 @@
+{
+  "id": "am-gm-inequality",
+  "ja": {
+    "term": "相加平均と相乗平均の関係",
+    "reading": "そうかへいきんとそうじょうへいきんのかんけい",
+    "alt": [
+      "相加相乗平均の不等式",
+      "相加相乗"
+    ]
+  },
+  "en": {
+    "term": "AM-GM inequality",
+    "alt": [
+      "arithmetic mean-geometric mean inequality"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Precalculus",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "正の数 a, b について (a+b)/2 ≧ √(ab) が成り立ち、等号は a=b のときに限るという関係。",
+  "definition_en": "For positive a and b, the arithmetic mean (a+b)/2 is at least the geometric mean √(ab), with equality exactly when a = b.",
+  "latex": "\\frac{a+b}{2} \\ge \\sqrt{ab}",
+  "spoken_en": "a plus b over two is greater than or equal to the square root of a b",
+  "examples": [
+    {
+      "en": "Use AM-GM here; equality holds when the two terms are equal.",
+      "ja": "ここは相加相乗を使う。等号は 2 つが等しいときです。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "by AM-GM",
+      "ja": "相加相乗平均の関係より"
+    },
+    {
+      "en": "equality holds when a = b",
+      "ja": "等号成立は a=b のとき"
+    }
+  ],
+  "pitfalls": [
+    "日本の高校では最小値を求める定番の道具だが、米国の標準的な高校課程では扱いが薄く、競技数学や大学の授業で出てくることが多い。",
+    "答案では「等号成立条件」を書く習慣は米国でも同じく必要。equality holds when ... と書く。"
+  ],
+  "related": [],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-10",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-10"
+}

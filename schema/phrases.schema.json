@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matheigo.org/schema/phrases.schema.json",
+  "title": "MathEigo situational phrase",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "_common.schema.json#/$defs/id" },
+    "situation": {
+      "enum": [
+        "class-listening", "class-asking", "office-hours", "explaining-solution",
+        "written-solution", "exam", "email", "group-study", "discord"
+      ]
+    },
+    "intent": { "type": "string", "minLength": 1, "description": "日本語で書いた「言いたいこと」。カードの表になる。" },
+    "en": { "type": "string", "minLength": 1 },
+    "ja": { "type": "string", "minLength": 1 },
+    "register": { "enum": ["polite", "neutral", "casual", "written"] },
+    "variants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "string", "minLength": 1 },
+          "register": { "enum": ["polite", "neutral", "casual", "written"] },
+          "note": { "type": "string" }
+        },
+        "required": ["en", "register"],
+        "additionalProperties": false
+      }
+    },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "tts_text": { "type": "string" },
+    "audio": { "type": "string" },
+    "evidence": { "$ref": "_common.schema.json#/$defs/evidence" },
+    "sources": { "$ref": "_common.schema.json#/$defs/sources" },
+    "confidence": { "$ref": "_common.schema.json#/$defs/confidence" },
+    "flags": { "$ref": "_common.schema.json#/$defs/flags" },
+    "reviewed": { "$ref": "_common.schema.json#/$defs/reviewed" },
+    "updated": { "$ref": "_common.schema.json#/$defs/date" }
+  },
+  "required": ["id", "situation", "intent", "en", "ja", "register", "sources", "confidence"],
+  "additionalProperties": false
+}

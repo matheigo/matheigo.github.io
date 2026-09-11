@@ -1,0 +1,114 @@
+{
+  "id": "substitute",
+  "ja": {
+    "term": "代入する",
+    "reading": "だいにゅうする",
+    "alt": [
+      "代入"
+    ]
+  },
+  "en": {
+    "term": "plug in",
+    "alt": [],
+    "variants": [
+      {
+        "term": "plug in",
+        "register": "spoken",
+        "note": "MIT OCW 5 コース（約 93 万語）で 220 件。教室で最も多い言い方。"
+      },
+      {
+        "term": "substitute",
+        "register": "spoken",
+        "note": "同コーパスで 106 件。plug in の 3 分の 1 以上あり、どちらも実際に使われる。答案ではこちらが安全だが、書き言葉コーパスは未取得。"
+      },
+      {
+        "term": "sub in",
+        "register": "spoken",
+        "note": "略式。頻度は低い。"
+      }
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "classroom"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数I"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "文字に具体的な値や別の式を当てはめること。",
+  "definition_en": "To put a value or another expression in place of a variable.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Plug x = 2 into the equation and see what you get.",
+      "ja": "x=2 を方程式に代入してみて。",
+      "register": "spoken"
+    },
+    {
+      "en": "Substituting t = 2x gives a quadratic in t.",
+      "ja": "t=2x を代入すると t の二次方程式になる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "plug in x = 2",
+      "ja": "x=2 を代入する"
+    },
+    {
+      "en": "substitute back",
+      "ja": "もとに戻して代入する"
+    },
+    {
+      "en": "substitute u for 2x",
+      "ja": "2x を u とおく"
+    }
+  ],
+  "pitfalls": [
+    "教室では plug in が多いが、substitute も同じくらい普通に聞こえる。どちらか一方が正しいわけではない（OCW 5 コースで 220 対 106）。",
+    "substitute A for B は「B の代わりに A を入れる」。順序を逆にしやすい。"
+  ],
+  "related": [
+    "move-term-to-other-side"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-10",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-10",
+  "evidence": {
+    "spoken": {
+      "plug in": 220,
+      "substitute": 106,
+      "substitute back": 3
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042"
+    ],
+    "counted": "2026-09-11"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matheigo.org/schema/conventions.schema.json",
+  "title": "MathEigo JP/US convention difference",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "_common.schema.json#/$defs/id" },
+    "title_ja": { "type": "string", "minLength": 1 },
+    "title_en": { "type": "string", "minLength": 1 },
+    "jp": { "type": "string", "minLength": 1 },
+    "us": { "type": "string", "minLength": 1 },
+    "advice_ja": { "type": "string", "minLength": 1 },
+    "category": {
+      "enum": ["notation", "letters", "terminology", "proof-style", "handwriting", "calculator", "classroom-culture"]
+    },
+    "level": { "$ref": "_common.schema.json#/$defs/level" },
+    "term_refs": { "type": "array", "items": { "$ref": "_common.schema.json#/$defs/id" } },
+    "sources": { "$ref": "_common.schema.json#/$defs/sources" },
+    "confidence": { "$ref": "_common.schema.json#/$defs/confidence" },
+    "flags": { "$ref": "_common.schema.json#/$defs/flags" },
+    "reviewed": { "$ref": "_common.schema.json#/$defs/reviewed" },
+    "updated": { "$ref": "_common.schema.json#/$defs/date" }
+  },
+  "required": ["id", "title_ja", "title_en", "jp", "us", "advice_ja", "category", "level", "sources", "confidence"],
+  "additionalProperties": false
+}

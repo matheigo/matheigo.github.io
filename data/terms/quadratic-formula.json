@@ -1,0 +1,87 @@
+{
+  "id": "quadratic-formula",
+  "ja": {
+    "term": "解の公式",
+    "reading": "かいのこうしき",
+    "alt": [
+      "二次方程式の解の公式"
+    ]
+  },
+  "en": {
+    "term": "quadratic formula",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3",
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "二次方程式 ax²+bx+c=0 の解を係数から直接求める公式。",
+  "definition_en": "A formula that gives the solutions of ax²+bx+c=0 directly from the coefficients.",
+  "latex": "x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}",
+  "spoken_en": "x equals negative b, plus or minus the square root of b squared minus four a c, all over two a",
+  "examples": [
+    {
+      "en": "If it doesn't factor, just use the quadratic formula.",
+      "ja": "因数分解できなければ解の公式を使えばいい。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "plug into the quadratic formula",
+      "ja": "解の公式に代入する"
+    },
+    {
+      "en": "apply the quadratic formula",
+      "ja": "解の公式を適用する"
+    }
+  ],
+  "pitfalls": [
+    "米国では判別式を D と置かず b²−4ac と書いたまま進めることが多い。"
+  ],
+  "related": [
+    "discriminant",
+    "completing-the-square"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "二次方程式の解の公式",
+      "en": "Quadratic formula"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-10",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-10",
+  "evidence": {
+    "spoken": {
+      "quadratic formula": 13
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042"
+    ],
+    "counted": "2026-09-11"
+  }
+}

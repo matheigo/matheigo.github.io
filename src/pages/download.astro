@@ -1,0 +1,45 @@
+---
+import Base from "../layouts/Base.astro";
+import { terms, symbols, phrases, conventions } from "../lib/data";
+
+const counts = [
+  { label: "用語", n: terms.length },
+  { label: "記号・式", n: symbols.length },
+  { label: "フレーズ", n: phrases.length },
+  { label: "慣習差", n: conventions.length },
+];
+---
+
+<Base title="ダウンロード — MathEigo" description="辞典データを JSON / CSV / Anki / PDF で配布しています。">
+  <h1 class="term-ja" style="font-size:var(--step-2)">ダウンロード</h1>
+
+  <p>
+    データは <strong>CC0 1.0</strong>（パブリックドメイン提供）です。表示義務はありません。
+    学習アプリへの組み込み、言語モデルの学習・評価、翻訳の下敷き、どれも自由に使えます。
+    コードは MIT。
+  </p>
+
+  <table class="grid">
+    <tbody>
+      {counts.map((c) => <tr><th>{c.label}</th><td>{c.n} 件</td></tr>)}
+    </tbody>
+  </table>
+
+  <section class="block">
+    <h2>形式</h2>
+    <ul class="plain">
+      <li><a href="/data/terms.json">terms.json</a> — 全項目（定義・例文・出典つき）</li>
+      <li><a href="/data/terms.csv">terms.csv</a> — 表計算ソフト用の平坦な表</li>
+      <li><a href="/data/terms.quizlet.tsv">terms.quizlet.tsv</a> — Quizlet 取り込み用（英語 ＋ 日本語・読み）</li>
+      <li><a href="/data/symbols.json">symbols.json</a> ／ <a href="/data/phrases.json">phrases.json</a> ／ <a href="/data/conventions.json">conventions.json</a></li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <h2>Anki と PDF</h2>
+    <p>
+      Anki デッキ (.apkg、音声同梱) と、定義なしの word-to-word PDF は GitHub Release に添付します。
+      PDF は「試験に持ち込む一対一辞書」を想定した定義なし版ですが、持ち込みの可否は各学校・各州の方針によります。必ず担当の先生に確認してください。
+    </p>
+  </section>
+</Base>

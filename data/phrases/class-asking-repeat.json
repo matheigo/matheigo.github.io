@@ -1,0 +1,30 @@
+{
+  "id": "class-asking-repeat",
+  "situation": "class-asking",
+  "intent": "聞き取れなかったので、もう一度言ってほしい",
+  "en": "Sorry, could you say that last part again?",
+  "ja": "すみません、最後のところをもう一度お願いできますか。",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "Could you repeat the last step?",
+      "register": "polite"
+    },
+    {
+      "en": "Sorry, I missed that.",
+      "register": "casual",
+      "note": "短く済ませたいとき。授業中に一番よく使う。"
+    }
+  ],
+  "tags": [
+    "asking",
+    "listening"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-10"
+}

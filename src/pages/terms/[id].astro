@@ -1,0 +1,140 @@
+---
+import Base from "../../layouts/Base.astro";
+import Math from "../../components/Math.astro";
+import Speak from "../../components/Speak.astro";
+import { terms, termById, isUnverified, MAPPING_LABELS } from "../../lib/data";
+
+export function getStaticPaths() {
+  return terms.map((t) => ({ params: { id: t.id }, props: { term: t } }));
+}
+
+const { term } = Astro.props;
+const title = `${term.ja.term} 英語 | ${term.en.term} — MathEigo`;
+const say = term.tts_text ?? term.spoken_en ?? term.en.term;
+const repo = "https://github.com/matheigo/matheigo.github.io/issues/new";
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  name: term.ja.term,
+  alternateName: term.en.term,
+  description: term.definition_ja,
+  inDefinedTermSet: "MathEigo JA-EN",
+};
+---
+
+<Base title={title} description={term.definition_ja} unverified={isUnverified(term)}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  {isUnverified(term) && (
+    <p class="unverified-note">
+      この項目はまだ監査を通っていません。日英の対応や例文が実際の教室の言い方と合っているか、確認中です。
+    </p>
+  )}
+
+  <header class="term-head">
+    <h1 class="term-ja">
+      {term.ja.term}
+      {term.confidence !== "verified" && <span class="badge unverified">未確認</span>}
+    </h1>
+    <p class="term-reading">
+      {term.ja.reading}
+      {term.ja.alt?.length ? ` ／ ${term.ja.alt.join(" ／ ")}` : ""}
+    </p>
+    <p class="term-en">
+      {term.en.term}
+      <small>
+        {term.pos}
+        {term.en.alt?.length ? ` ・ ${term.en.alt.join(", ")}` : ""}
+        {term.en.uk ? ` ・ 英 ${term.en.uk}` : ""}
+        {term.respelling ? ` ・ ${term.respelling}` : ""}
+      </small>
+    </p>
+  </header>
+
+  <div class="say">
+    <span class="say-label">こう言う</span>
+    {term.spoken_en ?? term.en.term}
+    <br />
+    <Speak text={say} />
+  </div>
+
+  {term.latex && <Math latex={term.latex} />}
+
+  {term.en.variants?.length ? (
+    <section class="block">
+      <h2>場面で変わる言い方</h2>
+      <dl class="pairs">
+        {term.en.variants.map((v) => (
+          <>
+            <dt>{v.term}</dt>
+            <dd>{v.register === "spoken" ? "話し言葉" : v.register === "written" ? "書き言葉・答案" : "どちらでも"}{v.note ? ` — ${v.note}` : ""}</dd>
+          </>
+        ))}
+      </dl>
+    </section>
+  ) : null}
+
+  <section class="block">
+    <h2>意味</h2>
+    <p>{term.definition_ja}</p>
+    <p style="font-family:var(--font-en)">{term.definition_en}</p>
+  </section>
+
+  {term.mapping !== "exact" && (
+    <section class="block">
+      <h2>日英の対応 <span class="badge mapping">{MAPPING_LABELS[term.mapping]}</span></h2>
+      <p>{term.mapping_note}</p>
+    </section>
+  )}
+
+  {term.examples?.length ? (
+    <section class="block">
+      <h2>例文</h2>
+      {term.examples.map((ex) => (
+        <div class="example">
+          <p class="en">{ex.en} <Speak text={ex.en} label="" /></p>
+          <p class="ja">{ex.ja}（{ex.register === "spoken" ? "話し言葉" : "書き言葉"}）</p>
+        </div>
+      ))}
+    </section>
+  ) : null}
+
+  {term.collocations?.length ? (
+    <section class="block">
+      <h2>よく一緒に使う言い方</h2>
+      <dl class="pairs">
+        {term.collocations.map((c) => (<><dt>{c.en}</dt><dd>{c.ja}</dd></>))}
+      </dl>
+    </section>
+  ) : null}
+
+  {term.pitfalls?.length ? (
+    <section class="block">
+      <h2>落とし穴</h2>
+      <ul class="plain">{term.pitfalls.map((p) => <li>{p}</li>)}</ul>
+    </section>
+  ) : null}
+
+  {term.related?.length ? (
+    <section class="block">
+      <h2>関連語</h2>
+      <ul class="plain">
+        {term.related.map((r) => {
+          const t = termById.get(r);
+          return <li><a href={`/terms/${r}`}>{t ? `${t.ja.term} — ${t.en.term}` : r}</a></li>;
+        })}
+      </ul>
+    </section>
+  ) : null}
+
+  <section class="block meta">
+    <h2>この項目について</h2>
+    <ul>
+      <li>範囲: 日本 {term.level.jp.join("・")} ／ 米国 {term.level.us.join("・")}</li>
+      <li>分野: {term.domains.join("・")}</li>
+      <li>出典: {term.sources.map((s) => s.title ?? s.doc ?? s.en ?? s.type).join("／")}</li>
+      {term.updated && <li>更新: {term.updated}</li>}
+    </ul>
+    <p><a href={`${repo}?title=${encodeURIComponent(`[誤り報告] ${term.id}`)}`}>間違いを報告する</a></p>
+  </section>
+</Base>

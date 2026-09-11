@@ -1,0 +1,103 @@
+---
+import Base from "../layouts/Base.astro";
+import { isUnverified, terms } from "../lib/data";
+
+// 「今日の10語」— deterministic per day so the page can stay static.
+const day = Math.floor(Date.now() / 86_400_000);
+const start = terms.length ? day % terms.length : 0;
+const today = Array.from({ length: Math.min(10, terms.length) }, (_, i) => terms[(start + i) % terms.length]);
+---
+
+<Base title="MathEigo — 数学の日英辞典">
+  <p style="margin-top:0">
+    日本で学んだ数学の言葉を、米国の教室で使う英語に。かな・ローマ字・英語のどれでも引けます。
+  </p>
+
+  <label for="q" class="visually-hidden" style="position:absolute;left:-9999px">検索</label>
+  <input
+    id="q"
+    type="search"
+    autocomplete="off"
+    autocapitalize="off"
+    spellcheck="false"
+    placeholder="かいのこうしき / 解の公式 / quadratic"
+  />
+
+  <p id="status" class="meta" style="margin:0.5rem 0 0" aria-live="polite"></p>
+
+  <ul class="hits" id="hits">
+    {today.map((t) => (
+      <li class="hit" data-unverified-item={isUnverified(t) ? "" : undefined}>
+        <a href={`/terms/${t.id}`}>
+          <span class="hit-ja">{t.ja.term}</span>
+          <span class="hit-kind">用語</span>
+          <span class="hit-reading">{t.ja.reading}</span>
+          <span class="hit-en">{t.en.term}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</Base>
+
+<script>
+  import { createIndex, search, type SearchDoc } from "../lib/search";
+
+  const KIND: Record<string, string> = { term: "用語", symbol: "記号", phrase: "フレーズ", convention: "慣習差" };
+
+  const input = document.getElementById("q") as HTMLInputElement;
+  const hits = document.getElementById("hits") as HTMLUListElement;
+  const status = document.getElementById("status") as HTMLParagraphElement;
+  const initial = hits.innerHTML;
+
+  let mini: ReturnType<typeof createIndex> | null = null;
+  let loading: Promise<void> | null = null;
+
+  const escape = (s: string) =>
+    s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
+
+  function load(): Promise<void> {
+    if (loading) return loading;
+    loading = fetch("/search-index.json")
+      .then((r) => r.json() as Promise<SearchDoc[]>)
+      .then((docs) => {
+        mini = createIndex(docs);
+      })
+      .catch(() => {
+        status.textContent = "検索インデックスを読み込めませんでした。";
+      });
+    return loading;
+  }
+
+  function render(results: SearchDoc[]) {
+    hits.innerHTML = results
+      .map(
+        (r) => `<li class="hit"><a href="${r.url}">
+          <span class="hit-ja">${escape(r.ja.split(" ")[0])}</span>
+          <span class="hit-kind">${KIND[r.type] ?? r.type}</span>
+          <span class="hit-reading">${escape(r.reading || "")}</span>
+          <span class="hit-en">${escape(r.hint)}</span>
+        </a></li>`,
+      )
+      .join("");
+  }
+
+  function run(raw: string) {
+    if (!raw.trim()) {
+      hits.innerHTML = initial;
+      status.textContent = "";
+      return;
+    }
+    if (!mini) return;
+    const showUnverified = document.documentElement.dataset.unverified === "show";
+    const results = search(mini, raw).filter(
+      (r) => showUnverified || r.confidence === "verified",
+    );
+    render(results);
+    status.textContent = results.length ? `${results.length} 件` : "見つかりませんでした";
+  }
+
+  document.addEventListener("matheigo:unverified-changed", () => run(input.value));
+
+  input.addEventListener("focus", load, { once: true });
+  input.addEventListener("input", () => void load().then(() => run(input.value)));
+</script>

@@ -1,0 +1,29 @@
+{
+  "id": "office-hours-stuck-at-step",
+  "situation": "office-hours",
+  "intent": "どこで詰まっているかを伝える",
+  "en": "I follow it up to here, but I don't see how you get from this line to the next one.",
+  "ja": "ここまでは分かるのですが、この行から次の行への変形が分かりません。",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "I'm lost at this step.",
+      "register": "casual"
+    },
+    {
+      "en": "Could you walk me through this step?",
+      "register": "polite"
+    }
+  ],
+  "tags": [
+    "asking",
+    "derivation"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-10"
+}

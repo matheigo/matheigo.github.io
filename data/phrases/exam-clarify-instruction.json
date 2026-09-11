@@ -1,0 +1,29 @@
+{
+  "id": "exam-clarify-instruction",
+  "situation": "exam",
+  "intent": "試験中に、問題文の指示の意味を確認する",
+  "en": "Does \"simplify\" here mean I should rationalize the denominator?",
+  "ja": "ここでの simplify は、分母を有理化しろという意味ですか。",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "Do you want the answer in exact form or as a decimal?",
+      "register": "polite"
+    },
+    {
+      "en": "Should I show all the steps for this one?",
+      "register": "polite"
+    }
+  ],
+  "tags": [
+    "asking",
+    "instructions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-10"
+}

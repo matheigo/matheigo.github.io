@@ -1,0 +1,50 @@
+{
+  "name": "matheigo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MathEigo JA<->EN - open (CC0) Japanese-English mathematics dictionary for students moving between Japanese and US classrooms",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "tsx scripts/validate.ts",
+    "crosscheck": "tsx scripts/crosscheck.ts",
+    "corpus:fetch": "tsx scripts/corpus/fetch.ts",
+    "corpus:fetch:ocw": "tsx scripts/corpus/fetch-ocw.ts",
+    "corpus:count": "tsx scripts/corpus/count.ts",
+    "corpus:decide": "tsx scripts/corpus/decide.ts",
+    "build:index": "tsx scripts/build-index.ts",
+    "prebuild": "pnpm run validate && pnpm run build:index",
+    "build": "astro build",
+    "dev": "astro dev",
+    "preview": "astro preview",
+    "export": "tsx scripts/export.ts",
+    "pretest": "pnpm run build:index",
+    "test": "vitest run",
+    "spell": "cspell \"data/**/*.json\" \"docs/**/*.md\" \"*.md\"",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "postbuild": "tsx scripts/export.ts"
+  },
+  "dependencies": {
+    "astro": "^5.14.1",
+    "katex": "^0.16.11",
+    "minisearch": "^7.1.0",
+    "wanakana": "^5.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "cspell": "^8.17.1",
+    "eslint": "^9.17.0",
+    "fast-glob": "^3.3.3",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.19.0",
+    "vitest": "^2.1.8"
+  }
+}

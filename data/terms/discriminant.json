@@ -1,0 +1,87 @@
+{
+  "id": "discriminant",
+  "ja": {
+    "term": "判別式",
+    "reading": "はんべつしき",
+    "alt": []
+  },
+  "en": {
+    "term": "discriminant",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3",
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "二次方程式 ax²+bx+c=0 の b²−4ac のこと。符号で実数解の個数が決まる。",
+  "definition_en": "The quantity b²−4ac attached to ax²+bx+c=0; its sign tells you how many real solutions there are.",
+  "latex": "b^2 - 4ac",
+  "spoken_en": "b squared minus four a c",
+  "examples": [
+    {
+      "en": "The discriminant is negative, so there are no real solutions.",
+      "ja": "判別式が負なので実数解はありません。",
+      "register": "spoken"
+    },
+    {
+      "en": "Since b² − 4ac = 0, the equation has a double root.",
+      "ja": "b²−4ac=0 より、この方程式は重解をもつ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "the discriminant is positive/zero/negative",
+      "ja": "判別式が正／0／負である"
+    },
+    {
+      "en": "check the discriminant",
+      "ja": "判別式を調べる"
+    }
+  ],
+  "pitfalls": [
+    "日本の答案では D と置いて「D>0 より」と書くが、米国の教室では b²−4ac をそのまま書き、名前だけ discriminant と呼ぶことが多い。"
+  ],
+  "related": [
+    "quadratic-formula"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "判別式",
+      "en": "Discriminant"
+    }
+  ],
+  "confidence": "likely",
+  "respelling": "dih-SKRIM-uh-nunt",
+  "reviewed": {
+    "machine": "2026-09-10",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-10",
+  "evidence": {
+    "spoken": {
+      "discriminant": 15
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03"
+    ],
+    "counted": "2026-09-11"
+  }
+}

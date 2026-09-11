@@ -1,0 +1,72 @@
+{
+  "id": "derivative-at-a-point",
+  "ja": {
+    "term": "微分係数",
+    "reading": "びぶんけいすう",
+    "alt": []
+  },
+  "en": {
+    "term": "derivative at a point",
+    "alt": [
+      "the value of the derivative at x = a",
+      "f prime of a"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "米国では「微分係数」に当たる独立した名詞を立てず、導関数 (derivative) の x=a での値として言う。記号 f′(a) をそのまま「f prime of a」と読むことが多い。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "関数 f の x=a における変化率。グラフの点 (a, f(a)) での接線の傾きに等しい。",
+  "definition_en": "The rate of change of f at x = a, equal to the slope of the tangent line at the point (a, f(a)).",
+  "latex": "f'(a) = \\lim_{h \\to 0} \\frac{f(a+h) - f(a)}{h}",
+  "spoken_en": "f prime of a equals the limit as h goes to zero of f of a plus h minus f of a, all over h",
+  "examples": [
+    {
+      "en": "f prime of two is the slope of the tangent line there.",
+      "ja": "f′(2) はそこでの接線の傾きです。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "evaluate the derivative at x = 2",
+      "ja": "x=2 における微分係数を求める"
+    },
+    {
+      "en": "the slope of the tangent line at x = 2",
+      "ja": "x=2 での接線の傾き"
+    }
+  ],
+  "pitfalls": [
+    "「differential coefficient」は英国の古い教科書の語で、米国の教室ではまず聞かない。"
+  ],
+  "related": [
+    "sign-chart"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-10",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-10"
+}
