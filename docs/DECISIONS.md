@@ -73,3 +73,21 @@
 
 - 2026-09-11 | 0 | `package.json` に `pretest: pnpm run build:index` を追加。`tests/search.test.ts` が gitignore 対象の生成物 `public/search-index.json` を読むため、fresh checkout（CI は test → build の順）で落ちていた | prebuild と同じ形にした。テスト側で index を組み立て直すより変更が小さい
 - 2026-09-11 | 0 | `.gitignore` の `corpus/` を `/corpus/` に変更 | 無印だと `scripts/corpus/`（fetch/count/decide 本体）まで無視され、初回コミットから抜け落ちていた。ルート直下の本文置き場だけを除外する
+
+## Phase 1（台帳）— 2026-09-11
+
+- 2026-09-11 | 1 | `curriculum.subject` は中学が **「中1」「中2」「中3」**、高校が「数学I」〜「数学C」。`us` 側の `subject` と `us_equivalents.course` は `level.us` の enum と完全一致させ、`jp_equivalents.subject` は「<科目> <単元>」（例「数学II 三角関数」）で日本側ファイルの subject＋unit と一致させる（生成時に自己検査） | 対応表の左右をクリックで往復できるようにするには、名前の一致を機械で保証する必要がある
+- 2026-09-11 | 1 | 日本側は MEXT の単元を正としつつ、複合単元は教科書の章に分けた。数II「いろいろな式」→ 式と証明／複素数と方程式、「微分・積分の考え」→ 微分の考え／積分の考え、数I の集合と命題は独立単元。数III は MEXT 通り 3 単元（分数関数・逆関数・合成関数は「極限」の小項目）。中学は 2017 改訂の「データの活用」（旧「資料の活用」） | 台帳を単元で切るとき 100 語超の単元は人間が眺めにくい。教科書の章が学習者の頭の中の単位
+- 2026-09-11 | 1 | 数III の id は既存サンプル `jp-suugaku-3-sekibun` に揃えて `-kyokugen` / `-bibun` / `-sekibun`。中学は `jp-chuugaku-N-...` | 既存ファイルを消さずに済む
+- 2026-09-11 | 1 | 米国側は 4 系統 118 単元。Traditional は OpenStax の章 ＋ Geometry は一般的な高校教科書の章立て、Integrated は CCSS Appendix A、AP は CED の Unit、大学は OpenStax Calculus 1–3 / Introductory Statistics の章、Linear Algebra は Lay、Discrete Math は Rosen の章立て。**章構成だけを参照し、文章は引かない** | 付録 A は科目単位で単元がない。用語を単元に紐づけるには米国側にも単元が要る
+- 2026-09-11 | 1 | AP Calculus BC は AB と共通の Unit 1–8 を作らず、BC 固有分（部分積分・部分分数・広義積分・Euler 法・ロジスティック・弧長）を 1 ファイル ＋ Unit 9・10 の計 3 ファイル | 同じ内容を 2 度持つと `jp_equivalents` がずれる
+- 2026-09-11 | 1 | 小学校の範囲（分数・小数、割合）は `jp_equivalents` で名前だけ参照し、ファイルは作らない | v1 の範囲は中1 から（PLAN 4）
+- 2026-09-11 | 1 | 台帳の列は `id, ja, en, en_alt, pos, unit, domain, level_jp, level_us, mapping, source, wiki_ja, wiki_en, wikidata, flag, note`。列の意味は `ledger/README.md` | 完了条件「全行に単元・品詞・レベル・出典種別」＋ Phase 2 に必要な id と crosscheck の材料
+- 2026-09-11 | 1 | 同じ `ja` が複数単元で別の英語になった語は **1 行に統合**し、他候補を `en_alt` に残す（`flag: ja-merged`）。同音異義（表／裏（硬貨）、頂点（グラフ）、回転・発散（ベクトル解析）、像（線形写像）、次数（頂点））は `ja` に括弧で区別 | validate は `ja.term` の重複をエラーにする。Phase 2 で `en.alt` / `en.variants` に振り分ける材料を落とさない
+- 2026-09-11 | 1 | `source` の仮置きは **名詞だけ** `wikipedia-langlink` / `wikidata` にし、動詞・形容詞・句は `editorial`。ja.wikipedia の曖昧さ回避ページ（円、関数、三平方の定理…）は「円 (数学)」型の記事に付け替え、リダイレクト先が別概念（余角→角度、約分→分数）や数学外の記事（縮図→映画）に当たったものは出典にせず `flag` だけ残す | 絶対ルール 2「出典を捏造しない」。Wikipedia は動詞の言い方の根拠にならない
+- 2026-09-11 | 1 | 台帳は **2,488 行**（日本側 1,671、米国側から逆に洗った語 817。米国側の候補 951 のうち日本側と同じ語 134 は日本側の単元に残した）。目標 2,000 行を 25% 超えるが削らない | 米国側の逆洗い（付録 A の「米国にあって日本にない」語）を独立に数えたため。抜けより余りの方が人間の 15 分レビューで落としやすい
+- 2026-09-11 | 1 | 動詞・形容詞・句は日本側全体で 33%、単元別の最低は 15%（数学C 数学的な表現の工夫）。10% 未満の単元なし | 完了条件
+- 2026-09-11 | 1 | 米国側から洗った語は `unit` を米国側の単元に置き、`level_jp` は大学で扱うものが `大学`、日本の教育課程に対応物がない覚え方・作法（PEMDAS、FOIL、CPCTC、two-column proof …）は `—` | `level.jp` の enum に「該当なし」がない。スキーマは変えない
+- 2026-09-11 | 1 | 生成スクリプトは `scripts/ledger/`（Python: `build.py` ＋ `curriculum_spec.py` ＋ `seed_*.txt`）。Wikipedia / Wikidata の応答キャッシュ `wiki_cache.json` は .gitignore | 台帳は再生成できる状態で残す。キャッシュは 1 MB 超で差分に向かない
+- 2026-09-11 | 1 | Cowork の作業 VM に pnpm が無く、npm registry にも出られないため、`validate` と `spell` は `node --experimental-strip-types` で `scripts/validate.ts` と cspell を直接実行して緑を確認した。**`pnpm test` と `pnpm build` は未実行**（esbuild が darwin バイナリのため） | 人間が Mac で `pnpm test && pnpm build` を一度叩く
+- 2026-09-11 | 1 | cspell に `"id": "..."` の値と Markdown のバッククォート内を無視する regex を追加 | curriculum の id はローマ字（`jp-chuugaku-1-seifu-no-suu`）で、単語登録では追いつかない。id はスキーマの正規表現で別に検査している

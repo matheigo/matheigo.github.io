@@ -1,0 +1,695 @@
+# 形式: ja | en | pos | mapping | note | id | wiki-title
+# pos: n v adj ph  / mapping: exact near none（空欄は exact）
+# 「## <curriculum id>」以下の行がその単元に属する
+
+## jp-chuugaku-1-seifu-no-suu
+正の数 | positive number | n
+負の数 | negative number | n
+正負の数 | positive and negative numbers | n | near | 単元名としての括り。米国では integers / signed numbers
+符号 | sign | n
+絶対値 | absolute value | n
+数直線 | number line | n
+原点 | origin | n
+整数 | integer | n
+自然数 | natural number | n | near | 米国では 0 を含めるか教科書ごとに宣言する。counting number とも
+反数 | opposite | n | near | additive inverse は代数以降。教室では "the opposite of 3"
+加法 | addition | n
+減法 | subtraction | n
+乗法 | multiplication | n
+除法 | division | n
+四則 | the four operations | n | near | 米国では単に operations。PEMDAS の文脈で arithmetic operations
+逆数 | reciprocal | n
+累乗 | power | n
+指数 | exponent | n
+底 | base | n
+平方 | square | n
+立方 | cube | n
+素数 | prime number | n
+素因数分解 | prime factorization | n
+素因数 | prime factor | n
+交換法則 | commutative property | n | near | 米国では law より property
+結合法則 | associative property | n | near | 同上
+分配法則 | distributive property | n | near | 同上
+項 | term | n
+分数 | fraction | n
+小数 | decimal | n
+足す | add | v
+引く | subtract | v
+掛ける | multiply | v
+割る | divide | v
+計算する | compute | v | near | 教室では work out / do the arithmetic も
+符号を変える | change the sign | ph
+絶対値をとる | take the absolute value | ph
+正の | positive | adj
+負の | negative | adj
+大きい | greater than | adj | near | 数の大小は greater / less
+小さい | less than | adj
+〜より大きい | is greater than | ph
+〜以上 | greater than or equal to | ph
+〜以下 | less than or equal to | ph
+〜未満 | less than | ph | near | 「未満」に固有の 1 語はない。strictly less than
+四捨五入する | round | v | near | round to the nearest ten など
+概数 | approximation | n | near | estimate / rounded number
+かっこ | parentheses | n | near | 英国は brackets。米国では ( ) が parentheses、[ ] が brackets
+かっこを外す | remove the parentheses | ph | near | distribute とも言う
+
+## jp-chuugaku-1-moji-to-shiki
+文字式 | algebraic expression | n | near | 「文字を使った式」。variable expression とも
+文字 | variable | n | near | 「文字」を letter と直訳しない
+式 | expression | n
+係数 | coefficient | n
+定数 | constant | n
+定数項 | constant term | n
+同類項 | like terms | n
+一次式 | linear expression | n
+代入 | substitution | n
+式の値 | value of the expression | n
+数量 | quantity | n
+関係 | relationship | n
+等式 | equation | n | near | 「等式」と「方程式」は米国では区別せず equation
+不等式 | inequality | n
+左辺 | left-hand side | n
+右辺 | right-hand side | n
+両辺 | both sides | n
+等号 | equal sign | n
+不等号 | inequality sign | n
+単位 | unit | n
+割合 | rate | n | near | proportion / percentage も文脈で
+百分率 | percent | n
+速さ | speed | n | near | 物理では velocity。文章題では speed / rate
+道のり | distance | n
+時間 | time | n
+文字を使って表す | write using a variable | ph | near | write an expression for
+式を簡単にする | simplify the expression | ph
+同類項をまとめる | combine like terms | ph
+代入する | plug in | v | exact | STYLE: ②併記 plug in / substitute
+値を求める | evaluate | v | near | evaluate the expression when x = 2
+式を立てる | set up an equation | ph | near | write an equation
+表す | represent | v
+〜を x とする | let x be | ph
+〜倍 | times | ph | near | three times as many
+省略する | omit | v | near | 乗法記号の省略は "we drop the multiplication sign"
+順に | in order | ph
+
+## jp-chuugaku-1-ichiji-houteishiki
+方程式 | equation | n
+一次方程式 | linear equation | n
+解 | solution | n
+解く | solve | v
+解の確かめ | checking the solution | n | near | check your answer / plug it back in
+移項 | moving a term to the other side | n | near | STYLE: 名詞 transposition は載せない
+移項する | move to the other side | v | near | 話: move it over 書: subtract from both sides
+等式の性質 | properties of equality | n
+比 | ratio | n
+比の値 | value of a ratio | n | near | 米国では単に the ratio。1 語の対応なし
+比例式 | proportion | n | near | 米国の proportion は「比が等しい式」a:b = c:d
+比例式を解く | solve a proportion | ph
+内項の積 | product of the means | n | near | 米国では cross products として教える
+外項の積 | product of the extremes | n | near | 同上
+内項と外項の積は等しい | cross multiply | ph | near | 米国では「たすきに掛ける」操作として言う
+文章題 | word problem | n
+未知数 | unknown | n
+両辺に同じ数を足す | add the same number to both sides | ph
+両辺を〜で割る | divide both sides by | ph
+両辺に〜を掛ける | multiply both sides by | ph
+両辺から〜を引く | subtract from both sides | ph
+方程式を満たす | satisfy the equation | ph
+成り立つ | hold | v | near | 「等式が成り立つ」は the equation holds / is true
+解が一つに決まる | has exactly one solution | ph
+求めよ | find | v | near | 問題文の指示語。Find / Solve for x
+解け | solve for | ph | near | 問題文の指示語
+確かめる | check | v
+整理する | simplify | v | near | 「式を整理する」は simplify / collect terms
+分母を払う | clear the denominators | ph | near | multiply through by the LCD
+係数を整数にする | clear the fractions | ph | near
+逆算する | work backwards | ph
+
+## jp-chuugaku-1-hirei-hanpirei
+関数 | function | n
+比例 | direct proportion | n | near | 米国では direct variation。y varies directly with x
+反比例 | inverse proportion | n | near | inverse variation。y varies inversely with x
+比例定数 | constant of proportionality | n | near | constant of variation とも
+変数 | variable | n
+変域 | domain and range | n | near | 「変域」は x の変域（domain）と y の変域（range）を区別せず使う。米国は必ず区別する
+座標 | coordinates | n
+座標平面 | coordinate plane | n
+x 座標 | x-coordinate | n
+y 座標 | y-coordinate | n
+x 軸 | x-axis | n
+y 軸 | y-axis | n
+座標軸 | coordinate axes | n
+象限 | quadrant | n
+グラフ | graph | n
+双曲線 | hyperbola | n
+点をとる | plot a point | ph
+グラフをかく | graph | v | near | graph the function / sketch the graph
+グラフを読み取る | read the graph | ph
+〜に比例する | is proportional to | ph | near | varies directly with
+〜に反比例する | is inversely proportional to | ph | near | varies inversely with
+対応する | correspond | v
+増加する | increase | v
+減少する | decrease | v
+一定である | is constant | ph
+原点を通る | pass through the origin | ph
+点をとる操作 | plotting | n
+表 | table | n
+対応表 | table of values | n
+式で表す | write an equation | ph
+ともなって変わる | change together | ph | near | as x changes, y changes
+
+## jp-chuugaku-1-heimen-zukei
+直線 | line | n
+線分 | segment | n | near | line segment
+半直線 | ray | n
+角 | angle | n
+頂点 | vertex | n
+辺 | side | n
+交点 | intersection | n | near | point of intersection
+垂直 | perpendicular | adj
+平行 | parallel | adj
+垂線 | perpendicular line | n
+垂直二等分線 | perpendicular bisector | n
+中点 | midpoint | n
+角の二等分線 | angle bisector | n
+距離 | distance | n
+円 | circle | n
+中心 | center | n
+半径 | radius | n
+直径 | diameter | n
+弧 | arc | n
+弦 | chord | n
+接線 | tangent line | n
+接点 | point of tangency | n
+おうぎ形 | sector | n
+中心角 | central angle | n
+円周 | circumference | n
+円周率 | pi | n | near | 定数 π。「円周率」という名前で呼ぶことは少ない
+面積 | area | n
+周の長さ | perimeter | n
+作図 | construction | n
+コンパス | compass | n
+定規 | straightedge | n | near | 目盛りなしは straightedge。ruler は目盛りあり
+移動 | transformation | n | near | 中1の「移動」は米国の rigid transformation
+平行移動 | translation | n
+回転移動 | rotation | n
+対称移動 | reflection | n
+対称の軸 | line of reflection | n | near | line of symmetry は図形自身の対称軸
+回転の中心 | center of rotation | n
+線対称 | line symmetry | n | near | reflectional symmetry
+点対称 | point symmetry | n | near | 米国では 180° rotational symmetry と言うことが多い
+三角形 | triangle | n
+四角形 | quadrilateral | n
+多角形 | polygon | n
+正多角形 | regular polygon | n
+作図する | construct | v
+接する | be tangent to | ph
+交わる | intersect | v
+垂直である | is perpendicular to | ph
+平行である | is parallel to | ph
+重なる | coincide | v | near | 「ぴったり重なる」は map onto / coincide
+対称な | symmetric | adj
+二等分する | bisect | v
+平行に移動する | translate | v
+回転させる | rotate | v
+折り返す | reflect | v | near | flip とも
+長さを測る | measure the length | ph
+角度を測る | measure the angle | ph
+
+## jp-chuugaku-1-kuukan-zukei
+空間図形 | solid figure | n | near | 3D figure / solid
+立体 | solid | n
+平面 | plane | n
+角柱 | prism | n
+角錐 | pyramid | n
+円柱 | cylinder | n
+円錐 | cone | n
+球 | sphere | n
+正多面体 | regular polyhedron | n | near | Platonic solid とも
+多面体 | polyhedron | n
+底面 | base | n
+側面 | lateral face | n
+側面積 | lateral area | n
+表面積 | surface area | n
+体積 | volume | n
+底面積 | area of the base | n
+高さ | height | n
+母線 | slant height | n | near | 円錐の母線は slant height。generatrix は専門用語
+展開図 | net | n
+投影図 | orthographic projection | n | near | 米国の中学ではほぼ扱わない。views (top / front / side)
+見取図 | sketch | n | near | 3D sketch。固有の語はない
+ねじれの位置 | skew lines | n | near | 「ねじれの位置にある」は are skew
+回転体 | solid of revolution | n
+立方体 | cube | n
+直方体 | rectangular prism | n | near | box / rectangular solid
+三角柱 | triangular prism | n
+四角錐 | square pyramid | n | near | 底面が正方形でないなら rectangular pyramid
+正四面体 | regular tetrahedron | n
+稜 | edge | n
+面 | face | n
+交わらない | do not intersect | ph
+含まれる | lie in | ph | near | the line lies in the plane
+交線 | line of intersection | n
+一回転させる | rotate once around | ph | near | revolve around the axis
+組み立てる | fold up | v | near | 展開図を組み立てる: fold the net
+切り開く | unfold | v
+垂直に交わる | meet at right angles | ph
+
+## jp-chuugaku-1-data-no-katsuyou
+データ | data | n
+度数 | frequency | n
+度数分布表 | frequency table | n
+階級 | class | n | near | class interval / bin
+階級の幅 | class width | n | near | bin width とも
+階級値 | class midpoint | n | near | 米国の中学ではほぼ使わない
+ヒストグラム | histogram | n
+度数折れ線 | frequency polygon | n
+相対度数 | relative frequency | n
+累積度数 | cumulative frequency | n
+累積相対度数 | cumulative relative frequency | n
+範囲 | range | n
+代表値 | measure of center | n | near | 「代表値」に 1 語の対応なし。measures of central tendency
+平均値 | mean | n
+中央値 | median | n
+最頻値 | mode | n
+分布 | distribution | n
+統計的確率 | experimental probability | n | near | 相対度数として求める確率。empirical probability とも
+傾向 | trend | n
+散らばり | spread | n | near | variability / dispersion
+最大値 | maximum | n
+最小値 | minimum | n
+読み取る | read off | v | near | read the histogram / interpret the graph
+分析する | analyze | v
+比較する | compare | v
+集計する | tally | v
+分ける | group | v | near | group the data into classes
+偏る | be skewed | ph | near | 分布が偏っている: the distribution is skewed
+ばらつく | vary | v
+平均をとる | take the average | ph
+
+## jp-chuugaku-2-shiki-no-keisan
+単項式 | monomial | n
+多項式 | polynomial | n
+次数 | degree | n
+二次式 | quadratic expression | n
+同類項をまとめる計算 | combining like terms | n | near | 名詞化
+分配する | distribute | v
+展開する | expand | v | near | 中2 の範囲では distribute。展開は 中3 で expand / multiply out
+式の加減 | adding and subtracting expressions | n
+式の乗除 | multiplying and dividing expressions | n
+文字式の利用 | using algebraic expressions | n | near | modeling with expressions
+等式の変形 | rearranging an equation | n | near | 米国では solve for y / rewrite the formula
+〜について解く | solve for | ph
+説明する | explain | v
+証明する | prove | v
+偶数 | even number | n
+奇数 | odd number | n
+連続する整数 | consecutive integers | n
+倍数 | multiple | n
+約数 | divisor | n | near | factor とも
+2 桁の整数 | two-digit integer | n
+十の位 | tens digit | n
+一の位 | ones digit | n | near | units digit とも
+割り切れる | be divisible by | ph
+余り | remainder | n
+商 | quotient | n
+積 | product | n
+和 | sum | n
+差 | difference | n
+除数 | divisor | n
+被除数 | dividend | n
+まとめる | collect | v | near | collect like terms
+消える | cancel out | ph | near | 項が消える: the terms cancel
+共通因数 | common factor | n
+
+## jp-chuugaku-2-renritsu-houteishiki
+連立方程式 | system of equations | n | near | system of linear equations / simultaneous equations（英国寄り）
+加減法 | elimination | n | near | elimination method
+代入法 | substitution | n | near | substitution method
+解の組 | solution pair | n | near | ordered pair (x, y) that satisfies both
+二元一次方程式 | linear equation in two variables | n
+消去する | eliminate | v
+文字を消去する | eliminate a variable | ph
+一方の式を他方に代入する | substitute one equation into the other | ph
+辺々加える | add the equations | ph | near | add the two equations together
+辺々引く | subtract the equations | ph
+係数をそろえる | line up the coefficients | ph | near | make the coefficients match
+解の吟味 | checking whether the solution makes sense | n | near | 文章題で。check that the answer is reasonable
+解なし | no solution | n
+解が無数にある | infinitely many solutions | ph
+連立する | set up a system | ph | near | 「連立させる」に 1 語なし。solve them simultaneously
+同時に満たす | satisfy both equations | ph
+代入して確かめる | plug back in to check | ph
+式を組み合わせる | combine the equations | ph
+定数倍する | multiply by a constant | ph
+過不足 | surplus and shortage | n | none | 日本の文章題の型。米国には対応する括りなし
+速さの問題 | motion problem | n | near | distance-rate-time problem
+濃度の問題 | mixture problem | n | near | 食塩水の問題は mixture problem
+
+## jp-chuugaku-2-ichiji-kansuu
+一次関数 | linear function | n
+傾き | slope | n
+切片 | y-intercept | n | near | 「切片」は y 切片。intercept 単独は x/y を言う
+変化の割合 | rate of change | n
+増加量 | change | n | near | the change in y / Δy
+グラフの交点 | intersection of the graphs | n
+直線の式 | equation of a line | n
+平行な直線 | parallel lines | n
+一次関数の利用 | applications of linear functions | n | near | modeling with linear functions
+二元一次方程式のグラフ | graph of a linear equation in two variables | n
+右上がり | increasing | adj | near | rises from left to right / positive slope
+右下がり | decreasing | adj | near | falls from left to right / negative slope
+定義域 | domain | n
+値域 | range | n
+点を通る | pass through a point | ph
+傾きを求める | find the slope | ph
+式を求める | find the equation | ph
+グラフを平行移動する | shift the graph | ph | near | translate / slide the graph
+交点を求める | find the point of intersection | ph
+x 軸との交点 | x-intercept | n
+表・式・グラフ | table, equation, and graph | n | near | multiple representations
+比例のグラフ | graph of direct variation | n
+定数関数 | constant function | n
+傾きが等しい | have the same slope | ph
+y が x に伴って変わる | y changes with x | ph
+1 増えると | when x increases by 1 | ph
+線形 | linear | adj
+
+## jp-chuugaku-2-heikou-to-goudou
+対頂角 | vertical angles | n
+同位角 | corresponding angles | n
+錯角 | alternate interior angles | n
+同側内角 | same-side interior angles | n | near | consecutive interior angles とも
+内角 | interior angle | n
+外角 | exterior angle | n
+内角の和 | sum of the interior angles | n
+外角の和 | sum of the exterior angles | n
+三角形の内角の和 | angle sum of a triangle | n | near | triangle angle sum theorem
+鋭角 | acute angle | n
+直角 | right angle | n
+鈍角 | obtuse angle | n
+鋭角三角形 | acute triangle | n
+直角三角形 | right triangle | n
+鈍角三角形 | obtuse triangle | n
+合同 | congruence | n
+合同な図形 | congruent figures | n
+対応する頂点 | corresponding vertices | n
+対応する辺 | corresponding sides | n
+対応する角 | corresponding angles | n
+合同条件 | congruence criteria | n | near | 米国では SSS / SAS / ASA / AAS / HL と略称で呼ぶ
+三辺相等 | SSS | n | near | side-side-side
+二辺夾角相等 | SAS | n | near | side-angle-side
+一辺両端角相等 | ASA | n | near | angle-side-angle
+仮定 | hypothesis | n | near | 証明の「仮定」は given
+結論 | conclusion | n
+証明 | proof | n
+定理 | theorem | n
+定義 | definition | n
+逆 | converse | n
+反例 | counterexample | n
+補助線 | auxiliary line | n
+図形の性質 | properties of figures | n
+証明する | prove | v
+仮定より | by hypothesis | ph | near | 答案では "Given" / "since ... is given"
+〜より | since | ph | near | 答案では since / because / by
+よって | therefore | ph | near | 話: so 書: therefore / hence
+ゆえに | hence | ph
+合同である | is congruent to | ph
+対応する | correspond to | ph
+等しい | equal | adj
+それぞれ等しい | are equal, respectively | ph
+示せ | show that | ph | near | 問題文の指示語。Prove / Show that
+〜を証明せよ | prove that | ph
+成り立つことを示す | show that it holds | ph
+平行線の性質 | properties of parallel lines | n
+角度を求める | find the angle | ph
+
+## jp-chuugaku-2-sankakkei-to-shikakkei
+二等辺三角形 | isosceles triangle | n
+底角 | base angle | n
+頂角 | vertex angle | n
+底辺 | base | n
+正三角形 | equilateral triangle | n
+直角三角形の合同条件 | congruence criteria for right triangles | n | near | HL（hypotenuse-leg）
+斜辺 | hypotenuse | n
+平行四辺形 | parallelogram | n
+長方形 | rectangle | n
+ひし形 | rhombus | n
+正方形 | square | n
+台形 | trapezoid | n | near | 英国は trapezium。米国は trapezoid
+対角線 | diagonal | n
+対辺 | opposite side | n
+対角 | opposite angle | n
+平行四辺形になる条件 | conditions for a parallelogram | n | near | ways to prove a quadrilateral is a parallelogram
+定義と定理 | definition and theorem | n
+逆が成り立つ | the converse holds | ph
+面積が等しい | have the same area | ph | near | equal in area
+等積変形 | area-preserving transformation | n | none | 日本の中2 の括り。米国では same base, same height
+特別な平行四辺形 | special parallelograms | n
+二等分する | bisect each other | ph | near | 対角線が互いに他を二等分する
+中点連結定理 | midsegment theorem | n | near | triangle midsegment theorem。日本は中3
+共通 | common | adj | near | 共通の辺: the shared side / common side
+向かい合う | opposite | adj
+三角形の合同を利用する | use congruent triangles | ph
+角を二等分する | bisect the angle | ph
+図形を分ける | divide the figure | ph
+一直線上にある | are collinear | ph
+条件を満たす | satisfy the condition | ph
+必要十分 | necessary and sufficient | adj
+
+## jp-chuugaku-2-data-no-katsuyou
+四分位数 | quartile | n
+第 1 四分位数 | first quartile | n | near | Q1 / lower quartile
+第 3 四分位数 | third quartile | n | near | Q3 / upper quartile
+四分位範囲 | interquartile range | n
+箱ひげ図 | box plot | n | near | box-and-whisker plot
+ひげ | whisker | n
+外れ値 | outlier | n
+データの散らばり | spread of the data | n
+分布の比較 | comparing distributions | n
+五数要約 | five-number summary | n
+中央値で分ける | split at the median | ph
+散らばりが大きい | more spread out | ph
+箱の長さ | length of the box | n
+ひげの長さ | length of the whisker | n
+批判的に考察する | evaluate critically | ph | near | 統計的探究の言い方
+
+## jp-chuugaku-2-kakuritsu
+確率 | probability | n
+起こりうる場合の数 | number of possible outcomes | n | near | STYLE: 分野名としての「場合の数」は counting
+同様に確からしい | equally likely | adj
+起こりうる | possible | adj | near | possible outcomes
+事象 | event | n
+起こらない確率 | probability of not happening | n | near | complement
+樹形図 | tree diagram | n
+確率の表 | table of outcomes | n | near | sample space table
+さいころ | die | n | near | 複数は dice
+硬貨 | coin | n
+表（硬貨） | heads | n | near | 硬貨の表
+裏（硬貨） | tails | n
+くじ | lottery | n | near | 「くじを引く」は draw lots / draw a ticket
+玉 | ball | n | near | marble もよく使う
+袋 | bag | n
+取り出す | draw | v | near | draw a ball from the bag
+戻す | replace | v | near | with replacement / without replacement
+投げる | toss | v | near | flip a coin / roll a die
+起こりやすさ | likelihood | n
+必ず起こる | certain | adj
+決して起こらない | impossible | adj
+確率を求める | find the probability | ph
+すべての場合 | all possible outcomes | n | near | sample space
+少なくとも | at least | ph
+〜となる確率 | the probability that | ph
+
+## jp-chuugaku-3-tenkai-insuubunkai
+展開 | expansion | n | near | 米国の教室では動詞 expand / multiply out が中心
+因数分解 | factoring | n | near | 英国は factorising
+乗法公式 | special products | n | near | 「乗法公式」という一括りの名はなく、square of a binomial などと個別に呼ぶ
+因数 | factor | n
+共通因数 | common factor | n
+共通因数をくくり出す | factor out the common factor | ph
+平方の公式 | square of a binomial | n
+和と差の積 | difference of squares | n
+多項式の乗法 | multiplying polynomials | n
+式の計算の利用 | applications of expressions | n | near
+数の性質の証明 | proving properties of numbers | n
+展開する | expand | v | near | multiply out / distribute とも
+因数分解する | factor | v
+くくり出す | factor out | v
+かける | multiply | v
+分配法則を使う | use the distributive property | ph
+たすき掛け | cross method | n | none | STYLE: 米国は ac method / grouping / box method
+完全平方式 | perfect square trinomial | n
+二乗の差 | difference of two squares | n
+和の平方 | square of a sum | n
+差の平方 | square of a difference | n
+二項式 | binomial | n
+三項式 | trinomial | n
+置き換える | substitute | v | near | 「x+1 を A と置き換える」は let A = x + 1
+まとめてくくる | group | v | near | factor by grouping
+最高次の項 | leading term | n
+最高次の係数 | leading coefficient | n
+降べきの順 | descending order | n | near | in descending powers of x
+昇べきの順 | ascending order | n
+
+## jp-chuugaku-3-heihoukon
+平方根 | square root | n
+根号 | radical sign | n | near | radical / the root symbol
+ルート | radical | n | near | 「ルート 2」は the square root of two / root two
+有理数 | rational number | n
+無理数 | irrational number | n
+循環小数 | repeating decimal | n
+有限小数 | terminating decimal | n
+無限小数 | non-terminating decimal | n
+近似値 | approximate value | n
+誤差 | error | n
+有効数字 | significant figures | n | near | significant digits / sig figs
+真の値 | true value | n
+分母の有理化 | rationalizing the denominator | n
+根号を含む式の計算 | operations with radicals | n
+有理化する | rationalize | v
+簡単にする | simplify | v | near | simplify the radical
+根号の中を小さくする | simplify the radical | ph
+根号の外に出す | take out of the radical | ph | near | pull out a perfect square
+平方根をとる | take the square root | ph
+2 乗する | square | v
+正の平方根 | principal square root | n | near | 米国では √ が正の平方根を表すことを principal と言う
+負の平方根 | negative square root | n
+平方根の大小 | comparing square roots | n
+測定値 | measurement | n
+無理数である | is irrational | ph
+評価する | estimate | v | near | √10 を評価する: estimate √10
+
+## jp-chuugaku-3-niji-houteishiki
+二次方程式 | quadratic equation | n
+解の公式 | quadratic formula | n
+平方完成 | completing the square | n
+因数分解による解法 | solving by factoring | n
+平方根の考えを使う解法 | solving by taking square roots | n
+重解 | double root | n | near | repeated root / a root of multiplicity 2
+2 つの解 | two solutions | n
+解の個数 | number of solutions | n
+二次方程式の利用 | applications of quadratic equations | n
+解を求める | find the solutions | ph
+因数分解して解く | solve by factoring | ph
+平方完成する | complete the square | v
+解の公式を使う | use the quadratic formula | ph
+解の公式に代入する | plug into the quadratic formula | ph
+解が正である | the solution is positive | ph
+解の吟味をする | check that the solution makes sense | ph
+0 になる | equal zero | ph
+どちらかが 0 | one of them is zero | ph | near | zero product property
+積が 0 | the product is zero | ph
+零因子の性質 | zero product property | n | near | 日本では名前をつけずに使う
+係数を比べる | compare coefficients | ph
+
+## jp-chuugaku-3-kansuu-y-ax2
+二次関数 | quadratic function | n
+放物線 | parabola | n
+y=ax² のグラフ | graph of y = ax² | n
+上に開く | open upward | ph | near | opens up
+下に開く | open downward | ph | near | opens down
+軸 | axis of symmetry | n
+頂点 | vertex | n
+変化の割合 | average rate of change | n | near | 二次関数の「変化の割合」は米国では average rate of change
+放物線と直線 | parabola and line | n
+関数の利用 | applications of functions | n
+いろいろな関数 | other functions | n | near | 階段関数など。step function
+制動距離 | braking distance | n
+落下 | free fall | n
+放物線の開き方 | width of the parabola | n | near | how wide or narrow
+線対称である | is symmetric about | ph
+最大値をとる | attain the maximum | ph | near | reaches its maximum
+最小値をとる | attain the minimum | ph
+座標を代入する | substitute the coordinates | ph
+x の値が増加する | as x increases | ph
+y の値が減少する | y decreases | ph
+グラフが通る | the graph passes through | ph
+2 乗に比例する | is proportional to the square of | ph | near | varies directly with the square of
+
+## jp-chuugaku-3-souji
+相似 | similarity | n
+相似な図形 | similar figures | n
+相似比 | ratio of similarity | n | near | scale factor
+相似条件 | similarity criteria | n | near | AA / SAS / SSS similarity
+二角相等 | AA | n | near | angle-angle similarity
+拡大 | enlargement | n | near | dilation（scale factor > 1）
+縮小 | reduction | n | near | dilation（scale factor < 1）
+相似の中心 | center of dilation | n
+縮図 | scale drawing | n
+平行線と線分の比 | parallel lines and proportional segments | n | near | triangle proportionality theorem
+中点連結定理 | midsegment theorem | n | near | 中2 と重複。日本は中3 で扱う
+角の二等分線と比 | angle bisector theorem | n
+相似な図形の面積比 | ratio of areas of similar figures | n
+相似な立体の体積比 | ratio of volumes of similar solids | n
+面積比 | ratio of areas | n
+体積比 | ratio of volumes | n
+対応する辺の比 | ratio of corresponding sides | n
+比例式を作る | set up a proportion | ph
+相似である | is similar to | ph
+相似を利用する | use similar triangles | ph
+拡大する | enlarge | v | near | dilate / scale up
+縮小する | shrink | v | near | dilate / scale down
+比が等しい | the ratios are equal | ph
+高さを測る | measure the height | ph
+縮尺 | scale | n
+
+## jp-chuugaku-3-en
+円周角 | inscribed angle | n
+中心角 | central angle | n
+円周角の定理 | inscribed angle theorem | n
+弧に対する円周角 | inscribed angle subtending an arc | n | near | angle that intercepts the arc
+円周角の定理の逆 | converse of the inscribed angle theorem | n
+接線と弦 | tangent and chord | n
+直径に対する円周角 | angle inscribed in a semicircle | n | near | Thales' theorem
+接線の長さ | length of a tangent | n
+円に内接する四角形 | cyclic quadrilateral | n | near | inscribed quadrilateral。日本は数A
+弧の長さ | arc length | n
+半円 | semicircle | n
+円と直線 | circle and line | n
+半径に垂直 | perpendicular to the radius | ph
+等しい弧 | congruent arcs | n
+円周上にある | lie on the circle | ph
+4 点が同一円周上にある | four points are concyclic | ph | near | lie on the same circle
+円周角は中心角の半分 | the inscribed angle is half the central angle | ph
+弧に対する | subtended by | ph | near | intercepted by
+接線を引く | draw a tangent | ph
+円を描く | draw a circle | ph
+
+## jp-chuugaku-3-sanpeihou
+三平方の定理 | Pythagorean theorem | n | | | | ピタゴラスの定理
+ピタゴラスの定理 | Pythagorean theorem | n | exact | 同じ語。ja.alt へ | pythagorean-theorem-alt
+三平方の定理の逆 | converse of the Pythagorean theorem | n
+斜辺 | hypotenuse | n
+直角をはさむ辺 | legs | n | near | leg は「直角をはさむ 2 辺」
+特別な直角三角形 | special right triangles | n
+45-45-90 の三角形 | 45-45-90 triangle | n
+30-60-90 の三角形 | 30-60-90 triangle | n
+2 点間の距離 | distance between two points | n
+距離の公式 | distance formula | n
+対角線の長さ | length of a diagonal | n
+空間内の 2 点間の距離 | distance in three dimensions | n
+三平方の定理を使う | use the Pythagorean theorem | ph
+辺の長さを求める | find the length of the side | ph
+ピタゴラス数 | Pythagorean triple | n
+直角三角形になる | forms a right triangle | ph
+平方して足す | square and add | ph
+最短距離 | shortest distance | n
+立体の対角線 | space diagonal | n
+高さを求める | find the height | ph
+
+## jp-chuugaku-3-hyouhon-chousa
+標本調査 | sample survey | n | near | sampling
+全数調査 | census | n
+母集団 | population | n
+標本 | sample | n
+標本の大きさ | sample size | n
+無作為に抽出する | select at random | ph | near | random sampling
+乱数 | random number | n
+乱数表 | random number table | n
+推定する | estimate | v
+標本平均 | sample mean | n
+母集団の平均 | population mean | n
+かたよりのない | unbiased | adj
+標本抽出 | sampling | n
+無作為抽出 | random sampling | n
+調査する | survey | v

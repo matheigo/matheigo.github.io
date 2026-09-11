@@ -1,0 +1,145 @@
+## jp-suugaku-c-vector
+ベクトル | vector | n
+有向線分 | directed segment | n
+始点 | initial point | n | near | tail
+終点 | terminal point | n | near | tip / head
+ベクトルの大きさ | magnitude | n | near | length / norm
+単位ベクトル | unit vector | n
+零ベクトル | zero vector | n
+逆ベクトル | opposite vector | n | near | negative of a vector
+ベクトルの相等 | equal vectors | n
+ベクトルの加法 | vector addition | n
+ベクトルの減法 | vector subtraction | n
+ベクトルの実数倍 | scalar multiplication | n
+スカラー | scalar | n
+平行なベクトル | parallel vectors | n
+ベクトルの分解 | decomposition of a vector | n | near | resolving into components
+一次独立 | linearly independent | adj
+一次従属 | linearly dependent | adj
+一次結合 | linear combination | n
+ベクトルの成分 | components | n
+成分表示 | component form | n
+位置ベクトル | position vector | n
+内分点の位置ベクトル | position vector of the dividing point | n
+内積 | dot product | n | near | inner product（大学）/ scalar product
+ベクトルのなす角 | angle between vectors | n
+垂直条件 | condition for perpendicularity | n | near | dot product is zero
+平行条件 | condition for parallelism | n
+ベクトル方程式 | vector equation | n
+直線のベクトル方程式 | vector equation of a line | n
+法線ベクトル | normal vector | n
+方向ベクトル | direction vector | n
+円のベクトル方程式 | vector equation of a circle | n
+空間ベクトル | vectors in space | n | near | 3D vectors
+空間座標 | coordinates in space | n
+平面の方程式 | equation of a plane | n
+球面の方程式 | equation of a sphere | n
+共線条件 | collinearity condition | n
+共面条件 | coplanarity condition | n
+三角形の面積とベクトル | area of a triangle using vectors | n
+外積 | cross product | n | near | 日本の高校では扱わない
+ベクトルを分解する | resolve the vector | ph | near | break into components
+内積を計算する | compute the dot product | ph
+なす角を求める | find the angle between | ph
+垂直である | are orthogonal | ph | near | perpendicular とも
+一次独立である | are linearly independent | ph
+係数を比較する | compare coefficients | ph
+成分で表す | write in components | ph
+大きさを求める | find the magnitude | ph
+矢印で表す | represent by an arrow | ph
+点 P の位置ベクトルを p とする | let p be the position vector of P | ph
+ベクトルで表す | express as a vector | ph
+実数 s, t を用いて | using real numbers s and t | ph
+平行である | are parallel | ph
+2 乗する | square | v | near | |a|² = a·a
+内積の性質 | properties of the dot product | n
+
+## jp-suugaku-c-kyokusen-to-fukuso-heimen
+放物線 | parabola | n
+楕円 | ellipse | n
+双曲線 | hyperbola | n
+二次曲線 | conic section | n | | | | 円錐曲線
+焦点 | focus | n
+準線 | directrix | n
+長軸 | major axis | n
+短軸 | minor axis | n
+主軸 | transverse axis | n
+漸近線 | asymptote | n
+離心率 | eccentricity | n
+頂点 | vertex | n
+円錐曲線 | conic | n
+二次曲線の標準形 | standard form of a conic | n
+二次曲線の平行移動 | translated conics | n
+二次曲線と直線 | conics and lines | n
+接線の方程式 | equation of the tangent | n
+媒介変数表示 | parametric representation | n
+媒介変数 | parameter | n
+サイクロイド | cycloid | n
+極座標 | polar coordinates | n
+極 | pole | n
+偏角 | polar angle | n | near | 極座標の θ。複素数では argument
+極方程式 | polar equation | n
+直交座標 | rectangular coordinates | n | near | Cartesian coordinates
+複素数平面 | complex plane | n
+実軸 | real axis | n
+虚軸 | imaginary axis | n
+複素数の絶対値 | modulus | n | near | absolute value of a complex number
+複素数の偏角 | argument | n
+極形式 | polar form | n
+ド・モアブルの定理 | De Moivre's theorem | n
+n 乗根 | nth root | n
+1 の n 乗根 | nth roots of unity | n
+複素数の積と商 | product and quotient of complex numbers | n
+回転 | rotation | n
+複素数と図形 | geometry with complex numbers | n
+オイラーの公式 | Euler's formula | n
+共役複素数 | complex conjugate | n
+極座標で表す | write in polar coordinates | ph
+極形式で表す | write in polar form | ph
+直交座標に直す | convert to rectangular coordinates | ph
+媒介変数を消去する | eliminate the parameter | ph
+焦点を求める | find the foci | ph
+離心率を求める | find the eccentricity | ph
+絶対値と偏角を求める | find the modulus and argument | ph
+n 乗する | raise to the nth power | ph
+原点のまわりに回転する | rotate about the origin | ph
+複素数を点で表す | represent the complex number as a point | ph
+偏角をとる | take the argument | ph
+複素数平面上の 2 点間の距離 | distance between two complex numbers | n
+垂直条件 | perpendicularity condition | n
+曲線をかく | sketch the curve | ph
+軌跡を求める | find the locus | ph
+点 z が描く図形 | the figure traced by z | n | near | the locus of z
+純虚数となる条件 | condition to be purely imaginary | n
+実数となる条件 | condition to be real | n
+
+## jp-suugaku-c-hyougen-no-kufuu
+行列 | matrix | n
+行 | row | n
+列 | column | n
+成分 | entry | n | near | element / component
+正方行列 | square matrix | n
+単位行列 | identity matrix | n
+零行列 | zero matrix | n
+逆行列 | inverse matrix | n
+行列の積 | matrix multiplication | n
+行列式 | determinant | n
+一次変換 | linear transformation | n
+連立一次方程式と行列 | solving systems with matrices | n
+統計グラフ | statistical graph | n
+離散グラフ | graph | n | near | graph theory の graph
+頂点（グラフ） | vertex | n | exact | グラフ理論 | vertex-graph
+辺（グラフ） | edge | n
+経路（グラフ） | path | n
+一筆書き | Eulerian path | n | near | traversable graph
+隣接行列 | adjacency matrix | n
+木（グラフ） | tree | n
+ヒストグラム | histogram | n
+折れ線グラフ | line graph | n
+円グラフ | pie chart | n
+帯グラフ | stacked bar chart | n | near | 米国では 100% stacked bar
+散布図 | scatter plot | n
+行列を掛ける | multiply the matrices | ph
+逆行列を求める | find the inverse | ph
+表に整理する | organize in a table | ph
+グラフで表す | represent with a graph | ph

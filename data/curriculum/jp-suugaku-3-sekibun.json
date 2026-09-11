@@ -5,22 +5,34 @@
   "unit": "積分法",
   "topics": [
     "不定積分",
-    "定積分",
     "置換積分法",
     "部分積分法",
+    "定積分",
+    "区分求積法",
     "面積",
     "体積",
-    "曲線の長さ"
+    "曲線の長さ",
+    "速度と道のり"
   ],
   "us_equivalents": [
     {
+      "course": "AP Calculus AB",
+      "coverage": "most",
+      "note": "置換・体積・面積"
+    },
+    {
       "course": "AP Calculus BC",
-      "coverage": "most"
+      "coverage": "most",
+      "note": "部分積分・部分分数は BC"
+    },
+    {
+      "course": "Calculus I",
+      "coverage": "some"
     },
     {
       "course": "Calculus II",
       "coverage": "most",
-      "note": "数IIIの積分は Calc I 後半〜Calc II 前半に相当。級数・Taylor は日本の高校範囲外。"
+      "note": "数IIIの積分は Calc I 後半〜Calc II 前半。級数・Taylor は日本の高校範囲外"
     }
   ],
   "term_refs": [],
@@ -30,5 +42,5 @@
       "doc": "高等学校学習指導要領（平成30年告示）英訳版（仮訳）"
     }
   ],
-  "updated": "2026-09-10"
+  "updated": "2026-09-11"
 }

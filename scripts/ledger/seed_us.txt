@@ -1,0 +1,1155 @@
+# 米国側から逆に洗った語。ja は日本語での呼び方（大学で使う訳語 or 説明的な訳）
+# 形式: ja | en | pos | mapping | note | id | wiki-title | level_jp
+
+## us-pre-algebra-expressions-and-equations
+演算の順序 | order of operations | n | near | 日本では名前をつけずに教える | | 演算子の優先順位
+PEMDAS | PEMDAS | n | none | 演算順序の覚え方（Parentheses, Exponents, Multiplication/Division, Addition/Subtraction） | | | —
+数直線上の目盛り | tick mark | n | none | 日本では名前がない | | | —
+分配して展開する | distribute | v | exact | 米国では中学から distribute を動詞で使う
+式を評価する | evaluate | v | near | 「式の値を求める」の米国側の定番動詞
+単純化する | simplify | v | exact
+逆演算で解く | undo | v | near | 方程式を解くときの「逆の操作をする」 | undo-operation
+両辺を等しく保つ | keep the equation balanced | ph | near | balance model
+数を代入して確かめる | check by substituting | ph | exact
+
+## us-pre-algebra-ratios-and-percents
+単位あたりの量 | unit rate | n | near | 日本では「単位量あたりの大きさ」（小学校）| | | 小学校
+比例関係 | proportional relationship | n | exact
+パーセントの増減 | percent change | n | near | percent increase / decrease
+税込み価格 | sales tax | n | none | 文章題の定番 | | | —
+チップ | tip | n | none | 文章題の定番 | | | —
+値引き | discount | n | exact
+利息 | simple interest | n | near | 単利
+換算する | convert | v | exact | 単位の換算。convert feet to inches
+フィート | foot | n | none | 文章題では feet, inches, miles | | | —
+マイル | mile | n | none | | | | —
+
+## us-algebra-1-linear-equations
+一次不等式 | linear inequality | n | exact | 日本は数I
+複合不等式 | compound inequality | n | near | 「連立不等式」に近いが and / or で区別
+リテラル方程式 | literal equation | n | none | 「文字について解く」公式の変形。日本では名前がない | | | —
+公式を変形する | rearrange a formula | ph | exact
+解を数直線に図示する | graph the solution on a number line | ph | exact
+連続する偶数 | consecutive even integers | n | exact
+区間記法 | interval notation | n | none | [a, b) の書き方。日本の高校では使わない。大学で必須 | | | 大学
+集合の内包的記法 | set-builder notation | n | near | {x | x > 2}。日本では「条件で表す」 | | | 大学
+解集合 | solution set | n | exact
+
+## us-algebra-1-linear-functions
+傾き切片形 | slope-intercept form | n | near | y = mx + b。日本の y = ax + b に対応するが名前がない
+点傾き形 | point-slope form | n | none | y − y₁ = m(x − x₁)。日本では名前がない | | | —
+直線の標準形 | standard form of a line | n | near | Ax + By = C。日本の一般形 ax + by + c = 0 とは形が違う
+傾きの公式 | slope formula | n | near | rise over run
+上昇分 / 水平移動分 | rise over run | ph | none | 傾きの覚え方 | | | —
+x 切片 | x-intercept | n | exact
+関数記法 | function notation | n | exact
+定義域と値域 | domain and range | n | exact
+算術数列 | arithmetic sequence | n | exact | Algebra 1 では一次関数の文脈で
+区分的関数 | piecewise function | n | near | 日本の高校では名前をつけずに扱う
+絶対値関数 | absolute value function | n | exact
+階段関数 | step function | n | exact
+一次関数のモデル化 | linear modeling | n | near
+最適直線 | line of best fit | n | near | 回帰直線。目分量で引くことも
+散布図の傾向 | trend line | n | near
+相関と因果 | correlation vs. causation | n | exact
+逆数の負 | negative reciprocal | n | none | 垂直な直線の傾きの関係。日本では「積が −1」 | | | —
+平行な直線の傾きは等しい | parallel lines have equal slopes | ph | exact
+垂直判定 | perpendicular lines have negative reciprocal slopes | ph | near
+
+## us-algebra-1-systems
+消去法 | elimination method | n | near | 加減法
+代入法 | substitution method | n | exact
+グラフによる解法 | solving by graphing | n | exact
+連立不等式のグラフ | graphing systems of inequalities | n | exact
+矛盾する連立方程式 | inconsistent system | n | near | 解なし。日本では名前がない
+従属な連立方程式 | dependent system | n | near | 解が無数。日本では名前がない
+独立な連立方程式 | independent system | n | near | ただ 1 組の解
+
+## us-algebra-1-exponents-and-exponential-functions
+指数法則 | exponent rules | n | exact | properties of exponents
+指数関数的増加 | exponential growth | n | exact
+指数関数的減少 | exponential decay | n | exact
+成長率 | growth rate | n | exact
+複利 | compound interest | n | exact
+半減期 | half-life | n | exact
+科学的記数法 | scientific notation | n | near | 日本の「a × 10ⁿ の形」。中1 で扱う
+幾何数列 | geometric sequence | n | exact
+
+## us-algebra-1-polynomials-and-factoring
+FOIL | FOIL | n | none | 二項式の積の覚え方（First, Outer, Inner, Last） | | | —
+最大公約因数 | greatest common factor | n | near | GCF。日本の最大公約数（数）と式の共通因数を同じ語で言う
+グループ分けによる因数分解 | factoring by grouping | n | near | たすき掛けの代替
+ac 法 | ac method | n | none | たすき掛けの米国版 | | | —
+ボックス法 | box method | n | none | 面積モデルで因数分解・展開 | | | —
+面積モデル | area model | n | none | | | | —
+完全平方三項式 | perfect square trinomial | n | exact
+零積の性質 | zero product property | n | near | 日本では名前をつけない
+多項式の標準形 | standard form of a polynomial | n | near | 降べきの順
+主係数 | leading coefficient | n | exact
+素多項式 | prime polynomial | n | none | これ以上因数分解できない多項式 | | | —
+完全に因数分解する | factor completely | ph | exact
+かけ算で確かめる | check by multiplying | ph | exact
+
+## us-algebra-1-quadratics
+頂点形 | vertex form | n | near | 日本の「標準形」y = a(x−p)² + q
+放物線の軸 | axis of symmetry | n | exact
+最大点・最小点 | maximum or minimum point | n | exact
+根 | root | n | near | 方程式の解。zero / x-intercept とも
+零点 | zero | n | near | 関数の零点。日本の高校では「x 軸との共有点」
+平方根をとって解く | solve by taking square roots | ph | exact
+平方完成で解く | solve by completing the square | ph | exact
+解の公式で解く | solve using the quadratic formula | ph | exact
+判別式で解の個数を判定する | use the discriminant to count solutions | ph | exact
+放物線の頂点を読む | read off the vertex | ph | exact
+投射運動 | projectile motion | n | near | 文章題の定番。「投げ上げ」
+関数の変換 | transformations of functions | n | near | 平行移動・対称移動・伸縮をまとめて
+垂直方向の伸縮 | vertical stretch | n | near
+水平方向の伸縮 | horizontal compression | n | near
+親関数 | parent function | n | none | y = x², y = |x| など基本の関数。日本では名前がない | | | —
+
+## us-algebra-1-radicals
+根号式 | radical expression | n | exact
+根号を簡単にする | simplify radicals | ph | exact
+根号式の加減 | add and subtract radicals | ph | exact
+同類根号 | like radicals | n | none | √2 と 3√2 のように根号の中が同じもの | | | —
+根号方程式 | radical equation | n | near | 日本では無理方程式（数III）
+無縁解 | extraneous solution | n | near | 両辺を 2 乗して生じる余分な解。日本では「解の吟味」で落とす
+両辺を 2 乗する | square both sides | ph | exact
+
+## us-algebra-1-statistics
+ドットプロット | dot plot | n | none | 日本では扱わない | | | —
+幹葉図 | stem-and-leaf plot | n | none | 日本の教科書では稀 | | | —
+二元分割表 | two-way table | n | near | クロス集計表
+歪度のある分布 | skewed distribution | n | near | 「偏った分布」
+左右対称な分布 | symmetric distribution | n | exact
+平均絶対偏差 | mean absolute deviation | n | none | 日本では扱わない | | | —
+残差 | residual | n | exact | 大学の統計で
+
+## us-geometry-foundations
+点・直線・平面 | undefined terms | n | none | 無定義用語 | | | 大学
+共線の点 | collinear points | n | exact
+共面の点 | coplanar points | n | exact
+線分の長さ | segment length | n | exact
+線分の加法公理 | segment addition postulate | n | none | 米国の幾何のみ | | | —
+角の加法公理 | angle addition postulate | n | none | | | | —
+分度器 | protractor | n | exact | 小学校
+隣接角 | adjacent angles | n | near | 日本では名前をつけない
+一直線をなす角 | linear pair | n | none | 隣り合って 180° になる 2 角 | | | —
+公準 | postulate | n | near | 公理
+中点公式 | midpoint formula | n | exact
+距離の公式 | distance formula | n | exact
+角の分類 | classifying angles | n | exact
+平角 | straight angle | n | near | 180° の角。日本では名前を使わない
+優角 | reflex angle | n | near | 180° を超える角
+
+## us-geometry-reasoning-and-proof
+帰納的推論 | inductive reasoning | n | exact
+演繹的推論 | deductive reasoning | n | exact
+条件文 | conditional statement | n | near | 「p ならば q」の形の命題
+双条件文 | biconditional | n | near | 必要十分条件
+二段組みの証明 | two-column proof | n | none | statements と reasons の 2 列。米国の高校幾何の答案形式 | | | —
+段落証明 | paragraph proof | n | none | 文章で書く証明 | | | —
+フローチャート証明 | flowchart proof | n | none | | | | —
+主張と理由 | statements and reasons | n | none | 二段組み証明の列 | | | —
+与えられた条件 | given | n | near | 証明の「仮定」。答案では Given: と書く
+証明せよ | prove | v | exact
+推移律 | transitive property | n | exact
+反射律 | reflexive property | n | exact
+対称律 | symmetric property | n | exact
+代入の性質 | substitution property | n | near | 等しいものは置き換えられる
+三段論法 | law of syllogism | n | near | 米国の幾何で名前つきで教える
+肯定式 | law of detachment | n | near | modus ponens
+定義による | by definition | ph | exact
+仮定の裏 | inverse | n | exact | 「裏」
+合同の定義 | definition of congruence | n | exact
+数直線上の距離 | ruler postulate | n | none | | | | —
+
+## us-geometry-parallel-and-perpendicular
+横断線 | transversal | n | near | 2 直線を横切る直線。日本では名前をつけない
+錯角の定理 | alternate interior angles theorem | n | exact
+同位角の公準 | corresponding angles postulate | n | exact
+外錯角 | alternate exterior angles | n | none | 日本では扱わない | | | —
+同側外角 | same-side exterior angles | n | none | | | | —
+平行の判定 | proving lines parallel | n | exact
+点と直線の距離 | distance from a point to a line | n | exact
+垂線の公準 | perpendicular postulate | n | none | | | | —
+傾きによる平行判定 | slopes of parallel lines | n | exact
+
+## us-geometry-congruent-triangles
+三角形の分類 | classifying triangles | n | exact
+不等辺三角形 | scalene triangle | n | exact
+等脚三角形 | isosceles triangle | n | exact
+等角三角形 | equiangular triangle | n | near | 正三角形
+外角定理 | exterior angle theorem | n | exact
+三角形の合同条件 SSS | SSS congruence | n | exact
+SAS | SAS congruence | n | exact
+ASA | ASA congruence | n | exact
+AAS | AAS congruence | n | near | 日本では ASA に含めて扱う
+HL | HL congruence | n | near | 直角三角形の合同条件（斜辺と 1 辺）
+CPCTC | CPCTC | n | none | corresponding parts of congruent triangles are congruent。証明の理由として書く定番 | | | —
+二等辺三角形の定理 | isosceles triangle theorem | n | exact
+底角定理 | base angles theorem | n | exact
+合同変換 | rigid motion | n | near | 移動（平行移動・回転・対称移動）
+合同を示す | prove triangles congruent | ph | exact
+対応する部分 | corresponding parts | n | exact
+
+## us-geometry-similarity
+拡大・縮小 | dilation | n | near | 相似変換
+拡大率 | scale factor | n | near | 相似比
+AA 相似 | AA similarity | n | exact
+相似変換 | similarity transformation | n | exact
+三角形の比例定理 | triangle proportionality theorem | n | near | 平行線と線分の比
+比例する辺 | proportional sides | n | exact
+相似比と面積比 | ratio of areas of similar figures | n | exact
+間接測定 | indirect measurement | n | near | 影の長さで高さを測る
+幾何平均 | geometric mean | n | exact | 直角三角形の相似で
+直角三角形の相似 | right triangle similarity | n | near | 「斜辺への垂線」
+
+## us-geometry-right-triangles-and-trig
+ピタゴラスの定理 | Pythagorean theorem | n | exact | 三平方の定理
+ピタゴラス数 | Pythagorean triple | n | exact
+特別な直角三角形 | special right triangles | n | exact
+SOHCAHTOA | SOHCAHTOA | n | none | 三角比の覚え方 | | | —
+仰角 | angle of elevation | n | exact
+俯角 | angle of depression | n | exact
+逆正弦 | inverse sine | n | near | sin⁻¹。角度を求めるときに使う。日本の高校では「三角比の表から読む」
+角度を求めるために逆三角関数を使う | use inverse trig to find the angle | ph | none | | | | —
+三角比で辺を求める | solve the right triangle | ph | near | 「直角三角形を解く」
+正弦定理 | law of sines | n | exact
+余弦定理 | law of cosines | n | exact
+ベクトルの応用 | applications of vectors | n | near | 幾何での扱い
+
+## us-geometry-circles
+接線 | tangent | n | exact
+割線 | secant | n | near | 日本の高校では「円と 2 点で交わる直線」
+内接角 | inscribed angle | n | exact | 円周角
+切片の弧 | intercepted arc | n | none | 内接角が切り取る弧。日本では「弧に対する」 | | | —
+弧の度数 | arc measure | n | near | 弧の中心角の大きさ
+優弧 | major arc | n | exact
+劣弧 | minor arc | n | exact
+弦の性質 | properties of chords | n | exact
+交わる弦の定理 | intersecting chords theorem | n | near | 方べきの定理の一部
+割線と接線の定理 | secant-tangent theorem | n | near | 方べきの定理の一部
+円の方程式 | equation of a circle | n | exact
+弧度法 | radian | n | exact
+おうぎ形の面積 | area of a sector | n | exact
+扇形の弧長 | arc length | n | exact
+内接多角形 | inscribed polygon | n | exact
+外接多角形 | circumscribed polygon | n | exact
+
+## us-geometry-area-and-volume
+面積の公式 | area formulas | n | exact
+正多角形の面積 | area of a regular polygon | n | exact
+辺心距離 | apothem | n | none | 正多角形の中心から辺への距離。日本では名前がない | | | —
+合成図形 | composite figure | n | near | 「組み合わせた図形」
+表面積 | surface area | n | exact
+側面積 | lateral area | n | exact
+斜高 | slant height | n | near | 母線
+断面 | cross section | n | exact
+カヴァリエリの原理 | Cavalieri's principle | n | near | 日本の高校では扱わない
+密度 | density | n | exact
+立方単位 | cubic units | n | exact
+平方単位 | square units | n | exact
+
+## us-geometry-transformations
+剛体変換 | rigid transformation | n | near | 合同変換
+平行移動ベクトル | translation vector | n | exact
+反射 | reflection | n | exact | 対称移動
+回転 | rotation | n | exact
+合成変換 | composition of transformations | n | exact
+グライド反射 | glide reflection | n | none | 日本では扱わない | | | —
+像 | image | n | near | 変換後の図形。P' を「P prime」と読む
+原像 | preimage | n | near | 変換前の図形
+座標の規則 | coordinate rule | n | none | (x, y) → (x + 3, y − 2) の書き方 | | | —
+回転対称 | rotational symmetry | n | exact
+対称テッセレーション | tessellation | n | near | 敷き詰め
+
+## us-geometry-coordinate-geometry
+座標証明 | coordinate proof | n | none | 座標を置いて証明する形式 | | | —
+垂直二等分線の方程式 | equation of the perpendicular bisector | n | exact
+平行線の方程式を書く | write the equation of a parallel line | ph | exact
+線分の分点 | partition a segment | v | near | 内分点を求める。「partition the segment in the ratio 2:3」
+
+## us-algebra-2-functions
+関数の合成 | composition of functions | n | exact
+逆関数 | inverse function | n | exact
+一対一関数 | one-to-one function | n | exact
+水平線テスト | horizontal line test | n | none | 逆関数が存在する判定 | | | —
+垂直線テスト | vertical line test | n | none | 関数かどうかの判定 | | | —
+偶関数と奇関数 | even and odd functions | n | exact
+関数の変換 | function transformations | n | exact
+親関数の族 | family of functions | n | none | | | | —
+区分的定義 | piecewise-defined function | n | exact
+関数の終端挙動 | end behavior | n | none | x → ±∞ での振る舞い。日本では「極限」で言う | | | —
+増加区間 | interval of increase | n | exact
+相対最大値 | relative maximum | n | near | 極大値
+関数のグラフの特徴 | key features of a graph | n | none | 米国のカリキュラム用語 | | | —
+
+## us-algebra-2-quadratics-and-complex-numbers
+複素数 | complex number | n | exact
+虚数単位 | imaginary unit | n | exact
+複素共役 | complex conjugate | n | exact
+判別式 | discriminant | n | exact
+二次不等式 | quadratic inequality | n | exact
+放物線の焦点 | focus of a parabola | n | exact | 日本は数C
+連立二次方程式 | nonlinear system | n | near | 「連立方程式（2 次）」
+二次関数の回帰 | quadratic regression | n | none | 電卓で | | | —
+
+## us-algebra-2-polynomials
+多項式関数 | polynomial function | n | exact
+終端挙動 | end behavior | n | none | 同上 | end-behavior-alg2 | | —
+多重根 | multiplicity | n | near | 重解の重複度
+根の重複度 | multiplicity of a zero | n | near
+剰余定理 | remainder theorem | n | exact
+因数定理 | factor theorem | n | exact
+有理根定理 | rational root theorem | n | exact
+代数学の基本定理 | fundamental theorem of algebra | n | exact
+組立除法 | synthetic division | n | exact
+多項式の長除法 | polynomial long division | n | exact
+極大・極小の個数 | turning points | n | near | 「極値」
+偶次・奇次 | even and odd degree | n | exact
+多項式恒等式 | polynomial identity | n | exact
+立方の和 | sum of cubes | n | exact
+立方の差 | difference of cubes | n | exact
+デカルトの符号法則 | Descartes' rule of signs | n | none | 日本の高校では扱わない | | | 大学
+2 次形式への還元 | quadratic form | n | near | 「x² = t とおく」
+
+## us-algebra-2-rational-functions
+有理関数 | rational function | n | exact
+垂直漸近線 | vertical asymptote | n | exact
+水平漸近線 | horizontal asymptote | n | exact
+斜め漸近線 | slant asymptote | n | near | oblique asymptote
+穴 | hole | n | none | 約分で消える点（除去可能な不連続点） | | | —
+有理方程式 | rational equation | n | near | 分数方程式
+逆変化 | inverse variation | n | exact | 反比例
+結合変化 | joint variation | n | none | z = kxy の形 | | | —
+最小公分母 | least common denominator | n | exact
+複雑な分数 | complex fraction | n | exact | 繁分数
+分母を払う | clear the denominators | ph | exact
+
+## us-algebra-2-radical-functions
+有理指数 | rational exponent | n | exact
+n 乗根 | nth root | n | exact
+主根 | principal root | n | exact
+根号関数 | radical function | n | exact
+無理方程式 | radical equation | n | exact
+無縁解 | extraneous solution | n | exact | 同上 | extraneous-solution-alg2
+逆関数のグラフ | graph of the inverse | n | exact
+
+## us-algebra-2-exponential-and-logarithmic
+対数 | logarithm | n | exact
+常用対数 | common log | n | exact
+自然対数 | natural log | n | exact
+底の変換 | change of base | n | exact
+対数の性質 | properties of logs | n | exact
+指数方程式 | exponential equation | n | exact
+対数方程式 | logarithmic equation | n | exact
+連続複利 | continuous compounding | n | near | e の導入。日本では扱わない
+指数関数のモデル化 | exponential modeling | n | near
+対数目盛 | logarithmic scale | n | exact
+指数回帰 | exponential regression | n | none | 電卓で | | | —
+
+## us-algebra-2-sequences-and-series
+再帰的公式 | recursive formula | n | near | 漸化式
+陽的公式 | explicit formula | n | near | 一般項
+算術級数 | arithmetic series | n | exact
+幾何級数 | geometric series | n | exact
+シグマ記法 | sigma notation | n | exact
+無限幾何級数 | infinite geometric series | n | exact
+部分和 | partial sum | n | exact
+数学的帰納法 | mathematical induction | n | exact
+二項定理 | binomial theorem | n | exact
+
+## us-algebra-2-trigonometry
+弧度法と度数法の変換 | converting between radians and degrees | n | exact
+参照角 | reference angle | n | none | 基準角。日本では名前がない | reference-angle-alg2 | | —
+共終角 | coterminal angle | n | none | 一般角の同じ位置にある角。日本では名前がない | | | —
+単位円の三角関数 | trig functions on the unit circle | n | exact
+正弦関数のグラフ | graph of the sine function | n | exact
+振幅 | amplitude | n | exact
+周期 | period | n | exact
+位相のずれ | phase shift | n | exact
+中央線（正弦波） | midline | n | none | 正弦波のグラフの中央の水平線 | | | —
+正弦波 | sinusoid | n | near | 「正弦曲線」
+逆三角関数 | inverse trig functions | n | near | 日本の高校では扱わない
+三角恒等式 | trig identities | n | exact
+セカント | secant | n | near | 日本の高校では扱わない。sec = 1/cos
+コセカント | cosecant | n | near | csc = 1/sin
+コタンジェント | cotangent | n | near | cot = 1/tan
+
+## us-algebra-2-probability-and-statistics
+正規分布 | normal distribution | n | exact
+標準偏差 | standard deviation | n | exact
+z スコア | z-score | n | exact
+経験則 | empirical rule | n | none | 68-95-99.7 ルール | | | —
+条件付き確率 | conditional probability | n | exact
+独立事象 | independent events | n | exact
+順列と組合せ | permutations and combinations | n | exact
+二項分布 | binomial distribution | n | exact
+期待値 | expected value | n | exact
+標本抽出法 | sampling methods | n | exact
+観察研究 | observational study | n | exact
+実験 | experiment | n | exact
+無作為化 | randomization | n | exact
+誤差の範囲 | margin of error | n | exact
+
+## us-precalculus-functions
+関数の平均変化率 | average rate of change | n | exact
+差分商 | difference quotient | n | none | (f(x+h) − f(x))/h。日本の高校では「平均変化率」 | | | 大学
+関数の変換の合成 | composition of transformations | n | exact
+関数の対称性 | symmetry of functions | n | exact
+逆関数の求め方 | finding an inverse | n | exact
+絶対値方程式 | absolute value equation | n | exact
+定義域の制限 | restricted domain | n | exact
+連続性 | continuity | n | exact
+極値 | extrema | n | exact
+
+## us-precalculus-polynomial-and-rational
+多項式の零点 | zeros of a polynomial | n | exact
+複素零点 | complex zeros | n | exact
+有理関数のグラフ | graphing rational functions | n | exact
+部分分数分解 | partial fraction decomposition | n | exact
+多項式不等式 | polynomial inequality | n | exact
+符号図 | sign chart | n | near | 不等式を解くときの数直線。日本の増減表とは目的が違う | sign-chart-inequality
+テスト点 | test point | n | none | 区間ごとに符号を調べる点 | | | —
+除去可能な不連続点 | removable discontinuity | n | near | 「穴」
+
+## us-precalculus-exponential-and-logarithmic
+ロジスティック増加 | logistic growth | n | near | 日本の高校では扱わない
+ニュートンの冷却法則 | Newton's law of cooling | n | near | 文章題の定番
+指数・対数の応用 | applications of exponentials and logs | n | exact
+対数の展開と圧縮 | expanding and condensing logs | n | none | 米国の教室の言い方。log の性質で書き換える | | | —
+一対一の性質 | one-to-one property | n | none | a^x = a^y ⇒ x = y | | | —
+
+## us-precalculus-analytic-trigonometry
+和と差の公式 | sum and difference formulas | n | exact
+倍角公式 | double-angle formulas | n | exact
+半角公式 | half-angle formulas | n | exact
+積和・和積 | product-to-sum and sum-to-product | n | exact
+三角方程式 | trigonometric equation | n | exact
+恒等式の検証 | verifying identities | n | near | 「等式の証明」
+ピタゴラスの恒等式 | Pythagorean identity | n | near | sin² + cos² = 1。日本では「三角関数の相互関係」
+逆三角関数の合成 | composition with inverse trig | n | none | sin(arctan x) など | | | 大学
+アークサイン | arcsine | n | near | sin⁻¹。日本の高校では扱わない
+アークコサイン | arccosine | n | near
+アークタンジェント | arctangent | n | near
+三角関数の逆関数のグラフ | graphs of inverse trig functions | n | exact
+三角形を解く | solving triangles | n | near | 「三角形の辺と角を求める」
+曖昧な場合 | ambiguous case | n | none | SSA で 2 通りの三角形ができる場合 | | | —
+ヘロンの公式 | Heron's formula | n | exact
+三角形の面積 ½ab sin C | area formula with sine | n | exact
+
+## us-precalculus-vectors
+成分形 | component form | n | exact
+大きさと向き | magnitude and direction | n | exact
+単位ベクトル i, j | standard unit vectors | n | near | i, j, k
+方向角 | direction angle | n | exact
+ドット積 | dot product | n | exact
+ベクトル射影 | vector projection | n | near | 日本の高校では扱わない
+正射影 | orthogonal projection | n | exact
+仕事 | work | n | exact | 物理の応用
+合力 | resultant | n | near | 「和ベクトル」
+
+## us-precalculus-polar-and-complex
+極座標 | polar coordinates | n | exact
+極方程式のグラフ | graphs of polar equations | n | exact
+心臓形 | cardioid | n | exact
+バラ曲線 | rose curve | n | exact
+リマソン | limaçon | n | none | | | | 大学
+複素数の三角形式 | trigonometric form of a complex number | n | near | 極形式
+ド・モアブルの定理 | De Moivre's theorem | n | exact
+複素数の n 乗根 | nth roots of a complex number | n | exact
+媒介変数方程式 | parametric equations | n | exact
+媒介変数の消去 | eliminating the parameter | n | exact
+向き | orientation | n | none | 媒介変数曲線の進む向き | | | —
+
+## us-precalculus-conics
+円錐曲線 | conic sections | n | exact
+放物線の焦点と準線 | focus and directrix | n | exact
+楕円の焦点 | foci of an ellipse | n | exact
+長軸・短軸 | major and minor axes | n | exact
+双曲線の漸近線 | asymptotes of a hyperbola | n | exact
+離心率 | eccentricity | n | exact
+回転した円錐曲線 | rotated conics | n | none | 日本の高校では扱わない | | | 大学
+極座標での円錐曲線 | conics in polar coordinates | n | none | | | | 大学
+頂点 | vertices | n | exact
+通径 | latus rectum | n | none | | | | 大学
+
+## us-precalculus-matrices-and-systems
+行列 | matrix | n | exact
+拡大係数行列 | augmented matrix | n | near | 日本の高校では扱わない
+行基本変形 | row operations | n | near
+ガウスの消去法 | Gaussian elimination | n | near
+行階段形 | row echelon form | n | none | | | | 大学
+逆行列 | inverse of a matrix | n | exact
+行列式 | determinant | n | exact
+クラメルの公式 | Cramer's rule | n | none | | | | 大学
+三元連立一次方程式 | system of three equations | n | exact
+線形計画法 | linear programming | n | exact
+実行可能領域 | feasible region | n | near | 日本の「連立不等式の表す領域」
+目的関数 | objective function | n | near
+制約条件 | constraint | n | exact
+
+## us-precalculus-sequences-and-induction
+数学的帰納法 | proof by mathematical induction | n | exact
+基底段階 | base case | n | none | n = 1 のとき | | | —
+帰納段階 | inductive step | n | none | | | | —
+帰納法の仮定 | inductive hypothesis | n | exact
+二項係数 | binomial coefficient | n | exact
+パスカルの三角形 | Pascal's triangle | n | exact
+組合せ記法 | combination notation | n | near | C(n, r) / n choose r
+数列の極限 | limit of a sequence | n | exact
+
+## us-precalculus-limits
+極限の直感的定義 | intuitive definition of a limit | n | exact
+数値的に極限を求める | finding limits numerically | ph | none | 表を作って調べる | | | —
+グラフから極限を読む | finding limits graphically | ph | exact
+接線の傾きの極限 | limit definition of the slope | n | exact
+曲線下の面積 | area under a curve | n | exact
+
+## us-integrated-1-linear
+関数の表現 | representations of a function | n | none | 表・式・グラフ・言葉 | | | —
+文脈の中の一次関数 | linear functions in context | n | none | | | | —
+
+## us-integrated-1-statistics
+一変量データ | one-variable data | n | exact
+二変量データ | two-variable data | n | exact
+相対度数表 | relative frequency table | n | exact
+条件付き相対度数 | conditional relative frequency | n | none | 二元分割表で | | | —
+
+## us-integrated-2-similarity-and-trig
+正弦・余弦・正接 | sine, cosine, and tangent | n | exact
+
+## us-integrated-3-geometric-modeling
+幾何的モデル化 | geometric modeling | n | none | 密度・設計の問題 | | | —
+
+## us-ap-calculus-ab-1-limits
+極限 | limit | n | exact
+極限の表記 | limit notation | n | exact
+極限の性質 | limit laws | n | exact
+片側極限 | one-sided limit | n | exact
+無限大の極限 | infinite limit | n | exact
+無限遠での極限 | limit at infinity | n | exact
+はさみうちの定理 | squeeze theorem | n | exact
+連続性 | continuity | n | exact
+除去可能な不連続 | removable discontinuity | n | near | 「穴」
+跳躍不連続 | jump discontinuity | n | none | 日本の高校では名前がない | | | 大学
+無限不連続 | infinite discontinuity | n | none | | | | 大学
+中間値の定理 | intermediate value theorem | n | exact
+極限が存在しない | does not exist | ph | exact | DNE
+イプシロン・デルタ | epsilon-delta definition | n | none | 極限の厳密な定義。日本の高校では扱わない。AP でも扱わないことが多い | | | 大学
+区分的関数の極限 | limit of a piecewise function | n | exact
+代数的に極限を求める | evaluate limits algebraically | ph | exact
+不定形 | indeterminate form | n | exact
+
+## us-ap-calculus-ab-2-differentiation-basics
+導関数の定義 | limit definition of the derivative | n | exact
+微分係数 | derivative at a point | n | exact
+微分可能性と連続性 | differentiability and continuity | n | exact
+べき乗則 | power rule | n | none | xⁿ の微分公式。日本では名前をつけない | | | —
+定数倍の法則 | constant multiple rule | n | exact
+三角関数の導関数 | derivatives of trig functions | n | exact
+e^x の導関数 | derivative of e to the x | n | exact
+ln x の導関数 | derivative of natural log | n | exact
+接線の方程式 | equation of the tangent line | n | exact
+法線 | normal line | n | exact
+瞬間変化率 | instantaneous rate of change | n | exact
+角（微分不可能点） | corner | n | none | 微分不可能な点（尖った角）。cusp と区別 | corner-nondifferentiable | | —
+尖点 | cusp | n | exact
+垂直接線 | vertical tangent | n | none | 日本の高校では扱わない | | | 大学
+
+## us-ap-calculus-ab-3-differentiation-advanced
+連鎖律 | chain rule | n | exact | 合成関数の微分
+陰関数微分 | implicit differentiation | n | exact
+逆関数の微分 | derivative of an inverse function | n | exact
+逆三角関数の導関数 | derivatives of inverse trig functions | n | exact
+高階導関数 | higher-order derivatives | n | exact
+外側の関数 | outer function | n | none | 連鎖律の説明で | | | —
+内側の関数 | inner function | n | none | | | | —
+両辺を微分する | differentiate both sides | ph | exact
+y' について解く | solve for y prime | ph | exact
+
+## us-ap-calculus-ab-4-contextual-applications
+関連変化率 | related rates | n | none | 「xとyの変化率の関係」。日本の高校では扱わないが数III の応用に近い | | | 大学
+線形近似 | linearization | n | exact
+接線近似 | tangent line approximation | n | exact
+ロピタルの定理 | L'Hôpital's rule | n | none | 日本の高校では使えない（答案で減点されることがある） | | | 大学
+位置・速度・加速度 | position, velocity, and acceleration | n | exact
+速さ | speed | n | exact | 速度の絶対値
+直線運動 | rectilinear motion | n | exact
+変化率の単位 | units of a rate of change | n | none | | | | —
+
+## us-ap-calculus-ab-5-analytical-applications
+平均値の定理 | mean value theorem | n | exact
+ロルの定理 | Rolle's theorem | n | exact
+極値定理 | extreme value theorem | n | exact
+臨界点 | critical point | n | none | f' = 0 または存在しない点。日本では名前がない | | | 大学
+第 1 次導関数テスト | first derivative test | n | near | 増減表の役割
+第 2 次導関数テスト | second derivative test | n | near | f'' の符号で極大・極小を判定
+候補点テスト | candidates test | n | none | 閉区間の最大・最小を端点と臨界点で調べる | | | —
+絶対極値 | absolute extrema | n | exact
+相対極値 | relative extrema | n | exact
+凹凸 | concavity | n | exact
+変曲点 | point of inflection | n | exact
+最適化問題 | optimization problem | n | none | 文章題としての最大・最小。日本では「最大・最小の応用」 | | | —
+曲線の概形 | curve sketching | n | exact
+陰関数のグラフ | implicit curves | n | exact
+f と f' と f'' のグラフの関係 | connecting f, f prime, and f double prime | n | none | AP の頻出問題 | | | —
+
+## us-ap-calculus-ab-6-integration
+累積 | accumulation | n | none | 積分を「変化量の累積」として見る | | | —
+リーマン和 | Riemann sum | n | exact | 区分求積法
+左リーマン和 | left Riemann sum | n | exact
+右リーマン和 | right Riemann sum | n | exact
+中点リーマン和 | midpoint Riemann sum | n | exact
+台形公式 | trapezoidal sum | n | near | 台形則
+微積分学の基本定理 | fundamental theorem of calculus | n | exact
+原始関数 | antiderivative | n | exact
+不定積分 | indefinite integral | n | exact
+定積分 | definite integral | n | exact
+積分の性質 | properties of definite integrals | n | exact
+u 置換 | u-substitution | n | exact | 置換積分
+積分表 | integration formulas | n | exact
+長除法による積分 | integration by long division | n | none | | | | 大学
+平方完成による積分 | integration by completing the square | n | none | | | | 大学
+積分で定義された関数 | function defined by an integral | n | exact
+累積関数 | accumulation function | n | none | ∫ₐˣ f(t) dt | | | —
+純変化量 | net change | n | none | 定積分と変化量。日本では名前がない | | | —
+過大評価・過小評価 | overestimate and underestimate | n | none | リーマン和の誤差の向き | | | —
+
+## us-ap-calculus-ab-7-differential-equations
+微分方程式 | differential equation | n | exact
+勾配場 | slope field | n | none | 日本の高校では扱わない | | | 大学
+変数分離 | separation of variables | n | exact
+一般解 | general solution | n | exact
+特殊解 | particular solution | n | exact
+初期条件 | initial condition | n | exact
+指数モデル | exponential model | n | exact
+微分方程式の検証 | verifying solutions | n | exact
+
+## us-ap-calculus-ab-8-applications-of-integration
+関数の平均値 | average value of a function | n | none | 日本の高校では扱わない | | | 大学
+変位 | displacement | n | exact
+移動距離 | total distance traveled | n | exact
+曲線間の面積 | area between curves | n | exact
+断面積による体積 | volume by cross sections | n | exact
+円板法 | disk method | n | none | 回転体の体積。日本では名前をつけない | | | —
+ワッシャー法 | washer method | n | none | 穴あきの回転体 | | | —
+シェル法 | shell method | n | none | 円筒殻で積分。日本の高校では扱わない | | | 大学
+回転軸 | axis of revolution | n | exact
+弧長 | arc length | n | exact
+
+## us-ap-calculus-bc-6-integration-techniques
+部分積分 | integration by parts | n | exact
+部分分数による積分 | integration by partial fractions | n | exact
+広義積分 | improper integral | n | none | 日本の高校では扱わない | | | 大学
+オイラー法 | Euler's method | n | none | | | | 大学
+ロジスティック微分方程式 | logistic differential equation | n | none | | | | 大学
+LIATE | LIATE | n | none | 部分積分でどちらを微分するかの覚え方 | | | —
+
+## us-ap-calculus-bc-9-parametric-polar-vector
+媒介変数曲線の微分 | derivatives of parametric equations | n | exact
+媒介変数曲線の弧長 | arc length of a parametric curve | n | exact
+ベクトル値関数 | vector-valued function | n | none | | | | 大学
+極座標での面積 | area in polar coordinates | n | none | | | | 大学
+極曲線の微分 | derivatives in polar form | n | none | | | | 大学
+
+## us-ap-calculus-bc-10-series
+無限級数 | infinite series | n | exact
+収束・発散 | convergence and divergence | n | exact
+幾何級数 | geometric series | n | exact | 等比級数
+n 項判定法 | nth term test | n | none | 収束判定法。日本の高校では扱わない | | | 大学
+積分判定法 | integral test | n | none | | | | 大学
+調和級数 | harmonic series | n | none | | | | 大学
+p 級数 | p-series | n | none | | | | 大学
+比較判定法 | comparison test | n | none | | | | 大学
+極限比較判定法 | limit comparison test | n | none | | | | 大学
+交代級数 | alternating series | n | none | | | | 大学
+交代級数判定法 | alternating series test | n | none | | | | 大学
+比判定法 | ratio test | n | none | | | | 大学
+絶対収束 | absolute convergence | n | none | | | | 大学
+条件収束 | conditional convergence | n | none | | | | 大学
+交代級数の誤差限界 | alternating series error bound | n | none | | | | 大学
+テイラー多項式 | Taylor polynomial | n | none | | | | 大学
+ラグランジュの誤差限界 | Lagrange error bound | n | none | | | | 大学
+べき級数 | power series | n | none | | | | 大学
+収束半径 | radius of convergence | n | none | | | | 大学
+収束区間 | interval of convergence | n | none | | | | 大学
+テイラー級数 | Taylor series | n | none | | | | 大学
+マクローリン級数 | Maclaurin series | n | none | | | | 大学
+級数の項別微分 | term-by-term differentiation | n | none | | | | 大学
+関数の級数表示 | representing a function as a series | n | none | | | | 大学
+
+## us-ap-statistics-1-one-variable
+カテゴリ変数 | categorical variable | n | none | 日本の高校では「質的データ」 | | | 大学
+量的変数 | quantitative variable | n | none | | | | 大学
+棒グラフ | bar chart | n | exact
+分布の形・中心・散らばり | shape, center, and spread | n | none | AP の記述の型 | | | —
+歪度 | skewness | n | exact
+右に歪んだ | skewed right | adj | none | 裾が右に長い | | | —
+外れ値の判定 | outlier rule | n | none | 1.5 × IQR | | | —
+抵抗性のある統計量 | resistant statistic | n | none | 外れ値の影響を受けにくい | | | —
+パーセンタイル | percentile | n | exact
+累積相対度数グラフ | cumulative relative frequency graph | n | exact
+密度曲線 | density curve | n | exact
+正規確率プロット | normal probability plot | n | none | | | | 大学
+
+## us-ap-statistics-2-two-variable
+説明変数 | explanatory variable | n | exact
+応答変数 | response variable | n | exact
+最小二乗回帰直線 | least-squares regression line | n | exact
+決定係数 | coefficient of determination | n | exact | r²
+残差プロット | residual plot | n | exact
+影響点 | influential point | n | none | | | | 大学
+データの変換 | transforming data | n | none | 対数変換など | | | 大学
+外挿の危険 | extrapolation | n | exact
+
+## us-ap-statistics-3-collecting-data
+母集団と標本 | population and sample | n | exact
+単純無作為抽出 | simple random sample | n | exact
+層化抽出 | stratified sampling | n | exact
+集落抽出 | cluster sampling | n | exact
+系統抽出 | systematic sampling | n | exact
+便宜的抽出 | convenience sample | n | none | | | | 大学
+自発的回答の偏り | voluntary response bias | n | none | | | | 大学
+無回答 | nonresponse | n | none | | | | 大学
+交絡変数 | confounding variable | n | exact
+処理 | treatment | n | exact
+対照群 | control group | n | exact
+プラセボ | placebo | n | exact
+盲検 | blinding | n | exact
+ブロック化 | blocking | n | none | | | | 大学
+完全無作為化計画 | completely randomized design | n | none | | | | 大学
+
+## us-ap-statistics-4-probability
+確率の法則 | probability rules | n | exact
+互いに排反 | mutually exclusive | adj | exact
+独立 | independent | adj | exact
+一般加法法則 | general addition rule | n | exact
+一般乗法法則 | general multiplication rule | n | exact
+ベイズの定理 | Bayes' theorem | n | none | | | | 大学
+確率変数 | random variable | n | exact
+幾何分布 | geometric distribution | n | none | | | | 大学
+確率変数の変換 | transforming random variables | n | exact
+確率変数の和と差 | combining random variables | n | exact
+シミュレーション | simulation | n | exact
+
+## us-ap-statistics-5-sampling-distributions
+標本分布 | sampling distribution | n | exact
+標本比率の分布 | sampling distribution of a proportion | n | exact
+中心極限定理 | central limit theorem | n | exact
+不偏推定量 | unbiased estimator | n | exact
+標本の変動 | sampling variability | n | none | | | | 大学
+
+## us-ap-statistics-6-proportions
+信頼区間 | confidence interval | n | exact
+臨界値 | critical value | n | none | z* / t* | | | 大学
+誤差の範囲 | margin of error | n | exact | 同上 | margin-of-error-ap
+検定統計量 | test statistic | n | exact
+p 値 | p-value | n | exact
+帰無仮説を棄却する | reject the null hypothesis | ph | exact
+第一種の過誤 | Type I error | n | exact
+第二種の過誤 | Type II error | n | exact
+検出力 | power | n | exact
+有意 | statistically significant | adj | exact
+条件の確認 | checking conditions | n | none | 検定の前提条件を確認する手順 | | | —
+2 標本比率の検定 | two-proportion z-test | n | exact
+
+## us-ap-statistics-7-means
+t 分布 | t-distribution | n | exact
+自由度 | degrees of freedom | n | exact
+1 標本 t 検定 | one-sample t-test | n | exact
+対応のある t 検定 | paired t-test | n | exact
+2 標本 t 検定 | two-sample t-test | n | exact
+標準誤差 | standard error | n | exact
+
+## us-ap-statistics-8-chi-square
+カイ二乗検定 | chi-square test | n | exact
+適合度検定 | goodness-of-fit test | n | exact
+独立性の検定 | test for independence | n | exact
+同質性の検定 | test for homogeneity | n | exact
+期待度数 | expected count | n | exact
+観測度数 | observed count | n | exact
+
+## us-ap-statistics-9-slopes
+回帰の傾きの推測 | inference for the slope | n | none | | | | 大学
+傾きの信頼区間 | confidence interval for the slope | n | exact
+傾きの t 検定 | t-test for the slope | n | exact
+
+## us-calculus-1-functions
+双曲線関数 | hyperbolic functions | n | none | sinh, cosh, tanh。日本の高校では扱わない | | | 大学
+逆双曲線関数 | inverse hyperbolic functions | n | none | | | | 大学
+対数関数の性質 | properties of logarithms | n | exact
+関数の型 | types of functions | n | none | 代数関数・超越関数など | | | 大学
+超越関数 | transcendental function | n | none | | | | 大学
+代数関数 | algebraic function | n | none | | | | 大学
+
+## us-calculus-1-limits
+極限の厳密な定義 | precise definition of a limit | n | none | ε-δ | | | 大学
+極限と連続の定理 | limit theorems | n | exact
+接線問題 | tangent problem | n | none | 微分の動機づけ | | | —
+面積問題 | area problem | n | none | 積分の動機づけ | | | —
+
+## us-calculus-1-derivatives
+微分の記法 | notations for the derivative | n | exact
+微分作用素 | differential operator | n | none | d/dx | | | 大学
+陰関数の定理 | implicit function | n | exact
+対数微分 | logarithmic differentiation | n | exact
+
+## us-calculus-1-applications-of-derivatives
+ニュートン法 | Newton's method | n | none | 日本の高校では扱わない | | | 大学
+最適化 | optimization | n | none | 同上 | optimization-calc1 | | 大学
+関連変化率の問題 | related rates problems | n | none | | related-rates-calc1 | | 大学
+凹凸と第 2 次導関数 | concavity and the second derivative | n | exact
+漸近線とグラフ | asymptotes and end behavior | n | exact
+微分と不等式 | derivatives and inequalities | n | exact
+
+## us-calculus-1-integration
+不定積分と原始関数 | antiderivatives | n | exact
+面積と距離 | areas and distances | n | none | | | | —
+シグマ記法での和 | summation notation | n | exact
+リーマン和の極限 | limit of Riemann sums | n | exact
+微積分学の基本定理 第 1 部 | fundamental theorem of calculus part 1 | n | none | | | | 大学
+微積分学の基本定理 第 2 部 | fundamental theorem of calculus part 2 | n | none | evaluation theorem | | | 大学
+純変化定理 | net change theorem | n | none | | | | 大学
+置換法則 | substitution rule | n | exact
+
+## us-calculus-1-applications-of-integration
+曲線間の面積 | area between curves | n | exact | 同上 | area-between-curves-calc1
+回転体の体積 | volumes of revolution | n | exact
+関数の平均値 | average value | n | none | 同上 | average-value-calc1 | | 大学
+
+## us-calculus-2-techniques-of-integration
+三角置換 | trigonometric substitution | n | none | x = a sin θ の置換。日本の高校では個別に扱う | | | 大学
+三角関数の積の積分 | trigonometric integrals | n | exact
+有理化置換 | rationalizing substitution | n | none | | | | 大学
+積分表の利用 | using integral tables | n | none | | | | 大学
+数値積分 | numerical integration | n | none | | | | 大学
+シンプソンの公式 | Simpson's rule | n | none | | | | 大学
+台形則 | trapezoidal rule | n | none | | | | 大学
+広義積分の収束 | convergence of improper integrals | n | none | | | | 大学
+比較判定法（積分） | comparison test for integrals | n | none | | | | 大学
+
+## us-calculus-2-applications-of-integration
+弧長 | arc length | n | exact | 同上 | arc-length-calc2
+回転面の面積 | surface area of revolution | n | none | | | | 大学
+仕事 | work | n | none | 物理への応用 | work-calc2 | | 大学
+静水圧 | hydrostatic force | n | none | | | | 大学
+重心（質量中心） | center of mass | n | none | | | | 大学
+確率密度と積分 | probability density and integrals | n | none | | | | 大学
+
+## us-calculus-2-differential-equations
+方向場 | direction field | n | none | 勾配場 | | | 大学
+分離可能な方程式 | separable equation | n | exact
+線形一階微分方程式 | first-order linear differential equation | n | none | | | | 大学
+積分因子 | integrating factor | n | none | | | | 大学
+指数増加・減衰のモデル | exponential growth and decay models | n | exact
+ロジスティック方程式 | logistic equation | n | none | | | | 大学
+
+## us-calculus-2-sequences-and-series
+数列の収束 | convergence of a sequence | n | exact
+単調数列定理 | monotone convergence theorem | n | none | | | | 大学
+望遠鏡級数 | telescoping series | n | none | 途中の項が打ち消し合う和。日本では名前をつけない | | | 大学
+判定法のまとめ | strategy for testing series | n | none | | | | 大学
+級数の和の評価 | estimating the sum of a series | n | none | | | | 大学
+
+## us-calculus-2-power-series
+テイラーの定理 | Taylor's theorem | n | none | | | | 大学
+二項級数 | binomial series | n | none | | | | 大学
+べき級数の演算 | operations on power series | n | none | | | | 大学
+関数の近似 | approximating functions | n | none | | | | 大学
+
+## us-calculus-2-parametric-and-polar
+極座標の面積 | area in polar coordinates | n | none | 同上 | area-polar-calc2 | | 大学
+極曲線の弧長 | arc length in polar coordinates | n | none | | | | 大学
+円錐曲線の極方程式 | polar equations of conics | n | none | | | | 大学
+
+## us-calculus-3-vectors-in-space
+三次元座標系 | three-dimensional coordinate system | n | exact
+外積 | cross product | n | none | 日本の高校では扱わない | cross-product-calc3 | | 大学
+スカラー三重積 | scalar triple product | n | none | | | | 大学
+空間の直線と平面 | lines and planes in space | n | exact
+二次曲面 | quadric surface | n | none | | | | 大学
+円柱座標 | cylindrical coordinates | n | none | | | | 大学
+球座標 | spherical coordinates | n | none | | | | 大学
+
+## us-calculus-3-vector-valued-functions
+ベクトル値関数の微分 | derivative of a vector function | n | none | | | | 大学
+空間曲線 | space curve | n | none | | | | 大学
+曲率 | curvature | n | none | | | | 大学
+単位接ベクトル | unit tangent vector | n | none | | | | 大学
+法線ベクトルと従法線ベクトル | normal and binormal vectors | n | none | | | | 大学
+速度ベクトルと加速度ベクトル | velocity and acceleration vectors | n | exact
+
+## us-calculus-3-partial-derivatives
+多変数関数 | function of several variables | n | none | | | | 大学
+等高線 | level curve | n | none | | | | 大学
+偏導関数 | partial derivative | n | none | | | | 大学
+接平面 | tangent plane | n | none | | | | 大学
+全微分 | total differential | n | none | | | | 大学
+多変数の連鎖律 | multivariable chain rule | n | none | | | | 大学
+方向微分 | directional derivative | n | none | | | | 大学
+勾配 | gradient | n | none | | | | 大学
+多変数の極値 | extrema of functions of two variables | n | none | | | | 大学
+鞍点 | saddle point | n | none | | | | 大学
+ラグランジュの未定乗数法 | Lagrange multipliers | n | none | | | | 大学
+偏微分する | take the partial derivative | ph | none | | | | 大学
+デル | del | n | none | ∇ の読み方。nabla とも | | | 大学
+
+## us-calculus-3-multiple-integrals
+二重積分 | double integral | n | none | | | | 大学
+累次積分 | iterated integral | n | none | | | | 大学
+積分順序の交換 | changing the order of integration | n | none | | | | 大学
+極座標の二重積分 | double integrals in polar coordinates | n | none | | | | 大学
+三重積分 | triple integral | n | none | | | | 大学
+変数変換 | change of variables | n | none | | | | 大学
+ヤコビアン | Jacobian | n | none | | | | 大学
+フビニの定理 | Fubini's theorem | n | none | | | | 大学
+
+## us-calculus-3-vector-calculus
+ベクトル場 | vector field | n | none | | | | 大学
+線積分 | line integral | n | none | | | | 大学
+保存場 | conservative vector field | n | none | | | | 大学
+ポテンシャル関数 | potential function | n | none | | | | 大学
+グリーンの定理 | Green's theorem | n | none | | | | 大学
+回転（ベクトル解析） | curl | n | none | | curl-vector | | 大学
+発散（ベクトル解析） | divergence | n | none | | divergence-vector | | 大学
+面積分 | surface integral | n | none | | | | 大学
+ストークスの定理 | Stokes' theorem | n | none | | | | 大学
+発散定理 | divergence theorem | n | none | | | | 大学
+
+## us-linear-algebra-systems-and-matrices
+線形方程式系 | system of linear equations | n | exact
+行簡約 | row reduction | n | none | | | | 大学
+既約行階段形 | reduced row echelon form | n | none | RREF | | | 大学
+ピボット | pivot | n | none | | | | 大学
+自由変数 | free variable | n | none | | | | 大学
+基本変数 | basic variable | n | none | | | | 大学
+行列の演算 | matrix operations | n | exact
+転置 | transpose | n | none | | | | 大学
+可逆行列 | invertible matrix | n | none | 正則行列 | | | 大学
+特異行列 | singular matrix | n | none | | | | 大学
+基本行列 | elementary matrix | n | none | | | | 大学
+LU 分解 | LU decomposition | n | none | | | | 大学
+ブロック行列 | block matrix | n | none | | | | 大学
+同次方程式系 | homogeneous system | n | none | | | | 大学
+解の存在と一意性 | existence and uniqueness | n | none | | | | 大学
+
+## us-linear-algebra-determinants
+余因子展開 | cofactor expansion | n | none | | | | 大学
+余因子 | cofactor | n | none | | | | 大学
+小行列式 | minor | n | none | | | | 大学
+行列式の性質 | properties of determinants | n | exact
+クラメルの公式 | Cramer's rule | n | none | 同上 | cramers-rule-linalg | | 大学
+随伴行列 | adjugate | n | none | | | | 大学
+行列式と体積 | determinants as volume | n | none | | | | 大学
+
+## us-linear-algebra-vector-spaces
+ベクトル空間 | vector space | n | none | | | | 大学
+部分空間 | subspace | n | none | | | | 大学
+張る | span | v | none | 「ベクトルが空間を張る」 | | | 大学
+線形独立 | linear independence | n | exact
+基底 | basis | n | none | | | | 大学
+次元 | dimension | n | none | | | | 大学
+零空間 | null space | n | none | 核 | | | 大学
+列空間 | column space | n | none | | | | 大学
+行空間 | row space | n | none | | | | 大学
+階数 | rank | n | none | | | | 大学
+階数・退化次数の定理 | rank-nullity theorem | n | none | | | | 大学
+座標ベクトル | coordinate vector | n | none | | | | 大学
+基底の変換 | change of basis | n | none | | | | 大学
+
+## us-linear-algebra-linear-transformations
+線形変換 | linear transformation | n | exact
+線形写像 | linear map | n | none | | | | 大学
+標準行列 | standard matrix | n | none | | | | 大学
+核 | kernel | n | none | | | | 大学
+像（線形写像） | range | n | none | | range-linear-map | | 大学
+単射 | one-to-one | adj | none | injective | | | 大学
+全射 | onto | adj | none | surjective | | | 大学
+同型 | isomorphism | n | none | | | | 大学
+変換の合成 | composition of transformations | n | none | | composition-linalg | | 大学
+
+## us-linear-algebra-eigenvalues
+固有値 | eigenvalue | n | none | | | | 大学
+固有ベクトル | eigenvector | n | none | | | | 大学
+固有空間 | eigenspace | n | none | | | | 大学
+特性多項式 | characteristic polynomial | n | none | | | | 大学
+対角化 | diagonalization | n | none | | | | 大学
+対角化可能 | diagonalizable | adj | none | | | | 大学
+相似な行列 | similar matrices | n | none | | | | 大学
+代数的重複度 | algebraic multiplicity | n | none | | | | 大学
+幾何的重複度 | geometric multiplicity | n | none | | | | 大学
+複素固有値 | complex eigenvalues | n | none | | | | 大学
+マルコフ連鎖 | Markov chain | n | none | | | | 大学
+動的システム | dynamical system | n | none | | | | 大学
+
+## us-linear-algebra-orthogonality
+内積 | inner product | n | exact
+直交 | orthogonal | adj | none | | | | 大学
+正規直交基底 | orthonormal basis | n | none | | | | 大学
+直交射影 | orthogonal projection | n | none | 同上 | orthogonal-projection-linalg | | 大学
+グラム・シュミットの直交化 | Gram-Schmidt process | n | none | | | | 大学
+最小二乗解 | least-squares solution | n | none | | | | 大学
+直交補空間 | orthogonal complement | n | none | | | | 大学
+QR 分解 | QR factorization | n | none | | | | 大学
+対称行列の対角化 | diagonalization of symmetric matrices | n | none | | | | 大学
+二次形式 | quadratic form | n | none | | quadratic-form-linalg | | 大学
+特異値分解 | singular value decomposition | n | none | | | | 大学
+ノルム | norm | n | none | | | | 大学
+
+## us-intro-statistics-sampling-and-data
+統計学 | statistics | n | exact
+記述統計 | descriptive statistics | n | exact
+推測統計 | inferential statistics | n | exact
+パラメータ | parameter | n | none | 母数 | parameter-stats | | 大学
+統計量 | statistic | n | exact
+変数の種類 | levels of measurement | n | none | 名義・順序・間隔・比 | | | 大学
+度数分布 | frequency distribution | n | exact
+標本抽出の誤り | sampling error | n | exact
+質問票 | survey | n | exact
+
+## us-intro-statistics-descriptive-statistics
+幹葉表示 | stem-and-leaf graph | n | none | 同上 | stem-and-leaf-stats | | 大学
+位置の測度 | measures of location | n | none | 四分位数・パーセンタイル | | | 大学
+中心の測度 | measures of central tendency | n | near | 代表値
+散らばりの測度 | measures of spread | n | near | 散布度
+変動係数 | coefficient of variation | n | none | | | | 大学
+分布の歪み | skewness of a distribution | n | exact
+
+## us-intro-statistics-probability
+標本空間 | sample space | n | exact
+事象の独立 | independence of events | n | exact
+分割表 | contingency table | n | exact
+樹形図と Venn 図 | tree and Venn diagrams | n | exact
+包含と排除 | inclusion-exclusion | n | none | | | | 大学
+
+## us-intro-statistics-discrete-distributions
+確率分布関数 | probability distribution function | n | exact
+二項分布 | binomial distribution | n | exact | 同上 | binomial-distribution-stats
+幾何分布 | geometric distribution | n | none | 同上 | geometric-distribution-stats | | 大学
+超幾何分布 | hypergeometric distribution | n | none | | | | 大学
+ポアソン分布 | Poisson distribution | n | none | | | | 大学
+
+## us-intro-statistics-continuous-distributions
+連続確率分布 | continuous probability distribution | n | exact
+一様分布 | uniform distribution | n | none | | | | 大学
+指数分布 | exponential distribution | n | none | | | | 大学
+正規分布の応用 | applications of the normal distribution | n | exact
+標準正規分布 | standard normal distribution | n | exact
+中心極限定理 | central limit theorem | n | exact | 同上 | central-limit-theorem-stats
+
+## us-intro-statistics-confidence-intervals
+信頼区間 | confidence interval | n | exact | 同上 | confidence-interval-stats
+誤差限界 | error bound | n | none | EBM。margin of error と同じ | | | 大学
+点推定値 | point estimate | n | exact
+必要標本サイズ | required sample size | n | none | | | | 大学
+スチューデントの t 分布 | Student's t-distribution | n | exact
+
+## us-intro-statistics-hypothesis-testing
+仮説検定 | hypothesis testing | n | exact | 同上 | hypothesis-testing-stats
+検定の結論 | conclusion of a test | n | none | | | | 大学
+対応のある標本 | matched pairs | n | exact
+分散の検定 | test of a single variance | n | none | | | | 大学
+分散分析 | ANOVA | n | none | | | | 大学
+F 分布 | F distribution | n | none | | | | 大学
+
+## us-intro-statistics-regression
+線形回帰 | linear regression | n | exact
+相関係数 | correlation coefficient | n | exact | 同上 | correlation-coefficient-stats
+予測 | prediction | n | exact
+外れ値の影響 | outliers in regression | n | none | | | | 大学
+回帰式 | regression equation | n | exact
+
+## us-discrete-math-logic-and-proofs
+命題論理 | propositional logic | n | none | | | | 大学
+論理結合子 | logical connective | n | none | | | | 大学
+真理値表 | truth table | n | none | | | | 大学
+含意 | implication | n | none | | | | 大学
+トートロジー | tautology | n | none | | | | 大学
+述語 | predicate | n | none | | | | 大学
+量化子 | quantifier | n | none | ∀ ∃ | | | 大学
+全称量化子 | universal quantifier | n | none | | | | 大学
+存在量化子 | existential quantifier | n | none | | | | 大学
+推論規則 | rules of inference | n | none | | | | 大学
+直接証明 | direct proof | n | exact
+対偶による証明 | proof by contraposition | n | exact
+背理法による証明 | proof by contradiction | n | exact
+場合分けによる証明 | proof by cases | n | exact
+存在証明 | existence proof | n | none | | | | 大学
+一意性の証明 | uniqueness proof | n | none | | | | 大学
+一般性を失わずに | without loss of generality | ph | none | WLOG | | | 大学
+証明の書き方 | writing proofs | n | none | | | | 大学
+
+## us-discrete-math-sets-and-functions
+集合の演算 | set operations | n | exact
+べき集合 | power set | n | none | | | | 大学
+直積 | Cartesian product | n | none | | | | 大学
+基数 | cardinality | n | none | | | | 大学
+関数の全射・単射 | injective and surjective functions | n | none | | | | 大学
+全単射 | bijection | n | none | | | | 大学
+床関数 | floor function | n | none | | | | 大学
+天井関数 | ceiling function | n | none | | | | 大学
+可算 | countable | adj | none | | | | 大学
+
+## us-discrete-math-number-theory
+整除性 | divisibility | n | exact
+除法の定理 | division algorithm | n | exact
+モジュラー算術 | modular arithmetic | n | exact
+最大公約数 | greatest common divisor | n | exact | 同上 | gcd-discrete
+ベズーの等式 | Bézout's identity | n | none | | | | 大学
+拡張ユークリッド互除法 | extended Euclidean algorithm | n | none | | | | 大学
+逆元 | modular inverse | n | none | | | | 大学
+中国剰余定理 | Chinese remainder theorem | n | none | | | | 大学
+フェルマーの小定理 | Fermat's little theorem | n | none | | | | 大学
+素数の無限性 | infinitude of primes | n | exact
+暗号 | cryptography | n | none | | | | 大学
+
+## us-discrete-math-induction-and-recursion
+強帰納法 | strong induction | n | none | | | | 大学
+整列原理 | well-ordering principle | n | none | | | | 大学
+再帰的定義 | recursive definition | n | exact
+構造帰納法 | structural induction | n | none | | | | 大学
+再帰アルゴリズム | recursive algorithm | n | none | | | | 大学
+漸化式の解法 | solving recurrence relations | n | exact
+線形漸化式 | linear recurrence relation | n | none | | | | 大学
+
+## us-discrete-math-counting
+積の法則 | product rule | n | exact | 同上 | product-rule-counting
+和の法則 | sum rule | n | exact | 同上 | sum-rule-counting
+鳩の巣原理 | pigeonhole principle | n | none | 日本の高校では「部屋割り論法」として登場することがある | | | 大学
+包含排除原理 | inclusion-exclusion principle | n | none | | | | 大学
+順列 | permutations | n | exact
+組合せ | combinations | n | exact
+二項係数の恒等式 | binomial identities | n | none | | | | 大学
+重複組合せ | combinations with repetition | n | exact
+星と棒 | stars and bars | n | none | 重複組合せの数え方 | | | 大学
+一般化順列 | generalized permutations | n | none | | | | 大学
+母関数 | generating function | n | none | | | | 大学
+
+## us-discrete-math-discrete-probability
+離散確率 | discrete probability | n | exact
+確率の公理 | probability axioms | n | none | | | | 大学
+ベルヌーイ試行 | Bernoulli trial | n | none | 反復試行 | | | 大学
+期待値の線形性 | linearity of expectation | n | none | | | | 大学
+分散 | variance | n | exact | 同上 | variance-discrete
+チェビシェフの不等式 | Chebyshev's inequality | n | none | | | | 大学
+
+## us-discrete-math-graphs-and-relations
+関係（二項関係） | relation | n | none | | | | 大学
+同値関係 | equivalence relation | n | none | | | | 大学
+同値類 | equivalence class | n | none | | | | 大学
+半順序 | partial order | n | none | | | | 大学
+離散グラフ | graph | n | exact | 同上 | graph-discrete
+有向グラフ | directed graph | n | none | | | | 大学
+次数（頂点） | degree of a vertex | n | none | | degree-vertex | | 大学
+握手補題 | handshaking lemma | n | none | | | | 大学
+連結 | connected | adj | none | | | | 大学
+オイラー路 | Euler path | n | exact
+ハミルトン路 | Hamiltonian path | n | none | | | | 大学
+最短経路 | shortest path | n | exact
+木（グラフ） | tree | n | exact | 同上 | tree-discrete
+全域木 | spanning tree | n | none | | | | 大学
+二部グラフ | bipartite graph | n | none | | | | 大学
+平面グラフ | planar graph | n | none | | | | 大学
+グラフ彩色 | graph coloring | n | none | | | | 大学
