@@ -26,13 +26,20 @@ mkdir -p "$OUT"
 
 echo "fetching up to $MAX caption files for $ID"
 
-# --write-subs prefers human-made captions; --write-auto-subs is the fallback.
-# Auto captions misread formulas, so they are tagged auto:true below and never
-# used as the sole basis for a symbol reading.
+# Human-made English captions only, by default. AUTO=1 takes YouTube's own
+# English auto captions instead (tagged auto:true below; auto captions misread
+# formulas, so they are never the sole basis for a symbol reading).
+# The language list is exact on purpose: "en.*" also matches machine
+# translations into English from other tracks (en-bg, en-ko, ...), and those
+# all map to the same .txt name, so the last one converted would win.
+if [[ "${AUTO:-0}" == "1" ]]; then
+  SUBS=(--write-auto-subs --sub-langs "en")
+else
+  SUBS=(--write-subs --sub-langs "en,en-US")
+fi
 yt-dlp \
   --skip-download \
-  --write-subs --write-auto-subs \
-  --sub-langs "en.*" --sub-format vtt \
+  "${SUBS[@]}" --sub-format vtt \
   --playlist-end "$MAX" \
   --sleep-requests 1 \
   --ignore-errors \
@@ -40,9 +47,10 @@ yt-dlp \
   "$URL"
 
 # VTT -> plain text, same treatment as fetch-ocw.ts
-python3 - "$OUT" <<'PY'
+python3 - "$OUT" "${AUTO:-0}" <<'PY'
 import glob, json, os, re, sys
 out = sys.argv[1]
+auto = sys.argv[2] == "1"
 entries = []
 for vtt in sorted(glob.glob(os.path.join(out, "*.vtt"))):
     lines = []
@@ -57,7 +65,6 @@ for vtt in sorted(glob.glob(os.path.join(out, "*.vtt"))):
     deduped = [l for i, l in enumerate(lines) if i == 0 or l != lines[i - 1]]
     txt = vtt.rsplit(".", 2)[0] + ".txt"
     open(txt, "w", encoding="utf-8").write(re.sub(r"\s+", " ", " ".join(deduped)).strip())
-    auto = ".auto." in os.path.basename(vtt) or "a.en" in os.path.basename(vtt)
     entries.append({
         "id": os.path.basename(out),
         "register": "spoken",

@@ -98,17 +98,25 @@
   "updated": "2026-09-10",
   "evidence": {
     "spoken": {
-      "plug in": 220,
-      "substitute": 106,
-      "substitute back": 3
+      "plug in": 450,
+      "substitute": 215,
+      "substitute back": 11
     },
     "sources": [
+      "khan-algebra",
       "mit-18.01",
       "mit-18.02",
       "mit-18.03",
       "mit-18.06",
       "mit-6.042"
     ],
-    "counted": "2026-09-11"
-  }
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-register-mismatch",
+      "note": "コーパスの結論がエントリの register と食い違う（話: substitute back）。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
 }
