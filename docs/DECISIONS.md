@@ -91,3 +91,23 @@
 - 2026-09-11 | 1 | 生成スクリプトは `scripts/ledger/`（Python: `build.py` ＋ `curriculum_spec.py` ＋ `seed_*.txt`）。Wikipedia / Wikidata の応答キャッシュ `wiki_cache.json` は .gitignore | 台帳は再生成できる状態で残す。キャッシュは 1 MB 超で差分に向かない
 - 2026-09-11 | 1 | Cowork の作業 VM に pnpm が無く、npm registry にも出られないため、`validate` と `spell` は `node --experimental-strip-types` で `scripts/validate.ts` と cspell を直接実行して緑を確認した。**`pnpm test` と `pnpm build` は未実行**（esbuild が darwin バイナリのため） | 人間が Mac で `pnpm test && pnpm build` を一度叩く
 - 2026-09-11 | 1 | cspell に `"id": "..."` の値と Markdown のバッククォート内を無視する regex を追加 | curriculum の id はローマ字（`jp-chuugaku-1-seifu-no-suu`）で、単語登録では追いつかない。id はスキーマの正規表現で別に検査している
+
+## Phase 1 修正 — 2026-09-23
+
+- 2026-09-23 | 1 | 30 語レビューは全件承認として反映（4 に directly proportional、17 に relative maximum を `en_variants`、9 と 20 は書き言葉 necessary and sufficient condition / substitution を written で残す） | あなたの判定。判断表は `scripts/ledger/fix_decisions.py` の `REVIEW30`
+- 2026-09-23 | 1 | 台帳の修正は `scripts/ledger/fix_phase1.py` が **Phase 1 のコミット（5593045）の terms.csv を入力に**毎回同じ結果を出す。判断は `fix_decisions.py` に 1 行ずつ | CSV の手直しでは、どの行をなぜ変えたかが残らない。1 行単位で異論を言えるようにする
+- 2026-09-23 | 1 | `mapping` は語の対応の質。米国側の none 365 は「日本の高校範囲外」の意味だったので付け直した（exact 269 / near 42 / none 35、残りは統合・範囲外で消滅）。範囲外は `level_jp = 大学` で表す | あなたの指摘。固有値 = eigenvalue は大学の語でも exact
+- 2026-09-23 | 1 | `level_jp` の「—」は、日本の学習者がその**内容**に出会う段階にした（PEMDAS → 中1、two-column proof → 中2、FOIL → 中3、washer method → 数III）。内容自体が日本の教育課程に無いもの（glide reflection、joint variation、stem-and-leaf plot）は 大学 | enum に「該当なし」が無く、スキーマは変えない。名前が無いことは mapping: none が表す
+- 2026-09-23 | 1 | 米国側の行を日本側の行に統合するとき、米国側の level_jp（仮置きの 大学 / —）は持ち込まない | 持ち込むと x 切片が「中2・数I・大学」になり、範囲外の意味と矛盾する
+- 2026-09-23 | 1 | Wikipedia の langlink は **ja 記事が `Category:数学` / `統計学` / `数理科学` の 4 段以内**にあるときだけ採用（`scripts/ledger/wikicat.py`） | あなたの指示。深さ 5 にするとデル・テクノロジーズ、フィート、マイルが数学扱いになる。en 側のカテゴリは Demarchy が 3 段で届くほど雑なので使わない
+- 2026-09-23 | 1 | カテゴリ規則は機械的に適用し、例外を作らない。帰無仮説・トートロジー・交代級数判定法・等高線（level curve）は同じ概念だが ja 記事のカテゴリが数学に届かないので出典から外れた（source は editorial / textbook） | 例外リストを作ると規則が形骸化する。Phase 2 で別の出典（textbook）を付ければ済む
+- 2026-09-23 | 1 | カテゴリ内でも別概念の langlink は外す（三角不等式 → Triangle inequality、基底 → Base (topology)、外積 → Exterior algebra、底 → 底 (初等幾何学) など 21 件）。一覧は `fix_decisions.py` の `WIKI_WRONG` | 数学記事どうしの取り違えはカテゴリでは検出できない
+- 2026-09-23 | 1 | 1 概念 1 行。同じ英語でも別概念なら統合せず、意味の分かる id に改名（`divisor` 約数 / `divisor-in-division` 除数、`range` 値域 / `range-of-data` 範囲、`median` / `median-of-a-triangle`）。品詞が違うもの（平方 / 2 乗する）も別行 | 統合すると定義が 2 つになる。id の `-keisan` `-functions` のような単元名の接尾辞は意味を持たない
+- 2026-09-23 | 1 | サンプル 10 語の id を台帳側が譲る: 代入する = `substitute`（置き換える は `substitute-new-variable`）、移項する = `move-term-to-other-side` | Phase 0 のファイルが既にあり、Phase 2 で同じ id に別の語が入ると上書きになる
+- 2026-09-23 | 1 | `unit` / `level_jp` / `ja_alt` / `en_variants` を台帳の列に追加（複数値は `\|`）。台帳を読むコードは無く、スキーマは変えていない | 単元の複数所属は curriculum の `term_refs` 側で表せる
+- 2026-09-23 | 1 | out-of-scope は 5 件: 単位あたりの量（小学校）、foot / mile（ヤード・ポンド法）、sales tax / tip（米国の文章題の生活文脈）。後者 4 件は conventions で扱う | 数学用語ではないが、米国の教室で必要なのは確か。捨てずに置き場所を変える
+- 2026-09-23 | 1 | `ja_basis` / `ja_check` を新設。basis は mext（学習指導要領の**本文**に同じ表記。1 文字語は〔用語・記号〕にあるものだけ）> wikipedia > editorial。check は見出し語と根拠の表記の照合（ok / alt / title / —） | 「日本語の見出し語がどこから来たか」を Phase 2 で辿れるようにする。1 文字語（項・元・根）は本文のどこにでも現れるので部分一致を使えない
+- 2026-09-23 | 1 | 学習指導要領の本文は MEXT の解説 PDF の付録から `scripts/ledger/fetch_mext.py` で切り出す（中学 平成29年告示、高校 平成30年告示）。本文はリポジトリに入れず、〔用語・記号〕一覧（用語 48・記号 22）だけ `ledger/mext-yougo.csv` に置く | 最初に取った HTML 版は平成20年告示の旧版だった（「資料の活用」「素数なし」）。解説 PDF の付録なら告示と同じ版
+- 2026-09-23 | 0 | `fetch-captions.sh` の字幕言語を `en.*` から `en,en-US`（人手字幕のみ）に変更。自動字幕は `AUTO=1` のときだけ `en` を取る | `en.*` は他言語からの機械翻訳（en-bg、en-ko …）まで拾い、しかも全部同じ .txt 名に変換されるので最後に処理した翻訳字幕が残っていた。429 の原因でもあった
+- 2026-09-23 | 0 | Khan Academy は `khan-algebra` として Algebra I（100）・Algebra II（100）・Algebra Basics の一次方程式（35）の 235 本を対象にし、人手字幕のある 182 本（175,056 語）を取得 | 通分・移項の判断材料。Algebra の授業の話し言葉が OCW（大学）に欠けていた
+- 2026-09-23 | 0 | OCW はこのマシンに corpus/ が無かったため `pnpm corpus:fetch:ocw` で取り直した。18.01 が 142,270 語 → 487,139 語に増えた（sitemap から拾える動画が増えた）。重み付けで 25% に均される | 前回の数字（93 万語）と比べるときは注意

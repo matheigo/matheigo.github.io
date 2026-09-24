@@ -3,30 +3,48 @@
 `terms.csv` は Phase 2 で `data/terms/*.json` を生成するための **見出し語候補の一覧**。本文（定義・例文）は持たない。
 人間が 15 分眺めて「抜け」「怪しい対応」を指摘するためのもの。編集は CSV を直接でよい（1 行 1 語）。
 
-再生成: `python3 scripts/ledger/build.py all`（`--offline` で Wikipedia / Wikidata を叩かず、キャッシュだけで作る）。
-元データは `scripts/ledger/seed_*.txt`（単元ごとの候補）と `scripts/ledger/curriculum_spec.py`（単元定義）。
+作り方は 2 段:
+1. `python3 scripts/ledger/build.py all` — Phase 1 の生成（`--offline` でキャッシュだけで作る）。元データは
+   `scripts/ledger/seed_*.txt`（単元ごとの候補）と `scripts/ledger/curriculum_spec.py`（単元定義）
+2. `python3 scripts/ledger/fix_phase1.py` — Phase 1 レビューの反映。**入力は Phase 1 のコミット（5593045）の
+   `terms.csv` 固定**なので何度回しても同じ結果になる。判断は `scripts/ledger/fix_decisions.py` に 1 行ずつ。
+   前提: `python3 scripts/ledger/wikicat.py`（Wikipedia のカテゴリ判定 → `wiki_cat.json`）と
+   `python3 scripts/ledger/fetch_mext.py`（学習指導要領の本文 → `scripts/ledger/mext/`、gitignore）
+
+2 以降に CSV を手で直した場合は、`fix_phase1.py` を回し直すと上書きされる。直した内容は `fix_decisions.py` に足す。
 
 ## 列
 
+複数値は `|` 区切り（`flag` だけ空白区切り）。
+
 | 列 | 内容 |
 |---|---|
-| `id` | 暫定の英語ケバブケース id。Phase 2 のファイル名候補。衝突したものは `-<単元の末尾>` が付いている（`flag` に `id-dedup`）。Phase 2 で改名してよい |
+| `id` | 英語ケバブケース id。Phase 2 のファイル名。1 概念 1 行（同じ英語でも別概念なら別 id: `divisor` 約数 / `divisor-in-division` 除数）。旧 id との対応は `id-changes.csv` |
 | `ja` | 見出し語（日本語）。同音異義は「表（硬貨）」のように括弧で区別 |
+| `ja_alt` | 同じ概念の別名・カタカナ語（`ja.alt` になる）。統合した行の見出し語もここに入る |
 | `en` | 暫定 `en.term`。「米国の教室で言う言い方」を優先。Phase 2 でコーパス（PLAN 15）により確定する |
-| `en_alt` | 同じ `ja` が別の単元で別の英語になっていた場合の他候補。`英語 [単元]` の形。Phase 2 で `en.alt` / `en.variants` に振り分ける |
+| `en_alt` | 他の英語候補。`英語 [単元]` の形のものは、同じ `ja` が別の単元で別の英語になっていたもの。Phase 2 で `en.alt` / `en.variants` に振り分ける |
+| `en_variants` | register が `en` と違う言い方（`en.variants`）。`英語@register` の形（例 `necessary and sufficient condition@written`） |
 | `pos` | `noun` / `verb` / `adjective` / `phrase` |
-| `unit` | `data/curriculum/` の id。その語を最初に習う単元 1 つだけ |
+| `unit` | `data/curriculum/` の id。その語を扱う単元（複数可。最初が最初に習う単元）。Phase 2 で各単元の `term_refs` に入る |
 | `domain` | `schema/_common.schema.json` の `domain` enum。単元の既定値 |
-| `level_jp` | `level.jp` の enum 値。米国側から洗った語は `大学`、日本の教育課程に対応物がない語（PEMDAS、FOIL 等）は `—` |
-| `level_us` | `level.us` の enum 値。複数は `\|` 区切り |
-| `mapping` | 仮置きの `exact` / `near` / `none`。`near` / `none` の理由は `note` |
+| `level_jp` | `level.jp` の enum 値（複数可）。日本の学習者がその内容に出会う段階。日本の高校までに扱わない内容は `大学` |
+| `level_us` | `level.us` の enum 値（複数可） |
+| `mapping` | `exact` / `near` / `none`。**語の対応の質**であって範囲ではない（固有値 = eigenvalue は大学の語でも `exact`）。`none` は相手側に名前がない（PEMDAS、増減表）。理由は `note` |
 | `source` | 出典種別の仮置き。`wikipedia-langlink`（ja 記事に en 記事対応あり）／ `wikidata`（ja 記事と QID はあるが en 記事なし）／ `textbook`（米国側の教科書の目次・索引由来）／ `editorial`。**名詞以外は必ず editorial**（Wikipedia は動詞の出典にならない） |
-| `wiki_ja` | 突合に使った ja.wikipedia の記事名（リダイレクト解決後）。参考情報で、`source` が editorial でも入っていることがある |
+| `wiki_ja` | 突合に使った ja.wikipedia の記事名（リダイレクト解決後）。**ja 記事が数学カテゴリ配下（`Category:数学` / `統計学` / `数理科学` まで 4 段以内）で、同じ概念のときだけ残す**。外したものは `note` に「wiki 除外」と理由 |
 | `wiki_en` | その記事の英語版タイトル（langlink）。`en` と一致しなくてよい（記事名 ≠ 教室の言い方）。Phase 2 の crosscheck の材料 |
 | `wikidata` | QID |
-| `flag` | `id-dedup` ／ `ja-merged`（同じ ja の行を統合した）／ `wiki-redirect`（記事が別概念へのリダイレクトだった。出典にしていない）／ `wiki-disambig`（曖昧さ回避ページ）／ `wiki-nonmath`（数学以外の記事に当たった。出典にしていない） |
-| `note` | mapping の理由、米国での言い方、STYLE.md への参照など |
+| `ja_basis` | 日本語見出しの根拠。`mext`（学習指導要領の本文に同じ表記が出る。1 文字の語は〔用語・記号〕にあるものだけ）／ `wikipedia`（`wiki_ja` の記事かその転送元）／ `editorial`（本プロジェクトの訳語。米国側から洗った語の多く） |
+| `ja_check` | 見出し語と根拠の表記の照合。`ok`／`alt:<表記>`（根拠の表記は `ja_alt` 側にある）／`title:<記事名>`（見出し語は記事名と違う転送元）／`—`（照合先なし）。`ok` と `—` 以外は Phase 2 で見出し語を選び直す候補 |
+| `flag` | `ja-merged`（同じ ja の行を統合した）／ `merged`（重複 id を統合した）／ `reviewed-30`（Phase 1 の 30 語レビュー済み）／ `wiki-redirect`（記事が転送先）／ `wiki-disambig`（曖昧さ回避ページ）／ `wiki-rejected`（langlink を出典から外した） |
+| `note` | mapping の理由、米国での言い方、STYLE.md への参照、wiki 除外の理由など |
 
-## 数の目安
+## ほかのファイル
 
-単元別の件数、品詞の内訳、出典の内訳、対応が怪しい語 30 は `phase1-report.md`。
+| ファイル | 内容 |
+|---|---|
+| `out-of-scope.csv` | 台帳から外した語と理由（小学校範囲、数学用語でないもの） |
+| `id-changes.csv` | Phase 1 からの id の変化（`merged` / `renamed` / `out-of-scope`） |
+| `mext-yougo.csv` | 学習指導要領（中学 平成29年告示・高校 平成30年告示）の〔用語・記号〕一覧。網羅率の分母 |
+| `phase1-report.md` | Phase 1 時点の単元別件数と、対応が怪しい語 30。修正後の数字は `audits/phase1-fix-report.md` |
