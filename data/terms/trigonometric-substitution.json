@@ -11,13 +11,13 @@
     "variants": [
       {
         "term": "trig substitution",
-        "register": "spoken",
-        "note": "話し言葉で 68 件（MIT OCW 53・YouTube 14）と最も多い。"
+        "register": "both",
+        "note": "話し言葉で最も多い（MIT OCW が中心）。話し言葉で 79 件（MIT OCW 63・NancyPi 13・patrickJMT 2 ほか 1）、書き言葉で 3 件（すべて MIT の講義ノート）。"
       },
       {
         "term": "trig sub",
         "register": "spoken",
-        "note": "略した言い方。話し言葉で 26 件（YouTube 23）。"
+        "note": "さらに略した言い方。NancyPi に多い。話し言葉で 27 件（NancyPi 17・Professor Leonard 6・MIT OCW 4）、書き言葉では 0 件。"
       }
     ],
     "uk": null,
@@ -25,7 +25,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の高校でも x = a sin θ などの置換は使うが、定積分の値を求めるときに限られ、手法に名前は付けない。米国では Calc II で trigonometric substitution として体系的に教え、不定積分の答えを x に戻すために直角三角形（reference triangle）を描く。",
+  "mapping_note": "日本の高校でも x = a sin θ などの置換は使うが、手法に名前は付けない。米国では OpenStax Calculus Volume 2 が Trigonometric Substitution の節で体系的に扱い、不定積分の答えを x に戻すために直角三角形（reference triangle）を描く。",
   "domains": [
     "calculus",
     "trigonometry"
@@ -52,22 +52,37 @@
       "en": "Using the trigonometric substitution x = 3 tan θ, we have dx = 3 sec² θ dθ.",
       "ja": "三角置換 x = 3 tan θ を用いると dx = 3 sec²θ dθ となる。",
       "register": "written"
+    },
+    {
+      "en": "For the square root of two x plus one, let u be two x plus one, and it turns into a power.",
+      "ja": "√(2x + 1) は u = 2x + 1 とおけば、べき乗の形になる。",
+      "register": "spoken"
     }
   ],
   "collocations": [],
   "pitfalls": [
     "日本では 1/cos²θ と書くところを、米国では sec²θ と書く。",
-    "AP Calculus の試験範囲には含まれない。"
+    "AP Calculus の CED（2020 年版）には trigonometric substitution の topic がない。BC の積分の技法は topic 6.11（部分積分）・6.12（部分分数）・6.13（広義積分）。",
+    "√ を含む関数（日本の「無理関数」）は、米国では irrational function とはまず言わず、radical function ／ square root function と呼ぶ。√(ax + b) は u-substitution、√(a² − x²) などは trigonometric substitution で扱う。"
   ],
   "related": [
     "integration-by-substitution",
-    "integral-involving-radicals",
-    "integrals-giving-inverse-trig-functions"
+    "integrals-giving-inverse-trig-functions",
+    "rationalizing-substitution"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "topic なし（Unit 6 の積分の技法は 6.9–6.14。三角置換は含まれない）"
     }
   ],
   "confidence": "likely",
@@ -79,12 +94,12 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "trigonometric substitution": 7,
-      "trig substitution": 68,
-      "trig sub": 26
+      "trig substitution": 79,
+      "trig sub": 27,
+      "trigonometric substitution": 7
     },
     "written": {
-      "trigonometric substitution": 21,
+      "trigonometric substitution": 22,
       "trig substitution": 3
     },
     "sources": [

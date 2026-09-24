@@ -6,22 +6,27 @@
     "alt": []
   },
   "en": {
-    "term": "take the antiderivative",
+    "term": "find an antiderivative",
     "alt": [],
     "variants": [
       {
-        "term": "find the antiderivative",
-        "register": "written",
-        "note": "書き言葉で 23 件（OpenStax Calculus Volume 1 が 20 件）と最も多い。話し言葉でも 17 件。"
+        "term": "take the antiderivative",
+        "register": "spoken",
+        "note": "Khan Academy（AP Calculus）の言い方で、107 件中 93 件が Khan Academy。ほかのソースでは find an antiderivative のほうが多い。話し言葉で 107 件（Khan Academy 93・MIT OCW 14）、書き言葉で 6 件（OpenStax Calculus 4・MIT の講義ノート 2）。"
       },
       {
         "term": "find an antiderivative",
-        "register": "spoken",
-        "note": "話し言葉で 23 件（MIT OCW 16）。原始関数は 1 つに決まらないので、数学的には an が正確。"
+        "register": "both",
+        "note": "大学の講義（MIT OCW）の言い方で、書き言葉でも使う。原始関数は 1 つに決まらないので、数学的には an が正確。話し言葉で 29 件（MIT OCW 20・3Blue1Brown 5・Khan Academy 3 ほか 1）、書き言葉で 16 件（OpenStax Calculus 15・MIT の講義ノート 1）。"
+      },
+      {
+        "term": "find the antiderivative",
+        "register": "both",
+        "note": "書き言葉ではこれが最も多いが、すべて OpenStax Calculus。話し言葉で 21 件（Khan Academy 15・patrickJMT 2・3Blue1Brown 2 ほか 2）、書き言葉で 29 件（すべて OpenStax Calculus）。"
       }
     ],
     "uk": null,
-    "register": "spoken"
+    "register": "both"
   },
   "pos": "phrase",
   "mapping": "exact",
@@ -57,12 +62,11 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "take the antiderivative は Khan Academy に集中している（話し言葉 92 件中 81 件）。大学の講義（MIT OCW）では find an antiderivative が多い。"
+    "言い方はソースで分かれる。Khan Academy は take the antiderivative、MIT OCW は find an antiderivative、OpenStax Calculus は find the antiderivative が多い。どれも通じる。"
   ],
   "related": [
     "antiderivative",
-    "indefinite-integral",
-    "check-by-differentiating"
+    "indefinite-integral"
   ],
   "sources": [
     {
@@ -82,14 +86,14 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "take the antiderivative": 92,
-      "find the antiderivative": 17,
-      "find an antiderivative": 23
+      "take the antiderivative": 107,
+      "find the antiderivative": 21,
+      "find an antiderivative": 29
     },
     "written": {
-      "take the antiderivative": 4,
-      "find the antiderivative": 23,
-      "find an antiderivative": 7
+      "find an antiderivative": 16,
+      "find the antiderivative": 29,
+      "take the antiderivative": 6
     },
     "sources": [
       "khan-ap-calc",

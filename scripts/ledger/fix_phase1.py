@@ -14,9 +14,15 @@ fix_decisions.py; this file only applies them and derives the rest:
      level_jp become multi-valued ("|"); katakana and aliases go to ja_alt
   4. level_jp "—" resolved; out-of-scope rows move to ledger/out-of-scope.csv
   5. ja_basis / ja_check against the course of study (scripts/ledger/mext/)
+  6. English check of `title:` rows (wiki_en.json)
+  7. langlinks fetched again (langlinks.json from refetch.py): empty wiki_en
+     filled, wikidata-only sources become wikipedia-langlink
+  8. Phase 2 修正: one concept, one entry for the integral units; section
+     names into the entry for their content; classroom lines to phrases
 
-Writes ledger/terms.csv, ledger/out-of-scope.csv, ledger/id-changes.csv and a
-summary for the report to scripts/ledger/fix_stats.json.
+Writes ledger/terms.csv, ledger/out-of-scope.csv, ledger/id-changes.csv,
+ledger/phrases-candidates.csv and a summary for the report to
+scripts/ledger/fix_stats.json.
 """
 import csv
 import io
@@ -120,18 +126,22 @@ def apply_wiki(rows, stats):
 
 
 # ---------------------------------------------------------------- 3. merges
-def merge(rows, frm, into, main, log):
+def merge(rows, frm, into, main, log, action="merged", names=True):
+    """names=False: a textbook section name, whose ja / en are not words and
+    do not become ja_alt / en_alt (Phase 2 修正)."""
     a, b = rows.pop(frm), rows[into]
     if a["pos"] != b["pos"]:
         print(f"  warn: merging different pos {frm}({a['pos']}) -> {into}({b['pos']})")
     if main == "from":
         add(b["ja_alt"], b["ja"])
         b["ja"] = a["ja"]
-    else:
+    elif names:
         add(b["ja_alt"], a["ja"])
-    add(b["ja_alt"], *a["ja_alt"])
+    if names:
+        add(b["ja_alt"], *a["ja_alt"])
     b["ja_alt"] = [x for x in b["ja_alt"] if x != b["ja"]]
-    add(b["en_alt"], a["en"] if a["en"] != b["en"] else "", *a["en_alt"])
+    if names:
+        add(b["en_alt"], a["en"] if a["en"] != b["en"] else "", *a["en_alt"])
     add(b["en_variants"], *a["en_variants"])
     for col in ("unit", "domain", "level_us"):
         add(b[col], *a[col])
@@ -140,13 +150,16 @@ def merge(rows, frm, into, main, log):
     if not (a["unit"][0].startswith("us-") and not b["unit"][0].startswith("us-")):
         add(b["level_jp"], *a["level_jp"])
     if SOURCE_RANK.get(a["source"], 9) < SOURCE_RANK.get(b["source"], 9):
-        for col in ("source", "wiki_ja", "wiki_en", "wikidata"):
+        # Phase 2 merges keep b's article when a has none (antiderivatives had a
+        # textbook source but no article; antiderivative's 不定積分 must stay)
+        cols = ("source",) if action == "merged-into" and not a["wiki_ja"] else ("source", "wiki_ja", "wiki_en", "wikidata")
+        for col in cols:
             b[col] = a[col]
     add(b["flag"], *[f for f in a["flag"] if f != "id-dedup"])
     add(b["flag"], "merged")
     if a["note"] and a["note"] not in b["note"]:
         note_add(b, a["note"])
-    log.append((a["orig_id"], into, "merged"))
+    log.append((a["orig_id"], into, action))
 
 
 def rename(rows, old, new, fields, log):
@@ -348,10 +361,72 @@ def apply_en_check(rows, stats):
                          "wiki_en_filled": filled, "ok_via_disambig": ok_disambig}
 
 
+# ------------------------------------------------------ 7. langlinks again
+# Phase 2 修正 (docs/DECISIONS.md 2026-09-24). Phase 1 kept a math-category ja
+# article for these rows but recorded no en langlink, because build.py did not
+# follow the API's `continue`. refetch.py asked again for every wiki_ja
+# (langlinks.json). An empty wiki_en is filled; a wikidata-only source becomes
+# wikipedia-langlink. A langlink that differs from the recorded one, or has
+# disappeared, is reported and left as it was.
+LANGLINKS = os.path.join(HERE, "langlinks.json")
+
+
+def apply_langlinks(rows, stats):
+    if not os.path.exists(LANGLINKS):
+        raise SystemExit(f"{LANGLINKS} is missing: run python3 scripts/ledger/refetch.py langlinks")
+    got = json.load(open(LANGLINKS, encoding="utf-8"))["ja"]
+    filled, upgraded, differ, gone = [], [], [], []
+    for r in rows.values():
+        if not r["wiki_ja"]:
+            continue
+        hit = got.get(r["wiki_ja"])
+        if hit is None:
+            raise SystemExit(f"langlink not fetched: {r['wiki_ja']!r}: run python3 scripts/ledger/refetch.py langlinks")
+        en = (hit["en"] or "").split("#")[0]
+        if en and not r["wiki_en"]:
+            r["wiki_en"] = en
+            filled.append((r["id"], r["wiki_ja"], en))
+            if r["source"] == "wikidata":
+                r["source"] = "wikipedia-langlink"
+                upgraded.append(r["id"])
+        elif en and r["wiki_en"] != en:
+            differ.append((r["id"], r["wiki_ja"], r["wiki_en"], en))
+        elif not en and r["wiki_en"]:
+            gone.append((r["id"], r["wiki_ja"], r["wiki_en"]))
+    stats["langlinks"] = {"filled": filled, "upgraded": upgraded, "differ": differ, "gone": gone}
+
+
+# --------------------------------------------------- 8. Phase 2 修正
+PHRASE_COLUMNS = ["id", "ja", "en", "pos", "unit", "level_jp", "level_us", "from", "note"]
+
+
+def apply_phase2(rows, log, stats):
+    """One concept, one entry for the integral units (fix_decisions PHASE2_*)."""
+    for frm, into, main in D.PHASE2_SAME:
+        merge(rows, frm, into, main, log, action="merged-into")
+    for frm, into in D.PHASE2_SECTION:
+        merge(rows, frm, into, "into", log, action="merged-into", names=False)
+        note_add(rows[into], f"節の名前「{frm}」を統合（Phase 2 修正）")
+    for frm, into in D.PHASE2_TO_SYMBOLS.items():
+        rows.pop(frm)
+        log.append((frm, f"symbols/{into}", "merged-into"))
+    phrases = []
+    for i in D.PHASE2_TO_PHRASES:
+        r = rows.pop(i)
+        phrases.append({"id": i, "ja": r["ja"], "en": r["en"], "pos": r["pos"], "unit": "|".join(r["unit"]),
+                        "level_jp": "|".join(r["level_jp"]), "level_us": "|".join(r["level_us"]),
+                        "from": f"{D.PHASE2_FROM_COMMIT}:data/terms/{i}.json", "note": r["note"]})
+        log.append((i, "", "to-phrases"))
+    stats["phase2"] = {"same": len(D.PHASE2_SAME), "section": len(D.PHASE2_SECTION),
+                       "to_symbols": len(D.PHASE2_TO_SYMBOLS), "to_phrases": phrases}
+
+
 # ------------------------------------------------------------------- main
-def transform(en_check=True):
+def transform(en_check=True, langlinks=True, phase2=True):
     """Phase 1 ledger -> fixed rows. en_check=False stops before the English
-    check, which is what wikien.py needs to know which titles to fetch."""
+    check, which is what wikien.py needs to know which titles to fetch;
+    langlinks=False stops before step 7 (refetch.py asks for every wiki_ja
+    that survives up to there)."""
     stats = {}
     rows = load_phase1()
     stats["phase1_rows"] = len(rows)
@@ -454,6 +529,17 @@ def transform(en_check=True):
     stats["check"] = dict(Counter(r["ja_check"].split(":")[0] for r in rows.values()))
     stats["check_mismatch"] = [(r["id"], r["ja"], r["ja_basis"], r["ja_check"]) for r in rows.values()
                                if r["ja_check"] not in ("ok", "—")]
+    if not langlinks:
+        return rows, stats, log, oos
+
+    # 7. langlinks fetched again (Phase 2 修正)
+    apply_langlinks(rows, stats)
+    stats["source_after_langlinks"] = dict(Counter(r["source"] for r in rows.values()))
+    if not phase2:
+        return rows, stats, log, oos
+
+    # 8. Phase 2 修正: one concept, one entry for the integral units
+    apply_phase2(rows, log, stats)
     return rows, stats, log, oos
 
 
@@ -484,6 +570,10 @@ def main():
         w = csv.writer(f)
         w.writerow(["old_id", "new_id", "action"])
         w.writerows(log)
+    with open(os.path.join(ROOT, "ledger", "phrases-candidates.csv"), "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, PHRASE_COLUMNS)
+        w.writeheader()
+        w.writerows(stats["phase2"]["to_phrases"])
 
     stats["rows"] = len(rows)
     stats["actions"] = dict(Counter(a for _, _, a in log))
@@ -494,13 +584,20 @@ def main():
     stats["dup_en"] = {e: ids for e, ids in _dup_en(rows).items()}
     json.dump(stats, open(os.path.join(HERE, "fix_stats.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
-    big = ("coverage", "check_mismatch", "oos", "dup_en", "en_check", "notation_alias", "notation_headword")
+    big = ("coverage", "check_mismatch", "oos", "dup_en", "en_check", "notation_alias", "notation_headword",
+           "langlinks", "phase2")
     print(json.dumps({k: v for k, v in stats.items() if k not in big}, ensure_ascii=False, indent=1))
     e = stats["en_check"]
     print(f"en check: {e['checked']} title rows -> ok {len(e['ok'])}, wikipedia removed {len(e['removed'])}"
           f" ({dict(Counter(x['reason'] for x in e['removed']))}); wiki_en filled {len(e['wiki_en_filled'])};"
           f" ok via disambiguation page {len(e['ok_via_disambig'])}")
     print(f"notation: headwords {len(stats['notation_headword'])}, Wikipedia spellings to ja_alt {len(stats['notation_alias'])}")
+    ll = stats["langlinks"]
+    print(f"langlinks (step 7): wiki_en filled {len(ll['filled'])}, wikidata -> wikipedia-langlink {len(ll['upgraded'])},"
+          f" differ {len(ll['differ'])} (left as recorded), gone {len(ll['gone'])} (left as recorded)")
+    p2 = stats["phase2"]
+    print(f"phase 2 (step 8): same concept {p2['same']}, section names {p2['section']}, to symbols {p2['to_symbols']},"
+          f" to phrases {len(p2['to_phrases'])}")
 
 
 def _dup_en(rows):

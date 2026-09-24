@@ -7,8 +7,18 @@
   },
   "en": {
     "term": "properties of the definite integral",
-    "alt": [
-      "properties of integrals"
+    "alt": [],
+    "variants": [
+      {
+        "term": "properties of the definite integral",
+        "register": "written",
+        "note": "OpenStax Calculus の書き方。話し言葉では 0 件、書き言葉で 8 件（すべて OpenStax Calculus）。"
+      },
+      {
+        "term": "properties of integrals",
+        "register": "both",
+        "note": "話し言葉ではこちら（すべて MIT OCW）。話し言葉で 5 件（すべて MIT OCW）、書き言葉で 2 件（すべて OpenStax Calculus）。"
+      }
     ],
     "uk": null,
     "register": "written"
@@ -29,8 +39,8 @@
       "Calculus I"
     ]
   },
-  "definition_ja": "定数倍や和を分けて積分できること、区間を分けて足せること、上端と下端を入れ替えると符号が変わることなど、定積分の基本的な性質。",
-  "definition_en": "The basic rules for definite integrals: constants and sums can be pulled apart, intervals can be split and added, and swapping the limits changes the sign.",
+  "definition_ja": "定数倍や和を分けて積分できること、区間を分けて足せること、上端と下端を入れ替えると符号が変わること、区間で f(x) ≦ g(x) なら ∫ₐᵇ f(x)dx ≦ ∫ₐᵇ g(x)dx となること（比較の性質）など、定積分の基本的な性質。",
+  "definition_en": "The basic rules for definite integrals: constants and sums can be pulled apart, intervals can be split and added, swapping the limits changes the sign, and f(x) ≤ g(x) on [a, b] gives ∫ₐᵇ f(x) dx ≤ ∫ₐᵇ g(x) dx (comparison).",
   "latex": "\\int_a^b f(x)\\,dx = -\\int_b^a f(x)\\,dx",
   "spoken_en": "the integral from a to b of f of x dx equals negative the integral from b to a of f of x dx",
   "examples": [
@@ -43,20 +53,36 @@
       "en": "By the properties of the definite integral, ∫₀² (3x + 1) dx = 3∫₀² x dx + ∫₀² 1 dx.",
       "ja": "積分の性質より ∫₀² (3x + 1) dx = 3∫₀² x dx + ∫₀² 1 dx。",
       "register": "written"
+    },
+    {
+      "en": "Since one over x is decreasing, each rectangle sticks out above the curve, so the sum is bigger than the integral.",
+      "ja": "1/x は減少関数だから、長方形はどれも曲線より上にはみ出す。だから和は積分より大きい。",
+      "register": "spoken"
     }
   ],
   "collocations": [],
-  "pitfalls": [],
+  "pitfalls": [
+    "数IIIの「定積分と不等式」は、比較の性質を使って不等式を証明する節。OpenStax Calculus Volume 1 はこの性質を comparison properties として定積分の性質に並べる。",
+    "等号を含まない不等式は英語で strict inequality と言う。"
+  ],
   "related": [
     "definite-integral",
-    "split-the-integral",
     "integrals-of-even-and-odd-functions",
-    "inequalities-involving-integrals"
+    "riemann-sum"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 6.6（properties of definite integrals）"
     }
   ],
   "confidence": "likely",

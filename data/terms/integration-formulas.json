@@ -4,12 +4,25 @@
     "term": "積分公式",
     "reading": "せきぶんこうしき",
     "alt": [
-      "不定積分の公式"
+      "不定積分の公式",
+      "積分表"
     ]
   },
   "en": {
     "term": "integration formulas",
     "alt": [],
+    "variants": [
+      {
+        "term": "integration formulas",
+        "register": "written",
+        "note": "書き言葉はすべて OpenStax Calculus。話し言葉で 4 件（blackpenredpen 2・MIT OCW 1・NancyPi 1）、書き言葉で 37 件（すべて OpenStax Calculus）。"
+      },
+      {
+        "term": "table of integrals",
+        "register": "both",
+        "note": "公式を一覧にした表の名前。話し言葉では NancyPi が 7 件。話し言葉で 8 件（NancyPi 7・MIT OCW 1）、書き言葉で 7 件（すべて OpenStax Calculus）。"
+      }
+    ],
     "uk": null,
     "register": "written"
   },
@@ -22,15 +35,17 @@
   "level": {
     "jp": [
       "数II",
-      "数III"
+      "数III",
+      "大学"
     ],
     "us": [
       "AP Calculus AB",
-      "Calculus I"
+      "Calculus I",
+      "Calculus II"
     ]
   },
-  "definition_ja": "基本的な関数の不定積分をまとめた公式。∫xⁿ dx = xⁿ⁺¹/(n + 1) + C など。",
-  "definition_en": "The basic antiderivative rules, such as ∫ xⁿ dx = xⁿ⁺¹/(n + 1) + C for n ≠ −1.",
+  "definition_ja": "基本的な関数（べき関数・指数関数・三角関数など）の不定積分をまとめた公式。∫xⁿ dx = xⁿ⁺¹/(n + 1) + C、∫eˣ dx = eˣ + C など。一覧にした表を積分表と呼ぶ。",
+  "definition_en": "The basic antiderivative rules for power, exponential and trigonometric functions, such as ∫ xⁿ dx = xⁿ⁺¹/(n + 1) + C (n ≠ −1) and ∫ eˣ dx = eˣ + C; a list of them is a table of integrals.",
   "latex": "\\int x^n\\,dx = \\frac{x^{n+1}}{n+1} + C \\quad (n \\neq -1)",
   "spoken_en": "the integral of x to the n dx equals x to the n plus one over n plus one, plus C, for n not equal to negative one",
   "examples": [
@@ -38,24 +53,38 @@
       "en": "You'll get a sheet of basic integration formulas, but know the power rule by heart.",
       "ja": "基本的な積分公式の一覧は配るけど、べき乗の公式は覚えておいて。",
       "register": "spoken"
+    },
+    {
+      "en": "e to the x is the easy one. Its integral is itself, plus C.",
+      "ja": "eˣ は簡単。積分しても eˣ のままで、+C を付けるだけ。",
+      "register": "spoken"
     }
   ],
   "collocations": [],
   "pitfalls": [
     "∫xⁿ dx の公式は、米国では power rule（for integrals）と呼ぶ。",
-    "n = −1 のときは ln|x| + C（日本の教科書では log|x| + C）。"
+    "n = −1 のときは ln|x| + C（日本の教科書では log|x| + C）。",
+    "∫aˣ dx = aˣ/log a + C の log a（自然対数）は、米国では ln a と書く。米国の高校の教科書では log a は底 10 の常用対数を表すので、答案では ln を使う。",
+    "OpenStax Calculus Volume 2 は、積分表や計算ソフト（computer algebra system, CAS）を使う方法も扱う。"
   ],
   "related": [
     "indefinite-integral",
     "antiderivative",
-    "integral-of-the-exponential-function",
-    "integrals-of-trigonometric-functions",
-    "using-integral-tables"
+    "trigonometric-integrals",
+    "numerical-integration",
+    "partial-fraction-decomposition"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "editorial"
     }
   ],
   "confidence": "likely",
@@ -67,10 +96,12 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "integration formulas": 3
+      "integration formulas": 4,
+      "table of integrals": 8
     },
     "written": {
-      "integration formulas": 30
+      "integration formulas": 37,
+      "table of integrals": 7
     },
     "sources": [
       "mit-18.01",

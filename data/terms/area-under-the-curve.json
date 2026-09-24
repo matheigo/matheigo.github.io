@@ -7,8 +7,18 @@
   },
   "en": {
     "term": "area under the curve",
-    "alt": [
-      "area under a curve"
+    "alt": [],
+    "variants": [
+      {
+        "term": "area under the curve",
+        "register": "both",
+        "note": "最も多い言い方。話し言葉は Khan Academy が中心。話し言葉で 140 件（Khan Academy 101・MIT OCW 26・3Blue1Brown 9 ほか 4）、書き言葉で 61 件（OpenStax Calculus 43・OpenStax Introductory Statistics 11・MIT の講義ノート 7）。"
+      },
+      {
+        "term": "area under a curve",
+        "register": "both",
+        "note": "書き言葉では OpenStax Calculus がこちらも使う。話し言葉で 19 件（Khan Academy 8・3Blue1Brown 6・MIT OCW 4 ほか 1）、書き言葉で 26 件（OpenStax Calculus 24・MIT の講義ノート 2）。"
+      }
     ],
     "uk": null,
     "register": "both"
@@ -43,6 +53,11 @@
       "en": "Find the area under the curve y = x² from x = 0 to x = 1.",
       "ja": "曲線 y = x² と x 軸、直線 x = 1 で囲まれた部分の面積を求めよ。",
       "register": "written"
+    },
+    {
+      "en": "The net signed area is 0, but the total area is 4.",
+      "ja": "定積分の値は 0 だが、面積は 4 である。",
+      "register": "written"
     }
   ],
   "collocations": [
@@ -52,20 +67,22 @@
     }
   ],
   "pitfalls": [
-    "area under the curve は、曲線が x 軸より下に出る場合も含めて定積分（符号付き）の意味で使われることがある。正の面積の合計がほしいときは total area と言って区別する。"
+    "area under the curve は、曲線が x 軸より下に出る場合も含めて定積分（符号付き）の意味で使われることがある。正の面積の合計がほしいときは total area と言って区別する。",
+    "定積分の値は、x 軸より上を正、下を負として足した面積（signed area、net signed area とも）。日本の「定積分と面積」の節の内容にあたり、面積を求めるときは x 軸より下の部分の定積分に − を付けるか、区間を分けて絶対値にする。"
   ],
   "related": [
     "definite-integral",
-    "definite-integrals-and-area",
     "below-the-x-axis",
     "area-between-two-curves",
-    "riemann-sum",
-    "find-the-area-by-integration"
+    "riemann-sum"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "editorial"
     }
   ],
   "confidence": "likely",
@@ -79,11 +96,11 @@
     "spoken": {
       "area under the curve": 140,
       "area under a curve": 19,
-      "approximate the area under the curve": 4
+      "approximate the area under the curve": 5
     },
     "written": {
-      "area under the curve": 59,
       "area under a curve": 26,
+      "area under the curve": 61,
       "approximate the area under the curve": 4
     },
     "sources": [

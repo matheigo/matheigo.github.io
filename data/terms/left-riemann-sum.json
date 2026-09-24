@@ -10,17 +10,22 @@
     "alt": [],
     "variants": [
       {
+        "term": "left Riemann sum",
+        "register": "both",
+        "note": "AP の呼び方（CED topic 6.2）。話し言葉はほぼ Khan Academy。話し言葉で 16 件（Khan Academy 15・MIT OCW 1）、書き言葉で 6 件（すべて OpenStax Calculus）。"
+      },
+      {
         "term": "left-endpoint approximation",
         "register": "written",
-        "note": "教科書の書き方。書き言葉で 21 件（OpenStax Calculus Volume 1）。話し言葉には出ない。"
+        "note": "OpenStax Calculus の書き方で、話し言葉には出ない。話し言葉では 0 件、書き言葉で 21 件（すべて OpenStax Calculus）。"
       }
     ],
     "uk": null,
-    "register": "spoken"
+    "register": "both"
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "見出しの「左リーマン和」は日本の教科書に無い、本プロジェクトの訳語。",
   "domains": [
     "calculus"
   ],
@@ -46,7 +51,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の区分求積法では Σ_{k=0}^{n−1}（左端）と Σ_{k=1}^{n}（右端）を名前を付けずに使うが、米国では left ／ right ／ midpoint と名前を付けて比べる。"
+    "日本の区分求積法では Σ_{k=0}^{n−1}（左端）と Σ_{k=1}^{n}（右端）を名前を付けずに使うが、AP の CED（topic 6.2）は left ／ right ／ midpoint Riemann sums と trapezoidal sums に名前を付けて比べる。"
   ],
   "related": [
     "right-riemann-sum",
@@ -59,6 +64,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 6.2（left ／ right ／ midpoint Riemann sums）"
     }
   ],
   "confidence": "likely",
@@ -73,7 +84,7 @@
       "left Riemann sum": 16
     },
     "written": {
-      "left Riemann sum": 3,
+      "left Riemann sum": 6,
       "left-endpoint approximation": 21
     },
     "sources": [

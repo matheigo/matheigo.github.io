@@ -14,7 +14,7 @@
   "spoken_ja": "インテグラル a から b、f(x) dx ／ f(x) の a から b までの定積分",
   "name_en": "definite integral",
   "name_ja": "定積分",
-  "term_ref": null,
+  "term_ref": "definite-integral",
   "level": {
     "jp": [
       "数II",
@@ -26,7 +26,9 @@
     ]
   },
   "notes": [
-    "dx は 'd x' と2音で読む。'dee ex' と書くこともある。"
+    "dx は 'd x' と2音で読む。'dee ex' と書くこともある。",
+    "日本では「インテグラル a から b、f(x) dx」と記号を左から順に読むことが多い。英語は the integral from a to b of f of x dx と、of f of x で被積分関数を読み、最後に dx を読む。",
+    "∫₀¹ は the integral from zero to one と読む。上端・下端が文字でも数でも同じ形で読む。"
   ],
   "tts_text": "the integral from a to b of f of x, d x",
   "sources": [
@@ -36,7 +38,7 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-10",
+  "updated": "2026-09-24",
   "evidence": {
     "spoken": {
       "the integral from * to * of": 246,

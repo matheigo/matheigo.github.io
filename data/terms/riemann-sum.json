@@ -43,11 +43,17 @@
       "en": "Recognize the limit as a Riemann sum and write it as a definite integral.",
       "ja": "この極限をリーマン和とみて、定積分で表せ。",
       "register": "written"
+    },
+    {
+      "en": "Distance is velocity times time, so on a velocity graph each rectangle's area is a little piece of distance.",
+      "ja": "距離は速度 × 時間だから、速度のグラフでは長方形 1 つ 1 つの面積が距離の小さなかけらになる。",
+      "register": "spoken"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "区分求積法を piecewise quadrature などと直訳しても通じない。"
+    "区分求積法を piecewise quadrature などと直訳しても通じない。",
+    "長方形の和で近似する考え方は、曲線の下の面積だけでなく、速度のグラフから移動距離を求めるときにも使う。"
   ],
   "related": [
     "summation-notation",
@@ -57,9 +63,7 @@
     "left-riemann-sum",
     "right-riemann-sum",
     "midpoint-riemann-sum",
-    "write-as-a-limit-of-a-sum",
-    "limit-of-riemann-sums",
-    "areas-and-distances"
+    "total-distance-traveled"
   ],
   "sources": [
     {
@@ -70,6 +74,15 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 6.2（left ／ right ／ midpoint Riemann sums と trapezoidal sums）、6.3"
     }
   ],
   "confidence": "likely",
@@ -81,10 +94,10 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "Riemann sum": 127
+      "Riemann sum": 174
     },
     "written": {
-      "Riemann sum": 99
+      "Riemann sum": 137
     },
     "sources": [
       "khan-ap-calc",

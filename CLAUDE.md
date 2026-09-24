@@ -14,7 +14,9 @@
 - pnpm corpus:fetch:openstax … OpenStax 6 冊の本文（CNXML）を written コーパスとして取得（CC BY-NC-SA、コミット固定）
 - pnpm corpus:fetch:notes … MIT OCW の講義ノート（PDF → pdftotext）を written コーパス mit-notes として取得
 - pnpm corpus:count … コーパスの重複（同じファイル・同じ文）を除いて候補表現を数える → corpus/counts.json
-- pnpm corpus:decide … 頻度比で register を決め、`-- --write` で evidence と flags を書き戻す
+- pnpm corpus:probe … 書く前に候補表現を数える。`-- --decide --file x.txt` で 1 ブロック 1 エントリの判定まで出す
+- pnpm corpus:decide … 頻度比で register を決め、`-- --write` で evidence と flags を書き戻す（`--units <curriculum id,…>` で単元に絞る）
+- python3 scripts/ledger/refetch.py … 台帳の langlink と AP Calculus の CED を一括取得（キャッシュ・タイムアウト・リトライ上限つき）
 - pnpm build      … validate → search-index → サイト → dist/data の書き出しまで通す
 - pnpm export     … JSON/CSV/Quizlet TSV を dist/data に出力
 - pnpm test       … スクリプトと検索のユニットテスト
@@ -31,6 +33,7 @@
 8. 監査（audits/）は生成したセッションと別セッションで行う。自分で生成した語を自分で verified にしない。
 9. register の判断はコーパスの頻度を優先する（PLAN 15）。`evidence` は corpus:decide が書くもので、手で書かない。
    判定は 3 通り: ①3:1 以上で主見出し ②各 10 件以上なら併記（頻度順で `en.variants` へ）③10 件未満は判断不能。
+   件数の最も多いソースを抜くと判定が変わる ① は ② に下げる（1 ソース頼み）。terms は語形変化をまとめ、「…」は 1〜3 語の空き。
    **人間レビューに回るのは ③ と、コーパスの結論がエントリの register と食い違うものだけ。**
    全 2,000 語を人間が見る前提は廃止された。
 10. コーパス本文はリポジトリに入れない（`corpus/` は .gitignore）。残すのは出典 ID・件数・日付だけ。

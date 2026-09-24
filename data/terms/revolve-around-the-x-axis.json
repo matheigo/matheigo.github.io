@@ -6,12 +6,37 @@
     "alt": []
   },
   "en": {
-    "term": "revolve around the x-axis",
+    "term": "revolve … around the x-axis",
     "alt": [
+      "revolve around the x-axis",
       "rotate around the x-axis",
+      "revolve about the x-axis",
       "rotate about the x-axis"
     ],
-    "uk": null
+    "variants": [
+      {
+        "term": "revolve … around the x-axis",
+        "register": "written",
+        "note": "教科書（OpenStax Calculus）の書き方。is revolved around the x-axis のような受け身を含む。話し言葉で 9 件（MIT OCW 5・Professor Leonard 4）、書き言葉で 27 件（すべて OpenStax Calculus）。"
+      },
+      {
+        "term": "rotate … around the x-axis",
+        "register": "both",
+        "note": "話し言葉ではこちらが最も多い（Khan Academy が中心）が、revolve との差は判断できる件数に届かない。話し言葉で 24 件（Khan Academy 17・MIT OCW 4・Professor Leonard 3）、書き言葉で 15 件（すべて OpenStax Calculus）。"
+      },
+      {
+        "term": "revolve … about the x-axis",
+        "register": "written",
+        "note": "about を使う書き方。話し言葉で 1 件（すべて patrickJMT）、書き言葉で 9 件（すべて OpenStax Calculus）。"
+      },
+      {
+        "term": "rotate … about the x-axis",
+        "register": "both",
+        "note": "話し言葉で 4 件（Professor Leonard 2・MIT OCW 1・Khan Academy 1）、書き言葉で 4 件（OpenStax Calculus 3・MIT の講義ノート 1）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
   },
   "pos": "phrase",
   "mapping": "exact",
@@ -47,7 +72,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "動詞は revolve も rotate も、前置詞は around も about も使う。問題文では revolved ／ rotated と受け身で書かれることが多い。"
+    "動詞は rotate も revolve も、前置詞は around も about も使う。… の位置には it ／ this region ／ the shaded region などの目的語が入る。問題文では is revolved about the x-axis のように受け身でも書く。"
   ],
   "related": [
     "revolve-around-the-y-axis",
@@ -69,18 +94,25 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "rotate about the x-axis": 1
+      "rotate … around the x-axis": 24,
+      "revolve … around the x-axis": 9,
+      "rotate about the x-axis": 4,
+      "revolve about the x-axis": 1
+    },
+    "written": {
+      "revolve … around the x-axis": 27,
+      "rotate around the x-axis": 15,
+      "revolve … about the x-axis": 9,
+      "rotate about the x-axis": 4
     },
     "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:patrickjmt",
       "yt:profleonard"
     ],
     "counted": "2026-09-24"
-  },
-  "flags": [
-    {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
-      "raised": "2026-09-24"
-    }
-  ]
+  }
 }

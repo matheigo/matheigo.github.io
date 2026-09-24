@@ -3,11 +3,15 @@ import {
   balance,
   candidatesOf,
   cnxmlToText,
+  countEntry,
   countPattern,
   countPhrase,
+  countTerm,
   decide,
+  decideRobust,
   dedupe,
   headsOf,
+  inflections,
   mergeCandidates,
   normalize,
   sameWording,
@@ -32,6 +36,11 @@ describe("normalize", () => {
     expect(normalize("the intergral of the derivitive")).toBe("the integral of the derivative");
   });
 
+  it("rejoins a variable and its hyphenated suffix split by inline math", () => {
+    expect(normalize("the x -axis and the y -intercept")).toBe("the x-axis and the y-intercept");
+    expect(normalize("a - b")).toBe("a - b");
+  });
+
   it("folds hyphenation of the same word, but not a subscript read aloud", () => {
     expect(normalize("do a u substitution")).toBe("do a u-substitution");
     expect(normalize("the anti-derivative, the anti derivative")).toBe("the antiderivative, the antiderivative");
@@ -49,6 +58,82 @@ describe("countPhrase", () => {
 
   it("returns zero rather than a partial match", () => {
     expect(countPhrase(text, "plug in the quadratic formula")).toBe(0);
+  });
+});
+
+describe("countTerm", () => {
+  it("folds plural, third person, past and -ing of content words", () => {
+    const text = normalize("riemann sums and a riemann sum; we revolved it, she revolves it, revolving it");
+    expect(countTerm(text, "Riemann sum")).toBe(2);
+    expect(countTerm(text, "revolve")).toBe(3);
+    expect(inflections("revolve")).toEqual(expect.arrayContaining(["revolve", "revolves", "revolved", "revolving"]));
+  });
+
+  it("matches closed-class words as written", () => {
+    const text = normalize("take these antiderivatives. take the thing antiderivative");
+    expect(countTerm(text, "take the antiderivative")).toBe(0);
+    expect(countTerm(normalize("part on"), "part one")).toBe(0);
+  });
+
+  it("keeps different words apart", () => {
+    const text = normalize("integration by parts, integrate by parts, integral");
+    expect(countTerm(text, "integrate by parts")).toBe(1);
+    expect(countTerm(text, "integral")).toBe(1);
+  });
+
+  it("reads … as a blank of one to three words", () => {
+    const text = normalize(
+      "rotate it around the x-axis. rotate this region around the x-axis. rotate the shaded region here around the x-axis. rotate around the x-axis",
+    );
+    expect(countTerm(text, "rotate … around the x-axis")).toBe(2);
+    expect(countTerm(text, "rotate ... around the x-axis")).toBe(2);
+    expect(countTerm(text, "rotate around the x-axis")).toBe(1);
+  });
+
+  it("does not let a blank run past the end of a sentence", () => {
+    expect(countTerm(normalize("we rotate. around the x-axis"), "rotate … around the x-axis")).toBe(0);
+  });
+
+  it("is countPhrase for a wording with no content word to fold", () => {
+    const text = normalize("plug it in, plug in, plug into");
+    expect(countTerm(text, "plug in")).toBe(countPhrase(text, "plug in"));
+  });
+});
+
+describe("countEntry", () => {
+  const doc = (id: string, text: string, register: "spoken" | "written" = "spoken") => ({
+    id,
+    register,
+    auto: false,
+    text: normalize(text),
+  });
+
+  it("counts an occurrence once when two wordings of a group match it", () => {
+    const t = countEntry([doc("mit-18.01", "riemann sums, a riemann sum")], "terms", ["Riemann sum", "Riemann sums"], "Riemann sum");
+    expect(t.spoken).toEqual({ "Riemann sum": { "mit-18.01": 2 } });
+    expect(t.merges).toEqual([{ into: "Riemann sum", from: ["Riemann sums"] }]);
+  });
+
+  it("folds a blank with the same phrase without it", () => {
+    const t = countEntry(
+      [doc("khan-ap-calc", "rotate it around the x-axis, then rotate around the x-axis")],
+      "terms",
+      ["rotate … around the x-axis", "rotate around the x-axis"],
+      "rotate … around the x-axis",
+    );
+    expect(t.spoken["rotate … around the x-axis"]).toEqual({ "khan-ap-calc": 2 });
+  });
+
+  it("keeps the registers apart and lists the sources", () => {
+    const t = countEntry(
+      [doc("mit-18.01", "the midpoint rule"), doc("openstax-calculus", "the midpoint rule", "written")],
+      "terms",
+      ["midpoint rule"],
+      "midpoint rule",
+    );
+    expect(t.spoken["midpoint rule"]).toEqual({ "mit-18.01": 1 });
+    expect(t.written["midpoint rule"]).toEqual({ "openstax-calculus": 1 });
+    expect(t.sources).toEqual(["mit-18.01", "openstax-calculus"]);
   });
 });
 
@@ -122,6 +207,54 @@ describe("decide", () => {
   });
 });
 
+describe("decideRobust", () => {
+  const even = { a: 1, b: 1, c: 1, d: 1 };
+
+  it("keeps ① when the leader survives without its biggest source", () => {
+    const v = decideRobust({ "find an antiderivative": { a: 30, b: 30, c: 30 }, "take the antiderivative": { a: 5 } }, even, "spoken");
+    expect(v.kind).toBe("single");
+    expect(v.kind !== "undecided" && v.dependsOn).toBeUndefined();
+  });
+
+  it("sets ① side by side when one source carries the leader", () => {
+    const v = decideRobust(
+      { "take the antiderivative": { a: 81, b: 11 }, "find an antiderivative": { b: 16, c: 7 } },
+      even,
+      "spoken",
+    );
+    expect(v).toMatchObject({ kind: "both", demoted: true, heads: ["take the antiderivative", "find an antiderivative"] });
+    expect(v.kind === "both" && v.dependsOn).toMatchObject({ source: "a", hits: 81, of: 92 });
+  });
+
+  it("uses the runner-up when nothing leads without that source", () => {
+    const v = decideRobust({ "pick u": { yt: 10, b: 3 }, "choose u": { b: 2 } }, { yt: 1, b: 1 }, "spoken");
+    expect(headsOf(v)).toEqual(["pick u", "choose u"]);
+  });
+
+  it("does not set a collocation built on the leader beside it", () => {
+    const v = decideRobust({ integrand: { os: 77, b: 9 }, "the integrand is odd": { os: 2 } }, { os: 1, b: 1 }, "written");
+    expect(v.kind).toBe("single");
+    expect(v.kind === "single" && v.dependsOn?.source).toBe("os");
+  });
+
+  it("keeps a sole wording at ① and records the dependence", () => {
+    const v = decideRobust({ "common denominator": { khan: 25, b: 4 } }, { khan: 1, b: 1 }, "spoken");
+    expect(v.kind).toBe("single");
+    expect(v.kind === "single" && v.dependsOn?.source).toBe("khan");
+  });
+
+  it("leaves ② as ② and records which source leads it", () => {
+    const v = decideRobust({ "plug in": { yt: 40, b: 5 }, substitute: { b: 30 } }, { yt: 1, b: 1 }, "spoken");
+    expect(v.kind).toBe("both");
+    expect(v.kind === "both" && v.demoted).toBeFalsy();
+    expect(v.kind === "both" && v.dependsOn?.source).toBe("yt");
+  });
+
+  it("leaves ③ alone", () => {
+    expect(decideRobust({ x: { a: 3 } }, { a: 1 }, "spoken").kind).toBe("undecided");
+  });
+});
+
 describe("balance", () => {
   it("flags a channel that dominates the corpus", () => {
     const docs: CorpusDoc[] = [
@@ -160,6 +293,15 @@ describe("sameWording", () => {
     expect(sameWording("integrate", "integration")).toBe(false);
     expect(sameWording("integral", "integration")).toBe(false);
     expect(sameWording("substitute", "plug in")).toBe(false);
+  });
+
+  it("ignores punctuation after a word", () => {
+    expect(sameWording("fundamental theorem of calculus, part 1", "fundamental theorem of calculus part 1")).toBe(true);
+  });
+
+  it("reads a blank as argument ellipsis", () => {
+    expect(sameWording("revolve … around the x-axis", "revolve around the x-axis")).toBe(true);
+    expect(sameWording("revolve … around the x-axis", "rotate … around the x-axis")).toBe(false);
   });
 
   it("does not swallow a phrase that adds meaning", () => {
@@ -234,6 +376,10 @@ describe("cnxmlToText", () => {
     const text = cnxmlToText(xml);
     expect(text).toBe("Subtracting 3 from both sides gives x = 2 .");
     expect(countPhrase(normalize(text), "from both sides")).toBe(1);
+  });
+
+  it("keeps a variable glued to its hyphenated suffix", () => {
+    expect(cnxmlToText(para("the <m:math><m:mi>x</m:mi></m:math>-axis"))).toBe("the x-axis");
   });
 
   it("drops metadata ids and decodes entities", () => {

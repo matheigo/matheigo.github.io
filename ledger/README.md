@@ -12,7 +12,13 @@
    `python3 scripts/ledger/fetch_mext.py`（学習指導要領の本文 → `scripts/ledger/mext/`、gitignore）と
    `python3 scripts/ledger/wikien.py`（`title:` 行の英語照合に使う langlink とリダイレクト先、曖昧さ回避ページのリンク先 → `wiki_en.json`）
 
+   `python3 scripts/ledger/refetch.py langlinks`（台帳の wiki_ja すべての en langlink を取り直す → `langlinks.json`。手順 7 が使う）
+
 2 以降に CSV を手で直した場合は、`fix_phase1.py` を回し直すと上書きされる。直した内容は `fix_decisions.py` に足す。
+
+`fix_phase1.py` の手順 7・8 は Phase 2 修正（DECISIONS 2026-09-24）: 7 は取り直した langlink で空の wiki_en を埋め、
+wikidata だけだった行を wikipedia-langlink にする。8 は積分の単元の 1 概念 1 エントリ（`fix_decisions.py` の
+`PHASE2_SAME` 同じ概念 ／ `PHASE2_SECTION` 教科書の節の名前 ／ `PHASE2_TO_SYMBOLS` ／ `PHASE2_TO_PHRASES` 授業の言い回し）。
 
 ## 列
 
@@ -46,6 +52,7 @@
 | ファイル | 内容 |
 |---|---|
 | `out-of-scope.csv` | 台帳から外した語と理由（小学校範囲、数学用語でないもの） |
-| `id-changes.csv` | Phase 1 からの id の変化（`merged` / `renamed` / `out-of-scope`） |
+| `id-changes.csv` | Phase 1 からの id の変化（`merged` / `renamed` / `out-of-scope`）。Phase 2 修正で消した id は `merged-into`（new_id は寄せた先。symbols に移したものは `symbols/<id>`）か `to-phrases` |
+| `phrases-candidates.csv` | terms から外した授業での言い回し（Phase 3 の phrases 候補）。`from` は Phase 2 で生成した本文の場所（git のコミットとパス） |
 | `mext-yougo.csv` | 学習指導要領（中学 平成29年告示・高校 平成30年告示）の〔用語・記号〕一覧。網羅率の分母 |
 | `phase1-report.md` | Phase 1 時点の単元別件数と、対応が怪しい語 30。修正後の数字は `audits/phase1-fix-report.md` |

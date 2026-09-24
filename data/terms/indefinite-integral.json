@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の数IIの教科書には「不定積分」と「原始関数」を同じ意味で定義するものがある。米国の教科書では、微分すると f になる関数 1 つは antiderivative、+C を付けた全体（∫f(x)dx が表すもの）は indefinite integral と呼び分ける。「不定積分を求めよ」は Find the indefinite integral ／ Evaluate ∫ f(x) dx と書かれ、授業では find the antiderivative と言うことも多い。",
+  "mapping_note": "日本の数IIで「不定積分」と「原始関数」を同じ意味で使うかは教科書による。OpenStax Calculus Volume 1 は、微分すると f になる関数 1 つを antiderivative、+C を付けた全体（∫f(x)dx が表すもの。the most general antiderivative とも）を indefinite integral と呼び分ける。「不定積分を求めよ」は Find the indefinite integral ／ Evaluate ∫ f(x) dx と書かれ、授業では find the antiderivative と言うことも多い。",
   "domains": [
     "calculus"
   ],
@@ -50,18 +50,16 @@
     }
   ],
   "pitfalls": [
-    "米国の教科書の解答例は + C を付けるだけのことが多く、「ただし C は積分定数」に当たる一文はあまり書かない。書くなら where C is a constant。",
+    "「ただし C は積分定数」に当たる一文は、英語で書くなら where C is a constant。",
     "∫(1/x)dx は日本では log|x| + C と書くが、米国の教科書では ln|x| + C と書く。米国の高校では log x を底 10 の常用対数と読むので、答案では ln を使う。"
   ],
   "related": [
     "antiderivative",
     "constant-of-integration",
-    "plus-c",
     "definite-integral",
     "integrate",
     "integration-formulas",
-    "evaluate-the-integral",
-    "antiderivatives"
+    "evaluate-the-integral"
   ],
   "sources": [
     {
@@ -72,6 +70,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 6.8（antiderivatives と indefinite integrals）"
     }
   ],
   "confidence": "likely",
@@ -83,11 +87,11 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "indefinite integral": 96,
+      "indefinite integral": 114,
       "find the indefinite integral": 3
     },
     "written": {
-      "indefinite integral": 38,
+      "indefinite integral": 64,
       "find the indefinite integral": 2
     },
     "sources": [
@@ -100,6 +104,7 @@
       "openstax-calculus",
       "yt:nancypi",
       "yt:organicchem",
+      "yt:patrickjmt",
       "yt:profleonard"
     ],
     "counted": "2026-09-24"

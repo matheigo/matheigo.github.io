@@ -61,6 +61,9 @@ function checkRef(where: string, field: string, id: unknown, target: Collection)
 
 const sourcesOf = (d: Entry) => (Array.isArray(d.sources) ? d.sources : []);
 
+/** The phrase mapping_note uses for a Japanese headword not found in Japanese textbooks. */
+const PROJECT_TRANSLATION = "本プロジェクトの訳語";
+
 // ------------------------------------------------------------ per-entry ----
 
 for (const collection of COLLECTIONS) {
@@ -117,7 +120,10 @@ for (const collection of COLLECTIONS) {
       if (mapping !== "exact" && !note) {
         err(where, `mapping "${mapping}" requires mapping_note (PLAN 5.1)`);
       }
-      if (mapping === "exact" && note) {
+      // An exact entry may still say that its Japanese headword is this
+      // project's translation (DECISIONS, Phase 2 修正 5); anything else in
+      // the note of an exact entry is probably a leftover.
+      if (mapping === "exact" && note && !String(note).includes(PROJECT_TRANSLATION)) {
         warn(where, "mapping is exact but mapping_note is set");
       }
 

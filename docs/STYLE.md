@@ -80,3 +80,9 @@ Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を�
 - 「〜とおく」は let。"Let u = 2x" が答案でも口頭でも標準。
 - 凹凸は concave up / concave down。「上に凸」を convex upward と直訳しても通じにくい。
 - 答案に日本式の増減表を書いても減点はまずされない。ただし f′(x) / f(x) の行が何で、矢印が increasing / decreasing を表すことを一言添える。
+- 1 概念 1 エントリ。教科書の節の名前（定積分と面積、速度と位置…）は見出しに立てず、中身の用語のエントリに書く。授業や問題文の一文（don't forget the plus C、top minus bottom…）は terms に入れず phrases の候補（`ledger/phrases-candidates.csv`）にする。品詞が違う語（積分 ／ 積分する）は別エントリ。
+- 目的語が間に入る動詞句は見出しに「…」を入れる（revolve … around the x-axis）。コーパスでは「…」を 1〜3 語の空きとして数える。空きなしの形（revolve around the x-axis、受け身の is revolved around …）も en.alt に並べると同じ言い方として 1 回だけ数える。
+- terms の件数は語形変化（複数形・三単現・過去形・-ing）をまとめて数える。Riemann sums のような変化形を en.alt に別に入れなくてよい。
+- 1 つのソースに頼った判定は ② に下がる（`corpus:decide` のレポートの「1 ソース頼み」）。variants の note に、どのソースがどの言い方を使うかを書く（例: take the antiderivative は Khan Academy、find an antiderivative は MIT OCW）。
+- AP Calculus での呼び方・範囲は College Board の CED（2020 年版）で確かめる。出典は type: reference、note に topic 番号。本文は写さない。確かめられない「米国では〜」は書かないか「教科書による」とする。
+- 日本の教科書に無い日本語見出しは、mapping_note に「見出しの「X」は日本の教科書に無い、本プロジェクトの訳語。」と書く（mapping が exact でも）。

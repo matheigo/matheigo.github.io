@@ -3,7 +3,9 @@
   "ja": {
     "term": "三角関数の積の積分",
     "reading": "さんかくかんすうのせきのせきぶん",
-    "alt": []
+    "alt": [
+      "三角関数の積分"
+    ]
   },
   "en": {
     "term": "trigonometric integrals",
@@ -11,12 +13,17 @@
     "variants": [
       {
         "term": "trig integrals",
-        "register": "spoken",
-        "note": "話し言葉で 16 件（MIT OCW 10・YouTube 6）と、trigonometric integrals（4 件）より多い。"
+        "register": "both",
+        "note": "略した言い方。話し言葉で最も多い（MIT OCW が中心）。話し言葉で 36 件（MIT OCW 24・NancyPi 7・patrickJMT 4 ほか 1）、書き言葉で 2 件（すべて MIT の講義ノート）。"
+      },
+      {
+        "term": "trigonometric integrals",
+        "register": "both",
+        "note": "節の名前（OpenStax Calculus Volume 2）。話し言葉で 7 件（Professor Leonard 3・patrickJMT 3・MIT OCW 1）、書き言葉で 16 件（OpenStax Calculus 11・MIT の講義ノート 5）。"
       }
     ],
     "uk": null,
-    "register": "written"
+    "register": "both"
   },
   "pos": "noun",
   "mapping": "exact",
@@ -30,14 +37,21 @@
       "数III"
     ],
     "us": [
+      "AP Calculus AB",
+      "Calculus I",
       "Calculus II"
     ]
   },
-  "definition_ja": "sin³x cos²x や sin 3x cos 2x のような、三角関数の積やべきの積分。積和の公式や半角の公式で次数を下げて計算する。",
-  "definition_en": "Integrals of products and powers of trigonometric functions, such as sin³x cos²x, handled with product-to-sum and power-reducing identities.",
+  "definition_ja": "三角関数の不定積分・定積分。基本は ∫sin x dx = −cos x + C、∫cos x dx = sin x + C で、sin³x cos²x や sin 3x cos 2x のような積・べきは、積和の公式や次数を下げる公式を使って計算する。",
+  "definition_en": "Integrals of trigonometric functions: the basic ∫ sin x dx = −cos x + C and ∫ cos x dx = sin x + C, and products and powers such as sin³x cos²x, handled with product-to-sum and power-reducing identities.",
   "latex": "\\int \\sin^2 x\\,dx = \\frac{x}{2} - \\frac{\\sin 2x}{4} + C",
   "spoken_en": "the integral of sine squared x dx equals x over two minus sine two x over four, plus C",
   "examples": [
+    {
+      "en": "The integral of sine is negative cosine, so watch that sign.",
+      "ja": "sin の積分は −cos。符号に気をつけて。",
+      "register": "spoken"
+    },
     {
       "en": "With an odd power of sine, save one sine for du and turn the rest into cosines.",
       "ja": "sin の奇数乗なら、sin を 1 つ du 用に残して、残りを cos に直す。",
@@ -46,17 +60,27 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "積和の公式は product-to-sum formulas、半角の公式（次数を下げる形）は power-reducing formulas と言う。",
-    "米国の教科書では、この名前は三角関数の積・べきの積分という特定の単元を指す。sin x の積分のような基本の積分は含めないことが多い。"
+    "日本では ∫(1/cos²x)dx = tan x + C と書くが、米国では sec²x（secant squared x）を使って ∫sec²x dx = tan x + C と書く。",
+    "積和の公式は product-to-sum formulas、次数を下げる公式は power-reducing formulas（half-angle formulas とも）と言う。",
+    "OpenStax Calculus Volume 2 の節 Trigonometric Integrals は三角関数の積・べきの積分を扱い、sin x の積分のような基本の積分は Volume 1 で扱う。"
   ],
   "related": [
-    "integrals-of-trigonometric-functions",
-    "trigonometric-substitution"
+    "trigonometric-substitution",
+    "integration-formulas",
+    "integration-by-substitution",
+    "integrals-giving-inverse-trig-functions"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "editorial"
     }
   ],
   "confidence": "likely",
@@ -68,11 +92,11 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "trigonometric integrals": 4,
-      "trig integrals": 16
+      "trig integrals": 36,
+      "trigonometric integrals": 7
     },
     "written": {
-      "trigonometric integrals": 12,
+      "trigonometric integrals": 16,
       "trig integrals": 2
     },
     "sources": [

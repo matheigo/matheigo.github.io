@@ -5,27 +5,29 @@
     "reading": "ちかんせきぶんほう",
     "alt": [
       "置換積分",
-      "u 置換"
+      "u 置換",
+      "置換法則"
     ]
   },
   "en": {
     "term": "u-substitution",
     "alt": [
-      "u-sub"
+      "u-sub",
+      "substitution rule"
     ],
     "variants": [
       {
         "term": "integration by substitution",
         "register": "written",
-        "note": "正式な名前。コーパスでは少ない（書き言葉 6 件・話し言葉 2 件）。"
+        "note": "正式な名前。コーパスでは少ない。話し言葉で 2 件（すべて MIT OCW）、書き言葉で 6 件（OpenStax Calculus 5・MIT の講義ノート 1）。"
       }
     ],
     "uk": null,
-    "register": "spoken"
+    "register": "both"
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の置換積分法は、g(x) = t とおく形と x = g(t) とおく形の両方を含む。米国の u-substitution は u = g(x) とおく形が中心で、x = a sin θ のように x を置き換える形は trigonometric substitution として別の名前で教える。教科書の節の名前や答案では単に substitution（教科書によっては the substitution rule）とも書く。",
+  "mapping_note": "日本の置換積分法は、g(x) = t とおく形と x = g(t) とおく形の両方を含む。米国の u-substitution は u = g(x) とおく形が中心で、x = a sin θ のように x を置き換える形は trigonometric substitution として別の名前で教える。教科書の節の名前や答案では単に substitution（教科書によっては the substitution rule）とも書く。ja.alt の「置換法則」は日本の教科書に無い、本プロジェクトの訳語（英語 substitution rule の訳）。",
   "domains": [
     "calculus"
   ],
@@ -52,14 +54,14 @@
       "en": "With the substitution u = x² + 1, du = 2x dx, the integral becomes ∫ u⁵ du.",
       "ja": "u = x² + 1 と置換すると du = 2x dx で、積分は ∫ u⁵ du になる。",
       "register": "written"
-    }
-  ],
-  "collocations": [
+    },
     {
-      "en": "use u-substitution",
-      "ja": "置換積分を使う"
+      "en": "The substitution rule is really just the chain rule run backwards.",
+      "ja": "置換法則は、要するに連鎖律を逆に使っているだけ。",
+      "register": "spoken"
     }
   ],
+  "collocations": [],
   "pitfalls": [
     "日本の教科書は新しい変数に t を使うことが多いが、米国ではほぼ u を使う（名前も u-substitution）。",
     "口頭では u-sub と略すこともある。",
@@ -69,12 +71,10 @@
     "substitution-in-a-definite-integral",
     "integration-by-parts",
     "antiderivative",
-    "integral-involving-radicals",
+    "trigonometric-substitution",
     "let-u-equal",
     "write-dx-in-terms-of-du",
-    "change-the-limits-of-integration",
-    "substitution-rule",
-    "trigonometric-substitution"
+    "change-the-limits-of-integration"
   ],
   "sources": [
     {
@@ -85,6 +85,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 6.9（substitution による積分）。Unit 6 の概要では u-substitution"
     }
   ],
   "confidence": "likely",
@@ -96,18 +102,21 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "u-substitution": 122,
-      "u-sub": 2,
       "integration by substitution": 2,
-      "use u-substitution": 15
+      "u-substitution": 122,
+      "substitution rule": 6,
+      "u-sub": 2
     },
     "written": {
+      "u-substitution": 25,
+      "substitution rule": 2,
       "integration by substitution": 6
     },
     "sources": [
       "khan-ap-calc",
       "mit-18.01",
       "mit-18.02",
+      "mit-18.03",
       "mit-notes",
       "openstax-calculus",
       "yt:3blue1brown",

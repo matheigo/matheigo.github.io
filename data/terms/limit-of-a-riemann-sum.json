@@ -1,13 +1,17 @@
 {
   "id": "limit-of-a-riemann-sum",
   "ja": {
-    "term": "定積分と和の極限",
-    "reading": "ていせきぶんとわのきょくげん",
-    "alt": []
+    "term": "リーマン和の極限",
+    "reading": "りーまんわのきょくげん",
+    "alt": [
+      "定積分と和の極限"
+    ]
   },
   "en": {
     "term": "limit of a Riemann sum",
-    "alt": [],
+    "alt": [
+      "limit of Riemann sums"
+    ],
     "uk": null
   },
   "pos": "noun",
@@ -18,15 +22,16 @@
   ],
   "level": {
     "jp": [
-      "数III"
+      "数III",
+      "大学"
     ],
     "us": [
       "AP Calculus AB",
       "Calculus I"
     ]
   },
-  "definition_ja": "長方形の面積の和で n → ∞ としたときの極限。これが定積分に等しい。",
-  "definition_en": "The value a Riemann sum approaches as the number of rectangles goes to infinity; it equals the definite integral.",
+  "definition_ja": "リーマン和で、区間の分け方を細かくしていった（n → ∞、小区間の幅 → 0）ときの極限。これを定積分の定義とする。",
+  "definition_en": "The value a Riemann sum approaches as the partition is refined (n → ∞, subinterval widths → 0); this limit is taken as the definition of the definite integral.",
   "latex": "\\int_a^b f(x)\\,dx = \\lim_{n \\to \\infty} \\sum_{i=1}^{n} f(x_i)\\,\\Delta x",
   "spoken_en": "the integral from a to b of f of x dx equals the limit as n goes to infinity of the sum from i equals one to n of f of x sub i delta x",
   "examples": [
@@ -34,19 +39,23 @@
       "en": "The definite integral is defined as the limit of a Riemann sum as n goes to infinity.",
       "ja": "定積分は、n を無限大にしたときのリーマン和の極限として定義される。",
       "register": "spoken"
+    },
+    {
+      "en": "The definite integral is defined as a limit of Riemann sums, and the sample points can be anywhere in each subinterval.",
+      "ja": "定積分はリーマン和の極限として定義され、代表点は各小区間のどこにとってもよい。",
+      "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "Δx は delta x、xᵢ は x sub i と読む。"
+    "Δx は delta x、xᵢ は x sub i、xᵢ* は x sub i star と読む。",
+    "日本の区分求積法は区間を n 等分して端点をとる形がほとんどだが、OpenStax Calculus Volume 1 の定義では幅の違う分け方や任意の代表点（sample point, xᵢ*）も許す。"
   ],
   "related": [
     "riemann-sum",
     "definite-integral",
     "summation-notation",
-    "write-as-a-limit-of-a-sum",
-    "as-n-approaches-infinity",
-    "limit-of-riemann-sums"
+    "as-n-approaches-infinity"
   ],
   "sources": [
     {
@@ -55,6 +64,16 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 6.3（limit of a Riemann sum と定積分の記法）"
     }
   ],
   "confidence": "likely",
@@ -69,6 +88,7 @@
       "limit of a Riemann sum": 1
     },
     "written": {
+      "limit of Riemann sums": 4,
       "limit of a Riemann sum": 1
     },
     "sources": [
@@ -80,7 +100,7 @@
   "flags": [
     {
       "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。人間レビューへ。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。人間レビューへ。",
       "raised": "2026-09-24"
     }
   ]

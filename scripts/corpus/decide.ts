@@ -4,6 +4,11 @@
  *
  *   pnpm corpus:decide                report only
  *   pnpm corpus:decide -- --write     write evidence + flags into data/
+ *   pnpm corpus:decide -- --write --units jp-suugaku-3-sekibun,us-calculus-1-integration
+ *                                     write only the terms of those curriculum
+ *                                     units (their term_refs); --ids symbols/x,terms/y
+ *                                     adds entries by collection/id. The report
+ *                                     still covers every entry.
  *
  * Three outcomes per register (see lib.ts): a single headword at 3:1 or
  * better, two or more wordings recorded side by side when none leads but each
@@ -11,6 +16,9 @@
  *
  * Ratios use WEIGHTED counts - each source is evened out to at most
  * max(25%, 1/n) of the corpus, so one lecturer cannot set the headword.
+ * On top of that, a leader that loses its verdict when its biggest source is
+ * taken out is set side by side with the rest (② instead of ①; lib.ts
+ * decideRobust), and the report says which source it rested on.
  * `evidence` stores the raw counts, because those are the facts; the
  * weighting is a reading of them.
  *
@@ -26,18 +34,23 @@ import path from "node:path";
 import { ROOT, loadAll, type Collection } from "../lib/load.js";
 import {
   countedAs,
-  decide,
+  decideRobust,
   flatten,
   headsOf,
   sameWording,
   sourceWeights,
-  weigh,
   type Register,
   type Verdict,
 } from "./lib.js";
 import type { CountsFile, EntryCounts } from "./count.js";
 
 const WRITE = process.argv.includes("--write");
+const argAfter = (flag: string) => {
+  const i = process.argv.indexOf(flag);
+  return i >= 0 ? (process.argv[i + 1] ?? "").split(",").filter(Boolean) : [];
+};
+const UNITS = argAfter("--units");
+const IDS = argAfter("--ids");
 const TODAY = new Date().toISOString().slice(0, 10);
 const CORPUS = path.join(ROOT, "corpus");
 const COUNTED: Collection[] = ["terms", "symbols", "phrases"];
@@ -45,11 +58,16 @@ const COUNTED: Collection[] = ["terms", "symbols", "phrases"];
 /** null: the register is out of scope for the entry (symbols, written). */
 function describe(v: Verdict | null): string {
   if (v === null) return "対象外";
+  const rest = (d: NonNullable<Extract<Verdict, { kind: "single" }>["dependsOn"]>) =>
+    `（首位の ${d.of} 件中 ${d.hits} 件が ${d.source}。抜くと ${describe(d.without)}）`;
   if (v.kind === "single") {
-    return `${v.head}（${v.ratio === Infinity ? "唯一" : `${v.ratio.toFixed(1)}:1`}）`;
+    const base = `${v.head}（${v.ratio === Infinity ? "唯一" : `${v.ratio.toFixed(1)}:1`}）`;
+    return v.dependsOn ? `${base} ${rest(v.dependsOn)}` : base;
   }
   if (v.kind === "both") {
-    return v.heads.map((h, i) => `${h} ${Math.round(v.counts[i])}`).join(" ／ ");
+    const base = v.heads.map((h, i) => `${h} ${Math.round(v.counts[i])}`).join(" ／ ");
+    const mark = v.demoted ? "①→② " : "";
+    return v.dependsOn ? `${mark}${base} ${rest(v.dependsOn)}` : base;
   }
   return v.reason === "too-few"
     ? `判断不能: 重み付け後 ${v.total.toFixed(0)} 件（10 未満）`
@@ -95,6 +113,7 @@ function recordedAt(collection: Collection, data: Record<string, unknown>, regis
 
 interface Line {
   key: string;
+  wroteBack: boolean;
   spoken: Verdict;
   written: Verdict | null;
   merges: { into: string; from: string[] }[];
@@ -117,6 +136,17 @@ function main() {
 
   const lines: Line[] = [];
 
+  // Which entries --write may touch. No --units / --ids: all of them.
+  const scope = new Set<string>(IDS);
+  for (const unit of UNITS) {
+    const file = path.join(ROOT, "data", "curriculum", `${unit}.json`);
+    if (!fs.existsSync(file)) throw new Error(`--units: no curriculum file ${unit}`);
+    for (const id of (JSON.parse(fs.readFileSync(file, "utf8")) as { term_refs: string[] }).term_refs) {
+      scope.add(`terms/${id}`);
+    }
+  }
+  const inScope = (key: string) => scope.size === 0 || scope.has(key);
+
   // count.ts only lists entries with at least one hit. An entry with none has
   // still been counted - zero is fewer than MIN_TOTAL - so it is judged too,
   // as undecided, rather than skipped past the human review.
@@ -134,8 +164,8 @@ function main() {
     };
     const record = entry.data as unknown as Record<string, unknown>;
 
-    const spoken = decide(weigh(c.spoken, weights), "spoken");
-    const written = c.collection === "symbols" ? null : decide(weigh(c.written, weights), "written");
+    const spoken = decideRobust(c.spoken, weights, "spoken");
+    const written = c.collection === "symbols" ? null : decideRobust(c.written, weights, "written");
 
     // Contradiction: the corpus settled on a wording the entry does not file
     // at that register. Merging already folded inflection and ellipsis away,
@@ -156,9 +186,10 @@ function main() {
     }
     const mismatch = problems.length ? problems.join(" ／ ") : null;
 
-    lines.push({ key, spoken, written, merges: c.merges, mismatch });
+    const writeBack = WRITE && inScope(key);
+    lines.push({ key, wroteBack: writeBack, spoken, written, merges: c.merges, mismatch });
 
-    if (!WRITE) continue;
+    if (!writeBack) continue;
 
     record.evidence = {
       ...(Object.keys(c.spoken).length ? { spoken: flatten(c.spoken) } : {}),
@@ -204,6 +235,9 @@ function main() {
   const undecided = lines.filter((l) => l.spoken.kind === "undecided" && (l.written === null || l.written.kind === "undecided"));
   const mismatched = lines.filter((l) => l.mismatch);
   const merges = lines.filter((l) => l.merges.length);
+  const leans = (v: Verdict | null) => v !== null && v.kind !== "undecided" && v.dependsOn !== undefined;
+  const oneSource = lines.filter((l) => leans(l.spoken) || leans(l.written));
+  const writtenBack = lines.filter((l) => l.wroteBack);
 
   const totalWords = Object.values(file.sources).reduce((a, b) => a + b, 0) || 1;
   const weightRows = Object.entries(file.sources)
@@ -218,6 +252,12 @@ function main() {
     `# コーパス集計 ${TODAY}`,
     "",
     `対象 ${lines.length} 件。主見出し決着 ${single.length} ／ 併記 ${both.length} ／ 判断不能 ${undecided.length} ／ register 不一致 ${mismatched.length}。`,
+    "",
+    scope.size
+      ? `data/ に書き戻したのは ${writtenBack.length} 件（${[...UNITS, ...IDS].join("、")}）。ほかは判定を表示しただけで、evidence と flags は前回のまま。`
+      : WRITE
+        ? "全件を data/ に書き戻した。"
+        : "書き戻していない（--write なし）。",
     "",
     "## ソースの重み",
     "",
@@ -239,6 +279,14 @@ function main() {
     "",
     both.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
     ...both.map((l) => `| ${l.key} | ${describe(l.spoken)} | ${describe(l.written)} |`),
+    "",
+    "## 1 ソース頼み（首位の件数が最も多いソースを抜くと判定が変わる）",
+    "",
+    "①→② は ① を ② 併記に下げたもの。② はそのまま、どのソースに頼っているかだけ記録する。",
+    "唯一の言い方（併記する相手がない）は ① のまま記録だけする。",
+    "",
+    oneSource.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
+    ...oneSource.map((l) => `| ${l.key} | ${leans(l.spoken) ? describe(l.spoken) : "—"} | ${leans(l.written) ? describe(l.written) : "—"} |`),
     "",
     "## 統合済み（語形変化・引数省略として見出し語に合算）",
     "",
@@ -280,8 +328,9 @@ function main() {
       .join(", ")}`,
   );
   console.log(
-    `single ${single.length}, both ${both.length}, undecided ${undecided.length}, mismatch ${mismatched.length}, merges ${merges.length}`,
+    `single ${single.length}, both ${both.length}, undecided ${undecided.length}, mismatch ${mismatched.length}, merges ${merges.length}, one-source ${oneSource.length}`,
   );
+  if (WRITE) console.log(`wrote ${writtenBack.length} entr${writtenBack.length === 1 ? "y" : "ies"} back to data/`);
   console.log(`report -> audits/corpus-${TODAY}.md`);
   if (!WRITE) console.log("run with --write to record evidence and flags in data/");
 }

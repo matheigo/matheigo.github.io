@@ -14,13 +14,13 @@
     "variants": [
       {
         "term": "summation notation",
-        "register": "written",
-        "note": "書き言葉で 35 件（OpenStax Algebra and Trigonometry が 31 件）と、sigma notation（23 件）より多い。話し言葉では 10 件。"
+        "register": "both",
+        "note": "書き言葉で最も多いが、ほぼ OpenStax Algebra and Trigonometry。AP の CED もこの言い方（topic 6.3）。話し言葉で 10 件（MIT OCW 9・patrickJMT 1）、書き言葉で 35 件（OpenStax Algebra and Trigonometry 31・OpenStax Calculus 2・MIT の講義ノート 2）。"
       },
       {
         "term": "sigma notation",
         "register": "both",
-        "note": "話し言葉で 43 件（Khan Academy 31 件）と summation notation の 4 倍。書き言葉でも 23 件。"
+        "note": "話し言葉で最も多く（Khan Academy が中心）、書き言葉では OpenStax Calculus が使う。話し言葉で 43 件（Khan Academy 31・MIT OCW 8・blackpenredpen 2 ほか 2）、書き言葉で 23 件（OpenStax Calculus 21・OpenStax Algebra and Trigonometry 1・MIT の講義ノート 1）。"
       }
     ],
     "uk": null,
@@ -67,7 +67,7 @@
     }
   ],
   "pitfalls": [
-    "日本の教科書は添字に k を使うことが多いが（Σ_{k=1}^{n}）、米国の微積分の教科書では i が多い。この i は虚数単位ではない。",
+    "日本の数Bの教科書は Σ_{k=1}^{n} のように添字に k を使うことが多い。OpenStax Calculus Volume 1 のリーマン和・定積分の節では i を使う（k・j より多い）。この i は虚数単位ではない。",
     "Σ は sigma と読み、式全体は the sum from i equals one to n of … と読む。"
   ],
   "related": [
@@ -83,6 +83,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 6.3（summation notation。sigma notation の語は使わない）"
     }
   ],
   "confidence": "likely",

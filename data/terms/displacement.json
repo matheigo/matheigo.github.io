@@ -26,8 +26,8 @@
       "Calculus I"
     ]
   },
-  "definition_ja": "動く点の、始めの位置から終わりの位置までの位置の変化。速度の定積分 ∫ₐᵇ v(t)dt で求まる。",
-  "definition_en": "The change in position of a moving object, final minus initial, given by ∫ₐᵇ v(t) dt.",
+  "definition_ja": "動く点の、始めの位置から終わりの位置までの位置の変化。速度の定積分 ∫ₐᵇ v(t)dt で求まり、終わりの位置は x(b) = x(a) + ∫ₐᵇ v(t)dt。",
+  "definition_en": "The change in position of a moving object, final minus initial, given by ∫ₐᵇ v(t) dt; the final position is x(b) = x(a) + ∫ₐᵇ v(t) dt.",
   "latex": "\\int_a^b v(t)\\,dt",
   "spoken_en": "the integral from a to b of v of t dt",
   "examples": [
@@ -35,22 +35,38 @@
       "en": "Displacement can be negative. It just means you ended up to the left of where you started.",
       "ja": "変位は負にもなる。出発点より左で止まったというだけ。",
       "register": "spoken"
+    },
+    {
+      "en": "If you know where the particle starts, integrating the velocity tells you where it ends up.",
+      "ja": "点が最初どこにあるか分かっていれば、速度を積分すると最後にどこにいるかが分かる。",
+      "register": "spoken"
     }
   ],
   "collocations": [],
   "pitfalls": [
     "数IIIでは「位置の変化量」と言い、変位は物理の用語。",
-    "実際に動いた道のりは total distance traveled で、速度の絶対値を積分する。"
+    "実際に動いた道のりは total distance traveled で、速度の絶対値を積分する。",
+    "米国の教科書では、数直線上を動く点を a particle moving along a line と言い、位置を s(t) や x(t)、速度を v(t) と書く。",
+    "velocity は向き（符号）を含み、speed はその絶対値。"
   ],
   "related": [
     "total-distance-traveled",
-    "velocity-and-position",
-    "net-change"
+    "net-change",
+    "definite-integral"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 8.2（位置・速度・加速度と積分。displacement と total distance）"
     }
   ],
   "confidence": "likely",
@@ -62,7 +78,7 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "displacement": 67
+      "displacement": 68
     },
     "written": {
       "displacement": 96

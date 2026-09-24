@@ -11,17 +11,16 @@
     "variants": [
       {
         "term": "underestimate",
-        "register": "spoken",
-        "note": "話し言葉で 41 件（Khan Academy 39）。"
+        "register": "both",
+        "note": "話し言葉は Khan Academy が中心。話し言葉で 58 件（Khan Academy 53・MIT OCW 5）、書き言葉で 17 件（OpenStax Calculus 14・OpenStax Introductory Statistics 2・MIT の講義ノート 1）。"
       },
       {
         "term": "overestimate",
-        "register": "spoken",
-        "note": "話し言葉で 30 件（Khan Academy 24）。"
+        "register": "both",
+        "note": "話し言葉は Khan Academy が中心。話し言葉で 44 件（Khan Academy 33・MIT OCW 9・Professor Leonard 2）、書き言葉で 11 件（OpenStax Calculus 10・OpenStax Introductory Statistics 1）。"
       }
     ],
-    "uk": null,
-    "register": "spoken"
+    "uk": null
   },
   "pos": "noun",
   "mapping": "exact",
@@ -72,17 +71,18 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "underestimate": 41,
-      "overestimate": 30
+      "underestimate": 58,
+      "overestimate": 44
     },
     "written": {
-      "underestimate": 11,
-      "overestimate": 7
+      "underestimate": 17,
+      "overestimate": 11
     },
     "sources": [
       "khan-ap-calc",
       "khan-ap-stats",
       "mit-18.03",
+      "mit-notes",
       "openstax-calculus",
       "openstax-introstats",
       "yt:profleonard"

@@ -3,21 +3,30 @@
   "ja": {
     "term": "部分分数分解",
     "reading": "ぶぶんぶんすうぶんかい",
-    "alt": []
+    "alt": [
+      "部分分数による積分"
+    ]
   },
   "en": {
     "term": "partial fraction decomposition",
-    "alt": [],
+    "alt": [
+      "integration by partial fractions"
+    ],
     "variants": [
       {
         "term": "partial fractions",
         "register": "both",
-        "note": "話し言葉で 45 件と partial fraction decomposition（38 件）より多く、do partial fractions のように手法の名前として使う。書き言葉でも 42 件。"
+        "note": "do partial fractions のように手法の名前として使い、話し言葉でも書き言葉でも最も多い。話し言葉で 111 件（MIT OCW 73・Khan Academy 20・blackpenredpen 10 ほか 8）、書き言葉で 102 件（OpenStax Algebra and Trigonometry 47・OpenStax Calculus 38・MIT の講義ノート 17）。"
       },
       {
         "term": "partial fraction decomposition",
         "register": "both",
-        "note": "書き言葉で 52 件と最も多い。話し言葉でも 38 件。"
+        "note": "話し言葉で 42 件（MIT OCW 28・Khan Academy 10・patrickJMT 2 ほか 2）、書き言葉で 53 件（OpenStax Algebra and Trigonometry 30・OpenStax Calculus 22・MIT の講義ノート 1）。"
+      },
+      {
+        "term": "method of partial fractions",
+        "register": "written",
+        "note": "積分の技法の名前として書く。話し言葉では 0 件、書き言葉で 11 件（OpenStax Calculus 6・MIT の講義ノート 5）。"
       }
     ],
     "uk": null,
@@ -41,8 +50,8 @@
       "Calculus II"
     ]
   },
-  "definition_ja": "分数式を、分母の因数ごとの簡単な分数式の和に分けること。",
-  "definition_en": "Rewriting a rational expression as a sum of simpler fractions, one for each factor of the denominator.",
+  "definition_ja": "分数式を、分母の因数ごとの簡単な分数式の和に分けること。分数関数の積分では、分けた各項を積分する（部分分数による積分）。",
+  "definition_en": "Splitting a rational expression into a sum of simpler fractions, one for each factor of the denominator; integrating a rational function this way is integration by partial fractions.",
   "latex": "\\frac{1}{x(x+1)} = \\frac{1}{x} - \\frac{1}{x+1}",
   "spoken_en": "one over x times x plus one equals one over x minus one over x plus one",
   "examples": [
@@ -55,6 +64,11 @@
       "en": "The partial fraction decomposition of 1/(x² − 1) is (1/2)/(x − 1) − (1/2)/(x + 1).",
       "ja": "1/(x² − 1) を部分分数分解すると (1/2)/(x − 1) − (1/2)/(x + 1) となる。",
       "register": "written"
+    },
+    {
+      "en": "After partial fractions, each piece is just a natural log.",
+      "ja": "部分分数に分けたら、各項はただの自然対数になる。",
+      "register": "spoken"
     }
   ],
   "collocations": [
@@ -64,12 +78,17 @@
     }
   ],
   "pitfalls": [
-    "数Bの数列の和で使う 1/k(k + 1) = 1/k − 1/(k + 1) の分解も英語では同じく partial fractions。和が打ち消し合って求まるものは telescoping sum と呼ぶ。"
+    "数Bの数列の和で使う 1/k(k + 1) = 1/k − 1/(k + 1) の分解も英語では同じく partial fractions。和が打ち消し合って求まるものは telescoping sum と呼ぶ。",
+    "日本の答案では log|x| − log|x + 1| + C = log|x/(x + 1)| + C とまとめることが多いが、米国の教科書では ln を使う。まとめるかどうかは自由。",
+    "日本の高校の「分数関数」は主に (ax + b)/(cx + d) の形を指すが、米国の rational function は多項式 ÷ 多項式の関数全般を指す。",
+    "分子の次数が分母以上なら、先に多項式の割り算（long division）で次数を下げる。",
+    "∫(1/x)dx は、日本では log|x| + C、米国では ln|x| + C と書く。"
   ],
   "related": [
-    "integral-of-a-rational-function",
     "decompose-into-partial-fractions",
-    "integration-by-partial-fractions"
+    "integration-formulas",
+    "indefinite-integral",
+    "integration-by-long-division"
   ],
   "sources": [
     {
@@ -80,6 +99,15 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 6.12（linear partial fractions、BC のみ）"
     }
   ],
   "confidence": "likely",
@@ -91,14 +119,15 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "partial fraction decomposition": 38,
-      "partial fractions": 45,
-      "do partial fractions": 4
+      "partial fractions": 111,
+      "do partial fractions": 6,
+      "partial fraction decomposition": 42
     },
     "written": {
-      "partial fraction decomposition": 52,
-      "partial fractions": 42,
-      "do partial fractions": 1
+      "partial fraction decomposition": 53,
+      "partial fractions": 102,
+      "method of partial fractions": 11,
+      "do partial fractions": 2
     },
     "sources": [
       "khan-ap-calc",

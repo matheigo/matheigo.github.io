@@ -10,15 +10,25 @@
   },
   "en": {
     "term": "fundamental theorem of calculus",
-    "alt": [
-      "FTC"
+    "alt": [],
+    "variants": [
+      {
+        "term": "fundamental theorem of calculus",
+        "register": "both",
+        "note": "話し言葉で 118 件（Khan Academy 52・MIT OCW 51・Professor Leonard 8 ほか 7）、書き言葉で 89 件（OpenStax Calculus 76・MIT の講義ノート 13）。"
+      },
+      {
+        "term": "FTC",
+        "register": "both",
+        "note": "略記。書き言葉ではすべて MIT の講義ノートで、OpenStax Calculus は略さない。話し言葉で 3 件（すべて MIT OCW）、書き言葉で 23 件（すべて MIT の講義ノート）。"
+      }
     ],
     "uk": null,
     "register": "both"
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の高校では「微分と積分の関係」として d/dx ∫ₐˣ f(t)dt = f(x) と F(b) − F(a) の計算を扱うことが多く、定理の名前はあまり前面に出ない。米国では Calc I の中心の定理として名前で呼び、Part 1（積分を微分すると元に戻る）と Part 2（F(b) − F(a) で計算できる）に分けて教える。どちらを Part 1 と呼ぶかは教科書によって逆のことがある。",
+  "mapping_note": "日本の高校では「微分と積分の関係」として d/dx ∫ₐˣ f(t)dt = f(x) と F(b) − F(a) の計算を扱うことが多く、定理の名前はあまり前面に出ない。米国では定理を名前で呼ぶ。OpenStax Calculus Volume 1 は Part 1（積分を微分すると元に戻る）と Part 2（F(b) − F(a) で計算できる）に分ける。番号の付け方は教科書による。AP の CED は番号を付けず、topic 6.4（accumulation functions）と 6.7（definite integrals）で扱う。",
   "domains": [
     "calculus"
   ],
@@ -61,9 +71,8 @@
   "related": [
     "definite-integral",
     "antiderivative",
-    "function-defined-by-an-integral",
-    "reverse-of-differentiation",
     "accumulation-function",
+    "reverse-of-differentiation",
     "fundamental-theorem-of-calculus-part-1",
     "fundamental-theorem-of-calculus-part-2"
   ],
@@ -76,6 +85,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 6.4、6.7（番号 Part 1 ／ Part 2 は使わない）"
     }
   ],
   "confidence": "likely",
@@ -87,14 +102,14 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "fundamental theorem of calculus": 117,
+      "fundamental theorem of calculus": 118,
       "FTC": 3,
       "by the fundamental theorem of calculus": 4
     },
     "written": {
       "fundamental theorem of calculus": 89,
-      "FTC": 22,
-      "by the fundamental theorem of calculus": 6
+      "by the fundamental theorem of calculus": 6,
+      "FTC": 23
     },
     "sources": [
       "khan-ap-calc",

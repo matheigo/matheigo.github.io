@@ -3,11 +3,31 @@
   "ja": {
     "term": "2 曲線間の面積",
     "reading": "にきょくせんかんのめんせき",
-    "alt": []
+    "alt": [
+      "曲線間の面積",
+      "曲線で囲まれた面積",
+      "放物線と直線で囲まれた面積"
+    ]
   },
   "en": {
     "term": "area between two curves",
-    "alt": [],
+    "alt": [
+      "area between curves",
+      "area bounded by curves",
+      "area between a parabola and a line"
+    ],
+    "variants": [
+      {
+        "term": "area between the curves",
+        "register": "written",
+        "note": "OpenStax Calculus の書き方。話し言葉で 6 件（Khan Academy 5・MIT OCW 1）、書き言葉で 15 件（すべて OpenStax Calculus）。"
+      },
+      {
+        "term": "area between two curves",
+        "register": "written",
+        "note": "OpenStax Calculus と MIT の講義ノート。話し言葉では Professor Leonard がこの言い方。話し言葉で 8 件（Professor Leonard 7・Khan Academy 1）、書き言葉で 13 件（OpenStax Calculus 11・MIT の講義ノート 2）。"
+      }
+    ],
     "uk": null,
     "register": "written"
   },
@@ -27,14 +47,19 @@
       "Calculus I"
     ]
   },
-  "definition_ja": "2 つの曲線 y = f(x)、y = g(x) にはさまれた部分の面積。区間で f(x) ≧ g(x) なら ∫ₐᵇ {f(x) − g(x)} dx で求める。",
-  "definition_en": "The area of the region between y = f(x) and y = g(x); if f(x) ≥ g(x) on [a, b], it equals ∫ₐᵇ (f(x) − g(x)) dx.",
+  "definition_ja": "2 つ以上の曲線（や直線）にはさまれた、または囲まれた部分の面積。交点で区間を分け、上の曲線から下の曲線を引いて積分する。左右の曲線で決まる部分は y で積分する（右 − 左）。",
+  "definition_en": "The area of a region between or enclosed by two or more curves: split at the intersection points and integrate top minus bottom, or, for a region bounded on the left and right, right minus left with respect to y.",
   "latex": "A = \\int_a^b \\bigl(f(x) - g(x)\\bigr)\\,dx",
   "spoken_en": "A equals the integral from a to b of f of x minus g of x, dx",
   "examples": [
     {
       "en": "For the area between two curves, it's always the top one minus the bottom one.",
       "ja": "2 曲線間の面積は、いつも上の曲線から下の曲線を引く。",
+      "register": "spoken"
+    },
+    {
+      "en": "If the region is bounded on the left and right by curves, slice it horizontally and integrate with respect to y.",
+      "ja": "部分が左右の曲線で決まるなら、横に切って y で積分する。",
       "register": "spoken"
     },
     {
@@ -46,20 +71,27 @@
   "collocations": [],
   "pitfalls": [
     "区間の途中で曲線の上下が入れ替わるときは、交点で積分を分けて、それぞれ上 − 下にする。",
-    "米国では同じ単元で、y で積分するやり方（右の曲線 − 左の曲線）も扱う。"
+    "米国では同じ単元で、y で積分するやり方（右の曲線 − 左の曲線）も扱い、dx と dy のどちらで積分するかを選ぶ練習をする。AP の CED は x の関数・y の関数・3 点以上で交わる場合を別の topic（8.4・8.5・8.6）にしている。",
+    "問題文では Find the area of the region bounded by the parabola y = x² and the line y = x + 2. のように the region bounded by で書かれる。",
+    "数IIIでは媒介変数表示の曲線で囲まれた面積も扱うが、米国では Calc II の parametric curves の単元で別に扱う。"
   ],
   "related": [
     "area-under-the-curve",
-    "top-minus-bottom",
-    "find-the-intersections-to-get-the-limits",
-    "area-between-a-parabola-and-a-line",
-    "area-bounded-by-curves",
-    "area-between-curves"
+    "one-sixth-formula"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 8.4–8.6（area between curves。x の関数・y の関数・3 点以上で交わる場合）"
     }
   ],
   "confidence": "likely",
@@ -71,13 +103,19 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
+      "area between curves": 5,
+      "area between the curves": 6,
       "area between two curves": 8
     },
     "written": {
-      "area between two curves": 11
+      "area bounded by curves": 1,
+      "area between the curves": 15,
+      "area between two curves": 13,
+      "area between curves": 1
     },
     "sources": [
       "khan-ap-calc",
+      "mit-18.01",
       "mit-notes",
       "openstax-calculus",
       "yt:profleonard"

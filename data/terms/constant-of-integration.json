@@ -3,13 +3,22 @@
   "ja": {
     "term": "積分定数",
     "reading": "せきぶんていすう",
-    "alt": []
+    "alt": [
+      "プラス C"
+    ]
   },
   "en": {
     "term": "constant of integration",
     "alt": [],
+    "variants": [
+      {
+        "term": "plus C",
+        "register": "spoken",
+        "note": "授業では積分定数そのものを指して plus C と言うことが多い。特定のソースに偏らない。話し言葉で 324 件（Khan Academy 96・MIT OCW 77・Professor Leonard 51 ほか 100）、書き言葉では 0 件。"
+      }
+    ],
     "uk": null,
-    "register": "both"
+    "register": "written"
   },
   "pos": "noun",
   "mapping": "exact",
@@ -27,8 +36,8 @@
       "Calculus I"
     ]
   },
-  "definition_ja": "不定積分に加える任意の定数。ふつう C で表す。",
-  "definition_en": "The arbitrary constant, usually C, added to an antiderivative to write the indefinite integral.",
+  "definition_ja": "不定積分に加える任意の定数。ふつう C で表し、答案では末尾に + C と書く。",
+  "definition_en": "The arbitrary constant added to an indefinite integral, usually written as + C at the end.",
   "latex": "\\int 2x\\,dx = x^2 + C",
   "spoken_en": "the integral of two x dx equals x squared plus C",
   "examples": [
@@ -41,24 +50,35 @@
       "en": "The initial condition y(0) = 3 gives the constant of integration C = 3.",
       "ja": "初期条件 y(0) = 3 から、積分定数は C = 3 と決まる。",
       "register": "written"
+    },
+    {
+      "en": "You lost a point because there's no plus C.",
+      "ja": "+C がないから 1 点減点ね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Each answer should end with + C.",
+      "ja": "どの答えにも + C を付けること。",
+      "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "授業では名前より plus C と言うことが多い（話し言葉コーパスで plus C 324 件、constant of integration 21 件）。",
     "「ただし C は積分定数」に当たる英語は where C is a constant。米国の教科書の解答例では省くことが多い。",
-    "定積分では C は F(b) − F(a) で打ち消し合うので書かない。"
+    "定積分では C は F(b) − F(a) で打ち消し合うので書かない。",
+    "口頭では plus a constant と言うこともある。"
   ],
   "related": [
     "indefinite-integral",
-    "antiderivative",
-    "plus-c",
-    "dont-forget-the-plus-c"
+    "antiderivative"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "editorial"
     }
   ],
   "confidence": "likely",
@@ -70,19 +90,28 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "constant of integration": 21
+      "plus C": 324,
+      "constant of integration": 28
     },
     "written": {
       "constant of integration": 11
     },
     "sources": [
+      "khan-algebra",
       "khan-ap-calc",
       "mit-18.01",
+      "mit-18.02",
       "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
       "mit-notes",
       "openstax-calculus",
+      "yt:3blue1brown",
       "yt:blackpenredpen",
-      "yt:nancypi"
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
     ],
     "counted": "2026-09-24"
   }

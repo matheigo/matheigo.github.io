@@ -50,6 +50,9 @@ export const VARIANTS: [RegExp, string][] = [
   [/\bsubstituting\b/g, "substitute"],
   [/\bsubstitutes?\b/g, "substitute"],
   [/\bsquare\s+rooting\b/g, "square root"],
+  // OpenStax CNXML: inline math padded with spaces splits "x-axis" into
+  // "x -axis" (1,011 times in the written corpus against 32 joined).
+  [/\b([a-z]) -(?=[a-z])/g, "$1-"],
   // Hyphenation only. "u sub" is left alone: it is also how a subscript is read (u sub n).
   [/\bu\s+substitution/g, "u-substitution"],
   [/\banti[-\s]derivative/g, "antiderivative"],
@@ -99,6 +102,8 @@ export function cnxmlToText(xml: string): string {
   return decodeEntities(
     xml
       .replace(/<md:(content-id|uuid|title)>[\s\S]*?<\/md:\1>/g, " ")
+      // math glued to a hyphenated word ("<m:math>x</m:math>-axis") stays glued
+      .replace(/<\/m:math>-(?=\w)/g, "</m:math>\u0001")
       .replace(/<m:math\b[\s\S]*?<\/m:math>/g, (math) => {
         const tokens = [...math.matchAll(/<m:(mi|mn|mo|mtext)\b[^>]*>([\s\S]*?)<\/m:\1>/g)].map((t) => t[2].trim());
         return ` ${tokens.filter(Boolean).join(" ")} `;
@@ -106,6 +111,7 @@ export function cnxmlToText(xml: string): string {
       .replace(/<\/(para|item|title|caption|td|th|entry|li)>|<newline\s*\/>/g, "\n")
       .replace(/<[^>]+>/g, " "),
   )
+    .replace(/ *\u0001/g, "-")
     .replace(/[\u2061-\u2064\u200b]/g, "") // invisible times / function application
     .replace(/[ \t\r\f\v]+/g, " ")
     .replace(/ *\n[\s]*/g, "\n")
@@ -195,16 +201,107 @@ export function dedupe<T extends CorpusDoc>(docs: T[]): { docs: T[]; stats: Reco
   return { docs: out, stats, dropped };
 }
 
+// ------------------------------------------------------------------ wording
+
+/**
+ * Words that may be dropped when a wording is quoted in short form: articles,
+ * prepositions, and the variables themselves. "f prime of x" -> "f prime" is
+ * the same wording; "substitute back" -> "substitute" is not, because "back"
+ * carries meaning.
+ */
+const ARGUMENT_WORDS = new Set([
+  "a", "an", "the", "of", "to", "from", "for", "at", "in", "on", "by", "with",
+  "respect", "it", "that", "this", "dx", "dy", "dt", "du",
+]);
+
+const isArgumentWord = (w: string) => ARGUMENT_WORDS.has(w) || w.length === 1;
+
+/** Strips inflection only. integral / integrate / integration stay distinct. */
+const stem = (w: string) => w.replace(/(ing|ed|es|s)$/, "").replace(/e$/, "");
+
+/**
+ * The blank in a verb phrase with an object in the middle: "revolve … around
+ * the x-axis" (DECISIONS, Phase 2 修正). Written "…" or "...".
+ */
+export const GAP = /^(?:\u2026|\.\.\.)$/;
+export const GAP_MIN = 1;
+export const GAP_MAX = 3;
+
+/** The words of a wording, without the blank. */
+const wordsOf = (t: string) => normalize(t).split(" ").filter((w) => w && !GAP.test(w));
+
+/**
+ * Words matched exactly as written when a term is counted: articles,
+ * prepositions, pronouns, auxiliaries, number words and anything of two
+ * letters or fewer. Folding "the" by its stem would also match "these" and
+ * "thing"; folding "one" would match "on".
+ */
+const CLOSED_CLASS = new Set([
+  ...ARGUMENT_WORDS,
+  "and", "or", "but", "nor", "is", "are", "was", "were", "be", "been", "being", "as", "than", "then",
+  "so", "if", "not", "no", "never", "these", "those", "its", "their", "your", "our", "we", "you",
+  "they", "he", "she", "into", "onto", "over", "under", "between", "around", "about", "along",
+  "through", "up", "down", "out", "off", "each", "every", "all", "any", "some", "what", "which",
+  "who", "how", "when", "where", "there", "here", "has", "have", "had", "do", "does", "did", "can",
+  "will", "would", "should", "must", "may", "might",
+  ...Object.values(NUMBER_WORDS),
+]);
+
+/**
+ * Every form with the same stem (sameWording's notion of inflection):
+ * plural, third person, past, -ing. revolve -> revolves, revolved, revolving.
+ */
+export function inflections(word: string): string[] {
+  const s = stem(word);
+  const forms = new Set([word]);
+  for (const e of ["", "e"]) {
+    for (const x of ["", "s", "es", "ed", "ing"]) {
+      const t = s + e + x;
+      if (t && stem(t) === s) forms.add(t);
+    }
+  }
+  return [...forms].sort((a, b) => b.length - a.length);
+}
+
 // -------------------------------------------------------------------- count
 
 const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-/** Whole-phrase matches only: "plug in" must not fire inside "plug into". */
-export function countPhrase(haystack: string, phrase: string): number {
+/** Whole words only: "plug in" must not fire inside "plug into". */
+const wholeWords = (body: string) => new RegExp(`(?<![\\w-])${body}(?![\\w-])`, "g");
+
+/** Where each match starts. Matches of one wording do not overlap. */
+function starts(haystack: string, re: RegExp | null): number[] {
+  if (!re) return [];
+  return [...haystack.matchAll(re)].map((m) => m.index ?? 0);
+}
+
+function phraseRegex(phrase: string): RegExp | null {
   const p = normalize(phrase);
-  if (!p) return 0;
-  const re = new RegExp(`(?<![\\w-])${escape(p)}(?![\\w-])`, "g");
-  return (haystack.match(re) ?? []).length;
+  return p ? wholeWords(escape(p)) : null;
+}
+
+/**
+ * Terms (DECISIONS, Phase 2 修正): a content word also matches its
+ * inflections (Riemann sum / Riemann sums, revolve / revolved), and a blank
+ * "…" in a verb phrase matches GAP_MIN to GAP_MAX words that do not end a
+ * sentence. Everything else is literal, as in countPhrase.
+ */
+function termRegex(phrase: string): RegExp | null {
+  const words = normalize(phrase).split(" ").filter(Boolean);
+  while (words.length && GAP.test(words[0])) words.shift();
+  while (words.length && GAP.test(words[words.length - 1])) words.pop();
+  if (words.length === 0) return null;
+  const body = words
+    .map((w, i) => {
+      const sep = i === words.length - 1 ? "" : " ";
+      if (GAP.test(w)) return `(?:[^ ]*[^ .?!] ){${GAP_MIN},${GAP_MAX}}`;
+      const m = w.match(/^([a-z]{3,})([^a-z0-9'-]*)$/);
+      if (!m || CLOSED_CLASS.has(m[1])) return escape(w) + sep;
+      return `(?:${inflections(m[1]).map(escape).join("|")})${escape(m[2])}${sep}`;
+    })
+    .join("");
+  return wholeWords(body);
 }
 
 /**
@@ -212,17 +309,37 @@ export function countPhrase(haystack: string, phrase: string): number {
  * variables ("from a to b"), but a lecture integrates from 0 to 1, from
  * negative infinity to infinity ... so a literal count finds almost nothing.
  * In a pattern each `*` stands for one to WILDCARD_MAX words; everything else
- * is literal and whole-phrase, as in countPhrase. terms / phrases stay literal.
+ * is literal and whole-phrase, as in countPhrase.
  */
 export const WILDCARD_MAX = 5;
 
-export function countPattern(haystack: string, pattern: string): number {
+function patternRegex(pattern: string): RegExp | null {
   const parts = normalize(pattern.replace(/\*/g, " \u0000 ")).split(" ").filter(Boolean);
-  if (parts.length === 0 || parts.every((w) => w === "\u0000")) return 0;
+  if (parts.length === 0 || parts.every((w) => w === "\u0000")) return null;
   const slot = `[^ ]+(?: [^ ]+){0,${WILDCARD_MAX - 1}}?`;
-  const body = parts.map((w) => (w === "\u0000" ? slot : escape(w))).join(" ");
-  const re = new RegExp(`(?<![\\w-])${body}(?![\\w-])`, "g");
-  return (haystack.match(re) ?? []).length;
+  return wholeWords(parts.map((w) => (w === "\u0000" ? slot : escape(w))).join(" "));
+}
+
+/** Literal whole-phrase count. phrases are counted this way. */
+export function countPhrase(haystack: string, phrase: string): number {
+  return starts(haystack, phraseRegex(phrase)).length;
+}
+
+/** Inflection-folded count with blanks. terms are counted this way. */
+export function countTerm(haystack: string, phrase: string): number {
+  return starts(haystack, termRegex(phrase)).length;
+}
+
+/** Wildcard count. symbols are counted this way. */
+export function countPattern(haystack: string, pattern: string): number {
+  return starts(haystack, patternRegex(pattern)).length;
+}
+
+/** How a collection's wordings are matched. */
+export function matcherFor(collection: string): (wording: string) => RegExp | null {
+  if (collection === "symbols") return patternRegex;
+  if (collection === "terms") return termRegex;
+  return phraseRegex;
 }
 
 /**
@@ -277,9 +394,39 @@ export const MIN_TOTAL = 10; // fewer than this and the corpus has not spoken
  *   undecided  the corpus has too little to say -> a human looks at it
  */
 export type Verdict =
-  | { kind: "single"; register: Register; head: string; runnerUp: string | null; ratio: number; total: number }
-  | { kind: "both"; register: Register; heads: string[]; counts: number[]; total: number }
+  | {
+      kind: "single";
+      register: Register;
+      head: string;
+      runnerUp: string | null;
+      ratio: number;
+      total: number;
+      dependsOn?: Dependence;
+    }
+  | {
+      kind: "both";
+      register: Register;
+      heads: string[];
+      counts: number[];
+      total: number;
+      dependsOn?: Dependence;
+      /** Was ① until the leader's biggest source was taken out (decideRobust). */
+      demoted?: boolean;
+    }
   | { kind: "undecided"; reason: "too-few" | "too-close"; total: number };
+
+/**
+ * The leader's verdict rests on one source: without the source that gives the
+ * leading wording most of its hits, the verdict is not the same.
+ */
+export interface Dependence {
+  source: string;
+  /** The leader's hits from that source, and from all sources (raw). */
+  hits: number;
+  of: number;
+  /** The verdict without that source. */
+  without: Verdict;
+}
 
 export function decide(counts: Counts, register: Register): Verdict {
   const ranked = Object.entries(counts)
@@ -321,33 +468,80 @@ export function headsOf(v: Verdict): string[] {
 }
 
 /**
- * Words that may be dropped when a wording is quoted in short form: articles,
- * prepositions, and the variables themselves. "f prime of x" -> "f prime" is
- * the same wording; "substitute back" -> "substitute" is not, because "back"
- * carries meaning.
+ * Does `a` contain the wording `lead` and add to it? "the integrand is odd"
+ * extends "integrand": a collocation built on the headword, not another way
+ * to say it, so it is never set side by side with it.
  */
-const ARGUMENT_WORDS = new Set([
-  "a", "an", "the", "of", "to", "from", "for", "at", "in", "on", "by", "with",
-  "respect", "it", "that", "this", "dx", "dy", "dt", "du",
-]);
+function extendsWording(a: string, lead: string): boolean {
+  const [x, y] = [wordsOf(a).map(stem).join(" "), wordsOf(lead).map(stem).join(" ")];
+  return x !== y && ` ${x} `.includes(` ${y} `);
+}
 
-const isArgumentWord = (w: string) => ARGUMENT_WORDS.has(w) || w.length === 1;
+/** Removes one source from every candidate's tally. */
+function without(counts: BySource, source: string): BySource {
+  return Object.fromEntries(
+    Object.entries(counts).map(([c, by]) => [c, Object.fromEntries(Object.entries(by).filter(([s]) => s !== source))]),
+  );
+}
 
-/** Strips inflection only. integral / integrate / integration stay distinct. */
-const stem = (w: string) => w.replace(/(ing|ed|es|s)$/, "").replace(/e$/, "");
+/**
+ * decide(), then the one-source check (DECISIONS, Phase 2 修正): take out the
+ * source with the most hits for the leading wording and decide again. If the
+ * verdict is not the same (same kind, same leader), the leader rests on that
+ * source, and a single headword becomes ② - the leader set side by side with
+ * whatever leads without that source (or, if nothing does, the runner-up).
+ * A ② stays ② and only records the dependence. A sole wording has nothing to
+ * be set beside, so it stays ① with the dependence recorded; a collocation
+ * that contains the leader ("the integrand is odd") does not count as
+ * something to set beside it.
+ */
+export function decideRobust(counts: BySource, weights: Record<string, number>, register: Register): Verdict {
+  const weighted = weigh(counts, weights);
+  const v = decide(weighted, register);
+  if (v.kind === "undecided") return v;
+  const lead = headsOf(v)[0];
+  const bySource = Object.entries(counts[lead] ?? {}).sort((a, b) => b[1] - a[1]);
+  if (bySource.length === 0) return v;
+  const [top, hits] = bySource[0];
+  const of = bySource.reduce((n, [, k]) => n + k, 0);
+  const w = decide(weigh(without(counts, top), weights), register);
+  if (w.kind === v.kind && headsOf(w)[0] === lead) return v;
+
+  const dependsOn: Dependence = { source: top, hits, of, without: w };
+  if (v.kind === "both") return { ...v, dependsOn };
+  const others = Object.keys(weighted)
+    .filter((c) => c !== lead && weighted[c] > 0 && !extendsWording(c, lead))
+    .sort((a, b) => weighted[b] - weighted[a]);
+  if (others.length === 0) return { ...v, dependsOn };
+  const rivals = headsOf(w).filter((h) => h !== lead && !extendsWording(h, lead));
+  const heads = [lead, ...(rivals.length ? rivals : others.slice(0, 1))].sort((a, b) => weighted[b] - weighted[a]);
+  return {
+    kind: "both",
+    register,
+    heads,
+    counts: heads.map((h) => weighted[h]),
+    total: v.total,
+    dependsOn,
+    demoted: true,
+  };
+}
 
 /**
  * Are two wordings the same phrase? Only two things are folded together:
  *
  *   inflection        completing the square  ==  complete the square
  *   argument ellipsis f prime of x           ==  f prime
+ *                     revolve … around the x-axis == revolve around the x-axis
+ *   punctuation       calculus, part one       ==  calculus part one
  *
  * Different words are never folded: integral / integrate / integration are
  * three wordings, and so are substitute / substitute back.
  */
 export function sameWording(a: string, b: string): boolean {
-  const wordsOf = (t: string) => normalize(t).split(" ").filter(Boolean);
-  const [x, y] = [wordsOf(a), wordsOf(b)];
+  // "calculus, part one" and "calculus part one" are one wording: punctuation
+  // after a word is not a word
+  const bare = (t: string) => wordsOf(t).map((w) => w.replace(/[^\w'-]+$/, "")).filter(Boolean);
+  const [x, y] = [bare(a), bare(b)];
   if (x.length === 0 || y.length === 0) return false;
 
   const [short, long] = x.length <= y.length ? [x, y] : [y, x];
@@ -362,30 +556,42 @@ export interface Merge {
   from: string[];
 }
 
+/** Same-wording groups, in the order the names first appear. */
+export function groupWordings(names: string[]): string[][] {
+  const groups: string[][] = [];
+  for (const name of names) {
+    const g = groups.find((group) => group.some((other) => sameWording(other, name)));
+    if (g) g.push(name);
+    else groups.push([name]);
+  }
+  return groups;
+}
+
+/** The headword if it is in the group, else the member seen most often. */
+function canonicalOf(group: string[], preferred: string, total: (n: string) => number): string {
+  return (
+    group.find((n) => normalize(n) === normalize(preferred)) ??
+    [...group].sort((a, b) => total(b) - total(a))[0]
+  );
+}
+
 /**
  * Folds same-wording candidates together so they do not compete with each
  * other in decide(). Counts are summed into the canonical wording - never
  * dropped - and the merge is reported so a human can see what happened.
+ * (For counts taken from the corpus, countEntry folds by position instead, so
+ * one occurrence matched by two wordings is not counted twice.)
  */
 export function mergeCandidates(
   counts: Record<string, Record<string, number>>,
   preferred: string,
 ): { counts: Record<string, Record<string, number>>; merges: Merge[] } {
-  const groups: string[][] = [];
-  for (const name of Object.keys(counts)) {
-    const g = groups.find((group) => group.some((other) => sameWording(other, name)));
-    if (g) g.push(name);
-    else groups.push([name]);
-  }
-
   const out: Record<string, Record<string, number>> = {};
   const merges: Merge[] = [];
   const total = (n: string) => Object.values(counts[n]).reduce((a, b) => a + b, 0);
 
-  for (const group of groups) {
-    const canonical =
-      group.find((n) => normalize(n) === normalize(preferred)) ??
-      [...group].sort((a, b) => total(b) - total(a))[0];
+  for (const group of groupWordings(Object.keys(counts))) {
+    const canonical = canonicalOf(group, preferred, total);
     const bucket: Record<string, number> = {};
     for (const n of group) {
       for (const [src, v] of Object.entries(counts[n])) bucket[src] = (bucket[src] ?? 0) + v;
@@ -394,6 +600,82 @@ export function mergeCandidates(
     if (group.length > 1) merges.push({ into: canonical, from: group.filter((n) => n !== canonical) });
   }
   return { counts: out, merges };
+}
+
+/** candidate -> source -> occurrences */
+export type BySource = Record<string, Record<string, number>>;
+
+export interface EntryTally {
+  spoken: BySource;
+  written: BySource;
+  merges: Merge[];
+  sources: string[];
+  /** Spoken hits from auto captions / from human transcripts (symbols need the latter). */
+  auto: boolean;
+  human: boolean;
+}
+
+/**
+ * Counts one entry's candidate wordings (PLAN 15, step 3) and folds
+ * same-wording candidates into one. An occurrence is counted once even when
+ * several wordings of the group match it - "Riemann sum" and "Riemann sums"
+ * both match "riemann sums" once terms fold inflection, and "f prime" matches
+ * wherever "f prime of x" does - so a group's count is the number of distinct
+ * match positions, not the sum of its members.
+ */
+export function countEntry(
+  docs: CorpusDoc[],
+  collection: string,
+  candidates: string[],
+  preferred: string,
+): EntryTally {
+  const regexOf = matcherFor(collection);
+  const res = new Map(candidates.map((c) => [c, regexOf(c)] as const));
+  const sources = new Set<string>();
+  let auto = false;
+  let human = false;
+  const tally: Record<Register, BySource> = { spoken: {}, written: {} };
+  const merges: Merge[] = [];
+
+  for (const register of ["spoken", "written"] as const) {
+    // Symbols are readings aloud: the written corpus is out of scope for them
+    // (DECISIONS 修正 4).
+    if (collection === "symbols" && register === "written") continue;
+    const inRegister = docs.filter((d) => d.register === register);
+    // candidate -> doc index -> match starts
+    const hits = new Map<string, Map<number, number[]>>();
+    inRegister.forEach((doc, i) => {
+      for (const c of candidates) {
+        const at = starts(doc.text, res.get(c) ?? null);
+        if (at.length === 0) continue;
+        if (!hits.has(c)) hits.set(c, new Map());
+        hits.get(c)!.set(i, at);
+      }
+    });
+    const total = (c: string) => [...(hits.get(c)?.values() ?? [])].reduce((n, at) => n + at.length, 0);
+
+    for (const group of groupWordings([...hits.keys()])) {
+      const canonical = canonicalOf(group, preferred, total);
+      const bucket: Record<string, number> = {};
+      const docsHit = new Set(group.flatMap((c) => [...hits.get(c)!.keys()]));
+      for (const i of docsHit) {
+        const at = new Set(group.flatMap((c) => hits.get(c)!.get(i) ?? []));
+        const doc = inRegister[i];
+        bucket[doc.id] = (bucket[doc.id] ?? 0) + at.size;
+        sources.add(doc.id);
+        if (register === "spoken") {
+          if (doc.auto) auto = true;
+          else human = true;
+        }
+      }
+      tally[register][canonical] = bucket;
+      if (group.length > 1) {
+        const m = { into: canonical, from: group.filter((n) => n !== canonical) };
+        if (!merges.some((x) => x.into === m.into && x.from.join() === m.from.join())) merges.push(m);
+      }
+    }
+  }
+  return { spoken: tally.spoken, written: tally.written, merges, sources: [...sources].sort(), auto, human };
 }
 
 /**

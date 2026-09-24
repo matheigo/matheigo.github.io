@@ -6,12 +6,37 @@
     "alt": []
   },
   "en": {
-    "term": "revolve around the y-axis",
+    "term": "rotate … around the y-axis",
     "alt": [
       "rotate around the y-axis",
-      "rotate about the y-axis"
+      "revolve around the y-axis",
+      "rotate about the y-axis",
+      "revolve about the y-axis"
     ],
-    "uk": null
+    "variants": [
+      {
+        "term": "rotate … around the y-axis",
+        "register": "both",
+        "note": "話し言葉は MIT OCW が 17 件中 11 件。話し言葉で 17 件（MIT OCW 11・Khan Academy 5・3Blue1Brown 1）、書き言葉で 24 件（OpenStax Calculus 22・MIT の講義ノート 2）。"
+      },
+      {
+        "term": "revolve … around the y-axis",
+        "register": "both",
+        "note": "書き言葉では rotate とほぼ同じ数（すべて OpenStax Calculus）。話し言葉で 4 件（すべて MIT OCW）、書き言葉で 22 件（すべて OpenStax Calculus）。"
+      },
+      {
+        "term": "revolve … about the y-axis",
+        "register": "written",
+        "note": "話し言葉では 0 件、書き言葉で 6 件（すべて OpenStax Calculus）。"
+      },
+      {
+        "term": "rotate … about the y-axis",
+        "register": "both",
+        "note": "話し言葉で 1 件（すべて blackpenredpen）、書き言葉で 1 件（すべて MIT の講義ノート）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
   },
   "pos": "phrase",
   "mapping": "exact",
@@ -47,7 +72,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "y 軸のまわりの回転体は、日本では x = g(y) と書き直して π∫x²dy で求めるのがふつうだが、米国では x のまま 2π∫x f(x)dx とする shell method もよく使う。"
+    "動詞は rotate も revolve も、前置詞は around も about も使う。… の位置には it ／ this region ／ the shaded region などの目的語が入る。問題文では is revolved about the y-axis のように受け身でも書く。",
+    "y 軸のまわりの回転体は、日本では x = g(y) と書き直して π∫x²dy で求めることが多い。OpenStax Calculus Volume 1 は、x のまま 2π∫x f(x)dx とする shell method も扱う。"
   ],
   "related": [
     "revolve-around-the-x-axis",
@@ -69,26 +95,24 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "revolve around the y-axis": 1,
-      "rotate around the y-axis": 3,
+      "revolve around the y-axis": 4,
+      "rotate … around the y-axis": 17,
       "rotate about the y-axis": 1
     },
     "written": {
-      "revolve around the y-axis": 1
+      "rotate … around the y-axis": 24,
+      "revolve … around the y-axis": 22,
+      "revolve … about the y-axis": 6,
+      "rotate about the y-axis": 1
     },
     "sources": [
       "khan-ap-calc",
       "mit-18.01",
+      "mit-notes",
       "openstax-calculus",
+      "yt:3blue1brown",
       "yt:blackpenredpen"
     ],
     "counted": "2026-09-24"
-  },
-  "flags": [
-    {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。人間レビューへ。",
-      "raised": "2026-09-24"
-    }
-  ]
+  }
 }

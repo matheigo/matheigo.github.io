@@ -7,15 +7,25 @@
   },
   "en": {
     "term": "disk method",
-    "alt": [
-      "disc method"
+    "alt": [],
+    "variants": [
+      {
+        "term": "disk method",
+        "register": "both",
+        "note": "話し言葉は Khan Academy が 20 件中 15 件、書き言葉はすべて OpenStax Calculus。話し言葉で 20 件（Khan Academy 15・MIT OCW 5）、書き言葉で 25 件（すべて OpenStax Calculus）。"
+      },
+      {
+        "term": "disc method",
+        "register": "spoken",
+        "note": "AP の CED の綴り（topic 8.9・8.10）。話し言葉で 5 件（MIT OCW 3・Khan Academy 1・Professor Leonard 1）、書き言葉では 0 件。"
+      }
     ],
     "uk": null,
     "register": "both"
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "日本の数IIIでは回転体の体積を V = π∫ₐᵇ {f(x)}²dx の式で求めるだけで、方法に名前を付けない（「円板法」は本プロジェクトの訳語）。米国では disk method ／ washer method ／ shell method と名前で呼び分け、問題に応じて選ばせる。",
+  "mapping_note": "日本の数IIIでは回転体の体積を V = π∫ₐᵇ {f(x)}²dx の式で求めるだけで、方法に名前を付けない。米国では disk method ／ washer method ／ shell method と名前で呼び分け、問題に応じて選ばせる。見出しの「円板法」は日本の教科書に無い、本プロジェクトの訳語。",
   "domains": [
     "calculus"
   ],
@@ -41,7 +51,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "disc method と綴る教材もある。"
+    "disc method と綴る教材もある。",
+    "AP の CED は disc method と綴る（topic 8.9・8.10）。OpenStax Calculus Volume 1 は disk method。"
   ],
   "related": [
     "washer-method",
@@ -53,6 +64,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 8.9–8.10（disc method）"
     }
   ],
   "confidence": "likely",
@@ -64,8 +81,8 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "disk method": 20,
-      "disc method": 5
+      "disc method": 5,
+      "disk method": 20
     },
     "written": {
       "disk method": 25

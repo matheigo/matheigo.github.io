@@ -441,3 +441,78 @@ LEVEL_JP_FIX = {
 # Wikipedia's own spellings -> the school textbook's. Headwords use the right
 # side; the Wikipedia form is kept in ja_alt so it still finds the entry.
 NOTATION = [("線型", "線形"), ("函数", "関数"), ("冪", "べき")]
+
+# ------------------------------------------------ Phase 2 修正 (2026-09-24)
+# One concept, one entry for the integral units (docs/DECISIONS.md "Phase 2
+# 修正"). Applied by fix_phase1.py step 8, after the langlinks of step 7.
+# The removed id stays in ledger/id-changes.csv as `merged-into` (new_id = the
+# entry it went into) or `to-phrases`.
+
+# The same concept on several rows (audits/phase2-integral-report.md D-3).
+# (from, into). The other row's ja goes to ja_alt, its en to en_alt. Rows of a
+# different pos stay apart (Phase 1: 平方 / 2 乗する are two rows), so
+# find-an-antiderivative, decompose-into-partial-fractions, find-the-arc-length,
+# let-u-equal and substitute-new-variable keep their own rows.
+PHASE2_SAME = [
+    # (from, into, headword): "into" keeps its ja; "from" makes the merged
+    # row's ja the headword (the textbook term over a section name or a
+    # translation of the US name)
+    ("area-between-curves", "area-between-two-curves", "into"),
+    ("area-bounded-by-curves", "area-between-two-curves", "into"),
+    ("area-between-a-parabola-and-a-line", "area-between-two-curves", "into"),
+    ("limit-of-riemann-sums", "limit-of-a-riemann-sum", "from"),  # 定積分と和の極限 is the section
+    ("inverse-operation", "reverse-of-differentiation", "into"),
+    ("integral-of-an-even-function", "integrals-of-even-and-odd-functions", "into"),
+    ("integral-of-an-odd-function", "integrals-of-even-and-odd-functions", "into"),
+    ("substitution-rule", "integration-by-substitution", "into"),
+    ("integration-by-partial-fractions", "partial-fraction-decomposition", "into"),
+    ("evaluate-the-definite-integral", "evaluate-the-integral", "into"),
+    ("plus-c", "constant-of-integration", "into"),
+    # 定積分で表された関数 is the 数II name; 累積関数 is this project's translation
+    ("function-defined-by-an-integral", "accumulation-function", "from"),
+    ("net-change-theorem", "net-change", "into"),
+    # 累積 is the net change seen as accumulated change (its definition), not
+    # the function F(x) = ∫ f(t)dt
+    ("accumulation", "net-change", "into"),
+]
+
+# A textbook section name (D-4) goes into the entry for what the section
+# teaches. The section name itself is not a word, so it does not become ja_alt
+# or en_alt; its units and level do carry over.
+PHASE2_SECTION = [
+    ("antiderivatives", "antiderivative"),  # 不定積分と原始関数 (also D-3)
+    ("definite-integrals-and-area", "area-under-the-curve"),
+    ("velocity-and-position", "displacement"),
+    ("areas-and-distances", "riemann-sum"),
+    ("using-integral-tables", "integration-formulas"),
+    ("integral-of-the-exponential-function", "integration-formulas"),
+    ("probability-density-and-integrals", "probability-density-function"),
+    ("inequalities-involving-integrals", "properties-of-integrals"),
+    ("integrals-of-trigonometric-functions", "trigonometric-integrals"),
+    ("integral-of-a-rational-function", "partial-fraction-decomposition"),
+    ("integral-involving-radicals", "trigonometric-substitution"),
+]
+
+# A reading of a symbol: the row goes to data/symbols (the ledger note said so).
+PHASE2_TO_SYMBOLS = {"the-integral-from-a-to-b": "integral-definite"}
+
+# What a teacher says in class, not a term (Phase 3 phrases candidates).
+# Written to ledger/phrases-candidates.csv; the text generated in Phase 2 is in
+# git at 4d47e6f (data/terms/<id>.json).
+PHASE2_TO_PHRASES = [
+    "dont-forget-the-plus-c",
+    "top-minus-bottom",
+    "area-is-never-negative",
+    "check-by-differentiating",
+    "add-up-thin-disks",
+    "find-the-intersections-to-get-the-limits",
+    "split-the-integral",
+    "write-as-a-limit-of-a-sum",
+    "integrate-the-inequality",
+    "the-area-of-the-region-bounded-by",
+    # the same kind, beyond the list in the instruction
+    "enclosed-region",  # "the region bounded by …": the frame of a problem statement
+    "find-the-area-by-integration",  # a step of the procedure, like the two above
+    "integrate-by-parts-repeatedly",  # "you'll have to integrate by parts twice"
+]
+PHASE2_FROM_COMMIT = "4d47e6f"

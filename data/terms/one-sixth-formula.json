@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "日本の受験で使う公式で、米国の教科書・授業では扱わず、英語の決まった名前もない。one-sixth formula と言っても通じないので、答案で使うなら公式そのもの（∫_α^β (x − α)(x − β) dx = −(β − α)³/6）を書くか、ふつうに積分して見せる。",
+  "mapping_note": "日本の受験で使う公式で、OpenStax Calculus にも AP の CED にも無く、英語の決まった名前もない（用例コーパスでも 0 件）。one-sixth formula と言っても通じないので、答案で使うなら公式そのもの（∫_α^β (x − α)(x − β) dx = −(β − α)³/6）を書くか、ふつうに積分して見せる。",
   "domains": [
     "calculus"
   ],
@@ -38,15 +38,20 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "米国の授業は途中式（show your work）を重く見るので、公式だけで答えを出すと過程が足りないと見られることがある。使うなら公式を示してから使う。"
+    "AP の CED は数学的実践（Mathematical Practices）に justification と communication and notation を挙げ、記述問題では答えを支える途中の式（supporting work）を求める。公式だけで答えを出すなら、公式を示してから使う。"
   ],
   "related": [
-    "area-between-a-parabola-and-a-line",
     "area-between-two-curves"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Mathematical Practices（justification、communication and notation）と記述問題の説明"
     }
   ],
   "confidence": "likely",

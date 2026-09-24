@@ -14,12 +14,12 @@
       {
         "term": "use integration by parts",
         "register": "both",
-        "note": "話し言葉で 16 件、書き言葉で 12 件と最も多い。"
+        "note": "話し言葉でも書き言葉でも最も多い。話し言葉で 27 件（Khan Academy 10・MIT OCW 9・patrickJMT 3 ほか 5）、書き言葉で 20 件（OpenStax Calculus 19・MIT の講義ノート 1）。"
       },
       {
         "term": "do integration by parts",
         "register": "spoken",
-        "note": "話し言葉で 11 件（YouTube 8・MIT OCW 3）。"
+        "note": "YouTube の解説（NancyPi など）に多い。話し言葉で 11 件（NancyPi 7・MIT OCW 3・blackpenredpen 1）、書き言葉では 0 件。"
       }
     ],
     "uk": null,
@@ -62,8 +62,7 @@
   ],
   "related": [
     "integration-by-parts",
-    "which-one-to-differentiate",
-    "integrate-by-parts-repeatedly"
+    "which-one-to-differentiate"
   ],
   "sources": [
     {
@@ -83,21 +82,23 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "use integration by parts": 16,
-      "integrate by parts": 6,
-      "do integration by parts": 11
+      "use integration by parts": 27,
+      "do integration by parts": 11,
+      "integrate by parts": 6
     },
     "written": {
-      "use integration by parts": 12,
-      "integrate by parts": 1
+      "use integration by parts": 20,
+      "integrate by parts": 2
     },
     "sources": [
       "khan-ap-calc",
       "mit-18.01",
       "mit-18.03",
+      "mit-notes",
       "openstax-calculus",
       "yt:blackpenredpen",
-      "yt:nancypi"
+      "yt:nancypi",
+      "yt:patrickjmt"
     ],
     "counted": "2026-09-24"
   }

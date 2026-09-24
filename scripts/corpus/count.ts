@@ -13,8 +13,11 @@
  *
  * Same-wording candidates are folded together here so they do not compete in
  * decide(): "completing the square" and "complete the square" are one wording.
- * Folded counts are summed into the headword and the merge is recorded, never
- * silently dropped.
+ * An occurrence is counted once for the group, under the headword, and the
+ * merge is recorded, never silently dropped (lib.ts countEntry).
+ *
+ * terms fold inflection and read "…" as a one-to-three-word blank; symbols
+ * are wildcard patterns; phrases are literal (lib.ts matcherFor).
  *
  * Everything written stays under corpus/, which is gitignored.
  */
@@ -25,12 +28,11 @@ import {
   balance,
   candidatesOf,
   contexts,
-  countPattern,
-  countPhrase,
+  countEntry,
   countedAs,
   dedupe,
-  mergeCandidates,
   normalize,
+  type BySource,
   type ContextHit,
   type CorpusDoc,
   type DedupeStats,
@@ -43,8 +45,7 @@ const WITH_CONTEXTS = process.argv.includes("--contexts");
 const DEDUPE = !process.argv.includes("--no-dedupe");
 const COUNTED: Collection[] = ["terms", "symbols", "phrases"];
 
-/** candidate -> source -> occurrences */
-export type BySource = Record<string, Record<string, number>>;
+export type { BySource };
 
 export interface EntryCounts {
   collection: Collection;
@@ -134,49 +135,21 @@ function main() {
     for (const { data } of all[collection]) {
       const record = data as unknown as Record<string, unknown>;
       const candidates = candidatesOf(collection, record);
-      const spoken: BySource = {};
-      const written: BySource = {};
-      const sources = new Set<string>();
-      let human = false;
-      let auto = false;
-
-      for (const candidate of candidates) {
-        for (const doc of docs) {
-          // Symbols are readings aloud: the written corpus is out of scope for them
-          // (DECISIONS 修正 4), and their readings are counted as patterns.
-          if (collection === "symbols" && doc.register === "written") continue;
-          const n = collection === "symbols" ? countPattern(doc.text, candidate) : countPhrase(doc.text, candidate);
-          if (n === 0) continue;
-          const bucket = doc.register === "spoken" ? spoken : written;
-          bucket[candidate] ??= {};
-          bucket[candidate][doc.id] = (bucket[candidate][doc.id] ?? 0) + n;
-          sources.add(doc.id);
-          if (doc.register === "spoken") {
-            if (doc.auto) auto = true;
-            else human = true;
-          }
-          if (WITH_CONTEXTS) hits.push(...contexts(doc.text, candidate, doc.id));
+      const t = countEntry(docs, collection, candidates, headwordOf(collection, record));
+      if (t.sources.length === 0) continue;
+      if (WITH_CONTEXTS) {
+        for (const candidate of candidates) {
+          for (const doc of docs) hits.push(...contexts(doc.text, candidate, doc.id));
         }
       }
-
-      if (sources.size === 0) continue;
-
-      const head = headwordOf(collection, record);
-      const s = mergeCandidates(spoken, head);
-      const w = mergeCandidates(written, head);
-      const merges = [...s.merges];
-      for (const m of w.merges) {
-        if (!merges.some((x) => x.into === m.into && x.from.join() === m.from.join())) merges.push(m);
-      }
-
       entries.push({
         collection,
         id: data.id,
-        spoken: s.counts,
-        written: w.counts,
-        merges,
-        sources: [...sources].sort(),
-        autoOnly: auto && !human,
+        spoken: t.spoken,
+        written: t.written,
+        merges: t.merges,
+        sources: t.sources,
+        autoOnly: t.auto && !t.human,
       });
     }
   }

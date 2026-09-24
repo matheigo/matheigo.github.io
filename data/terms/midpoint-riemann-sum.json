@@ -6,16 +6,20 @@
     "alt": []
   },
   "en": {
-    "term": "midpoint rule",
-    "alt": [
-      "midpoint Riemann sum"
-    ],
+    "term": "midpoint Riemann sum",
+    "alt": [],
     "uk": null,
-    "register": "written"
+    "variants": [
+      {
+        "term": "midpoint rule",
+        "register": "written",
+        "note": "大学の教科書の書き言葉。OpenStax Calculus Volume 2・3 に 43 件あり、話し言葉コーパスには 0 件。数値積分の方法の名前として使う。"
+      }
+    ]
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "見出しの「中点リーマン和」は日本の教科書に無い、本プロジェクトの訳語。",
   "domains": [
     "calculus"
   ],
@@ -55,6 +59,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 6.2（left ／ right ／ midpoint Riemann sums）"
     }
   ],
   "confidence": "likely",
@@ -66,7 +76,7 @@
   "updated": "2026-09-24",
   "evidence": {
     "written": {
-      "midpoint rule": 43
+      "midpoint rule": 44
     },
     "sources": [
       "openstax-calculus"

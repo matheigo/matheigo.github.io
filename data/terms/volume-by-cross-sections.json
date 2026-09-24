@@ -7,8 +7,18 @@
   },
   "en": {
     "term": "slicing method",
-    "alt": [
-      "method of slicing"
+    "alt": [],
+    "variants": [
+      {
+        "term": "slicing method",
+        "register": "written",
+        "note": "OpenStax Calculus の書き方。話し言葉では 0 件、書き言葉で 21 件（すべて OpenStax Calculus）。"
+      },
+      {
+        "term": "method of slicing",
+        "register": "written",
+        "note": "話し言葉で 1 件（すべて MIT OCW）、書き言葉で 4 件（OpenStax Calculus 3・MIT の講義ノート 1）。"
+      }
     ],
     "uk": null,
     "register": "written"
@@ -42,7 +52,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "AP Calculus の問題では、cross sections perpendicular to the x-axis are squares（x 軸に垂直な断面は正方形）のように断面の形を指定して出題されることが多い。"
+    "AP の CED は、断面が正方形・長方形の場合（topic 8.7）と三角形・半円の場合（topic 8.8）を別の topic にしている。問題文では cross sections perpendicular to the x-axis are squares（x 軸に垂直な断面は正方形）のように断面の形を指定する。"
   ],
   "related": [
     "cross-sectional-area",
@@ -52,6 +62,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 8.7–8.8（volumes with cross sections）"
     }
   ],
   "confidence": "likely",
@@ -62,11 +78,16 @@
   },
   "updated": "2026-09-24",
   "evidence": {
+    "spoken": {
+      "method of slicing": 1
+    },
     "written": {
       "slicing method": 21,
-      "method of slicing": 3
+      "method of slicing": 4
     },
     "sources": [
+      "mit-18.01",
+      "mit-notes",
       "openstax-calculus"
     ],
     "counted": "2026-09-24"
