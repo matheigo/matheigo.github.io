@@ -314,6 +314,20 @@ WIKI_WRONG = {
     "base": "底 (初等幾何学) は図形の底。累乗の底（base of a power）ではない",
 }
 
+# Rows the English check would accept only through a disambiguation page, but
+# whose ja article is a different concept from the headword (修正 4). A
+# disambiguation page lists every sense of a word, so linking to the ja
+# article's langlink shows only that the word has that sense too - not that
+# the headword means it. The disambiguation rule itself stays; these rows are
+# excluded one by one, like WIKI_WRONG.
+EN_CHECK_WRONG = {
+    "substitution": "代入 (論理学) → Substitution (logic) は論理式の置換。式への値の代入ではない",
+    "pole": "極 (複素解析) → Zeros and poles は複素関数の極。極座標の極（pole）ではない",
+    "diverge": "発散 (ベクトル解析) → Divergence はベクトル場の発散（div）。数列・級数の発散ではない",
+    "similarity-transformation": "行列の相似 → Matrix similarity は P⁻¹AP。図形の相似変換ではない",
+    "characteristic-equation": "固有多項式 → Characteristic polynomial は行列の特性多項式。漸化式の特性方程式ではない",
+}
+
 # ----------------------------------------------------------- 4. level_jp "—"
 # The level a Japanese student meets the underlying content at. Content that is
 # not in the Japanese school curriculum at all is 大学 (same rule as the US-side

@@ -9,9 +9,10 @@
 - pnpm crosscheck … Wikipedia langlinks / 対訳表との突合（`-- --write` で flags を書き戻す）
 - pnpm corpus:fetch … 用例コーパスの取得元一覧 / マニフェスト検証（PLAN 15）
 - pnpm corpus:fetch:ocw … MIT OCW の書き起こし(.vtt)を自動取得（公式配布・CC BY-NC-SA）
-  YouTube / Khan は人間が手で実行する: `pnpm corpus:fetch:captions -- khan-ap-calc`（設定済みの再生リストを一括）／
-  `./scripts/corpus/fetch-captions.sh <id> <url>`（任意の 1 URL）
+  YouTube / Khan は人間が手で実行する: `pnpm corpus:fetch:captions`（Khan 3 ソースと YouTube 6 チャンネルを一括。
+  `-- <id>` で絞る）／ `./scripts/corpus/fetch-captions.sh <id> <url>`（任意の 1 URL）
 - pnpm corpus:fetch:openstax … OpenStax 6 冊の本文（CNXML）を written コーパスとして取得（CC BY-NC-SA、コミット固定）
+- pnpm corpus:fetch:notes … MIT OCW の講義ノート（PDF → pdftotext）を written コーパス mit-notes として取得
 - pnpm corpus:count … コーパスの重複（同じファイル・同じ文）を除いて候補表現を数える → corpus/counts.json
 - pnpm corpus:decide … 頻度比で register を決め、`-- --write` で evidence と flags を書き戻す
 - pnpm build      … validate → search-index → サイト → dist/data の書き出しまで通す

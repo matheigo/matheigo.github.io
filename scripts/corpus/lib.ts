@@ -204,6 +204,42 @@ export function countPhrase(haystack: string, phrase: string): number {
   return (haystack.match(re) ?? []).length;
 }
 
+/**
+ * Wildcard match for symbol readings (DECISIONS 修正 4). A reading names its
+ * variables ("from a to b"), but a lecture integrates from 0 to 1, from
+ * negative infinity to infinity ... so a literal count finds almost nothing.
+ * In a pattern each `*` stands for one to WILDCARD_MAX words; everything else
+ * is literal and whole-phrase, as in countPhrase. terms / phrases stay literal.
+ */
+export const WILDCARD_MAX = 5;
+
+export function countPattern(haystack: string, pattern: string): number {
+  const parts = normalize(pattern.replace(/\*/g, " \u0000 ")).split(" ").filter(Boolean);
+  if (parts.length === 0 || parts.every((w) => w === "\u0000")) return 0;
+  const slot = `[^ ]+(?: [^ ]+){0,${WILDCARD_MAX - 1}}?`;
+  const body = parts.map((w) => (w === "\u0000" ? slot : escape(w))).join(" ");
+  const re = new RegExp(`(?<![\\w-])${body}(?![\\w-])`, "g");
+  return (haystack.match(re) ?? []).length;
+}
+
+/**
+ * Symbol readings counted as patterns: symbol id -> reading as written in
+ * spoken_en -> the pattern counted for it. The pattern is also the key the
+ * counts and `evidence` are recorded under, so nobody mistakes a pattern
+ * count for a literal one.
+ */
+export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
+  "integral-definite": {
+    "the integral from a to b of f of x d x": "the integral from * to * of",
+    "the integral of f of x from a to b": "the integral of * from * to *",
+  },
+};
+
+/** The wording a candidate is counted and recorded as. */
+export function countedAs(collection: string, id: string, wording: string): string {
+  return collection === "symbols" ? (SYMBOL_PATTERNS[id]?.[wording] ?? wording) : wording;
+}
+
 export interface ContextHit {
   candidate: string;
   source: string;
@@ -453,7 +489,7 @@ export function candidatesOf(collection: string, entry: Record<string, unknown>)
     out.push(en.term, ...(en.alt ?? []), ...(en.variants ?? []).map((v) => v.term));
     for (const c of (entry.collocations as { en: string }[] | undefined) ?? []) out.push(c.en);
   } else if (collection === "symbols") {
-    for (const s of (entry.spoken_en as { text: string }[]) ?? []) out.push(s.text);
+    for (const s of (entry.spoken_en as { text: string }[]) ?? []) out.push(countedAs(collection, entry.id as string, s.text));
   } else if (collection === "phrases") {
     out.push(entry.en as string);
     for (const v of (entry.variants as { en: string }[] | undefined) ?? []) out.push(v.en);

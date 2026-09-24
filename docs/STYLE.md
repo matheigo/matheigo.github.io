@@ -46,10 +46,10 @@ Stewart *Calculus* や Larson *Precalculus* は書名を出典に挙げるだけ
 | 微分係数 | differential coefficient | derivative at a point ／ the value of the derivative at x=a | near |
 | 解と係数の関係 | relation of solutions and coefficients | Vieta's formulas（大学）／ relationship between roots and coefficients（高校では説明的に） | near |
 | 平方完成 | — | completing the square（完成形は vertex form） | exact |
-| 移項 | transposition | subtract 3 from both sides ／ add 3 to both sides ／ move it over to the other side（話し言葉はこの頻度順） | near |
+| 移項 | transposition | subtract 3 from both sides ／ add 3 to both sides ／ move it over to the other side（話し言葉はこの頻度順。書き言葉は両辺の言い方） | near |
 | 約分 | — | reduce (a fraction) ／ cancel（動詞） | near |
 | 通分 | — | find a common denominator（動詞句） | near |
-| 代入 | — | plug in ／ substitute（話し言葉は併記、書き言葉は substitute） | exact |
+| 代入 | — | plug in ／ substitute（話し言葉は plug in、書き言葉は substitute。高校向けの Khan は話し言葉でも substitute） | exact |
 | たすき掛け | cross multiplication | ac method ／ grouping ／ box method | none |
 | 相加相乗平均 | — | AM–GM inequality | exact |
 | はさみうちの原理 | — | squeeze theorem（sandwich theorem は英国寄り） | exact |
@@ -65,8 +65,8 @@ register が違う言い方は `en.variants` に `register` を付けて入れ�
 
 | 日本語 | 話し言葉 | 書き言葉・答案 |
 |---|---|---|
-| 移項する | subtract 3 from both sides ／ add 3 to both sides ／ move the 3x over to the other side（②併記。159 ／ 146 ／ 31） | エントリは主張しない（判断不能として扱う決定）。OpenStax 6 冊を入れたら from both sides 24 ／ to both sides 24 で ② が出たので、register 不一致として人間レビュー待ち |
-| 代入する | plug in ／ substitute ／ substitute back（②併記。358 ／ 253 ／ 22） | substitute（①。OpenStax 6 冊で 704 対 5）。エントリは substitute を both にした |
+| 移項する | subtract 3 from both sides ／ add 3 to both sides ／ move the 3x over to the other side（②併記。249 ／ 243 ／ 52。両辺は高校向け、other side は大学の講義寄り） | subtract 3 from both sides ／ add 3 to both sides（②併記。25 ／ 26）。両辺の 2 つは register both |
+| 代入する | plug in（①。1,403 対 substitute 361。Khan は substitute がほぼ全部）／ substitute back | substitute（①。739 対 35）。エントリは substitute を both にした |
 | よって | so | therefore / hence |
 
 Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を好むことが多い。迷ったら written 側を答案に使う。

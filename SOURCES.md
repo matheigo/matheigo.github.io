@@ -52,8 +52,8 @@ BY-SA や商用ライセンスの資料からは一文も写していない（CL
 
 ## 教科書の基準
 
-- **OpenStax *Calculus* Volume 1**（CC BY 4.0）— 微積分の用語・記法の第一基準。`textbook` 出典はまずこれ
-- OpenStax *Precalculus* / *Algebra and Trigonometry* / *Introductory Statistics*（CC BY 4.0）
+- **OpenStax *Calculus* Volume 1**（CC BY-NC-SA 4.0）— 微積分の用語・記法の第一基準。`textbook` 出典はまずこれ
+- OpenStax *Precalculus* / *Algebra and Trigonometry* / *Introductory Statistics*（CC BY-NC-SA 4.0）
 - Stewart *Calculus*、Larson *Precalculus* — 書名を出典に挙げるのみ。文章は引かない
 
 ## 用例コーパス（PLAN 15）
@@ -63,9 +63,10 @@ BY-SA や商用ライセンスの資料からは一文も写していない（CL
 
 - MIT OpenCourseWare の講義・演習の書き起こし（.vtt、CC BY-NC-SA 4.0）— 人手の書き起こしで、数式の読み方が正確。
   `pnpm corpus:fetch:ocw` が OCW のサーバから直接取得する
-- Khan Academy / YouTube の字幕 — `scripts/corpus/fetch-captions.sh` を人間が手で実行する。自動字幕は `auto: true` で区別し、
-  記号の読み上げの唯一の根拠にはしない
-- OpenStax の教科書本文 — `register: written` の根拠
+- Khan Academy / YouTube の字幕 — `pnpm corpus:fetch:captions`（設定済みのソースを一括）か `scripts/corpus/fetch-captions.sh` を
+  人間が手で実行する。自動字幕は `auto: true` で区別し、記号の読み上げの唯一の根拠にはしない
+- OpenStax の教科書本文（CC BY-NC-SA 4.0）— `register: written` の根拠。`pnpm corpus:fetch:openstax`
+- MIT OCW の講義ノート（PDF、CC BY-NC-SA 4.0）— `register: written` の根拠。`pnpm corpus:fetch:notes`
 
 ## 突合のしかた
 

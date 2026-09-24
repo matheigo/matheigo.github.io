@@ -37,7 +37,7 @@ Phase 0 完了時点の状態と、Phase 1 を別セッションで始めるた�
 - `sameWording` の統合は語形変化と引数省略のみ。`integral` / `integrate` / `integration` は別の語
 - ソースの重み付けは max(25%, 1/ソース数) の water-filling。拒否ではない
 - 記号の count はワイルドカード照合（`countPattern`）。terms / phrases は literal
-- `textbook` 出典の第一基準は **OpenStax *Calculus* Volume 1**（CC BY 4.0）
+- `textbook` 出典の第一基準は **OpenStax *Calculus* Volume 1**（CC BY-NC-SA 4.0）
 
 ---
 

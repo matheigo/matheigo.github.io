@@ -310,7 +310,9 @@ def apply_en_check(rows, stats):
         # ja article's langlink among its meanings, the term does point there
         # (DECISIONS 2026-09-24, 修正 3). No exception rows.
         via_disambig = bool(a and b and via_term.get("disambig") and a in w["disambig_links"].get(b, []))
-        if a and b and ((a == b and not via_term.get("disambig")) or via_disambig):
+        # ... except rows listed as a different concept (fix_decisions.EN_CHECK_WRONG).
+        wrong = D.EN_CHECK_WRONG.get(r["id"]) if via_disambig else None
+        if a and b and ((a == b and not via_term.get("disambig")) or via_disambig) and not wrong:
             r["ja_check"] = "ok"
             if via_disambig:
                 ok_disambig.append(r["id"])
@@ -319,7 +321,9 @@ def apply_en_check(rows, stats):
                 r["wiki_en"] = ll
             ok.append(r["id"])
             continue
-        if not ll:
+        if wrong:
+            reason = f"別概念（曖昧さ回避経由）: {wrong}"
+        elif not ll:
             reason = "ja 記事に en 版なし"
         elif not a:
             reason = "langlink 先が en に無い"

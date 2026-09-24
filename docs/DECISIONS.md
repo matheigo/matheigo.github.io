@@ -140,3 +140,20 @@
 - 2026-09-24 | 0 | OpenStax の取得順は Algebra and Trigonometry を Precalculus より先にする | 2 冊は多くの節を共有していて、dedupe は先に来た本に残す。範囲の広い本に残すため。Precalculus 86 節のうち 78 節が写しとして落ちる
 - 2026-09-24 | 0 | STYLE 原則 5 に追記: OCW・OpenStax（と Khan の字幕）は CC BY-NC-SA なので、例文・定義文・note にコーパスの文を転載しない。使うのは件数だけ。辞典のデータは CC0 のまま | あなたの決定
 - 2026-09-24 | 0 | STYLE の直訳禁止リストと register 表の 移項・代入 の行をコーパスの結論に合わせた（「plug in が圧倒的」を「併記」に、移項の話し言葉を頻度順に） | 表とエントリが食い違ったままだと、次のバッチで古い表に合わせてしまう
+
+## Phase 1 修正 4 — 2026-09-24
+
+- 2026-09-24 | 1 | 曖昧さ回避経由で ok になった 5 件（substitution 代入、pole 極、diverge 発散する、similarity-transformation 相似変換、characteristic-equation 特性方程式）は別概念として外す。`fix_decisions.py` に `EN_CHECK_WRONG` を新設して 1 行ずつ足し、`fix_phase1.py` の英語照合が参照する。曖昧さ回避の規則そのものは変えない | あなたの決定。理由: ja 側の着地記事が見出しと別の概念で、曖昧さ回避ページのリンクは同一概念の証拠にならない。title 行 ok 166 → 161、source が戻ったのは substitution・pole の 2 件（→ editorial）
+- 2026-09-24 | 0 | symbols/integral-definite の候補表現をワイルドカードにした: the integral from * to * of。記号の written は「対象外」として判定しない（数えず、flag も出さない） | あなたの決定。話 ③（3 件）→ ①（246 対 11、22.4:1）
+- 2026-09-24 | 0 | `countPattern` を実装した（`lib.ts`）。PHASE1-HANDOFF に「記号の count はワイルドカード照合（countPattern）」とあったが、コードにはどのコミットにも存在しなかった。`*` は 1〜5 語、他は literal・語境界つきで countPhrase と同じ。使うのは symbols だけで、読みごとのパターンは `SYMBOL_PATTERNS`。counts と evidence のキーはパターンそのもの | literal と取り違えないため。5 語は「from negative infinity to infinity」「from x equals zero to x equals one」を拾い、文をまたいだ誤一致を抑える幅
+- 2026-09-24 | 0 | integral-definite の 2 本目の読み（the integral of f of x from a to b）も the integral of * from * to * にした | 片方だけパターンにすると literal との比較になり、比が構造的に偏る
+- 2026-09-24 | 0 | move-term-to-other-side: from both sides と to both sides の register を both にした。to the other side は spoken のまま | あなたの決定（書き言葉 ② 24/24 の根拠。修正 4 の全量では 25/26）。register 不一致は解消
+- 2026-09-24 | 0 | substitute と move-term-to-other-side の variants の note に、件数から分かる使い分けを自作の文で書いた | あなたの決定。YouTube 投入後の件数で書いた: plug in は OCW 353・YouTube 1,045・Khan 5、substitute は Khan 132・OCW 128・YouTube 101。「substitute は Khan 中心」は「Khan はほぼ substitute だけ」という形で書いた（substitute の総数では Khan が 37%）。移項は両辺が Khan・YouTube 中心、other side は OCW 28/52
+- 2026-09-24 | 0 | PLAN.md 15 と SOURCES.md の「OpenStax は CC BY 4.0」を CC BY-NC-SA 4.0 に直した。PHASE1-HANDOFF.md の同じ誤りも直した | あなたの決定（2026-09-24 修正 3 の行「仕様書は書き換えず」を上書き）
+- 2026-09-24 | 0 | `tsc --noEmit` を通した: decide.ts の byId を `Map<string, …>` に型付け、`src/env.d.ts`（astro/client の型参照）を追加。後者は src/lib/data.ts の import.meta.glob の 6 件 | あなたの決定（decide.ts）。env.d.ts は Astro の標準ファイルで、無いと tsc が通らなかった
+- 2026-09-24 | 0 | コーパスを PLAN 15 の全量にした（あなたの決定）。取得は `pnpm corpus:fetch:captions`（Khan 3 ソース＋YouTube 6 チャンネルを一括）と新設の `pnpm corpus:fetch:notes` を 1 つのバックグラウンドジョブで並列に回した | 19 ソース、重複除去後 5,203,004 語（話 3,222,833 ／ 書 1,980,171）。詳細は audits/phase1-fix4-report.md
+- 2026-09-24 | 0 | khan-algebra の元の再生リストは記録が無かったので、キャッシュ 182 件のファイル名（yt-dlp の %(title).80B）と照合して特定した: Algebra I ｜ High School Math、Algebra II ｜ High School Math、Linear equations and inequalities ｜ Algebra Basics（計 235 本・重複を除いて 217 本、182 件すべて一致）。キャッシュはファイル名を <動画 ID>.txt に付け替え（manifest の位置は保つ）、残り 35 本を新しい字幕言語で取った | 35 本すべてに人手字幕があった。「最大 53 本の取りこぼし」は 35 本だった（53 は重複を数えていた）
+- 2026-09-24 | 0 | khan-ap-stats は AP Statistics の単元再生リスト 13 本（3 単元は新旧 2 本ずつ）、動画 166 本。チャンネルの一覧に出る ID が 13 文字の「PLMKj04Mp417E」は通常の再生リスト ID ではないので入れていない | 他の 13 本で単元はすべて埋まる
+- 2026-09-24 | 0 | YouTube 6 チャンネルは数学の再生リストだけを対象にし（Professor Leonard は再生リストのタブが無いので、講義名を含むタイトルかつ 10 分以上の動画）、1 チャンネル最大 100 本を一覧に均等に散らして選ぶ。NancyPi は 2 分以上の全動画（42 本）。3Blue1Brown は Essence of calculus / linear algebra など 6 本 | Leonard だけで 1,216 本・602 時間ある。上限なしでは取得に何日もかかり、1 チャンネルの比率上限 25%（重み付け）以前に一つの講師が語数を占める。均等に散らすのは単元の偏りを避けるため。結果は最大の Leonard でも 9.6%
+- 2026-09-24 | 0 | YouTube チャンネルは人手字幕を優先し、無ければ自動字幕の en-orig（元の音声認識トラック）を取る。manifest の auto で区別。自動字幕の "en"（翻訳版）は要求しない | "en" は 429 を返し続けた（1 本目で 3 回リトライして失敗）。en-orig は同じ動画で問題なく取れた。3 本続けて失敗したらそのソースを止める安全弁も足した
+- 2026-09-24 | 0 | mit-notes は OCW の講義ノート PDF を pdftotext で文章化: 18.01（Fall 2006）、18.02（Fall 2007）、18.03（Spring 2010）の lecture notes、6.042J（Fall 2010）の course text。18.06 はノートが公開されていない（Strang の教科書）ので無し。合字（ﬁ・ﬀ）は NFKC で戻す | 109 PDF・497,533 語。18.01 の単元まとめ PDF と 6.042 の全文 PDF が各回・各章と重なるので、dedupe で 48 ファイルが写しとして落ち 278,411 語になる。重なりは dedupe に任せ、取得側では選ばない

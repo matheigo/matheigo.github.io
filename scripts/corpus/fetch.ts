@@ -9,12 +9,14 @@
  *
  *   MIT OCW   automated - OCW publishes its own .vtt transcripts under
  *             CC BY-NC-SA. See fetch-ocw.ts (`pnpm corpus:fetch:ocw`).
+ *   OCW notes automated - lecture-note PDFs from OCW, through pdftotext. See
+ *             fetch-notes.ts (`pnpm corpus:fetch:notes`).
  *   OpenStax  automated - the book source (CNXML) is public on GitHub. See
  *             fetch-openstax.ts (`pnpm corpus:fetch:openstax`).
  *   YouTube   manual - terms of service are the operator's call, and it needs
- *   / Khan    yt-dlp. fetch-captions.ts runs the configured playlists as one
- *             batch (khan-ap-calc); fetch-captions.sh takes any one URL.
- *             You run them, not CI.
+ *   / Khan    yt-dlp. fetch-captions.ts runs every configured Khan playlist and
+ *             YouTube channel as one batch; fetch-captions.sh takes any one
+ *             URL. You run them, not CI.
  *
  * corpus/ is gitignored. Transcript text never enters the repository - only
  * counts, source ids and dates do (PLAN 15, licensing).
@@ -42,7 +44,7 @@ const PLANNED: Omit<ManifestEntry, "file">[] = [
   { id: "mit-18.03", register: "spoken", auto: false, title: "MIT OCW 18.03 Differential Equations", license: "CC BY-NC-SA" },
   { id: "mit-6.042", register: "spoken", auto: false, title: "MIT OCW 6.042 Mathematics for Computer Science", license: "CC BY-NC-SA" },
   // spoken, captions
-  { id: "khan-algebra", register: "spoken", auto: false, title: "Khan Academy Algebra 1-2", license: "CC BY-NC-SA" },
+  { id: "khan-algebra", register: "spoken", auto: false, title: "Khan Academy Algebra", license: "CC BY-NC-SA" },
   { id: "khan-ap-calc", register: "spoken", auto: false, title: "Khan Academy AP Calculus", license: "CC BY-NC-SA" },
   { id: "khan-ap-stats", register: "spoken", auto: false, title: "Khan Academy AP Statistics", license: "CC BY-NC-SA" },
   { id: "yt:profleonard", register: "spoken", auto: true, title: "Professor Leonard", license: "captions, counted as facts only" },
@@ -79,8 +81,9 @@ function list() {
   console.log("excluded:");
   for (const e of EXCLUDED) console.log(`  - ${e}`);
   console.log(`\nMIT OCW:        pnpm corpus:fetch:ocw`);
+  console.log(`OCW notes:      pnpm corpus:fetch:notes`);
   console.log(`OpenStax:       pnpm corpus:fetch:openstax`);
-  console.log(`Khan (batch):   pnpm corpus:fetch:captions -- khan-ap-calc   (run by hand)`);
+  console.log(`Khan / YouTube: pnpm corpus:fetch:captions [-- <id> ...]   (run by hand)`);
   console.log(`YouTube / Khan: ./scripts/corpus/fetch-captions.sh <id> <url>   (run by hand)`);
   console.log(`Anything else:  plain text at corpus/<id>/*.txt, listed in corpus/manifest.json.`);
   console.log(`See scripts/corpus/manifest.example.json for the shape.`);

@@ -25,7 +25,9 @@ import {
   balance,
   candidatesOf,
   contexts,
+  countPattern,
   countPhrase,
+  countedAs,
   dedupe,
   mergeCandidates,
   normalize,
@@ -79,10 +81,10 @@ function loadCorpus(): CorpusDoc[] {
     }));
 }
 
-/** The wording currently used as the entry's headword. */
+/** The wording currently used as the entry's headword (as counted: a symbol pattern where one is set). */
 function headwordOf(collection: Collection, data: Record<string, unknown>): string {
   if (collection === "terms") return (data.en as { term: string }).term;
-  if (collection === "symbols") return (data.spoken_en as { text: string }[])[0].text;
+  if (collection === "symbols") return countedAs(collection, data.id as string, (data.spoken_en as { text: string }[])[0].text);
   return data.en as string;
 }
 
@@ -140,7 +142,10 @@ function main() {
 
       for (const candidate of candidates) {
         for (const doc of docs) {
-          const n = countPhrase(doc.text, candidate);
+          // Symbols are readings aloud: the written corpus is out of scope for them
+          // (DECISIONS 修正 4), and their readings are counted as patterns.
+          if (collection === "symbols" && doc.register === "written") continue;
+          const n = collection === "symbols" ? countPattern(doc.text, candidate) : countPhrase(doc.text, candidate);
           if (n === 0) continue;
           const bucket = doc.register === "spoken" ? spoken : written;
           bucket[candidate] ??= {};

@@ -14,22 +14,22 @@
       {
         "term": "plug in",
         "register": "spoken",
-        "note": "教室で最も多い言い方（話し言葉コーパス 358 件）。教科書の文章ではほとんど使わない（書き言葉コーパス 5 件）。"
+        "note": "話し言葉コーパスで 1,403 件と最も多い。大学の講義（MIT OCW 353 件）と YouTube の講義・解説（1,045 件）で使われ、高校向けの Khan Academy ではほとんど出てこない（5 件）。教科書の文章では少ない（書き言葉 35 件、うち 30 件は MIT の講義ノート）。"
       },
       {
         "term": "substitute",
         "register": "both",
-        "note": "話し言葉では plug in に次ぐ（253 件）。書き言葉コーパス（OpenStax 6 冊）では 704 件でほぼこれだけ。答案ではこちら。"
+        "note": "話し言葉で 361 件。高校向けの Khan Academy はほぼこちらだけを使う（132 件、plug in は 5 件）。大学の講義でも使うが plug in のほうが多い（OCW で 128 対 353）。書き言葉（OpenStax・MIT の講義ノート）では 739 件でほぼこれだけ。答案ではこちら。"
       },
       {
         "term": "substitute back",
         "register": "spoken",
-        "note": "求めた値や置き換えた式を、もとの式に戻して代入すること。話し言葉コーパスで 22 件。"
+        "note": "求めた値や置き換えた式を、もとの式に戻して代入すること。話し言葉コーパスで 29 件。"
       },
       {
         "term": "sub in",
         "register": "spoken",
-        "note": "略式。頻度は低い。"
+        "note": "略式。頻度は低い（話し言葉コーパスで 2 件）。"
       }
     ],
     "uk": null,
@@ -79,7 +79,7 @@
     }
   ],
   "pitfalls": [
-    "教室では plug in が多いが、substitute も普通に聞こえる。どちらか一方が正しいわけではない（話し言葉コーパスで 358 対 253）。答案・教科書では substitute。",
+    "大学の講義や YouTube の解説では plug in が多い（話し言葉 1,403 対 361）。ただし高校向けの Khan Academy は substitute を使うので、どちらも耳にする。答案・教科書では substitute。",
     "substitute A for B は「B の代わりに A を入れる」。順序を逆にしやすい。"
   ],
   "related": [
@@ -99,27 +99,36 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "plug in": 358,
-      "substitute": 253,
-      "substitute back": 22
+      "plug in": 1403,
+      "substitute": 361,
+      "substitute back": 29,
+      "sub in": 2
     },
     "written": {
-      "plug in": 5,
-      "substitute": 704,
+      "plug in": 35,
+      "substitute": 739,
       "substitute back": 5
     },
     "sources": [
       "khan-algebra",
       "khan-ap-calc",
+      "khan-ap-stats",
       "mit-18.01",
       "mit-18.02",
       "mit-18.03",
       "mit-18.06",
       "mit-6.042",
+      "mit-notes",
       "openstax-algtrig",
       "openstax-calculus",
       "openstax-introstats",
-      "openstax-precalculus"
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
     ],
     "counted": "2026-09-24"
   }

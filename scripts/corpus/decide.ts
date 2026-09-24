@@ -14,6 +14,9 @@
  * `evidence` stores the raw counts, because those are the facts; the
  * weighting is a reading of them.
  *
+ * Symbols are readings aloud, so their written verdict is "対象外" (out of
+ * scope): it is not judged and raises no flag (DECISIONS 修正 4).
+ *
  * Only two things reach the human (the user's call on 2026-09-11):
  *   - undecided entries
  *   - entries where the corpus contradicts the register recorded in the data
@@ -22,6 +25,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { ROOT, loadAll, type Collection } from "../lib/load.js";
 import {
+  countedAs,
   decide,
   flatten,
   headsOf,
@@ -38,7 +42,9 @@ const TODAY = new Date().toISOString().slice(0, 10);
 const CORPUS = path.join(ROOT, "corpus");
 const COUNTED: Collection[] = ["terms", "symbols", "phrases"];
 
-function describe(v: Verdict): string {
+/** null: the register is out of scope for the entry (symbols, written). */
+function describe(v: Verdict | null): string {
+  if (v === null) return "対象外";
   if (v.kind === "single") {
     return `${v.head}（${v.ratio === Infinity ? "唯一" : `${v.ratio.toFixed(1)}:1`}）`;
   }
@@ -72,8 +78,9 @@ function recordedAt(collection: Collection, data: Record<string, unknown>, regis
     }
   } else if (collection === "symbols") {
     // "standard" is the neutral reading: it counts for both registers.
+    // A reading counted as a pattern is compared as that pattern.
     for (const s of (data.spoken_en as { text: string; register: string }[]) ?? []) {
-      if (s.register === "standard" || s.register === register) out.push(s.text);
+      if (s.register === "standard" || s.register === register) out.push(countedAs(collection, data.id as string, s.text));
     }
   } else {
     const isWritten = (r: string) => r === "written";
@@ -89,7 +96,7 @@ function recordedAt(collection: Collection, data: Record<string, unknown>, regis
 interface Line {
   key: string;
   spoken: Verdict;
-  written: Verdict;
+  written: Verdict | null;
   merges: { into: string; from: string[] }[];
   mismatch: string | null;
 }
@@ -104,7 +111,9 @@ function main() {
   const weights = sourceWeights(file.sources);
 
   const all = loadAll();
-  const byId = new Map(COUNTED.flatMap((c) => all[c].map((e) => [`${c}/${e.data.id}`, e] as const)));
+  const byId = new Map<string, (typeof all)[Collection][number]>(
+    COUNTED.flatMap((c) => all[c].map((e) => [`${c}/${e.data.id}`, e] as const)),
+  );
 
   const lines: Line[] = [];
 
@@ -115,7 +124,7 @@ function main() {
     const record = entry.data as unknown as Record<string, unknown>;
 
     const spoken = decide(weigh(c.spoken, weights), "spoken");
-    const written = decide(weigh(c.written, weights), "written");
+    const written = c.collection === "symbols" ? null : decide(weigh(c.written, weights), "written");
 
     // Contradiction: the corpus settled on a wording the entry does not file
     // at that register. Merging already folded inflection and ellipsis away,
@@ -125,6 +134,7 @@ function main() {
       ["spoken", spoken],
       ["written", written],
     ] as const) {
+      if (verdict === null) continue;
       const heads = headsOf(verdict);
       if (heads.length === 0) continue;
       const recorded = recordedAt(c.collection, record, register);
@@ -149,7 +159,7 @@ function main() {
     const flags = ((record.flags as { code: string }[] | undefined) ?? []).filter(
       (f) => !f.code.startsWith("corpus-"),
     );
-    if (spoken.kind === "undecided" && written.kind === "undecided") {
+    if (spoken.kind === "undecided" && (written === null || written.kind === "undecided")) {
       flags.push({
         code: "corpus-undecided",
         note: `コーパスで決まらない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`,
@@ -178,9 +188,9 @@ function main() {
   }
 
   // ------------------------------------------------------------- report ---
-  const single = lines.filter((l) => l.spoken.kind === "single" || l.written.kind === "single");
-  const both = lines.filter((l) => l.spoken.kind === "both" || l.written.kind === "both");
-  const undecided = lines.filter((l) => l.spoken.kind === "undecided" && l.written.kind === "undecided");
+  const single = lines.filter((l) => l.spoken.kind === "single" || l.written?.kind === "single");
+  const both = lines.filter((l) => l.spoken.kind === "both" || l.written?.kind === "both");
+  const undecided = lines.filter((l) => l.spoken.kind === "undecided" && (l.written === null || l.written.kind === "undecided"));
   const mismatched = lines.filter((l) => l.mismatch);
   const merges = lines.filter((l) => l.merges.length);
 

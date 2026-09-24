@@ -3,6 +3,7 @@ import {
   balance,
   candidatesOf,
   cnxmlToText,
+  countPattern,
   countPhrase,
   decide,
   dedupe,
@@ -42,6 +43,32 @@ describe("countPhrase", () => {
 
   it("returns zero rather than a partial match", () => {
     expect(countPhrase(text, "plug in the quadratic formula")).toBe(0);
+  });
+});
+
+describe("countPattern", () => {
+  const text = normalize(
+    "so the integral from 0 to 1 of x squared, and the integral from negative infinity to infinity of e to the minus x squared. " +
+      "the integral of f of x from a to b",
+  );
+
+  it("lets each * stand for one to five words", () => {
+    expect(countPattern(text, "the integral from * to * of")).toBe(2);
+    expect(countPattern(text, "the integral of * from * to *")).toBe(1);
+  });
+
+  it("needs at least one word in each slot, and matches whole words", () => {
+    expect(countPattern(normalize("the integral from to of"), "the integral from * to * of")).toBe(0);
+    expect(countPattern(normalize("the integrals from 0 to 1 of"), "the integral from * to * of")).toBe(0);
+  });
+
+  it("does not stretch a slot past five words", () => {
+    const long = normalize("the integral from one two three four five six to 1 of x");
+    expect(countPattern(long, "the integral from * to * of")).toBe(0);
+  });
+
+  it("without a * it is countPhrase", () => {
+    expect(countPattern(text, "the integral")).toBe(countPhrase(text, "the integral"));
   });
 });
 
