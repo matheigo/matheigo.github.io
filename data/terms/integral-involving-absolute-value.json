@@ -1,0 +1,82 @@
+{
+  "id": "integral-involving-absolute-value",
+  "ja": {
+    "term": "絶対値を含む積分",
+    "reading": "ぜったいちをふくむせきぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "integral involving an absolute value",
+    "alt": [
+      "integral of the absolute value"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "被積分関数に絶対値を含む定積分。絶対値の中の符号が変わる点で区間を分けて計算する。",
+  "definition_en": "A definite integral whose integrand contains an absolute value; you split the interval where the expression inside changes sign.",
+  "latex": "\\int_0^2 |x-1|\\,dx = 1",
+  "spoken_en": "the integral from zero to two of the absolute value of x minus one, dx, equals one",
+  "examples": [
+    {
+      "en": "With an absolute value inside, figure out where x minus one is negative and split the integral there.",
+      "ja": "絶対値があるときは、x − 1 が負になるところを調べて、そこで区間を分ける。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "|x − 1| は the absolute value of x minus one と読む。"
+  ],
+  "related": [
+    "split-the-integral",
+    "area-is-never-negative"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "integral of the absolute value": 7
+    },
+    "written": {
+      "integral of the absolute value": 1
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

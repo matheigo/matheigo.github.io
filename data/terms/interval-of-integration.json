@@ -1,0 +1,114 @@
+{
+  "id": "interval-of-integration",
+  "ja": {
+    "term": "積分区間",
+    "reading": "せきぶんくかん",
+    "alt": []
+  },
+  "en": {
+    "term": "limits of integration",
+    "alt": [
+      "interval of integration"
+    ],
+    "variants": [
+      {
+        "term": "bounds of integration",
+        "register": "spoken",
+        "note": "話し言葉で 38 件と最も多い（Khan Academy 22・MIT OCW 11・YouTube 5）。書き言葉にはほぼ出ない（1 件）。"
+      },
+      {
+        "term": "limits of integration",
+        "register": "both",
+        "note": "話し言葉で 24 件、書き言葉で 55 件。教科書の文章ではこちら。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の「積分区間」は区間 a ≦ x ≦ b そのものを指すが、米国では区間より両端の値を limits of integration（話し言葉では bounds of integration も）と呼ぶのがふつう。interval of integration も通じるが、コーパスでは少ない（話し言葉 4 件・書き言葉 1 件）。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "定積分で積分する x の範囲 a ≦ x ≦ b。両端の a を下端、b を上端という。",
+  "definition_en": "The interval from a to b over which a definite integral is taken; its endpoints are the limits of integration.",
+  "latex": "\\int_0^2 x^2\\,dx",
+  "spoken_en": "the integral from zero to two of x squared dx",
+  "examples": [
+    {
+      "en": "What are the bounds of integration here? Zero to two.",
+      "ja": "ここの積分区間は？ 0 から 2 だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "The limits of integration are x = 0 and x = 2.",
+      "ja": "積分区間は 0 ≦ x ≦ 2 である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "change the limits of integration",
+      "ja": "積分区間を変える"
+    }
+  ],
+  "pitfalls": [
+    "bounds は「上界・下界」の意味でも使う語。積分の話では上端・下端のことを言っている。"
+  ],
+  "related": [
+    "upper-limit",
+    "lower-limit",
+    "definite-integral",
+    "substitution-in-a-definite-integral"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "limits of integration": 24,
+      "interval of integration": 4,
+      "bounds of integration": 38
+    },
+    "written": {
+      "limits of integration": 55,
+      "interval of integration": 1,
+      "bounds of integration": 1,
+      "change the limits of integration": 10
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

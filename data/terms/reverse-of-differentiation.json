@@ -1,0 +1,87 @@
+{
+  "id": "reverse-of-differentiation",
+  "ja": {
+    "term": "微分の逆",
+    "reading": "びぶんのぎゃく",
+    "alt": []
+  },
+  "en": {
+    "term": "antidifferentiation",
+    "alt": [
+      "reverse of differentiation"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "微分すると与えられた関数になる関数を求めること。原始関数を求める操作。",
+  "definition_en": "The process of finding a function from its derivative, that is, finding an antiderivative.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Antidifferentiation is just differentiation run backwards.",
+      "ja": "微分の逆は、微分を逆向きにたどるだけ。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "動詞 antidifferentiate もあるが、授業では take the antiderivative と言うほうが多い（話し言葉コーパスで 68 対 10）。"
+  ],
+  "related": [
+    "inverse-operation",
+    "antiderivative",
+    "integration",
+    "fundamental-theorem-of-calculus"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "antidifferentiation": 5,
+      "reverse of differentiation": 1
+    },
+    "written": {
+      "antidifferentiation": 1,
+      "reverse of differentiation": 1
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-calculus",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 6 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

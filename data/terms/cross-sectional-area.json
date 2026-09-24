@@ -1,0 +1,86 @@
+{
+  "id": "cross-sectional-area",
+  "ja": {
+    "term": "断面積",
+    "reading": "だんめんせき",
+    "alt": []
+  },
+  "en": {
+    "term": "cross-sectional area",
+    "alt": [
+      "area of the cross section"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "立体を平面で切ったときの切り口の面積。",
+  "definition_en": "The area of the slice you get when a solid is cut by a plane.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Write the cross-sectional area as a function of x, then integrate it from a to b.",
+      "ja": "断面積を x の関数で表して、a から b まで積分する。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書は断面積を S(x) と書くことが多いが、米国の教科書では A(x) と書くことが多い。"
+  ],
+  "related": [
+    "volume-by-cross-sections",
+    "volume-of-a-solid-of-revolution"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "断面",
+      "en": "Cross section (geometry)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "cross-sectional area": 9,
+      "area of the cross section": 6
+    },
+    "written": {
+      "cross-sectional area": 15
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

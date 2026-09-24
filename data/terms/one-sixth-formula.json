@@ -1,0 +1,70 @@
+{
+  "id": "one-sixth-formula",
+  "ja": {
+    "term": "1/6 公式",
+    "reading": "ろくぶんのいちこうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "one-sixth formula",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "日本の受験で使う公式で、米国の教科書・授業では扱わず、英語の決まった名前もない。one-sixth formula と言っても通じないので、答案で使うなら公式そのもの（∫_α^β (x − α)(x − β) dx = −(β − α)³/6）を書くか、ふつうに積分して見せる。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "放物線と直線で囲まれた部分の面積を、交点の x 座標 α、β だけから求める公式。∫_α^β (x − α)(x − β) dx = −(β − α)³/6 を使う。",
+  "definition_en": "A shortcut taught in Japan: the integral of (x − α)(x − β) from α to β is −(β − α)³/6, so the area between a parabola and a line follows from the intersection points alone.",
+  "latex": "\\int_{\\alpha}^{\\beta} (x-\\alpha)(x-\\beta)\\,dx = -\\frac{(\\beta-\\alpha)^3}{6}",
+  "spoken_en": "the integral from alpha to beta of the quantity x minus alpha times the quantity x minus beta, dx, equals negative the quantity beta minus alpha, cubed, over six",
+  "examples": [
+    {
+      "en": "I used a shortcut I learned in Japan: the integral of (x − α)(x − β) from α to β is −(β − α)³ over 6. Is it OK to use that on the exam?",
+      "ja": "日本で習った近道を使いました。(x − α)(x − β) を α から β まで積分すると −(β − α)³/6 になります。試験で使ってもいいですか。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の授業は途中式（show your work）を重く見るので、公式だけで答えを出すと過程が足りないと見られることがある。使うなら公式を示してから使う。"
+  ],
+  "related": [
+    "area-between-a-parabola-and-a-line",
+    "area-between-two-curves"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

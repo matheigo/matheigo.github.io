@@ -1,0 +1,73 @@
+{
+  "id": "integral-of-an-odd-function",
+  "ja": {
+    "term": "奇関数の定積分",
+    "reading": "きかんすうのていせきぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "integral of an odd function",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "奇関数 f(x) を原点に関して対称な区間で積分すると 0 になる。",
+  "definition_en": "For an odd function, the integral from −a to a is 0.",
+  "latex": "\\int_{-a}^{a} f(x)\\,dx = 0",
+  "spoken_en": "the integral from negative a to a of f of x dx equals zero",
+  "examples": [
+    {
+      "en": "Sine is odd, so the integral from negative pi to pi is zero. The areas cancel.",
+      "ja": "sin は奇関数だから、−π から π までの積分は 0。面積が打ち消し合う。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "奇関数は odd function。グラフが原点に関して対称（symmetric about the origin）な関数。",
+    "積分が 0 でも、面積が 0 とは限らない。"
+  ],
+  "related": [
+    "integrals-of-even-and-odd-functions",
+    "integral-of-an-even-function",
+    "integrand"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

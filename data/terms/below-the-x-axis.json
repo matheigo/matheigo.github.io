@@ -1,0 +1,86 @@
+{
+  "id": "below-the-x-axis",
+  "ja": {
+    "term": "x 軸より下",
+    "reading": "えっくすじくよりした",
+    "alt": []
+  },
+  "en": {
+    "term": "below the x-axis",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "グラフが x 軸の下側にあること。その区間では関数の値が負になる。",
+  "definition_en": "Lying under the x-axis, where the function's values are negative.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "This piece is below the x-axis, so its integral comes out negative.",
+      "ja": "この部分は x 軸より下にあるから、積分は負になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "On (2, 3), the graph lies below the x-axis.",
+      "ja": "区間 (2, 3) では、グラフは x 軸より下にある。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "反対は above the x-axis。「x 軸より下の部分」は the part below the x-axis。"
+  ],
+  "related": [
+    "area-under-the-curve",
+    "definite-integrals-and-area",
+    "area-is-never-negative"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "below the x-axis": 42
+    },
+    "written": {
+      "below the x-axis": 1
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-notes",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

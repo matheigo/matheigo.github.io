@@ -1,0 +1,117 @@
+{
+  "id": "integrate",
+  "ja": {
+    "term": "積分する",
+    "reading": "せきぶんする",
+    "alt": []
+  },
+  "en": {
+    "term": "integrate",
+    "alt": [],
+    "variants": [
+      {
+        "term": "take the integral",
+        "register": "spoken",
+        "note": "話し言葉で 58 件（Khan Academy 26・MIT OCW 16・YouTube 16）。書き言葉には出ない。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "関数の原始関数や定積分を求めること。",
+  "definition_en": "To find an antiderivative or a definite integral of a function.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Go ahead and integrate term by term; each piece is just the power rule.",
+      "ja": "項ごとに積分していいよ。どの項もべき乗の公式でできる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Integrating both sides with respect to x gives y = x³ + C.",
+      "ja": "両辺を x で積分すると y = x³ + C を得る。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "integrate both sides",
+      "ja": "両辺を積分する"
+    },
+    {
+      "en": "integrate with respect to x",
+      "ja": "x で積分する"
+    }
+  ],
+  "pitfalls": [
+    "「x で積分する」は integrate with respect to x。by x や about x とは言わない。",
+    "目的語は直接とる: integrate x squared（x² を積分する）。名詞で言うなら take the integral of x squared。"
+  ],
+  "related": [
+    "integration",
+    "antiderivative",
+    "indefinite-integral",
+    "definite-integral"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "integrate": 818,
+      "take the integral": 58,
+      "integrate both sides": 40
+    },
+    "written": {
+      "integrate": 226,
+      "integrate both sides": 17
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

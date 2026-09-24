@@ -1,0 +1,111 @@
+{
+  "id": "integration",
+  "ja": {
+    "term": "積分",
+    "reading": "せきぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "integration",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "関数から原始関数や定積分を求める操作。微分の逆の操作にあたる。",
+  "definition_en": "The process of finding antiderivatives or definite integrals; it undoes differentiation.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Differentiation is mechanical, but integration takes some guesswork.",
+      "ja": "微分は機械的にできるけど、積分はある程度見当をつけないといけない。",
+      "register": "spoken"
+    },
+    {
+      "en": "This problem requires integration by parts twice.",
+      "ja": "この問題は部分積分を 2 回行う必要がある。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "do the integration",
+      "ja": "積分を実行する"
+    },
+    {
+      "en": "techniques of integration",
+      "ja": "積分の手法"
+    }
+  ],
+  "pitfalls": [
+    "日本語の「積分」は操作にも式にも使うが、英語では操作は integration、∫ で書かれた式そのものは an integral と言い分ける（take the integral ／ this integral diverges）。"
+  ],
+  "related": [
+    "integrate",
+    "indefinite-integral",
+    "definite-integral",
+    "inverse-operation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "積分法",
+      "en": "Integral calculus"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "integration": 578,
+      "do the integration": 12,
+      "techniques of integration": 7
+    },
+    "written": {
+      "integration": 426,
+      "techniques of integration": 4
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

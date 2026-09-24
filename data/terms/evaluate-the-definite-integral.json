@@ -1,0 +1,83 @@
+{
+  "id": "evaluate-the-definite-integral",
+  "ja": {
+    "term": "定積分を計算する",
+    "reading": "ていせきぶんをけいさんする",
+    "alt": []
+  },
+  "en": {
+    "term": "evaluate the definite integral",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "定積分の値を求めること。",
+  "definition_en": "To compute the value of a definite integral.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's evaluate the definite integral from one to four: find an antiderivative, then plug in.",
+      "ja": "1 から 4 までの定積分を計算しよう。原始関数を求めて、代入する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate the definite integral ∫₁⁴ √x dx.",
+      "ja": "定積分 ∫₁⁴ √x dx を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の問題文では、積分の値を「求めよ」に evaluate を使うことが多い（書き言葉で evaluate the integral 94 件、compute the integral 9 件）。"
+  ],
+  "related": [
+    "definite-integral",
+    "fundamental-theorem-of-calculus"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "evaluate the definite integral": 15
+    },
+    "written": {
+      "evaluate the definite integral": 13
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

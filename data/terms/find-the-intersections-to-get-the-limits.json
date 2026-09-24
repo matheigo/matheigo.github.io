@@ -1,0 +1,87 @@
+{
+  "id": "find-the-intersections-to-get-the-limits",
+  "ja": {
+    "term": "交点を求めて積分区間を決める",
+    "reading": "こうてんをもとめてせきぶんくかんをきめる",
+    "alt": []
+  },
+  "en": {
+    "term": "find the points of intersection",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "2 つのグラフの交点の x 座標を求め、それを定積分の上端・下端にすること。",
+  "definition_en": "To find where two graphs cross and use those x-values as the limits of integration.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Set the two equal and solve. The points of intersection give you your limits.",
+      "ja": "2 つの式を等しいとおいて解いて。交点が積分区間の端になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the points of intersection of y = x² and y = x + 2; these are the limits of integration.",
+      "ja": "y = x² と y = x + 2 の交点の x 座標を求め、積分区間とする。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "口頭では set them equal ／ set them equal to each other（等しいとおく）とも言う。"
+  ],
+  "related": [
+    "area-between-two-curves",
+    "area-between-a-parabola-and-a-line",
+    "interval-of-integration"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "find the points of intersection": 9
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "inverse-operation",
+  "ja": {
+    "term": "逆演算",
+    "reading": "ぎゃくえんざん",
+    "alt": []
+  },
+  "en": {
+    "term": "inverse operation",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "ある演算の結果をもとに戻す演算。積分は微分の逆演算にあたる。",
+  "definition_en": "An operation that undoes another one; integration is the inverse operation of differentiation.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Integration and differentiation are inverse operations. One undoes the other.",
+      "ja": "積分と微分は互いに逆演算。一方がもう一方を打ち消す。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の Pre-Algebra でも、方程式を解くときの足し算と引き算、掛け算と割り算の関係を inverse operations と呼ぶ。"
+  ],
+  "related": [
+    "reverse-of-differentiation",
+    "antiderivative",
+    "integration"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "inverse operation": 2
+    },
+    "sources": [
+      "mit-18.01",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "antiderivative",
+  "ja": {
+    "term": "原始関数",
+    "reading": "げんしかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "antiderivative",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "意味は同じだが、言い分けが違う。米国では F′(x) = f(x) となる関数 1 つを an antiderivative と呼び、+C を付けた全体は indefinite integral（または the most general antiderivative）と呼ぶ。日本の数IIの教科書は原始関数と不定積分を同じ意味で使うことがあるので、英語では 1 つを指すのか全体を指すのかで言い分ける。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "微分すると f(x) になる関数 F(x)。F′(x) = f(x) を満たす。",
+  "definition_en": "A function F whose derivative is f, so that F′(x) = f(x).",
+  "latex": "F'(x) = f(x)",
+  "spoken_en": "F prime of x equals f of x",
+  "examples": [
+    {
+      "en": "What's an antiderivative of cosine? Sine works, since the derivative of sine is cosine.",
+      "ja": "cos の原始関数は何？ sin を微分すると cos だから sin でいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Since F′(x) = f(x) on the interval, F is an antiderivative of f there.",
+      "ja": "その区間で F′(x) = f(x) だから、F は f の原始関数である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "find an antiderivative",
+      "ja": "原始関数を 1 つ見つける"
+    },
+    {
+      "en": "take the antiderivative",
+      "ja": "原始関数を求める"
+    }
+  ],
+  "pitfalls": [
+    "原始関数は定数の差を除いて無数にあるので、英語では an antiderivative と不定冠詞で言うのが正確。授業では take the antiderivative と the を付けて言うことも多い。",
+    "anti-derivative とハイフンを入れて書くこともある。意味は同じ。"
+  ],
+  "related": [
+    "indefinite-integral",
+    "constant-of-integration",
+    "integrate",
+    "reverse-of-differentiation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "antiderivative": 765,
+      "find an antiderivative": 23,
+      "take the antiderivative": 92
+    },
+    "written": {
+      "antiderivative": 183,
+      "find an antiderivative": 7,
+      "take the antiderivative": 4
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

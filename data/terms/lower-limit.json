@@ -1,0 +1,91 @@
+{
+  "id": "lower-limit",
+  "ja": {
+    "term": "下端",
+    "reading": "かたん",
+    "alt": []
+  },
+  "en": {
+    "term": "lower limit",
+    "alt": [
+      "lower limit of integration"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "定積分 ∫ₐᵇ f(x)dx で、積分記号の下に書く a。",
+  "definition_en": "The number a written at the bottom of the integral sign in ∫ₐᵇ f(x) dx.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Don't forget to subtract the value at the lower limit.",
+      "ja": "下端での値を引くのを忘れないで。",
+      "register": "spoken"
+    },
+    {
+      "en": "Swapping the upper and lower limits changes the sign of the integral.",
+      "ja": "上端と下端を入れ替えると、定積分の符号が変わる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉では lower bound や the bottom とも言う。"
+  ],
+  "related": [
+    "upper-limit",
+    "interval-of-integration",
+    "definite-integral"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "lower limit": 23,
+      "lower limit of integration": 3
+    },
+    "written": {
+      "lower limit": 21,
+      "lower limit of integration": 2
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

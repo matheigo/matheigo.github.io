@@ -50,6 +50,9 @@ export const VARIANTS: [RegExp, string][] = [
   [/\bsubstituting\b/g, "substitute"],
   [/\bsubstitutes?\b/g, "substitute"],
   [/\bsquare\s+rooting\b/g, "square root"],
+  // Hyphenation only. "u sub" is left alone: it is also how a subscript is read (u sub n).
+  [/\bu\s+substitution/g, "u-substitution"],
+  [/\banti[-\s]derivative/g, "antiderivative"],
 ];
 
 /** Numbers spoken aloud. Transcripts mix digits and words. */

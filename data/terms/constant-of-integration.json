@@ -1,0 +1,89 @@
+{
+  "id": "constant-of-integration",
+  "ja": {
+    "term": "積分定数",
+    "reading": "せきぶんていすう",
+    "alt": []
+  },
+  "en": {
+    "term": "constant of integration",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "不定積分に加える任意の定数。ふつう C で表す。",
+  "definition_en": "The arbitrary constant, usually C, added to an antiderivative to write the indefinite integral.",
+  "latex": "\\int 2x\\,dx = x^2 + C",
+  "spoken_en": "the integral of two x dx equals x squared plus C",
+  "examples": [
+    {
+      "en": "Every antiderivative of 2x is x squared plus some number, and that number is your constant of integration.",
+      "ja": "2x の原始関数はどれも x² にある数を足したもの。その数が積分定数。",
+      "register": "spoken"
+    },
+    {
+      "en": "The initial condition y(0) = 3 gives the constant of integration C = 3.",
+      "ja": "初期条件 y(0) = 3 から、積分定数は C = 3 と決まる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "授業では名前より plus C と言うことが多い（話し言葉コーパスで plus C 324 件、constant of integration 21 件）。",
+    "「ただし C は積分定数」に当たる英語は where C is a constant。米国の教科書の解答例では省くことが多い。",
+    "定積分では C は F(b) − F(a) で打ち消し合うので書かない。"
+  ],
+  "related": [
+    "indefinite-integral",
+    "antiderivative",
+    "plus-c",
+    "dont-forget-the-plus-c"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "constant of integration": 21
+    },
+    "written": {
+      "constant of integration": 11
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-24"
+  }
+}

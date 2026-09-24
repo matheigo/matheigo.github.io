@@ -35,7 +35,7 @@ import {
   type Register,
   type Verdict,
 } from "./lib.js";
-import type { CountsFile } from "./count.js";
+import type { CountsFile, EntryCounts } from "./count.js";
 
 const WRITE = process.argv.includes("--write");
 const TODAY = new Date().toISOString().slice(0, 10);
@@ -117,10 +117,21 @@ function main() {
 
   const lines: Line[] = [];
 
-  for (const c of file.entries) {
-    const key = `${c.collection}/${c.id}`;
-    const entry = byId.get(key);
-    if (!entry) continue;
+  // count.ts only lists entries with at least one hit. An entry with none has
+  // still been counted - zero is fewer than MIN_TOTAL - so it is judged too,
+  // as undecided, rather than skipped past the human review.
+  const counted = new Map<string, EntryCounts>(file.entries.map((c) => [`${c.collection}/${c.id}`, c]));
+
+  for (const [key, entry] of byId) {
+    const c = counted.get(key) ?? {
+      collection: entry.collection,
+      id: entry.data.id,
+      spoken: {},
+      written: {},
+      merges: [],
+      sources: [],
+      autoOnly: false,
+    };
     const record = entry.data as unknown as Record<string, unknown>;
 
     const spoken = decide(weigh(c.spoken, weights), "spoken");

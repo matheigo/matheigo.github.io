@@ -1,0 +1,122 @@
+{
+  "id": "summation-notation",
+  "ja": {
+    "term": "和の記号",
+    "reading": "わのきごう",
+    "alt": [
+      "シグマ記法での和",
+      "シグマ"
+    ]
+  },
+  "en": {
+    "term": "sigma notation",
+    "alt": [],
+    "variants": [
+      {
+        "term": "summation notation",
+        "register": "written",
+        "note": "書き言葉で 35 件（OpenStax Algebra and Trigonometry が 31 件）と、sigma notation（23 件）より多い。話し言葉では 10 件。"
+      },
+      {
+        "term": "sigma notation",
+        "register": "both",
+        "note": "話し言葉で 43 件（Khan Academy 31 件）と summation notation の 4 倍。書き言葉でも 23 件。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences",
+    "calculus",
+    "notation"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "Σ を使って和を簡潔に書く記法。Σ の下と上に、添字の始まりと終わりの値を書く。",
+  "definition_en": "A compact way to write a sum with the symbol Σ, with the first and last values of the index written below and above it.",
+  "latex": "\\sum_{i=1}^{n} i^2",
+  "spoken_en": "the sum from i equals one to n of i squared",
+  "examples": [
+    {
+      "en": "Let's write this sum in sigma notation so we don't have to list every term.",
+      "ja": "全部の項を書かなくていいように、この和を Σ で書こう。",
+      "register": "spoken"
+    },
+    {
+      "en": "In summation notation, the Riemann sum is Σᵢ₌₁ⁿ f(xᵢ)Δx.",
+      "ja": "Σ 記号を使うと、リーマン和は Σᵢ₌₁ⁿ f(xᵢ)Δx と書ける。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "in sigma notation",
+      "ja": "Σ を使って"
+    }
+  ],
+  "pitfalls": [
+    "日本の教科書は添字に k を使うことが多いが（Σ_{k=1}^{n}）、米国の微積分の教科書では i が多い。この i は虚数単位ではない。",
+    "Σ は sigma と読み、式全体は the sum from i equals one to n of … と読む。"
+  ],
+  "related": [
+    "riemann-sum",
+    "limit-of-a-riemann-sum"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "総和",
+      "en": "Summation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "sigma notation": 43,
+      "summation notation": 10,
+      "in sigma notation": 10
+    },
+    "written": {
+      "sigma notation": 23,
+      "summation notation": 35,
+      "in sigma notation": 4
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

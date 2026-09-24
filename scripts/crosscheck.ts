@@ -38,10 +38,18 @@ async function enTitleOf(
   const url =
     `${API}?action=query&prop=langlinks&lllang=en&redirects=1&format=json&formatversion=2` +
     `&titles=${encodeURIComponent(jaTitle)}&origin=*`;
-  const res = await fetch(url, {
-    headers: { "User-Agent": "MathEigo crosscheck (CC0 dataset)" },
-  });
-  if (!res.ok) throw new Error(`MediaWiki API ${res.status}`);
+  // The API answers 429 after about ten quick requests. Back off and retry
+  // rather than skip: a skipped entry is never checked.
+  let res: Response | undefined;
+  for (let attempt = 1; attempt <= 5; attempt++) {
+    res = await fetch(url, {
+      headers: { "User-Agent": "MathEigo crosscheck (CC0 dataset)" },
+    });
+    if (res.status !== 429) break;
+    const wait = Number(res.headers.get("retry-after")) || 10 * attempt;
+    await new Promise((r) => setTimeout(r, wait * 1000));
+  }
+  if (!res || !res.ok) throw new Error(`MediaWiki API ${res?.status}`);
   const json = (await res.json()) as {
     query?: {
       redirects?: { from: string; to: string }[];

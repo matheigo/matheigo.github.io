@@ -1,0 +1,85 @@
+{
+  "id": "integrals-of-even-and-odd-functions",
+  "ja": {
+    "term": "偶関数・奇関数の積分",
+    "reading": "ぐうかんすう・きかんすうのせきぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "integrals of even and odd functions",
+    "alt": [
+      "integrating even and odd functions"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "原点に関して対称な区間 −a ≦ x ≦ a での偶関数・奇関数の定積分の性質。偶関数なら 0 から a までの積分の 2 倍、奇関数なら 0 になる。",
+  "definition_en": "On an interval from −a to a, an even function integrates to twice its integral from 0 to a, and an odd function integrates to 0.",
+  "latex": "\\int_{-a}^{a} x^3\\,dx = 0",
+  "spoken_en": "the integral from negative a to a of x cubed dx equals zero",
+  "examples": [
+    {
+      "en": "Before you grind through this one, check whether the integrand is odd. If it is, the answer is zero.",
+      "ja": "計算に入る前に、被積分関数が奇関数か確かめて。奇関数なら答えは 0。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "条件の「−a から a まで」は、英語で from negative a to a、または an interval symmetric about 0 と言う。"
+  ],
+  "related": [
+    "integral-of-an-even-function",
+    "integral-of-an-odd-function",
+    "properties-of-integrals",
+    "integrand"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "integrals of even and odd functions": 1,
+      "integrating even and odd functions": 1
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

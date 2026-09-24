@@ -1,0 +1,94 @@
+{
+  "id": "integrand",
+  "ja": {
+    "term": "被積分関数",
+    "reading": "ひせきぶんかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "integrand",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "積分記号 ∫ と dx のあいだにある、積分される関数。",
+  "definition_en": "The function being integrated: what sits between the integral sign and dx.",
+  "latex": null,
+  "spoken_en": null,
+  "respelling": "IN-tuh-grand",
+  "examples": [
+    {
+      "en": "The integrand has a square root in it, so try a substitution.",
+      "ja": "被積分関数にルートが入っているから、置換してみよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Since the integrand is odd and the interval is symmetric about 0, the integral equals 0.",
+      "ja": "被積分関数が奇関数で区間が 0 に関して対称だから、積分の値は 0 である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "the integrand is odd",
+      "ja": "被積分関数が奇関数である"
+    }
+  ],
+  "pitfalls": [
+    "integral（積分）と綴りも音も近いので聞き分ける。integrand は語尾が -and。"
+  ],
+  "related": [
+    "definite-integral",
+    "indefinite-integral",
+    "integral-of-an-odd-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "integrand": 74
+    },
+    "written": {
+      "integrand": 84,
+      "the integrand is odd": 2
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

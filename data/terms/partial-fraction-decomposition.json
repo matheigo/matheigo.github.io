@@ -1,0 +1,115 @@
+{
+  "id": "partial-fraction-decomposition",
+  "ja": {
+    "term": "部分分数分解",
+    "reading": "ぶぶんぶんすうぶんかい",
+    "alt": []
+  },
+  "en": {
+    "term": "partial fraction decomposition",
+    "alt": [],
+    "variants": [
+      {
+        "term": "partial fractions",
+        "register": "both",
+        "note": "話し言葉で 45 件と partial fraction decomposition（38 件）より多く、do partial fractions のように手法の名前として使う。書き言葉でも 42 件。"
+      },
+      {
+        "term": "partial fraction decomposition",
+        "register": "both",
+        "note": "書き言葉で 52 件と最も多い。話し言葉でも 38 件。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数B",
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "分数式を、分母の因数ごとの簡単な分数式の和に分けること。",
+  "definition_en": "Rewriting a rational expression as a sum of simpler fractions, one for each factor of the denominator.",
+  "latex": "\\frac{1}{x(x+1)} = \\frac{1}{x} - \\frac{1}{x+1}",
+  "spoken_en": "one over x times x plus one equals one over x minus one over x plus one",
+  "examples": [
+    {
+      "en": "The denominator factors, so let's do partial fractions.",
+      "ja": "分母が因数分解できるから、部分分数に分けよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "The partial fraction decomposition of 1/(x² − 1) is (1/2)/(x − 1) − (1/2)/(x + 1).",
+      "ja": "1/(x² − 1) を部分分数分解すると (1/2)/(x − 1) − (1/2)/(x + 1) となる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "do partial fractions",
+      "ja": "部分分数分解する"
+    }
+  ],
+  "pitfalls": [
+    "数Bの数列の和で使う 1/k(k + 1) = 1/k − 1/(k + 1) の分解も英語では同じく partial fractions。和が打ち消し合って求まるものは telescoping sum と呼ぶ。"
+  ],
+  "related": [
+    "integral-of-a-rational-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "部分分数分解",
+      "en": "Partial fraction decomposition"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "partial fraction decomposition": 38,
+      "partial fractions": 45,
+      "do partial fractions": 4
+    },
+    "written": {
+      "partial fraction decomposition": 52,
+      "partial fractions": 42,
+      "do partial fractions": 1
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

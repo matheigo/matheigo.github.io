@@ -1,0 +1,94 @@
+{
+  "id": "top-minus-bottom",
+  "ja": {
+    "term": "上の曲線から下の曲線を引く",
+    "reading": "うえのきょくせんからしたのきょくせんをひく",
+    "alt": []
+  },
+  "en": {
+    "term": "top minus bottom",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "日本語では「上の式から下の式を引く」と説明するだけで、決まった言い方はない。米国の授業では top minus bottom（上 − 下）という合言葉で教えることがあり、y で積分するときは right minus left（右 − 左）と言う。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "2 曲線間の面積を求めるとき、上にある関数から下にある関数を引いて積分すること。",
+  "definition_en": "The rule for the area between two curves: integrate the upper function minus the lower function.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "It's top minus bottom, so that's x plus two minus x squared.",
+      "ja": "上から下を引くから、x + 2 − x² になるね。",
+      "register": "spoken"
+    },
+    {
+      "en": "On [−1, 2] the line lies above the parabola, so the integrand is (x + 2) − x².",
+      "ja": "区間 [−1, 2] では直線が放物線より上にあるので、被積分関数は (x + 2) − x² である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "right minus left",
+      "ja": "右の曲線から左の曲線を引く（y で積分するとき）"
+    }
+  ],
+  "pitfalls": [
+    "授業では the top function ／ the bottom function（上の関数・下の関数）、upper function ／ lower function とも言う。"
+  ],
+  "related": [
+    "area-between-two-curves",
+    "area-between-a-parabola-and-a-line",
+    "area-bounded-by-curves"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "top minus bottom": 2,
+      "right minus left": 3
+    },
+    "written": {
+      "top minus bottom": 1
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-algtrig",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

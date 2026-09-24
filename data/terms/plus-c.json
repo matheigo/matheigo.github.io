@@ -1,0 +1,88 @@
+{
+  "id": "plus-c",
+  "ja": {
+    "term": "プラス C",
+    "reading": "ぷらすしー",
+    "alt": []
+  },
+  "en": {
+    "term": "plus C",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本では「プラス C」は答案の書き方にすぎないが、米国の授業では plus C が積分定数そのものを指す呼び名としてよく使われる（話し言葉コーパスで plus C 324 件、constant of integration 21 件）。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "不定積分の末尾に付ける + C のこと。米国の授業では積分定数そのものを指して言う。",
+  "definition_en": "The + C written at the end of an indefinite integral; in class it often names the constant of integration itself.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "You lost a point because there's no plus C.",
+      "ja": "+C がないから 1 点減点ね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Each answer should end with + C.",
+      "ja": "どの答えにも + C を付けること。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "口頭では plus a constant と言うこともある。"
+  ],
+  "related": [
+    "constant-of-integration",
+    "dont-forget-the-plus-c",
+    "indefinite-integral"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "plus C": 324
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -31,6 +31,12 @@ describe("normalize", () => {
   it("repairs the common transcription slips", () => {
     expect(normalize("the intergral of the derivitive")).toBe("the integral of the derivative");
   });
+
+  it("folds hyphenation of the same word, but not a subscript read aloud", () => {
+    expect(normalize("do a u substitution")).toBe("do a u-substitution");
+    expect(normalize("the anti-derivative, the anti derivative")).toBe("the antiderivative, the antiderivative");
+    expect(normalize("u sub n")).toBe("u sub n");
+  });
 });
 
 describe("countPhrase", () => {

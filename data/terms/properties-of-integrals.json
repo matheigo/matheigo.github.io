@@ -1,0 +1,83 @@
+{
+  "id": "properties-of-integrals",
+  "ja": {
+    "term": "積分の性質",
+    "reading": "せきぶんのせいしつ",
+    "alt": []
+  },
+  "en": {
+    "term": "properties of the definite integral",
+    "alt": [
+      "properties of integrals"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "定数倍や和を分けて積分できること、区間を分けて足せること、上端と下端を入れ替えると符号が変わることなど、定積分の基本的な性質。",
+  "definition_en": "The basic rules for definite integrals: constants and sums can be pulled apart, intervals can be split and added, and swapping the limits changes the sign.",
+  "latex": "\\int_a^b f(x)\\,dx = -\\int_b^a f(x)\\,dx",
+  "spoken_en": "the integral from a to b of f of x dx equals negative the integral from b to a of f of x dx",
+  "examples": [
+    {
+      "en": "One property you'll use all the time: if you flip the limits, you pick up a negative sign.",
+      "ja": "よく使う性質：上端と下端を入れ替えるとマイナスが付く。",
+      "register": "spoken"
+    },
+    {
+      "en": "By the properties of the definite integral, ∫₀² (3x + 1) dx = 3∫₀² x dx + ∫₀² 1 dx.",
+      "ja": "積分の性質より ∫₀² (3x + 1) dx = 3∫₀² x dx + ∫₀² 1 dx。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "definite-integral",
+    "split-the-integral",
+    "integrals-of-even-and-odd-functions",
+    "inequalities-involving-integrals"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "properties of integrals": 5
+    },
+    "written": {
+      "properties of the definite integral": 8,
+      "properties of integrals": 2
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

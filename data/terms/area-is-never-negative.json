@@ -1,0 +1,76 @@
+{
+  "id": "area-is-never-negative",
+  "ja": {
+    "term": "面積が負にならない",
+    "reading": "めんせきがふにならない",
+    "alt": []
+  },
+  "en": {
+    "term": "area is never negative",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "面積は 0 以上の量なので、定積分が負になったときは符号を直す必要がある、という注意。",
+  "definition_en": "A reminder that area can't be negative, so a negative integral has to be adjusted when you want an area.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "You got negative six? Area is never negative, so something's off. Part of the region is probably below the axis.",
+      "ja": "−6 になった？ 面積は負にならないから、どこかおかしい。たぶん一部が x 軸の下にある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Because area is never negative, the part below the x-axis contributes −∫₂³ f(x) dx.",
+      "ja": "面積は負にならないので、x 軸より下の部分の面積は −∫₂³ f(x) dx である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "definite-integrals-and-area",
+    "below-the-x-axis",
+    "area-under-the-curve",
+    "integral-involving-absolute-value"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

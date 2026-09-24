@@ -1,0 +1,74 @@
+{
+  "id": "volume-by-cross-sections",
+  "ja": {
+    "term": "断面積による体積",
+    "reading": "だんめんせきによるたいせき",
+    "alt": []
+  },
+  "en": {
+    "term": "slicing method",
+    "alt": [
+      "method of slicing"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "立体の断面積を積分して体積を求める方法。断面積を S(x) とすると V = ∫ₐᵇ S(x)dx。",
+  "definition_en": "Finding a volume by integrating the area of its cross sections: V = ∫ₐᵇ A(x) dx.",
+  "latex": "V = \\int_a^b A(x)\\,dx",
+  "spoken_en": "V equals the integral from a to b of A of x dx",
+  "examples": [
+    {
+      "en": "The cross sections perpendicular to the x-axis are squares, so A of x is the side length squared.",
+      "ja": "x 軸に垂直な断面が正方形だから、A(x) は 1 辺の長さの 2 乗。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "AP Calculus の問題では、cross sections perpendicular to the x-axis are squares（x 軸に垂直な断面は正方形）のように断面の形を指定して出題されることが多い。"
+  ],
+  "related": [
+    "cross-sectional-area",
+    "volume-of-a-solid-of-revolution"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "slicing method": 21,
+      "method of slicing": 3
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

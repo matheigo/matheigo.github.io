@@ -1,0 +1,81 @@
+{
+  "id": "the-area-of-the-region-bounded-by",
+  "ja": {
+    "term": "〜で囲まれた図形の面積",
+    "reading": "でかこまれたずけいのめんせき",
+    "alt": []
+  },
+  "en": {
+    "term": "the area of the region bounded by",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "いくつかの曲線や直線で囲まれた図形の面積を問う、問題文の決まった言い方。",
+  "definition_en": "The standard wording of problems that ask for the area enclosed by given curves or lines.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "So we want the area of the region bounded by the parabola and the line. Draw it first.",
+      "ja": "放物線と直線で囲まれた図形の面積を求めたいんだから、まず図をかこう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the area of the region bounded by y = x² and y = 2x.",
+      "ja": "y = x² と y = 2x で囲まれた図形の面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「図形」に当たる語は figure ではなく region を使う。"
+  ],
+  "related": [
+    "enclosed-region",
+    "area-between-two-curves",
+    "area-bounded-by-curves",
+    "area-between-a-parabola-and-a-line"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "the area of the region bounded by": 10
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

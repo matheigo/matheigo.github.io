@@ -1,0 +1,93 @@
+{
+  "id": "upper-limit",
+  "ja": {
+    "term": "上端",
+    "reading": "じょうたん",
+    "alt": []
+  },
+  "en": {
+    "term": "upper limit",
+    "alt": [
+      "upper limit of integration"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "定積分 ∫ₐᵇ f(x)dx で、積分記号の上に書く b。",
+  "definition_en": "The number b written at the top of the integral sign in ∫ₐᵇ f(x) dx.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Plug in the upper limit first, then subtract what you get at the lower limit.",
+      "ja": "まず上端を代入して、そこから下端を代入した値を引く。",
+      "register": "spoken"
+    },
+    {
+      "en": "When the upper limit is the variable x, the integral defines a function of x.",
+      "ja": "上端が変数 x のとき、定積分は x の関数を表す。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉では upper bound（「上界」と同じ語）や the top、the top number とも言う。",
+    "統計の階級の上限も upper limit と言うので、文脈で区別する。"
+  ],
+  "related": [
+    "lower-limit",
+    "interval-of-integration",
+    "definite-integral",
+    "function-defined-by-an-integral"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "upper limit": 23,
+      "upper limit of integration": 3
+    },
+    "written": {
+      "upper limit": 26,
+      "upper limit of integration": 2
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

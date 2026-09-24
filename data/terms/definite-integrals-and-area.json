@@ -1,0 +1,87 @@
+{
+  "id": "definite-integrals-and-area",
+  "ja": {
+    "term": "定積分と面積",
+    "reading": "ていせきぶんとめんせき",
+    "alt": []
+  },
+  "en": {
+    "term": "signed area",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "「定積分と面積」は日本の教科書の節の名前で、英語に決まった言い方はない。米国では、定積分の値は signed area（x 軸より上の部分を正、下の部分を負として足した面積。net signed area とも）だと説明し、正の面積の合計は total area と呼んで区別する。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "定積分の値と面積の関係。f(x) が負になる区間では定積分は負になり、面積は −∫f(x)dx で求める。",
+  "definition_en": "How a definite integral relates to area: it counts area above the x-axis as positive and area below it as negative.",
+  "latex": "\\int_a^b f(x)\\,dx = A_{\\text{above}} - A_{\\text{below}}",
+  "spoken_en": "the integral from a to b of f of x dx equals the area above minus the area below",
+  "examples": [
+    {
+      "en": "The integral gives you signed area, so the part under the axis counts as negative.",
+      "ja": "定積分は符号付きの面積だから、x 軸より下の部分は負として数えられる。",
+      "register": "spoken"
+    },
+    {
+      "en": "The net signed area is 0, but the total area is 4.",
+      "ja": "定積分の値は 0 だが、面積は 4 である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国では「積分 = 面積」と言い切らず、net signed area と total area を分けて言う。答案で面積を求めるときは、x 軸より下の部分に絶対値を付けるか、区間を分けて符号を直す。"
+  ],
+  "related": [
+    "area-under-the-curve",
+    "below-the-x-axis",
+    "area-is-never-negative",
+    "definite-integral"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "signed area": 12
+    },
+    "written": {
+      "signed area": 21
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

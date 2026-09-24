@@ -1,0 +1,71 @@
+{
+  "id": "integral-of-an-even-function",
+  "ja": {
+    "term": "偶関数の定積分",
+    "reading": "ぐうかんすうのていせきぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "integral of an even function",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "偶関数 f(x) を原点に関して対称な区間で積分すると、0 から a までの積分の 2 倍になる。",
+  "definition_en": "For an even function, the integral from −a to a is twice the integral from 0 to a.",
+  "latex": "\\int_{-a}^{a} f(x)\\,dx = 2\\int_0^a f(x)\\,dx",
+  "spoken_en": "the integral from negative a to a of f of x dx equals two times the integral from zero to a of f of x dx",
+  "examples": [
+    {
+      "en": "x squared is even, so the integral from negative two to two is just twice the integral from zero to two.",
+      "ja": "x² は偶関数だから、−2 から 2 までの積分は 0 から 2 までの積分の 2 倍。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "偶関数は even function。グラフが y 軸に関して対称（symmetric about the y-axis）な関数。"
+  ],
+  "related": [
+    "integrals-of-even-and-odd-functions",
+    "integral-of-an-odd-function"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

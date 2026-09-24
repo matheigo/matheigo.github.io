@@ -1,0 +1,86 @@
+{
+  "id": "area-between-two-curves",
+  "ja": {
+    "term": "2 曲線間の面積",
+    "reading": "にきょくせんかんのめんせき",
+    "alt": []
+  },
+  "en": {
+    "term": "area between two curves",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "2 つの曲線 y = f(x)、y = g(x) にはさまれた部分の面積。区間で f(x) ≧ g(x) なら ∫ₐᵇ {f(x) − g(x)} dx で求める。",
+  "definition_en": "The area of the region between y = f(x) and y = g(x); if f(x) ≥ g(x) on [a, b], it equals ∫ₐᵇ (f(x) − g(x)) dx.",
+  "latex": "A = \\int_a^b \\bigl(f(x) - g(x)\\bigr)\\,dx",
+  "spoken_en": "A equals the integral from a to b of f of x minus g of x, dx",
+  "examples": [
+    {
+      "en": "For the area between two curves, it's always the top one minus the bottom one.",
+      "ja": "2 曲線間の面積は、いつも上の曲線から下の曲線を引く。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the area between the two curves y = x and y = x² on [0, 1].",
+      "ja": "区間 [0, 1] で 2 曲線 y = x、y = x² にはさまれた部分の面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "区間の途中で曲線の上下が入れ替わるときは、交点で積分を分けて、それぞれ上 − 下にする。",
+    "米国では同じ単元で、y で積分するやり方（右の曲線 − 左の曲線）も扱う。"
+  ],
+  "related": [
+    "area-under-the-curve",
+    "top-minus-bottom",
+    "find-the-intersections-to-get-the-limits",
+    "area-between-a-parabola-and-a-line",
+    "area-bounded-by-curves"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "area between two curves": 8
+    },
+    "written": {
+      "area between two curves": 11
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}
