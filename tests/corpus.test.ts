@@ -5,6 +5,7 @@ import {
   cnxmlToText,
   countPhrase,
   decide,
+  dedupe,
   headsOf,
   mergeCandidates,
   normalize,
@@ -206,5 +207,33 @@ describe("cnxmlToText", () => {
     const text = cnxmlToText(para("a &lt; b &amp; f&#8290;(x) &#8722; 1"));
     expect(text).not.toContain("m1");
     expect(text).toBe("a < b & f(x) \u2212 1");
+  });
+});
+
+describe("dedupe", () => {
+  const doc = (id: string, text: string, file = id): CorpusDoc => ({ id, register: "spoken", auto: false, text: normalize(text), file });
+  const lecture =
+    "Today we are going to talk about the derivative of a product of two functions. " +
+    "So you plug in the value and you see what happens to the limit as h goes to zero. " +
+    "Plug it in. Plug it in. That is the product rule and we will use it again next time in class.";
+  const notice = "The following content is provided under a Creative Commons license and is free to share.";
+
+  it("drops a file that is another copy of an earlier one", () => {
+    const { docs, stats, dropped } = dedupe([doc("mit-18.01", lecture, "a"), doc("mit-18.01", lecture, "b")]);
+    expect(docs.map((d) => d.file)).toEqual(["a"]);
+    expect(dropped.map((d) => d.file)).toEqual(["b"]);
+    expect(stats["mit-18.01"]).toMatchObject({ files: 2, droppedFiles: 1 });
+  });
+
+  it("removes a long sentence seen before but keeps short repeats", () => {
+    const { docs, stats } = dedupe([
+      doc("mit-18.01", `${notice} ${lecture}`),
+      doc("mit-18.02", `${notice} Now take the partial derivative with respect to x and hold y fixed while you do it. Plug it in.`),
+    ]);
+    expect(docs).toHaveLength(2);
+    expect(docs[1].text).not.toContain("creative commons");
+    expect(countPhrase(docs[0].text, "plug in")).toBe(3);
+    expect(countPhrase(docs[1].text, "plug in")).toBe(1);
+    expect(stats["mit-18.02"].droppedSentences).toBe(1);
   });
 });

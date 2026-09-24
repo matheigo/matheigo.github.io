@@ -7,6 +7,9 @@ For every row whose headword is a redirect to a differently named ja article
   ja  the landing ja article -> its en langlink
   en  that langlink, and en.term (as written, then Title Case) -> the
       en.wikipedia article after redirects, and whether it is a disambiguation
+  links  for every en.term that lands on a disambiguation page, the articles
+      that page links to (after redirects). A disambiguation page that links
+      to the ja article's langlink counts as a match (DECISIONS, 修正 3)
 
 The rows come from fix_phase1.transform(en_check=False), so this always asks
 for exactly what the next fix_phase1.py run will look up. Responses are cached
@@ -113,6 +116,35 @@ def parse_en(p):
     return {"page": p["title"], "disambig": "disambiguation" in (p.get("pageprops") or {})}
 
 
+def run_links(pages, cache):
+    """Disambiguation page -> the articles it links to, after redirects.
+    One page per query: a generator mixes the links of all input titles."""
+    todo = [p for p in pages if f"links:{p}" not in cache]
+    total, done, failed = len(pages), len(pages) - len(todo), 0
+    print(f"[wikipedia] links: {total} disambiguation pages, {done} cached, {len(todo)} to fetch", flush=True)
+    for page in todo:
+        try:
+            found, cont = set(), {}
+            while True:
+                d = api("en", {"titles": page, "generator": "links", "gplnamespace": "0", "gpllimit": "max",
+                               "redirects": "1", **cont})
+                for p in d.get("query", {}).get("pages", []):
+                    if not p.get("missing") and not p.get("invalid"):
+                        found.add(p["title"])
+                if "continue" not in d:
+                    break
+                cont = d["continue"]
+            cache[f"links:{page}"] = sorted(found)
+        except RuntimeError as e:
+            failed += 1
+            print(f"  {page} skipped ({e}); re-run to fetch it", flush=True)
+        json.dump(cache, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False)
+        done += 1
+        print(f"[wikipedia] links {done}/{total}", flush=True)
+        time.sleep(PAUSE)
+    return failed
+
+
 def main():
     rows, _, _, _ = F.transform(en_check=False)
     rows = F.title_rows(rows)
@@ -135,12 +167,17 @@ def main():
     failed += run("en", "en", sorted(en - set(bad)), cache,
                   {"prop": "pageprops", "ppprop": "disambiguation", "redirects": "1"}, parse_en)
 
+    dis = sorted({cache[f"en:{t}"]["page"] for t in en if cache.get(f"en:{t}", {}).get("disambig")})
+    failed += run_links(dis, cache)
+
     out = {
         "ja": {t: cache[f"ja:{t}"] for t in ja if f"ja:{t}" in cache},
         "en": {t: cache[f"en:{t}"] for t in sorted(en) if f"en:{t}" in cache},
+        "disambig_links": {p: cache[f"links:{p}"] for p in dis if f"links:{p}" in cache},
     }
     json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1, sort_keys=True)
-    print(f"[wikipedia] done: ja {len(out['ja'])}/{len(ja)}, en {len(out['en'])}/{len(en)}"
+    print(f"[wikipedia] done: ja {len(out['ja'])}/{len(ja)}, en {len(out['en'])}/{len(en)},"
+          f" links {len(out['disambig_links'])}/{len(dis)}"
           f"{f', {failed} not fetched (re-run)' if failed else ''} -> scripts/ledger/wiki_en.json", flush=True)
     return 1 if failed else 0
 

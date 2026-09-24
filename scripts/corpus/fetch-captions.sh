@@ -32,10 +32,12 @@ echo "fetching up to $MAX caption files for $ID"
 # The language list is exact on purpose: "en.*" also matches machine
 # translations into English from other tracks (en-bg, en-ko, ...), and those
 # all map to the same .txt name, so the last one converted would win.
+# Khan uploads its human captions as a named track (en-ehkg1hFWq8A, "English -
+# Default"), hence en-<11-character track id> as well as en and en-US.
 if [[ "${AUTO:-0}" == "1" ]]; then
   SUBS=(--write-auto-subs --sub-langs "en")
 else
-  SUBS=(--write-subs --sub-langs "en,en-US")
+  SUBS=(--write-subs --sub-langs 'en(-US|-[A-Za-z0-9_-]{11})?')
 fi
 yt-dlp \
   --skip-download \

@@ -5,6 +5,11 @@
  *
  *   pnpm corpus:count                 corpus/ -> corpus/counts.json
  *   pnpm corpus:count -- --contexts   also writes corpus/contexts.txt for review
+ *   pnpm corpus:count -- --no-dedupe  counts duplicates too (to measure what dedupe removes)
+ *
+ * Duplicates are removed first (lib.ts dedupe): a file that is another copy
+ * of an earlier one is dropped, and a long sentence seen before is removed.
+ * The dropped files are listed in corpus/dedupe.txt.
  *
  * Same-wording candidates are folded together here so they do not compete in
  * decide(): "completing the square" and "complete the square" are one wording.
@@ -21,16 +26,19 @@ import {
   candidatesOf,
   contexts,
   countPhrase,
+  dedupe,
   mergeCandidates,
   normalize,
   type ContextHit,
   type CorpusDoc,
+  type DedupeStats,
   type Merge,
 } from "./lib.js";
 import type { ManifestEntry } from "./fetch.js";
 
 const CORPUS = path.join(ROOT, "corpus");
 const WITH_CONTEXTS = process.argv.includes("--contexts");
+const DEDUPE = !process.argv.includes("--no-dedupe");
 const COUNTED: Collection[] = ["terms", "symbols", "phrases"];
 
 /** candidate -> source -> occurrences */
@@ -51,6 +59,8 @@ export interface CountsFile {
   counted: string;
   /** source id -> words, used by decide.ts to compute weights */
   sources: Record<string, number>;
+  /** source id -> what dedupe removed; absent with --no-dedupe */
+  dedupe?: Record<string, DedupeStats>;
   entries: EntryCounts[];
 }
 
@@ -65,6 +75,7 @@ function loadCorpus(): CorpusDoc[] {
       register: m.register,
       auto: m.auto,
       text: normalize(fs.readFileSync(path.join(CORPUS, m.file), "utf8")),
+      file: m.file,
     }));
 }
 
@@ -76,11 +87,29 @@ function headwordOf(collection: Collection, data: Record<string, unknown>): stri
 }
 
 function main() {
-  const docs = loadCorpus();
-  if (docs.length === 0) {
+  const loaded = loadCorpus();
+  if (loaded.length === 0) {
     console.log("corpus/ is empty - nothing to count.");
     console.log("MIT OCW: pnpm corpus:fetch:ocw     YouTube/Khan: scripts/corpus/fetch-captions.sh");
     return;
+  }
+
+  let docs = loaded;
+  let removed: Record<string, DedupeStats> | undefined;
+  if (DEDUPE) {
+    const d = dedupe(loaded);
+    docs = d.docs;
+    removed = d.stats;
+    console.log("dedupe (files dropped as copies / long sentences removed / words before -> after):");
+    for (const [id, st] of Object.entries(d.stats)) {
+      console.log(
+        `  ${id.padEnd(22)} ${String(st.droppedFiles).padStart(4)}/${st.files} files  ${String(st.droppedSentences).padStart(6)} sentences  ${st.wordsBefore.toLocaleString()} -> ${st.wordsAfter.toLocaleString()}`,
+      );
+    }
+    fs.writeFileSync(path.join(CORPUS, "dedupe.txt"), d.dropped.map((x) => x.file).join("\n") + "\n", "utf8");
+    console.log("  dropped files -> corpus/dedupe.txt");
+  } else {
+    console.log("dedupe: off (--no-dedupe)");
   }
 
   const { rows } = balance(docs);
@@ -150,6 +179,7 @@ function main() {
   const out: CountsFile = {
     counted: new Date().toISOString().slice(0, 10),
     sources: words,
+    ...(removed ? { dedupe: removed } : {}),
     entries,
   };
   fs.mkdirSync(CORPUS, { recursive: true });

@@ -12,7 +12,9 @@
  *   OpenStax  automated - the book source (CNXML) is public on GitHub. See
  *             fetch-openstax.ts (`pnpm corpus:fetch:openstax`).
  *   YouTube   manual - terms of service are the operator's call, and it needs
- *   / Khan    yt-dlp. See fetch-captions.sh; you run it, not CI.
+ *   / Khan    yt-dlp. fetch-captions.ts runs the configured playlists as one
+ *             batch (khan-ap-calc); fetch-captions.sh takes any one URL.
+ *             You run them, not CI.
  *
  * corpus/ is gitignored. Transcript text never enters the repository - only
  * counts, source ids and dates do (PLAN 15, licensing).
@@ -51,9 +53,9 @@ const PLANNED: Omit<ManifestEntry, "file">[] = [
   { id: "yt:3blue1brown", register: "spoken", auto: true, title: "3Blue1Brown", license: "captions, counted as facts only" },
   // written
   { id: "openstax-calculus", register: "written", auto: false, title: "OpenStax Calculus Vol 1-3", license: "CC BY-NC-SA 4.0" },
-  { id: "openstax-precalculus", register: "written", auto: false, title: "OpenStax Precalculus", license: "CC BY 4.0" },
-  { id: "openstax-algtrig", register: "written", auto: false, title: "OpenStax Algebra and Trigonometry", license: "CC BY 4.0" },
-  { id: "openstax-introstats", register: "written", auto: false, title: "OpenStax Introductory Statistics", license: "CC BY 4.0" },
+  { id: "openstax-precalculus", register: "written", auto: false, title: "OpenStax Precalculus 2e", license: "CC BY-NC-SA 4.0" },
+  { id: "openstax-algtrig", register: "written", auto: false, title: "OpenStax Algebra and Trigonometry 2e", license: "CC BY-NC-SA 4.0" },
+  { id: "openstax-introstats", register: "written", auto: false, title: "OpenStax Introductory Statistics 2e", license: "CC BY-NC-SA 4.0" },
   { id: "mit-notes", register: "written", auto: false, title: "MIT OCW lecture notes", license: "CC BY-NC-SA" },
 ];
 
@@ -78,6 +80,7 @@ function list() {
   for (const e of EXCLUDED) console.log(`  - ${e}`);
   console.log(`\nMIT OCW:        pnpm corpus:fetch:ocw`);
   console.log(`OpenStax:       pnpm corpus:fetch:openstax`);
+  console.log(`Khan (batch):   pnpm corpus:fetch:captions -- khan-ap-calc   (run by hand)`);
   console.log(`YouTube / Khan: ./scripts/corpus/fetch-captions.sh <id> <url>   (run by hand)`);
   console.log(`Anything else:  plain text at corpus/<id>/*.txt, listed in corpus/manifest.json.`);
   console.log(`See scripts/corpus/manifest.example.json for the shape.`);

@@ -12,19 +12,19 @@
     "alt": [],
     "variants": [
       {
-        "term": "to the other side",
-        "register": "spoken",
-        "note": "move the 3x over to the other side ／ bring it over to the other side の形で言う。口頭では定番。get it on the other side も同じ。"
-      },
-      {
         "term": "from both sides",
-        "register": "written",
-        "note": "subtract 3 from both sides の形で。答案ではこちら。Algebra 1 の先生は口頭でもこの「両辺に同じ操作」の言い方を好むことが多い。"
+        "register": "spoken",
+        "note": "subtract 3 from both sides の形で。話し言葉コーパス（MIT OCW・Khan Academy、重複除去後）で 159 件、最も多い。"
       },
       {
         "term": "to both sides",
-        "register": "written",
-        "note": "add 3 to both sides の形で。"
+        "register": "spoken",
+        "note": "add 3 to both sides の形で。話し言葉コーパスで 146 件。"
+      },
+      {
+        "term": "to the other side",
+        "register": "spoken",
+        "note": "move the 3x over to the other side ／ bring it over to the other side の形で。get it on the other side も同じ。話し言葉コーパスで 31 件。"
       }
     ],
     "uk": null,
@@ -32,7 +32,7 @@
   },
   "pos": "verb",
   "mapping": "near",
-  "mapping_note": "英語には「移項」に当たる一語の名詞がない。**名詞 transposition は使わない（通じない）。**口頭では「反対側へ動かす」という言い方（move it over to the other side）が定番だが、書くときは同じ操作を「両辺から引く／両辺に足す」と述べるのが標準で、Algebra 1 の先生は口頭でもこちらを好むことが多い。つまり spoken と written で言い方が変わる語。",
+  "mapping_note": "英語には「移項」に当たる一語の名詞がない。**名詞 transposition は使わない（通じない）。**教室の話し言葉では、同じ操作を「両辺から引く／両辺に足す」（subtract 3 from both sides ／ add 3 to both sides）と言うのが最も多く、「反対側へ動かす」（move it over to the other side）も普通に使われる。",
   "domains": [
     "algebra",
     "classroom"
@@ -57,9 +57,9 @@
       "register": "spoken"
     },
     {
-      "en": "Subtracting 5 from both sides gives 2x = 8.",
-      "ja": "5 を移項して 2x = 8 となる。",
-      "register": "written"
+      "en": "Subtract 5 from both sides, and now you've got 2x = 8.",
+      "ja": "5 を移項すると 2x = 8 になるね。",
+      "register": "spoken"
     }
   ],
   "collocations": [
@@ -73,7 +73,7 @@
     }
   ],
   "pitfalls": [
-    "答案では「両辺から引く（subtract 3 from both sides）」と書く。move ... over は口頭向き。",
+    "教室では「両辺から引く／両辺に足す」（from both sides ／ to both sides）の言い方が move ... over to the other side より多い。どちらも通じる。",
     "名詞の transposition は米国の教室では通じない。動詞句で言う。"
   ],
   "related": [
@@ -93,29 +93,34 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "to the other side": 49,
-      "from both sides": 97,
-      "to both sides": 89,
+      "from both sides": 159,
+      "to both sides": 146,
+      "to the other side": 31,
       "isolate x": 2
     },
     "written": {
-      "from both sides": 1,
-      "to both sides": 2
+      "from both sides": 24,
+      "to both sides": 24,
+      "to the other side": 1
     },
     "sources": [
       "khan-algebra",
+      "khan-ap-calc",
       "mit-18.01",
       "mit-18.02",
       "mit-18.03",
       "mit-18.06",
-      "openstax-calculus"
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus"
     ],
     "counted": "2026-09-24"
   },
   "flags": [
     {
       "code": "corpus-register-mismatch",
-      "note": "コーパスの結論がエントリの register と食い違う（話: from both sides / to both sides）。人間レビューへ。",
+      "note": "コーパスの結論がエントリの register と食い違う（書: from both sides / to both sides）。人間レビューへ。",
       "raised": "2026-09-24"
     }
   ]

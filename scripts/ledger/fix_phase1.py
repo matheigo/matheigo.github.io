@@ -297,7 +297,7 @@ def en_article(w, title):
 
 def apply_en_check(rows, stats):
     w = load_wiki_en()
-    ok, removed, filled = [], [], []
+    ok, removed, filled, ok_disambig = [], [], [], []
     for r in title_rows(rows):
         if r["wiki_ja"] not in w["ja"]:
             raise SystemExit(f"ja title not fetched: {r['wiki_ja']!r}: run python3 scripts/ledger/wikien.py")
@@ -306,8 +306,14 @@ def apply_en_check(rows, stats):
         via_term = next((h for h in (en_article(w, t) for t in en_lookups(r["en"])) if h["page"]),
                         {"page": None})
         b = via_term["page"]
-        if a and b and a == b and not via_term.get("disambig"):
+        # A disambiguation page decides nothing by itself, but if it lists the
+        # ja article's langlink among its meanings, the term does point there
+        # (DECISIONS 2026-09-24, 修正 3). No exception rows.
+        via_disambig = bool(a and b and via_term.get("disambig") and a in w["disambig_links"].get(b, []))
+        if a and b and ((a == b and not via_term.get("disambig")) or via_disambig):
             r["ja_check"] = "ok"
+            if via_disambig:
+                ok_disambig.append(r["id"])
             if r["wiki_en"] != ll:
                 filled.append((r["id"], r["wiki_en"], ll))
                 r["wiki_en"] = ll
@@ -335,7 +341,7 @@ def apply_en_check(rows, stats):
         r["flag"] = [f for f in r["flag"] if f != "wiki-redirect"]
         add(r["flag"], "wiki-rejected")
     stats["en_check"] = {"checked": len(ok) + len(removed), "ok": ok, "removed": removed,
-                         "wiki_en_filled": filled}
+                         "wiki_en_filled": filled, "ok_via_disambig": ok_disambig}
 
 
 # ------------------------------------------------------------------- main
@@ -488,7 +494,8 @@ def main():
     print(json.dumps({k: v for k, v in stats.items() if k not in big}, ensure_ascii=False, indent=1))
     e = stats["en_check"]
     print(f"en check: {e['checked']} title rows -> ok {len(e['ok'])}, wikipedia removed {len(e['removed'])}"
-          f" ({dict(Counter(x['reason'] for x in e['removed']))}); wiki_en filled {len(e['wiki_en_filled'])}")
+          f" ({dict(Counter(x['reason'] for x in e['removed']))}); wiki_en filled {len(e['wiki_en_filled'])};"
+          f" ok via disambiguation page {len(e['ok_via_disambig'])}")
     print(f"notation: headwords {len(stats['notation_headword'])}, Wikipedia spellings to ja_alt {len(stats['notation_alias'])}")
 
 

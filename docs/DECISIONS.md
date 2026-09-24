@@ -127,3 +127,16 @@
 - 2026-09-24 | 0 | 通分の en.term を find a common denominator から common denominator に変えた。動詞句 3 つは mapping_note に移し、例文はそのまま | 数えられる候補は en.term・en.alt・en.variants・collocations の全部なので、en.term を動詞句のままにすると「1 本」にならない
 - 2026-09-24 | 0 | 移項の候補表現の register は元の割り振りのまま（to the other side は spoken、from / to both sides は written）。コーパスは両辺の言い方を話し言葉でも ② 併記と出したので、register 不一致として人間レビューへ | 絶対ルール 9。不一致を解くのは人間で、自分で register を書き換えない
 - 2026-09-24 | 0 | `audits/corpus-2026-09-24.md` は同じ日付で上書きされた。前の版は 3b53eb1 にある | decide はファイル名を実行日で決める
+
+## Phase 1 修正 3 — 2026-09-24
+
+- 2026-09-24 | 1 | 英語照合に規則を足す: en.term が曖昧さ回避ページに着いても、そのページが ja 側着地記事の en langlink 先（リダイレクト解決後）にリンクしていれば ok。例外行は足さない | あなたの決定。`wikien.py` が曖昧さ回避ページ 40 件のリンク先を取り `wiki_en.json` の `disambig_links` に固定。title 258 行: ok 142 → 166（+24）、外した 116 → 92。出典を失った 8 件のうち 5 件が戻った（origin・inverse・scalar・work・kernel）。戻らない 3 件（face・intersection・multiplicity-of-a-zero）は曖昧さ回避ではない。代入 → Substitution (logic)、極 → Zeros and poles、外れると見込んだ 相似変換・特性方程式・発散する も ok に戻る（audits/phase1-fix3-report.md）
+- 2026-09-24 | 0 | 移項する: 3 つの variant をすべて spoken にし、頻度順（from both sides → to both sides → to the other side）。written は判断不能として何も主張しない（written の variant・例文・pitfall を置かない。例文 2 文とも spoken） | あなたの決定。その後 OpenStax 6 冊で書き言葉が ② from both sides 24 ／ to both sides 24 になり、corpus:decide が register 不一致（書）を付けた。エントリは直さず人間レビューへ（絶対ルール 9）
+- 2026-09-24 | 0 | 代入する: variants を plug in（spoken）→ substitute（both）→ substitute back（spoken）→ sub in。substitute back は collocations から variants へ移した。note の「書き言葉コーパスは未取得」と古い件数（OCW 220 対 106）を今回の件数に直した | あなたの決定。再判定で不一致は消えた（話 ② plug in 358 ／ substitute 253 ／ substitute back 22、書 ① substitute 140.8:1）
+- 2026-09-24 | 0 | Phase 2 の前に PLAN 15 のコーパスをそろえた: `khan-ap-calc`（AP Calculus AB・BC の単元再生リスト 25 本、重複を除いて動画 544 本、全本に人手字幕）、OpenStax Calculus Vol 2・3（`openstax-calculus` に合算）、Algebra and Trigonometry 2e（`openstax-algtrig`）、Precalculus 2e（`openstax-precalculus`）、Introductory Statistics 2e（`openstax-introstats`） | あなたの決定。版は各リポジトリの 2e（初版はリポジトリに無い）。`pnpm corpus:fetch:openstax` と新設の `pnpm corpus:fetch:captions -- khan-ap-calc` を 1 つのバックグラウンドジョブで並列に回した
+- 2026-09-24 | 0 | Khan の人手の英語字幕は名前付きトラック（en-ehkg1hFWq8A「English - Default」）で出るので、字幕言語を en ／ en-US ／ en-<11 文字のトラック ID> にした（fetch-captions.ts と .sh の両方） | en,en-US では試した AP Calc の動画（-CTaxKTzbEI）で「字幕なし」になった。自動字幕とその機械翻訳は --write-subs では読まれない。khan-algebra（182/235 本）はこの理由で最大 53 本取りこぼしている可能性がある。取り直しはしていない
+- 2026-09-24 | 0 | OpenStax の残り 5 冊もライセンスはすべて CC BY-NC-SA 4.0（各コレクションのメタデータで確認）。`fetch.ts` の予定表を直した | PLAN.md 15 の「CC BY 4.0」は誤り。仕様書は書き換えず、ここに記録する
+- 2026-09-24 | 0 | corpus:count で重複を除く（`lib.ts` の `dedupe`）: 前に出たファイルと 8 語シングルの 50% 以上が重なるファイルは写しとして捨て、残ったファイルでは既出の 8 語以上の文を消す。全ソース横断・manifest 順で、最初の写しを残す。`--no-dedupe` で旧来の数え方 | あなたの決定（OCW の同じ文・同じファイル）。OCW の演習は YouTube ID 名と MIT18_01SCF10Rec_nn 名で 2 回入っていた（18.01 で 87 本、18.02 で 72 本）。ファイル対の重なりは 70% 以上か 10% 未満に分かれ、50% の閾値で迷う対は無い。8 語未満の文（"plug it in." など）は言い直しなので消さない
+- 2026-09-24 | 0 | OpenStax の取得順は Algebra and Trigonometry を Precalculus より先にする | 2 冊は多くの節を共有していて、dedupe は先に来た本に残す。範囲の広い本に残すため。Precalculus 86 節のうち 78 節が写しとして落ちる
+- 2026-09-24 | 0 | STYLE 原則 5 に追記: OCW・OpenStax（と Khan の字幕）は CC BY-NC-SA なので、例文・定義文・note にコーパスの文を転載しない。使うのは件数だけ。辞典のデータは CC0 のまま | あなたの決定
+- 2026-09-24 | 0 | STYLE の直訳禁止リストと register 表の 移項・代入 の行をコーパスの結論に合わせた（「plug in が圧倒的」を「併記」に、移項の話し言葉を頻度順に） | 表とエントリが食い違ったままだと、次のバッチで古い表に合わせてしまう

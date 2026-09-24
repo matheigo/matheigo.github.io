@@ -10,7 +10,7 @@
    `terms.csv` 固定**なので何度回しても同じ結果になる。判断は `scripts/ledger/fix_decisions.py` に 1 行ずつ。
    前提: `python3 scripts/ledger/wikicat.py`（Wikipedia のカテゴリ判定 → `wiki_cat.json`）と
    `python3 scripts/ledger/fetch_mext.py`（学習指導要領の本文 → `scripts/ledger/mext/`、gitignore）と
-   `python3 scripts/ledger/wikien.py`（`title:` 行の英語照合に使う langlink とリダイレクト先 → `wiki_en.json`）
+   `python3 scripts/ledger/wikien.py`（`title:` 行の英語照合に使う langlink とリダイレクト先、曖昧さ回避ページのリンク先 → `wiki_en.json`）
 
 2 以降に CSV を手で直した場合は、`fix_phase1.py` を回し直すと上書きされる。直した内容は `fix_decisions.py` に足す。
 
@@ -37,7 +37,7 @@
 | `wiki_en` | その記事の英語版タイトル（langlink）。`en` と一致しなくてよい（記事名 ≠ 教室の言い方）。Phase 2 の crosscheck の材料。英語照合で ok になった行は `wiki_en.json` の langlink で埋めてある |
 | `wikidata` | QID |
 | `ja_basis` | 日本語見出しの根拠。`mext`（学習指導要領の本文に同じ表記が出る。1 文字の語は〔用語・記号〕にあるものだけ）／ `wikipedia`（`wiki_ja` の記事かその転送元）／ `editorial`（本プロジェクトの訳語。米国側から洗った語の多く） |
-| `ja_check` | 見出し語と根拠の表記の照合。`ok`／`alt:<表記>`（根拠の表記は `ja_alt` 側にある。見出しは教科書の表記のまま入れ替えない）／`—`（照合先なし）。見出し語が記事名と違う転送元だった行（旧 `title:`）は英語で照合する: ja 記事の en langlink と `en` の en.wikipedia 記事がリダイレクト解決後に同じなら `ok`、違えば wikipedia を根拠から外し（`editorial` / `—`）、langlink も出典にしない（DECISIONS 2026-09-24） |
+| `ja_check` | 見出し語と根拠の表記の照合。`ok`／`alt:<表記>`（根拠の表記は `ja_alt` 側にある。見出しは教科書の表記のまま入れ替えない）／`—`（照合先なし）。見出し語が記事名と違う転送元だった行（旧 `title:`）は英語で照合する: ja 記事の en langlink と `en` の en.wikipedia 記事がリダイレクト解決後に同じなら `ok`（`en` が曖昧さ回避ページに着いた場合は、そのページが langlink 先にリンクしていれば `ok`）、違えば wikipedia を根拠から外し（`editorial` / `—`）、langlink も出典にしない（DECISIONS 2026-09-24） |
 | `flag` | `ja-merged`（同じ ja の行を統合した）／ `merged`（重複 id を統合した）／ `reviewed-30`（Phase 1 の 30 語レビュー済み）／ `wiki-redirect`（記事が転送先）／ `wiki-disambig`（曖昧さ回避ページ）／ `wiki-rejected`（langlink を出典から外した） |
 | `note` | mapping の理由、米国での言い方、STYLE.md への参照、wiki 除外の理由など |
 

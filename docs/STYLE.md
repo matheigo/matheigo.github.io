@@ -15,6 +15,9 @@ PLAN.md §6 をそのまま作業用に移したもの。**生成時に毎バッ
 3. 直訳禁止リスト（下）に触れる語は `mapping` を正直に付ける。
 4. 対応が 1 対 1 でないものを隠さない。`mapping_note` に「米国ではどう扱うか」を書く。**ここが一番価値がある。**
 5. 定義は自作、2 文以内。他資料の文章をコピーしない。JMdict / Weblio / 教科書の定義文は見てもよいが書き写さない。
+   **用例コーパスの文も転載しない。** MIT OCW・OpenStax（と Khan Academy の字幕）は CC BY-NC-SA なので、
+   例文・定義文・note にコーパスの文を写さない。コーパスから使うのは件数だけ。
+   辞典のデータは CC0 のまま（NC-SA の文が混ざると CC0 で出せなくなる）。
 6. 読み（ひらがな）必須。ローマ字は wanakana で自動生成。カタカナ語（インテグラル、シグマ）も `ja.alt` に入れる。
 7. 出典 1 件以上。無ければ `confidence: draft` のまま。
 8. 数式は LaTeX、KaTeX でレンダリングできる範囲。`\displaystyle` 乱用禁止。
@@ -27,7 +30,7 @@ PLAN.md §6 をそのまま作業用に移したもの。**生成時に毎バッ
 `reference`（Nekovar, Trzeciak, USU などの読み方資料）／`textbook`／`editorial`（本プロジェクトの編集判断。フレーズ集は基本これ）
 
 `textbook` の第一基準は **OpenStax *Calculus* Volume 1**（CC BY-NC-SA 4.0）。微積分の用語・記法で迷ったらこれに合わせる。
-written コーパス（`openstax-calculus`）として件数だけを使う。本文はリポジトリに入れず、出典には書名を挙げる。
+written コーパス（`openstax-calculus` ほか）として件数だけを使う（原則 5）。本文はリポジトリに入れず、出典には書名を挙げる。
 Precalculus 以下は OpenStax *Precalculus* / *Algebra and Trigonometry*、統計は *Introductory Statistics*。
 Stewart *Calculus* や Larson *Precalculus* は書名を出典に挙げるだけにとどめ、文章は引かない。
 
@@ -43,10 +46,10 @@ Stewart *Calculus* や Larson *Precalculus* は書名を出典に挙げるだけ
 | 微分係数 | differential coefficient | derivative at a point ／ the value of the derivative at x=a | near |
 | 解と係数の関係 | relation of solutions and coefficients | Vieta's formulas（大学）／ relationship between roots and coefficients（高校では説明的に） | near |
 | 平方完成 | — | completing the square（完成形は vertex form） | exact |
-| 移項 | transposition | 話: move / bring it over to the other side ／ 書: subtract 3 from both sides | near |
+| 移項 | transposition | subtract 3 from both sides ／ add 3 to both sides ／ move it over to the other side（話し言葉はこの頻度順） | near |
 | 約分 | — | reduce (a fraction) ／ cancel（動詞） | near |
 | 通分 | — | find a common denominator（動詞句） | near |
-| 代入 | — | substitute ／ plug in（教室では plug in が圧倒的） | exact |
+| 代入 | — | plug in ／ substitute（話し言葉は併記、書き言葉は substitute） | exact |
 | たすき掛け | cross multiplication | ac method ／ grouping ／ box method | none |
 | 相加相乗平均 | — | AM–GM inequality | exact |
 | はさみうちの原理 | — | squeeze theorem（sandwich theorem は英国寄り） | exact |
@@ -62,8 +65,8 @@ register が違う言い方は `en.variants` に `register` を付けて入れ�
 
 | 日本語 | 話し言葉 | 書き言葉・答案 |
 |---|---|---|
-| 移項する | move the 3x over to the other side | subtract 3 from both sides（両辺に同じ操作）|
-| 代入する | plug in ／ substitute（②併記。OCW 5 コースで 220 対 106） | substitute（OpenStax Calc 1 で 66 件・唯一。エントリへの反映は人間レビュー待ち） |
+| 移項する | subtract 3 from both sides ／ add 3 to both sides ／ move the 3x over to the other side（②併記。159 ／ 146 ／ 31） | エントリは主張しない（判断不能として扱う決定）。OpenStax 6 冊を入れたら from both sides 24 ／ to both sides 24 で ② が出たので、register 不一致として人間レビュー待ち |
+| 代入する | plug in ／ substitute ／ substitute back（②併記。358 ／ 253 ／ 22） | substitute（①。OpenStax 6 冊で 704 対 5）。エントリは substitute を both にした |
 | よって | so | therefore / hence |
 
 Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を好むことが多い。迷ったら written 側を答案に使う。

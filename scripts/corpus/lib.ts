@@ -18,6 +18,8 @@ export interface CorpusDoc {
   /** Auto-generated captions misread formulas; symbols must not rely on them. */
   auto: boolean;
   text: string;
+  /** Path under corpus/, for reports. */
+  file?: string;
 }
 
 export interface Counts {
@@ -105,6 +107,89 @@ export function cnxmlToText(xml: string): string {
     .replace(/[ \t\r\f\v]+/g, " ")
     .replace(/ *\n[\s]*/g, "\n")
     .trim();
+}
+
+// ------------------------------------------------------------------- dedupe
+
+/** Sentences shorter than this are left alone: "plug it in." is said again, not copied. */
+export const DEDUPE_MIN_WORDS = 8;
+/** A file whose 8-word shingles are mostly seen already is another copy of the same talk or section. */
+export const DUPLICATE_FILE_SHARE = 0.5;
+const SHINGLE = 8;
+
+export interface DedupeStats {
+  files: number;
+  droppedFiles: number;
+  droppedSentences: number;
+  wordsBefore: number;
+  wordsAfter: number;
+}
+
+/** FNV-1a, so the seen-set holds numbers rather than millions of strings. */
+function hash(s: string): number {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 0x01000193);
+  }
+  return h >>> 0;
+}
+
+const wordCount = (s: string) => s.split(" ").filter(Boolean).length;
+
+/**
+ * Counts must not see the same words twice. OCW publishes many recitations
+ * twice (a YouTube id and an MIT18_01SCF10Rec_nn name), and every lecture
+ * opens with the same license notice; OpenStax books share sections. Two
+ * passes over normalized text, in manifest order, across all sources:
+ *
+ *   file      if DUPLICATE_FILE_SHARE of a file's 8-word shingles were seen
+ *             in earlier files, the file is a copy and is dropped whole
+ *   sentence  in the files that stay, a sentence of DEDUPE_MIN_WORDS or more
+ *             words that was seen before (in any file) is removed
+ *
+ * The first copy wins, so manifest order decides which file keeps the text.
+ */
+export function dedupe<T extends CorpusDoc>(docs: T[]): { docs: T[]; stats: Record<string, DedupeStats>; dropped: T[] } {
+  const seenShingles = new Set<number>();
+  const seenSentences = new Set<number>();
+  const stats: Record<string, DedupeStats> = {};
+  const out: T[] = [];
+  const dropped: T[] = [];
+
+  for (const doc of docs) {
+    const st = (stats[doc.id] ??= { files: 0, droppedFiles: 0, droppedSentences: 0, wordsBefore: 0, wordsAfter: 0 });
+    const words = doc.text.split(" ").filter(Boolean);
+    st.files++;
+    st.wordsBefore += words.length;
+
+    const shingles: number[] = [];
+    for (let i = 0; i + SHINGLE <= words.length; i++) shingles.push(hash(words.slice(i, i + SHINGLE).join(" ")));
+    const seen = shingles.filter((h) => seenShingles.has(h)).length;
+    if (shingles.length > 0 && seen / shingles.length >= DUPLICATE_FILE_SHARE) {
+      st.droppedFiles++;
+      dropped.push(doc);
+      continue;
+    }
+    for (const h of shingles) seenShingles.add(h);
+
+    const kept: string[] = [];
+    for (const sentence of doc.text.split(/(?<=[.?!])\s+/)) {
+      if (wordCount(sentence) >= DEDUPE_MIN_WORDS) {
+        const h = hash(sentence);
+        if (seenSentences.has(h)) {
+          st.droppedSentences++;
+          continue;
+        }
+        seenSentences.add(h);
+      }
+      kept.push(sentence);
+    }
+    const text = kept.join(" ");
+    st.wordsAfter += wordCount(text);
+    out.push({ ...doc, text });
+  }
+  return { docs: out, stats, dropped };
 }
 
 // -------------------------------------------------------------------- count

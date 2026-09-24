@@ -14,12 +14,17 @@
       {
         "term": "plug in",
         "register": "spoken",
-        "note": "MIT OCW 5 コース（約 93 万語）で 220 件。教室で最も多い言い方。"
+        "note": "教室で最も多い言い方（話し言葉コーパス 358 件）。教科書の文章ではほとんど使わない（書き言葉コーパス 5 件）。"
       },
       {
         "term": "substitute",
+        "register": "both",
+        "note": "話し言葉では plug in に次ぐ（253 件）。書き言葉コーパス（OpenStax 6 冊）では 704 件でほぼこれだけ。答案ではこちら。"
+      },
+      {
+        "term": "substitute back",
         "register": "spoken",
-        "note": "同コーパスで 106 件。plug in の 3 分の 1 以上あり、どちらも実際に使われる。答案ではこちらが安全だが、書き言葉コーパスは未取得。"
+        "note": "求めた値や置き換えた式を、もとの式に戻して代入すること。話し言葉コーパスで 22 件。"
       },
       {
         "term": "sub in",
@@ -69,16 +74,12 @@
       "ja": "x=2 を代入する"
     },
     {
-      "en": "substitute back",
-      "ja": "もとに戻して代入する"
-    },
-    {
       "en": "substitute u for 2x",
       "ja": "2x を u とおく"
     }
   ],
   "pitfalls": [
-    "教室では plug in が多いが、substitute も同じくらい普通に聞こえる。どちらか一方が正しいわけではない（OCW 5 コースで 220 対 106）。",
+    "教室では plug in が多いが、substitute も普通に聞こえる。どちらか一方が正しいわけではない（話し言葉コーパスで 358 対 253）。答案・教科書では substitute。",
     "substitute A for B は「B の代わりに A を入れる」。順序を逆にしやすい。"
   ],
   "related": [
@@ -95,32 +96,31 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-10",
+  "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "plug in": 450,
-      "substitute": 215,
-      "substitute back": 11
+      "plug in": 358,
+      "substitute": 253,
+      "substitute back": 22
     },
     "written": {
-      "substitute": 66
+      "plug in": 5,
+      "substitute": 704,
+      "substitute back": 5
     },
     "sources": [
       "khan-algebra",
+      "khan-ap-calc",
       "mit-18.01",
       "mit-18.02",
       "mit-18.03",
       "mit-18.06",
       "mit-6.042",
-      "openstax-calculus"
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus"
     ],
     "counted": "2026-09-24"
-  },
-  "flags": [
-    {
-      "code": "corpus-register-mismatch",
-      "note": "コーパスの結論がエントリの register と食い違う（話: substitute back ／ 書: substitute）。人間レビューへ。",
-      "raised": "2026-09-24"
-    }
-  ]
+  }
 }
