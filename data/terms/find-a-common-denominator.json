@@ -8,17 +8,14 @@
     ]
   },
   "en": {
-    "term": "find a common denominator",
-    "alt": [
-      "get a common denominator",
-      "put them over a common denominator"
-    ],
+    "term": "common denominator",
+    "alt": [],
     "uk": null,
     "register": "both"
   },
   "pos": "verb",
   "mapping": "near",
-  "mapping_note": "英語は動詞句で言う。名詞 1 語の対応はない。",
+  "mapping_note": "英語は動詞句で言う（find a common denominator ／ get a common denominator ／ put them over a common denominator）。名詞 1 語の対応はない。見出しの common denominator は、どの動詞句にも入る共通部分。",
   "domains": [
     "arithmetic",
     "algebra"
@@ -74,23 +71,19 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-10",
+  "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "find a common denominator": 2,
-      "put them over a common denominator": 2
+      "common denominator": 29
+    },
+    "written": {
+      "common denominator": 2
     },
     "sources": [
       "khan-algebra",
-      "mit-18.01"
+      "mit-18.01",
+      "openstax-calculus"
     ],
     "counted": "2026-09-24"
-  },
-  "flags": [
-    {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
-      "raised": "2026-09-24"
-    }
-  ]
+  }
 }

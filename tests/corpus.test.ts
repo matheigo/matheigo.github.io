@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   balance,
   candidatesOf,
+  cnxmlToText,
   countPhrase,
   decide,
   headsOf,
@@ -186,5 +187,24 @@ describe("weigh", () => {
     const counts = { "plug in": { "mit-18.01": 100, "yt:a": 10 } };
     const out = weigh(counts, { "mit-18.01": 0.5, "yt:a": 2 });
     expect(out["plug in"]).toBe(70);
+  });
+});
+
+describe("cnxmlToText", () => {
+  const para = (body: string) =>
+    `<document xmlns:m="http://www.w3.org/1998/Math/MathML"><metadata><md:content-id>m1</md:content-id>` +
+    `<md:title>T</md:title></metadata><content><para id="p1">${body}</para></content></document>`;
+
+  it("keeps a sentence whole across inline math", () => {
+    const xml = para("Subtracting <m:math><m:mrow><m:mn>3</m:mn></m:mrow></m:math> from both sides gives <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>.");
+    const text = cnxmlToText(xml);
+    expect(text).toBe("Subtracting 3 from both sides gives x = 2 .");
+    expect(countPhrase(normalize(text), "from both sides")).toBe(1);
+  });
+
+  it("drops metadata ids and decodes entities", () => {
+    const text = cnxmlToText(para("a &lt; b &amp; f&#8290;(x) &#8722; 1"));
+    expect(text).not.toContain("m1");
+    expect(text).toBe("a < b & f(x) \u2212 1");
   });
 });

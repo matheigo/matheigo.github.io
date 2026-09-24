@@ -225,8 +225,123 @@ def coverage(rows, yougo):
     return out
 
 
+# ------------------------------------------------------ 6. English check
+# Phase 1 修正 2 (docs/DECISIONS.md 2026-09-24). A `title:` row's headword is a
+# redirect to a differently named ja article. Instead of a human reading 258
+# rows, compare in English: the ja article's en langlink and en.term's own
+# en.wikipedia article, both after redirects. Same article -> ok. Otherwise the
+# ja article is not this term's article: wikipedia leaves ja.basis, and (like
+# any rejected langlink, ledger/README.md `wiki_ja`) it stops being a source.
+WIKI_EN = os.path.join(HERE, "wiki_en.json")
+
+
+def textbook(s):
+    for wiki, book in D.NOTATION:
+        s = s.replace(wiki, book)
+    return s
+
+
+def apply_notation(rows, stats):
+    """Headwords in textbook notation (線形・関数・べき); the Wikipedia form goes to ja_alt."""
+    changed = []
+    for r in rows.values():
+        book = textbook(r["ja"])
+        if book != r["ja"]:
+            add(r["ja_alt"], r["ja"])
+            changed.append((r["id"], r["ja"], book))
+            r["ja"] = book
+            r["ja_alt"] = [x for x in r["ja_alt"] if x != book]
+    stats["notation_headword"] = changed
+
+
+def notation_aliases(rows, wiki_titles, stats):
+    """A Wikipedia title that is the headword (or an alias) in Wikipedia notation."""
+    added = []
+    for r in rows.values():
+        t = wiki_titles.get(r["id"])
+        if not t or t == r["ja"] or t in r["ja_alt"] or textbook(t) == t:
+            continue
+        if textbook(t) in [r["ja"], *r["ja_alt"]]:
+            add(r["ja_alt"], t)
+            added.append((r["id"], r["ja"], t))
+    stats["notation_alias"] = added
+
+
+def title_rows(rows):
+    return [r for r in rows.values() if r["ja_check"].startswith("title:")]
+
+
+def load_wiki_en():
+    if not os.path.exists(WIKI_EN):
+        raise SystemExit(f"{WIKI_EN} is missing: run python3 scripts/ledger/wikien.py")
+    return json.load(open(WIKI_EN, encoding="utf-8"))
+
+
+def titlecase(s):
+    """Capitalise each word (str.title() would also capitalise after apostrophes)."""
+    return " ".join(w[:1].upper() + w[1:] for w in s.split(" "))
+
+
+def en_lookups(r_en):
+    """en.wikipedia titles tried for an en.term: as written, then title case."""
+    return [r_en] if titlecase(r_en) == r_en else [r_en, titlecase(r_en)]
+
+
+def en_article(w, title):
+    """{"page": article after redirects or None, "disambig": bool} for a title."""
+    hit = w["en"].get(title)
+    if hit is None:
+        raise SystemExit(f"en title not fetched: {title!r}: run python3 scripts/ledger/wikien.py")
+    return hit
+
+
+def apply_en_check(rows, stats):
+    w = load_wiki_en()
+    ok, removed, filled = [], [], []
+    for r in title_rows(rows):
+        if r["wiki_ja"] not in w["ja"]:
+            raise SystemExit(f"ja title not fetched: {r['wiki_ja']!r}: run python3 scripts/ledger/wikien.py")
+        ll = w["ja"][r["wiki_ja"]]  # en langlink of the ja article, or None
+        a = en_article(w, ll)["page"] if ll else None
+        via_term = next((h for h in (en_article(w, t) for t in en_lookups(r["en"])) if h["page"]),
+                        {"page": None})
+        b = via_term["page"]
+        if a and b and a == b and not via_term.get("disambig"):
+            r["ja_check"] = "ok"
+            if r["wiki_en"] != ll:
+                filled.append((r["id"], r["wiki_en"], ll))
+                r["wiki_en"] = ll
+            ok.append(r["id"])
+            continue
+        if not ll:
+            reason = "ja 記事に en 版なし"
+        elif not a:
+            reason = "langlink 先が en に無い"
+        elif not b:
+            reason = "en.term の記事なし"
+        elif via_term.get("disambig"):
+            reason = "en.term は曖昧さ回避"
+        else:
+            reason = "別の記事"
+        removed.append({"id": r["id"], "ja": r["ja"], "en": r["en"], "wiki_ja": r["wiki_ja"],
+                        "langlink": ll or "", "via_langlink": a or "", "via_term": b or "",
+                        "reason": reason, "source": r["source"]})
+        note_add(r, f"wiki 除外（英語照合不一致: {reason}）: {r['wiki_ja']} → {ll or '(en なし)'}"
+                    f"{f' → {a}' if a and a != ll else ''} ／ en.term → {b or '(記事なし)'}")
+        if r["source"] in ("wikipedia-langlink", "wikidata"):
+            r["source"] = "textbook" if r["unit"][0].startswith("us-") else "editorial"
+        r["wiki_ja"] = r["wiki_en"] = r["wikidata"] = ""
+        r["ja_basis"], r["ja_check"] = "editorial", "—"
+        r["flag"] = [f for f in r["flag"] if f != "wiki-redirect"]
+        add(r["flag"], "wiki-rejected")
+    stats["en_check"] = {"checked": len(ok) + len(removed), "ok": ok, "removed": removed,
+                         "wiki_en_filled": filled}
+
+
 # ------------------------------------------------------------------- main
-def main():
+def transform(en_check=True):
+    """Phase 1 ledger -> fixed rows. en_check=False stops before the English
+    check, which is what wikien.py needs to know which titles to fetch."""
     stats = {}
     rows = load_phase1()
     stats["phase1_rows"] = len(rows)
@@ -310,10 +425,30 @@ def main():
             rows[i]["mapping"] = m
     stats["us_none_after"] = dict(changed)
 
+    # 6. textbook notation for headwords, before the course-of-study match
+    apply_notation(rows, stats)
+
     # 5. basis / check / coverage
     yougo = list(csv.DictReader(open(os.path.join(ROOT, "ledger", "mext-yougo.csv"), encoding="utf-8")))
     apply_basis(rows, yougo, stats)
     stats["coverage"] = coverage(rows, yougo)
+    stats["check_before_en"] = dict(Counter(r["ja_check"].split(":")[0] for r in rows.values()))
+    if not en_check:
+        return rows, stats, log, oos
+
+    # 6. English check of title rows; Wikipedia spellings of the headword -> ja_alt
+    wiki_titles = {r["id"]: r["wiki_ja"] for r in rows.values() if r["wiki_ja"]}
+    apply_en_check(rows, stats)
+    notation_aliases(rows, wiki_titles, stats)
+    stats["basis"] = dict(Counter(r["ja_basis"] for r in rows.values()))
+    stats["check"] = dict(Counter(r["ja_check"].split(":")[0] for r in rows.values()))
+    stats["check_mismatch"] = [(r["id"], r["ja"], r["ja_basis"], r["ja_check"]) for r in rows.values()
+                               if r["ja_check"] not in ("ok", "—")]
+    return rows, stats, log, oos
+
+
+def main():
+    rows, stats, log, oos = transform()
 
     # write. Units in curriculum order (the Phase 1 CSV is ordered by unit), so
     # the first unit is where the term is met first.
@@ -349,8 +484,12 @@ def main():
     stats["dup_en"] = {e: ids for e, ids in _dup_en(rows).items()}
     json.dump(stats, open(os.path.join(HERE, "fix_stats.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
-    print(json.dumps({k: v for k, v in stats.items()
-                      if k not in ("coverage", "check_mismatch", "oos", "dup_en")}, ensure_ascii=False, indent=1))
+    big = ("coverage", "check_mismatch", "oos", "dup_en", "en_check", "notation_alias", "notation_headword")
+    print(json.dumps({k: v for k, v in stats.items() if k not in big}, ensure_ascii=False, indent=1))
+    e = stats["en_check"]
+    print(f"en check: {e['checked']} title rows -> ok {len(e['ok'])}, wikipedia removed {len(e['removed'])}"
+          f" ({dict(Counter(x['reason'] for x in e['removed']))}); wiki_en filled {len(e['wiki_en_filled'])}")
+    print(f"notation: headwords {len(stats['notation_headword'])}, Wikipedia spellings to ja_alt {len(stats['notation_alias'])}")
 
 
 def _dup_en(rows):

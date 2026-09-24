@@ -70,6 +70,43 @@ export function normalize(text: string): string {
   return out.replace(/\s+/g, " ").trim();
 }
 
+// ------------------------------------------------------------ written text
+
+const ENTITIES: Record<string, string> = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " " };
+
+const decodeEntities = (s: string) =>
+  s.replace(/&(#x[0-9a-f]+|#\d+|\w+);/gi, (m, e: string) => {
+    if (e[0] === "#") {
+      const code = e[1].toLowerCase() === "x" ? parseInt(e.slice(2), 16) : parseInt(e.slice(1), 10);
+      return Number.isFinite(code) ? String.fromCodePoint(code) : " ";
+    }
+    return ENTITIES[e.toLowerCase()] ?? m;
+  });
+
+/**
+ * OpenStax CNXML to running prose (PLAN 15, written corpus). Inline MathML is
+ * reduced to its tokens ("x = 3") so the words around it stay in one sentence:
+ * "subtract <math>3</math> from both sides" still reads "subtract 3 from both
+ * sides". Metadata ids and titles are dropped; the learning objectives in the
+ * abstract are prose and stay.
+ */
+export function cnxmlToText(xml: string): string {
+  return decodeEntities(
+    xml
+      .replace(/<md:(content-id|uuid|title)>[\s\S]*?<\/md:\1>/g, " ")
+      .replace(/<m:math\b[\s\S]*?<\/m:math>/g, (math) => {
+        const tokens = [...math.matchAll(/<m:(mi|mn|mo|mtext)\b[^>]*>([\s\S]*?)<\/m:\1>/g)].map((t) => t[2].trim());
+        return ` ${tokens.filter(Boolean).join(" ")} `;
+      })
+      .replace(/<\/(para|item|title|caption|td|th|entry|li)>|<newline\s*\/>/g, "\n")
+      .replace(/<[^>]+>/g, " "),
+  )
+    .replace(/[\u2061-\u2064\u200b]/g, "") // invisible times / function application
+    .replace(/[ \t\r\f\v]+/g, " ")
+    .replace(/ *\n[\s]*/g, "\n")
+    .trim();
+}
+
 // -------------------------------------------------------------------- count
 
 const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");

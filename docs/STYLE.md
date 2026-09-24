@@ -26,8 +26,8 @@ PLAN.md §6 をそのまま作業用に移したもの。**生成時に毎バッ
 `wikipedia-langlink`（日英の記事対応）／`wikidata`（Qid）／`mext-translation`／`criced`／`nysed-glossary`／
 `reference`（Nekovar, Trzeciak, USU などの読み方資料）／`textbook`／`editorial`（本プロジェクトの編集判断。フレーズ集は基本これ）
 
-`textbook` の第一基準は **OpenStax *Calculus* Volume 1**（CC BY 4.0）。微積分の用語・記法で迷ったらこれに合わせる。
-CC BY なので written コーパスにもそのまま入れられ、出典として書名を挙げるだけで済む。
+`textbook` の第一基準は **OpenStax *Calculus* Volume 1**（CC BY-NC-SA 4.0）。微積分の用語・記法で迷ったらこれに合わせる。
+written コーパス（`openstax-calculus`）として件数だけを使う。本文はリポジトリに入れず、出典には書名を挙げる。
 Precalculus 以下は OpenStax *Precalculus* / *Algebra and Trigonometry*、統計は *Introductory Statistics*。
 Stewart *Calculus* や Larson *Precalculus* は書名を出典に挙げるだけにとどめ、文章は引かない。
 
@@ -63,7 +63,7 @@ register が違う言い方は `en.variants` に `register` を付けて入れ�
 | 日本語 | 話し言葉 | 書き言葉・答案 |
 |---|---|---|
 | 移項する | move the 3x over to the other side | subtract 3 from both sides（両辺に同じ操作）|
-| 代入する | plug in ／ substitute（②併記。OCW 5 コースで 220 対 106） | 書き言葉コーパス未取得 |
+| 代入する | plug in ／ substitute（②併記。OCW 5 コースで 220 対 106） | substitute（OpenStax Calc 1 で 66 件・唯一。エントリへの反映は人間レビュー待ち） |
 | よって | so | therefore / hence |
 
 Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を好むことが多い。迷ったら written 側を答案に使う。

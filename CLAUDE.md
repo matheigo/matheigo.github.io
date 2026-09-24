@@ -10,6 +10,7 @@
 - pnpm corpus:fetch … 用例コーパスの取得元一覧 / マニフェスト検証（PLAN 15）
 - pnpm corpus:fetch:ocw … MIT OCW の書き起こし(.vtt)を自動取得（公式配布・CC BY-NC-SA）
   YouTube / Khan は `./scripts/corpus/fetch-captions.sh` を人間が手で実行する
+- pnpm corpus:fetch:openstax … OpenStax の本文（CNXML）を written コーパスとして取得（CC BY-NC-SA、コミット固定）
 - pnpm corpus:count … コーパスを走査して候補表現を数える → corpus/counts.json
 - pnpm corpus:decide … 頻度比で register を決め、`-- --write` で evidence と flags を書き戻す
 - pnpm build      … validate → search-index → サイト → dist/data の書き出しまで通す

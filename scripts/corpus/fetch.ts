@@ -9,6 +9,8 @@
  *
  *   MIT OCW   automated - OCW publishes its own .vtt transcripts under
  *             CC BY-NC-SA. See fetch-ocw.ts (`pnpm corpus:fetch:ocw`).
+ *   OpenStax  automated - the book source (CNXML) is public on GitHub. See
+ *             fetch-openstax.ts (`pnpm corpus:fetch:openstax`).
  *   YouTube   manual - terms of service are the operator's call, and it needs
  *   / Khan    yt-dlp. See fetch-captions.sh; you run it, not CI.
  *
@@ -48,7 +50,7 @@ const PLANNED: Omit<ManifestEntry, "file">[] = [
   { id: "yt:blackpenredpen", register: "spoken", auto: true, title: "blackpenredpen", license: "captions, counted as facts only" },
   { id: "yt:3blue1brown", register: "spoken", auto: true, title: "3Blue1Brown", license: "captions, counted as facts only" },
   // written
-  { id: "openstax-calculus", register: "written", auto: false, title: "OpenStax Calculus Vol 1-3", license: "CC BY 4.0" },
+  { id: "openstax-calculus", register: "written", auto: false, title: "OpenStax Calculus Vol 1-3", license: "CC BY-NC-SA 4.0" },
   { id: "openstax-precalculus", register: "written", auto: false, title: "OpenStax Precalculus", license: "CC BY 4.0" },
   { id: "openstax-algtrig", register: "written", auto: false, title: "OpenStax Algebra and Trigonometry", license: "CC BY 4.0" },
   { id: "openstax-introstats", register: "written", auto: false, title: "OpenStax Introductory Statistics", license: "CC BY 4.0" },
@@ -75,6 +77,7 @@ function list() {
   console.log("excluded:");
   for (const e of EXCLUDED) console.log(`  - ${e}`);
   console.log(`\nMIT OCW:        pnpm corpus:fetch:ocw`);
+  console.log(`OpenStax:       pnpm corpus:fetch:openstax`);
   console.log(`YouTube / Khan: ./scripts/corpus/fetch-captions.sh <id> <url>   (run by hand)`);
   console.log(`Anything else:  plain text at corpus/<id>/*.txt, listed in corpus/manifest.json.`);
   console.log(`See scripts/corpus/manifest.example.json for the shape.`);

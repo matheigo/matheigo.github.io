@@ -260,7 +260,7 @@ JA_FIX = {
     "slope-field": ("方向場", []),  # 勾配場 is the gradient field; do not keep it
     "am-gm-inequality": (None, ["相加平均と相乗平均の関係"]),
     "shell-method": (None, ["バウムクーヘン積分"]),
-    "invertible-matrix": (None, ["正則行列"]),
+    "invertible-matrix": ("正則行列", ["可逆行列"]),  # Phase 1 修正 2: the one alt row that swaps
     "monotone-convergence-theorem": ("単調収束定理", ["単調数列定理"]),
     "trapezoidal-rule": (None, ["台形則"]),
     "mutually-exclusive": (None, ["排反"]),  # 〔用語・記号〕数学A
@@ -422,3 +422,8 @@ LEVEL_JP_FIX = {
     "telescoping-series": "数B",
     "trigonometric-substitution": "数III",
 }
+
+# ------------------------------------------------ Phase 1 修正 2 (2026-09-24)
+# Wikipedia's own spellings -> the school textbook's. Headwords use the right
+# side; the Wikipedia form is kept in ja_alt so it still finds the entry.
+NOTATION = [("線型", "線形"), ("函数", "関数"), ("冪", "べき")]

@@ -111,3 +111,19 @@
 - 2026-09-23 | 0 | `fetch-captions.sh` の字幕言語を `en.*` から `en,en-US`（人手字幕のみ）に変更。自動字幕は `AUTO=1` のときだけ `en` を取る | `en.*` は他言語からの機械翻訳（en-bg、en-ko …）まで拾い、しかも全部同じ .txt 名に変換されるので最後に処理した翻訳字幕が残っていた。429 の原因でもあった
 - 2026-09-23 | 0 | Khan Academy は `khan-algebra` として Algebra I（100）・Algebra II（100）・Algebra Basics の一次方程式（35）の 235 本を対象にし、人手字幕のある 182 本（175,056 語）を取得 | 通分・移項の判断材料。Algebra の授業の話し言葉が OCW（大学）に欠けていた
 - 2026-09-23 | 0 | OCW はこのマシンに corpus/ が無かったため `pnpm corpus:fetch:ocw` で取り直した。18.01 が 142,270 語 → 487,139 語に増えた（sitemap から拾える動画が増えた）。重み付けで 25% に均される | 前回の数字（93 万語）と比べるときは注意
+
+## Phase 1 修正 2 — 2026-09-24
+
+- 2026-09-24 | 1 | ja.check の title 258 件は人間レビューに回さず英語側で機械照合する。ja 側の着地記事の en langlink と、en.term の en.wikipedia 記事（リダイレクト解決後）が一致すれば ok、不一致なら wikipedia を ja.basis から外す。Wikipedia 固有の表記（線型・函数・冪）は見出しを教科書表記（線形・関数・べき）にし、Wikipedia 表記は ja_alt へ | あなたの決定。`scripts/ledger/wikien.py` が取得して `wiki_en.json` に固定、`fix_phase1.py` の手順 6 で適用。ok 142 ／ 外した 116（相似変換・特性方程式・極・発散する・直交座標を含む）。表記: 見出しの変更 0 件、ja_alt への追加 8 件
+- 2026-09-24 | 1 | ja.check の alt 18 件は見出し語を入れ替えない（見出しは高校教科書の表記）。例外は 可逆行列 → 正則行列 の 1 件で、可逆行列は ja_alt | あなたの決定。`fix_decisions.py` の JA_FIX。alt は 17 件残る。以後 alt は「根拠の表記が ja_alt 側にある」印で、入れ替え候補ではない
+- 2026-09-24 | 0 | 通分する・移項するは照合規則（terms は literal）を変えずに候補表現を直す。移項: from both sides ／ to both sides ／ to the other side。通分: common denominator 1 本（動詞の型は Phase 2 の例文で扱う）。直してから corpus:count → corpus:decide をやり直した | あなたの決定。通分は ③ → ①（話 common denominator 29 件・唯一）、移項は ③ → ②（話 from both sides 98 ／ to both sides 90 ／ to the other side 48）
+- 2026-09-24 | 0 | substitute back の register 不一致は OpenStax 投入後に再判定する | あなたの決定。再判定の結果は不一致のまま（話 substitute back 11 件、OpenStax では 0 件）。書き言葉 substitute（OpenStax 66 件・唯一）の不一致が新たに加わった。人間レビュー行き
+- 2026-09-24 | 0 | OpenStax *Calculus* Volume 1 を written コーパス `openstax-calculus` として投入（PLAN 15）。`pnpm corpus:fetch:openstax` | あなたの決定。54 節・283,436 語（正規化後）、生の比率 15.2%、係数 ×1.02。written のソースはこれ 1 つ
+- 2026-09-24 | 1 | 英語照合で不一致の行は、langlink を出典にも使わない。wiki_ja / wiki_en / wikidata を空にし、source の wikipedia-langlink / wikidata は editorial（米国側の単元なら textbook）に戻し、flag を wiki-rejected、note に理由 | ledger/README の wiki_ja は「同じ概念のときだけ残す」。極 → 極 (複素解析) を出典に残すと絶対ルール 2 に触れる。代わりに、en.term が曖昧さ回避や数学外の記事に当たっただけの正しい対応（原点、面、スカラー、核、仕事など）も出典を失う。source が変わったのは 17 件（一覧は audits/phase1-fix2-report.md）
+- 2026-09-24 | 1 | en.term の記事は、書いたままの表記で引き、無ければ各語の頭を大文字にして引き直す。曖昧さ回避ページに着いたら不一致 | 大文字小文字だけで「記事なし」にしないため。曖昧さ回避ではどの記事か決まらないので、一致とは言えない
+- 2026-09-24 | 1 | 照合で ok になった行の wiki_en は、今回取った langlink で埋める（Phase 1 の台帳で空だった 46 件） | 照合に使った事実を台帳に残す。空だった理由は Phase 1 の取得側にあり、今回の取得で langlink があると確認できた
+- 2026-09-24 | 0 | **OpenStax *Calculus* のライセンスは CC BY 4.0 ではなく CC BY-NC-SA 4.0**（コレクションのメタデータで確認）。STYLE.md と `scripts/corpus/fetch.ts` の記載を直した | 2026-09-11 の行の「CC BY なので」は誤り。使うのは件数だけで本文はリポジトリに入れないので、OCW（同じ NC-SA）と扱いは変わらない
+- 2026-09-24 | 0 | OpenStax は openstax/osbooks-calculus-bundle の CNXML をコミット 8dbc2ce に固定して取る。前書きは除き、章と付録の 54 節。インライン MathML はトークンだけ残す（`cnxmlToText`） | 再実行しても同じ本文になる。「subtract 3 from both sides」の 3 が数式要素でも文が切れない
+- 2026-09-24 | 0 | 通分の en.term を find a common denominator から common denominator に変えた。動詞句 3 つは mapping_note に移し、例文はそのまま | 数えられる候補は en.term・en.alt・en.variants・collocations の全部なので、en.term を動詞句のままにすると「1 本」にならない
+- 2026-09-24 | 0 | 移項の候補表現の register は元の割り振りのまま（to the other side は spoken、from / to both sides は written）。コーパスは両辺の言い方を話し言葉でも ② 併記と出したので、register 不一致として人間レビューへ | 絶対ルール 9。不一致を解くのは人間で、自分で register を書き換えない
+- 2026-09-24 | 0 | `audits/corpus-2026-09-24.md` は同じ日付で上書きされた。前の版は 3b53eb1 にある | decide はファイル名を実行日で決める
