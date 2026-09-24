@@ -1,0 +1,78 @@
+{
+  "id": "comparison-test-for-integrals",
+  "ja": {
+    "term": "比較判定法（積分）",
+    "reading": "ひかくはんていほう・せきぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "comparison theorem",
+    "alt": [
+      "comparison test for integrals"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "0 ≦ f(x) ≦ g(x) のとき、g の広義積分が収束すれば f も収束し、f が発散すれば g も発散する、という判定法。",
+  "definition_en": "If 0 ≤ f(x) ≤ g(x), then the improper integral of f converges when that of g does, and that of g diverges when that of f does.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Compare it with one over x squared: it's smaller, and that one converges, so ours converges too.",
+      "ja": "1/x² と比べる。こちらのほうが小さくて、1/x² は収束するから、この積分も収束する。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "級数の比較判定法は comparison test（direct comparison test）。広義積分では comparison theorem と呼ぶ教科書があり、comparison test と呼ぶこともある。"
+  ],
+  "related": [
+    "convergence-of-improper-integrals",
+    "improper-integral"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "comparison theorem": 5
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

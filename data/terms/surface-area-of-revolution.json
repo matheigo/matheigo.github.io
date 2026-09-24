@@ -1,0 +1,90 @@
+{
+  "id": "surface-area-of-revolution",
+  "ja": {
+    "term": "回転面の面積",
+    "reading": "かいてんめんのめんせき",
+    "alt": []
+  },
+  "en": {
+    "term": "surface area of revolution",
+    "alt": [
+      "area of a surface of revolution"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "曲線を軸のまわりに回転させてできる曲面の面積。x 軸のまわりなら 2π∫ₐᵇ f(x)√(1 + {f′(x)}²) dx で求める。",
+  "definition_en": "The area of the surface swept out by revolving a curve about an axis; about the x-axis it is 2π ∫ₐᵇ f(x) √(1 + (f′(x))²) dx.",
+  "latex": "S = 2\\pi \\int_a^b f(x)\\sqrt{1 + \\bigl(f'(x)\\bigr)^2}\\,dx",
+  "spoken_en": "S equals two pi times the integral from a to b of f of x times the square root of one plus f prime of x squared, dx",
+  "examples": [
+    {
+      "en": "Surface area uses the arc length piece, not just dx, so don't drop the square root.",
+      "ja": "回転面の面積は dx ではなく曲線の長さの部分を使うから、ルートを落とさないように。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校では回転体の体積は扱うが、回転面の面積は扱わない。"
+  ],
+  "related": [
+    "arc-length-of-a-curve",
+    "volume-of-a-solid-of-revolution"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "回転面",
+      "en": "Surface of revolution",
+      "note": "見出しのうち「回転面」の部分の対応"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "surface area of revolution": 2
+    },
+    "written": {
+      "surface area of revolution": 1,
+      "area of a surface of revolution": 8
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

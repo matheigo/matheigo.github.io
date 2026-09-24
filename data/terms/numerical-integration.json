@@ -1,0 +1,82 @@
+{
+  "id": "numerical-integration",
+  "ja": {
+    "term": "数値積分",
+    "reading": "すうちせきぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "numerical integration",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "定積分の値を、区間を分けて計算した近似値で求める方法。台形公式やシンプソンの公式などがある。",
+  "definition_en": "Approximating the value of a definite integral with a computed sum, as in the trapezoidal rule or Simpson's rule.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "There's no elementary antiderivative here, so we'll fall back on numerical integration.",
+      "ja": "これは初等関数で原始関数が書けないから、数値積分に頼ろう。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校では数値積分は扱わない。米国の Calc II では誤差の上限（error bound）まで扱うことが多い。"
+  ],
+  "related": [
+    "trapezoidal-rule",
+    "simpsons-rule",
+    "midpoint-riemann-sum"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "数値積分",
+      "en": "Numerical integration"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "numerical integration": 6
+    },
+    "written": {
+      "numerical integration": 12
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -175,3 +175,6 @@
 - 2026-09-24 | 2 | integration-formulas の ja.term を台帳の「積分表」から「積分公式」に変えた（ja.alt に「不定積分の公式」） | 積分表は table of integrals（using-integral-tables の側）で、integration formulas の訳としては別物
 - 2026-09-24 | 2 | 英語の見出しが確立した名前でなく説明的な句のもの（integration by long division、integration by completing the square）は mapping near にし、「確立した名前ではない」と mapping_note に書いて editorial で likely にした。accumulation function は AP で使う名前を名乗るので draft | draft の基準（固有の用語を名乗るか）をそのまま当てはめた
 - 2026-09-24 | 2 | 前のバッチの語から新しいバッチの語への related は、新しいバッチのコミットで足す | related は存在する id しか指せない（validate）。バッチの順に作るので、前向きの参照は後から張るしかない
+- 2026-09-24 | 2 | hydrostatic-force の ja.term を台帳の「静水圧」から「静水圧による力」に変えた | 静水圧は hydrostatic pressure（単位面積あたり）で、hydrostatic force（板全体が受ける力）とは別の量。台帳の ja は pressure と force を取り違えていた
+- 2026-09-24 | 2 | OpenStax の節の名前（corpus/manifest.json の title。本文ではなくモジュールのメタデータ）も textbook 出典の確認に使う。area-between-curves に OpenStax Calculus Volume 1（節 Areas between Curves）を足した | cnxmlToText は節の名前を本文から落とすので、節の名前にしか出ない語は件数 0 になる。節の名前に出ることは、その本がその言い方を使っている事実
+- 2026-09-24 | 2 | 見出しに句読点を含む語（fundamental theorem of calculus, part 1）は、句読点なしの形も en.alt に入れる | countPhrase は句読点も literal で照合するので、教科書の「…Calculus, Part 1」と口頭の「… part one」が別の表現として数えられる。normalize で句読点を落とすと既存の件数がすべて変わるので、今回は変えない

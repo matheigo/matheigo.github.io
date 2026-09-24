@@ -1,0 +1,80 @@
+{
+  "id": "simpsons-rule",
+  "ja": {
+    "term": "シンプソンの公式",
+    "reading": "しんぷそんのこうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "Simpson's rule",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "区間を偶数個に分け、隣り合う 2 つの小区間ごとに放物線で近似して定積分の近似値を求める公式。",
+  "definition_en": "A method that approximates a definite integral by fitting parabolas over pairs of subintervals; n must be even.",
+  "latex": "S_n = \\frac{\\Delta x}{3}\\bigl(f(x_0) + 4f(x_1) + 2f(x_2) + \\cdots + 4f(x_{n-1}) + f(x_n)\\bigr)",
+  "spoken_en": "S sub n equals delta x over three times the quantity f of x sub zero plus four f of x sub one plus two f of x sub two, and so on, plus four f of x sub n minus one plus f of x sub n",
+  "examples": [
+    {
+      "en": "Simpson's rule needs an even number of subintervals, so n equals five won't work.",
+      "ja": "シンプソンの公式は小区間の数が偶数でないといけないから、n = 5 は使えない。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "係数は 1, 4, 2, 4, …, 2, 4, 1 の並び。英語では one, four, two, four, … と読み上げて覚えることが多い。"
+  ],
+  "related": [
+    "numerical-integration",
+    "trapezoidal-rule",
+    "midpoint-riemann-sum"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "シンプソンの公式",
+      "en": "Simpson's rule"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "Simpson's rule": 34
+    },
+    "written": {
+      "Simpson's rule": 40
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "convergence-of-improper-integrals",
+  "ja": {
+    "term": "広義積分の収束",
+    "reading": "こうぎせきぶんのしゅうそく",
+    "alt": []
+  },
+  "en": {
+    "term": "convergence of improper integrals",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "広義積分を定める極限が有限の値になること。有限でなければ発散するという。",
+  "definition_en": "An improper integral converges when the limit that defines it is a finite number, and diverges otherwise.",
+  "latex": "\\int_1^{\\infty} \\frac{dx}{x^p} \\text{ converges} \\iff p > 1",
+  "spoken_en": "the integral from one to infinity of one over x to the p dx converges if and only if p is greater than one",
+  "examples": [
+    {
+      "en": "One over x squared converges from one to infinity, but one over x diverges, even though both go to zero.",
+      "ja": "1 から ∞ まで、1/x² の積分は収束するが、1/x は発散する。どちらも 0 に近づくのに。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "∫₁^∞ dx/xᵖ の形を米国では p-integral と呼ぶ教材がある。"
+  ],
+  "related": [
+    "improper-integral",
+    "comparison-test-for-integrals"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

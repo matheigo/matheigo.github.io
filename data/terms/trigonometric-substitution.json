@@ -1,0 +1,102 @@
+{
+  "id": "trigonometric-substitution",
+  "ja": {
+    "term": "三角置換",
+    "reading": "さんかくちかん",
+    "alt": []
+  },
+  "en": {
+    "term": "trigonometric substitution",
+    "alt": [],
+    "variants": [
+      {
+        "term": "trig substitution",
+        "register": "spoken",
+        "note": "話し言葉で 68 件（MIT OCW 53・YouTube 14）と最も多い。"
+      },
+      {
+        "term": "trig sub",
+        "register": "spoken",
+        "note": "略した言い方。話し言葉で 26 件（YouTube 23）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の高校でも x = a sin θ などの置換は使うが、定積分の値を求めるときに限られ、手法に名前は付けない。米国では Calc II で trigonometric substitution として体系的に教え、不定積分の答えを x に戻すために直角三角形（reference triangle）を描く。",
+  "domains": [
+    "calculus",
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "√(a² − x²) などを含む積分で、x = a sin θ、x = a tan θ、x = a sec θ のように x を三角関数で置き換えて根号を外す方法。",
+  "definition_en": "A method for integrals with √(a² − x²), √(a² + x²) or √(x² − a²): replace x with a sin θ, a tan θ or a sec θ to remove the root.",
+  "latex": "\\int \\sqrt{1-x^2}\\,dx, \\quad x = \\sin\\theta",
+  "spoken_en": "the integral of the square root of one minus x squared dx, with x equals sine theta",
+  "examples": [
+    {
+      "en": "Square root of one minus x squared? That's a trig sub: let x be sine theta.",
+      "ja": "√(1 − x²)？ それは三角置換。x = sin θ とおく。",
+      "register": "spoken"
+    },
+    {
+      "en": "Using the trigonometric substitution x = 3 tan θ, we have dx = 3 sec² θ dθ.",
+      "ja": "三角置換 x = 3 tan θ を用いると dx = 3 sec²θ dθ となる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本では 1/cos²θ と書くところを、米国では sec²θ と書く。",
+    "AP Calculus の試験範囲には含まれない。"
+  ],
+  "related": [
+    "integration-by-substitution",
+    "integral-involving-radicals",
+    "integrals-giving-inverse-trig-functions"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "trigonometric substitution": 7,
+      "trig substitution": 68,
+      "trig sub": 26
+    },
+    "written": {
+      "trigonometric substitution": 21,
+      "trig substitution": 3
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "substitute-new-variable",
+  "ja": {
+    "term": "置き換える",
+    "reading": "おきかえる",
+    "alt": [
+      "置換する"
+    ]
+  },
+  "en": {
+    "term": "make a substitution",
+    "alt": [],
+    "variants": [
+      {
+        "term": "make a substitution",
+        "register": "spoken",
+        "note": "話し言葉で 29 件（MIT OCW 12・YouTube 17）。"
+      },
+      {
+        "term": "make the substitution",
+        "register": "spoken",
+        "note": "話し言葉で 28 件。書き言葉でも 12 件あるが、判断できる件数に届かない。"
+      },
+      {
+        "term": "do a substitution",
+        "register": "spoken",
+        "note": "話し言葉で 21 件（YouTube 16）。"
+      }
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "「x + 1 を A と置き換える」のような置き換えは、英語では Let A = x + 1. と宣言する形か、make a substitution と言う。代入する（plug in）にも substitute を使うので、英語では両者の区別が文脈頼みになる。",
+  "domains": [
+    "algebra",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "中3",
+      "数III"
+    ],
+    "us": [
+      "Algebra 1",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "式の一部をひとまとまりとみて、新しい文字で表し直すこと。",
+  "definition_en": "To rename part of an expression with a new letter so the expression becomes simpler.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's make a substitution: call x plus one A, and the whole thing factors like a quadratic.",
+      "ja": "置き換えよう。x + 1 を A とすると、全体が 2 次式のように因数分解できる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let A = x + 1. Then (x + 1)² − 3(x + 1) + 2 = A² − 3A + 2 = (A − 1)(A − 2).",
+      "ja": "x + 1 = A とおくと、(x + 1)² − 3(x + 1) + 2 = A² − 3A + 2 = (A − 1)(A − 2)。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の「x + 1 = A とおく」は式が先だが、英語の答案では Let A = x + 1. と新しい文字を先に書く。"
+  ],
+  "related": [
+    "substitute",
+    "let-u-equal",
+    "integration-by-substitution"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "make a substitution": 29,
+      "make the substitution": 28,
+      "do a substitution": 21
+    },
+    "written": {
+      "make a substitution": 5,
+      "make the substitution": 12
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

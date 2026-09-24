@@ -1,0 +1,75 @@
+{
+  "id": "hydrostatic-force",
+  "ja": {
+    "term": "静水圧による力",
+    "reading": "せいすいあつによるちから",
+    "alt": []
+  },
+  "en": {
+    "term": "hydrostatic force",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "静止した液体の圧力によって、水中の板などが受ける力の大きさ。深さによって圧力が変わるので、積分で求める。",
+  "definition_en": "The total force that a fluid at rest exerts on a submerged surface; since pressure grows with depth, it is found by integrating.",
+  "latex": "F = \\int_a^b \\rho g\\,h(y)\\,w(y)\\,dy",
+  "spoken_en": "F equals the integral from a to b of rho g times h of y times w of y, dy",
+  "examples": [
+    {
+      "en": "Pressure depends on depth, so chop the plate into horizontal strips and add up the hydrostatic force on each.",
+      "ja": "圧力は深さで変わるから、板を横に細長く切って、それぞれにかかる力を足し合わせる。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "pressure（圧力。単位面積あたり）と force（力）を区別する。「静水圧」だけだと hydrostatic pressure。",
+    "日本の高校数学では扱わない（物理の内容）。米国の Calc II では積分の応用の定番。",
+    "米国の問題は重さの単位に pound、長さに foot を使うことが多い（水の重さは 1 立方フィートあたり約 62.4 ポンド）。"
+  ],
+  "related": [
+    "center-of-mass",
+    "definite-integral"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "hydrostatic force": 10
+    },
+    "written": {
+      "hydrostatic force": 8
+    },
+    "sources": [
+      "openstax-calculus",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-24"
+  }
+}

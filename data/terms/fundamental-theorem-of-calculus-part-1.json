@@ -1,0 +1,90 @@
+{
+  "id": "fundamental-theorem-of-calculus-part-1",
+  "ja": {
+    "term": "微積分学の基本定理 第 1 部",
+    "reading": "びせきぶんがくのきほんていり だいいちぶ",
+    "alt": []
+  },
+  "en": {
+    "term": "fundamental theorem of calculus, part 1",
+    "alt": [
+      "fundamental theorem of calculus part 1",
+      "first fundamental theorem of calculus"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の数IIでは d/dx ∫ₐˣ f(t)dt = f(x) を「微分と積分の関係」として式だけで扱い、定理の番号は付けない。米国の多くの教科書はこれを Part 1 と呼ぶが、教科書によっては First ／ Second Fundamental Theorem と別の名前や番号にしていて、同じ番号が逆の内容を指すこともある。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "f が連続なら、上端を変数とする定積分 ∫ₐˣ f(t)dt を x で微分すると f(x) になる、という定理。",
+  "definition_en": "If f is continuous, then the function ∫ₐˣ f(t) dt has derivative f(x).",
+  "latex": "\\frac{d}{dx}\\int_a^x f(t)\\,dt = f(x)",
+  "spoken_en": "the derivative with respect to x of the integral from a to x of f of t dt equals f of x",
+  "examples": [
+    {
+      "en": "Part 1 says that if you integrate f and then differentiate, you get f back.",
+      "ja": "第 1 部は、f を積分してから微分すると f に戻る、ということ。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "上端が x² のような式なら連鎖律が要る: d/dx ∫ₐ^{x²} f(t)dt = f(x²)·2x。米国の試験でよく出る形。"
+  ],
+  "related": [
+    "fundamental-theorem-of-calculus",
+    "fundamental-theorem-of-calculus-part-2",
+    "function-defined-by-an-integral",
+    "accumulation-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "fundamental theorem of calculus part 1": 4,
+      "first fundamental theorem of calculus": 1
+    },
+    "written": {
+      "fundamental theorem of calculus, part 1": 8,
+      "fundamental theorem of calculus part 1": 2,
+      "first fundamental theorem of calculus": 3
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満）。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

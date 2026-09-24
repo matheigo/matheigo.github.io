@@ -1,0 +1,86 @@
+{
+  "id": "center-of-mass",
+  "ja": {
+    "term": "重心（質量中心）",
+    "reading": "じゅうしん・しつりょうちゅうしん",
+    "alt": []
+  },
+  "en": {
+    "term": "center of mass",
+    "alt": [],
+    "uk": "centre of mass",
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "物体の質量の分布の中心となる点。板や棒の重心を、モーメントを質量で割って積分で求める。",
+  "definition_en": "The point at which the mass of an object is balanced; for a plate or rod it is found by dividing moments by the mass, using integrals.",
+  "latex": "\\bar{x} = \\frac{\\int_a^b x\\,\\rho(x)\\,dx}{\\int_a^b \\rho(x)\\,dx}",
+  "spoken_en": "x bar equals the integral from a to b of x rho of x dx over the integral from a to b of rho of x dx",
+  "examples": [
+    {
+      "en": "If the plate is uniform, the center of mass is the same as the centroid.",
+      "ja": "板が一様なら、質量中心は幾何的な重心と一致する。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "三角形の重心のような幾何の重心は centroid。物体の質量の中心は center of mass。一様な板なら両者は一致する。",
+    "英国の綴りは centre of mass。"
+  ],
+  "related": [
+    "hydrostatic-force"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "重心",
+      "en": "Center of mass"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "center of mass": 93
+    },
+    "written": {
+      "center of mass": 155
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.02",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

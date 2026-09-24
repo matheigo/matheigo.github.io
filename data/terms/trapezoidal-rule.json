@@ -1,0 +1,104 @@
+{
+  "id": "trapezoidal-rule",
+  "ja": {
+    "term": "台形公式",
+    "reading": "だいけいこうしき",
+    "alt": [
+      "台形則"
+    ]
+  },
+  "en": {
+    "term": "trapezoidal rule",
+    "alt": [],
+    "variants": [
+      {
+        "term": "trapezoidal sum",
+        "register": "spoken",
+        "note": "AP Calculus の言い方。話し言葉で 15 件（すべて Khan Academy）。"
+      },
+      {
+        "term": "trapezoid rule",
+        "register": "spoken",
+        "note": "話し言葉で 10 件（すべて MIT OCW）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "各小区間で曲線を直線で結び、できた台形の面積の和で定積分を近似する公式。",
+  "definition_en": "A method that approximates a definite integral by the sum of the areas of trapezoids under the curve.",
+  "latex": "T_n = \\frac{\\Delta x}{2}\\bigl(f(x_0) + 2f(x_1) + \\cdots + 2f(x_{n-1}) + f(x_n)\\bigr)",
+  "spoken_en": "T sub n equals delta x over two times the quantity f of x sub zero plus two f of x sub one, and so on, plus two f of x sub n minus one plus f of x sub n",
+  "examples": [
+    {
+      "en": "The trapezoidal sum is just the average of the left and right Riemann sums.",
+      "ja": "台形公式の値は、左と右のリーマン和の平均にすぎない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the trapezoidal rule with n = 4 to approximate ∫₀² x³ dx.",
+      "ja": "n = 4 の台形公式で ∫₀² x³ dx の近似値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "trapezoid（台形）は米国の言い方。英国では trapezium と言う。"
+  ],
+  "related": [
+    "numerical-integration",
+    "simpsons-rule",
+    "left-riemann-sum",
+    "right-riemann-sum"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "台形公式",
+      "en": "Trapezoidal rule"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "trapezoidal rule": 9,
+      "trapezoidal sum": 15,
+      "trapezoid rule": 10
+    },
+    "written": {
+      "trapezoidal rule": 55
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

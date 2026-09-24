@@ -1,0 +1,89 @@
+{
+  "id": "trigonometric-integrals",
+  "ja": {
+    "term": "三角関数の積の積分",
+    "reading": "さんかくかんすうのせきのせきぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "trigonometric integrals",
+    "alt": [],
+    "variants": [
+      {
+        "term": "trig integrals",
+        "register": "spoken",
+        "note": "話し言葉で 16 件（MIT OCW 10・YouTube 6）と、trigonometric integrals（4 件）より多い。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "sin³x cos²x や sin 3x cos 2x のような、三角関数の積やべきの積分。積和の公式や半角の公式で次数を下げて計算する。",
+  "definition_en": "Integrals of products and powers of trigonometric functions, such as sin³x cos²x, handled with product-to-sum and power-reducing identities.",
+  "latex": "\\int \\sin^2 x\\,dx = \\frac{x}{2} - \\frac{\\sin 2x}{4} + C",
+  "spoken_en": "the integral of sine squared x dx equals x over two minus sine two x over four, plus C",
+  "examples": [
+    {
+      "en": "With an odd power of sine, save one sine for du and turn the rest into cosines.",
+      "ja": "sin の奇数乗なら、sin を 1 つ du 用に残して、残りを cos に直す。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "積和の公式は product-to-sum formulas、半角の公式（次数を下げる形）は power-reducing formulas と言う。",
+    "米国の教科書では、この名前は三角関数の積・べきの積分という特定の単元を指す。sin x の積分のような基本の積分は含めないことが多い。"
+  ],
+  "related": [
+    "integrals-of-trigonometric-functions",
+    "trigonometric-substitution"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "trigonometric integrals": 4,
+      "trig integrals": 16
+    },
+    "written": {
+      "trigonometric integrals": 12,
+      "trig integrals": 2
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}
