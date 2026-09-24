@@ -1,0 +1,83 @@
+{
+  "id": "check-by-differentiating",
+  "ja": {
+    "term": "微分して確かめる",
+    "reading": "びぶんしてたしかめる",
+    "alt": []
+  },
+  "en": {
+    "term": "check by differentiating",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "求めた不定積分を微分し、もとの関数に戻るかどうかで答えを確かめること。",
+  "definition_en": "To verify an antiderivative by differentiating it and seeing whether you get the original function back.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "You can always check by differentiating. If you get the integrand back, you're right.",
+      "ja": "いつでも微分して確かめられる。被積分関数に戻れば正解。",
+      "register": "spoken"
+    },
+    {
+      "en": "Check by differentiating: d/dx (x ln x − x) = ln x.",
+      "ja": "微分して確かめる: (x log x − x)′ = log x。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「確かめる」は check。答えを確かめる check your answer、代入して確かめる plug it back in to check。"
+  ],
+  "related": [
+    "antiderivative",
+    "indefinite-integral",
+    "find-an-antiderivative"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "check by differentiating": 2
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.02"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "separable-differential-equation",
+  "ja": {
+    "term": "変数分離形",
+    "reading": "へんすうぶんりけい",
+    "alt": []
+  },
+  "en": {
+    "term": "separable differential equation",
+    "alt": [
+      "separable equation"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "dy/dx = f(x)g(y) の形に書ける微分方程式。y の式と x の式を両辺に分けて、それぞれ積分して解く。",
+  "definition_en": "A differential equation that can be written as dy/dx = f(x)g(y), so the y's and x's can be put on opposite sides and each side integrated.",
+  "latex": "\\frac{dy}{dx} = f(x)\\,g(y)",
+  "spoken_en": "d y d x equals f of x times g of y",
+  "examples": [
+    {
+      "en": "This one's separable: get all the y's on one side with dy, and all the x's on the other side with dx.",
+      "ja": "これは変数分離形。y は dy と一緒に片側へ、x は dx と一緒にもう片側へ集める。",
+      "register": "spoken"
+    },
+    {
+      "en": "Since the equation is separable, we write dy/y = 2x dx and integrate both sides.",
+      "ja": "変数分離形なので dy/y = 2x dx と変形し、両辺を積分する。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "解き方の名前は separation of variables（変数分離）。方程式の種類は形容詞 separable（分離できる）で言う。",
+    "両辺を積分して出てくる ln|y| を、日本の教科書では log|y| と書く。"
+  ],
+  "related": [
+    "differential-equation",
+    "logistic-differential-equation",
+    "integrate"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "変数分離",
+      "en": "Separation of variables"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "separable differential equation": 23,
+      "separable equation": 2
+    },
+    "written": {
+      "separable differential equation": 7,
+      "separable equation": 3
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "find-the-area-by-integration",
+  "ja": {
+    "term": "面積を積分で求める",
+    "reading": "めんせきをせきぶんでもとめる",
+    "alt": []
+  },
+  "en": {
+    "term": "use integration to find the area",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "図形の面積を、定積分の式を立てて求めること。",
+  "definition_en": "To find the area of a region by setting up and evaluating a definite integral.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We can't use a geometry formula for this shape, so we'll use integration to find the area.",
+      "ja": "この形は図形の公式では求められないから、積分で面積を求めよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use integration to find the area of the region bounded by y = √x, y = 0, and x = 4.",
+      "ja": "y = √x、y = 0、x = 4 で囲まれた図形の面積を積分で求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「積分の式を立てる」は set up the integral。"
+  ],
+  "related": [
+    "area-under-the-curve",
+    "area-between-two-curves",
+    "the-area-of-the-region-bounded-by"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

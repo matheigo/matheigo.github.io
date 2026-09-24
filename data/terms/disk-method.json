@@ -1,0 +1,81 @@
+{
+  "id": "disk-method",
+  "ja": {
+    "term": "円板法",
+    "reading": "えんばんほう",
+    "alt": []
+  },
+  "en": {
+    "term": "disk method",
+    "alt": [
+      "disc method"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "日本の数IIIでは回転体の体積を V = π∫ₐᵇ {f(x)}²dx の式で求めるだけで、方法に名前を付けない（「円板法」は本プロジェクトの訳語）。米国では disk method ／ washer method ／ shell method と名前で呼び分け、問題に応じて選ばせる。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "回転体を回転軸に垂直な薄い円板に分け、その体積を積分して回転体の体積を求める方法。",
+  "definition_en": "Finding the volume of a solid of revolution by slicing it into thin disks perpendicular to the axis and integrating their volumes.",
+  "latex": "V = \\pi \\int_a^b \\bigl(R(x)\\bigr)^2\\,dx",
+  "spoken_en": "V equals pi times the integral from a to b of R of x, squared, dx",
+  "examples": [
+    {
+      "en": "There's no hole in the middle, so the disk method works here.",
+      "ja": "真ん中に穴がないから、ここは円板法でいける。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "disc method と綴る教材もある。"
+  ],
+  "related": [
+    "washer-method",
+    "shell-method",
+    "disk",
+    "volume-of-a-solid-of-revolution"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "disk method": 20,
+      "disc method": 5
+    },
+    "written": {
+      "disk method": 25
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

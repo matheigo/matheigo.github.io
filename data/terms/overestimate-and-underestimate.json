@@ -1,0 +1,92 @@
+{
+  "id": "overestimate-and-underestimate",
+  "ja": {
+    "term": "過大評価・過小評価",
+    "reading": "かだいひょうか・かしょうひょうか",
+    "alt": []
+  },
+  "en": {
+    "term": "overestimate and underestimate",
+    "alt": [],
+    "variants": [
+      {
+        "term": "underestimate",
+        "register": "spoken",
+        "note": "話し言葉で 41 件（Khan Academy 39）。"
+      },
+      {
+        "term": "overestimate",
+        "register": "spoken",
+        "note": "話し言葉で 30 件（Khan Academy 24）。"
+      }
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB"
+    ]
+  },
+  "definition_ja": "近似値が真の値より大きいこと（過大評価）と小さいこと（過小評価）。リーマン和などの誤差の向きを言う。",
+  "definition_en": "Whether an approximation comes out above the true value (overestimate) or below it (underestimate), as with Riemann sums.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "f is decreasing, so the left sum is an overestimate and the right sum is an underestimate.",
+      "ja": "f は減少関数だから、左の和は過大評価、右の和は過小評価になる。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語では動詞としても使う（The left sum overestimates the integral. ＝ 左の和は積分を多めに見積もる）。「評価」と訳さず「多めの見積もり」と考えると分かりやすい。"
+  ],
+  "related": [
+    "left-riemann-sum",
+    "right-riemann-sum",
+    "riemann-sum"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "underestimate": 41,
+      "overestimate": 30
+    },
+    "written": {
+      "underestimate": 11,
+      "overestimate": 7
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.03",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "change-the-limits-of-integration",
+  "ja": {
+    "term": "積分区間を変える",
+    "reading": "せきぶんくかんをかえる",
+    "alt": []
+  },
+  "en": {
+    "term": "change the limits of integration",
+    "alt": [],
+    "variants": [
+      {
+        "term": "change the bounds",
+        "register": "spoken",
+        "note": "話し言葉で 8 件（MIT OCW 4・Khan Academy 2・YouTube 2）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "置換積分で、積分区間をもとの変数の値から新しい変数の値に書き換えること。",
+  "definition_en": "In a substitution, to replace the limits of integration by the corresponding values of the new variable.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "When x is zero, u is one, and when x is one, u is two, so change the bounds to one and two.",
+      "ja": "x = 0 のとき u = 1、x = 1 のとき u = 2 だから、区間を 1 から 2 に変える。",
+      "register": "spoken"
+    },
+    {
+      "en": "Change the limits of integration: when x = 0, u = 1, and when x = 1, u = 2.",
+      "ja": "積分区間を変える。x = 0 のとき u = 1、x = 1 のとき u = 2 である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の答案の「x | 0 → 1 ／ t | 1 → 2」の対応表は、米国では書かない。when x = 0, u = 1 と文で書く。"
+  ],
+  "related": [
+    "substitution-in-a-definite-integral",
+    "let-u-equal",
+    "interval-of-integration"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "change the bounds": 8
+    },
+    "written": {
+      "change the limits of integration": 10
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "as-n-approaches-infinity",
+  "ja": {
+    "term": "n → ∞ のとき",
+    "reading": "えぬがむげんだいのとき",
+    "alt": []
+  },
+  "en": {
+    "term": "as n approaches infinity",
+    "alt": [],
+    "variants": [
+      {
+        "term": "as n approaches infinity",
+        "register": "spoken",
+        "note": "話し言葉で 110 件（Khan Academy 96・YouTube 14）。"
+      },
+      {
+        "term": "as n goes to infinity",
+        "register": "spoken",
+        "note": "話し言葉で 77 件（MIT OCW 52・YouTube 24）。大学の講義ではこちらが多い。"
+      }
+    ],
+    "uk": "as n tends to infinity",
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "n を限りなく大きくするとき。極限を考える条件を表す。",
+  "definition_en": "As n gets larger and larger without bound; the condition under which a limit is taken.",
+  "latex": "\\lim_{n \\to \\infty} \\frac{1}{n} = 0",
+  "spoken_en": "the limit as n approaches infinity of one over n is zero",
+  "examples": [
+    {
+      "en": "As n approaches infinity, the rectangles get thinner and the sum gets closer to the area.",
+      "ja": "n → ∞ のとき、長方形は細くなって、和は面積に近づく。",
+      "register": "spoken"
+    },
+    {
+      "en": "As n → ∞, the sum converges to ∫₀¹ x² dx = 1/3.",
+      "ja": "n → ∞ のとき、この和は ∫₀¹ x² dx = 1/3 に収束する。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英国では as n tends to infinity とも言う。",
+    "書くときは as n → ∞ と記号で書くことが多い。"
+  ],
+  "related": [
+    "limit-of-a-riemann-sum",
+    "riemann-sum",
+    "write-as-a-limit-of-a-sum"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "as n approaches infinity": 110,
+      "as n goes to infinity": 77
+    },
+    "written": {
+      "as n approaches infinity": 1,
+      "as n goes to infinity": 2
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-6.042",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

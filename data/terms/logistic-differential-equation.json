@@ -1,0 +1,99 @@
+{
+  "id": "logistic-differential-equation",
+  "ja": {
+    "term": "ロジスティック微分方程式",
+    "reading": "ろじすてぃっくびぶんほうていしき",
+    "alt": []
+  },
+  "en": {
+    "term": "logistic differential equation",
+    "alt": [],
+    "variants": [
+      {
+        "term": "logistic equation",
+        "register": "written",
+        "note": "書き言葉で 37 件と、logistic differential equation（17 件）より多い（OpenStax Calculus Volume 2・Algebra and Trigonometry）。話し言葉では 7 件。"
+      },
+      {
+        "term": "logistic differential equation",
+        "register": "written",
+        "note": "書き言葉で 17 件。話し言葉では 20 件（すべて Khan Academy）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "個体数などが上限（環境収容力）に近づくにつれて増え方が遅くなる様子を表す微分方程式 dP/dt = kP(1 − P/M)。",
+  "definition_en": "The differential equation dP/dt = kP(1 − P/M), for growth that slows as P approaches the carrying capacity M.",
+  "latex": "\\frac{dP}{dt} = kP\\left(1 - \\frac{P}{M}\\right)",
+  "spoken_en": "d P d t equals k P times the quantity one minus P over M",
+  "examples": [
+    {
+      "en": "In the logistic model, the population grows fastest when it's at half the carrying capacity.",
+      "ja": "ロジスティックモデルでは、個体数が環境収容力の半分のときに最も速く増える。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "上限 M は carrying capacity（環境収容力）と呼ぶ。"
+  ],
+  "related": [
+    "differential-equation",
+    "separable-differential-equation",
+    "eulers-method"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ロジスティック方程式",
+      "en": "Logistic differential equation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "logistic differential equation": 20,
+      "logistic equation": 7
+    },
+    "written": {
+      "logistic differential equation": 17,
+      "logistic equation": 37
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

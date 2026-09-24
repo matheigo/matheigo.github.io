@@ -1,0 +1,89 @@
+{
+  "id": "can-be-integrated",
+  "ja": {
+    "term": "積分できる",
+    "reading": "せきぶんできる",
+    "alt": []
+  },
+  "en": {
+    "term": "integrable",
+    "alt": [
+      "can be integrated"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "日本の高校で「積分できる」と言うと、ふつうは原始関数を式で書けること（計算できること）を指す。英語の integrable は定積分が存在すること（区間で連続なら integrable）を指す別の概念。「式で積分できない」は has no elementary antiderivative と言う。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Calculus I",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "関数の原始関数を求めたり、定積分の値を定めたりできること。",
+  "definition_en": "Said of a function whose integral exists; in English, integrable means the definite integral exists, not that it has a formula.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "e to the minus x squared is integrable, but you can't write its antiderivative with the functions you know.",
+      "ja": "e^{−x²} は積分可能だけど、知っている関数でその原始関数を書くことはできない。",
+      "register": "spoken"
+    },
+    {
+      "en": "If f is continuous on [a, b], then f is integrable on [a, b].",
+      "ja": "f が [a, b] で連続ならば、f は [a, b] で積分可能である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「積分できない」を can't be integrated と言うと、「定積分が存在しない」と受け取られることがある。式で表せないと言いたいなら no elementary antiderivative。"
+  ],
+  "related": [
+    "antiderivative",
+    "definite-integral"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "integrable": 3,
+      "can be integrated": 1
+    },
+    "written": {
+      "integrable": 40,
+      "can be integrated": 5
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "revolve-around-the-y-axis",
+  "ja": {
+    "term": "y 軸のまわりに回転させる",
+    "reading": "わいじくのまわりにかいてんさせる",
+    "alt": []
+  },
+  "en": {
+    "term": "revolve around the y-axis",
+    "alt": [
+      "rotate around the y-axis",
+      "rotate about the y-axis"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "平面の図形を、y 軸を軸として 1 回転させて立体（回転体）をつくること。",
+  "definition_en": "To spin a plane region one full turn about the y-axis, producing a solid of revolution.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If you rotate it around the y-axis instead, you'll want x in terms of y.",
+      "ja": "代わりに y 軸のまわりに回すなら、x を y の式で表したい。",
+      "register": "spoken"
+    },
+    {
+      "en": "The region is revolved about the y-axis. Set up an integral for the volume.",
+      "ja": "その部分を y 軸のまわりに 1 回転させる。体積を表す積分の式を立てよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "y 軸のまわりの回転体は、日本では x = g(y) と書き直して π∫x²dy で求めるのがふつうだが、米国では x のまま 2π∫x f(x)dx とする shell method もよく使う。"
+  ],
+  "related": [
+    "revolve-around-the-x-axis",
+    "shell-method",
+    "volume-of-a-solid-of-revolution",
+    "axis-of-revolution"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "revolve around the y-axis": 1,
+      "rotate around the y-axis": 3,
+      "rotate about the y-axis": 1
+    },
+    "written": {
+      "revolve around the y-axis": 1
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-calculus",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

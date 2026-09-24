@@ -1,0 +1,106 @@
+{
+  "id": "find-an-antiderivative",
+  "ja": {
+    "term": "原始関数を見つける",
+    "reading": "げんしかんすうをみつける",
+    "alt": []
+  },
+  "en": {
+    "term": "take the antiderivative",
+    "alt": [],
+    "variants": [
+      {
+        "term": "find the antiderivative",
+        "register": "written",
+        "note": "書き言葉で 23 件（OpenStax Calculus Volume 1 が 20 件）と最も多い。話し言葉でも 17 件。"
+      },
+      {
+        "term": "find an antiderivative",
+        "register": "spoken",
+        "note": "話し言葉で 23 件（MIT OCW 16）。原始関数は 1 つに決まらないので、数学的には an が正確。"
+      }
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "微分すると与えられた関数になる関数を 1 つ求めること。",
+  "definition_en": "To come up with a function whose derivative is the given function.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Take the antiderivative of each term, then plug in the bounds.",
+      "ja": "各項の原始関数を求めて、それから上端と下端を代入する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the antiderivative F(x) of f(x) = 3x² that satisfies F(1) = 2.",
+      "ja": "F(1) = 2 を満たす f(x) = 3x² の原始関数 F(x) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "take the antiderivative は Khan Academy に集中している（話し言葉 92 件中 81 件）。大学の講義（MIT OCW）では find an antiderivative が多い。"
+  ],
+  "related": [
+    "antiderivative",
+    "indefinite-integral",
+    "check-by-differentiating"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "take the antiderivative": 92,
+      "find the antiderivative": 17,
+      "find an antiderivative": 23
+    },
+    "written": {
+      "take the antiderivative": 4,
+      "find the antiderivative": 23,
+      "find an antiderivative": 7
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

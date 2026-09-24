@@ -1,0 +1,86 @@
+{
+  "id": "revolve-around-the-x-axis",
+  "ja": {
+    "term": "x 軸のまわりに回転させる",
+    "reading": "えっくすじくのまわりにかいてんさせる",
+    "alt": []
+  },
+  "en": {
+    "term": "revolve around the x-axis",
+    "alt": [
+      "rotate around the x-axis",
+      "rotate about the x-axis"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "平面の図形を、x 軸を軸として 1 回転させて立体（回転体）をつくること。",
+  "definition_en": "To spin a plane region one full turn about the x-axis, producing a solid of revolution.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Take this region and rotate it around the x-axis. Each slice becomes a disk.",
+      "ja": "この部分を x 軸のまわりに回転させる。切り口はどれも円板になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "The region under y = √x on [0, 4] is revolved around the x-axis. Find the volume of the solid.",
+      "ja": "区間 [0, 4] で y = √x の下の部分を x 軸のまわりに 1 回転させてできる立体の体積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "動詞は revolve も rotate も、前置詞は around も about も使う。問題文では revolved ／ rotated と受け身で書かれることが多い。"
+  ],
+  "related": [
+    "revolve-around-the-y-axis",
+    "volume-of-a-solid-of-revolution",
+    "disk",
+    "axis-of-revolution"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "rotate about the x-axis": 1
+    },
+    "sources": [
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

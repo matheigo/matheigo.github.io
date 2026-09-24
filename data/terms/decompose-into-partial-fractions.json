@@ -1,0 +1,91 @@
+{
+  "id": "decompose-into-partial-fractions",
+  "ja": {
+    "term": "部分分数に分解する",
+    "reading": "ぶぶんぶんすうにぶんかいする",
+    "alt": []
+  },
+  "en": {
+    "term": "decompose into partial fractions",
+    "alt": [
+      "split into partial fractions"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数B",
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "分数式を部分分数の和に書き直すこと。",
+  "definition_en": "To rewrite a rational expression as a sum of partial fractions.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Factor the bottom first, then break it up into partial fractions.",
+      "ja": "まず分母を因数分解して、それから部分分数に分解する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Decompose 3/(x² − x − 2) into partial fractions.",
+      "ja": "3/(x² − x − 2) を部分分数に分解せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "授業では do partial fractions（部分分数分解をする）と名詞で言うこともある。"
+  ],
+  "related": [
+    "partial-fraction-decomposition",
+    "integration-by-partial-fractions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "decompose into partial fractions": 2,
+      "split into partial fractions": 2
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 4 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

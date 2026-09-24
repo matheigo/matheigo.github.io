@@ -1,0 +1,85 @@
+{
+  "id": "left-riemann-sum",
+  "ja": {
+    "term": "左リーマン和",
+    "reading": "ひだりりーまんわ",
+    "alt": []
+  },
+  "en": {
+    "term": "left Riemann sum",
+    "alt": [],
+    "variants": [
+      {
+        "term": "left-endpoint approximation",
+        "register": "written",
+        "note": "教科書の書き方。書き言葉で 21 件（OpenStax Calculus Volume 1）。話し言葉には出ない。"
+      }
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "区間を等分した各小区間の左端での関数の値を高さとする長方形の面積の和。",
+  "definition_en": "A Riemann sum whose rectangles take their heights from the left endpoint of each subinterval.",
+  "latex": "L_n = \\sum_{i=0}^{n-1} f(x_i)\\,\\Delta x",
+  "spoken_en": "L sub n equals the sum from i equals zero to n minus one of f of x sub i delta x",
+  "examples": [
+    {
+      "en": "For an increasing function, the left Riemann sum is an underestimate.",
+      "ja": "増加関数なら、左リーマン和は過小評価になる。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の区分求積法では Σ_{k=0}^{n−1}（左端）と Σ_{k=1}^{n}（右端）を名前を付けずに使うが、米国では left ／ right ／ midpoint と名前を付けて比べる。"
+  ],
+  "related": [
+    "right-riemann-sum",
+    "midpoint-riemann-sum",
+    "riemann-sum",
+    "overestimate-and-underestimate"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "left Riemann sum": 16
+    },
+    "written": {
+      "left Riemann sum": 3,
+      "left-endpoint approximation": 21
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

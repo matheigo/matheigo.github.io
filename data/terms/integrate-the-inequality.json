@@ -1,0 +1,80 @@
+{
+  "id": "integrate-the-inequality",
+  "ja": {
+    "term": "不等式を積分する",
+    "reading": "ふとうしきをせきぶんする",
+    "alt": []
+  },
+  "en": {
+    "term": "integrate the inequality",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "区間で成り立つ不等式 f(x) ≦ g(x) の両辺を積分して、定積分どうしの不等式を得ること。",
+  "definition_en": "To integrate both sides of an inequality f(x) ≤ g(x) that holds on an interval, giving an inequality between integrals.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Since sine x is at most x here, integrate the inequality from zero to pi over two.",
+      "ja": "ここでは sin x ≦ x だから、この不等式を 0 から π/2 まで積分しよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Integrating the inequality 1/(1 + x²) ≤ 1 from 0 to 1 gives π/4 ≤ 1.",
+      "ja": "不等式 1/(1 + x²) ≦ 1 を 0 から 1 まで積分すると π/4 ≦ 1 を得る。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "integrate both sides of the inequality とも言う。"
+  ],
+  "related": [
+    "inequalities-involving-integrals",
+    "properties-of-integrals"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "integrate the inequality": 1
+    },
+    "sources": [
+      "mit-18.01"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

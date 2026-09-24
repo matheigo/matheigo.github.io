@@ -1,0 +1,82 @@
+{
+  "id": "net-change",
+  "ja": {
+    "term": "純変化量",
+    "reading": "じゅんへんかりょう",
+    "alt": []
+  },
+  "en": {
+    "term": "net change",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "日本の高校では「変化量」とは言うが、定積分で求まる変化の合計に「純変化量」のような名前は付けない（この見出しは本プロジェクトの訳語）。米国では net change（増えた分と減った分を差し引いた変化）と呼び、∫ₐᵇ F′(x)dx = F(b) − F(a) を net change theorem として教える。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "ある量の、区間の始めから終わりまでの変化の合計。増えた分と減った分を差し引いたもので、変化率の定積分で求まる。",
+  "definition_en": "The overall change in a quantity from start to finish, increases minus decreases, found by integrating its rate of change.",
+  "latex": "F(b) - F(a) = \\int_a^b F'(x)\\,dx",
+  "spoken_en": "F of b minus F of a equals the integral from a to b of F prime of x dx",
+  "examples": [
+    {
+      "en": "Integrating the velocity gives you the net change in position, not the total distance.",
+      "ja": "速度を積分すると位置の純変化量が出る。移動距離ではない。",
+      "register": "spoken"
+    },
+    {
+      "en": "The net change in population between t = 0 and t = 10 is ∫₀¹⁰ P′(t) dt.",
+      "ja": "t = 0 から t = 10 までの人口の変化量は ∫₀¹⁰ P′(t) dt である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "net は「差し引きの」の意味。net change が 0 でも、途中で動かなかったとは限らない。"
+  ],
+  "related": [
+    "displacement",
+    "total-distance-traveled",
+    "accumulation",
+    "velocity-and-position"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "net change": 8
+    },
+    "written": {
+      "net change": 23
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

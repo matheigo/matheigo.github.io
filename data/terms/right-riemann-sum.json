@@ -1,0 +1,85 @@
+{
+  "id": "right-riemann-sum",
+  "ja": {
+    "term": "右リーマン和",
+    "reading": "みぎりーまんわ",
+    "alt": []
+  },
+  "en": {
+    "term": "right Riemann sum",
+    "alt": [],
+    "variants": [
+      {
+        "term": "right-endpoint approximation",
+        "register": "written",
+        "note": "教科書の書き方。書き言葉で 26 件（OpenStax Calculus Volume 1）。話し言葉には出ない。"
+      }
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "区間を等分した各小区間の右端での関数の値を高さとする長方形の面積の和。",
+  "definition_en": "A Riemann sum whose rectangles take their heights from the right endpoint of each subinterval.",
+  "latex": "R_n = \\sum_{i=1}^{n} f(x_i)\\,\\Delta x",
+  "spoken_en": "R sub n equals the sum from i equals one to n of f of x sub i delta x",
+  "examples": [
+    {
+      "en": "For an increasing function, the right Riemann sum overestimates the area.",
+      "ja": "増加関数なら、右リーマン和は面積を多めに見積もる。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の区分求積法でよく使う (1/n)Σ_{k=1}^{n} f(k/n) は、区間 [0, 1] の right Riemann sum にあたる。"
+  ],
+  "related": [
+    "left-riemann-sum",
+    "midpoint-riemann-sum",
+    "riemann-sum",
+    "overestimate-and-underestimate"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "right Riemann sum": 38
+    },
+    "written": {
+      "right Riemann sum": 1,
+      "right-endpoint approximation": 26
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

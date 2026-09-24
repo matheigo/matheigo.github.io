@@ -1,0 +1,78 @@
+{
+  "id": "total-distance-traveled",
+  "ja": {
+    "term": "移動距離",
+    "reading": "いどうきょり",
+    "alt": []
+  },
+  "en": {
+    "term": "total distance traveled",
+    "alt": [],
+    "uk": "total distance travelled",
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "動く点が実際に動いた道のりの合計。速度の絶対値の定積分 ∫ₐᵇ |v(t)|dt で求まる。",
+  "definition_en": "The total length of the path an object covers, ∫ₐᵇ |v(t)| dt, counting motion in either direction as positive.",
+  "latex": "\\int_a^b |v(t)|\\,dt",
+  "spoken_en": "the integral from a to b of the absolute value of v of t, dt",
+  "examples": [
+    {
+      "en": "For total distance traveled, split the integral wherever the velocity changes sign.",
+      "ja": "移動距離は、速度の符号が変わるところで積分を分ける。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数IIIの「道のり」に当たる。"
+  ],
+  "related": [
+    "displacement",
+    "velocity-and-position",
+    "split-the-integral"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "total distance traveled": 9
+    },
+    "written": {
+      "total distance traveled": 19
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

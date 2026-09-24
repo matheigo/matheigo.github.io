@@ -1,0 +1,106 @@
+{
+  "id": "let-u-equal",
+  "ja": {
+    "term": "u とおく",
+    "reading": "ゆーとおく",
+    "alt": []
+  },
+  "en": {
+    "term": "let u equal",
+    "alt": [],
+    "variants": [
+      {
+        "term": "set u equal to",
+        "register": "spoken",
+        "note": "話し言葉で 11 件と、let u equal（13 件）に近い。"
+      },
+      {
+        "term": "let u =",
+        "register": "written",
+        "note": "答案・教科書では Let u = x² + 1. のように = で書く（書き言葉 78 件）。"
+      }
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "置換積分で、式の一部を新しい文字 u で置き換えると宣言すること。",
+  "definition_en": "To introduce u as a new variable standing for part of the integrand, the first step of a substitution.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let u equal x squared plus one. Then du is two x dx.",
+      "ja": "u = x² + 1 とおこう。すると du = 2x dx。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let u = x² + 1. Then du = 2x dx, and the integral becomes ∫ u³ du.",
+      "ja": "u = x² + 1 とおくと du = 2x dx で、積分は ∫ u³ du となる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の答案の「x² + 1 = t とおく」は式が先だが、英語では Let u = x² + 1. と新しい文字を先に書く。"
+  ],
+  "related": [
+    "integration-by-substitution",
+    "write-dx-in-terms-of-du",
+    "change-the-limits-of-integration"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "let u equal": 13,
+      "set u equal to": 11,
+      "let u =": 1
+    },
+    "written": {
+      "let u equal": 2,
+      "let u =": 78
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "cylindrical-shell",
+  "ja": {
+    "term": "円柱の殻",
+    "reading": "えんちゅうのから",
+    "alt": []
+  },
+  "en": {
+    "term": "cylindrical shell",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "「円柱の殻」は英語の cylindrical shell を訳した言い方で、日本の高校には決まった名前がない（バウムクーヘン積分の「1 枚の皮」にあたる）。米国では shell method の説明で、厚さ Δx の薄い円筒の皮を cylindrical shell と呼ぶ。",
+  "domains": [
+    "calculus",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "半径 x、高さ f(x)、厚さ dx の薄い円筒の皮。体積はおよそ 2πx f(x) dx。",
+  "definition_en": "A thin hollow cylinder of radius x, height f(x), and thickness dx, with volume about 2πx f(x) dx.",
+  "latex": "V = 2\\pi \\int_a^b x\\,f(x)\\,dx",
+  "spoken_en": "V equals two pi times the integral from a to b of x times f of x dx",
+  "examples": [
+    {
+      "en": "Unroll one cylindrical shell and it's basically a thin slab: two pi x by f of x by dx.",
+      "ja": "円柱の殻を 1 枚広げると、ほぼ 2πx × f(x) × dx の薄い板になる。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "複数形 cylindrical shells で使うことが多い（method of cylindrical shells）。"
+  ],
+  "related": [
+    "shell-method",
+    "revolve-around-the-y-axis"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "cylindrical shell": 5
+    },
+    "written": {
+      "cylindrical shell": 7
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 7 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

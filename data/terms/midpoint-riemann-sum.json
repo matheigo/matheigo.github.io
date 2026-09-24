@@ -1,0 +1,73 @@
+{
+  "id": "midpoint-riemann-sum",
+  "ja": {
+    "term": "中点リーマン和",
+    "reading": "ちゅうてんりーまんわ",
+    "alt": []
+  },
+  "en": {
+    "term": "midpoint rule",
+    "alt": [
+      "midpoint Riemann sum"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "各小区間の中点での関数の値を高さとする長方形の面積の和。定積分の近似に使う。",
+  "definition_en": "A Riemann sum that uses the midpoint of each subinterval for the heights; as a numerical method it is called the midpoint rule.",
+  "latex": "M_n = \\sum_{i=1}^{n} f\\!\\left(\\frac{x_{i-1}+x_i}{2}\\right)\\Delta x",
+  "spoken_en": "M sub n equals the sum from i equals one to n of f of the midpoint of each subinterval, times delta x",
+  "examples": [
+    {
+      "en": "With the same number of rectangles, the midpoint rule usually beats the left and right sums.",
+      "ja": "同じ長方形の数なら、中点リーマン和はたいてい左や右の和より精度がいい。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "Riemann sum の一つとして習うときは midpoint Riemann sum（midpoint sum）、数値積分の方法としては midpoint rule と呼ぶ。"
+  ],
+  "related": [
+    "left-riemann-sum",
+    "right-riemann-sum",
+    "riemann-sum"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "midpoint rule": 43
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

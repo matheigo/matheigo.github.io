@@ -1,0 +1,84 @@
+{
+  "id": "area-between-curves",
+  "ja": {
+    "term": "曲線間の面積",
+    "reading": "きょくせんかんのめんせき",
+    "alt": []
+  },
+  "en": {
+    "term": "area between curves",
+    "alt": [
+      "area between the curves"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "複数の曲線にはさまれた部分の面積。x で積分するか y で積分するかを、図形に合わせて選ぶ。",
+  "definition_en": "The area enclosed between curves, computed with respect to x (top minus bottom) or y (right minus left), whichever suits the region.",
+  "latex": "A = \\int_c^d \\bigl(g(y) - h(y)\\bigr)\\,dy",
+  "spoken_en": "A equals the integral from c to d of g of y minus h of y, dy",
+  "examples": [
+    {
+      "en": "If the region is bounded on the left and right by curves, slice it horizontally and integrate with respect to y.",
+      "ja": "部分が左右の曲線で決まるなら、横に切って y で積分する。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国ではこの単元で、dx と dy のどちらで積分するかを選ぶ練習をする。"
+  ],
+  "related": [
+    "area-between-two-curves",
+    "area-bounded-by-curves",
+    "top-minus-bottom"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "area between curves": 3,
+      "area between the curves": 4
+    },
+    "written": {
+      "area between the curves": 5
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

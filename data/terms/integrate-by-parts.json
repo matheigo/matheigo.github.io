@@ -1,0 +1,104 @@
+{
+  "id": "integrate-by-parts",
+  "ja": {
+    "term": "部分積分する",
+    "reading": "ぶぶんせきぶんする",
+    "alt": []
+  },
+  "en": {
+    "term": "use integration by parts",
+    "alt": [
+      "integrate by parts"
+    ],
+    "variants": [
+      {
+        "term": "use integration by parts",
+        "register": "both",
+        "note": "話し言葉で 16 件、書き言葉で 12 件と最も多い。"
+      },
+      {
+        "term": "do integration by parts",
+        "register": "spoken",
+        "note": "話し言葉で 11 件（YouTube 8・MIT OCW 3）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "部分積分法を使って積分すること。",
+  "definition_en": "To evaluate an integral with the integration by parts formula.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We can't substitute our way out of x times cosine x, so let's do integration by parts.",
+      "ja": "x cos x は置換ではどうにもならないから、部分積分しよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use integration by parts with u = ln x and dv = x dx.",
+      "ja": "u = log x、dv = x dx として部分積分せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "動詞の integrate by parts もあるが、コーパスでは use ／ do integration by parts のほうが多い（話し言葉 16・11 に対し 6）。"
+  ],
+  "related": [
+    "integration-by-parts",
+    "which-one-to-differentiate",
+    "integrate-by-parts-repeatedly"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "use integration by parts": 16,
+      "integrate by parts": 6,
+      "do integration by parts": 11
+    },
+    "written": {
+      "use integration by parts": 12,
+      "integrate by parts": 1
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-24"
+  }
+}

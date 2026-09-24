@@ -1,0 +1,101 @@
+{
+  "id": "evaluate-the-integral",
+  "ja": {
+    "term": "積分を計算する",
+    "reading": "せきぶんをけいさんする",
+    "alt": []
+  },
+  "en": {
+    "term": "evaluate the integral",
+    "alt": [],
+    "variants": [
+      {
+        "term": "compute the integral",
+        "register": "spoken",
+        "note": "話し言葉で 21 件（MIT OCW 20）と、evaluate the integral（15 件）より多い。書き言葉では 9 件。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "積分（不定積分・定積分）を実際に計算すること。",
+  "definition_en": "To work out an integral, definite or indefinite.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Okay, let's evaluate the integral. The antiderivative of x cubed is x to the fourth over four.",
+      "ja": "じゃあ積分を計算しよう。x³ の原始関数は x⁴/4。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate the integral ∫ (2x + 1)⁵ dx.",
+      "ja": "不定積分 ∫ (2x + 1)⁵ dx を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "問題文の指示語は Evaluate が多い（書き言葉 94 件）。「求めよ」に当たる Find も使う。"
+  ],
+  "related": [
+    "evaluate-the-definite-integral",
+    "integrate",
+    "definite-integral",
+    "indefinite-integral"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "evaluate the integral": 15,
+      "compute the integral": 21
+    },
+    "written": {
+      "evaluate the integral": 94,
+      "compute the integral": 9
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-24"
+  }
+}

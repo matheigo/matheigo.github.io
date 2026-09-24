@@ -1,0 +1,73 @@
+{
+  "id": "accumulation-function",
+  "ja": {
+    "term": "累積関数",
+    "reading": "るいせきかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "accumulation function",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "∫ₐˣ f(t)dt の形の関数を、AP Calculus では accumulation function と呼ぶ。日本の高校では「定積分で表された関数」として扱い、「累積関数」という名前は使わない（この見出しは本プロジェクトの訳語）。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "AP Calculus AB"
+    ]
+  },
+  "definition_ja": "上端を変数とする定積分 F(x) = ∫ₐˣ f(t)dt で定められる関数。a から x までに積み重なった量を表す。",
+  "definition_en": "A function of the form F(x) = ∫ₐˣ f(t) dt, giving the amount accumulated from a up to x.",
+  "latex": "F(x) = \\int_a^x f(t)\\,dt",
+  "spoken_en": "F of x equals the integral from a to x of f of t dt",
+  "examples": [
+    {
+      "en": "Here g is an accumulation function, so g prime of x is just f of x.",
+      "ja": "ここでの g は累積関数だから、g′(x) はただの f(x)。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "function-defined-by-an-integral",
+    "accumulation",
+    "fundamental-theorem-of-calculus"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語の見出し accumulation function は AP Calculus で使う名前だが、出典にできる資料（Wikipedia の記事・OpenStax の本文）で確かめられない。コーパスでも 0 件（Khan Academy の AP Calculus を含む）。",
+      "raised": "2026-09-24"
+    },
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ],
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  }
+}

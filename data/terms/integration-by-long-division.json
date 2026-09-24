@@ -1,0 +1,70 @@
+{
+  "id": "integration-by-long-division",
+  "ja": {
+    "term": "長除法による積分",
+    "reading": "ちょうじょほうによるせきぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "integration by long division",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "「長除法による積分」も integration by long division も確立した名前ではない。日本では「分子の次数を分母より下げてから積分する」と説明し、米国の AP Calculus では integrating using long division として同じ手順を扱う。多項式の割り算そのものは、米国では polynomial long division と呼ぶ。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "分子の次数が分母以上の分数関数を、多項式の割り算で商と余りに分けてから積分する方法。",
+  "definition_en": "Integrating a rational function whose numerator has degree at least that of the denominator by first dividing the polynomials.",
+  "latex": "\\int \\frac{x^2+1}{x+1}\\,dx = \\int \\left(x - 1 + \\frac{2}{x+1}\\right)dx",
+  "spoken_en": "the integral of x squared plus one over x plus one, dx, equals the integral of x minus one plus two over x plus one, dx",
+  "examples": [
+    {
+      "en": "The top's degree is higher than the bottom's, so divide first, then integrate each piece.",
+      "ja": "分子の次数のほうが高いから、先に割り算して、それから各項を積分する。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の「整式の割り算」は、米国では long division と言い、筆算の形で書く。"
+  ],
+  "related": [
+    "integral-of-a-rational-function",
+    "partial-fraction-decomposition"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

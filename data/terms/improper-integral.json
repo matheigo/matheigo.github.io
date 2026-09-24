@@ -1,0 +1,89 @@
+{
+  "id": "improper-integral",
+  "ja": {
+    "term": "広義積分",
+    "reading": "こうぎせきぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "improper integral",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "積分区間が無限に広がるか、区間内で被積分関数が有界でない積分。極限として定義する。",
+  "definition_en": "An integral over an infinite interval, or of a function that blows up on the interval, defined as a limit.",
+  "latex": "\\int_1^{\\infty} \\frac{dx}{x^2} = \\lim_{b \\to \\infty} \\int_1^{b} \\frac{dx}{x^2} = 1",
+  "spoken_en": "the integral from one to infinity of one over x squared dx equals the limit as b goes to infinity of the integral from one to b of one over x squared dx, which is one",
+  "examples": [
+    {
+      "en": "Since the limit is finite, this improper integral converges.",
+      "ja": "極限が有限だから、この広義積分は収束する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the improper integral ∫₁^∞ (1/x) dx converges or diverges.",
+      "ja": "広義積分 ∫₁^∞ (1/x) dx が収束するか発散するかを調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "収束する converges、発散する diverges。",
+    "日本の高校の範囲外。"
+  ],
+  "related": [
+    "definite-integral"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "広義積分",
+      "en": "Improper integral"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "improper integral": 43
+    },
+    "written": {
+      "improper integral": 34
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

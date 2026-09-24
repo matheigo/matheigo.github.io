@@ -1,0 +1,108 @@
+{
+  "id": "integral",
+  "ja": {
+    "term": "インテグラル",
+    "reading": "いんてぐらる",
+    "alt": []
+  },
+  "en": {
+    "term": "integral",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「インテグラル」は記号 ∫ の読み方として使い、積分の式そのものは「積分」と言うのがふつう。英語の integral は積分の式やその値そのものを指す名詞（the integral of x² from 0 to 1）で、記号 ∫ だけを指すときは integral sign と言う。",
+  "domains": [
+    "calculus",
+    "notation"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "積分記号 ∫ の読み方。英語の integral は、積分の式やその値そのものを指す。",
+  "definition_en": "An expression such as ∫ f(x) dx, or its value; the symbol ∫ by itself is the integral sign.",
+  "latex": "\\int_0^1 x^2\\,dx",
+  "spoken_en": "the integral from zero to one of x squared dx",
+  "respelling": "IN-tuh-grul",
+  "examples": [
+    {
+      "en": "This integral looks nasty, but a substitution cleans it up.",
+      "ja": "この積分は面倒そうに見えるけど、置換すればすっきりする。",
+      "register": "spoken"
+    },
+    {
+      "en": "The integral ∫₀¹ x² dx equals 1/3.",
+      "ja": "∫₀¹ x² dx の値は 1/3 である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "the integral sign",
+      "ja": "積分記号 ∫"
+    }
+  ],
+  "pitfalls": [
+    "形容詞の integral には「整数の」の意味もある（integral coefficients ＝ 整数係数）。",
+    "発音は第 1 音節に強勢を置くのがふつうだが、第 2 音節に置く人もいる。"
+  ],
+  "related": [
+    "integration",
+    "integrate",
+    "definite-integral",
+    "indefinite-integral",
+    "the-integral-from-a-to-b"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "integral": 3446,
+      "the integral sign": 14
+    },
+    "written": {
+      "integral": 1672,
+      "the integral sign": 3
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "shell-method",
+  "ja": {
+    "term": "シェル法",
+    "reading": "しぇるほう",
+    "alt": [
+      "バウムクーヘン積分"
+    ]
+  },
+  "en": {
+    "term": "shell method",
+    "alt": [
+      "method of cylindrical shells"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本ではバウムクーヘン積分と呼ばれ、高校の教科書では扱わないか発展の扱いで、受験の技法として知られる。米国では Calc II で disk・washer と並ぶ標準の方法として教える（教科書での名前は method of cylindrical shells）。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "y 軸などのまわりの回転体を薄い円筒の皮の集まりと考え、V = 2π∫ₐᵇ x f(x) dx で体積を求める方法。",
+  "definition_en": "Finding the volume of a solid of revolution by adding up thin cylindrical shells: V = 2π ∫ₐᵇ x f(x) dx for rotation about the y-axis.",
+  "latex": "V = 2\\pi \\int_a^b x\\,f(x)\\,dx",
+  "spoken_en": "V equals two pi times the integral from a to b of x times f of x dx",
+  "examples": [
+    {
+      "en": "Rotating around the y-axis with everything in terms of x? That's a job for the shell method.",
+      "ja": "y 軸のまわりに回すのに式が x で書かれている？ それならシェル法の出番。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "AP Calculus の試験範囲は disk と washer までで、shell method は含まれない。",
+    "「バウムクーヘン」は英語では通じない。shells と言う。"
+  ],
+  "related": [
+    "cylindrical-shell",
+    "disk-method",
+    "washer-method",
+    "revolve-around-the-y-axis"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "バウムクーヘン積分",
+      "en": "Shell integration"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "shell method": 19
+    },
+    "written": {
+      "shell method": 9,
+      "method of cylindrical shells": 16
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

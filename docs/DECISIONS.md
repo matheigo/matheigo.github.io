@@ -172,3 +172,6 @@
 - 2026-09-24 | 2 | 台帳で同じ概念が別の単元から別の行になっているもの（2 曲線間の面積 ／ 曲線間の面積 ／ 曲線で囲まれた面積、定積分と和の極限 ／ リーマン和の極限 など）は台帳どおり別エントリにし、それぞれの単元の角度で定義を書いて related で結んだ。統合するかは人間が決める（一覧は audits/phase2-integral-report.md） | id を消すと台帳・curriculum の term_refs と食い違う
 - 2026-09-24 | 2 | 台帳の en（暫定）と mapping（仮置き）は、コーパスと内容で付け直した。台帳そのものは直さない（変えた語はレポートに一覧） | ledger/README「en は Phase 2 でコーパスにより確定する」。台帳は fix_phase1.py で再生成されるので、手で直すと次に消える
 - 2026-09-24 | 2 | curriculum の term_refs に、生成済みの語をその語の unit すべてに台帳の順で入れた。Phase 0 のサンプル 10 語も同時に入った | ledger/README「Phase 2 で各単元の term_refs に入る」
+- 2026-09-24 | 2 | integration-formulas の ja.term を台帳の「積分表」から「積分公式」に変えた（ja.alt に「不定積分の公式」） | 積分表は table of integrals（using-integral-tables の側）で、integration formulas の訳としては別物
+- 2026-09-24 | 2 | 英語の見出しが確立した名前でなく説明的な句のもの（integration by long division、integration by completing the square）は mapping near にし、「確立した名前ではない」と mapping_note に書いて editorial で likely にした。accumulation function は AP で使う名前を名乗るので draft | draft の基準（固有の用語を名乗るか）をそのまま当てはめた
+- 2026-09-24 | 2 | 前のバッチの語から新しいバッチの語への related は、新しいバッチのコミットで足す | related は存在する id しか指せない（validate）。バッチの順に作るので、前向きの参照は後から張るしかない

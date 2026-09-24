@@ -1,0 +1,102 @@
+{
+  "id": "differential-equation",
+  "ja": {
+    "term": "微分方程式",
+    "reading": "びぶんほうていしき",
+    "alt": []
+  },
+  "en": {
+    "term": "differential equation",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "analysis"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "未知の関数とその導関数を含む方程式。条件を満たす関数を求めることを、微分方程式を解くという。",
+  "definition_en": "An equation involving an unknown function and its derivatives; solving it means finding the functions that satisfy it.",
+  "latex": "\\frac{dy}{dt} = ky",
+  "spoken_en": "d y d t equals k y",
+  "examples": [
+    {
+      "en": "Every solution of this differential equation is some constant times e to the k t.",
+      "ja": "この微分方程式の解は、どれも定数 × e^{kt} の形になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the differential equation dy/dt = 3y with y(0) = 2.",
+      "ja": "微分方程式 dy/dt = 3y を、y(0) = 2 のもとで解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "solve the differential equation",
+      "ja": "微分方程式を解く"
+    }
+  ],
+  "pitfalls": [
+    "日本の数IIIでは微分方程式を発展的な内容として軽く扱うことが多いが、米国では AP Calculus AB から slope field や separation of variables（変数分離）を扱う。",
+    "初期条件は initial condition、それを付けた問題は initial value problem（IVP）と言う。"
+  ],
+  "related": [
+    "separable-differential-equation",
+    "logistic-differential-equation",
+    "eulers-method"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "微分方程式",
+      "en": "Differential equation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "differential equation": 679,
+      "solve the differential equation": 17
+    },
+    "written": {
+      "differential equation": 464,
+      "solve the differential equation": 13
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

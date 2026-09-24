@@ -1,0 +1,78 @@
+{
+  "id": "write-dx-in-terms-of-du",
+  "ja": {
+    "term": "dx を du で表す",
+    "reading": "でぃーえっくすをでぃーゆーであらわす",
+    "alt": []
+  },
+  "en": {
+    "term": "solve for dx",
+    "alt": [
+      "write dx in terms of du"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "置換積分で、du = g′(x)dx の関係から dx を du を使った式に書き直すこと。",
+  "definition_en": "In a substitution, to rewrite dx using du, from the relation du = g′(x) dx.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "du is two x dx, so solve for dx: dx is du over two x.",
+      "ja": "du = 2x dx だから dx について解くと、dx = du/(2x)。",
+      "register": "spoken"
+    },
+    {
+      "en": "From du = 2x dx we get dx = du/(2x), and the x in the denominator cancels.",
+      "ja": "du = 2x dx より dx = du/(2x) となり、分母の x は約分で消える。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の教科書は dx を解き出さず、被積分関数の中の 2x dx をそのまま du に置き換える書き方が多い。solve for dx と dx を解き出すやり方は YouTube の解説などで見る。"
+  ],
+  "related": [
+    "integration-by-substitution",
+    "let-u-equal"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "solve for dx": 12
+    },
+    "sources": [
+      "khan-ap-calc",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "eulers-method",
+  "ja": {
+    "term": "オイラー法",
+    "reading": "おいらーほう",
+    "alt": []
+  },
+  "en": {
+    "term": "Euler's method",
+    "alt": [
+      "Euler method"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "微分方程式の解を、接線に沿って小さな幅 h ずつ進んで近似する方法。yₙ₊₁ = yₙ + h f(xₙ, yₙ)。",
+  "definition_en": "A way to approximate a solution of a differential equation by stepping along tangent lines: yₙ₊₁ = yₙ + h·f(xₙ, yₙ).",
+  "latex": "y_{n+1} = y_n + h\\,f(x_n, y_n)",
+  "spoken_en": "y sub n plus one equals y sub n plus h times f of x sub n comma y sub n",
+  "tts_text": "Oiler's method",
+  "respelling": "OY-lerz method",
+  "examples": [
+    {
+      "en": "Use Euler's method with a step size of point one to estimate y of one.",
+      "ja": "刻み幅 0.1 のオイラー法で y(1) を見積もろう。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "Euler は OY-ler と読む（ユーラーではない）。",
+    "刻み幅は step size と言う。"
+  ],
+  "related": [
+    "differential-equation",
+    "logistic-differential-equation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "オイラー法",
+      "en": "Euler method"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "Euler's method": 26,
+      "Euler method": 6
+    },
+    "written": {
+      "Euler's method": 37
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

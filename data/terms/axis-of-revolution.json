@@ -1,0 +1,88 @@
+{
+  "id": "axis-of-revolution",
+  "ja": {
+    "term": "回転軸",
+    "reading": "かいてんじく",
+    "alt": []
+  },
+  "en": {
+    "term": "axis of revolution",
+    "alt": [
+      "axis of rotation"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "回転体をつくるときに、図形を回転させる軸となる直線。",
+  "definition_en": "The line a region is revolved around to form a solid of revolution.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "When the axis of revolution is y equals negative one, the radius is f of x plus one.",
+      "ja": "回転軸が y = −1 なら、半径は f(x) + 1 になる。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の問題では、座標軸以外の直線（y = −1 や x = 3）を回転軸にすることが多い。日本の数IIIでは座標軸のまわりの回転が中心。"
+  ],
+  "related": [
+    "volume-of-a-solid-of-revolution",
+    "revolve-around-the-x-axis",
+    "washer-method"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "axis of rotation": 4
+    },
+    "written": {
+      "axis of revolution": 13,
+      "axis of rotation": 7
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満）。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

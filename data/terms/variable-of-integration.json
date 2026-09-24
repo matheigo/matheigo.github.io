@@ -1,0 +1,95 @@
+{
+  "id": "variable-of-integration",
+  "ja": {
+    "term": "積分変数",
+    "reading": "せきぶんへんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "variable of integration",
+    "alt": [],
+    "variants": [
+      {
+        "term": "dummy variable",
+        "register": "spoken",
+        "note": "「見かけの変数」の意味で、積分変数を何の文字にしても値が変わらないことを言うときに使う。話し言葉で 19 件（MIT OCW 10・YouTube 9）と、variable of integration（19 件）と同じくらい。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "積分される関数の変数。dx の x、dt の t にあたる。",
+  "definition_en": "The variable you integrate with respect to, such as the x in dx or the t in dt.",
+  "latex": "\\int_0^1 t^2\\,dt = \\int_0^1 x^2\\,dx",
+  "spoken_en": "the integral from zero to one of t squared dt equals the integral from zero to one of x squared dx",
+  "examples": [
+    {
+      "en": "The t here is just the variable of integration. You could call it anything and the answer wouldn't change.",
+      "ja": "この t はただの積分変数。どんな文字にしても答えは変わらない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Changing the variable of integration from t to x does not change the value of the integral.",
+      "ja": "積分変数を t から x に変えても、定積分の値は変わらない。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "統計の dummy variable（ダミー変数）とは別の意味。"
+  ],
+  "related": [
+    "integrand",
+    "function-defined-by-an-integral",
+    "definite-integral"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "variable of integration": 19,
+      "dummy variable": 19
+    },
+    "written": {
+      "variable of integration": 14,
+      "dummy variable": 3
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "find-the-arc-length",
+  "ja": {
+    "term": "曲線の長さを求める",
+    "reading": "きょくせんのながさをもとめる",
+    "alt": []
+  },
+  "en": {
+    "term": "find the arc length",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "曲線のある区間の長さを、定積分 ∫ₐᵇ √(1 + {f′(x)}²) dx で求めること。",
+  "definition_en": "To compute the length of a curve over an interval with ∫ₐᵇ √(1 + (f′(x))²) dx.",
+  "latex": "L = \\int_a^b \\sqrt{1 + \\bigl(f'(x)\\bigr)^2}\\,dx",
+  "spoken_en": "L equals the integral from a to b of the square root of one plus f prime of x squared, dx",
+  "examples": [
+    {
+      "en": "To find the arc length, take the derivative, square it, add one, and integrate the square root.",
+      "ja": "曲線の長さは、微分して 2 乗して 1 を足し、そのルートを積分する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the arc length of y = x^{3/2} from x = 0 to x = 4.",
+      "ja": "曲線 y = x^{3/2}（0 ≦ x ≦ 4）の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数IIIの「曲線の長さ」は英語では arc length。length of the curve とも言う。"
+  ],
+  "related": [
+    "integrand"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "find the arc length": 12
+    },
+    "written": {
+      "find the arc length": 16
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.02",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

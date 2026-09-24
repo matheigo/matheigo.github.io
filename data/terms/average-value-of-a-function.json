@@ -1,0 +1,77 @@
+{
+  "id": "average-value-of-a-function",
+  "ja": {
+    "term": "関数の平均値",
+    "reading": "かんすうのへいきんち",
+    "alt": []
+  },
+  "en": {
+    "term": "average value of a function",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "区間 a ≦ x ≦ b での関数の値の平均。定積分を区間の幅で割った (1/(b − a))∫ₐᵇ f(x)dx。",
+  "definition_en": "The average of f over [a, b]: the integral divided by the length of the interval, (1/(b − a)) ∫ₐᵇ f(x) dx.",
+  "latex": "f_{\\text{avg}} = \\frac{1}{b-a}\\int_a^b f(x)\\,dx",
+  "spoken_en": "f average equals one over b minus a times the integral from a to b of f of x dx",
+  "examples": [
+    {
+      "en": "The average value of a function is just the integral divided by the width of the interval.",
+      "ja": "関数の平均値は、積分を区間の幅で割るだけ。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校では扱わない。積分の平均値の定理は mean value theorem for integrals と言う。",
+    "平均変化率（average rate of change）とは別物。"
+  ],
+  "related": [
+    "definite-integral",
+    "net-change"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "average value of a function": 16
+    },
+    "written": {
+      "average value of a function": 27
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

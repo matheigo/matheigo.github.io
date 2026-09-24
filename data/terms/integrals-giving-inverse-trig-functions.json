@@ -1,0 +1,82 @@
+{
+  "id": "integrals-giving-inverse-trig-functions",
+  "ja": {
+    "term": "逆三角関数の積分",
+    "reading": "ぎゃくさんかくかんすうのせきぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "integrals resulting in inverse trigonometric functions",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の高校では逆三角関数を扱わないので、∫1/(1 + x²)dx は x = tan θ と置換して定積分の値だけを求める。米国では Calc I で arcsin・arctan を学び、∫dx/(1 + x²) = arctan x + C、∫dx/√(1 − x²) = arcsin x + C を公式として使う。",
+  "domains": [
+    "calculus",
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "積分した結果が逆三角関数になる積分。1/(1 + x²) や 1/√(1 − x²) の積分がその代表。",
+  "definition_en": "Integrals whose antiderivatives are inverse trigonometric functions, such as ∫ dx/(1 + x²) = arctan x + C.",
+  "latex": "\\int \\frac{dx}{1+x^2} = \\arctan x + C",
+  "spoken_en": "the integral of one over one plus x squared, dx, equals inverse tangent of x plus C",
+  "examples": [
+    {
+      "en": "One over one plus x squared? That's the derivative of inverse tangent, so the integral is arctan x plus C.",
+      "ja": "1/(1 + x²)？ それは arctan の導関数だから、積分は arctan x + C。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "sin⁻¹x は逆関数の arcsin x のことで、1/sin x ではない（1/sin x は csc x）。答案では誤解のない arcsin x と書くのが安全。",
+    "arctan x は inverse tangent of x、arctangent of x、arc tan x と読む。"
+  ],
+  "related": [
+    "integrals-of-trigonometric-functions",
+    "integration-by-substitution",
+    "integral-of-a-rational-function"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "integrals resulting in inverse trigonometric functions": 1
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}
