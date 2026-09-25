@@ -1,0 +1,86 @@
+{
+  "id": "saddle-point",
+  "ja": {
+    "term": "鞍点",
+    "reading": "あんてん",
+    "alt": []
+  },
+  "en": {
+    "term": "saddle point",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "偏導関数がともに 0 になる点（停留点）のうち、極大でも極小でもない点。",
+  "definition_en": "A critical point of a function of several variables that is neither a local maximum nor a local minimum.",
+  "latex": "f(x, y) = x^2 - y^2 \\text{ at } (0, 0)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "It goes up in one direction and down in the other — that's a saddle point.",
+      "ja": "ある向きには上がり、別の向きには下がる。それが鞍点。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find and classify the critical points of f(x, y) = x³ − 3x + y², including any saddle points.",
+      "ja": "f(x, y) = x³ − 3x + y² の停留点を求め、鞍点を含めて分類せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "判定には 2 変数の second derivative test（D = f_xx f_yy − f_xy²）を使う。D < 0 なら鞍点。"
+  ],
+  "related": [
+    "local-extremum",
+    "partial-derivative",
+    "lagrange-multipliers"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "鞍点",
+      "en": "Saddle point"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "saddle point": 21
+    },
+    "written": {
+      "saddle point": 25
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

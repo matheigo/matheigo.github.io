@@ -1,0 +1,89 @@
+{
+  "id": "line-integral",
+  "ja": {
+    "term": "線積分",
+    "reading": "せんせきぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "line integral",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "関数やベクトル場を曲線に沿って積分したもの。力の場のする仕事などを表す。",
+  "definition_en": "The integral of a function or a vector field along a curve, giving, for example, the work done by a force field.",
+  "latex": "\\int_C \\mathbf{F} \\cdot d\\mathbf{r}",
+  "spoken_en": "the line integral over C of F dot d r",
+  "examples": [
+    {
+      "en": "For a line integral, parametrize the curve first.",
+      "ja": "線積分では、まず曲線をパラメータ表示しよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate the line integral ∫_C (x + y) ds, where C is the segment from (0, 0) to (1, 2).",
+      "ja": "C が (0, 0) から (1, 2) への線分のとき、線積分 ∫_C (x + y) ds を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉の 85 件のうち 80 件が MIT OCW（18.02）。"
+  ],
+  "related": [
+    "vector-field",
+    "conservative-vector-field",
+    "greens-theorem",
+    "potential-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "線積分",
+      "en": "Line integral"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "line integral": 85
+    },
+    "written": {
+      "line integral": 361
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

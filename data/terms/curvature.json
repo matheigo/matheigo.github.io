@@ -1,0 +1,89 @@
+{
+  "id": "curvature",
+  "ja": {
+    "term": "曲率",
+    "reading": "きょくりつ",
+    "alt": []
+  },
+  "en": {
+    "term": "curvature",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "曲線の曲がり具合を表す量 κ。単位接ベクトルが弧長あたりに向きを変える速さ。",
+  "definition_en": "A measure κ of how sharply a curve bends: how fast the unit tangent vector turns per unit of arc length.",
+  "latex": "\\kappa = \\left\\| \\frac{d\\mathbf{T}}{ds} \\right\\| = \\frac{\\|\\mathbf{r}'(t) \\times \\mathbf{r}''(t)\\|}{\\|\\mathbf{r}'(t)\\|^3}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A circle of radius R has constant curvature 1 over R.",
+      "ja": "半径 R の円の曲率は一定で 1/R。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the curvature of the parabola y = x² at the point (1, 1).",
+      "ja": "放物線 y = x² の点 (1, 1) における曲率を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "曲率の逆数は radius of curvature（曲率半径）。"
+  ],
+  "related": [
+    "unit-tangent-vector",
+    "unit-normal-vector",
+    "space-curve",
+    "arc-length-of-a-curve"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "曲率",
+      "en": "Curvature"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "curvature": 17
+    },
+    "written": {
+      "curvature": 87
+    },
+    "sources": [
+      "mit-18.06",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

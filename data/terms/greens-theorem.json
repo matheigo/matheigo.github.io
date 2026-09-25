@@ -1,0 +1,87 @@
+{
+  "id": "greens-theorem",
+  "ja": {
+    "term": "グリーンの定理",
+    "reading": "ぐりーんのていり",
+    "alt": []
+  },
+  "en": {
+    "term": "Green's theorem",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "平面の閉曲線 C に沿った線積分を、C で囲まれた領域 D 上の二重積分で表す定理。",
+  "definition_en": "The theorem that turns a line integral around a closed curve C in the plane into a double integral over the region D it encloses.",
+  "latex": "\\oint_C P\\,dx + Q\\,dy = \\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dA",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Green's theorem lets you trade a hard line integral for an easier double integral.",
+      "ja": "グリーンの定理を使えば、難しい線積分を易しい二重積分に取りかえられる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use Green's theorem to evaluate ∮_C (x² − y) dx + (x + y²) dy, where C is the circle x² + y² = 4 oriented counterclockwise.",
+      "ja": "グリーンの定理を用いて、C が反時計回りの円 x² + y² = 4 のときの ∮_C (x² − y) dx + (x + y²) dy を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "曲線の向きは counterclockwise（正の向き）を仮定する。"
+  ],
+  "related": [
+    "line-integral",
+    "double-integral",
+    "stokes-theorem",
+    "curl-vector"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "グリーンの定理",
+      "en": "Green's theorem"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "Green's theorem": 55
+    },
+    "written": {
+      "Green's theorem": 166
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

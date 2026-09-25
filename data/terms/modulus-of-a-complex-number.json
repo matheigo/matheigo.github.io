@@ -1,0 +1,91 @@
+{
+  "id": "modulus-of-a-complex-number",
+  "ja": {
+    "term": "複素数の絶対値",
+    "reading": "ふくそすうのぜったいち",
+    "alt": []
+  },
+  "en": {
+    "term": "absolute value of a complex number",
+    "alt": [
+      "modulus"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "complex-numbers"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数C"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "複素数 z = a + bi の原点からの距離 |z| = √(a² + b²)。",
+  "definition_en": "The distance |z| = √(a² + b²) of z = a + bi from the origin of the complex plane.",
+  "latex": "|a + bi| = \\sqrt{a^2 + b^2}",
+  "spoken_en": "the absolute value of a plus b i equals the square root of a squared plus b squared",
+  "examples": [
+    {
+      "en": "The modulus is just the length of the arrow from 0 to z.",
+      "ja": "絶対値は、0 から z への矢印の長さ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the absolute value of the complex number 5 − 12i.",
+      "ja": "複素数 5 − 12i の絶対値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Algebra and Trigonometry は absolute value と書き、modulus とも呼ぶと説明する。MIT OCW（18.03）の講義は modulus と言う。modulus は合同式の「法」の意味でも使う語なので、用例コーパスでは modulus of … の形で数えた（話し言葉 5 件）。",
+    "2 点 z、w の距離は |z − w|。"
+  ],
+  "related": [
+    "argument-of-a-complex-number",
+    "polar-form",
+    "complex-plane",
+    "complex-conjugate"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "複素数の絶対値",
+      "en": "Absolute value of a complex number"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "modulus of": 5,
+      "absolute value of a complex number": 1
+    },
+    "written": {
+      "absolute value of a complex number": 11
+    },
+    "sources": [
+      "mit-18.03",
+      "openstax-algtrig",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

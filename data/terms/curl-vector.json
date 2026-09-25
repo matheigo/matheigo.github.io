@@ -1,0 +1,84 @@
+{
+  "id": "curl-vector",
+  "ja": {
+    "term": "回転（ベクトル解析）",
+    "reading": "かいてん・べくとるかいせき",
+    "alt": []
+  },
+  "en": {
+    "term": "curl",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "ベクトル場 F の各点でのまわり具合を表すベクトル ∇ × F。",
+  "definition_en": "The vector ∇ × F that measures how a vector field F circulates around each point.",
+  "latex": "\\operatorname{curl}\\mathbf{F} = \\nabla \\times \\mathbf{F}",
+  "spoken_en": "curl F equals del cross F",
+  "examples": [
+    {
+      "en": "If the curl is zero everywhere, there's no swirling, and the field might be conservative.",
+      "ja": "回転がどこでも 0 なら渦がなく、保存場かもしれない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the curl of F(x, y, z) = ⟨yz, xz, xy⟩.",
+      "ja": "F(x, y, z) = ⟨yz, xz, xy⟩ の回転を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "curl は「巻く」の意味でも使う語なので、用例コーパスでは curl of …（the curl of F など）の形で数えた。話し言葉 51 件はすべて MIT OCW（18.02）。",
+    "書くときは curl F とも ∇ × F とも書く（curl F は書き言葉 121 件）。"
+  ],
+  "related": [
+    "divergence-vector",
+    "vector-field",
+    "stokes-theorem",
+    "greens-theorem",
+    "conservative-vector-field"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "curl of": 51
+    },
+    "written": {
+      "curl of": 52
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

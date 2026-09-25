@@ -1,0 +1,87 @@
+{
+  "id": "total-differential",
+  "ja": {
+    "term": "全微分",
+    "reading": "ぜんびぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "total differential",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "多変数関数の値の微小な変化を、各変数の微分 dx、dy と偏導関数で表したもの dz = f_x dx + f_y dy。",
+  "definition_en": "The expression dz = f_x dx + f_y dy that gives the small change in a function of several variables from small changes in each variable.",
+  "latex": "dz = \\frac{\\partial f}{\\partial x}dx + \\frac{\\partial f}{\\partial y}dy",
+  "spoken_en": "d z equals partial f partial x d x plus partial f partial y d y",
+  "examples": [
+    {
+      "en": "Use the total differential to estimate how much the volume changes.",
+      "ja": "全微分を使って、体積がどれだけ変わるかを見積もろう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the total differential of z = x²y + ln y.",
+      "ja": "z = x²y + ln y の全微分を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉の 41 件のうち 34 件が MIT OCW（18.02）。"
+  ],
+  "related": [
+    "partial-derivative",
+    "differential",
+    "tangent-plane",
+    "multivariable-chain-rule"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "全微分",
+      "en": "Derivative (multivariable calculus)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "total differential": 41
+    },
+    "written": {
+      "total differential": 12
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "quadric-surface",
+  "ja": {
+    "term": "二次曲面",
+    "reading": "にじきょくめん",
+    "alt": []
+  },
+  "en": {
+    "term": "quadric surface",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "x, y, z の 2 次方程式で表される曲面。楕円面・放物面・双曲面など。",
+  "definition_en": "A surface given by a second-degree equation in x, y, and z, such as an ellipsoid, a paraboloid, or a hyperboloid.",
+  "latex": "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} + \\frac{z^2}{c^2} = 1",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To recognize a quadric surface, look at its traces in each coordinate plane.",
+      "ja": "二次曲面を見分けるには、各座標平面での切り口を見る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Identify the quadric surface z = x² + y² and sketch it.",
+      "ja": "二次曲面 z = x² + y² が何かを答え、概形をかけ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "平面で切った切り口は trace と呼ぶ。"
+  ],
+  "related": [
+    "conic-section",
+    "coordinates-in-space",
+    "level-curve"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "二次曲面",
+      "en": "Quadric"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "quadric surface": 36
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

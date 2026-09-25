@@ -1,0 +1,90 @@
+{
+  "id": "spherical-coordinates",
+  "ja": {
+    "term": "球座標",
+    "reading": "きゅうざひょう",
+    "alt": [
+      "球面座標"
+    ]
+  },
+  "en": {
+    "term": "spherical coordinates",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "原点からの距離 ρ と 2 つの角 θ、φ で空間の点を (ρ, θ, φ) と表す座標。",
+  "definition_en": "Coordinates (ρ, θ, φ) that locate a point in space by its distance ρ from the origin and two angles θ and φ.",
+  "latex": "x = \\rho\\sin\\varphi\\cos\\theta, \\; y = \\rho\\sin\\varphi\\sin\\theta, \\; z = \\rho\\cos\\varphi",
+  "spoken_en": "x equals rho sine phi cosine theta, y equals rho sine phi sine theta, z equals rho cosine phi",
+  "examples": [
+    {
+      "en": "For a ball centered at the origin, spherical coordinates are the natural choice.",
+      "ja": "原点中心の球なら、球座標が自然。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use spherical coordinates to find the volume of the solid inside the sphere ρ = 2 and above the cone φ = π/4.",
+      "ja": "球座標を用いて、球 ρ = 2 の内部かつ円錐 φ = π/4 の上側にある立体の体積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "体積要素は dV = ρ² sin φ dρ dφ dθ。",
+    "θ と φ の役割が数学と物理で逆になる教科書がある。どちらの約束か確かめる。"
+  ],
+  "related": [
+    "cylindrical-coordinates",
+    "triple-integral",
+    "coordinates-in-space"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "球面座標系",
+      "en": "Spherical coordinate system"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "spherical coordinates": 26
+    },
+    "written": {
+      "spherical coordinates": 142
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

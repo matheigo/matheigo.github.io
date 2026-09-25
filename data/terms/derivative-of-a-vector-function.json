@@ -1,0 +1,90 @@
+{
+  "id": "derivative-of-a-vector-function",
+  "ja": {
+    "term": "ベクトル値関数の微分",
+    "reading": "べくとるちかんすうのびぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "derivative of a vector-valued function",
+    "alt": [],
+    "variants": [
+      {
+        "term": "derivative of a vector function",
+        "register": "spoken",
+        "note": "Professor Leonard の言い方（話し言葉 11 件中 10 件）。話し言葉で 11 件（Professor Leonard 10・patrickJMT 1）、書き言葉では 0 件。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "ベクトル値関数 r(t) を成分ごとに微分したもの r′(t)。曲線の接ベクトルになる。",
+  "definition_en": "The vector r′(t) obtained by differentiating a vector-valued function r(t) component by component; it is tangent to the curve.",
+  "latex": "\\mathbf{r}'(t) = \\langle x'(t), y'(t), z'(t) \\rangle",
+  "spoken_en": "r prime of t equals the vector x prime of t, y prime of t, z prime of t",
+  "examples": [
+    {
+      "en": "To differentiate a vector function, just differentiate each component.",
+      "ja": "ベクトル値関数の微分は、成分ごとに微分するだけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the derivative of the vector-valued function r(t) = ⟨t², e^t, sin 2t⟩.",
+      "ja": "ベクトル値関数 r(t) = ⟨t², e^t, sin 2t⟩ の導関数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "vector-valued-function",
+    "velocity-vector",
+    "unit-tangent-vector",
+    "derivative-of-a-parametric-curve"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "derivative of a vector-valued function": 1,
+      "derivative of a vector function": 11
+    },
+    "written": {
+      "derivative of a vector-valued function": 18
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

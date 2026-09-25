@@ -1,0 +1,85 @@
+{
+  "id": "double-integral",
+  "ja": {
+    "term": "二重積分",
+    "reading": "にじゅうせきぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "double integral",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "2 変数関数を平面上の領域で積分したもの。f ≥ 0 なら曲面の下の立体の体積を表す。",
+  "definition_en": "The integral of a function of two variables over a region of the plane; for f ≥ 0 it gives the volume under the surface.",
+  "latex": "\\iint_R f(x, y)\\,dA",
+  "spoken_en": "the double integral over R of f of x comma y d A",
+  "examples": [
+    {
+      "en": "Set up the double integral as an iterated integral first.",
+      "ja": "まず二重積分を累次積分の形にしよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate the double integral ∬_R (x + 2y) dA, where R = [0, 1] × [0, 2].",
+      "ja": "R = [0, 1] × [0, 2] のとき、二重積分 ∬_R (x + 2y) dA を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "極座標では dA = r dr dθ（r を忘れない）。"
+  ],
+  "related": [
+    "iterated-integral",
+    "fubinis-theorem",
+    "changing-the-order-of-integration",
+    "triple-integral",
+    "change-of-variables"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "double integral": 65
+    },
+    "written": {
+      "double integral": 225
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

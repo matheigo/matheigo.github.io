@@ -1,0 +1,83 @@
+{
+  "id": "stokes-theorem",
+  "ja": {
+    "term": "ストークスの定理",
+    "reading": "すとーくすのていり",
+    "alt": []
+  },
+  "en": {
+    "term": "Stokes' theorem",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "曲面 S の境界の閉曲線 C に沿った線積分を、S 上の回転の面積分で表す定理。",
+  "definition_en": "The theorem that equates a line integral around the boundary curve C of a surface S with the surface integral of the curl over S.",
+  "latex": "\\oint_C \\mathbf{F} \\cdot d\\mathbf{r} = \\iint_S (\\nabla \\times \\mathbf{F}) \\cdot d\\mathbf{S}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Stokes' theorem is Green's theorem lifted off the plane.",
+      "ja": "ストークスの定理は、グリーンの定理を平面から持ち上げたもの。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use Stokes' theorem to evaluate ∬_S curl F · dS for F = ⟨−y, x, z⟩ over the hemisphere x² + y² + z² = 1, z ≥ 0.",
+      "ja": "ストークスの定理を用いて、F = ⟨−y, x, z⟩、S を半球面 x² + y² + z² = 1、z ≥ 0 とするときの ∬_S curl F · dS を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "曲面の向きと境界の向きを右手の規則（right-hand rule）で合わせる。"
+  ],
+  "related": [
+    "greens-theorem",
+    "curl-vector",
+    "surface-integral",
+    "line-integral",
+    "divergence-theorem"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "Stokes' theorem": 33
+    },
+    "written": {
+      "Stokes' theorem": 96
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

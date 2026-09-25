@@ -1,0 +1,86 @@
+{
+  "id": "divergence-vector",
+  "ja": {
+    "term": "発散（ベクトル解析）",
+    "reading": "はっさん・べくとるかいせき",
+    "alt": []
+  },
+  "en": {
+    "term": "divergence",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "ベクトル場 F の各点での湧き出しの強さを表すスカラー ∇ · F。",
+  "definition_en": "The scalar ∇ · F that measures how much a vector field F flows outward from each point.",
+  "latex": "\\operatorname{div}\\mathbf{F} = \\nabla \\cdot \\mathbf{F} = \\frac{\\partial P}{\\partial x} + \\frac{\\partial Q}{\\partial y} + \\frac{\\partial R}{\\partial z}",
+  "spoken_en": "div F equals del dot F",
+  "examples": [
+    {
+      "en": "Positive divergence means more is flowing out than in.",
+      "ja": "発散が正なら、流れ込むより流れ出るほうが多い。",
+      "register": "spoken"
+    },
+    {
+      "en": "Compute the divergence of F(x, y, z) = ⟨x², yz, xz²⟩.",
+      "ja": "F(x, y, z) = ⟨x², yz, xz²⟩ の発散を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数列・級数の発散（divergence）と同じ語。用例コーパスでは the divergence of …（the divergence of F など）の形で数えた。",
+    "書くときは div F とも ∇ · F とも書く（div F は書き言葉 71 件）。"
+  ],
+  "related": [
+    "curl-vector",
+    "vector-field",
+    "divergence-theorem",
+    "divergence"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "the divergence of": 22
+    },
+    "written": {
+      "the divergence of": 49
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

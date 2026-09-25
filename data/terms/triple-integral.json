@@ -1,0 +1,80 @@
+{
+  "id": "triple-integral",
+  "ja": {
+    "term": "三重積分",
+    "reading": "さんじゅうせきぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "triple integral",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "3 変数関数を空間の領域で積分したもの。",
+  "definition_en": "The integral of a function of three variables over a solid region of space.",
+  "latex": "\\iiint_E f(x, y, z)\\,dV",
+  "spoken_en": "the triple integral over E of f of x, y, z d V",
+  "examples": [
+    {
+      "en": "If the integrand is 1, the triple integral just gives you the volume.",
+      "ja": "被積分関数が 1 なら、三重積分は体積になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate the triple integral ∭_E z dV, where E is the box [0, 1] × [0, 2] × [0, 3].",
+      "ja": "E が直方体 [0, 1] × [0, 2] × [0, 3] のとき、三重積分 ∭_E z dV を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "double-integral",
+    "cylindrical-coordinates",
+    "spherical-coordinates",
+    "change-of-variables"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "triple integral": 95
+    },
+    "written": {
+      "triple integral": 165
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

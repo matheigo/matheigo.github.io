@@ -1,0 +1,90 @@
+{
+  "id": "cylindrical-coordinates",
+  "ja": {
+    "term": "円柱座標",
+    "reading": "えんちゅうざひょう",
+    "alt": [
+      "円筒座標"
+    ]
+  },
+  "en": {
+    "term": "cylindrical coordinates",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "xy 平面の極座標 (r, θ) に高さ z を加えて、空間の点を (r, θ, z) で表す座標。",
+  "definition_en": "Coordinates (r, θ, z) for space: polar coordinates in the xy-plane together with the height z.",
+  "latex": "x = r\\cos\\theta, \\; y = r\\sin\\theta, \\; z = z",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Anything with circular symmetry around the z-axis is easier in cylindrical coordinates.",
+      "ja": "z 軸のまわりに対称なものは、円柱座標のほうが楽。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate the triple integral ∭ (x² + y²) dV over the cylinder x² + y² ≤ 4, 0 ≤ z ≤ 3 using cylindrical coordinates.",
+      "ja": "円柱 x² + y² ≤ 4、0 ≤ z ≤ 3 上の三重積分 ∭ (x² + y²) dV を円柱座標を用いて計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "体積要素は dV = r dz dr dθ（r を忘れない）。"
+  ],
+  "related": [
+    "spherical-coordinates",
+    "polar-coordinates",
+    "triple-integral",
+    "coordinates-in-space"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "円筒座標系",
+      "en": "Cylindrical coordinate system"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "cylindrical coordinates": 37
+    },
+    "written": {
+      "cylindrical coordinates": 122
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

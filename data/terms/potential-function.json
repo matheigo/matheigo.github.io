@@ -1,0 +1,82 @@
+{
+  "id": "potential-function",
+  "ja": {
+    "term": "ポテンシャル関数",
+    "reading": "ぽてんしゃるかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "potential function",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "保存場 F に対して ∇f = F を満たす関数 f。",
+  "definition_en": "A function f with ∇f = F for a conservative vector field F.",
+  "latex": "\\nabla f = \\mathbf{F}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Once you have a potential function, the line integral is just f at the end minus f at the start.",
+      "ja": "ポテンシャル関数が見つかれば、線積分は終点での f から始点での f を引くだけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find a potential function for F(x, y) = ⟨y cos x, sin x⟩.",
+      "ja": "F(x, y) = ⟨y cos x, sin x⟩ のポテンシャル関数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "物理のポテンシャル（位置エネルギー）とは符号の約束が逆になることがある（F = −∇U）。"
+  ],
+  "related": [
+    "conservative-vector-field",
+    "gradient",
+    "line-integral"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "potential function": 46
+    },
+    "written": {
+      "potential function": 109
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

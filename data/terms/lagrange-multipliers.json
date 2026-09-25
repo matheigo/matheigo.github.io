@@ -1,0 +1,86 @@
+{
+  "id": "lagrange-multipliers",
+  "ja": {
+    "term": "ラグランジュの未定乗数法",
+    "reading": "らぐらんじゅのみていじょうすうほう",
+    "alt": []
+  },
+  "en": {
+    "term": "Lagrange multipliers",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "条件 g(x, y) = c のもとで f(x, y) の極値を求めるために、∇f = λ∇g を解く方法。",
+  "definition_en": "A method for finding the extreme values of f(x, y) subject to g(x, y) = c by solving ∇f = λ∇g.",
+  "latex": "\\nabla f = \\lambda \\nabla g, \\quad g(x, y) = c",
+  "spoken_en": "del f equals lambda del g",
+  "examples": [
+    {
+      "en": "With Lagrange multipliers, the gradients of f and g have to line up.",
+      "ja": "ラグランジュの未定乗数法では、f と g の勾配が同じ向きにそろう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use Lagrange multipliers to find the maximum of f(x, y) = xy subject to x + y = 10.",
+      "ja": "ラグランジュの未定乗数法を用いて、x + y = 10 のもとで f(x, y) = xy の最大値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "method of Lagrange multipliers とも言う（書き言葉 23 件）。λ は Lagrange multiplier。"
+  ],
+  "related": [
+    "gradient",
+    "saddle-point",
+    "local-extremum",
+    "optimization-problem"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ラグランジュの未定乗数法",
+      "en": "Lagrange multiplier"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "Lagrange multipliers": 10
+    },
+    "written": {
+      "Lagrange multipliers": 43
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "level-curve",
+  "ja": {
+    "term": "等高線",
+    "reading": "とうこうせん",
+    "alt": []
+  },
+  "en": {
+    "term": "level curve",
+    "alt": [
+      "contour line"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "2 変数関数 z = f(x, y) で、f(x, y) = k（定数）となる点が xy 平面上に描く曲線。",
+  "definition_en": "For z = f(x, y), the curve in the xy-plane along which f(x, y) equals a constant k.",
+  "latex": "f(x, y) = k",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Level curves bunched together mean the surface is steep there.",
+      "ja": "等高線が詰まっているところは、曲面が急。",
+      "register": "spoken"
+    },
+    {
+      "en": "Sketch several level curves of f(x, y) = x² + 4y².",
+      "ja": "f(x, y) = x² + 4y² の等高線をいくつかかけ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "等高線を並べた図は contour map（書き言葉 20 件）。contour line は少ない（話し言葉・書き言葉とも 7 件）。",
+    "3 変数関数で f(x, y, z) = k となる面は level surface。"
+  ],
+  "related": [
+    "function-of-several-variables",
+    "gradient",
+    "directional-derivative"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "level curve": 61,
+      "contour line": 7
+    },
+    "written": {
+      "level curve": 72,
+      "contour line": 7
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

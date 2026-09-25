@@ -1,0 +1,95 @@
+{
+  "id": "divergence-theorem",
+  "ja": {
+    "term": "発散定理",
+    "reading": "はっさんていり",
+    "alt": [
+      "ガウスの発散定理"
+    ]
+  },
+  "en": {
+    "term": "divergence theorem",
+    "alt": [],
+    "variants": [
+      {
+        "term": "Gauss's theorem",
+        "register": "spoken",
+        "note": "MIT OCW（18.02）の言い方。話し言葉で 10 件（すべて MIT OCW）、書き言葉では 0 件。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "閉曲面 S を通る外向きの流束を、S で囲まれた立体 E 上の発散の三重積分で表す定理。",
+  "definition_en": "The theorem that the outward flux through a closed surface S equals the triple integral of the divergence over the solid E it encloses.",
+  "latex": "\\iint_S \\mathbf{F} \\cdot d\\mathbf{S} = \\iiint_E \\nabla \\cdot \\mathbf{F}\\,dV",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For a closed surface, the divergence theorem is usually the easy way to get the flux.",
+      "ja": "閉曲面なら、流束は発散定理で求めるのがたいてい楽。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the divergence theorem to find the outward flux of F = ⟨x, y, z⟩ across the sphere x² + y² + z² = 9.",
+      "ja": "発散定理を用いて、球面 x² + y² + z² = 9 を通る F = ⟨x, y, z⟩ の外向きの流束を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "divergence-vector",
+    "surface-integral",
+    "triple-integral",
+    "stokes-theorem"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "発散定理",
+      "en": "Divergence theorem"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "divergence theorem": 31,
+      "Gauss's theorem": 10
+    },
+    "written": {
+      "divergence theorem": 98
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gradient",
+  "ja": {
+    "term": "勾配",
+    "reading": "こうばい",
+    "alt": [
+      "グラディエント"
+    ]
+  },
+  "en": {
+    "term": "gradient",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "多変数関数の偏導関数を並べたベクトル ∇f = (f_x, f_y)。関数が最も速く増える向きを指す。",
+  "definition_en": "The vector ∇f = (f_x, f_y) of partial derivatives, which points in the direction in which the function increases fastest.",
+  "latex": "\\nabla f = \\langle f_x, f_y \\rangle",
+  "spoken_en": "del f equals the vector f sub x, f sub y",
+  "examples": [
+    {
+      "en": "The gradient is always perpendicular to the level curves.",
+      "ja": "勾配はいつも等高線に垂直。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the gradient of f(x, y, z) = xy + yz² at the point (1, −1, 2).",
+      "ja": "f(x, y, z) = xy + yz² の点 (1, −1, 2) における勾配を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "∇f は del f または the gradient of f と読む（symbols の nabla を参照）。",
+    "日本語の「勾配」は直線の傾き（slope）の意味でも使うが、英語の gradient は多変数の勾配ベクトルを指す。"
+  ],
+  "related": [
+    "directional-derivative",
+    "partial-derivative",
+    "level-curve",
+    "conservative-vector-field",
+    "potential-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "gradient": 246
+    },
+    "written": {
+      "gradient": 147
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

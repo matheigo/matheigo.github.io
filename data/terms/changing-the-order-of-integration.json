@@ -1,0 +1,89 @@
+{
+  "id": "changing-the-order-of-integration",
+  "ja": {
+    "term": "積分順序の交換",
+    "reading": "せきぶんじゅんじょのこうかん",
+    "alt": []
+  },
+  "en": {
+    "term": "changing the order of integration",
+    "alt": [
+      "reversing the order of integration",
+      "switching the order of integration"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "累次積分の dx と dy の順序を入れかえること。積分範囲も領域に合わせて書き直す。",
+  "definition_en": "Swapping the order of dx and dy in an iterated integral, and rewriting the limits to describe the same region.",
+  "latex": "\\int_0^1 \\int_x^1 f\\,dy\\,dx = \\int_0^1 \\int_0^y f\\,dx\\,dy",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "This integral is impossible as written, so let's switch the order of integration.",
+      "ja": "このままでは積分できないから、積分順序を交換しよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate ∫₀¹ ∫ₓ¹ e^{y²} dy dx by changing the order of integration.",
+      "ja": "積分順序を交換して ∫₀¹ ∫ₓ¹ e^{y²} dy dx を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "まず領域の図をかいて、範囲を読み直す。",
+    "話し言葉ではどの言い方も 10 件未満（switch ／ reverse ／ change が 1〜2 件ずつ）。"
+  ],
+  "related": [
+    "iterated-integral",
+    "double-integral",
+    "fubinis-theorem"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "reversing the order of integration": 2,
+      "changing the order of integration": 1,
+      "switching the order of integration": 2
+    },
+    "written": {
+      "switching the order of integration": 2,
+      "changing the order of integration": 10,
+      "reversing the order of integration": 4
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

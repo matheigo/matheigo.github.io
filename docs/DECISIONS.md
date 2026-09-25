@@ -302,3 +302,9 @@
 - 2026-09-24 | 2 | standard-form-of-a-conic のコロケーション in standard form を外した | 汎用の in standard form（直線・2 次関数も含む）が見出しの形 standard form of the equation of を上回り、register 不一致を作った（コロケーションは見出し語を含むか件数の小さいものにする、の決定どおり）
 - 2026-09-24 | 2 | 日本の教科書に無い日本語見出しに「本プロジェクトの訳語」と書いた: 指数モデル・極座標での面積・極曲線の微分・n 項判定法・極限比較判定法・交代級数判定法・交代級数の誤差限界・ラグランジュの誤差限界・望遠鏡級数。交代級数判定法の ja.alt にライプニッツの判定法、比判定法の ja.alt にダランベールの判定法を入れた | 日本の大学の教科書で使う名前を別名に残す
 - 2026-09-24 | 2 | telescoping-series の level.jp は台帳どおり数B | 数B の Σ1/(k(k + 1)) を差に分けて和を求める方法がこれに当たる。名前をつけないことを mapping near と mapping_note に書いた
+- 2026-09-24 | 2 | バッチ 3 の見出し: スカラー三重積は書き言葉 ① の triple scalar product（OpenStax 30 件、scalar triple product は 1 件）、多変数の連鎖律は ③ で OpenStax の generalized chain rule、多変数関数は ③ で OpenStax の節の名前 function of several variables、複素数の絶対値は書き言葉 ① の absolute value of a complex number（modulus は en.alt、modulus of の形で数える） | コーパスの判定と規則 2 のとおり
+- 2026-09-24 | 2 | 複素数の偏角（argument）は、関数の引数の意味を除く形（argument of … complex number）で数えると話・書とも 1 件で ③。CED・OpenStax にもこの形が無いので corpus-undecided（人間レビュー） | 語のままの argument は the argument of the logarithm のような引数の意味が多い（手元で文脈を確かめた）。形で探すと参照でも決まらない
+- 2026-09-24 | 2 | 等差中項・等比中項は、2 数を並べる形（arithmetic ／ geometric mean of … and）で数えて話・書とも 10 件未満、mapping near なので「英語に決まった言い方がない」。台帳の mapping（等比中項は exact）を near にした | 英語は相加・相乗平均で説明し、中項に名前をつけない。等差中項（near）と揃えた
+- 2026-09-24 | 2 | 発散（ベクトル解析）の en.term は divergence のままにし、既存の divergence（数列・級数の発散）と en.term が重なる validate の警告 1 件を残した | 同じ英語が 2 つの概念を指すのは事実（Phase 1 の「同じ英語でも別概念なら別 id」）。pitfalls で互いに触れ、コーパスでは the divergence of の形で数えて分けた
+- 2026-09-24 | 2 | symbols/nabla を新設した（台帳の del の寄せ先）。読みは del f（standard）と the gradient of f（spoken）で、話し言葉 ② 16 ／ 12。del は ∂ の読みにも使われる（MIT 18.02、3Blue1Brown）ことを notes に書いた | 台帳の note「∇ の読み方」。読みの候補を 2 つ並べて数えると、どちらも 10 件以上
+- 2026-09-24 | 2 | symbols/derivative-leibniz の note「同じ順で読めば通じる」を「同じ順で読む」にした | 確かめられない「通じる」は書かない（今回の STYLE の追記）

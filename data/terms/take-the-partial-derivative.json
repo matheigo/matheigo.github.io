@@ -1,0 +1,84 @@
+{
+  "id": "take-the-partial-derivative",
+  "ja": {
+    "term": "偏微分する",
+    "reading": "へんびぶんする",
+    "alt": []
+  },
+  "en": {
+    "term": "take the partial derivative",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "多変数関数を、1 つの変数について（ほかを定数とみなして）微分する。",
+  "definition_en": "To differentiate a function of several variables with respect to one variable, treating the others as constants.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Take the partial derivative with respect to y — x just comes along for the ride.",
+      "ja": "y について偏微分しよう。x はそのままついてくるだけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find ∂f/∂x for f(x, y) = e^{xy} sin y.",
+      "ja": "f(x, y) = e^{xy} sin y を x について偏微分せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉では derivative を省いて take the partial とも言う（take the partial は take the partial derivative を含めて 39 件）。"
+  ],
+  "related": [
+    "partial-derivative",
+    "differentiate"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "take the partial derivative": 26
+    },
+    "written": {
+      "take the partial derivative": 2
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

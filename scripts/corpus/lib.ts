@@ -430,6 +430,12 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   focus: { focus: "focus of the" }, // not "let's focus on"
   pole: { pole: "the pole" }, // not a pole of a function's pole diagram, or a flagpole
   "standard-form-of-a-conic": { "standard form": "standard form of the equation of" }, // not Ax + By = C
+  "curl-vector": { curl: "curl of" },
+  "divergence-vector": { divergence: "the divergence of" }, // not a divergent series
+  "arithmetic-middle-term": { "arithmetic mean": "arithmetic mean of … and" }, // not the mean of a data set
+  "geometric-middle-term": { "geometric mean": "geometric mean of … and" },
+  "modulus-of-a-complex-number": { modulus: "modulus of" }, // not the modulus of a congruence
+  "argument-of-a-complex-number": { argument: "argument of … complex number" }, // not the argument of a function
 };
 
 /** The wording a candidate is counted and recorded as. */

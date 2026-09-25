@@ -1,0 +1,80 @@
+{
+  "id": "fubinis-theorem",
+  "ja": {
+    "term": "フビニの定理",
+    "reading": "ふびにのていり",
+    "alt": []
+  },
+  "en": {
+    "term": "Fubini's theorem",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "連続関数の長方形上の二重積分は、どちらの順序の累次積分で計算しても同じ値になるという定理。",
+  "definition_en": "The theorem that the double integral of a continuous function over a rectangle equals the iterated integral taken in either order.",
+  "latex": "\\iint_R f\\,dA = \\int_a^b \\int_c^d f\\,dy\\,dx = \\int_c^d \\int_a^b f\\,dx\\,dy",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "By Fubini's theorem, you can integrate in whichever order is easier.",
+      "ja": "フビニの定理より、楽なほうの順序で積分してよい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use Fubini's theorem to evaluate ∬_R x e^{xy} dA over R = [0, 1] × [0, 2] in the more convenient order.",
+      "ja": "フビニの定理を用いて、R = [0, 1] × [0, 2] 上の ∬_R x e^{xy} dA を計算しやすい順序で求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは話し言葉 0 件、書き言葉 27 件（すべて OpenStax Calculus）。"
+  ],
+  "related": [
+    "iterated-integral",
+    "double-integral",
+    "changing-the-order-of-integration"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "フビニの定理",
+      "en": "Fubini's theorem"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "Fubini's theorem": 27
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

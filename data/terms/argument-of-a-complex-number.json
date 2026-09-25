@@ -1,0 +1,93 @@
+{
+  "id": "argument-of-a-complex-number",
+  "ja": {
+    "term": "複素数の偏角",
+    "reading": "ふくそすうのへんかく",
+    "alt": []
+  },
+  "en": {
+    "term": "argument",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "complex-numbers"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "複素数 z を複素数平面の点とみたとき、実軸の正の向きから測った角 θ。arg z と書く。",
+  "definition_en": "The angle θ, measured from the positive real axis, of the point z in the complex plane; written arg z.",
+  "latex": "\\arg z = \\theta",
+  "spoken_en": "the argument of z is theta",
+  "examples": [
+    {
+      "en": "When you multiply complex numbers, the arguments add.",
+      "ja": "複素数を掛けると、偏角は足し算になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the modulus and argument of z = −1 + i.",
+      "ja": "z = −1 + i の絶対値と偏角を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "argument は関数の引数（the argument of the logarithm）の意味で使うことのほうが多い語なので、用例コーパスでは argument of the complex number の形で数えた（話し言葉・書き言葉とも 1 件）。偏角の意味では MIT OCW（18.03）の講義と OpenStax Algebra and Trigonometry が使う。",
+    "極座標の θ（偏角）には名前をつけないことが多い（polar-angle を参照）。"
+  ],
+  "related": [
+    "modulus-of-a-complex-number",
+    "polar-form",
+    "polar-angle",
+    "complex-plane",
+    "de-moivres-theorem"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "複素数の偏角",
+      "en": "Argument (complex analysis)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "argument of … complex number": 1
+    },
+    "written": {
+      "argument of … complex number": 1
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-notes"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

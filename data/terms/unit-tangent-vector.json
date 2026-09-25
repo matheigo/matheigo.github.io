@@ -1,0 +1,81 @@
+{
+  "id": "unit-tangent-vector",
+  "ja": {
+    "term": "単位接ベクトル",
+    "reading": "たんいせっべくとる",
+    "alt": []
+  },
+  "en": {
+    "term": "unit tangent vector",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "曲線の接線の向きをもつ長さ 1 のベクトル T(t) = r′(t)/‖r′(t)‖。",
+  "definition_en": "The tangent vector of length 1, T(t) = r′(t)/‖r′(t)‖.",
+  "latex": "\\mathbf{T}(t) = \\frac{\\mathbf{r}'(t)}{\\|\\mathbf{r}'(t)\\|}",
+  "spoken_en": "T of t equals r prime of t over the magnitude of r prime of t",
+  "examples": [
+    {
+      "en": "Divide the velocity by its length and you get the unit tangent vector.",
+      "ja": "速度をその長さで割れば単位接ベクトルになる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the unit tangent vector T(t) for r(t) = ⟨3 cos t, 3 sin t, 4t⟩.",
+      "ja": "r(t) = ⟨3 cos t, 3 sin t, 4t⟩ の単位接ベクトル T(t) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "unit-normal-vector",
+    "curvature",
+    "velocity-vector",
+    "derivative-of-a-vector-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "unit tangent vector": 13
+    },
+    "written": {
+      "unit tangent vector": 51
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

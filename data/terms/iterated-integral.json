@@ -1,0 +1,85 @@
+{
+  "id": "iterated-integral",
+  "ja": {
+    "term": "累次積分",
+    "reading": "るいじせきぶん",
+    "alt": [
+      "逐次積分"
+    ]
+  },
+  "en": {
+    "term": "iterated integral",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "1 変数の積分を順に繰り返して計算する積分。二重積分はふつう累次積分に直して計算する。",
+  "definition_en": "An integral computed by doing one-variable integrals one after another; a double integral is usually evaluated as one.",
+  "latex": "\\int_a^b \\int_c^d f(x, y)\\,dy\\,dx",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In an iterated integral, work from the inside out.",
+      "ja": "累次積分は内側から計算する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate the iterated integral ∫₀¹ ∫₀ˣ xy dy dx.",
+      "ja": "累次積分 ∫₀¹ ∫₀ˣ xy dy dx を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "double-integral",
+    "fubinis-theorem",
+    "changing-the-order-of-integration"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "逐次積分",
+      "en": "Iterated integral"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "iterated integral": 23
+    },
+    "written": {
+      "iterated integral": 72
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

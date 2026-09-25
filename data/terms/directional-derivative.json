@@ -1,0 +1,88 @@
+{
+  "id": "directional-derivative",
+  "ja": {
+    "term": "方向微分",
+    "reading": "ほうこうびぶん",
+    "alt": [
+      "方向微分係数"
+    ]
+  },
+  "en": {
+    "term": "directional derivative",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "多変数関数の、ある点での単位ベクトル u の向きの変化率。D_u f = ∇f · u。",
+  "definition_en": "The rate of change of a function of several variables at a point in the direction of a unit vector u, D_u f = ∇f · u.",
+  "latex": "D_{\\mathbf{u}} f = \\nabla f \\cdot \\mathbf{u}",
+  "spoken_en": "D sub u of f equals del f dot u",
+  "examples": [
+    {
+      "en": "The directional derivative is biggest in the direction of the gradient.",
+      "ja": "方向微分は、勾配の向きで最大になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the directional derivative of f(x, y) = x²y at (1, 2) in the direction of ⟨3, 4⟩.",
+      "ja": "f(x, y) = x²y の点 (1, 2) における ⟨3, 4⟩ 方向の方向微分を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "u は単位ベクトルにしてから内積をとる。"
+  ],
+  "related": [
+    "gradient",
+    "partial-derivative",
+    "level-curve"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "方向微分",
+      "en": "Directional derivative"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "directional derivative": 34
+    },
+    "written": {
+      "directional derivative": 59
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

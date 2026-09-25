@@ -1,0 +1,85 @@
+{
+  "id": "jacobian",
+  "ja": {
+    "term": "ヤコビアン",
+    "reading": "やこびあん",
+    "alt": [
+      "ヤコビ行列式"
+    ]
+  },
+  "en": {
+    "term": "Jacobian",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "変数変換 x = g(u, v)、y = h(u, v) の偏導関数を並べた行列式 ∂(x, y)/∂(u, v)。面積の拡大率を表す。",
+  "definition_en": "The determinant ∂(x, y)/∂(u, v) of the partial derivatives of a change of variables, which measures how areas are stretched.",
+  "latex": "\\frac{\\partial(x, y)}{\\partial(u, v)} = \\begin{vmatrix} x_u & x_v \\\\ y_u & y_v \\end{vmatrix}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Don't forget to multiply by the absolute value of the Jacobian.",
+      "ja": "ヤコビアンの絶対値を掛けるのを忘れずに。",
+      "register": "spoken"
+    },
+    {
+      "en": "Compute the Jacobian of the transformation x = 2u + v, y = u − 3v.",
+      "ja": "変換 x = 2u + v、y = u − 3v のヤコビアンを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "偏導関数を並べた行列そのもの（Jacobian matrix）を指すこともある。用例コーパスの話し言葉の 39 件のうち 30 件は MIT 18.03（連立微分方程式のヤコビ行列）。"
+  ],
+  "related": [
+    "change-of-variables",
+    "double-integral",
+    "partial-derivative"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "Jacobian": 39
+    },
+    "written": {
+      "Jacobian": 34
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

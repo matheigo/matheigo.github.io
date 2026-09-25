@@ -1,0 +1,82 @@
+{
+  "id": "scalar-triple-product",
+  "ja": {
+    "term": "スカラー三重積",
+    "reading": "すからーさんじゅうせき",
+    "alt": []
+  },
+  "en": {
+    "term": "triple scalar product",
+    "alt": [
+      "scalar triple product"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "3 つのベクトルについての a · (b × c)。絶対値は 3 つのベクトルがつくる平行六面体の体積になる。",
+  "definition_en": "For three vectors, the number a · (b × c); its absolute value is the volume of the parallelepiped they span.",
+  "latex": "\\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c})",
+  "spoken_en": "a dot b cross c",
+  "examples": [
+    {
+      "en": "If the triple scalar product is zero, the three vectors lie in one plane.",
+      "ja": "スカラー三重積が 0 なら、3 つのベクトルは同じ平面上にある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the triple scalar product to find the volume of the parallelepiped determined by u, v, and w.",
+      "ja": "スカラー三重積を用いて、u、v、w がつくる平行六面体の体積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Calculus Volume 3 は triple scalar product と書く（30 件）。scalar triple product の語順は 1 件。"
+  ],
+  "related": [
+    "coordinates-in-space",
+    "equation-of-a-plane"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "三重積 (ベクトル解析)",
+      "en": "Triple product"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "triple scalar product": 30,
+      "scalar triple product": 1
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

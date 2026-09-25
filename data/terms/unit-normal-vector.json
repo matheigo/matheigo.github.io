@@ -1,0 +1,79 @@
+{
+  "id": "unit-normal-vector",
+  "ja": {
+    "term": "主法線ベクトル",
+    "reading": "しゅほうせんべくとる",
+    "alt": [
+      "単位主法線ベクトル"
+    ]
+  },
+  "en": {
+    "term": "principal unit normal vector",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "単位接ベクトル T の微分の向きをもつ長さ 1 のベクトル N = T′/‖T′‖。曲線が曲がる側を向く。",
+  "definition_en": "The unit vector N = T′/‖T′‖ in the direction of the derivative of the unit tangent vector; it points toward the side the curve bends.",
+  "latex": "\\mathbf{N}(t) = \\frac{\\mathbf{T}'(t)}{\\|\\mathbf{T}'(t)\\|}",
+  "spoken_en": "N of t equals T prime of t over the magnitude of T prime of t",
+  "examples": [
+    {
+      "en": "The unit normal vector points toward the inside of the curve.",
+      "ja": "主法線ベクトルは曲線の内側を向く。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the principal unit normal vector N(t) for r(t) = ⟨cos t, sin t, t⟩.",
+      "ja": "r(t) = ⟨cos t, sin t, t⟩ の主法線ベクトル N(t) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "unit normal vector だけだと、曲面の単位法線ベクトルの意味にもなる（書き言葉 62 件）。",
+    "T × N を binormal vector（従法線ベクトル）B と呼ぶ。"
+  ],
+  "related": [
+    "unit-tangent-vector",
+    "curvature",
+    "space-curve"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "principal unit normal vector": 15
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

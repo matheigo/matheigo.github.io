@@ -1,0 +1,93 @@
+{
+  "id": "function-of-several-variables",
+  "ja": {
+    "term": "多変数関数",
+    "reading": "たへんすうかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "function of several variables",
+    "alt": [
+      "multivariable function"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "2 つ以上の変数の値に対して 1 つの値を対応させる関数 f(x, y) など。",
+  "definition_en": "A function, such as f(x, y), that assigns one value to each choice of two or more input variables.",
+  "latex": "z = f(x, y)",
+  "spoken_en": "z equals f of x comma y",
+  "examples": [
+    {
+      "en": "With a function of two variables, the graph is a surface, not a curve.",
+      "ja": "2 変数関数のグラフは、曲線ではなく曲面になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the domain of the function of two variables f(x, y) = √(9 − x² − y²).",
+      "ja": "2 変数関数 f(x, y) = √(9 − x² − y²) の定義域を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "授業と教科書で多いのは 2 変数の場合の function of two variables（話し言葉 10 件、書き言葉 132 件）。function of several variables と multivariable function はどちらも 10 件未満で、OpenStax Calculus Volume 3 の節の名前（Functions of Several Variables）を見出しにした。"
+  ],
+  "related": [
+    "partial-derivative",
+    "level-curve",
+    "tangent-plane",
+    "double-integral"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "function of several variables": 2,
+      "multivariable function": 2
+    },
+    "written": {
+      "function of several variables": 7,
+      "multivariable function": 2
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 function of several variables（Functions of Several Variables）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

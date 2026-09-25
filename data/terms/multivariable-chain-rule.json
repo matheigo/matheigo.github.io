@@ -1,0 +1,85 @@
+{
+  "id": "multivariable-chain-rule",
+  "ja": {
+    "term": "多変数の連鎖律",
+    "reading": "たへんすうのれんさりつ",
+    "alt": []
+  },
+  "en": {
+    "term": "generalized chain rule",
+    "alt": [
+      "multivariable chain rule"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "多変数関数の合成関数の微分法。z = f(x, y)、x = x(t)、y = y(t) なら dz/dt = f_x dx/dt + f_y dy/dt。",
+  "definition_en": "The chain rule for composite functions of several variables: if z = f(x, y) with x = x(t) and y = y(t), then dz/dt = f_x dx/dt + f_y dy/dt.",
+  "latex": "\\frac{dz}{dt} = \\frac{\\partial z}{\\partial x}\\frac{dx}{dt} + \\frac{\\partial z}{\\partial y}\\frac{dy}{dt}",
+  "spoken_en": "d z d t equals partial z partial x times d x d t plus partial z partial y times d y d t",
+  "examples": [
+    {
+      "en": "Draw a tree diagram so you don't miss any path in the chain rule.",
+      "ja": "樹形図をかいて、連鎖律の経路を落とさないようにしよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the chain rule to find dz/dt for z = x²y, x = cos t, y = sin t.",
+      "ja": "連鎖律を用いて、z = x²y、x = cos t、y = sin t のときの dz/dt を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスではどの言い方も 10 件未満。OpenStax Calculus Volume 3 の generalized chain rule（7 件）を見出しにした。"
+  ],
+  "related": [
+    "chain-rule",
+    "partial-derivative",
+    "total-differential"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "generalized chain rule": 7,
+      "multivariable chain rule": 1
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは OpenStax の呼び方 generalized chain rule（本文 7 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

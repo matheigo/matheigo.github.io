@@ -1,0 +1,83 @@
+{
+  "id": "tangent-plane",
+  "ja": {
+    "term": "接平面",
+    "reading": "せっへいめん",
+    "alt": []
+  },
+  "en": {
+    "term": "tangent plane",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "曲面上の点で曲面に接する平面。z = f(x, y) では z − z₀ = f_x(x − x₀) + f_y(y − y₀)。",
+  "definition_en": "The plane that touches a surface at a point; for z = f(x, y) it is z − z₀ = f_x(x − x₀) + f_y(y − y₀).",
+  "latex": "z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The tangent plane is the 3D version of the tangent line.",
+      "ja": "接平面は、接線の 3 次元版。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find an equation of the tangent plane to z = x² + y² at the point (1, 2, 5).",
+      "ja": "z = x² + y² の点 (1, 2, 5) における接平面の方程式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "partial-derivative",
+    "equation-of-a-plane",
+    "linear-approximation",
+    "total-differential",
+    "gradient"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "tangent plane": 18
+    },
+    "written": {
+      "tangent plane": 74
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

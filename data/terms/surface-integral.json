@@ -1,0 +1,87 @@
+{
+  "id": "surface-integral",
+  "ja": {
+    "term": "面積分",
+    "reading": "めんせきぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "surface integral",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "関数やベクトル場を曲面上で積分したもの。ベクトル場なら曲面を通る流束（flux）を表す。",
+  "definition_en": "The integral of a function or a vector field over a surface; for a vector field it gives the flux through the surface.",
+  "latex": "\\iint_S \\mathbf{F} \\cdot d\\mathbf{S}",
+  "spoken_en": "the surface integral over S of F dot d S",
+  "examples": [
+    {
+      "en": "For a surface integral, parametrize the surface with two parameters.",
+      "ja": "面積分では、曲面を 2 つのパラメータで表そう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate the surface integral ∬_S z dS, where S is the part of the plane x + y + z = 1 in the first octant.",
+      "ja": "S が平面 x + y + z = 1 の第 1 象限の部分のとき、面積分 ∬_S z dS を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉の 50 件はすべて MIT OCW（18.02）。"
+  ],
+  "related": [
+    "divergence-theorem",
+    "stokes-theorem",
+    "line-integral",
+    "double-integral"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "面積分",
+      "en": "Surface integral"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "surface integral": 50
+    },
+    "written": {
+      "surface integral": 120
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

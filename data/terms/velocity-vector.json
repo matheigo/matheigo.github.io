@@ -1,0 +1,95 @@
+{
+  "id": "velocity-vector",
+  "ja": {
+    "term": "速度ベクトル",
+    "reading": "そくどべくとる",
+    "alt": []
+  },
+  "en": {
+    "term": "velocity vector",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数III",
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "平面や空間を動く点の位置ベクトル r(t) を t で微分したベクトル v(t) = r′(t)。大きさが速さ。",
+  "definition_en": "The derivative v(t) = r′(t) of the position vector of a moving point; its length is the speed.",
+  "latex": "\\mathbf{v}(t) = \\mathbf{r}'(t), \\quad \\text{speed} = \\|\\mathbf{v}(t)\\|",
+  "spoken_en": "v of t equals r prime of t, and the speed is the magnitude of v of t",
+  "examples": [
+    {
+      "en": "The velocity vector is tangent to the path, and its length is the speed.",
+      "ja": "速度ベクトルは道筋に接していて、その長さが速さ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A particle moves with position r(t) = ⟨t², 2t⟩. Find its velocity vector and speed at t = 1.",
+      "ja": "点が位置 r(t) = ⟨t², 2t⟩ で動く。t = 1 における速度ベクトルと速さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "加速度ベクトルは acceleration vector a(t) = v′(t)。",
+    "velocity（向きを含む）と speed（大きさ）を区別する。"
+  ],
+  "related": [
+    "velocity",
+    "acceleration",
+    "derivative-of-a-vector-function",
+    "unit-tangent-vector",
+    "vector-valued-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 9.6（velocity vector）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "velocity vector": 65
+    },
+    "written": {
+      "velocity vector": 42
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "change-of-variables",
+  "ja": {
+    "term": "変数変換",
+    "reading": "へんすうへんかん",
+    "alt": []
+  },
+  "en": {
+    "term": "change of variables",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "重積分で、変数を x = g(u, v)、y = h(u, v) と置きかえて計算すること。ヤコビアンの絶対値を掛ける。",
+  "definition_en": "Rewriting a multiple integral with new variables x = g(u, v), y = h(u, v), multiplying by the absolute value of the Jacobian.",
+  "latex": "\\iint_R f(x, y)\\,dA = \\iint_S f(g(u,v), h(u,v)) \\left| \\frac{\\partial(x, y)}{\\partial(u, v)} \\right| du\\,dv",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Polar coordinates are just one change of variables, with Jacobian r.",
+      "ja": "極座標はヤコビアンが r の変数変換の 1 つにすぎない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the change of variables u = x + y, v = x − y to evaluate ∬_R (x + y) dA.",
+      "ja": "変数変換 u = x + y、v = x − y を用いて ∬_R (x + y) dA を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "1 変数の置換積分（u-substitution）も change of variables と呼ぶことがある（OpenStax Calculus Volume 1 に 10 件）。"
+  ],
+  "related": [
+    "jacobian",
+    "double-integral",
+    "triple-integral",
+    "integration-by-substitution"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "change of variables": 35
+    },
+    "written": {
+      "change of variables": 47
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}
