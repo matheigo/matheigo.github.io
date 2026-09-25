@@ -14,17 +14,17 @@
       {
         "term": "plug in",
         "register": "spoken",
-        "note": "話し言葉コーパスで 1,403 件と最も多い。大学の講義（MIT OCW 353 件）と YouTube の講義・解説（1,045 件）で使われ、高校向けの Khan Academy ではほとんど出てこない（5 件）。教科書の文章では少ない（書き言葉 35 件、うち 30 件は MIT の講義ノート）。"
+        "note": "話し言葉コーパスで 1,405 件と最も多い。大学の講義（MIT OCW 353 件）と YouTube の講義・解説（1,047 件）で使われ、高校向けの Khan Academy ではほとんど出てこない（5 件）。教科書の文章では少ない（書き言葉 35 件、うち 30 件は MIT の講義ノート）。"
       },
       {
         "term": "substitute",
         "register": "both",
-        "note": "話し言葉で 361 件。高校向けの Khan Academy はほぼこちらだけを使う（132 件、plug in は 5 件）。大学の講義でも使うが plug in のほうが多い（OCW で 128 対 353）。書き言葉（OpenStax・MIT の講義ノート）では 739 件でほぼこれだけ。答案ではこちら。"
+        "note": "話し言葉で 391 件。高校向けの Khan Academy はほぼこちらだけを使う（142 件、plug in は 5 件）。大学の講義でも使うが plug in のほうが多い（OCW で 138 対 353）。書き言葉（OpenStax・MIT の講義ノート）では 753 件でほぼこれだけ。答案ではこちら。"
       },
       {
         "term": "substitute back",
         "register": "spoken",
-        "note": "求めた値や置き換えた式を、もとの式に戻して代入すること。話し言葉コーパスで 29 件。"
+        "note": "求めた値や置き換えた式を、もとの式に戻して代入すること。話し言葉コーパスで 30 件。"
       },
       {
         "term": "sub in",
@@ -79,7 +79,7 @@
     }
   ],
   "pitfalls": [
-    "大学の講義や YouTube の解説では plug in が多い（話し言葉 1,403 対 361）。ただし高校向けの Khan Academy は substitute を使うので、どちらも耳にする。答案・教科書では substitute。",
+    "大学の講義や YouTube の解説では plug in が多い（話し言葉 1,405 対 391）。ただし高校向けの Khan Academy は substitute を使うので、どちらも耳にする。答案・教科書では substitute。",
     "substitute A for B は「B の代わりに A を入れる」。順序を逆にしやすい。"
   ],
   "related": [
@@ -100,15 +100,15 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "plug in": 1403,
-      "substitute": 361,
-      "substitute back": 29,
+      "plug in": 1405,
+      "substitute": 391,
+      "substitute back": 30,
       "sub in": 2
     },
     "written": {
-      "plug in": 35,
-      "substitute": 739,
-      "substitute back": 5
+      "substitute": 753,
+      "substitute back": 5,
+      "plug in": 35
     },
     "sources": [
       "khan-algebra",

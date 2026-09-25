@@ -632,3 +632,101 @@ PHASE2B_TO_PHRASES = [
     "has-no-local-extrema",
     "the-limit-exists",
 ]
+
+
+# ------------------------------------------ Phase 2 数列・級数・多変数の単元
+# The same rules again (docs/DECISIONS.md "Phase 2 数列・級数・多変数の単元"),
+# before generating AP Calculus AB Unit 7, BC Units 9-10, all of Calculus II
+# and III, 数B 数列 and 数C 平面上の曲線と複素数平面. Applied by fix_phase1.py
+# step 10, after step 9.
+#
+# Several "into" rows sit in units generated earlier (infinite-series,
+# separable-differential-equation, ...) or later (locus, pure-imaginary-number,
+# complex-conjugate, rotate, coordinates-in-space, equation-of-a-plane). A row
+# merged into a later unit's row brings that row into these units, as
+# probability-density-and-integrals did for probability-density-function.
+PHASE2C_SAME = [
+    # 円錐曲線 and 二次曲線: the same curves; 数C calls them 二次曲線
+    ("conic", "conic-section", "into"),
+    # 和の公式 in 数B is the Σ formulas (Σk, Σk², Σk³)
+    ("sum-formula", "summation-formulas", "into"),
+    ("evaluate-the-sum", "find-the-sum", "into"),
+    # 初項から第 n 項までの和 is Sₙ, the nth partial sum
+    ("sum-of-the-first-n-terms", "partial-sum", "into"),
+    # 級数 in the Japanese curriculum is the infinite series of 数III
+    ("series", "infinite-series", "into"),
+    ("separable-equation", "separable-differential-equation", "into"),
+    ("exponential-growth-and-decay-models", "exponential-model", "into"),
+    ("logistic-equation", "logistic-differential-equation", "into"),
+    ("three-dimensional-coordinate-system", "coordinates-in-space", "into"),
+]
+
+# Section names (textbook sections, CED topics) -> the entry for what they teach.
+PHASE2C_SECTION = [
+    ("verifying-solutions", "differential-equation"),  # CED 7.2
+    ("convergence-and-divergence", "convergence"),
+    ("strategy-for-testing-series", "infinite-series"),
+    ("estimating-the-sum-of-a-series", "sum-of-the-series"),
+    ("extrema-of-functions-of-two-variables", "local-extremum"),
+    ("double-integrals-in-polar-coordinates", "double-integral"),
+    ("representing-a-function-as-a-series", "power-series"),  # CED 10.15
+    ("operations-on-power-series", "power-series"),
+    ("approximating-functions", "taylor-polynomial"),
+    ("arc-length-of-a-parametric-curve", "arc-length-of-a-curve"),  # CED 9.3
+    ("arc-length-in-polar-coordinates", "arc-length-of-a-curve"),
+    ("polar-equations-of-conics", "polar-equation"),
+    ("translated-conics", "standard-form-of-a-conic"),
+    ("conics-and-lines", "conic-section"),
+    ("product-and-quotient-of-complex-numbers", "polar-form"),
+    ("geometry-with-complex-numbers", "complex-plane"),
+    ("lines-and-planes-in-space", "equation-of-a-plane"),
+]
+
+# A term with its argument filled in, or a collocation / a task on it.
+PHASE2C_INSTANCE = [
+    ("write-in-sigma-notation", "summation-notation"),
+    ("form-an-arithmetic-sequence", "arithmetic-sequence"),
+    ("write-in-polar-coordinates", "polar-coordinates"),
+    ("write-in-polar-form", "polar-form"),
+    ("convert-to-rectangular-coordinates", "rectangular-coordinates"),
+    ("find-the-foci", "focus"),
+    ("find-the-eccentricity", "eccentricity"),
+    ("find-the-modulus-and-argument", "polar-form"),
+    ("represent-the-complex-number-as-a-point", "complex-plane"),
+    ("take-the-argument", "argument-of-a-complex-number"),
+    ("distance-between-two-complex-numbers", "modulus-of-a-complex-number"),  # |z − w|
+    ("the-figure-traced-by-z", "locus"),  # 点 z が描く図形 = the locus of z
+    ("condition-to-be-purely-imaginary", "pure-imaginary-number"),
+    ("condition-to-be-real", "complex-conjugate"),  # z が実数 ⇔ z̄ = z
+    ("rotate-about-the-origin", "rotate"),
+]
+
+# Section names whose content has no row of its own.
+PHASE2C_RENAME = [
+    ("normal-and-binormal-vectors", "unit-normal-vector",
+     {"ja": "主法線ベクトル", "en": "principal unit normal vector"}),
+    ("velocity-and-acceleration-vectors", "velocity-vector", {"ja": "速度ベクトル", "en": "velocity vector"}),
+]
+
+# Readings of a symbol. summation-sigma exists; nabla is new.
+PHASE2C_TO_SYMBOLS = {
+    "sigma": "summation-sigma",
+    "del": "nabla",
+}
+
+# Lines of a proof or of a procedure, not terms (Phase 3 phrases candidates).
+PHASE2C_TO_PHRASES = [
+    "assume-it-holds-for-n-k",
+    "it-also-holds-for-n-k-1",
+    "the-common-ratio-is-less-than-1",
+    "multiply-by-r-and-subtract",
+    "find-the-pattern",
+]
+
+# Out of scope for v1 (your call, 2026-09-24): the three ③ of the calculus
+# units that are beyond the high-school-to-first-year range.
+PHASE2C_OUT_OF_SCOPE = {
+    "rationalizing-substitution": "beyond-v1",
+    "differential-operator": "beyond-v1",
+    "implicit-function-theorem": "beyond-v1",
+}

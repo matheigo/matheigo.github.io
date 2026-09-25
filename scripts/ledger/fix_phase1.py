@@ -19,6 +19,9 @@ fix_decisions.py; this file only applies them and derives the rest:
      filled, wikidata-only sources become wikipedia-langlink
   8. Phase 2 修正: one concept, one entry for the integral units; section
      names into the entry for their content; classroom lines to phrases
+  9. the same for the differentiation and limit units (PHASE2B_*)
+ 10. the same for the sequence, series and multivariable units, and three
+     ③ moved out of scope (PHASE2C_*)
 
 Writes ledger/terms.csv, ledger/out-of-scope.csv, ledger/id-changes.csv,
 ledger/phrases-candidates.csv and a summary for the report to
@@ -448,6 +451,40 @@ def apply_phase2b(rows, log, stats):
                         "to_symbols": len(D.PHASE2B_TO_SYMBOLS), "to_phrases": phrases}
 
 
+# ------------------------------------ 10. Phase 2 数列・級数・多変数の単元
+def apply_phase2c(rows, log, stats, oos):
+    """The same rules for the sequence, series and multivariable units, and the
+    three ③ you moved out of scope (fix_decisions PHASE2C_*)."""
+    for frm, into, main in D.PHASE2C_SAME:
+        merge(rows, frm, into, main, log, action="merged-into")
+    for frm, into in D.PHASE2C_SECTION:
+        merge(rows, frm, into, "into", log, action="merged-into", names=False)
+        note_add(rows[into], f"節の名前「{frm}」を統合（Phase 2 数列・級数の単元）")
+    for frm, into in D.PHASE2C_INSTANCE:
+        merge(rows, frm, into, "into", log, action="merged-into", names=False)
+    for old, new, fields in D.PHASE2C_RENAME:
+        rename(rows, old, new, fields, log)
+    for frm, into in D.PHASE2C_TO_SYMBOLS.items():
+        rows.pop(frm)
+        log.append((frm, f"symbols/{into}", "merged-into"))
+    phrases = []
+    for i in D.PHASE2C_TO_PHRASES:
+        r = rows.pop(i)
+        phrases.append({"id": i, "ja": r["ja"], "en": r["en"], "pos": r["pos"], "unit": "|".join(r["unit"]),
+                        "level_jp": "|".join(r["level_jp"]), "level_us": "|".join(r["level_us"]),
+                        "from": "", "note": r["note"]})
+        log.append((i, "", "to-phrases"))
+    for i, reason in D.PHASE2C_OUT_OF_SCOPE.items():
+        r = rows.pop(i)
+        oos.append({"id": i, "ja": r["ja"], "en": r["en"], "unit": "|".join(r["unit"]),
+                    "level_jp": "|".join(r["level_jp"]), "reason": reason})
+        log.append((i, "", "out-of-scope"))
+    stats["phase2c"] = {"same": len(D.PHASE2C_SAME), "section": len(D.PHASE2C_SECTION),
+                        "instance": len(D.PHASE2C_INSTANCE), "rename": len(D.PHASE2C_RENAME),
+                        "to_symbols": len(D.PHASE2C_TO_SYMBOLS), "to_phrases": phrases,
+                        "out_of_scope": len(D.PHASE2C_OUT_OF_SCOPE)}
+
+
 # ------------------------------------------------------------------- main
 def transform(en_check=True, langlinks=True, phase2=True):
     """Phase 1 ledger -> fixed rows. en_check=False stops before the English
@@ -569,6 +606,8 @@ def transform(en_check=True, langlinks=True, phase2=True):
     apply_phase2(rows, log, stats)
     # 9. the same for the differentiation and limit units
     apply_phase2b(rows, log, stats)
+    # 10. the same for the sequence, series and multivariable units
+    apply_phase2c(rows, log, stats, oos)
     return rows, stats, log, oos
 
 
@@ -602,7 +641,7 @@ def main():
     with open(os.path.join(ROOT, "ledger", "phrases-candidates.csv"), "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, PHRASE_COLUMNS)
         w.writeheader()
-        w.writerows(stats["phase2"]["to_phrases"] + stats["phase2b"]["to_phrases"])
+        w.writerows(stats["phase2"]["to_phrases"] + stats["phase2b"]["to_phrases"] + stats["phase2c"]["to_phrases"])
 
     stats["rows"] = len(rows)
     stats["actions"] = dict(Counter(a for _, _, a in log))
@@ -614,7 +653,7 @@ def main():
     json.dump(stats, open(os.path.join(HERE, "fix_stats.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
     big = ("coverage", "check_mismatch", "oos", "dup_en", "en_check", "notation_alias", "notation_headword",
-           "langlinks", "phase2", "phase2b")
+           "langlinks", "phase2", "phase2b", "phase2c")
     print(json.dumps({k: v for k, v in stats.items() if k not in big}, ensure_ascii=False, indent=1))
     e = stats["en_check"]
     print(f"en check: {e['checked']} title rows -> ok {len(e['ok'])}, wikipedia removed {len(e['removed'])}"
@@ -631,6 +670,10 @@ def main():
     print(f"phase 2 differentiation (step 9): same concept {p2b['same']}, section names {p2b['section']},"
           f" instances {p2b['instance']}, renamed {p2b['rename']}, to symbols {p2b['to_symbols']},"
           f" to phrases {len(p2b['to_phrases'])}")
+    p2c = stats["phase2c"]
+    print(f"phase 2 series (step 10): same concept {p2c['same']}, section names {p2c['section']},"
+          f" instances {p2c['instance']}, renamed {p2c['rename']}, to symbols {p2c['to_symbols']},"
+          f" to phrases {len(p2c['to_phrases'])}, out of scope {p2c['out_of_scope']}")
 
 
 def _dup_en(rows):

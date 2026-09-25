@@ -3,8 +3,8 @@
   "title_ja": "y = ax + b と y = mx + b",
   "title_en": "Slope-intercept form",
   "jp": "一次関数は y = ax + b と書き、a を傾き、b を切片と呼ぶ。",
-  "us": "y = mx + b が標準で、m が slope、b が y-intercept。この形の名前は slope-intercept form。点と傾きから書く point-slope form、Ax + By = C の standard form も授業で区別して使う。",
-  "advice_ja": "傾きは m と書く。授業では式の「形」に名前があるので、slope-intercept / point-slope / standard の 3 つを覚えておくと指示が読める。",
+  "us": "y = mx + b と書き、m を slope、b を y-intercept と呼ぶ。この形の名前は slope-intercept form。OpenStax（Algebra and Trigonometry・Calculus）は、点と傾きから書く point-slope form、Ax + By = C の standard form と呼び分ける。授業の書き起こしでも slope-intercept form（20 件）と point-slope form（25 件）が出る。",
+  "advice_ja": "傾きは m と書く。式の「形」に名前があるので、slope-intercept / point-slope / standard の 3 つを覚えておくと指示が読める。",
   "category": "notation",
   "level": {
     "jp": [
@@ -20,8 +20,16 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-10"
+  "updated": "2026-09-24"
 }

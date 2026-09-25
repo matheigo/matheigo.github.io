@@ -8,6 +8,7 @@ import {
   countPattern,
   countPhrase,
   countTerm,
+  countedAs,
   decide,
   decideRobust,
   dedupe,
@@ -530,5 +531,37 @@ describe("dedupe", () => {
     expect(countPhrase(docs[0].text, "plug in")).toBe(3);
     expect(countPhrase(docs[1].text, "plug in")).toBe(1);
     expect(stats["mit-18.02"].droppedSentences).toBe(1);
+  });
+});
+
+describe("TERM_FORMS (generic words counted in a sentence form)", () => {
+  it("counts approaches as as … approaches, not the bare words", () => {
+    const got = candidatesOf("terms", {
+      id: "approaches",
+      en: { term: "approaches", alt: [], variants: [{ term: "goes to" }, { term: "tends to" }] },
+    });
+    expect(got).toEqual(["as … approaches", "as … goes to", "as … tends to"]);
+  });
+
+  it("the form keeps the other senses out", () => {
+    const text = normalize("As x goes to 3 this goes to 9. Then he goes to the board. It tends to be slow.");
+    expect(countTerm(text, "goes to")).toBe(3);
+    expect(countTerm(text, "as … goes to")).toBe(1);
+    expect(countTerm(text, "as … tends to")).toBe(0);
+  });
+
+  it("leaves other entries and collections as written", () => {
+    expect(countedAs("terms", "limit", "goes to")).toBe("goes to");
+    expect(countedAs("phrases", "approaches", "goes to")).toBe("goes to");
+  });
+});
+
+describe("SYMBOL_PATTERNS for square-root and summation-sigma", () => {
+  it("counts the readings with any radicand or bounds", () => {
+    const text = normalize("the square root of two over two. the sum from k equals one to n of k squared");
+    expect(countPattern(text, countedAs("symbols", "square-root", "the square root of x squared plus one"))).toBe(1);
+    expect(countPattern(text, countedAs("symbols", "summation-sigma", "the sum from k equals one to n of a sub k"))).toBe(1);
+    // the short reading stays literal
+    expect(countedAs("symbols", "square-root", "root x squared plus one")).toBe("root x squared plus one");
   });
 });

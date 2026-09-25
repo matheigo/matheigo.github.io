@@ -6,9 +6,9 @@
     "alt": []
   },
   "en": {
-    "term": "find the inflection points",
+    "term": "find the points of inflection",
     "alt": [
-      "find the points of inflection"
+      "find the inflection points"
     ],
     "uk": null
   },
@@ -33,12 +33,12 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "To find the inflection points, set f double prime equal to zero and check that it actually changes sign.",
+      "en": "To find the points of inflection, set f double prime equal to zero and check that it actually changes sign.",
       "ja": "変曲点を求めるには、f″ = 0 とおいて、そこで本当に符号が変わるかを確かめる。",
       "register": "spoken"
     },
     {
-      "en": "Find the inflection points of f(x) = x³ − 6x² + 9x.",
+      "en": "Find the points of inflection of f(x) = x³ − 6x² + 9x.",
       "ja": "f(x) = x³ − 6x² + 9x の変曲点を求めよ。",
       "register": "written"
     }
@@ -53,13 +53,19 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 5.6（points of inflection）"
     }
   ],
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-24",
     "audit": null,
-    "human": null
+    "human": "2026-09-24"
   },
   "updated": "2026-09-24",
   "evidence": {
@@ -73,8 +79,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは人間が決めた（reviewed.human 2026-09-24）。register は主張しない。",
       "raised": "2026-09-24"
     }
   ]

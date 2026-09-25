@@ -387,11 +387,43 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "the integral from a to b of f of x d x": "the integral from * to * of",
     "the integral of f of x from a to b": "the integral of * from * to *",
   },
+  // The short reading "root x squared plus one" stays literal: a `*` cannot
+  // leave out "square … of", so any pattern for it also counts the long one.
+  "square-root": {
+    "the square root of x squared plus one": "the square root of *",
+  },
+  "summation-sigma": {
+    "the sum from k equals one to n of a sub k": "the sum from * to * of",
+    "the sum of a k, k from one to n": "the sum of * from * to *",
+  },
+};
+
+/**
+ * Generic words counted in the form of a mathematical sentence (DECISIONS,
+ * Phase 2 数列・級数の単元の前の修正): "goes to" alone is 26,571 spoken hits,
+ * most of them not "approaches"; "as … goes to" is the limit. Entry id ->
+ * wording as written in the entry -> the form it is counted as, with "…" a
+ * one-to-three-word blank as usual. As with SYMBOL_PATTERNS, the form is also
+ * the key in counts and `evidence`, and the references (CED, OpenStax) are
+ * searched for the form too.
+ */
+export const TERM_FORMS: Record<string, Record<string, string>> = {
+  approaches: {
+    approaches: "as … approaches",
+    "goes to": "as … goes to",
+    "tends to": "as … tends to",
+  },
+  squeeze: {
+    squeeze: "squeeze … between",
+    sandwich: "sandwich … between",
+  },
 };
 
 /** The wording a candidate is counted and recorded as. */
 export function countedAs(collection: string, id: string, wording: string): string {
-  return collection === "symbols" ? (SYMBOL_PATTERNS[id]?.[wording] ?? wording) : wording;
+  if (collection === "symbols") return SYMBOL_PATTERNS[id]?.[wording] ?? wording;
+  if (collection === "terms") return TERM_FORMS[id]?.[wording] ?? wording;
+  return wording;
 }
 
 export interface ContextHit {
@@ -936,8 +968,9 @@ export function candidatesOf(collection: string, entry: Record<string, unknown>)
   const out: string[] = [];
   if (collection === "terms") {
     const en = entry.en as { term: string; alt?: string[]; variants?: { term: string }[] };
-    out.push(en.term, ...(en.alt ?? []), ...(en.variants ?? []).map((v) => v.term));
-    for (const c of (entry.collocations as { en: string }[] | undefined) ?? []) out.push(c.en);
+    const words = [en.term, ...(en.alt ?? []), ...(en.variants ?? []).map((v) => v.term)];
+    for (const c of (entry.collocations as { en: string }[] | undefined) ?? []) words.push(c.en);
+    out.push(...words.map((w) => countedAs(collection, entry.id as string, w)));
   } else if (collection === "symbols") {
     for (const s of (entry.spoken_en as { text: string }[]) ?? []) out.push(countedAs(collection, entry.id as string, s.text));
   } else if (collection === "phrases") {

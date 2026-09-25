@@ -99,9 +99,9 @@ function loadCorpus(): CorpusDoc[] {
     }));
 }
 
-/** The wording currently used as the entry's headword (as counted: a symbol pattern where one is set). */
+/** The wording currently used as the entry's headword (as counted: a symbol pattern or a term's form where one is set). */
 function headwordOf(collection: Collection, data: Record<string, unknown>): string {
-  if (collection === "terms") return (data.en as { term: string }).term;
+  if (collection === "terms") return countedAs(collection, data.id as string, (data.en as { term: string }).term);
   if (collection === "symbols") return countedAs(collection, data.id as string, (data.spoken_en as { text: string }[])[0].text);
   return data.en as string;
 }

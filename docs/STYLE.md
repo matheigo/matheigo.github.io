@@ -57,7 +57,7 @@ Stewart *Calculus* や Larson *Precalculus* は書名を出典に挙げるだけ
 | 代入 | — | plug in ／ substitute（話し言葉は plug in、書き言葉は substitute。高校向けの Khan は話し言葉でも substitute） | exact |
 | たすき掛け | cross multiplication | ac method ／ grouping ／ box method | none |
 | 相加相乗平均 | — | AM–GM inequality | exact |
-| はさみうちの原理 | — | squeeze theorem（sandwich theorem は英国寄り） | exact |
+| はさみうちの原理 | — | squeeze theorem（CED topic 1.8・OpenStax。sandwich theorem は Khan Academy の講義に少数） | exact |
 | 区分求積法 | piecewise quadrature | Riemann sum（手法名としては教えない） | near |
 | 背理法 | — | proof by contradiction | exact |
 | 対偶 | — | contrapositive | exact |
@@ -80,11 +80,11 @@ Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を�
 
 ## 追記欄（Phase 2 以降に育てる）
 
-- 「エフ ダッシュ」は f dash では通じない。prime を使う（f prime of x、二階は f double prime）。
+- 「エフ ダッシュ」の f dash は用例コーパスに 0 件。prime を使う（f prime of x、二階は f double prime）。
 - 「極大・極小」は local maximum / minimum。区間全体の最大・最小には absolute か global を付ける。
 - 「〜とおく」は let。"Let u = 2x" が答案でも口頭でも標準。
-- 凹凸は concave up / concave down。「上に凸」を convex upward と直訳しても通じにくい。
-- 答案に日本式の増減表を書いても減点はまずされない。ただし f′(x) / f(x) の行が何で、矢印が increasing / decreasing を表すことを一言添える。
+- 凹凸は concave up / concave down（CED topic 5.6・OpenStax）。「上に凸」の直訳 convex upward は用例コーパスに 0 件。
+- 日本式の増減表に当たる定型の表は CED にも OpenStax にもない。CED（Unit 9 の概要）は sign chart を答えを見つける道具として認めつつ、理由の点には定義・定理との結びつきを求める。答案では f′ の符号の変化と定理の名前（by the first derivative test）で理由を書く。
 - 1 概念 1 エントリ。教科書の節の名前（定積分と面積、速度と位置…）は見出しに立てず、中身の用語のエントリに書く。授業や問題文の一文（don't forget the plus C、top minus bottom…）は terms に入れず phrases の候補（`ledger/phrases-candidates.csv`）にする。品詞が違う語（積分 ／ 積分する）は別エントリ。
 - 目的語が間に入る動詞句は見出しに「…」を入れる（revolve … around the x-axis）。コーパスでは「…」を 1〜3 語の空きとして数える。空きなしの形（revolve around the x-axis、受け身の is revolved around …）も en.alt に並べると同じ言い方として 1 回だけ数える。
 - terms の件数は語形変化（複数形・三単現・過去形・-ing）をまとめて数える。Riemann sums のような変化形を en.alt に別に入れなくてよい。
@@ -92,3 +92,5 @@ Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を�
 - AP Calculus での呼び方・範囲は College Board の CED（2020 年版）で確かめる。出典は type: reference、note に topic 番号。本文は写さない。確かめられない「米国では〜」は書かないか「教科書による」とする。
 - 日本の教科書に無い日本語見出しは、mapping_note に「見出しの「X」は日本の教科書に無い、本プロジェクトの訳語。」と書く（mapping が exact でも）。
 - リーマン和の仲間の見出しは CED の呼び方（left ／ right ／ midpoint Riemann sum、trapezoidal sum）。教科書の left-endpoint approximation、midpoint rule、trapezoidal rule は書き言葉の variant。
+- 別の意味でも大量に使う語（goes to、squeeze など）が候補表現になるときは、見出しの意味でしか現れない数学の文の形で数える（as … goes to、squeeze … between）。形は `scripts/corpus/lib.ts` の `TERM_FORMS` に書き、evidence にも形のまま記録する。別の意味も同じ構文を取る語（sum rule、product rule）は形で分けられないので、件数の注意を pitfalls に書く。
+- 「米国では〜」の主張は CED か OpenStax（か用例コーパスの件数）で確かめて、確かめた範囲で書く（「OpenStax Algebra and Trigonometry は〜」「CED topic 5.4」）。確かめられないもの（通じる／通じない、減点されない、一番よく使う）は書かない。

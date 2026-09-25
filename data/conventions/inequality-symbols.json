@@ -3,8 +3,8 @@
   "title_ja": "≦ と ≤",
   "title_en": "Inequality signs",
   "jp": "教科書・答案では ≦ ≧ を使う。",
-  "us": "≤ ≥ が標準。≦ は見慣れないが通じる。手書きでは ≤ に寄せる。",
-  "advice_ja": "米国の答案では ≤ ≥ を使う。",
+  "us": "≤ ≥ を使う。OpenStax の教科書（6 冊）と AP の CED に ≦ ≧ は出てこない（≤ は OpenStax で 2,830 回、CED で 27 回）。",
+  "advice_ja": "答案では ≤ ≥ を使う（米国の教科書と同じ）。",
   "category": "notation",
   "level": {
     "jp": [
@@ -18,8 +18,17 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-10"
+  "updated": "2026-09-24"
 }

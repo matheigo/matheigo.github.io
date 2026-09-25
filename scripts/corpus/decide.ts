@@ -33,7 +33,9 @@
  *     it (corpus-reference-fallback). No register is claimed
  *
  * Only two things reach the human (the user's call on 2026-09-11):
- *   - undecided entries that neither reference names (corpus-undecided)
+ *   - undecided entries that neither reference names (corpus-undecided),
+ *     unless the human has already settled the headword (reviewed.human:
+ *     corpus-human-settled)
  *   - entries where the corpus contradicts the register recorded in the data
  */
 import fs from "node:fs";
@@ -101,10 +103,12 @@ function recordedAt(collection: Collection, data: Record<string, unknown>, regis
       variants?: { term: string; register: string }[];
       register?: string;
     };
+    // A generic word counted in a form (lib.ts TERM_FORMS) is compared as that form.
+    const as = (w: string) => countedAs(collection, data.id as string, w);
     const head = en.register ?? "both";
-    if (head === register || head === "both") out.push(en.term, ...(en.alt ?? []));
+    if (head === register || head === "both") out.push(...[en.term, ...(en.alt ?? [])].map(as));
     for (const v of en.variants ?? []) {
-      if (v.register === register || v.register === "both") out.push(v.term);
+      if (v.register === register || v.register === "both") out.push(as(v.term));
     }
   } else if (collection === "symbols") {
     // "standard" is the neutral reading: it counts for both registers.
@@ -134,9 +138,19 @@ interface Line {
   settled: Settled | null;
   /** Things the entry must change to agree with how it was settled (fixed by hand, then re-run). */
   todo: string[];
+  /** ③ settled by the human (reviewed.human): not sent back to the review. */
+  human: boolean;
 }
 
 const NO_FIXED_NOTE = "英語に決まった言い方がない";
+
+/**
+ * A ③ the human has already looked at and settled (DECISIONS, Phase 2 数列・
+ * 級数の単元の前の修正): the entry carries the date in reviewed.human. It is
+ * recorded as settled by the human and does not go back to the review list.
+ */
+const humanSettled = (record: Record<string, unknown>): string | null =>
+  ((record.reviewed as { human?: string | null } | undefined)?.human ?? null) || null;
 
 function describeSettled(s: Settled): string {
   if (s.kind === "no-fixed-expression") return `英語に決まった言い方がない（話 ${s.spoken} 件 ／ 書 ${s.written} 件）`;
@@ -218,7 +232,7 @@ function main() {
     if (settled && settled.kind !== "undecided") {
       const en = record.en as { term: string; register?: string };
       if (en.register) todo.push(`en.register（${en.register}）を外す（register は主張しない）`);
-      if (settled.kind === "reference" && !sameWording(en.term, settled.head)) {
+      if (settled.kind === "reference" && !sameWording(countedAs(c.collection, entry.data.id, en.term), settled.head)) {
         todo.push(`en.term を ${settled.head} にする（今は ${en.term}）`);
       }
       if (settled.kind === "no-fixed-expression" && !String(record.mapping_note ?? "").includes(NO_FIXED_NOTE)) {
@@ -246,7 +260,8 @@ function main() {
     const mismatch = problems.length ? problems.join(" ／ ") : null;
 
     const writeBack = WRITE && inScope(key);
-    lines.push({ key, wroteBack: writeBack, spoken, written, merges: c.merges, mismatch, settled, todo });
+    const human = settled?.kind === "undecided" && humanSettled(record) !== null;
+    lines.push({ key, wroteBack: writeBack, spoken, written, merges: c.merges, mismatch, settled, todo, human });
 
     if (!writeBack) continue;
 
@@ -272,10 +287,19 @@ function main() {
         note: `コーパスで決まらない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。見出しは ${describeSettled(settled)}。register は主張しない。`,
         raised: TODAY,
       } as { code: string });
+    } else if (settled?.kind === "undecided" && humanSettled(record)) {
+      flags.push({
+        code: "corpus-human-settled",
+        note: `コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。見出しは人間が決めた（reviewed.human ${humanSettled(record)}）。register は主張しない。`,
+        raised: TODAY,
+      } as { code: string });
     } else if (settled?.kind === "undecided") {
       flags.push({
         code: "corpus-undecided",
-        note: `コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`,
+        note:
+          c.collection === "terms"
+            ? `コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`
+            : `コーパスで決まらない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`,
         raised: TODAY,
       } as { code: string });
     }
@@ -303,7 +327,8 @@ function main() {
   // ------------------------------------------------------------- report ---
   const single = lines.filter((l) => l.spoken.kind === "single" || l.written?.kind === "single");
   const both = lines.filter((l) => l.spoken.kind === "both" || l.written?.kind === "both");
-  const undecided = lines.filter((l) => l.settled?.kind === "undecided");
+  const undecided = lines.filter((l) => l.settled?.kind === "undecided" && !l.human);
+  const human = lines.filter((l) => l.settled?.kind === "undecided" && l.human);
   const noFixed = lines.filter((l) => l.settled?.kind === "no-fixed-expression");
   const byReference = lines.filter((l) => l.settled?.kind === "reference");
   const todos = lines.filter((l) => l.todo.length);
@@ -325,7 +350,7 @@ function main() {
   const md = [
     `# コーパス集計 ${TODAY}`,
     "",
-    `対象 ${lines.length} 件。主見出し決着 ${single.length} ／ 併記 ${both.length} ／ 英語に決まった言い方なし ${noFixed.length} ／ 参照で見出しを決めた ${byReference.length} ／ 判断不能 ${undecided.length} ／ register 不一致 ${mismatched.length}。`,
+    `対象 ${lines.length} 件。主見出し決着 ${single.length} ／ 併記 ${both.length} ／ 英語に決まった言い方なし ${noFixed.length} ／ 参照で見出しを決めた ${byReference.length} ／ 人間が決めた ${human.length} ／ 判断不能 ${undecided.length} ／ register 不一致 ${mismatched.length}。`,
     "",
     scope.size
       ? `data/ に書き戻したのは ${writtenBack.length} 件（${[...UNITS, ...IDS].join("、")}）。ほかは判定を表示しただけで、evidence と flags は前回のまま。`
@@ -378,6 +403,13 @@ function main() {
     noFixed.length + byReference.length ? "| 項目 | 決着 | 話し言葉 | 書き言葉 |\n|---|---|---|---|" : "なし。",
     ...[...noFixed, ...byReference].map((l) => `| ${l.key} | ${describeSettled(l.settled!)} | ${describe(l.spoken)} | ${describe(l.written)} |`),
     "",
+    "## ③ のうち人間が見出しを決めたもの（reviewed.human）",
+    "",
+    "コーパスでも CED・OpenStax でも決まらず、人間が見出しを決めた。register は主張しない。人間レビューには戻さない。",
+    "",
+    human.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
+    ...human.map((l) => `| ${l.key} | ${describe(l.spoken)} | ${describe(l.written)} |`),
+    "",
     "## エントリ側で直すこと（決着とエントリが合っていない）",
     "",
     todos.length ? "| 項目 | 直すこと |\n|---|---|" : "なし。",
@@ -416,7 +448,7 @@ function main() {
       .join(", ")}`,
   );
   console.log(
-    `single ${single.length}, both ${both.length}, no-fixed ${noFixed.length}, reference ${byReference.length}, undecided ${undecided.length}, mismatch ${mismatched.length}, merges ${merges.length}, one-source ${oneSource.length}, entry todo ${todos.length}`,
+    `single ${single.length}, both ${both.length}, no-fixed ${noFixed.length}, reference ${byReference.length}, human-settled ${human.length}, undecided ${undecided.length}, mismatch ${mismatched.length}, merges ${merges.length}, one-source ${oneSource.length}, entry todo ${todos.length}`,
   );
   if (WRITE) console.log(`wrote ${writtenBack.length} entr${writtenBack.length === 1 ? "y" : "ies"} back to data/`);
   console.log(`report -> audits/corpus-${TODAY}.md`);

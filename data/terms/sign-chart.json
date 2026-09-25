@@ -10,12 +10,11 @@
     "alt": [
       "sign diagram"
     ],
-    "uk": null,
-    "register": "both"
+    "uk": null
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "日本の増減表（x の行・f′(x) の行・f(x) の行を並べ、矢印で増減を書く表）は米国では定型として教えない。同じ判断は first-derivative test で行い、f′ の符号を数直線上に + と − で書く sign chart で示すのが普通。数IIIの凹凸まで入れた表も扱いは同じで、凹凸は f″ について別の sign chart を書く（concavity / second-derivative test）。答案に増減表を書いても減点はまずされないが、f′(x) と f(x) の行が何を表すか、矢印が increasing / decreasing を意味することを一言添えておく。",
+  "mapping_note": "日本の増減表（x の行・f′(x) の行・f(x) の行を並べ、矢印で増減を書く表）に当たる定型の表は、AP の CED にも OpenStax Calculus にも出てこない。同じ判断は first derivative test（CED topic 5.4）で行い、f′ の符号を区間ごとに書き出した sign chart を使うことがある。CED は Unit 9 の概要で、sign chart は（グラフの分析と同じく）答えを見つける道具として役に立つが、理由（justification）の点を得るには定義や定理に結びつけて書く必要がある、としている。答案では表だけで済ませず、f′ の符号の変化と定理の名前（by the first derivative test）で理由を書く。数IIIの凹凸まで入れた表も同じで、凹凸は f″ の符号で判断する（concavity、CED topic 5.6）。",
   "domains": [
     "calculus"
   ],
@@ -56,16 +55,30 @@
     }
   ],
   "pitfalls": [
-    "「increase-decrease table」は直訳で、米国の教室では通じない。",
-    "極大・極小は local maximum / local minimum。最大・最小（区間全体）は absolute または global をつける。",
-    "凹凸は concave up / concave down。「上に凸」を convex upward と直訳しても通じにくい。"
+    "increase-decrease table は直訳で、用例コーパスにも CED・OpenStax にも出てこない。",
+    "極大・極小は local maximum ／ local minimum（CED は relative extrema とも書く）。区間全体の最大・最小は absolute maximum ／ minimum（CED・OpenStax Calculus の言い方。global maximum も使われるが少ない）。",
+    "凹凸は concave up ／ concave down（CED topic 5.6、OpenStax Calculus）。「上に凸」を convex upward と直訳した形は用例コーパスに出てこない（0 件）。Khan Academy は concave upward とも言う（話し言葉 112 件）。"
   ],
   "related": [
+    "make-a-sign-chart",
+    "first-derivative-test",
+    "increasing-and-decreasing",
+    "concavity",
     "derivative-at-a-point"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 9 の概要（sign chart）、Topic 5.4（first derivative test）・5.6（concavity）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
     }
   ],
   "confidence": "likely",
@@ -74,15 +87,15 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-10",
+  "updated": "2026-09-24",
   "evidence": {
     "sources": [],
     "counted": "2026-09-24"
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CED の呼び方 sign chart（unit9）。register は主張しない。",
       "raised": "2026-09-24"
     }
   ]

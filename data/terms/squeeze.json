@@ -12,11 +12,10 @@
       {
         "term": "sandwich",
         "register": "spoken",
-        "note": "Khan Academy の言い方。話し言葉で 15 件（Khan Academy 14・3Blue1Brown 1）、書き言葉で 4 件（すべて OpenStax Algebra and Trigonometry）。"
+        "note": "Khan Academy の言い方。sandwich … between の形で数えて、話し言葉で 4 件（すべて Khan Academy）、書き言葉では 0 件。"
       }
     ],
-    "uk": null,
-    "register": "both"
+    "uk": null
   },
   "pos": "verb",
   "mapping": "exact",
@@ -51,7 +50,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "件数には名詞 squeeze theorem の squeeze も含まれる。"
+    "用例コーパスの squeeze はほとんどが名詞 squeeze theorem（はさみうちの原理）の squeeze か、「詰め込む」の意味。はさむ意味の squeeze … between は話し言葉で 1 件、sandwich … between は 4 件（Khan Academy）で、どちらも少ない。"
   ],
   "related": [
     "squeeze-theorem",
@@ -82,27 +81,20 @@
   "updated": "2026-09-24",
   "evidence": {
     "spoken": {
-      "squeeze": 76,
-      "sandwich": 15
-    },
-    "written": {
-      "squeeze": 13,
-      "sandwich": 4
+      "sandwich … between": 4,
+      "squeeze … between": 1
     },
     "sources": [
-      "khan-algebra",
       "khan-ap-calc",
-      "khan-ap-stats",
-      "mit-18.01",
-      "mit-18.02",
-      "mit-18.03",
-      "mit-18.06",
-      "openstax-algtrig",
-      "openstax-calculus",
-      "yt:3blue1brown",
-      "yt:patrickjmt",
       "yt:profleonard"
     ],
     "counted": "2026-09-24"
-  }
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
 }

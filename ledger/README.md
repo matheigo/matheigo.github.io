@@ -21,6 +21,8 @@ wikidata だけだった行を wikipedia-langlink にする。8 は積分の単�
 `PHASE2_SAME` 同じ概念 ／ `PHASE2_SECTION` 教科書の節の名前 ／ `PHASE2_TO_SYMBOLS` ／ `PHASE2_TO_PHRASES` 授業の言い回し）。
 9 は微分・極限の単元に同じ規則を当てる（`PHASE2B_SAME` ／ `PHASE2B_SECTION` ／ `PHASE2B_INSTANCE` 引数を入れただけの行・コロケーション ／
 `PHASE2B_RENAME` ／ `PHASE2B_TO_SYMBOLS` ／ `PHASE2B_TO_PHRASES`）。
+10 は数列・級数・多変数の単元に同じ規則を当て、人間が範囲外にした ③ を out-of-scope に移す（`PHASE2C_SAME` ／ `PHASE2C_SECTION` ／
+`PHASE2C_INSTANCE` ／ `PHASE2C_RENAME` ／ `PHASE2C_TO_SYMBOLS` ／ `PHASE2C_TO_PHRASES` ／ `PHASE2C_OUT_OF_SCOPE`）。寄せ先が後の単元の行なら、その行もこの単元に入る。
 
 ## 列
 
