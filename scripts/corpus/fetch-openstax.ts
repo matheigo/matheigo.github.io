@@ -9,7 +9,9 @@
  *   pnpm corpus:fetch:openstax
  *
  * Books (PLAN 15, written): Calculus Volumes 1-3, Algebra and Trigonometry,
- * Precalculus, Introductory Statistics. All are CC BY-NC-SA 4.0, read from
+ * Precalculus, Introductory Statistics, and (for the middle-school and Algebra
+ * units; DECISIONS, Phase 2 幾何・離散の単元 3) Prealgebra 2e, Elementary
+ * Algebra 2e and Intermediate Algebra 2e. All are CC BY-NC-SA 4.0, read from
  * each collection's metadata. Only counts are used - no sentence from these
  * books goes into the dictionary (STYLE.md).
  *
@@ -44,11 +46,14 @@ interface Book {
 
 const CALCULUS = { repo: "openstax/osbooks-calculus-bundle", ref: "8dbc2ce19e804924b2517b89ac72ee45be949d15", raw: "openstax-calculus/raw" };
 const ALGEBRA = { repo: "openstax/osbooks-college-algebra-bundle", ref: "463991614337632b0e02cbb6c76223cbb0d423d3", raw: "openstax-raw/college-algebra-bundle" };
+const PREALGEBRA = { repo: "openstax/osbooks-prealgebra-bundle", ref: "38cae454e644abf9f0a623e876994553881597c9", raw: "openstax-raw/prealgebra-bundle" };
 const STATS = { repo: "openstax/osbooks-introductory-statistics-bundle", ref: "1f6a35825395bb4aa2834cf1eca37512655f920c", raw: "openstax-raw/introductory-statistics-bundle" };
 
 // Order matters: corpus:count keeps the first copy of a section that two books
 // share (Algebra and Trigonometry and Precalculus reuse many modules), so the
-// broader book comes first.
+// broader book comes first. The three books added later go last, so that the
+// books counted before keep every sentence they had; Elementary and
+// Intermediate Algebra share chapters, and Elementary comes first.
 const BOOKS: Book[] = [
   { id: "openstax-calculus", slug: "calculus-volume-1", title: "OpenStax Calculus Volume 1", ...CALCULUS },
   { id: "openstax-calculus", slug: "calculus-volume-2", title: "OpenStax Calculus Volume 2", ...CALCULUS },
@@ -56,6 +61,9 @@ const BOOKS: Book[] = [
   { id: "openstax-algtrig", slug: "algebra-and-trigonometry-2e", title: "OpenStax Algebra and Trigonometry 2e", ...ALGEBRA },
   { id: "openstax-precalculus", slug: "precalculus-2e", title: "OpenStax Precalculus 2e", ...ALGEBRA },
   { id: "openstax-introstats", slug: "introductory-statistics-2e", title: "OpenStax Introductory Statistics 2e", ...STATS },
+  { id: "openstax-prealgebra", slug: "prealgebra-2e", title: "OpenStax Prealgebra 2e", ...PREALGEBRA },
+  { id: "openstax-elemalg", slug: "elementary-algebra-2e", title: "OpenStax Elementary Algebra 2e", ...PREALGEBRA },
+  { id: "openstax-intalg", slug: "intermediate-algebra-2e", title: "OpenStax Intermediate Algebra 2e", ...PREALGEBRA },
 ];
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));

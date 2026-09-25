@@ -14,7 +14,7 @@
       {
         "term": "test value",
         "register": "spoken",
-        "note": "授業の言い方（多くは Khan Academy）。話し言葉で 10 件（Khan Academy 8・patrickJMT 1・blackpenredpen 1）、書き言葉で 1 件（すべて OpenStax Algebra and Trigonometry）。"
+        "note": "授業の言い方（多くは Khan Academy）。話し言葉で 10 件（Khan Academy 8・patrickJMT 1・blackpenredpen 1）、書き言葉で 3 件（OpenStax Intermediate Algebra 2・OpenStax Algebra and Trigonometry 1）。"
       }
     ],
     "uk": null,
@@ -55,7 +55,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "書き言葉の test point 39 件はすべて OpenStax Calculus Volume 1（導関数の符号）。話し言葉は test value が 10 件（Khan Academy 8）。"
+    "書き言葉の test point は 52 件（OpenStax Calculus 39・OpenStax Elementary Algebra 12・OpenStax Intermediate Algebra 1）。OpenStax Calculus Volume 1 では導関数の符号を調べる点。話し言葉は test value が 10 件（Khan Academy 8）。"
   ],
   "related": [
     "sign-chart-inequality",
@@ -74,20 +74,22 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "test value": 10,
       "test point": 1
     },
     "written": {
-      "test point": 39,
-      "test value": 1
+      "test point": 52,
+      "test value": 3
     },
     "sources": [
       "khan-ap-calc",
       "openstax-algtrig",
       "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
       "yt:blackpenredpen",
       "yt:patrickjmt"
     ],

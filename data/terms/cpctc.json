@@ -59,7 +59,7 @@
   "pitfalls": [
     "CPCTC は三角形の合同を示したあとにしか使えない。合同を示す理由（SSS・SAS・ASA など）と混同しない。",
     "読むときは C-P-C-T-C と文字を 1 つずつ言う。",
-    "用例コーパスでは話し言葉 8 件（すべて The Organic Chemistry Tutor）、書き言葉 0 件。IM は略語を使わず、corresponding parts の形で書く（68 件）。"
+    "用例コーパスでは話し言葉 8 件（すべて The Organic Chemistry Tutor）、書き言葉 0 件。IM は略語を使わず、corresponding parts の形で書く。CK-12 Geometry は略語の CPCTC を 11 件（4.9 CPCTC ほか）、corresponding parts of congruent triangles are congruent を 2 件使う。"
   ],
   "related": [
     "congruent",
@@ -70,6 +70,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.9 CPCTC・4.4 Isosceles Triangles・4.15 ASA and AAS"
     }
   ],
   "confidence": "likely",
@@ -91,8 +97,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 CPCTC（CK-12 Geometry 4.9 CPCTC・CK-12 Geometry 4.4 Isosceles Triangles・CK-12 Geometry 4.15 ASA and AAS・計 11 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

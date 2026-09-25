@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM）では扱わない（inductive reasoning は CED・OpenStax・IM とも 0 件）。",
+  "mapping_note": null,
   "domains": [
     "proof",
     "logic"
@@ -45,7 +45,7 @@
   "pitfalls": [
     "数学的帰納法（proof by induction）は名前に「帰納」が付くが演繹的な証明であり、帰納的推論ではない。",
     "帰納的推論で得た予想は、反例（counterexample）が 1 つあれば否定される。",
-    "用例コーパスで inductive reasoning は 0 件。Levin の本では 4.5 Proof by Induction に 1 件。"
+    "用例コーパスで inductive reasoning は 0 件。CK-12 Geometry は 21 件（2.4 Reasoning Types・2.5 Inductive Reasoning from Patterns ほか）、Levin の本では 4.5 Proof by Induction に 1 件。"
   ],
   "related": [
     "deductive-reasoning",
@@ -58,6 +58,12 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "4.5 Proof by Induction"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.5 Inductive Reasoning from Patterns・2.4 Reasoning Types・2.6 Conjectures and Counterexamples"
     }
   ],
   "confidence": "likely",
@@ -74,7 +80,7 @@
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 inductive reasoning（4.5 Proof by Induction）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 inductive reasoning（CK-12 Geometry 2.5 Inductive Reasoning from Patterns・CK-12 Geometry 2.4 Reasoning Types・CK-12 Geometry 2.6 Conjectures and Counterexamples・計 21 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

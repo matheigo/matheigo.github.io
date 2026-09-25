@@ -47,7 +47,7 @@
   "pitfalls": [
     "日本の数学で言う三段論法（p ⇒ q、q ⇒ r なら p ⇒ r）は、英語では law of syllogism（論理学では hypothetical syllogism）。",
     "日本語版 Wikipedia の「三段論法」に対応する英語版の記事 Syllogism は、アリストテレスの定言三段論法（categorical syllogism）の記事で、この規則ではない。",
-    "用例コーパス・IM・Levin とも law of syllogism は 0 件。"
+    "用例コーパス・IM・Levin とも law of syllogism は 0 件。CK-12 Geometry は 2.7 Deductive Reasoning に 2 件。"
   ],
   "related": [
     "law-of-detachment",
@@ -57,6 +57,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.7 Deductive Reasoning"
     }
   ],
   "confidence": "likely",
@@ -72,8 +78,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 law of syllogism（CK-12 Geometry 2.7 Deductive Reasoning・計 2 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

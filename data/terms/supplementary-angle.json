@@ -9,7 +9,7 @@
     "term": "supplementary angles",
     "alt": [],
     "uk": null,
-    "register": "spoken"
+    "register": "both"
   },
   "pos": "noun",
   "mapping": "exact",
@@ -49,7 +49,7 @@
   "collocations": [],
   "pitfalls": [
     "日本語の「補角」は 1 つの角を指すが、英語は 2 角の関係を形容詞 supplementary で言う（The angles are supplementary.）。「40° の補角」は the supplement of 40°。",
-    "件数は形容詞 supplementary で数えた。話し言葉で 27 件（すべて The Organic Chemistry Tutor）、書き言葉で 5 件（MIT の講義ノート 3・OpenStax Algebra and Trigonometry 2）。",
+    "件数は形容詞 supplementary で数えた。話し言葉で 27 件（すべて The Organic Chemistry Tutor）、書き言葉で 39 件（OpenStax Prealgebra 19・OpenStax Elementary Algebra 15・MIT の講義ノート 3 ほか 2）。",
     "「補」の字につられて complementary（余角）と取り違えやすい。supplementary は 180°、complementary は 90°。"
   ],
   "related": [
@@ -61,6 +61,10 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
     }
   ],
   "confidence": "likely",
@@ -75,11 +79,13 @@
       "supplementary": 27
     },
     "written": {
-      "supplementary": 5
+      "supplementary": 39
     },
     "sources": [
       "mit-notes",
       "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-prealgebra",
       "yt:organicchem"
     ],
     "counted": "2026-09-25"

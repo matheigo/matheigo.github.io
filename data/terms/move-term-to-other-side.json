@@ -14,17 +14,22 @@
       {
         "term": "from both sides",
         "register": "both",
-        "note": "subtract 3 from both sides の形で。話し言葉コーパスで 249 件と最も多い。高校向けの Khan Academy（165 件）と YouTube の解説（78 件）が中心で、大学の講義（MIT OCW）では 6 件。教科書の文章でも使う（書き言葉 25 件）。"
+        "note": "subtract 3 from both sides の形で。話し言葉で 249 件と最も多い。高校向けの Khan Academy（165 件）と YouTube の解説（78 件）が中心で、大学の講義（MIT OCW）では 6 件。書き言葉で 92 件（OpenStax Prealgebra 33・OpenStax Elementary Algebra 28・OpenStax Algebra and Trigonometry 12 ほか 19）。"
       },
       {
         "term": "to both sides",
         "register": "both",
-        "note": "add 3 to both sides の形で。話し言葉で 244 件（Khan Academy 145・YouTube 91・MIT OCW 8）。書き言葉でも 26 件。"
+        "note": "add 3 to both sides の形で。話し言葉で 244 件（Khan Academy 145・YouTube 91・MIT OCW 8）。書き言葉で 92 件（OpenStax Elementary Algebra 33・OpenStax Prealgebra 19・OpenStax Intermediate Algebra 14 ほか 26）。"
       },
       {
         "term": "to the other side",
-        "register": "spoken",
-        "note": "move the 3x over to the other side ／ bring it over to the other side の形で。話し言葉で 52 件。大学の講義に寄る（MIT OCW 28 件、Khan Academy は 3 件）。教科書の文章ではまず使わない（書き言葉 1 件）。"
+        "register": "both",
+        "note": "move the 3x over to the other side ／ bring it over to the other side の形で。話し言葉で 52 件。大学の講義に寄る（MIT OCW 28 件、Khan Academy は 3 件）。書き言葉で 10 件（OpenStax Prealgebra 4・OpenStax Elementary Algebra 4・OpenStax Calculus 1 ほか 1）。"
+      },
+      {
+        "term": "isolate x",
+        "register": "written",
+        "note": "x だけを片側に残す（isolate the variable）言い方。書き言葉で 14 件（OpenStax Prealgebra 9・OpenStax Elementary Algebra 4・OpenStax Algebra and Trigonometry 1）、話し言葉で 3 件（MIT OCW 2・3Blue1Brown 1）。"
       }
     ],
     "uk": null,
@@ -66,10 +71,6 @@
     {
       "en": "get all the x's on one side",
       "ja": "x を片側に集める"
-    },
-    {
-      "en": "isolate x",
-      "ja": "x について解く（x だけにする）"
     }
   ],
   "pitfalls": [
@@ -90,7 +91,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "from both sides": 249,
@@ -99,10 +100,10 @@
       "isolate x": 3
     },
     "written": {
-      "to both sides": 26,
-      "from both sides": 25,
-      "to the other side": 1,
-      "isolate x": 1
+      "to both sides": 92,
+      "from both sides": 92,
+      "to the other side": 10,
+      "isolate x": 14
     },
     "sources": [
       "khan-algebra",
@@ -115,7 +116,10 @@
       "mit-notes",
       "openstax-algtrig",
       "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
       "openstax-introstats",
+      "openstax-prealgebra",
       "openstax-precalculus",
       "yt:3blue1brown",
       "yt:blackpenredpen",

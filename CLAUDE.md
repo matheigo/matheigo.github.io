@@ -11,7 +11,7 @@
 - pnpm corpus:fetch:ocw … MIT OCW の書き起こし(.vtt)を自動取得（公式配布・CC BY-NC-SA）
   YouTube / Khan は人間が手で実行する: `pnpm corpus:fetch:captions`（Khan 3 ソースと YouTube 6 チャンネルを一括。
   `-- <id>` で絞る）／ `./scripts/corpus/fetch-captions.sh <id> <url>`（任意の 1 URL）
-- pnpm corpus:fetch:openstax … OpenStax 6 冊の本文（CNXML）を written コーパスとして取得（CC BY-NC-SA、コミット固定）
+- pnpm corpus:fetch:openstax … OpenStax 9 冊の本文（CNXML）を written コーパスとして取得（CC BY-NC-SA、コミット固定）
 - pnpm corpus:fetch:notes … MIT OCW の講義ノート（PDF → pdftotext）を written コーパス mit-notes として取得
 - pnpm corpus:count … コーパスの重複（同じファイル・同じ文）を除いて候補表現を数える → corpus/counts.json
 - pnpm corpus:probe … 書く前に候補表現を数える。`-- --decide --file x.txt` で 1 ブロック 1 エントリの判定まで出す
@@ -35,7 +35,7 @@
    判定は 3 通り: ①3:1 以上か、首位だけが 10 件以上で主見出し ②各 10 件以上なら併記（頻度順で `en.variants` へ）③10 件未満は判断不能。
    件数の最も多いソースを抜くと別の言い方が首位になる ① は ② に下げる（1 ソース頼み。抜いて ③ になるだけなら ① のまま記録）。
    terms は語形変化をまとめ、「…」は 1〜3 語の空き。話・書とも ③ の語は、mapping near/none で全候補が話・書とも 10 件未満なら
-   「英語に決まった言い方がない」、それ以外は CED（AP Calculus ／ AP Statistics）→ OpenStax と IM（同じ段、件数の多い候補）→ Nicholson ／ Levin → 英語版 Wikipedia の記事名（数学カテゴリから 4 段以内）の呼び方を見出しにする（どちらも register は主張しない）。
+   「英語に決まった言い方がない」（参照のどれかが候補を 3 件以上使っていれば除く）、それ以外は CED（AP Calculus ／ AP Statistics）→ OpenStax・IM・CK-12（同じ段、件数の多い候補）→ Nicholson ／ Levin → 英語版 Wikipedia の記事名（数学カテゴリから 4 段以内）の呼び方を見出しにする（どちらも register は主張しない）。
    **人間レビューに回るのは、そのどれにも当たらない ③ と、コーパスの結論がエントリの register と食い違うものだけ。**
    全 2,000 語を人間が見る前提は廃止された。
 10. コーパス本文はリポジトリに入れない（`corpus/` は .gitignore）。残すのは出典 ID・件数・日付だけ。

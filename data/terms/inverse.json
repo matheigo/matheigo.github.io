@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM）では扱わない（inverse は CED・OpenStax・IM とも 0 件）。",
+  "mapping_note": null,
   "domains": [
     "logic",
     "proof"
@@ -45,7 +45,7 @@
   "collocations": [],
   "pitfalls": [
     "逆は converse、裏は inverse、対偶は contrapositive。元の命題が真でも裏は真とは限らない（上の例の裏「x ≠ 2 ならば x² ≠ 4」は x = −2 が反例）。",
-    "inverse 単独は逆関数・逆行列の意味が圧倒的に多いので、用例コーパスでは「converse, inverse」「the inverse of this statement」など論理の文脈の形だけで数えた。その形で話・書とも 0 件、Levin 1.2 Implications に 6 件で、見出しは Levin の呼び方。",
+    "inverse 単独は逆関数・逆行列の意味が圧倒的に多いので、用例コーパスでは「converse, inverse」「the inverse of this statement」など論理の文脈の形だけで数えた。その形で話・書とも 0 件、CK-12 Geometry 2.12 Converse Inverse and Contrapositive Statements に 8 件、Levin 1.2 Implications に 6 件。",
     "裏と逆は互いに対偶の関係なので、真偽が一致する。"
   ],
   "related": [
@@ -66,6 +66,12 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "1.2 Implications（Definition 1.2.6）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.12 Converse Inverse and Contrapositive Statements"
     }
   ],
   "confidence": "likely",
@@ -82,7 +88,7 @@
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 the inverse is the statement | contrapositive, and inverse | contrapositive and inverse | converse, inverse | the inverse of this statement | inverse of this statement（1.2 Implications）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 the inverse is the statement | contrapositive, and inverse | contrapositive and inverse | converse, inverse | the inverse of this statement | inverse of this statement（CK-12 Geometry 2.12 Converse Inverse and Contrapositive Statements・計 8 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

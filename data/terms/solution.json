@@ -53,7 +53,7 @@
     }
   ],
   "pitfalls": [
-    "solution だけでは「問題の解答」の意味も多いので、用例コーパスでは solution to the equation の形で数えた（話し言葉 16 件、書き言葉 14 件）。solution of the equation とも言う。",
+    "solution だけでは「問題の解答」の意味も多いので、用例コーパスでは solution to the equation の形で数えた（話し言葉 16 件、書き言葉 142 件）。solution of the equation とも言う。",
     "多項式の方程式の解は root とも言う（the roots of the quadratic）。関数の値が 0 になる x は zero。",
     "「解をもつ」は has a solution、「実数解をもたない」は has no real solutions。"
   ],
@@ -78,13 +78,14 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "solution to the equation": 16
     },
     "written": {
-      "solution to the equation": 14
+      "solution to the equation": 142,
+      "has no real solution": 3
     },
     "sources": [
       "khan-algebra",
@@ -92,6 +93,9 @@
       "mit-18.03",
       "openstax-algtrig",
       "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
       "openstax-precalculus",
       "yt:3blue1brown"
     ],

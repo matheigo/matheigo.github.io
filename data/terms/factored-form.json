@@ -13,13 +13,13 @@
       {
         "term": "intercept form",
         "register": "both",
-        "note": "x 切片が読める形という名前。話し言葉ではこちらが多いが、42 件のうち 24 件は The Organic Chemistry Tutor。話し言葉で 42 件（The Organic Chemistry Tutor 24・Khan Academy 6・Professor Leonard 5 ほか 7）、書き言葉で 13 件（すべて OpenStax Algebra and Trigonometry）。"
+        "note": "x 切片が読める形という名前。slope-intercept form（傾き・切片形）と区別して、前に slope が付かない形で数えた。話し言葉で 1 件（Professor Leonard）、書き言葉で 2 件（OpenStax Algebra and Trigonometry 1・OpenStax Elementary Algebra 1）で、factored form（話 14 件・書 48 件）よりずっと少ない。"
       }
     ]
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "見出しの「因数分解形」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書では y = a(x − α)(x − β) を「x 軸と x = α, β で交わる放物線」の式として扱う。英語ではこの形に factored form ／ intercept form という名前があり、書き言葉は factored form（34 件、うち OpenStax Algebra and Trigonometry 31 件）が多い。",
+  "mapping_note": "見出しの「因数分解形」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書では y = a(x − α)(x − β) を「x 軸と x = α, β で交わる放物線」の式として扱う。英語ではこの形に factored form ／ intercept form という名前があり、話し言葉・書き言葉とも factored form が多い（話 14 件、書 48 件のうち OpenStax Algebra and Trigonometry 31 件）。",
   "domains": [
     "functions"
   ],
@@ -85,18 +85,20 @@
   "evidence": {
     "spoken": {
       "factored form": 14,
-      "intercept form": 42
+      "!slope intercept form": 1
     },
     "written": {
-      "factored form": 34,
-      "intercept form": 13
+      "factored form": 48,
+      "!slope intercept form": 2
     },
     "sources": [
       "khan-algebra",
       "mit-18.03",
       "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
       "openstax-precalculus",
-      "yt:blackpenredpen",
       "yt:nancypi",
       "yt:organicchem",
       "yt:patrickjmt",

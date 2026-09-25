@@ -45,7 +45,7 @@
   "pitfalls": [
     "日本では推移律は大学（同値関係・順序関係）の語で、中学・高校の証明では「∠1 = ∠2、∠2 = ∠3 より」と理由に名前を付けずに書く。",
     "米国の Geometry の証明では、等式なら transitive property of equality、合同なら transitive property of congruence と対象を付けて書く。",
-    "用例コーパスでは話し言葉 2 件（MIT OCW 1、Professor Leonard 1）、書き言葉 0 件、IM 0 件。"
+    "用例コーパスでは話し言葉 2 件（MIT OCW 1、Professor Leonard 1）、書き言葉 0 件、IM 0 件、CK-12 Geometry 5 件（2.15 Proofs- Angle Pairs and Segments）。"
   ],
   "related": [
     "reflexive-property",
@@ -55,6 +55,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.15 Proofs- Angle Pairs and Segments"
     }
   ],
   "confidence": "likely",
@@ -76,8 +82,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 transitive property（CK-12 Geometry 2.15 Proofs- Angle Pairs and Segments・計 5 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

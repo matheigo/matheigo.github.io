@@ -11,7 +11,7 @@
       "leading digit"
     ],
     "uk": null,
-    "register": "spoken"
+    "register": "both"
   },
   "pos": "noun",
   "mapping": "exact",
@@ -46,7 +46,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは leading digit は 0 件。first digit は話し言葉 14 件だが、多くは位取りや数の並びの説明で、常用対数の問題ではない。"
+    "用例コーパスでは leading digit は 0 件。first digit は話し言葉 14 件（Khan Academy 11・MIT OCW 3）・書き言葉 11 件（OpenStax Prealgebra 7・OpenStax Algebra and Trigonometry 2・MIT の講義ノート 2）だが、多くは位取りや数の並びの説明で、常用対数の問題ではない。"
   ],
   "related": [
     "number-of-digits",
@@ -63,20 +63,21 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "first digit": 14
     },
     "written": {
-      "first digit": 4
+      "first digit": 11
     },
     "sources": [
       "khan-algebra",
       "khan-ap-stats",
       "mit-6.042",
       "mit-notes",
-      "openstax-algtrig"
+      "openstax-algtrig",
+      "openstax-prealgebra"
     ],
     "counted": "2026-09-25"
   }

@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "約数の個数を返す関数は divisor function（d(n)。σ₀(n) とも書く）。英語版 Wikipedia の Divisor function（number of divisors のリダイレクト先）は約数の k 乗和 σₖ(n) の族の記事で、約数の個数はその k = 0 の場合。",
   "domains": [
     "number-theory"
   ],
@@ -69,8 +69,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 2 幾何・離散の単元 3 の前の修正」の、残った ③ を人間が決めた行）。en.term は number of divisors のまま。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

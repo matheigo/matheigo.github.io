@@ -11,7 +11,7 @@
     "term": "boundary line",
     "alt": [],
     "uk": null,
-    "register": "spoken"
+    "register": "both"
   },
   "pos": "noun",
   "mapping": "exact",
@@ -51,8 +51,8 @@
     }
   ],
   "pitfalls": [
-    "日本の答案の「境界線を含む／含まない」は、英語ではグラフの実線（solid line）と点線（dashed line）の描き分けでも示す（用例コーパスで dashed line は話し言葉 11 件・書き言葉 10 件）。言葉では the boundary is (not) included。",
-    "用例コーパスの boundary line は話し言葉 12 件で、11 件が Khan Academy（Algebra）。書き言葉は 1 件。"
+    "日本の答案の「境界線を含む／含まない」は、英語ではグラフの実線（solid line）と点線（dashed line）の描き分けでも示す（用例コーパスで dashed line は話し言葉 11 件・書き言葉 15 件）。言葉では the boundary is (not) included。",
+    "用例コーパスの boundary line は話し言葉 12 件で、11 件が Khan Academy（Algebra）。書き言葉は 84 件で、82 件が OpenStax Elementary Algebra（1 次不等式のグラフ）。"
   ],
   "related": [
     "region",
@@ -65,6 +65,10 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
     }
   ],
   "confidence": "likely",
@@ -73,18 +77,20 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "boundary line": 12
     },
     "written": {
-      "boundary line": 1
+      "boundary line": 84
     },
     "sources": [
       "khan-algebra",
       "mit-18.02",
-      "openstax-algtrig"
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg"
     ],
     "counted": "2026-09-25"
   }

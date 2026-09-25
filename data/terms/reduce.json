@@ -8,17 +8,17 @@
     ]
   },
   "en": {
-    "term": "cancel the common factor",
+    "term": "simplify the fraction",
     "alt": [
-      "reduce the fraction",
-      "simplify the fraction"
+      "cancel the common factor",
+      "reduce the fraction"
     ],
     "uk": null,
     "register": "written"
   },
   "pos": "verb",
   "mapping": "near",
-  "mapping_note": "日本語の「約分」に 1 対 1 で当たる英語の名詞はない。書き言葉では cancel the common factor(s)（OpenStax Calculus・Algebra and Trigonometry）、話し言葉では reduce ／ simplify the fraction、単に cancel と言う。結果の形は in lowest terms（既約）。",
+  "mapping_note": "日本語の「約分」に 1 対 1 で当たる英語の名詞はない。書き言葉では simplify the fraction が最も多い（73 件: OpenStax Prealgebra 31・OpenStax Elementary Algebra 24・OpenStax Intermediate Algebra 18）。分数式では cancel the common factor(s) とも書く（8 件: OpenStax Calculus 4・OpenStax Algebra and Trigonometry 3 ほか 1）。話し言葉では simplify ／ reduce the fraction、単に cancel と言う（どれも 10 件未満）。結果の形は in lowest terms（既約）。",
   "domains": [
     "algebra"
   ],
@@ -72,6 +72,10 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
     }
   ],
   "confidence": "likely",
@@ -80,7 +84,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "simplify the fraction": 5,
@@ -88,11 +92,15 @@
     },
     "written": {
       "cancel the common factor": 8,
-      "reduce the fraction": 2
+      "reduce the fraction": 4,
+      "simplify the fraction": 73
     },
     "sources": [
       "openstax-algtrig",
       "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
       "openstax-precalculus",
       "yt:blackpenredpen",
       "yt:organicchem",

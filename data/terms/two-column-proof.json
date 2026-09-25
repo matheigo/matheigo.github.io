@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "見出しの「二段組みの証明」は日本の教科書に無い、本プロジェクトの訳語。日本の中学・高校の証明は文章で書き、「statements（主張）」と「reasons（理由）」を 2 列に並べる答案の形式はない。",
+  "mapping_note": "見出しの「二段組みの証明」は日本の教科書に無い、本プロジェクトの訳語。日本の中学・高校の証明は文章で書き、「statements（主張）」と「reasons（理由）」を 2 列に並べる答案の形式はない。CK-12 Geometry はこの形式を two-column proof と呼ぶ（4.15 ASA and AAS ほか、9 件）。",
   "domains": [
     "proof",
     "geometry"
@@ -56,6 +56,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.15 ASA and AAS・2.15 Proofs- Angle Pairs and Segments・3.8 Angles and Perpendicular Lines"
     }
   ],
   "confidence": "likely",
@@ -71,8 +77,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 two-column proof（CK-12 Geometry 4.15 ASA and AAS・CK-12 Geometry 2.15 Proofs- Angle Pairs and Segments・CK-12 Geometry 3.8 Angles and Perpendicular Lines・計 9 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

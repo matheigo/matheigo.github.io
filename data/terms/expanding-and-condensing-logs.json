@@ -7,10 +7,21 @@
   },
   "en": {
     "term": "expand the logarithm",
-    "alt": [
-      "condense the logarithm"
-    ],
-    "uk": null
+    "alt": [],
+    "uk": null,
+    "register": "written",
+    "variants": [
+      {
+        "term": "condense the logarithm",
+        "register": "written",
+        "note": "いくつかの対数を 1 つにまとめる向き。書き言葉で 12 件（OpenStax Intermediate Algebra 9・OpenStax Algebra and Trigonometry 3）。"
+      },
+      {
+        "term": "expand the logarithm",
+        "register": "written",
+        "note": "1 つの対数を和・差に分ける向き。書き言葉で 10 件（OpenStax Intermediate Algebra 7・OpenStax Algebra and Trigonometry 3）、話し言葉で 1 件（MIT OCW）。"
+      }
+    ]
   },
   "pos": "phrase",
   "mapping": "exact",
@@ -44,7 +55,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは expand the logarithm ／ condense the logarithm とも書き言葉 3 件ずつ（OpenStax Algebra and Trigonometry）で、決まった言い方としては少ない。見出しは規則（③ → OpenStax の呼び方）で expand the logarithm にした。"
+    "用例コーパスの書き言葉では condense the logarithm 12 件（OpenStax Intermediate Algebra 9・OpenStax Algebra and Trigonometry 3）、expand the logarithm 10 件（OpenStax Intermediate Algebra 7・OpenStax Algebra and Trigonometry 3）で、両方が 10 件以上で並ぶ。話し言葉は expand the logarithm 1 件（MIT OCW）。"
   ],
   "related": [
     "properties-of-logarithms",
@@ -54,6 +65,10 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
     }
   ],
   "confidence": "likely",
@@ -62,26 +77,20 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "expand the logarithm": 1
     },
     "written": {
-      "expand the logarithm": 3,
-      "condense the logarithm": 3
+      "expand the logarithm": 10,
+      "condense the logarithm": 12
     },
     "sources": [
       "mit-18.01",
-      "openstax-algtrig"
+      "openstax-algtrig",
+      "openstax-intalg"
     ],
     "counted": "2026-09-25"
-  },
-  "flags": [
-    {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 expand the logarithm（本文 3 件）。register は主張しない。",
-      "raised": "2026-09-25"
-    }
-  ]
+  }
 }

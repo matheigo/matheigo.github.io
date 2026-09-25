@@ -14,7 +14,7 @@
       {
         "term": "plus C",
         "register": "spoken",
-        "note": "授業では積分定数そのものを指して plus C と言うことが多い。特定のソースに偏らない。話し言葉で 324 件（Khan Academy 96・MIT OCW 77・Professor Leonard 51 ほか 100）、書き言葉では 0 件。"
+        "note": "授業では積分定数そのものを指して plus C と言うことが多い。特定のソースに偏らない。話し言葉で 324 件（Khan Academy 96・MIT OCW 77・Professor Leonard 51 ほか 100）、書き言葉では 1 件（OpenStax Prealgebra）。"
       }
     ],
     "uk": null,
@@ -87,14 +87,15 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "plus C": 324,
       "constant of integration": 28
     },
     "written": {
-      "constant of integration": 11
+      "constant of integration": 11,
+      "plus C": 1
     },
     "sources": [
       "khan-algebra",
@@ -106,6 +107,7 @@
       "mit-6.042",
       "mit-notes",
       "openstax-calculus",
+      "openstax-prealgebra",
       "yt:3blue1brown",
       "yt:blackpenredpen",
       "yt:nancypi",

@@ -11,7 +11,7 @@
     "term": "complex fraction",
     "alt": [],
     "uk": null,
-    "register": "spoken"
+    "register": "both"
   },
   "pos": "noun",
   "mapping": "exact",
@@ -60,6 +60,10 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
     }
   ],
   "confidence": "likely",
@@ -68,17 +72,20 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "complex fraction": 40
     },
     "written": {
-      "complex fraction": 5
+      "complex fraction": 56
     },
     "sources": [
       "openstax-algtrig",
       "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
       "openstax-precalculus",
       "yt:blackpenredpen",
       "yt:organicchem",

@@ -11,14 +11,14 @@
     "uk": null,
     "variants": [
       {
-        "term": "greatest common divisor",
+        "term": "GCF",
         "register": "both",
-        "note": "数論の言い方。話し言葉で 63 件（MIT OCW 62・Khan Academy 1）、書き言葉で 22 件（すべて MIT の講義ノート）。"
+        "note": "greatest common factor の略。話し言葉で 39 件（The Organic Chemistry Tutor 35・blackpenredpen 3・Professor Leonard 1）、書き言葉で 217 件（OpenStax Elementary Algebra 108・OpenStax Algebra and Trigonometry 48・OpenStax Prealgebra 40 ほか 21）。"
       },
       {
         "term": "greatest common factor",
         "register": "both",
-        "note": "代数の言い方。話し言葉で 39 件（The Organic Chemistry Tutor 23・Professor Leonard 10・patrickJMT 6）、書き言葉で 15 件（すべて OpenStax Algebra and Trigonometry）。"
+        "note": "代数の言い方。話し言葉で 39 件（The Organic Chemistry Tutor 23・Professor Leonard 10・patrickJMT 6）、書き言葉で 127 件（OpenStax Elementary Algebra 60・OpenStax Prealgebra 43・OpenStax Algebra and Trigonometry 15 ほか 9）。"
       },
       {
         "term": "GCD",
@@ -26,15 +26,15 @@
         "note": "greatest common divisor の略。話し言葉で 27 件（すべて MIT OCW）、書き言葉で 80 件（すべて MIT の講義ノート）。"
       },
       {
-        "term": "GCF",
+        "term": "greatest common divisor",
         "register": "both",
-        "note": "greatest common factor の略。話し言葉で 39 件（The Organic Chemistry Tutor 35・blackpenredpen 3・Professor Leonard 1）、書き言葉で 48 件（すべて OpenStax Algebra and Trigonometry）。"
+        "note": "数論の言い方。話し言葉で 63 件（MIT OCW 62・Khan Academy 1）、書き言葉で 22 件（すべて MIT の講義ノート）。"
       }
     ]
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語には divisor 系（greatest common divisor ／ GCD）と factor 系（greatest common factor ／ GCF）の 2 系統がある。用例コーパスでは divisor 系は MIT（講義と講義ノート）、factor 系は OpenStax Algebra and Trigonometry と The Organic Chemistry Tutor などに出る。Levin の 6.2 Introduction to Number Theory は GCD と greatest common divisor が中心で、greatest common factor も使う。factor 系は単項式・多項式の共通因数にも使い、factor out the GCF は「共通因数でくくり出す」に当たる。",
+  "mapping_note": "英語には divisor 系（greatest common divisor ／ GCD）と factor 系（greatest common factor ／ GCF）の 2 系統がある。用例コーパスでは divisor 系は MIT（講義と講義ノート）、factor 系は OpenStax（Elementary Algebra・Prealgebra・Algebra and Trigonometry ほか）と The Organic Chemistry Tutor などに出る。Levin の 6.2 Introduction to Number Theory は GCD と greatest common divisor が中心で、greatest common factor も使う。factor 系は単項式・多項式の共通因数にも使い、factor out the GCF は「共通因数でくくり出す」に当たる。",
   "domains": [
     "number-theory"
   ],
@@ -101,8 +101,8 @@
       "GCF": 39
     },
     "written": {
-      "greatest common factor": 15,
-      "GCF": 48,
+      "GCF": 217,
+      "greatest common factor": 127,
       "greatest common divisor": 22,
       "GCD": 80
     },
@@ -111,6 +111,9 @@
       "mit-6.042",
       "mit-notes",
       "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
       "yt:blackpenredpen",
       "yt:organicchem",
       "yt:patrickjmt",

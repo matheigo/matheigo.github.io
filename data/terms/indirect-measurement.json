@@ -14,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "数I の「測量」は、直接測れない高さや距離を三角比・相似で求める問題を指す。英語の surveying は土地の測量の仕事の名前で、授業の単元では indirect measurement（Geometry）や angle of elevation の問題として出てくる。英語に決まった言い方がない（indirect measurement は用例コーパス 0 件、IM 3 件）。",
+  "mapping_note": "数I の「測量」は、直接測れない高さや距離を三角比・相似で求める問題を指す。英語の surveying は土地の測量の仕事の名前で、授業の単元では indirect measurement（Geometry）や angle of elevation の問題として出てくる。CK-12 Geometry は indirect measurement と呼ぶ（7.5 Indirect Measurement・7.6 Indirect Measurement Applications ほか、8 件。用例コーパスは 0 件、IM は 3 件）。",
   "domains": [
     "geometry",
     "trigonometry"
@@ -63,6 +63,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "7.5 Indirect Measurement・7.6 Indirect Measurement Applications・4.28 Basics of Pythagorean Theorem"
     }
   ],
   "confidence": "likely",
@@ -78,8 +84,8 @@
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 indirect measurement（CK-12 Geometry 7.5 Indirect Measurement・CK-12 Geometry 7.6 Indirect Measurement Applications・CK-12 Geometry 4.28 Basics of Pythagorean Theorem・計 8 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

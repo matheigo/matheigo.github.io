@@ -6,16 +6,16 @@
     "alt": []
   },
   "en": {
-    "term": "lexicographic order",
+    "term": "alphabetical order",
     "alt": [
-      "dictionary order",
-      "alphabetical order"
+      "lexicographic order",
+      "dictionary order"
     ],
     "uk": null
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語に決まった言い方がない（用例コーパスで alphabetical order は話し言葉 3 件（MIT OCW 2・Khan Academy 1）・書き言葉 0 件、lexicographic order と dictionary order は話・書とも 0 件）。Levin の Discrete Mathematics は alphabetical order と書く（3.3・3.4・3.5 など）。英語では「辞書のように並べる」と、並べ方そのものを言う。",
+  "mapping_note": "OpenStax Prealgebra は alphabetical order と書く（1 件、語を並べる順序として）。Levin の Discrete Mathematics も alphabetical order と書く（3.3・3.5・3.4 ほか、8 件）。用例コーパスで alphabetical order は話し言葉 3 件（MIT OCW 2・Khan Academy 1）・書き言葉 1 件、lexicographic order と dictionary order は話・書とも 0 件。英語では「辞書のように並べる」と、並べ方そのものを言う。",
   "domains": [
     "combinatorics"
   ],
@@ -34,12 +34,12 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "Let's write them in lexicographic order, like a dictionary would: ABC, ACB, BAC, and so on.",
+      "en": "Let's write them in alphabetical order, like a dictionary would: ABC, ACB, BAC, and so on.",
       "ja": "辞書式順序で書き出そう。辞書と同じように ABC, ACB, BAC, … だ。",
       "register": "spoken"
     },
     {
-      "en": "All arrangements of the letters a, b, c, d, e are listed in lexicographic order. Which arrangement is 50th?",
+      "en": "All arrangements of the letters a, b, c, d, e are listed in alphabetical order. Which arrangement is 50th?",
       "ja": "a, b, c, d, e の 5 文字を並べたものすべてを辞書式順序に並べる。50 番目は何か。",
       "register": "written"
     }
@@ -58,6 +58,16 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.3 Non-Disjoint Outcomes・3.5 Counting Multisets・3.4 Combinations and Permutations"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
     }
   ],
   "confidence": "likely",
@@ -71,16 +81,20 @@
     "spoken": {
       "alphabetical order": 3
     },
+    "written": {
+      "alphabetical order": 1
+    },
     "sources": [
       "khan-algebra",
-      "mit-6.042"
+      "mit-6.042",
+      "openstax-prealgebra"
     ],
     "counted": "2026-09-25"
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 3 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 alphabetical order（本文 1 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

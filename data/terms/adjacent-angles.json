@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語に決まった言い方がない（用例コーパスで adjacent angles は話し言葉 1 件、書き言葉 0 件）。見出しの「隣接角」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書はこの 2 つの角の関係に名前をつけない。英語の adjacent angles は、頂点と 1 辺を共有し、内部が重ならない 2 つの角を指す。",
+  "mapping_note": "CK-12 Geometry は adjacent angles と呼ぶ（1.13 Angle Properties and Theorems ほか、15 件）。IM も Grade 7 の glossary の見出しにしている（レッスンで 7 件）。用例コーパスでは話し言葉 1 件、書き言葉 0 件。見出しの「隣接角」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書はこの 2 つの角の関係に名前をつけない。英語の adjacent angles は、頂点と 1 辺を共有し、内部が重ならない 2 つの角を指す。",
   "domains": [
     "geometry"
   ],
@@ -60,6 +60,12 @@
       "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7)",
       "url": "https://im.kendallhunt.com/MS/students/2/index.html",
       "note": "Grade 7 glossary・Grade 7 7.2 Adjacent Angles・Grade 7 7.1 Relationships of Angles"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.13 Angle Properties and Theorems・1.15 Supplementary Angles・3.1 Line Types"
     }
   ],
   "confidence": "likely",
@@ -81,7 +87,7 @@
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 adjacent angles（Grade 7 glossary・Grade 7 7.2 Adjacent Angles・Grade 7 7.1 Relationships of Angles・計 16 件）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 adjacent angles（CK-12 Geometry 1.13 Angle Properties and Theorems・CK-12 Geometry 1.15 Supplementary Angles・CK-12 Geometry 3.1 Line Types・計 15 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

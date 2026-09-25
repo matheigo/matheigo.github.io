@@ -14,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語に決まった言い方がない（用例コーパスで ratio of the areas は話し言葉 1 件・書き言葉 2 件）。英語では「面積比」を用語として立てず、If two figures are similar with scale factor k, the ratio of the areas is k². のように事実を文で述べる。相似比に当たる語は scale factor。",
+  "mapping_note": "CK-12 Geometry は ratio of the areas と呼ぶ（5.22 Area and Perimeter of Similar Polygons ほか、21 件）。用例コーパスでは話し言葉 1 件・書き言葉 2 件。英語では「面積比」を用語として立てず、If two figures are similar with scale factor k, the ratio of the areas is k². のように事実を文で述べる。相似比に当たる語は scale factor。",
   "domains": [
     "geometry"
   ],
@@ -56,6 +56,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "5.22 Area and Perimeter of Similar Polygons・8.8 Translation Applications in Circle Similarity"
     }
   ],
   "confidence": "likely",
@@ -81,8 +87,8 @@
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 1 件 ／ 書 2 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは CK-12 の呼び方 ratio of the areas（CK-12 Geometry 5.22 Area and Perimeter of Similar Polygons・CK-12 Geometry 8.8 Translation Applications in Circle Similarity・計 21 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

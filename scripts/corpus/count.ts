@@ -61,7 +61,7 @@ export interface EntryCounts {
   sources: string[];
   /** True when every spoken hit came from auto captions (weak evidence for symbols). */
   autoOnly: boolean;
-  /** terms: what the CEDs, OpenStax, IM, Nicholson, Levin and Wikipedia call it, for the ③ fallback (lib.ts settleUndecided). */
+  /** terms: what the CEDs, OpenStax, IM, CK-12, Nicholson, Levin and Wikipedia call it, for the ③ fallback (lib.ts settleUndecided). */
   reference?: ReferenceHits;
 }
 
@@ -146,10 +146,11 @@ function main() {
   const entries: EntryCounts[] = [];
   const hits: ContextHit[] = [];
 
-  // References for the ③ fallback: the CEDs, OpenStax (body and section titles) and IM, Nicholson and Levin,
+  // References for the ③ fallback: the CEDs, OpenStax (body and section titles), IM and CK-12, Nicholson and Levin,
   // and the English Wikipedia article.
   const refs = loadReferences();
   if (refs.missing.length) console.log(`  references missing (python3 scripts/ledger/refetch.py refs): ${refs.missing.join(", ")}`);
+  console.log(`  references: repeated sentences removed from IM ${refs.deduped.im}, CK-12 ${refs.deduped.ck12}`);
   const openstax = docs.filter((d) => d.id.startsWith("openstax-")).map((d) => d.text);
   const titles = openstaxTitles();
   const wikipedia = wikipediaNames(new Set(Object.keys(WIKIPEDIA_NOT_SAME)));

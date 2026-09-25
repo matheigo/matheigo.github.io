@@ -13,18 +13,18 @@
       {
         "term": "real solution",
         "register": "both",
-        "note": "話し言葉で多い。話し言葉で 34 件（MIT OCW 18・The Organic Chemistry Tutor 8・patrickJMT 5 ほか 3）、書き言葉で 15 件（OpenStax Algebra and Trigonometry 7・MIT の講義ノート 6・OpenStax Calculus 2）。"
+        "note": "話し言葉・書き言葉とも多い。話し言葉で 34 件（MIT OCW 18・The Organic Chemistry Tutor 8・patrickJMT 5 ほか 3）、書き言葉で 73 件（OpenStax Elementary Algebra 37・OpenStax Intermediate Algebra 21・OpenStax Algebra and Trigonometry 7 ほか 8）。"
       },
       {
         "term": "real root",
         "register": "both",
-        "note": "書き言葉で多い。話し言葉で 15 件（Khan Academy 6・patrickJMT 5・MIT OCW 3 ほか 1）、書き言葉で 36 件（OpenStax Calculus 21・OpenStax Algebra and Trigonometry 13・MIT の講義ノート 2）。"
+        "note": "書き言葉では OpenStax Calculus に多い。話し言葉で 15 件（Khan Academy 6・patrickJMT 5・MIT OCW 3 ほか 1）、書き言葉で 36 件（OpenStax Calculus 21・OpenStax Algebra and Trigonometry 13・MIT の講義ノート 2）。"
       }
     ]
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本語の「実数解」1 語に、英語では real solution（方程式の解として）と real root（多項式の根として）の 2 つが当たる。用例コーパスでは話し言葉は real solution（34 件対 15 件）、書き言葉は real root（36 件対 15 件）が多く、どちらも各 10 件以上なので併記した。",
+  "mapping_note": "日本語の「実数解」1 語に、英語では real solution（方程式の解として）と real root（多項式の根として）の 2 つが当たる。用例コーパスでは話し言葉（34 件対 15 件）も書き言葉（73 件対 36 件）も real solution が多いが、どちらも 3 倍に届かず各 10 件以上なので併記した。",
   "domains": [
     "functions"
   ],
@@ -98,7 +98,7 @@
       "real solution": 34
     },
     "written": {
-      "real solution": 15,
+      "real solution": 73,
       "real root": 36
     },
     "sources": [
@@ -108,6 +108,8 @@
       "mit-notes",
       "openstax-algtrig",
       "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
       "yt:3blue1brown",
       "yt:blackpenredpen",
       "yt:organicchem",

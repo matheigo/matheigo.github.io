@@ -53,16 +53,12 @@
       "register": "written"
     }
   ],
-  "collocations": [
-    {
-      "en": "the remainder is zero",
-      "ja": "余りは 0"
-    }
-  ],
+  "collocations": [],
   "pitfalls": [
     "「〜で割ったときの余り」は the remainder when … is divided by …。",
     "remainder だけではテイラーの剰余項（the remainder of a Taylor polynomial）も多いので、用例コーパスでは the remainder is の形で数えた。それでも Khan Academy の AP Calculus では剰余項の意味が混ざる。",
-    "数A の合同式では、余りを剰余とも言う。a ≡ b (mod n) は a と b を n で割った余りが等しいこと（modulus）。"
+    "数A の合同式では、余りを剰余とも言う。a ≡ b (mod n) は a と b を n で割った余りが等しいこと（modulus）。",
+    "「余りは 0」は the remainder is zero（書き言葉で 11 件、話し言葉で 4 件）。見出しの形 the remainder is を中に含むので、候補表現には数えない。"
   ],
   "related": [
     "remainder-theorem",
@@ -85,12 +81,10 @@
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "the remainder is": 19,
-      "the remainder is zero": 4
+      "the remainder is": 19
     },
     "written": {
-      "the remainder is": 22,
-      "the remainder is zero": 9
+      "the remainder is": 32
     },
     "sources": [
       "khan-algebra",
@@ -100,6 +94,8 @@
       "mit-notes",
       "openstax-algtrig",
       "openstax-calculus",
+      "openstax-intalg",
+      "openstax-prealgebra",
       "yt:3blue1brown",
       "yt:organicchem",
       "yt:profleonard"

@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（excenter は CED・OpenStax・IM・CK-12 とも 0 件。用例コーパスでも 0 件）。",
   "domains": [
     "geometry"
   ],
@@ -69,8 +69,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 2 幾何・離散の単元 3 の前の修正」の、残った ③ を人間が決めた行）。en.term は excenter のまま。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

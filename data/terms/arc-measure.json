@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "見出しの「弧の度数」は日本の教科書に無い、本プロジェクトの訳語。日本では弧の大きさを中心角で言い、弧そのものに度数を付けない。米国の Geometry では弧 AB の度数を、AB の上に弧の記号を付けた記号に m を添えて書き、中心角と同じ度数で表す（長さの arc length とは別）。 英語に決まった言い方がない（用例コーパスでは候補の合計が話し言葉 1 件・書き言葉 1 件）。",
+  "mapping_note": "見出しの「弧の度数」は日本の教科書に無い、本プロジェクトの訳語。日本では弧の大きさを中心角で言い、弧そのものに度数を付けない。米国の Geometry では弧 AB の度数を、AB の上に弧の記号を付けた記号に m を添えて書き、中心角と同じ度数で表す（長さの arc length とは別）。CK-12 Geometry は measure of the arc と呼ぶ（6.9 Arcs in Circles ほか、5 件）。",
   "domains": [
     "geometry"
   ],
@@ -62,6 +62,12 @@
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
       "note": "7.2 Inscribed Angles・7.5・7.8 Arcs and Sectors（4 件）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.9 Arcs in Circles・6.16 Angles On and Inside a Circle・6.17 Angles Outside a Circle"
     }
   ],
   "confidence": "likely",
@@ -86,8 +92,8 @@
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 1 件 ／ 書 1 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは CK-12 の呼び方 measure of the arc（CK-12 Geometry 6.9 Arcs in Circles・CK-12 Geometry 6.16 Angles On and Inside a Circle・CK-12 Geometry 6.17 Angles Outside a Circle・計 5 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

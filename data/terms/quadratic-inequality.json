@@ -9,7 +9,7 @@
     "term": "quadratic inequality",
     "alt": [],
     "uk": null,
-    "register": "spoken"
+    "register": "both"
   },
   "pos": "noun",
   "mapping": "exact",
@@ -51,7 +51,7 @@
   "pitfalls": [
     "日本の答案は −2 < x < 3 のように不等式で書くが、英語の答案では区間記法 (−2, 3) で書くこともある。",
     "「x < −2, 2 < x」の読点は「または」の意味。英語では or を書く（x < −2 or x > 2）。",
-    "用例コーパスでは話し言葉 10 件（patrickJMT 6・NancyPi 4）、書き言葉 0 件で、書き言葉の判定はできていない。"
+    "用例コーパスでは話し言葉 10 件（patrickJMT 6・NancyPi 4）、書き言葉 28 件（すべて OpenStax Intermediate Algebra）。"
   ],
   "related": [
     "interval",
@@ -65,6 +65,10 @@
       "type": "wikipedia-langlink",
       "ja": "不等式",
       "en": "Inequality (mathematics)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
     }
   ],
   "confidence": "likely",
@@ -78,7 +82,11 @@
     "spoken": {
       "quadratic inequality": 10
     },
+    "written": {
+      "quadratic inequality": 28
+    },
     "sources": [
+      "openstax-intalg",
       "yt:nancypi",
       "yt:patrickjmt"
     ],

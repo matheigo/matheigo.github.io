@@ -45,7 +45,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスで deductive reasoning は話し言葉 2 件（Khan Academy）、書き言葉 0 件。IM にも出てこない。",
+    "用例コーパスで deductive reasoning は話し言葉 2 件（Khan Academy）、書き言葉 0 件。IM にも出てこない。CK-12 Geometry では 2.4 Reasoning Types・2.7 Deductive Reasoning に 17 件。",
     "数学的帰納法（proof by induction）は、名前に反して演繹的推論による証明である。",
     "law of detachment と law of syllogism は、演繹的推論の代表的な形に付いた名前。"
   ],
@@ -58,6 +58,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.7 Deductive Reasoning・2.4 Reasoning Types"
     }
   ],
   "confidence": "likely",
@@ -79,8 +85,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 deductive reasoning（CK-12 Geometry 2.7 Deductive Reasoning・CK-12 Geometry 2.4 Reasoning Types・計 17 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

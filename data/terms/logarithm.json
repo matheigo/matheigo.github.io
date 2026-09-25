@@ -14,13 +14,13 @@
     "variants": [
       {
         "term": "log",
-        "register": "spoken",
-        "note": "話し言葉の短い言い方（the log of 8 base 2）。the log of の形で数えた。話し言葉で 62 件（MIT OCW 34・3Blue1Brown 22・Khan Academy 4 ほか 2）、書き言葉で 11 件（すべて OpenStax Algebra and Trigonometry）。"
+        "register": "both",
+        "note": "短い言い方（the log of 8 base 2）。the log of の形で数えた。話し言葉で 62 件（MIT OCW 34・3Blue1Brown 22・Khan Academy 4 ほか 2）、書き言葉で 26 件（OpenStax Intermediate Algebra 15・OpenStax Algebra and Trigonometry 11）。"
       },
       {
         "term": "logarithm",
         "register": "both",
-        "note": "the logarithm of の形で数えた。話し言葉で 36 件（MIT OCW 21・Khan Academy 7・patrickJMT 4 ほか 4）、書き言葉で 35 件（すべて OpenStax Algebra and Trigonometry）。"
+        "note": "the logarithm of の形で数えた。話し言葉で 36 件（MIT OCW 21・Khan Academy 7・patrickJMT 4 ほか 4）、書き言葉で 41 件（OpenStax Algebra and Trigonometry 35・OpenStax Intermediate Algebra 6）。"
       }
     ],
     "uk": null,
@@ -79,6 +79,10 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
     }
   ],
   "confidence": "likely",
@@ -87,15 +91,15 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "the log of": 62,
       "the logarithm of": 36
     },
     "written": {
-      "the logarithm of": 35,
-      "the log of": 11
+      "the logarithm of": 41,
+      "the log of": 26
     },
     "sources": [
       "khan-algebra",
@@ -104,6 +108,7 @@
       "mit-18.03",
       "mit-6.042",
       "openstax-algtrig",
+      "openstax-intalg",
       "yt:3blue1brown",
       "yt:nancypi",
       "yt:patrickjmt",

@@ -10,12 +10,26 @@
   },
   "en": {
     "term": "long division",
-    "alt": [
-      "polynomial division",
-      "dividing polynomials"
-    ],
+    "alt": [],
     "uk": null,
-    "register": "both"
+    "register": "both",
+    "variants": [
+      {
+        "term": "long division",
+        "register": "both",
+        "note": "話し言葉で 116 件（Khan Academy 41・Professor Leonard 26・MIT OCW 20 ほか 29）、書き言葉で 68 件（OpenStax Algebra and Trigonometry 28・OpenStax Calculus 12・OpenStax Intermediate Algebra 9 ほか 19）。"
+      },
+      {
+        "term": "dividing polynomials",
+        "register": "written",
+        "note": "節の名前や指示の言い方（Dividing Polynomials）。書き言葉で 38 件（OpenStax Algebra and Trigonometry 15・OpenStax Intermediate Algebra 15・OpenStax Elementary Algebra 7 ほか 1）、話し言葉で 5 件。"
+      },
+      {
+        "term": "polynomial division",
+        "register": "written",
+        "note": "書き言葉で 10 件（OpenStax Algebra and Trigonometry 8・OpenStax Prealgebra 2）、話し言葉で 0 件。"
+      }
+    ]
   },
   "pos": "noun",
   "mapping": "near",
@@ -71,16 +85,16 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "long division": 116,
       "dividing polynomials": 5
     },
     "written": {
-      "long division": 46,
-      "polynomial division": 8,
-      "dividing polynomials": 15
+      "long division": 68,
+      "dividing polynomials": 38,
+      "polynomial division": 10
     },
     "sources": [
       "khan-algebra",
@@ -90,6 +104,9 @@
       "mit-notes",
       "openstax-algtrig",
       "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
       "yt:3blue1brown",
       "yt:nancypi",
       "yt:organicchem",

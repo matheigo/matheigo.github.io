@@ -11,8 +11,8 @@
     "variants": [
       {
         "term": "complex solution",
-        "register": "spoken",
-        "note": "話し言葉で 31 件（MIT OCW 28・Professor Leonard 1・patrickJMT 1 ほか 1）、書き言葉で 7 件（すべて OpenStax Algebra and Trigonometry）。"
+        "register": "both",
+        "note": "話し言葉で 31 件（MIT OCW 28・Professor Leonard 1・patrickJMT 1 ほか 1）、書き言葉で 17 件（OpenStax Intermediate Algebra 10・OpenStax Algebra and Trigonometry 7）。書き言葉はこれだけが 10 件以上。"
       },
       {
         "term": "complex root",
@@ -26,11 +26,11 @@
       }
     ],
     "uk": null,
-    "register": "spoken"
+    "register": "both"
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語の complex solution は、文脈によって実数解を含む複素数の解全体を指すことがある。日本の「虚数解」（実数でない解）をはっきり言うときは nonreal (complex) solution、imaginary solution。OpenStax Algebra and Trigonometry は complex solutions と書く。",
+  "mapping_note": "英語の complex solution は、文脈によって実数解を含む複素数の解全体を指すことがある。日本の「虚数解」（実数でない解）をはっきり言うときは nonreal (complex) solution、imaginary solution。OpenStax Algebra and Trigonometry と Intermediate Algebra は complex solutions と書く。",
   "domains": [
     "algebra"
   ],
@@ -66,7 +66,7 @@
     }
   ],
   "pitfalls": [
-    "用例コーパスの話し言葉で complex solution 31 件のうち 28 件は MIT 18.03（微分方程式の特性方程式）。書き言葉は complex solution 7 件・complex root 6 件で決まらない。",
+    "用例コーパスの話し言葉で complex solution 31 件のうち 28 件は MIT 18.03（微分方程式の特性方程式）。書き言葉は complex solution 17 件（OpenStax Intermediate Algebra 10・OpenStax Algebra and Trigonometry 7）、complex root 6 件。",
     "「実数解と虚数解」は real and nonreal solutions（real and complex solutions）。"
   ],
   "related": [
@@ -79,6 +79,10 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
     }
   ],
   "confidence": "likely",
@@ -87,7 +91,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "complex root": 22,
@@ -95,13 +99,14 @@
       "imaginary solution": 17
     },
     "written": {
-      "complex solution": 7,
+      "complex solution": 17,
       "complex root": 6
     },
     "sources": [
       "mit-18.03",
       "mit-notes",
       "openstax-algtrig",
+      "openstax-intalg",
       "yt:3blue1brown",
       "yt:organicchem",
       "yt:patrickjmt",

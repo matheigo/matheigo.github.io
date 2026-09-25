@@ -54,7 +54,7 @@
     }
   ],
   "pitfalls": [
-    "用例コーパスには幾何の教科書が入っていないので、chord は話し言葉 3 件・書き言葉 1 件しかない。IM Geometry では glossary の見出しで、レッスン（7.1・7.2 ほか）に 45 件出てくる。",
+    "用例コーパスには幾何の教科書が入っていないので、chord は話し言葉 3 件・書き言葉 1 件しかない。IM Geometry では glossary の見出しで、レッスン（7.1・7.2 ほか）に 39 件、CK-12 Geometry では 89 件（6.13 Segments from Chords・6.12 Chords and Central Angle Arcs ほか）出てくる。",
     "綴りは chord（h が入る）。cord（ひも）と書き間違えない。弧は arc で、弦とは別の語。"
   ],
   "related": [
@@ -79,6 +79,12 @@
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
       "note": "Geometry glossary・Geometry 7.1 Lines, Angles, and Curves・Geometry 7.2 Inscribed Angles"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.12 Chords and Central Angle Arcs・6.13 Segments from Chords・6.16 Angles On and Inside a Circle"
     }
   ],
   "confidence": "likely",
@@ -104,7 +110,7 @@
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは IM の呼び方 chord（Geometry glossary・Geometry 7.1 Lines, Angles, and Curves・Geometry 7.2 Inscribed Angles・計 45 件）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは CK-12 の呼び方 chord（CK-12 Geometry 6.12 Chords and Central Angle Arcs・CK-12 Geometry 6.13 Segments from Chords・CK-12 Geometry 6.16 Angles On and Inside a Circle・計 89 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

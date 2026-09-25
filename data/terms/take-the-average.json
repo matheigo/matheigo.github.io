@@ -7,9 +7,7 @@
   },
   "en": {
     "term": "calculate the mean",
-    "alt": [
-      "find the mean"
-    ],
+    "alt": [],
     "uk": null,
     "variants": [
       {
@@ -18,9 +16,19 @@
         "note": "take the average of の形で数えた。話し言葉で 17 件（MIT OCW 7・Khan Academy 7・3Blue1Brown 2 ほか 1）、書き言葉で 2 件（OpenStax Introductory Statistics 1・MIT の講義ノート 1）。"
       },
       {
+        "term": "find the mean",
+        "register": "both",
+        "note": "話し言葉で 10 件（Khan Academy 4・The Organic Chemistry Tutor 3・Professor Leonard 2 ほか 1）、書き言葉で 41 件（OpenStax Prealgebra 24・OpenStax Introductory Statistics 17）。"
+      },
+      {
+        "term": "calculate the mean",
+        "register": "both",
+        "note": "話し言葉で 10 件（Khan Academy 7・The Organic Chemistry Tutor 3）、書き言葉で 32 件（OpenStax Introductory Statistics 27・OpenStax Prealgebra 5）。"
+      },
+      {
         "term": "find the average",
         "register": "spoken",
-        "note": "find the average of の形で数えた（find the average rate of change ／ value を除くため）。話し言葉で 6 件（The Organic Chemistry Tutor 3・3Blue1Brown 2・Khan Academy 1）、書き言葉で 3 件（MIT の講義ノート 2・OpenStax Calculus 1）。"
+        "note": "find the average of の形で数えた（find the average rate of change ／ value を除くため）。話し言葉で 6 件（The Organic Chemistry Tutor 3・3Blue1Brown 2・Khan Academy 1）、書き言葉で 7 件（OpenStax Intermediate Algebra 3・MIT の講義ノート 2・OpenStax Calculus 1 ほか 1）。"
       }
     ],
     "register": "both"
@@ -57,7 +65,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは、話し言葉は take the average（17 件）・calculate the mean（10 件）・find the mean（10 件）が並び、書き言葉は calculate the mean（27 件）と find the mean（17 件）が並ぶ（書き言葉はすべて OpenStax Introductory Statistics）。",
+    "用例コーパスでは、話し言葉は take the average（17 件）・calculate the mean（10 件）・find the mean（10 件）が並び、書き言葉は find the mean（41 件）と calculate the mean（32 件）が並ぶ（書き言葉は OpenStax Prealgebra と OpenStax Introductory Statistics）。",
     "find the average rate of change（平均変化率を求める）や find the average value（関数の平均値を求める）は別の意味。"
   ],
   "related": [
@@ -84,9 +92,9 @@
       "find the mean": 10
     },
     "written": {
-      "find the average of": 3,
-      "calculate the mean": 27,
-      "find the mean": 17,
+      "find the average of": 7,
+      "calculate the mean": 32,
+      "find the mean": 41,
       "take the average of": 2
     },
     "sources": [
@@ -98,7 +106,9 @@
       "mit-6.042",
       "mit-notes",
       "openstax-calculus",
+      "openstax-intalg",
       "openstax-introstats",
+      "openstax-prealgebra",
       "yt:3blue1brown",
       "yt:organicchem",
       "yt:profleonard"

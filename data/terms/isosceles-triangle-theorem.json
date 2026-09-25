@@ -2,16 +2,16 @@
   "id": "isosceles-triangle-theorem",
   "ja": {
     "term": "二等辺三角形の定理",
-    "reading": "にとうへんさんかっけいのていり",
+    "reading": "にとうへんさんかくけいのていり",
     "alt": [
       "二等辺三角形の底角は等しい",
       "底角定理"
     ]
   },
   "en": {
-    "term": "isosceles triangle theorem",
+    "term": "base angles theorem",
     "alt": [
-      "base angles theorem"
+      "isosceles triangle theorem"
     ],
     "uk": null
   },
@@ -36,7 +36,7 @@
   "spoken_en": "if AB equals AC, then angle B equals angle C",
   "examples": [
     {
-      "en": "AB equals AC, so by the isosceles triangle theorem the base angles are equal. That leaves 140 degrees to split, so each one is 70.",
+      "en": "AB equals AC, so by the base angles theorem the base angles are equal. That leaves 140 degrees to split, so each one is 70.",
       "ja": "AB = AC だから、二等辺三角形の定理より底角は等しい。残りの 140° を半分に分けて、それぞれ 70° だ。",
       "register": "spoken"
     },
@@ -48,9 +48,9 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "逆（2 つの角が等しければ二等辺三角形）は converse of the isosceles triangle theorem（converse of the base angles theorem）と呼ぶ。",
+    "逆（2 つの角が等しければ二等辺三角形）は converse of the base angles theorem（converse of the isosceles triangle theorem）と呼ぶ。",
     "問題文の m∠B は the measure of angle B（∠B の大きさ）と読む。英語の問題文は角 ∠B とその大きさ m∠B を書き分ける。",
-    "用例コーパスでは 0 件、IM Geometry でも isosceles triangle theorem は 1 件（2.8）だけで、base angles の形で書くことが多い（10 件）。"
+    "用例コーパスでは 0 件。CK-12 Geometry は base angles theorem が 10 件（4.4 Isosceles Triangles・4.5 Equilateral Triangles）、isosceles triangle theorem が 7 件（4.4・5.16 Kites）。IM Geometry の isosceles triangle theorem は 1 件（2.8）。"
   ],
   "related": [
     "isosceles-triangle",
@@ -64,6 +64,12 @@
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
       "note": "2.8 The Perpendicular Bisector Theorem（1 件）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.4 Isosceles Triangles・4.5 Equilateral Triangles"
     }
   ],
   "confidence": "likely",
@@ -80,7 +86,7 @@
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 isosceles triangle theorem（Geometry 2.8 The Perpendicular Bisector Theorem・計 1 件）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 base angles theorem（CK-12 Geometry 4.4 Isosceles Triangles・CK-12 Geometry 4.5 Equilateral Triangles・計 10 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

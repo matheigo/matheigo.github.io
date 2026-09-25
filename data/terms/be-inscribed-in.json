@@ -49,7 +49,7 @@
   "pitfalls": [
     "向きは日本語と同じ。A is inscribed in B は「A が B に内接する」で、A が内側。",
     "「2 円が内接する」は internally tangent で、inscribed は使わない。",
-    "用例コーパスでは inscribed in は話し言葉 3 件・書き言葉 8 件（OpenStax Calculus 5・OpenStax Algebra and Trigonometry 3）と少ない。IM Geometry は glossary の見出し（inscribed）とレッスンで 36 件使う。"
+    "用例コーパスでは inscribed in は話し言葉 3 件・書き言葉 8 件（OpenStax Calculus 5・OpenStax Algebra and Trigonometry 3）と少ない。IM Geometry は glossary の見出し（inscribed）にしてレッスンで 26 件、CK-12 Geometry は 31 件（6.15 Inscribed Quadrilaterals in Circles ほか）使う。"
   ],
   "related": [
     "inscribed-circle",
@@ -72,6 +72,12 @@
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
       "note": "Geometry glossary・Geometry 1.8 Using Technology for Constructions・Geometry 4.10 Solving Problems with Trigonometry"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.15 Inscribed Quadrilaterals in Circles・5.23 Construct Regular Polygons・6.18 Tangent Lines"
     }
   ],
   "confidence": "likely",
@@ -100,7 +106,7 @@
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは IM の呼び方 inscribed in（Geometry glossary・Geometry 1.8 Using Technology for Constructions・Geometry 4.10 Solving Problems with Trigonometry・計 36 件）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは CK-12 の呼び方 inscribed in（CK-12 Geometry 6.15 Inscribed Quadrilaterals in Circles・CK-12 Geometry 5.23 Construct Regular Polygons・CK-12 Geometry 6.18 Tangent Lines・計 31 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

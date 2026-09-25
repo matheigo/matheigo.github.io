@@ -43,7 +43,7 @@
   "collocations": [],
   "pitfalls": [
     "線形代数で similarity transformation と言うと、行列 A を P⁻¹AP に変えること（相似な行列）を指し、図形の相似変換とは別物。",
-    "用例コーパスでは similarity transformation は 0 件。IM では Grade 8 の 2.6 Similarity に 2 件。"
+    "用例コーパスでは similarity transformation は 0 件。IM では Grade 8 の 2.6 Similarity に 2 件。CK-12 Geometry では 8 件（8.8 Translation Applications in Circle Similarity・7.9 SAS Similarity）で、見出しはこれによる。"
   ],
   "related": [
     "dilation",
@@ -57,6 +57,12 @@
       "title": "Illustrative Mathematics, IM 6–8 Math (Grade 8)",
       "url": "https://im.kendallhunt.com/MS/students/3/index.html",
       "note": "2.6 Similarity（2 件）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "8.8 Translation Applications in Circle Similarity・7.9 SAS Similarity"
     }
   ],
   "confidence": "likely",
@@ -73,7 +79,7 @@
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 similarity transformation（Grade 8 2.6 Similarity・計 2 件）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 similarity transformation（CK-12 Geometry 8.8 Translation Applications in Circle Similarity・CK-12 Geometry 7.9 SAS Similarity・計 8 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

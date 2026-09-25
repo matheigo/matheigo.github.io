@@ -30,7 +30,7 @@
  *   - mapping near / none and fewer than 10 hits in each register: English has
  *     no set way to say it (corpus-no-fixed-expression). Not for the human
  *   - otherwise the headword is what the CEDs (AP Calculus / AP Statistics),
- *     failing that OpenStax or IM (one tier), failing that Nicholson / Levin
+ *     failing that OpenStax, IM or CK-12 (one tier), failing that Nicholson / Levin
  *     call it, failing that the English Wikipedia article's name
  *     (corpus-reference-fallback). No register is claimed
  *
@@ -161,10 +161,10 @@ const PROJECT_TRANSLATION = "本プロジェクトの訳語";
 
 /**
  * Rule 2 past the high-school references (DECISIONS, Phase 2 幾何・離散の単元
- * 2): a word no candidate of which occurs in the CEDs, OpenStax or IM says so
- * in mapping_note, with the counts.
+ * 2; CK-12 since 単元 3): a word no candidate of which occurs in the CEDs,
+ * OpenStax, IM or CK-12 says so in mapping_note, with the counts.
  */
-const NOT_IN_HIGH_SCHOOL = "米国の高校課程（CED・OpenStax・IM）では扱わない";
+const NOT_IN_HIGH_SCHOOL = "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない";
 
 const HUMAN_SETTLED = "corpus-human-settled";
 
@@ -194,6 +194,7 @@ function describeSettled(s: Settled): string {
     if (s.by === "ced-stats") return `AP Statistics の CED の呼び方 ${s.head}（${s.where.map((w) => (/^\d/.test(w) ? `topic ${w}` : w)).join("・")}）`;
     if (s.by === "openstax") return `OpenStax の呼び方 ${s.head}（${s.where.slice(0, 3).join("・")}）`;
     if (s.by === "im") return `IM の呼び方 ${s.head}（${[...s.where.slice(0, -1).slice(0, 3), s.where[s.where.length - 1]].join("・")}）`;
+    if (s.by === "ck12") return `CK-12 の呼び方 ${s.head}（${[...s.where.slice(0, -1).slice(0, 3), s.where[s.where.length - 1]].join("・")}）`;
     if (s.by === "wikipedia") return `Wikipedia の記事名 ${s.head}（英語版「${s.where[0]}」、${s.where[1]}）`;
     return `${s.by === "levin" ? "Levin" : "Nicholson"} の呼び方 ${s.head}（${s.where.slice(0, 3).join("・")}）`;
   }

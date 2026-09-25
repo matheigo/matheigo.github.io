@@ -58,6 +58,9 @@ const PLANNED: Omit<ManifestEntry, "file">[] = [
   { id: "openstax-precalculus", register: "written", auto: false, title: "OpenStax Precalculus 2e", license: "CC BY-NC-SA 4.0" },
   { id: "openstax-algtrig", register: "written", auto: false, title: "OpenStax Algebra and Trigonometry 2e", license: "CC BY-NC-SA 4.0" },
   { id: "openstax-introstats", register: "written", auto: false, title: "OpenStax Introductory Statistics 2e", license: "CC BY-NC-SA 4.0" },
+  { id: "openstax-prealgebra", register: "written", auto: false, title: "OpenStax Prealgebra 2e", license: "CC BY-NC-SA 4.0" },
+  { id: "openstax-elemalg", register: "written", auto: false, title: "OpenStax Elementary Algebra 2e", license: "CC BY-NC-SA 4.0" },
+  { id: "openstax-intalg", register: "written", auto: false, title: "OpenStax Intermediate Algebra 2e", license: "CC BY-NC-SA 4.0" },
   { id: "mit-notes", register: "written", auto: false, title: "MIT OCW lecture notes", license: "CC BY-NC-SA" },
 ];
 

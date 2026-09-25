@@ -7,11 +7,21 @@
   },
   "en": {
     "term": "place",
-    "alt": [
-      "place value"
-    ],
+    "alt": [],
     "uk": null,
-    "register": "spoken"
+    "register": "both",
+    "variants": [
+      {
+        "term": "place value",
+        "register": "written",
+        "note": "位取りの考え方の名前として。書き言葉で 143 件（OpenStax Prealgebra 105・OpenStax Elementary Algebra 33・OpenStax Algebra and Trigonometry 3 ほか 2）、話し言葉で 4 件（すべて Professor Leonard）。"
+      },
+      {
+        "term": "place",
+        "register": "both",
+        "note": "ones place ／ tens place ／ hundreds place の形で数えた。話し言葉で 40 件（Khan Academy 22・MIT OCW 17・Professor Leonard 1）、書き言葉で 120 件（OpenStax Prealgebra 108・MIT の講義ノート 4・OpenStax Elementary Algebra 4 ほか 4）。"
+      }
+    ]
   },
   "pos": "noun",
   "mapping": "near",
@@ -50,8 +60,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは place 単独ではなく ones place ／ tens place ／ hundreds place のどれかの形で数えた。話し言葉で 40 件（Khan Academy 22・MIT OCW 17・Professor Leonard 1）、書き言葉で 7 件（MIT の講義ノート 4・OpenStax Introductory Statistics 2・OpenStax Calculus 1）。",
-    "place value は話し言葉で 4 件（すべて Professor Leonard）、書き言葉で 3 件（すべて OpenStax Algebra and Trigonometry）。",
+    "用例コーパスでは place 単独ではなく ones place ／ tens place ／ hundreds place のどれかの形で数えた（件数は variants）。書き言葉では OpenStax Prealgebra が位取りの章で place value を多く使い、ones place の形と並ぶ。",
     "「一の位の数」は the digit in the ones place（the ones digit とも言える）。the one place と単数にしない。"
   ],
   "related": [
@@ -68,6 +77,10 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
     }
   ],
   "confidence": "likely",
@@ -83,8 +96,8 @@
       "place value": 4
     },
     "written": {
-      "ones place | tens place | hundreds place": 7,
-      "place value": 3
+      "ones place | tens place | hundreds place": 120,
+      "place value": 143
     },
     "sources": [
       "khan-algebra",
@@ -97,7 +110,10 @@
       "mit-notes",
       "openstax-algtrig",
       "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
       "openstax-introstats",
+      "openstax-prealgebra",
       "yt:profleonard"
     ],
     "counted": "2026-09-25"

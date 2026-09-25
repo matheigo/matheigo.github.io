@@ -14,12 +14,12 @@
       {
         "term": "take the natural log",
         "register": "spoken",
-        "note": "底 e の対数をとるとき。話し言葉で 21 件（Khan Academy 16・blackpenredpen 2・MIT OCW 1 ほか 2）、書き言葉で 4 件（すべて OpenStax Algebra and Trigonometry）。"
+        "note": "底 e の対数をとるとき。話し言葉で 21 件（Khan Academy 16・blackpenredpen 2・MIT OCW 1 ほか 2）、書き言葉で 7 件（OpenStax Algebra and Trigonometry 4・OpenStax Intermediate Algebra 3）。"
       },
       {
         "term": "take the log",
         "register": "spoken",
-        "note": "話し言葉で 12 件（3Blue1Brown 6・MIT OCW 5・Khan Academy 1）、書き言葉で 2 件（すべて OpenStax Algebra and Trigonometry）。"
+        "note": "話し言葉で 12 件（3Blue1Brown 6・MIT OCW 5・Khan Academy 1）、書き言葉で 8 件（OpenStax Intermediate Algebra 6・OpenStax Algebra and Trigonometry 2）。"
       }
     ],
     "uk": null,
@@ -58,7 +58,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは話し言葉で take the natural log（21 件）と take the log（12 件）が並ぶ。書き言葉は 6 件と少ない。",
+    "用例コーパスでは話し言葉で take the natural log（21 件）と take the log（12 件）が並ぶ。書き言葉は take the log 8 件・take the natural log 7 件と少ない。",
     "底を 10 にするか e にするかは自由。米国の授業では ln を使うことが多い（take the natural log の 21 件のうち 14 件が Khan Academy）。"
   ],
   "related": [
@@ -82,15 +82,15 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "take the log": 12,
       "take the natural log": 21
     },
     "written": {
-      "take the log": 2,
-      "take the natural log": 4
+      "take the log": 8,
+      "take the natural log": 7
     },
     "sources": [
       "khan-algebra",
@@ -98,6 +98,7 @@
       "mit-18.01",
       "mit-6.042",
       "openstax-algtrig",
+      "openstax-intalg",
       "yt:3blue1brown",
       "yt:blackpenredpen",
       "yt:organicchem"

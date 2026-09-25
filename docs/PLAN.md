@@ -636,7 +636,7 @@ sec / csc / cot、hyperbolic functions、interval notation、slope-intercept / p
 規模の目安: 300〜500 本、300〜500 時間、数百万語。
 
 ### コーパス — 書き言葉
-OpenStax *Calculus* Vol 1–3、*Precalculus*、*Algebra and Trigonometry*、*Introductory Statistics*（CC BY-NC-SA 4.0）、MIT OCW の講義ノート。`register: written` の根拠に使う。
+OpenStax *Calculus* Vol 1–3、*Precalculus*、*Algebra and Trigonometry*、*Introductory Statistics*、*Prealgebra 2e*、*Elementary Algebra 2e*、*Intermediate Algebra 2e*（CC BY-NC-SA 4.0。後の 3 冊は中学・Algebra の単元のため 2026-09-25 に追加）、MIT OCW の講義ノート。`register: written` の根拠に使う。
 
 ### ライセンスと保存ルール
 - 書き起こし本文は **リポジトリに保存しない**（`corpus/` は `.gitignore`）。保存するのは出典 ID・タイムスタンプ・件数だけ。

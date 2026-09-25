@@ -108,6 +108,9 @@ export function normalize(text: string): string {
     .toLowerCase()
     .replace(/[\u2018\u2019]/g, "'")
     .replace(/[\u201C\u201D]/g, '"')
+    // "slope–intercept form" (OpenStax Elementary Algebra writes an en dash) is one
+    // hyphenated word, not "intercept form" after a dash (DECISIONS, Phase 2 幾何・離散の単元 3)
+    .replace(/(?<=[a-z])[\u2010\u2011\u2013](?=[a-z])/g, "-")
     .replace(/\[[^\]]*\]/g, " ") // [INAUDIBLE], [MUSIC] and friends
     .replace(/\s+/g, " ");
 
@@ -237,6 +240,36 @@ export function dedupe<T extends CorpusDoc>(docs: T[]): { docs: T[]; stats: Reco
     out.push({ ...doc, text });
   }
   return { docs: out, stats, dropped };
+}
+
+/**
+ * The sentence pass of dedupe() for a sectioned reference (IM, CK-12;
+ * DECISIONS, Phase 2 幾何・離散の単元 3): a sentence of DEDUPE_MIN_WORDS or
+ * more words seen in an earlier section is removed. IM's practice pages
+ * repeat problems from earlier lessons and every lesson repeats the glossary
+ * entries it uses; only the first copy is counted. Sections stay whole (no
+ * file pass: a lesson is never a copy of another). Returns the sections and
+ * how many sentences went.
+ */
+export function dedupeSections(sections: [string, string][]): { sections: [string, string][]; dropped: number } {
+  const seen = new Set<number>();
+  let dropped = 0;
+  const out = sections.map(([name, text]) => {
+    const kept: string[] = [];
+    for (const sentence of text.split(/(?<=[.?!])\s+/)) {
+      if (wordCount(sentence) >= DEDUPE_MIN_WORDS) {
+        const h = hash(sentence);
+        if (seen.has(h)) {
+          dropped++;
+          continue;
+        }
+        seen.add(h);
+      }
+      kept.push(sentence);
+    }
+    return [name, kept.join(" ")] as [string, string];
+  });
+  return { sections: out, dropped };
 }
 
 // ------------------------------------------------------------------ wording
@@ -577,10 +610,17 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
       "inscribed circle of the triangle | inscribed circle of a triangle | circle inscribed in a triangle | circle inscribed in the triangle | triangle's inscribed circle | its inscribed circle | inscribed circle for the triangle | inscribed circle is tangent | inscribed circle's radius | an inscribed circle",
   },
   // 小数部分 {x}: IM Grade 6's two "fractional parts" are parts of a whole cut into fractions
-  "fractional-part": { "fractional part": "fractional part of | fractional part is" },
+  // 単元 3: OpenStax Elementary / Intermediate Algebra's "conjugate pair" is mostly the pair of
+  // binomials (a − b)(a + b); the roots come "in conjugate pairs"
+  "conjugate-roots": { "conjugate pairs": "in conjugate pairs | conjugate pair of roots | conjugate pair of solutions | conjugate pair of zeros" },
+  // 単元 3: "intercept form" after "slope" is the slope-intercept form of a line (captions write no hyphen)
+  "factored-form": { "intercept form": "!slope intercept form" },
+  // CK-12 Algebra's "a fractional part of a power of one-tenth" is a decimal place, not x − ⌊x⌋ (単元 3)
+  "fractional-part": { "fractional part": "!a fractional part of | fractional part is" },
   // ガウス記号: the reading "floor of" (x), not the floor of a room or a building
-  // (IM's 7 hits: "the floor of a rectangular room", "the top floor of a ... building")
-  "floor-function": { "floor of": "!top floor of !a !an !the !this !that !his !her !their !its" },
+  // (IM's 7 hits: "the floor of a rectangular room", "the top floor of a ... building";
+  // OpenStax Prealgebra / Elementary Algebra: "the floor of your room", 単元 3)
+  "floor-function": { "floor of": "!top floor of !a !an !the !this !that !his !her !their !its !your" },
   "circular-permutation": { "circular permutation": "number of circular permutations | circular permutations of n | circular permutation formula" },
   // batch 4
   "eulers-formula-for-polyhedra": {
@@ -599,15 +639,18 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   // Phase 2 幾何・離散の単元 2 (batch 5). The bare letters are other things too: ASA is the
   // American Statistical Association (AP Statistics CED), SAS a case of the law of cosines
   // (OpenStax "given SAS") and a statistics package. Counted as the congruence criterion.
-  "sss-congruence": { SSS: "by SSS | SSS congruence | SSS postulate | SSS criterion | SSS theorem | SSS triangle congruence" },
-  "sas-congruence": { SAS: "by SAS | SAS congruence | SAS postulate | SAS criterion | SAS theorem | SAS triangle congruence" },
-  "asa-congruence": { ASA: "by ASA | ASA congruence | ASA postulate | ASA criterion | ASA theorem | ASA triangle congruence" },
+  // CK-12 names each one with the abbreviation in parentheses, "Angle-Angle-Side (AAS)
+  // Congruence Theorem": "(AAS) congruence" is that name (単元 3).
+  "sss-congruence": { SSS: "by SSS | SSS congruence | (SSS) congruence | SSS postulate | SSS criterion | SSS theorem | SSS triangle congruence" },
+  "sas-congruence": { SAS: "by SAS | SAS congruence | (SAS) congruence | SAS postulate | SAS criterion | SAS theorem | SAS triangle congruence" },
+  "asa-congruence": { ASA: "by ASA | ASA congruence | (ASA) congruence | ASA postulate | ASA criterion | ASA theorem | ASA triangle congruence" },
   "aas-congruence": {
-    AAS: "by AAS | AAS congruence | AAS postulate | AAS criterion | AAS theorem | AAS triangle congruence",
+    AAS: "by AAS | AAS congruence | (AAS) congruence | AAS postulate | AAS criterion | AAS theorem | AAS triangle congruence",
     // OpenStax's one "angle-angle-side" names a law-of-sines problem situation, not the criterion
-    "angle-angle-side": "angle-angle-side congruence | angle-angle-side triangle congruence | angle-angle-side theorem | angle-angle-side postulate",
+    "angle-angle-side":
+      "angle-angle-side congruence | angle-angle-side (AAS) congruence | angle-angle-side triangle congruence | angle-angle-side theorem | angle-angle-side postulate",
   },
-  "hl-congruence": { HL: "by HL | HL congruence | HL theorem | HL postulate | HL criterion" },
+  "hl-congruence": { HL: "by HL | HL congruence | (HL) congruence | HL theorem | HL postulate | HL criterion" },
   // 仮定: "hypothesis" alone is mostly a statistical hypothesis; the proof's "Given" cannot be counted
   hypothesis: {
     hypothesis:
@@ -1018,12 +1061,13 @@ export function bookSections(text: string): [string, string][] {
  *
  *   1. the CEDs: AP Calculus AB/BC (`ced`) and AP Statistics (`cedStats`),
  *      hits per section ("front", "unitN", topic "n.m", "exam")
- *   2. OpenStax: hits in the body of the six books, and the section titles
- *      the wording occurs in; and Illustrative Mathematics (IM 6–8 and
+ *   2. OpenStax: hits in the body of the books, and the section titles
+ *      the wording occurs in; Illustrative Mathematics (IM 6–8 and
  *      9–12): hits per lesson ("Geometry 1.3 Title") and the course
- *      glossaries that list the wording as a headword. One tier: the
- *      candidate with more hits in both together wins (DECISIONS, Phase 2
- *      幾何・離散の単元 2)
+ *      glossaries that list the wording as a headword; and CK-12 Geometry /
+ *      Algebra: hits per section ("CK-12 Geometry 1.17 Vertical Angles") and
+ *      the section titles. One tier: the candidate with more hits in the
+ *      three together wins (DECISIONS, Phase 2 幾何・離散の単元 2 and 3)
  *   3. Nicholson, Linear Algebra with Applications, and Levin, Discrete
  *      Mathematics: An Open Introduction: hits per section ("n.m Title")
  *   4. the English Wikipedia article the entry lands on (not per candidate:
@@ -1049,6 +1093,10 @@ export interface ReferenceHits {
   im?: Record<string, Record<string, number>>;
   /** candidate -> IM courses whose glossary has it as a headword */
   imGlossary?: Record<string, string[]>;
+  /** candidate -> CK-12 section ("CK-12 Geometry 1.17 Vertical Angles") -> hits in the body */
+  ck12?: Record<string, Record<string, number>>;
+  /** candidate -> CK-12 section titles that contain it */
+  ck12Titles?: Record<string, string[]>;
   /** The English Wikipedia article that names the entry (rule 2, last step). */
   wikipedia?: WikipediaName;
 }
@@ -1101,6 +1149,8 @@ export const emptyReference = (): ReferenceHits => ({
   levin: {},
   im: {},
   imGlossary: {},
+  ck12: {},
+  ck12Titles: {},
 });
 
 /** The sectioned texts of the references other than OpenStax, already normalized. */
@@ -1112,14 +1162,17 @@ export interface MoreReferences {
   im?: [string, string][];
   /** course -> glossary headwords */
   imGlossary?: Record<string, string[]>;
+  /** CK-12 Geometry and Algebra, one section per page ("CK-12 Geometry 1.17 Vertical Angles") */
+  ck12?: [string, string][];
 }
 
 /**
  * Counts each candidate in the references the way terms are counted
  * (inflection folded, "…" a blank). `ced` is cedSections() of cedText();
  * `openstax` the normalized OpenStax docs; `titles` their section titles;
- * `more` the AP Statistics CED, the two books and IM, sectioned and
- * normalized, and the IM glossaries. A glossary counts a candidate when the
+ * `more` the AP Statistics CED, the two books, IM and CK-12, sectioned and
+ * normalized, and the IM glossaries. A CK-12 section title ("… 1.17
+ * Vertical Angles") counts like an OpenStax one. A glossary counts a candidate when the
  * whole headword is that wording ("translation", "arc (of a circle)" is arc).
  */
 export function referenceHits(
@@ -1148,6 +1201,11 @@ export function referenceHits(
     bySection(out.nicholson!, c, re, more.nicholson ?? []);
     bySection(out.levin!, c, re, more.levin ?? []);
     bySection(out.im!, c, re, more.im ?? []);
+    bySection(out.ck12!, c, re, more.ck12 ?? []);
+    const ck12Titles = (more.ck12 ?? [])
+      .map(([name]) => name)
+      .filter((name) => starts(normalize(name.replace(/^CK-12 \S+ [\d.]+ /, "")), re).length > 0);
+    if (ck12Titles.length) out.ck12Titles![c] = ck12Titles;
     // A form's alternatives without its "!w" marks ("vertical shift | shifted … units").
     const forms = c.split(FORM_OR).map((f) => f.split(/\s+/).filter((w) => !NOT.test(w)).join(" "));
     const courses = Object.entries(more.imGlossary ?? {})
@@ -1161,26 +1219,28 @@ export function referenceHits(
 /** Does the reference count name any candidate at all? */
 export const referred = (r: ReferenceHits): boolean =>
   r.wikipedia !== undefined ||
-  [r.ced, r.cedStats ?? {}, r.openstax, r.openstaxTitles, r.nicholson ?? {}, r.levin ?? {}, r.im ?? {}, r.imGlossary ?? {}].some(
+  [r.ced, r.cedStats ?? {}, r.openstax, r.openstaxTitles, r.nicholson ?? {}, r.levin ?? {}, r.im ?? {}, r.imGlossary ?? {}, r.ck12 ?? {}, r.ck12Titles ?? {}].some(
     (x) => Object.keys(x).length > 0,
   );
 
 /** Which reference settled the headword. */
-export type ReferenceBy = "ced" | "ced-stats" | "openstax" | "im" | "nicholson" | "levin" | "wikipedia";
+export type ReferenceBy = "ced" | "ced-stats" | "openstax" | "im" | "ck12" | "nicholson" | "levin" | "wikipedia";
 
-/** The high-school references of rule 2 (CED, OpenStax, IM): hits of every candidate together, per reference. */
-export function highSchoolHits(ref: ReferenceHits, order: string[]): { ced: number; openstax: number; im: number } {
+/** The high-school references of rule 2 (CED, OpenStax, IM, CK-12): hits of every candidate together, per reference. */
+export function highSchoolHits(ref: ReferenceHits, order: string[]): { ced: number; openstax: number; im: number; ck12: number } {
   const sum = (by: Record<string, Record<string, number>> | undefined, c: string) =>
     Object.values(by?.[c] ?? {}).reduce((a, b) => a + b, 0);
   let ced = 0;
   let openstax = 0;
   let im = 0;
+  let ck12 = 0;
   for (const c of order) {
     ced += sum(ref.ced, c) + sum(ref.cedStats, c);
     openstax += (ref.openstax[c] ?? 0) + (ref.openstaxTitles[c]?.length ?? 0);
     im += sum(ref.im, c) + (ref.imGlossary?.[c]?.length ?? 0);
+    ck12 += sum(ref.ck12, c) + (ref.ck12Titles?.[c]?.length ?? 0);
   }
-  return { ced, openstax, im };
+  return { ced, openstax, im, ck12 };
 }
 
 /**
@@ -1197,10 +1257,12 @@ export function highSchoolHits(ref: ReferenceHits, order: string[]): { ced: numb
  *                        Japanese headword is this project's translation
  *                        (two-column proof: the English is the original),
  *                        a wording a CED itself uses (the Candidates Test), or
- *                        an IM glossary headword (dilation, straight angle)
+ *                        a wording one reference uses REFERENCE_NAMED times
+ *                        or more (CED, OpenStax, IM, CK-12, Nicholson, Levin;
+ *                        linear pair in CK-12 Geometry)
  *   reference            otherwise the headword is what the CEDs (AP Calculus
- *                        / AP Statistics) call it, failing that what OpenStax
- *                        or IM calls it (one tier: body, section title,
+ *                        / AP Statistics) call it, failing that what OpenStax,
+ *                        IM or CK-12 calls it (one tier: body, section title,
  *                        lesson, glossary), failing that what Nicholson /
  *                        Levin call it, failing that the name of the English
  *                        Wikipedia article (wikihead.py). No register is claimed
@@ -1210,6 +1272,12 @@ export type Settled =
   | { kind: "no-fixed-expression"; spoken: number; written: number }
   | { kind: "reference"; by: ReferenceBy; head: string; where: string[] }
   | { kind: "undecided" };
+
+/**
+ * A wording one reference uses this many times or more is a name English has
+ * (DECISIONS, Phase 2 幾何・離散の単元 3: the IM-glossary exception made general).
+ */
+export const REFERENCE_NAMED = 3;
 
 export function settleUndecided(
   entry: { mapping?: string; ja?: string; en?: string; projectTranslation?: boolean },
@@ -1225,11 +1293,17 @@ export function settleUndecided(
   const cedTotal = (c: string) => sum(ref.ced, c) + sum(ref.cedStats, c);
   const ced = best(cedTotal);
   const borrowed = ja !== undefined && en !== undefined && ja.trim().toLowerCase() === en.trim().toLowerCase();
-  const glossary = order.some((c) => (ref.imGlossary?.[c]?.length ?? 0) > 0);
+  const openstax = (c: string) => (ref.openstax[c] ?? 0) + (ref.openstaxTitles[c]?.length ?? 0);
+  const im = (c: string) => sum(ref.im, c) + (ref.imGlossary?.[c]?.length ?? 0);
+  const ck12 = (c: string) => sum(ref.ck12, c) + (ref.ck12Titles?.[c]?.length ?? 0);
+  // One reference uses the wording REFERENCE_NAMED times or more (a CED, any number).
+  const inOne = (c: string) =>
+    [openstax(c), im(c), ck12(c), sum(ref.nicholson, c), sum(ref.levin, c)].some((n) => n >= REFERENCE_NAMED);
+  const usedByReference = order.some(inOne);
   // A US name with no Japanese counterpart (mapping none) whose Japanese headword this
   // project made up: the English name is where the entry comes from.
   const usName = entry.projectTranslation === true && mapping === "none";
-  const named = borrowed || usName || ced !== undefined || glossary;
+  const named = borrowed || usName || ced !== undefined || usedByReference;
   if ((mapping === "near" || mapping === "none") && !named && raw.spoken < MIN_TOTAL && raw.written < MIN_TOTAL) {
     return { kind: "no-fixed-expression", ...raw };
   }
@@ -1245,10 +1319,14 @@ export function settleUndecided(
       ? { kind: "reference", by: "ced-stats", head: ced, where: topicsOf(ref.cedStats![ced]) }
       : { kind: "reference", by: "ced", head: ced, where: topicsOf(ref.ced[ced]) };
   }
-  const openstax = (c: string) => (ref.openstax[c] ?? 0) + (ref.openstaxTitles[c]?.length ?? 0);
-  const im = (c: string) => sum(ref.im, c) + (ref.imGlossary?.[c]?.length ?? 0);
-  const os = best((c) => openstax(c) + im(c));
+  const os = best((c) => openstax(c) + im(c) + ck12(c));
   if (os) {
+    if (ck12(os) > openstax(os) && ck12(os) > im(os)) {
+      const titles = ref.ck12Titles?.[os] ?? [];
+      const sections = Object.entries(ref.ck12?.[os] ?? {}).sort((a, b) => b[1] - a[1]).map(([s]) => s);
+      const listed = [...titles, ...sections.filter((s) => !titles.includes(s))];
+      return { kind: "reference", by: "ck12", head: os, where: [...listed, `計 ${sum(ref.ck12, os)} 件`] };
+    }
     if (im(os) > openstax(os)) {
       const glossary = (ref.imGlossary?.[os] ?? []).map((g) => `${g} glossary`);
       const lessons = Object.entries(ref.im?.[os] ?? {}).sort((a, b) => b[1] - a[1]).map(([s]) => s);

@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "見出しの「一直線をなす角」は日本の教科書に無い、本プロジェクトの訳語。日本では「隣り合う 2 つの角の和が 180°」を性質として扱い、2 角の組に名前を付けない。 英語に決まった言い方がない（用例コーパスでは候補の合計が話し言葉 7 件・書き言葉 0 件）。",
+  "mapping_note": "見出しの「一直線をなす角」は日本の教科書に無い、本プロジェクトの訳語。日本では「隣り合う 2 つの角の和が 180°」を性質として扱い、2 角の組に名前を付けない。CK-12 Geometry は linear pair と呼ぶ（1.15 Supplementary Angles ほか、30 件）。",
   "domains": [
     "geometry"
   ],
@@ -54,6 +54,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.15 Supplementary Angles・4.18 Exterior Angles and Theorems・2.7 Deductive Reasoning"
     }
   ],
   "confidence": "likely",
@@ -74,8 +80,8 @@
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 7 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 linear pair（CK-12 Geometry 1.15 Supplementary Angles・CK-12 Geometry 4.18 Exterior Angles and Theorems・CK-12 Geometry 2.7 Deductive Reasoning・計 30 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

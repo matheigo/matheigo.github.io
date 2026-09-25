@@ -14,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM）では扱わない（angle bisector theorem は CED・OpenStax・IM とも 0 件）。",
+  "mapping_note": null,
   "domains": [
     "geometry"
   ],
@@ -65,6 +65,12 @@
       "type": "wikipedia-langlink",
       "ja": "角の二等分線の定理",
       "en": "Angle bisector theorem"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.21 Angle Bisectors in Triangles"
     }
   ],
   "confidence": "likely",
@@ -81,7 +87,7 @@
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 angle bisector theorem（英語版「Angle bisector theorem」、ja の langlink 先）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 angle bisector theorem（CK-12 Geometry 4.21 Angle Bisectors in Triangles・計 10 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

@@ -11,7 +11,7 @@
       "raise … to the nth power"
     ],
     "uk": null,
-    "register": "spoken"
+    "register": "both"
   },
   "pos": "phrase",
   "mapping": "exact",
@@ -52,7 +52,7 @@
     }
   ],
   "pitfalls": [
-    "話し言葉の 17 件のうち 9 件が 3Blue1Brown。書き言葉では 9 件で、どの言い方も少ない。",
+    "話し言葉の 17 件のうち 9 件が 3Blue1Brown。書き言葉は raise … to the power が 11 件（OpenStax Algebra and Trigonometry 4・OpenStax Intermediate Algebra 3・OpenStax Prealgebra 2 ほか 2）、raise … to the nth power が 4 件（すべて OpenStax Algebra and Trigonometry）。",
     "「z の n 乗」は式の読みでは z to the n（z to the nth power）。"
   ],
   "related": [
@@ -75,14 +75,14 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "raise … to the power": 17,
       "raise … to the nth power": 1
     },
     "written": {
-      "raise … to the power": 5,
+      "raise … to the power": 11,
       "raise … to the nth power": 4
     },
     "sources": [
@@ -91,6 +91,9 @@
       "mit-6.042",
       "mit-notes",
       "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
       "yt:3blue1brown",
       "yt:nancypi"
     ],

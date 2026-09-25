@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM）では扱わない（integer solution は CED・OpenStax・IM とも 0 件）。",
+  "mapping_note": null,
   "domains": [
     "number-theory"
   ],
@@ -57,6 +57,10 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "6.2 Introduction to Number Theory"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
     }
   ],
   "confidence": "likely",
@@ -70,15 +74,19 @@
     "spoken": {
       "integer solution": 2
     },
+    "written": {
+      "integer solution": 2
+    },
     "sources": [
-      "mit-6.042"
+      "mit-6.042",
+      "openstax-prealgebra"
     ],
     "counted": "2026-09-25"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 integer solution（3.5 Counting Multisets・6.2 Introduction to Number Theory・1.4 Proofs）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは OpenStax の呼び方 integer solution（本文 2 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

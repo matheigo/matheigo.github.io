@@ -8,15 +8,15 @@
     ]
   },
   "en": {
-    "term": "modus ponens",
+    "term": "law of detachment",
     "alt": [
-      "law of detachment"
+      "modus ponens"
     ],
     "uk": null
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM）では扱わない（modus ponens ／ law of detachment は CED・OpenStax・IM とも 0 件）。",
+  "mapping_note": null,
   "domains": [
     "proof",
     "logic"
@@ -50,7 +50,7 @@
   "pitfalls": [
     "米国の Geometry の教科書では law of detachment、論理学・離散数学では modus ponens と呼ぶ。",
     "p ⇒ q と q から p を結論するのは逆向きの推論（affirming the consequent、後件肯定）で、正しくない。",
-    "用例コーパスでは modus ponens が話し言葉 2 件（MIT OCW）・書き言葉 3 件（MIT の講義ノート）、law of detachment は 0 件。"
+    "用例コーパスでは modus ponens が話し言葉 2 件（MIT OCW）・書き言葉 3 件（MIT の講義ノート）、law of detachment は 0 件。CK-12 Geometry は law of detachment と呼ぶ（2.7 Deductive Reasoning、3 件）。Levin の Discrete Mathematics は modus ponens（1.3、1 件）。"
   ],
   "related": [
     "law-of-syllogism",
@@ -68,6 +68,12 @@
       "type": "wikipedia-langlink",
       "ja": "モーダスポネンス",
       "en": "Modus ponens"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.7 Deductive Reasoning"
     }
   ],
   "confidence": "likely",
@@ -93,7 +99,7 @@
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは Levin の呼び方 modus ponens（1.3 Rules of Logic）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは CK-12 の呼び方 law of detachment（CK-12 Geometry 2.7 Deductive Reasoning・計 3 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

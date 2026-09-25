@@ -44,7 +44,7 @@
   "pitfalls": [
     "英語名の ruler は目盛りの付いた定規のこと。直線に定規を当てて目盛りを読むことを公準にしたもの。",
     "線分の長さの和 AB + BC = AC は別の公準（segment addition postulate）。",
-    "用例コーパス・IM とも ruler postulate は 0 件。"
+    "用例コーパス・IM とも ruler postulate は 0 件。CK-12 Geometry に 1 件（1.3 Definition of Line segments）あり、見出しはこれによる。"
   ],
   "related": [
     "segment-addition-postulate",
@@ -55,6 +55,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.3 Definition of Line segments"
     }
   ],
   "confidence": "likely",
@@ -70,8 +76,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 ruler postulate（CK-12 Geometry 1.3 Definition of Line segments・計 1 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

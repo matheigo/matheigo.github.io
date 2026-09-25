@@ -44,7 +44,7 @@
   "pitfalls": [
     "英語では 2 文字の arc AB が劣弧を指し、優弧は 3 文字（arc ACB）で書いて区別する。",
     "ちょうど 180° の弧は半円（semicircle）で、劣弧にも優弧にも入れない。",
-    "用例コーパス・IM とも 0 件。英語版 Wikipedia の Minor arc は曖昧さ回避のページ。"
+    "用例コーパス・IM とも 0 件で、CK-12 Geometry に 9 件（6.9 Arcs in Circles 8・6.12 Chords and Central Angle Arcs 1）。英語版 Wikipedia の Minor arc は曖昧さ回避のページ。"
   ],
   "related": [
     "major-arc",
@@ -54,6 +54,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.9 Arcs in Circles・6.12 Chords and Central Angle Arcs"
     }
   ],
   "confidence": "likely",
@@ -69,8 +75,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 minor arc（CK-12 Geometry 6.9 Arcs in Circles・CK-12 Geometry 6.12 Chords and Central Angle Arcs・計 9 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

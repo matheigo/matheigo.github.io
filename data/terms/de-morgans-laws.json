@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM）では扱わない（De Morgan's laws は CED・OpenStax・IM とも 0 件）。",
+  "mapping_note": null,
   "domains": [
     "logic",
     "set-theory"
@@ -46,7 +46,7 @@
   "pitfalls": [
     "英語では 2 つの式をまとめて laws と複数形で呼ぶ。片方だけなら one of De Morgan's laws のように言う。",
     "否定すると「かつ」と「または」が入れ替わる。not (p and q) を not p and not q としてしまうのが典型的な誤り。",
-    "用例コーパスでは De Morgan's laws は話・書とも 0 件で、見出しは Levin の離散数学の本（1.3 Rules of Logic）の呼び方による。"
+    "用例コーパスでは De Morgan's laws は話・書とも 0 件で、見出しは CK-12 Geometry（2.10 Negative Statements、6 件）の呼び方による。"
   ],
   "related": [
     "complement",
@@ -66,6 +66,12 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "1.3 Rules of Logic"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.10 Negative Statements"
     }
   ],
   "confidence": "likely",
@@ -82,7 +88,7 @@
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 De Morgan's laws（1.3 Rules of Logic・1.4 Proofs・6.2 Introduction to Number Theory）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 De Morgan's laws（CK-12 Geometry 2.10 Negative Statements・計 6 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

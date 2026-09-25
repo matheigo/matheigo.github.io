@@ -44,15 +44,11 @@
       "register": "written"
     }
   ],
-  "collocations": [
-    {
-      "en": "on the number line",
-      "ja": "数直線上に"
-    }
-  ],
+  "collocations": [],
   "pitfalls": [
     "不等式の解を数直線に表すとき、端点を含むなら塗りつぶした丸（closed circle）、含まないなら白丸（open circle）で表す。日本の教科書の ● ○ と同じ使い分け。",
-    "絶対値 |a| は、数直線上で原点から a までの距離として説明する（the distance from 0 on the number line）。"
+    "絶対値 |a| は、数直線上で原点から a までの距離として説明する（the distance from 0 on the number line）。",
+    "「数直線上に」は on the number line（書き言葉で 205 件、話し言葉で 19 件）。見出しの number line を中に含むので、候補表現には数えない。"
   ],
   "related": [
     "real-number",
@@ -69,6 +65,10 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
     }
   ],
   "confidence": "likely",
@@ -80,12 +80,10 @@
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "number line": 183,
-      "on the number line": 19
+      "number line": 183
     },
     "written": {
-      "number line": 52,
-      "on the number line": 10
+      "number line": 363
     },
     "sources": [
       "khan-algebra",
@@ -94,7 +92,10 @@
       "mit-18.01",
       "openstax-algtrig",
       "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
       "openstax-introstats",
+      "openstax-prealgebra",
       "openstax-precalculus",
       "yt:3blue1brown",
       "yt:blackpenredpen",

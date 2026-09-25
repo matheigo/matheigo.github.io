@@ -6,8 +6,10 @@
                                                    #   AP Calculus AB/BC CED, AP Statistics CED (College Board),
                                                    #   Nicholson, Linear Algebra with Applications (Lyryx),
                                                    #   Levin, Discrete Mathematics: An Open Introduction
-                                                   #   and Illustrative Mathematics 6–8 / 9–12 (HTML)
+                                                   #   Illustrative Mathematics 6–8 / 9–12 (HTML)
+                                                   #   and CK-12 Geometry / Algebra (HTML, K12 LibreTexts)
     python3 scripts/ledger/refetch.py im           # only Illustrative Mathematics (lessons, practice, glossaries)
+    python3 scripts/ledger/refetch.py ck12         # only CK-12 Geometry and Algebra (K12 LibreTexts, section pages)
     python3 scripts/ledger/refetch.py ced          # the PDFs only (older name)
     python3 scripts/ledger/refetch.py ced-find "accumulation function" "shell method"
 
@@ -362,6 +364,142 @@ def im():
         raise SystemExit(f"im: {len(failed)} pages failed; re-run to fetch only those")
 
 
+# ------------------------------------------------------------------- CK-12
+# CK-12 Geometry and Algebra (DECISIONS, Phase 2 幾何・離散の単元 3), as hosted
+# by K12 LibreTexts (Bookshelves/Mathematics/Geometry, .../Algebra). The pages
+# are under the CK-12 Curriculum Materials License (the tag license:ck12 and the
+# notice at the foot of each page). Only hit counts and section titles are
+# used; the text stays under corpus/ref/ (gitignored). K12 LibreTexts has no
+# CK-12 middle-school book (its Mathematics shelf: Algebra, Analysis, Calculus,
+# Geometry, Precalculus, Statistics, Trigonometry; 2026-09-25).
+CK12_HOST = "https://k12.libretexts.org"
+CK12_BOOKS = [  # (file id, shelf path, book name)
+    ("ck12-geometry", "/Bookshelves/Mathematics/Geometry", "CK-12 Geometry"),
+    ("ck12-algebra", "/Bookshelves/Mathematics/Algebra", "CK-12 Algebra"),
+]
+CK12_DIR = os.path.join(REF, "ck12")
+CK12_PAGES = os.path.join(CK12_DIR, "pages")
+CK12_WORKERS = 4
+
+
+def ck12_cache(path):
+    return os.path.join(CK12_PAGES, urllib.parse.unquote(path).strip("/").replace("/", "_").replace(":", "")[:200])
+
+
+def ck12_main(html):
+    """The page body (<section class="mt-content-container">) without scripts,
+    styles and the LibreTexts licence footer."""
+    i = html.find('<section class="mt-content-container">')
+    j = html.find("</section>", i)
+    body = html[i:j] if i >= 0 and j > i else ""
+    body = re.sub(r"<(script|style)\b[^>]*>.*?</\1>", "", body, flags=re.S)
+    k = body.find("This page titled ")
+    return body[:k] if k >= 0 else body
+
+
+def ck12_page(path):
+    """One page as {"links": every page below it that it links to, "body": its
+    text body}, cached as JSON; a cached page is not fetched again. A page that
+    redirects elsewhere (some Algebra section pages go to the home page) is
+    kept with no links and no body."""
+    cache = ck12_cache(path)
+    if os.path.exists(cache) and os.path.getsize(cache) > 0:
+        return json.load(open(cache, encoding="utf-8"))
+    with open_url(CK12_HOST + path, "ck12 " + path) as r:
+        final = urllib.parse.urlsplit(r.geturl()).path
+        html = r.read().decode("utf-8", "replace")
+    if final.rstrip("/") != path.rstrip("/"):
+        page = {"links": [], "body": "", "redirect": final}
+    else:
+        below = re.compile(re.escape(CK12_HOST + path) + r'(/[^"#?]+)"')
+        page = {"links": sorted({path + m.rstrip("/") for m in below.findall(html)}), "body": ck12_main(html)}
+    tmp = cache + ".part"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(page, f, ensure_ascii=False)
+    os.replace(tmp, cache)
+    time.sleep(PAUSE / 2)
+    return page
+
+
+def ck12_pages(paths, label):
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    out, failed = {}, []
+    todo = [p for p in paths if not os.path.exists(ck12_cache(p))]
+    print(f"  [ck12 {label}] {len(paths)} pages, {len(paths) - len(todo)} cached, {len(todo)} to fetch", flush=True)
+    done = 0
+    with ThreadPoolExecutor(CK12_WORKERS) as pool:
+        futures = {pool.submit(ck12_page, p): p for p in paths}
+        for fut in as_completed(futures):
+            p = futures[fut]
+            try:
+                out[p] = fut.result()
+            except Exception as e:  # noqa: BLE001 - keep going; re-run fetches the rest
+                failed.append(p)
+                print(f"    FAILED {p}: {e}", flush=True)
+            done += 1
+            if done % 25 == 0 or done == len(paths):
+                print(f"  [ck12 {label}] {done}/{len(paths)}", flush=True)
+    return out, failed
+
+
+def ck12_number(chapter, path):
+    """(sort key, "2.1.1", "Writing Basic Equations") for a page under a chapter.
+    A page numbered from 1 inside its chapter ("03: .../01: Solve One Step
+    Linear Inequalities") gets the chapter number in front ("3.1")."""
+    ch = int(urllib.parse.unquote(chapter.rsplit("/", 1)[1]).split(":")[0])
+    seg = urllib.parse.unquote(path.rsplit("/", 1)[1])
+    num, _, title = seg.partition(":")
+    parts = tuple(int(x) for x in num.split(".") if x.isdigit())
+    if not parts or parts[0] != ch or len(parts) == 1:
+        parts = (ch,) + parts
+    return parts, ".".join(str(x) for x in parts), title.strip("_").replace("_", " ")
+
+
+def ck12():
+    """Shelf -> chapters -> every page below a chapter that the chapter page
+    lists (the page tree); the leaves (pages with no page below them) are the
+    sections counted. Writes corpus/ref/ck12-geometry.txt and ck12-algebra.txt,
+    one part per leaf ("\\f@@ CK-12 Geometry 1.17 Vertical Angles"), the same
+    layout as IM's."""
+    os.makedirs(CK12_PAGES, exist_ok=True)
+    failed = []
+    shelves, f = ck12_pages([s for _, s, _ in CK12_BOOKS], "books")
+    failed += f
+    chapters = {}
+    for _, shelf, _ in CK12_BOOKS:
+        kids = [l for l in shelves.get(shelf, {}).get("links", []) if l.count("/") == shelf.count("/") + 1]
+        chapters[shelf] = sorted((l for l in kids if re.search(r"/(0[1-9]|[1-9]\d)%3A_[^/]+$", l)),
+                                 key=lambda l: int(urllib.parse.unquote(l.rsplit("/", 1)[1]).split(":")[0]))
+    chapter_pages, f = ck12_pages([c for s in chapters for c in chapters[s]], "chapters")
+    failed += f
+    leaves = {}
+    for shelf in chapters:
+        for c in chapters[shelf]:
+            below = chapter_pages.get(c, {}).get("links", [])
+            leaves[c] = sorted((l for l in below if not any(o.startswith(l + "/") for o in below)),
+                               key=lambda l: ck12_number(c, l)[0])
+    fetched, f = ck12_pages([p for c in leaves for p in leaves[c]], "sections")
+    failed += f
+    for book, shelf, name in CK12_BOOKS:
+        parts, empty = [], 0
+        for c in chapters[shelf]:
+            for p in leaves[c]:
+                page = fetched.get(p)
+                if not page or not page["body"].strip():
+                    empty += 1
+                    continue
+                _, num, title = ck12_number(c, p)
+                parts.append(f"\f@@ {name} {num} {title}\n{im_text(page['body'])}\n")
+        out = os.path.join(REF, book + ".txt")
+        with open(out + ".part", "w", encoding="utf-8") as fh:
+            fh.write("".join(parts))
+        os.replace(out + ".part", out)
+        print(f"  [ck12] {book}: {len(chapters[shelf])} chapters, {len(parts)} sections"
+              f" ({empty} listed pages redirect or are empty) -> {os.path.relpath(out, ROOT)}", flush=True)
+    if failed:
+        raise SystemExit(f"ck12: {len(failed)} pages failed; re-run to fetch only those")
+
 def ced_topics():
     """[(section, text)]. The unit guides run from the Unit 1 opener to the exam
     section; inside them each `TOPIC n.m` page is its own section and each unit
@@ -417,6 +555,8 @@ def main():
         refs()
     if cmd in ("refs", "im", "all"):
         im()
+    if cmd in ("refs", "ck12", "all"):
+        ck12()
     if cmd == "ced-find":
         ced_find(sys.argv[2:])
 

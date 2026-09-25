@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語に決まった言い方がない（用例コーパスで side-angle inequality は話・書とも 0 件）。英語では定理の中身をそのまま言う: the larger angle is opposite the longer side（大きい角の対辺は長い）／ the largest angle is opposite the longest side（最大の角は最大の辺の対角）。",
+  "mapping_note": "CK-12 Geometry には side-angle inequality と、中身を言う opposite the longer side ／ opposite the longest side の形が合わせて 3 件ある（4.25 Comparing Angles and Sides in Triangles・4.31 Converse of the Pythagorean Theorem）。用例コーパスでは話・書とも 0 件。定理の中身をそのまま言う形は the larger angle is opposite the longer side（大きい角の対辺は長い）／ the largest angle is opposite the longest side（最大の角は最大の辺の対角）。",
   "domains": [
     "geometry",
     "trigonometry"
@@ -62,6 +62,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.25 Comparing Angles and Sides in Triangles・4.31 Converse of the Pythagorean Theorem"
     }
   ],
   "confidence": "likely",
@@ -77,8 +83,8 @@
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 side-angle inequality | opposite the longer side | opposite the longest side（CK-12 Geometry 4.25 Comparing Angles and Sides in Triangles・CK-12 Geometry 4.31 Converse of the Pythagorean Theorem・計 3 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

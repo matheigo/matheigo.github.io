@@ -16,7 +16,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM）では扱わない（biconditional ／ biconditional statement は CED・OpenStax・IM とも 0 件）。",
+  "mapping_note": null,
   "domains": [
     "proof",
     "logic"
@@ -50,7 +50,7 @@
   "pitfalls": [
     "日本の数I では「双条件文」という名前を使わず、「p ⇔ q」「p は q であるための必要十分条件」「p と q は同値」と言う。",
     "書き言葉では if and only if を iff と略すことがある。",
-    "用例コーパスで biconditional は話し言葉 2 件（Professor Leonard）、書き言葉 0 件。Levin の本では 5 件。"
+    "用例コーパスで biconditional は話し言葉 2 件（Professor Leonard）、書き言葉 0 件。Levin の本では 5 件、CK-12 Geometry では 8 件（2.12 Converse Inverse and Contrapositive Statements ほか）。"
   ],
   "related": [
     "conditional-statement",
@@ -64,6 +64,12 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "1.1 Mathematical Statements, 1.2 Implications"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.12 Converse Inverse and Contrapositive Statements・6.18 Tangent Lines"
     }
   ],
   "confidence": "likely",
@@ -86,7 +92,7 @@
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 biconditional（1.1 Mathematical Statements・1.2 Implications）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 biconditional（CK-12 Geometry 2.12 Converse Inverse and Contrapositive Statements・CK-12 Geometry 6.18 Tangent Lines・計 8 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

@@ -11,6 +11,7 @@ import {
   countPattern,
   countPhrase,
   countTerm,
+  dedupeSections,
   countedAs,
   decide,
   decideRobust,
@@ -45,6 +46,12 @@ describe("normalize", () => {
     expect(normalize("f prime of x")).toBe("f prime of x");
     expect(normalize("x-squared plus 1")).toBe("x squared plus one");
     expect(normalize("d x")).toBe("dx");
+  });
+
+  it("reads an en dash between two words as the hyphen of one word", () => {
+    expect(normalize("write it in slope\u2013intercept form")).toBe("write it in slope-intercept form");
+    expect(countTerm(normalize("the slope\u2013intercept form"), "intercept form")).toBe(0);
+    expect(normalize("x \u2013 y")).toBe("x \u2013 y");
   });
 
   it("drops transcript markup", () => {
@@ -400,6 +407,26 @@ describe("settleUndecided", () => {
     expect(s).toEqual({ kind: "reference", by: "ced", head: "candidates test", where: ["5.5"] });
   });
 
+  it("does not apply that to a wording one reference uses 3 times or more (CK-12 linear pair)", () => {
+    const s = settleUndecided(
+      { mapping: "near", ja: "一直線をなす角", en: "linear pair" },
+      { spoken: 7, written: 0 },
+      ref({ ck12: { "linear pair": { "CK-12 Geometry 1.15 Supplementary Angles": 2, "CK-12 Geometry 2.7 Deductive Reasoning": 1 } } }),
+      ["linear pair"],
+    );
+    expect(s).toMatchObject({ kind: "reference", by: "ck12", head: "linear pair" });
+  });
+
+  it("still applies it when no single reference reaches 3 for one wording", () => {
+    const s = settleUndecided(
+      { mapping: "near", ja: "2 組の角とその間にない 1 辺", en: "angle-angle-side" },
+      { spoken: 0, written: 0 },
+      ref({ ck12: { "angle-angle-side": { "CK-12 Geometry 4.15 ASA and AAS": 2 }, AAS: { "CK-12 Geometry 4.15 ASA and AAS": 2 } }, im: { AAS: { "Geometry 2.7": 2 } } }),
+      ["angle-angle-side", "AAS"],
+    );
+    expect(s).toEqual({ kind: "no-fixed-expression", spoken: 0, written: 0 });
+  });
+
   it("takes the CED's name before OpenStax's, with its topics", () => {
     const s = settleUndecided(
       { mapping: "exact" },
@@ -461,6 +488,25 @@ describe("settleUndecided", () => {
     // and IM comes before Nicholson / Levin
     const books = ref({ levin: { [order[0]]: { "2.4 Euler Trails": 9 } }, im: { [order[1]]: { "Grade 8 1.1 X": 1 } } });
     expect(settleUndecided({ mapping: "exact" }, { spoken: 0, written: 0 }, books, order)).toMatchObject({ by: "im", head: order[1] });
+  });
+
+  it("reads CK-12 in the OpenStax / IM tier: its section titles first, then the sections by hits", () => {
+    const s = settleUndecided(
+      { mapping: "exact" },
+      { spoken: 0, written: 0 },
+      ref({
+        openstax: { [order[0]]: 2 },
+        ck12: { [order[1]]: { "CK-12 Geometry 4.4 Isosceles Triangles": 1, "CK-12 Geometry 4.5 Equilateral Triangles": 4 } },
+        ck12Titles: { [order[1]]: ["CK-12 Geometry 4.4 Isosceles Triangles"] },
+      }),
+      order,
+    );
+    expect(s).toEqual({
+      kind: "reference",
+      by: "ck12",
+      head: order[1],
+      where: ["CK-12 Geometry 4.4 Isosceles Triangles", "CK-12 Geometry 4.5 Equilateral Triangles", "計 5 件"],
+    });
   });
 
   it("falls back to the English Wikipedia article's name last, as the matching candidate", () => {
@@ -692,6 +738,17 @@ describe("dedupe", () => {
     expect(docs.map((d) => d.file)).toEqual(["a"]);
     expect(dropped.map((d) => d.file)).toEqual(["b"]);
     expect(stats["mit-18.01"]).toMatchObject({ files: 2, droppedFiles: 1 });
+  });
+
+  it("dedupeSections removes a long sentence an earlier section had, keeping every section", () => {
+    const repeat = "find the measure of each angle in the triangle shown below.";
+    const { sections, dropped } = dedupeSections([
+      ["Geometry 1.1 A", `${repeat} short one.`],
+      ["Geometry 1.2 B", `${repeat} short one. a new problem about the rigid transformation of a figure.`],
+    ]);
+    expect(dropped).toBe(1);
+    expect(sections.map(([n]) => n)).toEqual(["Geometry 1.1 A", "Geometry 1.2 B"]);
+    expect(sections[1][1]).toBe("short one. a new problem about the rigid transformation of a figure.");
   });
 
   it("removes a long sentence seen before but keeps short repeats", () => {

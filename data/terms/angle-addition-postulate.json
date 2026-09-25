@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "英語に決まった言い方がない（用例コーパスで angle addition postulate は話・書とも 0 件）。見出しの「角の加法公理」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書は ∠AOB + ∠BOC = ∠AOC に名前をつけない。英語名は、点 B が ∠AOC の内部にあれば角の大きさがこのように足せるという性質を公理として立てたときの名前。",
+  "mapping_note": "CK-12 Geometry は angle addition postulate と呼ぶ（1.9 Measuring Angles ほか、5 件）。用例コーパスでは話・書とも 0 件。見出しの「角の加法公理」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書は ∠AOB + ∠BOC = ∠AOC に名前をつけない。英語名は、点 B が ∠AOC の内部にあれば角の大きさがこのように足せるという性質を公理として立てたときの名前。",
   "domains": [
     "geometry"
   ],
@@ -55,6 +55,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.9 Measuring Angles・4.17 Triangle Angle Sum Theorem"
     }
   ],
   "confidence": "likely",
@@ -70,8 +76,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 angle addition postulate（CK-12 Geometry 1.9 Measuring Angles・CK-12 Geometry 4.17 Triangle Angle Sum Theorem・計 5 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

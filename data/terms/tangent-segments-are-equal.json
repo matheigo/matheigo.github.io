@@ -12,7 +12,7 @@
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "英語に決まった言い方がない（用例コーパスで tangent segments は話し言葉 1 件（blackpenredpen）、書き言葉 0 件）。英語では定理の中身をそのまま文で言う: the two tangent segments drawn to a circle from a point outside it are congruent（円の外部の 1 点から引いた 2 本の接線の、その点から接点までの線分は合同）。",
+  "mapping_note": "CK-12 Geometry は tangent segments と呼ぶ（6.18 Tangent Lines ほか、3 件）。用例コーパスで tangent segments は話し言葉 1 件（blackpenredpen）、書き言葉 0 件。英語では定理の中身をそのまま文で言う: the two tangent segments drawn to a circle from a point outside it are congruent（円の外部の 1 点から引いた 2 本の接線の、その点から接点までの線分は合同）。",
   "domains": [
     "geometry"
   ],
@@ -54,6 +54,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.18 Tangent Lines・6.2 Identify Circle Components"
     }
   ],
   "confidence": "likely",
@@ -74,8 +80,8 @@
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 1 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 tangent segments（CK-12 Geometry 6.18 Tangent Lines・CK-12 Geometry 6.2 Identify Circle Components・計 3 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

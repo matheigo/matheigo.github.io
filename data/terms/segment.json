@@ -12,7 +12,7 @@
       {
         "term": "segment",
         "register": "spoken",
-        "note": "直前に line が付かない segment として数えた（line segment の segment は数えない）。話し言葉で 156 件（MIT OCW 68・The Organic Chemistry Tutor 57・Khan Academy 17 ほか 14）、書き言葉で 43 件（OpenStax Calculus 21・MIT の講義ノート 21・OpenStax Algebra and Trigonometry 1）。"
+        "note": "直前に line が付かない segment として数えた（line segment の segment は数えない）。話し言葉で 156 件（MIT OCW 68・The Organic Chemistry Tutor 57・Khan Academy 17 ほか 14）、書き言葉で 49 件（OpenStax Calculus 21・MIT の講義ノート 21・OpenStax Intermediate Algebra 5 ほか 2）。"
       }
     ],
     "uk": null,
@@ -20,7 +20,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスでは、書き言葉は line segment（198 件対 segment だけの 43 件）、話し言葉は line を省いた segment（156 件対 line segment 50 件）が多い。英語の line は両方向に限りなく伸びる直線で、線分の意味にはならない。英語の記法では線分 AB を AB の上に横線を引いて表し、その長さは横線なしの AB と書き分ける（日本の教科書では線分も長さも AB）。",
+  "mapping_note": "用例コーパスでは、書き言葉は line segment（215 件対 segment だけの 49 件）、話し言葉は line を省いた segment（156 件対 line segment 50 件）が多い。英語の line は両方向に限りなく伸びる直線で、線分の意味にはならない。英語の記法では線分 AB を AB の上に横線を引いて表し、その長さは横線なしの AB と書き分ける（日本の教科書では線分も長さも AB）。",
   "domains": [
     "geometry"
   ],
@@ -90,8 +90,8 @@
       "line segment": 50
     },
     "written": {
-      "line segment": 198,
-      "!line segment": 43
+      "line segment": 215,
+      "!line segment": 49
     },
     "sources": [
       "khan-algebra",
@@ -102,7 +102,9 @@
       "mit-notes",
       "openstax-algtrig",
       "openstax-calculus",
+      "openstax-intalg",
       "openstax-introstats",
+      "openstax-prealgebra",
       "yt:3blue1brown",
       "yt:blackpenredpen",
       "yt:organicchem",

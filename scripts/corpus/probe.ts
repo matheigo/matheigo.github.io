@@ -100,6 +100,9 @@ function family(doc: CorpusDoc): string {
     "openstax-algtrig": "AT",
     "openstax-precalculus": "PC",
     "openstax-introstats": "IS",
+    "openstax-prealgebra": "PA",
+    "openstax-elemalg": "EA",
+    "openstax-intalg": "IA",
     "mit-notes": "notes",
   };
   if (books[doc.id]) return books[doc.id];
@@ -131,6 +134,9 @@ const FAMILY_NAMES: [RegExp, string][] = [
   [/^openstax-algtrig$/, "OpenStax Algebra and Trigonometry"],
   [/^openstax-precalculus$/, "OpenStax Precalculus"],
   [/^openstax-introstats$/, "OpenStax Introductory Statistics"],
+  [/^openstax-prealgebra$/, "OpenStax Prealgebra"],
+  [/^openstax-elemalg$/, "OpenStax Elementary Algebra"],
+  [/^openstax-intalg$/, "OpenStax Intermediate Algebra"],
 ];
 
 /** "話し言葉で 20 件（Khan Academy 15・MIT OCW 5）" - the breakdown the variants' notes carry. */
@@ -201,6 +207,10 @@ function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
       .filter((c) => ref.im?.[c] || ref.imGlossary?.[c])
       .map((c) => `${c} ${Object.values(ref.im?.[c] ?? {}).reduce((a, b) => a + b, 0)}${ref.imGlossary?.[c] ? ` {glossary: ${ref.imGlossary[c].join(", ")}}` : ""}`);
     console.log(`  IM ${imLine.join("; ") || "—"}`);
+    const ckLine = block
+      .filter((c) => ref.ck12?.[c] || ref.ck12Titles?.[c])
+      .map((c) => `${c} ${Object.values(ref.ck12?.[c] ?? {}).reduce((a, b) => a + b, 0)}${ref.ck12Titles?.[c] ? ` {${ref.ck12Titles[c].slice(0, 2).join(" | ")}}` : ""}`);
+    console.log(`  CK-12 ${ckLine.join("; ") || "—"}`);
     console.log(`  Nicholson ${sectioned(ref.nicholson).join("; ") || "—"}   Levin ${sectioned(ref.levin).join("; ") || "—"}`);
     if (id) console.log(`  Wikipedia ${wiki ? `${wiki.title} (${wiki.via})` : "—"}`);
     if (verdicts.every((v) => v.kind === "undecided")) {

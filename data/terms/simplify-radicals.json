@@ -6,12 +6,13 @@
     "alt": []
   },
   "en": {
-    "term": "simplify radicals",
+    "term": "simplify the radical",
     "alt": [
-      "simplify the radical",
+      "simplify radicals",
       "simplest radical form"
     ],
-    "uk": null
+    "uk": null,
+    "register": "written"
   },
   "pos": "phrase",
   "mapping": "exact",
@@ -53,7 +54,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは決め手がなく（書き言葉の simplify radicals 8・simplify the radical 5・simplest radical form 2 はすべて OpenStax Algebra and Trigonometry）、OpenStax の呼び方を見出しにした。",
+    "用例コーパスの書き言葉では simplify the radical が 105 件（OpenStax Elementary Algebra 58・OpenStax Intermediate Algebra 42・OpenStax Algebra and Trigonometry 5）で、simplify radicals（29 件）・simplest radical form（2 件）より多い。話し言葉はどれも 10 件未満（simplify radicals 4 件、すべて NancyPi）。",
     "simplest radical form は「簡単にした結果の形」を指す名詞句。問題文の Write … in simplest radical form が「簡単にせよ」に当たる。",
     "分母の根号を消す「有理化」は別の操作で、英語では rationalize the denominator と言う。"
   ],
@@ -83,22 +84,17 @@
       "simplest radical form": 1
     },
     "written": {
-      "simplify radicals": 8,
-      "simplify the radical": 5,
+      "simplify radicals": 29,
+      "simplify the radical": 105,
       "simplest radical form": 2
     },
     "sources": [
       "khan-algebra",
       "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
       "yt:nancypi"
     ],
     "counted": "2026-09-25"
-  },
-  "flags": [
-    {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 6 件（10 未満） ／ 書: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満）。見出しは OpenStax の呼び方 simplify radicals（本文 8 件）。register は主張しない。",
-      "raised": "2026-09-25"
-    }
-  ]
+  }
 }

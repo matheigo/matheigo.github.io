@@ -46,7 +46,7 @@
   "pitfalls": [
     "外角と隣り合わない 2 つの内角は、英語で remote interior angles（nonadjacent interior angles）と呼ぶ。",
     "英語の exterior angle theorem は、外角が隣り合わない内角のどちらよりも大きいという不等式（ユークリッド原論 I.16）を指すこともある。",
-    "用例コーパスで exterior angle theorem は 0 件。IM では exterior angle が 5 件（Grade 8）あるが、定理の名前としては使われていない。"
+    "用例コーパスで exterior angle theorem は 0 件。IM では exterior angle が 5 件（Grade 8）あるが、定理の名前としては使われていない。CK-12 Geometry は 9 件（4.18 Exterior Angles and Theorems・3.6 Alternate Exterior Angles ほか）。"
   ],
   "related": [
     "triangle",
@@ -59,6 +59,12 @@
       "type": "wikipedia-langlink",
       "ja": "外角定理",
       "en": "Exterior angle theorem"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.18 Exterior Angles and Theorems・3.6 Alternate Exterior Angles・5.28 Exterior Angles in Convex Polygons"
     }
   ],
   "confidence": "likely",
@@ -74,8 +80,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 exterior angle theorem（CK-12 Geometry 4.18 Exterior Angles and Theorems・CK-12 Geometry 3.6 Alternate Exterior Angles・CK-12 Geometry 5.28 Exterior Angles in Convex Polygons・計 9 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

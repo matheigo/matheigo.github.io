@@ -10,8 +10,7 @@
   "en": {
     "term": "antidifferentiation",
     "alt": [
-      "reverse of differentiation",
-      "inverse operation"
+      "reverse of differentiation"
     ],
     "uk": null
   },
@@ -51,7 +50,7 @@
   "collocations": [],
   "pitfalls": [
     "動詞 antidifferentiate もあるが、授業では take the antiderivative と言うほうが多い（話し言葉コーパスで 68 対 10）。",
-    "米国の Pre-Algebra でも、方程式を解くときの足し算と引き算、掛け算と割り算の関係を inverse operations と呼ぶ。"
+    "米国の Pre-Algebra でも、方程式を解くときの足し算と引き算、掛け算と割り算の関係を inverse operations と呼ぶ（OpenStax Prealgebra ほかで書き言葉 8 件）。微分の逆の意味だけを数える形がないので、inverse operation は候補表現に数えない。"
   ],
   "related": [
     "antiderivative",
@@ -80,32 +79,27 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "antidifferentiation": 6,
-      "inverse operation": 4,
       "reverse of differentiation": 1
     },
     "written": {
       "antidifferentiation": 1,
-      "reverse of differentiation": 1,
-      "inverse operation": 1
+      "reverse of differentiation": 1
     },
     "sources": [
       "mit-18.01",
-      "openstax-algtrig",
       "openstax-calculus",
-      "yt:3blue1brown",
-      "yt:nancypi",
-      "yt:profleonard"
+      "yt:nancypi"
     ],
     "counted": "2026-09-25"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満 ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは CED の呼び方 antidifferentiation（topic 6.14・topic 7.6）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは CED の呼び方 antidifferentiation（topic 6.14・topic 7.6）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

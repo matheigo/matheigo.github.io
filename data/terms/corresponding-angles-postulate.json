@@ -48,7 +48,7 @@
   "pitfalls": [
     "逆の「同位角が等しければ 2 直線は平行」は converse of the corresponding angles postulate（theorem）と呼ぶ。",
     "これを公準として立てる場合、錯角が等しいこと（alternate interior angles theorem）は、この公準と対頂角から証明する。",
-    "用例コーパスでも IM でも corresponding angles postulate は 0 件。"
+    "用例コーパスでも IM でも corresponding angles postulate は 0 件。CK-12 Geometry は 3.4 Corresponding Angles ほかで 8 件使う。"
   ],
   "related": [
     "transversal",
@@ -59,6 +59,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "3.4 Corresponding Angles・2.15 Proofs- Angle Pairs and Segments・3.8 Angles and Perpendicular Lines"
     }
   ],
   "confidence": "likely",
@@ -74,8 +80,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 corresponding angles postulate（CK-12 Geometry 3.4 Corresponding Angles・CK-12 Geometry 2.15 Proofs- Angle Pairs and Segments・CK-12 Geometry 3.8 Angles and Perpendicular Lines・計 8 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

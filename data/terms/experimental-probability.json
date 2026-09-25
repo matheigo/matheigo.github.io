@@ -6,15 +6,15 @@
     "alt": []
   },
   "en": {
-    "term": "experimental probability",
+    "term": "empirical probability",
     "alt": [
-      "empirical probability"
+      "experimental probability"
     ],
     "uk": null
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語に決まった言い方がない（用例コーパスで experimental probability は 0 件、empirical probability は書き言葉 2 件）。確率を相対度数で見積もる、と説明することが多い。",
+  "mapping_note": "OpenStax Introductory Statistics は empirical probability と呼ぶ（書き言葉 5 件）。experimental probability は用例コーパスにも参照（CED・OpenStax・IM・CK-12）にも 0 件。確率を相対度数で見積もる、と説明することが多い。",
   "domains": [
     "statistics"
   ],
@@ -32,7 +32,7 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "We flipped the coin 200 times and got 94 heads, so the experimental probability is 0.47.",
+      "en": "We flipped the coin 200 times and got 94 heads, so the empirical probability is 0.47.",
       "ja": "硬貨を 200 回投げて表が 94 回出たので、統計的確率は 0.47。",
       "register": "spoken"
     },
@@ -52,6 +52,10 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
     }
   ],
   "confidence": "likely",
@@ -72,8 +76,8 @@
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 0 件 ／ 書 5 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。見出しは OpenStax の呼び方 empirical probability（本文 5 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

@@ -13,10 +13,11 @@ PLAN.md §6 をそのまま作業用に移したもの。**生成時に毎バッ
    首位だけが 10 件以上（2 位は 10 件未満）なら 3 倍に届かなくても ①。2 位は少数の variant にする。
    ③ 総件数 10 件未満 → 判断不能。話・書とも ③ のときは次の順に決める（register は主張しない）。
      ・mapping near ／ none で全候補が話・書とも 10 件未満 → 「英語に決まった言い方がない」（`corpus-no-fixed-expression`）。
-       mapping_note にそう書く。英語の名前をそのまま見出しにした語（LIATE）、CED の呼び方・IM の glossary の見出しになっている語、
+       mapping_note にそう書く。英語の名前をそのまま見出しにした語（LIATE）、CED の呼び方になっている語、
+       参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）のどれかが候補を 3 件以上使っている語、
        mapping none で ja が本プロジェクトの訳語の語（two-column proof など米国の名前が元の語）は除く。
-     ・それ以外 → 見出しは CED（AP Calculus ／ AP Statistics）→ OpenStax と IM（同じ段）→ Nicholson ／ Levin → 英語版 Wikipedia の記事名の順に最初に見つかった呼び方（`corpus-reference-fallback`。docs/SOURCES.md）。
-       Nicholson ／ Levin ／ Wikipedia で決まった語は mapping_note に「米国の高校課程（CED・OpenStax・IM）では扱わない」と件数を書く。
+     ・それ以外 → 見出しは CED（AP Calculus ／ AP Statistics）→ OpenStax・IM・CK-12（同じ段）→ Nicholson ／ Levin → 英語版 Wikipedia の記事名の順に最初に見つかった呼び方（`corpus-reference-fallback`。docs/SOURCES.md）。
+       Nicholson ／ Levin ／ Wikipedia で決まった語は mapping_note に「米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない」と件数を書く。
      ・どれにも無い → `corpus-undecided` で人間レビューへ。自分で判断して埋めない。
 2. 米国優先。英国異形は `en.uk` に入れる（math/maths、negative three / minus three、parentheses / brackets、trig / trigonometry）。
 3. 直訳禁止リスト（下）に触れる語は `mapping` を正直に付ける。
@@ -54,7 +55,7 @@ Stewart *Calculus* や Larson *Precalculus* は書名を出典に挙げるだけ
 | 解と係数の関係 | relation of solutions and coefficients | Vieta's formulas（大学）／ relationship between roots and coefficients（高校では説明的に） | near |
 | 平方完成 | — | completing the square（完成形は vertex form） | exact |
 | 移項 | transposition | subtract 3 from both sides ／ add 3 to both sides ／ move it over to the other side（話し言葉はこの頻度順。書き言葉は両辺の言い方） | near |
-| 約分 | — | reduce (a fraction) ／ cancel（動詞） | near |
+| 約分 | — | simplify the fraction（書き言葉 73 件、OpenStax Prealgebra ほか）／ cancel the common factor（分数式）／ reduce ／ cancel（動詞） | near |
 | 通分 | — | find a common denominator（動詞句） | near |
 | 代入 | — | plug in ／ substitute（話し言葉は plug in、書き言葉は substitute。高校向けの Khan は話し言葉でも substitute） | exact |
 | たすき掛け | cross multiplication | ac method ／ grouping ／ box method | none |
@@ -72,8 +73,8 @@ register が違う言い方は `en.variants` に `register` を付けて入れ�
 
 | 日本語 | 話し言葉 | 書き言葉・答案 |
 |---|---|---|
-| 移項する | subtract 3 from both sides ／ add 3 to both sides ／ move the 3x over to the other side（②併記。249 ／ 243 ／ 52。両辺は高校向け、other side は大学の講義寄り） | subtract 3 from both sides ／ add 3 to both sides（②併記。25 ／ 26）。両辺の 2 つは register both |
-| 代入する | plug in（①。1,403 対 substitute 361。Khan は substitute がほぼ全部）／ substitute back | substitute（①。739 対 35）。エントリは substitute を both にした |
+| 移項する | subtract 3 from both sides ／ add 3 to both sides ／ move the 3x over to the other side（②併記。249 ／ 244 ／ 52。両辺は高校向け、other side は大学の講義寄り） | add 3 to both sides ／ subtract 3 from both sides ／ isolate x ／ to the other side（②併記。92 ／ 92 ／ 14 ／ 10。後の 2 つは OpenStax Prealgebra・Elementary Algebra が中心）。両辺と other side は register both |
+| 代入する | plug in（①。1,405 対 substitute 391。Khan は substitute がほぼ全部）／ substitute back | substitute（①。1,338 対 plug in 35）。エントリは substitute を both にした |
 | よって | so | therefore / hence |
 
 Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を好むことが多い。迷ったら written 側を答案に使う。
