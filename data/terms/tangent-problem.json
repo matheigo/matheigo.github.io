@@ -1,0 +1,79 @@
+{
+  "id": "tangent-problem",
+  "ja": {
+    "term": "接線問題",
+    "reading": "せっせんもんだい",
+    "alt": []
+  },
+  "en": {
+    "term": "tangent problem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「接線問題」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "曲線上の点で接線の傾きを求めるという問題。微分の出発点として教科書で紹介される。",
+  "definition_en": "The problem of finding the slope of the tangent line to a curve at a point, used to introduce the derivative.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The tangent problem leads to derivatives, and the area problem leads to integrals.",
+      "ja": "接線問題から微分が、面積問題から積分が生まれる。",
+      "register": "spoken"
+    },
+    {
+      "en": "The tangent problem asks for the slope of the line tangent to y = x² at (1, 1).",
+      "ja": "接線問題とは、たとえば点 (1, 1) における y = x² の接線の傾きを求める問題である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "area-problem",
+    "slope-of-the-tangent-line",
+    "derivative"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "tangent problem": 5
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。見出しは OpenStax の呼び方 tangent problem（本文 5 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

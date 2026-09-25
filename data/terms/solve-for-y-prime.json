@@ -1,0 +1,89 @@
+{
+  "id": "solve-for-y-prime",
+  "ja": {
+    "term": "y′ について解く",
+    "reading": "わいだっしゅについてとく",
+    "alt": []
+  },
+  "en": {
+    "term": "solve for dy/dx",
+    "alt": [
+      "solve for y prime"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "陰関数の微分をしたあとの式を、dy/dx（y′）について解く。",
+  "definition_en": "To isolate dy/dx (y′) after differentiating an equation implicitly.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Now get all the dy/dx terms on one side and solve for dy/dx.",
+      "ja": "dy/dx を含む項を片側に集めて、dy/dx について解く。",
+      "register": "spoken"
+    },
+    {
+      "en": "Differentiate implicitly and solve for dy/dx: x² + xy + y² = 7.",
+      "ja": "x² + xy + y² = 7 を陰関数として微分し、dy/dx について解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の答案は y′ と書くことが多いが、米国の授業では dy/dx と書くことが多い（用例コーパスで solve for dy/dx は話し言葉 18 件、solve for y prime は 1 件）。"
+  ],
+  "related": [
+    "implicit-differentiation",
+    "differentiate-both-sides"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "solve for dy/dx": 18,
+      "solve for y prime": 1
+    },
+    "written": {
+      "solve for dy/dx": 7
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

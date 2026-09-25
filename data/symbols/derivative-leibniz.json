@@ -1,0 +1,58 @@
+{
+  "id": "derivative-leibniz",
+  "latex": "\\frac{dy}{dx}",
+  "spoken_en": [
+    {
+      "text": "d y d x",
+      "register": "standard"
+    },
+    {
+      "text": "d y over d x",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "ディーワイ ディーエックス",
+  "name_en": "derivative (Leibniz notation)",
+  "name_ja": "導関数（ライプニッツの記法）",
+  "term_ref": "leibniz-notation",
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "notes": [
+    "dy/dx は分数に見えるが、over を入れずに d y d x と読むことが多い（用例コーパスの話し言葉で dy dx 335 件、dy over dx 20 件）。",
+    "d/dx だけのときは d d x と読み、d/dx (x²) は the derivative of x squared（with respect to x）とも言う。",
+    "日本語の「ディーワイディーエックス」と同じ順で読めば通じる。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "d y d x": 335,
+      "d y over d x": 20
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

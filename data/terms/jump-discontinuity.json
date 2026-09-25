@@ -1,0 +1,90 @@
+{
+  "id": "jump-discontinuity",
+  "ja": {
+    "term": "跳躍不連続",
+    "reading": "ちょうやくふれんぞく",
+    "alt": []
+  },
+  "en": {
+    "term": "jump discontinuity",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「跳躍不連続」は日本の高校の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "左右の片側極限はどちらも存在するが、値が一致しない不連続点。グラフが跳んでいる。",
+  "definition_en": "A discontinuity where both one-sided limits exist but are different, so the graph jumps.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The floor function has a jump discontinuity at every integer.",
+      "ja": "床関数（ガウス記号の関数）はすべての整数で跳躍不連続になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "f has a jump discontinuity at x = 0 because the limit from the left differs from the limit from the right.",
+      "ja": "左側極限と右側極限が異なるので、f は x = 0 で跳躍不連続である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "discontinuous",
+    "removable-discontinuity",
+    "infinite-discontinuity",
+    "one-sided-limit"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "jump discontinuity": 21
+    },
+    "written": {
+      "jump discontinuity": 23
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "area-problem",
+  "ja": {
+    "term": "面積問題",
+    "reading": "めんせきもんだい",
+    "alt": []
+  },
+  "en": {
+    "term": "area problem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「面積問題」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "曲線の下の部分の面積を求めるという問題。積分の出発点として教科書で紹介される。",
+  "definition_en": "The problem of finding the area under a curve, used to introduce the integral.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The area problem is where integrals come from.",
+      "ja": "積分は面積問題から生まれた。",
+      "register": "spoken"
+    },
+    {
+      "en": "The area problem asks for the area of the region under y = x² from x = 0 to x = 1.",
+      "ja": "面積問題とは、たとえば x = 0 から x = 1 までの y = x² の下の部分の面積を求める問題である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "tangent-problem",
+    "riemann-sum",
+    "area-under-the-curve"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "area problem": 4
+    },
+    "written": {
+      "area problem": 6
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 area problem（本文 6 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

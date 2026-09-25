@@ -1,0 +1,84 @@
+{
+  "id": "infinite-limit",
+  "ja": {
+    "term": "無限大の極限",
+    "reading": "むげんだいのきょくげん",
+    "alt": []
+  },
+  "en": {
+    "term": "infinite limit",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「無限大の極限」は日本の教科書に無い、本プロジェクトの訳語。日本の数III は同じことを「正の無限大（負の無限大）に発散する」と言う。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "変数を近づけたとき関数の値が限りなく大きく（または小さく）なる極限。lim f(x) = ∞ と書く。",
+  "definition_en": "A limit in which f(x) grows without bound (toward ∞ or −∞), written lim f(x) = ∞.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "That's an infinite limit, so there's a vertical asymptote at x = 2.",
+      "ja": "無限大の極限なので、x = 2 に垂直な漸近線がある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate the infinite limit lim_{x→0} 1/x².",
+      "ja": "極限 lim_{x→0} 1/x² を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "diverge-to-positive-infinity",
+    "limit-at-infinity",
+    "infinite-discontinuity"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 1.14（infinite limits）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "infinite limit": 1
+    },
+    "written": {
+      "infinite limit": 36
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "limit-at-infinity",
+  "ja": {
+    "term": "無限遠での極限",
+    "reading": "むげんえんでのきょくげん",
+    "alt": []
+  },
+  "en": {
+    "term": "limit at infinity",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「無限遠での極限」は日本の教科書に無い、本プロジェクトの訳語。日本の数III は「x → ∞ のときの極限」と言う。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "x → ∞（または x → −∞）のときの関数の極限。",
+  "definition_en": "The limit of f(x) as x → ∞ or as x → −∞.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The limit at infinity is 2, so y = 2 is a horizontal asymptote.",
+      "ja": "x → ∞ の極限が 2 なので、y = 2 が水平な漸近線。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the limit at infinity of f(x) = (3x² − x)/(x² + 5).",
+      "ja": "x → ∞ のときの f(x) = (3x² − x)/(x² + 5) の極限を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "x → ±∞ でのグラフのふるまいを、米国の教科書は end behavior と言う（用例コーパスの書き言葉で 128 件）。"
+  ],
+  "related": [
+    "as-x-approaches-infinity",
+    "infinite-limit",
+    "find-the-asymptotes"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 1.15（limits at infinity）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "limit at infinity": 16
+    },
+    "written": {
+      "limit at infinity": 42
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "outer-function",
+  "ja": {
+    "term": "外側の関数",
+    "reading": "そとがわのかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "outer function",
+    "alt": [],
+    "variants": [
+      {
+        "term": "outside function",
+        "register": "spoken",
+        "note": "話し言葉ではこちらが最も多い。話し言葉で 52 件（NancyPi 16・Khan Academy 12・MIT OCW 11 ほか 13）、書き言葉で 4 件（OpenStax Algebra and Trigonometry 3・OpenStax Calculus 1）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "合成関数 f(g(x)) で、あとから施す外側の関数 f。",
+  "definition_en": "In a composite function f(g(x)), the function f that is applied last.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The outside function is the fifth power, and the inside is 3x plus 1.",
+      "ja": "外側の関数は 5 乗、内側は 3x + 1。",
+      "register": "spoken"
+    },
+    {
+      "en": "For y = (3x + 1)⁵, the outer function is u⁵ and the inner function is u = 3x + 1.",
+      "ja": "y = (3x + 1)⁵ では、外側の関数は u⁵、内側の関数は u = 3x + 1 である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "inner-function",
+    "chain-rule",
+    "composite-function"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "outside function": 52,
+      "outer function": 35
+    },
+    "written": {
+      "outer function": 13,
+      "outside function": 4
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "transcendental-function",
+  "ja": {
+    "term": "超越関数",
+    "reading": "ちょうえつかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "transcendental function",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "代数関数でない関数。指数関数・対数関数・三角関数など。",
+  "definition_en": "A function that is not algebraic, such as exponential, logarithmic, and trigonometric functions.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Exponential and trig functions are transcendental functions.",
+      "ja": "指数関数や三角関数は超越関数だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Classify f(x) = eˣ + x² as an algebraic or a transcendental function.",
+      "ja": "f(x) = eˣ + x² が代数関数か超越関数かを答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Calculus Volume 1 は、関数の種類を紹介する節（Basic Classes of Functions）で algebraic functions と transcendental functions に分ける。"
+  ],
+  "related": [
+    "algebraic-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "超越関数",
+      "en": "Transcendental function"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "transcendental function": 8
+    },
+    "written": {
+      "transcendental function": 6
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 transcendental function（本文 6 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

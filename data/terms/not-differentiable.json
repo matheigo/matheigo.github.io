@@ -1,0 +1,90 @@
+{
+  "id": "not-differentiable",
+  "ja": {
+    "term": "微分不可能",
+    "reading": "びぶんふかのう",
+    "alt": []
+  },
+  "en": {
+    "term": "not differentiable",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "その点で微分係数が存在しないこと。",
+  "definition_en": "Having no derivative at a point.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "At a corner, the function is not differentiable.",
+      "ja": "尖ったところでは、関数は微分可能でない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that f(x) = |x| is not differentiable at x = 0.",
+      "ja": "f(x) = |x| が x = 0 で微分可能でないことを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「微分不可能な点」は a point where f is not differentiable と文で言う。1 語の nondifferentiable は用例コーパスに 0 件。"
+  ],
+  "related": [
+    "differentiable",
+    "differentiability",
+    "cusp",
+    "corner-nondifferentiable",
+    "vertical-tangent"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "not differentiable": 33
+    },
+    "written": {
+      "not differentiable": 41
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

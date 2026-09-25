@@ -1,0 +1,94 @@
+{
+  "id": "curve-sketching",
+  "ja": {
+    "term": "曲線の概形",
+    "reading": "きょくせんのがいけい",
+    "alt": []
+  },
+  "en": {
+    "term": "curve sketching",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "導関数の符号・凹凸・漸近線などを調べて、曲線のおおまかな形をかくこと。",
+  "definition_en": "Drawing the general shape of a graph from its derivatives, concavity, and asymptotes.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Curve sketching puts it all together: intercepts, critical points, concavity, and asymptotes.",
+      "ja": "曲線の概形をかくには、切片・臨界点・凹凸・漸近線をすべて使う。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use calculus to sketch the curve y = x⁴ − 4x³.",
+      "ja": "微分を用いて曲線 y = x⁴ − 4x³ の概形をかけ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "AP の CED は topic 5.9 で、f・f′・f″ のグラフどうしの関係を読み取る（connecting a function, its first derivative, and its second derivative）。"
+  ],
+  "related": [
+    "sketch-the-graph",
+    "concavity",
+    "increasing-and-decreasing"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 5.9（connecting a function, its first derivative, and its second derivative）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "curve sketching": 4
+    },
+    "written": {
+      "curve sketching": 3
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 curve sketching（本文 2 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "constant-multiple-rule",
+  "ja": {
+    "term": "定数倍の法則",
+    "reading": "ていすうばいのほうそく",
+    "alt": [
+      "定数倍"
+    ]
+  },
+  "en": {
+    "term": "constant multiple rule",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「定数倍の法則」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書は {kf(x)}′ = kf′(x) を導関数の性質として示し、名前を付けない。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "定数倍の導関数は導関数の定数倍になる、{kf(x)}′ = kf′(x) という性質。",
+  "definition_en": "The rule that the derivative of a constant times a function is the constant times the derivative.",
+  "latex": "(kf)' = kf'",
+  "spoken_en": "the derivative of k f is k times f prime",
+  "examples": [
+    {
+      "en": "Constant multiple rule: pull the 5 out front and differentiate x squared.",
+      "ja": "定数倍の法則で、5 を前に出して x² を微分する。",
+      "register": "spoken"
+    },
+    {
+      "en": "By the constant multiple rule, the derivative of 5x² is 10x.",
+      "ja": "定数倍の法則より、5x² の導関数は 10x である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "derivative-of-a-sum",
+    "power-rule"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "constant multiple rule": 10
+    },
+    "written": {
+      "constant multiple rule": 15
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-calculus",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-24"
+  }
+}

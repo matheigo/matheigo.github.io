@@ -25,6 +25,14 @@ import {
 } from "../scripts/corpus/lib";
 
 describe("normalize", () => {
+  it("reads a typed dy/dx as it is said", () => {
+    expect(normalize("solve for dy/dx")).toBe("solve for dy dx");
+  });
+
+  it("folds the spellings of L'Hôpital", () => {
+    expect(normalize("L'Hôpital's rule, L'Hopital's rule and L'Hospital's rule")).toBe("l'hopital's rule, l'hopital's rule and l'hopital's rule");
+  });
+
   it("folds the spellings of the same spoken form", () => {
     expect(normalize("F-prime of x")).toBe("f prime of x");
     expect(normalize("f prime of x")).toBe("f prime of x");
@@ -314,6 +322,16 @@ describe("settleUndecided", () => {
   it("does not apply that to an English name taken over as the headword", () => {
     const s = settleUndecided({ mapping: "none", ja: "LIATE", en: "LIATE" }, { spoken: 2, written: 7 }, ref({ openstax: { LIATE: 7 } }), ["LIATE"]);
     expect(s).toMatchObject({ kind: "reference", by: "openstax", head: "LIATE" });
+  });
+
+  it("does not apply that to a wording the CED uses", () => {
+    const s = settleUndecided(
+      { mapping: "none", ja: "候補点テスト", en: "candidates test" },
+      { spoken: 0, written: 0 },
+      ref({ ced: { "candidates test": { "5.5": 1 } } }),
+      ["candidates test"],
+    );
+    expect(s).toEqual({ kind: "reference", by: "ced", head: "candidates test", where: ["5.5"] });
   });
 
   it("takes the CED's name before OpenStax's, with its topics", () => {

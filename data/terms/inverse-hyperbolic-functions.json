@@ -1,0 +1,88 @@
+{
+  "id": "inverse-hyperbolic-functions",
+  "ja": {
+    "term": "逆双曲線関数",
+    "reading": "ぎゃくそうきょくせんかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "inverse hyperbolic functions",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "双曲線関数の逆関数 sinh⁻¹ x、cosh⁻¹ x など。",
+  "definition_en": "The inverses of the hyperbolic functions, such as sinh⁻¹ x and cosh⁻¹ x.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The inverse hyperbolic functions can all be written with natural logs.",
+      "ja": "逆双曲線関数はどれも自然対数で書ける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that sinh⁻¹ x = ln(x + √(x² + 1)).",
+      "ja": "sinh⁻¹ x = log(x + √(x² + 1)) を示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "hyperbolic-functions",
+    "derivatives-of-inverse-trig-functions"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "逆双曲線関数",
+      "en": "Inverse hyperbolic functions"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "inverse hyperbolic functions": 1
+    },
+    "written": {
+      "inverse hyperbolic functions": 9
+    },
+    "sources": [
+      "openstax-calculus",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 inverse hyperbolic functions（本文 9 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

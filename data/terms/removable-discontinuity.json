@@ -1,0 +1,95 @@
+{
+  "id": "removable-discontinuity",
+  "ja": {
+    "term": "除去可能な不連続点",
+    "reading": "じょきょかのうなふれんぞくてん",
+    "alt": [
+      "除去可能な不連続"
+    ]
+  },
+  "en": {
+    "term": "removable discontinuity",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "1 点での値を定め直せば連続になる不連続点。グラフでは穴になる。",
+  "definition_en": "A discontinuity that could be removed by redefining the function at a single point; it shows up as a hole in the graph.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "(x² − 1)/(x − 1) has a removable discontinuity at x = 1. It's just a hole.",
+      "ja": "(x² − 1)/(x − 1) は x = 1 で除去可能な不連続点をもつ。ただの穴だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Identify the removable discontinuity of f(x) = (x² − 4)/(x − 2).",
+      "ja": "f(x) = (x² − 4)/(x − 2) の除去可能な不連続点を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校の教科書は不連続点の種類に名前を付けない。グラフの穴は英語で hole。"
+  ],
+  "related": [
+    "discontinuous",
+    "jump-discontinuity",
+    "infinite-discontinuity"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "removable discontinuity": 31
+    },
+    "written": {
+      "removable discontinuity": 49
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

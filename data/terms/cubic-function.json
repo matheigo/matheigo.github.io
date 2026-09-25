@@ -1,0 +1,89 @@
+{
+  "id": "cubic-function",
+  "ja": {
+    "term": "3 次関数",
+    "reading": "さんじかんすう",
+    "alt": [
+      "三次関数"
+    ]
+  },
+  "en": {
+    "term": "cubic function",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus AB"
+    ]
+  },
+  "definition_ja": "3 次式 y = ax³ + bx² + cx + d（a ≠ 0）で表される関数。",
+  "definition_en": "A function given by a polynomial of degree 3, y = ax³ + bx² + cx + d with a ≠ 0.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A cubic function can have two turning points, or none at all.",
+      "ja": "3 次関数のグラフは、山と谷を 1 つずつもつか、まったくもたないかのどちらか。",
+      "register": "spoken"
+    },
+    {
+      "en": "Sketch the graph of the cubic function f(x) = x³ − 3x² + 4.",
+      "ja": "3 次関数 f(x) = x³ − 3x² + 4 のグラフの概形をかけ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "local-extremum",
+    "sketch-the-graph",
+    "number-of-real-solutions"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "cubic function": 3
+    },
+    "written": {
+      "cubic function": 18
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

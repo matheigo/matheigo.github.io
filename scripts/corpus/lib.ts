@@ -56,6 +56,10 @@ export const VARIANTS: [RegExp, string][] = [
   // Hyphenation only. "u sub" is left alone: it is also how a subscript is read (u sub n).
   [/\bu\s+substitution/g, "u-substitution"],
   [/\banti[-\s]derivative/g, "antiderivative"],
+  // Leibniz notation typed with a slash in captions ("dy/dx") is said "dy dx"
+  [/\bd([a-z])\/d([a-z])\b/g, "d$1 d$2"],
+  // One name, three spellings: L'Hôpital (OpenStax), L'Hopital (captions), L'Hospital (older)
+  [/\bl'?h[oô]s?pital/g, "l'hopital"],
 ];
 
 /** Numbers spoken aloud. Transcripts mix digits and words. */
@@ -644,9 +648,10 @@ export function referenceHits(
  *   no-fixed-expression  mapping near / none and every candidate together has
  *                        fewer than MIN_TOTAL hits in each register: English
  *                        has no set way to say it. That is the finding - it
- *                        does not go to the human. Not for an English name
- *                        taken over as the Japanese headword (LIATE): there
- *                        the English name IS the expression, just a rare one
+ *                        does not go to the human. Not when the English name
+ *                        is known to exist, just rare: an English name taken
+ *                        over as the Japanese headword (LIATE), or a wording
+ *                        the CED itself uses (the Candidates Test)
  *   reference            otherwise the headword is what the CED calls it, or
  *                        failing that what OpenStax calls it (body or section
  *                        title). No register is claimed
@@ -664,14 +669,15 @@ export function settleUndecided(
   order: string[],
 ): Settled {
   const { mapping, ja, en } = entry;
-  const borrowed = ja !== undefined && en !== undefined && ja.trim().toLowerCase() === en.trim().toLowerCase();
-  if ((mapping === "near" || mapping === "none") && !borrowed && raw.spoken < MIN_TOTAL && raw.written < MIN_TOTAL) {
-    return { kind: "no-fixed-expression", ...raw };
-  }
   const best = (score: (c: string) => number) =>
     order.filter((c) => score(c) > 0).sort((a, b) => score(b) - score(a) || order.indexOf(a) - order.indexOf(b))[0];
   const cedTotal = (c: string) => Object.values(ref.ced[c] ?? {}).reduce((a, b) => a + b, 0);
   const ced = best(cedTotal);
+  const borrowed = ja !== undefined && en !== undefined && ja.trim().toLowerCase() === en.trim().toLowerCase();
+  const named = borrowed || ced !== undefined;
+  if ((mapping === "near" || mapping === "none") && !named && raw.spoken < MIN_TOTAL && raw.written < MIN_TOTAL) {
+    return { kind: "no-fixed-expression", ...raw };
+  }
   if (ced) {
     const sections = Object.keys(ref.ced[ced]);
     const topics = sections.filter((s) => /^\d/.test(s));

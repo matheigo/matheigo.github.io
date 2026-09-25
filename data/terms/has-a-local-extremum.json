@@ -1,0 +1,91 @@
+{
+  "id": "has-a-local-extremum",
+  "ja": {
+    "term": "極値をもつ",
+    "reading": "きょくちをもつ",
+    "alt": []
+  },
+  "en": {
+    "term": "has a local extremum",
+    "alt": [],
+    "variants": [
+      {
+        "term": "has a relative extremum",
+        "register": "spoken",
+        "note": "Khan Academy の言い方で、件数は少ない。話し言葉で 3 件（すべて Khan Academy）、書き言葉では 0 件。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "関数がどこかで極大または極小になる。",
+  "definition_en": "Of a function: to have a local maximum or a local minimum somewhere.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If f prime never changes sign, f has no local extremum.",
+      "ja": "f′ の符号が一度も変わらなければ、f は極値をもたない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the values of a for which f(x) = x³ + ax has a local extremum.",
+      "ja": "f(x) = x³ + ax が極値をもつような a の値の範囲を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「極値をもたない」は has no local extremum（has no local extrema）。"
+  ],
+  "related": [
+    "local-extremum",
+    "has-a-local-maximum-at",
+    "critical-point"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "has a relative extremum": 3
+    },
+    "written": {
+      "has a local extremum": 16
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

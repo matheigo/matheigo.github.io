@@ -1,0 +1,81 @@
+{
+  "id": "find-the-inflection-points",
+  "ja": {
+    "term": "変曲点を求める",
+    "reading": "へんきょくてんをもとめる",
+    "alt": []
+  },
+  "en": {
+    "term": "find the inflection points",
+    "alt": [
+      "find the points of inflection"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "曲線の凹凸が入れ替わる点を求める。",
+  "definition_en": "To find the points where a graph changes concavity.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To find the inflection points, set f double prime equal to zero and check that it actually changes sign.",
+      "ja": "変曲点を求めるには、f″ = 0 とおいて、そこで本当に符号が変わるかを確かめる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the inflection points of f(x) = x³ − 6x² + 9x.",
+      "ja": "f(x) = x³ − 6x² + 9x の変曲点を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "inflection-point",
+    "check-the-concavity",
+    "second-derivative"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "find the inflection points": 1
+    },
+    "sources": [
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

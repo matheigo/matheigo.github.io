@@ -1,0 +1,101 @@
+{
+  "id": "differentiate-both-sides",
+  "ja": {
+    "term": "両辺を微分する",
+    "reading": "りょうへんをびぶんする",
+    "alt": [
+      "両辺を x で微分する"
+    ]
+  },
+  "en": {
+    "term": "differentiate both sides",
+    "alt": [],
+    "variants": [
+      {
+        "term": "take the derivative of both sides",
+        "register": "spoken",
+        "note": "Khan Academy に多い言い方。話し言葉で 45 件（Khan Academy 36・Professor Leonard 4・MIT OCW 2 ほか 3）、書き言葉で 2 件（すべて OpenStax Calculus）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "等式の両辺を同じ変数で微分する。",
+  "definition_en": "To differentiate each side of an equation with respect to the same variable.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Take the derivative of both sides, and remember the chain rule on every y.",
+      "ja": "両辺を微分する。y の項には合成関数の微分を忘れずに。",
+      "register": "spoken"
+    },
+    {
+      "en": "Differentiate both sides of x² + y² = 25 with respect to x.",
+      "ja": "x² + y² = 25 の両辺を x で微分せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「x で微分する」は with respect to x を付けて言う。"
+  ],
+  "related": [
+    "implicit-differentiation",
+    "solve-for-y-prime",
+    "differentiate"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "take the derivative of both sides": 45,
+      "differentiate both sides": 12
+    },
+    "written": {
+      "differentiate both sides": 16,
+      "take the derivative of both sides": 2
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-6.042",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

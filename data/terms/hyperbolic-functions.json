@@ -1,0 +1,95 @@
+{
+  "id": "hyperbolic-functions",
+  "ja": {
+    "term": "双曲線関数",
+    "reading": "そうきょくせんかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "hyperbolic functions",
+    "alt": [],
+    "variants": [
+      {
+        "term": "hyperbolic trig functions",
+        "register": "spoken",
+        "note": "大学の講義（MIT OCW）の言い方。話し言葉で 13 件（MIT OCW 11・blackpenredpen 2）、書き言葉では 0 件。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "sinh x = (eˣ − e⁻ˣ)/2、cosh x = (eˣ + e⁻ˣ)/2 などで定まる関数。",
+  "definition_en": "Functions such as sinh x = (eˣ − e⁻ˣ)/2 and cosh x = (eˣ + e⁻ˣ)/2.",
+  "latex": "\\sinh x = \\frac{e^x - e^{-x}}{2}, \\quad \\cosh x = \\frac{e^x + e^{-x}}{2}",
+  "spoken_en": "hyperbolic sine of x equals e to the x minus e to the negative x, over two",
+  "examples": [
+    {
+      "en": "The hyperbolic functions are built from e to the x and e to the negative x.",
+      "ja": "双曲線関数は eˣ と e⁻ˣ からつくられる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that cosh²x − sinh²x = 1.",
+      "ja": "cosh²x − sinh²x = 1 を示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校では扱わない。sinh は hyperbolic sine と読む。"
+  ],
+  "related": [
+    "inverse-hyperbolic-functions",
+    "base-of-the-natural-logarithm"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "双曲線関数",
+      "en": "Hyperbolic functions"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "hyperbolic trig functions": 13,
+      "hyperbolic functions": 2
+    },
+    "written": {
+      "hyperbolic functions": 52
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "rectilinear-motion",
+  "ja": {
+    "term": "直線運動",
+    "reading": "ちょくせんうんどう",
+    "alt": []
+  },
+  "en": {
+    "term": "straight-line motion",
+    "alt": [
+      "rectilinear motion",
+      "motion along a line"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "直線（数直線）上を動く点の運動。位置・速度・加速度が微分で結びつく。",
+  "definition_en": "Motion of a point along a straight line, in which position, velocity, and acceleration are related by derivatives.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For straight-line motion, the particle moves to the right when the velocity is positive.",
+      "ja": "直線運動では、速度が正のとき点は右に動く。",
+      "register": "spoken"
+    },
+    {
+      "en": "A particle moves along the x-axis with position x(t) = t³ − 6t² + 9t. When is it moving to the left?",
+      "ja": "x 軸上を動く点の位置が x(t) = t³ − 6t² + 9t のとき、点が左に動くのはいつか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "AP の CED は topic 4.2 の名前で straight-line motion と言い、本文では rectilinear motion も使う。"
+  ],
+  "related": [
+    "velocity",
+    "acceleration",
+    "instantaneous-velocity"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 4.2（straight-line motion ／ rectilinear motion）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "motion along a line": 3,
+      "rectilinear motion": 3
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは CED の呼び方 straight-line motion（topic 4.2）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

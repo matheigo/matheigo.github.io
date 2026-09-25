@@ -1,0 +1,95 @@
+{
+  "id": "optimization-problem",
+  "ja": {
+    "term": "最適化問題",
+    "reading": "さいてきかもんだい",
+    "alt": [
+      "最適化"
+    ]
+  },
+  "en": {
+    "term": "optimization problem",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の数II・数III は、文章題の最大・最小を「最大・最小の応用」として扱い、「最適化」とは呼ばない。米国では optimization problems と呼び、AP の CED は topic 5.10・5.11 で扱う。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "条件のもとで、ある量を最大または最小にする値を微分を使って求める文章題。",
+  "definition_en": "A word problem asking for the value that makes some quantity as large or as small as possible, solved with derivatives.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In an optimization problem, write the thing you're maximizing as a function of one variable first.",
+      "ja": "最適化問題では、最大にしたい量をまず 1 変数の関数で表す。",
+      "register": "spoken"
+    },
+    {
+      "en": "A farmer has 200 m of fencing to enclose a rectangular field along a river, with no fence on the river side. What dimensions maximize the area?",
+      "ja": "川沿いの長方形の畑を 200 m の柵で囲む（川側には柵を置かない）。面積を最大にする縦と横の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "absolute-extrema",
+    "critical-point",
+    "candidates-test"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "最適化問題",
+      "en": "Optimization problem"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 5.10・5.11（optimization problems）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "optimization problem": 15
+    },
+    "written": {
+      "optimization problem": 33
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

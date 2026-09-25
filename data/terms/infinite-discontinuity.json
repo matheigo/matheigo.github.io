@@ -1,0 +1,82 @@
+{
+  "id": "infinite-discontinuity",
+  "ja": {
+    "term": "無限不連続",
+    "reading": "むげんふれんぞく",
+    "alt": []
+  },
+  "en": {
+    "term": "infinite discontinuity",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「無限不連続」は日本の高校の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "片側極限の少なくとも一方が ±∞ になる不連続点。そこに垂直な漸近線がある。",
+  "definition_en": "A discontinuity where at least one one-sided limit is ∞ or −∞; there is a vertical asymptote there.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "At x = 0, one over x has an infinite discontinuity.",
+      "ja": "1/x は x = 0 で無限不連続になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "The function f(x) = 1/(x − 3) has an infinite discontinuity at x = 3.",
+      "ja": "関数 f(x) = 1/(x − 3) は x = 3 で無限不連続となる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "discontinuous",
+    "infinite-limit",
+    "removable-discontinuity",
+    "jump-discontinuity"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "infinite discontinuity": 4
+    },
+    "written": {
+      "infinite discontinuity": 14
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "newtons-method",
+  "ja": {
+    "term": "ニュートン法",
+    "reading": "にゅーとんほう",
+    "alt": []
+  },
+  "en": {
+    "term": "Newton's method",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "f(x) = 0 の解を、接線と x 軸の交点を繰り返し求めて近似する方法。",
+  "definition_en": "A method for approximating a solution of f(x) = 0 by repeatedly following the tangent line down to the x-axis.",
+  "latex": "x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)}",
+  "spoken_en": "x sub n plus one equals x sub n minus f of x sub n over f prime of x sub n",
+  "examples": [
+    {
+      "en": "Newton's method: start with a guess and slide down the tangent line to the axis.",
+      "ja": "ニュートン法は、最初の予想から接線をたどって x 軸に下りることを繰り返す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use Newton's method with x₀ = 1 to approximate √2 to four decimal places.",
+      "ja": "x₀ = 1 としてニュートン法を用い、√2 を小数第 4 位まで求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "linear-approximation",
+    "slope-of-the-tangent-line"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ニュートン法",
+      "en": "Newton's method"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "Newton's method": 18
+    },
+    "written": {
+      "Newton's method": 66
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}
