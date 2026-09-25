@@ -1,0 +1,103 @@
+{
+  "id": "trigonometric-ratio",
+  "ja": {
+    "term": "三角比",
+    "reading": "さんかくひ",
+    "alt": []
+  },
+  "en": {
+    "term": "trigonometric ratio",
+    "alt": [
+      "trig ratio"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "直角三角形の辺の比で定める sin θ, cos θ, tan θ の総称。鈍角を含む 0° ≦ θ ≦ 180° では、原点を中心とする半円上の点の座標で定める。",
+  "definition_en": "The ratios sine, cosine, and tangent of an angle, defined from the sides of a right triangle; for angles up to 180°, they are defined from the coordinates of a point on a circle centered at the origin.",
+  "latex": "\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}},\\quad \\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}},\\quad \\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}",
+  "spoken_en": "sine theta is opposite over hypotenuse, cosine theta is adjacent over hypotenuse, tangent theta is opposite over adjacent",
+  "examples": [
+    {
+      "en": "The trig ratios only depend on the angle, not on how big the triangle is.",
+      "ja": "三角比は角だけで決まり、三角形の大きさにはよらない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the values of the trigonometric ratios of 150°.",
+      "ja": "150° の三角比の値を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "In right triangle ABC with ∠C = 90°, express BC in terms of AB and a trigonometric ratio of ∠A.",
+      "ja": "∠C = 90° の直角三角形 ABC において、BC を AB と ∠A の三角比を用いて表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは trigonometric ratio が書き言葉 4 件、trig ratio が話し言葉 1 件と少なく、register は決めていない。見出しは OpenStax の呼び方（本文 4 件）。",
+    "鈍角では cos と tan が負になる。sin(180° − θ) = sin θ、cos(180° − θ) = −cos θ、tan(180° − θ) = −tan θ。",
+    "英語の覚え方 SOH-CAH-TOA は、Sine = Opposite/Hypotenuse、Cosine = Adjacent/Hypotenuse、Tangent = Opposite/Adjacent の頭文字。",
+    "数I の三角比は、直角三角形の鋭角で定めてから、座標を使って 0° ≦ θ ≦ 180° まで広げる。数II で一般角に広げたものが三角関数（trigonometric function）。"
+  ],
+  "related": [
+    "sine",
+    "cosine",
+    "tangent",
+    "adjacent-side",
+    "trigonometric-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "trig ratio": 1
+    },
+    "written": {
+      "trigonometric ratio": 4
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 4 件（10 未満））。見出しは OpenStax の呼び方 trigonometric ratio（本文 4 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

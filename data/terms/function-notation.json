@@ -1,0 +1,94 @@
+{
+  "id": "function-notation",
+  "ja": {
+    "term": "関数記号",
+    "reading": "かんすうきごう",
+    "alt": [
+      "関数記法"
+    ]
+  },
+  "en": {
+    "term": "function notation",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "関数に f などの名前を付け、x に対応する値を f(x) と書き表す書き方。",
+  "definition_en": "The way of naming a function, such as f, and writing its output for the input x as f(x).",
+  "latex": "y = f(x)",
+  "spoken_en": "y equals f of x",
+  "examples": [
+    {
+      "en": "In function notation, instead of y = 3x + 2 we write f(x) = 3x + 2.",
+      "ja": "関数記号を使うと、y = 3x + 2 の代わりに f(x) = 3x + 2 と書く。",
+      "register": "spoken"
+    },
+    {
+      "en": "Rewrite the equation y = x² − 5 using function notation, and then find f(3).",
+      "ja": "y = x² − 5 を関数記号を用いて書き直し、f(3) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "f(x) は「f かける x」ではない。括弧は掛け算ではなく、f に x を入れた値を表す。",
+    "英語版 Wikipedia の Function symbol（日本語版「関数記号」の対応記事）は数理論理学の用語。f(x) という書き方そのものは function notation と言う。"
+  ],
+  "related": [
+    "value-of-the-function",
+    "evaluate",
+    "composite-function",
+    "inverse-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "function notation": 16
+    },
+    "written": {
+      "function notation": 30
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

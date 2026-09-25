@@ -1,0 +1,107 @@
+{
+  "id": "condition",
+  "ja": {
+    "term": "条件",
+    "reading": "じょうけん",
+    "alt": []
+  },
+  "en": {
+    "term": "condition",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "変数を含み、変数の値によって真にも偽にもなる文や式。「x > 2」のように、成り立つかどうかが x しだいで決まるもの。",
+  "definition_en": "A statement or relation involving a variable whose truth depends on the value of the variable, such as x > 2.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "So the condition here is x > 2, and we want to know which x satisfy it.",
+      "ja": "ここでの条件は x > 2 で、それを満たす x がどれかを知りたいわけだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let P be the set of real numbers x that satisfy the condition x² < 4. Write P as an interval.",
+      "ja": "条件 x² < 4 を満たす実数 x 全体の集合を P とする。P を区間で表せ。",
+      "register": "written"
+    },
+    {
+      "en": "Under what condition on k does the equation have two distinct real solutions?",
+      "ja": "方程式が異なる 2 つの実数解をもつための k の条件を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数I では、真偽が決まる文を「命題」、変数の値で真偽が変わる文を「条件」と分ける。英語の condition はもっと広く、「〜という条件で」「初期条件（initial condition）」なども言う。",
+    "「条件 p を満たす」は satisfy the condition p。「〜のための条件」は the condition for …、「k に関する条件」は a condition on k と on で言える。"
+  ],
+  "related": [
+    "proposition",
+    "necessary-condition",
+    "sufficient-condition",
+    "set",
+    "initial-condition"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "condition": 815
+    },
+    "written": {
+      "condition": 504
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

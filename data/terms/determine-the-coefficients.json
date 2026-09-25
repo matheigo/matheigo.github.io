@@ -1,0 +1,108 @@
+{
+  "id": "determine-the-coefficients",
+  "ja": {
+    "term": "係数を決定する",
+    "reading": "けいすうをけっていする",
+    "alt": []
+  },
+  "en": {
+    "term": "find the coefficients",
+    "alt": [
+      "determine the coefficients"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "与えられた条件（グラフが通る点、頂点など）から、式の中の未知の係数の値を求める。放物線が通る 3 点から a, b, c の連立方程式を立てるのが典型。",
+  "definition_en": "To find the unknown coefficients in an expression from given conditions, such as points on its graph or its vertex; for a parabola through three points, this means solving a system of three equations in a, b, and c.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We've got three points, so plug each one in and we get three equations to find the coefficients a, b, and c.",
+      "ja": "3 点がわかっているから、それぞれ代入すると係数 a, b, c を決める 3 つの式ができる。",
+      "register": "spoken"
+    },
+    {
+      "en": "The graph of y = ax² + bx + c passes through (0, 3), (1, 2), and (2, 5). Find the coefficients a, b, and c.",
+      "ja": "放物線 y = ax² + bx + c が 3 点 (0, 3), (1, 2), (2, 5) を通るとき、係数 a, b, c を決定せよ。",
+      "register": "written"
+    },
+    {
+      "en": "The parabola y = a(x − 1)² − 2 passes through (3, 6). Determine the coefficients of the quadratic function.",
+      "ja": "放物線 y = a(x − 1)² − 2 が点 (3, 6) を通る。この二次関数の係数を決定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは find the coefficients（話 7 件・書 7 件）も determine the coefficients（話 0 件・書 2 件）も 10 件未満。見出しは OpenStax の呼び方（本文 6 件）によるもので、register は決めていない。",
+    "数I の「二次関数の決定」はこのエントリで扱う。英語の問題文では求めるもの（the coefficients a, b, c や the quadratic function）を目的語にして find で書けばよい。",
+    "条件に頂点があれば vertex form y = a(x − p)² + q、通る 3 点なら standard form y = ax² + bx + c とおくと式が少なくて済む。"
+  ],
+  "related": [
+    "vertex-form",
+    "standard-form",
+    "system-of-linear-equations",
+    "compare-coefficients",
+    "vertex"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "find the coefficients": 7
+    },
+    "written": {
+      "find the coefficients": 7,
+      "determine the coefficients": 2
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 find the coefficients（本文 6 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "union",
+  "ja": {
+    "term": "和集合",
+    "reading": "わしゅうごう",
+    "alt": []
+  },
+  "en": {
+    "term": "union",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic",
+    "set-theory"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "集合 A と B の少なくとも一方に属する要素全体の集合。A ∪ B と書く。",
+  "definition_en": "The set of all elements that belong to A, to B, or to both, written A ∪ B.",
+  "latex": "A \\cup B",
+  "spoken_en": "A union B",
+  "examples": [
+    {
+      "en": "A union B means anything that's in A or in B, or in both.",
+      "ja": "A 和集合 B は、A か B の少なくとも一方に入っているもの全部だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let A = {1, 3, 5} and B = {3, 4}. Find the union of A and B.",
+      "ja": "A = {1, 3, 5}、B = {3, 4} のとき、A と B の和集合を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "A ∪ B は「A または B」で、両方に入る要素も含む。確率の和事象（union of events）にも同じ union を使う。",
+    "日本語では「A かつ B」の共通部分 A ∩ B と取り違えやすい。英語では ∪ が union、∩ が intersection。"
+  ],
+  "related": [
+    "set",
+    "complement",
+    "de-morgans-laws",
+    "venn-diagram",
+    "number-of-elements"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "和集合",
+      "en": "Union (set theory)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "union of": 16
+    },
+    "written": {
+      "union of": 75
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

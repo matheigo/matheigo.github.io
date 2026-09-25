@@ -1,0 +1,89 @@
+{
+  "id": "inverse",
+  "ja": {
+    "term": "裏",
+    "reading": "うら",
+    "alt": []
+  },
+  "en": {
+    "term": "inverse",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic",
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "命題「p ならば q」に対して、仮定と結論をともに否定した命題「p でないならば q でない」。",
+  "definition_en": "For a conditional statement \"if p, then q,\" the statement \"if not p, then not q,\" formed by negating both the hypothesis and the conclusion.",
+  "latex": "\\neg p \\Rightarrow \\neg q",
+  "spoken_en": "if not p, then not q",
+  "examples": [
+    {
+      "en": "The inverse just puts a \"not\" on both parts: if it's not raining, then the ground isn't wet.",
+      "ja": "裏は両方に「ない」を付けるだけ。雨が降っていないならば、地面は濡れていない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the converse, the inverse, and the contrapositive of the statement \"If x = 2, then x² = 4.\" Which of them are true?",
+      "ja": "命題「x = 2 ならば x² = 4」の逆・裏・対偶を書け。そのうち真であるものはどれか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "逆は converse、裏は inverse、対偶は contrapositive。元の命題が真でも裏は真とは限らない（上の例の裏「x ≠ 2 ならば x² ≠ 4」は x = −2 が反例）。",
+    "inverse 単独は逆関数・逆行列の意味が圧倒的に多いので、用例コーパスでは「converse, inverse」「the inverse of this statement」など論理の文脈の形だけで数えた。その形で話・書とも 0 件、Levin 1.2 Implications に 6 件で、見出しは Levin の呼び方。",
+    "裏と逆は互いに対偶の関係なので、真偽が一致する。"
+  ],
+  "related": [
+    "contrapositive",
+    "negation",
+    "proposition",
+    "condition",
+    "counterexample"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "裏 (論理学)",
+      "en": "Inverse (logic)"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.2 Implications（Definition 1.2.6）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 the inverse is the statement | contrapositive, and inverse | contrapositive and inverse | converse, inverse | the inverse of this statement | inverse of this statement（1.2 Implications）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

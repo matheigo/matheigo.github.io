@@ -1273,6 +1273,10 @@ PHASE2F_INSTANCE = [
     ("proportional-sides", "similar-triangles"),
     ("use-inverse-trig-to-find-the-angle", "arcsine"),
     ("translation-vector", "translation"),
+    # batch 3: the radius of the circle (R, r) and the setting of a problem
+    ("circumradius", "circumscribed-circle"),  # 外接円の半径
+    ("inradius", "inscribed-circle"),  # 内接円の半径
+    ("drawing-lots", "sampling-without-replacement"),  # くじ引き: drawing without putting back
 ]
 
 # Rows renamed so that the id says what the entry is.

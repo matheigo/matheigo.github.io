@@ -1,0 +1,89 @@
+{
+  "id": "de-morgans-laws",
+  "ja": {
+    "term": "ド・モルガンの法則",
+    "reading": "どもるがんのほうそく",
+    "alt": []
+  },
+  "en": {
+    "term": "De Morgan's laws",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic",
+    "set-theory"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "和集合の補集合は補集合どうしの共通部分に、共通部分の補集合は補集合どうしの和集合に等しいという法則。命題では「p かつ q」の否定が「p でない または q でない」になる形で使う。",
+  "definition_en": "The rules that the complement of a union is the intersection of the complements, and the complement of an intersection is the union of the complements; in logic, not (p and q) is equivalent to (not p) or (not q), and not (p or q) to (not p) and (not q).",
+  "latex": "\\overline{A \\cup B} = \\overline{A} \\cap \\overline{B}, \\quad \\overline{A \\cap B} = \\overline{A} \\cup \\overline{B}",
+  "spoken_en": "the complement of A union B is A complement intersect B complement, and the complement of A intersect B is A complement union B complement",
+  "examples": [
+    {
+      "en": "By De Morgan's laws, the negation of \"x > 0 and y > 0\" is \"x ≤ 0 or y ≤ 0.\"",
+      "ja": "ド・モルガンの法則より、「x > 0 かつ y > 0」の否定は「x ≦ 0 または y ≦ 0」だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use De Morgan's laws to find the complement of A ∪ B.",
+      "ja": "ド・モルガンの法則を用いて、A ∪ B の補集合を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語では 2 つの式をまとめて laws と複数形で呼ぶ。片方だけなら one of De Morgan's laws のように言う。",
+    "否定すると「かつ」と「または」が入れ替わる。not (p and q) を not p and not q としてしまうのが典型的な誤り。",
+    "用例コーパスでは De Morgan's laws は話・書とも 0 件で、見出しは Levin の離散数学の本（1.3 Rules of Logic）の呼び方による。"
+  ],
+  "related": [
+    "complement",
+    "union",
+    "negation",
+    "set",
+    "proposition"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ド・モルガンの法則",
+      "en": "De Morgan's laws"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.3 Rules of Logic"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 De Morgan's laws（1.3 Rules of Logic・1.4 Proofs・6.2 Introduction to Number Theory）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

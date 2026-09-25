@@ -545,6 +545,32 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
     member: "member of the set | members of the set",
   },
   segment: { segment: "!line segment" }, // bare "segment"; "line segment" is counted on its own
+  // batch 2
+  complement: { complement: "complement of" }, // 補集合; not "complementary", "to complement"
+  union: { union: "union of" },
+  inverse: {
+    // 裏 (not p → not q), not an inverse function or matrix
+    inverse:
+      "the inverse is the statement | contrapositive, and inverse | contrapositive and inverse | converse, inverse | the inverse of this statement | inverse of this statement",
+  },
+  // batch 3
+  bearing: { bearing: "bearing of" }, // navigation (a bearing of 120°), not "bearing in mind"
+  combination: {
+    // counting (nCr); bare "combination" is mostly a mixture or a linear combination
+    combination:
+      "number of combinations | permutations and combinations | combinations of n | combination formula | combinations of r | a combination of r | combinations of k",
+  },
+  arrange: {
+    // counting arrangements, not "arrange the work" or "arrange the terms"
+    arrange: "ways to arrange | ways can … be arranged | arrange … in a row | ways of arranging | number of arrangements",
+  },
+  "union-of-events": { "union of events": "union of two events | union of events" },
+  "intersection-of-events": { "intersection of events": "intersection of two events | intersection of events" },
+  "order-matters": { "order matters": "order matters | order doesn't matter | order does not matter" }, // 順序を考える ／ 考えない
+  "standard-form": {
+    // 一般形 ax² + bx + c. "standard form" names both forms (OpenStax: a(x − h)² + k), so it is not counted
+    "general form": "general form of a quadratic | quadratic function in general form | general form of the quadratic",
+  },
   approaches: {
     approaches: "as … approaches",
     "goes to": "as … goes to",

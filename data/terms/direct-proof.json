@@ -1,0 +1,90 @@
+{
+  "id": "direct-proof",
+  "ja": {
+    "term": "直接証明",
+    "reading": "ちょくせつしょうめい",
+    "alt": []
+  },
+  "en": {
+    "term": "direct proof",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "仮定から出発し、定義や既に知っている定理を順に使って結論を導く証明。背理法や対偶を使った証明と対比して使う。",
+  "definition_en": "A proof that starts from the hypothesis and reaches the conclusion through a chain of definitions and known results, without assuming that the conclusion is false.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's try a direct proof first: start with what we're given and work toward what we want.",
+      "ja": "まず直接証明を試そう。与えられたことから出発して、示したいことに向かって進める。",
+      "register": "spoken"
+    },
+    {
+      "en": "Give a direct proof that the sum of two odd integers is even.",
+      "ja": "2 つの奇数の和が偶数であることを直接証明で示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは direct proof は話し言葉 2 件（すべて MIT OCW）、書き言葉 2 件（すべて MIT の講義ノート）しかない。見出しは Levin（1.4 Proofs）の呼び方による。",
+    "direct proof は、背理法（proof by contradiction）や対偶を使った証明（proof by contrapositive）と区別するための名前。"
+  ],
+  "related": [
+    "proof",
+    "proof-by-contradiction",
+    "proof-by-contrapositive",
+    "contrapositive"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.4 Proofs"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "direct proof": 2
+    },
+    "written": {
+      "direct proof": 2
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは Levin の呼び方 direct proof（1.4 Proofs・1.5 Proofs about Discrete Structures・1.6 Chapter Summary）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

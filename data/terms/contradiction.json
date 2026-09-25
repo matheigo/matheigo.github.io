@@ -1,0 +1,95 @@
+{
+  "id": "contradiction",
+  "ja": {
+    "term": "矛盾",
+    "reading": "むじゅん",
+    "alt": []
+  },
+  "en": {
+    "term": "contradiction",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "ある命題とその否定が同時に成り立つこと。背理法では、仮定から矛盾を導いて仮定が誤りだと結論する。",
+  "definition_en": "A situation in which a statement and its negation are both true; in a proof by contradiction, reaching one shows that the starting assumption was false.",
+  "latex": "p \\land \\neg p",
+  "spoken_en": "p and not p",
+  "examples": [
+    {
+      "en": "But we said n was odd, and now it's even. That's a contradiction.",
+      "ja": "でも n は奇数だと言ったのに、今度は偶数になった。これは矛盾だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "This is a contradiction, since p and q were assumed to have no common factor.",
+      "ja": "p と q は互いに素と仮定したので、これは矛盾である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "動詞の「矛盾する」は別エントリ（lead-to-a-contradiction：arrive at ／ lead to ／ get a contradiction）。「仮定に矛盾する」は contradicts the assumption と動詞 contradict を使う。",
+    "用例コーパスでは話し言葉 79 件がすべて MIT OCW。背理法（proof by contradiction）の説明で出てくることが多い語。"
+  ],
+  "related": [
+    "proof-by-contradiction",
+    "lead-to-a-contradiction",
+    "negation",
+    "assume"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "矛盾",
+      "en": "Contradiction"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "contradiction": 79
+    },
+    "written": {
+      "contradiction": 72
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

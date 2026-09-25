@@ -1,0 +1,96 @@
+{
+  "id": "empty-set",
+  "ja": {
+    "term": "空集合",
+    "reading": "くうしゅうごう",
+    "alt": []
+  },
+  "en": {
+    "term": "empty set",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic",
+    "set-theory"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "要素を 1 つも持たない集合。記号 ∅ で表し、どの集合の部分集合でもある。",
+  "definition_en": "The set that has no elements, written ∅; it is a subset of every set.",
+  "latex": "\\varnothing",
+  "spoken_en": "the empty set",
+  "examples": [
+    {
+      "en": "There's no real x with x² = −1, so the solution set is the empty set.",
+      "ja": "x² = −1 を満たす実数 x はないので、解の集合は空集合だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that A ∩ B is the empty set.",
+      "ja": "A ∩ B が空集合であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "{0} は 0 という要素を 1 つ持つ集合で、空集合ではない。{∅} も空集合ではない。",
+    "null set という言い方もあるが、用例コーパスでは数えていない。empty set 自体も少なく、話し言葉 9 件（すべて MIT OCW）、書き言葉 7 件（MIT の講義ノート 6・OpenStax Algebra and Trigonometry 1）。"
+  ],
+  "related": [
+    "set",
+    "subset",
+    "solution-set",
+    "element"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "空集合",
+      "en": "Empty set"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "empty set": 9
+    },
+    "written": {
+      "empty set": 7
+    },
+    "sources": [
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 判断不能: 重み付け後 7 件（10 未満））。見出しは OpenStax の呼び方 empty set（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

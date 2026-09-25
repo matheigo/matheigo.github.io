@@ -1,0 +1,112 @@
+{
+  "id": "opens-downward",
+  "ja": {
+    "term": "上に凸",
+    "reading": "うえにとつ",
+    "alt": []
+  },
+  "en": {
+    "term": "opens downward",
+    "alt": [
+      "opens down"
+    ],
+    "uk": null,
+    "variants": [
+      {
+        "term": "concave down",
+        "register": "both",
+        "note": "微積分での言い方（凹凸）で、書き言葉では最も多い（59 件のうち OpenStax Calculus 53 件）。話し言葉で 37 件（MIT OCW 17・Professor Leonard 10・Khan Academy 7 ほか 3）、書き言葉で 59 件（OpenStax Calculus 53・OpenStax Algebra and Trigonometry 4・MIT の講義ノート 2）。"
+      }
+    ]
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "日本語の「上に凸」は放物線にも一般の曲線にも使うが、英語では放物線には opens downward ／ opens down（開く向き）、一般の曲線には concave down（凹凸）と言い分ける。用例コーパスで opens downward は話し言葉 16 件・書き言葉 15 件、opens down は話し言葉 3 件・書き言葉 8 件。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "グラフが上にふくらんだ形であること。二次関数 y = ax² + bx + c では a < 0 のとき放物線が上に凸で、頂点が最も高い点になる。",
+  "definition_en": "Said of a parabola y = ax² + bx + c with a < 0: it is shaped like an upside-down U and its vertex is the highest point.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The leading coefficient is negative, so this parabola opens downward and the vertex is the max.",
+      "ja": "最高次の係数が負なので、この放物線は上に凸で、頂点で最大になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Since a = −3 < 0, the graph opens downward, and f has a maximum value at its vertex.",
+      "ja": "a = −3 < 0 よりグラフは上に凸で、f は頂点で最大値をとる。",
+      "register": "written"
+    },
+    {
+      "en": "Because f″(x) < 0 for x < 0, the graph of f is concave down on (−∞, 0).",
+      "ja": "x < 0 で f″(x) < 0 だから、f のグラフは x < 0 で上に凸である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「上に凸」を convex upward と直訳しない（用例コーパスに 0 件）。放物線は opens downward ／ opens down、一般の曲線は concave down と言う。",
+    "日本語は「上」、英語は down（下に開く）で、上下の単語が逆になる。"
+  ],
+  "related": [
+    "concavity",
+    "opens-upward",
+    "vertex",
+    "maximum",
+    "check-the-concavity"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "concave down": 37,
+      "opens downward": 16,
+      "opens down": 3
+    },
+    "written": {
+      "opens downward": 15,
+      "concave down": 59,
+      "opens down": 8
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

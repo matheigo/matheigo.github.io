@@ -1,0 +1,87 @@
+{
+  "id": "quadratic-inequality",
+  "ja": {
+    "term": "二次不等式",
+    "reading": "にじふとうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "quadratic inequality",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "移項して整理すると ax² + bx + c > 0（または <, ≧, ≦）の形になる不等式（a ≠ 0）。",
+  "definition_en": "An inequality that can be rearranged into the form ax² + bx + c > 0 (or with <, ≥, or ≤), where a ≠ 0.",
+  "latex": "ax^2 + bx + c > 0 \\quad (a \\neq 0)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To solve a quadratic inequality, find where the quadratic equals zero first, then test each interval.",
+      "ja": "二次不等式を解くには、まず二次式が 0 になる x を求めてから、それぞれの区間を調べる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the quadratic inequality x² − x − 6 < 0.",
+      "ja": "二次不等式 x² − x − 6 < 0 を解け。",
+      "register": "written"
+    },
+    {
+      "en": "The solution of x² > 4 is x < −2 or x > 2, that is, (−∞, −2) ∪ (2, ∞).",
+      "ja": "x² > 4 の解は x < −2, 2 < x である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の答案は −2 < x < 3 のように不等式で書くが、英語の答案では区間記法 (−2, 3) で書くこともある。",
+    "「x < −2, 2 < x」の読点は「または」の意味。英語では or を書く（x < −2 or x > 2）。",
+    "用例コーパスでは話し言葉 10 件（patrickJMT 6・NancyPi 4）、書き言葉 0 件で、書き言葉の判定はできていない。"
+  ],
+  "related": [
+    "interval",
+    "sign-chart-inequality",
+    "polynomial-inequality",
+    "linear-inequality",
+    "discriminant"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "不等式",
+      "en": "Inequality (mathematics)"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "quadratic inequality": 10
+    },
+    "sources": [
+      "yt:nancypi",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-25"
+  }
+}

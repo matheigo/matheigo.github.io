@@ -1,0 +1,98 @@
+{
+  "id": "negate",
+  "ja": {
+    "term": "否定をとる",
+    "reading": "ひていをとる",
+    "alt": []
+  },
+  "en": {
+    "term": "negate",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "命題の否定をつくる。「すべての x について P」の否定は「ある x について P でない」になり、その逆も成り立つ。",
+  "definition_en": "To form the negation of a statement; negating \"for all x, P(x)\" gives \"there exists an x such that P(x) is false,\" and vice versa.",
+  "latex": "\\neg\\,(\\forall x,\\ P(x)) \\iff \\exists x,\\ \\neg P(x)",
+  "spoken_en": "not for all x, P of x, is equivalent to there exists x such that not P of x",
+  "examples": [
+    {
+      "en": "When you negate \"for all,\" it turns into \"there exists.\"",
+      "ja": "「すべての」の否定をとると「ある」に変わる。",
+      "register": "spoken"
+    },
+    {
+      "en": "If you negate \"p and q,\" you get \"not p or not q.\"",
+      "ja": "「p かつ q」の否定をとると「p でない または q でない」になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Negate the statement: For every real number x, x² ≥ 0.",
+      "ja": "命題「すべての実数 x について x² ≧ 0」の否定をつくれ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "negate は「否定をとる（否定の命題をつくる）」で、「否定する（正しくないと主張する）」ではない。P を negate しても P が偽だと言ったことにはならない。",
+    "「x > 0」の否定は「x ≦ 0」（英語でも x ≤ 0）。x < 0 にしない。"
+  ],
+  "related": [
+    "negation",
+    "de-morgans-laws",
+    "all",
+    "exist",
+    "proposition"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "negate": 7
+    },
+    "written": {
+      "negate": 3
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-introstats",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 negate（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

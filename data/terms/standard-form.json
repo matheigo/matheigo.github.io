@@ -1,0 +1,90 @@
+{
+  "id": "standard-form",
+  "ja": {
+    "term": "一般形",
+    "reading": "いっぱんけい",
+    "alt": []
+  },
+  "en": {
+    "term": "general form",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで general form of a quadratic などの形は話し言葉 0 件、書き言葉 5 件ですべて OpenStax Algebra and Trigonometry）。standard form は両方の形に使われる: OpenStax Algebra and Trigonometry は ax² + bx + c を general form、a(x − h)² + k を standard form（vertex form）と呼ぶが、用例コーパスの The Organic Chemistry Tutor などは ax² + bx + c を standard form と呼ぶ。どちらを指すかは y = ax² + bx + c と式を添えて示すのが確実。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "二次関数を y = ax² + bx + c（a ≠ 0）と展開した形。",
+  "definition_en": "A quadratic function written in expanded form, y = ax² + bx + c with a ≠ 0.",
+  "latex": "y = ax^2 + bx + c \\quad (a \\neq 0)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "This quadratic is in general form, so a is 2, b is −4, and c is −1.",
+      "ja": "この二次関数は一般形なので、a = 2, b = −4, c = −1 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the quadratic function f(x) = 2(x − 1)² − 3 in general form.",
+      "ja": "二次関数 f(x) = 2(x − 1)² − 3 を一般形で表せ。",
+      "register": "written"
+    },
+    {
+      "en": "For a quadratic in general form, the axis of symmetry is x = −b/(2a).",
+      "ja": "一般形の二次関数では、軸は x = −b/(2a) である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の「一般形」を standard form と訳すと、日本の「標準形」a(x − h)² + k の意味に取られることがある（OpenStax Algebra and Trigonometry の standard form はこちら）。日本語の 2 つの名前と英語の standard form の使い方は入れ替わりうる。",
+    "用例コーパスでは general form を the general form of a quadratic などの形だけで数えた。general form は直線の方程式や一般解などにも使うため。"
+  ],
+  "related": [
+    "vertex-form",
+    "factored-form",
+    "completing-the-square",
+    "quadratic-formula",
+    "axis-of-symmetry"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "general form of a quadratic | quadratic function in general form | general form of the quadratic": 5
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 5 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

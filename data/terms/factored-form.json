@@ -1,0 +1,107 @@
+{
+  "id": "factored-form",
+  "ja": {
+    "term": "因数分解形",
+    "reading": "いんすうぶんかいけい",
+    "alt": []
+  },
+  "en": {
+    "term": "factored form",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "intercept form",
+        "register": "both",
+        "note": "x 切片が読める形という名前。話し言葉ではこちらが多いが、42 件のうち 24 件は The Organic Chemistry Tutor。話し言葉で 42 件（The Organic Chemistry Tutor 24・Khan Academy 6・Professor Leonard 5 ほか 7）、書き言葉で 13 件（すべて OpenStax Algebra and Trigonometry）。"
+      }
+    ]
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「因数分解形」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書では y = a(x − α)(x − β) を「x 軸と x = α, β で交わる放物線」の式として扱う。英語ではこの形に factored form ／ intercept form という名前があり、書き言葉は factored form（34 件、うち OpenStax Algebra and Trigonometry 31 件）が多い。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "二次関数を y = a(x − α)(x − β) と一次式の積で表した形。グラフと x 軸の交点 x = α, β が読み取れる。",
+  "definition_en": "A quadratic function written as a product of linear factors, y = a(x − r)(x − s), which shows the x-intercepts r and s.",
+  "latex": "y = a(x - \\alpha)(x - \\beta)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Factored form is nice because you can see the zeros right away.",
+      "ja": "因数分解形の良いところは、零点がすぐに見えることだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Put it in intercept form and the x-intercepts are right there: 2 and −5.",
+      "ja": "因数分解形にすれば、x 切片は 2 と −5 だとすぐわかる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write f(x) = x² + 3x − 10 in factored form and find the x-intercepts of its graph.",
+      "ja": "f(x) = x² + 3x − 10 を因数分解した形で表し、グラフと x 軸の交点の x 座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "判別式が負の二次関数はグラフが x 軸と交わらず、実数の範囲では factored form に書けない。",
+    "頂点の x 座標は 2 つの x 切片のちょうど真ん中、x = (α + β)/2 になる。"
+  ],
+  "related": [
+    "x-intercept",
+    "vertex-form",
+    "standard-form",
+    "zeros-of-a-polynomial",
+    "discriminant"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "factored form": 14,
+      "intercept form": 42
+    },
+    "written": {
+      "factored form": 34,
+      "intercept form": 13
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

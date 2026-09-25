@@ -1,0 +1,102 @@
+{
+  "id": "true",
+  "ja": {
+    "term": "真",
+    "reading": "しん",
+    "alt": []
+  },
+  "en": {
+    "term": "true",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "命題が正しいこと。真理値表では T と書く。",
+  "definition_en": "Describes a statement that is correct; in a truth table it is marked T.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Is that true for every x? Let's check x = 0.",
+      "ja": "それってすべての x で真かな。x = 0 で確かめてみよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the statement is true for all positive integers n.",
+      "ja": "この命題がすべての正の整数 n について真であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「真である」は英語では is true。「真」を名詞のまま訳さず、The statement is true. のように形容詞で使う。",
+    "命題や式の正しさは true、答えや計算の正しさは correct と言い分けることが多い。"
+  ],
+  "related": [
+    "false",
+    "truth-value",
+    "proposition",
+    "counterexample"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "true": 1677
+    },
+    "written": {
+      "true": 742
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

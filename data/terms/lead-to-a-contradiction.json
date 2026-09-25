@@ -1,0 +1,106 @@
+{
+  "id": "lead-to-a-contradiction",
+  "ja": {
+    "term": "矛盾する",
+    "reading": "むじゅんする",
+    "alt": []
+  },
+  "en": {
+    "term": "arrive at a contradiction",
+    "alt": [
+      "lead to a contradiction",
+      "get a contradiction",
+      "reach a contradiction"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "仮定から推論を進めた結果、矛盾が生じる。背理法で、仮定が誤りだと結論する直前の段階。",
+  "definition_en": "To reach, by valid reasoning from an assumption, a statement that conflicts with the assumption or with a known fact, which shows that the assumption must be false.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Assume there's a largest prime. We're going to arrive at a contradiction pretty quickly.",
+      "ja": "最大の素数があると仮定しよう。すぐに矛盾が生じる。",
+      "register": "spoken"
+    },
+    {
+      "en": "If we plug that back in, we get a contradiction, so that case can't happen.",
+      "ja": "それを代入し直すと矛盾する。だからその場合は起こらない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Assuming that √2 is rational, we arrive at a contradiction. Hence √2 is irrational.",
+      "ja": "√2 が有理数であると仮定すると矛盾する。よって √2 は無理数である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "主語に注意。arrive at ／ get ／ reach a contradiction の主語は we（証明する人）、lead to a contradiction の主語は仮定（This assumption leads to a contradiction）。",
+    "「A は B と矛盾する」は A contradicts B（他動詞で目的語が要る）。This contradicts the fact that n is odd. のように使う。",
+    "用例コーパスでは話し言葉が get a contradiction 5 件・lead to a contradiction 3 件・reach a contradiction 2 件・arrive at a contradiction 2 件と割れ、どれも 10 件未満。見出しは OpenStax Calculus（2 件）の言い方。"
+  ],
+  "related": [
+    "contradiction",
+    "proof-by-contradiction",
+    "assume",
+    "negate"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "reach a contradiction": 2,
+      "lead to a contradiction": 3,
+      "arrive at a contradiction": 2,
+      "get a contradiction": 5
+    },
+    "written": {
+      "lead to a contradiction": 2,
+      "arrive at a contradiction": 2,
+      "reach a contradiction": 1
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満 ／ 書: 判断不能: 重み付け後 5 件（10 未満））。見出しは OpenStax の呼び方 arrive at a contradiction（本文 2 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

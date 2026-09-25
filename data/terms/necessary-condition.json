@@ -1,0 +1,99 @@
+{
+  "id": "necessary-condition",
+  "ja": {
+    "term": "必要条件",
+    "reading": "ひつようじょうけん",
+    "alt": []
+  },
+  "en": {
+    "term": "necessary condition",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "「p ならば q」が真のとき、q を p であるための必要条件という。q が成り立たなければ p は成り立たない。",
+  "definition_en": "If \"if p, then q\" is true, q is a necessary condition for p: p cannot hold unless q holds.",
+  "latex": "p \\Rightarrow q",
+  "spoken_en": "p implies q, so q is necessary for p",
+  "examples": [
+    {
+      "en": "Terms going to zero is a necessary condition for convergence, but it's not enough. Look at the harmonic series.",
+      "ja": "項が 0 に近づくことは収束のための必要条件だけど、それだけでは足りない。調和級数を見てごらん。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that x² = 4 is a necessary condition for x = 2 but not a sufficient condition.",
+      "ja": "x² = 4 は x = 2 であるための必要条件であるが、十分条件ではないことを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "向きに注意。p ⇒ q が真のとき「q は p であるための必要条件」「p は q であるための十分条件」。英語でも q is a necessary condition for p と for で p を指す。",
+    "用例コーパスでは話し言葉 3 件（すべて Khan Academy）、書き言葉 6 件（OpenStax Calculus 5・MIT の講義ノート 1）と少なく判定できなかった。見出しは AP Calculus の CED（Unit 10）の呼び方。"
+  ],
+  "related": [
+    "sufficient-condition",
+    "necessary-and-sufficient-condition",
+    "condition",
+    "harmonic-series"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 10"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "necessary condition": 3
+    },
+    "written": {
+      "necessary condition": 6
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは CED の呼び方 necessary condition（unit10）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

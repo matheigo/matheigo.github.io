@@ -1,0 +1,93 @@
+{
+  "id": "complement",
+  "ja": {
+    "term": "補集合",
+    "reading": "ほしゅうごう",
+    "alt": []
+  },
+  "en": {
+    "term": "complement",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic",
+    "set-theory"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "全体集合 U の要素のうち、集合 A に属さないもの全体の集合。",
+  "definition_en": "The set of all elements of the universal set U that are not in A.",
+  "latex": "\\overline{A}",
+  "spoken_en": "A complement (or A bar)",
+  "examples": [
+    {
+      "en": "The complement of A is just everything in U that's not in A.",
+      "ja": "A の補集合は、U の中で A に入っていないもの全部だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let U be the set of integers from 1 to 20 and A the set of multiples of 3 in U. Find the complement of A.",
+      "ja": "1 から 20 までの整数全体を U、そのうち 3 の倍数全体を A とする。A の補集合を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書は補集合を Ā と書く。英語の本では Aᶜ、A′、Ā など記号は教科書による。",
+    "同じ complement が余事象（complement of an event）にも使われ、complementary angle（余角）という形でも出てくる。用例コーパスの complement of の件数には余事象の意味も入っている（書き言葉 31 件のうち 21 件は OpenStax Introductory Statistics）。",
+    "つづりは complement（補う）。compliment（ほめ言葉）と取り違えない。"
+  ],
+  "related": [
+    "universal-set",
+    "union",
+    "de-morgans-laws",
+    "venn-diagram",
+    "set"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "complement of": 14
+    },
+    "written": {
+      "complement of": 31
+    },
+    "sources": [
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

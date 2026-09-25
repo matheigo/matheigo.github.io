@@ -4,7 +4,8 @@
     "term": "交点",
     "reading": "こうてん",
     "alt": [
-      "交点の座標"
+      "交点の座標",
+      "共有点"
     ]
   },
   "en": {
@@ -34,13 +35,15 @@
   "level": {
     "jp": [
       "中1",
+      "数I",
       "数II"
     ],
     "us": [
       "Pre-Algebra",
       "Algebra 1",
       "Geometry",
-      "Precalculus"
+      "Precalculus",
+      "Algebra 2"
     ]
   },
   "definition_ja": "2 つの線（直線・曲線）が交わる点。交点の座標は 2 つの方程式を連立して求める。",
@@ -57,11 +60,17 @@
       "en": "Find the coordinates of the points of intersection of the line y = x + 1 and the circle x² + y² = 5.",
       "ja": "直線 y = x + 1 と円 x² + y² = 5 の交点の座標を求めよ。",
       "register": "written"
+    },
+    {
+      "en": "How many points of intersection does the graph of y = x² − 4x + k have with the x-axis?",
+      "ja": "y = x² − 4x + k のグラフと x 軸の共有点の個数を求めよ。",
+      "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "複数の交点は points of intersection（intersection points）。"
+    "複数の交点は points of intersection（intersection points）。",
+    "日本の「共有点」は接する点も含む。英語では接する場合も point of intersection と言うか、the graph touches the x-axis（x 軸に接する）と言い分ける。"
   ],
   "related": [
     "intersect",
@@ -83,7 +92,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "intersection point": 12,

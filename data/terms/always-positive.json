@@ -1,0 +1,102 @@
+{
+  "id": "always-positive",
+  "ja": {
+    "term": "つねに正",
+    "reading": "つねにせい",
+    "alt": []
+  },
+  "en": {
+    "term": "always positive",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "変数がどんな値をとっても、式や関数の値が 0 より大きいこと。二次式 ax² + bx + c がつねに正となるのは a > 0 かつ判別式 D < 0 のとき。",
+  "definition_en": "Greater than zero for every value of the variable. A quadratic ax² + bx + c is always positive exactly when a > 0 and its discriminant is negative.",
+  "latex": "ax^2 + bx + c > 0 \\text{ for all } x \\iff a > 0,\\ b^2 - 4ac < 0",
+  "spoken_en": "a x squared plus b x plus c is greater than zero for all x if and only if a is positive and b squared minus four a c is negative",
+  "examples": [
+    {
+      "en": "The parabola opens up and never touches the x-axis, so this quadratic is always positive.",
+      "ja": "放物線は上に開いていて x 軸と共有点をもたないから、この二次式はつねに正だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the range of values of k for which x² + 2kx + 4 is always positive.",
+      "ja": "x² + 2kx + 4 がつねに正となるような定数 k の値の範囲を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "Since a = 1 > 0 and D < 0, f(x) is always positive.",
+      "ja": "a = 1 > 0 かつ D < 0 だから、f(x) はつねに正である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「つねに 0 以上」（≧ 0）は always positive ではない。0 になる点がある二次式（D = 0）は正ではないので、条件は D < 0 で D ≦ 0 ではない。",
+    "「すべての実数 x について」は for all x ／ for every real number x と添えて書くと答案で紛れない。"
+  ],
+  "related": [
+    "discriminant",
+    "quadratic-inequality",
+    "opens-upward",
+    "real-solution"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "always positive": 68
+    },
+    "written": {
+      "always positive": 17
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

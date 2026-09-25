@@ -1,0 +1,94 @@
+{
+  "id": "negation",
+  "ja": {
+    "term": "否定",
+    "reading": "ひてい",
+    "alt": []
+  },
+  "en": {
+    "term": "negation",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "命題や条件 p に対して「p でない」という命題・条件。p が真なら偽、p が偽なら真になる。",
+  "definition_en": "The statement \"not p\" formed from a statement p; it is true exactly when p is false.",
+  "latex": "\\neg p",
+  "spoken_en": "not p",
+  "examples": [
+    {
+      "en": "The negation of \"x > 3\" is \"x ≤ 3,\" not \"x < 3.\" Don't forget the equal case.",
+      "ja": "「x > 3」の否定は「x ≦ 3」で、「x < 3」ではない。等号の場合を忘れないように。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the negation of the statement \"For every real number x, x² ≥ 0.\"",
+      "ja": "命題「すべての実数 x について x² ≧ 0」の否定を書け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書は否定を p の上に線を引いて p̄ と書く。記号論理では ¬p（~p と書く本もある）。「〜を否定する」の動詞は negate で、別エントリ。",
+    "「すべての x について p」の否定は「ある x について p でない」、「p かつ q」の否定は「p でないまたは q でない」（ド・モルガンの法則）。",
+    "用例コーパスでは話し言葉 3 件（MIT OCW 2・Professor Leonard 1）、書き言葉 0 件で判定できず、見出しは Levin 1.3 Rules of Logic の呼び方。"
+  ],
+  "related": [
+    "negate",
+    "de-morgans-laws",
+    "complement",
+    "proposition",
+    "contrapositive"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "否定",
+      "en": "Negation"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.3 Rules of Logic"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "negation": 3
+    },
+    "sources": [
+      "mit-6.042",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 negation（1.3 Rules of Logic・1.4 Proofs・1.6 Chapter Summary）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

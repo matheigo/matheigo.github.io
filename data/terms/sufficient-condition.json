@@ -1,0 +1,90 @@
+{
+  "id": "sufficient-condition",
+  "ja": {
+    "term": "十分条件",
+    "reading": "じゅうぶんじょうけん",
+    "alt": []
+  },
+  "en": {
+    "term": "sufficient condition",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "「p ならば q」が真のとき、p を q であるための十分条件という。p が成り立てば q も必ず成り立つ。",
+  "definition_en": "If \"if p, then q\" is true, p is a sufficient condition for q: whenever p holds, q holds as well.",
+  "latex": "p \\Rightarrow q",
+  "spoken_en": "p implies q, so p is sufficient for q",
+  "examples": [
+    {
+      "en": "Being differentiable at a point is a sufficient condition for being continuous there, but the converse fails.",
+      "ja": "ある点で微分可能であることは、そこで連続であるための十分条件だが、逆は成り立たない。",
+      "register": "written"
+    },
+    {
+      "en": "x = 2 is a sufficient condition for x² = 4. If x is two, x squared has to be four.",
+      "ja": "x = 2 は x² = 4 であるための十分条件。x が 2 なら x² は 4 になるしかない。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "向きに注意。p ⇒ q が真のとき、矢印の出発点 p が十分条件、行き先 q が必要条件。",
+    "用例コーパスでは話し言葉 0 件、書き言葉 6 件（OpenStax Calculus 5・MIT の講義ノート 1）で判定できなかった。見出しは OpenStax の呼び方。"
+  ],
+  "related": [
+    "necessary-condition",
+    "necessary-and-sufficient-condition",
+    "condition",
+    "differentiable",
+    "continuous"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "sufficient condition": 6
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 sufficient condition（本文 5 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "proof-by-contradiction",
+  "ja": {
+    "term": "背理法",
+    "reading": "はいりほう",
+    "alt": [
+      "背理法による証明"
+    ]
+  },
+  "en": {
+    "term": "proof by contradiction",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic",
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数I",
+      "数A"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "示したい命題の否定を仮定し、そこから矛盾を導くことで、元の命題が正しいと結論する証明法。",
+  "definition_en": "A method of proof in which you assume the negation of the statement you want to prove and derive a contradiction, which shows the statement must be true.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Use proof by contradiction to show that √2 is irrational.",
+      "ja": "背理法を用いて √2 が無理数であることを証明せよ。",
+      "register": "written"
+    },
+    {
+      "en": "We prove this by contradiction: suppose there are only finitely many primes p₁, p₂, …, pₙ.",
+      "ja": "背理法で示す。素数が有限個 p₁, p₂, …, pₙ しかないと仮定する。",
+      "register": "written"
+    },
+    {
+      "en": "This is a classic proof by contradiction. Assume it's rational, and watch everything fall apart.",
+      "ja": "これは典型的な背理法だね。有理数だと仮定すると、全部つじつまが合わなくなる。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「背理法で示す」は prove … by contradiction。答案は Suppose, for the sake of contradiction, that … のように否定の仮定から書き出し、矛盾を示して終える。",
+    "対偶を利用した証明（proof by contrapositive）とは別物。背理法は結論の否定から矛盾を導き、対偶の証明は結論の否定から仮定の否定を導く。",
+    "用例コーパスでは話し言葉 8 件（すべて MIT OCW）で、話し言葉の判定はできなかった。書き言葉は 15 件（すべて MIT の講義ノート）。"
+  ],
+  "related": [
+    "contradiction",
+    "proof-by-contrapositive",
+    "assume",
+    "negation",
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "背理法",
+      "en": "Proof by contradiction"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "proof by contradiction": 8
+    },
+    "written": {
+      "proof by contradiction": 15
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

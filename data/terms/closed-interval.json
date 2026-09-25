@@ -1,0 +1,89 @@
+{
+  "id": "closed-interval",
+  "ja": {
+    "term": "閉区間",
+    "reading": "へいくかん",
+    "alt": []
+  },
+  "en": {
+    "term": "closed interval",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "両端の数を含む区間。a ≦ x ≦ b を満たす実数 x 全体で、[a, b] と書く。",
+  "definition_en": "An interval that includes both of its endpoints: all real numbers x with a ≤ x ≤ b, written [a, b].",
+  "latex": "[a, b] = \\{\\, x \\mid a \\le x \\le b \\,\\}",
+  "spoken_en": "the closed interval from a to b",
+  "examples": [
+    {
+      "en": "On a closed interval, a continuous function always reaches a max and a min, so check the endpoints too.",
+      "ja": "閉区間では連続関数は必ず最大値と最小値をとるから、端の点も調べておこう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the maximum and minimum values of f(x) = x² − 4x + 1 on the closed interval [0, 3].",
+      "ja": "閉区間 0 ≦ x ≦ 3 における f(x) = x² − 4x + 1 の最大値と最小値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数I では定義域を 0 ≦ x ≦ 3 のように不等式で書くのがふつう。英語の問題文では [0, 3] の区間記号でも 0 ≤ x ≤ 3 でも書ける。",
+    "角括弧 [ ] は端を含む、丸括弧 ( ) は端を含まない。[0, 3) のように片方だけ含む区間は閉区間でも開区間でもない。"
+  ],
+  "related": [
+    "open-interval",
+    "interval",
+    "endpoint",
+    "extreme-value-theorem",
+    "maximum"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "closed interval": 147
+    },
+    "written": {
+      "closed interval": 44
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "openstax-calculus",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

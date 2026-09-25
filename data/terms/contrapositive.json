@@ -1,0 +1,98 @@
+{
+  "id": "contrapositive",
+  "ja": {
+    "term": "対偶",
+    "reading": "たいぐう",
+    "alt": []
+  },
+  "en": {
+    "term": "contrapositive",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "命題「p ならば q」に対して、結論の否定を仮定に、仮定の否定を結論にした命題「q でないならば p でない」。元の命題と真偽が一致する。",
+  "definition_en": "For a conditional statement \"if p, then q,\" the statement \"if not q, then not p.\" It is always true or false together with the original statement.",
+  "latex": "\\neg q \\Rightarrow \\neg p",
+  "spoken_en": "if not q, then not p",
+  "examples": [
+    {
+      "en": "The contrapositive of \"if n² is even, then n is even\" is \"if n is odd, then n² is odd.\"",
+      "ja": "「n² が偶数ならば n は偶数」の対偶は「n が奇数ならば n² は奇数」である。",
+      "register": "written"
+    },
+    {
+      "en": "Since a statement and its contrapositive are logically equivalent, it suffices to prove the contrapositive.",
+      "ja": "命題とその対偶は同値なので、対偶を証明すれば十分である。",
+      "register": "written"
+    },
+    {
+      "en": "This direction is hard, so let's look at the contrapositive instead.",
+      "ja": "こっちの向きは難しいから、代わりに対偶を考えよう。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "逆（converse）・裏（inverse）と混同しない。元の命題と必ず真偽が一致するのは対偶だけ。",
+    "用例コーパスでは話し言葉 2 件（すべて MIT OCW）で、話し言葉の判定はできなかった。書き言葉は 15 件（MIT の講義ノート 13・OpenStax Calculus 2）。"
+  ],
+  "related": [
+    "inverse",
+    "negation",
+    "proof-by-contrapositive",
+    "equivalent",
+    "proposition"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "対偶 (論理学)",
+      "en": "Contraposition"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "contrapositive": 2
+    },
+    "written": {
+      "contrapositive": 15
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

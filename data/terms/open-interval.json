@@ -1,0 +1,88 @@
+{
+  "id": "open-interval",
+  "ja": {
+    "term": "開区間",
+    "reading": "かいくかん",
+    "alt": []
+  },
+  "en": {
+    "term": "open interval",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "両端の数を含まない区間。a < x < b を満たす実数 x 全体で、(a, b) と書く。",
+  "definition_en": "An interval that does not include its endpoints: all real numbers x with a < x < b, written (a, b).",
+  "latex": "(a, b) = \\{\\, x \\mid a < x < b \\,\\}",
+  "spoken_en": "the open interval from a to b",
+  "examples": [
+    {
+      "en": "The function is increasing on the open interval from 1 to 4, so we don't include the endpoints.",
+      "ja": "この関数は開区間 1 < x < 4 で増加するから、端の点は含めない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that f(x) = x³ − 3x is decreasing on the open interval (−1, 1).",
+      "ja": "f(x) = x³ − 3x が開区間 −1 < x < 1 で減少することを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "開区間 (a, b) は点の座標 (a, b) と同じ見た目になる。どちらの意味か文脈で判断し、口頭では the open interval from a to b と言えば紛れない。",
+    "∞ を端にもつ区間 (a, ∞) は丸括弧で書く。∞ は数ではないので角括弧 [ ] にはしない。"
+  ],
+  "related": [
+    "closed-interval",
+    "interval",
+    "endpoint",
+    "increasing-and-decreasing"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "open interval": 121
+    },
+    "written": {
+      "open interval": 64
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "proposition",
+  "ja": {
+    "term": "命題",
+    "reading": "めいだい",
+    "alt": []
+  },
+  "en": {
+    "term": "statement",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "proposition",
+        "register": "written",
+        "note": "大学の論理・離散数学の書き方。話し言葉で 35 件（すべて MIT OCW）、書き言葉で 152 件（MIT の講義ノート 148・OpenStax Introductory Statistics 3・OpenStax Algebra and Trigonometry 1）。"
+      }
+    ]
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の「命題」は真か偽かがはっきり決まる文や式。用例コーパスでは話し言葉は statement が 387 件で proposition（35 件、すべて MIT OCW）を大きく上回り、書き言葉は statement 278 件・proposition 152 件の併記（proposition のうち 148 件は MIT の講義ノート）。proposition は大学の論理・離散数学の言い方で、本によっては番号付きの小さな定理（Proposition 2.3 など）の名前としても使う。",
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "正しいか正しくないか（真か偽か）がはっきり決まる文や式。",
+  "definition_en": "A sentence or formula that is definitely either true or false.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Is this statement true or false? If it's false, give me a counterexample.",
+      "ja": "この命題は真かな、偽かな。偽なら反例を挙げてごらん。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the following statement is true or false: if x² = 4, then x = 2.",
+      "ja": "次の命題の真偽を調べよ。「x² = 4 ならば x = 2」",
+      "register": "written"
+    },
+    {
+      "en": "A proposition is a statement that is either true or false, but not both.",
+      "ja": "命題とは、真か偽かのどちらか一方に定まる文である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "statement は「命題」のほかに、一般の「文・主張」（problem statement ＝問題文など）の意味でも使う。",
+    "「x > 3」のように変数の値で真偽が変わるものは、日本の教科書では「条件」と呼んで命題と区別する。"
+  ],
+  "related": [
+    "true",
+    "false",
+    "truth-value",
+    "condition",
+    "counterexample"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "命題",
+      "en": "Proposition"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "statement": 387,
+      "proposition": 35
+    },
+    "written": {
+      "statement": 278,
+      "proposition": 152
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

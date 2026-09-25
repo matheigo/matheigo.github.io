@@ -1,0 +1,86 @@
+{
+  "id": "truth-value",
+  "ja": {
+    "term": "真偽",
+    "reading": "しんぎ",
+    "alt": []
+  },
+  "en": {
+    "term": "truth value",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "命題が真であるか偽であるかということ。",
+  "definition_en": "Whether a statement is true or false.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Before we prove anything, let's figure out the truth value of each statement.",
+      "ja": "証明に入る前に、それぞれの命題の真偽を確かめよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether each statement is true or false. If a statement is false, give a counterexample.",
+      "ja": "次の命題の真偽を調べよ。偽であるものは反例を挙げよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "問題文の「真偽を調べよ」は truth value を使わず、Determine whether … is true or false. と書くのがふつう。",
+    "用例コーパスで truth value は話し言葉 0 件、書き言葉 3 件（すべて MIT の講義ノート）と少ない。見出しは Levin の離散数学の本（1.1 Mathematical Statements）の呼び方による。"
+  ],
+  "related": [
+    "true",
+    "false",
+    "proposition",
+    "counterexample"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.1 Mathematical Statements"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "truth value": 3
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは Levin の呼び方 truth value（1.1 Mathematical Statements・1.2 Implications・1.3 Rules of Logic）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

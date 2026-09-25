@@ -1,0 +1,90 @@
+{
+  "id": "end-of-proof",
+  "ja": {
+    "term": "証明終わり",
+    "reading": "しょうめいおわり",
+    "alt": []
+  },
+  "en": {
+    "term": "completes the proof",
+    "alt": [
+      "QED"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の答案は最後に「（証明終わり）」や「終」と書く。英語には名詞の「証明終わり」に当たる決まった語句はなく、最後の文を This completes the proof. のように締めるか、記号 ∎ ／ □ や Q.E.D. を置く。用例コーパスの書き言葉では completes the proof が 13 件（MIT の講義ノート 8・OpenStax Calculus 5）、QED は話・書とも 1 件。",
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "証明がここで終わったことを示す言葉や印。日本の答案では「（証明終わり）」や「終」と書く。",
+  "definition_en": "The words or mark that show a proof is finished; in English, a closing sentence such as \"This completes the proof,\" or a symbol such as ∎ or the abbreviation Q.E.D.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "So the formula holds for n = k + 1 too, and that completes the proof.",
+      "ja": "だから n = k + 1 のときも式は成り立つ。これで証明終わり。",
+      "register": "spoken"
+    },
+    {
+      "en": "Hence the statement holds for n = k + 1, which completes the proof.",
+      "ja": "よって n = k + 1 のときも成り立つ。（証明終わり）",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「証明終わり」を直訳して proof end などと書かない。最後の文で締めるか、∎ を置く。",
+    "Q.E.D. はラテン語 quod erat demonstrandum（示すべきことが示された）の略。"
+  ],
+  "related": [
+    "proof",
+    "prove",
+    "proof-by-induction",
+    "direct-proof"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "QED": 1
+    },
+    "written": {
+      "completes the proof": 13,
+      "QED": 1
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

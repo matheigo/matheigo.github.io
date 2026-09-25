@@ -1,0 +1,95 @@
+{
+  "id": "vertex-form",
+  "ja": {
+    "term": "標準形",
+    "reading": "ひょうじゅんけい",
+    "alt": [
+      "頂点形"
+    ]
+  },
+  "en": {
+    "term": "vertex form",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の「標準形」y = a(x − p)² + q は英語の vertex form に当たる。英語では頂点を (h, k) として y = a(x − h)² + k と書く。「標準形」を standard form と直訳すると食い違う: OpenStax Algebra and Trigonometry は a(x − h)² + k を quadratic function の standard form と呼び、vertex form とも呼ぶと書くが、ax² + bx + c（日本の一般形）を standard form と呼ぶ話し手もいる。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "二次関数を y = a(x − p)² + q の形に書いたもの。頂点 (p, q) と軸 x = p がそのまま読み取れる。",
+  "definition_en": "A quadratic function written as y = a(x − h)² + k, which shows the vertex (h, k) and the axis of symmetry x = h directly.",
+  "latex": "y = a(x - h)^2 + k",
+  "spoken_en": "y equals a times the quantity x minus h squared, plus k",
+  "examples": [
+    {
+      "en": "Let's complete the square to get this into vertex form.",
+      "ja": "平方完成して標準形に直そう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Once it's in vertex form, you can just read off the vertex: it's at (3, −2).",
+      "ja": "標準形にすれば頂点がそのまま読める。頂点は (3, −2) だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write f(x) = x² − 6x + 7 in vertex form and find the vertex of its graph.",
+      "ja": "f(x) = x² − 6x + 7 を標準形に直し、グラフの頂点を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の「標準形」を standard form と直訳しない。英語の standard form は ax² + bx + c を指すことも a(x − h)² + k を指すこともある（OpenStax Algebra and Trigonometry は後者）。どちらの形か式で確かめる。",
+    "英語では頂点を (h, k) と書き、日本の教科書の (p, q) と文字が違う。符号にも注意: y = 2(x + 1)² − 5 の頂点は (−1, −5)。"
+  ],
+  "related": [
+    "vertex",
+    "completing-the-square",
+    "axis-of-symmetry",
+    "standard-form",
+    "factored-form"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "vertex form": 35
+    },
+    "written": {
+      "vertex form": 7
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

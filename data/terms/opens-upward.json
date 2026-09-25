@@ -1,0 +1,117 @@
+{
+  "id": "opens-upward",
+  "ja": {
+    "term": "下に凸",
+    "reading": "したにとつ",
+    "alt": []
+  },
+  "en": {
+    "term": "opens upward",
+    "alt": [
+      "opens up"
+    ],
+    "uk": null,
+    "variants": [
+      {
+        "term": "concave up",
+        "register": "both",
+        "note": "微積分での言い方（凹凸）。書き言葉 60 件のうち 53 件が OpenStax Calculus。話し言葉で 48 件（Khan Academy 17・Professor Leonard 16・MIT OCW 11 ほか 4）、書き言葉で 60 件（OpenStax Calculus 53・OpenStax Algebra and Trigonometry 4・MIT の講義ノート 3）。"
+      }
+    ]
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "日本語の「下に凸」は放物線にも一般の曲線にも使うが、英語では放物線には opens upward ／ opens up（開く向き）、一般の曲線には concave up（凹凸。CED topic 5.6）と言い分ける。用例コーパスで opens upward は話し言葉 21 件・書き言葉 16 件、opens up は話し言葉 23 件・書き言葉 16 件。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "グラフが下にふくらんだ形であること。二次関数 y = ax² + bx + c では a > 0 のとき放物線が下に凸で、頂点が最も低い点になる。",
+  "definition_en": "Said of a parabola y = ax² + bx + c with a > 0: it is U-shaped and its vertex is the lowest point.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Since a is positive, the parabola opens up, so the vertex gives the minimum.",
+      "ja": "a が正なので放物線は下に凸で、頂点で最小になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "The graph of y = 2x² − 8x + 3 opens upward, so the function has a minimum value.",
+      "ja": "y = 2x² − 8x + 3 のグラフは下に凸なので、この関数は最小値をもつ。",
+      "register": "written"
+    },
+    {
+      "en": "Since f″(x) > 0 on (1, ∞), f is concave up on that interval.",
+      "ja": "区間 x > 1 で f″(x) > 0 なので、f はこの区間で下に凸である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「下に凸」を convex downward と直訳しない。放物線は opens upward ／ opens up、一般の曲線は concave up と言う。",
+    "日本語は「下」、英語は up（上に開く）で、上下の単語が逆になる。上に凸・下に凸を取り違えやすい。"
+  ],
+  "related": [
+    "concavity",
+    "opens-downward",
+    "vertex",
+    "minimum",
+    "check-the-concavity"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "concave up": 48,
+      "opens up": 23,
+      "opens upward": 21
+    },
+    "written": {
+      "opens upward": 16,
+      "concave up": 60,
+      "opens up": 16
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

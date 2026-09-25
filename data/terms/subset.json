@@ -1,0 +1,108 @@
+{
+  "id": "subset",
+  "ja": {
+    "term": "部分集合",
+    "reading": "ぶぶんしゅうごう",
+    "alt": []
+  },
+  "en": {
+    "term": "subset",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic",
+    "set-theory"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "集合 B の要素だけでできている集合 A のこと。A のどの要素も B の要素であるとき、A を B の部分集合という。",
+  "definition_en": "A set A is a subset of a set B when every element of A is also an element of B.",
+  "latex": "A \\subset B",
+  "spoken_en": "A is a subset of B",
+  "examples": [
+    {
+      "en": "So A is a subset of B, because everything in A is also in B.",
+      "ja": "だから A は B の部分集合だ。A に入っているものは全部 B にも入っているからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "List all subsets of {1, 2, 3}.",
+      "ja": "集合 {1, 2, 3} の部分集合をすべて書き並べよ。",
+      "register": "written"
+    },
+    {
+      "en": "If A ⊂ B, then A is contained in B, and B contains A.",
+      "ja": "A ⊂ B のとき、A は B に含まれる、または B は A を含むという。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「含む」「含まれる」は contain ／ is contained in。A ⊂ B は A is contained in B、B ⊃ A は B contains A と読む。",
+    "日本の教科書の ⊂ は A = B の場合も含む。英語の本では ⊆ と ⊂（真部分集合）を書き分けるものと、⊂ だけを使うものがあり、記号は教科書による。",
+    "要素と部分集合を混同しない。1 ∈ A（1 is an element of A）と {1} ⊂ A（{1} is a subset of A）は別の主張。"
+  ],
+  "related": [
+    "set",
+    "element",
+    "empty-set",
+    "universal-set",
+    "venn-diagram"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "部分集合",
+      "en": "Subset"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "subset": 109
+    },
+    "written": {
+      "subset": 179
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

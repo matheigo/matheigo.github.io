@@ -1,0 +1,79 @@
+{
+  "id": "universal-set",
+  "ja": {
+    "term": "全体集合",
+    "reading": "ぜんたいしゅうごう",
+    "alt": []
+  },
+  "en": {
+    "term": "universal set",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic",
+    "set-theory"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "考えている集合をすべて部分集合として含む、議論の土台になる集合。ふつう U で表す。",
+  "definition_en": "The set of everything under consideration in a given problem, usually written U; every set in the problem is a subset of it.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's take the universal set to be the integers from 1 to 10.",
+      "ja": "全体集合を 1 から 10 までの整数としよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let U = {1, 2, 3, …, 10} be the universal set, and let A = {2, 4, 6, 8, 10}. Find the complement of A.",
+      "ja": "U = {1, 2, 3, …, 10} を全体集合とし、A = {2, 4, 6, 8, 10} とする。A の補集合を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "Levin の離散数学の本は全体集合を universe と呼び、論理の文脈では universe of discourse とも言う。用例コーパスの universe は宇宙の意味がほとんどなので数えていない。",
+    "補集合は全体集合を決めてはじめて決まる。同じ A でも U が変われば補集合も変わる。"
+  ],
+  "related": [
+    "set",
+    "subset",
+    "complement",
+    "venn-diagram"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

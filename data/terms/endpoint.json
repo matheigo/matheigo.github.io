@@ -1,0 +1,111 @@
+{
+  "id": "endpoint",
+  "ja": {
+    "term": "端点",
+    "reading": "たんてん",
+    "alt": [
+      "区間の端"
+    ]
+  },
+  "en": {
+    "term": "endpoint",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "区間の両端にあたる数（点）。区間 a ≦ x ≦ b では a と b。",
+  "definition_en": "Either of the two numbers that bound an interval; the endpoints of [a, b] are a and b.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To find the max on a closed interval, check the vertex and both endpoints.",
+      "ja": "閉区間での最大値は、頂点と両端の値を比べて求める。",
+      "register": "spoken"
+    },
+    {
+      "en": "Is the endpoint included? If it is, use a bracket; if not, use a parenthesis.",
+      "ja": "端点は含まれる？ 含まれるなら角かっこ、含まれないなら丸かっこを使う。",
+      "register": "spoken"
+    },
+    {
+      "en": "On the interval [0, 5], f(x) = x² − 4x + 1 has its minimum at the vertex x = 2 and its maximum at the endpoint x = 5.",
+      "ja": "0 ≦ x ≦ 5 において、f(x) = x² − 4x + 1 は頂点 x = 2 で最小、区間の端 x = 5 で最大となる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語では「区間の端」「両端」と言うことが多いが、英語は endpoint 1 語で、「両端」は the endpoints (of the interval)。",
+    "端点を含むかどうかは区間記法のかっこで表す。[ ] は含む、( ) は含まない。∞ の側は端点がないので必ず丸かっこ。"
+  ],
+  "related": [
+    "interval",
+    "closed-interval",
+    "open-interval",
+    "vertex",
+    "maximum"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "端点",
+      "en": "End (topology)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "endpoint": 203
+    },
+    "written": {
+      "endpoint": 276
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

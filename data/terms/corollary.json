@@ -1,0 +1,95 @@
+{
+  "id": "corollary",
+  "ja": {
+    "term": "系",
+    "reading": "けい",
+    "alt": []
+  },
+  "en": {
+    "term": "corollary",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "証明したばかりの定理から、ほとんど手間をかけずに導かれる命題。",
+  "definition_en": "A statement that follows directly from a theorem that has just been proved, with little or no extra work.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "This is really just a corollary of the mean value theorem.",
+      "ja": "これは実は平均値の定理の系にすぎない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Corollary: If f′(x) = 0 for every x in (a, b), then f is constant on (a, b).",
+      "ja": "系：区間 (a, b) のすべての x で f′(x) = 0 ならば、f は (a, b) で定数関数である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の見出しは 1 字の「系」なので見落としやすい。英文で Corollary とあれば「系」、Lemma なら「補題」。",
+    "米国式の発音は第 1 音節に強勢（COR-uh-lair-ee）。"
+  ],
+  "related": [
+    "lemma",
+    "axiom",
+    "proof",
+    "mean-value-theorem"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "系 (数学)",
+      "en": "Corollary"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "corollary": 52
+    },
+    "written": {
+      "corollary": 84
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

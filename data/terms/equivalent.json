@@ -1,0 +1,108 @@
+{
+  "id": "equivalent",
+  "ja": {
+    "term": "同値",
+    "reading": "どうち",
+    "alt": []
+  },
+  "en": {
+    "term": "equivalent",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "2 つの命題・条件について、一方が成り立てば他方も成り立ち、その逆も言えること。p ⇔ q と書く。",
+  "definition_en": "Describes two statements or conditions that imply each other, so that one is true exactly when the other is true; written p ⇔ q.",
+  "latex": "p \\iff q",
+  "spoken_en": "p is equivalent to q",
+  "examples": [
+    {
+      "en": "These two conditions are equivalent, so you can use whichever one is easier to check.",
+      "ja": "この 2 つの条件は同値だから、確かめやすい方を使えばいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the conditions x² − 5x + 6 = 0 and \"x = 2 or x = 3\" are equivalent.",
+      "ja": "条件 x² − 5x + 6 = 0 と「x = 2 または x = 3」が同値であることを示せ。",
+      "register": "written"
+    },
+    {
+      "en": "Multiplying both sides by a nonzero number gives an equivalent equation.",
+      "ja": "両辺に 0 でない数を掛けても、同値な方程式が得られる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "論理の同値をはっきり言うときは logically equivalent（用例コーパスの書き言葉で 7 件）。見出しの equivalent を含むので別の言い方としては数えない。",
+    "英語の equivalent は equivalent fractions（等しい分数）、equivalent expressions など論理以外にも広く使うので、件数にはその意味も含まれる。",
+    "同値変形は、方程式を equivalent equation に変形していくこと。両辺を 2 乗するなどの変形は同値でなくなることがある。"
+  ],
+  "related": [
+    "necessary-and-sufficient-condition",
+    "contrapositive",
+    "proposition",
+    "condition"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "equivalent": 295
+    },
+    "written": {
+      "equivalent": 225
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

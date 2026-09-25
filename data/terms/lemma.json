@@ -1,0 +1,81 @@
+{
+  "id": "lemma",
+  "ja": {
+    "term": "補題",
+    "reading": "ほだい",
+    "alt": []
+  },
+  "en": {
+    "term": "lemma",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "大きな定理を証明するための足がかりとして、先に証明しておく補助的な命題。",
+  "definition_en": "A smaller result proved first so that it can be used as a step in the proof of a larger theorem.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's knock out a quick lemma first, and then the theorem falls right out.",
+      "ja": "まず簡単な補題を片づけよう。そうすれば定理はすぐに出る。",
+      "register": "spoken"
+    },
+    {
+      "en": "By Lemma 2, if n² is even, then n is even.",
+      "ja": "補題 2 より、n² が偶数ならば n は偶数である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは lemma は話し言葉 81 件がすべて MIT OCW、書き言葉 132 件がすべて MIT の講義ノートで、高校向けのソースには出てこない。",
+    "複数形はふつう lemmas（lemmata は古い形）。"
+  ],
+  "related": [
+    "corollary",
+    "axiom",
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "補題",
+      "en": "Lemma (mathematics)"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "lemma": 81
+    },
+    "written": {
+      "lemma": 132
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "proof-by-contrapositive",
+  "ja": {
+    "term": "対偶を利用した証明",
+    "reading": "たいぐうをりようしたしょうめい",
+    "alt": [
+      "対偶による証明"
+    ]
+  },
+  "en": {
+    "term": "proof by contrapositive",
+    "alt": [
+      "proof by contraposition"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "「p ならば q」を示す代わりに、真偽が一致する対偶「q でないならば p でない」を証明する方法。",
+  "definition_en": "A method of proving \"if p, then q\" by proving its contrapositive, \"if not q, then not p,\" which has the same truth value.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Use a proof by contrapositive to show that if n² is even, then n is even.",
+      "ja": "対偶を利用して、n² が偶数ならば n は偶数であることを証明せよ。",
+      "register": "written"
+    },
+    {
+      "en": "Going directly is messy, so let's prove the contrapositive: if n is odd, then n² is odd.",
+      "ja": "直接示すのは面倒だから対偶を証明しよう。n が奇数ならば n² は奇数。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "proof by contraposition とも言う。用例コーパスではどちらも話・書とも 0 件で、見出しは Levin（1.4 Proofs）の呼び方。",
+    "背理法（proof by contradiction）と名前が似ているので聞き間違えない。contrapositive は対偶、contradiction は矛盾。"
+  ],
+  "related": [
+    "contrapositive",
+    "proof-by-contradiction",
+    "direct-proof",
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.4 Proofs"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 proof by contrapositive（1.4 Proofs・2.2 Trees・6.2 Introduction to Number Theory）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

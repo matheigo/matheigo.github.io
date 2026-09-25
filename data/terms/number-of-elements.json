@@ -1,0 +1,103 @@
+{
+  "id": "number-of-elements",
+  "ja": {
+    "term": "要素の個数",
+    "reading": "ようそのこすう",
+    "alt": [
+      "基数",
+      "濃度"
+    ]
+  },
+  "en": {
+    "term": "cardinality",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "number of elements",
+        "register": "written",
+        "note": "高校・入門の書き方で、OpenStax はこちらだけを使う。話し言葉で 10 件（すべて MIT OCW）、書き言葉で 15 件（MIT の講義ノート 9・OpenStax Algebra and Trigonometry 4・OpenStax Calculus 2）。"
+      }
+    ]
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の数Iの n(A) は有限集合の要素の個数だけを指す。英語の cardinality は無限集合の大きさ（日本の大学でいう「濃度」）まで含む語で、用例コーパスでは話し言葉 82 件がすべて MIT OCW（6.042）、書き言葉 36 件がすべて MIT の講義ノート。高校の範囲の問題文は number of elements の形で書ける。記号は英語の本では |A| と書くものと n(A) と書くものがある。",
+  "domains": [
+    "logic",
+    "set-theory"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "集合に含まれる要素の数。有限集合 A の要素の個数を n(A) と書く。",
+  "definition_en": "The number of elements in a set; for a finite set A it is written n(A) or |A|.",
+  "latex": "n(A \\cup B) = n(A) + n(B) - n(A \\cap B)",
+  "spoken_en": "n of A union B equals n of A plus n of B minus n of A intersect B",
+  "examples": [
+    {
+      "en": "This set has five elements, so its cardinality is 5.",
+      "ja": "この集合は要素を 5 つもつので、要素の個数は 5 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the number of elements in A ∪ B.",
+      "ja": "A ∪ B の要素の個数を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "If |A| = 12 and |B| = 8, what is the largest possible cardinality of A ∩ B?",
+      "ja": "n(A) = 12, n(B) = 8 のとき、A ∩ B の要素の個数として考えられる最大の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "|A| は絶対値と同じ記号だが、集合に付くと要素の個数を表す。n(A) は n of A と読む。",
+    "cardinality は無限集合にも使う（自然数全体と実数全体では cardinality が違う）。高校の「要素の個数」の意味だけなら number of elements でよい。"
+  ],
+  "related": [
+    "set",
+    "element",
+    "union",
+    "venn-diagram",
+    "universal-set"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "基数",
+      "en": "Cardinal number"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "cardinality": 82,
+      "number of elements": 10
+    },
+    "written": {
+      "number of elements": 15,
+      "cardinality": 36
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "necessary-and-sufficient-condition",
+  "ja": {
+    "term": "必要十分条件",
+    "reading": "ひつようじゅうぶんじょうけん",
+    "alt": []
+  },
+  "en": {
+    "term": "if and only if",
+    "alt": [
+      "necessary and sufficient condition"
+    ],
+    "uk": null,
+    "variants": [
+      {
+        "term": "iff",
+        "register": "written",
+        "note": "if and only if の略記で、書き言葉（証明・講義ノート）で使う。読むときは if and only if と言う。話し言葉で 2 件（すべて Khan Academy）、書き言葉で 84 件（すべて MIT の講義ノート）。"
+      }
+    ]
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語では名詞の「必要十分条件」よりも、接続の言い方 p if and only if q（p ⇔ q）で述べる。「A であるための必要十分条件は B である」は A if and only if B。用例コーパスで if and only if は話し言葉 75 件・書き言葉 111 件、名詞の necessary and sufficient condition は書き言葉 1 件（MIT の講義ノート）だけ。",
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "p ⇒ q と q ⇒ p がともに真のとき、q を p であるための必要十分条件という。このとき p と q は同値である。",
+  "definition_en": "q is a necessary and sufficient condition for p when p implies q and q implies p; in other words, p holds if and only if q holds.",
+  "latex": "p \\iff q",
+  "spoken_en": "p if and only if q",
+  "examples": [
+    {
+      "en": "A number is divisible by 3 if and only if the sum of its digits is divisible by 3.",
+      "ja": "整数が 3 で割り切れるための必要十分条件は、各位の数の和が 3 で割り切れることである。",
+      "register": "written"
+    },
+    {
+      "en": "\"If and only if\" means you have to prove both directions: this one implies that one, and that one implies this one.",
+      "ja": "「必要十分」ということは両方向を示さないといけない。こっちからあっち、あっちからこっち。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove that n² is odd iff n is odd.",
+      "ja": "n² が奇数であることは、n が奇数であるための必要十分条件であることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "必要十分条件を示すには、⇒ と ⇐ の両方向を証明する。英語では「両方向」を both directions と言える。",
+    "iff は書くときの略記。口で読むときは if and only if。"
+  ],
+  "related": [
+    "necessary-condition",
+    "sufficient-condition",
+    "equivalent",
+    "condition",
+    "proposition"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "if and only if": 75,
+      "iff": 2
+    },
+    "written": {
+      "if and only if": 111,
+      "iff": 84,
+      "necessary and sufficient condition": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}
