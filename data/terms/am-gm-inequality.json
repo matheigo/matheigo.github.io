@@ -17,7 +17,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "米国の高校課程（OpenStax 6 冊・CED）には出てこない。",
   "domains": [
     "algebra",
     "proof"
@@ -26,10 +26,7 @@
     "jp": [
       "数II"
     ],
-    "us": [
-      "Precalculus",
-      "Discrete Math"
-    ]
+    "us": []
   },
   "definition_ja": "正の数 a, b について (a+b)/2 ≧ √(ab) が成り立ち、等号は a=b のときに限るという関係。",
   "definition_en": "For positive a and b, the arithmetic mean (a+b)/2 is at least the geometric mean √(ab), with equality exactly when a = b.",
@@ -78,8 +75,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-24。docs/DECISIONS.md「Phase 2 代数 2・Precalculus の単元の前の修正」の、残った ③ を人間が決めた行）。en.term は AM-GM inequality のまま。level.us は確かめられないので外した。register は主張しない。",
       "raised": "2026-09-24"
     }
   ]

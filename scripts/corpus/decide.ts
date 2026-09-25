@@ -34,8 +34,11 @@
  *
  * Only two things reach the human (the user's call on 2026-09-11):
  *   - undecided entries that neither reference names (corpus-undecided),
- *     unless the human has already settled the headword (reviewed.human:
- *     corpus-human-settled)
+ *     unless the human has already settled the headword. That mark is the
+ *     flag corpus-human-settled, written by hand with the date and the
+ *     DECISIONS line in its note; decide keeps it as it is and does not send
+ *     the entry back. reviewed.human is not used for this: it marks a human
+ *     review of the whole entry (the ground for verified in Phase 5)
  *   - entries where the corpus contradicts the register recorded in the data
  */
 import fs from "node:fs";
@@ -138,19 +141,32 @@ interface Line {
   settled: Settled | null;
   /** Things the entry must change to agree with how it was settled (fixed by hand, then re-run). */
   todo: string[];
-  /** ③ settled by the human (reviewed.human): not sent back to the review. */
+  /** ③ settled by the human (flag corpus-human-settled): not sent back to the review. */
   human: boolean;
+  /** The entry carries corpus-human-settled although the corpus now settles it. */
+  humanStale: boolean;
+  /** How the rules alone would settle a ③ the human settled (for the report). */
+  ruleSettled: Settled | null;
+  /** The note of the corpus-human-settled flag. */
+  humanNote: string | null;
 }
 
 const NO_FIXED_NOTE = "英語に決まった言い方がない";
 
+const HUMAN_SETTLED = "corpus-human-settled";
+
 /**
- * A ③ the human has already looked at and settled (DECISIONS, Phase 2 数列・
- * 級数の単元の前の修正): the entry carries the date in reviewed.human. It is
- * recorded as settled by the human and does not go back to the review list.
+ * A ③ whose headword the human has settled (DECISIONS, Phase 2 代数 2 の単元の
+ * 前の修正): the entry carries the flag corpus-human-settled, written by hand,
+ * with the date and the DECISIONS line in its note. It takes precedence over
+ * the rules for a ③ (the human may have settled a word the rules would call
+ * "no fixed expression"), is kept as written, and the entry does not go back
+ * to the review list. reviewed.human is not read here: it marks a human review
+ * of the whole entry.
  */
-const humanSettled = (record: Record<string, unknown>): string | null =>
-  ((record.reviewed as { human?: string | null } | undefined)?.human ?? null) || null;
+type Flag = { code: string; note: string; raised?: string };
+const humanFlag = (record: Record<string, unknown>): Flag | null =>
+  ((record.flags as Flag[] | undefined) ?? []).find((f) => f.code === HUMAN_SETTLED) ?? null;
 
 function describeSettled(s: Settled): string {
   if (s.kind === "no-fixed-expression") return `英語に決まった言い方がない（話 ${s.spoken} 件 ／ 書 ${s.written} 件）`;
@@ -214,7 +230,8 @@ function main() {
     const bothUndecided = spoken.kind === "undecided" && (written === null || written.kind === "undecided");
     const rawTotal = (by: Record<string, Record<string, number>>) =>
       Object.values(flatten(by)).reduce((a, b) => a + b, 0);
-    const settled: Settled | null = !bothUndecided
+    const human = humanFlag(record);
+    const ruleSettled: Settled | null = !bothUndecided
       ? null
       : c.collection === "terms"
         ? settleUndecided(
@@ -228,7 +245,13 @@ function main() {
             candidatesOf(c.collection, record),
           )
         : { kind: "undecided" };
+    // The human's call comes before the rules.
+    const settled: Settled | null = bothUndecided && human ? { kind: "undecided" } : ruleSettled;
     const todo: string[] = [];
+    if (bothUndecided && human) {
+      const en = record.en as { register?: string };
+      if (en.register) todo.push(`en.register（${en.register}）を外す（register は主張しない）`);
+    }
     if (settled && settled.kind !== "undecided") {
       const en = record.en as { term: string; register?: string };
       if (en.register) todo.push(`en.register（${en.register}）を外す（register は主張しない）`);
@@ -260,8 +283,20 @@ function main() {
     const mismatch = problems.length ? problems.join(" ／ ") : null;
 
     const writeBack = WRITE && inScope(key);
-    const human = settled?.kind === "undecided" && humanSettled(record) !== null;
-    lines.push({ key, wroteBack: writeBack, spoken, written, merges: c.merges, mismatch, settled, todo, human });
+    lines.push({
+      key,
+      wroteBack: writeBack,
+      spoken,
+      written,
+      merges: c.merges,
+      mismatch,
+      settled,
+      todo,
+      human: bothUndecided && human !== null,
+      humanStale: !bothUndecided && human !== null,
+      ruleSettled: bothUndecided && human ? ruleSettled : null,
+      humanNote: human?.note ?? null,
+    });
 
     if (!writeBack) continue;
 
@@ -272,8 +307,9 @@ function main() {
       counted: file.counted,
     };
 
+    // corpus-human-settled is the human's, written by hand: kept as it is.
     const flags = ((record.flags as { code: string }[] | undefined) ?? []).filter(
-      (f) => !f.code.startsWith("corpus-"),
+      (f) => !f.code.startsWith("corpus-") || f.code === HUMAN_SETTLED,
     );
     if (settled?.kind === "no-fixed-expression") {
       flags.push({
@@ -287,12 +323,8 @@ function main() {
         note: `コーパスで決まらない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。見出しは ${describeSettled(settled)}。register は主張しない。`,
         raised: TODAY,
       } as { code: string });
-    } else if (settled?.kind === "undecided" && humanSettled(record)) {
-      flags.push({
-        code: "corpus-human-settled",
-        note: `コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。見出しは人間が決めた（reviewed.human ${humanSettled(record)}）。register は主張しない。`,
-        raised: TODAY,
-      } as { code: string });
+    } else if (settled?.kind === "undecided" && human) {
+      // already in flags
     } else if (settled?.kind === "undecided") {
       flags.push({
         code: "corpus-undecided",
@@ -328,7 +360,8 @@ function main() {
   const single = lines.filter((l) => l.spoken.kind === "single" || l.written?.kind === "single");
   const both = lines.filter((l) => l.spoken.kind === "both" || l.written?.kind === "both");
   const undecided = lines.filter((l) => l.settled?.kind === "undecided" && !l.human);
-  const human = lines.filter((l) => l.settled?.kind === "undecided" && l.human);
+  const human = lines.filter((l) => l.human);
+  const humanStale = lines.filter((l) => l.humanStale);
   const noFixed = lines.filter((l) => l.settled?.kind === "no-fixed-expression");
   const byReference = lines.filter((l) => l.settled?.kind === "reference");
   const todos = lines.filter((l) => l.todo.length);
@@ -403,12 +436,23 @@ function main() {
     noFixed.length + byReference.length ? "| 項目 | 決着 | 話し言葉 | 書き言葉 |\n|---|---|---|---|" : "なし。",
     ...[...noFixed, ...byReference].map((l) => `| ${l.key} | ${describeSettled(l.settled!)} | ${describe(l.spoken)} | ${describe(l.written)} |`),
     "",
-    "## ③ のうち人間が見出しを決めたもの（reviewed.human）",
+    "## ③ のうち人間が見出しを決めたもの（flag corpus-human-settled）",
     "",
-    "コーパスでも CED・OpenStax でも決まらず、人間が見出しを決めた。register は主張しない。人間レビューには戻さない。",
+    "コーパスで決まらず、人間が見出しを決めた（flag の note に日付と DECISIONS の行）。規則より人間の決定を先にする。",
+    "register は主張しない。人間レビューには戻さない。",
     "",
-    human.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
-    ...human.map((l) => `| ${l.key} | ${describe(l.spoken)} | ${describe(l.written)} |`),
+    human.length ? "| 項目 | 話し言葉 | 書き言葉 | 規則だけなら | 印 |\n|---|---|---|---|---|" : "なし。",
+    ...human.map(
+      (l) =>
+        `| ${l.key} | ${describe(l.spoken)} | ${describe(l.written)} | ${l.ruleSettled ? describeSettled(l.ruleSettled) : "—"} | ${l.humanNote ?? ""} |`,
+    ),
+    "",
+    "## 人間が見出しを決めたが、今はコーパスで決まるもの",
+    "",
+    "corpus-human-settled は残してある。コーパスの結論とエントリが合っているかを見る。",
+    "",
+    humanStale.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
+    ...humanStale.map((l) => `| ${l.key} | ${describe(l.spoken)} | ${describe(l.written)} |`),
     "",
     "## エントリ側で直すこと（決着とエントリが合っていない）",
     "",

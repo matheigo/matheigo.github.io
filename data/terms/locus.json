@@ -11,8 +11,8 @@
     "uk": null
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "米国の高校・OpenStax はほぼ locus と言わず、the set of all points … such that … と書く（用例コーパスで locus は話・書とも 0 件、the set of all points は書き言葉 31 件〔OpenStax Algebra and Trigonometry 18・Calculus Volume 3 10・Volume 2 3〕・話し言葉 3 件）。",
   "domains": [
     "geometry",
     "complex-numbers"
@@ -50,7 +50,6 @@
     }
   ],
   "pitfalls": [
-    "用例コーパスでは locus は 0 件。OpenStax Algebra and Trigonometry は円錐曲線を「〜を満たす点全体の集合」（the set of all points …）として定義している。",
     "「点 z が描く図形」も locus of z で言える。"
   ],
   "related": [
@@ -78,8 +77,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-24。docs/DECISIONS.md「Phase 2 代数 2・Precalculus の単元の前の修正」の、残った ③ を人間が決めた行）。en.term は locus のまま。register は主張しない。",
       "raised": "2026-09-24"
     }
   ]

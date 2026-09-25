@@ -18,8 +18,8 @@
     "uk": null
   },
   "pos": "verb",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "英語に決まった動詞はない。ふつうは定理の名前 squeeze theorem で言う（用例コーパスで squeeze theorem は話し言葉 15 件・書き言葉 13 件、はさむ意味の squeeze … between は話し言葉 1 件、sandwich … between は 4 件）。",
   "domains": [
     "calculus"
   ],
@@ -92,8 +92,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-24。docs/DECISIONS.md「Phase 2 代数 2・Precalculus の単元の前の修正」の、残った ③ を人間が決めた行）。register は主張しない。",
       "raised": "2026-09-24"
     }
   ]

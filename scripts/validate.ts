@@ -63,6 +63,23 @@ const sourcesOf = (d: Entry) => (Array.isArray(d.sources) ? d.sources : []);
 
 /** The phrase mapping_note uses for a Japanese headword not found in Japanese textbooks. */
 const PROJECT_TRANSLATION = "本プロジェクトの訳語";
+/**
+ * The phrase mapping_note uses for an exact term the US high-school sources do
+ * not cover (DECISIONS, Phase 2 代数 2・Precalculus の単元の前の修正): the words
+ * match, so the mapping stays exact, and the note is about the range.
+ */
+const NOT_IN_US_COURSES = "米国の高校課程（OpenStax 6 冊・CED）には出てこない";
+
+/**
+ * Intended homonyms: two concepts that English calls by the same en.term
+ * (Phase 1: "同じ英語でも別概念なら別 id"). Each pair is a human judgement;
+ * the entries point at each other in related / pitfalls.
+ */
+const SAME_EN_TERM: [string, string][] = [
+  ["divergence", "divergence-vector"], // 発散（数列・級数） ／ 発散（ベクトル場）
+];
+const intendedHomonym = (a: string, b: string) =>
+  SAME_EN_TERM.some(([x, y]) => (x === a && y === b) || (x === b && y === a));
 
 // ------------------------------------------------------------ per-entry ----
 
@@ -87,7 +104,10 @@ for (const collection of COLLECTIONS) {
       const en = (data.en as { term: string }).term.toLowerCase();
       if (seenJa.has(ja)) err(where, `ja.term "${ja}" already used by ${seenJa.get(ja)}`);
       seenJa.set(ja, where);
-      if (seenEn.has(en)) warn(where, `en.term "${en}" already used by ${seenEn.get(en)}`);
+      const other = seenEn.get(en);
+      if (other && !intendedHomonym(stem, other.replace(/^terms\/|\.json$/g, ""))) {
+        warn(where, `en.term "${en}" already used by ${other}`);
+      }
       seenEn.set(en, where);
     }
 
@@ -123,7 +143,12 @@ for (const collection of COLLECTIONS) {
       // An exact entry may still say that its Japanese headword is this
       // project's translation (DECISIONS, Phase 2 修正 5); anything else in
       // the note of an exact entry is probably a leftover.
-      if (mapping === "exact" && note && !String(note).includes(PROJECT_TRANSLATION)) {
+      if (
+        mapping === "exact" &&
+        note &&
+        !String(note).includes(PROJECT_TRANSLATION) &&
+        !String(note).includes(NOT_IN_US_COURSES)
+      ) {
         warn(where, "mapping is exact but mapping_note is set");
       }
 

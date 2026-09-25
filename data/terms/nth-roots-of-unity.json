@@ -51,10 +51,12 @@
   ],
   "sources": [
     {
-      "type": "editorial"
+      "type": "wikipedia-langlink",
+      "ja": "1の冪根",
+      "en": "Root of unity"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-24",
     "audit": null,
@@ -63,13 +65,8 @@
   "updated": "2026-09-24",
   "flags": [
     {
-      "code": "draft-reason",
-      "note": "英語は固有の用語（nth roots of unity）だが、OpenStax（6 冊）にも台帳の Wikipedia にもなく、用例コーパスでは MIT の講義ノートに 2 件だけ。",
-      "raised": "2026-09-24"
-    },
-    {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-24。docs/DECISIONS.md「Phase 2 代数 2・Precalculus の単元の前の修正」の、残った ③ を人間が決めた行）。en.term は nth roots of unity のまま。register は主張しない。",
       "raised": "2026-09-24"
     }
   ],

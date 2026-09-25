@@ -308,3 +308,14 @@
 - 2026-09-24 | 2 | 発散（ベクトル解析）の en.term は divergence のままにし、既存の divergence（数列・級数の発散）と en.term が重なる validate の警告 1 件を残した | 同じ英語が 2 つの概念を指すのは事実（Phase 1 の「同じ英語でも別概念なら別 id」）。pitfalls で互いに触れ、コーパスでは the divergence of の形で数えて分けた
 - 2026-09-24 | 2 | symbols/nabla を新設した（台帳の del の寄せ先）。読みは del f（standard）と the gradient of f（spoken）で、話し言葉 ② 16 ／ 12。del は ∂ の読みにも使われる（MIT 18.02、3Blue1Brown）ことを notes に書いた | 台帳の note「∇ の読み方」。読みの候補を 2 つ並べて数えると、どちらも 10 件以上
 - 2026-09-24 | 2 | symbols/derivative-leibniz の note「同じ順で読めば通じる」を「同じ順で読む」にした | 確かめられない「通じる」は書かない（今回の STYLE の追記）
+
+## Phase 2 代数 2・Precalculus の単元の前の修正（人間が決めた印・残った ③・同形語）— 2026-09-24
+
+- 2026-09-24 | 2 | 人間が ③ の見出しを決めた印は flag の corpus-human-settled だけにした（note に日付と DECISIONS の行を手で書く）。reviewed.human は使わない。前回の 3 語（number-of-real-solutions・prime-notation・find-the-inflection-points）と convergence-of-improper-integrals の reviewed.human を null に戻した | あなたの指示。reviewed.human はエントリ全体を人間が見た印（Phase 5 で verified に上げる根拠）で、見出しだけを決めた印にすると本文を誰も見ていないのにレビュー済みに見える。2026-09-24「Phase 2 数列・級数の単元の前の修正」の reviewed.human の行はこれで置き換わった
+- 2026-09-24 | 2 | decide は corpus-human-settled を「corpus-」で始まる flag の書き直しから外して、手で書いた note のまま残す。話・書とも ③ の語にこの flag があれば規則 1・2 より先に人間の決定とし、人間レビューに戻さない。レポートの「人間が見出しを決めたもの」には規則だけならどうなるかも並べる。flag があるのに今はコーパスで決まる語は別の節に出す（flag は消さない） | あなたの指示（decide もそれで判定する）。locus と squeeze は mapping near で全候補 10 件未満なので、規則 1 を先にすると「英語に決まった言い方がない」になり、あなたの決定と食い違う
+- 2026-09-24 | 2 | convergence-of-improper-integrals には corpus-human-settled を付けていない | 新しい見出し the integral converges が OpenStax の本文に当たり、規則 2（corpus-reference-fallback）で決着している。人間の決定を先にすると参照で決まった記録が消える
+- 2026-09-24 | 2 | 残った ③ 5 語をあなたの決定どおりにし、corpus-human-settled（note に日付とこの節）を付けた。locus は mapping near と mapping_note（the set of all points は書き言葉 31 件・話し言葉 3 件、locus は 0 件）、argument-of-a-complex-number は pitfalls の先頭に「関数の引数も argument」、squeeze は mapping near と mapping_note（squeeze theorem 話 15 ／ 書 13 件、squeeze … between 1 件、sandwich … between 4 件）、am-gm-inequality は level.us を空にして mapping_note | あなたの決定。件数は corpus:probe の出力。locus の pitfalls にあった同じ件数の文は mapping_note と重なるので消した
+- 2026-09-24 | 2 | nth-roots-of-unity: ja.wikipedia「1の冪根」の en langlink が Root of unity であることを crosscheck で確かめ、wikipedia-langlink を出典にして likely に上げた（draft-reason を外し、editorial の出典を外した） | あなたの決定（当たれば likely）。crosscheck 124/124 一致
+- 2026-09-24 | 2 | am-gm-inequality の level.us は空の配列にした（スキーマは us を必須にするが、要素数の下限はない）。サイトは空のとき「米国 —」と出す | あなたの指示（外せなければ止めて聞く）。スキーマは変えていない
+- 2026-09-24 | 2 | validate の「mapping が exact なのに mapping_note がある」警告は、note に「米国の高校課程（OpenStax 6 冊・CED）には出てこない」を含むときも出さない | am-gm-inequality は語の対応は exact のままで、note は範囲の注記（あなたの決定の文言）。「本プロジェクトの訳語」と同じく決まった文言で許す
+- 2026-09-24 | 2 | validate に意図した同形語の許可リスト（SAME_EN_TERM）を足し、divergence ／ divergence-vector（発散〔数列・級数〕／発散〔ベクトル場〕）を入れた。警告は 0 | あなたの指示。ペアごとに人間の判断として 1 行ずつ足す

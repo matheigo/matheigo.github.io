@@ -130,7 +130,7 @@ const jsonLd = {
   <section class="block meta">
     <h2>この項目について</h2>
     <ul>
-      <li>範囲: 日本 {term.level.jp.join("・")} ／ 米国 {term.level.us.join("・")}</li>
+      <li>範囲: 日本 {term.level.jp.join("・")} ／ 米国 {term.level.us.length ? term.level.us.join("・") : "—"}</li>
       <li>分野: {term.domains.join("・")}</li>
       <li>出典: {term.sources.map((s) => s.title ?? s.doc ?? s.en ?? s.type).join("／")}</li>
       {term.updated && <li>更新: {term.updated}</li>}
