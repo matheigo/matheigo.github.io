@@ -1,0 +1,117 @@
+{
+  "id": "sketch-the-graph",
+  "ja": {
+    "term": "グラフの概形をかく",
+    "reading": "ぐらふのがいけいをかく",
+    "alt": [
+      "概形をかく",
+      "曲線をかく"
+    ]
+  },
+  "en": {
+    "term": "sketch the graph",
+    "alt": [],
+    "variants": [
+      {
+        "term": "sketch a graph",
+        "register": "written",
+        "note": "a を使う書き方。話し言葉では 0 件、書き言葉で 82 件（OpenStax Algebra and Trigonometry 47・OpenStax Calculus 24・OpenStax Introductory Statistics 8 ほか 3）。"
+      },
+      {
+        "term": "sketch the curve",
+        "register": "both",
+        "note": "曲線の概形をかくときの言い方。話し言葉で 6 件（すべて MIT OCW）、書き言葉で 14 件（OpenStax Calculus 13・OpenStax Algebra and Trigonometry 1）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III",
+      "数C"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "増減・凹凸・漸近線などを調べて、グラフのおおまかな形をかく。",
+  "definition_en": "To draw the general shape of a graph, showing features such as where it rises and falls, its concavity, and its asymptotes.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Before you sketch the curve, find the intercepts and the critical points.",
+      "ja": "概形をかく前に、切片と臨界点を求めておく。",
+      "register": "spoken"
+    },
+    {
+      "en": "Sketch the graph of f(x) = x/(x² + 1), showing all asymptotes and extrema.",
+      "ja": "漸近線と極値を示して、f(x) = x/(x² + 1) のグラフの概形をかけ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「概形」に当たる 1 語はなく、sketch（ざっとかく）が「概形をかく」の意味を担う。"
+  ],
+  "related": [
+    "increasing-and-decreasing",
+    "local-extremum"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "sketch the curve": 6,
+      "sketch the graph": 4
+    },
+    "written": {
+      "sketch the graph": 160,
+      "sketch a graph": 82,
+      "sketch the curve": 14
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

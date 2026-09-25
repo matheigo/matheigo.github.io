@@ -1,0 +1,114 @@
+{
+  "id": "left-hand-limit",
+  "ja": {
+    "term": "左側極限",
+    "reading": "ひだりがわきょくげん",
+    "alt": []
+  },
+  "en": {
+    "term": "limit from the left",
+    "alt": [
+      "left-hand limit"
+    ],
+    "variants": [
+      {
+        "term": "left-hand limit",
+        "register": "written",
+        "note": "書き言葉ではこちらが多いが、ほぼ OpenStax Precalculus。話し言葉で 4 件（MIT OCW 3・Khan Academy 1）、書き言葉で 34 件（OpenStax Precalculus 32・MIT の講義ノート 2）。"
+      },
+      {
+        "term": "left-sided limit",
+        "register": "spoken",
+        "note": "少数の言い方。話し言葉で 4 件（NancyPi 3・The Organic Chemistry Tutor 1）、書き言葉では 0 件。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "x を a より小さい側から a に近づけたときの極限。",
+  "definition_en": "The limit of f(x) as x approaches a from values less than a.",
+  "latex": "\\lim_{x \\to a^-} f(x)",
+  "spoken_en": "the limit as x approaches a from the left of f of x",
+  "examples": [
+    {
+      "en": "From the left, the graph is heading toward 1, so the limit from the left is 1.",
+      "ja": "左から近づくとグラフは 1 に向かうので、左側極限は 1。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find lim_{x→0⁻} 1/x.",
+      "ja": "lim_{x→−0} 1/x を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書は x → a − 0 と書くが、米国の教科書は x → a⁻ と書き、a minus と読む（approaches a from the left）。"
+  ],
+  "related": [
+    "right-hand-limit",
+    "one-sided-limit",
+    "limit"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 1.3（limit from the left）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "limit from the left": 22,
+      "left-hand limit": 4,
+      "left-sided limit": 4
+    },
+    "written": {
+      "limit from the left": 9,
+      "left-hand limit": 34
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "normal-line",
+  "ja": {
+    "term": "法線",
+    "reading": "ほうせん",
+    "alt": []
+  },
+  "en": {
+    "term": "normal line",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "曲線上の点を通り、その点での接線に垂直な直線。",
+  "definition_en": "The line through a point on a curve that is perpendicular to the tangent line there.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The normal line is perpendicular to the tangent line, so its slope is the negative reciprocal.",
+      "ja": "法線は接線に垂直だから、傾きは接線の傾きの逆数の符号を変えたものになる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find an equation of the normal line to y = x² at the point (1, 1).",
+      "ja": "点 (1, 1) における y = x² の法線の方程式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「逆数の符号を変えたもの」は英語で negative reciprocal と言う。"
+  ],
+  "related": [
+    "slope-of-the-tangent-line",
+    "point-of-tangency",
+    "find-the-equation-of-the-tangent-line"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "normal line": 52
+    },
+    "written": {
+      "normal line": 6
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "changes-sign",
+  "ja": {
+    "term": "符号が変わる",
+    "reading": "ふごうがかわる",
+    "alt": []
+  },
+  "en": {
+    "term": "changes sign",
+    "alt": [],
+    "variants": [
+      {
+        "term": "switches sign",
+        "register": "spoken",
+        "note": "Khan Academy の言い方。話し言葉で 26 件（Khan Academy 25・MIT OCW 1）、書き言葉で 3 件（すべて OpenStax Calculus）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "式の値が正から負へ、または負から正へ変わる。",
+  "definition_en": "Of a quantity: to go from positive to negative or from negative to positive.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "f prime switches sign at x = 3, so that's an extremum.",
+      "ja": "x = 3 で f′ の符号が変わるので、そこは極値。",
+      "register": "spoken"
+    },
+    {
+      "en": "Since f′ changes sign from positive to negative at x = 0, f has a local maximum there.",
+      "ja": "x = 0 で f′ の符号が正から負に変わるので、f はそこで極大となる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "f″(c) = 0 でも符号が変わらなければ変曲点ではない（x⁴ の x = 0）。"
+  ],
+  "related": [
+    "first-derivative-test",
+    "critical-point"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "changes sign": 34,
+      "switches sign": 26
+    },
+    "written": {
+      "changes sign": 16,
+      "switches sign": 3
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

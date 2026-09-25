@@ -1,0 +1,89 @@
+{
+  "id": "sum-of-the-series",
+  "ja": {
+    "term": "級数の和",
+    "reading": "きゅうすうのわ",
+    "alt": []
+  },
+  "en": {
+    "term": "sum of the series",
+    "alt": [],
+    "variants": [
+      {
+        "term": "sum of an infinite series",
+        "register": "written",
+        "note": "少数の書き方。話し言葉では 0 件、書き言葉で 9 件（OpenStax Algebra and Trigonometry 5・OpenStax Calculus 4）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "無限級数が収束するときの、部分和の極限の値。",
+  "definition_en": "The limit of the partial sums of a convergent series.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If the partial sums approach 2, the sum of the series is 2.",
+      "ja": "部分和が 2 に近づくなら、級数の和は 2。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the sum of the series ∑_{n=0}^∞ (1/3)ⁿ.",
+      "ja": "級数 ∑_{n=0}^∞ (1/3)ⁿ の和を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "infinite-series",
+    "convergence"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "sum of the series": 4
+    },
+    "written": {
+      "sum of the series": 12,
+      "sum of an infinite series": 9
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

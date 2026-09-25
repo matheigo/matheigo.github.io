@@ -1,0 +1,77 @@
+{
+  "id": "make-a-sign-chart",
+  "ja": {
+    "term": "増減表をかく",
+    "reading": "ぞうげんひょうをかく",
+    "alt": []
+  },
+  "en": {
+    "term": "make a sign chart",
+    "alt": [
+      "draw a sign chart"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "none",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで 0 件）。日本の増減表は x・f′(x)・f(x) の行を 1 つの表にまとめるが、米国ではこの表を定型として教えず、f′ の符号を数直線上に + と − で書く sign chart で同じ判断をする（sign-chart を参照）。英語で説明するなら make a sign chart for f′ と言える。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "f′(x) の符号と f(x) の増減を表にまとめる。",
+  "definition_en": "To set out, in a table or on a number line, the sign of f′(x) and whether f is increasing or decreasing.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's make a sign chart for f prime: test one point in each interval.",
+      "ja": "f′ の符号の表を作ろう。各区間で 1 点ずつ調べる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Make a sign chart for f′(x) = (x − 1)(x + 2) and use it to find where f is increasing.",
+      "ja": "f′(x) = (x − 1)(x + 2) の符号の表をかき、f が増加する区間を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "sign-chart",
+    "increasing-and-decreasing",
+    "first-derivative-test"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

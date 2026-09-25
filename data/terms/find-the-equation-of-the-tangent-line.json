@@ -1,0 +1,112 @@
+{
+  "id": "find-the-equation-of-the-tangent-line",
+  "ja": {
+    "term": "接線の方程式を求める",
+    "reading": "せっせんのほうていしきをもとめる",
+    "alt": []
+  },
+  "en": {
+    "term": "find the equation of the tangent line",
+    "alt": [],
+    "variants": [
+      {
+        "term": "find the equation of the tangent line",
+        "register": "spoken",
+        "note": "話し言葉で最も多い。話し言葉で 11 件（Khan Academy 5・Professor Leonard 2・patrickJMT 2 ほか 2）、書き言葉で 3 件（OpenStax Precalculus 2・OpenStax Calculus 1）。"
+      },
+      {
+        "term": "find the tangent line",
+        "register": "spoken",
+        "note": "equation を省いた言い方。話し言葉で 10 件（Professor Leonard 5・MIT OCW 3・Khan Academy 1 ほか 1）、書き言葉で 4 件（MIT の講義ノート 3・OpenStax Calculus 1）。"
+      },
+      {
+        "term": "find an equation of the tangent line",
+        "register": "written",
+        "note": "OpenStax Calculus の問題文の書き方で、書き言葉の主見出し。話し言葉では 0 件、書き言葉で 35 件（OpenStax Calculus 33・OpenStax Precalculus 2）。"
+      }
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "曲線上の点での接線を、y = mx + b などの式で表す。",
+  "definition_en": "To write the tangent line at a point on a curve as an equation such as y = mx + b.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To find the equation of the tangent line, you need a point and a slope.",
+      "ja": "接線の方程式を求めるには、1 点と傾きがあればよい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find an equation of the tangent line to y = √x at x = 4.",
+      "ja": "x = 4 における y = √x の接線の方程式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "問題文は the equation ではなく an equation of the tangent line と書くことがある（OpenStax Calculus など）。意味は同じ。"
+  ],
+  "related": [
+    "slope-of-the-tangent-line",
+    "point-of-tangency",
+    "normal-line"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "find the tangent line": 10,
+      "find the equation of the tangent line": 11
+    },
+    "written": {
+      "find an equation of the tangent line": 35,
+      "find the equation of the tangent line": 3,
+      "find the tangent line": 4
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -230,3 +230,18 @@
 - 2026-09-24 | 2 | integration-by-long-division と integration-by-completing-the-square の出典に CED topic 6.10 を足した（ced-find で long division ／ completing the square がともに 6.10 に 2 件） | 規則 1 の mapping_note に「CED は手順として扱うが名前ではない」と書く根拠
 - 2026-09-24 | 2 | sign-chart（Phase 0 の語、積分の単元の外）も規則 1 に当たる（話・書とも 0 件、mapping none）が、書き戻していない | 書き戻しは今回の単元の語だけ（前の修正と同じ範囲の決め方）。sign-chart は次の単元（数II 微分の考え）の既存語で、あなたの指示「既存は飛ばす」に従う。レポートの怪しい点に残す
 - 2026-09-24 | 0 | count ／ decide ／ crosscheck ／ export の日付を UTC ではなくマシンの日付にした（`scripts/lib/load.ts` の `localDate`） | 太平洋時間の夕方には toISOString() が翌日になり、flags の raised とレポート名が 2026-09-25 になった
+
+## Phase 2 微分・極限の単元 — 2026-09-24
+
+- 2026-09-24 | 2 | 積分の単元の ③ が 2 ／ 85 語（1 割以下）になったので次に進んだ。対象は台帳の unit に 数II 微分の考え・数III 極限・数III 微分・AP Calculus AB Unit 1〜5・Calculus I の limits ／ derivatives ／ applications of derivatives ／ functions を含む行で、既存の 3 語（derivative-at-a-point・sign-chart・squeeze-theorem）を除く 201 行 | あなたの指示（1 割以下なら次へ）
+- 2026-09-24 | 2 | 201 行に積分の単元と同じ規則を先に当て、137 エントリにした（`fix_decisions.py` の PHASE2B_*、`fix_phase1.py` の手順 9）。同じ概念 18 行、節の名前 21 行、引数を入れただけの行・コロケーション 7 行、symbols へ 4 行、phrases 候補へ 18 行、改名 1 行 | あなたの指示（今回までの規則を最初から当てる）。一覧は audits/phase2-calculus-report.md
+- 2026-09-24 | 2 | 同じ概念の統合には、対象の単元の外にある行も含めた（relative-maximum → local-maximum、derivatives-of-parametric-equations → derivative-of-a-parametric-curve、composition-of-functions → composite-function、convergence-of-a-sequence → convergence） | 残すと、あとでその単元を生成するときに同じ概念の 2 つ目のエントリができる
+- 2026-09-24 | 2 | 動詞 differentiate（微分する）と動詞句 find the derivative（導関数を求める）は 1 エントリにした。台帳の品詞は verb と phrase だが、どちらも動詞で、英語の候補（differentiate ／ take the derivative ／ find the derivative）が同じ | 別エントリにすると候補表現が同じになり、同じ判定のエントリが 2 つできる。Phase 1 の「品詞が違えば別」は名詞と動詞（積分 ／ 積分する）の区別として読む
+- 2026-09-24 | 2 | 引数を入れただけの行（approach-zero → approaches）とコロケーションの行（use the chain rule、apply the mean value theorem、0/0 などの不定形の形）は、節の名前と同じく名前を持ち込まずに寄せた（PHASE2B_INSTANCE） | 「0 に近づく」「連鎖律を使う」は別の概念ではない。例文とコロケーションに入れる
+- 2026-09-24 | 2 | graph-of-a-cubic-function（三次関数のグラフ）は節の名前で、中身の用語 cubic function の行が台帳に無いので、改名して cubic-function（3 次関数）にした | 寄せる先を作らないと中身が消える（probability-density-function と同じ考え）。id-changes に renamed で残る
+- 2026-09-24 | 2 | f-prime ／ f-double-prime は symbols/derivative-prime に、d-y-d-x ／ d-d-x は新設の symbols/derivative-leibniz に寄せる（台帳の note「読み方。symbols へ」）。derivative-leibniz は leibniz-notation を生成するバッチで作る | 読み方は symbols の役割。derivative-prime は既にあり、dy/dx の記号は無かった
+- 2026-09-24 | 2 | 台帳の langlink のうち別概念のもの 3 行を WIKI_WRONG に足した: 臨界点 → Critical point (thermodynamics)、発散 (ベクトル解析) → Divergence、法線ベクトル → Normal vector | 同じ概念のときだけ出典にする（Phase 1 の規則）。critical-point は統合元の行（critical-point-applications）の記事だった
+- 2026-09-24 | 2 | terms の件数で、ラテン語・ギリシャ語系の不規則な複数形（extrema ／ maxima ／ minima ／ axes ／ vertices など 14 語）も語形変化としてまとめる（lib.ts の IRREGULAR）。読みが 2 つある語（bases、ellipses）は入れない | local extremum と local extrema が別の言い方として ② に割れていた。積分の単元で変わったのは axis-of-revolution の axis of rotation（書 7 → 9、判定は ① のまま）だけ
+- 2026-09-24 | 2 | 候補表現に、別の候補の先頭部分だけのもの（slope of the tangent は slope of the tangent line の先頭）を入れない | 同じ出現に両方が当たり、首位を割る ② ができる（probe で slope of the tangent 284 ／ slope of the tangent line 281）
+- 2026-09-24 | 2 | 見出しの日本語を台帳から変えた語: first-derivative-test は節の名前「関数の増減と極値」から訳語「第 1 次導関数判定法」へ（「判定法」は比較判定法と同じ訳し方）。ja.alt は、別の意味の語（対数関数の性質、接点の座標、関数の平均変化率、f′(x)=0 となる x）を外した | 節の名前は見出しにしない。ja.alt は同じ概念の別名だけ
+- 2026-09-24 | 2 | curriculum の term_refs は、既に入っている順を変えずに、新しい語を台帳の順で後ろに足す | 台帳の順に並べ直すと、積分の単元の term_refs の順まで変わる。数B 統計的な推測に probability-density-function が入っていなかった（前の修正の抜け）のもこのとき足した

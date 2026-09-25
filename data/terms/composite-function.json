@@ -1,0 +1,116 @@
+{
+  "id": "composite-function",
+  "ja": {
+    "term": "合成関数",
+    "reading": "ごうせいかんすう",
+    "alt": [
+      "関数の合成"
+    ]
+  },
+  "en": {
+    "term": "composite function",
+    "alt": [],
+    "variants": [
+      {
+        "term": "composition of functions",
+        "register": "both",
+        "note": "合成する操作の名前。OpenStax Algebra and Trigonometry の節の名前でもある。話し言葉で 18 件（MIT OCW 9・Khan Academy 3・patrickJMT 3 ほか 3）、書き言葉で 21 件（OpenStax Algebra and Trigonometry 10・OpenStax Calculus 9・MIT の講義ノート 2）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "関数 g の値を関数 f に入れてできる関数 f(g(x))。",
+  "definition_en": "The function f(g(x)) formed by feeding the output of g into f.",
+  "latex": "(f \\circ g)(x) = f(g(x))",
+  "spoken_en": "f composed with g of x equals f of g of x",
+  "examples": [
+    {
+      "en": "f of g of x means you do g first, then f.",
+      "ja": "f(g(x)) は、先に g、次に f を施す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the composite function (f ∘ g)(x) for f(x) = x² and g(x) = x + 1.",
+      "ja": "f(x) = x²、g(x) = x + 1 のとき、合成関数 (f ∘ g)(x) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "f ∘ g は f composed with g（または f circle g）と読む。日本の教科書の (f ∘ g)(x) と書き方は同じ。"
+  ],
+  "related": [
+    "rational-function",
+    "radical-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "写像の合成",
+      "en": "Function composition"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 3.1（composite function）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "composition of functions": 18,
+      "composite function": 40
+    },
+    "written": {
+      "composite function": 83,
+      "composition of functions": 21
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

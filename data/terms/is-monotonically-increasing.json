@@ -1,0 +1,100 @@
+{
+  "id": "is-monotonically-increasing",
+  "ja": {
+    "term": "単調に増加する",
+    "reading": "たんちょうにぞうかする",
+    "alt": []
+  },
+  "en": {
+    "term": "is increasing",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "日本語の「単調に増加する」は、英語では monotonically increasing と言うより、単に is increasing と言う（用例コーパスで monotonically increasing は 0 件、is increasing は話し言葉 166 件・書き言葉 181 件）。等号を含めるかどうかの定義は教科書によるので、区別するときは strictly increasing（狭義）と nondecreasing（広義）を使う。",
+  "domains": [
+    "calculus",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "x が増えると、関数の値も必ず増える。",
+  "definition_en": "Of a function: to rise as x increases, over an interval.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Since f prime is positive everywhere, f is increasing on the whole real line.",
+      "ja": "f′ がどこでも正なので、f は実数全体で単調に増加する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that f(x) = x³ + x is increasing on (−∞, ∞).",
+      "ja": "f(x) = x³ + x が (−∞, ∞) で単調に増加することを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "increasing-and-decreasing"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 5.3（is increasing）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "is increasing": 166
+    },
+    "written": {
+      "is increasing": 181
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

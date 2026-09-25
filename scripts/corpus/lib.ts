@@ -216,8 +216,32 @@ const ARGUMENT_WORDS = new Set([
 
 const isArgumentWord = (w: string) => ARGUMENT_WORDS.has(w) || w.length === 1;
 
+/**
+ * Latin and Greek plurals, which the suffix rule cannot see: local extrema is
+ * the plural of local extremum, not another wording (DECISIONS, Phase 2 微分の
+ * 単元). Plural -> singular. Words with two readings (bases: base / basis,
+ * ellipses: ellipse / ellipsis) are left out.
+ */
+const IRREGULAR: Record<string, string> = {
+  extrema: "extremum",
+  maxima: "maximum",
+  minima: "minimum",
+  vertices: "vertex",
+  radii: "radius",
+  axes: "axis",
+  matrices: "matrix",
+  indices: "index",
+  criteria: "criterion",
+  foci: "focus",
+  loci: "locus",
+  formulae: "formula",
+  hypotheses: "hypothesis",
+  parentheses: "parenthesis",
+};
+
 /** Strips inflection only. integral / integrate / integration stay distinct. */
-const stem = (w: string) => w.replace(/(ing|ed|es|s)$/, "").replace(/e$/, "");
+const stem = (w: string): string =>
+  IRREGULAR[w] ? stem(IRREGULAR[w]) : w.replace(/(ing|ed|es|s)$/, "").replace(/e$/, "");
 
 /**
  * The blank in a verb phrase with an object in the middle: "revolve … around
@@ -259,6 +283,9 @@ export function inflections(word: string): string[] {
       const t = s + e + x;
       if (t && stem(t) === s) forms.add(t);
     }
+  }
+  for (const [plural, singular] of Object.entries(IRREGULAR)) {
+    if (stem(singular) === s) forms.add(plural).add(singular);
   }
   return [...forms].sort((a, b) => b.length - a.length);
 }

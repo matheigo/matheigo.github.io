@@ -1,0 +1,94 @@
+{
+  "id": "one-sided-limit",
+  "ja": {
+    "term": "片側極限",
+    "reading": "かたがわきょくげん",
+    "alt": []
+  },
+  "en": {
+    "term": "one-sided limit",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "右側極限と左側極限をまとめた呼び方。",
+  "definition_en": "A limit taken from only one side: a limit from the left or a limit from the right.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For a piecewise function, check both one-sided limits at the break point.",
+      "ja": "区分的に定義された関数では、つなぎ目で両側の片側極限を確かめる。",
+      "register": "spoken"
+    },
+    {
+      "en": "The limit exists if and only if both one-sided limits exist and are equal.",
+      "ja": "極限が存在するのは、両側の片側極限が存在して等しいとき、かつそのときに限る。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "right-hand-limit",
+    "left-hand-limit",
+    "limit"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "片側極限",
+      "en": "One-sided limit"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 1.5（one-sided limits）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "one-sided limit": 26
+    },
+    "written": {
+      "one-sided limit": 26
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "id": "increasing-and-decreasing",
+  "ja": {
+    "term": "関数の増減",
+    "reading": "かんすうのぞうげん",
+    "alt": []
+  },
+  "en": {
+    "term": "increasing or decreasing",
+    "alt": [
+      "increasing and decreasing"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「増減」は名詞だが、英語には 1 語の名詞がなく、where f is increasing or decreasing のように形容詞で言う。問題文は Determine the intervals on which f is increasing or decreasing. の形になる。",
+  "domains": [
+    "calculus",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "x が増えるにつれて関数の値が増えるか減るか、またその区間。f′(x) の符号で調べる。",
+  "definition_en": "Whether a function's values go up or down as x increases, and on which intervals; found from the sign of f′(x).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Where f prime is positive, f is increasing, and where it's negative, f is decreasing.",
+      "ja": "f′ が正のところで f は増加し、負のところで減少する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine the intervals on which f(x) = x³ − 3x is increasing or decreasing.",
+      "ja": "f(x) = x³ − 3x が増加する区間と減少する区間を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数II・数III は、微分を使って不等式 f(x) > g(x) を証明する方法（h(x) = f(x) − g(x) の増減を調べる）を節にしている。英語で説明するときは Let h(x) = f(x) − g(x). と置いて、h′ の符号から h の増減を示し、最小値が正であることを言う。"
+  ],
+  "related": [
+    "determine-where-the-function-is-increasing-and-decreasing",
+    "first-derivative-test",
+    "is-monotonically-increasing",
+    "sign-chart",
+    "make-a-sign-chart"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 5.3（increasing or decreasing）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "increasing and decreasing": 7,
+      "increasing or decreasing": 22
+    },
+    "written": {
+      "increasing or decreasing": 55,
+      "increasing and decreasing": 13
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-6.042",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

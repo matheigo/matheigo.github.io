@@ -312,6 +312,10 @@ WIKI_WRONG = {
     "basis": "Base (topology)（開基）。線形代数の基底ではない",
     # found in the ja_check mismatch list (outside the 210)
     "base": "底 (初等幾何学) は図形の底。累乗の底（base of a power）ではない",
+    # found while generating the differentiation units (Phase 2, 2026-09-24)
+    "critical-point-applications": "Critical point (thermodynamics)（熱力学の臨界点）。関数の臨界点ではない",
+    "divergence": "Divergence はベクトル場の発散（div）。数列・関数の発散ではない",
+    "normal-line": "Normal vector は法線ベクトル。曲線の法線（直線）ではない",
 }
 
 # Rows the English check would accept only through a disambiguation page, but
@@ -516,3 +520,115 @@ PHASE2_TO_PHRASES = [
     "integrate-by-parts-repeatedly",  # "you'll have to integrate by parts twice"
 ]
 PHASE2_FROM_COMMIT = "4d47e6f"
+
+# ------------------------------------ Phase 2 微分の単元 (2026-09-24)
+# The same rules as PHASE2_* (docs/DECISIONS.md "Phase 2 微分の単元"),
+# applied before generating the differentiation and limit units. Applied by
+# fix_phase1.py step 9, after step 8.
+
+# The same concept on several rows: (from, into, headword), as PHASE2_SAME.
+# Four "from" rows sit in units generated later (relative-maximum,
+# derivatives-of-parametric-equations, composition-of-functions,
+# convergence-of-a-sequence); merging them now keeps those units from making
+# a second entry for the same concept.
+PHASE2B_SAME = [
+    ("relative-extrema", "local-extremum", "into"),
+    ("relative-maximum", "local-maximum", "into"),
+    ("higher-order-derivatives", "higher-order-derivative", "into"),
+    ("linearization", "linear-approximation", "into"),
+    ("tangent-line-approximation", "linear-approximation", "into"),
+    ("diverges-to-infinity", "diverge-to-positive-infinity", "into"),
+    # 導関数を求める and 微分する: the same act, and the same English
+    # (differentiate / take the derivative / find the derivative)
+    ("find-the-derivative", "differentiate", "into"),
+    ("sketch-the-curve", "sketch-the-graph", "into"),
+    ("differentiate-both-sides-with-respect-to-x", "differentiate-both-sides", "into"),
+    ("e", "base-of-the-natural-logarithm", "into"),
+    ("derivative-of-e-to-the-x", "derivative-of-the-exponential-function", "into"),
+    ("derivative-of-natural-log", "derivative-of-the-logarithm", "into"),
+    ("precise-definition-of-a-limit", "epsilon-delta-definition", "into"),
+    ("limit-of-a-function", "limit", "into"),
+    # the 定数倍 row in 微分の考え is the rule {kf(x)}' = kf'(x)
+    ("constant-multiple", "constant-multiple-rule", "into"),
+    ("derivatives-of-parametric-equations", "derivative-of-a-parametric-curve", "into"),
+    ("composition-of-functions", "composite-function", "into"),
+    ("convergence-of-a-sequence", "convergence", "into"),
+]
+
+# Textbook section names (and CED topic titles) -> the entry for what they
+# teach, as PHASE2_SECTION: names do not become ja_alt / en_alt.
+PHASE2B_SECTION = [
+    # 不等式の証明への応用 etc.: f(x) = 左辺 − 右辺 の増減を調べる
+    ("using-derivatives-to-prove-inequalities", "increasing-and-decreasing"),
+    ("applying-derivatives-to-inequalities", "increasing-and-decreasing"),
+    ("derivatives-and-inequalities", "increasing-and-decreasing"),
+    ("applying-derivatives-to-equations", "number-of-real-solutions"),
+    ("optimization", "optimization-problem"),  # 最大・最小の応用
+    ("units-of-a-rate-of-change", "rate-of-change"),
+    ("position-velocity-and-acceleration", "velocity"),
+    ("connecting-f-f-prime-and-f-double-prime", "curve-sketching"),
+    ("asymptotes-and-end-behavior", "limit-at-infinity"),
+    ("concavity-and-the-second-derivative", "concavity"),
+    ("sign-of-the-second-derivative", "concavity"),
+    ("differentiability-and-continuity", "differentiability"),
+    ("types-of-functions", "transcendental-function"),
+    ("limit-theorems", "limit-laws"),
+    ("computing-limits", "limit-laws"),
+    ("limit-notation", "limit"),
+    ("limit-involving-exponentials", "base-of-the-natural-logarithm"),
+    ("limit-of-a-piecewise-function", "one-sided-limit"),
+    ("evaluate-limits-algebraically", "find-the-limit"),
+    ("notations-for-the-derivative", "leibniz-notation"),
+    ("implicit-curves", "implicit-function"),
+]
+
+# A term with its argument filled in, or a collocation of it (use the chain
+# rule, 0/0 form): merged without its names, like a section; the entry keeps
+# it as a collocation or an example.
+PHASE2B_INSTANCE = [
+    ("approach-zero", "approaches"),
+    ("use-the-chain-rule", "chain-rule"),
+    ("use-the-product-rule", "product-rule"),
+    ("apply-the-mean-value-theorem", "mean-value-theorem"),
+    ("zero-over-zero", "indeterminate-form"),
+    ("infinity-over-infinity", "indeterminate-form"),
+    ("infinity-minus-infinity", "indeterminate-form"),
+]
+
+# Graph of a cubic function is a section name; what it teaches is the cubic
+# function, which has no row of its own.
+PHASE2B_RENAME = [
+    ("graph-of-a-cubic-function", "cubic-function", {"ja": "3 次関数", "en": "cubic function"}),
+]
+
+# Readings of a symbol (the ledger note said "symbols へ"). derivative-prime
+# exists; derivative-leibniz is new.
+PHASE2B_TO_SYMBOLS = {
+    "f-prime": "derivative-prime",
+    "f-double-prime": "derivative-prime",
+    "d-y-d-x": "derivative-leibniz",
+    "d-d-x": "derivative-leibniz",
+}
+
+# What a teacher says, or a step of a procedure, not a term (Phase 3 phrases
+# candidates). Not generated, so `from` is empty.
+PHASE2B_TO_PHRASES = [
+    "let-h-go-to-zero",
+    "the-tangent-line-passes-through",
+    "increasing-on-all-reals",
+    "converges-to-zero",
+    "divide-numerator-and-denominator-by-n",
+    "rationalize-and-take-the-limit",
+    "the-function-is-continuous",
+    "the-one-sided-limits-agree",
+    "take-the-log-and-differentiate",
+    "differentiate-the-outside-first",
+    "multiply-by-the-derivative-of-the-inside",
+    "f-double-prime-is-positive",
+    "changes-from-increasing-to-decreasing",
+    "the-derivative-is-zero",
+    "the-tangent-line-is-horizontal",
+    "continuous-but-not-differentiable",
+    "has-no-local-extrema",
+    "the-limit-exists",
+]

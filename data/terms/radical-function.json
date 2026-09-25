@@ -1,0 +1,97 @@
+{
+  "id": "radical-function",
+  "ja": {
+    "term": "無理関数",
+    "reading": "むりかんすう",
+    "alt": [
+      "根号関数"
+    ]
+  },
+  "en": {
+    "term": "square root function",
+    "alt": [],
+    "variants": [
+      {
+        "term": "radical function",
+        "register": "written",
+        "note": "OpenStax Algebra and Trigonometry の節の名前（Inverses and Radical Functions）の言い方。話し言葉で 1 件（すべて blackpenredpen）、書き言葉で 13 件（すべて OpenStax Algebra and Trigonometry）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の数III の「無理関数」は √ を含む式で表される関数（y = √(ax + b) など）。英語では square root function と言うことが多く、立方根なども含めた呼び方は radical function。ja.alt の「根号関数」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "根号の中に変数を含む式で表される関数。",
+  "definition_en": "A function defined by an expression with the variable under a radical, such as y = √(x + 1).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The square root function only makes sense for x ≥ 0, so watch the domain.",
+      "ja": "√x は x ≥ 0 でしか定義されないので、定義域に気をつける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the domain and range of the radical function f(x) = √(2x − 4).",
+      "ja": "無理関数 f(x) = √(2x − 4) の定義域と値域を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "rational-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "square root function": 18,
+      "radical function": 1
+    },
+    "written": {
+      "square root function": 15,
+      "radical function": 13
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-6.042",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

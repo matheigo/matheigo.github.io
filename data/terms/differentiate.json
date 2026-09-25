@@ -1,0 +1,128 @@
+{
+  "id": "differentiate",
+  "ja": {
+    "term": "微分する",
+    "reading": "びぶんする",
+    "alt": [
+      "導関数を求める"
+    ]
+  },
+  "en": {
+    "term": "differentiate",
+    "alt": [],
+    "variants": [
+      {
+        "term": "take the derivative",
+        "register": "both",
+        "note": "話し言葉で最も多い。Khan Academy が半分を占める。話し言葉で 825 件（Khan Academy 437・MIT OCW 105・patrickJMT 99 ほか 184）、書き言葉で 28 件（OpenStax Calculus 20・MIT の講義ノート 8）。"
+      },
+      {
+        "term": "differentiate",
+        "register": "both",
+        "note": "書き言葉で最も多い。話し言葉は MIT OCW が中心。話し言葉で 450 件（MIT OCW 364・blackpenredpen 53・NancyPi 16 ほか 17）、書き言葉で 197 件（OpenStax Calculus 153・MIT の講義ノート 36・OpenStax Algebra and Trigonometry 3 ほか 5）。"
+      },
+      {
+        "term": "find the derivative",
+        "register": "both",
+        "note": "問題文に多い言い方。話し言葉で 173 件（Khan Academy 60・The Organic Chemistry Tutor 32・NancyPi 31 ほか 50）、書き言葉で 140 件（OpenStax Calculus 116・OpenStax Precalculus 22・MIT の講義ノート 2）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "関数の導関数を求める。",
+  "definition_en": "To find the derivative of a function.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Take the derivative of x to the fifth: you get five x to the fourth.",
+      "ja": "x⁵ を微分すると 5x⁴ になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Differentiate f(x) = (2x + 1)³.",
+      "ja": "f(x) = (2x + 1)³ を微分せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "3 つとも同じ意味で通じる。「x で微分する」は differentiate with respect to x（take the derivative with respect to x）。"
+  ],
+  "related": [
+    "derivative",
+    "differentiation",
+    "find-the-derivative-at"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 3（differentiate）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "take the derivative": 825,
+      "differentiate": 450,
+      "find the derivative": 173
+    },
+    "written": {
+      "find the derivative": 140,
+      "differentiate": 197,
+      "take the derivative": 28
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

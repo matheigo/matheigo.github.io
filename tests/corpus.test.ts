@@ -104,6 +104,19 @@ describe("countTerm", () => {
   });
 });
 
+describe("irregular plurals", () => {
+  it("counts local extrema as local extremum", () => {
+    expect(countTerm("find the local extrema. a local extremum is", "local extremum")).toBe(2);
+    expect(countTerm("the relative maxima and minima", "relative maximum")).toBe(1);
+  });
+
+  it("treats the Latin plural as the same wording", () => {
+    expect(sameWording("local extremum", "local extrema")).toBe(true);
+    expect(sameWording("axis of rotation", "axes of rotation")).toBe(true);
+    expect(sameWording("local maximum", "local minimum")).toBe(false);
+  });
+});
+
 describe("countEntry", () => {
   const doc = (id: string, text: string, register: "spoken" | "written" = "spoken") => ({
     id,

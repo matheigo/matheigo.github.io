@@ -1,0 +1,115 @@
+{
+  "id": "local-maximum",
+  "ja": {
+    "term": "極大値",
+    "reading": "きょくだいち",
+    "alt": [
+      "極大",
+      "相対最大値"
+    ]
+  },
+  "en": {
+    "term": "local maximum",
+    "alt": [],
+    "variants": [
+      {
+        "term": "relative maximum",
+        "register": "spoken",
+        "note": "話し言葉ではこちらが最も多いが、ほぼすべて Khan Academy（AP の CED も Unit 5 の概要で relative maximum と書く）。話し言葉で 56 件（Khan Academy 55・Professor Leonard 1）、書き言葉で 6 件（OpenStax Calculus 5・OpenStax Algebra and Trigonometry 1）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "ja.alt の「相対最大値」は日本の教科書に無い、本プロジェクトの訳語（relative maximum の訳）。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "x = a の近くで f(a) が最も大きいときの f(a) の値。",
+  "definition_en": "A value f(a) that is the largest among the values of f near x = a.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "f prime changes from positive to negative at x = 1, so there's a relative maximum there.",
+      "ja": "x = 1 で f′ が正から負に変わるので、そこで極大になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "f has a local maximum value of 4 at x = −1.",
+      "ja": "f は x = −1 で極大値 4 をとる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "口頭では local max ／ relative max と略す。",
+    "区間全体での最大値は absolute maximum（global maximum）。極大値と取り違えない。"
+  ],
+  "related": [
+    "local-minimum",
+    "local-extremum",
+    "has-a-local-maximum-at",
+    "first-derivative-test"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "極値",
+      "en": "Maximum and minimum"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 5（relative maximum）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "local maximum": 23,
+      "relative maximum": 56
+    },
+    "written": {
+      "local maximum": 102,
+      "relative maximum": 6
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

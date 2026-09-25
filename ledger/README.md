@@ -19,6 +19,8 @@
 `fix_phase1.py` の手順 7・8 は Phase 2 修正（DECISIONS 2026-09-24）: 7 は取り直した langlink で空の wiki_en を埋め、
 wikidata だけだった行を wikipedia-langlink にする。8 は積分の単元の 1 概念 1 エントリ（`fix_decisions.py` の
 `PHASE2_SAME` 同じ概念 ／ `PHASE2_SECTION` 教科書の節の名前 ／ `PHASE2_TO_SYMBOLS` ／ `PHASE2_TO_PHRASES` 授業の言い回し）。
+9 は微分・極限の単元に同じ規則を当てる（`PHASE2B_SAME` ／ `PHASE2B_SECTION` ／ `PHASE2B_INSTANCE` 引数を入れただけの行・コロケーション ／
+`PHASE2B_RENAME` ／ `PHASE2B_TO_SYMBOLS` ／ `PHASE2B_TO_PHRASES`）。
 
 ## 列
 

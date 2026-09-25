@@ -1,0 +1,116 @@
+{
+  "id": "derivative",
+  "ja": {
+    "term": "導関数",
+    "reading": "どうかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "derivative",
+    "alt": [],
+    "variants": [
+      {
+        "term": "derivative function",
+        "register": "both",
+        "note": "関数であることを強調するときの言い方で、件数は少ない。話し言葉で 11 件（Khan Academy 6・3Blue1Brown 2・MIT OCW 1 ほか 2）、書き言葉で 13 件（OpenStax Calculus 12・OpenStax Precalculus 1）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "各 x に、その点での微分係数 f′(x) を対応させる関数。",
+  "definition_en": "The function f′ that gives, at each x, the slope of the tangent line to the graph of f (its instantaneous rate of change).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The derivative of x cubed is three x squared.",
+      "ja": "x³ の導関数は 3x²。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the derivative of f(x) = x³ − 2x.",
+      "ja": "f(x) = x³ − 2x の導関数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語は「導関数」（関数）と「微分係数」（値）を呼び分けるが、英語はどちらも derivative と言い、値のときは the derivative at x = a（f prime of a）と言う。",
+    "操作としての「微分」は differentiation、動詞は differentiate（take the derivative）。"
+  ],
+  "related": [
+    "derivative-at-a-point",
+    "differentiation",
+    "differentiate",
+    "slope-of-the-tangent-line"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "微分",
+      "en": "Derivative"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 2（derivative）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "derivative": 7868,
+      "derivative function": 11
+    },
+    "written": {
+      "derivative": 1462,
+      "derivative function": 13
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

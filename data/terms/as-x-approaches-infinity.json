@@ -1,0 +1,100 @@
+{
+  "id": "as-x-approaches-infinity",
+  "ja": {
+    "term": "x → ∞ のとき",
+    "reading": "えっくすがむげんだいのとき",
+    "alt": []
+  },
+  "en": {
+    "term": "as x approaches infinity",
+    "alt": [],
+    "variants": [
+      {
+        "term": "as x goes to infinity",
+        "register": "spoken",
+        "note": "話し言葉では approaches とほぼ同じ数で、MIT OCW に多い。話し言葉で 67 件（MIT OCW 62・NancyPi 5）、書き言葉で 3 件（すべて OpenStax Calculus）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "x を限りなく大きくしていくとき。",
+  "definition_en": "As x grows larger without bound.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "As x goes to infinity, e to the negative x goes to zero.",
+      "ja": "x → ∞ のとき、e⁻ˣ は 0 に近づく。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the limit of (3x² + 1)/(x² − 5) as x approaches infinity.",
+      "ja": "x → ∞ のときの (3x² + 1)/(x² − 5) の極限を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "as-n-approaches-infinity",
+    "as-x-approaches-a",
+    "infinity",
+    "limit"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "as x goes to infinity": 67,
+      "as x approaches infinity": 77
+    },
+    "written": {
+      "as x approaches infinity": 9,
+      "as x goes to infinity": 3
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "infinite-series",
+  "ja": {
+    "term": "無限級数",
+    "reading": "むげんきゅうすう",
+    "alt": []
+  },
+  "en": {
+    "term": "infinite series",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "数列の項を限りなく加えた式 a₁ + a₂ + a₃ + ⋯。",
+  "definition_en": "An endless sum a₁ + a₂ + a₃ + ⋯ of the terms of a sequence.",
+  "latex": "\\sum_{n=1}^{\\infty} a_n",
+  "spoken_en": "the sum from n equals one to infinity of a sub n",
+  "examples": [
+    {
+      "en": "An infinite series is really the limit of its partial sums.",
+      "ja": "無限級数とは、実は部分和の極限のこと。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the infinite series ∑ 1/2ⁿ converges.",
+      "ja": "無限級数 ∑ 1/2ⁿ が収束するかどうか調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "series は単複同形（a series ／ two series）。sequence（数列）と取り違えない。"
+  ],
+  "related": [
+    "sum-of-the-series",
+    "convergence",
+    "infinite-geometric-sequence"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "級数",
+      "en": "Series (mathematics)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.1（infinite series）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "infinite series": 101
+    },
+    "written": {
+      "infinite series": 71
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-24"
+  }
+}

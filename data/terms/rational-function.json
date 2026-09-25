@@ -1,0 +1,100 @@
+{
+  "id": "rational-function",
+  "ja": {
+    "term": "分数関数",
+    "reading": "ぶんすうかんすう",
+    "alt": [
+      "有理関数"
+    ]
+  },
+  "en": {
+    "term": "rational function",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の数III の「分数関数」は y = (ax + b)/(cx + d) の形を中心に扱う。米国の rational function は多項式 ÷ 多項式の関数全般を指し、日本語では有理関数に当たる。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "分母に x を含む分数式で表される関数。",
+  "definition_en": "A function that is a ratio of two polynomials.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A rational function has a vertical asymptote where the denominator is zero, unless that factor cancels.",
+      "ja": "分数関数は、約分で消えない限り、分母が 0 になるところに垂直な漸近線をもつ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the horizontal asymptote of the rational function f(x) = (2x + 1)/(x − 3).",
+      "ja": "分数関数 f(x) = (2x + 1)/(x − 3) の水平な漸近線を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "radical-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "有理関数",
+      "en": "Rational function"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "rational function": 84
+    },
+    "written": {
+      "rational function": 174
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

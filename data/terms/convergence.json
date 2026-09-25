@@ -1,0 +1,96 @@
+{
+  "id": "convergence",
+  "ja": {
+    "term": "収束",
+    "reading": "しゅうそく",
+    "alt": [
+      "数列の収束"
+    ]
+  },
+  "en": {
+    "term": "convergence",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "analysis"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "数列や関数の値が、ある一定の値に限りなく近づくこと。",
+  "definition_en": "Getting arbitrarily close to a single finite value, as a sequence or function does when it has a limit.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Convergence means the terms settle down to one number.",
+      "ja": "収束とは、項が 1 つの数に落ち着くこと。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine the convergence or divergence of the sequence aₙ = (2n + 1)/n.",
+      "ja": "数列 aₙ = (2n + 1)/n の収束・発散を調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "動詞は converge（収束する）。「数列 {aₙ} は 2 に収束する」は The sequence converges to 2."
+  ],
+  "related": [
+    "divergence",
+    "oscillate",
+    "limit",
+    "infinite-series"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 10（convergence）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "convergence": 224
+    },
+    "written": {
+      "convergence": 231
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

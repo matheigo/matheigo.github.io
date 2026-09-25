@@ -1,0 +1,97 @@
+{
+  "id": "oscillate",
+  "ja": {
+    "term": "振動する",
+    "reading": "しんどうする",
+    "alt": []
+  },
+  "en": {
+    "term": "oscillate",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "analysis"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "数列や関数が、収束もせず、正・負の無限大にも発散しない。",
+  "definition_en": "Of a sequence or function: to neither converge nor go to plus or minus infinity, typically bouncing between values.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Sine of one over x oscillates wildly near zero, so there's no limit.",
+      "ja": "sin(1/x) は 0 の近くで激しく振動するので、極限はない。",
+      "register": "spoken"
+    },
+    {
+      "en": "The sequence (−1)ⁿ oscillates and therefore diverges.",
+      "ja": "数列 (−1)ⁿ は振動するので発散する。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の oscillate は物理の振動も指すが、数列・極限の文脈では「収束しないで行ったり来たりする」の意味。"
+  ],
+  "related": [
+    "divergence",
+    "convergence"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 1.3（oscillate）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "oscillate": 110
+    },
+    "written": {
+      "oscillate": 64
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

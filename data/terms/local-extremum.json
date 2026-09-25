@@ -1,0 +1,109 @@
+{
+  "id": "local-extremum",
+  "ja": {
+    "term": "極値",
+    "reading": "きょくち",
+    "alt": [
+      "相対極値"
+    ]
+  },
+  "en": {
+    "term": "local extremum",
+    "alt": [],
+    "variants": [
+      {
+        "term": "relative extremum",
+        "register": "spoken",
+        "note": "話し言葉ではこちらが多いが、ほぼ Khan Academy。話し言葉で 8 件（Khan Academy 7・Professor Leonard 1）、書き言葉で 2 件（すべて OpenStax Calculus）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "ja.alt の「相対極値」は日本の教科書に無い、本プロジェクトの訳語（relative extremum の訳）。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "極大値と極小値をまとめた呼び方。",
+  "definition_en": "A local maximum or local minimum value.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A relative extremum can only happen where f prime is zero or undefined.",
+      "ja": "極値をとりうるのは、f′ が 0 か存在しない点だけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find all local extrema of f(x) = x³ − 3x.",
+      "ja": "f(x) = x³ − 3x の極値をすべて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "複数形は extrema（local extrema）。maximum ／ minimum の複数形も maxima ／ minima。",
+    "AP の CED は topic 5.2 で local extrema、Unit 5 の概要で relative extrema と書き、両方を使う。"
+  ],
+  "related": [
+    "local-maximum",
+    "local-minimum",
+    "critical-point",
+    "first-derivative-test",
+    "find-the-local-extrema"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "極値",
+      "en": "Maximum and minimum"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 5.2（local extrema）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "relative extremum": 8,
+      "local extremum": 2
+    },
+    "written": {
+      "local extremum": 77,
+      "relative extremum": 2
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

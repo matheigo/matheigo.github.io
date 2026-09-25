@@ -1,0 +1,87 @@
+{
+  "id": "diverge-to-negative-infinity",
+  "ja": {
+    "term": "負の無限大に発散する",
+    "reading": "ふのむげんだいにはっさんする",
+    "alt": []
+  },
+  "en": {
+    "term": "decrease without bound",
+    "alt": [
+      "diverge to negative infinity"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "英語の教科書（OpenStax）では decreases without bound と書くことが多い（書き言葉 33 件、diverges to negative infinity は 3 件）。式では lim f(x) = −∞ と書き、口頭では goes to negative infinity（minus infinity）とも言う。",
+  "domains": [
+    "calculus",
+    "analysis"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "変数を近づけたとき、関数や数列の値が負で、その絶対値が限りなく大きくなる。",
+  "definition_en": "Of a function or sequence: to become less than any given number as the variable approaches its target.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "As x approaches zero from the left, one over x goes to negative infinity.",
+      "ja": "x を左から 0 に近づけると、1/x は負の無限大に発散する。",
+      "register": "spoken"
+    },
+    {
+      "en": "As x → 0⁺, ln x decreases without bound.",
+      "ja": "x → +0 のとき、log x は負の無限大に発散する。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数III は自然対数を log x と書くが、米国の教科書は ln x と書く。"
+  ],
+  "related": [
+    "diverge-to-positive-infinity",
+    "divergence",
+    "infinity"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "decrease without bound": 33,
+      "diverge to negative infinity": 3
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

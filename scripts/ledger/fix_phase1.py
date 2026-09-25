@@ -421,6 +421,33 @@ def apply_phase2(rows, log, stats):
                        "to_symbols": len(D.PHASE2_TO_SYMBOLS), "to_phrases": phrases}
 
 
+# ----------------------------------------- 9. Phase 2 微分の単元
+def apply_phase2b(rows, log, stats):
+    """The same rules for the differentiation and limit units (fix_decisions PHASE2B_*)."""
+    for frm, into, main in D.PHASE2B_SAME:
+        merge(rows, frm, into, main, log, action="merged-into")
+    for frm, into in D.PHASE2B_SECTION:
+        merge(rows, frm, into, "into", log, action="merged-into", names=False)
+        note_add(rows[into], f"節の名前「{frm}」を統合（Phase 2 微分の単元）")
+    for frm, into in D.PHASE2B_INSTANCE:
+        merge(rows, frm, into, "into", log, action="merged-into", names=False)
+    for old, new, fields in D.PHASE2B_RENAME:
+        rename(rows, old, new, fields, log)
+    for frm, into in D.PHASE2B_TO_SYMBOLS.items():
+        rows.pop(frm)
+        log.append((frm, f"symbols/{into}", "merged-into"))
+    phrases = []
+    for i in D.PHASE2B_TO_PHRASES:
+        r = rows.pop(i)
+        phrases.append({"id": i, "ja": r["ja"], "en": r["en"], "pos": r["pos"], "unit": "|".join(r["unit"]),
+                        "level_jp": "|".join(r["level_jp"]), "level_us": "|".join(r["level_us"]),
+                        "from": "", "note": r["note"]})
+        log.append((i, "", "to-phrases"))
+    stats["phase2b"] = {"same": len(D.PHASE2B_SAME), "section": len(D.PHASE2B_SECTION),
+                        "instance": len(D.PHASE2B_INSTANCE), "rename": len(D.PHASE2B_RENAME),
+                        "to_symbols": len(D.PHASE2B_TO_SYMBOLS), "to_phrases": phrases}
+
+
 # ------------------------------------------------------------------- main
 def transform(en_check=True, langlinks=True, phase2=True):
     """Phase 1 ledger -> fixed rows. en_check=False stops before the English
@@ -540,6 +567,8 @@ def transform(en_check=True, langlinks=True, phase2=True):
 
     # 8. Phase 2 修正: one concept, one entry for the integral units
     apply_phase2(rows, log, stats)
+    # 9. the same for the differentiation and limit units
+    apply_phase2b(rows, log, stats)
     return rows, stats, log, oos
 
 
@@ -573,7 +602,7 @@ def main():
     with open(os.path.join(ROOT, "ledger", "phrases-candidates.csv"), "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, PHRASE_COLUMNS)
         w.writeheader()
-        w.writerows(stats["phase2"]["to_phrases"])
+        w.writerows(stats["phase2"]["to_phrases"] + stats["phase2b"]["to_phrases"])
 
     stats["rows"] = len(rows)
     stats["actions"] = dict(Counter(a for _, _, a in log))
@@ -585,7 +614,7 @@ def main():
     json.dump(stats, open(os.path.join(HERE, "fix_stats.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
     big = ("coverage", "check_mismatch", "oos", "dup_en", "en_check", "notation_alias", "notation_headword",
-           "langlinks", "phase2")
+           "langlinks", "phase2", "phase2b")
     print(json.dumps({k: v for k, v in stats.items() if k not in big}, ensure_ascii=False, indent=1))
     e = stats["en_check"]
     print(f"en check: {e['checked']} title rows -> ok {len(e['ok'])}, wikipedia removed {len(e['removed'])}"
@@ -598,6 +627,10 @@ def main():
     p2 = stats["phase2"]
     print(f"phase 2 (step 8): same concept {p2['same']}, section names {p2['section']}, to symbols {p2['to_symbols']},"
           f" to phrases {len(p2['to_phrases'])}")
+    p2b = stats["phase2b"]
+    print(f"phase 2 differentiation (step 9): same concept {p2b['same']}, section names {p2b['section']},"
+          f" instances {p2b['instance']}, renamed {p2b['rename']}, to symbols {p2b['to_symbols']},"
+          f" to phrases {len(p2b['to_phrases'])}")
 
 
 def _dup_en(rows):

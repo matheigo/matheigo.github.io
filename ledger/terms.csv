@@ -308,7 +308,7 @@ mixture-problem,濃度の問題,,mixture problem,,,noun,jp-chuugaku-2-renritsu-h
 linear-function,一次関数,,linear function,,,noun,jp-chuugaku-2-ichiji-kansuu,functions,中2,Algebra 1|Integrated Math 1,exact,wikipedia-langlink,一次関数,Linear function (calculus),Q188597,mext,ok,,
 slope,傾き,,slope,,,noun,jp-chuugaku-2-ichiji-kansuu,functions,中2,Algebra 1|Integrated Math 1,exact,wikipedia-langlink,傾き (数学),Slope,Q275447,mext,ok,,
 y-intercept,切片,,y-intercept,intercept [suugaku-2-zukei-to-houteishiki],,noun,jp-chuugaku-2-ichiji-kansuu,functions,中2,Algebra 1|Integrated Math 1,near,wikipedia-langlink,切片 (数学),Y-intercept,Q287239,wikipedia,ok,ja-merged,「切片」は y 切片。intercept 単独は x/y を言う
-rate-of-change,変化の割合,変化率,rate of change,average rate of change [chuugaku-3-kansuu-y-ax2],,noun,jp-chuugaku-2-ichiji-kansuu|jp-suugaku-2-bibun-no-kangae,functions|calculus,中2|数II,Algebra 1|Integrated Math 1|AP Calculus AB|Calculus I,exact,editorial,,,,mext,ok,ja-merged wiki-redirect wiki-rejected merged,二次関数の「変化の割合」は米国では average rate of change ／ wiki 除外（数学カテゴリ外）: 変化 → Change (philosophy)。「変化」は数学カテゴリ配下にない
+rate-of-change,変化の割合,変化率,rate of change,average rate of change [chuugaku-3-kansuu-y-ax2],,noun,jp-chuugaku-2-ichiji-kansuu|jp-suugaku-2-bibun-no-kangae|us-ap-calculus-ab-4-contextual-applications,functions|calculus,中2|数II,Algebra 1|Integrated Math 1|AP Calculus AB|Calculus I,exact,textbook,,,,mext,ok,ja-merged wiki-redirect wiki-rejected merged,二次関数の「変化の割合」は米国では average rate of change ／ wiki 除外（数学カテゴリ外）: 変化 → Change (philosophy)。「変化」は数学カテゴリ配下にない ／ 節の名前「units-of-a-rate-of-change」を統合（Phase 2 微分の単元）
 change,増加量,,change,,,noun,jp-chuugaku-2-ichiji-kansuu,functions,中2,Algebra 1|Integrated Math 1,near,editorial,,,,editorial,—,,the change in y / Δy
 intersection-of-the-graphs,グラフの交点,,intersection of the graphs,,,noun,jp-chuugaku-2-ichiji-kansuu,functions,中2,Algebra 1|Integrated Math 1,exact,editorial,,,,editorial,—,,
 equation-of-a-line,直線の式,直線の方程式,equation of a line,,,noun,jp-chuugaku-2-ichiji-kansuu|jp-suugaku-2-zukei-to-houteishiki,functions|geometry,中2|数II,Algebra 1|Integrated Math 1|Geometry|Precalculus,exact,editorial,,,,editorial,—,wiki-redirect merged,
@@ -1135,44 +1135,34 @@ asymptote,漸近線,,asymptote,,,noun,jp-suugaku-2-shisuu-taisuu,functions,数II
 the-domain-is-the-positive-reals,定義域は正の実数,,the domain is the positive reals,,,phrase,jp-suugaku-2-shisuu-taisuu,functions,数II,Algebra 2|Precalculus,exact,editorial,,,,editorial,—,,
 derivative-at-a-point,微分係数,,derivative at a point,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,near,editorial,微分,Derivative,Q29175,mext,ok,wiki-redirect reviewed-30,STYLE
 average-rate-of-change,平均変化率,関数の平均変化率,average rate of change,,,noun,jp-suugaku-2-bibun-no-kangae|us-precalculus-functions,calculus|functions,数II,AP Calculus AB|Calculus I|Precalculus,exact,textbook,,,,editorial,—,merged,
-limit,極限値,極限,limit,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,wikipedia-langlink,極限,Limit (mathematics),Q177239,mext,ok,wiki-redirect merged,
+limit,極限値,極限|関数の極限,limit,limit of a function,,noun,jp-suugaku-2-bibun-no-kangae|jp-suugaku-3-kyokugen|us-ap-calculus-ab-1-limits,calculus|analysis,数II|数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,極限,Limit (mathematics),Q177239,mext,ok,wiki-redirect merged,節の名前「limit-notation」を統合（Phase 2 微分の単元）
 derivative,導関数,,derivative,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,微分,Derivative,Q29175,mext,ok,wiki-redirect,
 differentiation,微分,,differentiation,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,wikipedia-langlink,微分,Derivative,Q29175,mext,ok,,
-differentiate,微分する,,differentiate,,,verb,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,near,editorial,微分,Derivative,Q29175,wikipedia,ok,,教室では take the derivative
+differentiate,微分する,導関数を求める,differentiate,find the derivative,,verb,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,near,editorial,微分,Derivative,Q29175,wikipedia,ok,merged,教室では take the derivative
 slope-of-the-tangent-line,接線の傾き,,slope of the tangent line,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-normal-line,法線,,normal line,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,wikipedia-langlink,法線ベクトル,Normal vector,Q56353263,wikipedia,ok,,
-increasing-and-decreasing,関数の増減,,increasing and decreasing,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
+normal-line,法線,,normal line,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,wiki-rejected,wiki 除外（別概念）: 法線ベクトル → Normal vector。Normal vector は法線ベクトル。曲線の法線（直線）ではない
+increasing-and-decreasing,関数の増減,,increasing and decreasing,,,noun,jp-suugaku-2-bibun-no-kangae|jp-suugaku-3-bibun|us-calculus-1-applications-of-derivatives,calculus,数II|数III,AP Calculus AB|Calculus I,exact,textbook,,,,editorial,—,merged,節の名前「using-derivatives-to-prove-inequalities」を統合（Phase 2 微分の単元） ／ 節の名前「applying-derivatives-to-inequalities」を統合（Phase 2 微分の単元） ／ 節の名前「derivatives-and-inequalities」を統合（Phase 2 微分の単元）
 sign-chart,増減表,,sign chart,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,none,editorial,,,,editorial,—,,STYLE: sign chart / first-derivative test の表
-local-extremum,極値,,local extremum,extrema [precalculus-functions],,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,near,wikipedia-langlink,極値,Maximum and minimum,Q845060,wikipedia,ok,ja-merged,local max / local min
-local-maximum,極大値,極大,local maximum,,relative maximum@both,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,near,editorial,極値,Maximum and minimum,Q845060,mext,alt:極大,wiki-redirect wiki-rejected merged reviewed-30,同じ語 ／ wiki 除外（別概念）: 順序集合 → Ordered set。Ordered set の極大元（maximal element）
+local-extremum,極値,相対極値,local extremum,extrema [precalculus-functions]|relative extrema,,noun,jp-suugaku-2-bibun-no-kangae|us-ap-calculus-ab-5-analytical-applications,calculus,数II,AP Calculus AB|Calculus I,near,wikipedia-langlink,極値,Maximum and minimum,Q845060,wikipedia,ok,ja-merged merged,local max / local min
+local-maximum,極大値,極大|相対最大値,local maximum,relative maximum,relative maximum@both,noun,jp-suugaku-2-bibun-no-kangae|us-algebra-2-functions,calculus|functions,数II,AP Calculus AB|Calculus I|Algebra 2,near,textbook,極値,Maximum and minimum,Q845060,mext,alt:極大,wiki-redirect wiki-rejected merged reviewed-30,同じ語 ／ wiki 除外（別概念）: 順序集合 → Ordered set。Ordered set の極大元（maximal element） ／ 極大値
 local-minimum,極小値,極小,local minimum,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,極値,Maximum and minimum,Q845060,mext,alt:極小,wiki-redirect wiki-rejected merged,同じ語 ／ wiki 除外（別概念）: 順序集合 → Ordered set。Ordered set の極小元（minimal element）
 first-derivative-test,関数の増減と極値,第 1 次導関数テスト,first derivative test,,,noun,jp-suugaku-2-bibun-no-kangae|us-ap-calculus-ab-5-analytical-applications,calculus,数II,AP Calculus AB|Calculus I,near,textbook,,,,editorial,—,merged,手法名 ／ 増減表の役割
-graph-of-a-cubic-function,三次関数のグラフ,,graph of a cubic function,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-number-of-real-solutions,方程式の実数解の個数,,number of real solutions,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-using-derivatives-to-prove-inequalities,不等式の証明への応用,,using derivatives to prove inequalities,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-optimization,最大・最小の応用,最適化,optimization,,,noun,jp-suugaku-2-bibun-no-kangae|jp-suugaku-b-suugaku-to-shakai-seikatsu,calculus|statistics,数II|数B,AP Calculus AB|Calculus I|Algebra 2,near,editorial,,,,editorial,—,wiki-disambig merged,米国では optimization problems
+number-of-real-solutions,方程式の実数解の個数,,number of real solutions,,,noun,jp-suugaku-2-bibun-no-kangae|jp-suugaku-3-bibun,calculus,数II|数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,merged,節の名前「applying-derivatives-to-equations」を統合（Phase 2 微分の単元）
 instantaneous-velocity,瞬間の速さ,,instantaneous velocity,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-let-h-go-to-zero,h を 0 に近づける,,let h go to zero,,,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,,as h approaches 0
 take-the-limit,極限をとる,,take the limit,,,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 find-the-derivative-at,微分係数を求める,,find the derivative at,,,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-find-the-derivative,導関数を求める,,find the derivative,,,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,mext,ok,,
 find-the-equation-of-the-tangent-line,接線の方程式を求める,,find the equation of the tangent line,find the tangent line [suugaku-3-bibun],,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,ja-merged,
 determine-where-the-function-is-increasing-and-decreasing,増減を調べる,,determine where the function is increasing and decreasing,,,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,,check the sign of f prime
 find-the-local-extrema,極値を求める,,find the local extrema,,,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 make-a-sign-chart,増減表をかく,,make a sign chart,,,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-sketch-the-graph,グラフの概形をかく,,sketch the graph,,,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,mext,ok,,
+sketch-the-graph,グラフの概形をかく,概形をかく|曲線をかく,sketch the graph,sketch the curve,,phrase,jp-suugaku-2-bibun-no-kangae|jp-suugaku-3-bibun|jp-suugaku-c-kyokusen-to-fukuso-heimen,calculus|complex-numbers,数II|数III|数C,AP Calculus AB|Calculus I|Precalculus,exact,editorial,,,,mext,ok,merged,
 has-a-local-maximum-at,極大値をとる,,has a local maximum at,,,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-critical-point,臨界点,f'(x)=0 となる x,critical point,,,noun,jp-suugaku-2-bibun-no-kangae|us-ap-calculus-ab-5-analytical-applications,calculus,数II,AP Calculus AB|Calculus I,near,wikipedia-langlink,臨界点,Critical point (thermodynamics),Q111059,wikipedia,ok,merged,米国の必須語。日本では名前をつけない ／ f' = 0 または存在しない点。日本では名前がない
+critical-point,臨界点,f'(x)=0 となる x,critical point,,,noun,jp-suugaku-2-bibun-no-kangae|us-ap-calculus-ab-5-analytical-applications,calculus,数II,AP Calculus AB|Calculus I,near,textbook,,,,editorial,—,wiki-rejected merged,米国の必須語。日本では名前をつけない ／ f' = 0 または存在しない点。日本では名前がない ／ wiki 除外（別概念）: 臨界点 → Critical point (thermodynamics)。Critical point (thermodynamics)（熱力学の臨界点）。関数の臨界点ではない
 differentiable,微分可能,,differentiable,,,adjective,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,mext,ok,wiki-disambig,
-the-limit-exists,極限が存在する,,the limit exists,,,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-approach-zero,0 に近づく,,approach zero,,,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-constant-multiple,定数倍,,constant multiple,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,mext,ok,,
 derivative-of-a-sum,和の微分,,derivative of a sum,,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 power-rule,xⁿ の微分,べき乗則,power rule,,,noun,jp-suugaku-2-bibun-no-kangae|us-ap-calculus-ab-2-differentiation-basics,calculus,数II,AP Calculus AB|Calculus I,near,textbook,,,,editorial,—,wiki-redirect wiki-rejected merged,米国では rule に名前がある ／ xⁿ の微分公式。日本では名前をつけない ／ wiki 除外（別概念）: 冪乗則 → Power law。Power law（べき乗則・統計物理）
-the-tangent-line-passes-through,接線が通る,,the tangent line passes through,,,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 changes-sign,符号が変わる,,changes sign,,,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 is-monotonically-increasing,単調に増加する,,is monotonically increasing,,,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,,教室では is increasing
-increasing-on-all-reals,すべての実数で増加,,increasing on all reals,,,phrase,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 indefinite-integral,不定積分,,indefinite integral,,,noun,jp-suugaku-2-sekibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,near,wikipedia-langlink,不定積分,Indefinite integral,Q8437543,mext,ok,,antiderivative とも
 antiderivative,原始関数,,antiderivative,,,noun,jp-suugaku-2-sekibun-no-kangae|us-calculus-1-integration,calculus,数II,AP Calculus AB|Calculus I,near,textbook,不定積分,Indefinite integral,Q8437543,wikipedia,ok,wiki-redirect reviewed-30 merged,節の名前「antiderivatives」を統合（Phase 2 修正）
 constant-of-integration,積分定数,プラス C,constant of integration,plus C,,noun,jp-suugaku-2-sekibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,wiki-rejected merged,wiki 除外（英語照合不一致: 別の記事）: 不定積分 → Indefinite integral → Antiderivative ／ en.term → Constant of integration ／ 積分定数の読み
@@ -1298,10 +1288,10 @@ predict,予測する,,predict,,,verb,jp-suugaku-b-suugaku-to-shakai-seikatsu,sta
 analyze-the-trend,傾向を分析する,,analyze the trend,,,phrase,jp-suugaku-b-suugaku-to-shakai-seikatsu,statistics,数B,Algebra 2,exact,editorial,,,,editorial,—,,
 rational-function,分数関数,有理関数,rational function,,,noun,jp-suugaku-3-kyokugen|us-algebra-2-rational-functions,analysis|functions,数III,AP Calculus AB|Calculus I|Algebra 2,exact,wikipedia-langlink,有理関数,Rational function,Q41237,mext,ok,merged,
 radical-function,無理関数,根号関数,radical function,,,noun,jp-suugaku-3-kyokugen|us-algebra-2-radical-functions,analysis|functions,数III,AP Calculus AB|Calculus I|Algebra 2,near,textbook,,,,mext,ok,merged,square root function
-composite-function,合成関数,,composite function,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,near,editorial,写像の合成,Function composition,Q244761,mext,ok,wiki-redirect,composition of functions
-convergence,収束,,convergence,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,mext,ok,wiki-disambig,
-divergence,発散,,divergence,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,発散 (ベクトル解析),Divergence,Q189000,mext,ok,,
-diverge-to-positive-infinity,正の無限大に発散する,,diverge to positive infinity,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,,goes to infinity
+composite-function,合成関数,関数の合成,composite function,composition of functions,,noun,jp-suugaku-3-kyokugen|us-algebra-2-functions,analysis|functions,数III,AP Calculus AB|Calculus I|Algebra 2,near,textbook,写像の合成,Function composition,Q244761,mext,ok,wiki-redirect merged,composition of functions
+convergence,収束,数列の収束,convergence,convergence of a sequence,,noun,jp-suugaku-3-kyokugen|us-calculus-2-sequences-and-series,analysis,数III,AP Calculus AB|Calculus I|Calculus II,exact,textbook,,,,mext,ok,wiki-disambig wiki-rejected merged,wiki 除外（英語照合不一致: en.term の記事なし）: 極限 → Limit (mathematics) ／ en.term → (記事なし)
+divergence,発散,,divergence,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,mext,ok,wiki-rejected,wiki 除外（別概念）: 発散 (ベクトル解析) → Divergence。Divergence はベクトル場の発散（div）。数列・関数の発散ではない
+diverge-to-positive-infinity,正の無限大に発散する,無限大に発散する,diverge to positive infinity,diverges to infinity,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,merged,goes to infinity
 diverge-to-negative-infinity,負の無限大に発散する,,diverge to negative infinity,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 oscillate,振動する,,oscillate,,,verb,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,wiki-rejected,wiki 除外（数学カテゴリ外）: 振動 → Oscillation。Oscillation（物理の振動）
 infinity,無限大,,infinity,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,wiki-disambig,
@@ -1310,100 +1300,65 @@ comparison-for-divergence,追い出しの原理,,comparison for divergence,,,nou
 infinite-geometric-sequence,無限等比数列,,infinite geometric sequence,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 infinite-series,無限級数,,infinite series,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,級数,Series (mathematics),Q170198,mext,ok,wiki-redirect,
 sum-of-the-series,級数の和,,sum of the series,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,mext,ok,,
-limit-of-a-function,関数の極限,,limit of a function,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,関数の極限,Limit of a function,Q33540,wikipedia,ok,,
 right-hand-limit,右側極限,,right-hand limit,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 left-hand-limit,左側極限,,left-hand limit,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-one-sided-limit,片側極限,,one-sided limit,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,片側極限,One-sided limit,Q2633817,wikipedia,ok,,
+one-sided-limit,片側極限,,one-sided limit,,,noun,jp-suugaku-3-kyokugen|us-ap-calculus-ab-1-limits,analysis,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,片側極限,One-sided limit,Q2633817,wikipedia,ok,merged,節の名前「limit-of-a-piecewise-function」を統合（Phase 2 微分の単元）
 as-x-approaches-infinity,x → ∞ のとき,,as x approaches infinity,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 as-x-approaches-a,x → a のとき,,as x approaches a,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 the-limit-does-not-exist,極限が存在しない,,the limit does not exist,does not exist [ap-calculus-ab-1-limits],,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,ja-merged,DNE
-indeterminate-form,不定形,,indeterminate form,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,不定形,Indeterminate form,Q115089,wikipedia,ok,,
+indeterminate-form,不定形,,indeterminate form,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,不定形,Indeterminate form,Q115089,wikipedia,ok,merged,
 continuous,連続,,continuous,,,adjective,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,連続 (数学),Continuity (mathematics),Q12030090,mext,ok,,
 discontinuous,不連続,,discontinuous,,,adjective,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,wiki-rejected,wiki 除外（英語照合不一致: 別の記事）: 連続 (数学) → Continuity (mathematics) → List of continuity-related mathematical topics ／ en.term → Classification of discontinuities
 continuous-function,連続関数,,continuous function,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,連続写像,Continuous function,Q170058,wikipedia,ok,wiki-redirect,
 intermediate-value-theorem,中間値の定理,,intermediate value theorem,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,中間値の定理,Intermediate value theorem,Q245098,wikipedia,ok,,
 extreme-value-theorem,最大値・最小値の定理,極値定理,extreme value theorem,,,noun,jp-suugaku-3-kyokugen|us-ap-calculus-ab-5-analytical-applications,analysis|calculus,数III,AP Calculus AB|Calculus I,exact,textbook,最大値最小値定理,Extreme value theorem,Q752375,wikipedia,ok,wiki-redirect merged,
 limit-of-sine-x-over-x,三角関数の極限,,limit of sine x over x,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,,sin x / x → 1
-e,e,,e,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,wiki-redirect wiki-rejected,Euler's number。読みは「イー」 ／ wiki 除外（数学カテゴリ外）: E → E。「E」は数学カテゴリ配下にない
-base-of-the-natural-logarithm,自然対数の底,,base of the natural logarithm,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,ネイピア数,E (mathematical constant),Q82435,wikipedia,ok,wiki-redirect,
-limit-involving-exponentials,指数関数の極限,,limit involving exponentials,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-find-the-limit,極限を求める,,find the limit,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,near,editorial,,,,mext,ok,,evaluate the limit
-approaches,〜に限りなく近づく,,approaches,,,verb,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,,gets arbitrarily close to
-converges-to-zero,0 に収束する,,converges to zero,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-divide-numerator-and-denominator-by-n,分母と分子を n で割る,,divide numerator and denominator by n,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-rationalize-and-take-the-limit,有理化して極限を求める,,rationalize and take the limit,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-limit-laws,極限の性質,,limit laws,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
+base-of-the-natural-logarithm,自然対数の底,e,base of the natural logarithm,e,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,ネイピア数,E (mathematical constant),Q82435,wikipedia,ok,wiki-redirect wiki-rejected merged,Euler's number。読みは「イー」 ／ wiki 除外（数学カテゴリ外）: E → E。「E」は数学カテゴリ配下にない ／ 節の名前「limit-involving-exponentials」を統合（Phase 2 微分の単元）
+find-the-limit,極限を求める,,find the limit,,,phrase,jp-suugaku-3-kyokugen|us-ap-calculus-ab-1-limits,analysis,数III,AP Calculus AB|Calculus I,near,textbook,,,,mext,ok,merged,evaluate the limit ／ 節の名前「evaluate-limits-algebraically」を統合（Phase 2 微分の単元）
+approaches,〜に限りなく近づく,,approaches,,,verb,jp-suugaku-2-bibun-no-kangae|jp-suugaku-3-kyokugen,analysis|calculus,数III|数II,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,merged,gets arbitrarily close to
+limit-laws,極限の性質,,limit laws,,,noun,jp-suugaku-3-kyokugen|us-calculus-1-limits,analysis,数III,AP Calculus AB|Calculus I,exact,textbook,,,,editorial,—,merged,節の名前「limit-theorems」を統合（Phase 2 微分の単元） ／ 節の名前「computing-limits」を統合（Phase 2 微分の単元）
 find-the-domain,定義域を求める,,find the domain,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 find-the-asymptotes,グラフの漸近線を求める,,find the asymptotes,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 find-the-inverse,逆関数を求める,,find the inverse,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 compose,合成する,,compose,,,verb,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,wiki-disambig,
 one-to-one,1 対 1,単射,one-to-one,,,adjective,jp-suugaku-3-kyokugen|us-linear-algebra-linear-transformations,analysis|linear-algebra,数III,AP Calculus AB|Calculus I|Linear Algebra,exact,textbook,単射,Injective function,Q182003,wikipedia,alt:単射,merged,injective
-the-function-is-continuous,関数が連続である,,the function is continuous,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-the-one-sided-limits-agree,極限が一致する,,the one-sided limits agree,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-diverges-to-infinity,無限大に発散する,,diverges to infinity,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 bounded,有界,,bounded,,,adjective,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,有界,Bounded set,Q726212,wikipedia,ok,,
 monotonic,単調,,monotonic,,,adjective,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,wiki-disambig,
 squeeze,はさむ,,squeeze,,,verb,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,,bound it between
-computing-limits,極限の計算,,computing limits,,,noun,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-zero-over-zero,0/0 の形,,zero over zero,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-infinity-over-infinity,∞/∞ の形,,infinity over infinity,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-infinity-minus-infinity,∞ − ∞,,infinity minus infinity,,,phrase,jp-suugaku-3-kyokugen,analysis,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-differentiability,微分可能性,,differentiability,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,mext,ok,wiki-disambig,
-product-rule,積の微分,,product rule,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,wikidata,積の微分法則,Product rule,Q466720,wikipedia,ok,,
+differentiability,微分可能性,,differentiability,,,noun,jp-suugaku-3-bibun|us-ap-calculus-ab-2-differentiation-basics,calculus,数III,AP Calculus AB|Calculus I,exact,textbook,,,,mext,ok,wiki-disambig merged,節の名前「differentiability-and-continuity」を統合（Phase 2 微分の単元）
+product-rule,積の微分,,product rule,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,wikidata,積の微分法則,Product rule,Q466720,wikipedia,ok,merged,
 quotient-rule,商の微分,,quotient rule,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,wikidata,商の微分法則,Quotient rule,Q531392,wikipedia,ok,,
 chain-rule,合成関数の微分,連鎖律,chain rule,,,noun,jp-suugaku-3-bibun|us-ap-calculus-ab-3-differentiation-advanced,calculus,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,連鎖律,Chain rule,Q207455,wikipedia,alt:連鎖律,merged,合成関数の微分
 derivative-of-an-inverse-function,逆関数の微分,,derivative of an inverse function,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-implicit-function,陰関数,,implicit function,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,陰関数,Implicit function,Q1196523,wikipedia,ok,,
+implicit-function,陰関数,,implicit function,,,noun,jp-suugaku-3-bibun|us-ap-calculus-ab-5-analytical-applications,calculus,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,陰関数,Implicit function,Q1196523,wikipedia,ok,merged,節の名前「implicit-curves」を統合（Phase 2 微分の単元）
 implicit-differentiation,陰関数の微分,陰関数微分,implicit differentiation,,,noun,jp-suugaku-3-bibun|us-ap-calculus-ab-3-differentiation-advanced,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,merged wiki-rejected,wiki 除外（英語照合不一致: 別の記事）: 陰関数 → Implicit function ／ en.term → Implicit differentiation
 parametric-equations,媒介変数表示,媒介変数方程式,parametric equations,parametric representation [suugaku-c-kyokusen-to-fukuso-heimen],,noun,jp-suugaku-3-bibun|us-precalculus-polar-and-complex,calculus|complex-numbers,数III,AP Calculus AB|Calculus I|Precalculus,exact,textbook,,,,mext,ok,ja-merged wiki-redirect merged,
-derivative-of-a-parametric-curve,媒介変数表示された関数の微分,,derivative of a parametric curve,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
+derivative-of-a-parametric-curve,媒介変数表示された関数の微分,媒介変数曲線の微分,derivative of a parametric curve,derivatives of parametric equations,,noun,jp-suugaku-3-bibun|us-ap-calculus-bc-9-parametric-polar-vector,calculus,数III,AP Calculus AB|Calculus I|AP Calculus BC,exact,textbook,,,,editorial,—,merged,
 derivatives-of-trigonometric-functions,三角関数の導関数,,derivatives of trigonometric functions,derivatives of trig functions [ap-calculus-ab-2-differentiation-basics],,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,ja-merged,
-derivative-of-the-exponential-function,指数関数の導関数,,derivative of the exponential function,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-derivative-of-the-logarithm,対数関数の導関数,,derivative of the logarithm,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,mext,ok,,
+derivative-of-the-exponential-function,指数関数の導関数,e^x の導関数,derivative of the exponential function,derivative of e to the x,,noun,jp-suugaku-3-bibun|us-ap-calculus-ab-2-differentiation-basics,calculus,数III,AP Calculus AB|Calculus I,exact,textbook,,,,editorial,—,merged,
+derivative-of-the-logarithm,対数関数の導関数,ln x の導関数,derivative of the logarithm,derivative of natural log,,noun,jp-suugaku-3-bibun|us-ap-calculus-ab-2-differentiation-basics,calculus,数III,AP Calculus AB|Calculus I,exact,textbook,,,,mext,ok,merged,
 logarithmic-differentiation,対数微分法,対数微分,logarithmic differentiation,,,noun,jp-suugaku-3-bibun|us-calculus-1-derivatives,calculus,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,対数微分法,Logarithmic differentiation,Q2289425,wikipedia,ok,merged,
-higher-order-derivative,高次導関数,,higher-order derivative,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
+higher-order-derivative,高次導関数,高階導関数,higher-order derivative,higher-order derivatives,,noun,jp-suugaku-3-bibun|us-ap-calculus-ab-3-differentiation-advanced,calculus,数III,AP Calculus AB|Calculus I,exact,textbook,,,,editorial,—,merged,
 second-derivative,第 2 次導関数,,second derivative,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 nth-derivative,第 n 次導関数,,nth derivative,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-mean-value-theorem,平均値の定理,,mean value theorem,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,平均値の定理,Mean value theorem,Q189136,wikipedia,ok,,
+mean-value-theorem,平均値の定理,,mean value theorem,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,平均値の定理,Mean value theorem,Q189136,wikipedia,ok,merged,
 rolles-theorem,ロルの定理,,Rolle's theorem,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,ロルの定理,Rolle's theorem,Q193286,wikipedia,ok,,
-concavity,曲線の凹凸,凹凸,concavity,,,noun,jp-suugaku-3-bibun|us-ap-calculus-ab-5-analytical-applications,calculus,数III,AP Calculus AB|Calculus I,exact,textbook,,,,mext,alt:凹凸,wiki-redirect wiki-rejected merged,wiki 除外（数学カテゴリ外）: 凸凹 → (en なし)。「凸凹」は数学カテゴリ配下にない
+concavity,曲線の凹凸,凹凸,concavity,,,noun,jp-suugaku-3-bibun|us-ap-calculus-ab-5-analytical-applications|us-calculus-1-applications-of-derivatives,calculus,数III,AP Calculus AB|Calculus I,exact,textbook,,,,mext,alt:凹凸,wiki-redirect wiki-rejected merged,wiki 除外（数学カテゴリ外）: 凸凹 → (en なし)。「凸凹」は数学カテゴリ配下にない ／ 節の名前「concavity-and-the-second-derivative」を統合（Phase 2 微分の単元） ／ 節の名前「sign-of-the-second-derivative」を統合（Phase 2 微分の単元）
 inflection-point,変曲点,,inflection point,point of inflection [ap-calculus-ab-5-analytical-applications],,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,near,wikipedia-langlink,変曲点,Inflection point,Q212794,mext,ok,ja-merged,point of inflection
-sign-of-the-second-derivative,第 2 次導関数の符号,,sign of the second derivative,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 absolute-extrema,最大・最小,絶対極値,absolute extrema,,,noun,jp-suugaku-3-bibun|us-ap-calculus-ab-5-analytical-applications,calculus,数III,AP Calculus AB|Calculus I,exact,textbook,,,,editorial,—,wiki-redirect merged,
-applying-derivatives-to-equations,方程式への応用,,applying derivatives to equations,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-applying-derivatives-to-inequalities,不等式への応用,,applying derivatives to inequalities,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-velocity,速度,,velocity,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,速度,Velocity,Q11465,mext,ok,,
+velocity,速度,,velocity,,,noun,jp-suugaku-3-bibun|us-ap-calculus-ab-4-contextual-applications,calculus,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,速度,Velocity,Q11465,mext,ok,merged,節の名前「position-velocity-and-acceleration」を統合（Phase 2 微分の単元）
 acceleration,加速度,,acceleration,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,mext,ok,wiki-rejected,wiki 除外（数学カテゴリ外）: 加速度 → Acceleration。「加速度」は数学カテゴリ配下にない
-linear-approximation,近似式,,linear approximation,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,wiki-rejected,wiki 除外（英語照合不一致: 別の記事）: 近似 → Approximation ／ en.term → Linear approximation
-linearization,一次近似,線形近似|線型近似,linearization,,,noun,jp-suugaku-3-bibun|us-ap-calculus-ab-4-contextual-applications,calculus,数III,AP Calculus AB|Calculus I,exact,textbook,,,,editorial,—,merged wiki-rejected,wiki 除外（英語照合不一致: 別の記事）: 線型近似 → Linear approximation ／ en.term → Linearization
+linear-approximation,近似式,一次近似|線形近似|線型近似|接線近似,linear approximation,linearization|tangent line approximation,,noun,jp-suugaku-3-bibun|us-ap-calculus-ab-4-contextual-applications,calculus,数III,AP Calculus AB|Calculus I,exact,textbook,,,,editorial,—,wiki-rejected merged,wiki 除外（英語照合不一致: 別の記事）: 近似 → Approximation ／ en.term → Linear approximation ／ wiki 除外（英語照合不一致: 別の記事）: 線型近似 → Linear approximation ／ en.term → Linearization
 small-change,微小変化,,small change,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 differential,微分 dy,,differential,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-leibniz-notation,ライプニッツの記法,,Leibniz notation,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,ライプニッツの記法,Leibniz's notation,Q1069516,wikipedia,ok,,
+leibniz-notation,ライプニッツの記法,,Leibniz notation,,,noun,jp-suugaku-3-bibun|us-calculus-1-derivatives,calculus,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,ライプニッツの記法,Leibniz's notation,Q1069516,wikipedia,ok,merged,節の名前「notations-for-the-derivative」を統合（Phase 2 微分の単元）
 prime-notation,ラグランジュの記法,,prime notation,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,near,editorial,微分の記法,Notation for differentiation,Q3269411,wikipedia,ok,wiki-redirect,Lagrange notation
-use-the-chain-rule,合成関数の微分法を使う,,use the chain rule,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-use-the-product-rule,積の微分法を使う,,use the product rule,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-differentiate-both-sides-with-respect-to-x,両辺を x で微分する,,differentiate both sides with respect to x,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-take-the-log-and-differentiate,対数をとって微分する,,take the log and differentiate,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 differentiate-twice,2 回微分する,,differentiate twice,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,,take the second derivative
 check-the-concavity,凹凸を調べる,,check the concavity,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 find-the-inflection-points,変曲点を求める,,find the inflection points,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-sketch-the-curve,概形をかく,曲線をかく,sketch the curve,,,phrase,jp-suugaku-3-bibun|jp-suugaku-c-kyokusen-to-fukuso-heimen,calculus|complex-numbers,数III|数C,AP Calculus AB|Calculus I|Precalculus,exact,editorial,,,,mext,ok,merged,
-apply-the-mean-value-theorem,平均値の定理を適用する,,apply the mean value theorem,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-differentiate-the-outside-first,外側から微分する,,differentiate the outside first,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,,outer function times inner
-multiply-by-the-derivative-of-the-inside,内側の微分を掛ける,,multiply by the derivative of the inside,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-d-d-x,d/dx,,d d x,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,,読み方。symbols へ
-d-y-d-x,dy/dx,,d y d x,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,,読み方。symbols へ
-f-prime,f プライム,,f prime,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,near,editorial,,,,editorial,—,,「エフダッシュ」は通じない
-f-double-prime,f ダブルプライム,,f double prime,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 has-a-local-extremum,極値をもつ,,has a local extremum,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-has-no-local-extrema,極値をもたない,,has no local extrema,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-f-double-prime-is-positive,f''(x) > 0,,f double prime is positive,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,wiki-rejected,wiki 除外（数学カテゴリ外）: f''(x) > 0 → (en なし)。「f''(x) > 0」は数学カテゴリ配下にない
-changes-from-increasing-to-decreasing,増加から減少に変わる,,changes from increasing to decreasing,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-the-derivative-is-zero,微分係数が 0,,the derivative is zero,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
-the-tangent-line-is-horizontal,接線が水平,,the tangent line is horizontal,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 not-differentiable,微分不可能,,not differentiable,,,adjective,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 cusp,尖点,,cusp,,,noun,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,wikipedia-langlink,尖点,Cusp (singularity),Q655275,wikipedia,ok,,
-continuous-but-not-differentiable,連続だが微分不可能,,continuous but not differentiable,,,phrase,jp-suugaku-3-bibun,calculus,数III,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,
 integration-by-substitution,置換積分法,u 置換|置換法則,u-substitution,integration by substitution|substitution rule,substitution@written,noun,jp-suugaku-3-sekibun|us-ap-calculus-ab-6-integration|us-calculus-1-integration,calculus,数III,AP Calculus BC|Calculus II|AP Calculus AB|Calculus I,near,textbook,,,,mext,ok,merged reviewed-30,教室では u-substitution / u-sub ／ 置換積分
 integration-by-parts,部分積分法,部分積分,integration by parts,,,noun,jp-suugaku-3-sekibun|us-ap-calculus-bc-6-integration-techniques,calculus,数III,AP Calculus BC|Calculus II,exact,wikipedia-langlink,部分積分,Integration by parts,Q273328,mext,ok,merged,
 partial-fraction-decomposition,部分分数分解,部分分数による積分,partial fraction decomposition,integration by partial fractions,,noun,jp-suugaku-3-sekibun|us-ap-calculus-bc-6-integration-techniques,calculus,数III,AP Calculus BC|Calculus II,exact,wikipedia-langlink,部分分数分解,Partial fraction decomposition,Q431617,wikipedia,ok,merged,partial fractions ／ 節の名前「integral-of-a-rational-function」を統合（Phase 2 修正）
@@ -1723,7 +1678,6 @@ tessellation,対称テッセレーション,,tessellation,,,noun,us-geometry-tra
 coordinate-proof,座標証明,,coordinate proof,,,noun,us-geometry-coordinate-geometry,geometry,数II,Geometry,near,textbook,,,,editorial,—,,座標を置いて証明する形式
 write-the-equation-of-a-parallel-line,平行線の方程式を書く,,write the equation of a parallel line,,,phrase,us-geometry-coordinate-geometry,geometry,大学,Geometry,exact,textbook,,,,editorial,—,,
 partition-a-segment,線分の分点,,partition a segment,,,verb,us-geometry-coordinate-geometry,geometry,大学,Geometry,near,textbook,,,,editorial,—,,内分点を求める。「partition the segment in the ratio 2:3」
-composition-of-functions,関数の合成,,composition of functions,,,noun,us-algebra-2-functions,functions,大学,Algebra 2,exact,textbook,写像の合成,Function composition,Q244761,mext,ok,wiki-redirect,
 one-to-one-function,一対一関数,,one-to-one function,,,noun,us-algebra-2-functions,functions,大学,Algebra 2,exact,textbook,,,,editorial,—,,
 horizontal-line-test,水平線テスト,,horizontal line test,,,noun,us-algebra-2-functions,functions,数III,Algebra 2,none,textbook,,,,editorial,—,,逆関数が存在する判定
 vertical-line-test,垂直線テスト,,vertical line test,,,noun,us-algebra-2-functions,functions,中1,Algebra 2,none,textbook,,,,editorial,—,,関数かどうかの判定
@@ -1732,7 +1686,6 @@ family-of-functions,親関数の族,,family of functions,,,noun,us-algebra-2-fun
 piecewise-defined-function,区分的定義,,piecewise-defined function,,,noun,us-algebra-2-functions,functions,大学,Algebra 2,exact,textbook,,,,editorial,—,,
 end-behavior,関数の終端挙動,終端挙動,end behavior,,,noun,us-algebra-2-functions|us-algebra-2-polynomials,functions|algebra,数III,Algebra 2,none,textbook,,,,editorial,—,merged,x → ±∞ での振る舞い。日本では「極限」で言う ／ 同上
 interval-of-increase,増加区間,,interval of increase,,,noun,us-algebra-2-functions,functions,大学,Algebra 2,exact,textbook,,,,editorial,—,,
-relative-maximum,相対最大値,,relative maximum,,,noun,us-algebra-2-functions,functions,大学,Algebra 2,near,textbook,,,,editorial,—,,極大値
 key-features-of-a-graph,関数のグラフの特徴,,key features of a graph,,,noun,us-algebra-2-functions,functions,数I,Algebra 2,near,textbook,,,,mext,ok,,米国のカリキュラム用語
 focus-of-a-parabola,放物線の焦点,,focus of a parabola,,,noun,us-algebra-2-quadratics-and-complex-numbers,algebra,大学,Algebra 2,exact,textbook,,,,editorial,—,,日本は数C
 nonlinear-system,連立二次方程式,,nonlinear system,,,noun,us-algebra-2-quadratics-and-complex-numbers,algebra,大学,Algebra 2,near,textbook,,,,editorial,—,,「連立方程式（2 次）」
@@ -1857,41 +1810,28 @@ relative-frequency-table,相対度数表,,relative frequency table,,,noun,us-int
 conditional-relative-frequency,条件付き相対度数,,conditional relative frequency,,,noun,us-integrated-1-statistics,statistics,大学,Integrated Math 1,exact,textbook,,,,editorial,—,,二元分割表で
 sine-cosine-and-tangent,正弦・余弦・正接,,"sine, cosine, and tangent",,,noun,us-integrated-2-similarity-and-trig,geometry,大学,Integrated Math 2,exact,textbook,,,,editorial,—,,
 geometric-modeling,幾何的モデル化,,geometric modeling,,,noun,us-integrated-3-geometric-modeling,geometry,数A,Integrated Math 3,near,textbook,,,,editorial,—,,密度・設計の問題
-limit-notation,極限の表記,,limit notation,,,noun,us-ap-calculus-ab-1-limits,analysis,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
 infinite-limit,無限大の極限,,infinite limit,,,noun,us-ap-calculus-ab-1-limits,analysis,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
-limit-at-infinity,無限遠での極限,,limit at infinity,,,noun,us-ap-calculus-ab-1-limits,analysis,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
+limit-at-infinity,無限遠での極限,,limit at infinity,,,noun,us-ap-calculus-ab-1-limits|us-calculus-1-applications-of-derivatives,analysis|calculus,大学,AP Calculus AB|Calculus I,exact,textbook,,,,editorial,—,merged,節の名前「asymptotes-and-end-behavior」を統合（Phase 2 微分の単元）
 jump-discontinuity,跳躍不連続,,jump discontinuity,,,noun,us-ap-calculus-ab-1-limits,analysis,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,日本の高校では名前がない
 infinite-discontinuity,無限不連続,,infinite discontinuity,,,noun,us-ap-calculus-ab-1-limits,analysis,大学,AP Calculus AB,near,textbook,,,,editorial,—,,
-epsilon-delta-definition,イプシロン・デルタ,,epsilon-delta definition,,,noun,us-ap-calculus-ab-1-limits,analysis,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,極限の厳密な定義。日本の高校では扱わない。AP でも扱わないことが多い
-limit-of-a-piecewise-function,区分的関数の極限,,limit of a piecewise function,,,noun,us-ap-calculus-ab-1-limits,analysis,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
-evaluate-limits-algebraically,代数的に極限を求める,,evaluate limits algebraically,,,phrase,us-ap-calculus-ab-1-limits,analysis,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
+epsilon-delta-definition,イプシロン・デルタ,極限の厳密な定義,epsilon-delta definition,precise definition of a limit,,noun,us-ap-calculus-ab-1-limits|us-calculus-1-limits,analysis,大学,AP Calculus AB|Calculus I,exact,textbook,,,,editorial,—,merged,極限の厳密な定義。日本の高校では扱わない。AP でも扱わないことが多い ／ ε-δ
 limit-definition-of-the-derivative,導関数の定義,,limit definition of the derivative,,,noun,us-ap-calculus-ab-2-differentiation-basics,calculus,大学,AP Calculus AB,exact,textbook,,,,mext,ok,,
-differentiability-and-continuity,微分可能性と連続性,,differentiability and continuity,,,noun,us-ap-calculus-ab-2-differentiation-basics,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
-constant-multiple-rule,定数倍の法則,,constant multiple rule,,,noun,us-ap-calculus-ab-2-differentiation-basics,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
-derivative-of-e-to-the-x,e^x の導関数,,derivative of e to the x,,,noun,us-ap-calculus-ab-2-differentiation-basics,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
-derivative-of-natural-log,ln x の導関数,,derivative of natural log,,,noun,us-ap-calculus-ab-2-differentiation-basics,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
+constant-multiple-rule,定数倍の法則,定数倍,constant multiple rule,constant multiple,,noun,jp-suugaku-2-bibun-no-kangae|us-ap-calculus-ab-2-differentiation-basics,calculus,大学|数II,AP Calculus AB|Calculus I,exact,textbook,,,,editorial,—,merged,
 instantaneous-rate-of-change,瞬間変化率,,instantaneous rate of change,,,noun,us-ap-calculus-ab-2-differentiation-basics,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
 corner-nondifferentiable,角（微分不可能点）,,corner,,,noun,us-ap-calculus-ab-2-differentiation-basics,calculus,数III,AP Calculus AB,near,textbook,,,,editorial,—,,微分不可能な点（尖った角）。cusp と区別
 vertical-tangent,垂直接線,,vertical tangent,,,noun,us-ap-calculus-ab-2-differentiation-basics,calculus,大学,AP Calculus AB,near,wikipedia-langlink,垂直接線,Vertical tangent,Q2908441,wikipedia,ok,,日本の高校では扱わない
 derivatives-of-inverse-trig-functions,逆三角関数の導関数,,derivatives of inverse trig functions,,,noun,us-ap-calculus-ab-3-differentiation-advanced,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
-higher-order-derivatives,高階導関数,,higher-order derivatives,,,noun,us-ap-calculus-ab-3-differentiation-advanced,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
 outer-function,外側の関数,,outer function,,,noun,us-ap-calculus-ab-3-differentiation-advanced,calculus,数III,AP Calculus AB,near,textbook,,,,editorial,—,,連鎖律の説明で
 inner-function,内側の関数,,inner function,,,noun,us-ap-calculus-ab-3-differentiation-advanced,calculus,数III,AP Calculus AB,near,textbook,,,,editorial,—,,
-differentiate-both-sides,両辺を微分する,,differentiate both sides,,,phrase,us-ap-calculus-ab-3-differentiation-advanced,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
+differentiate-both-sides,両辺を微分する,両辺を x で微分する,differentiate both sides,differentiate both sides with respect to x,,phrase,jp-suugaku-3-bibun|us-ap-calculus-ab-3-differentiation-advanced,calculus,大学|数III,AP Calculus AB|Calculus I,exact,textbook,,,,editorial,—,merged,
 solve-for-y-prime,y' について解く,,solve for y prime,,,phrase,us-ap-calculus-ab-3-differentiation-advanced,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
 related-rates,関連変化率,関連変化率の問題,related rates,related rates problems,,noun,us-ap-calculus-ab-4-contextual-applications|us-calculus-1-applications-of-derivatives,calculus,大学,AP Calculus AB|Calculus I,near,textbook,,,,editorial,—,merged,「xとyの変化率の関係」。日本の高校では扱わないが数III の応用に近い
-tangent-line-approximation,接線近似,,tangent line approximation,,,noun,us-ap-calculus-ab-4-contextual-applications,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
 lhopitals-rule,ロピタルの定理,,L'Hôpital's rule,,,noun,us-ap-calculus-ab-4-contextual-applications,calculus,大学,AP Calculus AB,exact,wikipedia-langlink,ロピタルの定理,L'Hôpital's rule,Q190557,wikipedia,ok,,日本の高校では使えない（答案で減点されることがある）
-position-velocity-and-acceleration,位置・速度・加速度,,"position, velocity, and acceleration",,,noun,us-ap-calculus-ab-4-contextual-applications,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
 rectilinear-motion,直線運動,,rectilinear motion,,,noun,us-ap-calculus-ab-4-contextual-applications,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
-units-of-a-rate-of-change,変化率の単位,,units of a rate of change,,,noun,us-ap-calculus-ab-4-contextual-applications,calculus,数II,AP Calculus AB,exact,textbook,,,,editorial,—,,
 second-derivative-test,第 2 次導関数テスト,,second derivative test,,,noun,us-ap-calculus-ab-5-analytical-applications,calculus,大学,AP Calculus AB,near,textbook,,,,editorial,—,,f'' の符号で極大・極小を判定
 candidates-test,候補点テスト,,candidates test,,,noun,us-ap-calculus-ab-5-analytical-applications,calculus,数II,AP Calculus AB,none,textbook,,,,editorial,—,,閉区間の最大・最小を端点と臨界点で調べる
-relative-extrema,相対極値,,relative extrema,,,noun,us-ap-calculus-ab-5-analytical-applications,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
-optimization-problem,最適化問題,,optimization problem,,,noun,us-ap-calculus-ab-5-analytical-applications,calculus,数II,AP Calculus AB,exact,wikipedia-langlink,最適化問題,Optimization problem,Q984063,wikipedia,ok,,文章題としての最大・最小。日本では「最大・最小の応用」
-curve-sketching,曲線の概形,,curve sketching,,,noun,us-ap-calculus-ab-5-analytical-applications,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
-implicit-curves,陰関数のグラフ,,implicit curves,,,noun,us-ap-calculus-ab-5-analytical-applications,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
-connecting-f-f-prime-and-f-double-prime,f と f' と f'' のグラフの関係,,"connecting f, f prime, and f double prime",,,noun,us-ap-calculus-ab-5-analytical-applications,calculus,数III,AP Calculus AB,near,textbook,,,,editorial,—,,AP の頻出問題
+optimization-problem,最適化問題,,optimization problem,,,noun,jp-suugaku-2-bibun-no-kangae|jp-suugaku-b-suugaku-to-shakai-seikatsu|us-ap-calculus-ab-5-analytical-applications,calculus|statistics,数II|数B,AP Calculus AB|Calculus I|Algebra 2,exact,wikipedia-langlink,最適化問題,Optimization problem,Q984063,wikipedia,ok,wiki-disambig merged,文章題としての最大・最小。日本では「最大・最小の応用」 ／ 米国では optimization problems ／ 節の名前「optimization」を統合（Phase 2 微分の単元）
+curve-sketching,曲線の概形,,curve sketching,,,noun,us-ap-calculus-ab-5-analytical-applications,calculus,大学|数III,AP Calculus AB,exact,textbook,,,,editorial,—,merged,AP の頻出問題 ／ 節の名前「connecting-f-f-prime-and-f-double-prime」を統合（Phase 2 微分の単元）
 left-riemann-sum,左リーマン和,,left Riemann sum,,,noun,us-ap-calculus-ab-6-integration,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
 right-riemann-sum,右リーマン和,,right Riemann sum,,,noun,us-ap-calculus-ab-6-integration,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
 midpoint-riemann-sum,中点リーマン和,,midpoint Riemann sum,,,noun,us-ap-calculus-ab-6-integration,calculus,大学,AP Calculus AB,exact,textbook,,,,editorial,—,,
@@ -1918,7 +1858,6 @@ improper-integral,広義積分,,improper integral,,,noun,us-ap-calculus-bc-6-int
 eulers-method,オイラー法,,Euler's method,,,noun,us-ap-calculus-bc-6-integration-techniques,calculus,大学,AP Calculus BC,exact,wikipedia-langlink,オイラー法,Euler method,Q868454,wikipedia,ok,,
 logistic-differential-equation,ロジスティック微分方程式,,logistic differential equation,,,noun,us-ap-calculus-bc-6-integration-techniques,calculus,大学,AP Calculus BC,exact,textbook,,,,editorial,—,,
 liate,LIATE,,LIATE,,,noun,us-ap-calculus-bc-6-integration-techniques,calculus,数III,AP Calculus BC,none,textbook,,,,editorial,—,,部分積分でどちらを微分するかの覚え方
-derivatives-of-parametric-equations,媒介変数曲線の微分,,derivatives of parametric equations,,,noun,us-ap-calculus-bc-9-parametric-polar-vector,calculus,大学,AP Calculus BC,exact,textbook,,,,editorial,—,,
 arc-length-of-a-parametric-curve,媒介変数曲線の弧長,,arc length of a parametric curve,,,noun,us-ap-calculus-bc-9-parametric-polar-vector,calculus,大学,AP Calculus BC,exact,textbook,,,,editorial,—,,
 vector-valued-function,ベクトル値関数,ベクトル値函数,vector-valued function,,,noun,us-ap-calculus-bc-9-parametric-polar-vector,calculus,大学,AP Calculus BC,exact,textbook,ベクトル値函数,Vector-valued function,Q1375954,wikipedia,ok,wiki-redirect,
 area-in-polar-coordinates,極座標での面積,極座標の面積,area in polar coordinates,,,noun,us-ap-calculus-bc-9-parametric-polar-vector|us-calculus-2-parametric-and-polar,calculus,大学,AP Calculus BC|Calculus II,exact,textbook,,,,editorial,—,merged,同上
@@ -2014,19 +1953,12 @@ confidence-interval-for-the-slope,傾きの信頼区間,,confidence interval for
 t-test-for-the-slope,傾きの t 検定,,t-test for the slope,,,noun,us-ap-statistics-9-slopes,statistics,大学,AP Statistics,exact,textbook,,,,editorial,—,,
 hyperbolic-functions,双曲線関数,,hyperbolic functions,,,noun,us-calculus-1-functions,functions,大学,Calculus I,exact,wikipedia-langlink,双曲線関数,Hyperbolic functions,Q204034,wikipedia,ok,,"sinh, cosh, tanh。日本の高校では扱わない"
 inverse-hyperbolic-functions,逆双曲線関数,,inverse hyperbolic functions,,,noun,us-calculus-1-functions,functions,大学,Calculus I,exact,wikipedia-langlink,逆双曲線関数,Inverse hyperbolic functions,Q640600,wikipedia,ok,,
-types-of-functions,関数の型,,types of functions,,,noun,us-calculus-1-functions,functions,大学,Calculus I,near,textbook,,,,editorial,—,,代数関数・超越関数など
-transcendental-function,超越関数,,transcendental function,,,noun,us-calculus-1-functions,functions,大学,Calculus I,exact,wikipedia-langlink,超越関数,Transcendental function,Q864333,wikipedia,ok,,
+transcendental-function,超越関数,,transcendental function,,,noun,us-calculus-1-functions,functions,大学,Calculus I,exact,wikipedia-langlink,超越関数,Transcendental function,Q864333,wikipedia,ok,merged,代数関数・超越関数など ／ 節の名前「types-of-functions」を統合（Phase 2 微分の単元）
 algebraic-function,代数関数,,algebraic function,,,noun,us-calculus-1-functions,functions,大学,Calculus I,exact,wikipedia-langlink,代数関数,Algebraic function,Q746863,wikipedia,ok,,
-precise-definition-of-a-limit,極限の厳密な定義,,precise definition of a limit,,,noun,us-calculus-1-limits,analysis,大学,Calculus I,exact,textbook,,,,editorial,—,,ε-δ
-limit-theorems,極限と連続の定理,,limit theorems,,,noun,us-calculus-1-limits,analysis,大学,Calculus I,exact,textbook,,,,editorial,—,,
 tangent-problem,接線問題,,tangent problem,,,noun,us-calculus-1-limits,analysis,数II,Calculus I,exact,textbook,,,,editorial,—,,微分の動機づけ
 area-problem,面積問題,,area problem,,,noun,us-calculus-1-limits,analysis,数II,Calculus I,exact,textbook,,,,editorial,—,,積分の動機づけ
-notations-for-the-derivative,微分の記法,,notations for the derivative,,,noun,us-calculus-1-derivatives,calculus,大学,Calculus I,exact,wikipedia-langlink,微分の記法,Notation for differentiation,Q3269411,wikipedia,ok,,
 differential-operator,微分作用素,,differential operator,,,noun,us-calculus-1-derivatives,calculus,大学,Calculus I,exact,wikipedia-langlink,微分作用素,Differential operator,Q1058681,wikipedia,ok,,d/dx
 newtons-method,ニュートン法,,Newton's method,,,noun,us-calculus-1-applications-of-derivatives,calculus,大学,Calculus I,exact,wikipedia-langlink,ニュートン法,Newton's method,Q374195,wikipedia,ok,,日本の高校では扱わない
-concavity-and-the-second-derivative,凹凸と第 2 次導関数,,concavity and the second derivative,,,noun,us-calculus-1-applications-of-derivatives,calculus,大学,Calculus I,exact,textbook,,,,editorial,—,,
-asymptotes-and-end-behavior,漸近線とグラフ,,asymptotes and end behavior,,,noun,us-calculus-1-applications-of-derivatives,calculus,大学,Calculus I,exact,textbook,,,,editorial,—,,
-derivatives-and-inequalities,微分と不等式,,derivatives and inequalities,,,noun,us-calculus-1-applications-of-derivatives,calculus,大学,Calculus I,exact,textbook,,,,editorial,—,,
 fundamental-theorem-of-calculus-part-1,微積分学の基本定理 第 1 部,,fundamental theorem of calculus part 1,,,noun,us-calculus-1-integration,calculus,大学,Calculus I,near,textbook,,,,editorial,—,,
 fundamental-theorem-of-calculus-part-2,微積分学の基本定理 第 2 部,,fundamental theorem of calculus part 2,,,noun,us-calculus-1-integration,calculus,大学,Calculus I,near,textbook,,,,editorial,—,,evaluation theorem
 trigonometric-substitution,三角置換,,trigonometric substitution,,,noun,jp-suugaku-3-sekibun|us-calculus-2-techniques-of-integration,calculus,数III,Calculus II|AP Calculus BC,exact,textbook,,,,editorial,—,merged,x = a sin θ の置換。日本の高校では個別に扱う ／ 節の名前「integral-involving-radicals」を統合（Phase 2 修正）
@@ -2045,7 +1977,6 @@ first-order-linear-differential-equation,線形一階微分方程式,,first-orde
 integrating-factor,積分因子,,integrating factor,,,noun,us-calculus-2-differential-equations,calculus,大学,Calculus II,exact,wikipedia-langlink,積分因子,Integrating factor,Q2734005,wikipedia,ok,,
 exponential-growth-and-decay-models,指数増加・減衰のモデル,,exponential growth and decay models,,,noun,us-calculus-2-differential-equations,calculus,大学,Calculus II,exact,textbook,,,,editorial,—,,
 logistic-equation,ロジスティック方程式,,logistic equation,,,noun,us-calculus-2-differential-equations,calculus,大学,Calculus II,exact,wikipedia-langlink,ロジスティック方程式,Logistic differential equation,Q736352,wikipedia,ok,,
-convergence-of-a-sequence,数列の収束,,convergence of a sequence,,,noun,us-calculus-2-sequences-and-series,analysis,大学,Calculus II,exact,textbook,,,,editorial,—,wiki-rejected,wiki 除外（英語照合不一致: en.term の記事なし）: 極限 → Limit (mathematics) ／ en.term → (記事なし)
 monotone-convergence-theorem,単調収束定理,単調数列定理,monotone convergence theorem,,,noun,us-calculus-2-sequences-and-series,analysis,大学,Calculus II,exact,textbook,,,,editorial,—,,
 telescoping-series,望遠鏡級数,,telescoping series,,,noun,us-calculus-2-sequences-and-series,analysis,数B,Calculus II,none,textbook,,,,editorial,—,,途中の項が打ち消し合う和。日本では名前をつけない
 strategy-for-testing-series,判定法のまとめ,,strategy for testing series,,,noun,us-calculus-2-sequences-and-series,analysis,大学,Calculus II,exact,textbook,,,,editorial,—,,
@@ -2317,3 +2248,4 @@ parent-function,親関数,,parent function,,,noun,us-algebra-1-quadratics,functi
 substitute-new-variable,置き換える,置換する,substitute,,,verb,jp-chuugaku-3-tenkai-insuubunkai|jp-suugaku-3-sekibun,algebra|calculus,中3|数III,Algebra 1|Integrated Math 1|AP Calculus BC|Calculus II,near,editorial,,,,mext,ok,wiki-rejected merged,「x+1 を A と置き換える」は let A = x + 1 ／ let u = ... ／ wiki 除外（別概念）: 置換 (数学) → Permutation。Permutation（置換）
 substitute,代入する,,plug in,,,verb,jp-chuugaku-1-moji-to-shiki,algebra,中1,Pre-Algebra|Algebra 1,exact,editorial,,,,editorial,—,wiki-rejected,STYLE: ②併記 plug in / substitute ／ wiki 除外（別概念）: 代入 (論理学) → Substitution (logic)。Substitution (logic) は論理式の置換
 move-term-to-other-side,移項する,,move to the other side,,,verb,jp-chuugaku-1-ichiji-houteishiki,algebra,中1,Pre-Algebra|Algebra 1,near,editorial,,,,editorial,—,wiki-rejected,話: move it over 書: subtract from both sides ／ wiki 除外（英語照合不一致: en.term の記事なし）: 等式 → Equality (mathematics) ／ en.term → (記事なし)
+cubic-function,3 次関数,,cubic function,graph of a cubic function,,noun,jp-suugaku-2-bibun-no-kangae,calculus,数II,AP Calculus AB|Calculus I,exact,editorial,,,,editorial,—,,

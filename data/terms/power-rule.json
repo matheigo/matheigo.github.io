@@ -1,0 +1,97 @@
+{
+  "id": "power-rule",
+  "ja": {
+    "term": "xⁿ の微分",
+    "reading": "えっくすのえぬじょうのびぶん",
+    "alt": [
+      "べき乗則"
+    ]
+  },
+  "en": {
+    "term": "power rule",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の教科書は (xⁿ)′ = nxⁿ⁻¹ を公式として使い、名前を付けない。米国では power rule と呼び、名前で指して使う。ja.alt の「べき乗則」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "(xⁿ)′ = nxⁿ⁻¹ という微分の公式。",
+  "definition_en": "The rule that the derivative of xⁿ is nxⁿ⁻¹.",
+  "latex": "\\frac{d}{dx}x^n = nx^{n-1}",
+  "spoken_en": "the derivative of x to the n is n x to the n minus one",
+  "examples": [
+    {
+      "en": "Power rule: bring the exponent down in front and subtract one from it.",
+      "ja": "xⁿ の微分は、指数を前に出して指数から 1 を引く。",
+      "register": "spoken"
+    },
+    {
+      "en": "By the power rule, the derivative of x⁵ is 5x⁴.",
+      "ja": "xⁿ の微分の公式より、x⁵ の導関数は 5x⁴ である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "対数の性質（power rule for logarithms）や積分（power rule for integrals）にも同じ名前がある。"
+  ],
+  "related": [
+    "derivative",
+    "derivative-of-a-sum",
+    "properties-of-logarithms"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 2.5（power rule）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "power rule": 245
+    },
+    "written": {
+      "power rule": 107
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

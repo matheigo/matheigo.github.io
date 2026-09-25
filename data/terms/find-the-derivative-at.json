@@ -1,0 +1,102 @@
+{
+  "id": "find-the-derivative-at",
+  "ja": {
+    "term": "微分係数を求める",
+    "reading": "びぶんけいすうをもとめる",
+    "alt": []
+  },
+  "en": {
+    "term": "evaluate the derivative at",
+    "alt": [
+      "find the derivative at",
+      "find f prime of"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "関数の x = a における微分係数 f′(a) の値を求める。",
+  "definition_en": "To find the value f′(a) of the derivative at a given point.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Evaluate the derivative at x = 2: just plug 2 into f prime.",
+      "ja": "x = 2 での微分係数を求める。f′ に 2 を代入するだけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate the derivative of f(x) = x³ − x at x = 2.",
+      "ja": "f(x) = x³ − x の x = 2 における微分係数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語は「微分係数」に当たる名詞を立てないので、find f′(2) や the derivative at x = 2 と言う。"
+  ],
+  "related": [
+    "derivative-at-a-point",
+    "differentiate",
+    "derivative"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "find f prime of": 8,
+      "find the derivative at": 4,
+      "evaluate the derivative at": 3
+    },
+    "written": {
+      "find the derivative at": 2,
+      "evaluate the derivative at": 5
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満 ／ 書: 判断不能: 重み付け後 7 件（10 未満））。見出しは OpenStax の呼び方 evaluate the derivative at（本文 5 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

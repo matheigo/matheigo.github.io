@@ -1,0 +1,108 @@
+{
+  "id": "local-minimum",
+  "ja": {
+    "term": "極小値",
+    "reading": "きょくしょうち",
+    "alt": [
+      "極小"
+    ]
+  },
+  "en": {
+    "term": "local minimum",
+    "alt": [],
+    "variants": [
+      {
+        "term": "relative minimum",
+        "register": "spoken",
+        "note": "話し言葉ではこちらが最も多いが、すべて Khan Academy（AP の CED も Unit 5 の概要で relative minimum と書く）。話し言葉で 44 件（すべて Khan Academy）、書き言葉で 6 件（すべて OpenStax Calculus）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "x = a の近くで f(a) が最も小さいときの f(a) の値。",
+  "definition_en": "A value f(a) that is the smallest among the values of f near x = a.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The derivative goes from negative to positive, so that's a relative minimum.",
+      "ja": "導関数が負から正に変わるので、そこは極小。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that f(x) = x⁴ − 2x² has a local minimum at x = 1.",
+      "ja": "f(x) = x⁴ − 2x² が x = 1 で極小となることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "口頭では local min ／ relative min と略す。区間全体での最小値は absolute minimum（global minimum）。"
+  ],
+  "related": [
+    "local-maximum",
+    "local-extremum",
+    "first-derivative-test"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "極値",
+      "en": "Maximum and minimum"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 5（relative minimum）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "local minimum": 25,
+      "relative minimum": 44
+    },
+    "written": {
+      "local minimum": 96,
+      "relative minimum": 6
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.02",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-24"
+  }
+}

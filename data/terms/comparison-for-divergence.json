@@ -1,0 +1,74 @@
+{
+  "id": "comparison-for-divergence",
+  "ja": {
+    "term": "追い出しの原理",
+    "reading": "おいだしのげんり",
+    "alt": []
+  },
+  "en": {
+    "term": "comparison for divergence",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで 0 件）。「aₙ ≧ bₙ で bₙ → ∞ なら aₙ → ∞」という性質に英語の名前はなく、英語で書くときは Since aₙ ≥ bₙ and bₙ → ∞, aₙ → ∞ as well. と理由を文で書く。見出しの英語は本プロジェクトの説明的な訳。",
+  "domains": [
+    "calculus",
+    "analysis"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "すべての n で aₙ ≧ bₙ であり、bₙ が正の無限大に発散するなら、aₙ も正の無限大に発散するという性質。",
+  "definition_en": "The property that if aₙ ≥ bₙ for every n and bₙ → ∞, then aₙ → ∞ as well.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Since a sub n is always bigger than n, and n goes to infinity, a sub n goes to infinity too.",
+      "ja": "aₙ はいつも n より大きく、n が正の無限大に発散するので、aₙ も発散する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Since 2ⁿ ≥ n for all n ≥ 1 and n → ∞, it follows that 2ⁿ → ∞.",
+      "ja": "n ≧ 1 のとき 2ⁿ ≧ n であり n → ∞ なので、2ⁿ → ∞ である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "squeeze-theorem",
+    "diverge-to-positive-infinity"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

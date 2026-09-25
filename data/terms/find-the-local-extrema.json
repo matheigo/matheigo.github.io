@@ -1,0 +1,94 @@
+{
+  "id": "find-the-local-extrema",
+  "ja": {
+    "term": "極値を求める",
+    "reading": "きょくちをもとめる",
+    "alt": []
+  },
+  "en": {
+    "term": "find the local extrema",
+    "alt": [
+      "find all local extrema"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "関数の極大値・極小値と、それをとる x の値を求める。",
+  "definition_en": "To find the local maximum and minimum values of a function and where they occur.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To find the local extrema, first find where f prime is zero or undefined.",
+      "ja": "極値を求めるには、まず f′ が 0 か存在しない点を探す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the local extrema of f(x) = x³ − 6x² + 9x.",
+      "ja": "f(x) = x³ − 6x² + 9x の極値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "extrema は extremum の複数形。1 つだけなら a local extremum。"
+  ],
+  "related": [
+    "local-extremum",
+    "critical-point",
+    "first-derivative-test"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "find all local extrema": 1,
+      "find the local extrema": 3
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 4 件（10 未満））。見出しは OpenStax の呼び方 find the local extrema（本文 3 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

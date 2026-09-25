@@ -1,0 +1,93 @@
+{
+  "id": "first-derivative-test",
+  "ja": {
+    "term": "第 1 次導関数判定法",
+    "reading": "だいいちじどうかんすうはんていほう",
+    "alt": [
+      "第 1 次導関数テスト"
+    ]
+  },
+  "en": {
+    "term": "first derivative test",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の数II・数III は、f′(x) の符号の変化から極大・極小を判定することを増減表で行い、判定法に名前を付けない。米国では first derivative test と名前で呼ぶ。見出しの「第 1 次導関数判定法」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "f′(x) の符号が x = c の前後で正から負に変われば極大、負から正に変われば極小と判定する方法。",
+  "definition_en": "A test that classifies a critical point c: if f′ changes from positive to negative at c, f has a local maximum there; from negative to positive, a local minimum.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "By the first derivative test, since f prime goes from positive to negative at x = 2, that's a relative max.",
+      "ja": "第 1 次導関数判定法より、x = 2 で f′ が正から負に変わるので極大。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the first derivative test to classify the critical points of f(x) = x³ − 12x.",
+      "ja": "第 1 次導関数判定法を使って、f(x) = x³ − 12x の臨界点が極大か極小かを判定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "AP の CED は Unit 5 の各 topic で結論の理由（justification）を求める。増減表を書くなら、f′ の符号が変わることを文で添える。"
+  ],
+  "related": [
+    "local-extremum",
+    "critical-point",
+    "sign-chart",
+    "increasing-and-decreasing",
+    "changes-sign"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 5.4（first derivative test）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "first derivative test": 21
+    },
+    "written": {
+      "first derivative test": 18
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

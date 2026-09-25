@@ -1,0 +1,78 @@
+{
+  "id": "number-of-real-solutions",
+  "ja": {
+    "term": "方程式の実数解の個数",
+    "reading": "ほうていしきのじっすうかいのこすう",
+    "alt": []
+  },
+  "en": {
+    "term": "number of real solutions",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数I",
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "方程式の解のうち実数であるものの個数。微分を使うときは、y = f(x) のグラフと直線 y = k の共有点の個数として数える。",
+  "definition_en": "How many real solutions an equation has; with calculus, counted as the number of points where the graph of y = f(x) meets the line y = k.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The number of real solutions is the number of times the graph crosses the line y = k.",
+      "ja": "実数解の個数は、グラフが直線 y = k と交わる回数に等しい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine the number of real solutions of x³ − 3x − k = 0 for each value of k.",
+      "ja": "k の値によって、方程式 x³ − 3x − k = 0 の実数解の個数を調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語では solution（方程式の解）のほかに、root ／ zero（多項式の根・零点）とも言う。"
+  ],
+  "related": [
+    "increasing-and-decreasing",
+    "local-extremum"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}
