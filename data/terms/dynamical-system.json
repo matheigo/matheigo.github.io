@@ -1,0 +1,94 @@
+{
+  "id": "dynamical-system",
+  "ja": {
+    "term": "動的システム",
+    "reading": "どうてきしすてむ",
+    "alt": [
+      "力学系",
+      "離散力学系"
+    ]
+  },
+  "en": {
+    "term": "dynamical system",
+    "alt": [
+      "discrete dynamical system"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "状態ベクトルが行列を掛けるたびに x_{k+1} = Ax_k のように移り変わる仕組み。固有値と固有ベクトルで長い時間の後の様子が分かる。",
+  "definition_en": "A system whose state vector changes by a matrix at each step, x_{k+1} = Ax_k; eigenvalues and eigenvectors describe its long-run behavior.",
+  "latex": "\\vec{x}_{k+1} = A\\vec{x}_k",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The biggest eigenvalue tells you whether the population grows or dies out in the long run.",
+      "ja": "いちばん大きい固有値で、個体数が長い目で見て増えるか減るかが分かる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Describe the long-term behavior of the dynamical system x_{k+1} = Ax_k.",
+      "ja": "動的システム x_{k+1} = Ax_k の長期的なふるまいを説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「力学系」は微分方程式で表す連続の系も含む。線形代数の教科書（Nicholson 3.3）は行列による離散の系を扱う。"
+  ],
+  "related": [
+    "eigenvalue",
+    "eigenvector",
+    "markov-chain",
+    "diagonalization"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "力学系",
+      "en": "Dynamical system"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "3.3 Diagonalization and Eigenvalues"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "dynamical system": 1
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは Nicholson の呼び方 dynamical system（3.3 Diagonalization and Eigenvalues・3.4 An Application to Linear Recurrences・5.5 Similarity and Diagonalization）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "qr-factorization",
+  "ja": {
+    "term": "QR 分解",
+    "reading": "きゅーあーるぶんかい",
+    "alt": []
+  },
+  "en": {
+    "term": "QR factorization",
+    "alt": [
+      "QR decomposition"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "列が 1 次独立な行列を、列が正規直交な行列 Q と上三角行列 R の積 A = QR に分けること。グラム・シュミットの直交化法で得られる。",
+  "definition_en": "Writing a matrix with independent columns as A = QR, with Q having orthonormal columns and R upper triangular; the Gram-Schmidt process produces it.",
+  "latex": "A = QR",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "QR factorization is just Gram-Schmidt written as a matrix product.",
+      "ja": "QR 分解は、グラム・シュミット法を行列の積で書いたものだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find a QR factorization of the matrix.",
+      "ja": "行列の QR 分解を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "Nicholson は QR-factorization（ハイフン付き）と書く。用例コーパスでは 0 件。"
+  ],
+  "related": [
+    "gram-schmidt-process",
+    "orthonormal-basis",
+    "lu-decomposition"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "8.4 QR-Factorization"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 QR factorization（8.4 QR-Factorization・8.5 Computing Eigenvalues）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

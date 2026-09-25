@@ -1,0 +1,90 @@
+{
+  "id": "inclusion-exclusion-principle",
+  "ja": {
+    "term": "包除原理",
+    "reading": "ほうじょげんり",
+    "alt": [
+      "包含排除原理",
+      "包含と排除の原理"
+    ]
+  },
+  "en": {
+    "term": "principle of inclusion-exclusion",
+    "alt": [
+      "inclusion-exclusion principle"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics",
+    "probability"
+  ],
+  "level": {
+    "jp": [
+      "数A",
+      "大学"
+    ],
+    "us": [
+      "Discrete Math",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "和集合の要素の個数（和事象の確率）を、各集合の個数の和から共通部分の個数を引き、さらに足し戻して求める原理。",
+  "definition_en": "Counting a union (or finding the probability of a union of events) by adding the sizes of the sets, subtracting their pairwise intersections, adding back the triple intersections, and so on.",
+  "latex": "|A \\cup B| = |A| + |B| - |A \\cap B|",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "You counted the overlap twice, so subtract it once: that's inclusion-exclusion.",
+      "ja": "重なりを 2 回数えたので 1 回引く。それが包除原理だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the principle of inclusion-exclusion to count the integers from 1 to 100 divisible by 2, 3, or 5.",
+      "ja": "包除原理を用いて、1 から 100 までの整数で 2, 3, 5 のいずれかで割り切れるものの個数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数 A の n(A ∪ B) = n(A) + n(B) − n(A ∩ B) は 2 つの集合の場合。日本の高校の教科書はこの原理に名前を付けない。",
+    "Levin は Principle of Inclusion/Exclusion と書き、PIE と略す（3.8 の節の名前）。PIE は pie chart と同じ語なので数えなかった。用例コーパスでは inclusion-exclusion principle が話し言葉 7 件だけ。"
+  ],
+  "related": [
+    "general-addition-rule"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.3 Non-Disjoint Outcomes・3.8 Advanced Counting Using PIE"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "inclusion-exclusion principle": 7
+    },
+    "sources": [
+      "mit-6.042"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 principle of inclusion-exclusion（3.8 Advanced Counting Using PIE・3.3 Non-Disjoint Outcomes）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

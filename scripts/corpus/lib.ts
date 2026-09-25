@@ -71,6 +71,8 @@ export const VARIANTS: [RegExp, string][] = [
   [/\brow\s+echelon\b/g, "row-echelon"],
   // (Phase 2 統計・ベクトルの単元 2) "LU factorization" against Nicholson's "LU-factorization"
   [/\b(lu|qr)\s+factorization/g, "$1-factorization"],
+  // and Levin's "inclusion/exclusion" against "inclusion-exclusion"
+  [/\binclusion\s*\/\s*exclusion/g, "inclusion-exclusion"],
   // (Phase 2 統計の単元) captions write "five number summary"; OpenStax hyphenates
   [/\bfive\s+number\s+summar/g, "five-number summar"],
   // and "box and whisker(s) plot" (captions) against "box-and-whisker plot" (OpenStax)
@@ -605,6 +607,23 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   }, // not "in three dimensions" or a rectangle's dimensions
   rank: { rank: "rank of the matrix | rank of a matrix | full rank | full column rank | full row rank | rank one matrix | rank r | the rank is | rank of a" }, // not a ranking or a card's rank
   onto: { onto: "is onto | onto function | onto map | one-to-one and onto | onto mapping | onto transformation" }, // not the preposition (project onto)
+  // batch 6
+  "edge-of-a-graph": {
+    edge: "edges of the graph | edge of the graph | edges in the graph | an edge between | edge from | number of edges | vertices and edges | edges and vertices | edge connecting | edges connecting",
+  }, // not the edge of a region or a cube
+  "path-in-a-graph": {
+    path: "path in the graph | path in a graph | path from u to v | path of length | hamilton path | hamiltonian path | shortest path | simple path | walk or path",
+  }, // not the path of a particle or a line integral's path
+  "graph-network": {
+    graph: "simple graph | connected graph | directed graph | complete graph | bipartite graph | planar graph | graph with … vertices | graph on … vertices",
+  }, // not the graph of a function
+  statistics: { statistics: "in statistics | field of statistics | study of statistics | statistics is the | statistics class | statistics course | statistics students" }, // the field, not the plural of statistic
+  statistic: { statistic: "a statistic | sample statistic | statistics and parameters | parameter and a statistic | summary statistics" }, // not the field "statistics", not a test statistic
+  "independence-of-events": {
+    "independent events": "independent events | events are independent | independence of events | event … independent of",
+  }, // not an independent variable or linear independence
+  "error-bound": { "error bound": "!lagrange !legrange error bound" }, // not the Lagrange error bound (Taylor polynomials)
+  "quadratic-form": { "quadratic form": "!in !the !standard !undoing quadratic form" }, // not an equation "in quadratic form" (u = x²)
   blocking: { blocking: "block design" }, // "blocking" folds into "block": stacks of blocks, Jordan blocks
 };
 

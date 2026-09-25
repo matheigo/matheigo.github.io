@@ -1,0 +1,85 @@
+{
+  "id": "algebraic-multiplicity",
+  "ja": {
+    "term": "代数的重複度",
+    "reading": "だいすうてきちょうふくど",
+    "alt": []
+  },
+  "en": {
+    "term": "algebraic multiplicity",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "固有値 λ が特性多項式の根として何重に現れるかを表す数。",
+  "definition_en": "The number of times an eigenvalue λ occurs as a root of the characteristic polynomial.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Lambda equals two is a double root, so its algebraic multiplicity is two.",
+      "ja": "λ = 2 は重根なので、代数的重複度は 2 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the algebraic and geometric multiplicity of each eigenvalue.",
+      "ja": "各固有値の代数的重複度と幾何的重複度を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "幾何的重複度（固有空間の次元）はいつも代数的重複度以下。すべての固有値で等しいときに対角化可能。",
+    "用例コーパスでは話し言葉 4 件だけ。Nicholson は 5.5 で multiplicity と書く。"
+  ],
+  "related": [
+    "geometric-multiplicity",
+    "eigenvalue",
+    "characteristic-polynomial",
+    "diagonalizable"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "5.5 Similarity and Diagonalization"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "algebraic multiplicity": 4
+    },
+    "sources": [
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 algebraic multiplicity（5.5 Similarity and Diagonalization）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

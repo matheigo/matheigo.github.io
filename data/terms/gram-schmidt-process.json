@@ -1,0 +1,83 @@
+{
+  "id": "gram-schmidt-process",
+  "ja": {
+    "term": "グラム・シュミットの直交化法",
+    "reading": "ぐらむ・しゅみっとのちょっこうかほう",
+    "alt": [
+      "グラム・シュミットの直交化"
+    ]
+  },
+  "en": {
+    "term": "Gram-Schmidt algorithm",
+    "alt": [
+      "Gram-Schmidt process",
+      "Gram-Schmidt orthogonalization"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "1 次独立なベクトルの組から、同じ空間を張る直交（正規直交）なベクトルの組を順に作る方法。前のベクトルへの正射影を引いていく。",
+  "definition_en": "A procedure that turns a linearly independent set of vectors into an orthogonal (or orthonormal) set spanning the same space, by subtracting projections onto the earlier vectors one at a time.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Gram-Schmidt: take the next vector and subtract off its projections onto the ones you already have.",
+      "ja": "グラム・シュミット法では、次のベクトルから、もうあるベクトルへの射影を引いていく。",
+      "register": "spoken"
+    },
+    {
+      "en": "Apply the Gram-Schmidt process to the vectors to obtain an orthonormal basis.",
+      "ja": "ベクトルにグラム・シュミットの直交化法を適用し、正規直交基底を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "Nicholson は Gram-Schmidt algorithm（16 件）と Gram-Schmidt process（8 件）の両方を書く。用例コーパスでは Gram-Schmidt が話し言葉 1 件だけ。"
+  ],
+  "related": [
+    "orthonormal-basis",
+    "orthogonal-projection",
+    "qr-factorization"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "8.1 Orthogonal Complements and Projections"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 Gram-Schmidt algorithm（10.2 Orthogonal Sets of Vectors・8.1 Orthogonal Complements and Projections・8.2 Orthogonal Diagonalization）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

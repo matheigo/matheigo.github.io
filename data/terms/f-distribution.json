@@ -1,0 +1,78 @@
+{
+  "id": "f-distribution",
+  "ja": {
+    "term": "F 分布",
+    "reading": "えふぶんぷ",
+    "alt": []
+  },
+  "en": {
+    "term": "F distribution",
+    "alt": [
+      "F-distribution"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "2 つの分散の比が従う連続型の確率分布。分子と分母の 2 つの自由度で形が決まり、分散分析や 2 つの分散の比較に使う。",
+  "definition_en": "The continuous distribution of a ratio of two variances; its shape depends on two degrees of freedom, and it is used in ANOVA and to compare two variances.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The F distribution is skewed right and never goes below zero.",
+      "ja": "F 分布は右に歪んでいて、0 より小さくならない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the p-value using the F distribution with 2 and 12 degrees of freedom.",
+      "ja": "自由度 2 と 12 の F 分布を用いて p 値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの書き言葉 29 件はすべて OpenStax Introductory Statistics（F distribution 27、F-distribution 2）。"
+  ],
+  "related": [
+    "anova",
+    "degrees-of-freedom",
+    "chi-square-test"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "F distribution": 27,
+      "F-distribution": 2
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

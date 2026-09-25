@@ -1,0 +1,110 @@
+{
+  "id": "error-bound",
+  "ja": {
+    "term": "誤差限界",
+    "reading": "ごさげんかい",
+    "alt": [
+      "誤差の範囲",
+      "許容誤差"
+    ]
+  },
+  "en": {
+    "term": "margin of error",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "error bound",
+        "register": "written",
+        "note": "OpenStax Introductory Statistics の言い方（EBM ／ EBP）。Lagrange error bound を除いて数えた。"
+      }
+    ],
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2",
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "信頼区間で、点推定値の両側にとる幅。信頼区間は 点推定値 ± 誤差限界。",
+  "definition_en": "The amount added to and subtracted from the point estimate to make a confidence interval: point estimate ± margin of error.",
+  "latex": "\\bar{x} \\pm E",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The poll says 52% with a margin of error of 3 points, so anywhere from 49 to 55.",
+      "ja": "世論調査は 52%、誤差の範囲は 3 ポイントなので、49% から 55% のどこか。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the error bound for the population mean and construct a 90% confidence interval.",
+      "ja": "母平均の誤差限界を求め、90% 信頼区間を作れ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "AP Statistics の CED（2026 年版）と Khan Academy は margin of error、OpenStax Introductory Statistics は error bound（EBM は平均、EBP は比率）と書く。",
+    "微積分の Lagrange error bound（テイラー多項式の誤差の上限）は別の概念。用例コーパスではその形を除いて数えた。"
+  ],
+  "related": [
+    "confidence-interval",
+    "point-estimate",
+    "standard-error",
+    "critical-value"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "誤差の範囲",
+      "en": "Margin of error"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 3.3・3.4"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "margin of error": 54
+    },
+    "written": {
+      "!lagrange !legrange error bound": 132,
+      "margin of error": 25
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

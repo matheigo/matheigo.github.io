@@ -1,0 +1,89 @@
+{
+  "id": "graph-network",
+  "ja": {
+    "term": "グラフ（離散数学）",
+    "reading": "ぐらふ",
+    "alt": [
+      "離散グラフ",
+      "ネットワーク"
+    ]
+  },
+  "en": {
+    "term": "graph",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "いくつかの点（頂点）と、それらを結ぶ線（辺）の組で、つながり方だけを表す図形。",
+  "definition_en": "A set of points (vertices) together with lines (edges) joining some pairs of them; only how they are connected matters.",
+  "latex": "G = (V, E)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In graph theory, a graph is just dots and the connections between them; the picture's shape doesn't matter.",
+      "ja": "グラフ理論のグラフは点とそのつながりだけで、絵の形は関係ない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Draw a connected graph with 5 vertices and 4 edges.",
+      "ja": "頂点が 5 個、辺が 4 本の連結なグラフをかけ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "関数のグラフ（graph of a function）と同じ語。用例コーパスでは simple ／ connected ／ directed ／ complete ／ bipartite ／ planar graph、graph with … vertices の形で数えた。",
+    "台帳の日本語「離散グラフ」は教科書の語ではない。数学 C は単に「グラフ」と呼ぶ。"
+  ],
+  "related": [
+    "vertex-graph",
+    "edge-of-a-graph",
+    "path-in-a-graph",
+    "tree",
+    "adjacency-matrix"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "2.1 Problems and Definitions"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "simple graph | connected graph | directed graph | complete graph | bipartite graph | planar graph | graph with … vertices | graph on … vertices": 50
+    },
+    "written": {
+      "simple graph | connected graph | directed graph | complete graph | bipartite graph | planar graph | graph with … vertices | graph on … vertices": 196
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

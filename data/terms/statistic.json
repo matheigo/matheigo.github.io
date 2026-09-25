@@ -1,0 +1,90 @@
+{
+  "id": "statistic",
+  "ja": {
+    "term": "統計量",
+    "reading": "とうけいりょう",
+    "alt": [
+      "標本統計量"
+    ]
+  },
+  "en": {
+    "term": "statistic",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "標本のデータから計算した値。標本平均・標本比率など。母集団の値（母数）を推定するのに使う。",
+  "definition_en": "A number computed from sample data, such as a sample mean or sample proportion; it is used to estimate a population parameter.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A statistic comes from the sample; a parameter describes the population.",
+      "ja": "統計量は標本から、母数は母集団を表す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Identify the parameter and the statistic in the study.",
+      "ja": "この調査の母数と統計量を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "statistic（統計量）の複数形 statistics は、分野の statistics（統計学）と同じつづり。用例コーパスでは a statistic ／ sample statistic ／ summary statistics などの形で数えた。",
+    "英語は parameter（母数）と statistic を対にして覚える（p と s の頭文字どうし）。",
+    "母集団の値（母数）は英語で parameter。媒介変数の parameter（parameter エントリ）と同じ語。"
+  ],
+  "related": [
+    "sample",
+    "population",
+    "test-statistic",
+    "statistics"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "統計量",
+      "en": "Statistic"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "a statistic | sample statistic | statistics and parameters | parameter and a statistic | summary statistics": 56
+    },
+    "written": {
+      "a statistic | sample statistic | statistics and parameters | parameter and a statistic | summary statistics": 41
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

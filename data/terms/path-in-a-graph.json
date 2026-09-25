@@ -1,0 +1,86 @@
+{
+  "id": "path-in-a-graph",
+  "ja": {
+    "term": "経路（グラフ）",
+    "reading": "けいろ",
+    "alt": [
+      "道",
+      "パス"
+    ]
+  },
+  "en": {
+    "term": "path",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "グラフで、辺でつながった頂点を順にたどる道筋のうち、同じ頂点を 2 度通らないもの。",
+  "definition_en": "In a graph, a route along edges from vertex to vertex that does not visit any vertex twice.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Is there a path from A to F? Follow the edges and see.",
+      "ja": "A から F への経路はあるか。辺をたどって確かめよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the shortest path from vertex A to vertex F.",
+      "ja": "頂点 A から頂点 F への最短経路を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "同じ頂点を何度通ってもよいものは walk（歩道）と呼び分ける（Levin）。",
+    "用例コーパスでは path in the graph ／ path from u to v ／ path of length ／ shortest path などの形で数えた（語のままの path は線積分の経路や粒子の道筋が多い）。"
+  ],
+  "related": [
+    "edge-of-a-graph",
+    "vertex-graph",
+    "graph-network",
+    "eulerian-path"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "2.1 Problems and Definitions"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "path in the graph | path in a graph | path from u to v | path of length | hamilton path | hamiltonian path | shortest path | simple path | walk or path": 22
+    },
+    "written": {
+      "path in the graph | path in a graph | path from u to v | path of length | hamilton path | hamiltonian path | shortest path | simple path | walk or path": 36
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

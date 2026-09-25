@@ -1,0 +1,90 @@
+{
+  "id": "orthogonal-complement",
+  "ja": {
+    "term": "直交補空間",
+    "reading": "ちょっこうほくうかん",
+    "alt": []
+  },
+  "en": {
+    "term": "orthogonal complement",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "部分空間 W のすべてのベクトルと直交するベクトル全体。W⊥ と書く。",
+  "definition_en": "The set of all vectors orthogonal to every vector in a subspace W, written W⊥.",
+  "latex": "W^{\\perp}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The null space is the orthogonal complement of the row space.",
+      "ja": "零空間は行空間の直交補空間だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find a basis for the orthogonal complement of W.",
+      "ja": "W の直交補空間の基底を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "W⊥ は W perp と読む。",
+    "用例コーパスでは話し言葉 5 件だけ。"
+  ],
+  "related": [
+    "orthogonal",
+    "null-space",
+    "row-space",
+    "subspace"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "直交補空間",
+      "en": "Orthogonal complement"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "8.1 Orthogonal Complements and Projections"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "orthogonal complement": 5
+    },
+    "sources": [
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 orthogonal complement（8.1 Orthogonal Complements and Projections・8.6 The Singular Value Decomposition・10.2 Orthogonal Sets of Vectors）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

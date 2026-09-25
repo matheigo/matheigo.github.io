@@ -1,0 +1,104 @@
+{
+  "id": "orthogonal",
+  "ja": {
+    "term": "直交",
+    "reading": "ちょっこう",
+    "alt": [
+      "直交する",
+      "垂直"
+    ]
+  },
+  "en": {
+    "term": "orthogonal",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors",
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数C",
+      "大学"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "2 つのベクトルの内積が 0 であること。0 でないベクトルなら互いに垂直になる。",
+  "definition_en": "Of two vectors: having dot product zero; nonzero orthogonal vectors are perpendicular.",
+  "latex": "\\vec{a} \\cdot \\vec{b} = 0",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Their dot product is zero, so the vectors are orthogonal.",
+      "ja": "内積が 0 なので、この 2 つのベクトルは直交している。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find a value of k for which the vectors ⟨2, k⟩ and ⟨3, −1⟩ are orthogonal.",
+      "ja": "ベクトル ⟨2, k⟩ と ⟨3, −1⟩ が直交するような k の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "ベクトルの垂直は英語で orthogonal（線分・直線は perpendicular）。0 ベクトルはどのベクトルとも orthogonal だが、perpendicular とは言わない。",
+    "用例コーパスの書き言葉 96 件はすべて OpenStax Calculus。"
+  ],
+  "related": [
+    "dot-product",
+    "perpendicular-lines",
+    "orthonormal-basis",
+    "orthogonal-complement",
+    "orthogonal-projection"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "直交",
+      "en": "Orthogonality"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "5.3 Orthogonality"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "orthogonal": 301
+    },
+    "written": {
+      "orthogonal": 96
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

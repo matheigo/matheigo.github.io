@@ -1,0 +1,85 @@
+{
+  "id": "singular-value-decomposition",
+  "ja": {
+    "term": "特異値分解",
+    "reading": "とくいちぶんかい",
+    "alt": []
+  },
+  "en": {
+    "term": "singular value decomposition",
+    "alt": [
+      "SVD"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "任意の行列を A = U Σ Vᵀ（U, V は直交行列、Σ は特異値を並べた対角行列）の形に分けること。",
+  "definition_en": "Writing any matrix as A = U Σ Vᵀ, where U and V are orthogonal and Σ is diagonal with the singular values.",
+  "latex": "A = U\\Sigma V^{T}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The SVD works for any matrix, even a rectangular one.",
+      "ja": "特異値分解は、長方形の行列でもどんな行列にも使える。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find a singular value decomposition of the matrix.",
+      "ja": "行列の特異値分解を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉は SVD 19 件・singular value decomposition 15 件（どちらも MIT 18.06）で ② の併記。略称 SVD は en.alt。"
+  ],
+  "related": [
+    "orthonormal-basis",
+    "diagonalization",
+    "transpose"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "特異値分解",
+      "en": "Singular value decomposition"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "8.6 The Singular Value Decomposition"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "singular value decomposition": 15,
+      "SVD": 19
+    },
+    "sources": [
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  }
+}

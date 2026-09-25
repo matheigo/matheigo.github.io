@@ -1,0 +1,85 @@
+{
+  "id": "geometric-multiplicity",
+  "ja": {
+    "term": "幾何的重複度",
+    "reading": "きかてきちょうふくど",
+    "alt": []
+  },
+  "en": {
+    "term": "geometric multiplicity",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "固有値 λ に対応する固有空間の次元。1 次独立な固有ベクトルが何本とれるかを表す。",
+  "definition_en": "The dimension of the eigenspace of an eigenvalue λ: how many linearly independent eigenvectors it has.",
+  "latex": "\\dim E_\\lambda",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The eigenvalue repeats twice but has only one independent eigenvector, so the geometric multiplicity is one.",
+      "ja": "固有値は 2 重だが 1 次独立な固有ベクトルは 1 本なので、幾何的重複度は 1。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the geometric multiplicity of λ = 1 is less than its algebraic multiplicity.",
+      "ja": "λ = 1 の幾何的重複度が代数的重複度より小さいことを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは話し言葉 2 件だけ。Nicholson はこの名前を使わず、固有空間の次元 dim E_λ と書く。"
+  ],
+  "related": [
+    "algebraic-multiplicity",
+    "eigenspace",
+    "diagonalizable"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語は線形代数の用語（geometric multiplicity）だが、OpenStax（6 冊）・Nicholson・台帳の Wikipedia のどれでも確かめられない（用例コーパスでは MIT OCW の 2 件だけ）。",
+      "raised": "2026-09-25"
+    },
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ],
+  "evidence": {
+    "spoken": {
+      "geometric multiplicity": 2
+    },
+    "sources": [
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  }
+}

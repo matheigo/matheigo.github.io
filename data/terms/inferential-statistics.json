@@ -1,0 +1,97 @@
+{
+  "id": "inferential-statistics",
+  "ja": {
+    "term": "推測統計",
+    "reading": "すいそくとうけい",
+    "alt": [
+      "推測統計学",
+      "統計的推測"
+    ]
+  },
+  "en": {
+    "term": "statistical inference",
+    "alt": [
+      "inferential statistics"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "標本のデータから、確率を使って母集団について推定や検定を行う統計の方法。",
+  "definition_en": "Using sample data and probability to draw conclusions about a population, by estimation and hypothesis testing.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Descriptive statistics describe the sample; inference goes from the sample to the population.",
+      "ja": "記述統計は標本を記述し、推測は標本から母集団へ進む。",
+      "register": "spoken"
+    },
+    {
+      "en": "Explain why a confidence interval is an example of statistical inference.",
+      "ja": "信頼区間が統計的推測の例である理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数学 B の単元名は「統計的な推測」。",
+    "用例コーパスでは inferential statistics が 7 件、statistical inference が 5 件だけ。AP Statistics の CED（2026 年版）は statistical inference と書く（単元 3 の概要ほか）。"
+  ],
+  "related": [
+    "statistics",
+    "descriptive-statistics",
+    "confidence-interval",
+    "hypothesis-testing"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "単元 3 の概要・Topic 3.2〜3.4"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "statistical inference": 1,
+      "inferential statistics": 3
+    },
+    "written": {
+      "statistical inference": 4,
+      "inferential statistics": 4
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-6.042",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは AP Statistics の CED の呼び方 statistical inference（topic 3.2・topic 3.3・topic 3.4・topic 3.5・topic 3.6・topic 3.7・topic 3.8・topic 3.9・topic 3.10・topic 3.11・topic 3.12・topic 3.13・topic 3.14・topic 4.1・topic 4.2・topic 4.3・topic 4.4・topic 4.5・topic 4.6・topic 4.7・topic 4.8・topic 4.9）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

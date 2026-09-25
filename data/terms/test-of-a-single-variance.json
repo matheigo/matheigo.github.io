@@ -1,0 +1,76 @@
+{
+  "id": "test-of-a-single-variance",
+  "ja": {
+    "term": "分散の検定",
+    "reading": "ぶんさんのけんてい",
+    "alt": []
+  },
+  "en": {
+    "term": "test of a single variance",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "1 つの母集団の分散（標準偏差）が、ある値に等しいかどうかをカイ二乗分布を使って検定する方法。",
+  "definition_en": "A chi-square test of whether the variance (or standard deviation) of one population equals a given value.",
+  "latex": "\\chi^2 = \\frac{(n-1)s^2}{\\sigma_0^2}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For a claim about the variance, the test statistic is chi-square, not t.",
+      "ja": "分散についての主張なら、検定統計量は t ではなくカイ二乗だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Perform a test of a single variance to see whether the machine's variability exceeds the standard.",
+      "ja": "分散の検定を行い、機械のばらつきが基準を超えているか調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語は「母分散の検定」「分散の検定」と言い、「1 つの」は付けない。",
+    "用例コーパスの書き言葉 11 件はすべて OpenStax Introductory Statistics（節の名前 Test of a Single Variance）。"
+  ],
+  "related": [
+    "variance",
+    "chi-square-test",
+    "hypothesis-testing"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "test of a single variance": 11
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

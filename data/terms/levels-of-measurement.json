@@ -1,0 +1,77 @@
+{
+  "id": "levels-of-measurement",
+  "ja": {
+    "term": "尺度水準",
+    "reading": "しゃくどすいじゅん",
+    "alt": [
+      "尺度"
+    ]
+  },
+  "en": {
+    "term": "levels of measurement",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "データの値がどんな操作に意味をもつかによる分類。名義尺度・順序尺度・間隔尺度・比例尺度の 4 つ。",
+  "definition_en": "A classification of data by which operations are meaningful: nominal, ordinal, interval and ratio.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Zip codes are numbers, but their level of measurement is nominal.",
+      "ja": "郵便番号は数だが、尺度水準は名義尺度だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Identify the level of measurement of each variable: nominal, ordinal, interval, or ratio.",
+      "ja": "各変数の尺度水準（名義・順序・間隔・比例）を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの書き言葉 10 件はすべて OpenStax Introductory Statistics（節の名前 Frequency, Frequency Tables, and Levels of Measurement）。名義尺度（nominal scale）などは 1 つの水準の名前なので候補にしなかった。"
+  ],
+  "related": [
+    "categorical-variable",
+    "quantitative-variable",
+    "data"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "levels of measurement": 10
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

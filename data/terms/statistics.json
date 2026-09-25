@@ -1,0 +1,93 @@
+{
+  "id": "statistics",
+  "ja": {
+    "term": "統計学",
+    "reading": "とうけいがく",
+    "alt": []
+  },
+  "en": {
+    "term": "statistics",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "データを集め、整理し、分析して、不確かさを考えながら結論を引き出す方法を研究する分野。",
+  "definition_en": "The science of collecting, organizing and analyzing data and drawing conclusions from it while accounting for uncertainty.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In statistics we never prove anything for sure; we measure how unlikely something is.",
+      "ja": "統計学では何かを確実に証明することはない。どれくらい起こりにくいかを測るのだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Explain the difference between descriptive statistics and inferential statistics.",
+      "ja": "記述統計と推測統計の違いを説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の statistics は分野（単数扱い）と statistic（統計量）の複数形の両方。用例コーパスでは in statistics ／ field of statistics ／ statistics class などの形で分野の意味だけを数えた。",
+    "AP Statistics・Intro Statistics のように科目名にも使う。"
+  ],
+  "related": [
+    "statistic",
+    "descriptive-statistics",
+    "inferential-statistics",
+    "data"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "統計学",
+      "en": "Statistics"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "in statistics | field of statistics | study of statistics | statistics is the | statistics class | statistics course | statistics students": 39
+    },
+    "written": {
+      "in statistics | field of statistics | study of statistics | statistics is the | statistics class | statistics course | statistics students": 79
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

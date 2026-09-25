@@ -47,31 +47,47 @@
       "en": "Find the orthogonal projection of the point (4, 1) onto the line y = x.",
       "ja": "点 (4, 1) の直線 y = x への正射影を求めよ。",
       "register": "written"
+    },
+    {
+      "en": "Project b onto the column space: that's the closest vector to b in the subspace.",
+      "ja": "b を列空間へ正射影すると、部分空間の中で b にいちばん近いベクトルになる。",
+      "register": "spoken"
     }
   ],
   "collocations": [],
   "pitfalls": [
     "用例コーパスの projection の話し言葉 265 件のうち 224 件は MIT 18.06（部分空間への射影）。orthogonal projection とはっきり言うのは 0 件で、授業では単に projection と言う。",
-    "ベクトルの正射影は vector-projection を参照。"
+    "ベクトルの正射影は vector-projection を参照。",
+    "線形代数では、直線だけでなく部分空間 W への正射影 proj_W を考える。W の正規直交基底があれば、各基底ベクトルへの射影の和になる（Nicholson 8.1）。"
   ],
   "related": [
     "vector-projection",
     "dot-product",
-    "perpendicular-lines"
+    "perpendicular-lines",
+    "orthogonal",
+    "orthogonal-complement",
+    "orthonormal-basis",
+    "gram-schmidt-process"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "8.1 Orthogonal Complements and Projections"
     }
   ],
   "confidence": "likely",
   "reviewed": {
-    "machine": "2026-09-24",
+    "machine": "2026-09-25",
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "projection": 265

@@ -1,0 +1,84 @@
+{
+  "id": "orthonormal-basis",
+  "ja": {
+    "term": "正規直交基底",
+    "reading": "せいきちょっこうきてい",
+    "alt": []
+  },
+  "en": {
+    "term": "orthonormal basis",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "互いに直交し、どれも長さ 1 のベクトルからなる基底。",
+  "definition_en": "A basis of mutually orthogonal vectors, each of length 1.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "With an orthonormal basis, the coordinates are just dot products.",
+      "ja": "正規直交基底なら、座標は内積をとるだけで求まる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find an orthonormal basis for the subspace spanned by the given vectors.",
+      "ja": "与えられたベクトルが張る部分空間の正規直交基底を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉 25 件のうち 24 件は MIT 18.06。"
+  ],
+  "related": [
+    "basis",
+    "orthogonal",
+    "gram-schmidt-process",
+    "qr-factorization"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "正規直交基底",
+      "en": "Orthonormal basis"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "8.1 Orthogonal Complements and Projections"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "orthonormal basis": 25
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  }
+}

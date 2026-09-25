@@ -1,0 +1,84 @@
+{
+  "id": "coefficient-of-variation",
+  "ja": {
+    "term": "変動係数",
+    "reading": "へんどうけいすう",
+    "alt": []
+  },
+  "en": {
+    "term": "coefficient of variation",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "標準偏差を平均値で割った値。平均の大きさが違うデータの散らばりを比べるのに使う。",
+  "definition_en": "The standard deviation divided by the mean; it compares the spread of data sets whose means differ in size.",
+  "latex": "CV = \\frac{s}{\\bar{x}}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To compare spread when the means are so different, use the coefficient of variation.",
+      "ja": "平均がこれだけ違うときは、変動係数で散らばりを比べる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Compute the coefficient of variation for each data set.",
+      "ja": "それぞれのデータの変動係数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは話し言葉 6 件だけで、OpenStax Introductory Statistics・AP Statistics の CED（2026 年版）には出てこない。",
+    "略して CV と書く（2 文字なので数えなかった）。"
+  ],
+  "related": [
+    "standard-deviation",
+    "arithmetic-mean",
+    "spread"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "変動係数",
+      "en": "Coefficient of variation"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "coefficient of variation": 6
+    },
+    "sources": [
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 6 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

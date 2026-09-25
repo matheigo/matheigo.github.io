@@ -1,0 +1,85 @@
+{
+  "id": "edge-of-a-graph",
+  "ja": {
+    "term": "辺（グラフ）",
+    "reading": "へん",
+    "alt": []
+  },
+  "en": {
+    "term": "edge",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "グラフで 2 つの頂点を結ぶ線。",
+  "definition_en": "A line joining two vertices of a graph.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Every edge has two ends, so the degrees add up to twice the number of edges.",
+      "ja": "どの辺にも端が 2 つあるので、次数の和は辺の数の 2 倍になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "How many edges does a complete graph on 6 vertices have?",
+      "ja": "頂点が 6 個の完全グラフの辺の数はいくつか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは edges of the graph ／ an edge between ／ number of edges ／ vertices and edges などの形で数えた（語のままの edge は立体の辺や領域の端が多い）。数える文脈は MIT OCW 6.042（離散数学）と講義ノートが中心。",
+    "立方体などの立体の辺も英語で edge。"
+  ],
+  "related": [
+    "vertex-graph",
+    "graph-network",
+    "path-in-a-graph",
+    "adjacency-matrix"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "2.1 Problems and Definitions"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "edges of the graph | edge of the graph | edges in the graph | an edge between | edge from | number of edges | vertices and edges | edges and vertices | edge connecting | edges connecting": 60
+    },
+    "written": {
+      "edges of the graph | edge of the graph | edges in the graph | an edge between | edge from | number of edges | vertices and edges | edges and vertices | edge connecting | edges connecting": 62
+    },
+    "sources": [
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}
