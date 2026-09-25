@@ -67,6 +67,8 @@ export const VARIANTS: [RegExp, string][] = [
   [/\b(first|second)\s+order\b/g, "$1-order"],
   // (Phase 2 代数 2 の単元) captions write "change of base formula"; OpenStax hyphenates
   [/\bchange\s+of\s+base\b/g, "change-of-base"],
+  // and "row echelon form" (captions, MIT OCW) against "row-echelon form" (OpenStax)
+  [/\brow\s+echelon\b/g, "row-echelon"],
   // Leibniz notation typed with a slash in captions ("dy/dx") is said "dy dx"
   [/\bd([a-z])\/d([a-z])\b/g, "d$1 d$2"],
   // One name, three spellings: L'Hôpital (OpenStax), L'Hopital (captions), L'Hospital (older)
@@ -404,6 +406,11 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "square-root": {
     "the square root of x squared plus one": "the square root of *",
   },
+  // (Phase 2 代数 2 の単元) "n choose k", "n choose r", "n choose two": the top is n. A
+  // bare "* choose *" would also count "we choose u".
+  "combination-ncr": {
+    "n choose r": "n choose *",
+  },
   "summation-sigma": {
     "the sum from k equals one to n of a sub k": "the sum from * to * of",
     "the sum of a k, k from one to n": "the sum of * from * to *",
@@ -452,6 +459,7 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   "write-with-the-same-base": { "write with the same base": "with the same base", "write with a common base": "with a common base" },
   "rewrite-in-exponential-form": { "rewrite in exponential form": "in exponential form" },
   "rewrite-in-logarithmic-form": { "rewrite in logarithmic form": "in logarithmic form" },
+  work: { work: "work done" }, // not "let's work it out"
 };
 
 /** The wording a candidate is counted and recorded as. */

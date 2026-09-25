@@ -1,0 +1,83 @@
+{
+  "id": "row-operations",
+  "ja": {
+    "term": "行基本変形",
+    "reading": "ぎょうきほんへんけい",
+    "alt": []
+  },
+  "en": {
+    "term": "row operations",
+    "alt": [
+      "elementary row operations"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "行列の 2 つの行を入れかえる、ある行を 0 でない数倍する、ある行に他の行の数倍を加える、の 3 つの変形。",
+  "definition_en": "The three operations on a matrix: swapping two rows, multiplying a row by a nonzero number, and adding a multiple of one row to another.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Use row operations to get zeros below the first entry.",
+      "ja": "行基本変形で、最初の成分の下を 0 にする。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use row operations to write the augmented matrix in row-echelon form.",
+      "ja": "行基本変形を用いて、拡大係数行列を行階段形にせよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉の 11 件はすべて MIT 18.06。書き言葉の 54 件はすべて OpenStax Algebra and Trigonometry。"
+  ],
+  "related": [
+    "augmented-matrix",
+    "gaussian-elimination",
+    "row-echelon-form"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "row operations": 11
+    },
+    "written": {
+      "row operations": 54,
+      "elementary row operations": 3
+    },
+    "sources": [
+      "mit-18.06",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "system-of-three-equations",
+  "ja": {
+    "term": "三元連立一次方程式",
+    "reading": "さんげんれんりついちじほうていしき",
+    "alt": [
+      "3 元 1 次連立方程式"
+    ]
+  },
+  "en": {
+    "term": "system of three equations",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "3 つの未知数を含む 1 次方程式 3 つを組にしたもの。",
+  "definition_en": "A set of three linear equations in three unknowns.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Eliminate the same variable from two different pairs, and you're down to two equations.",
+      "ja": "2 組の式から同じ文字を消すと、式が 2 つになる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the system of three equations in three variables: x + y + z = 2, x − y + 2z = 5, 2x + y − z = −1.",
+      "ja": "連立方程式 x + y + z = 2, x − y + 2z = 5, 2x + y − z = −1 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Algebra and Trigonometry は systems of three equations in three variables と書く（書き言葉 26 件のうち 25 件）。"
+  ],
+  "related": [
+    "gaussian-elimination",
+    "cramers-rule",
+    "augmented-matrix"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "system of three equations": 3
+    },
+    "written": {
+      "system of three equations": 26
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

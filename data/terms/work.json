@@ -1,0 +1,92 @@
+{
+  "id": "work",
+  "ja": {
+    "term": "仕事",
+    "reading": "しごと",
+    "alt": []
+  },
+  "en": {
+    "term": "work",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus II",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "力 F で物体を変位 d だけ動かしたときの F·d（力の変位方向の成分 × 距離）。",
+  "definition_en": "The quantity F·d for a force F moving an object through a displacement d: the component of the force along the motion times the distance.",
+  "latex": "W = \\vec{F}\\cdot\\vec{d}",
+  "spoken_en": "W equals F dot d",
+  "examples": [
+    {
+      "en": "Only the part of the force along the direction of motion does any work.",
+      "ja": "仕事をするのは、力のうち動く向きの成分だけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A force F = (3, 4) N moves an object from (0, 0) to (5, 2) m. Find the work done.",
+      "ja": "力 F = (3, 4)（N）が物体を (0, 0) から (5, 2)（m）まで動かすとき、した仕事を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "work だけでは「作業する」の意味が圧倒的に多いので、用例コーパスでは work done の形で数えた（書き言葉 86 件のうち 85 件が OpenStax Calculus）。"
+  ],
+  "related": [
+    "dot-product",
+    "vector"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "仕事 (物理学)",
+      "en": "Work (physics)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "work done": 5
+    },
+    "written": {
+      "work done": 86
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-6.042",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

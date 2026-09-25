@@ -1,0 +1,89 @@
+{
+  "id": "feasible-region",
+  "ja": {
+    "term": "実行可能領域",
+    "reading": "じっこうかのうりょういき",
+    "alt": []
+  },
+  "en": {
+    "term": "feasible region",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "大学"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "線形計画法で、すべての制約条件（不等式）を満たす点全体の領域。",
+  "definition_en": "In linear programming, the region of all points satisfying every constraint.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The feasible region is where all the shaded parts overlap.",
+      "ja": "実行可能領域は、塗った部分がすべて重なるところ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Graph the feasible region for x ≥ 0, y ≥ 0, x + y ≤ 5, 2x + y ≤ 8, and find its vertices.",
+      "ja": "x ≧ 0, y ≧ 0, x + y ≦ 5, 2x + y ≦ 8 の表す領域を図示し、その頂点を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校の教科書では「連立不等式の表す領域」と言う。用例コーパスでは書き言葉 9 件（OpenStax Algebra and Trigonometry）だけ。"
+  ],
+  "related": [
+    "region",
+    "linear-programming",
+    "objective-function",
+    "constraint"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "実行可能領域",
+      "en": "Feasible region"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "feasible region": 9
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 feasible region（本文 9 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

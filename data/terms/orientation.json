@@ -1,0 +1,97 @@
+{
+  "id": "orientation",
+  "ja": {
+    "term": "向き",
+    "reading": "むき",
+    "alt": [
+      "曲線の向き"
+    ]
+  },
+  "en": {
+    "term": "orientation",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「向き」は一般語で、媒介変数表示の曲線が t の増加とともに進む向きにも、ベクトルの向きにも使う。英語の orientation は曲線（や曲面）の進む向きに限って使い、ベクトルの向きは direction。",
+  "domains": [
+    "complex-numbers"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus II",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "媒介変数表示の曲線で、媒介変数 t が増えるときに点が進む向き。",
+  "definition_en": "For a parametric curve, the direction in which the point moves as the parameter t increases.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Put arrows on the curve to show the orientation — which way it goes as t increases.",
+      "ja": "曲線に矢印をかいて向きを示そう。t が増えるとどちらへ進むか。",
+      "register": "spoken"
+    },
+    {
+      "en": "Sketch the curve x = cos t, y = 2 sin t (0 ≤ t ≤ 2π) and indicate its orientation.",
+      "ja": "曲線 x = cos t, y = 2 sin t（0 ≦ t ≦ 2π）をかき、向きを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの書き言葉 131 件の多くは OpenStax Calculus Volume 3 の曲面・線積分の向き。"
+  ],
+  "related": [
+    "parametric-equations",
+    "parameter"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "向き",
+      "en": "Orientation (space)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "orientation": 30
+    },
+    "written": {
+      "orientation": 131
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

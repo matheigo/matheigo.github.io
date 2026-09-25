@@ -1,0 +1,111 @@
+{
+  "id": "point-of-intersection",
+  "ja": {
+    "term": "交点",
+    "reading": "こうてん",
+    "alt": [
+      "交点の座標"
+    ]
+  },
+  "en": {
+    "term": "point of intersection",
+    "alt": [],
+    "variants": [
+      {
+        "term": "point of intersection",
+        "register": "both",
+        "note": "話し言葉で 43 件（Khan Academy 20・MIT OCW 12・The Organic Chemistry Tutor 8 ほか 3）、書き言葉で 46 件（OpenStax Algebra and Trigonometry 34・OpenStax Calculus 11・MIT の講義ノート 1）。"
+      },
+      {
+        "term": "intersection point",
+        "register": "written",
+        "note": "話し言葉で 12 件（3Blue1Brown 8・MIT OCW 3・Khan Academy 1）、書き言葉で 16 件（OpenStax Calculus 14・OpenStax Algebra and Trigonometry 1・MIT の講義ノート 1）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数II"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "2 つの線（直線・曲線）が交わる点。交点の座標は 2 つの方程式を連立して求める。",
+  "definition_en": "The point where two lines or curves meet; its coordinates come from solving the two equations together.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Set the two equations equal to each other to find the point of intersection.",
+      "ja": "2 つの式を等しいとおいて交点を求める。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the coordinates of the points of intersection of the line y = x + 1 and the circle x² + y² = 5.",
+      "ja": "直線 y = x + 1 と円 x² + y² = 5 の交点の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "複数の交点は points of intersection（intersection points）。"
+  ],
+  "related": [
+    "intersect",
+    "circle-through-the-intersections-of-two-circles"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "intersection point": 12,
+      "point of intersection": 43
+    },
+    "written": {
+      "point of intersection": 46,
+      "intersection point": 16
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

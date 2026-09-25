@@ -1,0 +1,89 @@
+{
+  "id": "cardioid",
+  "ja": {
+    "term": "カージオイド",
+    "reading": "かーじおいど",
+    "alt": [
+      "心臓形"
+    ]
+  },
+  "en": {
+    "term": "cardioid",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "complex-numbers"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "極方程式 r = a(1 + cos θ) などで表される、心臓の形をした曲線。",
+  "definition_en": "The heart-shaped curve with polar equation r = a(1 + cos θ) (or with sin θ).",
+  "latex": "r = a(1 + \\cos\\theta)",
+  "spoken_en": "r equals a times one plus cosine theta",
+  "examples": [
+    {
+      "en": "r = 1 + cos θ is a cardioid — it has a cusp at the origin.",
+      "ja": "r = 1 + cos θ はカージオイド。原点で尖る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Sketch the cardioid r = 2 − 2 sin θ and find the area it encloses.",
+      "ja": "カージオイド r = 2 − 2 sin θ をかき、囲む面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数III ／ 数C の教科書では「カージオイド（心臓形）」と書く。話し言葉の 12 件はすべて Professor Leonard。"
+  ],
+  "related": [
+    "limacon",
+    "rose-curve",
+    "polar-equation",
+    "area-in-polar-coordinates"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "cardioid": 12
+    },
+    "written": {
+      "cardioid": 44
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

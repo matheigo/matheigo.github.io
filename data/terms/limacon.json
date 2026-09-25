@@ -1,0 +1,86 @@
+{
+  "id": "limacon",
+  "ja": {
+    "term": "リマソン",
+    "reading": "りまそん",
+    "alt": [
+      "蝸牛形",
+      "パスカルの蝸牛形"
+    ]
+  },
+  "en": {
+    "term": "limaçon",
+    "alt": [
+      "limacon"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "complex-numbers"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "極方程式 r = a + b cos θ（または sin θ）で表される曲線。a と b の大小で、内側にループができるものやくぼみのあるものになる。a = b のときがカージオイド。",
+  "definition_en": "The curve r = a + b cos θ (or sin θ); depending on a and b it has an inner loop or a dimple, and a = b gives a cardioid.",
+  "latex": "r = a + b\\cos\\theta",
+  "spoken_en": "r equals a plus b cosine theta",
+  "examples": [
+    {
+      "en": "When b is bigger than a, the limaçon has an inner loop.",
+      "ja": "b が a より大きいと、リマソンには内側のループができる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Sketch the limaçon r = 1 + 2 cos θ.",
+      "ja": "リマソン r = 1 + 2 cos θ をかけ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "ç（セディーユ）付きで書く（OpenStax Algebra and Trigonometry）。"
+  ],
+  "related": [
+    "cardioid",
+    "rose-curve",
+    "polar-equation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "limaçon": 29
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "constraint",
+  "ja": {
+    "term": "制約条件",
+    "reading": "せいやくじょうけん",
+    "alt": [
+      "制約"
+    ]
+  },
+  "en": {
+    "term": "constraint",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "大学"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus I",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "最適化問題で、変数が満たさなければならない条件（等式や不等式）。",
+  "definition_en": "A condition (an equation or inequality) that the variables of an optimization problem must satisfy.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The constraint says x plus y is 10, so solve it for y and substitute.",
+      "ja": "制約条件は x + y = 10 なので、y について解いて代入する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the maximum of f(x, y) = xy subject to the constraint x + 2y = 8.",
+      "ja": "制約条件 x + 2y = 8 のもとで f(x, y) = xy の最大値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "subject to the constraint",
+      "ja": "〜という条件のもとで"
+    }
+  ],
+  "pitfalls": [
+    "日本の問題文の「x, y が … を満たすとき」は、英語では subject to the constraint(s) … と書ける。"
+  ],
+  "related": [
+    "objective-function",
+    "feasible-region",
+    "linear-programming",
+    "lagrange-multipliers"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "制約 (数学)",
+      "en": "Constraint (mathematics)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "constraint": 244,
+      "subject to the constraint": 1
+    },
+    "written": {
+      "constraint": 114,
+      "subject to the constraint": 10
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "augmented-matrix",
+  "ja": {
+    "term": "拡大係数行列",
+    "reading": "かくだいけいすうぎょうれつ",
+    "alt": []
+  },
+  "en": {
+    "term": "augmented matrix",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "連立 1 次方程式の係数と右辺の定数を並べてつくった行列。",
+  "definition_en": "The matrix made of the coefficients of a system of linear equations together with the constants on the right side.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Write the augmented matrix, then row-reduce it.",
+      "ja": "拡大係数行列を書いて、行基本変形で簡単にしていく。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the augmented matrix for the system x + 2y − z = 3, 2x − y + z = 1, x + y + z = 6.",
+      "ja": "連立方程式 x + 2y − z = 3, 2x − y + z = 1, x + y + z = 6 の拡大係数行列を書け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校の学習指導要領には含まれないが、米国では Precalculus（OpenStax Algebra and Trigonometry、書き言葉 66 件）で扱う。"
+  ],
+  "related": [
+    "row-operations",
+    "gaussian-elimination",
+    "row-echelon-form",
+    "system-of-three-equations"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "拡大行列",
+      "en": "Augmented matrix"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "augmented matrix": 3
+    },
+    "written": {
+      "augmented matrix": 66
+    },
+    "sources": [
+      "mit-18.06",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  }
+}

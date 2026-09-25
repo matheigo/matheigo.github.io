@@ -1,0 +1,93 @@
+{
+  "id": "orthogonal-projection",
+  "ja": {
+    "term": "正射影",
+    "reading": "せいしゃえい",
+    "alt": [
+      "直交射影"
+    ]
+  },
+  "en": {
+    "term": "projection",
+    "alt": [
+      "orthogonal projection"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors",
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数C",
+      "大学"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "点や図形から直線（平面・部分空間）に垂線を下ろし、その足に移すこと。またその像。",
+  "definition_en": "Mapping a point or figure to the foot of the perpendicular on a line (plane, subspace); also the resulting image.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The projection of b onto a is the closest point to b on the line through a.",
+      "ja": "b の a への正射影は、a を通る直線上で b に一番近い点。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the orthogonal projection of the point (4, 1) onto the line y = x.",
+      "ja": "点 (4, 1) の直線 y = x への正射影を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの projection の話し言葉 265 件のうち 224 件は MIT 18.06（部分空間への射影）。orthogonal projection とはっきり言うのは 0 件で、授業では単に projection と言う。",
+    "ベクトルの正射影は vector-projection を参照。"
+  ],
+  "related": [
+    "vector-projection",
+    "dot-product",
+    "perpendicular-lines"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "projection": 265
+    },
+    "written": {
+      "projection": 86
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

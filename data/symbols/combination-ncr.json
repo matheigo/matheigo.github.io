@@ -1,0 +1,56 @@
+{
+  "id": "combination-ncr",
+  "latex": "{}_n\\mathrm{C}_r = \\binom{n}{r}",
+  "spoken_en": [
+    {
+      "text": "n choose r",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "エヌ シー アール",
+  "name_en": "binomial coefficient (combination)",
+  "name_ja": "組合せの数（ₙCᵣ）",
+  "term_ref": null,
+  "level": {
+    "jp": [
+      "数A",
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "日本の教科書は ₙCᵣ と書き、米国の教科書は C(n, r)、ₙCᵣ、または縦に並べた二項係数 (n over r) の形で書く。読みはどれも n choose r（5 choose 2 のように数を入れて読む）。",
+    "用例コーパスでは n choose * の形（上が n の読み）で数えた。n choose k が多いのは MIT 6.042 が k を使うため。",
+    "二項定理の一般項 ₙCᵣ aⁿ⁻ʳbʳ でも同じ読み方をする。"
+  ],
+  "tts_text": "n choose r",
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "n choose *": 31
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

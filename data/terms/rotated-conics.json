@@ -1,0 +1,86 @@
+{
+  "id": "rotated-conics",
+  "ja": {
+    "term": "座標軸の回転",
+    "reading": "ざひょうじくのかいてん",
+    "alt": [
+      "回転した二次曲線",
+      "回転した円錐曲線"
+    ]
+  },
+  "en": {
+    "term": "rotation of axes",
+    "alt": [
+      "rotated conic"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "xy の項を含む二次曲線 Ax² + Bxy + Cy² + … = 0 を、座標軸を角 θ だけ回転して xy の項のない形にすること。",
+  "definition_en": "Rotating the coordinate axes through an angle θ so that a conic Ax² + Bxy + Cy² + … = 0 loses its xy-term.",
+  "latex": "\\cot 2\\theta = \\frac{A - C}{B}",
+  "spoken_en": "cotangent of two theta equals A minus C over B",
+  "examples": [
+    {
+      "en": "The xy term means the conic is tilted, so rotate the axes to get rid of it.",
+      "ja": "xy の項があるのは二次曲線が傾いているから。軸を回転してそれを消す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use a rotation of axes to eliminate the xy-term in x² + xy + y² = 6, and identify the conic.",
+      "ja": "座標軸の回転を用いて x² + xy + y² = 6 の xy の項を消し、二次曲線の種類を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "軸の回転の公式は日本の高校の学習指導要領には含まれない。書き言葉 14 件のうち 12 件は OpenStax Algebra and Trigonometry。"
+  ],
+  "related": [
+    "conic-section",
+    "rotation",
+    "standard-form-of-a-conic"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "rotation of axes": 14,
+      "rotated conic": 4
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

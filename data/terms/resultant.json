@@ -1,0 +1,80 @@
+{
+  "id": "resultant",
+  "ja": {
+    "term": "合力",
+    "reading": "ごうりょく",
+    "alt": [
+      "和ベクトル"
+    ]
+  },
+  "en": {
+    "term": "resultant",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「合力」は力の和に限るが、英語の resultant は力に限らずベクトルの和一般に使う（resultant force ／ resultant vector）。",
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "2 つ以上の力（ベクトル）を合わせた 1 つの力（ベクトル）。ベクトルの和。",
+  "definition_en": "The single force (vector) equivalent to two or more forces (vectors) acting together: their vector sum.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Add the two force vectors tip to tail, and the resultant goes from the start to the end.",
+      "ja": "2 つの力のベクトルをつないで足すと、合力は始点から終点へのベクトル。",
+      "register": "spoken"
+    },
+    {
+      "en": "Two forces of 30 N and 40 N act on an object at a right angle. Find the magnitude of the resultant force.",
+      "ja": "30 N と 40 N の力が直角に働くとき、合力の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "vector",
+    "work"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "resultant": 23
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

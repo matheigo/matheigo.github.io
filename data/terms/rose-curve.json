@@ -1,0 +1,83 @@
+{
+  "id": "rose-curve",
+  "ja": {
+    "term": "バラ曲線",
+    "reading": "ばらきょくせん",
+    "alt": [
+      "正葉曲線"
+    ]
+  },
+  "en": {
+    "term": "rose curve",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "complex-numbers"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "極方程式 r = a cos nθ（または a sin nθ）で表される花びら形の曲線。n が奇数なら n 枚、偶数なら 2n 枚の花びら。",
+  "definition_en": "The petal-shaped curve r = a cos nθ (or a sin nθ); it has n petals when n is odd and 2n when n is even.",
+  "latex": "r = a\\cos n\\theta",
+  "spoken_en": "r equals a cosine n theta",
+  "examples": [
+    {
+      "en": "With n = 3 you get three petals, but n = 2 gives four.",
+      "ja": "n = 3 なら花びらは 3 枚、n = 2 なら 4 枚。",
+      "register": "spoken"
+    },
+    {
+      "en": "Sketch the rose curve r = 3 sin 2θ and state the number of petals.",
+      "ja": "バラ曲線 r = 3 sin 2θ をかき、花びらの枚数を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは書き言葉 17 件（すべて OpenStax Algebra and Trigonometry）、話し言葉は 0 件。"
+  ],
+  "related": [
+    "cardioid",
+    "limacon",
+    "polar-equation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "バラ曲線",
+      "en": "Rose (mathematics)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "rose curve": 17
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  }
+}

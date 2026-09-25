@@ -1,0 +1,82 @@
+{
+  "id": "objective-function",
+  "ja": {
+    "term": "目的関数",
+    "reading": "もくてきかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "objective function",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "大学"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "最適化問題で、最大値・最小値を求めたい関数。線形計画法では 1 次式。",
+  "definition_en": "In an optimization problem, the function to be maximized or minimized; linear in linear programming.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Plug each corner into the objective function and see which is biggest.",
+      "ja": "各頂点を目的関数に代入して、どれが一番大きいか見る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Maximize the objective function P = 3x + 2y subject to the given constraints.",
+      "ja": "与えられた制約条件のもとで、目的関数 P = 3x + 2y を最大にせよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉の 10 件はすべて MIT 18.02（ラグランジュの未定乗数法）。日本の高校の問題文は「x + y の最大値を求めよ」のように書く。"
+  ],
+  "related": [
+    "linear-programming",
+    "constraint",
+    "feasible-region",
+    "lagrange-multipliers"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "objective function": 10
+    },
+    "written": {
+      "objective function": 5
+    },
+    "sources": [
+      "mit-18.02",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "latus-rectum",
+  "ja": {
+    "term": "通径",
+    "reading": "つうけい",
+    "alt": []
+  },
+  "en": {
+    "term": "latus rectum",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "焦点を通り、軸（放物線の軸、楕円・双曲線の主軸）に垂直な弦。放物線 y² = 4px では長さ 4|p|。",
+  "definition_en": "The chord through a focus perpendicular to the axis (of a parabola, or the major/transverse axis); for y² = 4px its length is 4|p|.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The latus rectum tells you how wide the parabola is at the focus.",
+      "ja": "通径は、焦点のところで放物線がどれだけ開いているかを表す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the focus, directrix, and endpoints of the latus rectum of the parabola y² = 12x.",
+      "ja": "放物線 y² = 12x の焦点・準線・通径の両端を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは書き言葉 32 件すべてが OpenStax Algebra and Trigonometry。話し言葉は 0 件。"
+  ],
+  "related": [
+    "focus",
+    "directrix",
+    "conic-section"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "latus rectum": 32
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  }
+}

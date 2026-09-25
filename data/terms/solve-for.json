@@ -1,0 +1,105 @@
+{
+  "id": "solve-for",
+  "ja": {
+    "term": "〜について解く",
+    "reading": "についてとく",
+    "alt": [
+      "θ を求める"
+    ]
+  },
+  "en": {
+    "term": "solve for",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "数I",
+      "数II"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "式を、指定した文字 = （その文字を含まない式）の形に変形する。方程式を満たすその文字の値を求めることにも言う。",
+  "definition_en": "To rearrange an equation into the form (chosen variable) = (expression without it), or to find the values of that variable that satisfy the equation.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Solve for y: subtract 2x and divide by 3.",
+      "ja": "y について解こう。2x を引いて 3 で割る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve for θ: 2 cos θ + 1 = 0, 0 ≤ θ < 2π.",
+      "ja": "0 ≦ θ < 2π のとき、2 cos θ + 1 = 0 を満たす θ を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "読みの「〜」は漢字の読みに含めない（「x について解く」の x の部分）。"
+  ],
+  "related": [
+    "solve",
+    "solution"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "solve for": 761
+    },
+    "written": {
+      "solve for": 548
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

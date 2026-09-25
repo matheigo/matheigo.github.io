@@ -1,0 +1,85 @@
+{
+  "id": "vector-projection",
+  "ja": {
+    "term": "正射影ベクトル",
+    "reading": "せいしゃえいべくとる",
+    "alt": [
+      "ベクトル射影"
+    ]
+  },
+  "en": {
+    "term": "vector projection",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "ベクトル a を、ベクトル b の方向に正射影してできるベクトル。((a·b)/|b|²) b。",
+  "definition_en": "The vector obtained by projecting a onto the direction of b: ((a·b)/|b|²) b.",
+  "latex": "\\operatorname{proj}_{\\vec{b}}\\vec{a} = \\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{b}|^2}\\,\\vec{b}",
+  "spoken_en": "the projection of a onto b equals a dot b over the magnitude of b squared, times b",
+  "examples": [
+    {
+      "en": "The vector projection is the shadow of a on the line of b.",
+      "ja": "正射影ベクトルは、a を b の方向の直線に落とした影。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the vector projection of a = (3, 4) onto b = (1, 0).",
+      "ja": "a = (3, 4) の b = (1, 0) への正射影ベクトルを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Calculus Volume 3 は proj_b a と書き、長さだけのもの（符号つき）を scalar projection（comp_b a）と呼び分ける。",
+    "用例コーパスでは書き言葉 9 件（OpenStax Calculus Volume 3）だけ。"
+  ],
+  "related": [
+    "orthogonal-projection",
+    "dot-product",
+    "vector"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "vector projection": 9
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 vector projection（本文 9 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

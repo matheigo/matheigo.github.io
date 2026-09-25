@@ -1,0 +1,89 @@
+{
+  "id": "inductive-step",
+  "ja": {
+    "term": "帰納段階",
+    "reading": "きのうだんかい",
+    "alt": [
+      "n = k + 1 のとき"
+    ]
+  },
+  "en": {
+    "term": "inductive step",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「帰納段階」は日本の教科書に無い、本プロジェクトの訳語。日本の答案では「n = k のとき成り立つと仮定すると、n = k + 1 のとき …」と書き、段階に名前をつけない。",
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "数学的帰納法で、n = k のとき成り立つと仮定して、n = k + 1 のときも成り立つことを示す段。",
+  "definition_en": "The part of a proof by induction that assumes the statement for n = k and proves it for n = k + 1.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For the inductive step, assume it's true for k and show it's true for k plus 1.",
+      "ja": "帰納段階では、k で成り立つと仮定して、k + 1 でも成り立つことを示す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Complete the inductive step: assuming 1 + 2 + … + k = k(k + 1)/2, prove the formula for n = k + 1.",
+      "ja": "1 + 2 + … + k = k(k + 1)/2 を仮定して、n = k + 1 のときも公式が成り立つことを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは MIT 6.042（講義 34 件・講義ノート 40 件）だけ。OpenStax 6 冊にも台帳の Wikipedia にもない。"
+  ],
+  "related": [
+    "base-case",
+    "inductive-hypothesis",
+    "proof-by-induction"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語は固有の用語（inductive step）だが、OpenStax（6 冊）にも台帳の Wikipedia にもなく、用例コーパスは MIT 6.042 だけ（base-case と同じ）。",
+      "raised": "2026-09-24"
+    }
+  ],
+  "evidence": {
+    "spoken": {
+      "inductive step": 34
+    },
+    "written": {
+      "inductive step": 40
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-24"
+  }
+}
