@@ -27,14 +27,13 @@ import { ROOT, loadAll, localDate, type Collection } from "../lib/load.js";
 import {
   balance,
   candidatesOf,
-  cedSections,
-  cedText,
   contexts,
   countEntry,
   countedAs,
   dedupe,
   normalize,
   referenceHits,
+  referred as anyReference,
   type BySource,
   type ContextHit,
   type CorpusDoc,
@@ -43,6 +42,7 @@ import {
   type ReferenceHits,
 } from "./lib.js";
 import type { ManifestEntry } from "./fetch.js";
+import { loadReferences } from "./references.js";
 
 const CORPUS = path.join(ROOT, "corpus");
 const WITH_CONTEXTS = process.argv.includes("--contexts");
@@ -60,7 +60,7 @@ export interface EntryCounts {
   sources: string[];
   /** True when every spoken hit came from auto captions (weak evidence for symbols). */
   autoOnly: boolean;
-  /** terms: what the CED and OpenStax call it, for the ③ fallback (lib.ts settleUndecided). */
+  /** terms: what the CEDs, OpenStax, Nicholson and Levin call it, for the ③ fallback (lib.ts settleUndecided). */
   reference?: ReferenceHits;
 }
 
@@ -72,9 +72,6 @@ export interface CountsFile {
   dedupe?: Record<string, DedupeStats>;
   entries: EntryCounts[];
 }
-
-/** The AP Calculus CED, fetched by `python3 scripts/ledger/refetch.py ced` (corpus/ref/, gitignored). */
-const CED = path.join(CORPUS, "ref", "ap-calculus-ab-bc-ced.txt");
 
 /** OpenStax section titles ("OpenStax Calculus Volume 1 - Areas between Curves" -> "Areas between Curves"). */
 function openstaxTitles(): string[] {
@@ -148,9 +145,9 @@ function main() {
   const entries: EntryCounts[] = [];
   const hits: ContextHit[] = [];
 
-  // References for the ③ fallback: the CED and OpenStax (body and section titles).
-  const ced = fs.existsSync(CED) ? cedSections(fs.readFileSync(CED, "utf8")).map(([n, t]) => [n, cedText(t)] as [string, string]) : [];
-  if (ced.length === 0) console.log("  CED text missing (python3 scripts/ledger/refetch.py ced): the ③ fallback will only see OpenStax");
+  // References for the ③ fallback: the CEDs, OpenStax (body and section titles), Nicholson and Levin.
+  const refs = loadReferences();
+  if (refs.missing.length) console.log(`  references missing (python3 scripts/ledger/refetch.py refs): ${refs.missing.join(", ")}`);
   const openstax = docs.filter((d) => d.id.startsWith("openstax-")).map((d) => d.text);
   const titles = openstaxTitles();
 
@@ -159,8 +156,8 @@ function main() {
       const record = data as unknown as Record<string, unknown>;
       const candidates = candidatesOf(collection, record);
       const t = countEntry(docs, collection, candidates, headwordOf(collection, record));
-      const reference = collection === "terms" ? referenceHits(candidates, ced, openstax, titles) : undefined;
-      const referred = reference && (Object.keys(reference.ced).length || Object.keys(reference.openstax).length || Object.keys(reference.openstaxTitles).length);
+      const reference = collection === "terms" ? referenceHits(candidates, refs.ced, openstax, titles, refs) : undefined;
+      const referred = reference !== undefined && anyReference(reference);
       if (t.sources.length === 0 && !referred) continue;
       if (WITH_CONTEXTS) {
         for (const candidate of candidates) {

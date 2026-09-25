@@ -29,8 +29,9 @@
  * (lib.ts settleUndecided, DECISIONS Phase 2 規則の修正):
  *   - mapping near / none and fewer than 10 hits in each register: English has
  *     no set way to say it (corpus-no-fixed-expression). Not for the human
- *   - otherwise the headword is what the CED, or failing that OpenStax, calls
- *     it (corpus-reference-fallback). No register is claimed
+ *   - otherwise the headword is what the CEDs (AP Calculus / AP Statistics),
+ *     failing that OpenStax, failing that Nicholson / Levin call it
+ *     (corpus-reference-fallback). No register is claimed
  *
  * Only two things reach the human (the user's call on 2026-09-11):
  *   - undecided entries that neither reference names (corpus-undecided),
@@ -178,9 +179,10 @@ const cells = (...xs: string[]) => `| ${xs.map((x) => x.replace(/\|/g, "\\|")).j
 function describeSettled(s: Settled): string {
   if (s.kind === "no-fixed-expression") return `英語に決まった言い方がない（話 ${s.spoken} 件 ／ 書 ${s.written} 件）`;
   if (s.kind === "reference") {
-    return s.by === "ced"
-      ? `CED の呼び方 ${s.head}（${s.where.map((w) => (/^\d/.test(w) ? `topic ${w}` : w)).join("・")}）`
-      : `OpenStax の呼び方 ${s.head}（${s.where.slice(0, 3).join("・")}）`;
+    if (s.by === "ced") return `CED の呼び方 ${s.head}（${s.where.map((w) => (/^\d/.test(w) ? `topic ${w}` : w)).join("・")}）`;
+    if (s.by === "ced-stats") return `AP Statistics の CED の呼び方 ${s.head}（${s.where.map((w) => (/^\d/.test(w) ? `topic ${w}` : w)).join("・")}）`;
+    if (s.by === "openstax") return `OpenStax の呼び方 ${s.head}（${s.where.slice(0, 3).join("・")}）`;
+    return `${s.by === "levin" ? "Levin" : "Nicholson"} の呼び方 ${s.head}（${s.where.slice(0, 3).join("・")}）`;
   }
   return "判断不能";
 }
@@ -337,7 +339,7 @@ function main() {
         code: "corpus-undecided",
         note:
           c.collection === "terms"
-            ? `コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`
+            ? `コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`
             : `コーパスで決まらない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`,
         raised: TODAY,
       } as { code: string });
@@ -438,7 +440,8 @@ function main() {
     "## ③ のうち規則で決着したもの",
     "",
     "話・書とも判断不能のうち、mapping が near ／ none で全候補の合計が話・書とも 10 件未満のものは「英語に決まった言い方がない」",
-    "（corpus-no-fixed-expression）。それ以外は見出しを CED の呼び方、無ければ OpenStax の呼び方（本文か節の名前）で決める",
+    "（corpus-no-fixed-expression）。それ以外は見出しを CED（AP Calculus ／ AP Statistics）の呼び方、無ければ OpenStax の呼び方（本文か節の名前）、",
+    "無ければ Nicholson ／ Levin の呼び方で決める",
     "（corpus-reference-fallback）。どちらも register は主張せず、人間レビューに回さない。",
     "",
     noFixed.length + byReference.length ? "| 項目 | 決着 | 話し言葉 | 書き言葉 |\n|---|---|---|---|" : "なし。",
@@ -473,7 +476,7 @@ function main() {
     "",
     "週 30 分で見るのはここだけ。",
     "",
-    "## ③ コーパスで決まらず、CED にも OpenStax にも呼び方がないもの",
+    "## ③ コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がないもの",
     "",
     undecided.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
     ...undecided.map((l) => cells(l.key, describe(l.spoken), describe(l.written))),

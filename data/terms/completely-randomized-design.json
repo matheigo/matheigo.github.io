@@ -42,7 +42,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパス・OpenStax Introductory Statistics とも 0 件。"
+    "用例コーパス・OpenStax Introductory Statistics とも 0 件。AP Statistics の CED は topic 1.13 でこの名前を出す。"
   ],
   "related": [
     "blocking",
@@ -51,30 +51,28 @@
   ],
   "sources": [
     {
-      "type": "editorial"
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 1.13"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": null,
     "human": null
   },
   "updated": "2026-09-25",
-  "flags": [
-    {
-      "code": "draft-reason",
-      "note": "英語は AP Statistics の固有の用語（completely randomized design）だが、OpenStax（6 冊）にも台帳の Wikipedia にもなく、用例コーパスでもほとんど出てこない。",
-      "raised": "2026-09-25"
-    },
-    {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
-      "raised": "2026-09-25"
-    }
-  ],
   "evidence": {
     "sources": [],
     "counted": "2026-09-25"
-  }
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは AP Statistics の CED の呼び方 completely randomized design（topic 1.13）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
 }

@@ -1,6 +1,9 @@
+import fs from "node:fs";
+import path from "node:path";
 import { describe, expect, it } from "vitest";
 import {
   balance,
+  bookSections,
   candidatesOf,
   cedSections,
   cnxmlToText,
@@ -16,6 +19,7 @@ import {
   inflections,
   mergeCandidates,
   normalize,
+  NOT_PLURAL_S,
   referenceHits,
   sameWording,
   sampleTermContexts,
@@ -139,6 +143,44 @@ describe("short stems", () => {
   it("does not fold a three-letter word down to two letters", () => {
     expect(countTerm("the pivots d one up to dn. the limit is dne.", "DNE")).toBe(1);
     expect(countTerm("let us use it. we used it.", "use")).toBe(2);
+  });
+});
+
+describe("a final s that is not a plural, and y / ies / ied", () => {
+  it("does not fold a proper name into another word (Bayes is not bays)", () => {
+    expect(inflections("bayes")).not.toContain("bay");
+    expect(sameWording("Bayes theorem", "bay theorem")).toBe(false);
+    expect(countTerm(normalize("the bay and the bays"), "Bayes")).toBe(0);
+    expect(countTerm(normalize("by Bayes rule"), "Bayes rule")).toBe(1);
+  });
+
+  it("keeps the s of -us, -is and a listed noun, and still takes -es / -ed", () => {
+    expect(inflections("bias")).toEqual(expect.arrayContaining(["bias", "biases", "biased"]));
+    expect(inflections("bias")).not.toContain("bia");
+    expect(inflections("census")).toContain("censuses");
+    expect(inflections("focus")).toEqual(expect.arrayContaining(["focuses", "focused", "foci"]));
+  });
+
+  it("folds vary / varies / varied / varying and probability / probabilities", () => {
+    expect(inflections("vary")).toEqual(expect.arrayContaining(["vary", "varies", "varied", "varying"]));
+    expect(inflections("varies")).toContain("vary");
+    expect(sameWording("probabilities", "probability")).toBe(true);
+    expect(inflections("survey")).toEqual(expect.arrayContaining(["surveys", "surveyed", "surveying"]));
+  });
+
+  it("lists every capitalized name ending in s that an entry uses", () => {
+    const words = new Set<string>();
+    const root = path.join(__dirname, "..", "data");
+    for (const c of ["terms", "symbols", "phrases"]) {
+      for (const f of fs.readdirSync(path.join(root, c))) {
+        const d = JSON.parse(fs.readFileSync(path.join(root, c, f), "utf8"));
+        const texts = typeof d.en === "string" ? [d.en] : [d.en?.term, ...(d.en?.alt ?? []), ...(d.en?.variants ?? []).map((v: { term: string }) => v.term)];
+        for (const t of texts) for (const w of String(t ?? "").match(/\b[A-Z][a-z]+s\b(?!')/g) ?? []) words.add(w);
+      }
+    }
+    // a capitalized word ending in s that is a name and not a plural (Apollonius, Bayes)
+    const names = [...words].filter((w) => !["Does", "Is", "Has", "This", "Its"].includes(w));
+    for (const w of names) expect(NOT_PLURAL_S.has(w.toLowerCase()) || /(?:ss|us|is)$/.test(w.toLowerCase()), w).toBe(true);
   });
 });
 
@@ -372,6 +414,33 @@ describe("settleUndecided", () => {
     expect(s).toEqual({ kind: "reference", by: "openstax", head: order[1], where: ["Integrating Using Long Division"] });
   });
 
+  it("reads the AP Statistics CED as a CED, before OpenStax", () => {
+    const s = settleUndecided(
+      { mapping: "exact" },
+      { spoken: 9, written: 0 },
+      ref({ cedStats: { [order[1]]: { "1.13": 2 } }, openstax: { [order[0]]: 5 } }),
+      order,
+    );
+    expect(s).toEqual({ kind: "reference", by: "ced-stats", head: order[1], where: ["1.13"] });
+  });
+
+  it("counts an AP Statistics CED wording as a known English name (not no-fixed-expression)", () => {
+    const s = settleUndecided({ mapping: "near" }, { spoken: 0, written: 0 }, ref({ cedStats: { [order[0]]: { "1.12": 1 } } }), order);
+    expect(s.kind).toBe("reference");
+  });
+
+  it("falls back to Nicholson / Levin after OpenStax, with their sections", () => {
+    const books = ref({ nicholson: { [order[0]]: { "8.11 Principal Components": 3 } }, levin: { [order[1]]: { "2.4 Euler Trails": 5, "2.3 Planar Graphs": 1 } } });
+    expect(settleUndecided({ mapping: "exact" }, { spoken: 0, written: 0 }, books, order)).toEqual({
+      kind: "reference",
+      by: "levin",
+      head: order[1],
+      where: ["2.4 Euler Trails", "2.3 Planar Graphs"],
+    });
+    const withOpenStax = { ...books, openstax: { [order[0]]: 1 } };
+    expect(settleUndecided({ mapping: "exact" }, { spoken: 0, written: 0 }, withOpenStax, order)).toMatchObject({ by: "openstax" });
+  });
+
   it("stays undecided when neither reference names it", () => {
     expect(settleUndecided({ mapping: "exact" }, { spoken: 0, written: 0 }, ref({}), order)).toEqual({ kind: "undecided" });
   });
@@ -382,6 +451,30 @@ describe("cedSections / referenceHits", () => {
 
   it("splits the CED into front, unit openers, topics and exam", () => {
     expect(cedSections(ced).map(([n]) => n)).toEqual(["front", "unit1", "1.1", "1.2", "exam"]);
+  });
+
+  it("skips a sample topic page before the Unit 1 opener and finds an exam that opens a page", () => {
+    const stats = ["how to read a unit", "TOPIC 1.1", "sample page", "UNIT 1", "Data", "TOPIC 1.1", "blocking", "\fExam Overview", "p-value"].join("\n");
+    const sections = cedSections(stats);
+    expect(sections.map(([n]) => n)).toEqual(["front", "unit1", "1.1", "exam"]);
+    expect(sections[0][1]).toContain("sample page");
+  });
+
+  it("splits a book at its body headings, checked against the running heads", () => {
+    const book = [
+      "Contents\n1.1 Walks . . . . 3\n2.1 Trees . . . . 9",
+      "1.1\n\nWalks\n\nan Euler trail",
+      "2\nmore on walks",
+      "1.1. Walks\nstill walks\n\n2.1 Trees\nA tree is",
+      "4\ntrees",
+      "2.1. Trees\na spanning tree",
+      "Selected Solutions\na tree",
+    ].join("\f");
+    const sections = bookSections(book);
+    expect(sections.map(([n]) => n)).toEqual(["1.1 Walks", "2.1 Trees"]);
+    expect(sections[0][1]).toContain("still walks");
+    expect(sections[1][1]).not.toContain("Selected Solutions");
+    expect(sections[1][1].startsWith("2.1 Trees")).toBe(true);
   });
 
   it("counts candidates per CED section, in the OpenStax body and in section titles", () => {

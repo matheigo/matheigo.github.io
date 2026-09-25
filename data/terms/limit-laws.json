@@ -17,11 +17,11 @@
       {
         "term": "limit properties",
         "register": "spoken",
-        "note": "Khan Academy の言い方。話し言葉で 14 件（すべて Khan Academy）、書き言葉で 1 件（すべて OpenStax Calculus）。"
+        "note": "Khan Academy に多い言い方。話し言葉で 17 件（Khan Academy 14・NancyPi 2・MIT OCW 1）、書き言葉で 1 件（すべて OpenStax Calculus）。"
       }
     ],
     "uk": null,
-    "register": "written"
+    "register": "both"
   },
   "pos": "noun",
   "mapping": "exact",
@@ -81,27 +81,30 @@
   ],
   "confidence": "likely",
   "reviewed": {
-    "machine": "2026-09-24",
+    "machine": "2026-09-25",
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "limit properties": 14,
-      "properties of limits": 5
+      "limit properties": 17,
+      "properties of limits": 10
     },
     "written": {
-      "properties of limits": 15,
+      "properties of limits": 16,
       "limit laws": 66,
       "limit properties": 1
     },
     "sources": [
       "khan-ap-calc",
+      "mit-18.01",
       "openstax-calculus",
       "openstax-precalculus",
-      "yt:organicchem"
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
     ],
-    "counted": "2026-09-24"
+    "counted": "2026-09-25"
   }
 }

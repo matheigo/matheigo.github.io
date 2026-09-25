@@ -22,7 +22,7 @@ export const PROBLEM_FLAGS = new Set([
 
 export const RECORD_FLAGS = new Set([
   "corpus-human-settled", // the human settled the headword of a ③
-  "corpus-reference-fallback", // a ③ whose headword is what the CED / OpenStax calls it
+  "corpus-reference-fallback", // a ③ whose headword is what a reference (CED, OpenStax, Nicholson, Levin) calls it
   "corpus-no-fixed-expression", // a ③ for which English has no set way to say it
 ]);
 

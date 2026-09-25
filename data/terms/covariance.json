@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "米国の高校・初年次統計（OpenStax Introductory Statistics・Khan Academy の AP Statistics・AP Statistics の CED）には出てこない（どれも 0 件）。",
   "domains": [
     "statistics"
   ],
@@ -43,7 +43,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスには 0 件（OpenStax Introductory Statistics にも Khan Academy の AP Statistics の講義にも出てこない）。"
+    "線形代数の Nicholson（8.11 主成分分析の応用）には出てくる（3 件）。規則だけならこの呼び方で見出しが決まる。"
   ],
   "related": [
     "correlation-coefficient",
@@ -70,8 +70,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 2 統計・ベクトルの単元 2 の前の修正」の、残った ③ を人間が決めた行）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

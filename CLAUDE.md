@@ -16,7 +16,7 @@
 - pnpm corpus:count … コーパスの重複（同じファイル・同じ文）を除いて候補表現を数える → corpus/counts.json
 - pnpm corpus:probe … 書く前に候補表現を数える。`-- --decide --file x.txt` で 1 ブロック 1 エントリの判定まで出す
 - pnpm corpus:decide … 頻度比で register を決め、`-- --write` で evidence と flags を書き戻す（`--units <curriculum id,…>` で単元に絞る）
-- python3 scripts/ledger/refetch.py … 台帳の langlink と AP Calculus の CED を一括取得（キャッシュ・タイムアウト・リトライ上限つき）
+- python3 scripts/ledger/refetch.py … 台帳の langlink と参照（AP Calculus ／ AP Statistics の CED・Nicholson・Levin。docs/SOURCES.md）を一括取得（キャッシュ・タイムアウト・リトライ上限つき）
 - pnpm build      … validate → search-index → サイト → dist/data の書き出しまで通す
 - pnpm export     … JSON/CSV/Quizlet TSV を dist/data に出力
 - pnpm test       … スクリプトと検索のユニットテスト
@@ -35,7 +35,7 @@
    判定は 3 通り: ①3:1 以上か、首位だけが 10 件以上で主見出し ②各 10 件以上なら併記（頻度順で `en.variants` へ）③10 件未満は判断不能。
    件数の最も多いソースを抜くと別の言い方が首位になる ① は ② に下げる（1 ソース頼み。抜いて ③ になるだけなら ① のまま記録）。
    terms は語形変化をまとめ、「…」は 1〜3 語の空き。話・書とも ③ の語は、mapping near/none で全候補が話・書とも 10 件未満なら
-   「英語に決まった言い方がない」、それ以外は CED → OpenStax の呼び方を見出しにする（どちらも register は主張しない）。
+   「英語に決まった言い方がない」、それ以外は CED（AP Calculus ／ AP Statistics）→ OpenStax → Nicholson ／ Levin の呼び方を見出しにする（どちらも register は主張しない）。
    **人間レビューに回るのは、そのどれにも当たらない ③ と、コーパスの結論がエントリの register と食い違うものだけ。**
    全 2,000 語を人間が見る前提は廃止された。
 10. コーパス本文はリポジトリに入れない（`corpus/` は .gitignore）。残すのは出典 ID・件数・日付だけ。
@@ -54,5 +54,5 @@ corpus/        取得した書き起こし。gitignore。本文はコミット�
 src/           Astro サイト。src/lib/data.ts がビルド時にデータを読む
 ledger/        Phase 1 の見出し語台帳（CSV）
 audits/        Phase 5 の別セッション監査の記録
-docs/          PLAN.md（仕様） STYLE.md（編集方針） DECISIONS.md（仕様外の判断）
+docs/          PLAN.md（仕様） STYLE.md（編集方針） DECISIONS.md（仕様外の判断） SOURCES.md（参照）
 ```

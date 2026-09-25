@@ -17,11 +17,10 @@
       {
         "term": "properties of integrals",
         "register": "both",
-        "note": "話し言葉ではこちら（すべて MIT OCW）。話し言葉で 5 件（すべて MIT OCW）、書き言葉で 2 件（すべて OpenStax Calculus）。"
+        "note": "話し言葉ではこちら（すべて MIT OCW）。話し言葉で 6 件（すべて MIT OCW）、書き言葉で 3 件（OpenStax Calculus 2・MIT の講義ノート 1）。"
       }
     ],
-    "uk": null,
-    "register": "written"
+    "uk": null
   },
   "pos": "noun",
   "mapping": "exact",
@@ -87,23 +86,31 @@
   ],
   "confidence": "likely",
   "reviewed": {
-    "machine": "2026-09-24",
+    "machine": "2026-09-25",
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "properties of integrals": 5
+      "properties of integrals": 6
     },
     "written": {
       "properties of the definite integral": 8,
-      "properties of integrals": 2
+      "properties of integrals": 3
     },
     "sources": [
       "mit-18.01",
+      "mit-notes",
       "openstax-calculus"
     ],
-    "counted": "2026-09-24"
-  }
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 6 件（10 未満） ／ 書: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満）。見出しは OpenStax の呼び方 properties of the definite integral（本文 8 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
 }

@@ -6,18 +6,18 @@
     "alt": []
   },
   "en": {
-    "term": "Euler tour",
+    "term": "Euler trail",
     "alt": [
+      "Euler circuit",
+      "Euler path",
       "Euler walk",
-      "Eulerian path",
-      "Euler path"
+      "Euler tour"
     ],
-    "uk": null,
-    "register": "both"
+    "uk": null
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本語の「一筆書き」は図形を紙から筆を離さずにかくことで、始点に戻るかどうかを問わない。英語は始点に戻る Euler tour（Euler circuit）と戻らない Euler walk（Euler path）を分けて呼ぶ。用例コーパスでは Euler tour（話し言葉 23 件、すべて MIT OCW 6.042）が多い。",
+  "mapping_note": "日本語の「一筆書き」は始点に戻らない場合も戻る場合も含む。見出しは Levin の呼び方で、すべての辺をちょうど 1 回ずつ通る道が Euler trail（Euler path・Euler walk とも。本文 51 件）、そのうち始点に戻るものが Euler circuit（22 件）。用例コーパスは MIT OCW 6.042 の Euler tour（話し言葉 23 件・講義ノート 14 件）だけで、6.042 は始点に戻るものをこう呼ぶ。",
   "domains": [
     "discrete"
   ],
@@ -30,7 +30,7 @@
     ]
   },
   "definition_ja": "グラフのすべての辺をちょうど 1 回ずつ通る道。始点と終点が一致するものと、しないものがある。",
-  "definition_en": "A walk through a graph that uses every edge exactly once, either returning to its start or not.",
+  "definition_en": "A walk through a graph that uses every edge exactly once (an Euler trail); one that also ends where it started is an Euler circuit.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -40,20 +40,28 @@
       "register": "spoken"
     },
     {
-      "en": "Determine whether the graph has an Euler tour, and if so, find one.",
-      "ja": "グラフに一筆書き（Euler tour）があるか判定し、あれば 1 つ求めよ。",
+      "en": "Determine whether the graph has an Euler trail. If it does, is the trail an Euler circuit?",
+      "ja": "グラフが一筆書きできるか判定せよ。できるなら、始点に戻る一筆書きか。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "ケーニヒスベルクの橋の問題（Seven Bridges of Königsberg）が起源。"
+    "ケーニヒスベルクの橋の問題（Seven Bridges of Königsberg）が起源。",
+    "教科書によっては Euler path を始点に戻らないものに限り、Euler circuit と対にする。Levin の Euler trail は始点に戻るものも含む。",
+    "MIT OCW 6.042 の Euler tour は始点に戻るもの（Euler circuit）の意味。"
   ],
   "related": [
     "vertex-graph",
     "tree"
   ],
   "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "2.4 Euler Trails and Circuits"
+    },
     {
       "type": "wikipedia-langlink",
       "ja": "一筆書き",
@@ -72,8 +80,8 @@
       "Euler tour": 23
     },
     "written": {
-      "Euler tour": 14,
-      "Euler walk": 5
+      "Euler walk": 5,
+      "Euler tour": 14
     },
     "sources": [
       "mit-6.042",

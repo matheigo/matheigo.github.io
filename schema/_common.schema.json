@@ -99,7 +99,7 @@
     "sources": { "type": "array", "items": { "$ref": "#/$defs/source" } },
     "flags": {
       "type": "array",
-      "description": "Machine or crosscheck findings that block promotion to 'verified'.",
+      "description": "Machine, crosscheck and corpus findings, in two kinds (scripts/lib/flags.ts). A problem flag blocks promotion to 'verified'. A record flag records how a question about the entry was settled and does not block it.",
       "items": {
         "type": "object",
         "properties": {

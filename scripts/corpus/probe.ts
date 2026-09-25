@@ -38,8 +38,6 @@ import path from "node:path";
 import { ROOT } from "../lib/load.js";
 import {
   balance,
-  cedSections,
-  cedText,
   countEntry,
   flatten,
   referenceHits,
@@ -56,6 +54,7 @@ import {
   type Verdict,
 } from "./lib.js";
 import type { ManifestEntry } from "./fetch.js";
+import { loadReferences, REFERENCE_NAMES } from "./references.js";
 
 const CORPUS = path.join(ROOT, "corpus");
 const MANIFEST = path.join(CORPUS, "manifest.json");
@@ -114,8 +113,6 @@ function verdict(v: Verdict): string {
   return `③ ${v.reason} (${v.total.toFixed(1)})`;
 }
 
-const CED = path.join(CORPUS, "ref", "ap-calculus-ab-bc-ced.txt");
-
 /** Source families as the variants' notes name them (DECISIONS, Phase 2 修正: counts per source, mechanically). */
 const FAMILY_NAMES: [RegExp, string][] = [
   [/^mit-notes$/, "MIT の講義ノート"],
@@ -161,7 +158,7 @@ function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
   const words: Record<string, number> = {};
   for (const r of balance(docs).rows) words[r.source] = r.words;
   const weights = sourceWeights(words);
-  const ced = fs.existsSync(CED) ? cedSections(fs.readFileSync(CED, "utf8")).map(([n, t]) => [n, cedText(t)] as [string, string]) : [];
+  const refs = loadReferences();
   const openstax = docs.filter((d) => d.id.startsWith("openstax-")).map((d) => d.text);
   const manifest = JSON.parse(fs.readFileSync(MANIFEST, "utf8")) as ManifestEntry[];
   const titles = manifest.filter((m) => m.id.startsWith("openstax-")).map((m) => m.title.replace(/^.*? - /, ""));
@@ -185,12 +182,15 @@ function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
     for (const c of new Set([...Object.keys(t.spoken), ...Object.keys(t.written)])) {
       console.log(`    = ${c}: ${breakdown("話し言葉", t.spoken[c])}、${breakdown("書き言葉", t.written[c])}。`);
     }
-    const ref = referenceHits(block, ced, openstax, titles);
-    const cedLine = Object.entries(ref.ced).map(([c, by]) => `${c} [${Object.entries(by).map(([k, n]) => `${k}×${n}`).join(" ")}]`);
+    const ref = referenceHits(block, refs.ced, openstax, titles, refs);
+    const sectioned = (by: Record<string, Record<string, number>> | undefined) =>
+      Object.entries(by ?? {}).map(([c, at]) => `${c} [${Object.entries(at).slice(0, 4).map(([k, n]) => `${k}×${n}`).join(" ")}${Object.keys(at).length > 4 ? " …" : ""}]`);
     const osLine = block
       .filter((c) => ref.openstax[c] || ref.openstaxTitles[c])
       .map((c) => `${c} ${ref.openstax[c] ?? 0}${ref.openstaxTitles[c] ? ` {${ref.openstaxTitles[c].slice(0, 2).join(" | ")}}` : ""}`);
-    console.log(`  CED ${cedLine.join("; ") || "—"}   OpenStax ${osLine.join("; ") || "—"}`);
+    console.log(`  CED ${sectioned(ref.ced).join("; ") || "—"}   CED-stats ${sectioned(ref.cedStats).join("; ") || "—"}`);
+    console.log(`  OpenStax ${osLine.join("; ") || "—"}`);
+    console.log(`  Nicholson ${sectioned(ref.nicholson).join("; ") || "—"}   Levin ${sectioned(ref.levin).join("; ") || "—"}`);
     if (verdicts.every((v) => v.kind === "undecided")) {
       const total = (by: Record<string, Record<string, number>>) => Object.values(flatten(by)).reduce((a, b) => a + b, 0);
       const ja = raw.find((l) => l.startsWith("@ja"))?.replace(/^@ja\s+/, "");
@@ -199,7 +199,7 @@ function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
         s.kind === "no-fixed-expression"
           ? "英語に決まった言い方がない"
           : s.kind === "reference"
-            ? `${s.by === "ced" ? "CED" : "OpenStax"} の呼び方 ${s.head} (${s.where.slice(0, 3).join(", ")})`
+            ? `${REFERENCE_NAMES[s.by]} の呼び方 ${s.head} (${s.where.slice(0, 3).join(", ")})`
             : `③ のまま${mapping ? "" : "（@mapping なし）"}`;
       console.log(`  ③ -> ${how}`);
     }

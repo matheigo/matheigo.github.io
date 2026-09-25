@@ -14,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "OpenStax Introductory Statistics と AP Statistics は p 値で判断する（OpenStax Introductory Statistics は p-value 475 件・rejection region 0 件、AP Statistics の CED は p-value 100 件・rejection region 0 件）。",
   "domains": [
     "statistics"
   ],
@@ -45,7 +45,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは rejection region が話し言葉 6 件（The Organic Chemistry Tutor 4 ほか）だけで、OpenStax Introductory Statistics には出てこない。OpenStax と Khan Academy は p 値と有意水準を比べる方法で判断する。"
+    "用例コーパスでは rejection region が話し言葉 6 件（The Organic Chemistry Tutor 4・Professor Leonard 2）だけ。"
   ],
   "related": [
     "hypothesis-testing",
@@ -76,8 +76,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 6 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 2 統計・ベクトルの単元 2 の前の修正」の、残った ③ を人間が決めた行）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

@@ -14,8 +14,8 @@ PLAN.md §6 をそのまま作業用に移したもの。**生成時に毎バッ
    ③ 総件数 10 件未満 → 判断不能。話・書とも ③ のときは次の順に決める（register は主張しない）。
      ・mapping near ／ none で全候補が話・書とも 10 件未満 → 「英語に決まった言い方がない」（`corpus-no-fixed-expression`）。
        mapping_note にそう書く。英語の名前をそのまま見出しにした語（LIATE）は除く。
-     ・それ以外 → 見出しは CED の呼び方、無ければ OpenStax の呼び方（`corpus-reference-fallback`）。
-     ・どちらにも無い → `corpus-undecided` で人間レビューへ。自分で判断して埋めない。
+     ・それ以外 → 見出しは CED（AP Calculus ／ AP Statistics）→ OpenStax → Nicholson ／ Levin の順に最初に見つかった呼び方（`corpus-reference-fallback`。docs/SOURCES.md）。
+     ・どれにも無い → `corpus-undecided` で人間レビューへ。自分で判断して埋めない。
 2. 米国優先。英国異形は `en.uk` に入れる（math/maths、negative three / minus three、parentheses / brackets、trig / trigonometry）。
 3. 直訳禁止リスト（下）に触れる語は `mapping` を正直に付ける。
 4. 対応が 1 対 1 でないものを隠さない。`mapping_note` に「米国ではどう扱うか」を書く。**ここが一番価値がある。**
@@ -89,7 +89,7 @@ Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を�
 - 目的語が間に入る動詞句は見出しに「…」を入れる（revolve … around the x-axis）。コーパスでは「…」を 1〜3 語の空きとして数える。空きなしの形（revolve around the x-axis、受け身の is revolved around …）も en.alt に並べると同じ言い方として 1 回だけ数える。
 - terms の件数は語形変化（複数形・三単現・過去形・-ing）をまとめて数える。Riemann sums のような変化形を en.alt に別に入れなくてよい。
 - 1 つのソースに頼った判定は、そのソースを抜くと別の言い方が首位になるときだけ ② に下がる（`corpus:decide` のレポートの「1 ソース頼み」）。抜くと ③ になるだけなら ① のまま。variants の note に、どのソースがどの言い方を使うかを書く（例: take the antiderivative は Khan Academy、find an antiderivative は MIT OCW）。
-- AP Calculus での呼び方・範囲は College Board の CED（2020 年版）で確かめる。出典は type: reference、note に topic 番号。本文は写さない。確かめられない「米国では〜」は書かないか「教科書による」とする。
+- AP Calculus での呼び方・範囲は College Board の CED（2020 年版）、AP Statistics は CED（2026 年版）、線形代数は Nicholson、離散数学（グラフ）は Levin で確かめる（docs/SOURCES.md）。出典は type: reference、note に topic 番号。本文は写さない。確かめられない「米国では〜」は書かないか「教科書による」とする。
 - 日本の教科書に無い日本語見出しは、mapping_note に「見出しの「X」は日本の教科書に無い、本プロジェクトの訳語。」と書く（mapping が exact でも）。
 - リーマン和の仲間の見出しは CED の呼び方（left ／ right ／ midpoint Riemann sum、trapezoidal sum）。教科書の left-endpoint approximation、midpoint rule、trapezoidal rule は書き言葉の variant。
 - 別の意味でも大量に使う語（goes to、squeeze など）が候補表現になるときは、見出しの意味でしか現れない数学の文の形で数える（as … goes to、squeeze … between）。形は `scripts/corpus/lib.ts` の `TERM_FORMS` に書き、evidence にも形のまま記録する。別の意味も同じ構文を取る語（sum rule、product rule）は形で分けられないので、件数の注意を pitfalls に書く。

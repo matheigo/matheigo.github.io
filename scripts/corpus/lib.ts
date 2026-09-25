@@ -273,10 +273,37 @@ const IRREGULAR: Record<string, string> = {
   parentheses: "parenthesis",
 };
 
-/** Strips inflection only. integral / integrate / integration stay distinct. */
-const stem = (w: string): string =>
-  // A final "ss" is part of the word (compress, cross), not a plural: only "-es" comes off it.
-  IRREGULAR[w] ? stem(IRREGULAR[w]) : w.replace(/(ing|ed|es|(?<!s)s)$/, "").replace(/e$/, "");
+/**
+ * Words whose final s is not a plural or third-person ending (DECISIONS,
+ * Phase 2 統計・ベクトルの単元 2): proper names (Bayes is not the plural of
+ * bay, Stokes not of stoke) and a few common nouns in -as and -ns. Nouns in
+ * -us, -is and -ss (radius, basis, compress) are caught by their ending.
+ * A name written with a capital in an entry must be listed here
+ * (tests/corpus.test.ts checks data/).
+ */
+export const NOT_PLURAL_S = new Set([
+  // proper names
+  "bayes", "stokes", "descartes", "pythagoras", "archimedes", "apollonius", "menelaus", "pappus",
+  "thales", "diophantus", "eratosthenes", "gibbs", "lucas", "wilks", "jacobs", "hermes",
+  // common nouns
+  "bias", "gas", "atlas", "canvas", "alias", "lens", "chaos", "cosmos",
+]);
+
+/**
+ * Strips inflection only. integral / integrate / integration stay distinct.
+ * A final "y" and the "i" of "-ies" / "-ied" are one letter here, so vary,
+ * varies, varied and varying share the stem "vari" (as lie, lies and lying
+ * share "li").
+ */
+const stem = (w: string): string => {
+  if (IRREGULAR[w]) return stem(IRREGULAR[w]);
+  // A final "ss", "us" or "is" is part of the word (compress, radius, basis),
+  // not a plural: only "-es" comes off it (compresses, radiuses). So is the s of
+  // a listed word (Bayes, bias).
+  const lemma = NOT_PLURAL_S.has(w) || /(?:ss|us|is)$/.test(w);
+  const bare = lemma ? w : w.replace(/(ing|ed|es|s)$/, "");
+  return bare.replace(/e$/, "").replace(/y$/, "i");
+};
 
 /**
  * The blank in a verb phrase with an object in the middle: "revolve … around
@@ -327,6 +354,13 @@ export function inflections(word: string): string[] {
     for (const x of ["", "s", "es", "ed", "ing"]) {
       if ((x === "" || x === "s") && (e === "" ? endsInE : isLemma && !endsInE)) continue;
       const t = s + e + x;
+      if (t.length > 2 && stem(t) === s) forms.add(t);
+    }
+  }
+  // vary / varies / varied / varying: the stem ends in the i of -ies, the lemma in y
+  if (s.endsWith("i")) {
+    for (const x of ["", "s", "ed", "ing"]) {
+      const t = s.slice(0, -1) + "y" + x; // surveyed, played
       if (t.length > 2 && stem(t) === s) forms.add(t);
     }
   }
@@ -773,11 +807,17 @@ export function decideRobust(counts: BySource, weights: Record<string, number>, 
  * callers.
  */
 export function cedSections(text: string): [string, string][] {
-  const first = /^TOPIC 1\.1$/m.exec(text);
+  // The AP Statistics CED shows a sample TOPIC 1.1 page in its front matter,
+  // before the Unit 1 opener: the first topic is the first one after that opener.
+  const opener = /^UNIT 1$/m.exec(text);
+  const topic1 = /^TOPIC 1\.1$/gm;
+  topic1.lastIndex = opener ? opener.index : 0;
+  const first = topic1.exec(text) ?? /^TOPIC 1\.1$/m.exec(text);
   if (!first) return [["front", text]];
   const units = [...text.slice(0, first.index).matchAll(/^UNIT 1$/gm)];
   const start = units.length ? (units[units.length - 1].index ?? 0) : first.index;
-  const end = /^Exam Overview$/m.exec(text.slice(first.index));
+  // pdftotext starts a page with a form feed: the exam section opens a page.
+  const end = /^\f?Exam Overview$/m.exec(text.slice(first.index));
   const stop = end ? first.index + end.index : text.length;
   const body = text.slice(start, stop);
   const marks = [
@@ -794,47 +834,132 @@ export function cedSections(text: string): [string, string][] {
 export const cedText = (s: string) => normalize(s.replace(/­/g, "").replace(/-\n/g, ""));
 
 /**
- * What the reference works call a concept, for the ③ fallback: the CED
- * (hits per section) and OpenStax (hits in the body of the four books, and
- * the section titles the wording occurs in).
+ * A book of the references split into sections (Nicholson, Levin). pdftotext
+ * keeps one form feed per page, and every odd page opens with a running head
+ * "n.m. Title". A section starts at its body heading - "1.2 Gaussian
+ * Elimination" on one line (Nicholson), or "2.4", a blank line and the title
+ * (Levin) - looked for on the pages just before the first page that carries
+ * its running head (the table of contents is far earlier and has dot
+ * leaders); failing that, at that page. A section too short to carry a
+ * running head stays inside the one before it. The front matter before the
+ * first section and the back matter from the selected answers / solutions and
+ * the index on are left out. Section names are "n.m Title"; only names and
+ * hit counts leave this function's callers.
+ */
+export function bookSections(text: string): [string, string][] {
+  const pages = text.split("\f");
+  const offsets: number[] = [];
+  let at = 0;
+  for (const p of pages) {
+    offsets.push(at);
+    at += p.length + 1;
+  }
+  const firstLine = (p: string) => (p.split("\n").find((l) => l.trim() !== "") ?? "").trim();
+  const heads = pages.map(firstLine);
+  const running: { num: string; title: string; page: number }[] = [];
+  heads.forEach((h, page) => {
+    const m = /^(\d{1,2}\.\d{1,2})\.\s+(.+?)(?:\s+\d+)?$/.exec(h);
+    if (m && !running.some((r) => r.num === m[1])) running.push({ num: m[1], title: m[2].trim(), page });
+  });
+  if (running.length === 0) return [];
+  const backPage = heads.findIndex((h, i) => i > running[0].page && /^(Selected |Index$|INDEX$)/.test(h));
+  const back = backPage < 0 ? text.length : offsets[backPage];
+  const LOOK_BACK = 3; // pages
+  const starts: { at: number; name: string }[] = [];
+  for (const r of running) {
+    if (offsets[r.page] >= back) break;
+    const words = r.title.split(/\s+/).map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+    const re = new RegExp(`^\\f?${r.num.replace(".", "\\.")}[ \\t]*\\n?[ \\t]*\\n?[ \\t]*${words.join("\\s+")}[ \\t]*$`, "gm");
+    const from = offsets[Math.max(0, r.page - LOOK_BACK)];
+    const to = offsets[r.page] + pages[r.page].length;
+    // A heading that opens a page starts after the form feed.
+    const hits = [...text.slice(from, to).matchAll(re)].map((m) => from + (m.index ?? 0) + (m[0].startsWith("\f") ? 1 : 0));
+    const start = hits.length ? hits[hits.length - 1] : offsets[r.page];
+    if (starts.length && start <= starts[starts.length - 1].at) continue;
+    starts.push({ at: start, name: `${r.num} ${r.title}` });
+  }
+  return starts.map((x, i) => [x.name, text.slice(x.at, i + 1 < starts.length ? starts[i + 1].at : back)]);
+}
+
+/**
+ * The references of the ③ fallback (DECISIONS, Phase 2 統計・ベクトルの単元 2),
+ * in the order rule 2 reads them:
+ *
+ *   1. the CEDs: AP Calculus AB/BC (`ced`) and AP Statistics (`cedStats`),
+ *      hits per section ("front", "unitN", topic "n.m", "exam")
+ *   2. OpenStax: hits in the body of the six books, and the section titles
+ *      the wording occurs in
+ *   3. Nicholson, Linear Algebra with Applications, and Levin, Discrete
+ *      Mathematics: An Open Introduction: hits per section ("n.m Title")
+ *
+ * The fields added with 1 and 3 are optional so that a counts.json written
+ * before them still reads.
  */
 export interface ReferenceHits {
-  /** candidate -> CED section -> hits */
+  /** candidate -> AP Calculus CED section -> hits */
   ced: Record<string, Record<string, number>>;
+  /** candidate -> AP Statistics CED section -> hits */
+  cedStats?: Record<string, Record<string, number>>;
   /** candidate -> hits in the OpenStax body (written corpus) */
   openstax: Record<string, number>;
   /** candidate -> OpenStax section titles that contain it */
   openstaxTitles: Record<string, string[]>;
+  /** candidate -> Nicholson section -> hits */
+  nicholson?: Record<string, Record<string, number>>;
+  /** candidate -> Levin section -> hits */
+  levin?: Record<string, Record<string, number>>;
 }
 
-export const emptyReference = (): ReferenceHits => ({ ced: {}, openstax: {}, openstaxTitles: {} });
+export const emptyReference = (): ReferenceHits => ({ ced: {}, cedStats: {}, openstax: {}, openstaxTitles: {}, nicholson: {}, levin: {} });
+
+/** The sectioned texts of the references other than OpenStax, already normalized. */
+export interface MoreReferences {
+  cedStats?: [string, string][];
+  nicholson?: [string, string][];
+  levin?: [string, string][];
+}
 
 /**
  * Counts each candidate in the references the way terms are counted
  * (inflection folded, "…" a blank). `ced` is cedSections() of cedText();
- * `openstax` the normalized OpenStax docs; `titles` their section titles.
+ * `openstax` the normalized OpenStax docs; `titles` their section titles;
+ * `more` the AP Statistics CED and the two books, sectioned and normalized.
  */
 export function referenceHits(
   candidates: string[],
   ced: [string, string][],
   openstax: string[],
   titles: string[],
+  more: MoreReferences = {},
 ): ReferenceHits {
   const out = emptyReference();
+  const bySection = (into: Record<string, Record<string, number>>, c: string, re: RegExp, sections: [string, string][]) => {
+    for (const [section, text] of sections) {
+      const n = starts(text, re).length;
+      if (n) (into[c] ??= {})[section] = (into[c]?.[section] ?? 0) + n;
+    }
+  };
   for (const c of candidates) {
     const re = termRegex(c);
     if (!re) continue;
-    for (const [section, text] of ced) {
-      const n = starts(text, re).length;
-      if (n) (out.ced[c] ??= {})[section] = (out.ced[c]?.[section] ?? 0) + n;
-    }
+    bySection(out.ced, c, re, ced);
+    bySection(out.cedStats!, c, re, more.cedStats ?? []);
     const body = openstax.reduce((n, text) => n + starts(text, re).length, 0);
     if (body) out.openstax[c] = body;
     const inTitles = [...new Set(titles.filter((t) => starts(normalize(t), re).length > 0))];
     if (inTitles.length) out.openstaxTitles[c] = inTitles;
+    bySection(out.nicholson!, c, re, more.nicholson ?? []);
+    bySection(out.levin!, c, re, more.levin ?? []);
   }
   return out;
 }
+
+/** Does the reference count name any candidate at all? */
+export const referred = (r: ReferenceHits): boolean =>
+  [r.ced, r.cedStats ?? {}, r.openstax, r.openstaxTitles, r.nicholson ?? {}, r.levin ?? {}].some((x) => Object.keys(x).length > 0);
+
+/** Which reference settled the headword. */
+export type ReferenceBy = "ced" | "ced-stats" | "openstax" | "nicholson" | "levin";
 
 /**
  * What becomes of an entry the corpus left undecided in both registers
@@ -846,15 +971,16 @@ export function referenceHits(
  *                        does not go to the human. Not when the English name
  *                        is known to exist, just rare: an English name taken
  *                        over as the Japanese headword (LIATE), or a wording
- *                        the CED itself uses (the Candidates Test)
- *   reference            otherwise the headword is what the CED calls it, or
- *                        failing that what OpenStax calls it (body or section
- *                        title). No register is claimed
- *   undecided            neither reference uses any candidate: a human looks
+ *                        a CED itself uses (the Candidates Test)
+ *   reference            otherwise the headword is what the CEDs (AP Calculus
+ *                        / AP Statistics) call it, failing that what OpenStax
+ *                        calls it (body or section title), failing that what
+ *                        Nicholson / Levin call it. No register is claimed
+ *   undecided            no reference uses any candidate: a human looks
  */
 export type Settled =
   | { kind: "no-fixed-expression"; spoken: number; written: number }
-  | { kind: "reference"; by: "ced" | "openstax"; head: string; where: string[] }
+  | { kind: "reference"; by: ReferenceBy; head: string; where: string[] }
   | { kind: "undecided" };
 
 export function settleUndecided(
@@ -866,22 +992,38 @@ export function settleUndecided(
   const { mapping, ja, en } = entry;
   const best = (score: (c: string) => number) =>
     order.filter((c) => score(c) > 0).sort((a, b) => score(b) - score(a) || order.indexOf(a) - order.indexOf(b))[0];
-  const cedTotal = (c: string) => Object.values(ref.ced[c] ?? {}).reduce((a, b) => a + b, 0);
+  const sum = (by: Record<string, Record<string, number>> | undefined, c: string) =>
+    Object.values(by?.[c] ?? {}).reduce((a, b) => a + b, 0);
+  const cedTotal = (c: string) => sum(ref.ced, c) + sum(ref.cedStats, c);
   const ced = best(cedTotal);
   const borrowed = ja !== undefined && en !== undefined && ja.trim().toLowerCase() === en.trim().toLowerCase();
   const named = borrowed || ced !== undefined;
   if ((mapping === "near" || mapping === "none") && !named && raw.spoken < MIN_TOTAL && raw.written < MIN_TOTAL) {
     return { kind: "no-fixed-expression", ...raw };
   }
-  if (ced) {
-    const sections = Object.keys(ref.ced[ced]);
+  // Topic numbers when the wording is in a topic, else the unit openers / front / exam.
+  const topicsOf = (by: Record<string, number>) => {
+    const sections = Object.keys(by);
     const topics = sections.filter((s) => /^\d/.test(s));
-    return { kind: "reference", by: "ced", head: ced, where: topics.length ? topics : sections };
+    return topics.length ? topics : sections;
+  };
+  if (ced) {
+    const stats = sum(ref.cedStats, ced) > sum(ref.ced, ced);
+    return stats
+      ? { kind: "reference", by: "ced-stats", head: ced, where: topicsOf(ref.cedStats![ced]) }
+      : { kind: "reference", by: "ced", head: ced, where: topicsOf(ref.ced[ced]) };
   }
   const os = best((c) => (ref.openstax[c] ?? 0) + (ref.openstaxTitles[c]?.length ?? 0));
   if (os) {
     const titles = ref.openstaxTitles[os] ?? [];
     return { kind: "reference", by: "openstax", head: os, where: titles.length ? titles : [`本文 ${ref.openstax[os]} 件`] };
+  }
+  const book = best((c) => sum(ref.nicholson, c) + sum(ref.levin, c));
+  if (book) {
+    const levin = sum(ref.levin, book) > sum(ref.nicholson, book);
+    const by = (levin ? ref.levin : ref.nicholson)![book];
+    const where = Object.entries(by).sort((a, b) => b[1] - a[1]).map(([s]) => s);
+    return { kind: "reference", by: levin ? "levin" : "nicholson", head: book, where };
   }
   return { kind: "undecided" };
 }

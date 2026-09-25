@@ -8,8 +8,7 @@
   "en": {
     "term": "voluntary response bias",
     "alt": [
-      "voluntary response sample",
-      "voluntary response"
+      "voluntary response sample"
     ],
     "uk": null
   },
@@ -45,7 +44,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは voluntary response が話し言葉 3 件、voluntary response sample が 1 件だけ（すべて Khan Academy）。"
+    "用例コーパスでは voluntary response が話し言葉 3 件、voluntary response sample が 1 件だけ（すべて Khan Academy）。",
+    "語のままの voluntary response は見出しと voluntary response sample の両方の中に現れるので候補にしない（含む関係）。"
   ],
   "related": [
     "convenience-sample",
@@ -54,36 +54,33 @@
   ],
   "sources": [
     {
-      "type": "editorial"
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 1.12（voluntary response bias）"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": null,
     "human": null
   },
   "updated": "2026-09-25",
-  "flags": [
-    {
-      "code": "draft-reason",
-      "note": "英語は AP Statistics の固有の用語（voluntary response bias）だが、OpenStax（6 冊）にも台帳の Wikipedia にもなく、用例コーパスでもほとんど出てこない。",
-      "raised": "2026-09-25"
-    },
-    {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
-      "raised": "2026-09-25"
-    }
-  ],
   "evidence": {
     "spoken": {
-      "voluntary response sample": 1,
-      "voluntary response": 3
+      "voluntary response sample": 1
     },
     "sources": [
       "khan-ap-stats"
     ],
     "counted": "2026-09-25"
-  }
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは AP Statistics の CED の呼び方 voluntary response bias（topic 1.12）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
 }
