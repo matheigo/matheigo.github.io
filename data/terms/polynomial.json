@@ -1,0 +1,126 @@
+{
+  "id": "polynomial",
+  "ja": {
+    "term": "多項式",
+    "reading": "たこうしき",
+    "alt": [
+      "整式"
+    ]
+  },
+  "en": {
+    "term": "polynomial",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "定数と、変数の 0 以上の整数乗との積（単項式）を有限個たし合わせた式。",
+  "definition_en": "An expression made by adding finitely many terms, each a constant times variables raised to whole-number powers.",
+  "latex": "a_n x^n + a_{n-1} x^{n-1} + \\cdots + a_1 x + a_0",
+  "spoken_en": "a sub n x to the n, plus a sub n minus one x to the n minus one, and so on down to a sub zero",
+  "examples": [
+    {
+      "en": "This is a polynomial of degree three, so it has at most three real roots.",
+      "ja": "これは 3 次の多項式だから、実数解は多くても 3 個だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the polynomial 3x − 5 + x³ − 2x² in descending order of degree.",
+      "ja": "整式 3x − 5 + x³ − 2x² を降べきの順に整理せよ。",
+      "register": "written"
+    },
+    {
+      "en": "Divide the polynomial x³ − 2x + 4 by x + 2.",
+      "ja": "整式 x³ − 2x + 4 を x + 2 で割れ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "degree of a polynomial",
+      "ja": "多項式の次数"
+    },
+    {
+      "en": "factor the polynomial",
+      "ja": "多項式を因数分解する"
+    }
+  ],
+  "pitfalls": [
+    "高校の「整式」を integral expression と直訳しない。整式も多項式も英語では polynomial。",
+    "中学の「多項式」は単項式の和（2 項以上）で単項式と区別するが、英語の polynomial は単項式（monomial）も含む。範囲は高校の「整式」と同じ。"
+  ],
+  "related": [
+    "polynomial-division",
+    "zeros-of-a-polynomial",
+    "write-in-descending-order",
+    "common-factor",
+    "arrange-by-the-variable-of-lowest-degree"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "多項式",
+      "en": "Polynomial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "polynomial": 859,
+      "degree of a polynomial": 1
+    },
+    "written": {
+      "polynomial": 985,
+      "factor the polynomial": 14,
+      "degree of a polynomial": 14
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "id": "number-line",
+  "ja": {
+    "term": "数直線",
+    "reading": "すうちょくせん",
+    "alt": []
+  },
+  "en": {
+    "term": "number line",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic",
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数I"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "直線上に基準の点 0 と単位の長さを決め、各点に 1 つの実数を対応させたもの。右へ行くほど数が大きくなる。",
+  "definition_en": "A straight line on which every point stands for a real number, measured from a point marked 0 with a fixed unit length; numbers increase to the right.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's put −3 on the number line: start at zero and go three units to the left.",
+      "ja": "−3 を数直線上にとってみよう。0 から左へ 3 目盛り進む。",
+      "register": "spoken"
+    },
+    {
+      "en": "Graph the solution set of x ≥ −2 on a number line.",
+      "ja": "x ≧ −2 の解を数直線上に図示せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "on the number line",
+      "ja": "数直線上に"
+    }
+  ],
+  "pitfalls": [
+    "不等式の解を数直線に表すとき、端点を含むなら塗りつぶした丸（closed circle）、含まないなら白丸（open circle）で表す。日本の教科書の ● ○ と同じ使い分け。",
+    "絶対値 |a| は、数直線上で原点から a までの距離として説明する（the distance from 0 on the number line）。"
+  ],
+  "related": [
+    "real-number",
+    "linear-inequality",
+    "solution-set",
+    "absolute-value-inequality",
+    "coordinates"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "number line": 183,
+      "on the number line": 19
+    },
+    "written": {
+      "number line": 52,
+      "on the number line": 10
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "nested-radical",
+  "ja": {
+    "term": "二重根号",
+    "reading": "にじゅうこんごう",
+    "alt": []
+  },
+  "en": {
+    "term": "nested radical",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで nested radical は話・書とも 0 件で、OpenStax の 6 冊にも出てこない）。英語で説明するときは a square root inside a square root と中身を言い、外す操作を denesting と呼ぶ。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "根号の中にさらに根号を含む式。√((a + b) + 2√(ab)) の形なら √a + √b に外せる（a, b > 0）。",
+  "definition_en": "A radical expression that contains another radical inside it, such as √(5 + 2√6). When it has the form √((a + b) + 2√(ab)) with a, b > 0, it simplifies to √a + √b.",
+  "latex": "\\sqrt{(a + b) + 2\\sqrt{ab}} = \\sqrt{a} + \\sqrt{b} \\quad (a, b > 0)",
+  "spoken_en": "the square root of a plus b plus two root a b equals root a plus root b",
+  "examples": [
+    {
+      "en": "This is a nested radical, a square root inside a square root, so let's try to write it as √a + √b.",
+      "ja": "これは二重根号、つまり根号の中に根号があるので、√a + √b の形に直せないか考えよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Simplify the nested radical √(5 + 2√6).",
+      "ja": "二重根号 √(5 + 2√6) を外せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "引き算の形は大きいほうから引く: a > b > 0 のとき √((a + b) − 2√(ab)) = √a − √b。√b − √a とすると負になって誤り。",
+    "中の根号の前が 2 でないときは、先に 2 をくくり出す形に直す（√(7 − 4√3) = √(7 − 2√12) = 2 − √3）。"
+  ],
+  "related": [
+    "real-number",
+    "expansion",
+    "symmetric-expression"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語は固有の用語（nested radical）だが、台帳の Wikipedia（langlink なし）・OpenStax（6 冊）で確かめられず、用例コーパスも 0 件。",
+      "raised": "2026-09-25"
+    },
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ],
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  }
+}

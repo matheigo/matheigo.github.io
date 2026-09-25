@@ -1,0 +1,97 @@
+{
+  "id": "congruent",
+  "ja": {
+    "term": "合同",
+    "reading": "ごうどう",
+    "alt": [
+      "合同な図形"
+    ]
+  },
+  "en": {
+    "term": "congruent",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "2 つの図形が、平行移動・回転・裏返しによってぴったり重なること。形も大きさも同じ。",
+  "definition_en": "Having exactly the same size and shape, so that one figure can be moved onto the other by translations, rotations, and reflections.",
+  "latex": "\\triangle ABC \\cong \\triangle DEF",
+  "spoken_en": "triangle ABC is congruent to triangle DEF",
+  "examples": [
+    {
+      "en": "Congruent means same size and same shape: you can slide, turn, or flip one onto the other.",
+      "ja": "合同というのは、大きさも形も同じということ。ずらしたり回したり裏返したりして重ねられる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Two sides and the angle between them match, so these triangles are congruent.",
+      "ja": "2 辺とその間の角がそれぞれ等しいから、この 2 つの三角形は合同だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove that triangle ABM is congruent to triangle ACM.",
+      "ja": "△ABM ≡ △ACM であることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "合同の記号は日本の教科書では ≡、英語では ≅。英語で ≡ は恒等式や整数の合同（a ≡ b (mod n)）に使う。",
+    "「合同」は名詞でも使うが、英語の congruent は形容詞（are congruent ／ is congruent to）。名詞は congruence。",
+    "congruent は整数の合同（mod）にも使うので、用例コーパスでは congruent triangles ／ congruent angles など図形の形でだけ数えた。話し言葉 21 件はすべて The Organic Chemistry Tutor、書き言葉は 4 件。"
+  ],
+  "related": [
+    "triangle",
+    "proof",
+    "isosceles-triangle",
+    "translation",
+    "rotation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "congruent triangles | congruent angles | congruent sides | congruent segments | congruent figures | congruent shapes | congruent polygons": 21
+    },
+    "written": {
+      "congruent triangles | congruent angles | congruent sides | congruent segments | congruent figures | congruent shapes | congruent polygons": 4
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

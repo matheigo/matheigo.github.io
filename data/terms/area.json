@@ -1,0 +1,124 @@
+{
+  "id": "area",
+  "ja": {
+    "term": "面積",
+    "reading": "めんせき",
+    "alt": []
+  },
+  "en": {
+    "term": "area",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数I"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "平面図形や曲面が占める広さを、単位の正方形がいくつ分かで表した量。",
+  "definition_en": "The amount of surface a region or figure covers, measured by how many unit squares it takes to cover it.",
+  "latex": "A = \\frac{1}{2}bh",
+  "spoken_en": "A equals one half base times height",
+  "examples": [
+    {
+      "en": "The area of a triangle is one half base times height, so here it's one half times 6 times 4, which is 12 square centimeters.",
+      "ja": "三角形の面積は底辺 × 高さ ÷ 2 だから、ここでは 6 × 4 ÷ 2 で 12 cm² だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the area of a triangle with sides of length 5 and 8 and an included angle of 30°.",
+      "ja": "2 辺の長さが 5 と 8 で、その間の角が 30° である三角形の面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "area of a triangle",
+      "ja": "三角形の面積"
+    },
+    {
+      "en": "find the area",
+      "ja": "面積を求める"
+    }
+  ],
+  "pitfalls": [
+    "面積の単位 cm² は square centimeters と読む（centimeters squared とも言う）。答えに単位を付けるときは square units。",
+    "立体の表面の広さ（表面積）は surface area で、area だけとは言い分ける。",
+    "統計では、正規分布などの曲線の下の面積が確率を表す（the area under the curve）。"
+  ],
+  "related": [
+    "triangle",
+    "area-formula-with-sine",
+    "area-of-a-sector",
+    "area-under-the-curve",
+    "ratio-of-areas-of-similar-figures"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "面積",
+      "en": "Area"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "area": 2830,
+      "find the area": 95,
+      "area of a triangle": 23
+    },
+    "written": {
+      "area": 1741,
+      "find the area": 233,
+      "area of a triangle": 19
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

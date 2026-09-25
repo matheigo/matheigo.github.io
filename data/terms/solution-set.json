@@ -1,0 +1,103 @@
+{
+  "id": "solution-set",
+  "ja": {
+    "term": "解の範囲",
+    "reading": "かいのはんい",
+    "alt": [
+      "解集合"
+    ]
+  },
+  "en": {
+    "term": "solution set",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "方程式や不等式を満たす値をすべて集めたもの。不等式では 2 < x < 3 のような範囲になる。",
+  "definition_en": "The set of all values that make an equation or inequality true; for an inequality it is usually an interval such as 2 < x < 3.",
+  "latex": "\\{x \\mid x > 2\\} = (2, \\infty)",
+  "spoken_en": "the set of all x such that x is greater than two, which is the open interval from two to infinity",
+  "examples": [
+    {
+      "en": "So the solution set is every x bigger than 2, and in interval notation that's open paren 2, infinity.",
+      "ja": "解の範囲は 2 より大きいすべての x。区間の記法では (2, ∞) だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the solution set of x² − 5x + 6 < 0 and write it in interval notation.",
+      "ja": "x² − 5x + 6 < 0 を満たす x の範囲を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "Over the real numbers, the solution set of x² + 1 = 0 is the empty set.",
+      "ja": "実数の範囲では、x² + 1 = 0 の解集合は空集合である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "solution set of the inequality",
+      "ja": "不等式の解の範囲"
+    }
+  ],
+  "pitfalls": [
+    "区間の記法 (2, 3)、[1, ∞) は日本の高校の教科書では使わない（2 < x < 3、x ≧ 1 と書く）。(2, 3) は点の座標と同じ書き方なので読み違えに注意。読みは the open interval from 2 to 3。",
+    "問題文の「〜を満たす x の範囲を求めよ」は Find the values of x that satisfy … か Find the solution set of …。集合の記法では {x | x > 2}（the set of all x such that x > 2）。",
+    "解が無いときは no solution（解集合は the empty set ∅）、すべての実数が解なら all real numbers。"
+  ],
+  "related": [
+    "solution",
+    "set",
+    "linear-inequality",
+    "number-line",
+    "real-number"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "solution set": 60
+    },
+    "written": {
+      "solution set": 34
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

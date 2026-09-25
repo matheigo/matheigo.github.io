@@ -1,0 +1,105 @@
+{
+  "id": "isosceles-triangle",
+  "ja": {
+    "term": "二等辺三角形",
+    "reading": "にとうへんさんかくけい",
+    "alt": [
+      "等脚三角形"
+    ]
+  },
+  "en": {
+    "term": "isosceles triangle",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "2 辺の長さが等しい三角形。等しい 2 辺にはさまれた角を頂角、残りの 2 角を底角といい、2 つの底角は等しい。",
+  "definition_en": "A triangle with two sides of equal length; the two angles opposite those sides, called the base angles, are equal.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "It's an isosceles triangle, so the two base angles are equal.",
+      "ja": "二等辺三角形だから、2 つの底角は等しい。",
+      "register": "spoken"
+    },
+    {
+      "en": "In isosceles triangle ABC with AB = AC, the vertex angle A measures 40°. Find the measure of angle B.",
+      "ja": "AB = AC の二等辺三角形 ABC で、頂角 ∠A = 40° のとき、∠B の大きさを求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "Prove that the base angles of an isosceles triangle are equal.",
+      "ja": "二等辺三角形の底角は等しいことを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "base angles of an isosceles triangle",
+      "ja": "二等辺三角形の底角"
+    }
+  ],
+  "pitfalls": [
+    "isosceles の綴りと発音に注意（アイササリーズに近い）。",
+    "頂角は vertex angle、底角は base angles、底辺は base。等しい 2 辺は legs と呼ぶ。",
+    "用例コーパスでは書き言葉 10 件（OpenStax Calculus 8・OpenStax Algebra and Trigonometry 2）、話し言葉は 4 件で判定できなかった。"
+  ],
+  "related": [
+    "triangle",
+    "congruent",
+    "vertex",
+    "angle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "二等辺三角形",
+      "en": "Isosceles triangle"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "isosceles triangle": 4
+    },
+    "written": {
+      "isosceles triangle": 10
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

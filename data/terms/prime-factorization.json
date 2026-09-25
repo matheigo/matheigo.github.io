@@ -1,0 +1,101 @@
+{
+  "id": "prime-factorization",
+  "ja": {
+    "term": "素因数分解",
+    "reading": "そいんすうぶんかい",
+    "alt": []
+  },
+  "en": {
+    "term": "prime factorization",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic",
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数A"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "自然数を素数だけの積の形に表すこと。また、その積の形。1 より大きい自然数では、積の順番を除いてただ 1 通りに決まる。",
+  "definition_en": "Writing a whole number as a product of prime numbers, or the product itself; for any whole number greater than 1 it is unique apart from the order of the factors.",
+  "latex": "n = p_1^{e_1} p_2^{e_2} \\cdots p_k^{e_k}",
+  "spoken_en": "n equals p one to the e one, times p two to the e two, and so on, up to p k to the e k",
+  "examples": [
+    {
+      "en": "Let's factor 60 into primes: that's 2 times 2 times 3 times 5, so the prime factorization is 2 squared times 3 times 5.",
+      "ja": "60 を素因数分解しよう。2 × 2 × 3 × 5 だから、素因数分解は 2² × 3 × 5 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the prime factorization of 360.",
+      "ja": "360 を素因数分解せよ。",
+      "register": "written"
+    },
+    {
+      "en": "Since the prime factorization of 72 is 2³ · 3², the number of positive divisors of 72 is (3 + 1)(2 + 1) = 12.",
+      "ja": "72 を素因数分解すると 2³ · 3² なので、72 の正の約数の個数は (3 + 1)(2 + 1) = 12 である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "prime factorization of 60",
+      "ja": "60 の素因数分解"
+    }
+  ],
+  "pitfalls": [
+    "「素因数分解する」という動詞は factor 60 into primes や write 60 as a product of primes と言う。名詞の prime factorization を動詞に言い換えない。",
+    "最大公約数・最小公倍数を素因数分解から求めるときは、共通する素因数の指数の小さい方・大きい方をとる、と手順を英語で説明する（take the smaller / larger exponent of each prime）。",
+    "用例コーパスでは prime factorization は話し言葉 1 件（Khan Academy）・書き言葉 3 件（MIT の講義ノート）しかなく、コーパスからは判断できない。"
+  ],
+  "related": [
+    "multiple",
+    "common-factor",
+    "division-algorithm"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "素因数分解",
+      "en": "Integer factorization"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "prime factorization": 1
+    },
+    "written": {
+      "prime factorization": 3
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

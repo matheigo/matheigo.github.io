@@ -1,0 +1,82 @@
+{
+  "id": "symmetric-expression",
+  "ja": {
+    "term": "対称式",
+    "reading": "たいしょうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "symmetric polynomial",
+    "alt": [
+      "symmetric expression"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで symmetric polynomial・symmetric expression は話・書とも 0 件で、OpenStax の 6 冊にもこの名前では出てこない）。大学の代数では symmetric polynomial と呼ぶ。英語で説明するときは、名前の代わりに swapping x and y doesn't change it と性質を言う。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "文字を入れ替えても元の式と同じになる多項式。x² + y² や x³ + y³ は x と y を入れ替えても変わらない。",
+  "definition_en": "A polynomial that stays exactly the same when its variables are interchanged, such as x² + y² or x³ + y³.",
+  "latex": "x^2 + y^2 = (x + y)^2 - 2xy",
+  "spoken_en": "x squared plus y squared equals the quantity x plus y, squared, minus two x y",
+  "examples": [
+    {
+      "en": "x² + y² is a symmetric polynomial: swap x and y and nothing changes, so we can write it using just x + y and xy.",
+      "ja": "x² + y² は対称式だ。x と y を入れ替えても変わらないので、x + y と xy だけで表せる。",
+      "register": "spoken"
+    },
+    {
+      "en": "If x + y = 3 and xy = 1, find the value of the symmetric expression x³ + y³.",
+      "ja": "x + y = 3, xy = 1 のとき、対称式 x³ + y³ の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "対称式はすべて基本対称式 x + y と xy で表せる（x³ + y³ = (x + y)³ − 3xy(x + y)）。英語で手順を言うなら rewrite it in terms of x + y and xy。",
+    "形容詞の symmetric だけでは、グラフの対称性（symmetric about the y-axis）の意味にも取られる。"
+  ],
+  "related": [
+    "elementary-symmetric-polynomial",
+    "alternating-expression",
+    "relationship-between-roots-and-coefficients",
+    "polynomial"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "対称式",
+      "en": "Symmetric polynomial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

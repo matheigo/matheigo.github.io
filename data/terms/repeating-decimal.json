@@ -1,0 +1,105 @@
+{
+  "id": "repeating-decimal",
+  "ja": {
+    "term": "循環小数",
+    "reading": "じゅんかんしょうすう",
+    "alt": []
+  },
+  "en": {
+    "term": "repeating decimal",
+    "alt": [],
+    "uk": "recurring decimal",
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic",
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "中3",
+      "数A"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "小数点以下のある位から先で、同じ数字の並びが限りなく繰り返される無限小数。分数で表せる数のうち、有限小数にならないものはこの形になる。",
+  "definition_en": "A decimal in which a block of digits repeats forever from some point on. Every fraction that does not give a terminating decimal gives one of these.",
+  "latex": "0.\\overline{142857} = \\frac{1}{7}",
+  "spoken_en": "zero point one four two eight five seven repeating equals one seventh",
+  "examples": [
+    {
+      "en": "Write the repeating decimal 0.363636… as a fraction in lowest terms.",
+      "ja": "循環小数 0.3̇6̇ を既約分数で表せ。",
+      "register": "written"
+    },
+    {
+      "en": "A fraction in lowest terms gives a repeating decimal exactly when its denominator has a prime factor other than 2 and 5.",
+      "ja": "既約分数は、分母が 2 と 5 以外の素因数をもつとき、またそのときに限り循環小数になる。",
+      "register": "written"
+    },
+    {
+      "en": "One seventh is a repeating decimal: the six digits 142857 just keep going.",
+      "ja": "7 分の 1 は循環小数で、142857 の 6 桁がずっと続く。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "write the repeating decimal as a fraction",
+      "ja": "循環小数を分数で表す"
+    }
+  ],
+  "pitfalls": [
+    "記号が違う。日本の教科書は繰り返す部分の最初と最後の数字の上に点を打つ（0.1̇23̇）。英語では繰り返す部分全体の上に横線を引く（0.1̅2̅3̅、bar notation）。",
+    "循環小数は有理数。√2 や π は循環しない無限小数で、無理数。",
+    "英国では recurring decimal と言う。"
+  ],
+  "related": [
+    "real-number",
+    "prime-factorization",
+    "infinite-geometric-series"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "循環小数",
+      "en": "Repeating decimal"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "repeating decimal": 4
+    },
+    "written": {
+      "repeating decimal": 18
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

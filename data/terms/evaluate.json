@@ -1,0 +1,127 @@
+{
+  "id": "evaluate",
+  "ja": {
+    "term": "値を求める",
+    "reading": "あたいをもとめる",
+    "alt": [
+      "式を評価する"
+    ]
+  },
+  "en": {
+    "term": "evaluate",
+    "alt": [
+      "find the value of"
+    ],
+    "uk": null
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "日本語の「値を求める」は、方程式の解・図形の長さ・確率など何の値にも使う。evaluate は、式や関数に値を代入して計算する（evaluate the expression when x = 2、evaluate f at 3）ときと、極限・定積分などを計算するときの動詞で、方程式を解くのは solve、長さや確率を求めるのは find と言い分ける。用例コーパスでは evaluate が話し言葉 1612 件・書き言葉 1767 件、find the value of が話・書とも 113 件。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数I"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "式や関数の文字に与えられた数を代入して、その値を計算する。極限や定積分の値を計算するときにも使う。",
+  "definition_en": "To work out the numerical value of an expression or function by substituting given numbers for its variables; also used for computing a limit or a definite integral.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To evaluate this at x = 2, just plug in 2 everywhere you see an x.",
+      "ja": "x = 2 のときの値を求めるには、x のところ全部に 2 を代入すればいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate 3x² − 5x + 1 when x = −2.",
+      "ja": "x = −2 のとき、式 3x² − 5x + 1 の値を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "Evaluate the integral ∫₀¹ x² dx.",
+      "ja": "定積分 ∫₀¹ x² dx を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "evaluate the expression",
+      "ja": "式の値を求める"
+    },
+    {
+      "en": "evaluate the integral",
+      "ja": "積分を計算する"
+    }
+  ],
+  "pitfalls": [
+    "ja.alt の「式を評価する」は直訳に近く、日本の中学・高校の教科書は「式の値を求める」と書く。",
+    "「f(3) を求めよ」は evaluate f at 3 または evaluate f(3)。前置詞は at を使う。",
+    "方程式の解を求めるのは solve で、evaluate は使わない。"
+  ],
+  "related": [
+    "substitute",
+    "polynomial",
+    "find-the-limit",
+    "definite-integral"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "evaluate": 1612,
+      "find the value of": 113,
+      "evaluate the integral": 20,
+      "evaluate the expression": 1
+    },
+    "written": {
+      "evaluate": 1767,
+      "find the value of": 113,
+      "evaluate the integral": 115,
+      "evaluate the expression": 19
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

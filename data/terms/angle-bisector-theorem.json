@@ -1,0 +1,88 @@
+{
+  "id": "angle-bisector-theorem",
+  "ja": {
+    "term": "角の二等分線の定理",
+    "reading": "かくのにとうぶんせんのていり",
+    "alt": [
+      "角の二等分線と比"
+    ]
+  },
+  "en": {
+    "term": "angle bisector theorem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3",
+      "数A"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "△ABC で ∠A の二等分線が辺 BC と交わる点を D とすると、BD : DC = AB : AC になるという定理。外角の二等分線と直線 BC の交点についても同じ比が成り立つ（こちらは外分）。",
+  "definition_en": "In triangle ABC, if the bisector of angle A meets side BC at D, then BD : DC = AB : AC. In other words, the bisector cuts the opposite side in the ratio of the two sides that form the angle.",
+  "latex": "\\frac{BD}{DC} = \\frac{AB}{AC}",
+  "spoken_en": "BD over DC equals AB over AC",
+  "examples": [
+    {
+      "en": "By the angle bisector theorem, BD over DC is 6 over 4, so BD is three fifths of BC.",
+      "ja": "角の二等分線の定理より BD : DC = 6 : 4 なので、BD は BC の 5 分の 3。",
+      "register": "spoken"
+    },
+    {
+      "en": "In triangle ABC, AB = 6, AC = 4, and BC = 5. The bisector of angle A meets BC at D. Use the angle bisector theorem to find BD.",
+      "ja": "△ABC において AB = 6, AC = 4, BC = 5 とする。∠A の二等分線と辺 BC の交点を D とするとき、線分 BD の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "by the angle bisector theorem",
+      "ja": "角の二等分線の定理より"
+    }
+  ],
+  "pitfalls": [
+    "比は角をはさむ 2 辺の比。BD : DC = AB : AC で、AB : BC などと取り違えない。",
+    "日本の数A では内角の二等分線（D は辺 BC を内分）と外角の二等分線（交点は辺 BC を外分）をセットで学ぶ。"
+  ],
+  "related": [
+    "triangle",
+    "angle",
+    "segment",
+    "perpendicular-bisector"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "角の二等分線の定理",
+      "en": "Angle bisector theorem"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

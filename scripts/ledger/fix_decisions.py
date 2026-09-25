@@ -1122,3 +1122,192 @@ AP_STATS_2026_DROP = {
 # Introductory Statistics does not have it (the human decision on covariance,
 # 2026-09-25; quartile-deviation's mapping_note).
 AP_STATS_2026_NO_INTRO = {"covariance", "quartile-deviation"}
+
+# ------------------------- Phase 2 数I・数A・Geometry・Discrete Math の単元
+# The same rules again (docs/DECISIONS.md "Phase 2 幾何・離散の単元"), before
+# generating every unit of 数学I・数学A, Geometry and Discrete Math. Applied by
+# fix_phase1.py step 14, after step 13. As before, a row merged into a row of a
+# unit not generated yet (angle, triangle, chord, number-line ...) brings that
+# row into these units.
+PHASE2F_SAME = [
+    ("euler-path", "eulerian-path", "into"),  # オイラー路: the entry is Euler trail (Levin)
+    ("tangent-chord-angle", "tangent-chord-theorem", "into"),  # 接弦定理 is the angle between a tangent and a chord
+    ("proof-by-contraposition", "proof-by-contrapositive", "into"),
+    ("implication", "conditional-statement", "from"),  # p → q: Geometry's conditional statement = Levin's implication; 含意 heads
+    ("at-least-one-of", "at-least-one", "into"),
+    ("any", "all", "into"),  # 任意の = すべての (for any / for all)
+    ("common-point", "point-of-intersection", "into"),  # 共有点: US courses say point(s) of intersection
+    ("endpoint-of-the-interval", "endpoint", "into"),
+    ("surveying", "indirect-measurement", "from"),  # 測量 in 数I = the US indirect measurement; 測量 heads
+    ("mutually-exclusive", "mutually-exclusive-events", "into"),
+    ("independent-trials", "independence-of-events", "into"),  # 独立な試行 (数A), generated with the statistics units
+    ("bernoulli-trial", "repeated-trials", "into"),
+    ("overlap", "double-count", "into"),  # ダブり
+    ("order-doesnt-matter", "order-matters", "into"),
+    ("internal-division", "point-of-internal-division", "into"),  # English has no noun for 内分 (STYLE 直訳禁止)
+    ("external-division", "point-of-external-division", "into"),
+    ("partition-a-segment", "point-of-internal-division", "into"),  # the Common Core wording of the same task
+    ("collinear-points", "collinear", "into"),
+    ("are-coplanar", "coplanar-points", "into"),
+    ("residue", "remainder", "into"),  # 剰余 = 余り
+    ("congruent-modulo", "congruence-modulo-n", "into"),
+    ("path", "path-in-a-graph", "into"),  # 数A 経路
+    ("base-angles-theorem", "isosceles-triangle-theorem", "into"),  # one theorem under two names
+    ("rigid-transformation", "rigid-motion", "into"),
+    ("inverse-sine", "arcsine", "into"),  # generated with the precalculus units
+    ("cardinality", "number-of-elements", "into"),  # n(A); 要素の個数 heads
+    ("probability-axioms", "basic-properties-of-probability", "into"),
+    ("generalized-permutations", "permutation-with-repetition", "into"),
+    ("substitution-new-variable", "substitute-new-variable", "into"),  # 置き換え (let t = x²)
+    # かつ / または: the connectives themselves; bare "and" / "or" cannot be counted
+    # (p and q in the corpus is mostly two points or two integers)
+    ("and", "logical-connective", "into"),
+    ("or", "logical-connective", "into"),
+]
+
+# Section names -> the entry for what they teach.
+PHASE2F_SECTION = [
+    ("finding-the-quadratic-function", "determine-the-coefficients"),
+    ("trigonometric-ratios-of-obtuse-angles", "trigonometric-ratio"),
+    ("applications-to-solid-geometry", "tetrahedron"),
+    ("position-of-the-graph-relative-to-the-x-axis", "x-intercept"),
+    ("properties-of-triangles", "triangle"),
+    ("classifying-triangles", "triangle"),
+    ("classifying-angles", "angle"),
+    ("properties-of-cyclic-quadrilaterals", "cyclic-quadrilateral"),
+    ("properties-of-integers", "divisibility"),
+    ("fractions-and-decimals", "repeating-decimal"),
+    ("proving-lines-parallel", "parallel-lines"),
+    ("applications-of-vectors", "vector"),
+    ("properties-of-chords", "chord"),
+    ("writing-proofs", "proof"),
+    ("set-operations", "set"),
+    ("injective-and-surjective-functions", "bijection"),
+    ("solving-recurrence-relations", "recurrence-relation"),
+    ("discrete-probability", "probability"),
+]
+
+# A term with its argument filled in, a collocation of it, or a task on it.
+PHASE2F_INSTANCE = [
+    ("find-the-angle", "angle"),
+    ("factor-out-the-common-factor", "common-factor"),
+    ("the-inequality-sign-flips", "properties-of-inequalities"),
+    ("divide-both-sides-by-a-negative-number", "properties-of-inequalities"),
+    ("the-values-of-x-that-satisfy", "solution-set"),
+    ("graph-on-a-number-line", "number-line"),
+    ("intersection-of-the-solution-sets", "system-of-inequalities"),
+    ("expand-and-simplify", "expansion"),
+    ("evaluate-the-expression", "evaluate"),
+    ("simplify-the-radical-expression", "simplify-radicals"),
+    ("solve-the-inequality", "solve"),
+    ("for-all-x", "all"),
+    ("there-exists-x-such-that", "exist"),
+    ("at-least-once", "at-least-one"),
+    ("belong-to", "element"),  # x ∈ A: x is an element of A
+    ("contain", "subset"),  # A ⊃ B
+    ("if-and-only-if", "necessary-and-sufficient-condition"),  # 〜であるための必要十分条件は
+    ("if-then", "conditional-statement"),
+    ("prove-by-contradiction", "proof-by-contradiction"),
+    ("give-a-counterexample", "counterexample"),
+    ("is-true", "true"),
+    ("does-not-hold", "false"),
+    ("shape-of-the-graph", "sketch"),
+    ("two-distinct-real-solutions", "real-solution"),
+    ("has-no-real-solutions", "real-solution"),
+    ("split-into-cases-by-the-position-of-the-axis", "split-into-cases"),
+    ("count-by-cases", "split-into-cases"),
+    ("the-x-that-gives-the-maximum", "maximum"),
+    ("find-the-maximum", "maximum"),
+    ("shift-the-parabola", "translation"),
+    ("find-the-vertex", "vertex"),
+    ("equation-of-the-axis-of-symmetry", "axis-of-symmetry"),
+    ("compute-the-discriminant", "discriminant"),
+    ("restrict-the-domain", "restricted-domain"),
+    ("three-points-on-the-graph", "determine-the-coefficients"),
+    ("value-of-the-trigonometric-ratio", "trigonometric-ratio"),
+    ("side-ratios-of-a-right-triangle", "trigonometric-ratio"),  # 三角比 is defined as these ratios
+    ("express-using-trigonometric-ratios", "trigonometric-ratio"),
+    ("find-sin", "sine"),
+    ("apply-the-law-of-sines", "law-of-sines"),
+    ("using-the-law-of-cosines", "law-of-cosines"),
+    ("area-formula", "area"),
+    ("find-the-area", "area"),
+    ("largest-angle", "side-angle-inequality"),  # the largest angle is opposite the longest side
+    ("type-of-triangle", "triangle"),  # acute / right / obtuse from the law of cosines
+    ("two-sides-and-the-included-angle", "sas-congruence"),
+    ("volume-of-a-regular-tetrahedron", "tetrahedron"),
+    ("tangent-is-sine-over-cosine", "trigonometric-identities"),
+    ("use-the-complement", "complementary-event"),
+    ("subtract-from-1", "complementary-event"),
+    ("dependent", "independence-of-events"),  # 従属 = not independent
+    ("are-identical", "distinguish"),  # 区別しない
+    ("exactly-k-times", "binomial-probability"),
+    ("multiply-the-probabilities", "independence-of-events"),
+    ("divide-internally", "point-of-internal-division"),
+    ("divide-externally", "point-of-external-division"),
+    ("conditions-for-a-cyclic-quadrilateral", "cyclic-quadrilateral"),
+    ("the-circles-are-externally-tangent", "relative-positions-of-two-circles"),
+    ("the-circles-are-internally-tangent", "relative-positions-of-two-circles"),
+    ("distance-between-the-centers", "relative-positions-of-two-circles"),
+    ("number-of-vertices", "eulers-formula-for-polyhedra"),
+    ("number-of-edges", "eulers-formula-for-polyhedra"),
+    ("number-of-faces", "eulers-formula-for-polyhedra"),
+    ("are-concurrent", "concurrent"),
+    ("chord-length", "chord"),
+    ("does-not-divide", "divisibility"),
+    ("leaves-a-remainder-of-1", "remainder"),
+    ("when-divided-by", "remainder"),
+    ("is-a-multiple-of", "multiple"),
+    ("factor-into-primes", "prime-factorization"),
+    ("use-the-euclidean-algorithm", "euclidean-algorithm"),
+    ("find-the-integer-solutions", "integer-solution"),
+    ("write-in-base-n", "base-n"),
+    ("find-the-gcd", "greatest-common-divisor"),
+    ("segment-length", "segment"),
+    ("statements-and-reasons", "two-column-proof"),
+    ("definition-of-congruence", "congruent-figures"),
+    ("prove-triangles-congruent", "congruent-figures"),
+    ("corresponding-parts", "cpctc"),
+    ("slopes-of-parallel-lines", "parallel-lines"),
+    ("write-the-equation-of-a-parallel-line", "parallel-lines"),
+    ("proportional-sides", "similar-triangles"),
+    ("use-inverse-trig-to-find-the-angle", "arcsine"),
+    ("translation-vector", "translation"),
+]
+
+# Rows renamed so that the id says what the entry is.
+PHASE2F_RENAME = [
+    ("congruent-figures", "congruent", {"pos": "adjective", "en": "congruent", "ja": "合同"}),  # 合同な図形 goes to ja_alt
+    ("coplanar-points", "coplanar", {"pos": "adjective", "en": "coplanar", "ja": "同一平面上にある"}),
+]
+
+# Readings of a symbol. combination-ncr exists; permutation-npr, function-f-of-x
+# and theta are new.
+PHASE2F_TO_SYMBOLS = {
+    "n-choose-r": "combination-ncr",
+    "n-p-r": "permutation-npr",
+    "f-of-x": "function-f-of-x",
+    "theta": "theta",
+}
+
+# Lines of a proof, of a problem statement or of a procedure, not terms
+# (Phase 3 phrases candidates). conversely went the same way (PHASE2D).
+PHASE2F_TO_PHRASES = [
+    "where",
+    "clearly",
+    "in-general",
+    "assuming-leads-to-a-contradiction",
+    "take-positive-values",
+    "for-the-angle-theta",
+    "point-outside-the-circle",
+    "apply-the-theorem",
+    "there-are-infinitely-many",
+    "by-definition",
+    "check-the-sign",
+]
+
+# Not mathematics terms (the 数A unit uses them as activities).
+PHASE2F_OUT_OF_SCOPE = {
+    "game": "数学用語ではない（数学と人間の活動の題材。ゲームの必勝法などは個別の語で扱う）",
+    "puzzle": "数学用語ではない（数学と人間の活動の題材）",
+}

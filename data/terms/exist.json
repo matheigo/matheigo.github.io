@@ -1,0 +1,118 @@
+{
+  "id": "exist",
+  "ja": {
+    "term": "存在する",
+    "reading": "そんざいする",
+    "alt": []
+  },
+  "en": {
+    "term": "exist",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "日本語の「〜となる x が存在する」（∃）は、英語では there exists x such that … ／ there is … と、存在するものを後ろに置く形になる（用例コーパスで there exists は話し言葉 93 件・書き言葉 186 件。exist の件数に含まれる）。exist は the limit exists ／ the inverse exists のように、値や物が「ある・定まる」の意味でも使う。",
+  "domains": [
+    "algebra",
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2",
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "条件を満たすものが少なくとも 1 つある。極限や逆関数などの値が定まる、の意味でも使う。",
+  "definition_en": "To be at least one thing that satisfies a given condition; also used to say that a value such as a limit or an inverse is defined.",
+  "latex": "\\exists x \\in \\mathbb{R},\\ x^2 = 2",
+  "spoken_en": "there exists a real number x such that x squared equals 2",
+  "examples": [
+    {
+      "en": "The limit doesn't exist here, because the left-hand and right-hand limits don't match.",
+      "ja": "左側極限と右側極限が一致しないので、ここでは極限は存在しない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that there exists a real number x such that x³ + x = 1.",
+      "ja": "x³ + x = 1 となる実数 x が存在することを示せ。",
+      "register": "written"
+    },
+    {
+      "en": "Determine whether the inverse of the matrix exists.",
+      "ja": "この行列の逆行列が存在するかどうかを調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "the limit does not exist",
+      "ja": "極限は存在しない"
+    }
+  ],
+  "pitfalls": [
+    "記号 ∃ は there exists と読む。「ただ 1 つ存在する」は there exists a unique … ／ there is exactly one …。",
+    "「存在する」の否定を言うときは doesn't exist（話し言葉）／ does not exist（答案）。there is no x such that … も同じ意味。"
+  ],
+  "related": [
+    "at-least-one",
+    "all",
+    "the-limit-does-not-exist",
+    "intermediate-value-theorem",
+    "counterexample"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "exist": 709,
+      "the limit does not exist": 15
+    },
+    "written": {
+      "exist": 676,
+      "the limit does not exist": 24
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

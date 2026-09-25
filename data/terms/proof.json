@@ -1,0 +1,124 @@
+{
+  "id": "proof",
+  "ja": {
+    "term": "証明",
+    "reading": "しょうめい",
+    "alt": []
+  },
+  "en": {
+    "term": "proof",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "仮定と、すでに正しいとわかっている定義・定理から、筋道を立てて結論が正しいことを示す論証。",
+  "definition_en": "A chain of reasoning that shows a statement must be true, starting from its hypotheses and using definitions and results already established.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's start the proof by writing down what we're given.",
+      "ja": "まず仮定を書き出すところから証明を始めよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Complete the proof by giving a reason for each step.",
+      "ja": "各段階の根拠を書いて、証明を完成させよ。",
+      "register": "written"
+    },
+    {
+      "en": "In this proof, the hypothesis is that n is even and the conclusion is that n² is even.",
+      "ja": "この証明では、仮定は「n は偶数」、結論は「n² は偶数」である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "write a proof",
+      "ja": "証明を書く"
+    },
+    {
+      "en": "proof by contradiction",
+      "ja": "背理法"
+    }
+  ],
+  "pitfalls": [
+    "名詞の「証明」は proof、動詞の「証明する」は prove。発音も綴りも近いので取り違えない。",
+    "証明を書くときの「仮定」は hypothesis（given とも）、「結論」は conclusion。証明の終わりの印には ∎ や Q.E.D. を使う。"
+  ],
+  "related": [
+    "prove",
+    "counterexample",
+    "proof-by-induction",
+    "congruent"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "証明 (数学)",
+      "en": "Mathematical proof"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "proof": 678,
+      "proof by contradiction": 8,
+      "write a proof": 2
+    },
+    "written": {
+      "proof": 670,
+      "write a proof": 1,
+      "proof by contradiction": 15
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

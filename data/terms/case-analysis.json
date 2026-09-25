@@ -1,0 +1,83 @@
+{
+  "id": "case-analysis",
+  "ja": {
+    "term": "場合分け",
+    "reading": "ばあいわけ",
+    "alt": []
+  },
+  "en": {
+    "term": "case analysis",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで case analysis は話し言葉 0 件、書き言葉 1 件（MIT の講義ノート））。英語では動詞句で split into cases、consider two cases のように「場合に分ける」と言う（→ 場合分けする split-into-cases）。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "文字の値などによって式の扱いが変わるとき、場合ごとに分けて調べ、最後に結果をまとめる方法。",
+  "definition_en": "Splitting a problem into separate cases, such as x ≥ 0 and x < 0, when an expression behaves differently in each, solving each case, and then combining the results.",
+  "latex": "|x| = \\begin{cases} x & (x \\ge 0) \\\\ -x & (x < 0) \\end{cases}",
+  "spoken_en": "the absolute value of x is x when x is greater than or equal to zero, and negative x when x is less than zero",
+  "examples": [
+    {
+      "en": "Let's split this into two cases, depending on the sign of x − 1.",
+      "ja": "x − 1 の符号で 2 つの場合に分けよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "The proof uses a case analysis on whether n is even or odd.",
+      "ja": "n が偶数か奇数かで場合分けして証明する。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "各場合で出た解は、その場合の条件（x ≧ 1 など）と共通部分をとってから、最後にすべての場合を合わせる。",
+    "「場合分けする」という動詞は split into cases ／ consider … cases。「x ≧ 1 のとき」は in the case x ≥ 1 か when x ≥ 1。"
+  ],
+  "related": [
+    "split-into-cases",
+    "absolute-value-inequality",
+    "absolute-value-equation",
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "case analysis": 1
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 1 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

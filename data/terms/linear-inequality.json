@@ -1,0 +1,101 @@
+{
+  "id": "linear-inequality",
+  "ja": {
+    "term": "一次不等式",
+    "reading": "いちじふとうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "linear inequality",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "整理すると ax + b > 0（a ≠ 0）などの形になる、未知数について一次の不等式。",
+  "definition_en": "An inequality in which the variable appears only to the first power, such as 3x − 5 < 7; it can be rearranged into a form like ax + b > 0 with a ≠ 0.",
+  "latex": "ax + b > 0 \\quad (a \\neq 0)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Solving a linear inequality is just like solving an equation, except you have to watch out when you divide by a negative.",
+      "ja": "一次不等式は方程式と同じように解けるが、負の数で割るときだけは気をつけよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the linear inequality 3x − 5 < 2x + 4.",
+      "ja": "一次不等式 3x − 5 < 2x + 4 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "solve a linear inequality",
+      "ja": "一次不等式を解く"
+    }
+  ],
+  "pitfalls": [
+    "日本の教科書は ≦ ≧、英語の教材は ≤ ≥ と書く。読みは less than or equal to ／ greater than or equal to。",
+    "英語の linear inequality は 1 変数に限らず、y ≤ 2x + 1 のような 2 変数の一次の不等式も指す。そのグラフ（半平面）は日本では数II の「不等式の表す領域」で扱う。"
+  ],
+  "related": [
+    "properties-of-inequalities",
+    "system-of-inequalities",
+    "solution-set",
+    "number-line",
+    "polynomial-inequality"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "不等式",
+      "en": "Inequality (mathematics)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "linear inequality": 9
+    },
+    "written": {
+      "linear inequality": 7
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 判断不能: 重み付け後 7 件（10 未満））。見出しは OpenStax の呼び方 linear inequality（Linear Inequalities and Absolute Value Inequalities）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

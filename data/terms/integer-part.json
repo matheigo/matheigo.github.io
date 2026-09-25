@@ -1,0 +1,77 @@
+{
+  "id": "integer-part",
+  "ja": {
+    "term": "整数部分",
+    "reading": "せいすうぶぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "integer part",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで integer part は話・書とも 0 件。説明的な greatest integer less than or equal to が書き言葉で 1 件、OpenStax Calculus）。正の数の整数部分は床関数の値 ⌊x⌋（the floor of x）と同じなので、英語では floor か the greatest integer less than or equal to x で言う。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "実数 x を超えない最大の整数。正の数では、小数点より前の部分に当たる。",
+  "definition_en": "The greatest integer that does not exceed a real number x; for a positive number it is the part before the decimal point.",
+  "latex": "\\lfloor x \\rfloor",
+  "spoken_en": "the floor of x",
+  "examples": [
+    {
+      "en": "Since 2 < √7 < 3, the integer part of √7 is 2.",
+      "ja": "2 < √7 < 3 だから、√7 の整数部分は 2。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let a be the integer part of √11. Find a.",
+      "ja": "√11 の整数部分を a とする。a を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "負の数では意味が分かれる。⌊x⌋ で考えると −2.5 の整数部分は −3 になるが、小数点より前を取って −2 とする使い方もある。負の数のときはどちらの意味かを書く。"
+  ],
+  "related": [
+    "floor-function",
+    "fractional-part",
+    "real-number",
+    "nested-radical"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

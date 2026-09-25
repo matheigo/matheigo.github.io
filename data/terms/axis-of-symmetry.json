@@ -1,0 +1,104 @@
+{
+  "id": "axis-of-symmetry",
+  "ja": {
+    "term": "軸",
+    "reading": "じく",
+    "alt": [
+      "放物線の軸"
+    ]
+  },
+  "en": {
+    "term": "axis of symmetry",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中3",
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "放物線がそれに関して線対称になる直線。y = a(x − p)² + q のグラフでは直線 x = p で、頂点を通る。",
+  "definition_en": "The line a parabola is symmetric about. For y = a(x − h)² + k it is the vertical line x = h, which passes through the vertex.",
+  "latex": "x = -\\frac{b}{2a}",
+  "spoken_en": "x equals negative b over two a",
+  "examples": [
+    {
+      "en": "The axis of symmetry goes right through the vertex, so here it's x equals 3.",
+      "ja": "軸は頂点を通るので、ここでは x = 3。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the vertex and the equation of the axis of symmetry of y = 2x² − 8x + 5.",
+      "ja": "放物線 y = 2x² − 8x + 5 の頂点と軸の方程式を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "The axis of symmetry of the parabola y = −(x + 1)² + 4 is the line x = −1.",
+      "ja": "放物線 y = −(x + 1)² + 4 の軸は直線 x = −1 である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "equation of the axis of symmetry",
+      "ja": "軸の方程式"
+    }
+  ],
+  "pitfalls": [
+    "日本語は「軸」だけで放物線の軸を指すが、英語で axis とだけ言うと x 軸・y 軸（x-axis, y-axis）と紛れる。放物線の軸は axis of symmetry と言う。",
+    "線対称な図形の「対称の軸」には line of symmetry も使う（用例コーパスで話し言葉 6 件・書き言葉 2 件）。放物線の軸の言い方としては数えていない。",
+    "軸の方程式は x = p の形の直線の式で答える。y = p と書き間違えない。"
+  ],
+  "related": [
+    "vertex",
+    "completing-the-square",
+    "x-intercept",
+    "quadratic-formula"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "axis of symmetry": 19
+    },
+    "written": {
+      "axis of symmetry": 114
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

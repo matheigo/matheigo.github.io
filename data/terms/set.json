@@ -1,0 +1,113 @@
+{
+  "id": "set",
+  "ja": {
+    "term": "集合",
+    "reading": "しゅうごう",
+    "alt": []
+  },
+  "en": {
+    "term": "set",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic",
+    "set-theory"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "範囲がはっきり定まったものの集まり。集まりに入っている一つ一つのものを要素という。",
+  "definition_en": "A collection of objects in which it is clear exactly which objects belong; each object in it is called an element.",
+  "latex": "A = \\{ x \\mid x > 0 \\}",
+  "spoken_en": "A is the set of all x such that x is greater than zero",
+  "examples": [
+    {
+      "en": "So the domain is the set of all real numbers except 2.",
+      "ja": "だから定義域は 2 以外のすべての実数の集合だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let A be the set of positive divisors of 12. List the elements of A.",
+      "ja": "12 の正の約数の集合を A とする。A の要素を書き並べよ。",
+      "register": "written"
+    },
+    {
+      "en": "Write the set of all real numbers x with x² < 4 in set-builder notation.",
+      "ja": "x² < 4 を満たす実数 x 全体の集合を、条件を使った書き方で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは the set of ／ a set of ／ set of all の形だけを数えている。set は動詞（set it equal to zero など）でも大量に使うため。",
+    "集合の演算は、共通部分 A ∩ B が intersection、和集合 A ∪ B が union、補集合が complement。補集合の記号は Ā のほか、英語の本では Aᶜ や A′ も使われる（本による）。",
+    "{ x | x > 0 } の書き方は set-builder notation と呼ぶ。英語の本では縦棒の代わりにコロンで { x : x > 0 } と書くものもある。"
+  ],
+  "related": [
+    "element",
+    "solution-set",
+    "real-number",
+    "all",
+    "subspace"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "集合",
+      "en": "Set (mathematics)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the set of | a set of | set of all": 163
+    },
+    "written": {
+      "the set of | a set of | set of all": 497
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

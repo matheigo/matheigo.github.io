@@ -1,0 +1,95 @@
+{
+  "id": "properties-of-inequalities",
+  "ja": {
+    "term": "不等式の性質",
+    "reading": "ふとうしきのせいしつ",
+    "alt": []
+  },
+  "en": {
+    "term": "properties of inequalities",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "不等式の両辺に同じ数を足しても引いても、正の数を掛けても割っても不等号の向きは変わらないが、負の数を掛けたり割ったりすると向きが逆になるという性質。",
+  "definition_en": "The rules for working with inequalities: adding or subtracting the same number, or multiplying or dividing both sides by a positive number, keeps the direction of the inequality, while multiplying or dividing by a negative number reverses it.",
+  "latex": "a < b,\\ c < 0 \\implies ac > bc",
+  "spoken_en": "if a is less than b and c is negative, then a c is greater than b c",
+  "examples": [
+    {
+      "en": "We're dividing both sides by negative two, so we have to flip the inequality.",
+      "ja": "両辺を −2 で割るので、不等号の向きが変わる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Dividing both sides of −4x ≥ 12 by −4 reverses the inequality, so x ≤ −3.",
+      "ja": "−4x ≧ 12 の両辺を −4 で割ると不等号の向きが変わり、x ≦ −3。",
+      "register": "written"
+    },
+    {
+      "en": "Use the properties of inequalities to show that if a > b > 0, then 1/a < 1/b.",
+      "ja": "不等式の性質を用いて、a > b > 0 ならば 1/a < 1/b であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "use the properties of inequalities",
+      "ja": "不等式の性質を使う"
+    }
+  ],
+  "pitfalls": [
+    "「不等号の向きが変わる」は、用例コーパスでは話し言葉で flip the inequality が 2 件（Khan Academy 1・patrickJMT 1）、書き言葉で reverse the inequality が 3 件（OpenStax Algebra and Trigonometry 2・OpenStax Calculus 1）。",
+    "「両辺を負の数で割る」は divide both sides by a negative number。負の数を掛けたり割ったりしたのに向きを変え忘れるのが定番の誤り。",
+    "文字 a で割るときは a の符号が分からないので、a > 0 と a < 0 で場合分けする。"
+  ],
+  "related": [
+    "linear-inequality",
+    "system-of-inequalities",
+    "absolute-value-inequality",
+    "case-analysis"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "properties of inequalities": 3
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 properties of inequalities（本文 3 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -4,7 +4,8 @@
     "term": "置き換える",
     "reading": "おきかえる",
     "alt": [
-      "置換する"
+      "置換する",
+      "置き換え"
     ]
   },
   "en": {
@@ -40,13 +41,15 @@
   "level": {
     "jp": [
       "中3",
+      "数I",
       "数III"
     ],
     "us": [
       "Algebra 1",
       "Integrated Math 1",
       "AP Calculus AB",
-      "Calculus I"
+      "Calculus I",
+      "Algebra 2"
     ]
   },
   "definition_ja": "式の一部をひとまとまりとみて、新しい文字で表し直すこと。",
@@ -62,6 +65,11 @@
     {
       "en": "Let A = x + 1. Then (x + 1)² − 3(x + 1) + 2 = A² − 3A + 2 = (A − 1)(A − 2).",
       "ja": "x + 1 = A とおくと、(x + 1)² − 3(x + 1) + 2 = A² − 3A + 2 = (A − 1)(A − 2)。",
+      "register": "written"
+    },
+    {
+      "en": "To solve x⁴ − 5x² + 4 = 0, let t = x² and solve t² − 5t + 4 = 0 first.",
+      "ja": "x⁴ − 5x² + 4 = 0 を解くには、x² = t とおいて、まず t² − 5t + 4 = 0 を解く。",
       "register": "written"
     }
   ],
@@ -85,7 +93,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "make a substitution": 32,

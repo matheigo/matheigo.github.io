@@ -519,6 +519,32 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
  * searched for the form too.
  */
 export const TERM_FORMS: Record<string, Record<string, string>> = {
+  // Phase 2 幾何・離散の単元 (batch 1): everyday or many-sense words, counted in the
+  // sense of the entry (contexts checked)
+  multiple: { multiple: "multiple of" }, // not "multiple times", "multiple methods"
+  "common-factor": { "common factor": "!greatest common factor" }, // the GCF is its own entry
+  "arc-length": {
+    // the arc of a circle, not the length of a curve (arc-length-of-a-curve)
+    "arc length":
+      "arc length of the sector | arc length of a sector | arc length of a circle | arc length of the circle | arc length formula | length of the arc | length of an arc",
+  },
+  congruent: {
+    // figures, not a congruence modulo n (mit-notes)
+    congruent:
+      "congruent triangles | congruent angles | congruent sides | congruent segments | congruent figures | congruent shapes | congruent polygons",
+  },
+  translation: {
+    // a graph or figure moved, not a translation of words or of a definition
+    shift: "vertical shift | horizontal shift | shifted … units | shift … units",
+    translation:
+      "vertical translation | horizontal translation | translation of the graph | translations of the graph | translation of the parabola | translation of the function | translated … units",
+  },
+  set: { set: "the set of | a set of | set of all" }, // not "set it equal to", "set up"
+  element: {
+    element: "is an element of | are elements of | element of the set | elements of the set | elements of a set",
+    member: "member of the set | members of the set",
+  },
+  segment: { segment: "!line segment" }, // bare "segment"; "line segment" is counted on its own
   approaches: {
     approaches: "as … approaches",
     "goes to": "as … goes to",

@@ -1,0 +1,101 @@
+{
+  "id": "system-of-inequalities",
+  "ja": {
+    "term": "連立不等式",
+    "reading": "れんりつふとうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "compound inequality",
+    "alt": [
+      "system of inequalities"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語の compound inequality は 2 つの不等式を and または or でつないだもの。and でつないだもの（両方を満たす x、つまり共通範囲を答える）が日本の連立不等式にあたり、or でつないだもの（どちらかを満たす x）は連立不等式ではない。a < x < b の 1 行の形も、and の compound inequality をまとめて書いたもの。用例コーパスでは話し言葉で compound inequality が 13 件、system of inequalities が 2 件、書き言葉では system of inequalities が 9 件・compound inequality が 6 件（どちらもすべて OpenStax Algebra and Trigonometry）。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "2 つ以上の不等式を組にして、それらを同時に満たす x の値の範囲を求めるもの。解は各不等式の解の共通範囲になる。",
+  "definition_en": "Two or more inequalities in the same variable that must hold at the same time; the solution is the overlap of the solutions of the individual inequalities.",
+  "latex": "\\begin{cases} 2x + 1 > 3 \\\\ x - 4 \\le 1 \\end{cases}",
+  "spoken_en": "two x plus one is greater than three, and x minus four is less than or equal to one",
+  "examples": [
+    {
+      "en": "This is an \"and\" compound inequality, so the answer is where both are true, the overlap on the number line.",
+      "ja": "これは「かつ」の連立不等式なので、答えは両方が成り立つところ、つまり数直線上の共通範囲だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the compound inequality 2x + 1 > 3 and x − 4 ≤ 1.",
+      "ja": "連立不等式 2x + 1 > 3, x − 4 ≦ 1 を解け。",
+      "register": "written"
+    },
+    {
+      "en": "Solve the system of inequalities and graph the solution on a number line.",
+      "ja": "連立不等式を解き、解を数直線上に図示せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "solve the compound inequality",
+      "ja": "連立不等式を解く"
+    }
+  ],
+  "pitfalls": [
+    "or でつないだ compound inequality（x < −2 or x > 3）は連立不等式ではない。答えは 2 つの範囲を合わせたもの。",
+    "共通範囲が無いときは no solution（解なし）。数直線に 2 つの解を描いて重なりを確かめるとよい。"
+  ],
+  "related": [
+    "linear-inequality",
+    "solution-set",
+    "number-line",
+    "properties-of-inequalities"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "compound inequality": 13,
+      "system of inequalities": 2
+    },
+    "written": {
+      "compound inequality": 6,
+      "solve the compound inequality": 4,
+      "system of inequalities": 9
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

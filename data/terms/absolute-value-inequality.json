@@ -1,0 +1,91 @@
+{
+  "id": "absolute-value-inequality",
+  "ja": {
+    "term": "絶対値を含む不等式",
+    "reading": "ぜったいちをふくむふとうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "absolute value inequality",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "|x − 2| < 3 のように、絶対値の中に未知数を含む不等式。a > 0 のとき、|X| < a は −a < X < a、|X| > a は X < −a または X > a として解く。",
+  "definition_en": "An inequality with the variable inside absolute value bars, such as |x − 2| < 3. For a > 0, |X| < a means −a < X < a, and |X| > a means X < −a or X > a.",
+  "latex": "|x| < a \\iff -a < x < a \\quad (a > 0)",
+  "spoken_en": "the absolute value of x is less than a if and only if x is between negative a and a",
+  "examples": [
+    {
+      "en": "With an absolute value inequality, think distance: |x − 3| > 2 means x is more than 2 units away from 3.",
+      "ja": "絶対値を含む不等式は距離で考えよう。|x − 3| > 2 は、x が 3 から 2 より遠くにあるということだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the absolute value inequality |2x − 1| ≤ 5.",
+      "ja": "不等式 |2x − 1| ≦ 5 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "solve an absolute value inequality",
+      "ja": "絶対値を含む不等式を解く"
+    }
+  ],
+  "pitfalls": [
+    "|X| > a の答えは X < −a または X > a（英語では or）。「かつ」の範囲にまとめない。",
+    "|x − 1| + |x − 3| < 4 のように絶対値が 2 つ以上あるときは、中身の符号で場合分けする。"
+  ],
+  "related": [
+    "absolute-value-equation",
+    "linear-inequality",
+    "case-analysis",
+    "split-into-cases",
+    "number-line"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "absolute value inequality": 3,
+      "solve an absolute value inequality": 1
+    },
+    "written": {
+      "absolute value inequality": 13,
+      "solve an absolute value inequality": 1
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

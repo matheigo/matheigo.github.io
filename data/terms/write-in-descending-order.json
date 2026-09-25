@@ -1,0 +1,84 @@
+{
+  "id": "write-in-descending-order",
+  "ja": {
+    "term": "降べきの順に整理する",
+    "reading": "こうべきのじゅんにせいりする",
+    "alt": []
+  },
+  "en": {
+    "term": "write in descending order",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで descending order は話し言葉 5 件・書き言葉 7 件、書き言葉はすべて OpenStax Algebra and Trigonometry）。米国の授業では、項が次数の高いものから順に並んでいる多項式を in standard form と言う。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "多項式の項を、ある文字についての次数が高いものから低いものへ順に並べ直す。",
+  "definition_en": "To arrange the terms of a polynomial from the highest power of a chosen variable down to the lowest.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's write it in descending order first, so the x cubed term goes in front.",
+      "ja": "まず降べきの順に整理しよう。x³ の項が先頭に来る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write 3x − 5 + 2x³ − x² in descending order.",
+      "ja": "3x − 5 + 2x³ − x² を降べきの順に整理せよ。",
+      "register": "written"
+    },
+    {
+      "en": "Write x² + 3xy − 2y² + x − 4y in descending order of x.",
+      "ja": "x² + 3xy − 2y² + x − 4y を x について降べきの順に整理せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「x について整理する」では x 以外の文字を係数とみなし、x の次数ごとにまとめる：x² + (3y + 1)x − (2y² + 4y)。",
+    "日本語の「整理する」は同類項をまとめること（combine like terms）も含む。並べるだけの「降べきの順」と分けて考える。",
+    "逆の、次数の低い順は ascending order（昇べきの順）。"
+  ],
+  "related": [
+    "polynomial",
+    "arrange-by-the-variable-of-lowest-degree",
+    "polynomial-division"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "counterexample",
+  "ja": {
+    "term": "反例",
+    "reading": "はんれい",
+    "alt": []
+  },
+  "en": {
+    "term": "counterexample",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "仮定を満たすのに結論が成り立たない具体的な例。1 つあれば、その命題が偽であることが示せる。",
+  "definition_en": "A specific case that satisfies the hypothesis of a statement but not its conclusion; one is enough to show the statement is false.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Give a counterexample to show that the statement \"if x² = 4, then x = 2\" is false.",
+      "ja": "反例を挙げて、「x² = 4 ならば x = 2」が偽であることを示せ。",
+      "register": "written"
+    },
+    {
+      "en": "The function f(x) = |x| is a counterexample: it is continuous at 0 but not differentiable there.",
+      "ja": "関数 f(x) = |x| が反例である。x = 0 で連続だが、そこで微分可能ではない。",
+      "register": "written"
+    },
+    {
+      "en": "Negative two is a counterexample, right? Its square is four, but it isn't two.",
+      "ja": "−2 が反例だよね。2 乗すると 4 だけど、2 ではない。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "give a counterexample",
+      "ja": "反例を挙げる"
+    },
+    {
+      "en": "find a counterexample",
+      "ja": "反例を見つける"
+    }
+  ],
+  "pitfalls": [
+    "counterexample は 1 語で書く（counter example と離さない）。",
+    "反例は 1 つで命題を偽と示せるが、成り立つ例をいくつ挙げても「すべての〜について」の証明にはならない。",
+    "用例コーパスでは話し言葉 4 件（すべて MIT OCW）で、話し言葉の判定はできなかった。書き言葉は 22 件（MIT の講義ノート 14・OpenStax Calculus 8）。"
+  ],
+  "related": [
+    "proof",
+    "prove",
+    "all",
+    "exist"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "反例",
+      "en": "Counterexample"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "counterexample": 4,
+      "give a counterexample": 1
+    },
+    "written": {
+      "counterexample": 22,
+      "find a counterexample": 2
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

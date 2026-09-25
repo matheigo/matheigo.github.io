@@ -1,0 +1,114 @@
+{
+  "id": "translation",
+  "ja": {
+    "term": "平行移動",
+    "reading": "へいこういどう",
+    "alt": []
+  },
+  "en": {
+    "term": "shift",
+    "alt": [
+      "translation"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数I"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry",
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "図形やグラフ上のすべての点を、同じ向きに同じ距離だけ動かす移動。点 (x, y) は (x + a, y + b) に移る。",
+  "definition_en": "A transformation that moves every point of a figure or graph the same distance in the same direction, sending (x, y) to (x + a, y + b).",
+  "latex": "(x, y) \\mapsto (x + a, y + b)",
+  "spoken_en": "x comma y maps to x plus a comma y plus b",
+  "examples": [
+    {
+      "en": "So this is a horizontal shift: the whole parabola moves 3 units to the right.",
+      "ja": "これは x 軸方向の平行移動で、放物線全体が右に 3 動く。",
+      "register": "spoken"
+    },
+    {
+      "en": "The graph of y = (x − 3)² + 2 is the graph of y = x² shifted 3 units to the right and 2 units up.",
+      "ja": "y = (x − 3)² + 2 のグラフは、y = x² のグラフを x 軸方向に 3、y 軸方向に 2 だけ平行移動したものである。",
+      "register": "written"
+    },
+    {
+      "en": "Under the translation (x, y) → (x + 4, y − 1), find the image of triangle ABC.",
+      "ja": "平行移動 (x, y) → (x + 4, y − 1) による三角形 ABC の像を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の「x 軸方向に p、y 軸方向に q だけ平行移動」は、英語では向きで言う（shift 3 units to the right and 2 units up）。y = f(x) のグラフの平行移動は y = f(x − p) + q で、x − p の符号と右向きの対応に注意。",
+    "用例コーパスでは、グラフの平行移動は shift（vertical shift・horizontal shift・shifted … units などとして話し言葉 96 件・書き言葉 208 件）が translation（vertical translation などとして話し言葉 1 件・書き言葉 11 件、うち OpenStax Algebra and Trigonometry 7 件）よりずっと多い。コーパスに幾何の教科書は入っていないので、図形の平行移動の言い方はこの件数に表れない。",
+    "平行移動ベクトル（どの向きにどれだけ動かすか）は translation vector で、⟨a, b⟩ のように成分で書く。"
+  ],
+  "related": [
+    "reflection",
+    "rotation",
+    "phase-shift",
+    "composition-of-transformations",
+    "axis-of-symmetry"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "平行移動",
+      "en": "Translation (geometry)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "vertical translation | horizontal translation | translation of the graph | translations of the graph | translation of the parabola | translation of the function | translated … units": 1,
+      "vertical shift | horizontal shift | shifted … units | shift … units": 96
+    },
+    "written": {
+      "vertical shift | horizontal shift | shifted … units | shift … units": 208,
+      "vertical translation | horizontal translation | translation of the graph | translations of the graph | translation of the parabola | translation of the function | translated … units": 11
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

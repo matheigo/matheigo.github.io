@@ -1,0 +1,85 @@
+{
+  "id": "fractional-part",
+  "ja": {
+    "term": "小数部分",
+    "reading": "しょうすうぶぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "fractional part",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "実数 x から整数部分を引いた値 x − ⌊x⌋。0 以上 1 未満になる。",
+  "definition_en": "The value x − ⌊x⌋ left after subtracting the integer part from a real number x; it is always at least 0 and less than 1.",
+  "latex": "x - \\lfloor x \\rfloor",
+  "spoken_en": "x minus the floor of x",
+  "examples": [
+    {
+      "en": "The integer part of √5 is 2, so its fractional part is √5 minus 2.",
+      "ja": "√5 の整数部分は 2 だから、小数部分は √5 − 2。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let b be the fractional part of √3. Find the value of b² + 2b.",
+      "ja": "√3 の小数部分を b とする。b² + 2b の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "the fractional part of √5",
+      "ja": "√5 の小数部分"
+    }
+  ],
+  "pitfalls": [
+    "無理数の小数部分は 0.236… と書き並べず、√5 − 2 のように「元の数 − 整数部分」の式で表す。",
+    "fractional part の fractional は「分数の」ではなく「1 に満たない端の」の意味。答えが分数になるわけではない。"
+  ],
+  "related": [
+    "integer-part",
+    "floor-function",
+    "repeating-decimal",
+    "nested-radical"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "小数部分",
+      "en": "Fractional part"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

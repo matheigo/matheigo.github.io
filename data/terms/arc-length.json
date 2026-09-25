@@ -1,0 +1,100 @@
+{
+  "id": "arc-length",
+  "ja": {
+    "term": "弧の長さ",
+    "reading": "このながさ",
+    "alt": [
+      "扇形の弧長"
+    ]
+  },
+  "en": {
+    "term": "arc length",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "円の弧の部分の長さ。半径 r、中心角 θ（ラジアン）なら rθ、中心角が a° なら 2πr × a/360。",
+  "definition_en": "The length of an arc of a circle. With radius r and central angle θ in radians it is rθ; with a central angle of a degrees it is 2πr · a/360.",
+  "latex": "s = r\\theta",
+  "spoken_en": "s equals r theta",
+  "examples": [
+    {
+      "en": "Find the arc length of a sector with radius 8 cm and central angle 45°.",
+      "ja": "半径 8 cm、中心角 45° の扇形の弧の長さを求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "The arc length formula s = rθ holds only when θ is measured in radians.",
+      "ja": "弧の長さの公式 s = rθ は、θ がラジアンのときだけ成り立つ。",
+      "register": "written"
+    },
+    {
+      "en": "The length of the arc is just the fraction of the circle times the whole circumference.",
+      "ja": "弧の長さは、円全体に対する割合に円周の長さを掛けるだけ。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは arc length とだけ言うと、積分で求める曲線の長さ（arc-length-of-a-curve）の意味がほとんど。このエントリは arc length of a sector ／ arc length of a circle ／ arc length formula ／ length of the arc などの円の形で数えた。",
+    "度数法なら 2πr × a/360、弧度法（数II）なら rθ。rθ に度の値を入れない。"
+  ],
+  "related": [
+    "arc-length-of-a-curve",
+    "area-of-a-sector",
+    "radian-measure",
+    "chord"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "arc length of the sector | arc length of a sector | arc length of a circle | arc length of the circle | arc length formula | length of the arc | length of an arc": 9
+    },
+    "written": {
+      "arc length of the sector | arc length of a sector | arc length of a circle | arc length of the circle | arc length formula | length of the arc | length of an arc": 24
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "id": "angle",
+  "ja": {
+    "term": "角",
+    "reading": "かく",
+    "alt": []
+  },
+  "en": {
+    "term": "angle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中2",
+      "数I",
+      "数A"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry",
+      "Integrated Math 1",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "1 点から出る 2 本の半直線がつくる図形。また、その開きの大きさ（角度）。",
+  "definition_en": "The figure formed by two rays that start from the same point, or the size of the opening between them.",
+  "latex": "\\angle ABC",
+  "spoken_en": "angle A B C",
+  "examples": [
+    {
+      "en": "This is a right angle, so it's 90 degrees. Anything smaller is acute, and anything between 90 and 180 is obtuse.",
+      "ja": "これは直角だから 90°。それより小さいのが鋭角、90° と 180° の間が鈍角だよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the measure of angle ABC.",
+      "ja": "∠ABC の大きさを求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "Classify each angle as acute, right, obtuse, or straight.",
+      "ja": "それぞれの角が鋭角・直角・鈍角・平角のどれかを答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "measure of an angle",
+      "ja": "角の大きさ"
+    },
+    {
+      "en": "find the angle",
+      "ja": "角度を求める"
+    }
+  ],
+  "pitfalls": [
+    "鋭角 acute angle、直角 right angle、鈍角 obtuse angle、平角 straight angle。right angle の right は「右」ではなく「直」の意味。",
+    "∠ABC は英語でも頂点が真ん中の B（the vertex is B）。英語では角そのもの ∠ABC と、その大きさ m∠ABC を記号で書き分けることがある。日本の教科書は区別せず ∠ABC = 60° と書く。"
+  ],
+  "related": [
+    "vertex",
+    "triangle",
+    "inscribed-angle",
+    "degree-measure",
+    "radian"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "angle": 2360,
+      "find the angle": 8
+    },
+    "written": {
+      "angle": 1634,
+      "measure of an angle": 9,
+      "find the angle": 45
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

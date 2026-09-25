@@ -1,0 +1,87 @@
+{
+  "id": "alternating-expression",
+  "ja": {
+    "term": "交代式",
+    "reading": "こうたいしき",
+    "alt": []
+  },
+  "en": {
+    "term": "alternating polynomial",
+    "alt": [
+      "alternating expression"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで alternating polynomial は話・書とも 0 件、alternating expression は話し言葉 2 件（すべて 3Blue1Brown）・書き言葉 0 件で、OpenStax の 6 冊にも出てこない）。大学の代数では alternating polynomial と呼ぶ。英語で説明するときは swapping two variables changes the sign と性質を言う。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "どの 2 つの文字を入れ替えても、符号だけが変わる多項式。3 文字の交代式は (a − b)(b − c)(c − a) で割り切れる。",
+  "definition_en": "A polynomial that only changes sign when any two of its variables are interchanged, such as x − y or x²y − xy².",
+  "latex": "f(y, x) = -f(x, y)",
+  "spoken_en": "f of y comma x equals negative f of x comma y",
+  "examples": [
+    {
+      "en": "Swap a and b and the whole thing just changes sign, so it's an alternating polynomial, and a − b has to be a factor.",
+      "ja": "a と b を入れ替えると全体の符号だけが変わるので交代式だ。だから a − b を因数にもつ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Factor the alternating polynomial a²(b − c) + b²(c − a) + c²(a − b).",
+      "ja": "交代式 a²(b − c) + b²(c − a) + c²(a − b) を因数分解せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "因数分解では、交代式が (a − b)(b − c)(c − a) を因数にもつことを使い、残りは係数を比べて決める。",
+    "alternating は交代級数（alternating series）の「符号が交互に変わる」の意味にもなるので、alternating expression だけでは交代式の意味に取られないことがある。"
+  ],
+  "related": [
+    "symmetric-expression",
+    "factor-theorem",
+    "compare-coefficients",
+    "polynomial"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "交代式",
+      "en": "Alternating polynomial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "alternating expression": 2
+    },
+    "sources": [
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 2 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

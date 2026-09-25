@@ -1,0 +1,122 @@
+{
+  "id": "vertex",
+  "ja": {
+    "term": "頂点",
+    "reading": "ちょうてん",
+    "alt": []
+  },
+  "en": {
+    "term": "vertex",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数I"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry",
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "角をつくる 2 辺の共通の端点、多角形・多面体の辺が集まる点。また、放物線と軸の交点。",
+  "definition_en": "The common endpoint of the two sides of an angle, a corner point of a polygon or solid, or the point where a parabola meets its axis of symmetry.",
+  "latex": "y = a(x - h)^2 + k",
+  "spoken_en": "y equals a times the quantity x minus h squared, plus k; the vertex is at h comma k",
+  "examples": [
+    {
+      "en": "The vertex of this parabola is at (2, −1), and it opens up, so that's the minimum.",
+      "ja": "この放物線の頂点は (2, −1) で、下に凸だから、そこが最小値だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the vertex of the parabola y = x² − 4x + 3.",
+      "ja": "放物線 y = x² − 4x + 3 の頂点を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "A triangle has three vertices, and the sum of its interior angles is 180°.",
+      "ja": "三角形には頂点が 3 つあり、内角の和は 180° である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "vertex of the parabola",
+      "ja": "放物線の頂点"
+    }
+  ],
+  "pitfalls": [
+    "複数形は vertices（ヴァーティシーズ）。三角形の頂点を指すときも the vertices of the triangle と複数形になる。",
+    "グラフ理論（点と辺のグラフ）の頂点も vertex だが、意味が違うので別のエントリ（頂点（グラフ））にした。",
+    "放物線の頂点は、平方完成して y = a(x − h)² + k の形にしたときの (h, k)。x 座標は −b/(2a) でも求められる。"
+  ],
+  "related": [
+    "vertex-graph",
+    "angle",
+    "axis-of-symmetry",
+    "completing-the-square",
+    "triangle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "頂点",
+      "en": "Vertex (geometry)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "vertex": 508,
+      "vertex of the parabola": 1
+    },
+    "written": {
+      "vertex": 784,
+      "vertex of the parabola": 9
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

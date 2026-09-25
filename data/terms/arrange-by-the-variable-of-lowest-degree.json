@@ -1,0 +1,79 @@
+{
+  "id": "arrange-by-the-variable-of-lowest-degree",
+  "ja": {
+    "term": "最低次の文字について整理する",
+    "reading": "さいていじのもじについてせいりする",
+    "alt": []
+  },
+  "en": {
+    "term": "arrange by the variable of lowest degree",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで arrange by the variable of lowest degree は話・書とも 0 件）。英語の見出しは本プロジェクトの訳語。日本の因数分解の技法で、英語で説明するなら「次数の最も低い文字について式を整理する」と手順をそのまま言う。いちばん近い米国の手法は factoring by grouping（項をまとめて共通因数をくくる）だが、同じ手法ではない。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "複数の文字を含む式を因数分解するとき、次数が最も低い文字に注目し、その文字についての多項式として降べきの順に整理する。",
+  "definition_en": "In factoring an expression with several variables, to rewrite it as a polynomial in the variable of lowest degree, collecting the terms by powers of that variable.",
+  "latex": "a^2b - a^2c - b^3 + b^2c = -(a^2 - b^2)c + b(a^2 - b^2)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Here y only shows up to the first power, so arrange by the variable of lowest degree: y(x + 1) + (x + 1)².",
+      "ja": "ここでは y が 1 次までしか出てこないので、最低次の文字 y について整理すると y(x + 1) + (x + 1)² になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Factor a²b − a²c − b³ + b²c. Arrange by the variable of lowest degree, c: −(a² − b²)c + b(a² − b²) = (a + b)(a − b)(b − c).",
+      "ja": "a²b − a²c − b³ + b²c を因数分解せよ。最低次の文字 c について整理すると −(a² − b²)c + b(a² − b²) = (a + b)(a − b)(b − c)。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の見出しは訳語で、決まった言い方ではない。英語で説明するときは手順を言葉にする。「c について整理する」は write it as a polynomial in c、「c でくくる」は factor out c のように、手順を言葉で説明する。",
+    "factoring by grouping は項を 2 つずつ組にしてくくる手法で、1 つの文字について整理する手順とは別物。結果として同じ組分けになることはある。"
+  ],
+  "related": [
+    "polynomial",
+    "common-factor",
+    "write-in-descending-order",
+    "symmetric-expression",
+    "alternating-expression"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

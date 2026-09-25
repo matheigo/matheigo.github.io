@@ -1,0 +1,128 @@
+{
+  "id": "triangle",
+  "ja": {
+    "term": "三角形",
+    "reading": "さんかくけい",
+    "alt": []
+  },
+  "en": {
+    "term": "triangle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数A",
+      "数I"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "同じ直線上にない 3 点を線分で結んでできる図形。3 つの内角の和は 180° になる。",
+  "definition_en": "A polygon with three sides, formed by joining three points that do not lie on one line; its three interior angles add up to 180°.",
+  "latex": "\\angle A + \\angle B + \\angle C = 180^\\circ",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The three angles of a triangle always add up to 180 degrees, so the missing one is 65.",
+      "ja": "三角形の 3 つの角の和はいつも 180° だから、残りの角は 65° だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Classify the triangle with side lengths 5, 7, and 9 as acute, right, or obtuse.",
+      "ja": "3 辺の長さが 5, 7, 9 の三角形は、鋭角三角形・直角三角形・鈍角三角形のどれか。",
+      "register": "written"
+    },
+    {
+      "en": "Triangle ABC satisfies a cos A = b cos B. What kind of triangle is ABC?",
+      "ja": "△ABC が a cos A = b cos B を満たすとき、△ABC はどのような三角形か。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "right triangle",
+      "ja": "直角三角形"
+    },
+    {
+      "en": "classify the triangle",
+      "ja": "三角形を分類する"
+    }
+  ],
+  "pitfalls": [
+    "三角形の分類は、角で acute ／ right ／ obtuse triangle（鋭角・直角・鈍角）、辺で scalene ／ isosceles ／ equilateral triangle（不等辺・二等辺・正三角形）。",
+    "「三角形の形状を決定せよ」を shape of the triangle と直訳するより、What kind of triangle is ABC? や acute, right, or obtuse? のように何三角形かを問う形にすると意味がはっきりする。余弦定理で最大辺の 2 乗と他の 2 辺の 2 乗の和を比べるのは同じ。",
+    "△ABC は英語でも triangle ABC と読む。"
+  ],
+  "related": [
+    "angle",
+    "vertex",
+    "isosceles-triangle",
+    "congruent",
+    "solving-triangles"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "三角形",
+      "en": "Triangle"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "triangle": 1004,
+      "right triangle": 262
+    },
+    "written": {
+      "triangle": 647,
+      "right triangle": 142
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

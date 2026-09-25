@@ -1,0 +1,104 @@
+{
+  "id": "element",
+  "ja": {
+    "term": "要素",
+    "reading": "ようそ",
+    "alt": [
+      "元"
+    ]
+  },
+  "en": {
+    "term": "element",
+    "alt": [
+      "member"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "集合を作っている一つ一つのもの。a が集合 A の要素であることを a ∈ A と書き、a は A に属するという。",
+  "definition_en": "One of the objects that make up a set; a ∈ A says that a is an element of the set A.",
+  "latex": "a \\in A",
+  "spoken_en": "a is an element of A (or: a is in A)",
+  "examples": [
+    {
+      "en": "Is 5 in this set? Yeah, 5 is an element of A, but 4 isn't.",
+      "ja": "5 はこの集合に入っている？ そう、5 は A の要素だけど 4 は違う。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether −3 is an element of the set {x | x² + x − 6 = 0}.",
+      "ja": "−3 が集合 {x | x² + x − 6 = 0} の要素かどうかを調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "∈ は is an element of と読むほか、話し言葉では is in とも言う。「A に属する」は belongs to A。",
+    "element は行列の「成分」の意味でも使われるため、用例コーパスでは is an element of ／ element of the set などの集合の形だけを数えた。行列の成分の見出しは entry。",
+    "話し言葉では element の形・member の形とも 4 件ずつで、どちらが多いとは言えない。見出しの register は書き言葉。"
+  ],
+  "related": [
+    "set",
+    "entry",
+    "solution-set",
+    "all"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "元 (数学)",
+      "en": "Element of a set"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "member of the set | members of the set": 4,
+      "is an element of | are elements of | element of the set | elements of the set | elements of a set": 4
+    },
+    "written": {
+      "is an element of | are elements of | element of the set | elements of the set | elements of a set": 13
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

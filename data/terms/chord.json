@@ -1,0 +1,105 @@
+{
+  "id": "chord",
+  "ja": {
+    "term": "弦",
+    "reading": "げん",
+    "alt": []
+  },
+  "en": {
+    "term": "chord",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数A"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "円周上の 2 点を結ぶ線分。中心を通る弦が直径で、弦の中で最も長い。",
+  "definition_en": "A line segment whose two endpoints lie on a circle; a chord through the center is a diameter, the longest chord.",
+  "latex": "2\\sqrt{r^2 - d^2}",
+  "spoken_en": "two times the square root of r squared minus d squared (the length of a chord at distance d from the center)",
+  "examples": [
+    {
+      "en": "A chord just connects two points on the circle, and if it goes through the center, it's a diameter.",
+      "ja": "弦は円周上の 2 点を結んだだけの線分で、中心を通るならそれが直径だよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A chord of length 8 is 3 units from the center of a circle. Find the radius of the circle.",
+      "ja": "円の中心からの距離が 3 である長さ 8 の弦がある。この円の半径を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "The perpendicular from the center of a circle to a chord bisects the chord.",
+      "ja": "円の中心から弦に引いた垂線は、その弦を 2 等分する。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "length of the chord",
+      "ja": "弦の長さ"
+    }
+  ],
+  "pitfalls": [
+    "用例コーパスには幾何の教科書が入っていないので、chord は話し言葉 3 件・書き言葉 1 件しかない。見出しは OpenStax Algebra and Trigonometry の呼び方による。",
+    "綴りは chord（h が入る）。cord（ひも）と書き間違えない。弧は arc で、弦とは別の語。"
+  ],
+  "related": [
+    "segment",
+    "arc-length",
+    "inscribed-angle",
+    "cyclic-quadrilateral",
+    "perpendicular-bisector"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "弦 (数学)",
+      "en": "Chord (geometry)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "chord": 3
+    },
+    "written": {
+      "chord": 1
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 chord（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

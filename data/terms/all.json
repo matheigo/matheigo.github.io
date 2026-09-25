@@ -1,0 +1,148 @@
+{
+  "id": "all",
+  "ja": {
+    "term": "すべての",
+    "reading": "すべての",
+    "alt": [
+      "任意の"
+    ]
+  },
+  "en": {
+    "term": "for all",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "for all",
+        "register": "both",
+        "note": "話し言葉・書き言葉とも首位。話し言葉で 421 件（MIT OCW 214・Khan Academy 128・3Blue1Brown 35 ほか 44）、書き言葉で 619 件（OpenStax Calculus 386・MIT の講義ノート 148・OpenStax Algebra and Trigonometry 60 ほか 25）。"
+      },
+      {
+        "term": "for any",
+        "register": "both",
+        "note": "「任意の」に近い。話し言葉で 349 件（Khan Academy 160・MIT OCW 108・3Blue1Brown 41 ほか 40）、書き言葉で 366 件（OpenStax Calculus 160・OpenStax Algebra and Trigonometry 96・MIT の講義ノート 87 ほか 23）。"
+      },
+      {
+        "term": "for each",
+        "register": "both",
+        "note": "一つ一つについて、の感じが強い。話し言葉で 247 件（Khan Academy 106・MIT OCW 89・3Blue1Brown 30 ほか 22）、書き言葉で 478 件（OpenStax Calculus 155・OpenStax Algebra and Trigonometry 141・OpenStax Introductory Statistics 128 ほか 54）。"
+      },
+      {
+        "term": "for every",
+        "register": "both",
+        "note": "話し言葉で 161 件（MIT OCW 67・Khan Academy 40・Professor Leonard 35 ほか 19）、書き言葉で 137 件（MIT の講義ノート 48・OpenStax Calculus 45・OpenStax Algebra and Trigonometry 27 ほか 17）。"
+      }
+    ]
+  },
+  "pos": "adjective",
+  "mapping": "near",
+  "mapping_note": "日本語の「すべての」「任意の」に当たる英語は 1 つに決まらず、用例コーパスでは for all ／ for any ／ for each ／ for every が話・書とも各 100 件を超えて使われている（件数は各 variant の note）。どれも「すべての〜について」の意味で使える。論理記号 ∀ は for all と読む。",
+  "domains": [
+    "algebra",
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2",
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "対象の範囲に入るものの一つ一つについて例外なく、の意味。「任意の」も同じ意味で、どれを選んでも成り立つことを表す。",
+  "definition_en": "Without exception: for every object in the given range, so that the statement holds whichever one you pick.",
+  "latex": "\\forall x \\in \\mathbb{R},\\ x^2 \\ge 0",
+  "spoken_en": "for all real numbers x, x squared is greater than or equal to zero",
+  "examples": [
+    {
+      "en": "This inequality holds for any x, so the graph never goes below the x-axis.",
+      "ja": "この不等式は任意の x で成り立つから、グラフは x 軸より下に行かない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove that x² − 2x + 2 > 0 for all real numbers x.",
+      "ja": "すべての実数 x について x² − 2x + 2 > 0 であることを証明せよ。",
+      "register": "written"
+    },
+    {
+      "en": "For each positive integer n, let aₙ = 2n + 1.",
+      "ja": "各正の整数 n について aₙ = 2n + 1 とする。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "true for all x",
+      "ja": "すべての x で成り立つ"
+    }
+  ],
+  "pitfalls": [
+    "any は否定文・疑問文・if 節では「どれか 1 つでも」の意味になる（if f(x) = 0 for any x は「ある x で f(x) = 0 なら」）。「すべての」をはっきり言いたい答案では for all が紛れない。",
+    "日本語の「すべての x について」は文頭に置くことが多いが、英語の for all x は文末に置くのがふつう（x² ≥ 0 for all x）。"
+  ],
+  "related": [
+    "exist",
+    "at-least-one",
+    "proof",
+    "counterexample",
+    "set"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "for each": 247,
+      "for every": 161,
+      "for all": 421,
+      "for any": 349,
+      "true for all x": 3
+    },
+    "written": {
+      "for all": 619,
+      "for any": 366,
+      "for each": 478,
+      "for every": 137,
+      "true for all x": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

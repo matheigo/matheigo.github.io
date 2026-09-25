@@ -1,0 +1,99 @@
+{
+  "id": "common-factor",
+  "ja": {
+    "term": "共通因数",
+    "reading": "きょうつういんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "common factor",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "中3",
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "式のどの項にも共通して含まれる因数。分配法則を逆に使って、かっこの外にくくり出せる。",
+  "definition_en": "A factor shared by every term of an expression (or by every number in a list); by the distributive property it can be pulled out in front of parentheses.",
+  "latex": "ab + ac = a(b + c)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Both terms have a common factor of 3x, so factor out the 3x first.",
+      "ja": "どちらの項にも共通因数 3x があるから、まず 3x をくくり出そう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Factor 6x²y − 9xy² by factoring out the common factor.",
+      "ja": "6x²y − 9xy² を、共通因数をくくり出して因数分解せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「共通因数をくくり出す」は factor out the common factor。「くくる」を直訳しない。",
+    "用例コーパスでは greatest common factor（最大公約数、GCF）を除いて数えた。数の公約数も英語では common factor という。"
+  ],
+  "related": [
+    "polynomial",
+    "multiple",
+    "prime-factorization"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "!greatest common factor": 59
+    },
+    "written": {
+      "!greatest common factor": 49
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

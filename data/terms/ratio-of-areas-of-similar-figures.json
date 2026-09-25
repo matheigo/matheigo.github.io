@@ -1,0 +1,89 @@
+{
+  "id": "ratio-of-areas-of-similar-figures",
+  "ja": {
+    "term": "相似な図形の面積比",
+    "reading": "そうじなずけいのめんせきひ",
+    "alt": [
+      "相似比と面積比"
+    ]
+  },
+  "en": {
+    "term": "ratio of the areas",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで ratio of the areas は話し言葉 1 件・書き言葉 2 件）。英語では「面積比」を用語として立てず、If two figures are similar with scale factor k, the ratio of the areas is k². のように事実を文で述べる。相似比に当たる語は scale factor。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "相似な 2 つの図形の面積の比。相似比が m : n なら、面積比は m² : n² になる。",
+  "definition_en": "The ratio of the areas of two similar figures. If the scale factor is m : n, the areas are in the ratio m² : n².",
+  "latex": "\\frac{A_1}{A_2} = k^2",
+  "spoken_en": "A one over A two equals k squared",
+  "examples": [
+    {
+      "en": "If every side doubles, the ratio of the areas isn't 2 to 1, it's 4 to 1.",
+      "ja": "辺がすべて 2 倍になっても、面積比は 2 : 1 ではなく 4 : 1。",
+      "register": "spoken"
+    },
+    {
+      "en": "Triangles ABC and DEF are similar with AB : DE = 2 : 3. Find the ratio of the areas of the two triangles.",
+      "ja": "△ABC ∽ △DEF で AB : DE = 2 : 3 のとき、2 つの三角形の面積比を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "体積比は相似比の 3 乗（m³ : n³）。面積比の 2 乗と混同しない。",
+    "相似の記号 ∽ は日本の書き方。英語では ~ を使う（△ABC ~ △DEF）。"
+  ],
+  "related": [
+    "area",
+    "triangle",
+    "congruent"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "ratio of the areas": 1
+    },
+    "written": {
+      "ratio of the areas": 2
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 1 件 ／ 書 2 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

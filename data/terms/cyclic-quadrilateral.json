@@ -1,0 +1,94 @@
+{
+  "id": "cyclic-quadrilateral",
+  "ja": {
+    "term": "円に内接する四角形",
+    "reading": "えんにないせつするしかくけい",
+    "alt": []
+  },
+  "en": {
+    "term": "cyclic quadrilateral",
+    "alt": [
+      "inscribed quadrilateral"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3",
+      "数A"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "4 つの頂点がすべて 1 つの円周上にある四角形。向かい合う角の和は 180° で、逆に対角の和が 180° の四角形は円に内接する。",
+  "definition_en": "A quadrilateral whose four vertices all lie on one circle. Its opposite angles are supplementary, and conversely any quadrilateral with supplementary opposite angles is cyclic.",
+  "latex": "\\angle A + \\angle C = 180^\\circ",
+  "spoken_en": "angle A plus angle C equals 180 degrees",
+  "examples": [
+    {
+      "en": "In a cyclic quadrilateral, opposite angles add up to 180, so this one is 180 minus 75, which is 105.",
+      "ja": "円に内接する四角形では対角の和が 180° なので、この角は 180° − 75° = 105°。",
+      "register": "spoken"
+    },
+    {
+      "en": "ABCD is a cyclic quadrilateral with ∠A = 2∠C. Find ∠A.",
+      "ja": "四角形 ABCD は円に内接し、∠A = 2∠C である。∠A の大きさを求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "Prove that ABCD is a cyclic quadrilateral by showing that ∠B + ∠D = 180°.",
+      "ja": "∠B + ∠D = 180° を示して、四角形 ABCD が円に内接することを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "opposite angles of a cyclic quadrilateral",
+      "ja": "円に内接する四角形の対角"
+    }
+  ],
+  "pitfalls": [
+    "主語の向きに注意。the quadrilateral is inscribed in the circle は「四角形が円に内接する」、the circle is circumscribed about the quadrilateral は「円が四角形に外接する」で、同じ図を逆から言っている。",
+    "四角形が円に内接する条件は、対角の和が 180° であること、または 1 つの外角がそれと隣り合わない内角（内対角）に等しいこと。",
+    "用例コーパスでは cyclic quadrilateral・inscribed quadrilateral とも 0 件（コーパスに Geometry の教科書が無い）。"
+  ],
+  "related": [
+    "inscribed-angle",
+    "angle",
+    "vertex",
+    "chord"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "円に内接する四角形",
+      "en": "Cyclic quadrilateral"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

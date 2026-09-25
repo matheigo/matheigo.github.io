@@ -1,0 +1,95 @@
+{
+  "id": "slant-height",
+  "ja": {
+    "term": "母線",
+    "reading": "ぼせん",
+    "alt": [
+      "斜高"
+    ]
+  },
+  "en": {
+    "term": "slant height",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "「母線」は円錐（や円柱）の側面をつくる線分そのもの。英語の slant height はその長さ、つまり円錐の頂点から底面の円周までの側面に沿った距離を指し、正角錐では側面の三角形の高さ（日本語の「斜高」）にも使う。線分そのものを指す語には generatrix があるが専門的な語。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "円錐の頂点と底面の円周上の点を結ぶ線分。英語の slant height はその長さを指す。",
+  "definition_en": "The distance from the apex of a cone to the edge of its base, measured along the lateral surface; for a regular pyramid, the height of one of its triangular faces.",
+  "latex": "\\ell = \\sqrt{r^2 + h^2}",
+  "spoken_en": "the slant height is the square root of r squared plus h squared",
+  "examples": [
+    {
+      "en": "The slant height is the hypotenuse of this right triangle, so it's the square root of r squared plus h squared.",
+      "ja": "母線はこの直角三角形の斜辺だから、長さは √(r² + h²) になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "A cone has a base radius of 3 cm and a slant height of 5 cm. Find its lateral surface area.",
+      "ja": "底面の半径が 3 cm、母線の長さが 5 cm の円錐の側面積を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "A square pyramid has a base edge of 6 and a slant height of 5. Find its surface area.",
+      "ja": "底面の 1 辺が 6、斜高が 5 の正四角錐の表面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "slant height of the cone",
+      "ja": "円錐の母線（の長さ）"
+    }
+  ],
+  "pitfalls": [
+    "日本語の「母線」は線分、英語の slant height は長さ。「母線の長さ」も英語では slant height だけで言える。",
+    "height（高さ）は頂点から底面に下ろした垂線の長さで、slant height とは別。円錐では高さ・底面の半径・母線が直角三角形をつくる。",
+    "用例コーパスでは話し言葉 13 件がすべて The Organic Chemistry Tutor、書き言葉は 3 件（すべて OpenStax Calculus）。"
+  ],
+  "related": [
+    "area",
+    "vertex",
+    "surface-area-of-revolution",
+    "triangle"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "slant height": 13
+    },
+    "written": {
+      "slant height": 3
+    },
+    "sources": [
+      "openstax-calculus",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

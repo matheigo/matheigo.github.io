@@ -1,0 +1,124 @@
+{
+  "id": "multiple",
+  "ja": {
+    "term": "倍数",
+    "reading": "ばいすう",
+    "alt": []
+  },
+  "en": {
+    "term": "multiple",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "数A"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "ある整数に整数を掛けてできる数。整数 k を使って b = ak と書けるとき、b は a の倍数である。",
+  "definition_en": "A number you get by multiplying a given integer by an integer; b is a multiple of a when b = ak for some integer k.",
+  "latex": "b = ak \\quad (k \\in \\mathbb{Z})",
+  "spoken_en": "b equals a times k for some integer k",
+  "examples": [
+    {
+      "en": "Twelve is a multiple of four, because four times three is twelve.",
+      "ja": "12 は 4 の倍数だ。4 × 3 = 12 だから。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove that n³ − n is a multiple of 6 for every integer n.",
+      "ja": "すべての整数 n について、n³ − n は 6 の倍数であることを証明せよ。",
+      "register": "written"
+    },
+    {
+      "en": "Any multiple of pi works here, so write x equals pi over 4 plus n pi.",
+      "ja": "π の整数倍なら何を足してもいいので、x = π/4 + nπ と書く。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "multiple of 3",
+      "ja": "3 の倍数"
+    },
+    {
+      "en": "is a multiple of 6",
+      "ja": "6 の倍数である"
+    }
+  ],
+  "pitfalls": [
+    "「3 の倍数」は a multiple of 3（冠詞 a を付ける）。「〜の倍数である」は is a multiple of 〜。公倍数は common multiple、最小公倍数は least common multiple (LCM)。",
+    "用例コーパスでは multiple of の形で数えた（multiple times のような「多くの」の意味を除くため）。件数には a multiple of π やベクトルの定数倍（scalar multiple）も入っている。"
+  ],
+  "related": [
+    "common-factor",
+    "prime-factorization",
+    "division-algorithm",
+    "remainder"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "倍数",
+      "en": "Multiple (mathematics)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "multiple of": 227,
+      "multiple of 3": 21
+    },
+    "written": {
+      "multiple of": 111,
+      "multiple of 3": 15
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -83,6 +83,8 @@ const SAME_EN_TERM: [string, string][] = [
   ["geometric-mean", "geometric-middle-term"], // 相乗平均 ／ 等比中項
   ["argument", "argument-of-a-complex-number"], // 真数 ／ 偏角（英語はどちらも関数の引数と同じ argument）
   ["sign-chart", "sign-chart-inequality"], // 増減表 ／ 不等式を解く符号図（英語はどちらも sign chart）
+  ["arc-length", "arc-length-of-a-curve"], // 弧の長さ（円） ／ 曲線の長さ
+  ["vertex", "vertex-graph"], // 頂点（図形・放物線） ／ 頂点（グラフ理論）
 ];
 const intendedHomonym = (a: string, b: string) =>
   SAME_EN_TERM.some(([x, y]) => (x === a && y === b) || (x === b && y === a));
@@ -97,6 +99,8 @@ const intendedHomonym = (a: string, b: string) =>
 const SAME_JA: [string, string, string][] = [
   // 三角形の成立条件 |a + b| ≦ |a| + |b| ／ 三角関数を含む不等式 (DECISIONS, Phase 2 統計・ベクトルの単元の前の修正)
   ["三角不等式", "triangle-inequality", "trigonometric-inequality"],
+  // 集合の要素 ／ 行列の成分 (Phase 2 幾何・離散の単元)
+  ["要素", "element", "entry"],
 ];
 
 // ------------------------------------------------------------ per-entry ----

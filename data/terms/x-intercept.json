@@ -1,0 +1,113 @@
+{
+  "id": "x-intercept",
+  "ja": {
+    "term": "x 軸との交点",
+    "reading": "えっくすじくとのこうてん",
+    "alt": [
+      "x 軸との共有点",
+      "x 切片"
+    ]
+  },
+  "en": {
+    "term": "x-intercept",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "グラフが x 軸と交わる（または接する）点。y = 0 とおいて求める。",
+  "definition_en": "A point where a graph crosses or touches the x-axis, found by setting y = 0; the word is also used for just the x-coordinate of that point.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To find the x-intercepts, set y equal to zero and solve for x.",
+      "ja": "x 軸との交点を求めるには、y = 0 とおいて x について解く。",
+      "register": "spoken"
+    },
+    {
+      "en": "For what values of k does the graph of y = x² + kx + 4 have two x-intercepts?",
+      "ja": "y = x² + kx + 4 のグラフが x 軸と異なる 2 点で交わるような k の値の範囲を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "The discriminant is negative, so this parabola has no x-intercepts.",
+      "ja": "判別式が負だから、この放物線は x 軸と共有点をもたない。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "find the x-intercepts",
+      "ja": "x 軸との交点を求める"
+    },
+    {
+      "en": "how many x-intercepts",
+      "ja": "x 軸との共有点の個数"
+    }
+  ],
+  "pitfalls": [
+    "日本語の「交点」は点 (3, 0) で答えるが、英語の x-intercept は x 座標の 3 だけを指すこともある。どちらで答えるかは問題文を見る。",
+    "グラフが x 軸に接する点（重解）も x-intercept に数える。「x 軸との共有点」の訳も x-intercept でよく、その個数は判別式の符号で決まる。"
+  ],
+  "related": [
+    "discriminant",
+    "point-of-intersection",
+    "coordinates",
+    "axis-of-symmetry",
+    "zeros-of-a-polynomial"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "x-intercept": 89,
+      "find the x-intercepts": 2
+    },
+    "written": {
+      "x-intercept": 81,
+      "find the x-intercepts": 16
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

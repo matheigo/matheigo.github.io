@@ -1,0 +1,114 @@
+{
+  "id": "segment",
+  "ja": {
+    "term": "線分",
+    "reading": "せんぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "line segment",
+    "alt": [],
+    "variants": [
+      {
+        "term": "segment",
+        "register": "spoken",
+        "note": "直前に line が付かない segment として数えた（line segment の segment は数えない）。話し言葉で 156 件（MIT OCW 68・The Organic Chemistry Tutor 57・Khan Academy 17 ほか 14）、書き言葉で 43 件（OpenStax Calculus 21・MIT の講義ノート 21・OpenStax Algebra and Trigonometry 1）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "用例コーパスでは、書き言葉は line segment（198 件対 segment だけの 43 件）、話し言葉は line を省いた segment（156 件対 line segment 50 件）が多い。英語の line は両方向に限りなく伸びる直線で、線分の意味にはならない。英語の記法では線分 AB を AB の上に横線を引いて表し、その長さは横線なしの AB と書き分ける（日本の教科書では線分も長さも AB）。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "直線上の 2 点と、その間にあるすべての点からなる図形。2 点を端点という。",
+  "definition_en": "The part of a line made up of two points, called its endpoints, and all the points between them.",
+  "latex": "\\overline{AB}",
+  "spoken_en": "segment A B",
+  "examples": [
+    {
+      "en": "Draw a segment from A to B, and call its midpoint M.",
+      "ja": "A から B へ線分を引いて、その中点を M としよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the length of line segment AB, where A(1, 2) and B(4, 6).",
+      "ja": "A(1, 2), B(4, 6) のとき、線分 AB の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "直線 AB は line AB、半直線 AB は ray AB で、線分とは別の語。線分のつもりで line とだけ言うと、両方向に伸びた直線になる。",
+    "「線分の長さ」は the length of segment AB と言うか、単に AB と書く。",
+    "話し言葉の segment 156 件のうち 57 件は The Organic Chemistry Tutor 1 ソース。"
+  ],
+  "related": [
+    "midpoint",
+    "perpendicular-bisector",
+    "distance",
+    "chord",
+    "triangle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "線分",
+      "en": "Line segment"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "!line segment": 156,
+      "line segment": 50
+    },
+    "written": {
+      "line segment": 198,
+      "!line segment": 43
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}
