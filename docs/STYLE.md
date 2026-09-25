@@ -13,8 +13,10 @@ PLAN.md §6 をそのまま作業用に移したもの。**生成時に毎バッ
    首位だけが 10 件以上（2 位は 10 件未満）なら 3 倍に届かなくても ①。2 位は少数の variant にする。
    ③ 総件数 10 件未満 → 判断不能。話・書とも ③ のときは次の順に決める（register は主張しない）。
      ・mapping near ／ none で全候補が話・書とも 10 件未満 → 「英語に決まった言い方がない」（`corpus-no-fixed-expression`）。
-       mapping_note にそう書く。英語の名前をそのまま見出しにした語（LIATE）は除く。
-     ・それ以外 → 見出しは CED（AP Calculus ／ AP Statistics）→ OpenStax → Nicholson ／ Levin の順に最初に見つかった呼び方（`corpus-reference-fallback`。docs/SOURCES.md）。
+       mapping_note にそう書く。英語の名前をそのまま見出しにした語（LIATE）、CED の呼び方・IM の glossary の見出しになっている語、
+       mapping none で ja が本プロジェクトの訳語の語（two-column proof など米国の名前が元の語）は除く。
+     ・それ以外 → 見出しは CED（AP Calculus ／ AP Statistics）→ OpenStax と IM（同じ段）→ Nicholson ／ Levin → 英語版 Wikipedia の記事名の順に最初に見つかった呼び方（`corpus-reference-fallback`。docs/SOURCES.md）。
+       Nicholson ／ Levin ／ Wikipedia で決まった語は mapping_note に「米国の高校課程（CED・OpenStax・IM）では扱わない」と件数を書く。
      ・どれにも無い → `corpus-undecided` で人間レビューへ。自分で判断して埋めない。
 2. 米国優先。英国異形は `en.uk` に入れる（math/maths、negative three / minus three、parentheses / brackets、trig / trigonometry）。
 3. 直訳禁止リスト（下）に触れる語は `mapping` を正直に付ける。

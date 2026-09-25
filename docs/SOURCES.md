@@ -24,7 +24,7 @@ count.ts と probe.ts は `scripts/corpus/references.ts` で読む。
 
 3 か 4 で決まった語（CED・OpenStax・IM のどの候補も 0 件）は、mapping_note に「米国の高校課程（CED・OpenStax・IM）では扱わない」と件数を書く
 （decide が「直すこと」に出す）。
-「英語に決まった言い方がない」の例外（英語の名前があると分かっているもの）に数えるのは 1 の CED だけ（今までどおり）。
+「英語に決まった言い方がない」の例外（英語の名前があると分かっているもの）に数えるのは、1 の CED の呼び方、IM の glossary の見出し、mapping none で ja が本プロジェクトの訳語の語（米国の名前が元）、ja と en が同じ語（LIATE）（DECISIONS「Phase 2 幾何・離散の単元 2」）。
 
 ## 一覧
 
