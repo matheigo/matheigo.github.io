@@ -1032,3 +1032,93 @@ PHASE2E_TO_PHRASES = [
     "represent-with-a-graph",
     "checking-conditions",
 ]
+
+# ------------------------------- AP Statistics の CED 2026 年版（5 単元）への付け替え
+# docs/DECISIONS.md "Phase 2 幾何・離散の単元の前の修正". The ledger's AP
+# Statistics units were the nine units of the old CED; the CED in use (Effective
+# Fall 2026, docs/SOURCES.md) has five. Applied by fix_phase1.py step 13, after
+# every merge, to the rows, the phrases candidates and out-of-scope. The old ids
+# are not used anywhere after this step.
+AP_STATS_2026_UNITS = {
+    "us-ap-statistics-1-exploring-and-collecting-data":
+        ("Unit 1: Exploring One-Variable Data and Collecting Data",
+         ["variables", "tables and graphs for one variable", "summary statistics", "comparing distributions",
+          "random sampling and problems with sampling", "experimental design"],
+         [("中1 データの活用", "some"), ("中3 標本調査", "some"), ("数学I データの分析", "most")]),
+    "us-ap-statistics-2-probability-and-distributions":
+        ("Unit 2: Probability, Random Variables, and Probability Distributions",
+         ["two categorical variables", "simulation", "probability, mutually exclusive and independent events",
+          "conditional probability", "random variables and their parameters", "binomial and normal distributions",
+          "sampling distributions and the central limit theorem"],
+         [("数学A 場合の数と確率", "most"), ("数学B 統計的な推測", "most")]),
+    "us-ap-statistics-3-inference-for-proportions":
+        ("Unit 3: Inference for Categorical Data: Proportions",
+         ["estimators", "confidence intervals for a proportion and a difference of proportions",
+          "tests for a proportion and a difference of proportions", "p-values", "Type I and Type II errors, power",
+          "chi-square tests for homogeneity or independence"],
+         [("数学B 統計的な推測", "some", "母比率の推定・検定のみ。2 つの比率の差とカイ二乗検定は日本の高校範囲外")]),
+    "us-ap-statistics-4-inference-for-means":
+        ("Unit 4: Inference for Quantitative Data: Means",
+         ["sampling distributions for sample means", "t-intervals and t-tests for a mean or a mean difference",
+          "intervals and tests for the difference of two means"],
+         [("数学B 統計的な推測", "some", "母平均の推定のみ。t 分布は日本の高校範囲外")]),
+    "us-ap-statistics-5-regression-analysis":
+        ("Unit 5: Regression Analysis",
+         ["scatter plots", "correlation", "linear regression models", "residuals", "least-squares regression"],
+         [("数学I データの分析", "some", "散布図と相関係数まで。回帰直線は日本の高校範囲外")]),
+}
+
+# old unit -> new units (the first is where it is met first)
+AP_STATS_2026_MAP = {
+    "us-ap-statistics-1-one-variable": ["us-ap-statistics-1-exploring-and-collecting-data"],
+    "us-ap-statistics-2-two-variable": ["us-ap-statistics-5-regression-analysis"],
+    "us-ap-statistics-3-collecting-data": ["us-ap-statistics-1-exploring-and-collecting-data"],
+    "us-ap-statistics-4-probability": ["us-ap-statistics-2-probability-and-distributions"],
+    "us-ap-statistics-5-sampling-distributions": ["us-ap-statistics-2-probability-and-distributions"],
+    "us-ap-statistics-6-proportions": ["us-ap-statistics-3-inference-for-proportions"],
+    "us-ap-statistics-7-means": ["us-ap-statistics-4-inference-for-means"],
+    "us-ap-statistics-8-chi-square": ["us-ap-statistics-3-inference-for-proportions"],  # 3.14-3.15 homogeneity or independence
+    "us-ap-statistics-9-slopes": [],  # the 2026 CED has no inference for the slope
+}
+
+# Rows whose content moved elsewhere than their old unit's default (the CED
+# topic in the comment). Replaces all of the row's AP Statistics units.
+AP_STATS_2026_BY_ID = {
+    "transformation-of-a-variable": ["us-ap-statistics-1-exploring-and-collecting-data"],  # 1.7.C changing units
+    "explanatory-variable": ["us-ap-statistics-1-exploring-and-collecting-data", "us-ap-statistics-5-regression-analysis"],  # 1.10, 1.13, 5.1
+    "response-variable": ["us-ap-statistics-1-exploring-and-collecting-data", "us-ap-statistics-5-regression-analysis"],
+    "density-curve": ["us-ap-statistics-2-probability-and-distributions"],  # 2.11 the normal curve
+    "sampling-distribution": ["us-ap-statistics-2-probability-and-distributions", "us-ap-statistics-3-inference-for-proportions",
+                              "us-ap-statistics-4-inference-for-means"],  # 2.12, 3.2, 4.1
+    "sampling-distribution-of-a-proportion": ["us-ap-statistics-3-inference-for-proportions"],  # 3.2
+    "unbiased-estimator": ["us-ap-statistics-3-inference-for-proportions"],  # 3.1
+    "confidence-interval": ["us-ap-statistics-3-inference-for-proportions", "us-ap-statistics-4-inference-for-means"],  # 3.3, 4.2 (not the slope)
+    "degrees-of-freedom": ["us-ap-statistics-3-inference-for-proportions", "us-ap-statistics-4-inference-for-means"],  # 3.14 chi-square, 4.2 t
+}
+
+# Content the 2026 CED does not have (0 hits of the name and of the content in
+# the CED text; docs/DECISIONS.md). "AP Statistics" leaves level_us and the row
+# leaves the AP units; the course level is Intro Statistics. The value is the
+# Intro Statistics unit to add when no US unit is left, or None.
+AP_STATS_2026_DROP = {
+    "cumulative-relative-frequency": "us-intro-statistics-sampling-and-data",  # only cumulative probability (2.8)
+    "quartile-deviation": None,
+    "covariance": None,
+    "sum-of-random-variables": None,  # 2.9 has the mean and SD of one variable only
+    "independent-random-variables": None,
+    "linear-transformation-of-a-random-variable": None,
+    "normal-approximation-to-the-binomial": None,
+    "continuity-correction": None,
+    "rejection-region": None,
+    "bayes-theorem": "us-intro-statistics-probability",
+    "geometric-distribution": "us-intro-statistics-discrete-distributions",
+    "goodness-of-fit-test": "us-intro-statistics-hypothesis-testing",
+    "t-test-for-the-slope": "us-intro-statistics-regression",
+    "influential-point": "us-intro-statistics-regression",
+    "normal-probability-plot": "us-intro-statistics-continuous-distributions",
+    "line-graph": None,
+}
+# Not given Intro Statistics either: the entry itself says OpenStax
+# Introductory Statistics does not have it (the human decision on covariance,
+# 2026-09-25; quartile-deviation's mapping_note).
+AP_STATS_2026_NO_INTRO = {"covariance", "quartile-deviation"}

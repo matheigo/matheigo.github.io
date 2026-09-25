@@ -26,6 +26,8 @@ fix_decisions.py; this file only applies them and derives the rest:
      Precalculus (PHASE2D_*)
  12. the same for the statistics, vector, matrix and linear algebra units
      (PHASE2E_*)
+ 13. AP Statistics units re-assigned to the five units of the 2026 CED
+     (AP_STATS_2026_*); content the 2026 CED does not have leaves AP Statistics
 
 Writes ledger/terms.csv, ledger/out-of-scope.csv, ledger/id-changes.csv,
 ledger/phrases-candidates.csv and a summary for the report to
@@ -537,6 +539,62 @@ def apply_phase2e(rows, log, stats):
                         "instance": len(D.PHASE2E_INSTANCE), "to_phrases": phrases}
 
 
+# ------------------------------- 13. AP Statistics の CED 2026 年版
+def ap_stats_units(i, units):
+    """A row's unit list with the old AP Statistics units replaced (AP_STATS_2026_*)."""
+    old = [u for u in units if u.startswith("us-ap-statistics-")]
+    if not old:
+        return units
+    unknown = [u for u in old if u not in D.AP_STATS_2026_MAP]
+    if unknown:
+        raise SystemExit(f"{i}: AP Statistics unit not in AP_STATS_2026_MAP: {unknown}")
+    if i in D.AP_STATS_2026_DROP:
+        new = []
+    elif i in D.AP_STATS_2026_BY_ID:
+        new = list(D.AP_STATS_2026_BY_ID[i])
+    else:
+        new = []
+        for u in old:
+            add(new, *D.AP_STATS_2026_MAP[u])
+    out = []
+    for u in units:
+        if u.startswith("us-ap-statistics-"):
+            add(out, *new)
+        else:
+            add(out, u)
+    return out
+
+
+def apply_ap_stats_2026(rows, oos, phrases, stats):
+    moved = Counter()
+    for r in rows.values():
+        before = list(r["unit"])
+        r["unit"] = ap_stats_units(r["id"], r["unit"])
+        if r["unit"] != before:
+            moved["rows"] += 1
+    dropped = []
+    for i, intro in D.AP_STATS_2026_DROP.items():
+        r = rows[i]
+        had = "AP Statistics" in r["level_us"]
+        r["level_us"] = [x for x in r["level_us"] if x != "AP Statistics"]
+        if had and i not in D.AP_STATS_2026_NO_INTRO:
+            add(r["level_us"], "Intro Statistics")
+        if intro and not any(u.startswith("us-") for u in r["unit"]):
+            add(r["unit"], intro)
+        if not r["unit"]:
+            raise SystemExit(f"{i}: no unit left after the AP Statistics drop")
+        note_add(r, "AP Statistics の CED 2026 年版に無い内容（AP Statistics を外した）")
+        dropped.append(i)
+    for x in phrases + oos:
+        x["unit"] = "|".join(ap_stats_units(x["id"], split(x["unit"])))
+        if x["id"] in D.AP_STATS_2026_DROP:
+            x["level_us"] = "|".join(v for v in split(x.get("level_us", "")) if v != "AP Statistics")
+    left = [r["id"] for r in rows.values() if any(u in D.AP_STATS_2026_MAP for u in r["unit"])]
+    if left:
+        raise SystemExit(f"old AP Statistics units left: {left}")
+    stats["ap_stats_2026"] = {"rows": moved["rows"], "dropped": dropped}
+
+
 # ------------------------------------------------------------------- main
 def transform(en_check=True, langlinks=True, phase2=True):
     """Phase 1 ledger -> fixed rows. en_check=False stops before the English
@@ -664,6 +722,10 @@ def transform(en_check=True, langlinks=True, phase2=True):
     apply_phase2d(rows, log, stats)
     # 12. the same for the statistics, vector, matrix and linear algebra units
     apply_phase2e(rows, log, stats)
+    # 13. AP Statistics units of the 2026 CED
+    phrases = (stats["phase2"]["to_phrases"] + stats["phase2b"]["to_phrases"] + stats["phase2c"]["to_phrases"]
+               + stats["phase2d"]["to_phrases"] + stats["phase2e"]["to_phrases"])
+    apply_ap_stats_2026(rows, oos, phrases, stats)
     return rows, stats, log, oos
 
 
@@ -675,6 +737,9 @@ def main():
     order = {}
     for r in load_phase1().values():
         order.setdefault(r["unit"][0], len(order))
+    for old, new in D.AP_STATS_2026_MAP.items():  # step 13: a new unit sorts where its first old unit did
+        for u in new:
+            order[u] = min(order.get(u, order[old]), order[old])
     for r in rows.values():
         r["flag"] = [f for f in r["flag"] if f not in ("id-dedup",)]
         r["unit"].sort(key=lambda u: order.get(u, len(order)))
@@ -710,7 +775,7 @@ def main():
     json.dump(stats, open(os.path.join(HERE, "fix_stats.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
     big = ("coverage", "check_mismatch", "oos", "dup_en", "en_check", "notation_alias", "notation_headword",
-           "langlinks", "phase2", "phase2b", "phase2c", "phase2d", "phase2e")
+           "langlinks", "phase2", "phase2b", "phase2c", "phase2d", "phase2e", "ap_stats_2026")
     print(json.dumps({k: v for k, v in stats.items() if k not in big}, ensure_ascii=False, indent=1))
     e = stats["en_check"]
     print(f"en check: {e['checked']} title rows -> ok {len(e['ok'])}, wikipedia removed {len(e['removed'])}"
@@ -737,6 +802,8 @@ def main():
     p2e = stats["phase2e"]
     print(f"phase 2 statistics / vectors / linear algebra (step 12): same concept {p2e['same']},"
           f" section names {p2e['section']}, instances {p2e['instance']}, to phrases {len(p2e['to_phrases'])}")
+    ap = stats["ap_stats_2026"]
+    print(f"AP Statistics 2026 CED (step 13): rows re-assigned {ap['rows']}, AP Statistics dropped {len(ap['dropped'])}")
 
 
 def _dup_en(rows):

@@ -24,6 +24,9 @@ wikidata だけだった行を wikipedia-langlink にする。8 は積分の単�
 10 は数列・級数・多変数の単元に同じ規則を当て、人間が範囲外にした ③ を out-of-scope に移す（`PHASE2C_SAME` ／ `PHASE2C_SECTION` ／
 `PHASE2C_INSTANCE` ／ `PHASE2C_RENAME` ／ `PHASE2C_TO_SYMBOLS` ／ `PHASE2C_TO_PHRASES` ／ `PHASE2C_OUT_OF_SCOPE`）。寄せ先が後の単元の行なら、その行もこの単元に入る。
 
+13 は AP Statistics の単元を CED 2026 年版の 5 単元に付け替える（`AP_STATS_2026_MAP` 旧単元 → 新単元 ／ `AP_STATS_2026_BY_ID` 行ごとの例外 ／
+`AP_STATS_2026_DROP` 2026 年版に無い内容: level_us から AP Statistics を外し Intro Statistics にする）。旧 id は手順 13 の後には残らない。
+
 ## 列
 
 複数値は `|` 区切り（`flag` だけ空白区切り）。

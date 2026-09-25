@@ -29,7 +29,7 @@
 ### 注意
 
 - **AP Statistics の CED は 2026 年版で 5 単元**（1 探索的データ分析とデータの集め方、2 確率・確率変数・確率分布、3 カテゴリデータの推測、4 量的データの推測、5 回帰）。
-  台帳の単元 `us-ap-statistics-1`〜`9` は旧版の 9 単元の分け方のまま。エントリの note の topic 番号は 2026 年版のもの。
+  台帳と data/curriculum の単元も 2026 年版の 5 単元（`us-ap-statistics-1-exploring-and-collecting-data`〜`5-regression-analysis`）。旧版の 9 単元からの付け替え表は `scripts/ledger/fix_decisions.py` の `AP_STATS_2026_*`（fix_phase1.py 手順 13）。2026 年版に無い内容（傾きの推測・適合度検定・幾何分布・確率変数の和など 16 語）は level.us を Intro Statistics にした。
 - Nicholson の出版元 lyryx.com は 2026-09-25 に名前解決できなかったので、eCampusOntario の公開リポジトリ（CC BY-NC-SA 4.0 と明記）の 2021A を使った。
 - Nicholson と Levin は CC BY-NC-SA、CED は College Board の著作物。どれも辞典のデータ（CC0）に文を入れない。
 - 本から数える範囲は本文だけ。前付け（目次・序文）と後付け（略解・索引）は数えない（lib.ts `bookSections`）。

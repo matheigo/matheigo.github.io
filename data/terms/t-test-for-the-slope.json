@@ -14,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "AP Statistics の CED 2026 年版には出てこない（回帰は単元 5 で記述だけを扱い、傾きの推測はない）。",
   "domains": [
     "statistics"
   ],
@@ -23,7 +23,7 @@
       "大学"
     ],
     "us": [
-      "AP Statistics"
+      "Intro Statistics"
     ]
   },
   "definition_ja": "回帰直線の傾きをもとに、母集団の回帰直線の傾きが 0（2 変数に直線的な関係がない）かどうかを t 分布で検定する方法。",
@@ -44,7 +44,6 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "AP Statistics の CED（2026 年版）の単元 5 は回帰の記述だけで、傾きの推測を扱わない（台帳の単元 us-ap-statistics-9-slopes は旧版の分け方）。",
     "OpenStax Introductory Statistics は傾きではなく相関係数の検定として扱う（節の名前 Testing the Significance of the Correlation Coefficient）。"
   ],
   "related": [
@@ -71,8 +70,8 @@
       "raised": "2026-09-25"
     },
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 2 幾何・離散の単元の前の修正」の、残った ③ を人間が決めた行）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ],
