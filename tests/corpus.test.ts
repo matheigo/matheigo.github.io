@@ -18,6 +18,7 @@ import {
   normalize,
   referenceHits,
   sameWording,
+  sampleTermContexts,
   settleUndecided,
   sourceWeights,
   weigh,
@@ -559,6 +560,29 @@ describe("TERM_FORMS (generic words counted in a sentence form)", () => {
   it("leaves other entries and collections as written", () => {
     expect(countedAs("terms", "limit", "goes to")).toBe("goes to");
     expect(countedAs("phrases", "approaches", "goes to")).toBe("goes to");
+  });
+
+  // DECISIONS, Phase 2 統計・ベクトルの単元の前の修正
+  it('"A | B" counts either form, each place once', () => {
+    const text = normalize("A bounded sequence converges if the sequence is bounded and increasing. The region bounded by y = x.");
+    expect(countTerm(text, "bounded sequence | sequence is bounded")).toBe(2);
+    expect(countTerm(text, "bounded")).toBe(3);
+  });
+
+  it('"A ! w" leaves out A followed by w', () => {
+    const text = normalize("Solve for dx dt here. Now solve for dx and plug it in. We solve for dx.");
+    expect(countTerm(text, "solve for dx ! dt")).toBe(2);
+    expect(countTerm(text, "solve for dx")).toBe(3);
+  });
+
+  it("samples contexts at even steps through the hits", () => {
+    const docs: CorpusDoc[] = [
+      { id: "a", register: "spoken", auto: false, text: normalize("one pole two pole three pole four pole") },
+      { id: "b", register: "spoken", auto: false, text: normalize("five pole six pole") },
+    ];
+    const got = sampleTermContexts(docs, "pole", 3);
+    expect(got.map((h) => h.source)).toEqual(["a", "a", "b"]);
+    expect(got[0].snippet).toBe("one [pole] two pole three pole four pole");
   });
 });
 

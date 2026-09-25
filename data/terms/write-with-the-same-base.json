@@ -6,18 +6,13 @@
     "alt": []
   },
   "en": {
-    "term": "write with the same base",
+    "term": "write with a common base",
     "alt": [],
     "variants": [
       {
         "term": "write with the same base",
         "register": "written",
-        "note": "with the same base の形で数えた。話し言葉で 7 件（Professor Leonard 5・Khan Academy 2）、書き言葉で 21 件（すべて OpenStax Algebra and Trigonometry）。"
-      },
-      {
-        "term": "write with a common base",
-        "register": "written",
-        "note": "with a common base の形で数えた。話し言葉で 2 件（Professor Leonard 1・The Organic Chemistry Tutor 1）、書き言葉で 10 件（すべて OpenStax Algebra and Trigonometry）。"
+        "note": "as a power with the same base の形で数えた。書き言葉で 2 件（すべて OpenStax Algebra and Trigonometry）。with the same base のままでは、指数法則の「同じ底の累乗を掛ける」（multiply powers with the same base）の意味が多い。"
       }
     ],
     "uk": null,
@@ -25,7 +20,7 @@
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "日本語の「底をそろえる」は 1 つの動詞句だが、英語は write (rewrite) both sides with the same base ／ with a common base と前置詞句で言う。OpenStax Algebra and Trigonometry は with the same base（21 件）と with a common base（10 件）を使う。",
+  "mapping_note": "日本語の「底をそろえる」は 1 つの動詞句だが、英語は rewrite each side with a common base（両辺を共通の底で書き直す）と前置詞句で言う。OpenStax Algebra and Trigonometry は with a common base（10 件）を使う。",
   "domains": [
     "functions"
   ],
@@ -49,7 +44,7 @@
       "register": "spoken"
     },
     {
-      "en": "Solve 8^(x+1) = 4^(2x) by writing both sides with the same base.",
+      "en": "Solve 8^(x+1) = 4^(2x) by rewriting both sides with a common base.",
       "ja": "底をそろえて 8^(x+1) = 4^(2x) を解け。",
       "register": "written"
     }
@@ -76,22 +71,20 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "with the same base": 7,
       "with a common base": 2
     },
     "written": {
-      "with the same base": 21,
-      "with a common base": 10
+      "with a common base": 10,
+      "as a power with the same base": 2
     },
     "sources": [
-      "khan-ap-calc",
       "openstax-algtrig",
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-24"
+    "counted": "2026-09-25"
   }
 }

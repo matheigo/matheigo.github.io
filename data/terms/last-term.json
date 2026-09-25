@@ -8,8 +8,7 @@
   "en": {
     "term": "last term",
     "alt": [],
-    "uk": null,
-    "register": "both"
+    "uk": null
   },
   "pos": "noun",
   "mapping": "exact",
@@ -44,7 +43,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "last term は式の最後の項にも使う語で、用例コーパスの件数にはその意味も含まれる。"
+    "last term は式の最後の項（(x + 3)² の 3、FOIL の Last）にも使う語で、OpenStax Algebra and Trigonometry の件数はほとんどがその意味。用例コーパスでは last term in … series ／ last term of … sequence の形で数えた。"
   ],
   "related": [
     "first-term",
@@ -65,32 +64,21 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
-    "spoken": {
-      "last term": 46
-    },
     "written": {
-      "last term": 42
+      "last term in … series | last term of … sequence": 5
     },
     "sources": [
-      "khan-algebra",
-      "khan-ap-calc",
-      "mit-18.01",
-      "mit-18.02",
-      "mit-18.03",
-      "mit-18.06",
-      "mit-6.042",
-      "mit-notes",
-      "openstax-algtrig",
-      "openstax-calculus",
-      "yt:3blue1brown",
-      "yt:blackpenredpen",
-      "yt:nancypi",
-      "yt:organicchem",
-      "yt:patrickjmt",
-      "yt:profleonard"
+      "openstax-algtrig"
     ],
-    "counted": "2026-09-24"
-  }
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。見出しは OpenStax の呼び方 last term in … series | last term of … sequence（本文 5 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
 }

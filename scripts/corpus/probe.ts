@@ -16,6 +16,11 @@
  *       or the CED / OpenStax headword)
  *   --literal   count as written (phrases); the default counts as terms do:
  *               inflection folded, "…" = a one-to-three-word blank
+ *   --contexts [n]  also print n contexts (default 10) of each wording per
+ *               register, picked at even steps through its hits (lib.ts
+ *               sampleTermContexts). For the check of an everyday-word
+ *               headword before it is settled (DECISIONS, Phase 2 統計・ベクトル
+ *               の単元の前の修正). Terminal only: corpus text is never written
  *
  * Prints counts only - never corpus text (the corpus is CC BY-NC-SA; the data
  * is CC0). Duplicates are removed exactly as corpus:count does. The deduped
@@ -44,6 +49,7 @@ import {
   decideRobust,
   dedupe,
   normalize,
+  sampleTermContexts,
   sourceWeights,
   VARIANTS,
   type CorpusDoc,
@@ -143,6 +149,14 @@ function breakdown(label: string, by: Record<string, number> | undefined): strin
   return `${label}で ${total} 件（${top.join("・")}${rest ? ` ほか ${rest}` : ""}）`;
 }
 
+function printContexts(docs: CorpusDoc[], wording: string, n: number) {
+  for (const register of ["spoken", "written"] as const) {
+    for (const h of sampleTermContexts(docs.filter((d) => d.register === register), wording, n)) {
+      console.log(`      ${register === "spoken" ? "話" : "書"} ${h.source.padEnd(20)} ${h.snippet}`);
+    }
+  }
+}
+
 function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
   const words: Record<string, number> = {};
   for (const r of balance(docs).rows) words[r.source] = r.words;
@@ -201,6 +215,9 @@ function main() {
   const args = process.argv.slice(2).filter((a) => a !== "--");
   const literal = args.includes("--literal");
   const decideMode = args.includes("--decide");
+  const ctxAt = args.indexOf("--contexts");
+  const ctxGiven = ctxAt >= 0 && /^\d+$/.test(args[ctxAt + 1] ?? "");
+  const ctxN = ctxAt < 0 ? 0 : ctxGiven ? Number(args.splice(ctxAt + 1, 1)[0]) : 10;
   const fileAt = args.indexOf("--file");
   const lines =
     fileAt >= 0
@@ -252,6 +269,7 @@ function main() {
     console.log(
       `  ${phrase.padEnd(46)} S ${String(spoken).padStart(5)}  W ${String(written).padStart(5)}   ${lead.padEnd(30)} ${detail}`,
     );
+    if (ctxN) printContexts(docs, phrase, ctxN);
   }
 }
 

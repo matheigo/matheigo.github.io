@@ -6,12 +6,15 @@
  * - every LaTeX string compiles under KaTeX
  * - related / term_ref / term_refs resolve to an existing entry
  * - the "definition of done" in CLAUDE.md (sources, examples, mapping_note)
+ * - a verified entry carries no problem flag (record flags may stay; lib/flags.ts)
+ * - a Japanese word shared by two entries is a listed homonym (SAME_JA)
  *
  * Exit code 1 on any error. Warnings do not fail the build.
  */
 import Ajv2020, { type ErrorObject } from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import katex from "katex";
+import { PROBLEM_FLAGS, RECORD_FLAGS, isProblemFlag } from "./lib/flags.js";
 import { COLLECTIONS, loadAll, readSchema, type Collection, type Entry } from "./lib/load.js";
 
 const errors: string[] = [];
@@ -85,6 +88,18 @@ const SAME_EN_TERM: [string, string][] = [
 const intendedHomonym = (a: string, b: string) =>
   SAME_EN_TERM.some(([x, y]) => (x === a && y === b) || (x === b && y === a));
 
+/**
+ * Intended Japanese homonyms: one Japanese word that names two concepts, as
+ * the ja.term of one entry and the ja.alt of another (or the ja.alt of both).
+ * Two entries may not share a ja.term (that is an error above); a shared
+ * ja.alt is a warning unless the pair is listed here. A listed pair must name
+ * each other in `related` and say in `pitfalls` which is which.
+ */
+const SAME_JA: [string, string, string][] = [
+  // 三角形の成立条件 |a + b| ≦ |a| + |b| ／ 三角関数を含む不等式 (DECISIONS, Phase 2 統計・ベクトルの単元の前の修正)
+  ["三角不等式", "triangle-inequality", "trigonometric-inequality"],
+];
+
 // ------------------------------------------------------------ per-entry ----
 
 for (const collection of COLLECTIONS) {
@@ -147,9 +162,14 @@ for (const collection of COLLECTIONS) {
       // An exact entry may still say that its Japanese headword is this
       // project's translation (DECISIONS, Phase 2 修正 5); anything else in
       // the note of an exact entry is probably a leftover.
+      // A note the human decided on (flag corpus-human-settled) is not a leftover either.
+      const humanSettled = ((data.flags as { code: string }[] | undefined) ?? []).some(
+        (f) => f.code === "corpus-human-settled",
+      );
       if (
         mapping === "exact" &&
         note &&
+        !humanSettled &&
         !String(note).includes(PROJECT_TRANSLATION) &&
         !String(note).includes(NOT_IN_US_COURSES)
       ) {
@@ -176,8 +196,48 @@ for (const collection of COLLECTIONS) {
       err(where, `audio path should be audio/${collection}/${data.id}.mp3`);
     }
 
-    if (confidence === "verified" && (data.flags as unknown[] | undefined)?.length) {
-      err(where, "confidence is verified but flags are still present (PLAN 8-2)");
+    // flags: a problem flag keeps an entry from verified, a record flag does not
+    const flags = (data.flags as { code: string }[] | undefined) ?? [];
+    for (const f of flags) {
+      if (!PROBLEM_FLAGS.has(f.code) && !RECORD_FLAGS.has(f.code)) {
+        warn(where, `flag code "${f.code}" is neither a problem nor a record flag (scripts/lib/flags.ts)`);
+      }
+    }
+    const problems = flags.filter((f) => isProblemFlag(f.code)).map((f) => f.code);
+    if (confidence === "verified" && problems.length) {
+      err(where, `confidence is verified but problem flags are still present: ${problems.join(", ")} (PLAN 8-2)`);
+    }
+  }
+}
+
+// ------------------------------------------------------- ja homonyms ---
+
+{
+  const byWord = new Map<string, Set<string>>();
+  const related = new Map<string, string[]>();
+  const pitfalls = new Map<string, string>();
+  for (const { data } of all.terms) {
+    const ja = data.ja as { term?: string; alt?: string[] } | undefined;
+    if (!ja?.term) continue;
+    for (const w of [ja.term, ...(ja.alt ?? [])]) {
+      if (!byWord.has(w)) byWord.set(w, new Set());
+      byWord.get(w)!.add(data.id);
+    }
+    related.set(data.id, (data.related as string[] | undefined) ?? []);
+    pitfalls.set(data.id, ((data.pitfalls as string[] | undefined) ?? []).join(" "));
+  }
+  for (const [word, set] of byWord) {
+    if (set.size < 2) continue;
+    const ids = [...set].sort();
+    const listed = SAME_JA.find(([w, a, b]) => w === word && [a, b].sort().join() === ids.join());
+    if (!listed) {
+      warn(`terms/${ids.join(", ")}`, `ja "${word}" is shared and not listed in SAME_JA`);
+      continue;
+    }
+    const [, a, b] = listed;
+    for (const [x, y] of [[a, b], [b, a]]) {
+      if (!related.get(x)?.includes(y)) warn(`terms/${x}.json`, `SAME_JA "${word}": related should include ${y}`);
+      if (!pitfalls.get(x)?.includes(y)) warn(`terms/${x}.json`, `SAME_JA "${word}": pitfalls should name ${y}`);
     }
   }
 }

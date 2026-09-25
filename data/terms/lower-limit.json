@@ -11,7 +11,7 @@
       "lower limit of integration"
     ],
     "uk": null,
-    "register": "both"
+    "register": "spoken"
   },
   "pos": "noun",
   "mapping": "exact",
@@ -47,7 +47,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "話し言葉では lower bound や the bottom とも言う。"
+    "話し言葉では lower bound や the bottom とも言う。",
+    "数列の和の Σ の下の数（lower limit of summation）や、統計の信頼区間の下限も lower limit と言う。用例コーパスでは lower limit of integration ／ at the lower limit の形で数えた（語のままでは OpenStax の書き言葉の半分以上が Σ と統計）。"
   ],
   "related": [
     "upper-limit",
@@ -66,27 +67,19 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "lower limit": 25,
-      "lower limit of integration": 4
+      "lower limit of integration | at the lower limit": 10
     },
     "written": {
-      "lower limit": 28,
-      "lower limit of integration": 4
+      "lower limit of integration | at the lower limit": 5
     },
     "sources": [
-      "mit-18.01",
       "mit-18.03",
-      "mit-6.042",
-      "mit-notes",
-      "openstax-algtrig",
       "openstax-calculus",
-      "openstax-introstats",
-      "yt:nancypi",
       "yt:patrickjmt"
     ],
-    "counted": "2026-09-24"
+    "counted": "2026-09-25"
   }
 }

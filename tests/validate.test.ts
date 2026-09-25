@@ -61,4 +61,36 @@ describe("validate.ts", () => {
       fs.rmSync(backup, { force: true });
     }
   });
+
+  // DECISIONS, Phase 2 統計・ベクトルの単元の前の修正: record flags may stay on a
+  // verified entry, problem flags may not (scripts/lib/flags.ts)
+  const verifiedFixture = (code: string) => ({
+    id: "zz-flag-fixture",
+    ja: { term: "検証用の語", reading: "けんしょうようのご" },
+    en: { term: "flag fixture term" },
+    pos: "noun",
+    mapping: "exact",
+    domains: ["algebra"],
+    level: { jp: ["数I"], us: ["Algebra 1"] },
+    definition_ja: "検証用。",
+    definition_en: "For testing.",
+    examples: [{ en: "A fixture.", ja: "検証用。", register: "written" }],
+    sources: [{ type: "editorial" }],
+    confidence: "verified",
+    flags: [{ code, note: "fixture" }],
+  });
+
+  it("lets a verified entry keep a record flag, not a problem flag", () => {
+    const file = path.join(ROOT, "data", "terms", "zz-flag-fixture.json");
+    try {
+      fs.writeFileSync(file, JSON.stringify(verifiedFixture("corpus-reference-fallback")));
+      expect(runValidate().code).toBe(0);
+      fs.writeFileSync(file, JSON.stringify(verifiedFixture("corpus-undecided")));
+      const { code, out } = runValidate();
+      expect(code).toBe(1);
+      expect(out).toMatch(/problem flags are still present: corpus-undecided/);
+    } finally {
+      fs.rmSync(file, { force: true });
+    }
+  });
 });

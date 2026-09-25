@@ -10,8 +10,7 @@
     "alt": [
       "write dx in terms of du"
     ],
-    "uk": null,
-    "register": "spoken"
+    "uk": null
   },
   "pos": "phrase",
   "mapping": "exact",
@@ -46,7 +45,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "dx を解き出す（solve for dx）か、被積分関数の中の 2x dx をそのまま du に置き換えるかは教科書による。"
+    "dx を解き出す（solve for dx）か、被積分関数の中の 2x dx をそのまま du に置き換えるかは教科書による。",
+    "関連変化率の solve for dx dt（dx/dt を求める）とは別。用例コーパスでは直後に dt が続くものを除いて数えた。"
   ],
   "related": [
     "integration-by-substitution",
@@ -63,16 +63,22 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "solve for dx": 12
+      "solve for dx ! dt": 8
     },
     "sources": [
-      "khan-ap-calc",
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-24"
-  }
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
 }

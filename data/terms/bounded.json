@@ -9,7 +9,7 @@
     "term": "bounded",
     "alt": [],
     "uk": null,
-    "register": "both"
+    "register": "written"
   },
   "pos": "adjective",
   "mapping": "exact",
@@ -45,7 +45,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "the region bounded by the curves（曲線で囲まれた部分）の bounded（囲まれた）と同じ語。用例コーパスの件数にはこの意味も含まれる。"
+    "the region bounded by the curves（曲線で囲まれた部分）の bounded（囲まれた）と同じ語。用例コーパスでは bounded sequence ／ sequence is bounded ／ bounded function ／ function is bounded の形で数えた（語のままの bounded は語形変化で bound とまとまり、積分の bounds や upper bound、region bounded by まで数える）。"
   ],
   "related": [
     "monotonic",
@@ -69,32 +69,21 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "bounded": 836
+      "bounded sequence | sequence is bounded | bounded function | function is bounded": 4
     },
     "written": {
-      "bounded": 982
+      "bounded sequence | sequence is bounded | bounded function | function is bounded": 18
     },
     "sources": [
-      "khan-algebra",
       "khan-ap-calc",
-      "khan-ap-stats",
       "mit-18.01",
-      "mit-18.02",
-      "mit-18.03",
-      "mit-6.042",
-      "mit-notes",
-      "openstax-algtrig",
       "openstax-calculus",
-      "openstax-introstats",
       "openstax-precalculus",
-      "yt:3blue1brown",
-      "yt:blackpenredpen",
-      "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-24"
+    "counted": "2026-09-25"
   }
 }

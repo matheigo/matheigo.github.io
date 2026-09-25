@@ -43,6 +43,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { isProblemFlag } from "../lib/flags.js";
 import { ROOT, loadAll, localDate, type Collection } from "../lib/load.js";
 import {
   candidatesOf,
@@ -167,6 +168,12 @@ const HUMAN_SETTLED = "corpus-human-settled";
 type Flag = { code: string; note: string; raised?: string };
 const humanFlag = (record: Record<string, unknown>): Flag | null =>
   ((record.flags as Flag[] | undefined) ?? []).find((f) => f.code === HUMAN_SETTLED) ?? null;
+
+/**
+ * A report table row. A counted form may contain " | " (lib.ts TERM_FORMS),
+ * which is also the Markdown cell separator, so each cell escapes it.
+ */
+const cells = (...xs: string[]) => `| ${xs.map((x) => x.replace(/\|/g, "\\|")).join(" | ")} |`;
 
 function describeSettled(s: Settled): string {
   if (s.kind === "no-fixed-expression") return `英語に決まった言い方がない（話 ${s.spoken} 件 ／ 書 ${s.written} 件）`;
@@ -351,7 +358,8 @@ function main() {
     }
     if (flags.length) record.flags = flags;
     else delete record.flags;
-    if (record.confidence === "verified" && flags.length) record.confidence = "likely";
+    // A record flag (lib/flags.ts) may stay on a verified entry; a problem flag may not.
+    if (record.confidence === "verified" && flags.some((f) => isProblemFlag(f.code))) record.confidence = "likely";
 
     fs.writeFileSync(entry.file, JSON.stringify(record, null, 2) + "\n", "utf8");
   }
@@ -402,7 +410,7 @@ function main() {
     "## ① 主見出しが決まったもの（3:1 以上）",
     "",
     single.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
-    ...single.map((l) => `| ${l.key} | ${describe(l.spoken)} | ${describe(l.written)} |`),
+    ...single.map((l) => cells(l.key, describe(l.spoken), describe(l.written))),
     "",
     "## ② 併記（首位が 3 倍に届かず、各 10 件以上。頻度順）",
     "",
@@ -410,7 +418,7 @@ function main() {
     "`en.variants` に頻度順で両方入れる。",
     "",
     both.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
-    ...both.map((l) => `| ${l.key} | ${describe(l.spoken)} | ${describe(l.written)} |`),
+    ...both.map((l) => cells(l.key, describe(l.spoken), describe(l.written))),
     "",
     "## 1 ソース頼み（首位の件数が最も多いソースを抜くと判定が変わる）",
     "",
@@ -418,14 +426,14 @@ function main() {
     "同じ言い方が首位のまま ② になるものは ① のまま、頼っているソースを記録する。② はそのまま記録だけする。",
     "",
     oneSource.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
-    ...oneSource.map((l) => `| ${l.key} | ${leans(l.spoken) ? describe(l.spoken) : "—"} | ${leans(l.written) ? describe(l.written) : "—"} |`),
+    ...oneSource.map((l) => cells(l.key, leans(l.spoken) ? describe(l.spoken) : "—", leans(l.written) ? describe(l.written) : "—")),
     "",
     "## 統合済み（語形変化・引数省略として見出し語に合算）",
     "",
     "別の語（integral / integrate / integration）は統合していない。合算した件数は落としていない。",
     "",
     merges.length ? "| 項目 | 合算先 | 合算した表記 |\n|---|---|---|" : "なし。",
-    ...merges.flatMap((l) => l.merges.map((m) => `| ${l.key} | ${m.into} | ${m.from.join(" / ")} |`)),
+    ...merges.flatMap((l) => l.merges.map((m) => cells(l.key, m.into, m.from.join(" / ")))),
     "",
     "## ③ のうち規則で決着したもの",
     "",
@@ -434,7 +442,7 @@ function main() {
     "（corpus-reference-fallback）。どちらも register は主張せず、人間レビューに回さない。",
     "",
     noFixed.length + byReference.length ? "| 項目 | 決着 | 話し言葉 | 書き言葉 |\n|---|---|---|---|" : "なし。",
-    ...[...noFixed, ...byReference].map((l) => `| ${l.key} | ${describeSettled(l.settled!)} | ${describe(l.spoken)} | ${describe(l.written)} |`),
+    ...[...noFixed, ...byReference].map((l) => cells(l.key, describeSettled(l.settled!), describe(l.spoken), describe(l.written))),
     "",
     "## ③ のうち人間が見出しを決めたもの（flag corpus-human-settled）",
     "",
@@ -444,7 +452,7 @@ function main() {
     human.length ? "| 項目 | 話し言葉 | 書き言葉 | 規則だけなら | 印 |\n|---|---|---|---|---|" : "なし。",
     ...human.map(
       (l) =>
-        `| ${l.key} | ${describe(l.spoken)} | ${describe(l.written)} | ${l.ruleSettled ? describeSettled(l.ruleSettled) : "—"} | ${l.humanNote ?? ""} |`,
+        cells(l.key, describe(l.spoken), describe(l.written), l.ruleSettled ? describeSettled(l.ruleSettled) : "—", l.humanNote ?? ""),
     ),
     "",
     "## 人間が見出しを決めたが、今はコーパスで決まるもの",
@@ -452,12 +460,12 @@ function main() {
     "corpus-human-settled は残してある。コーパスの結論とエントリが合っているかを見る。",
     "",
     humanStale.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
-    ...humanStale.map((l) => `| ${l.key} | ${describe(l.spoken)} | ${describe(l.written)} |`),
+    ...humanStale.map((l) => cells(l.key, describe(l.spoken), describe(l.written))),
     "",
     "## エントリ側で直すこと（決着とエントリが合っていない）",
     "",
     todos.length ? "| 項目 | 直すこと |\n|---|---|" : "なし。",
-    ...todos.map((l) => `| ${l.key} | ${l.todo.join(" ／ ")} |`),
+    ...todos.map((l) => cells(l.key, l.todo.join(" ／ "))),
     "",
     "---",
     "",
@@ -468,14 +476,14 @@ function main() {
     "## ③ コーパスで決まらず、CED にも OpenStax にも呼び方がないもの",
     "",
     undecided.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
-    ...undecided.map((l) => `| ${l.key} | ${describe(l.spoken)} | ${describe(l.written)} |`),
+    ...undecided.map((l) => cells(l.key, describe(l.spoken), describe(l.written))),
     "",
     "## register がエントリと食い違うもの",
     "",
     "コーパスが「その register で使われている」と言った表現を、エントリがその register に持っていない。",
     "",
     mismatched.length ? "| 項目 | 食い違い | コーパスの結論 |\n|---|---|---|" : "なし。",
-    ...mismatched.map((l) => `| ${l.key} | ${l.mismatch} | 話 ${describe(l.spoken)} ／ 書 ${describe(l.written)} |`),
+    ...mismatched.map((l) => cells(l.key, l.mismatch ?? "", `話 ${describe(l.spoken)} ／ 書 ${describe(l.written)}`)),
     "",
     "## 辞典に無い高頻度表現",
     "",

@@ -24,6 +24,8 @@ fix_decisions.py; this file only applies them and derives the rest:
      ③ moved out of scope (PHASE2C_*)
  11. the same for the 数II algebra, trigonometry and geometry units and all of
      Precalculus (PHASE2D_*)
+ 12. the same for the statistics, vector, matrix and linear algebra units
+     (PHASE2E_*)
 
 Writes ledger/terms.csv, ledger/out-of-scope.csv, ledger/id-changes.csv,
 ledger/phrases-candidates.csv and a summary for the report to
@@ -513,6 +515,28 @@ def apply_phase2d(rows, log, stats):
                         "to_phrases": phrases}
 
 
+# ------------------------------- 12. Phase 2 統計・ベクトル・行列・線形代数の単元
+def apply_phase2e(rows, log, stats):
+    """The same rules for the statistics, vector, matrix and linear algebra
+    units (fix_decisions PHASE2E_*)."""
+    for frm, into, main in D.PHASE2E_SAME:
+        merge(rows, frm, into, main, log, action="merged-into")
+    for frm, into in D.PHASE2E_SECTION:
+        merge(rows, frm, into, "into", log, action="merged-into", names=False)
+        note_add(rows[into], f"節の名前「{frm}」を統合（Phase 2 統計・ベクトルの単元）")
+    for frm, into in D.PHASE2E_INSTANCE:
+        merge(rows, frm, into, "into", log, action="merged-into", names=False)
+    phrases = []
+    for i in D.PHASE2E_TO_PHRASES:
+        r = rows.pop(i)
+        phrases.append({"id": i, "ja": r["ja"], "en": r["en"], "pos": r["pos"], "unit": "|".join(r["unit"]),
+                        "level_jp": "|".join(r["level_jp"]), "level_us": "|".join(r["level_us"]),
+                        "from": "", "note": r["note"]})
+        log.append((i, "", "to-phrases"))
+    stats["phase2e"] = {"same": len(D.PHASE2E_SAME), "section": len(D.PHASE2E_SECTION),
+                        "instance": len(D.PHASE2E_INSTANCE), "to_phrases": phrases}
+
+
 # ------------------------------------------------------------------- main
 def transform(en_check=True, langlinks=True, phase2=True):
     """Phase 1 ledger -> fixed rows. en_check=False stops before the English
@@ -638,6 +662,8 @@ def transform(en_check=True, langlinks=True, phase2=True):
     apply_phase2c(rows, log, stats, oos)
     # 11. the same for the Algebra 2 / Precalculus units
     apply_phase2d(rows, log, stats)
+    # 12. the same for the statistics, vector, matrix and linear algebra units
+    apply_phase2e(rows, log, stats)
     return rows, stats, log, oos
 
 
@@ -672,7 +698,7 @@ def main():
         w = csv.DictWriter(f, PHRASE_COLUMNS)
         w.writeheader()
         w.writerows(stats["phase2"]["to_phrases"] + stats["phase2b"]["to_phrases"] + stats["phase2c"]["to_phrases"]
-                   + stats["phase2d"]["to_phrases"])
+                   + stats["phase2d"]["to_phrases"] + stats["phase2e"]["to_phrases"])
 
     stats["rows"] = len(rows)
     stats["actions"] = dict(Counter(a for _, _, a in log))
@@ -684,7 +710,7 @@ def main():
     json.dump(stats, open(os.path.join(HERE, "fix_stats.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
     big = ("coverage", "check_mismatch", "oos", "dup_en", "en_check", "notation_alias", "notation_headword",
-           "langlinks", "phase2", "phase2b", "phase2c", "phase2d")
+           "langlinks", "phase2", "phase2b", "phase2c", "phase2d", "phase2e")
     print(json.dumps({k: v for k, v in stats.items() if k not in big}, ensure_ascii=False, indent=1))
     e = stats["en_check"]
     print(f"en check: {e['checked']} title rows -> ok {len(e['ok'])}, wikipedia removed {len(e['removed'])}"
@@ -708,6 +734,9 @@ def main():
     p2d = stats["phase2d"]
     print(f"phase 2 algebra 2 / precalculus (step 11): same concept {p2d['same']}, section names {p2d['section']},"
           f" instances {p2d['instance']}, to symbols {p2d['to_symbols']}, to phrases {len(p2d['to_phrases'])}")
+    p2e = stats["phase2e"]
+    print(f"phase 2 statistics / vectors / linear algebra (step 12): same concept {p2e['same']},"
+          f" section names {p2e['section']}, instances {p2e['instance']}, to phrases {len(p2e['to_phrases'])}")
 
 
 def _dup_en(rows):

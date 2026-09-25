@@ -8,18 +8,6 @@
   "en": {
     "term": "phase shift",
     "alt": [],
-    "variants": [
-      {
-        "term": "horizontal shift",
-        "register": "both",
-        "note": "三角関数に限らず、グラフの x 軸方向の平行移動一般の言い方。話し言葉で 29 件（Khan Academy 13・Professor Leonard 10・The Organic Chemistry Tutor 6）、書き言葉で 62 件（OpenStax Algebra and Trigonometry 54・OpenStax Calculus 4・OpenStax Precalculus 4）。"
-      },
-      {
-        "term": "phase shift",
-        "register": "both",
-        "note": "三角関数のグラフの平行移動の言い方。話し言葉で 10 件（Professor Leonard 7・MIT OCW 3）、書き言葉で 56 件（OpenStax Algebra and Trigonometry 48・OpenStax Calculus 7・OpenStax Precalculus 1）。"
-      }
-    ],
     "uk": null,
     "register": "both"
   },
@@ -56,6 +44,7 @@
   ],
   "collocations": [],
   "pitfalls": [
+    "horizontal shift（x 軸方向の平行移動）は三角関数に限らないグラフの平行移動の言い方で、OpenStax Algebra and Trigonometry は正弦曲線の説明にも使う。文脈を見ると関数一般の平行移動が大半なので、用例コーパスでは数えていない。",
     "日本の教科書では「x 軸方向に π/2 だけ平行移動」と表す。",
     "b をくくり出さずに c を読むのはよくある間違い（sin(2x − π) のずれは π ではなく π/2）。"
   ],
@@ -80,25 +69,21 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "phase shift": 10,
-      "horizontal shift": 29
+      "phase shift": 10
     },
     "written": {
-      "horizontal shift": 62,
       "phase shift": 56
     },
     "sources": [
-      "khan-algebra",
       "mit-18.03",
       "openstax-algtrig",
       "openstax-calculus",
       "openstax-precalculus",
-      "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-24"
+    "counted": "2026-09-25"
   }
 }

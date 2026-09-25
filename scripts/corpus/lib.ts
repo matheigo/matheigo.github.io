@@ -336,7 +336,26 @@ function phraseRegex(phrase: string): RegExp | null {
  * sentence. Everything else is literal, as in countPhrase.
  */
 function termRegex(phrase: string): RegExp | null {
-  const words = normalize(phrase).split(" ").filter(Boolean);
+  const bodies = phrase.split(FORM_OR).map(termBody).filter((b): b is string => b !== null);
+  if (bodies.length === 0) return null;
+  return wholeWords(bodies.length === 1 ? bodies[0] : `(?:${bodies.join("|")})`);
+}
+
+/**
+ * Two marks a counted form (TERM_FORMS) may use when a phrase alone cannot
+ * keep another meaning out (DECISIONS, Phase 2 統計・ベクトルの単元の前の修正):
+ *
+ *   "A | B"      either form: bounded sequence | sequence is bounded
+ *   "A ! w"      A not followed by the words w: solve for dx ! dt (not dx/dt)
+ *
+ * Both stay in the key the counts and `evidence` are recorded under.
+ */
+export const FORM_OR = /\s+\|\s+/;
+const FORM_NOT = /\s+!\s+/;
+
+function termBody(phrase: string): string | null {
+  const [form, not] = phrase.split(FORM_NOT);
+  const words = normalize(form).split(" ").filter(Boolean);
   while (words.length && GAP.test(words[0])) words.shift();
   while (words.length && GAP.test(words[words.length - 1])) words.pop();
   if (words.length === 0) return null;
@@ -349,7 +368,8 @@ function termRegex(phrase: string): RegExp | null {
       return `(?:${inflections(m[1]).map(escape).join("|")})${escape(m[2])}${sep}`;
     })
     .join("");
-  return wholeWords(body);
+  const after = not ? normalize(not) : "";
+  return after ? `${body}(?! ${escape(after)}(?![\\w-]))` : body;
 }
 
 /**
@@ -438,7 +458,8 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   },
   // Generated with these forms from the start (Phase 2 数列・級数の単元)
   focus: { focus: "focus of the" }, // not "let's focus on"
-  pole: { pole: "the pole" }, // not a pole of a function's pole diagram, or a flagpole
+  // "the pole" was half MIT 18.03's pole diagrams in speech (Phase 2 統計・ベクトルの単元の前の修正)
+  pole: { pole: "from the pole" }, // the distance from the pole, not a pole diagram or a flagpole
   "standard-form-of-a-conic": { "standard form": "standard form of the equation of" }, // not Ax + By = C
   "curl-vector": { curl: "curl of" },
   "divergence-vector": { divergence: "the divergence of" }, // not a divergent series
@@ -451,15 +472,34 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   remainder: { remainder: "the remainder is" }, // not the rest of a region
   symmetric: { symmetric: "symmetric about" }, // not a symmetric matrix
   tangent: { tangent: "tangent of", tan: "tan of" }, // the ratio, not the tangent line
-  expansion: { expansion: "expansion of" },
+  // "expansion of" was eight tenths series expansion in speech (Phase 2 統計・ベクトルの単元の前の修正)
+  expansion: { expansion: "expansion of (" }, // the expansion of (x + y)^n, not a power series expansion
   identity: { identity: "an identity" }, // not the identity matrix or function
   period: { period: "period of" }, // not a period of time
   logarithm: { logarithm: "the logarithm of", log: "the log of" }, // "log" alone is too short to count as a word
   argument: { argument: "argument of the logarithm" }, // 真数, not a function's argument in general
-  "write-with-the-same-base": { "write with the same base": "with the same base", "write with a common base": "with a common base" },
+  // "with the same base" was mostly the exponent rule "multiply powers with the same base"
+  // (Phase 2 統計・ベクトルの単元の前の修正); "with a common base" is the rewriting
+  "write-with-the-same-base": { "write with the same base": "as a power with the same base", "write with a common base": "with a common base" },
   "rewrite-in-exponential-form": { "rewrite in exponential form": "in exponential form" },
   "rewrite-in-logarithmic-form": { "rewrite in logarithmic form": "in logarithmic form" },
   work: { work: "work done" }, // not "let's work it out"
+  // Phase 2 統計・ベクトルの単元の前の修正: everyday-word headwords whose leading wording
+  // meant something else in half or more of ten sampled contexts, or enough to change the verdict
+  bounded: { bounded: "bounded sequence | sequence is bounded | bounded function | function is bounded" }, // "bounded" folds into "bound(s)": bounds of integration, upper bound, region bounded by
+  parameter: { parameter: "parameter t" }, // not a population parameter (statistics)
+  orientation: { orientation: "orientation of the curve" }, // not the orientation of space (determinants) or of a surface
+  "first-term": { "first term": "first term of … sequence | first term of … series | where the first term is" }, // not the first term of an expression
+  "last-term": { "last term": "last term in … series | last term of … sequence" }, // not the last term of a trinomial (FOIL)
+  "upper-limit": {
+    "upper limit": "upper limit of integration | at the upper limit",
+    "upper limit of integration": "upper limit of integration | at the upper limit",
+  }, // not the upper limit of summation or of a confidence interval
+  "lower-limit": {
+    "lower limit": "lower limit of integration | at the lower limit",
+    "lower limit of integration": "lower limit of integration | at the lower limit",
+  },
+  "write-dx-in-terms-of-du": { "solve for dx": "solve for dx ! dt" }, // not "solve for dx dt" (dx/dt in related rates)
 };
 
 /** The wording a candidate is counted and recorded as. */
@@ -485,6 +525,27 @@ export function contexts(haystack: string, phrase: string, source: string, limit
     if (out.length >= limit) break;
   }
   return out;
+}
+
+/**
+ * `n` contexts of a term's wording, matched as terms are counted (inflection
+ * folded, "…" a blank), picked at even steps through every hit in corpus
+ * order so the sample follows the sources in proportion. Seven words either
+ * side. For the check of an everyday-word headword (DECISIONS, Phase 2 統計・
+ * ベクトルの単元の前の修正): printed to the terminal, never written to a file.
+ */
+export function sampleTermContexts(docs: CorpusDoc[], wording: string, n = 10): ContextHit[] {
+  const re = termRegex(wording);
+  if (!re) return [];
+  const all: { doc: CorpusDoc; at: number; len: number }[] = [];
+  for (const doc of docs) for (const m of doc.text.matchAll(re)) all.push({ doc, at: m.index ?? 0, len: m[0].length });
+  const step = all.length / Math.min(n, all.length || 1);
+  const picked = all.length <= n ? all : Array.from({ length: n }, (_, i) => all[Math.floor(i * step)]);
+  return picked.map(({ doc, at, len }) => {
+    const before = doc.text.slice(Math.max(0, at - 80), at).trim().split(" ").slice(-7).join(" ");
+    const after = doc.text.slice(at + len, at + len + 80).trim().split(" ").slice(0, 8).join(" ");
+    return { candidate: wording, source: doc.id, snippet: `${before} [${doc.text.slice(at, at + len)}] ${after}`.trim() };
+  });
 }
 
 // ----------------------------------------------------------------- decide

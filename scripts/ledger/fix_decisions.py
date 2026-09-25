@@ -886,3 +886,138 @@ PHASE2D_TO_PHRASES = [
     "the-base-is-greater-than-1",
     "the-domain-is-the-positive-reals",
 ]
+
+# ------------------------------------- Phase 2 統計・ベクトル・行列・線形代数の単元
+# The same rules again (docs/DECISIONS.md "Phase 2 統計・ベクトルの単元"), before
+# generating 中1〜中3 データの活用・標本調査, 数I データの分析, 数B 統計的な推測・
+# 数学と社会生活, 数C ベクトル・表現の工夫, and every unit of AP Statistics, Intro
+# Statistics and Linear Algebra. Applied by fix_phase1.py step 12, after step 11.
+#
+# As before, a row merged into a row of a unit not generated yet (tree-diagram,
+# basic-properties-of-probability, expected-value) brings that row into these
+# units, and rows of later units that are the same concept (two-way-table,
+# independent-events, margin-of-error, the 数A multiplication-rule ...) are
+# merged now so that no second entry appears later.
+PHASE2E_SAME = [
+    ("frequency-distribution", "frequency-table", "into"),  # 度数分布 is what the table shows
+    ("measures-of-central-tendency", "measure-of-center", "into"),
+    ("spread-of-the-data", "spread", "into"),
+    ("measures-of-spread", "spread", "into"),
+    ("simple-random-sample", "random-sampling", "into"),  # 無作為抽出 is the SRS of US courses
+    ("sampling-variability", "sampling-error", "into"),  # AP and OpenStax name the same variation
+    ("deviation-from-the-mean", "deviation", "into"),
+    ("linear-independence", "linearly-independent", "into"),  # 線形独立 = 一次独立
+    ("probability-distribution-function", "probability-distribution", "into"),  # OpenStax's PDF of a discrete variable
+    ("combining-random-variables", "sum-of-random-variables", "into"),
+    ("standardization", "standardize", "into"),  # 標準化: US courses use the verb
+    ("is-statistically-significant", "statistically-significant", "into"),
+    ("modeling", "mathematical-model", "into"),
+    ("least-squares-regression-line", "regression-line", "into"),
+    ("regression-equation", "regression-line", "into"),
+    ("least-squares-solution", "least-squares", "into"),
+    ("students-t-distribution", "t-distribution", "into"),
+    ("matched-pairs", "paired-t-test", "into"),
+    ("linear-map", "linear-transformation", "into"),
+    ("kernel", "null-space", "into"),  # ker T = Nul A for T(x) = Ax
+    ("range-linear-map", "column-space", "into"),  # range of T = Col A
+    ("norm", "magnitude", "into"),  # ノルム = ベクトルの大きさ
+    ("skewness-of-a-distribution", "skewness", "into"),
+    # into entries already generated (Phase 2 統計・ベクトルの単元: fill in the new unit's sense)
+    ("row-reduction", "gaussian-elimination", "into"),
+    ("mean", "arithmetic-mean", "into"),  # 平均値 of data = 相加平均
+    # rows of later units that are the same concept
+    ("two-way-table", "contingency-table", "into"),
+    ("independent-events", "independence-of-events", "into"),
+    ("independent", "independence-of-events", "into"),  # 数A 独立 (of events and trials)
+    ("margin-of-error", "error-bound", "into"),  # AP margin of error = OpenStax error bound
+    ("multiplication-rule", "general-multiplication-rule", "into"),  # 数A 乗法定理 P(A∩B) = P(A)P_A(B)
+]
+
+# Section names -> the entry for what they teach.
+PHASE2E_SECTION = [
+    ("data-analysis", "data"),
+    ("comparing-distributions", "compare"),
+    ("measures-of-location", "percentile"),
+    ("shape-center-and-spread", "distribution"),
+    ("population-and-sample", "sample"),
+    ("tree-and-venn-diagrams", "tree-diagram"),  # 中2 確率, generated now
+    ("applications-of-the-normal-distribution", "normal-distribution"),
+    ("continuous-probability-distribution", "continuous-random-variable"),
+    ("probability-rules", "basic-properties-of-probability"),  # 数A, generated now
+    ("inference-for-the-slope", "t-test-for-the-slope"),
+    ("conclusion-of-a-test", "hypothesis-testing"),
+    ("outliers-in-regression", "outlier"),
+    ("linear-regression", "regression-line"),
+    ("vectors-in-space", "vector"),
+    ("properties-of-the-dot-product", "dot-product"),
+    ("matrix-operations", "matrix"),
+    ("solving-systems-with-matrices", "system-of-linear-equations"),
+    ("existence-and-uniqueness", "system-of-linear-equations"),
+    ("properties-of-determinants", "determinant"),
+    ("determinants-as-volume", "determinant"),
+    ("sampling-methods", "sampling"),  # Algebra 2
+]
+
+# A term with its argument filled in, a collocation of it, or a task on it.
+PHASE2E_INSTANCE = [
+    ("cumulative-relative-frequency-graph", "cumulative-relative-frequency"),
+    ("more-spread-out", "spread"),
+    ("less-spread-out", "spread"),
+    ("large-standard-deviation", "standard-deviation"),
+    ("identify-the-trend", "trend"),
+    ("analyze-the-trend", "trend"),
+    ("group-into-classes", "class"),  # データを階級に分ける
+    ("first-quartile", "quartile"),
+    ("third-quartile", "quartile"),
+    ("length-of-the-box", "box-plot"),
+    ("length-of-the-whisker", "whisker"),
+    ("outlier-rule", "outlier"),  # the 1.5 × IQR rule
+    ("remove-the-outliers", "outlier"),
+    ("squared-deviation", "deviation"),
+    ("make-a-scatter-plot", "scatter-plot"),
+    ("strong-correlation", "correlation"),
+    ("weak-correlation", "correlation"),
+    ("no-correlation", "correlation"),
+    ("find-the-correlation-coefficient", "correlation-coefficient"),
+    ("state-the-null-hypothesis", "null-hypothesis"),
+    ("reject-the-null-hypothesis", "reject"),
+    ("compute-the-variance", "variance"),
+    ("follows-a-normal-distribution", "normal-distribution"),
+    ("is-approximately-normal", "normal-distribution"),
+    ("construct-a-confidence-interval", "confidence-interval"),
+    ("confidence-interval-for-the-slope", "confidence-interval"),
+    ("compute-the-expected-value", "expected-value"),  # 数A, generated now
+    ("fit-the-data", "mathematical-model"),
+    ("required-sample-size", "sample-size"),
+    ("skewed-right", "be-skewed"),
+    ("skewed-distribution", "be-skewed"),  # Algebra 1
+    ("find-the-magnitude", "magnitude"),
+    ("condition-for-parallelism", "parallel-vectors"),
+    ("condition-for-perpendicularity", "orthogonal"),  # a · b = 0
+    ("resolve-the-vector", "decomposition-of-a-vector"),
+    ("are-linearly-independent", "linearly-independent"),
+    ("write-in-components", "component-form"),
+    ("position-vector-of-the-dividing-point", "position-vector"),
+    ("compute-the-dot-product", "dot-product"),
+    ("find-the-angle-between", "angle-between-vectors"),
+    ("represent-by-an-arrow", "vector"),
+    ("find-the-inverse-matrix", "inverse-matrix"),
+    ("multiply-the-matrices", "matrix-multiplication"),
+    ("complex-eigenvalues", "eigenvalue"),
+    ("diagonalization-of-symmetric-matrices", "diagonalization"),
+]
+
+# Lines of a procedure, of a problem statement or of a class, not terms
+# (Phase 3 phrases candidates).
+PHASE2E_TO_PHRASES = [
+    "split-at-the-median",
+    "evaluate-critically",
+    "organize-the-data",
+    "probabilities-sum-to-1",
+    "using-real-numbers-s-and-t",
+    "let-p-be-the-position-vector-of-p",
+    "express-as-a-vector",
+    "organize-in-a-table",
+    "represent-with-a-graph",
+    "checking-conditions",
+]

@@ -11,7 +11,7 @@
       "upper limit of integration"
     ],
     "uk": null,
-    "register": "both"
+    "register": "spoken"
   },
   "pos": "noun",
   "mapping": "exact",
@@ -48,7 +48,7 @@
   "collocations": [],
   "pitfalls": [
     "話し言葉では upper bound（「上界」と同じ語）や the top、the top number とも言う。",
-    "統計の階級の上限も upper limit と言うので、文脈で区別する。"
+    "数列の和の Σ の上の数（upper limit of summation）や、統計の階級・信頼区間の上限も upper limit と言う。用例コーパスでは upper limit of integration ／ at the upper limit の形で数えた（語のままでは OpenStax の書き言葉の半分以上が Σ と統計）。"
   ],
   "related": [
     "lower-limit",
@@ -68,26 +68,19 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "upper limit": 24,
-      "upper limit of integration": 3
+      "upper limit of integration | at the upper limit": 10
     },
     "written": {
-      "upper limit": 27,
-      "upper limit of integration": 3
+      "upper limit of integration | at the upper limit": 4
     },
     "sources": [
-      "mit-18.01",
       "mit-18.03",
-      "mit-6.042",
-      "mit-notes",
-      "openstax-algtrig",
       "openstax-calculus",
-      "openstax-introstats",
       "yt:patrickjmt"
     ],
-    "counted": "2026-09-24"
+    "counted": "2026-09-25"
   }
 }
