@@ -1,0 +1,90 @@
+{
+  "id": "periodic-function",
+  "ja": {
+    "term": "周期関数",
+    "reading": "しゅうきかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "periodic function",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "ある正の数 p について f(x + p) = f(x) がすべての x で成り立つ関数。",
+  "definition_en": "A function for which some positive p gives f(x + p) = f(x) for every x.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Sine and cosine are periodic functions with period 2π.",
+      "ja": "sin と cos は周期 2π の周期関数。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that f(x) = sin x + cos 2x is a periodic function and find its period.",
+      "ja": "f(x) = sin x + cos 2x が周期関数であることを示し、その周期を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉 24 件のうち 19 件は MIT 18.03（フーリエ級数）。"
+  ],
+  "related": [
+    "period",
+    "trigonometric-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "周期関数",
+      "en": "Periodic function"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "periodic function": 24
+    },
+    "written": {
+      "periodic function": 32
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-24"
+  }
+}

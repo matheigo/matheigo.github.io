@@ -254,7 +254,8 @@ const IRREGULAR: Record<string, string> = {
 
 /** Strips inflection only. integral / integrate / integration stay distinct. */
 const stem = (w: string): string =>
-  IRREGULAR[w] ? stem(IRREGULAR[w]) : w.replace(/(ing|ed|es|s)$/, "").replace(/e$/, "");
+  // A final "ss" is part of the word (compress, cross), not a plural: only "-es" comes off it.
+  IRREGULAR[w] ? stem(IRREGULAR[w]) : w.replace(/(ing|ed|es|(?<!s)s)$/, "").replace(/e$/, "");
 
 /**
  * The blank in a verb phrase with an object in the middle: "revolve … around
@@ -443,6 +444,7 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   tangent: { tangent: "tangent of", tan: "tan of" }, // the ratio, not the tangent line
   expansion: { expansion: "expansion of" },
   identity: { identity: "an identity" }, // not the identity matrix or function
+  period: { period: "period of" }, // not a period of time
 };
 
 /** The wording a candidate is counted and recorded as. */

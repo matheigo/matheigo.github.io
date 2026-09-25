@@ -1,0 +1,74 @@
+{
+  "id": "circle-through-the-intersections-of-two-circles",
+  "ja": {
+    "term": "2 円の交点を通る円",
+    "reading": "にえんのこうてんをとおるえん",
+    "alt": []
+  },
+  "en": {
+    "term": "circle through the intersections of two circles",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで 0 件、OpenStax にもない）。2 つの方程式に k を掛けて足す考え方（k f + g = 0）は、米国の高校課程の用例コーパスには出てこない。説明するなら the family of circles through the two intersection points。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "2 円 f = 0, g = 0 の 2 つの交点を通る円（または直線）を kf + g = 0 の形で表す考え方。",
+  "definition_en": "The idea of writing any circle (or line) through the two intersection points of circles f = 0 and g = 0 as kf + g = 0.",
+  "latex": "k(x^2 + y^2 - 4) + (x^2 + y^2 - 4x - 2y) = 0",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Any curve of the form k times the first plus the second passes through both intersection points.",
+      "ja": "「k × 1 つ目 ＋ 2 つ目」の形の曲線は、どれも 2 つの交点を通る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the equation of the circle that passes through the two intersection points of x² + y² = 4 and x² + y² − 4x − 2y = 0 and through the origin.",
+      "ja": "2 円 x² + y² = 4, x² + y² − 4x − 2y = 0 の 2 つの交点と原点を通る円の方程式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "k = −1 のときは 2 円の交点を通る直線（共通弦）になる。"
+  ],
+  "related": [
+    "equation-of-a-circle"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

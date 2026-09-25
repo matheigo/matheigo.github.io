@@ -1,0 +1,94 @@
+{
+  "id": "odd-function",
+  "ja": {
+    "term": "奇関数",
+    "reading": "きかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "odd function",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "f(−x) = −f(x) がすべての x で成り立つ関数。グラフは原点に関して対称。",
+  "definition_en": "A function with f(−x) = −f(x) for every x; its graph is symmetric about the origin.",
+  "latex": "f(-x) = -f(x)",
+  "spoken_en": "f of negative x equals negative f of x",
+  "examples": [
+    {
+      "en": "Sine is odd, so sin(−θ) is negative sin θ.",
+      "ja": "sin は奇関数なので、sin(−θ) は −sin θ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that f(x) = x³ − 5x is an odd function.",
+      "ja": "f(x) = x³ − 5x が奇関数であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "even-function",
+    "symmetric",
+    "integrals-of-even-and-odd-functions"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "偶関数と奇関数",
+      "en": "Even and odd functions"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "odd function": 91
+    },
+    "written": {
+      "odd function": 56
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

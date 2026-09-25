@@ -1,0 +1,92 @@
+{
+  "id": "equation-of-a-circle",
+  "ja": {
+    "term": "円の方程式",
+    "reading": "えんのほうていしき",
+    "alt": [
+      "円の標準形"
+    ]
+  },
+  "en": {
+    "term": "equation of a circle",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "中心 (a, b)、半径 r の円を表す方程式 (x − a)² + (y − b)² = r²。",
+  "definition_en": "The equation (x − a)² + (y − b)² = r² of the circle with center (a, b) and radius r.",
+  "latex": "(x - a)^2 + (y - b)^2 = r^2",
+  "spoken_en": "x minus a squared plus y minus b squared equals r squared",
+  "examples": [
+    {
+      "en": "Read off the center and the radius: center (2, −1), radius 3.",
+      "ja": "中心と半径を読み取ろう。中心 (2, −1)、半径 3。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the equation of the circle whose diameter has endpoints (1, 2) and (5, 6).",
+      "ja": "2 点 (1, 2), (5, 6) を直径の両端とする円の方程式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の教科書は (x − h)² + (y − k)² = r² と中心を (h, k) で書き、standard form of the equation of a circle と呼ぶ（OpenStax Algebra and Trigonometry）。",
+    "用例コーパスの話し言葉は 9 件。冠詞の違う equation of the circle は話し言葉 3 件・書き言葉 4 件。"
+  ],
+  "related": [
+    "general-form-of-a-circle",
+    "tangent-line",
+    "find-the-equation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "equation of a circle": 9
+    },
+    "written": {
+      "equation of a circle": 19
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

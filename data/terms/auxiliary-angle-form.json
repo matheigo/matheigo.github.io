@@ -1,0 +1,78 @@
+{
+  "id": "auxiliary-angle-form",
+  "ja": {
+    "term": "三角関数の合成",
+    "reading": "さんかくかんすうのごうせい",
+    "alt": []
+  },
+  "en": {
+    "term": "auxiliary-angle form",
+    "alt": [
+      "harmonic form"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで 0 件、OpenStax にもない）。英国の教科書では harmonic form ／ auxiliary angle method と呼ぶことがあるが、米国の用例には出てこない。米国では write a sin θ + b cos θ as a single sine function（R sin(θ + α) の形に書く）と手順で言う。「合成」を synthesis と訳すと通じない言い方になる（STYLE の直訳禁止リスト）。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "a sin θ + b cos θ を r sin(θ + α)（r = √(a² + b²)）の形に直すこと。最大・最小や方程式に使う。",
+  "definition_en": "Rewriting a sin θ + b cos θ as r sin(θ + α) with r = √(a² + b²), used for maxima, minima, and equations.",
+  "latex": "a\\sin\\theta + b\\cos\\theta = \\sqrt{a^2 + b^2}\\,\\sin(\\theta + \\alpha)",
+  "spoken_en": "a sine theta plus b cosine theta equals the square root of a squared plus b squared, times sine of theta plus alpha",
+  "examples": [
+    {
+      "en": "Combine sine and cosine into a single sine: the amplitude is the square root of a squared plus b squared.",
+      "ja": "sin と cos を 1 つの sin にまとめる。振幅は √(a² + b²)。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write √3 sin θ + cos θ in the form r sin(θ + α), and find its maximum value.",
+      "ja": "√3 sin θ + cos θ を r sin(θ + α) の形に表し、最大値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「synthesis of trigonometric functions」は用例コーパスに 0 件。"
+  ],
+  "related": [
+    "angle-addition-formulas",
+    "amplitude",
+    "trigonometric-function"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "general-solution",
+  "ja": {
+    "term": "一般解",
+    "reading": "いっぱんかい",
+    "alt": []
+  },
+  "en": {
+    "term": "general solution",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "方程式の解をすべて、整数 n や任意定数 C を使って 1 つの式で表したもの。三角方程式では θ = π/6 + 2nπ など、微分方程式では任意定数を含む解。",
+  "definition_en": "All solutions of an equation written as one formula with an integer n or an arbitrary constant C: θ = π/6 + 2nπ for a trigonometric equation, a solution with arbitrary constants for a differential equation.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For the general solution, add 2π n, where n is any integer.",
+      "ja": "一般解にするには 2πn を足す（n は任意の整数）。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the general solution of the equation 2 sin θ = √3.",
+      "ja": "方程式 2 sin θ = √3 の一般解を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの general solution（話し言葉 129 件・書き言葉 206 件）の多くは微分方程式（MIT 18.03・OpenStax Calculus）。三角方程式の意味では OpenStax Algebra and Trigonometry に少し出る。"
+  ],
+  "related": [
+    "trigonometric-equation",
+    "particular-solution",
+    "differential-equation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "general solution": 129
+    },
+    "written": {
+      "general solution": 206
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

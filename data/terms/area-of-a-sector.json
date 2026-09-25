@@ -1,0 +1,80 @@
+{
+  "id": "area-of-a-sector",
+  "ja": {
+    "term": "扇形の面積",
+    "reading": "おうぎがたのめんせき",
+    "alt": [
+      "おうぎ形の面積"
+    ]
+  },
+  "en": {
+    "term": "area of a sector",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "半径 r、中心角 θ（ラジアン）の扇形の面積 (1/2)r²θ。弧の長さ l を使うと (1/2)rl。",
+  "definition_en": "The area (1/2)r²θ of a sector with radius r and central angle θ in radians, or (1/2)rl with arc length l.",
+  "latex": "S = \\frac{1}{2}r^2\\theta = \\frac{1}{2}rl",
+  "spoken_en": "S equals one half r squared theta, which is one half r l",
+  "examples": [
+    {
+      "en": "With θ in radians, the area of a sector is just one half r squared θ.",
+      "ja": "θ がラジアンなら、扇形の面積は (1/2)r²θ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the area of a sector with radius 6 cm and central angle 2π/3.",
+      "ja": "半径 6 cm、中心角 2π/3 の扇形の面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "度数法で表すと (θ/360°)πr²。弧度法の (1/2)r²θ は OpenStax Algebra and Trigonometry にある。"
+  ],
+  "related": [
+    "radian-measure",
+    "radian"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "area of a sector": 13
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

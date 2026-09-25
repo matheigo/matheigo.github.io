@@ -1,0 +1,110 @@
+{
+  "id": "region",
+  "ja": {
+    "term": "領域",
+    "reading": "りょういき",
+    "alt": []
+  },
+  "en": {
+    "term": "region",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "不等式を満たす点 (x, y) 全体の集合。座標平面上に図示すると、境界線で区切られた部分になる。",
+  "definition_en": "The set of all points (x, y) satisfying an inequality; on the coordinate plane it is a part of the plane cut off by a boundary.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Test the origin: if it satisfies the inequality, shade the region that contains it.",
+      "ja": "原点で試して、不等式を満たせば原点を含む側の領域を塗る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Shade the region represented by the system x² + y² ≤ 9, y ≥ x + 1.",
+      "ja": "連立不等式 x² + y² ≦ 9, y ≧ x + 1 の表す領域を図示せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "shade the region",
+      "ja": "領域を図示する"
+    }
+  ],
+  "pitfalls": [
+    "用例コーパスの region（話し言葉 948 件・書き言葉 1,354 件）の多くは微積分の「曲線で囲まれた部分」（the region bounded by …）。日本語では「囲まれた部分」「図形」と言うところも英語は region。",
+    "連立不等式の表す領域は the region defined by the system、線形計画法では feasible region。"
+  ],
+  "related": [
+    "boundary",
+    "linear-programming"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "region": 948
+    },
+    "written": {
+      "region": 1354,
+      "shade the region": 15
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

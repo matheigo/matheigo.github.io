@@ -1,0 +1,94 @@
+{
+  "id": "radian-measure",
+  "ja": {
+    "term": "弧度法",
+    "reading": "こどほう",
+    "alt": []
+  },
+  "en": {
+    "term": "radian measure",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "半径と同じ長さの弧に対する中心角を 1 ラジアンとして、角の大きさを表す方法。180° = π ラジアン。",
+  "definition_en": "Measuring angles with 1 radian as the central angle of an arc as long as the radius; 180° = π radians.",
+  "latex": "180^\\circ = \\pi\\ \\text{rad}",
+  "spoken_en": "one hundred eighty degrees equals pi radians",
+  "examples": [
+    {
+      "en": "In calculus we always use radian measure, so switch your calculator to radians.",
+      "ja": "微積分ではいつも弧度法を使うので、電卓をラジアンに切り替えて。",
+      "register": "spoken"
+    },
+    {
+      "en": "Express 150° in radian measure.",
+      "ja": "150° を弧度法で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "in radian measure",
+      "ja": "弧度法で"
+    }
+  ],
+  "pitfalls": [
+    "「弧度法で表せ」は Convert to radians ／ Express in radians とも言う。",
+    "用例コーパスでは書き言葉 39 件、話し言葉 2 件。授業では単に in radians と言うことが多い（radian を参照）。"
+  ],
+  "related": [
+    "radian",
+    "degree-measure",
+    "area-of-a-sector"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "radian measure": 2
+    },
+    "written": {
+      "radian measure": 39,
+      "in radian measure": 2
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-24"
+  }
+}

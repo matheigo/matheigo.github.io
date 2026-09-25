@@ -1,0 +1,97 @@
+{
+  "id": "even-function",
+  "ja": {
+    "term": "偶関数",
+    "reading": "ぐうかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "even function",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "f(−x) = f(x) がすべての x で成り立つ関数。グラフは y 軸に関して対称。",
+  "definition_en": "A function with f(−x) = f(x) for every x; its graph is symmetric about the y-axis.",
+  "latex": "f(-x) = f(x)",
+  "spoken_en": "f of negative x equals f of x",
+  "examples": [
+    {
+      "en": "Cosine is an even function, so cos(−θ) is just cos θ.",
+      "ja": "cos は偶関数なので、cos(−θ) は cos θ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether f(x) = x⁴ − 3x² + 1 is even, odd, or neither.",
+      "ja": "f(x) = x⁴ − 3x² + 1 が偶関数か奇関数か、どちらでもないかを判定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の問題は even, odd, or neither（どちらでもない）の 3 択で聞くことが多い。"
+  ],
+  "related": [
+    "odd-function",
+    "symmetric",
+    "integrals-of-even-and-odd-functions"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "偶関数と奇関数",
+      "en": "Even and odd functions"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "even function": 69
+    },
+    "written": {
+      "even function": 55
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

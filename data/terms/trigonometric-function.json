@@ -1,0 +1,119 @@
+{
+  "id": "trigonometric-function",
+  "ja": {
+    "term": "三角関数",
+    "reading": "さんかくかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "trigonometric function",
+    "alt": [],
+    "variants": [
+      {
+        "term": "trig function",
+        "register": "spoken",
+        "note": "話し言葉の短い言い方。話し言葉で 174 件（MIT OCW 64・Professor Leonard 36・NancyPi 32 ほか 42）、書き言葉で 10 件（OpenStax Algebra and Trigonometry 7・MIT の講義ノート 2・OpenStax Precalculus 1）。"
+      },
+      {
+        "term": "trigonometric function",
+        "register": "both",
+        "note": "話し言葉で 67 件（MIT OCW 26・Khan Academy 11・The Organic Chemistry Tutor 11 ほか 19）、書き言葉で 346 件（OpenStax Algebra and Trigonometry 200・OpenStax Calculus 136・OpenStax Precalculus 10）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "一般角 θ に対して sin θ, cos θ, tan θ などを対応させる関数。単位円上の点の座標で定める。",
+  "definition_en": "A function, such as sin θ, cos θ, or tan θ, that assigns a value to an angle θ of any size, defined through the coordinates of a point on the unit circle.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "All the trig functions are periodic, so their graphs repeat.",
+      "ja": "三角関数はどれも周期関数なので、グラフが繰り返す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the maximum and minimum values of the trigonometric function y = sin²θ + 2 cos θ for 0 ≤ θ < 2π.",
+      "ja": "0 ≦ θ < 2π のとき、関数 y = sin²θ + 2 cos θ の最大値と最小値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の教科書は sin・cos・tan に加えて csc（cosecant）・sec（secant）・cot（cotangent）も使う。日本の高校では使わない。",
+    "三角関数のグラフ・最大最小（教科書の節）は、英語では graphs of trigonometric functions の節で扱う。"
+  ],
+  "related": [
+    "tangent",
+    "trigonometric-identities",
+    "period",
+    "amplitude",
+    "inverse-trigonometric-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "三角関数",
+      "en": "Trigonometric functions"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "trig function": 174,
+      "trigonometric function": 67
+    },
+    "written": {
+      "trigonometric function": 346,
+      "trig function": 10
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

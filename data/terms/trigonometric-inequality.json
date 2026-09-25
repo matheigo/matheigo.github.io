@@ -1,0 +1,77 @@
+{
+  "id": "trigonometric-inequality",
+  "ja": {
+    "term": "三角不等式",
+    "reading": "さんかくふとうしき",
+    "alt": [
+      "三角関数を含む不等式"
+    ]
+  },
+  "en": {
+    "term": "trigonometric inequality",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで trigonometric inequality は 0 件、OpenStax にもない）。単位円やグラフで範囲を読む問題として solve sin θ > 1/2 on [0, 2π) のように問題文で言う。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "角 θ の三角関数を含む不等式。単位円やグラフを使って θ の範囲を求める。",
+  "definition_en": "An inequality involving trigonometric functions of an angle θ, solved for a range of θ using the unit circle or a graph.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Look at the unit circle: where is the y-coordinate bigger than one half?",
+      "ja": "単位円を見よう。y 座標が 1/2 より大きいのはどこ？",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve sin θ > 1/2 for 0 ≤ θ < 2π.",
+      "ja": "0 ≦ θ < 2π のとき、不等式 sin θ > 1/2 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「三角不等式」は |a + b| ≦ |a| + |b|（英語の triangle inequality）を指すこともある。英語では別の語（triangle-inequality を参照）。"
+  ],
+  "related": [
+    "trigonometric-equation",
+    "triangle-inequality"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "product-to-sum-formulas",
+  "ja": {
+    "term": "積和公式",
+    "reading": "せきわこうしき",
+    "alt": [
+      "積を和に直す公式"
+    ]
+  },
+  "en": {
+    "term": "product-to-sum formulas",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "sin α cos β などの積を、三角関数の和・差で表す公式。",
+  "definition_en": "The formulas that rewrite products such as sin α cos β as sums or differences of trigonometric functions.",
+  "latex": "\\sin\\alpha\\cos\\beta = \\frac{1}{2}\\{\\sin(\\alpha + \\beta) + \\sin(\\alpha - \\beta)\\}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The product-to-sum formulas come straight from adding two addition formulas.",
+      "ja": "積和公式は、加法定理を 2 つ足せばすぐ出る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use a product-to-sum formula to write sin 5x cos 3x as a sum.",
+      "ja": "積和公式を用いて sin 5x cos 3x を和の形で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの書き言葉 18 件はすべて OpenStax Algebra and Trigonometry（節 Sum-to-Product and Product-to-Sum Formulas）。話し言葉は 0 件。"
+  ],
+  "related": [
+    "sum-to-product-formulas",
+    "angle-addition-formulas",
+    "trigonometric-integrals"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "product-to-sum formulas": 18
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  }
+}

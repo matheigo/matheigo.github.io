@@ -1,0 +1,95 @@
+{
+  "id": "quartic-equation",
+  "ja": {
+    "term": "四次方程式",
+    "reading": "よじほうていしき",
+    "alt": [
+      "4 次方程式"
+    ]
+  },
+  "en": {
+    "term": "fourth-degree equation",
+    "alt": [
+      "quartic equation"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Integrated Math 3"
+    ]
+  },
+  "definition_ja": "未知数の最高次数が 4 の方程式。高校では複2次式 x⁴ + ax² + b = 0 を x² = t とおいて解く形が多い。",
+  "definition_en": "An equation whose highest power of the unknown is 4; in high school, often biquadratic, x⁴ + ax² + b = 0, solved by letting t = x².",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let t equal x squared, and this quartic turns into a quadratic in t.",
+      "ja": "t = x² とおくと、この 4 次方程式は t の 2 次方程式になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the fourth-degree equation x⁴ − 3x² − 4 = 0 over the complex numbers.",
+      "ja": "4 次方程式 x⁴ − 3x² − 4 = 0 を複素数の範囲で解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "Wikipedia の記事名は quartic equation だが、用例コーパスでは話し言葉 2 件だけ。OpenStax Algebra and Trigonometry は fourth-degree と書く（本文 2 件）。"
+  ],
+  "related": [
+    "polynomial-equation-of-higher-degree",
+    "cubic-equation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "四次方程式",
+      "en": "Quartic equation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "quartic equation": 2
+    },
+    "written": {
+      "fourth-degree equation": 2
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-algtrig",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは OpenStax の呼び方 fourth-degree equation（本文 2 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

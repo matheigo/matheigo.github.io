@@ -1,0 +1,86 @@
+{
+  "id": "trigonometric-equation",
+  "ja": {
+    "term": "三角方程式",
+    "reading": "さんかくほうていしき",
+    "alt": [
+      "三角関数を含む方程式"
+    ]
+  },
+  "en": {
+    "term": "trigonometric equation",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "角 θ の三角関数を含む方程式。範囲を指定して解を求める。",
+  "definition_en": "An equation involving trigonometric functions of an angle θ, solved within a given interval.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Find all the angles in one period first, then add 2π n for the general solution.",
+      "ja": "まず 1 周期の中の角を全部見つけて、一般解なら 2πn を足す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the trigonometric equation 2 cos²θ − cos θ − 1 = 0 for 0 ≤ θ < 2π.",
+      "ja": "0 ≦ θ < 2π のとき、2 cos²θ − cos θ − 1 = 0 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「0 ≦ θ < 2π の範囲で」は on the interval [0, 2π) または for 0 ≤ θ < 2π。",
+    "用例コーパスでは書き言葉 60 件（OpenStax Algebra and Trigonometry・Precalculus）、話し言葉は 1 件。授業では solve for θ と言う。"
+  ],
+  "related": [
+    "trigonometric-inequality",
+    "general-solution",
+    "trigonometric-function",
+    "solve"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "trigonometric equation": 60
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "general-form-of-a-circle",
+  "ja": {
+    "term": "円の一般形",
+    "reading": "えんのいっぱんけい",
+    "alt": []
+  },
+  "en": {
+    "term": "general form of the equation of a circle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "円の方程式を展開した形 x² + y² + lx + my + n = 0。平方完成すると中心と半径がわかる。",
+  "definition_en": "The expanded form x² + y² + Dx + Ey + F = 0 of a circle's equation; completing the square gives the center and radius.",
+  "latex": "x^2 + y^2 + lx + my + n = 0",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Complete the square in x and in y to get it back into standard form.",
+      "ja": "x と y それぞれで平方完成して、標準形に戻そう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the center and radius of the circle x² + y² − 4x + 6y − 3 = 0.",
+      "ja": "円 x² + y² − 4x + 6y − 3 = 0 の中心と半径を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の教科書は係数に D, E, F を使うことが多い。",
+    "x² + y² + lx + my + n = 0 が円を表さない（点になる、図形がない）場合があることにも注意する。"
+  ],
+  "related": [
+    "equation-of-a-circle",
+    "completing-the-square"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "general form of the equation of a circle": 1
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 general form of the equation of a circle（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

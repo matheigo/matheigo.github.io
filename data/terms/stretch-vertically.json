@@ -1,0 +1,91 @@
+{
+  "id": "stretch-vertically",
+  "ja": {
+    "term": "縦に伸縮する",
+    "reading": "たてにしんしゅくする",
+    "alt": [
+      "y 軸方向に拡大・縮小する"
+    ]
+  },
+  "en": {
+    "term": "stretch … vertically",
+    "alt": [
+      "stretch vertically"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "グラフの各点の y 座標を a 倍して、y 軸方向に拡大（a > 1）または縮小（0 < a < 1）する。y = f(x) は y = af(x) になる。",
+  "definition_en": "To multiply every y-coordinate of a graph by a, stretching it vertically (a > 1) or compressing it (0 < a < 1); y = f(x) becomes y = af(x).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Multiplying by 2 on the outside stretches the graph vertically by a factor of 2.",
+      "ja": "外側に 2 を掛けると、グラフは縦に 2 倍に伸びる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Describe how the graph of y = 3 sin x is obtained from the graph of y = sin x.",
+      "ja": "y = 3 sin x のグラフは、y = sin x のグラフをどのように変形したものか説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「y 軸方向に 3 倍に拡大」は vertically stretched by a factor of 3。縮小は compress（vertical compression）。",
+    "名詞の言い方 vertical stretch もよく使う（用例コーパスで話し言葉 13 件・書き言葉 46 件）。"
+  ],
+  "related": [
+    "compress-horizontally",
+    "amplitude"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "stretch … vertically": 4
+    },
+    "written": {
+      "stretch … vertically": 19
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

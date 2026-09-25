@@ -1,0 +1,97 @@
+{
+  "id": "radian",
+  "ja": {
+    "term": "ラジアン",
+    "reading": "らじあん",
+    "alt": []
+  },
+  "en": {
+    "term": "radian",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "弧度法での角の単位。半径 1 の円で長さ 1 の弧に対する中心角が 1 ラジアン。",
+  "definition_en": "The unit of angle in radian measure: the central angle of an arc of length 1 on a circle of radius 1.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Pi over 2 radians is 90 degrees.",
+      "ja": "π/2 ラジアンは 90°。",
+      "register": "spoken"
+    },
+    {
+      "en": "Convert 3π/4 radians to degrees.",
+      "ja": "3π/4 ラジアンを度数法で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の答案ではラジアンの単位を省略して θ = π/3 と書く。米国でも単位のない角はラジアンとみなすのが普通（OpenStax Algebra and Trigonometry）。"
+  ],
+  "related": [
+    "radian-measure",
+    "degree-measure"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ラジアン",
+      "en": "Radian"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "radian": 299
+    },
+    "written": {
+      "radian": 233
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

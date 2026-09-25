@@ -1,0 +1,104 @@
+{
+  "id": "phase-shift",
+  "ja": {
+    "term": "位相のずれ",
+    "reading": "いそうのずれ",
+    "alt": []
+  },
+  "en": {
+    "term": "phase shift",
+    "alt": [],
+    "variants": [
+      {
+        "term": "horizontal shift",
+        "register": "both",
+        "note": "三角関数に限らず、グラフの x 軸方向の平行移動一般の言い方。話し言葉で 29 件（Khan Academy 13・Professor Leonard 10・The Organic Chemistry Tutor 6）、書き言葉で 62 件（OpenStax Algebra and Trigonometry 54・OpenStax Calculus 4・OpenStax Precalculus 4）。"
+      },
+      {
+        "term": "phase shift",
+        "register": "both",
+        "note": "三角関数のグラフの平行移動の言い方。話し言葉で 10 件（Professor Leonard 7・MIT OCW 3）、書き言葉で 56 件（OpenStax Algebra and Trigonometry 48・OpenStax Calculus 7・OpenStax Precalculus 1）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "y = sin(b(x − c)) のグラフが y = sin bx のグラフから x 軸方向に c だけ平行移動していること。その量 c。",
+  "definition_en": "The horizontal shift c of the graph of y = sin(b(x − c)) from that of y = sin bx.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Factor out the 2 first: sin(2x − π) is sin 2(x − π/2), so the phase shift is π/2 to the right.",
+      "ja": "まず 2 をくくり出す。sin(2x − π) = sin 2(x − π/2) なので、右に π/2 ずれる。",
+      "register": "spoken"
+    },
+    {
+      "en": "State the amplitude, period, and phase shift of y = 3 cos(2x + π/3).",
+      "ja": "y = 3 cos(2x + π/3) の振幅・周期・位相のずれを答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書では「x 軸方向に π/2 だけ平行移動」と表す。",
+    "b をくくり出さずに c を読むのはよくある間違い（sin(2x − π) のずれは π ではなく π/2）。"
+  ],
+  "related": [
+    "phase",
+    "amplitude",
+    "period"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "phase shift": 10,
+      "horizontal shift": 29
+    },
+    "written": {
+      "horizontal shift": 62,
+      "phase shift": 56
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

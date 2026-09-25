@@ -1,0 +1,95 @@
+{
+  "id": "cubic-equation",
+  "ja": {
+    "term": "三次方程式",
+    "reading": "さんじほうていしき",
+    "alt": [
+      "3 次方程式"
+    ]
+  },
+  "en": {
+    "term": "cubic equation",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Integrated Math 3"
+    ]
+  },
+  "definition_ja": "未知数の最高次数が 3 の方程式 ax³ + bx² + cx + d = 0（a ≠ 0）。",
+  "definition_en": "An equation ax³ + bx² + cx + d = 0 (a ≠ 0) whose highest power of the unknown is 3.",
+  "latex": "ax^3 + bx^2 + cx + d = 0",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A cubic equation always has at least one real root.",
+      "ja": "3 次方程式は必ず実数解を少なくとも 1 つもつ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the cubic equation x³ − 2x² − 5x + 6 = 0.",
+      "ja": "3 次方程式 x³ − 2x² − 5x + 6 = 0 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは話し言葉 3 件・書き言葉 1 件と少ない。授業では単に a cubic（3 次式）と言うことが多い。"
+  ],
+  "related": [
+    "polynomial-equation-of-higher-degree",
+    "quartic-equation",
+    "cubic-function",
+    "factor-theorem"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "三次方程式",
+      "en": "Cubic equation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "cubic equation": 3
+    },
+    "written": {
+      "cubic equation": 1
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.06",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 cubic equation（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

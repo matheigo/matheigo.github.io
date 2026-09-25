@@ -1,0 +1,86 @@
+{
+  "id": "degree-measure",
+  "ja": {
+    "term": "度数法",
+    "reading": "どすうほう",
+    "alt": []
+  },
+  "en": {
+    "term": "degree measure",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "1 回転を 360° として角の大きさを表す方法。",
+  "definition_en": "Measuring angles with one full turn as 360°.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To go from radians to degrees, multiply by 180 over pi.",
+      "ja": "ラジアンから度に直すには 180/π を掛ける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Express 5π/6 in degree measure.",
+      "ja": "5π/6 を度数法で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは degree measure は書き言葉 3 件だけ。授業では in degrees（度で）と言う。"
+  ],
+  "related": [
+    "radian-measure",
+    "radian"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "degree measure": 3
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 degree measure（本文 3 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

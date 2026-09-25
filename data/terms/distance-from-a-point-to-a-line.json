@@ -1,0 +1,87 @@
+{
+  "id": "distance-from-a-point-to-a-line",
+  "ja": {
+    "term": "点と直線の距離",
+    "reading": "てんとちょくせんのきょり",
+    "alt": []
+  },
+  "en": {
+    "term": "distance from a point to a line",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "点から直線に下ろした垂線の長さ。点 (x₁, y₁) と直線 ax + by + c = 0 の距離は |ax₁ + by₁ + c|/√(a² + b²)。",
+  "definition_en": "The length of the perpendicular from a point to a line; for (x₁, y₁) and ax + by + c = 0 it is |ax₁ + by₁ + c|/√(a² + b²).",
+  "latex": "d = \\frac{|ax_1 + by_1 + c|}{\\sqrt{a^2 + b^2}}",
+  "spoken_en": "d equals the absolute value of a x one plus b y one plus c, over the square root of a squared plus b squared",
+  "examples": [
+    {
+      "en": "The distance from a point to a line is measured along the perpendicular.",
+      "ja": "点と直線の距離は垂線に沿って測る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the distance from the point (2, 3) to the line 3x + 4y − 5 = 0.",
+      "ja": "点 (2, 3) と直線 3x + 4y − 5 = 0 の距離を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "この公式は米国の高校（OpenStax Algebra and Trigonometry）には出てこず、用例コーパスでは OpenStax Calculus Volume 3（空間の点と直線の距離）に 3 件だけ。"
+  ],
+  "related": [
+    "perpendicular-lines",
+    "equation-of-a-line",
+    "tangent-line"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "点と直線の距離",
+      "en": "Distance from a point to a line"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "distance from a point to a line": 3
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 distance from a point to a line（本文 3 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

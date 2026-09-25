@@ -1,0 +1,105 @@
+{
+  "id": "inverse-trigonometric-function",
+  "ja": {
+    "term": "逆三角関数",
+    "reading": "ぎゃくさんかくかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "inverse trigonometric function",
+    "alt": [
+      "inverse trig function"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "定義域を制限した三角関数の逆関数。arcsin x（sin⁻¹ x）、arccos x、arctan x など。",
+  "definition_en": "The inverse of a trigonometric function on a restricted domain: arcsin x (sin⁻¹ x), arccos x, arctan x, and so on.",
+  "latex": "y = \\sin^{-1}x \\iff \\sin y = x,\\ -\\frac{\\pi}{2} \\le y \\le \\frac{\\pi}{2}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Inverse sine of one half is π/6 — it only gives you the angle between −π/2 and π/2.",
+      "ja": "arcsin(1/2) は π/6。−π/2 から π/2 の間の角しか返さない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate sin(cos⁻¹(3/5)) without a calculator.",
+      "ja": "電卓を使わずに sin(cos⁻¹(3/5)) の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校の学習指導要領には含まれないが、米国では Precalculus（OpenStax Algebra and Trigonometry）で扱い、AP Calculus でも微分する（CED topic 3.3）。",
+    "sin⁻¹ x は 1/sin x ではない。inverse sine of x と読み（用例コーパスで話し言葉 18 件）、arcsine とも言う。",
+    "用例コーパスでは話し言葉で inverse trig function 8 件・inverse trigonometric function 5 件と少なく決まらない。"
+  ],
+  "related": [
+    "derivatives-of-inverse-trig-functions",
+    "integrals-giving-inverse-trig-functions",
+    "trigonometric-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "逆三角関数",
+      "en": "Inverse trigonometric functions"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 3.3（inverse trigonometric functions）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "inverse trig function": 8,
+      "inverse trigonometric function": 5
+    },
+    "written": {
+      "inverse trigonometric function": 72
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

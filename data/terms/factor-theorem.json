@@ -1,0 +1,92 @@
+{
+  "id": "factor-theorem",
+  "ja": {
+    "term": "因数定理",
+    "reading": "いんすうていり",
+    "alt": []
+  },
+  "en": {
+    "term": "factor theorem",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Integrated Math 3"
+    ]
+  },
+  "definition_ja": "整式 P(x) が x − a を因数にもつことと、P(a) = 0 であることが同じだという定理。",
+  "definition_en": "The theorem that a polynomial P(x) has x − a as a factor exactly when P(a) = 0.",
+  "latex": "P(a) = 0 \\iff (x - a) \\mid P(x)",
+  "spoken_en": "P of a equals zero if and only if x minus a is a factor of P of x",
+  "examples": [
+    {
+      "en": "P of 1 is zero, so by the factor theorem x − 1 is a factor.",
+      "ja": "P(1) = 0 だから、因数定理より x − 1 は因数。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the factor theorem to factor x³ − 6x² + 11x − 6 completely.",
+      "ja": "因数定理を用いて x³ − 6x² + 11x − 6 を因数分解せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "by the factor theorem",
+      "ja": "因数定理より"
+    }
+  ],
+  "pitfalls": [
+    "用例コーパスでは書き言葉 18 件すべてが OpenStax Algebra and Trigonometry。話し言葉は 3 件で、授業では「plug in 1 and get zero, so x − 1 is a factor」と中身で言うことが多い。"
+  ],
+  "related": [
+    "remainder-theorem",
+    "synthetic-division",
+    "rational-root-theorem",
+    "polynomial-equation-of-higher-degree"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "因数定理",
+      "en": "Factor theorem"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "factor theorem": 3
+    },
+    "written": {
+      "factor theorem": 18,
+      "by the factor theorem": 4
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

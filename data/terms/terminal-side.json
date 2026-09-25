@@ -1,0 +1,86 @@
+{
+  "id": "terminal-side",
+  "ja": {
+    "term": "動径",
+    "reading": "どうけい",
+    "alt": []
+  },
+  "en": {
+    "term": "terminal side",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の「動径」は、始線から回転して角をつくる半直線そのもの。英語の terminal side は「角の終わりの辺」で、始線（initial side）と対になる呼び方。指すものは同じだが、見方が「回転する線」か「角の辺」かで違う。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "角を、始線を回転させてつくるとみたときの、回転したあとの半直線。",
+  "definition_en": "The ray where an angle ends when the angle is made by rotating the initial side.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The terminal side of 210 degrees is in the third quadrant.",
+      "ja": "210° の動径は第 3 象限にある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find sin θ and cos θ if the terminal side of θ passes through the point (−3, 4).",
+      "ja": "θ の動径が点 (−3, 4) を通るとき、sin θ と cos θ の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「動径 OP の表す角」は the angle whose terminal side is OP。"
+  ],
+  "related": [
+    "initial-side",
+    "general-angle",
+    "reference-angle"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "terminal side": 44
+    },
+    "written": {
+      "terminal side": 52
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

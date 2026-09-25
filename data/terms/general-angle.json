@@ -1,0 +1,83 @@
+{
+  "id": "general-angle",
+  "ja": {
+    "term": "一般角",
+    "reading": "いっぱんかく",
+    "alt": []
+  },
+  "en": {
+    "term": "coterminal angles",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語には「一般角」に当たる名前がない。回転の量として 360° を超える角や負の角を考えることは英語でも同じで（angles of any measure）、θ + 360°n の形の角は coterminal angles（動径が同じ角）と呼ぶ。OpenStax Algebra and Trigonometry は coterminal angles（書き言葉 31 件）。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "動径の回転の向きと量で表した角。360° を超える角や負の角も含み、動径が同じ角は θ + 360°n（n は整数）と表せる。",
+  "definition_en": "An angle measured by the rotation of a ray, including angles over 360° and negative angles; angles with the same terminal side are θ + 360°n (n an integer), called coterminal angles in English.",
+  "latex": "\\theta + 360^\\circ n\\quad(n\\ \\text{is an integer})",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "400 degrees and 40 degrees are coterminal — they end up in the same place.",
+      "ja": "400° と 40° は動径が同じ。同じところで止まる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the angle between 0° and 360° that is coterminal with −750°.",
+      "ja": "−750° と動径が同じで、0° 以上 360° 未満の角を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "general angle は用例コーパスで 2 件（どちらも別の意味）。"
+  ],
+  "related": [
+    "terminal-side",
+    "initial-side",
+    "radian-measure",
+    "counterclockwise"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "coterminal angles": 9
+    },
+    "written": {
+      "coterminal angles": 31
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

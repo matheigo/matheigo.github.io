@@ -1,0 +1,95 @@
+{
+  "id": "clockwise",
+  "ja": {
+    "term": "負の向き",
+    "reading": "ふのむき",
+    "alt": [
+      "時計回り"
+    ]
+  },
+  "en": {
+    "term": "clockwise",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "adjective",
+  "mapping": "near",
+  "mapping_note": "日本語の「負の向き」は角の回転の向きの約束で、中身は時計回り。英語では向きをそのまま clockwise と言う。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "時計の針と同じ回転の向き。角の負の向き。",
+  "definition_en": "Turning in the same direction as a clock's hands; the negative direction for angles.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A rotation of −90 degrees means 90 degrees clockwise.",
+      "ja": "−90° の回転は、時計回りに 90° のこと。",
+      "register": "spoken"
+    },
+    {
+      "en": "Rotate the point (0, 3) clockwise by π/2 about the origin, and give the coordinates of the image.",
+      "ja": "点 (0, 3) を原点のまわりに −π/2 だけ回転した点の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "counterclockwise",
+    "rotation"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "clockwise": 58
+    },
+    "written": {
+      "clockwise": 60
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

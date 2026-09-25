@@ -82,6 +82,12 @@ describe("countTerm", () => {
     expect(inflections("revolve")).toEqual(expect.arrayContaining(["revolve", "revolves", "revolved", "revolving"]));
   });
 
+  it("keeps a final ss as part of the word", () => {
+    const text = normalize("the graph is compressed horizontally; compress it horizontally; it compresses");
+    expect(countTerm(text, "compress horizontally")).toBe(1);
+    expect(countTerm(text, "compress")).toBe(3);
+  });
+
   it("matches closed-class words as written", () => {
     const text = normalize("take these antiderivatives. take the thing antiderivative");
     expect(countTerm(text, "take the antiderivative")).toBe(0);

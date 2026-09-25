@@ -1,0 +1,85 @@
+{
+  "id": "reference-angle",
+  "ja": {
+    "term": "基準角",
+    "reading": "きじゅんかく",
+    "alt": [
+      "参照角"
+    ]
+  },
+  "en": {
+    "term": "reference angle",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "日本の教科書には名前がない。見出しの「基準角」は本プロジェクトの訳語。米国の Algebra 2 ／ Precalculus では、動径と x 軸がつくる鋭角を reference angle と呼び、三角関数の値を第 1 象限の値から求める定番の手順に使う（用例コーパスで話し言葉 76 件・書き言葉 84 件）。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "角の動径と x 軸がつくる鋭角（0 < θ' ≦ 90°）。三角関数の値は、基準角の値に象限で決まる符号をつけたものになる。",
+  "definition_en": "The acute angle between the terminal side of an angle and the x-axis; a trigonometric value equals the value at the reference angle with the sign set by the quadrant.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The reference angle for 150 degrees is 30 degrees, and sine is positive in quadrant II.",
+      "ja": "150° の基準角は 30° で、第 2 象限では sin は正。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the reference angle for 5π/4, and use it to find cos(5π/4).",
+      "ja": "5π/4 の基準角を求め、それを使って cos(5π/4) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは話し言葉 76 件（うち The Organic Chemistry Tutor 68）・書き言葉 84 件（うち OpenStax Algebra and Trigonometry 83）。"
+  ],
+  "related": [
+    "terminal-side",
+    "quadrantal-angle",
+    "trigonometric-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "reference angle": 76
+    },
+    "written": {
+      "reference angle": 84
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

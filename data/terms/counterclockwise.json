@@ -1,0 +1,97 @@
+{
+  "id": "counterclockwise",
+  "ja": {
+    "term": "正の向き",
+    "reading": "せいのむき",
+    "alt": [
+      "反時計回り"
+    ]
+  },
+  "en": {
+    "term": "counterclockwise",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "adjective",
+  "mapping": "near",
+  "mapping_note": "日本語の「正の向き」は角の回転の向きの約束で、中身は反時計回り。英語では角の向きをそのまま counterclockwise と言う。the positive direction は用例コーパスでは主に数直線上の運動の向き（Khan Academy）。英国の anticlockwise は用例コーパスで 0 件。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "時計の針と逆の回転の向き。角の正の向き。",
+  "definition_en": "Turning in the direction opposite to a clock's hands; the positive direction for angles.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Positive angles go counterclockwise, negative angles go clockwise.",
+      "ja": "正の角は反時計回り、負の角は時計回り。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the point obtained by rotating (2, 0) counterclockwise by π/3 about the origin.",
+      "ja": "点 (2, 0) を原点のまわりに π/3 だけ回転した点を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "clockwise",
+    "general-angle",
+    "rotation"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "counterclockwise": 68
+    },
+    "written": {
+      "counterclockwise": 154
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

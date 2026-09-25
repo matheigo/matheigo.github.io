@@ -1,0 +1,80 @@
+{
+  "id": "triple-angle-formulas",
+  "ja": {
+    "term": "3 倍角の公式",
+    "reading": "さんばいかくのこうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "triple-angle formulas",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "sin 3α = 3 sin α − 4 sin³α、cos 3α = 4 cos³α − 3 cos α の公式。",
+  "definition_en": "The formulas sin 3α = 3 sin α − 4 sin³α and cos 3α = 4 cos³α − 3 cos α.",
+  "latex": "\\sin 3\\alpha = 3\\sin\\alpha - 4\\sin^3\\alpha,\\quad \\cos 3\\alpha = 4\\cos^3\\alpha - 3\\cos\\alpha",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Write 3θ as 2θ plus θ and expand — that's where the triple-angle formula comes from.",
+      "ja": "3θ を 2θ + θ として展開する。3 倍角の公式はそこから出てくる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Derive the formula for cos 3α from the addition and double-angle formulas.",
+      "ja": "加法定理と 2 倍角の公式から cos 3α の公式を導け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパス（OpenStax 6 冊を含む）には 0 件。米国の高校課程では公式として覚えさせず、必要なら加法定理から導く。"
+  ],
+  "related": [
+    "double-angle-formulas",
+    "angle-addition-formulas"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語は固有の名前（triple-angle formulas）だが、OpenStax（6 冊）にも台帳の Wikipedia にもなく、用例コーパスでも 0 件。",
+      "raised": "2026-09-24"
+    },
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ],
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  }
+}

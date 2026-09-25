@@ -1,0 +1,92 @@
+{
+  "id": "phase",
+  "ja": {
+    "term": "位相",
+    "reading": "いそう",
+    "alt": []
+  },
+  "en": {
+    "term": "phase",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "正弦波 y = A sin(ωt + φ) の ωt + φ（または φ）。波がどの位置にあるかを表す。",
+  "definition_en": "In a sinusoid y = A sin(ωt + φ), the quantity ωt + φ (or φ alone), telling where in its cycle the wave is.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "These two waves have the same frequency but they're out of phase.",
+      "ja": "この 2 つの波は周期が同じだが、位相がずれている。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write y = sin t + √3 cos t in the form A sin(t + φ), and give the amplitude and the phase.",
+      "ja": "y = sin t + √3 cos t を A sin(t + φ) の形に表し、振幅と位相を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数学の「位相」（topology、位相空間の位相）とは別の意味。",
+    "用例コーパスの話し言葉 134 件のうち 103 件は MIT 18.03（振動の微分方程式）。"
+  ],
+  "related": [
+    "phase-shift",
+    "amplitude",
+    "auxiliary-angle-form"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "位相",
+      "en": "Phase (waves)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "phase": 134
+    },
+    "written": {
+      "phase": 154
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

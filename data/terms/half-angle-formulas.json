@@ -1,0 +1,82 @@
+{
+  "id": "half-angle-formulas",
+  "ja": {
+    "term": "半角の公式",
+    "reading": "はんかくのこうしき",
+    "alt": [
+      "半角公式"
+    ]
+  },
+  "en": {
+    "term": "half-angle formulas",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "sin²(α/2)、cos²(α/2)、tan²(α/2) を cos α で表す公式。2 倍角の公式から得られる。",
+  "definition_en": "The formulas for sin²(α/2), cos²(α/2), and tan²(α/2) in terms of cos α, derived from the double-angle formulas.",
+  "latex": "\\sin^2\\frac{\\alpha}{2} = \\frac{1 - \\cos\\alpha}{2}",
+  "spoken_en": "sine squared of alpha over two equals one minus cosine alpha over two",
+  "examples": [
+    {
+      "en": "To get sin 22.5 degrees, use the half-angle formula with 45 degrees.",
+      "ja": "sin 22.5° は、45° で半角の公式を使えば出る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use a half-angle formula to find the exact value of cos(π/8).",
+      "ja": "半角の公式を用いて cos(π/8) の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の教科書は sin(α/2) = ±√((1 − cos α)/2) と平方根の形で書く（符号は α/2 の象限で決める）。日本の教科書は 2 乗の形で書く。"
+  ],
+  "related": [
+    "double-angle-formulas",
+    "angle-addition-formulas"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "half-angle formulas": 4
+    },
+    "written": {
+      "half-angle formulas": 25
+    },
+    "sources": [
+      "mit-18.02",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

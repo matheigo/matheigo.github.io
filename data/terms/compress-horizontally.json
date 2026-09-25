@@ -1,0 +1,91 @@
+{
+  "id": "compress-horizontally",
+  "ja": {
+    "term": "横に縮める",
+    "reading": "よこにちぢめる",
+    "alt": [
+      "x 軸方向に縮小する"
+    ]
+  },
+  "en": {
+    "term": "compress … horizontally",
+    "alt": [
+      "compress horizontally"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "グラフの各点の x 座標を 1/b 倍（b > 1）にして、x 軸方向に縮める。y = f(x) は y = f(bx) になる。",
+  "definition_en": "To multiply every x-coordinate of a graph by 1/b (b > 1), squeezing it toward the y-axis; y = f(x) becomes y = f(bx).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The 3 inside compresses it horizontally, so the period gets three times shorter.",
+      "ja": "中の 3 で横に縮むので、周期が 3 分の 1 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "The graph of y = sin 2x is the graph of y = sin x compressed horizontally by a factor of 1/2. Explain why.",
+      "ja": "y = sin 2x のグラフは y = sin x のグラフを x 軸方向に 1/2 倍に縮めたものである。その理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "中の係数は外の係数と逆に働く（f(2x) は縦ではなく横に 1/2 倍）。英語の授業でも the inside does the opposite と言って注意する。",
+    "名詞の言い方 horizontal compression は書き言葉 24 件（OpenStax）。動詞の形は書き言葉 7 件と少ない。"
+  ],
+  "related": [
+    "stretch-vertically",
+    "period"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "compress … horizontally": 7
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 7 件（10 未満））。見出しは OpenStax の呼び方 compress horizontally（本文 5 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

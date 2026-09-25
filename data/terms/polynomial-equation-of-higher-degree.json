@@ -1,0 +1,84 @@
+{
+  "id": "polynomial-equation-of-higher-degree",
+  "ja": {
+    "term": "高次方程式",
+    "reading": "こうじほうていしき",
+    "alt": [
+      "n 次方程式"
+    ]
+  },
+  "en": {
+    "term": "polynomial equation",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "米国では次数で呼び分けず polynomial equation と言う（OpenStax Algebra and Trigonometry）。「高次」に当たる決まった言い方（higher-degree equation）は用例コーパスに 0 件。個別には cubic equation、quartic（fourth-degree）equation。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Integrated Math 3"
+    ]
+  },
+  "definition_ja": "3 次以上の整式 = 0 の形の方程式。因数定理で因数分解して解くことが多い。",
+  "definition_en": "An equation of the form polynomial = 0 of degree three or more, often solved by factoring with the factor theorem.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For a cubic, guess a root first, then divide it out to get a quadratic.",
+      "ja": "3 次方程式は、まず解を 1 つ見つけて割り、2 次式にする。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the polynomial equation x⁴ − 5x² + 4 = 0.",
+      "ja": "方程式 x⁴ − 5x² + 4 = 0 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "n 次方程式は a polynomial equation of degree n。"
+  ],
+  "related": [
+    "cubic-equation",
+    "quartic-equation",
+    "factor-theorem",
+    "fundamental-theorem-of-algebra"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "polynomial equation": 3
+    },
+    "written": {
+      "polynomial equation": 21
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-algtrig",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

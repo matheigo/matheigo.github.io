@@ -1,0 +1,77 @@
+{
+  "id": "sum-to-product-formulas",
+  "ja": {
+    "term": "和積公式",
+    "reading": "わせきこうしき",
+    "alt": [
+      "和を積に直す公式"
+    ]
+  },
+  "en": {
+    "term": "sum-to-product formulas",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "sin A + sin B などの和・差を、三角関数の積で表す公式。",
+  "definition_en": "The formulas that rewrite sums or differences such as sin A + sin B as products of trigonometric functions.",
+  "latex": "\\sin A + \\sin B = 2\\sin\\frac{A + B}{2}\\cos\\frac{A - B}{2}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Use sum-to-product to turn sin 3x + sin x into a product, then set each factor equal to zero.",
+      "ja": "和積公式で sin 3x + sin x を積にして、それぞれの因数を 0 とおく。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve sin 3x + sin x = 0 for 0 ≤ x < π using a sum-to-product formula.",
+      "ja": "和積公式を用いて、0 ≦ x < π のとき sin 3x + sin x = 0 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの書き言葉 11 件はすべて OpenStax Algebra and Trigonometry。話し言葉は 0 件。"
+  ],
+  "related": [
+    "product-to-sum-formulas",
+    "angle-addition-formulas"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "sum-to-product formulas": 11
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  }
+}

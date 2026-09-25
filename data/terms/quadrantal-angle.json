@@ -1,0 +1,85 @@
+{
+  "id": "quadrantal-angle",
+  "ja": {
+    "term": "座標軸上の角",
+    "reading": "ざひょうじくじょうのかく",
+    "alt": []
+  },
+  "en": {
+    "term": "quadrantal angle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「座標軸上の角」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書では 0°, 90°, 180°, 270° などの角にまとめた名前をつけない。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "動径が座標軸に重なる角（0°, 90°, 180°, 270° など、90° の整数倍）。",
+  "definition_en": "An angle whose terminal side lies on a coordinate axis: an integer multiple of 90°.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "At quadrantal angles, one of sine or cosine is zero, and tangent may be undefined.",
+      "ja": "座標軸上の角では sin か cos が 0 になり、tan は定義されないことがある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find sin θ, cos θ, and tan θ for the quadrantal angle θ = 3π/2.",
+      "ja": "θ = 3π/2 のときの sin θ, cos θ, tan θ を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは書き言葉 6 件（OpenStax Algebra and Trigonometry）・話し言葉 1 件。"
+  ],
+  "related": [
+    "reference-angle",
+    "terminal-side"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "quadrantal angle": 1
+    },
+    "written": {
+      "quadrantal angle": 6
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 quadrantal angle（本文 6 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

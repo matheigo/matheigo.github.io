@@ -1,0 +1,98 @@
+{
+  "id": "double-angle-formulas",
+  "ja": {
+    "term": "2 倍角の公式",
+    "reading": "にばいかくのこうしき",
+    "alt": [
+      "倍角公式"
+    ]
+  },
+  "en": {
+    "term": "double-angle formulas",
+    "alt": [
+      "double-angle identities"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "sin 2α、cos 2α、tan 2α を α の三角関数で表す公式。加法定理で β = α とおいて得られる。",
+  "definition_en": "The formulas for sin 2α, cos 2α, and tan 2α in terms of α, obtained from the addition formulas with β = α.",
+  "latex": "\\sin 2\\alpha = 2\\sin\\alpha\\cos\\alpha,\\quad \\cos 2\\alpha = \\cos^2\\alpha - \\sin^2\\alpha",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Cosine of 2θ has three versions — pick the one that has only cosine in it.",
+      "ja": "cos 2θ には 3 通りの形がある。cos だけのものを選ぼう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use a double-angle formula to solve cos 2θ + cos θ = 0 for 0 ≤ θ < 2π.",
+      "ja": "2 倍角の公式を用いて、0 ≦ θ < 2π のとき cos 2θ + cos θ = 0 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "use the double-angle formula",
+      "ja": "2 倍角の公式を使う"
+    }
+  ],
+  "pitfalls": [
+    "用例コーパスでは書き言葉 43 件のうち 36 件が OpenStax Algebra and Trigonometry。話し言葉は 5 件で、授業では「the double angle for cosine」のように略して言うこともある。"
+  ],
+  "related": [
+    "angle-addition-formulas",
+    "half-angle-formulas",
+    "triple-angle-formulas"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "double-angle formulas": 4,
+      "use the double-angle formula": 2
+    },
+    "written": {
+      "double-angle formulas": 43,
+      "use the double-angle formula": 12,
+      "double-angle identities": 2
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

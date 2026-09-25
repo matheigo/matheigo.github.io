@@ -1,0 +1,91 @@
+{
+  "id": "rational-root-theorem",
+  "ja": {
+    "term": "有理根定理",
+    "reading": "ゆうりこんていり",
+    "alt": [
+      "有理数解の定理"
+    ]
+  },
+  "en": {
+    "term": "rational zero theorem",
+    "alt": [
+      "rational root theorem"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Integrated Math 3"
+    ]
+  },
+  "definition_ja": "整数係数の方程式 aₙ xⁿ + … + a₀ = 0 の有理数解は、±（a₀ の約数）/（aₙ の約数）の形に限られるという定理。",
+  "definition_en": "The theorem that any rational root of a polynomial equation with integer coefficients has the form ±(factor of the constant term)/(factor of the leading coefficient).",
+  "latex": "x = \\pm\\frac{p}{q}\\quad(p \\mid a_0,\\ q \\mid a_n)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The rational root theorem gives you a short list of candidates: plus or minus 1, 2, 3, 6.",
+      "ja": "有理根定理で候補が絞れる。±1, ±2, ±3, ±6。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the rational zero theorem to list all possible rational zeros of f(x) = 2x³ + x² − 7x − 6.",
+      "ja": "f(x) = 2x³ + x² − 7x − 6 の有理数解の候補を、有理根定理を用いてすべて挙げよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Algebra and Trigonometry は rational zero theorem と書く（書き言葉 22 件）。話し言葉では rational root theorem が 2 件。"
+  ],
+  "related": [
+    "factor-theorem",
+    "polynomial-equation-of-higher-degree"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "有理根定理",
+      "en": "Rational root theorem"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "rational root theorem": 2
+    },
+    "written": {
+      "rational root theorem": 1,
+      "rational zero theorem": 22
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

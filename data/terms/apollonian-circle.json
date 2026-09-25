@@ -1,0 +1,80 @@
+{
+  "id": "apollonian-circle",
+  "ja": {
+    "term": "アポロニウスの円",
+    "reading": "あぽろにうすのえん",
+    "alt": []
+  },
+  "en": {
+    "term": "Apollonian circle",
+    "alt": [
+      "circle of Apollonius"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "2 定点 A, B からの距離の比が m : n（m ≠ n）で一定である点の軌跡。線分 AB を m : n に内分する点と外分する点を直径の両端とする円になる。",
+  "definition_en": "The locus of points whose distances from two fixed points A and B are in a fixed ratio m : n (m ≠ n); it is the circle whose diameter joins the points dividing AB internally and externally in that ratio.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If the ratio of the distances is 2 to 1, the locus turns out to be a circle.",
+      "ja": "距離の比が 2 : 1 なら、軌跡は円になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the locus of the point P such that PA : PB = 2 : 1, where A(0, 0) and B(3, 0).",
+      "ja": "2 点 A(0, 0), B(3, 0) からの距離の比が PA : PB = 2 : 1 である点 P の軌跡を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパス（OpenStax 6 冊を含む）には 0 件。Wikipedia の記事名は Circles of Apollonius（複数形）。"
+  ],
+  "related": [
+    "locus",
+    "point-of-internal-division",
+    "equation-of-a-circle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "アポロニウスの円",
+      "en": "Circles of Apollonius"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "amplitude",
+  "ja": {
+    "term": "振幅",
+    "reading": "しんぷく",
+    "alt": []
+  },
+  "en": {
+    "term": "amplitude",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "y = a sin(bθ + c) の |a|。グラフの中心線からの最大のずれ。",
+  "definition_en": "The number |a| in y = a sin(bθ + c): how far the graph rises above its midline.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The 3 out front stretches it vertically, so the amplitude is 3.",
+      "ja": "前の 3 で縦に伸びるので、振幅は 3。",
+      "register": "spoken"
+    },
+    {
+      "en": "State the amplitude and period of y = −2 cos(θ/2).",
+      "ja": "y = −2 cos(θ/2) の振幅と周期を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Algebra and Trigonometry は y = A sin(Bx − C) + D のグラフから amplitude・period・phase shift・midline（中心線、書き言葉 79 件）を読み取る問題を扱う。",
+    "振幅は負にならない。a が負ならその絶対値。"
+  ],
+  "related": [
+    "period",
+    "phase-shift",
+    "stretch-vertically",
+    "trigonometric-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "振幅",
+      "en": "Amplitude"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "amplitude": 179
+    },
+    "written": {
+      "amplitude": 222
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

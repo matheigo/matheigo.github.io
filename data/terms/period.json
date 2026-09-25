@@ -1,0 +1,93 @@
+{
+  "id": "period",
+  "ja": {
+    "term": "周期",
+    "reading": "しゅうき",
+    "alt": []
+  },
+  "en": {
+    "term": "period",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "関数の値が同じ変化を繰り返す最小の正の間隔 p（f(x + p) = f(x)）。",
+  "definition_en": "The smallest positive p with f(x + p) = f(x) for all x: the length after which a function repeats.",
+  "latex": "f(x + p) = f(x)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The period of sine is 2π, but sin 3x has period 2π over 3.",
+      "ja": "sin の周期は 2π だが、sin 3x の周期は 2π/3。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the period of y = tan(2θ − π/3).",
+      "ja": "y = tan(2θ − π/3) の周期を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "period だけでは「期間」の意味も多いので、用例コーパスでは period of の形で数えた。"
+  ],
+  "related": [
+    "periodic-function",
+    "amplitude",
+    "trigonometric-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "period of": 42
+    },
+    "written": {
+      "period of": 119
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

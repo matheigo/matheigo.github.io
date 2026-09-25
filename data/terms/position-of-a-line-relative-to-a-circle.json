@@ -1,0 +1,75 @@
+{
+  "id": "position-of-a-line-relative-to-a-circle",
+  "ja": {
+    "term": "円と直線の位置関係",
+    "reading": "えんとちょくせんのいちかんけい",
+    "alt": []
+  },
+  "en": {
+    "term": "position of a line relative to a circle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで 0 件）。米国では「直線が円と 2 点で交わる／接する／交わらない」を how many points the line and the circle have in common として個別に言い、ひとまとめの名前はない。判別式か、中心と直線の距離 d と半径 r の比較で判定する手順も英語で説明する。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "円と直線が 2 点で交わる・接する・共有点をもたない、の 3 通りの関係。判別式か、中心と直線の距離と半径の大小で判定する。",
+  "definition_en": "Whether a line meets a circle in two points, touches it, or misses it, decided by a discriminant or by comparing the center-to-line distance with the radius.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If the distance from the center to the line is less than the radius, the line cuts the circle in two points.",
+      "ja": "中心と直線の距離が半径より小さければ、直線は円と 2 点で交わる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine, depending on k, how many points the line y = x + k and the circle x² + y² = 2 have in common.",
+      "ja": "直線 y = x + k と円 x² + y² = 2 の共有点の個数を、k の値によって調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "tangent-line",
+    "distance-from-a-point-to-a-line",
+    "discriminant",
+    "equation-of-a-circle"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}
