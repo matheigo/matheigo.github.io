@@ -7,12 +7,14 @@
   },
   "en": {
     "term": "combination with repetition",
-    "alt": [],
+    "alt": [
+      "stars and bars"
+    ],
     "uk": null
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語に決まった言い方がない（用例コーパスで combination with repetition は話し言葉 0 件、書き言葉 1 件（MIT の講義ノート））。ₙHᵣ は日本の教科書の記法なので、英語で書くときは ₙ₊ᵣ₋₁Cᵣ（二項係数）の形に直す。離散数学では、〇と仕切りを並べるこの数え方を stars and bars と呼ぶ。",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで combination with repetition は話し言葉 0 件、書き言葉 1 件（MIT の講義ノート））。ₙHᵣ は日本の教科書の記法なので、英語で書くときは ₙ₊ᵣ₋₁Cᵣ（二項係数）の形に直す。〇と仕切りを並べるこの数え方を、Levin の Discrete Mathematics は stars and bars と呼ぶ（3.5 Counting Multisets、1 件）。",
   "domains": [
     "combinatorics"
   ],
@@ -55,6 +57,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.5 Counting Multisets"
     }
   ],
   "confidence": "likely",

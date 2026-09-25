@@ -1,0 +1,93 @@
+{
+  "id": "complementary-event",
+  "ja": {
+    "term": "余事象",
+    "reading": "よじしょう",
+    "alt": []
+  },
+  "en": {
+    "term": "complement of an event",
+    "alt": [
+      "complementary event"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "事象 A に対して、「A が起こらない」という事象のこと。標本空間の根元事象のうち、A に含まれないもの全体からなる。",
+  "definition_en": "The event that A does not happen, made up of all outcomes in the sample space that are not in A. Its probability is 1 − P(A).",
+  "latex": "P(A^c) = 1 - P(A)",
+  "spoken_en": "the probability of A complement equals one minus the probability of A",
+  "examples": [
+    {
+      "en": "It's easier to find the probability of the complement of the event and subtract it from one.",
+      "ja": "余事象の確率を求めて 1 から引くほうが楽だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Two dice are rolled. Let A be the event that the sum is at least 4. Describe the complement of the event A, and use it to find P(A).",
+      "ja": "2 個のさいころを投げる。目の和が 4 以上である事象を A とする。A の余事象を述べ、それを用いて P(A) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "記号が違う。日本の教科書は Ā と書くが、英語の教科書では A^c や A′ などを使う（教科書による）。",
+    "互いに排反（mutually exclusive）な 2 つの事象でも、合わせて標本空間全体にならなければ余事象どうしではない。",
+    "用例コーパスでは complement of an event の形が書き言葉 13 件（OpenStax Introductory Statistics 7・Algebra and Trigonometry 6）、complementary event は話・書とも 2 件。"
+  ],
+  "related": [
+    "complement",
+    "sample-space",
+    "union-of-events",
+    "intersection-of-events",
+    "mutually-exclusive-events"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "complement of an event | complement of the event | complement of event": 1,
+      "complementary event": 2
+    },
+    "written": {
+      "complement of an event | complement of the event | complement of event": 13,
+      "complementary event": 2
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

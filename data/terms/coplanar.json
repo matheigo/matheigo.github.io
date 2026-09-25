@@ -1,0 +1,79 @@
+{
+  "id": "coplanar",
+  "ja": {
+    "term": "同一平面上にある",
+    "reading": "どういつへいめんじょうにある",
+    "alt": [
+      "共面"
+    ]
+  },
+  "en": {
+    "term": "coplanar",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "いくつかの点や直線が、すべて同じ 1 つの平面上にあること。3 点はつねに同一平面上にあるが、4 点はそうとは限らない。",
+  "definition_en": "Lying in the same plane. Any three points are coplanar, but four points may not be.",
+  "latex": "\\overrightarrow{AD} = s\\overrightarrow{AB} + t\\overrightarrow{AC}",
+  "spoken_en": "vector A D equals s times vector A B plus t times vector A C",
+  "examples": [
+    {
+      "en": "Any three points are coplanar, because you can always fit a plane through three points.",
+      "ja": "3 点はいつでも同一平面上にある。3 点を通る平面は必ずとれるからだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the points A(1, 0, 0), B(0, 1, 0), C(0, 0, 1), and D(2, −1, 1) are coplanar.",
+      "ja": "4 点 A(1, 0, 0), B(0, 1, 0), C(0, 0, 1), D(2, −1, 1) が同一平面上にあるかどうかを調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語は「同一平面上にある」と句で言うが、英語は形容詞 1 語。「4 点は同一平面上にない」は The four points are not coplanar. と書く。",
+    "直線の場合の対になる語は collinear（同一直線上にある）。",
+    "用例コーパスで coplanar は書き言葉 10 件（OpenStax Calculus 8・MIT の講義ノート 2）、話し言葉 0 件。CK-12 Geometry は 1.1 Geometry Terms を中心に 11 件使う。"
+  ],
+  "related": [
+    "collinear",
+    "collinearity-condition",
+    "equation-of-a-plane"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "coplanar": 10
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

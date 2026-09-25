@@ -1,0 +1,99 @@
+{
+  "id": "graph-coloring",
+  "ja": {
+    "term": "グラフ彩色",
+    "reading": "ぐらふさいしょく",
+    "alt": [
+      "彩色"
+    ]
+  },
+  "en": {
+    "term": "vertex coloring",
+    "alt": [
+      "graph coloring"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（vertex coloring ／ graph coloring は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "domains": [
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "グラフの各頂点に色を割り当て、辺で結ばれた 2 頂点が必ず異なる色になるようにすること。必要な色の最小の個数を彩色数という。",
+  "definition_en": "An assignment of colors to the vertices of a graph so that any two vertices joined by an edge get different colors. The smallest number of colors needed is the chromatic number.",
+  "latex": "\\chi(G)",
+  "spoken_en": "chi of G",
+  "examples": [
+    {
+      "en": "In a vertex coloring, neighbors can't share a color, so a triangle already needs three colors.",
+      "ja": "彩色では隣り合う頂点に同じ色を使えないので、三角形だけでもう 3 色必要になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find a vertex coloring of the graph below that uses as few colors as possible, and state the chromatic number of the graph.",
+      "ja": "下のグラフを、できるだけ少ない色の数で彩色せよ。また、このグラフの彩色数を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "見出しの vertex coloring は Levin の本の呼び方（10 件、2.5 Coloring 7・2.1 Problems and Definitions 3）。graph coloring は Levin で 5 件、用例コーパスで話し言葉 7 件（MIT OCW）・書き言葉 1 件。",
+    "辺に色を付ける edge coloring（辺彩色）は別の問題。彩色数は chromatic number で、χ(G)（chi of G）と書く。",
+    "平面グラフはどれも 4 色以内で彩色できる（四色定理、four color theorem）。"
+  ],
+  "related": [
+    "bipartite-graph",
+    "planar-graph",
+    "graph-network",
+    "vertex-graph"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "グラフ彩色",
+      "en": "Graph coloring"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "2.5 Coloring・2.1 Problems and Definitions"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "graph coloring": 7
+    },
+    "written": {
+      "graph coloring": 1
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは Levin の呼び方 vertex coloring（2.5 Coloring・2.1 Problems and Definitions）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

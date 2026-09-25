@@ -1,0 +1,86 @@
+{
+  "id": "partial-order",
+  "ja": {
+    "term": "半順序",
+    "reading": "はんじゅんじょ",
+    "alt": [
+      "半順序関係"
+    ]
+  },
+  "en": {
+    "term": "partial order",
+    "alt": [
+      "partial ordering"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "discrete",
+    "set-theory"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "反射律・反対称律・推移律をみたす二項関係のこと。どの 2 つの元も比べられるとは限らない点が、全順序と違う。",
+  "definition_en": "A relation that is reflexive, antisymmetric, and transitive. Unlike a total order, it can have pairs of elements that are not comparable.",
+  "latex": "(a \\preceq b \\land b \\preceq a) \\Rightarrow a = b",
+  "spoken_en": "if a precedes b and b precedes a, then a equals b",
+  "examples": [
+    {
+      "en": "Divisibility is a partial order on the positive integers, but 2 and 3 aren't comparable, since neither one divides the other.",
+      "ja": "割り切る関係は正の整数上の半順序だが、2 と 3 はどちらも他方を割り切らないので比べられない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that ⊆ is a partial order on the power set of {a, b, c}, and find two elements that are not comparable.",
+      "ja": "{a, b, c} のべき集合上の関係 ⊆ が半順序であることを示し、比較できない 2 つの元を挙げよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "反対称律は antisymmetric。対称律（symmetric）の否定ではなく、a ⪯ b かつ b ⪯ a なら a = b という条件。",
+    "本によっては、反射律の代わりに a ⪯ a が成り立たない狭義の順序（< 型、strict partial order）を partial order と呼ぶ。定義を確かめる。",
+    "半順序が定められた集合は partially ordered set（英語版 Wikipedia の記事名）。用例コーパスでは話し言葉 30 件（すべて MIT OCW）、書き言葉 54 件（すべて MIT の講義ノート）。Levin の本では partial order と partial ordering が 3 件ずつ。"
+  ],
+  "related": [
+    "relation",
+    "equivalence-relation",
+    "power-set",
+    "subset"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "partial order": 30
+    },
+    "written": {
+      "partial order": 54
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

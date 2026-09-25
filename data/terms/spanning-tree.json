@@ -1,0 +1,83 @@
+{
+  "id": "spanning-tree",
+  "ja": {
+    "term": "全域木",
+    "reading": "ぜんいきぎ",
+    "alt": []
+  },
+  "en": {
+    "term": "spanning tree",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "連結なグラフのすべての頂点を含み、もとのグラフの辺だけでできている木のこと。頂点が n 個なら辺は n − 1 本になる。",
+  "definition_en": "A tree that contains every vertex of a connected graph and uses only edges of that graph. If the graph has n vertices, a spanning tree has n − 1 edges.",
+  "latex": "|E(T)| = |V(G)| - 1",
+  "spoken_en": "the number of edges of T equals the number of vertices of G minus one",
+  "examples": [
+    {
+      "en": "Keep deleting edges that lie on a cycle until no cycles are left, and what you end up with is a spanning tree.",
+      "ja": "閉路に含まれる辺を、閉路がなくなるまで取り除いていこう。最後に残ったものが全域木だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find two different spanning trees of the graph below.",
+      "ja": "下のグラフの全域木を 2 つ求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "辺に重みがあるとき、重みの合計が最小の全域木を minimum spanning tree（最小全域木）という。",
+    "全域木をもつのは連結なグラフだけ。1 つのグラフに全域木はふつう何通りもある。",
+    "用例コーパスでは話し言葉 70 件（MIT OCW）・書き言葉 23 件（MIT の講義ノート）。Levin の本では 2.2 Trees に 13 件。"
+  ],
+  "related": [
+    "connected",
+    "vertex-graph",
+    "tree",
+    "graph-network"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "全域木",
+      "en": "Spanning tree"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "spanning tree": 70
+    },
+    "written": {
+      "spanning tree": 23
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

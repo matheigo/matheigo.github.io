@@ -1,0 +1,81 @@
+{
+  "id": "linearity-of-expectation",
+  "ja": {
+    "term": "期待値の線形性",
+    "reading": "きたいちのせんけいせい",
+    "alt": []
+  },
+  "en": {
+    "term": "linearity of expectation",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "確率変数の和の期待値は、期待値の和に等しいという性質。E(aX + bY) = aE(X) + bE(Y) は X と Y が独立でなくても成り立つ。",
+  "definition_en": "The fact that the expected value of a sum of random variables equals the sum of their expected values. The rule E(aX + bY) = aE(X) + bE(Y) holds even when X and Y are not independent.",
+  "latex": "E(aX + bY) = aE(X) + bE(Y)",
+  "spoken_en": "E of a X plus b Y equals a times E of X plus b times E of Y",
+  "examples": [
+    {
+      "en": "We don't need independence here. Linearity of expectation works for any random variables.",
+      "ja": "ここで独立性はいらない。期待値の線形性はどんな確率変数にも使える。",
+      "register": "spoken"
+    },
+    {
+      "en": "n guests check their hats, and the hats are returned at random. Use linearity of expectation to find the expected number of guests who get their own hat back.",
+      "ja": "n 人の客が帽子を預け、帽子は無作為に返される。期待値の線形性を用いて、自分の帽子が戻ってくる客の人数の期待値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数B では E(X + Y) = E(X) + E(Y) や E(aX + b) = aE(X) + b を公式として扱う。英語の証明では by linearity of expectation と性質の名前で理由を書く。",
+    "和の期待値は独立でなくても分けられるが、積の期待値 E(XY) = E(X)E(Y) は X と Y が独立のときしか成り立たない。",
+    "用例コーパスでは話し言葉 19 件（すべて MIT OCW）、書き言葉 30 件（すべて MIT の講義ノート）。"
+  ],
+  "related": [
+    "expected-value",
+    "sum-of-random-variables",
+    "random-variable",
+    "independent-random-variables"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "linearity of expectation": 19
+    },
+    "written": {
+      "linearity of expectation": 30
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "hamiltonian-path",
+  "ja": {
+    "term": "ハミルトン路",
+    "reading": "はみるとんろ",
+    "alt": [
+      "ハミルトン経路"
+    ]
+  },
+  "en": {
+    "term": "Hamiltonian path",
+    "alt": [
+      "Hamilton path"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "グラフのすべての頂点をちょうど 1 回ずつ通る経路のこと。始点に戻るものはハミルトン閉路という。",
+  "definition_en": "A path in a graph that visits every vertex exactly once. If it also returns to its starting vertex, it is called a Hamiltonian cycle.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "An Euler trail uses every edge once, but a Hamiltonian path visits every vertex once, and that's a much harder thing to check.",
+      "ja": "一筆書きはすべての辺を 1 回ずつ通るが、ハミルトン路はすべての頂点を 1 回ずつ通る。こちらのほうがずっと判定が難しい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Does the graph below have a Hamiltonian path? If so, list the vertices in order. If not, explain why.",
+      "ja": "下のグラフにハミルトン路はあるか。あれば通る頂点を順に書き、なければその理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "一筆書き（Euler trail）は辺を、ハミルトン路は頂点を 1 回ずつ通る。取り違えやすい。",
+    "一筆書きには頂点の次数で判定できる簡単な条件があるが、ハミルトン路があるかどうかを判定する簡単な条件は知られていない。",
+    "人名なので大文字の H で書く。用例コーパスでは Hamiltonian path が話し言葉 16 件（MIT OCW）・書き言葉 12 件（MIT の講義ノート）。Levin の本は Hamilton path と書く（18 件。Hamiltonian path は 1 件、2.4 Euler Trails and Circuits）。"
+  ],
+  "related": [
+    "eulerian-path",
+    "path-in-a-graph",
+    "vertex-graph",
+    "graph-network"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ハミルトン路",
+      "en": "Hamiltonian path"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "Hamiltonian path": 16
+    },
+    "written": {
+      "Hamiltonian path": 12
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

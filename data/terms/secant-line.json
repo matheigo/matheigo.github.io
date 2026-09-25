@@ -1,0 +1,93 @@
+{
+  "id": "secant-line",
+  "ja": {
+    "term": "割線",
+    "reading": "かっせん",
+    "alt": []
+  },
+  "en": {
+    "term": "secant line",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の教科書の「割線」は、円と 2 点で交わる直線（方べきの定理で使う）。英語の secant line は、円に限らず曲線上の 2 点を通る直線にも使い、微積分では平均変化率を表す直線（the slope of the secant line）として多く出てくる。日本の数II・数III では、この直線を「2 点を通る直線」と呼び、割線とは言わないことが多い。",
+  "domains": [
+    "geometry",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry",
+      "AP Calculus AB"
+    ]
+  },
+  "definition_ja": "曲線上の 2 点を通る直線のこと。円では円と 2 点で交わる直線を指し、微積分ではその傾きが 2 点間の平均変化率になる。",
+  "definition_en": "A line that passes through two points of a curve. For a circle, it is a line that cuts the circle at two points; in calculus, its slope is the average rate of change between the two points.",
+  "latex": "m_{\\text{sec}} = \\frac{f(b) - f(a)}{b - a}",
+  "spoken_en": "the slope of the secant line equals f of b minus f of a, over b minus a",
+  "examples": [
+    {
+      "en": "As h goes to zero, the secant line gets closer and closer to the tangent line.",
+      "ja": "h を 0 に近づけると、割線は接線にどんどん近づいていく。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the slope of the secant line to the graph of f(x) = x² between x = 1 and x = 3.",
+      "ja": "関数 f(x) = x² のグラフ上の、x 座標が 1 と 3 である 2 点を通る直線の傾きを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数II・数III の「2 点を通る直線の傾き」「平均変化率」は、英語では secant line の傾きとして言う。用例コーパスで secant line などの形は話し言葉 134 件（うち Khan Academy 112）、書き言葉 78 件（うち OpenStax Calculus 62）。",
+    "secant は三角関数 sec θ（正割）と同じ語。直線を指すときは secant line と line を付けると紛れない。",
+    "弦（chord）は円周上の 2 点を結ぶ線分で、割線はそれを両側に延ばした直線。"
+  ],
+  "related": [
+    "tangent-line",
+    "average-rate-of-change",
+    "power-of-a-point",
+    "secant-tangent-theorem",
+    "chord",
+    "difference-quotient"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "割線",
+      "en": "Secant line"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "secant line | a secant of | secant of the circle | secants of the circle": 134
+    },
+    "written": {
+      "secant line | a secant of | secant of the circle | secants of the circle": 78
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

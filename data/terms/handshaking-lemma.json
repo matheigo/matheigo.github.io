@@ -1,0 +1,91 @@
+{
+  "id": "handshaking-lemma",
+  "ja": {
+    "term": "握手補題",
+    "reading": "あくしゅほだい",
+    "alt": []
+  },
+  "en": {
+    "term": "handshaking lemma",
+    "alt": [
+      "handshake lemma"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（handshaking lemma ／ handshake lemma は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "domains": [
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "グラフのすべての頂点の次数の和は、辺の本数の 2 倍に等しいという定理。とくに、次数が奇数の頂点は偶数個ある。",
+  "definition_en": "The theorem that the degrees of all the vertices of a graph add up to twice the number of edges. In particular, every graph has an even number of vertices of odd degree.",
+  "latex": "\\sum_{v \\in V} \\deg(v) = 2|E|",
+  "spoken_en": "the sum over all vertices v of the degree of v equals two times the number of edges",
+  "examples": [
+    {
+      "en": "By the handshaking lemma, the degrees have to add up to an even number, so there's no graph with degrees 3, 3, and 3.",
+      "ja": "握手補題より次数の和は偶数になるはずだから、次数が 3, 3, 3 のグラフは存在しない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the handshaking lemma to show that every graph has an even number of vertices of odd degree.",
+      "ja": "握手補題を用いて、どのグラフでも次数が奇数の頂点は偶数個であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "名前はパーティーの握手のたとえから来ている。全員の握手の回数を足すと、1 回の握手を 2 人が 1 回ずつ数えるので、合計は必ず偶数になる。",
+    "1 本の辺は両端の 2 頂点の次数に 1 ずつ数えられる、というのが証明の中心。日本語では定理の名前を出さずに「次数の和は辺の数の 2 倍」と書くこともある。",
+    "用例コーパスでは書き言葉 5 件（すべて MIT の講義ノート）だけで、話し言葉には出てこない。Levin の本では handshaking lemma ／ handshake lemma を合わせて 6 件（2.1 Problems and Definitions 5・1.5 Proofs about Discrete Structures 1）。"
+  ],
+  "related": [
+    "degree-vertex",
+    "vertex-graph",
+    "graph-network",
+    "edge-of-a-graph"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "2.1 Problems and Definitions・1.5 Proofs about Discrete Structures"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "handshaking lemma": 5
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。見出しは Levin の呼び方 handshaking lemma（2.1 Problems and Definitions・1.5 Proofs about Discrete Structures）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

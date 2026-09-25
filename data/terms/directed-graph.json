@@ -1,0 +1,98 @@
+{
+  "id": "directed-graph",
+  "ja": {
+    "term": "有向グラフ",
+    "reading": "ゆうこうぐらふ",
+    "alt": []
+  },
+  "en": {
+    "term": "directed graph",
+    "alt": [],
+    "variants": [
+      {
+        "term": "directed graph",
+        "register": "both",
+        "note": "話し言葉で 24 件（すべて MIT OCW）、書き言葉で 50 件（すべて MIT の講義ノート）。"
+      },
+      {
+        "term": "digraph",
+        "register": "written",
+        "note": "略した言い方。書き言葉で 17 件（すべて MIT の講義ノート）、話し言葉で 4 件（MIT OCW）。書き言葉では directed graph と並ぶ。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "各辺に向きが付いたグラフのこと。辺は頂点の順序対 (u, v) で表し、u から v への矢印でかく。",
+  "definition_en": "A graph in which every edge has a direction. Each edge is an ordered pair (u, v) of vertices and is drawn as an arrow from u to v.",
+  "latex": "\\sum_{v} \\deg^{+}(v) = \\sum_{v} \\deg^{-}(v) = |E|",
+  "spoken_en": "the sum of the out-degrees equals the sum of the in-degrees equals the number of edges",
+  "examples": [
+    {
+      "en": "In a directed graph, the edge from u to v is not the same as the edge from v to u.",
+      "ja": "有向グラフでは、u から v への辺と v から u への辺は別の辺だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Draw the directed graph with vertices 1, 2, 3, 4 and an edge from a to b whenever a < b. Find the in-degree and out-degree of each vertex.",
+      "ja": "頂点 1, 2, 3, 4 をもち、a < b のとき a から b への辺をもつ有向グラフをかけ。各頂点の入次数と出次数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "書き言葉では digraph と略すことがある（用例コーパスで書き言葉 17 件・話し言葉 4 件、すべて MIT）。directed graph は話し言葉 24 件（MIT OCW）、書き言葉 50 件（MIT の講義ノート）。",
+    "有向グラフの次数は、入ってくる辺の数 in-degree（入次数）と出ていく辺の数 out-degree（出次数）に分けて言う。",
+    "集合 A 上の関係は、A を頂点とする有向グラフでかける。Levin の本では 2.6 Relations and Graphs に 4 件、Nicholson の線形代数の本では 2.3 Matrix Multiplication に 5 件。"
+  ],
+  "related": [
+    "vertex-graph",
+    "path-in-a-graph",
+    "degree-vertex",
+    "edge-of-a-graph",
+    "graph-network",
+    "adjacency-matrix",
+    "relation"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "directed graph": 24,
+      "digraph": 4
+    },
+    "written": {
+      "directed graph": 50,
+      "digraph": 17
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

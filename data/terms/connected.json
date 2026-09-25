@@ -1,0 +1,90 @@
+{
+  "id": "connected",
+  "ja": {
+    "term": "連結",
+    "reading": "れんけつ",
+    "alt": [
+      "連結グラフ"
+    ]
+  },
+  "en": {
+    "term": "connected",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "グラフのどの 2 頂点の間にも経路があるという性質のこと。そのようなグラフを連結グラフという。",
+  "definition_en": "Describes a graph in which there is a path between every pair of vertices. Such a graph is called a connected graph.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If a graph isn't connected, it falls apart into pieces, and there's no way to get from one piece to another.",
+      "ja": "グラフが連結でないと、いくつかのかたまりに分かれて、かたまりの間を行き来する道がない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove that a connected graph with n vertices has at least n − 1 edges.",
+      "ja": "頂点が n 個の連結グラフは、少なくとも n − 1 本の辺をもつことを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "連結でないグラフは disconnected（not connected とも言う）。分かれた 1 つ 1 つのかたまりを connected component（連結成分）、または単に component という。",
+    "形容詞なので、英語では a connected graph ／ the graph is connected の形で使う。日本語の「連結グラフ」は connected graph。",
+    "用例コーパスでは connected graph ／ graph is connected の形で数え、話し言葉 16 件（MIT OCW）・書き言葉 30 件（MIT の講義ノート）。Levin の本では 28 件（2.2 Trees 13 ほか）。"
+  ],
+  "related": [
+    "path-in-a-graph",
+    "spanning-tree",
+    "eulerian-path",
+    "graph-network",
+    "tree"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "2.2 Trees・2.1 Problems and Definitions"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "connected graph | graph is connected": 16
+    },
+    "written": {
+      "connected graph | graph is connected": 30
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

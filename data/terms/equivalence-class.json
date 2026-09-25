@@ -1,0 +1,83 @@
+{
+  "id": "equivalence-class",
+  "ja": {
+    "term": "同値類",
+    "reading": "どうちるい",
+    "alt": []
+  },
+  "en": {
+    "term": "equivalence class",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "discrete",
+    "set-theory"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "同値関係 ~ のもとで、元 a と同値な元をすべて集めた集合のこと。[a] と書き、異なる同値類どうしは共通の元をもたない。",
+  "definition_en": "The set of all elements that are equivalent to a given element a under an equivalence relation, written [a]. Two different equivalence classes never share an element.",
+  "latex": "[a] = \\{x \\in A \\mid x \\sim a\\}",
+  "spoken_en": "the equivalence class of a equals the set of all x in A such that x is related to a",
+  "examples": [
+    {
+      "en": "Under congruence mod 3, the equivalence class of 1 is every integer that leaves a remainder of 1 when you divide by 3.",
+      "ja": "3 を法とする合同では、1 の同値類は 3 で割って 1 余る整数全体だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Define a ~ b on ℤ if a ≡ b (mod 4). Find the equivalence class [3] and the number of distinct equivalence classes.",
+      "ja": "ℤ 上の関係を a ≡ b (mod 4) のとき a ~ b と定める。同値類 [3] と、異なる同値類の個数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "同値類全体は集合の分割（partition）になる。同値類全体の集合は商集合（quotient set）で、A/~ と書く。",
+    "mod n の同値類は日本語で「剰余類」とも呼び、英語では residue class や congruence class とも言う。",
+    "用例コーパスでは話し言葉 18 件（すべて MIT OCW）、書き言葉 5 件（MIT の講義ノート）。Levin の本では 19 件（2.6 Relations and Graphs ほか）。"
+  ],
+  "related": [
+    "equivalence-relation",
+    "relation",
+    "congruence-modulo-n"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "同値類",
+      "en": "Equivalence class"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "equivalence class": 18
+    },
+    "written": {
+      "equivalence class": 5
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

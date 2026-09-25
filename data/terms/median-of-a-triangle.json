@@ -1,0 +1,92 @@
+{
+  "id": "median-of-a-triangle",
+  "ja": {
+    "term": "中線",
+    "reading": "ちゅうせん",
+    "alt": []
+  },
+  "en": {
+    "term": "median",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "三角形の 1 つの頂点と、その対辺の中点を結ぶ線分のこと。3 本の中線は 1 点（重心）で交わる。",
+  "definition_en": "A segment that joins a vertex of a triangle to the midpoint of the opposite side. The three medians of a triangle meet at one point, the centroid.",
+  "latex": "AG : GM = 2 : 1",
+  "spoken_en": "A G to G M is two to one",
+  "examples": [
+    {
+      "en": "Draw the median from A. It goes to the midpoint of BC, so BM equals MC.",
+      "ja": "A から中線を引こう。BC の中点に向かうので BM = MC になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "In △ABC, AM is a median and G is the centroid. If AM = 12, find AG.",
+      "ja": "△ABC において、AM は中線、G は重心である。AM = 12 のとき、AG を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の median は統計の「中央値」（median）と同じ語。図形の話なら中線、データの話なら中央値と読み分ける。紛れそうなときは the median of a triangle と言う。",
+    "中線は頂点と対辺の中点を結ぶ線分。角の二等分線（angle bisector）、垂直二等分線（perpendicular bisector）、頂点から対辺への垂線（altitude）と取り違えない。",
+    "median of a triangle の形は、用例コーパスで話し言葉 1 件（MIT OCW）。IM と CK-12 Geometry に各 5 件（CK-12 は 4.23 Medians ほか）。"
+  ],
+  "related": [
+    "centroid",
+    "median",
+    "midpoint",
+    "triangle",
+    "the-five-centers-of-a-triangle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "中線",
+      "en": "Median (geometry)"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 6.17 Lines in Triangles"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "median of a triangle | median of the triangle | medians of a triangle | medians of the triangle": 1
+    },
+    "sources": [
+      "mit-18.02"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 median of a triangle | median of the triangle | medians of a triangle | medians of the triangle（Geometry 5.11 Prisms Practice・Geometry 6.17 Lines in Triangles・Geometry 6.16 Weighted Averages in a Triangle・計 5 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

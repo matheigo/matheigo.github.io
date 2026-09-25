@@ -1,0 +1,87 @@
+{
+  "id": "multiplication-principle",
+  "ja": {
+    "term": "積の法則",
+    "reading": "せきのほうそく",
+    "alt": []
+  },
+  "en": {
+    "term": "multiplication principle",
+    "alt": [
+      "fundamental counting principle",
+      "rule of product"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "事柄 A の起こり方が m 通りあり、そのそれぞれに対して事柄 B の起こり方が n 通りずつあるとき、A と B がともに起こる場合の数は mn 通りであるという法則。",
+  "definition_en": "If a first choice can be made in m ways and, for each of those, a second choice can be made in n ways, then the two choices together can be made in m · n ways.",
+  "latex": "|A \\times B| = |A| \\cdot |B|",
+  "spoken_en": "the size of A cross B equals the size of A times the size of B",
+  "examples": [
+    {
+      "en": "Three shirts and four pairs of pants, so by the multiplication principle that's 3 times 4, or 12 outfits.",
+      "ja": "シャツが 3 枚、ズボンが 4 本だから、積の法則で 3 × 4 = 12 通りの組み合わせになる。",
+      "register": "spoken"
+    },
+    {
+      "en": "A license plate has 2 letters followed by 3 digits. Use the multiplication principle to find the number of possible license plates.",
+      "ja": "ナンバープレートは、アルファベット 2 文字の後に数字 3 けたを並べたものである。積の法則を用いて、考えられるナンバープレートの数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Algebra and Trigonometry は multiplication principle を 31 件、fundamental counting principle を 4 件使う。用例コーパスの話し言葉ではどちらも 0 件。",
+    "確率の乗法定理（multiplication rule）とは別の語。積の法則は場合の数を数える法則。",
+    "使えるのは、2 つ目の選び方の数が 1 つ目の結果によらず同じ n 通りのとき。選べるものの中身は変わってもよい（順列の数え方）。"
+  ],
+  "related": [
+    "addition-principle",
+    "counting",
+    "permutation",
+    "general-multiplication-rule",
+    "tree-diagram"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "multiplication principle": 31,
+      "fundamental counting principle": 4
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  }
+}

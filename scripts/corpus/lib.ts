@@ -623,6 +623,18 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   image: { image: "!mirror image of | image point | image points | its image" },
   // "tiling" folds into tile / tiles (floor tiles, fraction tiles): only the tiling of the plane
   tessellation: { tiling: "tiling of the plane | tilings of the plane | tiling the plane" },
+  // 単元 3 (batch 7): everyday words and the homonyms of other entries, counted as the concept
+  relation: { relation: "binary relation | relation on | relations on | the relation r | a relation r" },
+  "degree-vertex": { "degree of a vertex": "degree of a vertex | degree of the vertex | degree of each vertex | degree of vertex" },
+  connected: { connected: "connected graph | graph is connected" },
+  intersection: { intersection: "intersection of a and b | intersection of sets | intersection of two sets | intersection of the sets | a intersect b | a intersection b" },
+  "complementary-event": { "complement of an event": "complement of an event | complement of the event | complement of event" },
+  "median-of-a-triangle": { median: "median of a triangle | median of the triangle | medians of a triangle | medians of the triangle" },
+  "congruence-modulo-n": { "congruence modulo n": "congruent modulo | congruent mod | congruence modulo | congruence mod" },
+  // 10 進法: "base ten" alone is mostly "log, base ten"
+  "decimal-system": { "base ten": "base-ten | base ten system | base ten number | base ten numeral | base ten place | in base ten" },
+  // 割線: "secant" alone is also sec θ
+  "secant-line": { "secant line": "secant line | a secant of | secant of the circle | secants of the circle" },
   // CK-12 Algebra's "a fractional part of a power of one-tenth" is a decimal place, not x − ⌊x⌋ (単元 3)
   "fractional-part": { "fractional part": "!a fractional part of | fractional part is" },
   // ガウス記号: the reading "floor of" (x), not the floor of a room or a building

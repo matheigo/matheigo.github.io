@@ -1,0 +1,104 @@
+{
+  "id": "congruence-modulo-n",
+  "ja": {
+    "term": "合同式",
+    "reading": "ごうどうしき",
+    "alt": [
+      "〜を法として合同",
+      "モジュラー算術"
+    ]
+  },
+  "en": {
+    "term": "congruence modulo n",
+    "alt": [
+      "modular arithmetic"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（congruent modulo ／ congruence modulo の形と modular arithmetic は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "整数 a, b の差 a − b が n で割り切れるとき、a と b は n を法として合同であるといい、a ≡ b (mod n) と書く。この関係を表す式を合同式という。",
+  "definition_en": "Two integers a and b are congruent modulo n when n divides a − b, that is, when they leave the same remainder on division by n. This is written a ≡ b (mod n).",
+  "latex": "a \\equiv b \\pmod{n}",
+  "spoken_en": "a is congruent to b mod n",
+  "examples": [
+    {
+      "en": "With congruence modulo n, all we care about is the remainder, so mod 3, 17 and 5 act the same.",
+      "ja": "合同式では余りだけを見るので、3 を法とすると 17 と 5 は同じに扱える。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove that congruence modulo n is an equivalence relation on the integers.",
+      "ja": "n を法とする合同は、整数全体における同値関係であることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "a ≡ b (mod n) は a is congruent to b mod n と読む。mod は modulo の略。",
+    "英語の congruent は図形の合同（congruent）と同じ語。日本語の「合同」と同じく、1 語が 2 つの意味を持つ。",
+    "Levin の本では 6.2 Introduction to Number Theory に 13 件。用例コーパスでは congruent modulo などの形が話し言葉 2 件・書き言葉 3 件、modular arithmetic が話し言葉 3 件・書き言葉 7 件（どれも MIT）。"
+  ],
+  "related": [
+    "remainder",
+    "modular-inverse",
+    "chinese-remainder-theorem",
+    "fermats-little-theorem",
+    "congruent",
+    "equivalence-relation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "整数の合同",
+      "en": "Congruence (integers)"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "6.2 Introduction to Number Theory"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "congruent modulo | congruent mod | congruence modulo | congruence mod": 2,
+      "modular arithmetic": 3
+    },
+    "written": {
+      "congruent modulo | congruent mod | congruence modulo | congruence mod": 3,
+      "modular arithmetic": 7
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満）。見出しは Levin の呼び方 congruent modulo | congruent mod | congruence modulo | congruence mod（6.2 Introduction to Number Theory）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

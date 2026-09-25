@@ -1,0 +1,102 @@
+{
+  "id": "statistical-variable",
+  "ja": {
+    "term": "変量",
+    "reading": "へんりょう",
+    "alt": []
+  },
+  "en": {
+    "term": "variable",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の数I「データの分析」では、データの項目（身長・点数など）を変量と呼び、式の文字の「変数」と言葉を分ける。英語はどちらも variable と言い、統計では quantitative variable ／ categorical variable のように種類を付けて言うことが多い。用例コーパスの variable（話し言葉 2,181 件・書き言葉 3,499 件）は、式の変数の意味も合わせた件数。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "調査の対象ごとに値が決まる特性（身長・テストの点数など）のこと。データはこの値を対象の数だけ集めたものである。",
+  "definition_en": "A characteristic that can take different values for different individuals in a data set, such as height or a test score. A data set records the values of one or more variables for each individual.",
+  "latex": "\\bar{x} = \\frac{x_1 + x_2 + \\cdots + x_n}{n}",
+  "spoken_en": "x bar equals x sub 1 plus x sub 2 plus dot dot dot plus x sub n, all over n",
+  "examples": [
+    {
+      "en": "Before you pick a graph, decide whether each variable is categorical or quantitative.",
+      "ja": "グラフを選ぶ前に、それぞれの変量が質的か量的かを決めよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "A survey records the age, height, and favorite sport of 50 students. Which variables are quantitative?",
+      "ja": "50 人の生徒について、年齢・身長・好きなスポーツを調べた。これらの変量のうち、量的なものはどれか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の variable は、式の文字の「変数」と統計の「変量」の両方を指す。どちらの意味かは文脈と、quantitative ／ categorical のような前に付く語で読み分ける。",
+    "確率変数（random variable）とは別の語。変量はデータの項目で、確率変数は試行の結果に数を対応させるもの。",
+    "用例コーパスの variable（話し言葉 2,181 件・書き言葉 3,499 件）は式の変数の意味も含む件数。AP Statistics の CED では 298 件使う。"
+  ],
+  "related": [
+    "quantitative-variable",
+    "categorical-variable",
+    "random-variable",
+    "data"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "variable": 2181
+    },
+    "written": {
+      "variable": 3499
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

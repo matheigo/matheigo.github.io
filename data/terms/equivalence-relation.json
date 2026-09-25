@@ -1,0 +1,86 @@
+{
+  "id": "equivalence-relation",
+  "ja": {
+    "term": "同値関係",
+    "reading": "どうちかんけい",
+    "alt": []
+  },
+  "en": {
+    "term": "equivalence relation",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "discrete",
+    "set-theory"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "反射律・対称律・推移律の 3 つをみたす二項関係のこと。集合を、互いに同値な元どうしの組（同値類）に分ける。",
+  "definition_en": "A relation on a set that is reflexive, symmetric, and transitive. It splits the set into groups of elements that are equivalent to each other.",
+  "latex": "a \\sim a, \\quad a \\sim b \\Rightarrow b \\sim a, \\quad (a \\sim b \\land b \\sim c) \\Rightarrow a \\sim c",
+  "spoken_en": "a is related to a; if a is related to b, then b is related to a; and if a is related to b and b is related to c, then a is related to c",
+  "examples": [
+    {
+      "en": "Congruence mod 5 is an equivalence relation, so it breaks the integers into five classes.",
+      "ja": "5 を法とする合同は同値関係なので、整数全体を 5 つの類に分ける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let R be the relation on ℤ defined by a R b if a − b is even. Determine whether R is an equivalence relation, and justify your answer.",
+      "ja": "整数全体の集合 ℤ 上の関係 R を、a − b が偶数のとき a R b と定める。R が同値関係であるかどうかを調べ、理由を述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "3 つの性質は形容詞で言う（R is reflexive / symmetric / transitive）。米国の Geometry で習う reflexive property などは、等号や合同についての同じ性質の名前。",
+    "日本の高校で習う「命題 p と q は同値」は equivalent（論理の同値）で、同値関係（equivalence relation）とは別の話。",
+    "用例コーパスでは話し言葉 12 件（すべて MIT OCW）、書き言葉 13 件（すべて MIT の講義ノート）。Levin の本では 37 件（2.6 Relations and Graphs ほか）。"
+  ],
+  "related": [
+    "relation",
+    "equivalence-class",
+    "congruence-modulo-n",
+    "reflexive-property",
+    "symmetric-property",
+    "transitive-property"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "同値関係",
+      "en": "Equivalence relation"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "equivalence relation": 12
+    },
+    "written": {
+      "equivalence relation": 13
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

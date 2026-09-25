@@ -1,0 +1,94 @@
+{
+  "id": "chebyshevs-inequality",
+  "ja": {
+    "term": "チェビシェフの不等式",
+    "reading": "ちぇびしぇふのふとうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "Chebyshev's theorem",
+    "alt": [
+      "Chebyshev's inequality",
+      "Chebyshev's rule"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability",
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "どんな分布でも、平均から標準偏差の k 倍以上離れた値をとる確率は 1/k² 以下であるという不等式。言いかえると、平均から標準偏差の k 倍より近い範囲に、全体の 1 − 1/k² 以上が入る。",
+  "definition_en": "The inequality stating that, for any distribution, the probability of a value at least k standard deviations away from the mean is at most 1/k². Equivalently, at least 1 − 1/k² of the values lie within k standard deviations of the mean.",
+  "latex": "P(|X - \\mu| \\ge k\\sigma) \\le \\frac{1}{k^2}",
+  "spoken_en": "the probability that the absolute value of X minus mu is greater than or equal to k sigma is less than or equal to one over k squared",
+  "examples": [
+    {
+      "en": "Chebyshev's theorem works for any distribution, not just normal ones, but the bound it gives is pretty rough.",
+      "ja": "チェビシェフの不等式は正規分布に限らずどんな分布にも使えるが、得られる評価はかなり粗い。",
+      "register": "spoken"
+    },
+    {
+      "en": "A data set has mean 50 and standard deviation 5. Use Chebyshev's theorem to find the minimum percentage of the data that lies between 40 and 60.",
+      "ja": "平均 50、標準偏差 5 のデータがある。チェビシェフの不等式を用いて、40 より大きく 60 より小さい範囲にあるデータの割合の最小値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語は「不等式」だが、見出しの Chebyshev's theorem は用例コーパスで書き言葉 12 件（MIT の講義ノート）、話し言葉 3 件（MIT OCW）。英語版 Wikipedia の記事名は Chebyshev's inequality、OpenStax Introductory Statistics は Chebyshev's rule と書く（1 件）。",
+    "正規分布の 68–95–99.7 の目安（empirical rule）とは別物。チェビシェフの不等式はどんな分布でも成り立つ下限で、k = 2 なら 75% 以上としか言えない。",
+    "Chebyshev's theorem という名前は、素数の分布についての別の定理を指すこともある。"
+  ],
+  "related": [
+    "standard-deviation",
+    "variance",
+    "expected-value",
+    "normal-distribution"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "チェビシェフの不等式",
+      "en": "Chebyshev's inequality"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "Chebyshev's theorem": 3
+    },
+    "written": {
+      "Chebyshev's rule": 1,
+      "Chebyshev's theorem": 12
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

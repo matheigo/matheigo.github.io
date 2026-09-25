@@ -1,0 +1,86 @@
+{
+  "id": "intersection",
+  "ja": {
+    "term": "共通部分",
+    "reading": "きょうつうぶぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "intersection",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "set-theory"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "集合 A と集合 B の両方に属する要素全体の集合のこと。A ∩ B と書く。",
+  "definition_en": "The set of all elements that belong to both A and B. It is written A ∩ B.",
+  "latex": "A \\cap B",
+  "spoken_en": "A intersect B",
+  "examples": [
+    {
+      "en": "The intersection is just what the two sets have in common, the part where the circles overlap in the Venn diagram.",
+      "ja": "共通部分は 2 つの集合に共通するもの、ベン図で円が重なっている部分だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let A = {1, 2, 3, 4} and B = {3, 4, 5}. Find the intersection of A and B.",
+      "ja": "A = {1, 2, 3, 4}、B = {3, 4, 5} のとき、A と B の共通部分を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "A ∩ B は A intersect B と読む。確率では A and B とも読む（積事象）。「かつ」の ∩（intersection）と「または」の ∪（union）を取り違えない。",
+    "共通部分が空集合のとき、A と B は disjoint（互いに素）という。",
+    "用例コーパスでは intersection of A and B ／ A intersect B などの形で数え、話し言葉 12 件（MIT OCW 11・The Organic Chemistry Tutor 1）・書き言葉 2 件（OpenStax の 2 冊に 1 件ずつ）。2 直線の交わりの意味の intersection は数えていない（交点は point of intersection）。"
+  ],
+  "related": [
+    "union",
+    "set",
+    "complement",
+    "intersection-of-events",
+    "point-of-intersection",
+    "venn-diagram",
+    "empty-set"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "intersection of a and b | intersection of sets | intersection of two sets | intersection of the sets | a intersect b | a intersection b": 12
+    },
+    "written": {
+      "intersection of a and b | intersection of sets | intersection of two sets | intersection of the sets | a intersect b | a intersection b": 2
+    },
+    "sources": [
+      "mit-6.042",
+      "openstax-algtrig",
+      "openstax-introstats",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

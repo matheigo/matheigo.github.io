@@ -1,0 +1,84 @@
+{
+  "id": "addition-principle",
+  "ja": {
+    "term": "和の法則",
+    "reading": "わのほうそく",
+    "alt": []
+  },
+  "en": {
+    "term": "addition principle",
+    "alt": [
+      "rule of sum"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "同時には起こらない 2 つの事柄 A, B があり、A の起こり方が m 通り、B の起こり方が n 通りのとき、A または B が起こる場合の数は m + n 通りであるという法則。",
+  "definition_en": "If one task can be done in m ways and another in n ways, and the two cannot happen at the same time, then there are m + n ways to do one or the other.",
+  "latex": "|A \\cup B| = |A| + |B| \\quad (A \\cap B = \\varnothing)",
+  "spoken_en": "the size of A union B equals the size of A plus the size of B, when A intersect B is empty",
+  "examples": [
+    {
+      "en": "These two cases don't overlap, so by the addition principle we just add them: 6 plus 4 is 10 ways.",
+      "ja": "この 2 つの場合は重ならないので、和の法則で足せばよい。6 + 4 で 10 通りだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A cafe offers 4 kinds of sandwiches and 3 kinds of salads. A customer chooses either one sandwich or one salad. Use the addition principle to find the number of possible choices.",
+      "ja": "ある店にはサンドイッチが 4 種類、サラダが 3 種類ある。サンドイッチかサラダのどちらか 1 つを選ぶとき、選び方は何通りあるか。和の法則を用いて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "2 つの場合に重なりがあるときは、足すだけでは数えすぎる。重なりを引く包除原理（inclusion-exclusion principle）を使う。",
+    "確率の加法定理（addition rule）とは別の語。和の法則は場合の数を数える法則。",
+    "用例コーパスの addition principle は書き言葉 19 件で、すべて OpenStax Algebra and Trigonometry。話し言葉には出てこない。"
+  ],
+  "related": [
+    "multiplication-principle",
+    "counting",
+    "general-addition-rule",
+    "inclusion-exclusion-principle"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "addition principle": 19
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  }
+}

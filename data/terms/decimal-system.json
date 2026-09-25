@@ -1,0 +1,95 @@
+{
+  "id": "decimal-system",
+  "ja": {
+    "term": "10 進法",
+    "reading": "じっしんほう",
+    "alt": [
+      "十進法"
+    ]
+  },
+  "en": {
+    "term": "base ten",
+    "alt": [
+      "decimal system",
+      "decimal number system"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory",
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "0 から 9 までの 10 個の数字を使い、位が 1 つ上がるごとに位の大きさが 10 倍になる数の表し方。",
+  "definition_en": "The way of writing numbers with the ten digits 0 through 9, where each place is worth ten times the place to its right.",
+  "latex": "307 = 3 \\times 10^2 + 0 \\times 10^1 + 7 \\times 10^0",
+  "spoken_en": "three hundred seven equals three times ten squared plus zero times ten to the first plus seven times ten to the zero",
+  "examples": [
+    {
+      "en": "In base ten, once the ones place goes past 9, you carry one over to the tens place.",
+      "ja": "10 進法では、一の位が 9 を超えると十の位に 1 繰り上がる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the binary number 1011₂ in base ten.",
+      "ja": "2 進法で表された数 1011₍₂₎ を 10 進法で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「10 進法で表せ」は in base ten と言う。base ten の形は用例コーパスの書き言葉で 22 件（うち OpenStax Prealgebra 18）、IM で 43 件。decimal number system は IM に 1 件、decimal system は Nicholson に 1 件だけ。",
+    "英語の decimal は単独では「小数」を指すことが多い（IM Grade 6 の Adding and Subtracting Decimals など）。decimals を 10 進法と読まない。"
+  ],
+  "related": [
+    "base-n",
+    "binary",
+    "numeral-system",
+    "place",
+    "hexadecimal",
+    "digit"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "base-ten | base ten system | base ten number | base ten numeral | base ten place | in base ten": 1
+    },
+    "written": {
+      "base-ten | base ten system | base ten number | base ten numeral | base ten place | in base ten": 22
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-prealgebra",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

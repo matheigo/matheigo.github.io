@@ -1,0 +1,87 @@
+{
+  "id": "binomial-identities",
+  "ja": {
+    "term": "二項係数の恒等式",
+    "reading": "にこうけいすうのこうとうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "binomial identity",
+    "alt": [
+      "binomial coefficient identity"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（binomial identity ／ binomial coefficient identity は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "二項係数 nCk の間に成り立つ等式のこと。nCk = nCn−k や nCk = n−1Ck−1 + n−1Ck などがあり、式の変形や数え上げの議論で示す。",
+  "definition_en": "An equation that holds between binomial coefficients, such as C(n, k) = C(n, n − k) or C(n, k) = C(n − 1, k − 1) + C(n − 1, k). It can be proved with algebra or by counting the same set in two ways.",
+  "latex": "\\binom{n}{k} = \\binom{n-1}{k-1} + \\binom{n-1}{k}",
+  "spoken_en": "n choose k equals n minus one choose k minus one plus n minus one choose k",
+  "examples": [
+    {
+      "en": "To prove this binomial identity, count the same committees in two different ways.",
+      "ja": "この二項係数の恒等式を示すには、同じ委員会の選び方を 2 通りに数えればよい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove the binomial identity C(n, 0) + C(n, 1) + ⋯ + C(n, n) = 2ⁿ by counting the subsets of an n-element set.",
+      "ja": "n 個の要素からなる集合の部分集合の個数を数えることで、等式 nC0 + nC1 + ⋯ + nCn = 2ⁿ を証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書は nCk と書くが、英語の本では縦に並べた (n k) や C(n, k) と書き、n choose k と読む。",
+    "個々の等式には名前が付いたものがある。nCk = n−1Ck−1 + n−1Ck は Pascal's identity（パスカルの三角形の作り方にあたる）。",
+    "binomial identity は Levin の本の 3.6 Combinatorial Proofs で 18 件。CED・OpenStax・IM・CK-12 には出てこない。"
+  ],
+  "related": [
+    "binomial-coefficient",
+    "binomial-theorem",
+    "pascals-triangle",
+    "combination",
+    "subset"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.6 Combinatorial Proofs"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 binomial identity（3.6 Combinatorial Proofs）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

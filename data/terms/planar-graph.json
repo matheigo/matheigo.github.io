@@ -1,0 +1,80 @@
+{
+  "id": "planar-graph",
+  "ja": {
+    "term": "平面グラフ",
+    "reading": "へいめんぐらふ",
+    "alt": [
+      "平面的グラフ"
+    ]
+  },
+  "en": {
+    "term": "planar graph",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "辺どうしが交わらないように平面上にかくことのできるグラフのこと。交差してかかれていても、かき直して交差をなくせれば平面グラフである。",
+  "definition_en": "A graph that can be drawn in the plane so that no two edges cross. A drawing with crossings does not rule it out, as long as some other drawing has none.",
+  "latex": "v - e + f = 2",
+  "spoken_en": "v minus e plus f equals two",
+  "examples": [
+    {
+      "en": "It looks like these edges cross, but you can redraw it with no crossings at all, so it's a planar graph.",
+      "ja": "辺が交差しているように見えるけれど、交差がないようにかき直せるから、これは平面グラフだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Explain why K₅, the complete graph on 5 vertices, is not a planar graph.",
+      "ja": "5 頂点の完全グラフ K₅ が平面グラフでない理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の本によっては、交差なくかけるグラフを「平面的グラフ」、交差なくかいた図そのものを「平面グラフ」と呼び分ける。英語では前者が planar graph、後者が plane graph。",
+    "連結な平面グラフでは v − e + f = 2（頂点・辺・面の数。外側の領域も 1 つの面と数える）が成り立つ。K₅ と K₃,₃ は平面グラフでない。",
+    "用例コーパスでは書き言葉 54 件（すべて MIT の講義ノート）で、話し言葉には出てこない。Levin の本では 53 件（2.3 Planar Graphs 43 ほか）。"
+  ],
+  "related": [
+    "eulers-formula-for-polyhedra",
+    "graph-coloring",
+    "graph-network"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "平面グラフ",
+      "en": "Planar graph"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "planar graph": 54
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

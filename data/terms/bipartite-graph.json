@@ -1,0 +1,84 @@
+{
+  "id": "bipartite-graph",
+  "ja": {
+    "term": "二部グラフ",
+    "reading": "にぶぐらふ",
+    "alt": [
+      "2部グラフ"
+    ]
+  },
+  "en": {
+    "term": "bipartite graph",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "頂点全体を 2 つの組に分けて、どの辺も異なる組の頂点どうしを結ぶようにできるグラフのこと。",
+  "definition_en": "A graph whose vertices can be split into two sets so that every edge joins a vertex in one set to a vertex in the other.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A bipartite graph is one you can color with just two colors, so no edge ever joins two vertices of the same color.",
+      "ja": "二部グラフは 2 色だけで塗り分けられるグラフで、同じ色の頂点どうしを結ぶ辺が 1 本もない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that a bipartite graph cannot contain a cycle of odd length.",
+      "ja": "二部グラフは長さが奇数の閉路を含まないことを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「頂点を 2 色で塗り分けられる」「長さが奇数の閉路をもたない」は、どちらも二部グラフであることと同値。",
+    "一方の組の m 個の頂点と他方の組の n 個の頂点がすべて辺で結ばれたものを complete bipartite graph（完全二部グラフ）といい、Kₘ,ₙ と書く。",
+    "用例コーパスでは話し言葉 4 件（MIT OCW）・書き言葉 30 件（MIT の講義ノート）。Levin の本では 37 件（2.7 Matching in Bipartite Graphs 15 ほか）。"
+  ],
+  "related": [
+    "graph-coloring",
+    "vertex-graph",
+    "graph-network"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "2部グラフ",
+      "en": "Bipartite graph"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "bipartite graph": 4
+    },
+    "written": {
+      "bipartite graph": 30
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

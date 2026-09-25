@@ -1,0 +1,82 @@
+{
+  "id": "pigeonhole-principle",
+  "ja": {
+    "term": "鳩の巣原理",
+    "reading": "はとのすげんり",
+    "alt": [
+      "部屋割り論法",
+      "ディリクレの箱入れ原理"
+    ]
+  },
+  "en": {
+    "term": "pigeonhole principle",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics",
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "n 個の箱に n より多くの物を入れると、2 個以上入る箱が少なくとも 1 つあるという原理。一般に n 個の物を k 個の箱に入れると、⌈n/k⌉ 個以上入る箱がある。",
+  "definition_en": "The principle that if more than n objects are put into n boxes, some box gets at least two of them. More generally, if n objects go into k boxes, some box holds at least ⌈n/k⌉ objects.",
+  "latex": "\\left\\lceil \\frac{n}{k} \\right\\rceil",
+  "spoken_en": "the ceiling of n over k",
+  "examples": [
+    {
+      "en": "There are 13 people in this room, so by the pigeonhole principle, at least two of them were born in the same month.",
+      "ja": "この部屋には 13 人いるので、鳩の巣原理から、少なくとも 2 人は同じ月に生まれている。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the pigeonhole principle to show that among any 5 integers, there are two that leave the same remainder when divided by 4.",
+      "ja": "鳩の巣原理を用いて、任意の 5 つの整数の中に、4 で割った余りが等しいものが 2 つあることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "pigeonhole は「鳩の巣」ではなく、鳩小屋の仕切りや書類の仕分け棚を指す語。英語では pigeon nest とは言わず、pigeonhole principle で 1 つの名前。",
+    "日本の入試問題の解説では「部屋割り論法」と呼ぶことがある。証明の中では by the pigeonhole principle と理由を添える。",
+    "用例コーパスでは書き言葉 18 件（すべて MIT の講義ノート）。Levin の本では 5 件（1.4 Proofs ほか）。"
+  ],
+  "related": [
+    "counting",
+    "proof-by-contradiction",
+    "ceiling-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "鳩の巣原理",
+      "en": "Pigeonhole principle"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "pigeonhole principle": 18
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}
