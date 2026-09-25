@@ -1,0 +1,109 @@
+{
+  "id": "add",
+  "ja": {
+    "term": "足す",
+    "reading": "たす",
+    "alt": []
+  },
+  "en": {
+    "term": "add",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "2 つ以上の数や式を合わせて、その和を求める。",
+  "definition_en": "To combine two or more numbers or expressions to find their sum.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If x − 5 = 7, add 5 to both sides, and you get x = 12.",
+      "ja": "x − 5 = 7 なら、両辺に 5 を足して x = 12。",
+      "register": "spoken"
+    },
+    {
+      "en": "Add 4x − 7 and −x + 3.",
+      "ja": "4x − 7 と −x + 3 を足せ。",
+      "register": "written"
+    },
+    {
+      "en": "When you add 2/3 and 1/6, you need a common denominator first.",
+      "ja": "2/3 と 1/6 を足すときは、まず通分が必要だよ。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "語順が日本語と逆。「A に B を足す」は add B to A（add 5 to x は x + 5）。",
+    "add A and B は「A と B を足す」。その結果の和は sum（the sum of A and B）。",
+    "名詞の「足し算・加法」は addition（エントリ addition）。式の + は plus と読む。"
+  ],
+  "related": [
+    "addition",
+    "subtract",
+    "multiply",
+    "the-four-operations",
+    "move-term-to-other-side"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "add": 4463
+    },
+    "written": {
+      "add": 2044
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

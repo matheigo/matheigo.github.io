@@ -1,0 +1,111 @@
+{
+  "id": "reciprocal",
+  "ja": {
+    "term": "逆数",
+    "reading": "ぎゃくすう",
+    "alt": []
+  },
+  "en": {
+    "term": "reciprocal",
+    "alt": [
+      "multiplicative inverse"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "ある数に掛けると積が 1 になる数。0 でない数 a の逆数は 1/a で、0 には逆数がない。",
+  "definition_en": "The number you multiply a given number by to get 1; the reciprocal of a nonzero number a is 1/a. Zero has no reciprocal.",
+  "latex": "a \\times \\frac{1}{a} = 1 \\quad (a \\neq 0)",
+  "spoken_en": "a times one over a equals one, where a is not zero",
+  "examples": [
+    {
+      "en": "The reciprocal of negative 2/3 is negative 3/2: you flip the fraction, but the sign stays the same.",
+      "ja": "−2/3 の逆数は −3/2。分数はひっくり返すけど、符号はそのまま。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the reciprocal of each number: −6, 2/5, 0.25.",
+      "ja": "次の数の逆数を求めよ。−6、2/5、0.25",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "逆数（reciprocal）と、符号を変えた数（opposite、反数）を取り違えない。−2/3 の reciprocal は −3/2、opposite は 2/3（エントリ opposite）。",
+    "0 には逆数がない（0 has no reciprocal）。0 に何を掛けても 1 にならないため。",
+    "multiplicative inverse は reciprocal と同じ意味。inverse だけだと逆関数（inverse function）や命題の裏（エントリ inverse）など別の意味になる。"
+  ],
+  "related": [
+    "opposite",
+    "division",
+    "divide",
+    "fraction",
+    "negative-exponent"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "逆数",
+      "en": "Multiplicative inverse"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "reciprocal": 255,
+      "multiplicative inverse": 35
+    },
+    "written": {
+      "reciprocal": 328,
+      "multiplicative inverse": 86
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

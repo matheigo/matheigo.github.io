@@ -1,0 +1,97 @@
+{
+  "id": "cube",
+  "ja": {
+    "term": "立方",
+    "reading": "りっぽう",
+    "alt": [
+      "3 乗"
+    ]
+  },
+  "en": {
+    "term": "cube",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "同じ数を 3 個掛け合わせること、またはその結果。a の立方（a の 3 乗）を a³ と書く。",
+  "definition_en": "The result of using a number as a factor three times, written with an exponent of 3, as in a³. As a verb, to cube a number means to raise it to the third power.",
+  "latex": "a^3 = a \\times a \\times a",
+  "spoken_en": "a cubed equals a times a times a",
+  "examples": [
+    {
+      "en": "The cube of negative 2 is negative 8, because you're multiplying three negatives.",
+      "ja": "−2 の 3 乗は −8。負の数を 3 個掛けるからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the cube of −0.2.",
+      "ja": "−0.2 の 3 乗を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "cube は「立方体」と同じ語（1 辺 x の立方体の体積が x³）。x³ は x cubed と読み、立方根は cube root。",
+    "形容詞は cubic で、cubic function（3 次関数）や cubic centimeter（cm³）に使う。cube と cubic を取り違えない。"
+  ],
+  "related": [
+    "power",
+    "exponent",
+    "square",
+    "base-of-a-power",
+    "nth-root"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the cube of | cubes of | cube the | cube both": 26
+    },
+    "written": {
+      "the cube of | cubes of | cube the | cube both": 33
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.06",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

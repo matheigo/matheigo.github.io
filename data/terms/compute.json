@@ -1,0 +1,117 @@
+{
+  "id": "compute",
+  "ja": {
+    "term": "計算する",
+    "reading": "けいさんする",
+    "alt": []
+  },
+  "en": {
+    "term": "calculate",
+    "alt": [],
+    "variants": [
+      {
+        "term": "compute",
+        "register": "spoken",
+        "note": "話し言葉では calculate と同じくらい使うが、大半が MIT OCW。書き言葉では calculate のほうがずっと多い。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "数や式について、足し算・引き算・掛け算・割り算などを行い、結果を出す。",
+  "definition_en": "To find a result by carrying out operations such as adding, subtracting, multiplying, and dividing.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Try to calculate 15% of 80 in your head before you grab a calculator.",
+      "ja": "電卓を使う前に、80 の 15% を暗算で計算してみよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Compute (−3)² − 4 · 2 · (−5).",
+      "ja": "(−3)² − 4 × 2 × (−5) を計算せよ。",
+      "register": "written"
+    },
+    {
+      "en": "Calculate the area of a circle with a radius of 3 cm. Leave your answer in terms of π.",
+      "ja": "半径 3 cm の円の面積を求めよ。答えは π を使って表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "calculate と compute はどちらも使い、意味は同じ（話し言葉では compute も多いが、講義（MIT OCW）に偏る）。名詞はそれぞれ calculation、computation。",
+    "figure out や work out は「（答えを）出す・考えて分かる」の広い意味の句動詞で、計算に限らない（figure out which plan is cheaper はどちらのプランが安いかを考えて出す）。",
+    "文字に数を代入して式の値を出すのは evaluate（エントリ evaluate）。"
+  ],
+  "related": [
+    "evaluate",
+    "the-four-operations",
+    "value-of-the-expression",
+    "substitute"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "calculate": 1311,
+      "compute": 1138
+    },
+    "written": {
+      "calculate": 1696,
+      "compute": 552
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "id": "sign",
+  "ja": {
+    "term": "符号",
+    "reading": "ふごう",
+    "alt": []
+  },
+  "en": {
+    "term": "sign",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "数が正であるか負であるかを表す + と − のこと。−7 の符号は −、+7 の符号は + である。",
+  "definition_en": "Whether a number is positive or negative, shown by a + or − in front of it. For example, the sign of −7 is negative.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "When two numbers have the same sign, add them and keep that sign.",
+      "ja": "2 つの数が同符号なら、足してその符号をそのまま付ければいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Without multiplying, determine the sign of the product (−2)(−5)(−1).",
+      "ja": "計算しないで、積 (−2)(−5)(−1) の符号を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「同符号」は same sign、「異符号」は opposite signs または different signs。",
+    "minus sign（− の記号）や radical sign（根号 √）の sign は記号そのものの名前で、数が正か負かを表す「符号」とは使い方が違う。",
+    "0 は正の数でも負の数でもないので、0 の符号は + でも − でもない。"
+  ],
+  "related": [
+    "positive-number",
+    "negative-number",
+    "changes-sign",
+    "absolute-value",
+    "sign-chart"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "!radical !equal !equals !inequality !summation !integral !plus !minus sign": 1277
+    },
+    "written": {
+      "!radical !equal !equals !inequality !summation !integral !plus !minus sign": 692
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

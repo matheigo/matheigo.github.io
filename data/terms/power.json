@@ -1,0 +1,110 @@
+{
+  "id": "power",
+  "ja": {
+    "term": "累乗",
+    "reading": "るいじょう",
+    "alt": [
+      "べき",
+      "冪"
+    ]
+  },
+  "en": {
+    "term": "power",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "同じ数や文字をいくつか掛け合わせたもの。a を n 個掛け合わせたものを a の n 乗といい、aⁿ と書く。",
+  "definition_en": "A product in which the same number is used as a factor again and again, written with an exponent. For example, 2 · 2 · 2 = 2³ is the third power of 2.",
+  "latex": "a^n",
+  "spoken_en": "a to the nth power",
+  "examples": [
+    {
+      "en": "Two to the third power means 2 times 2 times 2, so it's 8, not 6.",
+      "ja": "2 の 3 乗は 2 × 2 × 2 のことだから 8。6 じゃないよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write 5 · 5 · 5 · 5 as a power, and then find its value.",
+      "ja": "5 × 5 × 5 × 5 を累乗の形で表し、その値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "power は累乗 aⁿ 全体を指すほか、「何乗か」を指すこともある。two to the third power の third power は「3 乗」の意味。",
+    "2³ は two to the third power または two cubed と読む。",
+    "微分の power rule や power series（べき級数）など、power を含む別の語がある（エントリ power-rule、power-series）。"
+  ],
+  "related": [
+    "exponent",
+    "base-of-a-power",
+    "square",
+    "cube",
+    "laws-of-exponents"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "to the … power | to the power of | raised to a power | raised to the power | to a power | powers of": 3015
+    },
+    "written": {
+      "to the … power | to the power of | raised to a power | raised to the power | to a power | powers of": 623
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

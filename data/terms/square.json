@@ -1,0 +1,119 @@
+{
+  "id": "square",
+  "ja": {
+    "term": "平方",
+    "reading": "へいほう",
+    "alt": [
+      "2 乗",
+      "二乗",
+      "2 乗する"
+    ]
+  },
+  "en": {
+    "term": "square",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中3"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "同じ数を 2 個掛け合わせること、またはその結果。a の平方（a の 2 乗）を a² と書く。",
+  "definition_en": "The result of multiplying a number by itself, written with an exponent of 2, as in a². As a verb, to square a number means to multiply it by itself.",
+  "latex": "a^2 = a \\times a",
+  "spoken_en": "a squared equals a times a",
+  "examples": [
+    {
+      "en": "When you square negative 6, you get positive 36, because a negative times a negative is positive.",
+      "ja": "−6 を 2 乗すると 36。負 × 負は正だからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the square of 0.3.",
+      "ja": "0.3 の 2 乗を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "Square both sides of √x = 9 to find x.",
+      "ja": "√x = 9 の両辺を 2 乗して、x を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "square は「正方形」と同じ語で（1 辺 x の正方形の面積が x²）、平方根も square root と言う。数の 2 乗か、図形の正方形か、根号かは前後の語で見分ける。",
+    "x² は x squared と読む。動詞の square は「2 乗する」で、square both sides は「両辺を 2 乗する」。",
+    "(−6)² は 36、−6² は −(6²) で −36。口で negative six squared と言うとどちらか分からないので、かっこの有無を確かめる。"
+  ],
+  "related": [
+    "power",
+    "exponent",
+    "cube",
+    "base-of-a-power",
+    "square-units"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the square of | squares of | square the | square each | square both": 483
+    },
+    "written": {
+      "the square of | squares of | square the | square each | square both": 318
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

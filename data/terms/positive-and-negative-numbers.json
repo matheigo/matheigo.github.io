@@ -1,0 +1,98 @@
+{
+  "id": "positive-and-negative-numbers",
+  "ja": {
+    "term": "正負の数",
+    "reading": "せいふのかず",
+    "alt": []
+  },
+  "en": {
+    "term": "positive and negative numbers",
+    "alt": [],
+    "variants": [
+      {
+        "term": "positive and negative numbers",
+        "register": "both",
+        "note": "話し言葉ではこちらだけを使う（ほとんどが Khan Academy の中学の講義）。書き言葉では signed numbers と同じくらい。"
+      },
+      {
+        "term": "signed numbers",
+        "register": "written",
+        "note": "教科書（OpenStax Prealgebra・Elementary Algebra）の言い方で、話し言葉には出てこない。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "「正負の数」は正の数と負の数をまとめた呼び名で、英語では positive and negative numbers と 2 つを並べて言うか、signed numbers（符号の付いた数）と言う。どちらも数の集合の名前ではなく、整数（integer）や有理数（rational number）とは別の語。",
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "正の数と負の数をまとめた呼び名。+ や − の符号を付けて表した数として扱う。",
+  "definition_en": "Positive numbers and negative numbers talked about together, as numbers that carry a sign (+ or −). They are also called signed numbers.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Today we're adding positive and negative numbers, so pay close attention to the signs.",
+      "ja": "今日は正負の数の足し算をやるから、符号によく注意してね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use positive and negative numbers to describe each change: a rise of 6 degrees and a drop of 4 degrees.",
+      "ja": "次の変化を、正負の数を使って表せ。6 度上がる、4 度下がる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「正負の数」を integers と言い換えない。integer は小数や分数の部分をもたない数だけなので、2.5 や −1/2 のような正負の数が抜ける（エントリ integer）。",
+    "signed numbers の signed は「符号（sign）の付いた」の意味で、日常語の sign（署名する）とは別。"
+  ],
+  "related": [
+    "positive-number",
+    "negative-number",
+    "sign",
+    "integer",
+    "absolute-value"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "positive and negative numbers": 12
+    },
+    "written": {
+      "positive and negative numbers": 27,
+      "signed numbers": 26
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "id": "subtraction",
+  "ja": {
+    "term": "減法",
+    "reading": "げんぽう",
+    "alt": []
+  },
+  "en": {
+    "term": "subtraction",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "ある数から別の数を引く計算（引き算）。結果を差といい、正負の数の減法は、ひく数の符号を変えて加法に直せる。",
+  "definition_en": "The operation of taking one number away from another; the answer is called the difference. Subtracting a number gives the same result as adding its opposite.",
+  "latex": "a - b = a + (-b)",
+  "spoken_en": "a minus b equals a plus negative b",
+  "examples": [
+    {
+      "en": "Subtraction with negatives gets easier if you add the opposite: 3 minus negative 5 is 3 plus 5, which is 8.",
+      "ja": "負の数の減法は、ひく数の符号を変えて足すと楽になる。3 − (−5) は 3 + 5 で 8。",
+      "register": "spoken"
+    },
+    {
+      "en": "Rewrite the subtraction as an addition, and then find the value of (−7) − (−2).",
+      "ja": "減法を加法に直して、(−7) − (−2) を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "記号 − は minus と読む（7 minus 3）。演算の名前は subtraction、動詞は subtract（エントリ subtract）、答えの「差」は difference。",
+    "(−7) − (−2) のように − が並ぶときは、引き算の − を minus、負の符号の − を negative と読み分ける（negative seven minus negative two）。",
+    "subtract A from B は B − A。「10 から 3 を引く」は subtract 3 from 10 で、数の出てくる順が式 10 − 3 と逆になる。"
+  ],
+  "related": [
+    "subtract",
+    "addition",
+    "opposite",
+    "positive-and-negative-numbers",
+    "the-four-operations"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "減法",
+      "en": "Subtraction"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "subtraction": 175
+    },
+    "written": {
+      "subtraction": 358
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

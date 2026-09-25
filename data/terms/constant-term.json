@@ -1,0 +1,100 @@
+{
+  "id": "constant-term",
+  "ja": {
+    "term": "定数項",
+    "reading": "ていすうこう",
+    "alt": []
+  },
+  "en": {
+    "term": "constant term",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "文字を含まない、数だけの項。3x − 5 の定数項は −5。",
+  "definition_en": "A term that has no variable, only a number. In 3x − 5, the constant term is −5.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In 3x − 5, the constant term is negative 5, not 5; the sign goes with it.",
+      "ja": "3x − 5 の定数項は 5 じゃなくて −5。符号も含めるんだよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the constant term of the expression 2x² + 6x − 9.",
+      "ja": "式 2x² + 6x − 9 の定数項を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "定数項は符号を含めて答える。3x − 5 の定数項は 5 ではなく −5。",
+    "y = mx + b の定数項 b は、グラフの y 切片（y-intercept）になる。"
+  ],
+  "related": [
+    "constant",
+    "coefficient",
+    "term",
+    "linear-expression",
+    "polynomial"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "constant term": 105
+    },
+    "written": {
+      "constant term": 71
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

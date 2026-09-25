@@ -1,0 +1,110 @@
+{
+  "id": "integer",
+  "ja": {
+    "term": "整数",
+    "reading": "せいすう",
+    "alt": []
+  },
+  "en": {
+    "term": "integer",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "0 と、0 に 1 ずつ足したり 1 ずつ引いたりしてできる数。…, −2, −1, 0, 1, 2, … のことで、小数や分数の部分をもたない。",
+  "definition_en": "One of the numbers …, −3, −2, −1, 0, 1, 2, 3, …, that is, the whole numbers and their opposites. Integers have no fraction or decimal part.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Is 3.5 an integer? No, it's got a decimal part, so it's not.",
+      "ja": "3.5 は整数？ 違うね、小数の部分があるから。",
+      "register": "spoken"
+    },
+    {
+      "en": "List all integers x that satisfy −3 < x ≤ 2.",
+      "ja": "−3 < x ≦ 2 を満たす整数 x をすべて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "whole number は 0, 1, 2, …（負の数を含まない）で、integer とは別の語。「整数」を whole number と訳すと負の整数が抜ける。",
+    "integer の g は「ジ」の音で、「インティジャー」に近い（「インテガー」ではない）。"
+  ],
+  "related": [
+    "natural-number",
+    "positive-and-negative-numbers",
+    "opposite",
+    "real-number",
+    "number-line"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "整数",
+      "en": "Integer"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "integer": 425
+    },
+    "written": {
+      "integer": 1282
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

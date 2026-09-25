@@ -1,0 +1,121 @@
+{
+  "id": "approximate-value",
+  "ja": {
+    "term": "近似値",
+    "reading": "きんじち",
+    "alt": [
+      "概数",
+      "近似"
+    ]
+  },
+  "en": {
+    "term": "approximation",
+    "alt": [
+      "approximate value"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic",
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中3",
+      "中1",
+      "数B"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2",
+      "Pre-Algebra",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "真の値に近い値。測定したり四捨五入したりして得られ、真の値との間に少し差がある。",
+  "definition_en": "A value that is close to, but not exactly equal to, the true value. The symbol ≈ means \"is approximately equal to.\"",
+  "latex": "\\sqrt{2} \\approx 1.414",
+  "spoken_en": "the square root of two is approximately one point four one four",
+  "examples": [
+    {
+      "en": "3.14 is just an approximation of pi, so your answer won't be exact.",
+      "ja": "3.14 は π の近似値にすぎないから、答えはぴったりにはならないよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use a calculator to find an approximate value of √7 to the nearest hundredth.",
+      "ja": "電卓を使い、√7 の近似値を小数第 3 位を四捨五入して求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "≈ は approximately equal to と読み、文の中では is approximately と言う（π ≈ 3.14 は pi is approximately 3.14）。",
+    "四捨五入などで丸めた数（概数）は rounded number とも言う（エントリ round）。",
+    "approximate は形容詞（approximate value、近似の）と動詞（近似する）の両方で使い、語末の発音が違う（形容詞は「〜メット」に近く弱く、動詞は「〜メイト」）。"
+  ],
+  "related": [
+    "round",
+    "decimal",
+    "estimation",
+    "linear-approximation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "近似",
+      "en": "Approximation"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "approximation": 641,
+      "approximate value": 8
+    },
+    "written": {
+      "approximation": 445,
+      "approximate value": 30
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

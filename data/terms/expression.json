@@ -1,0 +1,105 @@
+{
+  "id": "expression",
+  "ja": {
+    "term": "式",
+    "reading": "しき",
+    "alt": []
+  },
+  "en": {
+    "term": "expression",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "数や文字を、演算の記号（+、−、×、÷）やかっこで結んで、1 つの値を表したもの。英語の expression は等号を含まないものを指す。",
+  "definition_en": "A combination of numbers, variables, and operation symbols, such as 3x + 2, that stands for a value. Unlike an equation, it has no equals sign.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "This is an expression, not an equation, so there's nothing to solve; we just simplify it.",
+      "ja": "これは方程式じゃなくて式だから、解くものはない。簡単にするだけだよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Simplify the expression 4(x + 3) − 2x.",
+      "ja": "式 4(x + 3) − 2x を簡単にせよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「式」は等式や不等式にも使うが、英語の expression は等号を含まないもの（3x + 2）だけ。等号を含むもの（3x + 2 = 8）は equation と言う。",
+    "expression は solve しない。式は simplify（簡単にする）か evaluate（値を求める。エントリ evaluate）で、solve するのは equation。",
+    "「式を立てる」は、等号を含むなら write an equation、含まないなら write an expression と言い分ける。"
+  ],
+  "related": [
+    "algebraic-expression",
+    "term",
+    "value-of-the-expression",
+    "evaluate",
+    "polynomial"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "expression": 2164
+    },
+    "written": {
+      "expression": 2838
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

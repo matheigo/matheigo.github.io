@@ -1,0 +1,110 @@
+{
+  "id": "positive-number",
+  "ja": {
+    "term": "正の数",
+    "reading": "せいのかず",
+    "alt": []
+  },
+  "en": {
+    "term": "positive number",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "0 より大きい数。数直線では 0 より右にある。",
+  "definition_en": "A number greater than zero. On a number line, positive numbers are to the right of zero.",
+  "latex": "+3",
+  "spoken_en": "positive three",
+  "examples": [
+    {
+      "en": "Every number to the right of zero on the number line is a positive number.",
+      "ja": "数直線で 0 より右にある数は、どれも正の数だよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Circle every positive number in the list: −4, 0, 3, −1.5, 7/2.",
+      "ja": "次の数のうち、正の数をすべて選べ。−4、0、3、−1.5、7/2",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "0 は正の数でも負の数でもない。英語の positive number も 0 を含まない。0 も含めて「0 以上の数」と言うときは nonnegative number。",
+    "正の整数（positive integer）は 1, 2, 3, … で、日本の自然数と同じ範囲（エントリ natural-number）。"
+  ],
+  "related": [
+    "negative-number",
+    "positive-and-negative-numbers",
+    "sign",
+    "number-line",
+    "natural-number"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "正の数と負の数",
+      "en": "Negative number"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "positive number": 258
+    },
+    "written": {
+      "positive number": 98
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

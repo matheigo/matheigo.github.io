@@ -1,0 +1,91 @@
+{
+  "id": "the-four-operations",
+  "ja": {
+    "term": "四則",
+    "reading": "しそく",
+    "alt": [
+      "四則演算"
+    ]
+  },
+  "en": {
+    "term": "arithmetic operations",
+    "alt": [
+      "four operations",
+      "basic operations"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語には「四則」に当たる決まった 1 語がない。4 つを addition, subtraction, multiplication, and division と並べて言うか、the (four) arithmetic operations とまとめて言う。",
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "加法・減法・乗法・除法の 4 つの計算をまとめていう言葉。",
+  "definition_en": "Addition, subtraction, multiplication, and division, taken together as the basic operations of arithmetic.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "This one has all four arithmetic operations, so do the multiplication and division before the addition and subtraction.",
+      "ja": "この式には四則が全部入っているから、加減より先に乗除を計算しよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the value of 18 − 12 ÷ (−3) × 2 + 1, which uses all four arithmetic operations.",
+      "ja": "四則の混じった式 18 − 12 ÷ (−3) × 2 + 1 の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "四則の混じった計算の順序（かっこ → 累乗 → 乗除 → 加減）は、英語で order of operations と言う。",
+    "「乗除」「加減」にも英語の 1 語はなく、multiplication and division ／ addition and subtraction と並べて言う。"
+  ],
+  "related": [
+    "addition",
+    "subtraction",
+    "multiplication",
+    "division",
+    "compute"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "arithmetic operations": 11,
+      "basic operations": 1,
+      "four operations": 4
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  }
+}

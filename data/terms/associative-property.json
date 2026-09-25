@@ -1,0 +1,96 @@
+{
+  "id": "associative-property",
+  "ja": {
+    "term": "結合法則",
+    "reading": "けつごうほうそく",
+    "alt": []
+  },
+  "en": {
+    "term": "associative property",
+    "alt": [
+      "associative law"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "3 つの数の和や積で、どの 2 つを先に計算しても結果が変わらないという法則。数の順番は変えずに、かっこの位置だけを変える。",
+  "definition_en": "The rule that changing how three numbers are grouped does not change their sum or their product: (a + b) + c = a + (b + c) and (ab)c = a(bc). The numbers stay in the same order; only the parentheses move.",
+  "latex": "(a + b) + c = a + (b + c)",
+  "spoken_en": "the quantity a plus b, plus c, equals a plus the quantity b plus c",
+  "examples": [
+    {
+      "en": "With the associative property, I can regroup (17 + 6) + 4 as 17 + (6 + 4), which is 17 + 10, or 27.",
+      "ja": "結合法則を使うと、(17 + 6) + 4 を 17 + (6 + 4) とまとめ直せる。17 + 10 で 27 だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the associative property of multiplication to find (3 · 25) · 4.",
+      "ja": "乗法の結合法則を使って、(3 × 25) × 4 を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "交換法則（エントリ commutative-property）は数の順番を入れかえる法則、結合法則は順番は変えずにかっこの位置（どこを先に計算するか）を変える法則。",
+    "成り立つのは加法と乗法だけ。減法では (10 − 4) − 2 = 4 だが 10 − (4 − 2) = 8 で、結果が変わる。"
+  ],
+  "related": [
+    "commutative-property",
+    "distributive-property",
+    "parentheses",
+    "addition",
+    "multiplication"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "結合法則",
+      "en": "Associative property"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "associative law": 8,
+      "associative property": 20
+    },
+    "written": {
+      "associative property": 85,
+      "associative law": 1
+    },
+    "sources": [
+      "khan-middle",
+      "mit-18.06",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  }
+}

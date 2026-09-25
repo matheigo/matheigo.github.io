@@ -1,0 +1,94 @@
+{
+  "id": "linear-expression",
+  "ja": {
+    "term": "一次式",
+    "reading": "いちじしき",
+    "alt": []
+  },
+  "en": {
+    "term": "linear expression",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "文字について次数が 1 の式。2x + 3 や −5x のように、x の 1 次の項と定数項（無くてもよい）でできている。",
+  "definition_en": "An expression in which each variable is raised only to the first power, such as 2x + 3 or −5x. With one variable x, it has the form ax + b, where a ≠ 0.",
+  "latex": "ax + b \\quad (a \\neq 0)",
+  "spoken_en": "a x plus b, where a is not equal to zero",
+  "examples": [
+    {
+      "en": "2x + 3 is a linear expression because the highest power of x is 1.",
+      "ja": "2x + 3 は、x の次数がいちばん高くても 1 だから一次式だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Which of the following is a linear expression? (A) x² + 1 (B) 4x − 9 (C) 3/x",
+      "ja": "次のうち、一次式であるものを選べ。(A) x² + 1 (B) 4x − 9 (C) 3/x",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「一次」は英語では linear。一次方程式は linear equation、一次関数は linear function と、同じ linear を使う。",
+    "linear は line（直線）から来た語で、一次関数のグラフが直線になることと結びついている。",
+    "x² や xy を含む式は、次数が 2 なので一次式ではない。"
+  ],
+  "related": [
+    "algebraic-expression",
+    "like-terms",
+    "constant-term",
+    "linear-inequality",
+    "system-of-linear-equations"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "linear expression": 1
+    },
+    "written": {
+      "linear expression": 5
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。見出しは OpenStax の呼び方 linear expression（本文 5 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

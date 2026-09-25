@@ -1,0 +1,107 @@
+{
+  "id": "term",
+  "ja": {
+    "term": "項",
+    "reading": "こう",
+    "alt": []
+  },
+  "en": {
+    "term": "term",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "式を + と − で区切ったひとつひとつの部分で、符号も含めて考える（3x − 5 の項は 3x と −5）。数列に並ぶひとつひとつの数も項という。",
+  "definition_en": "One of the parts of an expression that are added or subtracted, taken together with its sign; the terms of 3x − 5 are 3x and −5. Each number in a sequence is also called a term.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "How many terms does 4x² − x + 7 have? Three: 4x squared, negative x, and 7.",
+      "ja": "4x² − x + 7 の項はいくつ？ 4x²、−x、7 の 3 つだね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the 10th term of the sequence 3, 7, 11, 15, …",
+      "ja": "数列 3, 7, 11, 15, … の第 10 項を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "項は符号も含めて見る。3x − 5 の項は 3x と 5 ではなく、3x と −5。",
+    "in terms of は「項」とは別の意味の熟語で、「〜を使って（表す）」。write y in terms of x は「y を x の式で表す」。",
+    "項（term）は + と − で区切った部分、因数（factor）は掛け算で区切った部分。3x の 3 と x は因数で、項ではない。"
+  ],
+  "related": [
+    "like-terms",
+    "constant-term",
+    "coefficient",
+    "algebraic-expression",
+    "first-term"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "!in term": 4510
+    },
+    "written": {
+      "!in term": 4086
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

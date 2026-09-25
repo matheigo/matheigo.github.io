@@ -1,0 +1,106 @@
+{
+  "id": "opposite",
+  "ja": {
+    "term": "反数",
+    "reading": "はんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "opposite",
+    "alt": [
+      "additive inverse"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "ある数に足すと 0 になる数。a の反数は −a で、数直線では 0 をはさんで反対側の、0 から同じ距離のところにある。",
+  "definition_en": "The number that is the same distance from zero on the number line but on the other side; the opposite of a is −a. A number plus its opposite always equals zero.",
+  "latex": "a + (-a) = 0",
+  "spoken_en": "a plus the opposite of a equals zero",
+  "examples": [
+    {
+      "en": "The opposite of 5 is negative 5, and the opposite of negative 5 is 5.",
+      "ja": "5 の反数は −5 で、−5 の反数は 5 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the opposite of each number: 8, −2.4, 0.",
+      "ja": "次の数の反数を求めよ。8、−2.4、0",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "opposite は日常語（反対の・反対側）でもある。数の反数は the opposite of 5 の形で言う。",
+    "反数と逆数（エントリ reciprocal）を取り違えない。5 の反数は −5、逆数は 1/5。反数は足して 0、逆数はかけて 1 になる数。",
+    "−a はいつも負の数とは限らない。a = −3 なら −a = 3 で正の数。"
+  ],
+  "related": [
+    "negative-number",
+    "absolute-value",
+    "reciprocal",
+    "number-line",
+    "sign"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "反数",
+      "en": "Additive inverse"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the opposite of | its opposite": 133,
+      "additive inverse": 7
+    },
+    "written": {
+      "the opposite of | its opposite": 180,
+      "additive inverse": 47
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "less-than-or-equal-to",
+  "ja": {
+    "term": "〜以下",
+    "reading": "いか",
+    "alt": []
+  },
+  "en": {
+    "term": "less than or equal to",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "ある数が別の数より小さいか、または等しいこと。「x は 5 以下」は x ≦ 5 と書き、5 を含む。",
+  "definition_en": "Either less than or equal to another number. The symbol is ≤, so x ≤ 5 includes 5 itself.",
+  "latex": "a \\leq b",
+  "spoken_en": "a is less than or equal to b",
+  "examples": [
+    {
+      "en": "If the speed limit is 65, your speed has to be less than or equal to 65.",
+      "ja": "制限速度が 65 なら、スピードは 65 以下でないといけない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find all positive integers n such that 3n + 2 is less than or equal to 11.",
+      "ja": "3n + 2 が 11 以下となる正の整数 n をすべて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "記号は日本の教科書では ≦、米国の教科書（OpenStax）では ≤。",
+    "文章題では「5 以下」を at most 5 や no more than 5 と言う。",
+    "「以下」は境の数を含む。less than と訳すと境の数が抜けて「未満」になる（エントリ less-than）。"
+  ],
+  "related": [
+    "less-than",
+    "greater-than-or-equal-to",
+    "linear-inequality",
+    "properties-of-inequalities",
+    "number-line"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "less than or equal to": 469
+    },
+    "written": {
+      "less than or equal to": 71
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

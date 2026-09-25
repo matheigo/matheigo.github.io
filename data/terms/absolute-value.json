@@ -1,0 +1,111 @@
+{
+  "id": "absolute-value",
+  "ja": {
+    "term": "絶対値",
+    "reading": "ぜったいち",
+    "alt": []
+  },
+  "en": {
+    "term": "absolute value",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "数直線上で、ある数を表す点と原点との距離。たとえば 3 と −3 の絶対値はどちらも 3 である。",
+  "definition_en": "A number's distance from zero on the number line. Since a distance can't be negative, the absolute value of a number is never negative.",
+  "latex": "|x|",
+  "spoken_en": "the absolute value of x",
+  "examples": [
+    {
+      "en": "The absolute value of negative 6 is 6, because negative 6 is 6 units away from zero.",
+      "ja": "−6 の絶対値は 6。0 から 6 目盛り離れているからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the absolute value of each number: −12, 3/4, 0.",
+      "ja": "次の数の絶対値を求めよ。−12、3/4、0",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "絶対値が 5 である数は 5 と −5 の 2 つ。絶対値だけでは符号は決まらない。",
+    "|x| がいつも x になるわけではない。x が負の数なら |x| = −x（たとえば |−4| = 4 = −(−4)）。"
+  ],
+  "related": [
+    "number-line",
+    "distance",
+    "opposite",
+    "absolute-value-equation",
+    "absolute-value-inequality"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "絶対値",
+      "en": "Absolute value"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "absolute value": 1339
+    },
+    "written": {
+      "absolute value": 411
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

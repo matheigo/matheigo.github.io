@@ -1,0 +1,109 @@
+{
+  "id": "distributive-property",
+  "ja": {
+    "term": "分配法則",
+    "reading": "ぶんぱいほうそく",
+    "alt": []
+  },
+  "en": {
+    "term": "distributive property",
+    "alt": [
+      "distributive law"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic",
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中3"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "かっこの外の数を、かっこの中のそれぞれの項に掛けてから足しても結果が変わらないという法則。a(b + c) = ab + ac。",
+  "definition_en": "The rule that multiplying a number by a sum gives the same result as multiplying the number by each term and then adding: a(b + c) = ab + ac.",
+  "latex": "a(b + c) = ab + ac",
+  "spoken_en": "a times the quantity b plus c equals a b plus a c",
+  "examples": [
+    {
+      "en": "Distribute the 3: the distributive property says 3(x + 4) is 3x + 12.",
+      "ja": "3 を分配しよう。分配法則から 3(x + 4) は 3x + 12 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the distributive property to simplify −2(x − 5).",
+      "ja": "分配法則を使って、−2(x − 5) を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "授業では、分配法則を使う操作を動詞で distribute the 3（3 をかっこの中の各項に掛ける）のように言う。",
+    "負の数を分配するときは符号に注意。−(x − 5) は −x + 5 で、−x − 5 ではない。かっこの中のすべての項に −1 を掛ける。",
+    "かっこの中が積のときは分配しない。2(3x) は 6x で、3 と x の両方に 2 を掛けて 12x とするのは誤り。"
+  ],
+  "related": [
+    "commutative-property",
+    "associative-property",
+    "parentheses",
+    "term",
+    "like-terms"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "分配法則",
+      "en": "Distributive property"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "distributive law": 16,
+      "distributive property": 69
+    },
+    "written": {
+      "distributive property": 177,
+      "distributive law": 2
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

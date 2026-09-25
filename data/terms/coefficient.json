@@ -1,0 +1,113 @@
+{
+  "id": "coefficient",
+  "ja": {
+    "term": "係数",
+    "reading": "けいすう",
+    "alt": []
+  },
+  "en": {
+    "term": "coefficient",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "文字を含む項で、文字にかけられている数の部分。3x の係数は 3、−x の係数は −1。",
+  "definition_en": "The number that multiplies the variable in a term. In 3x the coefficient is 3, and in −x it is −1.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In 7 − 4x, the coefficient of x is negative 4, so keep the sign with it.",
+      "ja": "7 − 4x で、x の係数は −4。符号も一緒に考えてね。",
+      "register": "spoken"
+    },
+    {
+      "en": "State the coefficient of x in the expression 5x² − x + 8.",
+      "ja": "式 5x² − x + 8 における x の係数を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "x の係数は 1、−x の係数は −1。1 は書かないが、係数は 1 として扱う。",
+    "相関係数（correlation coefficient）や二項係数（binomial coefficient）は別の語（エントリ correlation-coefficient、binomial-coefficient）。",
+    "発音は「コウエフィシェント」に近く、fi にアクセントを置く。"
+  ],
+  "related": [
+    "term",
+    "constant-term",
+    "like-terms",
+    "correlation-coefficient",
+    "binomial-coefficient"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "係数",
+      "en": "Coefficient"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "!correlation !binomial coefficient": 911
+    },
+    "written": {
+      "!correlation !binomial coefficient": 885
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": "decimal",
+  "ja": {
+    "term": "小数",
+    "reading": "しょうすう",
+    "alt": []
+  },
+  "en": {
+    "term": "decimal",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "小学校",
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "小数点を使い、1 より小さい部分を 10 分の 1 の位、100 分の 1 の位…の数字で表した数。0.25 や 3.7 など。",
+  "definition_en": "A number written with a decimal point, where the digits to the right of the point stand for tenths, hundredths, and so on, like 0.25 or 3.7.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To turn 3/8 into a decimal, just divide 3 by 8, and you get 0.375.",
+      "ja": "3/8 を小数に直すには、3 を 8 で割ればいい。0.375 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write 7/20 as a decimal.",
+      "ja": "7/20 を小数で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "小数点は decimal point。0.25 は zero point two five とも point two five とも読む。",
+    "循環小数は repeating decimal（エントリ repeating-decimal）。",
+    "decimal は「小数」のほかに「十進法の」という形容詞にもなる（decimal system、エントリ decimal-system）。"
+  ],
+  "related": [
+    "fraction",
+    "repeating-decimal",
+    "place",
+    "round",
+    "decimal-system"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "小数",
+      "en": "Decimal representation"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "decimal": 934
+    },
+    "written": {
+      "decimal": 1431
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

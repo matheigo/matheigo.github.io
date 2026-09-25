@@ -1,0 +1,112 @@
+{
+  "id": "constant",
+  "ja": {
+    "term": "定数",
+    "reading": "ていすう",
+    "alt": []
+  },
+  "en": {
+    "term": "constant",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "値が変わらない、決まった数。a や k のような文字でも、1 つの決まった値を表すものは定数という。",
+  "definition_en": "A quantity whose value does not change, such as 5 or −2. A letter like k is also a constant when it stands for one fixed number.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In y = kx, k is a constant; it stays the same while x and y change.",
+      "ja": "y = kx の k は定数。x と y が変わっても、k は変わらない。",
+      "register": "spoken"
+    },
+    {
+      "en": "In y = ax + 3, a is a constant. If the graph passes through the point (2, 11), find the value of a.",
+      "ja": "y = ax + 3 のグラフが点 (2, 11) を通るとき、定数 a の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "比例定数は constant of proportionality、積分定数は constant of integration（エントリ constant-of-integration）。どちらも constant を使う。",
+    "英語の constant は形容詞にもなり、「一定の」の意味で使う（a constant rate = 一定の割合、constant speed = 一定の速さ）。"
+  ],
+  "related": [
+    "variable",
+    "constant-term",
+    "coefficient",
+    "constant-of-integration"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "定数",
+      "en": "Constant (mathematics)"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "a constant !of !function !rate !speed !term | the constant !of !function !rate !speed !term": 1050
+    },
+    "written": {
+      "a constant !of !function !rate !speed !term | the constant !of !function !rate !speed !term": 655
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

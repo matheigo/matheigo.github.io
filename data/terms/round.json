@@ -1,0 +1,103 @@
+{
+  "id": "round",
+  "ja": {
+    "term": "四捨五入する",
+    "reading": "ししゃごにゅうする",
+    "alt": []
+  },
+  "en": {
+    "term": "round",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "英語の round は「丸める」一般を指し、round up（切り上げ）や round down（切り捨て）も含む。四捨五入に当たるのは round to the nearest …（最も近い値に丸める）の形で、round to the nearest tenth は小数第 1 位までの概数にすること。日本語は捨てる位（小数第 2 位を四捨五入）を言い、英語は残す位（the nearest tenth）を言うので、指す位がずれる。",
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "ある位までの概数にするとき、その 1 つ下の位の数字が 0〜4 なら切り捨て、5〜9 なら切り上げる。",
+  "definition_en": "To replace a number with a nearby, simpler number at a given place value, such as the nearest ten or the nearest tenth. If the next digit is 5 or more, round up; otherwise, round down.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Round 3.47 to the nearest tenth: the 7 means you round up, so it's 3.5.",
+      "ja": "3.47 の小数第 2 位を四捨五入しよう。7 だから切り上げて 3.5。",
+      "register": "spoken"
+    },
+    {
+      "en": "A circle has a radius of 4 cm. Find its circumference, and round your answer to the nearest hundredth.",
+      "ja": "半径 4 cm の円の周の長さを求め、小数第 3 位を四捨五入して答えよ。",
+      "register": "written"
+    },
+    {
+      "en": "You can't rent 3.2 buses, so round up to 4.",
+      "ja": "バスを 3.2 台は借りられないから、切り上げて 4 台。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「小数第 2 位を四捨五入する」は round to the nearest tenth（小数第 1 位まで残す）。日本語は捨てる位、英語は残す位を言うので、位が 1 つずれる。",
+    "round は「丸める」一般で、round up（切り上げ）、round down（切り捨て）にも使う。四捨五入に当たるのは round to the nearest … の形。",
+    "残す位の言い方は、nearest tenth が小数第 1 位、nearest hundredth が小数第 2 位、nearest whole number が整数（一の位）、nearest ten が十の位。"
+  ],
+  "related": [
+    "approximate-value",
+    "decimal",
+    "digit",
+    "floor-function",
+    "ceiling-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "round to | round up | round down | round … to the nearest": 172
+    },
+    "written": {
+      "round to | round up | round down | round … to the nearest": 616
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "id": "parentheses",
+  "ja": {
+    "term": "かっこ",
+    "reading": "かっこ",
+    "alt": [
+      "括弧",
+      "丸かっこ"
+    ]
+  },
+  "en": {
+    "term": "parentheses",
+    "alt": [],
+    "uk": "brackets",
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「かっこ」は ( )・[ ]・{ } のどれにも使うが、米国では ( ) を parentheses（単数 parenthesis）、[ ] を brackets、{ } を braces と呼び分ける。英国では ( ) も brackets と呼ぶ。",
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "式の一部を囲み、その部分をひとまとまりとして先に計算することを表す記号。英語の parentheses は丸かっこ ( ) を指す。",
+  "definition_en": "The curved symbols ( ) placed around part of an expression to group it, showing that the part inside is worked out first.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In 4(2 + 3), do what's inside the parentheses first, so that's 4 times 5, or 20.",
+      "ja": "4(2 + 3) では、かっこの中を先に計算するから、4 × 5 = 20 だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Insert one pair of parentheses to make the statement true: 8 − 3 × 2 + 1 = 11.",
+      "ja": "次の等式が成り立つように、かっこを 1 組つけよ。8 − 3 × 2 + 1 = 11",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "parentheses は複数形で、( ) の 1 組を指す。片側だけなら単数の parenthesis。",
+    "[ ] は brackets、{ } は braces と呼び分ける。英国では ( ) も brackets と呼ぶので、英国の教材の brackets は丸かっこのことがある。",
+    "区間の記法では (a, b) は端を含まず、[a, b] は含む（エントリ interval）。(a, b) は座標にも使うので、文脈で見分ける。"
+  ],
+  "related": [
+    "the-four-operations",
+    "distributive-property",
+    "expression",
+    "interval",
+    "set"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "parentheses": 895
+    },
+    "written": {
+      "parentheses": 240
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

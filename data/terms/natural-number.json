@@ -1,0 +1,126 @@
+{
+  "id": "natural-number",
+  "ja": {
+    "term": "自然数",
+    "reading": "しぜんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "natural number",
+    "alt": [],
+    "variants": [
+      {
+        "term": "natural number",
+        "register": "both",
+        "note": "話し言葉で最も多い（Khan Academy と MIT OCW）。書き言葉では 3 つの中で最も少ない。"
+      },
+      {
+        "term": "positive integer",
+        "register": "both",
+        "note": "書き言葉で最も多い（大半が OpenStax Calculus・Algebra and Trigonometry）。0 を含まないことがはっきりする言い方。"
+      },
+      {
+        "term": "counting number",
+        "register": "both",
+        "note": "書き言葉は大半が中学・Algebra の教科書（OpenStax Prealgebra・Elementary Algebra）。話し言葉では少ない。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の教科書の自然数は 1, 2, 3, … で、0 を含まない。英語の natural number は 0 を含める流儀もあり（大学の離散数学など）、counting numbers は 1, 2, 3, …、whole numbers は 0, 1, 2, … を指す。0 を含まないことをはっきりさせるときは positive integer（正の整数）と言う。",
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "1, 2, 3, … のように、ものを数えるときに使う数。正の整数と同じで、日本の教科書では 0 を含まない。",
+  "definition_en": "A counting number: 1, 2, 3, and so on. Some books, especially in college math, also count 0 as a natural number.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In this class, zero is not a natural number, so the list starts at 1.",
+      "ja": "この授業では 0 は自然数に入れないから、1 から数えるよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find all natural numbers n such that 3n < 14.",
+      "ja": "3n < 14 を満たす自然数 n をすべて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「自然数」を whole numbers と訳さない。whole numbers は 0 を含む（0, 1, 2, …）。",
+    "問題文の natural number に 0 が入るかは本や授業による。positive integer と言えば 0 を含まないことがはっきりする。"
+  ],
+  "related": [
+    "integer",
+    "positive-number",
+    "prime-number",
+    "real-number"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "自然数",
+      "en": "Natural number"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "positive integer": 50,
+      "natural number": 89,
+      "counting number": 15
+    },
+    "written": {
+      "positive integer": 155,
+      "natural number": 42,
+      "counting number": 131
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

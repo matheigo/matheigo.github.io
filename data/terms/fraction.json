@@ -1,0 +1,113 @@
+{
+  "id": "fraction",
+  "ja": {
+    "term": "分数",
+    "reading": "ぶんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "fraction",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "小学校",
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "a ÷ b（b は 0 でない）の商を a/b の形で表した数。横線の上の a を分子、下の b を分母という。",
+  "definition_en": "A number written as a/b, meaning a divided by b, where b is not 0. The number on top is the numerator and the number on the bottom is the denominator.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Remember, a fraction is just division, so three fourths means 3 divided by 4.",
+      "ja": "分数はただの割り算だよ。4 分の 3 は 3 ÷ 4 ということ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write 0.35 as a fraction in simplest form.",
+      "ja": "0.35 を既約分数で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "読む順番が日本語と逆。英語は分子から読み、分母を序数にする（3/4 は three fourths、2/5 は two fifths、1/2 は one half）。日本語の「4 分の 3」は分母から読む。",
+    "帯分数は mixed number、仮分数は improper fraction、真分数は proper fraction。分数の横線は fraction bar。",
+    "分子は numerator（エントリ numerator）、分母は denominator（エントリ denominator）。"
+  ],
+  "related": [
+    "numerator",
+    "denominator",
+    "reduce",
+    "find-a-common-denominator",
+    "decimal"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "分数",
+      "en": "Fraction"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "fraction": 1748
+    },
+    "written": {
+      "fraction": 2069
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

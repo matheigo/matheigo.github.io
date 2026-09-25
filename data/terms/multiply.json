@@ -1,0 +1,115 @@
+{
+  "id": "multiply",
+  "ja": {
+    "term": "掛ける",
+    "reading": "かける",
+    "alt": [
+      "かける"
+    ]
+  },
+  "en": {
+    "term": "multiply",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic",
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中3"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "数や式どうしの積を求める計算をする。たとえば 3 に 4 を掛けると 12 になる。",
+  "definition_en": "To find the product of two or more numbers or expressions. For example, multiplying 3 by 4 gives 12.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "When you multiply two negatives, like negative 3 times negative 4, you get positive 12.",
+      "ja": "負の数どうしを掛けると、たとえば (−3) × (−4) は正の 12 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Multiply both sides of the equation by 6 to clear the fractions.",
+      "ja": "方程式の両辺に 6 を掛けて、分母をはらう。",
+      "register": "written"
+    },
+    {
+      "en": "Multiply 5 by 4 first, and then add the 2.",
+      "ja": "先に 5 に 4 を掛けて、それから 2 を足そう。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "multiply A by B は A × B（A に B を掛ける）。「両辺に 3 を掛ける」は multiply both sides by 3 で、前置詞は by。",
+    "times は話し言葉の「かける」。3 times 4 は 3 × 4。",
+    "名詞の「掛け算・乗法」は multiplication（エントリ multiplication）。掛けた結果の積は product。"
+  ],
+  "related": [
+    "multiplication",
+    "add",
+    "subtract",
+    "divide",
+    "distributive-property"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "multiply": 5554
+    },
+    "written": {
+      "multiply": 2948
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

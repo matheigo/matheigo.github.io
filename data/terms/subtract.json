@@ -1,0 +1,109 @@
+{
+  "id": "subtract",
+  "ja": {
+    "term": "引く",
+    "reading": "ひく",
+    "alt": []
+  },
+  "en": {
+    "term": "subtract",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "ある数や式から別の数や式を取り去って、その差を求める。",
+  "definition_en": "To take one number or expression away from another to find the difference.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Subtract 4 from both sides, so 2x + 4 = 10 becomes 2x = 6.",
+      "ja": "両辺から 4 を引くと、2x + 4 = 10 は 2x = 6 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Subtract 2x − 5 from 7x + 1.",
+      "ja": "7x + 1 から 2x − 5 を引け。",
+      "register": "written"
+    },
+    {
+      "en": "Careful: subtract 9 from 2 means 2 minus 9, which is negative 7.",
+      "ja": "気をつけて。「2 から 9 を引く」は 2 − 9 で、−7 だよ。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "subtract A from B は B − A（B から A を引く）で、語順が日本語と逆。subtract 3 from 10 は 10 − 3。",
+    "take away（7 take away 2）は小学校の言い方。式の − は minus と読む。",
+    "式を引くときは、引く式にかっこを付けて、そのすべての項の符号を変える（(7x + 1) − (2x − 5) = 5x + 6）。"
+  ],
+  "related": [
+    "subtraction",
+    "add",
+    "the-four-operations",
+    "move-term-to-other-side",
+    "parentheses"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "subtract": 2556
+    },
+    "written": {
+      "subtract": 1272
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

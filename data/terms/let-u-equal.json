@@ -3,7 +3,9 @@
   "ja": {
     "term": "u とおく",
     "reading": "ゆーとおく",
-    "alt": []
+    "alt": [
+      "〜を x とする"
+    ]
   },
   "en": {
     "term": "let u equal",
@@ -32,19 +34,23 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
+    "algebra",
     "calculus"
   ],
   "level": {
     "jp": [
+      "中1",
       "数III"
     ],
     "us": [
+      "Pre-Algebra",
+      "Algebra 1",
       "AP Calculus AB",
       "Calculus I"
     ]
   },
-  "definition_ja": "置換積分で、式の一部を新しい文字 u で置き換えると宣言すること。",
-  "definition_en": "To introduce u as a new variable standing for part of the integrand, the first step of a substitution.",
+  "definition_ja": "式の一部や求める数を、新しい文字（u や x）で表すと宣言すること。置換積分の最初の一歩のほか、文章題で「求める数を x とする」ときにも使う。",
+  "definition_en": "To introduce a new letter, such as u or x, for part of an expression or for an unknown number. It is the first step of a substitution, and of setting up an equation in a word problem.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -57,11 +63,22 @@
       "en": "Let u = x² + 1. Then du = 2x dx, and the integral becomes ∫ u³ du.",
       "ja": "u = x² + 1 とおくと du = 2x dx で、積分は ∫ u³ du となる。",
       "register": "written"
+    },
+    {
+      "en": "Let x equal the number of adult tickets. Then the student tickets are 50 minus x.",
+      "ja": "大人の券の枚数を x としよう。すると学生の券は 50 − x 枚だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let x = the smaller number. The larger number is x + 7, and the sum of the two numbers is 31. Find both numbers.",
+      "ja": "小さいほうの数を x とする。大きいほうの数は x + 7 で、2 数の和は 31 である。2 つの数を求めよ。",
+      "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の答案の「x² + 1 = t とおく」は式が先だが、英語では Let u = x² + 1. と新しい文字を先に書く。"
+    "日本の答案の「x² + 1 = t とおく」は式が先だが、英語では Let u = x² + 1. と新しい文字を先に書く。",
+    "中学の文章題の「〜を x とする」も同じ形で、文字を先に書いて Let x = the number of students. とする。教科書（OpenStax Prealgebra・Elementary Algebra）は Let n = the number of … の形で書く。"
   ],
   "related": [
     "integration-by-substitution",
