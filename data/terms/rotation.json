@@ -1,0 +1,106 @@
+{
+  "id": "rotation",
+  "ja": {
+    "term": "回転移動",
+    "reading": "かいてんいどう",
+    "alt": [
+      "回転"
+    ]
+  },
+  "en": {
+    "term": "rotation",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "complex-numbers"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数C"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "図形の各点を、ある点を中心に同じ角だけ回して移すこと。複素数平面では、ある複素数を掛けることで表せる。",
+  "definition_en": "A transformation that turns every point of a figure through the same angle about a fixed point; in the complex plane it can be done by multiplying by a complex number.",
+  "latex": "z \\mapsto (\\cos\\theta + i\\sin\\theta)\\,z",
+  "spoken_en": "z goes to cosine theta plus i sine theta, times z",
+  "examples": [
+    {
+      "en": "Multiplying by i is a rotation by 90 degrees counterclockwise.",
+      "ja": "i を掛けるのは、反時計回りに 90° の回転移動。",
+      "register": "spoken"
+    },
+    {
+      "en": "Describe the rotation that maps the triangle ABC onto the triangle A′B′C′.",
+      "ja": "三角形 ABC を三角形 A′B′C′ に移す回転移動を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "a rotation of 90° about the origin",
+      "ja": "原点のまわりの 90° の回転"
+    }
+  ],
+  "pitfalls": [
+    "向きは counterclockwise（反時計回り）／ clockwise（時計回り）で言う。角の正の向きは counterclockwise。"
+  ],
+  "related": [
+    "rotate"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "回転",
+      "en": "Rotation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "rotation": 168
+    },
+    "written": {
+      "rotation": 139
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "id": "recurrence-relation",
+  "ja": {
+    "term": "漸化式",
+    "reading": "ぜんかしき",
+    "alt": []
+  },
+  "en": {
+    "term": "recursive formula",
+    "alt": [],
+    "variants": [
+      {
+        "term": "recursive formula",
+        "register": "written",
+        "note": "高校レベル（OpenStax Algebra and Trigonometry）の言い方で、書き言葉の 74 件中 73 件がこの本。話し言葉で 4 件（Professor Leonard 3・MIT OCW 1）、書き言葉で 74 件（OpenStax Algebra and Trigonometry 73・OpenStax Calculus 1）。"
+      },
+      {
+        "term": "recurrence equation",
+        "register": "written",
+        "note": "MIT 6.042（離散数学）のテキストの言い方。話し言葉で 1 件（すべて MIT OCW）、書き言葉で 14 件（すべて MIT の講義ノート）。"
+      },
+      {
+        "term": "recurrence relation",
+        "register": "written",
+        "note": "大学（OpenStax Calculus・離散数学）の言い方。話し言葉では 0 件、書き言葉で 12 件（OpenStax Calculus 11・MIT の講義ノート 1）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語は本によって呼び方が割れる。高校レベルの教科書（OpenStax Algebra and Trigonometry）は recursive formula、大学初年次の教科書（OpenStax Calculus Volume 2）は recurrence relation と呼ぶ。日本の「漸化式」はどちらにも当たる。",
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "数列の項を、その前の項を使って表す式。初項と合わせると数列が決まる。",
+  "definition_en": "An equation that gives each term of a sequence from the terms before it; with the first term, it determines the sequence.",
+  "latex": "a_{n+1} = 2a_n + 1, \\quad a_1 = 1",
+  "spoken_en": "a sub n plus one equals two a sub n plus one, with a sub one equal to one",
+  "examples": [
+    {
+      "en": "A recursive formula tells you how to get the next term from the one before.",
+      "ja": "漸化式は、前の項から次の項を作る方法を教えてくれる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write a recursive formula for the sequence 2, 6, 18, 54, ….",
+      "ja": "数列 2, 6, 18, 54, … を表す漸化式を書け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉では 5 件で、どの言い方も少ない。",
+    "a_{n+1} = pa_n + q を α = pα + q で解く方法は characteristic-equation を参照。"
+  ],
+  "related": [
+    "recursive-definition",
+    "solve-the-recurrence",
+    "set-up-a-recurrence",
+    "characteristic-equation",
+    "system-of-recurrences"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "漸化式",
+      "en": "Recurrence relation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "recurrence equation": 1,
+      "recursive formula": 4
+    },
+    "written": {
+      "recurrence relation": 12,
+      "recursive formula": 74,
+      "recurrence equation": 14
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

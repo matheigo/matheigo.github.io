@@ -1,0 +1,92 @@
+{
+  "id": "ellipse",
+  "ja": {
+    "term": "楕円",
+    "reading": "だえん",
+    "alt": []
+  },
+  "en": {
+    "term": "ellipse",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "2 つの焦点からの距離の和が一定である点の軌跡。",
+  "definition_en": "The set of points whose distances to two fixed points, the foci, add up to a constant.",
+  "latex": "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1",
+  "spoken_en": "x squared over a squared plus y squared over b squared equals one",
+  "examples": [
+    {
+      "en": "If a equals b, the ellipse is just a circle.",
+      "ja": "a = b なら、楕円はただの円。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the foci of the ellipse x²/25 + y²/9 = 1.",
+      "ja": "楕円 x²/25 + y²/9 = 1 の焦点を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "focus",
+    "major-axis",
+    "minor-axis",
+    "conic-section"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "楕円",
+      "en": "Ellipse"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "ellipse": 104
+    },
+    "written": {
+      "ellipse": 418
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

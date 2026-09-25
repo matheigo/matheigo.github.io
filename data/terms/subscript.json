@@ -1,0 +1,99 @@
+{
+  "id": "subscript",
+  "ja": {
+    "term": "添字",
+    "reading": "そえじ",
+    "alt": []
+  },
+  "en": {
+    "term": "subscript",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "notation",
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "文字の右下に小さく書いて、何番目かなどを区別する数や文字。aₙ の n。",
+  "definition_en": "A small number or letter written low to the right of a symbol to tell items apart, like the n in aₙ.",
+  "latex": "a_n",
+  "spoken_en": "a sub n",
+  "examples": [
+    {
+      "en": "The subscript just tells you which term you're on.",
+      "ja": "添字は何番目の項かを表しているだけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In the expression Σₖ₌₁ⁿ aₖ, the subscript k is called the index of summation.",
+      "ja": "Σₖ₌₁ⁿ aₖ の添字 k を和の添字という。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "aₙ は a sub n と読む。Σ の k は index（of summation）とも呼ぶ。",
+    "用例コーパスの書き言葉の 32 件中 26 件は統計（OpenStax Introductory Statistics）の添字。"
+  ],
+  "related": [
+    "sequence",
+    "nth-term",
+    "shift-the-index",
+    "summation-notation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "添え字",
+      "en": "Subscript and superscript"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "subscript": 57
+    },
+    "written": {
+      "subscript": 32
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

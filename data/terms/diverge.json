@@ -1,0 +1,109 @@
+{
+  "id": "diverge",
+  "ja": {
+    "term": "発散する",
+    "reading": "はっさんする",
+    "alt": []
+  },
+  "en": {
+    "term": "diverge",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "数列・級数・関数が収束しない。正または負の無限大に発散する場合と、振動する場合がある。",
+  "definition_en": "Not to converge: to grow without bound in either direction, or to oscillate without settling.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The terms don't go to zero, so the series diverges.",
+      "ja": "項が 0 に近づかないから、この級数は発散する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the sequence aₙ = (−1)ⁿ diverges.",
+      "ja": "数列 aₙ = (−1)ⁿ が発散することを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "diverge to infinity",
+      "ja": "正の無限大に発散する"
+    }
+  ],
+  "pitfalls": [
+    "振動する数列も diverge（英語でも収束しないもの全体を diverge と言う）。名詞は divergence（divergence を参照）。"
+  ],
+  "related": [
+    "converge",
+    "divergence",
+    "diverge-to-positive-infinity",
+    "oscillate"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 10、Topic 10.1–10.9（converge ／ diverge）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "diverge": 311,
+      "diverge to infinity": 2
+    },
+    "written": {
+      "diverge": 290,
+      "diverge to infinity": 6
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

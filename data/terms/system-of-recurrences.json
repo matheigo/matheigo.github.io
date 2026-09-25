@@ -1,0 +1,73 @@
+{
+  "id": "system-of-recurrences",
+  "ja": {
+    "term": "連立漸化式",
+    "reading": "れんりつぜんかしき",
+    "alt": []
+  },
+  "en": {
+    "term": "system of recurrences",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで 0 件）。2 つの数列 {aₙ}, {bₙ} を互いの式で表す漸化式の組で、英語で説明するなら a pair of recurrences for aₙ and bₙ と言う。行列で aₙ₊₁ = Maₙ の形に書く扱いは線形代数（MIT 18.06）にある。",
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "2 つ以上の数列の項を、互いの前の項で表す漸化式の組。",
+  "definition_en": "A set of recurrences in which each of two or more sequences is given in terms of the earlier terms of the others.",
+  "latex": "a_{n+1} = a_n + 2b_n, \\quad b_{n+1} = a_n + b_n",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Add and subtract the two recurrences to decouple them.",
+      "ja": "2 つの漸化式を足したり引いたりして、ばらばらにしよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "The sequences {aₙ} and {bₙ} satisfy a₁ = b₁ = 1, aₙ₊₁ = 3aₙ + bₙ, bₙ₊₁ = aₙ + 3bₙ. Find aₙ.",
+      "ja": "数列 {aₙ}, {bₙ} は a₁ = b₁ = 1、aₙ₊₁ = 3aₙ + bₙ、bₙ₊₁ = aₙ + 3bₙ を満たす。aₙ を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "recurrence-relation",
+    "solve-the-recurrence"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

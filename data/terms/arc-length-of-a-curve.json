@@ -42,7 +42,7 @@
   "collocations": [],
   "pitfalls": [
     "日本の「弧長」は円弧の長さの意味で使うことも多いが、英語の arc length は一般の曲線の長さにも使う。",
-    "媒介変数表示の曲線の長さ ∫√((dx/dt)² + (dy/dt)²)dt は、米国では Calc II の parametric curves の単元で扱う。"
+    "媒介変数表示の曲線の長さ ∫√((dx/dt)² + (dy/dt)²) dt は CED の topic 9.3（BC）と OpenStax Calculus Volume 2 で扱う。極座標の曲線の長さ ∫√(r² + (dr/dθ)²) dθ も同じ arc length。"
   ],
   "related": [
     "find-the-arc-length",
@@ -57,6 +57,16 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 8.13・9.3（arc length）"
     }
   ],
   "confidence": "likely",

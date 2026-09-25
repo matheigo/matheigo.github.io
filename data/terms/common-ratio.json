@@ -1,0 +1,89 @@
+{
+  "id": "common-ratio",
+  "ja": {
+    "term": "公比",
+    "reading": "こうひ",
+    "alt": []
+  },
+  "en": {
+    "term": "common ratio",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus BC"
+    ]
+  },
+  "definition_ja": "等比数列で、隣り合う項の比 aₙ₊₁ / aₙ（一定の値）。",
+  "definition_en": "In a geometric sequence, the fixed ratio aₙ₊₁ / aₙ of consecutive terms.",
+  "latex": "r = \\frac{a_{n+1}}{a_n}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The common ratio is negative three, so the signs alternate.",
+      "ja": "公比が −3 だから符号が交互に変わる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the common ratio of the geometric sequence 81, 27, 9, 3, ….",
+      "ja": "等比数列 81, 27, 9, 3, … の公比を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉の 169 件のうち 165 件が Khan Academy。"
+  ],
+  "related": [
+    "geometric-sequence",
+    "common-difference",
+    "infinite-geometric-series"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "common ratio": 169
+    },
+    "written": {
+      "common ratio": 98
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-introstats",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "nth-term",
+  "ja": {
+    "term": "第 n 項",
+    "reading": "だいえぬこう",
+    "alt": []
+  },
+  "en": {
+    "term": "nth term",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus BC"
+    ]
+  },
+  "definition_ja": "数列の n 番目の項 aₙ。n の式で表したものを一般項という。",
+  "definition_en": "The term aₙ in the nth position of a sequence; written as a formula in n, it gives every term.",
+  "latex": "a_n",
+  "spoken_en": "a sub n",
+  "examples": [
+    {
+      "en": "Plug n = 10 into the nth term to get the tenth term.",
+      "ja": "第 n 項に n = 10 を入れれば第 10 項になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write a formula for the nth term of the sequence 5, 8, 11, 14, ….",
+      "ja": "数列 5, 8, 11, 14, … の第 n 項を式で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "nth は「エンス」と読む。the nth term = a sub n。",
+    "日本の「一般項」は、第 n 項を n の式で表したもの。英語では formula for the nth term や explicit formula と言う（find-the-nth-term を参照）。"
+  ],
+  "related": [
+    "sequence",
+    "first-term",
+    "find-the-nth-term",
+    "nth"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "nth term": 19
+    },
+    "written": {
+      "nth term": 72
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "find-the-sum",
+  "ja": {
+    "term": "和を求める",
+    "reading": "わをもとめる",
+    "alt": [
+      "Σ を計算する"
+    ]
+  },
+  "en": {
+    "term": "find the sum",
+    "alt": [
+      "compute the sum",
+      "evaluate the sum"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "数列の項の和や Σ で表された和の値を計算する。",
+  "definition_en": "To work out the value of a sum of terms, including one written with sigma notation.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Before you find the sum, count how many terms there are.",
+      "ja": "和を求める前に、項がいくつあるか数えよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the sum Σₖ₌₁¹⁰ (2k + 1).",
+      "ja": "和 Σₖ₌₁¹⁰ (2k + 1) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "summation-notation",
+    "summation-formulas",
+    "partial-sum",
+    "sum-of-an-arithmetic-sequence"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "compute the sum": 5,
+      "find the sum": 28
+    },
+    "written": {
+      "find the sum": 72,
+      "compute the sum": 7,
+      "evaluate the sum": 6
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

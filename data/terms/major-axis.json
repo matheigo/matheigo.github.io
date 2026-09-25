@@ -1,0 +1,84 @@
+{
+  "id": "major-axis",
+  "ja": {
+    "term": "長軸",
+    "reading": "ちょうじく",
+    "alt": []
+  },
+  "en": {
+    "term": "major axis",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "楕円の 2 つの焦点を通る軸。楕円の最も長い径で、長さは 2a。",
+  "definition_en": "The longest chord of an ellipse, through both foci; its length is 2a.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The major axis is horizontal here because 25 is under the x squared.",
+      "ja": "x² の下が 25 だから、ここでは長軸が横向き。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the length of the major axis of the ellipse 4x² + y² = 36.",
+      "ja": "楕円 4x² + y² = 36 の長軸の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "半分の長さ a は semi-major axis（半長軸）。"
+  ],
+  "related": [
+    "minor-axis",
+    "ellipse",
+    "focus"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "major axis": 11
+    },
+    "written": {
+      "major axis": 88
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.06",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "sum-of-an-arithmetic-sequence",
+  "ja": {
+    "term": "等差数列の和",
+    "reading": "とうさすうれつのわ",
+    "alt": []
+  },
+  "en": {
+    "term": "arithmetic series",
+    "alt": [
+      "sum of an arithmetic sequence"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語では項を足したもの自体を series と呼び、等差数列の和を arithmetic series と言う（OpenStax Algebra and Trigonometry）。「数列の和」のまま sum of an arithmetic sequence と言うこともあるが少ない（話し言葉 2 件）。",
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "等差数列の初項から第 n 項までの和。初項と末項の平均に項数を掛けたものになる。",
+  "definition_en": "The sum of the first n terms of an arithmetic sequence: the number of terms times the average of the first and last terms.",
+  "latex": "S_n = \\frac{n(a_1 + a_n)}{2}",
+  "spoken_en": "S sub n equals n times a sub one plus a sub n, over two",
+  "examples": [
+    {
+      "en": "Pair the first term with the last term — every pair adds up to the same thing.",
+      "ja": "初項と末項を組にすると、どの組も同じ和になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the sum of the arithmetic series 2 + 5 + 8 + ⋯ + 62.",
+      "ja": "等差数列の和 2 + 5 + 8 + ⋯ + 62 を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "series は単数・複数とも series。an arithmetic series。"
+  ],
+  "related": [
+    "arithmetic-sequence",
+    "sum-of-a-geometric-sequence",
+    "partial-sum",
+    "last-term"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "arithmetic series": 3,
+      "sum of an arithmetic sequence": 2
+    },
+    "written": {
+      "arithmetic series": 30
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  }
+}

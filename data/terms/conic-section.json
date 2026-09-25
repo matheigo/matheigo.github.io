@@ -1,0 +1,103 @@
+{
+  "id": "conic-section",
+  "ja": {
+    "term": "二次曲線",
+    "reading": "にじきょくせん",
+    "alt": [
+      "円錐曲線"
+    ]
+  },
+  "en": {
+    "term": "conic section",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "放物線・楕円・双曲線の総称。円錐を平面で切った切り口として得られる。x, y の 2 次方程式で表される。",
+  "definition_en": "A parabola, ellipse, or hyperbola: a curve cut from a cone by a plane, given by a second-degree equation in x and y.",
+  "latex": "Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "All three conic sections come from slicing a cone at different angles.",
+      "ja": "3 種類の二次曲線は、どれも円錐を違う角度で切るとできる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Identify the conic section 4x² + 9y² − 16x = 20 and write its equation in standard form.",
+      "ja": "4x² + 9y² − 16x = 20 はどの二次曲線か答え、標準形で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "identify the conic section",
+      "ja": "二次曲線の種類を判別する"
+    }
+  ],
+  "pitfalls": [
+    "日本の数C は「二次曲線」、英語は円錐の切り口として conic section と呼ぶ。",
+    "二次曲線と直線の共有点は、連立して得た 2 次方程式の判別式で調べる。英語でも discriminant を使う。"
+  ],
+  "related": [
+    "ellipse",
+    "focus",
+    "directrix"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "円錐曲線",
+      "en": "Conic section"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "conic section": 18
+    },
+    "written": {
+      "conic section": 138,
+      "identify the conic section": 5
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

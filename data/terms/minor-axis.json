@@ -1,0 +1,82 @@
+{
+  "id": "minor-axis",
+  "ja": {
+    "term": "短軸",
+    "reading": "たんじく",
+    "alt": []
+  },
+  "en": {
+    "term": "minor axis",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "楕円の中心を通り、長軸に垂直な軸。長さは 2b。",
+  "definition_en": "The chord of an ellipse through its center perpendicular to the major axis; its length is 2b.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The minor axis is the short way across the ellipse.",
+      "ja": "短軸は楕円を短い方向に横切る軸。",
+      "register": "spoken"
+    },
+    {
+      "en": "The ellipse has a major axis of length 10 and a minor axis of length 6. Write its equation.",
+      "ja": "長軸の長さが 10、短軸の長さが 6 の楕円の方程式を書け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉では 3 件で、書き言葉（OpenStax）の語。"
+  ],
+  "related": [
+    "major-axis",
+    "ellipse"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "minor axis": 3
+    },
+    "written": {
+      "minor axis": 43
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.06",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

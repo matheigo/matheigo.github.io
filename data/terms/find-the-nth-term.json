@@ -1,0 +1,103 @@
+{
+  "id": "find-the-nth-term",
+  "ja": {
+    "term": "一般項を求める",
+    "reading": "いっぱんこうをもとめる",
+    "alt": []
+  },
+  "en": {
+    "term": "find the general term",
+    "alt": [
+      "find the nth term"
+    ],
+    "variants": [
+      {
+        "term": "find the general term",
+        "register": "written",
+        "note": "OpenStax Algebra and Trigonometry の問題の言い方（15 件すべて）。話し言葉で 2 件（すべて Professor Leonard）、書き言葉で 15 件（すべて OpenStax Algebra and Trigonometry）。"
+      },
+      {
+        "term": "find an explicit formula",
+        "register": "written",
+        "note": "同じ問いの別の言い方。explicit formula は漸化式（recursive formula）と対になる語。話し言葉では 0 件、書き言葉で 11 件（OpenStax Calculus 7・OpenStax Algebra and Trigonometry 4）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "数列の第 n 項 aₙ を n の式で表す。",
+  "definition_en": "To express the nth term aₙ of a sequence as a formula in n.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's find the general term — look at how each term relates to n.",
+      "ja": "一般項を求めよう。各項が n とどう関係しているか見て。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find an explicit formula for the nth term of the sequence defined by a₁ = 3 and aₙ₊₁ = aₙ + 4.",
+      "ja": "a₁ = 3、aₙ₊₁ = aₙ + 4 で定まる数列の一般項を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉では 4 件で、どの言い方も少ない。",
+    "explicit formula（n の式）と recursive formula（漸化式）を対にして覚えるとよい。"
+  ],
+  "related": [
+    "nth-term",
+    "recurrence-relation",
+    "solve-the-recurrence",
+    "sequence"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "find the general term": 2,
+      "find the nth term": 2
+    },
+    "written": {
+      "find an explicit formula": 11,
+      "find the general term": 15,
+      "find the nth term": 1
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

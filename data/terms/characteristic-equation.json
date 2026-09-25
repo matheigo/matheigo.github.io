@@ -1,0 +1,86 @@
+{
+  "id": "characteristic-equation",
+  "ja": {
+    "term": "特性方程式",
+    "reading": "とくせいほうていしき",
+    "alt": []
+  },
+  "en": {
+    "term": "characteristic equation",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の数B の「特性方程式」は、aₙ₊₁ = paₙ + q に対して α = pα + q とおく式を指すことが多い。英語の characteristic equation は、用例コーパスでは 2 階の線形漸化式（MIT 6.042 のテキスト、書き言葉 16 件）と線形微分方程式（MIT 18.03、OpenStax Calculus Volume 3）の x² = px + q の形の式に使われている。",
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Discrete Math",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "漸化式の一般項を求めるために立てる補助の方程式。aₙ₊₁ = paₙ + q では α = pα + q、aₙ₊₂ = paₙ₊₁ + qaₙ では x² = px + q。",
+  "definition_en": "An auxiliary equation used to solve a recurrence: α = pα + q for aₙ₊₁ = paₙ + q, and x² = px + q for aₙ₊₂ = paₙ₊₁ + qaₙ.",
+  "latex": "a_{n+2} = a_{n+1} + 2a_n \\;\\Rightarrow\\; x^2 = x + 2",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The roots of the characteristic equation are 2 and −1, so the general term is a combination of 2ⁿ and (−1)ⁿ.",
+      "ja": "特性方程式の解が 2 と −1 だから、一般項は 2ⁿ と (−1)ⁿ の組み合わせになる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the recurrence aₙ₊₂ = 5aₙ₊₁ − 6aₙ using its characteristic equation.",
+      "ja": "特性方程式を用いて漸化式 aₙ₊₂ = 5aₙ₊₁ − 6aₙ を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの件数の多くは微分方程式（MIT 18.03、OpenStax Calculus Volume 3）の特性方程式。同じ名前の同じ考え方だが、漸化式だけの件数ではない。"
+  ],
+  "related": [
+    "recurrence-relation",
+    "solve-the-recurrence",
+    "system-of-recurrences"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "characteristic equation": 56
+    },
+    "written": {
+      "characteristic equation": 59
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

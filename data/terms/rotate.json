@@ -1,0 +1,114 @@
+{
+  "id": "rotate",
+  "ja": {
+    "term": "回転させる",
+    "reading": "かいてんさせる",
+    "alt": [
+      "回転する"
+    ]
+  },
+  "en": {
+    "term": "rotate",
+    "alt": [
+      "rotate … about the origin"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "complex-numbers"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数C"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "図形や点を、ある点を中心に決まった角だけ回す。",
+  "definition_en": "To turn a figure or a point through a given angle about a fixed point.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If you rotate the point 1 + i by 90 degrees about the origin, you land on −1 + i.",
+      "ja": "点 1 + i を原点のまわりに 90° 回転させると −1 + i に移る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Rotate the point z = 2 + i about the origin through π/3.",
+      "ja": "点 z = 2 + i を原点のまわりに π/3 だけ回転させよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "rotate … about the origin",
+      "ja": "原点のまわりに回転させる"
+    },
+    {
+      "en": "rotate … through an angle θ",
+      "ja": "角 θ だけ回転させる"
+    }
+  ],
+  "pitfalls": [
+    "「〜のまわりに」は about か around。「θ だけ」は through θ または by θ。"
+  ],
+  "related": [
+    "rotation",
+    "revolve-around-the-x-axis"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "rotate": 315,
+      "rotate … about the origin": 1
+    },
+    "written": {
+      "rotate": 221,
+      "rotate … about the origin": 4
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "write-out-the-first-few-terms",
+  "ja": {
+    "term": "項を書き出す",
+    "reading": "こうをかきだす",
+    "alt": []
+  },
+  "en": {
+    "term": "write out the first few terms",
+    "alt": [
+      "list the first few terms"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "数列の初めのいくつかの項を具体的に書き並べて、規則を見る。",
+  "definition_en": "To write down the first several terms of a sequence explicitly, usually to see a pattern.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If you're stuck, just write out the first few terms and look for a pattern.",
+      "ja": "行き詰まったら、項を書き出して規則を探そう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write out the first few terms of the sequence aₙ = (−1)ⁿ/n.",
+      "ja": "数列 aₙ = (−1)ⁿ/n の初めのいくつかの項を書き出せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "sequence",
+    "partial-sum"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "write out the first few terms": 4
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 4 件（10 未満））。見出しは OpenStax の呼び方 write out the first few terms（本文 4 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

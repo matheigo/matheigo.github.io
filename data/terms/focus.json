@@ -1,0 +1,95 @@
+{
+  "id": "focus",
+  "ja": {
+    "term": "焦点",
+    "reading": "しょうてん",
+    "alt": []
+  },
+  "en": {
+    "term": "focus",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "放物線・楕円・双曲線を定める定点。楕円と双曲線には 2 つ、放物線には 1 つある。",
+  "definition_en": "A fixed point used to define a conic: a parabola has one, an ellipse and a hyperbola have two.",
+  "latex": "F(c, 0), \\; c = \\sqrt{a^2 - b^2}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The two foci sit on the major axis, c units from the center.",
+      "ja": "2 つの焦点は長軸上、中心から c の距離にある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the foci of the hyperbola x²/16 − y²/9 = 1.",
+      "ja": "双曲線 x²/16 − y²/9 = 1 の焦点を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "find the foci",
+      "ja": "焦点を求める"
+    }
+  ],
+  "pitfalls": [
+    "複数形は foci（フォウサイ）。",
+    "focus は「集中する」の意味でも使う語なので、用例コーパスでは focus of the …（the focus of the parabola など）の形で数えた。話し言葉では 5 件で、ほとんどが書き言葉（OpenStax）の語。"
+  ],
+  "related": [
+    "ellipse",
+    "directrix",
+    "conic-section",
+    "major-axis"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "焦点 (幾何学)",
+      "en": "Focus (geometry)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "focus of the": 5
+    },
+    "written": {
+      "focus of the": 22,
+      "find the foci": 2
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-6.042",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "arithmetic-sequence",
+  "ja": {
+    "term": "等差数列",
+    "reading": "とうさすうれつ",
+    "alt": [
+      "算術数列"
+    ]
+  },
+  "en": {
+    "term": "arithmetic sequence",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "隣り合う項の差が一定の数列。その一定の差を公差という。",
+  "definition_en": "A sequence in which each term is the previous one plus a fixed number, the common difference.",
+  "latex": "a_n = a_1 + (n-1)d",
+  "spoken_en": "a sub n equals a sub one plus n minus one times d",
+  "examples": [
+    {
+      "en": "It's arithmetic, because you keep adding 4.",
+      "ja": "4 ずつ足しているから等差数列。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that a, b, c form an arithmetic sequence if and only if 2b = a + c.",
+      "ja": "a, b, c がこの順に等差数列をなすことと 2b = a + c が同値であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "form an arithmetic sequence",
+      "ja": "等差数列をなす"
+    }
+  ],
+  "pitfalls": [
+    "Wikipedia の記事名は arithmetic progression だが、用例コーパスには 0 件。"
+  ],
+  "related": [
+    "common-difference",
+    "geometric-sequence",
+    "sum-of-an-arithmetic-sequence"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "等差数列",
+      "en": "Arithmetic progression"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "arithmetic sequence": 28,
+      "form an arithmetic sequence": 1
+    },
+    "written": {
+      "arithmetic sequence": 149,
+      "form an arithmetic sequence": 2
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

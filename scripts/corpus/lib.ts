@@ -53,9 +53,18 @@ export const VARIANTS: [RegExp, string][] = [
   // OpenStax CNXML: inline math padded with spaces splits "x-axis" into
   // "x -axis" (1,011 times in the written corpus against 32 joined).
   [/\b([a-z]) -(?=[a-z])/g, "$1-"],
+  // The same for an ordinal suffix glued to inline math: "<m:math>n</m:math>th
+  // term" reads "n th term" (138 times in the written corpus).
+  [/\b([a-z]) th\b/g, "$1th"],
   // Hyphenation only. "u sub" is left alone: it is also how a subscript is read (u sub n).
   [/\bu\s+substitution/g, "u-substitution"],
   [/\banti[-\s]derivative/g, "antiderivative"],
+  // Hyphenation of compound modifiers (Phase 2 数列・級数の単元): captions write
+  // "p series", "vector valued", "term by term", "first order"; OpenStax hyphenates
+  [/\bp\s+series\b/g, "p-series"],
+  [/\bvector\s+valued\b/g, "vector-valued"],
+  [/\bterm\s+by\s+term\b/g, "term-by-term"],
+  [/\b(first|second)\s+order\b/g, "$1-order"],
   // Leibniz notation typed with a slash in captions ("dy/dx") is said "dy dx"
   [/\bd([a-z])\/d([a-z])\b/g, "d$1 d$2"],
   // One name, three spellings: L'Hôpital (OpenStax), L'Hopital (captions), L'Hospital (older)
@@ -417,6 +426,8 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
     squeeze: "squeeze … between",
     sandwich: "sandwich … between",
   },
+  // Generated with these forms from the start (Phase 2 数列・級数の単元)
+  focus: { focus: "focus of the" }, // not "let's focus on"
 };
 
 /** The wording a candidate is counted and recorded as. */

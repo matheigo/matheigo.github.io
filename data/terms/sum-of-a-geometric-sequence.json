@@ -1,0 +1,81 @@
+{
+  "id": "sum-of-a-geometric-sequence",
+  "ja": {
+    "term": "等比数列の和",
+    "reading": "とうひすうれつのわ",
+    "alt": []
+  },
+  "en": {
+    "term": "finite geometric series",
+    "alt": [
+      "sum of a geometric sequence"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語では項を足したもの自体を series と呼ぶ。有限個の項の和であることを言うときは finite geometric series（話し言葉で 10 件、うち 9 件が Khan Academy）。geometric series は無限等比級数にも使う（infinite-geometric-series を参照）。",
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "等比数列の初項から第 n 項までの和。公比 r ≠ 1 のとき a₁(1 − rⁿ)/(1 − r)。",
+  "definition_en": "The sum of the first n terms of a geometric sequence, a₁(1 − rⁿ)/(1 − r) when r ≠ 1.",
+  "latex": "S_n = \\frac{a_1(1 - r^n)}{1 - r} \\quad (r \\ne 1)",
+  "spoken_en": "S sub n equals a sub one times one minus r to the n, over one minus r",
+  "examples": [
+    {
+      "en": "Multiply the finite geometric series by r and subtract — almost everything cancels.",
+      "ja": "等比数列の和に r を掛けて引くと、ほとんどの項が消える。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the sum of the first 8 terms of the geometric sequence 1, 3, 9, 27, ….",
+      "ja": "等比数列 1, 3, 9, 27, … の初項から第 8 項までの和を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "r = 1 のときは公式が使えない（和は n·a₁）。"
+  ],
+  "related": [
+    "geometric-sequence",
+    "common-ratio",
+    "infinite-geometric-series",
+    "sum-of-an-arithmetic-sequence",
+    "partial-sum"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "finite geometric series": 10,
+      "sum of a geometric sequence": 2
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc"
+    ],
+    "counted": "2026-09-24"
+  }
+}

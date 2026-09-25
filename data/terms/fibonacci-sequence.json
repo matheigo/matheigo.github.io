@@ -1,0 +1,98 @@
+{
+  "id": "fibonacci-sequence",
+  "ja": {
+    "term": "フィボナッチ数列",
+    "reading": "ふぃぼなっちすうれつ",
+    "alt": []
+  },
+  "en": {
+    "term": "Fibonacci numbers",
+    "alt": [],
+    "variants": [
+      {
+        "term": "Fibonacci sequence",
+        "register": "written",
+        "note": "OpenStax Algebra and Trigonometry の書き方（6 件）。話し言葉で 1 件（すべて MIT OCW）、書き言葉で 8 件（OpenStax Algebra and Trigonometry 6・OpenStax Calculus 1・MIT の講義ノート 1）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "初めの 2 項が 1、1 で、それ以降の各項が直前の 2 項の和になる数列。",
+  "definition_en": "The sequence that starts 1, 1 and in which every later term is the sum of the two before it.",
+  "latex": "F_{n+2} = F_{n+1} + F_n, \\quad F_1 = F_2 = 1",
+  "spoken_en": "F sub n plus two equals F sub n plus one plus F sub n",
+  "examples": [
+    {
+      "en": "The Fibonacci numbers grow roughly like powers of the golden ratio.",
+      "ja": "フィボナッチ数はおよそ黄金比の累乗のように増える。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the 10th term of the Fibonacci sequence.",
+      "ja": "フィボナッチ数列の第 10 項を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語では数列全体を the Fibonacci numbers と複数形で呼ぶことが多い（話し言葉 21 件、書き言葉 25 件。多くは MIT の講義と講義ノート）。"
+  ],
+  "related": [
+    "recurrence-relation",
+    "sequence",
+    "characteristic-equation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "フィボナッチ数",
+      "en": "Fibonacci number"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "Fibonacci numbers": 21,
+      "Fibonacci sequence": 1
+    },
+    "written": {
+      "Fibonacci numbers": 25,
+      "Fibonacci sequence": 8
+    },
+    "sources": [
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

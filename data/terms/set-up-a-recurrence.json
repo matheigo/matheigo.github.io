@@ -1,0 +1,87 @@
+{
+  "id": "set-up-a-recurrence",
+  "ja": {
+    "term": "漸化式を立てる",
+    "reading": "ぜんかしきをたてる",
+    "alt": []
+  },
+  "en": {
+    "term": "write a recursive formula",
+    "alt": [
+      "set up a recurrence",
+      "find a recurrence"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "文章題の状況から漸化式を作ることを、大学の講義（MIT 6.042）は set up a recurrence と言う（話し言葉 3 件）。高校の教科書（OpenStax Algebra and Trigonometry）の write a recursive formula は、並んだ項から漸化式を書く問いで使う。",
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "問題の状況や数列の規則から、項の間の関係を漸化式で表す。",
+  "definition_en": "To express, as a recurrence, how each term of a sequence depends on earlier ones in a given situation.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let aₙ be the number of ways for n steps, and set up a recurrence by looking at the last step.",
+      "ja": "n 段の上り方を aₙ として、最後の一歩で場合分けして漸化式を立てよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write a recursive formula for the arithmetic sequence −2, 3, 8, 13, ….",
+      "ja": "等差数列 −2, 3, 8, 13, … を漸化式で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "recurrence-relation",
+    "solve-the-recurrence",
+    "recursive-definition"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "set up a recurrence": 3
+    },
+    "written": {
+      "write a recursive formula": 15,
+      "set up a recurrence": 1,
+      "find a recurrence": 4
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  }
+}

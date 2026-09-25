@@ -1,0 +1,91 @@
+{
+  "id": "summation-formulas",
+  "ja": {
+    "term": "Σ の公式",
+    "reading": "しぐまのこうしき",
+    "alt": [
+      "和の公式"
+    ]
+  },
+  "en": {
+    "term": "summation formulas",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences",
+    "notation"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "1 から n までの k、k²、k³ の和を n の式で表す公式。",
+  "definition_en": "Formulas that give the sums of k, k², and k³ for k = 1 to n in terms of n.",
+  "latex": "\\sum_{k=1}^{n} k = \\frac{n(n+1)}{2}, \\quad \\sum_{k=1}^{n} k^2 = \\frac{n(n+1)(2n+1)}{6}",
+  "spoken_en": "the sum from k equals one to n of k is n times n plus one over two",
+  "examples": [
+    {
+      "en": "Split the sum and use the formula for the sum of k squared.",
+      "ja": "和を分けて、k² の和の公式を使おう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the summation formulas to evaluate Σₖ₌₁ⁿ (3k² − 2k).",
+      "ja": "Σ の公式を用いて Σₖ₌₁ⁿ (3k² − 2k) を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは summation formulas は話し言葉 1 件・書き言葉 4 件で、決まった呼び名とは言えない。OpenStax Calculus Volume 1 は節の中で sums and powers of integers として扱う（5 件）。",
+    "sum formulas は三角関数の加法定理（sum formula for sine）も指す。"
+  ],
+  "related": [
+    "summation-notation",
+    "partial-sum",
+    "find-the-sum"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "summation formulas": 1
+    },
+    "written": {
+      "summation formulas": 4
+    },
+    "sources": [
+      "mit-18.06",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 4 件（10 未満））。見出しは OpenStax の呼び方 summation formulas（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

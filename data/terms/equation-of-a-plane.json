@@ -1,0 +1,80 @@
+{
+  "id": "equation-of-a-plane",
+  "ja": {
+    "term": "平面の方程式",
+    "reading": "へいめんのほうていしき",
+    "alt": []
+  },
+  "en": {
+    "term": "equation of a plane",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "空間の平面上の点 (x, y, z) が満たす方程式。法線ベクトル (a, b, c) と平面上の 1 点から ax + by + cz + d = 0 の形に書ける。",
+  "definition_en": "The equation satisfied by the points (x, y, z) of a plane in space, ax + by + cz + d = 0, where (a, b, c) is a normal vector.",
+  "latex": "a(x - x_0) + b(y - y_0) + c(z - z_0) = 0",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The coefficients in the equation of the plane give you a normal vector right away.",
+      "ja": "平面の方程式の係数から、法線ベクトルがすぐわかる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find an equation of the plane through (1, 0, 2) with normal vector (3, −1, 4).",
+      "ja": "点 (1, 0, 2) を通り、法線ベクトルが (3, −1, 4) の平面の方程式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは the equation of the plane（話し言葉 3 件、書き言葉 21 件）のように the をつけることも多い。",
+    "数C では法線ベクトルとの内積で導く。英語でも normal vector を使う。"
+  ],
+  "related": [
+    "coordinates-in-space"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "equation of a plane": 1
+    },
+    "written": {
+      "equation of a plane": 17
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

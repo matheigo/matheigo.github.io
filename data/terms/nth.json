@@ -1,0 +1,98 @@
+{
+  "id": "nth",
+  "ja": {
+    "term": "n 番目",
+    "reading": "えぬばんめ",
+    "alt": []
+  },
+  "en": {
+    "term": "nth",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "notation",
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "n 番目の。第 n 項（the nth term）、n 乗根（the nth root）のように使う。",
+  "definition_en": "In position n: the nth term, the nth root, the nth derivative.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "What's the nth term? Just replace 5 with n.",
+      "ja": "n 番目の項は？ 5 を n に置き換えるだけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the nth term of the sequence 1, 4, 9, 16, ….",
+      "ja": "数列 1, 4, 9, 16, … の第 n 項を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「エンス」と読む（/ɛnθ/）。n-th とハイフンを入れて書くこともある（話し言葉の字幕で 47 件）。",
+    "OpenStax の本文では n が数式なので「n th」と分かれて見えるが、読みは同じ。"
+  ],
+  "related": [
+    "nth-term",
+    "nth-root",
+    "nth-derivative"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "nth": 182
+    },
+    "written": {
+      "nth": 185
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

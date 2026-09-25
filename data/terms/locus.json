@@ -1,0 +1,85 @@
+{
+  "id": "locus",
+  "ja": {
+    "term": "軌跡",
+    "reading": "きせき",
+    "alt": []
+  },
+  "en": {
+    "term": "locus",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "complex-numbers"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数C"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "ある条件を満たす点全体がつくる図形。",
+  "definition_en": "The figure formed by all the points that satisfy a given condition.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "So the locus of z is a circle centered at 1 with radius 2.",
+      "ja": "だから z の軌跡は、1 を中心とする半径 2 の円。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the locus of the point z that satisfies |z − 1| = |z + i|.",
+      "ja": "|z − 1| = |z + i| を満たす点 z の軌跡を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "the locus of z",
+      "ja": "点 z の軌跡"
+    }
+  ],
+  "pitfalls": [
+    "用例コーパスでは locus は 0 件。OpenStax Algebra and Trigonometry は円錐曲線を「〜を満たす点全体の集合」（the set of all points …）として定義している。",
+    "「点 z が描く図形」も locus of z で言える。"
+  ],
+  "related": [
+    "conic-section",
+    "ellipse"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "軌跡 (数学)",
+      "en": "Locus (mathematics)"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

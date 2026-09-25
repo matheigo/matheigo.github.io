@@ -1,0 +1,90 @@
+{
+  "id": "infinite-geometric-series",
+  "ja": {
+    "term": "無限等比級数",
+    "reading": "むげんとうひきゅうすう",
+    "alt": [
+      "無限幾何級数"
+    ]
+  },
+  "en": {
+    "term": "infinite geometric series",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "等比数列の項を限りなく足した級数。|r| < 1 のとき収束して、和は a/(1 − r)。",
+  "definition_en": "The series formed by adding all the terms of a geometric sequence; it converges to a/(1 − r) when |r| < 1.",
+  "latex": "\\sum_{n=1}^{\\infty} ar^{n-1} = \\frac{a}{1-r} \\quad (|r| < 1)",
+  "spoken_en": "the sum from n equals one to infinity of a r to the n minus one equals a over one minus r, when the absolute value of r is less than one",
+  "examples": [
+    {
+      "en": "As long as the ratio is between −1 and 1, the infinite geometric series converges.",
+      "ja": "公比が −1 と 1 の間にあれば、無限等比級数は収束する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the sum of the infinite geometric series 8 − 4 + 2 − 1 + ⋯.",
+      "ja": "無限等比級数 8 − 4 + 2 − 1 + ⋯ の和を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "単に geometric series とも言う（用例コーパスで geometric series は話し言葉 170 件、infinite geometric series は 28 件。前者には有限の和も含まれる）。",
+    "公比が 1 以上（|r| ≥ 1）なら発散する。"
+  ],
+  "related": [
+    "geometric-sequence",
+    "common-ratio",
+    "infinite-series",
+    "sum-of-the-series",
+    "sum-of-a-geometric-sequence"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "infinite geometric series": 28
+    },
+    "written": {
+      "infinite geometric series": 23
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-notes",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "inductive-hypothesis",
+  "ja": {
+    "term": "帰納法の仮定",
+    "reading": "きのうほうのかてい",
+    "alt": []
+  },
+  "en": {
+    "term": "induction hypothesis",
+    "alt": [],
+    "variants": [
+      {
+        "term": "induction hypothesis",
+        "register": "both",
+        "note": "話し言葉・書き言葉とも最も多いが、すべて MIT 6.042（講義とそのテキスト）。話し言葉で 53 件（すべて MIT OCW）、書き言葉で 30 件（すべて MIT の講義ノート）。"
+      },
+      {
+        "term": "inductive hypothesis",
+        "register": "spoken",
+        "note": "同じく MIT 6.042 の講義で使う。話し言葉で 20 件（すべて MIT OCW）、書き言葉で 6 件（すべて MIT の講義ノート）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "数学的帰納法で「n = k のとき成り立つ」とおく仮定。",
+  "definition_en": "In a proof by induction, the assumption that the statement holds for n = k.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Now use the induction hypothesis to replace the first k terms.",
+      "ja": "ここで帰納法の仮定を使って、最初の k 項を置き換える。",
+      "register": "spoken"
+    },
+    {
+      "en": "By the induction hypothesis, 1 + 3 + ⋯ + (2k − 1) = k².",
+      "ja": "帰納法の仮定より、1 + 3 + ⋯ + (2k − 1) = k²。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「n = k のとき成り立つと仮定する」は Assume the statement holds for n = k. と書く。"
+  ],
+  "related": [
+    "proof-by-induction",
+    "base-case",
+    "prove-by-induction"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語は固有の用語（induction hypothesis）だが、OpenStax（6 冊）にも台帳の Wikipedia にも出てこない。用例コーパスでは MIT 6.042 だけが使う。",
+      "raised": "2026-09-24"
+    }
+  ],
+  "evidence": {
+    "spoken": {
+      "induction hypothesis": 53,
+      "inductive hypothesis": 20
+    },
+    "written": {
+      "induction hypothesis": 30,
+      "inductive hypothesis": 6
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "directrix",
+  "ja": {
+    "term": "準線",
+    "reading": "じゅんせん",
+    "alt": []
+  },
+  "en": {
+    "term": "directrix",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "放物線を「焦点と準線から等距離にある点の軌跡」として定めるときの定直線。",
+  "definition_en": "The fixed line that, together with the focus, defines a parabola as the set of points equidistant from both.",
+  "latex": "y^2 = 4px: \\; x = -p",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Every point on the parabola is the same distance from the focus and the directrix.",
+      "ja": "放物線上のどの点も、焦点と準線から同じ距離にある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the focus and the directrix of the parabola y² = 12x.",
+      "ja": "放物線 y² = 12x の焦点と準線を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "複数形は directrices。話し言葉では 4 件で、書き言葉（OpenStax Algebra and Trigonometry）の語。"
+  ],
+  "related": [
+    "focus",
+    "conic-section"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "directrix": 4
+    },
+    "written": {
+      "directrix": 181
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

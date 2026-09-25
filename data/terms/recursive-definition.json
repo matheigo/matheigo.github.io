@@ -1,0 +1,111 @@
+{
+  "id": "recursive-definition",
+  "ja": {
+    "term": "帰納的定義",
+    "reading": "きのうてきていぎ",
+    "alt": [
+      "再帰的定義"
+    ]
+  },
+  "en": {
+    "term": "recursive definition",
+    "alt": [
+      "recursively defined"
+    ],
+    "variants": [
+      {
+        "term": "defined recursively",
+        "register": "written",
+        "note": "受け身の形（the sequence is defined recursively by …）で、書き言葉で最も多い。話し言葉で 3 件（Khan Academy 2・Professor Leonard 1）、書き言葉で 20 件（MIT の講義ノート 12・OpenStax Calculus 6・OpenStax Algebra and Trigonometry 2）。"
+      },
+      {
+        "term": "recursive definition",
+        "register": "written",
+        "note": "名詞の形。書き言葉の 15 件はすべて MIT 6.042 のテキスト。話し言葉で 7 件（Khan Academy 6・3Blue1Brown 1）、書き言葉で 15 件（すべて MIT の講義ノート）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences",
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "初項（初めのいくつかの項）と漸化式によって数列を定めること。",
+  "definition_en": "Defining a sequence by giving its first term (or first few terms) and a rule that gives each later term from earlier ones.",
+  "latex": "a_1 = 1, \\quad a_{n+1} = a_n + 2n + 1",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "It's defined recursively, so you can't jump straight to the 100th term.",
+      "ja": "帰納的に定義されているから、いきなり第 100 項にはいけない。",
+      "register": "spoken"
+    },
+    {
+      "en": "The sequence {aₙ} is defined recursively by a₁ = 2 and aₙ₊₁ = 3aₙ − 1. Find a₄.",
+      "ja": "数列 {aₙ} は a₁ = 2、aₙ₊₁ = 3aₙ − 1 で帰納的に定義されている。a₄ を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の recursive は、情報科学の「再帰」と同じ語。"
+  ],
+  "related": [
+    "recurrence-relation",
+    "sequence",
+    "proof-by-induction"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "再帰的定義",
+      "en": "Recursive definition"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "recursive definition": 7,
+      "defined recursively": 3
+    },
+    "written": {
+      "recursively defined": 6,
+      "defined recursively": 20,
+      "recursive definition": 15
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

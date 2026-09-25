@@ -1,0 +1,94 @@
+{
+  "id": "limit-of-a-sequence",
+  "ja": {
+    "term": "数列の極限",
+    "reading": "すうれつのきょくげん",
+    "alt": []
+  },
+  "en": {
+    "term": "limit of a sequence",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "n を限りなく大きくしたときに、数列の項が近づく値。",
+  "definition_en": "The value that the terms of a sequence approach as n grows without bound.",
+  "latex": "\\lim_{n \\to \\infty} \\frac{2n+1}{n} = 2",
+  "spoken_en": "the limit as n goes to infinity of two n plus one over n equals two",
+  "examples": [
+    {
+      "en": "For the limit of a sequence, only the big values of n matter.",
+      "ja": "数列の極限では、n が大きいところだけが問題になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the limit of the sequence aₙ = (3n² − 1)/(n² + 2).",
+      "ja": "数列 aₙ = (3n² − 1)/(n² + 2) の極限を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは limit of a sequence は話し言葉 1 件・書き言葉 8 件、limit of the sequence は 3 件・8 件。授業では the limit as n goes to infinity ／ approaches infinity と式の読みで言う（話し言葉 38 件 ／ 58 件）。"
+  ],
+  "related": [
+    "limit",
+    "converge",
+    "diverge",
+    "as-n-approaches-infinity"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "数列の極限",
+      "en": "Limit of a sequence"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "limit of a sequence": 1
+    },
+    "written": {
+      "limit of a sequence": 8
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは OpenStax の呼び方 limit of a sequence（本文 8 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

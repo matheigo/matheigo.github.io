@@ -1,0 +1,98 @@
+{
+  "id": "proof-by-induction",
+  "ja": {
+    "term": "数学的帰納法",
+    "reading": "すうがくてききのうほう",
+    "alt": []
+  },
+  "en": {
+    "term": "proof by induction",
+    "alt": [
+      "mathematical induction"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "proof",
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "n = 1 で成り立つことと、n = k で成り立てば n = k + 1 でも成り立つことを示して、すべての自然数 n で成り立つことを証明する方法。",
+  "definition_en": "A method of proving a statement for every positive integer n: show it for n = 1, then show that if it holds for n = k it holds for n = k + 1.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Proof by induction has two parts: the base case and the inductive step.",
+      "ja": "数学的帰納法は 2 段階。基底段階と帰納段階。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use mathematical induction to prove that 1 + 2 + ⋯ + n = n(n + 1)/2 for every positive integer n.",
+      "ja": "すべての正の整数 n について 1 + 2 + ⋯ + n = n(n + 1)/2 が成り立つことを、数学的帰納法で証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "by induction on n",
+      "ja": "n についての数学的帰納法により"
+    }
+  ],
+  "pitfalls": [
+    "話し言葉の 10 件中 9 件が MIT 6.042（離散数学）。単に by induction と言うことが多い（話し言葉 41 件、書き言葉 37 件。ほとんどが MIT 6.042）。",
+    "n = k + 1 を示す段は inductive step、仮定は induction hypothesis（inductive-hypothesis を参照）。"
+  ],
+  "related": [
+    "inductive-hypothesis",
+    "base-case",
+    "prove-by-induction",
+    "recursive-definition"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "数学的帰納法",
+      "en": "Mathematical induction"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "mathematical induction": 3,
+      "by induction on n": 2,
+      "proof by induction": 10
+    },
+    "written": {
+      "proof by induction": 4,
+      "by induction on n": 7
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

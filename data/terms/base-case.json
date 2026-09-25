@@ -1,0 +1,93 @@
+{
+  "id": "base-case",
+  "ja": {
+    "term": "n=1 のとき",
+    "reading": "えぬいこーるいちのとき",
+    "alt": [
+      "基底段階"
+    ]
+  },
+  "en": {
+    "term": "base case",
+    "alt": [
+      "basis step"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の答案は「[1] n = 1 のとき」と書くだけで、この段に名前をつけないことが多い。英語では base case と名前で呼ぶ。見出しの「n=1 のとき」は答案の書き方。",
+  "domains": [
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "数学的帰納法の最初の段。最初の値（ふつう n = 1）で成り立つことを確かめる。",
+  "definition_en": "The first step of a proof by induction: checking the statement for the first value, usually n = 1.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The base case is easy: when n equals 1, both sides are 1.",
+      "ja": "n = 1 のときは簡単。両辺とも 1 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Base case: when n = 1, the left side is 1 and the right side is 1(1 + 1)/2 = 1.",
+      "ja": "[1] n = 1 のとき、左辺は 1、右辺は 1(1 + 1)/2 = 1。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉・書き言葉とも、ほぼすべて MIT 6.042（講義とそのテキスト）。"
+  ],
+  "related": [
+    "proof-by-induction",
+    "inductive-hypothesis"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語は固有の用語（base case）だが、OpenStax（6 冊）にも台帳の Wikipedia にも出てこない。用例コーパスでは MIT 6.042 だけが使う。",
+      "raised": "2026-09-24"
+    }
+  ],
+  "evidence": {
+    "spoken": {
+      "base case": 61,
+      "basis step": 1
+    },
+    "written": {
+      "base case": 56,
+      "basis step": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-24"
+  }
+}

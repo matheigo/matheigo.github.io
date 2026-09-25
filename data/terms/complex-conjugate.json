@@ -1,0 +1,95 @@
+{
+  "id": "complex-conjugate",
+  "ja": {
+    "term": "共役複素数",
+    "reading": "きょうやくふくそすう",
+    "alt": [
+      "複素共役"
+    ]
+  },
+  "en": {
+    "term": "complex conjugate",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "complex-numbers"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数C"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "複素数 a + bi に対する a − bi。複素数平面では実軸について対称な点になる。",
+  "definition_en": "For a + bi, the number a − bi; in the complex plane it is the mirror image in the real axis.",
+  "latex": "\\overline{a+bi} = a - bi",
+  "spoken_en": "the conjugate of a plus b i is a minus b i",
+  "examples": [
+    {
+      "en": "Multiply the top and bottom by the complex conjugate of the denominator.",
+      "ja": "分母の共役複素数を分子と分母に掛けよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that z is a real number if and only if z̄ = z.",
+      "ja": "z が実数であることと z̄ = z が同値であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "the complex conjugate of z",
+      "ja": "z の共役複素数"
+    }
+  ],
+  "pitfalls": [
+    "記号 z̄ は z bar と読む。",
+    "「z が実数となる条件」は z̄ = z、「純虚数となる条件」は z̄ = −z かつ z ≠ 0。英語でも同じ式で書く。"
+  ],
+  "related": [
+    "pure-imaginary-number"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "複素共役",
+      "en": "Complex conjugate"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "complex conjugate": 38
+    },
+    "written": {
+      "complex conjugate": 46
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

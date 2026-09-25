@@ -1,0 +1,99 @@
+{
+  "id": "geometric-sequence",
+  "ja": {
+    "term": "等比数列",
+    "reading": "とうひすうれつ",
+    "alt": [
+      "幾何数列"
+    ]
+  },
+  "en": {
+    "term": "geometric sequence",
+    "alt": [
+      "geometric progression"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "隣り合う項の比が一定の数列。その一定の比を公比という。",
+  "definition_en": "A sequence in which each term is the previous one times a fixed number, the common ratio.",
+  "latex": "a_n = a_1 r^{\\,n-1}",
+  "spoken_en": "a sub n equals a sub one times r to the n minus one",
+  "examples": [
+    {
+      "en": "Each term is half the one before, so it's geometric with ratio one half.",
+      "ja": "前の項の半分になっていくから、公比 1/2 の等比数列。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the general term of the geometric sequence 3, 6, 12, 24, ….",
+      "ja": "等比数列 3, 6, 12, 24, … の一般項を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "geometric progression は少数（話し言葉 3 件、書き言葉 1 件）。"
+  ],
+  "related": [
+    "common-ratio",
+    "arithmetic-sequence",
+    "sum-of-a-geometric-sequence",
+    "infinite-geometric-series"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "等比数列",
+      "en": "Geometric progression"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "geometric sequence": 20,
+      "geometric progression": 3
+    },
+    "written": {
+      "geometric sequence": 130,
+      "geometric progression": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

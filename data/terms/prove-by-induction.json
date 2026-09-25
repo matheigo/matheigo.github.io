@@ -1,0 +1,82 @@
+{
+  "id": "prove-by-induction",
+  "ja": {
+    "term": "数学的帰納法で証明する",
+    "reading": "すうがくてききのうほうでしょうめいする",
+    "alt": []
+  },
+  "en": {
+    "term": "prove … by induction",
+    "alt": [
+      "prove by induction"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "数学的帰納法を使って、すべての自然数 n について命題が成り立つことを示す。",
+  "definition_en": "To show, using mathematical induction, that a statement holds for every positive integer n.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We'll prove it by induction on n.",
+      "ja": "n についての数学的帰納法で証明しよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove by induction that 2ⁿ > n for every positive integer n.",
+      "ja": "すべての正の整数 n について 2ⁿ > n が成り立つことを、数学的帰納法で証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉の 10 件はすべて MIT 6.042。"
+  ],
+  "related": [
+    "proof-by-induction",
+    "inductive-hypothesis",
+    "base-case"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "prove … by induction": 10
+    },
+    "written": {
+      "prove … by induction": 4
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-24"
+  }
+}

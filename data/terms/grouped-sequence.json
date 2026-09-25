@@ -1,0 +1,73 @@
+{
+  "id": "grouped-sequence",
+  "ja": {
+    "term": "群数列",
+    "reading": "ぐんすうれつ",
+    "alt": []
+  },
+  "en": {
+    "term": "grouped sequence",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで 0 件）。項をいくつかずつの組（group）に分けて考える日本の受験の手法で、英語で説明するなら group the terms like this: (1), (2, 3), (4, 5, 6), … と式で見せる。",
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "数列の項を、ある規則で区切った組（群）に分けて考えるもの。第何群の何番目かで項を特定する。",
+  "definition_en": "A sequence whose terms are split into groups by a rule, so that a term is located by its group and its place in the group.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Split the terms into groups: one term, then two, then three, and so on.",
+      "ja": "項を 1 個、2 個、3 個、… と群に分けよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "In the grouped sequence 1 | 2, 3 | 4, 5, 6 | …, find the first term of the 10th group.",
+      "ja": "群数列 1 | 2, 3 | 4, 5, 6 | … で、第 10 群の最初の項を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "sequence",
+    "summation-formulas"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

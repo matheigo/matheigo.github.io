@@ -1,0 +1,115 @@
+{
+  "id": "sequence",
+  "ja": {
+    "term": "数列",
+    "reading": "すうれつ",
+    "alt": []
+  },
+  "en": {
+    "term": "sequence",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "数を 1 列に並べたもの。n 番目の数を第 n 項といい、aₙ のように書く。",
+  "definition_en": "A list of numbers in a definite order; the nth number is the nth term, written aₙ.",
+  "latex": "a_1, a_2, a_3, \\ldots, a_n, \\ldots",
+  "spoken_en": "a sub one, a sub two, a sub three, dot dot dot",
+  "examples": [
+    {
+      "en": "A sequence is just a list — the order matters.",
+      "ja": "数列はただの数の並び。順番が大事。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the first five terms of the sequence aₙ = 2n − 1.",
+      "ja": "数列 aₙ = 2n − 1 の初めの 5 項を書け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "the terms of a sequence",
+      "ja": "数列の項"
+    }
+  ],
+  "pitfalls": [
+    "sequence（数列）と series（級数、項の和）を取り違えない。"
+  ],
+  "related": [
+    "first-term",
+    "nth-term",
+    "arithmetic-sequence",
+    "geometric-sequence",
+    "infinite-series",
+    "limit-of-a-sequence"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "数列",
+      "en": "Number sequence"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "sequence": 376
+    },
+    "written": {
+      "sequence": 1362,
+      "the terms of a sequence": 15
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "solve-the-recurrence",
+  "ja": {
+    "term": "漸化式を解く",
+    "reading": "ぜんかしきをとく",
+    "alt": []
+  },
+  "en": {
+    "term": "solve the recurrence",
+    "alt": [
+      "solve a recurrence"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "漸化式と初項から、数列の一般項を求める。",
+  "definition_en": "To find a formula for the nth term of a sequence from its recurrence and first term.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To solve the recurrence, subtract the fixed point from both sides first.",
+      "ja": "漸化式を解くには、まず両辺から特性方程式の解を引く。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the recurrence aₙ₊₁ = 3aₙ + 2 with a₁ = 1.",
+      "ja": "漸化式 aₙ₊₁ = 3aₙ + 2、a₁ = 1 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "書き言葉の 11 件はすべて MIT の講義ノート（6.042 のテキスト）。"
+  ],
+  "related": [
+    "recurrence-relation",
+    "characteristic-equation",
+    "find-the-nth-term"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "solve the recurrence": 1,
+      "solve a recurrence": 2
+    },
+    "written": {
+      "solve the recurrence": 11,
+      "solve a recurrence": 1
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-24"
+  }
+}
