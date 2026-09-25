@@ -1,0 +1,85 @@
+{
+  "id": "integrating-factor",
+  "ja": {
+    "term": "積分因子",
+    "reading": "せきぶんいんし",
+    "alt": []
+  },
+  "en": {
+    "term": "integrating factor",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "1 階線形微分方程式 y′ + P(x)y = Q(x) の両辺に掛けて、左辺を (μy)′ の形にする関数 μ(x) = e^{∫P(x)dx}。",
+  "definition_en": "The function μ(x) = e^{∫P(x)dx} that turns the left side of y′ + P(x)y = Q(x) into (μy)′ when both sides are multiplied by it.",
+  "latex": "\\mu(x) = e^{\\int P(x)\\,dx}",
+  "spoken_en": "mu of x equals e to the integral of P of x dx",
+  "examples": [
+    {
+      "en": "Multiply both sides by the integrating factor, and the left side becomes a product rule in reverse.",
+      "ja": "両辺に積分因子を掛けると、左辺は積の微分を逆にした形になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find an integrating factor for y′ − (1/x)y = x² and solve the equation.",
+      "ja": "y′ − (1/x)y = x² の積分因子を求め、方程式を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉の 63 件のうち 55 件が MIT OCW（18.03）。"
+  ],
+  "related": [
+    "first-order-linear-differential-equation",
+    "differential-equation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "積分因子",
+      "en": "Integrating factor"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "integrating factor": 63
+    },
+    "written": {
+      "integrating factor": 35
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

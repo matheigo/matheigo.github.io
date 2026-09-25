@@ -1,0 +1,103 @@
+{
+  "id": "separation-of-variables",
+  "ja": {
+    "term": "変数分離",
+    "reading": "へんすうぶんり",
+    "alt": []
+  },
+  "en": {
+    "term": "separation of variables",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "微分方程式を g(y) dy = f(x) dx の形に分けて、両辺を積分して解く方法。",
+  "definition_en": "Solving a differential equation by rewriting it as g(y) dy = f(x) dx and integrating both sides.",
+  "latex": "\\frac{dy}{dx} = xy \\;\\Rightarrow\\; \\int \\frac{dy}{y} = \\int x\\,dx",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Get all the y's on one side with dy, and all the x's on the other with dx.",
+      "ja": "y を全部 dy の側に、x を全部 dx の側に集める。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use separation of variables to solve dy/dx = 2xy with y(0) = 3.",
+      "ja": "変数分離を用いて、y(0) = 3 のもとで dy/dx = 2xy を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "use separation of variables",
+      "ja": "変数分離を使う"
+    }
+  ],
+  "pitfalls": [
+    "この方法で解ける方程式は separable differential equation（変数分離形）。",
+    "両辺を y で割るときは、y = 0 が解から落ちていないか確かめる。"
+  ],
+  "related": [
+    "separable-differential-equation",
+    "differential-equation",
+    "particular-solution",
+    "initial-condition"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "変数分離",
+      "en": "Separation of variables"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 7.6・7.7（separation of variables）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "separation of variables": 18,
+      "use separation of variables": 1
+    },
+    "written": {
+      "separation of variables": 26,
+      "use separation of variables": 4
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

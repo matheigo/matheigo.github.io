@@ -1,0 +1,87 @@
+{
+  "id": "limit-comparison-test",
+  "ja": {
+    "term": "極限比較判定法",
+    "reading": "きょくげんひかくはんていほう",
+    "alt": []
+  },
+  "en": {
+    "term": "limit comparison test",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「極限比較判定法」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "正の項の級数で lim aₙ/bₙ が正の有限の値なら、Σaₙ と Σbₙ の収束・発散が一致するという判定法。",
+  "definition_en": "For series of positive terms, if lim aₙ/bₙ is a positive finite number, then Σaₙ and Σbₙ both converge or both diverge.",
+  "latex": "\\lim_{n\\to\\infty} \\frac{a_n}{b_n} = c > 0",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For the limit comparison test, divide the two terms and take the limit.",
+      "ja": "極限比較判定法では、2 つの項を割って極限をとる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the limit comparison test with Σ 1/n to determine whether Σ 1/(2n + 3) converges.",
+      "ja": "Σ 1/n との極限比較判定法を用いて、Σ 1/(2n + 3) が収束するかを調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "comparison-test",
+    "p-series",
+    "harmonic-series"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.6（limit comparison test）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "limit comparison test": 44
+    },
+    "written": {
+      "limit comparison test": 24
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

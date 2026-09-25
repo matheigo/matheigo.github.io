@@ -1,0 +1,82 @@
+{
+  "id": "transverse-axis",
+  "ja": {
+    "term": "主軸",
+    "reading": "しゅじく",
+    "alt": []
+  },
+  "en": {
+    "term": "transverse axis",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "双曲線の 2 つの焦点を通る軸。2 つの頂点を結ぶ線分の長さは 2a。",
+  "definition_en": "The axis of a hyperbola through its two foci; the segment joining the two vertices has length 2a.",
+  "latex": "\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For this hyperbola the transverse axis is horizontal, since x squared comes first.",
+      "ja": "この双曲線は x² が先に来るから、主軸は横向き。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the length of the transverse axis of the hyperbola 9x² − 4y² = 36.",
+      "ja": "双曲線 9x² − 4y² = 36 の主軸の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉では 7 件で、書き言葉（OpenStax Algebra and Trigonometry 49 件）の語。",
+    "主軸に垂直な軸は conjugate axis（共役軸）。"
+  ],
+  "related": [
+    "major-axis",
+    "focus",
+    "conic-section"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "transverse axis": 7
+    },
+    "written": {
+      "transverse axis": 52
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

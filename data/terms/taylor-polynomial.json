@@ -1,0 +1,88 @@
+{
+  "id": "taylor-polynomial",
+  "ja": {
+    "term": "テイラー多項式",
+    "reading": "ていらーたこうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "Taylor polynomial",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "関数 f を点 a のまわりで近似する n 次多項式。a での 0 階から n 階までの微分係数が f と一致する。",
+  "definition_en": "The degree-n polynomial that approximates f near a, matching f and its first n derivatives at a.",
+  "latex": "P_n(x) = \\sum_{k=0}^{n} \\frac{f^{(k)}(a)}{k!}(x-a)^k",
+  "spoken_en": "P sub n of x equals the sum from k equals zero to n of the kth derivative of f at a over k factorial times x minus a to the k",
+  "examples": [
+    {
+      "en": "The more terms you keep in the Taylor polynomial, the better the approximation near a.",
+      "ja": "テイラー多項式の項を増やすほど、a の近くの近似がよくなる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the third-degree Taylor polynomial for f(x) = ln x centered at x = 1.",
+      "ja": "f(x) = ln x の x = 1 を中心とする 3 次のテイラー多項式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "a = 0 のときは Maclaurin polynomial とも呼ぶ（話し言葉 16 件、書き言葉 42 件）。「〜を中心とする」は centered at x = a。"
+  ],
+  "related": [
+    "taylor-series",
+    "maclaurin-series",
+    "lagrange-error-bound",
+    "taylors-theorem",
+    "linear-approximation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.11（Taylor polynomial）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "Taylor polynomial": 23
+    },
+    "written": {
+      "Taylor polynomial": 46
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

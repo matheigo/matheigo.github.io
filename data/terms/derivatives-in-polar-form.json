@@ -1,0 +1,81 @@
+{
+  "id": "derivatives-in-polar-form",
+  "ja": {
+    "term": "極曲線の微分",
+    "reading": "きょくきょくせんのびぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "differentiating in polar form",
+    "alt": [
+      "derivatives in polar form"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「極曲線の微分」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "極方程式 r = f(θ) の曲線の接線の傾き dy/dx を、x = r cos θ、y = r sin θ を θ で微分して求めること。",
+  "definition_en": "Finding the slope dy/dx of a polar curve r = f(θ) by differentiating x = r cos θ and y = r sin θ with respect to θ.",
+  "latex": "\\frac{dy}{dx} = \\frac{dy/d\\theta}{dx/d\\theta} = \\frac{r'\\sin\\theta + r\\cos\\theta}{r'\\cos\\theta - r\\sin\\theta}",
+  "spoken_en": "d y d x equals d y d theta over d x d theta",
+  "examples": [
+    {
+      "en": "Treat θ like the parameter: dy/dx is dy/dθ over dx/dθ.",
+      "ja": "θ を媒介変数とみなせばいい。dy/dx は dy/dθ を dx/dθ で割ったもの。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the slope of the tangent line to r = 1 + cos θ at θ = π/2.",
+      "ja": "r = 1 + cos θ の θ = π/2 における接線の傾きを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスではどの言い方も 0 件。AP の CED の topic 9.7 の名前（differentiating in polar form）を見出しにした。"
+  ],
+  "related": [
+    "polar-coordinates",
+    "derivative-of-a-parametric-curve",
+    "polar-equation"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 9.7（differentiating in polar form）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CED の呼び方 differentiating in polar form（topic 9.7）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

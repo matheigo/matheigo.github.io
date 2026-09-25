@@ -1,0 +1,86 @@
+{
+  "id": "first-order-linear-differential-equation",
+  "ja": {
+    "term": "1 階線形微分方程式",
+    "reading": "いっかいせんけいびぶんほうていしき",
+    "alt": [
+      "線形一階微分方程式"
+    ]
+  },
+  "en": {
+    "term": "first-order linear differential equation",
+    "alt": [
+      "first-order linear equation"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "y′ + P(x)y = Q(x) の形の微分方程式。積分因子を掛けて解く。",
+  "definition_en": "A differential equation of the form y′ + P(x)y = Q(x), solved by multiplying by an integrating factor.",
+  "latex": "y' + P(x)\\,y = Q(x)",
+  "spoken_en": "y prime plus P of x times y equals Q of x",
+  "examples": [
+    {
+      "en": "First put it in standard form, with y′ by itself in front.",
+      "ja": "まず y′ の係数を 1 にした標準形に直そう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the first-order linear differential equation y′ + 2y = e^{−x}.",
+      "ja": "1 階線形微分方程式 y′ + 2y = e^{−x} を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉ではどの言い方も 10 件未満。first order（ハイフンなし）も同じ言い方として数えた。"
+  ],
+  "related": [
+    "integrating-factor",
+    "differential-equation",
+    "separable-differential-equation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "first-order linear equation": 6,
+      "first-order linear differential equation": 5
+    },
+    "written": {
+      "first-order linear differential equation": 22,
+      "first-order linear equation": 9
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

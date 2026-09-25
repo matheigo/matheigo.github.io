@@ -1,0 +1,95 @@
+{
+  "id": "comparison-test",
+  "ja": {
+    "term": "比較判定法",
+    "reading": "ひかくはんていほう",
+    "alt": []
+  },
+  "en": {
+    "term": "comparison test",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "0 ≤ aₙ ≤ bₙ のとき、Σbₙ が収束すれば Σaₙ も収束し、Σaₙ が発散すれば Σbₙ も発散するという判定法。",
+  "definition_en": "If 0 ≤ aₙ ≤ bₙ, then Σaₙ converges when Σbₙ does, and Σbₙ diverges when Σaₙ does.",
+  "latex": "0 \\le a_n \\le b_n",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Compare it to 1/n²: it's smaller, and 1/n² converges, so this converges too.",
+      "ja": "1/n² と比べよう。こちらのほうが小さく、1/n² は収束するから、これも収束する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the comparison test to show that Σ 1/(n² + 5) converges.",
+      "ja": "比較判定法を用いて Σ 1/(n² + 5) が収束することを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "極限比較判定法（limit comparison test）と区別して direct comparison test と言うこともある（話し言葉 2 件）。用例コーパスの comparison test の件数には limit comparison test の中の comparison test も含まれる（話し言葉 100 件中 44 件）。"
+  ],
+  "related": [
+    "limit-comparison-test",
+    "p-series",
+    "integral-test",
+    "comparison-test-for-integrals"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "比較判定法",
+      "en": "Direct comparison test"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.6（comparison tests）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "comparison test": 100
+    },
+    "written": {
+      "comparison test": 57
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

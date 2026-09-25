@@ -1,0 +1,109 @@
+{
+  "id": "exponential-model",
+  "ja": {
+    "term": "指数モデル",
+    "reading": "しすうもでる",
+    "alt": [
+      "指数増加・減衰のモデル"
+    ]
+  },
+  "en": {
+    "term": "exponential model",
+    "alt": [],
+    "variants": [
+      {
+        "term": "exponential model",
+        "register": "written",
+        "note": "OpenStax Algebra and Trigonometry の言い方（32 件中 31 件）。データに指数関数を当てはめる節の名前にもなっている。話し言葉で 5 件（すべて Khan Academy）、書き言葉で 32 件（OpenStax Algebra and Trigonometry 31・OpenStax Calculus 1）。"
+      },
+      {
+        "term": "exponential growth and decay",
+        "register": "written",
+        "note": "OpenStax Calculus の節の名前（Exponential Growth and Decay）で、AP の CED（topic 7.8）も使う。話し言葉では 0 件、書き言葉で 15 件（OpenStax Algebra and Trigonometry 9・OpenStax Calculus 6）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「指数モデル」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "calculus",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "変化率が量に比例する（dy/dt = ky）現象を、y = Ce^{kt} で表すモデル。k > 0 で増加、k < 0 で減衰。",
+  "definition_en": "A model in which the rate of change is proportional to the amount, dy/dt = ky, so that y = Ce^{kt}; it grows when k > 0 and decays when k < 0.",
+  "latex": "\\frac{dy}{dt} = ky \\;\\Rightarrow\\; y = Ce^{kt}",
+  "spoken_en": "d y d t equals k y, so y equals C e to the k t",
+  "examples": [
+    {
+      "en": "If the rate is proportional to the amount, you're looking at an exponential model.",
+      "ja": "変化率が量に比例するなら、それは指数モデル。",
+      "register": "spoken"
+    },
+    {
+      "en": "A culture grows according to an exponential model with k = 0.3 per hour. How long does it take to double?",
+      "ja": "ある培養は k = 0.3（1 時間あたり）の指数モデルに従って増える。2 倍になるまでの時間を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉では 5 件で、どの言い方も少ない。",
+    "半減期は half-life、2 倍になる時間は doubling time。"
+  ],
+  "related": [
+    "differential-equation",
+    "separable-differential-equation",
+    "logistic-differential-equation",
+    "initial-condition"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 7.8（exponential models ／ exponential growth and decay）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "exponential model": 5
+    },
+    "written": {
+      "exponential model": 32,
+      "exponential growth and decay": 15
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

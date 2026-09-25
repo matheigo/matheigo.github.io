@@ -1,0 +1,97 @@
+{
+  "id": "eccentricity",
+  "ja": {
+    "term": "離心率",
+    "reading": "りしんりつ",
+    "alt": []
+  },
+  "en": {
+    "term": "eccentricity",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "二次曲線上の点の、焦点までの距離と準線までの距離の比 e。楕円は 0 < e < 1、放物線は e = 1、双曲線は e > 1。",
+  "definition_en": "The ratio e of a conic's distance to the focus to its distance to the directrix: 0 < e < 1 for an ellipse, e = 1 for a parabola, e > 1 for a hyperbola.",
+  "latex": "e = \\frac{c}{a}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The closer the eccentricity is to zero, the rounder the ellipse.",
+      "ja": "離心率が 0 に近いほど、楕円は円に近い。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the eccentricity of the ellipse x²/25 + y²/16 = 1.",
+      "ja": "楕円 x²/25 + y²/16 = 1 の離心率を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "find the eccentricity",
+      "ja": "離心率を求める"
+    }
+  ],
+  "pitfalls": [
+    "話し言葉では 6 件で、書き言葉（OpenStax Calculus 47 件・Algebra and Trigonometry 33 件）の語。"
+  ],
+  "related": [
+    "conic-section",
+    "focus",
+    "directrix",
+    "ellipse",
+    "polar-equation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "離心率",
+      "en": "Eccentricity (mathematics)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "eccentricity": 6
+    },
+    "written": {
+      "eccentricity": 80
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

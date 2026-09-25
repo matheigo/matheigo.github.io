@@ -1,0 +1,80 @@
+{
+  "id": "taylors-theorem",
+  "ja": {
+    "term": "テイラーの定理",
+    "reading": "ていらーのていり",
+    "alt": []
+  },
+  "en": {
+    "term": "Taylor's theorem",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "関数を n 次テイラー多項式と剰余項 Rₙ(x) の和で表し、剰余項を (n + 1) 階導関数で表す定理。",
+  "definition_en": "The theorem that writes a function as its nth Taylor polynomial plus a remainder Rₙ(x), expressed with the (n + 1)st derivative.",
+  "latex": "f(x) = P_n(x) + R_n(x), \\quad R_n(x) = \\frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Taylor's theorem tells you exactly what the leftover piece looks like.",
+      "ja": "テイラーの定理は、残りの部分がどんな形かを正確に教えてくれる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use Taylor's theorem with remainder to estimate the error in approximating sin 0.2 by 0.2.",
+      "ja": "剰余項つきのテイラーの定理を用いて、sin 0.2 を 0.2 で近似したときの誤差を評価せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは話し言葉 0 件、書き言葉 14 件（すべて OpenStax Calculus）。AP では剰余の評価を Lagrange error bound と呼ぶ（lagrange-error-bound を参照）。"
+  ],
+  "related": [
+    "taylor-polynomial",
+    "lagrange-error-bound",
+    "taylor-series"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "テイラーの定理",
+      "en": "Taylor's theorem"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "Taylor's theorem": 14
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

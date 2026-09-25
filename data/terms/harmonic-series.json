@@ -1,0 +1,97 @@
+{
+  "id": "harmonic-series",
+  "ja": {
+    "term": "調和級数",
+    "reading": "ちょうわきゅうすう",
+    "alt": []
+  },
+  "en": {
+    "term": "harmonic series",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "級数 1 + 1/2 + 1/3 + ⋯ = Σ1/n。項は 0 に近づくが、和は発散する。",
+  "definition_en": "The series 1 + 1/2 + 1/3 + ⋯ = Σ1/n, which diverges even though its terms approach 0.",
+  "latex": "\\sum_{n=1}^{\\infty} \\frac{1}{n}",
+  "spoken_en": "the sum from n equals one to infinity of one over n",
+  "examples": [
+    {
+      "en": "The harmonic series is the classic example: terms go to zero, but it still diverges.",
+      "ja": "調和級数が典型例。項は 0 に近づくのに発散する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the harmonic series diverges by grouping its terms.",
+      "ja": "項をまとめることで、調和級数が発散することを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "符号を交互にした alternating harmonic series（交代調和級数）は収束する（条件収束）。"
+  ],
+  "related": [
+    "p-series",
+    "nth-term-test",
+    "alternating-series",
+    "conditional-convergence"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "調和級数",
+      "en": "Harmonic series (mathematics)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.5（harmonic series）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "harmonic series": 35
+    },
+    "written": {
+      "harmonic series": 69
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

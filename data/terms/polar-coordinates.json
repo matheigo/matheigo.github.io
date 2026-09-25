@@ -1,0 +1,114 @@
+{
+  "id": "polar-coordinates",
+  "ja": {
+    "term": "極座標",
+    "reading": "きょくざひょう",
+    "alt": []
+  },
+  "en": {
+    "term": "polar coordinates",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "極からの距離 r と、始線から測った角 θ の組 (r, θ) で平面上の点を表す座標。",
+  "definition_en": "Coordinates (r, θ) that locate a point by its distance r from the pole and its angle θ from the polar axis.",
+  "latex": "x = r\\cos\\theta, \\quad y = r\\sin\\theta",
+  "spoken_en": "x equals r cosine theta, y equals r sine theta",
+  "examples": [
+    {
+      "en": "In polar coordinates, a circle centered at the origin is just r equals a constant.",
+      "ja": "極座標では、原点中心の円は r = 定数 になるだけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Convert the point (−1, √3) to polar coordinates.",
+      "ja": "点 (−1, √3) を極座標で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "write … in polar coordinates",
+      "ja": "極座標で表す"
+    }
+  ],
+  "pitfalls": [
+    "始線は polar axis（話し言葉 69 件のうち 69 件が Professor Leonard）。",
+    "同じ点に (r, θ) の表し方が何通りもある（θ に 2π を足しても同じ点）。"
+  ],
+  "related": [
+    "pole",
+    "polar-equation",
+    "rectangular-coordinates",
+    "polar-angle",
+    "area-in-polar-coordinates"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "極座標系",
+      "en": "Polar coordinate system"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 9.7–9.9（polar coordinates）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "polar coordinates": 127
+    },
+    "written": {
+      "polar coordinates": 223
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "term-by-term-differentiation",
+  "ja": {
+    "term": "級数の項別微分",
+    "reading": "きゅうすうのこうべつびぶん",
+    "alt": [
+      "項別微分"
+    ]
+  },
+  "en": {
+    "term": "term-by-term differentiation",
+    "alt": [
+      "differentiate term-by-term"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "べき級数の各項を微分して、もとの関数の導関数のべき級数を得ること。収束半径は変わらない。",
+  "definition_en": "Differentiating a power series one term at a time to get a power series for the derivative; the radius of convergence stays the same.",
+  "latex": "\\frac{d}{dx}\\sum c_n x^n = \\sum n c_n x^{n-1}",
+  "spoken_en": "d d x of the sum of c sub n x to the n equals the sum of n c sub n x to the n minus one",
+  "examples": [
+    {
+      "en": "Differentiate the geometric series term by term and you get the series for 1/(1 − x)².",
+      "ja": "等比級数を項別微分すると、1/(1 − x)² の級数が得られる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use term-by-term differentiation to find a power series for 1/(1 + x)².",
+      "ja": "項別微分を用いて 1/(1 + x)² のべき級数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスではどの言い方も 10 件未満。AP の CED の呼び方（topic 10.13・10.15）を見出しにした。",
+    "項別積分は term-by-term integration。"
+  ],
+  "related": [
+    "power-series",
+    "radius-of-convergence",
+    "taylor-series"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.13・10.15（term-by-term differentiation）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "differentiate term-by-term": 2
+    },
+    "written": {
+      "term-by-term differentiation": 7,
+      "differentiate term-by-term": 5
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.03",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満）。見出しは CED の呼び方 term-by-term differentiation（topic 10.13・topic 10.15）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "monotone-convergence-theorem",
+  "ja": {
+    "term": "単調収束定理",
+    "reading": "たんちょうしゅうそくていり",
+    "alt": [
+      "単調数列定理"
+    ]
+  },
+  "en": {
+    "term": "monotone convergence theorem",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III",
+      "大学"
+    ],
+    "us": [
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "有界な単調数列は収束するという定理。",
+  "definition_en": "The theorem that every bounded monotone sequence converges.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "It's increasing and bounded above, so by the monotone convergence theorem it has a limit.",
+      "ja": "増加して上に有界だから、単調収束定理より極限をもつ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the monotone convergence theorem to show that the sequence a₁ = 1, aₙ₊₁ = √(2 + aₙ) converges.",
+      "ja": "単調収束定理を用いて、a₁ = 1、aₙ₊₁ = √(2 + aₙ) で定まる数列が収束することを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは話し言葉 0 件、書き言葉 17 件（すべて OpenStax Calculus）。",
+    "数III の教科書では「有界な単調数列は収束する」を定理の名前なしで扱うことがある。"
+  ],
+  "related": [
+    "monotonic",
+    "bounded",
+    "limit-of-a-sequence",
+    "converge"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "monotone convergence theorem": 17
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

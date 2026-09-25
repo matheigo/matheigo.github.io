@@ -1,0 +1,83 @@
+{
+  "id": "de-moivres-theorem",
+  "ja": {
+    "term": "ド・モアブルの定理",
+    "reading": "ど・もあぶるのていり",
+    "alt": []
+  },
+  "en": {
+    "term": "De Moivre's theorem",
+    "alt": [
+      "De Moivre's formula"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "complex-numbers"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "整数 n について (cos θ + i sin θ)ⁿ = cos nθ + i sin nθ が成り立つという定理。",
+  "definition_en": "The theorem that (cos θ + i sin θ)ⁿ = cos nθ + i sin nθ for every integer n.",
+  "latex": "(\\cos\\theta + i\\sin\\theta)^n = \\cos n\\theta + i\\sin n\\theta",
+  "spoken_en": "cosine theta plus i sine theta, to the n, equals cosine n theta plus i sine n theta",
+  "examples": [
+    {
+      "en": "By De Moivre's theorem, raising to the fifth power just multiplies the angle by five.",
+      "ja": "ド・モアブルの定理より、5 乗すると角が 5 倍になるだけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use De Moivre's theorem to compute (1 + i)⁸.",
+      "ja": "ド・モアブルの定理を用いて (1 + i)⁸ を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは話し言葉 0 件、書き言葉 11 件（すべて OpenStax Algebra and Trigonometry）。Wikipedia の記事名は De Moivre's formula。"
+  ],
+  "related": [
+    "polar-form",
+    "nth-roots-of-unity",
+    "nth-root",
+    "eulers-formula"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ド・モアブルの定理",
+      "en": "De Moivre's formula"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "De Moivre's theorem": 11
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  }
+}

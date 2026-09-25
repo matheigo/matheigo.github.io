@@ -1,0 +1,89 @@
+{
+  "id": "pole",
+  "ja": {
+    "term": "極",
+    "reading": "きょく",
+    "alt": []
+  },
+  "en": {
+    "term": "pole",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "極座標の基準となる点。直交座標の原点にあたる。",
+  "definition_en": "The reference point of a polar coordinate system, playing the role of the origin.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "r is just the distance from the pole to the point.",
+      "ja": "r は極から点までの距離にすぎない。",
+      "register": "spoken"
+    },
+    {
+      "en": "The point with r = 0 is the pole, whatever the value of θ.",
+      "ja": "r = 0 の点は、θ の値によらず極である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "pole は複素関数の極（MIT 18.03 の pole diagram など）や「棒」の意味でも使う語なので、用例コーパスでは the pole の形で数えた。この形でも 18.03 の極が話し言葉で 15 件混ざる。",
+    "始線（極から出る半直線）は polar axis。"
+  ],
+  "related": [
+    "polar-coordinates",
+    "polar-angle",
+    "polar-equation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "the pole": 46
+    },
+    "written": {
+      "the pole": 101
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

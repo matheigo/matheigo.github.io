@@ -1,0 +1,99 @@
+{
+  "id": "raise-to-the-nth-power",
+  "ja": {
+    "term": "n 乗する",
+    "reading": "えぬじょうする",
+    "alt": []
+  },
+  "en": {
+    "term": "raise … to the power",
+    "alt": [
+      "raise … to the nth power"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "complex-numbers"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Algebra 1",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "ある数や式を n 回掛け合わせる。",
+  "definition_en": "To multiply a number or expression by itself n times.",
+  "latex": "z^n",
+  "spoken_en": "z to the n",
+  "examples": [
+    {
+      "en": "If you raise e to the power ln 3, you just get 3.",
+      "ja": "e を ln 3 乗すれば、ちょうど 3 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Raise z = 2(cos 20° + i sin 20°) to the sixth power.",
+      "ja": "z = 2(cos 20° + i sin 20°) を 6 乗せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "raise … to the nth power",
+      "ja": "n 乗する"
+    }
+  ],
+  "pitfalls": [
+    "話し言葉の 17 件のうち 9 件が 3Blue1Brown。書き言葉では 9 件で、どの言い方も少ない。",
+    "「z の n 乗」は式の読みでは z to the n（z to the nth power）。"
+  ],
+  "related": [
+    "de-moivres-theorem",
+    "nth",
+    "nth-root"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "raise … to the power": 17,
+      "raise … to the nth power": 1
+    },
+    "written": {
+      "raise … to the power": 5,
+      "raise … to the nth power": 4
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "yt:3blue1brown",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-24"
+  }
+}

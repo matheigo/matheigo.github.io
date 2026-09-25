@@ -297,3 +297,8 @@
 - 2026-09-24 | 2 | 漸化式を立てる（set-up-a-recurrence）の en.term は書き言葉 ① の write a recursive formula（OpenStax Algebra and Trigonometry 15 件）にし、mapping near で set up a recurrence（MIT 6.042）との違いを mapping_note に書いた | 書き言葉の首位。与えられた項から書く問いと、文章題から立てる問いの違いを隠さない
 - 2026-09-24 | 2 | フィボナッチ数列の en.term は複数形の Fibonacci numbers にした（話・書とも ①、書き言葉 25 対 8） | コーパスの首位。数列全体を複数形で呼ぶことを pitfalls に書いた
 - 2026-09-24 | 2 | 汎用語の形を決めるときと主張を確かめるときに、コーパスの文脈（前後 7 語）を手元で表示して読んだ。表示は端末だけで、ファイルには残していない | 件数だけでは別の意味が混ざっているかが分からない（first term が式の最初の項にも使われる、など）。本文は写さない（STYLE 原則 5）
+- 2026-09-24 | 2 | バッチ 2 の見出し: 方向場は CED の slope field（話し言葉 ② slope field ／ direction field、書き言葉 ① direction field）、n 項判定法はコーパス ① の divergence test（CED の nth term test for divergence は pitfalls）、ベクトル値関数は vector-valued function（話し言葉は ① vector function が Professor Leonard を抜くと入れ替わるので ②）、指数モデルは書き言葉 ② exponential model ／ exponential growth and decay | コーパスの判定どおり。CED の呼び方は ③ のときだけ見出しにする（規則 2）
+- 2026-09-24 | 2 | 1 の n 乗根（nth-roots-of-unity）は draft（Wikipedia・OpenStax で確かめられない）で、コーパスでも ③（書き言葉 2 件）。CED・OpenStax にも無いので corpus-undecided（人間レビュー） | 規則どおり。OpenStax Algebra and Trigonometry は一般の複素数の n 乗根として扱う
+- 2026-09-24 | 2 | standard-form-of-a-conic のコロケーション in standard form を外した | 汎用の in standard form（直線・2 次関数も含む）が見出しの形 standard form of the equation of を上回り、register 不一致を作った（コロケーションは見出し語を含むか件数の小さいものにする、の決定どおり）
+- 2026-09-24 | 2 | 日本の教科書に無い日本語見出しに「本プロジェクトの訳語」と書いた: 指数モデル・極座標での面積・極曲線の微分・n 項判定法・極限比較判定法・交代級数判定法・交代級数の誤差限界・ラグランジュの誤差限界・望遠鏡級数。交代級数判定法の ja.alt にライプニッツの判定法、比判定法の ja.alt にダランベールの判定法を入れた | 日本の大学の教科書で使う名前を別名に残す
+- 2026-09-24 | 2 | telescoping-series の level.jp は台帳どおり数B | 数B の Σ1/(k(k + 1)) を差に分けて和を求める方法がこれに当たる。名前をつけないことを mapping near と mapping_note に書いた

@@ -1,0 +1,83 @@
+{
+  "id": "telescoping-series",
+  "ja": {
+    "term": "望遠鏡級数",
+    "reading": "ぼうえんきょうきゅうすう",
+    "alt": []
+  },
+  "en": {
+    "term": "telescoping series",
+    "alt": [
+      "telescoping sum"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「望遠鏡級数」は日本の教科書に無い、本プロジェクトの訳語。日本の数B では Σ1/(k(k + 1)) を 1/k − 1/(k + 1) に分けて途中を消す方法として扱い、級数に名前をつけない。英語では消えていく様子を望遠鏡の筒にたとえて telescoping と呼ぶ。",
+  "domains": [
+    "sequences",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "項を差の形に分けると、隣り合う項が打ち消し合って最初と最後の部分だけが残る級数。",
+  "definition_en": "A series whose terms, written as differences, cancel in pairs so that only the first and last pieces of each partial sum remain.",
+  "latex": "\\sum_{k=1}^{n} \\left(\\frac{1}{k} - \\frac{1}{k+1}\\right) = 1 - \\frac{1}{n+1}",
+  "spoken_en": "the sum from k equals one to n of one over k minus one over k plus one equals one minus one over n plus one",
+  "examples": [
+    {
+      "en": "Split it with partial fractions and watch the middle terms cancel — it telescopes.",
+      "ja": "部分分数に分けると、途中の項が消えていく。望遠鏡のように縮む。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that Σ 1/(n(n + 1)) is a telescoping series and find its sum.",
+      "ja": "Σ 1/(n(n + 1)) が望遠鏡級数であることを示し、その和を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "動詞 telescope（途中が消える）も使う。"
+  ],
+  "related": [
+    "partial-sum",
+    "partial-fraction-decomposition",
+    "sum-of-the-series"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "telescoping series": 1
+    },
+    "written": {
+      "telescoping series": 15,
+      "telescoping sum": 3
+    },
+    "sources": [
+      "openstax-calculus",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-24"
+  }
+}

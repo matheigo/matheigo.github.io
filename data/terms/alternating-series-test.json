@@ -1,0 +1,90 @@
+{
+  "id": "alternating-series-test",
+  "ja": {
+    "term": "交代級数判定法",
+    "reading": "こうたいきゅうすうはんていほう",
+    "alt": [
+      "ライプニッツの判定法"
+    ]
+  },
+  "en": {
+    "term": "alternating series test",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「交代級数判定法」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "bₙ > 0 が減少して 0 に収束すれば、交代級数 Σ(−1)ⁿbₙ は収束するという判定法。",
+  "definition_en": "If bₙ > 0 decreases to 0, then the alternating series Σ(−1)ⁿbₙ converges.",
+  "latex": "b_{n+1} \\le b_n, \\quad \\lim_{n\\to\\infty} b_n = 0",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Check two things for the alternating series test: decreasing, and the limit is zero.",
+      "ja": "交代級数判定法では 2 つ確かめる。減少していることと、極限が 0 であること。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the alternating series test to show that Σ (−1)ⁿ⁺¹/n converges.",
+      "ja": "交代級数判定法を用いて Σ (−1)ⁿ⁺¹/n が収束することを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "この判定法で分かるのは収束することだけで、絶対収束か条件収束かは別に調べる。"
+  ],
+  "related": [
+    "alternating-series",
+    "alternating-series-error-bound",
+    "absolute-convergence",
+    "conditional-convergence"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.7（alternating series test）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "alternating series test": 25
+    },
+    "written": {
+      "alternating series test": 28
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-24"
+  }
+}

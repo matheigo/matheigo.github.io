@@ -1,0 +1,101 @@
+{
+  "id": "area-in-polar-coordinates",
+  "ja": {
+    "term": "極座標での面積",
+    "reading": "きょくざひょうでのめんせき",
+    "alt": [
+      "極座標の面積"
+    ]
+  },
+  "en": {
+    "term": "area of a polar region",
+    "alt": [
+      "area in polar coordinates",
+      "area of a region bounded by a polar curve"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「極座標での面積」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "極方程式 r = f(θ) で表された曲線と 2 本の半直線で囲まれた部分の面積。½∫r² dθ で求める。",
+  "definition_en": "The area of a region bounded by a polar curve r = f(θ) and two rays, found as ½∫r² dθ.",
+  "latex": "A = \\frac{1}{2}\\int_{\\alpha}^{\\beta} r^2\\,d\\theta",
+  "spoken_en": "A equals one half the integral from alpha to beta of r squared d theta",
+  "examples": [
+    {
+      "en": "For area in polar, think thin pie slices, not rectangles.",
+      "ja": "極座標の面積は、長方形ではなく細い扇形で考える。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the area of the region enclosed by one petal of r = sin 2θ.",
+      "ja": "r = sin 2θ の花びら 1 枚で囲まれた部分の面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスではどの言い方も 10 件未満。AP の CED の呼び方（topic 9.8 area of a polar region）を見出しにした。",
+    "2 曲線の間の面積は ½∫(r₁² − r₂²) dθ（CED topic 9.9）。"
+  ],
+  "related": [
+    "polar-coordinates",
+    "polar-equation",
+    "area-between-two-curves"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 9.8・9.9（area of a polar region）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "area in polar coordinates": 3
+    },
+    "written": {
+      "area of a polar region": 1,
+      "area of a region bounded by a polar curve": 3,
+      "area in polar coordinates": 4
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは CED の呼び方 area of a polar region（topic 9.8）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

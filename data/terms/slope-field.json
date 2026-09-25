@@ -1,0 +1,106 @@
+{
+  "id": "slope-field",
+  "ja": {
+    "term": "方向場",
+    "reading": "ほうこうば",
+    "alt": [
+      "傾きの場"
+    ]
+  },
+  "en": {
+    "term": "slope field",
+    "alt": [],
+    "variants": [
+      {
+        "term": "slope field",
+        "register": "spoken",
+        "note": "AP（Khan Academy）の言い方で、AP の CED もこの語を使う（topic 7.3）。話し言葉の 73 件のうち 49 件が Khan Academy。話し言葉で 73 件（Khan Academy 49・MIT OCW 19・Professor Leonard 5）、書き言葉で 10 件（OpenStax Calculus 6・MIT の講義ノート 4）。"
+      },
+      {
+        "term": "direction field",
+        "register": "both",
+        "note": "大学（MIT OCW・OpenStax Calculus）の言い方。書き言葉ではこちらが多い。話し言葉で 45 件（すべて MIT OCW）、書き言葉で 70 件（OpenStax Calculus 49・MIT の講義ノート 21）。"
+      }
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "微分方程式 dy/dx = f(x, y) の傾きを、平面上の各点に短い線分で描いた図。",
+  "definition_en": "A picture of dy/dx = f(x, y) made by drawing a short segment with the given slope at many points of the plane.",
+  "latex": "\\frac{dy}{dx} = x - y",
+  "spoken_en": "d y d x equals x minus y",
+  "examples": [
+    {
+      "en": "Just follow the little segments in the slope field, starting from the initial point.",
+      "ja": "初期値の点から、方向場の小さな線分に沿ってたどればいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Sketch the slope field for dy/dx = x + y at the nine points with x, y ∈ {−1, 0, 1}.",
+      "ja": "x, y ∈ {−1, 0, 1} の 9 点で、dy/dx = x + y の方向場をかけ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校では扱わない。"
+  ],
+  "related": [
+    "differential-equation",
+    "initial-condition",
+    "particular-solution",
+    "eulers-method"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 7.3（slope fields）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "direction field": 45,
+      "slope field": 73
+    },
+    "written": {
+      "slope field": 10,
+      "direction field": 70
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

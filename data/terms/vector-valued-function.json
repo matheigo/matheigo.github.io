@@ -1,0 +1,109 @@
+{
+  "id": "vector-valued-function",
+  "ja": {
+    "term": "ベクトル値関数",
+    "reading": "べくとるちかんすう",
+    "alt": [
+      "ベクトル値函数"
+    ]
+  },
+  "en": {
+    "term": "vector-valued function",
+    "alt": [],
+    "variants": [
+      {
+        "term": "vector-valued function",
+        "register": "both",
+        "note": "教科書（OpenStax Calculus Volume 3）と AP の CED の言い方。話し言葉で 22 件（すべて Khan Academy）、書き言葉で 190 件（OpenStax Calculus 187・MIT の講義ノート 3）。"
+      },
+      {
+        "term": "vector function",
+        "register": "spoken",
+        "note": "Professor Leonard の言い方（話し言葉 75 件中 74 件）。話し言葉で 75 件（Professor Leonard 74・patrickJMT 1）、書き言葉で 12 件（OpenStax Calculus 11・MIT の講義ノート 1）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "実数 t に対してベクトル r(t) を対応させる関数。成分ごとの関数で表される。",
+  "definition_en": "A function that assigns a vector r(t) to each real number t, given by one function per component.",
+  "latex": "\\mathbf{r}(t) = \\langle \\cos t, \\sin t, t \\rangle",
+  "spoken_en": "r of t equals the vector cosine t, sine t, t",
+  "examples": [
+    {
+      "en": "A vector-valued function is really just parametric equations bundled into one vector.",
+      "ja": "ベクトル値関数は、媒介変数表示を 1 つのベクトルにまとめたもの。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the domain of the vector-valued function r(t) = ⟨√t, 1/(t − 2), ln t⟩.",
+      "ja": "ベクトル値関数 r(t) = ⟨√t, 1/(t − 2), ln t⟩ の定義域を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "字幕では vector valued とハイフンなしで書くことが多いが、同じ言い方として数えた。"
+  ],
+  "related": [
+    "parametric-equations"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ベクトル値函数",
+      "en": "Vector-valued function"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 9.4–9.6（vector-valued functions）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "vector-valued function": 22,
+      "vector function": 75
+    },
+    "written": {
+      "vector-valued function": 190,
+      "vector function": 12
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "lagrange-error-bound",
+  "ja": {
+    "term": "ラグランジュの誤差限界",
+    "reading": "らぐらんじゅのごさげんかい",
+    "alt": []
+  },
+  "en": {
+    "term": "Lagrange error bound",
+    "alt": [
+      "Lagrange remainder"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「ラグランジュの誤差限界」は日本の教科書に無い、本プロジェクトの訳語。日本の大学の教科書はテイラーの定理の剰余項（ラグランジュの剰余項）として扱い、その上からの評価に名前をつけない。AP の CED は評価そのものを Lagrange error bound と呼ぶ（topic 10.12）。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "n 次テイラー多項式で近似したときの誤差が、M|x − a|ⁿ⁺¹/(n + 1)! 以下になるという評価。M は (n + 1) 階導関数の絶対値の上限。",
+  "definition_en": "The bound M|x − a|ⁿ⁺¹/(n + 1)! on the error of the nth Taylor polynomial, where M bounds the absolute value of the (n + 1)st derivative.",
+  "latex": "|R_n(x)| \\le \\frac{M}{(n+1)!}|x-a|^{n+1}",
+  "spoken_en": "the absolute value of R sub n of x is at most M over n plus one factorial times the absolute value of x minus a to the n plus one",
+  "examples": [
+    {
+      "en": "For the Lagrange error bound, you need a bound on the next derivative.",
+      "ja": "ラグランジュの誤差限界には、次の階数の導関数の上限が要る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the Lagrange error bound to show that P₄(0.1) approximates e^{0.1} with error less than 10⁻⁶.",
+      "ja": "ラグランジュの誤差限界を用いて、P₄(0.1) が e^{0.1} を誤差 10⁻⁶ 未満で近似することを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは 2 件（Khan Academy）だけ。AP の CED の呼び方を見出しにした。"
+  ],
+  "related": [
+    "taylor-polynomial",
+    "taylors-theorem",
+    "alternating-series-error-bound"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.12（Lagrange error bound）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "Lagrange error bound": 2
+    },
+    "sources": [
+      "khan-ap-calc"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CED の呼び方 Lagrange error bound（topic 10.12・topic 10.15）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

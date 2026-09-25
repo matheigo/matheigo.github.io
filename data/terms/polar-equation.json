@@ -1,0 +1,99 @@
+{
+  "id": "polar-equation",
+  "ja": {
+    "term": "極方程式",
+    "reading": "きょくほうていしき",
+    "alt": []
+  },
+  "en": {
+    "term": "polar equation",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "曲線を r と θ の関係 r = f(θ) などで表した方程式。",
+  "definition_en": "An equation of a curve written as a relation between r and θ, such as r = f(θ).",
+  "latex": "r = \\frac{ed}{1 + e\\cos\\theta}",
+  "spoken_en": "r equals e d over one plus e cosine theta",
+  "examples": [
+    {
+      "en": "A polar equation like r = 2 sin θ is actually a circle.",
+      "ja": "r = 2 sin θ のような極方程式は、実は円。",
+      "register": "spoken"
+    },
+    {
+      "en": "Identify the conic with polar equation r = 4/(1 − cos θ).",
+      "ja": "極方程式 r = 4/(1 − cos θ) で表される二次曲線を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "二次曲線は、焦点を極とした極方程式 r = ed/(1 ± e cos θ) で一まとめに書ける（離心率 e）。"
+  ],
+  "related": [
+    "polar-coordinates",
+    "conic-section",
+    "eccentricity",
+    "rectangular-coordinates"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 9.7（polar equation）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "polar equation": 45
+    },
+    "written": {
+      "polar equation": 123
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "integral-test",
+  "ja": {
+    "term": "積分判定法",
+    "reading": "せきぶんはんていほう",
+    "alt": []
+  },
+  "en": {
+    "term": "integral test",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "正で減少する関数 f について、級数 Σf(n) と広義積分 ∫₁^∞ f(x) dx の収束・発散が一致するという判定法。",
+  "definition_en": "For a positive decreasing f, the series Σf(n) and the improper integral ∫₁^∞ f(x) dx either both converge or both diverge.",
+  "latex": "\\sum_{n=1}^{\\infty} f(n) \\text{ and } \\int_1^{\\infty} f(x)\\,dx",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The integral test only works if the function is positive and decreasing.",
+      "ja": "積分判定法が使えるのは、関数が正で減少するときだけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the integral test to determine whether Σ 1/(n ln n) converges.",
+      "ja": "積分判定法を用いて Σ 1/(n ln n) が収束するかを調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "収束しても、級数の和と積分の値は一致しない。"
+  ],
+  "related": [
+    "p-series",
+    "improper-integral",
+    "comparison-test",
+    "nth-term-test"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "積分判定法",
+      "en": "Integral test for convergence"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.4（integral test）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "integral test": 49
+    },
+    "written": {
+      "integral test": 23
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

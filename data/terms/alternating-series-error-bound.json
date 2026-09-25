@@ -1,0 +1,87 @@
+{
+  "id": "alternating-series-error-bound",
+  "ja": {
+    "term": "交代級数の誤差限界",
+    "reading": "こうたいきゅうすうのごさげんかい",
+    "alt": []
+  },
+  "en": {
+    "term": "alternating series error bound",
+    "alt": [
+      "alternating series remainder"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「交代級数の誤差限界」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "交代級数判定法の条件を満たす級数では、第 n 部分和で和を近似したときの誤差が、次の項の絶対値 bₙ₊₁ 以下になるという評価。",
+  "definition_en": "For a series that meets the alternating series test, the error in using the nth partial sum is at most the absolute value of the next term, bₙ₊₁.",
+  "latex": "|S - S_n| \\le b_{n+1}",
+  "spoken_en": "the absolute value of S minus S sub n is at most b sub n plus one",
+  "examples": [
+    {
+      "en": "The error is less than the first term you left out.",
+      "ja": "誤差は、切り捨てた最初の項より小さい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the alternating series error bound to find how many terms are needed to approximate Σ (−1)ⁿ/n³ to within 0.001.",
+      "ja": "交代級数の誤差限界を用いて、Σ (−1)ⁿ/n³ を誤差 0.001 以内で近似するのに必要な項数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスではどの言い方も 10 件未満。AP の CED の呼び方（topic 10.10）を見出しにした。"
+  ],
+  "related": [
+    "alternating-series-test",
+    "alternating-series",
+    "partial-sum",
+    "lagrange-error-bound"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.10（alternating series error bound）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "alternating series remainder": 1
+    },
+    "sources": [
+      "khan-ap-calc"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CED の呼び方 alternating series error bound（topic 10.10・topic 10.12）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

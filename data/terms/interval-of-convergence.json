@@ -1,0 +1,86 @@
+{
+  "id": "interval-of-convergence",
+  "ja": {
+    "term": "収束区間",
+    "reading": "しゅうそくくかん",
+    "alt": []
+  },
+  "en": {
+    "term": "interval of convergence",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "べき級数が収束する x の値の範囲。収束半径から出して、両端は別に調べる。",
+  "definition_en": "The set of x for which a power series converges; it comes from the radius of convergence, with the endpoints checked separately.",
+  "latex": "(a - R,\\, a + R]",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Don't forget to test the endpoints — that's where the interval of convergence gets tricky.",
+      "ja": "端点を調べるのを忘れずに。収束区間はそこが難しい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the interval of convergence of Σ (x − 3)ⁿ/n.",
+      "ja": "Σ (x − 3)ⁿ/n の収束区間を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉の 37 件はすべて Khan Academy。"
+  ],
+  "related": [
+    "radius-of-convergence",
+    "power-series",
+    "ratio-test"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.13・10.15（interval of convergence）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "interval of convergence": 37
+    },
+    "written": {
+      "interval of convergence": 60
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

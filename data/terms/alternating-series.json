@@ -1,0 +1,97 @@
+{
+  "id": "alternating-series",
+  "ja": {
+    "term": "交代級数",
+    "reading": "こうたいきゅうすう",
+    "alt": [
+      "交項級数"
+    ]
+  },
+  "en": {
+    "term": "alternating series",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "項の符号が交互に変わる級数。",
+  "definition_en": "A series whose terms alternate in sign.",
+  "latex": "\\sum_{n=1}^{\\infty} (-1)^{n+1} b_n \\quad (b_n > 0)",
+  "spoken_en": "the sum of negative one to the n plus one times b sub n",
+  "examples": [
+    {
+      "en": "The (−1)ⁿ out front is what makes it an alternating series.",
+      "ja": "前にある (−1)ⁿ で交代級数になっている。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the alternating series Σ (−1)ⁿ/√n converges.",
+      "ja": "交代級数 Σ (−1)ⁿ/√n が収束するかを調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの件数には alternating series test（交代級数判定法）の中の alternating series も含まれる。"
+  ],
+  "related": [
+    "alternating-series-test",
+    "alternating-series-error-bound",
+    "conditional-convergence",
+    "harmonic-series"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "交項級数",
+      "en": "Alternating series"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.7（alternating series）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "alternating series": 37
+    },
+    "written": {
+      "alternating series": 69
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-24"
+  }
+}

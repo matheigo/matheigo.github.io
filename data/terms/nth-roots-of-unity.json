@@ -1,0 +1,85 @@
+{
+  "id": "nth-roots-of-unity",
+  "ja": {
+    "term": "1 の n 乗根",
+    "reading": "いちのえぬじょうこん",
+    "alt": []
+  },
+  "en": {
+    "term": "nth roots of unity",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "complex-numbers"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "zⁿ = 1 を満たす n 個の複素数。複素数平面では単位円に内接する正 n 角形の頂点になる。",
+  "definition_en": "The n complex numbers z with zⁿ = 1; in the complex plane they are the vertices of a regular n-gon inscribed in the unit circle.",
+  "latex": "z_k = \\cos\\frac{2k\\pi}{n} + i\\sin\\frac{2k\\pi}{n} \\quad (k = 0, 1, \\ldots, n-1)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The cube roots of unity are evenly spaced around the unit circle.",
+      "ja": "1 の 3 乗根は単位円上に等間隔に並ぶ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find all the sixth roots of unity and plot them in the complex plane.",
+      "ja": "1 の 6 乗根をすべて求め、複素数平面上に図示せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは nth roots of unity は書き言葉 2 件（MIT の講義ノート）だけ。OpenStax Algebra and Trigonometry は一般の複素数の n 乗根（nth roots of a complex number）として扱う。"
+  ],
+  "related": [
+    "nth-root",
+    "de-moivres-theorem",
+    "complex-plane"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語は固有の用語（nth roots of unity）だが、OpenStax（6 冊）にも台帳の Wikipedia にもなく、用例コーパスでは MIT の講義ノートに 2 件だけ。",
+      "raised": "2026-09-24"
+    },
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ],
+  "evidence": {
+    "written": {
+      "nth roots of unity": 2
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": "rectangular-coordinates",
+  "ja": {
+    "term": "直交座標",
+    "reading": "ちょっこうざひょう",
+    "alt": []
+  },
+  "en": {
+    "term": "rectangular coordinates",
+    "alt": [
+      "Cartesian coordinates"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus BC",
+      "Calculus II",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "互いに直交する座標軸を使って、点を (x, y) や (x, y, z) で表す座標。極座標と区別するときの呼び方。",
+  "definition_en": "Coordinates (x, y) or (x, y, z) measured along perpendicular axes; the name used to contrast them with polar coordinates.",
+  "latex": "(r, \\theta) \\mapsto (r\\cos\\theta, r\\sin\\theta)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's convert back to rectangular coordinates to see what curve this is.",
+      "ja": "直交座標に戻して、どんな曲線か見てみよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Convert the polar equation r = 4 cos θ to rectangular coordinates.",
+      "ja": "極方程式 r = 4 cos θ を直交座標の方程式に直せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "convert to rectangular coordinates",
+      "ja": "直交座標に直す"
+    }
+  ],
+  "pitfalls": [
+    "Cartesian coordinates とも言うが少ない（話し言葉 8 件、書き言葉 39 件。rectangular coordinates は 48 件・177 件）。"
+  ],
+  "related": [
+    "polar-coordinates",
+    "polar-equation",
+    "coordinates-in-space"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 9 の概要、Topic 9.8（rectangular coordinates）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "rectangular coordinates": 48,
+      "Cartesian coordinates": 8
+    },
+    "written": {
+      "rectangular coordinates": 177,
+      "Cartesian coordinates": 39,
+      "convert to rectangular coordinates": 1
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

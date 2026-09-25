@@ -428,6 +428,8 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   },
   // Generated with these forms from the start (Phase 2 数列・級数の単元)
   focus: { focus: "focus of the" }, // not "let's focus on"
+  pole: { pole: "the pole" }, // not a pole of a function's pole diagram, or a flagpole
+  "standard-form-of-a-conic": { "standard form": "standard form of the equation of" }, // not Ax + By = C
 };
 
 /** The wording a candidate is counted and recorded as. */

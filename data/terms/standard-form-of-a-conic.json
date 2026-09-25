@@ -1,0 +1,82 @@
+{
+  "id": "standard-form-of-a-conic",
+  "ja": {
+    "term": "二次曲線の標準形",
+    "reading": "にじきょくせんのひょうじゅんけい",
+    "alt": []
+  },
+  "en": {
+    "term": "standard form",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "中心や頂点を原点（平行移動したものは (h, k)）に置いたときの、二次曲線の方程式の形。",
+  "definition_en": "The form of a conic's equation with its center or vertex at the origin, or at (h, k) after a shift.",
+  "latex": "\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1",
+  "spoken_en": "x minus h squared over a squared plus y minus k squared over b squared equals one",
+  "examples": [
+    {
+      "en": "Complete the square in x and in y to get it into standard form.",
+      "ja": "x と y それぞれで平方完成して、標準形に直そう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the equation x² + 4y² − 6x + 8y = 3 in standard form and identify the conic.",
+      "ja": "方程式 x² + 4y² − 6x + 8y = 3 を標準形に直し、どの二次曲線か答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "standard form は直線（Ax + By = C）や 2 次関数にも使う語なので、用例コーパスでは standard form of the equation of …（of an ellipse など）の形で数えた。書き言葉 22 件のうち 20 件が OpenStax Algebra and Trigonometry。",
+    "平行移動した二次曲線は、中心 (h, k) を入れた標準形で表す。"
+  ],
+  "related": [
+    "conic-section",
+    "ellipse",
+    "completing-the-square"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "standard form of the equation of": 2
+    },
+    "written": {
+      "standard form of the equation of": 22
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

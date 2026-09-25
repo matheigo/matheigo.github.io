@@ -1,0 +1,96 @@
+{
+  "id": "nth-term-test",
+  "ja": {
+    "term": "n 項判定法",
+    "reading": "えぬこうはんていほう",
+    "alt": []
+  },
+  "en": {
+    "term": "divergence test",
+    "alt": [
+      "nth term test",
+      "test for divergence"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「n 項判定法」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書では「級数が収束すれば aₙ → 0」の対偶として扱い、判定法の名前はつけない。",
+  "domains": [
+    "sequences",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "aₙ が 0 に収束しなければ、級数 Σaₙ は発散するという判定法。",
+  "definition_en": "The test that says a series Σaₙ diverges if its terms aₙ do not approach 0.",
+  "latex": "\\lim_{n\\to\\infty} a_n \\ne 0 \\;\\Rightarrow\\; \\sum a_n \\text{ diverges}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Always try the divergence test first: if the terms don't go to zero, you're done.",
+      "ja": "まず発散判定を試す。項が 0 に近づかなければ、それで終わり。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the divergence test to show that Σ n/(2n + 1) diverges.",
+      "ja": "n 項判定法を用いて Σ n/(2n + 1) が発散することを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "AP の CED は nth term test for divergence と呼ぶ（topic 10.3）。用例コーパスでは divergence test が話し言葉 33 件・書き言葉 36 件で、nth term test は 1 件。",
+    "aₙ → 0 でも収束するとは限らない（調和級数）。この判定法で分かるのは発散だけ。"
+  ],
+  "related": [
+    "diverge",
+    "harmonic-series",
+    "infinite-series",
+    "integral-test"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.3（nth term test for divergence）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "divergence test": 33,
+      "test for divergence": 1
+    },
+    "written": {
+      "divergence test": 36,
+      "nth term test": 1,
+      "test for divergence": 1
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

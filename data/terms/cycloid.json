@@ -1,0 +1,85 @@
+{
+  "id": "cycloid",
+  "ja": {
+    "term": "サイクロイド",
+    "reading": "さいくろいど",
+    "alt": []
+  },
+  "en": {
+    "term": "cycloid",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "円が直線上を滑らずに転がるとき、円周上の定点が描く曲線。",
+  "definition_en": "The curve traced by a point on the rim of a circle as the circle rolls along a line without slipping.",
+  "latex": "x = a(\\theta - \\sin\\theta), \\quad y = a(1 - \\cos\\theta)",
+  "spoken_en": "x equals a times theta minus sine theta, y equals a times one minus cosine theta",
+  "examples": [
+    {
+      "en": "Picture a dot on a bicycle wheel — that path is a cycloid.",
+      "ja": "自転車の車輪についた点を思い浮かべて。その道筋がサイクロイド。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the length of one arch of the cycloid x = θ − sin θ, y = 1 − cos θ.",
+      "ja": "サイクロイド x = θ − sin θ、y = 1 − cos θ の 1 つのアーチの長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉では 3 件。書き言葉は OpenStax Calculus（26 件、ほとんどが Volume 2 の媒介変数表示の節）と MIT の講義ノート。"
+  ],
+  "related": [
+    "parametric-equations",
+    "arc-length-of-a-curve"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "サイクロイド",
+      "en": "Cycloid"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "cycloid": 3
+    },
+    "written": {
+      "cycloid": 33
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

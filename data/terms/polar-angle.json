@@ -1,0 +1,85 @@
+{
+  "id": "polar-angle",
+  "ja": {
+    "term": "偏角",
+    "reading": "へんかく",
+    "alt": []
+  },
+  "en": {
+    "term": "polar angle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで polar angle は話し言葉 1 件・書き言葉 1 件）。極座標の θ は、英語ではふつう名前をつけずに the angle θ と呼ぶ。複素数の偏角は argument（argument-of-a-complex-number を参照）。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "極座標 (r, θ) の θ。始線から反時計回りに測った角。",
+  "definition_en": "The θ of polar coordinates (r, θ): the angle measured counterclockwise from the polar axis.",
+  "latex": "\\theta",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "θ is the angle you sweep out from the positive x-axis.",
+      "ja": "θ は x 軸の正の向きから回した角。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find r and θ for the point (1, −1), with 0 ≤ θ < 2π.",
+      "ja": "点 (1, −1) の r と θ を 0 ≤ θ < 2π の範囲で求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "polar-coordinates",
+    "pole"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "polar angle": 1
+    },
+    "written": {
+      "polar angle": 1
+    },
+    "sources": [
+      "mit-18.03",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 1 件 ／ 書 1 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

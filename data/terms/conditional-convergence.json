@@ -1,0 +1,97 @@
+{
+  "id": "conditional-convergence",
+  "ja": {
+    "term": "条件収束",
+    "reading": "じょうけんしゅうそく",
+    "alt": []
+  },
+  "en": {
+    "term": "conditional convergence",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "級数 Σaₙ は収束するが、Σ|aₙ| は発散すること。",
+  "definition_en": "The case in which a series Σaₙ converges but Σ|aₙ| diverges.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The alternating harmonic series is the standard example of conditional convergence.",
+      "ja": "交代調和級数が条件収束の典型例。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that Σ (−1)ⁿ⁺¹/n converges conditionally.",
+      "ja": "Σ (−1)ⁿ⁺¹/n が条件収束することを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "動詞の形 converges conditionally（書き言葉 10 件）、形容詞は conditionally convergent。用例コーパスでは名詞も含めてどれも少ない。"
+  ],
+  "related": [
+    "absolute-convergence",
+    "alternating-series",
+    "harmonic-series"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "条件収束",
+      "en": "Conditional convergence"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.9（conditional convergence）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "conditional convergence": 2
+    },
+    "written": {
+      "conditional convergence": 7
+    },
+    "sources": [
+      "openstax-calculus",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 7 件（10 未満））。見出しは CED の呼び方 conditional convergence（topic 10.9）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

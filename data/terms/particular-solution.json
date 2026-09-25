@@ -1,0 +1,92 @@
+{
+  "id": "particular-solution",
+  "ja": {
+    "term": "特殊解",
+    "reading": "とくしゅかい",
+    "alt": []
+  },
+  "en": {
+    "term": "particular solution",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "微分方程式の一般解のうち、初期条件などで任意定数の値を決めた 1 つの解。",
+  "definition_en": "The one solution of a differential equation picked out of the general solution by fixing the constant, for example with an initial condition.",
+  "latex": "y = 3e^{x^2}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Once you plug in the initial condition, you get a particular solution.",
+      "ja": "初期条件を代入すれば特殊解が得られる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the particular solution of dy/dx = 6x² that passes through (1, 5).",
+      "ja": "点 (1, 5) を通る dy/dx = 6x² の特殊解を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "任意定数を含む解は general solution（一般解）。"
+  ],
+  "related": [
+    "initial-condition",
+    "differential-equation",
+    "separation-of-variables"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 7.7・7.8（particular solution）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "particular solution": 191
+    },
+    "written": {
+      "particular solution": 98
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

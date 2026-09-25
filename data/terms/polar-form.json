@@ -1,0 +1,96 @@
+{
+  "id": "polar-form",
+  "ja": {
+    "term": "極形式",
+    "reading": "きょくけいしき",
+    "alt": []
+  },
+  "en": {
+    "term": "polar form",
+    "alt": [
+      "trigonometric form"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "complex-numbers"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "複素数を絶対値 r と偏角 θ を使って r(cos θ + i sin θ) と表した形。",
+  "definition_en": "The form r(cos θ + i sin θ) of a complex number, written with its modulus r and argument θ.",
+  "latex": "z = r(\\cos\\theta + i\\sin\\theta)",
+  "spoken_en": "z equals r times cosine theta plus i sine theta",
+  "examples": [
+    {
+      "en": "In polar form, multiplying is easy: multiply the r's and add the angles.",
+      "ja": "極形式なら掛け算は簡単。r どうしを掛けて、角を足す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write z = 1 + √3 i in polar form.",
+      "ja": "z = 1 + √3 i を極形式で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "write … in polar form",
+      "ja": "極形式で表す"
+    }
+  ],
+  "pitfalls": [
+    "trigonometric form とも言うが少ない（話し言葉 1 件、書き言葉 2 件）。",
+    "積と商: 絶対値は掛け算・割り算、偏角は足し算・引き算。英語でも multiply the moduli and add the arguments と言える。",
+    "polar form は極方程式（曲線を r と θ で表した形）の意味でも使う。"
+  ],
+  "related": [
+    "de-moivres-theorem",
+    "complex-plane",
+    "eulers-formula"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "polar form": 42,
+      "write … in polar form": 1,
+      "trigonometric form": 1
+    },
+    "written": {
+      "polar form": 97,
+      "write … in polar form": 9,
+      "trigonometric form": 2
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}
