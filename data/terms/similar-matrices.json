@@ -1,0 +1,77 @@
+{
+  "id": "similar-matrices",
+  "ja": {
+    "term": "相似な行列",
+    "reading": "そうじなぎょうれつ",
+    "alt": []
+  },
+  "en": {
+    "term": "similar matrices",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "正則行列 P を使って B = P⁻¹AP と書ける 2 つの正方行列。同じ固有値・行列式・トレースをもつ。",
+  "definition_en": "Two square matrices with B = P⁻¹AP for some invertible P; they have the same eigenvalues, determinant and trace.",
+  "latex": "B = P^{-1}AP",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Similar matrices are the same transformation written in different bases.",
+      "ja": "相似な行列は、同じ変換を別の基底で書いたものだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that similar matrices have the same characteristic polynomial.",
+      "ja": "相似な行列は同じ特性多項式をもつことを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "図形の相似（similar figures）と同じ語。用例コーパスの話し言葉 17 件はすべて MIT 18.06。"
+  ],
+  "related": [
+    "diagonalization",
+    "change-of-basis",
+    "characteristic-polynomial"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "5.5 Similarity and Diagonalization"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "similar matrices": 17
+    },
+    "sources": [
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  }
+}

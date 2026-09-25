@@ -1,0 +1,84 @@
+{
+  "id": "singular-matrix",
+  "ja": {
+    "term": "特異行列",
+    "reading": "とくいぎょうれつ",
+    "alt": []
+  },
+  "en": {
+    "term": "singular matrix",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "matrix is singular",
+        "register": "spoken",
+        "note": "述語の形（the matrix is singular）。話し言葉で 14 件（すべて MIT OCW）、書き言葉では 0 件。"
+      }
+    ],
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "逆行列をもたない正方行列。行列式が 0 であることと同じ。",
+  "definition_en": "A square matrix with no inverse; equivalently, its determinant is zero.",
+  "latex": "\\det A = 0",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The determinant is zero, so the matrix is singular.",
+      "ja": "行列式が 0 なので、この行列は特異だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find all values of k for which the matrix is singular.",
+      "ja": "行列が特異行列になる k の値をすべて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉 19 件はすべて MIT 18.06。Nicholson の singular は特異値分解（singular value）の文脈が多い。"
+  ],
+  "related": [
+    "invertible-matrix",
+    "determinant"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "2.4 Matrix Inverses・3.2 Determinants and Matrix Inverses"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "singular matrix": 19,
+      "matrix is singular": 14
+    },
+    "sources": [
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  }
+}

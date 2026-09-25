@@ -1,0 +1,85 @@
+{
+  "id": "dimension",
+  "ja": {
+    "term": "次元",
+    "reading": "じげん",
+    "alt": []
+  },
+  "en": {
+    "term": "dimension",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "ベクトル空間の基底に含まれるベクトルの個数。どの基底をとっても同じ数になる。",
+  "definition_en": "The number of vectors in a basis of a vector space; every basis has the same number.",
+  "latex": "\\dim V",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The null space here is a plane, so its dimension is two.",
+      "ja": "ここの零空間は平面なので、次元は 2 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the dimension of the null space of A.",
+      "ja": "A の零空間の次元を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは dimension of the … space などの形で数えた（語のままの dimension は in three dimensions や長方形の縦横の長さ dimensions が多い）。",
+    "行列の大きさ（m × n）も英語で dimensions と言うが、ベクトル空間の次元とは別。"
+  ],
+  "related": [
+    "basis",
+    "rank",
+    "rank-nullity-theorem",
+    "vector-space"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "次元",
+      "en": "Dimension"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "5.2 Independence and Dimension"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "dimension of the … space | dimension of a … space | dimension of the null | dimension of the column | dimension of the row | dimension of the subspace | dimension of that space": 60
+    },
+    "sources": [
+      "mit-18.06",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

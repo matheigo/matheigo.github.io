@@ -1,0 +1,80 @@
+{
+  "id": "subspace",
+  "ja": {
+    "term": "部分空間",
+    "reading": "ぶぶんくうかん",
+    "alt": [
+      "線形部分空間"
+    ]
+  },
+  "en": {
+    "term": "subspace",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "ベクトル空間の部分集合で、0 を含み、和と実数倍について閉じているもの。それ自身もベクトル空間になる。",
+  "definition_en": "A subset of a vector space that contains 0 and is closed under addition and scalar multiplication; it is a vector space itself.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A line through the origin is a subspace; a line that misses the origin isn't.",
+      "ja": "原点を通る直線は部分空間だが、原点を通らない直線は違う。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the set is a subspace of ℝ³.",
+      "ja": "その集合が ℝ³ の部分空間かどうか判定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉 304 件はすべて MIT 18.06。"
+  ],
+  "related": [
+    "vector-space",
+    "span",
+    "null-space",
+    "column-space"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "5.1 Subspaces and Spanning"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "subspace": 304
+    },
+    "sources": [
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  }
+}

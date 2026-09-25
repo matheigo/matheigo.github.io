@@ -1,0 +1,97 @@
+{
+  "id": "isomorphism",
+  "ja": {
+    "term": "同型",
+    "reading": "どうけい",
+    "alt": [
+      "同型写像"
+    ]
+  },
+  "en": {
+    "term": "isomorphism",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "isomorphic",
+        "register": "written",
+        "note": "形容詞（be isomorphic to）。話し言葉では 0 件、書き言葉で 15 件（すべて MIT の講義ノート）。"
+      }
+    ],
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "2 つのベクトル空間のあいだの、全単射な線形写像。そうした写像があるとき 2 つの空間は同型であるという。",
+  "definition_en": "A linear map between two vector spaces that is one-to-one and onto; when one exists, the spaces are isomorphic.",
+  "latex": "V \\cong W",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Any two vector spaces of the same finite dimension are isomorphic.",
+      "ja": "有限次元で次元が同じベクトル空間どうしは同型だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the map T is an isomorphism.",
+      "ja": "写像 T が同型写像であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの書き言葉は MIT の講義ノートのグラフの同型（isomorphic graphs）だけ。Levin もグラフの同型（2.1）で使う。"
+  ],
+  "related": [
+    "onto",
+    "one-to-one",
+    "linear-transformation",
+    "dimension"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "同型写像",
+      "en": "Isomorphism"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "7.3 Isomorphisms and Composition"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "isomorphism": 1
+    },
+    "written": {
+      "isomorphism": 10,
+      "isomorphic": 15
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

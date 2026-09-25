@@ -1,0 +1,90 @@
+{
+  "id": "test-for-independence",
+  "ja": {
+    "term": "独立性の検定",
+    "reading": "どくりつせいのけんてい",
+    "alt": []
+  },
+  "en": {
+    "term": "test of independence",
+    "alt": [
+      "test for independence"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "1 つの母集団について 2 つのカテゴリ変数が独立かどうかを、分割表と χ² で検定する方法。",
+  "definition_en": "A chi-square test, done on a two-way table from one population, of whether two categorical variables are independent.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "One sample, two variables: that's a test for independence.",
+      "ja": "標本が 1 つで変数が 2 つなら、独立性の検定だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use a test of independence to decide whether gender and preferred subject are related.",
+      "ja": "独立性の検定を用いて、性別と好きな教科に関係があるか判断せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Introductory Statistics は test of independence（書き言葉 38 件、節の名前）、AP Statistics の CED（2026 年版）は test for independence（topic 3.14 ほか）と書く。",
+    "chi-square test for independence とも言う。見出しの言い方を中に含むので候補には置かなかった。",
+    "母集団が 2 つ以上で 1 つの変数の分布を比べるときは同質性の検定（test for homogeneity）。"
+  ],
+  "related": [
+    "chi-square-test",
+    "test-for-homogeneity",
+    "expected-count"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 3.14・3.15"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "test for independence": 1
+    },
+    "written": {
+      "test of independence": 38,
+      "test for independence": 7
+    },
+    "sources": [
+      "mit-18.06",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

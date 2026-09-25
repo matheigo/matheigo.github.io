@@ -1,0 +1,113 @@
+{
+  "id": "system-of-linear-equations",
+  "ja": {
+    "term": "連立一次方程式",
+    "reading": "れんりついちじほうていしき",
+    "alt": [
+      "線形方程式系",
+      "線型方程式系",
+      "連立 1 次方程式"
+    ]
+  },
+  "en": {
+    "term": "linear system",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "system of linear equations",
+        "register": "written",
+        "note": "教科書の書き方（OpenStax Algebra and Trigonometry の節の名前 Systems of Linear Equations、Nicholson 1.1）。話し言葉で 11 件（MIT OCW 9・NancyPi 2）、書き言葉で 85 件（OpenStax Algebra and Trigonometry 81・MIT の講義ノート 4）。"
+      }
+    ],
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数C",
+      "大学"
+    ],
+    "us": [
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "1 次方程式をいくつか組にしたもの。係数を並べた行列 A と定数のベクトル b を使って Ax = b と書ける。",
+  "definition_en": "A set of linear equations taken together; with the coefficient matrix A and the constant vector b it can be written Ax = b.",
+  "latex": "A\\vec{x} = \\vec{b}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A linear system can have no solution, exactly one, or infinitely many.",
+      "ja": "連立一次方程式の解は、なし・ちょうど 1 つ・無数のどれかになる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the system of linear equations as a matrix equation Ax = b.",
+      "ja": "連立一次方程式を行列の方程式 Ax = b の形で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "中学の連立方程式（system of equations）は別のエントリ。system of equations は 1 次でない連立も含むので、この語の候補にしなかった。",
+    "用例コーパスの話し言葉の linear system には、MIT 18.03 の線形微分方程式の系（10 件中 4 件）も混ざる。"
+  ],
+  "related": [
+    "augmented-matrix",
+    "gaussian-elimination",
+    "homogeneous-system",
+    "matrix"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "線型方程式系",
+      "en": "System of linear equations"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "1.1 Solutions and Elementary Operations"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "system of linear equations": 11,
+      "linear system": 41
+    },
+    "written": {
+      "linear system": 29,
+      "system of linear equations": 85
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-25"
+  }
+}

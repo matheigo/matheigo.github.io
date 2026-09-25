@@ -1,0 +1,86 @@
+{
+  "id": "test-for-homogeneity",
+  "ja": {
+    "term": "同質性の検定",
+    "reading": "どうしつせいのけんてい",
+    "alt": [
+      "一様性の検定"
+    ]
+  },
+  "en": {
+    "term": "test for homogeneity",
+    "alt": [
+      "test of homogeneity"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "2 つ以上の母集団で、1 つのカテゴリ変数の分布が同じかどうかを χ² で検定する方法。",
+  "definition_en": "A chi-square test of whether the distribution of one categorical variable is the same in two or more populations.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We sampled each school separately, so this is homogeneity, not independence.",
+      "ja": "学校ごとに別々に標本をとったので、独立性ではなく同質性の検定だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Perform a test for homogeneity to compare the distributions of blood types in the three regions.",
+      "ja": "同質性の検定を行い、3 地域の血液型の分布を比べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "計算は独立性の検定と同じだが、データの集め方（母集団ごとに標本をとる）が違う。",
+    "用例コーパスの書き言葉 22 件はすべて OpenStax Introductory Statistics（test for homogeneity 15、test of homogeneity 7）。"
+  ],
+  "related": [
+    "chi-square-test",
+    "test-for-independence"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 3.14・3.15"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "test for homogeneity": 15,
+      "test of homogeneity": 7
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

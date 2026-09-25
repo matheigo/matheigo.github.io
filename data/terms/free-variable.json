@@ -1,0 +1,82 @@
+{
+  "id": "free-variable",
+  "ja": {
+    "term": "自由変数",
+    "reading": "じゆうへんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "free variable",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "連立一次方程式を行階段形にしたとき、ピボットのない列に対応する変数。任意の値をとれるパラメータになる。",
+  "definition_en": "In a row-reduced linear system, a variable whose column has no pivot; it can take any value and acts as a parameter.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "x3 is a free variable, so set it equal to t and solve for the others.",
+      "ja": "x3 は自由変数なので t とおいて、ほかの変数を求める。",
+      "register": "spoken"
+    },
+    {
+      "en": "Identify the free variables and write the general solution in parametric form.",
+      "ja": "自由変数を答え、一般解をパラメータ表示で書け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "台帳の langlink（自由変数と束縛変数 → Free variables and bound variables）は論理学の自由変数で、別の概念。Levin の free variable（9 件）も論理学の意味。",
+    "Nicholson は free variable と言わず、parameter や nonleading variable と書く。"
+  ],
+  "related": [
+    "basic-variable",
+    "pivot",
+    "system-of-linear-equations"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語は線形代数の用語（free variable）だが、OpenStax（6 冊）・Nicholson にはなく、台帳の Wikipedia は論理学の別の概念（用例コーパスでは MIT OCW 18.06 だけ）。",
+      "raised": "2026-09-25"
+    }
+  ],
+  "evidence": {
+    "spoken": {
+      "free variable": 93
+    },
+    "sources": [
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  }
+}

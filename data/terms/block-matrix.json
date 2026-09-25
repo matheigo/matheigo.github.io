@@ -1,0 +1,91 @@
+{
+  "id": "block-matrix",
+  "ja": {
+    "term": "ブロック行列",
+    "reading": "ぶろっくぎょうれつ",
+    "alt": [
+      "区分行列"
+    ]
+  },
+  "en": {
+    "term": "block matrix",
+    "alt": [
+      "partitioned matrix"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "行列を縦横に区切り、各部分（ブロック）を 1 つの成分のように扱って書いた行列。",
+  "definition_en": "A matrix divided into smaller submatrices (blocks), each treated like a single entry.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Think of this as a two-by-two block matrix, and multiply the blocks like numbers.",
+      "ja": "これを 2 × 2 のブロック行列とみて、ブロックを数のように掛けよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Compute the product using block matrix multiplication.",
+      "ja": "ブロック行列の積を使って積を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "ブロックどうしの掛け算は順番を入れ替えられない（行列の積なので）。"
+  ],
+  "related": [
+    "matrix",
+    "matrix-multiplication"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "区分行列",
+      "en": "Block matrix"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "2.4 Matrix Inverses"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "block matrix": 1
+    },
+    "sources": [
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 block matrix（2.4 Matrix Inverses・2.5 Elementary Matrices・3.1 The Cofactor Expansion）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

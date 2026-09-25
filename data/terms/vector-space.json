@@ -1,0 +1,89 @@
+{
+  "id": "vector-space",
+  "ja": {
+    "term": "ベクトル空間",
+    "reading": "べくとるくうかん",
+    "alt": [
+      "線形空間",
+      "線型空間"
+    ]
+  },
+  "en": {
+    "term": "vector space",
+    "alt": [
+      "linear space"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "和と実数倍が定義され、それらが交換法則・分配法則などの決まった性質を満たす集合。その要素をベクトルという。",
+  "definition_en": "A set with an addition and a scalar multiplication that satisfy a fixed list of rules (commutativity, distributivity and so on); its elements are called vectors.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Polynomials of degree at most two form a vector space, even though they don't look like arrows.",
+      "ja": "2 次以下の多項式全体はベクトル空間になる。矢印には見えなくても。",
+      "register": "spoken"
+    },
+    {
+      "en": "Verify that the set of all 2 × 2 matrices is a vector space.",
+      "ja": "2 × 2 行列全体がベクトル空間であることを確かめよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉 90 件のうち 81 件は MIT 18.06。"
+  ],
+  "related": [
+    "subspace",
+    "basis",
+    "dimension",
+    "vector"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ベクトル空間",
+      "en": "Vector space"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "6.1 Examples and Basic Properties"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "vector space": 90
+    },
+    "sources": [
+      "mit-18.06",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

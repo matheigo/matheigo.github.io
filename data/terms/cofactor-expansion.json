@@ -1,0 +1,92 @@
+{
+  "id": "cofactor-expansion",
+  "ja": {
+    "term": "余因子展開",
+    "reading": "よいんしてんかい",
+    "alt": []
+  },
+  "en": {
+    "term": "cofactor expansion",
+    "alt": [
+      "Laplace expansion"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "行列式を、1 つの行（列）の各成分とその余因子の積の和として計算する方法。",
+  "definition_en": "Computing a determinant as the sum of the entries of one row (or column) times their cofactors.",
+  "latex": "\\det A = \\sum_{j} a_{ij} C_{ij}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Pick the row with the most zeros and do a cofactor expansion along it.",
+      "ja": "0 がいちばん多い行を選んで、その行で余因子展開しよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate the determinant by cofactor expansion along the second column.",
+      "ja": "第 2 列に沿った余因子展開で行列式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは Laplace expansion が話し言葉 8 件（MIT OCW）、cofactor expansion が 1 件だけ。OpenStax Algebra and Trigonometry は expand by minors（小行列式で展開する）と書く。"
+  ],
+  "related": [
+    "cofactor",
+    "minor",
+    "determinant"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "余因子展開",
+      "en": "Laplace expansion"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "3.1 The Cofactor Expansion"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "Laplace expansion": 8,
+      "cofactor expansion": 1
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 cofactor expansion（3.1 The Cofactor Expansion・3.6 Proof of the Cofactor Expansion Theorem・3.2 Determinants and Matrix Inverses）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "cofactor",
+  "ja": {
+    "term": "余因子",
+    "reading": "よいんし",
+    "alt": []
+  },
+  "en": {
+    "term": "cofactor",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "正方行列の (i, j) 成分に対し、第 i 行と第 j 列を除いた行列の行列式に符号 (−1)^{i+j} を掛けた値。",
+  "definition_en": "For the (i, j) entry of a square matrix, the determinant of the matrix left after deleting row i and column j, multiplied by the sign (−1)^{i+j}.",
+  "latex": "C_{ij} = (-1)^{i+j} M_{ij}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Don't forget the checkerboard of signs when you write down each cofactor.",
+      "ja": "余因子を書くときは、市松模様の符号を忘れないように。",
+      "register": "spoken"
+    },
+    {
+      "en": "Compute the cofactors C₁₁, C₁₂ and C₁₃ of the matrix.",
+      "ja": "行列の余因子 C₁₁, C₁₂, C₁₃ を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "符号を付ける前の行列式は小行列式（minor）。OpenStax Algebra and Trigonometry は余因子という名前を使わず expand by minors と書く。"
+  ],
+  "related": [
+    "minor",
+    "cofactor-expansion",
+    "adjugate",
+    "determinant"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "小行列式",
+      "en": "Minor (linear algebra)"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "3.1 The Cofactor Expansion"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "cofactor": 176
+    },
+    "written": {
+      "cofactor": 2
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.06",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

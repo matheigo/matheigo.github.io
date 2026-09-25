@@ -1,0 +1,86 @@
+{
+  "id": "minor",
+  "ja": {
+    "term": "小行列式",
+    "reading": "しょうぎょうれつしき",
+    "alt": []
+  },
+  "en": {
+    "term": "minor",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "正方行列から 1 つの行と 1 つの列を除いてできる行列の行列式。",
+  "definition_en": "The determinant of the matrix left after deleting one row and one column of a square matrix.",
+  "latex": "M_{ij}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Cover up the first row and first column; what's left gives you the minor.",
+      "ja": "第 1 行と第 1 列を隠して、残りから小行列式が出る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Expand by minors along the first row to evaluate the determinant.",
+      "ja": "第 1 行に沿って小行列式で展開し、行列式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは matrix of minors ／ expand by minors ／ minor of the entry ／ the minor of の形で数えた（語のままの minor は楕円の minor axis や「小さな」の意味がほとんど）。書き言葉 15 件のうち 14 件は OpenStax Algebra and Trigonometry。",
+    "符号 (−1)^{i+j} を掛けたものは余因子（cofactor）。"
+  ],
+  "related": [
+    "cofactor",
+    "cofactor-expansion",
+    "determinant"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "小行列式",
+      "en": "Minor (linear algebra)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "matrix of minors | expand by minors | minor of the entry | the minor of | determinant of the minor": 7
+    },
+    "written": {
+      "matrix of minors | expand by minors | minor of the entry | the minor of | determinant of the minor": 15
+    },
+    "sources": [
+      "mit-18.02",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

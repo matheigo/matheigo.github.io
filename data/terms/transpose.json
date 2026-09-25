@@ -1,0 +1,86 @@
+{
+  "id": "transpose",
+  "ja": {
+    "term": "転置",
+    "reading": "てんち",
+    "alt": [
+      "転置行列"
+    ]
+  },
+  "en": {
+    "term": "transpose",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "行列の行と列を入れ替えること。また、入れ替えてできた行列。A の転置行列を Aᵀ と書く。",
+  "definition_en": "Swapping the rows and columns of a matrix, or the matrix that results; the transpose of A is written Aᵀ.",
+  "latex": "(A^{T})_{ij} = A_{ji}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A transpose A is always square and symmetric.",
+      "ja": "A の転置と A の積はいつも正方で対称だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the transpose of the matrix and verify that (AB)ᵀ = Bᵀ Aᵀ.",
+      "ja": "行列の転置を求め、(AB)ᵀ = Bᵀ Aᵀ を確かめよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "Aᵀ は A transpose と読む。英語は名詞・動詞とも transpose（transpose the matrix）。",
+    "用例コーパスの話し言葉 752 件のうち 743 件は MIT 18.06。"
+  ],
+  "related": [
+    "matrix",
+    "matrix-multiplication",
+    "square-matrix"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "2.1 Matrix Addition, Scalar Multiplication, and Transposition"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "transpose": 752
+    },
+    "written": {
+      "transpose": 1
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

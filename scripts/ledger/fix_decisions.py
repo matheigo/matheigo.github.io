@@ -938,6 +938,8 @@ PHASE2E_SAME = [
     ("margin-of-error", "error-bound", "into"),  # AP margin of error = OpenStax error bound
     ("multiplication-rule", "general-multiplication-rule", "from"),  # 数A 乗法定理 P(A∩B) = P(A)P_A(B); the textbook name heads
     ("addition-rule", "general-addition-rule", "from"),  # 数A 加法定理; US "addition rule" is the general form
+    # Phase 2 統計・ベクトルの単元 2 (the rest of the same units, after the batch-4 stop)
+    ("questionnaire", "survey", "into"),  # 質問票: English says survey for the form and the act (ばらつく -> spread)
 ]
 
 # Section names -> the entry for what they teach.
@@ -1012,6 +1014,8 @@ PHASE2E_INSTANCE = [
     ("multiply-the-matrices", "matrix-multiplication"),
     ("complex-eigenvalues", "eigenvalue"),
     ("diagonalization-of-symmetric-matrices", "diagonalization"),
+    # Phase 2 統計・ベクトルの単元 2
+    ("prediction", "regression-line"),  # 予測: what the regression line is used for (ŷ)
 ]
 
 # Lines of a procedure, of a problem statement or of a class, not terms

@@ -24,7 +24,8 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
-    "functions"
+    "functions",
+    "linear-algebra"
   ],
   "level": {
     "jp": [
@@ -50,16 +51,25 @@
       "en": "Show that f(x) = x³ is one-to-one.",
       "ja": "f(x) = x³ が 1 対 1 であることを示せ。",
       "register": "written"
+    },
+    {
+      "en": "A linear transformation is one-to-one exactly when its null space contains only the zero vector.",
+      "ja": "線形変換が 1 対 1（単射）になるのは、零空間が 0 ベクトルだけのときに限る。",
+      "register": "spoken"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "米国の教科書（OpenStax Algebra and Trigonometry・Calculus Volume 1）は、グラフと水平な直線の交点が 1 つ以下かどうかで調べる horizontal line test を使う。"
+    "米国の教科書（OpenStax Algebra and Trigonometry・Calculus Volume 1）は、グラフと水平な直線の交点が 1 つ以下かどうかで調べる horizontal line test を使う。",
+    "線形代数では、線形写像 T が 1 対 1 であることは T(x) = 0 となる x が 0 だけ（ker T = {0}）であることと同じ。Nicholson（7.2・7.3）は one-to-one と onto で単射・全射を言う。"
   ],
   "related": [
     "find-the-inverse",
     "composite-function",
-    "one-to-one-property"
+    "one-to-one-property",
+    "onto",
+    "null-space",
+    "isomorphism"
   ],
   "sources": [
     {
@@ -74,15 +84,21 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "7.2 Kernel and Image of a Linear Transformation"
     }
   ],
   "confidence": "likely",
   "reviewed": {
-    "machine": "2026-09-24",
+    "machine": "2026-09-25",
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "one-to-one": 29,

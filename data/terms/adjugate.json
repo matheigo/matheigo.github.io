@@ -1,0 +1,90 @@
+{
+  "id": "adjugate",
+  "ja": {
+    "term": "余因子行列",
+    "reading": "よいんしぎょうれつ",
+    "alt": [
+      "古典随伴行列"
+    ]
+  },
+  "en": {
+    "term": "adjugate",
+    "alt": [
+      "classical adjoint",
+      "adjoint"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "正方行列の各成分の余因子を並べた行列を転置したもの。A adj(A) = (det A)I が成り立つ。",
+  "definition_en": "The transpose of the matrix of cofactors of a square matrix; it satisfies A adj(A) = (det A)I.",
+  "latex": "A^{-1} = \\frac{1}{\\det A}\\operatorname{adj}(A)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Take the matrix of cofactors, transpose it, and you've got the adjugate.",
+      "ja": "余因子を並べた行列を転置すると、余因子行列になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the adjugate to find the inverse of the matrix.",
+      "ja": "余因子行列を用いて逆行列を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "台帳の見出し「随伴行列」は、日本語では多くの場合、複素共役をとって転置した行列（conjugate transpose、英語でも adjoint と呼ぶことがある）を指す。台帳の langlink（随伴行列 → Conjugate transpose）もそちらで、出典にしなかった。",
+    "英語の adjoint は余因子行列（古い呼び方）と共役転置の両方に使われる。Nicholson は adjugate（12 件）。"
+  ],
+  "related": [
+    "cofactor",
+    "inverse-matrix",
+    "determinant",
+    "transpose"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "3.2 Determinants and Matrix Inverses"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "adjoint": 2
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは Nicholson の呼び方 adjugate（3.2 Determinants and Matrix Inverses・2.4 Matrix Inverses）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

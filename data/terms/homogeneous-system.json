@@ -1,0 +1,85 @@
+{
+  "id": "homogeneous-system",
+  "ja": {
+    "term": "同次方程式系",
+    "reading": "どうじほうていしきけい",
+    "alt": [
+      "斉次連立一次方程式",
+      "同次連立一次方程式"
+    ]
+  },
+  "en": {
+    "term": "homogeneous system",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "定数項がすべて 0 の連立一次方程式 Ax = 0。つねに x = 0（自明な解）を解にもつ。",
+  "definition_en": "A linear system whose constant terms are all zero, Ax = 0; it always has the trivial solution x = 0.",
+  "latex": "A\\vec{x} = \\vec{0}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A homogeneous system always has at least one solution: all zeros.",
+      "ja": "同次方程式系には少なくとも 1 つ解がある。全部 0 の解だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the homogeneous system has a nontrivial solution.",
+      "ja": "同次方程式系が自明でない解をもつか判定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "homogeneous equation は微分方程式の同次方程式（MIT 18.03 の話し言葉 33 件）がほとんどで、この語の候補にしなかった。",
+    "用例コーパスの話し言葉 21 件は MIT 18.02（14 件）と 18.03。Nicholson は homogeneous system（36 件）と書く。"
+  ],
+  "related": [
+    "system-of-linear-equations",
+    "null-space"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "1.3 Homogeneous Equations"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "homogeneous system": 21
+    },
+    "written": {
+      "homogeneous system": 1
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "standard-matrix",
+  "ja": {
+    "term": "標準行列",
+    "reading": "ひょうじゅんぎょうれつ",
+    "alt": []
+  },
+  "en": {
+    "term": "standard matrix",
+    "alt": [
+      "matrix of the transformation"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「標準行列」は日本の教科書に無い、本プロジェクトの訳語（日本語は「線形写像の表現行列」と言うことが多い）。",
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "ℝⁿ から ℝᵐ への線形写像 T を T(x) = Ax と書くときの行列 A。標準基底の像を列に並べたもの。",
+  "definition_en": "The matrix A with T(x) = Ax for a linear map T from ℝⁿ to ℝᵐ; its columns are the images of the standard basis vectors.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To get the standard matrix, just see where e1 and e2 go and write those as columns.",
+      "ja": "標準行列を作るには、e1 と e2 の行き先を列に書けばいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the standard matrix of the linear transformation that reflects across the line y = x.",
+      "ja": "直線 y = x に関する対称移動の標準行列を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは 0 件。3Blue1Brown は同じことを「i hat と j hat の行き先を記録した行列」と説明する。"
+  ],
+  "related": [
+    "linear-transformation",
+    "matrix",
+    "standard-unit-vectors"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "9.2 Operators and Similarity"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 standard matrix（9.2 Operators and Similarity・8.8 An Application to Linear Codes over Finite Fields）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

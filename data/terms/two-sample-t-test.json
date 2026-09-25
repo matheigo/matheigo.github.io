@@ -1,0 +1,81 @@
+{
+  "id": "two-sample-t-test",
+  "ja": {
+    "term": "2 標本 t 検定",
+    "reading": "にひょうほんてぃーけんてい",
+    "alt": []
+  },
+  "en": {
+    "term": "two-sample t-test",
+    "alt": [
+      "t-test for the difference of two means"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "独立な 2 つの標本の平均をもとに、2 つの母平均が等しいかどうかを t 分布で検定する方法。",
+  "definition_en": "A t-test of whether two population means are equal, based on the means of two independent samples.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The two groups are independent, so we run a two-sample t-test, not a paired one.",
+      "ja": "2 つのグループは独立なので、対応のある検定ではなく 2 標本 t 検定を行う。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use a two-sample t-test to decide whether the mean scores of the two classes differ.",
+      "ja": "2 標本 t 検定を用いて、2 クラスの平均点が異なるかどうか判断せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパス・OpenStax Introductory Statistics とも 0 件。OpenStax は two population means with unknown standard deviations（節の名前）として扱う。"
+  ],
+  "related": [
+    "one-sample-t-test",
+    "paired-t-test",
+    "t-distribution",
+    "two-proportion-z-test"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 4.9・4.10"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは AP Statistics の CED の呼び方 two-sample t-test（topic 4.9・topic 4.10）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

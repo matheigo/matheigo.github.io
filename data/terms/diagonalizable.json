@@ -1,0 +1,76 @@
+{
+  "id": "diagonalizable",
+  "ja": {
+    "term": "対角化可能",
+    "reading": "たいかくかかのう",
+    "alt": []
+  },
+  "en": {
+    "term": "diagonalizable",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "正則行列 P で P⁻¹AP を対角行列にできること。n × n 行列では 1 次独立な固有ベクトルが n 個あることと同じ。",
+  "definition_en": "Able to be made diagonal as P⁻¹AP for some invertible P; for an n × n matrix, having n linearly independent eigenvectors.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Not every matrix is diagonalizable; you need enough independent eigenvectors.",
+      "ja": "どの行列も対角化可能とは限らない。1 次独立な固有ベクトルが足りないといけない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the matrix is diagonalizable.",
+      "ja": "行列が対角化可能か判定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉 24 件はすべて MIT 18.06。"
+  ],
+  "related": [
+    "diagonalization",
+    "eigenvector"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "3.3 Diagonalization and Eigenvalues・5.5 Similarity and Diagonalization"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "diagonalizable": 24
+    },
+    "sources": [
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  }
+}

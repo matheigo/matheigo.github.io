@@ -47,31 +47,45 @@
       "en": "Describe the combination of transformations that takes the graph of y = √x to the graph of y = −2√(x + 3).",
       "ja": "y = √x のグラフを y = −2√(x + 3) のグラフに移す変換の組合せを説明せよ。",
       "register": "written"
+    },
+    {
+      "en": "Doing T first and then S is the same as multiplying by the matrix BA, in that order.",
+      "ja": "T のあとに S を行うのは、行列 BA を掛けるのと同じ（この順番で）。",
+      "register": "spoken"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "OpenStax Algebra and Trigonometry は関数のグラフの変換をまとめて行うことを combining transformations と書く（本文 3 件）。線形代数では線形変換の合成（composition）を指す。"
+    "OpenStax Algebra and Trigonometry は関数のグラフの変換をまとめて行うことを combining transformations と書く（本文 3 件）。線形代数では線形変換の合成（composition）を指す。",
+    "線形代数では、行列 A の変換のあとに行列 B の変換を行う合成は積 BA に対応し、掛ける順番は行う順番と逆になる（Nicholson 2.3・7.3 は composition と呼ぶ）。"
   ],
   "related": [
     "stretch-vertically",
     "compress-horizontally",
     "reflection",
-    "phase-shift"
+    "phase-shift",
+    "linear-transformation",
+    "matrix-multiplication"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "7.3 Isomorphisms and Composition"
     }
   ],
   "confidence": "likely",
   "reviewed": {
-    "machine": "2026-09-24",
+    "machine": "2026-09-25",
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "written": {
       "combining transformations": 3

@@ -1,0 +1,80 @@
+{
+  "id": "lu-decomposition",
+  "ja": {
+    "term": "LU 分解",
+    "reading": "えるゆーぶんかい",
+    "alt": []
+  },
+  "en": {
+    "term": "LU factorization",
+    "alt": [
+      "LU decomposition"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "正方行列を、下三角行列 L と上三角行列 U の積 A = LU に分けること。ガウスの消去法の手順を行列で記録したものになる。",
+  "definition_en": "Writing a matrix as the product A = LU of a lower triangular matrix L and an upper triangular matrix U; it records the steps of Gaussian elimination.",
+  "latex": "A = LU",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Once you have the LU factorization, solving Ax = b is just two triangular systems.",
+      "ja": "LU 分解があれば、Ax = b は三角行列の連立 2 つを解くだけになる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find an LU factorization of the matrix.",
+      "ja": "行列の LU 分解を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "Nicholson は LU-factorization（ハイフン付き、26 件）と書く。用例コーパスでは LU factorization・LU decomposition とも 0 件。"
+  ],
+  "related": [
+    "gaussian-elimination",
+    "elementary-matrix",
+    "matrix-multiplication"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "2.7 LU-Factorization"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 LU factorization（2.7 LU-Factorization）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

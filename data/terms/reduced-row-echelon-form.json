@@ -1,0 +1,84 @@
+{
+  "id": "reduced-row-echelon-form",
+  "ja": {
+    "term": "既約行階段形",
+    "reading": "きやくぎょうかいだんけい",
+    "alt": [
+      "簡約階段形"
+    ]
+  },
+  "en": {
+    "term": "reduced row-echelon form",
+    "alt": [
+      "RREF"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "行階段形のうち、各行の先頭の 0 でない成分（ピボット）が 1 で、その列のほかの成分がすべて 0 である形。行列ごとにただ 1 つに決まる。",
+  "definition_en": "A row-echelon form in which every leading entry is 1 and is the only nonzero entry in its column; each matrix has exactly one.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Keep going until you get the reduced row-echelon form, with zeros above the pivots too.",
+      "ja": "ピボットの上も 0 にして、既約行階段形になるまで続けよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Transform the augmented matrix into reduced row-echelon form and read off the solution.",
+      "ja": "拡大係数行列を既約行階段形に変形し、解を読み取れ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉 17 件はすべて MIT 18.06。書き言葉では Nicholson が使う（30 件）。",
+    "日本語は教科書により簡約階段形・既約行階段形など呼び方が分かれる。"
+  ],
+  "related": [
+    "row-echelon-form",
+    "gaussian-elimination",
+    "pivot",
+    "augmented-matrix"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "1.2 Gaussian Elimination"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "reduced row-echelon form": 17,
+      "RREF": 1
+    },
+    "sources": [
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  }
+}

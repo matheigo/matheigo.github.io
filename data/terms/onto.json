@@ -1,0 +1,89 @@
+{
+  "id": "onto",
+  "ja": {
+    "term": "全射",
+    "reading": "ぜんしゃ",
+    "alt": []
+  },
+  "en": {
+    "term": "surjective",
+    "alt": [
+      "onto"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "写像の値域が行き先の空間全体になること。どの b についても T(x) = b となる x がある。",
+  "definition_en": "Of a map: its range is the whole target space, so every b has some x with T(x) = b.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The map is onto if every vector in the target gets hit.",
+      "ja": "行き先のどのベクトルにも届くなら、その写像は全射だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the linear transformation is one-to-one, onto, both, or neither.",
+      "ja": "線形写像が単射か、全射か、その両方か、どちらでもないか判定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "onto はふつうの前置詞（project onto the line）と同じ語なので、用例コーパスでは is onto ／ onto function ／ one-to-one and onto などの形で数えた（0 件）。surjective は書き言葉 16 件（すべて MIT の講義ノート）。",
+    "Nicholson（7.2・7.3）は onto と書く。"
+  ],
+  "related": [
+    "one-to-one",
+    "isomorphism",
+    "linear-transformation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "全射",
+      "en": "Surjective function"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "7.2 Kernel and Image of a Linear Transformation"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "surjective": 8
+    },
+    "written": {
+      "surjective": 16
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

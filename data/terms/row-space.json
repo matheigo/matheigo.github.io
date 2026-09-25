@@ -1,0 +1,82 @@
+{
+  "id": "row-space",
+  "ja": {
+    "term": "行空間",
+    "reading": "ぎょうくうかん",
+    "alt": []
+  },
+  "en": {
+    "term": "row space",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "行列の行ベクトルが張る空間。行基本変形で変わらない。",
+  "definition_en": "The space spanned by the rows of a matrix; row operations do not change it.",
+  "latex": "\\operatorname{Row} A",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Row operations change the column space but not the row space.",
+      "ja": "行基本変形で列空間は変わるが、行空間は変わらない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find a basis for the row space of the matrix.",
+      "ja": "行列の行空間の基底を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉 160 件はすべて MIT 18.06。"
+  ],
+  "related": [
+    "column-space",
+    "rank",
+    "null-space"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "行空間",
+      "en": "Row and column spaces"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "5.4 Rank of a Matrix"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "row space": 160
+    },
+    "sources": [
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  }
+}

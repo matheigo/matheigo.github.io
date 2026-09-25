@@ -1,0 +1,90 @@
+{
+  "id": "t-distribution",
+  "ja": {
+    "term": "t 分布",
+    "reading": "てぃーぶんぷ",
+    "alt": [
+      "スチューデントの t 分布"
+    ]
+  },
+  "en": {
+    "term": "t-distribution",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "母標準偏差が分からないとき、標本平均を標本標準偏差で標準化した値が従う分布。標準正規分布に似た山形で、裾が厚く、自由度が大きいほど標準正規分布に近づく。",
+  "definition_en": "The distribution of a sample mean standardized with the sample standard deviation; it is bell-shaped like the standard normal but has heavier tails, and it approaches the standard normal as the degrees of freedom grow.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "With only eight data points, we use the t-distribution instead of the z-table.",
+      "ja": "データが 8 個しかないので、z 表ではなく t 分布を使う。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the critical value of the t-distribution with 14 degrees of freedom for a 95% confidence interval.",
+      "ja": "95% 信頼区間のための、自由度 14 の t 分布の臨界値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Introductory Statistics は Student's t-distribution とも書く（書き言葉 54 件）。見出しの t-distribution を中に含むので候補には置かなかった（含む関係）。",
+    "用例コーパスの書き言葉 65 件はすべて OpenStax Introductory Statistics。話し言葉は 3 件だけ。"
+  ],
+  "related": [
+    "degrees-of-freedom",
+    "standard-normal-distribution",
+    "confidence-interval",
+    "one-sample-t-test"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 4.2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "t-distribution": 3
+    },
+    "written": {
+      "t-distribution": 65
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

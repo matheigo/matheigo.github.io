@@ -1,0 +1,89 @@
+{
+  "id": "elementary-matrix",
+  "ja": {
+    "term": "基本行列",
+    "reading": "きほんぎょうれつ",
+    "alt": []
+  },
+  "en": {
+    "term": "elementary matrix",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "単位行列に行基本変形を 1 回行ってできる行列。左から掛けるとその行基本変形を行うことになる。",
+  "definition_en": "A matrix obtained from the identity matrix by one elementary row operation; multiplying by it on the left performs that operation.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Each row operation is the same as multiplying by an elementary matrix on the left.",
+      "ja": "行基本変形はどれも、基本行列を左から掛けることと同じだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write A⁻¹ as a product of elementary matrices.",
+      "ja": "A⁻¹ を基本行列の積で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは話し言葉 7 件（MIT OCW）だけ。"
+  ],
+  "related": [
+    "row-operations",
+    "invertible-matrix",
+    "identity-matrix",
+    "lu-decomposition"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "行列の基本変形",
+      "en": "Elementary matrix"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "2.5 Elementary Matrices"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "elementary matrix": 7
+    },
+    "sources": [
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 elementary matrix（2.5 Elementary Matrices・3.2 Determinants and Matrix Inverses・2.7 LU-Factorization）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

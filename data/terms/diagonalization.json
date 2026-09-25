@@ -1,0 +1,85 @@
+{
+  "id": "diagonalization",
+  "ja": {
+    "term": "対角化",
+    "reading": "たいかくか",
+    "alt": []
+  },
+  "en": {
+    "term": "diagonalization",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "正方行列 A を、正則行列 P を使って P⁻¹AP が対角行列になるように変形すること。P の列に固有ベクトルを並べる。",
+  "definition_en": "Finding an invertible matrix P such that P⁻¹AP is diagonal; the columns of P are eigenvectors of A.",
+  "latex": "P^{-1}AP = D",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Once you diagonalize A, computing A to the hundredth power is easy.",
+      "ja": "A を対角化すれば、A の 100 乗も簡単に計算できる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the diagonalization of A, if possible.",
+      "ja": "可能ならば A を対角化せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語は動詞 diagonalize（話し言葉 19 件）をよく使う。名詞の diagonalization は 8 件で、見出しの名詞だけを候補にした（対角化する は動詞）。"
+  ],
+  "related": [
+    "diagonalizable",
+    "eigenvalue",
+    "eigenvector",
+    "similar-matrices"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "3.3 Diagonalization and Eigenvalues"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "diagonalization": 8
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 diagonalization（3.3 Diagonalization and Eigenvalues・5.5 Similarity and Diagonalization・8.2 Orthogonal Diagonalization）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "chi-square-test",
+  "ja": {
+    "term": "カイ二乗検定",
+    "reading": "かいにじょうけんてい",
+    "alt": [
+      "χ² 検定"
+    ]
+  },
+  "en": {
+    "term": "chi-square test",
+    "alt": [
+      "chi-squared test"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "観測度数と期待度数のずれを表す統計量 χ² がカイ二乗分布に従うことを使う検定の総称。適合度検定・独立性の検定・同質性の検定がある。",
+  "definition_en": "Any test based on the statistic χ², which measures how far observed counts are from expected counts and follows a chi-square distribution; it includes goodness-of-fit, independence and homogeneity tests.",
+  "latex": "\\chi^2 = \\sum \\frac{(O - E)^2}{E}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Big differences between observed and expected give you a big chi-square value.",
+      "ja": "観測度数と期待度数の差が大きいと、カイ二乗の値も大きくなる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Perform a chi-square test to determine whether the die is fair.",
+      "ja": "さいころが公正かどうか、カイ二乗検定で判定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の表記は chi-square（OpenStax・AP Statistics の CED）と chi-squared（Wikipedia の記事名）の両方がある。CED の chi-squared は 1 件。",
+    "χ は「カイ」、英語は kai と発音する（chi）。"
+  ],
+  "related": [
+    "goodness-of-fit-test",
+    "test-for-independence",
+    "test-for-homogeneity",
+    "expected-count",
+    "observed-count",
+    "degrees-of-freedom"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "カイ二乗検定",
+      "en": "Chi-squared test"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 3.14・3.15"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "chi-square test": 17
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

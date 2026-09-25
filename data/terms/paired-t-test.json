@@ -1,0 +1,101 @@
+{
+  "id": "paired-t-test",
+  "ja": {
+    "term": "対応のある t 検定",
+    "reading": "たいおうのあるてぃーけんてい",
+    "alt": [
+      "対応のある標本"
+    ]
+  },
+  "en": {
+    "term": "paired samples",
+    "alt": [
+      "paired t-test",
+      "matched pairs t-test"
+    ],
+    "uk": null,
+    "variants": [
+      {
+        "term": "matched pairs",
+        "register": "written",
+        "note": "OpenStax Introductory Statistics の言い方（matched or paired samples）。実験計画の matched pairs design は除いて数えた。話し言葉で 1 件（すべて Khan Academy）、書き言葉で 12 件（OpenStax Introductory Statistics 10・MIT の講義ノート 2）。"
+      }
+    ],
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語は検定の名前。OpenStax Introductory Statistics は検定に名前を付けず、標本の種類（Matched or Paired Samples。節の名前）で呼ぶ。AP Statistics の CED（2026 年版 topic 4.4）は matched pairs design の差に対する one-sample t-test として扱う。paired t-test は用例コーパスで 0 件。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "同じ対象を 2 回測るなど、2 つの標本の値が組になっているとき、組ごとの差の平均が 0 かどうかを t 分布で検定する方法。",
+  "definition_en": "A t-test for data that come in pairs (such as before-and-after measurements on the same subjects): it tests whether the mean of the paired differences is zero.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "These are the same students before and after, so work with the differences: it's paired data.",
+      "ja": "前後で同じ生徒なので、差で考える。対応のあるデータだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Test whether the mean difference between the paired samples is zero.",
+      "ja": "対応のある標本の差の平均が 0 かどうかを検定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "2 つの独立な標本の平均の差を比べる 2 標本 t 検定（two-sample t-test）と取り違えない。差を 1 つの標本とみなすので、計算は 1 標本 t 検定と同じ。",
+    "matched pairs design（対応のある実験計画）は同じ語で実験の組み方を指す。用例コーパスでは直後に design が続くものを除いて数えた。"
+  ],
+  "related": [
+    "one-sample-t-test",
+    "two-sample-t-test",
+    "t-distribution"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 4.2・4.4（matched pairs design）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "matched pairs !design": 1
+    },
+    "written": {
+      "paired samples": 16,
+      "matched pairs !design": 12
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-notes",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -46,13 +46,17 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "簡約階段形まで進めるものは Gauss-Jordan elimination（掃き出し法）と呼び分けることがある。"
+    "簡約階段形まで進めるものは Gauss-Jordan elimination（掃き出し法）と呼び分けることがある。",
+    "行階段形で止めて後ろから代入するか、既約行階段形（reduced row-echelon form）まで進めるかは教科書による。Nicholson は Gauss-Jordan の名前を使わず（0 件）、1.2 Gaussian Elimination の節で行階段形と既約行階段形の両方を扱う。"
   ],
   "related": [
     "augmented-matrix",
     "row-operations",
     "row-echelon-form",
-    "system-of-three-equations"
+    "system-of-three-equations",
+    "reduced-row-echelon-form",
+    "pivot",
+    "system-of-linear-equations"
   ],
   "sources": [
     {
@@ -63,15 +67,21 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "1.2 Gaussian Elimination"
     }
   ],
   "confidence": "likely",
   "reviewed": {
-    "machine": "2026-09-24",
+    "machine": "2026-09-25",
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "Gaussian elimination": 6

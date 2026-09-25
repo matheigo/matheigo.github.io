@@ -1,0 +1,85 @@
+{
+  "id": "observed-count",
+  "ja": {
+    "term": "観測度数",
+    "reading": "かんそくどすう",
+    "alt": []
+  },
+  "en": {
+    "term": "observed value",
+    "alt": [
+      "observed frequency",
+      "observed count"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "実際のデータで各カテゴリ（分割表の各セル）に入った度数。",
+  "definition_en": "The count actually found in each category (or cell of a two-way table) in the data.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Observed minus expected, squared, over expected: add that up over every cell.",
+      "ja": "観測度数から期待度数を引いて 2 乗し、期待度数で割る。それを全部のセルで足す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Record the observed values in the first list and the expected values in the second.",
+      "ja": "観測度数を 1 つ目のリストに、期待度数を 2 つ目のリストに入力せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Introductory Statistics は O = observed values と書く（書き言葉 20 件、文脈 6 件はすべてカイ二乗検定の度数）。AP Statistics の CED（2026 年版）は observed count（2 件）。",
+    "observed value は検定統計量の実現値など、度数でない値にも使う。"
+  ],
+  "related": [
+    "expected-count",
+    "chi-square-test"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 3.15"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "observed value": 20,
+      "observed frequency": 4
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

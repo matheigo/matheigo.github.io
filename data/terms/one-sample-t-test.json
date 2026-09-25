@@ -1,0 +1,82 @@
+{
+  "id": "one-sample-t-test",
+  "ja": {
+    "term": "1 標本 t 検定",
+    "reading": "いちひょうほんてぃーけんてい",
+    "alt": []
+  },
+  "en": {
+    "term": "one-sample t-test",
+    "alt": [
+      "t-test for a mean"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "母標準偏差が分からないとき、1 つの標本の平均をもとに母平均についての仮説を t 分布で検定する方法。",
+  "definition_en": "A test of a claim about one population mean when the population standard deviation is unknown, based on one sample mean and the t-distribution.",
+  "latex": "t = \\frac{\\bar{x} - \\mu_0}{s / \\sqrt{n}}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Since sigma is unknown, this calls for a one-sample t-test.",
+      "ja": "σ が分からないので、1 標本 t 検定を使う場面だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Carry out a one-sample t-test of H₀: μ = 50 at the 5% significance level.",
+      "ja": "有意水準 5% で、H₀: μ = 50 の 1 標本 t 検定を行え。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパス・OpenStax Introductory Statistics とも 0 件。OpenStax は a single population mean using the Student t distribution（節の名前）として扱う。"
+  ],
+  "related": [
+    "t-distribution",
+    "hypothesis-testing",
+    "test-statistic",
+    "two-sample-t-test",
+    "paired-t-test"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 4.4・4.5"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは AP Statistics の CED の呼び方 one-sample t-test（topic 4.4・topic 4.5）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

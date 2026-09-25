@@ -1,0 +1,88 @@
+{
+  "id": "rank-nullity-theorem",
+  "ja": {
+    "term": "階数・退化次数の定理",
+    "reading": "かいすう・たいかじすうのていり",
+    "alt": [
+      "次元定理"
+    ]
+  },
+  "en": {
+    "term": "dimension theorem",
+    "alt": [
+      "rank-nullity theorem"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "m × n 行列 A について、階数と零空間の次元の和が列の数 n に等しいという定理。",
+  "definition_en": "For an m × n matrix A, the rank plus the dimension of the null space equals the number of columns n.",
+  "latex": "\\operatorname{rank} A + \\dim \\operatorname{Nul} A = n",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Five columns and rank three, so by the dimension theorem the null space is two-dimensional.",
+      "ja": "列が 5 つで階数が 3 なので、次元定理から零空間は 2 次元だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the rank-nullity theorem to find the dimension of the kernel.",
+      "ja": "階数・退化次数の定理を用いて核の次元を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは rank-nullity theorem・dimension theorem とも 0 件。Nicholson は dimension theorem（7.2 ほか、17 件）と呼ぶ。rank theorem は教科書によって別の定理（行の階数と列の階数が等しい）を指すので候補にしなかった。",
+    "Wikipedia の記事名は Rank–nullity theorem。"
+  ],
+  "related": [
+    "rank",
+    "null-space",
+    "dimension"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "階数・退化次数の定理",
+      "en": "Rank–nullity theorem"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "7.2 Kernel and Image of a Linear Transformation"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 dimension theorem（7.2 Kernel and Image of a Linear Transformation・7.3 Isomorphisms and Composition・6.6 An Application to Differential Equations）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "pivot",
+  "ja": {
+    "term": "ピボット",
+    "reading": "ぴぼっと",
+    "alt": []
+  },
+  "en": {
+    "term": "pivot",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "行階段形で、各行の先頭にある 0 でない成分。その位置の列をピボット列という。",
+  "definition_en": "The first nonzero entry in a row of a row-echelon form; its column is a pivot column.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The second pivot is zero, so we have to swap rows.",
+      "ja": "2 つ目のピボットが 0 なので、行を入れ替えないといけない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Circle the pivot in each row and identify the pivot columns.",
+      "ja": "各行のピボットに丸をつけ、ピボット列を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは pivot column ／ pivot position ／ first ／ second ／ third pivot ／ product of the pivots などの形で数えた（書き言葉の pivot は OpenStax のプラニメーターや灌漑の軸がほとんど）。話し言葉はほぼ MIT 18.06。",
+    "Nicholson は pivot と言わず leading 1（先頭の 1）と書く。"
+  ],
+  "related": [
+    "reduced-row-echelon-form",
+    "row-echelon-form",
+    "basic-variable",
+    "free-variable"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語は線形代数の用語（pivot）だが、OpenStax（6 冊）・Nicholson・台帳の Wikipedia（曖昧さ回避）のどれでも確かめられない（用例コーパスでは MIT OCW 18.06 だけ）。",
+      "raised": "2026-09-25"
+    }
+  ],
+  "evidence": {
+    "spoken": {
+      "pivot column | pivot position | pivot entry | first pivot | second pivot | third pivot | product of the pivots": 103
+    },
+    "sources": [
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  }
+}

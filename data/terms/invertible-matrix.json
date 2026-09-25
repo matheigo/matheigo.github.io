@@ -1,0 +1,101 @@
+{
+  "id": "invertible-matrix",
+  "ja": {
+    "term": "正則行列",
+    "reading": "せいそくぎょうれつ",
+    "alt": [
+      "可逆行列"
+    ]
+  },
+  "en": {
+    "term": "invertible matrix",
+    "alt": [
+      "nonsingular matrix"
+    ],
+    "uk": null,
+    "variants": [
+      {
+        "term": "matrix is invertible",
+        "register": "spoken",
+        "note": "述語の形（the matrix is invertible）。話し言葉で 14 件（すべて MIT OCW）、書き言葉で 2 件（すべて OpenStax Algebra and Trigonometry）。"
+      }
+    ],
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "逆行列をもつ正方行列。行列式が 0 でないことと同じ。",
+  "definition_en": "A square matrix that has an inverse; equivalently, its determinant is not zero.",
+  "latex": "\\det A \\neq 0",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If the matrix is invertible, the system has exactly one solution.",
+      "ja": "行列が正則なら、連立方程式の解はちょうど 1 つだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that A is an invertible matrix by computing its determinant.",
+      "ja": "行列式を計算して、A が正則行列であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「正則」は英語で invertible（または nonsingular）。regular とは訳さない。"
+  ],
+  "related": [
+    "inverse-matrix",
+    "singular-matrix",
+    "determinant",
+    "elementary-matrix"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "正則行列",
+      "en": "Invertible matrix"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "2.4 Matrix Inverses"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "matrix is invertible": 14,
+      "invertible matrix": 20
+    },
+    "written": {
+      "invertible matrix": 4,
+      "matrix is invertible": 2
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.06",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  }
+}

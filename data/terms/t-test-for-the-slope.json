@@ -1,0 +1,83 @@
+{
+  "id": "t-test-for-the-slope",
+  "ja": {
+    "term": "傾きの t 検定",
+    "reading": "かたむきのてぃーけんてい",
+    "alt": []
+  },
+  "en": {
+    "term": "t-test for the slope",
+    "alt": [
+      "test for the slope"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "回帰直線の傾きをもとに、母集団の回帰直線の傾きが 0（2 変数に直線的な関係がない）かどうかを t 分布で検定する方法。",
+  "definition_en": "A t-test, based on the slope of the sample regression line, of whether the slope of the population regression line is zero.",
+  "latex": "t = \\frac{b - 0}{SE_b}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If the slope could really be zero, there's no linear relationship, and that's what the t-test for the slope checks.",
+      "ja": "傾きが本当は 0 かもしれないなら直線的な関係はない。それを確かめるのが傾きの t 検定だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Conduct a t-test for the slope of the regression line at α = 0.05.",
+      "ja": "α = 0.05 で回帰直線の傾きの t 検定を行え。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "AP Statistics の CED（2026 年版）の単元 5 は回帰の記述だけで、傾きの推測を扱わない（台帳の単元 us-ap-statistics-9-slopes は旧版の分け方）。",
+    "OpenStax Introductory Statistics は傾きではなく相関係数の検定として扱う（節の名前 Testing the Significance of the Correlation Coefficient）。"
+  ],
+  "related": [
+    "regression-line",
+    "correlation-coefficient",
+    "t-distribution"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語は回帰の推測の用語（t-test for the slope）だが、OpenStax（6 冊）・台帳の Wikipedia・AP Statistics の CED（2026 年版）のどれにもなく、用例コーパスでも 0 件。",
+      "raised": "2026-09-25"
+    },
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ],
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  }
+}

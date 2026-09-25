@@ -1,0 +1,91 @@
+{
+  "id": "degrees-of-freedom",
+  "ja": {
+    "term": "自由度",
+    "reading": "じゆうど",
+    "alt": []
+  },
+  "en": {
+    "term": "degrees of freedom",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "t 分布やカイ二乗分布の形を決める数。1 標本の t 分布では標本の大きさから 1 を引いた n − 1。",
+  "definition_en": "The number that fixes the shape of a t- or chi-square distribution; for a one-sample t procedure it is the sample size minus one, n − 1.",
+  "latex": "df = n - 1",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Our sample size is 12, so we have 11 degrees of freedom.",
+      "ja": "標本の大きさが 12 なので、自由度は 11。",
+      "register": "spoken"
+    },
+    {
+      "en": "State the degrees of freedom of the chi-square test statistic.",
+      "ja": "カイ二乗検定の統計量の自由度を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "略記は df（degrees of freedom）。用例コーパスの df は微分 df（d f）と区別できないので数えなかった。",
+    "台帳の langlink（自由度 → Degrees of freedom (physics and chemistry)）は物理の自由度で、出典にしなかった。",
+    "用例コーパスの話し言葉には、統計でない「動かせるパラメータの数」の意味も混ざる（3Blue1Brown・MIT 18.01）。書き言葉 105 件のうち 104 件は OpenStax Introductory Statistics。"
+  ],
+  "related": [
+    "t-distribution",
+    "chi-square-test"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 3.14・4.2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "degrees of freedom": 41
+    },
+    "written": {
+      "degrees of freedom": 105
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

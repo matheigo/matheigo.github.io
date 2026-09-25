@@ -1,0 +1,91 @@
+{
+  "id": "characteristic-polynomial",
+  "ja": {
+    "term": "特性多項式",
+    "reading": "とくせいたこうしき",
+    "alt": [
+      "固有多項式"
+    ]
+  },
+  "en": {
+    "term": "characteristic polynomial",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "正方行列 A について det(A − λI)（または det(λI − A)）を λ の多項式とみたもの。その根が固有値。",
+  "definition_en": "det(A − λI) (or det(λI − A)) viewed as a polynomial in λ for a square matrix A; its roots are the eigenvalues.",
+  "latex": "p(\\lambda) = \\det(A - \\lambda I)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Set the characteristic polynomial equal to zero and solve for lambda.",
+      "ja": "特性多項式を 0 とおいて λ について解く。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the characteristic polynomial of the matrix.",
+      "ja": "行列の特性多項式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "det(A − λI) = 0 のほうは characteristic equation（特性方程式・固有方程式）。微分方程式の特性方程式も同じ名前で大量に出てくるので、候補にしなかった。",
+    "用例コーパスの話し言葉 50 件のうち 41 件は MIT 18.03（線形微分方程式の特性多項式）で、行列の意味は少ない。"
+  ],
+  "related": [
+    "eigenvalue",
+    "determinant"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "固有多項式",
+      "en": "Characteristic polynomial"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "3.3 Diagonalization and Eigenvalues"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "characteristic polynomial": 50
+    },
+    "written": {
+      "characteristic polynomial": 22
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

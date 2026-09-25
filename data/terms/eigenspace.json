@@ -1,0 +1,78 @@
+{
+  "id": "eigenspace",
+  "ja": {
+    "term": "固有空間",
+    "reading": "こゆうくうかん",
+    "alt": []
+  },
+  "en": {
+    "term": "eigenspace",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "固有値 λ に対応する固有ベクトル全体に 0 ベクトルを加えた部分空間。A − λI の零空間。",
+  "definition_en": "The subspace made of all eigenvectors for an eigenvalue λ together with the zero vector; the null space of A − λI.",
+  "latex": "E_\\lambda = \\operatorname{Nul}(A - \\lambda I)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The eigenspace for lambda equals two is a whole plane here.",
+      "ja": "ここでは λ = 2 の固有空間は平面全体だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find a basis for each eigenspace of the matrix.",
+      "ja": "行列の各固有空間の基底を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは 0 件。"
+  ],
+  "related": [
+    "eigenvalue",
+    "eigenvector",
+    "null-space"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "5.5 Similarity and Diagonalization"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 eigenspace（9.3 Invariant Subspaces and Direct Sums・5.5 Similarity and Diagonalization・11.1 Block Triangular Form）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

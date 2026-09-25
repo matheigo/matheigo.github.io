@@ -1,0 +1,82 @@
+{
+  "id": "basic-variable",
+  "ja": {
+    "term": "基本変数",
+    "reading": "きほんへんすう",
+    "alt": [
+      "主変数"
+    ]
+  },
+  "en": {
+    "term": "pivot variable",
+    "alt": [
+      "basic variable",
+      "leading variable"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "連立一次方程式を行階段形にしたとき、ピボットのある列に対応する変数。自由変数を使って表される。",
+  "definition_en": "In a row-reduced linear system, a variable whose column contains a pivot; it is expressed in terms of the free variables.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "x1 and x2 are pivot variables; x3 is free.",
+      "ja": "x1 と x2 が基本変数で、x3 は自由変数。",
+      "register": "spoken"
+    },
+    {
+      "en": "Express the leading variables in terms of the parameters.",
+      "ja": "基本変数をパラメータで表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "教科書により呼び方が違う: MIT 18.06 は pivot variable（話し言葉 29 件）、Nicholson は leading variable（15 件）。basic variable は用例コーパスで 0 件（線形計画法の基底変数も basic variable と言う）。"
+  ],
+  "related": [
+    "free-variable",
+    "pivot",
+    "reduced-row-echelon-form"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "1.2 Gaussian Elimination（leading variable）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "pivot variable": 29
+    },
+    "sources": [
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -69,6 +69,8 @@ export const VARIANTS: [RegExp, string][] = [
   [/\bchange\s+of\s+base\b/g, "change-of-base"],
   // and "row echelon form" (captions, MIT OCW) against "row-echelon form" (OpenStax)
   [/\brow\s+echelon\b/g, "row-echelon"],
+  // (Phase 2 統計・ベクトルの単元 2) "LU factorization" against Nicholson's "LU-factorization"
+  [/\b(lu|qr)\s+factorization/g, "$1-factorization"],
   // (Phase 2 統計の単元) captions write "five number summary"; OpenStax hyphenates
   [/\bfive\s+number\s+summar/g, "five-number summar"],
   // and "box and whisker(s) plot" (captions) against "box-and-whisker plot" (OpenStax)
@@ -592,6 +594,17 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   // batch 4
   "vertex-graph": { vertex: "adjacent vertices | degree of a vertex | vertices u and v | set of vertices" }, // not the vertex of a parabola or polygon
   tree: { tree: "a tree !diagram" }, // not a tree diagram
+  // Phase 2 統計・ベクトルの単元 2, batch 5 (checked in ten contexts each)
+  "paired-t-test": { "matched pairs": "matched pairs !design" }, // not a matched pairs design (an experiment)
+  pivot: { pivot: "pivot column | pivot position | pivot entry | first pivot | second pivot | third pivot | product of the pivots" }, // written "pivot" is a planimeter's or an irrigation pivot
+  minor: { minor: "matrix of minors | expand by minors | minor of the entry | the minor of | determinant of the minor" }, // not the minor axis, not "a minor point"
+  span: { span: "the span of | spans the … space | span the … space | in the span | span of the columns | span of two vectors" }, // not a time span or a bridge's span
+  basis: { basis: "basis for … space | basis vector | orthonormal basis | standard basis | basis for the column | basis for the null | basis for r" }, // not "on the basis of"
+  dimension: {
+    dimension: "dimension of the … space | dimension of a … space | dimension of the null | dimension of the column | dimension of the row | dimension of the subspace | dimension of that space",
+  }, // not "in three dimensions" or a rectangle's dimensions
+  rank: { rank: "rank of the matrix | rank of a matrix | full rank | full column rank | full row rank | rank one matrix | rank r | the rank is | rank of a" }, // not a ranking or a card's rank
+  onto: { onto: "is onto | onto function | onto map | one-to-one and onto | onto mapping | onto transformation" }, // not the preposition (project onto)
   blocking: { blocking: "block design" }, // "blocking" folds into "block": stacks of blocks, Jordan blocks
 };
 
