@@ -1,0 +1,91 @@
+{
+  "id": "rewrite-in-exponential-form",
+  "ja": {
+    "term": "指数の形に直す",
+    "reading": "しすうのかたちになおす",
+    "alt": []
+  },
+  "en": {
+    "term": "rewrite in exponential form",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "log_a M = p を aᵖ = M の形に書き直す。",
+  "definition_en": "To rewrite log_a M = p as aᵖ = M.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Rewrite it in exponential form: log base 2 of x equals 5 means 2 to the fifth equals x.",
+      "ja": "指数の形に直そう。log₂ x = 5 は 2⁵ = x のこと。",
+      "register": "spoken"
+    },
+    {
+      "en": "Rewrite log₄ 64 = 3 in exponential form.",
+      "ja": "log₄ 64 = 3 を指数の形で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "in exponential form は複素数の極形式 re^(iθ)（exponential form）にも使う。"
+  ],
+  "related": [
+    "rewrite-in-logarithmic-form",
+    "logarithm",
+    "undo-the-log"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "in exponential form": 9
+    },
+    "written": {
+      "in exponential form": 9
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "openstax-algtrig",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 in exponential form（本文 9 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

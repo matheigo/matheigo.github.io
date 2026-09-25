@@ -1,0 +1,83 @@
+{
+  "id": "rewrite-in-logarithmic-form",
+  "ja": {
+    "term": "対数の形に直す",
+    "reading": "たいすうのかたちになおす",
+    "alt": []
+  },
+  "en": {
+    "term": "rewrite in logarithmic form",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "aᵖ = M を log_a M = p の形に書き直す。",
+  "definition_en": "To rewrite aᵖ = M as log_a M = p.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Rewrite 10 squared equals 100 in logarithmic form: log of 100 equals 2.",
+      "ja": "10² = 100 を対数の形に直すと log 100 = 2。",
+      "register": "spoken"
+    },
+    {
+      "en": "Rewrite 3^(−2) = 1/9 in logarithmic form.",
+      "ja": "3⁻² = 1/9 を対数の形で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "rewrite-in-exponential-form",
+    "logarithm"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "in logarithmic form": 1
+    },
+    "written": {
+      "in logarithmic form": 5
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。見出しは OpenStax の呼び方 in logarithmic form（本文 5 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

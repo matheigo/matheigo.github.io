@@ -1,0 +1,82 @@
+{
+  "id": "zeros-of-a-polynomial",
+  "ja": {
+    "term": "多項式の零点",
+    "reading": "たこうしきのれいてん",
+    "alt": []
+  },
+  "en": {
+    "term": "zeros of a polynomial",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "多項式 P(x) の値が 0 になる x。方程式 P(x) = 0 の解と同じ。",
+  "definition_en": "The values of x where a polynomial P(x) equals 0: the solutions of P(x) = 0.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The zeros of the polynomial are where the graph crosses or touches the x-axis.",
+      "ja": "多項式の零点は、グラフが x 軸と交わる（接する）ところ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find all zeros of P(x) = x³ − 2x² + 4x − 8, including complex zeros.",
+      "ja": "P(x) = x³ − 2x² + 4x − 8 の零点を、複素数も含めてすべて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校の教科書は「方程式 P(x) = 0 の解」として扱う。米国では zero（関数の値が 0 になる x）・root（方程式の解）・x-intercept（グラフの交点）を使い分ける。",
+    "冠詞の違う zeros of the polynomial は書き言葉 7 件。"
+  ],
+  "related": [
+    "solution",
+    "factor-theorem",
+    "fundamental-theorem-of-algebra",
+    "rational-root-theorem"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "zeros of a polynomial": 1
+    },
+    "written": {
+      "zeros of a polynomial": 22
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

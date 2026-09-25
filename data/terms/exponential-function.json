@@ -1,0 +1,105 @@
+{
+  "id": "exponential-function",
+  "ja": {
+    "term": "指数関数",
+    "reading": "しすうかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "exponential function",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "a > 0, a ≠ 1 の定数 a について y = aˣ で表される関数。a > 1 なら増加、0 < a < 1 なら減少する。",
+  "definition_en": "A function y = aˣ with a constant base a > 0, a ≠ 1; it is increasing when a > 1 and decreasing when 0 < a < 1.",
+  "latex": "y = a^x\\quad(a > 0,\\ a \\ne 1)",
+  "spoken_en": "y equals a to the x",
+  "examples": [
+    {
+      "en": "The graph of an exponential function always passes through (0, 1).",
+      "ja": "指数関数のグラフは必ず (0, 1) を通る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Sketch the graph of the exponential function y = 2^(x−1) + 3 and state its asymptote.",
+      "ja": "指数関数 y = 2^(x−1) + 3 のグラフをかき、漸近線を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の Precalculus では y = abˣ の形（a は初期値、b は増加・減少の率）でも書く（OpenStax Algebra and Trigonometry）。"
+  ],
+  "related": [
+    "exponential-equation",
+    "logarithmic-function",
+    "asymptote",
+    "exponential-growth",
+    "decreasing"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "指数関数",
+      "en": "Natural exponential function"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "exponential function": 153
+    },
+    "written": {
+      "exponential function": 282
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

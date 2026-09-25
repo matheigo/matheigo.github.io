@@ -1,0 +1,91 @@
+{
+  "id": "change-of-base-formula",
+  "ja": {
+    "term": "底の変換公式",
+    "reading": "ていのへんかんこうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "change-of-base formula",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "log_a b = log_c b / log_c a（c > 0, c ≠ 1）。底の違う対数を同じ底にそろえる。",
+  "definition_en": "log_a b = log_c b / log_c a (c > 0, c ≠ 1), used to rewrite logarithms with a common base.",
+  "latex": "\\log_a b = \\frac{\\log_c b}{\\log_c a}",
+  "spoken_en": "log base a of b equals log base c of b over log base c of a",
+  "examples": [
+    {
+      "en": "Your calculator only has log and ln, so use the change-of-base formula.",
+      "ja": "電卓には log と ln しかないので、底の変換公式を使う。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the change-of-base formula to show that log₂ 3 · log₃ 4 = 2.",
+      "ja": "底の変換公式を用いて log₂ 3 · log₃ 4 = 2 を示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "字幕では change of base formula とハイフンなしで書かれることが多い（用例コーパスでは同じ言い方としてまとめた）。"
+  ],
+  "related": [
+    "logarithm",
+    "common-logarithm",
+    "natural-logarithm"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "change-of-base formula": 23
+    },
+    "written": {
+      "change-of-base formula": 31
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

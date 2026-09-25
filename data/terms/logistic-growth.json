@@ -1,0 +1,97 @@
+{
+  "id": "logistic-growth",
+  "ja": {
+    "term": "ロジスティック増加",
+    "reading": "ろじすてぃっくぞうか",
+    "alt": []
+  },
+  "en": {
+    "term": "logistic growth",
+    "alt": [],
+    "variants": [
+      {
+        "term": "logistic growth",
+        "register": "written",
+        "note": "話し言葉で 5 件（すべて MIT OCW）、書き言葉で 21 件（OpenStax Algebra and Trigonometry 15・OpenStax Calculus 6）。"
+      },
+      {
+        "term": "logistic model",
+        "register": "written",
+        "note": "話し言葉では 0 件、書き言葉で 16 件（OpenStax Algebra and Trigonometry 13・OpenStax Calculus 3）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「ロジスティック増加」は日本の高校の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "はじめは指数関数的に増え、上限（環境収容力）に近づくにつれて増え方が鈍くなる増加。f(t) = c/(1 + ae^(−bt)) で表す。",
+  "definition_en": "Growth that is nearly exponential at first and levels off as it approaches a limiting value (the carrying capacity), modeled by f(t) = c/(1 + ae^(−bt)).",
+  "latex": "f(t) = \\frac{c}{1 + a e^{-bt}}",
+  "spoken_en": "f of t equals c over one plus a e to the negative b t",
+  "examples": [
+    {
+      "en": "Logistic growth looks exponential at first, then flattens out at the carrying capacity.",
+      "ja": "ロジスティック増加は、はじめは指数関数的で、やがて環境収容力で平らになる。",
+      "register": "spoken"
+    },
+    {
+      "en": "A rumor spreads according to the logistic model N(t) = 1000/(1 + 99e^(−0.5t)). When will 500 people have heard it?",
+      "ja": "うわさがロジスティックモデル N(t) = 1000/(1 + 99e^(−0.5t)) に従って広がる。500 人が聞くのはいつか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "微分方程式としての形は logistic-differential-equation を参照。"
+  ],
+  "related": [
+    "exponential-growth",
+    "logistic-differential-equation",
+    "exponential-model"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "logistic growth": 5
+    },
+    "written": {
+      "logistic growth": 21,
+      "logistic model": 16
+    },
+    "sources": [
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

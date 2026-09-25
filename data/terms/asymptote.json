@@ -1,0 +1,102 @@
+{
+  "id": "asymptote",
+  "ja": {
+    "term": "漸近線",
+    "reading": "ぜんきんせん",
+    "alt": []
+  },
+  "en": {
+    "term": "asymptote",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III",
+      "数C"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "曲線が限りなく近づいていく直線。",
+  "definition_en": "A line that a curve gets closer and closer to.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "y = 2^x never touches the x-axis — the x-axis is a horizontal asymptote.",
+      "ja": "y = 2ˣ は x 軸に触れない。x 軸が水平漸近線。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the asymptotes of the hyperbola x²/9 − y²/4 = 1.",
+      "ja": "双曲線 x²/9 − y²/4 = 1 の漸近線を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国では垂直（vertical）・水平（horizontal）・斜め（slant ／ oblique）と漸近線の向きで呼び分ける。find-the-asymptotes を参照。"
+  ],
+  "related": [
+    "find-the-asymptotes",
+    "exponential-function",
+    "logarithmic-function",
+    "limit-at-infinity"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "漸近線",
+      "en": "Asymptote"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "asymptote": 386
+    },
+    "written": {
+      "asymptote": 471
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

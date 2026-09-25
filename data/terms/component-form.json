@@ -1,0 +1,82 @@
+{
+  "id": "component-form",
+  "ja": {
+    "term": "成分表示",
+    "reading": "せいぶんひょうじ",
+    "alt": [
+      "成分形"
+    ]
+  },
+  "en": {
+    "term": "component form",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "ベクトルを x 成分と y 成分（空間では z 成分も）の組 (a₁, a₂) で表すこと。",
+  "definition_en": "Writing a vector by its x- and y-components (and z in space) as ⟨a₁, a₂⟩.",
+  "latex": "\\vec{a} = (a_1, a_2)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In component form, you just subtract the initial point from the terminal point.",
+      "ja": "成分表示では、終点から始点を引くだけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the component form of the vector from P(1, 4) to Q(−2, 6).",
+      "ja": "P(1, 4) から Q(−2, 6) へのベクトルを成分表示せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の教科書は成分表示を山かっこ ⟨a₁, a₂⟩ で書き、点の座標 (a₁, a₂) と区別する（OpenStax Calculus Volume 3）。日本の教科書は丸かっこ。"
+  ],
+  "related": [
+    "vector",
+    "standard-unit-vectors"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "component form": 1
+    },
+    "written": {
+      "component form": 75
+    },
+    "sources": [
+      "mit-18.02",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

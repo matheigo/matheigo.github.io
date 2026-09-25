@@ -1,0 +1,98 @@
+{
+  "id": "arccosine",
+  "ja": {
+    "term": "アークコサイン",
+    "reading": "あーくこさいん",
+    "alt": [
+      "逆余弦",
+      "cos⁻¹"
+    ]
+  },
+  "en": {
+    "term": "inverse cosine",
+    "alt": [
+      "arccosine"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "cos x を 0 ≦ x ≦ π に制限した関数の逆関数。arccos x または cos⁻¹ x と書く。",
+  "definition_en": "The inverse of cos x restricted to 0 ≤ x ≤ π, written arccos x or cos⁻¹ x.",
+  "latex": "y = \\cos^{-1} x \\iff \\cos y = x,\\ 0 \\le y \\le \\pi",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Inverse cosine always gives an angle between 0 and π.",
+      "ja": "arccos はいつも 0 から π の間の角を返す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the angle between the vectors u and v by computing cos⁻¹((u · v)/(|u||v|)).",
+      "ja": "cos⁻¹((u·v)/(|u||v|)) を計算して、ベクトル u, v のなす角を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数式の中の arccos は書き言葉に 32 件（OpenStax Calculus Volume 3 のベクトルのなす角など）。読むときは inverse cosine か arc cosine。"
+  ],
+  "related": [
+    "arcsine",
+    "arctangent",
+    "inverse-trigonometric-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "逆三角関数",
+      "en": "Inverse trigonometric functions"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "inverse cosine": 17,
+      "arccosine": 1
+    },
+    "written": {
+      "inverse cosine": 15,
+      "arccosine": 3
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

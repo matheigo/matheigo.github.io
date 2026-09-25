@@ -1,0 +1,83 @@
+{
+  "id": "leading-digit",
+  "ja": {
+    "term": "最高位の数字",
+    "reading": "さいこういのすうじ",
+    "alt": []
+  },
+  "en": {
+    "term": "first digit",
+    "alt": [
+      "leading digit"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "整数を 10 進法で書いたときの一番上の位の数字。常用対数の小数部分から求められる。",
+  "definition_en": "The digit in the highest place of an integer written in base 10; it can be found from the decimal part of its common logarithm.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The decimal part is 0.35, and 10 to the 0.35 is about 2.2, so the first digit is 2.",
+      "ja": "小数部分は 0.35 で、10^0.35 は約 2.2 なので、最高位の数字は 2。",
+      "register": "spoken"
+    },
+    {
+      "en": "Using log₁₀ 2 = 0.3010 and log₁₀ 3 = 0.4771, find the leading digit of 3^40.",
+      "ja": "log₁₀ 2 = 0.3010, log₁₀ 3 = 0.4771 として、3⁴⁰ の最高位の数字を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは leading digit は 0 件。first digit は話し言葉 14 件だが、多くは位取りや数の並びの説明で、常用対数の問題ではない。"
+  ],
+  "related": [
+    "number-of-digits",
+    "common-logarithm"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "first digit": 14
+    },
+    "written": {
+      "first digit": 4
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-stats",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  }
+}

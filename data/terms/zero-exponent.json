@@ -1,0 +1,95 @@
+{
+  "id": "zero-exponent",
+  "ja": {
+    "term": "0 乗",
+    "reading": "ぜろじょう",
+    "alt": [
+      "零乗",
+      "0 の指数"
+    ]
+  },
+  "en": {
+    "term": "zero exponent",
+    "alt": [],
+    "variants": [
+      {
+        "term": "to the zero power",
+        "register": "spoken",
+        "note": "「x の 0 乗」の読み（x to the zero power）。話し言葉で 65 件（Khan Academy 42・Professor Leonard 8・The Organic Chemistry Tutor 6 ほか 9）、書き言葉では 0 件。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "a ≠ 0 のとき a⁰ = 1 と定めること。",
+  "definition_en": "The rule a⁰ = 1 for a ≠ 0.",
+  "latex": "a^0 = 1\\quad(a \\ne 0)",
+  "spoken_en": "a to the zero power equals one",
+  "examples": [
+    {
+      "en": "Anything to the zero power is 1, as long as it isn't zero.",
+      "ja": "0 でないものの 0 乗は 1。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the zero exponent rule to simplify (3x²y)⁰.",
+      "ja": "(3x²y)⁰ を簡単にせよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "0⁰ は定義しない（undefined、または indeterminate と言う）。"
+  ],
+  "related": [
+    "negative-exponent",
+    "laws-of-exponents"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "to the zero power": 65
+    },
+    "written": {
+      "zero exponent": 15
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-algtrig",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

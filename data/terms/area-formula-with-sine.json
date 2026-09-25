@@ -1,0 +1,81 @@
+{
+  "id": "area-formula-with-sine",
+  "ja": {
+    "term": "三角形の面積 ½ab sin C",
+    "reading": "さんかっけいのめんせき",
+    "alt": []
+  },
+  "en": {
+    "term": "area of an oblique triangle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "2 辺 a, b とその間の角 C から、三角形の面積を S = (1/2)ab sin C で求める公式。",
+  "definition_en": "The formula S = (1/2)ab sin C for the area of a triangle from two sides a, b and the included angle C.",
+  "latex": "S = \\frac{1}{2}ab\\sin C",
+  "spoken_en": "S equals one half a b sine C",
+  "examples": [
+    {
+      "en": "You don't need the height — one half times two sides times the sine of the angle between them.",
+      "ja": "高さはいらない。2 辺と、その間の角の sin の積の半分。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the area of an oblique triangle with sides 8 and 11 and included angle 40°.",
+      "ja": "2 辺が 8, 11 でその間の角が 40° の三角形の面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "oblique triangle は直角でない三角形のこと。OpenStax Algebra and Trigonometry は節の中で area of an oblique triangle と呼ぶ（書き言葉 7 件）。授業では単に the area formula with sine と説明する。"
+  ],
+  "related": [
+    "solving-triangles",
+    "area-of-a-sector"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "area of an oblique triangle": 7
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 7 件（10 未満））。見出しは OpenStax の呼び方 area of an oblique triangle（本文 7 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

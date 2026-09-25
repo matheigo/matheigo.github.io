@@ -1,0 +1,107 @@
+{
+  "id": "common-logarithm",
+  "ja": {
+    "term": "常用対数",
+    "reading": "じょうようたいすう",
+    "alt": []
+  },
+  "en": {
+    "term": "common logarithm",
+    "alt": [
+      "common log"
+    ],
+    "variants": [
+      {
+        "term": "log base 10",
+        "register": "spoken",
+        "note": "底の読み。話し言葉で 67 件（3Blue1Brown 46・Khan Academy 11・patrickJMT 5 ほか 5）、書き言葉で 1 件（すべて OpenStax Algebra and Trigonometry）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "10 を底とする対数 log₁₀ x。",
+  "definition_en": "The logarithm to base 10, log₁₀ x.",
+  "latex": "\\log_{10} x",
+  "spoken_en": "log base ten of x",
+  "examples": [
+    {
+      "en": "Log base 10 of 1000 is 3, because 10 cubed is 1000.",
+      "ja": "log₁₀ 1000 は 3。10³ = 1000 だから。",
+      "register": "spoken"
+    },
+    {
+      "en": "Using log₁₀ 2 = 0.3010, find the common logarithm of 5.",
+      "ja": "log₁₀ 2 = 0.3010 を用いて、5 の常用対数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国では底を省いた log x が常用対数（OpenStax Algebra and Trigonometry）。日本の高校の数II では底 10 を省かず log₁₀ x と書く。",
+    "話し言葉の log base 10 は 67 件のうち 46 件が 3Blue1Brown。"
+  ],
+  "related": [
+    "logarithm",
+    "natural-logarithm",
+    "number-of-digits"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "常用対数",
+      "en": "Common logarithm"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "log base 10": 67,
+      "common logarithm": 1,
+      "common log": 2
+    },
+    "written": {
+      "common logarithm": 21,
+      "common log": 8,
+      "log base 10": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

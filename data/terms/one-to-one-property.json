@@ -1,0 +1,76 @@
+{
+  "id": "one-to-one-property",
+  "ja": {
+    "term": "一対一の性質",
+    "reading": "いちたいいちのせいしつ",
+    "alt": []
+  },
+  "en": {
+    "term": "one-to-one property",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「一対一の性質」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書では、指数関数・対数関数が単調であることから直接 aˣ = aʸ ⇔ x = y を使い、名前をつけない。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "a > 0, a ≠ 1 のとき、aˣ = aʸ ⇔ x = y、log_a M = log_a N ⇔ M = N（M, N > 0）であること。",
+  "definition_en": "For a > 0, a ≠ 1: aˣ = aʸ exactly when x = y, and log_a M = log_a N exactly when M = N (M, N > 0).",
+  "latex": "a^x = a^y \\iff x = y",
+  "spoken_en": "a to the x equals a to the y if and only if x equals y",
+  "examples": [
+    {
+      "en": "Both sides are powers of 3, so by the one-to-one property the exponents are equal.",
+      "ja": "両辺とも 3 の累乗なので、一対一の性質から指数が等しい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the one-to-one property to solve log₅(3x − 1) = log₅(x + 7).",
+      "ja": "一対一の性質を用いて log₅(3x − 1) = log₅(x + 7) を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "書き言葉の 44 件はすべて OpenStax Algebra and Trigonometry。話し言葉は 0 件。"
+  ],
+  "related": [
+    "one-to-one",
+    "exponential-equation",
+    "logarithmic-equation",
+    "write-with-the-same-base"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "one-to-one property": 44
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  }
+}

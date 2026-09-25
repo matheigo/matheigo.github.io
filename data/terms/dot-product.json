@@ -1,0 +1,92 @@
+{
+  "id": "dot-product",
+  "ja": {
+    "term": "内積",
+    "reading": "ないせき",
+    "alt": [
+      "ドット積"
+    ]
+  },
+  "en": {
+    "term": "dot product",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "高校の「内積」は英語の dot product（OpenStax は scalar product とも書く）。大学の線形代数では一般の内積を inner product と呼び、dot product はその特別な場合。用例コーパスの inner product（話し言葉 52 件）はほぼ MIT 18.06。",
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "2 つのベクトル a, b について |a||b| cos θ で定める実数 a·b。成分では a₁b₁ + a₂b₂。",
+  "definition_en": "The number a·b = |a||b| cos θ for vectors a and b; in components, a₁b₁ + a₂b₂.",
+  "latex": "\\vec{a}\\cdot\\vec{b} = |\\vec{a}||\\vec{b}|\\cos\\theta = a_1 b_1 + a_2 b_2",
+  "spoken_en": "a dot b equals the magnitude of a times the magnitude of b times cosine theta",
+  "examples": [
+    {
+      "en": "If the dot product is zero, the vectors are perpendicular.",
+      "ja": "内積が 0 なら、2 つのベクトルは垂直。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the dot product of a = (3, −2) and b = (4, 1), and the angle between them.",
+      "ja": "a = (3, −2), b = (4, 1) の内積と、なす角を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "a·b は a dot b と読む。"
+  ],
+  "related": [
+    "vector",
+    "cauchy-schwarz-inequality"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ドット積",
+      "en": "Dot product"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "dot product": 169
+    },
+    "written": {
+      "dot product": 119
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

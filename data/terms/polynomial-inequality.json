@@ -1,0 +1,78 @@
+{
+  "id": "polynomial-inequality",
+  "ja": {
+    "term": "多項式不等式",
+    "reading": "たこうしきふとうしき",
+    "alt": [
+      "高次不等式"
+    ]
+  },
+  "en": {
+    "term": "polynomial inequality",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「多項式不等式」は日本の教科書に無い、本プロジェクトの訳語（日本では 3 次以上のものを高次不等式と呼ぶ）。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "多項式を含む不等式 P(x) > 0 など。零点で数直線を区切り、区間ごとの符号を調べて解く。",
+  "definition_en": "An inequality such as P(x) > 0 for a polynomial P, solved by splitting the number line at the zeros and checking the sign on each interval.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Find the zeros, put them on a number line, and test a point in each interval.",
+      "ja": "零点を求めて数直線に並べ、各区間で 1 点ずつ試す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the polynomial inequality (x + 2)(x − 1)(x − 4) < 0.",
+      "ja": "不等式 (x + 2)(x − 1)(x − 4) < 0 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパス（OpenStax 6 冊を含む）には 0 件。区間ごとに符号を調べる手順は test-point と sign-chart-inequality を参照。"
+  ],
+  "related": [
+    "sign-chart-inequality",
+    "test-point",
+    "zeros-of-a-polynomial"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

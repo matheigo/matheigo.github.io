@@ -1,0 +1,79 @@
+{
+  "id": "solving-triangles",
+  "ja": {
+    "term": "三角形を解く",
+    "reading": "さんかっけいをとく",
+    "alt": []
+  },
+  "en": {
+    "term": "solve the triangle",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "三角形の辺と角のうちわかっているものから、残りの辺と角をすべて求める。正弦定理・余弦定理を使う。",
+  "definition_en": "To find all the missing sides and angles of a triangle from the known ones, using the law of sines and the law of cosines.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We know two sides and the included angle, so use the law of cosines first.",
+      "ja": "2 辺とその間の角がわかっているので、まず余弦定理を使う。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the triangle ABC with a = 7, b = 5, and C = 60°.",
+      "ja": "a = 7, b = 5, C = 60° の三角形 ABC を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の教科書は正弦定理を law of sines、余弦定理を law of cosines と呼ぶ（OpenStax Algebra and Trigonometry）。"
+  ],
+  "related": [
+    "ambiguous-case",
+    "area-formula-with-sine"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "solve the triangle": 1
+    },
+    "written": {
+      "solve the triangle": 13
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-24"
+  }
+}

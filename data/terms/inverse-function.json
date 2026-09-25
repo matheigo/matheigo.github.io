@@ -1,0 +1,103 @@
+{
+  "id": "inverse-function",
+  "ja": {
+    "term": "逆関数",
+    "reading": "ぎゃくかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "inverse function",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "y = f(x) を x について解いて x と y を入れかえた関数 f⁻¹(x)。f が 1 対 1 のときに存在し、グラフは y = f(x) と直線 y = x に関して対称。",
+  "definition_en": "The function f⁻¹(x) obtained by solving y = f(x) for x and swapping x and y; it exists when f is one-to-one, and its graph is the reflection of y = f(x) across y = x.",
+  "latex": "f^{-1}(f(x)) = x",
+  "spoken_en": "f inverse of f of x equals x",
+  "examples": [
+    {
+      "en": "The inverse function undoes whatever f does.",
+      "ja": "逆関数は、f がしたことを元に戻す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the inverse function of f(x) = (2x + 1)/(x − 3) and state its domain.",
+      "ja": "f(x) = (2x + 1)/(x − 3) の逆関数を求め、その定義域を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "f⁻¹(x) は 1/f(x) ではない。f inverse of x と読む。"
+  ],
+  "related": [
+    "find-the-inverse",
+    "one-to-one",
+    "logarithmic-function",
+    "restricted-domain",
+    "derivative-of-an-inverse-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "逆写像",
+      "en": "Inverse function"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "inverse function": 115
+    },
+    "written": {
+      "inverse function": 166
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

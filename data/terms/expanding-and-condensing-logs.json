@@ -1,0 +1,87 @@
+{
+  "id": "expanding-and-condensing-logs",
+  "ja": {
+    "term": "対数の展開と圧縮",
+    "reading": "たいすうのてんかいとあっしゅく",
+    "alt": []
+  },
+  "en": {
+    "term": "expand the logarithm",
+    "alt": [
+      "condense the logarithm"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": "見出しの「対数の展開と圧縮」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書では「対数の性質を使って式を変形する」とだけ言う。米国の授業では、対数の性質で 1 つの log を和・差に分けることを expand、和・差を 1 つの log にまとめることを condense と呼ぶ。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "対数の性質を使って、log(MN) を log M + log N のように分ける（展開）、または逆に 1 つの対数にまとめる（圧縮）こと。",
+  "definition_en": "Using the properties of logarithms to split one logarithm into a sum or difference (expand), or to combine several into one (condense).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To condense, go backwards: the coefficient becomes an exponent, and the plus becomes a product.",
+      "ja": "まとめるときは逆にたどる。係数は指数に、足し算は掛け算になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Expand the logarithm log₂(8x³/√y). Then condense 2 ln x − ln(x + 1) into a single logarithm.",
+      "ja": "log₂(8x³/√y) を対数の和・差に分けよ。また 2 ln x − ln(x + 1) を 1 つの対数にまとめよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは expand the logarithm ／ condense the logarithm とも書き言葉 3 件ずつ（OpenStax Algebra and Trigonometry）で、決まった言い方としては少ない。見出しは規則（③ → OpenStax の呼び方）で expand the logarithm にした。"
+  ],
+  "related": [
+    "properties-of-logarithms",
+    "logarithm"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "expand the logarithm": 1
+    },
+    "written": {
+      "expand the logarithm": 3,
+      "condense the logarithm": 3
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 expand the logarithm（本文 3 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "ambiguous-case",
+  "ja": {
+    "term": "曖昧な場合",
+    "reading": "あいまいなばあい",
+    "alt": [
+      "2 通りの三角形ができる場合"
+    ]
+  },
+  "en": {
+    "term": "ambiguous case",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「曖昧な場合」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書では、2 辺とその一方の対角が与えられたときに三角形が 2 つできる場合を、名前をつけずに扱う。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "2 辺とその一方の対角（SSA）が与えられたとき、条件を満たす三角形が 0 個・1 個・2 個のどれにもなりうる場合。",
+  "definition_en": "The situation where two sides and an angle opposite one of them (SSA) are given, so there may be no triangle, one, or two.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "This is the ambiguous case, so check whether the supplement of B also works.",
+      "ja": "これは曖昧な場合なので、B の補角でも三角形ができるか確かめよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "In triangle ABC, a = 6, b = 8, and A = 30°. Find all possible values of B.",
+      "ja": "三角形 ABC で a = 6, b = 8, A = 30° のとき、B として考えられる値をすべて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは書き言葉 7 件（OpenStax Algebra and Trigonometry）・話し言葉 1 件。"
+  ],
+  "related": [
+    "solving-triangles"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "ambiguous case": 1
+    },
+    "written": {
+      "ambiguous case": 7
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 7 件（10 未満））。見出しは OpenStax の呼び方 ambiguous case（本文 7 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

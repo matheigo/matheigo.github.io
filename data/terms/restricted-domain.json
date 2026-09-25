@@ -1,0 +1,100 @@
+{
+  "id": "restricted-domain",
+  "ja": {
+    "term": "定義域の制限",
+    "reading": "ていぎいきのせいげん",
+    "alt": []
+  },
+  "en": {
+    "term": "restricted domain",
+    "alt": [],
+    "variants": [
+      {
+        "term": "restrict the domain",
+        "register": "written",
+        "note": "動詞の言い方。話し言葉で 4 件（Khan Academy 3・Professor Leonard 1）、書き言葉で 24 件（OpenStax Algebra and Trigonometry 17・OpenStax Calculus 7）。"
+      },
+      {
+        "term": "restricted domain",
+        "register": "written",
+        "note": "話し言葉で 3 件（Khan Academy 2・Professor Leonard 1）、書き言葉で 22 件（OpenStax Algebra and Trigonometry 15・OpenStax Calculus 7）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "関数の定義域を一部に限ること。1 対 1 でない関数に逆関数を考えるときなどに使う。",
+  "definition_en": "Limiting a function's domain to part of it, for example so that a function that is not one-to-one has an inverse.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "x squared isn't one-to-one, so restrict the domain to x ≥ 0.",
+      "ja": "x² は 1 対 1 ではないので、定義域を x ≧ 0 に制限する。",
+      "register": "spoken"
+    },
+    {
+      "en": "On the restricted domain x ≥ 2, find the inverse of f(x) = (x − 2)² + 1.",
+      "ja": "定義域を x ≧ 2 に制限したとき、f(x) = (x − 2)² + 1 の逆関数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "逆三角関数は、三角関数の定義域を制限して逆関数をつくったもの（sin は [−π/2, π/2]）。"
+  ],
+  "related": [
+    "inverse-function",
+    "one-to-one",
+    "inverse-trigonometric-function",
+    "find-the-domain"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "restrict the domain": 4,
+      "restricted domain": 3
+    },
+    "written": {
+      "restricted domain": 22,
+      "restrict the domain": 24
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

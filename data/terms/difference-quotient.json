@@ -1,0 +1,87 @@
+{
+  "id": "difference-quotient",
+  "ja": {
+    "term": "差分商",
+    "reading": "さぶんしょう",
+    "alt": []
+  },
+  "en": {
+    "term": "difference quotient",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「差分商」は日本の高校の教科書に無い、本プロジェクトの訳語。日本の高校では (f(a + h) − f(a))/h を「平均変化率」として扱い、別の名前をつけない。米国の Precalculus・Calculus では difference quotient と名前で呼ぶ。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "(f(x + h) − f(x))/h の形の式。x から x + h までの平均変化率で、h → 0 の極限が導関数。",
+  "definition_en": "The expression (f(x + h) − f(x))/h: the average rate of change from x to x + h, whose limit as h → 0 is the derivative.",
+  "latex": "\\frac{f(x + h) - f(x)}{h}",
+  "spoken_en": "f of x plus h minus f of x, over h",
+  "examples": [
+    {
+      "en": "Simplify the difference quotient first, and then let h go to zero.",
+      "ja": "まず差分商を簡単にしてから、h を 0 に近づける。",
+      "register": "spoken"
+    },
+    {
+      "en": "For f(x) = x² − 3x, find and simplify the difference quotient (f(x + h) − f(x))/h.",
+      "ja": "f(x) = x² − 3x について、(f(x + h) − f(x))/h を計算して簡単にせよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "average-rate-of-change",
+    "limit-definition-of-the-derivative",
+    "derivative"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "差分商",
+      "en": "Difference quotient"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "difference quotient": 34
+    },
+    "written": {
+      "difference quotient": 23
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

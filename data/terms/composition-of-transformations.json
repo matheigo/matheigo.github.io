@@ -1,0 +1,91 @@
+{
+  "id": "composition-of-transformations",
+  "ja": {
+    "term": "合成変換",
+    "reading": "ごうせいへんかん",
+    "alt": [
+      "変換の合成",
+      "関数の変換の合成"
+    ]
+  },
+  "en": {
+    "term": "combining transformations",
+    "alt": [
+      "composition of transformations"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "functions",
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "平行移動・対称移動・拡大縮小などの変換を続けて行うこと。順番によって結果が変わることがある。",
+  "definition_en": "Carrying out transformations such as shifts, reflections, and stretches one after another; the order can change the result.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Do the horizontal stretch before the shift, or you'll get a different graph.",
+      "ja": "横の拡大を平行移動より先にしないと、別のグラフになる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Describe the combination of transformations that takes the graph of y = √x to the graph of y = −2√(x + 3).",
+      "ja": "y = √x のグラフを y = −2√(x + 3) のグラフに移す変換の組合せを説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Algebra and Trigonometry は関数のグラフの変換をまとめて行うことを combining transformations と書く（本文 3 件）。線形代数では線形変換の合成（composition）を指す。"
+  ],
+  "related": [
+    "stretch-vertically",
+    "compress-horizontally",
+    "reflection",
+    "phase-shift"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "combining transformations": 3
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 combining transformations（本文 3 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

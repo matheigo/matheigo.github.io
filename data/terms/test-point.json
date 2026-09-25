@@ -1,0 +1,96 @@
+{
+  "id": "test-point",
+  "ja": {
+    "term": "テスト点",
+    "reading": "てすとてん",
+    "alt": [
+      "代表点"
+    ]
+  },
+  "en": {
+    "term": "test point",
+    "alt": [],
+    "variants": [
+      {
+        "term": "test value",
+        "register": "spoken",
+        "note": "授業の言い方（多くは Khan Academy）。話し言葉で 10 件（Khan Academy 8・patrickJMT 1・blackpenredpen 1）、書き言葉で 1 件（すべて OpenStax Algebra and Trigonometry）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「テスト点」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書では区間の代表の値を代入して符号を調べる手順に名前をつけない。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I",
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "不等式や導関数の符号を調べるとき、各区間から 1 つ選んで代入する値。",
+  "definition_en": "A value picked from each interval and plugged in to find the sign of an expression, an inequality, or a derivative there.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Pick a test value in each interval — zero is usually the easiest.",
+      "ja": "各区間から 1 つ値を選んで試す。0 が一番楽なことが多い。",
+      "register": "spoken"
+    },
+    {
+      "en": "Choose a test point in each interval to determine where f′(x) = x² − 4 is positive.",
+      "ja": "各区間から代表の点を選び、f′(x) = x² − 4 が正となる区間を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "書き言葉の test point 39 件はすべて OpenStax Calculus Volume 1（導関数の符号）。話し言葉は test value が 10 件（Khan Academy 8）。"
+  ],
+  "related": [
+    "sign-chart-inequality",
+    "polynomial-inequality",
+    "first-derivative-test"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "test value": 10,
+      "test point": 1
+    },
+    "written": {
+      "test point": 39,
+      "test value": 1
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

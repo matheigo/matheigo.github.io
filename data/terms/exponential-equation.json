@@ -1,0 +1,84 @@
+{
+  "id": "exponential-equation",
+  "ja": {
+    "term": "指数方程式",
+    "reading": "しすうほうていしき",
+    "alt": []
+  },
+  "en": {
+    "term": "exponential equation",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "未知数を指数に含む方程式。底をそろえるか、両辺の対数をとって解く。",
+  "definition_en": "An equation with the unknown in an exponent, solved by writing both sides with the same base or by taking logs of both sides.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If you can write both sides as powers of 2, just set the exponents equal.",
+      "ja": "両辺を 2 の累乗で書ければ、指数どうしを等しいとおけばいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the exponential equation 9^x − 4·3^x + 3 = 0.",
+      "ja": "方程式 9ˣ − 4·3ˣ + 3 = 0 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは書き言葉 71 件のうち 70 件が OpenStax Algebra and Trigonometry。話し言葉は 3 件。"
+  ],
+  "related": [
+    "exponential-inequality",
+    "write-with-the-same-base",
+    "take-the-log-of-both-sides",
+    "one-to-one-property"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "exponential equation": 3
+    },
+    "written": {
+      "exponential equation": 71
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-notes",
+      "openstax-algtrig",
+      "yt:blackpenredpen",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "logarithmic-equation",
+  "ja": {
+    "term": "対数方程式",
+    "reading": "たいすうほうていしき",
+    "alt": []
+  },
+  "en": {
+    "term": "logarithmic equation",
+    "alt": [],
+    "variants": [
+      {
+        "term": "log equation",
+        "register": "spoken",
+        "note": "話し言葉で 12 件（すべて NancyPi）、書き言葉では 0 件。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "未知数を対数の真数（や底）に含む方程式。真数条件を確かめて解く。",
+  "definition_en": "An equation with the unknown inside a logarithm (or in its base), solved while checking that each argument is positive.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Combine the logs into one, then rewrite it in exponential form.",
+      "ja": "対数を 1 つにまとめてから、指数の形に直す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the logarithmic equation log₃(x + 2) + log₃ x = 1.",
+      "ja": "方程式 log₃(x + 2) + log₃ x = 1 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉の log equation 12 件はすべて NancyPi。"
+  ],
+  "related": [
+    "argument",
+    "logarithmic-inequality",
+    "exponential-equation",
+    "rewrite-in-exponential-form"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "logarithmic equation": 7,
+      "log equation": 12
+    },
+    "written": {
+      "logarithmic equation": 49
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

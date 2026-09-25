@@ -1,0 +1,117 @@
+{
+  "id": "arctangent",
+  "ja": {
+    "term": "アークタンジェント",
+    "reading": "あーくたんじぇんと",
+    "alt": [
+      "逆正接",
+      "tan⁻¹"
+    ]
+  },
+  "en": {
+    "term": "inverse tangent",
+    "alt": [],
+    "variants": [
+      {
+        "term": "arctangent",
+        "register": "spoken",
+        "note": "話し言葉で 49 件（Khan Academy 28・MIT OCW 21）、書き言葉で 4 件（OpenStax Algebra and Trigonometry 3・MIT の講義ノート 1）。"
+      },
+      {
+        "term": "inverse tangent",
+        "register": "both",
+        "note": "話し言葉で 37 件（blackpenredpen 14・MIT OCW 13・Khan Academy 3 ほか 7）、書き言葉で 15 件（OpenStax Algebra and Trigonometry 8・OpenStax Calculus 7）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "tan x を −π/2 < x < π/2 に制限した関数の逆関数。arctan x または tan⁻¹ x と書く。",
+  "definition_en": "The inverse of tan x restricted to −π/2 < x < π/2, written arctan x or tan⁻¹ x.",
+  "latex": "y = \\tan^{-1} x \\iff \\tan y = x,\\ -\\frac{\\pi}{2} < y < \\frac{\\pi}{2}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The antiderivative of one over one plus x squared is arctangent of x.",
+      "ja": "1/(1 + x²) の原始関数は arctan x。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate tan⁻¹(−1) and sketch the graph of y = tan⁻¹ x.",
+      "ja": "tan⁻¹(−1) の値を求め、y = tan⁻¹ x のグラフをかけ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数III の積分 ∫ dx/(1 + x²) は x = tan θ と置換して求めるが、米国では答えを arctan x と書く。話し言葉の arctangent 49 件のうち 28 件は Khan Academy。"
+  ],
+  "related": [
+    "arcsine",
+    "arccosine",
+    "inverse-trigonometric-function",
+    "integrals-giving-inverse-trig-functions"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "逆三角関数",
+      "en": "Inverse trigonometric functions"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "inverse tangent": 37,
+      "arctangent": 49
+    },
+    "written": {
+      "inverse tangent": 15,
+      "arctangent": 4
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

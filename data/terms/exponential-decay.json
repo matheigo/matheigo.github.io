@@ -1,0 +1,94 @@
+{
+  "id": "exponential-decay",
+  "ja": {
+    "term": "指数関数的減少",
+    "reading": "しすうかんすうてきげんしょう",
+    "alt": [
+      "指数関数的減衰"
+    ]
+  },
+  "en": {
+    "term": "exponential decay",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "一定の時間ごとに一定の倍率で減ること。y = a·bᵗ（0 < b < 1）や y = Ae^(−kt)（k > 0）で表す。",
+  "definition_en": "Decrease by the same factor over each equal time interval, modeled by y = a·bᵗ (0 < b < 1) or y = Ae^(−kt) (k > 0).",
+  "latex": "y = A e^{-kt}\\quad(k > 0)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Radioactive decay is the classic example of exponential decay — think half-life.",
+      "ja": "放射性崩壊は指数関数的減少の代表例。半減期を考えよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "A substance has a half-life of 8 days. How much of 100 g remains after 20 days?",
+      "ja": "半減期 8 日の物質 100 g は、20 日後に何 g 残るか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "exponential decay model",
+      "ja": "指数関数的減少のモデル"
+    }
+  ],
+  "pitfalls": [],
+  "related": [
+    "exponential-growth",
+    "exponential-model",
+    "newtons-law-of-cooling"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "exponential decay": 28
+    },
+    "written": {
+      "exponential decay": 49,
+      "exponential decay model": 8
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

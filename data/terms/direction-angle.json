@@ -1,0 +1,75 @@
+{
+  "id": "direction-angle",
+  "ja": {
+    "term": "方向角",
+    "reading": "ほうこうかく",
+    "alt": []
+  },
+  "en": {
+    "term": "direction angle",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "ベクトルが x 軸の正の向き（空間では各座標軸の正の向き）となす角。",
+  "definition_en": "The angle a vector makes with the positive x-axis (in space, with each positive coordinate axis).",
+  "latex": "\\tan\\theta = \\frac{b}{a}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The direction angle is measured counterclockwise from the positive x-axis.",
+      "ja": "方向角は x 軸の正の向きから反時計回りに測る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the magnitude and direction angle of the vector v = ⟨−3, 3⟩.",
+      "ja": "ベクトル v = (−3, 3) の大きさと方向角を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "空間ベクトルの方向角の余弦は direction cosines（方向余弦）。用例コーパスの書き言葉 16 件のうち 15 件は OpenStax Calculus Volume 3。"
+  ],
+  "related": [
+    "vector",
+    "component-form"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "direction angle": 16
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

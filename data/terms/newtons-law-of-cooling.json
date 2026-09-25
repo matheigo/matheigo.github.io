@@ -1,0 +1,87 @@
+{
+  "id": "newtons-law-of-cooling",
+  "ja": {
+    "term": "ニュートンの冷却法則",
+    "reading": "にゅーとんのれいきゃくほうそく",
+    "alt": [
+      "ニュートンの冷却の法則"
+    ]
+  },
+  "en": {
+    "term": "Newton's law of cooling",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "物体の温度の変化率は、物体と周囲の温度差に比例するという法則。T(t) = Ae^(kt) + Tₛ で表す。",
+  "definition_en": "The law that an object's rate of temperature change is proportional to the difference between its temperature and the surroundings', giving T(t) = Ae^(kt) + Tₛ.",
+  "latex": "T(t) = A e^{kt} + T_s",
+  "spoken_en": "T of t equals A e to the k t plus T sub s",
+  "examples": [
+    {
+      "en": "By Newton's law of cooling, the coffee cools fast at first and then slowly.",
+      "ja": "ニュートンの冷却法則から、コーヒーは最初は速く、やがてゆっくり冷める。",
+      "register": "spoken"
+    },
+    {
+      "en": "A cake at 165°F is placed in a 70°F room and cools to 120°F in 10 minutes. Use Newton's law of cooling to find its temperature after 20 minutes.",
+      "ja": "165°F のケーキを 70°F の部屋に置くと、10 分で 120°F になった。ニュートンの冷却法則を用いて、20 分後の温度を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校の学習指導要領（数学）には含まれない。米国では Precalculus（OpenStax Algebra and Trigonometry）の指数関数の応用に出てくる。"
+  ],
+  "related": [
+    "exponential-decay",
+    "exponential-model",
+    "separable-differential-equation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "Newton's law of cooling": 1
+    },
+    "written": {
+      "Newton's law of cooling": 28
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

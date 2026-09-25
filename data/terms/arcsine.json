@@ -1,0 +1,115 @@
+{
+  "id": "arcsine",
+  "ja": {
+    "term": "アークサイン",
+    "reading": "あーくさいん",
+    "alt": [
+      "逆正弦",
+      "sin⁻¹"
+    ]
+  },
+  "en": {
+    "term": "inverse sine",
+    "alt": [],
+    "variants": [
+      {
+        "term": "inverse sine",
+        "register": "both",
+        "note": "話し言葉で 18 件（Khan Academy 9・MIT OCW 5・blackpenredpen 2 ほか 2）、書き言葉で 34 件（OpenStax Algebra and Trigonometry 22・OpenStax Calculus 11・MIT の講義ノート 1）。"
+      },
+      {
+        "term": "arcsine",
+        "register": "both",
+        "note": "話し言葉で 18 件（すべて MIT OCW）、書き言葉で 21 件（OpenStax Calculus 11・OpenStax Algebra and Trigonometry 9・MIT の講義ノート 1）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "sin x を −π/2 ≦ x ≦ π/2 に制限した関数の逆関数。arcsin x または sin⁻¹ x と書く。",
+  "definition_en": "The inverse of sin x restricted to −π/2 ≤ x ≤ π/2, written arcsin x or sin⁻¹ x.",
+  "latex": "y = \\sin^{-1} x \\iff \\sin y = x,\\ -\\frac{\\pi}{2} \\le y \\le \\frac{\\pi}{2}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Inverse sine of negative one half is −π/6, not 7π/6 — it has to be between −π/2 and π/2.",
+      "ja": "arcsin(−1/2) は 7π/6 ではなく −π/6。−π/2 と π/2 の間でないといけない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate arcsin(√3/2).",
+      "ja": "arcsin(√3/2) の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉の arcsine 18 件のうち 16 件は MIT 18.01。inverse sine と arcsine は話し言葉・書き言葉とも並ぶ。"
+  ],
+  "related": [
+    "arccosine",
+    "arctangent",
+    "inverse-trigonometric-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "逆三角関数",
+      "en": "Inverse trigonometric functions"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "arcsine": 18,
+      "inverse sine": 18
+    },
+    "written": {
+      "inverse sine": 34,
+      "arcsine": 21
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

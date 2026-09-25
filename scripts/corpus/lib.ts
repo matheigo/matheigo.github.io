@@ -65,6 +65,8 @@ export const VARIANTS: [RegExp, string][] = [
   [/\bvector\s+valued\b/g, "vector-valued"],
   [/\bterm\s+by\s+term\b/g, "term-by-term"],
   [/\b(first|second)\s+order\b/g, "$1-order"],
+  // (Phase 2 代数 2 の単元) captions write "change of base formula"; OpenStax hyphenates
+  [/\bchange\s+of\s+base\b/g, "change-of-base"],
   // Leibniz notation typed with a slash in captions ("dy/dx") is said "dy dx"
   [/\bd([a-z])\/d([a-z])\b/g, "d$1 d$2"],
   // One name, three spellings: L'Hôpital (OpenStax), L'Hopital (captions), L'Hospital (older)
@@ -445,6 +447,11 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   expansion: { expansion: "expansion of" },
   identity: { identity: "an identity" }, // not the identity matrix or function
   period: { period: "period of" }, // not a period of time
+  logarithm: { logarithm: "the logarithm of", log: "the log of" }, // "log" alone is too short to count as a word
+  argument: { argument: "argument of the logarithm" }, // 真数, not a function's argument in general
+  "write-with-the-same-base": { "write with the same base": "with the same base", "write with a common base": "with a common base" },
+  "rewrite-in-exponential-form": { "rewrite in exponential form": "in exponential form" },
+  "rewrite-in-logarithmic-form": { "rewrite in logarithmic form": "in logarithmic form" },
 };
 
 /** The wording a candidate is counted and recorded as. */

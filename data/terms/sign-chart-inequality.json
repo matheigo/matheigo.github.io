@@ -1,0 +1,94 @@
+{
+  "id": "sign-chart-inequality",
+  "ja": {
+    "term": "符号図",
+    "reading": "ふごうず",
+    "alt": [
+      "符号表"
+    ]
+  },
+  "en": {
+    "term": "sign chart",
+    "alt": [],
+    "variants": [
+      {
+        "term": "sign analysis",
+        "register": "spoken",
+        "note": "Professor Leonard の言い方。話し言葉で 11 件（すべて Professor Leonard）、書き言葉で 1 件（すべて OpenStax Calculus）。"
+      }
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「符号図」は日本の教科書に無い、本プロジェクトの訳語。数直線に零点を並べ、区間ごとの式の符号（+ ／ −）を書き込んだ図。日本の増減表（sign-chart）と英語の名前は同じだが、こちらは不等式を解くための図で、関数の増減は表さない。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "不等式を解くために、数直線上に式の零点を並べて、各区間での式の符号を書き込んだ図。",
+  "definition_en": "A number line marked with the zeros of an expression and the sign of the expression on each interval, used to solve inequalities.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Make a sign chart: the factors change sign at −2, 1, and 4.",
+      "ja": "符号図をかこう。因数の符号は −2, 1, 4 で変わる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use a sign chart to solve (x − 3)/(x + 1) ≥ 0.",
+      "ja": "符号図を用いて (x − 3)/(x + 1) ≧ 0 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは sign chart は 0 件、sign analysis が話し言葉 11 件（すべて Professor Leonard）。CED（Unit 9 の概要）は sign chart を答えを見つける道具として挙げる。",
+    "分数の不等式では、分母が 0 になる点も区切りに入れ、その点は答えに含めない。"
+  ],
+  "related": [
+    "sign-chart",
+    "test-point",
+    "polynomial-inequality"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 9 の概要（sign chart）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "sign analysis": 11
+    },
+    "written": {
+      "sign analysis": 1
+    },
+    "sources": [
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

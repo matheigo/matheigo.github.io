@@ -1,0 +1,89 @@
+{
+  "id": "negative-exponent",
+  "ja": {
+    "term": "負の指数",
+    "reading": "ふのしすう",
+    "alt": [
+      "負の整数の指数"
+    ]
+  },
+  "en": {
+    "term": "negative exponent",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "a ≠ 0 のとき a⁻ⁿ = 1/aⁿ と定めた、負の整数の指数。",
+  "definition_en": "An exponent that is a negative integer, defined by a⁻ⁿ = 1/aⁿ for a ≠ 0.",
+  "latex": "a^{-n} = \\frac{1}{a^n}",
+  "spoken_en": "a to the negative n equals one over a to the n",
+  "examples": [
+    {
+      "en": "A negative exponent just means one over — it doesn't make the number negative.",
+      "ja": "負の指数は「分の 1」という意味。数が負になるわけではない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write (2x⁻³y²)⁻² without negative exponents.",
+      "ja": "(2x⁻³y²)⁻² を負の指数を使わずに表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "x⁻² を −x² とする誤りに注意（The negative exponent does not make it negative.）。用例コーパスの話し言葉 68 件のうち 31 件は Professor Leonard。"
+  ],
+  "related": [
+    "zero-exponent",
+    "rational-exponent",
+    "laws-of-exponents"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "negative exponent": 68
+    },
+    "written": {
+      "negative exponent": 22
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "standard-unit-vectors",
+  "ja": {
+    "term": "基本ベクトル",
+    "reading": "きほんべくとる",
+    "alt": [
+      "単位ベクトル i, j"
+    ]
+  },
+  "en": {
+    "term": "standard unit vectors",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "座標軸の正の向きの単位ベクトル。平面では e₁ = (1, 0), e₂ = (0, 1)、空間では e₃ = (0, 0, 1) も加える。",
+  "definition_en": "The unit vectors in the positive directions of the coordinate axes: i = ⟨1, 0⟩ and j = ⟨0, 1⟩ in the plane, plus k = ⟨0, 0, 1⟩ in space.",
+  "latex": "\\vec{a} = a_1\\vec{e_1} + a_2\\vec{e_2}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Any vector in the plane is some multiple of i plus some multiple of j.",
+      "ja": "平面のベクトルは、i の何倍かと j の何倍かの和で表せる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the vector from (2, −1) to (5, 3) in terms of the standard unit vectors i and j.",
+      "ja": "点 (2, −1) から (5, 3) へのベクトルを基本ベクトル i, j を用いて表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書は e₁, e₂（空間では e₃）、米国の教科書は i, j, k と書く（OpenStax Calculus Volume 3）。"
+  ],
+  "related": [
+    "vector",
+    "component-form"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "standard unit vectors": 35
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}
