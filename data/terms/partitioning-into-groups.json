@@ -1,0 +1,89 @@
+{
+  "id": "partitioning-into-groups",
+  "ja": {
+    "term": "組分け",
+    "reading": "くみわけ",
+    "alt": []
+  },
+  "en": {
+    "term": "split … into groups",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで split … into groups は話し言葉 1 件（Khan Academy）・書き言葉 0 件）。英語では「組分け」という名前を立てず、6 人を 2 人ずつ 3 組に分ける、のように何をするかをそのまま文にする。",
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "いくつかのものを、決まった人数（個数）ずつのいくつかの組に分ける方法を数える問題。組に区別がないときは、同じ大きさの組の並べ替えの分だけ割る。",
+  "definition_en": "Counting the ways to split a set of people or objects into groups of given sizes; when groups of the same size are not labeled, divide by the number of ways to reorder those groups.",
+  "latex": "\\frac{6!}{2!\\,2!\\,2!\\,3!} = 15",
+  "spoken_en": "six factorial over two factorial cubed times three factorial equals fifteen",
+  "examples": [
+    {
+      "en": "How many ways can we split six people into three groups of two? Careful, the groups don't have names.",
+      "ja": "6 人を 2 人ずつ 3 組に組分けする方法は何通りか。組には名前がないので注意。",
+      "register": "spoken"
+    },
+    {
+      "en": "In how many ways can 9 students be divided into three groups of 3 students each?",
+      "ja": "9 人の生徒を 3 人ずつ 3 組に分ける方法は何通りあるか。",
+      "register": "written"
+    },
+    {
+      "en": "In how many ways can 9 students be split into groups named A, B, and C with 3 students in each?",
+      "ja": "9 人の生徒を A, B, C の 3 組に 3 人ずつ分ける方法は何通りあるか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "組に名前（A, B, C や Team 1, 2, 3）があるかないかで答えが変わる。9 人を 3 人ずつ分けるとき、名前ありは 9!/(3!3!3!) = 1680 通り、名前なしはそれを 3! で割って 280 通り。",
+    "大きさの違う組（2 人と 3 人と 4 人など）は、名前がなくても大きさで区別できるので割らない。"
+  ],
+  "related": [
+    "combination",
+    "distinguish",
+    "permutation-of-a-multiset",
+    "counting",
+    "factorial"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "split … into groups": 1
+    },
+    "sources": [
+      "khan-ap-stats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 1 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

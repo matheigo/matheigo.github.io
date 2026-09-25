@@ -1,0 +1,79 @@
+{
+  "id": "point-of-external-division",
+  "ja": {
+    "term": "外分点",
+    "reading": "がいぶんてん",
+    "alt": [
+      "外分"
+    ]
+  },
+  "en": {
+    "term": "point that divides the segment externally",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで divides … externally は 0 件、OpenStax にもない）。the point that divides the segment AB externally in the ratio m:n と説明する。「外分」は external division、「外分する」は divide … externally。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "線分 AB の延長上にあって、AP : PB = m : n（m ≠ n）となる点 P。m > n なら B の外側、m < n なら A の外側にある。",
+  "definition_en": "The point P on line AB but outside segment AB with AP : PB = m : n (m ≠ n); it lies beyond B when m > n and beyond A when m < n.",
+  "latex": "\\left(\\frac{-n x_1 + m x_2}{m - n}, \\frac{-n y_1 + m y_2}{m - n}\\right)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Dividing externally in the ratio 3 to 1 means P is outside the segment, past B, and AP is three times PB.",
+      "ja": "3 : 1 に外分するというのは、P が線分の外、B の先にあって AP が PB の 3 倍ということ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the coordinates of the point that divides the segment joining A(1, 2) and B(5, 4) externally in the ratio 3 : 1.",
+      "ja": "2 点 A(1, 2), B(5, 4) を結ぶ線分を 3 : 1 に外分する点の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "外分点の座標は、内分点の公式で n を −n に置き換えたもの。m = n のときは外分点は存在しない。",
+    "線分 AB を m : n に内分する点と外分する点を直径の両端とする円が、アポロニウスの円になる。"
+  ],
+  "related": [
+    "point-of-internal-division",
+    "midpoint",
+    "directed-segment",
+    "apollonian-circle"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

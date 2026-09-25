@@ -567,6 +567,28 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   "union-of-events": { "union of events": "union of two events | union of events" },
   "intersection-of-events": { "intersection of events": "intersection of two events | intersection of events" },
   "order-matters": { "order matters": "order matters | order doesn't matter | order does not matter" }, // 順序を考える ／ 考えない
+  // 円順列; the only OpenStax hits are cyclic permutations of the variables x, y, z (vector calculus)
+  // 内接円; OpenStax Calculus's "inscribed circle" is the osculating circle of a curve (curvature)
+  "inscribed-circle": {
+    "inscribed circle":
+      "inscribed circle of the triangle | inscribed circle of a triangle | circle inscribed in a triangle | circle inscribed in the triangle",
+  },
+  "circular-permutation": { "circular permutation": "number of circular permutations | circular permutations of n | circular permutation formula" },
+  // batch 4
+  "eulers-formula-for-polyhedra": {
+    // the bare name is also e^(iθ) = cos θ + i sin θ
+    "Euler's formula for polyhedra": "Euler's formula for polyhedra | Euler's polyhedron formula | Euler's formula for planar graphs",
+  },
+  "supplementary-angle": { "supplementary angles": "supplementary" }, // the pair is supplementary; "supplementary angles" is inside it
+  "base-n": { "base n": "in base | written in base | base-n representation" }, // "base b" is mostly the base of a logarithm
+  binary: { binary: "in binary | binary number | binary representation | base 2 | base two" }, // not a binary relation / tree
+  place: { place: "ones place | tens place | hundreds place" }, // 位, not "take place"
+  "undefined-terms": {
+    // OpenStax's one "undefined term" is an expression that is undefined (division by zero)
+    "undefined terms": "undefined terms of geometry | undefined terms in geometry | undefined terms point, line",
+  },
+  "tangent-segments-are-equal": { "tangent segments are equal": "tangent segments" },
+  "side-angle-inequality": { "side-angle inequality": "side-angle inequality | opposite the longer side | opposite the longest side" },
   "standard-form": {
     // 一般形 ax² + bx + c. "standard form" names both forms (OpenStax: a(x − h)² + k), so it is not counted
     "general form": "general form of a quadratic | quadratic function in general form | general form of the quadratic",

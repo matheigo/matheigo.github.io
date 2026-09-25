@@ -1,0 +1,99 @@
+{
+  "id": "distinguish",
+  "ja": {
+    "term": "区別する",
+    "reading": "くべつする",
+    "alt": []
+  },
+  "en": {
+    "term": "distinguish",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "英語の問題文では「区別する／区別しない」を動詞ではなく形容詞で言うことがある。区別しないものは identical（5 identical balls）や indistinguishable、区別するものは distinct（3 distinct boxes）や distinguishable と書く。",
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "2 つ以上のものを、互いに違うものとして見分けて扱う。場合の数では、同じ種類のものを別々に数えるかどうかで答えが変わる。",
+  "definition_en": "To treat two or more objects as different from each other; in counting, whether identical-looking objects are distinguished changes the count.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If the red balls are identical, we can't distinguish them, so swapping two of them doesn't give a new arrangement.",
+      "ja": "赤玉を区別しないなら、2 つを入れ替えても新しい並べ方にはならない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Do we distinguish the two boxes or not? That changes the answer.",
+      "ja": "2 つの箱を区別するかしないかで答えが変わるよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In how many ways can 5 identical balls be placed into 3 distinct boxes?",
+      "ja": "区別のつかない 5 個の玉を、区別のある 3 つの箱に入れる方法は何通りあるか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "identical は「同一の」ではなく「見た目が同じで区別しない」の意味で使う（identical balls ＝ 区別しない玉）。区別する側は distinct か different。",
+    "distinguish A from B ／ distinguish between A and B は「A と B を見分ける」の一般的な意味でも使う。"
+  ],
+  "related": [
+    "permutation-of-a-multiset",
+    "combination-with-repetition",
+    "partitioning-into-groups",
+    "counting"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "distinguish": 27
+    },
+    "written": {
+      "distinguish": 34
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

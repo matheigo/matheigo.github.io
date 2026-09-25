@@ -1,0 +1,83 @@
+{
+  "id": "inscribed-circle",
+  "ja": {
+    "term": "内接円",
+    "reading": "ないせつえん",
+    "alt": []
+  },
+  "en": {
+    "term": "inscribed circle",
+    "alt": [
+      "incircle"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "三角形（多角形）のすべての辺に接する円。三角形の内接円の中心（内心）は 3 つの内角の二等分線の交点で、半径 r と面積 S の間に S = (1/2)r(a + b + c) が成り立つ。",
+  "definition_en": "The circle inside a triangle or polygon that is tangent to every side. For a triangle, its center is where the angle bisectors meet, and its radius r satisfies Area = (1/2)r(a + b + c).",
+  "latex": "S = \\frac{1}{2}r(a+b+c)",
+  "spoken_en": "the area equals one half r times the perimeter",
+  "examples": [
+    {
+      "en": "Connect the center of the inscribed circle to the three vertices, and the triangle splits into three smaller triangles, each with height r.",
+      "ja": "内接円の中心と 3 つの頂点を結ぶと、三角形は高さ r の小さな三角形 3 つに分かれる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the radius r of the inscribed circle of the triangle with sides 5, 6, and 7.",
+      "ja": "3 辺の長さが 5, 6, 7 の三角形の内接円の半径 r を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "inscribed angle は円周角で、内接円とは別の概念。",
+    "内接円の半径は inradius、中心（内心）は incenter。面積 S = r × (半周の長さ s) で、s は Heron の公式と同じ semiperimeter。",
+    "用例コーパスの inscribed circle（書き言葉 3 件、すべて OpenStax Calculus）は曲線の曲率を表す円（曲率円）の意味で、三角形の内接円ではない。内接円としては inscribed circle of the triangle などの形で数えた（0 件）。"
+  ],
+  "related": [
+    "circumscribed-circle",
+    "herons-formula",
+    "area-of-a-triangle",
+    "inscribed-angle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "内接円",
+      "en": "Inscribed circle"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

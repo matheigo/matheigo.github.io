@@ -1,0 +1,100 @@
+{
+  "id": "binomial-coefficient",
+  "ja": {
+    "term": "二項係数",
+    "reading": "にこうけいすう",
+    "alt": []
+  },
+  "en": {
+    "term": "binomial coefficient",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "(a + b)ⁿ の展開に現れる係数 ₙCₖ。n 個から k 個を選ぶ組合せの数に等しい。",
+  "definition_en": "A coefficient C(n, k) in the expansion of (a + b)ⁿ; it equals the number of ways to choose k objects from n.",
+  "latex": "\\binom{n}{k} = \\frac{n!}{k!\\,(n-k)!}",
+  "spoken_en": "n choose k",
+  "examples": [
+    {
+      "en": "That binomial coefficient, 6 choose 2, is 15.",
+      "ja": "この二項係数 ₆C₂ は 15 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "The binomial coefficients in the expansion of (a + b)⁴ are 1, 4, 6, 4, and 1.",
+      "ja": "(a + b)⁴ の展開式の二項係数は 1, 4, 6, 4, 1 である。",
+      "register": "written"
+    },
+    {
+      "en": "Evaluate the binomial coefficient (9 choose 3).",
+      "ja": "二項係数 ₉C₃ の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは binomial coefficient は書き言葉 31 件（OpenStax Algebra and Trigonometry 22・MIT の講義ノート 6・OpenStax Calculus 3）に対して話し言葉は 9 件（MIT OCW 7・Khan Academy 2）で、話し言葉は判断できない。見出しの register は書き言葉。",
+    "記号 (n k) は縦に並べて書き、分数の線は引かない。n/k と書くと別物になる。読みは n choose k。"
+  ],
+  "related": [
+    "combination",
+    "binomial-theorem",
+    "pascals-triangle",
+    "choose"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "二項係数",
+      "en": "Binomial coefficient"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "binomial coefficient": 9
+    },
+    "written": {
+      "binomial coefficient": 31
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "law-of-cosines",
+  "ja": {
+    "term": "余弦定理",
+    "reading": "よげんていり",
+    "alt": []
+  },
+  "en": {
+    "term": "law of cosines",
+    "alt": [],
+    "uk": "cosine rule",
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "三角形の 1 辺の長さの 2 乗を、他の 2 辺の長さとその間の角の余弦で表す定理。三平方の定理を一般の三角形に広げたもの。",
+  "definition_en": "The theorem that expresses the square of one side of a triangle in terms of the other two sides and the cosine of the angle between them. It generalizes the Pythagorean theorem to any triangle.",
+  "latex": "a^2 = b^2 + c^2 - 2bc\\cos A",
+  "spoken_en": "a squared equals b squared plus c squared minus two b c cosine A",
+  "examples": [
+    {
+      "en": "We have two sides and the angle between them, so the law of cosines gives us the third side right away.",
+      "ja": "2 辺とその間の角がわかっているから、余弦定理を使えばすぐに残りの辺が出る。",
+      "register": "spoken"
+    },
+    {
+      "en": "In triangle ABC, b = 5, c = 8, and A = 60°. Using the law of cosines, find a.",
+      "ja": "△ABC において b = 5, c = 8, A = 60° のとき、余弦定理を使って a を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "角を求めるときは cos A = (b² + c² − a²)/(2bc) の形で使う。3 辺がわかれば角が 1 つに決まる。",
+    "用例コーパスでは話し言葉 0 件、書き言葉 52 件（OpenStax Algebra and Trigonometry 44・OpenStax Calculus 6・MIT の講義ノート 2）。英国式は cosine rule。",
+    "A = 90° のとき cos A = 0 となり、三平方の定理 a² = b² + c² に一致する。"
+  ],
+  "related": [
+    "law-of-sines",
+    "solving-triangles",
+    "cosine",
+    "herons-formula"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "余弦定理",
+      "en": "Law of cosines"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "law of cosines": 52
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

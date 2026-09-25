@@ -1,0 +1,91 @@
+{
+  "id": "mutually-exclusive-events",
+  "ja": {
+    "term": "互いに排反",
+    "reading": "たがいにはいはん",
+    "alt": [
+      "排反事象",
+      "排反"
+    ]
+  },
+  "en": {
+    "term": "mutually exclusive",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "2 つの事象が同時には起こらないこと。A ∩ B = ∅ のとき A と B は互いに排反で、P(A ∪ B) = P(A) + P(B) が成り立つ。",
+  "definition_en": "Describes events that cannot happen at the same time, so A ∩ B = ∅; for such events, P(A ∪ B) = P(A) + P(B).",
+  "latex": "A \\cap B = \\emptyset \\implies P(A \\cup B) = P(A) + P(B)",
+  "spoken_en": "if A intersect B is the empty set, then the probability of A or B is the probability of A plus the probability of B",
+  "examples": [
+    {
+      "en": "Rolling a 2 and rolling a 5 on one die are mutually exclusive, so you can just add the probabilities.",
+      "ja": "1 個のさいころで 2 が出ることと 5 が出ることは互いに排反だから、確率をそのまま足せばいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Events A and B are mutually exclusive, with P(A) = 0.3 and P(B) = 0.45. Find P(A ∪ B).",
+      "ja": "事象 A, B は互いに排反で、P(A) = 0.3、P(B) = 0.45 である。P(A ∪ B) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "排反と独立（independent）を取り違えない。確率が 0 でない 2 つの事象が排反なら、独立ではない。",
+    "集合の言葉の disjoint も同じ意味で使われる（用例コーパスで disjoint events は話し言葉 5 件・書き言葉 7 件）。",
+    "用例コーパスの話し言葉 21 件はすべて Professor Leonard。「排反事象」という名詞は mutually exclusive events と言う。"
+  ],
+  "related": [
+    "independence-of-events",
+    "general-addition-rule",
+    "union-of-events",
+    "intersection-of-events",
+    "empty-set"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "mutually exclusive": 21
+    },
+    "written": {
+      "mutually exclusive": 99
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

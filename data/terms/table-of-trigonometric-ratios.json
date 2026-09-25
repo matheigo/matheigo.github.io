@@ -1,0 +1,81 @@
+{
+  "id": "table-of-trigonometric-ratios",
+  "ja": {
+    "term": "三角比の表",
+    "reading": "さんかくひのひょう",
+    "alt": []
+  },
+  "en": {
+    "term": "table of trigonometric ratios",
+    "alt": [
+      "trig table"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで table of trigonometric ratios と trig table は話・書とも 0 件）。英語で言うときは「sin・cos・tan の値の表」のように説明的に言う。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "0° から 90° までの角について、sin・cos・tan の値の近似値をまとめた表。",
+  "definition_en": "A table listing approximate values of sine, cosine, and tangent for angles from 0° to 90°.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Grab the trig table and look up tan 25°; it should be about 0.4663.",
+      "ja": "三角比の表で tan 25° を引いてごらん。0.4663 くらいになるはずだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Using the table of trigonometric ratios, find the acute angle θ such that sin θ = 0.6018.",
+      "ja": "三角比の表を用いて、sin θ = 0.6018 となる鋭角 θ を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "表の値は小数第 4 位までの近似値。等号ではなく ≈ で書く（sin 25° ≈ 0.4226）。",
+    "表は 0° から 90° まで。鈍角は sin(180° − θ) = sin θ、cos(180° − θ) = −cos θ で鋭角に直してから読む。"
+  ],
+  "related": [
+    "trigonometric-ratio",
+    "sine",
+    "cosine",
+    "tangent",
+    "supplementary-angle-identity"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

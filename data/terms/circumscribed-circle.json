@@ -1,0 +1,93 @@
+{
+  "id": "circumscribed-circle",
+  "ja": {
+    "term": "外接円",
+    "reading": "がいせつえん",
+    "alt": []
+  },
+  "en": {
+    "term": "circumcircle",
+    "alt": [
+      "circumscribed circle"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "三角形（多角形）のすべての頂点を通る円。三角形の外接円の中心（外心）は 3 辺の垂直二等分線の交点で、半径 R は正弦定理から a/sin A = 2R で求まる。",
+  "definition_en": "The circle that passes through all the vertices of a triangle or polygon. For a triangle, its center is where the perpendicular bisectors of the sides meet, and its radius R satisfies a/sin A = 2R.",
+  "latex": "R = \\frac{a}{2\\sin A}",
+  "spoken_en": "R equals a over two sine A",
+  "examples": [
+    {
+      "en": "The circumcircle goes through all three vertices, and the law of sines tells you its radius: a over sin A is 2R.",
+      "ja": "外接円は 3 つの頂点をすべて通る。その半径は正弦定理でわかる。a/sin A = 2R だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In triangle ABC, a = 6 and A = 30°. Find the radius R of the circumcircle.",
+      "ja": "△ABC において a = 6, A = 30° のとき、外接円の半径 R を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "外接円の半径は circumradius、中心（外心）は circumcenter。",
+    "主語の向きに注意。「円が三角形に外接する」は the circle is circumscribed about the triangle、「三角形が円に内接する」は the triangle is inscribed in the circle。",
+    "用例コーパスでは circumcircle は書き言葉 1 件（OpenStax Calculus）だけで、見出しは OpenStax の呼び方。"
+  ],
+  "related": [
+    "law-of-sines",
+    "inscribed-circle",
+    "perpendicular-bisector",
+    "inscribed-angle",
+    "triangle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "外接円",
+      "en": "Circumscribed circle"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "circumcircle": 1
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 circumcircle（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

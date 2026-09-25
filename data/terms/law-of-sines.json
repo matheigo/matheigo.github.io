@@ -1,0 +1,93 @@
+{
+  "id": "law-of-sines",
+  "ja": {
+    "term": "正弦定理",
+    "reading": "せいげんていり",
+    "alt": []
+  },
+  "en": {
+    "term": "law of sines",
+    "alt": [],
+    "uk": "sine rule"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "三角形 ABC で、各辺の長さとその対角の正弦の比が一定で、外接円の半径 R の 2 倍に等しいという定理。",
+  "definition_en": "In any triangle ABC, the ratio of each side to the sine of the opposite angle is the same, and it equals 2R, where R is the radius of the circumcircle.",
+  "latex": "\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} = 2R",
+  "spoken_en": "a over sine A equals b over sine B equals c over sine C equals two R",
+  "examples": [
+    {
+      "en": "We know two angles and one side, so this is a job for the law of sines.",
+      "ja": "2 つの角と 1 辺がわかっているから、ここは正弦定理の出番だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In triangle ABC, a = 8, A = 45°, and B = 60°. Apply the law of sines to find b.",
+      "ja": "△ABC において a = 8, A = 45°, B = 60° のとき、正弦定理を適用して b を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の正弦定理は「= 2R」（R は外接円の半径）まで含めて書く。R は英語で circumradius（外接円 circumcircle の半径）。",
+    "用例コーパスの話し言葉 12 件はすべて NancyPi（書き言葉 34 件は OpenStax Algebra and Trigonometry 33・OpenStax Calculus 1）。英国式は sine rule。",
+    "2 辺とその一方の対角から角を求めると、解が 2 つになることがある（ambiguous case）。"
+  ],
+  "related": [
+    "law-of-cosines",
+    "circumscribed-circle",
+    "solving-triangles",
+    "ambiguous-case",
+    "sine"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "正弦定理",
+      "en": "Law of sines"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "law of sines": 12
+    },
+    "written": {
+      "law of sines": 34
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-25"
+  }
+}

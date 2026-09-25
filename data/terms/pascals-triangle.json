@@ -1,0 +1,90 @@
+{
+  "id": "pascals-triangle",
+  "ja": {
+    "term": "パスカルの三角形",
+    "reading": "ぱすかるのさんかっけい",
+    "alt": []
+  },
+  "en": {
+    "term": "Pascal's triangle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "両端を 1 とし、各数をすぐ上の段の隣り合う 2 数の和として三角形に並べた数の表。n 段目には (a + b)ⁿ の二項係数が並ぶ。",
+  "definition_en": "A triangular array of numbers with 1s on the edges in which each entry is the sum of the two entries just above it; row n lists the binomial coefficients of (a + b)ⁿ.",
+  "latex": "\\binom{n}{k} = \\binom{n-1}{k-1} + \\binom{n-1}{k}",
+  "spoken_en": "n choose k equals n minus one choose k minus one plus n minus one choose k",
+  "examples": [
+    {
+      "en": "Go down to the fourth row of Pascal's triangle and you get 1, 4, 6, 4, 1.",
+      "ja": "パスカルの三角形の 4 段目まで下りると 1, 4, 6, 4, 1 が出てくる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use Pascal's triangle to expand (x + y)⁵.",
+      "ja": "パスカルの三角形を用いて (x + y)⁵ を展開せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "一番上の 1 を row 0（0 段目）と数えると、n 段目が (a + b)ⁿ の係数になる。一番上を 1 段目と数えると n と 1 ずれる。",
+    "Pascal's は人名の所有格で、P は大文字、アポストロフィを落とさない。"
+  ],
+  "related": [
+    "binomial-coefficient",
+    "binomial-theorem",
+    "combination"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "パスカルの三角形",
+      "en": "Pascal's triangle"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "Pascal's triangle": 18
+    },
+    "written": {
+      "Pascal's triangle": 17
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-stats",
+      "openstax-algtrig",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

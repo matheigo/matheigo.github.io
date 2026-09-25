@@ -1,0 +1,93 @@
+{
+  "id": "order-matters",
+  "ja": {
+    "term": "順序を考える",
+    "reading": "じゅんじょをかんがえる",
+    "alt": [
+      "順序を考えない"
+    ]
+  },
+  "en": {
+    "term": "order matters",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "取り出したものの並ぶ順番が違えば別の場合として数えること。順序を考えるなら順列、考えないなら組合せになる。",
+  "definition_en": "Treating different orders of the same objects as different outcomes; when order matters you count permutations, and when it does not you count combinations.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Order matters here — first place and second place are different prizes — so it's a permutation.",
+      "ja": "ここは順序を考える。1 位と 2 位は違う賞だから順列だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "If order doesn't matter, divide by 3! to get rid of the repeats.",
+      "ja": "順序を考えないなら、重なりを除くために 3! で割る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Since the order does not matter, the number of ways to choose 3 of the 10 books is C(10, 3) = 120.",
+      "ja": "順序を考えないので、10 冊から 3 冊を選ぶ方法は ₁₀C₃ = 120 通り。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語は「（人が）順序を考える」だが、英語は order を主語にして order matters ／ order doesn't matter と言う。consider the order は直訳。用例コーパスでは order matters ／ order doesn't matter ／ order does not matter をまとめて数え、話し言葉で 12 件（Professor Leonard 4・3Blue1Brown 4・MIT OCW 3 ほか 1）、書き言葉で 7 件（すべて OpenStax Algebra and Trigonometry）。",
+    "順序を考えた組は ordered（ordered pair）、考えない組は unordered と形容詞でも言う。"
+  ],
+  "related": [
+    "permutation",
+    "combination",
+    "arrange",
+    "choose"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "order matters | order doesn't matter | order does not matter": 12
+    },
+    "written": {
+      "order matters | order doesn't matter | order does not matter": 7
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-6.042",
+      "openstax-algtrig",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

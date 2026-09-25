@@ -1,0 +1,92 @@
+{
+  "id": "bearing",
+  "ja": {
+    "term": "方位",
+    "reading": "ほうい",
+    "alt": []
+  },
+  "en": {
+    "term": "bearing",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "ある地点から見た方向を、北を基準に測った角度で表したもの。北から時計回りに測る表し方（120° など）と、N 15° E のように南北から東西へ測る表し方がある。",
+  "definition_en": "A direction given as an angle measured from north, either clockwise from north (a bearing of 120°) or from north or south toward east or west (N 15° E).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A bearing of 120 degrees means you face north and turn 120 degrees clockwise.",
+      "ja": "方位 120° とは、北を向いてから時計回りに 120° 回った方向のことだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A ship leaves port on a bearing of 60° and travels 12 km. How far east of the port is the ship?",
+      "ja": "船が港から北から東へ 60° の方向に 12 km 進んだ。船は港から東へ何 km のところにいるか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "方位のうち東西南北のような向きの名前（compass directions）は bearing ではない。bearing は北から測った角度で方向を表したもの。",
+    "N 15° E は「北から東へ 15°」と読む（north fifteen degrees east）。北から時計回りの 3 桁表記では同じ方向が 015° になる。",
+    "bearing は別の意味でも使う語なので、用例コーパスでは bearing of の形で数えた（書き言葉 10 件：OpenStax Calculus 4・OpenStax Algebra and Trigonometry 3・OpenStax Precalculus 3）。"
+  ],
+  "related": [
+    "angle-of-elevation",
+    "angle-of-depression",
+    "clockwise",
+    "law-of-cosines",
+    "law-of-sines"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "bearing of": 8
+    },
+    "written": {
+      "bearing of": 10
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

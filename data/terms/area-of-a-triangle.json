@@ -1,0 +1,94 @@
+{
+  "id": "area-of-a-triangle",
+  "ja": {
+    "term": "三角形の面積",
+    "reading": "さんかくけいのめんせき",
+    "alt": []
+  },
+  "en": {
+    "term": "area of a triangle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "三角形が囲む部分の広さ。底辺と高さから (1/2) × 底辺 × 高さ、2 辺とその間の角から (1/2)bc sin A、3 辺からヘロンの公式で求める。",
+  "definition_en": "The amount of space inside a triangle. It can be found as one half base times height, as (1/2)bc sin A from two sides and the included angle, or from the three sides by Heron's formula.",
+  "latex": "S = \\frac{1}{2}bh",
+  "spoken_en": "one half base times height",
+  "examples": [
+    {
+      "en": "The area of a triangle is one half base times height, but here we don't know the height, so let's use the sine version instead.",
+      "ja": "三角形の面積は底辺 × 高さ ÷ 2 だけど、ここでは高さがわからないから sin を使う公式にしよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the area of a triangle with b = 6, c = 10, and A = 150°.",
+      "ja": "b = 6, c = 10, A = 150° である三角形の面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "2 辺と間の角を使う公式 S = (1/2)bc sin A そのものは別エントリ area-formula-with-sine（OpenStax Algebra and Trigonometry の area of an oblique triangle）。このエントリは三角形の面積一般。",
+    "「底辺」は base、「高さ」は height。底辺と高さは垂直で、高さは対辺の頂点から底辺（またはその延長）に下ろした垂線の長さ。"
+  ],
+  "related": [
+    "area-formula-with-sine",
+    "herons-formula",
+    "area",
+    "triangle",
+    "inscribed-circle"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "area of a triangle": 23
+    },
+    "written": {
+      "area of a triangle": 19
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

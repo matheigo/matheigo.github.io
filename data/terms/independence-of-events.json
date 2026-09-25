@@ -5,7 +5,9 @@
     "reading": "じしょうのどくりつ",
     "alt": [
       "独立事象",
-      "独立"
+      "独立",
+      "独立な試行",
+      "従属"
     ]
   },
   "en": {
@@ -47,18 +49,25 @@
       "en": "Determine whether the events A and B are independent.",
       "ja": "事象 A と B が独立かどうか判定せよ。",
       "register": "written"
+    },
+    {
+      "en": "The two tosses are independent trials, so multiply the probabilities: (1/2)(1/6) = 1/12.",
+      "ja": "2 回の試行は独立なので、確率を掛けて (1/2)(1/6) = 1/12。",
+      "register": "spoken"
     }
   ],
   "collocations": [],
   "pitfalls": [
     "排反（mutually exclusive）と取り違えない。確率が 0 でない 2 つの事象が排反なら、独立ではない。",
     "用例コーパスでは independent events ／ events are independent ／ independence of events の形で数えた（語のままの independent は独立変数・1 次独立などが大半）。",
-    "数 A の「独立な試行」も同じ考え方。確率変数の独立は independent-random-variables。"
+    "数 A の「独立な試行」も同じ考え方。確率変数の独立は independent-random-variables。",
+    "独立でない事象は dependent events（従属な事象）と言う。"
   ],
   "related": [
     "general-multiplication-rule",
     "independent-random-variables",
-    "test-for-independence"
+    "test-for-independence",
+    "repeated-trials"
   ],
   "sources": [
     {

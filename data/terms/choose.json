@@ -1,0 +1,106 @@
+{
+  "id": "choose",
+  "ja": {
+    "term": "選ぶ",
+    "reading": "えらぶ",
+    "alt": []
+  },
+  "en": {
+    "term": "choose",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "いくつかのものの中から、一部を取り出す。場合の数では、順序を考えずに r 個を取り出すことを言う。",
+  "definition_en": "To pick some of the objects from a larger set; in counting, choosing r objects means taking them without regard to order.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We need to choose 3 of the 10 students, and order doesn't matter, so that's 10 choose 3.",
+      "ja": "10 人の生徒から 3 人を選ぶ。順序は関係ないので ₁₀C₃ だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In how many ways can a committee of 4 be chosen from 7 men and 5 women if it must include at least one woman?",
+      "ja": "男子 7 人、女子 5 人から 4 人の委員を選ぶとき、女子を少なくとも 1 人含む選び方は何通りあるか。",
+      "register": "written"
+    },
+    {
+      "en": "Choose δ = ε/3. Then |x − 2| < δ implies |3x − 6| < ε.",
+      "ja": "δ = ε/3 と選ぶ。すると |x − 2| < δ ならば |3x − 6| < ε となる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "₁₀C₃ は英語で ten choose three と読む（記号は C(10, 3) か二項係数の縦書き）。n choose r は記号の読み方で、動詞 choose と同じ語。",
+    "証明の「δ をこう選ぶ」「適当に選ぶ」も choose（Choose δ = … ／ choose any point）。場合の数以外でも普通に使う。"
+  ],
+  "related": [
+    "combination",
+    "binomial-coefficient",
+    "select-at-random",
+    "order-matters",
+    "arrange"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "choose": 497
+    },
+    "written": {
+      "choose": 506
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

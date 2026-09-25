@@ -1,0 +1,79 @@
+{
+  "id": "supplementary-angle-identity",
+  "ja": {
+    "term": "180° − θ の三角比",
+    "reading": "ひゃくはちじゅうどまいなすしーたのさんかくひ",
+    "alt": []
+  },
+  "en": {
+    "term": "supplementary angle identity",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで supplementary angle identity は話・書とも 0 件）。見出しの supplementary angle identity は、cofunction identity にならった説明的な呼び方。英語で言うときは sin(180° − θ) = sin θ のように式をそのまま読むか、単位円上の点 (cos θ, sin θ) と (−cos θ, sin θ) が y 軸について対称であることで説明する。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "θ の補角 180° − θ の三角比を θ の三角比で表す公式。sin(180° − θ) = sin θ、cos(180° − θ) = −cos θ、tan(180° − θ) = −tan θ。",
+  "definition_en": "The identities that express the trigonometric ratios of 180° − θ in terms of those of θ: sin(180° − θ) = sin θ, cos(180° − θ) = −cos θ, and tan(180° − θ) = −tan θ.",
+  "latex": "\\sin(180^\\circ - \\theta) = \\sin\\theta,\\quad \\cos(180^\\circ - \\theta) = -\\cos\\theta,\\quad \\tan(180^\\circ - \\theta) = -\\tan\\theta",
+  "spoken_en": "sine of one eighty minus theta equals sine theta",
+  "examples": [
+    {
+      "en": "Sine of 180 minus theta is the same as sine theta, but cosine and tangent flip sign.",
+      "ja": "sin(180° − θ) は sin θ と同じだが、cos と tan は符号が変わる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the supplementary angle identities to write sin 150° and cos 150° in terms of the trigonometric ratios of 30°.",
+      "ja": "180° − θ の三角比を用いて、sin 150° と cos 150° を 30° の三角比で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "補角（和が 180°）は supplementary angles、余角（和が 90°）は complementary angles。complementary を complimentary と綴らない。",
+    "鈍角の三角比を鋭角の三角比に直すときに使う。cos と tan だけ符号が変わるのは、鈍角では x 座標が負になるから。"
+  ],
+  "related": [
+    "cofunction-identity",
+    "unit-circle",
+    "reference-angle",
+    "trigonometric-ratio",
+    "table-of-trigonometric-ratios"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

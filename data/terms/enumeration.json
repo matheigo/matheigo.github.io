@@ -1,0 +1,97 @@
+{
+  "id": "enumeration",
+  "ja": {
+    "term": "数え上げ",
+    "reading": "かぞえあげ",
+    "alt": []
+  },
+  "en": {
+    "term": "list all",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "英語では名詞の enumeration はほとんど使わず（用例コーパスで話し言葉 0 件、書き言葉 1 件）、list all the possibilities ／ make an organized list のように動詞句で言う（list all は話し言葉 12 件、書き言葉 18 件）。大学の組合せ論では enumeration（enumerative combinatorics）が「数え上げ」の分野名になる。",
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "樹形図や辞書式の順などを使って、起こりうる場合を漏れなく重複なく書き出して数えること。",
+  "definition_en": "Counting by writing out every possible case in an organized way, such as with a tree diagram or in dictionary order, so that none is missed or repeated.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The numbers are small, so let's just list all the outcomes and count them.",
+      "ja": "数が小さいので、全部書き出して数え上げよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "List all the possible outcomes when three coins are tossed.",
+      "ja": "3 枚の硬貨を投げるときに起こりうる結果をすべて書き出せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "辞書式に並べるは list in lexicographic (dictionary) order、樹形図は tree diagram。"
+  ],
+  "related": [
+    "counting",
+    "tree-diagram",
+    "lexicographic-order",
+    "permutation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "数え上げ",
+      "en": "Enumeration"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "list all": 12
+    },
+    "written": {
+      "list all": 18
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-25"
+  }
+}

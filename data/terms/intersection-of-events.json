@@ -1,0 +1,87 @@
+{
+  "id": "intersection-of-events",
+  "ja": {
+    "term": "積事象",
+    "reading": "せきじしょう",
+    "alt": []
+  },
+  "en": {
+    "term": "intersection of events",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "事象 A と事象 B がともに起こるという事象。A ∩ B と書く。",
+  "definition_en": "The event that both of the events A and B happen, written A ∩ B.",
+  "latex": "A \\cap B",
+  "spoken_en": "A intersect B; in probability, often read as A and B",
+  "examples": [
+    {
+      "en": "The intersection of two events is where both happen, so think A and B.",
+      "ja": "積事象は両方が起こるところだから、A かつ B と考えよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "A die is rolled. Let A be the event of an even number and B the event of a number greater than 3. Describe the intersection of events A and B.",
+      "ja": "さいころを 1 個投げる。偶数の目が出る事象を A、3 より大きい目が出る事象を B とする。積事象 A ∩ B を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "確率では A ∩ B を「A and B」と読むことが多い。「かつ」は and、「または」は or。",
+    "用例コーパスでは intersection of two events と intersection of events をまとめて数え、話し言葉 3 件（すべて MIT OCW）・書き言葉 0 件で判断できなかった。見出しは Levin の Discrete Mathematics（3.7）の呼び方。"
+  ],
+  "related": [
+    "union-of-events",
+    "general-multiplication-rule",
+    "independence-of-events",
+    "conditional-probability",
+    "mutually-exclusive-events"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.7 Applications to Probability"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "intersection of two events | intersection of events": 3
+    },
+    "sources": [
+      "mit-6.042"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 intersection of two events | intersection of events（3.7 Applications to Probability）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "similar-triangles",
+  "ja": {
+    "term": "相似な三角形",
+    "reading": "そうじなさんかっけい",
+    "alt": []
+  },
+  "en": {
+    "term": "similar triangles",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "対応する角がそれぞれ等しく、対応する辺の比がすべて等しい 2 つの三角形。一方を拡大・縮小して移すともう一方に重なる。",
+  "definition_en": "Two triangles whose corresponding angles are equal and whose corresponding sides are proportional, so one is a scaled copy of the other.",
+  "latex": "\\triangle ABC \\sim \\triangle DEF",
+  "spoken_en": "triangle ABC is similar to triangle DEF",
+  "examples": [
+    {
+      "en": "These two are similar triangles, so the corresponding sides are proportional: x over 4 equals 6 over 3.",
+      "ja": "この 2 つは相似な三角形なので、対応する辺の比は等しい。x/4 = 6/3 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use similar triangles to find the height of the tree, given that its shadow is 15 m long.",
+      "ja": "相似な三角形を使って、影の長さが 15 m の木の高さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "相似の記号は日本では ∽、米国では ~（△ABC ~ △DEF）。どちらも対応する頂点の順に書く。",
+    "「対応する辺の比が等しい」は corresponding sides are proportional と言う（比例する辺）。"
+  ],
+  "related": [
+    "triangle",
+    "congruent",
+    "ratio-of-areas-of-similar-figures",
+    "conditions-that-determine-a-triangle",
+    "trigonometric-ratio"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "similar triangles": 17
+    },
+    "written": {
+      "similar triangles": 16
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

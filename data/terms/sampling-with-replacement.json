@@ -1,0 +1,89 @@
+{
+  "id": "sampling-with-replacement",
+  "ja": {
+    "term": "復元抽出",
+    "reading": "ふくげんちゅうしゅつ",
+    "alt": []
+  },
+  "en": {
+    "term": "with replacement",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "取り出したものを毎回元に戻してから次を取り出す抽出。どの回も同じ条件で取り出すので、各回の結果は独立になる。",
+  "definition_en": "Drawing items one at a time and putting each one back before the next draw, so every draw is made from the same full set and the draws are independent.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We're drawing with replacement, so the chance of red is 3/5 on every single draw.",
+      "ja": "復元抽出なので、赤が出る確率はどの回も 3/5 のまま。",
+      "register": "spoken"
+    },
+    {
+      "en": "A ball is drawn at random from the bag and then replaced, 4 times in all (sampling with replacement). Find the probability that exactly 2 of the draws are red.",
+      "ja": "袋から玉を 1 個取り出して色を調べてから元に戻すことを 4 回繰り返す。赤玉がちょうど 2 回出る確率を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語には「復元抽出」に当たる 1 語の名詞がなく、動詞に副詞句を付けて draw … with replacement ／ sampling with replacement と言う。見出しもこの with replacement で数えた。",
+    "復元抽出は各回が独立なので反復試行（二項分布）になる。元に戻さない非復元抽出（without replacement）とは確率の計算が変わる。"
+  ],
+  "related": [
+    "sampling-without-replacement",
+    "repeated-trials",
+    "independence-of-events",
+    "binomial-probability",
+    "sampling"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "with replacement": 26
+    },
+    "written": {
+      "with replacement": 38
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

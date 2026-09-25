@@ -1,0 +1,95 @@
+{
+  "id": "arrange",
+  "ja": {
+    "term": "並べる",
+    "reading": "ならべる",
+    "alt": []
+  },
+  "en": {
+    "term": "arrange",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "いくつかのものを、順序を付けて 1 列や円形などに置く。場合の数では、その置き方が何通りあるかを数える。",
+  "definition_en": "To put a set of objects in some order, such as in a row or around a circle; in counting problems, the question is how many different orders are possible.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "How many ways can we arrange these 5 books on a shelf? Five choices for the first spot, four for the next, so 5! = 120.",
+      "ja": "この 5 冊の本を棚に並べる方法は何通り？ 最初の場所に 5 通り、次に 4 通り…で 5! = 120 通り。",
+      "register": "spoken"
+    },
+    {
+      "en": "In how many ways can 6 people be arranged in a row if two of them must sit next to each other?",
+      "ja": "6 人を 1 列に並べるとき、特定の 2 人が隣り合う並べ方は何通りあるか。",
+      "register": "written"
+    },
+    {
+      "en": "Find the number of arrangements of the letters in the word LEVEL.",
+      "ja": "LEVEL の 5 文字を 1 列に並べる方法は何通りあるか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "arrange だけだと「式を整理する」「段取りをする」などの意味でも多く使われるので、用例コーパスでは ways to arrange ／ arrange … in a row ／ number of arrangements などの数え上げの形だけを数えた（話し言葉で 4 件（MIT OCW 2・Professor Leonard 2）、書き言葉で 3 件（すべて OpenStax Algebra and Trigonometry））。",
+    "「並べ方」は arrangement（数えられる名詞）。「並べ方は何通りか」は How many arrangements are there? ／ In how many ways can … be arranged? と言う。"
+  ],
+  "related": [
+    "permutation",
+    "circular-permutation",
+    "permutation-of-a-multiset",
+    "order-matters",
+    "counting"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "ways to arrange | ways can … be arranged | arrange … in a row | ways of arranging | number of arrangements": 4
+    },
+    "written": {
+      "ways to arrange | ways can … be arranged | arrange … in a row | ways of arranging | number of arrangements": 3
+    },
+    "sources": [
+      "mit-18.02",
+      "openstax-algtrig",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 ways to arrange | ways can … be arranged | arrange … in a row | ways of arranging | number of arrangements（本文 3 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "binomial-probability",
+  "ja": {
+    "term": "反復試行の確率",
+    "reading": "はんぷくしこうのかくりつ",
+    "alt": []
+  },
+  "en": {
+    "term": "binomial probability",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "1 回の確率が p の試行を独立に n 回繰り返すとき、その事象がちょうど k 回起こる確率。ₙCₖ pᵏ(1 − p)ⁿ⁻ᵏ で求める。",
+  "definition_en": "The probability that an event with probability p on each trial happens exactly k times in n independent trials, given by C(n, k) pᵏ(1 − p)ⁿ⁻ᵏ.",
+  "latex": "P(X = k) = \\binom{n}{k} p^k (1-p)^{n-k}",
+  "spoken_en": "the probability that X equals k is n choose k times p to the k times one minus p to the n minus k",
+  "examples": [
+    {
+      "en": "To get exactly three heads in five flips, the binomial probability is five choose three times one half to the fifth.",
+      "ja": "5 回投げてちょうど 3 回表が出る確率（反復試行の確率）は ₅C₃ × (1/2)⁵ だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A multiple-choice quiz has 10 questions with 4 choices each. A student guesses on every question. Find the binomial probability that the student gets exactly 4 correct.",
+      "ja": "4 択の問題が 10 問ある小テストで、すべて当てずっぽうで答える。ちょうど 4 問正解する確率を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の ₙCₖ は、英語では括弧の記号 (n k)（縦に並べる）で書き、n choose k と読む。",
+    "「ちょうど k 回」は exactly k times。「少なくとも k 回」（at least k times）は余事象を使うことが多く、式が変わる。",
+    "用例コーパスでは書き言葉 15 件がすべて OpenStax Introductory Statistics、話し言葉は 6 件（Professor Leonard 4・Khan Academy 2）だけ。"
+  ],
+  "related": [
+    "binomial-distribution",
+    "repeated-trials",
+    "binomial-coefficient",
+    "combination"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "binomial probability": 6
+    },
+    "written": {
+      "binomial probability": 15
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

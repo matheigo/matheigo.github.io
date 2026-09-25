@@ -1,0 +1,94 @@
+{
+  "id": "trial",
+  "ja": {
+    "term": "試行",
+    "reading": "しこう",
+    "alt": []
+  },
+  "en": {
+    "term": "trial",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "同じ条件のもとで繰り返すことができ、結果が偶然によって決まる実験や観測の 1 回。",
+  "definition_en": "One run of an experiment that can be repeated under the same conditions and whose result depends on chance.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Each flip of the coin is one trial, so ten flips means ten trials.",
+      "ja": "硬貨を 1 回投げるのが 1 回の試行だから、10 回投げれば 10 回の試行だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A trial consists of rolling two dice and recording the sum of the numbers shown.",
+      "ja": "2 個のさいころを投げ、出た目の和を記録することを 1 回の試行とする。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの書き言葉 171 件のうち 162 件は OpenStax Introductory Statistics。",
+    "「試行錯誤」は trial and error で、確率の試行とは別の言い方。"
+  ],
+  "related": [
+    "repeated-trials",
+    "elementary-event",
+    "sample-space",
+    "probability"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "trial": 294
+    },
+    "written": {
+      "trial": 171
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-stats",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "combination-with-repetition",
+  "ja": {
+    "term": "重複組合せ",
+    "reading": "ちょうふくくみあわせ",
+    "alt": []
+  },
+  "en": {
+    "term": "combination with repetition",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで combination with repetition は話し言葉 0 件、書き言葉 1 件（MIT の講義ノート））。ₙHᵣ は日本の教科書の記法なので、英語で書くときは ₙ₊ᵣ₋₁Cᵣ（二項係数）の形に直す。離散数学では、〇と仕切りを並べるこの数え方を stars and bars と呼ぶ。",
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "異なる n 種類のものから、同じものを何度でも選んでよいとして、順序を考えずに r 個を選ぶ選び方。総数は ₙHᵣ = ₙ₊ᵣ₋₁Cᵣ 通り。",
+  "definition_en": "A selection of r objects from n kinds, where a kind may be chosen more than once and order does not matter; there are C(n + r − 1, r) of them.",
+  "latex": "{}_n\\mathrm{H}_r = {}_{n+r-1}\\mathrm{C}_r",
+  "spoken_en": "n plus r minus one choose r",
+  "examples": [
+    {
+      "en": "Picking 5 donuts from 3 flavors is a combination with repetition, so line up 5 stars and 2 bars.",
+      "ja": "3 種類のドーナツから 5 個選ぶのは重複組合せなので、〇 5 個と仕切り 2 本を並べる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use a combination with repetition to count the nonnegative integer solutions of x + y + z = 7.",
+      "ja": "重複組合せを用いて、x + y + z = 7 を満たす 0 以上の整数の組 (x, y, z) の個数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "ₙHᵣ の H は日本の教科書の記号。英語の答案では使わず、ₙ₊ᵣ₋₁Cᵣ か (n + r − 1 choose r) で書く。",
+    "「各文字を 1 個以上」の条件があるときは、先に 1 個ずつ配ってから重複組合せにする。条件を読み落とすと 0 個の場合まで数えてしまう。"
+  ],
+  "related": [
+    "combination",
+    "permutation-with-repetition",
+    "binomial-coefficient",
+    "counting"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "combination with repetition": 1
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 1 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

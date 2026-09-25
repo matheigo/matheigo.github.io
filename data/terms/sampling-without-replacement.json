@@ -1,0 +1,88 @@
+{
+  "id": "sampling-without-replacement",
+  "ja": {
+    "term": "非復元抽出",
+    "reading": "ひふくげんちゅうしゅつ",
+    "alt": []
+  },
+  "en": {
+    "term": "without replacement",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "取り出したものを元に戻さずに、続けて次を取り出す抽出。残りの個数が回ごとに変わるので、各回の結果は独立でない。",
+  "definition_en": "Drawing items one at a time without putting any back, so the set shrinks after each draw and the draws are not independent.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "It's without replacement, so after the first red one comes out there are only 2 reds left out of 4.",
+      "ja": "非復元抽出だから、最初に赤が出たあとは残り 4 個のうち赤は 2 個しかない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Two cards are drawn without replacement from a standard 52-card deck. Find the probability that both are aces.",
+      "ja": "52 枚のトランプから、元に戻さずに 2 枚続けて引く。2 枚ともエースである確率を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "Ten people draw lots without replacement from a box with 3 winning tickets. Each person has a 3/10 chance of winning, whether they draw first or last.",
+      "ja": "当たり 3 本を含む 10 本のくじを 10 人が順に引く（引いたくじは戻さない）。何番目に引いても当たる確率は 3/10 である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "くじ引きは drawing lots。引いたくじを戻さないので非復元抽出だが、何番目に引いても当たる確率は同じになる（順番に有利・不利はない）。",
+    "非復元抽出では 2 回目以降の確率が前の結果で変わるので、条件付き確率を掛けて計算する（3/10 × 2/9 のように）。"
+  ],
+  "related": [
+    "sampling-with-replacement",
+    "conditional-probability",
+    "sampling",
+    "probability"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "without replacement": 19
+    },
+    "written": {
+      "without replacement": 42
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-notes",
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

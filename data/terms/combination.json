@@ -1,0 +1,101 @@
+{
+  "id": "combination",
+  "ja": {
+    "term": "組合せ",
+    "reading": "くみあわせ",
+    "alt": []
+  },
+  "en": {
+    "term": "combination",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "異なる n 個のものから、順序を考えずに r 個を選ぶ選び方。総数は ₙCᵣ = n!/(r!(n − r)!)。",
+  "definition_en": "A selection of r objects from n distinct objects in which order does not matter; the number of them is n!/(r!(n − r)!).",
+  "latex": "{}_n\\mathrm{C}_r = \\binom{n}{r} = \\frac{n!}{r!\\,(n-r)!}",
+  "spoken_en": "n choose r equals n factorial over r factorial times n minus r factorial",
+  "examples": [
+    {
+      "en": "Order doesn't matter when you pick a committee, so it's a combination, not a permutation.",
+      "ja": "委員を選ぶときは順序が関係ないので、順列ではなく組合せだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the number of combinations of 3 books chosen from 8 different books.",
+      "ja": "異なる 8 冊の本から 3 冊を選ぶ組合せの総数を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "By the combination formula, C(10, 2) = 10!/(2! 8!) = 45.",
+      "ja": "組合せの公式より ₁₀C₂ = 10!/(2! 8!) = 45。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "combination 単独では、用例コーパスでは混ぜ合わせや一次結合（linear combination）の意味がほとんど。そのため number of combinations、permutations and combinations、combination formula など数え上げの形だけを数えた（話し言葉 2 件（すべて NancyPi）、書き言葉 9 件（OpenStax Algebra and Trigonometry 8・MIT の講義ノート 1））。",
+    "ₙCᵣ は日本の教科書の書き方。英語の文献では C(n, r) や二項係数の記号 (n r) で書くこともあり、読みは n choose r。",
+    "組合せ錠（combination lock）の combination は「番号の並び」で、順序が大事。数学の combination とは逆なので注意。"
+  ],
+  "related": [
+    "permutation",
+    "binomial-coefficient",
+    "choose",
+    "order-matters",
+    "combination-with-repetition"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "組合せ (数学)",
+      "en": "Combination"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "number of combinations | permutations and combinations | combinations of n | combination formula | combinations of r | a combination of r | combinations of k": 2
+    },
+    "written": {
+      "number of combinations | permutations and combinations | combinations of n | combination formula | combinations of r | a combination of r | combinations of k": 9
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 number of combinations | permutations and combinations | combinations of n | combination formula | combinations of r | a combination of r | combinations of k（本文 8 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

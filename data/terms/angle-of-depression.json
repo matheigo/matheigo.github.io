@@ -1,0 +1,87 @@
+{
+  "id": "angle-of-depression",
+  "ja": {
+    "term": "俯角",
+    "reading": "ふかく",
+    "alt": []
+  },
+  "en": {
+    "term": "angle of depression",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "上から下の物を見下ろしたとき、視線と水平線がなす角。",
+  "definition_en": "The angle between the horizontal and the line of sight when you look down at an object below you.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The angle of depression is measured down from the horizontal, not from the side of the cliff.",
+      "ja": "俯角は水平線から下に向けて測る。崖の壁から測るんじゃないよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "From the top of a 40 m cliff, the angle of depression to a boat is 25°. Find the distance from the boat to the base of the cliff.",
+      "ja": "高さ 40 m の崖の上から船を見下ろした俯角は 25° であった。船と崖の真下の地点との距離を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "俯角は水平線から下向きに測る。平行線の錯角により、下の地点から見上げた仰角と等しい。",
+    "用例コーパスでは話し言葉 6 件（すべて The Organic Chemistry Tutor）、書き言葉 12 件（OpenStax Algebra and Trigonometry 11・OpenStax Precalculus 1）。"
+  ],
+  "related": [
+    "angle-of-elevation",
+    "tangent",
+    "trigonometric-ratio",
+    "bearing"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "angle of depression": 6
+    },
+    "written": {
+      "angle of depression": 12
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-precalculus",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

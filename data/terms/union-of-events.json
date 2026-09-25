@@ -1,0 +1,82 @@
+{
+  "id": "union-of-events",
+  "ja": {
+    "term": "和事象",
+    "reading": "わじしょう",
+    "alt": []
+  },
+  "en": {
+    "term": "union of events",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "事象 A と事象 B の少なくとも一方が起こるという事象。A ∪ B と書く。",
+  "definition_en": "The event that at least one of the events A and B happens, written A ∪ B.",
+  "latex": "A \\cup B",
+  "spoken_en": "A union B; in probability, often read as A or B",
+  "examples": [
+    {
+      "en": "The union of two events is A or B, and that includes the case where both happen.",
+      "ja": "和事象は A または B で、両方起こる場合も含む。",
+      "register": "spoken"
+    },
+    {
+      "en": "A card is drawn from a standard deck. Let A be the event of a heart and B the event of a face card. Find the probability of the union of events A and B.",
+      "ja": "52 枚のトランプから 1 枚引く。ハートである事象を A、絵札である事象を B とする。和事象 A ∪ B の確率を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "確率では A ∪ B を「A or B」と読むことが多い。OpenStax Introductory Statistics は P(A OR B) と書く。",
+    "用例コーパスでは union of two events と union of events をまとめて数えた。書き言葉 13 件はすべて OpenStax Algebra and Trigonometry、話し言葉は 1 件（MIT OCW）。"
+  ],
+  "related": [
+    "union",
+    "intersection-of-events",
+    "general-addition-rule",
+    "mutually-exclusive-events"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "union of two events | union of events": 1
+    },
+    "written": {
+      "union of two events | union of events": 13
+    },
+    "sources": [
+      "mit-6.042",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  }
+}

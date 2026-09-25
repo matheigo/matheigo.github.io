@@ -1,0 +1,105 @@
+{
+  "id": "unit-circle",
+  "ja": {
+    "term": "単位円",
+    "reading": "たんいえん",
+    "alt": []
+  },
+  "en": {
+    "term": "unit circle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "原点を中心とする半径 1 の円。円周上の点の x 座標を cos θ、y 座標を sin θ として三角比・三角関数を定める。",
+  "definition_en": "The circle of radius 1 centered at the origin. For the point on it at angle θ, the x-coordinate is cos θ and the y-coordinate is sin θ.",
+  "latex": "x^2 + y^2 = 1",
+  "spoken_en": "x squared plus y squared equals one",
+  "examples": [
+    {
+      "en": "On the unit circle, the x-coordinate is cosine and the y-coordinate is sine, so at 120° you get negative one half and root three over two.",
+      "ja": "単位円では x 座標が cos、y 座標が sin だから、120° なら −1/2 と √3/2 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the unit circle to find sin 135° and cos 135°.",
+      "ja": "単位円を用いて sin 135° と cos 135° の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数I では単位円の上半分（0° ≦ θ ≦ 180°）を使って鈍角の sin・cos・tan を定める。全周を使って一般角に広げるのは数II。",
+    "半径 r の半円で定める教科書もあるが、単位円なら座標がそのまま (cos θ, sin θ) になる。tan θ は y/x で、θ = 90° では定まらない。"
+  ],
+  "related": [
+    "trigonometric-ratio",
+    "trigonometric-function",
+    "sine",
+    "cosine",
+    "reference-angle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "単位円",
+      "en": "Unit circle"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "unit circle": 302
+    },
+    "written": {
+      "unit circle": 171
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

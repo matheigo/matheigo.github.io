@@ -1,0 +1,91 @@
+{
+  "id": "tetrahedron",
+  "ja": {
+    "term": "四面体",
+    "reading": "しめんたい",
+    "alt": []
+  },
+  "en": {
+    "term": "tetrahedron",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "4 つの三角形の面で囲まれた立体。三角錐と同じ図形で、4 つの面がすべて正三角形のものを正四面体という。",
+  "definition_en": "A solid bounded by four triangular faces, the same shape as a triangular pyramid; when all four faces are equilateral triangles it is a regular tetrahedron.",
+  "latex": "V = \\frac{\\sqrt{2}}{12}a^3",
+  "spoken_en": "the volume of a regular tetrahedron with edge a is root two over twelve times a cubed",
+  "examples": [
+    {
+      "en": "A tetrahedron has four faces, six edges, and four vertices.",
+      "ja": "四面体には面が 4 つ、辺が 6 本、頂点が 4 つある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the volume of a regular tetrahedron whose edges all have length 6.",
+      "ja": "1 辺の長さが 6 の正四面体の体積を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "For the volume of the tetrahedron, take one third of the base area times the height.",
+      "ja": "四面体の体積は、底面積 × 高さ ÷ 3 で求める。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "正四面体は regular tetrahedron。強勢は後ろから 2 つ目の音節（-he-、「ヒー」）。複数形は tetrahedra または tetrahedrons。",
+    "正四面体の体積では、頂点から底面に下ろした垂線の足が底面の正三角形の重心（外心）になることを使って高さを出す。"
+  ],
+  "related": [
+    "foot-of-the-perpendicular",
+    "scalar-triple-product",
+    "triangle",
+    "law-of-cosines"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "tetrahedron": 19
+    },
+    "written": {
+      "tetrahedron": 25
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

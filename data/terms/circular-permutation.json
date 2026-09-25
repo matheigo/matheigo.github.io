@@ -1,0 +1,78 @@
+{
+  "id": "circular-permutation",
+  "ja": {
+    "term": "円順列",
+    "reading": "えんじゅんれつ",
+    "alt": []
+  },
+  "en": {
+    "term": "circular permutation",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "いくつかのものを円形に並べる並べ方。回転して重なるものは同じとみなすので、異なる n 個の円順列は (n − 1)! 通り。",
+  "definition_en": "An arrangement of objects around a circle, where arrangements that differ only by a rotation count as the same; n distinct objects have (n − 1)! circular permutations.",
+  "latex": "(n-1)!",
+  "spoken_en": "n minus one factorial",
+  "examples": [
+    {
+      "en": "For a circular permutation, fix one person's seat first, then arrange the other four: that's 4 factorial.",
+      "ja": "円順列では、まず 1 人の席を固定して、残りの 4 人を並べる。だから 4! 通りだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "How many circular permutations of 6 people seated at a round table are there?",
+      "ja": "6 人が円卓に座るときの円順列は何通りあるか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数珠や首飾りのように裏返しても同じとみなす並べ方（じゅず順列）は、円順列をさらに 2 で割って (n − 1)!/2 通りになる。",
+    "用例コーパスで circular permutation が出てくるのは OpenStax Calculus Volume 3 の 2 件だけで、どちらも変数 x, y, z を順に入れ替える（巡回置換の）意味。円順列の意味ではないので、円順列としては number of circular permutations などの形で数えた（0 件）。問題文では arrange … around a round table のように並べ方を文で書くことが多い。"
+  ],
+  "related": [
+    "permutation",
+    "factorial",
+    "arrange",
+    "permutation-with-repetition"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

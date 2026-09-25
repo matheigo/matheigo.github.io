@@ -1,0 +1,99 @@
+{
+  "id": "binomial-theorem",
+  "ja": {
+    "term": "二項定理",
+    "reading": "にこうていり",
+    "alt": []
+  },
+  "en": {
+    "term": "binomial theorem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "(a + b)ⁿ を展開したときの各項の係数が二項係数 ₙCₖ になることを示す定理。",
+  "definition_en": "The theorem that expanding (a + b)ⁿ gives terms whose coefficients are the binomial coefficients C(n, k).",
+  "latex": "(a+b)^n = \\sum_{k=0}^{n} \\binom{n}{k} a^{n-k} b^{k}",
+  "spoken_en": "a plus b to the n equals the sum from k equals zero to n of n choose k times a to the n minus k times b to the k",
+  "examples": [
+    {
+      "en": "Instead of multiplying out (x + 2) to the fifth by hand, just use the binomial theorem.",
+      "ja": "(x + 2)⁵ を手で掛け算していくのではなく、二項定理を使えばいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the binomial theorem to find the coefficient of x³ in the expansion of (2x − 1)⁷.",
+      "ja": "二項定理を用いて、(2x − 1)⁷ の展開式における x³ の係数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "(2x − 1)ⁿ の係数を求めるときは、2 や −1 の累乗も係数に入る。二項係数 ₙCₖ だけを答えにしない。",
+    "一般項 ₙCₖ aⁿ⁻ᵏ bᵏ の k は 0 から数える。「第 k 項」と言うときは k + 1 番目の項になるのでずれに注意。"
+  ],
+  "related": [
+    "binomial-coefficient",
+    "pascals-triangle",
+    "expansion",
+    "general-term",
+    "binomial-series"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "二項定理",
+      "en": "Binomial theorem"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "binomial theorem": 31
+    },
+    "written": {
+      "binomial theorem": 34
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "conditional-probability",
+  "ja": {
+    "term": "条件付き確率",
+    "reading": "じょうけんつきかくりつ",
+    "alt": []
+  },
+  "en": {
+    "term": "conditional probability",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "事象 A が起こったという条件のもとで、事象 B が起こる確率。P(A ∩ B) を P(A) で割って求める。",
+  "definition_en": "The probability that event B happens given that event A has happened, found by dividing P(A ∩ B) by P(A).",
+  "latex": "P(B \\mid A) = \\frac{P(A \\cap B)}{P(A)}",
+  "spoken_en": "the probability of B given A equals the probability of A and B over the probability of A",
+  "examples": [
+    {
+      "en": "We already know the card is a face card, so this is a conditional probability: the probability of a king given a face card.",
+      "ja": "引いたカードが絵札だとわかっているので、これは条件付き確率で、絵札であるときにキングである確率だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A family has two children, and at least one is a girl. Find the conditional probability that both children are girls.",
+      "ja": "ある家庭に子どもが 2 人いて、少なくとも 1 人は女の子である。2 人とも女の子である条件付き確率を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書は P_A(B) と書くが、英語では P(B | A) と書き、the probability of B given A と読む。条件の A が縦棒の右に来るので、文字の順が逆になる。",
+    "P(B | A) と P(A | B) は一般に違う。入れ替えるにはベイズの定理を使う。"
+  ],
+  "related": [
+    "general-multiplication-rule",
+    "bayes-theorem",
+    "intersection-of-events",
+    "independence-of-events",
+    "tree-diagram"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "条件付き確率",
+      "en": "Conditional probability"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "conditional probability": 31
+    },
+    "written": {
+      "conditional probability": 57
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

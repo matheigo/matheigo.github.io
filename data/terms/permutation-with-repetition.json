@@ -1,0 +1,85 @@
+{
+  "id": "permutation-with-repetition",
+  "ja": {
+    "term": "重複順列",
+    "reading": "ちょうふくじゅんれつ",
+    "alt": [
+      "一般化順列"
+    ]
+  },
+  "en": {
+    "term": "permutation with repetition",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで permutation with repetition は話し言葉 0 件、書き言葉 1 件（MIT の講義ノート））。英語で説明するときは、名前を出さずに「r か所それぞれに n 通りの選び方がある」と積の法則で nʳ を導けばよい。大学の離散数学の「一般化順列」（generalized permutations）もこのエントリにまとめた。",
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "異なる n 個のものから、同じものを何度でも選んでよいとして r 個を並べる並べ方。総数は nʳ 通り。",
+  "definition_en": "An arrangement of r objects chosen from n kinds when the same kind may be used again and again; there are nʳ of them.",
+  "latex": "n^r",
+  "spoken_en": "n to the r",
+  "examples": [
+    {
+      "en": "Each of the four digits can be any of 10 numbers, so this is a permutation with repetition: 10 to the fourth.",
+      "ja": "4 桁のどれにも 10 通りの数字が入るので、これは重複順列で 10⁴ 通りだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the number of permutations with repetition of length 5 formed from the letters a, b, and c.",
+      "ja": "a, b, c の 3 文字から重複を許して 5 個並べる重複順列の総数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「同じものを含む順列」（並べるものの中に同じものがある）と「重複順列」（同じものを何度でも選べる）は別の数え方。前者は n!/(p! q! r!)、後者は nʳ。",
+    "r 個のものを n 人に配る問題では、何を「並べる位置」、何を「選択肢」とするかで nʳ と rⁿ を取り違えやすい。"
+  ],
+  "related": [
+    "permutation",
+    "permutation-of-a-multiset",
+    "combination-with-repetition",
+    "counting"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "permutation with repetition": 1
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 1 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

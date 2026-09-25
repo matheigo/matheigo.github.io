@@ -1,0 +1,88 @@
+{
+  "id": "double-count",
+  "ja": {
+    "term": "重複して数える",
+    "reading": "ちょうふくしてかぞえる",
+    "alt": [
+      "ダブり"
+    ]
+  },
+  "en": {
+    "term": "double count",
+    "alt": [
+      "overcount"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "英語は double count（名詞形 double counting）か overcount（多く数えすぎる）という動詞で言う。「ダブり」のような重なりそのものは overlap。",
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "同じ場合を 2 回以上数えてしまい、個数を実際より多く数えること。場合分けの重なりや、並べ方の入れ替えを別々に数えたときに起こる。",
+  "definition_en": "To count the same case more than once, so the total comes out too large; it happens when cases overlap or when different orders of the same selection are counted separately.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Careful — if you just add the multiples of 2 and the multiples of 3, you double count the multiples of 6.",
+      "ja": "2 の倍数と 3 の倍数をただ足すと、6 の倍数を重複して数えてしまうから気をつけて。",
+      "register": "spoken"
+    },
+    {
+      "en": "We overcounted by a factor of 2, because AB and BA are the same pair, so divide by 2.",
+      "ja": "AB と BA は同じ組なのに 2 回数えたので、2 で割る。",
+      "register": "spoken"
+    },
+    {
+      "en": "To avoid double counting, subtract the number of outcomes in A ∩ B once.",
+      "ja": "重複して数えないように、A ∩ B の場合の数を 1 回引く。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは double count は話し言葉で 20 件（Professor Leonard 15・MIT OCW 5）、書き言葉では 0 件。答案では counted twice と説明的に書いてもよい。",
+    "組合せ論の double counting は「同じものを 2 通りの方法で数えて等式を示す証明法」の名前でもある。数えすぎのミスとは別の意味。"
+  ],
+  "related": [
+    "inclusion-exclusion-principle",
+    "undercount",
+    "union-of-events",
+    "venn-diagram",
+    "counting"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "double count": 20
+    },
+    "sources": [
+      "mit-6.042",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

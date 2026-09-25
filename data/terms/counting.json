@@ -1,0 +1,109 @@
+{
+  "id": "counting",
+  "ja": {
+    "term": "場合の数",
+    "reading": "ばあいのかず",
+    "alt": []
+  },
+  "en": {
+    "term": "counting",
+    "alt": [
+      "number of ways"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "分野名としての「場合の数」は counting（OpenStax Algebra and Trigonometry の章 Sequences, Probability and Counting Theory、節 Counting Principles）。個数としての「場合の数」は the number of ways（to …）で、「何通り」は How many ways …? と言う。直訳の number of cases は使わない。",
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "ある事柄の起こり方が全部で何通りあるか、またそれを漏れなく重複なく数える方法を扱う分野。",
+  "definition_en": "The study of how many ways something can happen, and the methods for counting them without missing or repeating any.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "This is really a counting problem: how many ways can five people line up?",
+      "ja": "これは場合の数の問題だ。5 人が 1 列に並ぶ並び方は何通りあるか。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the number of ways to choose a president and a vice president from a class of 30 students.",
+      "ja": "30 人のクラスから委員長と副委員長を 1 人ずつ選ぶ選び方の数を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "The multiplication principle is one of the basic tools of counting.",
+      "ja": "積の法則は場合の数の基本的な道具の 1 つである。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "和の法則・積の法則は addition principle ／ multiplication principle。",
+    "counting は「数えること」一般にも使う語なので、用例コーパスの件数（話し言葉 444 件、書き言葉 262 件）には分野名以外の用法も含まれうる。"
+  ],
+  "related": [
+    "enumeration",
+    "permutation",
+    "combination",
+    "tree-diagram",
+    "inclusion-exclusion-principle"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "number of ways": 11,
+      "counting": 444
+    },
+    "written": {
+      "counting": 262,
+      "number of ways": 36
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

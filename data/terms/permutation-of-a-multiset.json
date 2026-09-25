@@ -1,0 +1,81 @@
+{
+  "id": "permutation-of-a-multiset",
+  "ja": {
+    "term": "同じものを含む順列",
+    "reading": "おなじものをふくむじゅんれつ",
+    "alt": []
+  },
+  "en": {
+    "term": "permutation of a multiset",
+    "alt": [
+      "distinguishable permutation"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで permutation of a multiset は話・書とも 0 件）。英語では、同じ文字を含む単語の文字の並べ方（arrangements of the letters of a word with repeated letters）のように問題の中身で説明し、n!/(p! q! r!) で数える。",
+  "domains": [
+    "combinatorics"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "n 個のうち p 個、q 個、r 個がそれぞれ同じものであるとき、それら全部を 1 列に並べる並べ方。総数は n!/(p! q! r!) 通り（p + q + r = n）。",
+  "definition_en": "An arrangement in a row of n objects of which p, q, and r are alike; there are n!/(p! q! r!) of them, where p + q + r = n.",
+  "latex": "\\frac{n!}{p!\\,q!\\,r!}",
+  "spoken_en": "n factorial over p factorial q factorial r factorial",
+  "examples": [
+    {
+      "en": "Since the two S's look the same, divide by 2 factorial: it's a permutation of a multiset.",
+      "ja": "2 つの S は区別できないので 2! で割る。これは同じものを含む順列だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "How many distinguishable permutations of the letters of BANANA are there?",
+      "ja": "BANANA の 6 文字を 1 列に並べる並べ方は何通りあるか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「重複順列」（同じものを何度でも選べる、nʳ）とは別物。こちらは並べるものの中に同じものが決まった個数だけある。",
+    "割るのは同じものの個数の階乗。BANANA なら A が 3 個、N が 2 個なので 6!/(3! 2!) = 60。"
+  ],
+  "related": [
+    "permutation",
+    "factorial",
+    "permutation-with-repetition",
+    "shortest-path",
+    "distinguish"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

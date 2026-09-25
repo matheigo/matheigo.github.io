@@ -1,0 +1,87 @@
+{
+  "id": "herons-formula",
+  "ja": {
+    "term": "ヘロンの公式",
+    "reading": "へろんのこうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "Heron's formula",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "三角形の 3 辺の長さ a, b, c だけから面積を求める公式。s = (a + b + c)/2 として S = √(s(s − a)(s − b)(s − c))。",
+  "definition_en": "A formula for the area of a triangle from its three side lengths a, b, c alone: with s = (a + b + c)/2, the area is √(s(s − a)(s − b)(s − c)).",
+  "latex": "S = \\sqrt{s(s-a)(s-b)(s-c)}, \\quad s = \\frac{a+b+c}{2}",
+  "spoken_en": "the square root of s times s minus a times s minus b times s minus c, where s is half the perimeter",
+  "examples": [
+    {
+      "en": "If all you know are the three sides, Heron's formula gets you the area without finding any angles.",
+      "ja": "3 辺しかわかっていないなら、ヘロンの公式で角を求めずに面積が出せる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use Heron's formula to find the area of a triangle with sides 5, 6, and 7.",
+      "ja": "3 辺の長さが 5, 6, 7 の三角形の面積を、ヘロンの公式を用いて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "s は周の長さの半分で、英語では semiperimeter と呼ぶ。",
+    "用例コーパスでは話し言葉 1 件（The Organic Chemistry Tutor）、書き言葉 16 件（すべて OpenStax Algebra and Trigonometry）。"
+  ],
+  "related": [
+    "area-of-a-triangle",
+    "area-formula-with-sine",
+    "law-of-cosines",
+    "inscribed-circle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ヘロンの公式",
+      "en": "Heron's formula"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "Heron's formula": 1
+    },
+    "written": {
+      "Heron's formula": 16
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}
