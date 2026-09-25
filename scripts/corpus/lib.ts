@@ -94,6 +94,11 @@ export const VARIANTS: [RegExp, string][] = [
   [/\bd([a-z])\/d([a-z])\b/g, "d$1 d$2"],
   // One name, three spellings: L'Hôpital (OpenStax), L'Hopital (captions), L'Hospital (older)
   [/\bl'?h[oô]s?pital/g, "l'hopital"],
+  // (Phase 2 中学の単元) captions write "left hand side", "cross multiply"; OpenStax hyphenates
+  [/\b(left|right)\s+hand\s+side/g, "$1-hand side"],
+  [/\bcross\s+multipl/g, "cross-multipl"],
+  // and CK-12 Geometry's "Same Side Interior Angles" against "same-side interior angles"
+  [/\bsame\s+side\s+(interior|exterior)/g, "same-side $1"],
 ];
 
 /** Numbers spoken aloud. Transcripts mix digits and words. */
@@ -671,6 +676,8 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
       "angle-angle-side congruence | angle-angle-side (AAS) congruence | angle-angle-side triangle congruence | angle-angle-side theorem | angle-angle-side postulate",
   },
   "hl-congruence": { HL: "by HL | HL congruence | (HL) congruence | HL theorem | HL postulate | HL criterion" },
+  // 対称律, counted by the names Geometry gives it (Phase 2 中学の単元の前の修正)
+  "symmetric-property": { "symmetric property": "symmetric property of equality | symmetric property of congruence" },
   // 仮定: "hypothesis" alone is mostly a statistical hypothesis; the proof's "Given" cannot be counted
   hypothesis: {
     hypothesis:
@@ -787,6 +794,120 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   "error-bound": { "error bound": "!lagrange !legrange error bound" }, // not the Lagrange error bound (Taylor polynomials)
   "quadratic-form": { "quadratic form": "!in !the !standard !undoing quadratic form" }, // not an equation "in quadratic form" (u = x²)
   blocking: { blocking: "block design" }, // "blocking" folds into "block": stacks of blocks, Jordan blocks
+  // Phase 2 中学の単元 (batch 1): everyday words and words that name other entries too
+  sign: { sign: "!radical !equal !equals !inequality !summation !integral !plus !minus sign" }, // 符号, not a symbol's name
+  // A plural in a form folds back to its singular (inflection), so a form never lists "constants" or
+  // "unknowns" alone: that would count every "constant" (Phase 2 中学の単元)
+  opposite: { opposite: "the opposite of | its opposite" }, // 反数, not "the opposite way"
+  addition: { addition: "!in addition" }, // not "in addition" (そのうえ)
+  power: { power: "to the … power | to the power of | raised to a power | raised to the power | to a power | powers of" }, // 累乗, not power series / power rule / statistical power
+  square: { square: "the square of | squares of | square the | square each | square both" }, // 平方, not a square (正方形) or square root
+  cube: { cube: "the cube of | cubes of | cube the | cube both" }, // 立方, not a cube (立方体)
+  "prime-number": { prime: "is prime | is a prime | are prime" }, // the adjective; bare "prime" is also f prime
+  term: { term: "!in term" }, // not "in terms of"
+  "greater-than": { "greater than": "greater than !or" }, // not "greater than or equal to"
+  "less-than": { "less than": "less than !or", "smaller than": "smaller than !or" },
+  round: { round: "round to | round up | round down | round … to the nearest" }, // not "round here", "a round table"
+  "base-of-a-power": {
+    base: "the base is | same base | base and exponent | base and the exponent | base of the power | base of the exponent | bases are the same",
+  }, // 底, not "based on", a base case, the base of a triangle
+  variable: {
+    variable: "!random !independent !dependent !response !explanatory !categorical !quantitative !lurking !confounding !dummy !free !basic !indicator variable",
+  }, // 変数, not the statistics variables (statistical-variable) or a random variable
+  coefficient: { coefficient: "!correlation !binomial coefficient" },
+  constant: { constant: "a constant !of !function !rate !speed !term | the constant !of !function !rate !speed !term" }, // not the constant of integration / proportionality, a constant function or the constant term
+  // batch 2
+  unit: {
+    unit: "units of measure | unit of measure | units of measurement | unit of measurement | same units | label the units | include units | in the units | units of length | unit of length",
+  }, // 単位, not the unit circle, a unit vector or "Unit 3"
+  times: { times: "times as many | times as much | times as large | times as long | times as big | times larger | times bigger | times greater" }, // 〜倍, not "3 times 4" or "many times"
+  ratio: { ratio: "!common !golden ratio !test" }, // 比, not a common ratio or the ratio test
+  "value-of-a-ratio": { "value of a ratio": "value of a ratio | value of the ratio" },
+  proportion: {
+    proportion:
+      "set up a proportion | set up the proportion | solve the proportion | solve a proportion | solve proportions | write a proportion | using a proportion | use a proportion | the proportion is true",
+  }, // 比例式; bare "proportion" is mostly the statistics proportion (割合)
+  "cross-multiply": {
+    // captions write "cross multiply" (normalize joins it); the hyphenated word does not fold inflection
+    "cross-multiply": "cross-multiply | cross-multiplying | cross-multiplied | cross-multiplies | cross-multiplication",
+    "cross multiplication": "cross-multiply | cross-multiplying | cross-multiplied | cross-multiplies | cross-multiplication",
+  }, // "cross products" is mostly the vector cross product
+  unknown: { unknown: "the unknown !population | an unknown !population | two unknowns | three unknowns | unknown number | unknown value | unknown quantity" }, // the noun, not "unknown population mean"
+  hold: {
+    hold: "holds for | hold for | holds true | hold true | still holds | also holds | equation holds | inequality holds | equality holds",
+    "hold true": "holds for | hold for | holds true | hold true | still holds | also holds | equation holds | inequality holds | equality holds",
+  }, // 成り立つ, not "hold on"
+  check: {
+    check: "check your answer | check the answer | check our answer | check your work | check the solution | check our solution | check by | check your solution",
+  }, // 確かめる, not "let me check" or "check this out"
+  graph: { graph: "graph of | the graph !theory" }, // the graph of a function, not a verb or graph theory (graph-network)
+  "plot-a-point": { "plot a point": "plot … point | plot point" },
+  "draw-a-graph": { graph: "graph the | graph each | graph this | graph these | graph it" }, // the verb
+  // batch 3
+  line: { line: "!number !tangent !secant !regression !normal !real !straight line !segment !segments !integral !integrals !graph !graphs" }, // 直線, not a number / tangent / regression line or a line segment
+  side: {
+    side:
+      "side of the triangle | side of a triangle | side of the square | side of a square | side length | length of the side | length of each side | three sides | four sides | all sides | side of the polygon",
+  }, // 辺, not "both sides" or "the left side"
+  perpendicular: { perpendicular: "perpendicular !bisector !bisectors !lines !line" }, // the adjective; perpendicular lines and bisectors are entries
+  parallel: { parallel: "parallel !lines !line" },
+  center: { center: "center of the circle | center of a circle | center of the sphere | its center | the center is | centered at" }, // not a center of mass
+  arc: { arc: "arc !length" },
+  construction: { construction: "!by construction" }, // not "by construction" in a proof
+  straightedge: { ruler: "ruler !postulate" },
+  construct: {
+    construct:
+      "construct a perpendicular | construct the perpendicular | construct an angle | construct a line | construct the bisector | construct a triangle | construct a circle | construct a square | construct a hexagon | construct a copy | construct the angle | construct the line | construct a parallel",
+  }, // 作図する, not "construct a confidence interval"
+  "be-tangent-to": { "be tangent to": "tangent to" },
+  translate: {
+    translate:
+      "translate the graph | translated … units | translate … units | translate the figure | translate the triangle | translate the point | translated up | translated down | translated left | translated right | translate it",
+  }, // 平行移動する, not "translate the sentence into an equation"
+  reflect: {
+    reflect: "reflect over | reflect across | reflect … over | reflect … across | reflect it over | reflect it across | reflect about",
+  }, // 折り返す, not "reflect on"
+  measure: { measure: "measure the length | measure the angle | measure the height | measure the side | measure each | measure it | measure with" }, // the verb; "the measure of angle A" is a noun
+  solid: { solid: "a solid !line !dot !circle !curve !lines !dots | the solid !line !dot !circle !curve !lines !dots | solid figure" }, // 立体, not a solid line or dot
+  plane: { plane: "!coordinate !complex !cartesian !tangent !projective !osculating plane" },
+  net: { net: "net of a | net of the | a net for | the net for" }, // 展開図, not a net change or net force
+  // batch 4
+  edge: {
+    edge: "edge of the cube | edge of a cube | edge length | edge of the prism | edge of a polyhedron | faces, edges | faces and edges | edges and vertices | edges, and vertices",
+  }, // 稜, not the edge of a graph (edge-of-a-graph) or of a table
+  face: { face: "face of the | face of a | faces, edges | faces and edges | lateral face | number of faces" },
+  "lie-in": { "lie in": "lies in the plane | lie in the plane | lies in a plane | lie in a plane | contained in the plane" },
+  "base-of-a-solid": {
+    base: "base of the prism | base of a prism | base of the cylinder | base of a cylinder | base of the pyramid | base of a pyramid | base of the cone | base of a cone",
+  }, // 底面, not the base of a power, a triangle or a logarithm
+  "cube-solid": { cube: "a cube !root !roots | the cube !root !roots !of | unit cube" }, // 立方体, not a cube root or x cubed
+  "range-of-data": { range: "range of the data | range of a data | range of the scores | range of each data set | range of the data set" }, // 範囲, not the range of a function
+  degree: {
+    degree:
+      "degree of the polynomial | degree of a polynomial | degree of the term | degree of a term | degree of the monomial | degree of each term | highest degree | degree two polynomial | degree three polynomial | degree n polynomial",
+  }, // 次数, not an angle's degree
+  quotient: { quotient: "quotient !rule" },
+  product: { product: "the product of | a product of" }, // not "products of" (a dot product of …)
+  sum: { sum: "the sum of | a sum of" },
+  difference: { difference: "the difference of | the difference between" },
+  divisor: { factor: "is a factor of | are factors of | factors of" }, // 約数; "factors of" is also the factors of a polynomial
+  "divisor-in-division": {
+    divisor: "the divisor is | divide by the divisor | dividend and divisor | dividend by the divisor | divisor and the dividend",
+  }, // 除数, not a divisor (約数)
+  elimination: { elimination: "by elimination | using elimination | use elimination | elimination method | method of elimination" }, // not Gaussian elimination
+  "rearranging-an-equation": {
+    "solve the formula for": "solve the formula for | solve a formula for | solve each formula for",
+    "solve for a variable": "solve for a variable | solve for the variable",
+    "rearrange the equation": "rearrange the equation | rearrange the formula | rearrange an equation | rearrange a formula",
+  },
+  "checking-whether-the-solution-makes-sense": {
+    "check that the answer makes sense":
+      "answer makes sense | solution makes sense | answer is reasonable | solution is reasonable | reasonable answer | makes sense in the context",
+    "check that the answer is reasonable":
+      "answer makes sense | solution makes sense | answer is reasonable | solution is reasonable | reasonable answer | makes sense in the context",
+  },
+  change: { change: "change in x | change in y | change in the x | change in the y" }, // 増加量 (Δx, Δy)
+  domain: { domain: "the domain !and | domain of" }, // not "domain and range" (変域)
 };
 
 /** The wording a candidate is counted and recorded as. */
@@ -1298,6 +1419,10 @@ export type Settled =
 /**
  * A wording one reference uses this many times or more is a name English has
  * (DECISIONS, Phase 2 幾何・離散の単元 3: the IM-glossary exception made general).
+ * Counted per reference and per wording: the forms of one wording ("by AAS |
+ * AAS congruence | (AAS) congruence", TERM_FORMS) add up, since its hits are
+ * the matches of all its forms; two wordings (AAS, angle-angle-side) or two
+ * references are never added (Phase 2 中学の単元の前の修正).
  */
 export const REFERENCE_NAMED = 3;
 

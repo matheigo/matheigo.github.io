@@ -8,11 +8,17 @@
   "en": {
     "term": "simplify the radical",
     "alt": [
-      "simplify radicals",
       "simplest radical form"
     ],
     "uk": null,
-    "register": "written"
+    "register": "written",
+    "variants": [
+      {
+        "term": "simplify radicals",
+        "register": "spoken",
+        "note": "話し言葉で 8 件（NancyPi 4・Khan Academy 4）、書き言葉で 29 件（OpenStax Intermediate Algebra 21・OpenStax Algebra and Trigonometry 8）。"
+      }
+    ]
   },
   "pos": "phrase",
   "mapping": "exact",
@@ -80,8 +86,8 @@
   "evidence": {
     "spoken": {
       "simplify the radical": 1,
-      "simplify radicals": 4,
-      "simplest radical form": 1
+      "simplest radical form": 1,
+      "simplify radicals": 8
     },
     "written": {
       "simplify radicals": 29,
@@ -90,6 +96,7 @@
     },
     "sources": [
       "khan-algebra",
+      "khan-middle",
       "openstax-algtrig",
       "openstax-elemalg",
       "openstax-intalg",

@@ -6,16 +6,16 @@
     "alt": []
   },
   "en": {
-    "term": "alphabetical order",
+    "term": "lexicographic order",
     "alt": [
-      "lexicographic order",
+      "alphabetical order",
       "dictionary order"
     ],
     "uk": null
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "OpenStax Prealgebra は alphabetical order と書く（1 件、語を並べる順序として）。Levin の Discrete Mathematics も alphabetical order と書く（3.3・3.5・3.4 ほか、8 件）。用例コーパスで alphabetical order は話し言葉 3 件（MIT OCW 2・Khan Academy 1）・書き言葉 1 件、lexicographic order と dictionary order は話・書とも 0 件。英語では「辞書のように並べる」と、並べ方そのものを言う。",
+  "mapping_note": "見出しは英語版 Wikipedia の記事名 Lexicographic order（「辞書式順序」の langlink 先）。OpenStax Prealgebra は alphabetical order と書く（1 件、語を並べる順序として）。Levin の Discrete Mathematics も alphabetical order と書く（3.3・3.5・3.4 ほか、8 件）。用例コーパスで alphabetical order は話し言葉 3 件（MIT OCW 2・Khan Academy 1）・書き言葉 1 件、lexicographic order と dictionary order は話・書とも 0 件。英語では「辞書のように並べる」と、並べ方そのものを言う。",
   "domains": [
     "combinatorics"
   ],
@@ -79,13 +79,14 @@
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "alphabetical order": 3
+      "alphabetical order": 5
     },
     "written": {
       "alphabetical order": 1
     },
     "sources": [
       "khan-algebra",
+      "khan-middle",
       "mit-6.042",
       "openstax-prealgebra"
     ],
@@ -93,8 +94,8 @@
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 alphabetical order（本文 1 件）。register は主張しない。",
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 2 中学の単元の前の修正」の 2）。en.term は lexicographic order（英語版 Wikipedia の記事名）、alphabetical order は en.alt。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

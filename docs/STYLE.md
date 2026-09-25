@@ -100,3 +100,4 @@ Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を�
 - 見出しがふつうの英単語だけの句（数学の名詞を含まない句。1 語の compare・region も）が ① か ② になったら、確定する前に首位の候補の文脈を register ごとに 10 件見る（`pnpm corpus:probe -- --contexts "<候補>"`）。別の意味が 5 件以上か、除くと判定が変わるときは TERM_FORMS の形で数え直す。形には「A | B」（どちらか）と「!w」（前に置けば直前が w のもの、後ろに置けば直後が w のものを数えない）が使える。
 - 数えられないもの（別の意味を締め出す形がない言い方）は候補（en.alt・variants・collocations）に置かず、pitfalls に書く（phase-shift の horizontal shift）。
 - 新しい単元の行が既存のエントリに当たったら、その単元の意味・例文・level・ja.alt が足りているかを見て、足りなければ足す（飛ばさない）。
+- TERM_FORMS の形に複数形だけの語を置かない（constants、unknowns、solids、cubes）。語形変化をまとめて数えるので、複数形は単数や過去形にも当たる（cubes は x cubed に当たる）。名詞として数えたいときは a ／ the を付けた単数の形にする（a constant !of ／ the constant !of）。

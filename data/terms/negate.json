@@ -8,7 +8,8 @@
   "en": {
     "term": "negate",
     "alt": [],
-    "uk": null
+    "uk": null,
+    "register": "spoken"
   },
   "pos": "verb",
   "mapping": "exact",
@@ -79,7 +80,7 @@
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "negate": 7
+      "negate": 11
     },
     "written": {
       "negate": 3
@@ -87,18 +88,12 @@
     "sources": [
       "khan-algebra",
       "khan-ap-calc",
+      "khan-middle",
       "mit-6.042",
       "mit-notes",
       "openstax-introstats",
       "yt:3blue1brown"
     ],
     "counted": "2026-09-25"
-  },
-  "flags": [
-    {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは CK-12 の呼び方 negate（CK-12 Geometry 2.10 Negative Statements・CK-12 Geometry 2.12 Converse Inverse and Contrapositive Statements・計 11 件）。register は主張しない。",
-      "raised": "2026-09-25"
-    }
-  ]
+  }
 }

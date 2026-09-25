@@ -6,16 +6,16 @@
     "alt": []
   },
   "en": {
-    "term": "proof by exhaustion",
+    "term": "proof by cases",
     "alt": [
-      "proof by cases",
+      "proof by exhaustion",
       "case analysis"
     ],
     "uk": null
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（proof by exhaustion ／ proof by cases ／ case analysis は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（proof by cases ／ proof by exhaustion ／ case analysis は CED・OpenStax・IM・CK-12 とも 0 件）。英語版 Wikipedia の記事名は Proof by exhaustion（proof by cases はそのリダイレクト）。",
   "domains": [
     "proof"
   ],
@@ -33,12 +33,12 @@
   "spoken_en": "if p or q, and p implies r, and q implies r, then r",
   "examples": [
     {
-      "en": "We'll do a proof by exhaustion here: case one, n is even, and case two, n is odd.",
+      "en": "We'll do a proof by cases here: case one, n is even, and case two, n is odd.",
       "ja": "ここは場合分けで証明しよう。n が偶数の場合と、n が奇数の場合だ。",
       "register": "spoken"
     },
     {
-      "en": "Use proof by exhaustion to show that n² + n is even for every integer n. (Consider the cases n even and n odd.)",
+      "en": "Use a proof by cases to show that n² + n is even for every integer n. (Consider the cases n even and n odd.)",
       "ja": "すべての整数 n について n² + n が偶数であることを、場合分けによって証明せよ（n が偶数の場合と奇数の場合を考えよ）。",
       "register": "written"
     }
@@ -79,8 +79,8 @@
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 4 件（10 未満））。見出しは Wikipedia の記事名 proof by exhaustion（英語版「Proof by exhaustion」、en.term のリダイレクト先）。register は主張しない。",
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 2 中学の単元の前の修正」の 2）。en.term は proof by cases、proof by exhaustion は en.alt。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

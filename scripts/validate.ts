@@ -90,6 +90,7 @@ const SAME_EN_TERM: [string, string][] = [
   ["vertex", "vertex-graph"], // 頂点（図形・放物線） ／ 頂点（グラフ理論）
   ["hypothesis", "statistical-hypothesis"], // 仮定（証明） ／ 仮説（統計）
   ["median", "median-of-a-triangle"], // 中央値 ／ 中線
+  ["variable", "statistical-variable"], // 変数（式の文字） ／ 変量（統計）
 ];
 const intendedHomonym = (a: string, b: string) =>
   SAME_EN_TERM.some(([x, y]) => (x === a && y === b) || (x === b && y === a));

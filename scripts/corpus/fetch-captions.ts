@@ -18,7 +18,8 @@
  * the only basis for a symbol reading). Machine translations into English
  * (en-bg, en-ko ...) are never read.
  *
- * Scope. Khan sources take every video of their playlists. A YouTube channel
+ * Scope. Khan sources take every video of their playlists (khan-middle leaves
+ * out the videos the other Khan sources already list). A YouTube channel
  * takes the listed math playlists (or, for a channel without playlists, its
  * videos filtered by title and length) and keeps at most CHANNEL_CAP videos,
  * spread evenly over that list, so no channel dominates the fetch; the 25%
@@ -78,6 +79,12 @@ interface Source {
    * being fetched again.
    */
   legacyNames?: boolean;
+  /**
+   * Sources whose listed videos this one leaves to them: a video already in
+   * one of their playlists is not fetched a second time (their lists are read
+   * from the cache).
+   */
+  leaveTo?: string[];
 }
 
 const KHAN_LICENSE = "CC BY-NC-SA";
@@ -155,6 +162,54 @@ const SOURCES: Source[] = [
       "PLSQl0a2vh4HBrMFHsJOEQLOKpfEAyYOAJ", // Sampling distributions
       "PLSQl0a2vh4HBNxqWanMyJobind_frsqzC", // Confidence intervals
       "PLSQl0a2vh4HDkZ6uqdJnOtFICy5_jX-0C", // Significance tests (hypothesis testing)
+    ],
+  },
+  {
+    // DECISIONS, Phase 2 中学の単元の前の修正: the middle-school courses as one
+    // source, as khan-algebra holds Algebra I, II and Basics. Every unit playlist of
+    // 6th, 7th and 8th Grade and of Pre-Algebra, and the IM-aligned 6th-8th course
+    // playlists (other videos). The old "Pre-algebra" list (PL238F98B2C6422A95) is
+    // left out: 27 of its 39 videos are in the Pre-Algebra units, the rest "(old)".
+    id: "khan-middle",
+    dir: "khan-middle",
+    title: "Khan Academy Middle School",
+    license: KHAN_LICENSE,
+    captions: "human",
+    leaveTo: ["khan-algebra", "khan-ap-calc", "khan-ap-stats"],
+    playlists: [
+      "PLSQl0a2vh4HDQKLWsTU-GYMChCVkxlexN", // Ratios, rates, and percentages | 6th Grade
+      "PLSQl0a2vh4HDOOmXvQqdTv9UtOqcq4Yuz", // Arithmetic operations | 6th Grade
+      "PLSQl0a2vh4HDJO050aGQGrCU4ggj0whlS", // Negative numbers | 6th Grade
+      "PLSQl0a2vh4HDRiJDPydVycTdR0FuDm9vp", // Properties of numbers | 6th Grade
+      "PLSQl0a2vh4HCU81CYvYD_DDyih7ewWRFQ", // Variables and expressions introduction | 6th Grade
+      "PLSQl0a2vh4HASpT_SgP3luvttRxvS6EZr", // Equations and inequalities introduction | 6th Grade
+      "PLSQl0a2vh4HC6ffkpqtFTIHpCRQWHcqOD", // Geometry | 6th Grade
+      "PLSQl0a2vh4HDmRFf-DV-pgGb_O5N1VZka", // Data and statistics | 6th Grade
+      "PLSQl0a2vh4HD2TcG-su8nDyQRvGPVn1zz", // 6th grade (Illustrative Mathematics-aligned)
+      "PLSQl0a2vh4HBsPSJHpGAJlpeos-joh5Hz", // Negative numbers: addition and subtraction | 7th Grade
+      "PLSQl0a2vh4HBlS0akKTzzKuzNFXqM0Oq1", // Negative numbers: multiplication and division | 7th Grade
+      "PLSQl0a2vh4HCQHWDXEKSnY3-cygkXGiyN", // Fractions, decimals, and percentages | 7th Grade
+      "PLSQl0a2vh4HBW9LIfF_DIR86AFNKX14Sa", // Rates and proportional relationships | 7th Grade
+      "PLSQl0a2vh4HD5_VHZK5wJ_WqIGMq6nsG2", // Expressions, equations, and inequalities | 7th Grade
+      "PLSQl0a2vh4HAfI8_cucuV3YwssaBqkrER", // Geometry | 7th Grade
+      "PLSQl0a2vh4HB6wAjVm5BnIybSh6izZExi", // Statistics and probability | 7th Grade
+      "PLSQl0a2vh4HCp5NotDTr8B7y0H7CU8sOF", // 7th grade math (IM v.360 aligned)
+      "PLSQl0a2vh4HCtvyzCkxfQC4EtwKlT1KE3", // Numbers and operations | 8th Grade
+      "PLSQl0a2vh4HBYZT1rqQFk1PQ6uFq5oe8q", // Solving equations with one unknown | 8th Grade
+      "PLSQl0a2vh4HD5FU2_A5sJvEflEZ6fq6dC", // Linear equations and functions | 8th Grade
+      "PLSQl0a2vh4HD1igNibCTHMU3lwanwpado", // Systems of equations | 8th Grade
+      "PLSQl0a2vh4HDlfvU_vOsgHj_m-zxNRloS", // Geometry | 8th Grade
+      "PLSQl0a2vh4HDO-GtU7rfnd_QaNcoa6WX5", // Data and modeling | 8th Grade
+      "PLSQl0a2vh4HDLl4GjQuDin8H9vcSo5Iax", // 8th grade math (IM v.360 aligned)
+      "PLSQl0a2vh4HCS1H6_vN7TNm_iHBftT2-3", // Negative numbers and absolute value | Pre-Algebra
+      "PLSQl0a2vh4HD4oysZEdKqpQ45TIAN3lyz", // Factors and multiples | Pre-Algebra
+      "PLSQl0a2vh4HC8HiIGcoNa34SZTgD6RXAN", // Decimals | Pre-Algebra
+      "PLSQl0a2vh4HD6T866IPVRPXC8K-jgMQke", // Fractions | Pre-Algebra
+      "PLSQl0a2vh4HCbEq-LoPEhZHWLIpQEOuPN", // Ratios, proportions, units, and rates | Pre-Algebra
+      "PLSQl0a2vh4HDY5_tJkHPmknbQjpVFIij8", // Applying mathematical reasoning | Pre-Algebra
+      "PLSQl0a2vh4HDwajyHpV_64cxQe7VEajTl", // Exponents, radicals, and scientific notation | Pre-Algebra
+      "PLSQl0a2vh4HA1R0f1-f43DsP0Dyg8fAKq", // Arithmetic properties | Pre-Algebra
+      "PLSQl0a2vh4HAFK4vt1LkiIxUC8yplbl7R", // Measurement | Pre-Algebra
     ],
   },
   {
@@ -585,10 +640,21 @@ async function main() {
   // List everything first so that progress can be shown against one total.
   const plans: { src: Source; videos: Video[]; failed: number }[] = [];
   for (const src of sources) {
-    const { videos, failed, candidates } = await listVideos(src);
+    const listed = await listVideos(src);
+    let { videos, failed } = listed;
+    // Videos another source already lists stay with that source (its lists come from the cache).
+    const taken = new Set<string>();
+    for (const other of SOURCES.filter((s) => src.leaveTo?.includes(s.id))) {
+      const theirs = await listVideos(other);
+      failed += theirs.failed;
+      for (const v of theirs.videos) taken.add(v.id);
+    }
+    const left = videos.filter((v) => taken.has(v.id)).length;
+    videos = videos.filter((v) => !taken.has(v.id));
     plans.push({ src, videos, failed });
-    const capped = candidates > videos.length ? ` (spread from ${candidates})` : "";
-    console.log(`[captions] ${src.id}: ${videos.length} videos${capped}`);
+    const capped = listed.candidates > listed.videos.length ? ` (spread from ${listed.candidates})` : "";
+    const leftTo = left ? ` (${left} left to ${src.leaveTo!.join(", ")})` : "";
+    console.log(`[captions] ${src.id}: ${videos.length} videos${capped}${leftTo}`);
   }
   const overall: Progress = { done: 0, total: plans.reduce((n, p) => n + p.videos.length, 0) };
   console.log(`[captions] ${overall.total} videos in ${plans.length} source(s)`);

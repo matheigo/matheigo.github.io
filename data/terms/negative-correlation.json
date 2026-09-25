@@ -6,11 +6,12 @@
     "alt": []
   },
   "en": {
-    "term": "negative correlation",
+    "term": "negative linear relationship",
     "alt": [
-      "negative linear relationship"
+      "negative correlation"
     ],
-    "uk": null
+    "uk": null,
+    "register": "spoken"
   },
   "pos": "noun",
   "mapping": "exact",
@@ -45,7 +46,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスの話し言葉では negative linear relationship（8 件）と negative correlation（7 件）が並ぶ。"
+    "用例コーパスの話し言葉では negative linear relationship が 12 件（すべて Khan Academy。AP Statistics 8・中学 4）、negative correlation が 7 件（すべて Khan Academy の AP Statistics）で、首位だけが 10 件以上なので negative linear relationship を見出しにした。書き言葉では negative correlation が 7 件（OpenStax Introductory Statistics 4・Algebra and Trigonometry 3）で、AP Statistics の CED（topic 5.2）も negative correlation と書く。"
   ],
   "related": [
     "positive-correlation",
@@ -67,7 +68,7 @@
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "negative linear relationship": 8,
+      "negative linear relationship": 12,
       "negative correlation": 7
     },
     "written": {
@@ -76,16 +77,10 @@
     },
     "sources": [
       "khan-ap-stats",
+      "khan-middle",
       "openstax-algtrig",
       "openstax-introstats"
     ],
     "counted": "2026-09-25"
-  },
-  "flags": [
-    {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満 ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは AP Statistics の CED の呼び方 negative correlation（topic 5.2）。register は主張しない。",
-      "raised": "2026-09-25"
-    }
-  ]
+  }
 }

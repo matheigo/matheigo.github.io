@@ -1323,3 +1323,332 @@ PHASE2F_OUT_OF_SCOPE = {
     "puzzle": "数学用語ではない（数学と人間の活動の題材）",
     "protractor": "小学校範囲（分度器・小4）。v1 は中1 から（PLAN 4）",
 }
+
+# ------------------------------------ Phase 2 中学・Algebra 1／2・Pre-Algebra の単元
+# The same rules again (docs/DECISIONS.md "Phase 2 中学の単元"), before generating
+# every remaining row: 中1〜中3, Pre-Algebra, Algebra 1 / 2, Integrated Math and
+# the one 数B row. Applied by fix_phase1.py step 15, after step 14. As before, a
+# row merged into a row of a later unit brings that row into the earlier unit,
+# and a row merged into an existing entry is a "既存の語に当たる行": the entry
+# gets the middle-school meaning, example, level and ja.alt it lacks.
+PHASE2G_SAME = [
+    # 中1 正負の数・文字と式
+    ("is-greater-than", "greater-than", "from"),  # 〜より大きい heads; 大きい alone is not the relation
+    ("strictly-less-than", "less-than", "from"),  # 〜未満 heads (less than = <); 小さい goes to ja_alt
+    ("square-a-number", "square", "into"),  # 2 乗する / 平方: one English word, noun and verb
+    ("approximate-number", "approximate-value", "into"),  # 概数 = a rounded, approximate value
+    ("approximation", "approximate-value", "into"),  # 数B 近似: the same English (an approximation)
+    ("substitution", "substitute", "into"),  # 代入 is already the entry's ja_alt (置き換え went the same way)
+    ("distance-traveled", "distance", "into"),  # 道のり: English says distance (d = rt) for both 道のり and 距離
+    ("let-x-be", "let-u-equal", "into"),  # 〜を x とする / 〜とおく: both "let" (STYLE 追記欄)
+    ("write-using-a-variable", "write-an-equation", "into"),  # 文字を使って表す / 式で表す
+    ("set-up-an-equation", "write-an-equation", "into"),  # 式を立てる: English says write an equation for both
+    ("rate", "percent", "into"),  # 割合: 中1 uses it for percent problems (x % 引き, 2 割); English has no one word for 割合
+    ("combining-like-terms", "combine-like-terms", "into"),
+    ("collect", "combine-like-terms", "into"),  # まとめる (collect like terms)
+    # 中1 一次方程式
+    ("checking-the-solution", "check", "into"),  # 解の確かめ
+    ("moving-a-term-to-the-other-side", "move-term-to-other-side", "into"),  # 移項 is already its ja_alt
+    ("product-of-the-means", "cross-multiply", "into"),  # 内項の積 = 外項の積 (a:b = c:d ⇒ ad = bc)
+    ("product-of-the-extremes", "cross-multiply", "into"),
+    ("clear-the-fractions", "clear-the-denominators", "into"),  # 係数を整数にする / 分母を払う
+    ("undo-operation", "work-backwards", "into"),  # 逆算: undoing the operations (inverse operations)
+    # 中1 比例・反比例
+    ("proportional-relationship", "direct-proportion", "into"),  # Grade 7's name for 比例
+    ("is-proportional-to", "direct-proportion", "into"),
+    ("is-inversely-proportional-to", "inverse-proportion", "into"),
+    ("inverse-variation", "inverse-proportion", "into"),  # Algebra 2's name for 反比例
+    ("plotting", "plot-a-point", "into"),
+    ("table", "table-of-values", "into"),  # 表 in 比例・反比例 is the table of values
+    ("y-changes-with-x", "change-together", "into"),  # ともなって変わる
+    # 中1 平面図形・空間図形
+    ("transformation", "rigid-motion", "into"),  # 移動 is already the entry's ja_alt
+    ("is-perpendicular-to", "perpendicular", "into"),
+    ("is-parallel-to", "parallel", "into"),
+    ("solid-figure", "solid", "into"),  # 空間図形 / 立体
+    ("perpendicular-line", "perpendicular-lines", "into"),  # 垂線: English says perpendicular line(s) for both
+    # 中2 式の計算
+    ("rearrange-a-formula", "rearranging-an-equation", "into"),  # 等式の変形
+    ("tens-digit", "place", "into"),  # 十の位 = the tens place
+    ("ones-digit", "place", "into"),
+    ("be-divisible-by", "divisibility", "into"),  # 割り切れる is already its ja_alt
+    # 中2 連立方程式
+    ("system-of-equations", "system-of-linear-equations", "into"),
+    ("elimination-method", "elimination", "into"),  # 加減法
+    ("inconsistent-system", "no-solution", "into"),  # the US name of a system with no solution
+    ("dependent-system", "infinitely-many-solutions", "into"),
+    ("check-that-the-solution-makes-sense", "checking-whether-the-solution-makes-sense", "into"),  # 解の吟味
+    # 中2 平行と合同・三角形と四角形
+    ("congruence", "congruent", "into"),  # 合同 (the adjective heads, as in 単元 1)
+    ("sss", "sss-congruence", "into"),
+    ("sas", "sas-congruence", "into"),
+    ("asa", "asa-congruence", "into"),
+    ("show-that", "prove", "into"),  # 示せ: 示す is already the entry's ja_alt
+    ("are-collinear", "collinear", "into"),
+    ("necessary-and-sufficient", "necessary-and-sufficient-condition", "into"),
+    # 中2 確率
+    ("all-possible-outcomes", "number-of-possible-outcomes", "into"),
+    ("heads", "coin", "into"),  # 表・裏 are the faces of the coin
+    ("tails", "coin", "into"),
+    # 中3 展開と因数分解
+    ("factor-an-expression", "factoring", "into"),  # 因数分解する / 因数分解: one English word (factor, factoring)
+    ("square-of-a-sum", "square-of-a-binomial", "into"),  # 和の平方・差の平方 = the two square formulas
+    ("square-of-a-difference", "square-of-a-binomial", "into"),
+    ("difference-of-two-squares", "difference-of-squares", "into"),
+    ("descending-order", "write-in-descending-order", "into"),
+    ("ac-method", "cross-method", "into"),  # たすき掛け: the US methods for the same task (STYLE 直訳禁止)
+    ("box-method", "cross-method", "into"),
+    ("group-terms", "factoring-by-grouping", "into"),
+    # 中3 平方根・二次方程式
+    ("radical", "radical-sign", "into"),  # ルート
+    ("rationalize", "rationalizing-the-denominator", "into"),
+    ("simplify-the-radical", "simplify-radicals", "into"),
+    ("principal-root", "principal-square-root", "into"),
+    ("solve-by-taking-square-roots", "solving-by-taking-square-roots", "into"),
+    ("solve-by-factoring", "solving-by-factoring", "into"),
+    ("number-of-solutions", "number-of-real-solutions", "into"),
+    ("complete-the-square", "completing-the-square", "into"),  # 平方完成する is already its ja_alt
+    # 中3 関数 y = ax²・相似・円・三平方
+    ("open-upward", "opens-upward", "into"),
+    ("open-downward", "opens-downward", "into"),
+    ("is-symmetric-about", "symmetric", "into"),
+    ("free-fall", "projectile-motion", "into"),  # 落下 (h = −16t² + h₀): the US word problem
+    ("similarity", "similar-figures", "into"),  # 相似 (renamed to similar below)
+    ("aa", "aa-similarity", "into"),
+    ("enlargement", "dilation", "into"),  # 拡大・縮小 are one US word
+    ("reduction", "dilation", "into"),
+    ("ratio-of-areas", "ratio-of-areas-of-similar-figures", "into"),
+    ("ratio-of-volumes", "ratio-of-volumes-of-similar-solids", "into"),
+    ("distance-between-two-points", "distance-formula", "into"),
+    # US rows
+    ("compound-inequality", "system-of-inequalities", "into"),  # the entry's headword is compound inequality
+    ("piecewise-defined-function", "piecewise-function", "into"),
+    ("line-of-best-fit", "regression-line", "into"),
+    ("trend-line", "regression-line", "into"),
+    ("greatest-common-factor", "greatest-common-divisor", "into"),
+    ("zero", "zeros-of-a-polynomial", "into"),
+    ("root", "zeros-of-a-polynomial", "into"),  # 根 (of an equation) / zero (of a function)
+    ("vertical-stretch", "stretch-vertically", "into"),
+    ("horizontal-compression", "compress-horizontally", "into"),
+    ("one-to-one-function", "one-to-one", "into"),
+    ("family-of-functions", "parent-function", "into"),
+    ("focus-of-a-parabola", "focus", "into"),
+    ("multiplicity-of-a-zero", "multiplicity", "into"),
+    ("polynomial-long-division", "polynomial-division", "into"),
+    ("hole", "removable-discontinuity", "into"),  # a hole in the graph
+    ("change-of-base", "change-of-base-formula", "into"),
+    ("exponential-modeling", "exponential-model", "into"),
+    ("recursive-formula", "recurrence-relation", "into"),  # the entry's headword is recursive formula
+    ("explicit-formula", "general-term", "into"),
+    ("arithmetic-series", "sum-of-an-arithmetic-sequence", "into"),
+    ("geometric-series", "sum-of-a-geometric-sequence", "into"),  # finite geometric series
+    ("sigma-notation", "summation-notation", "into"),
+    ("trig-identities", "trigonometric-identities", "into"),
+]
+
+# Section names -> the entry for what they teach.
+PHASE2G_SECTION = [
+    ("adding-and-subtracting-expressions", "combine-like-terms"),  # 式の加減
+    ("multiplying-and-dividing-expressions", "monomial"),  # 式の乗除 (単項式の乗除)
+    ("using-algebraic-expressions", "algebraic-expression"),
+    ("applications-of-linear-functions", "linear-function"),
+    ("table-equation-and-graph", "representations-of-a-function"),
+    ("properties-of-figures", "proof"),
+    ("properties-of-parallel-lines", "parallel-lines"),
+    ("definition-and-theorem", "definition"),
+    ("special-parallelograms", "parallelogram"),
+    ("multiplying-polynomials", "expansion"),
+    ("applications-of-expressions", "special-products"),
+    ("proving-properties-of-numbers", "proof"),
+    ("operations-with-radicals", "radical-expression"),
+    ("applications-of-quadratic-equations", "quadratic-equation"),
+    ("parabola-and-line", "parabola"),
+    ("applications-of-functions", "function"),
+    ("other-functions", "function"),  # いろいろな関数
+    ("parallel-lines-and-proportional-segments", "triangle-proportionality-theorem"),
+    ("tangent-and-chord", "tangent-chord-theorem"),
+    ("circle-and-line", "position-of-a-line-relative-to-a-circle"),
+    ("linear-modeling", "mathematical-model"),
+    ("correlation-vs-causation", "causation"),
+    ("even-and-odd-functions", "even-function"),
+    ("key-features-of-a-graph", "sketch-the-graph"),
+    ("permutations-and-combinations", "counting"),
+    ("linear-functions-in-context", "linear-function"),
+    ("sine-cosine-and-tangent", "trigonometric-ratio"),
+    ("geometric-modeling", "mathematical-model"),
+]
+
+# A term with its argument filled in, a collocation of it, or a task on it.
+PHASE2G_INSTANCE = [
+    # 中1
+    ("change-the-sign", "sign"),
+    ("take-the-absolute-value", "absolute-value"),
+    ("positive", "positive-number"),  # 正の: "positive" alone is too many things to count
+    ("negative", "negative-number"),
+    ("remove-the-parentheses", "parentheses"),
+    ("simplify-the-expression", "simplify"),
+    ("solve-a-proportion", "proportion"),
+    ("add-the-same-number-to-both-sides", "properties-of-equality"),
+    ("subtract-from-both-sides", "properties-of-equality"),
+    ("multiply-both-sides-by", "properties-of-equality"),
+    ("divide-both-sides-by", "properties-of-equality"),
+    ("keep-the-equation-balanced", "properties-of-equality"),
+    ("has-exactly-one-solution", "number-of-real-solutions"),
+    ("solve-instruction", "solve"),  # 解け
+    ("plug-back-in-to-check", "check"),
+    ("check-by-substituting", "check"),
+    ("check-by-multiplying", "check"),
+    ("read-the-graph", "read-off"),
+    ("is-constant", "constant"),  # 一定である
+    ("pass-through-the-origin", "pass-through-a-point"),
+    ("the-graph-passes-through", "pass-through-a-point"),
+    ("meet-at-right-angles", "perpendicular"),
+    ("measure-the-angle", "measure-the-length"),  # renamed to measure below
+    ("do-not-intersect", "intersect"),
+    ("rotate-once-around", "solid-of-revolution"),
+    ("fold-up", "net"),
+    ("unfold", "net"),
+    ("graph-the-solution-on-a-number-line", "number-line"),
+    # 中2
+    ("two-digit-integer", "digit"),
+    ("consecutive-even-integers", "consecutive-integers"),
+    ("eliminate-a-variable", "eliminate"),
+    ("substitute-one-equation-into-the-other", "substitution-method"),
+    ("add-the-equations", "elimination"),
+    ("subtract-the-equations", "elimination"),
+    ("line-up-the-coefficients", "elimination"),
+    ("combine-the-equations", "elimination"),
+    ("multiply-by-a-constant", "elimination"),
+    ("set-up-a-system", "system-of-linear-equations"),
+    ("satisfy-both-equations", "satisfy-the-equation"),  # renamed to satisfy below
+    ("satisfy-the-condition", "satisfy-the-equation"),
+    ("intersection-of-the-graphs", "point-of-intersection"),
+    ("find-the-point-of-intersection", "point-of-intersection"),
+    ("graph-of-a-linear-equation-in-two-variables", "linear-equation-in-two-variables"),
+    ("find-the-slope", "slope"),
+    ("when-x-increases-by-1", "slope"),  # y increases by a when x increases by 1
+    ("shift-the-graph", "translation"),
+    ("graph-of-direct-variation", "direct-proportion"),
+    ("have-the-same-slope", "parallel-lines"),
+    ("parallel-lines-have-equal-slopes", "parallel-lines"),
+    ("perpendicular-lines-have-negative-reciprocal-slopes", "perpendicular-lines"),
+    ("corresponding-vertices", "correspond"),
+    ("is-congruent-to", "congruent"),
+    ("use-congruent-triangles", "congruent"),
+    ("prove-that", "prove"),
+    ("show-that-it-holds", "hold"),
+    ("the-converse-holds", "converse"),
+    ("have-the-same-area", "area-preserving-transformation"),
+    ("common", "reflexive-property"),  # 共通 (AB は共通): the reason is the reflexive property
+    ("bisect-the-angle", "bisect"),
+    ("opposite-facing", "opposite-side"),  # 向かい合う辺
+    ("possible", "number-of-possible-outcomes"),  # 起こりうる
+    ("probability-of-not-happening", "complementary-event"),
+    ("table-of-outcomes", "sample-space"),
+    ("lottery", "sampling-without-replacement"),  # くじ, as drawing-lots in 単元 1
+    ("ball", "draw"),  # draw a ball from a bag
+    ("bag", "draw"),
+    ("replace", "sampling-with-replacement"),  # 戻す
+    ("find-the-probability", "probability"),
+    ("the-probability-that", "probability"),
+    ("at-least", "at-least-one"),
+    # 中3
+    ("factor-out", "common-factor"),  # as factor-out-the-common-factor in 単元 1
+    ("use-the-distributive-property", "distributive-property"),
+    ("factor-completely", "factoring"),
+    ("standard-form-of-a-polynomial", "write-in-descending-order"),
+    ("take-out-of-the-radical", "simplify-radicals"),
+    ("take-the-square-root", "square-root"),
+    ("negative-square-root", "square-root"),
+    ("comparing-square-roots", "square-root"),
+    ("is-irrational", "irrational-number"),
+    ("true-value", "error"),  # 真の値 appears in the definition of 誤差
+    ("two-solutions", "number-of-real-solutions"),
+    ("use-the-discriminant-to-count-solutions", "discriminant"),
+    ("find-the-solutions", "solve"),
+    ("solve-by-completing-the-square", "completing-the-square"),
+    ("use-the-quadratic-formula", "quadratic-formula"),
+    ("plug-into-the-quadratic-formula", "quadratic-formula"),
+    ("solve-using-the-quadratic-formula", "quadratic-formula"),
+    ("the-solution-is-positive", "checking-whether-the-solution-makes-sense"),
+    ("equal-zero", "zero-product-property"),
+    ("one-of-them-is-zero", "zero-product-property"),
+    ("the-product-is-zero", "zero-product-property"),
+    ("graph-of-y-ax2", "quadratic-function"),
+    ("is-proportional-to-the-square-of", "quadratic-function"),  # y は x の 2 乗に比例する
+    ("width-of-the-parabola", "stretch-vertically"),  # 開き方: a in y = ax²
+    ("attain-the-maximum", "maximum"),
+    ("attain-the-minimum", "minimum"),
+    ("substitute-the-coordinates", "substitute"),
+    ("as-x-increases", "increase"),
+    ("y-decreases", "decrease"),
+    ("is-similar-to", "similar-figures"),
+    ("enlarge", "dilation"),
+    ("shrink", "dilation"),
+    ("ratio-of-corresponding-sides", "scale-factor"),  # 相似比
+    ("set-up-a-proportion", "proportion"),
+    ("the-ratios-are-equal", "proportion"),
+    ("use-similar-triangles", "similar-triangles"),
+    ("measure-the-height", "indirect-measurement"),
+    ("inscribed-angle-subtending-an-arc", "inscribed-angle"),
+    ("the-inscribed-angle-is-half-the-central-angle", "inscribed-angle-theorem"),
+    ("length-of-a-tangent", "tangent-segments-are-equal"),
+    ("perpendicular-to-the-radius", "tangent-line"),
+    ("draw-a-tangent", "tangent-line"),
+    ("lie-on-the-circle", "circle"),
+    ("draw-a-circle", "circle"),
+    ("length-of-a-diagonal", "diagonal"),
+    ("distance-in-three-dimensions", "distance-formula"),
+    ("use-the-pythagorean-theorem", "pythagorean-theorem"),
+    ("forms-a-right-triangle", "converse-of-the-pythagorean-theorem"),
+    ("find-the-length-of-the-side", "side"),
+    ("find-the-height", "height"),
+    # US rows
+    ("read-off-the-vertex", "vertex"),
+    ("maximum-or-minimum-point", "vertex"),  # 最大点・最小点 of a parabola
+    ("add-and-subtract-radicals", "like-radicals"),
+    ("square-both-sides", "radical-equation"),
+    ("even-and-odd-degree", "end-behavior"),
+    ("interval-of-increase", "increasing-and-decreasing"),
+    ("polynomial-identity", "identity"),
+    ("graph-of-the-inverse", "inverse-function"),
+    ("converting-between-radians-and-degrees", "radian-measure"),
+    ("trig-functions-on-the-unit-circle", "unit-circle"),
+    ("graph-of-the-sine-function", "sine"),
+    ("relative-frequency-table", "relative-frequency"),
+]
+
+# Rows renamed so that the id says what the entry is. The Phase 1 seed split
+# 集合の内包的記法's note "{x | x > 2}" at its "|", so the row's id was a piece of it.
+PHASE2G_RENAME = [
+    ("x > 2}。日本では「条件で表す」", "set-builder-notation",
+     {"note": "{x | x > 2} の形。日本では「条件で表す」"}),
+    ("base", "base-of-a-power", {}),  # 底 (a in aⁿ); base-of-a-triangle and base-of-a-solid are other rows
+    ("satisfy-the-equation", "satisfy", {"pos": "verb", "en": "satisfy", "ja": "満たす"}),  # 方程式を満たす goes to ja_alt
+    ("pass-through-a-point", "pass-through", {"pos": "verb", "en": "pass through", "ja": "通る"}),  # 点を通る goes to ja_alt
+    ("measure-the-length", "measure", {"pos": "verb", "en": "measure", "ja": "測る"}),  # 長さを測る goes to ja_alt
+    ("similar-figures", "similar", {"pos": "adjective", "en": "similar", "ja": "相似"}),  # as congruent in 単元 1
+    ("four-points-are-concyclic", "concyclic", {"pos": "adjective", "en": "concyclic", "ja": "同一円周上にある"}),
+]
+
+# Lines of a proof, of a problem statement or of a procedure, not terms
+# (Phase 3 phrases candidates).
+PHASE2G_TO_PHRASES = [
+    "omit",  # 省略する (the × sign is left out)
+    "in-order",  # 順に
+    "by-hypothesis",  # 仮定より
+    "since",  # 〜より
+    "therefore",  # よって (phrases/written-solution-therefore)
+    "hence",  # ゆえに
+    "are-equal-respectively",  # それぞれ等しい
+    "divide-the-figure",  # 図形を分ける
+    "square-and-add",  # 平方して足す
+]
+
+# Not mathematics terms.
+PHASE2G_OUT_OF_SCOPE = {
+    "time": "数学用語ではない（速さの文章題の量。速さ・道のりの語で扱う）",
+    "relationship": "数学用語ではない（日常語の「関係」。数量の関係は比例・関数・等式などの個別の語で扱う）",
+    "braking-distance": "数学用語ではない（y = ax² の例題の題材）",
+    "discount": "数学用語ではない（米国の文章題の生活文脈）。conventions で扱う（sales tax・tip と同じ）",
+}

@@ -12,11 +12,11 @@
       {
         "term": "segment",
         "register": "spoken",
-        "note": "直前に line が付かない segment として数えた（line segment の segment は数えない）。話し言葉で 156 件（MIT OCW 68・The Organic Chemistry Tutor 57・Khan Academy 17 ほか 14）、書き言葉で 49 件（OpenStax Calculus 21・MIT の講義ノート 21・OpenStax Intermediate Algebra 5 ほか 2）。"
+        "note": "直前に line が付かない segment として数えた（line segment の segment は数えない）。話し言葉で 189 件（MIT OCW 68・The Organic Chemistry Tutor 57・Khan Academy 50 ほか 14）、書き言葉で 49 件（OpenStax Calculus 21・MIT の講義ノート 21・OpenStax Intermediate Algebra 5 ほか 2）。"
       }
     ],
     "uk": null,
-    "register": "written"
+    "register": "both"
   },
   "pos": "noun",
   "mapping": "near",
@@ -86,8 +86,8 @@
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "!line segment": 156,
-      "line segment": 50
+      "!line segment": 189,
+      "line segment": 80
     },
     "written": {
       "line segment": 215,
@@ -96,6 +96,7 @@
     "sources": [
       "khan-algebra",
       "khan-ap-calc",
+      "khan-middle",
       "mit-18.01",
       "mit-18.02",
       "mit-18.03",

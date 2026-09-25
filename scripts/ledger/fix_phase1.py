@@ -29,6 +29,8 @@ fix_decisions.py; this file only applies them and derives the rest:
  13. AP Statistics units re-assigned to the five units of the 2026 CED
      (AP_STATS_2026_*); content the 2026 CED does not have leaves AP Statistics
  14. the same rules as 8-12 for 数I・数A, Geometry and Discrete Math (PHASE2F_*)
+ 15. the same rules for every remaining row: 中1〜中3, Pre-Algebra, Algebra 1 / 2,
+     Integrated Math and 数B (PHASE2G_*)
 
 Writes ledger/terms.csv, ledger/out-of-scope.csv, ledger/id-changes.csv,
 ledger/phrases-candidates.csv and a summary for the report to
@@ -632,6 +634,47 @@ def apply_phase2f(rows, log, stats, oos):
                         "out_of_scope": len(D.PHASE2F_OUT_OF_SCOPE)}
 
 
+# ------------------- 15. Phase 2 中学・Algebra 1／2・Pre-Algebra の単元（残りの行すべて）
+def apply_phase2g(rows, log, stats, oos):
+    """The same rules for every remaining row (fix_decisions PHASE2G_*). A row
+    whose entry is already generated keeps its source and article: the entry
+    has its own sources, and a merged row's article is often another concept
+    (零点 → Zero (complex analysis) for zeros of a polynomial)."""
+    kept_cols = ("source", "wiki_ja", "wiki_en", "wikidata")
+    done = {i: {c: r[c] for c in kept_cols} for i, r in rows.items()
+            if os.path.exists(os.path.join(ROOT, "data", "terms", f"{i}.json"))}
+    for frm, into, main in D.PHASE2G_SAME:
+        merge(rows, frm, into, main, log, action="merged-into")
+    for frm, into in D.PHASE2G_SECTION:
+        merge(rows, frm, into, "into", log, action="merged-into", names=False)
+        note_add(rows[into], f"節の名前「{frm}」を統合（Phase 2 中学の単元）")
+    for frm, into in D.PHASE2G_INSTANCE:
+        merge(rows, frm, into, "into", log, action="merged-into", names=False)
+    for old, new, fields in D.PHASE2G_RENAME:
+        before = rows[old]["ja"]
+        rename(rows, old, new, fields, log)
+        if rows[new]["ja"] != before:
+            add(rows[new]["ja_alt"], before)
+    for i, cols in done.items():
+        if i in rows:
+            rows[i].update(cols)
+    phrases = []
+    for i in D.PHASE2G_TO_PHRASES:
+        r = rows.pop(i)
+        phrases.append({"id": i, "ja": r["ja"], "en": r["en"], "pos": r["pos"], "unit": "|".join(r["unit"]),
+                        "level_jp": "|".join(r["level_jp"]), "level_us": "|".join(r["level_us"]),
+                        "from": "", "note": r["note"]})
+        log.append((i, "", "to-phrases"))
+    for i, reason in D.PHASE2G_OUT_OF_SCOPE.items():
+        r = rows.pop(i)
+        oos.append({"id": i, "ja": r["ja"], "en": r["en"], "unit": "|".join(r["unit"]),
+                    "level_jp": "|".join(r["level_jp"]), "reason": reason})
+        log.append((i, "", "out-of-scope"))
+    stats["phase2g"] = {"same": len(D.PHASE2G_SAME), "section": len(D.PHASE2G_SECTION),
+                        "instance": len(D.PHASE2G_INSTANCE), "rename": len(D.PHASE2G_RENAME),
+                        "to_phrases": phrases, "out_of_scope": len(D.PHASE2G_OUT_OF_SCOPE)}
+
+
 # ------------------------------------------------------------------- main
 def transform(en_check=True, langlinks=True, phase2=True):
     """Phase 1 ledger -> fixed rows. en_check=False stops before the English
@@ -765,6 +808,7 @@ def transform(en_check=True, langlinks=True, phase2=True):
     apply_ap_stats_2026(rows, oos, phrases, stats)
     # 14. the same rules for 数I・数A, Geometry and Discrete Math
     apply_phase2f(rows, log, stats, oos)
+    apply_phase2g(rows, log, stats, oos)
     return rows, stats, log, oos
 
 
@@ -802,7 +846,8 @@ def main():
         w = csv.DictWriter(f, PHRASE_COLUMNS)
         w.writeheader()
         w.writerows(stats["phase2"]["to_phrases"] + stats["phase2b"]["to_phrases"] + stats["phase2c"]["to_phrases"]
-                   + stats["phase2d"]["to_phrases"] + stats["phase2e"]["to_phrases"] + stats["phase2f"]["to_phrases"])
+                   + stats["phase2d"]["to_phrases"] + stats["phase2e"]["to_phrases"] + stats["phase2f"]["to_phrases"]
+                   + stats["phase2g"]["to_phrases"])
 
     stats["rows"] = len(rows)
     stats["actions"] = dict(Counter(a for _, _, a in log))
@@ -814,7 +859,7 @@ def main():
     json.dump(stats, open(os.path.join(HERE, "fix_stats.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
     big = ("coverage", "check_mismatch", "oos", "dup_en", "en_check", "notation_alias", "notation_headword",
-           "langlinks", "phase2", "phase2b", "phase2c", "phase2d", "phase2e", "ap_stats_2026", "phase2f")
+           "langlinks", "phase2", "phase2b", "phase2c", "phase2d", "phase2e", "ap_stats_2026", "phase2f", "phase2g")
     print(json.dumps({k: v for k, v in stats.items() if k not in big}, ensure_ascii=False, indent=1))
     e = stats["en_check"]
     print(f"en check: {e['checked']} title rows -> ok {len(e['ok'])}, wikipedia removed {len(e['removed'])}"
@@ -847,6 +892,10 @@ def main():
     print(f"phase 2 geometry / discrete (step 14): same concept {p2f['same']}, section names {p2f['section']},"
           f" instances {p2f['instance']}, renamed {p2f['rename']}, to symbols {p2f['to_symbols']},"
           f" to phrases {len(p2f['to_phrases'])}, out of scope {p2f['out_of_scope']}")
+    p2g = stats["phase2g"]
+    print(f"phase 2 middle school and the rest (step 15): same concept {p2g['same']}, section names {p2g['section']},"
+          f" instances {p2g['instance']}, renamed {p2g['rename']}, to phrases {len(p2g['to_phrases'])},"
+          f" out of scope {p2g['out_of_scope']}")
 
 
 def _dup_en(rows):

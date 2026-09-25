@@ -15,15 +15,15 @@
       {
         "term": "box-and-whisker plot",
         "register": "spoken",
-        "note": "話し言葉で 19 件（Khan Academy 16・The Organic Chemistry Tutor 3）、書き言葉で 6 件（すべて OpenStax Introductory Statistics）。字幕の box and whisker(s) plot も同じ言い方として数えた。"
+        "note": "話し言葉で 19 件（Khan Academy 16・The Organic Chemistry Tutor 3）、書き言葉で 6 件（すべて OpenStax Introductory Statistics）。 字幕の box and whisker(s) plot も同じ言い方として数えた。"
       },
       {
         "term": "box plot",
-        "register": "written",
-        "note": "話し言葉で 5 件（Professor Leonard 4・Khan Academy 1）、書き言葉で 89 件（すべて OpenStax Introductory Statistics）。"
+        "register": "both",
+        "note": "話し言葉で 14 件（Khan Academy 10・Professor Leonard 4）、書き言葉で 89 件（すべて OpenStax Introductory Statistics）。"
       }
     ],
-    "register": "written"
+    "register": "both"
   },
   "pos": "noun",
   "mapping": "exact",
@@ -86,7 +86,7 @@
   "evidence": {
     "spoken": {
       "box-and-whisker plot": 19,
-      "box plot": 5
+      "box plot": 14
     },
     "written": {
       "box plot": 89,
@@ -94,6 +94,7 @@
     },
     "sources": [
       "khan-ap-stats",
+      "khan-middle",
       "openstax-introstats",
       "yt:organicchem",
       "yt:profleonard"

@@ -47,6 +47,7 @@ const PLANNED: Omit<ManifestEntry, "file">[] = [
   { id: "khan-algebra", register: "spoken", auto: false, title: "Khan Academy Algebra", license: "CC BY-NC-SA" },
   { id: "khan-ap-calc", register: "spoken", auto: false, title: "Khan Academy AP Calculus", license: "CC BY-NC-SA" },
   { id: "khan-ap-stats", register: "spoken", auto: false, title: "Khan Academy AP Statistics", license: "CC BY-NC-SA" },
+  { id: "khan-middle", register: "spoken", auto: false, title: "Khan Academy Middle School (6th-8th Grade, Pre-Algebra)", license: "CC BY-NC-SA" },
   { id: "yt:profleonard", register: "spoken", auto: true, title: "Professor Leonard", license: "captions, counted as facts only" },
   { id: "yt:organicchem", register: "spoken", auto: true, title: "The Organic Chemistry Tutor", license: "captions, counted as facts only" },
   { id: "yt:patrickjmt", register: "spoken", auto: true, title: "PatrickJMT", license: "captions, counted as facts only" },

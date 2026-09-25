@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）ではほぼ扱わない（reflex angle は CED・OpenStax・IM・CK-12 とも 0 件。CK-12 Geometry は 180° より大きい角を凹多角形の説明で 2 回言うだけで、名前は付けない）。",
   "domains": [
     "geometry"
   ],
@@ -43,7 +43,7 @@
   "collocations": [],
   "pitfalls": [
     "「劣角」（180° より小さいほう）に当たる決まった英語の名前は無い。区別したいときは the angle less than 180° のように説明する。",
-    "用例コーパス・IM とも reflex angle は 0 件。英語版 Wikipedia にも独立した記事は無く、Angle の記事の一部で扱われている。"
+    "用例コーパスでも reflex angle は 0 件。英語版 Wikipedia にも独立した記事は無く、Angle の記事の一部で扱われている。"
   ],
   "related": [
     "angle",
@@ -68,8 +68,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 2 中学の単元の前の修正」の 3）。そのまま。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

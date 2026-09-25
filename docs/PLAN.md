@@ -629,7 +629,7 @@ sec / csc / cot、hyperbolic functions、interval notation、slope-intercept / p
 
 ### コーパス — 話し言葉（優先順）
 1. **MIT OpenCourseWare** の講義トランスクリプト: 18.01 Single Variable Calculus、18.02 Multivariable Calculus、18.06 Linear Algebra、18.03 Differential Equations、6.042 Mathematics for Computer Science。公式配布、CC BY-NC-SA、人手の書き起こし（数式の読み方が正確）。
-2. **Khan Academy**（字幕あり、CC BY-NC-SA）: Algebra 1〜AP Calculus、AP Statistics。
+2. **Khan Academy**（字幕あり、CC BY-NC-SA）: Algebra 1〜AP Calculus、AP Statistics、中学（6th〜8th Grade・Pre-Algebra。中学の単元のため 2026-09-25 に追加）。
 3. **YouTube の講義録画・解説チャンネル（米国）**: Professor Leonard（コミュニティカレッジの講義録画）、The Organic Chemistry Tutor、PatrickJMT、NancyPi、blackpenredpen、3Blue1Brown。字幕または自動字幕を取得。
    - 除外または別タグ: 英国・豪州系（Eddie Woo 等）、非ネイティブ講師の個人チャンネル。
    - 1 チャンネルの比率上限 25%（講師の癖を辞典にしない）。

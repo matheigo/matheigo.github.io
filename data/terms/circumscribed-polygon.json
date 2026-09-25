@@ -44,7 +44,7 @@
   "pitfalls": [
     "向きに注意。「多角形が円に外接する」は the polygon is circumscribed about the circle で、円が内側。外接円（circumscribed circle）では円が外側なので、circumscribed が付くものの位置が逆になる。",
     "円に外接する四角形では、向かい合う辺の和が等しい（AB + CD = BC + AD）。頂点から 2 つの接点までの接線の長さが等しいことから出る。",
-    "用例コーパスにも参照（CED・OpenStax・IM・CK-12）にも出てこない。見出しは決まっておらず、人間レビュー待ち。"
+    "用例コーパスにも参照（CED・OpenStax・IM・CK-12）にも出てこない。"
   ],
   "related": [
     "inscribed-polygon",
@@ -69,8 +69,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 2 中学の単元の前の修正」の 3）。そのまま。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

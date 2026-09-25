@@ -47,7 +47,7 @@
   "pitfalls": [
     "flow proof とも言う（同じもの）。",
     "2 つ以上の主張から 1 つの結論が出るところ（2 辺とその間の角から合同を言うなど）は、複数の矢印を 1 つの箱に集める。",
-    "用例コーパス・IM とも flowchart proof・flow proof は 0 件。"
+    "用例コーパスと参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）で flowchart proof・flow proof・flow diagram proof はどれも 0 件。"
   ],
   "related": [
     "two-column-proof",
@@ -72,8 +72,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 2 中学の単元の前の修正」の 3）。数え直しても決まらず、en.term は flowchart proof、flow proof は en.alt。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

@@ -10,7 +10,8 @@
   "en": {
     "term": "dilation",
     "alt": [],
-    "uk": null
+    "uk": null,
+    "register": "spoken"
   },
   "pos": "noun",
   "mapping": "near",
@@ -43,10 +44,6 @@
     }
   ],
   "collocations": [
-    {
-      "en": "center of dilation",
-      "ja": "相似の中心"
-    },
     {
       "en": "dilate … by a scale factor of k",
       "ja": "k 倍に拡大（縮小）する"
@@ -81,22 +78,16 @@
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "dilation": 1
+      "dilation": 40
     },
     "written": {
       "dilation": 1
     },
     "sources": [
+      "khan-middle",
       "mit-18.01",
       "mit-notes"
     ],
     "counted": "2026-09-25"
-  },
-  "flags": [
-    {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは IM の呼び方 dilation（Grade 8 glossary・Geometry glossary・Grade 8 2.2 Circular Grid・計 295 件）。register は主張しない。",
-      "raised": "2026-09-25"
-    }
-  ]
+  }
 }

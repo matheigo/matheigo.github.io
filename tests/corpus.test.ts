@@ -427,6 +427,24 @@ describe("settleUndecided", () => {
     expect(s).toEqual({ kind: "no-fixed-expression", spoken: 0, written: 0 });
   });
 
+  it("adds up the forms of one wording in one reference, but not two wordings (Phase 2 中学の単元の前の修正)", () => {
+    const aas = "by AAS | AAS congruence | (AAS) congruence | AAS triangle congruence";
+    const spelled = "angle-angle-side congruence | angle-angle-side theorem";
+    const section = normalize(
+      "The Angle-Angle-Side (AAS) Congruence Theorem. The triangles are congruent by AAS. ASA and AAS triangle congruence. The angle-angle-side theorem.",
+    );
+    const hits = referenceHits([aas, spelled], [], [], [], { ck12: [["CK-12 Geometry 4.15 ASA and AAS", section]] });
+    // three forms of one wording in one section: 3
+    expect(hits.ck12?.[aas]).toEqual({ "CK-12 Geometry 4.15 ASA and AAS": 3 });
+    expect(hits.ck12?.[spelled]).toEqual({ "CK-12 Geometry 4.15 ASA and AAS": 1 });
+    const entry = { mapping: "near", ja: "2 組の角とその間にない 1 辺", en: "angle-angle-side" };
+    expect(settleUndecided(entry, { spoken: 0, written: 0 }, hits, [spelled, aas])).toMatchObject({ kind: "reference", by: "ck12", head: aas });
+    // two forms of one wording (2) and one of another (1) do not add up to 3
+    const two = normalize("The triangles are congruent by AAS. ASA and AAS triangle congruence. The angle-angle-side theorem.");
+    const fewer = referenceHits([aas, spelled], [], [], [], { ck12: [["CK-12 Geometry 4.15 ASA and AAS", two]] });
+    expect(settleUndecided(entry, { spoken: 0, written: 0 }, fewer, [spelled, aas])).toEqual({ kind: "no-fixed-expression", spoken: 0, written: 0 });
+  });
+
   it("takes the CED's name before OpenStax's, with its topics", () => {
     const s = settleUndecided(
       { mapping: "exact" },
@@ -801,6 +819,15 @@ describe("TERM_FORMS (generic words counted in a sentence form)", () => {
   it('"A !v !w" leaves out both', () => {
     const text = normalize("Find the average rate of change. Find the average value of f. Find the average of the scores.");
     expect(countTerm(text, "find the average !rate !value")).toBe(1);
+  });
+
+  // Phase 2 中学の単元: a plural in a form folds back to its singular, so forms avoid bare plurals
+  it("a plural word in a form also matches its singular and other inflections", () => {
+    const text = normalize("A constant term. The constants are 3 and 5. x cubed is not a cube.");
+    expect(countTerm(text, "constants")).toBe(2);
+    expect(countTerm(text, "cubes")).toBe(2);
+    // "the constants" is the noun (counted); "A constant term" is kept out by !term
+    expect(countTerm(text, "a constant !term | the constant !term")).toBe(1);
   });
 
   it('"!w A" leaves out A after w', () => {
