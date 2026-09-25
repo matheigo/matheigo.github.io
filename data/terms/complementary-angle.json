@@ -1,0 +1,84 @@
+{
+  "id": "complementary-angle",
+  "ja": {
+    "term": "余角",
+    "reading": "よかく",
+    "alt": []
+  },
+  "en": {
+    "term": "complementary angles",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "和が 90° になる 2 つの角の、一方から見た他方の角。θ の余角は 90° − θ。",
+  "definition_en": "Two angles are complementary when their measures add up to 90°; the complement of an angle θ is 90° − θ.",
+  "latex": "\\alpha + \\beta = 90^\\circ",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The two acute angles in a right triangle are complementary angles, so if one is 30, the other is 60.",
+      "ja": "直角三角形の 2 つの鋭角は余角どうしだから、一方が 30° なら他方は 60° だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Two complementary angles differ by 18°. Find the measure of each angle.",
+      "ja": "互いに余角である 2 つの角の差は 18° である。それぞれの角の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「補角」は supplementary、「余角」は complementary。「補」の字から complement を補角と取り違えやすい。",
+    "complement は「補集合」「余事象」にも使う（the complement of A）。三角関数の sin(90° − θ) = cos θ の co- も「余角（complement）の」の意味（cofunction-identity）。",
+    "complementary（補い合う）と complimentary（無料の、ほめる）はつづりが 1 字違い。"
+  ],
+  "related": [
+    "supplementary-angle",
+    "complement",
+    "cofunction-identity",
+    "angle"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "complementary angles": 4
+    },
+    "written": {
+      "complementary angles": 10
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

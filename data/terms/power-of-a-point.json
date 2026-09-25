@@ -1,0 +1,85 @@
+{
+  "id": "power-of-a-point",
+  "ja": {
+    "term": "方べきの定理",
+    "reading": "ほうべきのていり",
+    "alt": []
+  },
+  "en": {
+    "term": "power of a point",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで power of a point は話・書とも 0 件、CED・OpenStax・Nicholson・Levin にも出てこない）。英語の power of a point は、点 P と円に対して決まる量 PA·PB（中心との距離 d と半径 r で d² − r²）の名前で、定理として言うなら the power of a point theorem。2 本の弦の場合（intersecting chords theorem）と、割線と接線の場合（secant-tangent theorem）は、本辞典では別の見出しで扱う。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "点 P を通る 2 直線が円とそれぞれ A, B と C, D で交わるとき PA·PB = PC·PD が成り立ち、一方が点 T で接するときは PA·PB = PT² が成り立つという定理。",
+  "definition_en": "For a point P and a circle, if two lines through P meet the circle at A, B and at C, D, then PA·PB = PC·PD; if one line is tangent at T, then PA·PB = PT².",
+  "latex": "PA \\cdot PB = PC \\cdot PD = PT^2",
+  "spoken_en": "PA times PB equals PC times PD, which equals PT squared",
+  "examples": [
+    {
+      "en": "The two chords cross at P, so by the power of a point, PA times PB has to equal PC times PD.",
+      "ja": "2 本の弦が P で交わっているので、方べきの定理より PA·PB = PC·PD になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Chords AB and CD intersect at P. If PA = 4, PB = 6, and PC = 3, use the power of a point to find PD.",
+      "ja": "弦 AB と CD が点 P で交わっている。PA = 4, PB = 6, PC = 3 のとき、方べきの定理を用いて PD を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "A secant from P meets the circle at A and B, and PT is tangent to the circle at T. Show that PA·PB = PT².",
+      "ja": "点 P から引いた直線が円と A, B で交わり、PT は点 T で円に接している。PA·PB = PT² を示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の power of a point は定理の名前というより「点の方べき」という量（PA·PB の値）を指す。定理として言いたいときは the power of a point theorem と言うか、式 PA·PB = PC·PD を示す。",
+    "「方べき」の「べき」は冪（power）。power を「力」と訳すと意味が通らない。"
+  ],
+  "related": [
+    "chord",
+    "tangent-line",
+    "similar-triangles",
+    "tangent-chord-theorem",
+    "tangent-segments-are-equal"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "方べきの定理",
+      "en": "Power of a point"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

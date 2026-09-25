@@ -1,0 +1,97 @@
+{
+  "id": "least-common-multiple",
+  "ja": {
+    "term": "最小公倍数",
+    "reading": "さいしょうこうばいすう",
+    "alt": []
+  },
+  "en": {
+    "term": "least common multiple",
+    "alt": [
+      "LCM"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "2 つ以上の正の整数に共通する倍数のうち、最も小さい正のもの。",
+  "definition_en": "The smallest positive integer that is a multiple of each of two or more given positive integers.",
+  "latex": "\\operatorname{lcm}(a, b)",
+  "spoken_en": "the LCM of a and b",
+  "examples": [
+    {
+      "en": "The least common multiple of 4 and 6 is 12, not 24.",
+      "ja": "4 と 6 の最小公倍数は 24 じゃなくて 12 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "To add these fractions, use the LCM of the denominators as the common denominator.",
+      "ja": "この分数を足すには、分母の最小公倍数を共通の分母にしよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the least common multiple of 18 and 30.",
+      "ja": "18 と 30 の最小公倍数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "正の整数 a, b について gcd(a, b) × lcm(a, b) = ab。最大公約数から最小公倍数を出すときに使う。",
+    "通分は find a common denominator（find-a-common-denominator）。分母の最小公倍数を使った分母は least common denominator（LCD）と言う。"
+  ],
+  "related": [
+    "greatest-common-divisor",
+    "multiple",
+    "find-a-common-denominator",
+    "prime-factorization"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "最小公倍数",
+      "en": "Least common multiple"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "least common multiple": 14,
+      "LCM": 3
+    },
+    "written": {
+      "least common multiple": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

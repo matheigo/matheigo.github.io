@@ -1,0 +1,121 @@
+{
+  "id": "greatest-common-divisor",
+  "ja": {
+    "term": "最大公約数",
+    "reading": "さいだいこうやくすう",
+    "alt": []
+  },
+  "en": {
+    "term": "greatest common divisor",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "greatest common divisor",
+        "register": "both",
+        "note": "数論の言い方。話し言葉で 63 件（MIT OCW 62・Khan Academy 1）、書き言葉で 22 件（すべて MIT の講義ノート）。"
+      },
+      {
+        "term": "greatest common factor",
+        "register": "both",
+        "note": "代数の言い方。話し言葉で 39 件（The Organic Chemistry Tutor 23・Professor Leonard 10・patrickJMT 6）、書き言葉で 15 件（すべて OpenStax Algebra and Trigonometry）。"
+      },
+      {
+        "term": "GCD",
+        "register": "both",
+        "note": "greatest common divisor の略。話し言葉で 27 件（すべて MIT OCW）、書き言葉で 80 件（すべて MIT の講義ノート）。"
+      },
+      {
+        "term": "GCF",
+        "register": "both",
+        "note": "greatest common factor の略。話し言葉で 39 件（The Organic Chemistry Tutor 35・blackpenredpen 3・Professor Leonard 1）、書き言葉で 48 件（すべて OpenStax Algebra and Trigonometry）。"
+      }
+    ]
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語には divisor 系（greatest common divisor ／ GCD）と factor 系（greatest common factor ／ GCF）の 2 系統がある。用例コーパスでは divisor 系は MIT（講義と講義ノート）、factor 系は OpenStax Algebra and Trigonometry と The Organic Chemistry Tutor などに出る。Levin の 6.2 Introduction to Number Theory は GCD と greatest common divisor が中心で、greatest common factor も使う。factor 系は単項式・多項式の共通因数にも使い、factor out the GCF は「共通因数でくくり出す」に当たる。",
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "2 つ以上の整数に共通する約数のうち、最も大きいもの。",
+  "definition_en": "The largest integer that divides each of two or more given integers.",
+  "latex": "\\gcd(a, b)",
+  "spoken_en": "the GCD of a and b",
+  "examples": [
+    {
+      "en": "The greatest common divisor of 12 and 18 is 6, since 6 is the biggest number that goes into both.",
+      "ja": "12 と 18 の最大公約数は 6。両方を割り切る最大の数が 6 だからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Before you do anything else, pull out the GCF, which here is 4x.",
+      "ja": "まずは最大公約数をくくり出そう。ここでは 4x だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find gcd(84, 120) using prime factorization.",
+      "ja": "素因数分解を用いて 84 と 120 の最大公約数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "divisor（約数）と factor（因数）はどちらも「割り切る数」だが、GCD は数論、GCF は代数の文脈に偏る（variants の件数を参照）。",
+    "日本の教科書は記号 gcd(a, b) を使わず言葉で書く。英語の数論では gcd(a, b) や (a, b) と書く。"
+  ],
+  "related": [
+    "least-common-multiple",
+    "relatively-prime",
+    "euclidean-algorithm",
+    "common-factor",
+    "prime-factorization"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "最大公約数",
+      "en": "Greatest common divisor"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "greatest common divisor": 63,
+      "GCD": 27,
+      "greatest common factor": 39,
+      "GCF": 39
+    },
+    "written": {
+      "greatest common factor": 15,
+      "GCF": 48,
+      "greatest common divisor": 22,
+      "GCD": 80
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

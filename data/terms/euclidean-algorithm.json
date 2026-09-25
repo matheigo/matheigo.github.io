@@ -1,0 +1,91 @@
+{
+  "id": "euclidean-algorithm",
+  "ja": {
+    "term": "ユークリッドの互除法",
+    "reading": "ゆーくりっどのごじょほう",
+    "alt": []
+  },
+  "en": {
+    "term": "Euclidean algorithm",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "2 つの自然数の最大公約数を、割り算を繰り返して求める方法。a を b で割った余りを r とすると a と b の最大公約数は b と r の最大公約数に等しいことを使い、余りが 0 になるまで続ける。",
+  "definition_en": "A method for finding the greatest common divisor of two whole numbers by repeated division: replace the pair (a, b) with (b, r), where r is the remainder of a divided by b, until the remainder is 0.",
+  "latex": "a = bq + r \\;\\Rightarrow\\; \\gcd(a, b) = \\gcd(b, r)",
+  "spoken_en": "if a equals b q plus r, then the gcd of a and b equals the gcd of b and r",
+  "examples": [
+    {
+      "en": "Let's run the Euclidean algorithm: 252 divided by 105 is 2 with a remainder of 42, so now we look at 105 and 42.",
+      "ja": "互除法を使おう。252 ÷ 105 は 2 余り 42 だから、次は 105 と 42 を考える。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the Euclidean algorithm to find gcd(1071, 462).",
+      "ja": "互除法を用いて、1071 と 462 の最大公約数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「互除法」だけでは英語の名前にならない。Euclidean algorithm と言う。",
+    "英語の答案では最大公約数を gcd(a, b) と書く。",
+    "互除法の式を下から逆にたどると、ax + by = gcd(a, b) の整数解が 1 つ見つかる（一次不定方程式を解くときに使う）。"
+  ],
+  "related": [
+    "greatest-common-divisor",
+    "division-algorithm",
+    "remainder",
+    "linear-diophantine-equation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ユークリッドの互除法",
+      "en": "Euclidean algorithm"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "6.2 Introduction to Number Theory"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "Euclidean algorithm": 1
+    },
+    "sources": [
+      "mit-6.042"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 Euclidean algorithm（6.2 Introduction to Number Theory）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "parity",
+  "ja": {
+    "term": "偶奇",
+    "reading": "ぐうき",
+    "alt": []
+  },
+  "en": {
+    "term": "parity",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "整数が偶数であるか奇数であるかという性質。2 で割った余りが 0 か 1 かで決まる。",
+  "definition_en": "Whether an integer is even or odd, that is, whether it leaves remainder 0 or 1 when divided by 2.",
+  "latex": "n \\equiv 0 \\text{ or } 1 \\pmod{2}",
+  "spoken_en": "n is congruent to zero or one mod two",
+  "examples": [
+    {
+      "en": "Look at the parity here: x and y have to be both even or both odd.",
+      "ja": "ここで偶奇に注目しよう。x と y はどちらも偶数か、どちらも奇数でなければならない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Since m + n and m − n have the same parity, their product is either odd or a multiple of 4.",
+      "ja": "m + n と m − n の偶奇は一致するので、その積は奇数か 4 の倍数である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの件数はほぼ MIT に限られる（話し言葉 21 件はすべて MIT OCW、書き言葉 15 件のうち 14 件が MIT の講義ノート）。説明的に whether n is even or odd と言っても同じ意味になる。",
+    "「偶奇が一致する」は have the same parity、「偶奇が異なる」は have opposite parity。"
+  ],
+  "related": [
+    "classification-by-remainder",
+    "modulus",
+    "remainder",
+    "integer-solution"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "parity": 21
+    },
+    "written": {
+      "parity": 15
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

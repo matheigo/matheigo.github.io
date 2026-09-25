@@ -1,0 +1,93 @@
+{
+  "id": "composite-number",
+  "ja": {
+    "term": "合成数",
+    "reading": "ごうせいすう",
+    "alt": []
+  },
+  "en": {
+    "term": "composite number",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "1 より大きい整数のうち、素数でないもの。1 とそれ自身以外にも正の約数をもつ。",
+  "definition_en": "An integer greater than 1 that is not prime, so it has a positive divisor other than 1 and itself.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Nine is a composite number because it's 3 times 3.",
+      "ja": "9 は 3 × 3 だから合成数だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that n² + 2n is a composite number for every integer n ≥ 2.",
+      "ja": "2 以上のすべての整数 n について、n² + 2n は合成数であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "1 は素数でも合成数でもない（1 is neither prime nor composite）。",
+    "composite だけだと composite function（合成関数）の composite と紛れる。数のときは composite number か、補語で is composite と言う。"
+  ],
+  "related": [
+    "prime-factorization",
+    "number-of-divisors",
+    "multiple",
+    "composite-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "合成数",
+      "en": "Composite number"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "composite number": 1
+    },
+    "written": {
+      "composite number": 3
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-introstats",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 composite number（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

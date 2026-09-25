@@ -1,0 +1,97 @@
+{
+  "id": "binary",
+  "ja": {
+    "term": "2 進法",
+    "reading": "にしんほう",
+    "alt": []
+  },
+  "en": {
+    "term": "binary",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "0 と 1 の 2 種類の数字だけを使い、位が 1 つ上がるごとに 2 倍になるように数を表す方法。",
+  "definition_en": "The base-2 way of writing numbers, using only the digits 0 and 1, where each place is worth twice the place to its right.",
+  "latex": "1101_{(2)} = 2^3 + 2^2 + 1 = 13",
+  "spoken_en": "one one zero one in binary equals thirteen",
+  "examples": [
+    {
+      "en": "In binary, 13 is 1101, and you read it one, one, zero, one.",
+      "ja": "2 進法では 13 は 1101 で、「いち いち ぜろ いち」と読む。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write 45 as a binary number.",
+      "ja": "45 を 2 進法で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは binary 単独ではなく、in binary ／ binary number ／ binary representation ／ base 2 ／ base two をまとめて数えた（話し言葉 115 件、書き言葉 15 件）。",
+    "1101 は「千百一」ではなく、桁ごとに one, one, zero, one と読む。"
+  ],
+  "related": [
+    "base-n",
+    "hexadecimal",
+    "numeral-system",
+    "digit",
+    "place"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "in binary | binary number | binary representation | base 2 | base two": 115
+    },
+    "written": {
+      "in binary | binary number | binary representation | base 2 | base two": 15
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "number-of-divisors",
+  "ja": {
+    "term": "約数の個数",
+    "reading": "やくすうのこすう",
+    "alt": []
+  },
+  "en": {
+    "term": "number of divisors",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "ある自然数の正の約数が全部でいくつあるかという数。n = pᵃ·qᵇ（p, q は異なる素数）なら (a + 1)(b + 1) 個になる。",
+  "definition_en": "How many positive divisors a whole number has. If n = pᵃ·qᵇ with distinct primes p and q, it has (a + 1)(b + 1) divisors.",
+  "latex": "n = p^{a} q^{b} \\;\\Rightarrow\\; (a+1)(b+1)",
+  "spoken_en": "if n is p to the a times q to the b, the number of divisors is a plus one times b plus one",
+  "examples": [
+    {
+      "en": "72 is 2³ times 3², so the number of divisors is 4 times 3, which is 12.",
+      "ja": "72 = 2³·3² だから、約数の個数は 4 × 3 = 12 個。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the number of positive divisors of 360.",
+      "ja": "360 の正の約数の個数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "指数にそれぞれ 1 を足してかける。1 と n 自身も数に入っている。",
+    "正の約数に限ることを英語の問題文ではっきりさせるときは positive divisors と書く。約数は divisor のほか factor とも言う（the factors of 12）。"
+  ],
+  "related": [
+    "prime-factorization",
+    "multiple",
+    "greatest-common-divisor",
+    "composite-number"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

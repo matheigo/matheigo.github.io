@@ -1,0 +1,80 @@
+{
+  "id": "undefined-terms",
+  "ja": {
+    "term": "無定義用語",
+    "reading": "むていぎようご",
+    "alt": [
+      "点・直線・平面"
+    ]
+  },
+  "en": {
+    "term": "undefined terms",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "理論の出発点として、定義をせずに使う用語。ユークリッド幾何では点・直線・平面がそれにあたり、その性質は公理で決まる。",
+  "definition_en": "The basic words that a theory uses without defining them; in Euclidean geometry these are point, line, and plane, whose behavior is fixed by the axioms.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Point, line, and plane are our undefined terms. We describe them, but we don't define them.",
+      "ja": "点・直線・平面は無定義用語。説明はするけど、定義はしない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Name the three undefined terms of geometry and use them to define a segment.",
+      "ja": "幾何の 3 つの無定義用語を挙げ、それを使って線分を定義せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "an undefined term は「値が定まらない項」（0 で割る項など）の意味でも使う。用例コーパスの OpenStax にある 1 件はこの別の意味なので、幾何の意味の形（undefined terms of geometry など）だけを数えて 0 件だった。",
+    "ja.alt の「点・直線・平面」は無定義用語の中身。英語でも point, line, plane の順に並べて言える。"
+  ],
+  "related": [
+    "axiom",
+    "segment",
+    "segment-addition-postulate",
+    "angle-addition-postulate",
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

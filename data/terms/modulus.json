@@ -1,0 +1,91 @@
+{
+  "id": "modulus",
+  "ja": {
+    "term": "法",
+    "reading": "ほう",
+    "alt": []
+  },
+  "en": {
+    "term": "modulo",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "mod n",
+        "register": "written",
+        "note": "合同式 a ≡ b (mod n) の書き方。書き言葉では modulo（31 件、すべて MIT の講義ノート）と併記。mod n は話し言葉で 1 件（すべて MIT OCW）、書き言葉で 48 件（すべて MIT の講義ノート）。"
+      }
+    ]
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "合同式 a ≡ b (mod n) の n のこと。a − b が n で割り切れるとき、a と b は n を法として合同という。",
+  "definition_en": "The positive integer n in a congruence a ≡ b (mod n); two integers are congruent modulo n when n divides their difference.",
+  "latex": "a \\equiv b \\pmod{n}",
+  "spoken_en": "a is congruent to b modulo n",
+  "examples": [
+    {
+      "en": "17 is congruent to 2 modulo 5, because 17 minus 2 is divisible by 5.",
+      "ja": "17 − 2 は 5 で割り切れるので、17 ≡ 2 (mod 5)。",
+      "register": "spoken"
+    },
+    {
+      "en": "If a ≡ b (mod n), then a + c ≡ b + c (mod n).",
+      "ja": "a ≡ b (mod n) ならば a + c ≡ b + c (mod n)。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "名詞 modulus は複素数の絶対値（modulus of a complex number）と同じ綴り。用例コーパスの modulus はその意味なので、この見出しの候補としては数えていない。",
+    "≡ は is congruent to と読む。図形の「合同」と同じ単語 congruent を使う。",
+    "日本語の「5 を法として」は modulo 5（話し言葉では mod 5 とも読む）。"
+  ],
+  "related": [
+    "remainder",
+    "classification-by-remainder",
+    "congruent",
+    "modulus-of-a-complex-number",
+    "euclidean-algorithm"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "modulo": 87,
+      "mod n": 1
+    },
+    "written": {
+      "modulo": 31,
+      "mod n": 48
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

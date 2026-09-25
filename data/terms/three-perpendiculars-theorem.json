@@ -1,0 +1,76 @@
+{
+  "id": "three-perpendiculars-theorem",
+  "ja": {
+    "term": "三垂線の定理",
+    "reading": "さんすいせんのていり",
+    "alt": []
+  },
+  "en": {
+    "term": "three perpendiculars theorem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで three perpendiculars theorem は話・書とも 0 件、CED・OpenStax・Nicholson・Levin にも出てこない）。英語では定理の名前を出さず、「PH が平面に垂直で、HO が直線 ℓ に垂直だから PO も ℓ に垂直」のように、垂直の関係を順に述べて説明する。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "平面 α 上の直線 ℓ、ℓ 上の点 O、α 上にない点 P と α 上の点 H について、PH ⊥ α かつ OH ⊥ ℓ ならば PO ⊥ ℓ である、という定理。PH ⊥ α かつ PO ⊥ ℓ ならば OH ⊥ ℓ などの形も含む。",
+  "definition_en": "For a line ℓ in a plane α, a point O on ℓ, a point P off α, and a point H in α: if PH ⊥ α and OH ⊥ ℓ, then PO ⊥ ℓ; related forms such as PH ⊥ α and PO ⊥ ℓ implying OH ⊥ ℓ are included.",
+  "latex": "PH \\perp \\alpha,\\ OH \\perp \\ell \\implies PO \\perp \\ell",
+  "spoken_en": "if PH is perpendicular to plane alpha and OH is perpendicular to line ell, then PO is perpendicular to ell",
+  "examples": [
+    {
+      "en": "PH is perpendicular to the plane and HO is perpendicular to the line, so by the three perpendiculars theorem, PO is perpendicular to the line too.",
+      "ja": "PH は平面に垂直で、HO は直線に垂直だから、三垂線の定理より PO も直線に垂直になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Point H is the foot of the perpendicular from P to plane α, and O is the foot of the perpendicular from H to line ℓ in α. Use the three perpendiculars theorem to show that PO ⊥ ℓ.",
+      "ja": "点 P から平面 α に下ろした垂線の足を H、H から α 上の直線 ℓ に下ろした垂線の足を O とする。三垂線の定理を用いて PO ⊥ ℓ を示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "答案では定理名に頼らず、直線と平面の垂直の定義（平面上の交わる 2 直線と垂直）から PO ⊥ ℓ を導く形で書くと、英語でもそのまま通る説明になる。"
+  ],
+  "related": [
+    "line-perpendicular-to-a-plane",
+    "foot-of-the-perpendicular",
+    "perpendicular-lines",
+    "distance-from-a-point-to-a-line"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

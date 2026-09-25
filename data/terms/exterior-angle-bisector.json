@@ -1,0 +1,80 @@
+{
+  "id": "exterior-angle-bisector",
+  "ja": {
+    "term": "外角の二等分線",
+    "reading": "がいかくのにとうぶんせん",
+    "alt": []
+  },
+  "en": {
+    "term": "exterior angle bisector",
+    "alt": [
+      "bisector of the exterior angle"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "三角形の 1 つの頂点で、外角を 2 等分する直線。∠A の外角の二等分線が直線 BC と交わる点は、辺 BC を AB : AC に外分する。",
+  "definition_en": "The line that cuts an exterior angle of a triangle into two equal angles. The exterior angle bisector at A meets line BC at a point that divides BC externally in the ratio AB : AC.",
+  "latex": "\\frac{BE}{EC} = \\frac{AB}{AC}",
+  "spoken_en": "BE over EC equals AB over AC",
+  "examples": [
+    {
+      "en": "The exterior angle bisector at A hits line BC outside the triangle, and it splits BC externally in the ratio AB to AC.",
+      "ja": "∠A の外角の二等分線は三角形の外で直線 BC と交わり、BC を AB : AC に外分する。",
+      "register": "spoken"
+    },
+    {
+      "en": "In triangle ABC, AB = 6 and AC = 4. The exterior angle bisector at A meets line BC at E. Find BE : EC.",
+      "ja": "△ABC において AB = 6, AC = 4 とする。∠A の外角の二等分線と直線 BC の交点を E とするとき、BE : EC を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "交点は辺 BC 上ではなく BC の延長上にある（外分点）。内角の二等分線（内分）と比は同じ AB : AC。",
+    "AB = AC のときは外角の二等分線が BC に平行になり、交点ができない。",
+    "内角の二等分線と外角の二等分線は直交する。"
+  ],
+  "related": [
+    "angle-bisector-theorem",
+    "point-of-external-division",
+    "excenter",
+    "triangle"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

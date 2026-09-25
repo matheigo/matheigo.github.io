@@ -1,0 +1,81 @@
+{
+  "id": "linear-diophantine-equation",
+  "ja": {
+    "term": "一次不定方程式",
+    "reading": "いちじふていほうていしき",
+    "alt": []
+  },
+  "en": {
+    "term": "linear Diophantine equation",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "a, b, c を整数とする ax + by = c の形の方程式で、整数解を求めるもの。整数解をもつのは c が a と b の最大公約数の倍数のときに限る。",
+  "definition_en": "An equation of the form ax + by = c with integer coefficients, where only integer solutions are wanted. It has integer solutions exactly when gcd(a, b) divides c.",
+  "latex": "ax + by = c",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For 7x + 4y = 1, one solution is x = −1, y = 2, and every other solution comes from that one.",
+      "ja": "7x + 4y = 1 の解の 1 つは x = −1, y = 2 で、ほかの解はすべてこれから得られる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find all integer solutions of the linear Diophantine equation 7x + 4y = 1.",
+      "ja": "一次不定方程式 7x + 4y = 1 の整数解をすべて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「不定方程式」を indefinite equation と直訳しない。英語はディオファントスの名前で Diophantine と言い、D は大文字。",
+    "一般解 x = −1 + 4k, y = 2 − 7k には「k は整数」（where k is an integer）を添える。"
+  ],
+  "related": [
+    "diophantine-equation",
+    "integer-solution",
+    "euclidean-algorithm",
+    "greatest-common-divisor",
+    "relatively-prime"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "6.2 Introduction to Number Theory"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 linear Diophantine equation（6.2 Introduction to Number Theory）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

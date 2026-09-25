@@ -1,0 +1,105 @@
+{
+  "id": "place",
+  "ja": {
+    "term": "位",
+    "reading": "くらい",
+    "alt": []
+  },
+  "en": {
+    "term": "place",
+    "alt": [
+      "place value"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「位」は単独でも言えるが、英語の place はふつう ones place ／ tens place ／ hundreds place のように位の名前と組で使う。place value は「位取り」、つまり数字の値が置かれた位で決まるという考え方を指す。小数の位は tenths place（小数第 1 位）、hundredths place（小数第 2 位）と言う。",
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "位取り記数法で、数字が置かれる位置。一の位・十の位・百の位のように、位置によって数字の重みが決まる。",
+  "definition_en": "A position in a number written in a place-value system; the ones, tens, and hundreds places give the digit in them a weight of 1, 10, and 100.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "What digit is in the tens place of 4,735?",
+      "ja": "4735 の十の位の数字は何？",
+      "register": "spoken"
+    },
+    {
+      "en": "Carry the one over to the hundreds place.",
+      "ja": "繰り上がった 1 を百の位に足してね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let a be the digit in the hundreds place, b the digit in the tens place, and c the digit in the ones place.",
+      "ja": "百の位の数を a、十の位の数を b、一の位の数を c とする。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは place 単独ではなく ones place ／ tens place ／ hundreds place のどれかの形で数えた。話し言葉で 40 件（Khan Academy 22・MIT OCW 17・Professor Leonard 1）、書き言葉で 7 件（MIT の講義ノート 4・OpenStax Introductory Statistics 2・OpenStax Calculus 1）。",
+    "place value は話し言葉で 4 件（すべて Professor Leonard）、書き言葉で 3 件（すべて OpenStax Algebra and Trigonometry）。",
+    "「一の位の数」は the digit in the ones place（the ones digit とも言える）。the one place と単数にしない。"
+  ],
+  "related": [
+    "digit",
+    "numeral-system",
+    "number-of-digits",
+    "base-n"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "ones place | tens place | hundreds place": 40,
+      "place value": 4
+    },
+    "written": {
+      "ones place | tens place | hundreds place": 7,
+      "place value": 3
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

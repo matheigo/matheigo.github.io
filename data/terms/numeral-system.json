@@ -1,0 +1,79 @@
+{
+  "id": "numeral-system",
+  "ja": {
+    "term": "記数法",
+    "reading": "きすうほう",
+    "alt": []
+  },
+  "en": {
+    "term": "numeral system",
+    "alt": [
+      "positional notation"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "数を数字の並びで書き表す方法。特に、基数 n を決めて各位の数字に n の累乗の重みをつける位取り記数法を指す。",
+  "definition_en": "A way of writing numbers with a string of digits; in particular, a place-value system in which each digit is weighted by a power of a fixed base.",
+  "latex": "d_k n^k + d_{k-1} n^{k-1} + \\cdots + d_1 n + d_0",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Our usual numeral system is base ten, so each place is worth ten times the place to its right.",
+      "ja": "ふだん使う記数法は 10 進法なので、各位は 1 つ右の位の 10 倍の重みをもつ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In a positional numeral system with base n, the digits range from 0 to n − 1.",
+      "ja": "n を基数とする位取り記数法では、使う数字は 0 から n − 1 までである。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "number system は実数・複素数のような「数の体系」の意味にも使うので、記数法の意味では numeral system ／ positional notation のほうが紛れない。用例コーパスの number system はこの別の意味なので数えていない。"
+  ],
+  "related": [
+    "base-n",
+    "binary",
+    "hexadecimal",
+    "digit",
+    "place"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

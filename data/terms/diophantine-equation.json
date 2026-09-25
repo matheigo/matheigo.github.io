@@ -1,0 +1,80 @@
+{
+  "id": "diophantine-equation",
+  "ja": {
+    "term": "不定方程式",
+    "reading": "ふていほうていしき",
+    "alt": []
+  },
+  "en": {
+    "term": "Diophantine equation",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "整数係数の方程式で、整数（または自然数）の解だけを考えるもの。未知数の数が式の数より多く、解が 1 つに定まらないことが多い。",
+  "definition_en": "An equation with integer coefficients for which only integer (or positive integer) solutions are sought.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "This is a Diophantine equation, so we only care about solutions where x and y are integers.",
+      "ja": "これは不定方程式だから、x と y が整数になる解だけを考える。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find all pairs of positive integers (x, y) that satisfy the Diophantine equation xy − 2x − 3y = 0.",
+      "ja": "不定方程式 xy − 2x − 3y = 0 を満たす正の整数の組 (x, y) をすべて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「不定」を indefinite と直訳しない。英語はディオファントス（Diophantus）の名前で Diophantine equation と言い、D は大文字。",
+    "xy − 2x − 3y = 0 のような式は (x − 3)(y − 2) = 6 と積の形にして、6 の約数の組を調べる。"
+  ],
+  "related": [
+    "linear-diophantine-equation",
+    "integer-solution",
+    "prime-factorization",
+    "multiple"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "6.2 Introduction to Number Theory"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 Diophantine equation（6.2 Introduction to Number Theory）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

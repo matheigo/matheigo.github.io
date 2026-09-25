@@ -1,0 +1,85 @@
+{
+  "id": "side-angle-inequality",
+  "ja": {
+    "term": "三角形の辺と角の大小",
+    "reading": "さんかくけいのへんとかくのだいしょう",
+    "alt": []
+  },
+  "en": {
+    "term": "side-angle inequality",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで side-angle inequality は話・書とも 0 件）。英語では定理の中身をそのまま言う: the larger angle is opposite the longer side（大きい角の対辺は長い）／ the largest angle is opposite the longest side（最大の角は最大の辺の対角）。",
+  "domains": [
+    "geometry",
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数A",
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "1 つの三角形で、大きい辺に向かい合う角は大きく、大きい角に向かい合う辺は大きいという関係。a > b ⇔ A > B で、特に最大の辺の対角が最大の角になる。",
+  "definition_en": "In any triangle, the longer of two sides is opposite the larger angle, and the larger of two angles is opposite the longer side. In particular, the largest angle is opposite the longest side.",
+  "latex": "a > b \\iff A > B",
+  "spoken_en": "a is greater than b if and only if A is greater than B",
+  "examples": [
+    {
+      "en": "The largest angle is always opposite the longest side, so we only need the law of cosines once, for the angle across from 7.",
+      "ja": "最大の角は必ず最大の辺の対角なので、余弦定理は長さ 7 の辺の対角に 1 回使えばよい。",
+      "register": "spoken"
+    },
+    {
+      "en": "In triangle ABC, a = 7, b = 5, and c = 3. Find the measure of the largest angle.",
+      "ja": "△ABC において a = 7, b = 5, c = 3 のとき、最大の角の大きさを求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "Since BC > AC, the side-angle inequality gives ∠A > ∠B.",
+      "ja": "BC > AC であるから、三角形の辺と角の大小関係より ∠A > ∠B。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "等号の場合（a = b ⇔ A = B）は二等辺三角形の性質。",
+    "数I では「最大の角」を求める問題で使う。最大の辺の対角を余弦定理で求め、鋭角・直角・鈍角を判定する。"
+  ],
+  "related": [
+    "triangle",
+    "triangle-inequality",
+    "law-of-cosines",
+    "isosceles-triangle"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "common-tangent",
+  "ja": {
+    "term": "共通接線",
+    "reading": "きょうつうせっせん",
+    "alt": []
+  },
+  "en": {
+    "term": "common tangent",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "2 つの円（または 2 つの曲線）の両方に接する直線。2 円が共通接線の同じ側にあれば共通外接線、反対側にあれば共通内接線という。",
+  "definition_en": "A line tangent to each of two circles (or curves). It is a common external tangent if both circles lie on the same side of it and a common internal tangent if they lie on opposite sides.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "These two circles don't overlap, so they have four common tangents: two external ones and two internal ones that cross between the circles.",
+      "ja": "この 2 円は離れているので、共通接線は 4 本ある。共通外接線が 2 本と、2 円の間で交わる共通内接線が 2 本。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the equation of every common tangent to the circles x² + y² = 1 and (x − 4)² + y² = 1.",
+      "ja": "2 円 x² + y² = 1, (x − 4)² + y² = 1 の共通接線の方程式をすべて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "共通外接線は common external tangent、共通内接線は common internal tangent。日本語の「外接・内接」を circumscribed ／ inscribed と訳さない。",
+    "本数は 2 円の位置関係で決まる。離れていれば 4 本、外接なら 3 本、2 点で交われば 2 本、内接なら 1 本、一方が内部にあれば 0 本。"
+  ],
+  "related": [
+    "tangent-line",
+    "relative-positions-of-two-circles",
+    "tangent-segments-are-equal",
+    "equation-of-a-circle"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

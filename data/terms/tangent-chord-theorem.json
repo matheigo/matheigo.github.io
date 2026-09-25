@@ -1,0 +1,87 @@
+{
+  "id": "tangent-chord-theorem",
+  "ja": {
+    "term": "接弦定理",
+    "reading": "せつげんていり",
+    "alt": [
+      "接線と弦のなす角"
+    ]
+  },
+  "en": {
+    "term": "tangent-chord theorem",
+    "alt": [
+      "tangent-chord angle"
+    ],
+    "uk": "alternate segment theorem"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで tangent-chord theorem・tangent-chord angle は話・書とも 0 件）。英語では中身をそのまま言う: the angle between a tangent and a chord equals the inscribed angle on the other side of the chord ／ is half the intercepted arc（接線と弦のなす角は、その角の内部にある弧に対する円周角に等しく、その弧の中心角の半分）。英国での名前は alternate segment theorem。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "円の接線と、接点を通る弦のなす角は、その角の内部にある弧に対する円周角に等しいという定理。",
+  "definition_en": "The angle between a tangent to a circle and a chord drawn from the point of tangency equals any inscribed angle that intercepts the arc inside that angle; equivalently, it is half the measure of that arc.",
+  "latex": "\\angle BAT = \\angle ACB",
+  "spoken_en": "angle BAT equals angle ACB",
+  "examples": [
+    {
+      "en": "The tangent-chord angle is half the intercepted arc, so if the arc is 100°, the angle is 50°.",
+      "ja": "接線と弦のなす角は、その角の内部の弧の中心角の半分なので、弧が 100° なら角は 50°。",
+      "register": "spoken"
+    },
+    {
+      "en": "Line AT is tangent to the circle at A, and C is a point on the circle on the other side of chord AB. If ∠BAT = 65°, find ∠ACB.",
+      "ja": "直線 AT は点 A で円に接し、点 C は弦 AB に関して T と反対側の円周上にある。∠BAT = 65° のとき、∠ACB を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "By the tangent-chord theorem, ∠ACB = ∠BAT = 65°.",
+      "ja": "接弦定理より ∠ACB = ∠BAT = 65°。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "等しくなるのは、接線と弦のなす角の内部にある弧に対する円周角。反対側の弧に対する円周角と取り違えない。",
+    "英国では alternate segment theorem と呼ぶ。"
+  ],
+  "related": [
+    "inscribed-angle",
+    "chord",
+    "tangent-line",
+    "point-of-tangency",
+    "power-of-a-point"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

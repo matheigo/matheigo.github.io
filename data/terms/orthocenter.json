@@ -1,0 +1,79 @@
+{
+  "id": "orthocenter",
+  "ja": {
+    "term": "垂心",
+    "reading": "すいしん",
+    "alt": []
+  },
+  "en": {
+    "term": "orthocenter",
+    "alt": [],
+    "uk": "orthocentre",
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "三角形の 3 つの頂点から対辺（またはその延長）に下ろした垂線が交わる点。",
+  "definition_en": "The point where the three altitudes of a triangle, or the lines containing them, meet.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "You only need two of the altitudes; where they cross is the orthocenter.",
+      "ja": "高さ（垂線）は 2 本引けば十分。その交点が垂心。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the orthocenter of the triangle with vertices A(0, 0), B(6, 0), and C(2, 4).",
+      "ja": "3 点 A(0, 0), B(6, 0), C(2, 4) を頂点とする三角形の垂心の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "頂点から対辺に下ろした垂線は英語で altitude（高さ）。垂心は鋭角三角形では内部、直角三角形では直角の頂点、鈍角三角形では外部にある。",
+    "用例コーパスの orthocenter は話し言葉 11 件で、すべて The Organic Chemistry Tutor。書き言葉では 0 件。",
+    "英国式のつづりは orthocentre。"
+  ],
+  "related": [
+    "the-five-centers-of-a-triangle",
+    "circumcenter",
+    "centroid",
+    "foot-of-the-perpendicular"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "垂心",
+      "en": "Orthocenter"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "orthocenter": 11
+    },
+    "sources": [
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

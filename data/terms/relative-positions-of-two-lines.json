@@ -1,0 +1,78 @@
+{
+  "id": "relative-positions-of-two-lines",
+  "ja": {
+    "term": "2 直線の位置関係",
+    "reading": "にちょくせんのいちかんけい",
+    "alt": []
+  },
+  "en": {
+    "term": "relative position of two lines",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで relative position of two lines は話・書とも 0 件、CED・OpenStax・Nicholson・Levin にも出てこない）。英語では分類に名前を付けず、場合ごとに the lines intersect ／ are parallel ／ are skew と言う。「ねじれの位置にある」は are skew（skew lines）。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "空間の 2 直線の関係。1 点で交わる・平行である・ねじれの位置にある（同じ平面上にない）の 3 通りがある。",
+  "definition_en": "How two lines in space are related: they intersect in one point, are parallel, or are skew (not in any common plane).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "These two edges of the cube never meet, but they're not parallel either — they're skew lines.",
+      "ja": "立方体のこの 2 辺は交わらないが、平行でもない。ねじれの位置にある。",
+      "register": "spoken"
+    },
+    {
+      "en": "In the cube ABCD-EFGH, name every edge that is skew to edge AB.",
+      "ja": "立方体 ABCD-EFGH において、辺 AB とねじれの位置にある辺をすべて答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "ねじれの位置の skew lines と、統計の分布が「歪んだ」skewed は別の意味。",
+    "平面上なら 2 直線は交わるか平行かのどちらか。skew は空間にしかない。"
+  ],
+  "related": [
+    "parallel-lines",
+    "perpendicular-lines",
+    "intersect",
+    "coplanarity-condition",
+    "line-perpendicular-to-a-plane"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

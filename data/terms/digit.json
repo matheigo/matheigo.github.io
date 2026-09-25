@@ -1,0 +1,99 @@
+{
+  "id": "digit",
+  "ja": {
+    "term": "桁",
+    "reading": "けた",
+    "alt": []
+  },
+  "en": {
+    "term": "digit",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "位取り記数法で数を書いたとき、各位に並ぶ 1 つ 1 つの数字。「3 桁の数」は数字が 3 つ並ぶ数を言う。",
+  "definition_en": "One of the symbols that fill the places when a number is written in a place-value system; a three-digit number is written with three of them.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "So we want a three-digit number whose digits add up to 12.",
+      "ja": "つまり、各位の数の和が 12 になる 3 桁の数を探したい。",
+      "register": "spoken"
+    },
+    {
+      "en": "How many four-digit positive integers have no repeated digits?",
+      "ja": "各位の数字がすべて異なる 4 桁の正の整数はいくつあるか。",
+      "register": "written"
+    },
+    {
+      "en": "Round the answer to two decimal places, and keep at least four significant digits along the way.",
+      "ja": "答えは小数第 2 位までに丸め、途中の計算は有効数字 4 桁以上で行え。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "digit は「数字」そのもの（0〜9 の 1 つ）。「桁」の位置のほうは place（一の位 = ones place）で、「桁数」は number of digits。",
+    "「3 桁の数」は a three-digit number。形容詞として使うときは digit を複数形にしない（three digits long とは言うが a three-digits number とは言わない）。"
+  ],
+  "related": [
+    "number-of-digits",
+    "place",
+    "leading-digit",
+    "numeral-system"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "digit": 121
+    },
+    "written": {
+      "digit": 81
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

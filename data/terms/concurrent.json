@@ -1,0 +1,88 @@
+{
+  "id": "concurrent",
+  "ja": {
+    "term": "1 点で交わる",
+    "reading": "いってんでまじわる",
+    "alt": [
+      "共点"
+    ]
+  },
+  "en": {
+    "term": "concurrent",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "3 本以上の直線が、すべて同じ 1 点を通ること。",
+  "definition_en": "Describes three or more lines that all pass through one common point.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The three medians of a triangle are concurrent, and the point where they meet is the centroid.",
+      "ja": "三角形の 3 本の中線は 1 点で交わり、その交点が重心だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove that the three altitudes of triangle ABC are concurrent.",
+      "ja": "三角形 ABC の 3 本の垂線は 1 点で交わることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "concurrent は形容詞で、「3 直線が 1 点で交わる」は The three lines are concurrent. と言う。交わる点そのものは the point of concurrency。",
+    "日常英語の concurrent は「同時に起こる」の意味。幾何の concurrent は「1 点を共有する」で、時間の意味はない。",
+    "用例コーパスでは concurrent は話し言葉 1 件（The Organic Chemistry Tutor）、書き言葉 0 件しかない。見出しは Nicholson の呼び方に合わせた。"
+  ],
+  "related": [
+    "collinear",
+    "cevas-theorem",
+    "the-five-centers-of-a-triangle",
+    "centroid"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "4.1 Vectors and Lines（三角形の中線・高さが 1 点で交わる問題）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "concurrent": 1
+    },
+    "sources": [
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 concurrent（4.5 An Application to Computer Graphics・4.1 Vectors and Lines）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

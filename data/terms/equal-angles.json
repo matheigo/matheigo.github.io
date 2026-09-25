@@ -1,0 +1,87 @@
+{
+  "id": "equal-angles",
+  "ja": {
+    "term": "等しい角",
+    "reading": "ひとしいかく",
+    "alt": []
+  },
+  "en": {
+    "term": "congruent angles",
+    "alt": [
+      "equal angles"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで congruent angles は話し言葉 9 件（すべて The Organic Chemistry Tutor）、equal angles は書き言葉 2 件（すべて MIT の講義ノート）で、どちらも 10 件未満）。大きさの等しい角は congruent angles とも equal angles とも言う。記号では、角そのものの関係を ∠A ≅ ∠B（the angles are congruent）、角の大きさ（measure）の関係を m∠A = m∠B と書き分ける書き方がある。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "大きさ（角度）が同じである 2 つ以上の角。",
+  "definition_en": "Two or more angles that have the same measure.",
+  "latex": "m\\angle A = m\\angle B",
+  "spoken_en": "the measure of angle A equals the measure of angle B",
+  "examples": [
+    {
+      "en": "These are congruent angles, so if this one is 40 degrees, that one is 40 too.",
+      "ja": "これらは等しい角だから、こっちが 40° ならあっちも 40° だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "The base angles of an isosceles triangle are equal angles.",
+      "ja": "二等辺三角形の底角は等しい角である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書は ∠A = ∠B と書くが、∠A ≅ ∠B と m∠A = m∠B を使い分ける書き方もある。m は measure（大きさ）の m。"
+  ],
+  "related": [
+    "congruent",
+    "angle",
+    "isosceles-triangle",
+    "supplementary-angle"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "congruent angles": 9
+    },
+    "written": {
+      "equal angles": 2
+    },
+    "sources": [
+      "mit-notes",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 9 件 ／ 書 2 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

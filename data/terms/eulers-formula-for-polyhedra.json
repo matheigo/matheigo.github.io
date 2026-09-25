@@ -1,0 +1,86 @@
+{
+  "id": "eulers-formula-for-polyhedra",
+  "ja": {
+    "term": "オイラーの多面体定理",
+    "reading": "おいらーのためんたいていり",
+    "alt": []
+  },
+  "en": {
+    "term": "Euler's formula for polyhedra",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "凸多面体の頂点の数を V、辺の数を E、面の数を F とすると V − E + F = 2 が成り立つという定理。連結な平面グラフでも同じ式が成り立つ。",
+  "definition_en": "For a convex polyhedron with V vertices, E edges, and F faces, V − E + F = 2; the same equation holds for a connected planar graph.",
+  "latex": "V - E + F = 2",
+  "spoken_en": "V minus E plus F equals 2",
+  "examples": [
+    {
+      "en": "A cube has 8 vertices, 12 edges, and 6 faces, and 8 minus 12 plus 6 is 2, just like Euler's formula for polyhedra says.",
+      "ja": "立方体は頂点が 8、辺が 12、面が 6 で、8 − 12 + 6 = 2。オイラーの多面体定理のとおりになる。",
+      "register": "spoken"
+    },
+    {
+      "en": "A convex polyhedron has 12 faces and 30 edges. Use Euler's formula for polyhedra to find the number of vertices.",
+      "ja": "面の数が 12、辺の数が 30 の凸多面体がある。オイラーの多面体定理を用いて頂点の数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "Euler's formula だけだと e^(iθ) = cos θ + i sin θ（オイラーの公式）の名前でもある。多面体の定理は for polyhedra を付けて区別する。用例コーパスでは Euler's formula for polyhedra ／ Euler's polyhedron formula ／ Euler's formula for planar graphs のどれかの形でだけ数え、書き言葉 1 件（MIT の講義ノート）だった。",
+    "頂点・辺・面の数は number of vertices ／ edges ／ faces。vertex の複数形は vertices。"
+  ],
+  "related": [
+    "eulers-formula",
+    "tetrahedron",
+    "vertex",
+    "edge-of-a-graph",
+    "vertex-graph"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "2.3 Planar Graphs（Euler's formula for planar graphs、v − e + f = 2）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "Euler's formula for polyhedra | Euler's polyhedron formula | Euler's formula for planar graphs": 1
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは Levin の呼び方 Euler's formula for polyhedra | Euler's polyhedron formula | Euler's formula for planar graphs（2.3 Planar Graphs・2.8 Chapter Summary）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

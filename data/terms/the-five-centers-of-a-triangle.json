@@ -1,0 +1,78 @@
+{
+  "id": "the-five-centers-of-a-triangle",
+  "ja": {
+    "term": "五心",
+    "reading": "ごしん",
+    "alt": []
+  },
+  "en": {
+    "term": "points of concurrency",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで points of concurrency は話・書とも 0 件）。英語には外心・内心・重心・垂心・傍心の 5 つをまとめた名前がない。points of concurrency は「3 本以上の直線が 1 点で交わる点」の総称で、外心（circumcenter）・内心（incenter）・重心（centroid）・垂心（orthocenter）を指すときに使う。英語で五心を言うときは、この 5 つの名前を並べる。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "三角形の外心・内心・重心・垂心・傍心の 5 つの点をまとめた呼び名。どれも三角形に関わる 3 本の直線が 1 点で交わる点。",
+  "definition_en": "The Japanese name for five special points of a triangle taken together: the circumcenter, incenter, centroid, orthocenter, and excenter. Each is a point where three lines related to the triangle meet.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The circumcenter, incenter, centroid, and orthocenter are all points of concurrency: three lines meeting at one point.",
+      "ja": "外心・内心・重心・垂心は、どれも 3 本の直線が 1 点で交わる点。",
+      "register": "spoken"
+    },
+    {
+      "en": "Name the point of concurrency of the three altitudes of a triangle, and explain why it can lie outside the triangle.",
+      "ja": "三角形の 3 本の垂線が交わる点の名前を答え、それが三角形の外部にくることがある理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「five centers」と直訳しても決まった言い方にはならない。5 つの名前（circumcenter, incenter, centroid, orthocenter, excenter）を個別に言う。",
+    "正三角形では外心・内心・重心・垂心が 1 点に重なる。"
+  ],
+  "related": [
+    "circumcenter",
+    "incenter",
+    "centroid",
+    "orthocenter",
+    "excenter"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

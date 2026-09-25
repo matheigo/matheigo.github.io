@@ -1,0 +1,80 @@
+{
+  "id": "dihedral-angle",
+  "ja": {
+    "term": "二面角",
+    "reading": "にめんかく",
+    "alt": []
+  },
+  "en": {
+    "term": "dihedral angle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "1 本の直線を共有する 2 つの半平面がつくる角。共有する直線上の 1 点から、それぞれの半平面上にその直線と垂直な半直線を引き、その 2 本がなす角で測る。",
+  "definition_en": "The angle formed by two half-planes that share an edge, measured by the angle between two rays, one in each half-plane, drawn perpendicular to the edge from the same point.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To measure the dihedral angle, pick a point on the edge and draw a line perpendicular to the edge in each face.",
+      "ja": "二面角を測るには、交線上に 1 点をとり、それぞれの面の上に交線と垂直な直線を引く。",
+      "register": "spoken"
+    },
+    {
+      "en": "In a regular tetrahedron ABCD, let θ be the dihedral angle between faces ABC and ABD. Find cos θ.",
+      "ja": "正四面体 ABCD において、面 ABC と面 ABD のなす二面角を θ とする。cos θ を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "交線上の点から引く 2 本の直線は、どちらも交線に垂直でなければならない。任意の 2 直線のなす角は二面角ではない。",
+    "座標空間では、2 平面の法線ベクトルのなす角から求めることもできる。その場合、二面角は法線ベクトルのなす角か、その補角になる。"
+  ],
+  "related": [
+    "angle",
+    "normal-vector",
+    "tetrahedron",
+    "line-perpendicular-to-a-plane",
+    "equation-of-a-plane"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "二面角",
+      "en": "Dihedral angle"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

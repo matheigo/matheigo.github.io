@@ -1,0 +1,77 @@
+{
+  "id": "excenter",
+  "ja": {
+    "term": "傍心",
+    "reading": "ぼうしん",
+    "alt": []
+  },
+  "en": {
+    "term": "excenter",
+    "alt": [],
+    "uk": "excentre"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "三角形の 1 つの内角の二等分線と、他の 2 つの頂点における外角の二等分線が交わる点。1 辺と他の 2 辺の延長に接する円（傍接円）の中心で、1 つの三角形に 3 つある。",
+  "definition_en": "The point where the bisector of one interior angle of a triangle meets the exterior angle bisectors at the other two vertices. It is the center of an excircle, a circle tangent to one side and to the extensions of the other two, and every triangle has three of them.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Every triangle has three excenters, one opposite each vertex, and they all lie outside the triangle.",
+      "ja": "三角形には傍心が 3 つあり、それぞれ 1 つの頂点に対応していて、どれも三角形の外部にある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the bisector of ∠A and the exterior angle bisectors at B and C meet at one point. This point is the excenter opposite A.",
+      "ja": "∠A の二等分線と、∠B, ∠C の外角の二等分線は 1 点で交わることを示せ。この点が ∠A 内の傍心である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "傍心の円は excircle（傍接円）、その半径は exradius。内心・内接円（incenter・incircle）と対になる言い方。",
+    "英国式のつづりは excentre。"
+  ],
+  "related": [
+    "exterior-angle-bisector",
+    "incenter",
+    "inscribed-circle",
+    "the-five-centers-of-a-triangle"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

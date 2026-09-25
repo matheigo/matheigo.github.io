@@ -1,0 +1,82 @@
+{
+  "id": "divisibility-rules",
+  "ja": {
+    "term": "倍数の判定法",
+    "reading": "ばいすうのはんていほう",
+    "alt": []
+  },
+  "en": {
+    "term": "divisibility test",
+    "alt": [
+      "divisibility rule"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "実際に割り算をせずに、各位の数字の和や下の何桁かだけを見て、ある整数が 3・4・9 などの倍数かどうかを見分ける方法。",
+  "definition_en": "A shortcut for deciding whether an integer is divisible by a number such as 3, 4, or 9 by looking at its digit sum or its last few digits, without dividing.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "By the divisibility test for 3, add up the digits: 1 + 2 + 3 is 6, so 123 is a multiple of 3.",
+      "ja": "3 の倍数の判定法で、各位の数字を足すと 1 + 2 + 3 = 6 だから、123 は 3 の倍数。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use a divisibility rule to decide whether 4,356 is divisible by 9.",
+      "ja": "倍数の判定法を用いて、4356 が 9 の倍数かどうか調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語は「〜の倍数」の側から言うが、英語は「割り切れる」の側から言うことができる。「3 の倍数である」は is a multiple of 3 とも is divisible by 3 とも言える。",
+    "4 の倍数は下 2 桁、8 の倍数は下 3 桁で判定する。英語では the last two digits ／ the last three digits。"
+  ],
+  "related": [
+    "multiple",
+    "digit",
+    "classification-by-remainder",
+    "modulus"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "6.2 Introduction to Number Theory"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 divisibility test（6.2 Introduction to Number Theory）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

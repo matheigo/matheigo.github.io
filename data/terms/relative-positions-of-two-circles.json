@@ -1,0 +1,83 @@
+{
+  "id": "relative-positions-of-two-circles",
+  "ja": {
+    "term": "2 円の位置関係",
+    "reading": "にえんのいちかんけい",
+    "alt": []
+  },
+  "en": {
+    "term": "relative position of two circles",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで relative position of two circles は話・書とも 0 件、CED・OpenStax・Nicholson・Levin にも出てこない）。英語では分類そのものに名前を付けず、場合ごとに the circles intersect at two points ／ are externally tangent ／ are internally tangent ／ one lies inside the other ／ lie outside each other と言う。判定は中心間の距離 d と半径 r₁, r₂ の比較で、これも英語で個別に説明する。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "2 つの円の関係を、中心間の距離 d と半径 r₁, r₂ の大小で分けたもの。互いに外部にある・外接する・2 点で交わる・内接する・一方が他方の内部にある、の 5 通り。",
+  "definition_en": "How two circles sit relative to each other, classified by comparing the distance d between their centers with the radii r₁ and r₂: separate, externally tangent, intersecting at two points, internally tangent, or one inside the other.",
+  "latex": "|r_1 - r_2| < d < r_1 + r_2",
+  "spoken_en": "the absolute value of r one minus r two is less than d, which is less than r one plus r two",
+  "examples": [
+    {
+      "en": "If the distance between the centers equals r₁ plus r₂, the circles are externally tangent — they touch at exactly one point from the outside.",
+      "ja": "中心間の距離が r₁ + r₂ に等しければ、2 円は外接する。外側から 1 点で接している。",
+      "register": "spoken"
+    },
+    {
+      "en": "When d equals the difference of the radii, one circle is internally tangent to the other.",
+      "ja": "d が半径の差に等しいとき、一方の円が他方の円に内接する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Circle C₁ has center (0, 0) and radius 2, and circle C₂ has center (5, 0) and radius r. Find the range of r for which C₁ and C₂ intersect at two points.",
+      "ja": "円 C₁ は中心 (0, 0)、半径 2、円 C₂ は中心 (5, 0)、半径 r である。C₁ と C₂ が異なる 2 点で交わるような r の値の範囲を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「2 円が外接する」は externally tangent、「2 円が内接する」は internally tangent。多角形と円の関係に使う circumscribed ／ inscribed とは別の言い方になる。",
+    "2 点で交わる条件は |r₁ − r₂| < d < r₁ + r₂。等号が入ると接する場合になる。"
+  ],
+  "related": [
+    "common-tangent",
+    "position-of-a-line-relative-to-a-circle",
+    "circle-through-the-intersections-of-two-circles",
+    "equation-of-a-circle",
+    "distance"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

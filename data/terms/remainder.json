@@ -3,7 +3,9 @@
   "ja": {
     "term": "余り",
     "reading": "あまり",
-    "alt": []
+    "alt": [
+      "剰余"
+    ]
   },
   "en": {
     "term": "remainder",
@@ -20,12 +22,14 @@
   "level": {
     "jp": [
       "小学校",
+      "数A",
       "数II"
     ],
     "us": [
       "Algebra 1",
       "Algebra 2",
-      "Precalculus"
+      "Precalculus",
+      "Discrete Math"
     ]
   },
   "definition_ja": "割り算で割り切れずに残る部分。整式の除法では、余りの次数は割る式の次数より小さい。",
@@ -42,6 +46,11 @@
       "en": "Find the remainder when x³ − 2x + 5 is divided by x + 1.",
       "ja": "x³ − 2x + 5 を x + 1 で割ったときの余りを求めよ。",
       "register": "written"
+    },
+    {
+      "en": "When an integer is divided by 3, the remainder is 0, 1, or 2, so every integer is 3k, 3k + 1, or 3k + 2.",
+      "ja": "整数を 3 で割った余りは 0, 1, 2 のどれかなので、すべての整数は 3k, 3k + 1, 3k + 2 のどれかで表せる。",
+      "register": "written"
     }
   ],
   "collocations": [
@@ -52,12 +61,14 @@
   ],
   "pitfalls": [
     "「〜で割ったときの余り」は the remainder when … is divided by …。",
-    "remainder だけではテイラーの剰余項（the remainder of a Taylor polynomial）も多いので、用例コーパスでは the remainder is の形で数えた。それでも Khan Academy の AP Calculus では剰余項の意味が混ざる。"
+    "remainder だけではテイラーの剰余項（the remainder of a Taylor polynomial）も多いので、用例コーパスでは the remainder is の形で数えた。それでも Khan Academy の AP Calculus では剰余項の意味が混ざる。",
+    "数A の合同式では、余りを剰余とも言う。a ≡ b (mod n) は a と b を n で割った余りが等しいこと（modulus）。"
   ],
   "related": [
     "remainder-theorem",
     "polynomial-division",
-    "division-algorithm"
+    "division-algorithm",
+    "modulus"
   ],
   "sources": [
     {
@@ -71,7 +82,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "the remainder is": 19,

@@ -1,0 +1,85 @@
+{
+  "id": "line-perpendicular-to-a-plane",
+  "ja": {
+    "term": "直線と平面の垂直",
+    "reading": "ちょくせんとへいめんのすいちょく",
+    "alt": []
+  },
+  "en": {
+    "term": "perpendicular to the plane",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "直線が平面と交わり、その交点を通る平面上のすべての直線と垂直であること。平面上の交わる 2 直線と垂直であれば、それで十分である。",
+  "definition_en": "A line meets a plane and is perpendicular to every line in the plane through the point of intersection; being perpendicular to two intersecting lines in the plane is enough.",
+  "latex": "\\ell \\perp \\alpha",
+  "spoken_en": "line ell is perpendicular to plane alpha",
+  "examples": [
+    {
+      "en": "Once the line is perpendicular to the plane, it's perpendicular to every line in that plane, not just the two we checked.",
+      "ja": "直線が平面に垂直なら、確かめた 2 本だけでなく、その平面上のすべての直線と垂直になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "In tetrahedron ABCD, AB ⊥ BC and AB ⊥ BD. Show that AB is perpendicular to the plane BCD.",
+      "ja": "四面体 ABCD において AB ⊥ BC, AB ⊥ BD である。AB が平面 BCD に垂直であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "平面上の 1 本の直線と垂直なだけでは平面に垂直とは言えない。交わる 2 直線と垂直であることを示す。",
+    "平面に垂直な直線は normal to the plane とも言う（法線ベクトル normal vector の normal）。",
+    "用例コーパスでは話し言葉 13 件がすべて MIT OCW（うち 11 件は 18.06）、書き言葉は 8 件（OpenStax Calculus 7・MIT の講義ノート 1）。"
+  ],
+  "related": [
+    "foot-of-the-perpendicular",
+    "normal-vector",
+    "three-perpendiculars-theorem",
+    "equation-of-a-plane",
+    "perpendicular-lines"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "perpendicular to the plane": 13
+    },
+    "written": {
+      "perpendicular to the plane": 8
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "cevas-theorem",
+  "ja": {
+    "term": "チェバの定理",
+    "reading": "ちぇばのていり",
+    "alt": []
+  },
+  "en": {
+    "term": "Ceva's theorem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "△ABC の頂点と 1 点 O を結ぶ直線 AO, BO, CO が対辺（またはその延長）と P, Q, R で交わるとき、(BP/PC)(CQ/QA)(AR/RB) = 1 が成り立つという定理。逆も成り立ち、3 本の直線が 1 点で交わることの証明に使う。",
+  "definition_en": "If lines through the vertices of triangle ABC and a common point O meet the opposite sides (or their extensions) at P, Q, and R, then (BP/PC)(CQ/QA)(AR/RB) = 1. The converse also holds, so the theorem is a tool for proving that three such lines are concurrent.",
+  "latex": "\\frac{BP}{PC}\\cdot\\frac{CQ}{QA}\\cdot\\frac{AR}{RB} = 1",
+  "spoken_en": "BP over PC, times CQ over QA, times AR over RB, equals one",
+  "examples": [
+    {
+      "en": "Go around the triangle in one direction, vertex to point to vertex, and by Ceva's theorem the three ratios multiply to one.",
+      "ja": "三角形を一方向に、頂点→分点→頂点とたどると、チェバの定理より 3 つの比の積は 1 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "In triangle ABC, the segments AP, BQ, and CR meet at one point, with BP : PC = 2 : 3 and CQ : QA = 4 : 1. Use Ceva's theorem to find AR : RB.",
+      "ja": "△ABC において、線分 AP, BQ, CR が 1 点で交わり、BP : PC = 2 : 3, CQ : QA = 4 : 1 である。チェバの定理を用いて AR : RB を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "比は三角形の周りを一方向にたどって書く。順番を崩すと積が 1 にならない。",
+    "点 O が三角形の外部にあっても成り立つ（そのときは 2 つの分点が辺の延長上にくる）。",
+    "頂点と対辺上の点を結ぶ線分は英語で cevian と呼ぶ。"
+  ],
+  "related": [
+    "menelauss-theorem",
+    "concurrent",
+    "point-of-internal-division",
+    "triangle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "チェバの定理",
+      "en": "Ceva's theorem"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "incenter",
+  "ja": {
+    "term": "内心",
+    "reading": "ないしん",
+    "alt": []
+  },
+  "en": {
+    "term": "incenter",
+    "alt": [],
+    "uk": "incentre"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "三角形の 3 つの内角の二等分線が交わる点。3 辺から等しい距離にあり、内接円の中心になる。",
+  "definition_en": "The point where the bisectors of the three interior angles of a triangle meet. It is the same distance from all three sides, so it is the center of the inscribed circle.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The incenter is where the three angle bisectors meet, and it's the center of the inscribed circle.",
+      "ja": "内心は 3 つの角の二等分線の交点で、内接円の中心になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let I be the incenter of triangle ABC. If ∠A = 70°, find ∠BIC.",
+      "ja": "△ABC の内心を I とする。∠A = 70° のとき、∠BIC を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "内心は 3 辺から等距離（頂点から等距離なのは外心）。外心と取り違えない。",
+    "内接円の半径は inradius。内心は必ず三角形の内部にある。",
+    "英国式のつづりは incentre。"
+  ],
+  "related": [
+    "inscribed-circle",
+    "circumcenter",
+    "excenter",
+    "the-five-centers-of-a-triangle"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "incenter": 1
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "adjacent-angles",
+  "ja": {
+    "term": "隣接角",
+    "reading": "りんせつかく",
+    "alt": []
+  },
+  "en": {
+    "term": "adjacent angles",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで adjacent angles は話し言葉 1 件、書き言葉 0 件）。見出しの「隣接角」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書はこの 2 つの角の関係に名前をつけない。英語の adjacent angles は、頂点と 1 辺を共有し、内部が重ならない 2 つの角を指す。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "頂点と 1 つの辺を共有し、内部が重ならない 2 つの角。",
+  "definition_en": "Two angles that share a vertex and a side but have no interior points in common.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "These two are adjacent angles: same vertex, they share this ray, and they don't overlap.",
+      "ja": "この 2 つは隣接角。頂点が同じで、この半直線を共有していて、重なっていない。",
+      "register": "spoken"
+    },
+    {
+      "en": "∠AOB and ∠BOC are adjacent angles with a sum of 90°. If ∠AOB = 2∠BOC, find ∠BOC.",
+      "ja": "∠AOB と ∠BOC は頂点 O と辺 OB を共有し、和が 90° である。∠AOB = 2∠BOC のとき、∠BOC を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「隣り合う角」として、平行四辺形などの多角形で 1 辺を共有する 2 つの内角を adjacent angles と言うこともある（平行四辺形の隣り合う角の和は 180°）。頂点を共有する上の意味とは別。",
+    "adjacent side（隣辺）は直角三角形で角に隣り合う辺のことで、adjacent angles とは関係がない。"
+  ],
+  "related": [
+    "angle",
+    "angle-addition-postulate",
+    "supplementary-angle",
+    "complementary-angle"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "adjacent angles": 1
+    },
+    "sources": [
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 1 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "simplify-radicals",
+  "ja": {
+    "term": "根号を簡単にする",
+    "reading": "こんごうをかんたんにする",
+    "alt": []
+  },
+  "en": {
+    "term": "simplify radicals",
+    "alt": [
+      "simplify the radical",
+      "simplest radical form"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic",
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学",
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "根号の中の数から平方因数を外に出し、根号の中をできるだけ小さい自然数にする。根号を含む式では、そのうえで同じ根号の項をまとめる。",
+  "definition_en": "To pull square factors out from under a radical so that the number left inside is as small as possible, then combine like radical terms in an expression.",
+  "latex": "\\sqrt{12} = \\sqrt{4 \\cdot 3} = 2\\sqrt{3}",
+  "spoken_en": "root twelve is root four times three, which is two root three",
+  "examples": [
+    {
+      "en": "To simplify the radical, look for the biggest perfect square that goes into 72. That's 36, so √72 is 6√2.",
+      "ja": "根号を簡単にするには、72 を割り切る最大の平方数を探す。36 だから √72 = 6√2 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Simplify the radical expression √50 − √18 + √8.",
+      "ja": "√50 − √18 + √8 を簡単にせよ。",
+      "register": "written"
+    },
+    {
+      "en": "Write √48 in simplest radical form.",
+      "ja": "√48 を簡単にせよ（根号の中をできるだけ小さい自然数にせよ）。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは決め手がなく（書き言葉の simplify radicals 8・simplify the radical 5・simplest radical form 2 はすべて OpenStax Algebra and Trigonometry）、OpenStax の呼び方を見出しにした。",
+    "simplest radical form は「簡単にした結果の形」を指す名詞句。問題文の Write … in simplest radical form が「簡単にせよ」に当たる。",
+    "分母の根号を消す「有理化」は別の操作で、英語では rationalize the denominator と言う。"
+  ],
+  "related": [
+    "nth-root",
+    "nested-radical",
+    "radical-function",
+    "rational-exponent"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "simplify the radical": 1,
+      "simplify radicals": 4,
+      "simplest radical form": 1
+    },
+    "written": {
+      "simplify radicals": 8,
+      "simplify the radical": 5,
+      "simplest radical form": 2
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 6 件（10 未満） ／ 書: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満）。見出しは OpenStax の呼び方 simplify radicals（本文 8 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

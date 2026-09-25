@@ -1,0 +1,80 @@
+{
+  "id": "hexadecimal",
+  "ja": {
+    "term": "16 進法",
+    "reading": "じゅうろくしんほう",
+    "alt": []
+  },
+  "en": {
+    "term": "hexadecimal",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "16 を基数とする位取り記数法。0〜9 と A〜F（10〜15 を表す）の 16 個の数字を使う。",
+  "definition_en": "The base-16 place-value system, which uses the sixteen digits 0–9 and A–F, where A through F stand for 10 through 15.",
+  "latex": "\\mathrm{2F}_{(16)} = 2 \\cdot 16 + 15 = 47",
+  "spoken_en": "two F in base sixteen is two times sixteen plus fifteen, which is forty-seven",
+  "examples": [
+    {
+      "en": "In hexadecimal, once you run out of digits at 9, you keep going with A, B, C, D, E, F.",
+      "ja": "16 進法では、9 の次は A, B, C, D, E, F と続ける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Convert the decimal number 200 to hexadecimal.",
+      "ja": "10 進法で表された数 200 を 16 進法で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書は 2F₍₁₆₎ のように括弧つきの添字で基数を書く。英語の資料には 2F₁₆ のように括弧なしで書くものや、プログラミングの 0x2F の書き方もある。",
+    "hexadecimal は名詞にも形容詞にも使う（in hexadecimal ／ a hexadecimal number）。「16 進数」も同じ語で言える。"
+  ],
+  "related": [
+    "base-n",
+    "binary",
+    "numeral-system",
+    "digit"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.2 Combining Outcomes"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 hexadecimal（3.2 Combining Outcomes）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

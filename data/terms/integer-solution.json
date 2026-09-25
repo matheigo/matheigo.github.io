@@ -1,0 +1,85 @@
+{
+  "id": "integer-solution",
+  "ja": {
+    "term": "整数解",
+    "reading": "せいすうかい",
+    "alt": []
+  },
+  "en": {
+    "term": "integer solution",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "方程式の解のうち、値が整数であるもの。未知数が 2 つ以上なら、どれも整数である組をいう。",
+  "definition_en": "A solution of an equation in which the unknowns all take integer values.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We only want integer solutions here, so x = 1.5 doesn't count.",
+      "ja": "ここで欲しいのは整数解だけだから、x = 1.5 は数えない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find all integer solutions of x² − y² = 7.",
+      "ja": "x² − y² = 7 の整数解をすべて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「自然数解」は positive integer solution。0 を含めるかどうかは英語でも問題文で決める（nonnegative integer solution なら 0 を含む）。",
+    "未知数が 2 つの整数解は、英語の問題文では pairs of integers (x, y) と組で言うこともできる。"
+  ],
+  "related": [
+    "diophantine-equation",
+    "linear-diophantine-equation",
+    "real-solution",
+    "solution"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "6.2 Introduction to Number Theory"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "integer solution": 2
+    },
+    "sources": [
+      "mit-6.042"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 integer solution（3.5 Counting Multisets・6.2 Introduction to Number Theory・1.4 Proofs）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "angle-addition-postulate",
+  "ja": {
+    "term": "角の加法公理",
+    "reading": "かくのかほうこうり",
+    "alt": []
+  },
+  "en": {
+    "term": "angle addition postulate",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで angle addition postulate は話・書とも 0 件）。見出しの「角の加法公理」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書は ∠AOB + ∠BOC = ∠AOC に名前をつけない。英語名は、点 B が ∠AOC の内部にあれば角の大きさがこのように足せるという性質を公理として立てたときの名前。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "点 B が ∠AOC の内部にあるとき、∠AOB + ∠BOC = ∠AOC が成り立つ、という公理。",
+  "definition_en": "The postulate that if point B lies in the interior of angle AOC, then the measure of angle AOB plus the measure of angle BOC equals the measure of angle AOC.",
+  "latex": "m\\angle AOB + m\\angle BOC = m\\angle AOC",
+  "spoken_en": "the measure of angle AOB plus the measure of angle BOC equals the measure of angle AOC",
+  "examples": [
+    {
+      "en": "By the angle addition postulate, these two little angles add up to the big one, so 3x + 20 + x = 100.",
+      "ja": "角の加法公理より、小さい 2 つの角を足すと大きい角になるから、3x + 20 + x = 100。",
+      "register": "spoken"
+    },
+    {
+      "en": "Point B is in the interior of ∠AOC, m∠AOB = 38°, and m∠AOC = 115°. Use the angle addition postulate to find m∠BOC.",
+      "ja": "点 B は ∠AOC の内部にあり、∠AOB = 38°、∠AOC = 115° である。∠BOC を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の幾何には、角の大きさを m∠AOB と書いて角そのもの ∠AOB と区別する書き方がある。日本の教科書は ∠AOB = 38° のように同じ記号で大きさも表す。",
+    "三角関数の加法定理（sin(α + β) = …）は angle addition formulas で、この公理とは別物。"
+  ],
+  "related": [
+    "angle",
+    "axiom",
+    "segment-addition-postulate",
+    "adjacent-angles",
+    "undefined-terms"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

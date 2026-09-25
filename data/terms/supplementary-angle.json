@@ -1,0 +1,87 @@
+{
+  "id": "supplementary-angle",
+  "ja": {
+    "term": "補角",
+    "reading": "ほかく",
+    "alt": []
+  },
+  "en": {
+    "term": "supplementary angles",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "和が 180° になる 2 つの角の、一方から見た他方の角。θ の補角は 180° − θ。",
+  "definition_en": "Two angles are supplementary when their measures add up to 180°; the supplement of an angle θ is 180° − θ.",
+  "latex": "\\alpha + \\beta = 180^\\circ",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "These two are supplementary angles, so x is just 180 minus 65, which is 115.",
+      "ja": "この 2 つは補角どうしだから、x は 180 − 65 で 115 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Angles on a straight line are supplementary, so they add up to 180 degrees.",
+      "ja": "一直線上に並んだ 2 つの角は互いに補角だから、足すと 180° になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the supplement of a 40° angle.",
+      "ja": "40° の角の補角を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「補角」は 1 つの角を指すが、英語は 2 角の関係を形容詞 supplementary で言う（The angles are supplementary.）。「40° の補角」は the supplement of 40°。",
+    "件数は形容詞 supplementary で数えた。話し言葉で 27 件（すべて The Organic Chemistry Tutor）、書き言葉で 5 件（MIT の講義ノート 3・OpenStax Algebra and Trigonometry 2）。",
+    "「補」の字につられて complementary（余角）と取り違えやすい。supplementary は 180°、complementary は 90°。"
+  ],
+  "related": [
+    "complementary-angle",
+    "angle",
+    "adjacent-angles"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "supplementary": 27
+    },
+    "written": {
+      "supplementary": 5
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

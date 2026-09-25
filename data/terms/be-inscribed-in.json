@@ -1,0 +1,101 @@
+{
+  "id": "be-inscribed-in",
+  "ja": {
+    "term": "内接する",
+    "reading": "ないせつする",
+    "alt": []
+  },
+  "en": {
+    "term": "inscribed in",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "図形が別の図形の内側にあって、各頂点が外側の図形の周上にある（多角形が円に内接する）か、各辺に接する（円が多角形に内接する）こと。",
+  "definition_en": "To lie inside another figure so that it touches the outer figure's boundary: a polygon whose vertices all lie on a circle, or a circle tangent to every side of a polygon.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A circle inscribed in a triangle touches all three sides, and its center is where the angle bisectors meet.",
+      "ja": "三角形に内接する円は 3 辺すべてに接し、その中心は角の二等分線の交点になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "If a triangle is inscribed in a circle and one side is a diameter, the angle opposite that side is a right angle.",
+      "ja": "三角形が円に内接し、1 辺が直径なら、その辺に向かい合う角は直角になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "A square is inscribed in a circle of radius 5. Find the area of the square.",
+      "ja": "半径 5 の円に正方形が内接している。正方形の面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "向きは日本語と同じ。A is inscribed in B は「A が B に内接する」で、A が内側。",
+    "「2 円が内接する」は internally tangent で、inscribed は使わない。",
+    "用例コーパスでは inscribed in は話し言葉 3 件・書き言葉 8 件（OpenStax Calculus 5・OpenStax Algebra and Trigonometry 3）と少なく、見出しは OpenStax の言い方にした。"
+  ],
+  "related": [
+    "inscribed-circle",
+    "incenter",
+    "be-circumscribed-about",
+    "cyclic-quadrilateral",
+    "circumscribed-circle"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "inscribed in": 3
+    },
+    "written": {
+      "inscribed in": 8
+    },
+    "sources": [
+      "mit-18.02",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは OpenStax の呼び方 inscribed in（本文 8 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

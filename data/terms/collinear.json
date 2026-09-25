@@ -1,0 +1,100 @@
+{
+  "id": "collinear",
+  "ja": {
+    "term": "一直線上にある",
+    "reading": "いっちょくせんじょうにある",
+    "alt": [
+      "共線",
+      "共線の点"
+    ]
+  },
+  "en": {
+    "term": "collinear",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "3 つ以上の点が、すべて同じ 1 本の直線の上にのっていること。",
+  "definition_en": "Describes three or more points that all lie on a single straight line.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If A, B, and C are collinear, then B has to be on the line through A and C.",
+      "ja": "A, B, C が一直線上にあるなら、B は A と C を通る直線の上にあるはずだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the points (1, 2), (3, 6), and (5, 10) are collinear.",
+      "ja": "3 点 (1, 2), (3, 6), (5, 10) は一直線上にあることを示せ。",
+      "register": "written"
+    },
+    {
+      "en": "Any three points that are not collinear determine exactly one plane.",
+      "ja": "一直線上にない 3 点は、平面をただ 1 つに定める。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "collinear は形容詞。「3 点 A, B, C は一直線上にある」は The points A, B, C are collinear.、「共線の点」は collinear points と言う。",
+    "ベクトルでは、A, B, C が一直線上にある ⇔ AC→ = k AB→ となる実数 k がある（collinearity-condition を参照）。"
+  ],
+  "related": [
+    "collinearity-condition",
+    "concurrent",
+    "menelauss-theorem",
+    "segment"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "collinear": 2
+    },
+    "written": {
+      "collinear": 8
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは OpenStax の呼び方 collinear（本文 8 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

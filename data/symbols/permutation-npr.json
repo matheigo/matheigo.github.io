@@ -1,0 +1,51 @@
+{
+  "id": "permutation-npr",
+  "latex": "{}_n\\mathrm{P}_r = P(n, r)",
+  "spoken_en": [
+    {
+      "text": "n P r",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "エヌ ピー アール",
+  "name_en": "number of permutations (nPr)",
+  "name_ja": "順列の数（ₙPᵣ）",
+  "term_ref": "permutation",
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "日本の教科書は ₙPᵣ と書く。P(n, r) とも書く。OpenStax Algebra and Trigonometry は the number of permutations of n distinct objects taken r at a time と言葉で書く（permutations of n の形で書き言葉 11 件）。",
+    "用例コーパスでは n P r の読みは話し言葉 0 件（書き言葉 4 件は OpenStax Algebra and Trigonometry など）。組合せの ₙCᵣ は n choose r と読む（combination-ncr）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

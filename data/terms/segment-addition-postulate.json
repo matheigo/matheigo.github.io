@@ -1,0 +1,77 @@
+{
+  "id": "segment-addition-postulate",
+  "ja": {
+    "term": "線分の加法公理",
+    "reading": "せんぶんのかほうこうり",
+    "alt": []
+  },
+  "en": {
+    "term": "segment addition postulate",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで segment addition postulate は話・書とも 0 件）。見出しの「線分の加法公理」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書は AB + BC = AC に名前をつけない。英語名は、点 B が線分 AC 上にあれば AB + BC = AC になるという性質を公理として立てたときの名前。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "点 B が線分 AC 上にあるとき AB + BC = AC が成り立つ、という公理。逆に AB + BC = AC なら B は線分 AC 上にある。",
+  "definition_en": "The postulate that if point B lies on segment AC, then AB + BC = AC, and conversely.",
+  "latex": "AB + BC = AC",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "B is between A and C, so by the segment addition postulate, AB plus BC has to equal AC.",
+      "ja": "B は A と C の間にあるから、線分の加法公理より AB + BC = AC になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Point B lies on AC with AB = 2x + 1, BC = x + 4, and AC = 23. Use the segment addition postulate to find x.",
+      "ja": "点 B は線分 AC 上にあり、AB = 2x + 1、BC = x + 4、AC = 23 である。x を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "この公理が使えるのは B が線分 AC 上にあるときだけ。B が線分 AC の外にあれば AB + BC > AC になる（三角不等式）。"
+  ],
+  "related": [
+    "segment",
+    "axiom",
+    "angle-addition-postulate",
+    "undefined-terms",
+    "midpoint"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

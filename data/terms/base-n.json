@@ -1,0 +1,95 @@
+{
+  "id": "base-n",
+  "ja": {
+    "term": "n 進法",
+    "reading": "えぬしんほう",
+    "alt": []
+  },
+  "en": {
+    "term": "base n",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで in base ／ written in base ／ base-n representation をまとめて数えて、話し言葉 3 件（MIT OCW 2・Professor Leonard 1）、書き言葉 4 件（すべて OpenStax Algebra and Trigonometry））。英語は体系に名前を付けず、底を言う（in base 2、base 10、a base-5 numeral）。「n 進法で表す」は write … in base n。base b は用例コーパスでは主に対数の底の意味なので数えていない。",
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "位が 1 つ上がるごとに n 倍になるように、0 から n − 1 までの n 種類の数字で数を表す方法。",
+  "definition_en": "A way of writing numbers with the n digits 0 through n − 1, where each place is worth n times the place to its right.",
+  "latex": "142_{(5)} = 1 \\cdot 5^2 + 4 \\cdot 5 + 2 = 47",
+  "spoken_en": "one four two in base five equals forty-seven",
+  "examples": [
+    {
+      "en": "Let's write 13 in base 2: that's 1101.",
+      "ja": "13 を 2 進法で書くと 1101 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write 47 in base 5.",
+      "ja": "47 を 5 進法で表せ。",
+      "register": "written"
+    },
+    {
+      "en": "Convert the base-3 number 212 to base 10.",
+      "ja": "3 進法で表された数 212₍₃₎ を 10 進法で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「n 進法」は表し方、「n 進数」は表された数。英語はどちらも base n を使って言い分ける（in base 5 ／ a base-5 number）。",
+    "日本の教科書は 142₍₅₎ と括弧付きの添え字で書く。英語の文献には 142₅ と括弧なしで書くものもある。",
+    "10 進法の decimal は「小数」の意味でも使う。「10 進法で」は in base 10 と言うと紛れない。"
+  ],
+  "related": [
+    "binary",
+    "hexadecimal",
+    "numeral-system",
+    "digit",
+    "place"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "in base | written in base | base-n representation": 3
+    },
+    "written": {
+      "in base | written in base | base-n representation": 4
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-algtrig",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 3 件 ／ 書 4 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

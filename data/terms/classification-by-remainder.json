@@ -1,0 +1,78 @@
+{
+  "id": "classification-by-remainder",
+  "ja": {
+    "term": "余りによる分類",
+    "reading": "あまりによるぶんるい",
+    "alt": []
+  },
+  "en": {
+    "term": "classification by remainder",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで大学の用語 residue class は話・書とも 0 件）。英語では分類そのものに名前を付けず、consider the cases n = 3k, n = 3k + 1, n = 3k + 2 のように場合を書き出して言う。大学の整数論では、余りの等しい整数の組を residue class と呼ぶ（Levin 6.2）。見出しの classification by remainder は本プロジェクトの説明的な訳。",
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "整数を、ある自然数 m で割ったときの余り 0, 1, …, m − 1 によって m 個の組に分けること。整数の性質を場合分けで証明するときに使う。",
+  "definition_en": "Sorting the integers into m groups by the remainder 0, 1, …, m − 1 they leave when divided by m, so that a statement can be checked case by case.",
+  "latex": "n = 3k,\\ 3k+1,\\ 3k+2",
+  "spoken_en": "n equals 3k, 3k plus 1, or 3k plus 2",
+  "examples": [
+    {
+      "en": "Every integer is 3k, 3k + 1, or 3k + 2, so let's just check each case.",
+      "ja": "どの整数も 3k, 3k + 1, 3k + 2 のどれかだから、それぞれの場合を調べよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let k be an integer. Consider the cases n = 3k, n = 3k + 1, and n = 3k + 2, and show that n² leaves a remainder of 0 or 1 when divided by 3.",
+      "ja": "k を整数とする。n = 3k, 3k + 1, 3k + 2 の場合に分けて、n² を 3 で割った余りが 0 か 1 であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "答案では「k は整数」を必ず書き添える（where k is an integer）。",
+    "3k + 2 の代わりに 3k − 1 と置いてもよい。どちらも 3 で割った余りが 2 の整数を表す。"
+  ],
+  "related": [
+    "remainder",
+    "division-algorithm",
+    "split-into-cases",
+    "modulus",
+    "parity"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

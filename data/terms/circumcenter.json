@@ -1,0 +1,77 @@
+{
+  "id": "circumcenter",
+  "ja": {
+    "term": "外心",
+    "reading": "がいしん",
+    "alt": []
+  },
+  "en": {
+    "term": "circumcenter",
+    "alt": [],
+    "uk": "circumcentre"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "三角形の 3 辺の垂直二等分線が交わる点。3 頂点から等しい距離にあり、外接円の中心になる。",
+  "definition_en": "The point where the perpendicular bisectors of the three sides of a triangle meet. It is the same distance from all three vertices, so it is the center of the circumscribed circle.",
+  "latex": "OA = OB = OC",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The circumcenter is where the perpendicular bisectors meet, so it's the same distance from all three vertices.",
+      "ja": "外心は垂直二等分線の交点なので、3 つの頂点から等しい距離にある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the coordinates of the circumcenter of the triangle with vertices (0, 0), (8, 0), and (0, 6).",
+      "ja": "3 点 (0, 0), (8, 0), (0, 6) を頂点とする三角形の外心の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "外心は鋭角三角形では内部、直角三角形では斜辺の中点、鈍角三角形では三角形の外部にある。",
+    "外接円は circumcircle（circumscribed circle）、その半径は circumradius。英国式のつづりは circumcentre。"
+  ],
+  "related": [
+    "circumscribed-circle",
+    "perpendicular-bisector",
+    "the-five-centers-of-a-triangle",
+    "law-of-sines"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}
