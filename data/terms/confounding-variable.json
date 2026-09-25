@@ -1,0 +1,76 @@
+{
+  "id": "confounding-variable",
+  "ja": {
+    "term": "交絡変数",
+    "reading": "こうらくへんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "confounding variable",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "説明変数と応答変数の両方に関わり、その影響を説明変数の影響と区別できなくする変数。",
+  "definition_en": "A variable related to both the explanatory and the response variable, whose effect cannot be told apart from that of the explanatory variable.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Maybe it's not the coffee but age that's doing it; age could be a confounding variable.",
+      "ja": "コーヒーではなく年齢のせいかもしれない。年齢が交絡変数になりうる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Identify a possible confounding variable in this observational study.",
+      "ja": "この観察研究で考えられる交絡変数を挙げよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Introductory Statistics は lurking variable（潜在変数、書き言葉 14 件）という語を使う。用例コーパスの話し言葉 confounding variable 13 件はすべて Khan Academy。"
+  ],
+  "related": [
+    "causation",
+    "explanatory-variable",
+    "response-variable"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "交絡",
+      "en": "Confounding"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "confounding variable": 13
+    },
+    "sources": [
+      "khan-ap-stats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

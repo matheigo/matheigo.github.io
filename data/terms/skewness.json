@@ -1,0 +1,93 @@
+{
+  "id": "skewness",
+  "ja": {
+    "term": "歪度",
+    "reading": "わいど",
+    "alt": [
+      "分布の歪み",
+      "ゆがみ"
+    ]
+  },
+  "en": {
+    "term": "skewness",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "分布が左右対称からどれだけ、どちら向きにずれているかの程度。右に裾が長いと正、左に長いと負。",
+  "definition_en": "The degree to which, and the direction in which, a distribution departs from symmetry; positive for a long right tail and negative for a long left tail.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Skewness tells you which way the tail goes.",
+      "ja": "歪度は、裾がどちら向きに伸びているかを表す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Describe the skewness of the distribution and how it affects the mean and the median.",
+      "ja": "分布の歪みを述べ、それが平均値と中央値にどう影響するか説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "AP Statistics の授業では、数値の歪度より、分布の形を skewed right ／ skewed left と言葉で述べることが多い（skewed は用例コーパス 181 件、skewness は 4 件）。"
+  ],
+  "related": [
+    "be-skewed",
+    "distribution"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "歪度",
+      "en": "Skewness"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "skewness": 1
+    },
+    "written": {
+      "skewness": 3
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 skewness（Skewness and the Mean, Median, and Mode）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

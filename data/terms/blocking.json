@@ -1,0 +1,88 @@
+{
+  "id": "blocking",
+  "ja": {
+    "term": "ブロック化",
+    "reading": "ぶろっくか",
+    "alt": []
+  },
+  "en": {
+    "term": "blocking",
+    "alt": [
+      "block design",
+      "randomized block design"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「ブロック化」は日本の高校の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "実験で、結果に影響しそうな性質が似た被験者をまとめてブロックに分け、ブロックごとに処理を無作為に割り当てること。",
+  "definition_en": "In an experiment, grouping subjects that are alike in a way that may affect the response into blocks, and randomly assigning treatments within each block.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Block by gender first, then randomize within each block.",
+      "ja": "まず性別でブロックに分け、それぞれのブロックの中で無作為に割り当てる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Describe a randomized block design for this experiment.",
+      "ja": "この実験のブロック化した計画（randomized block design）を述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは block design（話し言葉 9 件、すべて Khan Academy）の形で数えた。語のままの blocking は積み木や行列のブロックの block と同じ語になる。"
+  ],
+  "related": [
+    "completely-randomized-design",
+    "treatment",
+    "control-group"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語は AP Statistics の固有の用語（blocking）だが、OpenStax（6 冊）にも台帳の Wikipedia にもなく、用例コーパスでもほとんど出てこない。",
+      "raised": "2026-09-25"
+    },
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ],
+  "evidence": {
+    "spoken": {
+      "block design": 9
+    },
+    "sources": [
+      "khan-ap-stats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

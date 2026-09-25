@@ -1,0 +1,88 @@
+{
+  "id": "unbiased-estimator",
+  "ja": {
+    "term": "不偏推定量",
+    "reading": "ふへんすいていりょう",
+    "alt": []
+  },
+  "en": {
+    "term": "unbiased estimator",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "unbiased estimate",
+        "register": "spoken",
+        "note": "推定した値のほうを指す言い方。話し言葉で 15 件（すべて Khan Academy）。"
+      }
+    ]
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "その期待値が推定したい母数に等しくなる推定量。標本平均は母平均の不偏推定量。",
+  "definition_en": "An estimator whose expected value equals the parameter it estimates; the sample mean is an unbiased estimator of the population mean.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We divide by n minus 1 so that the sample variance is an unbiased estimator of the population variance.",
+      "ja": "標本分散が母分散の不偏推定量になるように、n − 1 で割る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the sample mean is an unbiased estimator of μ.",
+      "ja": "標本平均が μ の不偏推定量であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは unbiased estimator が話し言葉 6 件、unbiased estimate が 15 件（どちらも Khan Academy）。OpenStax Introductory Statistics には出てこない。"
+  ],
+  "related": [
+    "unbiased",
+    "estimation",
+    "population-variance"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語は固有の用語（unbiased estimator）だが、OpenStax（6 冊）にも台帳の Wikipedia にもない（用例コーパスでは Khan Academy だけ）。",
+      "raised": "2026-09-25"
+    }
+  ],
+  "evidence": {
+    "spoken": {
+      "unbiased estimate": 15,
+      "unbiased estimator": 6
+    },
+    "sources": [
+      "khan-ap-stats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

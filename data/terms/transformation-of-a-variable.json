@@ -20,15 +20,16 @@
   ],
   "level": {
     "jp": [
-      "数I"
+      "数I",
+      "大学"
     ],
     "us": [
       "Algebra 1",
       "AP Statistics"
     ]
   },
-  "definition_ja": "変量 x の各値を u = (x − a)/c のような式で別の変量に置き換えること。平均値や分散がどう変わるかを調べる。",
-  "definition_en": "Replacing each value of a variable x by a new value such as u = (x − a)/c, and seeing how the mean and variance change.",
+  "definition_ja": "変量 x の各値を u = (x − a)/c のような式で別の変量に置き換えること。平均値や分散がどう変わるかを調べる。対数をとるなど、散布図の点を直線に近づけるための変換もある。",
+  "definition_en": "Replacing each value of a variable x by a new value such as u = (x − a)/c and seeing how the mean and variance change; also a transformation such as taking logarithms to straighten a scatter plot.",
   "latex": "u = \\frac{x - a}{c}",
   "spoken_en": null,
   "examples": [
@@ -45,7 +46,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "定数を足すと平均値だけが変わり（shift）、定数を掛けると平均値も標準偏差も変わる（scale）。"
+    "定数を足すと平均値だけが変わり（shift）、定数を掛けると平均値も標準偏差も変わる（scale）。",
+    "AP Statistics では、散布図が曲がっているとき y の対数をとるなどして直線に近づけることも transforming data と言う。"
   ],
   "related": [
     "arithmetic-mean",

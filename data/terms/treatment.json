@@ -1,0 +1,87 @@
+{
+  "id": "treatment",
+  "ja": {
+    "term": "処理",
+    "reading": "しょり",
+    "alt": [
+      "処理条件"
+    ]
+  },
+  "en": {
+    "term": "treatment",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "実験で、対象に与える条件（薬の種類や量など）。",
+  "definition_en": "In an experiment, a condition applied to the subjects, such as a kind or amount of a drug.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Randomly assign the subjects to the two treatments.",
+      "ja": "被験者を 2 つの処理に無作為に割り当てる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Identify the treatments and the response variable in the experiment.",
+      "ja": "実験の処理と応答変数を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「処理」はデータの処理の意味でも使うが、英語の treatment は実験の処理（与える条件）。医療の「治療」も treatment。"
+  ],
+  "related": [
+    "control-group",
+    "placebo",
+    "completely-randomized-design",
+    "blinding"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "treatment": 52
+    },
+    "written": {
+      "treatment": 73
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "eulerian-path",
+  "ja": {
+    "term": "一筆書き",
+    "reading": "ひとふでがき",
+    "alt": []
+  },
+  "en": {
+    "term": "Euler tour",
+    "alt": [
+      "Euler walk",
+      "Eulerian path",
+      "Euler path"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「一筆書き」は図形を紙から筆を離さずにかくことで、始点に戻るかどうかを問わない。英語は始点に戻る Euler tour（Euler circuit）と戻らない Euler walk（Euler path）を分けて呼ぶ。用例コーパスでは Euler tour（話し言葉 23 件、すべて MIT OCW 6.042）が多い。",
+  "domains": [
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "グラフのすべての辺をちょうど 1 回ずつ通る道。始点と終点が一致するものと、しないものがある。",
+  "definition_en": "A walk through a graph that uses every edge exactly once, either returning to its start or not.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "You can draw it in one stroke only if zero or two vertices have odd degree.",
+      "ja": "一筆書きできるのは、次数が奇数の頂点が 0 個か 2 個のときだけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the graph has an Euler tour, and if so, find one.",
+      "ja": "グラフに一筆書き（Euler tour）があるか判定し、あれば 1 つ求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "ケーニヒスベルクの橋の問題（Seven Bridges of Königsberg）が起源。"
+  ],
+  "related": [
+    "vertex-graph",
+    "tree"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "一筆書き",
+      "en": "Seven Bridges of Königsberg"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "Euler tour": 23
+    },
+    "written": {
+      "Euler tour": 14,
+      "Euler walk": 5
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

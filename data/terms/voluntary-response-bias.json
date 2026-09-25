@@ -1,0 +1,89 @@
+{
+  "id": "voluntary-response-bias",
+  "ja": {
+    "term": "自発的回答の偏り",
+    "reading": "じはつてきかいとうのかたより",
+    "alt": []
+  },
+  "en": {
+    "term": "voluntary response bias",
+    "alt": [
+      "voluntary response sample",
+      "voluntary response"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「自発的回答の偏り」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "回答するかどうかを本人に任せた調査で、強い意見をもつ人ばかりが答えるために生じる偏り。",
+  "definition_en": "The bias in a survey where people choose whether to respond, so that mostly those with strong opinions answer.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "An online poll is a voluntary response sample, so the people who care most are overrepresented.",
+      "ja": "オンラインの投票は自発的回答の標本なので、関心の強い人が多くなりすぎる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Explain why a call-in poll suffers from voluntary response bias.",
+      "ja": "電話で意見を募る投票に自発的回答の偏りが生じる理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは voluntary response が話し言葉 3 件、voluntary response sample が 1 件だけ（すべて Khan Academy）。"
+  ],
+  "related": [
+    "convenience-sample",
+    "nonresponse",
+    "is-biased"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語は AP Statistics の固有の用語（voluntary response bias）だが、OpenStax（6 冊）にも台帳の Wikipedia にもなく、用例コーパスでもほとんど出てこない。",
+      "raised": "2026-09-25"
+    },
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ],
+  "evidence": {
+    "spoken": {
+      "voluntary response sample": 1,
+      "voluntary response": 3
+    },
+    "sources": [
+      "khan-ap-stats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "critical-value",
+  "ja": {
+    "term": "臨界値",
+    "reading": "りんかいち",
+    "alt": []
+  },
+  "en": {
+    "term": "critical value",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "仮説検定や信頼区間で、棄却域の境目や信頼区間の幅を決める値。95% 信頼区間の z* = 1.96 など。",
+  "definition_en": "In a hypothesis test or a confidence interval, the value that marks the edge of the rejection region or sets the width of the interval, such as z* = 1.96 for 95% confidence.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For 95 percent confidence, the critical value is 1.96.",
+      "ja": "信頼度 95% なら、臨界値は 1.96。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the critical value t* for a 90% confidence interval with 15 degrees of freedom.",
+      "ja": "自由度 15 の 90% 信頼区間の臨界値 t* を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "微積分でも f′(x) = 0 となる値を critical value（critical point）と呼ぶことがあり、用例コーパスの文脈 16 件中 3 件がその意味だった。"
+  ],
+  "related": [
+    "rejection-region",
+    "confidence-interval",
+    "test-statistic",
+    "z-score"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "critical value": 77
+    },
+    "written": {
+      "critical value": 62
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

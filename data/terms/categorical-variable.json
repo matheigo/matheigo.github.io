@@ -1,0 +1,91 @@
+{
+  "id": "categorical-variable",
+  "ja": {
+    "term": "質的データ",
+    "reading": "しつてきでーた",
+    "alt": [
+      "カテゴリ変数",
+      "質的変数"
+    ]
+  },
+  "en": {
+    "term": "qualitative data",
+    "alt": [
+      "categorical variable",
+      "categorical data"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "数量ではなく、種類や分類で表されるデータ（またはその変量）。血液型、好きな教科など。",
+  "definition_en": "Data, or a variable, recorded as categories rather than numbers, such as blood type or favorite subject.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Eye color is a categorical variable; you can't average it.",
+      "ja": "目の色は質的データなので、平均はとれない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Classify each variable as qualitative or quantitative.",
+      "ja": "それぞれの変量が質的データか量的データかを答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Introductory Statistics は qualitative data（14 件）、AP Statistics の講義は categorical variable（Khan Academy）と呼ぶ。",
+    "質的データは棒グラフや円グラフで表す。"
+  ],
+  "related": [
+    "quantitative-variable",
+    "bar-chart",
+    "pie-chart"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "categorical variable": 3
+    },
+    "written": {
+      "categorical variable": 7,
+      "qualitative data": 14,
+      "categorical data": 2
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

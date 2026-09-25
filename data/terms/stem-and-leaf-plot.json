@@ -1,0 +1,100 @@
+{
+  "id": "stem-and-leaf-plot",
+  "ja": {
+    "term": "幹葉図",
+    "reading": "みきはず",
+    "alt": [
+      "幹葉表示"
+    ]
+  },
+  "en": {
+    "term": "stem-and-leaf plot",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "stemplot",
+        "register": "written",
+        "note": "話し言葉では 0 件、書き言葉で 14 件（すべて OpenStax Introductory Statistics。stem plot を含む）。"
+      },
+      {
+        "term": "stem-and-leaf graph",
+        "register": "written",
+        "note": "書き言葉で 3 件（すべて OpenStax Introductory Statistics）。"
+      }
+    ],
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "データの上の位を幹、下の位を葉として並べ、分布の形ともとの値を同時に示す表。",
+  "definition_en": "A display that splits each value into a stem (the leading digits) and a leaf (the last digit), showing the shape of the distribution while keeping the data values.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In a stem-and-leaf plot, 7 | 3 means 73.",
+      "ja": "幹葉図では 7 | 3 は 73 のこと。",
+      "register": "spoken"
+    },
+    {
+      "en": "Make a stemplot of the test scores and describe the shape of the distribution.",
+      "ja": "テストの得点の幹葉図をかき、分布の形を述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉は stem-and-leaf plot（10 件、すべて Khan Academy）、書き言葉は stemplot（14 件）と stem-and-leaf plot（9 件）が並ぶ。"
+  ],
+  "related": [
+    "histogram",
+    "distribution"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "幹葉表示",
+      "en": "Stem-and-leaf display"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "stem-and-leaf plot": 10
+    },
+    "written": {
+      "stem-and-leaf plot": 9,
+      "stemplot": 14,
+      "stem-and-leaf graph": 3
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

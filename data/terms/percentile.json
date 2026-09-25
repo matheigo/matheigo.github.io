@@ -1,0 +1,85 @@
+{
+  "id": "percentile",
+  "ja": {
+    "term": "パーセンタイル",
+    "reading": "ぱーせんたいる",
+    "alt": [
+      "百分位数"
+    ]
+  },
+  "en": {
+    "term": "percentile",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "データを小さい順に並べたとき、その値以下のデータが全体の p% になる値を第 p パーセンタイルという。",
+  "definition_en": "The pth percentile is the value at or below which p percent of the ordered data lie.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Scoring in the 90th percentile means you did better than about 90 percent of people.",
+      "ja": "第 90 パーセンタイルとは、約 90% の人より上だったということ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the 30th percentile of the data.",
+      "ja": "データの第 30 パーセンタイルを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "第 1 四分位数は第 25 パーセンタイル、中央値は第 50 パーセンタイル。"
+  ],
+  "related": [
+    "quartile",
+    "median",
+    "cumulative-relative-frequency",
+    "standard-score"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "percentile": 96
+    },
+    "written": {
+      "percentile": 282
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

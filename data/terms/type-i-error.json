@@ -1,0 +1,87 @@
+{
+  "id": "type-i-error",
+  "ja": {
+    "term": "第一種の過誤",
+    "reading": "だいいっしゅのかご",
+    "alt": [
+      "第 1 種の誤り"
+    ]
+  },
+  "en": {
+    "term": "Type I error",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "帰無仮説が正しいのに、それを棄却してしまう誤り。その確率は有意水準 α。",
+  "definition_en": "Rejecting the null hypothesis when it is actually true; its probability is the significance level α.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A Type I error is a false alarm: you think something happened when it didn't.",
+      "ja": "第一種の過誤は誤報のようなもの。何も起きていないのに起きたと思う。",
+      "register": "spoken"
+    },
+    {
+      "en": "Describe a Type I error in the context of this problem.",
+      "ja": "この問題の文脈で第一種の過誤を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "Type I は type one と読む。用例コーパスでは字幕の type one error も同じ言い方として数えた。"
+  ],
+  "related": [
+    "type-ii-error",
+    "significance-level",
+    "null-hypothesis"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "第一種過誤と第二種過誤",
+      "en": "Type I and type II errors"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "Type I error": 33
+    },
+    "written": {
+      "Type I error": 43
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

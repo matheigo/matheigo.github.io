@@ -1,0 +1,86 @@
+{
+  "id": "type-ii-error",
+  "ja": {
+    "term": "第二種の過誤",
+    "reading": "だいにしゅのかご",
+    "alt": [
+      "第 2 種の誤り"
+    ]
+  },
+  "en": {
+    "term": "Type II error",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "帰無仮説が誤っているのに、それを棄却しない誤り。その確率を β と書く。",
+  "definition_en": "Failing to reject the null hypothesis when it is actually false; its probability is written β.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A Type II error is a miss: something really happened, but the test didn't catch it.",
+      "ja": "第二種の過誤は見逃し。本当に何か起きたのに、検定がとらえられなかった。",
+      "register": "spoken"
+    },
+    {
+      "en": "What is the consequence of a Type II error in this situation?",
+      "ja": "この状況で第二種の過誤が起きるとどうなるか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "Type II は type two と読む。1 − β を検定の power（検出力）と言う。"
+  ],
+  "related": [
+    "type-i-error",
+    "null-hypothesis"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "第一種過誤と第二種過誤",
+      "en": "Type I and type II errors"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "Type II error": 40
+    },
+    "written": {
+      "Type II error": 55
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

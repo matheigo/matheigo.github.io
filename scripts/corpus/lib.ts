@@ -78,6 +78,14 @@ export const VARIANTS: [RegExp, string][] = [
   [/\bscatterplot/g, "scatter plot"],
   [/\bboxplot/g, "box plot"],
   [/\bz\s+(score|table)/g, "z-$1"],
+  // "p value", "non-response", "stem plot", "stem and leaf" against the hyphenated
+  // or joined spellings; "Type I / II error" as said aloud ("type one error")
+  [/\bp\s+value/g, "p-value"],
+  [/\bnon-response/g, "nonresponse"],
+  [/\bstem\s+plot/g, "stemplot"],
+  [/\bstem\s+and\s+leaf/g, "stem-and-leaf"],
+  [/\btype\s+ii\s+error/g, "type two error"],
+  [/\btype\s+i\s+error/g, "type one error"],
   // Leibniz notation typed with a slash in captions ("dy/dx") is said "dy dx"
   [/\bd([a-z])\/d([a-z])\b/g, "d$1 d$2"],
   // One name, three spellings: L'Hôpital (OpenStax), L'Hopital (captions), L'Hospital (older)
@@ -547,6 +555,10 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   row: { row: "first row | second row | row of the matrix | row of a matrix" }, // not "in a row"
   column: { column: "first column | second column | column of the matrix" }, // not a column of a table in general
   entry: { entry: "entry in row | entries of the matrix" }, // "element" is mostly an element of a set
+  // batch 4
+  "vertex-graph": { vertex: "adjacent vertices | degree of a vertex | vertices u and v | set of vertices" }, // not the vertex of a parabola or polygon
+  tree: { tree: "a tree !diagram" }, // not a tree diagram
+  blocking: { blocking: "block design" }, // "blocking" folds into "block": stacks of blocks, Jordan blocks
 };
 
 /** The wording a candidate is counted and recorded as. */

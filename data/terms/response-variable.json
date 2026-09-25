@@ -1,0 +1,81 @@
+{
+  "id": "response-variable",
+  "ja": {
+    "term": "応答変数",
+    "reading": "おうとうへんすう",
+    "alt": [
+      "目的変数"
+    ]
+  },
+  "en": {
+    "term": "response variable",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "説明変数によって説明・予測される側の変量。散布図の縦軸にとる。",
+  "definition_en": "The variable that is explained or predicted by the explanatory variable; it goes on the vertical axis of a scatter plot.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The response variable goes on the y-axis.",
+      "ja": "応答変数は y 軸にとる。",
+      "register": "spoken"
+    },
+    {
+      "en": "In the study of fertilizer and plant height, what is the response variable?",
+      "ja": "肥料と植物の高さの研究で、応答変数は何か。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数学の dependent variable（従属変数）に当たる役割。"
+  ],
+  "related": [
+    "explanatory-variable",
+    "scatter-plot",
+    "regression-line"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "response variable": 6
+    },
+    "written": {
+      "response variable": 25
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

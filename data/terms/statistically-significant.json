@@ -1,0 +1,95 @@
+{
+  "id": "statistically-significant",
+  "ja": {
+    "term": "有意",
+    "reading": "ゆうい",
+    "alt": [
+      "有意である",
+      "統計的に有意"
+    ]
+  },
+  "en": {
+    "term": "statistically significant",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学",
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "観測した結果が偶然だけでは起こりにくい（p 値が有意水準より小さい）こと。",
+  "definition_en": "Of a result: unlikely to have happened by chance alone, so that the p-value is below the significance level.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The difference is statistically significant, so it's probably not just chance.",
+      "ja": "差は統計的に有意なので、たぶん偶然ではない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Is the result statistically significant at the 1% level? Explain.",
+      "ja": "結果は有意水準 1% で有意か。説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「有意」は重要という意味ではない。統計的に有意でも、差が小さく実用上は意味がないこともある。"
+  ],
+  "related": [
+    "significance-level",
+    "p-value",
+    "hypothesis-testing"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "有意",
+      "en": "Statistical significance"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "statistically significant": 3
+    },
+    "written": {
+      "statistically significant": 4
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 4 件（10 未満））。見出しは OpenStax の呼び方 statistically significant（本文 4 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

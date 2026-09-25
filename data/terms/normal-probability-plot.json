@@ -1,0 +1,81 @@
+{
+  "id": "normal-probability-plot",
+  "ja": {
+    "term": "正規確率プロット",
+    "reading": "せいきかくりつぷろっと",
+    "alt": []
+  },
+  "en": {
+    "term": "normal probability plot",
+    "alt": [
+      "normal quantile plot"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「正規確率プロット」は日本の高校の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "データの値を、正規分布なら予想される値（z スコア）に対して並べた散布図。点がほぼ直線に並べば、データは正規分布に近い。",
+  "definition_en": "A plot of the data values against the values (z-scores) expected if the data were normal; points lying close to a line suggest the data are approximately normal.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If the normal probability plot is pretty straight, the normal model is reasonable.",
+      "ja": "正規確率プロットがほぼまっすぐなら、正規分布のモデルは妥当。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use a normal probability plot to decide whether the data come from an approximately normal population.",
+      "ja": "正規確率プロットを使って、データがほぼ正規分布の母集団から来ているか判断せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパス・OpenStax Introductory Statistics とも 0 件。"
+  ],
+  "related": [
+    "normal-distribution",
+    "z-score"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語は AP Statistics の固有の用語（normal probability plot）だが、OpenStax（6 冊）にも台帳の Wikipedia にもなく、用例コーパスでもほとんど出てこない。",
+      "raised": "2026-09-25"
+    },
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ],
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  }
+}

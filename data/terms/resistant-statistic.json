@@ -1,0 +1,83 @@
+{
+  "id": "resistant-statistic",
+  "ja": {
+    "term": "抵抗性がある",
+    "reading": "ていこうせいがある",
+    "alt": [
+      "抵抗性のある統計量"
+    ]
+  },
+  "en": {
+    "term": "resistant",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": "見出しの「抵抗性がある」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "統計量が外れ値の影響をほとんど受けないこと。中央値や四分位範囲は抵抗性があり、平均値や標準偏差はない。",
+  "definition_en": "Of a statistic: hardly affected by outliers. The median and the IQR are resistant; the mean and the standard deviation are not.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The median is resistant, so one crazy value doesn't move it much.",
+      "ja": "中央値は抵抗性があるので、極端な値が 1 つあってもあまり動かない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Which measure of center is resistant to outliers? Explain.",
+      "ja": "外れ値に対して抵抗性があるのはどちらの代表値か。説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは resistant は書き言葉 1 件（OpenStax Introductory Statistics）だけ。"
+  ],
+  "related": [
+    "outlier",
+    "median",
+    "interquartile-range"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "resistant": 1
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 resistant（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

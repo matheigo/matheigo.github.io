@@ -926,6 +926,8 @@ PHASE2E_SAME = [
     ("vary", "spread", "into"),
     # 推定する and 推定: English says both with estimate (noun and verb)
     ("estimate", "estimation", "into"),
+    # AP "transforming data" and 数I 変量の変換: applying a function to every value
+    ("transforming-data", "transformation-of-a-variable", "into"),
     # into entries already generated (Phase 2 統計・ベクトルの単元: fill in the new unit's sense)
     ("row-reduction", "gaussian-elimination", "into"),
     ("mean", "arithmetic-mean", "into"),  # 平均値 of data = 相加平均
@@ -934,7 +936,8 @@ PHASE2E_SAME = [
     ("independent-events", "independence-of-events", "into"),
     ("independent", "independence-of-events", "into"),  # 数A 独立 (of events and trials)
     ("margin-of-error", "error-bound", "into"),  # AP margin of error = OpenStax error bound
-    ("multiplication-rule", "general-multiplication-rule", "into"),  # 数A 乗法定理 P(A∩B) = P(A)P_A(B)
+    ("multiplication-rule", "general-multiplication-rule", "from"),  # 数A 乗法定理 P(A∩B) = P(A)P_A(B); the textbook name heads
+    ("addition-rule", "general-addition-rule", "from"),  # 数A 加法定理; US "addition rule" is the general form
 ]
 
 # Section names -> the entry for what they teach.

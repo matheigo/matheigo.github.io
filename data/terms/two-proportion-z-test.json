@@ -1,0 +1,83 @@
+{
+  "id": "two-proportion-z-test",
+  "ja": {
+    "term": "2 標本比率の検定",
+    "reading": "にひょうほんひりつのけんてい",
+    "alt": []
+  },
+  "en": {
+    "term": "test of two proportions",
+    "alt": [
+      "two-proportion z-test"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「2 標本比率の検定」は日本の高校の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "2 つの母集団の比率が等しいかどうかを、2 つの標本比率の差から z 検定で調べる方法。",
+  "definition_en": "A z-test of whether two population proportions are equal, based on the difference between two sample proportions.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We're comparing two groups' proportions, so it's a two-proportion z-test.",
+      "ja": "2 つの群の比率を比べるので、2 標本比率の z 検定。",
+      "register": "spoken"
+    },
+    {
+      "en": "Perform a test of two proportions to decide whether the rates differ.",
+      "ja": "2 標本比率の検定を行い、割合に差があるか判断せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "two-proportion z-test（2 標本比率の z 検定）とも呼ぶが、用例コーパスでは 0 件。OpenStax Introductory Statistics は test of two proportions（3 件）と書く。"
+  ],
+  "related": [
+    "population-proportion",
+    "sample-proportion",
+    "hypothesis-testing"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "test of two proportions": 3
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 test of two proportions（本文 3 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

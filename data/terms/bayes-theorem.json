@@ -1,0 +1,87 @@
+{
+  "id": "bayes-theorem",
+  "ja": {
+    "term": "ベイズの定理",
+    "reading": "べいずのていり",
+    "alt": []
+  },
+  "en": {
+    "term": "Bayes' theorem",
+    "alt": [
+      "Bayes' rule"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "結果 B が起きたときに原因 A が起きていた確率を、P(A | B) = P(B | A) P(A) / P(B) で求める定理。",
+  "definition_en": "The theorem P(A | B) = P(B | A) P(A) / P(B), giving the probability of a cause A once the result B is known.",
+  "latex": "P(A \\mid B) = \\frac{P(B \\mid A)\\,P(A)}{P(B)}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Bayes' theorem lets you flip the condition: from B given A to A given B.",
+      "ja": "ベイズの定理を使うと、条件をひっくり返せる。A のもとでの B から、B のもとでの A へ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A test is 95% accurate and 1% of people have the disease. Use Bayes' theorem to find the probability that a person who tests positive has the disease.",
+      "ja": "ある検査の精度は 95%、病気の人は全体の 1% である。ベイズの定理を用いて、陽性と判定された人が実際に病気である確率を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは Bayes' rule が 3 件だけ（3Blue1Brown・MIT の講義ノート）。語形変化の規則で Bayes は bay（湾）と同じ語になるので、Bayes' の形だけを数えた。"
+  ],
+  "related": [
+    "general-multiplication-rule",
+    "tree-diagram"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ベイズの定理",
+      "en": "Bayes' theorem"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "Bayes' rule": 1
+    },
+    "written": {
+      "Bayes' rule": 2
+    },
+    "sources": [
+      "mit-notes",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

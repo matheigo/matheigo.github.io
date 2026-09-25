@@ -1,0 +1,87 @@
+{
+  "id": "nonresponse",
+  "ja": {
+    "term": "無回答",
+    "reading": "むかいとう",
+    "alt": []
+  },
+  "en": {
+    "term": "nonresponse",
+    "alt": [
+      "nonresponse bias"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "標本に選ばれた人が回答しないこと。答えない人の意見が結果に入らず、偏りの原因になる。",
+  "definition_en": "Failure of people chosen for a sample to respond; their views are missing from the results, which can cause bias.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Half the people never mailed the survey back, so nonresponse is a real problem here.",
+      "ja": "半分の人が調査票を返送しなかったので、ここでは無回答が大きな問題。",
+      "register": "spoken"
+    },
+    {
+      "en": "Why is nonresponse a problem in surveys?",
+      "ja": "調査で無回答が問題になるのはなぜか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Introductory Statistics は non-response とハイフンで書く。用例コーパスでは同じ言い方として数えた。"
+  ],
+  "related": [
+    "voluntary-response-bias",
+    "sample-survey",
+    "is-biased"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "nonresponse": 6
+    },
+    "written": {
+      "nonresponse": 3
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 6 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 nonresponse（本文 3 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "tree",
+  "ja": {
+    "term": "木（グラフ）",
+    "reading": "き",
+    "alt": []
+  },
+  "en": {
+    "term": "tree",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "グラフ理論で、閉路をもたない連結なグラフ。頂点が n 個なら辺は n − 1 本。",
+  "definition_en": "In graph theory, a connected graph with no cycles; a tree with n vertices has n − 1 edges.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A tree is connected but has no loops, so there's exactly one path between any two vertices.",
+      "ja": "木は連結だがループがないので、どの 2 頂点の間にも道がちょうど 1 本ある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that a tree with n vertices has exactly n − 1 edges.",
+      "ja": "頂点が n 個の木はちょうど n − 1 本の辺をもつことを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは a tree の形で数え、a tree diagram（樹形図）を除いた。数える文脈は MIT OCW 6.042（離散数学）が中心で、本物の木の話が少し混ざる。",
+    "すべての頂点を含む木は spanning tree（全域木）。"
+  ],
+  "related": [
+    "vertex-graph",
+    "tree-diagram",
+    "eulerian-path"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語はグラフ理論の固有の用語（tree）だが、OpenStax（6 冊）にも台帳の Wikipedia にもない（用例コーパスでは MIT OCW 6.042 と講義ノートだけ）。",
+      "raised": "2026-09-25"
+    }
+  ],
+  "evidence": {
+    "spoken": {
+      "a tree !diagram": 56
+    },
+    "written": {
+      "a tree !diagram": 31
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-stats",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

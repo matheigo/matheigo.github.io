@@ -1,0 +1,85 @@
+{
+  "id": "stacked-bar-chart",
+  "ja": {
+    "term": "帯グラフ",
+    "reading": "おびぐらふ",
+    "alt": []
+  },
+  "en": {
+    "term": "stacked bar graph",
+    "alt": [
+      "segmented bar graph",
+      "stacked bar chart"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "長方形の帯を全体とし、各項目の割合を帯の区切りの長さで表したグラフ。",
+  "definition_en": "A single bar representing the whole, divided into segments whose lengths show the share of each category.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Each bar goes up to 100 percent, and the segments show the proportions.",
+      "ja": "どの帯も 100% まであって、区切りが割合を表す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Make a stacked bar graph comparing the responses of the two groups.",
+      "ja": "2 つのグループの回答を比べる帯グラフをかけ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは stacked bar graph が書き言葉 1 件だけ。AP Statistics の segmented bar graph は 0 件。"
+  ],
+  "related": [
+    "pie-chart",
+    "bar-chart"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "stacked bar graph": 1
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 stacked bar graph（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "sampling-distribution-of-a-proportion",
+  "ja": {
+    "term": "標本比率の分布",
+    "reading": "ひょうほんひりつのぶんぷ",
+    "alt": []
+  },
+  "en": {
+    "term": "sampling distribution of the sample proportion",
+    "alt": [
+      "sampling distribution of a proportion"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "同じ大きさ n の標本を繰り返し取ったときの標本比率 p̂ の分布。平均は p、標準偏差は √(p(1 − p)/n)。",
+  "definition_en": "The distribution of the sample proportion p̂ over all samples of size n; its mean is p and its standard deviation is √(p(1 − p)/n).",
+  "latex": "\\sigma_{\\hat{p}} = \\sqrt{\\frac{p(1-p)}{n}}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The sampling distribution of the sample proportion is centered at the true p.",
+      "ja": "標本比率の分布の中心は真の p。",
+      "register": "spoken"
+    },
+    {
+      "en": "Describe the sampling distribution of p̂ for samples of size 100 when p = 0.3.",
+      "ja": "p = 0.3 のとき、大きさ 100 の標本について p̂ の分布を述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉 21 件はすべて Khan Academy。OpenStax Introductory Statistics には出てこない。"
+  ],
+  "related": [
+    "sample-proportion",
+    "sampling-distribution",
+    "normal-approximation-to-the-binomial"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "sampling distribution of the sample proportion": 21
+    },
+    "sources": [
+      "khan-ap-stats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

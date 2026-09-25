@@ -1,0 +1,81 @@
+{
+  "id": "adjacency-matrix",
+  "ja": {
+    "term": "隣接行列",
+    "reading": "りんせつぎょうれつ",
+    "alt": []
+  },
+  "en": {
+    "term": "adjacency matrix",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "discrete",
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Discrete Math",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "グラフの頂点を番号づけし、頂点 i と j を結ぶ辺の本数を (i, j) 成分にした正方行列。",
+  "definition_en": "For a graph with numbered vertices, the square matrix whose (i, j) entry is the number of edges joining vertex i to vertex j.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Square the adjacency matrix and you count the walks of length two.",
+      "ja": "隣接行列を 2 乗すると、長さ 2 の道の数がわかる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the adjacency matrix of the graph shown.",
+      "ja": "図のグラフの隣接行列を書け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの書き言葉 18 件はすべて MIT の講義ノート（離散数学）。"
+  ],
+  "related": [
+    "matrix",
+    "vertex-graph"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "隣接行列",
+      "en": "Adjacency matrix"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "adjacency matrix": 8
+    },
+    "written": {
+      "adjacency matrix": 18
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

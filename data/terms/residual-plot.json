@@ -1,0 +1,85 @@
+{
+  "id": "residual-plot",
+  "ja": {
+    "term": "残差プロット",
+    "reading": "ざんさぷろっと",
+    "alt": []
+  },
+  "en": {
+    "term": "residual plot",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "各データの残差（実際の値 − 予測値）を、説明変数に対してかいた散布図。模様がなければ直線のモデルが合っている。",
+  "definition_en": "A scatter plot of the residuals (actual minus predicted values) against the explanatory variable; no pattern means a linear model fits.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "There's a curve in the residual plot, so a line isn't the best model here.",
+      "ja": "残差プロットに曲がった模様があるので、ここでは直線は最適なモデルではない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Make a residual plot and use it to assess whether a linear model is appropriate.",
+      "ja": "残差プロットをかき、直線のモデルが適切かどうか判断せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "残差（residual）は y − ŷ（実際の値 − 予測値）。"
+  ],
+  "related": [
+    "regression-line",
+    "coefficient-of-determination",
+    "influential-point"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "residual plot": 8
+    },
+    "written": {
+      "residual plot": 9
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 residual plot（本文 9 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "statistical-graph",
+  "ja": {
+    "term": "統計グラフ",
+    "reading": "とうけいぐらふ",
+    "alt": []
+  },
+  "en": {
+    "term": "statistical graph",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "データの特徴がわかるように表したグラフの総称。棒グラフ・折れ線グラフ・円グラフ・帯グラフ・ヒストグラムなど。",
+  "definition_en": "Any graph that displays data to show its features, such as a bar graph, a line graph, a pie chart, or a histogram.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Pick the kind of graph that fits the data: a bar graph for categories, a line graph for change over time.",
+      "ja": "データに合ったグラフを選ぼう。カテゴリには棒グラフ、時間による変化には折れ線グラフ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Choose an appropriate statistical graph to display the data and explain your choice.",
+      "ja": "データを表すのに適した統計グラフを選び、選んだ理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語では総称より、個々のグラフの名前（bar graph、line graph、pie chart など）で呼ぶことが多い。用例コーパスの statistical graph は書き言葉 1 件。"
+  ],
+  "related": [
+    "bar-chart",
+    "line-graph",
+    "pie-chart",
+    "histogram",
+    "stacked-bar-chart"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "statistical graph": 1
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 statistical graph（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

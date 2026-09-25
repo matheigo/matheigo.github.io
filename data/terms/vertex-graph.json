@@ -1,0 +1,88 @@
+{
+  "id": "vertex-graph",
+  "ja": {
+    "term": "頂点（グラフ）",
+    "reading": "ちょうてん",
+    "alt": [
+      "点（グラフ理論）"
+    ]
+  },
+  "en": {
+    "term": "vertex",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "グラフ理論で、辺で結ばれる点。",
+  "definition_en": "In graph theory, one of the points that the edges join.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Each vertex here is a person, and an edge means they know each other.",
+      "ja": "ここでは各頂点が人を表し、辺は知り合いであることを表す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the degree of each vertex of the graph.",
+      "ja": "グラフの各頂点の次数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは adjacent vertices ／ degree of a vertex ／ vertices u and v ／ set of vertices の形で数えた（語のままの vertex は放物線や多角形の頂点がほとんど）。",
+    "複数形は vertices。MIT の講義ノートは node（節点）とも書く。"
+  ],
+  "related": [
+    "adjacency-matrix",
+    "tree",
+    "eulerian-path"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "flags": [
+    {
+      "code": "draft-reason",
+      "note": "英語はグラフ理論の固有の用語（vertex）だが、OpenStax（6 冊）にも台帳の Wikipedia にもない（用例コーパスでは MIT OCW 6.042 と講義ノートだけ）。",
+      "raised": "2026-09-25"
+    }
+  ],
+  "evidence": {
+    "spoken": {
+      "adjacent vertices | degree of a vertex | vertices u and v | set of vertices": 2
+    },
+    "written": {
+      "adjacent vertices | degree of a vertex | vertices u and v | set of vertices": 13
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

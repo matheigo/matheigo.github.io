@@ -1,0 +1,88 @@
+{
+  "id": "quantitative-variable",
+  "ja": {
+    "term": "量的データ",
+    "reading": "りょうてきでーた",
+    "alt": [
+      "量的変数"
+    ]
+  },
+  "en": {
+    "term": "quantitative data",
+    "alt": [
+      "quantitative variable"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "数量で表され、足したり平均したりできるデータ（またはその変量）。身長、得点など。",
+  "definition_en": "Data, or a variable, recorded as numbers that can be added or averaged, such as height or a test score.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Height is quantitative, so a histogram or a box plot makes sense.",
+      "ja": "身長は量的データなので、ヒストグラムや箱ひげ図が使える。",
+      "register": "spoken"
+    },
+    {
+      "en": "Is the number of siblings quantitative discrete or quantitative continuous data?",
+      "ja": "きょうだいの人数は、離散的な量的データか連続的な量的データか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Introductory Statistics は量的データを quantitative discrete data と quantitative continuous data に分ける。"
+  ],
+  "related": [
+    "categorical-variable",
+    "histogram",
+    "discrete-random-variable",
+    "continuous-random-variable"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "quantitative variable": 2
+    },
+    "written": {
+      "quantitative data": 15
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-calculus",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

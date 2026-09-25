@@ -1,0 +1,84 @@
+{
+  "id": "p-value",
+  "ja": {
+    "term": "p 値",
+    "reading": "ぴーち",
+    "alt": []
+  },
+  "en": {
+    "term": "p-value",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "帰無仮説が正しいとしたとき、観測したデータと同じかそれ以上に極端な結果が起こる確率。",
+  "definition_en": "The probability, assuming the null hypothesis is true, of a result at least as extreme as the one observed.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A small p-value means our data would be really unusual if the null hypothesis were true.",
+      "ja": "p 値が小さいとは、帰無仮説が正しければ、このデータはとても珍しいということ。",
+      "register": "spoken"
+    },
+    {
+      "en": "The p-value is 0.03. What is your conclusion at the 5% significance level?",
+      "ja": "p 値は 0.03 である。有意水準 5% で結論を述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "p 値は「帰無仮説が正しい確率」ではない。",
+    "OpenStax Introductory Statistics は p 値と有意水準を比べて判断する（p-value 475 件）。"
+  ],
+  "related": [
+    "significance-level",
+    "test-statistic",
+    "hypothesis-testing",
+    "reject"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "p-value": 79
+    },
+    "written": {
+      "p-value": 475
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-6.042",
+      "openstax-introstats",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

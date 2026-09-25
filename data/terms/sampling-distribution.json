@@ -1,0 +1,81 @@
+{
+  "id": "sampling-distribution",
+  "ja": {
+    "term": "標本分布",
+    "reading": "ひょうほんぶんぷ",
+    "alt": []
+  },
+  "en": {
+    "term": "sampling distribution",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "同じ大きさの標本を繰り返し取ったときの、標本平均や標本比率などの統計量の分布。",
+  "definition_en": "The distribution of a statistic, such as the sample mean or the sample proportion, over all samples of the same size.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The sampling distribution shows how the statistic would vary if we took sample after sample.",
+      "ja": "標本分布は、標本を何度も取ったときに統計量がどうばらつくかを表す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Describe the sampling distribution of the sample mean for samples of size 25.",
+      "ja": "大きさ 25 の標本について、標本平均の標本分布を述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "標本のデータの分布（distribution of the sample）とは別。標本分布は統計量の分布。",
+    "用例コーパスの話し言葉 147 件はすべて Khan Academy。"
+  ],
+  "related": [
+    "sampling-distribution-of-the-mean",
+    "sampling-distribution-of-a-proportion",
+    "standard-error",
+    "central-limit-theorem"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "sampling distribution": 147
+    },
+    "written": {
+      "sampling distribution": 31
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}
