@@ -1,0 +1,76 @@
+{
+  "id": "standard-score",
+  "ja": {
+    "term": "偏差値",
+    "reading": "へんさち",
+    "alt": []
+  },
+  "en": {
+    "term": "hensachi",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "英語に決まった言い方がない（米国の学校の用語ではない）。英語で日本の制度を説明するときはローマ字の hensachi と書く。近い考え方は z-score と percentile（パーセンタイル）。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "得点を、平均 50、標準偏差 10 になるように換算した値。50 + 10z。",
+  "definition_en": "A score rescaled to have mean 50 and standard deviation 10, that is, 50 + 10z.",
+  "latex": "50 + 10z",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Your hensachi is basically your z-score times 10, plus 50.",
+      "ja": "偏差値は、だいたい z スコアを 10 倍して 50 を足したもの。",
+      "register": "spoken"
+    },
+    {
+      "en": "A student's z-score is 1.5. Find the corresponding hensachi, 50 + 10z.",
+      "ja": "ある生徒の z スコアは 1.5 である。対応する偏差値 50 + 10z を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の standard score は z スコアのことで、偏差値の訳には使えない。",
+    "教育測定で平均 50・標準偏差 10 に換算した得点を T-score と呼ぶことがあるが、統計の授業の t-score（t 検定の統計量）とは別。用例コーパスの t-score 17 件はすべて t 統計量の意味だった。"
+  ],
+  "related": [
+    "z-score",
+    "standardize"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

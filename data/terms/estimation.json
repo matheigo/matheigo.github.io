@@ -1,0 +1,88 @@
+{
+  "id": "estimation",
+  "ja": {
+    "term": "推定",
+    "reading": "すいてい",
+    "alt": [
+      "推定する"
+    ]
+  },
+  "en": {
+    "term": "estimate",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B",
+      "中3"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "標本から得たデータをもとに、母平均や母比率など母集団の値を見積もること。また、見積もった値。",
+  "definition_en": "Using sample data to find an approximate value of a population quantity such as the mean or a proportion; also the value found.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We use the sample proportion to estimate the population proportion.",
+      "ja": "標本比率を使って母比率を推定する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the sample data to estimate the population mean with 95% confidence.",
+      "ja": "標本のデータを用いて、信頼度 95% で母平均を推定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語は名詞・動詞とも estimate（推定する・推定値）で言う。名詞の estimation は、用例コーパスでは多くが微積分の「見積もり」（積分の値の評価など）の意味だった。",
+    "用例コーパスでは estimate the population ／ estimate of the population ／ estimate a population ／ estimate of a population の形で数えた。",
+    "推定の方法は、1 つの値で推定する点推定（point estimate）と、区間で推定する区間推定（interval estimate、confidence interval）に分かれる。"
+  ],
+  "related": [
+    "point-estimate",
+    "interval-estimation",
+    "confidence-interval"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "estimate the population | estimate of the population | estimate a population | estimate of a population": 21
+    },
+    "written": {
+      "estimate the population | estimate of the population | estimate a population | estimate of a population": 24
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

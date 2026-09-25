@@ -1,0 +1,76 @@
+{
+  "id": "interval-estimation",
+  "ja": {
+    "term": "区間推定",
+    "reading": "くかんすいてい",
+    "alt": []
+  },
+  "en": {
+    "term": "interval estimate",
+    "alt": [
+      "interval estimation"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「区間推定」は推定の方法の名前で、英語の interval estimate は推定した区間（信頼区間 confidence interval）を指すことが多い。用例コーパスでは interval estimate が書き言葉 12 件（すべて OpenStax Introductory Statistics）、interval estimation は 0 件。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "母数がある確からしさで含まれる区間を求めて推定すること。また、その区間。",
+  "definition_en": "Estimating a population parameter by an interval that contains it with a stated level of confidence; also the interval itself.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Instead of one number, an interval estimate gives a range of plausible values.",
+      "ja": "区間推定は 1 つの数でなく、ありそうな値の範囲を与える。",
+      "register": "spoken"
+    },
+    {
+      "en": "Construct an interval estimate for the population mean at the 90% confidence level.",
+      "ja": "信頼度 90% で母平均の区間推定をせよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "confidence-interval",
+    "point-estimate",
+    "estimation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "interval estimate": 12
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "two-tailed-test",
+  "ja": {
+    "term": "両側検定",
+    "reading": "りょうがわけんてい",
+    "alt": []
+  },
+  "en": {
+    "term": "two-tailed test",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "対立仮説が「μ ≠ μ₀」のように両方向の違いを考え、棄却域を分布の両側にとる検定。",
+  "definition_en": "A test whose alternative hypothesis allows a difference in either direction (such as μ ≠ μ₀), with the rejection region split between both tails.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "It's two-tailed, so we double the one-tail area to get the p-value.",
+      "ja": "両側検定なので、片側の面積を 2 倍して p 値にする。",
+      "register": "spoken"
+    },
+    {
+      "en": "Perform a two-tailed test at the 1% significance level.",
+      "ja": "有意水準 1% で両側検定を行え。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "形容詞で The test is two-tailed. とも言う（OpenStax Introductory Statistics、two-tailed 単独を含めると 41 件）。"
+  ],
+  "related": [
+    "one-tailed-test",
+    "hypothesis-testing",
+    "alternative-hypothesis"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "two-tailed test": 3
+    },
+    "written": {
+      "two-tailed test": 22
+    },
+    "sources": [
+      "openstax-introstats",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "reject",
+  "ja": {
+    "term": "棄却する",
+    "reading": "ききゃくする",
+    "alt": []
+  },
+  "en": {
+    "term": "reject",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "仮説検定で、データが帰無仮説のもとでは起こりにくいとして、帰無仮説を否定する。",
+  "definition_en": "In a hypothesis test, to rule out the null hypothesis because the data would be unlikely if it were true.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The p-value is less than alpha, so we reject the null hypothesis.",
+      "ja": "p 値が α より小さいので、帰無仮説を棄却する。",
+      "register": "spoken"
+    },
+    {
+      "en": "At the 1% significance level, do you reject the null hypothesis? Explain.",
+      "ja": "有意水準 1% で帰無仮説を棄却するか。説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "ふつうは reject the null hypothesis（帰無仮説を棄却する）の形で使う。",
+    "棄却しないときは fail to reject と言う。accept the null hypothesis（帰無仮説を採択する）は用例コーパスで 4 件だけ。"
+  ],
+  "related": [
+    "fail-to-reject",
+    "null-hypothesis",
+    "hypothesis-testing",
+    "significance-level"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "reject": 209
+    },
+    "written": {
+      "reject": 260
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-6.042",
+      "openstax-algtrig",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

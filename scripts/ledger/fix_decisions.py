@@ -924,6 +924,8 @@ PHASE2E_SAME = [
     ("skewness-of-a-distribution", "skewness", "into"),
     # ばらつく and 散らばり: English says both with spread (the data are spread out)
     ("vary", "spread", "into"),
+    # 推定する and 推定: English says both with estimate (noun and verb)
+    ("estimate", "estimation", "into"),
     # into entries already generated (Phase 2 統計・ベクトルの単元: fill in the new unit's sense)
     ("row-reduction", "gaussian-elimination", "into"),
     ("mean", "arithmetic-mean", "into"),  # 平均値 of data = 相加平均

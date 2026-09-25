@@ -1,0 +1,86 @@
+{
+  "id": "alternative-hypothesis",
+  "ja": {
+    "term": "対立仮説",
+    "reading": "たいりつかせつ",
+    "alt": []
+  },
+  "en": {
+    "term": "alternative hypothesis",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "仮説検定で、帰無仮説が棄却されたときに採る仮説。Hₐ や H₁ と書く。",
+  "definition_en": "In a hypothesis test, the hypothesis accepted when the null hypothesis is rejected, written Hₐ or H₁.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The alternative hypothesis is what we're actually trying to find evidence for.",
+      "ja": "対立仮説は、実際に証拠を見つけたい主張のほう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the alternative hypothesis for a right-tailed test.",
+      "ja": "右側検定の対立仮説を書け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "Hₐ は H sub a と読む。"
+  ],
+  "related": [
+    "null-hypothesis",
+    "hypothesis-testing"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "仮説検定",
+      "en": "Statistical hypothesis test"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "alternative hypothesis": 63
+    },
+    "written": {
+      "alternative hypothesis": 111
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

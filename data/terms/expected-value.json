@@ -1,0 +1,112 @@
+{
+  "id": "expected-value",
+  "ja": {
+    "term": "期待値",
+    "reading": "きたいち",
+    "alt": []
+  },
+  "en": {
+    "term": "expected value",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "expectation",
+        "register": "written",
+        "note": "話し言葉で 77 件、書き言葉で 122 件（多くは MIT の講義ノート）。書き言葉では expected value（128 件）と並ぶ。"
+      }
+    ],
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability"
+  ],
+  "level": {
+    "jp": [
+      "数A",
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math",
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "確率変数のとる値に、その値をとる確率を掛けて足し合わせた値。確率変数の平均。E(X) と書く。",
+  "definition_en": "The sum of each value of a random variable times its probability: the mean of the random variable, written E(X).",
+  "latex": "E(X) = \\sum_{i} x_i p_i",
+  "spoken_en": "the expected value of X is the sum of x i times p i",
+  "examples": [
+    {
+      "en": "The expected value is what you'd average out to if you played this game over and over.",
+      "ja": "期待値は、このゲームを何度も繰り返したときの平均になる値。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the expected value of the number of heads in three tosses of a coin.",
+      "ja": "硬貨を 3 回投げるときの表の出る回数の期待値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "compute the expected value",
+      "ja": "期待値を計算する"
+    }
+  ],
+  "pitfalls": [
+    "E(X) は E of X と読む。確率変数の平均（mean of a random variable）とも言い、μ_X とも書く。"
+  ],
+  "related": [
+    "random-variable",
+    "probability-distribution",
+    "arithmetic-mean"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "期待値",
+      "en": "Expected value"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "expectation": 77,
+      "expected value": 364,
+      "compute the expected value": 7
+    },
+    "written": {
+      "expected value": 128,
+      "expectation": 122,
+      "compute the expected value": 3
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

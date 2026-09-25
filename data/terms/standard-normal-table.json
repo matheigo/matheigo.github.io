@@ -1,0 +1,82 @@
+{
+  "id": "standard-normal-table",
+  "ja": {
+    "term": "正規分布表",
+    "reading": "せいきぶんぷひょう",
+    "alt": []
+  },
+  "en": {
+    "term": "z-table",
+    "alt": [
+      "standard normal table"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の数B の正規分布表は 0 から u までの確率 P(0 ≤ Z ≤ u) を載せる形が多い。OpenStax Introductory Statistics の表は z の左側の面積（area to the left of the z-score）を載せ、Khan Academy も使う表の種類に注意するよう言う。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "標準正規分布について、z の値とそれに対応する確率（面積）をまとめた表。",
+  "definition_en": "A table that gives, for values of z, the corresponding probabilities (areas) under the standard normal distribution.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Look up 1.96 in the z-table and you'll get about 0.975.",
+      "ja": "z-table で 1.96 を引くと、約 0.975 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the standard normal table to find the area to the left of z = −1.25.",
+      "ja": "正規分布表を使って、z = −1.25 より左の面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉 z-table 52 件はすべて Khan Academy。書き言葉は normal table 3 件、standard normal table 1 件だけで、OpenStax Introductory Statistics は確率を電卓の normalcdf で求める（54 件）。"
+  ],
+  "related": [
+    "standard-normal-distribution",
+    "z-score",
+    "normal-distribution"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "z-table": 51
+    },
+    "written": {
+      "standard normal table": 1
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "scatter-plot",
+  "ja": {
+    "term": "散布図",
+    "reading": "さんぷず",
+    "alt": []
+  },
+  "en": {
+    "term": "scatter plot",
+    "alt": [
+      "scatter diagram"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "2 つの変量の値の組を座標とする点を、座標平面上にかき込んだ図。",
+  "definition_en": "A graph that plots each pair of values of two variables as a point in the coordinate plane.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Make a scatter plot first, and see if there's any pattern.",
+      "ja": "まず散布図をかいて、何か傾向があるか見てみよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Draw a scatter plot of the data and describe the relationship between the two variables.",
+      "ja": "データの散布図をかき、2 つの変量の関係を述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "scatterplot と 1 語で書くこともある（用例コーパスでは同じ言い方として数えた）。OpenStax Introductory Statistics は scatter diagram とも書く（22 件）。"
+  ],
+  "related": [
+    "correlation",
+    "correlation-coefficient",
+    "trend"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "散布図",
+      "en": "Scatter plot"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "scatter plot": 28
+    },
+    "written": {
+      "scatter plot": 138,
+      "scatter diagram": 22
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-algtrig",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

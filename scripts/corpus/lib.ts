@@ -73,6 +73,11 @@ export const VARIANTS: [RegExp, string][] = [
   [/\bfive\s+number\s+summar/g, "five-number summar"],
   // and "box and whisker(s) plot" (captions) against "box-and-whisker plot" (OpenStax)
   [/\bbox\s+and\s+whiskers?\s+plot/g, "box-and-whisker plot"],
+  // one word or two: "scatterplot" / "scatter plot", "boxplot" / "box plot"; and
+  // "z score", "z table" (captions) against "z-score", "z-table"
+  [/\bscatterplot/g, "scatter plot"],
+  [/\bboxplot/g, "box plot"],
+  [/\bz\s+(score|table)/g, "z-$1"],
   // Leibniz notation typed with a slash in captions ("dy/dx") is said "dy dx"
   [/\bd([a-z])\/d([a-z])\b/g, "d$1 d$2"],
   // One name, three spellings: L'Hôpital (OpenStax), L'Hopital (captions), L'Hospital (older)
@@ -533,6 +538,10 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   deviation: { deviation: "!standard !absolute !quartile deviation" }, // not a standard deviation
   census: { census: "census !bureau" }, // not the U.S. Census Bureau
   "arithmetic-mean": { mean: "the mean !value" }, // the mean of data; not "I mean" or the mean value theorem
+  // batch 2
+  test: { test: "test the claim | test the hypothesis | conduct a hypothesis test | perform a hypothesis test | do a hypothesis test" }, // not a comparison test or a school test
+  "one-tailed-test": { "one-tailed test": "one-tailed test | right-tailed test | left-tailed test" }, // OpenStax names the side
+  estimation: { estimate: "estimate the population | estimate of the population | estimate a population | estimate of a population" }, // not an estimate of an integral
 };
 
 /** The wording a candidate is counted and recorded as. */

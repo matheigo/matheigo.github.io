@@ -1,0 +1,105 @@
+{
+  "id": "correlation",
+  "ja": {
+    "term": "相関",
+    "reading": "そうかん",
+    "alt": [
+      "相関関係"
+    ]
+  },
+  "en": {
+    "term": "correlation",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "2 つの変量の間で、一方が増えると他方も増える（または減る）という直線的な関係の傾向。",
+  "definition_en": "A linear tendency between two variables for one to increase (or decrease) as the other increases.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "There's a strong correlation, but that doesn't mean one causes the other.",
+      "ja": "強い相関はあるが、一方が他方の原因だということにはならない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Is there a correlation between hours studied and test score? Use the scatter plot to explain.",
+      "ja": "勉強時間とテストの得点に相関はあるか。散布図を使って説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "strong correlation",
+      "ja": "強い相関"
+    },
+    {
+      "en": "weak correlation",
+      "ja": "弱い相関"
+    }
+  ],
+  "pitfalls": [
+    "「相関がない」は there is no correlation（no linear relationship）。",
+    "相関があっても因果関係（causation）があるとは限らない。"
+  ],
+  "related": [
+    "correlation-coefficient",
+    "positive-correlation",
+    "negative-correlation",
+    "scatter-plot",
+    "causation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "相関",
+      "en": "Correlation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "correlation": 56,
+      "strong correlation": 1
+    },
+    "written": {
+      "correlation": 179,
+      "strong correlation": 3
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-18.06",
+      "mit-6.042",
+      "openstax-algtrig",
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "covariance",
+  "ja": {
+    "term": "共分散",
+    "reading": "きょうぶんさん",
+    "alt": []
+  },
+  "en": {
+    "term": "covariance",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "2 つの変量の偏差の積の平均値。正なら正の相関、負なら負の相関の傾向を表す。",
+  "definition_en": "The mean of the products of the deviations of two variables; positive for a positive association and negative for a negative one.",
+  "latex": "s_{xy} = \\frac{1}{n}\\sum_{i=1}^{n}(x_i - \\bar{x})(y_i - \\bar{y})",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The covariance is positive here because big x's tend to come with big y's.",
+      "ja": "x が大きいと y も大きい傾向があるので、ここでは共分散が正になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Compute the covariance of x and y, and then the correlation coefficient.",
+      "ja": "x と y の共分散を計算し、次に相関係数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスには 0 件（OpenStax Introductory Statistics にも Khan Academy の AP Statistics の講義にも出てこない）。"
+  ],
+  "related": [
+    "correlation-coefficient",
+    "variance",
+    "deviation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "共分散",
+      "en": "Covariance"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

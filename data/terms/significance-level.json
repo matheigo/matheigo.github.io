@@ -1,0 +1,95 @@
+{
+  "id": "significance-level",
+  "ja": {
+    "term": "有意水準",
+    "reading": "ゆういすいじゅん",
+    "alt": []
+  },
+  "en": {
+    "term": "significance level",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "level of significance",
+        "register": "written",
+        "note": "話し言葉で 2 件、書き言葉で 116 件（すべて OpenStax Introductory Statistics）。書き言葉の significance level は 108 件で、2 つが並ぶ。"
+      }
+    ],
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "仮説検定で、帰無仮説を棄却する基準にする確率 α。5% や 1% がよく使われる。",
+  "definition_en": "The probability α used as the cutoff for rejecting the null hypothesis, often 5% or 1%.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If the significance level is 0.05, we reject when the p-value is below 0.05.",
+      "ja": "有意水準が 0.05 なら、p 値が 0.05 未満のとき棄却する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Test the claim at the 5% significance level.",
+      "ja": "有意水準 5% でその主張を検定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "α は alpha と読む。有意水準は第一種の過誤（Type I error）の確率でもある。"
+  ],
+  "related": [
+    "hypothesis-testing",
+    "reject"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "有意",
+      "en": "Statistical significance"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "significance level": 85,
+      "level of significance": 2
+    },
+    "written": {
+      "level of significance": 116,
+      "significance level": 108
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "null-hypothesis",
+  "ja": {
+    "term": "帰無仮説",
+    "reading": "きむかせつ",
+    "alt": []
+  },
+  "en": {
+    "term": "null hypothesis",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数I",
+      "数B"
+    ],
+    "us": [
+      "Algebra 1",
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "仮説検定で、差がない・効果がないとして立てる仮説。H₀ と書く。",
+  "definition_en": "In a hypothesis test, the hypothesis of no difference or no effect, written H₀.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The null hypothesis is always the boring one: nothing's going on.",
+      "ja": "帰無仮説はいつも「何も起きていない」という退屈なほうだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "State the null and alternative hypotheses.",
+      "ja": "帰無仮説と対立仮説を述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "H₀ は H sub zero と読む（用例コーパスの話し言葉 22 件、すべて Professor Leonard）。"
+  ],
+  "related": [
+    "alternative-hypothesis",
+    "hypothesis-testing",
+    "reject"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "null hypothesis": 292
+    },
+    "written": {
+      "null hypothesis": 261
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

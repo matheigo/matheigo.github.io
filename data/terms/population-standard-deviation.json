@@ -1,0 +1,82 @@
+{
+  "id": "population-standard-deviation",
+  "ja": {
+    "term": "母標準偏差",
+    "reading": "ぼひょうじゅんへんさ",
+    "alt": []
+  },
+  "en": {
+    "term": "population standard deviation",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "母集団全体の標準偏差。σ と書く。",
+  "definition_en": "The standard deviation of the whole population, written σ.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "When we know the population standard deviation, we use z; when we don't, we use t.",
+      "ja": "母標準偏差がわかっていれば z を、わからなければ t を使う。",
+      "register": "spoken"
+    },
+    {
+      "en": "Assume the population standard deviation is 15. Construct a 95% confidence interval for the mean.",
+      "ja": "母標準偏差を 15 とする。平均の 95% 信頼区間を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "σ は sigma と読む。"
+  ],
+  "related": [
+    "population-variance",
+    "standard-deviation",
+    "population-mean"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "population standard deviation": 26
+    },
+    "written": {
+      "population standard deviation": 128
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "sample-space",
+  "ja": {
+    "term": "全事象",
+    "reading": "ぜんじしょう",
+    "alt": [
+      "標本空間"
+    ]
+  },
+  "en": {
+    "term": "sample space",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "Discrete Math",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "ある試行で起こりうる結果全体の集合。",
+  "definition_en": "The set of all possible outcomes of an experiment.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For two coin flips, the sample space is heads-heads, heads-tails, tails-heads, and tails-tails.",
+      "ja": "硬貨を 2 回投げるときの全事象は、表表・表裏・裏表・裏裏。",
+      "register": "spoken"
+    },
+    {
+      "en": "List the sample space for rolling two dice.",
+      "ja": "さいころを 2 つ振るときの全事象を書き出せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校では全事象を U で表す。"
+  ],
+  "related": [
+    "expected-value",
+    "tree-diagram"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "標本空間",
+      "en": "Sample space"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "sample space": 67
+    },
+    "written": {
+      "sample space": 167
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

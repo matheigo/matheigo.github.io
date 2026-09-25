@@ -1,0 +1,83 @@
+{
+  "id": "normal-approximation-to-the-binomial",
+  "ja": {
+    "term": "二項分布の正規近似",
+    "reading": "にこうぶんぷのせいききんじ",
+    "alt": []
+  },
+  "en": {
+    "term": "normal approximation to the binomial",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "n が大きいとき、二項分布 B(n, p) を平均 np、分散 np(1 − p) の正規分布で近似すること。",
+  "definition_en": "For large n, approximating the binomial distribution B(n, p) by a normal distribution with mean np and variance np(1 − p).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Since np and n times one minus p are both at least 10, the normal approximation is fine here.",
+      "ja": "np も n(1 − p) も 10 以上なので、ここでは正規近似を使ってよい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the normal approximation to the binomial to estimate the probability that at least 60 of 100 voters support the measure.",
+      "ja": "二項分布の正規近似を用いて、有権者 100 人のうち 60 人以上が賛成する確率を推定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "近似を使ってよい目安（np ≥ 10 かつ n(1 − p) ≥ 10 など）は教科書によって数が違う。",
+    "the normal approximation だけだと、t 分布などほかの分布の正規近似も指す。用例コーパスでは the normal approximation to the binomial だけを数えた。"
+  ],
+  "related": [
+    "binomial-distribution",
+    "normal-distribution",
+    "continuity-correction"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "normal approximation to the binomial": 9
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 normal approximation to the binomial（本文 9 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

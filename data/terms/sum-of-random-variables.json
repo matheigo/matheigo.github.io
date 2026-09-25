@@ -1,0 +1,91 @@
+{
+  "id": "sum-of-random-variables",
+  "ja": {
+    "term": "確率変数の和",
+    "reading": "かくりつへんすうのわ",
+    "alt": [
+      "確率変数の和と差"
+    ]
+  },
+  "en": {
+    "term": "sum of random variables",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability",
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "2 つ以上の確率変数を足した確率変数。期待値はいつも和になり、独立なときは分散も和になる。",
+  "definition_en": "A random variable formed by adding two or more random variables; its expected value is always the sum, and its variance is the sum when they are independent.",
+  "latex": "E(X + Y) = E(X) + E(Y)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Even for a difference, the variances add, as long as the variables are independent.",
+      "ja": "差であっても、変数が独立なら分散は足し算になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "X and Y are independent with SD(X) = 3 and SD(Y) = 4. Find the standard deviation of X + Y.",
+      "ja": "X と Y は独立で、SD(X) = 3, SD(Y) = 4 である。X + Y の標準偏差を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "標準偏差はそのまま足さない。分散を足してから平方根をとる。"
+  ],
+  "related": [
+    "independent-random-variables",
+    "expected-value",
+    "variance"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "sum of random variables": 4
+    },
+    "written": {
+      "sum of random variables": 8
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは OpenStax の呼び方 sum of random variables（本文 2 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

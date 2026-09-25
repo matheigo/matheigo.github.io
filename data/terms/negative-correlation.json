@@ -1,0 +1,91 @@
+{
+  "id": "negative-correlation",
+  "ja": {
+    "term": "負の相関",
+    "reading": "ふのそうかん",
+    "alt": []
+  },
+  "en": {
+    "term": "negative correlation",
+    "alt": [
+      "negative linear relationship"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "一方の変量が増えると、他方の変量は減る傾向があること。散布図の点が右下がりに並ぶ。",
+  "definition_en": "A tendency for one variable to decrease as the other increases; the points of the scatter plot fall from left to right.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The more you practice, the fewer mistakes you make, so that's a negative correlation.",
+      "ja": "練習するほどミスが減るので、これは負の相関。",
+      "register": "spoken"
+    },
+    {
+      "en": "Give an example of two variables that have a negative correlation.",
+      "ja": "負の相関がある 2 つの変量の例を挙げよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉では negative linear relationship（8 件）と negative correlation（7 件）が並ぶ。"
+  ],
+  "related": [
+    "positive-correlation",
+    "correlation",
+    "scatter-plot"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "negative linear relationship": 8,
+      "negative correlation": 7
+    },
+    "written": {
+      "negative correlation": 7,
+      "negative linear relationship": 1
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-algtrig",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満 ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは OpenStax の呼び方 negative correlation（本文 7 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

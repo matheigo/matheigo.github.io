@@ -1,0 +1,87 @@
+{
+  "id": "point-estimate",
+  "ja": {
+    "term": "点推定",
+    "reading": "てんすいてい",
+    "alt": [
+      "点推定値"
+    ]
+  },
+  "en": {
+    "term": "point estimate",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "母数を 1 つの値で推定すること。また、その値。母平均の点推定には標本平均を使う。",
+  "definition_en": "An estimate of a population parameter by a single value, or that value; the sample mean is the point estimate of the population mean.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The sample mean, 72.4, is our point estimate of the population mean.",
+      "ja": "標本平均 72.4 が母平均の点推定値。",
+      "register": "spoken"
+    },
+    {
+      "en": "Give a point estimate for the proportion of all voters who support the proposal.",
+      "ja": "提案を支持する有権者全体の割合の点推定値を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉 14 件はすべて Professor Leonard。"
+  ],
+  "related": [
+    "estimation",
+    "interval-estimation",
+    "confidence-interval"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "点推定",
+      "en": "Point estimation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "point estimate": 14
+    },
+    "written": {
+      "point estimate": 40
+    },
+    "sources": [
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

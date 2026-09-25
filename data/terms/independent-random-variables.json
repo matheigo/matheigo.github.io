@@ -1,0 +1,82 @@
+{
+  "id": "independent-random-variables",
+  "ja": {
+    "term": "独立な確率変数",
+    "reading": "どくりつなかくりつへんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "independent random variables",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability",
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "一方の確率変数の値が、他方の確率変数の値のとり方に影響しないような確率変数の組。",
+  "definition_en": "Random variables such that the value of one does not affect the probabilities of the values of the other.",
+  "latex": "P(X = a,\\ Y = b) = P(X = a)\\,P(Y = b)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "You can only add the variances like this because the two random variables are independent.",
+      "ja": "2 つの確率変数が独立だから、こうして分散を足せる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that X and Y are independent random variables.",
+      "ja": "X と Y が独立な確率変数であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの書き言葉 15 件のうち 14 件は MIT の講義ノート（離散数学）。"
+  ],
+  "related": [
+    "sum-of-random-variables",
+    "random-variable"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "independent random variables": 11
+    },
+    "written": {
+      "independent random variables": 15
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

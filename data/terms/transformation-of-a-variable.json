@@ -1,0 +1,78 @@
+{
+  "id": "transformation-of-a-variable",
+  "ja": {
+    "term": "変量の変換",
+    "reading": "へんりょうのへんかん",
+    "alt": [
+      "データの変換"
+    ]
+  },
+  "en": {
+    "term": "transforming data",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで transforming data ／ transformation of data は 0 件）。「すべての値に定数を足す（add a constant）・掛ける（multiply by a constant）と平均値・標準偏差がどう変わるか」と操作で説明する。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "変量 x の各値を u = (x − a)/c のような式で別の変量に置き換えること。平均値や分散がどう変わるかを調べる。",
+  "definition_en": "Replacing each value of a variable x by a new value such as u = (x − a)/c, and seeing how the mean and variance change.",
+  "latex": "u = \\frac{x - a}{c}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If you add 10 to every score, the mean goes up by 10 but the spread stays the same.",
+      "ja": "全員の得点に 10 を足すと、平均値は 10 上がるが散らばりは変わらない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let u = (x − 50)/10. Find the mean and variance of x from those of u.",
+      "ja": "u = (x − 50)/10 とする。u の平均値と分散から x の平均値と分散を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "定数を足すと平均値だけが変わり（shift）、定数を掛けると平均値も標準偏差も変わる（scale）。"
+  ],
+  "related": [
+    "arithmetic-mean",
+    "variance",
+    "standard-deviation"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

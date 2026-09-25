@@ -48,11 +48,15 @@
   "collocations": [],
   "pitfalls": [
     "関数そのものは probability density function（pdf）、その値は probability density と言う。density function と略すことも多い。",
-    "日本の数Bでは正規分布表で確率を求めることが多い。米国の微積分の教科書には、積分の応用として P(a ≤ X ≤ b) = ∫ₐᵇ f(x)dx や平均 ∫ x f(x) dx を扱う節を置くものがある（教科書による）。"
+    "日本の数Bでは正規分布表で確率を求めることが多い。米国の微積分の教科書には、積分の応用として P(a ≤ X ≤ b) = ∫ₐᵇ f(x)dx や平均 ∫ x f(x) dx を扱う節を置くものがある（教科書による）。",
+    "OpenStax Introductory Statistics は離散型の確率分布を probability distribution function（PDF）とも呼ぶ。略称が同じなので、PDF が連続型の確率密度関数か離散型の確率分布かを文脈で見分ける。"
   ],
   "related": [
     "definite-integral",
-    "improper-integral"
+    "improper-integral",
+    "continuous-random-variable",
+    "normal-distribution",
+    "probability-distribution"
   ],
   "sources": [
     {
@@ -71,7 +75,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "probability density function": 15

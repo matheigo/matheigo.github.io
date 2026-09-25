@@ -1,0 +1,80 @@
+{
+  "id": "one-tailed-test",
+  "ja": {
+    "term": "片側検定",
+    "reading": "かたがわけんてい",
+    "alt": []
+  },
+  "en": {
+    "term": "one-tailed test",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "OpenStax Introductory Statistics は片側検定をまとめて呼ぶより、右側（right-tailed test）・左側（left-tailed test）と分けて呼ぶことが多い（right-tailed 38 件・left-tailed 26 件に対し one-tailed 4 件）。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "対立仮説が「μ > μ₀」や「μ < μ₀」のように一方向の違いだけを考え、棄却域を分布の片側にとる検定。",
+  "definition_en": "A test whose alternative hypothesis allows a difference in one direction only (such as μ > μ₀), with the rejection region in one tail.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Since the claim is that the mean increased, this is a right-tailed test.",
+      "ja": "平均が増えたという主張なので、これは右側検定。",
+      "register": "spoken"
+    },
+    {
+      "en": "State the hypotheses for a left-tailed test of the claim that μ < 30.",
+      "ja": "μ < 30 という主張の左側検定の仮説を述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは one-tailed test ／ right-tailed test ／ left-tailed test をまとめて数えた。"
+  ],
+  "related": [
+    "two-tailed-test",
+    "hypothesis-testing",
+    "alternative-hypothesis"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "one-tailed test | right-tailed test | left-tailed test": 8
+    },
+    "written": {
+      "one-tailed test | right-tailed test | left-tailed test": 16
+    },
+    "sources": [
+      "openstax-introstats",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

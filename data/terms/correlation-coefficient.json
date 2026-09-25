@@ -1,0 +1,86 @@
+{
+  "id": "correlation-coefficient",
+  "ja": {
+    "term": "相関係数",
+    "reading": "そうかんけいすう",
+    "alt": []
+  },
+  "en": {
+    "term": "correlation coefficient",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "2 つの変量の直線的な相関の強さと向きを表す −1 から 1 までの値 r。共分散を 2 つの標準偏差の積で割って求める。",
+  "definition_en": "A number r from −1 to 1 measuring the strength and direction of the linear relationship between two variables: the covariance divided by the product of the two standard deviations.",
+  "latex": "r = \\frac{s_{xy}}{s_x s_y}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "An r of negative 0.9 is a strong negative correlation, and r close to zero means almost no linear relationship.",
+      "ja": "r が −0.9 なら強い負の相関、r が 0 に近ければ直線的な関係はほとんどない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the correlation coefficient r and interpret it in context.",
+      "ja": "相関係数 r を求め、問題の文脈で解釈せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "記号で r とも呼ぶ（r is close to 1）。決定係数 r²（coefficient of determination）とは別。"
+  ],
+  "related": [
+    "correlation",
+    "covariance",
+    "scatter-plot"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "相関係数",
+      "en": "Correlation coefficient"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "correlation coefficient": 11
+    },
+    "written": {
+      "correlation coefficient": 113
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-algtrig",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

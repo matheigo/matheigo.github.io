@@ -1,0 +1,86 @@
+{
+  "id": "confidence-level",
+  "ja": {
+    "term": "信頼度",
+    "reading": "しんらいど",
+    "alt": []
+  },
+  "en": {
+    "term": "confidence level",
+    "alt": [
+      "level of confidence"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "信頼区間を作る方法が、母数を含む区間を与える割合。95% や 99% がよく使われる。",
+  "definition_en": "The proportion of intervals made by the method that contain the population parameter, often 95% or 99%.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If you raise the confidence level, the interval gets wider.",
+      "ja": "信頼度を上げると、区間は広くなる。",
+      "register": "spoken"
+    },
+    {
+      "en": "What happens to the margin of error if the confidence level is increased from 95% to 99%?",
+      "ja": "信頼度を 95% から 99% に上げると、誤差の範囲はどうなるか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書では「信頼度 95%」と言い、英語では 95% confidence level または at the 95% level と言う。"
+  ],
+  "related": [
+    "confidence-interval",
+    "significance-level"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "confidence level": 66,
+      "level of confidence": 8
+    },
+    "written": {
+      "confidence level": 74,
+      "level of confidence": 17
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-notes",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

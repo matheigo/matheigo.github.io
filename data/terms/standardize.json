@@ -1,0 +1,79 @@
+{
+  "id": "standardize",
+  "ja": {
+    "term": "標準化する",
+    "reading": "ひょうじゅんかする",
+    "alt": [
+      "標準化"
+    ]
+  },
+  "en": {
+    "term": "standardize",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "日本語は名詞「標準化」と動詞「標準化する」の両方を使うが、英語の授業ではおもに動詞 standardize で言う（名詞 standardization は用例コーパスの話し言葉 5 件、すべて Professor Leonard）。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "確率変数やデータの値 x を、平均を引いて標準偏差で割り、z = (x − μ)/σ に直す。",
+  "definition_en": "To convert a value x of a random variable or of data to z = (x − μ)/σ by subtracting the mean and dividing by the standard deviation.",
+  "latex": "z = \\frac{x - \\mu}{\\sigma}",
+  "spoken_en": "z equals x minus mu over sigma",
+  "examples": [
+    {
+      "en": "Standardize first, then look the z-score up in the table.",
+      "ja": "まず標準化して、z スコアを表で引く。",
+      "register": "spoken"
+    },
+    {
+      "en": "Standardize X = 68 if X ~ N(60, 4).",
+      "ja": "X ~ N(60, 4) のとき X = 68 を標準化せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "standardized test（統一テスト）の standardized は別の意味。用例コーパスの standardize の中にも混ざる。"
+  ],
+  "related": [
+    "z-score",
+    "standard-normal-distribution",
+    "normal-distribution"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "standardize": 11
+    },
+    "sources": [
+      "openstax-calculus",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

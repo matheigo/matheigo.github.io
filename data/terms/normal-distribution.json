@@ -1,0 +1,113 @@
+{
+  "id": "normal-distribution",
+  "ja": {
+    "term": "正規分布",
+    "reading": "せいきぶんぷ",
+    "alt": []
+  },
+  "en": {
+    "term": "normal distribution",
+    "alt": [
+      "normal curve",
+      "bell curve"
+    ],
+    "uk": null,
+    "variants": [
+      {
+        "term": "normally distributed",
+        "register": "written",
+        "note": "形容詞の言い方（X is normally distributed）。話し言葉で 32 件、書き言葉で 87 件。"
+      }
+    ],
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability",
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "平均 μ を中心に左右対称な釣り鐘形の確率密度関数をもつ連続型の確率分布。N(μ, σ²) と書く。",
+  "definition_en": "A continuous probability distribution with a symmetric, bell-shaped density centered at the mean μ; written N(μ, σ²).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Heights are roughly normally distributed, so we can use the 68-95-99.7 rule.",
+      "ja": "身長はほぼ正規分布に従うので、68–95–99.7 の法則が使える。",
+      "register": "spoken"
+    },
+    {
+      "en": "X follows a normal distribution with mean 50 and standard deviation 10. Find P(X > 65).",
+      "ja": "X は平均 50、標準偏差 10 の正規分布に従う。P(X > 65) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書は N(μ, σ²) と分散を書くが、OpenStax Introductory Statistics は X ~ N(μ, σ) と標準偏差を書く（51 件）。記号を見たら 2 つ目が分散か標準偏差かを確かめる。",
+    "「正規分布に従う」は follows a normal distribution か is normally distributed。",
+    "平均から ±1σ・±2σ・±3σ の範囲に約 68%・95%・99.7% が入ることを empirical rule（68-95-99.7 rule）と言う（用例コーパス 22 件）。"
+  ],
+  "related": [
+    "standard-normal-distribution",
+    "z-score",
+    "standard-normal-table",
+    "central-limit-theorem"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "正規分布",
+      "en": "Normal distribution"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "normal distribution": 174,
+      "bell curve": 52,
+      "normal curve": 7,
+      "normally distributed": 32
+    },
+    "written": {
+      "normal distribution": 248,
+      "normally distributed": 87,
+      "bell curve": 2,
+      "normal curve": 10
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

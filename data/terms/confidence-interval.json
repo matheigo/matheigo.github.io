@@ -1,0 +1,94 @@
+{
+  "id": "confidence-interval",
+  "ja": {
+    "term": "信頼区間",
+    "reading": "しんらいくかん",
+    "alt": []
+  },
+  "en": {
+    "term": "confidence interval",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "区間推定で、母数を指定した信頼度で含むように求めた区間。",
+  "definition_en": "In interval estimation, an interval computed so that it contains the population parameter with a stated level of confidence.",
+  "latex": "\\bar{x} \\pm z^{*}\\frac{\\sigma}{\\sqrt{n}}",
+  "spoken_en": "x bar plus or minus z star times sigma over the square root of n",
+  "examples": [
+    {
+      "en": "We're 95% confident the true mean is somewhere in this confidence interval.",
+      "ja": "真の平均がこの信頼区間のどこかにあると 95% の信頼度で言える。",
+      "register": "spoken"
+    },
+    {
+      "en": "Construct a 95% confidence interval for the population mean and interpret it.",
+      "ja": "母平均の 95% 信頼区間を求め、解釈せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "construct a confidence interval",
+      "ja": "信頼区間を求める"
+    }
+  ],
+  "pitfalls": [
+    "「95% の確率で母平均がこの区間に入る」とは言わない。区間を作る方法の 95% が母平均を含む、という意味で 95% confident と言う。",
+    "z* は z star と読む（用例コーパスの話し言葉 14 件、すべて Khan Academy）。"
+  ],
+  "related": [
+    "confidence-level",
+    "interval-estimation",
+    "point-estimate"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "信頼区間",
+      "en": "Confidence interval"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "confidence interval": 127,
+      "construct a confidence interval": 13
+    },
+    "written": {
+      "confidence interval": 377,
+      "construct a confidence interval": 4
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

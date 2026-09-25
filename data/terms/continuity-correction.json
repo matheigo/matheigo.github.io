@@ -1,0 +1,81 @@
+{
+  "id": "continuity-correction",
+  "ja": {
+    "term": "連続修正",
+    "reading": "れんぞくしゅうせい",
+    "alt": [
+      "半整数補正"
+    ]
+  },
+  "en": {
+    "term": "continuity correction",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "離散型の分布を連続型の正規分布で近似するとき、整数値 k を区間 k − 0.5 から k + 0.5 に置き換える補正。",
+  "definition_en": "When a discrete distribution is approximated by the continuous normal distribution, replacing an integer value k by the interval from k − 0.5 to k + 0.5.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "With the continuity correction, P of X at least 60 becomes P of Y greater than 59.5.",
+      "ja": "連続修正をすると、P(X ≥ 60) は P(Y > 59.5) になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the normal approximation with a continuity correction to find P(X ≤ 45).",
+      "ja": "連続修正をした正規近似で P(X ≤ 45) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "normal-approximation-to-the-binomial",
+    "binomial-distribution"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "continuity correction": 2
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは OpenStax の呼び方 continuity correction（本文 2 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "rejection-region",
+  "ja": {
+    "term": "棄却域",
+    "reading": "ききゃくいき",
+    "alt": []
+  },
+  "en": {
+    "term": "rejection region",
+    "alt": [
+      "critical region"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "仮説検定で、検定統計量がそこに入ったら帰無仮説を棄却する値の範囲。",
+  "definition_en": "In a hypothesis test, the set of values of the test statistic for which the null hypothesis is rejected.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Our z of 2.4 falls in the rejection region, so we reject the null.",
+      "ja": "z = 2.4 は棄却域に入るので、帰無仮説を棄却する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the rejection region for a two-tailed test at the 5% significance level.",
+      "ja": "有意水準 5% の両側検定の棄却域を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは rejection region が話し言葉 6 件（The Organic Chemistry Tutor 4 ほか）だけで、OpenStax Introductory Statistics には出てこない。OpenStax と Khan Academy は p 値と有意水準を比べる方法で判断する。"
+  ],
+  "related": [
+    "hypothesis-testing",
+    "significance-level"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "rejection region": 6
+    },
+    "sources": [
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 6 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

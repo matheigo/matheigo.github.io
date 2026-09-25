@@ -1,0 +1,82 @@
+{
+  "id": "sampling-distribution-of-the-mean",
+  "ja": {
+    "term": "標本平均の分布",
+    "reading": "ひょうほんへいきんのぶんぷ",
+    "alt": []
+  },
+  "en": {
+    "term": "sampling distribution of the sample mean",
+    "alt": [
+      "sampling distribution of the mean"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "同じ大きさ n の標本を繰り返し取ったときの標本平均 x̄ の分布。平均は母平均 μ、標準偏差は σ/√n。",
+  "definition_en": "The distribution of the sample mean x̄ over all samples of size n; its mean is the population mean μ and its standard deviation is σ/√n.",
+  "latex": "\\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{n}}",
+  "spoken_en": "sigma sub x bar equals sigma over the square root of n",
+  "examples": [
+    {
+      "en": "The sampling distribution of the sample mean gets narrower as n gets bigger.",
+      "ja": "標本平均の分布は、n が大きくなるほど幅が狭くなる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Describe the shape, center, and spread of the sampling distribution of the mean for samples of size 36.",
+      "ja": "大きさ 36 の標本について、標本平均の分布の形・中心・散らばりを述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉 38 件はすべて Khan Academy。書き言葉は of the sample mean と of the mean が 7 件ずつ。"
+  ],
+  "related": [
+    "sample-mean",
+    "central-limit-theorem"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "sampling distribution of the sample mean": 38
+    },
+    "written": {
+      "sampling distribution of the mean": 7,
+      "sampling distribution of the sample mean": 7
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

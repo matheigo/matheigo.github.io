@@ -1,0 +1,80 @@
+{
+  "id": "linear-transformation-of-a-random-variable",
+  "ja": {
+    "term": "確率変数の変換",
+    "reading": "かくりつへんすうのへんかん",
+    "alt": []
+  },
+  "en": {
+    "term": "linear transformation of a random variable",
+    "alt": [
+      "transforming random variables"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability",
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "確率変数 X を Y = aX + b の形の確率変数に直すこと。E(Y) = aE(X) + b、V(Y) = a²V(X) となる。",
+  "definition_en": "Turning a random variable X into Y = aX + b; then E(Y) = aE(X) + b and Var(Y) = a²Var(X).",
+  "latex": "E(aX+b) = aE(X)+b,\\quad V(aX+b) = a^2V(X)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Adding a constant shifts the mean but doesn't change the standard deviation.",
+      "ja": "定数を足すと平均はずれるが、標準偏差は変わらない。",
+      "register": "spoken"
+    },
+    {
+      "en": "If Y = 3X − 2 and E(X) = 5, Var(X) = 4, find E(Y) and Var(Y).",
+      "ja": "Y = 3X − 2 で E(X) = 5, Var(X) = 4 のとき、E(Y) と Var(Y) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "分散の記号は日本の教科書が V(X)。英語の授業では the variance of X と言葉で言うことが多い（用例コーパスの話し言葉 18 件、すべて Khan Academy）。",
+    "用例コーパスではどの言い方も 0 件（Khan Academy に scale a random variable が 3 件）。"
+  ],
+  "related": [
+    "random-variable",
+    "expected-value",
+    "transformation-of-a-variable"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

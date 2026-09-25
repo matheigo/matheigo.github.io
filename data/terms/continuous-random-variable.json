@@ -1,0 +1,81 @@
+{
+  "id": "continuous-random-variable",
+  "ja": {
+    "term": "連続型確率変数",
+    "reading": "れんぞくがたかくりつへんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "continuous random variable",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability",
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "ある区間のすべての実数値をとりうる確率変数。確率は確率密度関数の面積で表す。",
+  "definition_en": "A random variable that can take any real value in an interval; probabilities are areas under its probability density function.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For a continuous random variable, the probability of hitting exactly one value is zero.",
+      "ja": "連続型確率変数では、ちょうど 1 つの値をとる確率は 0。",
+      "register": "spoken"
+    },
+    {
+      "en": "The waiting time X is a continuous random variable. Find P(2 < X < 5).",
+      "ja": "待ち時間 X は連続型確率変数である。P(2 < X < 5) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "discrete-random-variable",
+    "probability-density-function",
+    "random-variable"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "continuous random variable": 2
+    },
+    "written": {
+      "continuous random variable": 33
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-6.042",
+      "openstax-calculus",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

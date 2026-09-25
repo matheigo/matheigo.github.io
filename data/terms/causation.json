@@ -1,0 +1,88 @@
+{
+  "id": "causation",
+  "ja": {
+    "term": "因果関係",
+    "reading": "いんがかんけい",
+    "alt": []
+  },
+  "en": {
+    "term": "causation",
+    "alt": [
+      "cause and effect"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "一方の変量の変化が、他方の変量の変化の原因になっている関係。",
+  "definition_en": "A relationship in which a change in one variable produces a change in the other.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Correlation doesn't prove causation; there might be a lurking variable.",
+      "ja": "相関は因果関係の証明にならない。隠れた変数があるかもしれない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Does the study show causation? Explain your reasoning.",
+      "ja": "この研究は因果関係を示しているか。理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "因果関係を示すには、観察研究（observational study）ではなく、無作為に処理を割り当てた実験（experiment）が要る。"
+  ],
+  "related": [
+    "correlation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "cause and effect": 1
+    },
+    "written": {
+      "causation": 1,
+      "cause and effect": 1
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-notes",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは OpenStax の呼び方 causation（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

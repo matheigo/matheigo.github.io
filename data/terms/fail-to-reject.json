@@ -1,0 +1,91 @@
+{
+  "id": "fail-to-reject",
+  "ja": {
+    "term": "棄却されない",
+    "reading": "ききゃくされない",
+    "alt": []
+  },
+  "en": {
+    "term": "fail to reject",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "do not reject",
+        "register": "written",
+        "note": "話し言葉で 2 件、書き言葉で 62 件（すべて OpenStax Introductory Statistics）。"
+      }
+    ],
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "日本の教科書は「棄却されない」「棄却できない」と受け身・可能で書くが、英語は主語を we にして fail to reject（話し言葉）／ do not reject（書き言葉）と言う。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "仮説検定で、データが帰無仮説を否定するのに十分でなく、帰無仮説を棄却しないこと。",
+  "definition_en": "In a hypothesis test, not rejecting the null hypothesis because the data do not give enough evidence against it.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The p-value is 0.2, which is bigger than alpha, so we fail to reject the null.",
+      "ja": "p 値は 0.2 で α より大きいので、帰無仮説は棄却されない。",
+      "register": "spoken"
+    },
+    {
+      "en": "At the 5% level, do not reject H₀; there is not sufficient evidence to conclude that the mean has changed.",
+      "ja": "有意水準 5% で H₀ は棄却されない。平均が変わったと結論する十分な証拠はない。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "帰無仮説が正しいと証明されたわけではないので、accept the null hypothesis とは言わない（用例コーパスで accept the null は 4 件）。"
+  ],
+  "related": [
+    "reject",
+    "null-hypothesis",
+    "hypothesis-testing"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "fail to reject": 41,
+      "do not reject": 2
+    },
+    "written": {
+      "do not reject": 62,
+      "fail to reject": 4
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}
