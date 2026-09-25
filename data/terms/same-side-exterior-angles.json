@@ -1,0 +1,80 @@
+{
+  "id": "same-side-exterior-angles",
+  "ja": {
+    "term": "同側外角",
+    "reading": "どうそくがいかく",
+    "alt": []
+  },
+  "en": {
+    "term": "same-side exterior angles",
+    "alt": [
+      "consecutive exterior angles"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「同側外角」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書には名前がない。平行線なら和が 180°。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "2 直線に 1 本の直線が交わってできる角のうち、2 直線の外側にあり、交わる直線に対して同じ側にある 2 つの角。2 直線が平行なら和は 180° になる。",
+  "definition_en": "A pair of angles formed when a transversal crosses two lines, lying outside the two lines and on the same side of the transversal. If the two lines are parallel, the angles are supplementary.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "These are same-side exterior angles, so if the lines are parallel, they're not equal — they add up to 180.",
+      "ja": "これは同側外角だから、2 直線が平行なら等しくなるんじゃなくて、足して 180° になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Lines a and b are parallel and are cut by a transversal. Two same-side exterior angles measure (2x + 14)° and (3x − 9)°. Find x.",
+      "ja": "直線 a, b は平行で、1 本の直線がこれらと交わっている。同側外角の 2 つの角の大きさが (2x + 14)° と (3x − 9)° のとき、x の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "錯角や同位角と違い、平行線の同側外角は等しくならず、補角（和が 180°）になる。",
+    "内側の組は same-side interior angles（consecutive interior angles）と呼び、平行線なら同じく和が 180°。same-side と consecutive のどちらを使うかは教科書による。",
+    "用例コーパスでも IM でも same-side exterior angles は 0 件。"
+  ],
+  "related": [
+    "transversal",
+    "alternate-exterior-angles",
+    "supplementary-angle",
+    "parallel-lines"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

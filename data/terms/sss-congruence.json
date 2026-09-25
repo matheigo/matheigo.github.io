@@ -1,0 +1,99 @@
+{
+  "id": "sss-congruence",
+  "ja": {
+    "term": "3 組の辺がそれぞれ等しい",
+    "reading": "さんくみのへんがそれぞれひとしい",
+    "alt": [
+      "三辺相等",
+      "SSS"
+    ]
+  },
+  "en": {
+    "term": "side-side-side",
+    "alt": [
+      "SSS"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "三角形の合同条件の 1 つ。2 つの三角形で 3 組の辺がそれぞれ等しければ、その 2 つの三角形は合同である。",
+  "definition_en": "A triangle congruence criterion: if the three sides of one triangle are congruent to the three sides of another, the two triangles are congruent.",
+  "latex": "AB = DE,\\ BC = EF,\\ CA = FD \\Rightarrow \\triangle ABC \\cong \\triangle DEF",
+  "spoken_en": "if AB equals DE, BC equals EF, and CA equals FD, then triangle ABC is congruent to triangle DEF",
+  "examples": [
+    {
+      "en": "All three pairs of sides match up, so the triangles are congruent by SSS.",
+      "ja": "3 組の辺がそれぞれ等しいから、この 2 つの三角形は合同。",
+      "register": "spoken"
+    },
+    {
+      "en": "In quadrilateral ABCD, AB = CB and AD = CD. Prove that △ABD ≅ △CBD.",
+      "ja": "四角形 ABCD で AB = CB、AD = CD である。△ABD ≡ △CBD を証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の Geometry の答案では、理由を by SSS のように略号で書く。日本の答案は「3 組の辺がそれぞれ等しいから」と文で書く。",
+    "相似条件の SSS similarity（3 組の辺の比がすべて等しい）とは別。略号だけでは区別できないので、congruence か similarity かを添える。",
+    "用例コーパスでは by SSS などの形が話し言葉 1 件（The Organic Chemistry Tutor）、side-side-side が書き言葉 1 件（OpenStax Algebra and Trigonometry）。IM は side-side-side が 17 件で、見出しはこれによる。"
+  ],
+  "related": [
+    "sas-congruence",
+    "asa-congruence",
+    "aas-congruence",
+    "hl-congruence",
+    "congruent",
+    "cpctc",
+    "conditions-that-determine-a-triangle"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "2.9 Side-Side-Side Triangle Congruence ほか（17 件）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "by SSS | SSS congruence | SSS postulate | SSS criterion | SSS theorem | SSS triangle congruence": 1
+    },
+    "written": {
+      "side-side-side": 1
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは IM の呼び方 side-side-side（Geometry 2.9 Side-Side-Side Triangle Congruence・Geometry 2.10 Practicing Proofs・Geometry 3.10 Other Conditions for Triangle Similarity・計 17 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

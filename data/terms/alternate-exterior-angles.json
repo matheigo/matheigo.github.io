@@ -1,0 +1,83 @@
+{
+  "id": "alternate-exterior-angles",
+  "ja": {
+    "term": "外錯角",
+    "reading": "がいさっかく",
+    "alt": []
+  },
+  "en": {
+    "term": "alternate exterior angles",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「外錯角」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書は錯角（内側）だけを扱い、外側の組に名前を付けない。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "2 直線に 1 本の直線が交わってできる角のうち、2 直線の外側にあり、交わる直線をはさんで反対側にある 2 つの角。2 直線が平行なら等しい。",
+  "definition_en": "A pair of angles formed when a transversal crosses two lines, lying outside the two lines and on opposite sides of the transversal. If the two lines are parallel, the angles are congruent.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Angles 1 and 8 are alternate exterior angles. They're both outside the parallel lines and on opposite sides of the transversal, so they're equal.",
+      "ja": "∠1 と ∠8 は外錯角。どちらも平行線の外側にあって、横断線をはさんで反対側だから等しい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Two parallel lines are cut by a transversal. A pair of alternate exterior angles measure (4x + 7)° and (6x − 25)°. Find x and the measure of each angle.",
+      "ja": "平行な 2 直線に 1 本の直線が交わっている。外錯角の組の大きさが (4x + 7)° と (6x − 25)° のとき、x の値とそれぞれの角の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "外錯角が等しいことは、対頂角が等しいことと、錯角（または同位角）が等しいことから導ける。",
+    "逆の「外錯角が等しければ 2 直線は平行」は converse of the alternate exterior angles theorem と呼ぶ。",
+    "用例コーパスで alternate exterior angles は話し言葉 9 件（すべて The Organic Chemistry Tutor）、書き言葉 0 件。IM では 0 件。"
+  ],
+  "related": [
+    "transversal",
+    "alternate-interior-angles-theorem",
+    "same-side-exterior-angles",
+    "parallel-lines"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "alternate exterior angles": 9
+    },
+    "sources": [
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

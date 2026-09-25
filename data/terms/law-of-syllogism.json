@@ -1,0 +1,80 @@
+{
+  "id": "law-of-syllogism",
+  "ja": {
+    "term": "三段論法",
+    "reading": "さんだんろんぽう",
+    "alt": []
+  },
+  "en": {
+    "term": "law of syllogism",
+    "alt": [
+      "hypothetical syllogism"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "proof",
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "「p ならば q」と「q ならば r」がともに真のとき、「p ならば r」も真であると結論する推論の規則。",
+  "definition_en": "The rule of inference that if p → q and q → r are both true, then p → r is also true.",
+  "latex": "(p \\Rightarrow q) \\land (q \\Rightarrow r) \\implies (p \\Rightarrow r)",
+  "spoken_en": "if p implies q and q implies r, then p implies r",
+  "examples": [
+    {
+      "en": "If it rains, the game is canceled, and if the game is canceled, we have practice. So by the law of syllogism, if it rains, we have practice.",
+      "ja": "雨なら試合は中止、試合が中止なら練習がある。だから三段論法で、雨なら練習がある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the law of syllogism to write a conclusion from the two statements: If x > 5, then x > 3. If x > 3, then x > 1.",
+      "ja": "次の 2 つの命題から、三段論法を使って結論を書け。x > 5 ならば x > 3。x > 3 ならば x > 1。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数学で言う三段論法（p ⇒ q、q ⇒ r なら p ⇒ r）は、英語では law of syllogism（論理学では hypothetical syllogism）。",
+    "日本語版 Wikipedia の「三段論法」に対応する英語版の記事 Syllogism は、アリストテレスの定言三段論法（categorical syllogism）の記事で、この規則ではない。",
+    "用例コーパス・IM・Levin とも law of syllogism は 0 件。"
+  ],
+  "related": [
+    "law-of-detachment",
+    "conditional-statement",
+    "deductive-reasoning"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

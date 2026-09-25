@@ -1,0 +1,82 @@
+{
+  "id": "linear-pair",
+  "ja": {
+    "term": "一直線をなす角",
+    "reading": "いっちょくせんをなすかく",
+    "alt": []
+  },
+  "en": {
+    "term": "linear pair",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「一直線をなす角」は日本の教科書に無い、本プロジェクトの訳語。日本では「隣り合う 2 つの角の和が 180°」を性質として扱い、2 角の組に名前を付けない。 英語に決まった言い方がない（用例コーパスでは候補の合計が話し言葉 7 件・書き言葉 0 件）。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "1 辺を共有し、残りの 2 辺が一直線になる 2 つの角の組。2 つの角の和は 180° になる。",
+  "definition_en": "A pair of adjacent angles whose non-shared sides form a straight line. The two angles always add up to 180°.",
+  "latex": "m\\angle 1 + m\\angle 2 = 180^\\circ",
+  "spoken_en": "the measure of angle one plus the measure of angle two equals one hundred eighty degrees",
+  "examples": [
+    {
+      "en": "These two angles form a linear pair, so they have to add up to 180.",
+      "ja": "この 2 つの角は一直線をなす角だから、和は 180° になるはず。",
+      "register": "spoken"
+    },
+    {
+      "en": "∠1 and ∠2 form a linear pair. If m∠1 = (3x + 10)° and m∠2 = (2x + 20)°, find x.",
+      "ja": "∠1 と ∠2 は一直線をなす角である。∠1 = (3x + 10)°, ∠2 = (2x + 20)° のとき、x を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "linear pair の 2 角は必ず補角（supplementary angles）どうしだが、補角どうしでも隣り合って一直線をなしていなければ linear pair ではない。",
+    "用例コーパスで linear pair は話し言葉 7 件（すべて The Organic Chemistry Tutor）、書き言葉 0 件。IM にも出てこない。"
+  ],
+  "related": [
+    "adjacent-angles",
+    "supplementary-angle",
+    "straight-angle",
+    "angle"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "linear pair": 7
+    },
+    "sources": [
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 7 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

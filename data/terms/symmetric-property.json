@@ -1,0 +1,79 @@
+{
+  "id": "symmetric-property",
+  "ja": {
+    "term": "対称律",
+    "reading": "たいしょうりつ",
+    "alt": []
+  },
+  "en": {
+    "term": "symmetric property",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "proof",
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "a = b ならば b = a となる性質。合同についても、AB ≅ CD ならば CD ≅ AB が成り立つ。",
+  "definition_en": "The property that if a = b, then b = a. The same holds for congruence: if AB ≅ CD, then CD ≅ AB.",
+  "latex": "a = b \\implies b = a",
+  "spoken_en": "if a equals b, then b equals a",
+  "examples": [
+    {
+      "en": "We ended up with 5 equals x, and by the symmetric property we can flip it around to x equals 5.",
+      "ja": "5 = x になったので、対称律で左右を入れ替えて x = 5 と書ける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Name the property that justifies rewriting 12 = 3x as 3x = 12.",
+      "ja": "12 = 3x を 3x = 12 と書き直してよい根拠となる性質の名前を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "symmetric だけだと、図形やグラフの対称（エントリ symmetric）の意味になる。性質の名前は symmetric property と property まで言う。",
+    "対称式（symmetric expression）とも別のもの。",
+    "用例コーパス・IM とも symmetric property は 0 件。"
+  ],
+  "related": [
+    "transitive-property",
+    "reflexive-property",
+    "symmetric",
+    "symmetric-expression"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

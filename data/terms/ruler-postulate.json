@@ -1,0 +1,78 @@
+{
+  "id": "ruler-postulate",
+  "ja": {
+    "term": "数直線上の距離",
+    "reading": "すうちょくせんじょうのきょり",
+    "alt": []
+  },
+  "en": {
+    "term": "ruler postulate",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「数直線上の距離」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書は 2 点間の距離を数直線上の座標の差の絶対値として扱い、公準として名前を付けない。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "直線上の点と実数（座標）を 1 対 1 に対応させることができ、2 点間の距離はその座標の差の絶対値になる、という公準。",
+  "definition_en": "The postulate that the points on a line can be paired one-to-one with the real numbers, so that the distance between two points is the absolute value of the difference of their coordinates.",
+  "latex": "AB = |b - a|",
+  "spoken_en": "AB equals the absolute value of b minus a",
+  "examples": [
+    {
+      "en": "By the ruler postulate, if A is at negative 3 and B is at 5, then AB is the absolute value of 5 minus negative 3, which is 8.",
+      "ja": "数直線上の距離の考え方で、A が −3、B が 5 にあるなら、AB は |5 − (−3)| で 8 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Points A and B on a number line have coordinates −4 and 7. Use the ruler postulate to find AB.",
+      "ja": "数直線上の 2 点 A, B の座標はそれぞれ −4, 7 である。AB を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語名の ruler は目盛りの付いた定規のこと。直線に定規を当てて目盛りを読むことを公準にしたもの。",
+    "線分の長さの和 AB + BC = AC は別の公準（segment addition postulate）。",
+    "用例コーパス・IM とも ruler postulate は 0 件。"
+  ],
+  "related": [
+    "segment-addition-postulate",
+    "postulate",
+    "number-line",
+    "distance"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

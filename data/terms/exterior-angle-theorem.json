@@ -1,0 +1,82 @@
+{
+  "id": "exterior-angle-theorem",
+  "ja": {
+    "term": "外角定理",
+    "reading": "がいかくていり",
+    "alt": [
+      "三角形の外角の性質"
+    ]
+  },
+  "en": {
+    "term": "exterior angle theorem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "三角形の 1 つの外角は、それと隣り合わない 2 つの内角の和に等しい、という定理。",
+  "definition_en": "The theorem that an exterior angle of a triangle equals the sum of the two interior angles that are not adjacent to it.",
+  "latex": "m\\angle ACD = m\\angle A + m\\angle B",
+  "spoken_en": "the measure of angle ACD equals the measure of angle A plus the measure of angle B",
+  "examples": [
+    {
+      "en": "The exterior angle equals the two remote interior angles added together, so x is 50 plus 65, which is 115.",
+      "ja": "外角は隣り合わない 2 つの内角の和に等しいから、x = 50 + 65 = 115。",
+      "register": "spoken"
+    },
+    {
+      "en": "In △ABC, side BC is extended through C to point D. If m∠A = 48° and m∠ACD = 121°, find m∠B.",
+      "ja": "△ABC で、辺 BC を C の側に延長した直線上に点 D をとる。∠A = 48°、∠ACD = 121° のとき、∠B を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "外角と隣り合わない 2 つの内角は、英語で remote interior angles（nonadjacent interior angles）と呼ぶ。",
+    "英語の exterior angle theorem は、外角が隣り合わない内角のどちらよりも大きいという不等式（ユークリッド原論 I.16）を指すこともある。",
+    "用例コーパスで exterior angle theorem は 0 件。IM では exterior angle が 5 件（Grade 8）あるが、定理の名前としては使われていない。"
+  ],
+  "related": [
+    "triangle",
+    "angle",
+    "exterior-angle-bisector",
+    "supplementary-angle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "外角定理",
+      "en": "Exterior angle theorem"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

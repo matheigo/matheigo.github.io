@@ -1,0 +1,93 @@
+{
+  "id": "biconditional",
+  "ja": {
+    "term": "双条件文",
+    "reading": "そうじょうけんぶん",
+    "alt": [
+      "同値な命題"
+    ]
+  },
+  "en": {
+    "term": "biconditional",
+    "alt": [
+      "biconditional statement"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM）では扱わない（biconditional ／ biconditional statement は CED・OpenStax・IM とも 0 件）。",
+  "domains": [
+    "proof",
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "「p ならば q」と「q ならば p」を合わせた「p ⇔ q」の形の命題。p と q の真偽が一致するときに真になる。",
+  "definition_en": "A statement of the form \"p if and only if q,\" which combines \"if p, then q\" and \"if q, then p.\" It is true exactly when p and q have the same truth value.",
+  "latex": "p \\Leftrightarrow q",
+  "spoken_en": "p if and only if q",
+  "examples": [
+    {
+      "en": "The statement and its converse are both true, so we can combine them into a biconditional with \"if and only if.\"",
+      "ja": "命題もその逆も真なので、「p ⇔ q」の形の 1 つの命題にまとめられる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the biconditional \"x² = 4 if and only if x = 2\" is true. If it is false, give a counterexample.",
+      "ja": "命題「x² = 4 ⇔ x = 2」の真偽を調べよ。偽ならば反例を挙げよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数I では「双条件文」という名前を使わず、「p ⇔ q」「p は q であるための必要十分条件」「p と q は同値」と言う。",
+    "書き言葉では if and only if を iff と略すことがある。",
+    "用例コーパスで biconditional は話し言葉 2 件（Professor Leonard）、書き言葉 0 件。Levin の本では 5 件。"
+  ],
+  "related": [
+    "conditional-statement",
+    "necessary-and-sufficient-condition",
+    "equivalent",
+    "contrapositive"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.1 Mathematical Statements, 1.2 Implications"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "biconditional": 1,
+      "biconditional statement": 1
+    },
+    "sources": [
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 biconditional（1.1 Mathematical Statements・1.2 Implications）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

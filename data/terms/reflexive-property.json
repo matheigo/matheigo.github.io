@@ -1,0 +1,83 @@
+{
+  "id": "reflexive-property",
+  "ja": {
+    "term": "反射律",
+    "reading": "はんしゃりつ",
+    "alt": []
+  },
+  "en": {
+    "term": "reflexive property",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "proof",
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "どんな a についても a = a が成り立つという性質。図形では、どの線分や角も自分自身と合同であることを言う。",
+  "definition_en": "The property that every quantity is equal to itself: a = a. In geometry it says that any segment or angle is congruent to itself.",
+  "latex": "a = a",
+  "spoken_en": "a equals a",
+  "examples": [
+    {
+      "en": "These two triangles share side BD, so BD is congruent to BD by the reflexive property.",
+      "ja": "この 2 つの三角形は辺 BD を共有しているので、反射律より BD ≅ BD。",
+      "register": "spoken"
+    },
+    {
+      "en": "In the figure, △ABD and △CBD share side BD. Give the reason for the statement BD ≅ BD.",
+      "ja": "図で、△ABD と △CBD は辺 BD を共有している。BD = BD と言える理由を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の証明では「BD は共通」と書き、反射律という名前は使わない。米国の Geometry の 2 列証明では、理由の列に Reflexive Property（of Congruence）と書く。",
+    "用例コーパスでは話し言葉 5 件（すべて The Organic Chemistry Tutor）、書き言葉 0 件、IM 0 件。"
+  ],
+  "related": [
+    "transitive-property",
+    "symmetric-property",
+    "congruent",
+    "two-column-proof"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "reflexive property": 5
+    },
+    "sources": [
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

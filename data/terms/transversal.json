@@ -1,0 +1,87 @@
+{
+  "id": "transversal",
+  "ja": {
+    "term": "横断線",
+    "reading": "おうだんせん",
+    "alt": []
+  },
+  "en": {
+    "term": "transversal",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "2 本以上の直線と、それぞれ異なる点で交わる直線。同位角や錯角は、この直線に対する位置で決まる。",
+  "definition_en": "A line that crosses two or more other lines at different points. Pairs such as corresponding angles and alternate interior angles are named by their position relative to it.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Line t is our transversal here. It cuts across both parallel lines, so we get eight angles to work with.",
+      "ja": "ここでは直線 t が横断線。平行な 2 直線の両方を横切るから、角が 8 つできる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Lines ℓ and m are parallel, and line t is a transversal. One of the angles formed measures 65°. Find the measures of the other seven angles.",
+      "ja": "直線 ℓ と m は平行で、直線 t はこの 2 直線と交わっている。できる角の 1 つが 65° のとき、残り 7 つの角の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書は交わる直線に名前を付けず「2 直線に 1 直線が交わるとき」と言う。英語の授業や問題文では、この直線を transversal と名前で呼ぶ。",
+    "同位角は corresponding angles、錯角は alternate interior angles。どちらも transversal に対する位置で決まる名前。",
+    "用例コーパスで transversal は話し言葉 27 件（The Organic Chemistry Tutor 21・Khan Academy 6）、書き言葉 0 件。"
+  ],
+  "related": [
+    "parallel-lines",
+    "alternate-interior-angles-theorem",
+    "corresponding-angles-postulate",
+    "alternate-exterior-angles",
+    "same-side-exterior-angles"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "横断線",
+      "en": "Transversal (geometry)"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 8)",
+      "url": "https://im.kendallhunt.com/MS/students/3/index.html",
+      "note": "glossary の見出し transversal（Grade 8）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "transversal": 27
+    },
+    "sources": [
+      "khan-algebra",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

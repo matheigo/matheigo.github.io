@@ -12,7 +12,8 @@
  *       exactly as corpus:count + corpus:decide would reach it. A line
  *       "@mapping near" in a block gives the entry's mapping ("@ja 極値" its
  *       Japanese headword, "@id circumcenter" the entry whose English
- *       Wikipedia article is the last step of rule 2); when both
+ *       Wikipedia article is the last step of rule 2, "@translation" a
+ *       Japanese headword that is this project's translation); when both
  *       registers are ③ it prints how the ③ is settled (no fixed expression,
  *       or the CED / OpenStax / IM / Nicholson / Levin / Wikipedia headword)
  *   --literal   count as written (phrases); the default counts as terms do:
@@ -168,6 +169,7 @@ function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
   for (const raw of blocks) {
     const mapping = raw.find((l) => l.startsWith("@mapping"))?.split(/\s+/)[1];
     const id = raw.find((l) => l.startsWith("@id"))?.split(/\s+/)[1];
+    const projectTranslation = raw.some((l) => l.startsWith("@translation"));
     const block = raw.filter((l) => !l.startsWith("@"));
     const t = countEntry(docs, "terms", block, block[0]);
     console.log(`# ${block[0]}`);
@@ -204,7 +206,7 @@ function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
     if (verdicts.every((v) => v.kind === "undecided")) {
       const total = (by: Record<string, Record<string, number>>) => Object.values(flatten(by)).reduce((a, b) => a + b, 0);
       const ja = raw.find((l) => l.startsWith("@ja"))?.replace(/^@ja\s+/, "");
-      const s = settleUndecided({ mapping, ja, en: block[0] }, { spoken: total(t.spoken), written: total(t.written) }, ref, block);
+      const s = settleUndecided({ mapping, ja, en: block[0], projectTranslation }, { spoken: total(t.spoken), written: total(t.written) }, ref, block);
       const how =
         s.kind === "no-fixed-expression"
           ? "英語に決まった言い方がない"

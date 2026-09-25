@@ -1,0 +1,76 @@
+{
+  "id": "perpendicular-postulate",
+  "ja": {
+    "term": "垂線の公準",
+    "reading": "すいせんのこうじゅん",
+    "alt": []
+  },
+  "en": {
+    "term": "perpendicular postulate",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「垂線の公準」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書は「直線外の 1 点を通る垂線はただ 1 本」を公準として立てない（作図で扱う）。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "直線 ℓ 上にない点 P を通り、ℓ に垂直な直線はちょうど 1 本ある、という公準。",
+  "definition_en": "The postulate that through a point not on a line, there is exactly one line perpendicular to the given line.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "From P there's exactly one perpendicular to line ℓ — that's the perpendicular postulate — and its length is the distance from P to the line.",
+      "ja": "P から直線 ℓ に引ける垂線はちょうど 1 本。これが垂線の公準で、その長さが P と直線の距離になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Point P is not on line ℓ. Explain why there cannot be two different lines through P that are both perpendicular to ℓ.",
+      "ja": "点 P は直線 ℓ 上にない。P を通り ℓ に垂直な直線が 2 本あり得ない理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "平行線の公準（parallel postulate）は「直線外の 1 点を通り、その直線に平行な直線はただ 1 本」で、別の公準。",
+    "用例コーパスでも IM でも perpendicular postulate は 0 件。"
+  ],
+  "related": [
+    "perpendicular-lines",
+    "postulate",
+    "foot-of-the-perpendicular"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

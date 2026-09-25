@@ -1,0 +1,81 @@
+{
+  "id": "triangle-proportionality-theorem",
+  "ja": {
+    "term": "三角形と比の定理",
+    "reading": "さんかくけいとひのていり",
+    "alt": [
+      "三角形の比例定理"
+    ]
+  },
+  "en": {
+    "term": "triangle proportionality theorem",
+    "alt": [
+      "side splitter theorem"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "三角形の 1 辺に平行な直線が他の 2 辺と交わるとき、その 2 辺を同じ比に分けるという定理。逆も成り立つ。",
+  "definition_en": "If a line parallel to one side of a triangle crosses the other two sides, it divides those two sides proportionally. The converse is also true.",
+  "latex": "DE \\parallel BC \\implies \\frac{AD}{DB} = \\frac{AE}{EC}",
+  "spoken_en": "If DE is parallel to BC, then AD over DB equals AE over EC.",
+  "examples": [
+    {
+      "en": "This segment is parallel to the base, so by the triangle proportionality theorem it cuts the other two sides in the same ratio. That gives x over 6 equals 4 over 8.",
+      "ja": "この線分は底辺に平行だから、三角形と比の定理より残りの 2 辺を同じ比に分ける。よって x/6 = 4/8。",
+      "register": "spoken"
+    },
+    {
+      "en": "In △ABC, point D lies on AB and point E lies on AC, with DE ∥ BC. If AD = 6, DB = 4, and AE = 9, find EC.",
+      "ja": "△ABC で、点 D, E はそれぞれ辺 AB, AC 上にあり、DE ∥ BC である。AD = 6, DB = 4, AE = 9 のとき、EC を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "DE ∥ BC のとき AD : DB = AE : EC だが、DE : BC は AD : DB ではなく AD : AB に等しい。平行な辺の比を部分の比で立てない。",
+    "用例コーパスでは triangle proportionality theorem も side splitter theorem も 0 件。IM はこの定理に名前を付けない。",
+    "英語版 Wikipedia はこの仲間の定理を intercept theorem の名で扱う。"
+  ],
+  "related": [
+    "similar-triangles",
+    "parallel-lines",
+    "point-of-internal-division"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

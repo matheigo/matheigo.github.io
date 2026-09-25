@@ -1,0 +1,107 @@
+{
+  "id": "conditional-statement",
+  "ja": {
+    "term": "含意",
+    "reading": "がんい",
+    "alt": [
+      "条件文",
+      "「p ならば q」の形の命題"
+    ]
+  },
+  "en": {
+    "term": "implication",
+    "alt": [
+      "conditional statement",
+      "if-then statement"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の数I は「命題 p ⇒ q」と言い、この形の命題そのものに名前を付けない（含意は論理学の語）。英語では論理・離散数学が implication、米国の Geometry の教科書が conditional statement（if-then statement）と呼ぶ。",
+  "domains": [
+    "proof",
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "2 つの命題 p, q を「p ならば q」の形に結んだ命題。p が真で q が偽のときだけ偽になる。",
+  "definition_en": "A statement of the form \"if p, then q,\" built from two statements p and q. It is false only when p is true and q is false.",
+  "latex": "p \\Rightarrow q",
+  "spoken_en": "p implies q",
+  "examples": [
+    {
+      "en": "An implication is false in only one case: the hypothesis is true and the conclusion is false.",
+      "ja": "含意が偽になるのは 1 通りだけ。仮定が真で結論が偽のときだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let's rewrite this as an if-then statement: if two angles are vertical angles, then they're congruent.",
+      "ja": "これを「ならば」の形に書き直そう。2 つの角が対頂角ならば、その 2 つの角は等しい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the converse of the conditional statement \"If x = 3, then x² = 9,\" and determine whether the converse is true.",
+      "ja": "命題「x = 3 ならば x² = 9」の逆を書き、その真偽を調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスで implication は話し言葉 28 件（うち MIT OCW 16 件・3Blue1Brown 6 件・Khan Academy 5 件）、書き言葉 37 件（MIT の講義ノート 29 件・OpenStax Calculus 5 件・OpenStax Algebra and Trigonometry 3 件）。conditional statement と if-then statement は書き言葉各 1 件、IM では if-then statement が 4 件。",
+    "日常英語の implication は「含み・影響」の意味でも使う。",
+    "「p ならば q」の p を hypothesis、q を conclusion と呼ぶ。"
+  ],
+  "related": [
+    "hypothesis",
+    "inverse",
+    "contrapositive",
+    "biconditional",
+    "necessary-condition",
+    "sufficient-condition",
+    "proposition"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.2 Implications"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "implication": 28
+    },
+    "written": {
+      "conditional statement": 1,
+      "implication": 37,
+      "if-then statement": 1
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-25"
+  }
+}

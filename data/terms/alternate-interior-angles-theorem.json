@@ -1,0 +1,83 @@
+{
+  "id": "alternate-interior-angles-theorem",
+  "ja": {
+    "term": "錯角の定理",
+    "reading": "さっかくのていり",
+    "alt": [
+      "平行線の錯角"
+    ]
+  },
+  "en": {
+    "term": "alternate interior angles theorem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「錯角の定理」は日本の教科書に無い、本プロジェクトの訳語。日本の中2 では「平行線の錯角は等しい」を平行線の性質として扱う。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "平行な 2 直線に 1 本の直線が交わるとき、錯角は等しい、という定理。",
+  "definition_en": "The theorem that when a transversal crosses two parallel lines, each pair of alternate interior angles is congruent.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Since these two lines are parallel, angle 3 and angle 6 are congruent by the alternate interior angles theorem.",
+      "ja": "この 2 直線は平行だから、錯角が等しくて ∠3 = ∠6 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "In the figure, AB ∥ CD, and line EF meets AB at G and CD at H. If m∠AGH = (3x + 10)° and m∠GHD = (5x − 30)°, find x.",
+      "ja": "図で AB ∥ CD であり、直線 EF は AB と点 G で、CD と点 H で交わる。∠AGH = (3x + 10)°、∠GHD = (5x − 30)° のとき、x の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "逆の「錯角が等しければ 2 直線は平行」は converse of the alternate interior angles theorem と呼ぶ。2 直線が平行であることを示すときに使うのは逆のほう。",
+    "英語では外側の組にも alternate exterior angles という名前があり、平行線なら同じく等しい。",
+    "用例コーパスで alternate interior angles theorem は 0 件、IM でも 1 件（Geometry 6.10）だけ。"
+  ],
+  "related": [
+    "transversal",
+    "corresponding-angles-postulate",
+    "alternate-exterior-angles",
+    "parallel-lines"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "6.10 Parallel Lines in the Plane（1 件）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 alternate interior angles theorem（Geometry 6.10 Parallel Lines in the Plane・計 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

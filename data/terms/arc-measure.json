@@ -1,0 +1,94 @@
+{
+  "id": "arc-measure",
+  "ja": {
+    "term": "弧の度数",
+    "reading": "このどすう",
+    "alt": []
+  },
+  "en": {
+    "term": "measure of the arc",
+    "alt": [
+      "arc measure",
+      "measure of an arc"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「弧の度数」は日本の教科書に無い、本プロジェクトの訳語。日本では弧の大きさを中心角で言い、弧そのものに度数を付けない。米国の Geometry では弧 AB の度数を、AB の上に弧の記号を付けた記号に m を添えて書き、中心角と同じ度数で表す（長さの arc length とは別）。 英語に決まった言い方がない（用例コーパスでは候補の合計が話し言葉 1 件・書き言葉 1 件）。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "弧の大きさを、その弧に対する中心角の大きさ（度）で表したもの。半円の弧は 180°、円全体は 360° になる。",
+  "definition_en": "The size of an arc given in degrees, equal to the measure of its central angle. A semicircle measures 180°, and a full circle measures 360°.",
+  "latex": "m\\overset{\\frown}{AB} = m\\angle AOB",
+  "spoken_en": "the measure of arc AB equals the measure of angle AOB",
+  "examples": [
+    {
+      "en": "The central angle is 70 degrees, so the measure of the arc is 70 degrees too. That's in degrees, not a length.",
+      "ja": "中心角が 70° だから、弧の度数も 70°。これは角度で、長さではない。",
+      "register": "spoken"
+    },
+    {
+      "en": "In circle O, m∠AOB = 64°. Find the measure of minor arc AB and the measure of major arc ACB.",
+      "ja": "円 O で ∠AOB = 64° である。劣弧 AB と優弧 ACB に対する中心角の大きさをそれぞれ求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "弧の度数（単位は度）と arc length（弧の長さ）は別物。半径が違えば、度数が同じ弧でも長さは違う。",
+    "優弧の度数は 360° から劣弧の度数を引いたもの。",
+    "用例コーパスでは arc measure が話し言葉 1 件・書き言葉 1 件と少ない。IM Geometry は measure of the arc の形で 4 件使う。"
+  ],
+  "related": [
+    "arc-length",
+    "intercepted-arc",
+    "major-arc",
+    "minor-arc",
+    "inscribed-angle"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "7.2 Inscribed Angles・7.5・7.8 Arcs and Sectors（4 件）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "arc measure": 1
+    },
+    "written": {
+      "arc measure": 1
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 1 件 ／ 書 1 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

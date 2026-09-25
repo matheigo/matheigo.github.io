@@ -1,0 +1,90 @@
+{
+  "id": "sohcahtoa",
+  "ja": {
+    "term": "SOHCAHTOA",
+    "reading": "そーかとあ",
+    "alt": []
+  },
+  "en": {
+    "term": "SOHCAHTOA",
+    "alt": [
+      "soh cah toa"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「SOHCAHTOA」は日本の教科書に無い、本プロジェクトの訳語。日本では sin・cos・tan の定義を筆記体の s・c・t の形で覚える方法があり、この語呂合わせは使わない。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "直角三角形の三角比の定義を覚えるための英語の語呂合わせ。sine = opposite / hypotenuse、cosine = adjacent / hypotenuse、tangent = opposite / adjacent の頭文字を並べたもの。",
+  "definition_en": "A mnemonic for the right-triangle definitions of the trigonometric ratios: sine is opposite over hypotenuse, cosine is adjacent over hypotenuse, and tangent is opposite over adjacent.",
+  "latex": "\\sin\\theta = \\frac{\\text{opp}}{\\text{hyp}},\\quad \\cos\\theta = \\frac{\\text{adj}}{\\text{hyp}},\\quad \\tan\\theta = \\frac{\\text{opp}}{\\text{adj}}",
+  "spoken_en": "sine theta equals opposite over hypotenuse, cosine theta equals adjacent over hypotenuse, tangent theta equals opposite over adjacent",
+  "examples": [
+    {
+      "en": "Remember SOHCAHTOA. We know the opposite side and we want the hypotenuse, so that's sine.",
+      "ja": "SOHCAHTOA を思い出そう。対辺がわかっていて斜辺を求めたいから、使うのは sin だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Label the opposite side, the adjacent side, and the hypotenuse relative to angle A. Then use SOHCAHTOA to find tan A.",
+      "ja": "∠A から見た対辺・隣辺・斜辺を図に書き込み、tan A を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉では SOHCAHTOA 19 件（The Organic Chemistry Tutor 13 ほか）と soh cah toa 13 件（Khan Academy 9 ほか）で、同じ語呂合わせを書き起こしが 2 通りに書いたもの。書き言葉は 1 件（OpenStax Algebra and Trigonometry）だけ。",
+    "SOH・CAH・TOA の 3 つがそれぞれ sin・cos・tan の定義に当たる。O は opposite（対辺）、A は adjacent（隣辺）、H は hypotenuse（斜辺）。",
+    "直角三角形で定義できるのは鋭角の三角比だけ。90° 以上の角の sin・cos・tan は単位円（unit circle）で定める。"
+  ],
+  "related": [
+    "sine",
+    "cosine",
+    "tangent",
+    "trigonometric-ratio"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "soh cah toa": 13,
+      "SOHCAHTOA": 19
+    },
+    "written": {
+      "SOHCAHTOA": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-algtrig",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

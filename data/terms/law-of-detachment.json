@@ -1,0 +1,100 @@
+{
+  "id": "law-of-detachment",
+  "ja": {
+    "term": "肯定式",
+    "reading": "こうていしき",
+    "alt": [
+      "モーダスポネンス"
+    ]
+  },
+  "en": {
+    "term": "modus ponens",
+    "alt": [
+      "law of detachment"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM）では扱わない（modus ponens ／ law of detachment は CED・OpenStax・IM とも 0 件）。",
+  "domains": [
+    "proof",
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "「p ならば q」が真で、p も真であるとき、q が真であると結論する推論の規則。",
+  "definition_en": "The rule of inference that if p → q is true and p is true, then q is true.",
+  "latex": "(p \\Rightarrow q) \\land p \\implies q",
+  "spoken_en": "if p implies q and p is true, then q is true",
+  "examples": [
+    {
+      "en": "Any number that ends in 0 is divisible by 10, and 470 ends in 0. So by modus ponens, 470 is divisible by 10.",
+      "ja": "0 で終わる数は 10 で割り切れる。470 は 0 で終わる。だから肯定式により、470 は 10 で割り切れる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the law of detachment to draw a conclusion: If two angles form a linear pair, then they are supplementary. ∠A and ∠B form a linear pair.",
+      "ja": "肯定式を使って結論を書け。2 つの角が一直線をなすならば、その 2 角の和は 180° である。∠A と ∠B は一直線をなす。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の Geometry の教科書では law of detachment、論理学・離散数学では modus ponens と呼ぶ。",
+    "p ⇒ q と q から p を結論するのは逆向きの推論（affirming the consequent、後件肯定）で、正しくない。",
+    "用例コーパスでは modus ponens が話し言葉 2 件（MIT OCW）・書き言葉 3 件（MIT の講義ノート）、law of detachment は 0 件。"
+  ],
+  "related": [
+    "law-of-syllogism",
+    "conditional-statement",
+    "deductive-reasoning"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.3 Rules of Logic"
+    },
+    {
+      "type": "wikipedia-langlink",
+      "ja": "モーダスポネンス",
+      "en": "Modus ponens"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "modus ponens": 2
+    },
+    "written": {
+      "modus ponens": 3
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは Levin の呼び方 modus ponens（1.3 Rules of Logic）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

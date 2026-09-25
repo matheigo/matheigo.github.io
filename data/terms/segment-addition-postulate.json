@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "英語に決まった言い方がない（用例コーパスで segment addition postulate は話・書とも 0 件）。見出しの「線分の加法公理」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書は AB + BC = AC に名前をつけない。英語名は、点 B が線分 AC 上にあれば AB + BC = AC になるという性質を公理として立てたときの名前。",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで segment addition postulate は話・書とも 0 件）。見出しの「線分の加法公理」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書は AB + BC = AC に名前をつけない。英語名は、点 B が線分 AC 上にあれば AB + BC = AC になるという性質を公理として立てたときの名前。 米国の高校課程（CED・OpenStax・IM）では扱わない（segment addition postulate は CED・OpenStax・IM とも 0 件）。",
   "domains": [
     "geometry"
   ],
@@ -54,6 +54,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Segment_addition_postulate",
+      "note": "記事名 Segment addition postulate（en.term のリダイレクト先）"
     }
   ],
   "confidence": "likely",
@@ -69,8 +75,8 @@
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 segment addition postulate（英語版「Segment addition postulate」、en.term のリダイレクト先）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

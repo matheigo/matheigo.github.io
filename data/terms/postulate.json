@@ -1,0 +1,84 @@
+{
+  "id": "postulate",
+  "ja": {
+    "term": "公準",
+    "reading": "こうじゅん",
+    "alt": []
+  },
+  "en": {
+    "term": "postulate",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の高校数学では「公理」と言い、「公準」はユークリッド原論の訳語として出てくる程度。米国の Geometry では証明の前提を postulate と呼び、名前付きで使う（segment addition postulate、parallel postulate など）。axiom はほぼ同じ意味だが別のエントリ（axiom）。",
+  "domains": [
+    "geometry",
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "証明せずに正しいと認め、定理を導く出発点にする事柄。",
+  "definition_en": "A statement that is accepted as true without proof and used as a starting point for proving theorems.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We don't prove this one. It's a postulate, so we just accept it and use it.",
+      "ja": "これは証明しない。公準だから、正しいと認めてそのまま使う。",
+      "register": "spoken"
+    },
+    {
+      "en": "Which postulate justifies the statement AB + BC = AC?",
+      "ja": "AB + BC = AC が成り立つ根拠となる公準（公理）はどれか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスで postulate は話し言葉 10 件（すべて The Organic Chemistry Tutor）、書き言葉 2 件（OpenStax Algebra and Trigonometry 1 件・Precalculus 1 件）。IM には出てこない。",
+    "定理（theorem）は証明によって導いた事柄で、証明せずに認める postulate とは区別する。"
+  ],
+  "related": [
+    "axiom",
+    "segment-addition-postulate",
+    "angle-addition-postulate",
+    "ruler-postulate",
+    "perpendicular-postulate",
+    "corresponding-angles-postulate"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "postulate": 10
+    },
+    "written": {
+      "postulate": 2
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-precalculus",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

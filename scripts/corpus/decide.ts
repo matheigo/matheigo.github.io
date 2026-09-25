@@ -156,6 +156,9 @@ interface Line {
 
 const NO_FIXED_NOTE = "英語に決まった言い方がない";
 
+/** mapping_note of a Japanese headword this project translated from a US name (STYLE 追記欄). */
+const PROJECT_TRANSLATION = "本プロジェクトの訳語";
+
 /**
  * Rule 2 past the high-school references (DECISIONS, Phase 2 幾何・離散の単元
  * 2): a word no candidate of which occurs in the CEDs, OpenStax or IM says so
@@ -258,6 +261,7 @@ function main() {
               mapping: record.mapping as string | undefined,
               ja: (record.ja as { term: string }).term,
               en: (record.en as { term: string }).term,
+              projectTranslation: String(record.mapping_note ?? "").includes(PROJECT_TRANSLATION),
             },
             { spoken: rawTotal(c.spoken), written: rawTotal(c.written) },
             c.reference ?? emptyReference(),

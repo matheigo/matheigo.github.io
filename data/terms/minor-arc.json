@@ -1,0 +1,77 @@
+{
+  "id": "minor-arc",
+  "ja": {
+    "term": "劣弧",
+    "reading": "れっこ",
+    "alt": []
+  },
+  "en": {
+    "term": "minor arc",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "円周上の 2 点で分けられる 2 つの弧のうち、小さいほうの弧。その中心角は 180° より小さい。",
+  "definition_en": "The smaller of the two arcs into which two points divide a circle. Its measure is less than 180°.",
+  "latex": "m\\overset{\\frown}{AB} < 180^\\circ",
+  "spoken_en": "the measure of arc AB is less than 180 degrees",
+  "examples": [
+    {
+      "en": "Arc AB with just two letters means the minor arc, the short way around the circle.",
+      "ja": "2 文字だけの弧 AB は劣弧、つまり円を短いほうに回った弧のことだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In circle O, the measure of major arc ACB is 250°. Find the measure of minor arc AB.",
+      "ja": "円 O で優弧 ACB に対する中心角は 250° である。劣弧 AB に対する中心角の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語では 2 文字の arc AB が劣弧を指し、優弧は 3 文字（arc ACB）で書いて区別する。",
+    "ちょうど 180° の弧は半円（semicircle）で、劣弧にも優弧にも入れない。",
+    "用例コーパス・IM とも 0 件。英語版 Wikipedia の Minor arc は曖昧さ回避のページ。"
+  ],
+  "related": [
+    "major-arc",
+    "arc-measure",
+    "chord"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

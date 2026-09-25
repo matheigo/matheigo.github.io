@@ -37,6 +37,7 @@
       "大学"
     ],
     "us": [
+      "Geometry",
       "Precalculus",
       "AP Calculus AB",
       "Calculus I"
@@ -56,11 +57,17 @@
       "en": "Evaluate arcsin(√3/2).",
       "ja": "arcsin(√3/2) の値を求めよ。",
       "register": "written"
+    },
+    {
+      "en": "In right triangle ABC, sin A = 5/13. Use inverse sine to find the measure of angle A to the nearest degree.",
+      "ja": "直角三角形 ABC で sin A = 5/13 のとき、∠A の大きさを 1° 単位で求めよ（逆正弦を使う）。",
+      "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "話し言葉では inverse sine と arcsine が並ぶ（arcsine 12 件はすべて MIT OCW）。書き言葉は inverse sine（32 件対 3 件。記号 arcsin は語として数えない）。"
+    "話し言葉では inverse sine と arcsine が並ぶ（arcsine 12 件はすべて MIT OCW）。書き言葉は inverse sine（32 件対 3 件。記号 arcsin は語として数えない）。",
+    "米国の Geometry では、直角三角形の辺の比から角を求めるときに電卓の sin⁻¹ キーを使い、inverse sine と呼ぶ。日本の数I では三角比の表から角を読む。"
   ],
   "related": [
     "arccosine",

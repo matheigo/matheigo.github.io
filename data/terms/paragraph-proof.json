@@ -1,0 +1,77 @@
+{
+  "id": "paragraph-proof",
+  "ja": {
+    "term": "段落証明",
+    "reading": "だんらくしょうめい",
+    "alt": []
+  },
+  "en": {
+    "term": "paragraph proof",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「段落証明」は日本の教科書に無い、本プロジェクトの訳語。日本の証明はふつうこの形（文章で書く）なので、わざわざ名前を付けない。",
+  "domains": [
+    "proof",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "各段階の主張とその理由を、表や図にせず文章でつなげて書く証明の書き方。二段組みの証明やフローチャート証明と区別するときの呼び名。",
+  "definition_en": "A proof written in ordinary sentences, giving each step and its reason in prose rather than in a table or diagram.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "You don't need the table for this one. Just write a paragraph proof and explain each step in a sentence.",
+      "ja": "この問題は表にしなくていい。段落証明で、各ステップを 1 文ずつ説明すればいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write a paragraph proof that the base angles of an isosceles triangle are congruent.",
+      "ja": "二等辺三角形の 2 つの底角が等しいことを、文章で証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の答案の証明はほぼこの形。英語で書くときは、理由を because … や by the … theorem の形で文の中に入れる。",
+    "用例コーパス・IM とも paragraph proof は 0 件。"
+  ],
+  "related": [
+    "two-column-proof",
+    "flowchart-proof",
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

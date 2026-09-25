@@ -1,0 +1,87 @@
+{
+  "id": "deductive-reasoning",
+  "ja": {
+    "term": "演繹的推論",
+    "reading": "えんえきてきすいろん",
+    "alt": [
+      "演繹"
+    ]
+  },
+  "en": {
+    "term": "deductive reasoning",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "proof",
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "正しいと認めた事柄（定義・公理・定理・仮定）から、論理の規則に従って結論を導く考え方。前提が正しければ、結論も必ず正しい。",
+  "definition_en": "Reasoning that starts from accepted facts such as definitions, postulates, theorems, and given information, and reaches a conclusion by rules of logic. If the starting facts are true, the conclusion must be true.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In a proof, every step has to come from deductive reasoning. \"It looks that way in the picture\" isn't a reason.",
+      "ja": "証明では、どのステップも演繹的推論で導かないといけない。「図でそう見える」は理由にならない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use deductive reasoning to show that the sum of any two odd integers is even.",
+      "ja": "演繹的推論を用いて、2 つの奇数の和は偶数であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスで deductive reasoning は話し言葉 2 件（Khan Academy）、書き言葉 0 件。IM にも出てこない。",
+    "数学的帰納法（proof by induction）は、名前に反して演繹的推論による証明である。",
+    "law of detachment と law of syllogism は、演繹的推論の代表的な形に付いた名前。"
+  ],
+  "related": [
+    "inductive-reasoning",
+    "law-of-detachment",
+    "law-of-syllogism",
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "deductive reasoning": 2
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

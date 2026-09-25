@@ -1,0 +1,89 @@
+{
+  "id": "aas-congruence",
+  "ja": {
+    "term": "2 組の角とその間にない 1 辺がそれぞれ等しい",
+    "reading": "にくみのかくとそのあいだにないいっぺんがそれぞれひとしい",
+    "alt": [
+      "AAS"
+    ]
+  },
+  "en": {
+    "term": "angle-angle-side",
+    "alt": [
+      "AAS"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「2 組の角とその間にない 1 辺がそれぞれ等しい」は日本の教科書に無い、本プロジェクトの訳語。日本の合同条件は 3 つで、2 角が等しければ残りの角も等しいので、この場合は「1 組の辺とその両端の角」（ASA）に含めて扱う。 英語に決まった言い方がない（用例コーパスでは候補の合計が話し言葉 0 件・書き言葉 0 件）。",
+  "domains": [
+    "geometry",
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "2 つの三角形で、2 組の角と、その 2 角にはさまれていない 1 組の辺がそれぞれ等しければ合同であるという合同条件。内角の和から残りの角も等しくなるので、ASA に帰着する。",
+  "definition_en": "A triangle congruence criterion: if two angles and a non-included side of one triangle are congruent to the corresponding angles and side of another, the triangles are congruent. It follows from ASA, because the third angles must also be equal.",
+  "latex": "\\angle A = \\angle D,\\ \\angle B = \\angle E,\\ BC = EF \\implies \\triangle ABC \\cong \\triangle DEF",
+  "spoken_en": "if angle A equals angle D, angle B equals angle E, and BC equals EF, then triangle ABC is congruent to triangle DEF",
+  "examples": [
+    {
+      "en": "The side isn't between the two angles, so it's not ASA, it's AAS. That still works, because the third angles have to match too.",
+      "ja": "辺が 2 つの角の間にないから ASA ではなく AAS だ。それでも合同になる。残りの角も必ず等しくなるからだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In △ABC and △DEF, ∠A = ∠D, ∠B = ∠E, and BC = EF. Explain why the two triangles are congruent.",
+      "ja": "△ABC と △DEF で ∠A = ∠D, ∠B = ∠E, BC = EF である。この 2 つの三角形が合同である理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "by AAS",
+      "ja": "2 組の角とその間にない 1 辺がそれぞれ等しいから"
+    }
+  ],
+  "pitfalls": [
+    "AAS と SSA は別物。2 辺とその間にない角（SSA）は合同条件にならない（正弦定理の ambiguous case で、三角形が 2 通りできることがある）。",
+    "日本の合同条件にはこの形がないので、日本の答案では残りの角も等しいことを示してから「1 組の辺とその両端の角がそれぞれ等しい」を使う。",
+    "OpenStax Algebra and Trigonometry の angle-angle-side（1 件）は正弦定理で解く問題の場合分けの名前で、合同条件としては用例コーパス・IM とも 0 件。合同の証明では by AAS と言う。"
+  ],
+  "related": [
+    "asa-congruence",
+    "sss-congruence",
+    "sas-congruence",
+    "law-of-sines",
+    "ambiguous-case"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

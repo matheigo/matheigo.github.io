@@ -1,0 +1,79 @@
+{
+  "id": "two-column-proof",
+  "ja": {
+    "term": "二段組みの証明",
+    "reading": "にだんぐみのしょうめい",
+    "alt": []
+  },
+  "en": {
+    "term": "two-column proof",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「二段組みの証明」は日本の教科書に無い、本プロジェクトの訳語。日本の中学・高校の証明は文章で書き、「statements（主張）」と「reasons（理由）」を 2 列に並べる答案の形式はない。",
+  "domains": [
+    "proof",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "左の列に主張（statements）を、右の列にその理由（reasons）を 1 行ずつ対応させて並べる証明の書き方。",
+  "definition_en": "A proof laid out as a table, with numbered statements in the left column and the reason for each statement in the right column.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's set this up as a two-column proof: statements on the left, reasons on the right.",
+      "ja": "これを二段組みの証明で書こう。左に主張、右に理由だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Points A, B, C, and D lie on a line in that order, and AB = CD. Write a two-column proof that AC = BD.",
+      "ja": "点 A, B, C, D はこの順に一直線上にあり、AB = CD である。AC = BD であることを二段組みの証明で示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "1 行目の理由は Given（仮定）、最後の行は Prove: に書かれた結論になる。日本の答案の「仮定より」は、この形式では理由の列に Given と書く。",
+    "理由の列には定義・公準・定理の名前（Definition of midpoint、Reflexive Property など）を書く。",
+    "用例コーパス・IM とも two-column proof は 0 件（IM Geometry はこの形式の名前を使わない）。"
+  ],
+  "related": [
+    "paragraph-proof",
+    "flowchart-proof",
+    "proof",
+    "hypothesis"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

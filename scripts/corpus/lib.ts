@@ -596,6 +596,23 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
     "undefined terms": "undefined terms of geometry | undefined terms in geometry | undefined terms point, line",
   },
   "tangent-segments-are-equal": { "tangent segments are equal": "tangent segments" },
+  // Phase 2 幾何・離散の単元 2 (batch 5). The bare letters are other things too: ASA is the
+  // American Statistical Association (AP Statistics CED), SAS a case of the law of cosines
+  // (OpenStax "given SAS") and a statistics package. Counted as the congruence criterion.
+  "sss-congruence": { SSS: "by SSS | SSS congruence | SSS postulate | SSS criterion | SSS theorem | SSS triangle congruence" },
+  "sas-congruence": { SAS: "by SAS | SAS congruence | SAS postulate | SAS criterion | SAS theorem | SAS triangle congruence" },
+  "asa-congruence": { ASA: "by ASA | ASA congruence | ASA postulate | ASA criterion | ASA theorem | ASA triangle congruence" },
+  "aas-congruence": {
+    AAS: "by AAS | AAS congruence | AAS postulate | AAS criterion | AAS theorem | AAS triangle congruence",
+    // OpenStax's one "angle-angle-side" names a law-of-sines problem situation, not the criterion
+    "angle-angle-side": "angle-angle-side congruence | angle-angle-side triangle congruence | angle-angle-side theorem | angle-angle-side postulate",
+  },
+  "hl-congruence": { HL: "by HL | HL congruence | HL theorem | HL postulate | HL criterion" },
+  // 仮定: "hypothesis" alone is mostly a statistical hypothesis; the proof's "Given" cannot be counted
+  hypothesis: {
+    hypothesis:
+      "hypothesis and conclusion | hypothesis and the conclusion | hypotheses of the theorem | hypothesis of the theorem | hypothesis of the conditional | hypothesis of the implication | hypothesis of an implication",
+  },
   "side-angle-inequality": { "side-angle inequality": "side-angle inequality | opposite the longer side | opposite the longest side" },
   "standard-form": {
     // 一般形 ax² + bx + c. "standard form" names both forms (OpenStax: a(x − h)² + k), so it is not counted
@@ -1057,6 +1074,14 @@ export const WIKIPEDIA_NOT_SAME: Record<string, string> = {
   // 素因数分解's langlink: factoring an integer into any factors, an article about the
   // computational problem and its algorithms; "prime factorization" itself redirects there
   "prime-factorization": "Integer factorization",
+  // batch 5: the Geometry properties of equality / congruence and the law of syllogism.
+  // "transitive property" redirects to the relations that have the property, not the property
+  "transitive-property": "Transitive relation",
+  // "symmetric property" redirects to symmetry in general (figures, physics)
+  "symmetric-property": "Symmetry",
+  // 三段論法's langlink: the categorical syllogism (Aristotle); the law of syllogism is the
+  // hypothetical syllogism p → q, q → r ⊢ p → r
+  "law-of-syllogism": "Syllogism",
 };
 
 /** "Translation (geometry)" -> "translation"; a name keeps its capital ("Ceva's theorem"). */
@@ -1167,8 +1192,12 @@ export function highSchoolHits(ref: ReferenceHits, order: string[]): { ced: numb
  *                        has no set way to say it. That is the finding - it
  *                        does not go to the human. Not when the English name
  *                        is known to exist, just rare: an English name taken
- *                        over as the Japanese headword (LIATE), or a wording
- *                        a CED itself uses (the Candidates Test)
+ *                        over as the Japanese headword (LIATE), a US name
+ *                        with no Japanese counterpart (mapping none) whose
+ *                        Japanese headword is this project's translation
+ *                        (two-column proof: the English is the original),
+ *                        a wording a CED itself uses (the Candidates Test), or
+ *                        an IM glossary headword (dilation, straight angle)
  *   reference            otherwise the headword is what the CEDs (AP Calculus
  *                        / AP Statistics) call it, failing that what OpenStax
  *                        or IM calls it (one tier: body, section title,
@@ -1183,7 +1212,7 @@ export type Settled =
   | { kind: "undecided" };
 
 export function settleUndecided(
-  entry: { mapping?: string; ja?: string; en?: string },
+  entry: { mapping?: string; ja?: string; en?: string; projectTranslation?: boolean },
   raw: { spoken: number; written: number },
   ref: ReferenceHits,
   order: string[],
@@ -1196,7 +1225,11 @@ export function settleUndecided(
   const cedTotal = (c: string) => sum(ref.ced, c) + sum(ref.cedStats, c);
   const ced = best(cedTotal);
   const borrowed = ja !== undefined && en !== undefined && ja.trim().toLowerCase() === en.trim().toLowerCase();
-  const named = borrowed || ced !== undefined;
+  const glossary = order.some((c) => (ref.imGlossary?.[c]?.length ?? 0) > 0);
+  // A US name with no Japanese counterpart (mapping none) whose Japanese headword this
+  // project made up: the English name is where the entry comes from.
+  const usName = entry.projectTranslation === true && mapping === "none";
+  const named = borrowed || usName || ced !== undefined || glossary;
   if ((mapping === "near" || mapping === "none") && !named && raw.spoken < MIN_TOTAL && raw.written < MIN_TOTAL) {
     return { kind: "no-fixed-expression", ...raw };
   }

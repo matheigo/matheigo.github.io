@@ -1,0 +1,80 @@
+{
+  "id": "flowchart-proof",
+  "ja": {
+    "term": "フローチャート証明",
+    "reading": "ふろーちゃーとしょうめい",
+    "alt": []
+  },
+  "en": {
+    "term": "flowchart proof",
+    "alt": [
+      "flow proof"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「フローチャート証明」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書には、根拠を矢印でつなぐこの答案の形式はない。",
+  "domains": [
+    "proof",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "主張を 1 つずつ箱に書いて理由を箱の下に添え、どの主張からどの主張が出るかを矢印でつないで示す証明の書き方。",
+  "definition_en": "A proof in which each statement is written in a box with its reason underneath, and arrows show which statements lead to which.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In a flowchart proof, the arrows tell you which statements you need before you can write the next one.",
+      "ja": "フローチャート証明では、次の主張を書く前にどの主張が必要かを矢印が示している。",
+      "register": "spoken"
+    },
+    {
+      "en": "Complete the flowchart proof by filling in the missing statements and reasons.",
+      "ja": "空欄の主張と理由を埋めて、フローチャート証明を完成させよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "flow proof とも言う（同じもの）。",
+    "2 つ以上の主張から 1 つの結論が出るところ（2 辺とその間の角から合同を言うなど）は、複数の矢印を 1 つの箱に集める。",
+    "用例コーパス・IM とも flowchart proof・flow proof は 0 件。"
+  ],
+  "related": [
+    "two-column-proof",
+    "paragraph-proof",
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

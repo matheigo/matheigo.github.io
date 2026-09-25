@@ -1,0 +1,81 @@
+{
+  "id": "inductive-reasoning",
+  "ja": {
+    "term": "帰納的推論",
+    "reading": "きのうてきすいろん",
+    "alt": []
+  },
+  "en": {
+    "term": "inductive reasoning",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM）では扱わない（inductive reasoning は CED・OpenStax・IM とも 0 件）。",
+  "domains": [
+    "proof",
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "いくつかの具体例に共通する規則性から、一般的な結論を推測する考え方。推測した結論は、証明するまで正しいとは限らない。",
+  "definition_en": "Reasoning that looks at specific examples, notices a pattern, and makes a general conjecture. The conclusion is only a guess until it is proved.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Every example so far works, but that's just inductive reasoning. We still need a proof.",
+      "ja": "ここまでの例は全部成り立つけど、それは帰納的推論にすぎない。まだ証明が要る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use inductive reasoning to predict the next number in the pattern 3, 7, 11, 15, ….",
+      "ja": "帰納的推論を用いて、3, 7, 11, 15, … の次の数を予想せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数学的帰納法（proof by induction）は名前に「帰納」が付くが演繹的な証明であり、帰納的推論ではない。",
+    "帰納的推論で得た予想は、反例（counterexample）が 1 つあれば否定される。",
+    "用例コーパスで inductive reasoning は 0 件。Levin の本では 4.5 Proof by Induction に 1 件。"
+  ],
+  "related": [
+    "deductive-reasoning",
+    "proof-by-induction",
+    "counterexample"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.5 Proof by Induction"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 inductive reasoning（4.5 Proof by Induction）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

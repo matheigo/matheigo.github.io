@@ -1,0 +1,100 @@
+{
+  "id": "solve-the-right-triangle",
+  "ja": {
+    "term": "三角比で辺を求める",
+    "reading": "さんかくひでへんをもとめる",
+    "alt": [
+      "直角三角形を解く"
+    ]
+  },
+  "en": {
+    "term": "solving right triangles",
+    "alt": [
+      "solve the right triangle",
+      "solve a right triangle"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "見出しの「三角比で辺を求める」は日本の教科書に無い、本プロジェクトの訳語。英語の solve the triangle は、足りない辺と角をすべて求めることを言う。 英語に決まった言い方がない（用例コーパスでは候補の合計が話し言葉 2 件・書き言葉 5 件）。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "直角三角形で、わかっている辺や角から三角比（と三平方の定理）を使って、残りの辺と角を求めること。",
+  "definition_en": "Using trigonometric ratios (and the Pythagorean theorem) to find the unknown sides and angles of a right triangle from the ones that are given.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Solving the right triangle means finding both missing sides and the other acute angle, not just x.",
+      "ja": "直角三角形を解くというのは、x だけでなく、残りの 2 辺ともう 1 つの鋭角をすべて求めることだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "We've got one angle and the hypotenuse, so use sine and cosine to get the two legs.",
+      "ja": "1 つの角と斜辺がわかっているから、sin と cos を使って残りの 2 辺を求めよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the right triangle ABC with C = 90°, A = 32°, and c = 15. Round lengths to the nearest tenth.",
+      "ja": "C = 90°, A = 32°, c = 15 の直角三角形 ABC を解け。長さは小数第 2 位を四捨五入せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "1 辺だけを聞く問題は Find x. と書く。Solve the right triangle. と言われたら、足りない辺と角をすべて答える。",
+    "用例コーパスでは solving right triangles が話し言葉 1 件（NancyPi）・書き言葉 4 件（OpenStax Algebra and Trigonometry 2、Precalculus 2）と少ない。",
+    "直角でない三角形を解くときは正弦定理（law of sines）・余弦定理（law of cosines）を使う。"
+  ],
+  "related": [
+    "solving-triangles",
+    "trigonometric-ratio",
+    "sohcahtoa"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "solving right triangles": 1,
+      "solve a right triangle": 1
+    },
+    "written": {
+      "solving right triangles": 4,
+      "solve the right triangle": 1
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-precalculus",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 2 件 ／ 書 5 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

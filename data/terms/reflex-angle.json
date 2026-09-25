@@ -1,0 +1,76 @@
+{
+  "id": "reflex-angle",
+  "ja": {
+    "term": "優角",
+    "reading": "ゆうかく",
+    "alt": []
+  },
+  "en": {
+    "term": "reflex angle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "大きさが 180° より大きく 360° より小さい角。2 本の半直線がつくる 2 つの角のうち、大きいほうを指す。",
+  "definition_en": "An angle that measures more than 180° but less than 360°. Of the two angles formed by two rays from the same point, it is the larger one.",
+  "latex": "180^\\circ < \\theta < 360^\\circ",
+  "spoken_en": "theta is greater than one hundred eighty degrees and less than three hundred sixty degrees",
+  "examples": [
+    {
+      "en": "When I say angle AOB, I mean the smaller one. If you want the one that goes the long way around, that's the reflex angle.",
+      "ja": "角 AOB と言ったら小さいほうのこと。遠回りのほうが欲しいなら、それは優角だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "The measure of ∠AOB is 130°. Find the measure of the reflex angle AOB.",
+      "ja": "∠AOB = 130° のとき、優角 AOB の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「劣角」（180° より小さいほう）に当たる決まった英語の名前は無い。区別したいときは the angle less than 180° のように説明する。",
+    "用例コーパス・IM とも reflex angle は 0 件。英語版 Wikipedia にも独立した記事は無く、Angle の記事の一部で扱われている。"
+  ],
+  "related": [
+    "angle",
+    "straight-angle",
+    "major-arc"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

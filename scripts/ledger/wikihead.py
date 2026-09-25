@@ -18,7 +18,7 @@ its headword is the name of the English Wikipedia article it lands on:
 Either way the en article must sit under a math category within 4 levels
 (the same rule as the ja side). count.ts reads the result offline.
 
-For every terms entry this asks, 50 titles per request, following the API's
+For every terms entry, and every ledger row not generated yet, this asks, 50 titles per request, following the API's
 `continue`: ja.term -> ja article and en langlink (entries without a
 wikipedia-langlink source), every en title -> en article after redirects
 (with the section a redirect points to, and whether it is a disambiguation
@@ -28,6 +28,7 @@ scripts/ledger/wiki_head_cache.json (gitignored); a re-run asks only for
 titles not cached yet. Every request has a timeout and a retry limit;
 progress is printed as done/total. Only titles are kept.
 """
+import csv
 import glob
 import json
 import os
@@ -105,6 +106,15 @@ def parse_en(p, fragment):
 
 def main():
     entries = [json.load(open(f, encoding="utf-8")) for f in sorted(glob.glob(os.path.join(ROOT, "data", "terms", "*.json")))]
+    # Ledger rows not generated yet, so that corpus:probe --decide sees them too
+    # (their langlink source is the ledger's, which passed the Phase 1 ja check).
+    have = {e["id"] for e in entries}
+    for r in csv.DictReader(open(os.path.join(ROOT, "ledger", "terms.csv"), encoding="utf-8")):
+        if r["id"] in have:
+            continue
+        src = [{"type": "wikipedia-langlink", "ja": r["wiki_ja"], "en": r["wiki_en"]}] \
+            if r["source"] == "wikipedia-langlink" and r["wiki_en"] else []
+        entries.append({"id": r["id"], "ja": {"term": r["ja"]}, "en": {"term": r["en"]}, "sources": src})
     cache = json.load(open(CACHE, encoding="utf-8")) if os.path.exists(CACHE) else {}
     failed = 0
 

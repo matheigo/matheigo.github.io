@@ -1,0 +1,85 @@
+{
+  "id": "straight-angle",
+  "ja": {
+    "term": "平角",
+    "reading": "へいかく",
+    "alt": []
+  },
+  "en": {
+    "term": "straight angle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "頂点をはさんで 2 辺が一直線になる角。大きさは 180° である。",
+  "definition_en": "An angle whose two sides point in opposite directions and form a straight line. It measures 180°.",
+  "latex": "180^\\circ",
+  "spoken_en": "one hundred eighty degrees",
+  "examples": [
+    {
+      "en": "A straight angle is 180 degrees, so if this part is 65, the other part has to be 115.",
+      "ja": "平角は 180° だから、こっちが 65° なら、もう一方は 115° になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Point B lies on line AC, so ∠ABC is a straight angle. If m∠ABD = (2x)° and m∠DBC = (x + 30)°, find the value of x.",
+      "ja": "点 B は直線 AC 上にあるので、∠ABC は平角である。∠ABD = 2x°, ∠DBC = (x + 30)° のとき、x の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスで straight angle は話し言葉 1 件のみ。見出しは IM（Grade 7・Grade 8 の glossary の見出し）の呼び方による。",
+    "平角を 1 本の半直線で 2 つに分けた 2 角の組は linear pair（一直線をなす角）と呼ぶ。"
+  ],
+  "related": [
+    "angle",
+    "linear-pair",
+    "reflex-angle",
+    "supplementary-angle"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7)",
+      "url": "https://im.kendallhunt.com/MS/students/2/index.html",
+      "note": "glossary の見出し straight angle（Grade 7・Grade 8）。7.1 Relationships of Angles ほか"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "straight angle": 1
+    },
+    "sources": [
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 straight angle（Grade 7 glossary・Grade 8 glossary・Grade 7 7.1 Relationships of Angles・計 41 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

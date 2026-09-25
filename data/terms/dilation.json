@@ -1,0 +1,102 @@
+{
+  "id": "dilation",
+  "ja": {
+    "term": "拡大・縮小",
+    "reading": "かくだい・しゅくしょう",
+    "alt": [
+      "相似の中心による拡大"
+    ]
+  },
+  "en": {
+    "term": "dilation",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の中3 の相似は拡大図・縮図や相似の位置で扱い、中心と比を決めた変換そのものに名前を付けない。英語の dilation は中心と scale factor で決まる変換。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "中心 O と正の数 k を決め、各点 P を半直線 OP 上で OP′ = k·OP となる点 P′ に移す変換。k > 1 なら拡大、0 < k < 1 なら縮小で、移した図形はもとの図形と相似になる。",
+  "definition_en": "A transformation with a center O and a scale factor k that sends each point P to the point P′ on ray OP with OP′ = k · OP. The image is similar to the original: larger if k > 1 and smaller if 0 < k < 1.",
+  "latex": "OP' = k \\cdot OP",
+  "spoken_en": "O P prime equals k times O P",
+  "examples": [
+    {
+      "en": "Dilate the triangle by a scale factor of 2, centered at the origin. Every coordinate just gets doubled.",
+      "ja": "原点を中心に三角形を 2 倍に拡大しよう。座標がすべて 2 倍になるだけだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Triangle ABC has vertices A(1, 2), B(3, 1), and C(2, 4). Draw the image of △ABC under a dilation centered at the origin with scale factor 3.",
+      "ja": "3 点 A(1, 2), B(3, 1), C(2, 4) を頂点とする △ABC を、原点を中心に 3 倍に拡大した図形をかけ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "center of dilation",
+      "ja": "相似の中心"
+    },
+    {
+      "en": "dilate … by a scale factor of k",
+      "ja": "k 倍に拡大（縮小）する"
+    }
+  ],
+  "pitfalls": [
+    "動詞は dilate（dilate the figure by a scale factor of 1/2）。縮小も dilation で、scale factor が 1 より小さいことで言い分ける。",
+    "dilation は物理の time dilation（時間の遅れ）など、別の意味でも使う。関数のグラフの拡大・縮小は stretch ／ compress と言う教科書もある。",
+    "用例コーパスでは話し言葉 1 件（MIT OCW）・書き言葉 1 件（MIT の講義ノート）と少ない。IM では 372 件で、Grade 8 と Geometry の glossary の見出し。"
+  ],
+  "related": [
+    "scale-factor",
+    "similarity-transformation",
+    "rigid-motion",
+    "similar-triangles",
+    "stretch-vertically"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "glossary の見出し dilation（Grade 8・Geometry）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "dilation": 1
+    },
+    "written": {
+      "dilation": 1
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは IM の呼び方 dilation（Grade 8 glossary・Geometry glossary・Grade 8 2.3 Dilations with no Grid・計 372 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

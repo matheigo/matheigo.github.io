@@ -1,0 +1,99 @@
+{
+  "id": "cpctc",
+  "ja": {
+    "term": "CPCTC",
+    "reading": "しーぴーしーてぃーしー",
+    "alt": [
+      "合同な三角形の対応する部分は等しい"
+    ]
+  },
+  "en": {
+    "term": "CPCTC",
+    "alt": [
+      "corresponding parts of congruent triangles are congruent"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「CPCTC」は日本の教科書に無い、本プロジェクトの訳語。日本の証明では「合同な図形の対応する辺（角）は等しい」と文で書き、略語はない。",
+  "domains": [
+    "geometry",
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "「合同な三角形の対応する部分（辺と角）は合同である」という事実を表す英語の略語。三角形の合同を示したあと、対応する辺や角が等しいことを言う理由として証明に書く。",
+  "definition_en": "An abbreviation for \"corresponding parts of congruent triangles are congruent.\" It is cited as the reason when a proof uses two congruent triangles to conclude that a pair of corresponding sides or angles are congruent.",
+  "latex": "\\triangle ABC \\cong \\triangle DEF \\implies AB = DE,\\ \\angle A = \\angle D",
+  "spoken_en": "triangle ABC is congruent to triangle DEF, so AB equals DE and angle A equals angle D",
+  "examples": [
+    {
+      "en": "Once we know the triangles are congruent, we get angle A equals angle D for free. That's CPCTC.",
+      "ja": "三角形が合同だと分かれば、∠A = ∠D はそのまま言える。合同な三角形の対応する角は等しいからだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "First prove that △ABM ≅ △DCM. Then use CPCTC to show that AB ≅ DC.",
+      "ja": "まず △ABM ≡ △DCM を証明し、合同な図形の対応する辺は等しいことから AB = DC を示せ。",
+      "register": "written"
+    },
+    {
+      "en": "Statement: ∠B ≅ ∠E. Reason: CPCTC.",
+      "ja": "∠B = ∠E（合同な図形の対応する角は等しい）",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "by CPCTC",
+      "ja": "合同な図形の対応する辺（角）は等しいから"
+    }
+  ],
+  "pitfalls": [
+    "CPCTC は三角形の合同を示したあとにしか使えない。合同を示す理由（SSS・SAS・ASA など）と混同しない。",
+    "読むときは C-P-C-T-C と文字を 1 つずつ言う。",
+    "用例コーパスでは話し言葉 8 件（すべて The Organic Chemistry Tutor）、書き言葉 0 件。IM は略語を使わず、corresponding parts の形で書く（68 件）。"
+  ],
+  "related": [
+    "congruent",
+    "sss-congruence",
+    "sas-congruence",
+    "two-column-proof"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "CPCTC": 4,
+      "corresponding parts of congruent triangles are congruent": 4
+    },
+    "sources": [
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

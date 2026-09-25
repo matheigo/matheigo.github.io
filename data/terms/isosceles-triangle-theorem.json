@@ -1,0 +1,87 @@
+{
+  "id": "isosceles-triangle-theorem",
+  "ja": {
+    "term": "二等辺三角形の定理",
+    "reading": "にとうへんさんかっけいのていり",
+    "alt": [
+      "二等辺三角形の底角は等しい",
+      "底角定理"
+    ]
+  },
+  "en": {
+    "term": "isosceles triangle theorem",
+    "alt": [
+      "base angles theorem"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "二等辺三角形の 2 つの底角は等しいという定理。逆も成り立ち、2 つの角が等しい三角形は二等辺三角形である。",
+  "definition_en": "The theorem that the two base angles of an isosceles triangle are congruent. Its converse also holds: a triangle with two congruent angles is isosceles.",
+  "latex": "AB = AC \\implies \\angle B = \\angle C",
+  "spoken_en": "if AB equals AC, then angle B equals angle C",
+  "examples": [
+    {
+      "en": "AB equals AC, so by the isosceles triangle theorem the base angles are equal. That leaves 140 degrees to split, so each one is 70.",
+      "ja": "AB = AC だから、二等辺三角形の定理より底角は等しい。残りの 140° を半分に分けて、それぞれ 70° だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In △ABC, AB = AC and m∠A = 40°. Find m∠B.",
+      "ja": "△ABC で AB = AC, ∠A = 40° のとき、∠B の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "逆（2 つの角が等しければ二等辺三角形）は converse of the isosceles triangle theorem（converse of the base angles theorem）と呼ぶ。",
+    "問題文の m∠B は the measure of angle B（∠B の大きさ）と読む。英語の問題文は角 ∠B とその大きさ m∠B を書き分ける。",
+    "用例コーパスでは 0 件、IM Geometry でも isosceles triangle theorem は 1 件（2.8）だけで、base angles の形で書くことが多い（10 件）。"
+  ],
+  "related": [
+    "isosceles-triangle",
+    "equal-angles",
+    "triangle",
+    "congruent"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "2.8 The Perpendicular Bisector Theorem（1 件）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 isosceles triangle theorem（Geometry 2.8 The Perpendicular Bisector Theorem・計 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

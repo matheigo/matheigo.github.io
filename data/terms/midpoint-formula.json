@@ -1,0 +1,80 @@
+{
+  "id": "midpoint-formula",
+  "ja": {
+    "term": "中点公式",
+    "reading": "ちゅうてんこうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "midpoint formula",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「中点公式」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書は「中点の座標」として式を示す。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "座標平面上の線分の中点の座標を、両端の x 座標どうし・y 座標どうしの平均として求める式。",
+  "definition_en": "The formula that gives the midpoint of a segment in the coordinate plane by averaging the x-coordinates and the y-coordinates of its endpoints.",
+  "latex": "M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)",
+  "spoken_en": "M equals x one plus x two over two, comma, y one plus y two over two",
+  "examples": [
+    {
+      "en": "Just use the midpoint formula: add the x's and divide by two, then do the same with the y's.",
+      "ja": "中点の公式を使えばいい。x 座標を足して 2 で割り、y 座標も同じようにする。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the midpoint formula to find the midpoint of the segment with endpoints (−3, 5) and (7, −1).",
+      "ja": "2 点 (−3, 5), (7, −1) を両端とする線分の中点の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスで midpoint formula は書き言葉 12 件（すべて OpenStax Algebra and Trigonometry）、話し言葉 1 件。",
+    "線分を m : n に内分する点の座標の式で m = n = 1 とした場合に当たる。"
+  ],
+  "related": [
+    "midpoint",
+    "point-of-internal-division",
+    "coordinates"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "midpoint formula": 1
+    },
+    "written": {
+      "midpoint formula": 12
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

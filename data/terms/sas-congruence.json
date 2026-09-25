@@ -1,0 +1,111 @@
+{
+  "id": "sas-congruence",
+  "ja": {
+    "term": "2 組の辺とその間の角がそれぞれ等しい",
+    "reading": "にくみのへんとそのあいだのかくがそれぞれひとしい",
+    "alt": [
+      "二辺夾角相等",
+      "SAS"
+    ]
+  },
+  "en": {
+    "term": "side-angle-side",
+    "alt": [
+      "SAS"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "proof",
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "2 つの三角形で、2 組の辺とその間の角がそれぞれ等しければ合同であるという合同条件。三角比では、2 辺とその間の角が分かっている場合を指し、余弦定理で残りの辺を求める。",
+  "definition_en": "A triangle congruence criterion: if two sides and the included angle of one triangle are congruent to two sides and the included angle of another, the triangles are congruent. In trigonometry, SAS also names the case where two sides and the included angle are known, which the law of cosines solves.",
+  "latex": "AB = DE,\\ \\angle B = \\angle E,\\ BC = EF \\implies \\triangle ABC \\cong \\triangle DEF",
+  "spoken_en": "if AB equals DE, angle B equals angle E, and BC equals EF, then triangle ABC is congruent to triangle DEF",
+  "examples": [
+    {
+      "en": "We've got two pairs of congruent sides, and the angle between them matches too, so these triangles are congruent by SAS.",
+      "ja": "2 組の辺が等しく、その間の角も等しいから、この 2 つの三角形は合同だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Make sure the angle is the one between the two sides. That's what the A in the middle of SAS tells you.",
+      "ja": "角が 2 辺の間にあるかを確かめよう。SAS の真ん中の A はそういう意味だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In the figure, AB = AD and ∠BAC = ∠DAC. Prove that △ABC ≅ △ADC.",
+      "ja": "図で AB = AD, ∠BAC = ∠DAC のとき、△ABC ≡ △ADC であることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "by SAS",
+      "ja": "2 組の辺とその間の角がそれぞれ等しいから"
+    }
+  ],
+  "pitfalls": [
+    "英語の並び side-angle-side は、角が 2 辺の間にあることを表す。2 辺とその間にない角（SSA）は合同条件にならない（正弦定理の ambiguous case）。",
+    "三角比の教科書（OpenStax Algebra and Trigonometry など）では、SAS は「2 辺とその間の角が分かっている三角形」を解く場合の名前としても使う（余弦定理を使う）。同じ文字だが、合同の証明とは別の使い方。",
+    "用例コーパスでは SAS の形が話し言葉 2 件（The Organic Chemistry Tutor）、side-angle-side が書き言葉 1 件（OpenStax）と少ない。見出しは IM Geometry の呼び方（28 件）による。"
+  ],
+  "related": [
+    "sss-congruence",
+    "asa-congruence",
+    "aas-congruence",
+    "congruent",
+    "law-of-cosines",
+    "ambiguous-case"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "2.6 Side-Angle-Side Triangle Congruence ほか（28 件）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "by SAS | SAS congruence | SAS postulate | SAS criterion | SAS theorem | SAS triangle congruence": 2
+    },
+    "written": {
+      "side-angle-side": 1
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは IM の呼び方 side-angle-side（Geometry 2.6 Side-Angle-Side Triangle Congruence・Geometry 3.10 Other Conditions for Triangle Similarity・Geometry 2.7 Angle-Side-Angle Triangle Congruence・計 28 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

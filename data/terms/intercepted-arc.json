@@ -1,0 +1,90 @@
+{
+  "id": "intercepted-arc",
+  "ja": {
+    "term": "切片の弧",
+    "reading": "せっぺんのこ",
+    "alt": [
+      "角に対する弧"
+    ]
+  },
+  "en": {
+    "term": "intercepted arc",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「切片の弧」は日本の教科書に無い、本プロジェクトの訳語。日本の数A は「弧 AB に対する円周角」と言い、角の側から弧を「切り取られた弧」と呼ばない。 英語に決まった言い方がない（用例コーパスでは候補の合計が話し言葉 2 件・書き言葉 4 件）。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "円周角や中心角の 2 辺が円から切り取る弧のうち、角の内側にある部分。",
+  "definition_en": "The arc of a circle that lies inside an angle, cut off by the two sides of the angle, such as the arc between the sides of an inscribed angle or a central angle.",
+  "latex": "m\\angle ABC = \\tfrac{1}{2}\\, m\\overset{\\frown}{AC}",
+  "spoken_en": "the measure of angle ABC equals one half the measure of arc AC",
+  "examples": [
+    {
+      "en": "An inscribed angle is half its intercepted arc, so if the arc is 80 degrees, the angle is 40.",
+      "ja": "円周角は、それに対する弧の中心角の半分だから、弧が 80° なら角は 40° だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Inscribed angle ABC intercepts arc AC, and the measure of arc AC is 110°. Find m∠ABC.",
+      "ja": "弧 AC に対する中心角が 110° のとき、弧 AC に対する円周角 ∠ABC を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語では「円周角は intercepted arc の半分」のように弧の度数で言える（arc measure）。日本では同じことを「同じ弧に対する中心角の半分」と中心角で言う。",
+    "動詞は intercept。The angle intercepts arc AC.（その角は弧 AC を切り取る＝弧 AC に対する角）。",
+    "用例コーパスでは話し言葉 2 件（The Organic Chemistry Tutor）・書き言葉 4 件（OpenStax Algebra and Trigonometry）と少ない。IM は 0 件。"
+  ],
+  "related": [
+    "inscribed-angle",
+    "arc-measure",
+    "chord",
+    "arc-length"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "intercepted arc": 2
+    },
+    "written": {
+      "intercepted arc": 4
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 2 件 ／ 書 4 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

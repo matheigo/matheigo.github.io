@@ -1163,6 +1163,9 @@ PHASE2F_SAME = [
     # (p and q in the corpus is mostly two points or two integers)
     ("and", "logical-connective", "into"),
     ("or", "logical-connective", "into"),
+    # Phase 2 幾何・離散の単元 2 (batch 5): 証明の「仮定」 is the proof's Given; 相似比 is the scale factor
+    ("given", "hypothesis", "into"),
+    ("ratio-of-similarity", "scale-factor", "from"),
 ]
 
 # Section names -> the entry for what they teach.

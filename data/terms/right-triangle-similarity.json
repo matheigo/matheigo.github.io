@@ -1,0 +1,79 @@
+{
+  "id": "right-triangle-similarity",
+  "ja": {
+    "term": "直角三角形の相似",
+    "reading": "ちょっかくさんかくけいのそうじ",
+    "alt": [
+      "斜辺への垂線"
+    ]
+  },
+  "en": {
+    "term": "right triangle similarity theorem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「直角三角形の相似」は日本の教科書に無い、本プロジェクトの訳語。日本では直角三角形の直角の頂点から斜辺に垂線を引いてできる 3 つの三角形が相似であることを、定理の名前を付けずに使う。 英語に決まった言い方がない（用例コーパスでは候補の合計が話し言葉 0 件・書き言葉 0 件）。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "直角三角形の直角の頂点から斜辺に垂線を下ろすと、できる 2 つの小さな三角形はどちらももとの三角形と相似になるという定理。",
+  "definition_en": "If you draw the altitude from the right angle of a right triangle to the hypotenuse, the two smaller triangles are each similar to the original triangle and to each other.",
+  "latex": "\\triangle ABC \\sim \\triangle ACD \\sim \\triangle CBD",
+  "spoken_en": "Triangle ABC is similar to triangle ACD, which is similar to triangle CBD.",
+  "examples": [
+    {
+      "en": "Once you drop the altitude to the hypotenuse, you get three similar right triangles, so match up the corresponding sides carefully.",
+      "ja": "斜辺に垂線を下ろすと相似な直角三角形が 3 つできるので、対応する辺を注意して合わせよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "In right triangle ABC, ∠C = 90° and CD is the altitude to the hypotenuse. If AD = 4 and DB = 9, find CD.",
+      "ja": "∠C = 90° の直角三角形 ABC で、CD は斜辺への垂線である。AD = 4, DB = 9 のとき、CD を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "この相似から CD² = AD × DB、AC² = AD × AB、BC² = BD × AB が出る。垂線 CD は AD と DB の相乗平均（geometric mean）になる。",
+    "3 つの三角形の頂点の対応は角で決める（直角どうし、共通の鋭角どうし）。△ABC ∼ △ACD ∼ △CBD のように対応順に書かないと、比を取り違える。",
+    "用例コーパス・IM とも 0 件。定理の英語名は教科書による。"
+  ],
+  "related": [
+    "geometric-mean",
+    "similar-triangles",
+    "foot-of-the-perpendicular"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

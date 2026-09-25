@@ -1,0 +1,96 @@
+{
+  "id": "asa-congruence",
+  "ja": {
+    "term": "1 組の辺とその両端の角がそれぞれ等しい",
+    "reading": "ひとくみのへんとそのりょうたんのかくがそれぞれひとしい",
+    "alt": [
+      "ASA"
+    ]
+  },
+  "en": {
+    "term": "angle-side-angle",
+    "alt": [
+      "ASA"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "2 つの三角形で、1 組の辺とその両端の角がそれぞれ等しければ合同であるという合同条件。",
+  "definition_en": "A triangle congruence criterion: if two angles and the included side of one triangle are congruent to two angles and the included side of another, the triangles are congruent.",
+  "latex": "\\angle B = \\angle E,\\ BC = EF,\\ \\angle C = \\angle F \\implies \\triangle ABC \\cong \\triangle DEF",
+  "spoken_en": "if angle B equals angle E, BC equals EF, and angle C equals angle F, then triangle ABC is congruent to triangle DEF",
+  "examples": [
+    {
+      "en": "The side we know is sandwiched between the two angles we know, so this is ASA.",
+      "ja": "分かっている辺が、分かっている 2 つの角にはさまれているから、1 組の辺とその両端の角がそれぞれ等しい場合だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In the figure, ∠ABD = ∠CBD and ∠ADB = ∠CDB. Prove that △ABD ≅ △CBD.",
+      "ja": "図で ∠ABD = ∠CBD, ∠ADB = ∠CDB のとき、△ABD ≡ △CBD であることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "by ASA",
+      "ja": "1 組の辺とその両端の角がそれぞれ等しいから"
+    }
+  ],
+  "pitfalls": [
+    "日本語は辺から見て「両端の角」と言い、英語は角から見て included side（2 角にはさまれた辺）と言う。A-S-A の並びで、辺が 2 角の間にあることを表す。",
+    "2 角と 1 辺が等しくても、その辺が 2 角の間にないときは AAS（angle-angle-side）と呼んで区別する。",
+    "統計の文脈（AP Statistics の CED など）で出てくる ASA は American Statistical Association で、合同条件とは関係ない。"
+  ],
+  "related": [
+    "sss-congruence",
+    "sas-congruence",
+    "aas-congruence",
+    "congruent"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "2.7 Angle-Side-Angle Triangle Congruence ほか（22 件）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "angle-side-angle": 1
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは IM の呼び方 angle-side-angle（Geometry 2.7 Angle-Side-Angle Triangle Congruence・Geometry 2.10 Practicing Proofs・Geometry 2.9 Side-Side-Side Triangle Congruence・計 22 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

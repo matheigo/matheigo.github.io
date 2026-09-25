@@ -1,0 +1,82 @@
+{
+  "id": "corresponding-angles-postulate",
+  "ja": {
+    "term": "同位角の公準",
+    "reading": "どういかくのこうじゅん",
+    "alt": [
+      "平行線の同位角"
+    ]
+  },
+  "en": {
+    "term": "corresponding angles postulate",
+    "alt": [
+      "corresponding angles theorem"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「同位角の公準」は日本の教科書に無い、本プロジェクトの訳語。日本の中2 では「平行線の同位角は等しい」を平行線の性質として扱う。米国の教科書では公準（postulate）とするものと定理（theorem）とするものがある。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "平行な 2 直線に 1 本の直線が交わるとき、同位角は等しい、という公準。",
+  "definition_en": "The postulate that when a transversal crosses two parallel lines, each pair of corresponding angles is congruent.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Angle 1 and angle 5 sit in the same spot at each intersection, so they're congruent by the corresponding angles postulate.",
+      "ja": "∠1 と ∠5 はそれぞれの交点で同じ位置にある角だから、同位角で等しい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Lines p and q are parallel and are cut by transversal t. ∠1 and ∠5 are corresponding angles, and m∠1 = 112°. Find m∠5 and the measure of the angle that forms a linear pair with ∠5.",
+      "ja": "直線 p, q は平行で、直線 t がこれらと交わっている。∠1 と ∠5 は同位角で、∠1 = 112° である。∠5 と、∠5 と一直線をなす角の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "逆の「同位角が等しければ 2 直線は平行」は converse of the corresponding angles postulate（theorem）と呼ぶ。",
+    "これを公準として立てる場合、錯角が等しいこと（alternate interior angles theorem）は、この公準と対頂角から証明する。",
+    "用例コーパスでも IM でも corresponding angles postulate は 0 件。"
+  ],
+  "related": [
+    "transversal",
+    "alternate-interior-angles-theorem",
+    "postulate",
+    "parallel-lines"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

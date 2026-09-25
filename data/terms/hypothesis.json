@@ -1,0 +1,94 @@
+{
+  "id": "hypothesis",
+  "ja": {
+    "term": "仮定",
+    "reading": "かてい",
+    "alt": [
+      "与えられた条件"
+    ]
+  },
+  "en": {
+    "term": "hypothesis",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "証明の「仮定」は、論理・定理の文脈では hypothesis（p ならば q の p）、米国の Geometry の答案では Given（2 列証明の最初の行の見出し）と言い、1 語に決まらない。英語に決まった言い方がない（hypothesis and conclusion などの形で話し言葉 2 件・書き言葉 0 件）。",
+  "domains": [
+    "geometry",
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "命題「p ならば q」の p の部分。証明では、正しいものとして出発点に使ってよい条件を指す。",
+  "definition_en": "The \"if\" part p of a statement \"if p, then q.\" In a proof, it is the condition you are allowed to assume from the start.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "You're allowed to use the hypothesis, so start by writing down what's given.",
+      "ja": "仮定は使っていいんだから、まず与えられていることを書き出そう。",
+      "register": "spoken"
+    },
+    {
+      "en": "In the statement \"If a triangle is equilateral, then it is isosceles,\" identify the hypothesis and the conclusion.",
+      "ja": "命題「三角形が正三角形ならば、二等辺三角形である」の仮定と結論を答えよ。",
+      "register": "written"
+    },
+    {
+      "en": "Given: AB ≅ CD and BC ≅ DA. Prove: △ABC ≅ △CDA.",
+      "ja": "仮定：AB = CD, BC = DA　結論：△ABC ≡ △CDA",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "統計の「仮説」（数I データの分析の仮説検定）も英語では hypothesis で、別の語。用例コーパスの hypothesis 単独はほとんどがこの統計の意味。",
+    "米国の Geometry の 2 列証明では、仮定を Given:、示すことを Prove: という見出しで書き、hypothesis とは書かない。",
+    "証明の仮定の意味の hypothesis は、用例コーパスで hypothesis and conclusion などの形の話し言葉 2 件・書き言葉 0 件しかない。"
+  ],
+  "related": [
+    "conditional-statement",
+    "proof",
+    "prove",
+    "two-column-proof",
+    "proposition"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "hypothesis and conclusion | hypothesis and the conclusion | hypotheses of the theorem | hypothesis of the theorem | hypothesis of the conditional | hypothesis of the implication | hypothesis of an implication": 2
+    },
+    "sources": [
+      "mit-18.01"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 2 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}
