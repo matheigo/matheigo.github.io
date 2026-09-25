@@ -1,0 +1,91 @@
+{
+  "id": "general-term",
+  "ja": {
+    "term": "一般項",
+    "reading": "いっぱんこう",
+    "alt": []
+  },
+  "en": {
+    "term": "general term",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "展開式や数列の項を、番号（k や n）を使って 1 つの式で表したもの。二項定理では nCr aⁿ⁻ʳ bʳ。",
+  "definition_en": "A formula for a typical term of an expansion or a sequence in terms of its index; in the binomial theorem, C(n, r) aⁿ⁻ʳ bʳ.",
+  "latex": "{}_n\\mathrm{C}_r\\, a^{n-r} b^r",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Write down the general term first, then choose r so the power of x is 4.",
+      "ja": "まず一般項を書いて、x の次数が 4 になるように r を決める。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the general term of the expansion of (2x − 1/x)^8, and find the constant term.",
+      "ja": "(2x − 1/x)⁸ の展開式の一般項を求め、定数項を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数列の一般項 aₙ も英語では general term（または the nth term、the formula for the nth term）。",
+    "用例コーパスの書き言葉 62 件のうち 54 件は OpenStax Algebra and Trigonometry（数列と二項定理）。"
+  ],
+  "related": [
+    "expansion",
+    "nth-term",
+    "find-the-nth-term",
+    "multinomial-theorem"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "general term": 44
+    },
+    "written": {
+      "general term": 62
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

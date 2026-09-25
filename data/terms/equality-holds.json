@@ -1,0 +1,88 @@
+{
+  "id": "equality-holds",
+  "ja": {
+    "term": "等号成立",
+    "reading": "とうごうせいりつ",
+    "alt": [
+      "等号が成り立つ"
+    ]
+  },
+  "en": {
+    "term": "equality holds",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで equality holds は話し言葉 2 件・書き言葉 2 件）。答案では equality holds when (if and only if) a = b、口頭では it's equal exactly when a = b のように言う。「等号成立条件」という名詞にまとめた言い方はない。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "不等式 A ≧ B で A = B となること。どのような場合に等号が成り立つかを答案に書くことが求められる。",
+  "definition_en": "In an inequality A ≥ B, the case A = B; Japanese solutions are expected to state when it happens.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "And the two sides are equal exactly when a equals b.",
+      "ja": "そして両辺が等しくなるのは、ちょうど a = b のとき。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the minimum value of x + 4/x for x > 0, and the value of x at which equality holds.",
+      "ja": "x > 0 のとき x + 4/x の最小値と、そのときの x の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "相加平均と相乗平均の関係で最小値を求めるとき、等号が成り立つ x が範囲内にあることを確かめる。"
+  ],
+  "related": [
+    "am-gm-inequality",
+    "prove"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "equality holds": 2
+    },
+    "written": {
+      "equality holds": 2
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 2 件 ／ 書 2 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

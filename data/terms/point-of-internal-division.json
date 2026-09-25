@@ -1,0 +1,80 @@
+{
+  "id": "point-of-internal-division",
+  "ja": {
+    "term": "内分点",
+    "reading": "ないぶんてん",
+    "alt": [
+      "内分する点"
+    ]
+  },
+  "en": {
+    "term": "point that divides the segment internally",
+    "alt": [
+      "point of internal division"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで 0 件、OpenStax にもない）。the point that divides the segment AB internally in the ratio m:n と説明する。内分点の座標の公式は英国・インドの教科書では section formula と呼ぶが、米国の用例コーパスには出てこない。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A",
+      "数II"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "線分 AB 上にあって、AP : PB = m : n となる点 P。座標は両端の座標を n : m の重みで平均したもの。",
+  "definition_en": "The point P on segment AB with AP : PB = m : n; its coordinates are the weighted average of the endpoints with weights n and m.",
+  "latex": "\\left(\\frac{n x_1 + m x_2}{m + n}, \\frac{n y_1 + m y_2}{m + n}\\right)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The point that divides AB in the ratio 2 to 1 is two-thirds of the way from A to B.",
+      "ja": "AB を 2 : 1 に内分する点は、A から B への 3 分の 2 のところにある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the coordinates of the point that divides the segment joining A(1, 2) and B(7, 5) internally in the ratio 2 : 1.",
+      "ja": "2 点 A(1, 2), B(7, 5) を結ぶ線分を 2 : 1 に内分する点の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "外分点は the point that divides the segment externally in the ratio m:n。米国の高校では外分をほぼ扱わない。"
+  ],
+  "related": [
+    "midpoint",
+    "centroid"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

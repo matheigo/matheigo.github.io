@@ -1,0 +1,111 @@
+{
+  "id": "trigonometric-identities",
+  "ja": {
+    "term": "三角比の相互関係",
+    "reading": "さんかくひのそうごかんけい",
+    "alt": [
+      "三角関数の相互関係"
+    ]
+  },
+  "en": {
+    "term": "trigonometric identities",
+    "alt": [],
+    "variants": [
+      {
+        "term": "trig identities",
+        "register": "spoken",
+        "note": "話し言葉の短い言い方。話し言葉で 41 件（MIT OCW 19・Khan Academy 11・NancyPi 5 ほか 6）、書き言葉で 1 件（すべて OpenStax Algebra and Trigonometry）。"
+      },
+      {
+        "term": "trigonometric identities",
+        "register": "both",
+        "note": "話し言葉で 18 件（MIT OCW 10・Khan Academy 5・The Organic Chemistry Tutor 2 ほか 1）、書き言葉で 42 件（OpenStax Algebra and Trigonometry 23・OpenStax Calculus 15・OpenStax Precalculus 4）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の「相互関係」は同じ角の sin・cos・tan の 3 つの関係式（sin²θ + cos²θ = 1、tan θ = sin θ / cos θ、1 + tan²θ = 1/cos²θ）を指す。英語の trigonometric identities は加法定理・倍角の公式まで含む三角関数の恒等式全体で、範囲が広い。3 つの関係式は Pythagorean identities と quotient identity と呼び分ける。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数I",
+      "数II"
+    ],
+    "us": [
+      "Geometry",
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "同じ角 θ の sin θ, cos θ, tan θ の間に成り立つ関係式。1 つの値からほかの値を求めるのに使う。",
+  "definition_en": "The relations among sin θ, cos θ, and tan θ for the same angle, used to find the other values from one of them.",
+  "latex": "\\sin^2\\theta + \\cos^2\\theta = 1,\\quad \\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta},\\quad 1 + \\tan^2\\theta = \\frac{1}{\\cos^2\\theta}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Use the Pythagorean identity to get cosine from sine, then divide to get tangent.",
+      "ja": "ピタゴラスの関係式で sin から cos を出し、割って tan を出す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use trigonometric identities to find cos θ and tan θ, given sin θ = 1/3 and 90° < θ < 180°.",
+      "ja": "sin θ = 1/3, 90° < θ < 180° のとき、cos θ と tan θ の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "1 + tan²θ = 1/cos²θ は米国の教科書では 1 + tan²θ = sec²θ と secant で書く（OpenStax Algebra and Trigonometry）。日本の高校では sec を使わない。",
+    "話し言葉では trig identities が多い（41 件。trigonometric identities は 18 件）。"
+  ],
+  "related": [
+    "tangent"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "trig identities": 41,
+      "trigonometric identities": 18
+    },
+    "written": {
+      "trigonometric identities": 42,
+      "trig identities": 1
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

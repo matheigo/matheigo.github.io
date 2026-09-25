@@ -436,6 +436,13 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   "geometric-middle-term": { "geometric mean": "geometric mean of … and" },
   "modulus-of-a-complex-number": { modulus: "modulus of" }, // not the modulus of a congruence
   "argument-of-a-complex-number": { argument: "argument of … complex number" }, // not the argument of a function
+  // Phase 2 代数 2・Precalculus の単元
+  solution: { solution: "solution to the equation" }, // not the solution to a homework problem
+  remainder: { remainder: "the remainder is" }, // not the rest of a region
+  symmetric: { symmetric: "symmetric about" }, // not a symmetric matrix
+  tangent: { tangent: "tangent of", tan: "tan of" }, // the ratio, not the tangent line
+  expansion: { expansion: "expansion of" },
+  identity: { identity: "an identity" }, // not the identity matrix or function
 };
 
 /** The wording a candidate is counted and recorded as. */

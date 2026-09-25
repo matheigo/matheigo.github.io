@@ -1,0 +1,93 @@
+{
+  "id": "imaginary-unit",
+  "ja": {
+    "term": "虚数単位",
+    "reading": "きょすうたんい",
+    "alt": [
+      "i"
+    ]
+  },
+  "en": {
+    "term": "imaginary unit",
+    "alt": [],
+    "variants": [
+      {
+        "term": "square root of negative one",
+        "register": "spoken",
+        "note": "i を説明するときの言い方。話し言葉で 34 件（3Blue1Brown 20・The Organic Chemistry Tutor 7・Khan Academy 4 ほか 3）、書き言葉では 0 件。"
+      }
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Integrated Math 3",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "2 乗すると −1 になる数 i。",
+  "definition_en": "The number i whose square is −1.",
+  "latex": "i^2 = -1",
+  "spoken_en": "i squared equals negative one",
+  "examples": [
+    {
+      "en": "i is the square root of negative one, so i squared is negative one.",
+      "ja": "i は √−1 なので、i² は −1。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let i be the imaginary unit. Compute i^{2027}.",
+      "ja": "i を虚数単位とする。i²⁰²⁷ を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスで imaginary unit は話し言葉 6 件・書き言葉 0 件。授業では i を square root of negative one と説明することが多い（話し言葉 34 件、うち 3Blue1Brown 20）。",
+    "電気工学では i の代わりに j を使う。"
+  ],
+  "related": [
+    "complex-number",
+    "imaginary-number",
+    "square-root-of-a-negative-number"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "虚数単位",
+      "en": "Imaginary unit"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "square root of negative one": 34,
+      "imaginary unit": 6
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

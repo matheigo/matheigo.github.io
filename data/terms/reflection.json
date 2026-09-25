@@ -1,0 +1,105 @@
+{
+  "id": "reflection",
+  "ja": {
+    "term": "対称移動",
+    "reading": "たいしょういどう",
+    "alt": [
+      "反射",
+      "折り返し"
+    ]
+  },
+  "en": {
+    "term": "reflection",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数I",
+      "数II"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry",
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "図形を直線（または点）に関して対称な位置に移すこと。座標平面では x 軸・y 軸・直線 y = x・原点に関する対称移動をよく扱う。",
+  "definition_en": "Moving a figure to its mirror image across a line (or through a point); on the coordinate plane, usually across an axis, the line y = x, or the origin.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A reflection across the y-axis just changes x to negative x.",
+      "ja": "y 軸に関する対称移動は、x を −x にするだけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the point that is the reflection of P(2, 5) across the line y = x + 1.",
+      "ja": "直線 y = x + 1 に関して点 P(2, 5) と対称な点を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "reflection across the x-axis",
+      "ja": "x 軸に関する対称移動"
+    }
+  ],
+  "pitfalls": [
+    "「〜に関して対称な点」は the reflection of P across the line、または the point symmetric to P about the line。",
+    "前置詞は across ／ over ／ about が使われる（用例コーパスでは OpenStax が about、Khan Academy が over を使う）。",
+    "話し言葉では flip とも言う（件数は他の意味の flip を含むので数えていない）。"
+  ],
+  "related": [
+    "symmetric",
+    "rotation",
+    "perpendicular-bisector"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "reflection": 46
+    },
+    "written": {
+      "reflection": 86,
+      "reflection across the x-axis": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

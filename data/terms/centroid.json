@@ -1,0 +1,90 @@
+{
+  "id": "centroid",
+  "ja": {
+    "term": "重心",
+    "reading": "じゅうしん",
+    "alt": [
+      "重心の座標"
+    ]
+  },
+  "en": {
+    "term": "centroid",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A",
+      "数II"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "三角形の 3 本の中線が交わる点。座標は 3 頂点の座標の平均。",
+  "definition_en": "The point where the three medians of a triangle meet; its coordinates are the averages of the vertices' coordinates.",
+  "latex": "\\left(\\frac{x_1 + x_2 + x_3}{3}, \\frac{y_1 + y_2 + y_3}{3}\\right)",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The centroid is just the average of the three vertices.",
+      "ja": "重心は 3 頂点の平均をとるだけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the coordinates of the centroid of the triangle with vertices (0, 0), (6, 0), and (3, 9).",
+      "ja": "3 点 (0, 0), (6, 0), (3, 9) を頂点とする三角形の重心の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの centroid の多くは、OpenStax Calculus の「平面図形の重心（質量が一様な板の重心）」の意味。三角形の重心はその特別な場合。",
+    "物理の重心（質量中心）は center of mass（center-of-mass を参照）。"
+  ],
+  "related": [
+    "midpoint",
+    "point-of-internal-division",
+    "center-of-mass"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "centroid": 16
+    },
+    "written": {
+      "centroid": 66
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-24"
+  }
+}

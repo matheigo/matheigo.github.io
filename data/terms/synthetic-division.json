@@ -1,0 +1,89 @@
+{
+  "id": "synthetic-division",
+  "ja": {
+    "term": "組立除法",
+    "reading": "くみたてじょほう",
+    "alt": []
+  },
+  "en": {
+    "term": "synthetic division",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "整式を 1 次式 x − k で割るとき、係数だけを並べて商と余りを求める簡便な方法。",
+  "definition_en": "A shortcut for dividing a polynomial by x − k that works with the coefficients only.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's use synthetic division with k = 2: bring down the 1, multiply, add.",
+      "ja": "k = 2 で組立除法を使おう。1 を下ろして、掛けて、足す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use synthetic division to divide x³ − 4x² + x + 6 by x − 3.",
+      "ja": "組立除法を用いて、x³ − 4x² + x + 6 を x − 3 で割れ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の Algebra 2 ／ Precalculus では標準の手順（用例コーパスで話し言葉 74 件・書き言葉 50 件）。日本の教科書では発展的な扱いのことがある。"
+  ],
+  "related": [
+    "polynomial-division",
+    "remainder-theorem"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "組立除法",
+      "en": "Synthetic division"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "synthetic division": 74
+    },
+    "written": {
+      "synthetic division": 50
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "openstax-algtrig",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

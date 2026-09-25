@@ -1,0 +1,83 @@
+{
+  "id": "absolute-value-equation",
+  "ja": {
+    "term": "絶対値を含む方程式",
+    "reading": "ぜったいちをふくむほうていしき",
+    "alt": [
+      "絶対値方程式"
+    ]
+  },
+  "en": {
+    "term": "absolute value equation",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "未知数を絶対値記号の中に含む方程式。中身の符号で場合分けして解く。",
+  "definition_en": "An equation with the unknown inside absolute value bars, solved by splitting into cases by the sign of the inside.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For |x − 3| = 5, split it into two cases: x − 3 = 5 or x − 3 = −5.",
+      "ja": "|x − 3| = 5 は x − 3 = 5 または x − 3 = −5 の 2 つに分ける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the absolute value equation |2x + 1| = 7.",
+      "ja": "方程式 |2x + 1| = 7 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは書き言葉の 28 件すべてが OpenStax Algebra and Trigonometry。話し言葉は 2 件。"
+  ],
+  "related": [
+    "solve"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "absolute value equation": 2
+    },
+    "written": {
+      "absolute value equation": 28
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

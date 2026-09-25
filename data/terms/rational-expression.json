@@ -1,0 +1,86 @@
+{
+  "id": "rational-expression",
+  "ja": {
+    "term": "分数式",
+    "reading": "ぶんすうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "rational expression",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "分母に文字を含む式で、整式を整式で割った形のもの。約分・通分して計算する。",
+  "definition_en": "An expression that is a quotient of two polynomials, with a variable in the denominator; simplified by canceling and by common denominators.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To add these rational expressions, find a common denominator first.",
+      "ja": "これらの分数式を足すには、まず通分する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Simplify the rational expression (x² − 1)/(x² + 3x + 2).",
+      "ja": "分数式 (x² − 1)/(x² + 3x + 2) を簡単にせよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "分数式の値が定義されない x（分母が 0 になる x）を除くことを忘れない。米国の教科書は excluded values（または restrictions）と呼ぶ。"
+  ],
+  "related": [
+    "complex-fraction",
+    "reduce",
+    "find-a-common-denominator",
+    "rational-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "rational expression": 89
+    },
+    "written": {
+      "rational expression": 132
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

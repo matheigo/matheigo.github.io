@@ -1,0 +1,113 @@
+{
+  "id": "tangent-line",
+  "ja": {
+    "term": "接線",
+    "reading": "せっせん",
+    "alt": []
+  },
+  "en": {
+    "term": "tangent line",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "Geometry",
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "曲線（円など）と 1 点で接する直線。その点を接点という。",
+  "definition_en": "A line that touches a curve, such as a circle, at a point without crossing it there; that point is the point of tangency.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The tangent line to a circle is perpendicular to the radius at the point of tangency.",
+      "ja": "円の接線は、接点を通る半径に垂直。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the equation of the tangent line to the circle x² + y² = 25 at the point (3, 4).",
+      "ja": "円 x² + y² = 25 上の点 (3, 4) における接線の方程式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "tangent line to the circle",
+      "ja": "円の接線"
+    }
+  ],
+  "pitfalls": [
+    "円 x² + y² = r² 上の点 (x₁, y₁) における接線は x₁x + y₁y = r²。この公式に英語の決まった名前はない。",
+    "tangent だけでは三角比の tan とまぎれるので、線の意味では tangent line と言うことが多い（話し言葉 701 件）。「接する」は is tangent to。"
+  ],
+  "related": [
+    "point-of-tangency",
+    "slope-of-the-tangent-line",
+    "normal-line",
+    "find-the-equation-of-the-tangent-line"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "接線",
+      "en": "Tangent"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "tangent line": 701,
+      "tangent line to the circle": 3
+    },
+    "written": {
+      "tangent line": 322
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

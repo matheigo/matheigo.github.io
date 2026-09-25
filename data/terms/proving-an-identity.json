@@ -1,0 +1,85 @@
+{
+  "id": "proving-an-identity",
+  "ja": {
+    "term": "等式を証明する",
+    "reading": "とうしきをしょうめいする",
+    "alt": [
+      "等式の証明",
+      "恒等式の検証"
+    ]
+  },
+  "en": {
+    "term": "verify the identity",
+    "alt": [
+      "prove the identity"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "等式が成り立つことを示す。一方の辺を変形して他方に一致させる、両辺をそれぞれ同じ式に変形する、差が 0 になることを示す、などの方法がある。",
+  "definition_en": "To show that an equation is an identity, for example by transforming one side into the other or by showing that the difference of the two sides is zero.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Start with the more complicated side and work toward the other side.",
+      "ja": "複雑なほうの辺から始めて、もう一方の辺に近づけていく。",
+      "register": "spoken"
+    },
+    {
+      "en": "Verify the identity (sin θ + cos θ)² = 1 + 2 sin θ cos θ.",
+      "ja": "等式 (sin θ + cos θ)² = 1 + 2 sin θ cos θ を証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Algebra and Trigonometry は三角関数の恒等式の証明を verify the identity と書く（書き言葉 16 件中 15 件）。prove the identity は 5 件。話し言葉は 0 件。",
+    "証明の途中で両辺に同じ操作をして 1 = 1 を導く書き方は、米国の教科書でも避ける（片側を変形していく）。"
+  ],
+  "related": [
+    "identity",
+    "prove",
+    "trigonometric-identities"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "verify the identity": 16,
+      "prove the identity": 5
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

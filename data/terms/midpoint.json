@@ -1,0 +1,110 @@
+{
+  "id": "midpoint",
+  "ja": {
+    "term": "中点",
+    "reading": "ちゅうてん",
+    "alt": [
+      "中点の座標"
+    ]
+  },
+  "en": {
+    "term": "midpoint",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数II"
+    ],
+    "us": [
+      "Geometry",
+      "Algebra 1",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "線分を 2 等分する点。座標平面では両端の座標の平均が中点の座標になる。",
+  "definition_en": "The point that divides a segment into two equal parts; its coordinates are the averages of the endpoints' coordinates.",
+  "latex": "\\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)",
+  "spoken_en": "x one plus x two over two, comma, y one plus y two over two",
+  "examples": [
+    {
+      "en": "The midpoint is just the average of the x's and the average of the y's.",
+      "ja": "中点は x 座標の平均と y 座標の平均をとるだけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the coordinates of the midpoint of the segment joining (−2, 3) and (4, 7).",
+      "ja": "2 点 (−2, 3), (4, 7) を結ぶ線分の中点の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "midpoint formula",
+      "ja": "中点の公式"
+    }
+  ],
+  "pitfalls": [
+    "中点の座標の式は米国では midpoint formula と名前で呼ぶ（OpenStax Algebra and Trigonometry に 12 件）。"
+  ],
+  "related": [
+    "point-of-internal-division",
+    "perpendicular-bisector",
+    "centroid"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "中点",
+      "en": "Midpoint"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "midpoint": 105,
+      "midpoint formula": 1
+    },
+    "written": {
+      "midpoint": 129,
+      "midpoint formula": 12
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

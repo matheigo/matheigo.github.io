@@ -730,3 +730,159 @@ PHASE2C_OUT_OF_SCOPE = {
     "differential-operator": "beyond-v1",
     "implicit-function-theorem": "beyond-v1",
 }
+
+
+# ------------------------------------- Phase 2 代数 2・Precalculus の単元
+# The same rules again (docs/DECISIONS.md "Phase 2 代数 2・Precalculus の単元"),
+# before generating 数II 三角関数・指数関数と対数関数・式と証明・複素数と方程式・
+# 図形と方程式 and every Precalculus unit. Applied by fix_phase1.py step 11,
+# after step 10.
+#
+# As in step 10, a row merged into a row of an earlier unit that has not been
+# generated yet (solve, remainder, tangent-line, vector, ...) brings that row
+# into these units. center-of-rotation (中1) goes into rotation, which the
+# series units generated early (your note on the series report).
+PHASE2D_SAME = [
+    # 係数比較 and 係数を比較する: the same English (compare / equate coefficients)
+    ("comparing-coefficients", "compare-coefficients", "into"),
+    # 約分 and 約分する; 通分 and 通分する (differentiate / find the derivative)
+    ("reducing-a-fraction", "reduce", "into"),
+    ("finding-a-common-denominator", "find-a-common-denominator", "into"),
+    ("partial-fractions", "partial-fraction-decomposition", "into"),
+    # 整式の除法 is done by 筆算 (polynomial long division)
+    ("long-division", "polynomial-division", "into"),
+    # 等式の証明 and the US "verifying identities"
+    ("verifying-identities", "proving-an-identity", "into"),
+    ("polynomial-equation-of-degree-n", "polynomial-equation-of-higher-degree", "into"),
+    # 円の方程式 is the standard form (x − a)² + (y − b)² = r²
+    ("standard-form-of-a-circle", "equation-of-a-circle", "into"),
+    # 右上がり ／ 単調増加 = is increasing (数II 微分の考え, generated)
+    ("increasing", "is-monotonically-increasing", "into"),
+    ("trigonometric-form-of-a-complex-number", "polar-form", "into"),
+    ("finding-an-inverse", "find-the-inverse", "into"),
+    ("area-under-a-curve", "area-under-the-curve", "into"),
+]
+
+# Section names -> the entry for what they teach.
+PHASE2D_SECTION = [
+    ("operations-with-rational-expressions", "rational-expression"),
+    ("absolute-value-and-inequalities", "triangle-inequality"),  # |a + b| ≦ |a| + |b|
+    ("arithmetic-of-complex-numbers", "complex-number"),
+    ("solutions-of-a-quadratic-equation", "quadratic-formula"),
+    ("real-and-nonreal-solutions", "imaginary-solution"),
+    ("graphs-of-trigonometric-functions", "trigonometric-function"),
+    ("maximum-and-minimum-of-trigonometric-functions", "trigonometric-function"),
+    ("symmetry-of-functions", "even-function"),
+    ("product-to-sum-and-sum-to-product", "product-to-sum-formulas"),
+    ("graphs-of-inverse-trig-functions", "inverse-trigonometric-function"),
+    ("composition-with-inverse-trig", "inverse-trigonometric-function"),
+    ("extending-the-exponent", "laws-of-exponents"),
+    ("graph-of-an-exponential-function", "exponential-function"),
+    ("definition-of-a-logarithm", "logarithm"),
+    ("graph-of-a-logarithmic-function", "logarithmic-function"),
+    ("applications-of-exponentials-and-logs", "exponential-model"),
+    ("graphing-rational-functions", "rational-function"),
+    ("magnitude-and-direction", "vector"),
+    ("graphs-of-polar-equations", "polar-equation"),
+    ("focus-and-directrix", "focus"),
+    ("major-and-minor-axes", "major-axis"),
+    ("intuitive-definition-of-a-limit", "limit"),
+    ("finding-limits-numerically", "find-the-limit"),
+    ("finding-limits-graphically", "find-the-limit"),
+    ("limit-definition-of-the-slope", "tangent-problem"),
+    # 二次式の因数分解 is the subsection of 解と係数の関係 that factors ax² + bx + c
+    # as a(x − α)(x − β) over the complex numbers
+    ("factoring-over-the-complex-numbers", "relationship-between-roots-and-coefficients"),
+]
+
+# A term with its argument filled in, a collocation of it, or a task on it.
+PHASE2D_INSTANCE = [
+    ("solve-for-theta", "solve-for"),
+    ("divide-using-synthetic-division", "synthetic-division"),
+    ("is-an-identity", "identity"),
+    ("write-as-a-square", "completing-the-square"),
+    ("equality-holds-if-and-only-if", "equality-holds"),
+    ("general-term-of-the-expansion", "general-term"),
+    ("rational-expression-in-lowest-terms", "reduce"),
+    ("proving-an-inequality", "prove"),  # 不等式の証明 = prove the inequality
+    ("find-the-remainder", "remainder"),
+    ("compare-the-exponents", "compare"),
+    ("compare-the-arguments", "compare"),
+    ("compare-real-and-imaginary-parts", "equality-of-complex-numbers"),
+    ("two-distinct-imaginary-solutions", "imaginary-solution"),
+    ("classify-the-solutions", "discriminant"),
+    ("sum-of-the-roots", "relationship-between-roots-and-coefficients"),
+    ("product-of-the-roots", "relationship-between-roots-and-coefficients"),
+    ("use-the-factor-theorem", "factor-theorem"),
+    ("cube-roots-of-unity", "nth-roots-of-unity"),  # n = 3
+    ("omega", "nth-roots-of-unity"),  # ω, the imaginary cube root of 1
+    ("rational-root", "rational-root-theorem"),
+    ("real-coefficients", "conjugate-roots"),  # polynomial with real coefficients
+    ("i-squared-equals-negative-one", "imaginary-unit"),
+    ("take-the-conjugate", "complex-conjugate"),
+    ("has-a-solution", "solution"),
+    ("solve-the-equation", "solve"),
+    ("coordinates-of-the-point-dividing-the-segment", "point-of-internal-division"),
+    ("slopes-multiply-to-negative-one", "perpendicular-lines"),
+    ("tangent-to-a-circle", "tangent-line"),
+    ("equation-of-the-tangent-line", "tangent-line"),
+    ("equation-of-the-locus", "locus"),
+    ("set-of-points-satisfying-the-condition", "locus"),  # the set of all points … such that
+    ("find-the-locus", "locus"),
+    ("region-defined-by-an-inequality", "region"),
+    ("region-defined-by-a-system-of-inequalities", "region"),
+    ("including-the-boundary", "boundary"),
+    ("not-including-the-boundary", "boundary"),
+    ("coordinates-of-the-intersection", "point-of-intersection"),
+    ("equation-of-the-perpendicular-bisector", "perpendicular-bisector"),
+    ("reflection-of-a-point", "reflection"),
+    ("symmetric-about-the-line", "symmetric"),
+    ("find-the-distance", "distance"),
+    ("shade-the-region", "sketch"),  # 領域を図示せよ
+    ("eliminate-the-parameter", "parameter"),
+    ("eliminating-the-parameter", "parameter"),
+    ("express-in-radians", "radian-measure"),
+    ("convert-to-degrees", "degree-measure"),
+    ("find-the-period", "period"),
+    ("use-the-addition-formula", "angle-addition-formulas"),
+    ("use-the-double-angle-formula", "double-angle-formulas"),
+    ("double-the-angle", "double-angle-formulas"),
+    ("combine-into-a-single-sine", "auxiliary-angle-form"),
+    ("find-tan-theta", "tangent"),
+    ("shift-the-graph-horizontally", "phase-shift"),
+    ("the-argument-must-be-positive", "argument"),  # 真数条件
+    ("evaluate-the-logarithm", "logarithm"),
+    ("find-the-number-of-digits", "number-of-digits"),
+    ("complex-zeros", "zeros-of-a-polynomial"),
+    ("nth-roots-of-a-complex-number", "nth-root"),
+    ("foci-of-an-ellipse", "focus"),
+    ("asymptotes-of-a-hyperbola", "asymptote"),
+    ("center-of-rotation", "rotation"),  # 中1, into the entry generated with the series units
+]
+
+# Readings of a symbol. combination-ncr is new (C(n, r), "n choose r").
+PHASE2D_TO_SYMBOLS = {
+    "combination-notation": "combination-ncr",
+}
+
+# Lines of a proof, of a problem statement or of a procedure, not terms
+# (Phase 3 phrases candidates).
+PHASE2D_TO_PHRASES = [
+    "squares-are-nonnegative",
+    "take-the-difference-of-the-two-sides",
+    "left-side-minus-right-side",
+    "form-the-difference",
+    "the-equation-holds",
+    "what-we-want-to-show",
+    "involves-imaginary-numbers",
+    "one-of-the-solutions-is",
+    "the-other-solutions",
+    "as-p-moves",
+    "conversely",
+    "relation-between-x-and-y",
+    "rewrite-the-expression",
+    "on-the-interval-from-0-to-2",
+    "the-value-of-sine-theta",
+    "the-base-is-greater-than-1",
+    "the-domain-is-the-positive-reals",
+]

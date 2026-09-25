@@ -1,0 +1,82 @@
+{
+  "id": "division-algorithm",
+  "ja": {
+    "term": "割り算の原理",
+    "reading": "わりざんのげんり",
+    "alt": [
+      "除法の定理",
+      "除法の原理"
+    ]
+  },
+  "en": {
+    "term": "division algorithm",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "整式（または整数）A と B（≠ 0）に対して、A = BQ + R（R の次数は B より小さい）を満たす商 Q と余り R がただ 1 組あるという事実。",
+  "definition_en": "The fact that for polynomials (or integers) A and B ≠ 0 there is exactly one quotient Q and remainder R with A = BQ + R, R of lower degree than B.",
+  "latex": "A = BQ + R",
+  "spoken_en": "A equals B Q plus R",
+  "examples": [
+    {
+      "en": "By the division algorithm, f of x equals x minus 2 times q of x, plus some constant r.",
+      "ja": "割り算の原理から、f(x) = (x − 2)q(x) + r（r は定数）と書ける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the division algorithm to write x³ + 1 in the form (x − 1)Q(x) + R.",
+      "ja": "割り算の原理を使って、x³ + 1 を (x − 1)Q(x) + R の形に表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは書き言葉 18 件（OpenStax Algebra and Trigonometry 15・MIT の講義ノート 3）、話し言葉は 0 件。授業では式 A = BQ + R をそのまま言うことが多い。"
+  ],
+  "related": [
+    "polynomial-division",
+    "remainder",
+    "remainder-theorem"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "division algorithm": 18
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-24"
+  }
+}

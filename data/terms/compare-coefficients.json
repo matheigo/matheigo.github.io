@@ -1,0 +1,101 @@
+{
+  "id": "compare-coefficients",
+  "ja": {
+    "term": "係数を比較する",
+    "reading": "けいすうをひかくする",
+    "alt": [
+      "係数を比べる",
+      "係数比較",
+      "係数比較法"
+    ]
+  },
+  "en": {
+    "term": "equate coefficients",
+    "alt": [
+      "compare coefficients"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3",
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "恒等式の両辺で、同じ次数の項の係数が等しいとおいて未知の係数を決める。",
+  "definition_en": "To find unknown coefficients by setting the coefficients of like powers on the two sides of an identity equal to each other.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Now equate coefficients: the x² terms give A + B = 3.",
+      "ja": "では係数を比較しよう。x² の項から A + B = 3。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find a, b, c so that x² + 2x + 3 = a(x − 1)² + b(x − 1) + c holds for all x, by equating coefficients.",
+      "ja": "x² + 2x + 3 = a(x − 1)² + b(x − 1) + c が x についての恒等式となるように、係数を比較して a, b, c を定めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語は「比べる」（compare）より「等しいとおく」（equate）で言うことが多い。OpenStax Calculus Volume 2 は部分分数分解の係数を決める手順を equate coefficients と書く。用例コーパスは少ない（話し言葉 4 件・書き言葉 6 件）。",
+    "「係数比較法」と「数値代入法」は日本の教科書の呼び名。英語はどちらも手順として言う（equate coefficients ／ plug in convenient values of x）。"
+  ],
+  "related": [
+    "identity",
+    "substituting-values",
+    "partial-fraction-decomposition"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "compare coefficients": 1,
+      "equate coefficients": 3
+    },
+    "written": {
+      "equate coefficients": 6
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.03",
+      "openstax-calculus",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 equate coefficients（本文 6 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "imaginary-part",
+  "ja": {
+    "term": "虚部",
+    "reading": "きょぶ",
+    "alt": []
+  },
+  "en": {
+    "term": "imaginary part",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "複素数 a + bi の b。bi ではなく実数 b を指す。",
+  "definition_en": "The real number b in the complex number a + bi (b, not bi).",
+  "latex": "\\operatorname{Im}(a + bi) = b",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Careful — the imaginary part is just b, not bi.",
+      "ja": "注意。虚部は b で、bi ではない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find all real x for which the imaginary part of (x + i)² is 4.",
+      "ja": "(x + i)² の虚部が 4 となる実数 x をすべて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "虚部を bi と書く誤りは英語の教室でも注意される（The imaginary part is a real number.）。"
+  ],
+  "related": [
+    "real-part",
+    "complex-number",
+    "pure-imaginary-number"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "imaginary part": 137
+    },
+    "written": {
+      "imaginary part": 32
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

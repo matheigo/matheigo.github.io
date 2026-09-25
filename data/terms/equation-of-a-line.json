@@ -1,0 +1,97 @@
+{
+  "id": "equation-of-a-line",
+  "ja": {
+    "term": "直線の式",
+    "reading": "ちょくせんのしき",
+    "alt": [
+      "直線の方程式"
+    ]
+  },
+  "en": {
+    "term": "equation of a line",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "数II"
+    ],
+    "us": [
+      "Algebra 1",
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "座標平面上の直線を表す x, y の 1 次方程式。傾きと通る点、または通る 2 点から求める。",
+  "definition_en": "A first-degree equation in x and y whose graph is a given line, found from its slope and a point, or from two points.",
+  "latex": "y - y_1 = m(x - x_1)",
+  "spoken_en": "y minus y one equals m times x minus x one",
+  "examples": [
+    {
+      "en": "Once you have the slope and a point, you can write the equation of the line.",
+      "ja": "傾きと 1 点がわかれば直線の式が書ける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the equation of the line passing through (1, −2) and (3, 4).",
+      "ja": "2 点 (1, −2), (3, 4) を通る直線の方程式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "冠詞だけの違いの equation of the line も同じくらい使う（話し言葉 26 件・書き言葉 75 件。見出しの a は 21 ／ 67 件）。",
+    "米国では形に名前をつけて呼ぶ: slope-intercept form（y = mx + b）、point-slope form（y − y₁ = m(x − x₁)）、standard form（Ax + By = C）。"
+  ],
+  "related": [
+    "parallel-lines",
+    "find-the-equation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "equation of a line": 21
+    },
+    "written": {
+      "equation of a line": 67
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

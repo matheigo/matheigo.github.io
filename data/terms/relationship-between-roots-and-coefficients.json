@@ -1,0 +1,102 @@
+{
+  "id": "relationship-between-roots-and-coefficients",
+  "ja": {
+    "term": "解と係数の関係",
+    "reading": "かいとけいすうのかんけい",
+    "alt": [
+      "根と係数の関係"
+    ]
+  },
+  "en": {
+    "term": "relationship between roots and coefficients",
+    "alt": [
+      "Vieta's formulas",
+      "sum and product of the roots"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで 0 件、OpenStax にもない）。大学の教科書や Wikipedia では Vieta's formulas と呼ぶが、米国の高校の授業では名前を出さず、the sum of the roots is −b/a, the product is c/a と式で言う。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "2 次方程式 ax² + bx + c = 0 の 2 つの解 α, β について、α + β = −b/a、αβ = c/a が成り立つこと。3 次以上の方程式にも同様の関係がある。",
+  "definition_en": "For the roots α and β of ax² + bx + c = 0, α + β = −b/a and αβ = c/a; similar relations hold for higher-degree equations.",
+  "latex": "\\alpha + \\beta = -\\frac{b}{a},\\quad \\alpha\\beta = \\frac{c}{a}",
+  "spoken_en": "alpha plus beta equals negative b over a, alpha beta equals c over a",
+  "examples": [
+    {
+      "en": "The sum of the roots is negative b over a, and the product is c over a.",
+      "ja": "2 つの解の和は −b/a、積は c/a。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let α and β be the roots of 2x² − 3x + 5 = 0. Find the value of α² + β².",
+      "ja": "2 次方程式 2x² − 3x + 5 = 0 の 2 つの解を α, β とする。α² + β² の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "sum of the roots",
+      "ja": "2 つの解の和"
+    },
+    {
+      "en": "product of the roots",
+      "ja": "2 つの解の積"
+    }
+  ],
+  "pitfalls": [
+    "2 次式の因数分解 ax² + bx + c = a(x − α)(x − β)（複素数の範囲）は、英語では factor over the complex numbers と説明する。",
+    "日本語の「解」と「根」はここでは同じ。英語は roots と言うことが多い。"
+  ],
+  "related": [
+    "quadratic-formula",
+    "discriminant",
+    "imaginary-solution"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "根と係数の関係",
+      "en": "Vieta's formulas"
+    },
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "product of the roots": 3,
+      "sum of the roots": 1
+    },
+    "sources": [
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 4 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

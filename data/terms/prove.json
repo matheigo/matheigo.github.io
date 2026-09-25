@@ -1,0 +1,131 @@
+{
+  "id": "prove",
+  "ja": {
+    "term": "証明する",
+    "reading": "しょうめいする",
+    "alt": [
+      "証明せよ",
+      "示す"
+    ]
+  },
+  "en": {
+    "term": "prove",
+    "alt": [],
+    "variants": [
+      {
+        "term": "prove",
+        "register": "both",
+        "note": "話し言葉で 1003 件（MIT OCW 607・Professor Leonard 173・Khan Academy 149 ほか 74）、書き言葉で 496 件（MIT の講義ノート 276・OpenStax Calculus 163・OpenStax Algebra and Trigonometry 40 ほか 17）。"
+      },
+      {
+        "term": "show that",
+        "register": "both",
+        "note": "問題文の「〜を示せ」。話し言葉で 393 件（MIT OCW 214・Khan Academy 66・Professor Leonard 59 ほか 54）、書き言葉で 598 件（OpenStax Calculus 407・MIT の講義ノート 103・OpenStax Algebra and Trigonometry 60 ほか 28）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "数II"
+    ],
+    "us": [
+      "Algebra 1",
+      "Geometry",
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "ある命題が正しいことを、定義・定理・仮定から筋道を立てて示す。",
+  "definition_en": "To establish that a statement is true by reasoning from definitions, theorems, and assumptions.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To prove this inequality, just look at the left side minus the right side.",
+      "ja": "この不等式を証明するには、左辺 − 右辺を考えればいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove that a² + b² ≥ 2ab for all real numbers a and b.",
+      "ja": "すべての実数 a, b について a² + b² ≧ 2ab であることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "prove the inequality",
+      "ja": "不等式を証明する"
+    }
+  ],
+  "pitfalls": [
+    "問題文の「〜を示せ」は Show that …。用例コーパスでは話し言葉は prove、書き言葉は show that が多い（書き言葉の show that の 407 件は OpenStax Calculus）。",
+    "不等式の証明の定番（差をとる、平方の和にする、相加平均と相乗平均の関係を使う）は、英語でも手順として説明する（take the difference ／ write it as a sum of squares ／ use AM-GM）。"
+  ],
+  "related": [
+    "proving-an-identity",
+    "am-gm-inequality",
+    "proof-by-induction"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "prove": 1003,
+      "show that": 393
+    },
+    "written": {
+      "show that": 598,
+      "prove": 496
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

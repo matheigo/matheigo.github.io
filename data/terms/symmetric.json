@@ -1,0 +1,112 @@
+{
+  "id": "symmetric",
+  "ja": {
+    "term": "対称な",
+    "reading": "たいしょうな",
+    "alt": [
+      "対称である"
+    ]
+  },
+  "en": {
+    "term": "symmetric",
+    "alt": [],
+    "variants": [
+      {
+        "term": "symmetric",
+        "register": "both",
+        "note": "symmetric about の形で数えた。話し言葉で 37 件（Professor Leonard 28・MIT OCW 4・patrickJMT 3 ほか 2）、書き言葉で 62 件（OpenStax Calculus 31・OpenStax Algebra and Trigonometry 27・OpenStax Introductory Statistics 3 ほか 1）。"
+      },
+      {
+        "term": "symmetric with respect to",
+        "register": "written",
+        "note": "書き言葉（ほぼ OpenStax Algebra and Trigonometry）の言い方。話し言葉で 1 件（すべて MIT OCW）、書き言葉で 39 件（OpenStax Algebra and Trigonometry 30・OpenStax Calculus 9）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数II"
+    ],
+    "us": [
+      "Geometry",
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "図形が、ある直線（または点）に関して折り返し（または 180° 回転し）ても重なる状態。2 点についても言う。",
+  "definition_en": "Describing a figure (or a pair of points) that maps onto itself (onto each other) under a reflection across a line or a half-turn about a point.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The graph of an even function is symmetric about the y-axis.",
+      "ja": "偶関数のグラフは y 軸に関して対称。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the points A and B are symmetric with respect to the line y = x.",
+      "ja": "2 点 A, B が直線 y = x に関して対称であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "symmetric だけでは 18.06 の symmetric matrix（対称行列）などが多いので、用例コーパスでは symmetric about の形で数えた。書き言葉では symmetric with respect to が併記になる（62 ／ 39 件）。",
+    "「点対称」は symmetric about the origin（原点に関して）や symmetric about a point。"
+  ],
+  "related": [
+    "reflection"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "symmetric about": 37,
+      "symmetric with respect to": 1
+    },
+    "written": {
+      "symmetric about": 62,
+      "symmetric with respect to": 39
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

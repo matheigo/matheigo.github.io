@@ -3,7 +3,9 @@
   "ja": {
     "term": "1 の n 乗根",
     "reading": "いちのえぬじょうこん",
-    "alt": []
+    "alt": [
+      "1 の 3 乗根"
+    ]
   },
   "en": {
     "term": "nth roots of unity",
@@ -18,10 +20,12 @@
   ],
   "level": {
     "jp": [
+      "数II",
       "数C"
     ],
     "us": [
-      "Precalculus"
+      "Precalculus",
+      "Algebra 2"
     ]
   },
   "definition_ja": "zⁿ = 1 を満たす n 個の複素数。複素数平面では単位円に内接する正 n 角形の頂点になる。",
@@ -38,11 +42,17 @@
       "en": "Find all the sixth roots of unity and plot them in the complex plane.",
       "ja": "1 の 6 乗根をすべて求め、複素数平面上に図示せよ。",
       "register": "written"
+    },
+    {
+      "en": "Let ω be one of the imaginary cube roots of unity. Find the value of ω^{100} + ω^{50} + 1.",
+      "ja": "ω を 1 の 3 乗根のうち虚数であるものの 1 つとする。ω¹⁰⁰ + ω⁵⁰ + 1 の値を求めよ。",
+      "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは nth roots of unity は書き言葉 2 件（MIT の講義ノート）だけ。OpenStax Algebra and Trigonometry は一般の複素数の n 乗根（nth roots of a complex number）として扱う。"
+    "用例コーパスでは nth roots of unity は書き言葉 2 件（MIT の講義ノート）だけ。OpenStax Algebra and Trigonometry は一般の複素数の n 乗根（nth roots of a complex number）として扱う。",
+    "数II の 1 の 3 乗根 ω（ω² + ω + 1 = 0、ω³ = 1）は、英語でも cube roots of unity と呼び、ω（omega）の記号を使うが、米国の高校課程では ω に決まった呼び名や性質の練習はほぼない。"
   ],
   "related": [
     "nth-root",

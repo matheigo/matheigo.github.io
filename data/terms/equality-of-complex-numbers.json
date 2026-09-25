@@ -1,0 +1,76 @@
+{
+  "id": "equality-of-complex-numbers",
+  "ja": {
+    "term": "複素数の相等",
+    "reading": "ふくそすうのそうとう",
+    "alt": []
+  },
+  "en": {
+    "term": "equality of complex numbers",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで 0 件、OpenStax にもない）。two complex numbers are equal when their real parts are equal and their imaginary parts are equal と文で言う。手順は set the real parts equal and the imaginary parts equal。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "a, b, c, d が実数のとき、a + bi = c + di は a = c かつ b = d と同じであること。",
+  "definition_en": "For real a, b, c, d, a + bi = c + di exactly when a = c and b = d.",
+  "latex": "a + bi = c + di \\iff a = c,\\ b = d",
+  "spoken_en": "a plus b i equals c plus d i if and only if a equals c and b equals d",
+  "examples": [
+    {
+      "en": "Set the real parts equal and the imaginary parts equal, and you get two equations.",
+      "ja": "実部どうし、虚部どうしを等しいとおくと、式が 2 つできる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the real numbers x and y such that (x + 2i)(1 − i) = 5 + yi.",
+      "ja": "(x + 2i)(1 − i) = 5 + yi を満たす実数 x, y を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "a, b, c, d が実数であることが前提。その条件を書き落とさない（where a, b, c, d are real）。"
+  ],
+  "related": [
+    "complex-number",
+    "real-part",
+    "imaginary-part"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

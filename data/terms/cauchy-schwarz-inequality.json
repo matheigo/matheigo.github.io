@@ -1,0 +1,79 @@
+{
+  "id": "cauchy-schwarz-inequality",
+  "ja": {
+    "term": "コーシー・シュワルツの不等式",
+    "reading": "こーしー・しゅわるつのふとうしき",
+    "alt": [
+      "コーシー＝シュワルツの不等式"
+    ]
+  },
+  "en": {
+    "term": "Cauchy-Schwarz inequality",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "(a² + b²)(x² + y²) ≧ (ax + by)² のように、2 組の実数について「平方の和の積」が「積の和の平方」以上になるという不等式。",
+  "definition_en": "The inequality stating that the product of two sums of squares is at least the square of the sum of products, e.g. (a² + b²)(x² + y²) ≥ (ax + by)².",
+  "latex": "(a^2 + b^2)(x^2 + y^2) \\ge (ax + by)^2",
+  "spoken_en": "a squared plus b squared, times x squared plus y squared, is greater than or equal to a x plus b y, squared",
+  "examples": [
+    {
+      "en": "This is really the dot product: u dot v is at most the length of u times the length of v.",
+      "ja": "これは実は内積の話で、u·v は |u||v| 以下になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove that (a² + b²)(x² + y²) ≥ (ax + by)², and state when equality holds.",
+      "ja": "(a² + b²)(x² + y²) ≧ (ax + by)² を証明し、等号が成り立つ場合を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパス（OpenStax 6 冊を含む）には 0 件。米国の高校課程では名前を出さず、ベクトルの |u · v| ≤ |u||v| として触れる程度。"
+  ],
+  "related": [
+    "am-gm-inequality",
+    "prove",
+    "triangle-inequality"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "コーシー＝シュワルツの不等式",
+      "en": "Cauchy–Schwarz inequality"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

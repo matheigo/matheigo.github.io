@@ -1,0 +1,83 @@
+{
+  "id": "substituting-values",
+  "ja": {
+    "term": "数値代入法",
+    "reading": "すうちだいにゅうほう",
+    "alt": []
+  },
+  "en": {
+    "term": "substituting values",
+    "alt": [
+      "plug in convenient values"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで 0 件）。手順として plug in convenient values of x（x に都合のよい値を代入する）と説明する。求めた値が恒等式の条件を満たすか確かめる（逆の確認）ことも英語では手順の一部として言う。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "恒等式の未知の係数を、x に適当な数値を代入してできる方程式から決める方法。",
+  "definition_en": "Finding the unknown constants in an identity by plugging in convenient values of x and solving the resulting equations.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Plug in x = 1 so the B term drops out, and you get A right away.",
+      "ja": "x = 1 を代入すると B の項が消えて、すぐ A が出る。",
+      "register": "spoken"
+    },
+    {
+      "en": "By substituting suitable values of x, find A and B such that 1/((x − 1)(x + 2)) = A/(x − 1) + B/(x + 2).",
+      "ja": "x に適当な値を代入して、1/((x − 1)(x + 2)) = A/(x − 1) + B/(x + 2) となる A, B を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数値代入法で求めた係数は、必要条件から出したものなので、恒等式になっているか確かめる（Check that it works for all x.）。"
+  ],
+  "related": [
+    "identity",
+    "compare-coefficients",
+    "partial-fraction-decomposition"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "substituting values": 1
+    },
+    "written": {
+      "substituting values": 17
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-24"
+  }
+}

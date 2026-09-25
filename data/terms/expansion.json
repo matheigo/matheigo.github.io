@@ -1,0 +1,94 @@
+{
+  "id": "expansion",
+  "ja": {
+    "term": "展開",
+    "reading": "てんかい",
+    "alt": [
+      "展開式"
+    ]
+  },
+  "en": {
+    "term": "expansion",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "名詞の「展開」（展開式）は expansion だが、式を展開する操作は動詞 expand ／ multiply out で言うことが多い。二項定理の展開は binomial expansion。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3",
+      "数II"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "積の形の式を、分配法則で単項式の和に書き直すこと。また、書き直した式（展開式）。",
+  "definition_en": "Rewriting a product as a sum of terms by distributing, or the resulting sum.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In the expansion of (x + 2)^5, the coefficient of x³ is 40.",
+      "ja": "(x + 2)⁵ の展開式で、x³ の係数は 40。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the coefficient of x²y³ in the expansion of (2x − y)^5.",
+      "ja": "(2x − y)⁵ の展開式における x²y³ の係数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "expansion だけでは series expansion（級数展開）や decimal expansion（小数展開）も多いので、用例コーパスでは expansion of の形で数えた（それでも級数展開が混ざる）。",
+    "「展開せよ」は Expand …（または Multiply out …）。"
+  ],
+  "related": [
+    "general-term",
+    "multinomial-theorem",
+    "binomial-series"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "expansion of": 14
+    },
+    "written": {
+      "expansion of": 30
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-24"
+  }
+}

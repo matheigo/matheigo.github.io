@@ -1,0 +1,112 @@
+{
+  "id": "imaginary-solution",
+  "ja": {
+    "term": "虚数解",
+    "reading": "きょすうかい",
+    "alt": []
+  },
+  "en": {
+    "term": "complex solution",
+    "alt": [],
+    "variants": [
+      {
+        "term": "complex solution",
+        "register": "spoken",
+        "note": "話し言葉で 31 件（MIT OCW 28・Professor Leonard 1・patrickJMT 1 ほか 1）、書き言葉で 7 件（すべて OpenStax Algebra and Trigonometry）。"
+      },
+      {
+        "term": "complex root",
+        "register": "spoken",
+        "note": "多項式や特性方程式の根として言うとき。話し言葉で 22 件（MIT OCW 20・3Blue1Brown 2）、書き言葉で 6 件（MIT の講義ノート 4・OpenStax Algebra and Trigonometry 2）。"
+      },
+      {
+        "term": "imaginary solution",
+        "register": "spoken",
+        "note": "日本語に近い言い方。話し言葉で 17 件（The Organic Chemistry Tutor 14・patrickJMT 3）、書き言葉では 0 件。"
+      }
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語の complex solution は、文脈によって実数解を含む複素数の解全体を指すことがある。日本の「虚数解」（実数でない解）をはっきり言うときは nonreal (complex) solution、imaginary solution。OpenStax Algebra and Trigonometry は complex solutions と書く。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "方程式の解のうち、虚数（実数でない複素数）であるもの。",
+  "definition_en": "A solution of an equation that is not a real number.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The discriminant is negative, so we get two complex solutions, and they're conjugates.",
+      "ja": "判別式が負なので、虚数解が 2 つ出て、互いに共役。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the range of k for which x² + kx + 4 = 0 has two distinct imaginary solutions.",
+      "ja": "x² + kx + 4 = 0 が異なる 2 つの虚数解をもつような k の値の範囲を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "two distinct imaginary solutions",
+      "ja": "異なる 2 つの虚数解"
+    }
+  ],
+  "pitfalls": [
+    "用例コーパスの話し言葉で complex solution 31 件のうち 28 件は MIT 18.03（微分方程式の特性方程式）。書き言葉は complex solution 7 件・complex root 6 件で決まらない。",
+    "「実数解と虚数解」は real and nonreal solutions（real and complex solutions）。"
+  ],
+  "related": [
+    "discriminant",
+    "complex-conjugate",
+    "quadratic-formula",
+    "solution"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "complex root": 22,
+      "complex solution": 31,
+      "imaginary solution": 17
+    },
+    "written": {
+      "complex solution": 7,
+      "complex root": 6
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

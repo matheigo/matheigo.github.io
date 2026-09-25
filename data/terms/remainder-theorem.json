@@ -1,0 +1,90 @@
+{
+  "id": "remainder-theorem",
+  "ja": {
+    "term": "剰余の定理",
+    "reading": "じょうよのていり",
+    "alt": [
+      "剰余定理"
+    ]
+  },
+  "en": {
+    "term": "remainder theorem",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "整式 P(x) を x − a で割った余りは P(a) に等しいという定理。",
+  "definition_en": "The theorem that the remainder when a polynomial P(x) is divided by x − a is P(a).",
+  "latex": "P(x) = (x - a)Q(x) + P(a)",
+  "spoken_en": "P of x equals x minus a times Q of x, plus P of a",
+  "examples": [
+    {
+      "en": "By the remainder theorem, just plug in 2 — you don't have to divide.",
+      "ja": "剰余の定理から、2 を代入するだけ。割らなくていい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the remainder theorem to find the remainder when x^{100} + 1 is divided by x + 1.",
+      "ja": "剰余の定理を用いて、x¹⁰⁰ + 1 を x + 1 で割った余りを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "2 次式で割った余り（ax + b の形）を求める問題は、米国の高校ではあまり扱わない。"
+  ],
+  "related": [
+    "remainder",
+    "synthetic-division",
+    "division-algorithm"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "剰余の定理",
+      "en": "Polynomial remainder theorem"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "remainder theorem": 19
+    },
+    "written": {
+      "remainder theorem": 14
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

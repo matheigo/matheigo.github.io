@@ -1,0 +1,89 @@
+{
+  "id": "square-root-of-a-negative-number",
+  "ja": {
+    "term": "負の数の平方根",
+    "reading": "ふのかずのへいほうこん",
+    "alt": []
+  },
+  "en": {
+    "term": "square root of a negative number",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "a > 0 のとき、−a の平方根は ±√a i。√−a = √a i と定める。",
+  "definition_en": "For a > 0, the square roots of −a are ±√a i; √−a is defined as √a i.",
+  "latex": "\\sqrt{-a} = \\sqrt{a}\\, i \\quad (a > 0)",
+  "spoken_en": "the square root of negative a equals the square root of a times i",
+  "examples": [
+    {
+      "en": "Pull out the i first: the square root of negative 4 is 2i.",
+      "ja": "まず i を出す。√−4 は 2i。",
+      "register": "spoken"
+    },
+    {
+      "en": "Compute √−2 × √−8, and explain why it is not equal to √16.",
+      "ja": "√−2 × √−8 を計算し、√16 と等しくない理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "√a √b = √(ab) は a, b が負のときには成り立たない。先に i を出してから計算する（Write it in terms of i first.）。"
+  ],
+  "related": [
+    "imaginary-unit",
+    "imaginary-number",
+    "complex-number"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "square root of a negative number": 8
+    },
+    "written": {
+      "square root of a negative number": 9
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 square root of a negative number（本文 9 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

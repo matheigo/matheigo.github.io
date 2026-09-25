@@ -1,0 +1,105 @@
+{
+  "id": "compare",
+  "ja": {
+    "term": "比較する",
+    "reading": "ひかくする",
+    "alt": [
+      "大小を比較する",
+      "大小を比べる"
+    ]
+  },
+  "en": {
+    "term": "compare",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics",
+    "algebra",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数II"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "2 つ以上の数・式の大小を調べる。",
+  "definition_en": "To determine which of two or more numbers or expressions is larger.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To compare 2^30 and 3^20, write both as powers with the same exponent.",
+      "ja": "2³⁰ と 3²⁰ を比べるには、両方を同じ指数の累乗で表す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Compare the sizes of log₂ 3, log₄ 5, and 3/2.",
+      "ja": "log₂ 3, log₄ 5, 3/2 の大小を比較せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「大小を比較せよ」は Compare …、または Which is larger? と聞く。並べる問いは Arrange … in increasing order。",
+    "指数関数・対数関数の大小比較では、底が 1 より大きいか小さいかで向きが変わる（The base is greater than 1, so the function is increasing.）。",
+    "用例コーパスの件数（話し言葉 276 件、書き言葉 440 件）には統計の「2 つの群を比較する」も入る。"
+  ],
+  "related": [],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "compare": 276
+    },
+    "written": {
+      "compare": 440
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

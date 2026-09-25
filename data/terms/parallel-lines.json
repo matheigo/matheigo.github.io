@@ -1,0 +1,89 @@
+{
+  "id": "parallel-lines",
+  "ja": {
+    "term": "平行な直線",
+    "reading": "へいこうなちょくせん",
+    "alt": [
+      "2 直線の平行"
+    ]
+  },
+  "en": {
+    "term": "parallel lines",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "数II"
+    ],
+    "us": [
+      "Algebra 1",
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "交わらない 2 直線。座標平面では傾きが等しい（y 軸に平行な場合を除く）。",
+  "definition_en": "Two lines that never meet; on the coordinate plane, lines with equal slopes (apart from vertical lines).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Parallel lines have the same slope but different y-intercepts.",
+      "ja": "平行な 2 直線は、傾きが同じで y 切片が違う。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the equation of the line through (2, 1) parallel to 3x − y + 4 = 0.",
+      "ja": "点 (2, 1) を通り、直線 3x − y + 4 = 0 に平行な直線の方程式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "2 直線 a₁x + b₁y + c₁ = 0, a₂x + b₂y + c₂ = 0 の平行条件 a₁b₂ − a₂b₁ = 0 は、米国では傾きが等しいことで説明することが多い（OpenStax Algebra and Trigonometry も傾きで扱う）。"
+  ],
+  "related": [
+    "equation-of-a-line",
+    "intersect"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "parallel lines": 36
+    },
+    "written": {
+      "parallel lines": 30
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

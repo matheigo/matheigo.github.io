@@ -1,0 +1,93 @@
+{
+  "id": "geometric-mean",
+  "ja": {
+    "term": "相乗平均",
+    "reading": "そうじょうへいきん",
+    "alt": [
+      "幾何平均"
+    ]
+  },
+  "en": {
+    "term": "geometric mean",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Geometry",
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "n 個の正の数の積の n 乗根。2 数 a, b では √(ab)。",
+  "definition_en": "The nth root of the product of n positive numbers; for two numbers a and b, √(ab).",
+  "latex": "\\sqrt{ab}",
+  "spoken_en": "the square root of a b",
+  "examples": [
+    {
+      "en": "The geometric mean of 2 and 8 is the square root of 16, which is 4.",
+      "ja": "2 と 8 の相乗平均は √16 で 4。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the geometric mean of two positive numbers never exceeds their arithmetic mean.",
+      "ja": "2 つの正の数の相乗平均は相加平均を超えないことを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の Geometry では、直角三角形の高さが斜辺の 2 つの部分の geometric mean になる（相似の単元）ことで出てくる。",
+    "用例コーパスの話し言葉 39 件のうち 34 件は The Organic Chemistry Tutor。書き言葉は 1 件。"
+  ],
+  "related": [
+    "arithmetic-mean",
+    "am-gm-inequality",
+    "geometric-middle-term"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "幾何平均",
+      "en": "Geometric mean"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "geometric mean": 39
+    },
+    "written": {
+      "geometric mean": 1
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

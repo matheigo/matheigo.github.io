@@ -1,0 +1,94 @@
+{
+  "id": "triangle-inequality",
+  "ja": {
+    "term": "三角形の成立条件",
+    "reading": "さんかっけいのせいりつじょうけん",
+    "alt": [
+      "三角不等式"
+    ]
+  },
+  "en": {
+    "term": "triangle inequality",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数A",
+      "数II"
+    ],
+    "us": [
+      "Geometry",
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "三角形の 2 辺の長さの和は他の 1 辺より大きいという不等式。絶対値では |a + b| ≦ |a| + |b| の形になる。",
+  "definition_en": "The inequality saying any side of a triangle is shorter than the sum of the other two; for absolute values, |a + b| ≤ |a| + |b|.",
+  "latex": "|a + b| \\le |a| + |b|",
+  "spoken_en": "the absolute value of a plus b is less than or equal to the absolute value of a plus the absolute value of b",
+  "examples": [
+    {
+      "en": "By the triangle inequality, the sum of the two shorter sides has to be bigger than the longest side.",
+      "ja": "三角形の成立条件から、短い 2 辺の和は一番長い辺より大きくないといけない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove that |a + b| ≤ |a| + |b| for all real numbers a and b.",
+      "ja": "すべての実数 a, b について |a + b| ≦ |a| + |b| を証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「三角不等式」は、この |a + b| ≦ |a| + |b| を指すことも、三角関数を含む不等式（trigonometric-inequality）を指すこともある。英語の triangle inequality は前者だけ。",
+    "数II の「絶対値と不等式」で扱う |a| + |b| ≧ |a + b| も英語では triangle inequality と呼ぶ。"
+  ],
+  "related": [
+    "prove"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "triangle inequality": 2
+    },
+    "written": {
+      "triangle inequality": 6
+    },
+    "sources": [
+      "openstax-calculus",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 triangle inequality（本文 6 件）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

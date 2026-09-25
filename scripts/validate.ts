@@ -77,6 +77,8 @@ const NOT_IN_US_COURSES = "米国の高校課程（OpenStax 6 冊・CED）には
  */
 const SAME_EN_TERM: [string, string][] = [
   ["divergence", "divergence-vector"], // 発散（数列・級数） ／ 発散（ベクトル場）
+  ["arithmetic-mean", "arithmetic-middle-term"], // 相加平均 ／ 等差中項（英語は相加平均で説明する）
+  ["geometric-mean", "geometric-middle-term"], // 相乗平均 ／ 等比中項
 ];
 const intendedHomonym = (a: string, b: string) =>
   SAME_EN_TERM.some(([x, y]) => (x === a && y === b) || (x === b && y === a));

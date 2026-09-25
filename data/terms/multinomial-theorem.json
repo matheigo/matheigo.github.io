@@ -1,0 +1,81 @@
+{
+  "id": "multinomial-theorem",
+  "ja": {
+    "term": "多項定理",
+    "reading": "たこうていり",
+    "alt": []
+  },
+  "en": {
+    "term": "multinomial theorem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "(a + b + c)ⁿ のような多項式の累乗を展開したときの各項の係数を与える定理。",
+  "definition_en": "The theorem giving the coefficient of each term when a power of a sum of several terms, such as (a + b + c)ⁿ, is expanded.",
+  "latex": "\\frac{n!}{p!\\,q!\\,r!}\\,a^p b^q c^r \\quad (p + q + r = n)",
+  "spoken_en": "n factorial over p factorial q factorial r factorial, times a to the p b to the q c to the r",
+  "examples": [
+    {
+      "en": "It's like the binomial theorem, but now you split n into three parts instead of two.",
+      "ja": "二項定理と同じ考えで、n を 2 つではなく 3 つに分ける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the coefficient of a²bc³ in the expansion of (a + b + c)^6.",
+      "ja": "(a + b + c)⁶ の展開式における a²bc³ の係数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは書き言葉 2 件（MIT の講義ノート）だけ。OpenStax の高校向けの本には出てこない。"
+  ],
+  "related": [
+    "expansion",
+    "general-term"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "多項定理",
+      "en": "Multinomial theorem"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "multinomial theorem": 2
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "real-part",
+  "ja": {
+    "term": "実部",
+    "reading": "じつぶ",
+    "alt": []
+  },
+  "en": {
+    "term": "real part",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "複素数 a + bi の a。",
+  "definition_en": "The number a in the complex number a + bi.",
+  "latex": "\\operatorname{Re}(a + bi) = a",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The real part is 3 and the imaginary part is negative 2.",
+      "ja": "実部は 3、虚部は −2。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the real number k such that the real part of (1 + ki)(2 − i) is 0.",
+      "ja": "(1 + ki)(2 − i) の実部が 0 となるような実数 k を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉 244 件のうち 178 件は MIT 18.03（微分方程式の複素数解）。"
+  ],
+  "related": [
+    "imaginary-part",
+    "complex-number"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "real part": 244
+    },
+    "written": {
+      "real part": 45
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

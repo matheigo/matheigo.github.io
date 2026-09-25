@@ -319,3 +319,19 @@
 - 2026-09-24 | 2 | am-gm-inequality の level.us は空の配列にした（スキーマは us を必須にするが、要素数の下限はない）。サイトは空のとき「米国 —」と出す | あなたの指示（外せなければ止めて聞く）。スキーマは変えていない
 - 2026-09-24 | 2 | validate の「mapping が exact なのに mapping_note がある」警告は、note に「米国の高校課程（OpenStax 6 冊・CED）には出てこない」を含むときも出さない | am-gm-inequality は語の対応は exact のままで、note は範囲の注記（あなたの決定の文言）。「本プロジェクトの訳語」と同じく決まった文言で許す
 - 2026-09-24 | 2 | validate に意図した同形語の許可リスト（SAME_EN_TERM）を足し、divergence ／ divergence-vector（発散〔数列・級数〕／発散〔ベクトル場〕）を入れた。警告は 0 | あなたの指示。ペアごとに人間の判断として 1 行ずつ足す
+
+## Phase 2 代数 2・Precalculus の単元 — 2026-09-24
+
+- 2026-09-24 | 2 | 対象は台帳の unit に 数II 三角関数・指数関数と対数関数・式と証明・複素数と方程式・図形と方程式、us-precalculus-* を含む行（既存を除く 275 行）。今までの規則を先に当てて 174 エントリ（＋ symbols 1）にし、台帳の行順に 50 ／ 50 ／ 50 ／ 24 で生成する | あなたの指示。単元 id は us-precalculus の前方一致
+- 2026-09-24 | 2 | 275 行への規則の当て方（fix_decisions.py の PHASE2D_*、fix_phase1.py の手順 11）: 同じ概念 12 行、節の名前 26 行、引数を入れただけの行・問いの形・コロケーション 61 行、symbols へ 1 行（combination-notation → 新設の combination-ncr）、phrases 候補へ 17 行 | 一覧は audits/phase2-algebra2-report.md
+- 2026-09-24 | 2 | 寄せ先が前の単元の未生成の行のとき、その行ごとこの単元で生成する（solution・solve・solve-for・remainder・prove・tangent・tangent-line・point-of-intersection・distance・point-of-internal-division・perpendicular-bisector・reflection・symmetric・triangle-inequality・vector）。前回先に生成した rotation には、同じ単元（中1 平面図形）に残っていた center-of-rotation を寄せた | あなたの指示（前回先に生成した行と同じ単元に残る行は統合の規則で寄せる）と、2026-09-24 数列・級数の単元の「寄せ先が後の単元の行」と同じ扱い
+- 2026-09-24 | 2 | 名詞と動詞で英語の候補が同じ行は 1 エントリにした（約分 → 約分する、通分 → 通分する、係数比較 → 係数を比較する）。1 対 1 の名詞がない日本語の名詞（約分・通分）は動詞のエントリの ja.alt | differentiate と find-the-derivative を 1 つにしたのと同じ理由（候補が同じなら同じ判定のエントリが 2 つできる）
+- 2026-09-24 | 2 | 右上がり ／ 単調増加（increasing）は既存の is-monotonically-increasing に寄せ、残る decreasing は見出しを「単調に減少する」、en.term を is decreasing（話・書とも ①）にそろえた（ja.alt に 単調減少・右下がり）。pos は phrase | 増加側と同じ形にしないと、同じ概念の対が別の形のエントリになる
+- 2026-09-24 | 2 | 節の名前「二次式の因数分解」（factoring-over-the-complex-numbers）は解と係数の関係に、「不等式の証明」（proving-an-inequality）は prove に寄せた。「等式の証明」は OpenStax の verify the identity（書き言葉 ①）を見出しにしてエントリに残し、日本語の見出しを「等式を証明する」（ja.alt に 等式の証明）、pos を phrase にした | 二次式の因数分解は教科書で解と係数の関係の小節。不等式の証明の英語 prove the inequality は 0 件で、prove に引数を入れた形。等式の証明は米国に決まった言い方（verify the identity）がある
+- 2026-09-24 | 2 | 1 の 3 乗根（cube-roots-of-unity）と ω（omega）は 1 の n 乗根（nth-roots-of-unity、n = 3 の場合）に寄せ、level.jp に 数II を足し、ja.alt に「1 の 3 乗根」、ω は pitfalls と例文に入れた | 引数を入れただけの行。ω の読みだけの symbols は立てない
+- 2026-09-24 | 2 | 汎用語を最初から形で数えた（TERM_FORMS）: solution → solution to the equation、remainder → the remainder is、symmetric → symmetric about、tangent（正接）→ tangent of ／ tan of、expansion → expansion of、identity → an identity | 2026-09-24 数列・級数の単元の前の修正の規則。solution は問題の解答、remainder はテイラーの剰余項、symmetric は対称行列、tangent は接線、identity は単位行列・恒等関数が混ざる（手元で文脈を確かめた）
+- 2026-09-24 | 2 | 約分する（reduce）の en.term は書き言葉 ① の cancel the common factor（OpenStax Calculus・Algebra and Trigonometry、8 件）、reduce the fraction ／ simplify the fraction は en.alt。話し言葉は ③（7 件）。id は reduce のまま | コーパスの判定どおり。STYLE の直訳禁止リスト（約分 reduce ／ cancel）と食い違わない
+- 2026-09-24 | 2 | 係数を比較する の mapping は exact にし、「英語は equate で言う」は pitfalls に書いた。見出しは ③ から OpenStax の equate coefficients | 台帳の exact を near にすると規則 1 で「英語に決まった言い方がない」になるが、OpenStax に決まった言い方がある。compare と equate の違いは語の選び方で、概念の対応は 1 対 1
+- 2026-09-24 | 2 | 虚数単位の話し言葉 ① は i の説明 square root of negative one（34 件、3Blue1Brown 20）。en.term は imaginary unit のまま、話し言葉の variant にした | derivative-at-a-point と同じ（見出しが首位でない register を主張しない）
+- 2026-09-24 | 2 | 三角形の成立条件（triangle-inequality）の ja.alt に「三角不等式」を入れた（数II の |a + b| ≦ |a| + |b| を統合したため）。三角関数を含む不等式（trigonometric-inequality）とまぎれることを両方の pitfalls に書く | 日本語の「三角不等式」は 2 つの意味で使われる。見出しは重ならない
+- 2026-09-24 | 2 | validate の同形語の許可リストに arithmetic-mean ／ arithmetic-middle-term、geometric-mean ／ geometric-middle-term を足した | 等差中項・等比中項のエントリは英語で相加平均・相乗平均と説明する（2026-09-24 数列の単元の決定）。同じ英語で別の日本語の概念

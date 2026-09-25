@@ -1,0 +1,116 @@
+{
+  "id": "find-the-equation",
+  "ja": {
+    "term": "式を求める",
+    "reading": "しきをもとめる",
+    "alt": [
+      "方程式を求める"
+    ]
+  },
+  "en": {
+    "term": "find the equation",
+    "alt": [],
+    "variants": [
+      {
+        "term": "find the equation",
+        "register": "both",
+        "note": "話し言葉で 37 件（Khan Academy 11・patrickJMT 9・Professor Leonard 6 ほか 11）、書き言葉で 147 件（OpenStax Algebra and Trigonometry 80・OpenStax Calculus 52・OpenStax Precalculus 8 ほか 7）。"
+      },
+      {
+        "term": "write an equation",
+        "register": "both",
+        "note": "特に文章題や条件から式を立てる問い。話し言葉で 13 件（Khan Academy 6・The Organic Chemistry Tutor 3・NancyPi 2 ほか 2）、書き言葉で 63 件（OpenStax Algebra and Trigonometry 51・OpenStax Calculus 12）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "数II"
+    ],
+    "us": [
+      "Algebra 1",
+      "Geometry",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "与えられた条件を満たす直線・円・関数などの式を求める。",
+  "definition_en": "To determine the equation of a line, circle, function, etc. that satisfies the given conditions.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's find the equation of the circle — we need the center and the radius.",
+      "ja": "円の方程式を求めよう。中心と半径がわかればいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the equation of the circle with center (2, −1) that passes through the origin.",
+      "ja": "中心 (2, −1) で原点を通る円の方程式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "冠詞だけ違う find an equation も書き言葉に多い（OpenStax Calculus に 94 件）。"
+  ],
+  "related": [
+    "equation-of-a-line",
+    "find-the-equation-of-the-tangent-line"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "write an equation": 13,
+      "find the equation": 37
+    },
+    "written": {
+      "find the equation": 147,
+      "write an equation": 63
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

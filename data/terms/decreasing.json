@@ -1,0 +1,111 @@
+{
+  "id": "decreasing",
+  "ja": {
+    "term": "単調に減少する",
+    "reading": "たんちょうにげんしょうする",
+    "alt": [
+      "単調減少",
+      "右下がり"
+    ]
+  },
+  "en": {
+    "term": "is decreasing",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "見出しの「単調に減少する」は 数II（指数・対数関数）の言い方。中学の「右下がり」（1 次関数のグラフ）にも当たるが、英語ではグラフの形ではなく関数の性質（is decreasing）か傾きの符号で言う。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2",
+      "Precalculus",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "x が増えると、関数の値が必ず減る。1 次関数ではグラフが右下がりになること（傾きが負）。",
+  "definition_en": "Of a function: its value goes down whenever x goes up; for a linear function, the graph falls from left to right (negative slope).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Since the base is between 0 and 1, the function is decreasing.",
+      "ja": "底が 0 と 1 の間なので、この関数は減少する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that f(x) = (1/2)^x is decreasing on the whole real line.",
+      "ja": "f(x) = (1/2)^x が実数全体で減少することを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "is decreasing on",
+      "ja": "〜で減少する"
+    }
+  ],
+  "pitfalls": [
+    "「右下がり」は英語では falls from left to right、または the slope is negative と言う。",
+    "教室では monotonically を付けずに is decreasing と言うのがふつう（is-monotonically-increasing と同じ）。"
+  ],
+  "related": [
+    "is-monotonically-increasing",
+    "increasing-and-decreasing"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "is decreasing": 124
+    },
+    "written": {
+      "is decreasing": 108
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

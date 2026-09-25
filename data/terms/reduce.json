@@ -1,0 +1,103 @@
+{
+  "id": "reduce",
+  "ja": {
+    "term": "約分する",
+    "reading": "やくぶんする",
+    "alt": [
+      "約分"
+    ]
+  },
+  "en": {
+    "term": "cancel the common factor",
+    "alt": [
+      "reduce the fraction",
+      "simplify the fraction"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "日本語の「約分」に 1 対 1 で当たる英語の名詞はない。書き言葉では cancel the common factor(s)（OpenStax Calculus・Algebra and Trigonometry）、話し言葉では reduce ／ simplify the fraction、単に cancel と言う。結果の形は in lowest terms（既約）。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "小学校",
+      "数II"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "分数（分数式）の分子と分母を共通な因数で割って簡単にする。",
+  "definition_en": "To simplify a fraction or rational expression by dividing the numerator and denominator by a common factor.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Factor the top and bottom, and then the x + 1's cancel.",
+      "ja": "分子と分母を因数分解すると、x + 1 が約分できる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Simplify (x² − 4)/(x² + x − 6) by canceling the common factor.",
+      "ja": "(x² − 4)/(x² + x − 6) を約分して簡単にせよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "約分しきった形は in lowest terms（既約）。",
+    "cancel だけでは「打ち消し合う」（x − x が消える）意味も多い。約分の意味をはっきりさせるときは cancel the common factor。",
+    "約分できる因数は掛け算の因数だけ。(x + 2)/2 の 2 を消すのは誤り（You can only cancel factors, not terms.）。"
+  ],
+  "related": [
+    "rational-expression",
+    "find-a-common-denominator",
+    "numerator",
+    "denominator"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "simplify the fraction": 5,
+      "reduce the fraction": 2
+    },
+    "written": {
+      "cancel the common factor": 8,
+      "reduce the fraction": 2
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}
