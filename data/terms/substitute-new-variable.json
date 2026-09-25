@@ -9,31 +9,26 @@
     ]
   },
   "en": {
-    "term": "make a substitution",
+    "term": "make the substitution",
     "alt": [],
     "variants": [
       {
         "term": "make a substitution",
-        "register": "both",
-        "note": "話し言葉は Professor Leonard と MIT OCW。話し言葉で 32 件（Professor Leonard 19・MIT OCW 13）、書き言葉で 7 件（OpenStax Algebra and Trigonometry 4・OpenStax Calculus 1・MIT の講義ノート 1 ほか 1）。"
-      },
-      {
-        "term": "make the substitution",
-        "register": "both",
-        "note": "話し言葉は MIT OCW・Khan Academy など、書き言葉は OpenStax。話し言葉で 31 件（MIT OCW 16・Khan Academy 7・Professor Leonard 5 ほか 3）、書き言葉で 19 件（OpenStax Calculus 11・OpenStax Algebra and Trigonometry 5・OpenStax Introductory Statistics 2 ほか 1）。"
+        "register": "spoken",
+        "note": "話し言葉では make the substitution と同じくらい使うが、Professor Leonard と MIT OCW に多い。書き言葉では make the substitution のほうが多い。"
       },
       {
         "term": "do a substitution",
         "register": "spoken",
-        "note": "話し言葉は Professor Leonard が中心。話し言葉で 21 件（Professor Leonard 15・MIT OCW 5・patrickJMT 1）、書き言葉では 0 件。"
+        "note": "話し言葉は Professor Leonard が中心。書き言葉には出てこない。"
       }
     ],
     "uk": null,
-    "register": "spoken"
+    "register": "both"
   },
   "pos": "verb",
   "mapping": "near",
-  "mapping_note": "「x + 1 を A と置き換える」のような置き換えは、英語では Let A = x + 1. と宣言する形か、make a substitution と言う。代入する（plug in）にも substitute を使うので、英語では両者の区別が文脈頼みになる。",
+  "mapping_note": "「x + 1 を A と置き換える」のような置き換えは、英語では Let A = x + 1. と宣言する形か、make the substitution（話し言葉では make a substitution とも）と言う。代入する（plug in）にも substitute を使うので、英語では両者の区別が文脈頼みになる。",
   "domains": [
     "algebra",
     "calculus"
@@ -96,8 +91,8 @@
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "make a substitution": 33,
       "make the substitution": 32,
+      "make a substitution": 33,
       "do a substitution": 21
     },
     "written": {

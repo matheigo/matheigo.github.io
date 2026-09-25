@@ -42,6 +42,11 @@
  *     the entry back. reviewed.human is not used for this: it marks a human
  *     review of the whole entry (the ground for verified in Phase 5)
  *   - entries where the corpus contradicts the register recorded in the data
+ *
+ * A spoken leader that rests on one source does not set the headword against
+ * the written corpus or a CED (lib.ts spokenLeanHead, DECISIONS Phase 2 中学の
+ * 単元 2 の前の修正 3): the headword is the written / CED wording and the
+ * spoken leader a spoken variant. decide lists what the entry must change.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -57,6 +62,8 @@ import {
   sameWording,
   settleUndecided,
   sourceWeights,
+  spokenLeanHead,
+  type LeanHead,
   type Register,
   type Settled,
   type Verdict,
@@ -152,6 +159,8 @@ interface Line {
   ruleSettled: Settled | null;
   /** The note of the corpus-human-settled flag. */
   humanNote: string | null;
+  /** The spoken leader rests on one source and the written corpus / a CED says otherwise (lib.ts spokenLeanHead). */
+  lean: LeanHead | null;
 }
 
 const NO_FIXED_NOTE = "英語に決まった言い方がない";
@@ -300,6 +309,23 @@ function main() {
       }
     }
 
+    // The spoken leader rests on one source; the written corpus or a CED names
+    // another wording: that wording is the headword, the spoken one a spoken
+    // variant (lib.ts spokenLeanHead). Not over the human's call.
+    const lean = c.collection === "terms" && !human ? spokenLeanHead(spoken, written, c.reference) : null;
+    if (lean) {
+      const en = record.en as { term: string; variants?: { term: string; register: string }[] };
+      const as = (w: string) => countedAs(c.collection, entry.data.id, w);
+      if (!sameWording(as(en.term), lean.head) && !sameWording(en.term, lean.head)) {
+        todo.push(
+          `en.term を ${lean.head} にする（話し言葉の首位 ${lean.spoken} は ${lean.source} 頼み、${lean.by === "written" ? "書き言葉" : "CED"} は ${lean.head}）`,
+        );
+      }
+      if (!(en.variants ?? []).some((v) => v.register === "spoken" && sameWording(as(v.term), lean.spoken))) {
+        todo.push(`${lean.spoken} を register spoken の variant にする（話し言葉の首位、${lean.source} 頼み）`);
+      }
+    }
+
     // Contradiction: the corpus settled on a wording the entry does not file
     // at that register. Merging already folded inflection and ellipsis away,
     // so what is left is a real disagreement.
@@ -333,6 +359,7 @@ function main() {
       humanStale: !bothUndecided && human !== null,
       ruleSettled: bothUndecided && human ? ruleSettled : null,
       humanNote: human?.note ?? null,
+      lean,
     });
 
     if (!writeBack) continue;
@@ -408,6 +435,7 @@ function main() {
   const leans = (v: Verdict | null) => v !== null && v.kind !== "undecided" && v.dependsOn !== undefined;
   const oneSource = lines.filter((l) => leans(l.spoken) || leans(l.written));
   const writtenBack = lines.filter((l) => l.wroteBack);
+  const leaning = lines.filter((l) => l.lean);
 
   const totalWords = Object.values(file.sources).reduce((a, b) => a + b, 0) || 1;
   const weightRows = Object.entries(file.sources)
@@ -457,6 +485,14 @@ function main() {
     "",
     oneSource.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
     ...oneSource.map((l) => cells(l.key, leans(l.spoken) ? describe(l.spoken) : "—", leans(l.written) ? describe(l.written) : "—")),
+    "",
+    "## 話し言葉の首位が 1 ソース頼みで、書き言葉か CED が別の言い方のもの（見出しの規則）",
+    "",
+    "抜くと ③ か別の候補になる話し言葉の首位は見出しにしない。書き言葉（①）か CED の言い方を en.term にし、",
+    "話し言葉の首位は register spoken の variant にする（DECISIONS、Phase 2 中学の単元 2 の前の修正 3）。",
+    "",
+    leaning.length ? "| 項目 | 話し言葉の首位 | 頼っているソース | 見出し | 根拠 |\n|---|---|---|---|---|" : "なし。",
+    ...leaning.map((l) => cells(l.key, l.lean!.spoken, l.lean!.source, l.lean!.head, l.lean!.by === "written" ? "書き言葉 ①" : "CED")),
     "",
     "## 統合済み（語形変化・引数省略として見出し語に合算）",
     "",
@@ -531,7 +567,7 @@ function main() {
       .join(", ")}`,
   );
   console.log(
-    `single ${single.length}, both ${both.length}, no-fixed ${noFixed.length}, reference ${byReference.length}, human-settled ${human.length}, undecided ${undecided.length}, mismatch ${mismatched.length}, merges ${merges.length}, one-source ${oneSource.length}, entry todo ${todos.length}`,
+    `single ${single.length}, both ${both.length}, no-fixed ${noFixed.length}, reference ${byReference.length}, human-settled ${human.length}, undecided ${undecided.length}, mismatch ${mismatched.length}, merges ${merges.length}, one-source ${oneSource.length}, spoken-lean ${leaning.length}, entry todo ${todos.length}`,
   );
   if (WRITE) console.log(`wrote ${writtenBack.length} entr${writtenBack.length === 1 ? "y" : "ies"} back to data/`);
   console.log(`report -> audits/corpus-${TODAY}.md`);

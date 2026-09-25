@@ -36,9 +36,13 @@
    件数の最も多いソースを抜くと別の言い方が首位になる ① は ② に下げる（1 ソース頼み。抜いて ③ になるだけなら ① のまま記録）。
    terms は語形変化をまとめ、「…」は 1〜3 語の空き。話・書とも ③ の語は、mapping near/none で全候補が話・書とも 10 件未満なら
    「英語に決まった言い方がない」（参照のどれかが候補を 3 件以上使っていれば除く）、それ以外は CED（AP Calculus ／ AP Statistics）→ OpenStax・IM・CK-12（同じ段、件数の多い候補）→ Nicholson ／ Levin → 英語版 Wikipedia の記事名（数学カテゴリから 4 段以内）の呼び方を見出しにする（どちらも register は主張しない）。
+   話し言葉の首位が 1 ソース頼み（抜くと ③ か別の候補が首位）で、書き言葉（①）か CED が別の言い方で決まっていれば、
+   その言い方を en.term にし、話し言葉の言い方は register spoken の variant にする（書き言葉か CED が同じ言い方なら当てない）。
    **人間レビューに回るのは、そのどれにも当たらない ③ と、コーパスの結論がエントリの register と食い違うものだけ。**
    全 2,000 語を人間が見る前提は廃止された。
 10. コーパス本文はリポジトリに入れない（`corpus/` は .gitignore）。残すのは出典 ID・件数・日付だけ。
+    本文（definition・examples・pitfalls・mapping_note・variants の note）に用例コーパスの件数を書かない。比べる書き方にし、件数は evidence に任せる
+    （参照 CED・OpenStax・IM・CK-12・Nicholson・Levin の件数は書いてよい。validate が警告する）。
 
 ## 完了の定義（1 エントリ）
 必須項目すべて／読み仮名（ひらがな）／出典 1 件以上／validate 緑／crosscheck の flags なし（あれば理由付き）／

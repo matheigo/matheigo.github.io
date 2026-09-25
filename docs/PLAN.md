@@ -386,6 +386,7 @@ URL は英語 id 固定。`hreflang` で ja/en を分けない（1ページに�
 やること:
 1. Astro で §7 のページを実装。検索は MiniSearch ＋ wanakana、初回ロードで `search-index.json`（gzip 後 300 KB 目安）を取得
 2. 用語ページ: 日英・読み・定義・式（KaTeX）・🔊（Web Speech API, en-US。ボイスが無ければボタン非表示）・例文・コロケーション・落とし穴・関連語・単元リンク・出典・「間違いを報告」（GitHub issue テンプレへ）
+   - `evidence` の件数を表で出す（言い方ごとに話し言葉・書き言葉の件数、取得元の一覧、数えた日）。本文には用例コーパスの件数を書かない（STYLE 追記欄。2026-09-25 追加）ので、件数はこの表で見せる
 3. `/curriculum`: 日本側と米国側を左右に、単元クリックで用語一覧
 4. `/download`: JSON / CSV / Anki / PDF、ライセンス表示、更新日
 5. SEO: `<title>` は「解の公式 英語 | quadratic formula — MathBridge」型、`description` は定義文、JSON-LD `DefinedTerm`、sitemap、OGP 自動生成
@@ -656,6 +657,7 @@ OpenStax *Calculus* Vol 1–3、*Precalculus*、*Algebra and Trigonometry*、*In
 2. **normalize**: 小文字化、数式読みの表記ゆれ辞書（"f prime"/"f-prime"、"d x"/"dx"/"DX"、"x squared"/"x-squared"、"the integral"/"the intergral" 等）、数字の読み。
 3. **count**: 各エントリの候補表現（`en.term`、`en.alt`、`collocations`、`spoken_en`、`phrases.en`）を正規表現で数える。前後 8 語の文脈は一時ファイルに出す（レビュー用、コミットしない）。
 4. **decide**: 頻度比で `register` を決めるルール。例: spoken コーパスで 3:1 以上ならその表現を spoken の見出しに、written で 3:1 以上なら written の見出しに。両方で閾値未満 or 総件数 10 未満は **「コーパスで判断不能」フラグ** → 人間レビュー行き。
+   話し言葉の首位が 1 ソース頼み（抜くと ③ か別の候補が首位）で、書き言葉（①）か CED が別の言い方で決まっているときは、書き言葉・CED の言い方を見出しにし、話し言葉の言い方は spoken の variant にする（2026-09-25 追加。STYLE 原則 1）。
 5. **report**: `audits/corpus-YYYY-MM-DD.md` に、判断が変わった語・新たに見つかった言い回し（辞典にない高頻度表現）を列挙。**辞典に無い高頻度表現の発見** がこの仕組みの副産物で、Phase 1 の台帳の抜けを埋める。
 
 ### 人間レビューの再定義（§8-4 を置き換え）

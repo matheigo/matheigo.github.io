@@ -19,12 +19,18 @@ PLAN.md §6 をそのまま作業用に移したもの。**生成時に毎バッ
      ・それ以外 → 見出しは CED（AP Calculus ／ AP Statistics）→ OpenStax・IM・CK-12（同じ段）→ Nicholson ／ Levin → 英語版 Wikipedia の記事名の順に最初に見つかった呼び方（`corpus-reference-fallback`。docs/SOURCES.md）。
        Nicholson ／ Levin ／ Wikipedia で決まった語は mapping_note に「米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない」と件数を書く。
      ・どれにも無い → `corpus-undecided` で人間レビューへ。自分で判断して埋めない。
+   **話し言葉の首位が 1 ソース頼み**（件数の最も多いソースを抜くと ③ になるか、別の候補が首位になる）で、
+   書き言葉（①）か CED が別の言い方で決まっているときは、書き言葉・CED の言い方を `en.term` にし、話し言葉の言い方は
+   `register: spoken` の variant にする（negative correlation。話し言葉の negative linear relationship は Khan Academy だけ）。
+   書き言葉が先、CED が次。書き言葉（① か ②）か CED（最も多く使う候補）が話し言葉の首位と同じ言い方なら当てない
+   （left Riemann sum は CED の呼び方）。= を書いた形（let u =）は equal と読む同じ言い方として扱う。
+   `corpus:decide` の「エントリ側で直すこと」に出る（lib.ts `spokenLeanHead`）。
 2. 米国優先。英国異形は `en.uk` に入れる（math/maths、negative three / minus three、parentheses / brackets、trig / trigonometry）。
 3. 直訳禁止リスト（下）に触れる語は `mapping` を正直に付ける。
 4. 対応が 1 対 1 でないものを隠さない。`mapping_note` に「米国ではどう扱うか」を書く。**ここが一番価値がある。**
 5. 定義は自作、2 文以内。他資料の文章をコピーしない。JMdict / Weblio / 教科書の定義文は見てもよいが書き写さない。
    **用例コーパスの文も転載しない。** MIT OCW・OpenStax（と Khan Academy の字幕）は CC BY-NC-SA なので、
-   例文・定義文・note にコーパスの文を写さない。コーパスから使うのは件数だけ。
+   例文・定義文・note にコーパスの文を写さない。コーパスから使うのは件数だけで、その件数も本文には書かない（追記欄の最初）。
    辞典のデータは CC0 のまま（NC-SA の文が混ざると CC0 で出せなくなる）。
 6. 読み（ひらがな）必須。ローマ字は wanakana で自動生成。カタカナ語（インテグラル、シグマ）も `ja.alt` に入れる。
 7. 出典 1 件以上。無ければ `confidence: draft` のまま。
@@ -55,7 +61,7 @@ Stewart *Calculus* や Larson *Precalculus* は書名を出典に挙げるだけ
 | 解と係数の関係 | relation of solutions and coefficients | Vieta's formulas（大学）／ relationship between roots and coefficients（高校では説明的に） | near |
 | 平方完成 | — | completing the square（完成形は vertex form） | exact |
 | 移項 | transposition | subtract 3 from both sides ／ add 3 to both sides ／ move it over to the other side（話し言葉はこの頻度順。書き言葉は両辺の言い方） | near |
-| 約分 | — | simplify the fraction（書き言葉 73 件、OpenStax Prealgebra ほか）／ cancel the common factor（分数式）／ reduce ／ cancel（動詞） | near |
+| 約分 | — | simplify the fraction（書き言葉で最も多い。OpenStax Prealgebra ほか）／ cancel the common factor（分数式）／ reduce ／ cancel（動詞） | near |
 | 通分 | — | find a common denominator（動詞句） | near |
 | 代入 | — | plug in ／ substitute（話し言葉は plug in、書き言葉は substitute。高校向けの Khan は話し言葉でも substitute） | exact |
 | たすき掛け | cross multiplication | ac method ／ grouping ／ box method | none |
@@ -73,8 +79,8 @@ register が違う言い方は `en.variants` に `register` を付けて入れ�
 
 | 日本語 | 話し言葉 | 書き言葉・答案 |
 |---|---|---|
-| 移項する | subtract 3 from both sides ／ add 3 to both sides ／ move the 3x over to the other side（②併記。249 ／ 244 ／ 52。両辺は高校向け、other side は大学の講義寄り） | add 3 to both sides ／ subtract 3 from both sides ／ isolate x ／ to the other side（②併記。92 ／ 92 ／ 14 ／ 10。後の 2 つは OpenStax Prealgebra・Elementary Algebra が中心）。両辺と other side は register both |
-| 代入する | plug in（①。1,405 対 substitute 391。Khan は substitute がほぼ全部）／ substitute back | substitute（①。1,338 対 plug in 35）。エントリは substitute を both にした |
+| 移項する | subtract 3 from both sides ／ add 3 to both sides ／ move the 3x over to the other side（②併記。この頻度順。両辺は高校向け、other side は大学の講義寄り） | add 3 to both sides ／ subtract 3 from both sides ／ isolate x ／ to the other side（②併記。この頻度順。後の 2 つは OpenStax Prealgebra・Elementary Algebra が中心）。両辺と other side は register both |
+| 代入する | plug in（①。substitute よりずっと多い。Khan は substitute がほぼ全部）／ substitute back | substitute（①。plug in はほとんど使わない）。エントリは substitute を both にした |
 | よって | so | therefore / hence |
 
 Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を好むことが多い。迷ったら written 側を答案に使う。
@@ -83,6 +89,15 @@ Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を�
 
 ## 追記欄（Phase 2 以降に育てる）
 
+- **本文（definition・examples・pitfalls・mapping_note・variants の note）に用例コーパスの件数を書かない。**
+  コーパスはソースを足すたびに件数が変わり、本文の数はすぐ古くなる（Khan Academy の中学の字幕を足したとき 123 語が古くなった）。
+  「講義では A が多い、教科書では B」「話し言葉はほとんどが Khan Academy」「書き言葉はすべて OpenStax Introductory Statistics」
+  「用例コーパスにはほとんど出てこない」のように比べる書き方にし、件数は `evidence`（corpus:decide が書く）に任せる。
+  サイトの用語ページは evidence の件数を表で出す（PLAN Phase 4）。判定の説明も数を書かない（「話し言葉では A が首位なので見出しにした」）。
+  **参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）の件数は、資料が変わらないので書いてよい。** ただし参照の名前を主語にした文にし
+  （「OpenStax Prealgebra は divisibility test と書く（13 件）」「IM では 0 件」）、用例コーパス・話し言葉・書き言葉・講義・チャンネル名と
+  同じ文（。まで）に入れない。書き言葉の件数が OpenStax だけでも「書き言葉 20 件」とは書かない。参照の件数は、見出しを参照で決めた根拠など
+  必要なときだけ残す。`pnpm validate` が「本文に用例コーパスの件数らしい数字がある」文を警告する（scripts/lib/corpus-count.ts）。
 - 「エフ ダッシュ」の f dash は用例コーパスに 0 件。prime を使う（f prime of x、二階は f double prime）。
 - 「極大・極小」は local maximum / minimum。区間全体の最大・最小には absolute か global を付ける。
 - 「〜とおく」は let。"Let u = 2x" が答案でも口頭でも標準。

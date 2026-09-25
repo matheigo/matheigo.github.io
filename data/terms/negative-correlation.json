@@ -6,12 +6,16 @@
     "alt": []
   },
   "en": {
-    "term": "negative linear relationship",
-    "alt": [
-      "negative correlation"
+    "term": "negative correlation",
+    "alt": [],
+    "variants": [
+      {
+        "term": "negative linear relationship",
+        "register": "spoken",
+        "note": "話し言葉では negative correlation より多いが、すべて Khan Academy（AP Statistics と中学の講義）。"
+      }
     ],
-    "uk": null,
-    "register": "spoken"
+    "uk": null
   },
   "pos": "noun",
   "mapping": "exact",
@@ -46,7 +50,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスの話し言葉では negative linear relationship が 12 件（すべて Khan Academy。AP Statistics 8・中学 4）、negative correlation が 7 件（すべて Khan Academy の AP Statistics）で、首位だけが 10 件以上なので negative linear relationship を見出しにした。書き言葉では negative correlation が 7 件（OpenStax Introductory Statistics 4・Algebra and Trigonometry 3）で、AP Statistics の CED（topic 5.2）も negative correlation と書く。"
+    "用例コーパスの話し言葉では negative linear relationship のほうが多いが、すべて Khan Academy（AP Statistics と中学の講義）なので、見出しは AP Statistics の CED（topic 5.2）の negative correlation にし、negative linear relationship は話し言葉の variant にした。書き言葉でも negative correlation のほうが多い（OpenStax Introductory Statistics・Algebra and Trigonometry）。"
   ],
   "related": [
     "positive-correlation",

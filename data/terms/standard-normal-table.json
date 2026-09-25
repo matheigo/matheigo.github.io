@@ -6,12 +6,16 @@
     "alt": []
   },
   "en": {
-    "term": "z-table",
-    "alt": [
-      "standard normal table"
+    "term": "standard normal table",
+    "alt": [],
+    "variants": [
+      {
+        "term": "z-table",
+        "register": "spoken",
+        "note": "話し言葉ではこちらだけが出てくるが、すべて Khan Academy の AP Statistics。"
+      }
     ],
-    "uk": null,
-    "register": "spoken"
+    "uk": null
   },
   "pos": "noun",
   "mapping": "near",
@@ -46,7 +50,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスの話し言葉 z-table 52 件はすべて Khan Academy。書き言葉は normal table 3 件、standard normal table 1 件だけで、OpenStax Introductory Statistics は確率を電卓の normalcdf で求める（54 件）。"
+    "用例コーパスの話し言葉の z-table はすべて Khan Academy。書き言葉には normal table・standard normal table がわずかに出てくるだけ。OpenStax Introductory Statistics は確率を電卓の normalcdf で求める。 見出しは AP Statistics の CED（2026 年版。topic 2.11）の呼び方にした。"
   ],
   "related": [
     "standard-normal-distribution",

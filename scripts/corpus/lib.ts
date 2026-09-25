@@ -1497,6 +1497,58 @@ export function settleUndecided(
   return { kind: "undecided" };
 }
 
+// ------------------------- 見出しの規則: 1 ソース頼みの話し言葉 (中学の単元 2)
+
+/**
+ * The headword when the spoken leader rests on one source (DECISIONS, Phase 2
+ * 中学の単元 2 の前の修正 3): without the source that gives the spoken leader
+ * most of its hits, the spoken verdict is ③ or another wording leads, while
+ * the written corpus (①) or a CED settles on another wording. The headword is
+ * then the written / CED wording and the spoken leader a spoken variant - one
+ * lecturer's habit does not set the headword against the textbooks and the
+ * CED (negative linear relationship, Khan Academy only, against negative
+ * correlation in OpenStax and the AP Statistics CED).
+ *
+ * The written corpus comes before the CED (the corpus before the references,
+ * as in rule 1 and 2). The rule does not apply when the written corpus (① or
+ * ②) or the CED (its most-used candidate) backs the spoken leader - left
+ * Riemann sum is the CED's name, whatever OpenStax writes - nor to a leader
+ * that only thins out without its source (the same leader, ② instead of ①).
+ */
+export interface LeanHead {
+  /** The spoken leader, and the source it rests on. */
+  spoken: string;
+  source: string;
+  /** The wording the headword takes, and where that comes from. */
+  head: string;
+  by: "written" | "ced";
+}
+
+export function spokenLeanHead(spoken: Verdict, written: Verdict | null, ref: ReferenceHits | undefined): LeanHead | null {
+  if (spoken.kind === "undecided" || !spoken.dependsOn) return null;
+  const lead = headsOf(spoken)[0];
+  const without = spoken.dependsOn.without;
+  if (without.kind !== "undecided" && sameWording(headsOf(without)[0], lead)) return null;
+  const source = spoken.dependsOn.source;
+  // The written corpus or the CED backs the spoken leader: it stays. A written
+  // "let u =" is the spoken "let u equal" with the sign written out, not
+  // another wording.
+  const read = (t: string) => t.replace(/\s*=\s*/g, " equal ").trim();
+  if (written && headsOf(written).some((h) => sameWording(read(h), read(lead)))) return null;
+  const sum = (by: Record<string, Record<string, number>> | undefined, c: string) =>
+    Object.values(by?.[c] ?? {}).reduce((a, b) => a + b, 0);
+  const ced = (c: string) => (ref ? sum(ref.ced, c) + sum(ref.cedStats, c) : 0);
+  const top = ref
+    ? [...new Set([...Object.keys(ref.ced), ...Object.keys(ref.cedStats ?? {})])]
+        .filter((c) => ced(c) > 0)
+        .sort((a, b) => ced(b) - ced(a))[0]
+    : undefined;
+  if (top !== undefined && ced(lead) >= ced(top)) return null;
+  if (written?.kind === "single") return { spoken: lead, source, head: written.head, by: "written" };
+  if (top !== undefined) return { spoken: lead, source, head: top, by: "ced" };
+  return null;
+}
+
 /**
  * Are two wordings the same phrase? Only two things are folded together:
  *

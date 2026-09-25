@@ -26,6 +26,7 @@ import {
   sampleTermContexts,
   settleUndecided,
   sourceWeights,
+  spokenLeanHead,
   weigh,
   wikipediaHead,
   type CorpusDoc,
@@ -371,6 +372,68 @@ describe("decideRobust", () => {
 
   it("leaves ③ alone", () => {
     expect(decideRobust({ x: { a: 3 } }, { a: 1 }, "spoken").kind).toBe("undecided");
+  });
+});
+
+// DECISIONS, Phase 2 中学の単元 2 の前の修正 3: a spoken leader that rests on one
+// source does not set the headword against the written corpus or a CED
+describe("spokenLeanHead", () => {
+  const w = { k: 1, m: 1, os: 1, b: 1 };
+  const ref = (r: Partial<ReferenceHits>): ReferenceHits => ({ ced: {}, openstax: {}, openstaxTitles: {}, ...r });
+
+  it("takes the CED's wording when the written corpus is ③ (negative correlation)", () => {
+    // negative linear relationship: 12, all Khan Academy (8 of them one source) -> ③ without it
+    const spoken = decideRobust(
+      { "negative linear relationship": { k: 8, m: 4 }, "negative correlation": { k: 7 } },
+      w,
+      "spoken",
+    );
+    const written = decideRobust({ "negative correlation": { os: 7 }, "negative linear relationship": { os: 1 } }, w, "written");
+    expect(spoken).toMatchObject({ kind: "single", head: "negative linear relationship" });
+    expect(written.kind).toBe("undecided");
+    expect(
+      spokenLeanHead(spoken, written, ref({ cedStats: { "negative correlation": { "5.2": 1 } } })),
+    ).toEqual({ spoken: "negative linear relationship", source: "k", head: "negative correlation", by: "ced" });
+  });
+
+  it("takes the written ① before the CED", () => {
+    const spoken = decideRobust({ "linear system": { k: 30, b: 5 }, "system of linear equations": { b: 5 } }, w, "spoken");
+    const written = decideRobust({ "system of linear equations": { os: 40 } }, w, "written");
+    // the CED names a third wording: the written corpus comes first
+    expect(spokenLeanHead(spoken, written, ref({ ced: { "system of equations": { "1.1": 5 } } }))).toMatchObject({
+      head: "system of linear equations",
+      by: "written",
+    });
+  });
+
+  it("keeps the spoken leader when the written corpus or the CED backs it", () => {
+    const spoken = decideRobust({ "left riemann sum": { k: 20, b: 2 } }, w, "spoken");
+    const written = decideRobust({ "left-endpoint approximation": { os: 15 } }, w, "written");
+    // the CED calls it left Riemann sum: the rule does not apply
+    expect(spokenLeanHead(spoken, written, ref({ ced: { "left riemann sum": { "6.2": 3 } } }))).toBeNull();
+    // the written corpus uses it too
+    const both = decideRobust({ "left riemann sum": { os: 12 }, "left-endpoint approximation": { os: 15 } }, w, "written");
+    expect(spokenLeanHead(spoken, both, ref({}))).toBeNull();
+  });
+
+  it("reads a written = as the spoken equal (let u = is let u equal)", () => {
+    const spoken = decideRobust({ "let u equal": { k: 12, b: 2 }, "set u equal to": { b: 3 } }, w, "spoken");
+    const written = decideRobust({ "let u =": { os: 88 } }, w, "written");
+    expect(spokenLeanHead(spoken, written, ref({}))).toBeNull();
+  });
+
+  it("leaves a leader that only thins out without its source (the same leader, ②)", () => {
+    // A 52 / B 10 -> 12 / 10 without k: still A first
+    const spoken = decideRobust({ A: { k: 40, b: 12 }, B: { b: 10 } }, w, "spoken");
+    expect(spoken.kind === "single" && spoken.dependsOn?.without.kind).toBe("both");
+    const written = decideRobust({ B: { os: 30 } }, w, "written");
+    expect(spokenLeanHead(spoken, written, ref({}))).toBeNull();
+  });
+
+  it("leaves a leader that does not rest on one source", () => {
+    const spoken = decideRobust({ A: { k: 20, m: 20, b: 20 } }, w, "spoken");
+    const written = decideRobust({ B: { os: 30 } }, w, "written");
+    expect(spokenLeanHead(spoken, written, ref({}))).toBeNull();
   });
 });
 

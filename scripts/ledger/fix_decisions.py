@@ -1343,7 +1343,8 @@ PHASE2G_SAME = [
     ("let-x-be", "let-u-equal", "into"),  # 〜を x とする / 〜とおく: both "let" (STYLE 追記欄)
     ("write-using-a-variable", "write-an-equation", "into"),  # 文字を使って表す / 式で表す
     ("set-up-an-equation", "write-an-equation", "into"),  # 式を立てる: English says write an equation for both
-    ("rate", "percent", "into"),  # 割合: 中1 uses it for percent problems (x % 引き, 2 割); English has no one word for 割合
+    # 割合 (rate) stays its own row (Phase 2 中学の単元 2 の前の修正 2): English has no one word for
+    # it and says ratio / rate / fraction / percent by the situation, which is the entry's point
     ("combining-like-terms", "combine-like-terms", "into"),
     ("collect", "combine-like-terms", "into"),  # まとめる (collect like terms)
     # 中1 一次方程式

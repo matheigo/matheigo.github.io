@@ -8,12 +8,14 @@
  * - the "definition of done" in CLAUDE.md (sources, examples, mapping_note)
  * - a verified entry carries no problem flag (record flags may stay; lib/flags.ts)
  * - a Japanese word shared by two entries is a listed homonym (SAME_JA)
+ * - no count from the example corpus in the body text (lib/corpus-count.ts; a warning)
  *
  * Exit code 1 on any error. Warnings do not fail the build.
  */
 import Ajv2020, { type ErrorObject } from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import katex from "katex";
+import { bodyTexts, corpusCountSentences } from "./lib/corpus-count.js";
 import { PROBLEM_FLAGS, RECORD_FLAGS, isProblemFlag } from "./lib/flags.js";
 import { COLLECTIONS, loadAll, readSchema, type Collection, type Entry } from "./lib/load.js";
 
@@ -155,6 +157,13 @@ for (const collection of COLLECTIONS) {
     }
 
     if (collection === "curriculum") continue;
+
+    // counts from the example corpus stay in evidence (STYLE 追記欄) ------
+    for (const [field, text] of bodyTexts(data)) {
+      for (const s of corpusCountSentences(text)) {
+        warn(where, `${field} has what looks like a count from the example corpus (write a comparison; counts live in evidence): ${s}`);
+      }
+    }
 
     // definition of done (CLAUDE.md) -------------------------------------
     const confidence = data.confidence as string;

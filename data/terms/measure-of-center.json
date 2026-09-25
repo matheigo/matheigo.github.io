@@ -9,16 +9,20 @@
     ]
   },
   "en": {
-    "term": "measure of central tendency",
-    "alt": [
-      "measure of center"
+    "term": "measure of center",
+    "alt": [],
+    "variants": [
+      {
+        "term": "measure of central tendency",
+        "register": "spoken",
+        "note": "話し言葉では measure of center より多いが、ほとんどが Khan Academy の AP Statistics。"
+      }
     ],
-    "uk": null,
-    "register": "spoken"
+    "uk": null
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "「代表値」に 1 語で当たる英語の総称はなく、measure of central tendency ／ measure of center（中心の指標）と言う。用例コーパスでは話し言葉の measure of central tendency が 12 件（すべて Khan Academy）、書き言葉の measure of center が 3 件（すべて OpenStax Introductory Statistics）。",
+  "mapping_note": "「代表値」に 1 語で当たる英語の総称はなく、measure of central tendency ／ measure of center（中心の指標）と言う。用例コーパスでは話し言葉は measure of central tendency のほうが多く（すべて Khan Academy）、書き言葉には measure of center だけが出てくる（すべて OpenStax Introductory Statistics）。 見出しは AP Statistics の CED（2026 年版。topic 1.7 ほか）の呼び方にした。",
   "domains": [
     "statistics"
   ],

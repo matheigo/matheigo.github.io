@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語の compound inequality は 2 つの不等式を and または or でつないだもの。and でつないだもの（両方を満たす x、つまり共通範囲を答える）が日本の連立不等式にあたり、or でつないだもの（どちらかを満たす x）は連立不等式ではない。a < x < b の 1 行の形も、and の compound inequality をまとめて書いたもの。用例コーパスでは compound inequality が話し言葉で 13 件（Khan Academy 7・Professor Leonard 3・patrickJMT 2 ほか 1）、書き言葉で 75 件（OpenStax Intermediate Algebra 69・OpenStax Algebra and Trigonometry 6）。",
+  "mapping_note": "英語の compound inequality は 2 つの不等式を and または or でつないだもの。and でつないだもの（両方を満たす x、つまり共通範囲を答える）が日本の連立不等式にあたり、or でつないだもの（どちらかを満たす x）は連立不等式ではない。a < x < b の 1 行の形も、and の compound inequality をまとめて書いたもの。用例コーパスでは compound inequality は話し言葉より書き言葉に多く、書き言葉は大半が OpenStax Intermediate Algebra。",
   "domains": [
     "algebra"
   ],
@@ -51,7 +51,7 @@
   "pitfalls": [
     "or でつないだ compound inequality（x < −2 or x > 3）は連立不等式ではない。答えは 2 つの範囲を合わせたもの。",
     "共通範囲が無いときは no solution（解なし）。数直線に 2 つの解を描いて重なりを確かめるとよい。",
-    "system of inequalities は、OpenStax では 2 変数の不等式の組をグラフで解く節（Elementary Algebra の Graphing Systems of Linear Inequalities ほか）の言い方で、数II の「連立不等式の表す領域」に当たる（書き言葉 27 件: OpenStax Elementary Algebra 18・OpenStax Algebra and Trigonometry 9、話し言葉 2 件）。1 変数の連立不等式の意味だけを数える形がないので、候補表現には数えない。"
+    "system of inequalities は、OpenStax では 2 変数の不等式の組をグラフで解く節（Elementary Algebra の Graphing Systems of Linear Inequalities ほか）の言い方で、数II の「連立不等式の表す領域」に当たる（書き言葉では OpenStax Elementary Algebra と OpenStax Algebra and Trigonometry に出てくるが、話し言葉にはほとんど出てこない）。1 変数の連立不等式の意味だけを数える形がないので、候補表現には数えない。"
   ],
   "related": [
     "linear-inequality",
