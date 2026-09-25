@@ -47,7 +47,7 @@
   "pitfalls": [
     "inscribed angle は円周角で、内接円とは別の概念。",
     "内接円の半径は inradius、中心（内心）は incenter。面積 S = r × (半周の長さ s) で、s は Heron の公式と同じ semiperimeter。",
-    "用例コーパスの inscribed circle（書き言葉 3 件、すべて OpenStax Calculus）は曲線の曲率を表す円（曲率円）の意味で、三角形の内接円ではない。内接円としては inscribed circle of the triangle などの形で数えた（0 件）。"
+    "用例コーパスの inscribed circle（書き言葉 3 件、すべて OpenStax Calculus）は曲線の曲率を表す円（曲率円）の意味で、三角形の内接円ではない。内接円としては三角形の形（the triangle's inscribed circle ／ its inscribed circle ほか）で数え、用例コーパスは 0 件、IM Geometry（7.6〜7.9）は 13 件。"
   ],
   "related": [
     "circumscribed-circle",
@@ -60,6 +60,12 @@
       "type": "wikipedia-langlink",
       "ja": "内接円",
       "en": "Inscribed circle"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 7.7 Circles in Triangles・Geometry 8.2 Playing with Probability・Geometry 7.6 A Special Point"
     }
   ],
   "confidence": "likely",
@@ -75,8 +81,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 inscribed circle of the triangle | inscribed circle of a triangle | circle inscribed in a triangle | circle inscribed in the triangle | triangle's inscribed circle | its inscribed circle | inscribed circle for the triangle | inscribed circle is tangent | inscribed circle's radius | an inscribed circle（Geometry 7.7 Circles in Triangles・Geometry 8.2 Playing with Probability・Geometry 7.6 A Special Point・計 13 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

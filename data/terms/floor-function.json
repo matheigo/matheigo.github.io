@@ -16,8 +16,8 @@
     "uk": null
   },
   "pos": "noun",
-  "mapping": "near",
-  "mapping_note": "日本語の「ガウス記号」は記号 [x] の名前で、英語の見出しは関数の名前（floor function）。記号は ⌊x⌋ と書き、⌊x⌋ は the floor of x と読む。用例コーパスでは話・書とも 10 件未満（話し言葉は floor of 6 件・floor function 4 件）で、OpenStax Calculus の呼び方 floor function を見出しにした。",
+  "mapping": "exact",
+  "mapping_note": null,
   "domains": [
     "algebra",
     "set-theory"
@@ -55,6 +55,7 @@
     }
   ],
   "pitfalls": [
+    "日本語の「ガウス記号」は記号 [x] の名前で、英語の見出しは関数の名前（floor function）。記号は ⌊x⌋ と書き、the floor of x と読む。用例コーパスでは話・書とも 10 件未満（話し言葉は数学の意味の floor of 4 件・floor function 4 件）で、見出しは OpenStax Calculus の呼び方。",
     "日本の [x] を英語の文にそのまま書くと、ただの角かっこ（brackets）に見える。英語で書くときは ⌊x⌋ を使う。",
     "負の数に注意。⌊−3.7⌋ は −3 ではなく −4（−3.7 を超えない最大の整数）。",
     "切り上げの ⌈x⌉ は ceiling function（the ceiling of x）。床関数と天井関数は対になっている。"
@@ -85,18 +86,14 @@
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "floor of": 6,
-      "floor function": 4
+      "floor function": 4,
+      "!top floor of !a !an !the !this !that !his !her !their !its": 4
     },
     "written": {
-      "floor function": 1,
-      "floor of": 1
+      "floor function": 1
     },
     "sources": [
-      "khan-ap-calc",
-      "mit-18.06",
       "mit-6.042",
-      "openstax-algtrig",
       "openstax-calculus",
       "yt:3blue1brown"
     ],
@@ -105,7 +102,7 @@
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満 ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは OpenStax の呼び方 floor function（本文 1 件）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 floor function（本文 1 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

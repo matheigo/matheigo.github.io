@@ -43,7 +43,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは degree measure は書き言葉 3 件だけ。授業では in degrees（度で）と言う。"
+    "用例コーパスでは degree measure は書き言葉 3 件だけ（IM は Grade 7 と Geometry に 8 件）。授業では in degrees（度で）と言う。"
   ],
   "related": [
     "radian-measure",
@@ -57,6 +57,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7)",
+      "url": "https://im.kendallhunt.com/MS/students/2/index.html",
+      "note": "Grade 7 7.1 Relationships of Angles・Grade 7 7.2 Adjacent Angles・Grade 7 7.7 Building Polygons (Part 2)"
     }
   ],
   "confidence": "likely",
@@ -65,7 +71,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "written": {
       "degree measure": 3
@@ -79,7 +85,7 @@
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 degree measure（本文 3 件）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは IM の呼び方 degree measure（Grade 7 7.1 Relationships of Angles・Grade 7 7.2 Adjacent Angles・Grade 7 7.7 Building Polygons (Part 2)・計 8 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

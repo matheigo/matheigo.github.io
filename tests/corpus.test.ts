@@ -26,6 +26,7 @@ import {
   settleUndecided,
   sourceWeights,
   weigh,
+  wikipediaHead,
   type CorpusDoc,
   type ReferenceHits,
 } from "../scripts/corpus/lib";
@@ -441,6 +442,41 @@ describe("settleUndecided", () => {
     expect(settleUndecided({ mapping: "exact" }, { spoken: 0, written: 0 }, withOpenStax, order)).toMatchObject({ by: "openstax" });
   });
 
+  it("reads OpenStax and IM as one tier: the candidate with more hits in both wins", () => {
+    const s = settleUndecided(
+      { mapping: "exact" },
+      { spoken: 0, written: 0 },
+      ref({ openstax: { [order[0]]: 1 }, im: { [order[1]]: { "Geometry 7.5 Triangles in Circles": 20, "Geometry 7.4 Quadrilaterals": 1 } }, imGlossary: { [order[1]]: ["Geometry"] } }),
+      order,
+    );
+    expect(s).toEqual({
+      kind: "reference",
+      by: "im",
+      head: order[1],
+      where: ["Geometry glossary", "Geometry 7.5 Triangles in Circles", "Geometry 7.4 Quadrilaterals", "計 21 件"],
+    });
+    // OpenStax's own wording is recorded as OpenStax's when it has more hits there
+    const os = settleUndecided({ mapping: "exact" }, { spoken: 0, written: 0 }, ref({ openstax: { [order[0]]: 3 }, im: { [order[0]]: { "Algebra 1 2.1 X": 1 } } }), order);
+    expect(os).toMatchObject({ by: "openstax", head: order[0] });
+    // and IM comes before Nicholson / Levin
+    const books = ref({ levin: { [order[0]]: { "2.4 Euler Trails": 9 } }, im: { [order[1]]: { "Grade 8 1.1 X": 1 } } });
+    expect(settleUndecided({ mapping: "exact" }, { spoken: 0, written: 0 }, books, order)).toMatchObject({ by: "im", head: order[1] });
+  });
+
+  it("falls back to the English Wikipedia article's name last, as the matching candidate", () => {
+    const wiki = ref({ wikipedia: { title: "Integrating using long division (calculus)", via: "ja-langlink" } });
+    expect(settleUndecided({ mapping: "exact" }, { spoken: 0, written: 0 }, wiki, order)).toEqual({
+      kind: "reference",
+      by: "wikipedia",
+      head: order[1],
+      where: ["Integrating using long division (calculus)", "ja の langlink 先"],
+    });
+    const withLevin = { ...wiki, levin: { [order[0]]: { "1.1 Statements": 1 } } };
+    expect(settleUndecided({ mapping: "exact" }, { spoken: 0, written: 0 }, withLevin, order)).toMatchObject({ by: "levin" });
+    // not before "no fixed expression"
+    expect(settleUndecided({ mapping: "near", ja: "x", en: "y" }, { spoken: 0, written: 0 }, wiki, order).kind).toBe("no-fixed-expression");
+  });
+
   it("stays undecided when neither reference names it", () => {
     expect(settleUndecided({ mapping: "exact" }, { spoken: 0, written: 0 }, ref({}), order)).toEqual({ kind: "undecided" });
   });
@@ -484,6 +520,28 @@ describe("cedSections / referenceHits", () => {
     expect(r.ced["one-sided limit"]).toEqual({ "1.2": 1 });
     expect(r.openstax).toEqual({ limit: 2 });
     expect(r.openstaxTitles).toEqual({ limit: ["One-Sided Limits"], "one-sided limit": ["One-Sided Limits"] });
+  });
+});
+
+describe("wikipediaHead", () => {
+  it("drops the disambiguation and lowers the first letter of a common noun", () => {
+    expect(wikipediaHead("Translation (geometry)")).toBe("translation");
+    expect(wikipediaHead("Dihedral angle")).toBe("dihedral angle");
+  });
+  it("keeps a name", () => {
+    expect(wikipediaHead("Ceva's theorem")).toBe("Ceva's theorem");
+    expect(wikipediaHead("LU decomposition")).toBe("LU decomposition");
+  });
+});
+
+describe("referenceHits (IM)", () => {
+  it("counts IM lessons and a glossary headword that is the whole wording", () => {
+    const r = referenceHits(["incenter", "center"], [], [], [], {
+      im: [["Geometry 7.6 A Special Point", "the incenter of the triangle"]],
+      imGlossary: { Geometry: ["incenter", "center of a dilation"], "Grade 8": ["center (of a circle)"] },
+    });
+    expect(r.im).toEqual({ incenter: { "Geometry 7.6 A Special Point": 1 } });
+    expect(r.imGlossary).toEqual({ incenter: ["Geometry"], center: ["Grade 8"] });
   });
 });
 

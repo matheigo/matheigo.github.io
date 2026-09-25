@@ -6,7 +6,9 @@
                                                    #   AP Calculus AB/BC CED, AP Statistics CED (College Board),
                                                    #   Nicholson, Linear Algebra with Applications (Lyryx),
                                                    #   Levin, Discrete Mathematics: An Open Introduction
-    python3 scripts/ledger/refetch.py ced          # the same as refs (older name)
+                                                   #   and Illustrative Mathematics 6–8 / 9–12 (HTML)
+    python3 scripts/ledger/refetch.py im           # only Illustrative Mathematics (lessons, practice, glossaries)
+    python3 scripts/ledger/refetch.py ced          # the PDFs only (older name)
     python3 scripts/ledger/refetch.py ced-find "accumulation function" "shell method"
 
 langlinks (docs/DECISIONS.md, Phase 2 修正): the Phase 1 ledger has 167 rows
@@ -80,6 +82,8 @@ def open_url(url, what):
             return urllib.request.urlopen(req, timeout=TIMEOUT)
         except Exception as e:  # noqa: BLE001 - any network failure counts toward the limit
             last = e
+            if isinstance(e, urllib.error.HTTPError) and e.code == 404:
+                raise  # not there: asking again does not help
             if attempt == MAX_RETRY:
                 break
             wait = 5 * (attempt + 1)
@@ -215,6 +219,149 @@ def refs():
         raise SystemExit(f"refs: {len(failed)} failed ({', '.join(failed)}); re-run to fetch only those")
 
 
+# --------------------------------------------------------------------- IM
+# Illustrative Mathematics (DECISIONS, Phase 2 幾何・離散の単元 2): IM 6–8 Math
+# (Grades 6, 7, 8) and IM 9–12 Math (Algebra 1, Geometry, Algebra 2), the
+# student-facing lesson and practice pages and each course's glossary, as
+# hosted by Kendall Hunt. CC BY 4.0 (the Illustrative Mathematics name and
+# logo are not under it). Only hit counts, lesson titles and glossary
+# headwords are used; the text stays under corpus/ref/ (gitignored).
+IM_HOST = "https://im.kendallhunt.com"
+IM_COURSES = [  # (book, path, course name)
+    ("im-6-8", "/MS/students/1", "Grade 6"),
+    ("im-6-8", "/MS/students/2", "Grade 7"),
+    ("im-6-8", "/MS/students/3", "Grade 8"),
+    ("im-9-12", "/HS/students/1", "Algebra 1"),
+    ("im-9-12", "/HS/students/2", "Geometry"),
+    ("im-9-12", "/HS/students/3", "Algebra 2"),
+]
+IM_DIR = os.path.join(REF, "im")
+IM_PAGES = os.path.join(IM_DIR, "pages")
+IM_GLOSSARY = os.path.join(REF, "im-glossary.json")
+IM_WORKERS = 4
+IM_NO_PAGE = "<!-- 404: no such page -->"
+
+
+def im_main(html):
+    """The <main> element without scripts, styles and GeoGebra base64 blobs."""
+    i, j = html.find("<main"), html.rfind("</main>")
+    body = html[i:j] if i >= 0 and j > i else html
+    body = re.sub(r"<(script|style)\b[^>]*>.*?</\1>", "", body, flags=re.S)
+    return re.sub(r'<div class="ggb-base-64-data"[^>]*>.*?</div>', "", body, flags=re.S)
+
+
+def im_page(path):
+    """One page's <main>, cached per path; a cached page is not fetched again."""
+    cache = os.path.join(IM_PAGES, path.strip("/").replace("/", "_"))
+    if os.path.exists(cache) and os.path.getsize(cache) > 0:
+        return open(cache, encoding="utf-8").read()
+    try:
+        with open_url(IM_HOST + path, "im " + path) as r:
+            body = im_main(r.read().decode("utf-8", "replace"))
+    except urllib.error.HTTPError as e:
+        # A lesson without practice problems (the last unit of Grade 8, the
+        # optional lessons) has no practice page: cached as empty.
+        if e.code != 404 or not path.endswith("/practice.html"):
+            raise
+        body = IM_NO_PAGE
+    tmp = cache + ".part"
+    with open(tmp, "w", encoding="utf-8") as f:
+        f.write(body)
+    os.replace(tmp, cache)
+    return body
+
+
+def im_pages(paths, label):
+    """Fetch many pages with a few workers; progress done/total. Failures are
+    reported and left uncached, so a re-run fetches only those."""
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    out, failed = {}, []
+    todo = [p for p in paths if not os.path.exists(os.path.join(IM_PAGES, p.strip("/").replace("/", "_")))]
+    print(f"  [im {label}] {len(paths)} pages, {len(paths) - len(todo)} cached, {len(todo)} to fetch", flush=True)
+    done = 0
+    with ThreadPoolExecutor(IM_WORKERS) as pool:
+        futures = {pool.submit(im_page, p): p for p in paths}
+        for fut in as_completed(futures):
+            p = futures[fut]
+            try:
+                out[p] = fut.result()
+            except Exception as e:  # noqa: BLE001 - keep going; re-run fetches the rest
+                failed.append(p)
+                print(f"    FAILED {p}: {e}", flush=True)
+            done += 1
+            if done % 50 == 0 or done == len(paths):
+                print(f"  [im {label}] {done}/{len(paths)}", flush=True)
+    return out, failed
+
+
+def im_text(html):
+    """Visible text of a page body: tags to line breaks, entities decoded."""
+    import html as H
+
+    s = re.sub(r"<br\s*/?>|</(p|li|div|h\d|tr|td|th|b)>", "\n", html)
+    s = re.sub(r"<[^>]+>", " ", s)
+    s = H.unescape(s)
+    s = re.sub(r"[ \t]+", " ", s)
+    return re.sub(r"\n\s*\n+", "\n", s).strip()
+
+
+def im():
+    """IM 6–8 and 9–12: course -> units -> lessons (lesson and practice pages)
+    and glossaries. Writes corpus/ref/im-6-8.txt and im-9-12.txt, one section
+    per lesson ("\\f@@ <course> <unit>.<lesson> <title>"), and im-glossary.json
+    (course -> glossary headwords)."""
+    os.makedirs(IM_PAGES, exist_ok=True)
+    failed = []
+    courses, _ = im_pages([c + "/index.html" for _, c, _ in IM_COURSES], "courses")
+    units = {}
+    for _, c, _ in IM_COURSES:
+        body = courses.get(c + "/index.html", "")
+        units[c] = sorted({m for m in re.findall(r'href="(' + re.escape(c) + r'/\d+/index\.html)"', body)},
+                          key=lambda p: int(p.split("/")[-2]))
+    unit_pages, f = im_pages([u for c in units for u in units[c]], "units")
+    failed += f
+    lessons = {}  # unit path -> [(n, title, path)]
+    for u, body in unit_pages.items():
+        base = u.rsplit("/", 1)[0]
+        found = OrderedDict()
+        for m in re.finditer(r'<a[^>]*href="(' + re.escape(base) + r'/(\d+)/index\.html)"[^>]*>(.*?)</a>', body, re.S):
+            n = int(m.group(2))
+            title = re.sub(r"^\s*\d+\s*", "", im_text(m.group(3)).replace("\n", " ")).strip()
+            if n not in found or (title and not found[n][1]):
+                found[n] = (n, title, m.group(1))
+        lessons[u] = sorted(found.values())
+    pages = []
+    for u in lessons:
+        for _, _, p in lessons[u]:
+            pages += [p, p.replace("/index.html", "/practice.html")]
+    glossaries = [c + "/glossary.html" for _, c, _ in IM_COURSES]
+    fetched, f = im_pages(pages + glossaries, "lessons")
+    failed += f
+    books = OrderedDict()
+    glossary = OrderedDict()
+    for book, c, name in IM_COURSES:
+        parts = books.setdefault(book, [])
+        for u in units[c]:
+            un = u.split("/")[-2]
+            for n, title, p in lessons.get(u, []):
+                text = "\n".join(im_text(fetched.get(q, "")) for q in (p, p.replace("/index.html", "/practice.html")))
+                parts.append(f"\f@@ {name} {un}.{n} {title}\n{text}\n")
+        g = fetched.get(c + "/glossary.html", "")
+        glossary[name] = [im_text(b).strip() for b in re.findall(r'<li class="im-c-list__item[^"]*">\s*<b>(.*?)</b>', g, re.S)]
+    for book, parts in books.items():
+        out = os.path.join(REF, book + ".txt")
+        with open(out + ".part", "w", encoding="utf-8") as fh:
+            fh.write("".join(parts))
+        os.replace(out + ".part", out)
+        print(f"  [im] {book}: {len(parts)} lessons -> {os.path.relpath(out, ROOT)}", flush=True)
+    with open(IM_GLOSSARY, "w", encoding="utf-8") as fh:
+        json.dump({"fetched": time.strftime("%Y-%m-%d"), "courses": glossary}, fh, ensure_ascii=False, indent=1)
+    print(f"  [im] glossary: " + ", ".join(f"{k} {len(v)}" for k, v in glossary.items()), flush=True)
+    if failed:
+        raise SystemExit(f"im: {len(failed)} pages failed; re-run to fetch only those")
+
+
 def ced_topics():
     """[(section, text)]. The unit guides run from the Unit 1 opener to the exam
     section; inside them each `TOPIC n.m` page is its own section and each unit
@@ -268,6 +415,8 @@ def main():
         langlinks()
     if cmd in ("refs", "ced", "all"):
         refs()
+    if cmd in ("refs", "im", "all"):
+        im()
     if cmd == "ced-find":
         ced_find(sys.argv[2:])
 

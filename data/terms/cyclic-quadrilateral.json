@@ -58,7 +58,7 @@
   "pitfalls": [
     "主語の向きに注意。the quadrilateral is inscribed in the circle は「四角形が円に内接する」、the circle is circumscribed about the quadrilateral は「円が四角形に外接する」で、同じ図を逆から言っている。",
     "四角形が円に内接する条件は、対角の和が 180° であること、または 1 つの外角がそれと隣り合わない内角（内対角）に等しいこと。",
-    "用例コーパスでは cyclic quadrilateral・inscribed quadrilateral とも 0 件（コーパスに Geometry の教科書が無い）。"
+    "用例コーパスでは cyclic quadrilateral・inscribed quadrilateral とも 0 件（コーパスに Geometry の教科書が無い）。IM Geometry は glossary の見出しで、7.4・7.5 に 13 件。"
   ],
   "related": [
     "inscribed-angle",
@@ -71,6 +71,12 @@
       "type": "wikipedia-langlink",
       "ja": "円に内接する四角形",
       "en": "Cyclic quadrilateral"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry glossary・Geometry 7.4 Quadrilaterals in Circles・Geometry 7.5 Triangles in Circles"
     }
   ],
   "confidence": "likely",
@@ -86,8 +92,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 cyclic quadrilateral（Geometry glossary・Geometry 7.4 Quadrilaterals in Circles・Geometry 7.5 Triangles in Circles・計 13 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

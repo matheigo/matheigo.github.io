@@ -6,9 +6,9 @@
     "alt": []
   },
   "en": {
-    "term": "stacked bar graph",
+    "term": "segmented bar graph",
     "alt": [
-      "segmented bar graph",
+      "stacked bar graph",
       "stacked bar chart"
     ],
     "uk": null
@@ -40,14 +40,14 @@
       "register": "spoken"
     },
     {
-      "en": "Make a stacked bar graph comparing the responses of the two groups.",
+      "en": "Make a segmented bar graph comparing the responses of the two groups.",
       "ja": "2 つのグループの回答を比べる帯グラフをかけ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは stacked bar graph が書き言葉 1 件だけ。AP Statistics の segmented bar graph は 0 件。"
+    "用例コーパスでは stacked bar graph が書き言葉 1 件だけで、segmented bar graph は 0 件。IM は Grade 8 の glossary の見出しが segmented bar graph（Grade 8・Algebra 1 のレッスンに 30 件、stacked bar graph は 3 件）で、見出しは IM の言い方にした。"
   ],
   "related": [
     "pie-chart",
@@ -57,6 +57,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 8)",
+      "url": "https://im.kendallhunt.com/MS/students/3/index.html",
+      "note": "Grade 8 glossary・Grade 8 6.10 Using Data Displays to Find Associations・Grade 8 6.9 Looking for Associations"
     }
   ],
   "confidence": "likely",
@@ -78,7 +84,7 @@
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 stacked bar graph（本文 1 件）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは IM の呼び方 segmented bar graph（Grade 8 glossary・Grade 8 6.10 Using Data Displays to Find Associations・Grade 8 6.9 Looking for Associations・計 30 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

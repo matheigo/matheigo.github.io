@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM）では扱わない（universal set は CED・OpenStax・IM とも 0 件）。",
   "domains": [
     "logic",
     "set-theory"
@@ -56,6 +56,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Universal_set",
+      "note": "記事名 Universal set（en.term のリダイレクト先）"
     }
   ],
   "confidence": "likely",
@@ -71,8 +77,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 universal set（英語版「Universal set」、en.term のリダイレクト先）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

@@ -30,7 +30,8 @@
  *   - mapping near / none and fewer than 10 hits in each register: English has
  *     no set way to say it (corpus-no-fixed-expression). Not for the human
  *   - otherwise the headword is what the CEDs (AP Calculus / AP Statistics),
- *     failing that OpenStax, failing that Nicholson / Levin call it
+ *     failing that OpenStax or IM (one tier), failing that Nicholson / Levin
+ *     call it, failing that the English Wikipedia article's name
  *     (corpus-reference-fallback). No register is claimed
  *
  * Only two things reach the human (the user's call on 2026-09-11):
@@ -155,6 +156,13 @@ interface Line {
 
 const NO_FIXED_NOTE = "英語に決まった言い方がない";
 
+/**
+ * Rule 2 past the high-school references (DECISIONS, Phase 2 幾何・離散の単元
+ * 2): a word no candidate of which occurs in the CEDs, OpenStax or IM says so
+ * in mapping_note, with the counts.
+ */
+const NOT_IN_HIGH_SCHOOL = "米国の高校課程（CED・OpenStax・IM）では扱わない";
+
 const HUMAN_SETTLED = "corpus-human-settled";
 
 /**
@@ -182,6 +190,8 @@ function describeSettled(s: Settled): string {
     if (s.by === "ced") return `CED の呼び方 ${s.head}（${s.where.map((w) => (/^\d/.test(w) ? `topic ${w}` : w)).join("・")}）`;
     if (s.by === "ced-stats") return `AP Statistics の CED の呼び方 ${s.head}（${s.where.map((w) => (/^\d/.test(w) ? `topic ${w}` : w)).join("・")}）`;
     if (s.by === "openstax") return `OpenStax の呼び方 ${s.head}（${s.where.slice(0, 3).join("・")}）`;
+    if (s.by === "im") return `IM の呼び方 ${s.head}（${[...s.where.slice(0, -1).slice(0, 3), s.where[s.where.length - 1]].join("・")}）`;
+    if (s.by === "wikipedia") return `Wikipedia の記事名 ${s.head}（英語版「${s.where[0]}」、${s.where[1]}）`;
     return `${s.by === "levin" ? "Levin" : "Nicholson"} の呼び方 ${s.head}（${s.where.slice(0, 3).join("・")}）`;
   }
   return "判断不能";
@@ -258,14 +268,27 @@ function main() {
     const settled: Settled | null = bothUndecided && human ? { kind: "undecided" } : ruleSettled;
     const todo: string[] = [];
     if (bothUndecided && human) {
-      const en = record.en as { register?: string };
+      // symbols have no en (their readings carry the register)
+      const en = (record.en ?? {}) as { register?: string };
       if (en.register) todo.push(`en.register（${en.register}）を外す（register は主張しない）`);
     }
     if (settled && settled.kind !== "undecided") {
       const en = record.en as { term: string; register?: string };
       if (en.register) todo.push(`en.register（${en.register}）を外す（register は主張しない）`);
-      if (settled.kind === "reference" && !sameWording(countedAs(c.collection, entry.data.id, en.term), settled.head)) {
+      // A word counted in a form is compared as that form; a Wikipedia name is a plain wording.
+      if (
+        settled.kind === "reference" &&
+        !sameWording(countedAs(c.collection, entry.data.id, en.term), settled.head) &&
+        !sameWording(en.term, settled.head)
+      ) {
         todo.push(`en.term を ${settled.head} にする（今は ${en.term}）`);
+      }
+      if (
+        settled.kind === "reference" &&
+        ["nicholson", "levin", "wikipedia"].includes(settled.by) &&
+        !String(record.mapping_note ?? "").includes(NOT_IN_HIGH_SCHOOL)
+      ) {
+        todo.push(`mapping_note に「${NOT_IN_HIGH_SCHOOL}」と件数を書く`);
       }
       if (settled.kind === "no-fixed-expression" && !String(record.mapping_note ?? "").includes(NO_FIXED_NOTE)) {
         todo.push(`mapping_note に「${NO_FIXED_NOTE}」と書く`);
@@ -339,7 +362,7 @@ function main() {
         code: "corpus-undecided",
         note:
           c.collection === "terms"
-            ? `コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`
+            ? `コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`
             : `コーパスで決まらない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`,
         raised: TODAY,
       } as { code: string });
@@ -440,8 +463,8 @@ function main() {
     "## ③ のうち規則で決着したもの",
     "",
     "話・書とも判断不能のうち、mapping が near ／ none で全候補の合計が話・書とも 10 件未満のものは「英語に決まった言い方がない」",
-    "（corpus-no-fixed-expression）。それ以外は見出しを CED（AP Calculus ／ AP Statistics）の呼び方、無ければ OpenStax の呼び方（本文か節の名前）、",
-    "無ければ Nicholson ／ Levin の呼び方で決める",
+    "（corpus-no-fixed-expression）。それ以外は見出しを CED（AP Calculus ／ AP Statistics）の呼び方、無ければ OpenStax と IM の呼び方（同じ段。本文・節の名前・レッスン・glossary の件数の多い候補）、",
+    "無ければ Nicholson ／ Levin の呼び方、無ければ英語版 Wikipedia の記事名で決める",
     "（corpus-reference-fallback）。どちらも register は主張せず、人間レビューに回さない。",
     "",
     noFixed.length + byReference.length ? "| 項目 | 決着 | 話し言葉 | 書き言葉 |\n|---|---|---|---|" : "なし。",
@@ -476,7 +499,7 @@ function main() {
     "",
     "週 30 分で見るのはここだけ。",
     "",
-    "## ③ コーパスで決まらず、CED・OpenStax・Nicholson・Levin のどれにも呼び方がないもの",
+    "## ③ コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がないもの",
     "",
     undecided.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
     ...undecided.map((l) => cells(l.key, describe(l.spoken), describe(l.written))),

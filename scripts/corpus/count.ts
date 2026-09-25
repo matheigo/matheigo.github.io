@@ -40,9 +40,10 @@ import {
   type DedupeStats,
   type Merge,
   type ReferenceHits,
+  WIKIPEDIA_NOT_SAME,
 } from "./lib.js";
 import type { ManifestEntry } from "./fetch.js";
-import { loadReferences } from "./references.js";
+import { loadReferences, wikipediaNames } from "./references.js";
 
 const CORPUS = path.join(ROOT, "corpus");
 const WITH_CONTEXTS = process.argv.includes("--contexts");
@@ -60,7 +61,7 @@ export interface EntryCounts {
   sources: string[];
   /** True when every spoken hit came from auto captions (weak evidence for symbols). */
   autoOnly: boolean;
-  /** terms: what the CEDs, OpenStax, Nicholson and Levin call it, for the ③ fallback (lib.ts settleUndecided). */
+  /** terms: what the CEDs, OpenStax, IM, Nicholson, Levin and Wikipedia call it, for the ③ fallback (lib.ts settleUndecided). */
   reference?: ReferenceHits;
 }
 
@@ -145,18 +146,24 @@ function main() {
   const entries: EntryCounts[] = [];
   const hits: ContextHit[] = [];
 
-  // References for the ③ fallback: the CEDs, OpenStax (body and section titles), Nicholson and Levin.
+  // References for the ③ fallback: the CEDs, OpenStax (body and section titles) and IM, Nicholson and Levin,
+  // and the English Wikipedia article.
   const refs = loadReferences();
   if (refs.missing.length) console.log(`  references missing (python3 scripts/ledger/refetch.py refs): ${refs.missing.join(", ")}`);
   const openstax = docs.filter((d) => d.id.startsWith("openstax-")).map((d) => d.text);
   const titles = openstaxTitles();
+  const wikipedia = wikipediaNames(new Set(Object.keys(WIKIPEDIA_NOT_SAME)));
 
   for (const collection of COUNTED) {
     for (const { data } of all[collection]) {
       const record = data as unknown as Record<string, unknown>;
       const candidates = candidatesOf(collection, record);
       const t = countEntry(docs, collection, candidates, headwordOf(collection, record));
-      const reference = collection === "terms" ? referenceHits(candidates, refs.ced, openstax, titles, refs) : undefined;
+      const wiki = collection === "terms" ? wikipedia.get(data.id) : undefined;
+      const reference =
+        collection === "terms"
+          ? { ...referenceHits(candidates, refs.ced, openstax, titles, refs), ...(wiki ? { wikipedia: wiki } : {}) }
+          : undefined;
       const referred = reference !== undefined && anyReference(reference);
       if (t.sources.length === 0 && !referred) continue;
       if (WITH_CONTEXTS) {

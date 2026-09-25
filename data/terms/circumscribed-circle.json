@@ -6,9 +6,9 @@
     "alt": []
   },
   "en": {
-    "term": "circumcircle",
+    "term": "circumscribed circle",
     "alt": [
-      "circumscribed circle"
+      "circumcircle"
     ],
     "uk": null
   },
@@ -33,12 +33,12 @@
   "spoken_en": "R equals a over two sine A",
   "examples": [
     {
-      "en": "The circumcircle goes through all three vertices, and the law of sines tells you its radius: a over sin A is 2R.",
+      "en": "The circumscribed circle goes through all three vertices, and the law of sines tells you its radius: a over sin A is 2R.",
       "ja": "外接円は 3 つの頂点をすべて通る。その半径は正弦定理でわかる。a/sin A = 2R だ。",
       "register": "spoken"
     },
     {
-      "en": "In triangle ABC, a = 6 and A = 30°. Find the radius R of the circumcircle.",
+      "en": "In triangle ABC, a = 6 and A = 30°. Find the radius R of the circumscribed circle.",
       "ja": "△ABC において a = 6, A = 30° のとき、外接円の半径 R を求めよ。",
       "register": "written"
     }
@@ -47,7 +47,7 @@
   "pitfalls": [
     "外接円の半径は circumradius、中心（外心）は circumcenter。",
     "主語の向きに注意。「円が三角形に外接する」は the circle is circumscribed about the triangle、「三角形が円に内接する」は the triangle is inscribed in the circle。",
-    "用例コーパスでは circumcircle は書き言葉 1 件（OpenStax Calculus）だけで、見出しは OpenStax の呼び方。"
+    "IM Geometry（7.4〜7.7）は circumscribed circle と書き（21 件）、circumcircle は用例コーパスの書き言葉 1 件（OpenStax Calculus）だけ。見出しは IM の言い方にした。"
   ],
   "related": [
     "law-of-sines",
@@ -65,6 +65,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 7.4 Quadrilaterals in Circles・Geometry 7.5 Triangles in Circles・Geometry 7.7 Circles in Triangles"
     }
   ],
   "confidence": "likely",
@@ -86,7 +92,7 @@
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 circumcircle（本文 1 件）。register は主張しない。",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは IM の呼び方 circumscribed circle（Geometry 7.4 Quadrilaterals in Circles・Geometry 7.5 Triangles in Circles・Geometry 7.7 Circles in Triangles・計 21 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

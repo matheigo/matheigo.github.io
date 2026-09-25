@@ -568,11 +568,19 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   "intersection-of-events": { "intersection of events": "intersection of two events | intersection of events" },
   "order-matters": { "order matters": "order matters | order doesn't matter | order does not matter" }, // 順序を考える ／ 考えない
   // 円順列; the only OpenStax hits are cyclic permutations of the variables x, y, z (vector calculus)
-  // 内接円; OpenStax Calculus's "inscribed circle" is the osculating circle of a curve (curvature)
+  // 内接円; OpenStax Calculus's "inscribed circle" is the osculating circle of a curve
+  // ("the curvature / radius of the inscribed circle"). IM Geometry's are a triangle's
+  // or a polygon's (7.6-7.9), mostly without "of the triangle": the forms IM uses
+  // (Phase 2 幾何・離散 2)
   "inscribed-circle": {
     "inscribed circle":
-      "inscribed circle of the triangle | inscribed circle of a triangle | circle inscribed in a triangle | circle inscribed in the triangle",
+      "inscribed circle of the triangle | inscribed circle of a triangle | circle inscribed in a triangle | circle inscribed in the triangle | triangle's inscribed circle | its inscribed circle | inscribed circle for the triangle | inscribed circle is tangent | inscribed circle's radius | an inscribed circle",
   },
+  // 小数部分 {x}: IM Grade 6's two "fractional parts" are parts of a whole cut into fractions
+  "fractional-part": { "fractional part": "fractional part of | fractional part is" },
+  // ガウス記号: the reading "floor of" (x), not the floor of a room or a building
+  // (IM's 7 hits: "the floor of a rectangular room", "the top floor of a ... building")
+  "floor-function": { "floor of": "!top floor of !a !an !the !this !that !his !her !their !its" },
   "circular-permutation": { "circular permutation": "number of circular permutations | circular permutations of n | circular permutation formula" },
   // batch 4
   "eulers-formula-for-polyhedra": {
@@ -994,11 +1002,17 @@ export function bookSections(text: string): [string, string][] {
  *   1. the CEDs: AP Calculus AB/BC (`ced`) and AP Statistics (`cedStats`),
  *      hits per section ("front", "unitN", topic "n.m", "exam")
  *   2. OpenStax: hits in the body of the six books, and the section titles
- *      the wording occurs in
+ *      the wording occurs in; and Illustrative Mathematics (IM 6–8 and
+ *      9–12): hits per lesson ("Geometry 1.3 Title") and the course
+ *      glossaries that list the wording as a headword. One tier: the
+ *      candidate with more hits in both together wins (DECISIONS, Phase 2
+ *      幾何・離散の単元 2)
  *   3. Nicholson, Linear Algebra with Applications, and Levin, Discrete
  *      Mathematics: An Open Introduction: hits per section ("n.m Title")
+ *   4. the English Wikipedia article the entry lands on (not per candidate:
+ *      scripts/ledger/wikihead.py)
  *
- * The fields added with 1 and 3 are optional so that a counts.json written
+ * The fields added after 2 are optional so that a counts.json written
  * before them still reads.
  */
 export interface ReferenceHits {
@@ -1014,22 +1028,74 @@ export interface ReferenceHits {
   nicholson?: Record<string, Record<string, number>>;
   /** candidate -> Levin section -> hits */
   levin?: Record<string, Record<string, number>>;
+  /** candidate -> IM lesson ("Geometry 1.3 Title") -> hits */
+  im?: Record<string, Record<string, number>>;
+  /** candidate -> IM courses whose glossary has it as a headword */
+  imGlossary?: Record<string, string[]>;
+  /** The English Wikipedia article that names the entry (rule 2, last step). */
+  wikipedia?: WikipediaName;
 }
 
-export const emptyReference = (): ReferenceHits => ({ ced: {}, cedStats: {}, openstax: {}, openstaxTitles: {}, nicholson: {}, levin: {} });
+/** Where the Wikipedia name came from: the ja article's en langlink, or en.term after redirects. */
+export interface WikipediaName {
+  title: string;
+  via: "ja-langlink" | "en-redirect";
+}
+
+/**
+ * Entries whose English Wikipedia article (wikihead.py) is another concept,
+ * so its name does not settle the headword (DECISIONS, Phase 2 幾何・離散の
+ * 単元 2: a reference's name counts only for the same concept). id -> why.
+ */
+export const WIKIPEDIA_NOT_SAME: Record<string, string> = {
+  // en.term "circular permutation" redirects there: a permutation with one cycle (group theory),
+  // not the arrangements around a circle of 円順列
+  "circular-permutation": "Cyclic permutation",
+  // en.term "number of divisors" redirects there: the family σ_x (sum of the x-th powers of
+  // the divisors), of which the number of divisors is one member
+  "number-of-divisors": "Divisor function",
+  // 素因数分解's langlink: factoring an integer into any factors, an article about the
+  // computational problem and its algorithms; "prime factorization" itself redirects there
+  "prime-factorization": "Integer factorization",
+};
+
+/** "Translation (geometry)" -> "translation"; a name keeps its capital ("Ceva's theorem"). */
+export function wikipediaHead(title: string): string {
+  const t = title.replace(/\s*\([^)]*\)$/, "");
+  const first = t.split(/\s+/)[0];
+  const name = /['’]s$/.test(first) || /^[A-Z][a-z]*[A-Z]/.test(first) || /^[A-Z]{2,}/.test(first);
+  return name ? t : t.charAt(0).toLowerCase() + t.slice(1);
+}
+
+export const emptyReference = (): ReferenceHits => ({
+  ced: {},
+  cedStats: {},
+  openstax: {},
+  openstaxTitles: {},
+  nicholson: {},
+  levin: {},
+  im: {},
+  imGlossary: {},
+});
 
 /** The sectioned texts of the references other than OpenStax, already normalized. */
 export interface MoreReferences {
   cedStats?: [string, string][];
   nicholson?: [string, string][];
   levin?: [string, string][];
+  /** IM 6–8 and 9–12, one section per lesson */
+  im?: [string, string][];
+  /** course -> glossary headwords */
+  imGlossary?: Record<string, string[]>;
 }
 
 /**
  * Counts each candidate in the references the way terms are counted
  * (inflection folded, "…" a blank). `ced` is cedSections() of cedText();
  * `openstax` the normalized OpenStax docs; `titles` their section titles;
- * `more` the AP Statistics CED and the two books, sectioned and normalized.
+ * `more` the AP Statistics CED, the two books and IM, sectioned and
+ * normalized, and the IM glossaries. A glossary counts a candidate when the
+ * whole headword is that wording ("translation", "arc (of a circle)" is arc).
  */
 export function referenceHits(
   candidates: string[],
@@ -1056,16 +1122,41 @@ export function referenceHits(
     if (inTitles.length) out.openstaxTitles[c] = inTitles;
     bySection(out.nicholson!, c, re, more.nicholson ?? []);
     bySection(out.levin!, c, re, more.levin ?? []);
+    bySection(out.im!, c, re, more.im ?? []);
+    // A form's alternatives without its "!w" marks ("vertical shift | shifted … units").
+    const forms = c.split(FORM_OR).map((f) => f.split(/\s+/).filter((w) => !NOT.test(w)).join(" "));
+    const courses = Object.entries(more.imGlossary ?? {})
+      .filter(([, heads]) => heads.some((h) => forms.some((f) => sameWording(h.replace(/\s*\([^)]*\)\s*$/, ""), f))))
+      .map(([course]) => course);
+    if (courses.length) out.imGlossary![c] = courses;
   }
   return out;
 }
 
 /** Does the reference count name any candidate at all? */
 export const referred = (r: ReferenceHits): boolean =>
-  [r.ced, r.cedStats ?? {}, r.openstax, r.openstaxTitles, r.nicholson ?? {}, r.levin ?? {}].some((x) => Object.keys(x).length > 0);
+  r.wikipedia !== undefined ||
+  [r.ced, r.cedStats ?? {}, r.openstax, r.openstaxTitles, r.nicholson ?? {}, r.levin ?? {}, r.im ?? {}, r.imGlossary ?? {}].some(
+    (x) => Object.keys(x).length > 0,
+  );
 
 /** Which reference settled the headword. */
-export type ReferenceBy = "ced" | "ced-stats" | "openstax" | "nicholson" | "levin";
+export type ReferenceBy = "ced" | "ced-stats" | "openstax" | "im" | "nicholson" | "levin" | "wikipedia";
+
+/** The high-school references of rule 2 (CED, OpenStax, IM): hits of every candidate together, per reference. */
+export function highSchoolHits(ref: ReferenceHits, order: string[]): { ced: number; openstax: number; im: number } {
+  const sum = (by: Record<string, Record<string, number>> | undefined, c: string) =>
+    Object.values(by?.[c] ?? {}).reduce((a, b) => a + b, 0);
+  let ced = 0;
+  let openstax = 0;
+  let im = 0;
+  for (const c of order) {
+    ced += sum(ref.ced, c) + sum(ref.cedStats, c);
+    openstax += (ref.openstax[c] ?? 0) + (ref.openstaxTitles[c]?.length ?? 0);
+    im += sum(ref.im, c) + (ref.imGlossary?.[c]?.length ?? 0);
+  }
+  return { ced, openstax, im };
+}
 
 /**
  * What becomes of an entry the corpus left undecided in both registers
@@ -1080,8 +1171,10 @@ export type ReferenceBy = "ced" | "ced-stats" | "openstax" | "nicholson" | "levi
  *                        a CED itself uses (the Candidates Test)
  *   reference            otherwise the headword is what the CEDs (AP Calculus
  *                        / AP Statistics) call it, failing that what OpenStax
- *                        calls it (body or section title), failing that what
- *                        Nicholson / Levin call it. No register is claimed
+ *                        or IM calls it (one tier: body, section title,
+ *                        lesson, glossary), failing that what Nicholson /
+ *                        Levin call it, failing that the name of the English
+ *                        Wikipedia article (wikihead.py). No register is claimed
  *   undecided            no reference uses any candidate: a human looks
  */
 export type Settled =
@@ -1119,8 +1212,15 @@ export function settleUndecided(
       ? { kind: "reference", by: "ced-stats", head: ced, where: topicsOf(ref.cedStats![ced]) }
       : { kind: "reference", by: "ced", head: ced, where: topicsOf(ref.ced[ced]) };
   }
-  const os = best((c) => (ref.openstax[c] ?? 0) + (ref.openstaxTitles[c]?.length ?? 0));
+  const openstax = (c: string) => (ref.openstax[c] ?? 0) + (ref.openstaxTitles[c]?.length ?? 0);
+  const im = (c: string) => sum(ref.im, c) + (ref.imGlossary?.[c]?.length ?? 0);
+  const os = best((c) => openstax(c) + im(c));
   if (os) {
+    if (im(os) > openstax(os)) {
+      const glossary = (ref.imGlossary?.[os] ?? []).map((g) => `${g} glossary`);
+      const lessons = Object.entries(ref.im?.[os] ?? {}).sort((a, b) => b[1] - a[1]).map(([s]) => s);
+      return { kind: "reference", by: "im", head: os, where: [...glossary, ...lessons, `計 ${sum(ref.im, os)} 件`] };
+    }
     const titles = ref.openstaxTitles[os] ?? [];
     return { kind: "reference", by: "openstax", head: os, where: titles.length ? titles : [`本文 ${ref.openstax[os]} 件`] };
   }
@@ -1130,6 +1230,11 @@ export function settleUndecided(
     const by = (levin ? ref.levin : ref.nicholson)![book];
     const where = Object.entries(by).sort((a, b) => b[1] - a[1]).map(([s]) => s);
     return { kind: "reference", by: levin ? "levin" : "nicholson", head: book, where };
+  }
+  if (ref.wikipedia) {
+    const w = ref.wikipedia;
+    const head = order.find((c) => sameWording(c, wikipediaHead(w.title))) ?? wikipediaHead(w.title);
+    return { kind: "reference", by: "wikipedia", head, where: [w.title, w.via === "ja-langlink" ? "ja の langlink 先" : "en.term のリダイレクト先"] };
   }
   return { kind: "undecided" };
 }

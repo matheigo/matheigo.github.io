@@ -68,10 +68,12 @@ const sourcesOf = (d: Entry) => (Array.isArray(d.sources) ? d.sources : []);
 const PROJECT_TRANSLATION = "本プロジェクトの訳語";
 /**
  * The phrase mapping_note uses for an exact term the US high-school sources do
- * not cover (DECISIONS, Phase 2 代数 2・Precalculus の単元の前の修正): the words
- * match, so the mapping stays exact, and the note is about the range.
+ * not cover (DECISIONS, Phase 2 代数 2・Precalculus の単元の前の修正; since
+ * Phase 2 幾何・離散の単元 2 the sources are the CEDs, OpenStax and IM, and
+ * decide asks for it on every word settled past them): the words match, so
+ * the mapping stays exact, and the note is about the range.
  */
-const NOT_IN_US_COURSES = "米国の高校課程（OpenStax 6 冊・CED）には出てこない";
+const NOT_IN_US_COURSES = "米国の高校課程（CED・OpenStax・IM）では扱わない";
 
 /**
  * Intended homonyms: two concepts that English calls by the same en.term

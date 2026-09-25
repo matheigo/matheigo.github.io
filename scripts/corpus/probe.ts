@@ -11,9 +11,10 @@
  *       entry's candidates, headword first; prints the verdict per register
  *       exactly as corpus:count + corpus:decide would reach it. A line
  *       "@mapping near" in a block gives the entry's mapping ("@ja 極値" its
- *       Japanese headword); when both
+ *       Japanese headword, "@id circumcenter" the entry whose English
+ *       Wikipedia article is the last step of rule 2); when both
  *       registers are ③ it prints how the ③ is settled (no fixed expression,
- *       or the CED / OpenStax headword)
+ *       or the CED / OpenStax / IM / Nicholson / Levin / Wikipedia headword)
  *   --literal   count as written (phrases); the default counts as terms do:
  *               inflection folded, "…" = a one-to-three-word blank
  *   --contexts [n]  also print n contexts (default 10) of each wording per
@@ -52,9 +53,10 @@ import {
   VARIANTS,
   type CorpusDoc,
   type Verdict,
+  WIKIPEDIA_NOT_SAME,
 } from "./lib.js";
 import type { ManifestEntry } from "./fetch.js";
-import { loadReferences, REFERENCE_NAMES } from "./references.js";
+import { loadReferences, REFERENCE_NAMES, wikipediaNames } from "./references.js";
 
 const CORPUS = path.join(ROOT, "corpus");
 const MANIFEST = path.join(CORPUS, "manifest.json");
@@ -162,8 +164,10 @@ function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
   const openstax = docs.filter((d) => d.id.startsWith("openstax-")).map((d) => d.text);
   const manifest = JSON.parse(fs.readFileSync(MANIFEST, "utf8")) as ManifestEntry[];
   const titles = manifest.filter((m) => m.id.startsWith("openstax-")).map((m) => m.title.replace(/^.*? - /, ""));
+  const wikipedia = wikipediaNames(new Set(Object.keys(WIKIPEDIA_NOT_SAME)));
   for (const raw of blocks) {
     const mapping = raw.find((l) => l.startsWith("@mapping"))?.split(/\s+/)[1];
+    const id = raw.find((l) => l.startsWith("@id"))?.split(/\s+/)[1];
     const block = raw.filter((l) => !l.startsWith("@"));
     const t = countEntry(docs, "terms", block, block[0]);
     console.log(`# ${block[0]}`);
@@ -182,7 +186,8 @@ function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
     for (const c of new Set([...Object.keys(t.spoken), ...Object.keys(t.written)])) {
       console.log(`    = ${c}: ${breakdown("話し言葉", t.spoken[c])}、${breakdown("書き言葉", t.written[c])}。`);
     }
-    const ref = referenceHits(block, refs.ced, openstax, titles, refs);
+    const wiki = id ? wikipedia.get(id) : undefined;
+    const ref = { ...referenceHits(block, refs.ced, openstax, titles, refs), ...(wiki ? { wikipedia: wiki } : {}) };
     const sectioned = (by: Record<string, Record<string, number>> | undefined) =>
       Object.entries(by ?? {}).map(([c, at]) => `${c} [${Object.entries(at).slice(0, 4).map(([k, n]) => `${k}×${n}`).join(" ")}${Object.keys(at).length > 4 ? " …" : ""}]`);
     const osLine = block
@@ -190,7 +195,12 @@ function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
       .map((c) => `${c} ${ref.openstax[c] ?? 0}${ref.openstaxTitles[c] ? ` {${ref.openstaxTitles[c].slice(0, 2).join(" | ")}}` : ""}`);
     console.log(`  CED ${sectioned(ref.ced).join("; ") || "—"}   CED-stats ${sectioned(ref.cedStats).join("; ") || "—"}`);
     console.log(`  OpenStax ${osLine.join("; ") || "—"}`);
+    const imLine = block
+      .filter((c) => ref.im?.[c] || ref.imGlossary?.[c])
+      .map((c) => `${c} ${Object.values(ref.im?.[c] ?? {}).reduce((a, b) => a + b, 0)}${ref.imGlossary?.[c] ? ` {glossary: ${ref.imGlossary[c].join(", ")}}` : ""}`);
+    console.log(`  IM ${imLine.join("; ") || "—"}`);
     console.log(`  Nicholson ${sectioned(ref.nicholson).join("; ") || "—"}   Levin ${sectioned(ref.levin).join("; ") || "—"}`);
+    if (id) console.log(`  Wikipedia ${wiki ? `${wiki.title} (${wiki.via})` : "—"}`);
     if (verdicts.every((v) => v.kind === "undecided")) {
       const total = (by: Record<string, Record<string, number>>) => Object.values(flatten(by)).reduce((a, b) => a + b, 0);
       const ja = raw.find((l) => l.startsWith("@ja"))?.replace(/^@ja\s+/, "");
