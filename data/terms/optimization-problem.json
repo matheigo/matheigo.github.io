@@ -22,15 +22,16 @@
   "level": {
     "jp": [
       "数II",
-      "数III"
+      "数III",
+      "数B"
     ],
     "us": [
       "AP Calculus AB",
       "Calculus I"
     ]
   },
-  "definition_ja": "条件のもとで、ある量を最大または最小にする値を微分を使って求める文章題。",
-  "definition_en": "A word problem asking for the value that makes some quantity as large or as small as possible, solved with derivatives.",
+  "definition_ja": "条件のもとで、ある量を最大または最小にする値を求める問題。微分を使うほか、数B では不等式の表す領域（線形計画法）などを使う。",
+  "definition_en": "A problem of finding the values that make a quantity as large or as small as possible under given conditions, solved with derivatives or, in 数B, with regions defined by inequalities (linear programming).",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -43,6 +44,11 @@
       "en": "A farmer has 200 m of fencing to enclose a rectangular field along a river, with no fence on the river side. What dimensions maximize the area?",
       "ja": "川沿いの長方形の畑を 200 m の柵で囲む（川側には柵を置かない）。面積を最大にする縦と横の長さを求めよ。",
       "register": "written"
+    },
+    {
+      "en": "A factory makes two products with limited labor and materials. How many of each should it make to maximize profit?",
+      "ja": "ある工場は、限られた労働力と原料で 2 種類の製品を作る。利益を最大にするにはそれぞれいくつ作ればよいか。",
+      "register": "written"
     }
   ],
   "collocations": [],
@@ -51,7 +57,12 @@
     "absolute-extrema",
     "critical-point",
     "candidates-test",
-    "lagrange-multipliers"
+    "lagrange-multipliers",
+    "linear-programming",
+    "feasible-region",
+    "objective-function",
+    "constraint",
+    "mathematical-model"
   ],
   "sources": [
     {
@@ -76,7 +87,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "optimization problem": 15
@@ -91,6 +102,6 @@
       "openstax-calculus",
       "yt:patrickjmt"
     ],
-    "counted": "2026-09-24"
+    "counted": "2026-09-25"
   }
 }

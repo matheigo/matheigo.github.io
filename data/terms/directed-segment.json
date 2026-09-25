@@ -1,0 +1,80 @@
+{
+  "id": "directed-segment",
+  "ja": {
+    "term": "有向線分",
+    "reading": "ゆうこうせんぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "directed line segment",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "向きを考えた線分。始点から終点へ矢印をつけて表す。",
+  "definition_en": "A line segment with a direction, drawn as an arrow from its initial point to its terminal point.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We draw a vector as a directed line segment, an arrow from one point to another.",
+      "ja": "ベクトルは有向線分、つまりある点から別の点への矢印でかく。",
+      "register": "spoken"
+    },
+    {
+      "en": "Draw the directed line segment from P(1, 2) to Q(4, 0).",
+      "ja": "P(1, 2) から Q(4, 0) への有向線分をかけ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "vector",
+    "initial-point",
+    "terminal-point"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "directed line segment": 21
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "identity-matrix",
+  "ja": {
+    "term": "単位行列",
+    "reading": "たんいぎょうれつ",
+    "alt": []
+  },
+  "en": {
+    "term": "identity matrix",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "対角成分がすべて 1 で、ほかの成分がすべて 0 の正方行列。E（米国の教科書では I）と書く。",
+  "definition_en": "The square matrix with 1s on the main diagonal and 0s elsewhere, written E in Japanese textbooks and I in US ones.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Multiplying by the identity matrix doesn't change anything, just like multiplying by one.",
+      "ja": "単位行列を掛けても何も変わらない。1 を掛けるのと同じ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that AI = IA = A for the 2 × 2 identity matrix I.",
+      "ja": "2 × 2 の単位行列 I について AI = IA = A を示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書は単位行列を E で表すが、英語の教科書は I で表す（OpenStax Algebra and Trigonometry は次数を添えて Iₙ）。"
+  ],
+  "related": [
+    "matrix",
+    "inverse-matrix",
+    "zero-matrix"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "単位行列",
+      "en": "Identity matrix"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "identity matrix": 75
+    },
+    "written": {
+      "identity matrix": 24
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

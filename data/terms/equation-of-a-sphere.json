@@ -1,0 +1,83 @@
+{
+  "id": "equation-of-a-sphere",
+  "ja": {
+    "term": "球面の方程式",
+    "reading": "きゅうめんのほうていしき",
+    "alt": []
+  },
+  "en": {
+    "term": "equation of a sphere",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "中心 (a, b, c)、半径 r の球面上の点 (x, y, z) が満たす方程式 (x − a)² + (y − b)² + (z − c)² = r²。",
+  "definition_en": "The equation (x − a)² + (y − b)² + (z − c)² = r² satisfied by the points (x, y, z) on the sphere with center (a, b, c) and radius r.",
+  "latex": "(x-a)^2 + (y-b)^2 + (z-c)^2 = r^2",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "It's just the circle equation with a z term added.",
+      "ja": "円の方程式に z の項を足しただけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the equation of the sphere with center (1, −2, 3) and radius 4.",
+      "ja": "中心 (1, −2, 3)、半径 4 の球面の方程式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「球面」（表面）と「球」（中身を含む）の区別は、英語では sphere（表面）と ball（中身を含む）。"
+  ],
+  "related": [
+    "equation-of-a-circle",
+    "coordinates-in-space",
+    "equation-of-a-plane"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "equation of a sphere": 8
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは OpenStax の呼び方 equation of a sphere（本文 8 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

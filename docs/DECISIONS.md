@@ -400,3 +400,11 @@
 - 2026-09-25 | 2 | バッチ 2 の ③ は人間レビュー行き 3 語（6%）: covariance（用例コーパス・OpenStax・Khan Academy とも 0 件）、linear-transformation-of-a-random-variable（0 件）、rejection-region（話し言葉 6 件）。英語に決まった言い方がない 2（変量の変換・偏差値）、参照で見出し 6 | 1 割を超えていないので次へ
 - 2026-09-25 | 2 | 既存の probability-density-function（数B の単元に当たる）に、OpenStax の PDF が離散型の確率分布も指すことを pitfalls に足し、related を足した | 修正 2
 - 2026-09-25 | 2 | related の先がまだないもの（後のバッチで作る語）は外しておき、その語を作ったバッチで足す | validate は related の参照切れをエラーにする
+- 2026-09-25 | 2 | バッチ 3 の形: ベクトルの成分 components → components of the vector | component of the vector | horizontal component | vertical component | x-component、行 row → first row | second row | row of the matrix | row of a matrix、列 column → first column | second column | column of the matrix、行列の成分 entry → entry in row | entries of the matrix（element は集合の要素の意味がほとんどで数えない） | 修正 1 の規則（文脈 10 件）
+- 2026-09-25 | 2 | 始点・終点の話し言葉の言い方（tail ／ tip）は候補にしなかった | tail は分布の裾・硬貨の裏、tip は「こつ」がほとんどで、tail of the vector は 2 件だけ。数えられないので mapping_note に書いた
+- 2026-09-25 | 2 | 数学的モデルの候補から modeling を外した（mathematical model だけで書き言葉 ① 17 件） | modeling は語形変化で model（型・機種も）とまとまり、話し言葉 374 件・書き言葉 894 件がほとんど別の意味
+- 2026-09-25 | 2 | 名前のない公式・条件のエントリ（共線条件・共面条件・三角形の面積とベクトル・円のベクトル方程式・逆ベクトル・ベクトルの分解）は mapping near にし、「英語に決まった言い方がない」とした。collinear ／ coplanar は条件の名前ではなく形容詞なので候補に入れず、件数を mapping_note に書いた | 2026-09-24「英語の見出しが確立した名前でなく説明的な句のもの」と同じ扱い
+- 2026-09-25 | 2 | バッチ 3 の見出し: 有向線分は書き言葉 ① directed line segment、ベクトルの相等は書き言葉 ① equivalent vectors（mapping near）、ベクトルの実数倍は書き言葉 ① scalar multiplication（話し言葉 ① scalar multiple は variant）、逆行列は話し言葉 ① inverse matrix（書き言葉 ① inverse of a matrix は variant）、回帰直線は ② の regression line（variants に line of best fit ほか 4 つ） | コーパスの判定どおり
+- 2026-09-25 | 2 | mapping を台帳から付け直した語（バッチ 3）: standard-error・regression-line・cross-product は exact（台帳の near は範囲・名前の出し方の違い。範囲は pitfalls）。equal-vectors は near（日本語は「相等」という関係、英語は equivalent vectors という名前） | mapping は語の対応の質
+- 2026-09-25 | 2 | 既存の dot-product に inner product・scalar product を en.alt で足した（線形代数の単元に当たる。判定は ① dot product のまま 3.3:1 ／ 3.2:1）。vector・component-form・coordinates-in-space・equation-of-a-plane・optimization-problem（数B の最適化・線形計画法）に単元の意味・related を足した | 修正 2
+- 2026-09-25 | 2 | バッチ 3 の ③ は人間レビュー行き 1 語（moving-average、話し言葉 3 件、OpenStax に 0 件）。英語に決まった言い方がない 6、参照で見出し 4 | 1 割を超えていない

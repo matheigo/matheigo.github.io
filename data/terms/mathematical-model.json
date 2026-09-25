@@ -1,0 +1,95 @@
+{
+  "id": "mathematical-model",
+  "ja": {
+    "term": "数学的モデル",
+    "reading": "すうがくてきもでる",
+    "alt": [
+      "モデル化",
+      "数理モデル"
+    ]
+  },
+  "en": {
+    "term": "mathematical model",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "現実の現象を、式やグラフなどの数学の言葉で表したもの。そう表すことをモデル化という。",
+  "definition_en": "A description of a real-world situation in mathematical terms, such as an equation or a graph; making one is called modeling.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The exponential model fits the early data well, but it can't keep going forever.",
+      "ja": "指数関数のモデルは初めのデータにはよく合うが、いつまでも続くわけではない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find a mathematical model for the population and use it to predict the population in 2030.",
+      "ja": "人口の数学的モデルを求め、2030 年の人口を予測せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語では a model、modeling（モデル化）と言うことが多い。用例コーパスでは語のままの model ／ modeling は「型・機種」の意味も含むので、mathematical model の形だけを数えた。",
+    "データに当てはめる（fit the data）モデルは、回帰直線（regression line）や指数関数のモデル（exponential model）など。"
+  ],
+  "related": [
+    "regression-line",
+    "exponential-model",
+    "simulation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "数理モデル",
+      "en": "Mathematical model"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "mathematical model": 1
+    },
+    "written": {
+      "mathematical model": 17
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

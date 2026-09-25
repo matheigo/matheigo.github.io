@@ -1,0 +1,87 @@
+{
+  "id": "angle-between-vectors",
+  "ja": {
+    "term": "ベクトルのなす角",
+    "reading": "べくとるのなすかく",
+    "alt": []
+  },
+  "en": {
+    "term": "angle between … vectors",
+    "alt": [
+      "angle between two vectors"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "始点をそろえた 2 つのベクトルがつくる角 θ（0° ≤ θ ≤ 180°）。cos θ = a·b / (|a||b|) で求める。",
+  "definition_en": "The angle θ (0° ≤ θ ≤ 180°) between two vectors placed tail to tail, found from cos θ = a·b / (|a||b|).",
+  "latex": "\\cos\\theta = \\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{a}||\\vec{b}|}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Use the dot product to find the angle between the two vectors.",
+      "ja": "内積を使って 2 つのベクトルのなす角を求めよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the angle between the vectors a = ⟨1, 1⟩ and b = ⟨−1, 3⟩.",
+      "ja": "ベクトル a = ⟨1, 1⟩ と b = ⟨−1, 3⟩ のなす角を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「なす角」は日本語特有の言い方で、英語は angle between（〜の間の角）と言う。",
+    "「なす角を求める」は find the angle between …。"
+  ],
+  "related": [
+    "dot-product",
+    "vector"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "angle between … vectors": 12,
+      "angle between two vectors": 2
+    },
+    "written": {
+      "angle between … vectors": 21,
+      "angle between two vectors": 6
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.06",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

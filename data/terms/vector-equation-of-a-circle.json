@@ -1,0 +1,74 @@
+{
+  "id": "vector-equation-of-a-circle",
+  "ja": {
+    "term": "円のベクトル方程式",
+    "reading": "えんのべくとるほうていしき",
+    "alt": []
+  },
+  "en": {
+    "term": "vector equation of a circle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパス・OpenStax とも 0 件）。米国の教科書は円を (x − h)² + (y − k)² = r² の形で扱い、ベクトル方程式としては立てない。",
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "中心 C（位置ベクトル c）、半径 r の円上の点 P の位置ベクトル p が満たす式 |p − c| = r。",
+  "definition_en": "The equation |p − c| = r satisfied by the position vector p of a point on the circle with center C (position vector c) and radius r.",
+  "latex": "|\\vec{p} - \\vec{c}| = r",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The distance from P to the center has to be r, and that's the whole equation.",
+      "ja": "P から中心までの距離が r、それが方程式のすべて。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the vector equation of the circle with center C and radius 3, and convert it to an equation in x and y.",
+      "ja": "中心 C、半径 3 の円のベクトル方程式を書き、x, y の方程式に直せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "vector-equation",
+    "equation-of-a-circle",
+    "magnitude"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

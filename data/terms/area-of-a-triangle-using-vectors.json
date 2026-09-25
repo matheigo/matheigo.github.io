@@ -1,0 +1,74 @@
+{
+  "id": "area-of-a-triangle-using-vectors",
+  "ja": {
+    "term": "三角形の面積とベクトル",
+    "reading": "さんかっけいのめんせきとべくとる",
+    "alt": []
+  },
+  "en": {
+    "term": "area of a triangle using vectors",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（公式に名前がない）。外積（cross product）を使うと、三角形の面積は |a × b| の半分（2 辺が作る平行四辺形の面積の半分）になる。",
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "2 辺を表すベクトル a, b から三角形の面積を求める公式 S = (1/2)√(|a|²|b|² − (a·b)²)。成分では (1/2)|a₁b₂ − a₂b₁|。",
+  "definition_en": "The formula S = (1/2)√(|a|²|b|² − (a·b)²) for the area of a triangle with sides given by vectors a and b; in components, (1/2)|a₁b₂ − a₂b₁|.",
+  "latex": "S = \\frac{1}{2}\\sqrt{|\\vec{a}|^2|\\vec{b}|^2 - (\\vec{a}\\cdot\\vec{b})^2}",
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "You can get the area straight from the dot product, without finding the angle.",
+      "ja": "角を求めなくても、内積から直接面積が出る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the area of the triangle with vertices O(0, 0), A(3, 1), and B(1, 4).",
+      "ja": "3 点 O(0, 0), A(3, 1), B(1, 4) を頂点とする三角形の面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "dot-product",
+    "cross-product",
+    "determinant"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

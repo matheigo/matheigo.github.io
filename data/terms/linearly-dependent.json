@@ -1,0 +1,81 @@
+{
+  "id": "linearly-dependent",
+  "ja": {
+    "term": "一次従属",
+    "reading": "いちじじゅうぞく",
+    "alt": [
+      "線形従属"
+    ]
+  },
+  "en": {
+    "term": "linearly dependent",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors",
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "一次独立でないこと。どれか 1 つのベクトルが、ほかのベクトルの一次結合で表せる。",
+  "definition_en": "Not linearly independent: at least one of the vectors can be written as a linear combination of the others.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If one of them is a combination of the others, the set is linearly dependent.",
+      "ja": "どれかがほかの組み合わせで書けるなら、その組は一次従属。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the vectors are linearly dependent by finding a nontrivial linear combination equal to 0.",
+      "ja": "0 になる自明でない一次結合を見つけて、ベクトルが一次従属であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "linearly-independent",
+    "linear-combination"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "linearly dependent": 7
+    },
+    "written": {
+      "linearly dependent": 13
+    },
+    "sources": [
+      "mit-18.06",
+      "openstax-calculus",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "extrapolation",
+  "ja": {
+    "term": "外挿",
+    "reading": "がいそう",
+    "alt": [
+      "外挿の危険"
+    ]
+  },
+  "en": {
+    "term": "extrapolation",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "データの範囲の外側の値を、モデルを延長して推定すること。範囲から離れるほど信頼できなくなる。",
+  "definition_en": "Estimating a value outside the range of the data by extending a model; the farther from the data, the less reliable it is.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Using the line to predict way beyond your data is extrapolation, and it can go badly wrong.",
+      "ja": "データのずっと外側を直線で予測するのが外挿で、大きく外れることがある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Explain why using the regression line to predict the value at x = 100 is extrapolation.",
+      "ja": "回帰直線を使って x = 100 での値を予測することが外挿である理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "interpolation",
+    "regression-line",
+    "predict"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "外挿",
+      "en": "Extrapolation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "extrapolation": 2
+    },
+    "written": {
+      "extrapolation": 22
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

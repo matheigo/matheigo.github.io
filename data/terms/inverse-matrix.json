@@ -1,0 +1,101 @@
+{
+  "id": "inverse-matrix",
+  "ja": {
+    "term": "逆行列",
+    "reading": "ぎゃくぎょうれつ",
+    "alt": []
+  },
+  "en": {
+    "term": "inverse matrix",
+    "alt": [
+      "matrix inverse"
+    ],
+    "uk": null,
+    "variants": [
+      {
+        "term": "inverse of a matrix",
+        "register": "written",
+        "note": "話し言葉で 4 件、書き言葉で 20 件（ほとんどが OpenStax Algebra and Trigonometry）。"
+      }
+    ],
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "正方行列 A に対して AX = XA = E となる行列 X。A⁻¹ と書く。",
+  "definition_en": "For a square matrix A, the matrix X with AX = XA = E (I), written A⁻¹.",
+  "latex": "A^{-1}",
+  "spoken_en": "A inverse",
+  "examples": [
+    {
+      "en": "If the determinant is zero, the inverse matrix doesn't exist.",
+      "ja": "行列式が 0 なら、逆行列は存在しない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the inverse of the matrix A = [[2, 1], [5, 3]].",
+      "ja": "行列 A = [[2, 1], [5, 3]] の逆行列を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "A⁻¹ は A inverse と読む（用例コーパスの話し言葉 101 件）。"
+  ],
+  "related": [
+    "identity-matrix",
+    "determinant"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "正則行列",
+      "en": "Invertible matrix"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "inverse matrix": 31,
+      "inverse of a matrix": 4,
+      "matrix inverse": 1
+    },
+    "written": {
+      "matrix inverse": 7,
+      "inverse of a matrix": 20,
+      "inverse matrix": 8
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

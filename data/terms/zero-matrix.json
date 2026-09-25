@@ -1,0 +1,82 @@
+{
+  "id": "zero-matrix",
+  "ja": {
+    "term": "零行列",
+    "reading": "ぜろぎょうれつ",
+    "alt": []
+  },
+  "en": {
+    "term": "zero matrix",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "成分がすべて 0 の行列。O と書く。",
+  "definition_en": "A matrix all of whose entries are 0, written O.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A matrix times the zero matrix is always the zero matrix.",
+      "ja": "どの行列に零行列を掛けても零行列になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find a nonzero 2 × 2 matrix A such that A² is the zero matrix.",
+      "ja": "A² が零行列になる、零行列でない 2 × 2 行列 A を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉 16 件のうち 14 件は MIT OCW 18.06（線形代数）。"
+  ],
+  "related": [
+    "matrix",
+    "identity-matrix"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "零行列",
+      "en": "Zero matrix"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "zero matrix": 16
+    },
+    "written": {
+      "zero matrix": 1
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "linearly-independent",
+  "ja": {
+    "term": "一次独立",
+    "reading": "いちじどくりつ",
+    "alt": [
+      "線形独立",
+      "線型独立"
+    ]
+  },
+  "en": {
+    "term": "linearly independent",
+    "alt": [
+      "linear independence"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors",
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "ベクトル a, b が sa + tb = 0 ならば s = t = 0 に限るとき、a, b は一次独立であるという。平面では、0 でなく平行でないこと。",
+  "definition_en": "Vectors a and b are linearly independent when sa + tb = 0 only for s = t = 0; in the plane, when they are nonzero and not parallel.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "These two vectors aren't multiples of each other, so they're linearly independent.",
+      "ja": "この 2 つのベクトルは互いの実数倍ではないので、一次独立。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the vectors ⟨1, 2, 0⟩, ⟨0, 1, 1⟩, and ⟨1, 0, −2⟩ are linearly independent.",
+      "ja": "ベクトル ⟨1, 2, 0⟩, ⟨0, 1, 1⟩, ⟨1, 0, −2⟩ が一次独立かどうか判定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校は「一次独立」、大学の線形代数は「線形独立」と呼ぶことが多いが、英語はどちらも linearly independent（名詞は linear independence）。"
+  ],
+  "related": [
+    "linearly-dependent",
+    "linear-combination",
+    "decomposition-of-a-vector"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "linearly independent": 19,
+      "linear independence": 2
+    },
+    "written": {
+      "linearly independent": 31,
+      "linear independence": 2
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-18.06",
+      "openstax-calculus",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

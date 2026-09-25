@@ -1,0 +1,82 @@
+{
+  "id": "interpolation",
+  "ja": {
+    "term": "補間",
+    "reading": "ほかん",
+    "alt": [
+      "内挿"
+    ]
+  },
+  "en": {
+    "term": "interpolation",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "データの範囲の内側にある、観測していない値を、モデルなどを使って推定すること。",
+  "definition_en": "Estimating an unobserved value inside the range of the data, for example from a model.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Predicting inside the range of the data is interpolation, and that's usually pretty safe.",
+      "ja": "データの範囲の内側を予測するのが補間で、ふつうはわりと安全。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the model to estimate the value in 2015. Is this interpolation or extrapolation?",
+      "ja": "モデルを使って 2015 年の値を推定せよ。これは補間か外挿か。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "extrapolation",
+    "regression-line",
+    "predict"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "内挿",
+      "en": "Interpolation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "interpolation": 21
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

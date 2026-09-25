@@ -1,0 +1,88 @@
+{
+  "id": "row",
+  "ja": {
+    "term": "行",
+    "reading": "ぎょう",
+    "alt": []
+  },
+  "en": {
+    "term": "row",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "行列の横の並び。上から第 1 行、第 2 行と数える。",
+  "definition_en": "A horizontal line of entries in a matrix, counted from the top as the first row, the second row, and so on.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Multiply the first row by the first column to get that entry.",
+      "ja": "第 1 行と第 1 列を掛けて、その成分を出す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Interchange the first and second rows of the matrix.",
+      "ja": "行列の第 1 行と第 2 行を入れかえよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは first row ／ second row ／ row of the matrix の形で数えた（語のままの row は in a row（連続して）なども含む）。",
+    "日本語は「行」と「列」を取り違えやすいが、英語は row（横）と column（縦）。"
+  ],
+  "related": [
+    "column",
+    "matrix",
+    "row-operations"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "first row | second row | row of the matrix | row of a matrix": 150
+    },
+    "written": {
+      "first row | second row | row of the matrix | row of a matrix": 37
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.02",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

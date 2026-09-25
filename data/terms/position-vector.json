@@ -1,0 +1,90 @@
+{
+  "id": "position-vector",
+  "ja": {
+    "term": "位置ベクトル",
+    "reading": "いちべくとる",
+    "alt": []
+  },
+  "en": {
+    "term": "position vector",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "基準の点 O を決めたとき、点 P の位置を表すベクトル OP。",
+  "definition_en": "For a fixed origin O, the vector OP that gives the position of a point P.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The position vector of a point just has the point's coordinates as its components.",
+      "ja": "点の位置ベクトルは、その点の座標を成分にもつ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let a and b be the position vectors of A and B. Find the position vector of the point that divides AB internally in the ratio 2 : 1.",
+      "ja": "A, B の位置ベクトルを a, b とする。AB を 2 : 1 に内分する点の位置ベクトルを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "position vector of the dividing point",
+      "ja": "内分点の位置ベクトル"
+    }
+  ],
+  "pitfalls": [
+    "運動では、時刻 t における点の位置を表すベクトル関数 r(t) も position vector と言う。"
+  ],
+  "related": [
+    "vector",
+    "point-of-internal-division",
+    "vector-equation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "position vector": 80
+    },
+    "written": {
+      "position vector": 62
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

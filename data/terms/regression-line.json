@@ -1,0 +1,122 @@
+{
+  "id": "regression-line",
+  "ja": {
+    "term": "回帰直線",
+    "reading": "かいきちょくせん",
+    "alt": [
+      "最小二乗回帰直線",
+      "回帰式"
+    ]
+  },
+  "en": {
+    "term": "regression line",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "line of best fit",
+        "register": "written",
+        "note": "話し言葉で 1 件、書き言葉で 55 件（OpenStax Introductory Statistics ほか）。"
+      },
+      {
+        "term": "regression equation",
+        "register": "written",
+        "note": "話し言葉で 2 件、書き言葉で 24 件。"
+      },
+      {
+        "term": "least-squares line",
+        "register": "written",
+        "note": "書き言葉で 23 件。"
+      },
+      {
+        "term": "best-fit line",
+        "register": "written",
+        "note": "書き言葉で 21 件。"
+      }
+    ],
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "散布図の点の近くを通るように、最小二乗法で決めた直線 ŷ = a + bx。一方の変量から他方を予測するのに使う。",
+  "definition_en": "The line ŷ = a + bx fitted to a scatter plot by least squares, used to predict one variable from the other.",
+  "latex": "\\hat{y} = a + bx",
+  "spoken_en": "y hat equals a plus b x",
+  "examples": [
+    {
+      "en": "The regression line predicts about 72 for someone who studied 5 hours.",
+      "ja": "回帰直線によると、5 時間勉強した人は約 72 点と予測される。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the equation of the least-squares regression line and interpret its slope.",
+      "ja": "最小二乗回帰直線の方程式を求め、傾きを解釈せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "書き言葉では regression line・line of best fit・regression equation・least-squares line・best-fit line が並ぶ（② の併記）。話し言葉は regression line（67 件、すべて Khan Academy）。最小二乗法で決めたことを示すときは least-squares regression line（13 件）。",
+    "ŷ は y hat と読む。OpenStax は ŷ = a + bx（a が切片、b が傾き）と書き（11 件）、日本の y = ax + b と文字の役割が逆になる。"
+  ],
+  "related": [
+    "least-squares",
+    "scatter-plot",
+    "correlation-coefficient",
+    "extrapolation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "線形回帰",
+      "en": "Linear regression"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "regression line": 67,
+      "regression equation": 2,
+      "line of best fit": 1
+    },
+    "written": {
+      "regression line": 69,
+      "line of best fit": 55,
+      "regression equation": 24,
+      "best-fit line": 21,
+      "least-squares line": 23
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-introstats",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

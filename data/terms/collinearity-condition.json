@@ -1,0 +1,74 @@
+{
+  "id": "collinearity-condition",
+  "ja": {
+    "term": "共線条件",
+    "reading": "きょうせんじょうけん",
+    "alt": []
+  },
+  "en": {
+    "term": "condition for collinearity",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない。英語は形容詞 collinear（一直線上にある。用例コーパスで話し言葉 2 件・書き言葉 8 件）で言い、条件に名前をつけない。",
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "3 点 A, B, C が一直線上にあるための条件。AC = k AB となる実数 k があること。",
+  "definition_en": "The condition for three points A, B, C to lie on one line: AC = k AB for some real number k.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If AC is a multiple of AB, then A, B, and C are collinear.",
+      "ja": "AC が AB の実数倍なら、A, B, C は一直線上にある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the points A(1, 2), B(3, 5), and C(7, 11) are collinear.",
+      "ja": "3 点 A(1, 2), B(3, 5), C(7, 11) が一直線上にあることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "parallel-vectors",
+    "scalar-multiplication",
+    "coplanarity-condition"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "time-series",
+  "ja": {
+    "term": "時系列",
+    "reading": "じけいれつ",
+    "alt": [
+      "時系列データ"
+    ]
+  },
+  "en": {
+    "term": "time series",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "時間の順に並べて記録したデータ。",
+  "definition_en": "Data recorded in order of time.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "With a time series, the order of the data matters, so plot it against time.",
+      "ja": "時系列では順番に意味があるので、時間に対してグラフをかく。",
+      "register": "spoken"
+    },
+    {
+      "en": "Make a time series graph of the monthly sales and describe any trend.",
+      "ja": "月ごとの売上高の時系列グラフをかき、傾向を述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "時系列のグラフは time series graph（OpenStax Introductory Statistics、16 件）。"
+  ],
+  "related": [
+    "moving-average",
+    "trend"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "時系列",
+      "en": "Time series"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "time series": 17
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

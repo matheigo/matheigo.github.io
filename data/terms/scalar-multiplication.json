@@ -1,0 +1,96 @@
+{
+  "id": "scalar-multiplication",
+  "ja": {
+    "term": "ベクトルの実数倍",
+    "reading": "べくとるのじっすうばい",
+    "alt": []
+  },
+  "en": {
+    "term": "scalar multiplication",
+    "alt": [],
+    "uk": null,
+    "variants": [
+      {
+        "term": "scalar multiple",
+        "register": "spoken",
+        "note": "実数倍したベクトルのほうを指す言い方。話し言葉で 17 件（Professor Leonard 15 ほか）、書き言葉で 14 件。"
+      }
+    ],
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors",
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "ベクトル a と実数 k から、大きさが |k| 倍で、k > 0 なら同じ向き、k < 0 なら反対向きのベクトル ka を作ること。",
+  "definition_en": "Multiplying a vector a by a real number k to get ka, whose magnitude is |k| times as large and whose direction is the same as a if k > 0 and opposite if k < 0.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If one vector is a scalar multiple of the other, they're parallel.",
+      "ja": "一方が他方の実数倍なら、2 つは平行。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find 3a − 2b for a = ⟨1, −2⟩ and b = ⟨4, 0⟩.",
+      "ja": "a = ⟨1, −2⟩, b = ⟨4, 0⟩ について 3a − 2b を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "scalar",
+    "parallel-vectors",
+    "vector"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "scalar multiple": 17,
+      "scalar multiplication": 7
+    },
+    "written": {
+      "scalar multiplication": 43,
+      "scalar multiple": 14
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

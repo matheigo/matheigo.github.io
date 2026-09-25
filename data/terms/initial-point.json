@@ -1,0 +1,85 @@
+{
+  "id": "initial-point",
+  "ja": {
+    "term": "始点",
+    "reading": "してん",
+    "alt": []
+  },
+  "en": {
+    "term": "initial point",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "書き言葉は initial point（OpenStax、138 件）。話し言葉では矢印の尾の意味で the tail（of the vector）とも言うが、用例コーパスの tail は分布の裾や硬貨の裏（tails）がほとんどなので数えていない。",
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "有向線分（ベクトル）の出発点。",
+  "definition_en": "The starting point of a directed line segment (vector).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Put the tail of the second vector at the tip of the first.",
+      "ja": "2 つ目のベクトルの始点を 1 つ目の終点に置く。",
+      "register": "spoken"
+    },
+    {
+      "en": "The vector v has initial point (1, 0) and terminal point (4, 3). Write v in component form.",
+      "ja": "ベクトル v の始点は (1, 0)、終点は (4, 3) である。v を成分で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "曲線の媒介変数表示でも、始まりの点を initial point と言う。"
+  ],
+  "related": [
+    "terminal-point",
+    "directed-segment",
+    "vector"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "initial point": 1
+    },
+    "written": {
+      "initial point": 138
+    },
+    "sources": [
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

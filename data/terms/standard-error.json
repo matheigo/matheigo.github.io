@@ -1,0 +1,86 @@
+{
+  "id": "standard-error",
+  "ja": {
+    "term": "標準誤差",
+    "reading": "ひょうじゅんごさ",
+    "alt": []
+  },
+  "en": {
+    "term": "standard error",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "標本から計算した統計量（標本平均など）の標準偏差。標本平均では σ/√n、σ がわからないときは s/√n で見積もる。",
+  "definition_en": "The standard deviation of a statistic computed from a sample, such as the sample mean: σ/√n, estimated by s/√n when σ is unknown.",
+  "latex": "\\frac{s}{\\sqrt{n}}",
+  "spoken_en": "s over the square root of n",
+  "examples": [
+    {
+      "en": "The standard error tells you how much the sample mean bounces around from sample to sample.",
+      "ja": "標準誤差は、標本平均が標本ごとにどれだけぶれるかを表す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Compute the standard error of the mean for a sample of size 49 with s = 14.",
+      "ja": "大きさ 49、s = 14 の標本について、平均の標準誤差を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "standard deviation（データの散らばり）と standard error（統計量のぶれ）は別。",
+    "標本平均の標準誤差は standard error of the mean（用例コーパス 32 件）。"
+  ],
+  "related": [
+    "sampling-distribution-of-the-mean",
+    "standard-deviation",
+    "confidence-interval"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "標準誤差",
+      "en": "Standard error"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "standard error": 30
+    },
+    "written": {
+      "standard error": 30
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

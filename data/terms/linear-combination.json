@@ -1,0 +1,93 @@
+{
+  "id": "linear-combination",
+  "ja": {
+    "term": "一次結合",
+    "reading": "いちじけつごう",
+    "alt": [
+      "線形結合"
+    ]
+  },
+  "en": {
+    "term": "linear combination",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors",
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "いくつかのベクトルをそれぞれ実数倍して足した形 sa + tb。",
+  "definition_en": "A sum of scalar multiples of vectors, such as sa + tb.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Any vector in the plane is a linear combination of i and j.",
+      "ja": "平面のどんなベクトルも i と j の一次結合になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write c = ⟨7, 4⟩ as a linear combination of a = ⟨1, 2⟩ and b = ⟨3, −1⟩.",
+      "ja": "c = ⟨7, 4⟩ を a = ⟨1, 2⟩ と b = ⟨3, −1⟩ の一次結合で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの書き言葉 78 件のうち 69 件は MIT の講義ノート。"
+  ],
+  "related": [
+    "linearly-independent",
+    "decomposition-of-a-vector"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "線型結合",
+      "en": "Linear combination"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "linear combination": 146
+    },
+    "written": {
+      "linear combination": 78
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-25"
+  }
+}

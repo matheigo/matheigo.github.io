@@ -1,0 +1,86 @@
+{
+  "id": "simulation",
+  "ja": {
+    "term": "シミュレーション",
+    "reading": "しみゅれーしょん",
+    "alt": []
+  },
+  "en": {
+    "term": "simulation",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "実際に試行する代わりに、乱数などを使って同じ仕組みの試行を模擬的に何度も行い、結果の分布を調べること。",
+  "definition_en": "Imitating a random process many times, for example with random numbers, instead of carrying it out, to see the distribution of the results.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's run a simulation: flip a virtual coin a thousand times and see what happens.",
+      "ja": "シミュレーションをしてみよう。仮想の硬貨を 1000 回投げて何が起こるか見る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Design a simulation using random digits to estimate the probability that a family of four children has at least two girls.",
+      "ja": "乱数を使うシミュレーションを設計し、4 人きょうだいに女子が少なくとも 2 人いる確率を推定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの書き言葉は 5 件だけ（OpenStax Introductory Statistics）。"
+  ],
+  "related": [
+    "random-number",
+    "experimental-probability"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "シミュレーション",
+      "en": "Simulation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "simulation": 47
+    },
+    "written": {
+      "simulation": 5
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-6.042",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

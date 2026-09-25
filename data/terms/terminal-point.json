@@ -1,0 +1,83 @@
+{
+  "id": "terminal-point",
+  "ja": {
+    "term": "終点",
+    "reading": "しゅうてん",
+    "alt": []
+  },
+  "en": {
+    "term": "terminal point",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "書き言葉は terminal point（OpenStax、141 件）。話し言葉では矢印の先の意味で the tip とも言うが、用例コーパスの tip は「こつ」などの意味も多いので数えていない。",
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "有向線分（ベクトル）の到着点。矢印の先。",
+  "definition_en": "The end point of a directed line segment (vector): the tip of the arrow.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The terminal point is where the arrow ends.",
+      "ja": "終点は矢印が終わるところ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the terminal point of the vector ⟨3, −2⟩ if its initial point is (1, 5).",
+      "ja": "始点が (1, 5) のとき、ベクトル ⟨3, −2⟩ の終点を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "initial-point",
+    "directed-segment",
+    "vector"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "terminal point": 2
+    },
+    "written": {
+      "terminal point": 141
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

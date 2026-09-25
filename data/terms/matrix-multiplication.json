@@ -1,0 +1,94 @@
+{
+  "id": "matrix-multiplication",
+  "ja": {
+    "term": "行列の積",
+    "reading": "ぎょうれつのせき",
+    "alt": []
+  },
+  "en": {
+    "term": "matrix multiplication",
+    "alt": [
+      "multiply matrices"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "行列 A の各行と行列 B の各列の成分を掛けて足し、積 AB の成分を作る演算。A の列の数と B の行の数が等しいときだけ定まる。",
+  "definition_en": "The operation that forms each entry of AB from a row of A and a column of B by multiplying and adding; defined only when A has as many columns as B has rows.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Matrix multiplication isn't commutative: AB and BA are usually different.",
+      "ja": "行列の積は交換法則が成り立たない。AB と BA はふつう違う。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find AB and BA, and verify that AB ≠ BA.",
+      "ja": "AB と BA を求め、AB ≠ BA であることを確かめよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「行列を掛ける」は multiply the matrices。積 AB は A times B と読む。"
+  ],
+  "related": [
+    "matrix",
+    "identity-matrix",
+    "inverse-matrix"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "行列の乗法",
+      "en": "Matrix multiplication"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "matrix multiplication": 69,
+      "multiply matrices": 14
+    },
+    "written": {
+      "matrix multiplication": 33,
+      "multiply matrices": 3
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

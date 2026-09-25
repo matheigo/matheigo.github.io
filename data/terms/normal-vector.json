@@ -1,0 +1,87 @@
+{
+  "id": "normal-vector",
+  "ja": {
+    "term": "法線ベクトル",
+    "reading": "ほうせんべくとる",
+    "alt": []
+  },
+  "en": {
+    "term": "normal vector",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "直線や平面に垂直な 0 でないベクトル。",
+  "definition_en": "A nonzero vector perpendicular to a line or a plane.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The coefficients a, b, c in the plane's equation give you a normal vector.",
+      "ja": "平面の方程式の係数 a, b, c がそのまま法線ベクトルになる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find a normal vector to the plane 2x − y + 3z = 6.",
+      "ja": "平面 2x − y + 3z = 6 の法線ベクトルを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの話し言葉 43 件のうち 34 件は MIT OCW 18.02（多変数の微積分）。"
+  ],
+  "related": [
+    "equation-of-a-plane",
+    "direction-vector"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "法線ベクトル",
+      "en": "Normal vector"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "normal vector": 43
+    },
+    "written": {
+      "normal vector": 138
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

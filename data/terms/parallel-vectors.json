@@ -1,0 +1,87 @@
+{
+  "id": "parallel-vectors",
+  "ja": {
+    "term": "平行なベクトル",
+    "reading": "へいこうなべくとる",
+    "alt": []
+  },
+  "en": {
+    "term": "parallel vectors",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "向きが同じか反対の 2 つの 0 でないベクトル。b = ka（k は 0 でない実数）と書ける。",
+  "definition_en": "Two nonzero vectors that point in the same or opposite directions, so that b = ka for some nonzero real number k.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Check if one is a multiple of the other; if it is, the vectors are parallel.",
+      "ja": "一方が他方の実数倍か調べる。そうなら平行。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find k so that ⟨2, k⟩ and ⟨6, −9⟩ are parallel vectors.",
+      "ja": "⟨2, k⟩ と ⟨6, −9⟩ が平行になるような k を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書の「平行条件」（a ∥ b ⇔ b = ka）は、英語では条件に名前をつけず、one vector is a scalar multiple of the other のように言う（scalar multiple of は用例コーパス 9 件）。"
+  ],
+  "related": [
+    "scalar-multiplication",
+    "vector",
+    "orthogonal-projection"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "parallel vectors": 5
+    },
+    "written": {
+      "parallel vectors": 8
+    },
+    "sources": [
+      "mit-18.02",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは OpenStax の呼び方 parallel vectors（本文 8 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

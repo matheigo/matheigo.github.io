@@ -1,0 +1,78 @@
+{
+  "id": "direction-vector",
+  "ja": {
+    "term": "方向ベクトル",
+    "reading": "ほうこうべくとる",
+    "alt": []
+  },
+  "en": {
+    "term": "direction vector",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "直線の向きを表す、直線に平行な 0 でないベクトル。",
+  "definition_en": "A nonzero vector parallel to a line, giving its direction.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Any nonzero multiple of the direction vector works just as well.",
+      "ja": "方向ベクトルの 0 でない実数倍でも同じように使える。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find a direction vector for the line through (1, 0, 3) and (4, 2, −1).",
+      "ja": "2 点 (1, 0, 3), (4, 2, −1) を通る直線の方向ベクトルを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "vector-equation-of-a-line",
+    "normal-vector"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "direction vector": 5
+    },
+    "written": {
+      "direction vector": 29
+    },
+    "sources": [
+      "mit-18.02",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

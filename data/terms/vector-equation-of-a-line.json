@@ -1,0 +1,82 @@
+{
+  "id": "vector-equation-of-a-line",
+  "ja": {
+    "term": "直線のベクトル方程式",
+    "reading": "ちょくせんのべくとるほうていしき",
+    "alt": []
+  },
+  "en": {
+    "term": "vector equation of a line",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "点 A を通り、方向ベクトル u に平行な直線上の点 P の位置ベクトル p を、p = a + tu（t は実数）と表した式。",
+  "definition_en": "The equation p = a + tu (t real) for the position vector p of a point on the line through A parallel to the direction vector u.",
+  "latex": "\\vec{p} = \\vec{a} + t\\vec{u}",
+  "spoken_en": "p equals a plus t times u",
+  "examples": [
+    {
+      "en": "As t runs through all real numbers, the point traces out the whole line.",
+      "ja": "t がすべての実数を動くと、点は直線全体をえがく。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write a vector equation of the line through A(2, −1) and B(5, 3).",
+      "ja": "2 点 A(2, −1), B(5, 3) を通る直線のベクトル方程式を書け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "各成分に分けた式 x = 2 + 3t, y = −1 + 4t は parametric equations of the line（OpenStax Calculus Volume 3、for the line を含め 13 件）と言う。"
+  ],
+  "related": [
+    "vector-equation",
+    "direction-vector",
+    "parameter"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "vector equation of a line": 4
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 4 件（10 未満））。見出しは OpenStax の呼び方 vector equation of a line（本文 4 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

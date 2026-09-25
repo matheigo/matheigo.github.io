@@ -1,0 +1,76 @@
+{
+  "id": "coplanarity-condition",
+  "ja": {
+    "term": "共面条件",
+    "reading": "きょうめんじょうけん",
+    "alt": []
+  },
+  "en": {
+    "term": "condition for coplanarity",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない。英語は形容詞 coplanar（同じ平面上にある。OpenStax Calculus Volume 3 など書き言葉 10 件）で言い、条件に名前をつけない。",
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "4 点 A, B, C, P が同じ平面上にあるための条件。AP = sAB + tAC となる実数 s, t があること。",
+  "definition_en": "The condition for four points A, B, C, P to lie in one plane: AP = sAB + tAC for some real numbers s and t.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If AP is a combination of AB and AC, then P is in the plane through A, B, and C.",
+      "ja": "AP が AB と AC の一次結合なら、P は A, B, C を通る平面上にある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the points A(1, 0, 0), B(0, 1, 0), C(0, 0, 1), and P(1, 1, −1) are coplanar.",
+      "ja": "4 点 A(1, 0, 0), B(0, 1, 0), C(0, 0, 1), P(1, 1, −1) が同じ平面上にあるか判定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Calculus Volume 3 は、3 つのベクトルのスカラー三重積（triple scalar product）が 0 かどうかで coplanar を判定する。"
+  ],
+  "related": [
+    "collinearity-condition",
+    "linear-combination",
+    "scalar-triple-product"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

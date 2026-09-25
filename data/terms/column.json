@@ -1,0 +1,90 @@
+{
+  "id": "column",
+  "ja": {
+    "term": "列",
+    "reading": "れつ",
+    "alt": []
+  },
+  "en": {
+    "term": "column",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "行列の縦の並び。左から第 1 列、第 2 列と数える。",
+  "definition_en": "A vertical line of entries in a matrix, counted from the left as the first column, the second column, and so on.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A times the first column of B gives the first column of the answer.",
+      "ja": "A に B の第 1 列を掛けると、答えの第 1 列になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the entries of the second column of the matrix.",
+      "ja": "行列の第 2 列の成分を書け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは first column ／ second column ／ column of the matrix の形で数えた。",
+    "数学用語の「列」は数列（sequence）の意味でも使うが、行列の列は column。"
+  ],
+  "related": [
+    "row",
+    "matrix"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "first column | second column | column of the matrix": 200
+    },
+    "written": {
+      "first column | second column | column of the matrix": 36
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-stats",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "least-squares",
+  "ja": {
+    "term": "最小二乗法",
+    "reading": "さいしょうにじょうほう",
+    "alt": [
+      "最小二乗解"
+    ]
+  },
+  "en": {
+    "term": "least squares",
+    "alt": [
+      "method of least squares"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics",
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "データの点と直線（や曲線）との縦のずれ（残差）の 2 乗の和が最小になるように、直線（や曲線）を決める方法。",
+  "definition_en": "The method of choosing a line (or curve) that makes the sum of the squared vertical distances (residuals) from the data points as small as possible.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Least squares picks the line that makes the sum of the squared residuals as small as possible.",
+      "ja": "最小二乗法は、残差の 2 乗の和がいちばん小さくなる直線を選ぶ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the method of least squares to fit a line to the data.",
+      "ja": "最小二乗法を用いて、データに直線を当てはめよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "線形代数では、解のない連立方程式 Ax = b の最小二乗解（least-squares solution）として扱う。"
+  ],
+  "related": [
+    "regression-line",
+    "scatter-plot"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "最小二乗法",
+      "en": "Least squares"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "least squares": 51
+    },
+    "written": {
+      "least squares": 43
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "id": "decomposition-of-a-vector",
+  "ja": {
+    "term": "ベクトルの分解",
+    "reading": "べくとるのぶんかい",
+    "alt": [
+      "ベクトルを分解する"
+    ]
+  },
+  "en": {
+    "term": "decomposition of a vector",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで decomposition of a vector は 0 件、resolve … into components は 1 件）。平行でない 2 つのベクトルで表すことは write as a linear combination（as a linear combination は 19 件）と言い、成分に分けることは break ／ resolve into components と説明する。",
+  "domains": [
+    "vectors"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "ベクトルを、平行でない 2 つのベクトルの実数倍の和 sa + tb の形に表すこと。表し方はただ 1 通り。",
+  "definition_en": "Writing a vector as a sum sa + tb of multiples of two nonparallel vectors; the expression is unique.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Break the force into a horizontal part and a vertical part.",
+      "ja": "力を水平方向と垂直方向に分解しよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Express p as a linear combination of a and b.",
+      "ja": "p を a と b の一次結合で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "linear-combination",
+    "linearly-independent",
+    "components"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

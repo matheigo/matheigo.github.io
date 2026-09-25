@@ -542,6 +542,11 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   test: { test: "test the claim | test the hypothesis | conduct a hypothesis test | perform a hypothesis test | do a hypothesis test" }, // not a comparison test or a school test
   "one-tailed-test": { "one-tailed test": "one-tailed test | right-tailed test | left-tailed test" }, // OpenStax names the side
   estimation: { estimate: "estimate the population | estimate of the population | estimate a population | estimate of a population" }, // not an estimate of an integral
+  // batch 3
+  components: { components: "components of the vector | component of the vector | horizontal component | vertical component | x-component" }, // not connected components of a graph
+  row: { row: "first row | second row | row of the matrix | row of a matrix" }, // not "in a row"
+  column: { column: "first column | second column | column of the matrix" }, // not a column of a table in general
+  entry: { entry: "entry in row | entries of the matrix" }, // "element" is mostly an element of a set
 };
 
 /** The wording a candidate is counted and recorded as. */

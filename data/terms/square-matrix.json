@@ -1,0 +1,87 @@
+{
+  "id": "square-matrix",
+  "ja": {
+    "term": "正方行列",
+    "reading": "せいほうぎょうれつ",
+    "alt": []
+  },
+  "en": {
+    "term": "square matrix",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "linear-algebra"
+  ],
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "行の数と列の数が等しい行列。n × n 行列を n 次の正方行列という。",
+  "definition_en": "A matrix with the same number of rows as columns; an n × n matrix is a square matrix of order n.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Only a square matrix can have a determinant.",
+      "ja": "行列式をもつのは正方行列だけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Give an example of a 2 × 2 square matrix that has no inverse.",
+      "ja": "逆行列をもたない 2 × 2 の正方行列の例を挙げよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "matrix",
+    "identity-matrix",
+    "determinant"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "正方行列",
+      "en": "Square matrix"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "square matrix": 57
+    },
+    "written": {
+      "square matrix": 19
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}
