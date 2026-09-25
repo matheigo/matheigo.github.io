@@ -6,9 +6,9 @@
     "alt": []
   },
   "en": {
-    "term": "substituting values",
+    "term": "plug in convenient values",
     "alt": [
-      "plug in convenient values"
+      "substitute convenient values"
     ],
     "uk": null
   },
@@ -46,6 +46,7 @@
   ],
   "collocations": [],
   "pitfalls": [
+    "substitute values（値を代入する）だけでは公式に値を入れる一般の言い方になる（用例コーパスの書き言葉 17 件はすべてその意味）。数値代入法の意味では convenient（都合のよい）を付けて言う。",
     "数値代入法で求めた係数は、必要条件から出したものなので、恒等式になっているか確かめる（Check that it works for all x.）。"
   ],
   "related": [
@@ -66,18 +67,14 @@
   },
   "updated": "2026-09-24",
   "evidence": {
-    "spoken": {
-      "substituting values": 1
-    },
-    "written": {
-      "substituting values": 17
-    },
-    "sources": [
-      "khan-algebra",
-      "openstax-algtrig",
-      "openstax-calculus",
-      "openstax-introstats"
-    ],
+    "sources": [],
     "counted": "2026-09-24"
-  }
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-24"
+    }
+  ]
 }

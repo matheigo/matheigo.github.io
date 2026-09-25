@@ -352,3 +352,4 @@
 - 2026-09-24 | 2 | バッチ 4 の見出し: 正射影は話し言葉・書き言葉 ① の projection（orthogonal projection は 0 件で en.alt）、ベクトル射影は日本語の見出しを「正射影ベクトル」にして ③ から OpenStax の vector projection、軸を回転した二次曲線は日本語の見出しを「座標軸の回転」にして書き言葉 ① の rotation of axes、カージオイドは日本の教科書の表記「カージオイド」（心臓形は ja.alt）、仕事は work done の形で数えた | 台帳の日本語（ベクトル射影・回転した円錐曲線・心臓形）は訳語で、日本の教科書・大学の語（正射影ベクトル・座標軸の回転・カージオイド）がある
 - 2026-09-24 | 2 | inductive-step は draft（draft-reason）。base-case と同じく、英語は固有の用語だが用例コーパスは MIT 6.042 だけで、OpenStax にも台帳の Wikipedia にもない | draft の基準
 - 2026-09-24 | 2 | solve-for の読みは「についてとく」（見出しの「〜」は読みに入れない） | validate は読みをひらがなだけにする
+- 2026-09-24 | 2 | 数値代入法（substituting-values）の en.term を台帳の substituting values から plug in convenient values にした（substitute convenient values は en.alt）。話・書とも 0 件で「英語に決まった言い方がない」 | 台帳の見出しは normalize で substitute values になり、公式に値を入れる一般の言い方（書き言葉 17 件、すべてその意味）を数えて書き言葉 ① になっていた。mapping_note の「0 件」とも食い違っていた。レポートを書く前の見直しで見つけた
