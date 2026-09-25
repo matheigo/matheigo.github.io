@@ -6,23 +6,23 @@
     "alt": []
   },
   "en": {
-    "term": "revolve … around the x-axis",
+    "term": "rotate … around the x-axis",
     "alt": [
-      "revolve around the x-axis",
       "rotate around the x-axis",
-      "revolve about the x-axis",
-      "rotate about the x-axis"
+      "revolve around the x-axis",
+      "rotate about the x-axis",
+      "revolve about the x-axis"
     ],
     "variants": [
       {
-        "term": "revolve … around the x-axis",
-        "register": "written",
-        "note": "教科書（OpenStax Calculus）の書き方。is revolved around the x-axis のような受け身を含む。話し言葉で 9 件（MIT OCW 5・Professor Leonard 4）、書き言葉で 27 件（すべて OpenStax Calculus）。"
-      },
-      {
         "term": "rotate … around the x-axis",
         "register": "both",
-        "note": "話し言葉ではこちらが最も多い（Khan Academy が中心）が、revolve との差は判断できる件数に届かない。話し言葉で 24 件（Khan Academy 17・MIT OCW 4・Professor Leonard 3）、書き言葉で 15 件（すべて OpenStax Calculus）。"
+        "note": "話し言葉の主見出し（Khan Academy が中心）。書き言葉では revolve と並ぶ。話し言葉で 24 件（Khan Academy 17・MIT OCW 4・Professor Leonard 3）、書き言葉で 15 件（すべて OpenStax Calculus）。"
+      },
+      {
+        "term": "revolve … around the x-axis",
+        "register": "written",
+        "note": "教科書（OpenStax Calculus）の書き方で、書き言葉では最も多い。is revolved around the x-axis のような受け身を含む。話し言葉で 9 件（MIT OCW 5・Professor Leonard 4）、書き言葉で 27 件（すべて OpenStax Calculus）。"
       },
       {
         "term": "revolve … about the x-axis",
@@ -36,7 +36,7 @@
       }
     ],
     "uk": null,
-    "register": "written"
+    "register": "both"
   },
   "pos": "phrase",
   "mapping": "exact",
@@ -100,10 +100,10 @@
       "revolve about the x-axis": 1
     },
     "written": {
+      "rotate … around the x-axis": 15,
       "revolve … around the x-axis": 27,
-      "rotate around the x-axis": 15,
-      "revolve … about the x-axis": 9,
-      "rotate about the x-axis": 4
+      "rotate about the x-axis": 4,
+      "revolve … about the x-axis": 9
     },
     "sources": [
       "khan-ap-calc",

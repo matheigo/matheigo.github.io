@@ -6,9 +6,9 @@
     "alt": []
   },
   "en": {
-    "term": "integral involving an absolute value",
+    "term": "integral of the absolute value",
     "alt": [
-      "integral of the absolute value"
+      "integral involving an absolute value"
     ],
     "uk": null
   },
@@ -47,6 +47,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 8.6（the integral of the absolute value）"
     }
   ],
   "confidence": "likely",
@@ -71,8 +77,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは CED の呼び方 integral of the absolute value（topic 8.6）。register は主張しない。",
       "raised": "2026-09-24"
     }
   ]

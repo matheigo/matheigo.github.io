@@ -19,12 +19,12 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { ROOT, loadAll, type LoadedEntry } from "./lib/load.js";
+import { ROOT, loadAll, localDate, type LoadedEntry } from "./lib/load.js";
 
 const WRITE = process.argv.includes("--write");
 const REFRESH = process.argv.includes("--refresh");
 const API = "https://ja.wikipedia.org/w/api.php";
-const TODAY = new Date().toISOString().slice(0, 10);
+const TODAY = localDate();
 const CACHE = path.join(ROOT, "corpus", "cache", "crosscheck.json");
 const BATCH = 50; // MediaWiki titles per query
 const TIMEOUT_MS = 30_000;

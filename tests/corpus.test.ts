@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   balance,
   candidatesOf,
+  cedSections,
   cnxmlToText,
   countEntry,
   countPattern,
@@ -14,10 +15,13 @@ import {
   inflections,
   mergeCandidates,
   normalize,
+  referenceHits,
   sameWording,
+  settleUndecided,
   sourceWeights,
   weigh,
   type CorpusDoc,
+  type ReferenceHits,
 } from "../scripts/corpus/lib";
 
 describe("normalize", () => {
@@ -185,8 +189,14 @@ describe("decide", () => {
     expect(headsOf(v)).toEqual(["plug in", "substitute", "sub in"]);
   });
 
-  it("③ is undecided when the runner-up is below the floor", () => {
-    const v = decide({ "plug in": 12, substitute: 5 }, "spoken");
+  it("① takes a leader short of 3:1 when only the leader clears the floor", () => {
+    // axis of revolution 13 / axis of rotation 7 (DECISIONS, Phase 2 規則の修正)
+    const v = decide({ "axis of revolution": 13, "axis of rotation": 7 }, "written");
+    expect(v).toMatchObject({ kind: "single", head: "axis of revolution", runnerUp: "axis of rotation", byFloor: true });
+  });
+
+  it("③ is undecided when nothing clears the floor", () => {
+    const v = decide({ "plug in": 7, substitute: 5 }, "spoken");
     expect(v).toMatchObject({ kind: "undecided", reason: "too-close" });
   });
 
@@ -226,9 +236,17 @@ describe("decideRobust", () => {
     expect(v.kind === "both" && v.dependsOn).toMatchObject({ source: "a", hits: 81, of: 92 });
   });
 
-  it("uses the runner-up when nothing leads without that source", () => {
+  it("keeps ① when the verdict only thins out to ③ without that source", () => {
     const v = decideRobust({ "pick u": { yt: 10, b: 3 }, "choose u": { b: 2 } }, { yt: 1, b: 1 }, "spoken");
-    expect(headsOf(v)).toEqual(["pick u", "choose u"]);
+    expect(v).toMatchObject({ kind: "single", head: "pick u" });
+    expect(v.kind === "single" && v.dependsOn).toMatchObject({ source: "yt", without: { kind: "undecided" } });
+  });
+
+  it("keeps ① when the same leader is still first without that source", () => {
+    // sigma notation 43 / summation notation 10 -> 21 / 10 without Khan
+    const v = decideRobust({ "sigma notation": { khan: 22, b: 21 }, "summation notation": { b: 10 } }, { khan: 1, b: 1 }, "spoken");
+    expect(v).toMatchObject({ kind: "single", head: "sigma notation" });
+    expect(v.kind === "single" && v.dependsOn).toMatchObject({ source: "khan", without: { kind: "both" } });
   });
 
   it("does not set a collocation built on the leader beside it", () => {
@@ -252,6 +270,66 @@ describe("decideRobust", () => {
 
   it("leaves ③ alone", () => {
     expect(decideRobust({ x: { a: 3 } }, { a: 1 }, "spoken").kind).toBe("undecided");
+  });
+});
+
+describe("settleUndecided", () => {
+  const ref = (r: Partial<ReferenceHits>): ReferenceHits => ({ ced: {}, openstax: {}, openstaxTitles: {}, ...r });
+  const order = ["integration by long division", "integrating using long division"];
+
+  it("finds no fixed English expression for a near / none entry under 10 in both registers", () => {
+    const s = settleUndecided({ mapping: "near", ja: "長除法による積分", en: order[0] }, { spoken: 0, written: 9 }, ref({}), order);
+    expect(s).toEqual({ kind: "no-fixed-expression", spoken: 0, written: 9 });
+  });
+
+  it("does not apply that to an exact entry", () => {
+    expect(settleUndecided({ mapping: "exact" }, { spoken: 0, written: 0 }, ref({}), order).kind).toBe("undecided");
+  });
+
+  it("does not apply that when a register reaches 10", () => {
+    const s = settleUndecided({ mapping: "near", ja: "微分の逆", en: "x" }, { spoken: 11, written: 3 }, ref({}), order);
+    expect(s.kind).toBe("undecided");
+  });
+
+  it("does not apply that to an English name taken over as the headword", () => {
+    const s = settleUndecided({ mapping: "none", ja: "LIATE", en: "LIATE" }, { spoken: 2, written: 7 }, ref({ openstax: { LIATE: 7 } }), ["LIATE"]);
+    expect(s).toMatchObject({ kind: "reference", by: "openstax", head: "LIATE" });
+  });
+
+  it("takes the CED's name before OpenStax's, with its topics", () => {
+    const s = settleUndecided(
+      { mapping: "exact" },
+      { spoken: 3, written: 4 },
+      ref({ ced: { [order[1]]: { unit6: 2, "6.10": 2 } }, openstax: { [order[0]]: 5 } }),
+      order,
+    );
+    expect(s).toEqual({ kind: "reference", by: "ced", head: order[1], where: ["6.10"] });
+  });
+
+  it("falls back to OpenStax: body hits and section titles", () => {
+    const s = settleUndecided({ mapping: "exact" }, { spoken: 0, written: 1 }, ref({ openstaxTitles: { [order[1]]: ["Integrating Using Long Division"] } }), order);
+    expect(s).toEqual({ kind: "reference", by: "openstax", head: order[1], where: ["Integrating Using Long Division"] });
+  });
+
+  it("stays undecided when neither reference names it", () => {
+    expect(settleUndecided({ mapping: "exact" }, { spoken: 0, written: 0 }, ref({}), order)).toEqual({ kind: "undecided" });
+  });
+});
+
+describe("cedSections / referenceHits", () => {
+  const ced = ["front matter", "UNIT 1", "Limits", "TOPIC 1.1", "a limit here", "TOPIC 1.2", "one-sided limits", "Exam Overview", "limit"].join("\n");
+
+  it("splits the CED into front, unit openers, topics and exam", () => {
+    expect(cedSections(ced).map(([n]) => n)).toEqual(["front", "unit1", "1.1", "1.2", "exam"]);
+  });
+
+  it("counts candidates per CED section, in the OpenStax body and in section titles", () => {
+    const sections = cedSections(ced).map(([n, t]) => [n, normalize(t)] as [string, string]);
+    const r = referenceHits(["limit", "one-sided limit"], sections, ["the limit of f", "limits"], ["One-Sided Limits"]);
+    expect(r.ced.limit).toEqual({ unit1: 1, "1.1": 1, "1.2": 1, exam: 1 });
+    expect(r.ced["one-sided limit"]).toEqual({ "1.2": 1 });
+    expect(r.openstax).toEqual({ limit: 2 });
+    expect(r.openstaxTitles).toEqual({ limit: ["One-Sided Limits"], "one-sided limit": ["One-Sided Limits"] });
   });
 });
 

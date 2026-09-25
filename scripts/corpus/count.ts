@@ -23,20 +23,24 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { ROOT, loadAll, type Collection } from "../lib/load.js";
+import { ROOT, loadAll, localDate, type Collection } from "../lib/load.js";
 import {
   balance,
   candidatesOf,
+  cedSections,
+  cedText,
   contexts,
   countEntry,
   countedAs,
   dedupe,
   normalize,
+  referenceHits,
   type BySource,
   type ContextHit,
   type CorpusDoc,
   type DedupeStats,
   type Merge,
+  type ReferenceHits,
 } from "./lib.js";
 import type { ManifestEntry } from "./fetch.js";
 
@@ -56,6 +60,8 @@ export interface EntryCounts {
   sources: string[];
   /** True when every spoken hit came from auto captions (weak evidence for symbols). */
   autoOnly: boolean;
+  /** terms: what the CED and OpenStax call it, for the ③ fallback (lib.ts settleUndecided). */
+  reference?: ReferenceHits;
 }
 
 export interface CountsFile {
@@ -65,6 +71,17 @@ export interface CountsFile {
   /** source id -> what dedupe removed; absent with --no-dedupe */
   dedupe?: Record<string, DedupeStats>;
   entries: EntryCounts[];
+}
+
+/** The AP Calculus CED, fetched by `python3 scripts/ledger/refetch.py ced` (corpus/ref/, gitignored). */
+const CED = path.join(CORPUS, "ref", "ap-calculus-ab-bc-ced.txt");
+
+/** OpenStax section titles ("OpenStax Calculus Volume 1 - Areas between Curves" -> "Areas between Curves"). */
+function openstaxTitles(): string[] {
+  const manifestPath = path.join(CORPUS, "manifest.json");
+  if (!fs.existsSync(manifestPath)) return [];
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8")) as ManifestEntry[];
+  return manifest.filter((m) => m.id.startsWith("openstax-")).map((m) => m.title.replace(/^.*? - /, ""));
 }
 
 function loadCorpus(): CorpusDoc[] {
@@ -131,12 +148,20 @@ function main() {
   const entries: EntryCounts[] = [];
   const hits: ContextHit[] = [];
 
+  // References for the ③ fallback: the CED and OpenStax (body and section titles).
+  const ced = fs.existsSync(CED) ? cedSections(fs.readFileSync(CED, "utf8")).map(([n, t]) => [n, cedText(t)] as [string, string]) : [];
+  if (ced.length === 0) console.log("  CED text missing (python3 scripts/ledger/refetch.py ced): the ③ fallback will only see OpenStax");
+  const openstax = docs.filter((d) => d.id.startsWith("openstax-")).map((d) => d.text);
+  const titles = openstaxTitles();
+
   for (const collection of COUNTED) {
     for (const { data } of all[collection]) {
       const record = data as unknown as Record<string, unknown>;
       const candidates = candidatesOf(collection, record);
       const t = countEntry(docs, collection, candidates, headwordOf(collection, record));
-      if (t.sources.length === 0) continue;
+      const reference = collection === "terms" ? referenceHits(candidates, ced, openstax, titles) : undefined;
+      const referred = reference && (Object.keys(reference.ced).length || Object.keys(reference.openstax).length || Object.keys(reference.openstaxTitles).length);
+      if (t.sources.length === 0 && !referred) continue;
       if (WITH_CONTEXTS) {
         for (const candidate of candidates) {
           for (const doc of docs) hits.push(...contexts(doc.text, candidate, doc.id));
@@ -150,12 +175,13 @@ function main() {
         merges: t.merges,
         sources: t.sources,
         autoOnly: t.auto && !t.human,
+        ...(referred ? { reference } : {}),
       });
     }
   }
 
   const out: CountsFile = {
-    counted: new Date().toISOString().slice(0, 10),
+    counted: localDate(),
     sources: words,
     ...(removed ? { dedupe: removed } : {}),
     entries,
@@ -164,7 +190,7 @@ function main() {
   fs.writeFileSync(path.join(CORPUS, "counts.json"), JSON.stringify(out, null, 2) + "\n", "utf8");
 
   const merged = entries.reduce((n, e) => n + e.merges.length, 0);
-  console.log(`\ncounted ${entries.length} entr${entries.length === 1 ? "y" : "ies"} with at least one hit`);
+  console.log(`\ncounted ${entries.length} entr${entries.length === 1 ? "y" : "ies"} with at least one hit (corpus or reference)`);
   console.log(`  ${merged} same-wording merge(s) folded into headwords`);
   console.log("  -> corpus/counts.json");
 

@@ -25,21 +25,32 @@
  * Symbols are readings aloud, so their written verdict is "対象外" (out of
  * scope): it is not judged and raises no flag (DECISIONS 修正 4).
  *
+ * An entry undecided in both registers (③) is settled further where it can be
+ * (lib.ts settleUndecided, DECISIONS Phase 2 規則の修正):
+ *   - mapping near / none and fewer than 10 hits in each register: English has
+ *     no set way to say it (corpus-no-fixed-expression). Not for the human
+ *   - otherwise the headword is what the CED, or failing that OpenStax, calls
+ *     it (corpus-reference-fallback). No register is claimed
+ *
  * Only two things reach the human (the user's call on 2026-09-11):
- *   - undecided entries
+ *   - undecided entries that neither reference names (corpus-undecided)
  *   - entries where the corpus contradicts the register recorded in the data
  */
 import fs from "node:fs";
 import path from "node:path";
-import { ROOT, loadAll, type Collection } from "../lib/load.js";
+import { ROOT, loadAll, localDate, type Collection } from "../lib/load.js";
 import {
+  candidatesOf,
   countedAs,
   decideRobust,
+  emptyReference,
   flatten,
   headsOf,
   sameWording,
+  settleUndecided,
   sourceWeights,
   type Register,
+  type Settled,
   type Verdict,
 } from "./lib.js";
 import type { CountsFile, EntryCounts } from "./count.js";
@@ -51,7 +62,7 @@ const argAfter = (flag: string) => {
 };
 const UNITS = argAfter("--units");
 const IDS = argAfter("--ids");
-const TODAY = new Date().toISOString().slice(0, 10);
+const TODAY = localDate();
 const CORPUS = path.join(ROOT, "corpus");
 const COUNTED: Collection[] = ["terms", "symbols", "phrases"];
 
@@ -61,7 +72,8 @@ function describe(v: Verdict | null): string {
   const rest = (d: NonNullable<Extract<Verdict, { kind: "single" }>["dependsOn"]>) =>
     `（首位の ${d.of} 件中 ${d.hits} 件が ${d.source}。抜くと ${describe(d.without)}）`;
   if (v.kind === "single") {
-    const base = `${v.head}（${v.ratio === Infinity ? "唯一" : `${v.ratio.toFixed(1)}:1`}）`;
+    const ratio = v.ratio === Infinity ? "唯一" : `${v.ratio.toFixed(1)}:1`;
+    const base = `${v.head}（${v.byFloor ? `${ratio}、首位だけが 10 件以上。次点 ${v.runnerUp} は少数` : ratio}）`;
     return v.dependsOn ? `${base} ${rest(v.dependsOn)}` : base;
   }
   if (v.kind === "both") {
@@ -118,6 +130,22 @@ interface Line {
   written: Verdict | null;
   merges: { into: string; from: string[] }[];
   mismatch: string | null;
+  /** Both registers undecided: what became of it. */
+  settled: Settled | null;
+  /** Things the entry must change to agree with how it was settled (fixed by hand, then re-run). */
+  todo: string[];
+}
+
+const NO_FIXED_NOTE = "英語に決まった言い方がない";
+
+function describeSettled(s: Settled): string {
+  if (s.kind === "no-fixed-expression") return `英語に決まった言い方がない（話 ${s.spoken} 件 ／ 書 ${s.written} 件）`;
+  if (s.kind === "reference") {
+    return s.by === "ced"
+      ? `CED の呼び方 ${s.head}（${s.where.map((w) => (/^\d/.test(w) ? `topic ${w}` : w)).join("・")}）`
+      : `OpenStax の呼び方 ${s.head}（${s.where.slice(0, 3).join("・")}）`;
+  }
+  return "判断不能";
 }
 
 function main() {
@@ -167,6 +195,37 @@ function main() {
     const spoken = decideRobust(c.spoken, weights, "spoken");
     const written = c.collection === "symbols" ? null : decideRobust(c.written, weights, "written");
 
+    // ③: settle it where the rules allow (lib.ts settleUndecided). Only terms
+    // carry a mapping and are counted against the references.
+    const bothUndecided = spoken.kind === "undecided" && (written === null || written.kind === "undecided");
+    const rawTotal = (by: Record<string, Record<string, number>>) =>
+      Object.values(flatten(by)).reduce((a, b) => a + b, 0);
+    const settled: Settled | null = !bothUndecided
+      ? null
+      : c.collection === "terms"
+        ? settleUndecided(
+            {
+              mapping: record.mapping as string | undefined,
+              ja: (record.ja as { term: string }).term,
+              en: (record.en as { term: string }).term,
+            },
+            { spoken: rawTotal(c.spoken), written: rawTotal(c.written) },
+            c.reference ?? emptyReference(),
+            candidatesOf(c.collection, record),
+          )
+        : { kind: "undecided" };
+    const todo: string[] = [];
+    if (settled && settled.kind !== "undecided") {
+      const en = record.en as { term: string; register?: string };
+      if (en.register) todo.push(`en.register（${en.register}）を外す（register は主張しない）`);
+      if (settled.kind === "reference" && !sameWording(en.term, settled.head)) {
+        todo.push(`en.term を ${settled.head} にする（今は ${en.term}）`);
+      }
+      if (settled.kind === "no-fixed-expression" && !String(record.mapping_note ?? "").includes(NO_FIXED_NOTE)) {
+        todo.push(`mapping_note に「${NO_FIXED_NOTE}」と書く`);
+      }
+    }
+
     // Contradiction: the corpus settled on a wording the entry does not file
     // at that register. Merging already folded inflection and ellipsis away,
     // so what is left is a real disagreement.
@@ -187,7 +246,7 @@ function main() {
     const mismatch = problems.length ? problems.join(" ／ ") : null;
 
     const writeBack = WRITE && inScope(key);
-    lines.push({ key, wroteBack: writeBack, spoken, written, merges: c.merges, mismatch });
+    lines.push({ key, wroteBack: writeBack, spoken, written, merges: c.merges, mismatch, settled, todo });
 
     if (!writeBack) continue;
 
@@ -201,10 +260,22 @@ function main() {
     const flags = ((record.flags as { code: string }[] | undefined) ?? []).filter(
       (f) => !f.code.startsWith("corpus-"),
     );
-    if (spoken.kind === "undecided" && (written === null || written.kind === "undecided")) {
+    if (settled?.kind === "no-fixed-expression") {
+      flags.push({
+        code: "corpus-no-fixed-expression",
+        note: `${describeSettled(settled)}。mapping ${record.mapping as string} なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。`,
+        raised: TODAY,
+      } as { code: string });
+    } else if (settled?.kind === "reference") {
+      flags.push({
+        code: "corpus-reference-fallback",
+        note: `コーパスで決まらない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。見出しは ${describeSettled(settled)}。register は主張しない。`,
+        raised: TODAY,
+      } as { code: string });
+    } else if (settled?.kind === "undecided") {
       flags.push({
         code: "corpus-undecided",
-        note: `コーパスで決まらない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`,
+        note: `コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`,
         raised: TODAY,
       } as { code: string });
     }
@@ -232,7 +303,10 @@ function main() {
   // ------------------------------------------------------------- report ---
   const single = lines.filter((l) => l.spoken.kind === "single" || l.written?.kind === "single");
   const both = lines.filter((l) => l.spoken.kind === "both" || l.written?.kind === "both");
-  const undecided = lines.filter((l) => l.spoken.kind === "undecided" && (l.written === null || l.written.kind === "undecided"));
+  const undecided = lines.filter((l) => l.settled?.kind === "undecided");
+  const noFixed = lines.filter((l) => l.settled?.kind === "no-fixed-expression");
+  const byReference = lines.filter((l) => l.settled?.kind === "reference");
+  const todos = lines.filter((l) => l.todo.length);
   const mismatched = lines.filter((l) => l.mismatch);
   const merges = lines.filter((l) => l.merges.length);
   const leans = (v: Verdict | null) => v !== null && v.kind !== "undecided" && v.dependsOn !== undefined;
@@ -251,7 +325,7 @@ function main() {
   const md = [
     `# コーパス集計 ${TODAY}`,
     "",
-    `対象 ${lines.length} 件。主見出し決着 ${single.length} ／ 併記 ${both.length} ／ 判断不能 ${undecided.length} ／ register 不一致 ${mismatched.length}。`,
+    `対象 ${lines.length} 件。主見出し決着 ${single.length} ／ 併記 ${both.length} ／ 英語に決まった言い方なし ${noFixed.length} ／ 参照で見出しを決めた ${byReference.length} ／ 判断不能 ${undecided.length} ／ register 不一致 ${mismatched.length}。`,
     "",
     scope.size
       ? `data/ に書き戻したのは ${writtenBack.length} 件（${[...UNITS, ...IDS].join("、")}）。ほかは判定を表示しただけで、evidence と flags は前回のまま。`
@@ -282,8 +356,8 @@ function main() {
     "",
     "## 1 ソース頼み（首位の件数が最も多いソースを抜くと判定が変わる）",
     "",
-    "①→② は ① を ② 併記に下げたもの。② はそのまま、どのソースに頼っているかだけ記録する。",
-    "唯一の言い方（併記する相手がない）は ① のまま記録だけする。",
+    "①→② は、抜くと別の言い方が首位になるので ① を ② 併記に下げたもの。抜くと ③ になる（データが薄くなるだけの）ものと、",
+    "同じ言い方が首位のまま ② になるものは ① のまま、頼っているソースを記録する。② はそのまま記録だけする。",
     "",
     oneSource.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
     ...oneSource.map((l) => `| ${l.key} | ${leans(l.spoken) ? describe(l.spoken) : "—"} | ${leans(l.written) ? describe(l.written) : "—"} |`),
@@ -295,13 +369,27 @@ function main() {
     merges.length ? "| 項目 | 合算先 | 合算した表記 |\n|---|---|---|" : "なし。",
     ...merges.flatMap((l) => l.merges.map((m) => `| ${l.key} | ${m.into} | ${m.from.join(" / ")} |`)),
     "",
+    "## ③ のうち規則で決着したもの",
+    "",
+    "話・書とも判断不能のうち、mapping が near ／ none で全候補の合計が話・書とも 10 件未満のものは「英語に決まった言い方がない」",
+    "（corpus-no-fixed-expression）。それ以外は見出しを CED の呼び方、無ければ OpenStax の呼び方（本文か節の名前）で決める",
+    "（corpus-reference-fallback）。どちらも register は主張せず、人間レビューに回さない。",
+    "",
+    noFixed.length + byReference.length ? "| 項目 | 決着 | 話し言葉 | 書き言葉 |\n|---|---|---|---|" : "なし。",
+    ...[...noFixed, ...byReference].map((l) => `| ${l.key} | ${describeSettled(l.settled!)} | ${describe(l.spoken)} | ${describe(l.written)} |`),
+    "",
+    "## エントリ側で直すこと（決着とエントリが合っていない）",
+    "",
+    todos.length ? "| 項目 | 直すこと |\n|---|---|" : "なし。",
+    ...todos.map((l) => `| ${l.key} | ${l.todo.join(" ／ ")} |`),
+    "",
     "---",
     "",
     "# 人間レビュー行き",
     "",
     "週 30 分で見るのはここだけ。",
     "",
-    "## ③ コーパスで決まらないもの",
+    "## ③ コーパスで決まらず、CED にも OpenStax にも呼び方がないもの",
     "",
     undecided.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
     ...undecided.map((l) => `| ${l.key} | ${describe(l.spoken)} | ${describe(l.written)} |`),
@@ -328,7 +416,7 @@ function main() {
       .join(", ")}`,
   );
   console.log(
-    `single ${single.length}, both ${both.length}, undecided ${undecided.length}, mismatch ${mismatched.length}, merges ${merges.length}, one-source ${oneSource.length}`,
+    `single ${single.length}, both ${both.length}, no-fixed ${noFixed.length}, reference ${byReference.length}, undecided ${undecided.length}, mismatch ${mismatched.length}, merges ${merges.length}, one-source ${oneSource.length}, entry todo ${todos.length}`,
   );
   if (WRITE) console.log(`wrote ${writtenBack.length} entr${writtenBack.length === 1 ? "y" : "ies"} back to data/`);
   console.log(`report -> audits/corpus-${TODAY}.md`);

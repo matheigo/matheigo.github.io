@@ -62,3 +62,12 @@ export function isPublishable(data: Entry): boolean {
 export function isVerified(data: Entry): boolean {
   return !("confidence" in data) || data.confidence === "verified";
 }
+
+/**
+ * Today as YYYY-MM-DD in the machine's own time zone. toISOString() gives the
+ * UTC date, which in the evening on the US west coast is already tomorrow.
+ */
+export function localDate(d = new Date()): string {
+  const pad = (n: number) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+}

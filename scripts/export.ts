@@ -8,7 +8,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { COLLECTIONS, ROOT, isPublishable, isVerified, loadAll, type Entry } from "./lib/load.js";
+import { COLLECTIONS, ROOT, isPublishable, isVerified, loadAll, localDate, type Entry } from "./lib/load.js";
 
 const OUT = path.join(ROOT, "dist", "data");
 
@@ -96,7 +96,7 @@ function main() {
       "Data in this directory is released under CC0 1.0 (public domain dedication).",
       "You may reuse it for any purpose, including training models, with no attribution required.",
       "",
-      `Generated: ${new Date().toISOString().slice(0, 10)}`,
+      `Generated: ${localDate()}`,
       'JSON and CSV include entries at confidence "likely"; filter on the `confidence` field if you only want reviewed ones.',
       "The Quizlet TSV, the Anki deck and the print PDF contain verified entries only.",
       "",

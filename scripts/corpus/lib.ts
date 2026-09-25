@@ -402,6 +402,11 @@ export type Verdict =
       ratio: number;
       total: number;
       dependsOn?: Dependence;
+      /**
+       * Short of RATIO, but the leader alone clears MIN_TOTAL: the runner-up
+       * is a minor variant (DECISIONS, Phase 2 規則の修正).
+       */
+      byFloor?: boolean;
     }
   | {
       kind: "both";
@@ -456,6 +461,10 @@ export function decide(counts: Counts, register: Register): Verdict {
       total,
     };
   }
+  // Only the leader clears the floor (axis of revolution 13 / axis of
+  // rotation 7): the leader is the headword and the rest are minor variants,
+  // even short of RATIO.
+  if (standing.length === 1) return { kind: "single", register, head, runnerUp, ratio, total, byFloor: true };
 
   return { kind: "undecided", reason: "too-close", total };
 }
@@ -485,15 +494,16 @@ function without(counts: BySource, source: string): BySource {
 }
 
 /**
- * decide(), then the one-source check (DECISIONS, Phase 2 修正): take out the
- * source with the most hits for the leading wording and decide again. If the
- * verdict is not the same (same kind, same leader), the leader rests on that
- * source, and a single headword becomes ② - the leader set side by side with
- * whatever leads without that source (or, if nothing does, the runner-up).
- * A ② stays ② and only records the dependence. A sole wording has nothing to
- * be set beside, so it stays ① with the dependence recorded; a collocation
- * that contains the leader ("the integrand is odd") does not count as
- * something to set beside it.
+ * decide(), then the one-source check (DECISIONS, Phase 2 規則の修正): take
+ * out the source with the most hits for the leading wording and decide again.
+ * If the verdict is not the same (same kind, same leader), the leader rests on
+ * that source and the dependence is recorded. A single headword is lowered to
+ * ② only when ANOTHER wording leads without that source - it is then set side
+ * by side with that wording and whatever else stands. When the verdict merely
+ * thins out (③ without the source, or ② under the same leader) nothing else
+ * has overtaken it, so it stays ① with the source recorded. A ② stays ② and
+ * only records the dependence. A collocation that contains the leader ("the
+ * integrand is odd") is not another wording and never takes the lead from it.
  */
 export function decideRobust(counts: BySource, weights: Record<string, number>, register: Register): Verdict {
   const weighted = weigh(counts, weights);
@@ -509,12 +519,10 @@ export function decideRobust(counts: BySource, weights: Record<string, number>, 
 
   const dependsOn: Dependence = { source: top, hits, of, without: w };
   if (v.kind === "both") return { ...v, dependsOn };
-  const others = Object.keys(weighted)
-    .filter((c) => c !== lead && weighted[c] > 0 && !extendsWording(c, lead))
-    .sort((a, b) => weighted[b] - weighted[a]);
-  if (others.length === 0) return { ...v, dependsOn };
+  const newLead = headsOf(w)[0];
+  if (newLead === undefined || newLead === lead || extendsWording(newLead, lead)) return { ...v, dependsOn };
   const rivals = headsOf(w).filter((h) => h !== lead && !extendsWording(h, lead));
-  const heads = [lead, ...(rivals.length ? rivals : others.slice(0, 1))].sort((a, b) => weighted[b] - weighted[a]);
+  const heads = [lead, ...rivals].sort((a, b) => weighted[b] - weighted[a]);
   return {
     kind: "both",
     register,
@@ -524,6 +532,127 @@ export function decideRobust(counts: BySource, weights: Record<string, number>, 
     dependsOn,
     demoted: true,
   };
+}
+
+// ------------------------------------------------ ③ (Phase 2 規則の修正)
+
+/**
+ * The AP Calculus CED split into sections (the same cut as refetch.py
+ * ced_topics): "front" before the Unit 1 opener, "unitN" for a unit opener,
+ * "n.m" for each TOPIC page, "exam" from the exam overview on. The text is
+ * College Board's; only section names and hit counts leave this function's
+ * callers.
+ */
+export function cedSections(text: string): [string, string][] {
+  const first = /^TOPIC 1\.1$/m.exec(text);
+  if (!first) return [["front", text]];
+  const units = [...text.slice(0, first.index).matchAll(/^UNIT 1$/gm)];
+  const start = units.length ? (units[units.length - 1].index ?? 0) : first.index;
+  const end = /^Exam Overview$/m.exec(text.slice(first.index));
+  const stop = end ? first.index + end.index : text.length;
+  const body = text.slice(start, stop);
+  const marks = [
+    ...[...body.matchAll(/^TOPIC (\d{1,2}\.\d{1,2})$/gm)].map((m) => [m.index ?? 0, m[1]] as const),
+    ...[...body.matchAll(/^UNIT (\d{1,2})\b.*$/gm)].map((m) => [m.index ?? 0, `unit${m[1]}`] as const),
+  ].sort((a, b) => a[0] - b[0]);
+  const out: [string, string][] = [["front", text.slice(0, start)]];
+  marks.forEach(([at, name], i) => out.push([name, body.slice(at, i + 1 < marks.length ? marks[i + 1][0] : body.length)]));
+  out.push(["exam", text.slice(stop)]);
+  return out;
+}
+
+/** pdftotext output to countable text: soft hyphens and line-end hyphenation joined. */
+export const cedText = (s: string) => normalize(s.replace(/­/g, "").replace(/-\n/g, ""));
+
+/**
+ * What the reference works call a concept, for the ③ fallback: the CED
+ * (hits per section) and OpenStax (hits in the body of the four books, and
+ * the section titles the wording occurs in).
+ */
+export interface ReferenceHits {
+  /** candidate -> CED section -> hits */
+  ced: Record<string, Record<string, number>>;
+  /** candidate -> hits in the OpenStax body (written corpus) */
+  openstax: Record<string, number>;
+  /** candidate -> OpenStax section titles that contain it */
+  openstaxTitles: Record<string, string[]>;
+}
+
+export const emptyReference = (): ReferenceHits => ({ ced: {}, openstax: {}, openstaxTitles: {} });
+
+/**
+ * Counts each candidate in the references the way terms are counted
+ * (inflection folded, "…" a blank). `ced` is cedSections() of cedText();
+ * `openstax` the normalized OpenStax docs; `titles` their section titles.
+ */
+export function referenceHits(
+  candidates: string[],
+  ced: [string, string][],
+  openstax: string[],
+  titles: string[],
+): ReferenceHits {
+  const out = emptyReference();
+  for (const c of candidates) {
+    const re = termRegex(c);
+    if (!re) continue;
+    for (const [section, text] of ced) {
+      const n = starts(text, re).length;
+      if (n) (out.ced[c] ??= {})[section] = (out.ced[c]?.[section] ?? 0) + n;
+    }
+    const body = openstax.reduce((n, text) => n + starts(text, re).length, 0);
+    if (body) out.openstax[c] = body;
+    const inTitles = [...new Set(titles.filter((t) => starts(normalize(t), re).length > 0))];
+    if (inTitles.length) out.openstaxTitles[c] = inTitles;
+  }
+  return out;
+}
+
+/**
+ * What becomes of an entry the corpus left undecided in both registers
+ * (DECISIONS, Phase 2 規則の修正):
+ *
+ *   no-fixed-expression  mapping near / none and every candidate together has
+ *                        fewer than MIN_TOTAL hits in each register: English
+ *                        has no set way to say it. That is the finding - it
+ *                        does not go to the human. Not for an English name
+ *                        taken over as the Japanese headword (LIATE): there
+ *                        the English name IS the expression, just a rare one
+ *   reference            otherwise the headword is what the CED calls it, or
+ *                        failing that what OpenStax calls it (body or section
+ *                        title). No register is claimed
+ *   undecided            neither reference uses any candidate: a human looks
+ */
+export type Settled =
+  | { kind: "no-fixed-expression"; spoken: number; written: number }
+  | { kind: "reference"; by: "ced" | "openstax"; head: string; where: string[] }
+  | { kind: "undecided" };
+
+export function settleUndecided(
+  entry: { mapping?: string; ja?: string; en?: string },
+  raw: { spoken: number; written: number },
+  ref: ReferenceHits,
+  order: string[],
+): Settled {
+  const { mapping, ja, en } = entry;
+  const borrowed = ja !== undefined && en !== undefined && ja.trim().toLowerCase() === en.trim().toLowerCase();
+  if ((mapping === "near" || mapping === "none") && !borrowed && raw.spoken < MIN_TOTAL && raw.written < MIN_TOTAL) {
+    return { kind: "no-fixed-expression", ...raw };
+  }
+  const best = (score: (c: string) => number) =>
+    order.filter((c) => score(c) > 0).sort((a, b) => score(b) - score(a) || order.indexOf(a) - order.indexOf(b))[0];
+  const cedTotal = (c: string) => Object.values(ref.ced[c] ?? {}).reduce((a, b) => a + b, 0);
+  const ced = best(cedTotal);
+  if (ced) {
+    const sections = Object.keys(ref.ced[ced]);
+    const topics = sections.filter((s) => /^\d/.test(s));
+    return { kind: "reference", by: "ced", head: ced, where: topics.length ? topics : sections };
+  }
+  const os = best((c) => (ref.openstax[c] ?? 0) + (ref.openstaxTitles[c]?.length ?? 0));
+  if (os) {
+    const titles = ref.openstaxTitles[os] ?? [];
+    return { kind: "reference", by: "openstax", head: os, where: titles.length ? titles : [`本文 ${ref.openstax[os]} 件`] };
+  }
+  return { kind: "undecided" };
 }
 
 /**

@@ -9,7 +9,11 @@
  *   pnpm corpus:probe -- --decide --file groups.txt
  *       each block (separated by a blank line or a "# ..." heading) is one
  *       entry's candidates, headword first; prints the verdict per register
- *       exactly as corpus:count + corpus:decide would reach it
+ *       exactly as corpus:count + corpus:decide would reach it. A line
+ *       "@mapping near" in a block gives the entry's mapping ("@ja 極値" its
+ *       Japanese headword); when both
+ *       registers are ③ it prints how the ③ is settled (no fixed expression,
+ *       or the CED / OpenStax headword)
  *   --literal   count as written (phrases); the default counts as terms do:
  *               inflection folded, "…" = a one-to-three-word blank
  *
@@ -29,7 +33,12 @@ import path from "node:path";
 import { ROOT } from "../lib/load.js";
 import {
   balance,
+  cedSections,
+  cedText,
   countEntry,
+  flatten,
+  referenceHits,
+  settleUndecided,
   countPhrase,
   countTerm,
   decideRobust,
@@ -99,13 +108,55 @@ function verdict(v: Verdict): string {
   return `③ ${v.reason} (${v.total.toFixed(1)})`;
 }
 
+const CED = path.join(CORPUS, "ref", "ap-calculus-ab-bc-ced.txt");
+
+/** Source families as the variants' notes name them (DECISIONS, Phase 2 修正: counts per source, mechanically). */
+const FAMILY_NAMES: [RegExp, string][] = [
+  [/^mit-notes$/, "MIT の講義ノート"],
+  [/^mit-/, "MIT OCW"],
+  [/^khan-/, "Khan Academy"],
+  [/^yt:profleonard$/, "Professor Leonard"],
+  [/^yt:organicchem$/, "The Organic Chemistry Tutor"],
+  [/^yt:patrickjmt$/, "patrickJMT"],
+  [/^yt:nancypi$/, "NancyPi"],
+  [/^yt:blackpenredpen$/, "blackpenredpen"],
+  [/^yt:3blue1brown$/, "3Blue1Brown"],
+  [/^openstax-calculus$/, "OpenStax Calculus"],
+  [/^openstax-algtrig$/, "OpenStax Algebra and Trigonometry"],
+  [/^openstax-precalculus$/, "OpenStax Precalculus"],
+  [/^openstax-introstats$/, "OpenStax Introductory Statistics"],
+];
+
+/** "話し言葉で 20 件（Khan Academy 15・MIT OCW 5）" - the breakdown the variants' notes carry. */
+function breakdown(label: string, by: Record<string, number> | undefined): string {
+  const fam: Record<string, number> = {};
+  for (const [src, n] of Object.entries(by ?? {})) {
+    const name = FAMILY_NAMES.find(([re]) => re.test(src))?.[1] ?? src;
+    fam[name] = (fam[name] ?? 0) + n;
+  }
+  const rows = Object.entries(fam).sort((a, b) => b[1] - a[1]);
+  const total = rows.reduce((n, [, k]) => n + k, 0);
+  if (total === 0) return `${label}では 0 件`;
+  if (rows.length === 1) return `${label}で ${total} 件（すべて ${rows[0][0]}）`;
+  const top = rows.slice(0, 3).map(([k, n]) => `${k} ${n}`);
+  const rest = rows.slice(3).reduce((n, [, k]) => n + k, 0);
+  return `${label}で ${total} 件（${top.join("・")}${rest ? ` ほか ${rest}` : ""}）`;
+}
+
 function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
   const words: Record<string, number> = {};
   for (const r of balance(docs).rows) words[r.source] = r.words;
   const weights = sourceWeights(words);
-  for (const block of blocks) {
+  const ced = fs.existsSync(CED) ? cedSections(fs.readFileSync(CED, "utf8")).map(([n, t]) => [n, cedText(t)] as [string, string]) : [];
+  const openstax = docs.filter((d) => d.id.startsWith("openstax-")).map((d) => d.text);
+  const manifest = JSON.parse(fs.readFileSync(MANIFEST, "utf8")) as ManifestEntry[];
+  const titles = manifest.filter((m) => m.id.startsWith("openstax-")).map((m) => m.title.replace(/^.*? - /, ""));
+  for (const raw of blocks) {
+    const mapping = raw.find((l) => l.startsWith("@mapping"))?.split(/\s+/)[1];
+    const block = raw.filter((l) => !l.startsWith("@"));
     const t = countEntry(docs, "terms", block, block[0]);
     console.log(`# ${block[0]}`);
+    const verdicts: Verdict[] = [];
     for (const register of ["spoken", "written"] as const) {
       const counts = t[register];
       const raw = Object.entries(counts)
@@ -114,7 +165,29 @@ function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
         .map(([c, n]) => `${c} ${n}`)
         .join(", ");
       const v = decideRobust(counts, weights, register);
+      verdicts.push(v);
       console.log(`  ${register === "spoken" ? "話" : "書"} ${verdict(v)}   {${raw}}`);
+    }
+    for (const c of new Set([...Object.keys(t.spoken), ...Object.keys(t.written)])) {
+      console.log(`    = ${c}: ${breakdown("話し言葉", t.spoken[c])}、${breakdown("書き言葉", t.written[c])}。`);
+    }
+    const ref = referenceHits(block, ced, openstax, titles);
+    const cedLine = Object.entries(ref.ced).map(([c, by]) => `${c} [${Object.entries(by).map(([k, n]) => `${k}×${n}`).join(" ")}]`);
+    const osLine = block
+      .filter((c) => ref.openstax[c] || ref.openstaxTitles[c])
+      .map((c) => `${c} ${ref.openstax[c] ?? 0}${ref.openstaxTitles[c] ? ` {${ref.openstaxTitles[c].slice(0, 2).join(" | ")}}` : ""}`);
+    console.log(`  CED ${cedLine.join("; ") || "—"}   OpenStax ${osLine.join("; ") || "—"}`);
+    if (verdicts.every((v) => v.kind === "undecided")) {
+      const total = (by: Record<string, Record<string, number>>) => Object.values(flatten(by)).reduce((a, b) => a + b, 0);
+      const ja = raw.find((l) => l.startsWith("@ja"))?.replace(/^@ja\s+/, "");
+      const s = settleUndecided({ mapping, ja, en: block[0] }, { spoken: total(t.spoken), written: total(t.written) }, ref, block);
+      const how =
+        s.kind === "no-fixed-expression"
+          ? "英語に決まった言い方がない"
+          : s.kind === "reference"
+            ? `${s.by === "ced" ? "CED" : "OpenStax"} の呼び方 ${s.head} (${s.where.slice(0, 3).join(", ")})`
+            : `③ のまま${mapping ? "" : "（@mapping なし）"}`;
+      console.log(`  ③ -> ${how}`);
     }
     if (t.merges.length) console.log(`  merged: ${t.merges.map((m) => `${m.from.join(" / ")} -> ${m.into}`).join("; ")}`);
   }
