@@ -1,0 +1,91 @@
+{
+  "id": "derivative-of-a-parametric-curve",
+  "ja": {
+    "term": "媒介変数表示された関数の微分",
+    "reading": "ばいかいへんすうひょうじされたかんすうのびぶん",
+    "alt": [
+      "媒介変数曲線の微分"
+    ]
+  },
+  "en": {
+    "term": "derivatives of parametric equations",
+    "alt": [
+      "derivative of a parametric curve"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "ja.alt の「媒介変数曲線の微分」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "媒介変数表示された曲線で、dy/dx を (dy/dt)/(dx/dt) として求めること。",
+  "definition_en": "Finding dy/dx for a curve given by parametric equations, as (dy/dt)/(dx/dt).",
+  "latex": "\\frac{dy}{dx} = \\frac{dy/dt}{dx/dt}",
+  "spoken_en": "d y d x equals d y d t over d x d t",
+  "examples": [
+    {
+      "en": "For a parametric curve, dy/dx is dy/dt divided by dx/dt.",
+      "ja": "媒介変数表示された曲線では、dy/dx は dy/dt を dx/dt で割ったもの。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find dy/dx for x = t², y = t³ − t at t = 1.",
+      "ja": "x = t², y = t³ − t のとき、t = 1 における dy/dx を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "parametric-equations",
+    "parameter",
+    "chain-rule"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 9.2（derivatives of parametric equations）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "derivatives of parametric equations": 4,
+      "derivative of a parametric curve": 1
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。見出しは CED の呼び方 derivatives of parametric equations（topic 9.2）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

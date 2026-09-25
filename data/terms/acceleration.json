@@ -1,0 +1,92 @@
+{
+  "id": "acceleration",
+  "ja": {
+    "term": "加速度",
+    "reading": "かそくど",
+    "alt": []
+  },
+  "en": {
+    "term": "acceleration",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "速度を時刻で微分したもの。",
+  "definition_en": "The rate of change of velocity with respect to time.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Acceleration is the derivative of velocity, so it's the second derivative of position.",
+      "ja": "加速度は速度の導関数なので、位置の第 2 次導関数。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the acceleration of the particle at t = 1 if v(t) = 3t² − 4.",
+      "ja": "v(t) = 3t² − 4 のとき、t = 1 における加速度を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "velocity",
+    "second-derivative"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 4.2（acceleration）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "acceleration": 221
+    },
+    "written": {
+      "acceleration": 183
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

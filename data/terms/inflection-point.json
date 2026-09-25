@@ -1,0 +1,105 @@
+{
+  "id": "inflection-point",
+  "ja": {
+    "term": "変曲点",
+    "reading": "へんきょくてん",
+    "alt": []
+  },
+  "en": {
+    "term": "inflection point",
+    "alt": [],
+    "variants": [
+      {
+        "term": "point of inflection",
+        "register": "both",
+        "note": "少数の言い方だが、AP の CED は topic 5.6 でこちらを使う。話し言葉で 25 件（Khan Academy 19・blackpenredpen 5・Professor Leonard 1）、書き言葉で 7 件（OpenStax Calculus 5・OpenStax Algebra and Trigonometry 1・MIT の講義ノート 1）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "曲線の凹凸が入れ替わる点。",
+  "definition_en": "A point where a graph changes concavity.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The inflection point is where it switches from concave down to concave up.",
+      "ja": "変曲点は、上に凸から下に凸へ切り替わるところ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the inflection points of f(x) = x⁴ − 6x².",
+      "ja": "f(x) = x⁴ − 6x² の変曲点を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "f″(c) = 0 でも凹凸が入れ替わらなければ変曲点ではない（x⁴ の x = 0）。"
+  ],
+  "related": [
+    "concavity",
+    "second-derivative",
+    "changes-sign"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "変曲点",
+      "en": "Inflection point"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 5.6（point of inflection）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "inflection point": 153,
+      "point of inflection": 25
+    },
+    "written": {
+      "inflection point": 41,
+      "point of inflection": 7
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

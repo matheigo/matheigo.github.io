@@ -1,0 +1,94 @@
+{
+  "id": "implicit-differentiation",
+  "ja": {
+    "term": "陰関数の微分",
+    "reading": "いんかんすうのびぶん",
+    "alt": [
+      "陰関数微分"
+    ]
+  },
+  "en": {
+    "term": "implicit differentiation",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "ja.alt の「陰関数微分」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "x と y の関係式の両辺を x で微分し、y を x の関数とみて dy/dx を求める方法。",
+  "definition_en": "Finding dy/dx by differentiating both sides of an equation in x and y with respect to x, treating y as a function of x.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "With implicit differentiation, every time you differentiate a y, tack on a dy/dx.",
+      "ja": "陰関数の微分では、y を微分するたびに dy/dx を掛ける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use implicit differentiation to find dy/dx for x² + y² = 25.",
+      "ja": "陰関数の微分を用いて、x² + y² = 25 の dy/dx を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "implicit-function",
+    "chain-rule",
+    "logarithmic-differentiation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 3.2（implicit differentiation）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "implicit differentiation": 111
+    },
+    "written": {
+      "implicit differentiation": 49
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

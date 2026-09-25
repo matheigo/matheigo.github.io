@@ -1,0 +1,88 @@
+{
+  "id": "logarithmic-differentiation",
+  "ja": {
+    "term": "対数微分法",
+    "reading": "たいすうびぶんほう",
+    "alt": [
+      "対数微分"
+    ]
+  },
+  "en": {
+    "term": "logarithmic differentiation",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "両辺の対数をとってから微分し、導関数を求める方法。積・商・累乗の多い式や xˣ に使う。",
+  "definition_en": "Differentiating after first taking the natural log of both sides; useful for products, quotients, powers, and functions like xˣ.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For x to the x, use logarithmic differentiation: take ln of both sides first.",
+      "ja": "xˣ には対数微分法を使う。まず両辺の log をとる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use logarithmic differentiation to find dy/dx for y = xˣ.",
+      "ja": "対数微分法を用いて、y = xˣ の dy/dx を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "derivative-of-the-logarithm",
+    "implicit-differentiation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "対数微分法",
+      "en": "Logarithmic differentiation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "logarithmic differentiation": 18
+    },
+    "written": {
+      "logarithmic differentiation": 16
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

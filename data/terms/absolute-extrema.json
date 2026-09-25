@@ -1,0 +1,99 @@
+{
+  "id": "absolute-extrema",
+  "ja": {
+    "term": "最大値・最小値",
+    "reading": "さいだいち・さいしょうち",
+    "alt": [
+      "最大・最小",
+      "絶対極値"
+    ]
+  },
+  "en": {
+    "term": "absolute extrema",
+    "alt": [],
+    "variants": [
+      {
+        "term": "absolute maximum and minimum",
+        "register": "written",
+        "note": "書き言葉の次点。話し言葉では 0 件、書き言葉で 12 件（OpenStax Calculus 6・OpenStax Algebra and Trigonometry 6）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "ja.alt の「絶対極値」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "区間全体（または定義域全体）での最大値と最小値。",
+  "definition_en": "The largest and smallest values a function takes on its whole domain or on a given interval.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "On a closed interval, check the critical points and the endpoints to find the absolute extrema.",
+      "ja": "閉区間では、臨界点と端点を調べて最大値・最小値を求める。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the absolute maximum and minimum values of f(x) = x³ − 3x on [0, 2].",
+      "ja": "区間 [0, 2] における f(x) = x³ − 3x の最大値と最小値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "区間全体の最大・最小には absolute（または global）を付け、極大・極小（local ／ relative）と区別する。"
+  ],
+  "related": [
+    "extreme-value-theorem",
+    "local-extremum",
+    "critical-point"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 5（absolute extrema）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "absolute extrema": 3
+    },
+    "written": {
+      "absolute extrema": 31,
+      "absolute maximum and minimum": 12
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "id": "linear-approximation",
+  "ja": {
+    "term": "1 次の近似式",
+    "reading": "いちじのきんじしき",
+    "alt": [
+      "近似式",
+      "一次近似",
+      "線形近似",
+      "線型近似",
+      "接線近似"
+    ]
+  },
+  "en": {
+    "term": "linear approximation",
+    "alt": [],
+    "variants": [
+      {
+        "term": "linearization",
+        "register": "both",
+        "note": "1 次式 L(x) そのものを指す言い方で、件数は少ない。AP の CED は topic 4.6 で使う。話し言葉で 10 件（MIT OCW 7・Khan Academy 3）、書き言葉で 15 件（MIT の講義ノート 12・OpenStax Calculus 3）。"
+      },
+      {
+        "term": "local linearity",
+        "register": "spoken",
+        "note": "AP の CED（topic 4.6）と Khan Academy の言い方。話し言葉で 8 件（すべて Khan Academy）、書き言葉では 0 件。"
+      },
+      {
+        "term": "tangent line approximation",
+        "register": "both",
+        "note": "少数の言い方。話し言葉で 4 件（すべて MIT OCW）、書き言葉で 10 件（MIT の講義ノート 6・OpenStax Calculus 4）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "ja.alt の「接線近似」は日本の教科書に無い、本プロジェクトの訳語（tangent line approximation の訳）。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "接線を使って、x = a の近くで f(x) ≈ f(a) + f′(a)(x − a) と近似すること、またその式。",
+  "definition_en": "Approximating f(x) near x = a by its tangent line: f(x) ≈ f(a) + f′(a)(x − a).",
+  "latex": "f(x) \\approx f(a) + f'(a)(x - a)",
+  "spoken_en": "f of x is approximately f of a plus f prime of a times x minus a",
+  "examples": [
+    {
+      "en": "Near x = a, the tangent line is a good estimate. That's the linear approximation.",
+      "ja": "x = a の近くでは接線がよい近似になる。それが 1 次の近似式。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use a linear approximation to estimate √4.1.",
+      "ja": "1 次の近似式を用いて √4.1 の近似値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "1 次式 L(x) = f(a) + f′(a)(x − a) を linearization と呼ぶ教材もある。"
+  ],
+  "related": [
+    "slope-of-the-tangent-line",
+    "small-change",
+    "differential"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 4.6（linearization ／ local linearity）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "linear approximation": 78,
+      "tangent line approximation": 4,
+      "linearization": 10,
+      "local linearity": 8
+    },
+    "written": {
+      "linear approximation": 101,
+      "linearization": 15,
+      "tangent line approximation": 10
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

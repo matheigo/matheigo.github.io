@@ -1,0 +1,107 @@
+{
+  "id": "limit-laws",
+  "ja": {
+    "term": "極限の性質",
+    "reading": "きょくげんのせいしつ",
+    "alt": []
+  },
+  "en": {
+    "term": "properties of limits",
+    "alt": [],
+    "variants": [
+      {
+        "term": "limit laws",
+        "register": "written",
+        "note": "OpenStax Calculus の書き方（節の名前 The Limit Laws）で、書き言葉で最も多い。話し言葉では 0 件、書き言葉で 66 件（すべて OpenStax Calculus）。"
+      },
+      {
+        "term": "limit properties",
+        "register": "spoken",
+        "note": "Khan Academy の言い方。話し言葉で 14 件（すべて Khan Academy）、書き言葉で 1 件（すべて OpenStax Calculus）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "和・差・積・商・定数倍の極限が、それぞれの極限の和・差・積・商・定数倍になるという性質。",
+  "definition_en": "The rules that the limit of a sum, difference, product, quotient, or constant multiple is the sum, difference, product, quotient, or constant multiple of the limits.",
+  "latex": "\\lim_{x \\to a} (f(x) + g(x)) = \\lim_{x \\to a} f(x) + \\lim_{x \\to a} g(x)",
+  "spoken_en": "the limit of f plus g is the limit of f plus the limit of g",
+  "examples": [
+    {
+      "en": "By the limit properties, you can split this into two limits.",
+      "ja": "極限の性質より、これは 2 つの極限に分けられる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the limit laws to evaluate lim_{x→2} (3x² − x).",
+      "ja": "極限の性質を用いて lim_{x→2} (3x² − x) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "商の性質は、分母の極限が 0 でないときだけ使える。"
+  ],
+  "related": [
+    "limit",
+    "find-the-limit"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 1.5（properties of limits）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "limit properties": 14,
+      "properties of limits": 5
+    },
+    "written": {
+      "properties of limits": 15,
+      "limit laws": 66,
+      "limit properties": 1
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

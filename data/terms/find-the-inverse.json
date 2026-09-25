@@ -1,0 +1,99 @@
+{
+  "id": "find-the-inverse",
+  "ja": {
+    "term": "逆関数を求める",
+    "reading": "ぎゃくかんすうをもとめる",
+    "alt": []
+  },
+  "en": {
+    "term": "find the inverse",
+    "alt": [
+      "find f inverse"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "関数 y = f(x) の逆関数 f⁻¹(x) を求める。",
+  "definition_en": "To find the inverse function f⁻¹ of a function f.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To find the inverse, swap x and y and solve for y.",
+      "ja": "逆関数を求めるには、x と y を入れ替えて y について解く。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the inverse of f(x) = 2x + 3.",
+      "ja": "f(x) = 2x + 3 の逆関数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "f⁻¹(x) は f inverse of x と読む。1/f(x) ではない。"
+  ],
+  "related": [
+    "one-to-one",
+    "composite-function",
+    "find-the-domain"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "find the inverse": 36
+    },
+    "written": {
+      "find the inverse": 83
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

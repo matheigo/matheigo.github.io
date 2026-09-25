@@ -1,0 +1,82 @@
+{
+  "id": "nth-derivative",
+  "ja": {
+    "term": "第 n 次導関数",
+    "reading": "だいえぬじどうかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "nth derivative",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "関数を n 回微分してできる導関数 f⁽ⁿ⁾(x)。",
+  "definition_en": "The derivative obtained by differentiating n times, f⁽ⁿ⁾(x).",
+  "latex": "f^{(n)}(x)",
+  "spoken_en": "the nth derivative of f of x",
+  "examples": [
+    {
+      "en": "The nth derivative of e to the x is still e to the x.",
+      "ja": "eˣ の第 n 次導関数は eˣ のまま。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the nth derivative of f(x) = 1/x.",
+      "ja": "f(x) = 1/x の第 n 次導関数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "f⁽ⁿ⁾(x) の (n) は累乗ではなく微分の回数。"
+  ],
+  "related": [
+    "higher-order-derivative",
+    "second-derivative"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "nth derivative": 34
+    },
+    "written": {
+      "nth derivative": 5
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "yt:3blue1brown",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-24"
+  }
+}

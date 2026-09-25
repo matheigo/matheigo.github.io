@@ -1,0 +1,108 @@
+{
+  "id": "squeeze",
+  "ja": {
+    "term": "はさむ",
+    "reading": "はさむ",
+    "alt": []
+  },
+  "en": {
+    "term": "squeeze",
+    "alt": [],
+    "variants": [
+      {
+        "term": "sandwich",
+        "register": "spoken",
+        "note": "Khan Academy の言い方。話し言葉で 15 件（Khan Academy 14・3Blue1Brown 1）、書き言葉で 4 件（すべて OpenStax Algebra and Trigonometry）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "求めたい式を、同じ極限をもつ 2 つの式の間にはさんで、極限を求める（はさみうちの原理を使う）。",
+  "definition_en": "To trap an expression between two others with the same limit, so that its limit is forced (the squeeze theorem).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We can squeeze x² sin(1/x) between −x² and x².",
+      "ja": "x² sin(1/x) は −x² と x² ではさめる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Squeeze the sequence between 0 and 1/n to show that it converges to 0.",
+      "ja": "数列を 0 と 1/n ではさんで、0 に収束することを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "件数には名詞 squeeze theorem の squeeze も含まれる。"
+  ],
+  "related": [
+    "squeeze-theorem",
+    "comparison-for-divergence",
+    "limit"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 1.8（squeeze theorem）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "squeeze": 76,
+      "sandwich": 15
+    },
+    "written": {
+      "squeeze": 13,
+      "sandwich": 4
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

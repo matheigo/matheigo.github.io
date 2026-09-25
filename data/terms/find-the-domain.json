@@ -1,0 +1,113 @@
+{
+  "id": "find-the-domain",
+  "ja": {
+    "term": "定義域を求める",
+    "reading": "ていぎいきをもとめる",
+    "alt": []
+  },
+  "en": {
+    "term": "find the domain",
+    "alt": [],
+    "variants": [
+      {
+        "term": "determine the domain",
+        "register": "written",
+        "note": "少数の書き方。話し言葉で 1 件、書き言葉で 26 件（OpenStax Algebra and Trigonometry 14・OpenStax Calculus 12）。"
+      },
+      {
+        "term": "state the domain",
+        "register": "written",
+        "note": "少数の書き方。話し言葉で 3 件（Khan Academy 2・NancyPi 1）、書き言葉で 26 件（OpenStax Algebra and Trigonometry 21・OpenStax Calculus 5）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I",
+      "数III"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2",
+      "Precalculus",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "関数の式が意味をもつ x の値の範囲を求める。",
+  "definition_en": "To work out the set of x-values for which a function is defined.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To find the domain, look for anything that would make you divide by zero or take the square root of a negative.",
+      "ja": "定義域を求めるには、0 で割るところや負の数の平方根になるところを探す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the domain of f(x) = √(x − 2)/(x − 5).",
+      "ja": "f(x) = √(x − 2)/(x − 5) の定義域を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "答えは区間の記法（interval notation）で [2, 5) ∪ (5, ∞) のように書くことがある。"
+  ],
+  "related": [
+    "radical-function",
+    "rational-function",
+    "find-the-inverse"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "find the domain": 40,
+      "state the domain": 3,
+      "determine the domain": 1
+    },
+    "written": {
+      "find the domain": 101,
+      "determine the domain": 26,
+      "state the domain": 26
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.02",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

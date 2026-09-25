@@ -1,0 +1,101 @@
+{
+  "id": "velocity",
+  "ja": {
+    "term": "速度",
+    "reading": "そくど",
+    "alt": []
+  },
+  "en": {
+    "term": "velocity",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "位置を時刻で微分したもの。向き（符号）を含む。",
+  "definition_en": "The rate of change of position with respect to time, including direction (sign).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Velocity is the derivative of position, and negative velocity means it's moving to the left.",
+      "ja": "速度は位置の導関数で、速度が負なら左に動いている。",
+      "register": "spoken"
+    },
+    {
+      "en": "The position of a particle is s(t) = t³ − 6t². Find its velocity and acceleration at t = 2.",
+      "ja": "点の位置が s(t) = t³ − 6t² のとき、t = 2 における速度と加速度を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "velocity は向きを含み、負にもなる。速さ（大きさ）は speed = |v|。"
+  ],
+  "related": [
+    "acceleration",
+    "instantaneous-velocity",
+    "derivative"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "速度",
+      "en": "Velocity"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 4.2（velocity）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "velocity": 902
+    },
+    "written": {
+      "velocity": 622
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

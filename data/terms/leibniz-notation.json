@@ -1,0 +1,99 @@
+{
+  "id": "leibniz-notation",
+  "ja": {
+    "term": "ライプニッツの記法",
+    "reading": "らいぷにっつのきほう",
+    "alt": []
+  },
+  "en": {
+    "term": "Leibniz notation",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "notation"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "導関数を dy/dx、d/dx f(x) のように分数の形で書く記法。",
+  "definition_en": "Writing derivatives as ratios of differentials, such as dy/dx and d/dx f(x).",
+  "latex": "\\frac{dy}{dx}",
+  "spoken_en": "d y d x",
+  "examples": [
+    {
+      "en": "In Leibniz notation, the derivative is dy/dx, and you say it 'dee y dee x.'",
+      "ja": "ライプニッツの記法では導関数は dy/dx で、d y d x と読む。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the chain rule in Leibniz notation: dy/dx = (dy/du)(du/dx).",
+      "ja": "合成関数の微分をライプニッツの記法で書くと dy/dx = (dy/du)(du/dx)。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "dy/dx は over を入れずに d y d x と読むことが多い（用例コーパスの話し言葉で dy dx 140 件、dy over dx 20 件）。"
+  ],
+  "related": [
+    "prime-notation",
+    "derivative",
+    "differential"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ライプニッツの記法",
+      "en": "Leibniz's notation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 3（Leibniz notation）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "Leibniz notation": 5
+    },
+    "written": {
+      "Leibniz notation": 6
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは CED の呼び方 Leibniz notation（unit3・unit9）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

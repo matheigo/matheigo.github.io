@@ -1,0 +1,93 @@
+{
+  "id": "differential",
+  "ja": {
+    "term": "微分 dy",
+    "reading": "びぶんでぃーわい",
+    "alt": []
+  },
+  "en": {
+    "term": "differential",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "dy = f′(x) dx で定める量 dy（と dx）。Δy の近似に使う。",
+  "definition_en": "The quantity dy = f′(x) dx (together with dx), used to approximate Δy.",
+  "latex": "dy = f'(x)\\,dx",
+  "spoken_en": "d y equals f prime of x d x",
+  "examples": [
+    {
+      "en": "The differential dy is f prime of x times dx.",
+      "ja": "微分 dy は f′(x) に dx を掛けたもの。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the differential dy for y = x² and evaluate it when x = 3 and dx = 0.1.",
+      "ja": "y = x² の微分 dy を求め、x = 3、dx = 0.1 のときの値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスの differential の件数の大半は、differential equation（微分方程式）の differential。"
+  ],
+  "related": [
+    "linear-approximation",
+    "small-change",
+    "leibniz-notation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "differential": 1210
+    },
+    "written": {
+      "differential": 713
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

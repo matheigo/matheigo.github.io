@@ -1,0 +1,99 @@
+{
+  "id": "quotient-rule",
+  "ja": {
+    "term": "商の微分",
+    "reading": "しょうのびぶん",
+    "alt": [
+      "商の微分法"
+    ]
+  },
+  "en": {
+    "term": "quotient rule",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "商の導関数 {f(x)/g(x)}′ = {f′(x)g(x) − f(x)g′(x)}/{g(x)}² を与える公式。",
+  "definition_en": "The rule (f/g)′ = (f′g − fg′)/g² for the derivative of a quotient.",
+  "latex": "\\left(\\frac{f}{g}\\right)' = \\frac{f'g - fg'}{g^2}",
+  "spoken_en": "the derivative of f over g is f prime g minus f g prime, over g squared",
+  "examples": [
+    {
+      "en": "With the quotient rule, the minus sign means the order matters.",
+      "ja": "商の微分では引き算があるので、順番が大事。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the quotient rule to differentiate y = (x + 1)/(x − 1).",
+      "ja": "商の微分を用いて y = (x + 1)/(x − 1) を微分せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "product-rule",
+    "chain-rule"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "商の微分法則",
+      "en": "Quotient rule"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 2.9（quotient rule）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "quotient rule": 157
+    },
+    "written": {
+      "quotient rule": 107
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

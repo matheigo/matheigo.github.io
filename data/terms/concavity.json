@@ -1,0 +1,94 @@
+{
+  "id": "concavity",
+  "ja": {
+    "term": "曲線の凹凸",
+    "reading": "きょくせんのおうとつ",
+    "alt": [
+      "凹凸"
+    ]
+  },
+  "en": {
+    "term": "concavity",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "曲線が下に凸か上に凸かという性質。f″(x) の符号で調べる。",
+  "definition_en": "Whether a graph bends upward (concave up) or downward (concave down); found from the sign of f″(x).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A positive second derivative means concave up, like a cup.",
+      "ja": "第 2 次導関数が正なら下に凸（カップの形）。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine the intervals of concavity of f(x) = x³ − 3x².",
+      "ja": "f(x) = x³ − 3x² の凹凸を調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の「下に凸」は concave up、「上に凸」は concave down。convex upward と直訳しても通じにくい。",
+    "f″(x) > 0 は f double prime of x is positive と読む。"
+  ],
+  "related": [
+    "second-derivative",
+    "inflection-point",
+    "check-the-concavity"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 5.6（concavity）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "concavity": 59
+    },
+    "written": {
+      "concavity": 40
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

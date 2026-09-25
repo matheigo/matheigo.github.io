@@ -104,6 +104,13 @@ describe("countTerm", () => {
   });
 });
 
+describe("short stems", () => {
+  it("does not fold a three-letter word down to two letters", () => {
+    expect(countTerm("the pivots d one up to dn. the limit is dne.", "DNE")).toBe(1);
+    expect(countTerm("let us use it. we used it.", "use")).toBe(2);
+  });
+});
+
 describe("irregular plurals", () => {
   it("counts local extrema as local extremum", () => {
     expect(countTerm("find the local extrema. a local extremum is", "local extremum")).toBe(2);

@@ -1,0 +1,81 @@
+{
+  "id": "rolles-theorem",
+  "ja": {
+    "term": "ロルの定理",
+    "reading": "ろるのていり",
+    "alt": []
+  },
+  "en": {
+    "term": "Rolle's theorem",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "analysis"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "f が [a, b] で連続、(a, b) で微分可能で f(a) = f(b) なら、f′(c) = 0 となる c が a と b の間にあるという定理。",
+  "definition_en": "If f is continuous on [a, b], differentiable on (a, b), and f(a) = f(b), then f′(c) = 0 for some c between a and b.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Rolle's theorem is just the mean value theorem when both ends are at the same height.",
+      "ja": "ロルの定理は、両端の高さが同じときの平均値の定理にすぎない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use Rolle's theorem to show that x³ + x − 1 = 0 has exactly one real root.",
+      "ja": "ロルの定理を用いて、x³ + x − 1 = 0 の実数解がちょうど 1 つであることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "mean-value-theorem"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ロルの定理",
+      "en": "Rolle's theorem"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "Rolle's theorem": 1
+    },
+    "written": {
+      "Rolle's theorem": 28
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

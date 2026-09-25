@@ -1,0 +1,108 @@
+{
+  "id": "mean-value-theorem",
+  "ja": {
+    "term": "平均値の定理",
+    "reading": "へいきんちのていり",
+    "alt": []
+  },
+  "en": {
+    "term": "mean value theorem",
+    "alt": [],
+    "variants": [
+      {
+        "term": "MVT",
+        "register": "written",
+        "note": "略称。話し言葉で 1 件、書き言葉で 7 件。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "analysis"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "f が [a, b] で連続、(a, b) で微分可能なら、f′(c) = (f(b) − f(a))/(b − a) となる c が a と b の間にあるという定理。",
+  "definition_en": "If f is continuous on [a, b] and differentiable on (a, b), then f′(c) = (f(b) − f(a))/(b − a) for some c between a and b.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The mean value theorem says that somewhere the tangent slope equals the secant slope.",
+      "ja": "平均値の定理は、どこかで接線の傾きが割線の傾きに等しくなると言っている。",
+      "register": "spoken"
+    },
+    {
+      "en": "Verify that f(x) = x² satisfies the hypotheses of the mean value theorem on [0, 2], and find c.",
+      "ja": "f(x) = x² が [0, 2] で平均値の定理の仮定を満たすことを確かめ、c を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "apply the mean value theorem",
+      "ja": "平均値の定理を適用する"
+    }
+  ],
+  "pitfalls": [],
+  "related": [
+    "rolles-theorem",
+    "average-rate-of-change",
+    "slope-of-the-tangent-line"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "平均値の定理",
+      "en": "Mean value theorem"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 5.1（mean value theorem）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "mean value theorem": 130,
+      "MVT": 1,
+      "apply the mean value theorem": 4
+    },
+    "written": {
+      "mean value theorem": 81,
+      "apply the mean value theorem": 4,
+      "MVT": 7
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

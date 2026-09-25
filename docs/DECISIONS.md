@@ -245,3 +245,9 @@
 - 2026-09-24 | 2 | 候補表現に、別の候補の先頭部分だけのもの（slope of the tangent は slope of the tangent line の先頭）を入れない | 同じ出現に両方が当たり、首位を割る ② ができる（probe で slope of the tangent 284 ／ slope of the tangent line 281）
 - 2026-09-24 | 2 | 見出しの日本語を台帳から変えた語: first-derivative-test は節の名前「関数の増減と極値」から訳語「第 1 次導関数判定法」へ（「判定法」は比較判定法と同じ訳し方）。ja.alt は、別の意味の語（対数関数の性質、接点の座標、関数の平均変化率、f′(x)=0 となる x）を外した | 節の名前は見出しにしない。ja.alt は同じ概念の別名だけ
 - 2026-09-24 | 2 | curriculum の term_refs は、既に入っている順を変えずに、新しい語を台帳の順で後ろに足す | 台帳の順に並べ直すと、積分の単元の term_refs の順まで変わる。数B 統計的な推測に probability-density-function が入っていなかった（前の修正の抜け）のもこのとき足した
+- 2026-09-24 | 2 | terms の件数で、3 文字の語の語幹が 2 文字になる形（DNE → dn、use → us）は作らない（lib.ts の inflections） | DNE が線形代数の講義の pivot dₙ（dn）に当たり、話し言葉の DNE が 24 件（うち MIT OCW 18.06 が 10 件）と数えられていた。直すと 6 件。既存の語で変わったのは as-n-approaches-infinity の as n goes to infinity（79 → 78、判定は同じ）だけ
+- 2026-09-24 | 2 | 候補表現のうち、ほかの候補を中に含むもの（the limit of sin x over x と sine x over x）は同じ出現を 2 回数えるので、見出しをどちらか一方にした（limit-of-sine-x-over-x の en.term は sin x over x） | 先頭部分の決定（slope of the tangent）と同じ理由。含む関係は sameWording の統合の対象外で、コードでは直していない（コロケーションは見出し語を含むのが前提のため）
+- 2026-09-24 | 2 | limit-laws の候補から limit theorems を外した | 統計の central limit theorem(s) に当たり、書き言葉 72 件がすべて OpenStax Introductory Statistics だった
+- 2026-09-24 | 2 | indeterminate-form の候補に 0/0 などの読み（zero over zero）を入れず、例文と pitfalls に書いた | 不定形の一種であって同じ概念の別の言い方ではなく、入れると ② に割れる
+- 2026-09-24 | 2 | find-the-asymptotes の en.term は、コーパスの首位 find the vertical asymptotes にし、mapping near と mapping_note で「英語は垂直・水平を分けて求める」と書いた | 日本の「漸近線を求める」に 1 対 1 の英語の指示がない（find the asymptotes は 1 件）。見出しの範囲が狭くなることは mapping_note で補う
+- 2026-09-24 | 2 | approaches（〜に限りなく近づく）の話し言葉の ① goes to（27,241 件）と bounded（有界）、differential（微分 dy）、divergence（発散）、squeeze（はさむ）の件数には、別の意味の同じ語が混ざる。候補を変えても分けられないので、判定はそのまま使い、pitfalls と variants の note にそう書いた | 語そのものの頻度としては事実。別の意味を除く方法は照合の規則にない

@@ -1,0 +1,104 @@
+{
+  "id": "implicit-function",
+  "ja": {
+    "term": "陰関数",
+    "reading": "いんかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "implicitly defined function",
+    "alt": [
+      "implicit function",
+      "implicit curve"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "F(x, y) = 0 の形の式によって、y が x の関数として間接的に定まるもの。",
+  "definition_en": "A function y of x given indirectly by an equation F(x, y) = 0 rather than by a formula y = f(x).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "x squared plus y squared equals 25 isn't a function, but near most points it defines y implicitly.",
+      "ja": "x² + y² = 25 は関数ではないが、ほとんどの点の近くでは y を陰関数として定める。",
+      "register": "spoken"
+    },
+    {
+      "en": "The equation x² + xy + y² = 7 defines y as an implicitly defined function of x.",
+      "ja": "方程式 x² + xy + y² = 7 は、y を x の陰関数として定める。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "AP の CED は implicit function ではなく implicitly defined function と書く（topic 3.2・5.12）。"
+  ],
+  "related": [
+    "implicit-differentiation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "陰関数",
+      "en": "Implicit function"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 3.2・5.12（implicitly defined function）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "implicitly defined function": 2,
+      "implicit function": 3,
+      "implicit curve": 2
+    },
+    "written": {
+      "implicitly defined function": 2,
+      "implicit function": 3
+    },
+    "sources": [
+      "mit-18.01",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。見出しは CED の呼び方 implicitly defined function（topic 3.2・topic 5.12）。register は主張しない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

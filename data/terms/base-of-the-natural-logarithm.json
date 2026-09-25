@@ -1,0 +1,104 @@
+{
+  "id": "base-of-the-natural-logarithm",
+  "ja": {
+    "term": "自然対数の底",
+    "reading": "しぜんたいすうのてい",
+    "alt": [
+      "e",
+      "ネイピア数"
+    ]
+  },
+  "en": {
+    "term": "the number e",
+    "alt": [
+      "base of the natural logarithm"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "lim_{h→0} (1 + h)^(1/h) で定まる無理数 e ≈ 2.718。自然対数の底。",
+  "definition_en": "The irrational number e ≈ 2.718, the limit of (1 + 1/n)ⁿ as n → ∞; the base of the natural logarithm.",
+  "latex": "e = \\lim_{n \\to \\infty} \\left(1 + \\frac{1}{n}\\right)^n",
+  "spoken_en": "e equals the limit as n approaches infinity of one plus one over n, to the n",
+  "examples": [
+    {
+      "en": "The number e is about 2.718, and e to the x is its own derivative.",
+      "ja": "e はおよそ 2.718 で、eˣ は微分しても eˣ のまま。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that lim_{h→0} (1 + h)^(1/h) = e.",
+      "ja": "lim_{h→0} (1 + h)^(1/h) = e を示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "Euler's number とも言う（用例コーパスでは 1 件）。",
+    "日本の数III は自然対数を log x と書くが、米国の教科書は ln x と書く。"
+  ],
+  "related": [
+    "derivative-of-the-exponential-function",
+    "derivative-of-the-logarithm",
+    "properties-of-logarithms"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ネイピア数",
+      "en": "E (mathematical constant)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "the number e": 38
+    },
+    "written": {
+      "the number e": 23
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

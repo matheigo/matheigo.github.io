@@ -1,0 +1,111 @@
+{
+  "id": "parametric-equations",
+  "ja": {
+    "term": "媒介変数表示",
+    "reading": "ばいかいへんすうひょうじ",
+    "alt": [
+      "媒介変数方程式"
+    ]
+  },
+  "en": {
+    "term": "parametric equations",
+    "alt": [],
+    "variants": [
+      {
+        "term": "parametric curve",
+        "register": "both",
+        "note": "曲線のほうを指す言い方で、件数は少ない。話し言葉で 11 件（MIT OCW 6・patrickJMT 4・Khan Academy 1）、書き言葉で 31 件（OpenStax Calculus 29・OpenStax Algebra and Trigonometry 1・MIT の講義ノート 1）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "ja.alt の「媒介変数方程式」は日本の教科書に無い、本プロジェクトの訳語。",
+  "domains": [
+    "functions",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III",
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "曲線上の点の座標 x, y を、媒介変数 t の関数 x = f(t), y = g(t) で表したもの。",
+  "definition_en": "A pair of equations x = f(t), y = g(t) that describe a curve in terms of a parameter t.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "With parametric equations, x and y both depend on t, like x = cos t, y = sin t.",
+      "ja": "媒介変数表示では、x = cos t, y = sin t のように x も y も t で決まる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Sketch the curve given by the parametric equations x = t², y = t − 1.",
+      "ja": "媒介変数表示 x = t², y = t − 1 で表される曲線をかけ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語は 2 つの式の組として複数形 parametric equations で言う。"
+  ],
+  "related": [
+    "parameter",
+    "derivative-of-a-parametric-curve"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 9.1（parametric equations）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "parametric curve": 11,
+      "parametric equations": 43
+    },
+    "written": {
+      "parametric equations": 258,
+      "parametric curve": 31
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

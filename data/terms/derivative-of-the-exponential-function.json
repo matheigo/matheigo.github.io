@@ -1,0 +1,99 @@
+{
+  "id": "derivative-of-the-exponential-function",
+  "ja": {
+    "term": "指数関数の導関数",
+    "reading": "しすうかんすうのどうかんすう",
+    "alt": [
+      "eˣ の導関数"
+    ]
+  },
+  "en": {
+    "term": "derivative of e to the x",
+    "alt": [],
+    "variants": [
+      {
+        "term": "derivative of the exponential function",
+        "register": "written",
+        "note": "書き言葉の言い方だが、件数は少ない。話し言葉で 2 件、書き言葉で 1 件（すべて OpenStax Calculus）。"
+      }
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の「指数関数の導関数」は (eˣ)′ = eˣ と (aˣ)′ = aˣ log a をまとめて言う。英語の授業では derivative of e to the x のように関数ごとに言う（用例コーパスの話し言葉で 27 件、derivative of the exponential function は 2 件）。",
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "(eˣ)′ = eˣ、(aˣ)′ = aˣ log a などの、指数関数の微分の公式。",
+  "definition_en": "The formulas for differentiating exponential functions: (eˣ)′ = eˣ and (aˣ)′ = aˣ ln a.",
+  "latex": "\\frac{d}{dx}e^x = e^x",
+  "spoken_en": "the derivative of e to the x is e to the x",
+  "examples": [
+    {
+      "en": "The derivative of e to the x is just e to the x.",
+      "ja": "eˣ の導関数は eˣ のまま。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the derivative of f(x) = 2ˣ.",
+      "ja": "f(x) = 2ˣ の導関数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書は aˣ log a と書くが、米国の教科書は aˣ ln a と書く（log は常用対数を指すことがある）。"
+  ],
+  "related": [
+    "base-of-the-natural-logarithm",
+    "derivative-of-the-logarithm",
+    "chain-rule"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "derivative of e to the x": 27,
+      "derivative of the exponential function": 2
+    },
+    "written": {
+      "derivative of the exponential function": 1
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

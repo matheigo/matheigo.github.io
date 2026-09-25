@@ -1,0 +1,79 @@
+{
+  "id": "monotonic",
+  "ja": {
+    "term": "単調",
+    "reading": "たんちょう",
+    "alt": []
+  },
+  "en": {
+    "term": "monotone",
+    "alt": [
+      "monotonic"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "analysis",
+    "sequences"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "definition_ja": "増加し続けるか、減少し続けること。",
+  "definition_en": "Always increasing or always decreasing.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If a sequence is monotone and bounded, it has to converge.",
+      "ja": "数列が単調で有界なら、必ず収束する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the sequence aₙ = 1/n is monotone.",
+      "ja": "数列 aₙ = 1/n が単調かどうかを調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「有界で単調な数列は収束する」は、OpenStax Calculus Volume 2 では Monotone Convergence Theorem と呼ぶ。monotonic は用例コーパスに 0 件。"
+  ],
+  "related": [
+    "bounded",
+    "is-monotonically-increasing",
+    "convergence"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "written": {
+      "monotone": 34
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-24"
+  }
+}

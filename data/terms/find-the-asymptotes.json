@@ -1,0 +1,98 @@
+{
+  "id": "find-the-asymptotes",
+  "ja": {
+    "term": "グラフの漸近線を求める",
+    "reading": "ぐらふのぜんきんせんをもとめる",
+    "alt": []
+  },
+  "en": {
+    "term": "find the vertical asymptotes",
+    "alt": [
+      "find the asymptotes"
+    ],
+    "variants": [
+      {
+        "term": "find the horizontal asymptote",
+        "register": "both",
+        "note": "水平な漸近線を求めるときの言い方。話し言葉で 4 件（すべて NancyPi）、書き言葉で 2 件（すべて OpenStax Algebra and Trigonometry）。"
+      }
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "日本の「漸近線を求める」は 1 つの指示だが、英語の問題や説明では垂直な漸近線（vertical asymptotes）と水平な漸近線（horizontal asymptote）を分けて求めることが多い（用例コーパスで find the vertical asymptotes は話し言葉 10 件・書き言葉 7 件、find the asymptotes は 1 件）。書き言葉は件数が足りず、register は話し言葉だけ主張する。",
+  "domains": [
+    "functions",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus AB"
+    ]
+  },
+  "definition_ja": "関数のグラフが限りなく近づく直線（漸近線）を求める。",
+  "definition_en": "To find the lines that a graph approaches, such as its vertical and horizontal asymptotes.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To find the vertical asymptotes, set the denominator equal to zero.",
+      "ja": "垂直な漸近線を求めるには、分母 = 0 とおく。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the vertical asymptotes and the horizontal asymptote of f(x) = (x + 1)/(x² − 4).",
+      "ja": "f(x) = (x + 1)/(x² − 4) のグラフの漸近線を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "斜めの漸近線は slant asymptote（oblique asymptote）と言う。"
+  ],
+  "related": [
+    "rational-function",
+    "limit"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "find the asymptotes": 1,
+      "find the vertical asymptotes": 10,
+      "find the horizontal asymptote": 4
+    },
+    "written": {
+      "find the vertical asymptotes": 7,
+      "find the horizontal asymptote": 2
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

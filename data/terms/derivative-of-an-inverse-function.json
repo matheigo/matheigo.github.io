@@ -1,0 +1,98 @@
+{
+  "id": "derivative-of-an-inverse-function",
+  "ja": {
+    "term": "逆関数の微分",
+    "reading": "ぎゃくかんすうのびぶん",
+    "alt": []
+  },
+  "en": {
+    "term": "derivative of the inverse",
+    "alt": [],
+    "variants": [
+      {
+        "term": "derivative of an inverse function",
+        "register": "written",
+        "note": "AP の CED（topic 3.3）と OpenStax Calculus の書き方。件数は少ない。話し言葉で 2 件（Khan Academy 1・The Organic Chemistry Tutor 1）、書き言葉で 2 件（すべて OpenStax Calculus）。"
+      }
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "逆関数の導関数。dx/dy = 1/(dy/dx) の関係から求める。",
+  "definition_en": "The derivative of an inverse function, found from the relation dx/dy = 1/(dy/dx).",
+  "latex": "(f^{-1})'(a) = \\frac{1}{f'(f^{-1}(a))}",
+  "spoken_en": "the derivative of f inverse at a is one over f prime of f inverse of a",
+  "examples": [
+    {
+      "en": "The derivative of the inverse at 3 is one over f prime at the point where f equals 3.",
+      "ja": "逆関数の x = 3 での微分係数は、f の値が 3 になる点での f′ の逆数。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find (f⁻¹)′(5) if f(x) = x³ + x + 3.",
+      "ja": "f(x) = x³ + x + 3 のとき、(f⁻¹)′(5) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "find-the-inverse",
+    "chain-rule",
+    "derivative"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 3.3（derivative of an inverse function）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "derivative of the inverse": 22,
+      "derivative of an inverse function": 2
+    },
+    "written": {
+      "derivative of the inverse": 5,
+      "derivative of an inverse function": 2
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-24"
+  }
+}

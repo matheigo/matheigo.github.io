@@ -1,0 +1,106 @@
+{
+  "id": "intermediate-value-theorem",
+  "ja": {
+    "term": "中間値の定理",
+    "reading": "ちゅうかんちのていり",
+    "alt": []
+  },
+  "en": {
+    "term": "intermediate value theorem",
+    "alt": [],
+    "variants": [
+      {
+        "term": "IVT",
+        "register": "written",
+        "note": "略称。話し言葉で 2 件、書き言葉で 7 件。AP の CED も topic 1.16 で IVT と略す。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "analysis"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "f が [a, b] で連続で、k が f(a) と f(b) の間の値なら、f(c) = k となる c が a と b の間に少なくとも 1 つあるという定理。",
+  "definition_en": "If f is continuous on [a, b] and k is between f(a) and f(b), then f(c) = k for at least one c between a and b.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "By the intermediate value theorem, there has to be a root between 1 and 2.",
+      "ja": "中間値の定理より、1 と 2 の間に解が必ずある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the intermediate value theorem to show that x³ + x − 1 = 0 has a solution in (0, 1).",
+      "ja": "中間値の定理を用いて、x³ + x − 1 = 0 が (0, 1) に解をもつことを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "AP の CED は topic 1.16 で扱う。定理を使うときは、条件（f is continuous on [a, b]）を先に書く。"
+  ],
+  "related": [
+    "continuous-function",
+    "extreme-value-theorem",
+    "mean-value-theorem"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "中間値の定理",
+      "en": "Intermediate value theorem"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 1.16（intermediate value theorem）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "intermediate value theorem": 53,
+      "IVT": 2
+    },
+    "written": {
+      "intermediate value theorem": 34,
+      "IVT": 7
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

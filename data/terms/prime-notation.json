@@ -1,0 +1,91 @@
+{
+  "id": "prime-notation",
+  "ja": {
+    "term": "ラグランジュの記法",
+    "reading": "らぐらんじゅのきほう",
+    "alt": []
+  },
+  "en": {
+    "term": "prime notation",
+    "alt": [
+      "Lagrange notation",
+      "Lagrange's notation"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "notation"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "導関数を f′(x)、f″(x) のようにプライム記号 ′ で書く記法。",
+  "definition_en": "Writing derivatives with prime marks, as in f′(x) and f″(x).",
+  "latex": "f'(x)",
+  "spoken_en": "f prime of x",
+  "examples": [
+    {
+      "en": "In prime notation, the derivative of f is just f prime.",
+      "ja": "ラグランジュの記法では、f の導関数は f′ と書く。",
+      "register": "spoken"
+    },
+    {
+      "en": "Rewrite dy/dx = 3x² in prime notation.",
+      "ja": "dy/dx = 3x² をラグランジュの記法で書き直せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語では ′ を「ダッシュ」と読むが、英語では prime。f′ は f prime、f″ は f double prime。"
+  ],
+  "related": [
+    "leibniz-notation",
+    "derivative"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "微分の記法",
+      "en": "Notation for differentiation"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "prime notation": 5,
+      "Lagrange notation": 4
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED にも OpenStax にも呼び方がない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

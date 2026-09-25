@@ -1,0 +1,87 @@
+{
+  "id": "limit-of-sine-x-over-x",
+  "ja": {
+    "term": "sin x / x の極限",
+    "reading": "えっくすぶんのさいんえっくすのきょくげん",
+    "alt": []
+  },
+  "en": {
+    "term": "sin x over x",
+    "alt": [
+      "sine of x over x"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで話し言葉 9 件・書き言葉 0 件）。日本の数III の節「三角関数の極限」の中心は lim_{x→0} sin x / x = 1 で、英語では名前を付けず、式をそのまま the limit as x approaches 0 of sine x over x equals 1 と読む。",
+  "domains": [
+    "calculus",
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "x → 0 のとき sin x / x → 1 となる極限。三角関数の導関数を求める土台になる。",
+  "definition_en": "The limit of sin x / x as x approaches 0, which equals 1; it underlies the derivatives of the trigonometric functions.",
+  "latex": "\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1",
+  "spoken_en": "the limit as x approaches zero of sine x over x equals one",
+  "examples": [
+    {
+      "en": "The limit of sine x over x as x goes to zero is one. You'll use that a lot.",
+      "ja": "x → 0 のとき sin x / x の極限は 1。これはよく使う。",
+      "register": "spoken"
+    },
+    {
+      "en": "Using lim_{x→0} (sin x)/x = 1, find lim_{x→0} (sin 3x)/x.",
+      "ja": "lim_{x→0} (sin x)/x = 1 を用いて、lim_{x→0} (sin 3x)/x を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "x はラジアンで測る。度数法では 1 にならない。"
+  ],
+  "related": [
+    "squeeze-theorem",
+    "derivatives-of-trigonometric-functions",
+    "limit"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "sine of x over x": 6,
+      "sin x over x": 3
+    },
+    "sources": [
+      "khan-ap-calc",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 9 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-24"
+    }
+  ]
+}

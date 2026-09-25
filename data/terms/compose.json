@@ -1,0 +1,97 @@
+{
+  "id": "compose",
+  "ja": {
+    "term": "合成する",
+    "reading": "ごうせいする",
+    "alt": []
+  },
+  "en": {
+    "term": "compose",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "2 つの関数を、一方の出力を他方の入力にしてつなぎ、合成関数をつくる。",
+  "definition_en": "To combine two functions by feeding the output of one into the other.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If you compose f with its inverse, you get x back.",
+      "ja": "f とその逆関数を合成すると x に戻る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Compose f(x) = x² with g(x) = 3x − 1 to find f(g(x)).",
+      "ja": "f(x) = x² と g(x) = 3x − 1 を合成して f(g(x)) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「f と g を合成する」は compose f with g。できた関数は composite function（または the composition of f and g）。"
+  ],
+  "related": [
+    "composite-function",
+    "find-the-inverse"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "compose": 69
+    },
+    "written": {
+      "compose": 27
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

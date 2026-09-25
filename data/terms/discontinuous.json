@@ -1,0 +1,114 @@
+{
+  "id": "discontinuous",
+  "ja": {
+    "term": "不連続",
+    "reading": "ふれんぞく",
+    "alt": []
+  },
+  "en": {
+    "term": "discontinuous",
+    "alt": [],
+    "variants": [
+      {
+        "term": "discontinuous",
+        "register": "both",
+        "note": "書き言葉で最も多い。話し言葉で 47 件（Khan Academy 22・MIT OCW 10・3Blue1Brown 8 ほか 7）、書き言葉で 77 件（OpenStax Precalculus 40・OpenStax Calculus 33・MIT の講義ノート 4）。"
+      },
+      {
+        "term": "not continuous",
+        "register": "both",
+        "note": "話し言葉ではこちらが多い（Khan Academy・Professor Leonard）。話し言葉で 68 件（Khan Academy 38・Professor Leonard 26・MIT OCW 3 ほか 1）、書き言葉で 42 件（OpenStax Calculus 26・OpenStax Precalculus 14・OpenStax Algebra and Trigonometry 2）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus",
+    "analysis"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "その点で連続でないこと。",
+  "definition_en": "Not continuous at a point.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "There's a jump there, so it's not continuous at x = 1.",
+      "ja": "そこで跳んでいるので、x = 1 で連続でない。",
+      "register": "spoken"
+    },
+    {
+      "en": "f is discontinuous at x = 3 because f(3) is undefined.",
+      "ja": "f(3) が定義されないので、f は x = 3 で不連続である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "不連続の種類は、英語では removable（除去可能）・jump（跳躍）・infinite（無限）と名前で呼び分ける。"
+  ],
+  "related": [
+    "continuous",
+    "continuous-function",
+    "limit"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 1.13（discontinuous）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "discontinuous": 47,
+      "not continuous": 68
+    },
+    "written": {
+      "discontinuous": 77,
+      "not continuous": 42
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

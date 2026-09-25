@@ -1,0 +1,125 @@
+{
+  "id": "approaches",
+  "ja": {
+    "term": "〜に限りなく近づく",
+    "reading": "にかぎりなくちかづく",
+    "alt": [
+      "近づく"
+    ]
+  },
+  "en": {
+    "term": "approaches",
+    "alt": [],
+    "variants": [
+      {
+        "term": "goes to",
+        "register": "spoken",
+        "note": "話し言葉で最も多い言い方（as x goes to 2、this goes to zero）。ただし件数には「近づく」以外の goes to も含まれる。話し言葉で 27241 件（Khan Academy 9209・MIT OCW 7403・Professor Leonard 5635 ほか 4994）、書き言葉で 147 件（OpenStax Calculus 48・MIT の講義ノート 46・OpenStax Introductory Statistics 35 ほか 18）。"
+      },
+      {
+        "term": "tends to",
+        "register": "both",
+        "note": "少数の言い方。件数には「傾向がある」の意味も含まれる。話し言葉で 186 件（MIT OCW 86・Khan Academy 45・3Blue1Brown 40 ほか 15）、書き言葉で 68 件（OpenStax Introductory Statistics 31・MIT の講義ノート 17・OpenStax Calculus 14 ほか 6）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "変数や関数の値が、ある値にいくらでも近くなっていく。",
+  "definition_en": "To get as close as you like to a value.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "As x goes to 3, this whole thing goes to 9.",
+      "ja": "x が 3 に近づくと、この式全体は 9 に近づく。",
+      "register": "spoken"
+    },
+    {
+      "en": "As n increases, aₙ approaches 1.",
+      "ja": "n が大きくなると、aₙ は 1 に限りなく近づく。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「限りなく」はふつう訳さない。gets arbitrarily close to は定義を説明するときの言い方（用例コーパスで 7 件）。"
+  ],
+  "related": [
+    "as-x-approaches-a",
+    "limit",
+    "take-the-limit"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 1.2（approaches）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "goes to": 26571,
+      "approaches": 2416,
+      "tends to": 186
+    },
+    "written": {
+      "approaches": 687,
+      "goes to": 106,
+      "tends to": 68
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

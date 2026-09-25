@@ -1,0 +1,107 @@
+{
+  "id": "one-to-one",
+  "ja": {
+    "term": "1 対 1",
+    "reading": "いちたいいち",
+    "alt": [
+      "単射"
+    ]
+  },
+  "en": {
+    "term": "one-to-one",
+    "alt": [],
+    "variants": [
+      {
+        "term": "injective",
+        "register": "spoken",
+        "note": "大学（MIT OCW）の言い方。話し言葉で 13 件（すべて MIT OCW）、書き言葉で 12 件（すべて MIT の講義ノート）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "異なる x には異なる値が対応する（x₁ ≠ x₂ なら f(x₁) ≠ f(x₂)）こと。",
+  "definition_en": "Of a function: sending different inputs to different outputs.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "It's one-to-one, so it passes the horizontal line test and has an inverse.",
+      "ja": "1 対 1 なので、水平線テストに通り、逆関数をもつ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that f(x) = x³ is one-to-one.",
+      "ja": "f(x) = x³ が 1 対 1 であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の教科書（OpenStax Algebra and Trigonometry・Calculus Volume 1）は、グラフと水平な直線の交点が 1 つ以下かどうかで調べる horizontal line test を使う。"
+  ],
+  "related": [
+    "find-the-inverse",
+    "composite-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "単射",
+      "en": "Injective function"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "one-to-one": 29,
+      "injective": 13
+    },
+    "written": {
+      "one-to-one": 218,
+      "injective": 12
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

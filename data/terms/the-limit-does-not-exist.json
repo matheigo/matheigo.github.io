@@ -1,0 +1,108 @@
+{
+  "id": "the-limit-does-not-exist",
+  "ja": {
+    "term": "極限が存在しない",
+    "reading": "きょくげんがそんざいしない",
+    "alt": []
+  },
+  "en": {
+    "term": "the limit does not exist",
+    "alt": [],
+    "variants": [
+      {
+        "term": "the limit does not exist",
+        "register": "both",
+        "note": "話し言葉でも書き言葉でも最も多い。話し言葉で 15 件（NancyPi 7・Khan Academy 5・MIT OCW 1 ほか 2）、書き言葉で 24 件（OpenStax Calculus 20・OpenStax Precalculus 2・MIT の講義ノート 2）。"
+      },
+      {
+        "term": "DNE",
+        "register": "written",
+        "note": "does not exist の略。答案や表で使う。話し言葉で 6 件（すべて NancyPi）、書き言葉で 19 件（OpenStax Calculus 15・OpenStax Algebra and Trigonometry 4）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "変数を近づけたとき、式の値が 1 つの有限の値に近づかない。",
+  "definition_en": "Said when an expression does not approach a single finite value as the variable approaches its target.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The left and right limits are different, so the limit does not exist.",
+      "ja": "左側極限と右側極限が違うので、極限は存在しない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Since the one-sided limits differ, lim_{x→0} |x|/x does not exist (DNE).",
+      "ja": "片側極限が一致しないので、lim_{x→0} |x|/x は存在しない。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国の答案や教科書（OpenStax Calculus）は does not exist を DNE と略して書く。",
+    "口頭では doesn't exist とも言う（用例コーパスの話し言葉で the limit doesn't exist 7 件）。"
+  ],
+  "related": [
+    "limit",
+    "one-sided-limit",
+    "right-hand-limit",
+    "left-hand-limit",
+    "diverge-to-positive-infinity"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "the limit does not exist": 15,
+      "DNE": 6
+    },
+    "written": {
+      "the limit does not exist": 24,
+      "DNE": 19
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-24"
+  }
+}

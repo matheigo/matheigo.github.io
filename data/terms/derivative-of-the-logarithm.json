@@ -1,0 +1,95 @@
+{
+  "id": "derivative-of-the-logarithm",
+  "ja": {
+    "term": "対数関数の導関数",
+    "reading": "たいすうかんすうのどうかんすう",
+    "alt": [
+      "ln x の導関数"
+    ]
+  },
+  "en": {
+    "term": "derivative of ln x",
+    "alt": [],
+    "variants": [
+      {
+        "term": "derivative of ln x",
+        "register": "spoken",
+        "note": "話し言葉で最も多い。Professor Leonard が半分を占める。話し言葉で 43 件（Professor Leonard 23・MIT OCW 6・patrickJMT 5 ほか 9）、書き言葉では 0 件。"
+      },
+      {
+        "term": "derivative of the natural log",
+        "register": "spoken",
+        "note": "Khan Academy に多い言い方。話し言葉で 26 件（Khan Academy 16・MIT OCW 5・The Organic Chemistry Tutor 3 ほか 2）、書き言葉では 0 件。"
+      }
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "(log x)′ = 1/x、(log_a x)′ = 1/(x log a) などの、対数関数の微分の公式。",
+  "definition_en": "The formulas for differentiating logarithms: (ln x)′ = 1/x and (log_a x)′ = 1/(x ln a).",
+  "latex": "\\frac{d}{dx}\\ln x = \\frac{1}{x}",
+  "spoken_en": "the derivative of ln x is one over x",
+  "examples": [
+    {
+      "en": "The derivative of ln x is one over x.",
+      "ja": "log x の導関数は 1/x。",
+      "register": "spoken"
+    },
+    {
+      "en": "Differentiate y = ln(x² + 1).",
+      "ja": "y = log(x² + 1) を微分せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数III の log x（自然対数）は、米国では ln x と書き、ell en x や natural log of x と読む。"
+  ],
+  "related": [
+    "base-of-the-natural-logarithm",
+    "logarithmic-differentiation",
+    "derivative-of-the-exponential-function"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "derivative of the natural log": 26,
+      "derivative of ln x": 14
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}

@@ -274,6 +274,9 @@ const CLOSED_CLASS = new Set([
 /**
  * Every form with the same stem (sameWording's notion of inflection):
  * plural, third person, past, -ing. revolve -> revolves, revolved, revolving.
+ * A form of two letters or fewer is never generated: those are matched as
+ * written (CLOSED_CLASS), and the bare stem of a three-letter word would be
+ * one (DNE -> "dn", the pivot dₙ; use -> "us").
  */
 export function inflections(word: string): string[] {
   const s = stem(word);
@@ -281,7 +284,7 @@ export function inflections(word: string): string[] {
   for (const e of ["", "e"]) {
     for (const x of ["", "s", "es", "ed", "ing"]) {
       const t = s + e + x;
-      if (t && stem(t) === s) forms.add(t);
+      if (t.length > 2 && stem(t) === s) forms.add(t);
     }
   }
   for (const [plural, singular] of Object.entries(IRREGULAR)) {

@@ -1,0 +1,120 @@
+{
+  "id": "find-the-limit",
+  "ja": {
+    "term": "極限を求める",
+    "reading": "きょくげんをもとめる",
+    "alt": []
+  },
+  "en": {
+    "term": "find the limit",
+    "alt": [],
+    "variants": [
+      {
+        "term": "evaluate the limit",
+        "register": "written",
+        "note": "書き言葉（問題文）で最も多い。話し言葉で 13 件（MIT OCW 6・Khan Academy 4・Professor Leonard 1 ほか 2）、書き言葉で 74 件（OpenStax Calculus 47・OpenStax Precalculus 23・MIT の講義ノート 4）。"
+      },
+      {
+        "term": "compute the limit",
+        "register": "spoken",
+        "note": "少数の言い方。話し言葉で 10 件（MIT OCW 7・blackpenredpen 2・3Blue1Brown 1）、書き言葉で 1 件（すべて MIT の講義ノート）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "definition_ja": "式の極限の値を求める。",
+  "definition_en": "To work out the value of a limit.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To find the limit, try plugging in first. If you get zero over zero, factor.",
+      "ja": "極限を求めるには、まず代入してみる。0/0 になったら因数分解する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Evaluate lim_{x→1} (x² − 1)/(x − 1).",
+      "ja": "lim_{x→1} (x² − 1)/(x − 1) を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "約分や有理化で極限を求めることを、AP の CED は topic 1.6 で algebraic manipulation と呼ぶ。"
+  ],
+  "related": [
+    "limit",
+    "take-the-limit",
+    "indeterminate-form",
+    "limit-laws"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 1.6（algebraic manipulation）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-24",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-24",
+  "evidence": {
+    "spoken": {
+      "find the limit": 100,
+      "evaluate the limit": 13,
+      "compute the limit": 10
+    },
+    "written": {
+      "find the limit": 60,
+      "evaluate the limit": 74,
+      "compute the limit": 1
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-24"
+  }
+}
