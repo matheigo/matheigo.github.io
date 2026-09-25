@@ -1166,6 +1166,10 @@ PHASE2F_SAME = [
     # Phase 2 幾何・離散の単元 2 (batch 5): 証明の「仮定」 is the proof's Given; 相似比 is the scale factor
     ("given", "hypothesis", "into"),
     ("ratio-of-similarity", "scale-factor", "from"),
+    # Phase 2 幾何・離散の単元 3: modular arithmetic is the topic whose object is 合同式;
+    # stars and bars is the counting method for 重複組合せ (the entry already names it)
+    ("modular-arithmetic", "congruence-modulo-n", "into"),
+    ("stars-and-bars", "combination-with-repetition", "into"),
 ]
 
 # Section names -> the entry for what they teach.

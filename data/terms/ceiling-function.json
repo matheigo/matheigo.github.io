@@ -1,0 +1,90 @@
+{
+  "id": "ceiling-function",
+  "ja": {
+    "term": "天井関数",
+    "reading": "てんじょうかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "ceiling function",
+    "alt": [
+      "least integer function"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions",
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "実数 x に対し、x 以上の最小の整数 ⌈x⌉ を対応させる関数のこと。たとえば ⌈2.3⌉ = 3、⌈−2.3⌉ = −2 である。",
+  "definition_en": "The function that sends a real number x to the smallest integer greater than or equal to x, written ⌈x⌉. For example, ⌈2.3⌉ = 3 and ⌈−2.3⌉ = −2.",
+  "latex": "\\lceil x \\rceil = \\min\\{n \\in \\mathbb{Z} \\mid n \\ge x\\}",
+  "spoken_en": "the ceiling of x equals the minimum of the integers n with n greater than or equal to x",
+  "examples": [
+    {
+      "en": "The ceiling function always rounds up, so the ceiling of 4.1 is 5, but the ceiling of 4 is just 4.",
+      "ja": "天井関数はつねに切り上げる。だから ⌈4.1⌉ = 5 だが、⌈4⌉ は 4 のままだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A bus holds 40 students. Use the ceiling function to write the number of buses needed for n students, and evaluate it for n = 130.",
+      "ja": "バス 1 台には生徒が 40 人乗れる。生徒 n 人に必要なバスの台数を天井関数で表し、n = 130 のときの値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校のガウス記号 [x] は x 以下の最大の整数（床関数 ⌊x⌋）で、天井関数ではない。⌈x⌉ と ⌊x⌋ の向きに注意。",
+    "負の数では 0 に近いほうへ上がる。⌈−2.3⌉ = −2 で、−3 ではない。",
+    "用例コーパスでは話し言葉 2 件（MIT OCW）、書き言葉 1 件（OpenStax Calculus）。英語版 Wikipedia は床関数と 1 つの記事（Floor and ceiling functions）で扱う。"
+  ],
+  "related": [
+    "floor-function",
+    "integer-part"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "床関数と天井関数",
+      "en": "Floor and ceiling functions"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "ceiling function": 2
+    },
+    "written": {
+      "ceiling function": 1
+    },
+    "sources": [
+      "mit-6.042",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 ceiling function（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

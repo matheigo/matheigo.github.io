@@ -1,0 +1,85 @@
+{
+  "id": "intersecting-chords-theorem",
+  "ja": {
+    "term": "交わる弦の定理",
+    "reading": "まじわるげんのていり",
+    "alt": []
+  },
+  "en": {
+    "term": "intersecting chords theorem",
+    "alt": [
+      "chord-chord product theorem"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「交わる弦の定理」は日本の教科書に無い、本プロジェクトの訳語。日本では方べきの定理の 1 つの場合（2 本の弦 AB, CD が円の内部の点 P で交わるとき PA·PB = PC·PD）として扱い、この場合だけの名前は付けない。CK-12 Geometry は intersecting chords theorem と呼ぶ（6.13 Segments from Chords、12 件）。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "円の 2 本の弦 AB, CD が円の内部の点 P で交わるとき、PA·PB = PC·PD が成り立つという定理。方べきの定理のうち、点 P が円の内部にある場合にあたる。",
+  "definition_en": "If two chords AB and CD of a circle intersect at a point P inside the circle, then PA · PB = PC · PD. In other words, the two pieces of one chord have the same product as the two pieces of the other.",
+  "latex": "PA \\cdot PB = PC \\cdot PD",
+  "spoken_en": "P A times P B equals P C times P D",
+  "examples": [
+    {
+      "en": "By the intersecting chords theorem, the two pieces of this chord multiply to the same thing as the two pieces of that one, so 4 times 6 has to equal 3 times x.",
+      "ja": "交わる弦の定理から、こっちの弦の 2 つの部分の積は、あっちの弦の 2 つの部分の積と等しい。だから 4 × 6 = 3 × x になるはず。",
+      "register": "spoken"
+    },
+    {
+      "en": "Chords AB and CD of a circle intersect at point P, with PA = 4, PB = 9, and PC = 6. Use the intersecting chords theorem to find PD.",
+      "ja": "円の弦 AB と弦 CD が点 P で交わり、PA = 4, PB = 9, PC = 6 である。方べきの定理を用いて、PD の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本では方べきの定理の 1 つの場合として習い、この場合だけの名前は付けない。CK-12 Geometry は点 P が円の内部にある場合（6.13 Segments from Chords）と、外の点から接線と割線を引く場合（6.20 Tangent Secant Theorem）を別の節で扱う。",
+    "式の PA·PB は、1 本の弦が点 P で分けられた 2 つの部分の積。円の外の点から割線を引く場合は「外側の部分 × 割線全体」になるので、内部と外部で式の組み立てを取り違えない。",
+    "用例コーパスでは話・書とも判断できる件数が無く（10 件未満）、見出しは CK-12 Geometry 6.13 Segments from Chords の 12 件で決めた。"
+  ],
+  "related": [
+    "power-of-a-point",
+    "chord",
+    "secant-tangent-theorem"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.13 Segments from Chords"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 intersecting chords theorem（CK-12 Geometry 6.13 Segments from Chords・計 12 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

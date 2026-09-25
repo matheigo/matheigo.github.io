@@ -1,0 +1,93 @@
+{
+  "id": "propositional-logic",
+  "ja": {
+    "term": "命題論理",
+    "reading": "めいだいろんり",
+    "alt": []
+  },
+  "en": {
+    "term": "propositional logic",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（propositional logic は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "真か偽かが決まる命題を「かつ」「または」「でない」「ならば」などでつないだときの真偽を調べる論理。命題の中の主語と述語の構造には立ち入らない。",
+  "definition_en": "The part of logic that studies how true-or-false statements combine with connectives such as \"and,\" \"or,\" \"not,\" and \"if … then.\" It does not look inside a statement at its subject or predicate.",
+  "latex": "\\lnot(p \\land q) \\equiv \\lnot p \\lor \\lnot q",
+  "spoken_en": "not the quantity p and q is equivalent to not p or not q",
+  "examples": [
+    {
+      "en": "In propositional logic, we don't care what p and q actually say, only whether each one is true or false.",
+      "ja": "命題論理では、p や q が何を言っているかは気にしない。それぞれが真か偽かだけを見る。",
+      "register": "spoken"
+    },
+    {
+      "en": "In propositional logic, show that p → q is logically equivalent to ¬q → ¬p.",
+      "ja": "命題論理において、p → q と ¬q → ¬p が同値であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「すべての x について」「ある x が存在して」のような量化子（∀、∃）を使うのは述語論理（predicate logic）で、命題論理には入らない。",
+    "数I「集合と命題」では否定を p̄ と上に線を引いて書き、「かつ」「または」は言葉で書く。英語の本では ¬p、p ∧ q、p ∨ q と書く。",
+    "用例コーパスでは書き言葉 3 件（MIT の講義ノート）だけで、話し言葉は 0 件。Levin では 6 件（1.3 Rules of Logic 5 ほか）。"
+  ],
+  "related": [
+    "proposition",
+    "truth-table",
+    "logical-connective",
+    "tautology",
+    "negation",
+    "quantifier"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "命題論理",
+      "en": "Propositional logic"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.3 Rules of Logic・1.1 Mathematical Statements"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "propositional logic": 3
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは Levin の呼び方 propositional logic（1.3 Rules of Logic・1.1 Mathematical Statements）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

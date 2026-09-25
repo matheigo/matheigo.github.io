@@ -1,0 +1,84 @@
+{
+  "id": "linear-recurrence-relation",
+  "ja": {
+    "term": "線形漸化式",
+    "reading": "せんけいぜんかしき",
+    "alt": []
+  },
+  "en": {
+    "term": "linear recurrence",
+    "alt": [
+      "linear recurrence relation"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "sequences",
+    "discrete"
+  ],
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "数列の各項を、前のいくつかの項の 1 次式で表す漸化式。aₙ₊₂ = paₙ₊₁ + qaₙ のように係数が定数のものは、特性方程式を使って一般項を求められる。",
+  "definition_en": "A recurrence that expresses each term as a linear combination of earlier terms, such as a_(n+2) = p a_(n+1) + q a_n. When the coefficients are constants, it can be solved with the characteristic equation.",
+  "latex": "a_{n+2} = p\\,a_{n+1} + q\\,a_n",
+  "spoken_en": "a sub n plus 2 equals p times a sub n plus 1 plus q times a sub n",
+  "examples": [
+    {
+      "en": "The Fibonacci numbers satisfy a linear recurrence, so we can get a closed form from the characteristic equation.",
+      "ja": "フィボナッチ数列は線形漸化式を満たすから、特性方程式から一般項が求められる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the linear recurrence aₙ₊₂ = 5aₙ₊₁ − 6aₙ with a₀ = 1 and a₁ = 4.",
+      "ja": "漸化式 aₙ₊₂ = 5aₙ₊₁ − 6aₙ（a₀ = 1, a₁ = 4）を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数B では「線形漸化式」という名前を使わないことが多く、aₙ₊₁ = paₙ + q の形や隣接 3 項間の漸化式として個別に扱う。",
+    "aₙ₊₁ = aₙ² のように前の項の 2 乗などを含むものは linear ではない。",
+    "用例コーパスで linear recurrence は話し言葉 15 件（MIT OCW）、書き言葉 39 件（MIT の講義ノート）。Nicholson は linear recurrence を 18 件、linear recurrence relation を 4 件使う（3.4 An Application to Linear Recurrences ほか）。"
+  ],
+  "related": [
+    "recurrence-relation",
+    "characteristic-equation",
+    "fibonacci-sequence",
+    "solve-the-recurrence"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "linear recurrence": 15
+    },
+    "written": {
+      "linear recurrence": 39
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

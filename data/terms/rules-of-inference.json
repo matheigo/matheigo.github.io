@@ -1,0 +1,89 @@
+{
+  "id": "rules-of-inference",
+  "ja": {
+    "term": "推論規則",
+    "reading": "すいろんきそく",
+    "alt": []
+  },
+  "en": {
+    "term": "rules of inference",
+    "alt": [
+      "rule of inference",
+      "inference rule"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（rules of inference ／ rule of inference ／ inference rule は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "domains": [
+    "logic",
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "真であるとわかっている前提から、どのような結論を正しく導けるかを定めた推論の型のこと。肯定式や三段論法などがある。",
+  "definition_en": "The valid patterns of reasoning that let you draw a conclusion from premises already known to be true. Examples include the law of detachment and the law of syllogism.",
+  "latex": "\\frac{p \\to q \\qquad p}{\\therefore\\ q}",
+  "spoken_en": "p implies q, p, therefore q",
+  "examples": [
+    {
+      "en": "Every line of the proof has to follow from earlier lines by one of the rules of inference.",
+      "ja": "証明のどの行も、前の行から推論規則のどれかで導かれていなければならない。",
+      "register": "spoken"
+    },
+    {
+      "en": "State which of the rules of inference justifies each step of the argument below.",
+      "ja": "次の論証の各段階を正当化している推論規則を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "複数形の rules of inference は規則の集まり全体を指す。1 つの規則は a rule of inference（inference rule）と言う。",
+    "英語の inference は統計の「推測」（statistical inference）にも使うので、論理の話か統計の話かを文脈で見分ける。",
+    "用例コーパスでは書き言葉の inference rule が 9 件（すべて MIT の講義ノート）で、rules of inference は 0 件、話し言葉も 0 件。"
+  ],
+  "related": [
+    "law-of-detachment",
+    "law-of-syllogism",
+    "propositional-logic",
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "推論規則",
+      "en": "Rule of inference"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "inference rule": 9
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは Wikipedia の記事名 rules of inference（英語版「Rule of inference」、ja の langlink 先）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "inscribed-polygon",
+  "ja": {
+    "term": "内接多角形",
+    "reading": "ないせつたかくけい",
+    "alt": []
+  },
+  "en": {
+    "term": "inscribed polygon",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "すべての頂点が 1 つの円の周上にある多角形。このとき、その円は多角形の外接円である。",
+  "definition_en": "A polygon whose vertices all lie on a single circle. That circle is the circumscribed circle of the polygon.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Since the square is an inscribed polygon, its diagonal goes through the center, so the diagonal is a diameter of the circle.",
+      "ja": "正方形は円に内接しているから、対角線は中心を通る。つまり対角線は円の直径だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A regular hexagon is an inscribed polygon in a circle with radius 5 cm. Find the perimeter of the hexagon.",
+      "ja": "半径 5 cm の円に正六角形が内接している。正六角形の周の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "内接円（inscribed circle）とは向きが逆。inscribed polygon は多角形が内側で、頂点が円周上にある。inscribed circle は円が内側で、多角形の辺に接する。",
+    "日本の数A では「円に内接する四角形」の性質（向かい合う角の和が 180°）として習う。円に内接する四角形は cyclic quadrilateral とも言う。",
+    "CK-12 Geometry で inscribed polygon は 3 件（6.15 Inscribed Quadrilaterals in Circles）。用例コーパスでは話・書とも 10 件未満。"
+  ],
+  "related": [
+    "circumscribed-polygon",
+    "circumscribed-circle",
+    "cyclic-quadrilateral",
+    "be-inscribed-in"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.15 Inscribed Quadrilaterals in Circles"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 inscribed polygon（CK-12 Geometry 6.15 Inscribed Quadrilaterals in Circles・計 3 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

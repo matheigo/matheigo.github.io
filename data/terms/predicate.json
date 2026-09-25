@@ -1,0 +1,82 @@
+{
+  "id": "predicate",
+  "ja": {
+    "term": "述語",
+    "reading": "じゅつご",
+    "alt": []
+  },
+  "en": {
+    "term": "predicate",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "変数を含み、変数に値を入れると真か偽かが決まる文や式のこと。P(x) のように書く。",
+  "definition_en": "A statement that contains one or more variables and becomes true or false once values are put in for the variables. It is often written as P(x).",
+  "latex": "P(x):\\ x^2 > 4",
+  "spoken_en": "P of x: x squared is greater than four",
+  "examples": [
+    {
+      "en": "P of x isn't true or false by itself. It's a predicate, and it only gets a truth value once you plug in a number.",
+      "ja": "P(x) はそれだけでは真とも偽とも言えない。述語だから、数を代入して初めて真偽が決まるんだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let P(x) be the predicate \"x is divisible by 3\" on the integers. Find the truth values of P(6) and P(7).",
+      "ja": "整数全体で考え、P(x) を述語「x は 3 で割り切れる」とする。P(6), P(7) の真偽を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数I では、x > 3 のように変数を含み値を決めると真偽が決まる文を「条件」と呼び、「述語」とは言わない。",
+    "英語の predicate は文法用語の「述部」の意味でも使う。",
+    "用例コーパスで predicate は話し言葉 31 件（MIT OCW）、書き言葉 52 件（MIT の講義ノート）で、どちらも MIT のもの。Levin の本では 39 件。"
+  ],
+  "related": [
+    "quantifier",
+    "proposition",
+    "truth-value",
+    "all",
+    "exist"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "predicate": 31
+    },
+    "written": {
+      "predicate": 52
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

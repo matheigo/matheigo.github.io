@@ -1,0 +1,83 @@
+{
+  "id": "bezouts-identity",
+  "ja": {
+    "term": "ベズーの等式",
+    "reading": "べずーのとうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "Bézout's identity",
+    "alt": [
+      "Bezout's identity"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（Bézout's identity ／ Bezout's identity は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "少なくとも一方が 0 でない整数 a, b に対し、ax + by = gcd(a, b) を満たす整数 x, y が存在するという定理。特に a, b が互いに素なら、ax + by = 1 は整数解をもつ。",
+  "definition_en": "For integers a and b, not both zero, there exist integers x and y with ax + by = gcd(a, b). In particular, if a and b are relatively prime, then ax + by = 1 has an integer solution.",
+  "latex": "ax + by = \\gcd(a, b)",
+  "spoken_en": "a x plus b y equals the G C D of a and b",
+  "examples": [
+    {
+      "en": "Bézout's identity says we can write the gcd as a combination of a and b, and the extended Euclidean algorithm actually finds the x and y.",
+      "ja": "ベズーの等式によれば、最大公約数は a と b を使った ax + by の形で書ける。実際の x, y は拡張ユークリッド互除法で求まる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use Bézout's identity to show that 7x + 12y = 1 has an integer solution, and find one.",
+      "ja": "7x + 12y = 1 が整数解をもつことをベズーの等式を用いて示し、解を 1 組求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数A では、一次不定方程式の単元で「a, b が互いに素なら ax + by = 1 は整数解をもつ」という形で出てくる。",
+    "Bézout's theorem は代数曲線の交点の個数についての別の定理。identity と theorem を取り違えない。",
+    "用例コーパスでも参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）でも 0 件で、見出しは英語版 Wikipedia の記事名による。"
+  ],
+  "related": [
+    "linear-diophantine-equation",
+    "euclidean-algorithm",
+    "extended-euclidean-algorithm",
+    "greatest-common-divisor",
+    "relatively-prime"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ベズーの等式",
+      "en": "Bézout's identity"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 Bézout's identity（英語版「Bézout's identity」、ja の langlink 先）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

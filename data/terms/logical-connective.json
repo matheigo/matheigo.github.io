@@ -1,0 +1,102 @@
+{
+  "id": "logical-connective",
+  "ja": {
+    "term": "論理結合子",
+    "reading": "ろんりけつごうし",
+    "alt": [
+      "論理演算子",
+      "かつ",
+      "または"
+    ]
+  },
+  "en": {
+    "term": "connective",
+    "alt": [
+      "logical connective",
+      "logical operator"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I",
+      "大学"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "「かつ」「または」「でない」「ならば」のように、命題どうしを結びつけたり否定したりして新しい命題を作る語や記号のこと。",
+  "definition_en": "A word or symbol, such as \"and,\" \"or,\" \"not,\" or \"if … then,\" that joins or modifies statements to build a new statement.",
+  "latex": "\\land,\\ \\lor,\\ \\lnot,\\ \\to,\\ \\leftrightarrow",
+  "spoken_en": "and, or, not, implies, if and only if",
+  "examples": [
+    {
+      "en": "The main connective in this statement is the \"or,\" so that's the last column you fill in.",
+      "ja": "この命題でいちばん外側の結合子は「または」だから、表のいちばん最後の列はそれになるよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Identify the connective in the statement \"x > 2 and x < 5,\" and write the statement in symbols.",
+      "ja": "命題「x > 2 かつ x < 5」に使われている論理結合子を答え、その命題を記号で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数I では「かつ」「または」「でない」を扱うが、「論理結合子」という名前は使わない。否定も数I では上線（p̄）で書き、¬p や ~p の記号は使わない。",
+    "数学の or は両方が真の場合も真になる（日本の「または」と同じ）。",
+    "用例コーパスで connective と logical connective は書き言葉に 1 件ずつ（MIT の講義ノート）、話し言葉 0 件。CK-12 Geometry では connective が 13 件（2.9 And and Or Statements ほか）、Levin の本では 26 件。"
+  ],
+  "related": [
+    "negation",
+    "conditional-statement",
+    "truth-table",
+    "truth-value",
+    "biconditional"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "論理演算",
+      "en": "Logical connective"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.9 And and Or Statements・2.10 Negative Statements"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "connective": 1,
+      "logical connective": 1
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは CK-12 の呼び方 connective（CK-12 Geometry 2.9 And and Or Statements・CK-12 Geometry 2.10 Negative Statements・計 13 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

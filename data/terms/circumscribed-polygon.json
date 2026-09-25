@@ -1,0 +1,77 @@
+{
+  "id": "circumscribed-polygon",
+  "ja": {
+    "term": "外接多角形",
+    "reading": "がいせつたかくけい",
+    "alt": []
+  },
+  "en": {
+    "term": "circumscribed polygon",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "すべての辺が 1 つの円に接している多角形。このとき、その円は多角形の内接円である。",
+  "definition_en": "A polygon whose sides are all tangent to a single circle. That circle is the inscribed circle of the polygon.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In a circumscribed polygon, the circle touches every side exactly once, so every side is tangent to the circle.",
+      "ja": "円に外接する多角形では、円がどの辺にもちょうど 1 回ずつ触れる。つまりどの辺も円の接線になっている。",
+      "register": "spoken"
+    },
+    {
+      "en": "Quadrilateral ABCD is a circumscribed polygon about circle O. If AB = 7, BC = 9, and CD = 8, find AD.",
+      "ja": "四角形 ABCD は円 O に外接している。AB = 7, BC = 9, CD = 8 のとき、AD の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "向きに注意。「多角形が円に外接する」は the polygon is circumscribed about the circle で、円が内側。外接円（circumscribed circle）では円が外側なので、circumscribed が付くものの位置が逆になる。",
+    "円に外接する四角形では、向かい合う辺の和が等しい（AB + CD = BC + AD）。頂点から 2 つの接点までの接線の長さが等しいことから出る。",
+    "用例コーパスにも参照（CED・OpenStax・IM・CK-12）にも出てこない。見出しは決まっておらず、人間レビュー待ち。"
+  ],
+  "related": [
+    "inscribed-polygon",
+    "inscribed-circle",
+    "tangent-segments-are-equal"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

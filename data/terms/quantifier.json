@@ -1,0 +1,87 @@
+{
+  "id": "quantifier",
+  "ja": {
+    "term": "量化子",
+    "reading": "りょうかし",
+    "alt": [
+      "限量子",
+      "量化記号"
+    ]
+  },
+  "en": {
+    "term": "quantifier",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "数I",
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "述語の変数について、「すべての x について」「ある x について」のように、どれだけの値で成り立つかを指定する語や記号のこと。∀ と ∃ がある。",
+  "definition_en": "A word or symbol, such as \"for all\" (∀) or \"there exists\" (∃), that tells for how many values of a variable a predicate is true.",
+  "latex": "\\forall x\\ \\exists y\\ (y > x)",
+  "spoken_en": "for all x, there exists y such that y is greater than x",
+  "examples": [
+    {
+      "en": "Order matters here. If you swap the two quantifiers, the statement means something completely different.",
+      "ja": "ここは順番が大事。2 つの量化子を入れ替えると、まったく別の命題になってしまう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Negate the statement ∀x ∈ ℝ (x² ≥ 0) so that no negation symbol appears in front of a quantifier.",
+      "ja": "命題 ∀x ∈ ℝ (x² ≥ 0) の否定を、量化子の前に否定の記号が残らない形で書け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数I では「すべての」「ある」を言葉で扱い（「すべての x について p」の否定は「ある x について p でない」）、∀ ∃ の記号や「量化子」という名前は使わない。",
+    "∀x ∃y と ∃y ∀x は意味が違う。量化子の順番は入れ替えられない。",
+    "用例コーパスで quantifier は話し言葉 3 件（MIT OCW）、書き言葉 22 件（MIT の講義ノート 20・OpenStax Calculus 2）。Levin の本では 54 件。"
+  ],
+  "related": [
+    "universal-quantifier",
+    "existential-quantifier",
+    "predicate",
+    "all",
+    "exist"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "quantifier": 3
+    },
+    "written": {
+      "quantifier": 22
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

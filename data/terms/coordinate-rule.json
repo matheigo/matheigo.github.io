@@ -1,0 +1,98 @@
+{
+  "id": "coordinate-rule",
+  "ja": {
+    "term": "座標の規則",
+    "reading": "ざひょうのきそく",
+    "alt": []
+  },
+  "en": {
+    "term": "mapping rule",
+    "alt": [
+      "coordinate rule",
+      "coordinate notation"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「座標の規則」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書は平行移動を「x 軸方向に 3、y 軸方向に −2 だけ平行移動」と言葉で書き、(x, y) → (x + 3, y − 2) の形の記法を使わない。CK-12 Geometry はこの書き方を mapping rule と呼ぶ（8.9 Translation Notation ほか、18 件）。",
+  "domains": [
+    "geometry",
+    "notation"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "変換で点 (x, y) がどの点に移るかを、(x, y) → (x + 3, y − 2) のように座標の式で表したもの。",
+  "definition_en": "A rule that describes a transformation by showing where a general point (x, y) goes, such as (x, y) → (x + 3, y − 2).",
+  "latex": "(x, y) \\to (x + 3, y - 2)",
+  "spoken_en": "x, y maps to x plus 3, y minus 2",
+  "examples": [
+    {
+      "en": "Every point moves 3 to the right and 2 down, so the mapping rule is x, y goes to x plus 3, y minus 2.",
+      "ja": "どの点も右に 3、下に 2 動くから、点 (x, y) は (x + 3, y − 2) に移る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write a mapping rule for a reflection across the y-axis. Then use it to find the image of P(4, −1).",
+      "ja": "y 軸に関する対称移動で点 (x, y) が移る点の座標を x, y で表せ。また、この移動で点 P(4, −1) が移る点の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "呼び方は教材で分かれる。CK-12 Geometry は mapping rule（18 件）と coordinate notation（3 件）、IM は coordinate rule（Geometry 6.2 ほか 3 件）と呼ぶ。",
+    "回転も同じ形で書ける。原点のまわりの反時計回り 90° の回転は (x, y) → (−y, x)。",
+    "用例コーパスの mapping rule は話し言葉 5 件・書き言葉 6 件で、すべて MIT OCW（講義と講義ノート）。高校幾何の変換の記法の意味とは限らない。"
+  ],
+  "related": [
+    "translation",
+    "image",
+    "rigid-motion",
+    "reflection",
+    "rotation"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "8.9 Translation Notation・8.18 Notation for Composite Transformations・8.11 Rotation Rules"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "mapping rule": 5
+    },
+    "written": {
+      "mapping rule": 6
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは CK-12 の呼び方 mapping rule（CK-12 Geometry 8.9 Translation Notation・CK-12 Geometry 8.18 Notation for Composite Transformations・CK-12 Geometry 8.11 Rotation Rules・計 18 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

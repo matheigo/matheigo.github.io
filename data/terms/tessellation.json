@@ -1,0 +1,94 @@
+{
+  "id": "tessellation",
+  "ja": {
+    "term": "平面充填",
+    "reading": "へいめんじゅうてん",
+    "alt": [
+      "敷き詰め",
+      "テセレーション"
+    ]
+  },
+  "en": {
+    "term": "tessellation",
+    "alt": [
+      "tiling"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "1 種類または何種類かの図形を、すき間も重なりもなく平面に敷き詰めること。また、そうして敷き詰めた模様。",
+  "definition_en": "A pattern of one or more shapes that covers a plane with no gaps and no overlaps. The word also names the act of covering the plane this way.",
+  "latex": "6 \\cdot 60^\\circ = 360^\\circ",
+  "spoken_en": "6 times 60 degrees equals 360 degrees",
+  "examples": [
+    {
+      "en": "Six equilateral triangles fit around a point with no gaps, because six times 60 is 360, so they make a tessellation.",
+      "ja": "正三角形は 1 点のまわりに 6 つすき間なく集まる。60° の 6 倍が 360° だからだ。だから平面を敷き詰められる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Explain why regular pentagons cannot form a tessellation of the plane.",
+      "ja": "正五角形だけでは平面をすき間なく敷き詰められない理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "動詞は tessellate（敷き詰める）。Does this shape tessellate? のように、図形を主語にして使う。",
+    "正多角形 1 種類で敷き詰められるのは正三角形・正方形・正六角形だけ。1 つの頂点に集まる角の和が 360° になるかで説明する。",
+    "用例コーパスでは話・書とも 0 件。IM では 45 件（Grade 8 9.1 Tessellations of the Plane 13 ほか）、CK-12 Geometry では 8.19 Tessellations に 12 件。"
+  ],
+  "related": [
+    "rigid-motion",
+    "rotational-symmetry"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 8)",
+      "url": "https://im.kendallhunt.com/MS/students/3/index.html",
+      "note": "Grade 8 glossary・Grade 8 9.1 Tessellations of the Plane"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "8.19 Tessellations"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 tessellation（Grade 8 glossary・Geometry glossary・Grade 8 9.1 Tessellations of the Plane・計 45 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

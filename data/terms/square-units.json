@@ -1,0 +1,104 @@
+{
+  "id": "square-units",
+  "ja": {
+    "term": "平方単位",
+    "reading": "へいほうたんい",
+    "alt": []
+  },
+  "en": {
+    "term": "square units",
+    "alt": [],
+    "variants": [
+      {
+        "term": "square units",
+        "register": "both"
+      },
+      {
+        "term": "units squared",
+        "register": "both"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「平方単位」は日本の教科書に無い、本プロジェクトの訳語。日本では cm²・m² のように決まった単位で答える。英語の問題では単位を決めずに、1 辺 1 の正方形いくつ分かを square units ／ units squared で答えさせることがある。",
+  "domains": [
+    "geometry",
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "小学校"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "1 辺の長さが 1 単位の正方形を 1 つと数えて面積を表すときの単位。長さの単位が決まっていない問題で、面積を「いくつ分」で答えるのに使う。",
+  "definition_en": "The unit used to measure area by counting squares whose sides are 1 unit long. It is used to give an area when no specific unit of length, such as inches, is stated.",
+  "latex": "A = 6 \\cdot 4 = 24 \\text{ units}^2",
+  "spoken_en": "A equals 6 times 4, which is 24 square units",
+  "examples": [
+    {
+      "en": "Each little box on the grid is one square unit, so just count them: this shape covers 12 square units.",
+      "ja": "方眼の小さなマス 1 つが 1 平方単位だから、数えればいい。この図形の面積は 12 平方単位だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "The base is 6 and the height is 4, so the area of the rectangle is 24 units squared.",
+      "ja": "底辺が 6、高さが 4 だから、長方形の面積は 24 平方単位だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the area of the triangle with vertices (0, 0), (6, 0), and (0, 4). Give your answer in square units.",
+      "ja": "3 点 (0, 0), (6, 0), (0, 4) を頂点とする三角形の面積を求めよ（単位は平方単位）。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "24 square units と 24 units squared は同じ意味。用例コーパスでは話し言葉 23 件対 19 件、書き言葉 28 件対 10 件で、どちらも使われる。",
+    "日本の問題では面積を cm² や m² で答え、「平方単位」とは言わない。記号では units² と書く。",
+    "IM は square units を 253 件（Grade 6 1.8 Area of Triangles 16 ほか）、units squared を 28 件使う。CK-12 Geometry は square units を 13 件使う。"
+  ],
+  "related": [
+    "cubic-units",
+    "area"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "units squared": 19,
+      "square units": 23
+    },
+    "written": {
+      "square units": 28,
+      "units squared": 10
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

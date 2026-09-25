@@ -615,6 +615,14 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   "conjugate-roots": { "conjugate pairs": "in conjugate pairs | conjugate pair of roots | conjugate pair of solutions | conjugate pair of zeros" },
   // 単元 3: "intercept form" after "slope" is the slope-intercept form of a line (captions write no hyphen)
   "factored-form": { "intercept form": "!slope intercept form" },
+  // 単元 3 (batch 6)
+  "cross-section": { "cross section": "cross section | cross-section" }, // one word, two spellings
+  // density of mass / population, not a probability density (function, curve)
+  density: { density: "!probability !exponential !kernel density !function !functions !curve !curves !plot !plots" },
+  // the image of a point under a transformation, not a mirror image or a picture
+  image: { image: "!mirror image of | image point | image points | its image" },
+  // "tiling" folds into tile / tiles (floor tiles, fraction tiles): only the tiling of the plane
+  tessellation: { tiling: "tiling of the plane | tilings of the plane | tiling the plane" },
   // CK-12 Algebra's "a fractional part of a power of one-tenth" is a decimal place, not x − ⌊x⌋ (単元 3)
   "fractional-part": { "fractional part": "!a fractional part of | fractional part is" },
   // ガウス記号: the reading "floor of" (x), not the floor of a room or a building
@@ -1130,6 +1138,8 @@ export const WIKIPEDIA_NOT_SAME: Record<string, string> = {
   // 三段論法's langlink: the categorical syllogism (Aristotle); the law of syllogism is the
   // hypothetical syllogism p → q, q → r ⊢ p → r
   "law-of-syllogism": "Syllogism",
+  // 単元 3: "existence proof" redirects to the constructive proof, one kind of existence proof
+  "existence-proof": "Constructive proof",
 };
 
 /** "Translation (geometry)" -> "translation"; a name keeps its capital ("Ceva's theorem"). */

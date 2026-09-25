@@ -1,0 +1,91 @@
+{
+  "id": "countable",
+  "ja": {
+    "term": "可算",
+    "reading": "かさん",
+    "alt": [
+      "可付番"
+    ]
+  },
+  "en": {
+    "term": "countable",
+    "alt": [
+      "countably infinite"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "set-theory"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "集合の要素に 1 番目、2 番目、… と自然数で番号を付けられることをいう。有限集合も含める流儀と、可算無限（countably infinite）の集合だけを指す流儀がある。",
+  "definition_en": "Describes a set whose elements can be listed as a first, second, third, and so on, that is, matched one-to-one with a subset of the natural numbers. Some books include finite sets, while others use the word only for countably infinite sets.",
+  "latex": "\\mathbb{Z} = \\{0, 1, -1, 2, -2, \\dots\\}",
+  "spoken_en": "Z is the set zero, one, negative one, two, negative two, and so on",
+  "examples": [
+    {
+      "en": "The integers are countable, because I can list them: zero, one, negative one, two, negative two, and so on.",
+      "ja": "整数全体は可算だ。0, 1, −1, 2, −2, … と並べられるからだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove that the set of all positive rational numbers is countable.",
+      "ja": "正の有理数全体の集合が可算であることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "反対は uncountable（非可算）。実数全体は非可算である（対角線論法）。",
+    "有限集合を countable に含めるかは本による。無限であることをはっきり言うときは countably infinite を使う。",
+    "用例コーパスでは countable が書き言葉 37 件（うち MIT の講義ノート 35）、話し言葉 3 件。countably infinite は書き言葉 7 件、話し言葉 1 件。AP Statistics の CED にも countable が 3 件（1.2 ほか）ある。"
+  ],
+  "related": [
+    "bijection",
+    "set",
+    "one-to-one"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "countable": 3,
+      "countably infinite": 1
+    },
+    "written": {
+      "countable": 37,
+      "countably infinite": 7
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

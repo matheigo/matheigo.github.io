@@ -1,0 +1,90 @@
+{
+  "id": "fermats-little-theorem",
+  "ja": {
+    "term": "フェルマーの小定理",
+    "reading": "ふぇるまーのしょうていり",
+    "alt": []
+  },
+  "en": {
+    "term": "Fermat's little theorem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（Fermat's little theorem は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "p が素数で、整数 a が p の倍数でないとき、a^{p−1} ≡ 1 (mod p) が成り立つという定理。両辺に a をかけた aᵖ ≡ a (mod p) はすべての整数 a で成り立つ。",
+  "definition_en": "If p is prime and a is an integer not divisible by p, then a^(p−1) ≡ 1 (mod p). Multiplying both sides by a gives a^p ≡ a (mod p), which holds for every integer a.",
+  "latex": "a^{p-1} \\equiv 1 \\pmod{p}",
+  "spoken_en": "a to the p minus 1 is congruent to 1 mod p",
+  "examples": [
+    {
+      "en": "Seven is prime and it doesn't divide three, so Fermat's little theorem says three to the sixth is congruent to one mod seven.",
+      "ja": "7 は素数で 3 を割り切らないから、フェルマーの小定理より 3⁶ ≡ 1 (mod 7) となる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use Fermat's little theorem to find the remainder when 3¹⁰⁰ is divided by 7.",
+      "ja": "フェルマーの小定理を用いて、3¹⁰⁰ を 7 で割った余りを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "little（小）は、フェルマーの最終定理（Fermat's last theorem）と区別するための呼び名。",
+    "逆は成り立たない。aⁿ⁻¹ ≡ 1 (mod n) でも n が素数とは限らない（n = 341 = 11 × 31 で 2³⁴⁰ ≡ 1 (mod 341)）。",
+    "用例コーパスでは話し言葉 3 件（MIT OCW）、書き言葉 3 件（MIT の講義ノート）。CED・OpenStax・IM・CK-12 では 0 件。"
+  ],
+  "related": [
+    "remainder",
+    "prime-factorization",
+    "modulus",
+    "modular-inverse",
+    "cryptography"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "フェルマーの小定理",
+      "en": "Fermat's little theorem"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "Fermat's little theorem": 3
+    },
+    "written": {
+      "Fermat's little theorem": 3
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは Wikipedia の記事名 Fermat's little theorem（英語版「Fermat's little theorem」、ja の langlink 先）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

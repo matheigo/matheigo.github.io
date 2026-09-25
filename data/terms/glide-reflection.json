@@ -1,0 +1,86 @@
+{
+  "id": "glide-reflection",
+  "ja": {
+    "term": "映進",
+    "reading": "えいしん",
+    "alt": [
+      "グライド反射"
+    ]
+  },
+  "en": {
+    "term": "glide reflection",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "直線に関する対称移動と、その直線に平行な向きの平行移動を続けて行う移動。2 つの移動はどちらを先に行っても同じ図形に移る。",
+  "definition_en": "A transformation made of a reflection across a line and a translation in a direction parallel to that line. Doing the two steps in either order gives the same result.",
+  "latex": "(x, y) \\to (x + 4, -y)",
+  "spoken_en": "x, y maps to x plus 4, negative y",
+  "examples": [
+    {
+      "en": "Think of footprints in the sand: each step is flipped over and slid forward, and that's a glide reflection.",
+      "ja": "砂浜の足跡を思い浮かべよう。1 歩ごとに裏返って前にずれている。これが映進だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Triangle ABC has vertices A(1, 2), B(3, 5), and C(4, 1). Find the vertices of its image under a glide reflection: a translation 5 units right followed by a reflection across the x-axis.",
+      "ja": "△ABC の頂点は A(1, 2), B(3, 5), C(4, 1) である。△ABC を x 軸方向に 5 だけ平行移動し、さらに x 軸に関して対称移動した図形の頂点の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の中学・高校の教科書では「映進」という名前を使わず、対称移動と平行移動の組み合わせとして扱う。",
+    "平行移動の向きが対称の軸と平行でなければ glide reflection とは呼ばない。",
+    "用例コーパスでは話・書とも 0 件。CK-12 Geometry では 8.17 Composite Transformations に 8 件、IM では Geometry 6.4 Distances and Circles に 2 件。"
+  ],
+  "related": [
+    "reflection",
+    "translation",
+    "rigid-motion",
+    "composition-of-transformations"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "8.17 Composite Transformations"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 glide reflection（CK-12 Geometry 8.17 Composite Transformations・計 8 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

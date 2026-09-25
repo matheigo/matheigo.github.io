@@ -1,0 +1,77 @@
+{
+  "id": "structural-induction",
+  "ja": {
+    "term": "構造帰納法",
+    "reading": "こうぞうきのうほう",
+    "alt": []
+  },
+  "en": {
+    "term": "structural induction",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "再帰的に定義された集合（木や文字列、式など）のすべての要素がある性質をもつことを示す帰納法。基本の要素で成り立ち、新しい要素を作る各規則で性質が引き継がれることを示す。",
+  "definition_en": "A form of induction for recursively defined sets such as trees, strings, or expressions. You show that the property holds for the basic elements and is preserved by each rule that builds new elements.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Strings are defined recursively, so we'll use structural induction: check the empty string, then show the property survives when you add one more character.",
+      "ja": "文字列は再帰的に定義されているから、構造帰納法を使おう。空の文字列で確かめて、1 文字付け足しても性質が保たれることを示す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove by structural induction that every full binary tree with n leaves has n − 1 internal vertices.",
+      "ja": "構造帰納法を用いて、葉が n 個の全二分木の内部頂点はちょうど n − 1 個であることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "自然数についての普通の帰納法は、「0 と、n から n + 1 を作る規則」で定義された集合に対する構造帰納法の特別な場合とみなせる。",
+    "日本の高校数学では扱わず、大学の離散数学や情報科学で出てくる。",
+    "用例コーパスで structural induction は書き言葉 32 件（MIT の講義ノート）、話し言葉 0 件。"
+  ],
+  "related": [
+    "proof-by-induction",
+    "recursive-definition",
+    "strong-induction",
+    "tree"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "structural induction": 32
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

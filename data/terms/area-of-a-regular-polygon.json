@@ -1,0 +1,82 @@
+{
+  "id": "area-of-a-regular-polygon",
+  "ja": {
+    "term": "正多角形の面積",
+    "reading": "せいたかくけいのめんせき",
+    "alt": []
+  },
+  "en": {
+    "term": "area of a regular polygon",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "正多角形の面積。辺心距離を a、周の長さを p とすると A = (1/2)ap で求められる。",
+  "definition_en": "The area enclosed by a regular polygon. It equals one half of the apothem times the perimeter.",
+  "latex": "A = \\frac{1}{2}ap",
+  "spoken_en": "A equals one half a p",
+  "examples": [
+    {
+      "en": "For the area of a regular polygon, it's one half times the apothem times the perimeter, because you're really adding up a bunch of congruent triangles.",
+      "ja": "正多角形の面積は ½ × 辺心距離 × 周の長さ。実際には合同な三角形をたくさん足しているのと同じだから。",
+      "register": "spoken"
+    },
+    {
+      "en": "A regular octagon has sides of length 10 cm and an apothem of 12.1 cm. Use the formula for the area of a regular polygon to find its area.",
+      "ja": "1 辺の長さが 10 cm、辺心距離が 12.1 cm の正八角形がある。正多角形の面積の公式を使って、面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数I では、中心と各頂点を結んで n 個の合同な二等辺三角形に分け、外接円の半径 r を使って (n/2)r² sin(360°/n) と求める。CK-12 Geometry（5.21 Area of Regular and Irregular Polygons）は辺心距離（apothem）を使う A = (1/2)ap で求める。",
+    "式の a は apothem（辺心距離）、p は perimeter（周の長さ）。a を 1 辺の長さと取り違えない。",
+    "CK-12 Geometry で area of a regular polygon は 3 件（5.21）。用例コーパスでは話・書とも 10 件未満。"
+  ],
+  "related": [
+    "apothem",
+    "area-formula-with-sine"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "5.21 Area of Regular and Irregular Polygons"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 area of a regular polygon（CK-12 Geometry 5.21 Area of Regular and Irregular Polygons・計 3 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

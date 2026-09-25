@@ -1,0 +1,83 @@
+{
+  "id": "chinese-remainder-theorem",
+  "ja": {
+    "term": "中国剰余定理",
+    "reading": "ちゅうごくじょうよていり",
+    "alt": [
+      "中国の剰余定理"
+    ]
+  },
+  "en": {
+    "term": "Chinese remainder theorem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（Chinese remainder theorem は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "法 m₁, …, mₖ がどの 2 つも互いに素なとき、連立合同式 x ≡ aᵢ (mod mᵢ) は必ず解をもち、その解は m₁m₂⋯mₖ を法としてただ 1 つに定まるという定理。",
+  "definition_en": "If the moduli m₁, …, mₖ are pairwise relatively prime, then the system x ≡ aᵢ (mod mᵢ) always has a solution. The solution is unique modulo the product m₁m₂⋯mₖ.",
+  "latex": "x \\equiv 2 \\pmod{3},\\ x \\equiv 3 \\pmod{5} \\implies x \\equiv 8 \\pmod{15}",
+  "spoken_en": "if x is congruent to 2 mod 3 and x is congruent to 3 mod 5, then x is congruent to 8 mod 15",
+  "examples": [
+    {
+      "en": "Three and five are relatively prime, so the Chinese remainder theorem tells us there's exactly one answer mod fifteen.",
+      "ja": "3 と 5 は互いに素だから、中国剰余定理により 15 を法とする答えはちょうど 1 つだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the Chinese remainder theorem to find all integers x such that x ≡ 1 (mod 4), x ≡ 2 (mod 3), and x ≡ 3 (mod 5).",
+      "ja": "中国剰余定理を用いて、x ≡ 1 (mod 4)、x ≡ 2 (mod 3)、x ≡ 3 (mod 5) を満たす整数 x をすべて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "法が互いに素でないと解が無いことがある。x ≡ 0 (mod 2) と x ≡ 1 (mod 4) を同時に満たす x は無い。",
+    "日本の数A では「3 で割ると 2 余り、5 で割ると 3 余る整数」のような問題として、定理の名前を出さずに扱うことがある。",
+    "用例コーパスでは話・書とも 0 件、CED・OpenStax・IM・CK-12 でも 0 件。見出しは英語版 Wikipedia の記事名。"
+  ],
+  "related": [
+    "remainder",
+    "linear-diophantine-equation",
+    "modulus",
+    "relatively-prime",
+    "modular-inverse"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "中国の剰余定理",
+      "en": "Chinese remainder theorem"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 Chinese remainder theorem（英語版「Chinese remainder theorem」、ja の langlink 先）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

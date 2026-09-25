@@ -1,0 +1,85 @@
+{
+  "id": "strong-induction",
+  "ja": {
+    "term": "累積帰納法",
+    "reading": "るいせききのうほう",
+    "alt": [
+      "強帰納法",
+      "強い数学的帰納法"
+    ]
+  },
+  "en": {
+    "term": "strong induction",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "数学的帰納法の一種で、n = 1, 2, …, k のすべてで成り立つと仮定して、n = k + 1 でも成り立つことを示す証明法。直前の 1 つだけでなく、それより前のすべての場合を仮定に使える。",
+  "definition_en": "A form of induction in which you assume the statement holds for every case from the base case up to k, and use that to prove it for k + 1. It helps when the k + 1 case depends on cases earlier than k.",
+  "latex": "P(1) \\land \\cdots \\land P(k) \\implies P(k+1)",
+  "spoken_en": "P of 1 and dot dot dot and P of k implies P of k plus 1",
+  "examples": [
+    {
+      "en": "To show every integer greater than one has a prime factorization, knowing just the case k isn't enough, so we'll use strong induction.",
+      "ja": "1 より大きいすべての整数が素因数分解できることを示すには、n = k の場合だけ仮定しても足りない。だから累積帰納法を使おう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use strong induction to prove that every integer n ≥ 12 can be written as 4a + 5b for some nonnegative integers a and b.",
+      "ja": "累積帰納法を用いて、12 以上のすべての整数 n は、0 以上の整数 a, b を用いて 4a + 5b と表せることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数B の「n = k, k + 1 のとき成り立つと仮定して n = k + 2 を示す」形の帰納法は、strong induction の特別な場合にあたる。",
+    "base case が 1 つでは足りないことがある。上の 4a + 5b の例では 12〜15 の 4 つを先に確かめる。",
+    "用例コーパスでは話し言葉 15 件（MIT OCW）、書き言葉 38 件（MIT の講義ノート）。Levin は 4.6 Strong Induction ほかで 33 件使う。"
+  ],
+  "related": [
+    "proof-by-induction",
+    "well-ordering-principle",
+    "structural-induction",
+    "base-case",
+    "inductive-hypothesis"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "strong induction": 15
+    },
+    "written": {
+      "strong induction": 38
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

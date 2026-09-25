@@ -1,0 +1,87 @@
+{
+  "id": "proof-by-cases",
+  "ja": {
+    "term": "場合分けによる証明",
+    "reading": "ばあいわけによるしょうめい",
+    "alt": []
+  },
+  "en": {
+    "term": "proof by exhaustion",
+    "alt": [
+      "proof by cases",
+      "case analysis"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（proof by exhaustion ／ proof by cases ／ case analysis は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "domains": [
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "起こりうる場合を漏れなくいくつかに分け、それぞれの場合で結論が成り立つことを示して全体を証明する方法のこと。",
+  "definition_en": "A method of proof that splits the situation into a finite number of cases covering every possibility and proves the statement in each case separately.",
+  "latex": "\\big((p \\lor q) \\land (p \\to r) \\land (q \\to r)\\big) \\to r",
+  "spoken_en": "if p or q, and p implies r, and q implies r, then r",
+  "examples": [
+    {
+      "en": "We'll do a proof by exhaustion here: case one, n is even, and case two, n is odd.",
+      "ja": "ここは場合分けで証明しよう。n が偶数の場合と、n が奇数の場合だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use proof by exhaustion to show that n² + n is even for every integer n. (Consider the cases n even and n odd.)",
+      "ja": "すべての整数 n について n² + n が偶数であることを、場合分けによって証明せよ（n が偶数の場合と奇数の場合を考えよ）。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "proof by exhaustion は、有限個の場合をすべて調べ尽くす総当たりの証明を指すこともある。面積を求める method of exhaustion（取り尽くし法）とは別物。",
+    "日本語の「場合分け」は証明だけでなく、絶対値を外す計算や不等式の解法にも使うが、この見出しは証明の方法の名前。",
+    "用例コーパスでは proof by cases が書き言葉 3 件、case analysis が 1 件（どちらも MIT の講義ノート）で、proof by exhaustion は 0 件。"
+  ],
+  "related": [
+    "prove",
+    "direct-proof",
+    "proof",
+    "parity"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "proof by cases": 3,
+      "case analysis": 1
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 4 件（10 未満））。見出しは Wikipedia の記事名 proof by exhaustion（英語版「Proof by exhaustion」、en.term のリダイレクト先）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

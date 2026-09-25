@@ -1,0 +1,78 @@
+{
+  "id": "existence-proof",
+  "ja": {
+    "term": "存在証明",
+    "reading": "そんざいしょうめい",
+    "alt": []
+  },
+  "en": {
+    "term": "existence proof",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "ある条件を満たすものが少なくとも 1 つ存在することを示す証明のこと。実際に例を作って示す方法（構成的）と、例を作らずに存在だけを示す方法（非構成的）がある。",
+  "definition_en": "A proof that at least one object with a given property exists. It can be constructive, by giving an example, or it can show that such an object must exist without actually finding it.",
+  "latex": "\\exists x\\ P(x)",
+  "spoken_en": "there exists x such that P of x",
+  "examples": [
+    {
+      "en": "For an existence proof, one example is enough. Just show me a number that works.",
+      "ja": "存在証明なら例は 1 つで十分。条件を満たす数を 1 つ見せてくれればいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Give an existence proof that the equation x³ + x − 1 = 0 has a real solution between 0 and 1.",
+      "ja": "方程式 x³ + x − 1 = 0 が 0 と 1 の間に実数解をもつことを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "存在を示すには例が 1 つあれば足りるが、「すべての…」を示すときは例をいくつ挙げても証明にならない。",
+    "数III の中間値の定理を使って「解が存在することを示せ」と答えるのは、解を具体的に求めない（非構成的な）存在証明にあたる。",
+    "用例コーパスでも参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）でも existence proof は 0 件。"
+  ],
+  "related": [
+    "uniqueness-proof",
+    "exist",
+    "existential-quantifier",
+    "intermediate-value-theorem"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

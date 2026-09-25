@@ -1,0 +1,98 @@
+{
+  "id": "density",
+  "ja": {
+    "term": "密度",
+    "reading": "みつど",
+    "alt": []
+  },
+  "en": {
+    "term": "density",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "小学校"
+    ],
+    "us": [
+      "Geometry",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "単位体積あたりの質量や単位面積あたりの人数のように、ある量が単位の大きさあたりどれだけあるかを表す量。質量の密度は、質量を体積で割って求める。",
+  "definition_en": "The amount of something per unit of volume or area, such as grams per cubic centimeter or people per square mile. For mass, density equals mass divided by volume.",
+  "latex": "\\text{density} = \\frac{\\text{mass}}{\\text{volume}}",
+  "spoken_en": "density equals mass over volume",
+  "examples": [
+    {
+      "en": "Density is just mass per unit volume, so divide the mass by the volume and keep the units, like grams per cubic centimeter.",
+      "ja": "密度は単位体積あたりの質量だから、質量を体積で割ろう。単位も g/cm³ のように付けておくこと。",
+      "register": "spoken"
+    },
+    {
+      "en": "A town has 12,000 people living in an area of 15 square miles. Find the population density of the town.",
+      "ja": "面積 15 平方マイルの町に 12,000 人が住んでいる。この町の人口密度を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "単位は per で読む。g/cm³ は grams per cubic centimeter、人口密度は people per square mile のように言う。",
+    "統計の確率密度（probability density）や密度曲線（density curve）は別の意味で、別エントリ。用例コーパスの件数（話し言葉 83 件、書き言葉 136 件、うち OpenStax Calculus 128 件）はそれらの形を除いて数えた。",
+    "IM Geometry は 5.17 Volume and Density で 15 件使い、glossary にも入れる。"
+  ],
+  "related": [
+    "density-curve",
+    "probability-density-function"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry glossary"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "!probability !exponential !kernel density !function !functions !curve !curves !plot !plots": 83
+    },
+    "written": {
+      "!probability !exponential !kernel density !function !functions !curve !curves !plot !plots": 136
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

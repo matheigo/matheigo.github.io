@@ -1,0 +1,79 @@
+{
+  "id": "extended-euclidean-algorithm",
+  "ja": {
+    "term": "拡張ユークリッド互除法",
+    "reading": "かくちょうゆーくりっどごじょほう",
+    "alt": []
+  },
+  "en": {
+    "term": "extended Euclidean algorithm",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "ユークリッドの互除法の計算を使って、gcd(a, b) だけでなく ax + by = gcd(a, b) を満たす整数 x, y も求める手順のこと。互除法の各段の式を逆にたどって x, y を得る。",
+  "definition_en": "A version of the Euclidean algorithm that finds not only gcd(a, b) but also integers x and y with ax + by = gcd(a, b). The values of x and y come from working back through the division steps.",
+  "latex": "9 \\cdot 7 - 2 \\cdot 31 = 1",
+  "spoken_en": "nine times seven minus two times thirty-one equals one",
+  "examples": [
+    {
+      "en": "Once you get a remainder of 1, work backward through the steps. That's the extended Euclidean algorithm.",
+      "ja": "余りが 1 になったら、式を逆にたどっていこう。これが拡張ユークリッド互除法だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the extended Euclidean algorithm to find integers x and y such that 31x + 7y = 1.",
+      "ja": "互除法を用いて、31x + 7y = 1 を満たす整数 x, y の組を 1 つ求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "数A の一次不定方程式では、この手順を名前を付けずに「互除法の式を逆にたどる」形で使う。",
+    "求まる (x, y) は 1 組だけ。d = gcd(a, b) とすると、ほかの整数解は x を b/d ずつ、y を a/d ずつ逆向きにずらして得られる。",
+    "用例コーパスでも参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）でも 0 件。"
+  ],
+  "related": [
+    "euclidean-algorithm",
+    "bezouts-identity",
+    "linear-diophantine-equation",
+    "modular-inverse",
+    "greatest-common-divisor"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "truth-table",
+  "ja": {
+    "term": "真理値表",
+    "reading": "しんりちひょう",
+    "alt": []
+  },
+  "en": {
+    "term": "truth table",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "もとになる命題の真偽のすべての組み合わせを行に並べ、それぞれについて全体の命題の真偽を書いた表のこと。",
+  "definition_en": "A table that lists every combination of truth values for the component statements and shows the truth value of the whole statement in each row.",
+  "latex": "\\begin{array}{cc|c} p & q & p \\land q \\\\ \\hline T & T & T \\\\ T & F & F \\\\ F & T & F \\\\ F & F & F \\end{array}",
+  "spoken_en": "p, q, p and q: true, true, true; true, false, false; false, true, false; false, false, false",
+  "examples": [
+    {
+      "en": "With two statements you need four rows in your truth table, and with three statements you need eight.",
+      "ja": "命題が 2 つなら真理値表は 4 行、3 つなら 8 行必要だよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Make a truth table for p ∨ ¬q.",
+      "ja": "p ∨ ¬q の真理値表を作れ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数I では命題の真偽を集合の包含関係（ベン図）で調べ、真理値表は使わない。",
+    "表の T ／ F は true ／ false と読む。行の数はもとの命題が n 個なら 2ⁿ 行。",
+    "用例コーパスで truth table は話し言葉 3 件（MIT OCW）、書き言葉 20 件（MIT の講義ノート）。CK-12 Geometry では 35 件（2.8 Truth Tables ほか）、Levin の本では 74 件。"
+  ],
+  "related": [
+    "truth-value",
+    "logical-connective",
+    "tautology",
+    "biconditional"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "真理値表",
+      "en": "Truth table"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.8 Truth Tables"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "truth table": 3
+    },
+    "written": {
+      "truth table": 20
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "universal-quantifier",
+  "ja": {
+    "term": "全称量化子",
+    "reading": "ぜんしょうりょうかし",
+    "alt": [
+      "全称記号"
+    ]
+  },
+  "en": {
+    "term": "universal quantifier",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic",
+    "notation"
+  ],
+  "level": {
+    "jp": [
+      "数I",
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "「すべての x について」を表す量化子で、記号 ∀ で書く。∀x P(x) は、考えている範囲のどの x についても P(x) が真であることを表す。",
+  "definition_en": "The quantifier \"for all,\" written ∀. The statement ∀x P(x) says that P(x) is true for every x in the domain.",
+  "latex": "\\forall x \\in \\mathbb{R},\\ x^2 \\ge 0",
+  "spoken_en": "for all x in the real numbers, x squared is greater than or equal to zero",
+  "examples": [
+    {
+      "en": "The upside-down A is the universal quantifier, so read it as \"for all\" or \"for every.\"",
+      "ja": "逆さまの A は全称記号だから、「すべての」と読もう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Rewrite the statement \"Every integer is a rational number\" using the universal quantifier.",
+      "ja": "命題「すべての整数は有理数である」を、全称記号を用いて書き直せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "式の中の ∀ は for all や for every と読む。",
+    "¬∀x P(x) は ∃x ¬P(x) と同じ。数I の「すべての…」の否定が「ある…でない」になるのと同じ規則。",
+    "用例コーパスで universal quantifier は書き言葉 2 件（OpenStax Calculus 1・MIT の講義ノート 1）、話し言葉 0 件。Levin の本では 8 件。"
+  ],
+  "related": [
+    "quantifier",
+    "existential-quantifier",
+    "all",
+    "predicate"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "全称記号",
+      "en": "Universal quantification"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "universal quantifier": 2
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは OpenStax の呼び方 universal quantifier（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

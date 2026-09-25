@@ -367,7 +367,7 @@ function main() {
         code: "corpus-undecided",
         note:
           c.collection === "terms"
-            ? `コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`
+            ? `コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`
             : `コーパスで決まらない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`,
         raised: TODAY,
       } as { code: string });
@@ -468,7 +468,7 @@ function main() {
     "## ③ のうち規則で決着したもの",
     "",
     "話・書とも判断不能のうち、mapping が near ／ none で全候補の合計が話・書とも 10 件未満のものは「英語に決まった言い方がない」",
-    "（corpus-no-fixed-expression）。それ以外は見出しを CED（AP Calculus ／ AP Statistics）の呼び方、無ければ OpenStax と IM の呼び方（同じ段。本文・節の名前・レッスン・glossary の件数の多い候補）、",
+    "（corpus-no-fixed-expression）。それ以外は見出しを CED（AP Calculus ／ AP Statistics）の呼び方、無ければ OpenStax・IM・CK-12 の呼び方（同じ段。本文・節の名前・レッスン・glossary の件数の多い候補。参照のどれかが候補を 3 件以上使う語は「決まった言い方がない」にしない）、",
     "無ければ Nicholson ／ Levin の呼び方、無ければ英語版 Wikipedia の記事名で決める",
     "（corpus-reference-fallback）。どちらも register は主張せず、人間レビューに回さない。",
     "",
@@ -504,7 +504,7 @@ function main() {
     "",
     "週 30 分で見るのはここだけ。",
     "",
-    "## ③ コーパスで決まらず、CED・OpenStax・IM・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がないもの",
+    "## ③ コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がないもの",
     "",
     undecided.length ? "| 項目 | 話し言葉 | 書き言葉 |\n|---|---|---|" : "なし。",
     ...undecided.map((l) => cells(l.key, describe(l.spoken), describe(l.written))),

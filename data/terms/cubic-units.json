@@ -1,0 +1,89 @@
+{
+  "id": "cubic-units",
+  "ja": {
+    "term": "立方単位",
+    "reading": "りっぽうたんい",
+    "alt": []
+  },
+  "en": {
+    "term": "cubic units",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「立方単位」は日本の教科書に無い、本プロジェクトの訳語。日本では cm³・m³ のように決まった単位で答える。英語の問題では単位を決めずに、1 辺 1 の立方体いくつ分かを cubic units で答えさせることがある。用例コーパスで cubic units は書き言葉 17 件（OpenStax Calculus 10 ほか）、units cubed は話し言葉 5 件・書き言葉 4 件。",
+  "domains": [
+    "geometry",
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "小学校"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "1 辺の長さが 1 単位の立方体を 1 つと数えて体積を表すときの単位。長さの単位が決まっていない問題で、体積を「いくつ分」で答えるのに使う。",
+  "definition_en": "The unit used to measure volume by counting cubes whose edges are 1 unit long. It is used to give a volume when no specific unit of length, such as centimeters, is stated.",
+  "latex": "V = 2 \\cdot 3 \\cdot 4 = 24 \\text{ units}^3",
+  "spoken_en": "V equals 2 times 3 times 4, which is 24 cubic units",
+  "examples": [
+    {
+      "en": "Count the little cubes in each layer and multiply by the number of layers. There are 24 of them, so the volume is 24 cubic units.",
+      "ja": "1 段に並んだ小さな立方体の数に段の数をかけよう。全部で 24 個だから、体積は 24 立方単位だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A rectangular prism has length 5, width 3, and height 2. Find its volume in cubic units.",
+      "ja": "縦 5、横 3、高さ 2 の直方体がある。この直方体の体積を求めよ（単位は立方単位）。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の問題では体積を cm³ や m³ で答え、「立方単位」とは言わない。英語の問題文が in cubic units と指定していたら、答えにも cubic units を付ける。",
+    "記号では units³ と書き、units cubed と読むこともある。面積の square units と取り違えない。",
+    "用例コーパスで cubic units は話し言葉 4 件（Khan Academy 3・MIT OCW 1）、書き言葉 17 件（OpenStax Calculus 10・OpenStax Prealgebra 6 ほか）。IM では 99 件（Geometry 5.7 The Root of the Problem 18 ほか）。"
+  ],
+  "related": [
+    "square-units",
+    "area"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "cubic units": 4
+    },
+    "written": {
+      "cubic units": 17
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  }
+}

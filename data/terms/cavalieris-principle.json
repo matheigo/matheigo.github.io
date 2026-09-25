@@ -1,0 +1,86 @@
+{
+  "id": "cavalieris-principle",
+  "ja": {
+    "term": "カヴァリエリの原理",
+    "reading": "かゔぁりえりのげんり",
+    "alt": []
+  },
+  "en": {
+    "term": "Cavalieri's principle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry",
+    "calculus"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "2 つの立体を底面に平行な平面で切ったとき、どの高さでも断面積が等しければ、2 つの立体の体積は等しいという原理。",
+  "definition_en": "If two solids have the same height and every plane parallel to their bases cuts them in cross sections of equal area, then the two solids have the same volume.",
+  "latex": "A_1(h) = A_2(h) \\text{ for all } h \\implies V_1 = V_2",
+  "spoken_en": "if A one of h equals A two of h for every h, then V one equals V two",
+  "examples": [
+    {
+      "en": "Think of a stack of coins. If you push it so it leans, every coin still has the same area, so by Cavalieri's principle the volume doesn't change.",
+      "ja": "コインを積んだ山を思い浮かべよう。押して斜めにしても、どのコインの面積も変わらない。だからカヴァリエリの原理で体積は変わらない。",
+      "register": "spoken"
+    },
+    {
+      "en": "A right cylinder and an oblique cylinder both have radius 3 and height 10. Use Cavalieri's principle to explain why they have the same volume.",
+      "ja": "半径 3、高さ 10 の直円柱と斜円柱がある。カヴァリエリの原理を用いて、2 つの体積が等しい理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語では人名の所有格で Cavalieri's principle と書き、C は大文字。",
+    "断面積を積分して体積を求める方法と同じ考え方で、断面積が等しければ積分の値（体積）も等しくなる。",
+    "IM Geometry は glossary に入れ、5.10 Cross Sections and Volume ほかで 4 件使う。用例コーパスでは話・書とも 10 件未満。"
+  ],
+  "related": [
+    "cross-section",
+    "volume-by-cross-sections",
+    "cross-sectional-area"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "カヴァリエリの原理",
+      "en": "Cavalieri's principle"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry glossary・Geometry 5.10 Cross Sections and Volume"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 Cavalieri's principle（Geometry glossary・Geometry 5.10 Cross Sections and Volume・Geometry 5.11 Prisms Practice・計 4 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "uniqueness-proof",
+  "ja": {
+    "term": "一意性の証明",
+    "reading": "いちいせいのしょうめい",
+    "alt": []
+  },
+  "en": {
+    "term": "proof of uniqueness",
+    "alt": [
+      "uniqueness proof"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（proof of uniqueness ／ uniqueness proof は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "domains": [
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math",
+      "Linear Algebra"
+    ]
+  },
+  "definition_ja": "条件を満たすものが高々 1 つしかないことを示す証明のこと。ふつうは条件を満たすものを 2 つ x, y とおき、x = y を導く。",
+  "definition_en": "A proof that at most one object satisfies a given condition. The usual approach is to assume that two objects x and y both satisfy it and then show that x = y.",
+  "latex": "P(x) \\land P(y) \\Rightarrow x = y",
+  "spoken_en": "P of x and P of y implies x equals y",
+  "examples": [
+    {
+      "en": "For the proof of uniqueness, suppose two numbers both work, call them x and y, and show that x has to equal y.",
+      "ja": "一意性の証明では、条件を満たす数が 2 つあるとして x, y とおき、x = y となることを示そう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let a be a real number. Give a proof of uniqueness for the real number b with a + b = 0: assume that a + b = 0 and a + c = 0, and show that b = c.",
+      "ja": "実数 a に対し、a + b = 0 を満たす実数 b はただ 1 つであることを証明せよ。a + b = 0, a + c = 0 と仮定して b = c を示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「ただ 1 つ存在する」を示すには、存在の証明（existence proof）と一意性の証明の 2 つが要る。一意性だけでは、条件を満たすものが 1 つもない場合を除けない。",
+    "記号 ∃! x は there exists a unique x と読む。「一意」は unique、「一意性」は uniqueness。",
+    "用例コーパスでは話・書とも 0 件。参照では Nicholson の 11.2 The Jordan Canonical Form に proof of uniqueness が 1 件あるだけ。"
+  ],
+  "related": [
+    "existence-proof",
+    "prove",
+    "existential-quantifier"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "11.2 The Jordan Canonical Form"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 proof of uniqueness（11.2 The Jordan Canonical Form）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

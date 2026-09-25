@@ -1,0 +1,90 @@
+{
+  "id": "well-ordering-principle",
+  "ja": {
+    "term": "整列原理",
+    "reading": "せいれつげんり",
+    "alt": [
+      "整列性",
+      "自然数の整列性"
+    ]
+  },
+  "en": {
+    "term": "well-ordering principle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（well-ordering principle は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "domains": [
+    "proof",
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "正の整数からなる空でない集合には、必ず最小の要素があるという性質。数学的帰納法と同値で、「最小の反例」をとる背理法の証明に使う。",
+  "definition_en": "The principle that every nonempty set of positive integers has a smallest element. It is equivalent to induction and is used in proofs that pick a smallest counterexample.",
+  "latex": "\\varnothing \\neq S \\subseteq \\mathbb{N} \\implies S \\text{ has a least element}",
+  "spoken_en": "if S is a nonempty subset of the natural numbers, then S has a least element",
+  "examples": [
+    {
+      "en": "Suppose there's a counterexample. By the well-ordering principle, there has to be a smallest one, so let's call it n.",
+      "ja": "反例があると仮定しよう。整列原理により最小の反例があるはずだから、それを n とおく。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the well-ordering principle to prove that every integer n ≥ 2 has a prime factor.",
+      "ja": "整列原理を用いて、2 以上のすべての整数 n は素因数をもつことを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "整数全体や正の実数では成り立たない。負の整数全体にも、区間 (0, 1) にも最小の要素は無い。",
+    "英語の natural numbers が 0 を含むかは本によるが、整列原理はどちらでも成り立つ。",
+    "用例コーパスでは話・書とも 1 件（MIT）。CED・OpenStax・IM・CK-12 では 0 件。見出しは英語版 Wikipedia の記事名。"
+  ],
+  "related": [
+    "proof-by-induction",
+    "strong-induction",
+    "proof-by-contradiction"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "well-ordering principle": 1
+    },
+    "written": {
+      "well-ordering principle": 1
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは Wikipedia の記事名 well-ordering principle（英語版「Well-ordering principle」、en.term のリダイレクト先）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

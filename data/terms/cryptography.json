@@ -1,0 +1,85 @@
+{
+  "id": "cryptography",
+  "ja": {
+    "term": "暗号",
+    "reading": "あんごう",
+    "alt": [
+      "暗号理論",
+      "暗号学"
+    ]
+  },
+  "en": {
+    "term": "cryptography",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "情報を第三者に読めない形に変え（暗号化）、正しい相手だけが元に戻せる（復号）ようにする方法とその理論。数学では合同式や素数の性質を使う RSA 暗号などを扱う。",
+  "definition_en": "The study of methods for encoding information so that only the intended receiver can decode it. In math courses it usually appears through modular arithmetic and primes, as in RSA.",
+  "latex": "c \\equiv m^{e} \\pmod{n}",
+  "spoken_en": "c is congruent to m to the e mod n",
+  "examples": [
+    {
+      "en": "Today we'll see why primes matter in cryptography: RSA relies on the fact that multiplying two big primes is easy, but factoring the product is hard.",
+      "ja": "今日は素数が暗号でなぜ大事かを見よう。RSA は、大きな素数 2 つをかけるのは簡単でも、その積を素因数分解するのは難しいことを利用している。",
+      "register": "spoken"
+    },
+    {
+      "en": "In public-key cryptography, the encryption key may be made public, but the decryption key must be kept secret.",
+      "ja": "公開鍵暗号では、暗号化の鍵は公開してよいが、復号の鍵は秘密にしておかなければならない。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「暗号」1 語は、分野としての cryptography にも、個々の方式（cipher。Caesar cipher など）にも当たる。",
+    "暗号化は encryption（動詞 encrypt）、復号は decryption（動詞 decrypt）。",
+    "用例コーパスでは書き言葉 11 件（MIT の講義ノート 9・OpenStax Algebra and Trigonometry 2）、話し言葉 8 件（MIT OCW）。Levin（6.2 Introduction to Number Theory）と Nicholson（8.8 An Application to Linear Codes over Finite Fields）には各 1 件。"
+  ],
+  "related": [
+    "fermats-little-theorem",
+    "modular-inverse",
+    "modulus",
+    "prime-factorization"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "cryptography": 8
+    },
+    "written": {
+      "cryptography": 11
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  }
+}

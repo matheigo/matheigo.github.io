@@ -1,0 +1,84 @@
+{
+  "id": "cartesian-product",
+  "ja": {
+    "term": "直積",
+    "reading": "ちょくせき",
+    "alt": [
+      "直積集合",
+      "デカルト積"
+    ]
+  },
+  "en": {
+    "term": "Cartesian product",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "set-theory"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "集合 A, B に対し、a ∈ A, b ∈ B である順序対 (a, b) 全体の集合 A × B のこと。A, B の要素がそれぞれ m 個、n 個なら、A × B の要素は mn 個ある。",
+  "definition_en": "For sets A and B, the set A × B of all ordered pairs (a, b) with a in A and b in B. If A has m elements and B has n elements, then A × B has mn elements.",
+  "latex": "A \\times B = \\{(a, b) \\mid a \\in A,\\ b \\in B\\}",
+  "spoken_en": "A cross B equals the set of all ordered pairs a comma b such that a is in A and b is in B",
+  "examples": [
+    {
+      "en": "The xy-plane is really just the Cartesian product of the real line with itself, R cross R.",
+      "ja": "xy 平面は、実は数直線とそれ自身の直積 R × R にほかならない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let A = {1, 2} and B = {x, y, z}. List the elements of the Cartesian product A × B.",
+      "ja": "A = {1, 2}, B = {x, y, z} とする。直積 A × B の要素をすべて書き出せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "A × B と B × A はふつう等しくない。(1, x) と (x, 1) は別の順序対である。",
+    "Descartes にちなむ名前なので、英語では Cartesian を大文字で書き始める（「デカルト積」）。",
+    "用例コーパスでは書き言葉 1 件（OpenStax Calculus）、話し言葉 0 件。Levin の本では 5 件（5.1 Sets に 3 件ほか）。"
+  ],
+  "related": [
+    "set",
+    "coordinates"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "Cartesian product": 1
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 Cartesian product（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

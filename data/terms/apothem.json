@@ -1,0 +1,84 @@
+{
+  "id": "apothem",
+  "ja": {
+    "term": "辺心距離",
+    "reading": "へんしんきょり",
+    "alt": []
+  },
+  "en": {
+    "term": "apothem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "正多角形の中心から 1 辺に下ろした垂線の長さ。正多角形の内接円の半径に等しい。",
+  "definition_en": "The distance from the center of a regular polygon to any of its sides, measured along a perpendicular. It equals the radius of the polygon's inscribed circle.",
+  "latex": "a = \\frac{s}{2\\tan(180^\\circ/n)}",
+  "spoken_en": "a equals s over two tangent of one hundred eighty degrees over n",
+  "examples": [
+    {
+      "en": "The apothem goes from the center straight to the middle of a side, so it makes a right angle with that side.",
+      "ja": "辺心距離は中心から辺のまん中までまっすぐ引いた線だから、その辺と直角に交わる。",
+      "register": "spoken"
+    },
+    {
+      "en": "A regular hexagon has side length 8. Find the apothem.",
+      "ja": "1 辺の長さが 8 の正六角形の辺心距離を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "辺心距離は正多角形の内接円の半径と同じ長さ。日本の問題で「内接円の半径」と書かれている長さが、英語の apothem にあたることがある。",
+    "apothem（中心から辺まで）と radius（中心から頂点まで）を取り違えない。正六角形では radius は 1 辺の長さと等しく、apothem は 1 辺の (√3/2) 倍。",
+    "CK-12 Geometry では 5.21 Area of Regular and Irregular Polygons に 19 件。用例コーパスでは話・書とも 10 件未満。"
+  ],
+  "related": [
+    "area-of-a-regular-polygon",
+    "inscribed-circle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "辺心距離",
+      "en": "Apothem"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "5.21 Area of Regular and Irregular Polygons"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 apothem（CK-12 Geometry 5.21 Area of Regular and Irregular Polygons・計 19 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

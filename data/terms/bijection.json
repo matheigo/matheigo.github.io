@@ -1,0 +1,92 @@
+{
+  "id": "bijection",
+  "ja": {
+    "term": "全単射",
+    "reading": "ぜんたんしゃ",
+    "alt": []
+  },
+  "en": {
+    "term": "bijection",
+    "alt": [
+      "one-to-one correspondence",
+      "bijective function"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "set-theory",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "単射（1 対 1）かつ全射（上への写像）である写像のこと。行き先の集合のどの要素にも、元の集合のちょうど 1 つの要素が対応する。",
+  "definition_en": "A function that is both one-to-one (injective) and onto (surjective). Every element of the target set is matched with exactly one element of the domain.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To show it's a bijection, you need two things: it's one-to-one, and it's onto.",
+      "ja": "全単射であることを示すには 2 つ必要だ。単射であることと、全射であることだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that f: ℝ → ℝ, f(x) = 2x + 1, is a bijection, and find its inverse.",
+      "ja": "f: ℝ → ℝ, f(x) = 2x + 1 が全単射であることを示し、逆関数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "one-to-one だけなら単射（injective）の意味。one-to-one correspondence（1 対 1 の対応）は全単射の意味で、別物である。",
+    "全単射であることと、逆関数（inverse function）が存在することは同値。",
+    "用例コーパスでは bijection が話し言葉 39 件（すべて MIT OCW）、書き言葉 54 件（すべて MIT の講義ノート）。one-to-one correspondence は話・書とも 1 件ずつ（3Blue1Brown・OpenStax Algebra and Trigonometry）。"
+  ],
+  "related": [
+    "one-to-one",
+    "inverse-function",
+    "onto",
+    "countable"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "全単射",
+      "en": "Bijection"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "bijection": 39,
+      "bijective function": 2,
+      "one-to-one correspondence": 1
+    },
+    "written": {
+      "one-to-one correspondence": 1,
+      "bijection": 54
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

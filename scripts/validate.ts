@@ -104,6 +104,8 @@ const SAME_JA: [string, string, string][] = [
   ["三角不等式", "triangle-inequality", "trigonometric-inequality"],
   // 集合の要素 ／ 行列の成分 (Phase 2 幾何・離散の単元)
   ["要素", "element", "entry"],
+  // 線形写像の像（列空間） ／ 変換で移った図形 (Phase 2 幾何・離散の単元 3)
+  ["像", "column-space", "image"],
 ];
 
 // ------------------------------------------------------------ per-entry ----

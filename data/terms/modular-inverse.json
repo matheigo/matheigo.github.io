@@ -1,0 +1,96 @@
+{
+  "id": "modular-inverse",
+  "ja": {
+    "term": "モジュラ逆数",
+    "reading": "もじゅらぎゃくすう",
+    "alt": [
+      "逆元"
+    ]
+  },
+  "en": {
+    "term": "modular multiplicative inverse",
+    "alt": [
+      "modular inverse",
+      "inverse modulo",
+      "multiplicative inverse modulo"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（modular multiplicative inverse ／ modular inverse ／ inverse modulo ／ multiplicative inverse modulo は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "整数 a と法 n について、ax ≡ 1 (mod n) を満たす整数 x のこと。a と n が互いに素のときに限って存在し、n を法としてただ 1 つに定まる。",
+  "definition_en": "An integer x with ax ≡ 1 (mod n), for a given integer a and modulus n. It exists exactly when a and n are relatively prime, and it is unique modulo n.",
+  "latex": "a x \\equiv 1 \\pmod{n}",
+  "spoken_en": "a x is congruent to 1 mod n",
+  "examples": [
+    {
+      "en": "Three times five is fifteen, and fifteen leaves a remainder of one when you divide by seven, so five is the modular multiplicative inverse of three mod seven.",
+      "ja": "3 × 5 = 15 で、15 を 7 で割った余りは 1。だから 7 を法とする 3 の逆元は 5 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the extended Euclidean algorithm to find the modular multiplicative inverse of 17 modulo 43.",
+      "ja": "拡張ユークリッドの互除法を用いて、43 を法とする 17 の逆元を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「逆数」とあっても分数 1/a ではなく整数である。英語でも multiplicative inverse だけでは実数の逆数 1/a と区別がつかないので、modulo n を付けて言う。",
+    "a と n が互いに素でなければ存在しない。たとえば 4 を法とする 2 の逆元は無い（2x は常に偶数）。",
+    "用例コーパスで見出しの modular multiplicative inverse と modular inverse は 0 件。inverse modulo が話し言葉 2 件・書き言葉 2 件、multiplicative inverse modulo が各 1 件（すべて MIT）。見出しは英語版 Wikipedia の記事名。"
+  ],
+  "related": [
+    "bezouts-identity",
+    "extended-euclidean-algorithm",
+    "modulus",
+    "relatively-prime",
+    "euclidean-algorithm"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "inverse modulo": 2,
+      "multiplicative inverse modulo": 1
+    },
+    "written": {
+      "inverse modulo": 2,
+      "multiplicative inverse modulo": 1
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは Wikipedia の記事名 modular multiplicative inverse（英語版「Modular multiplicative inverse」、ja の langlink 先）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

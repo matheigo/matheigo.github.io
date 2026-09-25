@@ -1,0 +1,89 @@
+{
+  "id": "without-loss-of-generality",
+  "ja": {
+    "term": "一般性を失わずに",
+    "reading": "いっぱんせいをうしなわずに",
+    "alt": [
+      "一般性を失うことなく"
+    ]
+  },
+  "en": {
+    "term": "without loss of generality",
+    "alt": [
+      "WLOG"
+    ],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "いくつかの場合のうち 1 つを示せば残りも対称性などで同じように示せるとき、その 1 つの場合に絞って議論することを断る言い方。「一般性を失わずに a ≤ b としてよい」のように使う。",
+  "definition_en": "A phrase used in a proof to restrict attention to one case, because the other cases follow in the same way, often by symmetry. For example, \"Without loss of generality, assume a ≤ b.\"",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The roles of x and y are symmetric here, so without loss of generality, let's say x is the bigger one.",
+      "ja": "ここでは x と y の役割が対称なので、一般性を失わずに x のほうが大きいとしよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let a and b be real numbers with a ≠ b. Without loss of generality, assume a < b.",
+      "ja": "a, b を a ≠ b である実数とする。一般性を失わずに a < b としてよい。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "使えるのは、残りの場合が文字の入れ替えなどで同じ議論になるときだけ。場合ごとに議論が変わるなら、場合分け（proof by cases）で全部書く。",
+    "書き言葉では略して WLOG と書くことがある。",
+    "用例コーパスでは話し言葉 5 件（すべて MIT OCW）、書き言葉 2 件（OpenStax Calculus）。Levin の本でも 1.4 Proofs に 1 件。"
+  ],
+  "related": [
+    "prove",
+    "proof-by-cases"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "without loss of generality": 5
+    },
+    "written": {
+      "without loss of generality": 2
+    },
+    "sources": [
+      "mit-6.042",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは OpenStax の呼び方 without loss of generality（本文 2 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

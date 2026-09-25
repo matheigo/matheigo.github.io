@@ -1,0 +1,87 @@
+{
+  "id": "composite-figure",
+  "ja": {
+    "term": "複合図形",
+    "reading": "ふくごうずけい",
+    "alt": [
+      "合成図形",
+      "組み合わせた図形"
+    ]
+  },
+  "en": {
+    "term": "composite figure",
+    "alt": [
+      "composite shape"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の教科書は「いくつかの図形を組み合わせた図形」と説明することが多く、決まった名前を使わない。英語の composite figure は、面積や体積を部分に分けて求める図形の名前。CK-12 Geometry は composite figure と呼ぶ（5.18 Area and Perimeter of Composite Shapes ほか、11 件）。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "小学校"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "長方形・三角形・円などの基本的な図形を組み合わせてできた図形。面積や体積は、基本的な図形に分けて足したり引いたりして求める。",
+  "definition_en": "A figure made up of two or more basic shapes, such as rectangles, triangles, and circles. Its area or volume is found by splitting it into those shapes and adding or subtracting.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Break the composite figure into a rectangle and a semicircle, find each area, and then add them up.",
+      "ja": "この図形は長方形と半円に分けて、それぞれの面積を求めてから足そう。",
+      "register": "spoken"
+    },
+    {
+      "en": "The composite figure is a 10 cm by 6 cm rectangle with a semicircle attached to one of the 6 cm sides. Find its area. Use 3.14 for π.",
+      "ja": "縦 6 cm、横 10 cm の長方形の 6 cm の辺に半円をつなげた図形がある。この図形の面積を求めよ。ただし、円周率は 3.14 とする。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "CK-12 Geometry は composite figure（11 件）と composite shape（10 件）をほぼ同じくらい使う。節の名前は 5.18 Area and Perimeter of Composite Shapes。",
+    "周の長さ（perimeter）を求めるときは、図形どうしがくっついている内側の辺を数えない。",
+    "用例コーパスでは話・書とも 10 件未満で、見出しは CK-12 Geometry の件数で決めた。"
+  ],
+  "related": [
+    "area"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "5.18 Area and Perimeter of Composite Shapes"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 composite figure（CK-12 Geometry 6.7 Areas of Combined Figures Involving Semicircles・CK-12 Geometry 5.18 Area and Perimeter of Composite Shapes・CK-12 Geometry 1.2 Shapes・計 11 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

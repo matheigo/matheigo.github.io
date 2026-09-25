@@ -1,0 +1,88 @@
+{
+  "id": "divisibility",
+  "ja": {
+    "term": "整除性",
+    "reading": "せいじょせい",
+    "alt": [
+      "整除",
+      "割り切れること"
+    ]
+  },
+  "en": {
+    "term": "divisibility",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "number-theory"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "整数 a が整数 b で割り切れるかどうか、つまり a = bk となる整数 k があるかどうかという性質のこと。b が a を割り切ることを b | a と書く。",
+  "definition_en": "The property of one integer dividing another evenly: b divides a when a = bk for some integer k. This is written b | a.",
+  "latex": "b \\mid a \\iff a = bk \\text{ for some integer } k",
+  "spoken_en": "b divides a if and only if a equals b k for some integer k",
+  "examples": [
+    {
+      "en": "Let's check divisibility by 3: add up the digits and see if the sum is a multiple of 3.",
+      "ja": "3 で割り切れるかどうかを調べよう。各位の数字を足して、その和が 3 の倍数かどうかを見る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the definition of divisibility to prove that if 6 | n, then 3 | n.",
+      "ja": "n が 6 の倍数ならば 3 の倍数でもあることを、倍数の定義を用いて証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "b | a は「b が a を割り切る」（b divides a）で、縦棒の左が約数。分数 b/a や a ÷ b と読み違えない。",
+    "数A では「a は b で割り切れる」「a は b の倍数」と言い、divisibility に当たる名詞はあまり使わない。",
+    "用例コーパスでは書き言葉 33 件（OpenStax Prealgebra 15・MIT の講義ノート 11・OpenStax Elementary Algebra 7）、話し言葉 7 件。"
+  ],
+  "related": [
+    "divisibility-rules",
+    "remainder",
+    "euclidean-algorithm",
+    "multiple",
+    "greatest-common-divisor"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "divisibility": 7
+    },
+    "written": {
+      "divisibility": 33
+    },
+    "sources": [
+      "mit-6.042",
+      "mit-notes",
+      "openstax-elemalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

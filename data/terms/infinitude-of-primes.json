@@ -1,0 +1,87 @@
+{
+  "id": "infinitude-of-primes",
+  "ja": {
+    "term": "素数の無限性",
+    "reading": "そすうのむげんせい",
+    "alt": [
+      "素数が無限に存在すること"
+    ]
+  },
+  "en": {
+    "term": "Euclid's theorem",
+    "alt": [
+      "infinitude of primes",
+      "infinitely many primes"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（Euclid's theorem ／ infinitude of primes ／ infinitely many primes は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "domains": [
+    "number-theory",
+    "proof"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "素数は無限に多く存在するという定理。素数が有限個しかないと仮定し、それらすべての積に 1 を足した数を考えて矛盾を導く背理法の証明がよく知られている。",
+  "definition_en": "The theorem that there are infinitely many prime numbers. The classic proof assumes there are only finitely many, multiplies them all together, adds 1, and reaches a contradiction.",
+  "latex": "N = p_1 p_2 \\cdots p_n + 1",
+  "spoken_en": "N equals p sub 1 times p sub 2 times dot dot dot times p sub n, plus 1",
+  "examples": [
+    {
+      "en": "Euclid's theorem says the primes never run out, and its proof is a classic example of proof by contradiction.",
+      "ja": "ユークリッドの定理は素数が尽きないことを言っていて、その証明は背理法の代表例だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove Euclid's theorem: there are infinitely many primes.",
+      "ja": "素数は無限に存在することを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "証明で作る p₁p₂⋯pₙ + 1 そのものが素数とは限らない。2 × 3 × 5 × 7 × 11 × 13 + 1 = 30031 = 59 × 509。",
+    "「素数は無限にある」を infinite primes とすると「無限大の素数」と読めるので、there are infinitely many primes と言う。",
+    "用例コーパスで Euclid's theorem と infinitude of primes は話・書とも 0 件、infinitely many primes が書き言葉 2 件（MIT の講義ノート）。見出しは英語版 Wikipedia の記事名。"
+  ],
+  "related": [
+    "prime-factorization",
+    "proof-by-contradiction"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "infinitely many primes": 2
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは Wikipedia の記事名 Euclid's theorem（英語版「Euclid's theorem」、en.term のリダイレクト先）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

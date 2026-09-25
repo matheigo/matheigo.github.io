@@ -1,0 +1,91 @@
+{
+  "id": "existential-quantifier",
+  "ja": {
+    "term": "存在量化子",
+    "reading": "そんざいりょうかし",
+    "alt": [
+      "存在記号"
+    ]
+  },
+  "en": {
+    "term": "existential quantifier",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic",
+    "notation"
+  ],
+  "level": {
+    "jp": [
+      "数I",
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "「ある x について」「x が存在する」を表す量化子で、記号 ∃ で書く。∃x P(x) は、P(x) を真にする x が少なくとも 1 つあることを表す。",
+  "definition_en": "The quantifier \"there exists,\" written ∃. The statement ∃x P(x) says that at least one x in the domain makes P(x) true.",
+  "latex": "\\exists x \\in \\mathbb{R},\\ x^2 = 2",
+  "spoken_en": "there exists x in the real numbers such that x squared equals two",
+  "examples": [
+    {
+      "en": "The backward E is the existential quantifier, so read this line as \"there exists an x such that…\"",
+      "ja": "裏返しの E は存在記号だから、この行は「…となる x が存在する」と読もう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the statement \"Some real number x satisfies x² = 2\" using the existential quantifier, and decide whether it is true.",
+      "ja": "命題「x² = 2 を満たす実数 x が存在する」を存在記号を用いて書き、その真偽を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "∃ は「少なくとも 1 つある」の意味で、ちょうど 1 つを言うときは ∃! と書く。",
+    "¬∃x P(x) は ∀x ¬P(x) と同じ。数I の「ある…」の否定が「すべての…でない」になるのと同じ規則。",
+    "用例コーパスで existential quantifier は書き言葉 2 件（OpenStax Calculus 1・MIT の講義ノート 1）、話し言葉 0 件。Levin の本では 4 件。"
+  ],
+  "related": [
+    "quantifier",
+    "universal-quantifier",
+    "exist",
+    "predicate",
+    "existence-proof"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "存在記号",
+      "en": "Existential quantification"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "existential quantifier": 2
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは OpenStax の呼び方 existential quantifier（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "power-set",
+  "ja": {
+    "term": "べき集合",
+    "reading": "べきしゅうごう",
+    "alt": [
+      "冪集合"
+    ]
+  },
+  "en": {
+    "term": "power set",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（power set は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "domains": [
+    "set-theory"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "集合 A のすべての部分集合を要素とする集合のこと。空集合と A 自身も含み、A の要素が n 個ならべき集合の要素は 2ⁿ 個ある。",
+  "definition_en": "The set of all subsets of a set A, including the empty set and A itself. If A has n elements, its power set has 2ⁿ elements.",
+  "latex": "|\\mathcal{P}(A)| = 2^{|A|}",
+  "spoken_en": "the size of P of A equals two to the size of A",
+  "examples": [
+    {
+      "en": "The power set always contains the empty set and the whole set, so don't forget those two.",
+      "ja": "べき集合には空集合と集合全体が必ず入るので、その 2 つを忘れないように。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let A = {1, 2, 3}. List the elements of the power set of A. How many elements does it have?",
+      "ja": "A = {1, 2, 3} とする。A のべき集合の要素をすべて書き出せ。要素は何個あるか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "べき集合の要素は集合（A の部分集合）で、A の要素そのものではない。{1} ∈ 𝒫(A) だが、1 ∈ 𝒫(A) ではない。",
+    "記号は 𝒫(A) や 2^A など、本によって違う。",
+    "用例コーパスでは書き言葉 5 件（すべて MIT の講義ノート）、話し言葉 0 件。Levin の本では 5.1 Sets に 4 件。"
+  ],
+  "related": [
+    "subset",
+    "set",
+    "number-of-elements",
+    "empty-set"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "冪集合",
+      "en": "Power set"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "5.1 Sets"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "power set": 5
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。見出しは Levin の呼び方 power set（5.1 Sets）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "secant-tangent-theorem",
+  "ja": {
+    "term": "割線と接線の定理",
+    "reading": "かっせんとせっせんのていり",
+    "alt": []
+  },
+  "en": {
+    "term": "tangent secant segment theorem",
+    "alt": [
+      "tangent secant theorem",
+      "tangent-secant theorem",
+      "secant-tangent theorem"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「割線と接線の定理」は日本の教科書に無い、本プロジェクトの訳語。日本では方べきの定理の、円の外の点 P から引いた割線と接線の場合（PT² = PA·PB）として扱う。CK-12 Geometry は tangent secant segment theorem と呼ぶ（6.20 Tangent Secant Theorem、6 件。節の名前は Tangent Secant Theorem）。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "円の外の点 P から引いた接線が円に点 T で接し、P を通る割線が円と 2 点 A, B で交わるとき、PT² = PA·PB が成り立つという定理。方べきの定理のうち、一方の直線が接線になる場合にあたる。",
+  "definition_en": "If a tangent from an outside point P touches a circle at T and a secant from P meets the circle at A and B, then PT² = PA · PB. The square of the tangent segment equals the outside part of the secant times the whole secant.",
+  "latex": "PT^2 = PA \\cdot PB",
+  "spoken_en": "P T squared equals P A times P B",
+  "examples": [
+    {
+      "en": "With the tangent secant segment theorem, the tangent piece gets squared, and for the secant it's the outside part times the whole thing.",
+      "ja": "割線と接線の定理では、接線の部分は 2 乗する。割線のほうは外側の部分 × 全体だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "From a point P outside a circle, a tangent touches the circle at T, and a secant meets the circle at A and B, with A between P and B. If PA = 4 and AB = 5, use the tangent secant segment theorem to find PT.",
+      "ja": "円の外の点 P から引いた接線が円と点 T で接し、P を通る割線が円と 2 点 A, B で交わる（A は P と B の間にある）。PA = 4, AB = 5 のとき、PT の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "割線の側は「外側の部分 PA × 割線全体 PB」。AB（円の内側の部分）を掛けないこと。AB が与えられたら、先に PB = PA + AB を求める。",
+    "secant は「割線」の意味だが、三角関数の secant（sec θ）と同じ語。図形の問題か三角関数の問題かで区別する。",
+    "呼び方は揺れる。CK-12 Geometry は定理を tangent secant segment theorem と呼び（6 件）、節の名前は 6.20 Tangent Secant Theorem（本文では 1 件）。用例コーパスでは話・書とも 10 件未満。"
+  ],
+  "related": [
+    "power-of-a-point",
+    "tangent-line",
+    "intersecting-chords-theorem"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.20 Tangent Secant Theorem"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 tangent secant segment theorem（CK-12 Geometry 6.20 Tangent Secant Theorem・計 6 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "tautology",
+  "ja": {
+    "term": "トートロジー",
+    "reading": "とーとろじー",
+    "alt": [
+      "恒真式"
+    ]
+  },
+  "en": {
+    "term": "tautology",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "logic"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "definition_ja": "もとになる命題の真偽がどうであっても、常に真になる命題（論理式）のこと。",
+  "definition_en": "A compound statement that is true for every possible combination of truth values of its parts.",
+  "latex": "p \\lor \\lnot p",
+  "spoken_en": "p or not p",
+  "examples": [
+    {
+      "en": "Every row in the last column came out true, so this statement is a tautology.",
+      "ja": "最後の列がどの行も真になったから、この命題はトートロジーだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use a truth table to show that (p ∧ q) → p is a tautology.",
+      "ja": "真理値表を用いて、(p ∧ q) → p が恒真式であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日常英語の tautology は「同じことを言い換えて繰り返すだけの言い方（同語反復）」の意味で使う。",
+    "逆に、常に偽になる命題は contradiction（矛盾式）と呼ぶ。",
+    "用例コーパスでは話・書とも 0 件。CK-12 Geometry では 2.10 Negative Statements に 6 件、Levin の本では 6 件。"
+  ],
+  "related": [
+    "truth-table",
+    "propositional-logic",
+    "contradiction",
+    "logical-connective"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.10 Negative Statements"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 tautology（CK-12 Geometry 2.10 Negative Statements・計 6 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

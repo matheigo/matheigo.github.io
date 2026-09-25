@@ -1,0 +1,100 @@
+{
+  "id": "image",
+  "ja": {
+    "term": "像",
+    "reading": "ぞう",
+    "alt": [
+      "移した図形"
+    ]
+  },
+  "en": {
+    "term": "image",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の中学では「移した図形」「移動後の図形」と言い、像という言葉は写像（大学）で使うことが多い。英語の Geometry では変換で移った点や図形を image と呼び、点 A の像を A′（A prime）と書く。IM の Grade 8 と Geometry の glossary の見出し。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "移動や拡大などの変換によって、点や図形が移った先の点や図形。点 A の像は A′ と書く。",
+  "definition_en": "The point or figure that results when a transformation is applied to a point or figure. The image of point A is usually labeled A′.",
+  "latex": "\\triangle ABC \\to \\triangle A'B'C'",
+  "spoken_en": "triangle A B C maps to triangle A prime B prime C prime",
+  "examples": [
+    {
+      "en": "After we rotate the triangle, the image is labeled with primes, so B prime is the image of B.",
+      "ja": "三角形を回転させたら、移った図形にはダッシュを付けて表す。だから B′ は B が移った点だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Translate triangle ABC 4 units left and 2 units up. Give the coordinates of the vertices of its image.",
+      "ja": "△ABC を x 軸方向に −4、y 軸方向に 2 だけ平行移動する。移した図形の頂点の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語では A′ を「A ダッシュ」と読むが、英語では A prime と読む。",
+    "日常語の mirror image（鏡に映った姿）は変換の image とは別の言い方。",
+    "大学では関数 f による集合 X の像 f(X) の意味でも使う（Levin では 5.2 Functions に 29 件、Nicholson では 7.2 Kernel and Image of a Linear Transformation に 11 件）。",
+    "線形代数の「像」（行列 A の像 = 列空間、Im A）は別の見出し column-space。こちらは図形の変換で移った点・図形。"
+  ],
+  "related": [
+    "preimage",
+    "rigid-motion",
+    "translation",
+    "reflection",
+    "rotation",
+    "column-space"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "像 (数学)",
+      "en": "Image (mathematics)"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry glossary"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "!mirror image of | image point | image points | its image": 4
+    },
+    "written": {
+      "!mirror image of | image point | image points | its image": 35
+    },
+    "sources": [
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-25"
+  }
+}
