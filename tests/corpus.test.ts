@@ -120,6 +120,21 @@ describe("countTerm", () => {
   });
 });
 
+describe("words ending in e", () => {
+  // DECISIONS, Phase 2 統計・ベクトルの単元: dropping the e makes another word
+  it("does not fold mode into mod, or plane into plan", () => {
+    expect(inflections("mode")).not.toContain("mod");
+    expect(inflections("plane")).not.toContain("plan");
+    expect(inflections("plan")).not.toContain("plane");
+    expect(inflections("mode")).toContain("modes");
+  });
+
+  it("still finds the lemma of an -ing form", () => {
+    expect(inflections("completing")).toContain("complete");
+    expect(inflections("revolved")).toContain("revolve");
+  });
+});
+
 describe("short stems", () => {
   it("does not fold a three-letter word down to two letters", () => {
     expect(countTerm("the pivots d one up to dn. the limit is dne.", "DNE")).toBe(1);
@@ -569,10 +584,20 @@ describe("TERM_FORMS (generic words counted in a sentence form)", () => {
     expect(countTerm(text, "bounded")).toBe(3);
   });
 
-  it('"A ! w" leaves out A followed by w', () => {
+  it('"A !w" leaves out A followed by w', () => {
     const text = normalize("Solve for dx dt here. Now solve for dx and plug it in. We solve for dx.");
-    expect(countTerm(text, "solve for dx ! dt")).toBe(2);
+    expect(countTerm(text, "solve for dx !dt")).toBe(2);
     expect(countTerm(text, "solve for dx")).toBe(3);
+  });
+
+  it('"A !v !w" leaves out both', () => {
+    const text = normalize("Find the average rate of change. Find the average value of f. Find the average of the scores.");
+    expect(countTerm(text, "find the average !rate !value")).toBe(1);
+  });
+
+  it('"!w A" leaves out A after w', () => {
+    const text = normalize("The frequency column. The natural frequency. A relative frequency. Frequency is a count.");
+    expect(countTerm(text, "!natural !relative frequency")).toBe(2);
   });
 
   it("samples contexts at even steps through the hits", () => {

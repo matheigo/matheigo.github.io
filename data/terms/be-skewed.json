@@ -1,0 +1,102 @@
+{
+  "id": "be-skewed",
+  "ja": {
+    "term": "偏る",
+    "reading": "かたよる",
+    "alt": [
+      "右に歪んだ",
+      "分布が偏る"
+    ]
+  },
+  "en": {
+    "term": "skewed",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "日本語の「偏る」は分布の形にも標本の選び方にも使う。英語は分布の形なら skewed（skewed right ／ skewed left）、標本の選び方なら biased と言い分ける。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "AP Statistics",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "分布の形が左右対称でなく、一方に長い裾を引いていること。裾が右に長いものを右に歪んだ（skewed right）分布という。",
+  "definition_en": "Of a distribution: not symmetric, with a long tail on one side; skewed right when the long tail is on the right.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The income data are skewed right, so the mean is pulled up above the median.",
+      "ja": "収入のデータは右に歪んでいるので、平均値が中央値より大きくなる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Is the distribution symmetric, skewed left, or skewed right?",
+      "ja": "分布は左右対称か、左に歪んでいるか、右に歪んでいるか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "skewed right",
+      "ja": "右に歪んだ"
+    },
+    {
+      "en": "skewed to the left",
+      "ja": "左に歪んだ"
+    }
+  ],
+  "pitfalls": [
+    "skewed right は裾（tail）が右に長い分布で、山は左にある。山の位置で左右を決めない。",
+    "空間の skew lines（ねじれの位置にある 2 直線）と同じ語。用例コーパスの書き言葉の文脈 10 件中 3 件がこの意味だった。"
+  ],
+  "related": [
+    "distribution",
+    "median",
+    "arithmetic-mean"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "skewed": 105,
+      "skewed to the left": 6,
+      "skewed right": 1
+    },
+    "written": {
+      "skewed": 58,
+      "skewed to the left": 5,
+      "skewed right": 6
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -15,12 +15,12 @@
       {
         "term": "inverse sine",
         "register": "both",
-        "note": "話し言葉で 18 件（Khan Academy 9・MIT OCW 5・blackpenredpen 2 ほか 2）、書き言葉で 34 件（OpenStax Algebra and Trigonometry 22・OpenStax Calculus 11・MIT の講義ノート 1）。"
+        "note": "話し言葉で 18 件（Khan Academy 9・MIT OCW 5・blackpenredpen 2 ほか 2）、書き言葉で 32 件（OpenStax Algebra and Trigonometry 21・OpenStax Calculus 11）。"
       },
       {
         "term": "arcsine",
-        "register": "both",
-        "note": "話し言葉で 18 件（すべて MIT OCW）、書き言葉で 21 件（OpenStax Calculus 11・OpenStax Algebra and Trigonometry 9・MIT の講義ノート 1）。"
+        "register": "spoken",
+        "note": "話し言葉で 12 件（すべて MIT OCW）、書き言葉で 3 件（すべて OpenStax Algebra and Trigonometry）。"
       }
     ],
     "uk": null,
@@ -60,7 +60,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "話し言葉の arcsine 18 件のうち 16 件は MIT 18.01。inverse sine と arcsine は話し言葉・書き言葉とも並ぶ。"
+    "話し言葉では inverse sine と arcsine が並ぶ（arcsine 12 件はすべて MIT OCW）。書き言葉は inverse sine（32 件対 3 件。記号 arcsin は語として数えない）。"
   ],
   "related": [
     "arccosine",
@@ -88,28 +88,27 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "arcsine": 18,
+      "arcsine": 12,
       "inverse sine": 18
     },
     "written": {
-      "inverse sine": 34,
-      "arcsine": 21
+      "inverse sine": 32,
+      "arcsine": 3
     },
     "sources": [
       "khan-ap-calc",
       "mit-18.01",
       "mit-18.02",
       "mit-18.03",
-      "mit-notes",
       "openstax-algtrig",
       "openstax-calculus",
       "yt:blackpenredpen",
       "yt:nancypi",
       "yt:profleonard"
     ],
-    "counted": "2026-09-24"
+    "counted": "2026-09-25"
   }
 }

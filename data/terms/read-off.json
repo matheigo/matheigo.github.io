@@ -1,0 +1,80 @@
+{
+  "id": "read-off",
+  "ja": {
+    "term": "読み取る",
+    "reading": "よみとる",
+    "alt": []
+  },
+  "en": {
+    "term": "read off",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "日本語の「読み取る」は、値を拾うことにも、グラフから傾向をつかむことにも使う。英語の read off は、式・グラフ・表から値をそのまま拾うときに使う。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "グラフ・表・式から、必要な値や特徴を見つけ出す。",
+  "definition_en": "To get a value or a feature directly from a graph, a table, or a formula.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "From this form you can read off the center and the radius right away.",
+      "ja": "この形からは、中心と半径がすぐに読み取れる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Read off the number of students who scored between 60 and 70 from the histogram.",
+      "ja": "ヒストグラムから、60 点以上 70 点未満の生徒の人数を読み取れ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "histogram"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "read off": 44
+    },
+    "written": {
+      "read off": 7
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "yt:3blue1brown",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-25"
+  }
+}

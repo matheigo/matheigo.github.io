@@ -1,0 +1,80 @@
+{
+  "id": "experimental-probability",
+  "ja": {
+    "term": "統計的確率",
+    "reading": "とうけいてきかくりつ",
+    "alt": []
+  },
+  "en": {
+    "term": "experimental probability",
+    "alt": [
+      "empirical probability"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで experimental probability は 0 件、empirical probability は書き言葉 2 件）。確率を相対度数で見積もる、と説明することが多い。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "実験や観察を何回も繰り返したとき、ある事柄が起こった相対度数を確率とみなしたもの。",
+  "definition_en": "The relative frequency with which an event occurred in many repeated trials, taken as its probability.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We flipped the coin 200 times and got 94 heads, so the experimental probability is 0.47.",
+      "ja": "硬貨を 200 回投げて表が 94 回出たので、統計的確率は 0.47。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the results of the experiment to estimate the probability that a thumbtack lands point up.",
+      "ja": "実験の結果を使って、画びょうが上向きに落ちる確率を推定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "理論から求める確率は theoretical probability（OpenStax Introductory Statistics、書き言葉 10 件）。"
+  ],
+  "related": [
+    "relative-frequency"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "empirical probability": 2
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 2 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

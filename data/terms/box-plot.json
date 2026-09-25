@@ -1,0 +1,104 @@
+{
+  "id": "box-plot",
+  "ja": {
+    "term": "箱ひげ図",
+    "reading": "はこひげず",
+    "alt": []
+  },
+  "en": {
+    "term": "box plot",
+    "alt": [
+      "boxplot"
+    ],
+    "uk": null,
+    "variants": [
+      {
+        "term": "box-and-whisker plot",
+        "register": "spoken",
+        "note": "話し言葉で 19 件（Khan Academy 16・The Organic Chemistry Tutor 3）、書き言葉で 6 件（すべて OpenStax Introductory Statistics）。字幕の box and whisker(s) plot も同じ言い方として数えた。"
+      },
+      {
+        "term": "box plot",
+        "register": "written",
+        "note": "話し言葉で 5 件（Professor Leonard 4・Khan Academy 1）、書き言葉で 88 件（すべて OpenStax Introductory Statistics）。"
+      }
+    ],
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "最小値・第 1 四分位数・中央値・第 3 四分位数・最大値を、箱とその両側のひげで表した図。",
+  "definition_en": "A graph of the five-number summary: a box from the first to the third quartile with a line at the median, and whiskers out to the minimum and maximum.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In a box and whisker plot, the box covers the middle half of the data.",
+      "ja": "箱ひげ図では、箱がデータの真ん中の半分を表す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Draw box plots for the two data sets on the same scale and compare them.",
+      "ja": "2 つのデータの箱ひげ図を同じ目盛りでかき、比べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "話し言葉は box-and-whisker plot、書き言葉は box plot（どちらも 3 倍以上の差）。"
+  ],
+  "related": [
+    "five-number-summary",
+    "whisker",
+    "quartile",
+    "interquartile-range"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "箱ひげ図",
+      "en": "Box plot"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "box-and-whisker plot": 19,
+      "box plot": 5
+    },
+    "written": {
+      "box plot": 88,
+      "box-and-whisker plot": 6,
+      "boxplot": 1
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

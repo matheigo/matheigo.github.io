@@ -1,0 +1,88 @@
+{
+  "id": "measure-of-center",
+  "ja": {
+    "term": "代表値",
+    "reading": "だいひょうち",
+    "alt": [
+      "データの代表値",
+      "中心の測度"
+    ]
+  },
+  "en": {
+    "term": "measure of central tendency",
+    "alt": [
+      "measure of center"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "「代表値」に 1 語で当たる英語の総称はなく、measure of central tendency ／ measure of center（中心の指標）と言う。用例コーパスでは話し言葉の measure of central tendency が 12 件（すべて Khan Academy）、書き言葉の measure of center が 3 件（すべて OpenStax Introductory Statistics）。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数I"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "データ全体の特徴を 1 つの数で表す値。平均値・中央値・最頻値など。",
+  "definition_en": "A single number that describes a typical or central value of the data, such as the mean, median, or mode.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The mean and the median are both measures of central tendency, but they react differently to outliers.",
+      "ja": "平均値も中央値も代表値だが、外れ値への反応が違う。",
+      "register": "spoken"
+    },
+    {
+      "en": "Which measure of center best describes the data? Explain.",
+      "ja": "このデータをもっともよく表す代表値はどれか。説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "arithmetic-mean",
+    "median",
+    "mode",
+    "spread"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "measure of center": 1,
+      "measure of central tendency": 12
+    },
+    "written": {
+      "measure of center": 3
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

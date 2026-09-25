@@ -4,36 +4,56 @@
     "term": "相加平均",
     "reading": "そうかへいきん",
     "alt": [
-      "算術平均"
+      "算術平均",
+      "平均値",
+      "平均"
     ]
   },
   "en": {
-    "term": "arithmetic mean",
-    "alt": [],
+    "term": "mean",
+    "alt": [
+      "arithmetic mean"
+    ],
     "uk": null,
-    "register": "spoken"
+    "register": "both"
   },
   "pos": "noun",
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
+    "statistics",
     "algebra"
   ],
   "level": {
     "jp": [
+      "中1",
+      "数I",
       "数II"
     ],
     "us": [
+      "Pre-Algebra",
+      "Algebra 1",
       "Algebra 2",
       "Precalculus",
+      "AP Statistics",
       "Intro Statistics"
     ]
   },
-  "definition_ja": "n 個の数の和を n で割った値。2 数 a, b では (a + b)/2。",
-  "definition_en": "The sum of n numbers divided by n; for two numbers a and b, (a + b)/2.",
+  "definition_ja": "n 個の数（データの値）の和を n で割った値。2 数 a, b では (a + b)/2。データの代表値としては平均値という。",
+  "definition_en": "The sum of n numbers or data values divided by n; for two numbers a and b, (a + b)/2. As a measure of center it is called the mean.",
   "latex": "\\frac{a + b}{2}",
   "spoken_en": "a plus b over two",
   "examples": [
+    {
+      "en": "The mean is pulled toward the outlier, but the median isn't.",
+      "ja": "平均値は外れ値のほうへ引っぱられるが、中央値はそうならない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the mean of the data: 12, 15, 15, 18, 20.",
+      "ja": "データ 12, 15, 15, 18, 20 の平均値を求めよ。",
+      "register": "written"
+    },
     {
       "en": "The arithmetic mean of 4 and 16 is 10, and the geometric mean is 8.",
       "ja": "4 と 16 の相加平均は 10、相乗平均は 8。",
@@ -47,13 +67,18 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "統計の「平均値」も英語では mean（the arithmetic mean）。用例コーパスの件数にはデータの平均の意味も入る。",
-    "用例コーパスの話し言葉 66 件のうち 50 件は The Organic Chemistry Tutor。"
+    "データの平均値は mean、相加・相乗平均の不等式の文脈では arithmetic mean（相乗平均 geometric mean と対にする）と言う。用例コーパスでは the mean（the mean value theorem を除く）が話し言葉・書き言葉とも arithmetic mean よりずっと多い。",
+    "日常語では average とも言うが、average rate of change（平均変化率）や average value（関数の平均値）は別の概念。",
+    "arithmetic mean の話し言葉 66 件のうち 50 件は The Organic Chemistry Tutor。"
   ],
   "related": [
     "geometric-mean",
     "am-gm-inequality",
-    "arithmetic-middle-term"
+    "arithmetic-middle-term",
+    "median",
+    "mode",
+    "measure-of-center",
+    "take-the-average"
   ],
   "sources": [
     {
@@ -72,19 +97,32 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
+      "the mean !value": 768,
       "arithmetic mean": 66
     },
     "written": {
+      "the mean !value": 941,
       "arithmetic mean": 8
     },
     "sources": [
+      "khan-ap-calc",
       "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
       "openstax-introstats",
-      "yt:organicchem"
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
     ],
-    "counted": "2026-09-24"
+    "counted": "2026-09-25"
   }
 }

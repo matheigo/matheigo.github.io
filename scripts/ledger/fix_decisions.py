@@ -922,6 +922,8 @@ PHASE2E_SAME = [
     ("range-linear-map", "column-space", "into"),  # range of T = Col A
     ("norm", "magnitude", "into"),  # ノルム = ベクトルの大きさ
     ("skewness-of-a-distribution", "skewness", "into"),
+    # ばらつく and 散らばり: English says both with spread (the data are spread out)
+    ("vary", "spread", "into"),
     # into entries already generated (Phase 2 統計・ベクトルの単元: fill in the new unit's sense)
     ("row-reduction", "gaussian-elimination", "into"),
     ("mean", "arithmetic-mean", "into"),  # 平均値 of data = 相加平均

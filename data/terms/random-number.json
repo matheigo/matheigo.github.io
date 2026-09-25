@@ -1,0 +1,90 @@
+{
+  "id": "random-number",
+  "ja": {
+    "term": "乱数",
+    "reading": "らんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "random number",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "でたらめに並び、どの値も同じ確率で現れるように作った数。",
+  "definition_en": "A number produced so that every possible value is equally likely and there is no pattern.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Use the random number generator on your calculator to pick the students.",
+      "ja": "電卓の乱数機能を使って生徒を選ぼう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use random numbers to select a sample of 10 students from the class list.",
+      "ja": "乱数を使って、名簿から 10 人の標本を選べ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "乱数を出す電卓・ソフトウェアの機能は random number generator（OpenStax Introductory Statistics、書き言葉 25 件）。"
+  ],
+  "related": [
+    "random-number-table",
+    "random-sampling"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "乱数列",
+      "en": "Random number"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "random number": 52
+    },
+    "written": {
+      "random number": 52
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

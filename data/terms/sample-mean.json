@@ -1,0 +1,86 @@
+{
+  "id": "sample-mean",
+  "ja": {
+    "term": "標本平均",
+    "reading": "ひょうほんへいきん",
+    "alt": []
+  },
+  "en": {
+    "term": "sample mean",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "標本のデータの平均値。x̄ と書く。",
+  "definition_en": "The mean of the data in a sample, written x̄.",
+  "latex": "\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n} x_i",
+  "spoken_en": "x bar equals one over n times the sum of x sub i",
+  "examples": [
+    {
+      "en": "The sample mean changes from sample to sample, but the population mean doesn't.",
+      "ja": "標本平均は標本ごとに変わるが、母平均は変わらない。",
+      "register": "spoken"
+    },
+    {
+      "en": "The sample mean of 36 measurements is 12.4. Construct a 95% confidence interval for the population mean.",
+      "ja": "36 個の測定値の標本平均は 12.4 である。母平均の 95% 信頼区間を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "x̄ は x bar と読む（用例コーパスの話し言葉 44 件）。"
+  ],
+  "related": [
+    "population-mean",
+    "arithmetic-mean",
+    "sample"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "標本平均・標本共分散",
+      "en": "Sample mean and covariance"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "sample mean": 209
+    },
+    "written": {
+      "sample mean": 272
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

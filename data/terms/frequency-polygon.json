@@ -1,0 +1,76 @@
+{
+  "id": "frequency-polygon",
+  "ja": {
+    "term": "度数折れ線",
+    "reading": "どすうおれせん",
+    "alt": [
+      "度数分布多角形"
+    ]
+  },
+  "en": {
+    "term": "frequency polygon",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "ヒストグラムの各柱の上の辺の中点を結んだ折れ線。両端は度数 0 の階級の中点まで結ぶ。",
+  "definition_en": "A line graph joining the midpoints of the tops of the bars of a histogram, closed off at classes of frequency zero at both ends.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Connect the midpoints of the tops of the bars and you get the frequency polygon.",
+      "ja": "柱の上の辺の中点を結ぶと度数折れ線になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Draw frequency polygons for the two classes on the same axes and compare them.",
+      "ja": "2 つのクラスの度数折れ線を同じ座標軸にかいて比べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "2 つの分布を重ねて比べるときに使う（OpenStax Introductory Statistics）。"
+  ],
+  "related": [
+    "histogram",
+    "frequency-table"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "frequency polygon": 19
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "minimum",
+  "ja": {
+    "term": "最小値",
+    "reading": "さいしょうち",
+    "alt": []
+  },
+  "en": {
+    "term": "minimum",
+    "alt": [
+      "minimum value"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "データや関数のとる値のうち、もっとも小さい値。",
+  "definition_en": "The least of the values that the data, or a function on its domain, take.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Start the box plot at the minimum and end it at the maximum.",
+      "ja": "箱ひげ図は最小値から最大値までかく。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the minimum value of y = x² − 6x + 10 and the value of x at which it occurs.",
+      "ja": "y = x² − 6x + 10 の最小値と、そのときの x の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "極小値（local minimum）とは別。区間全体での最小値を関数について言うときは absolute minimum とも言う。",
+    "用例コーパスでは the minimum value ／ absolute minimum の形で数えた。"
+  ],
+  "related": [
+    "maximum",
+    "absolute-extrema",
+    "five-number-summary",
+    "local-minimum"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the minimum value | absolute minimum": 49
+    },
+    "written": {
+      "the minimum value | absolute minimum": 107
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

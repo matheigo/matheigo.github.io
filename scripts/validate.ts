@@ -80,7 +80,6 @@ const NOT_IN_US_COURSES = "米国の高校課程（OpenStax 6 冊・CED）には
  */
 const SAME_EN_TERM: [string, string][] = [
   ["divergence", "divergence-vector"], // 発散（数列・級数） ／ 発散（ベクトル場）
-  ["arithmetic-mean", "arithmetic-middle-term"], // 相加平均 ／ 等差中項（英語は相加平均で説明する）
   ["geometric-mean", "geometric-middle-term"], // 相乗平均 ／ 等比中項
   ["argument", "argument-of-a-complex-number"], // 真数 ／ 偏角（英語はどちらも関数の引数と同じ argument）
   ["sign-chart", "sign-chart-inequality"], // 増減表 ／ 不等式を解く符号図（英語はどちらも sign chart）

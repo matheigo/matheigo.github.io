@@ -1,0 +1,111 @@
+{
+  "id": "data",
+  "ja": {
+    "term": "データ",
+    "reading": "でーた",
+    "alt": []
+  },
+  "en": {
+    "term": "data",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数I"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "調べたり測ったりして集めた数値や記録の集まり。",
+  "definition_en": "A collection of numbers or observations gathered by measuring, counting, or asking.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's look at the data before we compute anything.",
+      "ja": "計算する前にデータを見てみよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "The data below show the number of hours 20 students slept last night.",
+      "ja": "次のデータは、生徒 20 人の昨夜の睡眠時間である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "data set",
+      "ja": "データの集まり"
+    },
+    {
+      "en": "data value",
+      "ja": "データの値"
+    }
+  ],
+  "pitfalls": [
+    "英語の data は本来 datum の複数形。用例コーパスの書き言葉は the data are が多く（71 件対 the data is 40 件、ほとんどが OpenStax Introductory Statistics）、話し言葉は the data is（13 件対 0 件）。",
+    "1 つ 1 つの値は、話し言葉では data point（106 件）、書き言葉では data value（54 件）が多い。"
+  ],
+  "related": [
+    "distribution",
+    "frequency-table",
+    "histogram"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "data": 773,
+      "data set": 98,
+      "data value": 32
+    },
+    "written": {
+      "data": 2284,
+      "data value": 165,
+      "data set": 121
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

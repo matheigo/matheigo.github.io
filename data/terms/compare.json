@@ -25,16 +25,19 @@
   "level": {
     "jp": [
       "中1",
+      "中2",
       "数II"
     ],
     "us": [
       "Pre-Algebra",
+      "Algebra 1",
       "Algebra 2",
-      "Precalculus"
+      "Precalculus",
+      "AP Statistics"
     ]
   },
-  "definition_ja": "2 つ以上の数・式の大小を調べる。",
-  "definition_en": "To determine which of two or more numbers or expressions is larger.",
+  "definition_ja": "2 つ以上の数・式の大小や、2 つ以上のデータの分布（代表値・散らばり）の違いを調べる。",
+  "definition_en": "To determine which of two or more numbers or expressions is larger, or how two or more distributions differ in center and spread.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -47,17 +50,30 @@
       "en": "Compare the sizes of log₂ 3, log₄ 5, and 3/2.",
       "ja": "log₂ 3, log₄ 5, 3/2 の大小を比較せよ。",
       "register": "written"
+    },
+    {
+      "en": "Compare the two box plots: which class did better, and which had more spread?",
+      "ja": "2 つの箱ひげ図を比べよう。どちらのクラスの成績がよく、どちらのほうが散らばりが大きいか。",
+      "register": "spoken"
+    },
+    {
+      "en": "Compare the distributions of the two data sets using their medians and interquartile ranges.",
+      "ja": "2 つのデータの分布を、中央値と四分位範囲を使って比較せよ。",
+      "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
     "「大小を比較せよ」は Compare …、または Which is larger? と聞く。並べる問いは Arrange … in increasing order。",
     "指数関数・対数関数の大小比較では、底が 1 より大きいか小さいかで向きが変わる（The base is greater than 1, so the function is increasing.）。",
-    "用例コーパスの件数（話し言葉 276 件、書き言葉 440 件）には統計の「2 つの群を比較する」も入る。"
+    "用例コーパスの件数（話し言葉 276 件、書き言葉 440 件）には統計の「2 つの群・分布を比較する」も入る（書き言葉の 201 件は OpenStax Introductory Statistics）。分布の比較では、中心（center）と散らばり（spread）の両方に触れて比べる。"
   ],
   "related": [
     "exponential-function",
-    "logarithmic-function"
+    "logarithmic-function",
+    "box-plot",
+    "distribution",
+    "spread"
   ],
   "sources": [
     {
@@ -74,7 +90,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
       "compare": 276
@@ -103,6 +119,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-24"
+    "counted": "2026-09-25"
   }
 }

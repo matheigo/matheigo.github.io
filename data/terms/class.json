@@ -1,0 +1,77 @@
+{
+  "id": "class",
+  "ja": {
+    "term": "階級",
+    "reading": "かいきゅう",
+    "alt": []
+  },
+  "en": {
+    "term": "class interval",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語の class は授業・クラスの意味で使うことがずっと多く、階級の意味では class interval と言う（OpenStax Introductory Statistics、書き言葉 17 件）。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "度数分布表で、データを区切るそれぞれの区間。",
+  "definition_en": "One of the intervals into which the data are divided in a frequency table.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Each bar of the histogram stands for one class interval.",
+      "ja": "ヒストグラムの 1 本の柱が 1 つの階級を表している。",
+      "register": "spoken"
+    },
+    {
+      "en": "Group the data into class intervals of width 5, starting at 40.",
+      "ja": "40 から始めて、幅 5 の階級にデータを分けよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "用例コーパスでは語のままの class は 10 件中 9 件が授業の意味だった。見出しは class interval で数えた。",
+    "「データを階級に分ける」は group the data into classes ／ intervals。"
+  ],
+  "related": [
+    "class-width",
+    "class-midpoint",
+    "frequency-table",
+    "histogram"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "class interval": 17
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

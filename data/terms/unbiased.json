@@ -1,0 +1,80 @@
+{
+  "id": "unbiased",
+  "ja": {
+    "term": "かたよりのない",
+    "reading": "かたよりのない",
+    "alt": []
+  },
+  "en": {
+    "term": "unbiased",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "標本の選び方や推定の方法が、特定の結果に系統的に寄っていないこと。",
+  "definition_en": "Not tending systematically toward particular results, said of a way of choosing a sample or of estimating.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Dividing by n minus 1 gives an unbiased estimate of the population variance.",
+      "ja": "n − 1 で割ると、母分散のかたよりのない推定になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Is the sampling method likely to produce an unbiased sample? Explain.",
+      "ja": "この抽出方法でかたよりのない標本が得られるか。説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "unbiased coin（表と裏が同じ確率で出る硬貨）のように「公平な」の意味でも使う。",
+    "反対は biased（偏った）。"
+  ],
+  "related": [
+    "random-sampling",
+    "sample"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "unbiased": 44
+    },
+    "written": {
+      "unbiased": 16
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

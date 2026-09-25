@@ -1,0 +1,99 @@
+{
+  "id": "outlier",
+  "ja": {
+    "term": "外れ値",
+    "reading": "はずれち",
+    "alt": []
+  },
+  "en": {
+    "term": "outlier",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Intro Statistics",
+      "AP Statistics"
+    ]
+  },
+  "definition_ja": "ほかのデータから大きく離れた値。Q1 − 1.5 × IQR より小さいか Q3 + 1.5 × IQR より大きい値を外れ値とする決め方が多い。",
+  "definition_en": "A data value far away from the rest of the data, often taken to be a value below Q1 − 1.5 × IQR or above Q3 + 1.5 × IQR.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "That one point way out there is an outlier, and it pulls the mean up.",
+      "ja": "あの 1 つだけ離れた点は外れ値で、平均値を引き上げている。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the data contain any outliers. Justify your answer.",
+      "ja": "データに外れ値があるかどうかを判定せよ。理由も示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [
+    {
+      "en": "remove the outlier",
+      "ja": "外れ値を除く"
+    }
+  ],
+  "pitfalls": [
+    "回帰直線を大きく動かす点は influential point（影響の大きい点）と言い、外れ値と区別する。"
+  ],
+  "related": [
+    "interquartile-range",
+    "box-plot",
+    "median"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "外れ値",
+      "en": "Outlier"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "outlier": 111,
+      "remove the outlier": 7
+    },
+    "written": {
+      "outlier": 168,
+      "remove the outlier": 1
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -69,6 +69,10 @@ export const VARIANTS: [RegExp, string][] = [
   [/\bchange\s+of\s+base\b/g, "change-of-base"],
   // and "row echelon form" (captions, MIT OCW) against "row-echelon form" (OpenStax)
   [/\brow\s+echelon\b/g, "row-echelon"],
+  // (Phase 2 統計の単元) captions write "five number summary"; OpenStax hyphenates
+  [/\bfive\s+number\s+summar/g, "five-number summar"],
+  // and "box and whisker(s) plot" (captions) against "box-and-whisker plot" (OpenStax)
+  [/\bbox\s+and\s+whiskers?\s+plot/g, "box-and-whisker plot"],
   // Leibniz notation typed with a slash in captions ("dy/dx") is said "dy dx"
   [/\bd([a-z])\/d([a-z])\b/g, "d$1 d$2"],
   // One name, three spellings: L'Hôpital (OpenStax), L'Hopital (captions), L'Hospital (older)
@@ -299,8 +303,16 @@ const CLOSED_CLASS = new Set([
 export function inflections(word: string): string[] {
   const s = stem(word);
   const forms = new Set([word]);
+  // The bare stem and stem + s are another word when the e is dropped from a
+  // word that ends in e (mode -> mod, plane -> plan, rate -> rat, note -> not)
+  // or added to a word that does not (plan -> plane, sin -> sine). An -ing or
+  // -ed form still finds its lemma with the e (completing -> complete).
+  // (DECISIONS, Phase 2 統計・ベクトルの単元)
+  const endsInE = word.endsWith("e");
+  const isLemma = word === s;
   for (const e of ["", "e"]) {
     for (const x of ["", "s", "es", "ed", "ing"]) {
+      if ((x === "" || x === "s") && (e === "" ? endsInE : isLemma && !endsInE)) continue;
       const t = s + e + x;
       if (t.length > 2 && stem(t) === s) forms.add(t);
     }
@@ -346,15 +358,23 @@ function termRegex(phrase: string): RegExp | null {
  * keep another meaning out (DECISIONS, Phase 2 統計・ベクトルの単元の前の修正):
  *
  *   "A | B"      either form: bounded sequence | sequence is bounded
- *   "A ! w"      A not followed by the words w: solve for dx ! dt (not dx/dt)
+ *   "!w"         a word that may not stand there. Before the form, the form may
+ *                not follow it; after, it may not follow the form. Several
+ *                may be given: "solve for dx !dt" (not dx/dt), "!natural
+ *                !angular frequency" (not a physical frequency)
  *
  * Both stay in the key the counts and `evidence` are recorded under.
  */
 export const FORM_OR = /\s+\|\s+/;
-const FORM_NOT = /\s+!\s+/;
+const NOT = /^!(\S+)$/;
 
 function termBody(phrase: string): string | null {
-  const [form, not] = phrase.split(FORM_NOT);
+  const tokens = phrase.trim().split(/\s+/);
+  const before: string[] = [];
+  const after: string[] = [];
+  while (tokens.length && NOT.test(tokens[0])) before.push(tokens.shift()!.slice(1));
+  while (tokens.length && NOT.test(tokens[tokens.length - 1])) after.unshift(tokens.pop()!.slice(1));
+  const form = tokens.join(" ");
   const words = normalize(form).split(" ").filter(Boolean);
   while (words.length && GAP.test(words[0])) words.shift();
   while (words.length && GAP.test(words[words.length - 1])) words.pop();
@@ -368,8 +388,9 @@ function termBody(phrase: string): string | null {
       return `(?:${inflections(m[1]).map(escape).join("|")})${escape(m[2])}${sep}`;
     })
     .join("");
-  const after = not ? normalize(not) : "";
-  return after ? `${body}(?! ${escape(after)}(?![\\w-]))` : body;
+  const notBefore = before.map((w) => `(?<!(?:^|[^\\w-])${escape(normalize(w))} )`).join("");
+  const notAfter = after.map((w) => `(?! ${escape(normalize(w))}(?![\\w-]))`).join("");
+  return notBefore + body + notAfter;
 }
 
 /**
@@ -499,7 +520,19 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
     "lower limit": "lower limit of integration | at the lower limit",
     "lower limit of integration": "lower limit of integration | at the lower limit",
   },
-  "write-dx-in-terms-of-du": { "solve for dx": "solve for dx ! dt" }, // not "solve for dx dt" (dx/dt in related rates)
+  "write-dx-in-terms-of-du": { "solve for dx": "solve for dx !dt" }, // not "solve for dx dt" (dx/dt in related rates)
+  // Phase 2 統計・ベクトルの単元, batch 1 (checked in ten contexts each)
+  frequency: { frequency: "frequency table | frequency column | frequency polygon | frequency distribution" }, // speech is mostly a physical frequency
+  "relative-frequency": { "relative frequency": "!cumulative relative frequency" },
+  mode: { mode: "the mode !menu" }, // not a calculator's degree / radian mode
+  spread: { spread: "the spread" }, // not "spread out the paper" or the spread of a disease
+  maximum: { maximum: "the maximum value | absolute maximum", "maximum value": "the maximum value | absolute maximum" }, // not a local maximum
+  minimum: { minimum: "the minimum value | absolute minimum", "minimum value": "the minimum value | absolute minimum" },
+  "take-the-average": { "take the average": "take the average of", "find the average": "find the average of" }, // not the average rate of change
+  sampling: { sampling: "sampling method | sampling technique" }, // "sampling" folds into "sample"
+  deviation: { deviation: "!standard !absolute !quartile deviation" }, // not a standard deviation
+  census: { census: "census !bureau" }, // not the U.S. Census Bureau
+  "arithmetic-mean": { mean: "the mean !value" }, // the mean of data; not "I mean" or the mean value theorem
 };
 
 /** The wording a candidate is counted and recorded as. */

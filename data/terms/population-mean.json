@@ -1,0 +1,85 @@
+{
+  "id": "population-mean",
+  "ja": {
+    "term": "母平均",
+    "reading": "ぼへいきん",
+    "alt": [
+      "母集団の平均"
+    ]
+  },
+  "en": {
+    "term": "population mean",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中3",
+      "数B"
+    ],
+    "us": [
+      "Algebra 1",
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "definition_ja": "母集団全体の平均値。μ と書く。",
+  "definition_en": "The mean of the whole population, written μ.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We almost never know the population mean, so we estimate it with the sample mean.",
+      "ja": "母平均はほとんどわからないので、標本平均で推定する。",
+      "register": "spoken"
+    },
+    {
+      "en": "Test the claim that the population mean is 50 at the 5% significance level.",
+      "ja": "母平均が 50 であるという主張を有意水準 5% で検定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "μ は mu と読む。"
+  ],
+  "related": [
+    "sample-mean",
+    "population"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "population mean": 86
+    },
+    "written": {
+      "population mean": 186
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

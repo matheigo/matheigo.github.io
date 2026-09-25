@@ -1,0 +1,98 @@
+{
+  "id": "population",
+  "ja": {
+    "term": "母集団",
+    "reading": "ぼしゅうだん",
+    "alt": []
+  },
+  "en": {
+    "term": "population",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "調査の対象となる集団全体。標本調査では、その一部を標本として取り出す。",
+  "definition_en": "The whole group being studied; in a sample survey, a sample is taken from it.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The population is all the students at the school, and the sample is the 50 we actually asked.",
+      "ja": "母集団は学校の生徒全員で、標本は実際に聞いた 50 人。",
+      "register": "spoken"
+    },
+    {
+      "en": "Identify the population and the sample in the study.",
+      "ja": "この調査の母集団と標本を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "population は「人口」「（生物の）個体数」の意味でもよく使う（population growth は人口・個体数の増加）。用例コーパスの文脈 20 件のうち 8 件がこの意味だった。",
+    "母集団の特徴を表す数（母平均など）を parameter、標本から計算する数を statistic と呼び分ける。"
+  ],
+  "related": [
+    "sample",
+    "census",
+    "population-mean"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "母集団",
+      "en": "Statistical population"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "population": 964
+    },
+    "written": {
+      "population": 1595
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "class-midpoint",
+  "ja": {
+    "term": "階級値",
+    "reading": "かいきゅうち",
+    "alt": []
+  },
+  "en": {
+    "term": "class midpoint",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで class midpoint は 0 件）。OpenStax Introductory Statistics は the midpoint of each interval と説明する（2 件）。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "各階級の真ん中の値。度数分布表から平均値を求めるとき、その階級のデータの代わりに使う。",
+  "definition_en": "The value in the middle of a class interval, used in place of the data in that class when the mean is found from a frequency table.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Use the midpoint of each class as its value, then weight it by the frequency.",
+      "ja": "各階級の真ん中の値を代表として、度数で重みをつける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Estimate the mean from the frequency table by using class midpoints.",
+      "ja": "階級値を用いて、度数分布表から平均値を推定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [],
+  "related": [
+    "class",
+    "frequency-table",
+    "arithmetic-mean"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

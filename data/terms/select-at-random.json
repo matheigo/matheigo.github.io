@@ -1,0 +1,85 @@
+{
+  "id": "select-at-random",
+  "ja": {
+    "term": "無作為に抽出する",
+    "reading": "むさくいにちゅうしゅつする",
+    "alt": []
+  },
+  "en": {
+    "term": "randomly select",
+    "alt": [
+      "select at random"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "日本語の「無作為に抽出する」は漢語の決まった言い方だが、英語はふつうの動詞 select ／ choose に副詞 randomly を付ける。用例コーパスでは randomly select が話し言葉 25 件・書き言葉 164 件で、select at random（書き言葉 15 件）より多い。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "母集団のどの個体も同じ確率で選ばれるように、標本を取り出す。",
+  "definition_en": "To choose members of a population so that each has the same chance of being chosen.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "She randomly selects 20 students and asks how long they studied.",
+      "ja": "彼女は 20 人の生徒を無作為に選び、勉強時間を聞く。",
+      "register": "spoken"
+    },
+    {
+      "en": "Fifty students are randomly selected from the school. Find the probability that more than 30 of them walk to school.",
+      "ja": "学校から 50 人の生徒を無作為に選ぶ。そのうち 30 人より多くが徒歩通学である確率を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "受け身の a randomly selected student（無作為に選ばれた生徒）の形が問題文に多い。"
+  ],
+  "related": [
+    "random-sampling",
+    "random-number"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "randomly select": 25
+    },
+    "written": {
+      "randomly select": 164,
+      "select at random": 15
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

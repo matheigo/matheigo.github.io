@@ -1,0 +1,95 @@
+{
+  "id": "median",
+  "ja": {
+    "term": "中央値",
+    "reading": "ちゅうおうち",
+    "alt": [
+      "メジアン"
+    ]
+  },
+  "en": {
+    "term": "median",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "データを小さい順に並べたとき中央にくる値。データの個数が偶数なら中央の 2 つの値の平均。",
+  "definition_en": "The middle value of the data in order; with an even number of values, the mean of the two middle values.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "With an even number of values, the median is the average of the two in the middle.",
+      "ja": "値の個数が偶数なら、中央値は真ん中の 2 つの平均。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the median and the interquartile range of the data.",
+      "ja": "データの中央値と四分位範囲を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "幾何の「中線」（三角形の頂点と対辺の中点を結ぶ線分）も英語は median。",
+    "中央値は第 2 四分位数（Q2）でもある。"
+  ],
+  "related": [
+    "quartile",
+    "arithmetic-mean",
+    "mode",
+    "measure-of-center"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "中央値",
+      "en": "Median"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "median": 412
+    },
+    "written": {
+      "median": 214
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-18.02",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-introstats",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

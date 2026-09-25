@@ -1,0 +1,87 @@
+{
+  "id": "five-number-summary",
+  "ja": {
+    "term": "五数要約",
+    "reading": "ごすうようやく",
+    "alt": []
+  },
+  "en": {
+    "term": "five-number summary",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "最小値・第 1 四分位数・中央値・第 3 四分位数・最大値の 5 つの値でデータをまとめたもの。",
+  "definition_en": "A summary of the data by five values: the minimum, the first quartile, the median, the third quartile, and the maximum.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Once you have the five-number summary, drawing the box plot is easy.",
+      "ja": "五数要約がわかれば、箱ひげ図は簡単にかける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Give the five-number summary of the data.",
+      "ja": "データの五数要約を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "字幕では five number summary とハイフンなしで書かれる。用例コーパスでは同じ言い方として数えた（話し言葉 7 件はすべて Professor Leonard、書き言葉 1 件）。"
+  ],
+  "related": [
+    "box-plot",
+    "quartile",
+    "median",
+    "minimum",
+    "maximum"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "five-number summary": 7
+    },
+    "written": {
+      "five-number summary": 1
+    },
+    "sources": [
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 five-number summary（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

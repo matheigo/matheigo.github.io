@@ -94,6 +94,6 @@ Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を�
 - リーマン和の仲間の見出しは CED の呼び方（left ／ right ／ midpoint Riemann sum、trapezoidal sum）。教科書の left-endpoint approximation、midpoint rule、trapezoidal rule は書き言葉の variant。
 - 別の意味でも大量に使う語（goes to、squeeze など）が候補表現になるときは、見出しの意味でしか現れない数学の文の形で数える（as … goes to、squeeze … between）。形は `scripts/corpus/lib.ts` の `TERM_FORMS` に書き、evidence にも形のまま記録する。別の意味も同じ構文を取る語（sum rule、product rule）は形で分けられないので、件数の注意を pitfalls に書く。
 - 「米国では〜」の主張は CED か OpenStax（か用例コーパスの件数）で確かめて、確かめた範囲で書く（「OpenStax Algebra and Trigonometry は〜」「CED topic 5.4」）。確かめられないもの（通じる／通じない、減点されない、一番よく使う）は書かない。
-- 見出しがふつうの英単語だけの句（数学の名詞を含まない句。1 語の compare・region も）が ① か ② になったら、確定する前に首位の候補の文脈を register ごとに 10 件見る（`pnpm corpus:probe -- --contexts "<候補>"`）。別の意味が 5 件以上か、除くと判定が変わるときは TERM_FORMS の形で数え直す。形には「A | B」（どちらか）と「A ! w」（直後に w が続かない）が使える。
+- 見出しがふつうの英単語だけの句（数学の名詞を含まない句。1 語の compare・region も）が ① か ② になったら、確定する前に首位の候補の文脈を register ごとに 10 件見る（`pnpm corpus:probe -- --contexts "<候補>"`）。別の意味が 5 件以上か、除くと判定が変わるときは TERM_FORMS の形で数え直す。形には「A | B」（どちらか）と「!w」（前に置けば直前が w のもの、後ろに置けば直後が w のものを数えない）が使える。
 - 数えられないもの（別の意味を締め出す形がない言い方）は候補（en.alt・variants・collocations）に置かず、pitfalls に書く（phase-shift の horizontal shift）。
 - 新しい単元の行が既存のエントリに当たったら、その単元の意味・例文・level・ja.alt が足りているかを見て、足りなければ足す（飛ばさない）。

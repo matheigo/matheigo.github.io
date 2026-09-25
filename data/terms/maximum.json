@@ -1,0 +1,97 @@
+{
+  "id": "maximum",
+  "ja": {
+    "term": "最大値",
+    "reading": "さいだいち",
+    "alt": []
+  },
+  "en": {
+    "term": "maximum",
+    "alt": [
+      "maximum value"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "データや関数のとる値のうち、もっとも大きい値。",
+  "definition_en": "The greatest of the values that the data, or a function on its domain, take.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The maximum is 98 and the minimum is 41, so the range is 57.",
+      "ja": "最大値が 98、最小値が 41 なので、範囲は 57。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the maximum value of f(x) = −x² + 4x + 1 on 0 ≤ x ≤ 3.",
+      "ja": "0 ≤ x ≤ 3 における f(x) = −x² + 4x + 1 の最大値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "極大値（local maximum）とは別。区間全体での最大値を関数について言うときは absolute maximum とも言う。",
+    "用例コーパスでは the maximum value ／ absolute maximum の形で数えた（語のままの maximum は local maximum や、形容詞の maximum speed なども数える）。"
+  ],
+  "related": [
+    "minimum",
+    "absolute-extrema",
+    "five-number-summary",
+    "local-maximum"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the maximum value | absolute maximum": 64
+    },
+    "written": {
+      "the maximum value | absolute maximum": 176
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

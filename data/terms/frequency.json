@@ -1,0 +1,82 @@
+{
+  "id": "frequency",
+  "ja": {
+    "term": "度数",
+    "reading": "どすう",
+    "alt": []
+  },
+  "en": {
+    "term": "frequency",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "度数分布表で、それぞれの階級（や値）に入るデータの個数。",
+  "definition_en": "The number of data values that fall in a class or take a given value.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The frequency is just how many times each value shows up.",
+      "ja": "度数は、それぞれの値が何回出てくるかということ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Complete the frequency column of the table.",
+      "ja": "表の度数の欄を埋めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "frequency は物理の「振動数・周波数」（natural frequency など）と同じ語。用例コーパスでは話し言葉の多くがその意味なので、frequency table ／ frequency column ／ frequency polygon ／ frequency distribution の形で数えた。",
+    "相対度数は relative frequency、累積度数は cumulative frequency。"
+  ],
+  "related": [
+    "frequency-table",
+    "relative-frequency",
+    "cumulative-frequency",
+    "class"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "frequency table | frequency column | frequency polygon | frequency distribution": 18
+    },
+    "written": {
+      "frequency table | frequency column | frequency polygon | frequency distribution": 74
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

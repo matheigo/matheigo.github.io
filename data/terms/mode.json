@@ -1,0 +1,94 @@
+{
+  "id": "mode",
+  "ja": {
+    "term": "最頻値",
+    "reading": "さいひんち",
+    "alt": [
+      "モード"
+    ]
+  },
+  "en": {
+    "term": "mode",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "データの中でもっとも多く現れる値。度数分布表では度数がもっとも大きい階級の階級値。",
+  "definition_en": "The value that occurs most often in the data; in a frequency table, the midpoint of the class with the greatest frequency.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The mode is just the value that shows up the most.",
+      "ja": "最頻値は、いちばん多く出てくる値のこと。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the mean, median, and mode of the data.",
+      "ja": "データの平均値・中央値・最頻値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "mode は電卓のモード（degree mode ／ radian mode）の mode と同じ語。用例コーパスでは the mode の形で数え、電卓の mode menu を除いた。",
+    "最頻値が 2 つあるデータを bimodal と言う。"
+  ],
+  "related": [
+    "median",
+    "arithmetic-mean",
+    "measure-of-center",
+    "frequency"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "最頻値",
+      "en": "Mode (statistics)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the mode !menu": 28
+    },
+    "written": {
+      "the mode !menu": 39
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

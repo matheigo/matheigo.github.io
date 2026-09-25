@@ -1,0 +1,74 @@
+{
+  "id": "class-width",
+  "ja": {
+    "term": "階級の幅",
+    "reading": "かいきゅうのはば",
+    "alt": []
+  },
+  "en": {
+    "term": "class width",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない（用例コーパスで class width は 0 件、width of the class は書き言葉 1 件）。説明するときは the width of each interval ／ class と言う。",
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "1 つの階級の区間の幅（上限と下限の差）。",
+  "definition_en": "The width of one class interval: its upper limit minus its lower limit.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If the class width is 10, the classes go 40 to 50, 50 to 60, and so on.",
+      "ja": "階級の幅が 10 なら、階級は 40〜50、50〜60 と続く。",
+      "register": "spoken"
+    },
+    {
+      "en": "Using a class width of 5, make a frequency table for the data.",
+      "ja": "階級の幅を 5 として、度数分布表を作れ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "ヒストグラムでは柱の横幅が階級の幅に当たる（the width of each bar）。"
+  ],
+  "related": [
+    "class",
+    "histogram"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}
