@@ -1,0 +1,53 @@
+---
+import Base from "../../layouts/Base.astro";
+import Math from "../../components/Math.astro";
+import HiddenNote from "../../components/HiddenNote.astro";
+import { isUnverified, symbols, symbolCategory, SYMBOL_CATEGORIES, SITE_NAME } from "../../lib/data";
+
+const groups = SYMBOL_CATEGORIES.map(([key, label]) => ({
+  key,
+  label,
+  items: symbols.filter((s) => (symbolCategory.get(s.id) ?? "notation-other") === key),
+})).filter((g) => g.items.length);
+const hidden = symbols.filter(isUnverified).length;
+---
+
+<Base
+  title={`記号・式の英語の読み方 — ${SITE_NAME}`}
+  description="板書の式を英語でどう読み上げるか。四則・分数・指数・根号から微分・積分・集合・論理・ベクトル・確率統計・幾何まで、単元別に。"
+  noindex={hidden === symbols.length}
+  section="symbols"
+>
+  <h1 class="page-title">記号・式の読み上げ</h1>
+  <p class="lede">
+    板書の式を英語で声に出すときの言い方です。単元ごとに並べています。記号を押すと、標準の読み方と教室で聞く縮めた言い方、日本語の読み、注意点が出ます。
+  </p>
+  <HiddenNote count={hidden} total={symbols.length} />
+
+  <ul class="jump" aria-label="単元">
+    {groups.map((g) => <li data-unverified-item={g.items.every(isUnverified) ? "" : undefined}><a href={`#${g.key}`}>{g.label}</a></li>)}
+  </ul>
+
+  {
+    groups.map((g) => (
+      <section id={g.key} data-unverified-item={g.items.every(isUnverified) ? "" : undefined}>
+        <h2 class="group">{g.label}</h2>
+        <ul class="rows">
+          {g.items.map((s) => (
+            <li data-unverified-item={isUnverified(s) ? "" : undefined}>
+              <a href={`/symbols/${s.id}/`}>
+                <span class="row-ja">{s.name_ja}</span>
+                <span class="row-math">
+                  <Math latex={s.latex} display={false} output="html" />
+                </span>
+                <span class="row-en" lang="en">
+                  {s.spoken_en[0].text}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Base>

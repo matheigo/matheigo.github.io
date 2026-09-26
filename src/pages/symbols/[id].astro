@@ -1,0 +1,160 @@
+---
+import Base from "../../layouts/Base.astro";
+import Math from "../../components/Math.astro";
+import Speak from "../../components/Speak.astro";
+import En from "../../components/En.astro";
+import EvidenceTable from "../../components/EvidenceTable.astro";
+import Sources from "../../components/Sources.astro";
+import Report from "../../components/Report.astro";
+import UnverifiedGate from "../../components/UnverifiedGate.astro";
+import {
+  symbols,
+  termById,
+  conventionById,
+  symbolById,
+  symbolCategory,
+  SYMBOL_CATEGORIES,
+  isUnverified,
+  isExplanatoryTranslation,
+  REGISTER_LABELS,
+  SITE_NAME,
+  levelText,
+} from "../../lib/data";
+import { ogPath } from "../../lib/og";
+
+export function getStaticPaths() {
+  return symbols.map((s) => ({ params: { id: s.id }, props: { symbol: s } }));
+}
+
+const { symbol: s } = Astro.props;
+const unverified = isUnverified(s);
+const path = `/symbols/${s.id}/`;
+const first = s.spoken_en[0].text;
+const title = `${s.name_ja} の英語の読み方 | ${first} — ${SITE_NAME}`;
+const description = `${s.name_ja}（${s.name_en}）は英語で「${first}」と読む。${s.notes?.[0] ?? ""}`.trim();
+const term = s.term_ref ? termById.get(s.term_ref) : undefined;
+const related = (s.related ?? [])
+  .map((r) => conventionById.get(r) ?? symbolById.get(r))
+  .filter((x) => x !== undefined);
+const category = SYMBOL_CATEGORIES.find(([k]) => k === (symbolCategory.get(s.id) ?? "notation-other"));
+const say = s.tts_text ?? first;
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  name: s.name_ja,
+  alternateName: s.name_en,
+  description: `英語の読み方: ${s.spoken_en.map((x) => x.text).join(" / ")}`,
+  inLanguage: "ja",
+  url: new URL(path, Astro.site).href,
+  inDefinedTermSet: { "@type": "DefinedTermSet", name: "MathEigo 数学の日英辞典", url: Astro.site?.href },
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  unverified={unverified}
+  ogImage={ogPath("symbols", s.id, !unverified)}
+  jsonLd={jsonLd}
+  section="symbols"
+>
+  {unverified && <UnverifiedGate kind="記号" />}
+
+  <article class="entry" data-unverified-item={unverified ? "" : undefined}>
+    {unverified && <p class="unverified-note">この記号はまだ監査を通っていません（未確認）。</p>}
+    <header class="term-head">
+      <p class="meta">
+        <a href="/symbols/">記号・式の読み上げ</a>
+        {category && (
+          <>
+            {" ／ "}
+            <a href={`/symbols/#${category[0]}`}>{category[1]}</a>
+          </>
+        )}
+      </p>
+      <h1 class="term-ja">{s.name_ja}</h1>
+      <p class="term-en" lang="en">{s.name_en}</p>
+    </header>
+
+    <Math latex={s.latex} />
+
+    <div class="say">
+      <span class="say-label">英語ではこう読む</span>
+      {
+        s.spoken_en.map((sp) => (
+          <span class="reading" lang="en">
+            {sp.text} <small lang="ja">（{REGISTER_LABELS[sp.register] ?? sp.register}）</small>
+          </span>
+        ))
+      }
+      {s.respelling && <span class="ja-reading">発音: <span lang="en">{s.respelling}</span></span>}
+      <span class="ja-reading">日本語では: {s.spoken_ja}</span>
+      <Speak text={say} />
+    </div>
+
+    {
+      s.notes?.length ? (
+        <section class="block">
+          <h2>注意</h2>
+          <ul class="plain">
+            {s.notes.map((n) => (
+              <li>{n}</li>
+            ))}
+          </ul>
+        </section>
+      ) : null
+    }
+
+    {
+      term && (
+        <section class="block">
+          <h2>用語</h2>
+          <ul class="links">
+            <li>
+              <a href={`/terms/${term.id}/`}>{term.ja.term}</a>
+              <En text={term.en.term} gloss={isExplanatoryTranslation(term)} class="detail" />
+            </li>
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      related.length ? (
+        <section class="block">
+          <h2>関連する慣習差・記号</h2>
+          <ul class="links">
+            {related.map((r) =>
+              "title_ja" in r ? (
+                <li>
+                  <a href={`/conventions/${r.id}/`}>{r.title_ja}</a>
+                  <span class="detail">日米の慣習差 — {r.advice_ja}</span>
+                </li>
+              ) : (
+                <li>
+                  <a href={`/symbols/${r.id}/`}>{r.name_ja}</a>
+                  <span class="detail" lang="en">
+                    {r.spoken_en[0].text}
+                  </span>
+                </li>
+              ),
+            )}
+          </ul>
+        </section>
+      ) : null
+    }
+
+    <EvidenceTable evidence={s.evidence} />
+
+    <section class="block meta">
+      <h2>出典</h2>
+      <Sources sources={s.sources} />
+      <ul class="facts">
+        <li>範囲: {levelText(s.level)}</li>
+        <li>確認の段階: {s.confidence === "verified" ? "監査済み" : "未確認（監査前）"}</li>
+        {s.updated && <li>更新: {s.updated}</li>}
+      </ul>
+      <Report id={s.id} path={path} />
+    </section>
+  </article>
+</Base>

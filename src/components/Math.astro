@@ -5,9 +5,15 @@ import katex from "katex";
 interface Props {
   latex: string;
   display?: boolean;
+  /** "html" drops the MathML copy; only for lists where the reading is printed next to it. */
+  output?: "htmlAndMathml" | "html";
 }
-const { latex, display = true } = Astro.props;
-const html = katex.renderToString(latex, { displayMode: display, throwOnError: false });
+const { latex, display = true, output = "htmlAndMathml" } = Astro.props;
+const html = katex.renderToString(latex, { displayMode: display, throwOnError: false, output });
 ---
 
-<span class={display ? "math math-display" : "math"} set:html={html} />
+<span
+  class={display ? "math math-display" : "math"}
+  aria-hidden={output === "html" ? "true" : undefined}
+  set:html={html}
+/>
