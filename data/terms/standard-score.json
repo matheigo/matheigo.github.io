@@ -78,7 +78,7 @@
       "note": "standardized score（1 件）。t-score は t 分布の値"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-09-26",
@@ -93,11 +93,6 @@
     {
       "code": "corpus-human-settled",
       "note": "見出しは人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 5 監査（セッション 2）」2: en.term を T-score、mapping near）。register は主張しない。",
-      "raised": "2026-09-26"
-    },
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-26）で大きな直し: ユーザーの決定（監査 2 の 2）で en.term を hensachi から T-score に、mapping を none から near にした。見直す点: mapping_note の書き方、T-score を見出しにしてよいか。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]

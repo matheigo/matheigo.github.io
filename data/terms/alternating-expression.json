@@ -85,13 +85,13 @@
   },
   "flags": [
     {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-26）で大きな直し: H-1 の英語版 Wikipedia の確かめで、mapping を none から near にして説明の訳の印を外した（記事「Alternating polynomial」が en.term を定義する）。見直す点: near でよいか。次の監査のセッションが見直す。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 alternating polynomial（英語版「Alternating polynomial」、ja の langlink 先）。register は主張しない。",
       "raised": "2026-09-26"
     },
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 alternating polynomial（英語版「Alternating polynomial」、ja の langlink 先）。register は主張しない。",
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: 監査 2 の大きな直し（mapping none → near）を見直し、mapping を exact にした（交代式 = alternating polynomial は 1 対 1。米国の高校で扱わないのは範囲の違いで note が書く）。見直す点: exact でよいか（同じ構図の symmetric-expression・elementary-symmetric-polynomial と揃っているか）。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]

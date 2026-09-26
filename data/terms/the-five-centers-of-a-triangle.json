@@ -81,7 +81,7 @@
       "note": "Geometry 7.5 Triangles in Circles・7.6 A Special Point・7.7 Circles in Triangles（circumcenter 23 件・incenter 29 件。centroid・orthocenter・excenter は 0 件）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-09-26",
@@ -96,11 +96,6 @@
     {
       "code": "corpus-human-settled",
       "note": "見出しは人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 5 監査（セッション 2）」2: en.term を triangle centers、mapping near）。register は主張しない。",
-      "raised": "2026-09-26"
-    },
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-26）で大きな直し: ユーザーの決定（監査 2 の 2）で en.term を points of concurrency から triangle centers に、mapping を none から near にし、例文を差し替えた。見直す点: mapping_note と例文の書き方、triangle centers の使い方。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]
