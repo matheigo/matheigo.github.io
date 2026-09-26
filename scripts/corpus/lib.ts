@@ -498,7 +498,7 @@ function patternRegex(pattern: string): RegExp | null {
   return wholeWords(parts.map((w) => (w === "\u0000" ? slot : escape(w))).join(" "));
 }
 
-/** Literal whole-phrase count. phrases are counted this way. */
+/** Literal whole-phrase count (probe --literal). Phrases are counted by their key part instead (PHRASE_FORMS). */
 export function countPhrase(haystack: string, phrase: string): number {
   return starts(haystack, phraseRegex(phrase)).length;
 }
@@ -513,10 +513,10 @@ export function countPattern(haystack: string, pattern: string): number {
   return starts(haystack, patternRegex(pattern)).length;
 }
 
-/** How a collection's wordings are matched. */
+/** How a collection's wordings are matched. Phrases are counted by their key part, as terms are (PHRASE_FORMS). */
 export function matcherFor(collection: string): (wording: string) => RegExp | null {
   if (collection === "symbols") return patternRegex;
-  if (collection === "terms") return termRegex;
+  if (collection === "terms" || collection === "phrases") return termRegex;
   return phraseRegex;
 }
 
@@ -1002,10 +1002,51 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   secant: { secant: "secant !line !lines !method !slope !slopes" }, // sec x, not the secant line (secant-line)
 };
 
+/**
+ * Phrases are not counted as whole sentences (DECISIONS, Phase 3 の準備: フレーズの数え方): a sentence
+ * never recurs word for word, so "Sorry, could you say that last part again?"
+ * is 0 in any corpus. What is counted is the key part that carries the
+ * intent, written as a terms verb phrase is ("…" a one-to-three-word blank,
+ * inflection folded, "A | B" and "!w" as in TERM_FORMS): phrase id -> the
+ * sentence as written in `en` / `variants` -> its key part. The key part is
+ * also the key in counts and `evidence`. "" marks a sentence whose key part
+ * cannot be told apart from other uses of the same words (a sentence-initial
+ * "So"): it is not counted, as a term's uncountable wording goes to pitfalls.
+ */
+export const PHRASE_FORMS: Record<string, Record<string, string>> = {
+  "class-asking-repeat": {
+    "Sorry, could you say that last part again?": "could you say … again | can you say … again | could you say that again | can you say that again",
+    "Could you repeat the last step?": "could you repeat | can you repeat",
+    "Sorry, I missed that.": "i missed that",
+  },
+  // The variants are three different questions, not three ways to ask one (see the Phase 3 prep report).
+  "exam-clarify-instruction": {
+    'Does "simplify" here mean I should rationalize the denominator?': "does … mean i should",
+    "Do you want the answer in exact form or as a decimal?": "in exact form",
+    "Should I show all the steps for this one?": "show all … steps | show all the work | show your work",
+  },
+  "explaining-solution-first-step": {
+    "First I set the two expressions equal, then I solved for x and checked the answer.": "first i",
+    "What I did was set them equal and solve for x.": "what i did was",
+    "I started by setting the two expressions equal to each other.": "i started by | i start by",
+  },
+  "office-hours-stuck-at-step": {
+    "I follow it up to here, but I don't see how you get from this line to the next one.": "i don't see how | i do not see how",
+    "I'm lost at this step.": "i'm lost | i am lost",
+    "Could you walk me through this step?": "walk … through",
+  },
+  "written-solution-therefore": {
+    "Therefore x = 3 is the only solution.": "therefore",
+    "Hence x = 3 is the only solution.": "hence",
+    "So x = 3 is the only solution.": "", // "so" is everywhere; a sentence-initial So cannot be told apart
+  },
+};
+
 /** The wording a candidate is counted and recorded as. */
 export function countedAs(collection: string, id: string, wording: string): string {
   if (collection === "symbols") return SYMBOL_PATTERNS[id]?.[wording] ?? wording;
   if (collection === "terms") return TERM_FORMS[id]?.[wording] ?? wording;
+  if (collection === "phrases") return PHRASE_FORMS[id]?.[wording] ?? wording;
   return wording;
 }
 
@@ -1318,6 +1359,10 @@ export interface ReferenceHits {
   openstax: Record<string, number>;
   /** candidate -> OpenStax section titles that contain it */
   openstaxTitles: Record<string, string[]>;
+  /** candidate -> hits in the body of OpenStax Calculus Volumes 1–3 alone (the level reference of calculus words) */
+  openstaxCalculus?: Record<string, number>;
+  /** candidate -> OpenStax Calculus section titles that contain it */
+  openstaxCalculusTitles?: Record<string, string[]>;
   /** candidate -> Nicholson section -> hits */
   nicholson?: Record<string, Record<string, number>>;
   /** candidate -> Levin section -> hits */
@@ -1380,6 +1425,8 @@ export const emptyReference = (): ReferenceHits => ({
   cedStats: {},
   openstax: {},
   openstaxTitles: {},
+  openstaxCalculus: {},
+  openstaxCalculusTitles: {},
   nicholson: {},
   levin: {},
   im: {},
@@ -1399,6 +1446,9 @@ export interface MoreReferences {
   imGlossary?: Record<string, string[]>;
   /** CK-12 Geometry and Algebra, one section per page ("CK-12 Geometry 1.17 Vertical Angles") */
   ck12?: [string, string][];
+  /** OpenStax Calculus Volumes 1–3 alone: the normalized docs and their section titles (a part of `openstax`) */
+  openstaxCalculus?: string[];
+  openstaxCalculusTitles?: string[];
 }
 
 /**
@@ -1433,6 +1483,10 @@ export function referenceHits(
     if (body) out.openstax[c] = body;
     const inTitles = [...new Set(titles.filter((t) => starts(normalize(t), re).length > 0))];
     if (inTitles.length) out.openstaxTitles[c] = inTitles;
+    const calculus = (more.openstaxCalculus ?? []).reduce((n, text) => n + starts(text, re).length, 0);
+    if (calculus) out.openstaxCalculus![c] = calculus;
+    const calculusTitles = [...new Set((more.openstaxCalculusTitles ?? []).filter((t) => starts(normalize(t), re).length > 0))];
+    if (calculusTitles.length) out.openstaxCalculusTitles![c] = calculusTitles;
     bySection(out.nicholson!, c, re, more.nicholson ?? []);
     bySection(out.levin!, c, re, more.levin ?? []);
     bySection(out.im!, c, re, more.im ?? []);
@@ -1613,8 +1667,11 @@ export function settleUndecided(
  * 単元 3 の前の修正 1: rectangular box is OpenStax Calculus, constant of variation
  * the OpenStax Algebra books). The headword is then what the reference for the
  * entry's level calls it (levelReference): IM for 中学, CK-12 and IM for
- * Geometry, the CED for AP. When that reference names no wording, or names the
- * spoken leader, the spoken leader stays (by "spoken").
+ * Geometry, the CED and then OpenStax Calculus for AP Calculus and Calculus
+ * I–III (Phase 3 の準備の前の修正 1), the CED for AP Statistics - every level of the
+ * entry in that order, the first reference that names a wording deciding.
+ * When none names a wording, or the first that names one names the spoken
+ * leader, the spoken leader stays (by "spoken").
  */
 export interface LeanHead {
   /** The spoken leader, and the source it rests on. */
@@ -1629,8 +1686,20 @@ export interface LeanHead {
   agrees?: LevelReference;
 }
 
-/** The reference for an entry's level (DECISIONS, Phase 2 中学の単元 3 の前の修正 1). */
-export type LevelReference = "im" | "ck12-im" | "ced";
+/**
+ * The references for an entry's level (DECISIONS, Phase 2 中学の単元 3 の前の修正 1;
+ * Phase 3 の準備の前の修正 1): "calculus" is the CED, then OpenStax Calculus.
+ */
+export type LevelTier = "im" | "ck12-im" | "calculus" | "ced";
+
+/** One reference of a tier: the one that names the headword. */
+export type LevelReference = "im" | "ck12-im" | "ced" | "openstax-calculus";
+
+/** The references of a tier, in the order they are read: the first that names a wording decides. */
+export const levelReferences = (tier: LevelTier): LevelReference[] =>
+  tier === "calculus" ? ["ced", "openstax-calculus"] : [tier];
+
+const CALCULUS_LEVELS = new Set(["AP Calculus AB", "AP Calculus BC", "Calculus I", "Calculus II", "Calculus III"]);
 
 export interface Level {
   jp?: string[];
@@ -1639,14 +1708,28 @@ export interface Level {
 
 /**
  * 中学 (中1–中3) -> IM, else Geometry -> CK-12 and IM (one tier), else AP
- * Calculus / AP Statistics -> the CEDs. The first that applies, in this order
- * (the level where the learner meets the word first). Other levels have none.
+ * Calculus AB / BC or Calculus I–III -> the CEDs, then OpenStax Calculus
+ * (Phase 3 の準備の前の修正 1), else AP Statistics -> the CEDs. The first that applies,
+ * in this order (the level where the learner meets the word first). Other
+ * levels have none.
  */
-export function levelReferenceOf(level: Level | undefined): LevelReference | null {
-  if ((level?.jp ?? []).some((l) => /^中[123]$/.test(l))) return "im";
-  if ((level?.us ?? []).includes("Geometry")) return "ck12-im";
-  if ((level?.us ?? []).some((l) => l.startsWith("AP "))) return "ced";
-  return null;
+export function levelReferenceOf(level: Level | undefined): LevelTier | null {
+  return levelTiersOf(level)[0] ?? null;
+}
+
+/**
+ * Every tier that applies to an entry's level, in the order above. When the
+ * first tier's references name no wording, the next is read (Phase 3 の準備の前の修正 1:
+ * substitute-new-variable is 中3 and AP Calculus AB; IM names nothing, the CED
+ * and OpenStax Calculus come next).
+ */
+export function levelTiersOf(level: Level | undefined): LevelTier[] {
+  const out: LevelTier[] = [];
+  if ((level?.jp ?? []).some((l) => /^中[123]$/.test(l))) out.push("im");
+  if ((level?.us ?? []).includes("Geometry")) out.push("ck12-im");
+  if ((level?.us ?? []).some((l) => CALCULUS_LEVELS.has(l))) out.push("calculus");
+  else if ((level?.us ?? []).some((l) => l.startsWith("AP "))) out.push("ced");
+  return out;
 }
 
 /**
@@ -1663,7 +1746,8 @@ export function levelReferenceHead(ref: ReferenceHits | undefined, by: LevelRefe
   const im = (c: string) => sum(ref.im, c) + (ref.imGlossary?.[c]?.length ?? 0);
   const ck12 = (c: string) => sum(ref.ck12, c) + (ref.ck12Titles?.[c]?.length ?? 0);
   const ced = (c: string) => sum(ref.ced, c) + sum(ref.cedStats, c);
-  const score = by === "im" ? im : by === "ck12-im" ? (c: string) => ck12(c) + im(c) : ced;
+  const calculus = (c: string) => (ref.openstaxCalculus?.[c] ?? 0) + (ref.openstaxCalculusTitles?.[c]?.length ?? 0);
+  const score = by === "im" ? im : by === "ck12-im" ? (c: string) => ck12(c) + im(c) : by === "openstax-calculus" ? calculus : ced;
   const names = [
     ...new Set([
       ...Object.keys(ref.ced),
@@ -1672,6 +1756,8 @@ export function levelReferenceHead(ref: ReferenceHits | undefined, by: LevelRefe
       ...Object.keys(ref.imGlossary ?? {}),
       ...Object.keys(ref.ck12 ?? {}),
       ...Object.keys(ref.ck12Titles ?? {}),
+      ...Object.keys(ref.openstaxCalculus ?? {}),
+      ...Object.keys(ref.openstaxCalculusTitles ?? {}),
     ]),
   ]
     .filter((c) => score(c) > 0)
@@ -1682,7 +1768,11 @@ export function levelReferenceHead(ref: ReferenceHits | undefined, by: LevelRefe
   }
   if (names.length === 0) return null;
   const places = (c: string) =>
-    JSON.stringify([ref.im?.[c], ref.imGlossary?.[c], ref.ck12?.[c], ref.ck12Titles?.[c], ref.ced[c], ref.cedStats?.[c]]);
+    JSON.stringify(
+      by === "openstax-calculus"
+        ? [ref.openstaxCalculus?.[c], ref.openstaxCalculusTitles?.[c]]
+        : [ref.im?.[c], ref.imGlossary?.[c], ref.ck12?.[c], ref.ck12Titles?.[c], ref.ced[c], ref.cedStats?.[c]],
+    );
   if (names.length > 1 && score(names[0]) === score(names[1]) && places(names[0]) !== places(names[1])) return null;
   return names[0];
 }
@@ -1720,11 +1810,15 @@ export function spokenLeanHead(
   if (top !== undefined && ced(lead) >= ced(top)) return null;
   if (written?.kind === "single" && leansOnOne(written)) {
     // Both registers rest on one source: the level's reference, else the spoken leader.
+    // The references of the level in order (the CED, then OpenStax Calculus): the first that names a wording decides.
     const also = { head: written.head, source: written.dependsOn.source };
-    const by = levelReferenceOf(level);
-    const head = by ? levelReferenceHead(ref, by, order) : null;
-    if (by && head !== null && !sameWording(head, lead)) return { spoken: lead, source, head, by, written: also };
-    return { spoken: lead, source, head: lead, by: "spoken", written: also, ...(by && head !== null ? { agrees: by } : {}) };
+    for (const by of [...new Set(levelTiersOf(level).flatMap(levelReferences))]) {
+      const head = levelReferenceHead(ref, by, order);
+      if (head === null) continue;
+      if (!sameWording(head, lead)) return { spoken: lead, source, head, by, written: also };
+      return { spoken: lead, source, head: lead, by: "spoken", written: also, agrees: by };
+    }
+    return { spoken: lead, source, head: lead, by: "spoken", written: also };
   }
   if (written?.kind === "single") return { spoken: lead, source, head: written.head, by: "written" };
   if (top !== undefined) return { spoken: lead, source, head: top, by: "ced" };
@@ -1982,8 +2076,8 @@ export function candidatesOf(collection: string, entry: Record<string, unknown>)
   } else if (collection === "symbols") {
     for (const s of (entry.spoken_en as { text: string }[]) ?? []) out.push(countedAs(collection, entry.id as string, s.text));
   } else if (collection === "phrases") {
-    out.push(entry.en as string);
-    for (const v of (entry.variants as { en: string }[] | undefined) ?? []) out.push(v.en);
+    out.push(countedAs(collection, entry.id as string, entry.en as string));
+    for (const v of (entry.variants as { en: string }[] | undefined) ?? []) out.push(countedAs(collection, entry.id as string, v.en));
   }
   return [...new Set(out.map((s) => s.trim()).filter(Boolean))];
 }

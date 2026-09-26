@@ -58,6 +58,8 @@ CLAUDE.md の「完了の定義（1 エントリ）」（必須項目・ひら�
 
 ## C. 単元別のエントリ数
 
+〔更新〕米国の単元の term_refs は Phase 3 の準備で中身で付け直した。今の件数は `audits/phase3-prep-report.md` A-5（この節は Phase 2 終了時点の数）。
+
 単元（data/curriculum）の term_refs で数えた。1 語は台帳の行が属する単元すべてに入る（日本の単元と米国の単元の両方に入る語が 238）。どの単元にも入らない語は 0。
 
 ### 科目・コース別（単元の term_refs の和集合）
@@ -284,7 +286,7 @@ draft は書き出し（dist/data の terms.json ほか）とサイトから除�
 
 1. **③ で参照にも呼び方がないもの**（corpus-undecided）: terms/quadratic-regression、phrases 5 語（class-asking-repeat・exam-clarify-instruction・explaining-solution-first-step・office-hours-stuck-at-step・written-solution-therefore。phrases は Phase 3 で扱う）
 2. **コーパスの結論がエントリの register と食い違うもの**: 0 語
-3. 規則の判断を求めるもの（phase2-middle-school-3-report B）: 1 の規則で見出しが変わった微積分の 10 語、constant-of-proportionality
+3. 〔済〕規則の判断を求めるもの（phase2-middle-school-3-report B）: 1 の規則で見出しが変わった微積分の 10 語、constant-of-proportionality → phase3-prep-report A-1・A-2
 4. 語数（A）: 2,000 語に届かせるなら、台帳に足す単元と行
 
 ## F. Phase 5 の監査に回す論点
@@ -294,6 +296,7 @@ draft は書き出し（dist/data の terms.json ほか）とサイトから除�
 ### F-1. 出典と「米国では〜」の主張
 
 - 出典が editorial だけの likely が 124 語ある（本まとめで数えた）。多くは ③ を参照で決めた語や句で、参照は flags の note にあるが sources には入っていない。出典の付け方（参照を sources にも入れるか、editorial だけの語を draft にするか）を決める
+  → 〔一部済〕見出しを決めた参照（flags の note）を sources に入れた 5 語（phase3-prep-report A-6）。**残る 119 語は editorial だけのまま**（draft にはしない。人間が決めた 22 ／ コーパス ①・② で決まった 41 ／ 英語に決まった言い方がない 56。一覧は phase3-prep-report A-6）。この 119 語に出典をどう付けるか（コーパスで決まった 41 語のうち書き言葉が OpenStax の 27 語は、その本を textbook として入れるか）を Phase 5 で決める
 - 記憶で書いた米国側の主張（integral D-1）: shell method・trigonometric substitution が AP の範囲外、accumulation function の呼び方、FTC の Part 1 ／ 2 の呼び方の教科書差、座標軸以外の回転軸、tabular integration・LIPET、S(x) と A(x)、添字 i、x と t の対応表を書かない、pound・foot など。trigonometric-substitution の本文は今は CED の topic 番号で書いてある。ほかは監査で CED・OpenStax に当てる
 - 事実欄に確かめずに書いた主張が本文に入っていた（middle-3 C-3。バッチ 7・8 は全部洗って直した）。前のバッチの本文にも同じ穴がありうる
 - 件数の警告（validate）は発見的で、参照の名前と「件」を含む文に用例コーパスの件数が混ざると見逃す（middle-2 F）。「OpenStax の 6 冊」のように書き言葉コーパスが 9 冊になる前の書き方が残る文がある
@@ -302,8 +305,9 @@ draft は書き出し（dist/data の terms.json ほか）とサイトから除�
 
 ### F-2. 見出しの規則と 1 ソース頼み
 
-- 見出しの規則（書き言葉も 1 ソース頼みなら level の参照）で、微積分の 10 語が講義 1 つの言い方になった（middle-3 B-2）。constant-of-proportionality は定義に当たらず constant of variation のまま（middle-3 B-1）
+- 〔済〕見出しの規則（書き言葉も 1 ソース頼みなら level の参照）で、微積分の 10 語が講義 1 つの言い方になった（middle-3 B-2）→ level の参照に OpenStax Calculus を足して 10 語とも書き言葉の言い方に戻った（phase3-prep-report A-1）。constant-of-proportionality は人間が constant of proportionality に決めた（同 A-2）
 - 1 ソース頼みの単位は manifest の id（OpenStax の本・MIT の講義・YouTube のチャンネル）。まとめて 1 つと数えると下がる語が増える（integral-fix I）
+- **OpenStax の本（9 冊。manifest の id は 7）をまとめて 1 ソースと数えるか**（constant-of-proportionality の書き言葉 constant of variation は OpenStax Elementary Algebra と Algebra and Trigonometry に分かれ、1 冊ずつなら 1 ソース頼みに当たらない。人間が見出しを constant of proportionality に決めた。phase3-prep-report A-2）
 - ① を ② に下げたときの相手が 1〜5 件の語がある（interval-of-integration の limits of integration 60 ／ interval of integration 1。integral-fix I）。相手の件数に下限を設けるか
 - 中学の語の話し言葉の多くは Khan Academy の中学だけ（prime-factorization・dilation ほか。middle H）、線形代数は MIT 18.06 だけ（stats-vectors-2 I）、Discrete Math は MIT 6.042 だけ（geometry-discrete-3 H）、幾何の話し言葉は The Organic Chemistry Tutor だけ（geometry-discrete H・geometry-discrete-2 H）
 - find-an-antiderivative の take the antiderivative（Khan Academy）、which-one-to-differentiate の pick u（YouTube）など、1 ソースの言い方が見出しの語（integral D-2）
@@ -345,8 +349,8 @@ draft は書き出し（dist/data の terms.json ほか）とサイトから除�
 
 ### F-6. データの形
 
-- move-term-to-other-side（句）の例文 2 文がどちらも spoken（本まとめで見つけた）
-- corpus-human-settled は flag なので、その語は verified に上げられない（validate は verified の語に flag を許さない。algebra2 I）。Phase 5 で verified にするときの扱いを決める
+- 〔済〕move-term-to-other-side（句）の例文 2 文がどちらも spoken（本まとめで見つけた）→ 2 文目を register written の答案の形にした（phase3-prep-report A-7）
+- 〔済〕corpus-human-settled は flag なので、その語は verified に上げられない（validate は verified の語に flag を許さない。algebra2 I）。Phase 5 で verified にするときの扱いを決める → validate はすでに許している（flags を problem と record に分け、record の corpus-human-settled・corpus-reference-fallback・corpus-no-fixed-expression は verified の語に残ってよい。scripts/lib/flags.ts）
 - divergence の en.term が 2 語で同じ（SAME_EN_TERM で許している。series I）。同じ英語の見出しの組は SAME_EN_TERM に 23 組
 
 ## G. 次のフェーズ

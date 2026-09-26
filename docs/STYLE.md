@@ -25,9 +25,11 @@ PLAN.md §6 をそのまま作業用に移したもの。**生成時に毎バッ
    書き言葉が先、CED が次。書き言葉（① か ②）か CED（最も多く使う候補）が話し言葉の首位と同じ言い方なら当てない
    （left Riemann sum は CED の呼び方）。= を書いた形（let u =）は equal と読む同じ言い方として扱う。
    **書き言葉の首位も 1 ソース頼み**（抜くと ③ か別の候補が首位）なら、書き言葉では決めない。その語の level の参照の言い方を
-   `en.term` にする: 中学（level.jp が中1〜中3）は IM、次に Geometry は CK-12 と IM（同じ段）、次に AP は CED（lib.ts `levelReferenceOf`）。
-   参照が候補を使わないか、話し言葉の首位と同じ言い方なら、話し言葉の首位のまま（rectangular prism。書き言葉の rectangular box は
-   OpenStax Calculus だけ）。書き言葉の言い方は register written の variant にする。Precalculus・Algebra・大学の level には参照を当てない。
+   `en.term` にする: 中学（level.jp が中1〜中3）は IM、次に Geometry は CK-12 と IM（同じ段）、次に AP Calculus AB／BC・Calculus I〜III は
+   CED、その次に OpenStax Calculus（Volume 1〜3）、次に AP Statistics は CED（lib.ts `levelTiersOf`・`levelReferences`）。語の level に当たるものを
+   この順に読み、最初に候補を使う参照の言い方にする（中3 と AP Calculus の語は、IM が候補を使わなければ CED・OpenStax Calculus に進む）。
+   その参照が話し言葉の首位と同じ言い方か、どの参照も候補を使わなければ、話し言葉の首位のまま（rectangular prism。書き言葉の rectangular box は
+   OpenStax Calculus だけ）。書き言葉の言い方は register written の variant にする。Precalculus・Algebra・Linear Algebra ほかの level には参照を当てない。
    `corpus:decide` の「エントリ側で直すこと」に出る（lib.ts `spokenLeanHead`）。
 2. 米国優先。英国異形は `en.uk` に入れる（math/maths、negative three / minus three、parentheses / brackets、trig / trigonometry）。
 3. 直訳禁止リスト（下）に触れる語は `mapping` を正直に付ける。
@@ -120,3 +122,4 @@ Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を�
 - 数えられないもの（別の意味を締め出す形がない言い方）は候補（en.alt・variants・collocations）に置かず、pitfalls に書く（phase-shift の horizontal shift）。
 - 新しい単元の行が既存のエントリに当たったら、その単元の意味・例文・level・ja.alt が足りているかを見て、足りなければ足す（飛ばさない）。
 - TERM_FORMS の形に複数形だけの語を置かない（constants、unknowns、solids、cubes）。語形変化をまとめて数えるので、複数形は単数や過去形にも当たる（cubes は x cubed に当たる）。名詞として数えたいときは a ／ the を付けた単数の形にする（a constant !of ／ the constant !of）。
+- **フレーズ（phrases）は文を丸ごと数えない。** 要の部分（意図を運ぶ言い方）を、terms の動詞句と同じ規則（語形変化をまとめ、「…」は 1〜3 語の空き、「A | B」「!w」も使える）で数える。形は `scripts/corpus/lib.ts` の `PHRASE_FORMS`（フレーズの id → en ／ variants の文 → 要の部分）に書き、evidence にも要の部分のまま記録する。別の使い方と分けられない要の部分（文頭の So）は数えない（`""`）。variants は同じ意図の言い換えにする（別の質問を variants に並べると、件数の比べ合いに意味がなくなる。exam-clarify-instruction）。学生の側の言い方（質問・オフィスアワー）は講義のコーパスにほとんど出てこないので ③ になりやすい（PLAN 15 の注意）

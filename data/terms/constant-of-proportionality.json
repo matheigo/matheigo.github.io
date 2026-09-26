@@ -6,17 +6,16 @@
     "alt": []
   },
   "en": {
-    "term": "constant of variation",
+    "term": "constant of proportionality",
     "alt": [],
     "variants": [
       {
-        "term": "constant of proportionality",
-        "register": "spoken",
-        "note": "話し言葉ではずっと多いが、ほとんどが Khan Academy の中学の講義。IM は Grade 7・Grade 8 の glossary の見出しにしている。"
+        "term": "constant of variation",
+        "register": "written",
+        "note": "Algebra の教科書の呼び方（OpenStax Elementary Algebra・Algebra and Trigonometry の Variation の節）。書き言葉ではこちらが多い。"
       }
     ],
-    "uk": null,
-    "register": "written"
+    "uk": null
   },
   "pos": "noun",
   "mapping": "exact",
@@ -30,7 +29,8 @@
     ],
     "us": [
       "Pre-Algebra",
-      "Algebra 1"
+      "Algebra 1",
+      "Integrated Math 1"
     ]
   },
   "definition_ja": "比例 y = ax や反比例 y = a/x の式にある定数 a。比例では y ÷ x、反比例では x × y を計算すると求められる。",
@@ -51,7 +51,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "見出しは教科書（OpenStax Elementary Algebra・Algebra and Trigonometry）の constant of variation にした。7 年生の教材（IM Grade 7・Grade 8）は constant of proportionality と呼び、授業でもこちらをよく使う。",
+    "見出しは中学の教材（IM Grade 7・Grade 8 の glossary）と授業（Khan Academy の中学）の constant of proportionality にした。Algebra の教科書（OpenStax Elementary Algebra・Algebra and Trigonometry）は direct variation ／ inverse variation の定数として constant of variation と呼ぶ。",
     "反比例 y = a/x の a も比例定数と呼ぶ（エントリ inverse-proportion）。",
     "proportionality は 6 音節の長い語で、強勢は -al- に置く。"
   ],
@@ -64,14 +64,18 @@
   ],
   "sources": [
     {
-      "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
-    },
-    {
       "type": "reference",
       "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7)",
       "url": "https://im.kendallhunt.com/MS/students/2/index.html",
       "note": "Grade 7・Grade 8 glossary: constant of proportionality"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
     }
   ],
   "confidence": "likely",
@@ -101,5 +105,12 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-25"
-  }
+  },
+  "flags": [
+    {
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 3 の準備の前の修正」の 2）。en.term は constant of proportionality（IM Grade 7・8 の glossary、Khan Academy の中学）、constant of variation は register written の variant（Algebra の教科書）。見出しの register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
 }

@@ -29,6 +29,9 @@ import {
   spokenLeanHead,
   levelReferenceHead,
   levelReferenceOf,
+  levelReferences,
+  levelTiersOf,
+  matcherFor,
   weigh,
   wikipediaHead,
   type CorpusDoc,
@@ -74,6 +77,24 @@ describe("normalize", () => {
     expect(normalize("do a u substitution")).toBe("do a u-substitution");
     expect(normalize("the anti-derivative, the anti derivative")).toBe("the antiderivative, the antiderivative");
     expect(normalize("u sub n")).toBe("u sub n");
+  });
+});
+
+describe("PHRASE_FORMS (DECISIONS, Phase 3 の準備: フレーズの数え方)", () => {
+  it("counts a phrase by its key part, with the blank and inflection of terms", () => {
+    const re = matcherFor("phrases")(countedAs("phrases", "class-asking-repeat", "Sorry, could you say that last part again?"))!;
+    expect(normalize("sorry, could you say that last part again? and can you say that again").match(re)?.length).toBe(2);
+    expect(countTerm(normalize("i started by factoring. we start by factoring."), "i started by | i start by")).toBe(1);
+    expect(countTerm(normalize("let me walk you through it"), "walk … through")).toBe(1);
+  });
+
+  it("does not count a sentence whose key part cannot be told apart", () => {
+    const entry = {
+      id: "written-solution-therefore",
+      en: "Therefore x = 3 is the only solution.",
+      variants: [{ en: "Hence x = 3 is the only solution." }, { en: "So x = 3 is the only solution." }],
+    };
+    expect(candidatesOf("phrases", entry)).toEqual(["therefore", "hence"]);
   });
 });
 
@@ -464,10 +485,50 @@ describe("spokenLeanHead", () => {
       by: "spoken",
       agrees: "im",
     });
-    // Calculus I has no level reference (IM, CK-12 and the CED are the three)
-    const out = spokenLeanHead(leanSpoken, leanWritten, im, { jp: ["大学"], us: ["Calculus I"] });
+    // Linear Algebra has no level reference (IM, CK-12, the CED and OpenStax Calculus are the four)
+    const out = spokenLeanHead(leanSpoken, leanWritten, im, { jp: ["大学"], us: ["Linear Algebra"] });
     expect(out).toMatchObject({ head: "rectangular prism", by: "spoken" });
     expect(out?.agrees).toBeUndefined();
+  });
+
+  // Phase 3 の準備の前の修正 1: AP Calculus and Calculus I–III read the CED, then OpenStax Calculus
+  const calcSpoken = decideRobust({ "compute the integral": { m: 20, b: 2 } }, w2, "spoken");
+  const calcWritten = decideRobust({ "evaluate the integral": { calc: 30, os: 2 } }, w2, "written");
+
+  it("reads OpenStax Calculus after the CED for a calculus word", () => {
+    expect(calcWritten).toMatchObject({ kind: "single", head: "evaluate the integral" });
+    const os = ref({ openstaxCalculus: { "evaluate the integral": 30 } });
+    expect(spokenLeanHead(calcSpoken, calcWritten, os, { jp: ["大学"], us: ["Calculus I"] })).toMatchObject({
+      head: "evaluate the integral",
+      by: "openstax-calculus",
+    });
+    expect(spokenLeanHead(calcSpoken, calcWritten, os, { jp: ["数III"], us: ["AP Calculus AB"] })).toMatchObject({
+      by: "openstax-calculus",
+    });
+    // the CED comes first when it names a wording
+    const ced = ref({ ced: { "find the integral": { "6.1": 2 } }, openstaxCalculus: { "evaluate the integral": 30 } });
+    expect(spokenLeanHead(calcSpoken, calcWritten, ced, { jp: ["数III"], us: ["AP Calculus AB"] })).toMatchObject({
+      head: "find the integral",
+      by: "ced",
+    });
+    // OpenStax Calculus names the spoken leader: it stays
+    const same = ref({ openstaxCalculus: { "compute the integral": 3 } });
+    expect(spokenLeanHead(calcSpoken, calcWritten, same, { jp: ["大学"], us: ["Calculus II"] })).toMatchObject({
+      head: "compute the integral",
+      by: "spoken",
+      agrees: "openstax-calculus",
+    });
+    // AP Statistics reads the CED only
+    expect(spokenLeanHead(calcSpoken, calcWritten, os, { jp: ["数B"], us: ["AP Statistics"] })).toMatchObject({ by: "spoken" });
+    // 中3 and AP Calculus: IM names nothing, so the CED and OpenStax Calculus are read next
+    expect(spokenLeanHead(calcSpoken, calcWritten, os, { jp: ["中3"], us: ["AP Calculus AB"] })).toMatchObject({
+      head: "evaluate the integral",
+      by: "openstax-calculus",
+    });
+    // ... but IM decides when it names a wording
+    const im = ref({ im: { "find the integral": { "Grade 8 1.1": 2 } }, openstaxCalculus: { "evaluate the integral": 30 } });
+    expect(spokenLeanHead(calcSpoken, calcWritten, im, { jp: ["中3"], us: ["AP Calculus AB"] })).toMatchObject({ by: "im" });
+    expect(levelTiersOf({ jp: ["中3"], us: ["Geometry", "AP Calculus AB", "AP Statistics"] })).toEqual(["im", "ck12-im", "calculus"]);
   });
 
   it("reads one wording counted twice as one (box plot / boxplot tie in the same places)", () => {
@@ -490,11 +551,14 @@ describe("spokenLeanHead", () => {
 });
 
 describe("levelReferenceOf", () => {
-  it("takes 中学 first, then Geometry, then AP", () => {
+  it("takes 中学 first, then Geometry, then calculus, then AP Statistics", () => {
     expect(levelReferenceOf({ jp: ["中3"], us: ["Geometry", "AP Calculus AB"] })).toBe("im");
     expect(levelReferenceOf({ jp: ["数A"], us: ["Geometry"] })).toBe("ck12-im");
-    expect(levelReferenceOf({ jp: ["数III"], us: ["AP Calculus AB", "Calculus I"] })).toBe("ced");
-    expect(levelReferenceOf({ jp: ["大学"], us: ["Calculus II"] })).toBeNull();
+    expect(levelReferenceOf({ jp: ["数III"], us: ["AP Calculus AB", "Calculus I"] })).toBe("calculus");
+    expect(levelReferenceOf({ jp: ["大学"], us: ["Calculus II"] })).toBe("calculus");
+    expect(levelReferenceOf({ jp: ["数B"], us: ["AP Statistics"] })).toBe("ced");
+    expect(levelReferenceOf({ jp: ["大学"], us: ["Linear Algebra"] })).toBeNull();
+    expect(levelReferences("calculus")).toEqual(["ced", "openstax-calculus"]);
   });
 });
 

@@ -61,5 +61,8 @@ wikidata だけだった行を wikipedia-langlink にする。8 は積分の単�
 | `out-of-scope.csv` | 台帳から外した語と理由（小学校範囲、数学用語でないもの） |
 | `id-changes.csv` | Phase 1 からの id の変化（`merged` / `renamed` / `out-of-scope`）。Phase 2 修正で消した id は `merged-into`（new_id は寄せた先。symbols に移したものは `symbols/<id>`）か `to-phrases` |
 | `phrases-candidates.csv` | terms から外した授業での言い回し（Phase 3 の phrases 候補）。`from` は Phase 2 で生成した本文の場所（git のコミットとパス） |
+| `symbols.csv` | Phase 3 の記号の候補（220）。`id,symbol,ja_reading,en_readings,level,source` と補助の `category,term_ref,note`。source の「OpenStax 488」などは参照での出現数（`python3 scripts/ledger/symbol_refs.py` が `scripts/ledger/symbol_probes.json` の文字列で数え直す）。en の読みは候補で、Phase 3 で用例コーパスで数える |
+| `conventions.csv` | Phase 3 の日米慣習差の候補（130）。`id,summary,term_refs,source` と補助の `category,appendix_b`（PLAN 付録 B の行）。Phase 2 の pitfalls・mapping_note から抜き出した |
+| `phrases.csv` | Phase 3 のフレーズの候補（320）。`id,situation,ja,en,level,source`。`phrases-candidates.csv` の 83 行と既存の 5 を含む。en は「 ／ 」区切りで先頭が主文。数えるのは文ではなく要の部分（`scripts/corpus/lib.ts` の `PHRASE_FORMS`） |
 | `mext-yougo.csv` | 学習指導要領（中学 平成29年告示・高校 平成30年告示）の〔用語・記号〕一覧。網羅率の分母 |
 | `phase1-report.md` | Phase 1 時点の単元別件数と、対応が怪しい語 30。修正後の数字は `audits/phase1-fix-report.md` |

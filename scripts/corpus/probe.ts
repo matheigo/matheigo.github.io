@@ -171,6 +171,10 @@ function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
   const openstax = docs.filter((d) => d.id.startsWith("openstax-")).map((d) => d.text);
   const manifest = JSON.parse(fs.readFileSync(MANIFEST, "utf8")) as ManifestEntry[];
   const titles = manifest.filter((m) => m.id.startsWith("openstax-")).map((m) => m.title.replace(/^.*? - /, ""));
+  const calculus = {
+    openstaxCalculus: docs.filter((d) => d.id === "openstax-calculus").map((d) => d.text),
+    openstaxCalculusTitles: manifest.filter((m) => m.id === "openstax-calculus").map((m) => m.title.replace(/^.*? - /, "")),
+  };
   const wikipedia = wikipediaNames(new Set(Object.keys(WIKIPEDIA_NOT_SAME)));
   for (const raw of blocks) {
     const mapping = raw.find((l) => l.startsWith("@mapping"))?.split(/\s+/)[1];
@@ -195,7 +199,7 @@ function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
       console.log(`    = ${c}: ${breakdown("話し言葉", t.spoken[c])}、${breakdown("書き言葉", t.written[c])}。`);
     }
     const wiki = id ? wikipedia.get(id) : undefined;
-    const ref = { ...referenceHits(block, refs.ced, openstax, titles, refs), ...(wiki ? { wikipedia: wiki } : {}) };
+    const ref = { ...referenceHits(block, refs.ced, openstax, titles, { ...refs, ...calculus }), ...(wiki ? { wikipedia: wiki } : {}) };
     const sectioned = (by: Record<string, Record<string, number>> | undefined) =>
       Object.entries(by ?? {}).map(([c, at]) => `${c} [${Object.entries(at).slice(0, 4).map(([k, n]) => `${k}×${n}`).join(" ")}${Object.keys(at).length > 4 ? " …" : ""}]`);
     const osLine = block

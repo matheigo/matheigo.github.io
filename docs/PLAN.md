@@ -368,7 +368,7 @@ URL は英語 id 固定。`hreflang` で ja/en を分けない（1ページに�
 4. 動詞・句は例文を 2 文以上、`register` を分ける
 5. 200 語ごとに `audits/` に自己監査メモ（怪しい点の列挙）を残す。修正はしない（Phase 5 の別セッションに回す）
 
-完了条件: 2,000 語が `likely` 以上、`draft` は理由付きで一覧化。
+完了条件: 台帳の全行（1 概念 1 エントリの統合後）が `likely` 以上、`draft` は理由付きで一覧化。（2,000 語は Phase 1 の統合前の見積もり。統合の記録は `ledger/id-changes.csv`。2026-09-25 改訂）
 
 渡すプロンプト:
 > Phase 2。`ledger` の単元「数学I 数と式」から 50 語ずつ生成して。毎バッチの前に `docs/STYLE.md` を読み直し、直訳禁止リストに触れる語は `mapping` を正直に付けて。50 語終わるごとに validate と crosscheck を回してコミット。私に確認は求めず、判断に迷ったら `docs/DECISIONS.md` に書いて進めて。
@@ -657,6 +657,7 @@ OpenStax *Calculus* Vol 1–3、*Precalculus*、*Algebra and Trigonometry*、*In
 1. **fetch**: OCW トランスクリプト（公式配布ページから）、Khan/YouTube 字幕（字幕取得ツール。自動字幕は `auto: true` を付けて区別）。
 2. **normalize**: 小文字化、数式読みの表記ゆれ辞書（"f prime"/"f-prime"、"d x"/"dx"/"DX"、"x squared"/"x-squared"、"the integral"/"the intergral" 等）、数字の読み。
 3. **count**: 各エントリの候補表現（`en.term`、`en.alt`、`collocations`、`spoken_en`、`phrases.en`）を正規表現で数える。前後 8 語の文脈は一時ファイルに出す（レビュー用、コミットしない）。
+   phrases は文を丸ごと数えず、要の部分を terms の動詞句と同じ規則（「…」は 1〜3 語の空き）で数える（`scripts/corpus/lib.ts` の `PHRASE_FORMS`。2026-09-25 追加）。
 4. **decide**: 頻度比で `register` を決めるルール。例: spoken コーパスで 3:1 以上ならその表現を spoken の見出しに、written で 3:1 以上なら written の見出しに。両方で閾値未満 or 総件数 10 未満は **「コーパスで判断不能」フラグ** → 人間レビュー行き。
    話し言葉の首位が 1 ソース頼み（抜くと ③ か別の候補が首位）で、書き言葉（①）か CED が別の言い方で決まっているときは、書き言葉・CED の言い方を見出しにし、話し言葉の言い方は spoken の variant にする（2026-09-25 追加。STYLE 原則 1）。
 5. **report**: `audits/corpus-YYYY-MM-DD.md` に、判断が変わった語・新たに見つかった言い回し（辞典にない高頻度表現）を列挙。**辞典に無い高頻度表現の発見** がこの仕組みの副産物で、Phase 1 の台帳の抜けを埋める。

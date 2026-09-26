@@ -74,12 +74,12 @@ export interface CountsFile {
   entries: EntryCounts[];
 }
 
-/** OpenStax section titles ("OpenStax Calculus Volume 1 - Areas between Curves" -> "Areas between Curves"). */
-function openstaxTitles(): string[] {
+/** OpenStax section titles ("OpenStax Calculus Volume 1 - Areas between Curves" -> "Areas between Curves"), of one book when `id` is given. */
+function openstaxTitles(id?: string): string[] {
   const manifestPath = path.join(CORPUS, "manifest.json");
   if (!fs.existsSync(manifestPath)) return [];
   const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8")) as ManifestEntry[];
-  return manifest.filter((m) => m.id.startsWith("openstax-")).map((m) => m.title.replace(/^.*? - /, ""));
+  return manifest.filter((m) => (id ? m.id === id : m.id.startsWith("openstax-"))).map((m) => m.title.replace(/^.*? - /, ""));
 }
 
 function loadCorpus(): CorpusDoc[] {
@@ -101,7 +101,7 @@ function loadCorpus(): CorpusDoc[] {
 function headwordOf(collection: Collection, data: Record<string, unknown>): string {
   if (collection === "terms") return countedAs(collection, data.id as string, (data.en as { term: string }).term);
   if (collection === "symbols") return countedAs(collection, data.id as string, (data.spoken_en as { text: string }[])[0].text);
-  return data.en as string;
+  return countedAs(collection, data.id as string, data.en as string);
 }
 
 function main() {
@@ -153,6 +153,11 @@ function main() {
   console.log(`  references: repeated sentences removed from IM ${refs.deduped.im}, CK-12 ${refs.deduped.ck12}`);
   const openstax = docs.filter((d) => d.id.startsWith("openstax-")).map((d) => d.text);
   const titles = openstaxTitles();
+  // OpenStax Calculus alone: the level reference of calculus words after the CED (lib.ts levelReferences).
+  const calculus = {
+    openstaxCalculus: docs.filter((d) => d.id === "openstax-calculus").map((d) => d.text),
+    openstaxCalculusTitles: openstaxTitles("openstax-calculus"),
+  };
   const wikipedia = wikipediaNames(new Set(Object.keys(WIKIPEDIA_NOT_SAME)));
 
   for (const collection of COUNTED) {
@@ -163,7 +168,7 @@ function main() {
       const wiki = collection === "terms" ? wikipedia.get(data.id) : undefined;
       const reference =
         collection === "terms"
-          ? { ...referenceHits(candidates, refs.ced, openstax, titles, refs), ...(wiki ? { wikipedia: wiki } : {}) }
+          ? { ...referenceHits(candidates, refs.ced, openstax, titles, { ...refs, ...calculus }), ...(wiki ? { wikipedia: wiki } : {}) }
           : undefined;
       const referred = reference !== undefined && anyReference(reference);
       if (t.sources.length === 0 && !referred) continue;

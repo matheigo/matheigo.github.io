@@ -130,11 +130,13 @@ function recordedAt(collection: Collection, data: Record<string, unknown>, regis
       if (s.register === "standard" || s.register === register) out.push(countedAs(collection, data.id as string, s.text));
     }
   } else {
+    // A phrase is compared as its key part (lib.ts PHRASE_FORMS).
     const isWritten = (r: string) => r === "written";
+    const as = (w: string) => countedAs(collection, data.id as string, w);
     const head = data.register as string;
-    if (isWritten(head) === (register === "written")) out.push(data.en as string);
+    if (isWritten(head) === (register === "written")) out.push(as(data.en as string));
     for (const v of (data.variants as { en: string; register: string }[] | undefined) ?? []) {
-      if (isWritten(v.register) === (register === "written")) out.push(v.en);
+      if (isWritten(v.register) === (register === "written")) out.push(as(v.en));
     }
   }
   return out;
@@ -199,11 +201,12 @@ const cells = (...xs: string[]) => `| ${xs.map((x) => x.replace(/\|/g, "\\|")).j
 /** Where a lean headword comes from, for the report. */
 function leanBy(l: LeanHead): string {
   if (l.by === "written") return "書き言葉 ①";
-  if (l.by === "ced") return "CED";
+  if (l.by === "ced" && !l.written) return "CED";
   const also = l.written ? `（書き言葉 ① ${l.written.head} も ${l.written.source} 頼み）` : "";
   if (l.by === "im") return `IM（中学）${also}`;
   if (l.by === "ck12-im") return `CK-12・IM（Geometry）${also}`;
-  const names = { im: "IM", "ck12-im": "CK-12・IM", ced: "CED" } as const;
+  if (l.by === "openstax-calculus") return `OpenStax Calculus（微積分の level。CED は候補を使わない）${also}`;
+  const names = { im: "IM", "ck12-im": "CK-12・IM", ced: "CED", "openstax-calculus": "OpenStax Calculus" } as const;
   if (l.by === "spoken") return `話し言葉の首位のまま${also}${l.agrees ? `。${names[l.agrees]} も同じ言い方` : "。level の参照は決まらない"}`;
   return `CED（AP）${also}`;
 }
@@ -516,7 +519,7 @@ function main() {
     "",
     "抜くと ③ か別の候補になる話し言葉の首位は見出しにしない。書き言葉（①）か CED の言い方を en.term にし、",
     "話し言葉の首位は register spoken の variant にする（DECISIONS、Phase 2 中学の単元 2 の前の修正 3）。",
-    "書き言葉 ① も 1 ソース頼みなら書き言葉では決めず、level の参照（中学は IM、Geometry は CK-12・IM、AP は CED）の言い方にする。",
+    "書き言葉 ① も 1 ソース頼みなら書き言葉では決めず、level の参照（中学は IM、Geometry は CK-12・IM、AP Calculus・Calculus I〜III は CED の次に OpenStax Calculus、AP Statistics は CED。level の順に、最初に言い方が決まる参照）の言い方にする。",
     "参照が決まらないか話し言葉の首位と同じなら、話し言葉の首位のまま（同じく中学の単元 3 の前の修正 1）。",
     "",
     leaning.length ? "| 項目 | 話し言葉の首位 | 頼っているソース | 見出し | 根拠 |\n|---|---|---|---|---|" : "なし。",
