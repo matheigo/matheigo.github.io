@@ -1,0 +1,89 @@
+{
+  "id": "multiplicity",
+  "ja": {
+    "term": "重複度",
+    "reading": "ちょうふくど",
+    "alt": [
+      "根の重複度",
+      "多重根"
+    ]
+  },
+  "en": {
+    "term": "multiplicity",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "多項式を因数分解したとき、因数 (x − a) が現れる回数。これを零点 x = a の重複度という。",
+  "definition_en": "The number of times a factor (x − a) appears when a polynomial is completely factored. That number is the multiplicity of the zero x = a.",
+  "latex": "f(x) = (x - 2)^2 (x + 1)",
+  "spoken_en": "f of x equals the quantity x minus two squared, times the quantity x plus one",
+  "examples": [
+    {
+      "en": "The factor x minus 2 is squared, so the zero at 2 has multiplicity 2, and the graph just touches the axis and bounces back.",
+      "ja": "x − 2 が 2 乗されているから、x = 2 の零点は重複度 2。グラフは x 軸に接して跳ね返るだけだよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the zeros of f(x) = x(x + 3)³ and state the multiplicity of each.",
+      "ja": "f(x) = x(x + 3)³ の零点を求め、それぞれの重複度を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校では重解（エントリ double-root）までで、重複度という語は大学で使う。重解は重複度 2 の解に当たる。",
+    "OpenStax Algebra and Trigonometry は、x 切片でのグラフのようすを零点の multiplicity で読む。奇数なら x 軸を横切り、偶数なら x 軸に接して跳ね返る。",
+    "線形代数の固有値の重複度（エントリ algebraic-multiplicity）とは別の場面の語。"
+  ],
+  "related": [
+    "double-root",
+    "zeros-of-a-polynomial",
+    "x-intercept",
+    "polynomial-function",
+    "algebraic-multiplicity"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "!algebraic !geometric multiplicity": 7
+    },
+    "written": {
+      "!algebraic !geometric multiplicity": 119
+    },
+    "sources": [
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

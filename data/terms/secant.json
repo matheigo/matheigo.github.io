@@ -1,0 +1,92 @@
+{
+  "id": "secant",
+  "ja": {
+    "term": "セカント",
+    "reading": "せかんと",
+    "alt": []
+  },
+  "en": {
+    "term": "secant",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の高校では sec を使わず 1/cos θ と書く（1 + tan²θ = 1/cos²θ）。米国の教科書（OpenStax Algebra and Trigonometry）は sec を cos の逆数として定義し、微積分でも tan x の導関数を sec²x と書くように sec で表す。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "cos θ の逆数で定まる三角関数で、sec θ = 1/cos θ。直角三角形では、斜辺を角 θ の隣の辺で割った値になる。",
+  "definition_en": "The trig function equal to one over cosine, so sec θ = 1/cos θ. In a right triangle, it is the hypotenuse divided by the side adjacent to the angle.",
+  "latex": "\\sec\\theta = \\frac{1}{\\cos\\theta}",
+  "spoken_en": "secant theta equals one over cosine theta",
+  "examples": [
+    {
+      "en": "Secant is just one over cosine, so if cosine is one half, the secant is 2.",
+      "ja": "セカントは cos の逆数にすぎないから、cos が 1/2 なら sec は 2 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Given that θ is in Quadrant I and tan θ = 3/4, use the identity 1 + tan²θ = sec²θ to find the secant of θ.",
+      "ja": "θ は第 1 象限の角で tan θ = 3/4 である。恒等式 1 + tan²θ = sec²θ を用いて、sec θ の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "同じ英語の secant は、円や曲線と 2 点で交わる直線（割線）の意味にもなる（エントリ secant-line）。三角関数の sec か直線かは文脈で区別する。",
+    "sec は cos の逆数で、sin の逆数ではない。sin の逆数は cosecant（エントリ cosecant）。",
+    "sec θ は secant theta と読む。日本の 1 + tan²θ = 1/cos²θ は英語の式では 1 + tan²θ = sec²θ と書き、tan x の導関数も sec²x と書く。"
+  ],
+  "related": [
+    "cosine",
+    "cosecant",
+    "cotangent",
+    "pythagorean-identity",
+    "secant-line"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "secant !line !lines !method !slope !slopes": 684
+    },
+    "written": {
+      "secant !line !lines !method !slope !slopes": 69
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "descartes-rule-of-signs",
+  "ja": {
+    "term": "デカルトの符号法則",
+    "reading": "でかるとのふごうほうそく",
+    "alt": []
+  },
+  "en": {
+    "term": "Descartes' rule of signs",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "多項式 f(x) の係数を次数の高い順に並べたとき、符号が変わる回数から正の実数解の個数を知る法則。正の実数解の個数はその回数か、それより偶数だけ少なく、f(−x) で同じように数えると負の実数解の個数が分かる。",
+  "definition_en": "A rule that uses the number of sign changes in the coefficients of f(x) to find the possible numbers of positive real zeros: that number of changes, or fewer by an even number. Counting the sign changes in f(−x) does the same for negative real zeros.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Plus to minus, then minus to plus: that's two sign changes, so Descartes' rule of signs says two or zero positive real zeros.",
+      "ja": "プラスからマイナス、マイナスからプラスで、符号の変化は 2 回。だからデカルトの符号法則で、正の実数解は 2 個か 0 個。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use Descartes' rule of signs to determine the possible numbers of positive and negative real zeros of f(x) = x³ − 2x² − x + 2.",
+      "ja": "デカルトの符号法則を用いて、f(x) = x³ − 2x² − x + 2 の正の実数解と負の実数解の個数として考えられるものを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校では扱わない。OpenStax Algebra and Trigonometry が扱う。",
+    "Descartes は「デイカート」に近く読み、語末の s は発音しない。",
+    "分かるのは個数の候補だけで、解の値は分からない。係数が 0 の項は飛ばして符号の変化を数える。"
+  ],
+  "related": [
+    "zeros-of-a-polynomial",
+    "rational-root-theorem",
+    "polynomial-function",
+    "sign",
+    "fundamental-theorem-of-algebra"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "デカルトの符号法則",
+      "en": "Descartes' rule of signs"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "Descartes' rule of signs": 13
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  }
+}

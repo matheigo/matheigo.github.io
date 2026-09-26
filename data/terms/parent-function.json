@@ -1,0 +1,85 @@
+{
+  "id": "parent-function",
+  "ja": {
+    "term": "親関数",
+    "reading": "おやかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "parent function",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「親関数」は日本の教科書に無い、本プロジェクトの訳語。日本では「y = x² のグラフを平行移動したもの」と言い、もとになる関数に名前を付けない（エントリ transformations-of-functions）。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "平行移動・拡大・対称移動をする前の、いちばん基本の形の関数。y = x²、y = |x|、y = √x、y = x³、y = 1/x など。",
+  "definition_en": "The simplest function in a family of functions, before any shifts, stretches, or reflections, such as y = x², y = |x|, or y = √x.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The parent function here is y equals x squared, and this graph is just that shifted up 3.",
+      "ja": "ここでの親関数は y = x² で、このグラフはそれを上に 3 ずらしただけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Identify the parent function of g(x) = |x − 2| + 5 and describe the transformations.",
+      "ja": "g(x) = |x − 2| + 5 の親関数を答え、どのように移動・変形したかを述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "parent function は基本の形の 1 つの関数。そこから変換してできる関数の集まりは family of functions と言う。",
+    "OpenStax Algebra and Trigonometry は、基本の関数の一覧を toolkit functions とも呼ぶ。",
+    "合成関数の外側の関数（outer function、エントリ outer-function）とは別の語。"
+  ],
+  "related": [
+    "transformations-of-functions",
+    "translation",
+    "stretch-vertically",
+    "reflection",
+    "absolute-value-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "parent function": 19
+    },
+    "written": {
+      "parent function": 45
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "sinusoid",
+  "ja": {
+    "term": "正弦曲線",
+    "reading": "せいげんきょくせん",
+    "alt": [
+      "正弦波"
+    ]
+  },
+  "en": {
+    "term": "sinusoidal function",
+    "alt": [
+      "sinusoid"
+    ],
+    "variants": [
+      {
+        "term": "sine wave",
+        "register": "spoken",
+        "note": "話し言葉ではこちらが多いが、ほとんどが 3Blue1Brown。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の数II では y = sin θ のグラフを「正弦曲線」と呼ぶ。英語の sinusoidal function は cos のグラフや平行移動・拡大したものもまとめて指す。「正弦波」は主に物理の言い方。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "y = A sin(Bx − C) + D（または cos の形）で表される関数と、そのグラフ。振幅、周期、位相のずれ、振動の中心線で形が決まる。",
+  "definition_en": "A function of the form y = A sin(Bx − C) + D or y = A cos(Bx − C) + D, or its wave-shaped graph. Its shape is set by the amplitude, period, phase shift, and midline.",
+  "latex": "y = A\\sin(Bx - C) + D",
+  "spoken_en": "y equals A sine of B x minus C, plus D",
+  "examples": [
+    {
+      "en": "A sinusoidal function is basically a sine wave that's been stretched and shifted around.",
+      "ja": "正弦曲線というのは、要するに正弦波を伸ばしたりずらしたりしたもの。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write an equation of the sinusoidal function with amplitude 2, period π, and midline y = −1.",
+      "ja": "振幅 2、周期 π、振動の中心線 y = −1 の正弦曲線を表す式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "sinusoid は名詞、sinusoidal は形容詞。sinusoidal function ／ sinusoidal graph のように名詞の前に置く。",
+    "周期は 2π/|B|、位相のずれ（エントリ phase-shift）は C ではなく C/B。先に B でくくって y = A sin(B(x − C/B)) + D の形にすると読み取りやすい。",
+    "振幅は |A|、振動の中心線は y = D（エントリ midline）。"
+  ],
+  "related": [
+    "sine",
+    "amplitude",
+    "period",
+    "phase-shift",
+    "midline"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "正弦波",
+      "en": "Sine wave"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "sine wave": 39,
+      "sinusoidal function": 12,
+      "sinusoid": 3
+    },
+    "written": {
+      "sinusoidal function": 67,
+      "sine wave": 5,
+      "sinusoid": 12
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

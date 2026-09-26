@@ -1,0 +1,99 @@
+{
+  "id": "slant-asymptote",
+  "ja": {
+    "term": "斜め漸近線",
+    "reading": "ななめぜんきんせん",
+    "alt": []
+  },
+  "en": {
+    "term": "slant asymptote",
+    "alt": [],
+    "variants": [
+      {
+        "term": "oblique asymptote",
+        "register": "written",
+        "note": "教科書（OpenStax）では slant asymptote と並んで使う。話し言葉では少ない。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "分数関数で、分子の次数が分母の次数よりちょうど 1 大きいときにできる、斜めの直線の漸近線。分子を分母で割った商の一次式が、その直線の式になる。",
+  "definition_en": "A slanted line that the graph of a rational function approaches when the degree of the numerator is exactly one more than the degree of the denominator. Its equation is the quotient you get by dividing the numerator by the denominator.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The top's degree is one more than the bottom's, so divide, and the quotient gives you the slant asymptote.",
+      "ja": "分子の次数が分母より 1 大きいから、割り算をしよう。その商が斜め漸近線になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the slant asymptote of f(x) = (x² + 3x + 1)/(x + 1).",
+      "ja": "f(x) = (x² + 3x + 1)/(x + 1) の斜め漸近線を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "oblique asymptote とも言う（oblique は「斜めの」）。OpenStax Algebra and Trigonometry は slant asymptote として扱う。",
+    "割り算の余りは捨て、商だけが漸近線の式になる。",
+    "分子の次数が分母の次数以下なら水平漸近線（エントリ horizontal-asymptote）になり、斜め漸近線はできない。"
+  ],
+  "related": [
+    "asymptote",
+    "horizontal-asymptote",
+    "vertical-asymptote",
+    "rational-function",
+    "polynomial-division"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "slant asymptote": 13,
+      "oblique asymptote": 3
+    },
+    "written": {
+      "oblique asymptote": 13,
+      "slant asymptote": 16
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

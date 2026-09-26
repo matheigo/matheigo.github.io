@@ -1,0 +1,88 @@
+{
+  "id": "continuous-compounding",
+  "ja": {
+    "term": "連続複利",
+    "reading": "れんぞくふくり",
+    "alt": []
+  },
+  "en": {
+    "term": "continuous compounding",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の高校数学では連続複利を扱わない（e は数III で極限として導入する）。OpenStax Algebra and Trigonometry は、e を使う連続的な増加の例として interest compounded continuously の問題を扱う。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "複利で、利息をつける回数を限りなく多くしたもの。元金 P、年利率 r、t 年後の元利合計は A = P eʳᵗ になる。",
+  "definition_en": "Compound interest in which the number of compounding periods per year grows without bound. The amount after t years is A = Pe^(rt), where P is the principal and r is the annual interest rate.",
+  "latex": "A = Pe^{rt}",
+  "spoken_en": "A equals P e to the r t",
+  "examples": [
+    {
+      "en": "With continuous compounding, the interest is added every instant, so we use A equals P e to the rt.",
+      "ja": "連続複利では利息が一瞬ごとにつくから、A = P eʳᵗ の式を使う。",
+      "register": "spoken"
+    },
+    {
+      "en": "An account earns 5% annual interest with continuous compounding. Find the balance after 10 years if $1,000 is deposited.",
+      "ja": "年利率 5 % の連続複利の口座に 1,000 ドルを預ける。10 年後の残高を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語は名詞の continuous compounding より、interest compounded continuously ／ continuously compounded interest の形で言うことが多い（教科書は compounded continuously、授業では continuously compounded の語順が多い）。",
+    "年利率 r は小数で入れる（5 % なら r = 0.05）。e は約 2.718 の定数で、文字ではない（エントリ base-of-the-natural-logarithm）。",
+    "回数を決めた複利（エントリ compound-interest）の式 A = P(1 + r/n)ⁿᵗ と取り違えない。連続複利の式に n は無い。"
+  ],
+  "related": [
+    "compound-interest",
+    "base-of-the-natural-logarithm",
+    "exponential-growth",
+    "exponential-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "continuous compounding": 1
+    },
+    "written": {
+      "continuous compounding": 5
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。見出しは OpenStax の呼び方 continuous compounding（本文 5 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

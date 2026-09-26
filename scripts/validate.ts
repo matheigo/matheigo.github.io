@@ -108,6 +108,7 @@ const SAME_EN_TERM: [string, string][] = [
   ["square", "square-shape"], // 平方（2 乗） ／ 正方形
   ["divisor", "factor"], // 約数 ／ 因数（英語はどちらも factor）
   ["estimation", "bound-estimate"], // 推定（統計） ／ 評価する（値の範囲をはさむ）
+  ["general-angle", "coterminal-angle"], // 一般角（英語に名前がなく coterminal angles） ／ 共終角（動径が同じ角どうし）
 ];
 const intendedHomonym = (a: string, b: string) =>
   SAME_EN_TERM.some(([x, y]) => (x === a && y === b) || (x === b && y === a));

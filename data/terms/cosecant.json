@@ -1,0 +1,89 @@
+{
+  "id": "cosecant",
+  "ja": {
+    "term": "コセカント",
+    "reading": "こせかんと",
+    "alt": []
+  },
+  "en": {
+    "term": "cosecant",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の高校では csc を使わず 1/sin θ と書く。米国の教科書（OpenStax Algebra and Trigonometry）は csc・sec・cot を sin・cos・tan の逆数として定義し、微積分の公式にも csc・sec・cot が出てくる（d/dx cot x = −csc²x）。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "sin の逆数で表される三角関数。csc θ = 1/sin θ で、直角三角形では 斜辺 ÷ 対辺。",
+  "definition_en": "The trigonometric function that is the reciprocal of sine: csc θ = 1/sin θ. In a right triangle, it is the hypotenuse divided by the opposite side.",
+  "latex": "\\csc\\theta = \\frac{1}{\\sin\\theta}",
+  "spoken_en": "cosecant theta equals 1 over sine theta",
+  "examples": [
+    {
+      "en": "Cosecant is just the reciprocal of sine, so if sine is 3/5, cosecant is 5/3.",
+      "ja": "コセカントはサインの逆数だから、サインが 3/5 ならコセカントは 5/3。",
+      "register": "spoken"
+    },
+    {
+      "en": "In right triangle ABC, angle C is a right angle, AB = 13, and BC = 5. Find the cosecant of angle A.",
+      "ja": "∠C = 90° の直角三角形 ABC で、AB = 13、BC = 5 である。csc A（= 1/sin A）の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "名前に co が付くが、cosecant は cos ではなく sin の逆数。cos の逆数は secant（エントリ secant）。",
+    "csc は cosecant と読む。csc θ（= 1/sin θ）と sin⁻¹ θ（arcsin、エントリ arcsine）を取り違えない。"
+  ],
+  "related": [
+    "sine",
+    "reciprocal",
+    "secant",
+    "cotangent",
+    "trigonometric-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "cosecant": 192
+    },
+    "written": {
+      "cosecant": 44
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

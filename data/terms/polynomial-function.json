@@ -1,0 +1,90 @@
+{
+  "id": "polynomial-function",
+  "ja": {
+    "term": "多項式関数",
+    "reading": "たこうしきかんすう",
+    "alt": [
+      "多項式函数"
+    ]
+  },
+  "en": {
+    "term": "polynomial function",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "f(x) = aₙ xⁿ + … + a₁x + a₀ のように、x の多項式で表される関数。一次関数や二次関数もその仲間である。",
+  "definition_en": "A function whose rule is a polynomial in x, such as f(x) = 2x³ − x + 5. Linear and quadratic functions are polynomial functions too.",
+  "latex": "f(x) = a_n x^n + a_{n-1} x^{n-1} + \\cdots + a_1 x + a_0",
+  "spoken_en": "f of x equals a sub n x to the n, plus a sub n minus one x to the n minus one, plus dot dot dot, plus a sub one x, plus a sub zero",
+  "examples": [
+    {
+      "en": "Linear and quadratic functions? Those are both polynomial functions, just with degree 1 and degree 2.",
+      "ja": "一次関数と二次関数？ どちらも多項式関数で、次数がそれぞれ 1 と 2 なだけだよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the degree and the leading coefficient of the polynomial function f(x) = −3x⁴ + 2x² − 7.",
+      "ja": "多項式関数 f(x) = −3x⁴ + 2x² − 7 の次数と最高次の係数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "多項式（エントリ polynomial）は式、polynomial function はその式で x の値から f(x) の値を決める関数。",
+    "次数（degree）は最高次の項の次数。英語の degree は角度の「度」にも使う。",
+    "グラフはなめらかで切れ目がない。分母に x を含む関数（エントリ rational-function）は polynomial function ではない。"
+  ],
+  "related": [
+    "polynomial",
+    "degree",
+    "leading-coefficient",
+    "zeros-of-a-polynomial",
+    "end-behavior"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "polynomial function": 11
+    },
+    "written": {
+      "polynomial function": 323
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.02",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "openstax-precalculus",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

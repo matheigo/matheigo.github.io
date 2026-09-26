@@ -1,0 +1,85 @@
+{
+  "id": "logarithmic-scale",
+  "ja": {
+    "term": "対数目盛",
+    "reading": "たいすうめもり",
+    "alt": []
+  },
+  "en": {
+    "term": "logarithmic scale",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "目盛りが 1 つ進むごとに、値が一定の倍率（10 倍など）で大きくなる目盛り。とても大きな範囲の量を短い目盛りに収められる。",
+  "definition_en": "A scale on which each step up multiplies the value by the same factor, such as 10, instead of adding the same amount. It fits a very wide range of values onto a short scale.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The Richter scale is a logarithmic scale, so going up by 1 means the shaking is 10 times bigger.",
+      "ja": "マグニチュードは対数目盛だから、1 上がると揺れは 10 倍になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Earthquake magnitude is measured on a base-10 logarithmic scale. How many times greater is the amplitude of a magnitude 6 earthquake than that of a magnitude 4 earthquake?",
+      "ja": "地震のマグニチュードは 10 を底とする対数目盛で表される。マグニチュード 6 の地震の振幅は、マグニチュード 4 の地震の振幅の何倍か求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "マグニチュードが 1 大きいと振幅は 10 倍、2 大きいと 100 倍になる（20 倍ではない）。目盛りの差は倍率の指数になる。",
+    "log scale とも言う。pH や音の大きさ（デシベル）も対数目盛の例。",
+    "目盛りの数字は等間隔に並ぶが、表す値は等間隔ではない。目盛りの値を引き算しても、もとの量の差にはならない。"
+  ],
+  "related": [
+    "logarithm",
+    "common-logarithm",
+    "logarithmic-function",
+    "exponent"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "logarithmic scale": 16
+    },
+    "written": {
+      "logarithmic scale": 8
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "joint-variation",
+  "ja": {
+    "term": "結合変化",
+    "reading": "けつごうへんか",
+    "alt": []
+  },
+  "en": {
+    "term": "joint variation",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「結合変化」は日本の教科書に無い、本プロジェクトの訳語。日本では「z は x と y の積に比例する」と言う。OpenStax Algebra and Trigonometry は、direct variation・inverse variation（エントリ direct-proportion、inverse-proportion）と同じ節で扱う。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "ある量が、2 つ以上の量の積に比例する関係。z = kxy（k は 0 でない定数）の形で表す。",
+  "definition_en": "A relationship in which one quantity is a constant multiple of the product of two or more other quantities. For example, z = kxy, where k is a nonzero constant.",
+  "latex": "z = kxy",
+  "spoken_en": "z equals k x y",
+  "examples": [
+    {
+      "en": "This is joint variation: z equals k times x times y, so z depends on both x and y at once.",
+      "ja": "これは結合変化。z = k × x × y だから、z は x と y の両方で決まる。",
+      "register": "spoken"
+    },
+    {
+      "en": "The quantity z varies jointly with x and y, and z = 24 when x = 2 and y = 3. Write the joint variation equation, and find z when x = 5 and y = 4.",
+      "ja": "z は x と y の積に比例し、x = 2、y = 3 のとき z = 24 である。z を x と y の式で表し、x = 5、y = 4 のときの z の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「z は x と y の積に比例する」は英語で z varies jointly with x and y と言い、教科書（OpenStax Algebra and Trigonometry）ではこの動詞句のほうが名詞の joint variation より多い。product（積）という語を使わずに言える。",
+    "式の k は constant of variation（エントリ constant-of-proportionality）。求め方は比例と同じで、与えられた 1 組の値を代入して k を出す。",
+    "「x に比例し y に反比例する」（z = kx/y）は積に比例する形ではないので、joint variation とは別の関係。"
+  ],
+  "related": [
+    "constant-of-proportionality",
+    "direct-proportion",
+    "inverse-proportion"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "joint variation": 9
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 joint variation（本文 9 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

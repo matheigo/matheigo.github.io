@@ -1,0 +1,94 @@
+{
+  "id": "vertical-asymptote",
+  "ja": {
+    "term": "垂直漸近線",
+    "reading": "すいちょくぜんきんせん",
+    "alt": []
+  },
+  "en": {
+    "term": "vertical asymptote",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "グラフが限りなく近づく、x 軸に垂直な直線 x = a。分数関数では、約分した後に分母を 0 にする x の値のところにできる。",
+  "definition_en": "A vertical line x = a that a graph gets closer and closer to as x approaches a, while the y-values grow without bound. For a rational function, it occurs where the denominator is zero after the fraction is simplified.",
+  "latex": "x = a",
+  "spoken_en": "x equals a",
+  "examples": [
+    {
+      "en": "Set the denominator equal to zero and you get x equals 3, so there's a vertical asymptote at x = 3.",
+      "ja": "分母 = 0 とおくと x = 3。だから x = 3 に垂直漸近線がある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the vertical asymptote of f(x) = (x + 1)/(x − 4).",
+      "ja": "f(x) = (x + 1)/(x − 4) の垂直漸近線を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "約分で消える因数のところは垂直漸近線ではなく、グラフの穴（hole、removable discontinuity。エントリ removable-discontinuity）になる。約分する前の分母を 0 にする値をそのまま答えないこと。",
+    "日本では数III で漸近線（エントリ asymptote）として扱い、向きで名前を分けない。英語の見出しは向きで vertical ／ horizontal ／ slant（エントリ horizontal-asymptote、slant-asymptote）に分かれる。",
+    "x = a では関数が定義されないので、グラフは垂直漸近線と交わらない。水平漸近線とは違う。"
+  ],
+  "related": [
+    "asymptote",
+    "horizontal-asymptote",
+    "slant-asymptote",
+    "rational-function",
+    "removable-discontinuity"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "vertical asymptote": 130
+    },
+    "written": {
+      "vertical asymptote": 155
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "openstax-precalculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

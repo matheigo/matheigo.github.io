@@ -1,0 +1,82 @@
+{
+  "id": "set-builder-notation",
+  "ja": {
+    "term": "集合の内包的記法",
+    "reading": "しゅうごうのないほうてききほう",
+    "alt": [
+      "内包的記法"
+    ]
+  },
+  "en": {
+    "term": "set-builder notation",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の数A（集合）でも {x | x は 12 の約数} のように書くが、書き方に名前を付けず「条件を満たすものの集まりとして表す」と言う。「内包的記法」は大学の用語。OpenStax Algebra and Trigonometry は、不等式の解を不等式・set-builder notation・区間記法（エントリ interval-notation）の 3 つの書き方で並べて示す。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "集合を、要素が満たす条件で表す書き方。{x | x > 2} は「x > 2 を満たす x 全体の集合」を表す。",
+  "definition_en": "A way to describe a set by stating the condition its elements satisfy, as in {x | x > 2}, the set of all x such that x is greater than 2.",
+  "latex": "\\{\\, x \\mid x > 2 \\,\\}",
+  "spoken_en": "the set of all x such that x is greater than two",
+  "examples": [
+    {
+      "en": "In set-builder notation, the bar means \"such that,\" so we read this as all x such that x is greater than 2.",
+      "ja": "内包的記法では、縦棒は「〜を満たす」という意味だから、これは「x > 2 を満たす x 全体」と読む。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the solution set of 3x − 1 ≥ 11 in set-builder notation.",
+      "ja": "不等式 3x − 1 ≧ 11 の解の集合を、集合の内包的記法で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "縦棒 | は such that と読む。{x : x > 2} のようにコロンで書く本もある。",
+    "要素を書き並べる書き方（{1, 2, 3, 4} など、日本の「要素を書き並べる方法」）は roster notation と言い、set-builder notation とは別。",
+    "不等式の解は区間記法（エントリ interval-notation）でも表せる。{x | x ≥ 4} は [4, ∞) と同じ。"
+  ],
+  "related": [
+    "set",
+    "interval-notation",
+    "solution-set",
+    "element",
+    "inequality"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "set-builder notation": 12
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

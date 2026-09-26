@@ -1,0 +1,84 @@
+{
+  "id": "observational-study",
+  "ja": {
+    "term": "観察研究",
+    "reading": "かんさつけんきゅう",
+    "alt": []
+  },
+  "en": {
+    "term": "observational study",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "研究者が処理を割り当てず、対象のありのままの様子を観察・記録して調べる研究。標本調査もその一種。",
+  "definition_en": "A study in which researchers observe and record what happens without assigning any treatment to the individuals.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Nobody told people whether to drink coffee, so this is an observational study, and we can't say the coffee caused anything.",
+      "ja": "コーヒーを飲むかどうかを誰も指示していないから、これは観察研究で、コーヒーが原因だとは言えない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Researchers recorded the daily screen time and hours of sleep for a group of students. Explain why this is an observational study rather than an experiment.",
+      "ja": "研究者は、ある生徒の集団について 1 日のスクリーンタイムと睡眠時間を記録した。これが実験ではなく観察研究である理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "観察研究からは因果関係（cause-and-effect）は言えない。2 つの変数に関係が見えても、交絡変数（エントリ confounding-variable）のせいかもしれない。AP Statistics の CED は実験（エントリ experiment）とこの点で区別する。",
+    "実験との違いは、研究者が処理を割り当てるかどうか。標本調査（エントリ sample-survey）も処理を割り当てないので observational study の一種になる。"
+  ],
+  "related": [
+    "experiment",
+    "sample-survey",
+    "causation",
+    "confounding-variable",
+    "treatment"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 3.5・3.6"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "observational study": 23
+    },
+    "written": {
+      "observational study": 1
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

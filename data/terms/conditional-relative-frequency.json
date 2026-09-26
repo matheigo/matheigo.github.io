@@ -1,0 +1,82 @@
+{
+  "id": "conditional-relative-frequency",
+  "ja": {
+    "term": "条件付き相対度数",
+    "reading": "じょうけんつきそうたいどすう",
+    "alt": []
+  },
+  "en": {
+    "term": "conditional relative frequency",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "二元分割表で、ある行（または列）の中だけで計算した相対度数。度数をその行（列）の合計で割って求める。",
+  "definition_en": "In a two-way table, a relative frequency computed within just one row or one column: the count divided by that row's or column's total.",
+  "latex": "\\frac{\\text{cell count}}{\\text{row total}}",
+  "spoken_en": "cell count over row total",
+  "examples": [
+    {
+      "en": "Just look at the girls: 12 out of 30 of them like soccer, so the conditional relative frequency is 0.4.",
+      "ja": "女子だけを見ると、30 人中 12 人がサッカー好きだから、条件付き相対度数は 0.4 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the two-way table to find the conditional relative frequency of walking to school among the seventh graders.",
+      "ja": "二元分割表を用いて、7 年生のうち徒歩で通学する生徒の条件付き相対度数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "割る数に注意。条件付き相対度数はその行（列）の合計で割る。表全体の合計で割ると joint relative frequency、行や列の合計の相対度数は marginal relative frequency。",
+    "「女子のうちサッカー好きの割合」と「サッカー好きのうち女子の割合」は割る合計が違い、値も違う。",
+    "相対度数（エントリ relative-frequency）の一種。AP Statistics の CED は、1 つのカテゴリに限って計算した relative frequency として定義する。"
+  ],
+  "related": [
+    "relative-frequency",
+    "contingency-table",
+    "conditional-probability",
+    "frequency-table",
+    "categorical-variable"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは AP Statistics の CED の呼び方 conditional relative frequency（topic 2.2）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

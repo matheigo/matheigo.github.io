@@ -1,0 +1,91 @@
+{
+  "id": "cotangent",
+  "ja": {
+    "term": "コタンジェント",
+    "reading": "こたんじぇんと",
+    "alt": []
+  },
+  "en": {
+    "term": "cotangent",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の高校では cot を使わず 1/tan θ と書く。米国の教科書（OpenStax Algebra and Trigonometry）は cot を tan の逆数として定義し、sin・cos・tan と並べて扱う。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "tan の逆数で表される三角関数。cot θ = 1/tan θ = cos θ/sin θ で、直角三角形では 隣辺 ÷ 対辺。",
+  "definition_en": "The trigonometric function that is the reciprocal of tangent: cot θ = 1/tan θ = cos θ/sin θ. In a right triangle, it is the adjacent side divided by the opposite side.",
+  "latex": "\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}",
+  "spoken_en": "cotangent theta equals cosine theta over sine theta",
+  "examples": [
+    {
+      "en": "Remember, cotangent is cosine over sine, so it's undefined wherever sine is zero.",
+      "ja": "思い出そう。コタンジェントはコサイン ÷ サインだから、サインが 0 になるところでは定義されない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Given that tan θ = 3/4, find the cotangent of θ.",
+      "ja": "tan θ = 3/4 のとき、cot θ（= 1/tan θ）の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "cot は cotangent と読む（「コット」とは読まない）。",
+    "cot θ（= 1/tan θ）と逆関数の arccot（cot⁻¹ θ）を取り違えない。tan⁻¹ θ も 1/tan θ ではなく arctan（エントリ arctangent）。",
+    "θ = 90° では tan θ が定義されないが、cot θ = cos θ/sin θ = 0。1/tan θ より cos θ/sin θ の形で考えると安全。"
+  ],
+  "related": [
+    "tangent",
+    "reciprocal",
+    "cosecant",
+    "secant",
+    "trigonometric-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "cotangent": 128
+    },
+    "written": {
+      "cotangent": 50
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

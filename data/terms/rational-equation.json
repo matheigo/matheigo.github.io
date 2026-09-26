@@ -1,0 +1,93 @@
+{
+  "id": "rational-equation",
+  "ja": {
+    "term": "分数方程式",
+    "reading": "ぶんすうほうていしき",
+    "alt": [
+      "有理方程式"
+    ]
+  },
+  "en": {
+    "term": "rational equation",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "1/x + 1/(x − 2) = 1 のように、分母に未知数を含む方程式。",
+  "definition_en": "An equation with a variable in a denominator, such as 1/x + 1/(x − 2) = 1.",
+  "latex": "\\frac{1}{x} + \\frac{1}{x - 2} = 1",
+  "spoken_en": "one over x plus one over the quantity x minus two equals one",
+  "examples": [
+    {
+      "en": "With a rational equation, multiply everything by the LCD first to clear the fractions.",
+      "ja": "分数方程式は、まず全体に最小公分母を掛けて分母を払おう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the rational equation x/(x − 3) = 3/(x − 3) + 2, and check for extraneous solutions.",
+      "ja": "分数方程式 x/(x − 3) = 3/(x − 3) + 2 を解け。また、無縁解がないか確かめよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "分母を払って出た解のうち、もとの分母を 0 にするものは解ではない（エントリ extraneous-solution）。もとの式に戻して確かめる。",
+    "英語の rational は「分数の形の（比の）」の意味で、「合理的な」ではない（エントリ rational-function、rational-expression）。",
+    "両辺に掛ける最小公分母は LCD（least common denominator。エントリ least-common-denominator）と言う。"
+  ],
+  "related": [
+    "least-common-denominator",
+    "extraneous-solution",
+    "rational-expression",
+    "rational-function",
+    "clear-the-denominators"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "rational equation": 7
+    },
+    "written": {
+      "rational equation": 91
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:blackpenredpen",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

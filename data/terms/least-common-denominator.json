@@ -1,0 +1,104 @@
+{
+  "id": "least-common-denominator",
+  "ja": {
+    "term": "最小公分母",
+    "reading": "さいしょうこうぶんぼ",
+    "alt": []
+  },
+  "en": {
+    "term": "LCD",
+    "alt": [],
+    "variants": [
+      {
+        "term": "least common denominator",
+        "register": "both",
+        "note": "略さない形。教科書は最初にこの形で導入し、あとは LCD と書く（OpenStax）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "2 つ以上の分数（分数式）の分母の最小公倍数。通分するときの共通の分母に使う。",
+  "definition_en": "The least common multiple of the denominators of two or more fractions or rational expressions. It is the smallest denominator you can use to rewrite them with a common denominator.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The LCD of 1/4 and 1/6 is 12, so rewrite both fractions with 12 on the bottom.",
+      "ja": "1/4 と 1/6 の最小公分母は 12 だから、どちらの分数も分母を 12 に直そう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the LCD of 5/(2x) and 3/x², and then add the two fractions.",
+      "ja": "5/(2x) と 3/x² の最小公分母を求め、2 つの分数式の和を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "LCD は 1 語として読まず、L-C-D と 1 文字ずつ読む。",
+    "最小公倍数は least common multiple（LCM、エントリ least-common-multiple）。LCD は分母どうしの LCM のことで、分母の話をするときに使う。",
+    "分数方程式（エントリ rational-equation）では、両辺に LCD をかけて分母を払う。通分（エントリ find-a-common-denominator）で分子にもかけ忘れないようにする。"
+  ],
+  "related": [
+    "find-a-common-denominator",
+    "least-common-multiple",
+    "rational-equation",
+    "clear-the-denominators",
+    "denominator"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "LCD": 99,
+      "least common denominator": 7
+    },
+    "written": {
+      "least common denominator": 62,
+      "LCD": 338
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

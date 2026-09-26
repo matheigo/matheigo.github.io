@@ -1,0 +1,96 @@
+{
+  "id": "sum-of-cubes",
+  "ja": {
+    "term": "立方の和",
+    "reading": "りっぽうのわ",
+    "alt": []
+  },
+  "en": {
+    "term": "sum of cubes",
+    "alt": [
+      "sum of two cubes"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "a³ + b³ の形の式。(a + b)(a² − ab + b²) と因数分解できる。",
+  "definition_en": "An expression of the form a³ + b³, which factors as (a + b)(a² − ab + b²).",
+  "latex": "a^3 + b^3 = (a + b)(a^2 - ab + b^2)",
+  "spoken_en": "a cubed plus b cubed equals the quantity a plus b, times the quantity a squared minus a b plus b squared",
+  "examples": [
+    {
+      "en": "x cubed plus 8 is a sum of cubes, since 8 is 2 cubed.",
+      "ja": "x³ + 8 は立方の和だね。8 は 2 の 3 乗だから。",
+      "register": "spoken"
+    },
+    {
+      "en": "Factor the sum of cubes 27x³ + 1.",
+      "ja": "立方の和 27x³ + 1 を因数分解せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "2 つ目の因数 a² − ab + b² は、実数の範囲ではそれ以上因数分解できない。(a + b)² の展開と取り違えて真ん中を −2ab にしないこと。",
+    "立方の差（エントリ difference-of-cubes）とは符号の並びが逆になる。",
+    "英語の cube は 3 乗（エントリ cube）にも立方体（エントリ cube-solid）にも使う。ここでは 3 乗のこと。"
+  ],
+  "related": [
+    "difference-of-cubes",
+    "difference-of-squares",
+    "factoring",
+    "cube",
+    "polynomial"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "sum of cubes": 2,
+      "sum of two cubes": 5
+    },
+    "written": {
+      "sum of cubes": 23,
+      "sum of two cubes": 3
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

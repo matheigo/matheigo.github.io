@@ -1,0 +1,85 @@
+{
+  "id": "coterminal-angle",
+  "ja": {
+    "term": "共終角",
+    "reading": "きょうしゅうかく",
+    "alt": []
+  },
+  "en": {
+    "term": "coterminal angle",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「共終角」は日本の教科書に無い、本プロジェクトの訳語。日本の数II では一般角 θ + 360°n（動径が同じ角）として扱い、この関係の角に名前を付けない。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "標準の位置（始線が x 軸の正の向き）にかいたとき、動径が同じ位置になる角どうし。互いに 360° の整数倍だけ違う。",
+  "definition_en": "Angles in standard position that share the same terminal side. They differ by a whole-number multiple of 360°, or 2π radians.",
+  "latex": "\\theta + 360^\\circ n",
+  "spoken_en": "theta plus 360 degrees times n",
+  "examples": [
+    {
+      "en": "30 degrees and 390 degrees are coterminal angles, since you just go around one more full turn.",
+      "ja": "30° と 390° は動径が同じ角。ちょうどもう 1 回転しただけだから。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find a positive coterminal angle and a negative coterminal angle for 75°.",
+      "ja": "75° と動径が同じ角を、正の角と負の角で 1 つずつ求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の一般角（エントリ general-angle）は θ + 360°n という角の表し方で、coterminal angle は動径が同じ角どうしの関係を指す。",
+    "動径は英語で terminal side（エントリ terminal-side）。始線は initial side（エントリ initial-side）。",
+    "弧度法では 2π の整数倍だけ違う角が coterminal angles になる。"
+  ],
+  "related": [
+    "general-angle",
+    "terminal-side",
+    "initial-side",
+    "reference-angle",
+    "radian"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "coterminal angle": 9
+    },
+    "written": {
+      "coterminal angle": 31
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

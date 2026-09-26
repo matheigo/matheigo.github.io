@@ -1,0 +1,97 @@
+{
+  "id": "difference-of-cubes",
+  "ja": {
+    "term": "立方の差",
+    "reading": "りっぽうのさ",
+    "alt": []
+  },
+  "en": {
+    "term": "difference of cubes",
+    "alt": [
+      "difference of two cubes"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "a³ − b³ の形の式。(a − b)(a² + ab + b²) と因数分解できる。",
+  "definition_en": "An expression of the form a³ − b³, which factors as (a − b)(a² + ab + b²).",
+  "latex": "a^3 - b^3 = (a - b)(a^2 + ab + b^2)",
+  "spoken_en": "a cubed minus b cubed equals the quantity a minus b, times the quantity a squared plus a b plus b squared",
+  "examples": [
+    {
+      "en": "x cubed minus 64 is a difference of cubes, because 64 is 4 cubed.",
+      "ja": "x³ − 64 は立方の差。64 は 4 の 3 乗だからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Factor the difference of cubes 8y³ − 125.",
+      "ja": "立方の差 8y³ − 125 を因数分解せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "a² − b² = (a + b)(a − b)（エントリ difference-of-squares）と取り違えやすい。a³ − b³ の 2 つ目の因数は a + b ではなく a² + ab + b²。",
+    "2 つ目の因数 a² + ab + b² は、実数の範囲ではそれ以上因数分解できない。",
+    "立方の和（エントリ sum-of-cubes）とは符号の並びが逆になる。"
+  ],
+  "related": [
+    "sum-of-cubes",
+    "difference-of-squares",
+    "factoring",
+    "cube",
+    "polynomial"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "difference of cubes": 6,
+      "difference of two cubes": 2
+    },
+    "written": {
+      "difference of cubes": 43,
+      "difference of two cubes": 2
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

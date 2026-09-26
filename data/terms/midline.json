@@ -1,0 +1,82 @@
+{
+  "id": "midline",
+  "ja": {
+    "term": "振動の中心線",
+    "reading": "しんどうのちゅうしんせん",
+    "alt": [
+      "中央線"
+    ]
+  },
+  "en": {
+    "term": "midline",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「振動の中心線」は日本の教科書に無い、本プロジェクトの訳語。日本の数II では y = sin θ + 1 のグラフを「y 軸方向に 1 平行移動したもの」として扱い、この線に名前を付けない。",
+  "domains": [
+    "trigonometry"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "正弦曲線の最大値と最小値のちょうど中間を通る、x 軸に平行な直線。y = A sin(Bx − C) + D のグラフでは y = D。",
+  "definition_en": "The horizontal line halfway between the maximum and minimum values of a sinusoidal function. For y = A sin(Bx − C) + D, the midline is y = D.",
+  "latex": "y = D",
+  "spoken_en": "y equals D",
+  "examples": [
+    {
+      "en": "The max is 5 and the min is negative 1, so the midline is right in the middle at y equals 2.",
+      "ja": "最大値が 5 で最小値が −1 だから、振動の中心線はちょうど真ん中の y = 2。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the amplitude, period, and midline of the graph of y = 3 sin(2x) + 1.",
+      "ja": "y = 3 sin 2x + 1 のグラフの振幅、周期、振動の中心線を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "振幅（amplitude）は midline から最大値までの距離で、x 軸から最大値までの距離ではない。y = 3 sin 2x + 1 の振幅は 3。",
+    "幾何で三角形の 2 辺の中点を結ぶ線分（エントリ midsegment-theorem）を midline と呼ぶこともある。",
+    "midline は直線なので、答えは y = 2 のように式で書く。"
+  ],
+  "related": [
+    "sinusoid",
+    "amplitude",
+    "period",
+    "phase-shift",
+    "midsegment-theorem"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "midline": 79
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

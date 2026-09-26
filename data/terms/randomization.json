@@ -1,0 +1,94 @@
+{
+  "id": "randomization",
+  "ja": {
+    "term": "無作為化",
+    "reading": "むさくいか",
+    "alt": []
+  },
+  "en": {
+    "term": "randomization",
+    "alt": [
+      "random assignment"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "実験で、どの被験者にどの処理を割り当てるかを、くじや乱数などの偶然に任せること。処理以外の違いがグループ間でならされるので、因果関係の結論を支える。",
+  "definition_en": "Using a chance process to decide which experimental units get which treatment. Random assignment is what lets an experiment support a cause-and-effect conclusion.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We flip a coin for each volunteer to pick their group, and that randomization is what lets us talk about cause and effect.",
+      "ja": "ボランティア 1 人ずつコインを投げてグループを決める。この無作為化があるから、因果関係の話ができる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Describe a method of randomization that divides the volunteers into a treatment group and a control group.",
+      "ja": "ボランティアを処理群と対照群に分ける無作為化の方法を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "random assignment（処理を無作為に割り当てること）と random selection（標本を無作為に選ぶこと、エントリ random-sampling）は別。AP Statistics の CED は、この 2 つを区別するよう注意する。無作為割り当ては因果関係の結論を、無作為抽出は標本から母集団への一般化を支える。",
+    "「無作為」は「適当に選ぶ」ことではない。くじ・コイン・乱数のような偶然の仕組みで決めること。"
+  ],
+  "related": [
+    "experiment",
+    "random-sampling",
+    "completely-randomized-design",
+    "control-group",
+    "treatment"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.12・3.2・3.3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "random assignment": 1
+    },
+    "written": {
+      "random assignment": 8,
+      "randomization": 1
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-notes",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは AP Statistics の CED の呼び方 randomization（topic 2.12・topic 3.2・topic 3.3・topic 3.5・topic 3.9・topic 3.10・topic 3.12・topic 3.14・topic 4.1・topic 4.2・topic 4.4・topic 4.6・topic 4.7・topic 4.9）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

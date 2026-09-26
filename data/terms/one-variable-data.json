@@ -1,0 +1,88 @@
+{
+  "id": "one-variable-data",
+  "ja": {
+    "term": "一変量データ",
+    "reading": "いちへんりょうでーた",
+    "alt": []
+  },
+  "en": {
+    "term": "one-variable data",
+    "alt": [
+      "univariate data"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "1 つの変数だけを記録したデータ。クラス全員の身長のように、対象 1 つにつき値が 1 つある。",
+  "definition_en": "Data that record just one variable for each individual, such as the heights of all the students in a class.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "This is one-variable data, just heights, so a histogram or a box plot works well.",
+      "ja": "これは身長だけの一変量データだから、ヒストグラムか箱ひげ図がいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Make a dot plot of the one-variable data below and describe its center and spread.",
+      "ja": "次の一変量データのドットプロットをかき、中心と散らばりを述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「一変量」は変数（variable）が 1 つという意味で、データの値が 1 個という意味ではない。univariate data とも言う。",
+    "1 つの対象について 2 つの変数を組にしたデータは bivariate data（エントリ two-variable-data）。一変量データはヒストグラム・箱ひげ図・ドットプロットで表し、散布図は使わない。"
+  ],
+  "related": [
+    "two-variable-data",
+    "histogram",
+    "box-plot",
+    "dot-plot",
+    "statistical-variable"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Unit 1・Topic 1.1〜1.3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "univariate data": 5
+    },
+    "sources": [
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。見出しは AP Statistics の CED の呼び方 one-variable data（topic 1.1・topic 1.2・topic 1.3・topic 1.4・topic 1.5・topic 1.6・topic 1.7・topic 1.8・topic 1.9・topic 1.10・topic 1.11・topic 1.12・topic 1.13）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

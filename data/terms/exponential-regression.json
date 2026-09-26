@@ -1,0 +1,78 @@
+{
+  "id": "exponential-regression",
+  "ja": {
+    "term": "指数回帰",
+    "reading": "しすうかいき",
+    "alt": []
+  },
+  "en": {
+    "term": "exponential regression",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "データに最もよく合う指数関数 y = abˣ を求めること。回帰直線を、直線の代わりに指数関数で当てはめたもの。",
+  "definition_en": "Finding the exponential function y = ab^x that best fits a set of data. It works like finding a regression line, but the model is an exponential curve instead of a line.",
+  "latex": "y = ab^x",
+  "spoken_en": "y equals a times b to the x",
+  "examples": [
+    {
+      "en": "These points curve up way too fast for a line, so let's run an exponential regression on the calculator.",
+      "ja": "この点は直線にしては急に上がりすぎるから、電卓で指数回帰をしてみよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use exponential regression to find a function of the form y = ab^x that models the data in the table. Round a and b to the nearest hundredth.",
+      "ja": "指数回帰を用いて、表のデータに合う y = abˣ の形の関数を求めよ。a、b は小数第 2 位まで求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校では扱わない。グラフ電卓の ExpReg（Exponential Regression）機能で a と b を求める。",
+    "回帰直線（エントリ regression-line）は直線 y = a + bx を当てはめる。指数回帰の b は傾きではなく、x が 1 増えるごとにかかる倍率（b > 1 なら増加、0 < b < 1 なら減少）。"
+  ],
+  "related": [
+    "regression-line",
+    "exponential-model",
+    "exponential-function",
+    "scatter-plot",
+    "quadratic-regression"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "exponential regression": 14
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  }
+}

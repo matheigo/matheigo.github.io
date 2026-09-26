@@ -1,0 +1,91 @@
+{
+  "id": "horizontal-asymptote",
+  "ja": {
+    "term": "水平漸近線",
+    "reading": "すいへいぜんきんせん",
+    "alt": []
+  },
+  "en": {
+    "term": "horizontal asymptote",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "x → ∞ または x → −∞ のとき、グラフが限りなく近づく水平な直線 y = b。分数関数では、分子と分母の次数を比べて求める。",
+  "definition_en": "A horizontal line y = b that a graph approaches as x → ∞ or x → −∞. For a rational function, you find it by comparing the degrees of the numerator and the denominator.",
+  "latex": "\\lim_{x \\to \\infty} f(x) = b",
+  "spoken_en": "the limit as x approaches infinity of f of x equals b",
+  "examples": [
+    {
+      "en": "Same degree on top and bottom, so the horizontal asymptote is the ratio of the leading coefficients: y = 2/3.",
+      "ja": "分子と分母の次数が同じだから、水平漸近線は最高次の係数の比で y = 2/3。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the horizontal asymptote of f(x) = (4x² − 1)/(2x² + 3x).",
+      "ja": "f(x) = (4x² − 1)/(2x² + 3x) の水平漸近線を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "グラフは水平漸近線と交わることもある。交わらないのは垂直漸近線（エントリ vertical-asymptote）。",
+    "分数関数では、分母の次数のほうが高ければ y = 0、等しければ最高次の係数の比。分子の次数が分母よりちょうど 1 高いときは斜め漸近線（エントリ slant-asymptote）になる。",
+    "分数関数だけでなく指数関数にもある。y = 2ˣ の水平漸近線は y = 0。"
+  ],
+  "related": [
+    "asymptote",
+    "vertical-asymptote",
+    "slant-asymptote",
+    "rational-function",
+    "limit-at-infinity"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "horizontal asymptote": 143
+    },
+    "written": {
+      "horizontal asymptote": 134
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "two-variable-data",
+  "ja": {
+    "term": "二変量データ",
+    "reading": "にへんりょうでーた",
+    "alt": []
+  },
+  "en": {
+    "term": "bivariate data",
+    "alt": [
+      "two-variable data"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "1 つの対象について、2 つの変数の値を組にして記録したデータ（身長と体重など）。",
+  "definition_en": "Data that pair the values of two variables for each individual, such as each student's height and weight.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Height and weight for each kid is bivariate data, so let's put it on a scatter plot.",
+      "ja": "一人ひとりの身長と体重は二変量データだから、散布図にしてみよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "The table shows bivariate data on hours studied and test scores for a group of students. Make a scatter plot and describe the association.",
+      "ja": "表は、ある生徒の集団の学習時間とテストの得点の二変量データである。散布図をかき、関連を述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数I では「2 つの変量のデータ」として散布図・相関係数を学ぶ。英語の bivariate の bi- は「2 つの」の意味で、two-variable data とも言う。",
+    "量的変数どうしは散布図（エントリ scatter-plot）と相関・回帰直線で、質的変数どうしは二元分割表（two-way table）で表す。",
+    "変数が 1 つだけのデータは one-variable data（エントリ one-variable-data）。"
+  ],
+  "related": [
+    "one-variable-data",
+    "scatter-plot",
+    "correlation-coefficient",
+    "regression-line",
+    "contingency-table"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 5.4"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "bivariate data": 5
+    },
+    "written": {
+      "bivariate data": 7
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 7 件（10 未満））。見出しは AP Statistics の CED の呼び方 bivariate data（topic 5.4）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}
