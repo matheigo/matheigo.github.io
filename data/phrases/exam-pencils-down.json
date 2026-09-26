@@ -2,16 +2,9 @@
   "id": "exam-pencils-down",
   "situation": "exam",
   "intent": "試験の終了を告げる",
-  "en": "Time's up — pencils down.",
+  "en": "Time's up. Pencils down.",
   "ja": "時間です。筆記用具を置いてください。",
   "register": "neutral",
-  "variants": [
-    {
-      "en": "Please stop writing.",
-      "register": "polite",
-      "note": "講義の stop writing はほとんどが先生が板書を省く言い方で、数えない。"
-    }
-  ],
   "tags": [
     "exam",
     "time"
@@ -21,7 +14,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "spoken": {
@@ -35,8 +28,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（講義のコーパスと MICASE の教員の発話で数えた。time's up | time is up | pencils down | pens down 2 件）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "文は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 慣習差 2 の前の修正」の 2）: 「Time's up. Pencils down.」。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

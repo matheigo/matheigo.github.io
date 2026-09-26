@@ -2,7 +2,7 @@
   "id": "exam-ask-how-much-time",
   "situation": "exam",
   "intent": "試験の残り時間を聞く",
-  "en": "How much time is left?",
+  "en": "How much time do we have left?",
   "ja": "あと何分ありますか。",
   "register": "neutral",
   "tags": [
@@ -15,7 +15,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "spoken": {
@@ -28,8 +28,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。how much time is left | how much time do we have | how much time left | how many minutes 2 件）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "文は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 慣習差 2 の前の修正」の 2）: 「How much time do we have left?」。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

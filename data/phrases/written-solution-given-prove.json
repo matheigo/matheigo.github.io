@@ -10,12 +10,21 @@
     "proof",
     "geometry"
   ],
+  "notes": [
+    "米国の二段組の証明（two-column proof）の型。CK-12 Geometry は証明の問題を Given（仮定）と Prove（示すこと）で始め、statements と reasons の 2 列で書く。"
+  ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "Given : … Prove : … で始まる証明の問題（4.13 SSS・4.14 SAS・4.15 ASA and AAS ほか、32 件）"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "sources": [],
@@ -23,8 +32,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも要の部分を 3 件以上使わない（書き言葉のコーパスと参照で数えた。書: どの要の部分も 10 件に届かない（①②③ で判定しない））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "文は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 慣習差 2 の前の修正」の 2）: 「Given: AB ≅ CD. Prove: △ABC ≅ △CDA.」。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

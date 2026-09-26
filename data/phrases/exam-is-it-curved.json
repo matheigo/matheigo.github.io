@@ -5,12 +5,6 @@
   "en": "Is the exam curved?",
   "ja": "この試験は得点調整（カーブ）がありますか。",
   "register": "neutral",
-  "variants": [
-    {
-      "en": "Is the class graded on a curve?",
-      "register": "neutral"
-    }
-  ],
   "tags": [
     "exam",
     "asking",
@@ -21,7 +15,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "sources": [],
@@ -29,8 +23,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。0 件）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "文は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 慣習差 2 の前の修正」の 2）: 「Is the exam curved?」。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

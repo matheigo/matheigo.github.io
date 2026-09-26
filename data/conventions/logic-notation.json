@@ -1,0 +1,68 @@
+{
+  "id": "logic-notation",
+  "title_ja": "否定と「かつ」「または」の書き方",
+  "title_en": "Negation and connectives",
+  "jp": "センター試験の問題文は条件 p の否定を上線で p̄ と書き（平成29年度・平成31年度 本試験 数学Ⅰ・数学Ａ 第1問）、「p かつ q」「q または r」を言葉で書く（平成29年度・平成30年度 同 第1問）。",
+  "us": "CK-12 Geometry は否定を ~p、「ならば」を p → q と書く（2.8 Truth Tables ほか）。Levin は ¬P・P ∧ Q・P ∨ Q・∀x・∃x と記号で書き、¬P を not P と読む（1.1 Mathematical Statements）。",
+  "advice_ja": "p̄ は英語の本では ~p か ¬p になり、not p と読む。「かつ」「または」は and・or か ∧・∨。",
+  "category": "notation",
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "term_refs": [
+    "negation",
+    "logical-connective",
+    "propositional-logic",
+    "quantifier"
+  ],
+  "related": [
+    "negation-sign",
+    "logical-and-wedge",
+    "logical-or-vee",
+    "for-all-quantifier",
+    "there-exists-quantifier"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成29年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20180601/https://www.dnc.ac.jp/albums/abm.php?f=abm00009412.pdf&n=%E6%95%B0%E5%AD%A6%E2%85%A0%E3%83%BB%E6%95%B0%E5%AD%A6%EF%BC%A1.pdf",
+      "note": "第1問: 条件 p，q の否定を p̄，q̄ で表す、命題「(p かつ q) ⟹ r」"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20190601/https://www.dnc.ac.jp/albums/abm.php?f=abm00033141.pdf&n=h30+suugaku1+02suugaku1A.pdf",
+      "note": "第1問: q または r であることは"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成31年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20200601/https://www.dnc.ac.jp/albums/abm.php?f=abm00036453.pdf&n=k+19+suugaku1A.pdf",
+      "note": "第1問: 条件 p の否定を p̄ で表す"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.8 Truth Tables、2.12 Converse, Inverse, and Contrapositive Statements: ~p、p → q"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.1 Mathematical Statements: ¬P、P ∧ Q、P ∨ Q"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26"
+}

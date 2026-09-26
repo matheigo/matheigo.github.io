@@ -2,8 +2,8 @@
   "id": "discord-when-is-the-midterm",
   "situation": "discord",
   "intent": "中間試験の日を聞く",
-  "en": "When's the midterm again?",
-  "ja": "中間いつだっけ？",
+  "en": "When is the midterm?",
+  "ja": "中間試験っていつ？",
   "register": "casual",
   "tags": [
     "discord",
@@ -14,7 +14,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "spoken": {
@@ -27,8 +27,8 @@
   },
   "flags": [
     {
-      "code": "corpus-student-rare",
-      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い when is the midterm | when's the midterm | when is the exam | when's the exam で 1 件）。draft のまま。",
+      "code": "corpus-human-settled",
+      "note": "文は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 慣習差 2 の前の修正」の 2）: 「When is the midterm?」。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

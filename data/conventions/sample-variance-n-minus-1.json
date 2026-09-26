@@ -1,0 +1,52 @@
+{
+  "id": "sample-variance-n-minus-1",
+  "title_ja": "分散を n で割るか n − 1 で割るか",
+  "title_en": "Dividing by n or n − 1",
+  "jp": "共通テストの数学Ⅰは分散を「偏差の 2 乗を合計してデータの個数で割った値」とする（令和5年度 本試験 数学Ⅰ 第3問の選択肢、正解 ②）。共分散も偏差の積の平均値と書く（令和6年度 本試験 数学Ⅰ 第4問）。",
+  "us": "OpenStax Introductory Statistics の標本標準偏差 s の式は n − 1 で割り、母集団の標準偏差 σ の式は N で割る（Measures of the Spread of the Data）。",
+  "advice_ja": "米国の統計の授業で sample variance・s と言えば n − 1 で割る。数Ⅰの分散（n で割る）は population variance の式と同じ形。",
+  "category": "terminology",
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Intro Statistics",
+      "AP Statistics"
+    ]
+  },
+  "term_refs": [
+    "variance",
+    "standard-deviation"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和5年度 大学入学共通テスト 本試験 数学Ⅰ（問題）",
+      "url": "https://web.archive.org/web/20240408/https://www.dnc.ac.jp/albums/abm.php?d=432&f=abm00003621.pdf&n=2023_ot_18_sugaku1.pdf",
+      "note": "第3問: 分散は偏差の カ である（解答群）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和5年度 大学入学共通テスト 本試験 数学Ⅰ（正解）",
+      "url": "https://web.archive.org/web/20240408/https://www.dnc.ac.jp/albums/abm.php?d=507&f=abm00003326.pdf&n=R5_%E6%95%B0%E5%AD%A6%E2%85%A0_%E6%9C%AC%E8%A9%A6%E9%A8%93%E3%81%AE%E6%AD%A3%E8%A7%A3.pdf",
+      "note": "第3問 カ: ②"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和6年度 大学入学共通テスト 本試験 数学Ⅰ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=666&f=abm00004687.pdf&n=2024_or_18_sugaku1.pdf",
+      "note": "第4問: 共分散は偏差の積の平均値"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "Measures of the Spread of the Data: s の式は n − 1、σ の式は N"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26"
+}

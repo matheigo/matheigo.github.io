@@ -8,19 +8,21 @@
   "variants": [
     {
       "en": "Hi Professor Smith,",
-      "register": "neutral",
-      "note": "Hello Dr. Smith, とも書く。"
+      "register": "neutral"
     }
   ],
   "tags": [
     "email"
+  ],
+  "notes": [
+    "Hi Professor Smith, はくだけた書き方。"
   ],
   "sources": [
     {
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "spoken": {
@@ -33,8 +35,8 @@
   },
   "flags": [
     {
-      "code": "corpus-student-rare",
-      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い hi professor | hello professor で 1 件）。draft のまま。",
+      "code": "corpus-human-settled",
+      "note": "文は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 慣習差 2 の前の修正」の 2）: 「Dear Professor Smith,」 ／ 「Hi Professor Smith,」。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

@@ -2460,7 +2460,7 @@ export type Settled =
    * by "mse": a student phrase whose leader in the MICASE students' utterances (`micase`) falls short and
    * whose leading key part is asked that often on Math Stack Exchange (mse.ts).
    */
-  | { kind: "attested"; head: string; hits: number; by?: "mse"; micase?: { wording: string | null; hits: number } }
+  | { kind: "attested"; head: string; hits: number; by?: "mse"; micase?: { wording: string | null; hits: number }; enNote?: string }
   | { kind: "undecided" };
 
 /**

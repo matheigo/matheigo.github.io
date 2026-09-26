@@ -2,12 +2,12 @@
   "id": "group-study-split-them-up",
   "situation": "group-study",
   "intent": "問題を分担しようと提案する",
-  "en": "Should we split them up?",
+  "en": "Let's each do a few and then explain them to each other.",
   "ja": "何問かずつ分担して、あとで説明し合おう。",
   "register": "casual",
   "variants": [
     {
-      "en": "Let's each do a few and then explain them to each other.",
+      "en": "Should we split them up?",
       "register": "casual"
     }
   ],
@@ -33,7 +33,7 @@
   "flags": [
     {
       "code": "corpus-attested-only",
-      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（split them up | divide them up 1 件）。Math Stack Exchange の質問で首位の要の部分 split them up | divide them up（39 件。3 件以上）。register は主張しない。",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（split them up | divide them up 1 件）。Math Stack Exchange の質問で最も多い要の部分 split them up | divide them up（39 件。3 件以上）なので使われている。en の要の部分 explain them to each other | explain it to each other は 0 件。en は Math Stack Exchange では選ばない。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

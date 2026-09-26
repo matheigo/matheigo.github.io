@@ -236,9 +236,22 @@ function leanBy(l: LeanHead): string {
   return `CED（AP）${also}`;
 }
 
+/**
+ * What Math Stack Exchange says of the headline sentence (en): it only attests that the
+ * phrase is used, and never picks en (DECISIONS, Phase 3 慣習差 2 の前の修正 1). en stays
+ * the sentence the human decided or the ledger's; the note gives its key part's count.
+ */
+function mseEnNote(enKey: string, mse: NonNullable<ReturnType<typeof mseLeader>>): string {
+  const own = mse.all.find((a) => sameWording(a.wording, enKey));
+  if (!own) return `en の要の部分 ${enKey || "（数えない）"} は Math Stack Exchange で検索しない。en は Math Stack Exchange では選ばない`;
+  return own.hits >= PHRASE_ATTESTED
+    ? `en の要の部分 ${own.wording} も ${own.hits} 件（${PHRASE_ATTESTED} 件以上）なので en のまま`
+    : `en の要の部分 ${own.wording} は ${own.hits} 件。en は Math Stack Exchange では選ばない`;
+}
+
 function describeSettled(s: Settled): string {
   if (s.kind === "attested" && s.by === "mse")
-    return `MICASE の学生の発話では首位が ${PHRASE_ATTESTED} 件未満（${s.micase?.wording ? `${s.micase.wording} ${s.micase.hits} 件` : "0 件"}）。Math Stack Exchange の質問で首位の要の部分 ${s.head}（${s.hits} 件。${PHRASE_ATTESTED} 件以上）`;
+    return `MICASE の学生の発話では首位が ${PHRASE_ATTESTED} 件未満（${s.micase?.wording ? `${s.micase.wording} ${s.micase.hits} 件` : "0 件"}）。Math Stack Exchange の質問で最も多い要の部分 ${s.head}（${s.hits} 件。${PHRASE_ATTESTED} 件以上）なので使われている。${s.enNote}`;
   if (s.kind === "attested") return `話者のコーパスで首位の要の部分 ${s.head}（${s.hits} 件。${PHRASE_ATTESTED} 件以上）`;
   if (s.kind === "no-fixed-expression") return `英語に決まった言い方がない（話 ${s.spoken} 件 ／ 書 ${s.written} 件）`;
   if (s.kind === "reference") {
@@ -339,6 +352,11 @@ function main() {
     const rawTotal = (by: Record<string, Record<string, number>>) =>
       Object.values(flatten(by)).reduce((a, b) => a + b, 0);
     const human = humanFlag(record);
+    // An email / discord phrase neither the MICASE students nor Math Stack Exchange attest,
+    // whose sentence the human has decided (DECISIONS, Phase 3 慣習差 2 の前の修正 2).
+    const emailUnsettled =
+      seen !== null && seen.hits < STUDENT_SEEN && !(mse && mse.hits >= STUDENT_SEEN);
+    const emailHuman = emailUnsettled && human !== null;
     const ruleSettled: Settled | null = !bothUndecided
       ? null
       : c.collection === "terms"
@@ -358,7 +376,14 @@ function main() {
           : below && below.wording && below.hits >= PHRASE_ATTESTED
             ? { kind: "attested", head: below.wording, hits: below.hits }
             : group === "student" && mse && mse.hits >= PHRASE_ATTESTED
-              ? { kind: "attested", head: mse.wording, hits: mse.hits, by: "mse", micase: below ? { wording: below.wording, hits: below.hits } : undefined }
+              ? {
+                  kind: "attested",
+                  head: mse.wording,
+                  hits: mse.hits,
+                  by: "mse",
+                  micase: below ? { wording: below.wording, hits: below.hits } : undefined,
+                  enNote: mseEnNote(countedAs(c.collection, entry.data.id, record.en as string), mse),
+                }
             : group === "written"
               ? settlePhraseReference(c.reference ?? emptyReference(), candidatesOf(c.collection, record))
               : { kind: "undecided" };
@@ -387,7 +412,12 @@ function main() {
       ) {
         todo.push(`notes に「${NOT_IN_HIGH_SCHOOL}」と件数を書く`);
       }
-    } else if (settled && (settled.kind === "reference" || settled.kind === "attested") && c.collection === "phrases") {
+    } else if (
+      settled &&
+      (settled.kind === "reference" || (settled.kind === "attested" && settled.by !== "mse")) &&
+      c.collection === "phrases"
+    ) {
+      // Math Stack Exchange only attests that a phrase is used: it does not pick en (mseEnNote).
       // The key part the references use (or the attested leader) is the headline sentence's (en).
       if (!sameWording(countedAs(c.collection, entry.data.id, record.en as string), settled.head)) {
         todo.push(`en を要の部分が ${settled.head} の文にする（今は ${record.en as string}）`);
@@ -486,8 +516,8 @@ function main() {
       mismatch,
       settled,
       todo,
-      human: bothUndecided && human !== null && !attested,
-      humanStale: (!bothUndecided || attested) && human !== null,
+      human: (bothUndecided && human !== null && !attested) || emailHuman,
+      humanStale: (!bothUndecided || attested) && human !== null && !emailHuman,
       ruleSettled: bothUndecided && human && !attested ? ruleSettled : null,
       humanNote: human?.note ?? null,
       lean,
@@ -550,9 +580,11 @@ function main() {
     if (seen && seen.hits < STUDENT_SEEN && mse && mse.hits >= STUDENT_SEEN) {
       flags.push({
         code: ATTESTED_ONLY,
-        note: `email・discord の要の部分が MICASE の学生の発話に ${STUDENT_SEEN} 件未満（最も多い ${seen.wording} で ${seen.hits} 件）。Math Stack Exchange の質問で ${mse.wording} が ${mse.hits} 件（${STUDENT_SEEN} 件以上）なので likely。`,
+        note: `email・discord の要の部分が MICASE の学生の発話に ${STUDENT_SEEN} 件未満（最も多い ${seen.wording} で ${seen.hits} 件）。Math Stack Exchange の質問で ${mse.wording} が ${mse.hits} 件（${STUDENT_SEEN} 件以上）なので likely。${mseEnNote(countedAs(c.collection, entry.data.id, record.en as string), mse)}。`,
         raised: TODAY,
       } as { code: string });
+    } else if (emailHuman) {
+      // the human's sentence: corpus-human-settled is already in flags
     } else if (seen && seen.hits < STUDENT_SEEN) {
       flags.push({
         code: "corpus-student-rare",
@@ -684,7 +716,13 @@ function main() {
         l.key,
         l.seen!.wording,
         String(l.seen!.hits),
-        l.seen!.hits >= STUDENT_SEEN ? "likely" : l.mse && l.mse.hits >= STUDENT_SEEN ? `likely（Math Stack Exchange: ${l.mse.wording} ${l.mse.hits}）` : "draft",
+        l.seen!.hits >= STUDENT_SEEN
+          ? "likely"
+          : l.mse && l.mse.hits >= STUDENT_SEEN
+            ? `likely（Math Stack Exchange: ${l.mse.wording} ${l.mse.hits}）`
+            : l.human
+              ? "likely（人間が文を決めた）"
+              : "draft",
       ),
     ),
     "",

@@ -222,8 +222,8 @@ describe("a final s that is not a plural, and y / ies / ied", () => {
       }
     }
     // a capitalized word ending in s that is a name and not a plural (Apollonius, Bayes);
-    // sentence-initial words ("Oops, …", "Calculators are allowed …") and a capitalized plural (the phrase "… are Tuesdays from 2 to 4") are not names
-    const names = [...words].filter((w) => !["Does", "Is", "Has", "This", "Its", "Oops", "Tuesdays", "Calculators"].includes(w));
+    // sentence-initial words ("Oops, …", "Time's up. Pencils down.") and a capitalized plural (the phrase "… are Tuesdays from 2 to 4") are not names
+    const names = [...words].filter((w) => !["Does", "Is", "Has", "This", "Its", "Oops", "Tuesdays", "Pencils"].includes(w));
     for (const w of names) expect(NOT_PLURAL_S.has(w.toLowerCase()) || /(?:ss|us|is)$/.test(w.toLowerCase()), w).toBe(true);
   });
 });

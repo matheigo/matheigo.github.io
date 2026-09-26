@@ -2,8 +2,8 @@
   "id": "exam-partial-credit",
   "situation": "exam",
   "intent": "部分点があるので書けるところは書くよう促す",
-  "en": "You can get partial credit, so write down what you know.",
-  "ja": "部分点があるので、分かるところは書きなさい。",
+  "en": "Show your work — you can get partial credit.",
+  "ja": "途中の式も書きなさい。部分点があります。",
   "register": "neutral",
   "tags": [
     "exam",
@@ -14,7 +14,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "spoken": {
@@ -27,8 +27,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（講義のコーパスと MICASE の教員の発話で数えた。partial credit 1 件）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "文は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 慣習差 2 の前の修正」の 2）: 「Show your work — you can get partial credit.」。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

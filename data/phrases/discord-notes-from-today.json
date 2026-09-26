@@ -2,8 +2,8 @@
   "id": "discord-notes-from-today",
   "situation": "discord",
   "intent": "講義ノートを持っている人がいるか聞く",
-  "en": "Does anyone have notes from today's lecture?",
-  "ja": "今日の講義ノート持ってる人いる？",
+  "en": "Can someone share their notes from today?",
+  "ja": "今日のノート、誰か共有してくれない？",
   "register": "casual",
   "tags": [
     "discord",
@@ -14,7 +14,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "sources": [],
@@ -22,8 +22,8 @@
   },
   "flags": [
     {
-      "code": "corpus-student-rare",
-      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い anyone have notes | anyone have the notes | notes from today で 0 件）。draft のまま。",
+      "code": "corpus-human-settled",
+      "note": "文は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 慣習差 2 の前の修正」の 2）: 「Can someone share their notes from today?」。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

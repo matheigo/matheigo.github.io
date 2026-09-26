@@ -1,0 +1,53 @@
+{
+  "id": "proposition-vs-condition",
+  "title_ja": "「命題」と「条件」",
+  "title_en": "Statements and predicates",
+  "jp": "センター試験の問題文は変数を含む文を「実数 x に関する条件 p，q，r，s」と呼び、真偽を問う文を「命題」と呼ぶ（平成29年度・平成30年度 本試験 数学Ⅰ・数学Ａ 第1問）。共通テストも「条件 p，q を次のように定める」と書く（令和3年度 第1日程 数学Ⅰ 第1問）。",
+  "us": "Levin は真偽が決まる文を statement、変数を含む文を predicate と呼び分ける（1.1.3 Quantifiers and Predicates）。",
+  "advice_ja": "「x に関する条件 p」は、大学の論理の本では predicate（P(x) と書く）に当たる。",
+  "category": "terminology",
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "term_refs": [
+    "condition",
+    "proposition",
+    "predicate"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成29年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20180601/https://www.dnc.ac.jp/albums/abm.php?f=abm00009412.pdf&n=%E6%95%B0%E5%AD%A6%E2%85%A0%E3%83%BB%E6%95%B0%E5%AD%A6%EF%BC%A1.pdf",
+      "note": "第1問: 実数 x に関する条件 r、3 つの命題"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20190601/https://www.dnc.ac.jp/albums/abm.php?f=abm00033141.pdf&n=h30+suugaku1+02suugaku1A.pdf",
+      "note": "第1問: 実数 x に関する次の条件 p，q，r，s"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和3年度 大学入学共通テスト 第1日程 数学Ⅰ（問題）",
+      "url": "https://web.archive.org/web/20220601/https://www.dnc.ac.jp/albums/abm.php?d=88&f=abm00001271.pdf&n=R3_%E6%95%B0%E5%AD%A6%E2%85%A0%EF%BC%88%EF%BC%91%E6%9C%8816%E6%97%A5%E3%83%BB17%E6%97%A5%EF%BC%89%E3%81%AE%E5%95%8F%E9%A1%8C.pdf",
+      "note": "第1問: 条件 p，q を次のように定める"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.1.3 Quantifiers and Predicates: statement、predicate"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26"
+}

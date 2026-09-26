@@ -2,8 +2,8 @@
   "id": "group-study-can-i-see-your-notes",
   "situation": "group-study",
   "intent": "友達のノートを見せてもらう",
-  "en": "Can I see your notes from Monday?",
-  "ja": "月曜のノート見せてもらってもいい？",
+  "en": "Can I see your notes?",
+  "ja": "ノート見せてもらってもいい？",
   "register": "casual",
   "tags": [
     "group-study"
@@ -13,7 +13,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "sources": [],
@@ -21,8 +21,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。0 件）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "文は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 慣習差 2 の前の修正」の 2）: 「Can I see your notes?」。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

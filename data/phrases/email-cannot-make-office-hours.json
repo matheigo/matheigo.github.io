@@ -5,12 +5,6 @@
   "en": "I have a class during your office hours. Would it be possible to meet at another time?",
   "ja": "オフィスアワーの時間は授業があるため、別の時間にお会いできないでしょうか。",
   "register": "polite",
-  "variants": [
-    {
-      "en": "Could we meet at a different time?",
-      "register": "polite"
-    }
-  ],
   "tags": [
     "email",
     "office-hours"
@@ -20,7 +14,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "sources": [],
@@ -28,8 +22,8 @@
   },
   "flags": [
     {
-      "code": "corpus-student-rare",
-      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い would it be possible to で 0 件）。draft のまま。",
+      "code": "corpus-human-settled",
+      "note": "文は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 慣習差 2 の前の修正」の 2）: 「I have a class during your office hours. Would it be possible to meet at another time?」。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

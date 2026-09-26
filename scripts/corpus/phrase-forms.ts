@@ -411,16 +411,16 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Could you slow down a little?": "slow down a little | slow down a bit | could you slow down | can you slow down",
   },
   "class-asking-i-got-a-different-answer": {
-    "I got 8 — did I do something wrong?": "did i do something wrong | what did i do wrong | where did i go wrong | what am i doing wrong",
     "I got a different answer.": "got a different answer | got something different | got a different number | get a different answer",
+    "What am I doing wrong?": "did i do something wrong | what did i do wrong | where did i go wrong | what am i doing wrong",
   },
   "class-asking-which-problems": {
     "Which problems are we supposed to do?": "which problems | what problems | which questions are",
     "Was that odds only?": "odds only | just the odds | only the odd | odd numbered | odd-numbered",
   },
   "class-asking-when-is-it-due": {
-    "Is that due Friday or Monday?": "due on friday | due friday | due on monday | due monday | due next week",
     "When is this due?": "when is it due | when is that due | when's it due | when is this due | when's that due | when is the homework due | when is the paper due | when are they due",
+    "Is that due Friday or Monday?": "due on friday | due friday | due on monday | due monday | due next week",
   },
   "class-asking-will-this-be-on-the-test": {
     "Do we need to know this for the exam?": "need to know this | have to know this | need to know that | have to know that | need to know all",
@@ -443,8 +443,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Can I use L'Hôpital's rule here instead?": "use … instead | instead of using",
   },
   "class-asking-another-example": {
-    "Can you show us one more?": "do one more | show us one more | go through one more",
     "Could you do another example?": "do another example | give us another example | show us another example | go over another example | do one more example | another example please",
+    "Can you show us one more?": "do one more | show us one more | go through one more",
   },
   "class-asking-simplify-further": {
     "Do we need to simplify this further?": "simplify further | simplify it further | simplify this further | simplify it more | simplify any further | simplify that further | simplify more",
@@ -459,8 +459,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "I wanted to ask about problem 3.": "wanted to ask | want to ask | wanted to ask you",
   },
   "office-hours-can-i-show-you-what-i-tried": {
-    "Here's what I have so far.": "what i have so far | what i've got so far | what i got so far | so far i have | so far i've",
     "Can I show you what I tried?": "show you what i | what i tried to do | tell you what i did | show you what i did",
+    "Here's what I have so far.": "what i have so far | what i've got so far | what i got so far | so far i have | so far i've",
   },
   "office-hours-am-i-on-the-right-track": {
     "Am I on the right track?": "on the right track | in the right direction | right direction",
@@ -636,7 +636,6 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "explaining-solution-rounded-at-the-end": {
     "I didn't round until the very end.": "round until | rounding until | round at the very end | round at the end | don't round until",
-    "I kept the exact value until the last step.": "keep the exact | kept the exact | keep it exact | leave it exact | keep everything exact",
   },
   "explaining-solution-im-assuming": {
     "I'm assuming the speed is constant.": "i'm assuming | i am assuming | we're assuming | we are assuming",
@@ -835,20 +834,19 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Label the graph.": "label the diagram | label the graph | label the figure",
   },
   "exam-box-your-answer": {
-    "Box your final answer.": "box your answer | box your final answer",
-    "Circle your answer.": "circle your answer | circle the answer",
+    "Circle your final answer.": "circle your answer | circle the answer | circle your final answer",
+    "Box your answer.": "box your answer | box your final answer",
   },
   "exam-calculator-allowed": {
-    "Calculators are allowed on this part.": "calculators are allowed | calculator is allowed | can use a calculator | can use your calculator | calculator active",
-    "This section is non-calculator.": "non-calculator | no calculator !involved",
-    "Calculator Not Permitted": "calculator not permitted | calculator is not permitted | calculators are not permitted",
+    "You may use a calculator on this part.": "may use a calculator | calculators are allowed | calculator is allowed | can use a calculator | can use your calculator | calculator active",
+    "Calculator not permitted": "calculator not permitted | calculator is not permitted | calculators are not permitted",
   },
   "exam-multiple-choice-and-free-response": {
     "The exam has a multiple-choice section and a free-response section.": "multiple-choice section | multiple choice section | multiple choice part | multiple-choice questions | multiple choice questions",
     "Part B is free response.": "free-response section | free response section | free response questions | free-response questions",
   },
   "exam-partial-credit": {
-    "You can get partial credit, so write down what you know.": "partial credit",
+    "Show your work — you can get partial credit.": "partial credit",
   },
   "exam-notes-allowed": {
     "You can bring one page of notes, front and back.": "page of notes | sheet of notes | index card | cheat sheet | note sheet",
@@ -859,8 +857,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Ten minutes remaining.": "minutes remaining",
   },
   "exam-pencils-down": {
-    "Time's up — pencils down.": "time's up | time is up | pencils down | pens down",
-    "Please stop writing.": "",
+    "Time's up. Pencils down.": "time's up | time is up | pencils down | pens down",
   },
   "exam-ask-typo": {
     "Should this be f(2) instead of f(3)?": "should this be | should that be",
@@ -874,7 +871,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Can I write on the back?": "write on the back | use the back",
   },
   "exam-ask-how-much-time": {
-    "How much time is left?": "how much time is left | how much time do we have | how much time left | how many minutes",
+    "How much time do we have left?": "how much time is left | how much time do we have | how much time left | how many minutes",
   },
   "exam-when-do-we-get-it-back": {
     "When will we get the exams back?": "exam back | test back",
@@ -882,7 +879,6 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "exam-is-it-curved": {
     "Is the exam curved?": "exam curved | test curved | curve the exam | curve the test",
-    "Is the class graded on a curve?": "graded on a curve | grade on a curve",
   },
   "email-subject-line": {
     "Subject: MATH 221 Sec. 3 – Question about HW 5": "question about",
@@ -908,14 +904,13 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "email-cannot-make-office-hours": {
     "I have a class during your office hours. Would it be possible to meet at another time?": "would it be possible to",
-    "Could we meet at a different time?": "meet at another time | meet at a different time",
   },
   "email-regrade-request": {
     "I'd like to ask about the grading on problem 2 of the midterm. I've attached a scan of my work.": "about the grading",
     "Could you take another look at problem 2?": "another look",
   },
   "email-extension": {
-    "Would it be possible to get a short extension on Homework 6? I've been sick since Monday.": "an extension on | extension on the homework",
+    "Would it be possible to get an extension on the homework?": "an extension on | extension on the homework",
   },
   "email-attached": {
     "I've attached my work as a PDF.": "i've attached | i have attached",
@@ -942,13 +937,13 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Thanks in advance.": "thanks in advance | thank you in advance",
   },
   "email-sign-off": {
+    "Best, Taro Yamada": "",
     "Best regards, Taro Yamada": "best regards | kind regards",
     "Sincerely, Taro Yamada": "sincerely",
-    "Best, Taro": "",
   },
   "group-study-work-together": {
-    "Want to study together for the midterm?": "study together | studying together",
     "Do you want to work on the problem set together?": "work on … together",
+    "Want to study together for the midterm?": "study together | studying together",
   },
   "group-study-where-to-meet": {
     "Does 7 at the library work?": "at the library",
@@ -966,8 +961,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "I think you forgot the 2 here.": "you forgot the | you forgot a",
   },
   "group-study-split-them-up": {
-    "Should we split them up?": "split them up | divide them up",
     "Let's each do a few and then explain them to each other.": "explain them to each other | explain it to each other",
+    "Should we split them up?": "split them up | divide them up",
   },
   "group-study-write-up-our-own": {
     "We can talk about the problems, but we have to write up our own solutions.": "write up our own | write up your own | our own solutions | your own solutions",
@@ -977,11 +972,11 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "The back of the book says 12, but I keep getting 13.": "back of the book",
   },
   "group-study-ask-the-ta": {
-    "Let's ask at office hours.": "ask at office hours | go to office hours",
     "Should we ask the TA?": "ask the ta",
+    "Let's ask at office hours.": "ask at office hours | go to office hours",
   },
   "group-study-can-i-see-your-notes": {
-    "Can I see your notes from Monday?": "see your notes | borrow your notes | look at your notes | copy your notes",
+    "Can I see your notes?": "see your notes | borrow your notes | look at your notes | copy your notes",
   },
   "group-study-quiz-each-other": {
     "Let's quiz each other.": "quiz each other | test each other | quiz me",
@@ -1003,15 +998,15 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "What are they asking for here?": "what are they asking",
   },
   "group-study-where-do-we-start": {
-    "Any ideas for number 7?": "!have any ideas",
     "Where do we even start with this one?": "where do we start | where do i start | where to start",
+    "Any ideas for number 7?": "!have any ideas",
   },
   "discord-anyone-get": {
     "Did anyone get #3?": "did anyone get | has anyone gotten",
     "anyone figure out 3?": "anyone figure out | anyone figured out",
   },
   "discord-due-tonight": {
-    "Is the hw due tonight at 11:59?": "due tonight | due at midnight",
+    "Is the homework due tonight?": "due tonight | due at midnight",
   },
   "discord-can-someone-explain": {
     "Can someone explain why the limit is 0 here?": "can someone explain | could someone explain",
@@ -1038,7 +1033,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "+1": "",
   },
   "discord-notes-from-today": {
-    "Does anyone have notes from today's lecture?": "anyone have notes | anyone have the notes | notes from today",
+    "Can someone share their notes from today?": "share their notes | share your notes | notes from today",
   },
   "discord-office-hours-today": {
     "Are office hours still happening today?": "office hours today | office hours still",
@@ -1048,7 +1043,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Does the quiz cover 4.3?": "quiz cover | exam cover | test cover",
   },
   "discord-when-is-the-midterm": {
-    "When's the midterm again?": "when is the midterm | when's the midterm | when is the exam | when's the exam",
+    "When is the midterm?": "when is the midterm | when's the midterm | when is the exam | when's the exam",
   },
   "discord-typo-in-the-pset": {
     "I think there's a typo in #5 on the pset.": "a typo in | typo in the",
@@ -1058,7 +1053,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Is this the right place to ask?": "the right place to ask | right place to ask",
   },
   "discord-study-on-a-call": {
-    "Anyone want to hop on a call and study tonight?": "hop on a call | jump on a call | on a zoom call",
+    "Anyone want to hop on a call and study?": "hop on a call | jump on a call | on a zoom call",
   },
   "office-hours-i-was-wondering": {
     "I was wondering if you could look over my answer to number 2.": "i was wondering if",

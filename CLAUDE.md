@@ -20,6 +20,7 @@
 - pnpm corpus:probe … 書く前に候補表現を数える。`-- --decide --file x.txt` で 1 ブロック 1 エントリの判定まで出す
 - pnpm corpus:decide … 頻度比で register を決め、`-- --write` で evidence と flags を書き戻す（`--units <curriculum id,…>` で単元に絞る）
 - python3 scripts/ledger/refetch.py … 台帳の langlink と参照（AP Calculus ／ AP Statistics の CED・Nicholson・Levin。docs/SOURCES.md）を一括取得（キャッシュ・タイムアウト・リトライ上限つき）
+- python3 scripts/ledger/fetch_jp_exams.py … 慣習差の日本側: 共通テスト・センター試験の本試験 数学の問題と正解（センターのサイトと Internet Archive の写し）を一括取得し、画像だけの PDF は macOS の Vision で OCR（docs/SOURCES.md）
 - pnpm build      … validate → search-index → サイト → dist/data の書き出しまで通す
 - pnpm export     … JSON/CSV/Quizlet TSV を dist/data に出力
 - pnpm test       … スクリプトと検索のユニットテスト
