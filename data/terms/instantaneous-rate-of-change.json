@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "見出しの「瞬間変化率」は学習指導要領解説に無い、本プロジェクトの訳語。日本の数II は同じ量を微分係数と呼ぶ。",
+  "mapping_note": "見出しの「瞬間変化率」は学習指導要領解説に無いが、日本語版 Wikipedia「微分」は微分係数を x = a における瞬間変化率と説明する。学習指導要領解説（数学II）は同じ量を微分係数と呼び、瞬間の速さや接線の傾きと関連付ける。",
   "domains": [
     "calculus"
   ],
@@ -64,6 +64,18 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 2.1（instantaneous rate of change）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「微分」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%BE%AE%E5%88%86",
+      "note": "微分係数は瞬間変化率"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II 微分・積分の考え: 微分係数、瞬間の速さ・接線の傾き"
     }
   ],
   "confidence": "likely",

@@ -70,6 +70,13 @@ const sourcesOf = (d: Entry) => (Array.isArray(d.sources) ? d.sources : []);
 /** The phrase mapping_note uses for a Japanese headword not found in Japanese textbooks. */
 const PROJECT_TRANSLATION = "本プロジェクトの訳語";
 /**
+ * The phrase for a Japanese headword the 学習指導要領解説 does not use (Phase 5
+ * audit: "日本の教科書に無い" became "学習指導要領解説に無い"). A headword the
+ * 解説 lacks but Japanese Wikipedia has is not the project's translation, so
+ * its note says only this.
+ */
+const NOT_IN_KAISETSU = "学習指導要領解説に無い";
+/**
  * The phrase mapping_note uses for an exact term the US high-school sources do
  * not cover (DECISIONS, Phase 2 代数 2・Precalculus の単元の前の修正; since
  * Phase 2 幾何・離散の単元 2 the sources are the CEDs, OpenStax and IM, CK-12
@@ -217,6 +224,7 @@ for (const collection of COLLECTIONS) {
         note &&
         !humanSettled &&
         !String(note).includes(PROJECT_TRANSLATION) &&
+        !String(note).includes(NOT_IN_KAISETSU) &&
         !String(note).includes(NOT_IN_US_COURSES)
       ) {
         warn(where, "mapping is exact but mapping_note is set");

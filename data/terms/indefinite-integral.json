@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の数IIで「不定積分」と「原始関数」を同じ意味で使うかは教科書による。OpenStax Calculus Volume 1 は、微分すると f になる関数 1 つを antiderivative、+C を付けた全体（∫f(x)dx が表すもの。the most general antiderivative とも）を indefinite integral と呼び分ける。「不定積分を求めよ」は Find the indefinite integral ／ Evaluate ∫ f(x) dx と書かれ、授業では find the antiderivative と言うことも多い。",
+  "mapping_note": "学習指導要領解説（数学II・III）には「不定積分」だけが出てきて、「原始関数」は出てこない。OpenStax Calculus Volume 1 は、微分すると f になる関数 1 つを antiderivative、+C を付けた全体（∫f(x)dx が表すもの。the most general antiderivative とも）を indefinite integral と呼び分ける。「不定積分を求めよ」は Find the indefinite integral ／ Evaluate ∫ f(x) dx と書かれ、授業では find the antiderivative と言うことも多い。",
   "domains": [
     "calculus"
   ],
@@ -51,7 +51,7 @@
   ],
   "pitfalls": [
     "「ただし C は積分定数」に当たる一文は、英語で書くなら where C is a constant。",
-    "∫(1/x)dx は日本では log|x| + C と書くが、米国の教科書では ln|x| + C と書く。米国の高校では log x を底 10 の常用対数と読むので、答案では ln を使う。"
+    "∫(1/x)dx は OpenStax Calculus では ln|x| + C と書く。OpenStax Algebra and Trigonometry は底を省いた log x を常用対数（底 10）と定める（学習指導要領解説には ln が出てこない）ので、英語の答案では ln を使う。"
   ],
   "related": [
     "antiderivative",
@@ -76,6 +76,12 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 6.8（antiderivatives と indefinite integrals）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II・III 積分法: 不定積分（原始関数は出てこない）"
     }
   ],
   "confidence": "likely",
@@ -84,7 +90,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "indefinite integral": 114,

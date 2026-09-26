@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の教科書の「割線」は、円と 2 点で交わる直線（方べきの定理で使う）。英語の secant line は、円に限らず曲線上の 2 点を通る直線にも使い、微積分では平均変化率を表す直線（the slope of the secant line）として多く出てくる。日本の数II・数III では、この直線を「2 点を通る直線」と呼び、割線とは言わないことが多い。",
+  "mapping_note": "日本語の「割線」は、円と 2 点で交わる直線（方べきの定理で使う。日本語版 Wikipedia「割線」）。英語の secant line は、円に限らず曲線上の 2 点を通る直線にも使い、微積分では平均変化率を表す直線（the slope of the secant line）として多く出てくる。学習指導要領解説（数学II・III）には「割線」が出てこない。",
   "domains": [
     "geometry",
     "calculus"
@@ -46,7 +46,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "数II・数III の「2 点を通る直線の傾き」「平均変化率」は、英語では secant line の傾きとして言う。用例コーパスでは secant line などの形が話し言葉・書き言葉ともよく出てくる。話し言葉は大半が Khan Academy、書き言葉は大半が OpenStax Calculus。",
+    "「2 点を通る直線の傾き」「平均変化率」は、英語では secant line の傾きとして言う。用例コーパスでは secant line などの形が話し言葉・書き言葉ともよく出てくる。話し言葉は大半が Khan Academy、書き言葉は大半が OpenStax Calculus。",
     "secant は三角関数 sec θ（正割）と同じ語。直線を指すときは secant line と line を付けると紛れない。",
     "弦（chord）は円周上の 2 点を結ぶ線分で、割線はそれを両側に延ばした直線。"
   ],
@@ -63,6 +63,10 @@
       "type": "wikipedia-langlink",
       "ja": "割線",
       "en": "Secant line"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
     }
   ],
   "confidence": "likely",
@@ -71,7 +75,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "secant line | a secant of | secant of the circle | secants of the circle": 134

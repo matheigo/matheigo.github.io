@@ -68,7 +68,7 @@
   "collocations": [],
   "pitfalls": [
     "話し言葉では inverse sine と arcsine が並ぶ（arcsine はすべて MIT OCW）。書き言葉は inverse sine がずっと多い（記号 arcsin は語として数えない）。",
-    "米国の Geometry では、直角三角形の辺の比から角を求めるときに電卓の sin⁻¹ キーを使い、inverse sine と呼ぶ。日本の数I では三角比の表から角を読む。"
+    "IM Geometry は、直角三角形の辺の比から角を求めるときに arcsine（arccos・arctan）を使う。日本の共通テスト（数学I）は三角比の表を添えて角を読ませる。"
   ],
   "related": [
     "arccosine",
@@ -88,6 +88,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和4年度 大学入学共通テスト 本試験 数学Ⅰ（問題）",
+      "url": "https://web.archive.org/web/20230601/https://www.dnc.ac.jp/albums/abm.php?d=67&f=abm00000843.pdf&n=R4%E5%95%8F%E9%A1%8C_%E5%95%8F%E9%A1%8C_%E6%95%B0%E5%AD%A6%E2%85%A0.pdf",
+      "note": "三角比の表を用いてもよい"
     }
   ],
   "confidence": "likely",
@@ -96,7 +102,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "arcsine": 12,
