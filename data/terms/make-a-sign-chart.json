@@ -13,8 +13,8 @@
     "uk": null
   },
   "pos": "phrase",
-  "mapping": "none",
-  "mapping_note": "英語に決まった言い方がない。日本の増減表は x・f′(x)・f(x) の行を 1 つの表にまとめるが、この表に当たる定型の表は AP の CED にも OpenStax Calculus にも出てこない。同じ判断は f′ の符号を区間ごとに書き出す sign chart で示す（sign-chart を参照）。英語で説明するなら make a sign chart for f′ と言える。",
+  "mapping": "near",
+  "mapping_note": "用例コーパスには決まった言い方が出てこない。日本の増減表は x・f′(x)・f(x) の行を 1 つの表にまとめるが、この形の表は AP の CED にも OpenStax Calculus にも出てこない。近い作業は f′ の符号を区間ごとに書き出す sign chart（AP の CED は Unit 9 の概要で答えを見つける道具として挙げる。sign-chart を参照）で、英語では make a sign chart for f′ と言う。",
   "domains": [
     "calculus"
   ],
@@ -54,6 +54,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 9 の概要（sign chart）"
     }
   ],
   "confidence": "likely",
@@ -62,7 +68,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "evidence": {
     "sources": [],
     "counted": "2026-09-25"

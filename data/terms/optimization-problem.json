@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の数II・数III は、文章題の最大・最小を「最大・最小の応用」として扱い、「最適化」とは呼ばない。米国では optimization problems と呼び、AP の CED は topic 5.10・5.11 で扱う。",
+  "mapping_note": "学習指導要領解説（数学II・III）は、文章題の最大・最小を「最適化」とは呼ばない（解説の「最適化」は IoT の話だけ）。AP の CED（topic 5.10・5.11）と OpenStax Calculus は optimization problems と呼ぶ。",
   "domains": [
     "calculus"
   ],
@@ -30,8 +30,8 @@
       "Calculus I"
     ]
   },
-  "definition_ja": "条件のもとで、ある量を最大または最小にする値を求める問題。微分を使うほか、数B では不等式の表す領域（線形計画法）などを使う。",
-  "definition_en": "A problem of finding the values that make a quantity as large or as small as possible under given conditions, solved with derivatives or, in 数B, with regions defined by inequalities (linear programming).",
+  "definition_ja": "条件のもとで、ある量を最大または最小にする値を求める問題。微分を使うほか、不等式の表す領域を使うもの（線形計画法。学習指導要領解説の数学II の例）もある。",
+  "definition_en": "A problem of finding the values that make a quantity as large or as small as possible under given conditions, solved with derivatives or with regions defined by inequalities (linear programming, an example in 数学II).",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -79,6 +79,12 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 5.10・5.11（optimization problems）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II 図形と方程式: 不等式の表す領域・線形計画法の問題"
     }
   ],
   "confidence": "likely",
@@ -87,7 +93,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "optimization problem": 15
