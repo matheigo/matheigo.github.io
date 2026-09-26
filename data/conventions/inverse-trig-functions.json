@@ -1,0 +1,54 @@
+{
+  "id": "inverse-trig-functions",
+  "title_ja": "逆三角関数",
+  "title_en": "Inverse trig functions",
+  "jp": "高等学校学習指導要領解説に逆三角関数（arcsin・arctan）は出てこない。",
+  "us": "OpenStax Algebra and Trigonometry は inverse sine・cosine・tangent を扱い、Calculus Volume 1 は tan⁻¹ と arctan の両方の書き方を挙げる。",
+  "advice_ja": "sin⁻¹ x は 1/sin x ではなく逆三角関数（arcsin x）。",
+  "category": "terminology",
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus I"
+    ]
+  },
+  "term_refs": [
+    "derivatives-of-inverse-trig-functions",
+    "arctangent",
+    "arcsine",
+    "inverse-trigonometric-function",
+    "integrals-giving-inverse-trig-functions",
+    "integration-by-completing-the-square"
+  ],
+  "related": [
+    "inverse-cosine-notation",
+    "inverse-sine-notation",
+    "inverse-tangent-notation"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "逆三角関数の記述なし"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "inverse sine, cosine, and tangent"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "tan⁻¹ または arctan"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25"
+}

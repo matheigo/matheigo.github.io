@@ -789,3 +789,11 @@
 - 2026-09-25 | 3 | 記号の規則 2 は参照の本文の件数だけで数える（lib.ts `settleSymbolReading`）。節の名前・IM の glossary の見出しは用語の名前で、記号の読みではない（arc-ab が IM の glossary の arc で 3 件に届いていた）。本文だけにしても、バッチ 1〜4 と D-3 で決まった記号の判定は変わらなかった | 規則 2（記号を定義・説明する本文の読み方）
 - 2026-09-25 | 3 | 参照が記号を数式のままで書くだけのもの（OpenStax Precalculus の r cis θ、CK-12 の弧の記号、arg）は読みを示さないので数えない。バッチ 5 で決まらなかったのは argument-arg-z・polar-form-cis・arc-ab の 3 件（draft） | 数式は読みではない（sequence-braces と同じ）
 - 2026-09-25 | 3 | バッチ 5（201〜220 行）: 新しい記号 20、likely 17 ／ draft 3。③ は 7 件で、IM で 4 件（congruent-sign・similar-sign・circle-o・parallelogram-abcd）が決まり、3 件（15%）が残って 1 割を超えた。記号はこのバッチで終わり（ledger の 220 行すべて）、次の記号のバッチはないので、指示 5「記号が終わったら慣習差を生成する」に進む。止める規則は記号のバッチの間の規則と読んだ（慣習差には ③ がない）。レポートに書く | 指示 4 と 5 の順。止める目的（③ の多い記号を続けて作らない）は記号が終わった時点で満たされている
+
+## Phase 3 慣習差の生成（ledger/conventions.csv の 121 行）— 2026-09-25
+
+- 2026-09-25 | 3 | 慣習差の各行は、日本側を学習指導要領（本文の〔用語・記号〕）・学習指導要領解説（中学校 数学編、高等学校 数学編 理数編）・日本語版 Wikipedia で、米国側を OpenStax・AP の CED・IM・CK-12（大学の内容は Levin・Nicholson）で確かめる。取得は scripts/ledger/fetch_jp_refs.py で一括（解説の PDF 2 つと日本語版 Wikipedia の記事、全文検索で見つけた記事。タイムアウト 30 秒・リトライ 3 回・done/total・取得済みは取り直さない。corpus/ref/jp/ は gitignore）。日本側の本文は NFKC で正規化して探す | あなたの指示 5
+- 2026-09-25 | 3 | 行の文（jp・us）は、確かめた範囲だけで書き直す。台帳の要約のうち確かめられない部分（「多用する」「講師次第」「教科書による」ほか）は落とし、確かめた資料を主語にする（「高等学校学習指導要領解説は…」「CK-12 Geometry は…」）。参照の件数は書いてよい（STYLE 追記欄）。日本側の「〜しない」「〜の名前を付けない」は、学習指導要領解説にその語が出てこないことを確かめ、「解説に出てこない」と書く | 確かめられない主張は書かない（STYLE 追記欄「米国では〜」の主張と同じ）
+- 2026-09-25 | 3 | どちらかの側が確かめられない行は生成せず、ledger/conventions-excluded.csv に理由と側を書いて外す（台帳の行は残す）。phase3-removed.csv は scripts/ledger/phase3_fixes.py が作り直すので別のファイルにした | あなたの指示 5
+- 2026-09-25 | 3 | 記号と慣習差の related は両側に入れる。慣習差の related（台帳の related 列）と ledger/symbols.csv の related 列の組を集め、どちらのファイルもあるものを両側に足す（スクリプトは生成のたびに回す） | あなたの指示 5
+- 2026-09-25 | 3 | 慣習差のバッチ 1（1〜50 行）: 37 行を生成（既存の 3 行は日本側の出典を足して書き直し）、13 行を外した（日本側を確かめられない 11、米国側 1、両側 1。一覧は conventions-excluded.csv）。台帳の文から直したもの: interval-notation-vs-inequalities（解説の数学III に閉区間 [a, b] が出てくるので「区間の記号を使わない」は書かない）、us-only-calculus-topics（「学習指導要領に微分方程式の語がない」は誤りで、理数数学II に dy/dx = ky 程度がある。数学III にない、と書いた）、lhopitals-rule-use（解説の数学III の課題学習の例に出てくる）、descriptive-statistics-coverage（共分散・四分位偏差を日本側で確かめられないので、平均絶対偏差だけにした）、antiderivative-vs-indefinite-integral（解説は「不定積分」だけを使い「原始関数」が出てこない、と書いた） | 確かめた範囲で書く

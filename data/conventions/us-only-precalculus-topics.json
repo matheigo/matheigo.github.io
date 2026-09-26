@@ -1,0 +1,49 @@
+{
+  "id": "us-only-precalculus-topics",
+  "title_ja": "米国の Algebra・Precalculus だけの内容",
+  "title_en": "Topics in US algebra and precalculus only",
+  "jp": "高等学校学習指導要領解説にクラメルの公式・デカルトの符号法則・連続複利・組立除法は出てこない。無理方程式は数学III で扱う。",
+  "us": "OpenStax Algebra and Trigonometry は Cramer’s Rule・Descartes’ Rule of Signs・連続複利（compounded continuously）・synthetic division を扱う。",
+  "advice_ja": "Algebra 2・Precalculus には日本の高校にない手法が入る。名前で検索すれば手順が分かる。",
+  "category": "classroom-culture",
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "term_refs": [
+    "augmented-matrix",
+    "cramers-rule",
+    "descartes-rule-of-signs",
+    "continuous-compounding",
+    "newtons-law-of-cooling",
+    "rotated-conics",
+    "synthetic-division",
+    "multiplicity",
+    "turning-points",
+    "radical-equation"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "記述なし（無理方程式は数学III）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Cramer’s Rule、Descartes’ Rule of Signs、synthetic division"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25"
+}

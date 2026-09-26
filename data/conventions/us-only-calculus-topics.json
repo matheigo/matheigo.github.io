@@ -1,0 +1,52 @@
+{
+  "id": "us-only-calculus-topics",
+  "title_ja": "AP Calculus だけの内容",
+  "title_en": "Topics in AP Calculus only",
+  "jp": "高等学校学習指導要領解説の数学III に微分方程式・外積・方向場は出てこない（微分方程式は理数数学II で dy/dx = ky 程度を扱う）。",
+  "us": "AP Calculus の CED は slope fields（方向場）・separation of variables・average value of a function を扱い、OpenStax Calculus Volume 3 は cross product（外積）を扱う。",
+  "advice_ja": "AP Calculus の Unit 7（微分方程式）と Unit 8 の average value は日本の数学III にない。早めに教科書で確かめる。",
+  "category": "classroom-culture",
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "AP Calculus BC",
+      "Calculus III"
+    ]
+  },
+  "term_refs": [
+    "cross-product",
+    "area-of-a-triangle-using-vectors",
+    "average-value-of-a-function",
+    "numerical-integration",
+    "surface-area-of-revolution",
+    "differential-equation",
+    "slope-field"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学III に記述なし／理数数学II: dy/dx = ky"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 7 slope fields、Unit 8 average value"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3",
+      "note": "cross product"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25"
+}

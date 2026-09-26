@@ -1,0 +1,42 @@
+{
+  "id": "repeated-combination-notation",
+  "title_ja": "重複組合せの記号",
+  "title_en": "Combinations with repetition",
+  "jp": "重複組合せの数を H の記号（nHr）で書く（日本語版 Wikipedia「重複組合せ」）。",
+  "us": "Levin は同じ数え上げを stars and bars（ほかに balls and bins）と呼び、二項係数で書く。H の記号は使わない。",
+  "advice_ja": "米国では ₙHᵣ を書かず、二項係数 (n+r−1 choose r) で書く。",
+  "category": "notation",
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "term_refs": [
+    "combination-with-repetition"
+  ],
+  "related": [
+    "repeated-combination-h-jp"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「重複組合せ」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%87%8D%E8%A4%87%E7%B5%84%E5%90%88%E3%81%9B",
+      "note": "H の記号"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.5 Counting Multisets: stars and bars"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "conditional-probability-notation",
+  "title_ja": "条件付き確率の書き方",
+  "title_en": "Conditional probability notation",
+  "jp": "条件付き確率を P_A(B)（A が起こったときに B が起こる確率）と書く（高等学校学習指導要領解説 数学A 条件付き確率）。",
+  "us": "P(B | A) と書き、B given A と読む。OpenStax Introductory Statistics（29 回）と AP Statistics の CED は P(A | B) の形で書く。条件が縦線の右に来るので、A と B の順が日本と逆になる。",
+  "advice_ja": "米国では P(B | A) と書く。添字の P_A(B) は読んでもらえないことがある。",
+  "category": "notation",
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "term_refs": [
+    "conditional-probability",
+    "general-multiplication-rule"
+  ],
+  "related": [
+    "conditional-probability-bar",
+    "conditional-probability-subscript-jp"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A 場合の数と確率: P_A(B)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "P(A | B)（29 件）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "topic 2.6"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25"
+}
