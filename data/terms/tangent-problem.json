@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "見出しの「接線問題」は学習指導要領解説に無い、本プロジェクトの訳語。",
+  "mapping_note": "見出しの「接線問題」は学習指導要領解説に無い（日本語版 Wikipedia「解析学」は「曲線の接線問題」と書く）。",
   "domains": [
     "calculus"
   ],
@@ -51,6 +51,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「解析学」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%A7%A3%E6%9E%90%E5%AD%A6",
+      "note": "ライプニッツが曲線の接線問題を解くのに dy/dx を考案した"
     }
   ],
   "confidence": "verified",

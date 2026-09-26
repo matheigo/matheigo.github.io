@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "学習指導要領解説には (xⁿ)′ = nxⁿ⁻¹ の公式の名前が出てこない。AP の CED（topic 2.5）と OpenStax Calculus は power rule と呼び、名前で指して使う。ja.alt の「べき乗則」は学習指導要領解説に無い、本プロジェクトの訳語。",
+  "mapping_note": "学習指導要領解説には (xⁿ)′ = nxⁿ⁻¹ の公式の名前が出てこない。AP の CED（topic 2.5）と OpenStax Calculus は power rule と呼び、名前で指して使う。ja.alt の「べき乗則」は学習指導要領解説に無い。日本語版 Wikipedia の「冪乗則」（べき乗則）は統計の power law の名前で、微分のこの公式とは別の概念。",
   "domains": [
     "calculus"
   ],
@@ -64,6 +64,12 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 2.5（power rule）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「冪乗則」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%86%AA%E4%B9%97%E5%89%87",
+      "note": "統計の power law（冪乗則）。微分の power rule とは別の概念"
     }
   ],
   "confidence": "verified",

@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "見出しの「定数倍の法則」は学習指導要領解説に無い、本プロジェクトの訳語。学習指導要領解説には {kf(x)}′ = kf′(x) の性質の名前が出てこない。",
+  "mapping_note": "見出しの「定数倍の法則」は学習指導要領解説に無い（日本語版 Wikipedia「積の微分法則」にはある）。学習指導要領解説には {kf(x)}′ = kf′(x) の性質の名前が出てこない。",
   "domains": [
     "calculus"
   ],
@@ -55,6 +55,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「積の微分法則」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%A9%8D%E3%81%AE%E5%BE%AE%E5%88%86%E6%B3%95%E5%89%87",
+      "note": "積の法則の特別な場合として「定数倍の法則」"
     }
   ],
   "confidence": "verified",

@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "見出しの「傾きの公式」は学習指導要領解説に無い、本プロジェクトの訳語。日本では「変化の割合 = y の増加量 ÷ x の増加量」（エントリ rate-of-change）として同じ計算をするが、公式の名前はない。",
+  "mapping_note": "見出しの「傾きの公式」は学習指導要領解説に無い（日本語版 Wikipedia「中点法」は 2 点を結ぶ直線の傾きの式を「傾きの公式」と呼ぶ）。日本では「変化の割合 = y の増加量 ÷ x の増加量」（エントリ rate-of-change）として同じ計算をするが、公式の名前はない。",
   "domains": [
     "functions"
   ],
@@ -63,6 +63,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「中点法」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E7%82%B9%E6%B3%95",
+      "note": "y(t) と y(t + h) を結ぶ傾きの式を「傾きの公式」と呼ぶ"
     }
   ],
   "confidence": "likely",

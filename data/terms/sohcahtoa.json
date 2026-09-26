@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "見出しの「SOHCAHTOA」は学習指導要領解説に無い、本プロジェクトの訳語。日本では sin・cos・tan の定義を筆記体の s・c・t の形で覚える方法があり、この語呂合わせは使わない。",
+  "mapping_note": "見出しの「SOHCAHTOA」は英語の語呂合わせをそのまま使う（学習指導要領解説に無い。日本語版 Wikipedia「三角関数の暗記方法」は英語圏の覚え方として SOH-CAH-TOA を挙げる）。日本では sin・cos・tan の定義を筆記体の s・c・t の形で覚える方法があり、この語呂合わせは使わない。",
   "domains": [
     "trigonometry"
   ],
@@ -60,6 +60,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「三角関数の暗記方法」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0%E3%81%AE%E6%9A%97%E8%A8%98%E6%96%B9%E6%B3%95",
+      "note": "英語圏の覚え方 SOH-CAH-TOA"
     }
   ],
   "confidence": "likely",

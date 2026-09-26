@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "見出しの「帰納段階」は学習指導要領解説に無い、本プロジェクトの訳語。日本の答案では「n = k のとき成り立つと仮定すると、n = k + 1 のとき …」と書き、段階に名前をつけない。",
+  "mapping_note": "見出しの「帰納段階」は学習指導要領解説に無い（日本語版 Wikipedia「再帰」は数学的帰納法の証明の段を「基底段階」「帰納段階」と呼ぶ）。日本の答案では「n = k のとき成り立つと仮定すると、n = k + 1 のとき …」と書き、段階に名前をつけない。",
   "domains": [
     "sequences"
   ],
@@ -63,6 +63,12 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Mathematical_induction",
       "note": "記事「Mathematical induction」の節 Description で inductive step（と induction step）を太字で定義（数学カテゴリから 3 段）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「再帰」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%86%8D%E5%B8%B0",
+      "note": "数学的帰納法による証明の「基底段階」「帰納段階」"
     }
   ],
   "confidence": "likely",
