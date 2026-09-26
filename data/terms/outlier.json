@@ -30,7 +30,7 @@
     ]
   },
   "definition_ja": "ほかのデータから大きく離れた値。Q1 − 1.5 × IQR より小さいか Q3 + 1.5 × IQR より大きい値を外れ値とする決め方が多い。",
-  "definition_en": "A data value far away from the rest of the data, often taken to be a value below Q1 − 1.5 × IQR or above Q3 + 1.5 × IQR.",
+  "definition_en": "A data value that lies well apart from the others; a common rule calls a value an outlier when it is below Q1 − 1.5 × IQR or above Q3 + 1.5 × IQR.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -76,7 +76,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "outlier": 144,

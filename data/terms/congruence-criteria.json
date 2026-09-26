@@ -16,7 +16,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の三角形の合同条件は 3 つ（3 組の辺、2 組の辺とその間の角、1 組の辺とその両端の角）で、「合同条件」とまとめて呼ぶ。米国の Geometry は SSS・SAS・ASA に AAS と直角三角形の HL を加え、それぞれを定理（theorem）や公準（postulate）として名前で呼ぶ（エントリ sss-congruence、sas-congruence、asa-congruence、aas-congruence、hl-congruence）。IM Geometry は 2.6 Side-Angle-Side Triangle Congruence、2.7 Angle-Side-Angle Triangle Congruence のように 1 つずつ扱い、見出しの congruence theorems は IM の言い方。",
+  "mapping_note": "中学校学習指導要領解説の三角形の合同条件は 3 つ（対応する 3 組の辺、2 組の辺とその間の角、1 組の辺とその両端の角）で、「合同条件」とまとめて呼ぶ。米国の Geometry は SSS・SAS・ASA に AAS と直角三角形の HL を加え、それぞれを定理（theorem）や公準（postulate）として名前で呼ぶ（エントリ sss-congruence、sas-congruence、asa-congruence、aas-congruence、hl-congruence）。IM Geometry は 2.6 Side-Angle-Side Triangle Congruence、2.7 Angle-Side-Angle Triangle Congruence のように 1 つずつ扱い、見出しの congruence theorems は IM の言い方。",
   "domains": [
     "geometry"
   ],
@@ -29,7 +29,7 @@
       "Integrated Math 1"
     ]
   },
-  "definition_ja": "2 つの三角形が合同であるといえるための条件。日本の中2 では「3 組の辺」「2 組の辺とその間の角」「1 組の辺とその両端の角」がそれぞれ等しい、の 3 つ。",
+  "definition_ja": "2 つの三角形が合同であるといえるための条件。中学校学習指導要領解説（第 2 学年）では「3 組の辺」「2 組の辺とその間の角」「1 組の辺とその両端の角」がそれぞれ等しい、の 3 つ。",
   "definition_en": "The sets of matching parts that are enough to prove two triangles congruent without checking every side and angle. Each one is named by the parts that match, such as SSS, SAS, and ASA.",
   "latex": null,
   "spoken_en": null,
@@ -47,7 +47,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "AAS（エントリ aas-congruence）は日本の合同条件に無く、日本の答案では残りの角も等しいことを示して「1 組の辺とその両端の角」に直す。HL（エントリ hl-congruence）は、日本では直角三角形の合同条件（エントリ congruence-criteria-for-right-triangles）として別に扱う。",
+    "AAS（エントリ aas-congruence）は学習指導要領解説の合同条件に無い。日本語の証明で言うなら、残りの角も等しいことを示して「1 組の辺とその両端の角」にする。HL（エントリ hl-congruence）は、解説では直角三角形の合同条件（エントリ congruence-criteria-for-right-triangles）として別に扱う。",
     "英語では同じ条件を theorem（定理）とも postulate（公準、エントリ postulate）とも呼ぶ。congruence theorems と congruence postulates は同じものを指す。",
     "2 辺とその間にない角（SSA）や 3 つの角（AAA）が等しくても、合同とはいえない。AAA で分かるのは相似（エントリ aa-similarity）まで。"
   ],
@@ -67,6 +67,12 @@
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
       "note": "Geometry 2.6 Side-Angle-Side Triangle Congruence・2.7 Angle-Side-Angle Triangle Congruence・2.10 Practicing Proofs"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 2 学年 B 図形: 三角形の合同条件（対応する３組の辺、２組の辺とその間の角、１組の辺とその両端の角）、直角三角形の合同条件"
     }
   ],
   "confidence": "likely",
@@ -75,7 +81,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "sources": [],
     "counted": "2026-09-25"

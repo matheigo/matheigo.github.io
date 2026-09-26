@@ -28,7 +28,7 @@
     ]
   },
   "definition_ja": "1 つの角が直角である三角形。直角の向かいの辺を斜辺という。",
-  "definition_en": "A triangle with one right angle. The side opposite the right angle is the hypotenuse, and the two sides that form the right angle are the legs.",
+  "definition_en": "A triangle with one right angle. Its longest side, across from the right angle, is the hypotenuse; the other two sides are the legs.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -47,7 +47,7 @@
   "pitfalls": [
     "直角をはさむ 2 辺は legs、直角の向かいの辺は hypotenuse（エントリ hypotenuse）と呼ぶ。日本語の「斜辺以外の辺」に当たる語が leg。",
     "right は「右」ではなく直角の意味（エントリ right-angle）。英国では right-angled triangle と言う。",
-    "日本の中2 では、直角三角形だけに使える合同条件（斜辺と 1 つの鋭角、斜辺と他の 1 辺）を別に学ぶ（エントリ congruence-criteria-for-right-triangles）。"
+    "中学校学習指導要領解説（第 2 学年）は、直角三角形だけに使える合同条件（斜辺と一つの鋭角、斜辺と他の 1 辺）を別に扱う（エントリ congruence-criteria-for-right-triangles）。"
   ],
   "related": [
     "hypotenuse",
@@ -65,6 +65,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 2 学年 B 図形: 直角三角形の合同条件（斜辺と一つの鋭角、斜辺と他の１辺）"
     }
   ],
   "confidence": "likely",
@@ -73,7 +79,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "right triangle": 351

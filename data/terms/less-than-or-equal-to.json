@@ -43,7 +43,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "記号は日本の教科書では ≦、米国の教科書（OpenStax）では ≤。",
+    "記号は日本では ≦（共通テスト・センター試験の問題文、学習指導要領解説）、米国の教科書（OpenStax）では ≤。",
     "文章題では「5 以下」を at most 5 や no more than 5 と言う。",
     "「以下」は境の数を含む。less than と訳すと境の数が抜けて「未満」になる（エントリ less-than）。"
   ],
@@ -58,6 +58,11 @@
     {
       "type": "textbook",
       "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "問題文の不等号 ≦"
     }
   ],
   "confidence": "likely",
@@ -66,7 +71,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "less than or equal to": 469
