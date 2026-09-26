@@ -53,9 +53,15 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Normal_probability_plot",
+      "note": "記事名 Normal probability plot（en.term と同じ。冒頭で太字で定義。数学カテゴリから 3 段。alt の normal quantile plot は記事に出てこない）"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": null,
@@ -63,11 +69,6 @@
   },
   "updated": "2026-09-26",
   "flags": [
-    {
-      "code": "draft-reason",
-      "note": "英語は統計の固有の用語（normal probability plot）だが、OpenStax（6 冊）・台帳の Wikipedia・AP Statistics の CED（2026 年版）のどれにもなく、用例コーパスにも出てこない。",
-      "raised": "2026-09-25"
-    },
     {
       "code": "corpus-human-settled",
       "note": "見出しは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 2 幾何・離散の単元の前の修正」の、残った ③ を人間が決めた行）。register は主張しない。",

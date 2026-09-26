@@ -9,10 +9,16 @@ words of en.term, not only a variant or an alt (midpoint-riemann-sum's examples
 said midpoint rule; has-a-local-maximum-at's said relative maximum). This lists
 the terms that break the rule, with the variant / alt the examples use instead.
 
-Matching: case-insensitive; a plural / -s / -ed / -ing on any word; a hyphen or
-a space between words; "…" in the headword is 0-3 words; a one-letter variable
-(a, x, n, k, c, u, f, θ ...) or a number in the headword stands for any one
-token (as x approaches a matches "as x approaches 2"). Prints to the terminal.
+Matching: case-insensitive; a plural (extremum / extrema too) / -s / -ed / -ing
+on any word (take / taking, testing / test); a hyphen or a space between words;
+"…" in the headword is 0-3 words; a one-letter variable (a, x, n, k, c, u, f,
+θ ...) or a number in the headword stands for any one token (as x approaches a
+matches "as x approaches 2"). Prints to the terminal.
+
+Not every remaining row is a fault: a headword that names a topic (derivatives of
+trigonometric functions), a headword with a generic object (move a term to the
+other side: the example moves "the 3x"), and an explanatory translation (説明の訳:
+its examples show how to say the idea, not the paraphrase) may stay as they are.
 """
 import glob
 import json
@@ -22,6 +28,21 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 VAR = re.compile(r"^(?:[a-z]|θ|\d+(?:\.\d+)?|[a-z]′?\([a-z]\))$")
+# Latin / Greek plurals the -s rule misses (extremum / extrema)
+IRREGULAR = {"extremum": "extrema", "maximum": "maxima", "minimum": "minima", "radius": "radii", "vertex": "vertices",
+             "matrix": "matrices", "axis": "axes", "hypothesis": "hypotheses", "analysis": "analyses", "formula": "formulae",
+             "locus": "loci", "focus": "foci", "criterion": "criteria", "index": "indices", "datum": "data", "modulus": "moduli"}
+
+
+def word(w):
+    """One headword word as a regex: plural, -s, -ed, -ing, an e dropped before -ing (take / taking), an irregular plural."""
+    if w in IRREGULAR:
+        return f"(?:{re.escape(w)}|{re.escape(IRREGULAR[w])})"
+    if w.endswith("ing") and len(w) > 5:  # testing -> test, tests, tested, testing
+        return re.escape(w[:-3]) + r"(?:s|es|ed|ing)?"
+    if w.endswith("e") and len(w) > 3:  # take -> takes, taking, taken
+        return re.escape(w[:-1]) + r"(?:e|es|ed|ing|en)?"
+    return re.escape(w).replace(r"\-", r"[\- ]?") + r"(?:s|es|ed|ing)?"
 
 
 def pattern(term):
@@ -38,7 +59,7 @@ def pattern(term):
             if VAR.match(w):
                 rx.append(r"\S+")  # a variable or a number stands for any token
             else:
-                rx.append(re.escape(w).replace(r"\-", r"[\- ]?") + r"(?:s|es|ed|ing)?")
+                rx.append(word(w))
         if rx:
             parts.append(r"(?<![a-z])" + r"[\s\-]+".join(rx) + r"(?![a-z])")
     return re.compile(r"(?:\s+\S+){0,3}\s+".join(parts), re.I) if parts else None

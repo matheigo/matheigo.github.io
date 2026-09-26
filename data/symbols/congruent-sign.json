@@ -24,7 +24,7 @@
     ]
   },
   "notes": [
-    "△ABC ≅ △DEF は triangle ABC is congruent to triangle DEF と読む。日本の ≡ も読みは同じ。"
+    "△ABC ≅ △DEF は triangle ABC is congruent to triangle DEF と読む。日本の記号 ≡ で書いた合同も、英語では同じく is congruent to と読む。"
   ],
   "sources": [
     {
@@ -39,7 +39,7 @@
       "type": "reference",
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
-      "note": "≅（414 件）"
+      "note": "≅（414 件）。5.25 Corresponding Parts of Congruent Figures・4.10 Congruence Statements・4.12 Congruent Triangles ほかで … is congruent to …（35 件。読みを裏づける参照）"
     },
     {
       "type": "reference",
@@ -48,8 +48,8 @@
       "note": "Geometry 1〜2 ほか。… is congruent to triangle …（69 件。読みを決めた参照）"
     }
   ],
-  "confidence": "likely",
-  "updated": "2026-09-25",
+  "confidence": "verified",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "is congruent to triangle *": 9
@@ -64,11 +64,11 @@
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 対象外）。読みは IM の呼び方 is congruent to triangle *（Geometry 2.2 Congruent Parts, Part 2・Geometry 2.3 Congruent Triangles, Part 1・Geometry 2.6 Side-Angle-Side Triangle Congruence・計 69 件）。register は主張しない。",
       "raised": "2026-09-25"
-    },
-    {
-      "code": "corpus-auto-only",
-      "note": "根拠が自動字幕のみ。自動字幕は数式を誤認識するので、OCW の人手書き起こしで裏が取れるまで verified にしない（PLAN 15）。",
-      "raised": "2026-09-25"
     }
-  ]
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-09-26",
+    "human": null
+  }
 }

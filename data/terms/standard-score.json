@@ -6,13 +6,13 @@
     "alt": []
   },
   "en": {
-    "term": "hensachi",
+    "term": "T-score",
     "alt": [],
     "uk": null
   },
   "pos": "noun",
-  "mapping": "none",
-  "mapping_note": "米国の学校で使う決まった言い方はない（OpenStax Introductory Statistics・AP Statistics の CED に、平均 50・標準偏差 10 への換算は出てこない）。日本語版 Wikipedia「偏差値」は英語名を T-score とするが、OpenStax Introductory Statistics の t-score は t 分布の値で、別のもの。本プロジェクトは英語の見出しをローマ字の hensachi にした。近い考え方は z-score と percentile（パーセンタイル）。",
+  "mapping": "near",
+  "mapping_note": "米国の学校では使わない（OpenStax Introductory Statistics・AP Statistics の CED に、平均 50・標準偏差 10 への換算は出てこない）。説明するなら a standardized score with mean 50 and standard deviation 10（standardized score は AP Statistics の CED topic 1.9 と OpenStax Introductory Statistics の言い方）。日本語版 Wikipedia「偏差値」は英語名を T-score とし、英語版 Wikipedia「Standard score」の節 T-score も、教育測定で平均 50・標準偏差 10 に直した標準得点を T-score と呼ぶ。近い考え方は z-score と percentile（パーセンタイル）。",
   "domains": [
     "statistics"
   ],
@@ -31,12 +31,12 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "Your hensachi is basically your z-score times 10, plus 50.",
+      "en": "Your T-score is basically your z-score times 10, plus 50.",
       "ja": "偏差値は、だいたい z スコアを 10 倍して 50 を足したもの。",
       "register": "spoken"
     },
     {
-      "en": "A student's z-score is 1.5. Find the corresponding hensachi, 50 + 10z.",
+      "en": "A student's z-score is 1.5. Find the corresponding T-score, 50 + 10z.",
       "ja": "ある生徒の z スコアは 1.5 である。対応する偏差値 50 + 10z を求めよ。",
       "register": "written"
     }
@@ -44,7 +44,7 @@
   "collocations": [],
   "pitfalls": [
     "英語の standard score は z スコアのことで、偏差値の訳には使えない。",
-    "日本語版 Wikipedia は平均 50・標準偏差 10 に換算した得点を T-score と呼ぶが、統計の授業の t-score（t 検定の統計量）とは別。用例コーパスの t-score はすべて t 統計量の意味だった。"
+    "t 統計量（t-statistic）とは別物。統計の授業の t-score は t 分布の値（OpenStax Introductory Statistics）で、用例コーパスの t-score もすべてその意味。"
   ],
   "related": [
     "z-score",
@@ -59,6 +59,23 @@
       "title": "日本語版 Wikipedia「偏差値」",
       "url": "https://ja.wikipedia.org/wiki/%E5%81%8F%E5%B7%AE%E5%80%A4",
       "note": "平均 50、標準偏差 10 に変換した値。英語名 T-score"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Standard_score#T-score",
+      "note": "記事「Standard score」の節 T-score（太字で定義。教育測定で平均 50・標準偏差 10 に直した標準得点。en.term T-score はこの節へのリダイレクト。数学カテゴリから 5 段で、記事名で見出しを決める規則の 4 段の外）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 1.9（standardized score）。平均 50・標準偏差 10 の換算は無い"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "standardized score（1 件）。t-score は t 分布の値"
     }
   ],
   "confidence": "likely",
@@ -74,13 +91,13 @@
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-25"
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 5 監査（セッション 2）」2: en.term を T-score、mapping near）。register は主張しない。",
+      "raised": "2026-09-26"
     },
     {
-      "code": "audit-human",
-      "note": "Phase 5 監査（2026-09-26）で判断がつかない: phase4-report G-2 の語（監査の順番ではバッチ 6 の外）。日本語版 Wikipedia「偏差値」は英語名を T-score とする（平均 50・標準偏差 10 の換算）。説明の訳の hensachi のままにするか、T-score（t 統計量とまぎれる）を見出しや variant にして mapping を exact ／ near にするか、人間が決める。人間レビューへ。",
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: ユーザーの決定（監査 2 の 2）で en.term を hensachi から T-score に、mapping を none から near にした。見直す点: mapping_note の書き方、T-score を見出しにしてよいか。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]

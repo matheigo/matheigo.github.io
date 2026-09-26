@@ -6,13 +6,13 @@
     "alt": []
   },
   "en": {
-    "term": "points of concurrency",
+    "term": "triangle centers",
     "alt": [],
     "uk": null
   },
   "pos": "noun",
-  "mapping": "none",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスにも参照（CED・OpenStax・IM・CK-12）にも points of concurrency は出てこない）。英語で外心・内心・重心・垂心・傍心の 5 つをまとめて言う名前は、資料に見当たらない。英語で五心を言うときは、5 つの名前（circumcenter, incenter, centroid, orthocenter, excenter）を並べる。",
+  "mapping": "near",
+  "mapping_note": "英語に 5 つをまとめる言い方はなく、centroid・circumcenter・incenter・orthocenter・excenter と個別に言う。まとめて言うなら triangle centers（三角形に決まる点の総称で、五心に限らない。英語版 Wikipedia の記事名 Triangle center）。米国の参照では CK-12 Geometry と IM Geometry が circumcenter・incenter・centroid・orthocenter を名前で扱い、excenter は出てこない（CK-12 Geometry: circumcenter 13 件・incenter 17 件・centroid 21 件・orthocenter 4 件・excenter 0 件）。日本語版 Wikipedia「五心」に英語版へのリンクは無く、記事が挙げる英語名 five centroids of triangle は英語版の記事名にも参照にも出てこない。",
   "domains": [
     "geometry"
   ],
@@ -30,19 +30,19 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "The circumcenter, incenter, centroid, and orthocenter are all points of concurrency: three lines meeting at one point.",
-      "ja": "外心・内心・重心・垂心は、どれも 3 本の直線が 1 点で交わる点。",
+      "en": "These triangle centers all come from three lines meeting at one point: medians give the centroid, perpendicular bisectors the circumcenter, angle bisectors the incenter, altitudes the orthocenter, and exterior angle bisectors an excenter.",
+      "ja": "五心はどれも 3 本の直線が 1 点で交わる点。中線なら重心、垂直二等分線なら外心、角の二等分線なら内心、垂線なら垂心、外角の二等分線なら傍心。",
       "register": "spoken"
     },
     {
-      "en": "Name the point of concurrency of the three altitudes of a triangle, and explain why it can lie outside the triangle.",
-      "ja": "三角形の 3 本の垂線が交わる点の名前を答え、それが三角形の外部にくることがある理由を説明せよ。",
+      "en": "For an equilateral triangle, show that the triangle centers centroid, circumcenter, incenter, and orthocenter coincide.",
+      "ja": "正三角形では五心のうち重心・外心・内心・垂心が一致することを示せ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "「five centers」と直訳しても決まった言い方にはならない。5 つの名前（circumcenter, incenter, centroid, orthocenter, excenter）を個別に言う。",
+    "「the five centers」と直訳しても決まった言い方にはならない。英語で五心を言うときは 5 つの名前（circumcenter, incenter, centroid, orthocenter, excenter）を並べるか、まとめて the triangle centers と言う。",
     "正三角形では外心・内心・重心・垂心が 1 点に重なる。"
   ],
   "related": [
@@ -55,6 +55,24 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Triangle_center",
+      "note": "記事名 Triangle center（en.term triangle centers の単数形。三角形に決まる点の総称で五心に限らない。数学カテゴリから 5 段で、記事名で見出しを決める規則の 4 段の外。ja 記事「五心」に英語版へのリンクは無い）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「五心」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%BA%94%E5%BF%83",
+      "note": "外心・内心・重心・垂心・傍心の総称。「三角形の五心」はこの記事へのリダイレクト。英語版へのリンクは無い"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "circumcenter 13 件・incenter 17 件・centroid 21 件・orthocenter 4 件・excenter 0 件（5 つをまとめた名前は無い）"
     }
   ],
   "confidence": "likely",
@@ -70,13 +88,13 @@
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-25"
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 5 監査（セッション 2）」2: en.term を triangle centers、mapping near）。register は主張しない。",
+      "raised": "2026-09-26"
     },
     {
-      "code": "audit-human",
-      "note": "Phase 5 監査（2026-09-26）で判断がつかない: phase4-report G-2 の語（監査の順番ではバッチ 6 の外）。英語の見出し points of concurrency は用例コーパスにも参照（CED・OpenStax・IM・CK-12）にも出てこず、米国の用語かを資料で確かめられない。説明の訳（英語の用語ではない）の印のまま points of concurrency を見出しにするか、5 つの名前を並べた説明を見出しにするか、人間が決める。人間レビューへ。",
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: ユーザーの決定（監査 2 の 2）で en.term を points of concurrency から triangle centers に、mapping を none から near にし、例文を差し替えた。見直す点: mapping_note と例文の書き方、triangle centers の使い方。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]

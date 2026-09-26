@@ -28,7 +28,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "Facts About the Chi-Square Distribution ほか本文 101 件。X ~ χ²_df の記法を the chi-square distribution と呼ぶ（読みを裏づける参照）"
     },
     {
       "type": "reference",
@@ -37,8 +38,8 @@
       "note": "topic 3.14・3.15。chi-square（読みを決めた参照）"
     }
   ],
-  "confidence": "likely",
-  "updated": "2026-09-25",
+  "confidence": "verified",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "chi-square | chi square": 9
@@ -53,11 +54,11 @@
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 対象外）。読みは AP Statistics の CED の呼び方 chi-square | chi square（topic 3.14・topic 3.15）。register は主張しない。",
       "raised": "2026-09-25"
-    },
-    {
-      "code": "corpus-auto-only",
-      "note": "根拠が自動字幕のみ。自動字幕は数式を誤認識するので、OCW の人手書き起こしで裏が取れるまで verified にしない（PLAN 15）。",
-      "raised": "2026-09-25"
     }
-  ]
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-09-26",
+    "human": null
+  }
 }
