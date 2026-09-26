@@ -2,13 +2,14 @@
 """Phase 5 audit: does an English Wikipedia article define a term in its body?
 
     python3 scripts/audit/enwiki.py "Mathematical induction" "base case" "induction hypothesis"
-    python3 scripts/audit/enwiki.py --depth "Triangle center" "Pivot element"     # category depth (wikicat.py rule, 4 levels)
+    python3 scripts/audit/enwiki.py --depth "Triangle center" "Pivot element"     # category depth, up to BODY_DEPTH (5) levels
 
-DECISIONS (Phase 5 監査 セッション 2, 3): an English Wikipedia article whose body
-defines a term - the term in bold ('''…''') or as a section heading - may be
-cited as a reference source, naming the article and the section. The article
-must sit under a math category within 4 levels (wikicat.py), like an article
-name used as a headword (SOURCES.md, 規則 2 の参照の順 4).
+DECISIONS (Phase 5 監査 セッション 2, 3; セッション 3 H-1): an English Wikipedia
+article whose body defines a term - the term in bold ('''…''') or as a section
+heading - may be cited as a reference source for a headword already settled,
+naming the article and the section. The article must sit under a math category
+within 5 levels (BODY_DEPTH). An article name that settles a headword (SOURCES.md,
+規則 2 の参照の順 4; wikicat.py) stays within 4 levels (HEAD_DEPTH).
 
 The wikitext is fetched with the MediaWiki API (timeout, retry limit, cache in
 corpus/ref/en-wiki/, gitignored with the rest of corpus/) and searched here.
@@ -28,6 +29,8 @@ import wikicat  # noqa: E402
 from wikien import api  # noqa: E402  (timeout 30 s, 3 retries, User-Agent)
 
 CACHE_DIR = os.path.join(ROOT, "corpus", "ref", "en-wiki")
+HEAD_DEPTH = 4  # an article name that settles a headword (wikicat.py, wikihead.py)
+BODY_DEPTH = 5  # a body definition cited for a headword already settled (Phase 5 監査 3 H-1)
 
 
 def fetch(title):
@@ -99,9 +102,12 @@ def main():
     if args and args[0] == "--depth":
         titles = args[1:]
         cache = wikicat.load_cache()
+        wikicat.MAX_DEPTH = BODY_DEPTH  # depth_to_root reads the module's limit
         depth = wikicat.depth_to_root("en", titles, cache)
         for t in titles:
-            print(f"{t}: depth {depth[t]} (math within {wikicat.MAX_DEPTH}: {'yes' if depth[t] is not None else 'no'})")
+            d = depth[t]
+            use = ("headword and body definition" if d <= HEAD_DEPTH else "body definition only") if d is not None else "neither"
+            print(f"{t}: depth {d} (math within {BODY_DEPTH}: {'yes' if d is not None else 'no'}; usable for: {use})")
         return
     title, terms = args[0], args[1:]
     a = fetch(title)

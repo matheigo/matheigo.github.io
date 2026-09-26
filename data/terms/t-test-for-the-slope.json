@@ -54,9 +54,15 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Student%27s_t-test#Slope_of_a_regression_line",
+      "note": "記事「Student's t-test」の節 Slope of a regression line（回帰直線の傾き β について帰無仮説 β = β₀ を t = (β̂ − β₀)/SE、自由度 n − 2 の t 分布で検定する。記事名 t-test と節の見出しで見出しの語になる。数学カテゴリから 4 段）"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": null,
@@ -64,11 +70,6 @@
   },
   "updated": "2026-09-26",
   "flags": [
-    {
-      "code": "draft-reason",
-      "note": "英語は回帰の推測の用語（t-test for the slope）だが、OpenStax（6 冊）・台帳の Wikipedia・AP Statistics の CED（2026 年版）のどれにもなく、用例コーパスでも 0 件。英語版 Wikipedia「Simple linear regression」は傾きの区間・検定を Student's t で書き、t-test for the slope の語は出てこない（2026-09-26、監査 2）。",
-      "raised": "2026-09-25"
-    },
     {
       "code": "corpus-human-settled",
       "note": "見出しは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 2 幾何・離散の単元の前の修正」の、残った ③ を人間が決めた行）。register は主張しない。",

@@ -14,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスでは alternating polynomial は出てこず、alternating expression も話し言葉にわずか（すべて 3Blue1Brown）で書き言葉には無く、OpenStax の 6 冊にも出てこない）。英語版 Wikipedia には記事「Alternating polynomial」がある（ja 記事「交代式」の langlink 先。冒頭で alternating polynomial を太字で定義する）。米国の高校課程（CED・OpenStax・IM・CK-12）には出てこない。英語で説明するときは swapping two variables changes the sign と性質を言う。",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（alternating polynomial ／ alternating expression は CED・OpenStax・IM・CK-12 とも 0 件。用例コーパスでは alternating polynomial は出てこず、alternating expression も話し言葉にわずか（すべて 3Blue1Brown）で書き言葉には無い）。見出しは英語版 Wikipedia の記事名「Alternating polynomial」（ja 記事「交代式」の langlink 先。冒頭で alternating polynomial を太字で定義する）。英語で説明するときは swapping two variables changes the sign と性質を言う。",
   "domains": [
     "algebra"
   ],
@@ -75,17 +75,17 @@
     "sources": [
       "yt:3blue1brown"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 2 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-25"
-    },
-    {
       "code": "audit-major-fix",
       "note": "Phase 5 監査（2026-09-26）で大きな直し: H-1 の英語版 Wikipedia の確かめで、mapping を none から near にして説明の訳の印を外した（記事「Alternating polynomial」が en.term を定義する）。見直す点: near でよいか。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
+    },
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 alternating polynomial（英語版「Alternating polynomial」、ja の langlink 先）。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

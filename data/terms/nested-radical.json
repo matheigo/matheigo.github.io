@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスで nested radical は話・書とも出てこず、OpenStax の 6 冊にも出てこない）。英語版 Wikipedia には記事「Nested radical」がある（冒頭で太字で定義。外す操作は節 Denesting）。授業で説明するときは a square root inside a square root と中身を言う。",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（nested radical は CED・OpenStax・IM・CK-12 とも 0 件で、用例コーパスでも話・書とも出てこない）。見出しは英語版 Wikipedia の記事名「Nested radical」（冒頭で太字で定義。外す操作は節 Denesting）。授業で説明するときは a square root inside a square root と中身を言う。",
   "domains": [
     "algebra"
   ],
@@ -65,9 +65,9 @@
   "confidence": "likely",
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-25"
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 nested radical（英語版「Nested radical」、en.term のリダイレクト先）。register は主張しない。",
+      "raised": "2026-09-26"
     }
   ],
   "reviewed": {
@@ -78,6 +78,6 @@
   "updated": "2026-09-26",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

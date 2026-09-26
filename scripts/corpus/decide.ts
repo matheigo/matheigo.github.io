@@ -28,7 +28,10 @@
  * An entry undecided in both registers (③) is settled further where it can be
  * (lib.ts settleUndecided, DECISIONS Phase 2 規則の修正):
  *   - mapping near / none and fewer than 10 hits in each register: English has
- *     no set way to say it (corpus-no-fixed-expression). Not for the human
+ *     no set way to say it (corpus-no-fixed-expression). Not for the human.
+ *     Not when a reference or the entry's English Wikipedia math article names a
+ *     candidate: then the article's name is the headword unless a reference
+ *     names it (Phase 5 監査 3 H-2)
  *   - otherwise the headword is what the CEDs (AP Calculus / AP Statistics),
  *     failing that OpenStax, IM or CK-12 (one tier), failing that Nicholson / Levin
  *     call it, failing that the English Wikipedia article's name
@@ -543,7 +546,7 @@ function main() {
     if (settled?.kind === "no-fixed-expression") {
       flags.push({
         code: "corpus-no-fixed-expression",
-        note: `${describeSettled(settled)}。mapping ${record.mapping as string} なので、決まった言い方が出てこないと判定した（英語版 Wikipedia は見ていない）。register は主張しない。人間レビューには回さない。`,
+        note: `${describeSettled(settled)}。mapping ${record.mapping as string} なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。`,
         raised: TODAY,
       } as { code: string });
     } else if (settled?.kind === "reference") {
@@ -600,7 +603,14 @@ function main() {
         raised: TODAY,
       } as { code: string });
     }
-    if (c.collection === "symbols" && c.autoOnly) {
+    // Auto captions alone - unless a reference's body reads the symbol that way 3 times or more
+    // (settleSymbolReading's bar): then the reading does not rest on the captions (the audit took
+    // corpus-auto-only off chi-square-symbol and congruent-sign on that ground; Phase 5 監査 2 の
+    // 決定 4, 監査 3).
+    const readInReferences =
+      c.collection === "symbols" &&
+      settleSymbolReading(entry.data.id, c.reference ?? emptyReference(), candidatesOf(c.collection, record)).kind === "reference";
+    if (c.collection === "symbols" && c.autoOnly && !readInReferences) {
       flags.push({
         code: "corpus-auto-only",
         note: "根拠が自動字幕のみ。自動字幕は数式を誤認識するので、OCW の人手書き起こしで裏が取れるまで verified にしない（PLAN 15）。",
@@ -757,7 +767,7 @@ function main() {
     "## ③ のうち規則で決着したもの",
     "",
     "話・書とも判断不能のうち、mapping が near ／ none で全候補の合計が話・書とも 10 件未満のものは「用例コーパスと参照には決まった言い方が出てこない」",
-    "（corpus-no-fixed-expression）。それ以外は見出しを CED（AP Calculus ／ AP Statistics）の呼び方、無ければ OpenStax・IM・CK-12 の呼び方（同じ段。本文・節の名前・レッスン・glossary の件数の多い候補。参照のどれかが候補を 3 件以上使う語は「決まった言い方がない」にしない）、",
+    "（corpus-no-fixed-expression）。それ以外は見出しを CED（AP Calculus ／ AP Statistics）の呼び方、無ければ OpenStax・IM・CK-12 の呼び方（同じ段。本文・節の名前・レッスン・glossary の件数の多い候補。参照のどれかが候補を 3 件以上使う語と、英語版 Wikipedia の数学記事の記事名が候補の語は「決まった言い方がない」にしない。記事名だけで名前が分かる near ／ none の語は記事名を見出しにする）、",
     "無ければ Nicholson ／ Levin の呼び方、無ければ英語版 Wikipedia の記事名で決める",
     "（corpus-reference-fallback）。どちらも register は主張せず、人間レビューに回さない。",
     "",

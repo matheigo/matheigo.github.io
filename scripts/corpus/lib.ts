@@ -2440,10 +2440,12 @@ export function highSchoolHits(ref: ReferenceHits, order: string[]): { ced: numb
  *                        with no Japanese counterpart (mapping none) whose
  *                        Japanese headword is this project's translation
  *                        (two-column proof: the English is the original),
- *                        a wording a CED itself uses (the Candidates Test), or
+ *                        a wording a CED itself uses (the Candidates Test),
  *                        a wording one reference uses REFERENCE_NAMED times
  *                        or more (CED, OpenStax, IM, CK-12, Nicholson, Levin;
- *                        linear pair in CK-12 Geometry)
+ *                        linear pair in CK-12 Geometry), or a wording that is
+ *                        the name of the entry's English Wikipedia math
+ *                        article (alternating polynomial; Phase 5 監査 3 H-2)
  *   reference            otherwise the headword is what the CEDs (AP Calculus
  *                        / AP Statistics) call it, failing that what OpenStax,
  *                        IM or CK-12 calls it (one tier: body, section title,
@@ -2502,9 +2504,23 @@ export function settleUndecided(
   // A US name with no Japanese counterpart (mapping none) whose Japanese headword this
   // project made up: the English name is where the entry comes from.
   const usName = entry.projectTranslation === true && mapping === "none";
-  const named = borrowed || usName || ced !== undefined || usedByReference;
-  if ((mapping === "near" || mapping === "none") && !named && raw.spoken < MIN_TOTAL && raw.written < MIN_TOTAL) {
+  // An English Wikipedia math article (within 4 levels, wikihead.py) named with one of the
+  // candidates: English has the name (DECISIONS, Phase 5 監査 3 H-2). An article on another
+  // concept (三角不等式 -> Triangle inequality) is not named with a candidate and does not count.
+  const wikiNamed = ref.wikipedia !== undefined && order.some((c) => sameWording(c, wikipediaHead(ref.wikipedia!.title)));
+  const namedByReferences = borrowed || usName || ced !== undefined || usedByReference;
+  const named = namedByReferences || wikiNamed;
+  const rare = (mapping === "near" || mapping === "none") && raw.spoken < MIN_TOTAL && raw.written < MIN_TOTAL;
+  if (rare && !named) {
     return { kind: "no-fixed-expression", ...raw };
+  }
+  // Named by its Wikipedia article alone: one or two hits in a reference fall short of naming it
+  // (the bar above), so they do not choose the headword over the article's name either (a
+  // collocation Nicholson uses once, "sum of the roots", is not the name of 解と係数の関係).
+  if (rare && !namedByReferences && ref.wikipedia) {
+    const w = ref.wikipedia;
+    const head = order.find((c) => sameWording(c, wikipediaHead(w.title)))!;
+    return { kind: "reference", by: "wikipedia", head, where: [w.title, w.via === "ja-langlink" ? "ja の langlink 先" : "en.term のリダイレクト先"] };
   }
   // Topic numbers when the wording is in a topic, else the unit openers / front / exam.
   const topicsOf = (by: Record<string, number>) => {

@@ -781,8 +781,34 @@ describe("settleUndecided", () => {
     });
     const withLevin = { ...wiki, levin: { [order[0]]: { "1.1 Statements": 1 } } };
     expect(settleUndecided({ mapping: "exact" }, { spoken: 0, written: 0 }, withLevin, order)).toMatchObject({ by: "levin" });
-    // not before "no fixed expression"
-    expect(settleUndecided({ mapping: "near", ja: "x", en: "y" }, { spoken: 0, written: 0 }, wiki, order).kind).toBe("no-fixed-expression");
+  });
+
+  it("counts a Wikipedia article named with a candidate as a known English name (Phase 5 監査 3 H-2)", () => {
+    const entry = { mapping: "near", ja: "交代式", en: "alternating polynomial" };
+    const named = ref({ wikipedia: { title: "Alternating polynomial", via: "ja-langlink" } });
+    expect(settleUndecided(entry, { spoken: 2, written: 0 }, named, ["alternating polynomial", "alternating expression"])).toEqual({
+      kind: "reference",
+      by: "wikipedia",
+      head: "alternating polynomial",
+      where: ["Alternating polynomial", "ja の langlink 先"],
+    });
+    // an article on another concept is not named with a candidate: still no fixed expression
+    const other = ref({ wikipedia: { title: "Triangle inequality", via: "ja-langlink" } });
+    expect(settleUndecided({ mapping: "near", ja: "三角不等式", en: "trigonometric inequality" }, { spoken: 0, written: 0 }, other, ["trigonometric inequality"]).kind).toBe(
+      "no-fixed-expression",
+    );
+  });
+
+  it("takes the article's name when only the article names a near / none entry, over a reference's one or two hits", () => {
+    const order2 = ["relationship between roots and coefficients", "Vieta's formulas", "sum of the roots"];
+    const hits = ref({ wikipedia: { title: "Vieta's formulas", via: "ja-langlink" }, nicholson: { "sum of the roots": { "11.2 The Jordan Canonical Form": 1 } } });
+    expect(settleUndecided({ mapping: "near", ja: "解と係数の関係", en: order2[0] }, { spoken: 4, written: 0 }, hits, order2)).toMatchObject({
+      kind: "reference",
+      by: "wikipedia",
+      head: "Vieta's formulas",
+    });
+    // an exact entry keeps the order of rule 2 (Nicholson before the article)
+    expect(settleUndecided({ mapping: "exact" }, { spoken: 4, written: 0 }, hits, order2)).toMatchObject({ by: "nicholson", head: "sum of the roots" });
   });
 
   it("stays undecided when neither reference names it", () => {

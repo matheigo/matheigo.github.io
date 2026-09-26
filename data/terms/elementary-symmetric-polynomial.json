@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（elementary symmetric polynomial は用例コーパスの話・書のどちらにも、OpenStax の 6 冊にも出てこない）。英語版 Wikipedia には記事「Elementary symmetric polynomial」がある（冒頭で太字で定義。2 変数では x + y と xy）。授業の英語では名前を出さず、the sum x + y and the product xy と中身を言えば足りる。",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（elementary symmetric polynomial は CED・OpenStax・IM・CK-12 とも 0 件で、用例コーパスの話・書のどちらにも出てこない）。見出しは英語版 Wikipedia の記事名「Elementary symmetric polynomial」（冒頭で太字で定義。2 変数では x + y と xy）。授業の英語では名前を出さず、the sum x + y and the product xy と中身を言えば足りる。",
   "domains": [
     "algebra"
   ],
@@ -43,7 +43,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "解と係数の関係とつながる: 2 次方程式の 2 つの解 α, β の基本対称式 α + β, αβ は係数から求まる。英語では relationship between roots and coefficients（大学では Vieta's formulas）。"
+    "解と係数の関係とつながる: 2 次方程式の 2 つの解 α, β の基本対称式 α + β, αβ は係数から求まる。英語の名前は Vieta's formulas（エントリ relationship-between-roots-and-coefficients）。"
   ],
   "related": [
     "symmetric-expression",
@@ -64,9 +64,9 @@
   "confidence": "likely",
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-25"
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 elementary symmetric polynomial（英語版「Elementary symmetric polynomial」、en.term のリダイレクト先）。register は主張しない。",
+      "raised": "2026-09-26"
     }
   ],
   "reviewed": {
@@ -77,6 +77,6 @@
   "updated": "2026-09-26",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

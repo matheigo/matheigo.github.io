@@ -14,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（symmetric polynomial・symmetric expression は用例コーパスに出てこず、OpenStax の 6 冊にもこの名前では出てこない）。英語版 Wikipedia には記事「Symmetric polynomial」がある（ja 記事「対称式」の langlink 先。冒頭で symmetric polynomial を太字で定義する）。米国の高校課程（CED・OpenStax・IM・CK-12）には出てこない。英語で説明するときは、名前の代わりに swapping x and y doesn't change it と性質を言う。",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（symmetric polynomial ／ symmetric expression は CED・OpenStax・IM・CK-12 とも 0 件で、用例コーパスにも出てこない）。見出しは英語版 Wikipedia の記事名「Symmetric polynomial」（ja 記事「対称式」の langlink 先。冒頭で symmetric polynomial を太字で定義する）。英語で説明するときは、名前の代わりに swapping x and y doesn't change it と性質を言う。",
   "domains": [
     "algebra"
   ],
@@ -70,13 +70,13 @@
   "updated": "2026-09-26",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-25"
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 symmetric polynomial（英語版「Symmetric polynomial」、ja の langlink 先）。register は主張しない。",
+      "raised": "2026-09-26"
     }
   ]
 }

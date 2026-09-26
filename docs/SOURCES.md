@@ -31,7 +31,9 @@ count.ts と probe.ts は `scripts/corpus/references.ts` で読む。
 （decide が「直すこと」に出す）。
 「決まった言い方が出てこない」の例外（英語の名前があると分かっているもの）に数えるのは、1 の CED の呼び方、
 参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）のどれか 1 つが候補の 1 つを 3 件以上使っている語（lib.ts `REFERENCE_NAMED`。IM の glossary の見出しの例外を一般にしたもの）、
-mapping none で ja が本プロジェクトの訳語の語（米国の名前が元）、ja と en が同じ語（LIATE）（DECISIONS「Phase 2 幾何・離散の単元 2」「単元 3 の前の修正」）。
+mapping none で ja が本プロジェクトの訳語の語（米国の名前が元）、ja と en が同じ語（LIATE）（DECISIONS「Phase 2 幾何・離散の単元 2」「単元 3 の前の修正」）、
+4 の英語版 Wikipedia の記事名が候補の 1 つである語（DECISIONS「Phase 5 監査（セッション 3）の前の決定」3）。記事名だけでこの例外に当たる語は、
+2・3 の参照の 1〜2 件（名前があるとするには足りない件数）より記事名を先にして、記事名を見出しにする（Nicholson が 1 回だけ使う連語 sum of the roots を 解と係数の関係 の見出しにしない）。
 
 ## 一覧
 
@@ -127,6 +129,6 @@ count.ts・decide.ts・probe.ts が terms・symbols の件数と重みから外�
   **CK-12 Algebra は K12 LibreTexts 版が不完全**: 1 章・2 章の 73 節と 3 章・7 章の 1 節ずつ（計 75 節）しか本文が無く、章のページに並ぶ残りの 37 ページはホームへ転送される（2026-09-25）。
   K12 LibreTexts の Mathematics の棚に CK-12 の中学の本は無い（Algebra・Analysis・Calculus・Geometry・Precalculus・Statistics・Trigonometry）。
   CK-12 の本文は写さない。使うのは件数と節の名前だけ（STYLE 原則 5 と同じ扱い）。
-- 英語版 Wikipedia は記事名（タイトル）だけを使う。`scripts/ledger/wiki_head.json`（コミットする。タイトルと段数だけ）。
+- 英語版 Wikipedia で見出しを決めるのは記事名（タイトル）だけ。`scripts/ledger/wiki_head.json`（コミットする。タイトルと段数だけ）。記事の本文の定義（太字・節の見出し）は、すでに決まった見出しの出典に使える（数学カテゴリから 5 段以内。`scripts/audit/enwiki.py`。本文は corpus/ref/en-wiki/ にキャッシュし、リポジトリには入れない）。
 - 本から数える範囲は本文だけ。前付け（目次・序文）と後付け（略解・索引）は数えない（lib.ts `bookSections`）。
 - 出典に挙げるときは `type: reference`、`title` に書名と版、`url`、`note` に topic 番号か節の番号と見出し。

@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスには power of a point は話・書とも出てこず、CED・OpenStax・Nicholson・Levin にも出てこない）。英語版 Wikipedia「Power of a point」（ja 記事「方べきの定理」の langlink 先）が冒頭で太字で定義する power of a point は、点 P と円に対して決まる量 PA·PB（中心との距離 d と半径 r で d² − r²）の名前で、定理として言うなら the power of a point theorem。2 本の弦の場合（intersecting chords theorem）と、割線と接線の場合（secant-tangent theorem）は、本辞典では別の見出しで扱う。",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（power of a point は CED・OpenStax・IM・CK-12 とも 0 件で、用例コーパスと Nicholson・Levin にも出てこない）。見出しは英語版 Wikipedia の記事名「Power of a point」（ja 記事「方べきの定理」の langlink 先）。記事が冒頭で太字で定義する power of a point は、点 P と円に対して決まる量 PA·PB（中心との距離 d と半径 r で d² − r²）の名前で、定理として言うなら the power of a point theorem。2 本の弦の場合（intersecting chords theorem）と、割線と接線の場合（secant-tangent theorem）は、本辞典では別の見出しで扱う。",
   "domains": [
     "geometry"
   ],
@@ -73,13 +73,13 @@
   "updated": "2026-09-26",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-25"
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 power of a point（英語版「Power of a point」、ja の langlink 先）。register は主張しない。",
+      "raised": "2026-09-26"
     }
   ]
 }

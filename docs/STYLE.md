@@ -14,9 +14,10 @@ PLAN.md §6 をそのまま作業用に移したもの。**生成時に毎バッ
    ③ 総件数 10 件未満 → 判断不能。話・書とも ③ のときは次の順に決める（register は主張しない）。
      ・mapping near ／ none で全候補が話・書とも 10 件未満 → 「用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない」（`corpus-no-fixed-expression`）。
        mapping_note にそう書く（「英語に決まった言い方がない」とは書かない。資料の外の英語は確かめていない。Phase 5 監査 2 の H-1）。
-       英語版 Wikipedia の数学記事（数学カテゴリから 4 段以内）がその語を記事名か本文の太字・節の見出しで定義しているなら、
+       英語版 Wikipedia の数学記事（数学カテゴリから 5 段以内）がその語を本文の太字・節の見出しで定義しているなら、
        mapping_note に「英語版 Wikipedia には記事「X」がある」と書き、記事を出典に入れる（`python3 scripts/audit/enwiki.py <記事名> <語>`）。英語の名前をそのまま見出しにした語（LIATE）、CED の呼び方になっている語、
        参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）のどれかが候補を 3 件以上使っている語、
+       英語版 Wikipedia の数学記事（4 段以内。`scripts/ledger/wiki_head.json`）の記事名が候補の 1 つである語（見出しはその記事名。参照の 1〜2 件より先。Phase 5 監査 3 の H-2）、
        mapping none で ja が本プロジェクトの訳語の語（two-column proof など米国の名前が元の語）は除く。
      ・それ以外 → 見出しは CED（AP Calculus ／ AP Statistics）→ OpenStax・IM・CK-12（同じ段）→ Nicholson ／ Levin → 英語版 Wikipedia の記事名の順に最初に見つかった呼び方（`corpus-reference-fallback`。docs/SOURCES.md）。
        Nicholson ／ Levin ／ Wikipedia で決まった語は mapping_note に「米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない」と件数を書く。
@@ -144,3 +145,4 @@ Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を�
 - **確かめられない言い方は validate が警告する**（Phase 5 監査 2 の H-5。scripts/lib/wording.ts）: 通じる／通じない、一番よく使う・最もよく使う、減点される／されない、資料の名前のない「ことが多い」。mapping_note・pitfalls・variants の note・定義（terms）、notes（symbols・phrases）、jp・us・advice_ja（conventions）が対象。例文・フレーズの文は対象外。
 - **例文の少なくとも 1 つは見出し（en.term）の語を使う**（Phase 5 監査 2 の 5）。variant や alt の語だけで例文を作らない（midpoint Riemann sum の例文が midpoint rule だけ、では見出しの使い方が分からない）。`python3 scripts/audit/examples_headword.py` が一覧にする。見出しが単元の名前のような句（derivatives of trigonometric functions）で例文に入らないものは、この一覧に残ってよい。
 - **CED の出典の note は CED の本文と合わせる**（Phase 5 監査 2 の H-3。scripts/lib/ced-notes.ts）: 「Topic n.m（語）」の語は、その topic の本文にある言い方で書く（CED の題は Integrating Functions Using Long Division and Completing the Square）。「Unit N の概要（語）」は単元の概要のページ、「Unit N（語）」は単元全体。validate が CED のテキスト（corpus/ref/）があるときに警告する。
+- **英語版 Wikipedia の本文の定義は、すでに決まった見出しの出典に使える**（Phase 5 監査 2 の決定 3、監査 3 の H-1）: 記事の本文がその語を太字か節の見出しで定義していれば、type: reference の出典にし、note に記事・節・段数を書く（`python3 scripts/audit/enwiki.py <記事名> <語>`、段数は `--depth`）。記事は数学カテゴリから **5 段以内**。見出しを記事名で決める規則 2 の最後の段（SOURCES）は **4 段のまま**。本文は写さない
