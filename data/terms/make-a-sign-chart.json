@@ -65,7 +65,7 @@
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-24",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -78,6 +78,11 @@
       "code": "corpus-no-fixed-expression",
       "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
       "raised": "2026-09-25"
+    },
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: mapping を none から near にした（sign chart は CED の呼び方で make a sign chart は英語として通じるので、説明の訳の印を外す。phase4-report G-2）。見直す点: near でよいか、mapping_note の書き方。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
     }
   ]
 }
