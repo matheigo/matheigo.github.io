@@ -1,0 +1,102 @@
+{
+  "id": "hyperbola",
+  "ja": {
+    "term": "双曲線",
+    "reading": "そうきょくせん",
+    "alt": []
+  },
+  "en": {
+    "term": "hyperbola",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数C"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Precalculus"
+    ]
+  },
+  "definition_ja": "反比例 y = a/x のグラフのように、2 つに分かれた曲線が組になった形の曲線。数学 C では、2 つの定点（焦点）からの距離の差が一定である点の集まりとして定める。",
+  "definition_en": "A curve made of two separate branches, like the graph of y = a/x. In Precalculus, it is the set of all points for which the difference of the distances to two fixed points (the foci) is constant.",
+  "latex": "\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1",
+  "spoken_en": "x squared over a squared minus y squared over b squared equals one",
+  "examples": [
+    {
+      "en": "The graph of y = 6/x is a hyperbola, so it comes in two separate pieces: one in Quadrant I and one in Quadrant III.",
+      "ja": "y = 6/x のグラフは双曲線だから、第 1 象限と第 3 象限の 2 つの部分に分かれている。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the vertices and foci of the hyperbola x²/9 − y²/16 = 1.",
+      "ja": "双曲線 x²/9 − y²/16 = 1 の頂点と焦点を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "中 1 の反比例 y = a/x のグラフも、数 C の二次曲線 x²/a² − y²/b² = 1 も、同じ hyperbola。複数形は hyperbolas。",
+    "形容詞 hyperbolic は「双曲線の」の意味。hyperbolic functions（双曲線関数、エントリ hyperbolic-functions）は hyperbola とは別の語。",
+    "読み方は hy-PER-bo-la（第 2 音節を強く読む）。綴りの似た hyperbole（誇張法）は別の語。"
+  ],
+  "related": [
+    "inverse-proportion",
+    "conic-section",
+    "asymptote",
+    "focus",
+    "hyperbolic-functions"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "双曲線",
+      "en": "Hyperbola"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "hyperbola": 68
+    },
+    "written": {
+      "hyperbola": 390
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-25"
+  }
+}

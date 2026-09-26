@@ -1,0 +1,105 @@
+{
+  "id": "constant-of-proportionality",
+  "ja": {
+    "term": "比例定数",
+    "reading": "ひれいていすう",
+    "alt": []
+  },
+  "en": {
+    "term": "constant of variation",
+    "alt": [],
+    "variants": [
+      {
+        "term": "constant of proportionality",
+        "register": "spoken",
+        "note": "話し言葉ではずっと多いが、ほとんどが Khan Academy の中学の講義。IM は Grade 7・Grade 8 の glossary の見出しにしている。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "比例 y = ax や反比例 y = a/x の式にある定数 a。比例では y ÷ x、反比例では x × y を計算すると求められる。",
+  "definition_en": "The constant a in a direct variation y = ax or an inverse variation y = a/x. It equals y divided by x in a direct variation and x times y in an inverse variation.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Divide each y by its x: you get 5 every time, so the constant of proportionality is 5.",
+      "ja": "それぞれの y をその x でわってみて。毎回 5 になるから、比例定数は 5 だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "y varies directly with x, and y = 12 when x = 3. Find the constant of variation.",
+      "ja": "y は x に比例し、x = 3 のとき y = 12 である。比例定数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "見出しは教科書（OpenStax Elementary Algebra・Algebra and Trigonometry）の constant of variation にした。7 年生の教材（IM Grade 7・Grade 8）は constant of proportionality と呼び、授業でもこちらをよく使う。",
+    "反比例 y = a/x の a も比例定数と呼ぶ（エントリ inverse-proportion）。",
+    "proportionality は 6 音節の長い語で、強勢は -al- に置く。"
+  ],
+  "related": [
+    "direct-proportion",
+    "inverse-proportion",
+    "ratio",
+    "value-of-a-ratio",
+    "constant"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7)",
+      "url": "https://im.kendallhunt.com/MS/students/2/index.html",
+      "note": "Grade 7・Grade 8 glossary: constant of proportionality"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "constant of proportionality": 73,
+      "constant of variation": 9
+    },
+    "written": {
+      "constant of proportionality": 4,
+      "constant of variation": 31
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

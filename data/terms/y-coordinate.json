@@ -1,0 +1,96 @@
+{
+  "id": "y-coordinate",
+  "ja": {
+    "term": "y 座標",
+    "reading": "わいざひょう",
+    "alt": []
+  },
+  "en": {
+    "term": "y-coordinate",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "点の座標 (x, y) の 2 つ目の数。点が原点から上（正）または下（負）にどれだけの位置にあるかを表す。",
+  "definition_en": "The second number in an ordered pair (x, y). It tells how far the point is above (positive) or below (negative) the origin.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The y-coordinate is negative 2, so from there you go down 2.",
+      "ja": "y 座標が −2 だから、そこから下に 2 進むよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "The point (4, k) lies on the line y = 3x − 5. Find its y-coordinate k.",
+      "ja": "点 (4, k) は直線 y = 3x − 5 上にある。この点の y 座標 k を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "関数では、x = a のときの y の値が、グラフ上の点の y 座標になる（エントリ value-of-the-function）。",
+    "x 軸上の点は y 座標が 0。x 軸との交点を求めるときは y = 0 とおく（エントリ x-intercept）。"
+  ],
+  "related": [
+    "coordinates",
+    "x-coordinate",
+    "y-axis",
+    "coordinate-plane",
+    "value-of-the-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "y-coordinate": 106
+    },
+    "written": {
+      "y-coordinate": 104
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

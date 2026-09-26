@@ -1,0 +1,113 @@
+{
+  "id": "right-hand-side",
+  "ja": {
+    "term": "右辺",
+    "reading": "うへん",
+    "alt": []
+  },
+  "en": {
+    "term": "right-hand side",
+    "alt": [],
+    "variants": [
+      {
+        "term": "right side",
+        "register": "written",
+        "note": "書き言葉では right-hand side と並んで使い、こちらが多い（OpenStax の中学・Algebra の教科書）。話し言葉では right-hand side のほうがずっと多い。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "等式や不等式で、等号や不等号の右側にある式。",
+  "definition_en": "The expression to the right of the equal sign or inequality sign in an equation or inequality.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Now everything's on the left, so the right-hand side is just zero.",
+      "ja": "これで全部左に来たから、右辺は 0 だけだね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Rewrite 5x + 2 = 3x + 10 so that the right-hand side is a constant, and then solve for x.",
+      "ja": "5x + 2 = 3x + 10 を右辺が定数だけになるように変形し、x の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "略して RHS と書くことがある（左辺は LHS）。",
+    "右辺・左辺の「辺」も、三角形の辺も、英語では同じ side。どちらの意味かは文脈で区別する。"
+  ],
+  "related": [
+    "left-hand-side",
+    "both-sides",
+    "equation",
+    "equal-sign",
+    "inequality"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "right-hand side": 1086,
+      "right side": 247
+    },
+    "written": {
+      "right-hand side": 83,
+      "right side": 143
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

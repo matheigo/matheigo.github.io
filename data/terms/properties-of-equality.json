@@ -1,0 +1,86 @@
+{
+  "id": "properties-of-equality",
+  "ja": {
+    "term": "等式の性質",
+    "reading": "とうしきのせいしつ",
+    "alt": []
+  },
+  "en": {
+    "term": "properties of equality",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "等式の両辺に同じ数を足しても、両辺から同じ数を引いても、両辺に同じ数を掛けても、両辺を 0 でない同じ数で割っても、等式は成り立つという性質。方程式を解くときの変形の根拠になる。",
+  "definition_en": "The rules that an equation stays true if you add the same number to both sides, subtract the same number from both sides, multiply both sides by the same number, or divide both sides by the same nonzero number. They justify each step when you solve an equation.",
+  "latex": "A = B \\Rightarrow A + C = B + C,\\; A - C = B - C,\\; AC = BC,\\; \\frac{A}{C} = \\frac{B}{C} \\ (C \\neq 0)",
+  "spoken_en": "if A equals B, then A plus C equals B plus C, A minus C equals B minus C, A C equals B C, and A over C equals B over C, where C is not zero",
+  "examples": [
+    {
+      "en": "All four properties of equality boil down to one idea: whatever you do to one side, you do to the other side.",
+      "ja": "4 つの等式の性質は、結局 1 つの考えにまとまる。片方の辺にしたことは、もう片方の辺にもする。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve 5x − 7 = 18, and state which of the properties of equality justifies each step.",
+      "ja": "方程式 5x − 7 = 18 を解け。また、それぞれの変形にどの等式の性質を使ったかを答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語では 1 つずつ名前がある: addition property of equality（両辺に足す）、subtraction property of equality（両辺から引く）、multiplication property of equality（両辺に掛ける）、division property of equality（両辺を 0 でない数で割る）。",
+    "解く手順は add 7 to both sides ／ divide both sides by 5 のように、両辺への操作で言う（エントリ both-sides）。",
+    "「A = B ならば B = A」（両辺を入れかえても成り立つ）は、英語では symmetric property と呼ぶ（エントリ symmetric-property）。"
+  ],
+  "related": [
+    "both-sides",
+    "equation",
+    "move-term-to-other-side",
+    "linear-equation",
+    "symmetric-property"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "properties of equality": 239
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  }
+}

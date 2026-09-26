@@ -1,0 +1,121 @@
+{
+  "id": "write-an-equation",
+  "ja": {
+    "term": "式で表す",
+    "reading": "しきであらわす",
+    "alt": [
+      "文字を使って表す",
+      "式を立てる"
+    ]
+  },
+  "en": {
+    "term": "write an equation",
+    "alt": [
+      "set up an equation"
+    ],
+    "variants": [
+      {
+        "term": "write an expression",
+        "register": "spoken",
+        "note": "等号を含まない式を書くときの言い方。話し言葉では write an equation に次いで多い（ほとんどが Khan Academy）。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions",
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "言葉で述べられた数量や数量の関係を、文字と数を使った式に書き表す。等号で結べば等式（方程式）、等号を含まなければ式になる。",
+  "definition_en": "To translate a quantity or a relationship given in words into math, using variables and numbers. The result is an equation if it has an equal sign and an expression if it does not.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's write an equation for this one: if the number is x, then 2x plus 7 equals 25.",
+      "ja": "これを式で表してみよう。ある数を x とすると、2x + 7 = 25 だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write an equation for the following and solve it: when 8 is added to a number, the result is three times the number.",
+      "ja": "ある数に 8 を加えると、もとの数の 3 倍になる。このことを方程式で表し、ある数を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "Write an expression for the total cost, in dollars, of x pens at 2 dollars each and one notebook at 5 dollars.",
+      "ja": "1 本 2 ドルのペン x 本と、5 ドルのノート 1 冊の代金の合計（ドル）を表す式を書け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "等号を含むなら equation、含まないなら expression（エントリ expression）。「代金を表す式を書け」は write an expression、「方程式で表せ」は write an equation。",
+    "文章題で方程式をつくる「式を立てる」は write an equation ／ set up an equation。",
+    "グラフや条件から直線・円などの式を決める「式を求める」は別のエントリ（find-the-equation）。"
+  ],
+  "related": [
+    "equation",
+    "expression",
+    "word-problem",
+    "represent",
+    "find-the-equation"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "write an equation": 27,
+      "write an expression": 12,
+      "set up an equation": 9
+    },
+    "written": {
+      "write an equation": 75,
+      "set up an equation": 1,
+      "write an expression": 21
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

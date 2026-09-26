@@ -1,0 +1,114 @@
+{
+  "id": "times",
+  "ja": {
+    "term": "〜倍",
+    "reading": "ばい",
+    "alt": []
+  },
+  "en": {
+    "term": "times",
+    "alt": [],
+    "variants": [
+      {
+        "term": "twice as",
+        "register": "both",
+        "note": "2 倍を言う形。話・書とも three times as many などの times より多い。"
+      },
+      {
+        "term": "times",
+        "register": "both",
+        "note": "three times as many ／ as long ／ larger などの形。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "「〜倍」は、× の読み（3 times 4）と同じ times を数の後に置いて言う。「A は B の 3 倍」は A is three times B で、数や量を比べるときは three times as many as B ／ three times as long as B の形になる。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "ある量が、もとにする量のいくつ分に当たるかを表す言い方。b が a の k 倍のとき、b = ka となる。",
+  "definition_en": "Used after a number to compare two quantities by multiplication: if b is k times a, then b = ka.",
+  "latex": "b = ka",
+  "spoken_en": "b equals k times a",
+  "examples": [
+    {
+      "en": "If Mia has 4 stickers and Jake has three times as many, Jake has 12, and twice as many would be 8.",
+      "ja": "ミアのシールが 4 枚で、ジェイクがその 3 倍持っているなら、ジェイクは 12 枚。2 倍なら 8 枚だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the width of a rectangle whose length is three times its width and whose perimeter is 48 cm.",
+      "ja": "横の長さが縦の長さの 3 倍で、周の長さが 48 cm の長方形がある。縦の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「3 倍する」は動詞で multiply by 3 ／ triple と言う。",
+    "2 倍は two times のほか twice（twice as long as）とも言う。半分（0.5 倍）は half、1.5 倍は 1.5 times。",
+    "「B の 3 倍」は three times B、three times as many as B の順で、「B の」に当たる語が times の後ろに来る。"
+  ],
+  "related": [
+    "multiply",
+    "multiplication",
+    "ratio",
+    "percent",
+    "fraction"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "twice as": 80,
+      "times as many | times as much | times as large | times as long | times as big | times larger | times bigger | times greater": 51
+    },
+    "written": {
+      "twice as": 42,
+      "times as many | times as much | times as large | times as long | times as big | times larger | times bigger | times greater": 35
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

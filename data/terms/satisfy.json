@@ -1,0 +1,108 @@
+{
+  "id": "satisfy",
+  "ja": {
+    "term": "満たす",
+    "reading": "みたす",
+    "alt": [
+      "方程式を満たす"
+    ]
+  },
+  "en": {
+    "term": "satisfy",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中2"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Integrated Math 1",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "ある値を方程式や不等式の文字に代入したとき、その式が成り立つこと。値が条件に当てはまることにも使う。",
+  "definition_en": "A value satisfies an equation or inequality if substituting it makes the statement true. It is also used for a number that meets a given condition.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Both sides come out to 5, so x = 2 does satisfy the equation.",
+      "ja": "両辺とも 5 になるから、x = 2 はこの方程式を満たしているね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether (x, y) = (3, 1) satisfies both equations 2x + y = 7 and x − y = 2.",
+      "ja": "(x, y) = (3, 1) が 2 つの方程式 2x + y = 7、x − y = 2 をともに満たすかどうかを調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "satisfy のふつうの意味は「満足させる」。数学では主語が値、目的語が方程式・不等式・条件になる（x = 2 satisfies the equation.、satisfy the condition）。",
+    "「値が方程式を満たす」（satisfy）と「方程式がその値で成り立つ」（hold、エントリ hold）は主語が逆になる。",
+    "連立方程式の解は、両方の式を同時に満たす（satisfies both equations）値の組。片方の式だけを満たす組は解ではない。"
+  ],
+  "related": [
+    "hold",
+    "solution",
+    "check",
+    "system-of-linear-equations",
+    "condition"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "satisfy": 631
+    },
+    "written": {
+      "satisfy": 396
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

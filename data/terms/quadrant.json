@@ -1,0 +1,104 @@
+{
+  "id": "quadrant",
+  "ja": {
+    "term": "象限",
+    "reading": "しょうげん",
+    "alt": []
+  },
+  "en": {
+    "term": "quadrant",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "座標平面を x 軸と y 軸で 4 つに分けた部分のそれぞれ。x 軸・y 軸の上の点は、どの象限にも入らない。",
+  "definition_en": "One of the four regions that the x-axis and the y-axis divide the coordinate plane into. Points on the axes are not in any quadrant.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If x is negative and y is negative, the point is down here in Quadrant III.",
+      "ja": "x が負で y も負なら、点は左下の第 3 象限にある。",
+      "register": "spoken"
+    },
+    {
+      "en": "In which quadrant does the point (5, −2) lie?",
+      "ja": "点 (5, −2) は第何象限にあるか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書は第 1 象限〜第 4 象限と書くが、米国の教科書（OpenStax）はローマ数字で Quadrant I〜IV と書く（Quadrant III は quadrant three と読む）。授業では the first quadrant のように序数で言うことも、quadrant one と数で言うこともある（Khan Academy は序数、YouTube の解説は数が多い）。番号の付け方は同じで、第 1 象限から反時計回り。",
+    "x 軸・y 軸の上の点（(4, 0)、(0, −3)、原点など）はどの象限にも入らない。",
+    "quadrantal angle（エントリ quadrantal-angle）は「座標軸上の角」で、象限の中にある角のことではない。"
+  ],
+  "related": [
+    "coordinate-plane",
+    "coordinate-axes",
+    "origin",
+    "x-coordinate",
+    "quadrantal-angle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "象限",
+      "en": "Orthant"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "quadrant": 475
+    },
+    "written": {
+      "quadrant": 306
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

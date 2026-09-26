@@ -1,0 +1,101 @@
+{
+  "id": "cross-multiply",
+  "ja": {
+    "term": "内項と外項の積は等しい",
+    "reading": "ないこうとがいこうのせきはひとしい",
+    "alt": [
+      "内項の積",
+      "外項の積"
+    ]
+  },
+  "en": {
+    "term": "cross-multiply",
+    "alt": [
+      "cross multiplication",
+      "product of the means",
+      "product of the extremes"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "日本語は比例式の性質として「内項の積と外項の積は等しい」と名前で言う。英語の授業では、比例式を a/b = c/d の分数の形にして cross-multiply する（ad = bc）と、手順を動詞で言う。内項・外項に当たる means・extremes という名前もあり、product of the means、product of the extremes と言う。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "比例式 a : b = c : d で、内側の 2 つの項（内項）b, c の積と外側の 2 つの項（外項）a, d の積が等しい（ad = bc）という性質。比例式を解くときに使う。",
+  "definition_en": "In a proportion a/b = c/d, multiplying across the diagonals gives equal products: ad = bc. To cross-multiply is to use this step to rewrite a proportion as an equation with no fractions.",
+  "latex": "\\frac{a}{b} = \\frac{c}{d} \\Rightarrow ad = bc",
+  "spoken_en": "a over b equals c over d implies a d equals b c",
+  "examples": [
+    {
+      "en": "3/4 = x/12 is a proportion, so just cross-multiply: 3 times 12 is 36, and that has to equal 4x.",
+      "ja": "3/4 = x/12 は比例式だから、斜めに掛け合わせよう。3 × 12 = 36 が 4x と等しくなるね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Cross-multiply to solve the proportion 5/x = 15/6.",
+      "ja": "分母を払って、比例式 5/x = 15/6 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "因数分解の「たすき掛け」を直訳して cross multiplication と言うと、英語では比例式のこの操作の意味になる。たすき掛けに当たる英語は ac method ／ grouping ／ box method。",
+    "ベクトルの外積は cross product（エントリ cross-product）で、「外項の積」（product of the extremes）とは別の語。",
+    "cross-multiply できるのは、a/b = c/d のように両辺がそれぞれ 1 つの分数のとき。a/b + 1 = c/d のように他の項があるときは、そのままでは使えない。"
+  ],
+  "related": [
+    "proportion",
+    "ratio",
+    "value-of-a-ratio",
+    "denominator",
+    "solve"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "cross-multiply | cross-multiplying | cross-multiplied | cross-multiplies | cross-multiplication": 49
+    },
+    "written": {
+      "cross-multiply | cross-multiplying | cross-multiplied | cross-multiplies | cross-multiplication": 6
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "id": "check",
+  "ja": {
+    "term": "確かめる",
+    "reading": "たしかめる",
+    "alt": [
+      "解の確かめ"
+    ]
+  },
+  "en": {
+    "term": "check",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中2"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "求めた答えが正しいかどうかを調べること。方程式では、解をもとの式に代入して、両辺が等しくなるかを見る。",
+  "definition_en": "To make sure an answer is right. For an equation, you substitute the solution back into the original equation and see if both sides are equal.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's check: 2 times 4 plus 3 is 11, so x = 4 works.",
+      "ja": "確かめよう。2 × 4 + 3 = 11 だから、x = 4 で合っているね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve 5x − 2 = 3x + 6 and check your answer.",
+      "ja": "方程式 5x − 2 = 3x + 6 を解き、解を確かめよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "check は「チェックマークを付ける」「点検する」など意味が広い。答えを確かめるのは check your answer、代入して確かめるのは check by substituting。",
+    "確かめるときは、途中で変形した式ではなく、もとの方程式に代入する。変形の途中で間違えていると、変形後の式に代入しても間違いに気づけない。",
+    "数値を代入して確かめても、すべての値で成り立つことの証明（prove、エントリ prove）にはならない。"
+  ],
+  "related": [
+    "substitute",
+    "solution",
+    "satisfy",
+    "hold",
+    "solve"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "check your answer | check the answer | check our answer | check your work | check the solution | check our solution | check by | check your solution": 119
+    },
+    "written": {
+      "check your answer | check the answer | check our answer | check your work | check the solution | check our solution | check by | check your solution": 346
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

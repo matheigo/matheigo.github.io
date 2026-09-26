@@ -3,7 +3,9 @@
   "ja": {
     "term": "方程式の実数解の個数",
     "reading": "ほうていしきのじっすうかいのこすう",
-    "alt": []
+    "alt": [
+      "解の個数"
+    ]
   },
   "en": {
     "term": "number of real solutions",
@@ -21,16 +23,20 @@
   ],
   "level": {
     "jp": [
-      "数I",
+      "中1",
+      "中3",
       "数II",
       "数III"
     ],
     "us": [
-      "Algebra 2",
-      "Precalculus"
+      "Pre-Algebra",
+      "Algebra 1",
+      "Integrated Math 2",
+      "AP Calculus AB",
+      "Calculus I"
     ]
   },
-  "definition_ja": "方程式の解のうち実数であるものの個数。微分を使うときは、y = f(x) のグラフと直線 y = k の共有点の個数として数える。",
+  "definition_ja": "方程式の解のうち実数であるものの個数。一次方程式・二次方程式では式の形から、微分を使うときは y = f(x) のグラフと直線 y = k の共有点の個数として数える。",
   "definition_en": "How many real solutions an equation has; with calculus, counted as the number of points where the graph of y = f(x) meets the line y = k.",
   "latex": null,
   "spoken_en": null,
@@ -44,11 +50,22 @@
       "en": "Determine the number of real solutions of x³ − 3x − k = 0 for each value of k.",
       "ja": "k の値によって、方程式 x³ − 3x − k = 0 の実数解の個数を調べよ。",
       "register": "written"
+    },
+    {
+      "en": "A quadratic can have two real solutions, one real solution, or no real solutions.",
+      "ja": "二次方程式の実数解は、2 つのことも、1 つのことも、1 つもないこともある。",
+      "register": "spoken"
+    },
+    {
+      "en": "How many solutions does the equation 3x − 5 = 3x + 2 have?",
+      "ja": "方程式 3x − 5 = 3x + 2 の解の個数を答えよ。",
+      "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "英語では solution（方程式の解）のほかに、root ／ zero（多項式の根・零点）とも言う。"
+    "英語では solution（方程式の解）のほかに、root ／ zero（多項式の根・零点）とも言う。",
+    "一次方程式でも、OpenStax Elementary Algebra は解が 1 つ（conditional equation）・解が無数（identity）・解が無い（contradiction）の 3 つに分けて答えさせる。3x − 5 = 3x + 2 は解が無い（no solution）。"
   ],
   "related": [
     "increasing-and-decreasing",

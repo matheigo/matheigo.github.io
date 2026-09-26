@@ -1,0 +1,108 @@
+{
+  "id": "inequality-sign",
+  "ja": {
+    "term": "不等号",
+    "reading": "ふとうごう",
+    "alt": []
+  },
+  "en": {
+    "term": "inequality sign",
+    "alt": [],
+    "variants": [
+      {
+        "term": "inequality sign",
+        "register": "written",
+        "note": "書き言葉では inequality symbol と同じくらい使う（OpenStax Elementary Algebra に多い）。話し言葉ではどちらも少ない。"
+      },
+      {
+        "term": "inequality symbol",
+        "register": "written",
+        "note": "教科書（OpenStax Prealgebra・Elementary Algebra）の書き方。AP Statistics の CED もこの言い方。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "数や式の大小関係を表す記号 <、>、≦、≧ のこと。",
+  "definition_en": "Any of the symbols <, >, ≤, or ≥, which compare two quantities by showing which one is greater.",
+  "latex": "<,\\ >,\\ \\le,\\ \\ge",
+  "spoken_en": "less than, greater than, less than or equal to, greater than or equal to",
+  "examples": [
+    {
+      "en": "You divided both sides by negative 2, so don't forget to flip the inequality sign.",
+      "ja": "両辺を −2 で割ったんだから、不等号の向きを変えるのを忘れないで。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the correct inequality sign in the blank: −3 ___ −5.",
+      "ja": "□ に当てはまる不等号を書け。−3 □ −5",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書の ≦ ≧ は、米国の教科書（OpenStax）では ≤ ≥ と書く。",
+    "両辺に負の数を掛けたり、両辺を負の数で割ったりしたときは、不等号の向きを変える。英語では flip the inequality sign ／ reverse the inequality sign と言う（エントリ properties-of-inequalities）。",
+    "a < b は a is less than b、a > b は a is greater than b と読む（エントリ less-than、greater-than）。"
+  ],
+  "related": [
+    "inequality",
+    "properties-of-inequalities",
+    "less-than",
+    "greater-than",
+    "less-than-or-equal-to"
+  ],
+  "sources": [
+    {
+      "type": "wikidata",
+      "qid": "Q53045737"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "inequality sign": 7,
+      "inequality symbol": 3
+    },
+    "written": {
+      "inequality sign": 13,
+      "inequality symbol": 11
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:blackpenredpen",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-25"
+  }
+}

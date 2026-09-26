@@ -1,0 +1,114 @@
+{
+  "id": "simplify",
+  "ja": {
+    "term": "簡単にする",
+    "reading": "かんたんにする",
+    "alt": [
+      "整理する",
+      "単純化する"
+    ]
+  },
+  "en": {
+    "term": "simplify",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中3"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "同類項をまとめる、かっこを外す、約分するなどして、式を同じ値のまま短く扱いやすい形に直す。",
+  "definition_en": "To rewrite an expression in a shorter, equivalent form, for example by removing parentheses, combining like terms, or reducing a fraction.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Can we simplify 2(x + 3) + 4x any more? Sure, distribute the 2 and you get 6x + 6.",
+      "ja": "2(x + 3) + 4x はもっと簡単にできる？ できるね。2 を分配すると 6x + 6 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Simplify 3(2a − 5) − 4(a − 2).",
+      "ja": "3(2a − 5) − 4(a − 2) を簡単にせよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "方程式の解を求めるのは solve（エントリ solve）。simplify は式を同じ値の短い形に直すことで、答えも式のまま残る。",
+    "「最も簡単な形で答えよ」は in simplest form。分数を約分しきった形は in lowest terms とも言う（エントリ reduce）。",
+    "ja.alt の「整理する」でも、「降べきの順に整理する」のように項を並べ替える意味のものは write in descending order（エントリ write-in-descending-order）。"
+  ],
+  "related": [
+    "combine-like-terms",
+    "distributive-property",
+    "reduce",
+    "simplify-radicals",
+    "solve"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "simplify": 1611
+    },
+    "written": {
+      "simplify": 4886
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

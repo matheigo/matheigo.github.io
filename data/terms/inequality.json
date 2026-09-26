@@ -1,0 +1,109 @@
+{
+  "id": "inequality",
+  "ja": {
+    "term": "不等式",
+    "reading": "ふとうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "inequality",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "不等号（<、>、≦、≧）を使って、2 つの数や式の大小関係を表した式。文字をふくむ不等式の解は、x > 3 のように範囲で表す。",
+  "definition_en": "A mathematical statement that compares two expressions using <, >, ≤, or ≥. The solution of an inequality with a variable is usually a range of values, such as x > 3.",
+  "latex": "2x - 1 > 5",
+  "spoken_en": "two x minus one is greater than five",
+  "examples": [
+    {
+      "en": "When you solve an inequality, you usually get a whole range of answers, like x is greater than 3.",
+      "ja": "不等式を解くと、ふつうは x > 3 みたいに、答えが範囲になるよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the inequality 2x − 1 > 5 and graph the solution on a number line.",
+      "ja": "不等式 2x − 1 > 5 を解き、解を数直線上に表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書の ≦ ≧ は、米国の教科書（OpenStax）では ≤ ≥ と書く。読み方は less than or equal to ／ greater than or equal to（エントリ less-than-or-equal-to、greater-than-or-equal-to）。",
+    "三角不等式（triangle inequality）の inequality も同じ語で、不等式で表される性質の名前になっている（エントリ triangle-inequality）。"
+  ],
+  "related": [
+    "equation",
+    "inequality-sign",
+    "linear-inequality",
+    "properties-of-inequalities",
+    "triangle-inequality"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "不等式",
+      "en": "Inequality (mathematics)"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "inequality": 445
+    },
+    "written": {
+      "inequality": 878
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

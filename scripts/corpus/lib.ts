@@ -816,6 +816,12 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   }, // 変数, not the statistics variables (statistical-variable) or a random variable
   coefficient: { coefficient: "!correlation !binomial coefficient" },
   constant: { constant: "a constant !of !function !rate !speed !term | the constant !of !function !rate !speed !term" }, // not the constant of integration / proportionality, a constant function or the constant term
+  // 数量, not the spoken bracket "the quantity x plus one" / "two quantity squared" (contexts checked,
+  // Phase 2 中学の単元 2); "the quantities" would fold back to "the quantity"
+  quantity: {
+    quantity:
+      "a quantity !squared !cubed | two quantities !squared !cubed | these quantities | both quantities | each quantity | another quantity | unknown quantity | known quantity | same quantity | related quantities",
+  },
   // batch 2
   unit: {
     unit: "units of measure | unit of measure | units of measurement | unit of measurement | same units | label the units | include units | in the units | units of length | unit of length",

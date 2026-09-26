@@ -1,0 +1,139 @@
+{
+  "id": "direct-proportion",
+  "ja": {
+    "term": "比例",
+    "reading": "ひれい",
+    "alt": [
+      "比例関係",
+      "〜に比例する"
+    ]
+  },
+  "en": {
+    "term": "is proportional to",
+    "alt": [],
+    "variants": [
+      {
+        "term": "proportional relationship",
+        "register": "spoken",
+        "note": "話し言葉では最も多いが、ほとんどが Khan Academy の中学の講義。IM は Grade 7 の glossary の見出しにしている。"
+      },
+      {
+        "term": "varies directly",
+        "register": "both",
+        "note": "書き言葉で最も多い（OpenStax Elementary Algebra・Algebra and Trigonometry）。y varies directly with x の形。"
+      },
+      {
+        "term": "direct variation",
+        "register": "both",
+        "note": "関係の名前として Algebra の教科書（OpenStax）が使う言い方。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の中学 1 年の「比例」は、y = ax（a は 0 でない定数）で表される関係を指す。英語では「y は x に比例する」を y is proportional to x と言い、AP Calculus の CED（topic 7.8）もこの言い方をする。関係の名前は、米国の 7 年生の教材（IM Grade 7）が proportional relationship、Algebra の教科書（OpenStax）が direct variation（y varies directly with x）。見出しは CED の言い方にした（話し言葉の proportional relationship はほとんどが Khan Academy の中学の講義）。",
+  "domains": [
+    "functions",
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中2"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "2 つの量 x、y の関係が、0 でない定数 a を使って y = ax の式で表されること。x が 2 倍、3 倍になると、y も 2 倍、3 倍になる。",
+  "definition_en": "A relationship between two quantities that can be written as y = ax, where a is a nonzero constant. When x doubles or triples, y doubles or triples too.",
+  "latex": "y = ax",
+  "spoken_en": "y equals a x",
+  "examples": [
+    {
+      "en": "Careful, y = 2x + 1 isn't a proportional relationship: when x is 0, y is 1, not 0.",
+      "ja": "気をつけて。y = 2x + 1 は比例じゃない。x が 0 のとき、y は 0 じゃなくて 1 だからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "The distance d, in miles, is proportional to the time t, in hours. A car travels 150 miles in 3 hours. Write an equation relating d and t.",
+      "ja": "進んだ道のり d マイルは、走った時間 t 時間に比例する。車が 3 時間で 150 マイル進むとき、d を t の式で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "y = ax + b（b ≠ 0）は比例ではない。グラフが原点を通らないので、proportional relationship とも direct variation とも言わない。",
+    "名詞の proportion は「比例式」（a : b = c : d、エントリ proportion）の意味で使う。「比例する」は形容詞の proportional で y is proportional to x と言い、関係の名前としては proportional relationship（IM Grade 7）や direct variation（Algebra の教科書）と言う。",
+    "direct variation の direct は、反比例の inverse variation（エントリ inverse-proportion）と区別するための語。"
+  ],
+  "related": [
+    "constant-of-proportionality",
+    "inverse-proportion",
+    "proportion",
+    "origin",
+    "graph"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "比例",
+      "en": "Proportionality (mathematics)"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7)",
+      "url": "https://im.kendallhunt.com/MS/students/2/index.html",
+      "note": "Grade 7 glossary: proportional relationship"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "is proportional to": 37,
+      "varies directly": 35,
+      "direct variation": 24,
+      "proportional relationship": 77
+    },
+    "written": {
+      "is proportional to": 29,
+      "proportional relationship": 3,
+      "varies directly": 87,
+      "direct variation": 42
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

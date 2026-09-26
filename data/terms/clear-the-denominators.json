@@ -1,0 +1,102 @@
+{
+  "id": "clear-the-denominators",
+  "ja": {
+    "term": "分母を払う",
+    "reading": "ぶんぼをはらう",
+    "alt": [
+      "係数を整数にする"
+    ]
+  },
+  "en": {
+    "term": "clear the fractions",
+    "alt": [
+      "clear the denominators",
+      "clear the decimals"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "英語には「払う」に当たる動詞はなく、「分数を消す」（clear the fractions）、「分母を消す」（clear the denominators）と言う。係数が小数のときも同じ言い方で、両辺に 10 や 100 を掛けることを clear the decimals と言う。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "分数を含む方程式の両辺に分母の最小公倍数を掛けて、係数を整数にすること。係数が小数のときは、両辺に 10 や 100 を掛ける。",
+  "definition_en": "To multiply both sides of an equation by the least common denominator (LCD) so that no fractions are left. With decimals, you multiply both sides by 10, 100, and so on.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Multiply everything by 6 to clear the fractions, and you get 3x + 2x = 30.",
+      "ja": "全部に 6 を掛けて分母を払うと、3x + 2x = 30 になるね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve x/4 − 1 = x/6. First clear the fractions by multiplying both sides by the least common denominator.",
+      "ja": "方程式 x/4 − 1 = x/6 を解け。まず両辺に分母の最小公倍数を掛けて、分母を払え。",
+      "register": "written"
+    },
+    {
+      "en": "Multiply both sides by 10 to clear the decimals, and then solve 0.3x + 1.2 = 0.5x.",
+      "ja": "両辺に 10 を掛けて係数を整数にしてから、方程式 0.3x + 1.2 = 0.5x を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「払う」を pay と直訳しない。英語は clear（消す）を使う。",
+    "両辺のすべての項に掛ける。分数でない項に掛け忘れやすい。x/4 − 1 = x/6 を 12 倍すると 3x − 12 = 2x で、−1 も −12 になる。",
+    "分母を払えるのは方程式（等式）の両辺に同じ数を掛けるとき。x/2 + x/3 のような式を計算するときは分母を払えないので、通分する（エントリ find-a-common-denominator）。"
+  ],
+  "related": [
+    "find-a-common-denominator",
+    "least-common-multiple",
+    "denominator",
+    "both-sides",
+    "properties-of-equality"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "clear the denominators": 4,
+      "clear the fractions": 2
+    },
+    "written": {
+      "clear the fractions": 50,
+      "clear the denominators": 2,
+      "clear the decimals": 6
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-25"
+  }
+}

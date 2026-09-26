@@ -1,0 +1,87 @@
+{
+  "id": "value-of-a-ratio",
+  "ja": {
+    "term": "比の値",
+    "reading": "ひのあたい",
+    "alt": []
+  },
+  "en": {
+    "term": "value of a ratio",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない。比 a : b を 1 つの数 a/b（= a ÷ b）で表したものに決まった名前はなく、米国の教科書（OpenStax Prealgebra）は「比を分数で書く」（write a ratio as a fraction）と説明する。2 つの比が等しい（equivalent ratios）かどうかは、この数が等しいかで確かめられる。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "比 a : b で、a を b で割った値 a/b。2 つの比は、比の値が等しいとき等しい。",
+  "definition_en": "The number a/b that you get by dividing a by b in the ratio a : b. Two ratios are equivalent when they have the same value.",
+  "latex": "a \\div b = \\frac{a}{b}",
+  "spoken_en": "a divided by b equals a over b",
+  "examples": [
+    {
+      "en": "Write 6 to 8 as a fraction: that's six eighths, which simplifies to three fourths.",
+      "ja": "6 : 8 の比の値を分数で書くと 6/8 で、約分すると 3/4 だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write each ratio as a fraction in simplest form, and decide whether 12 : 18 and 10 : 15 are equivalent ratios.",
+      "ja": "それぞれの比の値を既約分数で表し、12 : 18 と 10 : 15 が等しい比かどうかを調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "a : b の比の値は a ÷ b = a/b で、前の数を後ろの数で割る。順番を入れかえた b : a の比の値は b/a で、別の数になる。",
+    "比の値は比（a : b）ではなく 1 つの数で、3/4 や 0.75 のように分数や小数で書く。比そのものは ratio（エントリ ratio）。"
+  ],
+  "related": [
+    "ratio",
+    "proportion",
+    "fraction",
+    "division"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "value of a ratio | value of the ratio": 7
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-6.042",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 7 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

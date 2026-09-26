@@ -1,0 +1,102 @@
+{
+  "id": "proportion",
+  "ja": {
+    "term": "比例式",
+    "reading": "ひれいしき",
+    "alt": []
+  },
+  "en": {
+    "term": "proportion",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中3"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "2 つの比が等しいことを表す式。a : b = c : d の形で、a/b = c/d と同じ意味になる。",
+  "definition_en": "An equation stating that two ratios are equal, such as a : b = c : d, which means the same as a/b = c/d.",
+  "latex": "a : b = c : d \\quad \\left(\\frac{a}{b} = \\frac{c}{d}\\right)",
+  "spoken_en": "a to b equals c to d, that is, a over b equals c over d",
+  "examples": [
+    {
+      "en": "This is a proportion, 3 to 5 equals x to 20, so cross-multiply: 5x equals 60, and x is 12.",
+      "ja": "これは比例式で、3 : 5 = x : 20。外項の積と内項の積が等しいから 5x = 60 で、x = 12 だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the proportion x : 12 = 5 : 4.",
+      "ja": "比例式 x : 12 = 5 : 4 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "関数の「比例」（y = ax）は別のエントリ（direct-proportion）。比例式の proportion と取り違えない。",
+    "統計の proportion は「割合」の意味で、別の用語（標本比率 sample proportion、エントリ sample-proportion）。",
+    "比例式を解くのに使う「外項の積 = 内項の積」（a : b = c : d ならば ad = bc）は、英語では cross-multiply と動詞で言う（エントリ cross-multiply）。"
+  ],
+  "related": [
+    "ratio",
+    "value-of-a-ratio",
+    "cross-multiply",
+    "direct-proportion",
+    "similar-triangles"
+  ],
+  "sources": [
+    {
+      "type": "wikidata",
+      "qid": "Q2631509"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "set up a proportion | set up the proportion | solve the proportion | solve a proportion | solve proportions | write a proportion | using a proportion | use a proportion | the proportion is true": 11
+    },
+    "written": {
+      "set up a proportion | set up the proportion | solve the proportion | solve a proportion | solve proportions | write a proportion | using a proportion | use a proportion | the proportion is true": 47
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-prealgebra",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

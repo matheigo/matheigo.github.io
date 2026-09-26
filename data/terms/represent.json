@@ -1,0 +1,112 @@
+{
+  "id": "represent",
+  "ja": {
+    "term": "表す",
+    "reading": "あらわす",
+    "alt": []
+  },
+  "en": {
+    "term": "represent",
+    "alt": [
+      "stand for"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "文字や式、グラフなどが、ある数量や数量の関係を示す。「x を〜の数とする」のように、文字が何を指すかを決めるときにも使う。",
+  "definition_en": "To stand for a number, a quantity, or a relationship. For example, a variable can represent an unknown number, and a graph can represent a function.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "So what does x represent here? Right, the number of hours she worked.",
+      "ja": "じゃあ、ここの x は何を表している？ そう、彼女が働いた時間だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let a represent Maya's age now, and write an expression for her age 5 years from now.",
+      "ja": "マヤの現在の年齢を a 歳として、5 年後の年齢を表す式を書け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「x を〜の数とする」は let x represent the number of … と言う。stand for も同じ意味で、x stands for … とも言える。",
+    "「式で表す」は write an equation ／ write an expression と言う（エントリ write-an-equation）。",
+    "represent には「代表する」の意味もあるが、数学の文では「（文字・式・グラフが）〜を表す」の意味で使う。"
+  ],
+  "related": [
+    "variable",
+    "unknown",
+    "write-an-equation",
+    "expression",
+    "word-problem"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "represent": 1372,
+      "stand for": 90
+    },
+    "written": {
+      "represent": 1623,
+      "stand for": 14
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

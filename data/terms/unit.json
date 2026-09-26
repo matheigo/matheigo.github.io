@@ -1,0 +1,97 @@
+{
+  "id": "unit",
+  "ja": {
+    "term": "単位",
+    "reading": "たんい",
+    "alt": []
+  },
+  "en": {
+    "term": "unit",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "長さ・重さ・時間などの量を測るときの基準にする決まった量。cm、kg、秒など。",
+  "definition_en": "A fixed amount used as a standard for measuring a quantity, such as a centimeter, a kilogram, or a second.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Your answer is 12, but 12 what? Always write the unit, like centimeters or meters.",
+      "ja": "答えは 12。でも 12 何？ センチなのかメートルなのか、単位を必ず書こう。",
+      "register": "spoken"
+    },
+    {
+      "en": "A rectangle is 8 cm long and 5 cm wide. Find its perimeter, and include the unit in your answer.",
+      "ja": "長さ 8 cm、幅 5 cm の長方形の周の長さを求めよ。答えには単位を付けること。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "面積を 1 辺 1 の正方形いくつ分で答えるときは square units（エントリ square-units）、体積を 1 辺 1 の立方体いくつ分で答えるときは cubic units（エントリ cubic-units）と言う。",
+    "unit circle（単位円）・unit vector（単位ベクトル）の unit は「大きさ 1 の」という意味で、量を測る単位とは別の語（エントリ unit-circle、unit-vector）。"
+  ],
+  "related": [
+    "square-units",
+    "cubic-units",
+    "quantity",
+    "speed",
+    "unit-circle"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "units of measure | unit of measure | units of measurement | unit of measurement | same units | label the units | include units | in the units | units of length | unit of length": 48
+    },
+    "written": {
+      "units of measure | unit of measure | units of measurement | unit of measurement | same units | label the units | include units | in the units | units of length | unit of length": 138
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

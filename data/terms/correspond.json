@@ -1,0 +1,114 @@
+{
+  "id": "correspond",
+  "ja": {
+    "term": "対応する",
+    "reading": "たいおうする",
+    "alt": []
+  },
+  "en": {
+    "term": "correspond",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中2"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "2 つの集まりの間で、一方のものに、もう一方のものが決まって組になること。関数では、x の値を 1 つ決めると、それに対応する y の値がただ 1 つ決まる。",
+  "definition_en": "To be matched or paired with something in another set. In a function, each x-value corresponds to exactly one y-value.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In this table, x = 2 corresponds to y = 10, and x = 3 corresponds to y = 15.",
+      "ja": "この表では、x = 2 に y = 10 が、x = 3 に y = 15 が対応している。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether y is a function of x by checking if each x-value corresponds to exactly one y-value.",
+      "ja": "x の値 1 つに y の値がただ 1 つ対応するかを調べて、y が x の関数であるかどうかを判定せよ。",
+      "register": "written"
+    },
+    {
+      "en": "Triangle ABC is congruent to triangle DEF. Which side of triangle DEF corresponds to side BC?",
+      "ja": "△ABC ≡ △DEF である。辺 BC に対応する △DEF の辺を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「x の値に y の値がただ 1 つ対応する」は、英語では x を主語にして each x-value corresponds to exactly one y-value と言う。前置詞は to。",
+    "合同な図形の「対応する辺・角」は形容詞 corresponding を使う（corresponding sides ／ corresponding angles）。corresponding angles は平行線の「同位角」（エントリ corresponding-angles-postulate）の意味にもなる。",
+    "名詞は correspondence。「1 対 1 の対応」は one-to-one correspondence（エントリ bijection）。"
+  ],
+  "related": [
+    "function",
+    "table-of-values",
+    "one-to-one",
+    "bijection",
+    "corresponding-angles-postulate"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "correspond": 773
+    },
+    "written": {
+      "correspond": 712
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

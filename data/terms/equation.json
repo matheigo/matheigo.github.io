@@ -1,0 +1,114 @@
+{
+  "id": "equation",
+  "ja": {
+    "term": "方程式",
+    "reading": "ほうていしき",
+    "alt": [
+      "等式"
+    ]
+  },
+  "en": {
+    "term": "equation",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語の equation は等号でつないだ式すべてを指し、2 + 3 = 5 のような文字のない等式も、x + 3 = 5 のような方程式も equation と言う。日本語の「等式」と「方程式」（文字の値によって成り立ったり成り立たなかったりする等式）を言い分ける 1 語はない。どんな値でも成り立つ等式（恒等式）は identity（エントリ identity）。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "等号 = を使って、2 つの式が等しいことを表した式（等式）。とくに、文字の値によって成り立ったり成り立たなかったりする等式を方程式という。",
+  "definition_en": "A mathematical statement, written with an equal sign, that two expressions are equal. An equation with a variable, like x + 3 = 5, can be true for some values of the variable and false for others.",
+  "latex": "x + 3 = 5",
+  "spoken_en": "x plus three equals five",
+  "examples": [
+    {
+      "en": "2x + 3 = 11 is an equation because it has an equal sign; 2x + 3 by itself is just an expression.",
+      "ja": "2x + 3 = 11 は等号があるから方程式。2x + 3 だけなら、ただの式だよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the equation 4x − 7 = 13.",
+      "ja": "方程式 4x − 7 = 13 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "等号を含まない 2x + 3 は equation ではなく expression（エントリ expression）。expression は solve するものではなく、simplify（整理する）や evaluate（値を求める）の対象になる。",
+    "「方程式を解く」は solve the equation、「方程式をつくる」は write an equation（エントリ write-an-equation）。"
+  ],
+  "related": [
+    "expression",
+    "identity",
+    "solve",
+    "linear-equation",
+    "write-an-equation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "方程式",
+      "en": "Equation"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "equation": 5806
+    },
+    "written": {
+      "equation": 11037
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

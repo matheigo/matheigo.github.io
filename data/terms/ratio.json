@@ -1,0 +1,109 @@
+{
+  "id": "ratio",
+  "ja": {
+    "term": "比",
+    "reading": "ひ",
+    "alt": []
+  },
+  "en": {
+    "term": "ratio",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "2 つの数量 a と b の割合の関係を、a : b の形で表したもの。",
+  "definition_en": "A comparison of two quantities by division, written as a : b, a to b, or a/b.",
+  "latex": "a : b",
+  "spoken_en": "a to b",
+  "examples": [
+    {
+      "en": "The ratio of boys to girls is 3 to 4, so for every 3 boys there are 4 girls.",
+      "ja": "男子と女子の人数の比は 3 : 4。男子 3 人につき女子 4 人ということだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the number of red marbles in a bag of 40 red and blue marbles if the ratio of red marbles to blue marbles is 5 : 3.",
+      "ja": "袋の中に赤玉と青玉が合わせて 40 個あり、赤玉と青玉の個数の比は 5 : 3 である。赤玉の個数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "a : b は a to b と読む（3 : 4 は three to four）。a/b と分数の形で書くこともある。",
+    "「a と b の比」は the ratio of a to b と言い、of の後に a : b の前の数、to の後に後ろの数を置く。",
+    "等比数列の公比 common ratio（エントリ common-ratio）や比判定法 ratio test（エントリ ratio-test）にも ratio が出てくるが、別の用語。"
+  ],
+  "related": [
+    "value-of-a-ratio",
+    "proportion",
+    "fraction",
+    "percent",
+    "common-ratio"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "比",
+      "en": "Ratio"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "!common !golden ratio !test": 733
+    },
+    "written": {
+      "!common !golden ratio !test": 459
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

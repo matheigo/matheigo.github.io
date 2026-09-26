@@ -1,0 +1,101 @@
+{
+  "id": "plot-a-point",
+  "ja": {
+    "term": "点をとる",
+    "reading": "てんをとる",
+    "alt": [
+      "点をとる操作"
+    ]
+  },
+  "en": {
+    "term": "plot a point",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "座標をもとに、座標平面上のその位置に点をかき入れること。原点から x 座標の分だけ左右に、y 座標の分だけ上下に進んだところに点を打つ。",
+  "definition_en": "To mark a point at its location on the coordinate plane, using its coordinates. Start at the origin, move left or right by the x-coordinate, then up or down by the y-coordinate.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's plot a point at (3, −2): start at the origin, go right 3, then down 2.",
+      "ja": "(3, −2) に点をとろう。原点から右に 3、下に 2 進んだところだよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Plot a point at (−4, 1) and label it A.",
+      "ja": "点 A(−4, 1) を座標平面上にとれ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「点をとる」の「とる」を take と訳さない。take a point は「（条件を満たす）点を 1 つ選んで考える」（take a point P on the circle）の意味で、座標平面に点を打つことではない。",
+    "plot は名詞で統計の図の名前にもなる（scatter plot ／ box plot。エントリ scatter-plot、box-plot）。"
+  ],
+  "related": [
+    "coordinate-plane",
+    "x-coordinate",
+    "y-coordinate",
+    "draw-a-graph",
+    "scatter-plot"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "plot … point | plot point": 93
+    },
+    "written": {
+      "plot … point | plot point": 167
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "combine-like-terms",
+  "ja": {
+    "term": "同類項をまとめる",
+    "reading": "どうるいこうをまとめる",
+    "alt": [
+      "同類項をまとめる計算",
+      "まとめる",
+      "式の加減"
+    ]
+  },
+  "en": {
+    "term": "combine like terms",
+    "alt": [
+      "collect like terms"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中2"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "文字の部分が同じ項（同類項）どうしを、係数を足したり引いたりして 1 つの項にまとめる。3x + 5x = 8x のように計算する。",
+  "definition_en": "To add or subtract terms that have exactly the same variable part by adding or subtracting their coefficients, so that they become a single term. For example, 3x + 5x = 8x.",
+  "latex": "ax + bx = (a + b)x",
+  "spoken_en": "a x plus b x equals the quantity a plus b times x",
+  "examples": [
+    {
+      "en": "In 4x + 7 + 2x − 3, combine like terms first: 4x plus 2x is 6x, and 7 minus 3 is 4.",
+      "ja": "4x + 7 + 2x − 3 では、まず同類項をまとめよう。4x + 2x で 6x、7 − 3 で 4 だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Combine like terms to simplify 5a − 2b − 3a + 6b.",
+      "ja": "同類項をまとめて、5a − 2b − 3a + 6b を簡単にせよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「同類項」は like terms（エントリ like-terms）。この like は「似た・同じ種類の」という意味の形容詞で、動詞の like（好き）ではない。",
+    "まとめられるのは文字の部分がまったく同じ項だけ。x と x²、x と y は同類項ではないので、3x + 2x² や 3x + 2y はこれ以上まとめられない。"
+  ],
+  "related": [
+    "like-terms",
+    "coefficient",
+    "term",
+    "simplify",
+    "distributive-property"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "combine like terms": 90,
+      "collect like terms": 3
+    },
+    "written": {
+      "combine like terms": 214,
+      "collect like terms": 7
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.02",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

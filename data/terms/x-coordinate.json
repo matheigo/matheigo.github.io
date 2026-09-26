@@ -1,0 +1,98 @@
+{
+  "id": "x-coordinate",
+  "ja": {
+    "term": "x 座標",
+    "reading": "えっくすざひょう",
+    "alt": []
+  },
+  "en": {
+    "term": "x-coordinate",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "点の座標 (x, y) の 1 つ目の数。点が原点から右（正）または左（負）にどれだけの位置にあるかを表す。",
+  "definition_en": "The first number in an ordered pair (x, y). It tells how far the point is to the right (positive) or left (negative) of the origin.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The x-coordinate always comes first, so for (3, −2) you go right 3.",
+      "ja": "x 座標がいつも先だから、(3, −2) なら右に 3 進むよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Point P lies on the line y = x + 2 and has an x-coordinate of 5. Find the coordinates of P.",
+      "ja": "点 P は直線 y = x + 2 上にあり、x 座標は 5 である。点 P の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "点 (3, −2) の x 座標は 3、y 座標は −2。英語で点を読むときは three, negative two と言う（minus two は英国式の読み方）。",
+    "x 座標 1 つを指すので単数の coordinate。(x, y) の組は複数形 coordinates（エントリ coordinates）。"
+  ],
+  "related": [
+    "coordinates",
+    "y-coordinate",
+    "x-axis",
+    "coordinate-plane",
+    "x-intercept"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "x-coordinate": 145
+    },
+    "written": {
+      "x-coordinate": 87
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

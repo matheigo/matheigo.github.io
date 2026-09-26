@@ -1,0 +1,93 @@
+{
+  "id": "domain-and-range",
+  "ja": {
+    "term": "変域",
+    "reading": "へんいき",
+    "alt": [
+      "定義域と値域"
+    ]
+  },
+  "en": {
+    "term": "domain and range",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語には「変域」1 語に当たる語がない。x の変域は domain（定義域）、y の変域は range（値域）と、x と y で言い分ける。見出しの domain and range は、2 つをまとめて言うときの形。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "関数で、変数がとる値の範囲。x の変域を定義域、y の変域を値域という。",
+  "definition_en": "The sets of values that the variables of a function can take. The possible x-values form the domain, and the resulting y-values form the range.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's find the domain and range: this graph runs from x = 1 to x = 4, and from y = 2 to y = 8.",
+      "ja": "変域を求めよう。このグラフは x = 1 から x = 4 まで、y = 2 から y = 8 までだね。",
+      "register": "spoken"
+    },
+    {
+      "en": "For y = 2x, the values of x go from −1 to 3. Write the domain and range as inequalities.",
+      "ja": "y = 2x で、x の値は −1 から 3 までとする。x の変域と y の変域を不等式で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の教科書の −1 ≦ x ≦ 3 は、英語では ≤ を使って −1 ≤ x ≤ 3 と書く。区間記法 [−1, 3] で書くこともある（エントリ interval）。",
+    "range は統計では「範囲」（最大値 − 最小値）の意味でも使う。関数の値域とは別の意味。",
+    "domain を「領域」と訳さない。不等式が表す平面の「領域」は region と言う。"
+  ],
+  "related": [
+    "function",
+    "find-the-domain",
+    "interval",
+    "inequality",
+    "variable"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "domain and range": 14
+    },
+    "written": {
+      "domain and range": 143
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

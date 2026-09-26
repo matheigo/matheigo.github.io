@@ -1,0 +1,109 @@
+{
+  "id": "hold",
+  "ja": {
+    "term": "成り立つ",
+    "reading": "なりたつ",
+    "alt": []
+  },
+  "en": {
+    "term": "hold",
+    "alt": [
+      "hold true"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "「成り立つ」に当たる動詞として hold（hold true）を使う（The equation holds when x = 3.）。同じことを is true（エントリ true）や works とも言う。「等号が成り立つ」は equality holds（エントリ equality-holds）。",
+  "domains": [
+    "algebra",
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中2"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "等式・不等式・性質などが、ある条件のもとで正しいこと。例えば、等式 2x + 1 = 7 は x = 3 のとき成り立つ。",
+  "definition_en": "For an equation, inequality, or rule to be true under the given conditions. For example, the equation 2x + 1 = 7 holds when x = 3.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Does the equation hold when x = 3? Plug it in and see.",
+      "ja": "x = 3 のとき、この等式は成り立つかな。代入して確かめてみよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the equation 2(x + 3) = 2x + 6 holds for every value of x.",
+      "ja": "等式 2(x + 3) = 2x + 6 が、x がどんな値でも成り立つことを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "hold のふつうの意味は「持つ・つかむ」。主語が等式・不等式・性質・定理のときに「成り立つ」の意味になる（The inequality holds.）。",
+    "「〜から成り立つ」（〜で構成される）は hold ではなく consist of ／ be made up of。",
+    "「値が方程式を満たす」（satisfy、エントリ satisfy）と「方程式がその値で成り立つ」（hold）は主語が逆になる。x = 3 satisfies the equation. ／ The equation holds when x = 3."
+  ],
+  "related": [
+    "true",
+    "equality-holds",
+    "satisfy",
+    "identity",
+    "equation"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "holds for | hold for | holds true | hold true | still holds | also holds | equation holds | inequality holds | equality holds": 54
+    },
+    "written": {
+      "holds for | hold for | holds true | hold true | still holds | also holds | equation holds | inequality holds | equality holds": 93
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

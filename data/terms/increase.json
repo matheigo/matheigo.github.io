@@ -1,0 +1,111 @@
+{
+  "id": "increase",
+  "ja": {
+    "term": "増加する",
+    "reading": "ぞうかする",
+    "alt": []
+  },
+  "en": {
+    "term": "increase",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中3"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "数量が大きくなること。関数で、x の値が増えるにつれて y の値も大きくなるとき、「y は増加する」という。",
+  "definition_en": "To become larger in value. In a function, y increases when its values get larger as x gets larger.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "As x increases, y increases too, so this line goes up from left to right.",
+      "ja": "x が増加すると y も増加するから、この直線は右上がりだね。",
+      "register": "spoken"
+    },
+    {
+      "en": "For y = 3x, how much does y increase when x increases by 1?",
+      "ja": "y = 3x で、x が 1 増加するとき、y はいくつ増加するか。",
+      "register": "written"
+    },
+    {
+      "en": "The price of a ticket increased from $8 to $10. By what percent did the price increase?",
+      "ja": "チケットの値段が 8 ドルから 10 ドルに上がった。値段は何 % 増加したか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "increase by 3 は「3 増える」（増えた分）、increase to 3 は「3 になる」（増えた後の値）。by と to で答えが変わる。",
+    "「関数がある範囲で増加する」（グラフが右上がり）は is increasing の形で言う（エントリ is-monotonically-increasing）。"
+  ],
+  "related": [
+    "decrease",
+    "is-monotonically-increasing",
+    "increasing-and-decreasing",
+    "rate-of-change",
+    "change-together"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "increase": 1438
+    },
+    "written": {
+      "increase": 1180
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

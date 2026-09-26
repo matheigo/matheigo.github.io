@@ -1,0 +1,100 @@
+{
+  "id": "table-of-values",
+  "ja": {
+    "term": "対応表",
+    "reading": "たいおうひょう",
+    "alt": [
+      "表"
+    ]
+  },
+  "en": {
+    "term": "table of values",
+    "alt": [
+      "input-output table",
+      "x-y table"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "x のいくつかの値と、それに対応する y の値を並べて書いた表。x と y の変わり方を調べたり、グラフをかくための点を選んだりするのに使う。",
+  "definition_en": "A table that lists several values of x together with the matching values of y. It helps you see how y changes as x changes and gives you points to plot for a graph.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's make a table of values for y = 2x + 1: when x is 0, y is 1, and when x is 1, y is 3.",
+      "ja": "y = 2x + 1 の対応表を作ろう。x が 0 のとき y は 1、x が 1 のとき y は 3 だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Complete the table of values below for y = 12/x.",
+      "ja": "y = 12/x について、下の対応表を完成させよ。",
+      "register": "written"
+    },
+    {
+      "en": "In this input-output table, the rule is multiply by 3, so an input of 4 gives an output of 12.",
+      "ja": "この表のきまりは「3 をかける」だから、4 を入れると 12 が出てくる。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "input-output table は、関数を「入れる数（input）」から「出てくる数（output）」が決まるものとして見た表。x が input、y が output に当たる。",
+    "ja.alt の「表」をそのまま table と言うと、度数分布表（frequency table、エントリ frequency-table）など統計の表と区別がつかない。x と y の値を並べた表は table of values。"
+  ],
+  "related": [
+    "function",
+    "correspond",
+    "graph",
+    "direct-proportion",
+    "inverse-proportion"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "table of values": 9
+    },
+    "written": {
+      "table of values": 76
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-prealgebra",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

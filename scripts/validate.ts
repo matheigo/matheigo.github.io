@@ -93,6 +93,10 @@ const SAME_EN_TERM: [string, string][] = [
   ["hypothesis", "statistical-hypothesis"], // 仮定（証明） ／ 仮説（統計）
   ["median", "median-of-a-triangle"], // 中央値 ／ 中線
   ["variable", "statistical-variable"], // 変数（式の文字） ／ 変量（統計）
+  // グラフ（関数の、名詞） ／ グラフをかく（動詞） ／ グラフ（離散数学の頂点と辺）: English says graph for all three
+  ["graph", "draw-a-graph"],
+  ["graph", "graph-network"],
+  ["draw-a-graph", "graph-network"],
 ];
 const intendedHomonym = (a: string, b: string) =>
   SAME_EN_TERM.some(([x, y]) => (x === a && y === b) || (x === b && y === a));

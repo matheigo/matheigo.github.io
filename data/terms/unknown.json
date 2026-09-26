@@ -1,0 +1,97 @@
+{
+  "id": "unknown",
+  "ja": {
+    "term": "未知数",
+    "reading": "みちすう",
+    "alt": []
+  },
+  "en": {
+    "term": "unknown",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "方程式の中で、値がまだ分かっていない数。ふつう x などの文字で表し、方程式を解いてその値を求める。",
+  "definition_en": "A number in an equation whose value you don't know yet, usually written as a letter such as x. Solving the equation means finding the value of the unknown.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "We've got two equations and two unknowns, so we can find both x and y.",
+      "ja": "式が 2 つで未知数も 2 つだから、x も y も求められるね。",
+      "register": "spoken"
+    },
+    {
+      "en": "In the equation 4x − 7 = 13, the unknown is x. Find its value.",
+      "ja": "方程式 4x − 7 = 13 で、未知数は x である。その値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "unknown は形容詞「分からない」（an unknown number）としてもよく使う。名詞で「未知数」と言うときは the unknown、複数なら two unknowns。",
+    "日本語では方程式の x を未知数、関数の x を変数と分けて呼ぶが、英語では方程式の x も variable と呼ぶことがある（isolate the variable、エントリ variable）。",
+    "「2 つの未知数を含む 2 つの方程式」（連立方程式）は two equations and two unknowns と言う。"
+  ],
+  "related": [
+    "variable",
+    "equation",
+    "solve",
+    "solution",
+    "system-of-linear-equations"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the unknown !population | an unknown !population | two unknowns | three unknowns | unknown number | unknown value | unknown quantity": 94
+    },
+    "written": {
+      "the unknown !population | an unknown !population | two unknowns | three unknowns | unknown number | unknown value | unknown quantity": 130
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

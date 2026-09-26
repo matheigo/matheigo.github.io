@@ -1,0 +1,111 @@
+{
+  "id": "decrease",
+  "ja": {
+    "term": "減少する",
+    "reading": "げんしょうする",
+    "alt": []
+  },
+  "en": {
+    "term": "decrease",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中3"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "数量が小さくなること。関数で、x の値が増えるにつれて y の値が小さくなるとき、「y は減少する」という。",
+  "definition_en": "To become smaller in value. In a function, y decreases when its values get smaller as x gets larger.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Look at y = 12/x: when x goes from 2 to 3, y decreases from 6 to 4.",
+      "ja": "y = 12/x を見て。x が 2 から 3 になると、y は 6 から 4 に減少する。",
+      "register": "spoken"
+    },
+    {
+      "en": "For y = −2x + 7, how much does y decrease when x increases from 1 to 4?",
+      "ja": "y = −2x + 7 で、x が 1 から 4 まで増加するとき、y はいくつ減少するか。",
+      "register": "written"
+    },
+    {
+      "en": "The temperature decreased by 6 degrees to −2 degrees. What was the temperature at first?",
+      "ja": "気温が 6 度下がって −2 度になった。はじめの気温は何度だったか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "decrease by 6 は「6 減る」（減った分）、decrease to 6 は「6 になる」（減った後の値）。",
+    "「関数がある範囲で減少する」（グラフが右下がり）は is decreasing の形で言う（エントリ decreasing）。",
+    "似た語 reduce は、数学では「分数を約分する」（reduce the fraction）の意味でも使う。値が小さくなる意味の「減少する」は decrease。"
+  ],
+  "related": [
+    "increase",
+    "decreasing",
+    "increasing-and-decreasing",
+    "inverse-proportion",
+    "rate-of-change"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "decrease": 739
+    },
+    "written": {
+      "decrease": 633
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

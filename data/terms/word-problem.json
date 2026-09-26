@@ -1,0 +1,101 @@
+{
+  "id": "word-problem",
+  "ja": {
+    "term": "文章題",
+    "reading": "ぶんしょうだい",
+    "alt": []
+  },
+  "en": {
+    "term": "word problem",
+    "alt": [
+      "story problem"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "身近な場面などを文章で書き表した問題。文章から数量の関係を読み取り、式を立てて解く。",
+  "definition_en": "A math problem that describes a situation in words instead of giving you an equation. You read it, write an equation or expression, and solve it.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For this word problem, first decide what x stands for.",
+      "ja": "この文章題は、まず x が何を表すかを決めよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write an equation for each word problem, and then solve it.",
+      "ja": "次の文章題について、それぞれ方程式をつくって解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「文章」を sentence と直訳した sentence problem ではなく、word problem と言う。word は「単語」ではなく「言葉で書かれた」の意味。story problem とも言う。",
+    "文章題で「式を立てる」は write an equation ／ set up an equation（エントリ write-an-equation）。",
+    "答えは問題が聞いている量で書く。x = 5 で終わらせず、単位をつけて「5 冊」（5 notebooks）のように答える。"
+  ],
+  "related": [
+    "write-an-equation",
+    "unknown",
+    "equation",
+    "variable",
+    "represent"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "文章題",
+      "en": "Word problem (mathematics education)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "word problem": 36
+    },
+    "written": {
+      "word problem": 127
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

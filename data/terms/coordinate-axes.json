@@ -1,0 +1,93 @@
+{
+  "id": "coordinate-axes",
+  "ja": {
+    "term": "座標軸",
+    "reading": "ざひょうじく",
+    "alt": []
+  },
+  "en": {
+    "term": "coordinate axes",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "座標平面の x 軸と y 軸をまとめた呼び名。2 本の軸は原点で垂直に交わる。",
+  "definition_en": "The x-axis and the y-axis taken together. The two axes are perpendicular and meet at the origin.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "First draw your coordinate axes, then label them x and y.",
+      "ja": "まず座標軸をかいて、x と y の名前を書き入れよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "The graph of y = 6/x gets closer and closer to the coordinate axes but never touches them.",
+      "ja": "y = 6/x のグラフは座標軸に限りなく近づくが、座標軸とは交わらない。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "axes は axis の複数形で、発音はアクシーズ。x 軸と y 軸の 2 本を指すので coordinate axes と複数形で言う。",
+    "軸の上の点（原点を含む）はどの象限にも入らない（エントリ quadrant）。"
+  ],
+  "related": [
+    "x-axis",
+    "y-axis",
+    "origin",
+    "quadrant",
+    "coordinate-plane"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "座標軸",
+      "en": "Coordinate axis"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "coordinate axes": 16
+    },
+    "written": {
+      "coordinate axes": 46
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.02",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

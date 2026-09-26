@@ -1,0 +1,116 @@
+{
+  "id": "draw-a-graph",
+  "ja": {
+    "term": "グラフをかく",
+    "reading": "ぐらふをかく",
+    "alt": []
+  },
+  "en": {
+    "term": "graph",
+    "alt": [
+      "draw the graph"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "「グラフをかく」は、英語では動詞の graph 1 語で言う（Graph y = 2x − 1.）。draw the graph とも言い、概形だけをかくときは sketch the graph と言う。名詞の graph と同じ語で、問題文の文頭の Graph は命令文の動詞。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "式や関数を満たす点を座標平面上にとり、それらを結んでグラフをかくこと。",
+  "definition_en": "To draw the graph of an equation or function on the coordinate plane, usually by plotting points and connecting them.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To graph y = 2x − 1, make a quick table, plot a few points, and connect them with a straight line.",
+      "ja": "y = 2x − 1 のグラフをかくには、簡単な表を作って点をいくつかとり、直線で結べばいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Graph y = −3x and y = 12/x on the same coordinate plane.",
+      "ja": "y = −3x と y = 12/x のグラフを、同じ座標平面上にかけ。",
+      "register": "written"
+    },
+    {
+      "en": "When you graph y = 12/x, don't connect the two pieces across the y-axis.",
+      "ja": "y = 12/x のグラフをかくときは、y 軸をまたいで 2 つの部分をつながないこと。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「かく」を write と訳さない。グラフは動詞の graph か、draw the graph で言う。",
+    "sketch the graph（エントリ sketch-the-graph）は、増減や漸近線など形の特徴が分かるように概形をかくこと。"
+  ],
+  "related": [
+    "graph",
+    "plot-a-point",
+    "table-of-values",
+    "sketch-the-graph",
+    "coordinate-plane"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "draw the graph": 25,
+      "graph the | graph each | graph this | graph these | graph it": 460
+    },
+    "written": {
+      "graph the | graph each | graph this | graph these | graph it": 964,
+      "draw the graph": 50
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": "percent",
+  "ja": {
+    "term": "百分率",
+    "reading": "ひゃくぶんりつ",
+    "alt": [
+      "パーセント"
+    ]
+  },
+  "en": {
+    "term": "percent",
+    "alt": [],
+    "variants": [
+      {
+        "term": "percentage",
+        "register": "spoken",
+        "note": "話し言葉では percent に次いで多い（ほとんどが Khan Academy）。書き言葉では percent のほうがずっと多い。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "もとにする量を 100 としたとき、比べる量がいくつに当たるかで表した割合。記号 % を使い、0.25 を 25% と表す。",
+  "definition_en": "A way of writing a number as a part of 100, using the symbol %. For example, 25% means 25 out of every 100, or 0.25.",
+  "latex": "x\\% = \\frac{x}{100}",
+  "spoken_en": "x percent equals x over one hundred",
+  "examples": [
+    {
+      "en": "Percent means out of 100, so 30 percent of 50 is 0.3 times 50, which is 15.",
+      "ja": "パーセントは「100 のうちいくつ」ということ。だから 50 の 30% は 0.3 × 50 で 15 だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "What percent of 40 is 14?",
+      "ja": "14 は 40 の何 % にあたるかを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "percent は数に付けて 25 percent のように言う。percentage は「割合（の大きさ）」を表す名詞で、a large percentage of … のように使う。",
+    "歩合も英語では percent で言う。2 割は 20 percent、3 割 5 分は 35 percent。",
+    "「割合」（比べる量 ÷ もとにする量）に当たる 1 語は英語に無く、場面で ratio ／ rate ／ fraction ／ percent を使い分ける（エントリ rate）。"
+  ],
+  "related": [
+    "rate",
+    "ratio",
+    "fraction",
+    "decimal",
+    "value-of-a-ratio"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "percent": 332,
+      "percentage": 199
+    },
+    "written": {
+      "percent": 914,
+      "percentage": 224
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

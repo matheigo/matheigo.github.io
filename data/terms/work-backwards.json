@@ -1,0 +1,115 @@
+{
+  "id": "work-backwards",
+  "ja": {
+    "term": "逆算する",
+    "reading": "ぎゃくさんする",
+    "alt": [
+      "逆演算で解く"
+    ]
+  },
+  "en": {
+    "term": "undo",
+    "alt": [
+      "work backwards",
+      "inverse operations"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "「逆算する」に当たる 1 語の英語はない。1 つの操作を打ち消すのは undo（undo the addition by subtracting 3）、操作を最後から順にさかのぼるのは work backwards と言う。打ち消すための演算は inverse operations（逆演算）で、足し算には引き算、掛け算には割り算を使う（use inverse operations）。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "行った計算を、最後の操作から順に逆にたどって、もとの数を求めること。足し算は引き算で、掛け算は割り算で打ち消す。",
+  "definition_en": "To undo an operation with its inverse operation, such as subtracting 3 to undo adding 3. Working backwards means undoing the steps in reverse order, starting with the last one.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "It's x plus 3 equals 10, so undo the plus 3 by subtracting 3 from both sides.",
+      "ja": "x + 3 = 10 だから、両辺から 3 を引いて、3 を足したのを元に戻そう。",
+      "register": "spoken"
+    },
+    {
+      "en": "A number is multiplied by 4, and then 5 is added. The result is 33. Work backwards to find the number.",
+      "ja": "ある数に 4 を掛けてから 5 を足すと 33 になった。逆算して、もとの数を求めよ。",
+      "register": "written"
+    },
+    {
+      "en": "Undo the addition first: 4x = 33 − 5 = 28, so x = 7.",
+      "ja": "まず足し算を逆算する。4x = 33 − 5 = 28 より、x = 7。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "undo は「元に戻す」（パソコンの「元に戻す」も undo）。1 つの操作を打ち消すことを言い、操作を最後から順にさかのぼる全体は work backwards と言う。",
+    "打ち消す順序は、行った操作の逆。4x + 5 = 33 では、掛け算より先に「5 を足す」を打ち消す。",
+    "「逆演算」は inverse operations。逆関数（inverse function、エントリ inverse-function）や逆数（reciprocal、エントリ reciprocal）とは別の語。"
+  ],
+  "related": [
+    "properties-of-equality",
+    "both-sides",
+    "move-term-to-other-side",
+    "solve",
+    "word-problem"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "work backwards": 14,
+      "undo": 101,
+      "inverse operations": 4
+    },
+    "written": {
+      "undo": 85,
+      "inverse operations": 8,
+      "work backwards": 6
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}
