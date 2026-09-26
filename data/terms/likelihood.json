@@ -1,0 +1,94 @@
+{
+  "id": "likelihood",
+  "ja": {
+    "term": "起こりやすさ",
+    "reading": "おこりやすさ",
+    "alt": []
+  },
+  "en": {
+    "term": "likelihood",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "あることがらが起こると期待できる程度。その程度を 0 から 1 までの数で表したものが確率である。",
+  "definition_en": "How likely it is that something will happen. Probability measures the likelihood of an event with a number from 0 to 1.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A probability close to 1 means a high likelihood, and a probability close to 0 means it's pretty unlikely.",
+      "ja": "確率が 1 に近ければ起こりやすく、0 に近ければまず起こらないということ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A bag contains 3 red marbles and 5 blue marbles. Compare the likelihood of drawing a red marble with the likelihood of drawing a blue marble by finding each probability.",
+      "ja": "袋の中に赤玉 3 個と青玉 5 個が入っている。それぞれの確率を求めて、赤玉が出る起こりやすさと青玉が出る起こりやすさを比べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "統計の最尤法（maximum likelihood）で使う likelihood（尤度）は別の用語。中学の確率で言う likelihood は「起こりやすさ」の意味。",
+    "英語では同じ意味で chance とも言う（the chance of rolling a 6）。",
+    "形容詞は likely（起こりやすい）。「同様に確からしい」は equally likely（エントリ equally-likely）。"
+  ],
+  "related": [
+    "probability",
+    "equally-likely",
+    "certain",
+    "impossible",
+    "event"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "likelihood !function !ratio": 21
+    },
+    "written": {
+      "likelihood !function !ratio": 25
+    },
+    "sources": [
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

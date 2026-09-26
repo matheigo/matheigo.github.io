@@ -1,0 +1,87 @@
+{
+  "id": "center-of-dilation",
+  "ja": {
+    "term": "相似の中心",
+    "reading": "そうじのちゅうしん",
+    "alt": []
+  },
+  "en": {
+    "term": "center of dilation",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "図形を拡大・縮小するときの基準になる点。もとの図形の各点と、それを移した点を結ぶ直線は、すべてこの点を通る。",
+  "definition_en": "The fixed point that a figure is enlarged or shrunk from in a dilation. The line through any point and its image always passes through the center of dilation.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Draw a ray from the center of dilation through each vertex, and then go out twice as far.",
+      "ja": "相似の中心から各頂点を通る半直線を引いて、2 倍の距離のところに点をとろう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Triangle ABC has vertices A(1, 2), B(3, 1), and C(2, 4). Dilate it by a scale factor of 3 using the origin as the center of dilation, and give the coordinates of A′, B′, and C′.",
+      "ja": "△ABC の頂点は A(1, 2)、B(3, 1)、C(2, 4) である。原点を相似の中心として △ABC を 3 倍に拡大した △A′B′C′ の頂点の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "dilation は拡大にも縮小にも使う（エントリ dilation）。center of dilation も、拡大・縮小どちらの中心にも使う。",
+    "日本の「相似の位置にある」2 つの図形で、対応する点を結ぶ直線が集まる点がこれに当たる。英語では、一方の図形をこの点を中心に dilation するともう一方になる、と変換として見る（エントリ dilation）。",
+    "中心は図形の外・内・周上のどこにとってもよい。中心の点だけは移しても動かない。"
+  ],
+  "related": [
+    "dilation",
+    "scale-factor",
+    "similar",
+    "similar-triangles",
+    "scale-drawing"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "相似の中心",
+      "en": "Homothetic center"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math / IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/",
+      "note": "レッスンで center of dilation を使う"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "center of dilation": 21
+    },
+    "sources": [
+      "khan-middle"
+    ],
+    "counted": "2026-09-25"
+  }
+}

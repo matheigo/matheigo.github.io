@@ -1,0 +1,91 @@
+{
+  "id": "ascending-order",
+  "ja": {
+    "term": "昇べきの順",
+    "reading": "しょうべきのじゅん",
+    "alt": []
+  },
+  "en": {
+    "term": "increasing powers",
+    "alt": [
+      "ascending order"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "多項式の項を、次数の低いものから高いものへ順に並べること。1 − 5x + 3x² のような並べ方。",
+  "definition_en": "An arrangement of the terms of a polynomial from the lowest power of the variable to the highest, as in 1 − 5x + 3x².",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's put the terms in ascending order, lowest power first, so the constant goes in front.",
+      "ja": "項を昇べきの順に並べよう。次数の低いほうからだから、定数項が先頭に来る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the polynomial 3x² + 1 − 5x in increasing powers of x.",
+      "ja": "多項式 3x² + 1 − 5x を x について昇べきの順に整理せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "ascending order だけでは、数を小さい順に並べる意味にもなる。多項式の項の並べ方だとはっきりさせるには、OpenStax Algebra and Trigonometry のように in increasing powers（of x）と書く。",
+    "文字が 2 つ以上ある式では、どの文字について並べるかを of x のように付けて言う（in increasing powers of x）。",
+    "次数の高い順に並べるのは降べきの順（エントリ write-in-descending-order）。"
+  ],
+  "related": [
+    "write-in-descending-order",
+    "polynomial",
+    "degree",
+    "term",
+    "constant-term"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "increasing powers": 3
+    },
+    "written": {
+      "increasing powers": 9,
+      "ascending order": 3
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

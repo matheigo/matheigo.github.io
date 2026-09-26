@@ -1,0 +1,90 @@
+{
+  "id": "similarity-criteria",
+  "ja": {
+    "term": "相似条件",
+    "reading": "そうじじょうけん",
+    "alt": []
+  },
+  "en": {
+    "term": "similarity theorems",
+    "alt": [
+      "similarity criteria",
+      "similarity postulates",
+      "triangle similarity theorems"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の三角形の相似条件は 3 つ（3 組の辺の比がすべて等しい、2 組の辺の比とその間の角がそれぞれ等しい、2 組の角がそれぞれ等しい）で、「相似条件」とまとめて呼ぶ。米国の Geometry はこれを SSS similarity、SAS similarity、AA similarity（エントリ aa-similarity）と名前で呼ぶ。IM Geometry は 3.9 Conditions for Triangle Similarity、3.10 Other Conditions for Triangle Similarity で扱い、見出しの similarity theorems は IM の言い方。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "2 つの三角形が相似であるといえるための条件。「3 組の辺の比がすべて等しい」「2 組の辺の比とその間の角がそれぞれ等しい」「2 組の角がそれぞれ等しい」の 3 つ。",
+  "definition_en": "The sets of matching parts that are enough to prove two triangles similar. They are named SSS similarity (all three pairs of sides proportional), SAS similarity, and AA similarity.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Which of the similarity theorems works here? We've got two pairs of equal angles, so it's AA.",
+      "ja": "ここで使える相似条件はどれかな。2 組の角がそれぞれ等しいから、「2 組の角がそれぞれ等しい」だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "In △ABC and △DEF, AB = 4, AC = 6, DE = 6, DF = 9, and m∠A = m∠D. Which of the similarity theorems shows that △ABC ~ △DEF? Explain.",
+      "ja": "△ABC と △DEF で、AB = 4、AC = 6、DE = 6、DF = 9、∠A = ∠D である。△ABC ∽ △DEF を示すには、どの相似条件を用いればよいか。理由も説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "SSS・SAS は合同条件と同じ略号（エントリ sss-congruence、sas-congruence）。相似の SSS・SAS は辺の「比」が等しいこと、合同の SSS・SAS は辺の「長さ」が等しいことなので、similarity か congruence かを付けて区別する。",
+    "角の条件は 2 組で足りる。2 組の角が等しければ、内角の和が 180° なので 3 組目も等しい（エントリ aa-similarity）。",
+    "英語では同じ条件を theorem（定理）とも postulate（公準）とも criteria（条件）とも呼ぶ。similarity theorems、similarity postulates、similarity criteria は同じものを指す。"
+  ],
+  "related": [
+    "aa-similarity",
+    "similar-triangles",
+    "congruence-criteria",
+    "similar",
+    "scale-factor"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 3.9 Conditions for Triangle Similarity・3.10 Other Conditions for Triangle Similarity"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 similarity theorems（Geometry 3.10 Other Conditions for Triangle Similarity・Geometry 3.9 Conditions for Triangle Similarity・Geometry 3.16 Bank Shot・計 23 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

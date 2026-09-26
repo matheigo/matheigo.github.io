@@ -1,0 +1,116 @@
+{
+  "id": "factoring",
+  "ja": {
+    "term": "因数分解",
+    "reading": "いんすうぶんかい",
+    "alt": [
+      "因数分解する"
+    ]
+  },
+  "en": {
+    "term": "factoring",
+    "alt": [
+      "factorization"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「因数分解」は名詞で、「因数分解する」と動詞にして使う。英語の授業・教科書では動詞の factor で言うことが多く（Factor the polynomial.、factor completely）、名詞は factoring または factorization。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "多項式を、いくつかの式（因数）の積の形に表すこと。展開の逆の操作である。",
+  "definition_en": "Writing a polynomial as a product of simpler expressions, called its factors. Factoring undoes multiplying out, or expanding.",
+  "latex": "x^2 + 5x + 6 = (x + 2)(x + 3)",
+  "spoken_en": "x squared plus five x plus six equals the quantity x plus two times the quantity x plus three",
+  "examples": [
+    {
+      "en": "Factoring is like multiplying in reverse: we start with x² + 5x + 6 and work back to (x + 2)(x + 3).",
+      "ja": "因数分解は掛け算を逆にたどるようなもの。x² + 5x + 6 から始めて、(x + 2)(x + 3) に戻す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve x² − 7x + 12 = 0 by factoring.",
+      "ja": "因数分解を利用して、x² − 7x + 12 = 0 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「〜を因数分解せよ」は動詞 factor を使って Factor x² − 9. と書く。factor completely は、これ以上因数分解できないところまで因数分解すること。",
+    "名詞の factor は「因数」（エントリ factor）。因数分解した積の形は factored form（エントリ factored-form）。",
+    "整数を素数の積に表すのは prime factorization（素因数分解、エントリ prime-factorization）で、多項式の因数分解とは別の見出し。"
+  ],
+  "related": [
+    "factor",
+    "factored-form",
+    "expand",
+    "common-factor",
+    "prime-factorization"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "因数分解",
+      "en": "Factorization"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "factor the | factor this | factor each | factor it | factor completely": 406,
+      "factorization !prime": 134
+    },
+    "written": {
+      "factor the | factor this | factor each | factor it | factor completely": 521,
+      "factorization !prime": 94
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

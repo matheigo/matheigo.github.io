@@ -1,0 +1,101 @@
+{
+  "id": "rational-number",
+  "ja": {
+    "term": "有理数",
+    "reading": "ゆうりすう",
+    "alt": []
+  },
+  "en": {
+    "term": "rational number",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "整数 m と 0 でない整数 n を使って、分数 m/n の形に表せる数。小数で表すと、有限小数か循環小数になる。",
+  "definition_en": "A number that can be written as a fraction m/n, where m and n are integers and n is not 0. Written as a decimal, it either ends or repeats.",
+  "latex": "\\frac{m}{n} \\quad (m, n \\text{ integers},\\ n \\neq 0)",
+  "spoken_en": "m over n, where m and n are integers and n is not zero",
+  "examples": [
+    {
+      "en": "Negative 0.75 is a rational number, because you can write it as negative 3 over 4.",
+      "ja": "−0.75 は有理数。−3/4 と分数で書けるからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write 0.125 as a fraction to show that it is a rational number.",
+      "ja": "0.125 を分数で表して、有理数であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "rational は ratio（比）と同じ語源で、「比（分数）で表せる」という意味。「理にかなった」の意味の rational ではない。",
+    "整数も有理数（5 = 5/1）。√ が付いていても、√16 = 4 のように整数や分数になるものは有理数。",
+    "有限小数（エントリ terminating-decimal）と循環小数（エントリ repeating-decimal）は有理数。循環しない無限小数は無理数（エントリ irrational-number）。"
+  ],
+  "related": [
+    "irrational-number",
+    "real-number",
+    "fraction",
+    "terminating-decimal",
+    "repeating-decimal"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "有理数",
+      "en": "Rational number"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "rational number": 51
+    },
+    "written": {
+      "rational number": 132
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-18.01",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

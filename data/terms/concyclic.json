@@ -1,0 +1,88 @@
+{
+  "id": "concyclic",
+  "ja": {
+    "term": "同一円周上にある",
+    "reading": "どういつえんしゅうじょうにある",
+    "alt": [
+      "4 点が同一円周上にある"
+    ]
+  },
+  "en": {
+    "term": "lie on the same circle",
+    "alt": [
+      "concyclic",
+      "lie on a circle"
+    ],
+    "uk": null
+  },
+  "pos": "adjective",
+  "mapping": "near",
+  "mapping_note": "IM Geometry（7.4 Quadrilaterals in Circles）は、いくつかの点が同一円周上にあることを lie on the same circle のように文で言う。1 語の形容詞 concyclic（A, B, C, and D are concyclic）もある。4 つの頂点が同一円周上にある四角形は cyclic quadrilateral（エントリ cyclic-quadrilateral）。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "いくつかの点が、すべて 1 つの円の周上にあること。4 点 A、B、C、D が同一円周上にあるとき、四角形 ABCD は円に内接する。",
+  "definition_en": "Said of points that all lie on the same circle, so that one circle passes through every one of them.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Opposite angles add up to 180, so all four vertices lie on the same circle.",
+      "ja": "対角の和が 180° だから、4 つの頂点は同一円周上にある。",
+      "register": "spoken"
+    },
+    {
+      "en": "In quadrilateral ABCD, ∠A = 83° and ∠C = 97°. Show that A, B, C, and D lie on the same circle.",
+      "ja": "四角形 ABCD で、∠A = 83°、∠C = 97° である。4 点 A、B、C、D が同一円周上にあることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「同一円周上にある」は円周の上にあることで、円の内部にあることではない。英語の on a circle も周の上を指し、内部は inside the circle と言う。",
+    "4 点が同一円周上にあることを示すには、円周角の定理の逆（エントリ converse-of-the-inscribed-angle-theorem）か、四角形の対角の和が 180° であること（エントリ cyclic-quadrilateral）を使う。",
+    "一直線上にない 3 点は、必ず 1 つの円周上にある（その円が外接円、エントリ circumscribed-circle）。同一円周上にあるかどうかが問題になるのは 4 点以上のとき。"
+  ],
+  "related": [
+    "cyclic-quadrilateral",
+    "converse-of-the-inscribed-angle-theorem",
+    "circle",
+    "inscribed-angle-theorem",
+    "circumscribed-circle"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 7.4 Quadrilaterals in Circles"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 lie on the same circle（Geometry 7.4 Quadrilaterals in Circles・Algebra 2 6.8 Rising and Falling・計 3 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

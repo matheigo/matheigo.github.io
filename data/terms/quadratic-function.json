@@ -1,0 +1,102 @@
+{
+  "id": "quadratic-function",
+  "ja": {
+    "term": "二次関数",
+    "reading": "にじかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "quadratic function",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "y が x の二次式で表される関数。中 3 では y = ax²（a ≠ 0）の形だけを扱い、高校で y = ax² + bx + c の形に広げる。",
+  "definition_en": "A function whose rule is a degree-2 polynomial, such as f(x) = ax² + bx + c with a ≠ 0. Its graph is a parabola.",
+  "latex": "y = ax^2 + bx + c \\quad (a \\neq 0)",
+  "spoken_en": "y equals a x squared plus b x plus c, where a is not equal to zero",
+  "examples": [
+    {
+      "en": "If the highest power of x is 2, it's a quadratic function, and the graph is going to be a parabola.",
+      "ja": "x の最高次数が 2 なら二次関数で、グラフは放物線になるよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "For the quadratic function y = ax², y = 12 when x = 2. Find the value of a.",
+      "ja": "二次関数 y = ax² で、x = 2 のとき y = 12 である。a の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "中 3 の「y は x の 2 乗に比例する」関数 y = ax² も、英語では quadratic function に入る（y = ax² + bx + c で b = c = 0 の場合）。",
+    "quadratic は「2 次の」。quad- から「4」を連想しやすいが、4 次は quartic（エントリ quadratic-expression）。二次式は quadratic expression、二次方程式は quadratic equation（エントリ quadratic-equation）。",
+    "y = ax² + bx + c の形と y = a(x − p)² + q の形の呼び名は、日本語と英語で対応がずれる（エントリ standard-form、vertex-form）。"
+  ],
+  "related": [
+    "parabola",
+    "quadratic-equation",
+    "quadratic-expression",
+    "vertex",
+    "axis-of-symmetry"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "二次関数",
+      "en": "Quadratic function"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "quadratic function": 36
+    },
+    "written": {
+      "quadratic function": 228
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "id": "principal-square-root",
+  "ja": {
+    "term": "正の平方根",
+    "reading": "せいのへいほうこん",
+    "alt": [
+      "主根"
+    ]
+  },
+  "en": {
+    "term": "principal square root",
+    "alt": [],
+    "variants": [
+      {
+        "term": "principal root",
+        "register": "spoken",
+        "note": "話し言葉で最も多い言い方（n 乗根にも使う）。書き言葉では少ない。"
+      },
+      {
+        "term": "positive square root",
+        "register": "both",
+        "note": "話・書とも principal square root と並んで使う。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語の principal square root は、0 の平方根 0 も含めて「負でない平方根」の意味で使い、記号 √a はこれを表す。日本語の「正の平方根」は正の数 a の 2 つの平方根のうち正のほうを言い、0 を含まない点が違う。英語では positive square root とも言い、話し言葉では principal root とも言う。",
+  "domains": [
+    "arithmetic",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "正の数 a の 2 つの平方根のうち、正のほう。記号 √a はこの数を表す。",
+  "definition_en": "The nonnegative square root of a number, written with the radical sign as √a. For a positive number a, it is the positive one of its two square roots, and the principal square root of 0 is 0.",
+  "latex": "\\sqrt{25} = 5",
+  "spoken_en": "the square root of twenty-five equals five",
+  "examples": [
+    {
+      "en": "25 has two square roots, 5 and negative 5, but the radical sign means the principal square root, so √25 is just 5.",
+      "ja": "25 の平方根は 5 と −5 の 2 つあるけど、根号が表すのは正の平方根だから、√25 は 5 だけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the principal square root of 0.49.",
+      "ja": "0.49 の正の平方根を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の principal square root は、0 の平方根 0 も含めて「負でない平方根」の意味で使う。日本語の「正の平方根」は 0 を含まない。",
+    "負のほうの平方根は −√a で、the negative square root と言う（エントリ square-root）。",
+    "「25 の平方根」は ±5 の 2 つだが、√25 は 5 だけを表す。√25 = ±5 とは書かない。"
+  ],
+  "related": [
+    "square-root",
+    "radical-sign",
+    "nth-root",
+    "irrational-number",
+    "square"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "positive square root": 57,
+      "principal root": 70,
+      "principal square root": 15
+    },
+    "written": {
+      "positive square root": 15,
+      "principal square root": 24,
+      "principal root": 3
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.06",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

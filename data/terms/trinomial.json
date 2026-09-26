@@ -1,0 +1,98 @@
+{
+  "id": "trinomial",
+  "ja": {
+    "term": "三項式",
+    "reading": "さんこうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "trinomial",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "項が 3 つの多項式。x² + 5x + 6 のような式。",
+  "definition_en": "A polynomial with exactly three terms, such as x² + 5x + 6.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For this trinomial, x squared plus 5x plus 6, we need two numbers that multiply to 6 and add to 5.",
+      "ja": "この三項式 x² + 5x + 6 では、掛けて 6、足して 5 になる 2 つの数を探そう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Factor the trinomial x² − 7x + 12.",
+      "ja": "三項式 x² − 7x + 12 を因数分解せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "tri- は「3 つの」の意味。項が 1 つなら monomial（エントリ monomial）、2 つなら binomial（エントリ binomial）。",
+    "米国の Algebra 1 では、x² + bx + c の形の式を因数分解することを factor trinomials と言う。",
+    "x² + 6x + 9 = (x + 3)² のように、2 乗の形に因数分解できる三項式は perfect square trinomial（完全平方式、エントリ perfect-square-trinomial）と呼ぶ。"
+  ],
+  "related": [
+    "binomial",
+    "monomial",
+    "polynomial",
+    "factoring",
+    "perfect-square-trinomial"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "三項式",
+      "en": "Trinomial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "trinomial": 49
+    },
+    "written": {
+      "trinomial": 431
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

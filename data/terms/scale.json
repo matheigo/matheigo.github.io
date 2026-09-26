@@ -1,0 +1,85 @@
+{
+  "id": "scale",
+  "ja": {
+    "term": "縮尺",
+    "reading": "しゅくしゃく",
+    "alt": []
+  },
+  "en": {
+    "term": "scale",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "地図や縮図で、実際の長さをどれだけの割合に縮めて表したかを示すもの。1 : 25000 のような比で書く。",
+  "definition_en": "On a map or a scale drawing, the relationship between lengths in the drawing and the actual lengths they stand for, such as 1 : 25,000 or 1 inch = 10 miles.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The scale of the map is 1 inch to 10 miles, so 3 inches on the map is 30 miles in real life.",
+      "ja": "この地図の縮尺は 1 インチが 10 マイルだから、地図上の 3 インチは実際には 30 マイルだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A map has a scale of 1 : 25,000. Two towns are 8 cm apart on the map. Find the actual distance between them in kilometers.",
+      "ja": "縮尺 1 : 25000 の地図上で、2 つの町の間の距離は 8 cm である。実際の距離は何 km か求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "拡大・縮小の比（何倍にするか）は scale factor（エントリ scale-factor）で、別の用語。縮尺の scale は、図の上の長さと実際の長さの対応を言う。",
+    "英語では 1 : 25,000 のような比のほかに、1 inch = 10 miles のように単位をつけた対応でも表す。実際の長さを求めるときは、単位をそろえてから計算する。",
+    "scale は、グラフの軸の目盛り（the scale on the y-axis）や、はかりの意味にもなる。「縮尺」の意味かどうかは文脈で決まる。"
+  ],
+  "related": [
+    "scale-drawing",
+    "scale-factor",
+    "ratio",
+    "similar",
+    "dilation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "scale of the map | scale of the drawing | the scale is | map scale | scale on the map | scale of a map | scale of a drawing": 13
+    },
+    "written": {
+      "scale of the map | scale of the drawing | the scale is | map scale | scale on the map | scale of a map | scale of a drawing": 3
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

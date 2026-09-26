@@ -1,0 +1,93 @@
+{
+  "id": "solving-by-factoring",
+  "ja": {
+    "term": "因数分解による解法",
+    "reading": "いんすうぶんかいによるかいほう",
+    "alt": [
+      "因数分解して解く"
+    ]
+  },
+  "en": {
+    "term": "solving by factoring",
+    "alt": [
+      "solve … by factoring"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "二次方程式を、右辺を 0 にしてから左辺を因数分解し、「AB = 0 ならば A = 0 または B = 0」を使って解く方法。x² − 5x + 6 = 0 なら (x − 2)(x − 3) = 0 から x = 2, 3。",
+  "definition_en": "A way to solve a quadratic equation by getting 0 on one side, factoring the other side, and setting each factor equal to 0. It works because of the zero product property.",
+  "latex": "x^2 - 5x + 6 = 0 \\Rightarrow (x - 2)(x - 3) = 0 \\Rightarrow x = 2 \\text{ or } x = 3",
+  "spoken_en": "x squared minus five x plus six equals zero, so the quantity x minus two times the quantity x minus three equals zero, so x equals two or x equals three",
+  "examples": [
+    {
+      "en": "When you're solving by factoring, get zero on one side first, then factor and set each factor equal to zero.",
+      "ja": "因数分解で解くときは、まず片側を 0 にする。それから因数分解して、それぞれの因数を 0 とおくんだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the equation by factoring: x² − 7x + 10 = 0.",
+      "ja": "因数分解を利用して、方程式 x² − 7x + 10 = 0 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "右辺を 0 にしないまま因数分解しても解は出ない。x² − 2x = 8 を x(x − 2) = 8 として x = 8 とするのは誤りで、x² − 2x − 8 = 0 に直してから (x − 4)(x + 2) = 0、x = 4, −2 とする。",
+    "問題文の Factor. と Solve by factoring. は答えるものが違う。Factor x² − 5x + 6. の答えは式 (x − 2)(x − 3)、Solve x² − 5x + 6 = 0 by factoring. の答えは解 x = 2, 3（エントリ factoring）。",
+    "両辺を x で割ると解を失う。x² = 3x は x で割らずに x² − 3x = 0、x(x − 3) = 0 として x = 0, 3 を出す。"
+  ],
+  "related": [
+    "quadratic-equation",
+    "zero-product-property",
+    "factoring",
+    "factored-form",
+    "quadratic-formula"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "solving by factoring": 10
+    },
+    "written": {
+      "solving by factoring": 61
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-25"
+  }
+}

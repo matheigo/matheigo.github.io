@@ -1,0 +1,94 @@
+{
+  "id": "projectile-motion",
+  "ja": {
+    "term": "投射運動",
+    "reading": "とうしゃうんどう",
+    "alt": [
+      "落下"
+    ]
+  },
+  "en": {
+    "term": "projectile motion",
+    "alt": [
+      "free fall"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の中 3 の数学では、物を落としたときの落ちる距離 y m と時間 x 秒の関係 y = 4.9x² を、関数 y = ax² の例として扱う。米国の教科書 OpenStax Algebra and Trigonometry は、二次関数の応用として projectile motion の問題を扱い、高さを h(t) = −16t² + v₀t + h₀ のような式で表す（長さをフィートで書くことも多い）。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学",
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "投げ上げたり落としたりした物体の運動。空気の抵抗を考えなければ、物体の高さや落ちる距離は時間の二次関数で表される。",
+  "definition_en": "The motion of an object that is thrown, launched, or dropped and then moves only under the pull of gravity. Its height, or the distance it has fallen, is a quadratic function of time.",
+  "latex": "h(t) = -16t^2 + v_0 t + h_0",
+  "spoken_en": "h of t equals negative sixteen t squared plus v naught t plus h naught",
+  "examples": [
+    {
+      "en": "In projectile motion, the ball goes up, slows down, and falls back, so the graph of its height is a parabola.",
+      "ja": "投射運動では、ボールは上がって、だんだん遅くなり、また落ちてくる。だから高さのグラフは放物線になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "An object in free fall travels y meters in x seconds, where y = 4.9x². Find the distance it falls in the first 3 seconds.",
+      "ja": "物体を落とすとき、落ち始めてから x 秒間に落ちる距離を y m とすると、y = 4.9x² である。最初の 3 秒間に落ちる距離を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の中 3 の y = 4.9x² は落ちた距離（下向きに測る）なので x² の係数が正。高さ（上向きに測る）を表す h(t) = −16t² + … は t² の係数が負になる。",
+    "係数の 4.9 はメートル（9.8 m/s² の半分）、16 はフィート（32 ft/s² の半分）で、長さの単位が違うと係数も変わる。",
+    "最高点の高さ（maximum height）を求める問題は、放物線の頂点を求める問題になる（エントリ vertex）。"
+  ],
+  "related": [
+    "quadratic-function",
+    "parabola",
+    "vertex",
+    "mathematical-model",
+    "word-problem"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "projectile motion": 3
+    },
+    "written": {
+      "free fall": 7,
+      "projectile motion": 18
+    },
+    "sources": [
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

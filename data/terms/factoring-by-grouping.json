@@ -1,0 +1,93 @@
+{
+  "id": "factoring-by-grouping",
+  "ja": {
+    "term": "グループ分けによる因数分解",
+    "reading": "ぐるーぷわけによるいんすうぶんかい",
+    "alt": [
+      "まとめてくくる"
+    ]
+  },
+  "en": {
+    "term": "factoring by grouping",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「グループ分けによる因数分解」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書では名前を付けず、「組み合わせてくくる」「共通因数をくくり出す」と手順で説明する。米国の教科書（OpenStax Elementary Algebra）は Factor by Grouping という名前で扱い、ax² + bx + c を因数分解する ac method もこの方法を使う。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学",
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "4 つ以上の項を 2 つずつ組にし、それぞれの組から共通因数をくくり出したあと、どの組にも現れる式でさらにくくる因数分解の方法。",
+  "definition_en": "A way to factor a polynomial with four or more terms: group the terms in pairs, factor out the common factor from each pair, and then factor out the expression the pairs share.",
+  "latex": "ax + ay + bx + by = a(x + y) + b(x + y) = (a + b)(x + y)",
+  "spoken_en": "a x plus a y plus b x plus b y equals a times the quantity x plus y, plus b times the quantity x plus y, which equals the quantity a plus b times the quantity x plus y",
+  "examples": [
+    {
+      "en": "For x cubed plus 3x squared plus 2x plus 6, try factoring by grouping: x squared comes out of the first pair, 2 comes out of the second, and both leave x plus 3.",
+      "ja": "x³ + 3x² + 2x + 6 は、組にしてくくってみよう。前の 2 項から x²、後ろの 2 項から 2 をくくり出すと、どちらにも x + 3 が残る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use factoring by grouping to factor xy + 5x − 2y − 10.",
+      "ja": "項を 2 つずつ組にして、xy + 5x − 2y − 10 を因数分解せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "2 つ目の組から負の数をくくり出すときは符号に注意する。xy + 5x − 2y − 10 = x(y + 5) − 2(y + 5) = (x − 2)(y + 5) で、−2 でくくると −10 は +5 になる。",
+    "ax² + bx + c を因数分解する ac method（エントリ cross-method）は、bx を 2 つの項に分けて 4 項にし、この方法でくくる。2x² + 7x + 3 = 2x² + 6x + x + 3 = 2x(x + 3) + (x + 3) = (2x + 1)(x + 3)。",
+    "組の作り方によっては共通の式が出てこない。そのときは項の順番を入れ替えて組み直す。1 つの文字について整理する方法（エントリ arrange-by-the-variable-of-lowest-degree）とは別の手順。"
+  ],
+  "related": [
+    "factoring",
+    "common-factor",
+    "cross-method",
+    "distributive-property",
+    "arrange-by-the-variable-of-lowest-degree"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "factoring by grouping": 39
+    },
+    "written": {
+      "factoring by grouping": 38
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

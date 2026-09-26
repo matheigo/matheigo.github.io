@@ -1,0 +1,94 @@
+{
+  "id": "similar",
+  "ja": {
+    "term": "相似",
+    "reading": "そうじ",
+    "alt": [
+      "相似",
+      "相似な図形"
+    ]
+  },
+  "en": {
+    "term": "similar",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "一方の図形を拡大または縮小すると、他方の図形にぴったり重なること。対応する角はそれぞれ等しく、対応する辺の比はすべて等しい。",
+  "definition_en": "Having the same shape, so that one figure can be enlarged or shrunk and then moved to fit exactly on the other. Corresponding angles are equal, and corresponding sides are proportional.",
+  "latex": "\\triangle ABC \\sim \\triangle DEF",
+  "spoken_en": "triangle ABC is similar to triangle DEF",
+  "examples": [
+    {
+      "en": "The rectangles are similar because each side of the big one is 3 times the matching side of the small one.",
+      "ja": "大きい長方形の各辺は、小さい長方形の対応する辺の 3 倍だから、この 2 つの長方形は相似だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Triangle ABC is similar to triangle DEF, with AB = 6, BC = 8, and DE = 9. Find EF.",
+      "ja": "△ABC ∽ △DEF で、AB = 6、BC = 8、DE = 9 のとき、EF の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日常語の similar は「似ている」という広い意味。数学の similar は「拡大・縮小すると重なる」という決まった意味で、形がなんとなく似ているだけでは similar とは言わない。",
+    "英語の similar は形容詞で、two figures are similar ／ triangle ABC is similar to triangle DEF と言う。日本の記号 ∽ で書いた △ABC ∽ △DEF も、triangle ABC is similar to triangle DEF と読む。名詞の「相似」は similarity。",
+    "相似な三角形はエントリ similar-triangles、相似比はエントリ scale-factor。合同（congruent）は、相似のうち大きさも同じ場合。"
+  ],
+  "related": [
+    "similar-triangles",
+    "scale-factor",
+    "congruent",
+    "dilation",
+    "similarity-criteria"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "triangles are similar | figures are similar | polygons are similar | rectangles are similar | shapes are similar | similar figures | similar polygons | similar solids | similar rectangles | is similar to triangle": 12
+    },
+    "written": {
+      "triangles are similar | figures are similar | polygons are similar | rectangles are similar | shapes are similar | similar figures | similar polygons | similar solids | similar rectangles | is similar to triangle": 22
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-18.03",
+      "openstax-elemalg",
+      "openstax-prealgebra",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

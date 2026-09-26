@@ -1,0 +1,83 @@
+{
+  "id": "angle-inscribed-in-a-semicircle",
+  "ja": {
+    "term": "直径に対する円周角",
+    "reading": "ちょっけいにたいするえんしゅうかく",
+    "alt": []
+  },
+  "en": {
+    "term": "angle inscribed in a semicircle",
+    "alt": [
+      "inscribed in a semicircle",
+      "Thales' theorem"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない。日本語の「直径に対する円周角」に当たる名前はなく、an angle inscribed in a semicircle is a right angle のように性質を文で言う。この性質を Thales' theorem（タレスの定理）と人名で呼ぶこともある。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "直径 AB の両端と、円周上の A、B 以外の点 P を結んでできる円周角 ∠APB。その大きさはいつも 90° になる。",
+  "definition_en": "An inscribed angle APB whose sides pass through the endpoints of a diameter AB, so the arc it intercepts is a semicircle. It is always a right angle.",
+  "latex": "\\angle APB = 90^\\circ",
+  "spoken_en": "angle APB equals 90 degrees",
+  "examples": [
+    {
+      "en": "AB is a diameter, so this is an angle inscribed in a semicircle, and that means it's 90 degrees.",
+      "ja": "AB は直径だから、これは直径に対する円周角で、90° になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "∠APB is an angle inscribed in a semicircle, so ∠APB = 90° and ∠PBA = 180° − 90° − 28° = 62°.",
+      "ja": "∠APB は直径に対する円周角だから ∠APB = 90° で、∠PBA = 180° − 90° − 28° = 62° である。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語は直径の側から「直径に対する円周角」と言うが、英語の an angle inscribed in a semicircle は半円（弧）の側から言う。",
+    "Thales' theorem の Thales は、英語では「セイリーズ」に近く発音する。日本語の「タレス」と聞き比べて覚える。",
+    "逆も成り立つ。∠APB = 90° なら、AB は 3 点 A、B、P を通る円の直径になる。"
+  ],
+  "related": [
+    "inscribed-angle-theorem",
+    "semicircle",
+    "diameter",
+    "right-angle",
+    "inscribed-angle"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

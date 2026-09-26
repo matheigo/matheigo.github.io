@@ -1,0 +1,86 @@
+{
+  "id": "subtended-by",
+  "ja": {
+    "term": "弧に対する",
+    "reading": "こにたいする",
+    "alt": []
+  },
+  "en": {
+    "term": "subtended by",
+    "alt": [
+      "subtend"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "日本語の「弧 AB に対する円周角」の「に対する」はふつうの助詞だが、英語では subtend という決まった動詞を使い、the inscribed angle subtended by arc AB と言う。動詞 subtend は「（弧や辺が、ある角を）張る・対する」の意味。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "円周角や中心角が、ある弧（または線分）の両端を通る 2 辺でできていることを表す言い方。「弧 AB に対する円周角」の「に対する」に当たる。",
+  "definition_en": "Said of an angle whose sides pass through the two endpoints of an arc or a segment: the angle is subtended by that arc or segment. With the arc as the subject, you say the arc subtends the angle.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The central angle is 70, so the inscribed angle subtended by arc AB is half of that, 35 degrees.",
+      "ja": "中心角が 70° だから、弧 AB に対する円周角はその半分の 35° だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In circle O, ∠BOC = 110°, and A is a point on major arc BC. Find ∠BAC, the inscribed angle subtended by arc BC.",
+      "ja": "円 O で ∠BOC = 110° であり、点 A は長い方の弧 BC 上にある。弧 BC に対する円周角 ∠BAC の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "主語の向きに注意。弧を主語にすると能動で arc AB subtends ∠APB（弧 AB が ∠APB を張る）、角を主語にすると受け身で ∠APB is subtended by arc AB（∠APB は弧 AB に対する角）。",
+    "subtend は弧だけでなく、辺（線分）がある点に対して角を張るときにも使う（∠APB is subtended by segment AB）。",
+    "角の側から弧を言う言い方はエントリ intercepted-arc。subtend とは主語と目的語が入れかわる。"
+  ],
+  "related": [
+    "inscribed-angle",
+    "central-angle",
+    "arc",
+    "intercepted-arc",
+    "inscribed-angle-theorem"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "subtended by": 14
+    },
+    "written": {
+      "subtended by": 8
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

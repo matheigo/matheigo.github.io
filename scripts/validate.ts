@@ -105,6 +105,8 @@ const SAME_EN_TERM: [string, string][] = [
   ["corresponding-angles", "corresponding-angles-of-congruent-figures"], // 同位角 ／ 対応する角
   ["range", "range-of-data"], // 値域 ／ 範囲（統計）
   ["square", "square-shape"], // 平方（2 乗） ／ 正方形
+  ["divisor", "factor"], // 約数 ／ 因数（英語はどちらも factor）
+  ["estimation", "bound-estimate"], // 推定（統計） ／ 評価する（値の範囲をはさむ）
 ];
 const intendedHomonym = (a: string, b: string) =>
   SAME_EN_TERM.some(([x, y]) => (x === a && y === b) || (x === b && y === a));

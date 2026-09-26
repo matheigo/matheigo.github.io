@@ -1,0 +1,95 @@
+{
+  "id": "error",
+  "ja": {
+    "term": "誤差",
+    "reading": "ごさ",
+    "alt": []
+  },
+  "en": {
+    "term": "error",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "近似値（測定値）と真の値との差。誤差 = 近似値 − 真の値 で求める。",
+  "definition_en": "The difference between an approximate or measured value and the true value: error = approximate value − true value.",
+  "latex": "\\text{error} = \\text{approximate value} - \\text{true value}",
+  "spoken_en": "error equals approximate value minus true value",
+  "examples": [
+    {
+      "en": "The true length is 12.6 centimeters and your measurement is 12.8, so the error is 0.2 centimeters.",
+      "ja": "本当の長さは 12.6 cm で、測定値は 12.8 cm だから、誤差は 0.2 cm。",
+      "register": "spoken"
+    },
+    {
+      "en": "The number 3.786 is rounded to the nearest tenth, 3.8. Find the error of this approximation.",
+      "ja": "3.786 の小数第 2 位を四捨五入して 3.8 とした。この近似値の誤差を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の error は「まちがい」の意味でもよく使うので、Find the error. だけだと「まちがいを見つけよ」ともとれる。誤差の意味では absolute error、measurement error、rounding error のように前に語を付けて言うことが多い。",
+    "統計の margin of error（誤差の範囲、エントリ error-bound）や標本誤差（sampling error、エントリ sampling-error）は別の用語。",
+    "誤差 = 近似値 − 真の値 なので、近似値が真の値より小さいと誤差は負の数になる（真の値 3.14159… に対して近似値 3.14 なら、誤差は約 −0.0016）。"
+  ],
+  "related": [
+    "approximate-value",
+    "measurement",
+    "significant-figures",
+    "round",
+    "error-bound"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "誤差",
+      "en": "Errors and residuals"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "absolute error | measurement error | error in the measurement | error in measurement | amount of error | round-off error | rounding error": 1
+    },
+    "written": {
+      "absolute error | measurement error | error in the measurement | error in measurement | amount of error | round-off error | rounding error": 34
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

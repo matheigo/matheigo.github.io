@@ -1,0 +1,80 @@
+{
+  "id": "converse-of-the-inscribed-angle-theorem",
+  "ja": {
+    "term": "円周角の定理の逆",
+    "reading": "えんしゅうかくのていりのぎゃく",
+    "alt": []
+  },
+  "en": {
+    "term": "converse of the inscribed angle theorem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "2 点 P、Q が直線 AB について同じ側にあって ∠APB = ∠AQB ならば、4 点 A、B、P、Q は 1 つの円周上にあるという定理。",
+  "definition_en": "The theorem that if points P and Q are on the same side of line AB and ∠APB = ∠AQB, then A, B, P, and Q all lie on one circle.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "P and Q are on the same side of AB, and both angles are 40 degrees, so by the converse of the inscribed angle theorem, A, B, P, and Q are all on one circle.",
+      "ja": "P と Q は AB について同じ側にあって、どちらの角も 40° だから、円周角の定理の逆より、A、B、P、Q は 1 つの円周上にある。",
+      "register": "spoken"
+    },
+    {
+      "en": "In quadrilateral ABCD, ∠BAC = ∠BDC = 35°. Use the converse of the inscribed angle theorem to prove that A, B, C, and D are on one circle.",
+      "ja": "四角形 ABCD で、∠BAC = ∠BDC = 35° である。円周角の定理の逆を用いて、4 点 A、B、C、D が 1 つの円周上にあることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "条件の「2 点 P、Q が直線 AB について同じ側にある」を落とさない。P、Q が反対側にあるときは、∠APB + ∠AQB = 180° なら 4 点が同じ円周上にある（エントリ cyclic-quadrilateral）。",
+    "「逆」は converse（エントリ converse）で、仮定と結論を入れかえた命題。元の定理が正しくても逆が正しいとは限らないが、円周角の定理では逆も成り立つ。",
+    "4 点が同じ円周上にあることはエントリ concyclic、4 つの頂点が 1 つの円周上にある四角形はエントリ cyclic-quadrilateral。"
+  ],
+  "related": [
+    "inscribed-angle-theorem",
+    "concyclic",
+    "converse",
+    "cyclic-quadrilateral",
+    "inscribed-angle"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "certain",
+  "ja": {
+    "term": "必ず起こる",
+    "reading": "かならずおこる",
+    "alt": []
+  },
+  "en": {
+    "term": "certain",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "あることがらが、いつでも必ず起こること。必ず起こることがらの確率は 1 である。",
+  "definition_en": "Sure to happen every time. An event that is certain has a probability of 1.",
+  "latex": "P(A) = 1",
+  "spoken_en": "P of A equals one",
+  "examples": [
+    {
+      "en": "Rolling a number less than 7 on a regular die is certain, so the probability is 1.",
+      "ja": "ふつうのさいころで 7 より小さい目が出るのは必ず起こることだから、確率は 1。",
+      "register": "spoken"
+    },
+    {
+      "en": "A bag contains only blue marbles. Explain why drawing a blue marble is certain, and give its probability.",
+      "ja": "袋の中には青玉だけが入っている。青玉を取り出すことが必ず起こる理由を説明し、その確率を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "a certain number（ある数）のように a certain を名詞の前に置くと「ある…」（特定の）の意味になる。a certain event も「ある事象」と読めるので、「必ず起こる事象」をはっきり言うときは an event that is certain to happen と言う。",
+    "日本語の「必ず起こる」は動詞の形だが、英語の certain は形容詞で、The event is certain. ／ It is certain to happen. のように be 動詞と使う。",
+    "確率の反対の端は、決して起こらないことがら（impossible、エントリ impossible）の確率 0。"
+  ],
+  "related": [
+    "impossible",
+    "likelihood",
+    "probability",
+    "event",
+    "sample-space"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "!a certain event | event is certain | certain to happen | certain to occur": 1
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 !a certain event | event is certain | certain to happen | certain to occur（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

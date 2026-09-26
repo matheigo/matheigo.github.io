@@ -1,0 +1,82 @@
+{
+  "id": "scale-drawing",
+  "ja": {
+    "term": "縮図",
+    "reading": "しゅくず",
+    "alt": []
+  },
+  "en": {
+    "term": "scale drawing",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "実物の形を変えずに、すべての長さを同じ割合で縮めてかいた図。縮めた割合を縮尺という。",
+  "definition_en": "A drawing of a real object or place in which every length is multiplied by the same number, so the shape stays the same. The scale tells how a length on the drawing compares with the actual length.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "On this scale drawing, 1 inch stands for 10 feet, so a wall that's 3 inches long on paper is really 30 feet.",
+      "ja": "この縮図では 1 インチが 10 フィートを表すから、紙の上で 3 インチの壁は実際には 30 フィートだね。",
+      "register": "spoken"
+    },
+    {
+      "en": "A scale drawing of a park uses a scale of 1 cm to 50 m, and the park is 7 cm long on the drawing. Find the actual length of the park.",
+      "ja": "1 cm が 50 m を表す縮尺でかいた公園の縮図で、公園の長さは 7 cm である。公園の実際の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の scale drawing は、縮めた図にも拡大した図にも使う。日本語の「縮図」と「拡大図」の両方に当たる。",
+    "縮尺（エントリ scale）は 1 : 5000 のように単位のない比でも、1 cm で 50 m のように単位付きでも表せる。単位付きのときは単位をそろえてから比に直す（1 cm : 50 m = 1 cm : 5000 cm = 1 : 5000）。",
+    "scale は「縮尺」のほかに、グラフの軸の「目盛り」や「はかり」の意味でも使う。"
+  ],
+  "related": [
+    "scale",
+    "scale-factor",
+    "similar",
+    "dilation",
+    "ratio"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7)",
+      "url": "https://im.kendallhunt.com/MS/students/2/index.html",
+      "note": "Grade 7 のレッスン（1.1 What are Scaled Copies? の単元ほか）で scale drawing を使う"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "scale drawing": 11
+    },
+    "sources": [
+      "khan-middle"
+    ],
+    "counted": "2026-09-25"
+  }
+}

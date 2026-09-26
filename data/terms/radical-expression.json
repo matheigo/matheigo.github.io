@@ -1,0 +1,90 @@
+{
+  "id": "radical-expression",
+  "ja": {
+    "term": "根号式",
+    "reading": "こんごうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "radical expression",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": "見出しの「根号式」は日本の教科書に無い、本プロジェクトの訳語。日本では「根号を含む式」と言う。米国の教科書（OpenStax Elementary Algebra）は radical expression と呼び、簡単にすることを simplify radical expressions と言う（エントリ simplify-radicals）。",
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "大学",
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "根号 √ をふくむ式。√12 や 3√2 + √8 など。",
+  "definition_en": "An expression that contains a radical, such as a square root. For example, √12 and 3√2 + √8 are radical expressions.",
+  "latex": "3\\sqrt{2} + \\sqrt{8} = 5\\sqrt{2}",
+  "spoken_en": "three root two plus root eight equals five root two",
+  "examples": [
+    {
+      "en": "This is a radical expression, so before you add anything, simplify each radical: √8 is 2√2.",
+      "ja": "これは根号をふくむ式だから、たす前にそれぞれの根号を簡単にしよう。√8 は 2√2 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Simplify the radical expression √12 + √27 − √3.",
+      "ja": "√12 + √27 − √3 を計算せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "radical は根号（√、radical sign、エントリ radical-sign）や、根号のついた数・式のこと。radical expression は根号をふくむ式全体を指す。",
+    "英語の radical は日常語では「過激な」「根本的な」の意味で使う単語。",
+    "根号をふくむ式を簡単にすることは simplify radical expressions と言う（エントリ simplify-radicals）。分母の根号をなくすのは rationalize the denominator（エントリ rationalizing-the-denominator）。"
+  ],
+  "related": [
+    "radical-sign",
+    "square-root",
+    "simplify-radicals",
+    "rationalizing-the-denominator",
+    "expression"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "radical expression": 9
+    },
+    "written": {
+      "radical expression": 122
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-25"
+  }
+}

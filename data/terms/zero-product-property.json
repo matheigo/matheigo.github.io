@@ -1,0 +1,93 @@
+{
+  "id": "zero-product-property",
+  "ja": {
+    "term": "零因子の性質",
+    "reading": "れいいんしのせいしつ",
+    "alt": [
+      "零積の性質"
+    ]
+  },
+  "en": {
+    "term": "zero product property",
+    "alt": [
+      "zero-product property",
+      "zero product rule"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「零因子の性質」は日本の教科書に無い、本プロジェクトの訳語。日本の教科書はこの性質に名前を付けず、「AB = 0 ならば A = 0 または B = 0」という文のまま使う。米国の教科書 OpenStax Elementary Algebra は zero product property と名前を付け、因数分解で二次方程式を解くときの根拠として書く。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "2 つの数の積が 0 ならば、少なくとも一方は 0 であるという性質。AB = 0 ならば A = 0 または B = 0。",
+  "definition_en": "If the product of two numbers is 0, then at least one of them must be 0. In symbols, if ab = 0, then a = 0 or b = 0.",
+  "latex": "ab = 0 \\Rightarrow a = 0 \\text{ or } b = 0",
+  "spoken_en": "if a times b equals zero, then a equals zero or b equals zero",
+  "examples": [
+    {
+      "en": "The product is zero, so by the zero product property, either x − 4 is zero or x + 1 is zero.",
+      "ja": "積が 0 だから、「AB = 0 ならば A = 0 または B = 0」で、x − 4 = 0 か x + 1 = 0 のどちらかだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the zero product property to solve (2x − 1)(x + 5) = 0.",
+      "ja": "AB = 0 ならば A = 0 または B = 0 であることを用いて、方程式 (2x − 1)(x + 5) = 0 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "右辺が 0 のときだけ使える。(x − 1)(x − 2) = 6 から x − 1 = 6 や x − 2 = 6 とはできない（積が 6 になる 2 数の組は無数にある）。展開して x² − 3x − 4 = 0 と右辺を 0 にしてから因数分解する。",
+    "「または」（or）は両方が 0 の場合も含む。A = 0 or B = 0 は「どちらか一方だけが 0」の意味ではない。",
+    "「零因子」は大学の代数学では zero divisor（0 でない元で、0 でない元とかけると 0 になるもの）の訳語。実数には zero divisor がないというのがこの性質の中身で、英語の名前は zero product property。"
+  ],
+  "related": [
+    "solving-by-factoring",
+    "factoring",
+    "quadratic-equation",
+    "factored-form",
+    "zeros-of-a-polynomial"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "zero product property": 8
+    },
+    "written": {
+      "zero-product property": 16,
+      "zero product property": 80
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

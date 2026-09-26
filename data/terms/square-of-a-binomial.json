@@ -1,0 +1,95 @@
+{
+  "id": "square-of-a-binomial",
+  "ja": {
+    "term": "平方の公式",
+    "reading": "へいほうのこうしき",
+    "alt": [
+      "和の平方",
+      "差の平方"
+    ]
+  },
+  "en": {
+    "term": "binomial squares",
+    "alt": [
+      "square of a binomial",
+      "square of a sum",
+      "square of a difference"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "2 つの項の和や差を 2 乗したものを展開する公式。(a + b)² = a² + 2ab + b²、(a − b)² = a² − 2ab + b² である。",
+  "definition_en": "The patterns for squaring a binomial: (a + b)² = a² + 2ab + b² and (a − b)² = a² − 2ab + b². The middle term is twice the product of the two terms.",
+  "latex": "(a \\pm b)^2 = a^2 \\pm 2ab + b^2",
+  "spoken_en": "the quantity a plus or minus b, squared, equals a squared plus or minus two a b, plus b squared",
+  "examples": [
+    {
+      "en": "This is the square of a binomial, so don't forget the middle term: (x + 3)² is x² + 6x + 9, not x² + 9.",
+      "ja": "これは平方の公式の形だから、まん中の項を忘れないこと。(x + 3)² は x² + 6x + 9 で、x² + 9 じゃない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the binomial squares pattern to expand (2x − 5)².",
+      "ja": "平方の公式を利用して、(2x − 5)² を展開せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "(a + b)² を a² + b² としない。まん中の 2ab を落とさない。",
+    "(a − b)² のまん中の項は −2ab だが、最後の b² はプラスのまま。(x − 4)² = x² − 8x + 16。",
+    "OpenStax Elementary Algebra はこの公式を Binomial Squares Pattern と呼ぶ。展開した a² + 2ab + b² の形は perfect square trinomial（完全平方式、エントリ perfect-square-trinomial）。"
+  ],
+  "related": [
+    "special-products",
+    "perfect-square-trinomial",
+    "difference-of-squares",
+    "expand",
+    "completing-the-square"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "square of a binomial": 1
+    },
+    "written": {
+      "square of a binomial": 16,
+      "binomial squares": 100
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "impossible",
+  "ja": {
+    "term": "決して起こらない",
+    "reading": "けっしておこらない",
+    "alt": []
+  },
+  "en": {
+    "term": "impossible",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "probability"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "あることがらが、どんなときにも決して起こらないこと。決して起こらないことがらの確率は 0 である。",
+  "definition_en": "Never able to happen. An event that is impossible has a probability of 0.",
+  "latex": "P(A) = 0",
+  "spoken_en": "P of A equals zero",
+  "examples": [
+    {
+      "en": "You can't roll an 8 on a regular die, so that's impossible, and the probability is 0.",
+      "ja": "ふつうのさいころで 8 の目は出ないから、それは決して起こらないことで、確率は 0。",
+      "register": "spoken"
+    },
+    {
+      "en": "Two dice are rolled. Explain why getting a sum of 13 is impossible, and find its probability.",
+      "ja": "2 個のさいころを投げる。出た目の和が 13 になることが決して起こらない理由を説明し、その確率を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "どんな確率 p も 0 ≦ p ≦ 1。計算した確率が負になったり 1 を超えたりしたら、どこかが間違っている。",
+    "確率が小さくて起こりにくいこと（unlikely）と、決して起こらないこと（impossible、確率 0）を区別する。",
+    "日本語の「決して起こらない」は動詞の形だが、英語の impossible は形容詞で、It is impossible to roll an 8. ／ The event is impossible. のように使う。"
+  ],
+  "related": [
+    "certain",
+    "likelihood",
+    "probability",
+    "event",
+    "die"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "impossible event | event is impossible | impossible to happen | impossible to occur": 1
+    },
+    "written": {
+      "impossible event | event is impossible | impossible to happen | impossible to occur": 3
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 impossible event | event is impossible | impossible to happen | impossible to occur（本文 3 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

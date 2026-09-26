@@ -1,0 +1,94 @@
+{
+  "id": "semicircle",
+  "ja": {
+    "term": "半円",
+    "reading": "はんえん",
+    "alt": []
+  },
+  "en": {
+    "term": "semicircle",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "円を直径で 2 つに分けたときの一方。弧だけを指すことも、弧と直径で囲まれた図形を指すこともある。",
+  "definition_en": "Half of a circle, cut off by a diameter. It can mean just the arc or the region bounded by the arc and the diameter.",
+  "latex": "A = \\frac{1}{2}\\pi r^2",
+  "spoken_en": "A equals one half pi r squared",
+  "examples": [
+    {
+      "en": "A semicircle is just half a circle, so its area is half of pi r squared.",
+      "ja": "半円は円の半分だから、面積は πr² の半分だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the area of a semicircle with a diameter of 12 cm. Leave your answer in terms of π.",
+      "ja": "直径 12 cm の半円の面積を求めよ。答えは π を用いて表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "半円の周の長さ（perimeter）は、弧の長さ πr に直径 2r を足した πr + 2r。弧の長さ πr だけと取り違えない。",
+    "semi- は「半分」の意味。弧としての半円は semicircular arc とも言い、semicircular は「半円の」という形容詞。",
+    "ちょうど 180° の弧である半円の弧は、優弧（major arc）にも劣弧（minor arc）にも入れない（エントリ major-arc、minor-arc）。"
+  ],
+  "related": [
+    "circle",
+    "diameter",
+    "arc",
+    "angle-inscribed-in-a-semicircle",
+    "arc-length"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "半円",
+      "en": "Semicircle"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "semicircle": 28
+    },
+    "written": {
+      "semicircle": 43
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "significant-figures",
+  "ja": {
+    "term": "有効数字",
+    "reading": "ゆうこうすうじ",
+    "alt": []
+  },
+  "en": {
+    "term": "significant digits",
+    "alt": [],
+    "variants": [
+      {
+        "term": "significant figures",
+        "register": "spoken",
+        "note": "話し言葉ではこちらが多いが、すべて Khan Academy の中学の講義。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の中 3 では、有効数字をはっきりさせるために測定値を 2.30 × 10³ のように（整数部分が 1 桁の数）×（10 の累乗）の形で書く。英語ではこの書き方を scientific notation と呼び、有効数字そのもの（significant digits）とは別の名前で言う。見出しは教科書（OpenStax Calculus）の significant digits で、話し言葉では significant figures（sig figs）とも言う。",
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "測定値などの近似値のうち、信頼できる桁の数字。2.30 × 10³ のように（整数部分が 1 桁の数）×（10 の累乗）の形で書くと、どの桁までが有効数字かがはっきりする。",
+  "definition_en": "The digits of a measured or approximate value that can be trusted. For example, 2.30 × 10³ has three significant digits: 2, 3, and 0.",
+  "latex": "2.30 \\times 10^{3}",
+  "spoken_en": "two point three zero times ten to the third",
+  "examples": [
+    {
+      "en": "The zero at the end of 2.30 counts, so that's three significant digits.",
+      "ja": "2.30 の最後の 0 も数えるから、有効数字は 3 桁だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "The length of a road was measured to the nearest 10 m as 4370 m. Write this measurement in scientific notation with three significant digits.",
+      "ja": "ある道のりを、10 m 未満を四捨五入して測ったら 4370 m だった。この測定値を、有効数字を 3 桁として、（整数部分が 1 桁の数）×（10 の累乗）の形で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語では、2.30 × 10³ のように（整数部分が 1 桁の数）×（10 の累乗）で書く形を scientific notation と呼ぶ。有効数字（significant digits）とは別の名前。",
+    "話し言葉では significant figures とも言い、sig figs と縮めることもある。",
+    "2.30 の最後の 0 は有効数字に数える。2.3 × 10³ と書くと有効数字は 2 桁で、2.30 × 10³ とは測定の精度が違う。"
+  ],
+  "related": [
+    "measurement",
+    "error",
+    "approximate-value",
+    "round",
+    "digit"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "有効数字",
+      "en": "Significant figures"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "significant digits": 35,
+      "significant figures": 57
+    },
+    "written": {
+      "significant digits": 13,
+      "significant figures": 2
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

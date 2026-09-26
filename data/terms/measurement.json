@@ -1,0 +1,97 @@
+{
+  "id": "measurement",
+  "ja": {
+    "term": "測定値",
+    "reading": "そくていち",
+    "alt": []
+  },
+  "en": {
+    "term": "measurement",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "長さ・重さ・時間などを測って得た値。測定値は近似値で、真の値との間に誤差がある。",
+  "definition_en": "A value obtained by measuring a quantity such as length, weight, or time. A measurement is an approximate value, so it differs a little from the true value.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A measurement is never exact. If your ruler only has millimeter marks, 12.8 centimeters really means somewhere from 12.75 to 12.85.",
+      "ja": "測定値はぴったりの値にはならない。定規に 1 mm の目盛りしかなければ、12.8 cm というのは、本当は 12.75 cm から 12.85 cm の間のどこか、ということ。",
+      "register": "spoken"
+    },
+    {
+      "en": "The mass of a bag of rice was measured to the nearest 10 g, and the measurement was 2350 g. Letting the true mass be a g, write the range of a as an inequality.",
+      "ja": "米袋の重さを、10 g 未満を四捨五入して測ったところ、測定値は 2350 g だった。真の値を a g として、a の範囲を不等号を使って表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の measurement は「測った値」のほかに、「測ること」そのもの（動詞は measure、エントリ measure）や、単位の体系（the metric system of measurement）の意味でも使う。",
+    "測定値と真の値との差が誤差（エントリ error）。測定値のどの桁まで信頼できるかは有効数字（エントリ significant-figures）で表す。",
+    "12.8 cm と 12.80 cm は、測定値としては精度が違う。12.80 cm は 0.01 cm の位まで測った値。"
+  ],
+  "related": [
+    "measure",
+    "error",
+    "approximate-value",
+    "significant-figures",
+    "round"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "!of !linear measurement !error !errors !of !unit !units !system !systems": 69
+    },
+    "written": {
+      "!of !linear measurement !error !errors !of !unit !units !system !systems": 89
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

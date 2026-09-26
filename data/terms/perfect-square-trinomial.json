@@ -1,0 +1,92 @@
+{
+  "id": "perfect-square-trinomial",
+  "ja": {
+    "term": "完全平方式",
+    "reading": "かんぜんへいほうしき",
+    "alt": [
+      "完全平方三項式"
+    ]
+  },
+  "en": {
+    "term": "perfect square trinomial",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "(a + b)² や (a − b)² を展開した形の、3 つの項からなる式。たとえば x² + 6x + 9 = (x + 3)² である。",
+  "definition_en": "A trinomial that is the square of a binomial, such as x² + 6x + 9 = (x + 3)². It has the form a² + 2ab + b² or a² − 2ab + b².",
+  "latex": "a^2 + 2ab + b^2 = (a + b)^2",
+  "spoken_en": "a squared plus two a b plus b squared equals the quantity a plus b, squared",
+  "examples": [
+    {
+      "en": "x² + 10x + 25 is a perfect square trinomial: half of 10 is 5, and 5 squared is 25, so it's (x + 5)².",
+      "ja": "x² + 10x + 25 は完全平方式。10 の半分が 5 で、5 の 2 乗が 25 だから、(x + 5)² になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the value of c that makes x² − 14x + c a perfect square trinomial.",
+      "ja": "x² − 14x + c が完全平方式になるような c の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "perfect square だけだと、16 や 25 のような平方数の意味にもなる。3 つの項の式であることを表すのが trinomial。",
+    "まん中の項が 2ab になっているかを確かめる。x² + 6x + 16 は、x² と 16 = 4² がどちらも 2 乗でも、2 × x × 4 = 8x にならないので完全平方式ではない。",
+    "x² + bx に (b/2)² を足して完全平方式を作るのが平方完成（エントリ completing-the-square）。"
+  ],
+  "related": [
+    "square-of-a-binomial",
+    "completing-the-square",
+    "trinomial",
+    "factoring",
+    "special-products"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "perfect square trinomial": 11
+    },
+    "written": {
+      "perfect square trinomial": 87
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

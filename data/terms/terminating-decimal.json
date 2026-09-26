@@ -1,0 +1,95 @@
+{
+  "id": "terminating-decimal",
+  "ja": {
+    "term": "有限小数",
+    "reading": "ゆうげんしょうすう",
+    "alt": []
+  },
+  "en": {
+    "term": "terminating decimal",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "小数点以下の数字が、ある位で終わる小数。0.25 や 1.375 などで、有限小数は分数で表せる数（有理数）である。",
+  "definition_en": "A decimal whose digits after the decimal point stop after a certain place, such as 0.25 or 1.375. Every terminating decimal is a rational number.",
+  "latex": "\\frac{3}{8} = 0.375",
+  "spoken_en": "three eighths equals zero point three seven five",
+  "examples": [
+    {
+      "en": "Three eighths is a terminating decimal: divide it out and you get 0.375, and then it just stops.",
+      "ja": "8 分の 3 は有限小数。割り算をすると 0.375 になって、そこで終わる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Select all of the following fractions that can be written as a terminating decimal: 3/8, 5/12, 7/20.",
+      "ja": "次の分数のうち、有限小数で表せるものをすべて選べ。3/8、5/12、7/20",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "terminate は「終わる」という意味の動詞。terminating decimal は「桁がそこで終わる小数」という言い方で、「有限」に当たる語は入っていない。",
+    "有理数を小数で表すと、有限小数か循環小数（repeating decimal、エントリ repeating-decimal）のどちらかになる。有限小数でない小数は無限小数（エントリ non-terminating-decimal）。",
+    "既約分数が有限小数になるのは、分母の素因数が 2 と 5 だけのとき（3/8 = 0.375、7/20 = 0.35）。5/12 のように分母に 3 などの素因数があると循環小数になる。"
+  ],
+  "related": [
+    "decimal",
+    "repeating-decimal",
+    "non-terminating-decimal",
+    "rational-number",
+    "prime-factorization"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Algebra (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Algebra",
+      "note": "1.1 Real Numbers"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "terminating decimal": 1
+    },
+    "written": {
+      "terminating decimal": 5
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。見出しは CK-12 の呼び方 terminating decimal（CK-12 Algebra 1.1 Real Numbers・CK-12 Algebra 2.4.3 Multi-Step Equations with Fractions・CK-12 Algebra 2.4.4 Multi-Step Equations with Decimals・計 8 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

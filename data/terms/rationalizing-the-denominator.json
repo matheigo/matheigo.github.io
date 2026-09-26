@@ -1,0 +1,92 @@
+{
+  "id": "rationalizing-the-denominator",
+  "ja": {
+    "term": "分母の有理化",
+    "reading": "ぶんぼのゆうりか",
+    "alt": [
+      "有理化する"
+    ]
+  },
+  "en": {
+    "term": "rationalizing the denominator",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "分母に根号をふくむ分数の分母と分子に同じ数を掛けて、分母に根号をふくまない形に直すこと。1/√2 = √2/2 など。",
+  "definition_en": "Rewriting a fraction so that there is no radical in the denominator, by multiplying the numerator and the denominator by the same number. For example, 1/√2 = √2/2.",
+  "latex": "\\frac{1}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2}",
+  "spoken_en": "one over the square root of two equals the square root of two over two",
+  "examples": [
+    {
+      "en": "Rationalizing the denominator just means getting the radical out of the bottom, so multiply the top and the bottom by √3.",
+      "ja": "分母の有理化というのは、分母から根号をなくすこと。だから分母と分子に √3 を掛けよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Simplify 6/√3 by rationalizing the denominator.",
+      "ja": "6/√3 の分母を有理化せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語では名詞句より、動詞句 rationalize the denominator で言うことが多い（問題文の Rationalize the denominator. が「分母を有理化せよ」）。",
+    "根号の中の数を小さくする操作（simplify the radical、エントリ simplify-radicals）とは別の操作。6/√3 = 6√3/3 = 2√3 のように、有理化したあとで約分できることがある。",
+    "分母が √3 + √2 のような 2 項の和のときは、√3 − √2 を分母と分子に掛けて有理化する（日本では数学 I で扱う）。"
+  ],
+  "related": [
+    "simplify-radicals",
+    "square-root",
+    "denominator",
+    "irrational-number",
+    "radical-expression"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "rationalizing the denominator": 13
+    },
+    "written": {
+      "rationalizing the denominator": 36
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

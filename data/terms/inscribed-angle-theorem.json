@@ -1,0 +1,96 @@
+{
+  "id": "inscribed-angle-theorem",
+  "ja": {
+    "term": "円周角の定理",
+    "reading": "えんしゅうかくのていり",
+    "alt": []
+  },
+  "en": {
+    "term": "inscribed angle theorem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "1 つの弧に対する円周角の大きさは、その弧に対する中心角の大きさの半分であるという定理。このことから、同じ弧に対する円周角はすべて等しい。",
+  "definition_en": "The theorem that the measure of an inscribed angle is half the measure of the central angle that intercepts the same arc. So all inscribed angles that intercept the same arc are equal.",
+  "latex": "\\angle APB = \\frac{1}{2}\\angle AOB",
+  "spoken_en": "angle APB equals one half of angle AOB",
+  "examples": [
+    {
+      "en": "By the inscribed angle theorem, this angle is half of 100, so it's 50 degrees.",
+      "ja": "円周角の定理より、この角は 100° の半分だから 50° だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Points A, B, and C are on circle O, and C is on major arc AB. If ∠AOB = 136°, use the inscribed angle theorem to find ∠ACB.",
+      "ja": "円 O の周上に 3 点 A、B、C があり、C は長い方の弧 AB 上にある。∠AOB = 136° のとき、円周角の定理を用いて ∠ACB の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "円周角は inscribed angle（エントリ inscribed-angle）、中心角は central angle（エントリ central-angle）。定理の名前は円周角の側から inscribed angle theorem と呼ぶ。",
+    "「円周角は中心角の半分」は、同じ弧に対する角どうしの関係。円周上の点が短い方の弧の上にあるときは、長い方の弧に対する中心角（360° から中心角 ∠AOB を引いた角）の半分になる。",
+    "4 点が同じ円周上にあることを示す逆の定理は、エントリ converse-of-the-inscribed-angle-theorem。"
+  ],
+  "related": [
+    "inscribed-angle",
+    "central-angle",
+    "converse-of-the-inscribed-angle-theorem",
+    "angle-inscribed-in-a-semicircle",
+    "intercepted-arc"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "円周角",
+      "en": "Inscribed angle"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.14 Inscribed Angles in Circles"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "inscribed angle theorem": 8
+    },
+    "sources": [
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 inscribed angle theorem（CK-12 Geometry 6.14 Inscribed Angles in Circles・CK-12 Geometry 6.13 Segments from Chords・CK-12 Geometry 6.19 Intersecting Secants Theorem・計 8 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

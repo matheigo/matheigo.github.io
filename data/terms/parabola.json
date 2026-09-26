@@ -1,0 +1,108 @@
+{
+  "id": "parabola",
+  "ja": {
+    "term": "放物線",
+    "reading": "ほうぶつせん",
+    "alt": []
+  },
+  "en": {
+    "term": "parabola",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "二次関数 y = ax² のグラフのような形の曲線。軸について線対称で、軸との交点を頂点という。",
+  "definition_en": "The U-shaped curve that is the graph of a quadratic function such as y = ax². It is symmetric about its axis of symmetry, and the point where it turns around is its vertex.",
+  "latex": "y = ax^2",
+  "spoken_en": "y equals a x squared",
+  "examples": [
+    {
+      "en": "This parabola opens upward, so the vertex is the lowest point on the graph.",
+      "ja": "この放物線は上に開いているから、頂点がグラフのいちばん低い点だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "The parabola y = ax² passes through the point (−2, 8). Find the value of a.",
+      "ja": "放物線 y = ax² が点 (−2, 8) を通るとき、a の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "発音は日本語の「パラボラ」と違い、2 つ目の音節 ra を強く読む。",
+    "a > 0 なら opens upward（日本語の「下に凸」）、a < 0 なら opens downward（「上に凸」）。上下の語が日本語と逆になる（エントリ opens-upward、opens-downward）。",
+    "放物線の軸は axis of symmetry、頂点は vertex（エントリ axis-of-symmetry、vertex）。axis だけでは x 軸・y 軸と紛れる。"
+  ],
+  "related": [
+    "quadratic-function",
+    "vertex",
+    "axis-of-symmetry",
+    "opens-upward",
+    "opens-downward"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "放物線",
+      "en": "Parabola"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "parabola": 334
+    },
+    "written": {
+      "parabola": 728
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

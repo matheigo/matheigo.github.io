@@ -1,0 +1,96 @@
+{
+  "id": "special-products",
+  "ja": {
+    "term": "乗法公式",
+    "reading": "じょうほうこうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "special products",
+    "alt": [
+      "product formulas"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「乗法公式」は展開の公式をまとめた呼び名。米国の教科書 OpenStax Elementary Algebra はこれらを special products と呼び、1 つずつ Binomial Squares Pattern（(a + b)²、(a − b)²、エントリ square-of-a-binomial）、Product of Conjugates Pattern（(a + b)(a − b)、エントリ difference-of-squares）という名前で扱う。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "(x + a)(x + b)、(a + b)²、(a − b)²、(a + b)(a − b) のような、よく出てくる積を展開するための公式。左辺と右辺を入れ替えて使うと、因数分解の公式になる。",
+  "definition_en": "Shortcut patterns for multiplying common kinds of binomials, such as (a + b)², (a − b)², and (a + b)(a − b). Used in reverse, they become patterns for factoring.",
+  "latex": "(x + a)(x + b) = x^2 + (a + b)x + ab",
+  "spoken_en": "the quantity x plus a times the quantity x plus b equals x squared plus the quantity a plus b times x, plus a b",
+  "examples": [
+    {
+      "en": "These special products show up all the time, so learn them and you won't have to multiply everything out.",
+      "ja": "この乗法公式はしょっちゅう出てくるから、覚えておけば毎回全部展開しなくて済む。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use special products to multiply (3x + 2)(3x − 2).",
+      "ja": "乗法公式を利用して、(3x + 2)(3x − 2) を展開せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "(x + a)(x + b) の x の係数は a と b の和、定数項は a と b の積。符号をつけたまま計算する（(x + 5)(x − 3) = x² + 2x − 15）。",
+    "(a + b)² を a² + b² としない。まん中の 2ab を落とさない（エントリ square-of-a-binomial）。",
+    "三角関数の積和の公式（product-to-sum formulas、エントリ product-to-sum-formulas）とは別のもの。"
+  ],
+  "related": [
+    "square-of-a-binomial",
+    "difference-of-squares",
+    "expand",
+    "factoring",
+    "perfect-square-trinomial"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "product formulas": 6
+    },
+    "written": {
+      "product formulas": 11,
+      "special products": 42
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

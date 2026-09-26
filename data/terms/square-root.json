@@ -1,0 +1,113 @@
+{
+  "id": "square-root",
+  "ja": {
+    "term": "平方根",
+    "reading": "へいほうこん",
+    "alt": []
+  },
+  "en": {
+    "term": "square root",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "2 乗すると a になる数を、a の平方根という。正の数 a の平方根は正と負の 2 つあり、まとめて ±√a と表す。",
+  "definition_en": "A square root of a is a number that gives a when you square it. Every positive number a has two square roots, √a and −√a.",
+  "latex": "x^2 = a \\Rightarrow x = \\pm\\sqrt{a} \\quad (a > 0)",
+  "spoken_en": "if x squared equals a, then x equals plus or minus the square root of a, where a is greater than zero",
+  "examples": [
+    {
+      "en": "The square root of 49 is 7, since 7 times 7 is 49.",
+      "ja": "√49 は 7。7 × 7 = 49 だからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find both square roots of 64.",
+      "ja": "64 の平方根を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「9 の平方根」は 3 と −3 の 2 つ。記号 √9 は正のほう（principal square root、エントリ principal-square-root）だけを表すので √9 = 3 で、√9 = ±3 ではない。",
+    "√a は the square root of a と読む。記号 √ の名前は radical sign（エントリ radical-sign）。",
+    "2 乗して負になる実数はないので、負の数の平方根は実数の範囲にはない（エントリ square-root-of-a-negative-number）。"
+  ],
+  "related": [
+    "principal-square-root",
+    "radical-sign",
+    "square",
+    "nth-root",
+    "solving-by-taking-square-roots"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "平方根",
+      "en": "Square root"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "square root": 3472
+    },
+    "written": {
+      "square root": 878
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

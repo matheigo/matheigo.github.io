@@ -1,0 +1,92 @@
+{
+  "id": "non-terminating-decimal",
+  "ja": {
+    "term": "無限小数",
+    "reading": "むげんしょうすう",
+    "alt": []
+  },
+  "en": {
+    "term": "non-terminating decimal",
+    "alt": [
+      "nonterminating decimal",
+      "infinite decimal"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "小数点以下の数字が限りなく続く小数。同じ数字の並びがくり返す循環小数（有理数）と、くり返さない小数（√2 = 1.41421…、π などの無理数）がある。",
+  "definition_en": "A decimal whose digits after the decimal point go on forever. The digits may repeat, as in 0.333…, or never repeat, as in π = 3.14159….",
+  "latex": "\\sqrt{2} = 1.41421\\ldots",
+  "spoken_en": "the square root of two equals one point four one four two one, and so on",
+  "examples": [
+    {
+      "en": "Pi is a non-terminating decimal, and its digits never repeat, so it's irrational.",
+      "ja": "π は無限小数で、しかも数字の並びがくり返さないから、無理数だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write 5/11 as a decimal. Is it a terminating decimal or a non-terminating decimal?",
+      "ja": "5/11 を小数で表せ。また、それは有限小数か無限小数か答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "無限小数には、循環する小数（repeating decimal、エントリ repeating-decimal）と循環しない小数がある。循環する無限小数は有理数（エントリ rational-number）、循環しない無限小数は無理数（エントリ irrational-number）。",
+    "つづりは non-terminating（ハイフンあり）と nonterminating（ハイフンなし）の両方があり、infinite decimal とも言う。",
+    "3.14 や 1.414 は無限小数を途中で切った近似値（エントリ approximate-value）で、π や √2 そのものではない。"
+  ],
+  "related": [
+    "terminating-decimal",
+    "repeating-decimal",
+    "irrational-number",
+    "rational-number",
+    "real-number"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "CK-12 Algebra (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Algebra",
+      "note": "1.1 Real Numbers"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.3 Use Diameter Radius and Pi"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 non-terminating decimal（CK-12 Algebra 1.1 Real Numbers・CK-12 Geometry 6.3 Use Diameter Radius and Pi・計 6 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

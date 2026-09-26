@@ -1,0 +1,109 @@
+{
+  "id": "radical-sign",
+  "ja": {
+    "term": "根号",
+    "reading": "こんごう",
+    "alt": [
+      "ルート"
+    ]
+  },
+  "en": {
+    "term": "radical sign",
+    "alt": [
+      "radical symbol",
+      "root sign"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語では記号 √ を「ルート」と読むことが多いが、英語では記号そのものを radical sign（radical symbol）と呼び、√a は the square root of a と読む。英語で root と言うと、方程式の解（roots of an equation）の意味にもなる。",
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "平方根を表すときに使う記号 √。√ の下に書いた数や式の平方根を表す。",
+  "definition_en": "The symbol √ used to write square roots, as in √5. The number or expression under it is called the radicand.",
+  "latex": "\\sqrt{a}",
+  "spoken_en": "the square root of a",
+  "examples": [
+    {
+      "en": "Everything under the radical sign gets simplified first, so do 16 plus 9 before you take the square root.",
+      "ja": "根号の中身を先に計算するから、平方根をとる前に 16 + 9 をやって。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use a radical sign to write the positive number whose square is 11.",
+      "ja": "2 乗すると 11 になる正の数を、根号を使って表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "根号の中の数や式は radicand と呼ぶ。根号を含む式は radical expression（エントリ radical-expression）。",
+    "根号は横線の下にある部分全体にかかる。√(16 + 9) = √25 = 5 で、√16 + √9 = 4 + 3 = 7 とは違う。",
+    "3 乗根は √ の左上に小さく 3 を書いて、∛8 = 2 のように表す（エントリ nth-root）。"
+  ],
+  "related": [
+    "square-root",
+    "radical-expression",
+    "principal-square-root",
+    "nth-root",
+    "simplify-radicals"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "根号",
+      "en": "Radical symbol"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "root sign": 4,
+      "radical sign": 16,
+      "radical symbol": 5
+    },
+    "written": {
+      "radical sign": 36,
+      "radical symbol": 8
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-25"
+  }
+}

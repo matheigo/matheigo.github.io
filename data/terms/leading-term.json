@@ -1,0 +1,92 @@
+{
+  "id": "leading-term",
+  "ja": {
+    "term": "最高次の項",
+    "reading": "さいこうじのこう",
+    "alt": []
+  },
+  "en": {
+    "term": "leading term",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "多項式の項のうち、次数がいちばん高い項。3x² − 5x + 1 では 3x²。",
+  "definition_en": "The term of a polynomial with the highest degree. In 3x² − 5x + 1, the leading term is 3x².",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The leading term is the one with the highest power, so here it's negative x squared, even though it's at the end.",
+      "ja": "最高次の項は次数がいちばん高い項だから、ここでは −x²。最後に書いてあってもね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Identify the leading term and the degree of the polynomial 4 − 3x + 7x³.",
+      "ja": "多項式 4 − 3x + 7x³ の最高次の項と次数を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "leading term は「先頭に書いてある項」ではなく、次数が最も高い項。5 + 2x − x² の最高次の項は、最後に書いてある −x²。降べきの順（エントリ write-in-descending-order）に並べると先頭に来る。",
+    "係数の符号も含めて答える。−3x² + 5x − 1 の最高次の項は 3x² ではなく −3x²。",
+    "多項式のグラフの端のふるまい（x を大きくしたり小さくしたりしたときにグラフがどちらへ向かうか、end behavior）は、最高次の項で決まる。最高次の項の係数だけを指すときは leading coefficient（エントリ leading-coefficient）。"
+  ],
+  "related": [
+    "leading-coefficient",
+    "degree",
+    "polynomial",
+    "term",
+    "write-in-descending-order"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "leading term": 60
+    },
+    "written": {
+      "leading term": 70
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

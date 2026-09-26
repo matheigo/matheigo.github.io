@@ -1,0 +1,93 @@
+{
+  "id": "ratio-of-volumes-of-similar-solids",
+  "ja": {
+    "term": "相似な立体の体積比",
+    "reading": "そうじなりったいのたいせきひ",
+    "alt": [
+      "体積比"
+    ]
+  },
+  "en": {
+    "term": "volume ratio",
+    "alt": [
+      "ratio of the volumes",
+      "ratio of volumes"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "相似な 2 つの立体の体積の比。相似比が m : n なら、体積比は m³ : n³ になる。",
+  "definition_en": "The ratio of the volumes of two similar solids. If their corresponding lengths are in the ratio m : n, the volume ratio is m³ : n³.",
+  "latex": "V_1 : V_2 = m^3 : n^3",
+  "spoken_en": "V one to V two equals m cubed to n cubed",
+  "examples": [
+    {
+      "en": "If you double every edge of a cube, the volume ratio is 8 to 1, not 2 to 1.",
+      "ja": "立方体の辺をすべて 2 倍にすると、体積比は 2 : 1 ではなく 8 : 1 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Two similar cones have heights of 6 cm and 9 cm. Find the volume ratio of the smaller cone to the larger cone.",
+      "ja": "相似な 2 つの円錐の高さは、それぞれ 6 cm、9 cm である。小さい円錐と大きい円錐の体積比を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "表面積の比は相似比の 2 乗（m² : n²、エントリ ratio-of-areas-of-similar-figures）、体積比は 3 乗（m³ : n³）。取り違えない。",
+    "相似比が 1 つの数 k（scale factor、エントリ scale-factor）で与えられたときは、体積は k³ 倍になる。k = 2 なら 8 倍。",
+    "相似比の 3 乗になるのは相似な立体どうしのときだけ。高さだけを 2 倍にした円柱のように、相似でない立体には使えない。"
+  ],
+  "related": [
+    "ratio-of-areas-of-similar-figures",
+    "scale-factor",
+    "volume",
+    "similar",
+    "surface-area"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 5.16 Surface Area and Volume"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "volume ratio": 1
+    },
+    "sources": [
+      "mit-18.01"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 volume ratio（Geometry 5.16 Surface Area and Volume・Geometry 6.6 Completing the Square・計 5 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "bound-estimate",
+  "ja": {
+    "term": "評価する",
+    "reading": "ひょうかする",
+    "alt": []
+  },
+  "en": {
+    "term": "estimate",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "数学の「評価する」は、√10 がどの 2 つの整数の間にあるか（3 < √10 < 4）を調べるように、値の範囲をはさんで調べることを言う。OpenStax Prealgebra はこれを estimate square roots として扱い、どの 2 つの連続する整数の間にあるか（between two consecutive integers）を答えさせる。日常語の「評価する」（ほめる・値打ちを決める）は evaluate や appreciate で、別の意味。",
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "√10 がどの 2 つの整数の間にあるか（3 < √10 < 4）を調べるように、値を不等式ではさんで、その範囲を調べる。",
+  "definition_en": "To find a range that a value lies in, such as the two consecutive integers that a square root is between. For example, 3 < √10 < 4 because 9 < 10 < 16.",
+  "latex": "3 < \\sqrt{10} < 4",
+  "spoken_en": "three is less than the square root of ten, which is less than four",
+  "examples": [
+    {
+      "en": "Let's estimate √10. 9 is 3 squared and 16 is 4 squared, so √10 has to be between 3 and 4.",
+      "ja": "√10 を評価してみよう。9 は 3 の 2 乗、16 は 4 の 2 乗だから、√10 は 3 と 4 の間にあるはずだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Estimate √55 between two consecutive integers.",
+      "ja": "√55 を、連続する 2 つの整数ではさんで評価せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日常語の「評価する」（ほめる・値打ちを決める）は evaluate や appreciate で、別の意味。数学の evaluate は式の値を求めること（エントリ evaluate）で、範囲をはさむ「評価する」ではない。",
+    "estimate は「おおよその値を見積もる」にも使う語。範囲を答えさせるときは、OpenStax Prealgebra のように between two consecutive integers（連続する 2 つの整数の間）と、何ではさむかを示す。",
+    "統計の「推定」（エントリ estimation）も英語は estimate で、標本から母平均などを見積もる意味。範囲をはさむ「評価する」とは別の見出し。"
+  ],
+  "related": [
+    "square-root",
+    "consecutive-integers",
+    "estimation",
+    "evaluate",
+    "approximate-value"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "between two consecutive integers | between which two integers | between two consecutive whole numbers | estimate the square root | estimate the value of the square root": 2
+    },
+    "written": {
+      "between two consecutive integers | between which two integers | between two consecutive whole numbers | estimate the square root | estimate the value of the square root": 18
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  }
+}

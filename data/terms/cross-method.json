@@ -1,0 +1,86 @@
+{
+  "id": "cross-method",
+  "ja": {
+    "term": "たすき掛け",
+    "reading": "たすきがけ",
+    "alt": [
+      "ac 法",
+      "ボックス法"
+    ]
+  },
+  "en": {
+    "term": "cross method",
+    "alt": [
+      "ac method",
+      "box method"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "英語に決まった言い方がない。係数を斜めに掛けて組み合わせを探すのは日本の方法で、米国では ac method（ac を 2 つに分けて factoring by grouping、エントリ factoring-by-grouping）、box method、guess and check などと呼ばれる方法で ax² + bx + c を因数分解する。見出しの cross method も英語の決まった名前ではない。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "ax² + bx + c（a ≠ 1）を因数分解するとき、a と c をそれぞれ 2 つの数の積に分けて並べ、斜めに掛けた積の和が b になる組み合わせを探す方法。",
+  "definition_en": "A Japanese method for factoring ax² + bx + c when a ≠ 1: list factor pairs of a and of c, multiply them diagonally, and look for the arrangement whose two diagonal products add up to b.",
+  "latex": "(px + q)(rx + s) = prx^2 + (ps + qr)x + qs",
+  "spoken_en": "the quantity p x plus q times the quantity r x plus s equals p r x squared plus the quantity p s plus q r times x, plus q s",
+  "examples": [
+    {
+      "en": "For 3x² + 7x + 2, the ac method says multiply 3 times 2 to get 6, then find two numbers that multiply to 6 and add to 7.",
+      "ja": "3x² + 7x + 2 なら、ac 法では 3 × 2 = 6 を計算して、掛けて 6、足して 7 になる 2 つの数を探す。",
+      "register": "spoken"
+    },
+    {
+      "en": "Factor 3x² + 7x + 2 by the cross method.",
+      "ja": "たすき掛けを用いて、3x² + 7x + 2 を因数分解せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "直訳の cross multiplication は、比例式 a/b = c/d から ad = bc を作る cross-multiply（エントリ cross-multiply）の意味になり、たすき掛けの意味にはならない。",
+    "ac method は、ac を 2 つの数に分けて x の項を 2 つに書き分け、factoring by grouping（エントリ factoring-by-grouping）で因数分解する方法。3x² + 7x + 2 = 3x² + x + 6x + 2 = x(3x + 1) + 2(3x + 1) = (x + 2)(3x + 1) のように、斜めに掛けるたすき掛けとは手順が違うが、答えは同じになる。",
+    "a = 1 のとき（x² + 5x + 6 など）は、掛けて c、足して b になる 2 つの数を探せばよく、たすき掛けは要らない。"
+  ],
+  "related": [
+    "factoring",
+    "factoring-by-grouping",
+    "cross-multiply",
+    "trinomial",
+    "leading-coefficient"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

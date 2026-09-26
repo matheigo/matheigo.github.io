@@ -1,0 +1,104 @@
+{
+  "id": "binomial",
+  "ja": {
+    "term": "二項式",
+    "reading": "にこうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "binomial",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "項が 2 つの多項式。x + 3 や 2a − b のような式。",
+  "definition_en": "A polynomial with exactly two terms, such as x + 3 or 2a − b.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "See how x + 3 has two terms? That makes it a binomial.",
+      "ja": "x + 3 には項が 2 つあるよね。だからこれは二項式。",
+      "register": "spoken"
+    },
+    {
+      "en": "Classify each polynomial as a monomial, binomial, or trinomial: 4x² − 9, 7ab, x² + 2x − 5.",
+      "ja": "次の多項式を、単項式・二項式・三項式に分類せよ。4x² − 9、7ab、x² + 2x − 5",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "bi- は「2 つの」の意味。項が 1 つなら monomial（エントリ monomial）、3 つなら trinomial（エントリ trinomial）と、項の数で呼び名が変わる。",
+    "二項定理（binomial theorem）や二項分布（binomial distribution）の binomial は「二項の」という形容詞で、それぞれ別の用語（エントリ binomial-theorem、binomial-distribution）。",
+    "項の数は同類項をまとめてから数える。3x + 2x は 5x になるので、二項式ではなく単項式。"
+  ],
+  "related": [
+    "monomial",
+    "trinomial",
+    "polynomial",
+    "term",
+    "square-of-a-binomial"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "二項式",
+      "en": "Binomial (polynomial)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "binomial !theorem !distribution !distributions !coefficient !coefficients !expansion !probability !random !experiment !setting !formula !model !squares !square": 150
+    },
+    "written": {
+      "binomial !theorem !distribution !distributions !coefficient !coefficients !expansion !probability !random !experiment !setting !formula !model !squares !square": 699
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}
