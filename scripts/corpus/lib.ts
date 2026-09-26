@@ -978,6 +978,28 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   },
   change: { change: "change in x | change in y | change in the x | change in the y" }, // 増加量 (Δx, Δy)
   domain: { domain: "the domain !and | domain of" }, // not "domain and range" (変域)
+  // 中学の単元 3・バッチ 7 (contexts checked)
+  legs: {
+    leg: "leg of a right triangle | legs of a right triangle | leg of the right triangle | legs of the right triangle | the other leg | legs and the hypotenuse | leg and the hypotenuse | hypotenuse and a leg | hypotenuse and one leg | length of the leg | lengths of the legs",
+  }, // 直角をはさむ辺, not a leg of a trapezoid or a journey
+  convert: { convert: "convert … to | convert … into" }, // the verb with its target (units, fractions, degrees)
+  residual: { residual: "residual !plot !plots !sum !sums" }, // 残差; the residual plot is its own entry
+  "standard-form-of-a-line": {
+    "standard form of a linear equation":
+      "standard form of linear equation | standard form of a linear equation | linear equation in standard form | line in standard form | standard form of a line | standard form of the line | standard form of the equation of a line | equation of a line in standard form",
+  }, // Ax + By = C; "standard form" alone is also the quadratic's, a number's (UK) and a conic's
+  "space-diagonal": {
+    "diagonal of a rectangular prism": "diagonal of a rectangular prism | diagonal of the rectangular prism",
+    "diagonal of a box": "diagonal of a box | diagonal of the box",
+  },
+  "prime-polynomial": { "prime polynomial": "prime polynomial | polynomial is prime | trinomial is prime | binomial is prime" }, // not a prime number
+  // バッチ 8
+  multiplicity: { multiplicity: "!algebraic !geometric multiplicity" }, // of a zero, not an eigenvalue's (algebraic-multiplicity)
+  experiment: {
+    experiment:
+      "observational study or an experiment | observational studies and experiments | designed experiment | randomized experiment | controlled experiment | well-designed experiment | randomized comparative experiment | conduct an experiment | design an experiment",
+  }, // a study design, not a probability experiment (試行, trial) or "let's experiment"
+  secant: { secant: "secant !line !lines !method !slope !slopes" }, // sec x, not the secant line (secant-line)
 };
 
 /** The wording a candidate is counted and recorded as. */

@@ -1632,6 +1632,11 @@ PHASE2G_RENAME = [
     ("four-points-are-concyclic", "concyclic", {"pos": "adjective", "en": "concyclic", "ja": "同一円周上にある"}),
     # 平方根 (the number); symbols/square-root is the √ sign, and ids are one namespace in the search index
     ("square-root", "square-root-of-a-number", {}),
+    # 中学の単元 3: a section name ("Graphing Systems of Linear Inequalities") -> the concept
+    ("graphing-systems-of-inequalities", "system-of-linear-inequalities",
+     {"en": "system of linear inequalities", "ja": "2 変数の連立不等式", "ja_alt": "連立不等式の表す領域|連立不等式のグラフ", "mapping": "near", "level_jp": "数II"}),
+    # conventions/slope-intercept-form is the y = ax + b / y = mx + b note; ids are one namespace
+    ("slope-intercept-form", "slope-intercept-form-of-a-line", {}),
 ]
 
 # Lines of a proof, of a problem statement or of a procedure, not terms

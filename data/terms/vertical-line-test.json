@@ -1,0 +1,93 @@
+{
+  "id": "vertical-line-test",
+  "ja": {
+    "term": "垂直線テスト",
+    "reading": "すいちょくせんてすと",
+    "alt": []
+  },
+  "en": {
+    "term": "vertical line test",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「垂直線テスト」は日本の教科書に無い、本プロジェクトの訳語。日本では「x の値を決めると y の値がただ 1 つに決まるとき y は x の関数」という定義で考え、グラフでの判定法に名前を付けない。OpenStax Algebra and Trigonometry・Intermediate Algebra は vertical line test の名前で扱う。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "座標平面上のグラフに垂直な直線を引き、どの垂直線ともグラフが 2 点以上で交わらなければ、それは y が x の関数であるグラフだと判定する方法。",
+  "definition_en": "A way to tell whether a graph shows y as a function of x: if no vertical line crosses the graph more than once, the graph passes and represents a function.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The circle fails the vertical line test: the line x = 0 hits it at y = 1 and at y = −1.",
+      "ja": "この円は垂直線テストに通らない。直線 x = 0 と y = 1 と y = −1 の 2 点で交わるからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the vertical line test to determine whether the graph represents y as a function of x.",
+      "ja": "垂直な直線とグラフの交わり方を調べて、このグラフが y を x の関数として表しているかどうかを判定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「通る／通らない」は pass ／ fail the vertical line test と言う。円 x² + y² = 1 は通らない。",
+    "ここでの vertical は「上下方向の」（x = a の形の直線）の意味。日本語の「垂直」が表す「直交する」は perpendicular（エントリ perpendicular）。",
+    "1 対 1 かどうか（逆関数をもつか）を判定する horizontal line test（エントリ horizontal-line-test）とは別の判定法。"
+  ],
+  "related": [
+    "function",
+    "horizontal-line-test",
+    "relation",
+    "graph",
+    "circle"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "vertical line test": 22
+    },
+    "written": {
+      "vertical line test": 37
+    },
+    "sources": [
+      "khan-middle",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

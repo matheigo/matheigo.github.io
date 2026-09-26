@@ -1,0 +1,95 @@
+{
+  "id": "tick-mark",
+  "ja": {
+    "term": "数直線上の目盛り",
+    "reading": "すうちょくせんじょうのめもり",
+    "alt": [
+      "目盛り"
+    ]
+  },
+  "en": {
+    "term": "hash mark",
+    "alt": [
+      "tick mark"
+    ],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "数直線や座標軸の上に、等しい間隔でつける短い線。目盛り。",
+  "definition_en": "A short line drawn across a number line or an axis to mark equally spaced values.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Each hash mark on this number line is worth 5, so this one right here is 15.",
+      "ja": "この数直線の目盛りは 1 つが 5 だから、ここの目盛りは 15 だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Label each tick mark on the number line, counting by 0.5 from 0 to 3.",
+      "ja": "数直線の各目盛りに、0 から 3 まで 0.5 ずつ数を書き入れよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "授業では hash mark と呼ぶことが多く、教科書（OpenStax Introductory Statistics）は tick mark と書く。どちらも同じ目盛りのこと。",
+    "同じ hash mark ／ tick mark を、幾何では辺の長さが等しいことを示す印（等しい辺につける小さな線）にも使う（エントリ congruent）。数直線の目盛りとは別の使い方。"
+  ],
+  "related": [
+    "number-line",
+    "coordinate-axes",
+    "x-axis",
+    "coordinate-plane",
+    "congruent"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "hash mark": 41,
+      "tick mark": 7
+    },
+    "written": {
+      "tick mark": 3,
+      "hash mark": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-introstats",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

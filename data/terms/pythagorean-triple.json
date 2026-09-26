@@ -1,0 +1,87 @@
+{
+  "id": "pythagorean-triple",
+  "ja": {
+    "term": "ピタゴラス数",
+    "reading": "ぴたごらすすう",
+    "alt": []
+  },
+  "en": {
+    "term": "Pythagorean triple",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "a² + b² = c² を満たす 3 つの自然数の組 (a, b, c)。(3, 4, 5)、(5, 12, 13)、(8, 15, 17) など。",
+  "definition_en": "A set of three positive integers a, b, and c with a² + b² = c², such as 3, 4, 5. The three numbers are the side lengths of a right triangle.",
+  "latex": "3^2 + 4^2 = 5^2",
+  "spoken_en": "three squared plus four squared equals five squared",
+  "examples": [
+    {
+      "en": "3, 4, 5 is a Pythagorean triple, so 6, 8, 10 works too; just double everything.",
+      "ja": "3、4、5 はピタゴラス数だから、6、8、10 も成り立つ。全部 2 倍すればいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether 8, 15, and 17 form a Pythagorean triple.",
+      "ja": "8、15、17 がピタゴラス数であるかどうかを調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の triple は「3 つ組」。1 つの数の名前ではなく、3 つの数の組の名前。",
+    "自然数（正の整数）の組に限る。1、1、√2 は直角三角形の辺の長さになるが、ピタゴラス数ではない（エントリ 45-45-90-triangle）。",
+    "CK-12 Geometry は Pythagorean Triples の節で扱う。"
+  ],
+  "related": [
+    "pythagorean-theorem",
+    "converse-of-the-pythagorean-theorem",
+    "natural-number",
+    "right-triangle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ピタゴラス数",
+      "en": "Pythagorean triple"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.30 Pythagorean Triples"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 Pythagorean triple（CK-12 Geometry 4.30 Pythagorean Triples・CK-12 Geometry 4.27 The Pythagorean Theorem・CK-12 Geometry 4.28 Basics of Pythagorean Theorem・計 61 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

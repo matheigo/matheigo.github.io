@@ -1,0 +1,98 @@
+{
+  "id": "scientific-notation",
+  "ja": {
+    "term": "科学的記数法",
+    "reading": "かがくてききすうほう",
+    "alt": [
+      "指数表記"
+    ]
+  },
+  "en": {
+    "term": "scientific notation",
+    "alt": [],
+    "uk": "standard form",
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の中 3 では、近似値を（整数部分が 1 桁の数）×（10 の累乗）の形で書くことを学ぶが、この書き方に名前を付けない。理科では「指数表記」と言うこともある。英語では scientific notation という名前で、OpenStax Algebra and Trigonometry は 1 ≦ |a| < 10、n は整数という条件で定義する。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "数を a × 10ⁿ（1 ≦ |a| < 10、n は整数）の形で書く書き方。とても大きい数や小さい数を短く書ける。",
+  "definition_en": "A way of writing a number as a × 10^n, where 1 ≤ |a| < 10 and n is an integer. It is a short way to write very large or very small numbers.",
+  "latex": "a \\times 10^{n}, \\quad 1 \\le |a| < 10",
+  "spoken_en": "a times ten to the n, where the absolute value of a is greater than or equal to one and less than ten",
+  "examples": [
+    {
+      "en": "In scientific notation, 3,200,000 is 3.2 times 10 to the sixth.",
+      "ja": "3,200,000 を科学的記数法で書くと、3.2 × 10⁶ だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write 0.00045 in scientific notation.",
+      "ja": "0.00045 を科学的記数法で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英国では standard form と言うが、米国の standard form は別の意味（直線の式 Ax + By = C など、エントリ standard-form-of-a-line）。",
+    "a は 1 ≦ |a| < 10 でなければならない。32 × 10⁵ は値は正しくても scientific notation ではなく、3.2 × 10⁶ と書く。",
+    "1 より小さい数は指数が負になる（0.00045 = 4.5 × 10⁻⁴）。10⁻⁴ は ten to the negative fourth と読む。"
+  ],
+  "related": [
+    "significant-figures",
+    "exponent",
+    "negative-exponent",
+    "approximate-value",
+    "decimal"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "scientific notation": 105
+    },
+    "written": {
+      "scientific notation": 172
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-middle",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  }
+}

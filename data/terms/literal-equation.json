@@ -1,0 +1,90 @@
+{
+  "id": "literal-equation",
+  "ja": {
+    "term": "リテラル方程式",
+    "reading": "りてらるほうていしき",
+    "alt": []
+  },
+  "en": {
+    "term": "literal equation",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「リテラル方程式」は日本の教科書に無い、本プロジェクトの訳語。日本では中 2 で「等式の変形」（エントリ rearranging-an-equation）として扱い、この種の等式に名前はない。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "文字を 2 つ以上含む等式。公式などを、その中の 1 つの文字について解くときにこう呼ぶ。",
+  "definition_en": "An equation with two or more variables, such as a formula. Solving a literal equation means solving for one variable in terms of the others.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "This is a literal equation, so we won't get a number. We're solving for w in terms of A and l.",
+      "ja": "これはリテラル方程式だから、答えは数にならない。A と l を使って w について解くんだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the literal equation P = 2l + 2w for l.",
+      "ja": "等式 P = 2l + 2w を l について解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "答えは数ではなく、ほかの文字を使った式になる（A = lw を w について解くと w = A/l）。",
+    "OpenStax Prealgebra は、公式を特定の文字について解くことを solving a literal equation とも言うと書く。OpenStax Intermediate Algebra は Solving Literal Equations の節で扱う。",
+    "literal はここでは「文字（letter）の」という意味で、「文字どおりの」の意味ではない。"
+  ],
+  "related": [
+    "rearranging-an-equation",
+    "solve-for",
+    "equation",
+    "variable",
+    "linear-equation-in-two-variables"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "literal equation": 3
+    },
+    "sources": [
+      "openstax-intalg",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 literal equation（本文 3 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "interval-notation",
+  "ja": {
+    "term": "区間記法",
+    "reading": "くかんきほう",
+    "alt": []
+  },
+  "en": {
+    "term": "interval notation",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "数の範囲を、両端の数とかっこで [a, b]、(a, b)、[a, ∞) のように表す書き方。端を含むときは [ ]、含まないときは ( ) を使う。",
+  "definition_en": "A way to write a set of numbers using its endpoints, with a bracket when an endpoint is included and a parenthesis when it is not.",
+  "latex": "(2, 5]",
+  "spoken_en": "two to five, not including two but including five",
+  "examples": [
+    {
+      "en": "In interval notation, infinity always gets a parenthesis, because you never actually reach it.",
+      "ja": "区間記法では、∞ の側はいつも丸かっこ。実際に ∞ に届くことはないからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve 3x − 4 ≥ 5 and write the solution in interval notation.",
+      "ja": "不等式 3x − 4 ≧ 5 を解き、解を区間記法で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の高校では 2 < x ≦ 5 のように不等式で書き、この書き方は大学で使う（閉区間 closed-interval、開区間 open-interval）。米国では Algebra 1 から不等式の解や定義域をこの形で答える。",
+    "端を含むのは角かっこ [ ]（bracket）、含まないのは丸かっこ ( )（parenthesis）。∞ の側はいつも丸かっこで、[3, ∞] とは書かない。",
+    "(2, 5) は点の座標と同じ形なので、区間か点かは文脈で見分ける。"
+  ],
+  "related": [
+    "closed-interval",
+    "open-interval",
+    "interval",
+    "inequality",
+    "domain"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "interval notation": 58
+    },
+    "written": {
+      "interval notation": 228
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

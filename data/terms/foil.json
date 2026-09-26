@@ -1,0 +1,95 @@
+{
+  "id": "foil",
+  "ja": {
+    "term": "FOIL",
+    "reading": "ふぉいる",
+    "alt": []
+  },
+  "en": {
+    "term": "FOIL",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "日本では分配法則で 1 項ずつ掛けて展開し、順序の覚え方に名前はない。英語の FOIL は二項式どうしの積を展開する順序の名前で、OpenStax Elementary Algebra が扱う。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "2 つの二項式の積 (a + b)(c + d) を展開するときの、項を掛ける順序の覚え方。First（ac）、Outer（ad）、Inner（bc）、Last（bd）の頭文字。",
+  "definition_en": "A way to remember how to multiply two binomials: multiply the First terms, then the Outer terms, then the Inner terms, then the Last terms. For (a + b)(c + d), this gives ac + ad + bc + bd.",
+  "latex": "(a + b)(c + d) = ac + ad + bc + bd",
+  "spoken_en": "the quantity a plus b times the quantity c plus d equals a c plus a d plus b c plus b d",
+  "examples": [
+    {
+      "en": "Let's FOIL it out: first, outer, inner, last.",
+      "ja": "FOIL で展開しよう。最初どうし、外側どうし、内側どうし、最後どうしの順に掛ける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use FOIL to multiply (x + 4)(x − 3).",
+      "ja": "FOIL を使って (x + 4)(x − 3) を展開せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "FOIL が使えるのは二項式 × 二項式だけ。3 項以上の式を掛けるときは分配法則（エントリ distributive-property）で 1 項ずつ掛ける。",
+    "授業では動詞としても使う（FOIL it out、FOIL the binomials）。",
+    "Outer と Inner の項は同類項になることが多いので、FOIL のあとでまとめる（(x + 4)(x − 3) = x² − 3x + 4x − 12 = x² + x − 12）。"
+  ],
+  "related": [
+    "distributive-property",
+    "binomial",
+    "expand",
+    "like-terms",
+    "special-products"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "FOIL": 71
+    },
+    "written": {
+      "FOIL": 137
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

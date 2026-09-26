@@ -1,0 +1,94 @@
+{
+  "id": "system-of-linear-inequalities",
+  "ja": {
+    "term": "2 変数の連立不等式",
+    "reading": "にへんすうのれんりつふとうしき",
+    "alt": [
+      "連立不等式の表す領域",
+      "連立不等式のグラフ"
+    ]
+  },
+  "en": {
+    "term": "system of linear inequalities",
+    "alt": [],
+    "variants": [
+      {
+        "term": "system of inequalities",
+        "register": "written",
+        "note": "linear を省いた言い方。教科書（OpenStax）では system of linear inequalities と同じくらい使う。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の数I の「連立不等式」は 1 変数（英語の compound inequality、エントリ system-of-inequalities）。2 変数の連立不等式は数II の「不等式の表す領域」で扱う。米国では Algebra 1 で、2 変数の一次不等式の組のグラフとして教える（OpenStax Elementary Algebra）。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "x と y の一次不等式を 2 つ以上組にしたもの。解はすべての不等式を同時に満たす点 (x, y) の集まりで、座標平面の領域として図示する。",
+  "definition_en": "Two or more linear inequalities in x and y taken together. Its solution is the set of all points (x, y) that make every inequality true, shown as a shaded region of the coordinate plane.",
+  "latex": "\\begin{cases} y > x + 1 \\\\ y \\le -2x + 4 \\end{cases}",
+  "spoken_en": "y is greater than x plus one, and y is less than or equal to negative two x plus four",
+  "examples": [
+    {
+      "en": "For a system of linear inequalities, graph both boundary lines, shade each one, and the answer is where the shading overlaps.",
+      "ja": "連立不等式では、境界線を 2 本ともかいてそれぞれ塗る。塗った部分が重なるところが答えだよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Graph the system of linear inequalities y > x + 1 and y ≤ −2x + 4, and determine whether the point (0, 3) is a solution.",
+      "ja": "連立不等式 y > x + 1、y ≦ −2x + 4 の表す領域を図示し、点 (0, 3) がその領域に含まれるかどうかを調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "境界線は、等号を含まない不等号（<、>）なら点線（dashed line）、含む不等号（≦、≧）なら実線（solid line）でかき、解の部分に色を塗る（shade）。",
+    "日本の数I の「連立不等式」は 1 変数の不等式の組で、英語では compound inequality と言う（エントリ system-of-inequalities）。このエントリは 2 変数の不等式の組で、解は数の範囲ではなく平面の領域（エントリ region）。"
+  ],
+  "related": [
+    "system-of-inequalities",
+    "linear-inequality",
+    "region",
+    "feasible-region",
+    "system-of-linear-equations"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "system of inequalities": 2
+    },
+    "written": {
+      "system of linear inequalities": 28,
+      "system of inequalities": 27
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-elemalg"
+    ],
+    "counted": "2026-09-25"
+  }
+}

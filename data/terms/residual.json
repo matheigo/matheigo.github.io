@@ -1,0 +1,83 @@
+{
+  "id": "residual",
+  "ja": {
+    "term": "残差",
+    "reading": "ざんさ",
+    "alt": []
+  },
+  "en": {
+    "term": "residual",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "実際に観測した値と、回帰直線で予測した値との差（実際の y − 予測した ŷ）。点が回帰直線より上にあれば正、下にあれば負になる。",
+  "definition_en": "The difference between an observed value and the value predicted by the regression line: observed minus predicted. It is positive when the point lies above the line and negative when it lies below.",
+  "latex": "e = y - \\hat{y}",
+  "spoken_en": "e equals y minus y hat",
+  "examples": [
+    {
+      "en": "This point is above the line, so its residual is positive.",
+      "ja": "この点は直線より上にあるから、残差は正だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "The regression line predicts ŷ = 52 when x = 6, but the observed value is 49. Find the residual.",
+      "ja": "x = 6 のとき回帰直線による予測値は ŷ = 52 だが、実際の値は 49 である。残差を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "引く順番は「実際 − 予測」（observed − predicted）。逆にすると符号が反対になる。上の例では 49 − 52 = −3。",
+    "ŷ は y hat と読む。",
+    "残差を点で表した図は residual plot（エントリ residual-plot）。複素関数論の留数（residue）は別の語。"
+  ],
+  "related": [
+    "residual-plot",
+    "regression-line",
+    "least-squares",
+    "scatter-plot",
+    "predict"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "residual !plot !plots !sum !sums": 115
+    },
+    "written": {
+      "residual !plot !plots !sum !sums": 53
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

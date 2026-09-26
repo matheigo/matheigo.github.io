@@ -1,0 +1,93 @@
+{
+  "id": "radical-equation",
+  "ja": {
+    "term": "無理方程式",
+    "reading": "むりほうていしき",
+    "alt": [
+      "根号方程式"
+    ]
+  },
+  "en": {
+    "term": "radical equation",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "根号の中に未知数を含む方程式。両辺を 2 乗して解き、出てきた解をもとの方程式に代入して確かめる。",
+  "definition_en": "An equation with the variable under a radical sign, such as √(x + 3) = x − 3. You solve it by squaring both sides, then check every answer in the original equation.",
+  "latex": "\\sqrt{x + 3} = x - 3",
+  "spoken_en": "the square root of x plus three equals x minus three",
+  "examples": [
+    {
+      "en": "It's a radical equation, so square both sides, and then check your answers.",
+      "ja": "無理方程式だから、両辺を 2 乗して、そのあと答えを確かめよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the radical equation √(x + 3) = x − 3. Check for extraneous solutions.",
+      "ja": "無理方程式 √(x + 3) = x − 3 を解け。もとの方程式を満たさない解がないか確かめること。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "両辺を 2 乗すると、もとの方程式を満たさない解（extraneous solution、エントリ extraneous-solution）が出ることがある。√(x + 3) = x − 3 を 2 乗して解くと x = 1, 6 が出るが、x = 1 は左辺が 2、右辺が −2 で成り立たず、解は x = 6 だけ。",
+    "日本では数III で扱うが、米国では Algebra 1・2 で扱う（OpenStax Intermediate Algebra、Algebra and Trigonometry）。",
+    "radical は根号のこと（エントリ radical-sign）。"
+  ],
+  "related": [
+    "extraneous-solution",
+    "radical-sign",
+    "square-root-of-a-number",
+    "quadratic-equation",
+    "radical-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "radical equation": 7
+    },
+    "written": {
+      "radical equation": 65
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg"
+    ],
+    "counted": "2026-09-25"
+  }
+}

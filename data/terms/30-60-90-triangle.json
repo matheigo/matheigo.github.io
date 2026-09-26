@@ -1,0 +1,90 @@
+{
+  "id": "30-60-90-triangle",
+  "ja": {
+    "term": "30°, 60°, 90° の直角三角形",
+    "reading": "さんじゅうどろくじゅうどきゅうじゅうどのちょっかくさんかくけい",
+    "alt": [
+      "30-60-90 の三角形"
+    ]
+  },
+  "en": {
+    "term": "30-60-90 triangle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "3 つの角が 30°, 60°, 90° の直角三角形。辺の比は短い順に 1 : √3 : 2 で、正三角形を高さで半分にした形。",
+  "definition_en": "A right triangle with angles of 30°, 60°, and 90°, which is half of an equilateral triangle. If the shortest side is x, the longer leg is x√3 and the hypotenuse is 2x.",
+  "latex": "x : x\\sqrt{3} : 2x",
+  "spoken_en": "x to x root three to two x",
+  "examples": [
+    {
+      "en": "In a 30-60-90 triangle the hypotenuse is twice the short leg, so if the short leg is 4, the hypotenuse is 8.",
+      "ja": "30°, 60°, 90° の直角三角形では斜辺は短い辺の 2 倍だから、短い辺が 4 なら斜辺は 8 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In a 30-60-90 triangle, the hypotenuse is 12. Find the lengths of the two legs.",
+      "ja": "30°, 60°, 90° の直角三角形で、斜辺の長さが 12 である。直角をはさむ 2 辺の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語には 1 語の名前がなく、角の大きさで呼ぶ。30-60-90 triangle は thirty-sixty-ninety triangle と読む（CK-12 の呼び方）。",
+    "日本では三角定規の形として覚えるが、英語では辺を短い方から x, x√3, 2x と書く。√3 がつくのは 60° の向かいの長い方の leg で、斜辺ではない。",
+    "30° の向かいが短い leg（short leg）、60° の向かいが長い leg（long leg）。取り違えると x と x√3 が入れかわる。"
+  ],
+  "related": [
+    "special-right-triangles",
+    "equilateral-triangle",
+    "45-45-90-triangle",
+    "legs",
+    "hypotenuse"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.43 30-60-90 Right Triangles"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "30-60-90 triangle": 3
+    },
+    "sources": [
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 30-60-90 triangle（CK-12 Geometry 4.43 30-60-90 Right Triangles・CK-12 Geometry 4.41 Special Right Triangles and Ratios・CK-12 Geometry 5.17 Area and Perimeter of Rhombuses and Kites・計 14 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

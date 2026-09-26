@@ -1,0 +1,120 @@
+{
+  "id": "pythagorean-theorem",
+  "ja": {
+    "term": "三平方の定理",
+    "reading": "さんへいほうのていり",
+    "alt": [
+      "ピタゴラスの定理"
+    ]
+  },
+  "en": {
+    "term": "Pythagorean theorem",
+    "alt": [],
+    "uk": "Pythagoras' theorem",
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "直角三角形で、直角をはさむ 2 辺の長さを a、b、斜辺の長さを c とすると、a² + b² = c² が成り立つという定理。",
+  "definition_en": "In a right triangle with legs a and b and hypotenuse c, the sum of the squares of the legs equals the square of the hypotenuse: a² + b² = c².",
+  "latex": "a^2 + b^2 = c^2",
+  "spoken_en": "a squared plus b squared equals c squared",
+  "examples": [
+    {
+      "en": "It's a right triangle, so we can use the Pythagorean theorem: 6 squared plus 8 squared equals c squared, so c is 10.",
+      "ja": "直角三角形だから三平方の定理が使える。6 の 2 乗 + 8 の 2 乗 = c の 2 乗だから、c は 10 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A right triangle has legs of length 5 and 12. Use the Pythagorean theorem to find the length of the hypotenuse.",
+      "ja": "直角をはさむ 2 辺の長さが 5 と 12 の直角三角形がある。三平方の定理を用いて、斜辺の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax は a と b を legs、c を hypotenuse と呼んで説明する。日本語の「直角をはさむ辺」には leg という名前がある（エントリ legs、hypotenuse）。",
+    "c は必ず斜辺（直角の向かいの辺）。直角をはさむ辺を c に入れると式が成り立たない。",
+    "Pythagoras' theorem は英国の言い方（en.uk）。Pythagorean は人名 Pythagoras から来た語なので大文字で始める。"
+  ],
+  "related": [
+    "legs",
+    "hypotenuse",
+    "right-triangle",
+    "converse-of-the-pythagorean-theorem",
+    "distance-formula"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ピタゴラスの定理",
+      "en": "Pythagorean theorem"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "Pythagorean theorem": 167
+    },
+    "written": {
+      "Pythagorean theorem": 135
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "converse-of-the-pythagorean-theorem",
+  "ja": {
+    "term": "三平方の定理の逆",
+    "reading": "さんへいほうのていりのぎゃく",
+    "alt": []
+  },
+  "en": {
+    "term": "converse of the Pythagorean theorem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "三角形の 3 辺の長さ a、b、c について a² + b² = c² が成り立てば、長さ c の辺の向かいの角は直角であるという定理。三平方の定理の仮定と結論を入れかえたもの。",
+  "definition_en": "If the side lengths a, b, and c of a triangle satisfy a² + b² = c², then the angle opposite the side of length c is a right angle. It is used to test whether a triangle is a right triangle.",
+  "latex": "a^2 + b^2 = c^2 \\Longrightarrow \\angle C = 90^\\circ",
+  "spoken_en": "if a squared plus b squared equals c squared, then angle C is ninety degrees",
+  "examples": [
+    {
+      "en": "Check 7, 24, 25: 49 plus 576 is 625, and that's 25 squared, so by the converse of the Pythagorean theorem it's a right triangle.",
+      "ja": "7、24、25 を調べよう。49 + 576 = 625 で、これは 25 の 2 乗。だから三平方の定理の逆により直角三角形だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "The sides of a triangle are 9, 12, and 15. Use the converse of the Pythagorean theorem to determine whether the triangle is a right triangle.",
+      "ja": "3 辺の長さが 9、12、15 の三角形がある。三平方の定理の逆を用いて、この三角形が直角三角形かどうかを調べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "c には最も長い辺を入れて調べる。短い辺を c にすると a² + b² = c² が成り立たず、直角三角形を見落とす。",
+    "CK-12 Geometry は同じ節（Converse of the Pythagorean Theorem）で、最も長い辺を c として c² < a² + b² なら鋭角三角形、c² > a² + b² なら鈍角三角形と判定する使い方も扱う（エントリ acute-triangle、obtuse-triangle）。",
+    "converse は「逆」（エントリ converse）。the converse of … の形で、もとの定理の名前につけて呼ぶ。"
+  ],
+  "related": [
+    "pythagorean-theorem",
+    "converse",
+    "right-triangle",
+    "acute-triangle",
+    "obtuse-triangle"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.31 Converse of the Pythagorean Theorem"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 converse of the Pythagorean theorem（CK-12 Geometry 4.31 Converse of the Pythagorean Theorem・CK-12 Geometry 4.33 Pythagorean Theorem and its Converse・CK-12 Geometry 4.36 Distance and Triangle Classification Using the Pythagorean Theorem・計 16 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

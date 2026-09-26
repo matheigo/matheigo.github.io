@@ -1,0 +1,83 @@
+{
+  "id": "half-life",
+  "ja": {
+    "term": "半減期",
+    "reading": "はんげんき",
+    "alt": []
+  },
+  "en": {
+    "term": "half-life",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "ある量が、もとの量の半分に減るまでにかかる時間。最初の量 A₀、半減期 h のとき、t 時間後の量は A₀(1/2)^{t/h}。",
+  "definition_en": "The time it takes for an amount to decrease to half of what it was. If the starting amount is A₀ and the half-life is h, the amount left after time t is A₀(1/2)^(t/h).",
+  "latex": "A = A_0\\left(\\frac{1}{2}\\right)^{t/h}",
+  "spoken_en": "A equals A naught times one half, to the t over h",
+  "examples": [
+    {
+      "en": "The half-life is 5 hours, so after 10 hours you've got a quarter of it left.",
+      "ja": "半減期が 5 時間だから、10 時間たつと 4 分の 1 が残る。",
+      "register": "spoken"
+    },
+    {
+      "en": "A 200-milligram sample of a substance has a half-life of 8 days. How much of the sample remains after 24 days?",
+      "ja": "半減期が 8 日の物質の試料が 200 mg ある。24 日後に残っている量を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語はハイフンを入れて half-life と書く。複数形は half-lives。",
+    "半減期の 2 倍の時間がたつと、0 ではなく 4 分の 1 が残る。減り方は一定の量ずつではなく、一定の割合ずつ（指数関数的減少、エントリ exponential-decay）。",
+    "half-life は時間の長さで、残る量ではない。"
+  ],
+  "related": [
+    "exponential-decay",
+    "exponential-function",
+    "exponential-growth",
+    "growth-rate",
+    "logarithm"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "half-life": 66
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

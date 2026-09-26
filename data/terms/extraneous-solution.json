@@ -1,0 +1,94 @@
+{
+  "id": "extraneous-solution",
+  "ja": {
+    "term": "無縁解",
+    "reading": "むえんかい",
+    "alt": []
+  },
+  "en": {
+    "term": "extraneous solution",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "方程式を解く途中で両辺を 2 乗したり分母を払ったりしたときに出てくるが、もとの方程式を満たさない値。解の候補に入れてはいけない。",
+  "definition_en": "A value that comes out of the solving process, for example after squaring both sides or clearing denominators, but does not satisfy the original equation. It must be thrown out.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Squaring both sides can give you an extraneous solution, so always plug your answers back into the original equation.",
+      "ja": "両辺を 2 乗すると無縁解が出ることがあるから、答えは必ずもとの方程式に代入して確かめよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve √(2x + 3) = x and identify any extraneous solution.",
+      "ja": "方程式 √(2x + 3) = x を解け。無縁解があればそれも示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "√(x + 3) = x − 3 の両辺を 2 乗すると x = 1、6 が出るが、x = 1 は左辺が 2、右辺が −2 になるので無縁解。答えは x = 6 だけ。",
+    "日本では「解の吟味」（エントリ checking-whether-the-solution-makes-sense）で除くと言う。英語では、見つけた値が extraneous solution かどうかを check して除く。",
+    "無縁解があっても、残りの値が解になることはある。方程式にまったく解がない場合（エントリ no-solution）とは区別する。"
+  ],
+  "related": [
+    "radical-equation",
+    "checking-whether-the-solution-makes-sense",
+    "clear-the-denominators",
+    "logarithmic-equation",
+    "no-solution"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "extraneous solution": 21
+    },
+    "written": {
+      "extraneous solution": 50
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-25"
+  }
+}

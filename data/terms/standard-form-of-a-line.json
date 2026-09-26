@@ -1,0 +1,96 @@
+{
+  "id": "standard-form-of-a-line",
+  "ja": {
+    "term": "直線の標準形",
+    "reading": "ちょくせんのひょうじゅんけい",
+    "alt": []
+  },
+  "en": {
+    "term": "standard form of a linear equation",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「直線の標準形」は日本の教科書に無い、本プロジェクトの訳語。日本の数II では直線の方程式の一般形を ax + by + c = 0（右辺が 0）と書くので、英語の standard form（定数が右辺）と形が違う。英語の standard form は二次関数の ax² + bx + c や英国の科学的記数法など別の意味でも使うので、「直線の」「一次方程式の」を付けて区別する。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "直線の式を Ax + By = C の形（x と y の項を左辺、定数を右辺）に書いたもの。ふつう A、B、C を整数にし、A ≧ 0 にそろえる。",
+  "definition_en": "The form Ax + By = C of the equation of a line, with the x- and y-terms on the left and the constant on the right. Usually A, B, and C are integers and A is not negative.",
+  "latex": "Ax + By = C",
+  "spoken_en": "A x plus B y equals C",
+  "examples": [
+    {
+      "en": "Let's put y = (2/3)x + 4 in standard form of a linear equation: multiply everything by 3, move the x-term over, and you get 2x − 3y = −12.",
+      "ja": "y = (2/3)x + 4 を直線の標準形にしよう。全体に 3 をかけて x の項を移すと、2x − 3y = −12 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the equation y = −3x + 5 in standard form of a linear equation, Ax + By = C.",
+      "ja": "式 y = −3x + 5 を、直線の標準形 Ax + By = C の形に書き直せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の数II の一般形 ax + by + c = 0 から書き直すと、定数の符号が変わる。2x − 3y + 12 = 0 は standard form では 2x − 3y = −12。",
+    "standard form だけでは別の意味にもなる。二次関数の ax² + bx + c の形（日本の「一般形」、エントリ standard-form）や、英国での科学的記数法（エントリ scientific-notation）にも使うので、「直線の」「一次方程式の」を付けて区別する。",
+    "OpenStax Elementary Algebra は A、B、C を整数にし A ≧ 0 とすることが多い。分数の係数は払い、x の係数が負なら全体に −1 をかける。"
+  ],
+  "related": [
+    "slope-intercept-form-of-a-line",
+    "point-slope-form",
+    "linear-equation-in-two-variables",
+    "equation-of-a-line",
+    "x-intercept"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "standard form of linear equation | standard form of a linear equation | linear equation in standard form | line in standard form | standard form of a line | standard form of the line | standard form of the equation of a line | equation of a line in standard form": 4
+    },
+    "written": {
+      "standard form of linear equation | standard form of a linear equation | linear equation in standard form | line in standard form | standard form of a line | standard form of the line | standard form of the equation of a line | equation of a line in standard form": 8
+    },
+    "sources": [
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは OpenStax の呼び方 standard form of linear equation | standard form of a linear equation | linear equation in standard form | line in standard form | standard form of a line | standard form of the line | standard form of the equation of a line | equation of a line in standard form（本文 8 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

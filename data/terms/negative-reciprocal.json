@@ -1,0 +1,93 @@
+{
+  "id": "negative-reciprocal",
+  "ja": {
+    "term": "符号を変えた逆数",
+    "reading": "ふごうをかえたぎゃくすう",
+    "alt": [
+      "逆数の負"
+    ]
+  },
+  "en": {
+    "term": "negative reciprocal",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「符号を変えた逆数」は日本の教科書に無い、本プロジェクトの訳語。日本では垂直条件を「傾きの積が −1」（m₁m₂ = −1）と言い、この数に名前を付けない。OpenStax Algebra and Trigonometry は、垂直な直線の一方の傾きは他方の negative reciprocal だと説明する。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "0 でない数 a に対する −1/a。逆数をとって符号を変えた数で、2/3 に対しては −3/2。",
+  "definition_en": "For a nonzero number a, the number −1/a: flip the number and change its sign. For example, the negative reciprocal of 2/3 is −3/2.",
+  "latex": "-\\frac{1}{a}",
+  "spoken_en": "negative one over a",
+  "examples": [
+    {
+      "en": "Perpendicular slopes are negative reciprocals, so if one line has a slope of 2/3, the other one has a slope of negative 3/2.",
+      "ja": "垂直な直線の傾きは互いに符号を変えた逆数だから、一方の傾きが 2/3 なら、もう一方の傾きは −3/2。",
+      "register": "spoken"
+    },
+    {
+      "en": "The slope of a line perpendicular to y = −4x + 1 is the negative reciprocal of −4. Find this slope, and write an equation of the perpendicular line through (8, 3).",
+      "ja": "直線 y = −4x + 1 に垂直な直線の傾きは、−4 の符号を変えた逆数である。この傾きを求め、点 (8, 3) を通り y = −4x + 1 に垂直な直線の式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "negative は「負の」ではなく「符号を変えた」の意味。負の数の negative reciprocal は正になる（−4 なら 1/4）。",
+    "opposite reciprocal とも言う。opposite は符号を変えた数のこと（エントリ opposite）。",
+    "傾きが negative reciprocal になるのは、垂直な 2 直線のどちらも垂直・水平でないときだけ。水平な直線（傾き 0）には逆数がなく、垂直な直線の傾きは定義されない（エントリ perpendicular-lines）。"
+  ],
+  "related": [
+    "reciprocal",
+    "perpendicular-lines",
+    "slope",
+    "opposite",
+    "parallel-lines"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "negative reciprocal": 13
+    },
+    "written": {
+      "negative reciprocal": 27
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

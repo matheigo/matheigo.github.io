@@ -1,0 +1,96 @@
+{
+  "id": "shortest-distance",
+  "ja": {
+    "term": "最短距離",
+    "reading": "さいたんきょり",
+    "alt": []
+  },
+  "en": {
+    "term": "shortest distance",
+    "alt": [
+      "minimum distance"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "2 点を結ぶ道のりのうち、最も短いものの長さ。立体の表面を通るときは、展開図の上で 2 点を結ぶ線分の長さになる。",
+  "definition_en": "The length of the shortest path between two points, or between a point and a figure. Along the surface of a solid, it is the length of the straight segment joining the two points on the net.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To get the shortest distance across the box, unfold it into a net and draw a straight line.",
+      "ja": "箱の表面を通る最短距離は、展開図に開いてまっすぐな線を引けば分かる。",
+      "register": "spoken"
+    },
+    {
+      "en": "An ant crawls on the surface of a cube with 4 cm edges from vertex A to the opposite vertex G. Find the minimum distance it must crawl.",
+      "ja": "1 辺 4 cm の立方体の表面を、アリが頂点 A から向かい合う頂点 G まで進む。進む道のりの最短距離を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "点と直線の最短距離は、点から直線に下ろした垂線の長さ（エントリ distance-from-a-point-to-a-line）。CK-12 Geometry は点と直線・平行線の間の距離を shortest distance として説明する。",
+    "中 3 の問題では、立体の表面にかけたひもの最短の長さを、展開図の上の線分として三平方の定理で求める（エントリ net）。",
+    "格子の道順の数を数える「最短経路」とは別の話（エントリ shortest-path）。こちらは道のりの長さ。"
+  ],
+  "related": [
+    "distance",
+    "net",
+    "distance-from-a-point-to-a-line",
+    "pythagorean-theorem",
+    "space-diagonal"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.34 Solving Equations Using the Pythagorean Theorem・4.38 Distance Between Parallel Lines"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "shortest distance": 2
+    },
+    "written": {
+      "shortest distance": 4,
+      "minimum distance": 7
+    },
+    "sources": [
+      "mit-18.02",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満）。見出しは CK-12 の呼び方 shortest distance（CK-12 Geometry 4.21 Angle Bisectors in Triangles・CK-12 Geometry 4.38 Distance Between Parallel Lines・CK-12 Geometry 4.34 Solving Equations Using the Pythagorean Theorem・計 6 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

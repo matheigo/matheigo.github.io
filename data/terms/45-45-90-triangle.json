@@ -1,0 +1,99 @@
+{
+  "id": "45-45-90-triangle",
+  "ja": {
+    "term": "直角二等辺三角形",
+    "reading": "ちょっかくにとうへんさんかくけい",
+    "alt": [
+      "45°, 45°, 90° の三角形"
+    ]
+  },
+  "en": {
+    "term": "isosceles right triangle",
+    "alt": [
+      "45-45-90 triangle"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "直角をはさむ 2 辺の長さが等しい直角三角形。角は 45°, 45°, 90° で、辺の比は 1 : 1 : √2。",
+  "definition_en": "A right triangle whose two legs are equal in length, so its angles are 45°, 45°, and 90°. Its sides are in the ratio 1 : 1 : √2.",
+  "latex": "1 : 1 : \\sqrt{2}",
+  "spoken_en": "one to one to the square root of two",
+  "examples": [
+    {
+      "en": "Cut a square along a diagonal and you get a 45-45-90 triangle, so the hypotenuse is a leg times root 2.",
+      "ja": "正方形を対角線で切ると、45°, 45°, 90° の三角形ができる。だから斜辺は直角をはさむ辺の √2 倍だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "The hypotenuse of an isosceles right triangle is 10. Find the length of each leg.",
+      "ja": "直角二等辺三角形の斜辺の長さが 10 である。直角をはさむ辺の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "IM Geometry は isosceles right triangle と呼び、正方形を対角線で半分にした形として扱う（Half a Square の課）。CK-12 は 45-45-90 triangle と呼ぶ。",
+    "45-45-90 triangle は forty-five forty-five ninety triangle と読む。",
+    "斜辺から直角をはさむ辺を求めるときは √2 で割るので、答えは分母を有理化した形になる（10 ÷ √2 = 5√2。エントリ rationalizing-the-denominator）。"
+  ],
+  "related": [
+    "special-right-triangles",
+    "isosceles-triangle",
+    "legs",
+    "square-shape",
+    "30-60-90-triangle"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 4.2 Half a Square"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "45-45-90 triangle": 2,
+      "isosceles right triangle": 3
+    },
+    "written": {
+      "isosceles right triangle": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "openstax-prealgebra",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは IM の呼び方 isosceles right triangle（Geometry 4.2 Half a Square・Grade 8 6.1 Organizing Data・Grade 8 1.8 Rotation Patterns・計 9 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

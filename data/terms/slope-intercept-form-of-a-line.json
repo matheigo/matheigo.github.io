@@ -1,0 +1,95 @@
+{
+  "id": "slope-intercept-form-of-a-line",
+  "ja": {
+    "term": "傾き切片形",
+    "reading": "かたむきせっぺんけい",
+    "alt": []
+  },
+  "en": {
+    "term": "slope-intercept form",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「傾き切片形」は日本の教科書に無い、本プロジェクトの訳語。日本では y = ax + b を一次関数の式として扱い、形に名前を付けない。米国では直線の式の形に名前を付けて区別する（point-slope form、standard form）。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "直線の式を y = mx + b の形に書いたもの。m が傾き、b が y 切片を表す。",
+  "definition_en": "The form y = mx + b of the equation of a line, where m is the slope and b is the y-intercept.",
+  "latex": "y = mx + b",
+  "spoken_en": "y equals m x plus b",
+  "examples": [
+    {
+      "en": "Once it's in slope-intercept form, you can just read off the slope and the y-intercept.",
+      "ja": "傾き切片形にしてしまえば、傾きと y 切片をそのまま読み取れる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the equation 4x + 2y = 6 in slope-intercept form.",
+      "ja": "式 4x + 2y = 6 を y = mx + b の形（傾き切片形）に変形せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "米国では傾きを m で書く。日本の一次関数 y = ax + b の a が m にあたる。",
+    "b は y 切片（y-intercept）で、グラフは点 (0, b) を通る。",
+    "直線の式の別の形は point-slope form（エントリ point-slope-form）と standard form（エントリ standard-form-of-a-line）。"
+  ],
+  "related": [
+    "slope",
+    "y-intercept",
+    "point-slope-form",
+    "standard-form-of-a-line",
+    "linear-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "slope-intercept form": 52
+    },
+    "written": {
+      "slope-intercept form": 183
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

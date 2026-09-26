@@ -1,0 +1,83 @@
+{
+  "id": "mean-absolute-deviation",
+  "ja": {
+    "term": "平均絶対偏差",
+    "reading": "へいきんぜったいへんさ",
+    "alt": []
+  },
+  "en": {
+    "term": "mean absolute deviation",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "各データと平均値の差の絶対値を求め、それらの平均をとった値。データが平均値のまわりにどれくらい散らばっているかを表す。",
+  "definition_en": "The average distance between each data value and the mean, found by averaging the absolute values of the differences. It measures how spread out the data are.",
+  "latex": "\\text{MAD} = \\frac{1}{n}\\sum_{i=1}^{n} |x_i - \\bar{x}|",
+  "spoken_en": "MAD equals one over n times the sum from i equals 1 to n of the absolute value of x sub i minus x bar",
+  "examples": [
+    {
+      "en": "The mean absolute deviation is 2, so on average the values are 2 away from the mean.",
+      "ja": "平均絶対偏差は 2 だから、データは平均して平均値から 2 離れているということ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the mean absolute deviation of the data set 2, 4, 6, 8.",
+      "ja": "データ 2、4、6、8 の平均絶対偏差を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "IM Grade 6 は mean absolute deviation (MAD) として 6 年生で教える。日本の中学・高校では扱わず、散らばりは範囲・四分位範囲・分散・標準偏差（エントリ standard-deviation）で表す。",
+    "略して MAD と書き、エム・エー・ディーと 1 文字ずつ読むか、mad と 1 語で読む。",
+    "差を 2 乗せず絶対値をとる点が標準偏差と違う。2、4、6、8 なら平均値 5 との差の絶対値は 3、1、1、3 で、平均絶対偏差は 2。"
+  ],
+  "related": [
+    "standard-deviation",
+    "absolute-value",
+    "arithmetic-mean",
+    "deviation",
+    "interquartile-range"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 6 glossary（mean absolute deviation (MAD)）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "mean absolute deviation": 21
+    },
+    "sources": [
+      "khan-ap-stats",
+      "khan-middle",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

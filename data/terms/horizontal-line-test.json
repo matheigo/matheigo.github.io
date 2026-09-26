@@ -1,0 +1,87 @@
+{
+  "id": "horizontal-line-test",
+  "ja": {
+    "term": "水平線テスト",
+    "reading": "すいへいせんてすと",
+    "alt": []
+  },
+  "en": {
+    "term": "horizontal line test",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「水平線テスト」は日本の教科書に無い、本プロジェクトの訳語。日本の数III では「単調増加（減少）なら逆関数がある」のように説明し、判定法に名前を付けない。英語では one-to-one（エントリ one-to-one）かどうかをグラフで確かめる方法として horizontal line test の名前で呼ぶ。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "関数のグラフに水平な直線を引き、どの水平線ともグラフが 2 点以上で交わらなければ、その関数は 1 対 1 で逆関数をもつと判定する方法。",
+  "definition_en": "A way to tell from a graph whether a function is one-to-one: if no horizontal line crosses the graph more than once, the function passes and has an inverse function.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "y = x² fails the horizontal line test, because the line y = 4 hits it at x = 2 and at x = −2.",
+      "ja": "y = x² は水平線テストに通らない。直線 y = 4 と x = 2 と x = −2 の 2 点で交わるからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the horizontal line test to determine whether f(x) = x³ + 1 has an inverse function.",
+      "ja": "水平な直線とグラフの交わり方を調べて、f(x) = x³ + 1 が逆関数をもつかどうかを判定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「通る／通らない」は pass ／ fail the horizontal line test と言う。",
+    "OpenStax Algebra and Trigonometry は、三角関数のグラフは horizontal line test に通らない（fail）と書く。逆関数を考えるには定義域を制限する（エントリ restricted-domain）。",
+    "関数かどうかを判定する vertical line test（エントリ vertical-line-test）とは別の判定法。日本語の「水平線」は海の水平線（horizon）の意味にもなるが、ここでは水平な直線のこと。"
+  ],
+  "related": [
+    "one-to-one",
+    "inverse-function",
+    "vertical-line-test",
+    "restricted-domain",
+    "find-the-inverse"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "horizontal line test": 9
+    },
+    "written": {
+      "horizontal line test": 35
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

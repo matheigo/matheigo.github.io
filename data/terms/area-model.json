@@ -1,0 +1,94 @@
+{
+  "id": "area-model",
+  "ja": {
+    "term": "面積図",
+    "reading": "めんせきず",
+    "alt": [
+      "面積モデル"
+    ]
+  },
+  "en": {
+    "term": "area diagram",
+    "alt": [
+      "area model"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の中 3 の教科書も、長方形の面積で式の展開を説明するが、図に決まった名前はない。英語でも IM は area diagram、ほかの教材では area model と呼び、呼び方は教材による。IM Grade 6 は分配法則や小数の掛け算の説明にこの図を使う。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "積を長方形の面積として表す図。辺をいくつかに分け、全体の面積を小さな長方形の面積の和として見ることで、分配法則や式の展開を説明する。",
+  "definition_en": "A diagram that shows a product as the area of a rectangle. The sides are split into parts, and the whole area is the sum of the areas of the smaller rectangles.",
+  "latex": "(x + 3)(x + 2) = x^2 + 2x + 3x + 6",
+  "spoken_en": "the quantity x plus three times the quantity x plus two equals x squared plus two x plus three x plus six",
+  "examples": [
+    {
+      "en": "Let's draw an area diagram: split one side into x and 3, and the other side into x and 2.",
+      "ja": "面積図をかこう。1 辺を x と 3 に、もう 1 辺を x と 2 に分ける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Draw an area diagram to show that 6(40 + 7) = 6 · 40 + 6 · 7.",
+      "ja": "6(40 + 7) = 6 × 40 + 6 × 7 であることを面積図で表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "同じ図を area model と呼ぶ教材もある。IM は area diagram と呼ぶ。",
+    "因数分解の box method（エントリ cross-method）は、同じ長方形の図を逆向きに使い、面積の和から辺の長さ（因数）を求める方法。"
+  ],
+  "related": [
+    "distributive-property",
+    "expand",
+    "cross-method",
+    "foil",
+    "rectangle"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 6 5.7 Using Diagrams to Represent Multiplication・6.10 The Distributive Property, Part 2（area diagram）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "area model": 1
+    },
+    "written": {
+      "area model": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは IM の呼び方 area diagram（Grade 6 5.7 Using Diagrams to Represent Multiplication・Grade 6 6.10 The Distributive Property, Part 2・Grade 6 5.8 Calculating Products of Decimals・計 23 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

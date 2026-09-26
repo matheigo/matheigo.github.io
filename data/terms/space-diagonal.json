@@ -1,0 +1,94 @@
+{
+  "id": "space-diagonal",
+  "ja": {
+    "term": "立体の対角線",
+    "reading": "りったいのたいかくせん",
+    "alt": []
+  },
+  "en": {
+    "term": "diagonal of a rectangular prism",
+    "alt": [
+      "diagonal of a box",
+      "space diagonal"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "直方体や立方体で、同じ面の上にない 2 つの頂点を結ぶ線分。縦 a、横 b、高さ c の直方体では、長さは √(a² + b² + c²)。",
+  "definition_en": "A segment joining two vertices of a rectangular prism that do not lie on the same face. For a prism with dimensions a, b, and c, its length is √(a² + b² + c²).",
+  "latex": "\\sqrt{a^2 + b^2 + c^2}",
+  "spoken_en": "the square root of a squared plus b squared plus c squared",
+  "examples": [
+    {
+      "en": "The space diagonal goes through the inside, so to get the diagonal of a box, use the Pythagorean theorem twice: across the bottom, then up to the top corner.",
+      "ja": "立体の対角線は中を通る。だから箱の対角線は三平方の定理を 2 回使って求める。まず底面を横切り、次に上の頂点まで上がる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the length of the diagonal of a rectangular prism that measures 2 cm by 3 cm by 6 cm.",
+      "ja": "縦 2 cm、横 3 cm、高さ 6 cm の直方体の対角線の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語に決まった 1 語はなく、教科書は diagonal of the rectangular prism ／ box のように立体の名前をつけて言う。space diagonal は面の対角線（face diagonal）と区別するときの言い方。",
+    "diagonal だけでは多角形の対角線や面の対角線と区別がつかない（エントリ diagonal）。",
+    "長さは三平方の定理を 2 回使う。底面の対角線が √(a² + b²)、それと高さ c から √(a² + b² + c²)。"
+  ],
+  "related": [
+    "rectangular-prism",
+    "diagonal",
+    "cube-solid",
+    "pythagorean-theorem",
+    "face"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "diagonal of a rectangular prism | diagonal of the rectangular prism": 1
+    },
+    "written": {
+      "diagonal of a rectangular prism | diagonal of the rectangular prism": 1,
+      "diagonal of a box | diagonal of the box": 1
+    },
+    "sources": [
+      "openstax-calculus",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは OpenStax の呼び方 diagonal of a rectangular prism | diagonal of the rectangular prism（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

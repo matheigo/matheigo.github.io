@@ -1,0 +1,95 @@
+{
+  "id": "independent-system",
+  "ja": {
+    "term": "独立な連立方程式",
+    "reading": "どくりつなれんりつほうていしき",
+    "alt": []
+  },
+  "en": {
+    "term": "independent system",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「独立な連立方程式」は日本の教科書に無い、本プロジェクトの訳語。日本では「解がただ 1 組」「解が無数にある（不定）」「解がない（不能）」と言い、連立方程式の種類に名前を付けない。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "連立一次方程式のうち、解がちょうど 1 組あるもの。2 つの式のグラフの直線は 1 点で交わる。",
+  "definition_en": "A system of linear equations that has exactly one solution. The graphs of the equations are lines that intersect at one point.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "These two lines have different slopes, so they cross exactly once, which makes this an independent system with one solution.",
+      "ja": "この 2 本の直線は傾きが違うから、ちょうど 1 回交わる。だから解がただ 1 組の連立方程式だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Determine whether the system 2x + y = 5, x − y = 1 is an independent system, a dependent system, or an inconsistent system.",
+      "ja": "連立方程式 2x + y = 5、x − y = 1 について、解がただ 1 組か、無数にあるか（不定）、解がないか（不能）を判定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Algebra and Trigonometry は、解が無数にあるものを dependent system、解がないものを inconsistent system と呼び、解があるもの（independent と dependent）を consistent と呼ぶ。",
+    "OpenStax Elementary Algebra は independent を「2 つの式のグラフが別の直線」の意味で使い、平行な 2 直線を inconsistent and independent と分類する。教科書によって分類の仕方が違う。",
+    "線形代数の linearly independent（エントリ linearly-independent）とは別の用語。"
+  ],
+  "related": [
+    "system-of-linear-equations",
+    "solving-by-graphing",
+    "infinitely-many-solutions",
+    "no-solution",
+    "linearly-independent"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "independent system": 2
+    },
+    "written": {
+      "independent system": 8
+    },
+    "sources": [
+      "khan-middle",
+      "mit-6.042",
+      "openstax-algtrig",
+      "openstax-intalg"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは OpenStax の呼び方 independent system（本文 8 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

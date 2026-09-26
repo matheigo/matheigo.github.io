@@ -1,0 +1,95 @@
+{
+  "id": "dot-plot",
+  "ja": {
+    "term": "ドットプロット",
+    "reading": "どっとぷろっと",
+    "alt": []
+  },
+  "en": {
+    "term": "dot plot",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "数直線の上に、データの値ごとに点（●）を 1 つずつ積み上げて表した図。どの値がいくつあるかと、データの散らばり方がひと目で分かる。",
+  "definition_en": "A graph that shows data by stacking one dot for each data value above a number line. It shows how often each value occurs and how the data are spread out.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Each dot on the dot plot is one student, so if you read 4 books, add a dot above the 4.",
+      "ja": "ドットプロットの点 1 つが生徒 1 人。本を 4 冊読んだなら、4 の上に点を 1 つ足してね。",
+      "register": "spoken"
+    },
+    {
+      "en": "The dot plot shows the number of books each student read last month. How many students read more than 3 books?",
+      "ja": "ドットプロットは、各生徒が先月読んだ本の冊数を表している。4 冊以上読んだ生徒は何人か。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "IM（6〜8 年生の教材）は、dot plot を line plot と呼ぶこともあると書く。line plot は折れ線グラフ（line graph、エントリ line-graph）とは別の図。",
+    "dot plot は 1 つの変数の値を数直線に並べる図。2 つの変数を点で表す散布図（scatter plot、エントリ scatter-plot）とは違う。"
+  ],
+  "related": [
+    "histogram",
+    "line-graph",
+    "scatter-plot",
+    "stem-and-leaf-plot",
+    "number-line"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ドットプロット",
+      "en": "Dot plot (statistics)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 6 8.1 Got Data?（dot plot を line plot とも呼ぶ）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "dot plot": 43
+    },
+    "written": {
+      "dot plot": 6
+    },
+    "sources": [
+      "khan-ap-stats",
+      "khan-middle",
+      "openstax-introstats",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

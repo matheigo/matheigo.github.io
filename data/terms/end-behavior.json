@@ -1,0 +1,90 @@
+{
+  "id": "end-behavior",
+  "ja": {
+    "term": "関数の終端挙動",
+    "reading": "かんすうのしゅうたんきょどう",
+    "alt": [
+      "終端挙動"
+    ]
+  },
+  "en": {
+    "term": "end behavior",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "見出しの「関数の終端挙動」は日本の教科書に無い、本プロジェクトの訳語。日本の数III では x → ±∞ のときの極限（エントリ limit-at-infinity）として扱い、まとめた名前はない。",
+  "domains": [
+    "functions",
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "数III",
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "x を限りなく大きくしたとき（x → ∞）と限りなく小さくしたとき（x → −∞）に、関数の値がどうなるかという性質。多項式関数では最高次の項で決まる。",
+  "definition_en": "What happens to the values of a function as x goes to positive infinity and to negative infinity. For a polynomial, the leading term determines it.",
+  "latex": "\\text{as } x \\to \\infty,\\ f(x) \\to -\\infty",
+  "spoken_en": "as x approaches infinity, f of x approaches negative infinity",
+  "examples": [
+    {
+      "en": "The leading term is negative 2x cubed, so the end behavior is up on the left and down on the right.",
+      "ja": "最高次の項が −2x³ だから、終端挙動は左で上がって右で下がる形だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Describe the end behavior of f(x) = −2x³ + 5x − 1.",
+      "ja": "f(x) = −2x³ + 5x − 1 の x → ∞、x → −∞ のときの様子を述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "多項式関数は最高次の項（leading term、エントリ leading-term）だけを見ればよい。y = −2x³ なら x → ∞ で y → −∞、x → −∞ で y → ∞。",
+    "OpenStax Algebra and Trigonometry は、答えを As x → ∞, f(x) → −∞ の形で書かせる。日本の数III の lim を使う書き方とは形が違う。",
+    "behavior は米国の綴り（英国は behaviour）。"
+  ],
+  "related": [
+    "leading-term",
+    "limit-at-infinity",
+    "polynomial",
+    "as-x-approaches-infinity",
+    "leading-coefficient"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "end behavior": 57
+    },
+    "written": {
+      "end behavior": 128
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

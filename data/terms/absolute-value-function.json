@@ -1,0 +1,89 @@
+{
+  "id": "absolute-value-function",
+  "ja": {
+    "term": "絶対値関数",
+    "reading": "ぜったいちかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "absolute value function",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "f(x) = |x| と、それを平行移動・拡大した f(x) = a|x − h| + k の形の関数。グラフは V 字形で、頂点は (h, k)。",
+  "definition_en": "The function f(x) = |x| and its transformations of the form f(x) = a|x − h| + k. Its graph is V-shaped with the vertex at (h, k).",
+  "latex": "f(x) = |x|",
+  "spoken_en": "f of x equals the absolute value of x",
+  "examples": [
+    {
+      "en": "The graph of an absolute value function makes a V, and the point at the bottom of the V is the vertex.",
+      "ja": "絶対値関数のグラフは V の字になって、V のいちばん下の点が頂点だよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Graph the absolute value function f(x) = |x − 2| + 1 and identify its vertex.",
+      "ja": "絶対値関数 f(x) = |x − 2| + 1 のグラフをかき、頂点の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語では |x| を the absolute value of x と読む。f(x) = |x − 2| は f of x equals the absolute value of x minus 2。",
+    "頂点 (h, k) の h は、絶対値の中の符号と逆になる。f(x) = |x + 3| − 1 の頂点は (−3, −1)。",
+    "a < 0 のとき、グラフは上下が逆の V 字（頂点が最も高い点）になる。"
+  ],
+  "related": [
+    "absolute-value",
+    "piecewise-function",
+    "vertex",
+    "transformations-of-functions",
+    "absolute-value-equation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "absolute value function": 27
+    },
+    "written": {
+      "absolute value function": 72
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

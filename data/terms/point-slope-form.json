@@ -1,0 +1,93 @@
+{
+  "id": "point-slope-form",
+  "ja": {
+    "term": "点傾き形",
+    "reading": "てんかたむきけい",
+    "alt": []
+  },
+  "en": {
+    "term": "point-slope form",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「点傾き形」は日本の教科書に無い、本プロジェクトの訳語。日本では数II で「点 (x₁, y₁) を通り傾き m の直線の方程式」として同じ式を学ぶが、形の名前はない。中 2 では y = ax + b に点の座標を代入して b を求めることが多い。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "点 (x₁, y₁) を通り傾き m の直線の式を、y − y₁ = m(x − x₁) の形に書いたもの。",
+  "definition_en": "The form y − y₁ = m(x − x₁) of the equation of the line with slope m that passes through the point (x₁, y₁).",
+  "latex": "y - y_1 = m(x - x_1)",
+  "spoken_en": "y minus y sub one equals m times the quantity x minus x sub one",
+  "examples": [
+    {
+      "en": "We know the slope and one point, so point-slope form is the fastest way to write the equation.",
+      "ja": "傾きと 1 点がわかっているから、点傾き形を使うのがいちばん早く式を書ける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write an equation in point-slope form for the line through (2, −1) with slope 3.",
+      "ja": "点 (2, −1) を通り、傾きが 3 の直線の式を点傾き形で書け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "点の座標が負のときは符号に注意する。点 (2, −1) なら y − (−1) で、y + 1 = 3(x − 2) になる。",
+    "x₁ は x sub one と読む。",
+    "slope-intercept form（エントリ slope-intercept-form-of-a-line）に直すと、y + 1 = 3(x − 2) は y = 3x − 7。"
+  ],
+  "related": [
+    "slope",
+    "slope-intercept-form-of-a-line",
+    "standard-form-of-a-line",
+    "equation-of-a-line",
+    "slope-formula"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "point-slope form": 25
+    },
+    "written": {
+      "point-slope form": 44
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

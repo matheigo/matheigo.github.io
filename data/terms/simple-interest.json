@@ -1,0 +1,84 @@
+{
+  "id": "simple-interest",
+  "ja": {
+    "term": "単利",
+    "reading": "たんり",
+    "alt": [
+      "利息"
+    ]
+  },
+  "en": {
+    "term": "simple interest",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "元金にだけ利息がつく利息のつき方。利息は 元金 × 年利率 × 年数 で求める。",
+  "definition_en": "Interest earned only on the original amount of money, called the principal. It is found with I = Prt, where P is the principal, r is the annual interest rate, and t is the time in years.",
+  "latex": "I = Prt",
+  "spoken_en": "I equals P times r times t",
+  "examples": [
+    {
+      "en": "With simple interest, you only earn interest on the principal, so you get the same amount every year.",
+      "ja": "単利だと利息がつくのは元金だけだから、毎年同じ額の利息がもらえる。",
+      "register": "spoken"
+    },
+    {
+      "en": "You deposit $500 in an account that earns 4% simple interest per year. How much interest will you earn in 3 years?",
+      "ja": "年利 4 % の単利で利息がつく口座に 500 ドルを預ける。3 年間で受け取る利息を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の interest は「利息・利子」、rate は利率、元金は principal（「原理」の principle とは綴りが違う）。",
+    "r は小数に直して代入する（4 % なら 0.04）。t は年数なので、月数で与えられたら年に直す。",
+    "利息にも利息がつくのは複利（エントリ compound-interest）。"
+  ],
+  "related": [
+    "compound-interest",
+    "percent",
+    "percent-change",
+    "substitute",
+    "exponential-growth"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "simple interest": 78
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  }
+}

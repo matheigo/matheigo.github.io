@@ -1,0 +1,100 @@
+{
+  "id": "transformations-of-functions",
+  "ja": {
+    "term": "グラフの移動",
+    "reading": "ぐらふのいどう",
+    "alt": [
+      "関数の変換"
+    ]
+  },
+  "en": {
+    "term": "transformations of the graph",
+    "alt": [
+      "transformations of functions",
+      "function transformations"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本では「平行移動」「対称移動」を別々に学び、まとめた名前はあまり使わない。米国では親関数（parent function）からの transformations として、まとめて教える。OpenStax Algebra and Trigonometry は Transformation of Functions の節で扱う。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "関数 y = f(x) のグラフの平行移動・対称移動・拡大縮小をまとめた言い方。y = f(x − h) + k は右に h、上に k の平行移動。",
+  "definition_en": "The ways a graph of y = f(x) can be changed: shifts (translations), reflections, stretches, and compressions. For example, y = f(x − h) + k shifts the graph h units right and k units up.",
+  "latex": "y = f(x - h) + k",
+  "spoken_en": "y equals f of x minus h, plus k",
+  "examples": [
+    {
+      "en": "What transformations of the graph take y = x² to y = (x − 2)² + 3? It shifts right 2 and up 3.",
+      "ja": "y = x² のグラフをどう移動すると y = (x − 2)² + 3 のグラフになるかな。右に 2、上に 3 平行移動だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Describe the transformations of the graph of f(x) = |x| that produce the graph of g(x) = −|x + 1|.",
+      "ja": "f(x) = |x| のグラフをどのように移動すると g(x) = −|x + 1| のグラフになるかを説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "y = f(x − h) は右に h の平行移動。x − h のマイナスにつられて左と読まない。",
+    "英語の transformations には平行移動（shift、エントリ translation）と対称移動（reflection、エントリ reflect）のほか、拡大縮小（stretch、compression、エントリ stretch-vertically）も入る。",
+    "y = −f(x) は x 軸に関する対称移動。"
+  ],
+  "related": [
+    "translation",
+    "reflect",
+    "stretch-vertically",
+    "compress-horizontally",
+    "absolute-value-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "function transformations": 1,
+      "transformations of functions": 1
+    },
+    "written": {
+      "transformations of functions": 5,
+      "function transformations": 8,
+      "transformations of the graph": 9
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満）。見出しは OpenStax の呼び方 transformations of the graph（本文 9 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

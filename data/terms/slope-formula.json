@@ -1,0 +1,95 @@
+{
+  "id": "slope-formula",
+  "ja": {
+    "term": "傾きの公式",
+    "reading": "かたむきのこうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "slope formula",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「傾きの公式」は日本の教科書に無い、本プロジェクトの訳語。日本では「変化の割合 = y の増加量 ÷ x の増加量」（エントリ rate-of-change）として同じ計算をするが、公式の名前はない。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "2 点 (x₁, y₁)、(x₂, y₂) を通る直線の傾きを、y 座標の差を x 座標の差で割って求める式 m = (y₂ − y₁)/(x₂ − x₁)。x₁ = x₂ のときは分母が 0 になり、使えない。",
+  "definition_en": "The formula m = (y₂ − y₁)/(x₂ − x₁) for the slope of the line through two points (x₁, y₁) and (x₂, y₂). It does not apply when x₁ = x₂, because the denominator would be zero.",
+  "latex": "m = \\frac{y_2 - y_1}{x_2 - x_1}",
+  "spoken_en": "m equals y two minus y one over x two minus x one",
+  "examples": [
+    {
+      "en": "Plug the points (2, 3) and (4, 7) into the slope formula: 7 minus 3 over 4 minus 2 is 4 over 2, so the slope is 2.",
+      "ja": "点 (2, 3) と (4, 7) を傾きの公式に入れる。7 − 3 を 4 − 2 で割って 4/2、だから傾きは 2。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the slope formula to find the slope of the line passing through (−1, 5) and (3, −3).",
+      "ja": "傾きの公式を用いて、2 点 (−1, 5)、(3, −3) を通る直線の傾きを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "分子と分母で同じ点を先にする。(y₂ − y₁)/(x₁ − x₂) のように順番をそろえないと、符号が逆になる。",
+    "x₁ = x₂ のとき（垂直な直線）は分母が 0 になり、傾きは定義されない（undefined）。水平な直線は分子が 0 で、傾きは 0。",
+    "y₂ の小さい 2 は下付き文字（subscript）で、y sub two とも読む。y の 2 乗（y squared）と混同しない。"
+  ],
+  "related": [
+    "slope",
+    "rate-of-change",
+    "rise-over-run",
+    "point-slope-form",
+    "midpoint-formula"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "slope formula": 15
+    },
+    "written": {
+      "slope formula": 59
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

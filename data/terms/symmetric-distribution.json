@@ -1,0 +1,87 @@
+{
+  "id": "symmetric-distribution",
+  "ja": {
+    "term": "左右対称な分布",
+    "reading": "さゆうたいしょうなぶんぷ",
+    "alt": []
+  },
+  "en": {
+    "term": "symmetrical distribution",
+    "alt": [
+      "symmetric distribution"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "ヒストグラムを中央で折ると、左右がほぼ重なる形の分布。平均値と中央値がほぼ等しくなる。",
+  "definition_en": "A distribution whose graph looks about the same on both sides of its center, like a mirror image. Its mean and median are about equal.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "See how the left half matches the right half? That's a symmetrical distribution, so the mean and the median are pretty much the same.",
+      "ja": "左半分と右半分がそろっているでしょう。これは左右対称な分布だから、平均値と中央値はほぼ同じだよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "The histogram shows a symmetrical distribution centered at 70. Estimate the mean and the median.",
+      "ja": "ヒストグラムは 70 を中心とする左右対称な分布を表している。平均値と中央値を推定せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "OpenStax Introductory Statistics は symmetrical と書くが、授業では symmetric distribution とも言う。どちらも「対称な」で意味は同じ。",
+    "左右対称でない分布は skewed（エントリ be-skewed）。skewed right は右に裾が長く、山は左に寄る。山のある側ではなく、裾の伸びる側で左右を言う。",
+    "左右対称な分布は正規分布（エントリ normal-distribution）に限らない。山が 2 つあっても左右がそろっていれば symmetrical。"
+  ],
+  "related": [
+    "histogram",
+    "be-skewed",
+    "median",
+    "arithmetic-mean",
+    "normal-distribution"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "symmetric distribution": 8
+    },
+    "written": {
+      "symmetrical distribution": 8,
+      "symmetric distribution": 2
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-6.042",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-25"
+  }
+}

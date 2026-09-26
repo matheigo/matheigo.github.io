@@ -1,0 +1,89 @@
+{
+  "id": "like-radicals",
+  "ja": {
+    "term": "同類根号",
+    "reading": "どうるいこんごう",
+    "alt": []
+  },
+  "en": {
+    "term": "like radicals",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "見出しの「同類根号」は日本の教科書に無い、本プロジェクトの訳語。日本の中 3 では「根号の中が同じ数」の和・差として、名前を付けずに計算する。英語では like terms にならって like radicals と呼び、OpenStax Elementary Algebra が扱う。",
+  "domains": [
+    "arithmetic"
+  ],
+  "level": {
+    "jp": [
+      "中3",
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "根号の中の数と根号の指数（2 乗根か 3 乗根かなど）がそれぞれ同じ根号の式。2√3 と 5√3 のように、同類項と同じ要領でまとめられる。",
+  "definition_en": "Radicals that have the same index and the same number under the radical sign. Like radicals can be combined the same way as like terms.",
+  "latex": "2\\sqrt{3} + 5\\sqrt{3} = 7\\sqrt{3}",
+  "spoken_en": "two root three plus five root three equals seven root three",
+  "examples": [
+    {
+      "en": "These are like radicals, so just add the numbers in front: 2 root 3 plus 5 root 3 is 7 root 3.",
+      "ja": "根号の中が同じだから、前の数を足すだけ。2√3 + 5√3 = 7√3 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Simplify √20 + 3√5. First rewrite √20 so that the two terms are like radicals.",
+      "ja": "√20 + 3√5 を簡単にせよ。まず √20 を変形して、根号の中を同じ数にしてから計算すること。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "√2 と √3 は like radicals ではないので、√2 + √3 は √5 にならず、これ以上まとめられない。",
+    "そのままでは違って見えても、根号を簡単にすると like radicals になることがある（√20 = 2√5 なので √20 + 3√5 = 5√5）。",
+    "like は like terms（同類項、エントリ like-terms）と同じ like。根号の指数が違う √3 と ∛3 は like radicals ではない。"
+  ],
+  "related": [
+    "like-terms",
+    "radical-sign",
+    "simplify-radicals",
+    "square-root-of-a-number",
+    "combine-like-terms"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "like radicals": 1
+    },
+    "written": {
+      "like radicals": 38
+    },
+    "sources": [
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

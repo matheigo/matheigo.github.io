@@ -1,0 +1,102 @@
+{
+  "id": "distance-formula",
+  "ja": {
+    "term": "距離の公式",
+    "reading": "きょりのこうしき",
+    "alt": [
+      "2 点間の距離"
+    ]
+  },
+  "en": {
+    "term": "distance formula",
+    "alt": [
+      "distance between two points"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3",
+      "数II"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "座標平面上の 2 点 (x₁, y₁)、(x₂, y₂) の間の距離 d = √((x₂ − x₁)² + (y₂ − y₁)²) を求める公式。2 点を結ぶ線分を斜辺とする直角三角形に三平方の定理を使って導く。",
+  "definition_en": "The formula d = √((x₂ − x₁)² + (y₂ − y₁)²) for the distance between the points (x₁, y₁) and (x₂, y₂) in the coordinate plane. It comes from the Pythagorean theorem applied to a right triangle whose hypotenuse joins the two points.",
+  "latex": "d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}",
+  "spoken_en": "d equals the square root of x sub two minus x sub one, squared, plus y sub two minus y sub one, squared",
+  "examples": [
+    {
+      "en": "Plug the points into the distance formula: 3 squared plus 4 squared is 25, and the square root of 25 is 5.",
+      "ja": "2 点を距離の公式に代入しよう。3 の 2 乗 + 4 の 2 乗 = 25 で、25 の平方根は 5 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use the distance formula to find the distance between two points A(−2, 1) and B(4, 9).",
+      "ja": "距離の公式を用いて、2 点 A(−2, 1)、B(4, 9) の間の距離を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本では中 3 で三平方の定理を使って 2 点間の距離を求め、数II で公式として扱う。OpenStax Algebra and Trigonometry・Intermediate Algebra は Distance Formula という名前の公式として扱う。",
+    "x どうし・y どうしを引く。引く順番は逆でもよい（2 乗すると符号が消える）が、x と y を混ぜない。",
+    "中点の公式（midpoint formula）と取り違えない（エントリ midpoint-formula）。"
+  ],
+  "related": [
+    "pythagorean-theorem",
+    "coordinate-plane",
+    "midpoint-formula",
+    "distance",
+    "distance-from-a-point-to-a-line"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "distance formula": 13,
+      "distance between two points": 3
+    },
+    "written": {
+      "distance between two points": 10,
+      "distance formula": 71
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

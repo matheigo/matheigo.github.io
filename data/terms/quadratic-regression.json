@@ -1,0 +1,79 @@
+{
+  "id": "quadratic-regression",
+  "ja": {
+    "term": "二次関数の回帰",
+    "reading": "にじかんすうのかいき",
+    "alt": []
+  },
+  "en": {
+    "term": "quadratic regression",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 2"
+    ]
+  },
+  "definition_ja": "データの点に最もよく合う二次関数 y = ax² + bx + c を求めること。グラフ電卓や表計算ソフトで求める。",
+  "definition_en": "Finding the quadratic function y = ax² + bx + c that best fits a set of data points. It is usually done with a graphing calculator or a spreadsheet.",
+  "latex": "y = ax^2 + bx + c",
+  "spoken_en": "y equals a x squared plus b x plus c",
+  "examples": [
+    {
+      "en": "The points curve up, so a line won't fit well. Let's run a quadratic regression on the calculator.",
+      "ja": "点が曲がって上がっているから、直線ではうまく合わない。電卓で二次関数の回帰をしてみよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Use quadratic regression to find a quadratic function that models the data in the table.",
+      "ja": "二次関数の回帰を用いて、表のデータを表す二次関数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "回帰直線（regression line、エントリ regression-line）を二次関数にしたもの。直線を当てはめるのは linear regression。",
+    "quadratic regression は二次関数をデータに当てはめる計算で、二次方程式（エントリ quadratic-equation）を解くことではない。",
+    "係数 a、b、c は、残差（エントリ residual）の 2 乗の和が最小になるように決める（最小二乗法、エントリ least-squares）。"
+  ],
+  "related": [
+    "regression-line",
+    "least-squares",
+    "quadratic-function",
+    "scatter-plot",
+    "residual"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

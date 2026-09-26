@@ -1,0 +1,83 @@
+{
+  "id": "solving-by-graphing",
+  "ja": {
+    "term": "グラフによる解法",
+    "reading": "ぐらふによるかいほう",
+    "alt": []
+  },
+  "en": {
+    "term": "solving by graphing",
+    "alt": [
+      "solve … by graphing"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "連立方程式の 2 つの式のグラフをかき、交点の座標を解として読み取る解き方。",
+  "definition_en": "A method of solving a system of equations by graphing each equation and reading the coordinates of the point where the graphs intersect.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "When we're solving by graphing, the solution is just the point where the two lines cross.",
+      "ja": "グラフで解くときは、2 本の直線が交わる点がそのまま解になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve each system by graphing: y = x + 1 and y = −2x + 7.",
+      "ja": "次の連立方程式をグラフを用いて解け。y = x + 1、y = −2x + 7",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "交点の座標が整数でないと読み取りにくい。読み取った値はもとの式に代入して確かめるか、代入法（エントリ substitution-method）・加減法（エントリ elimination）で解き直す。",
+    "2 直線が平行なら交点がなく解はない（エントリ no-solution）。2 直線が重なれば解は無数にある（エントリ infinitely-many-solutions）。",
+    "OpenStax Elementary Algebra は solve a system of linear equations by graphing の形で、代入法・加減法と並べて扱う。"
+  ],
+  "related": [
+    "system-of-linear-equations",
+    "point-of-intersection",
+    "substitution-method",
+    "elimination",
+    "independent-system"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "solving by graphing": 61
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg"
+    ],
+    "counted": "2026-09-25"
+  }
+}

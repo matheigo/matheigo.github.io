@@ -1,0 +1,88 @@
+{
+  "id": "prime-polynomial",
+  "ja": {
+    "term": "既約多項式",
+    "reading": "きやくたこうしき",
+    "alt": [
+      "素多項式",
+      "これ以上因数分解できない式"
+    ]
+  },
+  "en": {
+    "term": "prime polynomial",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の中学・高校では「これ以上因数分解できない」と言い、名前を付けない。「既約多項式」は大学の用語。英語では OpenStax Elementary Algebra が、因数分解できない式を prime と書く。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "整数の範囲では、これ以上因数分解できない多項式。x² + 1 や x² + x + 1 など。",
+  "definition_en": "A polynomial that cannot be factored using integers. For example, x² + 1 and x² + x + 1 are prime polynomials.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Nothing multiplies to 3 and adds to 1, so x squared plus x plus 3 is a prime polynomial.",
+      "ja": "掛けて 3、足して 1 になる整数の組はないから、x² + x + 3 はこれ以上因数分解できない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Factor x² + 4x + 6 completely, or state that it is a prime polynomial.",
+      "ja": "x² + 4x + 6 を因数分解せよ。因数分解できないときは、そのことを答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "因数分解できるかどうかは、どの数の範囲で考えるかで変わる。x² − 2 は整数の範囲では prime だが、実数の範囲では (x − √2)(x + √2) と因数分解できる。",
+    "OpenStax Elementary Algebra は、因数分解できない三項式を prime と形容詞で書く（The polynomial is prime.）。素数（prime number、エントリ prime-number）と同じ prime。",
+    "大学の代数では irreducible polynomial（既約多項式）と言う。"
+  ],
+  "related": [
+    "factoring",
+    "polynomial",
+    "trinomial",
+    "prime-number",
+    "difference-of-squares"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "prime polynomial | polynomial is prime | trinomial is prime | binomial is prime": 5
+    },
+    "sources": [
+      "openstax-elemalg"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。見出しは OpenStax の呼び方 prime polynomial | polynomial is prime | trinomial is prime | binomial is prime（本文 5 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}
