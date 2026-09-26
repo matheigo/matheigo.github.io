@@ -1,0 +1,44 @@
+{
+  "id": "sequence-starting-index",
+  "title_ja": "数列の最初の番号",
+  "title_en": "Starting index of a sequence",
+  "jp": "数列の初項を a₁ とする（高等学校学習指導要領解説の数学B の例: a₁ = 50、aₙ₊₁ = 0.4aₙ + 50）。",
+  "us": "OpenStax Calculus Volume 2 は、数列を n = 0 から始めて a₀, a₁, a₂, … とすることもあると書く。",
+  "advice_ja": "a₀ から始まる数列では、第 n 項が aₙ₋₁ になる。番号の始まりを確かめる。",
+  "category": "notation",
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus II"
+    ]
+  },
+  "term_refs": [
+    "general-term",
+    "sequence"
+  ],
+  "related": [
+    "a-sub-n",
+    "sequence-braces"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学B 数列: a₁ = 50、aₙ₊₁ = 0.4aₙ + 50"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "n = 0 から始める数列 a₀, a₁, a₂, …"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25"
+}
