@@ -593,8 +593,14 @@ describe("settleSymbolReading (rule 2 for symbols)", () => {
     expect(settleSymbolReading("sequence-braces", hits, ["the sequence a n"])).toEqual({ kind: "undecided" });
   });
 
+  it("counts the body only, not a section title or a glossary headword", () => {
+    const hits = ref({ im: { [order[0]]: { "Geometry 7.1": 2 } }, imGlossary: { [order[0]]: ["Geometry"] }, openstaxTitles: { [order[0]]: ["Sets"] } });
+    expect(settleSymbolReading("empty-set-symbol", hits, order)).toEqual({ kind: "undecided" });
+  });
+
   it("reads Levin's mathematical italic letters as plain ones", () => {
     expect(cedText("𝑃 ∨ 𝑄 is read “𝑃 or 𝑄” and ℚ stays")).toBe('p ∨ q is read "p or q" and ℚ stays');
+    expect(cedText("parallelogram \\(ABCD\\) and the \\(x\\)-intercept")).toBe("parallelogram abcd and the x-intercept");
     expect(countPattern(cedText("𝐴 × 𝐵 is the Cartesian product of 𝐴 and 𝐵"), "the cartesian product of *")).toBe(1);
   });
 });

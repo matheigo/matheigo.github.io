@@ -1291,6 +1291,74 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "the modulus of z": "the modulus of *",
     "the magnitude of z": "the magnitude of z | the magnitude of a complex",
   },
+  // Phase 3 記号 バッチ 5 (ledger rows 201-220). Point names are letters; the forms list the
+  // letter pairs and triples that lectures and the references use
+  "argument-arg-z": {
+    "the argument of z": "the argument of z | the argument of a complex | the argument of w",
+    "arg z": "arg z | arg of z | arg of",
+  },
+  "polar-form-cis": {
+    "r times cosine theta plus i sine theta": "cosine theta plus i sine theta | cos theta plus i sin theta | cosine theta plus i sin theta",
+    "r cis theta": "cis theta | cis of",
+  },
+  "degree-sign": {
+    "thirty degrees": "* degrees !of !fahrenheit !celsius !f !c",
+  },
+  "parallel-sign": {
+    "AB is parallel to CD": "is parallel to *",
+  },
+  "perpendicular-sign": {
+    "AB is perpendicular to CD": "is perpendicular to *",
+  },
+  "angle-abc": {
+    "angle ABC": "angle a b c | angle abc | angle d e f | angle def | angle x y z | angle xyz | angle p q r | angle pqr | angle a b d | angle abd | angle d b c | angle dbc | angle b a c | angle bac | angle a c b | angle acb",
+  },
+  "measure-of-angle": {
+    "the measure of angle ABC": "the measure of angle *",
+    "m angle ABC": "m angle *",
+  },
+  "triangle-abc": {
+    "triangle ABC": "triangle a b c | triangle abc | triangle d e f | triangle def | triangle x y z | triangle xyz | triangle p q r | triangle pqr | triangle a b d | triangle abd | triangle a c d | triangle acd | triangle b c d | triangle bcd",
+  },
+  "congruent-sign": {
+    "triangle ABC is congruent to triangle DEF": "is congruent to triangle *",
+  },
+  "similar-sign": {
+    "triangle ABC is similar to triangle DEF": "is similar to triangle *",
+  },
+  "segment-ab-overline": {
+    "segment AB": "!line segment a b | !line segment ab | !line segment b c | !line segment bc | !line segment a c | !line segment ac | !line segment c d | !line segment cd | !line segment d e | !line segment de | !line segment x y | !line segment xy | !line segment p q | !line segment pq",
+    "line segment AB": "line segment a b | line segment ab | line segment b c | line segment bc | line segment a c | line segment ac | line segment c d | line segment cd | line segment p q | line segment pq",
+  },
+  "length-ab": {
+    "the length of segment AB": "the length of segment *",
+    "the length of AB": "the length of a b | the length of ab | the length of b c | the length of bc | the length of a c | the length of ac | the length of c d | the length of cd",
+  },
+  "line-ab-arrow": {
+    "line AB": "line a b | line ab | line c d | line cd | line b c | line bc | line a c | line ac | line p q | line pq | line x y | line xy",
+  },
+  "ray-ab-arrow": {
+    "ray AB": "ray a b | ray ab | ray b a | ray ba | ray b c | ray bc | ray a c | ray ac | ray c d | ray cd | ray a d | ray ad | ray b d | ray bd",
+  },
+  "arc-ab": {
+    "arc AB": "!of arc a b | !of arc ab | !of arc b c | !of arc bc | !of arc a c | !of arc ac | !of arc c d | !of arc cd | !of arc d e | !of arc de | !of arc a d | !of arc ad | !of arc b d | !of arc bd",
+    "the measure of arc AB": "the measure of arc *",
+  },
+  "circle-o": {
+    "circle O": "circle o | circle p | circle c | circle q",
+  },
+  "parallelogram-abcd": {
+    "parallelogram ABCD": "parallelogram a b c d | parallelogram abcd | parallelogram p q r s | parallelogram pqrs | parallelogram e f g h | parallelogram efgh | parallelogram w x y z | parallelogram wxyz",
+  },
+  // A′ and the derivative a′(t) are said the same; "a prime number" and "a prime suspect" are not the mark
+  "prime-label-image": {
+    "A prime": "!is !not !have a prime !number !numbers !factor !factors !factorization !suspect !or | b prime | c prime | d prime",
+    "A double prime": "a double prime | b double prime | c double prime",
+  },
+  "ordered-pair": {
+    "the point three comma four": "the point * comma *",
+    "the ordered pair x, y": "the ordered pair *",
+  },
 };
 
 /**
@@ -2029,14 +2097,17 @@ export function cedSections(text: string): [string, string][] {
  * joined, and the mathematical italic / bold letters and digits (U+1D400–1D7FF)
  * that Levin sets its variables in read as plain ones ("𝑃 ∨ 𝑄 is read “𝑃 or 𝑄”"
  * is "p or q"; DECISIONS, Phase 3 記号と慣習差の前の修正 2). ℕ, ℤ, ℚ, ℝ stay
- * symbols.
+ * symbols. The \( \) that IM and CK-12 put around inline math are dropped
+ * ("the \(x\)-intercept" is "the x-intercept"; Phase 3 記号 バッチ 5).
  */
 export const cedText = (s: string) =>
   normalize(
     s
       .replace(/­/g, "")
       .replace(/-\n/g, "")
-      .replace(/[\u{1D400}-\u{1D7FF}]/gu, (ch) => ch.normalize("NFKC")),
+      .replace(/[\u{1D400}-\u{1D7FF}]/gu, (ch) => ch.normalize("NFKC"))
+      // IM and CK-12 wrap inline math in \( \): "parallelogram \(ABCD\)" reads "parallelogram ABCD"
+      .replace(/\\[()]/g, ""),
   );
 
 /**
@@ -2433,12 +2504,16 @@ export const SYMBOL_NOT_READ_IN_REFERENCES: Record<string, string> = {
  * reading, the forms of one reading added up, as for terms). Within a tier the
  * reading with the most hits in its references together. Symbols have no
  * mapping, so "no fixed expression" does not apply, and the Wikipedia step
- * does not either: an article's name is not a reading. No register is claimed.
+ * does not either: an article's name is not a reading, and neither is a
+ * section title or a glossary headword - only the body is counted. No register
+ * is claimed.
  */
 export function settleSymbolReading(id: string, ref: ReferenceHits, order: string[]): Settled {
   if (SYMBOL_NOT_READ_IN_REFERENCES[id]) return { kind: "undecided" };
-  const { wikipedia: _w, ...withoutWikipedia } = ref;
-  return settleUndecided({}, { spoken: 0, written: 0 }, withoutWikipedia, order, REFERENCE_NAMED);
+  // Only the body counts: a section title or an IM glossary headword ("arc") names the
+  // concept, it does not read the symbol (Phase 3 記号 バッチ 5)
+  const { wikipedia: _w, openstaxTitles: _t, imGlossary: _g, ck12Titles: _c, ...body } = ref;
+  return settleUndecided({}, { spoken: 0, written: 0 }, { ...body, openstaxTitles: {} }, order, REFERENCE_NAMED);
 }
 
 // ------------------------- 見出しの規則: 1 ソース頼みの話し言葉 (中学の単元 2)
