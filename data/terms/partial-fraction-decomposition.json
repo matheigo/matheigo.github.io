@@ -82,7 +82,7 @@
   "pitfalls": [
     "数列の和で使う 1/k(k + 1) = 1/k − 1/(k + 1) の分解も英語では同じく partial fractions。和が打ち消し合って求まるものは telescoping sum と呼ぶ。",
     "log|x| − log|x + 1| + C を log|x/(x + 1)| + C とまとめるかどうかは自由。OpenStax Calculus は ln を使う。",
-    "日本の数III の「分数関数」は、学習指導要領解説では「簡単な分数関数」のグラフを扱う。OpenStax の rational function は多項式 ÷ 多項式の関数全般を指す。",
+    "学習指導要領解説（数学III）は「分数関数」について「簡単な分数関数」のグラフを扱う。OpenStax の rational function は多項式 ÷ 多項式の関数全般を指す。",
     "分子の次数が分母以上なら、先に多項式の割り算（long division）で次数を下げる。",
     "∫(1/x)dx は、日本語では log|x| + C、OpenStax Calculus では ln|x| + C と書く。"
   ],
@@ -112,6 +112,12 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 6.12（linear partial fractions、BC のみ）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学III: 簡単な分数関数のグラフ"
     }
   ],
   "confidence": "verified",

@@ -30,7 +30,7 @@
     ]
   },
   "definition_ja": "連続型の確率変数の分布を表す関数 f(x)。X が区間 a ≦ X ≦ b に入る確率は、f(x) をその区間で積分した値になり、全体での積分は 1。",
-  "definition_en": "The function f(x) describing the distribution of a continuous random variable X: P(a ≤ X ≤ b) is the integral of f from a to b, and the integral over the whole line is 1.",
+  "definition_en": "The function f(x) that describes how a continuous random variable X is distributed: P(a ≤ X ≤ b) = ∫ₐᵇ f(x) dx, and f integrates to 1 over the whole line.",
   "latex": "P(a \\le X \\le b) = \\int_a^b f(x)\\,dx",
   "spoken_en": "the probability that X is between a and b equals the integral from a to b of f of x dx",
   "examples": [
@@ -73,6 +73,11 @@
       "title": "大学入試センター 令和5年度 大学入学共通テスト 本試験 数学Ⅱ・数学Ｂ（問題）",
       "url": "https://web.archive.org/web/20240408/https://www.dnc.ac.jp/albums/abm.php?d=432&f=abm00003626.pdf&n=2023_ot_21_sugaku2B.pdf",
       "note": "正規分布表"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "3.7 Improper Integrals（probability density function）"
     }
   ],
   "confidence": "verified",

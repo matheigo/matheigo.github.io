@@ -5,8 +5,8 @@
     "fields": 15644,
     "englishSources": 3884,
     "japaneseSources": 403,
-    "spans": 509,
-    "entries": 427
+    "spans": 489,
+    "entries": 413
   },
   "spans": [
     {
@@ -39,10 +39,10 @@
       "id": "absolute-extrema",
       "field": "examples[1].en",
       "lang": "en",
-      "length": 10,
-      "span": "find the absolute maximum and minimum values of f x",
+      "length": 9,
+      "span": "the absolute maximum value and the absolute minimum value",
       "sources": {
-        "openstax-calculus": 2
+        "openstax-calculus": 1
       }
     },
     {
@@ -55,17 +55,6 @@
       "sources": {
         "openstax-algtrig": 1,
         "openstax-precalculus": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "acceleration",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 10,
-      "span": "the rate of change of velocity with respect to time",
-      "sources": {
-        "khan-ap-calc": 3
       }
     },
     {
@@ -345,17 +334,6 @@
     },
     {
       "collection": "terms",
-      "id": "area-under-the-curve",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the x axis from x a to x",
-      "sources": {
-        "openstax-calculus": 2
-      }
-    },
-    {
-      "collection": "terms",
       "id": "area",
       "field": "examples[0].en",
       "lang": "en",
@@ -368,18 +346,6 @@
         "openstax-elemalg": 1,
         "openstax-intalg": 1,
         "ref:ck12-geometry": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "area",
-      "field": "examples[1].en",
-      "lang": "en",
-      "length": 10,
-      "span": "find the area of a triangle with sides of length",
-      "sources": {
-        "openstax-algtrig": 5,
-        "openstax-precalculus": 5
       }
     },
     {
@@ -446,11 +412,10 @@
       "id": "average-rate-of-change",
       "field": "examples[0].en",
       "lang": "en",
-      "length": 10,
-      "span": "the average rate of change from x 1 to x",
+      "length": 9,
+      "span": "the average rate of change is just the slope",
       "sources": {
-        "openstax-algtrig": 1,
-        "openstax-precalculus": 1
+        "khan-ap-calc": 1
       }
     },
     {
@@ -636,17 +601,6 @@
       "span": "then the two solids have the same volume",
       "sources": {
         "ref:im-9-12": 2
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "center",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the point that is the same distance from",
-      "sources": {
-        "ref:im-9-12": 1
       }
     },
     {
@@ -1201,21 +1155,10 @@
       "id": "cross-section",
       "field": "examples[1].en",
       "lang": "en",
-      "length": 8,
-      "span": "the base of a solid is the region",
+      "length": 9,
+      "span": "perpendicular to the x axis is a square find",
       "sources": {
-        "khan-ap-calc": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "cross-section",
-      "field": "examples[1].en",
-      "lang": "en",
-      "length": 14,
-      "span": "each cross section perpendicular to the x axis is a square find the volume",
-      "sources": {
-        "khan-ap-calc": 4
+        "khan-ap-calc": 2
       }
     },
     {
@@ -1326,18 +1269,6 @@
       "span": "the slope of the tangent line at x",
       "sources": {
         "khan-ap-calc": 10
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "derivative-of-a-sum",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "of a sum is the sum of the",
-      "sources": {
-        "mit-notes": 4,
-        "openstax-calculus": 3
       }
     },
     {
@@ -1540,18 +1471,6 @@
       "span": "find the directional derivative of f x y",
       "sources": {
         "openstax-calculus": 2
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "disk-method",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 9,
-      "span": "finding the volume of a solid of revolution by",
-      "sources": {
-        "openstax-calculus": 6,
-        "mit-18.01": 2
       }
     },
     {
@@ -1876,17 +1795,6 @@
     },
     {
       "collection": "terms",
-      "id": "exponential-model",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the rate of change is proportional to the",
-      "sources": {
-        "yt:3blue1brown": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "exterior-angle-theorem",
       "field": "definition_en",
       "lang": "en",
@@ -1894,17 +1802,6 @@
       "span": "the two interior angles that are not adjacent to",
       "sources": {
         "ref:ck12-geometry": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "extreme-value-theorem",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "both an absolute maximum and an absolute minimum",
-      "sources": {
-        "openstax-calculus": 5
       }
     },
     {
@@ -2419,17 +2316,6 @@
     {
       "collection": "terms",
       "id": "instantaneous-velocity",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the derivative of position with respect to time",
-      "sources": {
-        "khan-ap-calc": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "instantaneous-velocity",
       "field": "examples[1].en",
       "lang": "en",
       "length": 9,
@@ -2786,18 +2672,6 @@
       "length": 9,
       "span": "use the limit laws to evaluate lim x 2",
       "sources": {
-        "openstax-calculus": 3
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "limit-laws",
-      "field": "examples[2].en",
-      "lang": "en",
-      "length": 11,
-      "span": "the limit of a sum is the sum of the limits",
-      "sources": {
-        "mit-notes": 4,
         "openstax-calculus": 3
       }
     },
@@ -3660,35 +3534,12 @@
     {
       "collection": "terms",
       "id": "probability-density-function",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the integral of f from a to b",
-      "sources": {
-        "openstax-calculus": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "probability-density-function",
       "field": "examples[1].en",
       "lang": "en",
       "length": 9,
       "span": "the probability density function of x is f x",
       "sources": {
         "openstax-introstats": 2
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "product-rule",
-      "field": "examples[0].en",
-      "lang": "en",
-      "length": 11,
-      "span": "derivative of the first times the second plus the first times",
-      "sources": {
-        "yt:profleonard": 7,
-        "mit-18.01": 2
       }
     },
     {
@@ -4119,17 +3970,6 @@
     },
     {
       "collection": "terms",
-      "id": "riemann-sum",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "used to approximate the area under a curve",
-      "sources": {
-        "openstax-calculus": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "right-hand-limit",
       "field": "definition_en",
       "lang": "en",
@@ -4293,28 +4133,6 @@
     },
     {
       "collection": "terms",
-      "id": "secant-line",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 9,
-      "span": "the average rate of change between the two points",
-      "sources": {
-        "openstax-precalculus": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "second-derivative-test",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 9,
-      "span": "f has a local maximum at c if f",
-      "sources": {
-        "openstax-calculus": 6
-      }
-    },
-    {
-      "collection": "terms",
       "id": "sequence",
       "field": "examples[1].en",
       "lang": "en",
@@ -4374,18 +4192,6 @@
         "openstax-intalg": 3,
         "openstax-algtrig": 1,
         "openstax-precalculus": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "shell-method",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 9,
-      "span": "finding the volume of a solid of revolution by",
-      "sources": {
-        "openstax-calculus": 6,
-        "mit-18.01": 2
       }
     },
     {
@@ -4529,18 +4335,6 @@
         "khan-algebra": 1,
         "ref:ck12-geometry": 1,
         "yt:organicchem": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "slope-of-the-tangent-line",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 12,
-      "span": "the slope of the line tangent to a curve at a point",
-      "sources": {
-        "ref:ap-calculus-ab-bc-ced": 3,
-        "openstax-calculus": 2
       }
     },
     {
@@ -5417,17 +5211,6 @@
     },
     {
       "collection": "terms",
-      "id": "velocity",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 10,
-      "span": "the rate of change of position with respect to time",
-      "sources": {
-        "khan-ap-calc": 3
-      }
-    },
-    {
-      "collection": "terms",
       "id": "vertical-line-test",
       "field": "examples[1].en",
       "lang": "en",
@@ -5458,18 +5241,6 @@
       "span": "cross sections perpendicular to the x axis are squares",
       "sources": {
         "khan-ap-calc": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "washer-method",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 10,
-      "span": "finding the volume of a solid of revolution with a",
-      "sources": {
-        "openstax-calculus": 6,
-        "mit-18.01": 2
       }
     },
     {

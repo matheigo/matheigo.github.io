@@ -9,7 +9,7 @@
 
 - 調べた本文の欄: 15644
 - 英語のソース: 3884 ファイル ／ 日本語のソース: 403 ファイル
-- 一致した箇所: **509**（427 項目）
+- 一致した箇所: **489**（413 項目）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
 |---|---|---|---|---|---|---|---|
@@ -52,9 +52,8 @@
 | symbols | there-exists-quantifier | notes[0] | en | 8 | there exists an x such that there is | 1 | micase |
 | terms | aa-similarity | definition_en | en | 9 | the angles of a triangle add up to 180 | 3 | khan-algebra, openstax-intalg, khan-middle |
 | terms | aas-congruence | definition_en | en | 14 | if two angles and a non included side of one triangle are congruent to | 2 | ref:im-9-12, ref:ck12-geometry |
-| terms | absolute-extrema | examples[1].en | en | 10 | find the absolute maximum and minimum values of f x | 1 | openstax-calculus |
+| terms | absolute-extrema | examples[1].en | en | 9 | the absolute maximum value and the absolute minimum value | 1 | openstax-calculus |
 | terms | absolute-value-function | examples[1].en | en | 8 | graph the absolute value function f x x | 2 | openstax-algtrig, openstax-precalculus |
-| terms | acceleration | definition_en | en | 10 | the rate of change of velocity with respect to time | 1 | khan-ap-calc |
 | terms | acute-triangle | pitfalls[1] | en | 10 | ck 12 geometry 4 2 classify triangles by angle measurement | 1 | ref:ck12-geometry |
 | terms | algebraic-multiplicity | definition_en | en | 8 | occurs as a root of the characteristic polynomial | 1 | ref:nicholson-lawa-2021a |
 | terms | alternate-exterior-angles | examples[0].en | en | 10 | the parallel lines and on opposite sides of the transversal | 1 | ref:im-6-8 |
@@ -70,7 +69,6 @@
 | terms | apothem | pitfalls[2] | en | 11 | ck 12 geometry 5 21 area of regular and irregular polygons | 1 | ref:ck12-geometry |
 | terms | arc-length | definition_en | en | 8 | the length of an arc of a circle | 2 | openstax-algtrig, openstax-precalculus |
 | terms | area | examples[0].en | en | 12 | the area of a triangle is one half base times height so | 6 | yt:organicchem, khan-middle, openstax-prealgebra, openstax-elemalg, openstax-intalg, ref:ck12-geometry |
-| terms | area | examples[1].en | en | 10 | find the area of a triangle with sides of length | 2 | openstax-algtrig, openstax-precalculus |
 | terms | area-between-two-curves | pitfalls[2] | en | 9 | find the area of the region bounded by the | 1 | openstax-calculus |
 | terms | area-in-polar-coordinates | definition_en | en | 10 | the area of a region bounded by a polar curve | 1 | openstax-calculus |
 | terms | area-in-polar-coordinates | examples[1].en | en | 8 | find the area of the region enclosed by | 1 | openstax-calculus |
@@ -80,13 +78,12 @@
 | terms | area-of-a-sector | examples[2].en | en | 11 | find the area of a sector of a circle with radius | 4 | openstax-calculus, openstax-algtrig, openstax-precalculus, ref:im-9-12 |
 | terms | area-of-a-triangle | examples[0].en | en | 11 | the area of a triangle is one half base times height | 6 | yt:organicchem, khan-middle, openstax-prealgebra, openstax-elemalg, openstax-intalg, ref:ck12-geometry |
 | terms | area-of-a-triangle-using-vectors | examples[1].en | en | 8 | find the area of the triangle with vertices | 1 | ref:nicholson-lawa-2021a |
-| terms | area-under-the-curve | definition_en | en | 8 | the x axis from x a to x | 1 | openstax-calculus |
 | terms | arithmetic-sequence | definition_en | en | 9 | a sequence in which each term is the previous | 1 | ref:im-9-12 |
 | terms | as-x-approaches-infinity | examples[0].en | en | 8 | as x goes to infinity e to the | 1 | mit-18.01 |
 | terms | at-least-one | examples[1].en | en | 9 | find the probability of getting at least one 6 | 2 | openstax-introstats, ref:levin-dmoi4 |
 | terms | auxiliary-angle-form | examples[0].en | en | 9 | the square root of a squared plus b squared | 3 | yt:organicchem, mit-18.06, mit-18.03 |
 | terms | auxiliary-line | examples[1].en | en | 9 | prove that the sum of the interior angles of | 2 | ref:levin-dmoi4, khan-algebra |
-| terms | average-rate-of-change | examples[0].en | en | 10 | the average rate of change from x 1 to x | 2 | openstax-algtrig, openstax-precalculus |
+| terms | average-rate-of-change | examples[0].en | en | 9 | the average rate of change is just the slope | 1 | khan-ap-calc |
 | terms | average-rate-of-change | examples[1].en | en | 9 | find the average rate of change of f x | 3 | openstax-precalculus, openstax-algtrig, khan-ap-calc |
 | terms | axis-of-symmetry | examples[1].en | en | 11 | the vertex and the equation of the axis of symmetry of | 2 | openstax-intalg, openstax-elemalg |
 | terms | axis-of-symmetry | examples[0].en | en | 10 | the axis of symmetry goes right through the vertex so | 1 | yt:profleonard |
@@ -103,7 +100,6 @@
 | terms | can-be-integrated | examples[1].en | en | 8 | continuous on a b then f is integrable | 1 | openstax-calculus |
 | terms | cartesian-product | definition_en | en | 8 | of all ordered pairs a b with a | 1 | ref:levin-dmoi4 |
 | terms | cavalieris-principle | definition_en | en | 8 | then the two solids have the same volume | 1 | ref:im-9-12 |
-| terms | center | definition_en | en | 8 | the point that is the same distance from | 1 | ref:im-9-12 |
 | terms | central-limit-theorem | definition_en | en | 9 | the distribution of the sample mean is approximately normal | 1 | openstax-introstats |
 | terms | centroid | examples[1].en | en | 9 | find the coordinates of the centroid of the triangle | 1 | ref:ck12-geometry |
 | terms | chain-rule | examples[1].en | en | 9 | use the chain rule to find the derivative of | 4 | ref:ap-calculus-ab-bc-ced, yt:organicchem, openstax-calculus, yt:nancypi |
@@ -152,8 +148,7 @@
 | terms | cpctc | definition_en | en | 9 | corresponding parts of congruent triangles are congruent it is | 1 | ref:ck12-geometry |
 | terms | cpctc | pitfalls[2] | en | 8 | cpctc corresponding parts of congruent triangles are congruent | 2 | ref:ck12-geometry, yt:organicchem |
 | terms | cross-method | examples[0].en | en | 8 | numbers that multiply to 6 and add to | 1 | openstax-elemalg |
-| terms | cross-section | examples[1].en | en | 14 | each cross section perpendicular to the x axis is a square find the volume | 1 | khan-ap-calc |
-| terms | cross-section | examples[1].en | en | 8 | the base of a solid is the region | 1 | khan-ap-calc |
+| terms | cross-section | examples[1].en | en | 9 | perpendicular to the x axis is a square find | 1 | khan-ap-calc |
 | terms | cryptography | pitfalls[2] | en | 10 | 8 8 an application to linear codes over finite fields | 1 | ref:nicholson-lawa-2021a |
 | terms | cubic-units | pitfalls[2] | en | 8 | geometry 5 7 the root of the problem | 1 | ref:im-9-12 |
 | terms | curve-sketching | pitfalls[0] | en | 10 | connecting a function its first derivative and its second derivative | 1 | ref:ap-calculus-ab-bc-ced |
@@ -164,7 +159,6 @@
 | terms | density-curve | examples[0].en | en | 8 | the area under the density curve between two | 1 | openstax-introstats |
 | terms | derivative-at-a-point | examples[1].en | en | 8 | the slope of the tangent line there the | 1 | khan-ap-calc |
 | terms | derivative-at-a-point | collocations[1].en | en | 8 | the slope of the tangent line at x | 1 | khan-ap-calc |
-| terms | derivative-of-a-sum | definition_en | en | 8 | of a sum is the sum of the | 2 | mit-notes, openstax-calculus |
 | terms | derivative-of-a-vector-function | examples[1].en | en | 9 | the derivative of the vector valued function r t | 1 | openstax-calculus |
 | terms | derivative-of-the-exponential-function | examples[0].en | en | 13 | the derivative of e to the x is just e to the x | 6 | khan-ap-calc, yt:organicchem, mit-18.01, yt:nancypi, yt:3blue1brown, yt:blackpenredpen |
 | terms | derivatives-in-polar-form | examples[1].en | en | 8 | find the slope of the tangent line to | 4 | openstax-calculus, khan-ap-calc, yt:profleonard, yt:blackpenredpen |
@@ -182,7 +176,6 @@
 | terms | directed-segment | definition_en | en | 8 | from its initial point to its terminal point | 1 | openstax-calculus |
 | terms | direction-angle | examples[0].en | en | 8 | is measured counterclockwise from the positive x axis | 1 | ref:nicholson-lawa-2021a |
 | terms | directional-derivative | examples[1].en | en | 8 | find the directional derivative of f x y | 1 | openstax-calculus |
-| terms | disk-method | definition_en | en | 9 | finding the volume of a solid of revolution by | 2 | openstax-calculus, mit-18.01 |
 | terms | distance-formula | examples[1].en | en | 9 | use the distance formula to find the distance between | 3 | openstax-intalg, openstax-algtrig, openstax-precalculus |
 | terms | distance-formula | definition_en | en | 8 | points x1 y1 and x2 y2 in the | 1 | ref:nicholson-lawa-2021a |
 | terms | distance-formula | examples[0].en | en | 8 | and the square root of 25 is 5 | 1 | yt:organicchem |
@@ -210,9 +203,7 @@
 | terms | exist | examples[1].en | en | 8 | there exists a real number x such that | 3 | openstax-calculus, openstax-algtrig, openstax-precalculus |
 | terms | expected-value | examples[1].en | en | 9 | find the expected value of the number of heads | 2 | mit-notes, openstax-introstats |
 | terms | exponent | pitfalls[0] | en | 8 | x to the fifth x to the fifth | 1 | khan-ap-calc |
-| terms | exponential-model | definition_en | en | 8 | the rate of change is proportional to the | 1 | yt:3blue1brown |
 | terms | exterior-angle-theorem | definition_en | en | 9 | the two interior angles that are not adjacent to | 1 | ref:ck12-geometry |
-| terms | extreme-value-theorem | definition_en | en | 8 | both an absolute maximum and an absolute minimum | 1 | openstax-calculus |
 | terms | factorial | examples[0].en | en | 9 | 5 times 4 times 3 times 2 times 1 | 1 | yt:nancypi |
 | terms | fail-to-reject | examples[1].en | en | 10 | there is not sufficient evidence to conclude that the mean | 1 | openstax-introstats |
 | terms | find-the-equation-of-the-tangent-line | examples[1].en | en | 9 | find an equation of the tangent line to y | 2 | openstax-calculus, openstax-precalculus |
@@ -258,7 +249,6 @@
 | terms | instantaneous-rate-of-change | examples[0].en | en | 8 | is the slope of the tangent line there | 1 | khan-ap-calc |
 | terms | instantaneous-rate-of-change | examples[1].en | en | 8 | the instantaneous rate of change of f x | 1 | openstax-calculus |
 | terms | instantaneous-velocity | examples[1].en | en | 9 | find the instantaneous velocity of the ball at t | 3 | openstax-calculus, openstax-precalculus, yt:organicchem |
-| terms | instantaneous-velocity | definition_en | en | 8 | the derivative of position with respect to time | 1 | khan-ap-calc |
 | terms | integer-part | mapping_note | en | 9 | the greatest integer less than or equal to x | 1 | openstax-calculus |
 | terms | integrate-by-parts | examples[1].en | en | 8 | integration by parts with u ln x and | 1 | openstax-calculus |
 | terms | intercepted-arc | mapping_note | en | 8 | 6 16 angles on and inside a circle | 1 | ref:ck12-geometry |
@@ -289,7 +279,6 @@
 | terms | limit | pitfalls[1] | en | 8 | the limit as x approaches a of f | 2 | khan-ap-calc, yt:organicchem |
 | terms | limit-at-infinity | mapping_note | ja | 23 | xの値を限りなく大きくしたときのf(x)の極限 | 1 | jp:kaisetsu-kou |
 | terms | limit-definition-of-the-derivative | examples[1].en | en | 8 | use the definition of the derivative to find | 1 | yt:organicchem |
-| terms | limit-laws | examples[2].en | en | 11 | the limit of a sum is the sum of the limits | 2 | mit-notes, openstax-calculus |
 | terms | limit-laws | examples[1].en | en | 9 | use the limit laws to evaluate lim x 2 | 1 | openstax-calculus |
 | terms | limit-of-a-riemann-sum | examples[1].en | en | 8 | is defined as a limit of riemann sums | 1 | openstax-calculus |
 | terms | limit-of-sine-x-over-x | definition_en | en | 9 | the limit of sin x x as x approaches | 1 | yt:nancypi |
@@ -365,9 +354,7 @@
 | terms | preimage | examples[1].en | en | 8 | the y axis find the coordinates of the | 1 | ref:ck12-geometry |
 | terms | prism | examples[1].en | en | 8 | the height of the prism is 10 cm | 1 | ref:im-6-8 |
 | terms | probability-density-function | examples[1].en | en | 9 | the probability density function of x is f x | 1 | openstax-introstats |
-| terms | probability-density-function | definition_en | en | 8 | the integral of f from a to b | 1 | openstax-calculus |
 | terms | product | definition_en | en | 8 | the result of multiplying two or more numbers | 1 | openstax-prealgebra |
-| terms | product-rule | examples[0].en | en | 11 | derivative of the first times the second plus the first times | 2 | yt:profleonard, mit-18.01 |
 | terms | product-to-sum-formulas | pitfalls[0] | en | 8 | sum to product and product to sum formulas | 2 | openstax-algtrig, openstax-precalculus |
 | terms | properties-of-inequalities | definition_en | en | 8 | multiplying or dividing by a negative number reverses | 1 | openstax-algtrig |
 | terms | properties-of-logarithms | definition_ja | en | 8 | log a m log a n log a | 3 | openstax-intalg, openstax-algtrig, openstax-precalculus |
@@ -403,7 +390,6 @@
 | terms | restricted-domain | examples[1].en | en | 8 | find the inverse of f x x 2 | 2 | openstax-algtrig, openstax-precalculus |
 | terms | revolve-around-the-x-axis | examples[1].en | en | 9 | the x axis find the volume of the solid | 1 | openstax-calculus |
 | terms | revolve-around-the-x-axis | examples[0].en | en | 8 | take this region and rotate it around the | 1 | khan-ap-calc |
-| terms | riemann-sum | definition_en | en | 8 | used to approximate the area under a curve | 1 | openstax-calculus |
 | terms | right-hand-limit | definition_en | en | 8 | the limit of f x as x approaches | 4 | khan-ap-calc, openstax-calculus, openstax-precalculus, ref:ap-calculus-ab-bc-ced |
 | terms | right-triangle | examples[0].en | en | 8 | always the longest side of a right triangle | 1 | ref:im-6-8 |
 | terms | rise-over-run | examples[1].en | en | 15 | use rise over run to find the slope of the line through the points 1 | 5 | openstax-elemalg, openstax-prealgebra, openstax-intalg, ref:ck12-geometry, openstax-calculus |
@@ -418,14 +404,11 @@
 | terms | scalar-triple-product | examples[1].en | en | 16 | the triple scalar product to find the volume of the parallelepiped determined by u v and | 2 | openstax-calculus, ref:nicholson-lawa-2021a |
 | terms | scale-factor | definition_en | en | 10 | a scaled copy a scale factor greater than 1 enlarges | 1 | ref:im-9-12 |
 | terms | scientific-notation | definition_en | en | 9 | way to write very large or very small numbers | 1 | ref:im-6-8 |
-| terms | secant-line | definition_en | en | 9 | the average rate of change between the two points | 1 | openstax-precalculus |
-| terms | second-derivative-test | definition_en | en | 9 | f has a local maximum at c if f | 1 | openstax-calculus |
 | terms | sequence | examples[1].en | en | 8 | write the first five terms of the sequence | 3 | openstax-intalg, openstax-algtrig, openstax-precalculus |
 | terms | set | examples[0].en | en | 11 | the domain is the set of all real numbers except 2 | 4 | openstax-calculus, openstax-intalg, openstax-algtrig, openstax-precalculus |
 | terms | set-builder-notation | definition_en | en | 12 | the set of all x such that x is greater than 2 | 3 | openstax-algtrig, openstax-precalculus, ref:levin-dmoi4 |
 | terms | set-builder-notation | examples[0].en | en | 9 | all x such that x is greater than 2 | 1 | ref:levin-dmoi4 |
 | terms | set-up-a-recurrence | examples[1].en | en | 9 | write a recursive formula for the arithmetic sequence 2 | 2 | openstax-algtrig, openstax-precalculus |
-| terms | shell-method | definition_en | en | 9 | finding the volume of a solid of revolution by | 2 | openstax-calculus, mit-18.01 |
 | terms | shortest-path | examples[1].en | en | 9 | the number of lattice paths from 0 0 to | 1 | ref:levin-dmoi4 |
 | terms | side | examples[1].en | en | 9 | the side length of a square whose area is | 1 | ref:im-6-8 |
 | terms | side-angle-inequality | mapping_note | en | 8 | 4 25 comparing angles and sides in triangles | 1 | ref:ck12-geometry |
@@ -439,7 +422,6 @@
 | terms | slope | examples[1].en | en | 8 | find the slope of the line passing through | 1 | openstax-calculus |
 | terms | slope-formula | examples[1].en | en | 13 | use the slope formula to find the slope of the line passing through | 5 | openstax-elemalg, openstax-prealgebra, openstax-intalg, openstax-algtrig, openstax-calculus |
 | terms | slope-intercept-form-of-a-line | definition_en | en | 11 | where m is the slope and b is the y intercept | 5 | khan-ap-calc, khan-middle, khan-algebra, ref:ck12-geometry, yt:organicchem |
-| terms | slope-of-the-tangent-line | definition_en | en | 12 | the slope of the line tangent to a curve at a point | 2 | ref:ap-calculus-ab-bc-ced, openstax-calculus |
 | terms | slope-of-the-tangent-line | examples[1].en | en | 9 | find the slope of the tangent line to y | 6 | openstax-calculus, khan-ap-calc, yt:profleonard, mit-notes, yt:blackpenredpen, mit-18.01 |
 | terms | slope-of-the-tangent-line | examples[0].en | en | 8 | the slope of the tangent line at x | 1 | khan-ap-calc |
 | terms | sohcahtoa | examples[1].en | en | 8 | the opposite side the adjacent side and the | 1 | yt:organicchem |
@@ -512,12 +494,10 @@
 | terms | variable-of-integration | examples[1].en | en | 8 | x does not change the value of the | 1 | openstax-algtrig |
 | terms | vector-field | examples[1].en | en | 9 | sketch the vector field f x y y x | 1 | openstax-calculus |
 | terms | vector-valued-function | examples[1].en | en | 8 | of the vector valued function r t t | 1 | openstax-calculus |
-| terms | velocity | definition_en | en | 10 | the rate of change of position with respect to time | 1 | khan-ap-calc |
 | terms | velocity-vector | examples[0].en | en | 8 | the velocity vector is tangent to the path | 2 | mit-18.02, openstax-calculus |
 | terms | vertical-line-test | examples[1].en | en | 8 | use the vertical line test to determine whether | 2 | openstax-calculus, khan-middle |
 | terms | volume-by-cross-sections | examples[0].en | en | 9 | cross sections perpendicular to the x axis are squares | 1 | khan-ap-calc |
 | terms | volume-by-cross-sections | pitfalls[0] | en | 9 | cross sections perpendicular to the x axis are squares | 1 | khan-ap-calc |
-| terms | washer-method | definition_en | en | 10 | finding the volume of a solid of revolution with a | 2 | openstax-calculus, mit-18.01 |
 | terms | write-out-the-first-few-terms | examples[1].en | en | 9 | write out the first few terms of the sequence | 2 | ref:levin-dmoi4, openstax-intalg |
 | terms | x-intercept | examples[0].en | en | 9 | set y equal to zero and solve for x | 1 | openstax-algtrig |
 | terms | y-intercept | examples[1].en | en | 8 | the slope and the y intercept of the | 1 | ref:im-9-12 |

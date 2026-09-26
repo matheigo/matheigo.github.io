@@ -40,7 +40,7 @@
     ]
   },
   "definition_ja": "回転体を回転軸に垂直な薄い円板に分け、その体積を積分して回転体の体積を求める方法。",
-  "definition_en": "Finding the volume of a solid of revolution by slicing it into thin disks perpendicular to the axis and integrating their volumes.",
+  "definition_en": "A way to get the volume of a solid of revolution: cut it into thin disks perpendicular to the axis of rotation and integrate their volumes.",
   "latex": "V = \\pi \\int_a^b \\bigl(R(x)\\bigr)^2\\,dx",
   "spoken_en": "V equals pi times the integral from a to b of R of x, squared, dx",
   "examples": [
@@ -77,6 +77,12 @@
       "title": "日本語版 Wikipedia「回転体」",
       "url": "https://ja.wikipedia.org/wiki/%E5%9B%9E%E8%BB%A2%E4%BD%93",
       "note": "円板法"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学III: 回転体の体積の求め方の名前が出てこない・「円板法」は出てこない"
     }
   ],
   "confidence": "verified",

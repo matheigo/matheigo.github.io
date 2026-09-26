@@ -29,7 +29,7 @@
     ]
   },
   "definition_ja": "曲線上の 2 点を通る直線のこと。円では円と 2 点で交わる直線を指し、微積分ではその傾きが 2 点間の平均変化率になる。",
-  "definition_en": "A line that passes through two points of a curve. For a circle, it is a line that cuts the circle at two points; in calculus, its slope is the average rate of change between the two points.",
+  "definition_en": "A line through two points of a curve. For a circle, a line that crosses the circle at two points; in calculus, the slope of this line gives the average rate of change between those two x-values.",
   "latex": "m_{\\text{sec}} = \\frac{f(b) - f(a)}{b - a}",
   "spoken_en": "the slope of the secant line equals f of b minus f of a, over b minus a",
   "examples": [
@@ -67,6 +67,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II・III: 「割線」が出てこない"
     }
   ],
   "confidence": "verified",
