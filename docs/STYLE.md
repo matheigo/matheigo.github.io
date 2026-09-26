@@ -24,6 +24,10 @@ PLAN.md §6 をそのまま作業用に移したもの。**生成時に毎バッ
    `register: spoken` の variant にする（negative correlation。話し言葉の negative linear relationship は Khan Academy だけ）。
    書き言葉が先、CED が次。書き言葉（① か ②）か CED（最も多く使う候補）が話し言葉の首位と同じ言い方なら当てない
    （left Riemann sum は CED の呼び方）。= を書いた形（let u =）は equal と読む同じ言い方として扱う。
+   **書き言葉の首位も 1 ソース頼み**（抜くと ③ か別の候補が首位）なら、書き言葉では決めない。その語の level の参照の言い方を
+   `en.term` にする: 中学（level.jp が中1〜中3）は IM、次に Geometry は CK-12 と IM（同じ段）、次に AP は CED（lib.ts `levelReferenceOf`）。
+   参照が候補を使わないか、話し言葉の首位と同じ言い方なら、話し言葉の首位のまま（rectangular prism。書き言葉の rectangular box は
+   OpenStax Calculus だけ）。書き言葉の言い方は register written の variant にする。Precalculus・Algebra・大学の level には参照を当てない。
    `corpus:decide` の「エントリ側で直すこと」に出る（lib.ts `spokenLeanHead`）。
 2. 米国優先。英国異形は `en.uk` に入れる（math/maths、negative three / minus three、parentheses / brackets、trig / trigonometry）。
 3. 直訳禁止リスト（下）に触れる語は `mapping` を正直に付ける。

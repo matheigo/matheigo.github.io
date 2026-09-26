@@ -27,6 +27,8 @@ import {
   settleUndecided,
   sourceWeights,
   spokenLeanHead,
+  levelReferenceHead,
+  levelReferenceOf,
   weigh,
   wikipediaHead,
   type CorpusDoc,
@@ -398,7 +400,8 @@ describe("spokenLeanHead", () => {
 
   it("takes the written ① before the CED", () => {
     const spoken = decideRobust({ "linear system": { k: 30, b: 5 }, "system of linear equations": { b: 5 } }, w, "spoken");
-    const written = decideRobust({ "system of linear equations": { os: 40 } }, w, "written");
+    // two written sources: without the bigger one it still leads (not one source)
+    const written = decideRobust({ "system of linear equations": { os: 25, m: 15 } }, w, "written");
     // the CED names a third wording: the written corpus comes first
     expect(spokenLeanHead(spoken, written, ref({ ced: { "system of equations": { "1.1": 5 } } }))).toMatchObject({
       head: "system of linear equations",
@@ -434,6 +437,64 @@ describe("spokenLeanHead", () => {
     const spoken = decideRobust({ A: { k: 20, m: 20, b: 20 } }, w, "spoken");
     const written = decideRobust({ B: { os: 30 } }, w, "written");
     expect(spokenLeanHead(spoken, written, ref({}))).toBeNull();
+  });
+
+  // DECISIONS, Phase 2 中学の単元 3 の前の修正 1: the written ① rests on one source too
+  const w2 = { k: 1, m: 1, os: 1, calc: 1, b: 1 };
+  const leanSpoken = decideRobust({ "rectangular prism": { k: 17, b: 7 } }, w2, "spoken");
+  const leanWritten = decideRobust({ "rectangular box": { calc: 22, os: 4 }, "rectangular prism": { os: 3 } }, w2, "written");
+
+  it("takes the level's reference when the written ① rests on one source too", () => {
+    expect(leanWritten).toMatchObject({ kind: "single", head: "rectangular box" });
+    const im = ref({ im: { "right prism": { "Grade 7 7.12": 5 } } });
+    expect(spokenLeanHead(leanSpoken, leanWritten, im, { jp: ["中1"], us: ["Geometry"] })).toMatchObject({
+      head: "right prism",
+      by: "im",
+      written: { head: "rectangular box", source: "calc" },
+    });
+    // Geometry: CK-12 and IM together; the CED is not read for a 中学 / Geometry word
+    const ck = ref({ ck12: { cuboid: { "CK-12 Geometry 11.4": 9 } }, ced: { "rectangular box": { "8.9": 1 } } });
+    expect(spokenLeanHead(leanSpoken, leanWritten, ck, { jp: ["数A"], us: ["Geometry"] })).toMatchObject({ head: "cuboid", by: "ck12-im" });
+  });
+
+  it("keeps the spoken leader when the level's reference names it or names nothing", () => {
+    const im = ref({ im: { "rectangular prism": { "Grade 6 1.1": 116 } } });
+    expect(spokenLeanHead(leanSpoken, leanWritten, im, { jp: ["中1"], us: [] })).toMatchObject({
+      head: "rectangular prism",
+      by: "spoken",
+      agrees: "im",
+    });
+    // Calculus I has no level reference (IM, CK-12 and the CED are the three)
+    const out = spokenLeanHead(leanSpoken, leanWritten, im, { jp: ["大学"], us: ["Calculus I"] });
+    expect(out).toMatchObject({ head: "rectangular prism", by: "spoken" });
+    expect(out?.agrees).toBeUndefined();
+  });
+
+  it("reads one wording counted twice as one (box plot / boxplot tie in the same places)", () => {
+    const same = { "Grade 6 12.1": 3 };
+    const r = ref({ im: { "box plot": same, boxplot: same }, imGlossary: { "box plot": ["Grade 6"], boxplot: ["Grade 6"] } });
+    expect(levelReferenceHead(r, "im", ["box plot", "boxplot"])).toBe("box plot");
+    const tie = ref({ im: { A: { x: 2 }, B: { y: 2 } } });
+    expect(levelReferenceHead(tie, "im", ["A", "B"])).toBeNull();
+  });
+
+  it("still uses the written ① when only the spoken leader rests on one source", () => {
+    // constant of variation: two OpenStax books, one of them out and it still leads
+    const spoken = decideRobust({ "constant of proportionality": { k: 67, m: 6 } }, w2, "spoken");
+    const written = decideRobust({ "constant of variation": { os: 17, calc: 14 }, "constant of proportionality": { b: 4 } }, w2, "written");
+    expect(spokenLeanHead(spoken, written, ref({}), { jp: ["中1"], us: [] })).toMatchObject({
+      head: "constant of variation",
+      by: "written",
+    });
+  });
+});
+
+describe("levelReferenceOf", () => {
+  it("takes 中学 first, then Geometry, then AP", () => {
+    expect(levelReferenceOf({ jp: ["中3"], us: ["Geometry", "AP Calculus AB"] })).toBe("im");
+    expect(levelReferenceOf({ jp: ["数A"], us: ["Geometry"] })).toBe("ck12-im");
+    expect(levelReferenceOf({ jp: ["数III"], us: ["AP Calculus AB", "Calculus I"] })).toBe("ced");
+    expect(levelReferenceOf({ jp: ["大学"], us: ["Calculus II"] })).toBeNull();
   });
 });
 

@@ -9,13 +9,13 @@
     ]
   },
   "en": {
-    "term": "make the substitution",
+    "term": "make a substitution",
     "alt": [],
     "variants": [
       {
-        "term": "make a substitution",
-        "register": "spoken",
-        "note": "話し言葉では make the substitution と同じくらい使うが、Professor Leonard と MIT OCW に多い。書き言葉では make the substitution のほうが多い。"
+        "term": "make the substitution",
+        "register": "both",
+        "note": "書き言葉ではこちら（OpenStax Calculus ほか）。話し言葉でも make a substitution と同じくらい使う。"
       },
       {
         "term": "do a substitution",
@@ -24,11 +24,11 @@
       }
     ],
     "uk": null,
-    "register": "both"
+    "register": "spoken"
   },
   "pos": "verb",
   "mapping": "near",
-  "mapping_note": "「x + 1 を A と置き換える」のような置き換えは、英語では Let A = x + 1. と宣言する形か、make the substitution（話し言葉では make a substitution とも）と言う。代入する（plug in）にも substitute を使うので、英語では両者の区別が文脈頼みになる。",
+  "mapping_note": "「x + 1 を A と置き換える」のような置き換えは、英語では Let A = x + 1. と宣言する形か、make a substitution（書き言葉では make the substitution）と言う。代入する（plug in）にも substitute を使うので、英語では両者の区別が文脈頼みになる。",
   "domains": [
     "algebra",
     "calculus"
@@ -91,8 +91,8 @@
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "make the substitution": 32,
       "make a substitution": 33,
+      "make the substitution": 32,
       "do a substitution": 21
     },
     "written": {

@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "米国の教材（CED・OpenStax・IM・CK-12）には出てこない（4 つとも 0 件）。CK-12 Geometry と IM Geometry は円周角（inscribed angle）と円周角の定理は扱うが、その逆は扱わない。見出しの英語は本プロジェクトの訳。",
   "domains": [
     "geometry"
   ],
@@ -72,8 +72,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 2 中学の単元 3 の前の修正」の 3）。en.term は converse of the inscribed angle theorem のまま。米国の教材（CED・OpenStax・IM・CK-12）には出てこない。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

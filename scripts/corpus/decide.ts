@@ -196,6 +196,18 @@ const humanFlag = (record: Record<string, unknown>): Flag | null =>
  */
 const cells = (...xs: string[]) => `| ${xs.map((x) => x.replace(/\|/g, "\\|")).join(" | ")} |`;
 
+/** Where a lean headword comes from, for the report. */
+function leanBy(l: LeanHead): string {
+  if (l.by === "written") return "書き言葉 ①";
+  if (l.by === "ced") return "CED";
+  const also = l.written ? `（書き言葉 ① ${l.written.head} も ${l.written.source} 頼み）` : "";
+  if (l.by === "im") return `IM（中学）${also}`;
+  if (l.by === "ck12-im") return `CK-12・IM（Geometry）${also}`;
+  const names = { im: "IM", "ck12-im": "CK-12・IM", ced: "CED" } as const;
+  if (l.by === "spoken") return `話し言葉の首位のまま${also}${l.agrees ? `。${names[l.agrees]} も同じ言い方` : "。level の参照は決まらない"}`;
+  return `CED（AP）${also}`;
+}
+
 function describeSettled(s: Settled): string {
   if (s.kind === "no-fixed-expression") return `英語に決まった言い方がない（話 ${s.spoken} 件 ／ 書 ${s.written} 件）`;
   if (s.kind === "reference") {
@@ -312,16 +324,30 @@ function main() {
     // The spoken leader rests on one source; the written corpus or a CED names
     // another wording: that wording is the headword, the spoken one a spoken
     // variant (lib.ts spokenLeanHead). Not over the human's call.
-    const lean = c.collection === "terms" && !human ? spokenLeanHead(spoken, written, c.reference) : null;
+    // When the written ① rests on one source too, the level's reference names
+    // the headword, else the spoken leader keeps it (DECISIONS, Phase 2 中学の
+    // 単元 3 の前の修正 1).
+    const lean =
+      c.collection === "terms" && !human
+        ? spokenLeanHead(
+            spoken,
+            written,
+            c.reference,
+            record.level as { jp?: string[]; us?: string[] } | undefined,
+            candidatesOf(c.collection, record),
+          )
+        : null;
     if (lean) {
       const en = record.en as { term: string; variants?: { term: string; register: string }[] };
       const as = (w: string) => countedAs(c.collection, entry.data.id, w);
       if (!sameWording(as(en.term), lean.head) && !sameWording(en.term, lean.head)) {
         todo.push(
-          `en.term を ${lean.head} にする（話し言葉の首位 ${lean.spoken} は ${lean.source} 頼み、${lean.by === "written" ? "書き言葉" : "CED"} は ${lean.head}）`,
+          lean.by === "spoken"
+            ? `en.term を ${lean.head} にする（${leanBy(lean)}）`
+            : `en.term を ${lean.head} にする（話し言葉の首位 ${lean.spoken} は ${lean.source} 頼み、${leanBy(lean)} は ${lean.head}）`,
         );
       }
-      if (!(en.variants ?? []).some((v) => v.register === "spoken" && sameWording(as(v.term), lean.spoken))) {
+      if (lean.by !== "spoken" && !(en.variants ?? []).some((v) => v.register === "spoken" && sameWording(as(v.term), lean.spoken))) {
         todo.push(`${lean.spoken} を register spoken の variant にする（話し言葉の首位、${lean.source} 頼み）`);
       }
     }
@@ -490,9 +516,11 @@ function main() {
     "",
     "抜くと ③ か別の候補になる話し言葉の首位は見出しにしない。書き言葉（①）か CED の言い方を en.term にし、",
     "話し言葉の首位は register spoken の variant にする（DECISIONS、Phase 2 中学の単元 2 の前の修正 3）。",
+    "書き言葉 ① も 1 ソース頼みなら書き言葉では決めず、level の参照（中学は IM、Geometry は CK-12・IM、AP は CED）の言い方にする。",
+    "参照が決まらないか話し言葉の首位と同じなら、話し言葉の首位のまま（同じく中学の単元 3 の前の修正 1）。",
     "",
     leaning.length ? "| 項目 | 話し言葉の首位 | 頼っているソース | 見出し | 根拠 |\n|---|---|---|---|---|" : "なし。",
-    ...leaning.map((l) => cells(l.key, l.lean!.spoken, l.lean!.source, l.lean!.head, l.lean!.by === "written" ? "書き言葉 ①" : "CED")),
+    ...leaning.map((l) => cells(l.key, l.lean!.spoken, l.lean!.source, l.lean!.head, leanBy(l.lean!))),
     "",
     "## 統合済み（語形変化・引数省略として見出し語に合算）",
     "",

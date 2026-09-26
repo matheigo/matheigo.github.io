@@ -43,6 +43,9 @@
 10. コーパス本文はリポジトリに入れない（`corpus/` は .gitignore）。残すのは出典 ID・件数・日付だけ。
     本文（definition・examples・pitfalls・mapping_note・variants の note）に用例コーパスの件数を書かない。比べる書き方にし、件数は evidence に任せる
     （参照 CED・OpenStax・IM・CK-12・Nicholson・Levin の件数は書いてよい。validate が警告する）。
+11. テスト・検証（tsc・validate・spell・test・build・crosscheck）の合否は**終了コードで判定する**。出力を grep・tail・head で絞って
+    合否を読まない（「Tests 120 passed」だけを拾って「Test Files 1 failed」を見落としたバッチ 6 の再発防止）。
+    `cmd > log 2>&1; echo "exit=$?"` のように終了コードを必ず表示し、0 でなければコミットしない。ログを絞るのは失敗の中身を読むときだけ。
 
 ## 完了の定義（1 エントリ）
 必須項目すべて／読み仮名（ひらがな）／出典 1 件以上／validate 緑／crosscheck の flags なし（あれば理由付き）／

@@ -8,18 +8,6 @@
   "en": {
     "term": "variable of integration",
     "alt": [],
-    "variants": [
-      {
-        "term": "dummy variable",
-        "register": "spoken",
-        "note": "「見かけの変数」の意味で、積分変数を何の文字にしても値が変わらないことを言うときに使う。大学の講義と Professor Leonard。書き言葉では少ない（すべて OpenStax Calculus）。"
-      },
-      {
-        "term": "variable of integration",
-        "register": "both",
-        "note": "話し言葉は Khan Academy が中心、書き言葉はすべて OpenStax Calculus。"
-      }
-    ],
     "uk": null,
     "register": "both"
   },
@@ -57,7 +45,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "統計の dummy variable（ダミー変数）とは別の意味。"
+    "積分変数を何の文字にしても値が変わらないことを言うとき、授業では dummy variable（見かけの変数）と呼ぶことがある。dummy variable は Σ の添え字にも使う広い語で、積分変数の別名ではない。統計の dummy variable（ダミー変数）とも別の意味。"
   ],
   "related": [
     "integrand",
@@ -76,15 +64,13 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "dummy variable": 19,
       "variable of integration": 19
     },
     "written": {
-      "variable of integration": 14,
-      "dummy variable": 3
+      "variable of integration": 14
     },
     "sources": [
       "khan-ap-calc",
@@ -92,8 +78,7 @@
       "mit-18.02",
       "mit-18.03",
       "openstax-calculus",
-      "yt:nancypi",
-      "yt:profleonard"
+      "yt:nancypi"
     ],
     "counted": "2026-09-25"
   }

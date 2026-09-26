@@ -1584,6 +1584,15 @@ export function settleUndecided(
  * ②) or the CED (its most-used candidate) backs the spoken leader - left
  * Riemann sum is the CED's name, whatever OpenStax writes - nor to a leader
  * that only thins out without its source (the same leader, ② instead of ①).
+ *
+ * When the written ① rests on one source as well (without its biggest source
+ * it is ③ or another wording leads), neither register speaks for the classroom
+ * and the written wording does not take the headword (DECISIONS, Phase 2 中学の
+ * 単元 3 の前の修正 1: rectangular box is OpenStax Calculus, constant of variation
+ * the OpenStax Algebra books). The headword is then what the reference for the
+ * entry's level calls it (levelReference): IM for 中学, CK-12 and IM for
+ * Geometry, the CED for AP. When that reference names no wording, or names the
+ * spoken leader, the spoken leader stays (by "spoken").
  */
 export interface LeanHead {
   /** The spoken leader, and the source it rests on. */
@@ -1591,14 +1600,87 @@ export interface LeanHead {
   source: string;
   /** The wording the headword takes, and where that comes from. */
   head: string;
-  by: "written" | "ced";
+  by: "written" | "ced" | LevelReference | "spoken";
+  /** by level reference / spoken: the written ① that also rests on one source, and that source. */
+  written?: { head: string; source: string };
+  /** by spoken: the level's reference that names the spoken leader too (none: it names no wording). */
+  agrees?: LevelReference;
 }
 
-export function spokenLeanHead(spoken: Verdict, written: Verdict | null, ref: ReferenceHits | undefined): LeanHead | null {
-  if (spoken.kind === "undecided" || !spoken.dependsOn) return null;
+/** The reference for an entry's level (DECISIONS, Phase 2 中学の単元 3 の前の修正 1). */
+export type LevelReference = "im" | "ck12-im" | "ced";
+
+export interface Level {
+  jp?: string[];
+  us?: string[];
+}
+
+/**
+ * 中学 (中1–中3) -> IM, else Geometry -> CK-12 and IM (one tier), else AP
+ * Calculus / AP Statistics -> the CEDs. The first that applies, in this order
+ * (the level where the learner meets the word first). Other levels have none.
+ */
+export function levelReferenceOf(level: Level | undefined): LevelReference | null {
+  if ((level?.jp ?? []).some((l) => /^中[123]$/.test(l))) return "im";
+  if ((level?.us ?? []).includes("Geometry")) return "ck12-im";
+  if ((level?.us ?? []).some((l) => l.startsWith("AP "))) return "ced";
+  return null;
+}
+
+/**
+ * The wording the level's reference uses most (lessons, sections, section
+ * titles and glossaries together, as in settleUndecided). None when it uses no
+ * candidate, or two candidates equally often - unless the two are one wording
+ * counted twice (box plot / boxplot match the same places): then the one
+ * first in `order` (en.term, alt, variants).
+ */
+export function levelReferenceHead(ref: ReferenceHits | undefined, by: LevelReference, order: string[] = []): string | null {
+  if (!ref) return null;
+  const sum = (x: Record<string, Record<string, number>> | undefined, c: string) =>
+    Object.values(x?.[c] ?? {}).reduce((a, b) => a + b, 0);
+  const im = (c: string) => sum(ref.im, c) + (ref.imGlossary?.[c]?.length ?? 0);
+  const ck12 = (c: string) => sum(ref.ck12, c) + (ref.ck12Titles?.[c]?.length ?? 0);
+  const ced = (c: string) => sum(ref.ced, c) + sum(ref.cedStats, c);
+  const score = by === "im" ? im : by === "ck12-im" ? (c: string) => ck12(c) + im(c) : ced;
+  const names = [
+    ...new Set([
+      ...Object.keys(ref.ced),
+      ...Object.keys(ref.cedStats ?? {}),
+      ...Object.keys(ref.im ?? {}),
+      ...Object.keys(ref.imGlossary ?? {}),
+      ...Object.keys(ref.ck12 ?? {}),
+      ...Object.keys(ref.ck12Titles ?? {}),
+    ]),
+  ]
+    .filter((c) => score(c) > 0)
+    .sort((a, b) => score(b) - score(a) || rank(a) - rank(b));
+  function rank(c: string) {
+    const i = order.findIndex((o) => sameWording(o, c) || o === c);
+    return i < 0 ? order.length : i;
+  }
+  if (names.length === 0) return null;
+  const places = (c: string) =>
+    JSON.stringify([ref.im?.[c], ref.imGlossary?.[c], ref.ck12?.[c], ref.ck12Titles?.[c], ref.ced[c], ref.cedStats?.[c]]);
+  if (names.length > 1 && score(names[0]) === score(names[1]) && places(names[0]) !== places(names[1])) return null;
+  return names[0];
+}
+
+/** Does a ① rest on one source: without its biggest source, ③ or another wording leads? */
+function leansOnOne(v: Verdict | null): v is Verdict & { dependsOn: Dependence } {
+  if (v === null || v.kind === "undecided" || !v.dependsOn) return false;
+  const w = v.dependsOn.without;
+  return w.kind === "undecided" || !sameWording(headsOf(w)[0], headsOf(v)[0]);
+}
+
+export function spokenLeanHead(
+  spoken: Verdict,
+  written: Verdict | null,
+  ref: ReferenceHits | undefined,
+  level?: Level,
+  order: string[] = [],
+): LeanHead | null {
+  if (!leansOnOne(spoken)) return null;
   const lead = headsOf(spoken)[0];
-  const without = spoken.dependsOn.without;
-  if (without.kind !== "undecided" && sameWording(headsOf(without)[0], lead)) return null;
   const source = spoken.dependsOn.source;
   // The written corpus or the CED backs the spoken leader: it stays. A written
   // "let u =" is the spoken "let u equal" with the sign written out, not
@@ -1614,6 +1696,14 @@ export function spokenLeanHead(spoken: Verdict, written: Verdict | null, ref: Re
         .sort((a, b) => ced(b) - ced(a))[0]
     : undefined;
   if (top !== undefined && ced(lead) >= ced(top)) return null;
+  if (written?.kind === "single" && leansOnOne(written)) {
+    // Both registers rest on one source: the level's reference, else the spoken leader.
+    const also = { head: written.head, source: written.dependsOn.source };
+    const by = levelReferenceOf(level);
+    const head = by ? levelReferenceHead(ref, by, order) : null;
+    if (by && head !== null && !sameWording(head, lead)) return { spoken: lead, source, head, by, written: also };
+    return { spoken: lead, source, head: lead, by: "spoken", written: also, ...(by && head !== null ? { agrees: by } : {}) };
+  }
   if (written?.kind === "single") return { spoken: lead, source, head: written.head, by: "written" };
   if (top !== undefined) return { spoken: lead, source, head: top, by: "ced" };
   return null;

@@ -387,6 +387,7 @@ URL は英語 id 固定。`hreflang` で ja/en を分けない（1ページに�
 1. Astro で §7 のページを実装。検索は MiniSearch ＋ wanakana、初回ロードで `search-index.json`（gzip 後 300 KB 目安）を取得
 2. 用語ページ: 日英・読み・定義・式（KaTeX）・🔊（Web Speech API, en-US。ボイスが無ければボタン非表示）・例文・コロケーション・落とし穴・関連語・単元リンク・出典・「間違いを報告」（GitHub issue テンプレへ）
    - `evidence` の件数を表で出す（言い方ごとに話し言葉・書き言葉の件数、取得元の一覧、数えた日）。本文には用例コーパスの件数を書かない（STYLE 追記欄。2026-09-25 追加）ので、件数はこの表で見せる
+   - mapping none の語のうち、en.term が英語の用語ではなく本プロジェクトの説明の訳の語（日本にしかない概念。rate の ratio to the base amount、one-sixth-formula の one-sixth formula など）は、en.term に「説明の訳（英語の用語ではない）」と分かる印（ラベルと注記）を付けて表示する。検索結果・一覧・書き出し（Anki・PDF）でも同じ印を付け、英語の用語として覚えさせない。対象は mapping none で flags に corpus-no-fixed-expression（英語に決まった言い方がない）がある語（2026-09-25 で 14 語）。米国の用語が元の語（PEMDAS・two-column proof など、ja が本プロジェクトの訳語）と、英語の用語をそのまま見出しにした語（LIATE・sign chart）には付けない（2026-09-25 追加）
 3. `/curriculum`: 日本側と米国側を左右に、単元クリックで用語一覧
 4. `/download`: JSON / CSV / Anki / PDF、ライセンス表示、更新日
 5. SEO: `<title>` は「解の公式 英語 | quadratic formula — MathBridge」型、`description` は定義文、JSON-LD `DefinedTerm`、sitemap、OGP 自動生成

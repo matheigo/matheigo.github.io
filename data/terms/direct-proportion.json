@@ -9,14 +9,9 @@
     ]
   },
   "en": {
-    "term": "is proportional to",
+    "term": "proportional relationship",
     "alt": [],
     "variants": [
-      {
-        "term": "proportional relationship",
-        "register": "spoken",
-        "note": "話し言葉では最も多いが、ほとんどが Khan Academy の中学の講義。IM は Grade 7 の glossary の見出しにしている。"
-      },
       {
         "term": "varies directly",
         "register": "both",
@@ -29,11 +24,11 @@
       }
     ],
     "uk": null,
-    "register": "both"
+    "register": "spoken"
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の中学 1 年の「比例」は、y = ax（a は 0 でない定数）で表される関係を指す。英語では「y は x に比例する」を y is proportional to x と言い、AP Calculus の CED（topic 7.8）もこの言い方をする。関係の名前は、米国の 7 年生の教材（IM Grade 7）が proportional relationship、Algebra の教科書（OpenStax）が direct variation（y varies directly with x）。見出しは CED の言い方にした（話し言葉の proportional relationship はほとんどが Khan Academy の中学の講義）。",
+  "mapping_note": "日本の中学 1 年の「比例」は、y = ax（a は 0 でない定数）で表される関係を指す。米国の 7 年生の教材（IM Grade 7）はこの関係を proportional relationship と呼び、glossary の見出しにしている。Algebra の教科書（OpenStax）は direct variation（y varies directly with x）と呼ぶ。「y は x に比例する」は y is proportional to x と言う（AP Calculus の CED topic 7.8 もこの形）。",
   "domains": [
     "functions",
     "arithmetic"
@@ -107,29 +102,20 @@
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "is proportional to": 37,
       "varies directly": 35,
       "direct variation": 24,
       "proportional relationship": 77
     },
     "written": {
-      "is proportional to": 29,
       "proportional relationship": 3,
       "varies directly": 87,
       "direct variation": 42
     },
     "sources": [
       "khan-algebra",
-      "khan-ap-calc",
       "khan-middle",
-      "mit-18.01",
-      "mit-18.03",
-      "mit-notes",
       "openstax-algtrig",
-      "openstax-calculus",
       "openstax-elemalg",
-      "openstax-introstats",
-      "yt:3blue1brown",
       "yt:nancypi",
       "yt:patrickjmt",
       "yt:profleonard"
