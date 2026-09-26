@@ -1,0 +1,39 @@
+{
+  "id": "euler-trail-scope",
+  "title_ja": "一筆書きと Euler trail",
+  "title_en": "Euler trails and circuits",
+  "jp": "日本語版 Wikipedia「一筆書き」は、広い意味では始点に戻るかどうかを問わず線を一度で描くことを指すと説明する。",
+  "us": "Levin はすべての辺を 1 回ずつ通る walk を Euler trail、始点に戻るものを Euler circuit と呼び分ける。",
+  "advice_ja": "始点に戻るかで trail と circuit を使い分ける。",
+  "category": "terminology",
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "term_refs": [
+    "eulerian-path"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「一筆書き」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%80%E7%AD%86%E6%9B%B8%E3%81%8D",
+      "note": "広い意味と狭い意味"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "2.4 Euler Trails and Circuits"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25"
+}

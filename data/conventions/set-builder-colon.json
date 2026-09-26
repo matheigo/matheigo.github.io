@@ -1,0 +1,43 @@
+{
+  "id": "set-builder-colon",
+  "title_ja": "集合の内包的記法",
+  "title_en": "Set-builder notation",
+  "jp": "集合を {x | x > 2} と縦棒で書く（高等学校学習指導要領解説 数学I の例）。",
+  "us": "Levin は {x : x > 2} とコロンで書き、: を such that と読む。",
+  "advice_ja": "縦棒でもコロンでも such that と読む。",
+  "category": "notation",
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "term_refs": [
+    "set-builder-notation",
+    "set"
+  ],
+  "related": [
+    "set-builder-braces"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I: A = {x | x > 2}"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "5.1 Sets: {x : x > 2}"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25"
+}

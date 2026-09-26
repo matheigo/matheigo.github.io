@@ -1,0 +1,53 @@
+{
+  "id": "substitution-variable-u",
+  "title_ja": "置換積分の文字",
+  "title_en": "Letter in substitution",
+  "jp": "日本語版 Wikipedia「置換積分」は x = g(t) と新しい変数を t で書く。数学III で置換積分法を扱う（高等学校学習指導要領解説）。",
+  "us": "OpenStax Calculus Volume 1 は新しい変数を u = g(x) と u で書き、Volume 2 は x = a sin θ の形を trigonometric substitution として別に扱う。",
+  "advice_ja": "米国の置換積分は u-substitution と呼び、u を使う。x = a sin θ の置換は trig substitution と言う。",
+  "category": "letters",
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I",
+      "Calculus II"
+    ]
+  },
+  "term_refs": [
+    "integration-by-substitution",
+    "let-u-equal",
+    "trigonometric-substitution"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「置換積分」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%BD%AE%E6%8F%9B%E7%A9%8D%E5%88%86",
+      "note": "x = g(t)"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学III 積分法: 置換積分法"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "u = g(x)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "trigonometric substitution"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25"
+}

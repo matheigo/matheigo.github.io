@@ -1,0 +1,50 @@
+{
+  "id": "jp-only-algebra-and-discrete-topics",
+  "title_ja": "日本だけの定番の内容（二重根号・階差数列）",
+  "title_en": "Nested radicals and difference sequences",
+  "jp": "数学I で二重根号を扱い、数学B で階差数列を扱う（高等学校学習指導要領解説）。",
+  "us": "米国の高校課程（OpenStax・CED・IM・CK-12）に nested radical・difference sequence の語は出てこない。Levin（離散数学）は数列の階差を sequence of differences として扱う。",
+  "advice_ja": "階差数列は英語で the sequence of differences。高校の授業より大学の離散数学で出てくる。",
+  "category": "classroom-culture",
+  "level": {
+    "jp": [
+      "数I",
+      "数B"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "term_refs": [
+    "integer-part",
+    "fractional-part",
+    "nested-radical",
+    "nth-roots-of-unity",
+    "remainder-theorem",
+    "number-of-digits",
+    "am-gm-inequality",
+    "cauchy-schwarz-inequality",
+    "triple-angle-formulas",
+    "sequence-of-differences",
+    "shortest-path"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 二重根号の取扱い、数学B 階差数列"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.1 Describing Sequences: sequence of differences"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "jp-only-number-theory",
+  "title_ja": "日本の数学Aだけの整数の内容",
+  "title_en": "Number theory in Japan's Math A",
+  "jp": "数学A「数学と人間の活動」で約数・倍数、ユークリッドの互除法、二進法を扱い、一次不定方程式の整数解も扱う（高等学校学習指導要領解説 数学A）。",
+  "us": "米国の高校課程（OpenStax・CED・IM・CK-12）に Euclidean algorithm・Chinese remainder theorem・Bézout の語は出てこない。大学の離散数学の Levin で出てくる。",
+  "advice_ja": "互除法や不定方程式を英語で説明するときは Euclidean algorithm・linear Diophantine equation と言う。高校の授業では通じないことがある。",
+  "category": "classroom-culture",
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "term_refs": [
+    "bezouts-identity",
+    "chinese-remainder-theorem",
+    "congruence-modulo-n",
+    "diophantine-equation",
+    "linear-diophantine-equation",
+    "euclidean-algorithm",
+    "extended-euclidean-algorithm",
+    "hexadecimal",
+    "numeral-system",
+    "infinitude-of-primes"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A 数学と人間の活動: 約数・倍数、ユークリッドの互除法、二進法、不定方程式"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "6.2 Introduction to Number Theory"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25"
+}
