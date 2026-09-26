@@ -2,7 +2,7 @@
   "id": "class-listening-lowest-quiz-dropped",
   "situation": "class-listening",
   "intent": "小テストの最低点を成績から除くと伝える",
-  "en": "I'll drop your lowest quiz score.",
+  "en": "Your lowest quiz score will be dropped.",
   "ja": "小テストの一番低い点は成績に入れません。",
   "register": "neutral",
   "tags": [
@@ -14,7 +14,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "sources": [],
@@ -22,8 +22,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（講義のコーパスと MICASE の教員の発話で数えた。話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "要の部分は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 フレーズ 2 の前の修正」の 4）。Your lowest quiz score will be dropped.。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

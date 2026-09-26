@@ -25,6 +25,7 @@ export const RECORD_FLAGS = new Set([
   "corpus-human-settled", // the human settled the headword of a ③
   "corpus-reference-fallback", // a ③ whose headword is what a reference (CED, OpenStax, Nicholson, Levin) calls it
   "corpus-no-fixed-expression", // a ③ for which English has no set way to say it
+  "corpus-attested-only", // a phrase none of whose key parts reaches 10, its leader used 3 times or more by its speakers
 ]);
 
 export const isProblemFlag = (code: string) => !RECORD_FLAGS.has(code);

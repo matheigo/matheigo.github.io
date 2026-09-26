@@ -2,15 +2,9 @@
   "id": "area-is-never-negative",
   "situation": "class-listening",
   "intent": "面積は負にならないこと、負になったら計算を見直すことを伝える",
-  "en": "Area is always positive, so if you get a negative number, something went wrong.",
-  "ja": "面積は負にはなりません。負になったらどこかで間違えています。",
+  "en": "Area is never negative.",
+  "ja": "面積は負になりません。",
   "register": "neutral",
-  "variants": [
-    {
-      "en": "Area can't be negative.",
-      "register": "neutral"
-    }
-  ],
   "tags": [
     "integration",
     "area",
@@ -21,21 +15,16 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
-    "spoken": {
-      "area is always positive | area is positive | areas are positive | area is always going to be positive": 1
-    },
-    "sources": [
-      "mit-18.02"
-    ],
+    "sources": [],
     "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（講義のコーパスと MICASE の教員の発話で数えた。話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "要の部分は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 フレーズ 2 の前の修正」の 4）。Area is never negative.。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

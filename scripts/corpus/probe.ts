@@ -25,7 +25,11 @@
  *               (MICASE students), instructor (lectures and MICASE
  *               instructors), written (the written corpus; with --decide a
  *               written ③ is settled on the references), email (MICASE
- *               students, 3 or more is likely). Implies --phrases
+ *               students, 3 or more is likely), classroom (lectures and the
+ *               whole of MICASE: explaining-solution). With --decide a key
+ *               part short of 10 is not judged ①②③: its leader used 3 times
+ *               or more is likely (corpus-attested-only; DECISIONS, Phase 3
+ *               フレーズ 2 の前の修正 1). Implies --phrases
  *   --contexts [n]  also print n contexts (default 10) of each wording per
  *               register, picked at even steps through its hits (lib.ts
  *               sampleTermContexts). For the check of an everyday-word
@@ -61,7 +65,10 @@ import {
   sourceWeights,
   forCollection,
   matcherFor,
+  phraseBelowFloor,
   phraseDocs,
+  PHRASE_ATTESTED,
+  PHRASE_GROUPS,
   settlePhraseReference,
   STUDENT_SEEN,
   VARIANTS,
@@ -202,9 +209,15 @@ function probePhrase(
     console.log(`  ${top >= STUDENT_SEEN ? "likely" : "draft"} (most-used key part ${top})   {${rawLine}}`);
     return;
   }
+  // Rule 1 (lib.ts phraseBelowFloor): no key part reaches 10, not judged ①②③.
+  const below = phraseBelowFloor(counts, weights);
   const v = decideRobust(counts, weights, register);
-  console.log(`  ${register === "spoken" ? "話" : "書"} ${verdict(v)}   {${rawLine}}`);
-  if (v.kind === "undecided" && group === "written") {
+  const mark = register === "spoken" ? "話" : "書";
+  if (below === null) console.log(`  ${mark} ${verdict(v)}   {${rawLine}}`);
+  else if (below.hits >= PHRASE_ATTESTED) {
+    console.log(`  ${mark} likely, attested only (${below.wording} ${below.hits}; no key part reaches 10)   {${rawLine}}`);
+  } else console.log(`  ${mark} ③ below ${PHRASE_ATTESTED} (${below.wording ?? "—"} ${below.hits})   {${rawLine}}`);
+  if (below !== null && below.hits < PHRASE_ATTESTED && group === "written") {
     const ref = referenceHits(block, refs.ced, openstax, titles, refs, matcherFor("phrases"));
     const s = settlePhraseReference(ref, block);
     const per = block
@@ -319,8 +332,8 @@ function main() {
 
   // MICASE is for phrases only (lib.ts forCollection): --phrases counts on the phrases' corpus,
   // --group on the words of whoever says the phrase (lib.ts phraseDocs).
-  if (group && !["student", "instructor", "written", "email"].includes(group)) {
-    console.log("--group is one of student, instructor, written, email");
+  if (group && !PHRASE_GROUPS.includes(group)) {
+    console.log(`--group is one of ${PHRASE_GROUPS.join(", ")}`);
     return;
   }
   const all = forCollection(load(), args.includes("--phrases") || group ? "phrases" : "terms");

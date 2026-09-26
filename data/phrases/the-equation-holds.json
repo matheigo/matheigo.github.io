@@ -2,12 +2,12 @@
   "id": "the-equation-holds",
   "situation": "written-solution",
   "intent": "等式が成り立つことを示し終えたと書く",
-  "en": "Therefore, the identity is verified.",
+  "en": "Thus, the identity is verified.",
   "ja": "よって、等式は成り立つ。",
   "register": "written",
   "variants": [
     {
-      "en": "Hence the identity holds.",
+      "en": "Therefore, the equation holds.",
       "register": "written"
     }
   ],
@@ -20,12 +20,12 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "written": {
       "the identity is verified | we have verified the identity": 2,
-      "the identity holds | the equation holds | the equality holds": 1
+      "the equation holds | the identity holds | the equality holds": 1
     },
     "sources": [
       "openstax-algtrig"
@@ -34,8 +34,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも要の部分を 3 件以上使わない（書き言葉のコーパスと参照で数えた。書: 判断不能: 重み付け後 3 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "要の部分は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 フレーズ 2 の前の修正」の 4）。Thus, the identity is verified. ／ Therefore, the equation holds.。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

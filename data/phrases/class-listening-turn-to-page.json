@@ -2,12 +2,12 @@
   "id": "class-listening-turn-to-page",
   "situation": "class-listening",
   "intent": "教科書の指定のページを開かせる",
-  "en": "Turn to page 112.",
-  "ja": "112 ページを開いてください。",
+  "en": "Turn to page 45.",
+  "ja": "45 ページを開いてください。",
   "register": "neutral",
   "variants": [
     {
-      "en": "Open your books to page 112.",
+      "en": "Open your books to page 45.",
       "register": "neutral"
     }
   ],
@@ -20,7 +20,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "spoken": {
@@ -33,8 +33,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（講義のコーパスと MICASE の教員の発話で数えた。話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE の教員の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 turn to page（5 件。3 件以上）。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

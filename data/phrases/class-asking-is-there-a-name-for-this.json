@@ -2,12 +2,12 @@
   "id": "class-asking-is-there-a-name-for-this",
   "situation": "class-asking",
   "intent": "それに名前（英語の用語）があるかを聞く",
-  "en": "What's it called?",
+  "en": "What's this called?",
   "ja": "これって何て言うんですか。",
   "register": "neutral",
   "variants": [
     {
-      "en": "What do you call this in English?",
+      "en": "What do you call this?",
       "register": "neutral"
     }
   ],
@@ -20,11 +20,11 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "spoken": {
-      "what's it called | what is it called | what's that called | what is that called": 8,
+      "what's it called | what is it called | what's that called | what is that called | what's this called | what is this called": 8,
       "what do you call": 5
     },
     "sources": [
@@ -34,8 +34,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（MICASE の学生の発話で数えた。話: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満 ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 what's it called | what is it called | what's that called | what is that called | what's this called | what is this called（8 件。3 件以上）。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

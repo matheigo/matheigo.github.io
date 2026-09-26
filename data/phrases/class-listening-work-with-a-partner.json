@@ -2,8 +2,8 @@
   "id": "class-listening-work-with-a-partner",
   "situation": "class-listening",
   "intent": "隣の人と答えを比べさせる・ペアで取り組ませる",
-  "en": "Turn to your neighbor and compare answers.",
-  "ja": "隣の人と答えを比べてください。",
+  "en": "Turn to your neighbor and compare.",
+  "ja": "隣の人と比べてください。",
   "register": "neutral",
   "variants": [
     {
@@ -20,7 +20,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "spoken": {
@@ -35,8 +35,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（講義のコーパスと MICASE の教員の発話で数えた。話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE の教員の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 turn to your neighbor | talk to your neighbor | with your neighbor | turn to the person next to you（5 件。3 件以上）。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

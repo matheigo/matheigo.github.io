@@ -20,7 +20,7 @@
  * are wildcard patterns; phrases are counted by their key part as terms are
  * (lib.ts matcherFor, PHRASE_FORMS), each on the words of whoever says it
  * (lib.ts phraseDocs: the MICASE students, the lectures and the MICASE
- * instructors, or the written corpus).
+ * instructors, the lectures and the whole of MICASE, or the written corpus).
  *
  * Everything written stays under corpus/, which is gitignored.
  */
@@ -39,6 +39,7 @@ import {
   normalize,
   phraseDocs,
   phraseGroup,
+  PHRASE_GROUPS,
   referenceHits,
   referred as anyReference,
   type BySource,
@@ -182,7 +183,7 @@ function main() {
   // Phrases are counted on the words of whoever says them (lib.ts phraseDocs).
   const phraseSources = {} as Record<PhraseGroup, Record<string, number>>;
   const phraseCorpus = forCollection(docs, "phrases");
-  for (const group of ["student", "instructor", "written", "email"] as PhraseGroup[]) {
+  for (const group of PHRASE_GROUPS) {
     phraseSources[group] = {};
     for (const r of balance(phraseDocs(phraseCorpus, group)).rows) phraseSources[group][r.source] = r.words;
   }

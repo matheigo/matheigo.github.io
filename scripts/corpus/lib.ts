@@ -1837,16 +1837,21 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
  *   email       email, discord: not judged ①②③. The key part is looked up
  *               in the students' utterances in MICASE: STUDENT_SEEN times or
  *               more, likely; fewer, draft
+ *   classroom   explaining-solution: the lecture transcripts and the whole of
+ *               MICASE (students, instructors and the rest). How a step of
+ *               the mathematics is said does not change with the speaker
+ *               (DECISIONS, Phase 3 フレーズ 2 の前の修正 2)
  *
- * An exam phrase said aloud (PHRASE_SPEAKER) goes by its speaker instead.
+ * An exam phrase said aloud (PHRASE_SPEAKER) goes by its speaker instead: a
+ * student asking the proctor is student, the proctor announcing is instructor.
  */
-export type PhraseGroup = "student" | "instructor" | "written" | "email";
+export type PhraseGroup = "student" | "instructor" | "written" | "email" | "classroom";
 
 export const PHRASE_GROUP_OF_SITUATION: Record<string, PhraseGroup> = {
   "class-asking": "student",
   "office-hours": "student",
   "group-study": "student",
-  "explaining-solution": "student",
+  "explaining-solution": "classroom",
   "class-listening": "instructor",
   "written-solution": "written",
   exam: "written",
@@ -1865,6 +1870,7 @@ export function phraseGroup(id: string, situation: string): PhraseGroup {
 export function phraseDocs<T extends { id: string; register: Register; speaker?: string }>(docs: T[], group: PhraseGroup): T[] {
   if (group === "student" || group === "email") return docs.filter((d) => d.id === "micase" && d.speaker === "student");
   if (group === "written") return docs.filter((d) => d.register === "written");
+  if (group === "classroom") return docs.filter((d) => d.register === "spoken");
   return docs.filter((d) => d.register === "spoken" && (d.id !== "micase" || d.speaker === "instructor"));
 }
 
@@ -1874,7 +1880,39 @@ export const PHRASE_GROUP_LABEL: Record<PhraseGroup, string> = {
   instructor: "講義のコーパスと MICASE の教員の発話",
   written: "書き言葉のコーパスと参照",
   email: "MICASE の学生の発話（3 件以上で likely）",
+  classroom: "講義のコーパスと MICASE 全体",
 };
+
+export const PHRASE_GROUPS = Object.keys(PHRASE_GROUP_LABEL) as PhraseGroup[];
+
+/**
+ * Rule 1 for phrases (DECISIONS, Phase 3 フレーズ 2 の前の修正 1): when no key
+ * part reaches MIN_TOTAL, the key parts are not set against each other ①②③.
+ * The leading key part used PHRASE_ATTESTED times or more by its speakers
+ * makes the phrase likely (flag corpus-attested-only, a record flag); fewer,
+ * it is a draft for the human (corpus-undecided; a written phrase goes to the
+ * references first, settlePhraseReference).
+ */
+export const PHRASE_ATTESTED = 3;
+
+/**
+ * null when a key part reaches MIN_TOTAL (weighted, as ①② are judged): the
+ * phrase is judged ①②. Otherwise the leading key part - by weighted count, as
+ * the leader of ① is picked - and its raw hits (what was observed); no hits at
+ * all is { wording: null, hits: 0 }.
+ */
+export function phraseBelowFloor(
+  counts: BySource,
+  weights: Record<string, number>,
+): { wording: string | null; hits: number } | null {
+  const weighted = weigh(counts, weights);
+  const raw = flatten(counts);
+  const ranked = Object.keys(counts)
+    .filter((c) => raw[c] > 0)
+    .sort((a, b) => weighted[b] - weighted[a] || raw[b] - raw[a]);
+  if (ranked.length && weighted[ranked[0]] >= MIN_TOTAL) return null;
+  return ranked.length ? { wording: ranked[0], hits: raw[ranked[0]] } : { wording: null, hits: 0 };
+}
 
 /** The wording a candidate is counted and recorded as. */
 export function countedAs(collection: string, id: string, wording: string): string {
@@ -1963,7 +2001,12 @@ export type Verdict =
       /** Was ① until the leader's biggest source was taken out (decideRobust). */
       demoted?: boolean;
     }
-  | { kind: "undecided"; reason: "too-few" | "too-close"; total: number };
+  | {
+      kind: "undecided";
+      /** below-floor: a phrase none of whose key parts reaches MIN_TOTAL, not judged ①②③ (phraseBelowFloor). */
+      reason: "too-few" | "too-close" | "below-floor";
+      total: number;
+    };
 
 /**
  * The leader's verdict rests on one source: without the source that gives the
@@ -2412,6 +2455,8 @@ export function highSchoolHits(ref: ReferenceHits, order: string[]): { ced: numb
 export type Settled =
   | { kind: "no-fixed-expression"; spoken: number; written: number }
   | { kind: "reference"; by: ReferenceBy; head: string; where: string[] }
+  /** A phrase whose leading key part its speakers use PHRASE_ATTESTED times or more (phraseBelowFloor). */
+  | { kind: "attested"; head: string; hits: number }
   | { kind: "undecided" };
 
 /**

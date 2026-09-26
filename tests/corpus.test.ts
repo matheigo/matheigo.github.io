@@ -28,8 +28,10 @@ import {
   cedText,
   settleSymbolReading,
   settlePhraseReference,
+  phraseBelowFloor,
   phraseDocs,
   phraseGroup,
+  PHRASE_ATTESTED,
   settleUndecided,
   sourceWeights,
   spokenLeanHead,
@@ -1151,11 +1153,30 @@ describe("MICASE (phrases only)", () => {
     expect(texts("email")).toEqual(["s"]);
     expect(texts("instructor")).toEqual(["a", "i"]);
     expect(texts("written")).toEqual(["w"]);
+    // explaining-solution: the lectures and the whole of MICASE (Phase 3 フレーズ 2 の前の修正 2)
+    expect(texts("classroom")).toEqual(["a", "s", "i", "o"]);
+    expect(phraseGroup("explaining-solution-first-step", "explaining-solution")).toBe("classroom");
     expect(phraseGroup("office-hours-stuck-at-step", "office-hours")).toBe("student");
     expect(phraseGroup("dont-forget-the-plus-c", "class-listening")).toBe("instructor");
     expect(phraseGroup("exam-justify-your-answer", "exam")).toBe("written");
     expect(phraseGroup("exam-clarify-instruction", "exam")).toBe("student"); // said aloud during the exam
     expect(phraseGroup("email-greeting", "email")).toBe("email");
+    // every exam phrase said aloud goes by its speaker (修正 3)
+    expect(phraseGroup("exam-ask-how-much-time", "exam")).toBe("student");
+    expect(phraseGroup("exam-pencils-down", "exam")).toBe("instructor");
+  });
+
+  it("does not set key parts short of ten against each other (Phase 3 フレーズ 2 の前の修正 1)", () => {
+    const w = { a: 1, b: 1 };
+    // a key part reaches ten: judged ①②③ as before
+    expect(phraseBelowFloor({ "extra credit": { a: 10 }, "bonus question": { a: 4 } }, w)).toBeNull();
+    // 9 against 2 was ① (3:1, 11 in all); now no key part reaches ten
+    expect(phraseBelowFloor({ "extra credit": { a: 6, b: 3 }, "bonus question": { a: 2 } }, w)).toEqual({ wording: "extra credit", hits: 9 });
+    expect(phraseBelowFloor({ "pass your papers": { a: 2 } }, w)).toEqual({ wording: "pass your papers", hits: 2 });
+    expect(phraseBelowFloor({ "pass your papers": {} }, w)).toEqual({ wording: null, hits: 0 });
+    expect(PHRASE_ATTESTED).toBe(3);
+    // the leader is picked on the weighted counts, its hits are raw
+    expect(phraseBelowFloor({ x: { a: 4 }, y: { b: 3 } }, { a: 0.5, b: 2 })).toEqual({ wording: "y", hits: 3 });
   });
 
   it("settles a written phrase on the references at three hits, a CED too", () => {

@@ -5,10 +5,6 @@
     {
       "text": "the binomial distribution with n trials and success probability p",
       "register": "standard"
-    },
-    {
-      "text": "B of n comma p",
-      "register": "spoken"
     }
   ],
   "spoken_ja": "二項分布 B(n, p)",
@@ -33,7 +29,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "X ~ B(n, p) の記法"
     },
     {
       "type": "reference",
@@ -42,21 +39,16 @@
       "note": "試験の例題。binomial distribution with …"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
-    "spoken": {
-      "b of n": 1
-    },
-    "sources": [
-      "mit-18.03"
-    ],
+    "sources": [],
     "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも読みを 3 件以上使わない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "読みは人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 フレーズ 2 の前の修正」の 4）。the binomial distribution with n trials and success probability p。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

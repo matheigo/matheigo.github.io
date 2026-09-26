@@ -3,16 +3,8 @@
   "latex": "\\max\\{a, b\\},\\ \\min\\{a, b\\}",
   "spoken_en": [
     {
-      "text": "the larger of a and b",
-      "register": "standard"
-    },
-    {
       "text": "the maximum of a and b",
-      "register": "spoken"
-    },
-    {
-      "text": "the max of a and b",
-      "register": "spoken"
+      "register": "standard"
     }
   ],
   "spoken_ja": "a と b の大きい方 ／ マックス a, b",
@@ -27,7 +19,7 @@
     ]
   },
   "notes": [
-    "max{a, b} は the larger of a and b、min{a, b} は the smaller of a and b と読む。記号の名前どおり the maximum of a and b（短く the max of a and b）とも言う。",
+    "max{a, b} は the maximum of a and b と読む（min{a, b} は the minimum of a and b）。言葉で the larger of a and b（min は the smaller of a and b）と言い換えることもある。",
     "AP Statistics の CED は、2 標本の t の自由度の範囲を the smaller of … and … と言葉で書く（topic 4.7・4.10）。"
   ],
   "sources": [
@@ -43,31 +35,31 @@
       "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
       "note": "topic 4.7・4.10。min を the smaller of … and … と書く（2 件）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3",
+      "note": "Calculus of Parametric Curves で分割の幅の最大を max{ … } と書く（2 つの値の max{a, b} の形ではない）"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "spoken": {
-      "the maximum of * and * | the minimum of * and *": 5,
-      "the max of * and * | the min of * and * | max of * and * | min of * and *": 1,
-      "the larger of * and * | the smaller of * and * | the bigger of * and *": 2
+      "the maximum of * and * | the minimum of * and *": 5
     },
     "sources": [
       "khan-ap-calc",
-      "khan-middle",
       "mit-18.01",
-      "mit-18.02",
       "mit-18.03",
-      "mit-6.042",
       "yt:blackpenredpen"
     ],
     "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも読みを 3 件以上使わない（話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "読みは人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 フレーズ 2 の前の修正」の 4）。the maximum of a and b。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

@@ -2,15 +2,9 @@
   "id": "left-side-minus-right-side",
   "situation": "written-solution",
   "intent": "不等式の証明で、左辺から右辺を引いた差を調べる",
-  "en": "Consider the left side minus the right side.",
+  "en": "Subtract the right side from the left side.",
   "ja": "（左辺）−（右辺）= … ≧ 0 だから、",
   "register": "written",
-  "variants": [
-    {
-      "en": "Subtract the right side from the left side and show the result is nonnegative.",
-      "register": "written"
-    }
-  ],
   "tags": [
     "proof",
     "inequality"
@@ -20,7 +14,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "sources": [],
@@ -28,8 +22,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも要の部分を 3 件以上使わない（書き言葉のコーパスと参照で数えた。書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "要の部分は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 フレーズ 2 の前の修正」の 4）。Subtract the right side from the left side.。register は主張しない。米国の教材（OpenStax・CED・IM・CK-12）に決まった言い方がない。日本の答案の型。",
       "raised": "2026-09-26"
     }
   ]

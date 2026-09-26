@@ -5,12 +5,6 @@
   "en": "Take out a sheet of paper.",
   "ja": "紙を 1 枚出してください。",
   "register": "neutral",
-  "variants": [
-    {
-      "en": "Clear your desks — it's a pop quiz.",
-      "register": "neutral"
-    }
-  ],
   "tags": [
     "classroom",
     "quiz"
@@ -20,23 +14,21 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "spoken": {
-      "pop quiz": 4,
       "take out a sheet of paper | take out a piece of paper | get out a piece of paper | get out a sheet of paper": 2
     },
     "sources": [
-      "micase",
-      "yt:profleonard"
+      "micase"
     ],
     "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（講義のコーパスと MICASE の教員の発話で数えた。話: 判断不能: 重み付け後 6 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "要の部分は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 フレーズ 2 の前の修正」の 4）。Take out a sheet of paper.。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

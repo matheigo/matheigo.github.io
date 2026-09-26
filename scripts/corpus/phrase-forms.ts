@@ -51,8 +51,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Subtract the bottom curve from the top curve.": "subtract the bottom | subtract the lower",
   },
   "area-is-never-negative": {
-    "Area is always positive, so if you get a negative number, something went wrong.": "area is always positive | area is positive | areas are positive | area is always going to be positive",
-    "Area can't be negative.": "area can't be negative | area cannot be negative | can't have negative area | can't have a negative area",
+    "Area is never negative.": "area is never negative | areas are never negative | area is always positive | area can't be negative | area cannot be negative",
   },
   "check-by-differentiating": {
     "You can always check your answer by taking the derivative.": "check your answer",
@@ -151,16 +150,15 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Squares of real numbers are always nonnegative.": "always nonnegative",
   },
   "left-side-minus-right-side": {
-    "Consider the left side minus the right side.": "left side minus the right side | left-hand side minus the right-hand side | lhs minus rhs",
-    "Subtract the right side from the left side and show the result is nonnegative.": "subtract the right side | subtract the right-hand side",
+    "Subtract the right side from the left side.": "subtract the right side from the left side | subtract the right-hand side from the left-hand side | left side minus the right side | left-hand side minus the right-hand side",
   },
   "the-equation-holds": {
-    "Therefore, the identity is verified.": "the identity is verified | we have verified the identity",
-    "Hence the identity holds.": "the identity holds | the equation holds | the equality holds",
+    "Thus, the identity is verified.": "the identity is verified | we have verified the identity",
+    "Therefore, the equation holds.": "the equation holds | the identity holds | the equality holds",
   },
   "what-we-want-to-show": {
-    "We want to show that f(x) > 0 for all x.": "we want to show",
     "We need to show that f(x) > 0 for all x.": "we need to show",
+    "We want to show that f(x) > 0 for all x.": "we want to show",
   },
   "involves-imaginary-numbers": {
     "You get complex roots.": "complex roots | complex solutions",
@@ -243,8 +241,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Work from left to right.": "left to right | from left to right",
   },
   "by-hypothesis": {
-    "By hypothesis, AB = CD.": "by hypothesis",
     "By assumption, AB = CD.": "by assumption",
+    "By hypothesis, AB = CD.": "by hypothesis",
     "Since AB = CD is given,": "",
   },
   "since": {
@@ -260,7 +258,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Break it up into smaller shapes.": "into smaller shapes | into simpler shapes | into shapes we know",
   },
   "square-and-add": {
-    "Square both equations and add them.": "square both equations",
+    "Square both equations and add them.": "square and add | square them and add | square … and add them",
     "Square and add.": "square and add | square them and add | square … and add them",
   },
   "class-listening-does-that-make-sense": {
@@ -269,11 +267,10 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "class-listening-take-out-a-sheet-of-paper": {
     "Take out a sheet of paper.": "take out a sheet of paper | take out a piece of paper | get out a piece of paper | get out a sheet of paper",
-    "Clear your desks — it's a pop quiz.": "pop quiz",
   },
   "class-listening-turn-to-page": {
-    "Turn to page 112.": "turn to page",
-    "Open your books to page 112.": "open your books to | open your book to",
+    "Turn to page 45.": "turn to page",
+    "Open your books to page 45.": "open your books to | open your book to",
   },
   "class-listening-homework-is": {
     "For homework, do section 3.2, problems 1 through 25, odds.": "for homework",
@@ -288,13 +285,12 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "class-listening-pass-your-papers-forward": {
     "Pass your papers forward.": "pass … forward | pass your papers | pass … to the front",
-    "Pass them up to the front.": "pass them up",
   },
   "class-listening-try-this-one": {
     "Go ahead and try this one — I'll give you a couple of minutes.": "try this one",
   },
   "class-listening-work-with-a-partner": {
-    "Turn to your neighbor and compare answers.": "turn to your neighbor | talk to your neighbor | with your neighbor | turn to the person next to you",
+    "Turn to your neighbor and compare.": "turn to your neighbor | talk to your neighbor | with your neighbor | turn to the person next to you",
     "Work with a partner.": "with a partner",
   },
   "class-listening-who-wants-to-come-up": {
@@ -341,11 +337,11 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "This is a bonus question.": "bonus question | bonus problem | bonus points",
   },
   "class-listening-lowest-quiz-dropped": {
-    "I'll drop your lowest quiz score.": "drop … lowest | lowest … dropped | lowest quiz",
+    "Your lowest quiz score will be dropped.": "drop … lowest | lowest … dropped | lowest quiz",
   },
   "class-listening-final-is-cumulative": {
     "The final is cumulative.": "is cumulative | final is cumulative | exam is cumulative",
-    "The final covers everything.": "covers everything",
+    "The final covers everything.": "final covers everything | exam covers everything | final will cover everything | final is going to cover everything",
   },
   "class-listening-office-hours-are": {
     "My office hours are Tuesdays from 2 to 4.": "office hours",
@@ -357,7 +353,6 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "class-listening-lets-go-over-the-homework": {
     "Let's go over the homework.": "go over the homework | go over homework | go over the problem set | go over the assignment",
-    "Any questions on the homework?": "questions on the homework | questions about the homework",
   },
   "class-listening-what-do-you-notice": {
     "What happens if we make x bigger?": "what happens if",
@@ -375,7 +370,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Explain it in your own words.": "in your own words",
   },
   "class-listening-sanity-check": {
-    "Does that answer make sense?": "answer make sense | answer makes sense | reasonable answer | answer is reasonable",
+    "Does this answer make sense?": "answer make sense | answer makes sense | reasonable answer | answer is reasonable",
     "Let's do a quick sanity check.": "sanity check",
   },
   "class-asking-where-did-that-come-from": {
@@ -387,12 +382,11 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Why is that?": "why is that",
   },
   "class-asking-how-do-you-read-this": {
-    "How do you say this symbol out loud?": "how do you say",
-    "How do you pronounce this?": "how do you pronounce",
+    "How do you say this symbol?": "how do you say",
   },
   "class-asking-is-there-a-name-for-this": {
-    "What's it called?": "what's it called | what is it called | what's that called | what is that called",
-    "What do you call this in English?": "what do you call",
+    "What's this called?": "what's it called | what is it called | what's that called | what is that called | what's this called | what is this called",
+    "What do you call this?": "what do you call",
   },
   "class-asking-difference-between": {
     "What's the difference between a local max and an absolute max?": "what's the difference between | what is the difference between",
@@ -408,16 +402,31 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "class-asking-typo-on-the-board": {
     "Should that be a minus?": "should it be | shouldn't it be | should that be | shouldn't that be",
-    "Is that supposed to be x squared?": "is that supposed to be | is it supposed to be | isn't it supposed to be",
-    "I think there might be a typo.": "a typo",
+    "Is that a typo?": "a typo",
   },
 };
 
 /**
  * Exam phrases that are said aloud during an exam - a student asking the
  * proctor, the proctor announcing - are counted by who says them, not on the
- * written corpus (DECISIONS, Phase 3 フレーズの前の修正 4): id -> group.
+ * written corpus (DECISIONS, Phase 3 フレーズの前の修正 4; all of them since
+ * Phase 3 フレーズ 2 の前の修正 3): id -> group. The printed instructions of an
+ * exam (Justify your answer) stay written.
  */
 export const PHRASE_SPEAKER: Record<string, PhraseGroup> = {
+  // a student asking during or about the exam
   "exam-clarify-instruction": "student",
+  "exam-ask-typo": "student",
+  "exam-ask-scratch-paper": "student",
+  "exam-ask-can-i-write-on-the-back": "student",
+  "exam-ask-how-much-time": "student",
+  "exam-when-do-we-get-it-back": "student",
+  "exam-is-it-curved": "student",
+  // the instructor or proctor announcing
+  "exam-calculator-allowed": "instructor",
+  "exam-multiple-choice-and-free-response": "instructor",
+  "exam-partial-credit": "instructor",
+  "exam-notes-allowed": "instructor",
+  "exam-time-remaining": "instructor",
+  "exam-pencils-down": "instructor",
 };

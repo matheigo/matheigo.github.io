@@ -65,7 +65,9 @@ import {
   headsOf,
   highSchoolHits,
   PHRASE_GROUP_LABEL,
+  phraseBelowFloor,
   phraseGroup,
+  PHRASE_ATTESTED,
   sameWording,
   settlePhraseReference,
   settleSymbolReading,
@@ -109,6 +111,7 @@ function describe(v: Verdict | null): string {
     const mark = v.demoted ? "①→② " : "";
     return v.dependsOn ? `${mark}${base} ${rest(v.dependsOn)}` : base;
   }
+  if (v.reason === "below-floor") return "どの要の部分も 10 件に届かない（①②③ で判定しない）";
   return v.reason === "too-few"
     ? `判断不能: 重み付け後 ${v.total.toFixed(0)} 件（10 未満）`
     : "判断不能: 首位が 3 倍に届かず、次点も 10 件未満";
@@ -196,6 +199,7 @@ const PROJECT_TRANSLATION = "本プロジェクトの訳語";
 const NOT_IN_HIGH_SCHOOL = "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない";
 
 const HUMAN_SETTLED = "corpus-human-settled";
+const ATTESTED_ONLY = "corpus-attested-only";
 
 /**
  * A ③ whose headword the human has settled (DECISIONS, Phase 2 代数 2 の単元の
@@ -230,6 +234,7 @@ function leanBy(l: LeanHead): string {
 }
 
 function describeSettled(s: Settled): string {
+  if (s.kind === "attested") return `話者のコーパスで首位の要の部分 ${s.head}（${s.hits} 件。${PHRASE_ATTESTED} 件以上）`;
   if (s.kind === "no-fixed-expression") return `英語に決まった言い方がない（話 ${s.spoken} 件 ／ 書 ${s.written} 件）`;
   if (s.kind === "reference") {
     if (s.by === "ced") return `CED の呼び方 ${s.head}（${s.where.map((w) => (/^\d/.test(w) ? `topic ${w}` : w)).join("・")}）`;
@@ -296,9 +301,17 @@ function main() {
     // the MICASE instructors, or the written corpus. email / discord are not judged ①②③.
     const group = c.collection === "phrases" ? phraseGroup(entry.data.id, record.situation as string) : null;
     const w = group ? sourceWeights(file.phraseSources?.[group] ?? {}) : (weightsOf[c.collection] ?? weights);
-    const spoken = group === "written" || group === "email" ? null : decideRobust(c.spoken, w, "spoken");
+    // Rule 1 (lib.ts phraseBelowFloor, DECISIONS Phase 3 フレーズ 2 の前の修正 1): a phrase none of whose
+    // key parts reaches 10 is not judged ①②③ - its leader is attested (3 or more) or it is a ③.
+    const below =
+      group !== null && group !== "email" ? phraseBelowFloor(group === "written" ? c.written : c.spoken, w) : null;
+    const judge = (counts: typeof c.spoken, register: Register): Verdict =>
+      below
+        ? { kind: "undecided", reason: "below-floor", total: Object.values(flatten(counts)).reduce((a, b) => a + b, 0) }
+        : decideRobust(counts, w, register);
+    const spoken = group === "written" || group === "email" ? null : judge(c.spoken, "spoken");
     const written =
-      c.collection === "symbols" || (group !== null && group !== "written") ? null : decideRobust(c.written, w, "written");
+      c.collection === "symbols" || (group !== null && group !== "written") ? null : judge(c.written, "written");
     const seen =
       group === "email"
         ? Object.entries(flatten(c.spoken))
@@ -329,13 +342,17 @@ function main() {
           )
         : c.collection === "symbols"
           ? settleSymbolReading(entry.data.id, c.reference ?? emptyReference(), candidatesOf(c.collection, record))
-          : group === "written"
-            ? settlePhraseReference(c.reference ?? emptyReference(), candidatesOf(c.collection, record))
-            : { kind: "undecided" };
-    // The human's call comes before the rules.
-    const settled: Settled | null = bothUndecided && human ? { kind: "undecided" } : ruleSettled;
+          : below && below.wording && below.hits >= PHRASE_ATTESTED
+            ? { kind: "attested", head: below.wording, hits: below.hits }
+            : group === "written"
+              ? settlePhraseReference(c.reference ?? emptyReference(), candidatesOf(c.collection, record))
+              : { kind: "undecided" };
+    // The human's call comes before the rules - but not before rule 1 for phrases (an attested
+    // key part), which the human asked to come first (Phase 3 フレーズ 2 の前の修正 4).
+    const attested = ruleSettled?.kind === "attested";
+    const settled: Settled | null = bothUndecided && human && !attested ? { kind: "undecided" } : ruleSettled;
     const todo: string[] = [];
-    if (bothUndecided && human) {
+    if (bothUndecided && human && !attested) {
       // symbols have no en (their readings carry the register)
       const en = (record.en ?? {}) as { register?: string };
       if (en.register) todo.push(`en.register（${en.register}）を外す（register は主張しない）`);
@@ -355,8 +372,8 @@ function main() {
       ) {
         todo.push(`notes に「${NOT_IN_HIGH_SCHOOL}」と件数を書く`);
       }
-    } else if (settled && settled.kind === "reference" && c.collection === "phrases") {
-      // The key part the references use is the headline sentence's (en).
+    } else if (settled && (settled.kind === "reference" || settled.kind === "attested") && c.collection === "phrases") {
+      // The key part the references use (or the attested leader) is the headline sentence's (en).
       if (!sameWording(countedAs(c.collection, entry.data.id, record.en as string), settled.head)) {
         todo.push(`en を要の部分が ${settled.head} の文にする（今は ${record.en as string}）`);
       }
@@ -454,9 +471,9 @@ function main() {
       mismatch,
       settled,
       todo,
-      human: bothUndecided && human !== null,
-      humanStale: !bothUndecided && human !== null,
-      ruleSettled: bothUndecided && human ? ruleSettled : null,
+      human: bothUndecided && human !== null && !attested,
+      humanStale: (!bothUndecided || attested) && human !== null,
+      ruleSettled: bothUndecided && human && !attested ? ruleSettled : null,
       humanNote: human?.note ?? null,
       lean,
       group,
@@ -488,6 +505,12 @@ function main() {
         note: `コーパスで決まらない（${group ? `${PHRASE_GROUP_LABEL[group]}で数えた。` : ""}話: ${describe(spoken)} ／ 書: ${describe(written)}）。${c.collection === "symbols" ? "読み" : c.collection === "phrases" ? "要の部分" : "見出し"}は ${describeSettled(settled)}。register は主張しない。`,
         raised: TODAY,
       } as { code: string });
+    } else if (settled?.kind === "attested") {
+      flags.push({
+        code: ATTESTED_ONLY,
+        note: `どの要の部分も 10 件に届かない（${PHRASE_GROUP_LABEL[group!]}で数えた）ので ①②③ で判定しない。${describeSettled(settled)}。register は主張しない。`,
+        raised: TODAY,
+      } as { code: string });
     } else if (settled?.kind === "undecided" && human) {
       // already in flags
     } else if (settled?.kind === "undecided") {
@@ -502,7 +525,9 @@ function main() {
               ? `コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも読みを 3 件以上使わない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`
               : group === "written"
                 ? `コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも要の部分を 3 件以上使わない（${PHRASE_GROUP_LABEL[group]}で数えた。書: ${describe(written)}）。人間レビューへ。`
-                : `コーパスで決まらない（${group ? `${PHRASE_GROUP_LABEL[group]}で数えた。` : ""}話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`,
+                : group && below
+                  ? `どの要の部分も 10 件に届かず、首位の要の部分も ${PHRASE_ATTESTED} 件未満（${PHRASE_GROUP_LABEL[group]}で数えた。${below.wording ? `${below.wording} ${below.hits} 件` : "0 件"}）。人間レビューへ。`
+                  : `コーパスで決まらない（${group ? `${PHRASE_GROUP_LABEL[group]}で数えた。` : ""}話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`,
         raised: TODAY,
       } as { code: string });
     }
@@ -544,6 +569,7 @@ function main() {
   const humanStale = lines.filter((l) => l.humanStale);
   const noFixed = lines.filter((l) => l.settled?.kind === "no-fixed-expression");
   const byReference = lines.filter((l) => l.settled?.kind === "reference");
+  const attestedLines = lines.filter((l) => l.settled?.kind === "attested");
   const todos = lines.filter((l) => l.todo.length);
   const mismatched = lines.filter((l) => l.mismatch);
   const merges = lines.filter((l) => l.merges.length);
@@ -566,7 +592,7 @@ function main() {
   const md = [
     `# コーパス集計 ${TODAY}`,
     "",
-    `対象 ${lines.length} 件。主見出し決着 ${single.length} ／ 併記 ${both.length} ／ 英語に決まった言い方なし ${noFixed.length} ／ 参照で見出しを決めた ${byReference.length} ／ 人間が決めた ${human.length} ／ 判断不能 ${undecided.length} ／ register 不一致 ${mismatched.length}。`,
+    `対象 ${lines.length} 件。主見出し決着 ${single.length} ／ 併記 ${both.length} ／ 英語に決まった言い方なし ${noFixed.length} ／ 参照で見出しを決めた ${byReference.length} ／ フレーズの要の部分が ${PHRASE_ATTESTED} 件以上 ${attestedLines.length} ／ 人間が決めた ${human.length} ／ 判断不能 ${undecided.length} ／ register 不一致 ${mismatched.length}。`,
     "",
     scope.size
       ? `data/ に書き戻したのは ${writtenBack.length} 件（${[...UNITS, ...IDS].join("、")}）。ほかは判定を表示しただけで、evidence と flags は前回のまま。`
@@ -630,6 +656,16 @@ function main() {
     "",
     seenLines.length ? "| 項目 | 最も多い要の部分 | 件数 | 結果 |\n|---|---|---|---|" : "なし。",
     ...seenLines.map((l) => cells(l.key, l.seen!.wording, String(l.seen!.hits), l.seen!.hits >= STUDENT_SEEN ? "likely" : "draft")),
+    "",
+    `## フレーズで、どの要の部分も 10 件に届かず、首位が話者のコーパスに ${PHRASE_ATTESTED} 件以上のもの（flag corpus-attested-only）`,
+    "",
+    "①②③ で競わせない（DECISIONS、Phase 3 フレーズ 2 の前の修正 1）。likely。記録の flag で、verified を止めない。",
+    "",
+    attestedLines.length ? "| 項目 | 首位の要の部分 | 件数 | 数えたコーパス |\n|---|---|---|---|" : "なし。",
+    ...attestedLines.map((l) => {
+      const s = l.settled as Extract<Settled, { kind: "attested" }>;
+      return cells(l.key, s.head, String(s.hits), l.group ? PHRASE_GROUP_LABEL[l.group] : "");
+    }),
     "",
     "## ③ のうち規則で決着したもの",
     "",
@@ -697,7 +733,7 @@ function main() {
       .join(", ")}`,
   );
   console.log(
-    `single ${single.length}, both ${both.length}, no-fixed ${noFixed.length}, reference ${byReference.length}, human-settled ${human.length}, undecided ${undecided.length}, mismatch ${mismatched.length}, merges ${merges.length}, one-source ${oneSource.length}, spoken-lean ${leaning.length}, entry todo ${todos.length}`,
+    `single ${single.length}, both ${both.length}, no-fixed ${noFixed.length}, reference ${byReference.length}, attested ${attestedLines.length}, human-settled ${human.length}, undecided ${undecided.length}, mismatch ${mismatched.length}, merges ${merges.length}, one-source ${oneSource.length}, spoken-lean ${leaning.length}, entry todo ${todos.length}`,
   );
   if (WRITE) console.log(`wrote ${writtenBack.length} entr${writtenBack.length === 1 ? "y" : "ies"} back to data/`);
   console.log(`report -> audits/corpus-${TODAY}.md`);
