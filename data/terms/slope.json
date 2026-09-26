@@ -28,7 +28,7 @@
     ]
   },
   "definition_ja": "直線の傾きぐあいを表す数。直線上の 2 点について、y の増加量を x の増加量でわった値。",
-  "definition_en": "A number that tells how steep a line is. It is the change in y divided by the change in x between any two points on the line, or \"rise over run.\"",
+  "definition_en": "A number that measures how steep a line is: take any two points on the line and divide the vertical change by the horizontal change, often said as \"rise over run.\"",
   "latex": "m = \\frac{y_2 - y_1}{x_2 - x_1}",
   "spoken_en": "m equals y two minus y one over x two minus x one",
   "examples": [
@@ -45,7 +45,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "傾きは m で表す（y = mx + b）。日本の教科書の y = ax + b の a に当たる。",
+    "傾きは m で表す（y = mx + b）。中学校学習指導要領解説の y = ax + b の a に当たる。",
     "rise over run は「上がった分（rise）÷ 横に進んだ分（run）」。下がるときは rise が負になり、傾きも負になる。",
     "一次関数では、傾きと変化の割合（エントリ rate-of-change）は同じ値。"
   ],
@@ -68,6 +68,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 2 学年 関数: 一次関数 y = ax + b"
     }
   ],
   "confidence": "likely",
@@ -76,7 +82,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "slope": 3084

@@ -46,7 +46,7 @@
   "pitfalls": [
     "グラフは x 軸に平行な直線で、英語では horizontal line（水平な線）と言う。傾きは 0。",
     "x = 3 のような y 軸に平行な直線（縦の直線）は、x の関数ではない。傾きも定義されない（undefined）。",
-    "日本の中学の一次関数は y = ax + b で a ≠ 0 とするので、定数関数は一次関数に含めない（エントリ linear-function）。"
+    "日本語版 Wikipedia「一次関数」は、一次関数を y = ax + b（a ≠ 0）とするときは定数関数を含めず、a = 0 も含める流儀もあると書く（エントリ linear-function）。"
   ],
   "related": [
     "linear-function",
@@ -64,6 +64,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「一次関数」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%80%E6%AC%A1%E9%96%A2%E6%95%B0",
+      "note": "a ≠ 0 とする場合と、a = 0 を含める場合"
     }
   ],
   "confidence": "likely",
@@ -72,7 +78,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "constant function": 23

@@ -42,8 +42,8 @@
       "register": "written"
     },
     {
-      "en": "In discrete probability, the probability of an event is the sum of the probabilities of the outcomes in it.",
-      "ja": "離散的な確率では、事象の確率はそれに含まれる根元事象の確率の和である。",
+      "en": "When the sample space is finite, you get P(A) by adding up the probabilities of the individual outcomes in A.",
+      "ja": "標本空間が有限のとき、P(A) は A に含まれる 1 つ 1 つの結果（根元事象）の確率を足して求める。",
       "register": "written"
     }
   ],
@@ -60,7 +60,7 @@
   "pitfalls": [
     "odds（オッズ）は確率ではなく、起こる場合と起こらない場合の数の比。odds of 1 to 5 は確率 1/6 に当たる。",
     "教科書の「同様に確からしい」は equally likely（outcomes are equally likely）。",
-    "日本の高校では全事象を U で表すが、上の式では標本空間を S とした（sample-space を参照）。"
+    "高等学校学習指導要領解説（数学A）は全事象を U で表す（P(U) = 1）が、上の式では標本空間を S とした（sample-space を参照）。"
   ],
   "related": [
     "sample-space",
@@ -82,6 +82,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A 場合の数と確率: 全事象 U の確率 P(U) = 1"
     }
   ],
   "confidence": "likely",
@@ -90,7 +96,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "probability": 2363,

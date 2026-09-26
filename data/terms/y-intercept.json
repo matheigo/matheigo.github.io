@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の中学では「切片」と言えば y 切片、つまり直線が y 軸と交わる点の y 座標（y = ax + b の b）を指す。英語では必ず y を付けて y-intercept と言い、x 軸と交わる点は x-intercept（エントリ x-intercept）と言い分ける。",
+  "mapping_note": "日本語版 Wikipedia「一次関数」は y = ax + b の b（直線と y 軸との交点の座標）を y 切片、あるいは単に切片と呼び、センター試験の問題文（平成 31 年度 数学Ⅰ）も直線について「切片が −15」と書く。OpenStax Algebra and Trigonometry は y を付けて y-intercept と言い、x 軸と交わる点は x-intercept（エントリ x-intercept）と言い分ける（回帰直線では OpenStax Introductory Statistics が単に the intercept とも言う）。",
   "domains": [
     "functions"
   ],
@@ -34,8 +34,8 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "The y-intercept is where the line crosses the y-axis, so just plug in 0 for x.",
-      "ja": "切片は直線が y 軸と交わるところ。だから x に 0 を代入すればいい。",
+      "en": "To get the y-intercept, set x equal to 0; that's the point where the graph hits the y-axis.",
+      "ja": "切片を求めるには x に 0 を代入する。そこがグラフと y 軸との交点。",
       "register": "spoken"
     },
     {
@@ -65,6 +65,23 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「一次関数」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%80%E6%AC%A1%E9%96%A2%E6%95%B0",
+      "note": "b を y 切片、あるいは単に切片と呼ぶ"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成31年度 大学入試センター試験 本試験 数学Ⅰ（問題）",
+      "url": "https://web.archive.org/web/20200601/https://www.dnc.ac.jp/albums/abm.php?f=abm00036452.pdf&n=k+18+suugaku1.pdf",
+      "note": "直線の「切片が −15」"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "回帰直線の the intercept"
     }
   ],
   "confidence": "likely",
@@ -73,7 +90,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "y-intercept": 288

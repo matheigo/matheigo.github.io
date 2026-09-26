@@ -7,9 +7,9 @@
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15648
-- 英語のソース: 3884 ファイル ／ 日本語のソース: 371 ファイル
-- 一致した箇所: **524**（434 項目）
+- 調べた本文の欄: 15644
+- 英語のソース: 3884 ファイル ／ 日本語のソース: 403 ファイル
+- 一致した箇所: **513**（429 項目）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
 |---|---|---|---|---|---|---|---|
@@ -123,7 +123,6 @@
 | terms | column-space | examples[0].en | en | 8 | exactly when b is in the column space | 1 | mit-18.06 |
 | terms | column-space | examples[1].en | en | 8 | b lies in the column space of a | 1 | ref:nicholson-lawa-2021a |
 | terms | complementary-angle | examples[0].en | en | 10 | the two acute angles in a right triangle are complementary | 3 | openstax-algtrig, openstax-precalculus, ref:im-9-12 |
-| terms | complementary-event | definition_en | en | 9 | outcomes in the sample space that are not in | 2 | openstax-algtrig, openstax-precalculus |
 | terms | complementary-event | examples[0].en | en | 8 | the probability of the complement of the event | 1 | ref:levin-dmoi4 |
 | terms | complex-conjugate | examples[0].en | en | 12 | multiply the top and bottom by the complex conjugate of the denominator | 1 | mit-18.03 |
 | terms | complex-conjugate | examples[1].en | en | 8 | is a real number if and only if | 1 | openstax-calculus |
@@ -219,7 +218,6 @@
 | terms | extreme-value-theorem | definition_en | en | 8 | both an absolute maximum and an absolute minimum | 1 | openstax-calculus |
 | terms | factorial | examples[0].en | en | 9 | 5 times 4 times 3 times 2 times 1 | 1 | yt:nancypi |
 | terms | fail-to-reject | examples[1].en | en | 10 | there is not sufficient evidence to conclude that the mean | 1 | openstax-introstats |
-| terms | find-the-equation | examples[1].en | en | 11 | find the equation of the circle with center 2 1 that | 2 | openstax-intalg, ref:ck12-geometry |
 | terms | find-the-equation-of-the-tangent-line | examples[1].en | en | 9 | find an equation of the tangent line to y | 2 | openstax-calculus, openstax-precalculus |
 | terms | find-the-equation-of-the-tangent-line | examples[0].en | en | 8 | to find the equation of the tangent line | 4 | khan-ap-calc, yt:patrickjmt, yt:organicchem, yt:nancypi |
 | terms | find-the-equation-of-the-tangent-line | pitfalls[0] | en | 8 | equation of the tangent line the equation of | 1 | khan-ap-calc |
@@ -255,7 +253,6 @@
 | terms | inequality | examples[1].en | en | 8 | and graph the solution on a number line | 1 | ref:im-6-8 |
 | terms | inequality-sign | pitfalls[2] | en | 9 | less than b a b a is greater than | 3 | openstax-prealgebra, openstax-elemalg, openstax-intalg |
 | terms | infinite-geometric-series | examples[1].en | en | 8 | find the sum of the infinite geometric series | 3 | openstax-algtrig, openstax-precalculus, openstax-intalg |
-| terms | infinitely-many-solutions | definition_en | en | 8 | that is always true such as 0 0 | 2 | openstax-algtrig, openstax-precalculus |
 | terms | initial-condition | definition_en | en | 8 | the value of the function at one point | 1 | khan-ap-calc |
 | terms | initial-point | examples[0].en | en | 9 | put the tail of the second vector at the | 1 | khan-ap-calc |
 | terms | inner-function | examples[0].en | en | 9 | to multiply by the derivative of the inside function | 5 | yt:patrickjmt, mit-18.01, yt:nancypi, mit-18.02, yt:profleonard |
@@ -275,7 +272,6 @@
 | terms | intersection | definition_en | en | 8 | the set of all elements that belong to | 2 | openstax-algtrig, openstax-precalculus |
 | terms | inverse | pitfalls[1] | en | 10 | ck 12 geometry 2 12 converse inverse and contrapositive statements | 1 | ref:ck12-geometry |
 | terms | isosceles-triangle | examples[2].en | en | 9 | that the base angles of an isosceles triangle are | 2 | ref:im-9-12, ref:ck12-geometry |
-| terms | isosceles-triangle | definition_en | en | 8 | a triangle with two sides of equal length | 1 | openstax-prealgebra |
 | terms | isosceles-triangle-theorem | definition_en | en | 8 | base angles of an isosceles triangle are congruent | 2 | ref:im-9-12, ref:ck12-geometry |
 | terms | joint-variation | definition_en | en | 9 | a relationship in which one quantity is a constant | 2 | openstax-algtrig, openstax-precalculus |
 | terms | lateral-area | examples[1].en | en | 9 | a radius of 3 cm and a height of | 1 | ref:im-6-8 |
@@ -303,7 +299,6 @@
 | terms | limit-of-sine-x-over-x | definition_en | en | 9 | the limit of sin x x as x approaches | 1 | yt:nancypi |
 | terms | limit-of-sine-x-over-x | mapping_note | en | 8 | the limit as x approaches 0 of sine | 2 | khan-ap-calc, yt:profleonard |
 | terms | linear-diophantine-equation | definition_en | en | 8 | an equation of the form ax by c | 1 | ref:nicholson-lawa-2021a |
-| terms | linear-function | definition_en | en | 14 | y mx b where m is the slope and b is the y intercept | 5 | khan-ap-calc, khan-middle, ref:ck12-geometry, khan-algebra, yt:organicchem |
 | terms | linear-inequality | pitfalls[0] | en | 10 | less than or equal to greater than or equal to | 1 | khan-middle |
 | terms | linear-pair | examples[0].en | en | 8 | so they have to add up to 180 | 1 | yt:organicchem |
 | terms | linearity-of-expectation | definition_en | en | 10 | that the expected value of a sum of random variables | 2 | mit-notes, mit-6.042 |
@@ -336,7 +331,6 @@
 | terms | nth-term | examples[1].en | en | 8 | formula for the nth term of the sequence | 1 | ref:levin-dmoi4 |
 | terms | number-line | pitfalls[1] | en | 8 | the distance from 0 on the number line | 2 | openstax-algtrig, openstax-precalculus |
 | terms | number-of-elements | examples[1].en | en | 8 | find the number of elements in a b | 1 | ref:levin-dmoi4 |
-| terms | number-of-possible-outcomes | definition_en | en | 9 | the probability of an event is the number of | 1 | openstax-prealgebra |
 | terms | number-of-possible-outcomes | examples[1].en | en | 9 | find the probability that the sum of the numbers | 3 | openstax-introstats, openstax-algtrig, openstax-precalculus |
 | terms | number-of-real-solutions | examples[2].en | en | 8 | have two real solutions one real solution or | 1 | yt:patrickjmt |
 | terms | one-sample-t-test | definition_en | en | 9 | population mean when the population standard deviation is unknown | 2 | openstax-introstats, ref:ap-statistics-ced |
@@ -359,6 +353,7 @@
 | terms | perpendicular-lines | examples[0].en | en | 8 | perpendicular lines have slopes that are negative reciprocals | 3 | openstax-elemalg, openstax-intalg, openstax-algtrig |
 | terms | piecewise-function | definition_en | en | 10 | defined by different formulas on different parts of its domain | 1 | openstax-calculus |
 | terms | planar-graph | definition_en | en | 9 | a graph that can be drawn in the plane | 1 | mit-notes |
+| terms | point-of-internal-division | mapping_note | en | 12 | ck 12 geometry 1 6 points that partition line segments section formula | 1 | ref:ck12-geometry |
 | terms | point-of-intersection | examples[0].en | en | 8 | set the two equations equal to each other | 1 | micase |
 | terms | point-slope-form | definition_en | en | 8 | the equation of the line with slope m | 1 | openstax-algtrig |
 | terms | poisson-distribution | definition_en | en | 8 | in a fixed interval of time or space | 1 | openstax-introstats |
@@ -373,7 +368,6 @@
 | terms | power-series | examples[1].en | en | 10 | find a power series representation for f x 1 1 | 1 | openstax-calculus |
 | terms | preimage | examples[1].en | en | 8 | the y axis find the coordinates of the | 1 | ref:ck12-geometry |
 | terms | prism | examples[1].en | en | 8 | the height of the prism is 10 cm | 1 | ref:im-6-8 |
-| terms | probability | examples[2].en | en | 16 | probability the probability of an event is the sum of the probabilities of the outcomes in | 3 | mit-notes, openstax-prealgebra, mit-6.042 |
 | terms | probability-density-function | examples[1].en | en | 9 | the probability density function of x is f x | 1 | openstax-introstats |
 | terms | probability-density-function | definition_en | en | 8 | the integral of f from a to b | 1 | openstax-calculus |
 | terms | product | definition_en | en | 8 | the result of multiplying two or more numbers | 1 | openstax-prealgebra |
@@ -425,7 +419,6 @@
 | terms | same-side-interior-angles | mapping_note | en | 9 | ck 12 geometry 3 7 same side interior angles | 1 | ref:ck12-geometry |
 | terms | same-side-interior-angles | examples[0].en | en | 8 | same side interior angles add up to 180 | 1 | ref:ck12-geometry |
 | terms | sample-mean | examples[1].en | en | 9 | construct a 95 confidence interval for the population mean | 2 | openstax-introstats, yt:profleonard |
-| terms | sample-space | definition_en | en | 9 | the set of all possible outcomes of an experiment | 3 | openstax-algtrig, openstax-precalculus, openstax-introstats |
 | terms | scalar-triple-product | examples[1].en | en | 16 | the triple scalar product to find the volume of the parallelepiped determined by u v and | 2 | openstax-calculus, ref:nicholson-lawa-2021a |
 | terms | scale-factor | definition_en | en | 10 | a scaled copy a scale factor greater than 1 enlarges | 1 | ref:im-9-12 |
 | terms | scientific-notation | definition_en | en | 9 | way to write very large or very small numbers | 1 | ref:im-6-8 |
@@ -447,7 +440,6 @@
 | terms | sine | definition_en | en | 8 | on the unit circle the y coordinate of | 1 | ref:im-9-12 |
 | terms | skew-lines | mapping_note | en | 9 | ck 12 geometry 3 2 parallel and skew lines | 1 | ref:ck12-geometry |
 | terms | slant-asymptote | definition_en | en | 15 | the degree of the numerator is exactly one more than the degree of the denominator | 2 | yt:patrickjmt, openstax-calculus |
-| terms | slope | definition_en | en | 15 | the change in y divided by the change in x between any two points on | 4 | openstax-algtrig, openstax-precalculus, khan-ap-calc, yt:organicchem |
 | terms | slope | examples[1].en | en | 8 | find the slope of the line passing through | 1 | openstax-calculus |
 | terms | slope-formula | examples[1].en | en | 13 | use the slope formula to find the slope of the line passing through | 5 | openstax-elemalg, openstax-prealgebra, openstax-intalg, openstax-algtrig, openstax-calculus |
 | terms | slope-intercept-form-of-a-line | definition_en | en | 11 | where m is the slope and b is the y intercept | 5 | khan-ap-calc, khan-middle, khan-algebra, ref:ck12-geometry, yt:organicchem |
@@ -526,14 +518,11 @@
 | terms | vector-valued-function | examples[1].en | en | 8 | of the vector valued function r t t | 1 | openstax-calculus |
 | terms | velocity | definition_en | en | 10 | the rate of change of position with respect to time | 1 | khan-ap-calc |
 | terms | velocity-vector | examples[0].en | en | 8 | the velocity vector is tangent to the path | 2 | mit-18.02, openstax-calculus |
-| terms | vertex-angle | examples[1].ja | ja | 20 | ∠Aの二等分線と辺BCとの交点をDとする | 1 | jp:exams/h30-hon-03 |
-| terms | vertex-angle | definition_en | en | 13 | bisector of the vertex angle is also the perpendicular bisector of the base | 1 | ref:ck12-geometry |
 | terms | vertical-line-test | examples[1].en | en | 8 | use the vertical line test to determine whether | 2 | openstax-calculus, khan-middle |
 | terms | volume-by-cross-sections | examples[0].en | en | 9 | cross sections perpendicular to the x axis are squares | 1 | khan-ap-calc |
 | terms | volume-by-cross-sections | pitfalls[0] | en | 9 | cross sections perpendicular to the x axis are squares | 1 | khan-ap-calc |
 | terms | washer-method | definition_en | en | 10 | finding the volume of a solid of revolution with a | 2 | openstax-calculus, mit-18.01 |
 | terms | write-out-the-first-few-terms | examples[1].en | en | 9 | write out the first few terms of the sequence | 2 | ref:levin-dmoi4, openstax-intalg |
 | terms | x-intercept | examples[0].en | en | 9 | set y equal to zero and solve for x | 1 | openstax-algtrig |
-| terms | y-intercept | examples[0].en | en | 12 | the y intercept is where the line crosses the y axis so | 1 | openstax-elemalg |
 | terms | y-intercept | examples[1].en | en | 8 | the slope and the y intercept of the | 1 | ref:im-9-12 |
 | terms | zero-product-property | definition_en | en | 9 | if the product of two numbers is 0 then | 1 | ref:im-9-12 |

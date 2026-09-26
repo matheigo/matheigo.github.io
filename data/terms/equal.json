@@ -45,7 +45,7 @@
   "collocations": [],
   "pitfalls": [
     "A = B は A equals B か A is equal to B と読む。形容詞で言うときは to が要る（A is equal B とは言わない）。",
-    "米国の Geometry は、線分や角そのものが重なることを congruent（≅）、その長さや大きさが同じことを equal（=）と分けて書く（AB ≅ CD のとき AB = CD）。日本の教科書は線分や角にも = を使う（エントリ congruent、equal-angles）。",
+    "CK-12 Geometry は、線分そのものが重なることを congruent（≅）、その長さが同じことを equal（=）と分けて書く（AB ≅ CD のとき AB = CD）。共通テスト・センター試験の問題文は、線分の長さや角にも = を使う（AB = AC、∠ABC = B）（エントリ congruent、equal-angles）。",
     "記号 = そのものは equal sign（エントリ equal-sign）。「等号が成り立つ」は equality holds（エントリ equality-holds）。"
   ],
   "related": [
@@ -59,6 +59,24 @@
     {
       "type": "textbook",
       "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.4 Midpoints and Segment Bisector（congruent segments と長さ AB = BC を分けて書く）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成27年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20160601/https://www.dnc.ac.jp/albums/abm.php?f=abm00004808.pdf&n=2701-0402+suugaku1A.pdf",
+      "note": "AB = AC = 5 と長さに = を使う"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和3年度 大学入学共通テスト 第1日程 数学Ⅰ（問題）",
+      "url": "https://web.archive.org/web/20220601/https://www.dnc.ac.jp/albums/abm.php?d=88&f=abm00001271.pdf&n=R3_%E6%95%B0%E5%AD%A6%E2%85%A0%EF%BC%88%EF%BC%91%E6%9C%8816%E6%97%A5%E3%83%BB17%E6%97%A5%EF%BC%89%E3%81%AE%E5%95%8F%E9%A1%8C.pdf",
+      "note": "∠ABC = B と角に = を使う"
     }
   ],
   "confidence": "likely",
@@ -67,7 +85,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "equal to | are equal | is equal | equal in | be equal": 16166

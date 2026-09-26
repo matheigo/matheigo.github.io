@@ -28,7 +28,7 @@
     ]
   },
   "definition_ja": "y が x の一次式 y = ax + b（a ≠ 0）で表される関数。グラフは直線になる。",
-  "definition_en": "A function that can be written as y = mx + b, where m is the slope and b is the y-intercept. Its graph is a straight line.",
+  "definition_en": "A function whose rule is y = mx + b. Its graph is a straight line; m gives the slope, and b is the value of y when x = 0.",
   "latex": "y = ax + b",
   "spoken_en": "y equals a x plus b",
   "examples": [
@@ -45,8 +45,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語では y = mx + b と書く。m が傾き（slope）、b が y 切片（y-intercept）で、日本の y = ax + b の a が m に当たる。",
-    "日本の中学の一次関数は a ≠ 0 とする。a = 0 の y = b は定数関数（エントリ constant-function）。",
+    "英語では y = mx + b と書く。m が傾き（slope）、b が y 切片（y-intercept）で、中学校学習指導要領解説の y = ax + b の a が m に当たる。",
+    "日本語版 Wikipedia「一次関数」は、実際に一次であることを求めるときは a ≠ 0 とし、a = 0（定数関数、エントリ constant-function）も含めて呼ぶ流儀もあると書く。",
     "「一次」は英語で linear（エントリ linear）。"
   ],
   "related": [
@@ -68,6 +68,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 2 学年 関数: 一次関数 y = ax + b"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「一次関数」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%80%E6%AC%A1%E9%96%A2%E6%95%B0",
+      "note": "a ≠ 0 とする場合と、a = 0 を含める場合"
     }
   ],
   "confidence": "likely",
@@ -76,7 +88,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "linear function": 48

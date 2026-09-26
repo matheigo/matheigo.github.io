@@ -31,7 +31,7 @@
     ]
   },
   "definition_ja": "連立方程式の 2 つの式が同じ直線を表し、それを満たす x, y の値の組が限りなくあること。解いていくと 0 = 0 のような、いつでも成り立つ式になる。",
-  "definition_en": "A system has infinitely many solutions when both equations describe the same line, so every point on that line is a solution. Solving leads to a statement that is always true, such as 0 = 0.",
+  "definition_en": "A system has infinitely many solutions when both equations describe the same line, so every point on that line is a solution. Solving it ends in a statement that holds for every x and y, like 0 = 0.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -53,7 +53,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "教科書（OpenStax）は、解が無数にある連立方程式そのものを dependent system と呼ぶ。「解が無数にある」という答えは infinitely many solutions と書く。",
+    "OpenStax Algebra and Trigonometry（dependent system 18 件）は、解が無数にある連立方程式そのものを dependent system と呼ぶ。「解が無数にある」という答えは infinitely many solutions と書く。",
     "解なし（エントリ no-solution）と区別する。式を整理して x も y も消えたとき、残る式が 0 = 0 なら解が無数にあり、0 = 5 なら解なし。",
     "解が無数にあっても、どんな x, y でもよいわけではない。2 つの式が表す同じ直線の上の点の座標だけが解になる。"
   ],
@@ -68,6 +68,11 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "dependent system（18 件）"
     }
   ],
   "confidence": "likely",
@@ -76,7 +81,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "infinitely many solutions": 23,

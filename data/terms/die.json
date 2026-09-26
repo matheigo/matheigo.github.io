@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本語の「さいころ」は 1 個でも 2 個でも同じ形だが、英語の die は 1 個のさいころで、複数形は dice（2 個なら two dice）。日常の英語では dice を 1 個にも使う。米国の問題文（IM ほか）では、1〜6 の目がある立方体のさいころを number cube とも言う。",
+  "mapping_note": "日本語の「さいころ」は 1 個でも 2 個でも同じ形だが、英語の die は 1 個のさいころで、複数形は dice（2 個なら two dice）。英語版 Wikipedia「Dice」は、dice を 1 個にも使うことがあると書く。IM（Grade 6〜8 で 28 件・9〜12 で 47 件）と OpenStax Algebra and Trigonometry・Precalculus（各 10 件）は、1〜6 の目がある立方体のさいころを number cube とも言う。",
   "domains": [
     "probability"
   ],
@@ -60,6 +60,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dice",
+      "note": "冒頭: A die (plural: dice, sometimes also used as singular)"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "number cube（Grade 6〜8 で 28 件）"
     }
   ],
   "confidence": "likely",
@@ -68,7 +80,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "a die | the die | two dice | a fair die | roll dice | the dice": 77,

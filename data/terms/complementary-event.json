@@ -31,7 +31,7 @@
     ]
   },
   "definition_ja": "事象 A に対して、「A が起こらない」という事象のこと。標本空間の根元事象のうち、A に含まれないもの全体からなる。",
-  "definition_en": "The event that A does not happen, made up of all outcomes in the sample space that are not in A. Its probability is 1 − P(A).",
+  "definition_en": "The event that A does not happen: it contains exactly the outcomes of the sample space that A leaves out, and its probability is 1 − P(A).",
   "latex": "P(A^c) = 1 - P(A)",
   "spoken_en": "the probability of A complement equals one minus the probability of A",
   "examples": [
@@ -48,7 +48,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "記号が違う。日本の教科書は Ā と書くが、英語の教科書では A^c や A′ などを使う（教科書による）。",
+    "記号が違う。センター試験の問題文（平成 30 年度 数学Ⅰ・数学Ａ）は余事象を Ā と書き、学習指導要領解説も P(Ā) = 1 − P(A) と書く。OpenStax Introductory Statistics は A′、Algebra and Trigonometry は E′ と書く（教科書による）。",
     "互いに排反（mutually exclusive）な 2 つの事象でも、合わせて標本空間全体にならなければ余事象どうしではない。",
     "用例コーパスでは、書き言葉では complement of an event の形（OpenStax Introductory Statistics・Algebra and Trigonometry）のほうが多く、complementary event は話・書ともほとんど出てこない。"
   ],
@@ -66,6 +66,23 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20190601/https://www.dnc.ac.jp/albums/abm.php?f=abm00033141.pdf&n=h30+suugaku1+02suugaku1A.pdf",
+      "note": "事象 A の余事象を Ā と表す"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A 場合の数と確率: 余事象の確率 P(Ā) = 1 − P(A)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "The complement of an event E, denoted E′"
     }
   ],
   "confidence": "likely",
@@ -74,7 +91,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "complement of an event | complement of the event | complement of event": 1,
