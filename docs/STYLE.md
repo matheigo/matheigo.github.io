@@ -34,7 +34,7 @@ PLAN.md §6 をそのまま作業用に移したもの。**生成時に毎バッ
    その参照が話し言葉の首位と同じ言い方か、どの参照も候補を使わなければ、話し言葉の首位のまま（rectangular prism。書き言葉の rectangular box は
    OpenStax Calculus だけ）。書き言葉の言い方は register written の variant にする。Precalculus・Algebra・Linear Algebra ほかの level には参照を当てない。
    `corpus:decide` の「エントリ側で直すこと」に出る（lib.ts `spokenLeanHead`）。
-2. 米国優先。英国異形は `en.uk` に入れる（math/maths、negative three / minus three、parentheses / brackets、trig / trigonometry）。
+2. 米国優先。英国異形は、英語版 Wikipedia の記事が英国の用法として書いているものだけ `en.uk` に入れ、記事を出典に入れる（parentheses / brackets は「Bracket」、trapezoid / trapezium は「Trapezoid」、綴りの centre・analyse・behaviour・travelled は「American and British English spelling differences」）。確かめられない「英国では〜」は書かない。記事が地域を書かずに挙げる別名（cosine rule、minus three）は「英語版 Wikipedia「…」は…とも呼ぶ」と書く（Phase 5 監査 3 の H-4）。
 3. 直訳禁止リスト（下）に触れる語は `mapping` を正直に付ける。
 4. 対応が 1 対 1 でないものを隠さない。`mapping_note` に「米国ではどう扱うか」を書く。**ここが一番価値がある。**
 5. 定義は自作、2 文以内。他資料の文章をコピーしない。JMdict / Weblio / 教科書の定義文は見てもよいが書き写さない。

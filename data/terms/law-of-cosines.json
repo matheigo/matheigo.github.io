@@ -8,7 +8,6 @@
   "en": {
     "term": "law of cosines",
     "alt": [],
-    "uk": "cosine rule",
     "register": "written"
   },
   "pos": "noun",
@@ -46,7 +45,7 @@
   "collocations": [],
   "pitfalls": [
     "角を求めるときは cos A = (b² + c² − a²)/(2bc) の形で使う。3 辺がわかれば角が 1 つに決まる。",
-    "用例コーパスでは話し言葉には出てこず、書き言葉はほとんどが OpenStax Algebra and Trigonometry。英国式は cosine rule。",
+    "用例コーパスでは話し言葉には出てこず、書き言葉はほとんどが OpenStax Algebra and Trigonometry。英語版 Wikipedia「Law of cosines」は cosine rule ／ cosine formula という別名も挙げる。",
     "A = 90° のとき cos A = 0 となり、三平方の定理 a² = b² + c² に一致する。"
   ],
   "related": [
@@ -68,6 +67,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Law_of_cosines",
+      "note": "記事「Law of cosines」の冒頭: cosine formula ／ cosine rule とも呼ぶ（地域は書いていない）"
     }
   ],
   "confidence": "likely",
@@ -76,7 +81,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "written": {
       "law of cosines": 52
