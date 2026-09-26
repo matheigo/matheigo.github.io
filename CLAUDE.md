@@ -53,6 +53,8 @@
 11. テスト・検証（tsc・validate・spell・test・build・crosscheck）の合否は**終了コードで判定する**。出力を grep・tail・head で絞って
     合否を読まない（「Tests 120 passed」だけを拾って「Test Files 1 failed」を見落としたバッチ 6 の再発防止）。
     `cmd > log 2>&1; echo "exit=$?"` のように終了コードを必ず表示し、0 でなければコミットしない。ログを絞るのは失敗の中身を読むときだけ。
+    コミットの前には pre-commit フック（simple-git-hooks。package.json の `simple-git-hooks`、`pnpm install` の prepare で入る）が
+    pnpm validate・pnpm exec tsc --noEmit・pnpm test を回し、どれかが失敗するとコミットできない。フックを飛ばさない（--no-verify を使わない）。
 
 ## 完了の定義（1 エントリ）
 必須項目すべて／読み仮名（ひらがな）／出典 1 件以上／validate 緑／crosscheck の flags なし（あれば理由付き）／

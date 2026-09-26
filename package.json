@@ -39,7 +39,8 @@
     "build:og": "tsx scripts/build-og.ts",
     "perf": "tsx scripts/perf/measure.ts",
     "audit:copy": "tsx scripts/audit/copy-check.ts",
-    "audit:claims": "tsx scripts/audit/claims.ts"
+    "audit:claims": "tsx scripts/audit/claims.ts",
+    "prepare": "simple-git-hooks"
   },
   "dependencies": {
     "astro": "^5.14.1",
@@ -61,9 +62,13 @@
     "puppeteer-core": "^25.12.0",
     "satori": "^0.33.5",
     "sharp": "0.34.5",
+    "simple-git-hooks": "2.14.0",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.19.0",
     "vitest": "^2.1.8"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm validate && pnpm exec tsc --noEmit && pnpm test"
   }
 }

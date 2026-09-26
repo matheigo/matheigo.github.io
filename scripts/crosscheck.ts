@@ -20,6 +20,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { ROOT, loadAll, localDate, type LoadedEntry } from "./lib/load.js";
+import { normalizeTitle } from "./lib/langlink.js";
 
 const WRITE = process.argv.includes("--write");
 const REFRESH = process.argv.includes("--refresh");
@@ -37,13 +38,7 @@ interface LangSource {
   en?: string;
 }
 
-const normalize = (s: string) =>
-  s
-    .toLowerCase()
-    .replace(/\s*\([^)]*\)\s*$/, "")
-    .replace(/[\u2010-\u2015]/g, "-")
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
+const normalize = normalizeTitle;
 
 interface Answer {
   /** en langlink of the ja article (after redirects), or null */

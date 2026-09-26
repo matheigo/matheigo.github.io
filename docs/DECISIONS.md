@@ -969,3 +969,9 @@
 - 2026-09-26 | 5 | 定義の英文が参照の本文と一致するもの（8 語以上）は語数にかかわらず言い換え（STYLE 原則 5 の H-7）、例文は 10 語以上で 1〜2 ソースのものを言い換えた。3 ソース以上にある問題文の型（find the equation of the line that passes through …、find the sum of the interior angles of a polygon）は書き写しとしなかった。言い換えはすべて意味を変えない小さな直し | STYLE 原則 5・追記欄の判定の境目
 - 2026-09-26 | 5 | base-of-a-power（底）の level.jp に中1 を足した（数II だけだったが、中1 の正負の数の単元がこの語を参照し、累乗の底は中1 の内容）。level の追加は小さな直し | 単元との食い違い
 - 2026-09-26 | 5 | tests/export.test.ts の fixture（rate・quadratic-formula・substitute・integral-definite・office-hours-stuck-at-step）は実データを読んで「likely のまま」と仮定していたが、監査で rate と substitute が verified になって 3 つのテストが落ちた。fixture は読んだ時点で confidence を likely に強制するようにした。バッチ 9 の判定のコミットとテスト修正のコミットは、テストが落ちたまま行ってしまった（絶対ルール 11 の違反。次のコミットで直した。レポート I に書く） | テストがデータの状態に依存しないようにする
+
+## Phase 5 監査（セッション 3）の前の決定 — 2026-09-26
+
+- 2026-09-26 | 5 | 1. コミットの前の確かめを仕組みにした: simple-git-hooks（devDependencies、2.14.0）の pre-commit フックが `pnpm validate && pnpm exec tsc --noEmit && pnpm test` を回し、どれかが失敗（終了コードが 0 でない）するとコミットできない。設定は package.json の `simple-git-hooks`、フックは `prepare` スクリプトが `pnpm install` のたびに .git/hooks/pre-commit に入れる（リポジトリで共有）。pnpm が出す「Ignored build scripts: simple-git-hooks」は依存の postinstall を止めたという表示で、フックは prepare が入れるので問題ない。フックは作業ツリーを見る（ステージしていない変更も含めて確かめる）。CLAUDE.md の絶対ルール 11 に書いた | ユーザーの決定（監査 2 の I: テストが落ちたままのコミットの再発防止）
+- 2026-09-26 | 5 | 6. crosscheck の英語の題の比べ方（scripts/lib/langlink.ts `normalizeTitle`。crosscheck.ts から移した）で、節へのリンク（# 以降）を落としてから比べる。反比例の langlink "Proportionality (mathematics)#Inverse proportionality" は記事への langlink に変わっても一致する。tests/langlink.test.ts。`pnpm crosscheck`（報告だけ）は 513 件一致、flag 0 | ユーザーの決定（監査 2 の H-7）
+- 2026-09-26 | 5 | 7. 人間レビューの表（`scripts/audit/human_review.py`）は週に 1 回だけ作る。第 2 週の表（audits/human-review-week-2.md）はそのまま残し、次は第 3 週（2026-10-03 以降のセッション）。このセッションでは作らない | ユーザーの決定（週 30 分のレビューに合わせる）
