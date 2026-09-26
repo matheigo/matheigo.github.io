@@ -1,0 +1,67 @@
+{
+  "id": "union-sign",
+  "latex": "A \\cup B",
+  "spoken_en": [
+    {
+      "text": "A union B",
+      "register": "standard"
+    },
+    {
+      "text": "the union of A and B",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "A カップ B ／ A と B の和集合",
+  "name_en": "union",
+  "name_ja": "和集合（∪）",
+  "term_ref": "union",
+  "level": {
+    "jp": [
+      "数I",
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "AP Statistics",
+      "Intro Statistics",
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "A ∪ B は A union B、the union of A and B と読む。日本語の「カップ」は英語では使わない。",
+    "米国の統計の教科書は確率で A OR B とも書く（probability-of-union）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the union of *": 14,
+      "!the union !of": 53
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

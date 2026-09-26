@@ -1,0 +1,55 @@
+{
+  "id": "negation-sign",
+  "latex": "\\neg p,\\ {\\sim}p,\\ \\bar{p}",
+  "spoken_en": [
+    {
+      "text": "not p",
+      "register": "standard"
+    },
+    {
+      "text": "the negation of p",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "p でない ／ p バー ／ p の否定",
+  "name_en": "negation",
+  "name_ja": "否定",
+  "term_ref": "negation",
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "¬p（~p）は not p と読み、名前は the negation of p。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Foundation, CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "~p の記法"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "not p | not q": 11,
+      "the negation of *": 1
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-6.042",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

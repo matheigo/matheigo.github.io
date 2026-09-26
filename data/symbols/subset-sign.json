@@ -1,0 +1,57 @@
+{
+  "id": "subset-sign",
+  "latex": "A \\subseteq B",
+  "spoken_en": [
+    {
+      "text": "A is a subset of B",
+      "register": "standard"
+    },
+    {
+      "text": "A is contained in B",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "A は B の部分集合 ／ A は B に含まれる",
+  "name_en": "subset",
+  "name_ja": "部分集合（⊆）",
+  "term_ref": "subset",
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Discrete Math",
+      "Linear Algebra"
+    ]
+  },
+  "notes": [
+    "A ⊆ B は A is a subset of B と読む。A is contained in B とも言う。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "is contained in *": 10,
+      "is a subset of *": 20
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

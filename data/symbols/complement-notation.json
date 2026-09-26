@@ -1,0 +1,55 @@
+{
+  "id": "complement-notation",
+  "latex": "\\bar{A},\\ A^c,\\ A'",
+  "spoken_en": [
+    {
+      "text": "the complement of A",
+      "register": "standard"
+    },
+    {
+      "text": "A complement",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "A バー ／ A の補集合",
+  "name_en": "complement",
+  "name_ja": "補集合",
+  "term_ref": "complement",
+  "level": {
+    "jp": [
+      "数I",
+      "数A"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics",
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "補集合・余事象は the complement of A か A complement と読む。A′ と書いた本では A prime、Ā は A bar とも読むが、文字どおりの読みは点の名前などと区別しにくい。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the complement of *": 12,
+      "a complement | b complement | e complement": 3
+    },
+    "sources": [
+      "mit-6.042",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

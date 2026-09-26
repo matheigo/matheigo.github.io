@@ -1,0 +1,68 @@
+{
+  "id": "element-of-sign",
+  "latex": "a \\in A",
+  "spoken_en": [
+    {
+      "text": "a is a member of A",
+      "register": "standard"
+    },
+    {
+      "text": "a belongs to A",
+      "register": "spoken"
+    },
+    {
+      "text": "a is an element of A",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "a は A に属する ／ a は A の要素",
+  "name_en": "element of",
+  "name_ja": "属する（∈）",
+  "term_ref": "element",
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Precalculus",
+      "Discrete Math",
+      "Linear Algebra"
+    ]
+  },
+  "notes": [
+    "a ∈ A は a is an element of A、a is a member of A、a belongs to A と読む。短く a is in A とも言う。",
+    "x ∈ ℝ は x is a real number と言いかえることが多い。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "belongs to *": 7,
+      "is a member of *": 12,
+      "is an element of *": 4
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

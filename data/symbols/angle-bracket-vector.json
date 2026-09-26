@@ -1,0 +1,59 @@
+{
+  "id": "angle-bracket-vector",
+  "latex": "\\langle a, b \\rangle",
+  "spoken_en": [
+    {
+      "text": "the vector with components a and b",
+      "register": "standard"
+    },
+    {
+      "text": "angle bracket a, b",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "成分表示 (a, b) ／ ベクトル a b",
+  "name_en": "component form of a vector",
+  "name_ja": "成分表示",
+  "term_ref": "component-form",
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III"
+    ]
+  },
+  "notes": [
+    "⟨a, b⟩ は the vector a, b か the vector with components a and b と読む。山かっこ（angle brackets）は読まないことが多い。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "with components *": 4
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-18.06",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "not-element-of-sign",
+  "latex": "a \\notin A",
+  "spoken_en": [
+    {
+      "text": "a is not an element of A",
+      "register": "standard"
+    },
+    {
+      "text": "a is not a member of A",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "a は A に属さない",
+  "name_en": "not an element of",
+  "name_ja": "属さない（∉）",
+  "term_ref": "element",
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "a ∉ A は a is not an element of A（a is not in A）と読む。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "is not a member of * | isn't a member of *": 2
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

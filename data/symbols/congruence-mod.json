@@ -1,0 +1,47 @@
+{
+  "id": "congruence-mod",
+  "latex": "a \\equiv b \\pmod{n}",
+  "spoken_en": [
+    {
+      "text": "a is congruent to b modulo n",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "a と b は n を法として合同 ／ a 合同 b モッド n",
+  "name_en": "congruence modulo n",
+  "name_ja": "合同式",
+  "term_ref": "congruence-modulo-n",
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "a ≡ b (mod n) は a is congruent to b modulo n と読む。書くときは mod と略す。",
+    "≡ は日本の中学では図形の合同の記号（congruent-sign）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction (4th edition)",
+      "url": "https://discrete.openmathbooks.org/pdfs/dmoi4.pdf"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "congruent to * modulo *": 56
+    },
+    "sources": [
+      "mit-6.042"
+    ],
+    "counted": "2026-09-25"
+  }
+}

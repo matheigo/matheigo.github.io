@@ -1,0 +1,56 @@
+{
+  "id": "cardinality-notation",
+  "latex": "n(A),\\ |A|",
+  "spoken_en": [
+    {
+      "text": "the cardinality of A",
+      "register": "standard"
+    },
+    {
+      "text": "the number of elements in A",
+      "register": "spoken"
+    },
+    {
+      "text": "n of A",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "A の要素の個数 ／ n(A)",
+  "name_en": "number of elements (cardinality)",
+  "name_ja": "要素の個数",
+  "term_ref": "number-of-elements",
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Intro Statistics",
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "|A| も n(A) も the number of elements in A と読める。離散数学の講義は the cardinality of A と言う。",
+    "n(A) は文字どおり n of A とも読む。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "n of a | n of b": 4,
+      "the cardinality of *": 57,
+      "the number of elements in *": 4
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.06",
+      "mit-6.042"
+    ],
+    "counted": "2026-09-25"
+  }
+}

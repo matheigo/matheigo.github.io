@@ -1,0 +1,61 @@
+{
+  "id": "qed-end-of-proof",
+  "latex": "\\blacksquare,\\ \\square,\\ \\text{Q.E.D.}",
+  "spoken_en": [
+    {
+      "text": "which completes the proof",
+      "register": "standard"
+    },
+    {
+      "text": "Q E D",
+      "register": "spoken"
+    },
+    {
+      "text": "end of proof",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "証明終わり",
+  "name_en": "end-of-proof mark",
+  "name_ja": "証明終わりの印",
+  "term_ref": "end-of-proof",
+  "level": {
+    "jp": [
+      "中2",
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "∎ や □ は記号の名前を読まず、which completes the proof や and that's the proof と言って締める。Q.E.D. は文字どおり Q E D と読む。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "end of proof | end of the proof": 5,
+      "q e d | qed | q.e.d": 2
+    },
+    "sources": [
+      "mit-18.01",
+      "mit-18.06",
+      "mit-6.042"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

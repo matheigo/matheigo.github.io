@@ -1,0 +1,64 @@
+{
+  "id": "gcd-notation",
+  "latex": "\\gcd(a, b),\\ \\text{GCF}(a, b)",
+  "spoken_en": [
+    {
+      "text": "the GCF of a and b",
+      "register": "standard"
+    },
+    {
+      "text": "the greatest common divisor of a and b",
+      "register": "standard"
+    },
+    {
+      "text": "the gcd of a and b",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "a と b の最大公約数",
+  "name_en": "greatest common divisor",
+  "name_ja": "最大公約数",
+  "term_ref": "greatest-common-divisor",
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "gcd(a, b) は the gcd of a and b（G C D）か the greatest common divisor of a and b と読む。",
+    "米国の Pre-Algebra の教材は greatest common factor（GCF）と呼び、中学の教材（Khan Academy の中学）と解説チャンネルに多い。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction (4th edition)",
+      "url": "https://discrete.openmathbooks.org/pdfs/dmoi4.pdf"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "greatest common divisor": 91,
+      "gcd | g c d": 29,
+      "gcf | greatest common factor": 124
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-6.042",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

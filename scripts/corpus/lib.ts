@@ -942,6 +942,175 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "plus-c-constant": {
     "plus C": "plus c",
   },
+  // Phase 3 記号 バッチ 3 (ledger rows 101-150).
+  "evaluation-bar": {
+    "F of x evaluated from a to b": "evaluated from * to *",
+    "F of x evaluated at b minus F of x evaluated at a": "evaluated at * minus * evaluated at",
+  },
+  "double-integral-sign": {
+    "the double integral over R of f of x y d A": "the double integral over *",
+  },
+  "triple-integral-sign": {
+    "the triple integral over E of f d V": "the triple integral over *",
+    "the triple integral of f over E": "the triple integral of *",
+  },
+  "line-integral-sign": {
+    "the integral over C of F dot d r": "the integral over c | the integral along c",
+    "the line integral over C of F dot d r": "the line integral over * | the line integral along *",
+    "the line integral of F along C": "the line integral of *",
+    "the integral around C": "the integral around *",
+  },
+  "product-pi-notation": {
+    "the product from i equals one to n of a sub i": "the product from * to * of | the product from * equals",
+    "the product of a sub i, i from one to n": "the product of * from * to *",
+  },
+  "factorial-n": {
+    "n factorial": "* factorial",
+  },
+  "repeated-combination-h-jp": {
+    "n plus r minus one choose r": "plus * minus one choose *",
+    "n multichoose r": "multichoose",
+    "the number of combinations with repetition of n things taken r at a time": "combinations with repetition | with repetition allowed",
+  },
+  "element-of-sign": {
+    "a is a member of A": "is a member of *",
+    "a belongs to A": "belongs to *",
+    "a is an element of A": "is an element of *",
+  },
+  "not-element-of-sign": {
+    "a is not an element of A": "is not an element of * | isn't an element of *",
+    "a is not a member of A": "is not a member of * | isn't a member of *",
+  },
+  "subset-sign": {
+    "A is a subset of B": "is a subset of *",
+    "A is contained in B": "is contained in *",
+  },
+  "proper-subset-sign": {
+    "A is a proper subset of B": "proper subset",
+  },
+  "union-sign": {
+    "A union B": "!the union !of",
+    "the union of A and B": "the union of *",
+  },
+  "intersection-sign": {
+    "the intersection of A and B": "the intersection of * and *",
+    "A intersect B": "a intersect b | b intersect a | a intersect c | b intersect c",
+  },
+  "complement-notation": {
+    "the complement of A": "the complement of *",
+    "A complement": "a complement | b complement | e complement",
+  },
+  "empty-set-symbol": {
+    "the empty set": "the empty set | an empty set",
+  },
+  "natural-numbers-symbol": {
+    "the natural numbers": "the natural numbers | the set of natural numbers",
+  },
+  "integers-symbol": {
+    "the integers": "the integers | the set of integers",
+  },
+  "rationals-symbol": {
+    "the rational numbers": "the rational numbers | the set of rational numbers",
+  },
+  "reals-symbol": {
+    "the real numbers": "the real numbers | the set of real numbers",
+  },
+  "complex-numbers-symbol": {
+    "the complex numbers": "the complex numbers | the set of complex numbers",
+  },
+  "set-builder-braces": {
+    "the set of all x such that x is greater than zero": "the set of all * such that",
+    "the set of x such that x is greater than zero": "the set of x such that | the set of n such that | the set of numbers such that | the set of points such that",
+  },
+  "roster-braces": {
+    "the set containing one, two, and three": "the set containing *",
+    "the set one, two, three": "the set one | the set zero | the set a comma",
+  },
+  "cardinality-notation": {
+    "the cardinality of A": "the cardinality of *",
+    "the number of elements in A": "the number of elements in *",
+    "n of A": "n of a | n of b",
+  },
+  "cartesian-product-cross": {
+    "A cross B": "a cross b",
+    "the Cartesian product of A and B": "cartesian product",
+  },
+  "power-set-notation": {
+    "the power set of A": "the power set of * | power set",
+  },
+  "set-difference": {
+    "A minus B": "set difference",
+    "A without B": "a without b",
+  },
+  "closed-interval-brackets": {
+    "the closed interval a, b": "closed interval !from",
+    "the closed interval from a to b": "closed interval from *",
+  },
+  "open-interval-parentheses": {
+    "the open interval a, b": "open interval !from",
+    "the open interval from a to b": "open interval from *",
+  },
+  "half-open-interval": {
+    "the half-open interval from a to b": "half-open interval | half open interval",
+    "the interval from a to b, including a but not b": "including * but not *",
+  },
+  "implies-arrow": {
+    "p implies q": "* implies *",
+  },
+  "iff-arrow": {
+    "p is equivalent to q": "is equivalent to *",
+    "p if and only if q": "if and only if",
+    "p iff q": "iff",
+  },
+  "negation-sign": {
+    "not p": "not p | not q",
+    "the negation of p": "the negation of *",
+  },
+  "for-all-quantifier": {
+    "for all x": "for all x | for all n | for all t | for all k | for all epsilon",
+    "for every x": "for every x | for every n | for every t | for every k | for every epsilon",
+    "for each x": "for each x | for each n | for each t | for each k | for each epsilon",
+  },
+  "there-exists-quantifier": {
+    "there exists an x": "there exists *",
+    "there is an x such that": "there is * such that",
+  },
+  "qed-end-of-proof": {
+    "which completes the proof": "completes the proof",
+    "Q E D": "q e d | qed | q.e.d",
+    "end of proof": "end of proof | end of the proof",
+  },
+  "congruence-mod": {
+    "a is congruent to b modulo n": "congruent to * modulo *",
+  },
+  "divides-bar": {
+    "a divides b": "* divides *",
+  },
+  "gcd-notation": {
+    "the GCF of a and b": "gcf | greatest common factor",
+    "the greatest common divisor of a and b": "greatest common divisor",
+    "the gcd of a and b": "gcd | g c d",
+  },
+  "lcm-notation": {
+    "the least common multiple of a and b": "least common multiple",
+    "the lcm of a and b": "lcm | l c m",
+  },
+  "vector-arrow-notation": {
+    "vector v": "!the vector v | !the vector a | !the vector u | !the vector b",
+    "the vector v": "the vector v | the vector a | the vector u | the vector b",
+    "v vector": "v vector | u vector",
+  },
+  "vector-ab-arrow": {
+    "vector AB": "vector a b | vector ab",
+    "the vector from A to B": "the vector from * to *",
+  },
+  "angle-bracket-vector": {
+    "the vector with components a and b": "with components *",
+    "angle bracket a, b": "angle bracket",
+  },
+  "unit-vector-hat": {
+    "i hat": "i hat | j hat | k hat | u hat",
+  },
 };
 
 /**

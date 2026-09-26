@@ -1,0 +1,63 @@
+{
+  "id": "intersection-sign",
+  "latex": "A \\cap B",
+  "spoken_en": [
+    {
+      "text": "the intersection of A and B",
+      "register": "standard"
+    },
+    {
+      "text": "A intersect B",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "A キャップ B ／ A と B の共通部分",
+  "name_en": "intersection",
+  "name_ja": "共通部分（∩）",
+  "term_ref": "intersection",
+  "level": {
+    "jp": [
+      "数I",
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "AP Statistics",
+      "Intro Statistics",
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "A ∩ B は A intersect B か the intersection of A and B と読む。日本語の「キャップ」は英語では使わない。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the intersection of * and *": 15,
+      "a intersect b | b intersect a | a intersect c | b intersect c": 12
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

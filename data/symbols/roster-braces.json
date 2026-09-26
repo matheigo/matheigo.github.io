@@ -1,0 +1,55 @@
+{
+  "id": "roster-braces",
+  "latex": "\\{1, 2, 3\\}",
+  "spoken_en": [
+    {
+      "text": "the set containing one, two, and three",
+      "register": "standard"
+    },
+    {
+      "text": "the set one, two, three",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "1, 2, 3 を要素とする集合",
+  "name_en": "roster notation",
+  "name_ja": "要素を並べて表す集合",
+  "term_ref": "set",
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Intro Statistics",
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "{1, 2, 3} は the set one, two, three か the set containing one, two, and three と読む。波かっこは読まない。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the set one | the set zero | the set a comma": 7
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-6.042"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

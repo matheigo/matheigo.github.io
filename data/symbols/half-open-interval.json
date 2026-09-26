@@ -1,0 +1,54 @@
+{
+  "id": "half-open-interval",
+  "latex": "[a, b)",
+  "spoken_en": [
+    {
+      "text": "the half-open interval from a to b",
+      "register": "standard"
+    },
+    {
+      "text": "the interval from a to b, including a but not b",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "a 以上 b 未満の区間",
+  "name_en": "half-open interval",
+  "name_ja": "半開区間",
+  "term_ref": "interval-notation",
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Algebra 1",
+      "Precalculus"
+    ]
+  },
+  "notes": [
+    "[a, b) は the interval from a to b, including a but not b、または the half-open interval from a to b と読む。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "including * but not *": 3
+    },
+    "sources": [
+      "yt:nancypi",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

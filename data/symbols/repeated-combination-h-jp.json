@@ -1,0 +1,60 @@
+{
+  "id": "repeated-combination-h-jp",
+  "latex": "{}_{n}\\mathrm{H}_{r}",
+  "spoken_en": [
+    {
+      "text": "n plus r minus one choose r",
+      "register": "standard"
+    },
+    {
+      "text": "n multichoose r",
+      "register": "spoken"
+    },
+    {
+      "text": "the number of combinations with repetition of n things taken r at a time",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "エイチ n r ／ 重複組合せの数",
+  "name_en": "combinations with repetition (Japanese notation)",
+  "name_ja": "重複組合せの記号（ₙHᵣ）",
+  "term_ref": "combination-with-repetition",
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": []
+  },
+  "notes": [
+    "ₙHᵣ は日本の教科書の記号で、英語では ₙ₊ᵣ₋₁Cᵣ と二項係数で書き、n plus r minus one choose r と読む。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction (4th edition)",
+      "url": "https://discrete.openmathbooks.org/pdfs/dmoi4.pdf",
+      "note": "3.5 Stars and Bars"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "plus * minus one choose *": 1
+    },
+    "sources": [
+      "mit-6.042"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

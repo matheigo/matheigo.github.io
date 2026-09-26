@@ -1,0 +1,73 @@
+{
+  "id": "iff-arrow",
+  "latex": "p \\Leftrightarrow q,\\ p \\leftrightarrow q",
+  "spoken_en": [
+    {
+      "text": "p is equivalent to q",
+      "register": "standard"
+    },
+    {
+      "text": "p if and only if q",
+      "register": "standard"
+    },
+    {
+      "text": "p iff q",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "p と q は同値 ／ p ⇔ q",
+  "name_en": "if and only if",
+  "name_ja": "同値（⇔）",
+  "term_ref": "biconditional",
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Geometry",
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "p ⇔ q は p if and only if q か p is equivalent to q と読む。iff は書くときの略で、読むときは if and only if と言う。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Foundation, CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "if and only if": 76,
+      "is equivalent to *": 109,
+      "iff": 2
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

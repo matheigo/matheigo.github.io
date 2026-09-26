@@ -1,0 +1,65 @@
+{
+  "id": "set-builder-braces",
+  "latex": "\\{x \\mid x > 0\\}",
+  "spoken_en": [
+    {
+      "text": "the set of all x such that x is greater than zero",
+      "register": "standard"
+    },
+    {
+      "text": "the set of x such that x is greater than zero",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "x > 0 を満たす x 全体の集合",
+  "name_en": "set-builder notation",
+  "name_ja": "条件で表す集合",
+  "term_ref": "set-builder-notation",
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2",
+      "Precalculus",
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "{x | x > 0} は the set of all x such that x is greater than zero と読む。縦線は such that。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the set of all * such that": 4
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-6.042",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

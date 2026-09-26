@@ -1,0 +1,53 @@
+{
+  "id": "divides-bar",
+  "latex": "a \\mid b",
+  "spoken_en": [
+    {
+      "text": "a divides b",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "a は b を割り切る ／ a は b の約数",
+  "name_en": "divides",
+  "name_ja": "割り切る（|）",
+  "term_ref": "divisibility",
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "a | b は a divides b と読む。a/b（a over b、分数）と取り違えない。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction (4th edition)",
+      "url": "https://discrete.openmathbooks.org/pdfs/dmoi4.pdf"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "* divides *": 138
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

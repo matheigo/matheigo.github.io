@@ -1,0 +1,63 @@
+{
+  "id": "for-all-quantifier",
+  "latex": "\\forall x",
+  "spoken_en": [
+    {
+      "text": "for all x",
+      "register": "standard"
+    },
+    {
+      "text": "for every x",
+      "register": "spoken"
+    },
+    {
+      "text": "for each x",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "すべての x について",
+  "name_en": "for all",
+  "name_ja": "すべての（∀）",
+  "term_ref": "universal-quantifier",
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "∀x は for all x と読む。for every x、for each x とも言う。",
+    "記号は英語の本で使い、日本の高校の教科書は言葉で「すべての」と書く。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "for each x | for each n | for each t | for each k | for each epsilon": 12,
+      "for every x | for every n | for every t | for every k | for every epsilon": 12,
+      "for all x | for all n | for all t | for all k | for all epsilon": 110
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

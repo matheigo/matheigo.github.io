@@ -1,0 +1,58 @@
+{
+  "id": "closed-interval-brackets",
+  "latex": "[a, b]",
+  "spoken_en": [
+    {
+      "text": "the closed interval a, b",
+      "register": "standard"
+    },
+    {
+      "text": "the closed interval from a to b",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "閉区間 a b ／ a 以上 b 以下",
+  "name_en": "closed interval",
+  "name_ja": "閉区間",
+  "term_ref": "closed-interval",
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Algebra 1",
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "notes": [
+    "[a, b] は the closed interval a, b（from a to b）と読む。on the closed interval from zero to two のように使う。",
+    "端点を含むので角かっこ（brackets）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "closed interval !from": 101,
+      "closed interval from *": 42
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

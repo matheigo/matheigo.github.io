@@ -1,0 +1,52 @@
+{
+  "id": "there-exists-quantifier",
+  "latex": "\\exists x",
+  "spoken_en": [
+    {
+      "text": "there exists an x",
+      "register": "standard"
+    },
+    {
+      "text": "there is an x such that",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "ある x が存在して",
+  "name_en": "there exists",
+  "name_ja": "存在する（∃）",
+  "term_ref": "existential-quantifier",
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "∃x は there exists an x（such that …）と読む。there is an x such that … とも言う。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "there exists *": 86,
+      "there is * such that": 12
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}
