@@ -1,0 +1,62 @@
+{
+  "id": "log-e-jp",
+  "latex": "\\log x,\\ \\log_e x",
+  "spoken_en": [
+    {
+      "text": "the natural log of x",
+      "register": "standard"
+    },
+    {
+      "text": "l n x",
+      "register": "standard"
+    },
+    {
+      "text": "log base e of x",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "ログ x（自然対数）",
+  "name_en": "natural log written log x (Japanese 数III)",
+  "name_ja": "数III の log x（底 e）",
+  "term_ref": "natural-logarithm",
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Calculus I"
+    ]
+  },
+  "notes": [
+    "数III の log x（底 e）は、英語では ln x と書いて the natural log of x か L N x と読む。底を言うなら log base e of x。",
+    "∫ 1/x dx = log|x| + C は英語の教科書では ln|x| + C と書く。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "natural log of * | natural log *": 874,
+      "l n | ln": 744,
+      "log base e": 33
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

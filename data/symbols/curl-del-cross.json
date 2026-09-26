@@ -1,0 +1,51 @@
+{
+  "id": "curl-del-cross",
+  "latex": "\\nabla \\times \\mathbf{F},\\ \\operatorname{curl} \\mathbf{F}",
+  "spoken_en": [
+    {
+      "text": "the curl of F",
+      "register": "standard"
+    },
+    {
+      "text": "curl F",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "ローテーション F ／ rot F",
+  "name_en": "curl",
+  "name_ja": "回転（curl）",
+  "term_ref": "curl-vector",
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Calculus III"
+    ]
+  },
+  "notes": [
+    "∇ × F と curl F は the curl of F（curl F）と読む。∇ × F を del cross F とも読める。",
+    "日本の本の rot F（ローテーション）は、米国の教科書では curl F と書く。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the curl of *": 37,
+      "!the curl f | !the curl of": 21
+    },
+    "sources": [
+      "mit-18.02"
+    ],
+    "counted": "2026-09-25"
+  }
+}

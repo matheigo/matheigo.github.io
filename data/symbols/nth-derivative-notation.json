@@ -1,0 +1,57 @@
+{
+  "id": "nth-derivative-notation",
+  "latex": "f^{(n)}(x),\\ f'''(x)",
+  "spoken_en": [
+    {
+      "text": "the nth derivative of f",
+      "register": "standard"
+    },
+    {
+      "text": "f triple prime of x",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "f の n 次導関数 ／ エフ エヌ エックス",
+  "name_en": "higher derivatives",
+  "name_ja": "第 n 次導関数",
+  "term_ref": "nth-derivative",
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus BC",
+      "Calculus I",
+      "Calculus II"
+    ]
+  },
+  "notes": [
+    "f⁽ⁿ⁾(x) は the nth derivative of f と読む。かっこ付きの (n) は指数ではない。",
+    "f‴(x) は f triple prime of x。4 次以上はふつう f⁽⁴⁾ と書き、the fourth derivative of f と読む。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the nth derivative": 32,
+      "triple prime": 1
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "yt:3blue1brown",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-25"
+  }
+}

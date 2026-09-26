@@ -1,0 +1,67 @@
+{
+  "id": "piecewise-brace",
+  "latex": "f(x) = \\begin{cases} x^2 & (x \\geq 0) \\\\ -x & (x < 0) \\end{cases}",
+  "spoken_en": [
+    {
+      "text": "f of x equals x squared when x is greater than or equal to zero, and negative x when x is less than zero",
+      "register": "standard"
+    },
+    {
+      "text": "x squared if x is greater than or equal to zero",
+      "register": "spoken"
+    },
+    {
+      "text": "x squared for x greater than or equal to zero",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "f(x) は x ≥ 0 のとき x²、x < 0 のとき −x",
+  "name_en": "piecewise-defined function",
+  "name_ja": "場合分けで定義した関数",
+  "term_ref": "piecewise-function",
+  "level": {
+    "jp": [
+      "数I",
+      "数III"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus AB"
+    ]
+  },
+  "notes": [
+    "波かっこは読まず、式ごとに when x is …（if x is …、for x …）で条件を添える。",
+    "米国の教科書は条件を式の右に書き（x² if x ≥ 0）、日本のように ( ) でくくらないことが多い。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "when x is greater than | when x is less than": 91,
+      "if x is greater than | if x is less than": 23,
+      "for x greater than | for x less than": 18
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

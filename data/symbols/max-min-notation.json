@@ -1,0 +1,68 @@
+{
+  "id": "max-min-notation",
+  "latex": "\\max\\{a, b\\},\\ \\min\\{a, b\\}",
+  "spoken_en": [
+    {
+      "text": "the maximum of a and b",
+      "register": "standard"
+    },
+    {
+      "text": "the max of a and b",
+      "register": "spoken"
+    },
+    {
+      "text": "the larger of a and b",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "a と b の大きい方 ／ マックス a, b",
+  "name_en": "max and min notation",
+  "name_ja": "max・min の記号",
+  "term_ref": "maximum",
+  "level": {
+    "jp": [],
+    "us": [
+      "Calculus I",
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "max{a, b} は the maximum of a and b（短く the max of a and b）、min{a, b} は the minimum of a and b と読む。",
+    "言葉で the larger of a and b（大きい方）とも言う。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the maximum of * and * | the minimum of * and *": 5,
+      "the max of * and * | the min of * and * | max of * and * | min of * and *": 1,
+      "the larger of * and * | the smaller of * and * | the bigger of * and *": 2
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

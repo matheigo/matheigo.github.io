@@ -1,0 +1,69 @@
+{
+  "id": "inverse-tangent-notation",
+  "latex": "\\tan^{-1} x,\\ \\arctan x",
+  "spoken_en": [
+    {
+      "text": "arctangent of x",
+      "register": "standard"
+    },
+    {
+      "text": "inverse tangent of x",
+      "register": "standard"
+    },
+    {
+      "text": "tangent inverse of x",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "アークタンジェント x",
+  "name_en": "inverse tangent",
+  "name_ja": "逆正接（アークタンジェント）",
+  "term_ref": "arctangent",
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "notes": [
+    "tan⁻¹ x も arctan x も、arctangent of x か inverse tangent of x と読む。短く arctan x とも言う。",
+    "∫ 1/(1 + x²) dx = arctan x + C は the integral of one over one plus x squared is arctangent of x plus C。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "inverse tangent": 37,
+      "arctangent | arc tangent | arctan": 95,
+      "tangent inverse": 7
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

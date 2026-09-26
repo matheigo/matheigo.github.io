@@ -1,0 +1,68 @@
+{
+  "id": "limit-from-left",
+  "latex": "\\lim_{x \\to a^-} f(x)",
+  "spoken_en": [
+    {
+      "text": "the limit as x approaches a from the left of f of x",
+      "register": "standard"
+    },
+    {
+      "text": "the limit as x approaches a minus",
+      "register": "spoken"
+    },
+    {
+      "text": "the left-hand limit of f at a",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "x が a に左から近づくときの極限 ／ リミット x → a マイナス 0",
+  "name_en": "left-hand limit",
+  "name_ja": "左側極限",
+  "term_ref": "left-hand-limit",
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "notes": [
+    "x → a⁻ は x approaches a from the left と読む。記号どおりに x approaches a minus とも言う。",
+    "a⁻ の右上の − は「左から」の印で、a から数を引くのではない。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "from the left": 264,
+      "approaches * minus | goes to * minus": 57,
+      "left-hand limit | left hand limit": 6
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

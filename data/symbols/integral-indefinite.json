@@ -1,0 +1,75 @@
+{
+  "id": "integral-indefinite",
+  "latex": "\\int f(x)\\,dx",
+  "spoken_en": [
+    {
+      "text": "the integral of f of x d x",
+      "register": "standard"
+    },
+    {
+      "text": "the indefinite integral of f of x",
+      "register": "standard"
+    },
+    {
+      "text": "the integral of f of x with respect to x",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "インテグラル f(x) dx ／ f(x) の不定積分",
+  "name_en": "indefinite integral",
+  "name_ja": "不定積分",
+  "term_ref": "indefinite-integral",
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "notes": [
+    "∫ f(x) dx は the integral of f of x d x と読む。the indefinite integral of f of x とも言う。",
+    "dx は d x と 2 音で読む。with respect to x と言いかえることもある。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "integral of * dx": 81,
+      "the indefinite integral of *": 33,
+      "integral of * with respect to": 12
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

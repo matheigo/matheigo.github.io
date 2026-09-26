@@ -1,0 +1,57 @@
+{
+  "id": "second-derivative-leibniz",
+  "latex": "\\dfrac{d^2 y}{dx^2}",
+  "spoken_en": [
+    {
+      "text": "the second derivative of y with respect to x",
+      "register": "standard"
+    },
+    {
+      "text": "d squared y d x squared",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "ディー 2 ワイ ディーエックス 2 乗",
+  "name_en": "second derivative (Leibniz notation)",
+  "name_ja": "第 2 次導関数（ライプニッツの記法）",
+  "term_ref": "second-derivative",
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "notes": [
+    "d²y/dx² は記号どおりに d squared y d x squared と読めるが、講義では the second derivative of y（with respect to x）と言うことが多い。",
+    "2 の位置に注意: 分子は d の右上（d²y）、分母は x の右上（dx²）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the second derivative of y": 34,
+      "d squared y dx squared | d squared y over dx squared": 2
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "composition-notation",
+  "latex": "(f \\circ g)(x),\\ f(g(x))",
+  "spoken_en": [
+    {
+      "text": "f of g of x",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "f マル g (x) ／ f(g(x))",
+  "name_en": "composition of functions",
+  "name_ja": "合成関数の記号",
+  "term_ref": "composite-function",
+  "level": {
+    "jp": [
+      "数III"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus AB"
+    ]
+  },
+  "notes": [
+    "f(g(x)) も (f ∘ g)(x) も f of g of x と読む。∘ を記号どおりに読む f composed with g、f circle g は講義にはほとんど出てこない。",
+    "内側の g(x) を先に計算する（the inside function first）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "f of g of *": 61
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

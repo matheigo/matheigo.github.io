@@ -1,0 +1,47 @@
+{
+  "id": "function-maps-arrow",
+  "latex": "f\\colon A \\to B,\\ x \\mapsto f(x)",
+  "spoken_en": [
+    {
+      "text": "f maps A to B",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "f は A から B への写像 ／ x を f(x) にうつす",
+  "name_en": "function arrow",
+  "name_ja": "写像の矢印",
+  "term_ref": "function",
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Discrete Math",
+      "Linear Algebra"
+    ]
+  },
+  "notes": [
+    "f: A → B は f maps A to B、または f is a function from A to B と読む。",
+    "x ↦ f(x) は x maps to f of x（x goes to f of x とも）と読み、矢印の形が → と違う（根元に縦棒）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "maps * to *": 20
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-18.02",
+      "mit-6.042",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

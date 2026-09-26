@@ -756,6 +756,192 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "binary one zero one one": "in binary",
     "one zero one one in base two": "in base two | in base five | in base eight | in base sixteen",
   },
+  // Phase 3 記号 バッチ 2 (ledger rows 51-100).
+  "inverse-function-notation": {
+    "f inverse": "f inverse !of",
+    "f inverse of x": "f inverse of *",
+    "the inverse of f": "the inverse of f | the inverse function of f",
+  },
+  "composition-notation": {
+    "f of g of x": "f of g of *",
+  },
+  "function-maps-arrow": {
+    "f maps A to B": "maps * to *",
+  },
+  "piecewise-brace": {
+    "f of x equals x squared when x is greater than or equal to zero, and negative x when x is less than zero": "when x is greater than | when x is less than",
+    "x squared if x is greater than or equal to zero": "if x is greater than | if x is less than",
+    "x squared for x greater than or equal to zero": "for x greater than | for x less than",
+  },
+  "max-min-notation": {
+    "the maximum of a and b": "the maximum of * and * | the minimum of * and *",
+    "the max of a and b": "the max of * and * | the min of * and * | max of * and * | min of * and *",
+    "the larger of a and b": "the larger of * and * | the smaller of * and * | the bigger of * and *",
+  },
+  "floor-brackets": {
+    "the floor of x": "floor of *",
+  },
+  "gauss-bracket-jp": {
+    "the floor of x": "floor of *",
+  },
+  "ceiling-brackets": {
+    "the ceiling of x": "ceiling of *",
+    "the smallest integer greater than or equal to x": "the smallest integer greater than or equal to | the least integer greater than or equal to",
+  },
+  "hyperbolic-functions-notation": {
+    "cosh x": "cosh",
+    "hyperbolic sine of x": "hyperbolic sine | hyperbolic cosine | hyperbolic tangent",
+    "cinch x": "cinch | sinch",
+  },
+  "sine-of-theta": {
+    "sine of theta": "!the sine of *",
+    "sine theta": "sine theta | sine x | sine alpha | sine two x",
+    "the sine of theta": "the sine of *",
+  },
+  "cosine-of-theta": {
+    "cosine of theta": "!the cosine of *",
+    "cosine theta": "cosine theta | cosine x | cosine alpha | cosine two x",
+    "the cosine of theta": "the cosine of *",
+  },
+  "tangent-of-theta": {
+    "tangent of theta": "!the tangent of *",
+    "tangent theta": "tangent theta | tangent x | tangent alpha",
+    "tan theta": "tan theta | tan x | tan alpha",
+  },
+  "secant-of-theta": {
+    "secant theta": "secant theta | secant x | secant squared",
+    "secant of theta": "secant of *",
+    "sec theta": "sec theta | sec x",
+  },
+  "cosecant-of-theta": {
+    "cosecant of theta": "cosecant of *",
+    "cosecant theta": "cosecant theta | cosecant x | cosecant squared",
+    "csc theta": "csc theta | csc x | cosec",
+  },
+  "cotangent-of-theta": {
+    "cotangent theta": "cotangent theta | cotangent x | cotangent squared",
+    "cotangent of theta": "cotangent of *",
+  },
+  "sine-squared": {
+    "sine squared theta": "sine squared theta | sine squared x | sine squared alpha",
+    "sine of theta, squared": "sine of theta squared | sine of x squared",
+    "sine squared of theta": "sine squared of *",
+  },
+  "inverse-sine-notation": {
+    "arcsine of x": "arcsine | arc sine",
+    "sine inverse of x": "sine inverse",
+    "inverse sine of x": "inverse sine",
+  },
+  "inverse-cosine-notation": {
+    "arccosine of x": "arccosine | arc cosine",
+    "inverse cosine of x": "inverse cosine",
+    "cosine inverse of x": "cosine inverse",
+  },
+  "inverse-tangent-notation": {
+    "arctangent of x": "arctangent | arc tangent | arctan",
+    "inverse tangent of x": "inverse tangent",
+    "tangent inverse of x": "tangent inverse",
+  },
+  "radian-unit": {
+    "pi over two radians": "* radians",
+  },
+  "log-base-a": {
+    "log base a of x": "log base *",
+    "the logarithm of x to the base a": "to the base *",
+  },
+  "common-log-notation": {
+    "log of x": "log of *",
+    "log base ten of x": "log base ten",
+    "the common log of x": "common log | common logarithm",
+  },
+  "natural-log-ln": {
+    "the natural log of x": "natural log of * | natural log *",
+    "l n x": "l n | ln",
+  },
+  "log-e-jp": {
+    "the natural log of x": "natural log of * | natural log *",
+    "l n x": "l n | ln",
+    "log base e of x": "log base e",
+  },
+  "limit-x-to-a": {
+    "the limit as x approaches a of f of x": "the limit as * approaches * of",
+    "the limit of f of x as x approaches a": "the limit of * as * approaches",
+    "the limit as x goes to a of f of x": "the limit as * goes to * of",
+  },
+  "infinity-symbol": {
+    "infinity": "!negative !minus infinity",
+  },
+  "approaches-arrow": {
+    "x approaches a": "as * approaches *",
+    "x goes to a": "as * goes to *",
+    "x tends to a": "as * tends to *",
+  },
+  "limit-from-left": {
+    "the limit as x approaches a from the left of f of x": "from the left",
+    "the limit as x approaches a minus": "approaches * minus | goes to * minus",
+    "the left-hand limit of f at a": "left-hand limit | left hand limit",
+  },
+  "limit-from-right": {
+    "the limit as x approaches a from the right of f of x": "from the right",
+    "the limit as x approaches a plus": "approaches * plus | goes to * plus",
+    "the right-hand limit of f at a": "right-hand limit | right hand limit",
+  },
+  "dne-abbreviation": {
+    "does not exist": "does not exist | doesn't exist",
+    "D N E": "d n e | dne",
+  },
+  "difference-quotient-limit": {
+    "the limit as h approaches zero of f of x plus h minus f of x, all over h": "the limit as h approaches zero of",
+    "the limit as h goes to zero of the quantity f of x plus h minus f of x over h": "the limit as h goes to zero of",
+  },
+  "second-derivative-leibniz": {
+    "the second derivative of y with respect to x": "the second derivative of y",
+    "d squared y d x squared": "d squared y dx squared | d squared y over dx squared",
+  },
+  "nth-derivative-notation": {
+    "the nth derivative of f": "the nth derivative",
+    "f triple prime of x": "triple prime",
+  },
+  "derivative-evaluated-at": {
+    "d y d x evaluated at x equals a": "evaluated at *",
+    "d y d x at x equals a": "dy dx at *",
+  },
+  "delta-x": {
+    "delta x": "delta x | delta y | delta t",
+    "change in x": "change in x | change in y | change in t",
+  },
+  "partial-derivative-leibniz": {
+    "partial f partial x": "partial * partial *",
+    "the partial derivative of f with respect to x": "the partial derivative of * with respect to",
+    "the partial of f with respect to x": "the partial of * with respect to",
+    "del f del x": "del * del *",
+  },
+  "partial-derivative-subscript": {
+    "f sub x": "f sub x | f sub y | f sub t",
+  },
+  "directional-derivative-notation": {
+    "the directional derivative of f in the direction of u": "directional derivative",
+  },
+  "jacobian-notation": {
+    "the Jacobian of x and y with respect to u and v": "the jacobian",
+  },
+  "divergence-del-dot": {
+    "the divergence of F": "the divergence of *",
+    "div F": "div *",
+    "del dot F": "del dot *",
+  },
+  "curl-del-cross": {
+    "the curl of F": "the curl of *",
+    "curl F": "!the curl f | !the curl of",
+  },
+  "integral-indefinite": {
+    "the integral of f of x d x": "integral of * dx",
+    "the indefinite integral of f of x": "the indefinite integral of *",
+    "the integral of f of x with respect to x": "integral of * with respect to",
+  },
+  "plus-c-constant": {
+    "plus C": "plus c",
+  },
 };
 
 /**

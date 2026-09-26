@@ -1,0 +1,78 @@
+{
+  "id": "limit-x-to-a",
+  "latex": "\\lim_{x \\to a} f(x)",
+  "spoken_en": [
+    {
+      "text": "the limit as x approaches a of f of x",
+      "register": "standard"
+    },
+    {
+      "text": "the limit of f of x as x approaches a",
+      "register": "standard"
+    },
+    {
+      "text": "the limit as x goes to a of f of x",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "リミット x → a f(x) ／ x が a に限りなく近づくときの f(x) の極限値",
+  "name_en": "limit",
+  "name_ja": "極限（lim）",
+  "term_ref": "limit",
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "notes": [
+    "lim は limit と読み、the limit as x approaches a of f of x と、条件を先、関数を後に読む。the limit of f of x as x approaches a と関数を先にも言える。",
+    "大学の講義（MIT OCW）は approaches より goes to を多く使う。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）〔用語・記号〕",
+      "note": "数II 微分・積分の考え: lim"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the limit as * goes to * of": 90,
+      "the limit as * approaches * of": 314,
+      "the limit of * as * approaches": 161
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "floor-brackets",
+  "latex": "\\lfloor x \\rfloor",
+  "spoken_en": [
+    {
+      "text": "the floor of x",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "x の床関数 ／ フロア x",
+  "name_en": "floor function",
+  "name_ja": "床関数（⌊x⌋）",
+  "term_ref": "floor-function",
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Precalculus",
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "⌊x⌋ は the floor of x と読む。意味を言うと the greatest integer less than or equal to x（x を超えない最大の整数）。",
+    "天井関数 ⌈x⌉ は the ceiling of x（ceiling-brackets）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "floor of *": 10
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

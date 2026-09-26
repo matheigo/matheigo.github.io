@@ -1,0 +1,45 @@
+{
+  "id": "gauss-bracket-jp",
+  "latex": "[x]",
+  "spoken_en": [
+    {
+      "text": "the floor of x",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "ガウス x ／ x を超えない最大の整数",
+  "name_en": "Gauss bracket (Japanese notation)",
+  "name_ja": "ガウス記号",
+  "term_ref": "integer-part",
+  "level": {
+    "jp": [],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "notes": [
+    "日本のガウス記号 [x] は英語では床関数 ⌊x⌋ と書き、the floor of x と読む。",
+    "[x] を英語の資料で見ると、ただの角かっこか閉区間に見える。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "floor of *": 10
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

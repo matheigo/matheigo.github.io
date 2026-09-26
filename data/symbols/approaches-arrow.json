@@ -1,0 +1,81 @@
+{
+  "id": "approaches-arrow",
+  "latex": "x \\to a",
+  "spoken_en": [
+    {
+      "text": "x approaches a",
+      "register": "standard"
+    },
+    {
+      "text": "x goes to a",
+      "register": "standard"
+    },
+    {
+      "text": "x tends to a",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "x が a に近づく ／ x → a",
+  "name_en": "approaches arrow",
+  "name_ja": "近づく（→）",
+  "term_ref": "approaches",
+  "level": {
+    "jp": [
+      "数II",
+      "数III"
+    ],
+    "us": [
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
+    ]
+  },
+  "notes": [
+    "x → a は x approaches a と読む。x goes to a とも言い、大学の講義（MIT OCW）では goes to が多い。x tends to a は英国寄り。",
+    "→ は写像の矢印（f: A → B）や条件文（p → q）にも使い、そのときは approaches と読まない。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "as * goes to *": 396,
+      "as * tends to *": 14,
+      "as * approaches *": 1047
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}
