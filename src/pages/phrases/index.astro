@@ -1,0 +1,33 @@
+---
+import Base from "../../layouts/Base.astro";
+import HiddenNote from "../../components/HiddenNote.astro";
+import { isUnverified, phrases, SITUATIONS, SITUATION_LABELS, SITE_NAME } from "../../lib/data";
+
+const groups = SITUATIONS.map((s) => ({ s, items: phrases.filter((p) => p.situation === s) })).filter((g) => g.items.length);
+const hidden = phrases.filter(isUnverified).length;
+---
+
+<Base
+  title={`場面別の英語フレーズ（数学の授業・質問・答案）— ${SITE_NAME}`}
+  description="数学の授業で聞く・質問する、オフィスアワー、解き方の説明、答案、試験、メール、グループ学習、Discord。場面ごとの英語の言い回し。"
+  noindex={hidden === phrases.length}
+  section="phrases"
+>
+  <h1 class="page-title">場面別フレーズ</h1>
+  <p class="lede">米国の数学の授業・オフィスアワー・答案・試験で使う言い回しを、場面ごとにまとめました。</p>
+  <HiddenNote count={hidden} total={phrases.length} />
+  <ul class="rows">
+    {
+      groups.map((g) => (
+        <li data-unverified-item={g.items.every(isUnverified) ? "" : undefined}>
+          <a href={`/phrases/${g.s}/`}>
+            <span class="row-ja">{SITUATION_LABELS[g.s]}</span>
+            <span class="row-sub">
+              {g.items.length} 件 — {g.items.slice(0, 3).map((p) => p.intent).join("、")} …
+            </span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

@@ -1,11 +1,21 @@
 ---
 import Base from "../../layouts/Base.astro";
 import Speak from "../../components/Speak.astro";
-import { isUnverified, phrases, SITUATION_LABELS } from "../../lib/data";
+import EvidenceTable from "../../components/EvidenceTable.astro";
+import Sources from "../../components/Sources.astro";
+import Report from "../../components/Report.astro";
+import HiddenNote from "../../components/HiddenNote.astro";
+import {
+  isUnverified,
+  phrases,
+  SITUATIONS,
+  SITUATION_LABELS,
+  PHRASE_REGISTER_LABELS,
+  SITE_NAME,
+} from "../../lib/data";
 
 export function getStaticPaths() {
-  const used = [...new Set(phrases.map((p) => p.situation))];
-  return used.map((situation) => ({
+  return SITUATIONS.filter((s) => phrases.some((p) => p.situation === s)).map((situation) => ({
     params: { situation },
     props: { items: phrases.filter((p) => p.situation === situation), situation },
   }));
@@ -13,41 +23,82 @@ export function getStaticPaths() {
 
 const { items, situation } = Astro.props;
 const label = SITUATION_LABELS[situation] ?? situation;
-const all = [...new Set(phrases.map((p) => p.situation))];
+const all = SITUATIONS.filter((s) => phrases.some((p) => p.situation === s));
+const hidden = items.filter(isUnverified).length;
+const path = `/phrases/${situation}/`;
 ---
 
-<Base title={`${label}のフレーズ — MathEigo`} description={`${label}で使う英語の言い回し。`}>
-  <h1 class="term-ja" style="font-size:var(--step-2)">{label}</h1>
+<Base
+  title={`${label}の英語フレーズ — ${SITE_NAME}`}
+  description={`数学の${label}で使う英語の言い回し ${items.length} 件。${items
+    .slice(0, 3)
+    .map((p) => p.en)
+    .join(" / ")}`}
+  noindex={hidden === items.length}
+  section="phrases"
+>
+  <p class="meta"><a href="/phrases/">場面別フレーズ</a></p>
+  <h1 class="page-title">{label}</h1>
 
-  <p class="meta">
-    {all.map((s) => (
-      <>
-        <a href={`/phrases/${s}`} style={s === situation ? "font-weight:700" : ""}>{SITUATION_LABELS[s] ?? s}</a>
-        {" ／ "}
-      </>
-    ))}
-  </p>
+  <ul class="jump" aria-label="場面">
+    {
+      all.map((s) => (
+        <li>
+          <a href={`/phrases/${s}/`} aria-current={s === situation ? "page" : undefined}>
+            {SITUATION_LABELS[s] ?? s}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
 
-  {items.map((p) => (
-    <section class="block" id={p.id} data-unverified-item={isUnverified(p) ? "" : undefined}>
-      <h2>{p.intent}</h2>
-      <div class="say">
-        {p.en}
-        <br />
-        <Speak text={p.en} />
-      </div>
-      <p class="meta">{p.ja}（{p.register}）</p>
-      {p.variants?.length ? (
-        <dl class="pairs">
-          {p.variants.map((v) => (
-            <>
-              <dt>{v.en}</dt>
-              <dd>{v.register}{v.note ? ` — ${v.note}` : ""}</dd>
-            </>
-          ))}
-        </dl>
-      ) : null}
-      {p.notes?.length ? <ul class="plain">{p.notes.map((n) => <li>{n}</li>)}</ul> : null}
-    </section>
-  ))}
+  <HiddenNote count={hidden} total={items.length} />
+
+  {
+    items.map((p) => (
+      <section class="phrase" id={p.id} data-unverified-item={isUnverified(p) ? "" : undefined}>
+        <h2>{p.intent}</h2>
+        <div class="say">
+          <span lang="en">{p.en}</span>
+          <Speak text={p.en} />
+        </div>
+        <p class="meta">
+          {p.ja}（{PHRASE_REGISTER_LABELS[p.register] ?? p.register}）
+          {isUnverified(p) && <span class="badge unverified">未確認</span>}
+        </p>
+        {p.variants?.length ? (
+          <dl class="pairs">
+            {p.variants.map((v) => (
+              <>
+                <dt lang="en">{v.en}</dt>
+                <dd>
+                  {PHRASE_REGISTER_LABELS[v.register] ?? v.register}
+                  {v.note ? ` — ${v.note}` : ""}
+                </dd>
+              </>
+            ))}
+          </dl>
+        ) : null}
+        {p.notes?.length ? (
+          <section class="block">
+            <h2>注意</h2>
+            <ul class="plain">
+              {p.notes.map((n) => (
+                <li>{n}</li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+        <details>
+          <summary>件数と出典</summary>
+          <EvidenceTable evidence={p.evidence} unit="key" />
+          <section class="block meta">
+            <h2>出典</h2>
+            <Sources sources={p.sources} />
+            <Report id={p.id} path={`${path}#${p.id}`} />
+          </section>
+        </details>
+      </section>
+    ))
+  }
 </Base>
