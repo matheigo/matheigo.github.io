@@ -70,6 +70,7 @@ const nav = [
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="sitemap" href="/sitemap.xml" />
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+    <slot name="head" />
     <script is:inline define:vars={{ fallback: SHOW_UNVERIFIED_BY_DEFAULT }}>
       // Runs before paint so unverified rows never flash into view.
       let stored = null;

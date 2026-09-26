@@ -16,13 +16,9 @@ export const GLOSS_SHORT = "説明の訳";
 export const GLOSS_NOTE =
   "この英語は、日本にしかない概念を説明するためにこの辞典が付けた訳です。米国の教室で使う決まった用語ではないので、英語の用語として覚えないでください。";
 
-interface GlossInput {
-  mapping?: unknown;
-  flags?: unknown;
-}
-
-export function isExplanatoryTranslation(entry: GlossInput): boolean {
-  if (entry.mapping !== "none") return false;
-  const flags = Array.isArray(entry.flags) ? (entry.flags as { code?: unknown }[]) : [];
+export function isExplanatoryTranslation(entry: { [key: string]: unknown } | { mapping: string; flags?: { code: string }[] }): boolean {
+  const e = entry as { mapping?: unknown; flags?: unknown };
+  if (e.mapping !== "none") return false;
+  const flags = Array.isArray(e.flags) ? (e.flags as { code?: unknown }[]) : [];
   return flags.some((f) => f?.code === "corpus-no-fixed-expression");
 }

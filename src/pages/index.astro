@@ -1,103 +1,197 @@
 ---
 import Base from "../layouts/Base.astro";
-import { isUnverified, terms } from "../lib/data";
+import En from "../components/En.astro";
+import HiddenNote from "../components/HiddenNote.astro";
+import {
+  conventions,
+  curriculum,
+  isUnverified,
+  isExplanatoryTranslation,
+  phrases,
+  symbols,
+  terms,
+  todaysTerms,
+  SITE_NAME,
+} from "../lib/data";
 
-// 「今日の10語」— deterministic per day so the page can stay static.
-const day = Math.floor(Date.now() / 86_400_000);
-const start = terms.length ? day % terms.length : 0;
-const today = Array.from({ length: Math.min(10, terms.length) }, (_, i) => terms[(start + i) % terms.length]);
+const today = todaysTerms(10);
+const site = Astro.site?.href ?? "https://matheigo.github.io/";
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: `${SITE_NAME} 数学の日英辞典`,
+  url: site,
+  inLanguage: ["ja", "en"],
+  potentialAction: {
+    "@type": "SearchAction",
+    target: { "@type": "EntryPoint", urlTemplate: `${site}?q={search_term_string}` },
+    "query-input": "required name=search_term_string",
+  },
+};
+const sections = [
+  { href: "/symbols/", label: "記号・式の読み上げ", n: symbols.length },
+  { href: "/phrases/", label: "場面別フレーズ", n: phrases.length },
+  { href: "/conventions/", label: "日米の慣習差", n: conventions.length },
+  { href: "/curriculum/", label: "カリキュラム対応表", n: curriculum.length, unit: "単元" },
+];
 ---
 
-<Base title="MathEigo — 数学の日英辞典">
-  <p style="margin-top:0">
-    日本で学んだ数学の言葉を、米国の教室で使う英語に。かな・ローマ字・英語のどれでも引けます。
-  </p>
+<Base title={`${SITE_NAME} — 数学の日英辞典（日本語⇄英語）`} jsonLd={jsonLd}>
+  <link slot="head" rel="preload" href="/search-index.json" as="fetch" crossorigin="anonymous" />
 
-  <label for="q" class="visually-hidden" style="position:absolute;left:-9999px">検索</label>
-  <input
-    id="q"
-    type="search"
-    autocomplete="off"
-    autocapitalize="off"
-    spellcheck="false"
-    placeholder="かいのこうしき / 解の公式 / quadratic"
-  />
+  <h1 class="page-title">数学の日英辞典</h1>
+  <p class="lede">日本で学んだ数学の言葉を、米国の教室で使う英語に。かな・漢字・ローマ字・英語のどれでも引けます。</p>
 
-  <p id="status" class="meta" style="margin:0.5rem 0 0" aria-live="polite"></p>
+  <form class="search" role="search" action="/" method="get">
+    <label for="q" class="skip">検索</label>
+    <input
+      id="q"
+      name="q"
+      type="search"
+      autocomplete="off"
+      autocapitalize="off"
+      autocorrect="off"
+      spellcheck="false"
+      enterkeyhint="search"
+      placeholder="かいのこうしき / 解の公式 / quadratic"
+    />
+  </form>
+  <p id="status" class="meta" aria-live="polite"></p>
+  <ul class="hits" id="hits" hidden></ul>
 
-  <ul class="hits" id="hits">
-    {today.map((t) => (
-      <li class="hit" data-unverified-item={isUnverified(t) ? "" : undefined}>
-        <a href={`/terms/${t.id}`}>
-          <span class="hit-ja">{t.ja.term}</span>
-          <span class="hit-kind">用語</span>
-          <span class="hit-reading">{t.ja.reading}</span>
-          <span class="hit-en">{t.en.term}</span>
-        </a>
-      </li>
-    ))}
-  </ul>
+  <div id="home">
+    <section class="block">
+      <h2>今日の10語</h2>
+      <HiddenNote count={today.filter(isUnverified).length} total={today.length} />
+      <ul class="hits">
+        {
+          today.map((t) => (
+            <li class="hit" data-unverified-item={isUnverified(t) ? "" : undefined}>
+              <a href={`/terms/${t.id}/`}>
+                <span class="hit-ja">{t.ja.term}</span>
+                <span class="hit-kind">用語</span>
+                <span class="hit-reading">{t.ja.reading}</span>
+                <span class="hit-en" lang="en">
+                  <En text={t.en.term} gloss={isExplanatoryTranslation(t)} class="" />
+                </span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="block">
+      <h2>引く</h2>
+      <ul class="rows">
+        {
+          sections.map((s) => (
+            <li>
+              <a href={s.href}>
+                <span class="row-ja">{s.label}</span>
+                <span class="row-sub">
+                  {s.n} {s.unit ?? "件"}
+                </span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="meta">用語 {terms.length} 語。監査（Phase 5）を通るまでは「未確認の語も表示」をオンにすると見られます。</p>
+    </section>
+  </div>
 </Base>
 
 <script>
-  import { createIndex, search, type SearchDoc } from "../lib/search";
+  import { createIndex, expand, lookup, type CompactIndex, type SearchDoc } from "../lib/search";
+  import { GLOSS_LABEL, GLOSS_SHORT } from "../lib/gloss";
 
   const KIND: Record<string, string> = { term: "用語", symbol: "記号", phrase: "フレーズ", convention: "慣習差" };
 
   const input = document.getElementById("q") as HTMLInputElement;
   const hits = document.getElementById("hits") as HTMLUListElement;
   const status = document.getElementById("status") as HTMLParagraphElement;
-  const initial = hits.innerHTML;
+  const home = document.getElementById("home") as HTMLDivElement;
 
+  let docs: SearchDoc[] | null = null;
   let mini: ReturnType<typeof createIndex> | null = null;
-  let loading: Promise<void> | null = null;
 
   const escape = (s: string) =>
     s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
 
-  function load(): Promise<void> {
-    if (loading) return loading;
-    loading = fetch("/search-index.json")
-      .then((r) => r.json() as Promise<SearchDoc[]>)
-      .then((docs) => {
-        mini = createIndex(docs);
-      })
-      .catch(() => {
-        status.textContent = "検索インデックスを読み込めませんでした。";
-      });
-    return loading;
-  }
+  const row = (r: SearchDoc) => `<li class="hit"><a href="${r.url}">
+      <span class="hit-ja">${escape(r.label)}</span>
+      <span class="hit-kind">${KIND[r.type] ?? r.type}${r.verified ? "" : ' <span class="badge unverified">未確認</span>'}</span>
+      ${r.type === "term" ? `<span class="hit-reading">${escape(r.reading)}</span>` : ""}
+      <span class="hit-en" lang="en">${escape(r.hint)}${
+        r.gloss ? ` <span class="gloss-mark" lang="ja" title="${GLOSS_LABEL}">${GLOSS_SHORT}</span>` : ""
+      }</span>
+    </a></li>`;
 
-  function render(results: SearchDoc[]) {
-    hits.innerHTML = results
-      .map(
-        (r) => `<li class="hit"><a href="${r.url}">
-          <span class="hit-ja">${escape(r.ja.split(" ")[0])}</span>
-          <span class="hit-kind">${KIND[r.type] ?? r.type}</span>
-          <span class="hit-reading">${escape(r.reading || "")}</span>
-          <span class="hit-en">${escape(r.hint)}</span>
-        </a></li>`,
-      )
-      .join("");
-  }
-
-  function run(raw: string) {
-    if (!raw.trim()) {
-      hits.innerHTML = initial;
+  function run() {
+    const q = input.value;
+    if (!q.trim()) {
+      hits.hidden = true;
+      hits.innerHTML = "";
+      home.hidden = false;
       status.textContent = "";
       return;
     }
-    if (!mini) return;
-    const showUnverified = document.documentElement.dataset.unverified === "show";
-    const results = search(mini, raw).filter(
-      (r) => showUnverified || r.confidence === "verified",
-    );
-    render(results);
-    status.textContent = results.length ? `${results.length} 件` : "見つかりませんでした";
+    home.hidden = true;
+    if (!docs) {
+      status.textContent = "読み込み中…";
+      return;
+    }
+    const all = lookup(docs, mini, q);
+    const show = document.documentElement.dataset.unverified === "show";
+    const visible = show ? all : all.filter((r) => r.verified);
+    const hidden = all.length - visible.length;
+    hits.innerHTML = visible.map(row).join("");
+    hits.hidden = visible.length === 0;
+    status.innerHTML =
+      (visible.length ? `${visible.length} 件` : "見つかりませんでした") +
+      (hidden ? `（未確認の ${hidden} 件を隠しています <button type="button" data-show-unverified>表示する</button>）` : "");
+    document.dispatchEvent(new CustomEvent("matheigo:searched"));
   }
 
-  document.addEventListener("matheigo:unverified-changed", () => run(input.value));
+  // The preload in <head> has usually fetched the index by the time this runs.
+  fetch("/search-index.json")
+    .then((r) => r.json() as Promise<CompactIndex>)
+    .then((index) => {
+      docs = expand(index);
+      run();
+      // The substring scan answers until MiniSearch is ready; build it off the input path.
+      setTimeout(() => {
+        mini = createIndex(docs!);
+        if (input.value.trim()) run();
+      }, 0);
+    })
+    .catch(() => {
+      status.textContent = "検索の索引を読み込めませんでした。";
+    });
 
-  input.addEventListener("focus", load, { once: true });
-  input.addEventListener("input", () => void load().then(() => run(input.value)));
+  let timer = 0;
+  input.addEventListener("input", () => {
+    run();
+    clearTimeout(timer);
+    timer = window.setTimeout(() => {
+      const url = new URL(location.href);
+      if (input.value.trim()) url.searchParams.set("q", input.value);
+      else url.searchParams.delete("q");
+      history.replaceState(null, "", url);
+    }, 400);
+  });
+  input.form!.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const first = hits.querySelector("a");
+    if (first) location.href = first.href;
+  });
+  document.addEventListener("matheigo:unverified-changed", run);
+
+  const initial = new URLSearchParams(location.search).get("q");
+  if (initial) {
+    input.value = initial;
+    run();
+  }
+  if (location.hash === "#q") input.focus();
 </script>
