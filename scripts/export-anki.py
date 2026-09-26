@@ -28,6 +28,7 @@ makes Anki import a duplicate deck instead of updating the cards.
 """
 import argparse
 import hashlib
+import html
 import json
 import os
 import sys
@@ -93,22 +94,27 @@ def term_unit(term_id, units):
     return None
 
 
+def h(text):
+    """Field text as HTML: a < in a definition (0 < |x − a| < δ) would otherwise open a tag in Anki."""
+    return html.escape(text or "", quote=False)
+
+
 def term_fields(t):
     ex = (t.get("examples") or [{}])[0]
     gloss = bool(t.get("en_is_explanatory_translation"))
     return {
         "ID": t["id"],
-        "JA": t["ja"]["term"],
-        "Reading": t["ja"]["reading"],
-        "EN": t["en"]["term"],
+        "JA": h(t["ja"]["term"]),
+        "Reading": h(t["ja"]["reading"]),
+        "EN": h(t["en"]["term"]),
         "EN_Note": GLOSS_LABEL if gloss else "",
-        "TTS_Text": t.get("tts_text") or t.get("spoken_en") or t["en"]["term"],
-        "Respelling": t.get("respelling", ""),
-        "Definition_JA": t["definition_ja"],
-        "Definition_EN": t["definition_en"],
-        "LaTeX": f"\\({t['latex']}\\)" if t.get("latex") else "",
-        "Example_EN": ex.get("en", ""),
-        "Example_JA": ex.get("ja", ""),
+        "TTS_Text": h(t.get("tts_text") or t.get("spoken_en") or t["en"]["term"]),
+        "Respelling": h(t.get("respelling", "")),
+        "Definition_JA": h(t["definition_ja"]),
+        "Definition_EN": h(t["definition_en"]),
+        "LaTeX": f"\\({h(t['latex'])}\\)" if t.get("latex") else "",
+        "Example_EN": h(ex.get("en", "")),
+        "Example_JA": h(ex.get("ja", "")),
         "Level_JP": "・".join(t["level"]["jp"]),
         "Level_US": ", ".join(t["level"]["us"]),
         "Domain": ", ".join(t["domains"]),
@@ -227,13 +233,13 @@ def build(data_dir, out):
     for s in symbols:
         fields = {
             "ID": s["id"],
-            "LaTeX": f"\\({s['latex']}\\)",
-            "Spoken_EN": "<br>".join(x["text"] for x in s["spoken_en"]),
-            "TTS_Text": s.get("tts_text") or s["spoken_en"][0]["text"],
-            "Spoken_JA": s["spoken_ja"],
-            "Name_JA": s["name_ja"],
-            "Name_EN": s["name_en"],
-            "Notes": "<br>".join(s.get("notes") or []),
+            "LaTeX": f"\\({h(s['latex'])}\\)",
+            "Spoken_EN": "<br>".join(h(x["text"]) for x in s["spoken_en"]),
+            "TTS_Text": h(s.get("tts_text") or s["spoken_en"][0]["text"]),
+            "Spoken_JA": h(s["spoken_ja"]),
+            "Name_JA": h(s["name_ja"]),
+            "Name_EN": h(s["name_en"]),
+            "Notes": "<br>".join(h(x) for x in s.get("notes") or []),
             "URL": f"{SITE}/symbols/{s['id']}/",
         }
         deck("記号").add_note(
@@ -248,11 +254,11 @@ def build(data_dir, out):
     for p in phrases:
         fields = {
             "ID": p["id"],
-            "Intent": p["intent"],
-            "JA": p["ja"],
-            "EN": p["en"],
-            "Variants": "<br>".join(v["en"] for v in p.get("variants") or []),
-            "Notes": "<br>".join(p.get("notes") or []),
+            "Intent": h(p["intent"]),
+            "JA": h(p["ja"]),
+            "EN": h(p["en"]),
+            "Variants": "<br>".join(h(v["en"]) for v in p.get("variants") or []),
+            "Notes": "<br>".join(h(x) for x in p.get("notes") or []),
             "Situation": p["situation"],
             "URL": f"{SITE}/phrases/{p['situation']}/#{p['id']}",
         }
