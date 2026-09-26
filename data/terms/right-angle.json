@@ -1,0 +1,105 @@
+{
+  "id": "right-angle",
+  "ja": {
+    "term": "直角",
+    "reading": "ちょっかく",
+    "alt": []
+  },
+  "en": {
+    "term": "right angle",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "大きさが 90° の角。2 本の直線が垂直に交わるとき、そこにできる角はすべて直角になる。",
+  "definition_en": "An angle that measures exactly 90°. Perpendicular lines meet to form right angles.",
+  "latex": "\\angle C = 90^\\circ",
+  "spoken_en": "angle C equals ninety degrees",
+  "examples": [
+    {
+      "en": "See the little square in the corner? That tells you it's a right angle, so it's exactly 90 degrees.",
+      "ja": "角のところに小さな四角があるよね。これは直角の印で、ちょうど 90° ということ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In the figure, ∠ABC is a right angle and m∠ABD = 27°. Find m∠DBC.",
+      "ja": "図で、∠ABC は直角で、∠ABD = 27° である。∠DBC の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "right angle の right は「右」ではなく、「正しい・まっすぐな」の意味から来ている。直角三角形 right triangle（エントリ right-triangle）の right も同じ。",
+    "図で角に小さな正方形の印がかいてあれば、その角が直角であることを表す。",
+    "「2 直線が直角に交わる」は、英語では形容詞 perpendicular（エントリ perpendicular）を使って the lines are perpendicular と言える。"
+  ],
+  "related": [
+    "acute-angle",
+    "obtuse-angle",
+    "right-triangle",
+    "perpendicular",
+    "straight-angle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "直角",
+      "en": "Right angle"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "right angle": 180
+    },
+    "written": {
+      "right angle": 37
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

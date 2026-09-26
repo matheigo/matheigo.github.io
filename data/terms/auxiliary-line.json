@@ -1,0 +1,83 @@
+{
+  "id": "auxiliary-line",
+  "ja": {
+    "term": "補助線",
+    "reading": "ほじょせん",
+    "alt": []
+  },
+  "en": {
+    "term": "auxiliary line",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "証明や問題を解くために、もとの図にかき加える直線や線分。",
+  "definition_en": "An extra line, segment, or ray that you add to a diagram to help you solve a problem or write a proof.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's draw an auxiliary line here. If we connect B and D, the quadrilateral splits into two triangles.",
+      "ja": "ここに補助線を引こう。B と D を結ぶと、四角形が 2 つの三角形に分かれる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Draw an auxiliary line through vertex C parallel to side AB, and use it to prove that the sum of the interior angles of △ABC is 180°.",
+      "ja": "頂点 C を通り辺 AB に平行な補助線を引き、それを用いて △ABC の内角の和が 180° であることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「補助線を引く」は draw an auxiliary line。この draw は「（線を）かく」の意味で、袋から玉を取り出す draw（エントリ draw）と同じ語。引き算の「引く」（subtract、エントリ subtract）とは別の語。",
+    "auxiliary は 2 つ目の音節（zil）を強く読む。",
+    "IM Geometry は auxiliary line を用語集（glossary）の見出しにしている。"
+  ],
+  "related": [
+    "proof",
+    "parallel-lines",
+    "alternate-interior-angles",
+    "angle-sum-of-a-triangle",
+    "draw"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry glossary・2.6 Side-Angle-Side Triangle Congruence・2.10 Practicing Proofs"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 auxiliary line（Geometry glossary・Geometry 2.6 Side-Angle-Side Triangle Congruence・Geometry 2.10 Practicing Proofs・計 7 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

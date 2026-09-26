@@ -1,0 +1,86 @@
+{
+  "id": "opposite-angle",
+  "ja": {
+    "term": "対角",
+    "reading": "たいかく",
+    "alt": []
+  },
+  "en": {
+    "term": "opposite angle",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "四角形で、向かい合う角。三角形では、ある辺の向かいにある角をその辺の対角という。",
+  "definition_en": "In a quadrilateral, the angle across from a given angle (their vertices are not next to each other). In a triangle, the angle across from a given side.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Opposite angles in a parallelogram are equal, so if this angle is 70 degrees, the opposite angle is 70 degrees too.",
+      "ja": "平行四辺形の対角は等しいから、この角が 70° なら、向かいの角も 70° だよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In quadrilateral ABCD, both pairs of opposite angles are equal. Prove that ABCD is a parallelogram.",
+      "ja": "四角形 ABCD で、2 組の対角がそれぞれ等しい。四角形 ABCD は平行四辺形であることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「対角」と「対角線」を取り違えない。opposite angle は角、対角線は diagonal（エントリ diagonal）で線分。",
+    "対頂角（vertical angles、エントリ vertical-angles）とは別。対頂角は 2 直線が交わってできる向かい合う角で、四角形の対角とは違う。",
+    "円に内接する四角形では、対角の和が 180° になる（エントリ cyclic-quadrilateral）。平行四辺形の対角は等しいので、区別する。"
+  ],
+  "related": [
+    "opposite-side",
+    "parallelogram",
+    "vertical-angles",
+    "cyclic-quadrilateral",
+    "diagonal"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "opposite angle": 12
+    },
+    "written": {
+      "opposite angle": 10
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

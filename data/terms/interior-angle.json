@@ -1,0 +1,93 @@
+{
+  "id": "interior-angle",
+  "ja": {
+    "term": "内角",
+    "reading": "ないかく",
+    "alt": []
+  },
+  "en": {
+    "term": "interior angle",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "多角形のとなり合う 2 辺がつくる角のうち、多角形の内側にある角。n 角形には内角が n 個ある。",
+  "definition_en": "An angle inside a polygon, formed where two sides meet at a vertex. A polygon with n sides has n interior angles.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In a regular hexagon, every interior angle is 120 degrees.",
+      "ja": "正六角形では、内角はどれも 120°。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the measure of each interior angle of a regular octagon.",
+      "ja": "正八角形の 1 つの内角の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "内角をすべて足したものは sum of the interior angles（エントリ sum-of-the-interior-angles）。「1 つの内角」は each interior angle と言う。",
+    "1 つの頂点で、内角と外角（exterior angle、エントリ exterior-angle）の和は 180°。",
+    "錯角（alternate interior angles）や同側内角（same-side interior angles）の interior は「平行な 2 直線の間」のことで、多角形の interior angle の「図形の内側」とは指す場所が違う。"
+  ],
+  "related": [
+    "polygon",
+    "sum-of-the-interior-angles",
+    "exterior-angle",
+    "regular-polygon",
+    "triangle"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "5.27 Interior Angles in Convex Polygons"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "interior angle": 88
+    },
+    "written": {
+      "interior angle": 3
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-prealgebra",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

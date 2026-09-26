@@ -1,0 +1,86 @@
+{
+  "id": "area-preserving-transformation",
+  "ja": {
+    "term": "等積変形",
+    "reading": "とうせきへんけい",
+    "alt": []
+  },
+  "en": {
+    "term": "area-preserving transformation",
+    "alt": [
+      "same base and height"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "英語に決まった言い方がない。等積変形に当たる決まった名前はなく、底辺が共通で高さが等しい三角形は面積が等しい（triangles with the same base and the same height have equal areas）と文で説明する。見出しの area-preserving transformation は本プロジェクトの説明的な訳。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "図形の面積を変えずに、形を変えること。底辺が共通で高さが等しい三角形は面積が等しいことを使い、底辺に平行な直線にそって頂点を動かす。",
+  "definition_en": "Changing the shape of a figure without changing its area. It uses the fact that triangles with the same base and the same height have equal areas, so a vertex can slide along a line parallel to the base.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Slide point C along this parallel line, and the triangle keeps the same base and height, so the area doesn't change.",
+      "ja": "点 C をこの平行線にそって動かしても、底辺と高さは同じままだから、面積は変わらないよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Since AD ∥ BC, triangles ABC and DBC have the same base and height, so their areas are equal.",
+      "ja": "AD ∥ BC より、△ABC と △DBC は底辺が共通で高さが等しいから、面積は等しい。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "高さが等しいと言えるのは、動かす頂点が底辺に平行な直線の上にあるとき。平行でない直線にそって動かすと高さが変わり、面積も変わる。",
+    "等積変形では形が変わる。平行移動・回転・対称移動（エントリ rigid-motion）のように形も大きさも変わらない移動とは別のもの。",
+    "見出しの area-preserving transformation は本プロジェクトの説明的な訳で、英語の決まった名前ではない。"
+  ],
+  "related": [
+    "area",
+    "area-of-a-triangle",
+    "parallel-lines",
+    "height",
+    "base-of-a-triangle"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "same base and height": 2
+    },
+    "sources": [
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 2 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

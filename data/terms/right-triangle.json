@@ -1,0 +1,108 @@
+{
+  "id": "right-triangle",
+  "ja": {
+    "term": "直角三角形",
+    "reading": "ちょっかくさんかくけい",
+    "alt": []
+  },
+  "en": {
+    "term": "right triangle",
+    "alt": [],
+    "uk": "right-angled triangle",
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "1 つの角が直角である三角形。直角の向かいの辺を斜辺という。",
+  "definition_en": "A triangle with one right angle. The side opposite the right angle is the hypotenuse, and the two sides that form the right angle are the legs.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The side across from the right angle is the hypotenuse, and it's always the longest side of a right triangle.",
+      "ja": "直角の向かいの辺が斜辺で、直角三角形ではいつもいちばん長い辺になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "In right triangle ABC, m∠C = 90° and m∠A = 34°. Find m∠B.",
+      "ja": "∠C = 90° の直角三角形 ABC で、∠A = 34° のとき、∠B の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "直角をはさむ 2 辺は legs、直角の向かいの辺は hypotenuse（エントリ hypotenuse）と呼ぶ。日本語の「斜辺以外の辺」に当たる語が leg。",
+    "right は「右」ではなく直角の意味（エントリ right-angle）。英国では right-angled triangle と言う。",
+    "日本の中2 では、直角三角形だけに使える合同条件（斜辺と 1 つの鋭角、斜辺と他の 1 辺）を別に学ぶ（エントリ congruence-criteria-for-right-triangles）。"
+  ],
+  "related": [
+    "hypotenuse",
+    "right-angle",
+    "congruence-criteria-for-right-triangles",
+    "acute-triangle",
+    "obtuse-triangle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "直角三角形",
+      "en": "Right triangle"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "right triangle": 351
+    },
+    "written": {
+      "right triangle": 273
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

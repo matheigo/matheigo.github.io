@@ -1,0 +1,86 @@
+{
+  "id": "exterior-angle",
+  "ja": {
+    "term": "外角",
+    "reading": "がいかく",
+    "alt": []
+  },
+  "en": {
+    "term": "exterior angle",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "多角形の 1 つの辺と、となりの辺を延長した直線とがつくる、多角形の外側の角。1 つの頂点で、内角と外角の和は 180° になる。",
+  "definition_en": "The angle formed outside a polygon by one side and the extension of the side next to it. At each vertex, the interior angle and the exterior angle add up to 180°.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Extend this side out past the vertex, and the angle you get outside the triangle is the exterior angle.",
+      "ja": "この辺を頂点の先まで延ばすと、三角形の外側にできる角が外角。",
+      "register": "spoken"
+    },
+    {
+      "en": "In △ABC, m∠A = 45° and m∠B = 70°. Find the measure of the exterior angle at vertex C.",
+      "ja": "△ABC で ∠A = 45°、∠B = 70° のとき、頂点 C における外角の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "三角形の外角が、となり合わない 2 つの内角の和に等しいことは exterior angle theorem（エントリ exterior-angle-theorem）。",
+    "exterior は「外側の」の意味。平行線の alternate exterior angles（エントリ alternate-exterior-angles）の exterior は平行な 2 直線の外側のことで、多角形の外角とは指す角が違う。",
+    "外角をすべて足したものは exterior angle sum（エントリ sum-of-the-exterior-angles）。"
+  ],
+  "related": [
+    "interior-angle",
+    "exterior-angle-theorem",
+    "sum-of-the-exterior-angles",
+    "polygon",
+    "triangle"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.18 Exterior Angles and Theorems・5.28 Exterior Angles in Convex Polygons"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "exterior angle": 44
+    },
+    "sources": [
+      "khan-middle",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

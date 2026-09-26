@@ -1,0 +1,86 @@
+{
+  "id": "angle-sum-of-a-triangle",
+  "ja": {
+    "term": "三角形の内角の和",
+    "reading": "さんかくけいのないかくのわ",
+    "alt": []
+  },
+  "en": {
+    "term": "triangle sum theorem",
+    "alt": [
+      "angle sum of a triangle",
+      "triangle angle sum"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語は「三角形の内角の和」という量の名前で言うが、米国の Geometry はこれを定理の名前 triangle sum theorem（triangle angle sum theorem）で呼ぶ。CK-12 Geometry は 4.17 Triangle Angle Sum Theorem でこの定理を扱う。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "三角形の 3 つの内角の大きさの和。どんな三角形でも 180° になる。",
+  "definition_en": "The fact that the three interior angles of any triangle add up to 180°. It is proved by drawing a line through one vertex parallel to the opposite side and using alternate interior angles.",
+  "latex": "\\angle A + \\angle B + \\angle C = 180^\\circ",
+  "spoken_en": "angle A plus angle B plus angle C equals one hundred eighty degrees",
+  "examples": [
+    {
+      "en": "By the triangle sum theorem, all three angles add up to 180, so the missing angle is 180 minus 50 minus 60, which is 70 degrees.",
+      "ja": "三角形の内角の和は 180° だから、3 つの角を足すと 180° になる。残りの角は 180 − 50 − 60 = 70 で、70° だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In △ABC, m∠A = 48° and m∠B = 67°. Use the triangle sum theorem to find m∠C.",
+      "ja": "△ABC で ∠A = 48°、∠B = 67° である。三角形の内角の和を用いて、∠C の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "triangle sum theorem は「3 つの内角の和は 180° である」という定理の名前で、和の値そのものを指す語ではない。「内角の和」という量を言うときは angle sum of a triangle の形（the angle sum of a triangle is 180°）になる。",
+    "多角形の内角の和（エントリ sum-of-the-interior-angles）とは別の見出し。n 角形の内角の和は 180° × (n − 2) で、三角形の 180° は n = 3 の場合にあたる。",
+    "三角形の 1 つの外角が、隣り合わない 2 つの内角の和に等しいこと（エントリ exterior-angle-theorem）は、内角の和が 180° であることから導ける。"
+  ],
+  "related": [
+    "sum-of-the-interior-angles",
+    "alternate-interior-angles",
+    "interior-angle",
+    "exterior-angle-theorem",
+    "auxiliary-line"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.17 Triangle Angle Sum Theorem・4.18 Exterior Angles and Theorems"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 triangle sum theorem（CK-12 Geometry 4.17 Triangle Angle Sum Theorem・CK-12 Geometry 4.18 Exterior Angles and Theorems・CK-12 Geometry 4.4 Isosceles Triangles・計 25 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

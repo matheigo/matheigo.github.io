@@ -1,0 +1,91 @@
+{
+  "id": "corresponding-angles-of-congruent-figures",
+  "ja": {
+    "term": "対応する角",
+    "reading": "たいおうするかく",
+    "alt": []
+  },
+  "en": {
+    "term": "corresponding angles",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "合同や相似な 2 つの図形で、一方を動かして（相似なら拡大・縮小もして）重ねたときに重なり合う角どうし。対応する角の大きさは等しい。",
+  "definition_en": "In two congruent or similar figures, a pair of angles that are in matching positions, so they would line up if one figure were moved (and resized, for similar figures) onto the other. Corresponding angles of congruent or similar figures have equal measures.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The triangles are congruent, so their corresponding angles are equal. That means angle D is 50 degrees too.",
+      "ja": "三角形が合同だから、対応する角は等しい。だから ∠D も 50° だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Given △ABC ≅ △DEF, list all three pairs of corresponding angles.",
+      "ja": "△ABC ≡ △DEF である。対応する角の組を 3 つすべて答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の corresponding angles は、2 直線に 1 本の直線が交わってできる「同位角」（エントリ corresponding-angles）の意味にもなる。合同・相似な図形の話か、平行線の話かで区別する。",
+    "△ABC ≅ △DEF のように頂点を対応する順に書くので、∠A と ∠D、∠B と ∠E、∠C と ∠F が対応する角になる。日本の教科書は合同の記号に ≡ を使い、英語では ≅ を使う（エントリ congruent）。",
+    "合同な三角形の対応する部分（角と辺）が等しいという事実は CPCTC（エントリ cpctc）。"
+  ],
+  "related": [
+    "corresponding-sides",
+    "congruent",
+    "similar-triangles",
+    "cpctc",
+    "corresponding-angles"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "corresponding angle measures | corresponding angles have the same measure | corresponding angles are equal in measure": 3
+    },
+    "written": {
+      "corresponding angle measures | corresponding angles have the same measure | corresponding angles are equal in measure": 7
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-elemalg",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 7 件（10 未満））。見出しは OpenStax の呼び方 corresponding angle measures | corresponding angles have the same measure | corresponding angles are equal in measure（本文 7 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "acute-triangle",
+  "ja": {
+    "term": "鋭角三角形",
+    "reading": "えいかくさんかくけい",
+    "alt": []
+  },
+  "en": {
+    "term": "acute triangle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "3 つの角がすべて鋭角である三角形。いちばん大きい角も 90° より小さい。",
+  "definition_en": "A triangle in which all three angles are acute, so even its largest angle is less than 90°.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "All three angles are less than 90, so this is an acute triangle.",
+      "ja": "3 つの角が全部 90° より小さいから、これは鋭角三角形。",
+      "register": "spoken"
+    },
+    {
+      "en": "Two angles of a triangle measure 55° and 65°. Is the triangle an acute triangle? Explain your reasoning.",
+      "ja": "三角形の 2 つの角が 55°、65° である。この三角形は鋭角三角形か。理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "角が 1 つ鋭角なだけでは鋭角三角形とはいえない。どの三角形にも鋭角が少なくとも 2 つあるので、いちばん大きい角が鋭角かどうかで見分ける。",
+    "角による三角形の分け方は acute ／ right ／ obtuse triangle（鋭角・直角・鈍角三角形。エントリ right-triangle、obtuse-triangle）。CK-12 Geometry は 4.2 Classify Triangles by Angle Measurement でこの 3 つに分ける。",
+    "3 辺の長さ a, b, c（c がいちばん長い）から見分けるときは、c² < a² + b² なら鋭角三角形。"
+  ],
+  "related": [
+    "acute-angle",
+    "right-triangle",
+    "obtuse-triangle",
+    "triangle",
+    "scalene-triangle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "鋭角三角形",
+      "en": "Acute triangle"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.2 Classify Triangles by Angle Measurement・4.29 Pythagorean Theorem to Classify Triangles"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "acute triangle": 3
+    },
+    "written": {
+      "acute triangle": 1
+    },
+    "sources": [
+      "openstax-algtrig",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは CK-12 の呼び方 acute triangle（CK-12 Geometry 4.29 Pythagorean Theorem to Classify Triangles・CK-12 Geometry 4.2 Classify Triangles by Angle Measurement・CK-12 Geometry 4.1 Classify Triangles・計 23 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

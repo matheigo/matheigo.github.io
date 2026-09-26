@@ -1,0 +1,97 @@
+{
+  "id": "parallelogram",
+  "ja": {
+    "term": "平行四辺形",
+    "reading": "へいこうしへんけい",
+    "alt": []
+  },
+  "en": {
+    "term": "parallelogram",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "2 組の向かい合う辺がそれぞれ平行な四角形。向かい合う辺の長さ、向かい合う角の大きさはそれぞれ等しく、2 本の対角線はそれぞれの中点で交わる。",
+  "definition_en": "A quadrilateral with both pairs of opposite sides parallel. Its opposite sides are equal, its opposite angles are equal, and its diagonals bisect each other.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In a parallelogram, opposite sides are parallel and the same length, so if this side is 7, the side across from it is 7 too.",
+      "ja": "平行四辺形では向かい合う辺は平行で長さも同じだから、この辺が 7 なら、向かいの辺も 7 だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "In parallelogram ABCD, m∠A = 65°. Find m∠B, m∠C, and m∠D.",
+      "ja": "平行四辺形 ABCD で ∠A = 65° のとき、∠B、∠C、∠D の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "長方形・ひし形・正方形はどれも平行四辺形の特別な場合（エントリ rectangle、rhombus、square-shape）。",
+    "台形の定義によっては、平行四辺形も台形に入る（エントリ trapezoid）。IM Geometry は台形を平行な辺が「少なくとも 1 組」の四角形とし、CK-12 Geometry は「ちょうど 1 組」として平行四辺形を除く。",
+    "「対角線がそれぞれの中点で交わる」は英語で the diagonals bisect each other（エントリ bisect）。"
+  ],
+  "related": [
+    "quadrilateral",
+    "rectangle",
+    "rhombus",
+    "trapezoid",
+    "conditions-for-a-parallelogram"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "平行四辺形",
+      "en": "Parallelogram"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "parallelogram": 137
+    },
+    "written": {
+      "parallelogram": 78
+    },
+    "sources": [
+      "khan-middle",
+      "mit-18.02",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

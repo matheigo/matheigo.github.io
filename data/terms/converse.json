@@ -1,0 +1,94 @@
+{
+  "id": "converse",
+  "ja": {
+    "term": "逆",
+    "reading": "ぎゃく",
+    "alt": []
+  },
+  "en": {
+    "term": "converse",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "命題「p ならば q」の仮定と結論を入れかえた命題「q ならば p」。もとの命題が正しくても、逆が正しいとは限らない。",
+  "definition_en": "For a statement \"if p, then q,\" the statement \"if q, then p,\" made by switching the hypothesis and the conclusion. The converse of a true statement is not always true.",
+  "latex": "q \\Rightarrow p",
+  "spoken_en": "if q, then p",
+  "examples": [
+    {
+      "en": "The converse just flips it around. \"If it's a multiple of 4, it's even\" becomes \"if it's even, it's a multiple of 4,\" and that one's false, because 6 is even but it's not a multiple of 4.",
+      "ja": "逆は入れかえるだけ。「4 の倍数ならば偶数」が「偶数ならば 4 の倍数」になる。こっちは正しくない。6 は偶数だけど 4 の倍数じゃないからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write the converse of the statement \"If two angles are vertical angles, then they are equal.\" Is the converse true? If not, give a counterexample.",
+      "ja": "「2 つの角が対頂角ならば、それらは等しい」の逆を書け。逆は正しいか。正しくなければ反例を 1 つあげよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "論理の逆・裏・対偶は converse・inverse・contrapositive（エントリ inverse、contrapositive）。英語の inverse は論理では「裏」のことで、「逆」ではない。",
+    "逆関数（inverse function）や逆数（reciprocal）の「逆」も converse ではない（エントリ inverse-function、reciprocal）。日常語の「逆」（反対）は opposite や reverse で、converse は命題の逆にだけ使う。",
+    "「〜の定理の逆」は the converse of the … theorem（二等辺三角形の定理の逆は the converse of the base angles theorem、エントリ isosceles-triangle-theorem）。"
+  ],
+  "related": [
+    "inverse",
+    "contrapositive",
+    "conditional-statement",
+    "counterexample",
+    "proposition"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "逆",
+      "en": "Converse (logic)"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "converse": 2
+    },
+    "written": {
+      "converse": 15
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

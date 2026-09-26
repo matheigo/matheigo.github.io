@@ -1,0 +1,92 @@
+{
+  "id": "representations-of-a-function",
+  "ja": {
+    "term": "関数の表現",
+    "reading": "かんすうのひょうげん",
+    "alt": []
+  },
+  "en": {
+    "term": "multiple representations",
+    "alt": [
+      "representations of a function",
+      "tables, graphs, and equations"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の中学では、1 つの関数を表・式・グラフの 3 つで表し、互いに行き来する。英語では、同じ関係を表・グラフ・式・言葉などいくつもの形で表すことを multiple representations と言い、関数に限らず使う。AP Calculus の CED（topic 1.9）は極限を表・グラフ・式で表すことをこの言い方で扱っており、見出しはこの CED の言い方にした。",
+  "domains": [
+    "algebra",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中2"
+    ],
+    "us": [
+      "Integrated Math 1",
+      "Algebra 1"
+    ]
+  },
+  "definition_ja": "1 つの関数（2 つの数量の関係）を、表・式・グラフなどいくつかの形で表すこと。どの形も同じ関係を表しているので、1 つの形からほかの形へ行き来できる。",
+  "definition_en": "Showing the same function or relationship in several forms, such as a table, a graph, an equation, or words. Every form shows the same relationship, so you can go from any one of them to the others.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Table, graph, equation: those are multiple representations of the same function, so if your table says y is 7 when x is 2, your graph better go through (2, 7).",
+      "ja": "表・グラフ・式は、同じ関数をいろいろな形で表したもの。だから表で x = 2 のとき y = 7 なら、グラフは (2, 7) を通っていないとおかしい。",
+      "register": "spoken"
+    },
+    {
+      "en": "A 20 cm candle burns down 2 cm every hour. Let y be its height in centimeters after x hours. Use multiple representations to show the relationship: make a table, write an equation, and draw a graph.",
+      "ja": "長さ 20 cm のろうそくが、1 時間に 2 cm ずつ短くなる。火をつけてから x 時間後のろうそくの長さを y cm として、x と y の関係を表・式・グラフで表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「関数の表現」を function expression と直訳しない。英語の expression は「式」（エントリ expression）の意味で、表やグラフは含まない。",
+    "multiple representations は表し方をまとめて言う言い方で、1 つ 1 つの表し方は a representation（represent の名詞形、エントリ represent）と言う。",
+    "英語では、表・グラフ・式に加えて、言葉による説明（words）も表し方の 1 つに数える。"
+  ],
+  "related": [
+    "function",
+    "table-of-values",
+    "graph",
+    "equation",
+    "represent"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (2020)",
+      "note": "topic 1.9"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "tables, graphs, and equations": 1
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは CED の呼び方 multiple representations（topic 1.9）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "sum-of-the-exterior-angles",
+  "ja": {
+    "term": "外角の和",
+    "reading": "がいかくのわ",
+    "alt": []
+  },
+  "en": {
+    "term": "exterior angle sum",
+    "alt": [
+      "sum of the exterior angles"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "多角形の各頂点で外角を 1 つずつとり、それらをすべて足した大きさ。何角形でも 360° になる。",
+  "definition_en": "The total of the exterior angles of a polygon, taking one exterior angle at each vertex. No matter how many sides the polygon has, the exterior angle sum is 360°.",
+  "latex": "\\text{exterior angle sum} = 360^\\circ",
+  "spoken_en": "the exterior angle sum equals 360 degrees",
+  "examples": [
+    {
+      "en": "No matter how many sides the polygon has, the exterior angle sum is always 360 degrees.",
+      "ja": "多角形の辺がいくつあっても、外角の和はいつも 360°。",
+      "register": "spoken"
+    },
+    {
+      "en": "Each exterior angle of a regular polygon measures 24°. Use the exterior angle sum to find how many sides the polygon has.",
+      "ja": "1 つの外角が 24° である正多角形は正何角形か。外角の和を用いて求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "内角の和（sum of the interior angles、エントリ sum-of-the-interior-angles）は辺の数で変わるが、外角の和は変わらない。",
+    "外角は各頂点で 1 つずつとる。1 つの頂点では、どちらの辺を延ばすかで外角が 2 つできる（対頂角で等しい）が、両方は足さない。"
+  ],
+  "related": [
+    "exterior-angle",
+    "sum-of-the-interior-angles",
+    "polygon",
+    "regular-polygon",
+    "interior-angle"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.18 Exterior Angles and Theorems・5.28 Exterior Angles in Convex Polygons"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 exterior angle sum（CK-12 Geometry 4.18 Exterior Angles and Theorems・CK-12 Geometry 5.28 Exterior Angles in Convex Polygons・計 8 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

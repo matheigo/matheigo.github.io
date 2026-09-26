@@ -1,0 +1,89 @@
+{
+  "id": "rhombus",
+  "ja": {
+    "term": "ひし形",
+    "reading": "ひしがた",
+    "alt": []
+  },
+  "en": {
+    "term": "rhombus",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "4 つの辺の長さがすべて等しい四角形。平行四辺形の特別な場合で、2 本の対角線は垂直に交わる。",
+  "definition_en": "A quadrilateral with all four sides the same length. It is a special kind of parallelogram, and its diagonals are perpendicular.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A rhombus is like a square that got pushed over: all four sides are still equal, but the angles don't have to be 90 degrees.",
+      "ja": "ひし形は、正方形を横から押して傾けたような形。4 つの辺は等しいままだけど、角は 90° でなくていい。",
+      "register": "spoken"
+    },
+    {
+      "en": "The diagonals of a rhombus are 6 cm and 8 cm long. Find the area of the rhombus.",
+      "ja": "対角線の長さが 6 cm と 8 cm のひし形の面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "複数形は rhombi または rhombuses。",
+    "正方形もひし形の特別な場合（エントリ square-shape）。ひし形の角は直角とは限らず、4 つの角も直角なら正方形になる。",
+    "ひし形の対角線は垂直に交わるが、長さが等しいとは限らない。対角線の長さも等しいのは正方形。"
+  ],
+  "related": [
+    "parallelogram",
+    "square-shape",
+    "rectangle",
+    "diagonal",
+    "quadrilateral"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "5.7 Quadrilateral Classification"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "rhombus": 60
+    },
+    "written": {
+      "rhombus": 1
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-calculus",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

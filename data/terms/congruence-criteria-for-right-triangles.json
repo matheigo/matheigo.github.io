@@ -1,0 +1,82 @@
+{
+  "id": "congruence-criteria-for-right-triangles",
+  "ja": {
+    "term": "直角三角形の合同条件",
+    "reading": "ちょっかくさんかくけいのごうどうじょうけん",
+    "alt": []
+  },
+  "en": {
+    "term": "right triangle congruence",
+    "alt": [
+      "congruence of right triangles",
+      "right triangle congruence theorems"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない。米国の Geometry は、日本の 2 つの条件のうち「斜辺と他の 1 辺がそれぞれ等しい」を HL（hypotenuse-leg）と呼んで定理として扱い、「斜辺と 1 つの鋭角がそれぞれ等しい」は AAS で示せる。2 つをまとめた決まった名前はない。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "2 つの直角三角形が合同になるための条件。「斜辺と 1 つの鋭角がそれぞれ等しい」「斜辺と他の 1 辺がそれぞれ等しい」の 2 つがある。",
+  "definition_en": "The conditions that make two right triangles congruent: the hypotenuses and one pair of acute angles are equal, or the hypotenuses and one pair of legs are equal.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For right triangle congruence, there are two shortcuts: the hypotenuse and a leg, which is HL, or the hypotenuse and an acute angle, which is really just AAS.",
+      "ja": "直角三角形の合同には近道が 2 つある。斜辺と他の 1 辺（HL）か、斜辺と 1 つの鋭角で、こっちは実は AAS だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In right triangles ABC and DEF, ∠C = ∠F = 90°, AB = DE, and ∠A = ∠D. Prove that △ABC ≅ △DEF, and state which condition for right triangle congruence you used.",
+      "ja": "∠C = ∠F = 90° の直角三角形 ABC と DEF で、AB = DE、∠A = ∠D のとき、△ABC ≡ △DEF であることを証明せよ。また、用いた直角三角形の合同条件を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「斜辺と他の 1 辺がそれぞれ等しい」は HL（hypotenuse-leg、エントリ hl-congruence）。英語の leg は直角をはさむ辺で、日本語の「他の 1 辺」に当たる。",
+    "「斜辺と 1 つの鋭角がそれぞれ等しい」は、直角と合わせると 2 組の角とその間にない 1 辺が等しくなるので、AAS（エントリ aas-congruence）で示せる。",
+    "答案では、2 つの三角形に直角があること（∠C = ∠F = 90°）を先に書く。HL も AAS も直角の組を使う。"
+  ],
+  "related": [
+    "hl-congruence",
+    "aas-congruence",
+    "congruence-criteria",
+    "right-triangle",
+    "hypotenuse"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "acute-angle",
+  "ja": {
+    "term": "鋭角",
+    "reading": "えいかく",
+    "alt": []
+  },
+  "en": {
+    "term": "acute angle",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "大きさが 0° より大きく 90° より小さい角。直角よりも開きが小さい。",
+  "definition_en": "An angle that measures more than 0° and less than 90°, so it is smaller than a right angle.",
+  "latex": "0^\\circ < \\theta < 90^\\circ",
+  "spoken_en": "zero degrees is less than theta, which is less than ninety degrees",
+  "examples": [
+    {
+      "en": "An acute angle is anything less than 90 degrees, so it's narrower than the corner of your paper.",
+      "ja": "鋭角は 90° より小さい角のこと。だから紙の角（かど）よりもせまい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Select all of the following that could be the measure of an acute angle: 15°, 64°, 90°, 91°.",
+      "ja": "次の 15°、64°、90°、91° のうち、鋭角の大きさになりうるものをすべて選べ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "acute は日常語では「鋭い」「急性の」の意味で使う単語。数学では 90° より小さい角を表す。",
+    "0° と 90° は含まない。ちょうど 90° の角は直角（エントリ right-angle）で、鋭角ではない。",
+    "鋭角三角形（エントリ acute-triangle）は 3 つの角がすべて鋭角の三角形。直角三角形や鈍角三角形にも鋭角は 2 つある。"
+  ],
+  "related": [
+    "right-angle",
+    "obtuse-angle",
+    "acute-triangle",
+    "angle",
+    "complementary-angle"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "acute angle": 4
+    },
+    "written": {
+      "acute angle": 40
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "id": "definition",
+  "ja": {
+    "term": "定義",
+    "reading": "ていぎ",
+    "alt": []
+  },
+  "en": {
+    "term": "definition",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "用語の意味を、ほかの意味にとれないようにはっきり決めた文。定義は約束ごとなので、証明はしない。",
+  "definition_en": "A statement that tells exactly what a word or symbol means. A definition is agreed on, not proved.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "You don't prove a definition. By definition, an isosceles triangle has two equal sides, so for that step your reason is just \"by definition.\"",
+      "ja": "定義は証明しない。定義より、二等辺三角形は 2 辺が等しいから、そこの理由は「定義より」と書けばいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "State the definition of an isosceles triangle.",
+      "ja": "二等辺三角形の定義を述べよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「定義より」は by definition（冠詞を付けない）。何の定義かを言うときは by the definition of a midpoint のように the を付ける。",
+    "定義は証明するものではない。定義・公準をもとに証明して正しいとわかった事柄が定理（エントリ theorem）。",
+    "二等辺三角形の定義は「2 辺が等しい三角形」で、「2 つの底角が等しい」は定義から証明する定理（エントリ isosceles-triangle-theorem）。証明の理由を書くとき、定義と定理を取り違えない。"
+  ],
+  "related": [
+    "theorem",
+    "postulate",
+    "undefined-terms",
+    "proof",
+    "isosceles-triangle-theorem"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "definition": 936
+    },
+    "written": {
+      "definition": 1128
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

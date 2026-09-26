@@ -1,0 +1,92 @@
+{
+  "id": "alternate-interior-angles",
+  "ja": {
+    "term": "錯角",
+    "reading": "さっかく",
+    "alt": []
+  },
+  "en": {
+    "term": "alternate interior angles",
+    "alt": [],
+    "uk": "alternate angles",
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "2 本の直線に 1 本の直線が交わってできる角のうち、2 直線の内側にあり、交わる直線をはさんで反対側にある 2 つの角。2 直線が平行なら、錯角は等しい。",
+  "definition_en": "A pair of angles formed when a transversal crosses two lines, lying between the two lines and on opposite sides of the transversal. If the two lines are parallel, alternate interior angles are congruent.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "They're both between the lines but on opposite sides of the transversal, so they're alternate interior angles.",
+      "ja": "どちらも 2 直線の間にあるけど、横断線をはさんで反対側にある。だから錯角だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "A transversal crosses lines ℓ and m so that a pair of alternate interior angles both measure 63°. Are ℓ and m parallel? Explain.",
+      "ja": "2 直線 ℓ、m に 1 本の直線が交わり、錯角の組がどちらも 63° になっている。ℓ と m は平行か。理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の中学の「錯角」は内側の組のこと。英語では外側の組 alternate exterior angles（エントリ alternate-exterior-angles）と区別するため interior を付ける。英国の alternate angles はこの内側の組を指す。",
+    "平行線の錯角が等しいことは alternate interior angles theorem（エントリ alternate-interior-angles-theorem）。",
+    "alternate はここでは「互い違いの」の意味で、2 つの角が交わる直線の左右に互い違いにあることを表す。「代わりの」の意味の alternate（alternative）とは別。"
+  ],
+  "related": [
+    "transversal",
+    "alternate-interior-angles-theorem",
+    "alternate-exterior-angles",
+    "corresponding-angles",
+    "parallel-lines"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "錯角",
+      "en": "Alternate angles"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "3.5 Alternate Interior Angles"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "alternate interior angles": 22
+    },
+    "written": {
+      "alternate interior angles": 1
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-algtrig",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

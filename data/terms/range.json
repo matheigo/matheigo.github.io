@@ -1,0 +1,93 @@
+{
+  "id": "range",
+  "ja": {
+    "term": "値域",
+    "reading": "ちいき",
+    "alt": []
+  },
+  "en": {
+    "term": "range",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "関数で、x が定義域の値をとるときに y（出力）がとる値全体。中学で習う「y の変域」のこと。",
+  "definition_en": "The set of all output values (y-values) that a function takes. On a graph, it is all the y-values the graph covers.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Domain is the x-values going in, and range is the y-values coming out.",
+      "ja": "定義域は入っていく x の値、値域は出てくる y の値。",
+      "register": "spoken"
+    },
+    {
+      "en": "The domain of the function y = −2x + 4 is 0 ≤ x ≤ 3. Find the range.",
+      "ja": "関数 y = −2x + 4 の x の変域が 0 ≦ x ≦ 3 のとき、y の変域を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "統計の「範囲」（最大値 − 最小値、エントリ range-of-data）も同じ range という単語。データの range は 1 つの数で、関数の range は y がとる値の集まり。",
+    "x（入力）の側は domain（エントリ domain）、y（出力）の側が range で、取り違えやすい。中学の「y の変域」も range と言い、x の変域と合わせて言うときは domain and range（エントリ domain-and-range）。",
+    "傾きが負の 1 次関数では、x の変域の小さいほうの端が、y の変域の大きいほうの端に対応する（y = −2x + 4、0 ≦ x ≦ 3 なら −2 ≦ y ≦ 4）。"
+  ],
+  "related": [
+    "domain",
+    "domain-and-range",
+    "range-of-data",
+    "function",
+    "find-the-domain"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "値域",
+      "en": "Range of a function"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "range of the function | range of a function | range of f | range of g | range of this function": 2
+    },
+    "written": {
+      "range of the function | range of a function | range of f | range of g | range of this function": 91
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

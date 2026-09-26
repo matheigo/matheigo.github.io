@@ -1,0 +1,88 @@
+{
+  "id": "base-angle",
+  "ja": {
+    "term": "底角",
+    "reading": "ていかく",
+    "alt": []
+  },
+  "en": {
+    "term": "base angle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "二等辺三角形の底辺の両端にある 2 つの角。2 つの底角の大きさは等しい。",
+  "definition_en": "One of the two angles at the ends of the base of an isosceles triangle. The two base angles of an isosceles triangle are equal.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If the vertex angle is 36 degrees, then each base angle is 72, because 180 minus 36 is 144, and half of that is 72.",
+      "ja": "頂角が 36° なら、底角はそれぞれ 72°。180 − 36 = 144 で、その半分が 72 だからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "In isosceles triangle ABC with AB = AC, each base angle measures 65°. Find the measure of the vertex angle.",
+      "ja": "AB = AC の二等辺三角形 ABC で、底角がそれぞれ 65° のとき、頂角の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「二等辺三角形の底角は等しい」という定理は base angles theorem と呼ぶ（エントリ isosceles-triangle-theorem）。",
+    "底角の「底」は底辺（base、エントリ base-of-a-triangle）の「底」。等しい 2 辺にはさまれた角は頂角（vertex angle、エントリ vertex-angle）。",
+    "英語の base angle は台形の底辺の両端の角にも使う（CK-12 Geometry 5.13 Trapezoids）。"
+  ],
+  "related": [
+    "vertex-angle",
+    "isosceles-triangle",
+    "isosceles-triangle-theorem",
+    "base-of-a-triangle",
+    "trapezoid"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.4 Isosceles Triangles・4.5 Equilateral Triangles"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "base angle": 4
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.01"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 base angle（CK-12 Geometry 4.4 Isosceles Triangles・CK-12 Geometry 4.5 Equilateral Triangles・CK-12 Geometry 5.13 Trapezoids・計 37 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

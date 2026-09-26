@@ -1,0 +1,91 @@
+{
+  "id": "vertical-angles",
+  "ja": {
+    "term": "対頂角",
+    "reading": "たいちょうかく",
+    "alt": []
+  },
+  "en": {
+    "term": "vertical angles",
+    "alt": [],
+    "uk": "vertically opposite angles",
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "2 本の直線が交わってできる 4 つの角のうち、向かい合っている 2 つの角。対頂角は等しい。",
+  "definition_en": "A pair of opposite angles formed when two lines intersect. Vertical angles are always congruent.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Angles 1 and 3 are vertical angles, so if this one's 40 degrees, that one's 40 too.",
+      "ja": "∠1 と ∠3 は対頂角だから、こっちが 40° なら、あっちも 40°。",
+      "register": "spoken"
+    },
+    {
+      "en": "Lines AB and CD intersect at point E, and ∠AEC and ∠BED are vertical angles. If m∠AEC = (3x + 12)° and m∠BED = (5x − 20)°, find x.",
+      "ja": "直線 AB と CD が点 E で交わり、∠AEC と ∠BED は対頂角である。∠AEC = (3x + 12)°、∠BED = (5x − 20)° のとき、x の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "vertical は「垂直」（perpendicular、エントリ perpendicular）の意味ではなく、vertex（頂点）から来た語で、「頂点を共有する」という意味。対頂角をつくる 2 直線が垂直に交わっている必要はない。",
+    "「対頂角は等しい」は vertical angles are congruent と言う（CK-12 Geometry 1.16 Vertical Angles）。角が等しいことに congruent（エントリ congruent）を使う。",
+    "vertical angles は 2 つの角の組の名前で、∠1 and ∠3 are vertical angles のように 2 つの角を主語にして言う。英国では vertically opposite angles。"
+  ],
+  "related": [
+    "angle",
+    "linear-pair",
+    "adjacent-angles",
+    "congruent",
+    "perpendicular"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "対頂角",
+      "en": "Vertical angles"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.16 Vertical Angles"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "vertical angles": 59
+    },
+    "sources": [
+      "khan-middle",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

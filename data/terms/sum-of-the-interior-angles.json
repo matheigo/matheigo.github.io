@@ -1,0 +1,97 @@
+{
+  "id": "sum-of-the-interior-angles",
+  "ja": {
+    "term": "内角の和",
+    "reading": "ないかくのわ",
+    "alt": []
+  },
+  "en": {
+    "term": "sum of the interior angles",
+    "alt": [
+      "interior angle sum",
+      "polygon angle sum"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "多角形の内角をすべて足した大きさ。n 角形の内角の和は 180°(n − 2) で、1 つの頂点から引いた対角線で n − 2 個の三角形に分けられることから求められる。",
+  "definition_en": "The total of all the interior angles of a polygon. For a polygon with n sides it is 180°(n − 2), because the diagonals from one vertex split the polygon into n − 2 triangles.",
+  "latex": "180^\\circ (n - 2)",
+  "spoken_en": "180 degrees times the quantity n minus 2",
+  "examples": [
+    {
+      "en": "A pentagon splits into three triangles, so the sum of the interior angles is 3 times 180, or 540 degrees.",
+      "ja": "五角形は三角形 3 つに分けられるから、内角の和は 180° × 3 で 540°。",
+      "register": "spoken"
+    },
+    {
+      "en": "The sum of the interior angles of a polygon is 1,260°. How many sides does the polygon have?",
+      "ja": "内角の和が 1260° である多角形は何角形か。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「n 角形」は英語では an n-gon、または a polygon with n sides と、辺の数で言う。「何角形か」は How many sides does the polygon have? と聞く。",
+    "外角の和（exterior angle sum、エントリ sum-of-the-exterior-angles）は何角形でも 360° で、内角の和と違って n によらない。",
+    "三角形の内角の和 180° はエントリ angle-sum-of-a-triangle。公式 180°(n − 2) に n = 3 を入れたものになっている。"
+  ],
+  "related": [
+    "interior-angle",
+    "sum-of-the-exterior-angles",
+    "angle-sum-of-a-triangle",
+    "polygon",
+    "diagonal"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "5.27 Interior Angles in Convex Polygons・5.26 Determine Missing Angle Measures"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "sum of the interior angles": 8
+    },
+    "written": {
+      "sum of the interior angles": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "openstax-prealgebra",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは CK-12 の呼び方 sum of the interior angles（CK-12 Geometry 5.27 Interior Angles in Convex Polygons・CK-12 Geometry 5.26 Determine Missing Angle Measures・CK-12 Geometry 4.1 Classify Triangles・計 15 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

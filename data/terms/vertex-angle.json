@@ -1,0 +1,84 @@
+{
+  "id": "vertex-angle",
+  "ja": {
+    "term": "頂角",
+    "reading": "ちょうかく",
+    "alt": []
+  },
+  "en": {
+    "term": "vertex angle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "二等辺三角形で、長さの等しい 2 辺にはさまれた角。頂角の二等分線は、底辺を垂直に二等分する。",
+  "definition_en": "In an isosceles triangle, the angle between the two equal sides (the legs). The bisector of the vertex angle is also the perpendicular bisector of the base.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If you bisect the vertex angle, that line hits the base at a right angle and cuts it in half.",
+      "ja": "頂角を二等分すると、その線は底辺と垂直に交わって、底辺をちょうど半分に分けるよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In isosceles triangle ABC with AB = AC, the bisector of the vertex angle A meets BC at D. Prove that BD = CD and AD ⊥ BC.",
+      "ja": "AB = AC の二等辺三角形 ABC で、頂角 ∠A の二等分線と辺 BC との交点を D とする。BD = CD、AD ⊥ BC であることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "三角形の 3 つの頂点はどれも vertex（エントリ vertex）だが、二等辺三角形で vertex angle と言えば、等しい 2 辺にはさまれた角（頂角）のこと。",
+    "頂角と底角は vertex angle と base angles（エントリ base-angle）。頂角の二等分線は底辺の垂直二等分線にもなる（エントリ angle-bisector、perpendicular-bisector）。"
+  ],
+  "related": [
+    "base-angle",
+    "isosceles-triangle",
+    "angle-bisector",
+    "perpendicular-bisector",
+    "vertex"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.4 Isosceles Triangles"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 vertex angle（CK-12 Geometry 4.4 Isosceles Triangles・CK-12 Geometry 5.16 Kites・CK-12 Geometry 5.21 Area of Regular and Irregular Polygons・計 15 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

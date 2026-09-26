@@ -1,0 +1,98 @@
+{
+  "id": "obtuse-triangle",
+  "ja": {
+    "term": "鈍角三角形",
+    "reading": "どんかくさんかくけい",
+    "alt": []
+  },
+  "en": {
+    "term": "obtuse triangle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "1 つの角が鈍角である三角形。鈍角は 1 つしかなく、残りの 2 つの角は鋭角になる。",
+  "definition_en": "A triangle with one obtuse angle. A triangle can have only one obtuse angle, so its other two angles are acute.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "This angle is 120 degrees, so it's an obtuse triangle, and the other two angles have to share the remaining 60.",
+      "ja": "この角が 120° だから鈍角三角形。残りの 2 つの角で、あと 60° を分け合うことになる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Explain why an obtuse triangle cannot have two obtuse angles.",
+      "ja": "鈍角三角形が 2 つの鈍角をもつことはない。その理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "鈍角三角形の鈍角は必ず 1 つだけ。鈍角が 2 つあると、その 2 つだけで和が 180° を超えてしまう。",
+    "鈍角をはさむ辺を底辺にすると、高さは三角形の外にはみ出る（底辺を延長した直線に垂線を下ろす）。面積を求めるときに注意する。",
+    "3 辺の長さ a, b, c（c がいちばん長い）から見分けるときは、c² > a² + b² なら鈍角三角形。"
+  ],
+  "related": [
+    "obtuse-angle",
+    "acute-triangle",
+    "right-triangle",
+    "angle-sum-of-a-triangle",
+    "triangle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "鈍角三角形",
+      "en": "Obtuse triangle"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.2 Classify Triangles by Angle Measurement・4.29 Pythagorean Theorem to Classify Triangles"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "obtuse triangle": 3
+    },
+    "written": {
+      "obtuse triangle": 3
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-algtrig",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは CK-12 の呼び方 obtuse triangle（CK-12 Geometry 4.29 Pythagorean Theorem to Classify Triangles・CK-12 Geometry 4.1 Classify Triangles・CK-12 Geometry 4.2 Classify Triangles by Angle Measurement・計 29 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "diagonal",
+  "ja": {
+    "term": "対角線",
+    "reading": "たいかくせん",
+    "alt": []
+  },
+  "en": {
+    "term": "diagonal",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "中3"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "多角形で、となり合わない 2 つの頂点を結ぶ線分。四角形には 2 本ある。",
+  "definition_en": "A segment that joins two vertices of a polygon that are not next to each other. A quadrilateral has two diagonals.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Draw a diagonal from A to C, and now the quadrilateral is split into two triangles.",
+      "ja": "A から C へ対角線を引くと、四角形が 2 つの三角形に分かれるね。",
+      "register": "spoken"
+    },
+    {
+      "en": "In parallelogram ABCD, the diagonals AC and BD intersect at point O. Prove that AO = CO.",
+      "ja": "平行四辺形 ABCD の対角線 AC と BD の交点を O とする。AO = CO であることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "行列の対角成分（the diagonal of a matrix）も同じ diagonal で、別の意味（エントリ matrix）。",
+    "形容詞の diagonal は「斜めの」（a diagonal line は斜めの線）。図形の対角線は名詞で a diagonal ／ the diagonals と言う。",
+    "「対角線」と「対角」は字が似ているが別の語。対角は向かい合う角で、英語は opposite angle（エントリ opposite-angle）。"
+  ],
+  "related": [
+    "polygon",
+    "quadrilateral",
+    "vertex",
+    "opposite-angle",
+    "matrix"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "対角線",
+      "en": "Diagonal"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "diagonal of the !matrix | diagonal of a !matrix | diagonals of the !matrix | diagonals of a !matrix | length of the diagonal | diagonals bisect | diagonals intersect": 14
+    },
+    "written": {
+      "diagonal of the !matrix | diagonal of a !matrix | diagonals of the !matrix | diagonals of a !matrix | length of the diagonal | diagonals bisect | diagonals intersect": 35
+    },
+    "sources": [
+      "khan-middle",
+      "mit-18.02",
+      "mit-18.06",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

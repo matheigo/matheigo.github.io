@@ -1,0 +1,89 @@
+{
+  "id": "midsegment-theorem",
+  "ja": {
+    "term": "中点連結定理",
+    "reading": "ちゅうてんれんけつていり",
+    "alt": []
+  },
+  "en": {
+    "term": "midsegment theorem",
+    "alt": [
+      "midpoint theorem"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語では、三角形の 2 辺の中点を結ぶ線分に midsegment という名前があり、この定理はその線分の性質として midsegment theorem と呼ばれる（CK-12 Geometry 4.19 Midsegment Theorem）。CK-12 Geometry 5.13 Trapezoids は、台形の 2 本の脚（legs）の中点を結ぶ線分も midsegment と呼ぶ。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中3"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "三角形の 2 辺の中点を結ぶ線分は、残りの辺に平行で、長さはその辺の半分であるという定理。",
+  "definition_en": "The theorem that the segment joining the midpoints of two sides of a triangle is parallel to the third side and half as long. That segment is called a midsegment of the triangle.",
+  "latex": "MN \\parallel BC,\\quad MN = \\frac{1}{2}BC",
+  "spoken_en": "MN is parallel to BC, and MN equals one half BC",
+  "examples": [
+    {
+      "en": "M and N are midpoints, so the midsegment theorem tells us MN is parallel to BC and half as long.",
+      "ja": "M と N は中点だから、中点連結定理より、MN は BC に平行で、長さは BC の半分。",
+      "register": "spoken"
+    },
+    {
+      "en": "In triangle ABC, M and N are the midpoints of AB and AC, and BC = 14 cm. Use the midsegment theorem to find MN.",
+      "ja": "△ABC で、点 M、N はそれぞれ辺 AB、AC の中点で、BC = 14 cm である。中点連結定理を用いて、MN の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語では、2 辺の中点を結ぶ線分そのものを midsegment と呼ぶ。頂点と向かい合う辺の中点を結ぶ線分は中線（median、エントリ median-of-a-triangle）で、別のもの。",
+    "midpoint theorem と言っても、中点の座標を求める公式（midpoint formula、エントリ midpoint-formula）とは別のもの。",
+    "台形の midsegment の長さは、平行な 2 辺の長さの和の半分。三角形のように 1 辺の半分ではない。"
+  ],
+  "related": [
+    "midpoint",
+    "triangle-proportionality-theorem",
+    "parallel-lines",
+    "trapezoid",
+    "median-of-a-triangle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "中点連結定理",
+      "en": "Midpoint theorem (triangle)"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.19 Midsegment Theorem・5.13 Trapezoids"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 midsegment theorem（CK-12 Geometry 4.19 Midsegment Theorem・CK-12 Geometry 5.13 Trapezoids・計 7 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

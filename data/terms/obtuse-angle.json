@@ -1,0 +1,97 @@
+{
+  "id": "obtuse-angle",
+  "ja": {
+    "term": "鈍角",
+    "reading": "どんかく",
+    "alt": []
+  },
+  "en": {
+    "term": "obtuse angle",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "大きさが 90° より大きく 180° より小さい角。直角よりも開きが大きい。",
+  "definition_en": "An angle that measures more than 90° and less than 180°, so it is wider than a right angle.",
+  "latex": "90^\\circ < \\theta < 180^\\circ",
+  "spoken_en": "ninety degrees is less than theta, which is less than one hundred eighty degrees",
+  "examples": [
+    {
+      "en": "This one opens wider than a right angle, so it's an obtuse angle.",
+      "ja": "これは直角より大きく開いているから、鈍角だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "One angle of an isosceles triangle is an obtuse angle that measures 110°. Find the measures of the other two angles.",
+      "ja": "二等辺三角形の 1 つの角が 110° の鈍角である。残りの 2 つの角の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "obtuse は日常語では「鈍い」の意味の単語。数学では 90° より大きく 180° より小さい角を表す。",
+    "90° と 180° は含まない。180° の角は平角（エントリ straight-angle）、180° より大きい角は優角（エントリ reflex-angle）。",
+    "obtuse は「オブトゥース」に近く、後半に強勢を置いて読む。"
+  ],
+  "related": [
+    "acute-angle",
+    "right-angle",
+    "obtuse-triangle",
+    "straight-angle",
+    "reflex-angle"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.1 Classify Triangles・4.3 Classify Triangles by Side Measurement"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "obtuse angle": 2
+    },
+    "written": {
+      "obtuse angle": 7
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 7 件（10 未満））。見出しは CK-12 の呼び方 obtuse angle（CK-12 Geometry 4.1 Classify Triangles・CK-12 Geometry 2.12 Converse Inverse and Contrapositive Statements・CK-12 Geometry 4.3 Classify Triangles by Side Measurement・計 16 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "number-of-possible-outcomes",
+  "ja": {
+    "term": "起こりうる場合の数",
+    "reading": "おこりうるばあいのかず",
+    "alt": [
+      "すべての場合"
+    ]
+  },
+  "en": {
+    "term": "total number of outcomes",
+    "alt": [
+      "number of possible outcomes"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「場合の数」は、確率の分母の「起こりうる場合の数」にも、数え上げの単元の名前（エントリ counting）にも使う。英語では、起こりうるすべての結果（outcomes）の数を total number of outcomes と言い、OpenStax Algebra and Trigonometry もこの言い方で確率を求める。結果の集まりそのものは sample space（エントリ sample-space）と呼ぶ。",
+  "domains": [
+    "probability"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "ある試行で起こりうるすべての結果の個数。どの結果も同様に確からしいとき、確率は、あることがらの起こる場合の数をこの数でわって求める。",
+  "definition_en": "The number of all the outcomes that can happen in an experiment. When the outcomes are equally likely, the probability of an event is the number of outcomes in the event divided by the total number of outcomes.",
+  "latex": "P(A) = \\frac{\\text{number of outcomes in } A}{\\text{total number of outcomes}}",
+  "spoken_en": "P of A equals the number of outcomes in A over the total number of outcomes",
+  "examples": [
+    {
+      "en": "Roll one die and the total number of outcomes is 6; three of them are even, so the probability is 3 over 6, or one half.",
+      "ja": "さいころを 1 個投げると、起こりうる場合の数は 6 通り。そのうち偶数は 3 通りだから、確率は 6 分の 3、つまり 2 分の 1。",
+      "register": "spoken"
+    },
+    {
+      "en": "Two dice are rolled. Find the total number of outcomes, and then find the probability that the sum of the numbers is 7.",
+      "ja": "2 個のさいころを投げる。起こりうる場合の数を求め、出た目の和が 7 になる確率を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「場合」を case と直訳しない。確率で数えるのは 1 つ 1 つの結果（outcome、エントリ elementary-event）で、その個数を言う。",
+    "この数でわって確率を求めてよいのは、どの結果も同様に確からしい（equally likely、エントリ equally-likely）ときだけ。",
+    "2 個のさいころの目の和は 2〜12 の 11 通りだが、これを起こりうる場合の数にしない。和の 11 通りは同様に確からしくないので、目の出方 6 × 6 = 36 通りで数える。"
+  ],
+  "related": [
+    "sample-space",
+    "counting",
+    "probability",
+    "equally-likely",
+    "elementary-event"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "number of possible outcomes": 3
+    },
+    "written": {
+      "number of possible outcomes": 6,
+      "total number of outcomes": 13
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-algtrig",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

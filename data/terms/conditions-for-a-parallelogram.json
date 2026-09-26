@@ -1,0 +1,82 @@
+{
+  "id": "conditions-for-a-parallelogram",
+  "ja": {
+    "term": "平行四辺形になる条件",
+    "reading": "へいこうしへんけいになるじょうけん",
+    "alt": []
+  },
+  "en": {
+    "term": "conditions for a parallelogram",
+    "alt": [
+      "prove that a quadrilateral is a parallelogram",
+      "parallelogram theorems"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない。日本の中 2 では四角形が平行四辺形になるための条件を 5 つまとめて学ぶが、英語にはそれらをまとめた決まった名前がなく、「四角形が平行四辺形であることを示す」（prove that a quadrilateral is a parallelogram）のように、示すことを文で言う。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "四角形が平行四辺形になるための条件。2 組の対辺がそれぞれ平行、2 組の対辺がそれぞれ等しい、2 組の対角がそれぞれ等しい、対角線がそれぞれの中点で交わる、1 組の対辺が平行でその長さが等しい、のどれか 1 つが成り立てば平行四辺形である。",
+  "definition_en": "The facts that let you conclude that a quadrilateral is a parallelogram: both pairs of opposite sides are parallel, both pairs of opposite sides are equal, both pairs of opposite angles are equal, the diagonals bisect each other, or one pair of opposite sides is both parallel and equal. Any one of these is enough.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To prove that a quadrilateral is a parallelogram, you don't need everything; one condition is enough, like showing both pairs of opposite sides are equal.",
+      "ja": "四角形が平行四辺形であることを示すのに、全部は要らない。条件が 1 つあれば十分で、たとえば 2 組の対辺がそれぞれ等しいことを示せばいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove that a quadrilateral is a parallelogram if its diagonals bisect each other.",
+      "ja": "対角線がそれぞれの中点で交わる四角形は平行四辺形であることを証明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「対角線がそれぞれの中点で交わる」は英語で the diagonals bisect each other（エントリ bisect）。",
+    "「1 組の対辺が平行でその長さが等しい」は、同じ 1 組の辺が平行で、しかも長さが等しいという条件。1 組が平行で別の 1 組が等しいだけなら、平行四辺形とは限らない（等脚台形がその例）。",
+    "平行四辺形の性質（平行四辺形ならば対辺が等しい）と、平行四辺形になる条件（対辺が等しければ平行四辺形）は、仮定と結論を入れ替えた逆（エントリ converse）の関係。"
+  ],
+  "related": [
+    "parallelogram",
+    "opposite-side",
+    "opposite-angle",
+    "diagonal",
+    "converse"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

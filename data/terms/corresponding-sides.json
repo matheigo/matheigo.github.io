@@ -1,0 +1,89 @@
+{
+  "id": "corresponding-sides",
+  "ja": {
+    "term": "対応する辺",
+    "reading": "たいおうするへん",
+    "alt": []
+  },
+  "en": {
+    "term": "corresponding sides",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "合同な図形や相似な図形で、重ね合わせたときに重なり合う辺どうし。合同なら長さが等しく、相似なら長さの比がすべて等しい。",
+  "definition_en": "In two congruent or similar figures, the sides that match up when one figure is placed on the other. Corresponding sides of congruent figures are equal in length, and corresponding sides of similar figures are proportional.",
+  "latex": "\\frac{AB}{DE} = \\frac{BC}{EF} = \\frac{CA}{FD}",
+  "spoken_en": "AB over DE equals BC over EF equals CA over FD",
+  "examples": [
+    {
+      "en": "Match the letters in order: A goes with D and B goes with E, so AB and DE are corresponding sides.",
+      "ja": "文字を順番に対応させよう。A と D、B と E が対応するから、AB と DE が対応する辺だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Given △ABC ≅ △DEF, name all three pairs of corresponding sides.",
+      "ja": "△ABC ≡ △DEF である。対応する辺を 3 組すべて答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "どの辺どうしが対応するかは、△ABC ≡ △DEF のような記号の頂点の順番で決まる（AB と DE、BC と EF、CA と FD）。図の中での位置や向きで決めない。",
+    "相似な図形の対応する辺は、長さが等しいのではなく、長さの比が等しい。英語では corresponding sides are proportional と言う。",
+    "「合同な三角形の対応する部分（辺と角）は等しい」は、英語の略語 CPCTC（エントリ cpctc）で表す。"
+  ],
+  "related": [
+    "corresponding-angles-of-congruent-figures",
+    "congruent",
+    "similar-triangles",
+    "cpctc",
+    "scale-factor"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "corresponding sides": 59
+    },
+    "written": {
+      "corresponding sides": 19
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -100,6 +100,11 @@ const SAME_EN_TERM: [string, string][] = [
   ["base-of-a-power", "base-of-a-solid"], // 底（累乗） ／ 底面（立体）
   ["cube", "cube-solid"], // 立方（3 乗） ／ 立方体
   ["edge", "edge-of-a-graph"], // 辺・稜（立体） ／ 辺（グラフ）
+  ["base-of-a-triangle", "base-of-a-power"], // 底辺 ／ 底（累乗）
+  ["base-of-a-triangle", "base-of-a-solid"], // 底辺 ／ 底面
+  ["corresponding-angles", "corresponding-angles-of-congruent-figures"], // 同位角 ／ 対応する角
+  ["range", "range-of-data"], // 値域 ／ 範囲（統計）
+  ["square", "square-shape"], // 平方（2 乗） ／ 正方形
 ];
 const intendedHomonym = (a: string, b: string) =>
   SAME_EN_TERM.some(([x, y]) => (x === a && y === b) || (x === b && y === a));

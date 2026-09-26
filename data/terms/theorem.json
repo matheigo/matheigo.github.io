@@ -1,0 +1,113 @@
+{
+  "id": "theorem",
+  "ja": {
+    "term": "定理",
+    "reading": "ていり",
+    "alt": []
+  },
+  "en": {
+    "term": "theorem",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "証明によって正しいことが確かめられた事柄のうち、大切でよく使うもの。一度証明した定理は、ほかの証明の根拠に使える。",
+  "definition_en": "A statement that has been proved true using definitions, postulates, and theorems that were already proved. Once a theorem is proved, you can use it as a reason in other proofs.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Once we prove this, it's a theorem, and you can use it as a reason in any proof after that.",
+      "ja": "これを証明したら定理になるから、その後はどの証明でも根拠として使っていいよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Prove the following theorem: The base angles of an isosceles triangle are equal.",
+      "ja": "次の定理を証明せよ。「二等辺三角形の底角は等しい。」",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "定理（theorem）は証明して正しいとわかった事柄。証明せずに正しいと認める事柄は公準・公理で、postulate ／ axiom と呼ぶ（エントリ postulate、axiom）。",
+    "「〜の定理より」は by the … theorem（二等辺三角形の定理なら by the base angles theorem、エントリ isosceles-triangle-theorem）。定理の逆（converse、エントリ converse）は正しいとは限らないので、使うなら別に証明する。",
+    "theorem の th は think の th と同じ音。"
+  ],
+  "related": [
+    "postulate",
+    "axiom",
+    "proof",
+    "lemma",
+    "converse"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "定理",
+      "en": "Theorem"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "theorem": 1309
+    },
+    "written": {
+      "theorem": 1891
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

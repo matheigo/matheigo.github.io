@@ -1,0 +1,95 @@
+{
+  "id": "trapezoid",
+  "ja": {
+    "term": "台形",
+    "reading": "だいけい",
+    "alt": []
+  },
+  "en": {
+    "term": "trapezoid",
+    "alt": [],
+    "uk": "trapezium",
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "米国の教材では台形の定義が分かれる。CK-12 Geometry は平行な辺がちょうど 1 組（exactly one pair）の四角形として平行四辺形を含めず、IM Geometry は少なくとも 1 組（at least one pair）として平行四辺形も台形に含める。英国では trapezium と呼ぶ。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "向かい合う 1 組の辺が平行な四角形。平行な 2 辺を上底・下底という。",
+  "definition_en": "A quadrilateral with a pair of parallel opposite sides, called the bases. Some textbooks require exactly one such pair, while others allow at least one.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A trapezoid has a pair of parallel sides, and those two sides are called the bases.",
+      "ja": "台形には平行な辺が 1 組あって、その 2 辺を底（上底と下底）と呼ぶよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "The bases of a trapezoid are 5 cm and 9 cm long, and its height is 4 cm. Find the area of the trapezoid.",
+      "ja": "上底が 5 cm、下底が 9 cm、高さが 4 cm の台形の面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "平行な 2 辺は、上底も下底もどちらも base（2 本で bases）。平行でない 2 辺は legs と呼び、直角三角形の直角をはさむ 2 辺（エントリ hypotenuse）と同じ語。",
+    "「平行四辺形は台形か」の答えは教材の定義による。「ちょうど 1 組」の定義なら台形ではなく、「少なくとも 1 組」の定義なら台形でもある（エントリ parallelogram）。",
+    "英国では trapezium と呼ぶ。"
+  ],
+  "related": [
+    "parallelogram",
+    "quadrilateral",
+    "parallel",
+    "area",
+    "height"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "台形",
+      "en": "Trapezoid"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "trapezoid": 154
+    },
+    "written": {
+      "trapezoid": 94
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-prealgebra",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

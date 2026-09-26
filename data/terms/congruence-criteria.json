@@ -1,0 +1,90 @@
+{
+  "id": "congruence-criteria",
+  "ja": {
+    "term": "合同条件",
+    "reading": "ごうどうじょうけん",
+    "alt": []
+  },
+  "en": {
+    "term": "congruence theorems",
+    "alt": [
+      "congruence criteria",
+      "triangle congruence criteria",
+      "congruence postulates"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の三角形の合同条件は 3 つ（3 組の辺、2 組の辺とその間の角、1 組の辺とその両端の角）で、「合同条件」とまとめて呼ぶ。米国の Geometry は SSS・SAS・ASA に AAS と直角三角形の HL を加え、それぞれを定理（theorem）や公準（postulate）として名前で呼ぶ（エントリ sss-congruence、sas-congruence、asa-congruence、aas-congruence、hl-congruence）。IM Geometry は 2.6 Side-Angle-Side Triangle Congruence、2.7 Angle-Side-Angle Triangle Congruence のように 1 つずつ扱い、見出しの congruence theorems は IM の言い方。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "2 つの三角形が合同であるといえるための条件。日本の中2 では「3 組の辺」「2 組の辺とその間の角」「1 組の辺とその両端の角」がそれぞれ等しい、の 3 つ。",
+  "definition_en": "The sets of matching parts that are enough to prove two triangles congruent without checking every side and angle. Each one is named by the parts that match, such as SSS, SAS, and ASA.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Which of the congruence theorems can we use here? We've got two sides and the angle between them, so it's SAS.",
+      "ja": "ここで使える合同条件はどれかな。2 組の辺とその間の角が分かっているから、「2 組の辺とその間の角がそれぞれ等しい」だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "In quadrilateral ABCD, AB = DC and m∠ABC = m∠DCB. Which of the congruence theorems shows that △ABC ≅ △DCB? Explain.",
+      "ja": "四角形 ABCD で、AB = DC、∠ABC = ∠DCB である。△ABC ≡ △DCB を示すには、どの合同条件を用いればよいか。理由も説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "AAS（エントリ aas-congruence）は日本の合同条件に無く、日本の答案では残りの角も等しいことを示して「1 組の辺とその両端の角」に直す。HL（エントリ hl-congruence）は、日本では直角三角形の合同条件（エントリ congruence-criteria-for-right-triangles）として別に扱う。",
+    "英語では同じ条件を theorem（定理）とも postulate（公準、エントリ postulate）とも呼ぶ。congruence theorems と congruence postulates は同じものを指す。",
+    "2 辺とその間にない角（SSA）や 3 つの角（AAA）が等しくても、合同とはいえない。AAA で分かるのは相似（エントリ aa-similarity）まで。"
+  ],
+  "related": [
+    "sss-congruence",
+    "sas-congruence",
+    "asa-congruence",
+    "congruence-criteria-for-right-triangles",
+    "congruent"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 2.6 Side-Angle-Side Triangle Congruence・2.7 Angle-Side-Angle Triangle Congruence・2.10 Practicing Proofs"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 congruence theorems（Geometry 2.7 Angle-Side-Angle Triangle Congruence・Geometry 2.6 Side-Angle-Side Triangle Congruence・Geometry 2.10 Practicing Proofs・計 45 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

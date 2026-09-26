@@ -1,0 +1,94 @@
+{
+  "id": "base-of-a-triangle",
+  "ja": {
+    "term": "底辺",
+    "reading": "ていへん",
+    "alt": []
+  },
+  "en": {
+    "term": "base",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry"
+    ]
+  },
+  "definition_ja": "三角形の面積や高さを考えるときに基準にする辺。どの辺を底辺にしてもよく、高さはその辺に垂直に測る。",
+  "definition_en": "The side of a triangle that the height is measured from; any side can be chosen as the base. The height is the perpendicular distance from the opposite vertex to the line containing the base.",
+  "latex": "A = \\frac{1}{2}bh",
+  "spoken_en": "A equals one half b h",
+  "examples": [
+    {
+      "en": "You can use any side as the base, as long as the height is perpendicular to it.",
+      "ja": "どの辺を底辺にしてもいいよ。高さがその辺に垂直になっていればね。",
+      "register": "spoken"
+    },
+    {
+      "en": "A triangle has a base of 12 cm and a height of 5 cm. Find its area.",
+      "ja": "底辺が 12 cm、高さが 5 cm の三角形の面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の base は、累乗の底（エントリ base-of-a-power）や立体の底面（エントリ base-of-a-solid）と同じ語。三角形の底辺かどうかは、the base of the triangle のような前後の語で見分ける。",
+    "底辺は下にある辺とは限らない。鈍角三角形で鈍角をはさむ辺を底辺にすると、高さは三角形の外にとり、底辺を延ばした直線に垂直に測る。",
+    "平行四辺形・台形の底辺も base で、台形の平行な 2 辺はまとめて bases と言う。二等辺三角形の底辺の両端の角は底角（base angles、エントリ base-angle）。"
+  ],
+  "related": [
+    "height",
+    "area-of-a-triangle",
+    "base-angle",
+    "base-of-a-power",
+    "base-of-a-solid"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "base of the triangle | base of a triangle | base times height | base and height | base and the height": 80
+    },
+    "written": {
+      "base of the triangle | base of a triangle | base times height | base and height | base and the height": 28
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

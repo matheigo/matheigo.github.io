@@ -1,0 +1,91 @@
+{
+  "id": "same-side-interior-angles",
+  "ja": {
+    "term": "同側内角",
+    "reading": "どうそくないかく",
+    "alt": []
+  },
+  "en": {
+    "term": "same-side interior angles",
+    "alt": [
+      "consecutive interior angles"
+    ],
+    "uk": "co-interior angles"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "米国の Geometry は、2 直線の内側で交わる直線の同じ側にある角の組に same-side interior angles という名前を付け、2 直線が平行なら和が 180°（supplementary）になることを定理として扱う（CK-12 Geometry 3.7 Same Side Interior Angles）。同じ組を consecutive interior angles とも呼び、英国では co-interior angles と呼ぶ。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Geometry",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "2 本の直線に 1 本の直線が交わってできる角のうち、2 直線の内側にあり、交わる直線に対して同じ側にある 2 つの角。2 直線が平行なら、和は 180° になる。",
+  "definition_en": "A pair of angles formed when a transversal crosses two lines, lying between the two lines and on the same side of the transversal. If the two lines are parallel, same-side interior angles are supplementary.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The lines are parallel, so these same-side interior angles add up to 180: this one's 110, so that one's 70.",
+      "ja": "2 直線は平行だから、この同側内角は足して 180°。こっちが 110° なら、あっちは 70°。",
+      "register": "spoken"
+    },
+    {
+      "en": "Lines p and q are parallel and are cut by a transversal. A pair of same-side interior angles measure (3x + 20)° and (2x + 10)°. Find x.",
+      "ja": "直線 p と q は平行で、1 本の直線がこれらと交わっている。同側内角の組の大きさが (3x + 20)°、(2x + 10)° のとき、x の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "錯角や同位角と違い、平行線の同側内角は等しくならず、和が 180°（supplementary、エントリ supplementary-angle）になる。",
+    "same-side interior angles と consecutive interior angles は同じ角の組を指す。英国では co-interior angles。",
+    "2 直線の外側で同じ側にある組は same-side exterior angles（エントリ same-side-exterior-angles）。"
+  ],
+  "related": [
+    "transversal",
+    "supplementary-angle",
+    "alternate-interior-angles",
+    "same-side-exterior-angles",
+    "parallel-lines"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "3.7 Same Side Interior Angles・2.15 Proofs- Angle Pairs and Segments"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "consecutive interior angles": 8,
+      "same-side interior angles": 1
+    },
+    "sources": [
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 same-side interior angles（CK-12 Geometry 3.7 Same Side Interior Angles・CK-12 Geometry 2.15 Proofs- Angle Pairs and Segments・計 23 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

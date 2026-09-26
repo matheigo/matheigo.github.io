@@ -1,0 +1,107 @@
+{
+  "id": "toss",
+  "ja": {
+    "term": "投げる",
+    "reading": "なげる",
+    "alt": []
+  },
+  "en": {
+    "term": "toss",
+    "alt": [],
+    "variants": [
+      {
+        "term": "flip",
+        "register": "both",
+        "note": "コインを投げるときの言い方。話し言葉では toss より多い（Khan Academy の中学の講義に多い）。IM もこの言い方。"
+      },
+      {
+        "term": "roll",
+        "register": "both",
+        "note": "さいころを投げるときの言い方（roll a die）。話・書とも使う。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "日本語は硬貨もさいころも「投げる」と言うが、英語では硬貨は toss ／ flip（toss a coin、flip a coin）、さいころは roll（roll a die）と言い分ける。IM は flip a coin の言い方が多く、OpenStax は toss a coin が多い。",
+  "domains": [
+    "probability"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "確率の試行で、硬貨やさいころを投げて、どの面が出るかを見る。",
+  "definition_en": "To throw a coin into the air so that it lands heads or tails. For a die, the verb is roll.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Toss the coin first, then roll the die. How many outcomes are there in all?",
+      "ja": "まず硬貨を投げて、次にさいころを投げる。結果は全部で何通りある？",
+      "register": "spoken"
+    },
+    {
+      "en": "A coin is tossed and a die is rolled. Find the probability of getting heads and an even number.",
+      "ja": "1 枚の硬貨と 1 個のさいころを投げる。硬貨は表が出て、さいころは偶数の目が出る確率を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「投げる」を throw と直訳しない。硬貨は toss ／ flip（toss a coin、flip a coin）、さいころは roll（roll a die、roll two dice。エントリ die）。",
+    "toss は名詞でも使い、a coin toss は硬貨を 1 回投げること。「表が出る」は land heads up ／ come up heads（エントリ coin）。"
+  ],
+  "related": [
+    "coin",
+    "die",
+    "trial",
+    "probability",
+    "equally-likely"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "toss a coin | tosses a coin | coin toss | toss the coin": 11,
+      "flip a coin | flips a coin | coin flip | flip the coin": 19,
+      "roll a die | roll the die | roll two dice | rolls a die | roll a number cube": 18
+    },
+    "written": {
+      "flip a coin | flips a coin | coin flip | flip the coin": 10,
+      "toss a coin | tosses a coin | coin toss | toss the coin": 30,
+      "roll a die | roll the die | roll two dice | rolls a die | roll a number cube": 11
+    },
+    "sources": [
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "draw",
+  "ja": {
+    "term": "取り出す",
+    "reading": "とりだす",
+    "alt": []
+  },
+  "en": {
+    "term": "draw",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "日本語の「取り出す」は中から外へ出す一般の動詞だが、英語の確率の問題では、袋から玉やカードを取り出すことを draw と言う（draw a marble from the bag、draw a card）。「無作為に取り出す」は draw at random。取り出したものを戻すかどうかは with replacement ／ without replacement で言い分ける（エントリ sampling-with-replacement、sampling-without-replacement）。",
+  "domains": [
+    "probability"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "袋や箱の中から、玉やカードなどを中を見ずに取り出す。",
+  "definition_en": "To take an object such as a marble or a card out of a bag, box, or deck without looking, so that the result is random.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Draw a marble, write down its color, and put it back before you draw again.",
+      "ja": "玉を 1 個取り出して色を書きとめたら、次を取り出す前に袋に戻して。",
+      "register": "spoken"
+    },
+    {
+      "en": "A bag contains 4 red marbles and 6 blue marbles. Two marbles are drawn one at a time without replacement. Find the probability that both marbles are red.",
+      "ja": "袋の中に赤玉 4 個と青玉 6 個が入っている。この袋から玉を 1 個ずつ 2 回取り出す。ただし、取り出した玉は袋に戻さない。2 個とも赤玉である確率を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "draw には「（図やグラフを）かく」の意味もある（エントリ draw-a-graph）。draw a card は「カードを 1 枚引く」、draw a line は「直線をひく」。",
+    "過去形は drew、過去分詞は drawn（Two cards are drawn from the deck.）。",
+    "取り出したものを戻すかどうかは、draw の後に with replacement ／ without replacement を付けて言う（draw two cards without replacement）。戻すかどうかで確率が変わる。"
+  ],
+  "related": [
+    "sampling-with-replacement",
+    "sampling-without-replacement",
+    "select-at-random",
+    "probability",
+    "draw-a-graph"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "draw a card | draw a marble | draw a ball | drawn at random | drawn from | draw two | draw one | draw a chip | draw a name": 50
+    },
+    "written": {
+      "draw a card | draw a marble | draw a ball | drawn at random | drawn from | draw two | draw one | draw a chip | draw a name": 57
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

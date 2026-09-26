@@ -822,6 +822,70 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
     quantity:
       "a quantity !squared !cubed | two quantities !squared !cubed | these quantities | both quantities | each quantity | another quantity | unknown quantity | known quantity | same quantity | related quantities",
   },
+  // Phase 2 中学の単元 2 (batch 5): contexts checked
+  range: { range: "range of the function | range of a function | range of f | range of g | range of this function" }, // 値域, not the range of data (range-of-data)
+  // 同位角 (parallel lines cut by a transversal); bare "corresponding angles" is mostly the matching angles of
+  // similar or congruent figures, or the reference angle in another quadrant
+  "corresponding-angles": {
+    "corresponding angles":
+      "are corresponding angles | pair of corresponding angles | pairs of corresponding angles | corresponding angles theorem | corresponding angles converse",
+  },
+  // 対応する角 of congruent / similar figures
+  "corresponding-angles-of-congruent-figures": {
+    "corresponding angles": "corresponding angle measures | corresponding angles have the same measure | corresponding angles are equal in measure",
+  },
+  equal: { equal: "equal to | are equal | is equal | equal in | be equal" }, // 等しい, not "equal sign"
+  // 対角線, not the diagonal of a matrix (main diagonal, diagonal entries)
+  diagonal: {
+    diagonal:
+      "diagonal of the !matrix | diagonal of a !matrix | diagonals of the !matrix | diagonals of a !matrix | length of the diagonal | diagonals bisect | diagonals intersect",
+  },
+  "base-of-a-triangle": { base: "base of the triangle | base of a triangle | base times height | base and height | base and the height" }, // 底辺
+  // 正方形. "a square" / "is a square" fold into "a squared" (a²), and a plural-only "squares" into every
+  // "square" and "squared", so the figure is counted where only the figure fits
+  "square-shape": {
+    square:
+      "area of a square | area of the square | perimeter of a square | perimeter of the square | a square has | the square has | squares and rectangles | rectangles and squares | draw a square | shape of a square | rectangle is a square",
+  },
+  die: { die: "a die | the die | two dice | a fair die | roll dice | the dice" }, // さいころ, not "die" (to die)
+  draw: {
+    draw: "draw a card | draw a marble | draw a ball | drawn at random | drawn from | draw two | draw one | draw a chip | draw a name",
+  }, // 取り出す, not draw a graph / a picture
+  toss: {
+    toss: "toss a coin | tosses a coin | coin toss | toss the coin",
+    flip: "flip a coin | flips a coin | coin flip | flip the coin",
+    roll: "roll a die | roll the die | roll two dice | rolls a die | roll a number cube",
+  },
+  // batch 6: contexts checked
+  likelihood: { likelihood: "likelihood !function !ratio" }, // 起こりやすさ, not the likelihood function (statistics)
+  certain: { certain: "!a certain event | event is certain | certain to happen | certain to occur" }, // not "a certain event" (some event)
+  impossible: { impossible: "impossible event | event is impossible | impossible to happen | impossible to occur" },
+  // 因数分解: the verb in use. "factoring" folds into every "factor" (a factor of 15, a scale factor)
+  factoring: {
+    factoring: "factor the | factor this | factor each | factor it | factor completely",
+    factorization: "factorization !prime",
+  },
+  factor: { factor: "linear factor | quadratic factor | each factor | two factors | the factors are | irreducible factor" }, // 因数 of a product
+  binomial: {
+    binomial:
+      "binomial !theorem !distribution !distributions !coefficient !coefficients !expansion !probability !random !experiment !setting !formula !model !squares !square",
+  }, // 二項式, not the binomial theorem / distribution, or binomial squares (square-of-a-binomial)
+  error: {
+    error: "absolute error | measurement error | error in the measurement | error in measurement | amount of error | round-off error | rounding error",
+  }, // 誤差, not an error in the work or the margin of error (error-bound)
+  measurement: { measurement: "!of !linear measurement !error !errors !of !unit !units !system !systems" }, // 測定値, not a system of measurement
+  "bound-estimate": {
+    estimate:
+      "between two consecutive integers | between which two integers | between two consecutive whole numbers | estimate the square root | estimate the value of the square root",
+  }, // 評価する (√10 lies between 3 and 4), not an estimate in general (estimation)
+  scale: {
+    scale: "scale of the map | scale of the drawing | the scale is | map scale | scale on the map | scale of a map | scale of a drawing",
+  }, // 縮尺, not a scale factor or the scale of an axis
+  // 相似 of figures; "are similar" / "is similar to" are mostly "alike" (proofs, methods) or similar matrices
+  similar: {
+    similar:
+      "triangles are similar | figures are similar | polygons are similar | rectangles are similar | shapes are similar | similar figures | similar polygons | similar solids | similar rectangles | is similar to triangle",
+  },
   // batch 2
   unit: {
     unit: "units of measure | unit of measure | units of measurement | unit of measurement | same units | label the units | include units | in the units | units of length | unit of length",
