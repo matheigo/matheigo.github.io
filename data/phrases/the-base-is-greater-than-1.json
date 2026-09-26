@@ -1,0 +1,43 @@
+{
+  "id": "the-base-is-greater-than-1",
+  "situation": "written-solution",
+  "intent": "底が 1 より大きいので、不等号の向きは変わらないと書く",
+  "en": "Since the base is greater than 1, the inequality sign stays the same.",
+  "ja": "底が 1 より大きいので、不等号の向きは変わらない。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Since the base is greater than 1, the direction of the inequality does not change.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "exponents",
+    "logarithms",
+    "inequality"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "the inequality sign": 8
+    },
+    "sources": [
+      "openstax-elemalg",
+      "openstax-intalg"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（書き言葉のコーパスと参照で数えた。話: 対象外 ／ 書: 判断不能: 重み付け後 9 件（10 未満））。要の部分は OpenStax の呼び方 the inequality sign（本文 8 件）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

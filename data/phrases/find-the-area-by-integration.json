@@ -1,0 +1,41 @@
+{
+  "id": "find-the-area-by-integration",
+  "situation": "class-listening",
+  "intent": "面積を積分で求めると伝える",
+  "en": "Let's set up an integral for the area.",
+  "ja": "面積は積分で求めます。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "We'll find the area by integrating.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "integration",
+    "area"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "by integrating": 12,
+      "set up an integral | set up the integral": 15
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

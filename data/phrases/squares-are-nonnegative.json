@@ -1,0 +1,38 @@
+{
+  "id": "squares-are-nonnegative",
+  "situation": "written-solution",
+  "intent": "実数の 2 乗は 0 以上であることを理由に使う",
+  "en": "Since a square is never negative, (x − 1)² ≥ 0.",
+  "ja": "実数の 2 乗は 0 以上なので、(x − 1)² ≧ 0 である。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Squares of real numbers are always nonnegative.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "proof",
+    "inequality"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "always nonnegative": 2,
+      "never negative": 8
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-26"
+  }
+}

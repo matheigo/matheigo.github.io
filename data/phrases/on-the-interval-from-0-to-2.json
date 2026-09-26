@@ -1,0 +1,42 @@
+{
+  "id": "on-the-interval-from-0-to-2",
+  "situation": "exam",
+  "intent": "方程式を解く範囲（区間）を指定する（問題文）",
+  "en": "Find all solutions on the interval [0, 2π).",
+  "ja": "0 ≦ θ < 2π の範囲で解け。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Find all solutions in the interval [0, 2π).",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "trigonometry",
+    "instructions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "on the interval": 139,
+      "in the interval": 93
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

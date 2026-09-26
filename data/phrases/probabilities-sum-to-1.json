@@ -1,0 +1,45 @@
+{
+  "id": "probabilities-sum-to-1",
+  "situation": "class-listening",
+  "intent": "確率の合計が 1 になることを確かめさせる",
+  "en": "The probabilities have to add up to one.",
+  "ja": "確率を全部足すと 1 になります。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "The probabilities sum to one.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "probability"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "add up to one | add up to 1": 35,
+      "sum to one | sum to 1": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "micase",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-26"
+  }
+}

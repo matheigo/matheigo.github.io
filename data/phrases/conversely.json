@@ -1,0 +1,38 @@
+{
+  "id": "conversely",
+  "situation": "written-solution",
+  "intent": "逆向きの主張を示すときに「逆に」と書く",
+  "en": "Conversely, if f′(x) > 0, then f is increasing.",
+  "ja": "逆に、f′(x) > 0 ならば f は増加する。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Now for the other direction,",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "proof",
+    "logic"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "other direction": 4,
+      "conversely": 14
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-26"
+  }
+}

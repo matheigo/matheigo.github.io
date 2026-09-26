@@ -1,0 +1,41 @@
+{
+  "id": "take-positive-values",
+  "situation": "written-solution",
+  "intent": "関数が常に正の値をとると書く",
+  "en": "f(x) is always positive.",
+  "ja": "f(x) は常に正の値をとる。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "f takes only positive values.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "functions",
+    "inequality"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "is always positive | always positive": 25,
+      "takes only positive values | takes positive values | only positive values": 1
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-26"
+  }
+}

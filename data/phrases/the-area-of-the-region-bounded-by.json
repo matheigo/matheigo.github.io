@@ -1,0 +1,37 @@
+{
+  "id": "the-area-of-the-region-bounded-by",
+  "situation": "exam",
+  "intent": "曲線で囲まれた部分の面積を求めさせる（問題文）",
+  "en": "Find the area of the region bounded by y = x² and y = x + 2.",
+  "ja": "曲線 y = x² と直線 y = x + 2 で囲まれた部分の面積を求めよ。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Find the area of the region enclosed by the two curves.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "integration",
+    "area",
+    "instructions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "region bounded by": 89,
+      "region enclosed by": 33
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

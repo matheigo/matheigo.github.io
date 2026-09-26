@@ -1,0 +1,41 @@
+{
+  "id": "differentiate-the-outside-first",
+  "situation": "class-listening",
+  "intent": "合成関数の微分で、まず外側の関数を微分する（中身はそのまま）",
+  "en": "Take the derivative of the outside first.",
+  "ja": "まず外側を微分します。中身はそのままです。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Differentiate the outside and leave the inside alone.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "derivatives",
+    "chain-rule"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "derivative of the outside | derivative of the outer": 54,
+      "leave the inside alone | leave the inside": 28
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

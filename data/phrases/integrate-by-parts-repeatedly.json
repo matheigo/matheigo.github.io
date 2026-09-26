@@ -1,0 +1,36 @@
+{
+  "id": "integrate-by-parts-repeatedly",
+  "situation": "class-listening",
+  "intent": "部分積分を 2 回使う必要があると伝える",
+  "en": "You'll have to integrate by parts twice.",
+  "ja": "部分積分を 2 回使います。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Just integrate by parts again.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "integration"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "by parts twice": 8,
+      "by parts again": 2
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.03",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-26"
+  }
+}

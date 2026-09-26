@@ -1,0 +1,46 @@
+{
+  "id": "let-p-be-the-position-vector-of-p",
+  "situation": "written-solution",
+  "intent": "点の位置ベクトルを文字でおく",
+  "en": "Let p be the position vector of P.",
+  "ja": "点 P の位置ベクトルを p とする。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Let p = OP.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "vectors",
+    "let"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3",
+      "note": "Let r(t) … be the position vector of … の形"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "position vector of": 11
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（書き言葉のコーパスと参照で数えた。話: 対象外 ／ 書: 判断不能: 重み付け後 9 件（10 未満））。要の部分は OpenStax の呼び方 position vector of（本文 11 件）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

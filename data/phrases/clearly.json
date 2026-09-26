@@ -1,0 +1,41 @@
+{
+  "id": "clearly",
+  "situation": "written-solution",
+  "intent": "自明なことを「明らかに」と書く",
+  "en": "Clearly, f(0) = 1.",
+  "ja": "明らかに f(0) = 1 である。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "It is clear that f(0) = 1.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "clearly": 73,
+      "it is clear that | it's clear that": 7
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

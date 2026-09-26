@@ -1,0 +1,35 @@
+{
+  "id": "where",
+  "situation": "written-solution",
+  "intent": "式の後に文字の条件を書き添える（ただし〜）",
+  "en": "x = π/2 + kπ, where k is an integer.",
+  "ja": "x = π/2 + kπ（ただし k は整数）",
+  "register": "written",
+  "tags": [
+    "notation",
+    "conditions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "where … is an integer | where … is a constant | where … are constants | where … is a positive": 108
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

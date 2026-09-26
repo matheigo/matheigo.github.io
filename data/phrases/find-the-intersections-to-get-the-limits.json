@@ -1,0 +1,46 @@
+{
+  "id": "find-the-intersections-to-get-the-limits",
+  "situation": "class-listening",
+  "intent": "2 曲線の交点を求めて、それを積分区間にすると伝える",
+  "en": "First find where the curves intersect — those are your bounds of integration.",
+  "ja": "まず交点を求めて、それを積分区間にします。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Set them equal to get the bounds.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "integration",
+    "area"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "where … intersect": 92,
+      "set them equal | set … equal to each other": 30
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.02",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

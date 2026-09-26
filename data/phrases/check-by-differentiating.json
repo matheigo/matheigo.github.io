@@ -1,0 +1,41 @@
+{
+  "id": "check-by-differentiating",
+  "situation": "class-listening",
+  "intent": "不定積分の答えは微分して確かめられると伝える",
+  "en": "You can always check your answer by taking the derivative.",
+  "ja": "答えは微分して確かめられます。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Take the derivative, and you should get back the integrand.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "integration",
+    "checking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "check your answer": 14,
+      "you should get back | you get back the": 2
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "write-as-a-limit-of-a-sum",
+  "situation": "class-listening",
+  "intent": "定積分を和の極限の形で書き直す",
+  "en": "Let's write this as the limit as n approaches infinity of a sum.",
+  "ja": "和の極限の形に書き直しましょう。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Write it as the limit of a Riemann sum.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "integration",
+    "limits"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "limit of … riemann sum | limit of the sum | limit of this sum": 7,
+      "limit as n approaches infinity of": 42
+    },
+    "sources": [
+      "khan-ap-calc",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

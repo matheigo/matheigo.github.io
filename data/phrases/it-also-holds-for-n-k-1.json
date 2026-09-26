@@ -1,0 +1,36 @@
+{
+  "id": "it-also-holds-for-n-k-1",
+  "situation": "written-solution",
+  "intent": "数学的帰納法で、n = k + 1 のときも成り立つことを示す段階を書く",
+  "en": "Inductive step: we show that the statement also holds for n = k + 1.",
+  "ja": "n = k + 1 のときも成り立つことを示す。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "So it is also true for n = k + 1.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "proof",
+    "induction"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "inductive step | induction step": 44,
+      "also true for": 1
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-26"
+  }
+}

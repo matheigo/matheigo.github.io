@@ -1,0 +1,30 @@
+{
+  "id": "the-common-ratio-is-less-than-1",
+  "situation": "written-solution",
+  "intent": "公比の絶対値が 1 より小さいので等比級数が収束すると書く",
+  "en": "Since |r| < 1, the series converges.",
+  "ja": "|r| < 1 なので、この級数は収束する。",
+  "register": "written",
+  "tags": [
+    "series",
+    "convergence"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "the series converges": 82
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-intalg"
+    ],
+    "counted": "2026-09-26"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "involves-imaginary-numbers",
+  "situation": "class-listening",
+  "intent": "2 次方程式の解が実数でなく虚数（複素数）になると伝える",
+  "en": "You get complex roots.",
+  "ja": "解は虚数になります（実数解はありません）。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "You get imaginary solutions.",
+      "register": "neutral"
+    },
+    {
+      "en": "There are no real solutions.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "quadratics",
+    "complex-numbers"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "complex roots | complex solutions": 53,
+      "imaginary roots | imaginary solutions": 20,
+      "no real solutions | no real roots | no real solution": 2
+    },
+    "sources": [
+      "khan-algebra",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

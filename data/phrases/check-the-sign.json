@@ -1,0 +1,37 @@
+{
+  "id": "check-the-sign",
+  "situation": "class-listening",
+  "intent": "各区間で f′ の符号を調べる",
+  "en": "Let's check the sign of f prime on each interval.",
+  "ja": "各区間で f′ の符号を調べましょう。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Check the sign.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "derivatives",
+    "sign-chart"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "sign of f prime | the sign of the derivative": 9,
+      "check the sign": 3
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02"
+    ],
+    "counted": "2026-09-26"
+  }
+}

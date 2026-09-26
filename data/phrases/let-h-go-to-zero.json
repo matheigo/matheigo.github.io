@@ -1,0 +1,41 @@
+{
+  "id": "let-h-go-to-zero",
+  "situation": "class-listening",
+  "intent": "差分商で h を 0 に近づける",
+  "en": "Now take the limit as h approaches zero.",
+  "ja": "では h を 0 に近づけます。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Now let h go to zero.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "limits",
+    "derivatives"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "as h approaches zero | as h approaches 0": 80,
+      "h goes to zero | h goes to 0 | h go to zero | h go to 0": 12
+    },
+    "sources": [
+      "khan-ap-calc",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

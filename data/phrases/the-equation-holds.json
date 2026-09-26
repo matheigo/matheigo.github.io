@@ -1,0 +1,42 @@
+{
+  "id": "the-equation-holds",
+  "situation": "written-solution",
+  "intent": "等式が成り立つことを示し終えたと書く",
+  "en": "Therefore, the identity is verified.",
+  "ja": "よって、等式は成り立つ。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Hence the identity holds.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "proof",
+    "identity"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "the identity is verified | we have verified the identity": 2,
+      "the identity holds | the equation holds | the equality holds": 1
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも要の部分を 3 件以上使わない（書き言葉のコーパスと参照で数えた。書: 判断不能: 重み付け後 3 件（10 未満））。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

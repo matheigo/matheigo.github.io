@@ -1,0 +1,38 @@
+{
+  "id": "continuous-but-not-differentiable",
+  "situation": "class-listening",
+  "intent": "連続だが微分できない点があることを示す",
+  "en": "It's continuous at 0, but it's not differentiable there.",
+  "ja": "x = 0 で連続ですが、微分はできません。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "It's continuous, but there's a sharp corner.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "derivatives",
+    "continuity"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "sharp corner | a sharp point | a cusp | a kink": 6,
+      "not differentiable": 33
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

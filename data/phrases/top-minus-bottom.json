@@ -1,0 +1,40 @@
+{
+  "id": "top-minus-bottom",
+  "situation": "class-listening",
+  "intent": "2 つの曲線の間の面積は、上の関数から下の関数を引いて積分すると伝える",
+  "en": "It's top minus bottom.",
+  "ja": "上の曲線から下の曲線を引きます。",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "Subtract the bottom curve from the top curve.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "integration",
+    "area"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "top minus bottom | top … minus bottom | top minus … bottom | top … minus … bottom": 19,
+      "subtract the bottom | subtract the lower": 4
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

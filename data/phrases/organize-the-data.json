@@ -1,0 +1,37 @@
+{
+  "id": "organize-the-data",
+  "situation": "class-listening",
+  "intent": "データを整理する（小さい順に並べる）",
+  "en": "Put the data in order from least to greatest.",
+  "ja": "まずデータを小さい順に並べて整理しましょう。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Put the numbers in order from smallest to largest.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "statistics",
+    "data"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "least to greatest": 35,
+      "smallest to largest": 3
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle"
+    ],
+    "counted": "2026-09-26"
+  }
+}

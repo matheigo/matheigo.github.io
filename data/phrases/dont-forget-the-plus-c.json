@@ -1,0 +1,49 @@
+{
+  "id": "dont-forget-the-plus-c",
+  "situation": "class-listening",
+  "intent": "不定積分の答えに積分定数を付け忘れないよう注意する",
+  "en": "Don't forget the plus C.",
+  "ja": "積分定数の C を忘れないでね。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Don't forget your constant of integration.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "integration",
+    "reminder"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "plus c": 340,
+      "constant of integration": 28
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

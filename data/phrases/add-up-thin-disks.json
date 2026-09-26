@@ -1,0 +1,40 @@
+{
+  "id": "add-up-thin-disks",
+  "situation": "class-listening",
+  "intent": "回転体の体積を、薄く切った円板の体積を足し合わせるものとして説明する",
+  "en": "Think of it as cutting the solid into a bunch of thin slices.",
+  "ja": "立体を薄く切って、その体積を足し合わせるイメージです。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "We're adding up a bunch of thin disks.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "integration",
+    "volume"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "bunch of slices | thin slices | little slices": 11,
+      "bunch of disks | lot of disks | stack of disks | infinitely many disks | little disks | thin disks": 5
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

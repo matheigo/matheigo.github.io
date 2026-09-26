@@ -1,0 +1,35 @@
+{
+  "id": "the-one-sided-limits-agree",
+  "situation": "written-solution",
+  "intent": "左側極限と右側極限が一致するので極限が存在すると書く",
+  "en": "Since the left-hand and right-hand limits are equal, the limit exists.",
+  "ja": "左側極限と右側極限が等しいので、極限は存在する。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Since the one-sided limits are equal, the limit exists.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "limits"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "one-sided limits": 26,
+      "left-hand and right-hand limits | left- and right-hand limits | right-hand and left-hand limits": 21
+    },
+    "sources": [
+      "openstax-calculus",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

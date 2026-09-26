@@ -1,0 +1,35 @@
+{
+  "id": "assume-it-holds-for-n-k",
+  "situation": "written-solution",
+  "intent": "数学的帰納法で、n = k のとき成り立つと仮定する",
+  "en": "Inductive hypothesis: assume the statement is true for n = k.",
+  "ja": "n = k のとき成り立つと仮定する。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Suppose the statement holds for n = k.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "proof",
+    "induction"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "inductive hypothesis | induction hypothesis": 36,
+      "assume … true for | assume that … true for | suppose … true for | assume … holds for | suppose … holds for": 4
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-26"
+  }
+}

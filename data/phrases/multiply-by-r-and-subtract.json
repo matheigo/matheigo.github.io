@@ -1,0 +1,43 @@
+{
+  "id": "multiply-by-r-and-subtract",
+  "situation": "class-listening",
+  "intent": "等比数列の和を、両辺に r を掛けて引き算して求める",
+  "en": "Multiply both sides by r and subtract.",
+  "ja": "両辺に r を掛けて、引き算します。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Now subtract one equation from the other.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "sequences",
+    "series"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "multiply by r | multiply … by r": 11,
+      "subtract the two equations | subtract these two equations | subtract one from the other | subtract one equation from the other": 5
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

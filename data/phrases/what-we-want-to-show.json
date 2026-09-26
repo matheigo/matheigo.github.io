@@ -1,0 +1,44 @@
+{
+  "id": "what-we-want-to-show",
+  "situation": "written-solution",
+  "intent": "何を示せばよいかを書く",
+  "en": "We want to show that f(x) > 0 for all x.",
+  "ja": "示すべきことは、すべての x について f(x) > 0 となることである。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "We need to show that f(x) > 0 for all x.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "we need to show": 10,
+      "we want to show": 4
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（書き言葉のコーパスと参照で数えた。話: 対象外 ／ 書: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満）。要の部分は OpenStax の呼び方 we want to show（本文 4 件）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}
