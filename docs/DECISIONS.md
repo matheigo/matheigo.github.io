@@ -902,3 +902,9 @@
 - 2026-09-26 | 3 | それでも確かめられない 31 行（日本側 28・両側 3）と、米国側 5 行・日米で同じ 5 行は、ledger/conventions-excluded.csv に残し、理由に「2026-09-26: …」を足した（試験に出てこない、数学Ⅲ・中学の内容で範囲外、マーク式で答案を見られない ほか）。vector-notation は矢印を確かめたが、成分を丸かっこで書く例が問題文にないので外したまま | あなたの指示 4
 - 2026-09-26 | 3 | ledger/conventions-excluded.csv の 2 行（vector-notation・solution-as-ordered-pair）は理由の文のコンマを引用符で囲んでいなかったため、CSV として読むと理由が途中で切れていた（前のレポートの表も切れていた）。書き出しを csv モジュールにし、引用符で囲んだ | 見つけたので直した
 - 2026-09-26 | 3 | tests/corpus.test.ts の「大文字で始まり s で終わる語は名前」の検査の除外を、データから消えた Calculators から、文頭の Pencils（Time's up. Pencils down.）に替えた。cspell に kaisetsu（corpus/ref/jp/ のファイル名）と pdftoppm（ツール名）を足した | 検査の目的に当たらない
+
+## Phase 4 の前の修正（条件付き確率の記号・NHK 高校講座・terms の日本側の主張）— 2026-09-26
+
+- 2026-09-26 | 4 | 1. conditional-probability-subscript-jp に高等学校学習指導要領解説 数学編 理数編（数学A 場合の数と確率、p.94 の P(A∩B) = P(A)P_A(B) = P(B)P_B(A)）を出典に足し、likely にした（解説の本文で P_A(B) を確かめた）。ceiling-brackets（symbols）・quadratic-regression（terms）は draft のまま、written-solution-given-prove の en は具体例の文のまま | ユーザーの判断（phase3-final-report E-2）
+- 2026-09-26 | 4 | 2. NHK 高校講座は資料に使わない（人間が同意して使うこともしない）。外した慣習差 41 行は外したまま。docs/SOURCES.md の NHK の行を書き直した | ユーザーの判断。NHK ONE の利用規約の同意に受信契約の確認・地域の選択が含まれる
+- 2026-09-26 | 4 | 3. Phase 5 の監査の論点に足した（PLAN §9 Phase 5 の 1、audits/phase3-final-report.md F-6）: terms の pitfalls・mapping_note の日本側の主張にも慣習差と同じ基準（日本側を資料で確かめる）を当て、確かめられない文は弱めるか消す。目安の数は 286 語・300 文（正規表現で数えた） | ユーザーの指示。直すのは生成と別のセッション（CLAUDE.md 絶対ルール 8）なので、ここでは書き換えない

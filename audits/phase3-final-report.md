@@ -137,6 +137,10 @@ phrases・conventions の draft は 0。
 24. office-hours-stuck-at-step の話し言葉 ① walk … through は教員の発話も学生と同じだけある（symbols-conventions）
 25. 数えない variants（要の部分 ""）を置いたもの（by-hypothesis・are-equal-respectively・written-solution-therefore・discord-same-answer・email-sign-off ほか）（phrases、phrases-3）
 
+### F-6. terms の日本側の主張（2026-09-26 追加。PLAN §9 Phase 5）
+
+26. terms の pitfalls・mapping_note にある日本側の主張（「日本の教科書は〜」「日本では〜と書く」）にも、慣習差と同じ基準（日本側を資料で確かめる）を当てる。確かめられない文は弱めるか消す。「日本(の教科書|では|の高校|の授業|の答案|の中学|の入試|の数学|で)」に当たる文は 286 語・300 文（2026-09-26 に数えた。目安）
+
 ## G. 確認（合否はすべて終了コード）
 
 本コミットの確認は audits/phase3-conventions-2-report.md の F。`tsc --noEmit`、`pnpm validate`（警告 0）、`pnpm spell`、`pnpm test`（156/156）、`pnpm build` はすべて exit 0。
