@@ -7,9 +7,9 @@
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15624
+- 調べた本文の欄: 15648
 - 英語のソース: 3884 ファイル ／ 日本語のソース: 371 ファイル
-- 一致した箇所: **559**（462 項目）
+- 一致した箇所: **524**（434 項目）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
 |---|---|---|---|---|---|---|---|
@@ -53,8 +53,6 @@
 | terms | aa-similarity | definition_en | en | 9 | the angles of a triangle add up to 180 | 3 | khan-algebra, openstax-intalg, khan-middle |
 | terms | aas-congruence | definition_en | en | 14 | if two angles and a non included side of one triangle are congruent to | 2 | ref:im-9-12, ref:ck12-geometry |
 | terms | absolute-extrema | examples[1].en | en | 10 | find the absolute maximum and minimum values of f x | 1 | openstax-calculus |
-| terms | absolute-value | definition_en | en | 9 | the absolute value of a number is never negative | 2 | openstax-elemalg, openstax-intalg |
-| terms | absolute-value | definition_en | en | 8 | distance from zero on the number line since | 1 | openstax-intalg |
 | terms | absolute-value-function | examples[1].en | en | 8 | graph the absolute value function f x x | 2 | openstax-algtrig, openstax-precalculus |
 | terms | acceleration | definition_en | en | 10 | the rate of change of velocity with respect to time | 1 | khan-ap-calc |
 | terms | acute-triangle | pitfalls[1] | en | 10 | ck 12 geometry 4 2 classify triangles by angle measurement | 1 | ref:ck12-geometry |
@@ -63,13 +61,11 @@
 | terms | alternate-exterior-angles | definition_en | en | 8 | lines and on opposite sides of the transversal | 1 | ref:im-6-8 |
 | terms | alternate-exterior-angles | examples[1].en | en | 8 | two parallel lines are cut by a transversal | 1 | ref:ck12-geometry |
 | terms | alternate-exterior-angles | pitfalls[1] | en | 8 | 2 converse of the alternate exterior angles theorem | 1 | ref:ck12-geometry |
-| terms | alternate-interior-angles | definition_en | en | 8 | lines and on opposite sides of the transversal | 1 | ref:im-6-8 |
 | terms | angle-between-vectors | examples[0].en | en | 12 | use the dot product to find the angle between the two vectors | 3 | openstax-algtrig, openstax-precalculus, openstax-calculus |
 | terms | angle-bisector-theorem | examples[1].ja | ja | 21 | ∠Aの二等分線と辺BCの交点をDとするとき | 1 | jp:kaisetsu-chu |
 | terms | angle-of-depression | definition_en | en | 8 | the angle between the horizontal and the line | 2 | openstax-algtrig, openstax-precalculus |
 | terms | angle-of-elevation | definition_en | en | 8 | the angle between the horizontal and the line | 2 | openstax-algtrig, openstax-precalculus |
 | terms | angle-of-elevation | examples[1].en | en | 8 | building the angle of elevation to the top | 2 | openstax-algtrig, openstax-precalculus |
-| terms | angle-sum-of-a-triangle | definition_en | en | 12 | that the three interior angles of any triangle add up to 180 | 1 | ref:ck12-geometry |
 | terms | angle-sum-of-a-triangle | mapping_note | en | 9 | ck 12 geometry 4 17 triangle angle sum theorem | 1 | ref:ck12-geometry |
 | terms | apothem | pitfalls[2] | en | 11 | ck 12 geometry 5 21 area of regular and irregular polygons | 1 | ref:ck12-geometry |
 | terms | arc-length | definition_en | en | 8 | the length of an arc of a circle | 2 | openstax-algtrig, openstax-precalculus |
@@ -87,7 +83,6 @@
 | terms | area-under-the-curve | definition_en | en | 8 | the x axis from x a to x | 1 | openstax-calculus |
 | terms | arithmetic-sequence | definition_en | en | 9 | a sequence in which each term is the previous | 1 | ref:im-9-12 |
 | terms | as-x-approaches-infinity | examples[0].en | en | 8 | as x goes to infinity e to the | 1 | mit-18.01 |
-| terms | asa-congruence | definition_en | en | 17 | angles and the included side of one triangle are congruent to two angles and the included side | 2 | ref:im-9-12, ref:ck12-geometry |
 | terms | at-least-one | examples[1].en | en | 9 | find the probability of getting at least one 6 | 2 | openstax-introstats, ref:levin-dmoi4 |
 | terms | auxiliary-angle-form | examples[0].en | en | 9 | the square root of a squared plus b squared | 3 | yt:organicchem, mit-18.06, mit-18.03 |
 | terms | auxiliary-line | examples[1].en | en | 9 | prove that the sum of the interior angles of | 2 | ref:levin-dmoi4, khan-algebra |
@@ -104,13 +99,11 @@
 | terms | be-circumscribed-about | mapping_note | en | 8 | the circle that passes through all three vertices | 1 | ref:ck12-geometry |
 | terms | biconditional | definition_en | en | 8 | p and q have the same truth value | 1 | ref:levin-dmoi4 |
 | terms | bisect | examples[0].en | en | 9 | the diagonals of a parallelogram bisect each other so | 3 | ref:im-9-12, mit-18.02, ref:nicholson-lawa-2021a |
-| terms | both-sides | examples[0].en | en | 13 | whatever you do to one side you have to do to the other | 2 | khan-middle, yt:profleonard |
-| terms | both-sides | definition_en | en | 10 | both the left hand side and the right hand side | 5 | khan-ap-calc, mit-18.01, yt:3blue1brown, khan-algebra, khan-middle |
+| terms | both-sides | definition_en | en | 9 | the left hand side and the right hand side | 5 | khan-ap-calc, mit-18.01, khan-algebra, yt:3blue1brown, khan-middle |
 | terms | can-be-integrated | examples[1].en | en | 8 | continuous on a b then f is integrable | 1 | openstax-calculus |
 | terms | cartesian-product | definition_en | en | 8 | of all ordered pairs a b with a | 1 | ref:levin-dmoi4 |
 | terms | cavalieris-principle | definition_en | en | 8 | then the two solids have the same volume | 1 | ref:im-9-12 |
 | terms | center | definition_en | en | 8 | the point that is the same distance from | 1 | ref:im-9-12 |
-| terms | central-angle | definition_en | en | 11 | an angle whose vertex is at the center of a circle | 1 | ref:im-9-12 |
 | terms | central-limit-theorem | definition_en | en | 9 | the distribution of the sample mean is approximately normal | 1 | openstax-introstats |
 | terms | centroid | examples[1].en | en | 9 | find the coordinates of the centroid of the triangle | 1 | ref:ck12-geometry |
 | terms | chain-rule | examples[1].en | en | 9 | use the chain rule to find the derivative of | 4 | ref:ap-calculus-ab-bc-ced, yt:organicchem, openstax-calculus, yt:nancypi |
@@ -122,9 +115,8 @@
 | terms | checking-whether-the-solution-makes-sense | examples[2].en | en | 8 | the side length of a square with area | 2 | ref:im-6-8, ref:im-9-12 |
 | terms | circle | examples[1].en | en | 9 | find the area of a circle with a radius | 2 | ref:ck12-geometry, khan-middle |
 | terms | circumcenter | definition_en | en | 8 | the point where the perpendicular bisectors of the | 1 | ref:ck12-geometry |
-| terms | circumference | examples[1].en | en | 10 | find the circumference of a circle with a radius of | 2 | openstax-algtrig, ref:ck12-geometry |
 | terms | circumscribed-circle | definition_en | en | 8 | where the perpendicular bisectors of the sides meet | 1 | ref:ck12-geometry |
-| terms | clear-the-denominators | definition_en | en | 12 | multiply both sides of an equation by the least common denominator lcd | 5 | openstax-prealgebra, openstax-elemalg, openstax-intalg, ref:im-9-12, ref:ck12-algebra |
+| terms | clear-the-denominators | definition_en | en | 10 | multiply both sides of an equation by the lcd of | 5 | openstax-prealgebra, openstax-elemalg, openstax-intalg, ref:im-9-12, ref:ck12-algebra |
 | terms | clear-the-denominators | examples[1].en | en | 8 | first clear the fractions by multiplying both sides | 2 | openstax-algtrig, openstax-precalculus |
 | terms | clear-the-denominators | examples[2].en | en | 8 | multiply both sides by 10 to clear the | 1 | openstax-prealgebra |
 | terms | coefficient-of-determination | examples[1].en | en | 8 | find the coefficient of determination and interpret it | 1 | openstax-introstats |
@@ -141,10 +133,8 @@
 | terms | composite-figure | mapping_note | en | 8 | 5 18 area and perimeter of composite shapes | 1 | ref:ck12-geometry |
 | terms | composite-figure | pitfalls[0] | en | 8 | 5 18 area and perimeter of composite shapes | 1 | ref:ck12-geometry |
 | terms | compute | examples[2].en | en | 8 | the area of a circle with a radius | 1 | khan-middle |
-| terms | conclusion | examples[1].en | en | 10 | if two angles are vertical angles then they are congruent | 1 | ref:ck12-geometry |
 | terms | conditional-statement | examples[0].en | en | 9 | the hypothesis is true and the conclusion is false | 1 | ref:levin-dmoi4 |
 | terms | conditions-for-a-parallelogram | examples[0].en | en | 8 | to prove that a quadrilateral is a parallelogram | 1 | ref:ck12-geometry |
-| terms | cone | examples[1].en | en | 10 | has a radius of 3 cm and a height of | 1 | ref:im-6-8 |
 | terms | confidence-interval | examples[1].en | en | 9 | construct a 95 confidence interval for the population mean | 2 | openstax-introstats, yt:profleonard |
 | terms | congruence-criteria | mapping_note | en | 8 | geometry 2 6 side angle side triangle congruence | 1 | ref:im-9-12 |
 | terms | congruence-criteria-for-right-triangles | definition_en | en | 8 | the hypotenuses and one pair of legs are | 1 | ref:ck12-geometry |
@@ -171,11 +161,11 @@
 | terms | cyclic-quadrilateral | pitfalls[2] | en | 9 | ck 12 geometry 6 15 inscribed quadrilaterals in circles | 1 | ref:ck12-geometry |
 | terms | cycloid | examples[1].en | en | 14 | find the length of one arch of the cycloid x sin y 1 cos | 1 | openstax-calculus |
 | terms | cycloid | definition_en | en | 11 | the curve traced by a point on the rim of a | 1 | openstax-calculus |
-| terms | cylinder | examples[1].en | en | 12 | a cylinder has a radius of 4 cm and a height of | 1 | ref:im-6-8 |
 | terms | decomposition-of-a-vector | examples[1].en | en | 8 | as a linear combination of a and b | 1 | mit-notes |
 | terms | density-curve | examples[0].en | en | 8 | the area under the density curve between two | 1 | openstax-introstats |
 | terms | derivative | definition_en | en | 11 | the slope of the tangent line to the graph of f | 8 | openstax-calculus, khan-ap-calc, yt:profleonard, openstax-precalculus, mit-18.01, mit-notes ほか |
 | terms | derivative-at-a-point | definition_en | en | 10 | to the slope of the tangent line at the point | 3 | openstax-calculus, openstax-precalculus, khan-ap-calc |
+| terms | derivative-at-a-point | examples[1].en | en | 8 | the slope of the tangent line there the | 1 | khan-ap-calc |
 | terms | derivative-at-a-point | collocations[1].en | en | 8 | the slope of the tangent line at x | 1 | khan-ap-calc |
 | terms | derivative-of-a-sum | definition_en | en | 8 | of a sum is the sum of the | 2 | mit-notes, openstax-calculus |
 | terms | derivative-of-a-vector-function | examples[1].en | en | 9 | the derivative of the vector valued function r t | 1 | openstax-calculus |
@@ -187,7 +177,6 @@
 | terms | derivatives-of-trigonometric-functions | definition_ja | en | 8 | sin x cos x cos x sin x | 4 | openstax-calculus, mit-notes, openstax-algtrig, openstax-precalculus |
 | terms | descartes-rule-of-signs | examples[1].en | en | 16 | use descartes rule of signs to determine the possible numbers of positive and negative real zeros | 2 | openstax-algtrig, openstax-precalculus |
 | terms | diagonalization | definition_en | en | 8 | finding an invertible matrix p such that p | 1 | ref:nicholson-lawa-2021a |
-| terms | diameter | definition_en | en | 9 | a line segment that passes through the center of | 2 | openstax-algtrig, openstax-precalculus |
 | terms | diameter | examples[0].en | en | 9 | all the way across the circle through the center | 1 | khan-middle |
 | terms | die | examples[1].en | en | 9 | find the probability of rolling a number greater than | 3 | openstax-algtrig, openstax-precalculus, khan-middle |
 | terms | difference | pitfalls[0] | en | 10 | the difference of a and b a b the difference | 2 | openstax-elemalg, ref:levin-dmoi4 |
@@ -236,7 +225,6 @@
 | terms | find-the-equation-of-the-tangent-line | pitfalls[0] | en | 8 | equation of the tangent line the equation of | 1 | khan-ap-calc |
 | terms | find-the-nth-term | examples[1].en | en | 8 | formula for the nth term of the sequence | 1 | ref:levin-dmoi4 |
 | terms | first-term | examples[1].en | en | 8 | the first term and the common difference of | 2 | openstax-algtrig, openstax-precalculus |
-| terms | five-number-summary | definition_en | en | 11 | the first quartile the median the third quartile and the maximum | 2 | openstax-introstats, ref:im-9-12 |
 | terms | floor-function | definition_en | en | 9 | the greatest integer less than or equal to x | 1 | openstax-calculus |
 | terms | foil | definition_en | en | 8 | to multiply two binomials multiply the first terms | 1 | openstax-elemalg |
 | terms | foot-of-the-perpendicular | examples[1].en | en | 8 | point p 1 2 3 to the plane | 1 | openstax-calculus |
@@ -249,19 +237,16 @@
 | terms | geometric-sequence | definition_en | en | 9 | a sequence in which each term is the previous | 1 | ref:im-9-12 |
 | terms | geometric-sequence | examples[1].en | en | 8 | of the geometric sequence 3 6 12 24 | 1 | openstax-intalg |
 | terms | gradient | examples[1].en | en | 8 | find the gradient of f x y z | 1 | openstax-calculus |
-| terms | graph | definition_en | en | 8 | the points x y on the coordinate plane | 1 | ref:im-6-8 |
 | terms | graph-coloring | definition_en | en | 8 | different colors the smallest number of colors needed | 1 | ref:levin-dmoi4 |
 | terms | greater-than | pitfalls[1] | en | 9 | than or equal to greater than or equal to | 1 | khan-middle |
 | terms | greater-than | examples[0].en | en | 8 | farther to the right on the number line | 1 | ref:ck12-algebra |
 | terms | greatest-common-divisor | examples[0].en | en | 8 | is the biggest number that goes into both | 1 | khan-middle |
 | terms | half-angle-formulas | examples[1].en | en | 10 | a half angle formula to find the exact value of | 2 | openstax-algtrig, openstax-precalculus |
-| terms | height | definition_en | en | 8 | segment from a vertex to the opposite side | 1 | ref:im-9-12 |
 | terms | herons-formula | examples[1].en | en | 12 | use heron's formula to find the area of a triangle with sides | 3 | openstax-algtrig, openstax-precalculus, ref:im-6-8 |
 | terms | hl-congruence | definition_en | en | 8 | right triangle are congruent to the hypotenuse and | 1 | ref:ck12-geometry |
 | terms | horizontal-asymptote | definition_en | en | 8 | the degrees of the numerator and the denominator | 3 | openstax-algtrig, openstax-precalculus, yt:nancypi |
 | terms | horizontal-line-test | definition_en | en | 10 | one to one if no horizontal line crosses the graph | 2 | openstax-algtrig, openstax-precalculus |
 | terms | horizontal-line-test | examples[1].en | en | 8 | use the horizontal line test to determine whether | 1 | openstax-calculus |
-| terms | hyperbola | definition_en | en | 9 | is the set of all points for which the | 1 | openstax-calculus |
 | terms | hyperbolic-functions | examples[0].en | en | 10 | e to the x and e to the negative x | 1 | mit-18.03 |
 | terms | hypotenuse | examples[1].en | en | 8 | the legs of a right triangle are 6 | 1 | ref:ck12-geometry |
 | terms | hypothesis-testing | examples[1].en | en | 9 | conduct a hypothesis test at the 5 significance level | 1 | openstax-introstats |
@@ -312,12 +297,11 @@
 | terms | limit | pitfalls[1] | en | 8 | the limit as x approaches a of f | 2 | khan-ap-calc, yt:organicchem |
 | terms | limit-at-infinity | mapping_note | ja | 23 | xの値を限りなく大きくしたときのf(x)の極限 | 1 | jp:kaisetsu-kou |
 | terms | limit-definition-of-the-derivative | examples[1].en | en | 8 | use the definition of the derivative to find | 1 | yt:organicchem |
+| terms | limit-laws | examples[2].en | en | 11 | the limit of a sum is the sum of the limits | 2 | mit-notes, openstax-calculus |
 | terms | limit-laws | examples[1].en | en | 9 | use the limit laws to evaluate lim x 2 | 1 | openstax-calculus |
 | terms | limit-of-a-riemann-sum | examples[1].en | en | 8 | is defined as a limit of riemann sums | 1 | openstax-calculus |
 | terms | limit-of-sine-x-over-x | definition_en | en | 9 | the limit of sin x x as x approaches | 1 | yt:nancypi |
 | terms | limit-of-sine-x-over-x | mapping_note | en | 8 | the limit as x approaches 0 of sine | 2 | khan-ap-calc, yt:profleonard |
-| terms | line-of-intersection | examples[2].en | en | 8 | find parametric equations for the line of intersection | 1 | openstax-calculus |
-| terms | line-of-intersection | examples[2].en | en | 8 | the planes x y z 1 and x | 1 | openstax-calculus |
 | terms | linear-diophantine-equation | definition_en | en | 8 | an equation of the form ax by c | 1 | ref:nicholson-lawa-2021a |
 | terms | linear-function | definition_en | en | 14 | y mx b where m is the slope and b is the y intercept | 5 | khan-ap-calc, khan-middle, ref:ck12-geometry, khan-algebra, yt:organicchem |
 | terms | linear-inequality | pitfalls[0] | en | 10 | less than or equal to greater than or equal to | 1 | khan-middle |
@@ -359,9 +343,7 @@
 | terms | one-sample-t-test | pitfalls[0] | en | 9 | a single population mean using the student t distribution | 1 | openstax-introstats |
 | terms | one-to-one-property | examples[0].en | en | 8 | by the one to one property the exponents | 2 | openstax-algtrig, openstax-precalculus |
 | terms | one-to-one-property | examples[1].en | en | 8 | use the one to one property to solve | 2 | openstax-algtrig, openstax-precalculus |
-| terms | opposite | definition_en | en | 16 | the number that is the same distance from zero on the number line but on the | 4 | openstax-prealgebra, openstax-intalg, openstax-elemalg, ref:im-6-8 |
-| terms | origin | definition_en | en | 9 | it is the point where the x axis and | 3 | openstax-prealgebra, openstax-elemalg, openstax-intalg |
-| terms | outlier | definition_en | en | 8 | far away from the rest of the data | 1 | ref:im-6-8 |
+| terms | orthographic-projection | mapping_note | ja | 28 | 空間図形を上から見た図(平面図)や前から見た図(立面図) | 1 | jp:kaisetsu-chu |
 | terms | p-value | definition_en | en | 8 | the probability assuming the null hypothesis is true | 1 | khan-ap-stats |
 | terms | paragraph-proof | examples[1].en | en | 10 | that the base angles of an isosceles triangle are congruent | 2 | ref:im-9-12, ref:ck12-geometry |
 | terms | parallel-lines | examples[0].en | en | 10 | parallel lines have the same slope but different y intercepts | 5 | openstax-elemalg, openstax-algtrig, openstax-precalculus, khan-middle, ref:im-9-12 |
@@ -373,7 +355,6 @@
 | terms | pascals-triangle | examples[1].en | en | 8 | use pascal's triangle to expand x y 5 | 1 | openstax-intalg |
 | terms | pass-through | examples[1].en | en | 14 | find the equation of the line that passes through the origin and the point | 4 | openstax-algtrig, openstax-precalculus, ref:im-9-12, yt:3blue1brown |
 | terms | percent-change | definition_en | en | 8 | as a percent of the original amount the | 1 | openstax-prealgebra |
-| terms | perimeter | definition_en | en | 8 | is the sum of the lengths of all | 1 | mit-notes |
 | terms | permutation | definition_en | en | 8 | the number of permutations of n objects taken | 2 | openstax-algtrig, openstax-precalculus |
 | terms | perpendicular-lines | examples[0].en | en | 8 | perpendicular lines have slopes that are negative reciprocals | 3 | openstax-elemalg, openstax-intalg, openstax-algtrig |
 | terms | piecewise-function | definition_en | en | 10 | defined by different formulas on different parts of its domain | 1 | openstax-calculus |
@@ -386,7 +367,7 @@
 | terms | population-proportion | examples[1].en | en | 10 | construct a 95 confidence interval for the population proportion of | 2 | openstax-introstats, yt:profleonard |
 | terms | population-standard-deviation | examples[0].en | en | 9 | when we know the population standard deviation we use | 1 | openstax-introstats |
 | terms | population-standard-deviation | examples[1].en | en | 8 | construct a 95 confidence interval for the mean | 2 | openstax-introstats, ref:ap-statistics-ced |
-| terms | positive-number | definition_en | en | 12 | on a number line positive numbers are to the right of zero | 1 | openstax-prealgebra |
+| terms | positive-number | definition_en | en | 9 | to the right of 0 on the number line | 3 | openstax-algtrig, khan-middle, ref:im-6-8 |
 | terms | postulate | definition_en | en | 9 | a statement that is accepted as true without proof | 1 | ref:ck12-geometry |
 | terms | potential-function | examples[1].en | en | 8 | find a potential function for f x y | 1 | openstax-calculus |
 | terms | power-series | examples[1].en | en | 10 | find a power series representation for f x 1 1 | 1 | openstax-calculus |
@@ -398,7 +379,6 @@
 | terms | product | definition_en | en | 8 | the result of multiplying two or more numbers | 1 | openstax-prealgebra |
 | terms | product-rule | examples[0].en | en | 11 | derivative of the first times the second plus the first times | 2 | yt:profleonard, mit-18.01 |
 | terms | product-to-sum-formulas | pitfalls[0] | en | 8 | sum to product and product to sum formulas | 2 | openstax-algtrig, openstax-precalculus |
-| terms | properties-of-equality | examples[0].en | en | 10 | you do to one side you do to the other | 1 | yt:nancypi |
 | terms | properties-of-inequalities | definition_en | en | 8 | multiplying or dividing by a negative number reverses | 1 | openstax-algtrig |
 | terms | properties-of-logarithms | definition_ja | en | 8 | log a m log a n log a | 3 | openstax-intalg, openstax-algtrig, openstax-precalculus |
 | terms | proposition | examples[2].en | en | 11 | a proposition is a statement that is either true or false | 2 | mit-notes, mit-6.042 |
@@ -409,10 +389,7 @@
 | terms | pythagorean-theorem | definition_en | en | 10 | right triangle with legs a and b and hypotenuse c | 1 | ref:im-9-12 |
 | terms | pythagorean-theorem | definition_en | en | 8 | the sum of the squares of the legs | 2 | ref:im-6-8, ref:ck12-geometry |
 | terms | pythagorean-triple | definition_en | en | 8 | are the side lengths of a right triangle | 1 | ref:levin-dmoi4 |
-| terms | quadrant | definition_en | en | 8 | the x axis and the y axis divide | 1 | openstax-elemalg |
 | terms | quadratic-equation | definition_en | en | 9 | an equation that can be written in the form | 2 | openstax-calculus, openstax-prealgebra |
-| terms | quartile | examples[0].en | en | 9 | and q3 is the median of the upper half | 1 | yt:organicchem |
-| terms | quartile | examples[0].en | en | 8 | q1 is the median of the lower half | 1 | yt:organicchem |
 | terms | quotient | pitfalls[0] | en | 11 | divided by b the quotient of a and b a b | 3 | openstax-prealgebra, openstax-intalg, openstax-elemalg |
 | terms | radius | examples[0].en | en | 8 | the diameter so if the diameter is 10 | 1 | yt:organicchem |
 | terms | random-variable | examples[0].en | en | 8 | be the random variable for the number of | 1 | mit-6.042 |
@@ -427,9 +404,9 @@
 | terms | rationalizing-the-denominator | definition_en | en | 10 | multiplying the numerator and the denominator by the same number | 2 | khan-middle, khan-ap-calc |
 | terms | real-number | definition_en | en | 8 | a number that is either rational or irrational | 3 | openstax-elemalg, openstax-intalg, openstax-prealgebra |
 | terms | reduced-row-echelon-form | definition_en | en | 8 | is the only nonzero entry in its column | 1 | ref:nicholson-lawa-2021a |
-| terms | reflect | definition_en | en | 8 | on the opposite side of the line the | 1 | ref:im-6-8 |
 | terms | region | definition_en | en | 8 | the set of all points x y satisfying | 2 | openstax-algtrig, openstax-precalculus |
 | terms | regression-line | examples[1].en | en | 10 | find the equation of the least squares regression line and | 2 | openstax-introstats, ref:ap-statistics-ced |
+| terms | regular-polyhedron | mapping_note | en | 8 | regular polyhedron also known as a platonic solid | 1 | ref:levin-dmoi4 |
 | terms | relation | definition_en | en | 10 | a relation from a set a to a set b | 2 | mit-notes, mit-6.042 |
 | terms | remainder-theorem | examples[1].en | en | 9 | use the remainder theorem to find the remainder when | 3 | openstax-intalg, openstax-algtrig, openstax-precalculus |
 | terms | restricted-domain | definition_en | en | 8 | a function that is not one to one | 2 | openstax-algtrig, openstax-precalculus |
@@ -438,8 +415,6 @@
 | terms | revolve-around-the-x-axis | examples[0].en | en | 8 | take this region and rotate it around the | 1 | khan-ap-calc |
 | terms | riemann-sum | definition_en | en | 8 | used to approximate the area under a curve | 1 | openstax-calculus |
 | terms | right-hand-limit | definition_en | en | 8 | the limit of f x as x approaches | 4 | khan-ap-calc, openstax-calculus, openstax-precalculus, ref:ap-calculus-ab-bc-ced |
-| terms | right-triangle | definition_en | en | 9 | the side opposite the right angle is the hypotenuse | 1 | ref:ck12-geometry |
-| terms | right-triangle | definition_en | en | 9 | sides that form the right angle are the legs | 1 | ref:ck12-geometry |
 | terms | right-triangle | examples[0].en | en | 8 | always the longest side of a right triangle | 1 | ref:im-6-8 |
 | terms | rise-over-run | examples[1].en | en | 15 | use rise over run to find the slope of the line through the points 1 | 5 | openstax-elemalg, openstax-prealgebra, openstax-intalg, ref:ck12-geometry, openstax-calculus |
 | terms | round | examples[1].en | en | 8 | and round your answer to the nearest hundredth | 1 | openstax-algtrig |
@@ -451,13 +426,11 @@
 | terms | same-side-interior-angles | examples[0].en | en | 8 | same side interior angles add up to 180 | 1 | ref:ck12-geometry |
 | terms | sample-mean | examples[1].en | en | 9 | construct a 95 confidence interval for the population mean | 2 | openstax-introstats, yt:profleonard |
 | terms | sample-space | definition_en | en | 9 | the set of all possible outcomes of an experiment | 3 | openstax-algtrig, openstax-precalculus, openstax-introstats |
-| terms | sas-congruence | definition_en | en | 17 | sides and the included angle of one triangle are congruent to two sides and the included angle | 2 | ref:im-9-12, ref:ck12-geometry |
 | terms | scalar-triple-product | examples[1].en | en | 16 | the triple scalar product to find the volume of the parallelepiped determined by u v and | 2 | openstax-calculus, ref:nicholson-lawa-2021a |
 | terms | scale-factor | definition_en | en | 10 | a scaled copy a scale factor greater than 1 enlarges | 1 | ref:im-9-12 |
 | terms | scientific-notation | definition_en | en | 9 | way to write very large or very small numbers | 1 | ref:im-6-8 |
 | terms | secant-line | definition_en | en | 9 | the average rate of change between the two points | 1 | openstax-precalculus |
 | terms | second-derivative-test | definition_en | en | 9 | f has a local maximum at c if f | 1 | openstax-calculus |
-| terms | sector | definition_en | en | 11 | of a circle bounded by two radii and the arc between | 3 | ref:ck12-geometry, openstax-algtrig, openstax-precalculus |
 | terms | sequence | examples[1].en | en | 8 | write the first five terms of the sequence | 3 | openstax-intalg, openstax-algtrig, openstax-precalculus |
 | terms | set | examples[0].en | en | 11 | the domain is the set of all real numbers except 2 | 4 | openstax-calculus, openstax-intalg, openstax-algtrig, openstax-precalculus |
 | terms | set-builder-notation | definition_en | en | 12 | the set of all x such that x is greater than 2 | 3 | openstax-algtrig, openstax-precalculus, ref:levin-dmoi4 |
@@ -471,7 +444,6 @@
 | terms | side-angle-inequality | definition_en | en | 8 | the largest angle is opposite the longest side | 1 | ref:ck12-geometry |
 | terms | similarity-criteria | mapping_note | ja | 20 | 2組の辺の比とその間の角がそれぞれ等しい | 2 | jp:kaisetsu-chu, jp:wikipedia |
 | terms | similarity-criteria | definition_ja | ja | 20 | 2組の辺の比とその間の角がそれぞれ等しい | 2 | jp:kaisetsu-chu, jp:wikipedia |
-| terms | simplify | definition_en | en | 8 | by removing parentheses combining like terms or reducing | 1 | ref:ck12-algebra |
 | terms | sine | definition_en | en | 8 | on the unit circle the y coordinate of | 1 | ref:im-9-12 |
 | terms | skew-lines | mapping_note | en | 9 | ck 12 geometry 3 2 parallel and skew lines | 1 | ref:ck12-geometry |
 | terms | slant-asymptote | definition_en | en | 15 | the degree of the numerator is exactly one more than the degree of the denominator | 2 | yt:patrickjmt, openstax-calculus |
@@ -510,7 +482,6 @@
 | terms | straight-angle | definition_en | en | 9 | point in opposite directions and form a straight line | 1 | ref:im-6-8 |
 | terms | subset | definition_en | en | 9 | every element of a is also an element of | 1 | ref:levin-dmoi4 |
 | terms | subset | definition_en | en | 8 | set a is a subset of a set | 1 | ref:levin-dmoi4 |
-| terms | subtraction | definition_en | en | 11 | subtracting a number gives the same result as adding its opposite | 1 | ref:im-6-8 |
 | terms | sum | definition_en | en | 8 | the result of adding two or more numbers | 1 | openstax-prealgebra |
 | terms | sum-of-a-geometric-sequence | definition_en | en | 11 | the sum of the first n terms of a geometric sequence | 8 | openstax-algtrig, openstax-precalculus, openstax-intalg, ref:levin-dmoi4, khan-ap-calc, openstax-calculus ほか |
 | terms | sum-of-an-arithmetic-sequence | definition_en | en | 12 | the sum of the first n terms of an arithmetic sequence the | 9 | openstax-algtrig, openstax-precalculus, openstax-intalg, ref:levin-dmoi4, khan-ap-calc, openstax-calculus ほか |
@@ -525,7 +496,6 @@
 | terms | take-the-average | pitfalls[1] | en | 8 | the average rate of change find the average | 1 | openstax-precalculus |
 | terms | take-the-limit | examples[1].en | en | 8 | taking the limit of both sides as n | 1 | openstax-calculus |
 | terms | take-the-log-of-both-sides | definition_en | en | 8 | to both sides of an equation or inequality | 1 | khan-middle |
-| terms | take-the-log-of-both-sides | examples[0].en | en | 8 | take the natural log of both sides and | 1 | khan-ap-calc |
 | terms | take-the-partial-derivative | examples[0].en | en | 8 | take the partial derivative with respect to y | 1 | yt:profleonard |
 | terms | tangent-line | examples[1].en | en | 9 | find the equation of the tangent line to the | 3 | openstax-calculus, openstax-precalculus, khan-ap-calc |
 | terms | tangent-plane | examples[1].en | en | 8 | find an equation of the tangent plane to | 1 | openstax-calculus |
@@ -559,16 +529,11 @@
 | terms | vertex-angle | examples[1].ja | ja | 20 | ∠Aの二等分線と辺BCとの交点をDとする | 1 | jp:exams/h30-hon-03 |
 | terms | vertex-angle | definition_en | en | 13 | bisector of the vertex angle is also the perpendicular bisector of the base | 1 | ref:ck12-geometry |
 | terms | vertical-line-test | examples[1].en | en | 8 | use the vertical line test to determine whether | 2 | openstax-calculus, khan-middle |
-| terms | volume | definition_en | en | 8 | is measured in cubic units such as cubic | 1 | openstax-prealgebra |
 | terms | volume-by-cross-sections | examples[0].en | en | 9 | cross sections perpendicular to the x axis are squares | 1 | khan-ap-calc |
 | terms | volume-by-cross-sections | pitfalls[0] | en | 9 | cross sections perpendicular to the x axis are squares | 1 | khan-ap-calc |
 | terms | washer-method | definition_en | en | 10 | finding the volume of a solid of revolution with a | 2 | openstax-calculus, mit-18.01 |
-| terms | whisker | definition_en | en | 8 | from the ends of the box to the | 1 | openstax-introstats |
-| terms | word-problem | examples[1].en | en | 10 | write an equation for each word problem and then solve | 1 | ref:ck12-algebra |
 | terms | write-out-the-first-few-terms | examples[1].en | en | 9 | write out the first few terms of the sequence | 2 | ref:levin-dmoi4, openstax-intalg |
-| terms | x-coordinate | definition_en | en | 9 | the first number in an ordered pair x y | 1 | openstax-elemalg |
 | terms | x-intercept | examples[0].en | en | 9 | set y equal to zero and solve for x | 1 | openstax-algtrig |
-| terms | y-coordinate | definition_en | en | 9 | the second number in an ordered pair x y | 1 | openstax-elemalg |
 | terms | y-intercept | examples[0].en | en | 12 | the y intercept is where the line crosses the y axis so | 1 | openstax-elemalg |
 | terms | y-intercept | examples[1].en | en | 8 | the slope and the y intercept of the | 1 | ref:im-9-12 |
 | terms | zero-product-property | definition_en | en | 9 | if the product of two numbers is 0 then | 1 | ref:im-9-12 |

@@ -89,8 +89,8 @@
       "collection": "terms",
       "id": "algebraic-expression",
       "field": "mapping_note",
-      "sentence": "日本の中学の「文字式」は、文字を使って表した式のこと。",
-      "g1": true
+      "sentence": "中学校学習指導要領解説の「文字式」（文字を用いた式）は、文字を使って表した式のこと。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -126,13 +126,6 @@
       "field": "mapping_note",
       "sentence": "日本の中2 では「平行線の錯角は等しい」を平行線の性質として扱う。",
       "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "alternate-interior-angles",
-      "field": "pitfalls[0]",
-      "sentence": "日本の中学の「錯角」は内側の組のこと。",
-      "g1": true
     },
     {
       "collection": "terms",
@@ -273,13 +266,6 @@
       "field": "pitfalls[0]",
       "sentence": "日本の数I では、中心と各頂点を結んで n 個の合同な二等辺三角形に分け、外接円の半径 r を使って (n/2)r² sin(360°/n) と求める。",
       "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "area-of-the-base",
-      "field": "pitfalls[0]",
-      "sentence": "日本の教科書は底面積を S として V = Sh と書くが、英語の公式では大文字の B を使う（V = Bh）。",
-      "g1": true
     },
     {
       "collection": "terms",
@@ -467,7 +453,7 @@
       "collection": "terms",
       "id": "change-together",
       "field": "mapping_note",
-      "sentence": "「ともなって変わる」は日本の中 1 で関数を導入するときの言い方で、英語では y changes as x changes、y depends on x、as x increases, y increases のように、文で言い表す。",
+      "sentence": "「伴って変わる」は中学校学習指導要領解説が関数を導入する言い方（「伴って変わる二つの数量」）で、英語では y changes as x changes、y depends on x、as x increases, y increases のように、文で言い表す。",
       "g1": false
     },
     {
@@ -670,29 +656,22 @@
       "collection": "terms",
       "id": "congruence-criteria",
       "field": "mapping_note",
-      "sentence": "日本の三角形の合同条件は 3 つ（3 組の辺、2 組の辺とその間の角、1 組の辺とその両端の角）で、「合同条件」とまとめて呼ぶ。",
+      "sentence": "中学校学習指導要領解説の三角形の合同条件は 3 つ（対応する 3 組の辺、2 組の辺とその間の角、1 組の辺とその両端の角）で、「合同条件」とまとめて呼ぶ。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "congruence-criteria",
       "field": "definition_ja",
-      "sentence": "日本の中2 では「3 組の辺」「2 組の辺とその間の角」「1 組の辺とその両端の角」がそれぞれ等しい、の 3 つ。",
+      "sentence": "中学校学習指導要領解説（第 2 学年）では「3 組の辺」「2 組の辺とその間の角」「1 組の辺とその両端の角」がそれぞれ等しい、の 3 つ。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "congruence-criteria",
       "field": "pitfalls[0]",
-      "sentence": "AAS（エントリ aas-congruence）は日本の合同条件に無く、日本の答案では残りの角も等しいことを示して「1 組の辺とその両端の角」に直す。",
-      "g1": true
-    },
-    {
-      "collection": "terms",
-      "id": "congruence-criteria",
-      "field": "pitfalls[0]",
-      "sentence": "HL（エントリ hl-congruence）は、日本では直角三角形の合同条件（エントリ congruence-criteria-for-right-triangles）として別に扱う。",
-      "g1": true
+      "sentence": "AAS（エントリ aas-congruence）は学習指導要領解説の合同条件に無い。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -705,7 +684,7 @@
       "collection": "terms",
       "id": "congruent",
       "field": "pitfalls[0]",
-      "sentence": "合同の記号は日本の教科書では ≡、英語では ≅。",
+      "sentence": "合同の記号は日本では ≡（中学校学習指導要領の〔用語・記号〕）、英語では ≅（CK-12 Geometry・IM）。",
       "g1": true
     },
     {
@@ -920,6 +899,13 @@
     },
     {
       "collection": "terms",
+      "id": "cross-multiply",
+      "field": "mapping_note",
+      "sentence": "日本語の「内項の積と外項の積は等しい」（学習指導要領解説には内項・外項の語は無く、日本語版 Wikipedia「比例式」にある）に当たる性質を、英語の参照（OpenStax・IM・CK-12）は名前で呼ばず、比例式を a/b = c/d の分数の形にして cross-multiply する（ad = bc）と手順を動詞で言う。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "cross-product",
       "field": "pitfalls[0]",
       "sentence": "日本の高校の数C では外積を扱わない。",
@@ -1097,8 +1083,8 @@
       "collection": "terms",
       "id": "direct-proportion",
       "field": "mapping_note",
-      "sentence": "日本の中学 1 年の「比例」は、y = ax（a は 0 でない定数）で表される関係を指す。",
-      "g1": true
+      "sentence": "中学校学習指導要領解説（第 1 学年）の「比例」は、a を比例定数として y = ax で表される関係。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -1174,8 +1160,8 @@
       "collection": "terms",
       "id": "domain-and-range",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書の −1 ≦ x ≦ 3 は、英語では ≤ を使って −1 ≤ x ≤ 3 と書く。",
-      "g1": true
+      "sentence": "日本の −1 ≦ x ≦ 3（共通テスト・センター試験の問題文も ≦ を使う）は、英語では ≤ を使って −1 ≤ x ≤ 3 と書く。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -1335,8 +1321,8 @@
       "collection": "terms",
       "id": "evaluate",
       "field": "pitfalls[0]",
-      "sentence": "ja.alt の「式を評価する」は直訳に近く、日本の中学・高校の教科書は「式の値を求める」と書く。",
-      "g1": true
+      "sentence": "学習指導要領解説（中学校・高等学校）は「式の値を求める」と書く。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -1629,7 +1615,7 @@
       "collection": "terms",
       "id": "greater-than-or-equal-to",
       "field": "pitfalls[0]",
-      "sentence": "記号は日本の教科書では ≧、米国の教科書（OpenStax）では ≥。",
+      "sentence": "記号は日本では ≧（共通テスト・センター試験の問題文、学習指導要領解説）、米国の教科書（OpenStax）では ≥。",
       "g1": true
     },
     {
@@ -1720,7 +1706,7 @@
       "collection": "terms",
       "id": "hyperbola",
       "field": "definition_ja",
-      "sentence": "数学 C では、2 つの定点（焦点）からの距離の差が一定である点の集まりとして定める。",
+      "sentence": "二次曲線としては、2 つの定点（焦点）からの距離の差が一定である点の集まり（日本語版 Wikipedia「双曲線」。学習指導要領解説（数学C）は双曲線を二次式で表される曲線として扱う）。",
       "g1": false
     },
     {
@@ -1888,15 +1874,15 @@
       "collection": "terms",
       "id": "inequality-sign",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書の ≦ ≧ は、米国の教科書（OpenStax）では ≤ ≥ と書く。",
-      "g1": true
+      "sentence": "日本の ≦ ≧（共通テスト・センター試験の問題文、学習指導要領解説）は、米国の教科書（OpenStax）では ≤ ≥ と書く。",
+      "g1": false
     },
     {
       "collection": "terms",
       "id": "inequality",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書の ≦ ≧ は、米国の教科書（OpenStax）では ≤ ≥ と書く。",
-      "g1": true
+      "sentence": "日本の ≦ ≧（共通テスト・センター試験の問題文、学習指導要領解説）は、米国の教科書（OpenStax）では ≤ ≥ と書く。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -2098,8 +2084,8 @@
       "collection": "terms",
       "id": "inverse-proportion",
       "field": "mapping_note",
-      "sentence": "日本の中学 1 年の「反比例」は、y = a/x（a は 0 でない定数）、つまり xy = a（一定）で表される関係。",
-      "g1": true
+      "sentence": "中学校学習指導要領解説（第 1 学年）の「反比例」は、a を比例定数として y = a/x または xy = a で表される関係。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -2231,7 +2217,7 @@
       "collection": "terms",
       "id": "less-than-or-equal-to",
       "field": "pitfalls[0]",
-      "sentence": "記号は日本の教科書では ≦、米国の教科書（OpenStax）では ≤。",
+      "sentence": "記号は日本では ≦（共通テスト・センター試験の問題文、学習指導要領解説）、米国の教科書（OpenStax）では ≤。",
       "g1": true
     },
     {
@@ -2467,13 +2453,6 @@
     },
     {
       "collection": "terms",
-      "id": "make-a-sign-chart",
-      "field": "mapping_note",
-      "sentence": "日本の増減表は x・f′(x)・f(x) の行を 1 つの表にまとめるが、この形の表は AP の CED にも OpenStax Calculus にも出てこない。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "mean-absolute-deviation",
       "field": "pitfalls[0]",
       "sentence": "日本の中学・高校では扱わず、散らばりは範囲・四分位範囲・分散・標準偏差（エントリ standard-deviation）で表す。",
@@ -2567,14 +2546,7 @@
       "collection": "terms",
       "id": "natural-number",
       "field": "mapping_note",
-      "sentence": "日本の教科書の自然数は 1, 2, 3, … で、0 を含まない。",
-      "g1": true
-    },
-    {
-      "collection": "terms",
-      "id": "natural-number",
-      "field": "definition_ja",
-      "sentence": "正の整数と同じで、日本の教科書では 0 を含まない。",
+      "sentence": "日本の自然数は 1, 2, 3, … で、0 を含まない（日本語版 Wikipedia「自然数」は、日本では高校の教育課程で 0 を入れないとする）。",
       "g1": true
     },
     {
@@ -2691,13 +2663,6 @@
     },
     {
       "collection": "terms",
-      "id": "number-line",
-      "field": "pitfalls[0]",
-      "sentence": "日本の教科書の ● ○ と同じ使い分け。",
-      "g1": true
-    },
-    {
-      "collection": "terms",
       "id": "number-of-elements",
       "field": "mapping_note",
       "sentence": "日本の数Iの n(A) は有限集合の要素の個数だけを指す。",
@@ -2742,7 +2707,7 @@
       "collection": "terms",
       "id": "one-sixth-formula",
       "field": "mapping_note",
-      "sentence": "日本の受験で使う公式で、OpenStax Calculus にも AP の CED にも無く、英語に決まった言い方がない（用例コーパスにも出てこない）。",
+      "sentence": "日本の受験で使う公式で、OpenStax Calculus にも AP の CED にも無く、用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。",
       "g1": false
     },
     {
@@ -2784,21 +2749,21 @@
       "collection": "terms",
       "id": "origin",
       "field": "pitfalls[1]",
-      "sentence": "日本の教科書は原点を文字 O（オー）で表す。",
-      "g1": true
+      "sentence": "日本の問題文（共通テスト・センター試験）や学習指導要領解説は原点を文字 O（オー）で表す。",
+      "g1": false
     },
     {
       "collection": "terms",
       "id": "orthographic-projection",
       "field": "mapping_note",
-      "sentence": "日本の中学の投影図は、立面図（正面から見た図）と平面図（真上から見た図）を組にしたもので、英語では front view（立面図）・top view（平面図）・side view と、見る向きで図を呼ぶ。",
-      "g1": true
+      "sentence": "中学校学習指導要領解説の投影図は、空間図形を上から見た図（平面図）や前から見た図（立面図）に表現したもので、英語では IM Grade 6 が front view・top view と、見る向きで図を呼ぶ。",
+      "g1": false
     },
     {
       "collection": "terms",
       "id": "orthographic-projection",
       "field": "mapping_note",
-      "sentence": "見出しの orthographic projection は製図でこの図法を呼ぶ名前で、米国の中学・高校の教材（OpenStax・IM・CK-12）には出てこない。",
+      "sentence": "見出しの orthographic projection はこの図法の英語の名前（英語版 Wikipedia の記事名。数学カテゴリの外）で、米国の中学・高校の教材（OpenStax・IM・CK-12）には出てこない。",
       "g1": false
     },
     {
@@ -3148,8 +3113,8 @@
       "collection": "terms",
       "id": "quadrant",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書は第 1 象限〜第 4 象限と書くが、米国の教科書（OpenStax）はローマ数字で Quadrant I〜IV と書く（Quadrant III は quadrant three と読む）。",
-      "g1": true
+      "sentence": "日本の「第 1 象限」〜「第 4 象限」（センター試験の問題文・学習指導要領解説も第 1 象限と書く）に対し、米国の教科書（OpenStax）はローマ数字で Quadrant I〜IV と書く（Quadrant III は quadrant three と読む）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -3183,8 +3148,8 @@
       "collection": "terms",
       "id": "quadrilateral",
       "field": "pitfalls[2]",
-      "sentence": "m∠A は「∠A の大きさ」（the measure of angle A、エントリ measure）の書き方で、日本の教科書の ∠A = 85° にあたる。",
-      "g1": true
+      "sentence": "m∠A は「∠A の大きさ」（the measure of angle A、エントリ measure）の書き方で、共通テスト・センター試験の問題文の ∠ABC ＝ 60° の書き方にあたる。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -3314,13 +3279,6 @@
     },
     {
       "collection": "terms",
-      "id": "rectangular-prism",
-      "field": "pitfalls[2]",
-      "sentence": "V = lwh の l、w、h は length、width、height の頭文字で、日本の「縦 × 横 × 高さ」と同じ計算。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "recurrence-relation",
       "field": "mapping_note",
       "sentence": "日本の「漸化式」はどちらにも当たる。",
@@ -3379,7 +3337,7 @@
       "collection": "terms",
       "id": "relationship-between-roots-and-coefficients",
       "field": "mapping_note",
-      "sentence": "大学の教科書や Wikipedia では Vieta's formulas と呼ぶが、米国の高校の授業では名前を出さず、the sum of the roots is −b/a, the product is c/a と式で言う。",
+      "sentence": "米国の高校の参照（CED・OpenStax・IM・CK-12）にはこの名前も relationship between roots and coefficients も出てこず、the sum of the roots is −b/a, the product is c/a と式で言う。",
       "g1": false
     },
     {
@@ -3498,7 +3456,7 @@
       "collection": "terms",
       "id": "right-triangle",
       "field": "pitfalls[2]",
-      "sentence": "日本の中2 では、直角三角形だけに使える合同条件（斜辺と 1 つの鋭角、斜辺と他の 1 辺）を別に学ぶ（エントリ congruence-criteria-for-right-triangles）。",
+      "sentence": "中学校学習指導要領解説（第 2 学年）は、直角三角形だけに使える合同条件（斜辺と一つの鋭角、斜辺と他の 1 辺）を別に扱う（エントリ congruence-criteria-for-right-triangles）。",
       "g1": false
     },
     {
@@ -3818,13 +3776,6 @@
     },
     {
       "collection": "terms",
-      "id": "sketch-of-a-solid",
-      "field": "pitfalls[1]",
-      "sentence": "中学の見取図では、平行な辺は平行にかく。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "sketch",
       "field": "mapping_note",
       "sentence": "日本の問題文の「図示せよ」「図示すると」（共通テストの問題文にもある）は、領域なら Sketch ／ Graph ／ Shade the region、曲線なら Sketch the graph と言う。",
@@ -3944,13 +3895,6 @@
     },
     {
       "collection": "terms",
-      "id": "square-pyramid",
-      "field": "mapping_note",
-      "sentence": "日本の「正四角錐」（底面が正方形で、頂点が底面の中心の真上にあるもの）は square pyramid に当たる。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "square-units",
       "field": "mapping_note",
       "sentence": "見出しの「平方単位」は学習指導要領解説に無い、本プロジェクトの訳語。",
@@ -3974,8 +3918,8 @@
       "collection": "terms",
       "id": "sss-congruence",
       "field": "pitfalls[0]",
-      "sentence": "日本の答案は「3 組の辺がそれぞれ等しいから」と文で書く。",
-      "g1": true
+      "sentence": "日本語では学習指導要領解説の言い方どおり「3 組の辺がそれぞれ等しい」と条件を文で言う。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -4087,13 +4031,6 @@
       "id": "subset",
       "field": "pitfalls[1]",
       "sentence": "英語の本では ⊆ と ⊂（真部分集合）を書き分けるものと、⊂ だけを使うものがあり、記号は教科書による。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "substitute",
-      "field": "pitfalls[0]",
-      "sentence": "答案・教科書では substitute。",
       "g1": false
     },
     {
@@ -4436,8 +4373,8 @@
       "collection": "terms",
       "id": "variable",
       "field": "mapping_note",
-      "sentence": "日本の中学では、式の中の x や a を「文字」と呼ぶことが多い。",
-      "g1": true
+      "sentence": "中学校学習指導要領解説は、式の中の x や a を「文字」と呼ぶ（「文字を用いた式」）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -4611,7 +4548,7 @@
       "collection": "symbols",
       "id": "congruent-sign",
       "field": "notes[0]",
-      "sentence": "日本の ≡ も読みは同じ。",
+      "sentence": "日本の記号 ≡ で書いた合同も、英語では同じく is congruent to と読む。",
       "g1": false
     },
     {

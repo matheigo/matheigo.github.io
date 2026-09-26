@@ -15,13 +15,17 @@ import { exportPdf, findChrome } from "../scripts/export-pdf";
 import { renderWordToWord, wordToWordRows, type PrintTerm } from "../scripts/lib/print";
 import { GLOSS_LABEL } from "../src/lib/gloss";
 
-const read = (c: string, id: string): Entry => JSON.parse(fs.readFileSync(path.join(ROOT, "data", c, `${id}.json`), "utf8"));
+// The fixtures are read from the real data but forced to likely: the Phase 5 audit
+// verifies entries over time (rate, substitute, ... are verified now), and these tests
+// check what an export does with likely and with verified entries, not the data's state.
+const likely = (e: Entry): Entry => ({ ...e, confidence: "likely" });
+const read = (c: string, id: string): Entry => likely(JSON.parse(fs.readFileSync(path.join(ROOT, "data", c, `${id}.json`), "utf8")));
 const verified = (e: Entry): Entry => ({ ...e, confidence: "verified" });
 
 // rate: 割合 → "ratio to the base amount", an explanatory translation (mapping none + corpus-no-fixed-expression).
 const rate = read("terms", "rate");
 const quadratic = read("terms", "quadratic-formula");
-const substitute = { ...read("terms", "substitute"), confidence: "likely" }; // a likely fixture (the real entry was verified by the Phase 5 audit)
+const substitute = read("terms", "substitute"); // stays likely in every fixture
 const symbol = read("symbols", "integral-definite");
 const phrase = read("phrases", "office-hours-stuck-at-step");
 
@@ -41,12 +45,10 @@ beforeAll(() => {
   write(dir, "phrases", [verified(phrase)]);
   write(dir, "curriculum", loadCollection("curriculum").map((e) => e.data));
 
-  // nothing verified: the real entries may have been verified by the Phase 5 audit since, so the fixture forces likely
-  const likely = (e: Entry): Entry => ({ ...e, confidence: "likely" });
   empty = fs.mkdtempSync(path.join(os.tmpdir(), "matheigo-export-empty-"));
-  write(empty, "terms", [likely(rate), likely(quadratic)].map(withGloss));
-  write(empty, "symbols", [likely(symbol)]);
-  write(empty, "phrases", [likely(phrase)]);
+  write(empty, "terms", [rate, quadratic].map(withGloss));
+  write(empty, "symbols", [symbol]);
+  write(empty, "phrases", [phrase]);
   write(empty, "curriculum", []);
 });
 
