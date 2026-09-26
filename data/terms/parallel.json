@@ -1,0 +1,105 @@
+{
+  "id": "parallel",
+  "ja": {
+    "term": "平行",
+    "reading": "へいこう",
+    "alt": [
+      "平行である"
+    ]
+  },
+  "en": {
+    "term": "parallel",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "同じ平面上の 2 直線が、どこまでのばしても交わらないこと。直線 AB と CD が平行であることを AB ∥ CD と書く。",
+  "definition_en": "Two lines in the same plane are parallel if they never meet, no matter how far you extend them.",
+  "latex": "AB \\parallel CD",
+  "spoken_en": "A B is parallel to C D",
+  "examples": [
+    {
+      "en": "Opposite sides of a rectangle are parallel, so they never meet.",
+      "ja": "長方形の向かい合う辺は平行だから、交わることはないよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the line y = 3x + 2 is parallel to the line y = 3x − 5.",
+      "ja": "直線 y = 3x + 2 と直線 y = 3x − 5 が平行であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "前置詞は to。AB ∥ CD は AB is parallel to CD。平行な直線は parallel lines（エントリ parallel-lines）。",
+    "parallelogram（平行四辺形）の parallel は同じ語。向かい合う 2 組の辺がそれぞれ parallel な四角形という意味。"
+  ],
+  "related": [
+    "parallel-lines",
+    "perpendicular",
+    "line",
+    "quadrilateral",
+    "alternate-interior-angles-theorem"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "parallel !lines !line": 278
+    },
+    "written": {
+      "parallel !lines !line": 424
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

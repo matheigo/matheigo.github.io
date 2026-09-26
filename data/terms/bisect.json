@@ -1,0 +1,88 @@
+{
+  "id": "bisect",
+  "ja": {
+    "term": "二等分する",
+    "reading": "にとうぶんする",
+    "alt": []
+  },
+  "en": {
+    "term": "bisect",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中2"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "線分や角を、大きさの等しい 2 つの部分に分ける。",
+  "definition_en": "To cut a segment or an angle into two equal parts.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The diagonals of a parallelogram bisect each other, so O is the midpoint of both of them.",
+      "ja": "平行四辺形の対角線は互いに他を二等分するから、O はどちらの対角線の中点にもなるね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Ray OC bisects ∠AOB. If m∠AOB = (2x + 10)° and m∠AOC = (3x − 15)°, find x.",
+      "ja": "半直線 OC は ∠AOB を二等分している。∠AOB = (2x + 10)°、∠AOC = (3x − 15)° のとき、x の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "bisect は動詞で、二等分する線は名詞 bisector で言う。角の二等分線は angle bisector（エントリ angle-bisector）、垂直二等分線は perpendicular bisector（エントリ perpendicular-bisector）。",
+    "「互いに他を二等分する」は bisect each other。2 本の線分がそれぞれの中点で交わることと同じ。",
+    "線分を二等分する点が中点（midpoint、エントリ midpoint）。「直線 ℓ が線分 AB を二等分する」は Line ℓ bisects segment AB.、「M は AB の中点」は M is the midpoint of AB. と書く。"
+  ],
+  "related": [
+    "angle-bisector",
+    "perpendicular-bisector",
+    "midpoint",
+    "construct",
+    "segment"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.11 Congruent Angles and Angle Bisectors"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "bisect": 23
+    },
+    "written": {
+      "bisect": 2
+    },
+    "sources": [
+      "mit-18.02",
+      "openstax-algtrig",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

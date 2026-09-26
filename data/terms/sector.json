@@ -1,0 +1,92 @@
+{
+  "id": "sector",
+  "ja": {
+    "term": "おうぎ形",
+    "reading": "おうぎがた",
+    "alt": [
+      "扇形"
+    ]
+  },
+  "en": {
+    "term": "sector",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "円の 2 本の半径と、その間の弧で囲まれた図形。",
+  "definition_en": "The part of a circle bounded by two radii and the arc between them. It is shaped like a slice of pizza.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A sector is like a slice of pizza: two radii and the arc between them.",
+      "ja": "おうぎ形はピザの 1 切れみたいな形で、2 本の半径とその間の弧でできている。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the area of a sector with a radius of 10 cm and a central angle of 72°. Leave your answer in terms of π.",
+      "ja": "半径 10 cm、中心角 72° のおうぎ形の面積を求めよ。答えは π を使って表せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "sector は日常語では「部門・分野」（the public sector）の意味でも使う。",
+    "弦と弧で囲まれた部分（弓形）は sector ではなく circular segment と呼ぶ。",
+    "おうぎ形の面積は area of a sector（エントリ area-of-a-sector）、弧の長さは arc length（エントリ arc-length）。"
+  ],
+  "related": [
+    "area-of-a-sector",
+    "arc",
+    "central-angle",
+    "radius",
+    "arc-length"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "sector": 17
+    },
+    "written": {
+      "sector": 56
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

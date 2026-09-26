@@ -1,0 +1,95 @@
+{
+  "id": "quadrilateral",
+  "ja": {
+    "term": "四角形",
+    "reading": "しかくけい",
+    "alt": []
+  },
+  "en": {
+    "term": "quadrilateral",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "4 本の線分（辺）で囲まれた多角形。4 つの頂点と 4 つの角をもち、内角の和は 360° である。",
+  "definition_en": "A polygon with four sides. It has four vertices and four angles, and its angles add up to 360°.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Any quadrilateral can be split into two triangles by a diagonal, so its angles add up to 2 times 180, or 360.",
+      "ja": "どんな四角形も、対角線で 2 つの三角形に分けられる。だから内角の和は 180 × 2 で 360° になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "In quadrilateral ABCD, m∠A = 85°, m∠B = 110°, and m∠C = 70°. Find m∠D.",
+      "ja": "四角形 ABCD で、∠A = 85°、∠B = 110°、∠C = 70° である。∠D の大きさを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「四角形」の字は「4 つの角」だが、英語の quadrilateral は quad-（4）と lateral（辺）からできた「4 つの辺」の形の名前。",
+    "カタカナの「スクエア」につられて、四角形一般を square と言わない。英語の square は正方形、または 2 乗（エントリ square）。",
+    "m∠A は「∠A の大きさ」（the measure of angle A、エントリ measure）の書き方で、日本の教科書の ∠A = 85° にあたる。"
+  ],
+  "related": [
+    "polygon",
+    "triangle",
+    "regular-polygon",
+    "side",
+    "vertex"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "四角形",
+      "en": "Quadrilateral"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "5.7 Quadrilateral Classification"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "quadrilateral": 44
+    },
+    "written": {
+      "quadrilateral": 8
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

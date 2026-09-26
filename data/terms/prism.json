@@ -1,0 +1,97 @@
+{
+  "id": "prism",
+  "ja": {
+    "term": "角柱",
+    "reading": "かくちゅう",
+    "alt": []
+  },
+  "en": {
+    "term": "prism",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "合同な 2 つの多角形を底面とし、長方形の側面で囲まれた立体。底面の形によって三角柱、四角柱などと呼ぶ。",
+  "definition_en": "A solid with two congruent, parallel polygon bases joined by rectangular faces. It is named by the shape of its bases, as in a triangular prism.",
+  "latex": "V = Bh",
+  "spoken_en": "V equals B times h",
+  "examples": [
+    {
+      "en": "For any prism, find the area of the base first, then multiply by the height.",
+      "ja": "角柱ならどれでも、まず底面積を求めて、それに高さをかければいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "The base of a triangular prism is a right triangle with legs of 6 cm and 8 cm, and the height of the prism is 10 cm. Find the volume of the prism.",
+      "ja": "底面が、直角をはさむ 2 辺の長さが 6 cm、8 cm の直角三角形で、高さが 10 cm の三角柱の体積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "V = Bh の B（大文字）は底面積（area of the base）。三角形の面積の公式 A = ½bh の b（底辺の長さ）とは別。",
+    "角柱の名前は底面の形を前に付けて言う。三角柱は triangular prism、直方体は rectangular prism。",
+    "prism は光を分ける「プリズム」と同じ語。"
+  ],
+  "related": [
+    "pyramid",
+    "cylinder",
+    "polyhedron",
+    "volume",
+    "area-of-the-base"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "角柱",
+      "en": "Prism (geometry)"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 5.12 Prisms and Pyramids ほか"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "prism": 76
+    },
+    "written": {
+      "prism": 13
+    },
+    "sources": [
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

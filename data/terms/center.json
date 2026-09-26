@@ -1,0 +1,109 @@
+{
+  "id": "center",
+  "ja": {
+    "term": "中心",
+    "reading": "ちゅうしん",
+    "alt": []
+  },
+  "en": {
+    "term": "center",
+    "alt": [],
+    "uk": "centre",
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "円や球で、周上（表面上）のどの点からも距離が等しい点。",
+  "definition_en": "The point that is the same distance from every point on a circle or sphere.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Put the point of your compass on the center, and then draw the circle.",
+      "ja": "コンパスの針を中心に置いて、円をかこう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Point O is the center of the circle, and point A is on the circle. If OA = 6 cm, find the diameter of the circle.",
+      "ja": "点 O は円の中心、点 A は円周上の点である。OA = 6 cm のとき、この円の直径を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英国の綴りは centre。",
+    "「中心が (2, −1) の円」は a circle centered at (2, −1)。centered の後の前置詞は at。",
+    "三角形の外心 circumcenter・内心 incenter も center を含む語。重心は centroid（エントリ centroid・circumcenter）。"
+  ],
+  "related": [
+    "circle",
+    "radius",
+    "sphere",
+    "centroid",
+    "circumcenter"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "中心",
+      "en": "Centre (geometry)"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "center of the circle | center of a circle | center of the sphere | its center | the center is | centered at": 132
+    },
+    "written": {
+      "center of the circle | center of a circle | center of the sphere | its center | the center is | centered at": 369
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

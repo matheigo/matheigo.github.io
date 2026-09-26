@@ -1,0 +1,103 @@
+{
+  "id": "ray",
+  "ja": {
+    "term": "半直線",
+    "reading": "はんちょくせん",
+    "alt": []
+  },
+  "en": {
+    "term": "ray",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "直線の一部で、1 つの端点から一方の向きにだけ限りなくのびているもの。",
+  "definition_en": "Part of a line that starts at one endpoint and goes on forever in one direction.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Ray AB starts at A, goes through B, and keeps going forever.",
+      "ja": "半直線 AB は A から始まって B を通り、そのままずっとのびていく。",
+      "register": "spoken"
+    },
+    {
+      "en": "Name the two rays that form angle PQR.",
+      "ja": "∠PQR をつくる 2 本の半直線を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "ray AB と ray BA は別の半直線。名前の最初の文字が端点で、ray AB は A から B の向きに、ray BA は B から A の向きにのびる。",
+    "端点の数で呼び分ける。端点が 2 つなら line segment（エントリ segment）、1 つなら ray、端点がなく両方向にのびるなら line（エントリ line）。",
+    "角の 2 辺は 2 本の ray。∠PQR の辺は ray QP と ray QR で、どちらも頂点 Q が端点。"
+  ],
+  "related": [
+    "line",
+    "segment",
+    "endpoint",
+    "angle",
+    "angle-bisector"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.8 Identification of Angles by Vertex and Ray"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "ray": 164
+    },
+    "written": {
+      "ray": 71
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

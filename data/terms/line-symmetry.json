@@ -1,0 +1,91 @@
+{
+  "id": "line-symmetry",
+  "ja": {
+    "term": "線対称",
+    "reading": "せんたいしょう",
+    "alt": []
+  },
+  "en": {
+    "term": "reflection symmetry",
+    "alt": [
+      "line symmetry",
+      "reflectional symmetry"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「線対称」は図形の性質の名前で、「この図形は線対称である」と言う。英語ではこれを has line symmetry ／ is symmetric about a line の形で言う。CK-12 Geometry はこの性質を reflection symmetry と呼ぶ。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "図形をある直線で折り返すと、両側がぴったり重なる性質。その直線を対称の軸という。",
+  "definition_en": "The property a figure has when you can fold it along a line so that the two halves match exactly. The fold line is called the line of symmetry.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Does the letter A have line symmetry? Yep — fold it straight down the middle and the two sides match.",
+      "ja": "A という文字は線対称かな？ そう、真ん中で縦に折ると両側がぴったり重なるね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Which of the following figures have reflection symmetry? For each one that does, draw every line of symmetry.",
+      "ja": "次の図形のうち、線対称なものはどれか。線対称な図形には、対称の軸をすべてかき入れよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "symmetry は名詞なので、「この図形は線対称だ」は The figure has line symmetry. または The figure is symmetric about a line.（形容詞は symmetric、エントリ symmetric）。is line symmetry とは言わない。",
+    "線対称な図形の対称の軸は line of symmetry（エントリ line-of-reflection）。1 本とは限らず、正方形には 4 本ある。",
+    "点対称（エントリ point-symmetry）と区別する。線対称は直線で折り返して重なる性質、点対称は点のまわりに 180° 回転して重なる性質。"
+  ],
+  "related": [
+    "line-of-reflection",
+    "point-symmetry",
+    "symmetric",
+    "reflection",
+    "rotational-symmetry"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "線対称",
+      "en": "Axial symmetry"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "8.3 Reflection Symmetry"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 reflection symmetry（CK-12 Geometry 8.3 Reflection Symmetry・計 15 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

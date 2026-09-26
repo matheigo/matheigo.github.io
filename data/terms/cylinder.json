@@ -1,0 +1,101 @@
+{
+  "id": "cylinder",
+  "ja": {
+    "term": "円柱",
+    "reading": "えんちゅう",
+    "alt": []
+  },
+  "en": {
+    "term": "cylinder",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "合同な 2 つの円を底面とし、曲がった側面でつながった立体。",
+  "definition_en": "A solid with two congruent, parallel circular bases joined by a curved surface.",
+  "latex": "V = \\pi r^2 h",
+  "spoken_en": "V equals pi r squared h",
+  "examples": [
+    {
+      "en": "A cylinder is kind of like a prism with a circle for a base, so it's still area of the base times height.",
+      "ja": "円柱は底面が円の角柱みたいなものだから、やっぱり底面積 × 高さだよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A cylinder has a radius of 4 cm and a height of 9 cm. Find its volume in terms of π.",
+      "ja": "底面の半径が 4 cm、高さが 9 cm の円柱の体積を求めよ。ただし、円周率は π とする。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "a cylinder with a radius of 4 の radius は底面の円の半径のこと。",
+    "円柱の側面は曲面なので、角柱の lateral face ではなく lateral surface と言う（エントリ lateral-face）。",
+    "cylinder は日常語で、エンジンのシリンダーやガスボンベ（gas cylinder）のような筒形の物も指す。"
+  ],
+  "related": [
+    "prism",
+    "cone",
+    "circle",
+    "volume",
+    "lateral-area"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "円柱 (数学)",
+      "en": "Cylinder"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "cylinder": 241
+    },
+    "written": {
+      "cylinder": 284
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

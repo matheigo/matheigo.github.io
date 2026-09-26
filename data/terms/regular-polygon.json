@@ -1,0 +1,97 @@
+{
+  "id": "regular-polygon",
+  "ja": {
+    "term": "正多角形",
+    "reading": "せいたかくけい",
+    "alt": []
+  },
+  "en": {
+    "term": "regular polygon",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "辺の長さがすべて等しく、角の大きさもすべて等しい多角形。正三角形・正方形・正六角形など。",
+  "definition_en": "A polygon whose sides are all the same length and whose angles are all the same size.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A regular polygon needs equal sides and equal angles, so a rhombus that isn't a square doesn't count.",
+      "ja": "正多角形は辺も角も全部等しくないといけないから、正方形でないひし形は正多角形じゃない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Each interior angle of a regular polygon measures 140°. How many sides does the polygon have?",
+      "ja": "ある正多角形の 1 つの内角の大きさは 140° である。この正多角形は正何角形か。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "正三角形は equilateral triangle、正方形は square という名前がある。正五角形・正六角形は regular pentagon ／ regular hexagon のように regular を付けて言う。",
+    "辺だけ、または角だけが等しくても正多角形ではない。ひし形は辺がすべて等しいが角が等しいとは限らず、長方形は角がすべて等しいが辺が等しいとは限らない。",
+    "regular は日常語の「ふつうの・いつもの」と同じ語だが、regular polygon の regular は「辺も角もすべて等しい」という意味。"
+  ],
+  "related": [
+    "polygon",
+    "area-of-a-regular-polygon",
+    "apothem",
+    "equiangular-triangle",
+    "tessellation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "正多角形",
+      "en": "Regular polygon"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "5.20 Regular and Irregular Polygons・5.21 Area of Regular and Irregular Polygons・5.23 Construct Regular Polygons"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "regular polygon": 3
+    },
+    "written": {
+      "regular polygon": 1
+    },
+    "sources": [
+      "mit-notes",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは CK-12 の呼び方 regular polygon（CK-12 Geometry 5.23 Construct Regular Polygons・CK-12 Geometry 5.21 Area of Regular and Irregular Polygons・CK-12 Geometry 5.20 Regular and Irregular Polygons・計 54 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

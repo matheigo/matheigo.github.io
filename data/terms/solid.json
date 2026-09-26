@@ -1,0 +1,115 @@
+{
+  "id": "solid",
+  "ja": {
+    "term": "立体",
+    "reading": "りったい",
+    "alt": [
+      "空間図形"
+    ]
+  },
+  "en": {
+    "term": "solid",
+    "alt": [
+      "solid figure",
+      "three-dimensional figure"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "空間の中で縦・横・高さの広がりをもち、体積のある図形。角柱・円柱・球など。",
+  "definition_en": "A three-dimensional figure that takes up space and has volume, such as a prism, a cylinder, or a sphere.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Is a circle a solid? No, it's flat. A sphere is a solid, because it takes up space.",
+      "ja": "円は立体かな？ いや、平らだよね。球は空間の中で場所をとるから立体。",
+      "register": "spoken"
+    },
+    {
+      "en": "A solid consists of a cylinder with radius 3 cm and height 5 cm topped by a cone with the same radius and a height of 4 cm. Find the volume of the solid in terms of π.",
+      "ja": "半径 3 cm、高さ 5 cm の円柱の上に、同じ底面で高さ 4 cm の円錐を重ねた立体がある。この立体の体積を求めよ。ただし、円周率は π とする。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "solid は形容詞で「中身の詰まった」の意味もあり、solid line（実線）、solid dot（黒丸）の solid は立体とは別の意味。",
+    "立体は 3D shape（three-dimensional shape）とも言う。平面図形は plane figure（エントリ plane）。",
+    "ja.alt の「空間図形」は中 1 の単元名で、立体のほかに空間の直線・平面の位置関係も扱う。"
+  ],
+  "related": [
+    "plane",
+    "polyhedron",
+    "volume",
+    "surface-area",
+    "cross-section"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "立体",
+      "en": "Solid figure"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "a solid !line !dot !circle !curve !lines !dots | the solid !line !dot !circle !curve !lines !dots | solid figure": 120,
+      "three-dimensional figure": 4,
+      "solid figure": 1
+    },
+    "written": {
+      "a solid !line !dot !circle !curve !lines !dots | the solid !line !dot !circle !curve !lines !dots | solid figure": 373,
+      "three-dimensional figure": 2,
+      "solid figure": 4
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

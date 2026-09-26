@@ -1,0 +1,106 @@
+{
+  "id": "pi",
+  "ja": {
+    "term": "円周率",
+    "reading": "えんしゅうりつ",
+    "alt": []
+  },
+  "en": {
+    "term": "pi",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "円周の長さを直径でわった値で、どんな大きさの円でも同じになる。3.14159… と限りなく続く数で、記号 π で表す。",
+  "definition_en": "The ratio of a circle's circumference to its diameter, written with the Greek letter π. Its decimal form never ends or repeats, and it is about 3.14.",
+  "latex": "\\pi \\approx 3.14",
+  "spoken_en": "pi is approximately three point one four",
+  "examples": [
+    {
+      "en": "Leave your answer in terms of pi, so just write 16 pi. Don't multiply it out.",
+      "ja": "答えは π を使って表して。16π と書けばよくて、かけ算して小数にしなくていい。",
+      "register": "spoken"
+    },
+    {
+      "en": "The radius of a circle is 4 cm. Find its area. Use 3.14 for pi.",
+      "ja": "半径 4 cm の円の面積を求めよ。円周率は 3.14 とする。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "問題文の leave your answer in terms of pi は「π を使って表せ」で、π を 3.14 に置き換えない。use 3.14 for pi は「円周率は 3.14 とする」。",
+    "pi と、円グラフ pie chart（エントリ pie-chart）の pie は同じ発音で、綴りが違う。"
+  ],
+  "related": [
+    "circumference",
+    "diameter",
+    "circle",
+    "approximate-value",
+    "area"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "円周率",
+      "en": "Pi"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "pi": 4447
+    },
+    "written": {
+      "pi": 206
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "circle",
+  "ja": {
+    "term": "円",
+    "reading": "えん",
+    "alt": []
+  },
+  "en": {
+    "term": "circle",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中3"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "平面上で、1 つの点（中心）から等しい距離にある点の集まり。その距離を半径という。",
+  "definition_en": "The set of all points in a plane that are the same distance from a fixed point, called the center. That distance is the radius.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Every point on the circle is 5 units from the center.",
+      "ja": "円の上のどの点も、中心からの距離は 5 だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the area of a circle with a radius of 3 cm.",
+      "ja": "半径 3 cm の円の面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の circle は周の曲線だけを指し、内部を含む「円板」は disk（エントリ disk）。ただし「円の面積」は英語でも the area of a circle と言う。",
+    "円の周の長さ（円周）は circumference（エントリ circumference）。",
+    "動詞の circle は「丸で囲む」。問題文の Circle the answer. は「答えを丸で囲め」で、図形の円とは関係ない。"
+  ],
+  "related": [
+    "center",
+    "radius",
+    "diameter",
+    "circumference",
+    "disk"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "円 (数学)",
+      "en": "Circle"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "circle": 1610
+    },
+    "written": {
+      "circle": 1175
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

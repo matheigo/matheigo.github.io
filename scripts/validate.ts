@@ -115,6 +115,8 @@ const SAME_JA: [string, string, string][] = [
   ["要素", "element", "entry"],
   // 線形写像の像（列空間） ／ 変換で移った図形 (Phase 2 幾何・離散の単元 3)
   ["像", "column-space", "image"],
+  // 直線・線分の垂直 ／ ベクトルの垂直（直交） (Phase 2 中学の単元 2)
+  ["垂直", "orthogonal", "perpendicular"],
 ];
 
 // ------------------------------------------------------------ per-entry ----

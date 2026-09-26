@@ -1,0 +1,105 @@
+{
+  "id": "arc",
+  "ja": {
+    "term": "弧",
+    "reading": "こ",
+    "alt": []
+  },
+  "en": {
+    "term": "arc",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "円周の一部分。円周上の 2 点 A、B の間の部分を弧 AB といい、⌒AB と書く。",
+  "definition_en": "A part of a circle between two points on the circle. The arc between A and B is called arc AB and is written with a small curved mark over AB.",
+  "latex": "\\overset{\\frown}{AB}",
+  "spoken_en": "arc AB",
+  "examples": [
+    {
+      "en": "The arc is the curved part, and the chord is the straight segment connecting its endpoints.",
+      "ja": "弧は曲がった部分で、弦はその両端を結ぶまっすぐな線分だよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Points A and B are on circle O, the radius is 6 cm, and ∠AOB = 60°. Find the length of arc AB.",
+      "ja": "点 A、B は円 O の周上にあり、半径は 6 cm、∠AOB = 60° である。弧 AB の長さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "記号 ⌒AB は arc AB と読む。2 点の間の弧は 2 つあり、大きいほうを major arc（エントリ major-arc）、小さいほうを minor arc（エントリ minor-arc）と区別する。",
+    "弧 arc は曲線で、弦 chord（エントリ chord）は弧の両端を結ぶ線分。",
+    "弧の長さは arc length（エントリ arc-length）。弧の度数（エントリ arc-measure）は度で表す別の量。"
+  ],
+  "related": [
+    "arc-length",
+    "chord",
+    "major-arc",
+    "minor-arc",
+    "central-angle"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "弧 (幾何学)",
+      "en": "Arc (geometry)"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "arc !length": 165
+    },
+    "written": {
+      "arc !length": 71
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

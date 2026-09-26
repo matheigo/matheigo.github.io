@@ -1,0 +1,99 @@
+{
+  "id": "polygon",
+  "ja": {
+    "term": "多角形",
+    "reading": "たかくけい",
+    "alt": []
+  },
+  "en": {
+    "term": "polygon",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "3 本以上の線分で囲まれた平面図形。三角形・四角形・五角形などをまとめて多角形という。",
+  "definition_en": "A closed flat figure made of three or more straight sides that meet only at their endpoints. Triangles, quadrilaterals, and pentagons are all polygons.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A circle isn't a polygon — a polygon has to be made of straight sides, and a circle doesn't have any.",
+      "ja": "円は多角形じゃないよ。多角形はまっすぐな辺でできていないといけないけど、円にはまっすぐな辺がないからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the sum of the interior angles of a polygon with 9 sides.",
+      "ja": "九角形の内角の和を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "n 角形は英語で n-gon と言う（9-gon は nine-gon と読む）。五角形 pentagon、六角形 hexagon、八角形 octagon のように決まった名前をもつものもある。",
+    "polygon は平面図形。立体の多面体は polyhedron（エントリ polyhedron）で、poly-（多い）が共通なので取り違えない。",
+    "辺はすべて線分なので、円や、曲線の辺をもつおうぎ形（エントリ sector）は polygon ではない。"
+  ],
+  "related": [
+    "quadrilateral",
+    "triangle",
+    "regular-polygon",
+    "polyhedron",
+    "side"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "多角形",
+      "en": "Polygon"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.18 Classify Polygons"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "polygon": 46
+    },
+    "written": {
+      "polygon": 35
+    },
+    "sources": [
+      "khan-middle",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

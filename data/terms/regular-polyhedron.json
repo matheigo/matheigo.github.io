@@ -1,0 +1,95 @@
+{
+  "id": "regular-polyhedron",
+  "ja": {
+    "term": "正多面体",
+    "reading": "せいためんたい",
+    "alt": []
+  },
+  "en": {
+    "term": "Platonic solid",
+    "alt": [
+      "regular polyhedron"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語ではプラトン（Plato）にちなんで Platonic solid と呼ぶ（IM Geometry）。直訳の regular polyhedron も同じ 5 つの立体を指すが、数学ではへこみのある星形の正多面体まで含めて regular polyhedron と呼ぶことがあり、へこみのない 5 種類だけをはっきり指すのは Platonic solid。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "どの面も合同な正多角形で、どの頂点にも同じ数の面が集まっている、へこみのない多面体。正四面体・正六面体（立方体）・正八面体・正十二面体・正二十面体の 5 種類しかない。",
+  "definition_en": "A convex polyhedron whose faces are all congruent regular polygons, with the same number of faces meeting at every vertex. There are exactly five of them, with 4, 6, 8, 12, or 20 faces.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "There are only five Platonic solids, and the cube is one of them.",
+      "ja": "正多面体は 5 種類しかなくて、立方体はそのうちの 1 つだよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A regular polyhedron has 20 faces, and each face is an equilateral triangle. How many edges does it have?",
+      "ja": "面の数が 20 で、どの面も正三角形である正多面体がある。この正多面体の辺の数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "5 つの英語の名前は regular tetrahedron（正四面体）、cube（正六面体・立方体）、regular octahedron（正八面体）、regular dodecahedron（正十二面体）、regular icosahedron（正二十面体）。regular を付けない tetrahedron などは、面が正多角形でないものも含む。",
+    "どの面も合同な正多角形というだけでは正多面体にならない。正三角形 6 つでできる双三角錐は、3 つの面が集まる頂点と 4 つの面が集まる頂点があるので、正多面体ではない。",
+    "Platonic は哲学者プラトン（Plato）の名前から来ているので、大文字で書き始める。"
+  ],
+  "related": [
+    "polyhedron",
+    "regular-polygon",
+    "tetrahedron",
+    "eulers-formula-for-polyhedra",
+    "congruent"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "正多面体",
+      "en": "Platonic solid"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 5.12 Prisms and Pyramids ほか"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "Platonic solid": 2
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは IM の呼び方 Platonic solid（Algebra 1 2.2 Writing Equations to Model Relationships (Part 1)・Algebra 1 2.9 Which Variable to Solve for? (Part 2)・Geometry 5.12 Prisms and Pyramids・計 13 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

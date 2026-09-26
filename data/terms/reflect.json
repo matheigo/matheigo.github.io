@@ -1,0 +1,94 @@
+{
+  "id": "reflect",
+  "ja": {
+    "term": "折り返す",
+    "reading": "おりかえす",
+    "alt": []
+  },
+  "en": {
+    "term": "reflect",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "日本語の「折り返す」は、直線を折り目にして紙を折る動作で対称移動を言う。英語では鏡に映す動詞 reflect を使い、reflect the figure over line ℓ（across line ℓ とも）で「直線 ℓ について対称移動する」を表す。名詞は reflection（対称移動）。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "図形を、1 本の直線を折り目として折り返し、その直線について対称な位置に移す。",
+  "definition_en": "To flip a figure over a line so that each point lands on the opposite side of the line, the same distance away, making a mirror image.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "When you reflect a point over the x-axis, x stays the same and y changes sign, so (2, 5) goes to (2, −5).",
+      "ja": "x 軸を折り目にして点を折り返すと、x はそのままで y の符号が変わる。だから (2, 5) は (2, −5) に移る。",
+      "register": "spoken"
+    },
+    {
+      "en": "Reflect quadrilateral ABCD across line ℓ, and draw its image A′B′C′D′.",
+      "ja": "四角形 ABCD を、直線 ℓ を折り目として折り返した四角形 A′B′C′D′ をかけ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "前置詞は over か across（reflect the figure over line ℓ ／ across line ℓ）。日本語の「直線 ℓ について」「直線 ℓ を折り目として」に当たる。",
+    "名詞は reflection（エントリ reflection）。折り目になる直線は line of reflection（エントリ line-of-reflection）。",
+    "reflect は日常語で「（光を）反射する」「反映する」「よく考える」の意味でも使う。"
+  ],
+  "related": [
+    "reflection",
+    "line-of-reflection",
+    "translate",
+    "rotate",
+    "symmetric"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 1.13 ほか"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "reflect over | reflect across | reflect … over | reflect … across | reflect it over | reflect it across | reflect about": 74
+    },
+    "written": {
+      "reflect over | reflect across | reflect … over | reflect … across | reflect it over | reflect it across | reflect about": 42
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

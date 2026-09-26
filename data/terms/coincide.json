@@ -1,0 +1,92 @@
+{
+  "id": "coincide",
+  "ja": {
+    "term": "重なる",
+    "reading": "かさなる",
+    "alt": []
+  },
+  "en": {
+    "term": "coincide",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "near",
+  "mapping_note": "日本語の「重なる」は、2 つの図形がぴったり一致する意味にも、一部だけが重なり合う意味にも使う。英語の coincide は「一致する」で、ぴったり重なるときだけに使い、一部が重なり合うのは overlap。図形を移動して重ねるときは … maps onto … ／ … lands on … とも言う。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "2 つの図形や直線が、すべての点で一致して、ぴったり重なる。",
+  "definition_en": "Of two figures or lines: to fit exactly on top of each other, so that every point of one is also a point of the other.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Fold the paper along the line, and watch — the two halves coincide exactly.",
+      "ja": "この線で紙を折ってみて。ほら、両側がぴったり重なるね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Triangle ABC is rotated 180° about point O so that it coincides with triangle DEF. Which vertex of triangle DEF does vertex A coincide with?",
+      "ja": "△ABC を点 O を中心として 180° 回転移動すると、△DEF に重なる。頂点 A と重なる頂点を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「A が B に重なる」は A coincides with B（前置詞は with）、「A と B が重なる」は A and B coincide。coincide は目的語を直接取らない。",
+    "2 つの円が一部重なっているような場面で coincide を使うと、2 つが完全に同じ円だという意味になる。一部が重なり合うのは overlap。",
+    "合同（congruent、エントリ congruent）は「移動すれば重ねられる」という 2 つの図形の関係。coincide は実際に同じ位置でぴったり一致していることを言う。"
+  ],
+  "related": [
+    "congruent",
+    "translation",
+    "rotation",
+    "reflection",
+    "image"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "coincide": 15
+    },
+    "written": {
+      "coincide": 23
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "polyhedron",
+  "ja": {
+    "term": "多面体",
+    "reading": "ためんたい",
+    "alt": []
+  },
+  "en": {
+    "term": "polyhedron",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "平面の多角形だけで囲まれた立体。囲んでいる多角形を面、面と面が交わる線分を辺、辺が集まる点を頂点という。",
+  "definition_en": "A solid whose surface is made up entirely of flat polygons. The polygons are its faces, the segments where two faces meet are its edges, and the points where edges meet are its vertices.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A cylinder isn't a polyhedron, because it has a curved surface.",
+      "ja": "円柱は多面体じゃないよ。曲がった面があるからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "A polyhedron has 8 faces and 12 vertices. How many edges does it have?",
+      "ja": "面の数が 8、頂点の数が 12 の多面体がある。この多面体の辺の数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "複数形は polyhedra（polyhedrons とも言う）。",
+    "円柱・円錐・球は曲面をもつので、多面体ではない。",
+    "多面体の面・辺・頂点は face・edge・vertex（複数形 vertices）。多角形の辺は side（エントリ side）だが、多面体の辺は edge と言う。"
+  ],
+  "related": [
+    "polygon",
+    "regular-polyhedron",
+    "prism",
+    "pyramid",
+    "eulers-formula-for-polyhedra"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "多面体",
+      "en": "Polyhedron"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "9.1 Polyhedrons"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "polyhedron": 13
+    },
+    "written": {
+      "polyhedron": 9
+    },
+    "sources": [
+      "khan-middle",
+      "mit-notes"
+    ],
+    "counted": "2026-09-25"
+  }
+}

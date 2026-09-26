@@ -1,0 +1,92 @@
+{
+  "id": "translate",
+  "ja": {
+    "term": "平行に移動する",
+    "reading": "へいこうにいどうする",
+    "alt": []
+  },
+  "en": {
+    "term": "translate",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "図形のすべての点を、同じ向きに同じ距離だけ動かす。形も大きさも向きも変わらない。",
+  "definition_en": "To slide a figure so that every point moves the same distance in the same direction, without turning or flipping it.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Let's translate the triangle 4 units to the left. Every vertex slides over 4, and the shape doesn't change.",
+      "ja": "三角形を左に 4 だけ平行移動しよう。どの頂点も 4 ずつずれるだけで、形は変わらない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Triangle ABC has vertices A(1, 2), B(4, 2), and C(1, 5). Translate the triangle 3 units right and 2 units down, and give the coordinates of the vertices of the image.",
+      "ja": "A(1, 2)、B(4, 2)、C(1, 5) を頂点とする △ABC を、右に 3、下に 2 だけ平行移動する。移した三角形の頂点の座標を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "translate は日常語では「翻訳する」。数学でも、文章題の文を式に直すことを translate と言う（translate the sentence into an equation）。図形を動かす意味かどうかは目的語（the triangle、the point など）で見分ける。",
+    "動かす量は 3 units to the right、2 units down のように units と向きの語で言う（日本語の「x 軸方向に 3、y 軸方向に −2」に当たる）。",
+    "名詞は translation（エントリ translation）で、平行移動という移動そのものを指す。"
+  ],
+  "related": [
+    "translation",
+    "reflect",
+    "rotate",
+    "rigid-motion",
+    "write-an-equation"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 1.12 ほか"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "translate the graph | translated … units | translate … units | translate the figure | translate the triangle | translate the point | translated up | translated down | translated left | translated right | translate it": 15
+    },
+    "written": {
+      "translate the graph | translated … units | translate … units | translate the figure | translate the triangle | translate the point | translated up | translated down | translated left | translated right | translate it": 8
+    },
+    "sources": [
+      "khan-middle",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "lateral-face",
+  "ja": {
+    "term": "側面",
+    "reading": "そくめん",
+    "alt": []
+  },
+  "en": {
+    "term": "lateral face",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "角柱や角錐の面のうち、底面以外の面。角柱の側面は長方形（傾いた角柱では平行四辺形）、角錐の側面は三角形になる。",
+  "definition_en": "A face of a prism or pyramid that is not a base. The lateral faces of a prism are rectangles (parallelograms if the prism is oblique), and those of a pyramid are triangles.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A triangular prism has three lateral faces, one for each side of the triangle.",
+      "ja": "三角柱の側面は 3 つで、底面の三角形の辺 1 本につき 1 つずつある。",
+      "register": "spoken"
+    },
+    {
+      "en": "How many lateral faces does a hexagonal prism have, and what shape are they?",
+      "ja": "六角柱の側面はいくつあるか。また、側面はどんな形か答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "lateral は「横の」という意味で、強勢は最初の音節（LAT-）。円柱・円錐の側面は平らな面（face）ではなく曲面なので、lateral surface と言う。",
+    "底面は形で決まり、図の向きでは決まらない。角柱が横に倒れた図では、下に接している面は側面で、両端の合同な 2 つの面が底面になる。"
+  ],
+  "related": [
+    "prism",
+    "pyramid",
+    "lateral-area",
+    "polyhedron",
+    "cylinder"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "9.4 Surface Area（lateral faces 1 件）"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "lateral face": 1
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 lateral face（本文 1 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

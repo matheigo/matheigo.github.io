@@ -1,0 +1,109 @@
+{
+  "id": "plane",
+  "ja": {
+    "term": "平面",
+    "reading": "へいめん",
+    "alt": []
+  },
+  "en": {
+    "term": "plane",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "どの方向にも限りなく広がっている、平らな面。厚みはない。",
+  "definition_en": "A flat surface with no thickness that extends forever in every direction.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Think of a plane as a sheet of paper that goes on forever in every direction.",
+      "ja": "平面は、どこまでも広がっている紙のようなものだと思って。",
+      "register": "spoken"
+    },
+    {
+      "en": "Lines ℓ and m lie in plane P and do not intersect. What is the relationship between ℓ and m?",
+      "ja": "直線 ℓ と m は平面 P 上にあり、交わらない。ℓ と m はどのような位置関係にあるか答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "座標平面は coordinate plane（エントリ coordinate-plane）、複素平面は complex plane、接平面は tangent plane、平面図形は plane figure。",
+    "日常語の plane（飛行機）と同じ綴り。plain（平原、ふつうの）とは発音が同じで綴りが違う。"
+  ],
+  "related": [
+    "coordinate-plane",
+    "complex-plane",
+    "tangent-plane",
+    "equation-of-a-plane",
+    "solid"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "平面",
+      "en": "Plane (mathematics)"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "!coordinate !complex !cartesian !tangent !projective !osculating plane": 798
+    },
+    "written": {
+      "!coordinate !complex !cartesian !tangent !projective !osculating plane": 1066
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

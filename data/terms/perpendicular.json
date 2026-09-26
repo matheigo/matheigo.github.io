@@ -1,0 +1,104 @@
+{
+  "id": "perpendicular",
+  "ja": {
+    "term": "垂直",
+    "reading": "すいちょく",
+    "alt": [
+      "垂直である"
+    ]
+  },
+  "en": {
+    "term": "perpendicular",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "2 つの直線（線分）が直角に交わっていること。直線 AB と CD が垂直であることを AB ⊥ CD と書く。",
+  "definition_en": "Meeting at a right angle. Two lines are perpendicular if they cross to form a 90° angle.",
+  "latex": "AB \\perp CD",
+  "spoken_en": "A B is perpendicular to C D",
+  "examples": [
+    {
+      "en": "These two lines meet at right angles, so they're perpendicular.",
+      "ja": "この 2 本の直線は直角に交わっているから、垂直だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Construct a line through point P that is perpendicular to line ℓ.",
+      "ja": "点 P を通り、直線 ℓ に垂直な直線を作図せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "前置詞は to。AB ⊥ CD は AB is perpendicular to CD。「垂直に交わる」は meet at right angles。",
+    "垂直な 2 直線は perpendicular lines（エントリ perpendicular-lines）で、垂線もこの語で言う。ベクトルの直交は orthogonal（エントリ orthogonal）。",
+    "日常語の「垂直」（垂直跳びなど）は上下の向きのことで、英語では vertical。座標平面の vertical line は x = 3 のような縦の直線で、2 本が直角に交わる関係を表す perpendicular とは別の語。"
+  ],
+  "related": [
+    "perpendicular-lines",
+    "parallel",
+    "orthogonal",
+    "perpendicular-bisector",
+    "foot-of-the-perpendicular"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "perpendicular !bisector !bisectors !lines !line": 353
+    },
+    "written": {
+      "perpendicular !bisector !bisectors !lines !line": 276
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

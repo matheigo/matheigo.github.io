@@ -1,0 +1,90 @@
+{
+  "id": "angle-bisector",
+  "ja": {
+    "term": "角の二等分線",
+    "reading": "かくのにとうぶんせん",
+    "alt": []
+  },
+  "en": {
+    "term": "angle bisector",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "1 つの角を、大きさの等しい 2 つの角に分ける半直線。コンパスと定規で作図できる。",
+  "definition_en": "A ray (or line) that splits an angle into two equal angles. You can construct it with a compass and a straightedge.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The angle bisector cuts this 80-degree angle into two 40-degree angles.",
+      "ja": "角の二等分線で、この 80° の角が 40° の角 2 つに分かれる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Construct the angle bisector of angle ABC using a compass and a straightedge.",
+      "ja": "コンパスと定規を使って、∠ABC の二等分線を作図せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "bisector は bisect（二等分する。エントリ bisect）の名詞形。線分の垂直二等分線は perpendicular bisector（エントリ perpendicular-bisector）で、角の二等分線とは別の語。",
+    "三角形の 3 つの角の二等分線は 1 点で交わり、その点（内心）は incenter（エントリ incenter）。",
+    "三角形の角の二等分線が対辺を分ける比の定理は angle bisector theorem（エントリ angle-bisector-theorem）。"
+  ],
+  "related": [
+    "bisect",
+    "perpendicular-bisector",
+    "incenter",
+    "angle-bisector-theorem",
+    "construction"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "二等分線",
+      "en": "Bisection"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.11 Congruent Angles and Angle Bisectors・4.21 Angle Bisectors in Triangles"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "angle bisector": 11
+    },
+    "sources": [
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

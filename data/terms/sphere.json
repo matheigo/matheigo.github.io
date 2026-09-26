@@ -1,0 +1,95 @@
+{
+  "id": "sphere",
+  "ja": {
+    "term": "球",
+    "reading": "きゅう",
+    "alt": []
+  },
+  "en": {
+    "term": "sphere",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「球」は中身の詰まった立体を指し、その表面を「球面」と言う。英語の sphere は本来は表面（中心から等しい距離にある点の集まり）を指すが、体積・表面積も the volume of a sphere ／ the surface area of a sphere と言い、立体の意味でも sphere を使う。中身まで含むことをはっきり言うときは ball（solid sphere）。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "空間で、1 つの点（中心）から等しい距離（半径）にある点全体がつくる面（球面）で囲まれた、まるい立体。英語の sphere はこの表面（球面）を指す。",
+  "definition_en": "The round three-dimensional shape made of all the points in space that are the same distance, the radius, from a center point, like the surface of a ball.",
+  "latex": "V = \\frac{4}{3}\\pi r^3,\\quad S = 4\\pi r^2",
+  "spoken_en": "V equals four thirds pi r cubed, and S equals four pi r squared",
+  "examples": [
+    {
+      "en": "Every point on the sphere is the same distance from the center, and that distance is the radius.",
+      "ja": "球面上のどの点も中心から同じ距離にあって、その距離が半径。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the volume and the surface area of a sphere with a radius of 6 cm. Leave your answers in terms of π.",
+      "ja": "半径 6 cm の球の体積と表面積を求めよ。ただし、円周率は π とする。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の sphere は表面（球面）を指し、中身の詰まった球は ball とも言う。日本語は中身を含むほうが「球」、表面が「球面」。",
+    "平面で中心から等しい距離にある点の集まりは circle（円。エントリ circle）。空間なら sphere。",
+    "球を半分にした立体は hemisphere（半球）。"
+  ],
+  "related": [
+    "circle",
+    "radius",
+    "volume",
+    "surface-area",
+    "equation-of-a-sphere"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "sphere": 191
+    },
+    "written": {
+      "sphere": 285
+    },
+    "sources": [
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

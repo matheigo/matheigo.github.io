@@ -1,0 +1,99 @@
+{
+  "id": "straightedge",
+  "ja": {
+    "term": "定規",
+    "reading": "じょうぎ",
+    "alt": []
+  },
+  "en": {
+    "term": "ruler",
+    "alt": [
+      "straightedge"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「定規」は、目盛りで長さを測る定規にも、作図で直線を引くだけの定規にも使う。英語では目盛りのある定規（ものさしも）は ruler、作図で目盛りを使わずに直線を引く定規は straightedge と言い分け、Geometry の作図は compass and straightedge と言う。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "直線を引いたり、目盛りで長さを測ったりする道具。作図では目盛りを使わず、直線を引くためだけに使う。",
+  "definition_en": "A ruler is a tool with marks for measuring lengths and drawing straight lines. A straightedge is used only to draw straight lines, as in compass-and-straightedge constructions.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In a construction, the straightedge is only for drawing lines, so don't use the marks on your ruler.",
+      "ja": "作図では定規は線を引くためだけに使うから、定規の目盛りは使わないでね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Using only a compass and a straightedge, construct the perpendicular bisector of segment AB.",
+      "ja": "コンパスと定規だけを使って、線分 AB の垂直二等分線を作図せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "目盛りで長さを測る定規は ruler。日本語の「ものさし」も ruler。",
+    "作図の問題文にある compass and straightedge の straightedge は、目盛りを使わずに直線を引くための定規のこと（エントリ construction）。"
+  ],
+  "related": [
+    "construction",
+    "compass",
+    "construct",
+    "ruler-postulate",
+    "measure"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "定規",
+      "en": "Ruler"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "ruler !postulate": 14
+    },
+    "written": {
+      "ruler !postulate": 20
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

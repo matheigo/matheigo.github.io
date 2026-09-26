@@ -1,0 +1,111 @@
+{
+  "id": "height",
+  "ja": {
+    "term": "高さ",
+    "reading": "たかさ",
+    "alt": []
+  },
+  "en": {
+    "term": "height",
+    "alt": [
+      "altitude"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "中3"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "図形の底辺や底面から、それに垂直な向きに測った長さ。三角形では頂点から底辺（またはその延長）に下ろした垂線の長さ、角柱・円柱では 2 つの底面の間の距離をいう。",
+  "definition_en": "The distance measured perpendicular to the base of a figure. In a triangle it is the length of the perpendicular segment from a vertex to the opposite side (or its extension), and in a prism or cylinder it is the distance between the two bases.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The height has to be perpendicular to the base, so it's not the slanted side.",
+      "ja": "高さは底辺に垂直じゃないといけないから、斜めの辺の長さじゃないよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "The area of a triangle is 24 cm² and its base is 8 cm. Find the height of the triangle.",
+      "ja": "面積が 24 cm²、底辺が 8 cm の三角形の高さを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "三角形の頂点から対辺に下ろした垂線（またはその長さ）は altitude とも言う。",
+    "高さは底辺・底面に垂直に測る。斜めの辺の長さや、円錐の母線の長さ（slant height、エントリ slant-height）とは違う。",
+    "鈍角三角形で鈍角をはさむ辺を底辺にすると、高さは三角形の外に出て、底辺の延長に垂線を下ろすことになる。"
+  ],
+  "related": [
+    "perpendicular",
+    "slant-height",
+    "area-of-a-triangle",
+    "area-of-the-base",
+    "volume"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "height": 1540,
+      "altitude": 29
+    },
+    "written": {
+      "height": 1245,
+      "altitude": 43
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

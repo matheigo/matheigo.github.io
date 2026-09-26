@@ -1,0 +1,96 @@
+{
+  "id": "net",
+  "ja": {
+    "term": "展開図",
+    "reading": "てんかいず",
+    "alt": []
+  },
+  "en": {
+    "term": "net",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "立体の表面を切り開いて、平面の上に広げた図。組み立てるともとの立体になる。",
+  "definition_en": "A flat figure you get by cutting open the surface of a solid and laying it out in a plane. Folding it back up gives the original solid.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Here's the net of a cube: six squares, and when you fold it up, you get a box.",
+      "ja": "これが立方体の展開図。正方形が 6 つあって、折りたたむと箱になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "The net of a square pyramid is made up of a square with a side length of 4 cm and four triangles, each with a height of 6 cm. Find the area of the net.",
+      "ja": "正四角錐の展開図は、1 辺 4 cm の正方形 1 つと、高さ 6 cm の三角形 4 つでできている。この展開図の面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "net は日常語の「網」でもあり、「正味の・差し引きの」の意味（net change、エントリ net-change）でも使う。展開図とは別の意味。",
+    "1 つの立体の展開図は 1 通りとは限らない。立方体の展開図は 11 通りある。",
+    "球の表面は平面に広げられないので、球には展開図がない。"
+  ],
+  "related": [
+    "surface-area",
+    "lateral-area",
+    "polyhedron",
+    "prism",
+    "net-change"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "展開図",
+      "en": "Net (polyhedron)"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 6)",
+      "url": "https://im.kendallhunt.com/MS/students/1/index.html",
+      "note": "Grade 6 glossary・1.14 Nets and Surface Area・1.15 More Nets, More Surface Area"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "net of a | net of the | a net for | the net for": 1
+    },
+    "sources": [
+      "khan-middle"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 net of a | net of the | a net for | the net for（Grade 6 glossary・Grade 6 1.18 Surface Area of a Cube・Grade 6 1.13 Polyhedra・計 21 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

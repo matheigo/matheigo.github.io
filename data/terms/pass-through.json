@@ -1,0 +1,108 @@
+{
+  "id": "pass-through",
+  "ja": {
+    "term": "通る",
+    "reading": "とおる",
+    "alt": [
+      "点を通る"
+    ]
+  },
+  "en": {
+    "term": "pass through",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "中1",
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1",
+      "Pre-Algebra",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "点が直線や曲線の上にあるとき、その直線（曲線）はその点を通るという。グラフが点 (a, b) を通るとは、x = a のとき y = b になること。",
+  "definition_en": "A line or curve passes through a point when the point lies on it. A graph passes through (a, b) when y = b for x = a.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If the line passes through (2, 5), then when x is 2, y has to be 5.",
+      "ja": "直線が (2, 5) を通るなら、x が 2 のとき y は 5 になるはずだね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the equation of the line that passes through the origin and the point (3, −6).",
+      "ja": "原点と点 (3, −6) を通る直線の式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「点を通る」は pass through と through を付けて言う。主語は直線やグラフで、The line passes through (2, 5). の形になる。",
+    "点を主語にするときは The point (2, 5) is on the line.（点が直線上にある）と言う。",
+    "「原点を通る」は passes through the origin（エントリ origin）。origin には the を付ける。"
+  ],
+  "related": [
+    "line",
+    "origin",
+    "graph",
+    "coordinates",
+    "satisfy"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "pass through": 72
+    },
+    "written": {
+      "pass through": 367
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

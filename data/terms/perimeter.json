@@ -1,0 +1,97 @@
+{
+  "id": "perimeter",
+  "ja": {
+    "term": "周の長さ",
+    "reading": "しゅうのながさ",
+    "alt": [
+      "周囲の長さ"
+    ]
+  },
+  "en": {
+    "term": "perimeter",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "図形のまわりの長さ。多角形では、すべての辺の長さの和になる。",
+  "definition_en": "The distance around a flat figure. For a polygon, it is the sum of the lengths of all its sides.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Perimeter is the distance around, so just add up all the sides.",
+      "ja": "周の長さはまわりの長さだから、辺を全部たせばいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "A rectangle is 8 cm long and 5 cm wide. Find its perimeter and its area.",
+      "ja": "縦 5 cm、横 8 cm の長方形の周の長さと面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "円のまわりの長さは circumference（エントリ circumference）。perimeter は多角形などに使う。",
+    "面積は area（エントリ area）。perimeter の単位は cm・m などの長さの単位で、area は cm² などの square units（エントリ square-units）。",
+    "発音は pe-RIM-e-ter で、2 つ目の音節に強勢がある。"
+  ],
+  "related": [
+    "circumference",
+    "area",
+    "polygon",
+    "side",
+    "square-units"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "perimeter": 177
+    },
+    "written": {
+      "perimeter": 300
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:organicchem",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "surface-area",
+  "ja": {
+    "term": "表面積",
+    "reading": "ひょうめんせき",
+    "alt": []
+  },
+  "en": {
+    "term": "surface area",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "立体の表面全体の面積で、すべての面の面積の和。角柱・角錐・円柱・円錐では、展開図の面積と等しい。",
+  "definition_en": "The total area of all the surfaces of a solid, including its bases. For a prism, pyramid, cylinder, or cone, it equals the area of the solid's net.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Surface area is like wrapping paper: how much paper would it take to cover the whole box?",
+      "ja": "表面積は包み紙みたいなもの。箱全体を包むのに紙がどれだけいるか、ってこと。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the surface area of a rectangular prism that is 5 cm long, 4 cm wide, and 3 cm high.",
+      "ja": "縦 5 cm、横 4 cm、高さ 3 cm の直方体の表面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "表面積は面積なので、単位は cm²（square centimeters）など。体積の cm³ と取り違えない。",
+    "表面積 = 側面積 + 底面積。角柱・円柱は底面が 2 つあるので底面積を 2 倍し、角錐・円錐は底面が 1 つなので 1 つ分だけ足す。",
+    "surface area は、微積分で曲線を軸のまわりに回転させてできる曲面の面積（エントリ surface-area-of-revolution）にも使う。"
+  ],
+  "related": [
+    "lateral-area",
+    "area-of-the-base",
+    "net",
+    "area",
+    "surface-area-of-revolution"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "表面積",
+      "en": "Surface area"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "surface area": 236
+    },
+    "written": {
+      "surface area": 246
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

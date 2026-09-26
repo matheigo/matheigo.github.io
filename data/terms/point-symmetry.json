@@ -1,0 +1,84 @@
+{
+  "id": "point-symmetry",
+  "ja": {
+    "term": "点対称",
+    "reading": "てんたいしょう",
+    "alt": []
+  },
+  "en": {
+    "term": "point symmetry",
+    "alt": [
+      "symmetric about a point"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない。日本語の「点対称」は、180° の回転で重なる回転対称（rotational symmetry、エントリ rotational-symmetry）と同じ性質で、英語では has 180° rotational symmetry と言うことが多い。関数のグラフが原点について対称（symmetric about the origin）なのも点対称の 1 つで、グラフがそうなる関数が奇関数（エントリ odd-function）。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "図形をある点のまわりに 180° 回転させると、もとの図形にぴったり重なる性質。その点を対称の中心という。",
+  "definition_en": "The property a figure has when a 180° turn about a point makes it land exactly on itself. It is the same as having rotational symmetry of 180°.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The letter S has point symmetry: turn it upside down, 180 degrees, and it looks exactly the same.",
+      "ja": "S という文字は点対称。180° 回してさかさまにしても、まったく同じに見えるよね。",
+      "register": "spoken"
+    },
+    {
+      "en": "List all the letters among H, N, S, and T that have point symmetry.",
+      "ja": "H、N、S、T のうち、点対称な文字をすべて答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "rotational symmetry（エントリ rotational-symmetry）は 120° や 90° などの回転で重なる場合も含む。点対称は 180° の回転で重なる場合で、正三角形は 120° の回転対称をもつが点対称ではない。",
+    "線対称（エントリ line-symmetry）と区別する。平行四辺形は点対称だが、長方形でもひし形でもない平行四辺形は線対称ではない。",
+    "グラフが原点に関して点対称であることは symmetric about the origin と言う（エントリ symmetric）。y = 2x や y = 6/x のグラフがその例。"
+  ],
+  "related": [
+    "rotational-symmetry",
+    "line-symmetry",
+    "symmetric",
+    "odd-function",
+    "rotation"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "点対称",
+      "en": "Point reflection"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

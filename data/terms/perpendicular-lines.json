@@ -4,7 +4,8 @@
     "term": "2 直線の垂直",
     "reading": "にちょくせんのすいちょく",
     "alt": [
-      "垂直な 2 直線"
+      "垂直な 2 直線",
+      "垂線"
     ]
   },
   "en": {
@@ -21,14 +22,16 @@
   ],
   "level": {
     "jp": [
+      "中1",
       "数II"
     ],
     "us": [
+      "Pre-Algebra",
       "Geometry",
       "Precalculus"
     ]
   },
-  "definition_ja": "直角に交わる 2 直線。座標平面では傾きの積が −1 になる（座標軸に平行な場合を除く）。",
+  "definition_ja": "直角に交わる 2 直線で、一方を他方の垂線ともいう。座標平面では傾きの積が −1 になる（座標軸に平行な場合を除く）。",
   "definition_en": "Two lines that meet at a right angle; on the coordinate plane, their slopes multiply to −1 (apart from lines parallel to the axes).",
   "latex": "m_1 m_2 = -1",
   "spoken_en": "m one times m two equals negative one",
@@ -42,17 +45,24 @@
       "en": "Find the equation of the line through (1, 4) perpendicular to y = 3x − 2.",
       "ja": "点 (1, 4) を通り、直線 y = 3x − 2 に垂直な直線の方程式を求めよ。",
       "register": "written"
+    },
+    {
+      "en": "Construct the line through point P that is perpendicular to line ℓ.",
+      "ja": "点 P を通り、直線 ℓ に垂直な直線（垂線）を作図せよ。",
+      "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "米国では傾きの条件を negative reciprocals（負の逆数）と言う。日本の「傾きの積が −1」と同じ内容。"
+    "米国では傾きの条件を negative reciprocals（負の逆数）と言う。日本の「傾きの積が −1」と同じ内容。",
+    "「垂線」に当たる 1 語の名詞はなく、a line perpendicular to ℓ や the perpendicular from P to ℓ と言う。垂線の足は foot of the perpendicular（エントリ foot-of-the-perpendicular）。"
   ],
   "related": [
     "parallel-lines",
     "perpendicular-bisector",
     "equation-of-a-line",
-    "distance-from-a-point-to-a-line"
+    "distance-from-a-point-to-a-line",
+    "foot-of-the-perpendicular"
   ],
   "sources": [
     {

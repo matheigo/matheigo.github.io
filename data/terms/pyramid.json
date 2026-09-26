@@ -1,0 +1,95 @@
+{
+  "id": "pyramid",
+  "ja": {
+    "term": "角錐",
+    "reading": "かくすい",
+    "alt": []
+  },
+  "en": {
+    "term": "pyramid",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "多角形の底面と、1 つの頂点に集まる三角形の側面で囲まれた立体。底面の形によって三角錐、四角錐などと呼ぶ。",
+  "definition_en": "A solid with one polygon base and triangular faces that meet at a single point called the apex. It is named by the shape of its base, as in a square pyramid.",
+  "latex": "V = \\frac{1}{3}Bh",
+  "spoken_en": "V equals one third B times h",
+  "examples": [
+    {
+      "en": "A pyramid holds one third of what the prism with the same base and height holds, so don't forget to divide by 3.",
+      "ja": "角錐の体積は、底面と高さが同じ角柱の 3 分の 1。だから 3 で割るのを忘れないで。",
+      "register": "spoken"
+    },
+    {
+      "en": "A pyramid has a square base with sides of 6 m and a height of 5 m. Find its volume.",
+      "ja": "底面が 1 辺 6 m の正方形で、高さが 5 m の角錐の体積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "側面の三角形が集まる頂点は apex と言う。底面の角の点も vertex（複数形 vertices）なので、どちらの頂点かを区別する。",
+    "高さ（height）は apex から底面に下ろした垂線の長さで、側面の三角形の高さ（slant height、エントリ slant-height）とは別。",
+    "角錐の名前は底面の形を前に付けて言う（square pyramid は底面が正方形の角錐）。"
+  ],
+  "related": [
+    "prism",
+    "cone",
+    "polyhedron",
+    "slant-height",
+    "volume"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "角錐",
+      "en": "Pyramid (geometry)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "pyramid": 46
+    },
+    "written": {
+      "pyramid": 49
+    },
+    "sources": [
+      "khan-middle",
+      "mit-18.01",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

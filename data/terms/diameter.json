@@ -1,0 +1,99 @@
+{
+  "id": "diameter",
+  "ja": {
+    "term": "直径",
+    "reading": "ちょっけい",
+    "alt": []
+  },
+  "en": {
+    "term": "diameter",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "円の中心を通り、両端が円周上にある線分（中心を通る弦）。その長さも直径といい、半径の 2 倍になる。",
+  "definition_en": "A line segment that passes through the center of a circle and has both endpoints on the circle; also the length of that segment, which is twice the radius.",
+  "latex": "d = 2r",
+  "spoken_en": "d equals two r",
+  "examples": [
+    {
+      "en": "The diameter goes all the way across the circle through the center, so it's twice the radius.",
+      "ja": "直径は中心を通って円の端から端まで行く線だから、半径の 2 倍だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "A circle has a diameter of 18 cm. Find its radius.",
+      "ja": "直径 18 cm の円の半径を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の diameter も、中心を通る線分（draw a diameter）とその長さ（the diameter is 10 cm）の両方を指す。",
+    "問題文が radius（半径）を与えているか diameter（直径）を与えているかで、公式に入れる値が変わる（C = πd = 2πr、エントリ circumference）。",
+    "発音は di-AM-e-ter で、2 つ目の音節に強勢がある。"
+  ],
+  "related": [
+    "radius",
+    "circle",
+    "center",
+    "chord",
+    "circumference"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "diameter": 149
+    },
+    "written": {
+      "diameter": 152
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

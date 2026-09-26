@@ -1,0 +1,97 @@
+{
+  "id": "construct",
+  "ja": {
+    "term": "作図する",
+    "reading": "さくずする",
+    "alt": []
+  },
+  "en": {
+    "term": "construct",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "目盛りを使わない定規とコンパスだけを使って、条件に合う図形をかく。",
+  "definition_en": "To draw a figure exactly using only a compass and a straightedge, without measuring any lengths or angles.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To construct the perpendicular bisector, put your compass on A, open it past the middle, and draw an arc.",
+      "ja": "垂直二等分線を作図するには、コンパスの針を A に置いて、真ん中より広めに開いて弧をかこう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Construct the bisector of ∠AOB using a compass and a straightedge.",
+      "ja": "定規とコンパスを使って、∠AOB の二等分線を作図せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "名詞の「作図」は construction（エントリ construction）。「作図せよ」は Construct … で始める。",
+    "construct は図形に限らず「つくる」一般にも使う。統計の construct a confidence interval（信頼区間をつくる、エントリ confidence-interval）は定規やコンパスとは関係がない。",
+    "作図の道具は compass（エントリ compass）と straightedge（エントリ straightedge）。目盛りのある ruler で長さを測ってかくのは作図ではない。"
+  ],
+  "related": [
+    "construction",
+    "compass",
+    "straightedge",
+    "perpendicular-bisector",
+    "angle-bisector"
+  ],
+  "sources": [
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 1.1 Build It ほか"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "construct a perpendicular | construct the perpendicular | construct an angle | construct a line | construct the bisector | construct a triangle | construct a circle | construct a square | construct a hexagon | construct a copy | construct the angle | construct the line | construct a parallel": 5
+    },
+    "written": {
+      "construct a perpendicular | construct the perpendicular | construct an angle | construct a line | construct the bisector | construct a triangle | construct a circle | construct a square | construct a hexagon | construct a copy | construct the angle | construct the line | construct a parallel": 9
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-introstats",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは IM の呼び方 construct a perpendicular | construct the perpendicular | construct an angle | construct a line | construct the bisector | construct a triangle | construct a circle | construct a square | construct a hexagon | construct a copy | construct the angle | construct the line | construct a parallel（Geometry 1.7 Construction Techniques 5: Squares・Geometry 1.9 Speedy Delivery・Geometry 1.11 Defining Reflections・計 71 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

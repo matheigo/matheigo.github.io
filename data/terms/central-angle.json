@@ -1,0 +1,88 @@
+{
+  "id": "central-angle",
+  "ja": {
+    "term": "中心角",
+    "reading": "ちゅうしんかく",
+    "alt": []
+  },
+  "en": {
+    "term": "central angle",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "円の中心を頂点とし、2 本の半径を辺とする角。おうぎ形の弧の長さと面積は、中心角の大きさに比例する。",
+  "definition_en": "An angle whose vertex is at the center of a circle and whose sides are two radii. The arc length and the area of a sector are proportional to its central angle.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The central angle has its vertex right at the center, so here it's angle AOB.",
+      "ja": "中心角は頂点がちょうど中心にある角だから、ここでは ∠AOB だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "A sector has a radius of 9 cm and an arc length of 4π cm. Find its central angle.",
+      "ja": "半径 9 cm、弧の長さ 4π cm のおうぎ形の中心角を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "円周上に頂点がある円周角は inscribed angle（エントリ inscribed-angle）。同じ弧に対する円周角は中心角の半分。",
+    "中心角が a° のおうぎ形の弧の長さと面積は、同じ半径の円の円周と面積の a/360 になる。",
+    "弧の度数（エントリ arc-measure）は、その弧に対する中心角の大きさで表す。弧の長さ（arc length）とは別の量。"
+  ],
+  "related": [
+    "inscribed-angle",
+    "sector",
+    "arc",
+    "arc-measure",
+    "area-of-a-sector"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "central angle": 1
+    },
+    "written": {
+      "central angle": 24
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "yt:nancypi"
+    ],
+    "counted": "2026-09-25"
+  }
+}
