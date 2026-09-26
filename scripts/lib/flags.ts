@@ -19,6 +19,8 @@ export const PROBLEM_FLAGS = new Set([
   "langlink-missing", // crosscheck: the ja article has no en langlink
   "langlink-mismatch", // crosscheck: the en langlink is not the entry's term
   "draft-reason", // why the entry is still a draft (no source)
+  "audit-major-fix", // Phase 5: the audit changed en, mapping, the meaning of a definition or an example; the next audit session looks again
+  "audit-human", // Phase 5: the audit could not decide (no source, or a call only a person can make); goes to the human review
 ]);
 
 export const RECORD_FLAGS = new Set([

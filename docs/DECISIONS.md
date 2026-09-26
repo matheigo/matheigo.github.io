@@ -939,3 +939,8 @@
 ## Phase 5 の前: スキーマ変更（記号の単元）— 2026-09-26
 
 - 2026-09-26 | 5 | **スキーマ変更**: symbols に任意項目 `category`（21 区分の enum。arithmetic 四則 〜 geometry 幾何、notation-other その他の記法）を足し、220 記号すべてに ledger/symbols.csv の category 列の値を書き込んだ。サイト（src/lib/data.ts）は台帳の CSV を読むのをやめてデータを読む。symbols.csv の書き出しにも category の列を足した | ユーザーの了承（phase4-report G-3）。台帳は Phase 3 の候補の表で、公開するデータに単元が無いと JSON を使う人が単元で分けられない
+
+## Phase 5 監査（セッション 1）— 2026-09-26
+
+- 2026-09-26 | 5 | mapping_note の型「見出しの「X」は日本の教科書に無い、本プロジェクトの訳語。」（113 文、「日本の高校の教科書」ほかの形を含む）を「…は学習指導要領解説に無い、本プロジェクトの訳語。」に弱めた。113 文すべてで X が高等学校・中学校の学習指導要領解説のテキストに無いことを確かめた（空白を除いて照合）。STYLE の追記欄の型も書き換えた | 監査の観点 ⑦（日本側の主張は学習指導要領・解説、共通テスト・センター試験、日本語版 Wikipedia で確かめる）。本プロジェクトは日本の教科書を資料に持たないので「教科書に無い」は確かめられない。X が日本語版 Wikipedia にある 6 語（臨界点・差分商・円板法・因数分解形・瞬間変化率・直線の標準形）は、「本プロジェクトの訳語」を各語の監査で見直す
+- 2026-09-26 | 5 | 監査の状態を flag で残す: `audit-major-fix`（problem。大きな直しをしたので、次の監査のセッションが見直す）と `audit-human`（problem。判断がつかない・資料がないので人間レビューへ）を scripts/lib/flags.ts に足した。監査した項目には判定にかかわらず reviewed.audit に日付を入れる。順番と通し番号は audits/phase5-order.csv（scripts/audit/order.py）、判定と直した内容は audits/phase5-audit-log.csv | 直した監査のセッションが自分で verified にしない（大きな直し）ことと、次のセッションが「済んだ項目」を reviewed.audit で見分けることを両立させる。flag は validate の「verified に problem の flag なし」の条件にそのまま乗る
