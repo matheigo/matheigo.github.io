@@ -64,7 +64,7 @@
     }
   ],
   "pitfalls": [
-    "ja.alt の「式を評価する」は直訳に近く、日本の中学・高校の教科書は「式の値を求める」と書く。",
+    "ja.alt の「式を評価する」は直訳に近い。学習指導要領解説（中学校・高等学校）は「式の値を求める」と書く。",
     "「f(3) を求めよ」は evaluate f at 3 または evaluate f(3)。前置詞は at を使う。",
     "方程式の解を求めるのは solve で、evaluate は使わない。"
   ],
@@ -82,6 +82,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 1 学年 A 数と式: 文字に数を代入して式の値を求める"
     }
   ],
   "confidence": "likely",
@@ -90,7 +96,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "evaluate": 1735,

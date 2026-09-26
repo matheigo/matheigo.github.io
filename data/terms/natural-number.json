@@ -30,7 +30,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の教科書の自然数は 1, 2, 3, … で、0 を含まない。英語の natural number は 0 を含める流儀もあり（大学の離散数学など）、counting numbers は 1, 2, 3, …、whole numbers は 0, 1, 2, … を指す。0 を含まないことをはっきりさせるときは positive integer（正の整数）と言う。",
+  "mapping_note": "日本の自然数は 1, 2, 3, … で、0 を含まない（日本語版 Wikipedia「自然数」は、日本では高校の教育課程で 0 を入れないとする）。英語の natural number は 0 を含める流儀もあり（大学の離散数学。Levin は ℕ = {0, 1, 2, …} と書く）、counting numbers は 1, 2, 3, …、whole numbers は 0, 1, 2, … を指す。0 を含まないことをはっきりさせるときは positive integer（正の整数）と言う。",
   "domains": [
     "arithmetic"
   ],
@@ -42,7 +42,7 @@
       "Pre-Algebra"
     ]
   },
-  "definition_ja": "1, 2, 3, … のように、ものを数えるときに使う数。正の整数と同じで、日本の教科書では 0 を含まない。",
+  "definition_ja": "1, 2, 3, … のように、ものを数えるときに使う数。正の整数と同じで、0 を含まない。",
   "definition_en": "A counting number: 1, 2, 3, and so on. Some books, especially in college math, also count 0 as a natural number.",
   "latex": null,
   "spoken_en": null,
@@ -81,6 +81,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「自然数」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%87%AA%E7%84%B6%E6%95%B0",
+      "note": "日本では高校教育課程においては 0 を入れない"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction (4th ed.)",
+      "url": "https://discrete.openmathbooks.org/dmoi4.pdf",
+      "note": "0.2: ℕ = {0, 1, 2, …}"
     }
   ],
   "confidence": "likely",
@@ -89,7 +101,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "positive integer": 50,

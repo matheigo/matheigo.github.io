@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の中学の「文字式」は、文字を使って表した式のこと。英語では algebraic expression（variable expression とも）と言い、等号を含まない式（3x + 2 など）を指す。等号でつないだものは equation と呼んで区別する。",
+  "mapping_note": "中学校学習指導要領解説の「文字式」（文字を用いた式）は、文字を使って表した式のこと。英語では algebraic expression（variable expression とも）と言い、等号を含まない式（3x + 2 など）を指す。等号でつないだものは equation と呼んで区別する。",
   "domains": [
     "algebra"
   ],
@@ -63,6 +63,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 1 学年 A 数と式「文字を用いた式」（文字式）"
     }
   ],
   "confidence": "likely",
@@ -71,7 +77,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "algebraic expression": 15,
