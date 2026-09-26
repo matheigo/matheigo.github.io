@@ -1740,6 +1740,11 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
       "side of the triangle | side of a triangle | side of the square | side of a square | side length | length of the side | length of each side | three sides | four sides | all sides | side of the polygon",
   }, // 辺, not "both sides" or "the left side"
   perpendicular: { perpendicular: "perpendicular !bisector !bisectors !lines !line" }, // the adjective; perpendicular lines and bisectors are entries
+  // Phase 5 監査 3 (spot check): most "differential" hits are differential equation(s); the entry is dy = f′(x) dx
+  differential: { differential: "differential !equation !equations" },
+  // Phase 5 監査 3: the headword T-score (偏差値, mean 50 and SD 10) against the t-scores of the
+  // t-distribution in OpenStax Introductory Statistics - counted only where the mean of 50 says which
+  "standard-score": { "T-score": "T-score with a mean of 50 | T-scores with a mean of 50 | T-score with mean 50 | T-scores with mean 50" },
   parallel: { parallel: "parallel !lines !line" },
   center: { center: "center of the circle | center of a circle | center of the sphere | its center | the center is | centered at" }, // not a center of mass
   arc: { arc: "arc !length" },

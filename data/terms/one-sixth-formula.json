@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "日本の受験で使う公式で、OpenStax Calculus にも AP の CED にも無く、用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。one-sixth formula は英語の名前として使われていない（用例コーパスにも無い）ので、答案で使うなら公式そのもの（∫_α^β (x − α)(x − β) dx = −(β − α)³/6）を書くか、ふつうに積分して見せる。",
+  "mapping_note": "日本語版 Wikipedia「1/6公式」は、途中の計算を書かないマークシート式の試験で積分の計算に使われることがあると書く。OpenStax Calculus にも AP の CED にも無く、用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。one-sixth formula も用例コーパスと参照に出てこないので、答案で使うなら公式そのもの（∫_α^β (x − α)(x − β) dx = −(β − α)³/6）を書くか、ふつうに積分して見せる。",
   "domains": [
     "calculus"
   ],
@@ -25,8 +25,8 @@
       "Calculus I"
     ]
   },
-  "definition_ja": "放物線と直線で囲まれた部分の面積を、交点の x 座標 α、β だけから求める公式。∫_α^β (x − α)(x − β) dx = −(β − α)³/6 を使う。",
-  "definition_en": "A shortcut taught in Japan: the integral of (x − α)(x − β) from α to β is −(β − α)³/6, so the area between a parabola and a line follows from the intersection points alone.",
+  "definition_ja": "放物線と直線で囲まれた部分の面積を、x² の係数と、交点の x 座標 α、β から求める公式。∫_α^β (x − α)(x − β) dx = −(β − α)³/6 を使う。",
+  "definition_en": "A shortcut taught in Japan: the integral of (x − α)(x − β) from α to β is −(β − α)³/6, so the area between a parabola and a line follows from the leading coefficient and the intersection points.",
   "latex": "\\int_{\\alpha}^{\\beta} (x-\\alpha)(x-\\beta)\\,dx = -\\frac{(\\beta-\\alpha)^3}{6}",
   "spoken_en": "the integral from alpha to beta of the quantity x minus alpha times the quantity x minus beta, dx, equals negative the quantity beta minus alpha, cubed, over six",
   "examples": [
@@ -52,6 +52,12 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Mathematical Practices（justification、communication and notation）と記述問題の説明"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「1/6公式」",
+      "url": "https://ja.wikipedia.org/wiki/1/6%E5%85%AC%E5%BC%8F",
+      "note": "マークシート式の試験で積分計算に使われることがある"
     }
   ],
   "confidence": "verified",

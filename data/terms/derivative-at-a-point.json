@@ -36,7 +36,7 @@
     ]
   },
   "definition_ja": "関数 f の x=a における変化率。グラフの点 (a, f(a)) での接線の傾きに等しい。",
-  "definition_en": "The rate of change of f at x = a, equal to the slope of the tangent line at the point (a, f(a)).",
+  "definition_en": "How fast f is changing at x = a; it equals the slope of the line that just touches the graph at (a, f(a)).",
   "latex": "f'(a) = \\lim_{h \\to 0} \\frac{f(a+h) - f(a)}{h}",
   "spoken_en": "f prime of a equals the limit as h goes to zero of f of a plus h minus f of a, all over h",
   "examples": [
@@ -65,6 +65,9 @@
     "differential coefficient は用例コーパス（米国の授業の書き起こしと OpenStax）にも CED にも出てこない。"
   ],
   "related": [
+    "derivative",
+    "instantaneous-rate-of-change",
+    "slope-of-the-tangent-line",
     "sign-chart"
   ],
   "sources": [

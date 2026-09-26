@@ -51,7 +51,7 @@
     }
   ],
   "pitfalls": [
-    "日本語版 Wikipedia「部分積分」の ∫fg′dx = fg − ∫f′g dx の形に対して、OpenStax Calculus Volume 2 は u と dv を決めて ∫u dv = uv − ∫v du と書く。u には微分すると簡単になるほうを選ぶ（覚え方として LIATE を教えることがある）。",
+    "日本語版 Wikipedia「部分積分」の ∫u v′ dx = uv − ∫u′ v dx（本エントリの定義の f g′ と同じ形）に対して、OpenStax Calculus Volume 2 は u と dv を決めて ∫u dv = uv − ∫v du と書く。u には微分すると簡単になるほうを選ぶ（OpenStax Calculus Volume 2 は覚え方として LIATE を挙げる）。",
     "動詞で言うときは integrate by parts（部分積分する）。"
   ],
   "related": [
@@ -75,7 +75,7 @@
       "type": "reference",
       "title": "日本語版 Wikipedia「部分積分」",
       "url": "https://ja.wikipedia.org/wiki/%E9%83%A8%E5%88%86%E7%A9%8D%E5%88%86",
-      "note": "∫f g′ dx = f g − ∫f′ g dx"
+      "note": "∫u(x)v′(x) dx = [u(x)v(x)] − ∫u′(x)v(x) dx"
     }
   ],
   "confidence": "verified",

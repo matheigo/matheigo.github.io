@@ -59,7 +59,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の数III は x → a + 0 と書く（学習指導要領解説も lim_{x→+0}）が、OpenStax は x → a⁺ と書き、a plus と読む（approaches a from the right）。"
+    "学習指導要領解説（数学III）は lim_{x→+0} と書き、日本語版 Wikipedia「片側極限」は lim_{x→a+0} と書く。OpenStax は x → a⁺ と書き、as x approaches a from the right と言う（講義では a plus とも読む。Khan Academy）。"
   ],
   "related": [
     "left-hand-limit",
@@ -86,6 +86,12 @@
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
       "note": "数学III 微分法: lim_{x→+0} の書き方"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「片側極限」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%89%87%E5%81%B4%E6%A5%B5%E9%99%90",
+      "note": "lim_{x→a+0} f(x)"
     }
   ],
   "confidence": "verified",

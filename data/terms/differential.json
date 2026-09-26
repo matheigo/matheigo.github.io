@@ -44,7 +44,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスの differential の件数の大半は、differential equation（微分方程式）の differential。"
+    "用例コーパスでは differential equation（微分方程式）の differential を除いて数えた（語のままでは件数の大半が微分方程式）。"
   ],
   "related": [
     "linear-approximation",
@@ -67,10 +67,10 @@
   "updated": "2026-09-26",
   "evidence": {
     "spoken": {
-      "differential": 1211
+      "differential !equation !equations": 273
     },
     "written": {
-      "differential": 713
+      "differential !equation !equations": 94
     },
     "sources": [
       "khan-ap-calc",
@@ -79,17 +79,15 @@
       "mit-18.02",
       "mit-18.03",
       "mit-18.06",
-      "mit-6.042",
       "mit-notes",
       "openstax-algtrig",
       "openstax-calculus",
       "yt:3blue1brown",
       "yt:blackpenredpen",
       "yt:nancypi",
-      "yt:organicchem",
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

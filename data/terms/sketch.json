@@ -15,7 +15,7 @@
   },
   "pos": "verb",
   "mapping": "near",
-  "mapping_note": "日本の問題文の「図示せよ」「図示すると」（共通テストの問題文にもある）は、領域なら Sketch ／ Graph ／ Shade the region、曲線なら Sketch the graph と言う。英語の sketch はグラフや図をおおまかにかくことで、正確な作図（draw ／ construct）とは区別する。",
+  "mapping_note": "日本語の問題文の「図示せよ」「図示すると」（共通テストの問題文には「図示すると」がある）は、領域なら Sketch ／ Graph ／ Shade the region、曲線なら Sketch the graph と言う。英語の sketch はグラフや図をおおまかにかくことで、正確な作図は construct と言う（CK-12 Geometry 1.12 は construction を rough sketch にすぎない drawing と区別する）。draw は sketch と同じく手がきにも使う（IM の Draw a rough sketch）。",
   "domains": [
     "geometry"
   ],
@@ -83,6 +83,12 @@
       "title": "大学入試センター 令和8年度 大学入学共通テスト 本試験 数学Ⅱ，数学Ｂ，数学Ｃ（問題）",
       "url": "https://www.dnc.ac.jp/albums/abm.php?d=2144&f=abm00017550.pdf&n=2026_ol_18_sugaku2BC.pdf",
       "note": "不等式の表す領域を図示すると"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.12 Constructions and Bisectors（construction と drawing の区別）"
     }
   ],
   "confidence": "verified",

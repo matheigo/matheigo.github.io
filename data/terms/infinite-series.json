@@ -49,7 +49,7 @@
   "collocations": [],
   "pitfalls": [
     "series は単複同形（a series ／ two series）。sequence（数列）と取り違えない。",
-    "日本の「級数」はふつう無限級数を指す。英語の series は有限個の項の和（arithmetic series）にも使う。"
+    "日本語版 Wikipedia「級数」は級数を無限項の和として定義し（有限個の和は残りの項を 0 とみる場合）、学習指導要領解説は「無限級数」「無限等比級数」の形で使う。英語の series は有限個の項の和にも使い、OpenStax Algebra and Trigonometry は初項から第 n 項までの和を arithmetic series と呼ぶ。"
   ],
   "related": [
     "sum-of-the-series",
@@ -81,6 +81,23 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 10.1（infinite series）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「級数」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%B4%9A%E6%95%B0",
+      "note": "級数を無限項の和として定義（有限和は特別な場合）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学III 極限: 無限級数・無限等比級数"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "arithmetic series（初項から第 n 項までの和）"
     }
   ],
   "confidence": "verified",

@@ -9,7 +9,7 @@
 
 - 調べた本文の欄: 15644
 - 英語のソース: 3884 ファイル ／ 日本語のソース: 403 ファイル
-- 一致した箇所: **513**（429 項目）
+- 一致した箇所: **509**（427 項目）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
 |---|---|---|---|---|---|---|---|
@@ -162,18 +162,15 @@
 | terms | cycloid | definition_en | en | 11 | the curve traced by a point on the rim of a | 1 | openstax-calculus |
 | terms | decomposition-of-a-vector | examples[1].en | en | 8 | as a linear combination of a and b | 1 | mit-notes |
 | terms | density-curve | examples[0].en | en | 8 | the area under the density curve between two | 1 | openstax-introstats |
-| terms | derivative | definition_en | en | 11 | the slope of the tangent line to the graph of f | 8 | openstax-calculus, khan-ap-calc, yt:profleonard, openstax-precalculus, mit-18.01, mit-notes ほか |
-| terms | derivative-at-a-point | definition_en | en | 10 | to the slope of the tangent line at the point | 3 | openstax-calculus, openstax-precalculus, khan-ap-calc |
 | terms | derivative-at-a-point | examples[1].en | en | 8 | the slope of the tangent line there the | 1 | khan-ap-calc |
 | terms | derivative-at-a-point | collocations[1].en | en | 8 | the slope of the tangent line at x | 1 | khan-ap-calc |
 | terms | derivative-of-a-sum | definition_en | en | 8 | of a sum is the sum of the | 2 | mit-notes, openstax-calculus |
 | terms | derivative-of-a-vector-function | examples[1].en | en | 9 | the derivative of the vector valued function r t | 1 | openstax-calculus |
 | terms | derivative-of-the-exponential-function | examples[0].en | en | 13 | the derivative of e to the x is just e to the x | 6 | khan-ap-calc, yt:organicchem, mit-18.01, yt:nancypi, yt:3blue1brown, yt:blackpenredpen |
 | terms | derivatives-in-polar-form | examples[1].en | en | 8 | find the slope of the tangent line to | 4 | openstax-calculus, khan-ap-calc, yt:profleonard, yt:blackpenredpen |
-| terms | derivatives-of-inverse-trig-functions | definition_en | en | 8 | the formulas for the derivatives of the inverse | 2 | openstax-calculus, yt:patrickjmt |
 | terms | derivatives-of-inverse-trig-functions | examples[0].en | en | 8 | x is one over one plus x squared | 1 | khan-ap-calc |
-| terms | derivatives-of-trigonometric-functions | examples[0].en | en | 10 | the derivative of sine is cosine and the derivative of | 2 | yt:organicchem, khan-ap-calc |
 | terms | derivatives-of-trigonometric-functions | definition_ja | en | 8 | sin x cos x cos x sin x | 4 | openstax-calculus, mit-notes, openstax-algtrig, openstax-precalculus |
+| terms | derivatives-of-trigonometric-functions | examples[0].en | en | 8 | but the derivative of cosine is negative sine | 1 | yt:nancypi |
 | terms | descartes-rule-of-signs | examples[1].en | en | 16 | use descartes rule of signs to determine the possible numbers of positive and negative real zeros | 2 | openstax-algtrig, openstax-precalculus |
 | terms | diagonalization | definition_en | en | 8 | finding an invertible matrix p such that p | 1 | ref:nicholson-lawa-2021a |
 | terms | diameter | examples[0].en | en | 9 | all the way across the circle through the center | 1 | khan-middle |
@@ -253,7 +250,6 @@
 | terms | inequality | examples[1].en | en | 8 | and graph the solution on a number line | 1 | ref:im-6-8 |
 | terms | inequality-sign | pitfalls[2] | en | 9 | less than b a b a is greater than | 3 | openstax-prealgebra, openstax-elemalg, openstax-intalg |
 | terms | infinite-geometric-series | examples[1].en | en | 8 | find the sum of the infinite geometric series | 3 | openstax-algtrig, openstax-precalculus, openstax-intalg |
-| terms | initial-condition | definition_en | en | 8 | the value of the function at one point | 1 | khan-ap-calc |
 | terms | initial-point | examples[0].en | en | 9 | put the tail of the second vector at the | 1 | khan-ap-calc |
 | terms | inner-function | examples[0].en | en | 9 | to multiply by the derivative of the inside function | 5 | yt:patrickjmt, mit-18.01, yt:nancypi, mit-18.02, yt:profleonard |
 | terms | inscribed-angle-theorem | definition_ja | ja | 23 | その弧に対する中心角の大きさの半分であるという | 1 | jp:kaisetsu-chu |
