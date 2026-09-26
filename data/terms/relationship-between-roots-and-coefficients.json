@@ -78,7 +78,7 @@
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-24",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -96,6 +96,11 @@
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 Vieta's formulas（英語版「Vieta's formulas」、ja の langlink 先）。register は主張しない。",
+      "raised": "2026-09-26"
+    },
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: 監査 3 の決定 3（H-2）で、英語版 Wikipedia の記事名 Vieta's formulas（ja 記事の langlink 先。4 段）が候補なので「決まった言い方が出てこない」でなくなり、規則 2 の最後の段で見出しが Vieta's formulas になった（もとの見出しは en.alt）。見直す点: Vieta's formulas を見出しにしてよいか（米国の高校の参照には名前が出てこない）、mapping_note と例文。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]
