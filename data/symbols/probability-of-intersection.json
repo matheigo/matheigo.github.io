@@ -1,0 +1,59 @@
+{
+  "id": "probability-of-intersection",
+  "latex": "P(A \\cap B)",
+  "spoken_en": [
+    {
+      "text": "the probability of A and B",
+      "register": "standard"
+    },
+    {
+      "text": "the probability of A intersect B",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "A かつ B の確率 ／ P(A キャップ B)",
+  "name_en": "probability of A and B",
+  "name_ja": "積事象の確率（P(A ∩ B)）",
+  "term_ref": "intersection-of-events",
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "notes": [
+    "P(A ∩ B) は the probability of A and B と読む。OpenStax Introductory Statistics は P(A AND B) と書く。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Unit 2（確率）"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the probability of a and b | the probability of both *": 18,
+      "the probability of a intersect b | probability of a intersection b": 1
+    },
+    "sources": [
+      "mit-6.042",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

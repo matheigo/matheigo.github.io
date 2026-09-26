@@ -1,0 +1,62 @@
+{
+  "id": "variance-of-x",
+  "latex": "V(X),\\ \\operatorname{Var}(X),\\ \\sigma^2",
+  "spoken_en": [
+    {
+      "text": "the variance of X",
+      "register": "standard"
+    },
+    {
+      "text": "sigma squared",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "X の分散 ／ V(X)",
+  "name_en": "variance",
+  "name_ja": "分散（V(X)、Var(X)、σ²）",
+  "term_ref": "variance",
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "notes": [
+    "V(X)・Var(X) は the variance of X と読む。σ² は sigma squared。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Unit 2（確率変数の分散）"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "sigma squared": 10,
+      "the variance of *": 106
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "complex-conjugate-bar",
+  "latex": "\\bar{z}",
+  "spoken_en": [
+    {
+      "text": "the complex conjugate of z",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "z バー ／ z の共役複素数",
+  "name_en": "complex conjugate",
+  "name_ja": "共役複素数（z̄）",
+  "term_ref": "complex-conjugate",
+  "level": {
+    "jp": [
+      "数II",
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "notes": [
+    "z̄ は the complex conjugate of z と読む。文字の上の横線が共役を表す。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the complex conjugate of *": 9
+    },
+    "sources": [
+      "mit-18.03",
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 the complex conjugate of *（本文 20 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

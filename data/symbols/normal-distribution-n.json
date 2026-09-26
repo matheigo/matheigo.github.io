@@ -1,0 +1,59 @@
+{
+  "id": "normal-distribution-n",
+  "latex": "N(\\mu, \\sigma),\\ N(m, \\sigma^2)",
+  "spoken_en": [
+    {
+      "text": "normal with mean mu and standard deviation sigma",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "正規分布 N(m, σ²)",
+  "name_en": "normal distribution notation",
+  "name_ja": "正規分布の記号（N(μ, σ)）",
+  "term_ref": "normal-distribution",
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "notes": [
+    "N(μ, σ) は normal with mean mu and standard deviation sigma と読む。2 つ目の値が標準偏差か分散かは本によって違う（normal-distribution-parameter）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "試験の例題。normal with mean … and standard deviation …（2 件。読みを決めた参照）"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "normal with mean *": 2
+    },
+    "sources": [
+      "khan-ap-stats"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 対象外）。読みは AP Statistics の CED の呼び方 normal with mean *（exam）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "matrix-inverse-notation",
+  "latex": "A^{-1}",
+  "spoken_en": [
+    {
+      "text": "A inverse",
+      "register": "standard"
+    },
+    {
+      "text": "the inverse of A",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "A インバース ／ A の逆行列",
+  "name_en": "inverse matrix",
+  "name_ja": "逆行列（A⁻¹）",
+  "term_ref": "inverse-matrix",
+  "level": {
+    "jp": [
+      "数C",
+      "大学"
+    ],
+    "us": [
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "notes": [
+    "A⁻¹ は A inverse と読む。−1 は指数ではなく逆行列の印で、one over A とは読まない。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "2.4 Matrix Inverses"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "a inverse | b inverse | m inverse | p inverse | s inverse | c inverse | ab inverse | a b inverse": 175,
+      "the inverse of a | the inverse of the matrix | the inverse of b | the inverse of m | the inverse matrix": 56
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

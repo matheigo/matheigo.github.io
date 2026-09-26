@@ -1,0 +1,62 @@
+{
+  "id": "chi-square-symbol",
+  "latex": "\\chi^2",
+  "spoken_en": [
+    {
+      "text": "chi-square",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "カイ 2 乗",
+  "name_en": "chi-square",
+  "name_ja": "カイ 2 乗（χ²）",
+  "term_ref": "chi-square-test",
+  "level": {
+    "jp": [],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "notes": [
+    "χ² は chi-square と読む。chi は「カイ」と発音する。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "topic 3.14・3.15。chi-square（読みを決めた参照）"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "chi-square | chi square": 9
+    },
+    "sources": [
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 対象外）。読みは AP Statistics の CED の呼び方 chi-square | chi square（topic 3.14・topic 3.15）。register は主張しない。",
+      "raised": "2026-09-25"
+    },
+    {
+      "code": "corpus-auto-only",
+      "note": "根拠が自動字幕のみ。自動字幕は数式を誤認識するので、OCW の人手書き起こしで裏が取れるまで verified にしない（PLAN 15）。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1115,6 +1115,182 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "unit-vector-hat": {
     "i hat": "i hat | j hat | k hat | u hat",
   },
+  // Phase 3 記号 バッチ 4 (ledger rows 151-200). A reading is how the glyphs are said: r² is
+  // "r squared" whatever r is (pi r squared too), P(A) "p of a" as p(a) is. A capital Greek
+  // letter has the same name (Σ, Δ): counted with the lowercase one, except where noted
+  // (DECISIONS Phase 3 記号 バッチ 4).
+  "vector-magnitude-bars": {
+    "the magnitude of v": "the magnitude of *",
+    "the norm of v": "the norm of *",
+    "the length of v": "the length of the vector | the length of vector *",
+  },
+  "dot-product-dot": {
+    "u dot v": "u dot v | a dot b | v dot w | u dot w | v dot u | b dot a | v dot v | u dot u | a dot a",
+    "the dot product of u and v": "the dot product of *",
+  },
+  "cross-product-cross": {
+    "u cross v": "u cross v | a cross b | v cross w | v cross u | b cross a | u cross w | a cross c | b cross c",
+    "the cross product of u and v": "the cross product of *",
+  },
+  "projection-notation": {
+    "the projection of u onto v": "the projection of * onto *",
+    "proj v of u": "proj * of * | proj sub *",
+    "the vector projection of u onto v": "vector projection of *",
+  },
+  // The entries read out; the references print them as numbers, which reads the same
+  "matrix-brackets": {
+    "the matrix a, b, c, d": "the matrix one | the matrix two | the matrix zero | the matrix three | the matrix a b",
+    "the two-by-two matrix with entries a, b, c, d": "matrix with entries *",
+  },
+  "matrix-dimensions-by": {
+    "a two-by-three matrix": "by two matrix | by three matrix | by n matrix | by-two matrix | by-three matrix | by-n matrix | by one matrix | by four matrix | by m matrix | by-one matrix",
+    "a matrix with two rows and three columns": "rows and * columns",
+  },
+  "matrix-entry-aij": {
+    "the i j entry of A": "the i j entry | the i j-th entry | the ij entry | i comma j entry | the i j th entry | i-j entry | i jth entry | i-jth entry | (i, j)-entry | (i, j) entry | i, j entry | i, j-entry | ij-entry",
+    "a sub i j": "a sub i j | a sub i comma j | a sub ij",
+  },
+  "determinant-notation": {
+    "the determinant of A": "the determinant of *",
+    "det A": "det of * | det a | det b | the det of",
+  },
+  "transpose-notation": {
+    "A transpose": "a transpose | b transpose | x transpose | v transpose | q transpose | u transpose | m transpose | c transpose",
+    "the transpose of A": "the transpose of *",
+  },
+  "matrix-inverse-notation": {
+    "A inverse": "a inverse | b inverse | m inverse | p inverse | s inverse | c inverse | ab inverse | a b inverse",
+    "the inverse of A": "the inverse of a | the inverse of the matrix | the inverse of b | the inverse of m | the inverse matrix",
+  },
+  "identity-matrix-i": {
+    "the identity matrix": "the identity matrix | an identity matrix",
+    "I sub n": "i sub n",
+    "the n by n identity matrix": "by n identity matrix | by-n identity matrix",
+  },
+  // "the probability of a" also counts "the probability of a head": only the forms that name an event
+  "probability-of-a": {
+    "P of A": "p of a | p of b | p of e | p of not a | p of a complement",
+    "the probability of A": "the probability of event a | the probability of event b | the probability of event e | the probability of a occurring | the probability of b occurring | the probability of a happening | the probability of b happening",
+  },
+  "conditional-probability-bar": {
+    "the probability of A given B": "the probability of * given *",
+    "P of A given B": "p of * given *",
+  },
+  // Japanese notation: read as its US counterpart P(B | A) (as gauss-bracket-jp is read floor of x)
+  "conditional-probability-subscript-jp": {
+    "the probability of B given A": "the probability of * given *",
+    "P sub A of B": "p sub a of *",
+  },
+  "probability-of-intersection": {
+    "the probability of A and B": "the probability of a and b | the probability of both *",
+    "P of A intersect B": "p of a and b | p of a intersect b | p of a intersection b",
+    "the probability of A intersect B": "the probability of a intersect b | probability of a intersection b",
+  },
+  "probability-of-union": {
+    "the probability of A or B": "the probability of a or b | the probability of either *",
+    "P of A union B": "p of a or b | p of a union b",
+    "the probability of A union B": "the probability of a union b",
+  },
+  "probability-x-equals-k": {
+    "the probability that X equals k": "the probability that x equals * | the probability that x is equal to * | the probability that x is *",
+    "P of X equals k": "p of x equals * | p of x is equal to",
+  },
+  "expected-value-e-of-x": {
+    "the expected value of X": "the expected value of *",
+    "E of X": "e of x | e of y | e of capital x",
+    "the mean of X": "the mean of x | the mean of the random variable",
+    "mu sub X": "mu sub x | mu x",
+  },
+  "variance-of-x": {
+    "the variance of X": "the variance of *",
+    "var of X": "var of * | var x",
+    "sigma squared": "sigma squared",
+  },
+  // sigma notation is Σ, and sigma squared is the variance entry; the diagonal matrix Σ of
+  // MIT 18.06 is kept out where a following word shows it (sigma transpose)
+  "standard-deviation-sigma": {
+    sigma: "!capital sigma !notation !transpose !inverse !plus !matrix !one !two !r !n !v !u !squared",
+    "the standard deviation of X": "the standard deviation of *",
+    "sigma sub X": "sigma sub x | sigma x",
+    "sigma of X": "sigma of x",
+  },
+  "x-bar-sample-mean": {
+    "x bar": "x bar | x-bar",
+  },
+  "p-hat-sample-proportion": {
+    "p hat": "p hat | p-hat",
+  },
+  "y-hat-predicted-value": {
+    "y hat": "y hat | y-hat",
+    "the predicted value of y": "the predicted value | predicted value of y",
+  },
+  "r-squared": {
+    "r squared": "r squared | r-squared",
+    "the coefficient of determination": "coefficient of determination",
+  },
+  "normal-distribution-n": {
+    "the normal distribution with mean mu and standard deviation sigma": "normal distribution with mean * | normally distributed with mean *",
+    "N of mu comma sigma": "n of mu",
+    "normal with mean mu and standard deviation sigma": "normal with mean *",
+  },
+  "binomial-distribution-b": {
+    "the binomial distribution with n trials and success probability p": "binomial distribution with *",
+    "binomial with parameters n and p": "binomial with parameters | binomial with n",
+    "B of n comma p": "b of n",
+  },
+  "distributed-as-tilde": {
+    "X is normally distributed with mean mu and standard deviation sigma": "is normally distributed",
+    "X is distributed as N of mu, sigma": "is distributed as * | is distributed according to",
+    "X follows a normal distribution": "follows a normal distribution | follows a * distribution",
+    "X tilde N": "x tilde",
+  },
+  "z-star-critical-value": {
+    "z star": "z star | z-star | t star | t-star",
+    "the critical value": "the critical value | a critical value",
+  },
+  "chi-square-symbol": {
+    "chi-square": "chi-square | chi square",
+    "chi-squared": "chi-squared | chi squared",
+  },
+  "h-naught-null": {
+    "H zero": "h zero | h sub zero",
+    "H naught": "h naught | h-naught | h sub naught",
+  },
+  "h-sub-a-alternative": {
+    "the alternative hypothesis": "the alternative hypothesis | the alternate hypothesis",
+    "H one": "h one | h sub one",
+  },
+  "quartile-q1-q3": {
+    "Q one": "q one | q three | q1 | q3",
+    "the first quartile": "the first quartile | the third quartile",
+    "Q sub one": "q sub one | q sub three",
+  },
+  "iqr-abbreviation": {
+    "the interquartile range": "interquartile range",
+    "I Q R": "i q r | iqr",
+  },
+  // Δx (change in x) is also "delta": the lowercase δ is counted where epsilon-delta talk has it
+  "delta-lowercase": {
+    delta: "there exists a delta | find a delta | find you a delta | come up with a delta | epsilon delta | delta greater than zero | delta is greater than zero | delta neighborhood | within delta | pick a delta | choose a delta",
+  },
+  // A letter alone cannot be counted: i as said in i squared equals negative one
+  "imaginary-unit-i": {
+    i: "i squared equals negative one | i squared is negative one | i squared equals minus one | i squared is minus one | i squared is equal to negative one",
+  },
+  "complex-a-plus-bi": {
+    "a plus b i": "plus b i | plus bi | minus b i | minus bi",
+  },
+  "complex-conjugate-bar": {
+    "the complex conjugate of z": "the complex conjugate of *",
+    "z bar": "z bar | z-bar | w bar",
+    "the conjugate of z": "the conjugate of z | the conjugate of w",
+    "z conjugate": "z conjugate | w conjugate",
+  },
+  "complex-modulus-bars": {
+    "the absolute value of z": "the absolute value of z | the absolute value of a complex",
+    "the modulus of z": "the modulus of *",
+    "the magnitude of z": "the magnitude of z | the magnitude of a complex",
+  },
 };
 
 /**

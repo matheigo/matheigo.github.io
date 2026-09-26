@@ -1,0 +1,68 @@
+{
+  "id": "expected-value-e-of-x",
+  "latex": "E(X),\\ \\mu_X",
+  "spoken_en": [
+    {
+      "text": "the expected value of X",
+      "register": "standard"
+    },
+    {
+      "text": "the mean of X",
+      "register": "spoken"
+    },
+    {
+      "text": "E of X",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "X の期待値 ／ E(X)",
+  "name_en": "expected value",
+  "name_ja": "期待値（E(X)、μ_X）",
+  "term_ref": "expected-value",
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "notes": [
+    "E(X) は the expected value of X と読む。AP Statistics の CED は確率変数の平均を μ_X とも書く。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Unit 2（確率変数の平均）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "e of x | e of y | e of capital x": 9,
+      "the expected value of *": 211,
+      "the mean of x | the mean of the random variable": 13
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-25"
+  }
+}

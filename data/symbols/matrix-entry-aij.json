@@ -1,0 +1,61 @@
+{
+  "id": "matrix-entry-aij",
+  "latex": "a_{ij}",
+  "spoken_en": [
+    {
+      "text": "the i j entry of A",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "a i j ／ (i, j) 成分",
+  "name_en": "matrix entry",
+  "name_ja": "行列の (i, j) 成分（aᵢⱼ）",
+  "term_ref": "entry",
+  "level": {
+    "jp": [
+      "数C",
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "notes": [
+    "aᵢⱼ は the i j entry of A と読む。i 行 j 列の成分で、添字は行が先。",
+    "(i, j) 成分という言い方は米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない。Nicholson は the (i, j)-entry と書く（24 件）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "2.1・2.3 ほか。the (i, j)-entry（24 件。読みを決めた参照）"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the i j entry | the i j-th entry | the ij entry | i comma j entry | the i j th entry | i-j entry | i jth entry | i-jth entry | (i, j)-entry | (i, j) entry | i, j entry | i, j-entry | ij-entry": 3
+    },
+    "sources": [
+      "mit-18.06",
+      "mit-6.042"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 対象外）。読みは Nicholson の呼び方 the i j entry | the i j-th entry | the ij entry | i comma j entry | the i j th entry | i-j entry | i jth entry | i-jth entry | (i, j)-entry | (i, j) entry | i, j entry | i, j-entry | ij-entry（2.3 Matrix Multiplication・2.1 Matrix Addition, Scalar Multiplication, and Transposition・8.2 Orthogonal Diagonalization）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

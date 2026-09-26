@@ -1,0 +1,66 @@
+{
+  "id": "matrix-dimensions-by",
+  "latex": "2 \\times 3,\\ m \\times n",
+  "spoken_en": [
+    {
+      "text": "a two-by-three matrix",
+      "register": "standard"
+    },
+    {
+      "text": "a matrix with two rows and three columns",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "2 行 3 列の行列 ／ m 行 n 列",
+  "name_en": "matrix dimensions",
+  "name_ja": "行列の型（m × n）",
+  "term_ref": "matrix",
+  "level": {
+    "jp": [
+      "数C",
+      "大学"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "notes": [
+    "2 × 3 行列は a two-by-three matrix と読む。× を by と読み、行の数が先。m × n は m by n。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "2.1 Matrix Addition, Scalar Multiplication, and Transposition ほか"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "by two matrix | by three matrix | by n matrix | by-two matrix | by-three matrix | by-n matrix | by one matrix | by four matrix | by m matrix | by-one matrix": 80,
+      "rows and * columns": 8
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

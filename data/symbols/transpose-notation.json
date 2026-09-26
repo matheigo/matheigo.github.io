@@ -1,0 +1,53 @@
+{
+  "id": "transpose-notation",
+  "latex": "A^{T},\\ {}^{t}\\!A",
+  "spoken_en": [
+    {
+      "text": "A transpose",
+      "register": "standard"
+    },
+    {
+      "text": "the transpose of A",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "A の転置 ／ A トランスポーズ ／ t A",
+  "name_en": "transpose",
+  "name_ja": "転置行列（Aᵀ、ᵗA）",
+  "term_ref": "transpose",
+  "level": {
+    "jp": [
+      "大学"
+    ],
+    "us": [
+      "Linear Algebra"
+    ]
+  },
+  "notes": [
+    "Aᵀ は A transpose と読む。左肩に t を付ける ᵗA も読みは同じ。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "2.1 Matrix Addition, Scalar Multiplication, and Transposition"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the transpose of *": 12,
+      "a transpose | b transpose | x transpose | v transpose | q transpose | u transpose | m transpose | c transpose": 498
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.06"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "dot-product-dot",
+  "latex": "\\vec{a} \\cdot \\vec{b}",
+  "spoken_en": [
+    {
+      "text": "the dot product of u and v",
+      "register": "standard"
+    },
+    {
+      "text": "u dot v",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "a ドット b ／ a と b の内積",
+  "name_en": "dot product",
+  "name_ja": "内積（a⃗ · b⃗）",
+  "term_ref": "dot-product",
+  "level": {
+    "jp": [
+      "数C"
+    ],
+    "us": [
+      "Precalculus",
+      "Calculus III",
+      "Linear Algebra"
+    ]
+  },
+  "notes": [
+    "a⃗ · b⃗ は a dot b と読む。点（·）を dot と読む。",
+    "· は数の掛け算にも使う（times-sign）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "4.2 Projections and Planes ほか"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "u dot v | a dot b | v dot w | u dot w | v dot u | b dot a | v dot v | u dot u | a dot a": 7,
+      "the dot product of *": 21
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

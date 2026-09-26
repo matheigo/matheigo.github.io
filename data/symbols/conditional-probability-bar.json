@@ -1,0 +1,57 @@
+{
+  "id": "conditional-probability-bar",
+  "latex": "P(A \\mid B)",
+  "spoken_en": [
+    {
+      "text": "the probability of A given B",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "B が起こったときの A の条件付き確率",
+  "name_en": "conditional probability",
+  "name_ja": "条件付き確率（P(A | B)）",
+  "term_ref": "conditional-probability",
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Algebra 2",
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "notes": [
+    "P(A | B) は the probability of A given B と読む。縦線を given と読み、条件は縦線の右。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Unit 2（確率）"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the probability of * given *": 68
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

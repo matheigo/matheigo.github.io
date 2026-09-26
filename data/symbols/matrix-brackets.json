@@ -1,0 +1,74 @@
+{
+  "id": "matrix-brackets",
+  "latex": "\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}",
+  "spoken_en": [
+    {
+      "text": "the matrix a, b, c, d",
+      "register": "standard"
+    },
+    {
+      "text": "the two-by-two matrix with entries a, b, c, d",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "行列 a b c d",
+  "name_en": "matrix (brackets)",
+  "name_ja": "行列（[ ] と ( )）",
+  "term_ref": "matrix",
+  "level": {
+    "jp": [
+      "数C",
+      "大学"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "Linear Algebra"
+    ]
+  },
+  "notes": [
+    "行列は成分を左上から行ごとに読む。",
+    "[ ] で囲んでも ( ) で囲んでも読み方は変わらない。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "2.2・5.5。成分を並べて the matrix … と書く（3 件。読みを決めた参照）"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the matrix one | the matrix two | the matrix zero | the matrix three | the matrix a b": 9,
+      "matrix with entries *": 4
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満 ／ 書: 対象外）。読みは Nicholson の呼び方 the matrix one | the matrix two | the matrix zero | the matrix three | the matrix a b（5.5 Similarity and Diagonalization・2.2 Matrix-Vector Multiplication）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

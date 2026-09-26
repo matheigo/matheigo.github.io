@@ -1,0 +1,66 @@
+{
+  "id": "standard-deviation-sigma",
+  "latex": "\\sigma,\\ \\sigma(X),\\ \\sigma_X",
+  "spoken_en": [
+    {
+      "text": "the standard deviation of X",
+      "register": "standard"
+    },
+    {
+      "text": "sigma",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "シグマ ／ X の標準偏差",
+  "name_en": "standard deviation (sigma)",
+  "name_ja": "標準偏差（σ、σ(X)、σ_X）",
+  "term_ref": "standard-deviation",
+  "level": {
+    "jp": [
+      "数I",
+      "数B"
+    ],
+    "us": [
+      "AP Statistics",
+      "Intro Statistics"
+    ]
+  },
+  "notes": [
+    "σ は sigma と読む。σ(X)・σ_X は the standard deviation of X と読む。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Unit 1・2"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "!capital sigma !notation !transpose !inverse !plus !matrix !one !two !r !n !v !u !squared": 80,
+      "the standard deviation of *": 93
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}
