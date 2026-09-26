@@ -17,7 +17,10 @@
  * merge is recorded, never silently dropped (lib.ts countEntry).
  *
  * terms fold inflection and read "…" as a one-to-three-word blank; symbols
- * are wildcard patterns; phrases are literal (lib.ts matcherFor).
+ * are wildcard patterns; phrases are counted by their key part as terms are
+ * (lib.ts matcherFor, PHRASE_FORMS), each on the words of whoever says it
+ * (lib.ts phraseDocs: the MICASE students, the lectures and the MICASE
+ * instructors, or the written corpus).
  *
  * Everything written stays under corpus/, which is gitignored.
  */
@@ -34,6 +37,8 @@ import {
   forCollection,
   matcherFor,
   normalize,
+  phraseDocs,
+  phraseGroup,
   referenceHits,
   referred as anyReference,
   type BySource,
@@ -41,6 +46,7 @@ import {
   type CorpusDoc,
   type DedupeStats,
   type Merge,
+  type PhraseGroup,
   type ReferenceHits,
   WIKIPEDIA_NOT_SAME,
 } from "./lib.js";
@@ -63,6 +69,8 @@ export interface EntryCounts {
   sources: string[];
   /** True when every spoken hit came from auto captions (weak evidence for symbols). */
   autoOnly: boolean;
+  /** phrases: who says it, and so which docs it was counted on (lib.ts phraseGroup). */
+  group?: PhraseGroup;
   /** terms: what the CEDs, OpenStax, IM, CK-12, Nicholson, Levin and Wikipedia call it, for the ③ fallback (lib.ts settleUndecided); symbols: how those references (not Wikipedia) read it (settleSymbolReading). */
   reference?: ReferenceHits;
 }
@@ -73,6 +81,8 @@ export interface CountsFile {
   sources: Record<string, number>;
   /** source id -> the only collections it is counted for (MICASE: phrases); sources not listed count for all */
   restricted?: Record<string, string[]>;
+  /** phrases: group -> source id -> words of the docs that group is counted on (lib.ts phraseDocs), for decide's weights */
+  phraseSources?: Record<PhraseGroup, Record<string, number>>;
   /** source id -> what dedupe removed; absent with --no-dedupe */
   dedupe?: Record<string, DedupeStats>;
   entries: EntryCounts[];
@@ -99,6 +109,7 @@ function loadCorpus(): CorpusDoc[] {
       text: normalize(fs.readFileSync(path.join(CORPUS, m.file), "utf8")),
       file: m.file,
       ...(m.collections ? { collections: m.collections } : {}),
+      ...(m.speaker ? { speaker: m.speaker } : {}),
     }));
 }
 
@@ -168,13 +179,23 @@ function main() {
   const restricted: Record<string, string[]> = {};
   for (const d of docs) if (d.collections) restricted[d.id] = d.collections;
 
+  // Phrases are counted on the words of whoever says them (lib.ts phraseDocs).
+  const phraseSources = {} as Record<PhraseGroup, Record<string, number>>;
+  const phraseCorpus = forCollection(docs, "phrases");
+  for (const group of ["student", "instructor", "written", "email"] as PhraseGroup[]) {
+    phraseSources[group] = {};
+    for (const r of balance(phraseDocs(phraseCorpus, group)).rows) phraseSources[group][r.source] = r.words;
+  }
+
   for (const collection of COUNTED) {
     // MICASE is for phrases only (lib.ts forCollection).
     const counted = forCollection(docs, collection);
     for (const { data } of all[collection]) {
       const record = data as unknown as Record<string, unknown>;
       const candidates = candidatesOf(collection, record);
-      const t = countEntry(counted, collection, candidates, headwordOf(collection, record));
+      const group = collection === "phrases" ? phraseGroup(data.id, record.situation as string) : undefined;
+      const on = group ? phraseDocs(counted, group) : counted;
+      const t = countEntry(on, collection, candidates, headwordOf(collection, record));
       const wiki = collection === "terms" ? wikipedia.get(data.id) : undefined;
       // Symbols too, as their patterns: rule 2 reads a ③ symbol the way the references do
       // (lib.ts settleSymbolReading, DECISIONS Phase 3 記号と慣習差の前の修正 2).
@@ -183,12 +204,14 @@ function main() {
           ? { ...referenceHits(candidates, refs.ced, openstax, titles, { ...refs, ...calculus }), ...(wiki ? { wikipedia: wiki } : {}) }
           : collection === "symbols"
             ? referenceHits(candidates, refs.ced, openstax, titles, refs, matcherFor("symbols"))
-            : undefined;
+            : group === "written"
+              ? referenceHits(candidates, refs.ced, openstax, titles, refs, matcherFor("phrases"))
+              : undefined;
       const referred = reference !== undefined && anyReference(reference);
       if (t.sources.length === 0 && !referred) continue;
       if (WITH_CONTEXTS) {
         for (const candidate of candidates) {
-          for (const doc of counted) hits.push(...contexts(doc.text, candidate, doc.id));
+          for (const doc of on) hits.push(...contexts(doc.text, candidate, doc.id));
         }
       }
       entries.push({
@@ -199,6 +222,7 @@ function main() {
         merges: t.merges,
         sources: t.sources,
         autoOnly: t.auto && !t.human,
+        ...(group ? { group } : {}),
         ...(referred ? { reference } : {}),
       });
     }
@@ -208,6 +232,7 @@ function main() {
     counted: localDate(),
     sources: words,
     ...(Object.keys(restricted).length ? { restricted } : {}),
+    phraseSources,
     ...(removed ? { dedupe: removed } : {}),
     entries,
   };

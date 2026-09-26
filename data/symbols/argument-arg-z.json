@@ -8,7 +8,7 @@
     },
     {
       "text": "arg z",
-      "register": "spoken"
+      "register": "standard"
     }
   ],
   "spoken_ja": "z の偏角 ／ アーグ z",
@@ -24,7 +24,8 @@
     ]
   },
   "notes": [
-    "arg z は the argument of z と読む。"
+    "arg z は the argument of z、短く arg z と読む。",
+    "Nicholson の付録 A（複素数）は偏角を θ = arg z と書く。"
   ],
   "sources": [
     {
@@ -34,9 +35,15 @@
       "type": "textbook",
       "title": "OpenStax Precalculus 2e",
       "note": "複素数の極形式で argument を使う"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "Appendix A Complex Numbers: θ = arg z"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
@@ -45,12 +52,12 @@
     "sources": [
       "mit-18.01"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも読みを 3 件以上使わない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "読みは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 3 フレーズの前の修正」の 2）。the argument of z ／ arg z。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

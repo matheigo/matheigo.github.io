@@ -659,6 +659,7 @@ OpenStax *Calculus* Vol 1–3、*Precalculus*、*Algebra and Trigonometry*、*In
 2. **normalize**: 小文字化、数式読みの表記ゆれ辞書（"f prime"/"f-prime"、"d x"/"dx"/"DX"、"x squared"/"x-squared"、"the integral"/"the intergral" 等）、数字の読み。
 3. **count**: 各エントリの候補表現（`en.term`、`en.alt`、`collocations`、`spoken_en`、`phrases.en`）を正規表現で数える。前後 8 語の文脈は一時ファイルに出す（レビュー用、コミットしない）。
    phrases は文を丸ごと数えず、要の部分を terms の動詞句と同じ規則（「…」は 1〜3 語の空き）で数える（`scripts/corpus/lib.ts` の `PHRASE_FORMS`。2026-09-25 追加）。
+   phrases は場面の話者のコーパスで数える: 学生が言う場面（class-asking・office-hours・group-study・explaining-solution）は MICASE の学生の発話だけ、先生が言う場面（class-listening）は講義のコーパスと MICASE の教員の発話、written-solution・exam は書き言葉のコーパスと参照（③ なら参照の段で、1 つの参照が 3 件以上使う要の部分）、email・discord は ①②③ で判定せず、要の部分が MICASE の学生の発話に 3 件以上あれば likely（`scripts/corpus/lib.ts` の `phraseGroup`。2026-09-25 追加）。
 4. **decide**: 頻度比で `register` を決めるルール。例: spoken コーパスで 3:1 以上ならその表現を spoken の見出しに、written で 3:1 以上なら written の見出しに。両方で閾値未満 or 総件数 10 未満は **「コーパスで判断不能」フラグ** → 人間レビュー行き。
    話し言葉の首位が 1 ソース頼み（抜くと ③ か別の候補が首位）で、書き言葉（①）か CED が別の言い方で決まっているときは、書き言葉・CED の言い方を見出しにし、話し言葉の言い方は spoken の variant にする（2026-09-25 追加。STYLE 原則 1）。
 5. **report**: `audits/corpus-YYYY-MM-DD.md` に、判断が変わった語・新たに見つかった言い回し（辞典にない高頻度表現）を列挙。**辞典に無い高頻度表現の発見** がこの仕組みの副産物で、Phase 1 の台帳の抜けを埋める。

@@ -27,6 +27,9 @@ import {
   sampleTermContexts,
   cedText,
   settleSymbolReading,
+  settlePhraseReference,
+  phraseDocs,
+  phraseGroup,
   settleUndecided,
   sourceWeights,
   spokenLeanHead,
@@ -87,7 +90,7 @@ describe("normalize", () => {
 
 describe("PHRASE_FORMS (DECISIONS, Phase 3 の準備: フレーズの数え方)", () => {
   it("counts a phrase by its key part, with the blank and inflection of terms", () => {
-    const re = matcherFor("phrases")(countedAs("phrases", "class-asking-repeat", "Sorry, could you say that last part again?"))!;
+    const re = matcherFor("phrases")(countedAs("phrases", "class-asking-repeat", "Sorry, could you say that again?"))!;
     expect(normalize("sorry, could you say that last part again? and can you say that again").match(re)?.length).toBe(2);
     expect(countTerm(normalize("i started by factoring. we start by factoring."), "i started by | i start by")).toBe(1);
     expect(countTerm(normalize("let me walk you through it"), "walk … through")).toBe(1);
@@ -581,9 +584,15 @@ describe("settleSymbolReading (rule 2 for symbols)", () => {
     expect(settleSymbolReading("empty-set-symbol", hits, order)).toEqual({ kind: "undecided" });
   });
 
-  it("takes a CED reading at any number, before the other references", () => {
-    const s = settleSymbolReading("x", ref({ cedStats: { [order[1]]: { "4.7": 1 } }, levin: { [order[0]]: { "5.1 Sets": 9 } } }), order);
+  it("takes a CED reading at three hits or more, before the other references", () => {
+    const s = settleSymbolReading("x", ref({ cedStats: { [order[1]]: { "4.7": 2, "4.10": 1 } }, levin: { [order[0]]: { "5.1 Sets": 9 } } }), order);
     expect(s).toMatchObject({ kind: "reference", by: "ced-stats", head: order[1] });
+  });
+
+  it("does not take a CED reading used fewer than three times (a term's name: any number)", () => {
+    const hits = ref({ cedStats: { [order[1]]: { "4.7": 2 } }, levin: { [order[0]]: { "5.1 Sets": 9 } } });
+    expect(settleSymbolReading("x", hits, order)).toMatchObject({ kind: "reference", by: "levin", head: order[0] });
+    expect(settleSymbolReading("x", ref({ ced: { [order[1]]: { unit3: 1 } } }), order)).toEqual({ kind: "undecided" });
   });
 
   it("does not use the Wikipedia article name, and skips the listed symbols", () => {
@@ -1126,6 +1135,38 @@ describe("MICASE (phrases only)", () => {
     expect(speakerClass("Audience", "JF")).toBe("instructor");
     expect(speakerClass("Participant", "ST")).toBe("other");
     expect(speakerClass("Unidentified", "UN")).toBe("other");
+  });
+
+  it("counts a phrase on the words of whoever says it (Phase 3 フレーズの前の修正 4)", () => {
+    const docs: CorpusDoc[] = [
+      { id: "mit-18.01", register: "spoken", auto: false, text: "a" },
+      { id: "micase", register: "spoken", auto: false, text: "s", collections: ["phrases"], speaker: "student" },
+      { id: "micase", register: "spoken", auto: false, text: "i", collections: ["phrases"], speaker: "instructor" },
+      { id: "micase", register: "spoken", auto: false, text: "o", collections: ["phrases"], speaker: "other" },
+      { id: "openstax-calculus", register: "written", auto: false, text: "w" },
+    ];
+    const texts = (g: Parameters<typeof phraseDocs>[1]) => phraseDocs(docs, g).map((d) => d.text);
+    expect(texts("student")).toEqual(["s"]);
+    expect(texts("email")).toEqual(["s"]);
+    expect(texts("instructor")).toEqual(["a", "i"]);
+    expect(texts("written")).toEqual(["w"]);
+    expect(phraseGroup("office-hours-stuck-at-step", "office-hours")).toBe("student");
+    expect(phraseGroup("dont-forget-the-plus-c", "class-listening")).toBe("instructor");
+    expect(phraseGroup("exam-justify-your-answer", "exam")).toBe("written");
+    expect(phraseGroup("exam-clarify-instruction", "exam")).toBe("student"); // said aloud during the exam
+    expect(phraseGroup("email-greeting", "email")).toBe("email");
+  });
+
+  it("settles a written phrase on the references at three hits, a CED too", () => {
+    const ref = (r: Partial<ReferenceHits>): ReferenceHits => ({ ced: {}, openstax: {}, openstaxTitles: {}, ...r });
+    const order = ["justify your answer", "give a reason for your answer"];
+    expect(settlePhraseReference(ref({ ced: { [order[1]]: { "2.1": 2 } }, openstax: { [order[0]]: 4 } }), order)).toMatchObject({
+      kind: "reference",
+      by: "openstax",
+      head: order[0],
+    });
+    expect(settlePhraseReference(ref({ ced: { [order[1]]: { "2.1": 3 } } }), order)).toMatchObject({ kind: "reference", by: "ced", head: order[1] });
+    expect(settlePhraseReference(ref({ openstax: { [order[0]]: 2 }, openstaxTitles: { [order[0]]: ["x", "y", "z"] } }), order)).toEqual({ kind: "undecided" });
   });
 
   it("keeps a phrases-only source out of the terms' docs and weights", () => {

@@ -3,12 +3,12 @@
   "latex": "r(\\cos\\theta + i\\sin\\theta),\\ r\\operatorname{cis}\\theta",
   "spoken_en": [
     {
-      "text": "r times cosine theta plus i sine theta",
+      "text": "r cis theta",
       "register": "standard"
     },
     {
-      "text": "r cis theta",
-      "register": "spoken"
+      "text": "r times cosine theta plus i sine theta",
+      "register": "standard"
     }
   ],
   "spoken_ja": "極形式 r(cos θ + i sin θ)",
@@ -24,8 +24,8 @@
     ]
   },
   "notes": [
-    "r(cos θ + i sin θ) は r times cosine theta plus i sine theta と読む。",
-    "OpenStax Precalculus は r(cos θ + i sin θ) を r cis θ と略して書く。"
+    "r cis θ は r(cos θ + i sin θ) の略記で、r cis theta と読む。略さずに書いたときは r times cosine theta plus i sine theta と読む。",
+    "cis は OpenStax Precalculus（と Algebra and Trigonometry）の略記（We often use the abbreviation … の形で導入する）。日本の高等学校学習指導要領解説には cis が出てこない（日本語版 Wikipedia「複素数」は r cis(φ) と書くこともあると説明する）。"
   ],
   "sources": [
     {
@@ -37,7 +37,7 @@
       "note": "r cis θ の略記"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
@@ -47,12 +47,12 @@
       "mit-18.03",
       "yt:3blue1brown"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも読みを 3 件以上使わない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "読みは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 3 フレーズの前の修正」の 2）。r cis theta ／ r times cosine theta plus i sine theta。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

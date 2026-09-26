@@ -64,14 +64,19 @@ import {
   flatten,
   headsOf,
   highSchoolHits,
+  PHRASE_GROUP_LABEL,
+  phraseGroup,
   sameWording,
+  settlePhraseReference,
   settleSymbolReading,
   settleUndecided,
   SYMBOL_NOT_READ_IN_REFERENCES,
   sourceWeights,
   spokenLeanHead,
+  STUDENT_SEEN,
   wordsFor,
   type LeanHead,
+  type PhraseGroup,
   type Register,
   type Settled,
   type Verdict,
@@ -153,7 +158,8 @@ function recordedAt(collection: Collection, data: Record<string, unknown>, regis
 interface Line {
   key: string;
   wroteBack: boolean;
-  spoken: Verdict;
+  /** null: the register is out of scope (a written phrase, an email / discord phrase). */
+  spoken: Verdict | null;
   written: Verdict | null;
   merges: { into: string; from: string[] }[];
   mismatch: string | null;
@@ -171,6 +177,10 @@ interface Line {
   humanNote: string | null;
   /** The spoken leader rests on one source and the written corpus / a CED says otherwise (lib.ts spokenLeanHead). */
   lean: LeanHead | null;
+  /** phrases: who says it (lib.ts phraseGroup). */
+  group: PhraseGroup | null;
+  /** email / discord phrases: the most-used key part and its hits in the MICASE students' utterances. */
+  seen: { wording: string; hits: number } | null;
 }
 
 const NO_FIXED_NOTE = "英語に決まった言い方がない";
@@ -281,13 +291,25 @@ function main() {
     };
     const record = entry.data as unknown as Record<string, unknown>;
 
-    const w = weightsOf[c.collection] ?? weights;
-    const spoken = decideRobust(c.spoken, w, "spoken");
-    const written = c.collection === "symbols" ? null : decideRobust(c.written, w, "written");
+    // A phrase is weighed on the words of whoever says it (lib.ts phraseDocs,
+    // DECISIONS Phase 3 フレーズの前の修正 4): the MICASE students, the lectures and
+    // the MICASE instructors, or the written corpus. email / discord are not judged ①②③.
+    const group = c.collection === "phrases" ? phraseGroup(entry.data.id, record.situation as string) : null;
+    const w = group ? sourceWeights(file.phraseSources?.[group] ?? {}) : (weightsOf[c.collection] ?? weights);
+    const spoken = group === "written" || group === "email" ? null : decideRobust(c.spoken, w, "spoken");
+    const written =
+      c.collection === "symbols" || (group !== null && group !== "written") ? null : decideRobust(c.written, w, "written");
+    const seen =
+      group === "email"
+        ? Object.entries(flatten(c.spoken))
+            .sort((a, b) => b[1] - a[1])
+            .map(([wording, hits]) => ({ wording, hits }))[0] ?? { wording: countedAs(c.collection, entry.data.id, record.en as string), hits: 0 }
+        : null;
 
     // ③: settle it where the rules allow (lib.ts settleUndecided). Only terms
     // carry a mapping and are counted against the references.
-    const bothUndecided = spoken.kind === "undecided" && (written === null || written.kind === "undecided");
+    const bothUndecided =
+      group !== "email" && (spoken === null || spoken.kind === "undecided") && (written === null || written.kind === "undecided");
     const rawTotal = (by: Record<string, Record<string, number>>) =>
       Object.values(flatten(by)).reduce((a, b) => a + b, 0);
     const human = humanFlag(record);
@@ -307,7 +329,9 @@ function main() {
           )
         : c.collection === "symbols"
           ? settleSymbolReading(entry.data.id, c.reference ?? emptyReference(), candidatesOf(c.collection, record))
-          : { kind: "undecided" };
+          : group === "written"
+            ? settlePhraseReference(c.reference ?? emptyReference(), candidatesOf(c.collection, record))
+            : { kind: "undecided" };
     // The human's call comes before the rules.
     const settled: Settled | null = bothUndecided && human ? { kind: "undecided" } : ruleSettled;
     const todo: string[] = [];
@@ -330,6 +354,11 @@ function main() {
         !((record.notes as string[] | undefined) ?? []).some((n) => n.includes(NOT_IN_HIGH_SCHOOL))
       ) {
         todo.push(`notes に「${NOT_IN_HIGH_SCHOOL}」と件数を書く`);
+      }
+    } else if (settled && settled.kind === "reference" && c.collection === "phrases") {
+      // The key part the references use is the headline sentence's (en).
+      if (!sameWording(countedAs(c.collection, entry.data.id, record.en as string), settled.head)) {
+        todo.push(`en を要の部分が ${settled.head} の文にする（今は ${record.en as string}）`);
       }
     } else if (settled && settled.kind !== "undecided") {
       const en = record.en as { term: string; register?: string };
@@ -361,7 +390,7 @@ function main() {
     // the headword, else the spoken leader keeps it (DECISIONS, Phase 2 中学の
     // 単元 3 の前の修正 1).
     const lean =
-      c.collection === "terms" && !human
+      c.collection === "terms" && !human && spoken !== null
         ? spokenLeanHead(
             spoken,
             written,
@@ -382,6 +411,17 @@ function main() {
       }
       if (lean.by !== "spoken" && !(en.variants ?? []).some((v) => v.register === "spoken" && sameWording(as(v.term), lean.spoken))) {
         todo.push(`${lean.spoken} を register spoken の variant にする（話し言葉の首位、${lean.source} 頼み）`);
+      }
+    }
+
+    // A phrase's headline sentence (en) carries the key part the corpus settled on
+    // (the first of a ②), as a term's en.term carries its headword.
+    if (c.collection === "phrases" && !human) {
+      for (const v of [spoken, written]) {
+        const head = v ? headsOf(v)[0] : undefined;
+        if (head && !sameWording(countedAs(c.collection, entry.data.id, record.en as string), head)) {
+          todo.push(`en を要の部分が ${head} の文にする（今は ${record.en as string}）`);
+        }
       }
     }
 
@@ -419,6 +459,8 @@ function main() {
       ruleSettled: bothUndecided && human ? ruleSettled : null,
       humanNote: human?.note ?? null,
       lean,
+      group,
+      seen,
     });
 
     if (!writeBack) continue;
@@ -443,7 +485,7 @@ function main() {
     } else if (settled?.kind === "reference") {
       flags.push({
         code: "corpus-reference-fallback",
-        note: `コーパスで決まらない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。${c.collection === "symbols" ? "読み" : "見出し"}は ${describeSettled(settled)}。register は主張しない。`,
+        note: `コーパスで決まらない（${group ? `${PHRASE_GROUP_LABEL[group]}で数えた。` : ""}話: ${describe(spoken)} ／ 書: ${describe(written)}）。${c.collection === "symbols" ? "読み" : c.collection === "phrases" ? "要の部分" : "見出し"}は ${describeSettled(settled)}。register は主張しない。`,
         raised: TODAY,
       } as { code: string });
     } else if (settled?.kind === "undecided" && human) {
@@ -458,7 +500,16 @@ function main() {
               ? `コーパスで決まらず、参照では読みを比べられない（${SYMBOL_NOT_READ_IN_REFERENCES[entry.data.id]}。lib.ts SYMBOL_NOT_READ_IN_REFERENCES）（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`
               : c.collection === "symbols"
               ? `コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも読みを 3 件以上使わない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`
-              : `コーパスで決まらない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`,
+              : group === "written"
+                ? `コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも要の部分を 3 件以上使わない（${PHRASE_GROUP_LABEL[group]}で数えた。書: ${describe(written)}）。人間レビューへ。`
+                : `コーパスで決まらない（${group ? `${PHRASE_GROUP_LABEL[group]}で数えた。` : ""}話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`,
+        raised: TODAY,
+      } as { code: string });
+    }
+    if (seen && seen.hits < STUDENT_SEEN) {
+      flags.push({
+        code: "corpus-student-rare",
+        note: `email・discord の要の部分が MICASE の学生の発話に ${STUDENT_SEEN} 件未満（最も多い ${seen.wording} で ${seen.hits} 件）。draft のまま。`,
         raised: TODAY,
       } as { code: string });
     }
@@ -485,8 +536,9 @@ function main() {
   }
 
   // ------------------------------------------------------------- report ---
-  const single = lines.filter((l) => l.spoken.kind === "single" || l.written?.kind === "single");
-  const both = lines.filter((l) => l.spoken.kind === "both" || l.written?.kind === "both");
+  const single = lines.filter((l) => l.spoken?.kind === "single" || l.written?.kind === "single");
+  const both = lines.filter((l) => l.spoken?.kind === "both" || l.written?.kind === "both");
+  const seenLines = lines.filter((l) => l.seen);
   const undecided = lines.filter((l) => l.settled?.kind === "undecided" && !l.human);
   const human = lines.filter((l) => l.human);
   const humanStale = lines.filter((l) => l.humanStale);
@@ -571,6 +623,13 @@ function main() {
     "",
     merges.length ? "| 項目 | 合算先 | 合算した表記 |\n|---|---|---|" : "なし。",
     ...merges.flatMap((l) => l.merges.map((m) => cells(l.key, m.into, m.from.join(" / ")))),
+    "",
+    "## email・discord のフレーズ（MICASE の学生の発話に要の部分が 3 件以上なら likely）",
+    "",
+    "①②③ で判定しない（DECISIONS、Phase 3 フレーズの前の修正 4）。3 件未満は flag corpus-student-rare で draft のまま。",
+    "",
+    seenLines.length ? "| 項目 | 最も多い要の部分 | 件数 | 結果 |\n|---|---|---|---|" : "なし。",
+    ...seenLines.map((l) => cells(l.key, l.seen!.wording, String(l.seen!.hits), l.seen!.hits >= STUDENT_SEEN ? "likely" : "draft")),
     "",
     "## ③ のうち規則で決着したもの",
     "",

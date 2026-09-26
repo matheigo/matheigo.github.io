@@ -39,11 +39,11 @@
       "type": "reference",
       "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
-      "note": "試験の例題。binomial distribution with …（読みを決めた参照）"
+      "note": "試験の例題。binomial distribution with …"
     }
   ],
-  "confidence": "likely",
-  "updated": "2026-09-25",
+  "confidence": "draft",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "b of n": 1
@@ -51,13 +51,13 @@
     "sources": [
       "mit-18.03"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 対象外）。読みは AP Statistics の CED の呼び方 binomial distribution with *（exam）。register は主張しない。",
-      "raised": "2026-09-25"
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも読みを 3 件以上使わない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-26"
     }
   ]
 }

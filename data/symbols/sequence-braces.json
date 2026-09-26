@@ -8,7 +8,7 @@
     },
     {
       "text": "the sequence a n",
-      "register": "spoken"
+      "register": "standard"
     }
   ],
   "spoken_ja": "数列 {aₙ} ／ 数列 a n",
@@ -42,7 +42,7 @@
       "title": "OpenStax Calculus Volume 2"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
@@ -54,12 +54,12 @@
       "khan-ap-calc",
       "yt:blackpenredpen"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、参照では読みを比べられない（the sequence aₙ is written as math in the references。lib.ts SYMBOL_NOT_READ_IN_REFERENCES）（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "読みは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 3 フレーズの前の修正」の 2）。the sequence a sub n ／ the sequence a n。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

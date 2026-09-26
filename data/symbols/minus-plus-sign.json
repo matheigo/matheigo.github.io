@@ -20,15 +20,20 @@
     ]
   },
   "notes": [
-    "∓ は minus or plus と読む。cos(α ± β) = cos α cos β ∓ sin α sin β のように ± と組で使い、上の符号どうし・下の符号どうしを組にする（日本語の「複号同順」）。",
+    "∓ は minus or plus と読む。cos(α ± β) = cos α cos β ∓ sin α sin β のように ± と組で使い、上の符号どうし・下の符号どうしを組にする（日本語の「複号同順」）。OpenStax Calculus Volume 1（1.3 Trigonometric Functions）の公式がこの形で ∓ を使う。",
     "用例コーパスの minus plus は符号の並び（plus minus plus …）で、∓ の読みではない。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "1.3 Trigonometric Functions の公式 cos(α ± β) = cos α cos β ∓ sin α sin β で ∓ を使う"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
@@ -37,12 +42,12 @@
     "sources": [
       "khan-algebra"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも読みを 3 件以上使わない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "読みは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 3 フレーズの前の修正」の 2）。minus or plus。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

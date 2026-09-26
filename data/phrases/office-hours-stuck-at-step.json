@@ -2,17 +2,17 @@
   "id": "office-hours-stuck-at-step",
   "situation": "office-hours",
   "intent": "どこで詰まっているかを伝える",
-  "en": "I follow it up to here, but I don't see how you get from this line to the next one.",
-  "ja": "ここまでは分かるのですが、この行から次の行への変形が分かりません。",
-  "register": "polite",
+  "en": "I'm confused about how you got from this line to the next one.",
+  "ja": "この行から次の行にどうやって変形したのかが分かりません。",
+  "register": "neutral",
   "variants": [
     {
-      "en": "I'm lost at this step.",
-      "register": "casual"
+      "en": "I don't see how you got this line.",
+      "register": "neutral"
     },
     {
-      "en": "Could you walk me through this step?",
-      "register": "polite"
+      "en": "I don't understand how you got this line.",
+      "register": "neutral"
     }
   ],
   "tags": [
@@ -25,16 +25,16 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-10",
+  "updated": "2026-09-25",
   "evidence": {
-    "sources": [],
-    "counted": "2026-09-25"
-  },
-  "flags": [
-    {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
-      "raised": "2026-09-25"
-    }
-  ]
+    "spoken": {
+      "i don't understand how | i do not understand how": 5,
+      "i'm confused | i am confused": 10,
+      "i don't see how | i do not see how": 6
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
 }

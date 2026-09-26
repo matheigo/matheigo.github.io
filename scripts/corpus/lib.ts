@@ -9,6 +9,10 @@
  * What gets committed is counts, source ids and a date.
  */
 
+import { PHRASE_FORMS, PHRASE_SPEAKER } from "./phrase-forms.js";
+
+export { PHRASE_FORMS, PHRASE_SPEAKER };
+
 export type Register = "spoken" | "written";
 
 export interface CorpusDoc {
@@ -22,6 +26,8 @@ export interface CorpusDoc {
   file?: string;
   /** Collections this doc may be counted for; absent means all (MICASE: phrases only). */
   collections?: string[];
+  /** MICASE: the speaker class of the file (student / instructor / other), for the phrases' groups. */
+  speaker?: string;
 }
 
 /** The docs a collection is counted on: MICASE is for phrases only (DECISIONS, Phase 3 記号の前の修正 5). */
@@ -1056,7 +1062,7 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   },
   "half-open-interval": {
     "the half-open interval from a to b": "half-open interval | half open interval",
-    "the interval from a to b, including a but not b": "including * but not *",
+    "from a to b, including a but not b": "including * but not *",
   },
   "implies-arrow": {
     "p implies q": "* implies *",
@@ -1817,43 +1823,57 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
 };
 
 /**
- * Phrases are not counted as whole sentences (DECISIONS, Phase 3 の準備: フレーズの数え方): a sentence
- * never recurs word for word, so "Sorry, could you say that last part again?"
- * is 0 in any corpus. What is counted is the key part that carries the
- * intent, written as a terms verb phrase is ("…" a one-to-three-word blank,
- * inflection folded, "A | B" and "!w" as in TERM_FORMS): phrase id -> the
- * sentence as written in `en` / `variants` -> its key part. The key part is
- * also the key in counts and `evidence`. "" marks a sentence whose key part
- * cannot be told apart from other uses of the same words (a sentence-initial
- * "So"): it is not counted, as a term's uncountable wording goes to pitfalls.
+ * Who says a phrase decides the corpus it is counted on (DECISIONS, Phase 3
+ * フレーズの前の修正 4):
+ *
+ *   student     class-asking, office-hours, group-study, explaining-solution:
+ *               the students' utterances in MICASE only
+ *   instructor  class-listening: the lecture transcripts (MIT OCW, Khan
+ *               Academy, the YouTube channels) and the instructors'
+ *               utterances in MICASE
+ *   written     written-solution, exam: the written corpus (OpenStax, the
+ *               MIT OCW lecture notes), then the references when it is ③
+ *               (settlePhraseReference)
+ *   email       email, discord: not judged ①②③. The key part is looked up
+ *               in the students' utterances in MICASE: STUDENT_SEEN times or
+ *               more, likely; fewer, draft
+ *
+ * An exam phrase said aloud (PHRASE_SPEAKER) goes by its speaker instead.
  */
-export const PHRASE_FORMS: Record<string, Record<string, string>> = {
-  "class-asking-repeat": {
-    "Sorry, could you say that last part again?": "could you say … again | can you say … again | could you say that again | can you say that again",
-    "Could you repeat the last step?": "could you repeat | can you repeat",
-    "Sorry, I missed that.": "i missed that",
-  },
-  // The variants are three different questions, not three ways to ask one (see the Phase 3 prep report).
-  "exam-clarify-instruction": {
-    'Does "simplify" here mean I should rationalize the denominator?': "does … mean i should",
-    "Do you want the answer in exact form or as a decimal?": "in exact form",
-    "Should I show all the steps for this one?": "show all … steps | show all the work | show your work",
-  },
-  "explaining-solution-first-step": {
-    "First I set the two expressions equal, then I solved for x and checked the answer.": "first i",
-    "What I did was set them equal and solve for x.": "what i did was",
-    "I started by setting the two expressions equal to each other.": "i started by | i start by",
-  },
-  "office-hours-stuck-at-step": {
-    "I follow it up to here, but I don't see how you get from this line to the next one.": "i don't see how | i do not see how",
-    "I'm lost at this step.": "i'm lost | i am lost",
-    "Could you walk me through this step?": "walk … through",
-  },
-  "written-solution-therefore": {
-    "Therefore x = 3 is the only solution.": "therefore",
-    "Hence x = 3 is the only solution.": "hence",
-    "So x = 3 is the only solution.": "", // "so" is everywhere; a sentence-initial So cannot be told apart
-  },
+export type PhraseGroup = "student" | "instructor" | "written" | "email";
+
+export const PHRASE_GROUP_OF_SITUATION: Record<string, PhraseGroup> = {
+  "class-asking": "student",
+  "office-hours": "student",
+  "group-study": "student",
+  "explaining-solution": "student",
+  "class-listening": "instructor",
+  "written-solution": "written",
+  exam: "written",
+  email: "email",
+  discord: "email",
+};
+
+/** email / discord: the key part in the MICASE students' utterances this many times or more is likely. */
+export const STUDENT_SEEN = 3;
+
+export function phraseGroup(id: string, situation: string): PhraseGroup {
+  return PHRASE_SPEAKER[id] ?? PHRASE_GROUP_OF_SITUATION[situation] ?? "instructor";
+}
+
+/** The docs a phrase group is counted on (MICASE files carry their speaker class, fetch-micase.ts). */
+export function phraseDocs<T extends { id: string; register: Register; speaker?: string }>(docs: T[], group: PhraseGroup): T[] {
+  if (group === "student" || group === "email") return docs.filter((d) => d.id === "micase" && d.speaker === "student");
+  if (group === "written") return docs.filter((d) => d.register === "written");
+  return docs.filter((d) => d.register === "spoken" && (d.id !== "micase" || d.speaker === "instructor"));
+}
+
+/** What each group is counted on, for the reports. */
+export const PHRASE_GROUP_LABEL: Record<PhraseGroup, string> = {
+  student: "MICASE の学生の発話",
+  instructor: "講義のコーパスと MICASE の教員の発話",
+  written: "書き言葉のコーパスと参照",
+  email: "MICASE の学生の発話（3 件以上で likely）",
 };
 
 /** The wording a candidate is counted and recorded as. */
@@ -2410,13 +2430,17 @@ export function settleUndecided(
   ref: ReferenceHits,
   order: string[],
   minHits = 1,
+  cedMin = 1,
 ): Settled {
   const { mapping, ja, en } = entry;
   const best = (score: (c: string) => number) =>
     order.filter((c) => score(c) > 0).sort((a, b) => score(b) - score(a) || order.indexOf(a) - order.indexOf(b))[0];
   const sum = (by: Record<string, Record<string, number>> | undefined, c: string) =>
     Object.values(by?.[c] ?? {}).reduce((a, b) => a + b, 0);
-  const cedTotal = (c: string) => sum(ref.ced, c) + sum(ref.cedStats, c);
+  // A CED names a wording at cedMin hits or more, per CED (terms: any number; the
+  // readings of symbols and phrases: REFERENCE_NAMED, Phase 3 フレーズの前の修正 3)
+  const inCed = (by: Record<string, Record<string, number>> | undefined, c: string) => (sum(by, c) >= cedMin ? sum(by, c) : 0);
+  const cedTotal = (c: string) => inCed(ref.ced, c) + inCed(ref.cedStats, c);
   const ced = best(cedTotal);
   const borrowed = ja !== undefined && en !== undefined && ja.trim().toLowerCase() === en.trim().toLowerCase();
   const openstax = (c: string) => (ref.openstax[c] ?? 0) + (ref.openstaxTitles[c]?.length ?? 0);
@@ -2498,9 +2522,11 @@ export const SYMBOL_NOT_READ_IN_REFERENCES: Record<string, string> = {
  * references read it where they define or explain it in words ("x ∈ A" is
  * "x is an element of A"). The readings are counted in the references as
  * their patterns (referenceHits with the symbols' matcher), in the tiers of
- * terms - the CEDs (any number), then OpenStax, IM and CK-12 as one tier, then
+ * terms - the CEDs, then OpenStax, IM and CK-12 as one tier, then
  * Nicholson and Levin - and a tier names a reading only when one of its
- * references uses it REFERENCE_NAMED times or more (per reference and per
+ * references uses it REFERENCE_NAMED times or more, a CED too (a CED names a
+ * term's wording at any number, not a reading: DECISIONS, Phase 3 フレーズの
+ * 前の修正 3) (per reference and per
  * reading, the forms of one reading added up, as for terms). Within a tier the
  * reading with the most hits in its references together. Symbols have no
  * mapping, so "no fixed expression" does not apply, and the Wikipedia step
@@ -2513,7 +2539,19 @@ export function settleSymbolReading(id: string, ref: ReferenceHits, order: strin
   // Only the body counts: a section title or an IM glossary headword ("arc") names the
   // concept, it does not read the symbol (Phase 3 記号 バッチ 5)
   const { wikipedia: _w, openstaxTitles: _t, imGlossary: _g, ck12Titles: _c, ...body } = ref;
-  return settleUndecided({}, { spoken: 0, written: 0 }, { ...body, openstaxTitles: {} }, order, REFERENCE_NAMED);
+  return settleUndecided({}, { spoken: 0, written: 0 }, { ...body, openstaxTitles: {} }, order, REFERENCE_NAMED, REFERENCE_NAMED);
+}
+
+/**
+ * The references for a written phrase whose key part the written corpus leaves
+ * undecided (DECISIONS, Phase 3 フレーズの前の修正 4): the tiers of rule 2 -
+ * the CEDs, then OpenStax, IM and CK-12, then Nicholson and Levin - on the body
+ * only, a tier naming a key part one of its references uses REFERENCE_NAMED
+ * times or more (the CEDs too, as for the readings of symbols). No Wikipedia.
+ */
+export function settlePhraseReference(ref: ReferenceHits, order: string[]): Settled {
+  const { wikipedia: _w, openstaxTitles: _t, imGlossary: _g, ck12Titles: _c, ...body } = ref;
+  return settleUndecided({}, { spoken: 0, written: 0 }, { ...body, openstaxTitles: {} }, order, REFERENCE_NAMED, REFERENCE_NAMED);
 }
 
 // ------------------------- 見出しの規則: 1 ソース頼みの話し言葉 (中学の単元 2)

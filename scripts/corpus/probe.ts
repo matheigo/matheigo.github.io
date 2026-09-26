@@ -20,6 +20,12 @@
  *               inflection folded, "…" = a one-to-three-word blank
  *   --phrases   count on the phrases' corpus (adds MICASE, which terms and
  *               symbols never see)
+ *   --group g   count phrases on the words of whoever says them (lib.ts
+ *               phraseDocs; DECISIONS, Phase 3 フレーズの前の修正 4): student
+ *               (MICASE students), instructor (lectures and MICASE
+ *               instructors), written (the written corpus; with --decide a
+ *               written ③ is settled on the references), email (MICASE
+ *               students, 3 or more is likely). Implies --phrases
  *   --contexts [n]  also print n contexts (default 10) of each wording per
  *               register, picked at even steps through its hits (lib.ts
  *               sampleTermContexts). For the check of an everyday-word
@@ -54,7 +60,12 @@ import {
   sampleTermContexts,
   sourceWeights,
   forCollection,
+  matcherFor,
+  phraseDocs,
+  settlePhraseReference,
+  STUDENT_SEEN,
   VARIANTS,
+  type PhraseGroup,
   type CorpusDoc,
   type Verdict,
   WIKIPEDIA_NOT_SAME,
@@ -73,7 +84,8 @@ interface Cache {
   docs: CorpusDoc[];
 }
 
-const RULES = VARIANTS.map(([re, to]) => `${re.source}/${re.flags}->${to}`).join("\n");
+// "speaker": the cache keeps the MICASE files' speaker class since Phase 3 フレーズの前の修正 4.
+const RULES = ["speaker", ...VARIANTS.map(([re, to]) => `${re.source}/${re.flags}->${to}`)].join("\n");
 
 function load(): CorpusDoc[] {
   const mtime = fs.statSync(MANIFEST).mtimeMs;
@@ -91,6 +103,7 @@ function load(): CorpusDoc[] {
       file: m.file,
       text: normalize(fs.readFileSync(path.join(CORPUS, m.file), "utf8")),
       ...(m.collections ? { collections: m.collections } : {}),
+      ...(m.speaker ? { speaker: m.speaker } : {}),
     }));
   const deduped = dedupe(docs).docs;
   fs.writeFileSync(CACHE, JSON.stringify({ manifestMtime: mtime, rules: RULES, docs: deduped } satisfies Cache));
@@ -167,10 +180,49 @@ function printContexts(docs: CorpusDoc[], wording: string, n: number) {
   }
 }
 
-function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
+/** --decide --group: a phrase's verdict as corpus:decide reaches it for that group. */
+function probePhrase(
+  docs: CorpusDoc[],
+  t: ReturnType<typeof countEntry>,
+  block: string[],
+  group: PhraseGroup,
+  weights: Record<string, number>,
+  refs: ReturnType<typeof loadReferences>,
+  openstax: string[],
+  titles: string[],
+) {
+  const register = group === "written" ? "written" : "spoken";
+  const counts = t[register];
+  const raw = Object.entries(counts)
+    .map(([c, by]) => [c, Object.values(by).reduce((a, b) => a + b, 0)] as const)
+    .sort((a, b) => b[1] - a[1]);
+  const rawLine = raw.map(([c, n]) => `${c} ${n}`).join(", ");
+  if (group === "email") {
+    const top = raw[0]?.[1] ?? 0;
+    console.log(`  ${top >= STUDENT_SEEN ? "likely" : "draft"} (most-used key part ${top})   {${rawLine}}`);
+    return;
+  }
+  const v = decideRobust(counts, weights, register);
+  console.log(`  ${register === "spoken" ? "話" : "書"} ${verdict(v)}   {${rawLine}}`);
+  if (v.kind === "undecided" && group === "written") {
+    const ref = referenceHits(block, refs.ced, openstax, titles, refs, matcherFor("phrases"));
+    const s = settlePhraseReference(ref, block);
+    const per = block
+      .map((c) => {
+        const n = (by?: Record<string, Record<string, number>>) => Object.values(by?.[c] ?? {}).reduce((a, b) => a + b, 0);
+        return `${c}: CED ${n(ref.ced) + n(ref.cedStats)} OS ${ref.openstax[c] ?? 0} IM ${n(ref.im)} CK ${n(ref.ck12)} Ni ${n(ref.nicholson)} Le ${n(ref.levin)}`;
+      })
+      .join("; ");
+    console.log(`  refs ${per}`);
+    console.log(`  ③ -> ${s.kind === "reference" ? `${REFERENCE_NAMES[s.by]} ${s.head} (${s.where.slice(0, 3).join(", ")})` : "③ のまま"}`);
+  }
+}
+
+function probeDecide(docs: CorpusDoc[], blocks: string[][], group: PhraseGroup | null = null) {
   const words: Record<string, number> = {};
   for (const r of balance(docs).rows) words[r.source] = r.words;
   const weights = sourceWeights(words);
+  // (with --group the docs are already that group's: the weights are the group's)
   const refs = loadReferences();
   const openstax = docs.filter((d) => d.id.startsWith("openstax-")).map((d) => d.text);
   const manifest = JSON.parse(fs.readFileSync(MANIFEST, "utf8")) as ManifestEntry[];
@@ -185,8 +237,12 @@ function probeDecide(docs: CorpusDoc[], blocks: string[][]) {
     const id = raw.find((l) => l.startsWith("@id"))?.split(/\s+/)[1];
     const projectTranslation = raw.some((l) => l.startsWith("@translation"));
     const block = raw.filter((l) => !l.startsWith("@"));
-    const t = countEntry(docs, "terms", block, block[0]);
+    const t = countEntry(docs, group ? "phrases" : "terms", block, block[0]);
     console.log(`# ${block[0]}`);
+    if (group) {
+      probePhrase(docs, t, block, group, weights, refs, openstax, titles);
+      continue;
+    }
     const verdicts: Verdict[] = [];
     for (const register of ["spoken", "written"] as const) {
       const counts = t[register];
@@ -243,6 +299,8 @@ function main() {
     return;
   }
   const args = process.argv.slice(2).filter((a) => a !== "--");
+  const groupAt = args.indexOf("--group");
+  const group = groupAt >= 0 ? (args.splice(groupAt, 2)[1] as PhraseGroup) : null;
   const literal = args.includes("--literal");
   const decideMode = args.includes("--decide");
   const ctxAt = args.indexOf("--contexts");
@@ -259,8 +317,14 @@ function main() {
     return;
   }
 
-  // MICASE is for phrases only (lib.ts forCollection): --phrases counts on the phrases' corpus.
-  const docs = forCollection(load(), args.includes("--phrases") ? "phrases" : "terms");
+  // MICASE is for phrases only (lib.ts forCollection): --phrases counts on the phrases' corpus,
+  // --group on the words of whoever says the phrase (lib.ts phraseDocs).
+  if (group && !["student", "instructor", "written", "email"].includes(group)) {
+    console.log("--group is one of student, instructor, written, email");
+    return;
+  }
+  const all = forCollection(load(), args.includes("--phrases") || group ? "phrases" : "terms");
+  const docs = group ? phraseDocs(all, group) : all;
   if (decideMode) {
     const blocks: string[][] = [[]];
     for (const line of lines.map((l) => l.trim())) {
@@ -270,7 +334,7 @@ function main() {
       }
       blocks[blocks.length - 1].push(line);
     }
-    probeDecide(docs, blocks.filter((b) => b.length));
+    probeDecide(docs, blocks.filter((b) => b.length), group);
     return;
   }
   const count = literal ? countPhrase : countTerm;

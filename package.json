@@ -20,6 +20,7 @@
     "corpus:count": "tsx scripts/corpus/count.ts",
     "corpus:decide": "tsx scripts/corpus/decide.ts",
     "corpus:probe": "tsx scripts/corpus/probe.ts",
+    "corpus:scenes": "tsx scripts/corpus/micase-scenes.ts",
     "build:index": "tsx scripts/build-index.ts",
     "prebuild": "pnpm run validate && pnpm run build:index",
     "build": "astro build",

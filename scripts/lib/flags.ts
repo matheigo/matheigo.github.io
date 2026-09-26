@@ -15,6 +15,7 @@ export const PROBLEM_FLAGS = new Set([
   "corpus-undecided", // ③ that neither the rules nor the human have settled
   "corpus-register-mismatch", // the corpus contradicts the entry's register
   "corpus-auto-only", // a symbol reading backed by auto captions only
+  "corpus-student-rare", // an email / discord phrase whose key part the MICASE students use fewer than 3 times
   "langlink-missing", // crosscheck: the ja article has no en langlink
   "langlink-mismatch", // crosscheck: the en langlink is not the entry's term
   "draft-reason", // why the entry is still a draft (no source)

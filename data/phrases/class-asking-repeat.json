@@ -2,18 +2,18 @@
   "id": "class-asking-repeat",
   "situation": "class-asking",
   "intent": "聞き取れなかったので、もう一度言ってほしい",
-  "en": "Sorry, could you say that last part again?",
-  "ja": "すみません、最後のところをもう一度お願いできますか。",
+  "en": "Sorry, could you say that again?",
+  "ja": "すみません、もう一度言っていただけますか。",
   "register": "polite",
   "variants": [
     {
-      "en": "Could you repeat the last step?",
+      "en": "Could you repeat that last part?",
       "register": "polite"
     },
     {
-      "en": "Sorry, I missed that.",
+      "en": "Sorry, what did you say?",
       "register": "casual",
-      "note": "短く済ませたいとき。"
+      "note": "聞き返しの短い形。先生にも使うが、くだけた言い方。"
     }
   ],
   "tags": [
@@ -26,16 +26,16 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "evidence": {
-    "sources": [],
-    "counted": "2026-09-25"
-  },
-  "flags": [
-    {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
-      "raised": "2026-09-25"
-    }
-  ]
+    "spoken": {
+      "say … again": 15,
+      "what did you say": 9,
+      "could you repeat | can you repeat": 6
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
 }

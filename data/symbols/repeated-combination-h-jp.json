@@ -3,16 +3,8 @@
   "latex": "{}_{n}\\mathrm{H}_{r}",
   "spoken_en": [
     {
-      "text": "n plus r minus one choose r",
-      "register": "standard"
-    },
-    {
-      "text": "n multichoose r",
-      "register": "spoken"
-    },
-    {
       "text": "the number of combinations with repetition of n things taken r at a time",
-      "register": "spoken"
+      "register": "standard"
     }
   ],
   "spoken_ja": "エイチ n r ／ 重複組合せの数",
@@ -29,7 +21,8 @@
     "us": []
   },
   "notes": [
-    "ₙHᵣ は日本の教科書の記号で、英語では ₙ₊ᵣ₋₁Cᵣ と二項係数で書き、n plus r minus one choose r と読む。"
+    "ₙHᵣ は日本の教科書の記号で、米国にこの記号はない。読みは the number of combinations with repetition of n things taken r at a time。",
+    "米国では C(n + r − 1, r) と書く（repeated-combination-notation）。"
   ],
   "sources": [
     {
@@ -40,23 +33,24 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction (4th edition)",
       "url": "https://discrete.openmathbooks.org/pdfs/dmoi4.pdf",
       "note": "3.5 Stars and Bars"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「重複組合せ」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%87%8D%E8%A4%87%E7%B5%84%E5%90%88%E3%81%9B",
+      "note": "H の記号"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-25",
   "evidence": {
-    "spoken": {
-      "plus * minus one choose *": 1
-    },
-    "sources": [
-      "mit-6.042"
-    ],
-    "counted": "2026-09-25"
+    "sources": [],
+    "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも読みを 3 件以上使わない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "読みは人間が決めた（2026-09-25。docs/DECISIONS.md「Phase 3 フレーズの前の修正」の 2）。the number of combinations with repetition of n things taken r at a time。米国にこの記号はない。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]
