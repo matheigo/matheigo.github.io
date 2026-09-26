@@ -60,7 +60,7 @@
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -73,6 +73,11 @@
       "code": "corpus-no-fixed-expression",
       "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
       "raised": "2026-09-25"
+    },
+    {
+      "code": "audit-human",
+      "note": "Phase 5 監査（2026-09-26）で判断がつかない: phase4-report G-2 の語（監査の順番ではバッチ 6 の外）。英語の見出し points of concurrency は用例コーパスにも参照（CED・OpenStax・IM・CK-12）にも出てこず、米国の用語かを資料で確かめられない。説明の訳（英語の用語ではない）の印のまま points of concurrency を見出しにするか、5 つの名前を並べた説明を見出しにするか、人間が決める。人間レビューへ。",
+      "raised": "2026-09-26"
     }
   ]
 }

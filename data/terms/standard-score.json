@@ -64,7 +64,7 @@
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -77,6 +77,11 @@
       "code": "corpus-no-fixed-expression",
       "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
       "raised": "2026-09-25"
+    },
+    {
+      "code": "audit-human",
+      "note": "Phase 5 監査（2026-09-26）で判断がつかない: phase4-report G-2 の語（監査の順番ではバッチ 6 の外）。日本語版 Wikipedia「偏差値」は英語名を T-score とする（平均 50・標準偏差 10 の換算）。説明の訳の hensachi のままにするか、T-score（t 統計量とまぎれる）を見出しや variant にして mapping を exact ／ near にするか、人間が決める。人間レビューへ。",
+      "raised": "2026-09-26"
     }
   ]
 }
