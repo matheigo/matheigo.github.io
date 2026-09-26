@@ -28,6 +28,11 @@
         "additionalProperties": false
       }
     },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "使うときの注意・米国での扱い（terms の pitfalls、symbols の notes と同じ役割）。"
+    },
     "tags": { "type": "array", "items": { "type": "string" } },
     "tts_text": { "type": "string" },
     "audio": { "type": "string" },

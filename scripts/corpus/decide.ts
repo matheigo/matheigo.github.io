@@ -84,6 +84,7 @@ import {
   type Verdict,
 } from "./lib.js";
 import type { CountsFile, EntryCounts } from "./count.js";
+import { loadMseCache, mseLeader, needsMse, MSE_GROUPS } from "./mse.js";
 
 const WRITE = process.argv.includes("--write");
 const argAfter = (flag: string) => {
@@ -184,6 +185,8 @@ interface Line {
   group: PhraseGroup | null;
   /** email / discord phrases: the most-used key part and its hits in the MICASE students' utterances. */
   seen: { wording: string; hits: number } | null;
+  /** Student / email phrases short in MICASE: the leading key part on Math Stack Exchange (mse.ts). */
+  mse: ReturnType<typeof mseLeader>;
 }
 
 const NO_FIXED_NOTE = "英語に決まった言い方がない";
@@ -234,6 +237,8 @@ function leanBy(l: LeanHead): string {
 }
 
 function describeSettled(s: Settled): string {
+  if (s.kind === "attested" && s.by === "mse")
+    return `MICASE の学生の発話では首位が ${PHRASE_ATTESTED} 件未満（${s.micase?.wording ? `${s.micase.wording} ${s.micase.hits} 件` : "0 件"}）。Math Stack Exchange の質問で首位の要の部分 ${s.head}（${s.hits} 件。${PHRASE_ATTESTED} 件以上）`;
   if (s.kind === "attested") return `話者のコーパスで首位の要の部分 ${s.head}（${s.hits} 件。${PHRASE_ATTESTED} 件以上）`;
   if (s.kind === "no-fixed-expression") return `英語に決まった言い方がない（話 ${s.spoken} 件 ／ 書 ${s.written} 件）`;
   if (s.kind === "reference") {
@@ -267,6 +272,7 @@ function main() {
   );
 
   const lines: Line[] = [];
+  const mseCache = loadMseCache();
 
   // Which entries --write may touch. No --units / --ids: all of them.
   const scope = new Set<string>(IDS);
@@ -319,6 +325,13 @@ function main() {
             .map(([wording, hits]) => ({ wording, hits }))[0] ?? { wording: countedAs(c.collection, entry.data.id, record.en as string), hits: 0 }
         : null;
 
+    // Math Stack Exchange (mse.ts; DECISIONS, Phase 3 フレーズ 3 の前の修正 1): a student or email / discord
+    // phrase that the MICASE students use too seldom is looked up in its questions - never in ①②.
+    const mse =
+      group !== null && MSE_GROUPS.includes(group) && needsMse(group, c.spoken, w)
+        ? mseLeader(candidatesOf(c.collection, record), mseCache)
+        : null;
+
     // ③: settle it where the rules allow (lib.ts settleUndecided). Only terms
     // carry a mapping and are counted against the references.
     const bothUndecided =
@@ -344,6 +357,8 @@ function main() {
           ? settleSymbolReading(entry.data.id, c.reference ?? emptyReference(), candidatesOf(c.collection, record))
           : below && below.wording && below.hits >= PHRASE_ATTESTED
             ? { kind: "attested", head: below.wording, hits: below.hits }
+            : group === "student" && mse && mse.hits >= PHRASE_ATTESTED
+              ? { kind: "attested", head: mse.wording, hits: mse.hits, by: "mse", micase: below ? { wording: below.wording, hits: below.hits } : undefined }
             : group === "written"
               ? settlePhraseReference(c.reference ?? emptyReference(), candidatesOf(c.collection, record))
               : { kind: "undecided" };
@@ -478,6 +493,7 @@ function main() {
       lean,
       group,
       seen,
+      mse,
     });
 
     if (!writeBack) continue;
@@ -531,7 +547,13 @@ function main() {
         raised: TODAY,
       } as { code: string });
     }
-    if (seen && seen.hits < STUDENT_SEEN) {
+    if (seen && seen.hits < STUDENT_SEEN && mse && mse.hits >= STUDENT_SEEN) {
+      flags.push({
+        code: ATTESTED_ONLY,
+        note: `email・discord の要の部分が MICASE の学生の発話に ${STUDENT_SEEN} 件未満（最も多い ${seen.wording} で ${seen.hits} 件）。Math Stack Exchange の質問で ${mse.wording} が ${mse.hits} 件（${STUDENT_SEEN} 件以上）なので likely。`,
+        raised: TODAY,
+      } as { code: string });
+    } else if (seen && seen.hits < STUDENT_SEEN) {
       flags.push({
         code: "corpus-student-rare",
         note: `email・discord の要の部分が MICASE の学生の発話に ${STUDENT_SEEN} 件未満（最も多い ${seen.wording} で ${seen.hits} 件）。draft のまま。`,
@@ -564,6 +586,8 @@ function main() {
   const single = lines.filter((l) => l.spoken?.kind === "single" || l.written?.kind === "single");
   const both = lines.filter((l) => l.spoken?.kind === "both" || l.written?.kind === "both");
   const seenLines = lines.filter((l) => l.seen);
+  const mseLines = lines.filter((l) => l.mse);
+  const mseMissing = mseLines.filter((l) => l.mse!.missing.length);
   const undecided = lines.filter((l) => l.settled?.kind === "undecided" && !l.human);
   const human = lines.filter((l) => l.human);
   const humanStale = lines.filter((l) => l.humanStale);
@@ -655,7 +679,31 @@ function main() {
     "①②③ で判定しない（DECISIONS、Phase 3 フレーズの前の修正 4）。3 件未満は flag corpus-student-rare で draft のまま。",
     "",
     seenLines.length ? "| 項目 | 最も多い要の部分 | 件数 | 結果 |\n|---|---|---|---|" : "なし。",
-    ...seenLines.map((l) => cells(l.key, l.seen!.wording, String(l.seen!.hits), l.seen!.hits >= STUDENT_SEEN ? "likely" : "draft")),
+    ...seenLines.map((l) =>
+      cells(
+        l.key,
+        l.seen!.wording,
+        String(l.seen!.hits),
+        l.seen!.hits >= STUDENT_SEEN ? "likely" : l.mse && l.mse.hits >= STUDENT_SEEN ? `likely（Math Stack Exchange: ${l.mse.wording} ${l.mse.hits}）` : "draft",
+      ),
+    ),
+    "",
+    "## Math Stack Exchange で数えたフレーズ（学生の場面・email・discord で、MICASE の学生の発話では足りないもの）",
+    "",
+    `件数だけを使う（検索 API の完全一致の件数。質問の本文は取らない）。${PHRASE_ATTESTED} 件以上なら likely（学生の場面は flag corpus-attested-only）。①② の件数の競い合いには使わない（DECISIONS、Phase 3 フレーズ 3 の前の修正 1）。`,
+    "",
+    mseLines.length ? "| 項目 | 要の部分ごとの件数 | 首位 | 結果 |\n|---|---|---|---|" : "なし。",
+    ...mseLines.map((l) =>
+      cells(
+        l.key,
+        l.mse!.all.map((a) => `${a.wording} ${a.hits}`).join(" ／ "),
+        `${l.mse!.wording} ${l.mse!.hits}`,
+        l.mse!.hits >= PHRASE_ATTESTED ? "likely" : "3 件未満",
+      ),
+    ),
+    ...(mseMissing.length
+      ? ["", `**キャッシュに無い検索がある（pnpm corpus:fetch:mse を回す）**: ${mseMissing.map((l) => `${l.key}（${l.mse!.missing.join("、")}）`).join("、")}`]
+      : []),
     "",
     `## フレーズで、どの要の部分も 10 件に届かず、首位が話者のコーパスに ${PHRASE_ATTESTED} 件以上のもの（flag corpus-attested-only）`,
     "",
@@ -664,7 +712,7 @@ function main() {
     attestedLines.length ? "| 項目 | 首位の要の部分 | 件数 | 数えたコーパス |\n|---|---|---|---|" : "なし。",
     ...attestedLines.map((l) => {
       const s = l.settled as Extract<Settled, { kind: "attested" }>;
-      return cells(l.key, s.head, String(s.hits), l.group ? PHRASE_GROUP_LABEL[l.group] : "");
+      return cells(l.key, s.head, String(s.hits), s.by === "mse" ? "Math Stack Exchange の質問（MICASE の学生の発話では 3 件未満）" : l.group ? PHRASE_GROUP_LABEL[l.group] : "");
     }),
     "",
     "## ③ のうち規則で決着したもの",
@@ -733,7 +781,7 @@ function main() {
       .join(", ")}`,
   );
   console.log(
-    `single ${single.length}, both ${both.length}, no-fixed ${noFixed.length}, reference ${byReference.length}, attested ${attestedLines.length}, human-settled ${human.length}, undecided ${undecided.length}, mismatch ${mismatched.length}, merges ${merges.length}, one-source ${oneSource.length}, spoken-lean ${leaning.length}, entry todo ${todos.length}`,
+    `single ${single.length}, both ${both.length}, no-fixed ${noFixed.length}, reference ${byReference.length}, attested ${attestedLines.length} (mse ${mseLines.filter((l) => l.mse!.hits >= PHRASE_ATTESTED).length}, mse missing ${mseMissing.length}), human-settled ${human.length}, undecided ${undecided.length}, mismatch ${mismatched.length}, merges ${merges.length}, one-source ${oneSource.length}, spoken-lean ${leaning.length}, entry todo ${todos.length}`,
   );
   if (WRITE) console.log(`wrote ${writtenBack.length} entr${writtenBack.length === 1 ? "y" : "ies"} back to data/`);
   console.log(`report -> audits/corpus-${TODAY}.md`);

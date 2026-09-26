@@ -2,13 +2,13 @@
   "id": "class-asking-another-example",
   "situation": "class-asking",
   "intent": "例題をもう 1 つやってほしいと頼む",
-  "en": "Could you do another example?",
+  "en": "Can you show us one more?",
   "ja": "例をもう 1 つやってもらえますか。",
-  "register": "polite",
+  "register": "neutral",
   "variants": [
     {
-      "en": "Can you show us one more?",
-      "register": "neutral"
+      "en": "Could you do another example?",
+      "register": "polite"
     }
   ],
   "tags": [
@@ -20,7 +20,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "sources": [],
@@ -28,8 +28,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。0 件）。人間レビューへ。",
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で首位の要の部分 do one more | show us one more | go through one more（14 件。3 件以上）。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

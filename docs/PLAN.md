@@ -217,6 +217,8 @@ schema/         terms.schema.json symbols.schema.json ...
 
 `situation` の初期値: `class-listening / class-asking / office-hours / explaining-solution / written-solution / exam / email / group-study / discord`。
 
+任意項目 `notes`（文字列の配列）: 使うときの注意・米国での扱い（terms の `pitfalls`、symbols の `notes` と同じ役割。2026-09-26 追加）。
+
 ### 5.4 conventions（日米慣習差）
 
 ```json
@@ -660,6 +662,7 @@ OpenStax *Calculus* Vol 1–3、*Precalculus*、*Algebra and Trigonometry*、*In
 3. **count**: 各エントリの候補表現（`en.term`、`en.alt`、`collocations`、`spoken_en`、`phrases.en`）を正規表現で数える。前後 8 語の文脈は一時ファイルに出す（レビュー用、コミットしない）。
    phrases は文を丸ごと数えず、要の部分を terms の動詞句と同じ規則（「…」は 1〜3 語の空き）で数える（`scripts/corpus/lib.ts` の `PHRASE_FORMS`。2026-09-25 追加）。
    phrases は場面の話者のコーパスで数える: 学生が言う場面（class-asking・office-hours・group-study・explaining-solution）は MICASE の学生の発話だけ、先生が言う場面（class-listening）は講義のコーパスと MICASE の教員の発話、written-solution・exam は書き言葉のコーパスと参照（③ なら参照の段で、1 つの参照が 3 件以上使う要の部分）、email・discord は ①②③ で判定せず、要の部分が MICASE の学生の発話に 3 件以上あれば likely（`scripts/corpus/lib.ts` の `phraseGroup`。2026-09-25 追加）。
+   学生の場面と email・discord で MICASE の学生の発話が 3 件未満のものは、Math Stack Exchange の質問の件数（検索 API の完全一致。件数だけ）で 3 件以上なら likely（`scripts/corpus/mse.ts`。①② には使わない。2026-09-26 追加。docs/SOURCES.md）。
 4. **decide**: 頻度比で `register` を決めるルール。例: spoken コーパスで 3:1 以上ならその表現を spoken の見出しに、written で 3:1 以上なら written の見出しに。両方で閾値未満 or 総件数 10 未満は **「コーパスで判断不能」フラグ** → 人間レビュー行き。
    話し言葉の首位が 1 ソース頼み（抜くと ③ か別の候補が首位）で、書き言葉（①）か CED が別の言い方で決まっているときは、書き言葉・CED の言い方を見出しにし、話し言葉の言い方は spoken の variant にする（2026-09-25 追加。STYLE 原則 1）。
 5. **report**: `audits/corpus-YYYY-MM-DD.md` に、判断が変わった語・新たに見つかった言い回し（辞典にない高頻度表現）を列挙。**辞典に無い高頻度表現の発見** がこの仕組みの副産物で、Phase 1 の台帳の抜けを埋める。

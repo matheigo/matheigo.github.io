@@ -2,7 +2,7 @@
   "id": "class-asking-simplify-further",
   "situation": "class-asking",
   "intent": "答えをさらに簡単にする必要があるか、これで最終的な答えかを聞く",
-  "en": "Do we need to simplify further, or is that the final answer?",
+  "en": "Do we need to simplify this further?",
   "ja": "これ以上簡単にする必要はありますか。これで答えですか。",
   "register": "neutral",
   "variants": [
@@ -20,11 +20,11 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "spoken": {
-      "simplify further | simplify it further | simplify it more | simplify any further | simplify that further | simplify more": 1
+      "simplify further | simplify it further | simplify this further | simplify it more | simplify any further | simplify that further | simplify more": 1
     },
     "sources": [
       "micase"
@@ -33,8 +33,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。simplify further | simplify it further | simplify it more | simplify any further | simplify that further | simplify more 1 件）。人間レビューへ。",
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（simplify further | simplify it further | simplify this further | simplify it more | simplify any further | simplify that further | simplify more 1 件）。Math Stack Exchange の質問で首位の要の部分 simplify further | simplify it further | simplify this further | simplify it more | simplify any further | simplify that further | simplify more（716 件。3 件以上）。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

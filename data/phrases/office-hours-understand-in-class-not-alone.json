@@ -2,10 +2,14 @@
   "id": "office-hours-understand-in-class-not-alone",
   "situation": "office-hours",
   "intent": "授業では分かるのに、一人で解くと手が止まることを相談する",
-  "en": "I understand it when you do it in class, but I get stuck when I try it on my own.",
+  "en": "I understand it in class, but I get stuck when I try it on my own.",
   "ja": "授業で先生が解くと分かるのに、自分でやると手が止まります。",
   "register": "neutral",
   "variants": [
+    {
+      "en": "I can follow it in class, but I can't do it on my own.",
+      "register": "neutral"
+    },
     {
       "en": "I keep getting stuck on the homework.",
       "register": "neutral"
@@ -20,7 +24,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "spoken": {
@@ -34,8 +38,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost 2 件）。人間レビューへ。",
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost 2 件）。Math Stack Exchange の質問で首位の要の部分 get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost（33579 件。3 件以上）。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

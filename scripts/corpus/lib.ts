@@ -2455,8 +2455,12 @@ export function highSchoolHits(ref: ReferenceHits, order: string[]): { ced: numb
 export type Settled =
   | { kind: "no-fixed-expression"; spoken: number; written: number }
   | { kind: "reference"; by: ReferenceBy; head: string; where: string[] }
-  /** A phrase whose leading key part its speakers use PHRASE_ATTESTED times or more (phraseBelowFloor). */
-  | { kind: "attested"; head: string; hits: number }
+  /**
+   * A phrase whose leading key part its speakers use PHRASE_ATTESTED times or more (phraseBelowFloor);
+   * by "mse": a student phrase whose leader in the MICASE students' utterances (`micase`) falls short and
+   * whose leading key part is asked that often on Math Stack Exchange (mse.ts).
+   */
+  | { kind: "attested"; head: string; hits: number; by?: "mse"; micase?: { wording: string | null; hits: number } }
   | { kind: "undecided" };
 
 /**

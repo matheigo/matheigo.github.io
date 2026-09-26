@@ -87,6 +87,7 @@ export interface Phrase {
   ja: string;
   register: string;
   variants?: { en: string; register: string; note?: string }[];
+  notes?: string[];
   tags?: string[];
   sources: Source[];
   confidence: "draft" | "likely" | "verified";

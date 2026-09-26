@@ -2,7 +2,7 @@
   "id": "office-hours-hint-not-the-answer",
   "situation": "office-hours",
   "intent": "答えそのものではなく、ヒントだけほしいと頼む",
-  "en": "Could you give me a hint without giving away the answer?",
+  "en": "Could you give me a hint instead of the answer?",
   "ja": "答えではなく、ヒントだけいただけますか。",
   "register": "polite",
   "variants": [
@@ -20,7 +20,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "spoken": {
@@ -33,8 +33,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。a hint | any hints | a little hint | some hints 2 件）。人間レビューへ。",
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（a hint | any hints | a little hint | some hints 2 件）。Math Stack Exchange の質問で首位の要の部分 a hint | any hints | a little hint | some hints（42142 件。3 件以上）。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

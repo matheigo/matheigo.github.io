@@ -82,6 +82,22 @@ count.ts・decide.ts・probe.ts が terms・symbols の件数と重みから外�
 - 取り込んだもの（2026-09-25）: 152 書き起こし・1,796,311 語（CHAT の記号を除いた語数。Manual の 1,695,540 語とは数え方が違う）
 - ソースの重み（1 ソース 25% まで）は MICASE を 1 ソースとして phrases にだけ当てる。MICASE のマニュアル（https://ca.talkbank.org/access/0docs/MICASE.pdf）は公開されている
 
+### 学生の言い方の件数に足した Math Stack Exchange（2026-09-26）
+
+参照でも用例コーパスでもなく、**phrases の学生の場面（class-asking・office-hours・group-study・exam の学生の質問）と email・discord の件数だけ**に使う
+（terms・symbols には使わない。DECISIONS「Phase 3 フレーズ 3 の前の修正」1）。MICASE の学生の発話で首位の要の部分が 3 件未満のときに、質問の件数で「学生が実際にそう書く」ことを確かめる。①②（件数の競い合い）には使わない。
+
+| id | 資料 | ライセンス | 取得元 | 使うもの |
+|---|---|---|---|---|
+| math-stack-exchange | Mathematics Stack Exchange（https://math.stackexchange.com/） | 投稿は **CC BY-SA 4.0**（Stack Exchange の利用規約）。**使うのは件数だけ**で、本文は取らない・写さない | Stack Exchange API 2.3 の /search/advanced（`site=math`、`q` は要の部分を引用符で囲んだ完全一致、`filter=!9n30I5cCu9fW` は total と quota だけを返す）。API キーは使わない（1 IP 1 日 300 リクエスト） | 検索の件数（質問の数）と取得日 |
+
+- 取り方: `pnpm corpus:count` の後に `pnpm corpus:fetch:mse`（`-- --dry` で検索する語の一覧だけ）。要るフレーズ（mse.ts `needsMse`）の要の部分を選択肢ごとに 1 回ずつ検索する。
+  タイムアウト 20 秒・リトライ 3 回、進捗は done/total。件数は `scripts/corpus/mse-counts.json`（件数と日付だけなのでコミットする）にキャッシュし、再実行は足りない検索だけを送る。
+  1 日の上限に届いたら止まるので、翌日に同じコマンドを回すとキャッシュから続ける
+- 完全一致で語形変化はまとめない。「A | B」は選択肢ごとの件数を足す（1 つの質問に 2 つあれば 2 回数える）。「!w」は外して数え、「…」の空きの選択肢は数えない。
+  数学の質問のサイトでは語がほとんど別の意味になる選択肢（scroll up、more slowly、have a second ほか）は検索しない（mse.ts `MSE_SKIP`）
+- 本文を取らないので、件数に別の意味が混じっていても文脈で確かめられない。レポートの怪しい点に書く
+
 ### 注意
 
 - **AP Statistics の CED は 2026 年版で 5 単元**（1 探索的データ分析とデータの集め方、2 確率・確率変数・確率分布、3 カテゴリデータの推測、4 量的データの推測、5 回帰）。

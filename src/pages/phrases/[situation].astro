@@ -47,6 +47,7 @@ const all = [...new Set(phrases.map((p) => p.situation))];
           ))}
         </dl>
       ) : null}
+      {p.notes?.length ? <ul class="plain">{p.notes.map((n) => <li>{n}</li>)}</ul> : null}
     </section>
   ))}
 </Base>

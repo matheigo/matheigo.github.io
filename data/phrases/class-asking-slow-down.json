@@ -2,15 +2,9 @@
   "id": "class-asking-slow-down",
   "situation": "class-asking",
   "intent": "説明が速すぎるので、ゆっくり話してほしい",
-  "en": "Could you slow down a bit?",
+  "en": "Could you slow down a little?",
   "ja": "もう少しゆっくりお願いできますか。",
   "register": "polite",
-  "variants": [
-    {
-      "en": "Could you go over that a little more slowly?",
-      "register": "polite"
-    }
-  ],
   "tags": [
     "asking",
     "listening"
@@ -20,7 +14,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "sources": [],
@@ -28,8 +22,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。0 件）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "要の部分は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 フレーズ 3 の前の修正」の 3）。Could you slow down a little?。Math Stack Exchange でも 3 件未満。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

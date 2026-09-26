@@ -406,23 +406,21 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "class-asking-go-back": {
     "Could you go back to the previous slide?": "could you go back | can you go back | go back to the previous | go back to the last slide | go back a slide",
-    "Can you scroll back up?": "scroll back up | scroll up",
   },
   "class-asking-slow-down": {
-    "Could you slow down a bit?": "slow down a little | slow down a bit | could you slow down | can you slow down",
-    "Could you go over that a little more slowly?": "more slowly | a little slower | a bit slower",
+    "Could you slow down a little?": "slow down a little | slow down a bit | could you slow down | can you slow down",
   },
   "class-asking-i-got-a-different-answer": {
-    "I got a different answer.": "got a different answer | got something different | got a different number | get a different answer",
     "I got 8 — did I do something wrong?": "did i do something wrong | what did i do wrong | where did i go wrong | what am i doing wrong",
+    "I got a different answer.": "got a different answer | got something different | got a different number | get a different answer",
   },
   "class-asking-which-problems": {
-    "Which problems are for homework?": "which problems | what problems | which questions are",
+    "Which problems are we supposed to do?": "which problems | what problems | which questions are",
     "Was that odds only?": "odds only | just the odds | only the odd | odd numbered | odd-numbered",
   },
   "class-asking-when-is-it-due": {
-    "When is it due?": "when is it due | when is that due | when's it due | when is this due | when's that due | when is the homework due | when is the paper due | when are they due",
     "Is that due Friday or Monday?": "due on friday | due friday | due on monday | due monday | due next week",
+    "When is this due?": "when is it due | when is that due | when's it due | when is this due | when's that due | when is the homework due | when is the paper due | when are they due",
   },
   "class-asking-will-this-be-on-the-test": {
     "Do we need to know this for the exam?": "need to know this | have to know this | need to know that | have to know that | need to know all",
@@ -445,11 +443,11 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Can I use L'Hôpital's rule here instead?": "use … instead | instead of using",
   },
   "class-asking-another-example": {
-    "Could you do another example?": "do another example | give us another example | show us another example | go over another example | do one more example | another example please",
     "Can you show us one more?": "do one more | show us one more | go through one more",
+    "Could you do another example?": "do another example | give us another example | show us another example | go over another example | do one more example | another example please",
   },
   "class-asking-simplify-further": {
-    "Do we need to simplify further, or is that the final answer?": "simplify further | simplify it further | simplify it more | simplify any further | simplify that further | simplify more",
+    "Do we need to simplify this further?": "simplify further | simplify it further | simplify this further | simplify it more | simplify any further | simplify that further | simplify more",
     "Is that as simple as it gets?": "as simple as it gets | as simplified as",
   },
   "office-hours-do-you-have-a-minute": {
@@ -461,15 +459,15 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "I wanted to ask about problem 3.": "wanted to ask | want to ask | wanted to ask you",
   },
   "office-hours-can-i-show-you-what-i-tried": {
-    "Can I show you what I tried?": "show you what i | what i tried to do | tell you what i did | show you what i did",
     "Here's what I have so far.": "what i have so far | what i've got so far | what i got so far | so far i have | so far i've",
+    "Can I show you what I tried?": "show you what i | what i tried to do | tell you what i did | show you what i did",
   },
   "office-hours-am-i-on-the-right-track": {
     "Am I on the right track?": "on the right track | in the right direction | right direction",
     "Is this approach going to work?": "will this work | would this work | would that work | will that work | is this going to work | is that going to work",
   },
   "office-hours-hint-not-the-answer": {
-    "Could you give me a hint without giving away the answer?": "a hint | any hints | a little hint | some hints",
+    "Could you give me a hint instead of the answer?": "a hint | any hints | a little hint | some hints",
     "Could you point me in the right direction?": "point me in the right direction | point us in the right direction",
   },
   "office-hours-why-did-i-lose-points": {
@@ -477,7 +475,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Could you explain what was wrong with my answer?": "what was wrong with my | what's wrong with my | what i did wrong",
   },
   "office-hours-regrade": {
-    "Would you mind taking another look at the grading on this problem?": "another look | regrade | re-grade | look at it again | look at this again",
+    "I think this might have been graded incorrectly. Could you take another look?": "another look | regrade | re-grade | look at it again | look at this again",
     "I think this might have been graded incorrectly.": "graded wrong | graded incorrectly | grading was wrong | grading error",
   },
   "office-hours-how-to-study": {
@@ -489,7 +487,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Are there any extra practice problems I could do?": "practice problems | extra problems | more problems | extra practice | more practice",
   },
   "office-hours-understand-in-class-not-alone": {
-    "I understand it when you do it in class, but I get stuck when I try it on my own.": "do it on my own | do it by myself | try it on my own | try it by myself | on my own i | by myself i",
+    "I understand it in class, but I get stuck when I try it on my own.": "get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost",
+    "I can follow it in class, but I can't do it on my own.": "do it on my own | do it by myself | try it on my own | try it by myself | on my own i | by myself i",
     "I keep getting stuck on the homework.": "get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost",
   },
   "office-hours-intuition": {
@@ -497,8 +496,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "What's the big picture here?": "the big picture",
   },
   "office-hours-when-to-use-which": {
-    "How do I know when to use substitution and when to use integration by parts?": "when to use | when do you use | when do i use | when would you use | when should i use",
     "How do I know which method to use?": "which method | which one to use | which formula to use | which equation to use",
+    "How do I know when to use substitution and when to use integration by parts?": "when to use | when do you use | when do i use | when would you use | when should i use",
   },
   "office-hours-english-terms-are-new": {
     "I learned this in Japanese, so I'm still getting used to the English terms.": "getting used to | get used to | not used to",
@@ -513,7 +512,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Do you think I'm ready for Calc III?": "i'm ready for | am i ready for | ready to take",
   },
   "office-hours-can-i-come-back": {
-    "Is it okay if I come back if I'm still stuck?": "can i come back | could i come back | if i come back | come back later | come back tomorrow | come back next week | stop by again | come by again | come back if",
+    "Can I come back if I get stuck again?": "can i come back | could i come back | if i come back | come back later | come back tomorrow | come back next week | stop by again | come by again | come back if",
   },
   "office-hours-thanks-that-helps": {
     "That makes a lot more sense now.": "makes more sense now | makes a lot more sense now | makes sense now | make sense now | make more sense now | makes more sense then",

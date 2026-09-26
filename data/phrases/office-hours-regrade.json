@@ -2,7 +2,7 @@
   "id": "office-hours-regrade",
   "situation": "office-hours",
   "intent": "採点を見直してほしいと丁寧に頼む",
-  "en": "Would you mind taking another look at the grading on this problem?",
+  "en": "I think this might have been graded incorrectly. Could you take another look?",
   "ja": "この問題の採点をもう一度見ていただけませんか。",
   "register": "polite",
   "variants": [
@@ -20,7 +20,7 @@
       "type": "editorial"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-26",
   "evidence": {
     "sources": [],
@@ -28,8 +28,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。0 件）。人間レビューへ。",
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で首位の要の部分 another look | regrade | re-grade | look at it again | look at this again（48 件。3 件以上）。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

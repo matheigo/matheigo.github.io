@@ -15,6 +15,7 @@
 - pnpm corpus:fetch:notes … MIT OCW の講義ノート（PDF → pdftotext）を written コーパス mit-notes として取得
 - pnpm corpus:fetch:micase -- <zip か展開済みフォルダ> … MICASE（TalkBank CABank）の書き起こしを話し言葉コーパス micase にする。**phrases だけに数える**。
   TalkBank はサインインした人にしか zip を出さないので、人間が落として手で実行する（docs/SOURCES.md）
+- pnpm corpus:fetch:mse … phrases の学生の場面と email・discord の要の部分を Math Stack Exchange の検索で数える（件数だけ。API キーなし・1 日 300 件。corpus:count の後に回す。キャッシュ scripts/corpus/mse-counts.json）
 - pnpm corpus:count … コーパスの重複（同じファイル・同じ文）を除いて候補表現を数える → corpus/counts.json
 - pnpm corpus:probe … 書く前に候補表現を数える。`-- --decide --file x.txt` で 1 ブロック 1 エントリの判定まで出す
 - pnpm corpus:decide … 頻度比で register を決め、`-- --write` で evidence と flags を書き戻す（`--units <curriculum id,…>` で単元に絞る）

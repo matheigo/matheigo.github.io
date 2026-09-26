@@ -47,6 +47,7 @@ import {
   type ReferenceHits,
 } from "../scripts/corpus/lib";
 import { micaseEvent, parseChat, speakerClass, wordCount } from "../scripts/corpus/micase";
+import { MSE_SKIP, mseCount, mseLeader, mseQueries, needsMse } from "../scripts/corpus/mse";
 
 describe("normalize", () => {
   it("reads a typed dy/dx as it is said", () => {
@@ -1213,5 +1214,38 @@ describe("symbol patterns with alternatives and excluded words", () => {
     expect(countPattern(text, "!x minus *")).toBe(0);
     expect(countPattern(text, "minus *")).toBe(1);
     expect(countPattern(text, "the slope is * !three")).toBe(1);
+  });
+});
+
+describe("Math Stack Exchange counts for the student phrases (mse.ts)", () => {
+  it("searches a key part as its alternatives: '!w' dropped, '…' and the skip list not searched", () => {
+    expect(mseQueries("could you go back | Can You Go Back | go back to the previous | take … back")).toEqual([
+      "could you go back",
+      "can you go back",
+    ]);
+    expect(mseQueries("a constant !of")).toEqual(["a constant"]);
+    expect(mseQueries("")).toEqual([]);
+    expect(Object.keys(MSE_SKIP)).toContain("scroll up");
+  });
+
+  it("adds the alternatives' totals and names the ones not fetched yet", () => {
+    const cache = { "a hint": { total: 5, fetched: "2026-09-26" }, "any hints": { total: 2, fetched: "2026-09-26" } };
+    expect(mseCount("a hint | any hints | some hints", cache)).toEqual({ hits: 7, missing: ["some hints"], searched: 3 });
+    // the first key part wins a tie; a key part that cannot be searched is left out
+    const tie = { "have a minute": { total: 3, fetched: "d" }, "is now a good time": { total: 3, fetched: "d" } };
+    expect(mseLeader(["have a minute", "is now a good time", "take … back"], tie)).toMatchObject({ wording: "have a minute", hits: 3 });
+    expect(mseLeader(["take … back"], tie)).toBeNull();
+  });
+
+  it("is looked up only for a student phrase short in MICASE, or an email / discord phrase short there", () => {
+    const w = { micase: 1 };
+    expect(needsMse("student", { "a hint": { micase: 2 } }, w)).toBe(true);
+    expect(needsMse("student", { "a hint": { micase: 3 } }, w)).toBe(false); // attested in MICASE
+    expect(needsMse("student", { "a hint": { micase: 12 } }, w)).toBe(false); // judged ①②
+    expect(needsMse("email", { "i'm writing to": { micase: 2 } }, w)).toBe(true);
+    expect(needsMse("email", {}, w)).toBe(true);
+    expect(needsMse("instructor", {}, w)).toBe(false);
+    expect(needsMse("classroom", {}, w)).toBe(false);
+    expect(needsMse("written", {}, w)).toBe(false);
   });
 });
