@@ -13,7 +13,7 @@
     "uk": null
   },
   "pos": "noun",
-  "mapping": "near",
+  "mapping": "exact",
   "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（alternating polynomial ／ alternating expression は CED・OpenStax・IM・CK-12 とも 0 件）。用例コーパスでは alternating polynomial は出てこず、alternating expression も話し言葉にわずか（すべて 3Blue1Brown）で書き言葉には無い。見出しは英語版 Wikipedia の記事名「Alternating polynomial」（ja 記事「交代式」の langlink 先。冒頭で alternating polynomial を太字で定義する）。英語で説明するときは swapping two variables changes the sign と性質を言う。",
   "domains": [
     "algebra"
@@ -59,6 +59,12 @@
       "type": "wikipedia-langlink",
       "ja": "交代式",
       "en": "Alternating polynomial"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「交代式」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%BA%A4%E4%BB%A3%E5%BC%8F",
+      "note": "交代多項式（英: alternating polynomial）: 任意の 2 変数を入れ替えると符号が反転する多項式"
     }
   ],
   "confidence": "likely",

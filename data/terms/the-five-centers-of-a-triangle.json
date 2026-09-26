@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語に 5 つをまとめる言い方はなく、centroid・circumcenter・incenter・orthocenter・excenter と個別に言う。まとめて言うなら triangle centers（三角形に決まる点の総称で、五心に限らない。英語版 Wikipedia の記事名 Triangle center）。米国の参照では CK-12 Geometry と IM Geometry が circumcenter・incenter・centroid・orthocenter を名前で扱い、excenter は出てこない（CK-12 Geometry: circumcenter 13 件・incenter 17 件・centroid 21 件・orthocenter 4 件・excenter 0 件）。日本語版 Wikipedia「五心」に英語版へのリンクは無く、記事が挙げる英語名 five centroids of triangle は英語版の記事名にも参照にも出てこない。",
+  "mapping_note": "英語に 5 つをまとめる言い方はなく、centroid・circumcenter・incenter・orthocenter・excenter と個別に言う。まとめて言うなら triangle centers（三角形に決まる点の総称で、五心に限らない。英語版 Wikipedia の記事名 Triangle center）。米国の参照では CK-12 Geometry が circumcenter・incenter・centroid・orthocenter を名前で扱い（circumcenter 13 件・incenter 17 件・centroid 21 件・orthocenter 4 件）、IM Geometry は circumcenter（23 件）と incenter（29 件）を扱う。excenter はどちらにも出てこない。日本語版 Wikipedia「五心」に英語版へのリンクは無く、記事が挙げる英語名 five centroids of triangle は英語版の記事名にも参照にも出てこない。",
   "domains": [
     "geometry"
   ],
@@ -35,7 +35,7 @@
       "register": "spoken"
     },
     {
-      "en": "For an equilateral triangle, show that the triangle centers centroid, circumcenter, incenter, and orthocenter coincide.",
+      "en": "Show that in an equilateral triangle, four of the triangle centers (the centroid, circumcenter, incenter, and orthocenter) coincide.",
       "ja": "正三角形では五心のうち重心・外心・内心・垂心が一致することを示せ。",
       "register": "written"
     }
@@ -60,7 +60,7 @@
       "type": "reference",
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Triangle_center",
-      "note": "記事名 Triangle center（en.term triangle centers の単数形。三角形に決まる点の総称で五心に限らない。数学カテゴリから 5 段で、記事名で見出しを決める規則の 4 段の外。ja 記事「五心」に英語版へのリンクは無い）"
+      "note": "記事「Triangle center」の冒頭と節 Formal definition で triangle center を太字で定義（三角形に決まる点の総称で五心に限らない。数学カテゴリから 5 段: 本文の定義を出典に使える 5 段以内で、見出しを記事名で決める 4 段の外。ja 記事「五心」に英語版へのリンクは無い）"
     },
     {
       "type": "reference",
@@ -73,6 +73,12 @@
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
       "note": "circumcenter 13 件・incenter 17 件・centroid 21 件・orthocenter 4 件・excenter 0 件（5 つをまとめた名前は無い）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 7.5 Triangles in Circles・7.6 A Special Point・7.7 Circles in Triangles（circumcenter 23 件・incenter 29 件。centroid・orthocenter・excenter は 0 件）"
     }
   ],
   "confidence": "likely",
