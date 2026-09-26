@@ -14,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語に決まった言い方がない。日本の数III の節「三角関数の極限」の中心は lim_{x→0} sin x / x = 1 で、英語では名前を付けず、式をそのまま the limit as x approaches 0 of sine x over x equals 1 と読む。",
+  "mapping_note": "英語に決まった言い方がない。学習指導要領解説（数学III）は「三角関数の極限」で lim_{θ→0} sin θ / θ = 1 を取り扱うとし、英語では名前を付けず、式をそのまま the limit as x approaches 0 of sine x over x equals 1 と読む。",
   "domains": [
     "calculus",
     "trigonometry"
@@ -56,6 +56,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学III 極限: 三角関数の極限 lim_{θ→0} sin θ/θ = 1"
     }
   ],
   "confidence": "likely",
@@ -64,7 +70,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "sine of x over x": 6,

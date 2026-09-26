@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "見出しの「無限遠での極限」は学習指導要領解説に無い、本プロジェクトの訳語。日本の数III は「x → ∞ のときの極限」と言う。",
+  "mapping_note": "見出しの「無限遠での極限」は学習指導要領解説に無い、本プロジェクトの訳語。学習指導要領解説（数学III）は「x の値を限りなく大きくしたときの f(x) の極限」と言う。",
   "domains": [
     "calculus"
   ],
@@ -44,7 +44,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "x → ±∞ でのグラフのふるまいを、米国の教科書は end behavior と言う（用例コーパスの書き言葉に多い）。"
+    "x → ±∞ でのグラフのふるまいを、OpenStax（Precalculus・Algebra and Trigonometry・Calculus）と AP の CED（topic 1.15）は end behavior と言う。"
   ],
   "related": [
     "as-x-approaches-infinity",
@@ -61,6 +61,12 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 1.15（limits at infinity）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学III 極限: x の値を限りなく大きくしたときの f(x) の極限"
     }
   ],
   "confidence": "likely",
