@@ -9,6 +9,7 @@
  * - a verified entry carries no problem flag (record flags may stay; lib/flags.ts)
  * - a Japanese word shared by two entries is a listed homonym (SAME_JA)
  * - no count from the example corpus in the body text (lib/corpus-count.ts; a warning)
+ * - no id shared by two collections (the search index keys entries by bare id)
  *
  * Exit code 1 on any error. Warnings do not fail the build.
  */
@@ -246,6 +247,21 @@ for (const collection of COLLECTIONS) {
     const problems = flags.filter((f) => isProblemFlag(f.code)).map((f) => f.code);
     if (confidence === "verified" && problems.length) {
       err(where, `confidence is verified but problem flags are still present: ${problems.join(", ")} (PLAN 8-2)`);
+    }
+  }
+}
+
+// ------------------------------------------- one id namespace for search ---
+// The search index (scripts/build-index.ts) keys every entry of terms, symbols,
+// phrases and conventions by its bare id, so an id may not repeat across them
+// (symbols/square-root and a term square-root broke the index; Phase 2 中学の単元 2).
+{
+  const owner = new Map<string, string>();
+  for (const c of ["terms", "symbols", "phrases", "conventions"] as const) {
+    for (const { data } of all[c]) {
+      const other = owner.get(data.id);
+      if (other && other !== c) err(`${c}/${data.id}.json`, `id "${data.id}" is also used in data/${other}/ (the search index needs one id namespace)`);
+      owner.set(data.id, c);
     }
   }
 }

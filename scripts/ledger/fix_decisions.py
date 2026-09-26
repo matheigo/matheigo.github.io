@@ -1630,6 +1630,8 @@ PHASE2G_RENAME = [
     ("measure-the-length", "measure", {"pos": "verb", "en": "measure", "ja": "測る"}),  # 長さを測る goes to ja_alt
     ("similar-figures", "similar", {"pos": "adjective", "en": "similar", "ja": "相似"}),  # as congruent in 単元 1
     ("four-points-are-concyclic", "concyclic", {"pos": "adjective", "en": "concyclic", "ja": "同一円周上にある"}),
+    # 平方根 (the number); symbols/square-root is the √ sign, and ids are one namespace in the search index
+    ("square-root", "square-root-of-a-number", {}),
 ]
 
 # Lines of a proof, of a problem statement or of a procedure, not terms
