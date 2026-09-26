@@ -1,0 +1,45 @@
+{
+  "id": "email-sign-off",
+  "situation": "email",
+  "intent": "メールの結びと署名",
+  "en": "Best regards, Taro Yamada",
+  "ja": "（結び・署名）",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "Sincerely, Taro Yamada",
+      "register": "polite"
+    },
+    {
+      "en": "Best, Taro",
+      "register": "neutral",
+      "note": "Thanks, とも結ぶ。数えない（best ・ thanks はほかの使い方と分けられない）。"
+    }
+  ],
+  "tags": [
+    "email"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "sincerely": 2
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い sincerely で 2 件）。Math Stack Exchange の質問で best regards | kind regards が 1683 件（3 件以上）なので likely。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "email-describe-where-stuck",
+  "situation": "email",
+  "intent": "メールでどこまでできて、どこで詰まったかを書く",
+  "en": "For problem 3, I got as far as setting up the integral, but I'm not sure how to handle the absolute value.",
+  "ja": "3 番は積分の式を立てるところまではできたのですが、絶対値の扱いが分かりません。",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "I set up the integral, but I got stuck on the absolute value.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "email",
+    "asking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い not sure how to で 0 件）。Math Stack Exchange の質問で not sure how to が 33258 件（3 件以上）なので likely。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

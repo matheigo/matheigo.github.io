@@ -1,0 +1,41 @@
+{
+  "id": "group-study-how-did-you-get-that",
+  "situation": "group-study",
+  "intent": "違う答えになったので解き方を見せてもらう",
+  "en": "I got something different — how did you get that?",
+  "ja": "私は違う答えになった。どうやったか見せて。",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "Can you show me how you got that?",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "group-study",
+    "answers"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "how did you get | how'd you get": 4
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 how did you get | how'd you get（4 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

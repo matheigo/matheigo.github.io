@@ -1,0 +1,30 @@
+{
+  "id": "group-study-write-up-our-own",
+  "situation": "group-study",
+  "intent": "答案は各自で書く決まりを確認する",
+  "en": "We can talk about the problems, but we have to write up our own solutions.",
+  "ja": "相談はいいけど、答案はそれぞれ自分で書かないといけないよ。",
+  "register": "neutral",
+  "tags": [
+    "group-study",
+    "academic-integrity"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で首位の要の部分 write up our own | write up your own | our own solutions | your own solutions（15 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

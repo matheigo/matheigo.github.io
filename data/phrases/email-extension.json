@@ -1,0 +1,30 @@
+{
+  "id": "email-extension",
+  "situation": "email",
+  "intent": "提出期限の延長を頼む",
+  "en": "Would it be possible to get a short extension on Homework 6? I've been sick since Monday.",
+  "ja": "月曜から体調を崩しており、課題 6 の提出期限を少し延ばしていただくことは可能でしょうか。",
+  "register": "polite",
+  "tags": [
+    "email",
+    "deadlines"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-student-rare",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い an extension on | extension on the homework で 0 件）。draft のまま。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

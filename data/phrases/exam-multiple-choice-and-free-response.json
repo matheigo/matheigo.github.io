@@ -1,0 +1,38 @@
+{
+  "id": "exam-multiple-choice-and-free-response",
+  "situation": "exam",
+  "intent": "試験の構成（選択問題と記述問題）を説明する",
+  "en": "The exam has a multiple-choice section and a free-response section.",
+  "ja": "試験は選択問題と記述問題に分かれています。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Part B is free response.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "exam",
+    "format"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "multiple-choice section | multiple choice section | multiple choice part | multiple-choice questions | multiple choice questions": 18,
+      "free-response section | free response section | free response questions | free-response questions": 9
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

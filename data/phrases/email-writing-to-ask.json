@@ -1,0 +1,33 @@
+{
+  "id": "email-writing-to-ask",
+  "situation": "email",
+  "intent": "メールの用件を切り出す",
+  "en": "I'm writing to ask about problem 4 on the homework.",
+  "ja": "課題の 4 番についてお伺いしたく、ご連絡しました。",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "I have a question about problem 4 on the homework.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "email"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "i have a question about | i had a question about": 16
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "group-study-you-dropped-a-sign",
+  "situation": "group-study",
+  "intent": "相手の計算ミスを指摘する",
+  "en": "I think you dropped a negative sign.",
+  "ja": "ここ、マイナスが抜けてると思う。",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "I think you forgot the 2 here.",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "group-study",
+    "mistakes"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で首位の要の部分 dropped a negative | dropped a sign | dropped the negative | forgot the negative | forgot a negative（7 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

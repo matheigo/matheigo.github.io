@@ -1,0 +1,34 @@
+{
+  "id": "email-follow-up",
+  "situation": "email",
+  "intent": "返事のないメールについて改めて連絡する",
+  "en": "I just wanted to follow up on my email from last week.",
+  "ja": "先週お送りしたメールの件で、改めてご連絡しました。",
+  "register": "polite",
+  "tags": [
+    "email"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "follow up on | following up on": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い follow up on | following up on で 1 件）。Math Stack Exchange の質問で follow up on | following up on が 194 件（3 件以上）なので likely。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

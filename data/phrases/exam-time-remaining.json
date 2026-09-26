@@ -1,0 +1,37 @@
+{
+  "id": "exam-time-remaining",
+  "situation": "exam",
+  "intent": "試験の残り時間を知らせる",
+  "en": "You have 10 minutes left.",
+  "ja": "残り 10 分です。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Ten minutes remaining.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "exam",
+    "time"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "minutes left": 12
+    },
+    "sources": [
+      "micase",
+      "mit-18.01",
+      "mit-18.03",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

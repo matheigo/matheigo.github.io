@@ -1,0 +1,31 @@
+{
+  "id": "email-dictionary-during-exam",
+  "situation": "email",
+  "intent": "英語が母語でないことを伝え、試験での辞書使用を相談する",
+  "en": "English is not my first language. Would it be possible for me to use a paper bilingual dictionary during the exam?",
+  "ja": "英語が母語ではないため、試験中に紙の英和辞書を使ってもよいか伺いたいです。",
+  "register": "polite",
+  "tags": [
+    "email",
+    "exam",
+    "language"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い my first language | my native language で 0 件）。Math Stack Exchange の質問で my first language | my native language が 665 件（3 件以上）なので likely。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

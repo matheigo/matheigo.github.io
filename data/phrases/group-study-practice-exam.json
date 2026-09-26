@@ -1,0 +1,41 @@
+{
+  "id": "group-study-practice-exam",
+  "situation": "group-study",
+  "intent": "時間を計って模擬試験を解こうと誘う",
+  "en": "Let's do the practice exam under timed conditions.",
+  "ja": "時間を計って模擬試験を解こう。",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "Let's time ourselves.",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "group-study",
+    "exam"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "practice exam | practice test | practice midterm": 9
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 practice exam | practice test | practice midterm（9 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

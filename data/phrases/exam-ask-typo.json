@@ -1,0 +1,42 @@
+{
+  "id": "exam-ask-typo",
+  "situation": "exam",
+  "intent": "試験中に問題文の誤植を確認する",
+  "en": "Should this be f(2) instead of f(3)?",
+  "ja": "4 番の問題文、誤植ではありませんか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Is there a typo in number 4?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "exam",
+    "asking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "should this be | should that be": 3,
+      "a typo | typo in": 3
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 should this be | should that be（3 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

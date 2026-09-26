@@ -810,6 +810,194 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Use appropriate units.": "appropriate units | correct units",
     "Indicate units of measure.": "indicate units | include units | include the units",
   },
+  "exam-use-the-table-to-approximate": {
+    "Use the table to approximate R′(5).": "use the table to | using the table",
+    "Use the data in the table to approximate R′(5).": "use the data in the table | using the data in the table",
+  },
+  "exam-write-an-equation-for-the-tangent-line": {
+    "Find the equation of the tangent line at x = 2.": "equation of the tangent line | equation for the tangent line",
+    "Write an equation for the line tangent to the graph of f at x = 2.": "equation for the line tangent to | equation of the line tangent to",
+  },
+  "exam-describe-the-distribution": {
+    "Describe the distribution.": "describe the distribution | describe the shape of the distribution",
+    "Describe the shape, center, and variability of the distribution.": "center, and variability | center and variability | center, and spread | center and spread",
+  },
+  "exam-which-of-the-following": {
+    "Which of the following is true?": "which of the following",
+    "Which of the following could be the graph of f?": "which of the following",
+  },
+  "exam-set-up-but-do-not-evaluate": {
+    "Set up, but do not evaluate, an integral for the volume.": "do not evaluate | don't evaluate",
+    "Write, but do not evaluate, an integral expression for the area.": "do not evaluate | don't evaluate",
+  },
+  "exam-label-your-axes": {
+    "Label the axes.": "label the axes | label your axes | label each axis",
+    "Label the graph.": "label the diagram | label the graph | label the figure",
+  },
+  "exam-box-your-answer": {
+    "Box your final answer.": "box your answer | box your final answer",
+    "Circle your answer.": "circle your answer | circle the answer",
+  },
+  "exam-calculator-allowed": {
+    "Calculators are allowed on this part.": "calculators are allowed | calculator is allowed | can use a calculator | can use your calculator | calculator active",
+    "This section is non-calculator.": "non-calculator | no calculator !involved",
+    "Calculator Not Permitted": "calculator not permitted | calculator is not permitted | calculators are not permitted",
+  },
+  "exam-multiple-choice-and-free-response": {
+    "The exam has a multiple-choice section and a free-response section.": "multiple-choice section | multiple choice section | multiple choice part | multiple-choice questions | multiple choice questions",
+    "Part B is free response.": "free-response section | free response section | free response questions | free-response questions",
+  },
+  "exam-partial-credit": {
+    "You can get partial credit, so write down what you know.": "partial credit",
+  },
+  "exam-notes-allowed": {
+    "You can bring one page of notes, front and back.": "page of notes | sheet of notes | index card | cheat sheet | note sheet",
+    "This is a closed-book exam.": "closed book | closed-book | closed notes",
+  },
+  "exam-time-remaining": {
+    "You have 10 minutes left.": "minutes left",
+    "Ten minutes remaining.": "minutes remaining",
+  },
+  "exam-pencils-down": {
+    "Time's up — pencils down.": "time's up | time is up | pencils down | pens down",
+    "Please stop writing.": "",
+  },
+  "exam-ask-typo": {
+    "Should this be f(2) instead of f(3)?": "should this be | should that be",
+    "Is there a typo in number 4?": "a typo | typo in",
+  },
+  "exam-ask-scratch-paper": {
+    "Could I have another sheet of scratch paper?": "scratch paper | another sheet",
+    "Can I get some more paper?": "more paper",
+  },
+  "exam-ask-can-i-write-on-the-back": {
+    "Can I write on the back?": "write on the back | use the back",
+  },
+  "exam-ask-how-much-time": {
+    "How much time is left?": "how much time is left | how much time do we have | how much time left | how many minutes",
+  },
+  "exam-when-do-we-get-it-back": {
+    "When will we get the exams back?": "exam back | test back",
+    "When are we getting our midterms back?": "midterm back",
+  },
+  "exam-is-it-curved": {
+    "Is the exam curved?": "exam curved | test curved | curve the exam | curve the test",
+    "Is the class graded on a curve?": "graded on a curve | grade on a curve",
+  },
+  "email-subject-line": {
+    "Subject: MATH 221 Sec. 3 – Question about HW 5": "question about",
+  },
+  "email-greeting": {
+    "Dear Professor Smith,": "dear professor",
+    "Hi Professor Smith,": "hi professor | hello professor",
+  },
+  "email-introduce-yourself": {
+    "My name is Taro Yamada, and I'm in your MATH 221 section that meets MWF at 10.": "my name is",
+  },
+  "email-writing-to-ask": {
+    "I'm writing to ask about problem 4 on the homework.": "i'm writing to | i am writing to",
+    "I have a question about problem 4 on the homework.": "i have a question about | i had a question about",
+  },
+  "email-describe-where-stuck": {
+    "For problem 3, I got as far as setting up the integral, but I'm not sure how to handle the absolute value.": "not sure how to",
+    "I set up the integral, but I got stuck on the absolute value.": "got stuck on | get stuck on",
+  },
+  "email-missed-class": {
+    "I'm sorry I had to miss class on Wednesday. Is there anything I should do to catch up?": "miss class",
+    "Is there anything I need to catch up on?": "catch up on",
+  },
+  "email-cannot-make-office-hours": {
+    "I have a class during your office hours. Would it be possible to meet at another time?": "would it be possible to",
+    "Could we meet at a different time?": "meet at another time | meet at a different time",
+  },
+  "email-regrade-request": {
+    "I'd like to ask about the grading on problem 2 of the midterm. I've attached a scan of my work.": "about the grading",
+    "Could you take another look at problem 2?": "another look",
+  },
+  "email-extension": {
+    "Would it be possible to get a short extension on Homework 6? I've been sick since Monday.": "an extension on | extension on the homework",
+  },
+  "email-attached": {
+    "I've attached my work as a PDF.": "i've attached | i have attached",
+    "Please see the attached file.": "see the attached | the attached file",
+  },
+  "email-dictionary-during-exam": {
+    "English is not my first language. Would it be possible for me to use a paper bilingual dictionary during the exam?": "my first language | my native language",
+  },
+  "email-exam-conflict": {
+    "I have a conflict with the final exam time. Would it be possible to take it at a different time?": "a conflict with | have a conflict",
+    "Could I take the exam at another time?": "at a different time | at another time",
+  },
+  "email-prerequisite": {
+    "I took calculus in Japan (Math III). Would that satisfy the prerequisite for MATH 221?": "prerequisite for | the prerequisite",
+  },
+  "email-confirm": {
+    "Could you confirm whether the quiz on Friday covers Section 4.3?": "could you confirm | can you confirm",
+  },
+  "email-follow-up": {
+    "I just wanted to follow up on my email from last week.": "follow up on | following up on",
+  },
+  "email-thank-you-for-your-time": {
+    "Thank you for your time.": "thank you for your time | thanks for your time",
+    "Thanks in advance.": "thanks in advance | thank you in advance",
+  },
+  "email-sign-off": {
+    "Best regards, Taro Yamada": "best regards | kind regards",
+    "Sincerely, Taro Yamada": "sincerely",
+    "Best, Taro": "",
+  },
+  "group-study-work-together": {
+    "Want to study together for the midterm?": "study together | studying together",
+    "Do you want to work on the problem set together?": "work on … together",
+  },
+  "group-study-where-to-meet": {
+    "Does 7 at the library work?": "at the library",
+    "Let's meet at the library at 7.": "let's meet | meet at the library",
+  },
+  "group-study-what-did-you-get": {
+    "What did you get for number 5?": "what did you get | what'd you get",
+  },
+  "group-study-how-did-you-get-that": {
+    "I got something different — how did you get that?": "how did you get | how'd you get",
+    "Can you show me how you got that?": "show me how you got | show me how you did",
+  },
+  "group-study-you-dropped-a-sign": {
+    "I think you dropped a negative sign.": "dropped a negative | dropped a sign | dropped the negative | forgot the negative | forgot a negative",
+    "I think you forgot the 2 here.": "you forgot the | you forgot a",
+  },
+  "group-study-split-them-up": {
+    "Should we split them up?": "split them up | divide them up",
+    "Let's each do a few and then explain them to each other.": "explain them to each other | explain it to each other",
+  },
+  "group-study-write-up-our-own": {
+    "We can talk about the problems, but we have to write up our own solutions.": "write up our own | write up your own | our own solutions | your own solutions",
+  },
+  "group-study-answer-key-wrong": {
+    "I think the answer key might be wrong.": "the answer key",
+    "The back of the book says 12, but I keep getting 13.": "back of the book",
+  },
+  "group-study-ask-the-ta": {
+    "Let's ask at office hours.": "ask at office hours | go to office hours",
+    "Should we ask the TA?": "ask the ta",
+  },
+  "group-study-can-i-see-your-notes": {
+    "Can I see your notes from Monday?": "see your notes | borrow your notes | look at your notes | copy your notes",
+  },
+  "group-study-quiz-each-other": {
+    "Let's quiz each other.": "quiz each other | test each other | quiz me",
+  },
+  "group-study-not-sure-but": {
+    "I'm not sure, but I think it's 4.": "not sure but",
+    "Don't quote me on this, but I think it's 4.": "don't quote me",
+  },
+  "group-study-oh-that-makes-sense": {
+    "Ohh, I see.": "oh i see | ohh i see | oh okay i see",
+    "Oh, that makes sense now.": "oh that makes sense | that makes sense now | oh that make sense",
+  },
+  "group-study-practice-exam": {
+    "Let's do the practice exam under timed conditions.": "practice exam | practice test | practice midterm",
+    "Let's time ourselves.": "time ourselves | timed conditions",
+  },
 };
 
 /**

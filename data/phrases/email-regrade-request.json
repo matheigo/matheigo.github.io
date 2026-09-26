@@ -1,0 +1,36 @@
+{
+  "id": "email-regrade-request",
+  "situation": "email",
+  "intent": "メールで採点の見直しを頼む",
+  "en": "I'd like to ask about the grading on problem 2 of the midterm. I've attached a scan of my work.",
+  "ja": "中間試験の 2 番の採点について、見直しをお願いできないでしょうか。答案のスキャンを添付します。",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "Could you take another look at problem 2?",
+      "register": "polite"
+    }
+  ],
+  "tags": [
+    "email",
+    "grading"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い about the grading で 0 件）。Math Stack Exchange の質問で another look が 32 件（3 件以上）なので likely。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

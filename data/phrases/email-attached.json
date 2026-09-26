@@ -1,0 +1,35 @@
+{
+  "id": "email-attached",
+  "situation": "email",
+  "intent": "添付ファイルがあることを書く",
+  "en": "I've attached my work as a PDF.",
+  "ja": "解答を PDF で添付しました。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Please see the attached file.",
+      "register": "polite"
+    }
+  ],
+  "tags": [
+    "email"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い i've attached | i have attached で 0 件）。Math Stack Exchange の質問で i've attached | i have attached が 719 件（3 件以上）なので likely。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

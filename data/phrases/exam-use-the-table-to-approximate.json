@@ -1,0 +1,45 @@
+{
+  "id": "exam-use-the-table-to-approximate",
+  "situation": "exam",
+  "intent": "問題文の「表のデータを用いて近似値を求めよ」",
+  "en": "Use the table to approximate R′(5).",
+  "ja": "表のデータを用いて R′(5) の近似値を求めよ。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Use the data in the table to approximate R′(5).",
+      "register": "written",
+      "note": "AP Calculus の CED の問題の指示の言い方（3 件）。"
+    }
+  ],
+  "tags": [
+    "exam",
+    "instructions",
+    "tables"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "exam（Use the data in the table to …）"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "use the table to | using the table": 30
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-26"
+  }
+}

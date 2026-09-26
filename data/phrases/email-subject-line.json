@@ -1,0 +1,27 @@
+{
+  "id": "email-subject-line",
+  "situation": "email",
+  "intent": "メールの件名に授業・セクション・用件を書く",
+  "en": "Subject: MATH 221 Sec. 3 – Question about HW 5",
+  "ja": "件名：MATH 221 セクション 3 ― 課題 5 についての質問",
+  "register": "neutral",
+  "tags": [
+    "email"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "question about": 46
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

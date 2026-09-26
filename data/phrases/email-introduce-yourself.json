@@ -1,0 +1,27 @@
+{
+  "id": "email-introduce-yourself",
+  "situation": "email",
+  "intent": "メールで名前と受講しているセクションを名乗る",
+  "en": "My name is Taro Yamada, and I'm in your MATH 221 section that meets MWF at 10.",
+  "ja": "月水金 10 時の MATH 221 を受講している山田太郎です。",
+  "register": "polite",
+  "tags": [
+    "email"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "my name is": 11
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

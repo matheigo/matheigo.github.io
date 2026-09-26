@@ -1,0 +1,40 @@
+{
+  "id": "group-study-where-to-meet",
+  "situation": "group-study",
+  "intent": "勉強会の時間と場所を決める",
+  "en": "Does 7 at the library work?",
+  "ja": "7 時に図書館でいい？",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "Let's meet at the library at 7.",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "group-study"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "at the library": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（at the library 1 件）。Math Stack Exchange の質問で首位の要の部分 at the library（15 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

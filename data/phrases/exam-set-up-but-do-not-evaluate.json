@@ -1,0 +1,43 @@
+{
+  "id": "exam-set-up-but-do-not-evaluate",
+  "situation": "exam",
+  "intent": "問題文の「式を立てるだけでよい（計算しなくてよい）」",
+  "en": "Set up, but do not evaluate, an integral for the volume.",
+  "ja": "積分の式を立てるだけでよい（計算しなくてよい）。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Write, but do not evaluate, an integral expression for the area.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "exam",
+    "instructions",
+    "integrals"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "do not evaluate | don't evaluate": 7
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（書き言葉のコーパスと参照で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 do not evaluate | don't evaluate（7 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

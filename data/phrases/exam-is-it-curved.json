@@ -1,0 +1,37 @@
+{
+  "id": "exam-is-it-curved",
+  "situation": "exam",
+  "intent": "試験の得点調整（カーブ）があるか聞く",
+  "en": "Is the exam curved?",
+  "ja": "この試験は得点調整（カーブ）がありますか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Is the class graded on a curve?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "exam",
+    "asking",
+    "grading"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。0 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

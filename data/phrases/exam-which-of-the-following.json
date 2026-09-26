@@ -1,0 +1,40 @@
+{
+  "id": "exam-which-of-the-following",
+  "situation": "exam",
+  "intent": "選択問題の「次のうち〜を選べ」",
+  "en": "Which of the following is true?",
+  "ja": "次のうち正しいものを選べ。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Which of the following could be the graph of f?",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "exam",
+    "instructions",
+    "multiple-choice"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "which of the following": 54
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-introstats",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-26"
+  }
+}

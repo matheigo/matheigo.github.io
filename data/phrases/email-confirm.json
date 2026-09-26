@@ -1,0 +1,29 @@
+{
+  "id": "email-confirm",
+  "situation": "email",
+  "intent": "範囲などを確認させてもらう",
+  "en": "Could you confirm whether the quiz on Friday covers Section 4.3?",
+  "ja": "金曜日の小テストに 4.3 節も含まれるか確認させてください。",
+  "register": "polite",
+  "tags": [
+    "email"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い could you confirm | can you confirm で 0 件）。Math Stack Exchange の質問で could you confirm | can you confirm が 256 件（3 件以上）なので likely。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

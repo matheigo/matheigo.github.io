@@ -1,0 +1,39 @@
+{
+  "id": "exam-notes-allowed",
+  "situation": "exam",
+  "intent": "試験に持ち込めるものを伝える",
+  "en": "You can bring one page of notes, front and back.",
+  "ja": "ノート 1 枚（両面）まで持ち込みできます。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "This is a closed-book exam.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "exam",
+    "rules"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "page of notes | sheet of notes | index card | cheat sheet | note sheet": 13,
+      "closed book | closed-book | closed notes": 2
+    },
+    "sources": [
+      "micase",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-26"
+  }
+}

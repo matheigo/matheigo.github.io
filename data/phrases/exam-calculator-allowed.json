@@ -1,0 +1,54 @@
+{
+  "id": "exam-calculator-allowed",
+  "situation": "exam",
+  "intent": "試験で電卓を使えるかどうかを伝える",
+  "en": "Calculators are allowed on this part.",
+  "ja": "この部分は電卓使用可（不可）です。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "This section is non-calculator.",
+      "register": "neutral"
+    },
+    {
+      "en": "Calculator Not Permitted",
+      "register": "written",
+      "note": "試験の冊子の表示。AP Calculus の CED の問題例の見出し（6 件）。"
+    }
+  ],
+  "tags": [
+    "exam",
+    "calculator"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "exam（Calculator Not Permitted の表示）"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "calculators are allowed | calculator is allowed | can use a calculator | can use your calculator | calculator active": 1,
+      "non-calculator | no calculator !involved": 2
+    },
+    "sources": [
+      "khan-ap-calc",
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（講義のコーパスと MICASE の教員の発話で数えた。non-calculator | no calculator !involved 2 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

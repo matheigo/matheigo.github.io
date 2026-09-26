@@ -1,0 +1,36 @@
+{
+  "id": "email-exam-conflict",
+  "situation": "email",
+  "intent": "試験の時間が重なっていることを伝え、別の時間を頼む",
+  "en": "I have a conflict with the final exam time. Would it be possible to take it at a different time?",
+  "ja": "期末試験の時間が別の試験と重なっています。別の時間に受けることはできますか。",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "Could I take the exam at another time?",
+      "register": "polite"
+    }
+  ],
+  "tags": [
+    "email",
+    "exam"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い a conflict with | have a conflict で 0 件）。Math Stack Exchange の質問で a conflict with | have a conflict が 25 件（3 件以上）なので likely。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

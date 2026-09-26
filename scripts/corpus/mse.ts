@@ -75,6 +75,15 @@ export const MSE_SKIP: Record<string, string> = {
   "only the odd": "odd terms or numbers",
   "what problems": "what problems arise (a general question)",
   "without a calculator": "working a problem by hand (the question itself), not whether a calculator is allowed",
+  // batch 5 (DECISIONS, Phase 3 フレーズの生成 3)
+  "another sheet": "a sheet of a surface (a hyperboloid of two sheets)",
+  "how many minutes": "a word problem's question",
+  "would it be possible to": "whether something is mathematically possible, not a request to a person",
+  "at a different time": "a time variable (at a different time t)",
+  "at another time": "a time variable",
+  "an extension on": "extending a function or a field",
+  // added after its count was seen (7): "use the back substitution" is a named method
+  "use the back": "back substitution",
 };
 
 /** The exact phrases a key part is searched as: one per alternative, "!w" dropped, "…" and MSE_SKIP not searched. */

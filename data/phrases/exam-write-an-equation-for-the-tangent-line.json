@@ -1,0 +1,38 @@
+{
+  "id": "exam-write-an-equation-for-the-tangent-line",
+  "situation": "exam",
+  "intent": "問題文の「接線の方程式を求めよ」",
+  "en": "Find the equation of the tangent line at x = 2.",
+  "ja": "x = 2 における y = f(x) の接線の方程式を求めよ。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Write an equation for the line tangent to the graph of f at x = 2.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "exam",
+    "instructions",
+    "derivatives"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "equation of the tangent line | equation for the tangent line": 57,
+      "equation for the line tangent to | equation of the line tangent to": 10
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

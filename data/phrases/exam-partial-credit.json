@@ -1,0 +1,35 @@
+{
+  "id": "exam-partial-credit",
+  "situation": "exam",
+  "intent": "部分点があるので書けるところは書くよう促す",
+  "en": "You can get partial credit, so write down what you know.",
+  "ja": "部分点があるので、分かるところは書きなさい。",
+  "register": "neutral",
+  "tags": [
+    "exam",
+    "grading"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "partial credit": 1
+    },
+    "sources": [
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（講義のコーパスと MICASE の教員の発話で数えた。partial credit 1 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

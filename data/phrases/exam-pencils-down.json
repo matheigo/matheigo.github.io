@@ -1,0 +1,43 @@
+{
+  "id": "exam-pencils-down",
+  "situation": "exam",
+  "intent": "試験の終了を告げる",
+  "en": "Time's up — pencils down.",
+  "ja": "時間です。筆記用具を置いてください。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Please stop writing.",
+      "register": "polite",
+      "note": "講義の stop writing はほとんどが先生が板書を省く言い方で、数えない。"
+    }
+  ],
+  "tags": [
+    "exam",
+    "time"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "time's up | time is up | pencils down | pens down": 2
+    },
+    "sources": [
+      "mit-18.06",
+      "mit-6.042"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（講義のコーパスと MICASE の教員の発話で数えた。time's up | time is up | pencils down | pens down 2 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "exam-label-your-axes",
+  "situation": "exam",
+  "intent": "問題文の「軸に名前と目盛りを書け」",
+  "en": "Label the axes.",
+  "ja": "軸に名前と目盛りを書け。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Label the graph.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "exam",
+    "instructions",
+    "graphs"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "label the axes | label your axes | label each axis": 9,
+      "label the diagram | label the graph | label the figure": 1
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-intalg",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（書き言葉のコーパスと参照で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 label the axes | label your axes | label each axis（9 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

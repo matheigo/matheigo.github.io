@@ -1,0 +1,41 @@
+{
+  "id": "email-greeting",
+  "situation": "email",
+  "intent": "教員へのメールの書き出し",
+  "en": "Dear Professor Smith,",
+  "ja": "〜先生（メールの書き出し）",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "Hi Professor Smith,",
+      "register": "neutral",
+      "note": "Hello Dr. Smith, とも書く。"
+    }
+  ],
+  "tags": [
+    "email"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "hi professor | hello professor": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-student-rare",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い hi professor | hello professor で 1 件）。draft のまま。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

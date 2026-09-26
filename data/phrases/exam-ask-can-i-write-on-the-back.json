@@ -1,0 +1,35 @@
+{
+  "id": "exam-ask-can-i-write-on-the-back",
+  "situation": "exam",
+  "intent": "答案用紙の裏に書いてよいか聞く",
+  "en": "Can I write on the back?",
+  "ja": "裏に書いてもいいですか。",
+  "register": "neutral",
+  "tags": [
+    "exam",
+    "asking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "write on the back | use the back": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。write on the back | use the back 1 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

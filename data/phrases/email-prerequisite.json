@@ -1,0 +1,28 @@
+{
+  "id": "email-prerequisite",
+  "situation": "email",
+  "intent": "日本で履修した科目が前提科目を満たすか聞く",
+  "en": "I took calculus in Japan (Math III). Would that satisfy the prerequisite for MATH 221?",
+  "ja": "日本で数学 III を履修しましたが、MATH 221 の前提科目を満たしますか。",
+  "register": "polite",
+  "tags": [
+    "email",
+    "courses"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "prerequisite for | the prerequisite": 5
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}
