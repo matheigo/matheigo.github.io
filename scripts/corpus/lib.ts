@@ -507,11 +507,30 @@ function termBody(phrase: string): string | null {
  */
 export const WILDCARD_MAX = 5;
 
-function patternRegex(pattern: string): RegExp | null {
-  const parts = normalize(pattern.replace(/\*/g, " \u0000 ")).split(" ").filter(Boolean);
+/**
+ * A pattern may also use the two marks of TERM_FORMS (Phase 3 記号の生成):
+ * "A | B" (either reading form: "equals negative * | is negative *") and "!w"
+ * (a word that may not stand before / after it: "!the limit as * approaches *").
+ */
+function patternBody(pattern: string): string | null {
+  const tokens = pattern.trim().split(/\s+/);
+  const before: string[] = [];
+  const after: string[] = [];
+  while (tokens.length && NOT.test(tokens[0])) before.push(tokens.shift()!.slice(1));
+  while (tokens.length && NOT.test(tokens[tokens.length - 1])) after.unshift(tokens.pop()!.slice(1));
+  const parts = normalize(tokens.join(" ").replace(/\*/g, " \u0000 ")).split(" ").filter(Boolean);
   if (parts.length === 0 || parts.every((w) => w === "\u0000")) return null;
   const slot = `[^ ]+(?: [^ ]+){0,${WILDCARD_MAX - 1}}?`;
-  return wholeWords(parts.map((w) => (w === "\u0000" ? slot : escape(w))).join(" "));
+  const body = parts.map((w) => (w === "\u0000" ? slot : escape(w))).join(" ");
+  const notBefore = before.map((w) => `(?<!(?:^|[^\\w-])${escape(normalize(w))} )`).join("");
+  const notAfter = after.map((w) => `(?! ${escape(normalize(w))}(?![\\w-]))`).join("");
+  return notBefore + body + notAfter;
+}
+
+function patternRegex(pattern: string): RegExp | null {
+  const bodies = pattern.split(FORM_OR).map(patternBody).filter((b): b is string => b !== null);
+  if (bodies.length === 0) return null;
+  return wholeWords(bodies.length === 1 ? bodies[0] : `(?:${bodies.join("|")})`);
 }
 
 /** Literal whole-phrase count (probe --literal). Phrases are counted by their key part instead (PHRASE_FORMS). */
@@ -560,6 +579,182 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "summation-sigma": {
     "the sum from k equals one to n of a sub k": "the sum from * to * of",
     "the sum of a k, k from one to n": "the sum of * from * to *",
+  },
+  // Phase 3 記号 バッチ 1 (ledger rows 1-50). A reading whose words also mean something else is counted in a form only the reading takes (DECISIONS Phase 3 記号の生成).
+  "plus-sign": {
+    "a plus b": "* plus *",
+  },
+  "minus-sign": {
+    "a minus b": "* minus *",
+  },
+  "negative-sign": {
+    "negative three": "equals negative * | is equal to negative *",
+    "minus three": "equals minus * | is equal to minus *",
+    "the opposite of x": "the opposite of *",
+  },
+  "times-sign": {
+    "a times b": "* times *",
+    "a multiplied by b": "* multiplied by *",
+  },
+  "division-sign": {
+    "a divided by b": "* divided by *",
+  },
+  "long-division-bracket": {
+    "twenty divided by five": "* divided by *",
+    "five goes into twenty": "* goes into *",
+  },
+  "equals-sign": {
+    "a is equal to b": "* is equal to *",
+    "a equals b": "* equals *",
+  },
+  "not-equal-sign": {
+    "a does not equal b": "does not equal * | doesn't equal *",
+    "a is not equal to b": "is not equal to *",
+  },
+  "approximately-equal-sign": {
+    "a is approximately b": "is approximately !equal",
+    "a is approximately equal to b": "is approximately equal to * | approximately equals *",
+  },
+  "less-than-sign": {
+    "a is less than b": "is less than !or",
+  },
+  "greater-than-sign": {
+    "a is greater than b": "is greater than !or",
+  },
+  "leq-sign": {
+    "a is less than or equal to b": "less than or equal to *",
+    "a is at most b": "is at most *",
+  },
+  "geq-sign": {
+    "a is greater than or equal to b": "greater than or equal to *",
+    "a is at least b": "is at least *",
+  },
+  "compound-inequality": {
+    "x is between a and b": "is between * and *",
+    "a is less than x is less than b": "is less than * is less than *",
+    "x is greater than a and less than b": "is greater than * and less than *",
+  },
+  "parenthesized-quantity": {
+    "the quantity a plus b, squared": "the quantity *",
+    "a plus b, all squared": "all squared",
+  },
+  "square-brackets": {
+    "brackets": "!square brackets | !square bracket",
+    "square brackets": "square brackets | square bracket",
+  },
+  "curly-braces": {
+    "braces": "!curly braces | !curly brace",
+    "curly braces": "curly braces | curly brace | curly brackets | curly bracket",
+  },
+  "percent-sign": {
+    "twenty-five percent": "* percent",
+  },
+  "decimal-point": {
+    "three point one four": "zero point * | one point * | two point * | three point * | four point * | five point * | six point * | seven point * | eight point * | nine point *",
+  },
+  "repeating-decimal-bar": {
+    "zero point three repeating": "point * repeating | three repeating | six repeating | nine repeating | one repeating | two repeating | repeating forever",
+    "zero point three with a bar over the three": "bar over the * | line over the * | bar over it | line over it | bar on top",
+  },
+  "scientific-notation-form": {
+    "three point two times ten to the fifth": "times ten to the *",
+  },
+  "ratio-colon": {
+    "the ratio of a to b": "the ratio of * to *",
+  },
+  "proportion-colon": {
+    "a is to b as c is to d": "is to * as * is to",
+    "the ratio of a to b equals the ratio of c to d": "the ratio of * to * is the same as | the ratio of * to * equals the ratio",
+  },
+  "absolute-value-bars": {
+    "the absolute value of x": "the absolute value of *",
+    "absolute value of x": "!the absolute value of *",
+  },
+  "equals-question-mark": {
+    "does three times two plus one equal seven": "does * equal *",
+  },
+  "wave-dash-range-jp": {
+    "from three to five": "from one to * | from two to * | from three to * | from four to * | from five to * | from ten to *",
+    "between three and five": "between one and * | between two and * | between three and * | between four and * | between five and * | between ten and *",
+  },
+  "fraction-a-over-b": {
+    "a over b": "* over *",
+    "a divided by b": "* divided by *",
+  },
+  "numeric-fraction": {
+    "three fourths": "one fourth | three fourths | one third | two thirds | one fifth | two fifths | three fifths",
+    "three over four": "one over four | three over four | one over three | two over three | one over five | two over five | three over five",
+    "three quarters": "one quarter | three quarters",
+  },
+  "mixed-number": {
+    "two and three fourths": "and * fourths | and * thirds | and * fifths | and one half",
+    "two and three quarters": "and * quarters | and a quarter",
+  },
+  "rational-expression-fraction": {
+    "x plus one, all over x minus one": "all over *",
+    "the quantity x plus one over the quantity x minus one": "over the quantity *",
+  },
+  "power-cubed": {
+    "x cubed": "* cubed",
+    "x to the third": "to the third !power",
+    "x to the third power": "to the third power",
+  },
+  "power-fourth": {
+    "x to the fourth": "to the fourth !power",
+    "x to the fourth power": "to the fourth power",
+    "x to the power of four": "to the power of four",
+  },
+  "power-n": {
+    "x to the n": "to the n !power",
+    "x to the nth power": "to the nth power",
+    "x to the nth": "to the nth !power",
+    "x to the power of n": "to the power of n",
+  },
+  "negative-exponent-power": {
+    "x to the negative one": "to the negative one !power | to the negative n !power",
+    "x to the negative first power": "to the negative first power | to the negative one power",
+  },
+  "fractional-exponent": {
+    "a to the m over n": "to the * over *",
+    "a to the one half": "to the one half | to the one third | to the two thirds | to the three halves",
+  },
+  "expression-exponent": {
+    "two to the x plus one": "to the n plus one !power | to the x plus one !power | to the k plus one !power | to the n minus one !power | to the x minus one !power",
+    "two to the x plus one power": "to the n plus one power | to the x plus one power | to the k plus one power | to the n minus one power",
+    "two raised to the quantity x plus one": "to the quantity *",
+  },
+  "e-to-the-x": {
+    "e to the x": "e to the x !power",
+    "e to the power of x": "e to the power of *",
+  },
+  "exp-function": {
+    "exp of x": "exp of *",
+    "the exponential of x": "the exponential of *",
+  },
+  "cube-root": {
+    "the cube root of x": "the cube root of *",
+    "cube root of x": "!the cube root of *",
+  },
+  "nth-root-radical": {
+    "the nth root of x": "the nth root of * | the fourth root of * | the fifth root of *",
+    "nth root of x": "!the nth root of * | !the fourth root of * | !the fifth root of *",
+  },
+  "a-sub-n": {
+    "a sub n": "a sub *",
+  },
+  "x-naught": {
+    "x sub zero": "* sub zero",
+    "x naught": "* naught",
+    "x zero": "x zero | t zero",
+  },
+  "sequence-braces": {
+    "the sequence a sub n": "the sequence a sub * | the sequence of a sub *",
+    "the sequence a n": "the sequence a n | the sequence of a n",
+  },
+  "base-n-subscript": {
+    "one zero one one base two": "!in !log !logarithm base two | !in !log !logarithm base five | !in !log !logarithm base eight | !in !log !logarithm base sixteen",
+    "binary one zero one one": "in binary",
+    "one zero one one in base two": "in base two | in base five | in base eight | in base sixteen",
   },
 };
 

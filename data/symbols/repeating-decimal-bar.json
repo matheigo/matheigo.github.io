@@ -1,0 +1,54 @@
+{
+  "id": "repeating-decimal-bar",
+  "latex": "0.\\overline{3}",
+  "spoken_en": [
+    {
+      "text": "zero point three repeating",
+      "register": "standard"
+    },
+    {
+      "text": "zero point three with a bar over the three",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "0.3 の循環小数 ／ れい てん さん さん …",
+  "name_en": "repeating decimal bar",
+  "name_ja": "循環小数の上線",
+  "term_ref": "repeating-decimal",
+  "level": {
+    "jp": [
+      "数I"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "notes": [
+    "0.3̄ は zero point three repeating と読むか、横線を指して with a bar over the three と言う。",
+    "米国の教科書は循環する部分全体の上に横線を引く（点との違いは repeating-decimal-notation）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "bar over the * | line over the * | bar over it | line over it | bar on top": 10,
+      "point * repeating | three repeating | six repeating | nine repeating | one repeating | two repeating | repeating forever": 24
+    },
+    "sources": [
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

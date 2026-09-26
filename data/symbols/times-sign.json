@@ -1,0 +1,75 @@
+{
+  "id": "times-sign",
+  "latex": "a \\times b,\\ a \\cdot b,\\ ab",
+  "spoken_en": [
+    {
+      "text": "a times b",
+      "register": "standard"
+    },
+    {
+      "text": "a multiplied by b",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "a かける b",
+  "name_en": "multiplication sign",
+  "name_ja": "かける（× ・）",
+  "term_ref": "multiplication",
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "notes": [
+    "× も · も並べて書いた ab も、読みは a times b。",
+    "× は外積（u × v、cross）や行列の型（2 × 3、two by three）にも使い、そのときは times と読まない（cross-product-cross、matrix-dimensions-by）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Foundation, CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "* times *": 15702,
+      "* multiplied by *": 279
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

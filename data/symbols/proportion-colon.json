@@ -1,0 +1,53 @@
+{
+  "id": "proportion-colon",
+  "latex": "a : b = c : d",
+  "spoken_en": [
+    {
+      "text": "a is to b as c is to d",
+      "register": "standard"
+    },
+    {
+      "text": "the ratio of a to b equals the ratio of c to d",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "a 対 b イコール c 対 d",
+  "name_en": "proportion",
+  "name_ja": "比例式",
+  "term_ref": "proportion",
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "notes": [
+    "a : b = c : d は a is to b as c is to d と読む。米国の教科書は比例式を a/b = c/d の分数の形で書くことが多く、そのときは a over b equals c over d と読む。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "is to * as * is to": 3
+    },
+    "sources": [
+      "khan-middle",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "expression-exponent",
+  "latex": "2^{x+1}",
+  "spoken_en": [
+    {
+      "text": "two to the x plus one",
+      "register": "standard"
+    },
+    {
+      "text": "two to the x plus one power",
+      "register": "spoken"
+    },
+    {
+      "text": "two raised to the quantity x plus one",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "2 の x+1 乗",
+  "name_en": "exponent that is an expression",
+  "name_ja": "指数が式のとき",
+  "term_ref": "power",
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "notes": [
+    "2^{x+1} はふつう two to the x plus one と読む。2ˣ + 1 と同じ音になるので、指数の終わりをはっきりさせたいときは power を付けて two to the x plus one power と言う。",
+    "the quantity で指数をくくる読み（two to the quantity x plus one）はまれ。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "to the n plus one !power | to the x plus one !power | to the k plus one !power | to the n minus one !power | to the x minus one !power": 203,
+      "to the quantity *": 2,
+      "to the n plus one power | to the x plus one power | to the k plus one power | to the n minus one power": 18
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

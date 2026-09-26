@@ -1,0 +1,71 @@
+{
+  "id": "numeric-fraction",
+  "latex": "\\tfrac{3}{4},\\ \\tfrac{1}{2}",
+  "spoken_en": [
+    {
+      "text": "one half",
+      "register": "standard"
+    },
+    {
+      "text": "three fourths",
+      "register": "standard"
+    },
+    {
+      "text": "three over four",
+      "register": "standard"
+    },
+    {
+      "text": "three quarters",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "4 分の 3 ／ 2 分の 1",
+  "name_en": "numerical fraction",
+  "name_ja": "数の分数",
+  "term_ref": "fraction",
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "notes": [
+    "数の分数は分母を序数で読む: 3/4 は three fourths、2/3 は two thirds、分子が 2 以上なら序数に s を付ける。1/2 は one half（a half）。",
+    "three over four とも読み、計算の途中では over が多い。quarter は 4 分の 1 の別の言い方で、fourth と同じ意味。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "one half": 608,
+      "one over four | three over four | one over three | two over three | one over five | two over five | three over five": 313,
+      "one quarter | three quarters": 25,
+      "one fourth | three fourths | one third | two thirds | one fifth | two fifths | three fifths": 371
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

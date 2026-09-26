@@ -1,0 +1,60 @@
+{
+  "id": "rational-expression-fraction",
+  "latex": "\\dfrac{x + 1}{x - 1}",
+  "spoken_en": [
+    {
+      "text": "x plus one, all over x minus one",
+      "register": "standard"
+    },
+    {
+      "text": "the quantity x plus one over the quantity x minus one",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "x − 1 分の x + 1",
+  "name_en": "fraction with expressions",
+  "name_ja": "式の分数",
+  "term_ref": "rational-expression",
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "notes": [
+    "分子・分母が式の分数は、all over で分子全体を分母で割ることを示す: x plus one, all over x minus one。",
+    "the quantity x plus one over the quantity x minus one と、かっこの代わりに the quantity を付けても言える。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "all over *": 130,
+      "over the quantity *": 6
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

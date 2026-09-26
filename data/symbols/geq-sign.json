@@ -1,0 +1,78 @@
+{
+  "id": "geq-sign",
+  "latex": "a \\geq b",
+  "spoken_en": [
+    {
+      "text": "a is greater than or equal to b",
+      "register": "standard"
+    },
+    {
+      "text": "a is at least b",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "a 大なりイコール b ／ a は b 以上",
+  "name_en": "greater-than-or-equal-to sign",
+  "name_ja": "以上（≧）",
+  "term_ref": "greater-than-or-equal-to",
+  "related": [
+    "inequality-symbols"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "notes": [
+    "x ≥ 0 は x is greater than or equal to zero と読む。is at least zero（少なくとも 0）とも言う。",
+    "米国の教科書は ≥ と書く（≧ との違いは inequality-symbols）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）〔用語・記号〕",
+      "note": "中1 A 数と式: ≧"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "greater than or equal to *": 355,
+      "is at least *": 67
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

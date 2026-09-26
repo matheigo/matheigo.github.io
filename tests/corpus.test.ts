@@ -1097,3 +1097,13 @@ describe("MICASE (phrases only)", () => {
     expect(sourceWeights(wordsFor(words, restricted, "terms"))).toEqual({ mit: 1 });
   });
 });
+
+describe("symbol patterns with alternatives and excluded words", () => {
+  it("counts either form and keeps an excluded neighbour out", () => {
+    const text = normalize("x equals negative three. y is negative two. the slope is negative. x minus three");
+    expect(countPattern(text, "equals negative * | is negative *")).toBe(2); // "is negative." ends a sentence
+    expect(countPattern(text, "!x minus *")).toBe(0);
+    expect(countPattern(text, "minus *")).toBe(1);
+    expect(countPattern(text, "the slope is * !three")).toBe(1);
+  });
+});

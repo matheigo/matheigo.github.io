@@ -56,7 +56,7 @@ mapping none で ja が本プロジェクトの訳語の語（米国の名前が
 3 冊はマニフェストの最後に置き、前からの 6 冊の文を減らさない（count の重複除去は先に出た方を残す）。Elementary と Intermediate は章を共有するので、
 重複除去の後の語数は Prealgebra 253,498・Elementary 316,432・Intermediate 209,982（Intermediate は 82 中 23 ファイルが写しとして落ちる）。
 
-### 用例コーパス（話し言葉）に足した MICASE（2026-09-26）
+### 用例コーパス（話し言葉）に足した MICASE（2026-09-25）
 
 参照ではなく用例コーパス（PLAN 15 の話し言葉）。**phrases の数え方にだけ使い、terms と symbols の判定には入れない**（manifest の `collections: ["phrases"]`。
 count.ts・decide.ts・probe.ts が terms・symbols の件数と重みから外す。lib.ts `forCollection`・`wordsFor`）。講義の書き起こしにほとんどない学生の側の言い方
@@ -64,7 +64,7 @@ count.ts・decide.ts・probe.ts が terms・symbols の件数と重みから外�
 
 | source id | コーパス | 収録 | 取得元 | ライセンス・利用条件 |
 |---|---|---|---|---|
-| micase | *The Michigan Corpus of Academic Spoken English*（TalkBank CABank の CHAT 版。152 の発話イベント、話者 1,571 人、1,695,540 語（MICASE Manual 表 4）。講義・discussion section・office hours・study group・lab・seminar・advising ほか 15 種） | 1997〜2001 年、University of Michigan | https://ca.talkbank.org/access/MICASE.html（DOI 10.21415/QT9V-2J96。書き起こしの zip は TalkBank にサインインした人だけが取れる。2026-09-26 に確かめた） | 研究・教育目的は無料、商用は許可が必要。TalkBank の決まりにより、使うときは下の文献を挙げる。使うのは件数だけで、本文は写さない（STYLE 原則 5 と同じ扱い） |
+| micase | *The Michigan Corpus of Academic Spoken English*（TalkBank CABank の CHAT 版。152 の発話イベント、話者 1,571 人、1,695,540 語（MICASE Manual 表 4）。講義・discussion section・office hours・study group・lab・seminar・advising ほか 15 種） | 1997〜2001 年、University of Michigan | https://ca.talkbank.org/access/MICASE.html（DOI 10.21415/QT9V-2J96。書き起こしの zip は TalkBank にサインインした人だけが取れる。2026-09-25 に確かめた） | 研究・教育目的は無料、商用は許可が必要。TalkBank の決まりにより、使うときは下の文献を挙げる。使うのは件数だけで、本文は写さない（STYLE 原則 5 と同じ扱い） |
 
 引用（TalkBank の MICASE のページの指定）: R. C. Simpson, S. L. Briggs, J. Ovens, and J. M. Swales. (1999). *The Michigan Corpus of Academic Spoken English*. Ann Arbor, MI: The Regents of the University of Michigan.
 

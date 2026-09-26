@@ -1,0 +1,59 @@
+{
+  "id": "parenthesized-quantity",
+  "latex": "(a + b)^2",
+  "spoken_en": [
+    {
+      "text": "the quantity a plus b, squared",
+      "register": "standard"
+    },
+    {
+      "text": "a plus b, all squared",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "かっこ a たす b の 2 乗",
+  "name_en": "the quantity (parentheses read aloud)",
+  "name_ja": "かっこでくくった式",
+  "term_ref": "parentheses",
+  "level": {
+    "jp": [
+      "中1",
+      "中3"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "notes": [
+    "かっこは読まず、the quantity でまとまりを示す。(a + b)² は the quantity a plus b, squared、2(x + 3) は two times the quantity x plus three。",
+    "a plus b squared と続けて読むと a + b² と区別できない。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the quantity *": 138,
+      "all squared": 6
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

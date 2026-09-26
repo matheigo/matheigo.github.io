@@ -1,0 +1,63 @@
+{
+  "id": "compound-inequality",
+  "latex": "a < x < b",
+  "spoken_en": [
+    {
+      "text": "x is between a and b",
+      "register": "standard"
+    },
+    {
+      "text": "a is less than x is less than b",
+      "register": "standard"
+    },
+    {
+      "text": "x is greater than a and less than b",
+      "register": "standard"
+    }
+  ],
+  "spoken_ja": "a 小なり x 小なり b ／ x は a より大きく b より小さい",
+  "name_en": "compound inequality",
+  "name_ja": "連なった不等式",
+  "term_ref": "inequality",
+  "level": {
+    "jp": [
+      "中1",
+      "数I"
+    ],
+    "us": [
+      "Algebra 1"
+    ]
+  },
+  "notes": [
+    "a < x < b は左から a is less than x is less than b と読むか、x を主語にして x is between a and b と言う。",
+    "端を含むか（≤）どうかが大事なときは、between だけでは伝わらないので記号どおりに読む（between a and b, inclusive とも言う）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "is between * and *": 119,
+      "is less than * is less than *": 88,
+      "is greater than * and less than *": 10
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

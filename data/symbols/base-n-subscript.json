@@ -1,0 +1,60 @@
+{
+  "id": "base-n-subscript",
+  "latex": "1011_{(2)},\\ 1011_2",
+  "spoken_en": [
+    {
+      "text": "one zero one one base two",
+      "register": "standard"
+    },
+    {
+      "text": "binary one zero one one",
+      "register": "standard"
+    },
+    {
+      "text": "one zero one one in base two",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "2 進法の 1011 ／ いち れい いち いち（2）",
+  "name_en": "base-n numeral",
+  "name_ja": "n 進法の表し方",
+  "term_ref": "base-n",
+  "level": {
+    "jp": [
+      "数A"
+    ],
+    "us": [
+      "Discrete Math"
+    ]
+  },
+  "notes": [
+    "1011₂ は数字を 1 つずつ読んで one zero one one base two と言う。2 進法なら in binary とも言う。",
+    "one thousand eleven とは読まない（10 進法の数ではない）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "!in !log !logarithm base two | !in !log !logarithm base five | !in !log !logarithm base eight | !in !log !logarithm base sixteen": 40,
+      "in binary": 20,
+      "in base two | in base five | in base eight | in base sixteen": 7
+    },
+    "sources": [
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

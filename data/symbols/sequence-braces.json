@@ -1,0 +1,63 @@
+{
+  "id": "sequence-braces",
+  "latex": "\\{a_n\\}",
+  "spoken_en": [
+    {
+      "text": "the sequence a sub n",
+      "register": "standard"
+    },
+    {
+      "text": "the sequence a n",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "数列 {aₙ} ／ 数列 a n",
+  "name_en": "sequence notation",
+  "name_ja": "数列の記号",
+  "term_ref": "sequence",
+  "level": {
+    "jp": [
+      "数B"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus BC",
+      "Calculus II"
+    ]
+  },
+  "notes": [
+    "{aₙ} は the sequence a sub n と読み、波かっこは読まない。",
+    "OpenStax Calculus Volume 2 は数列を {aₙ} と書く。添字が 0 から始まることもある（sequence-starting-index）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the sequence a sub * | the sequence of a sub *": 2,
+      "the sequence a n | the sequence of a n": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "yt:blackpenredpen"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

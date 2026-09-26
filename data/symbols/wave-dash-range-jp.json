@@ -1,0 +1,59 @@
+{
+  "id": "wave-dash-range-jp",
+  "latex": "3 \\sim 5",
+  "spoken_en": [
+    {
+      "text": "from three to five",
+      "register": "standard"
+    },
+    {
+      "text": "between three and five",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "3 から 5 ／ 10 以上 20 未満",
+  "name_en": "range written with a wave dash (Japanese)",
+  "name_ja": "範囲の〜",
+  "term_ref": null,
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": []
+  },
+  "notes": [
+    "日本の「3〜5」は英語では from three to five か between three and five と言う。数えた形は定積分の端（from one to three）とも重なる。",
+    "端を含むかは「〜」でも to でもはっきりしないので、必要なら inclusive と言うか不等号で書く。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "from one to * | from two to * | from three to * | from four to * | from five to * | from ten to *": 472,
+      "between one and * | between two and * | between three and * | between four and * | between five and * | between ten and *": 150
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

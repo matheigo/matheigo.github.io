@@ -1,0 +1,62 @@
+{
+  "id": "fractional-exponent",
+  "latex": "a^{1/n},\\ a^{m/n}",
+  "spoken_en": [
+    {
+      "text": "a to the m over n",
+      "register": "standard"
+    },
+    {
+      "text": "a to the one half",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "a の n 分の 1 乗 ／ a の n 分の m 乗",
+  "name_en": "rational exponent",
+  "name_ja": "分数の指数",
+  "term_ref": "rational-exponent",
+  "level": {
+    "jp": [
+      "数II"
+    ],
+    "us": [
+      "Algebra 2",
+      "Precalculus"
+    ]
+  },
+  "notes": [
+    "a^{m/n} は a to the m over n と読む。x^{1/2} は x to the one half（x to the half とも）。",
+    "a^{1/n} は the nth root of a と同じ値で、根号で言いかえることも多い。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "to the * over *": 988,
+      "to the one half | to the one third | to the two thirds | to the three halves": 67
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

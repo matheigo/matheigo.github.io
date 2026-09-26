@@ -1,0 +1,75 @@
+{
+  "id": "fraction-a-over-b",
+  "latex": "\\dfrac{a}{b}",
+  "spoken_en": [
+    {
+      "text": "a over b",
+      "register": "standard"
+    },
+    {
+      "text": "a divided by b",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "b 分の a",
+  "name_en": "fraction",
+  "name_ja": "分数",
+  "term_ref": "fraction",
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Algebra 1"
+    ]
+  },
+  "notes": [
+    "a/b は a over b と読む。日本語は分母から読むが、英語は分子から読む。",
+    "分子・分母が式のときは all over や the quantity でまとまりを示す（rational-expression-fraction）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Foundation, CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "* over *": 20456,
+      "* divided by *": 2635
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

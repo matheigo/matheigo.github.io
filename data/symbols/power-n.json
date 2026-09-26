@@ -1,0 +1,71 @@
+{
+  "id": "power-n",
+  "latex": "x^n",
+  "spoken_en": [
+    {
+      "text": "x to the n",
+      "register": "standard"
+    },
+    {
+      "text": "x to the nth power",
+      "register": "spoken"
+    },
+    {
+      "text": "x to the nth",
+      "register": "spoken"
+    },
+    {
+      "text": "x to the power of n",
+      "register": "spoken"
+    }
+  ],
+  "spoken_ja": "x の n 乗",
+  "name_en": "nth power",
+  "name_ja": "n 乗",
+  "term_ref": "power",
+  "level": {
+    "jp": [
+      "中1",
+      "数II"
+    ],
+    "us": [
+      "Algebra 1",
+      "Algebra 2"
+    ]
+  },
+  "notes": [
+    "xⁿ は x to the n と読む。x to the nth（power）とも言う。",
+    "x^{n+1} は x to the n plus one と読み、xⁿ + 1 と聞き分けにくい（expression-exponent）。"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "to the n !power": 711,
+      "to the nth power": 32,
+      "to the nth !power": 19,
+      "to the power of n": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}
