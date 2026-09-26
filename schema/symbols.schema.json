@@ -22,6 +22,32 @@
     "spoken_ja": { "type": "string", "minLength": 1 },
     "name_en": { "type": "string", "minLength": 1 },
     "name_ja": { "type": "string", "minLength": 1 },
+    "category": {
+      "enum": [
+        "arithmetic",
+        "fractions",
+        "exponents",
+        "roots",
+        "subscripts",
+        "functions",
+        "trigonometry",
+        "logarithms",
+        "limits",
+        "derivatives",
+        "integrals",
+        "sums",
+        "sets",
+        "logic",
+        "vectors",
+        "matrices",
+        "complex-numbers",
+        "number-theory",
+        "probability-statistics",
+        "geometry",
+        "notation-other"
+      ],
+      "description": "The unit the symbol is listed under on /symbols (四則 … 幾何, その他の記法). Was read from ledger/symbols.csv (column category) at build time until Phase 5 (DECISIONS, Phase 5 の前: スキーマ変更)."
+    },
     "term_ref": { "anyOf": [{ "$ref": "_common.schema.json#/$defs/id" }, { "type": "null" }] },
     "related": {
       "type": "array",

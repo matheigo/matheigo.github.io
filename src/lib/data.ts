@@ -1,5 +1,4 @@
 /** Build-time access to data/. Vite's import.meta.glob keeps the site static. */
-import symbolLedger from "../../ledger/symbols.csv?raw";
 import { CORPUS_SOURCES } from "../../scripts/corpus/sources";
 import { isExplanatoryTranslation } from "./gloss";
 
@@ -93,6 +92,7 @@ export interface Symbol_ {
   spoken_ja: string;
   name_en: string;
   name_ja: string;
+  category?: string;
   term_ref?: string | null;
   related?: string[];
   level: Level;
@@ -303,9 +303,8 @@ export const COVERAGE_LABELS: Record<string, string> = {
 // symbols by unit ---------------------------------------------------------------
 
 /**
- * The symbols schema has no unit field; the Phase 3 ledger groups every row by
- * unit (ledger/symbols.csv, column `category`). The page reads that column
- * rather than adding a field to the schema (DECISIONS, Phase 4).
+ * Units of /symbols, in page order. Each symbol names its unit in the optional
+ * `category` field (moved from ledger/symbols.csv into the data in Phase 5).
  */
 export const SYMBOL_CATEGORIES: [string, string][] = [
   ["arithmetic", "四則"],
@@ -331,42 +330,7 @@ export const SYMBOL_CATEGORIES: [string, string][] = [
   ["notation-other", "その他の記法"],
 ];
 
-/** Minimal CSV reader for the ledger (quoted cells may hold commas). */
-export function parseCsv(text: string): string[][] {
-  const rows: string[][] = [];
-  let row: string[] = [];
-  let cell = "";
-  let quoted = false;
-  for (let i = 0; i < text.length; i++) {
-    const c = text[i];
-    if (quoted) {
-      if (c === '"' && text[i + 1] === '"') {
-        cell += '"';
-        i++;
-      } else if (c === '"') quoted = false;
-      else cell += c;
-    } else if (c === '"') quoted = true;
-    else if (c === ",") {
-      row.push(cell);
-      cell = "";
-    } else if (c === "\n" || c === "\r") {
-      if (c === "\r" && text[i + 1] === "\n") i++;
-      row.push(cell);
-      rows.push(row);
-      row = [];
-      cell = "";
-    } else cell += c;
-  }
-  if (cell || row.length) {
-    row.push(cell);
-    rows.push(row);
-  }
-  return rows.filter((r) => r.some((x) => x !== ""));
-}
-
-const ledgerRows = parseCsv(symbolLedger);
-const catCol = ledgerRows[0].indexOf("category");
-export const symbolCategory = new Map(ledgerRows.slice(1).map((r) => [r[0], r[catCol] || "notation-other"]));
+export const symbolCategory = new Map(symbols.map((s) => [s.id, s.category || "notation-other"]));
 
 // curriculum order -------------------------------------------------------------
 

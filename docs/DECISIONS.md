@@ -935,3 +935,7 @@
 - 2026-09-26 | 4 | OGP 画像は scripts/build-og.ts（prebuild）が satori ＋ sharp で作る。フォントは @fontsource/noto-sans-jp（OFL）の woff を、文字が入っている unicode-range の部分だけ読む（satori は同じ名前の書体の間で字形を探さないので、部分ごとに別の名前にして並べる）。作るのはサイト共通の 1 枚と、verified の用語・記号・慣習差のページの分だけ（今は共通の 1 枚）。noindex のページは共通の画像を使う。説明の訳の語の画像には印を入れる | 公開前のページは見つけられる・共有されることを想定しない。1,500 枚を毎回作らない
 - 2026-09-26 | 4 | 完了条件は scripts/perf/measure.ts（`pnpm perf`）で測る: Lighthouse は既定のモバイル設定で代表 9 ページを 3 回ずつ（中央値）、公開ビルドと未確認を表示したビルドの両方。「初回の検索までの時間」は、CPU 4 倍遅く・Lighthouse のモバイルと同じ回線（RTT 150 ms、1.6 Mbps）で、トップを開いてすぐ打ったときの結果までの時間（ナビゲーションの開始から）とした。DevTools の Slow 4G（遅延 562.5 ms）の値も並べて出す | 「スマホ相当の低速設定」を Lighthouse（モバイル）と同じ設定と読んだ。厳しい方の値も隠さない
 - 2026-09-26 | 4 | 計測で見つけて直した: スクリプトが届く前に打った文字が検索されなかった（読み込み時に入力欄に文字があれば検索する）。MiniSearch を addAllAsync で分けて作る（トップの TBT 112 ms → 0 ms） | 遅い回線ではスクリプトより先に打てる
+
+## Phase 5 の前: スキーマ変更（記号の単元）— 2026-09-26
+
+- 2026-09-26 | 5 | **スキーマ変更**: symbols に任意項目 `category`（21 区分の enum。arithmetic 四則 〜 geometry 幾何、notation-other その他の記法）を足し、220 記号すべてに ledger/symbols.csv の category 列の値を書き込んだ。サイト（src/lib/data.ts）は台帳の CSV を読むのをやめてデータを読む。symbols.csv の書き出しにも category の列を足した | ユーザーの了承（phase4-report G-3）。台帳は Phase 3 の候補の表で、公開するデータに単元が無いと JSON を使う人が単元で分けられない

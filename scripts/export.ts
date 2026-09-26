@@ -87,11 +87,12 @@ export function termsCsv(terms: Entry[]): string {
 }
 
 function symbolsCsv(rows: Entry[]): string {
-  const header = ["id", "name_ja", "name_en", "latex", "spoken_en", "spoken_ja", "term_ref", "level_jp", "level_us", "confidence"];
+  const header = ["id", "category", "name_ja", "name_en", "latex", "spoken_en", "spoken_ja", "term_ref", "level_jp", "level_us", "confidence"];
   return toCsv([
     header,
     ...rows.map((d) => [
       d.id,
+      d.category ?? "",
       d.name_ja,
       d.name_en,
       d.latex,
