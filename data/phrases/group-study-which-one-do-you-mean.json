@@ -1,0 +1,40 @@
+{
+  "id": "group-study-which-one-do-you-mean",
+  "situation": "group-study",
+  "intent": "相手がどれのことを言っているか確かめる",
+  "en": "Which one? The second equation?",
+  "ja": "どれのこと？ 2 本目の式？",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "Are you talking about the second equation?",
+      "register": "casual"
+    },
+    {
+      "en": "Do you mean the second equation?",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "group-study",
+    "checking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "are you talking about": 17,
+      "which one !of !is !you !we !they": 58,
+      "do you mean the": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

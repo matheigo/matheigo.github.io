@@ -1,0 +1,34 @@
+{
+  "id": "discord-quiz-covers",
+  "situation": "discord",
+  "intent": "小テストの範囲を確認する",
+  "en": "Is 4.3 on the quiz too?",
+  "ja": "小テストって 4.3 も入る？",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "Does the quiz cover 4.3?",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "discord",
+    "exam"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "on the quiz | on the test | on the exam": 19
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "group-study-i-thought-it-was",
+  "situation": "group-study",
+  "intent": "自分の思っていたことと違うと言う",
+  "en": "Wait, I thought it was negative.",
+  "ja": "あれ、答えは負の数だと思ってたんだけど。",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "I thought you said the answer was 5.",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "group-study",
+    "checking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "i thought it was | i thought that was": 66,
+      "i thought you": 18
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "discord-thanks",
+  "situation": "discord",
+  "intent": "チャットで手短にお礼を言う",
+  "en": "thanks, that helped",
+  "ja": "ありがとう、助かった！",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "ty!",
+      "register": "casual",
+      "note": "thank you の略。数えない。"
+    }
+  ],
+  "tags": [
+    "discord",
+    "thanks"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "that helped | that helps": 23
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

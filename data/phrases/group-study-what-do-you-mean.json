@@ -1,0 +1,35 @@
+{
+  "id": "group-study-what-do-you-mean",
+  "situation": "group-study",
+  "intent": "相手の言ったことの意味を聞き返す",
+  "en": "What do you mean by \"they cancel here\"?",
+  "ja": "「ここで打ち消し合う」ってどういう意味？",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "What does that mean?",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "group-study",
+    "checking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "what do you mean": 37,
+      "what does that mean": 17
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

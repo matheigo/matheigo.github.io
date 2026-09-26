@@ -1,0 +1,40 @@
+{
+  "id": "group-study-do-you-see-what-i-mean",
+  "situation": "group-study",
+  "intent": "自分の説明が伝わっているか確かめる",
+  "en": "Do you see what I mean?",
+  "ja": "言いたいこと、伝わってる？",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "Do you know what I'm saying?",
+      "register": "casual"
+    },
+    {
+      "en": "Does that make sense?",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "group-study",
+    "explaining"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "see what i mean | know what i mean": 101,
+      "know what i'm saying | see what i'm saying": 71,
+      "does that make sense": 25
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

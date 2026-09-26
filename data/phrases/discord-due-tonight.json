@@ -1,0 +1,30 @@
+{
+  "id": "discord-due-tonight",
+  "situation": "discord",
+  "intent": "締め切りを確認する",
+  "en": "Is the hw due tonight at 11:59?",
+  "ja": "課題って今夜 11:59 締め切り？",
+  "register": "casual",
+  "tags": [
+    "discord",
+    "deadlines"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-student-rare",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い due tonight | due at midnight で 0 件）。draft のまま。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

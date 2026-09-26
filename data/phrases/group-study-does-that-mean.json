@@ -1,0 +1,35 @@
+{
+  "id": "group-study-does-that-mean",
+  "situation": "group-study",
+  "intent": "聞いたことから分かることを確かめる",
+  "en": "Does that mean it's not differentiable at x = 0?",
+  "ja": "ということは、x = 0 では微分できないってこと？",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "So that means the limit doesn't exist?",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "group-study",
+    "checking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "does that mean | does this mean": 37,
+      "so that means": 12
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "discord-hint-no-spoilers",
+  "situation": "discord",
+  "intent": "答えではなくヒントだけを頼む",
+  "en": "Can someone give me a hint? No full solutions pls.",
+  "ja": "ヒントだけちょうだい。答えは書かないで。",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "Just a nudge please, no spoilers.",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "discord",
+    "asking",
+    "hints"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "a hint | any hints": 2
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い a hint | any hints で 2 件）。Math Stack Exchange の質問で a hint | any hints が 35895 件（3 件以上）なので likely。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

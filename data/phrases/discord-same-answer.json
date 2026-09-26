@@ -1,0 +1,42 @@
+{
+  "id": "discord-same-answer",
+  "situation": "discord",
+  "intent": "自分も同じ答えになったと言う",
+  "en": "I got the same answer — 12.",
+  "ja": "自分も 12 になった。",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "Same, I got 12 too.",
+      "register": "casual",
+      "note": "数えない（same はほかの使い方と分けられない）。"
+    },
+    {
+      "en": "+1",
+      "register": "casual",
+      "note": "同意の印。数えない。"
+    }
+  ],
+  "tags": [
+    "discord",
+    "answers"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い i got the same | got the same answer で 0 件）。Math Stack Exchange の質問で i got the same | got the same answer が 285 件（3 件以上）なので likely。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

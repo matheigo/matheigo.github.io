@@ -998,6 +998,102 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Let's do the practice exam under timed conditions.": "practice exam | practice test | practice midterm",
     "Let's time ourselves.": "time ourselves | timed conditions",
   },
+  "group-study-what-is-it-asking": {
+    "What is this question even asking?": "what is it asking | what's it asking | what is this question asking",
+    "What are they asking for here?": "what are they asking",
+  },
+  "group-study-where-do-we-start": {
+    "Any ideas for number 7?": "!have any ideas",
+    "Where do we even start with this one?": "where do we start | where do i start | where to start",
+  },
+  "discord-anyone-get": {
+    "Did anyone get #3?": "did anyone get | has anyone gotten",
+    "anyone figure out 3?": "anyone figure out | anyone figured out",
+  },
+  "discord-due-tonight": {
+    "Is the hw due tonight at 11:59?": "due tonight | due at midnight",
+  },
+  "discord-can-someone-explain": {
+    "Can someone explain why the limit is 0 here?": "can someone explain | could someone explain",
+  },
+  "discord-here-is-my-work": {
+    "Here's my work so far — where did I go wrong?": "here's my work | here is my work",
+    "Where did I go wrong?": "where did i go wrong",
+  },
+  "discord-hint-no-spoilers": {
+    "Can someone give me a hint? No full solutions pls.": "a hint | any hints",
+    "Just a nudge please, no spoilers.": "no spoilers | no full solutions",
+  },
+  "discord-nvm-figured-it-out": {
+    "never mind, got it": "never mind | nevermind",
+    "nvm, figured it out": "figured it out",
+  },
+  "discord-thanks": {
+    "thanks, that helped": "that helped | that helps",
+    "ty!": "",
+  },
+  "discord-same-answer": {
+    "I got the same answer — 12.": "i got the same | got the same answer",
+    "Same, I got 12 too.": "",
+    "+1": "",
+  },
+  "discord-notes-from-today": {
+    "Does anyone have notes from today's lecture?": "anyone have notes | anyone have the notes | notes from today",
+  },
+  "discord-office-hours-today": {
+    "Are office hours still happening today?": "office hours today | office hours still",
+  },
+  "discord-quiz-covers": {
+    "Is 4.3 on the quiz too?": "on the quiz | on the test | on the exam",
+    "Does the quiz cover 4.3?": "quiz cover | exam cover | test cover",
+  },
+  "discord-when-is-the-midterm": {
+    "When's the midterm again?": "when is the midterm | when's the midterm | when is the exam | when's the exam",
+  },
+  "discord-typo-in-the-pset": {
+    "I think there's a typo in #5 on the pset.": "a typo in | typo in the",
+  },
+  "discord-right-channel": {
+    "Is this the right channel for calc questions?": "right channel",
+    "Is this the right place to ask?": "the right place to ask | right place to ask",
+  },
+  "discord-study-on-a-call": {
+    "Anyone want to hop on a call and study tonight?": "hop on a call | jump on a call | on a zoom call",
+  },
+  "office-hours-i-was-wondering": {
+    "I was wondering if you could look over my answer to number 2.": "i was wondering if",
+    "I was wondering whether this counts as a proof.": "i was wondering whether",
+  },
+  "group-study-does-that-mean": {
+    "Does that mean it's not differentiable at x = 0?": "does that mean | does this mean",
+    "So that means the limit doesn't exist?": "so that means",
+  },
+  "group-study-which-one-do-you-mean": {
+    "Which one? The second equation?": "which one !of !is !you !we !they",
+    "Are you talking about the second equation?": "are you talking about",
+    "Do you mean the second equation?": "do you mean the",
+  },
+  "group-study-is-that-right": {
+    "Is it just 2x?": "is it just",
+    "The answer is 3, is that right?": "is that right",
+  },
+  "group-study-so-youre-saying": {
+    "Oh, so we find a common denominator first?": "oh so",
+    "So you're saying we should find a common denominator first?": "so you're saying | so you are saying",
+  },
+  "group-study-i-thought-it-was": {
+    "Wait, I thought it was negative.": "i thought it was | i thought that was",
+    "I thought you said the answer was 5.": "i thought you",
+  },
+  "group-study-do-you-see-what-i-mean": {
+    "Do you see what I mean?": "see what i mean | know what i mean",
+    "Do you know what I'm saying?": "know what i'm saying | see what i'm saying",
+    "Does that make sense?": "does that make sense",
+  },
+  "group-study-what-do-you-mean": {
+    "What do you mean by \"they cancel here\"?": "what do you mean",
+    "What does that mean?": "what does that mean",
+  },
 };
 
 /**

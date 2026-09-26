@@ -1,0 +1,37 @@
+{
+  "id": "discord-here-is-my-work",
+  "situation": "discord",
+  "intent": "自分の途中式を貼って、どこが違うか聞く",
+  "en": "Here's my work so far — where did I go wrong?",
+  "ja": "途中までの計算貼るね。どこが違う？",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "Where did I go wrong?",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "discord",
+    "asking",
+    "mistakes"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い here's my work | here is my work で 0 件）。Math Stack Exchange の質問で where did i go wrong が 2305 件（3 件以上）なので likely。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

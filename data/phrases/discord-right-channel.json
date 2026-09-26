@@ -1,0 +1,35 @@
+{
+  "id": "discord-right-channel",
+  "situation": "discord",
+  "intent": "質問する場所がここでよいか確認する",
+  "en": "Is this the right channel for calc questions?",
+  "ja": "微積の質問ってここでいい？",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "Is this the right place to ask?",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "discord"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い right channel で 0 件）。Math Stack Exchange の質問で the right place to ask | right place to ask が 313 件（3 件以上）なので likely。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

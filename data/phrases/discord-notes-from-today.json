@@ -1,0 +1,30 @@
+{
+  "id": "discord-notes-from-today",
+  "situation": "discord",
+  "intent": "講義ノートを持っている人がいるか聞く",
+  "en": "Does anyone have notes from today's lecture?",
+  "ja": "今日の講義ノート持ってる人いる？",
+  "register": "casual",
+  "tags": [
+    "discord",
+    "notes"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-student-rare",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い anyone have notes | anyone have the notes | notes from today で 0 件）。draft のまま。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

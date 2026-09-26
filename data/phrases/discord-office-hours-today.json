@@ -1,0 +1,30 @@
+{
+  "id": "discord-office-hours-today",
+  "situation": "discord",
+  "intent": "今日のオフィスアワーがあるか確認する",
+  "en": "Are office hours still happening today?",
+  "ja": "今日のオフィスアワーってある？",
+  "register": "casual",
+  "tags": [
+    "discord",
+    "office-hours"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い office hours today | office hours still で 0 件）。Math Stack Exchange の質問で office hours today | office hours still が 5 件（3 件以上）なので likely。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

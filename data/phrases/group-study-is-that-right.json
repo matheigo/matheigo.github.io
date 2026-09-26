@@ -1,0 +1,35 @@
+{
+  "id": "group-study-is-that-right",
+  "situation": "group-study",
+  "intent": "自分の答えが合っているか確かめる",
+  "en": "Is it just 2x?",
+  "ja": "答えは 3 で合ってる？",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "The answer is 3, is that right?",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "group-study",
+    "checking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "is it just": 17,
+      "is that right": 15
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

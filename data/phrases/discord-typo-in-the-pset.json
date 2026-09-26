@@ -1,0 +1,30 @@
+{
+  "id": "discord-typo-in-the-pset",
+  "situation": "discord",
+  "intent": "課題の誤植を指摘する",
+  "en": "I think there's a typo in #5 on the pset.",
+  "ja": "課題の 5 番、誤植っぽくない？",
+  "register": "casual",
+  "tags": [
+    "discord",
+    "mistakes"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い a typo in | typo in the で 0 件）。Math Stack Exchange の質問で a typo in | typo in the が 1176 件（3 件以上）なので likely。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "office-hours-i-was-wondering",
+  "situation": "office-hours",
+  "intent": "丁寧に頼みごとを切り出す",
+  "en": "I was wondering if you could look over my answer to number 2.",
+  "ja": "2 番の答えを見ていただけないかと思いまして。",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "I was wondering whether this counts as a proof.",
+      "register": "polite"
+    }
+  ],
+  "tags": [
+    "office-hours",
+    "asking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "i was wondering if": 10,
+      "i was wondering whether": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "discord-anyone-get",
+  "situation": "discord",
+  "intent": "クラスのチャットで、ある問題が解けた人がいるか聞く",
+  "en": "Did anyone get #3?",
+  "ja": "3 番解けた人いる？",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "anyone figure out 3?",
+      "register": "casual",
+      "note": "チャットでは文頭を小文字で書くことが多い。"
+    }
+  ],
+  "tags": [
+    "discord",
+    "asking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "did anyone get | has anyone gotten": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い did anyone get | has anyone gotten で 1 件）。Math Stack Exchange の質問で anyone figure out | anyone figured out が 43 件（3 件以上）なので likely。",
+      "raised": "2026-09-26"
+    }
+  ]
+}
