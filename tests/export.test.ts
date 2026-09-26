@@ -21,7 +21,7 @@ const verified = (e: Entry): Entry => ({ ...e, confidence: "verified" });
 // rate: 割合 → "ratio to the base amount", an explanatory translation (mapping none + corpus-no-fixed-expression).
 const rate = read("terms", "rate");
 const quadratic = read("terms", "quadratic-formula");
-const substitute = read("terms", "substitute"); // stays likely
+const substitute = { ...read("terms", "substitute"), confidence: "likely" }; // a likely fixture (the real entry was verified by the Phase 5 audit)
 const symbol = read("symbols", "integral-definite");
 const phrase = read("phrases", "office-hours-stuck-at-step");
 
