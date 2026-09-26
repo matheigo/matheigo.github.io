@@ -2,17 +2,17 @@
   "id": "exam-clarify-instruction",
   "situation": "exam",
   "intent": "試験中に、問題文の指示の意味を確認する",
-  "en": "Does \"simplify\" here mean I should rationalize the denominator?",
-  "ja": "ここでの simplify は、分母を有理化しろという意味ですか。",
+  "en": "What do you mean by \"simplify\" here?",
+  "ja": "ここでの simplify はどういう意味ですか。",
   "register": "polite",
   "variants": [
     {
-      "en": "Do you want the answer in exact form or as a decimal?",
+      "en": "When it says \"simplify,\" do you want us to rationalize the denominator?",
       "register": "polite"
     },
     {
-      "en": "Should I show all the steps for this one?",
-      "register": "polite"
+      "en": "Are we supposed to rationalize the denominator?",
+      "register": "neutral"
     }
   ],
   "tags": [
@@ -25,16 +25,16 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-10",
+  "updated": "2026-09-26",
   "evidence": {
-    "sources": [],
-    "counted": "2026-09-25"
-  },
-  "flags": [
-    {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
-      "raised": "2026-09-25"
-    }
-  ]
+    "spoken": {
+      "what do you mean by": 10,
+      "do you want us to": 8,
+      "are we supposed to": 8
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
 }

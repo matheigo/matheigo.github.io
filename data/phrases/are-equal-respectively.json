@@ -1,0 +1,39 @@
+{
+  "id": "are-equal-respectively",
+  "situation": "written-solution",
+  "intent": "対応する辺がそれぞれ等しいと書く",
+  "en": "AB, BC, and CA are equal to DE, EF, and FD, respectively.",
+  "ja": "3 組の辺がそれぞれ等しい。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "AB = DE, BC = EF, and CA = FD.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "geometry",
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "respectively": 196
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-introstats",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-26"
+  }
+}

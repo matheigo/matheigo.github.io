@@ -1,0 +1,38 @@
+{
+  "id": "class-listening-office-hours-are",
+  "situation": "class-listening",
+  "intent": "オフィスアワーの時間を伝える",
+  "en": "My office hours are Tuesdays from 2 to 4.",
+  "ja": "オフィスアワーは火曜の 2 時から 4 時です。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Come see me in office hours.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "classroom",
+    "office-hours"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "office hours": 30,
+      "come see me | come and see me": 5
+    },
+    "sources": [
+      "khan-ap-calc",
+      "micase",
+      "mit-18.01",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

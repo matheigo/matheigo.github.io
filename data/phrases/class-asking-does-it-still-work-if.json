@@ -1,0 +1,35 @@
+{
+  "id": "class-asking-does-it-still-work-if",
+  "situation": "class-asking",
+  "intent": "条件を変えても成り立つかを聞く",
+  "en": "What if x is negative?",
+  "ja": "x が負だったらどうなりますか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Does this still work if x is negative?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "asking",
+    "conditions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "what if": 82,
+      "does it still work | does that still work | does this still work": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

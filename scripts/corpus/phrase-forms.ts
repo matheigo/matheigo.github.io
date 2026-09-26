@@ -24,14 +24,13 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   // The variants are three different questions, not three ways to ask one (see the Phase 3 prep report).
   "exam-clarify-instruction": {
-    'Does "simplify" here mean I should rationalize the denominator?': "does … mean i should",
-    "Do you want the answer in exact form or as a decimal?": "in exact form",
-    "Should I show all the steps for this one?": "show all … steps | show all the work | show your work",
+    "What do you mean by \"simplify\" here?": "what do you mean by",
+    "When it says \"simplify,\" do you want us to rationalize the denominator?": "do you want us to",
+    "Are we supposed to rationalize the denominator?": "are we supposed to",
   },
   "explaining-solution-first-step": {
     "First I set the two expressions equal, then I solved for x and checked the answer.": "first i",
     "What I did was set them equal and solve for x.": "what i did was",
-    "I started by setting the two expressions equal to each other.": "i started by | i start by",
   },
   "office-hours-stuck-at-step": {
     "I'm confused about how you got from this line to the next one.": "i'm confused | i am confused",
@@ -41,7 +40,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   "written-solution-therefore": {
     "Therefore x = 3 is the only solution.": "therefore",
     "Hence x = 3 is the only solution.": "hence",
-    "So x = 3 is the only solution.": "", // "so" is everywhere; a sentence-initial So cannot be told apart
+    "So x = 3 is the only solution.": "",
   },
   "dont-forget-the-plus-c": {
     "Don't forget the plus C.": "plus c",
@@ -236,6 +235,181 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   "check-the-sign": {
     "Let's check the sign of f prime on each interval.": "sign of f prime | the sign of the derivative",
     "Check the sign.": "check the sign",
+  },
+  "omit": {
+    "We usually leave out the multiplication sign.": "multiplication sign | times sign | multiplication symbol",
+  },
+  "in-order": {
+    "Work from left to right.": "left to right | from left to right",
+  },
+  "by-hypothesis": {
+    "By hypothesis, AB = CD.": "by hypothesis",
+    "By assumption, AB = CD.": "by assumption",
+    "Since AB = CD is given,": "",
+  },
+  "since": {
+    "Since f′(x) > 0, f is increasing.": "since",
+    "Because f′(x) > 0, f is increasing.": "because",
+  },
+  "are-equal-respectively": {
+    "AB, BC, and CA are equal to DE, EF, and FD, respectively.": "respectively",
+    "AB = DE, BC = EF, and CA = FD.": "",
+  },
+  "divide-the-figure": {
+    "Break the figure up into rectangles and triangles.": "into rectangles | into triangles | into two triangles | into a rectangle | into two rectangles",
+    "Break it up into smaller shapes.": "into smaller shapes | into simpler shapes | into shapes we know",
+  },
+  "square-and-add": {
+    "Square both equations and add them.": "square both equations",
+    "Square and add.": "square and add | square them and add | square … and add them",
+  },
+  "class-listening-does-that-make-sense": {
+    "Any questions before we move on?": "any questions",
+    "Does that make sense?": "does that make sense | does this make sense",
+  },
+  "class-listening-take-out-a-sheet-of-paper": {
+    "Take out a sheet of paper.": "take out a sheet of paper | take out a piece of paper | get out a piece of paper | get out a sheet of paper",
+    "Clear your desks — it's a pop quiz.": "pop quiz",
+  },
+  "class-listening-turn-to-page": {
+    "Turn to page 112.": "turn to page",
+    "Open your books to page 112.": "open your books to | open your book to",
+  },
+  "class-listening-homework-is": {
+    "For homework, do section 3.2, problems 1 through 25, odds.": "for homework",
+    "Tonight's homework is 3.2, odd problems 1 to 25.": "homework is | tonight's homework",
+  },
+  "class-listening-answers-in-the-back": {
+    "The answers to the odd-numbered problems are in the back of the book.": "back of the book | back of your book",
+  },
+  "class-listening-its-due": {
+    "It's due Friday.": "it's due !to | is due !to | due on",
+    "Turn it in at the start of class on Friday.": "turn it in | hand it in",
+  },
+  "class-listening-pass-your-papers-forward": {
+    "Pass your papers forward.": "pass … forward | pass your papers | pass … to the front",
+    "Pass them up to the front.": "pass them up",
+  },
+  "class-listening-try-this-one": {
+    "Go ahead and try this one — I'll give you a couple of minutes.": "try this one",
+  },
+  "class-listening-work-with-a-partner": {
+    "Turn to your neighbor and compare answers.": "turn to your neighbor | talk to your neighbor | with your neighbor | turn to the person next to you",
+    "Work with a partner.": "with a partner",
+  },
+  "class-listening-who-wants-to-come-up": {
+    "Can I get a volunteer?": "a volunteer | any volunteers",
+    "Who wants to come up and do this one?": "come up to the board | come up and do | come on up",
+  },
+  "class-listening-write-this-down": {
+    "Write this down.": "write this down | write that down",
+    "You'll want this in your notes.": "in your notes",
+  },
+  "class-listening-this-will-be-on-the-test": {
+    "This will be on the test.": "on the test",
+    "This will be on the exam.": "on the exam",
+  },
+  "class-listening-you-dont-need-to-memorize": {
+    "You'll get a formula sheet, so you don't need to memorize this.": "formula sheet",
+    "You don't have to memorize this one.": "don't need to memorize | don't have to memorize | don't memorize | do not need to memorize",
+  },
+  "class-listening-common-mistake": {
+    "This is a really common mistake.": "common mistake | common error",
+    "Watch out — this is where people lose points.": "lose points",
+  },
+  "class-listening-notice-that": {
+    "Notice that the two triangles share a side.": "notice that",
+    "The key thing to see here is that they share a side.": "the key thing",
+  },
+  "class-listening-recall-that": {
+    "Remember that the derivative of sin x is cos x.": "remember that",
+    "Recall that the derivative of sin x is cos x.": "recall that",
+  },
+  "class-listening-whats-the-next-step": {
+    "What's the next step?": "next step",
+    "What do we do now? Anybody?": "what do we do now | what do we do next | what should we do next | what do i do now",
+  },
+  "class-listening-oops-good-catch": {
+    "Oops, my mistake — that should be a minus.": "my mistake | my bad",
+    "Good catch, thank you.": "thanks for catching | thank you for catching | good catch",
+  },
+  "class-listening-well-come-back-to-this": {
+    "We'll come back to this later.": "come back to this | come back to that",
+  },
+  "class-listening-extra-credit": {
+    "This one's for extra credit.": "extra credit",
+    "This is a bonus question.": "bonus question | bonus problem | bonus points",
+  },
+  "class-listening-lowest-quiz-dropped": {
+    "I'll drop your lowest quiz score.": "drop … lowest | lowest … dropped | lowest quiz",
+  },
+  "class-listening-final-is-cumulative": {
+    "The final is cumulative.": "is cumulative | final is cumulative | exam is cumulative",
+    "The final covers everything.": "covers everything",
+  },
+  "class-listening-office-hours-are": {
+    "My office hours are Tuesdays from 2 to 4.": "office hours",
+    "Come see me in office hours.": "come see me | come and see me",
+  },
+  "class-listening-raise-your-hand-if": {
+    "Raise your hand if you got 5.": "raise your hand",
+    "Thumbs up if you got 5.": "thumbs up",
+  },
+  "class-listening-lets-go-over-the-homework": {
+    "Let's go over the homework.": "go over the homework | go over homework | go over the problem set | go over the assignment",
+    "Any questions on the homework?": "questions on the homework | questions about the homework",
+  },
+  "class-listening-what-do-you-notice": {
+    "What happens if we make x bigger?": "what happens if",
+    "What do you notice?": "what do you notice",
+  },
+  "class-listening-same-idea-as-before": {
+    "This is the same idea as before.": "same idea",
+    "It's just like the last problem.": "just like the last problem | just like the last one | just like before",
+  },
+  "class-listening-warm-up": {
+    "Let's start with a quick warm-up.": "warm-up | warm up",
+  },
+  "class-listening-in-your-own-words": {
+    "Can you explain why that works?": "why that works | why this works | why does that work | why does this work",
+    "Explain it in your own words.": "in your own words",
+  },
+  "class-listening-sanity-check": {
+    "Does that answer make sense?": "answer make sense | answer makes sense | reasonable answer | answer is reasonable",
+    "Let's do a quick sanity check.": "sanity check",
+  },
+  "class-asking-where-did-that-come-from": {
+    "How do you get from this line to that one?": "how do you get",
+    "Where did the 2 come from?": "where did … come from | where does … come from | where'd … come from",
+  },
+  "class-asking-why-can-we": {
+    "How come we can divide by x here?": "how come",
+    "Why is that?": "why is that",
+  },
+  "class-asking-how-do-you-read-this": {
+    "How do you say this symbol out loud?": "how do you say",
+    "How do you pronounce this?": "how do you pronounce",
+  },
+  "class-asking-is-there-a-name-for-this": {
+    "What's it called?": "what's it called | what is it called | what's that called | what is that called",
+    "What do you call this in English?": "what do you call",
+  },
+  "class-asking-difference-between": {
+    "What's the difference between a local max and an absolute max?": "what's the difference between | what is the difference between",
+    "How is this different from a local max?": "how is … different from | how is that different",
+  },
+  "class-asking-can-i-write-it-this-way": {
+    "I wrote it as 2(x + 1) — is that okay?": "is that okay | is that ok | is that all right | is that alright",
+    "Can I just write it as 2x + 2?": "can i just",
+  },
+  "class-asking-does-it-still-work-if": {
+    "What if x is negative?": "what if",
+    "Does this still work if x is negative?": "does it still work | does that still work | does this still work",
+  },
+  "class-asking-typo-on-the-board": {
+    "Should that be a minus?": "should it be | shouldn't it be | should that be | shouldn't that be",
+    "Is that supposed to be x squared?": "is that supposed to be | is it supposed to be | isn't it supposed to be",
+    "I think there might be a typo.": "a typo",
   },
 };
 

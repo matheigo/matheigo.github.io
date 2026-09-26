@@ -1,0 +1,42 @@
+{
+  "id": "class-asking-is-there-a-name-for-this",
+  "situation": "class-asking",
+  "intent": "それに名前（英語の用語）があるかを聞く",
+  "en": "What's it called?",
+  "ja": "これって何て言うんですか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "What do you call this in English?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "asking",
+    "vocabulary"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "what's it called | what is it called | what's that called | what is that called": 8,
+      "what do you call": 5
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（MICASE の学生の発話で数えた。話: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満 ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "class-asking-difference-between",
+  "situation": "class-asking",
+  "intent": "2 つの用語・概念の違いを聞く",
+  "en": "What's the difference between a local max and an absolute max?",
+  "ja": "極大値と最大値の違いは何ですか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "How is this different from a local max?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "asking",
+    "vocabulary"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "what's the difference between | what is the difference between": 12,
+      "how is … different from | how is that different": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

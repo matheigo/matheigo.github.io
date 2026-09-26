@@ -1,0 +1,36 @@
+{
+  "id": "class-listening-who-wants-to-come-up",
+  "situation": "class-listening",
+  "intent": "黒板で解く人を募る",
+  "en": "Can I get a volunteer?",
+  "ja": "誰か前に出て解いてくれる人はいますか？",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Who wants to come up and do this one?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "classroom",
+    "board"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "a volunteer | any volunteers": 10,
+      "come up to the board | come up and do | come on up": 6
+    },
+    "sources": [
+      "micase",
+      "mit-6.042"
+    ],
+    "counted": "2026-09-26"
+  }
+}

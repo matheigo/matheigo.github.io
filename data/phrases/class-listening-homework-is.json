@@ -1,0 +1,41 @@
+{
+  "id": "class-listening-homework-is",
+  "situation": "class-listening",
+  "intent": "宿題の範囲を伝える",
+  "en": "For homework, do section 3.2, problems 1 through 25, odds.",
+  "ja": "宿題は 3.2 節の 1〜25 の奇数番です。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Tonight's homework is 3.2, odd problems 1 to 25.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "classroom",
+    "homework"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "for homework": 22,
+      "homework is | tonight's homework": 6
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-middle",
+      "micase",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

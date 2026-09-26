@@ -1,0 +1,37 @@
+{
+  "id": "divide-the-figure",
+  "situation": "class-listening",
+  "intent": "面積を求めるために図形を分割する",
+  "en": "Break the figure up into rectangles and triangles.",
+  "ja": "図形を長方形と三角形に分けましょう。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Break it up into smaller shapes.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "geometry",
+    "area"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "into rectangles | into triangles | into two triangles | into a rectangle | into two rectangles": 14
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-26"
+  }
+}

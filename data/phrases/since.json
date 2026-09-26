@@ -1,24 +1,19 @@
 {
-  "id": "written-solution-therefore",
+  "id": "since",
   "situation": "written-solution",
-  "intent": "答案で「よって」「したがって」と書く",
-  "en": "Therefore x = 3 is the only solution.",
-  "ja": "よって x = 3 が唯一の解である。",
+  "intent": "答案で理由を「〜なので」と書く",
+  "en": "Since f′(x) > 0, f is increasing.",
+  "ja": "f′(x) > 0 なので、f は増加する。",
   "register": "written",
   "variants": [
     {
-      "en": "Hence x = 3 is the only solution.",
+      "en": "Because f′(x) > 0, f is increasing.",
       "register": "written"
-    },
-    {
-      "en": "So x = 3 is the only solution.",
-      "register": "neutral",
-      "note": "therefore ／ hence より口語的。"
     }
   ],
   "tags": [
-    "writing",
-    "conclusion"
+    "proof",
+    "reasons"
   ],
   "sources": [
     {
@@ -29,8 +24,8 @@
   "updated": "2026-09-26",
   "evidence": {
     "written": {
-      "therefore": 1293,
-      "hence": 201
+      "since": 2161,
+      "because": 1523
     },
     "sources": [
       "mit-notes",

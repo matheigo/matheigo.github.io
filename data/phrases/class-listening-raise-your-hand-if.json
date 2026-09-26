@@ -1,0 +1,39 @@
+{
+  "id": "class-listening-raise-your-hand-if",
+  "situation": "class-listening",
+  "intent": "手を挙げさせて答えを確かめる",
+  "en": "Raise your hand if you got 5.",
+  "ja": "5 になった人は手を挙げてください。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Thumbs up if you got 5.",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "classroom",
+    "checking-understanding"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "raise your hand": 49,
+      "thumbs up": 1
+    },
+    "sources": [
+      "micase",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "class-listening-sanity-check",
+  "situation": "class-listening",
+  "intent": "答えが妥当かを確かめさせる",
+  "en": "Does that answer make sense?",
+  "ja": "その答え、妥当ですか？",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Let's do a quick sanity check.",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "checking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "answer make sense | answer makes sense | reasonable answer | answer is reasonable": 7,
+      "sanity check": 7
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（講義のコーパスと MICASE の教員の発話で数えた。話: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満 ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

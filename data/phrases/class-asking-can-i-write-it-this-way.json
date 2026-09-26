@@ -1,0 +1,35 @@
+{
+  "id": "class-asking-can-i-write-it-this-way",
+  "situation": "class-asking",
+  "intent": "自分の書き方でもよいか確かめる",
+  "en": "I wrote it as 2(x + 1) — is that okay?",
+  "ja": "2(x + 1) と書いたんですが、それでもいいですか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Can I just write it as 2x + 2?",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "asking",
+    "writing"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "is that okay | is that ok | is that all right | is that alright": 14,
+      "can i just": 6
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

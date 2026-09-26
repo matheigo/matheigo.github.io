@@ -1,0 +1,35 @@
+{
+  "id": "class-asking-where-did-that-come-from",
+  "situation": "class-asking",
+  "intent": "板書の式がどこから来たのか・どう変形したのかを聞く",
+  "en": "How do you get from this line to that one?",
+  "ja": "この行から次の行へはどうやって行くんですか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Where did the 2 come from?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "asking",
+    "derivation"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "how do you get": 20,
+      "where did … come from | where does … come from | where'd … come from": 4
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

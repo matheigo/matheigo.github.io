@@ -1,0 +1,43 @@
+{
+  "id": "class-listening-final-is-cumulative",
+  "situation": "class-listening",
+  "intent": "期末試験が全範囲から出ると伝える",
+  "en": "The final is cumulative.",
+  "ja": "期末試験は全範囲です。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "The final covers everything.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "classroom",
+    "exam"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "covers everything": 9
+    },
+    "sources": [
+      "micase",
+      "mit-6.042",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（講義のコーパスと MICASE の教員の発話で数えた。話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

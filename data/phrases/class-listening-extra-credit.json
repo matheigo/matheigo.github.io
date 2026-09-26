@@ -1,0 +1,45 @@
+{
+  "id": "class-listening-extra-credit",
+  "situation": "class-listening",
+  "intent": "加点の問題だと伝える",
+  "en": "This one's for extra credit.",
+  "ja": "これは加点問題です。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "This is a bonus question.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "classroom",
+    "grading"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "extra credit": 6,
+      "bonus question | bonus problem | bonus points": 4
+    },
+    "sources": [
+      "micase",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（講義のコーパスと MICASE の教員の発話で数えた。話: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満 ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

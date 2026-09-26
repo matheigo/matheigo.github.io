@@ -1,0 +1,47 @@
+{
+  "id": "class-asking-typo-on-the-board",
+  "situation": "class-asking",
+  "intent": "板書の誤りかもしれない箇所を確かめる",
+  "en": "Should that be a minus?",
+  "ja": "そこ、マイナスじゃないですか。",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "Is that supposed to be x squared?",
+      "register": "neutral"
+    },
+    {
+      "en": "I think there might be a typo.",
+      "register": "polite"
+    }
+  ],
+  "tags": [
+    "asking",
+    "board"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "should it be | shouldn't it be | should that be | shouldn't that be": 4,
+      "a typo": 3,
+      "is that supposed to be | is it supposed to be | isn't it supposed to be": 3
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（MICASE の学生の発話で数えた。話: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満 ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

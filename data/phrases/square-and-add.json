@@ -1,0 +1,46 @@
+{
+  "id": "square-and-add",
+  "situation": "class-listening",
+  "intent": "2 つの式を 2 乗して足し、θ を消去する",
+  "en": "Square both equations and add them.",
+  "ja": "両方の式を 2 乗して足します。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Square and add.",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "trigonometry",
+    "algebra"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "square and add | square them and add | square … and add them": 7
+    },
+    "sources": [
+      "khan-ap-stats",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（講義のコーパスと MICASE の教員の発話で数えた。話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

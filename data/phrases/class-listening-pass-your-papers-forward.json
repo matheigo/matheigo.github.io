@@ -1,0 +1,41 @@
+{
+  "id": "class-listening-pass-your-papers-forward",
+  "situation": "class-listening",
+  "intent": "答案・プリントを前に回させる",
+  "en": "Pass your papers forward.",
+  "ja": "紙を前に回してください。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Pass them up to the front.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "classroom"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "pass them up": 1,
+      "pass … forward | pass your papers | pass … to the front": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（講義のコーパスと MICASE の教員の発話で数えた。話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

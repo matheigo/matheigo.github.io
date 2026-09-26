@@ -1,0 +1,42 @@
+{
+  "id": "class-listening-this-will-be-on-the-test",
+  "situation": "class-listening",
+  "intent": "試験に出ると予告する",
+  "en": "This will be on the test.",
+  "ja": "ここはテストに出ます。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "This will be on the exam.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "classroom",
+    "exam"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "on the test": 50,
+      "on the exam": 50
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

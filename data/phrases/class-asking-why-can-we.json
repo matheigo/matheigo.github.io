@@ -1,0 +1,35 @@
+{
+  "id": "class-asking-why-can-we",
+  "situation": "class-asking",
+  "intent": "その操作をしてよい理由を聞く",
+  "en": "How come we can divide by x here?",
+  "ja": "どうしてここで x で割っていいんですか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Why is that?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "asking",
+    "reasoning"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "how come": 15,
+      "why is that": 14
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

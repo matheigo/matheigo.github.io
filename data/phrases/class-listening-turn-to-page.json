@@ -1,0 +1,41 @@
+{
+  "id": "class-listening-turn-to-page",
+  "situation": "class-listening",
+  "intent": "教科書の指定のページを開かせる",
+  "en": "Turn to page 112.",
+  "ja": "112 ページを開いてください。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Open your books to page 112.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "classroom",
+    "textbook"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "turn to page": 5
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（講義のコーパスと MICASE の教員の発話で数えた。話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

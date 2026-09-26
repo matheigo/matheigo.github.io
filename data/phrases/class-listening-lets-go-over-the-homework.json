@@ -1,0 +1,43 @@
+{
+  "id": "class-listening-lets-go-over-the-homework",
+  "situation": "class-listening",
+  "intent": "宿題の答え合わせをする",
+  "en": "Let's go over the homework.",
+  "ja": "宿題の答え合わせをしましょう。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Any questions on the homework?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "classroom",
+    "homework"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "go over the homework | go over homework | go over the problem set | go over the assignment": 1,
+      "questions on the homework | questions about the homework": 1
+    },
+    "sources": [
+      "khan-ap-calc",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（講義のコーパスと MICASE の教員の発話で数えた。話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

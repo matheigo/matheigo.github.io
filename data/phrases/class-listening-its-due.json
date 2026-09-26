@@ -1,0 +1,37 @@
+{
+  "id": "class-listening-its-due",
+  "situation": "class-listening",
+  "intent": "提出の締め切りを伝える",
+  "en": "It's due Friday.",
+  "ja": "提出は金曜日です。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Turn it in at the start of class on Friday.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "classroom",
+    "homework"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "it's due !to | is due !to | due on": 17,
+      "turn it in | hand it in": 5
+    },
+    "sources": [
+      "khan-ap-stats",
+      "micase",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

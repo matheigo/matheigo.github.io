@@ -1,0 +1,42 @@
+{
+  "id": "class-asking-how-do-you-read-this",
+  "situation": "class-asking",
+  "intent": "記号の読み方を聞く",
+  "en": "How do you say this symbol out loud?",
+  "ja": "この記号は何と読むんですか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "How do you pronounce this?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "asking",
+    "notation"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "how do you say": 2,
+      "how do you pronounce": 2
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらない（MICASE の学生の発話で数えた。話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

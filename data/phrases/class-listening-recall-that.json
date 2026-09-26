@@ -1,0 +1,49 @@
+{
+  "id": "class-listening-recall-that",
+  "situation": "class-listening",
+  "intent": "前に習ったことを思い出させる",
+  "en": "Remember that the derivative of sin x is cos x.",
+  "ja": "sin x の導関数は cos x でしたね。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Recall that the derivative of sin x is cos x.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "review"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "remember that": 401,
+      "recall that": 37
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}
