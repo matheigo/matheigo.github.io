@@ -1,0 +1,50 @@
+{
+  "id": "explaining-solution-let-x-be",
+  "situation": "explaining-solution",
+  "intent": "何を文字 x でおいたかを説明する",
+  "en": "For the width, I just called it x.",
+  "ja": "長方形の幅を x とおきました。",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "I let x be the width of the rectangle.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "let"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "call it x | called it x | call that x | call this x": 58,
+      "let x be | let x equal | let x equals | let x represent | let x stand for": 28
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "office-hours-english-terms-are-new",
+  "situation": "office-hours",
+  "intent": "日本語で習ったので、英語の数学用語に慣れていないと伝える",
+  "en": "I learned this in Japanese, so I'm still getting used to the English terms.",
+  "ja": "日本語で習ったので、英語の数学用語にまだ慣れていません。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "English isn't my first language.",
+      "register": "neutral",
+      "note": "英語が母語ではないことを先に伝える言い方。"
+    }
+  ],
+  "tags": [
+    "office-hours",
+    "vocabulary"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "getting used to | get used to | not used to": 5
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 getting used to | get used to | not used to（5 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "explaining-solution-plugging-back-in",
+  "situation": "explaining-solution",
+  "intent": "求めた値を元の式に代入して確かめたと説明する",
+  "en": "When I plugged it back in, I got 17, so it checks out.",
+  "ja": "元の式に代入すると 17 になるので、合っています。",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "I substituted it back into the original equation.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "checking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "substitute it back | substitute that back | substitute … back into the original | back into the original": 25,
+      "plug … back in | plug back in | plug … back into": 32
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

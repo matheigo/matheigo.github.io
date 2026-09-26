@@ -1,0 +1,41 @@
+{
+  "id": "office-hours-why-did-i-lose-points",
+  "situation": "office-hours",
+  "intent": "返ってきた答案で減点された理由を聞く",
+  "en": "I'm not sure why I lost points here.",
+  "ja": "ここでなぜ減点されたのか分からなくて。",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "Could you explain what was wrong with my answer?",
+      "register": "polite"
+    }
+  ],
+  "tags": [
+    "office-hours",
+    "grading"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "lost points | lose points | took off points | take off points | points off | lost a point | took points off": 3
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 lost points | lose points | took off points | take off points | points off | lost a point | took points off（3 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

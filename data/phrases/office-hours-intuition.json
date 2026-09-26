@@ -1,0 +1,42 @@
+{
+  "id": "office-hours-intuition",
+  "situation": "office-hours",
+  "intent": "計算は追えるが、直感的な意味が分からないと伝える",
+  "en": "I can follow the algebra, but I don't get the intuition behind it.",
+  "ja": "計算は追えるのですが、直感的な意味が分かりません。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "What's the big picture here?",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "office-hours",
+    "understanding"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "intuition | intuitive | intuitively": 9,
+      "the big picture": 3
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 intuition | intuitive | intuitively（9 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

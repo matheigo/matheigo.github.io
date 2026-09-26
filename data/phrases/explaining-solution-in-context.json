@@ -1,0 +1,48 @@
+{
+  "id": "explaining-solution-in-context",
+  "situation": "explaining-solution",
+  "intent": "求めた値が問題の状況で何を意味するかを述べる",
+  "en": "So this means the tank is draining at 3 liters per minute at t = 5.",
+  "ja": "つまり、t = 5 のとき水槽の水は毎分 3 リットルの割合で減っているということです。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "In context, that means the tank is losing 3 liters per minute.",
+      "register": "neutral",
+      "note": "AP の記述問題で求められる「文脈に即した解釈」。"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "context"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "in context | in the context of the problem | in the context of this problem": 7,
+      "so this means | what this means is": 72
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

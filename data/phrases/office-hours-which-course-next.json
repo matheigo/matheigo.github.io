@@ -1,0 +1,42 @@
+{
+  "id": "office-hours-which-course-next",
+  "situation": "office-hours",
+  "intent": "次の学期にどの科目を取るべきか相談する",
+  "en": "Should I take Linear Algebra or Calc II next semester?",
+  "ja": "次の学期は線形代数と Calc II のどちらを取るべきでしょうか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Do you think I'm ready for Calc III?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "office-hours",
+    "courses"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "should i take | should i be taking | would you recommend taking | do you recommend taking": 4,
+      "i'm ready for | am i ready for | ready to take": 2
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 should i take | should i be taking | would you recommend taking | do you recommend taking（4 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

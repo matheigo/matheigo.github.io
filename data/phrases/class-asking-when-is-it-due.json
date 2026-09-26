@@ -1,0 +1,42 @@
+{
+  "id": "class-asking-when-is-it-due",
+  "situation": "class-asking",
+  "intent": "課題の締め切りを確かめる",
+  "en": "When is it due?",
+  "ja": "提出はいつまでですか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Is that due Friday or Monday?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "asking",
+    "homework"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "due on friday | due friday | due on monday | due monday | due next week": 1,
+      "when is it due | when is that due | when's it due | when is this due | when's that due | when is the homework due | when is the paper due | when are they due": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。due on friday | due friday | due on monday | due monday | due next week 1 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

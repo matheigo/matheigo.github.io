@@ -404,6 +404,205 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Should that be a minus?": "should it be | shouldn't it be | should that be | shouldn't that be",
     "Is that a typo?": "a typo",
   },
+  "class-asking-go-back": {
+    "Could you go back to the previous slide?": "could you go back | can you go back | go back to the previous | go back to the last slide | go back a slide",
+    "Can you scroll back up?": "scroll back up | scroll up",
+  },
+  "class-asking-slow-down": {
+    "Could you slow down a bit?": "slow down a little | slow down a bit | could you slow down | can you slow down",
+    "Could you go over that a little more slowly?": "more slowly | a little slower | a bit slower",
+  },
+  "class-asking-i-got-a-different-answer": {
+    "I got a different answer.": "got a different answer | got something different | got a different number | get a different answer",
+    "I got 8 — did I do something wrong?": "did i do something wrong | what did i do wrong | where did i go wrong | what am i doing wrong",
+  },
+  "class-asking-which-problems": {
+    "Which problems are for homework?": "which problems | what problems | which questions are",
+    "Was that odds only?": "odds only | just the odds | only the odd | odd numbered | odd-numbered",
+  },
+  "class-asking-when-is-it-due": {
+    "When is it due?": "when is it due | when is that due | when's it due | when is this due | when's that due | when is the homework due | when is the paper due | when are they due",
+    "Is that due Friday or Monday?": "due on friday | due friday | due on monday | due monday | due next week",
+  },
+  "class-asking-will-this-be-on-the-test": {
+    "Do we need to know this for the exam?": "need to know this | have to know this | need to know that | have to know that | need to know all",
+    "Will this be on the test?": "be on the test | be on the exam | be on the midterm | be on the final | be on the quiz",
+  },
+  "class-asking-do-we-need-to-memorize": {
+    "Do we need to memorize this formula?": "need to memorize | have to memorize | should we memorize | do we memorize",
+    "Will we get a formula sheet?": "formula sheet | equation sheet | cheat sheet | note card | index card",
+  },
+  "class-asking-calculator-on-the-test": {
+    "Can we use a calculator on the test?": "use a calculator | use calculators | use our calculators | bring a calculator | bring calculators",
+    "Is the test calculator or non-calculator?": "non-calculator | no calculator | no calculators | without a calculator",
+  },
+  "class-asking-is-there-an-easier-way": {
+    "Is there an easier way to do this?": "easier way | simpler way | quicker way | faster way",
+    "Is there a shortcut?": "a shortcut | any shortcut",
+  },
+  "class-asking-could-we-use-another-method": {
+    "Couldn't we just use the quadratic formula?": "couldn't we just | couldn't you just | can't we just | can't you just | couldn't i just | can't i just",
+    "Can I use L'Hôpital's rule here instead?": "use … instead | instead of using",
+  },
+  "class-asking-another-example": {
+    "Could you do another example?": "do another example | give us another example | show us another example | go over another example | do one more example | another example please",
+    "Can you show us one more?": "do one more | show us one more | go through one more",
+  },
+  "class-asking-simplify-further": {
+    "Do we need to simplify further, or is that the final answer?": "simplify further | simplify it further | simplify it more | simplify any further | simplify that further | simplify more",
+    "Is that as simple as it gets?": "as simple as it gets | as simplified as",
+  },
+  "office-hours-do-you-have-a-minute": {
+    "Do you have a minute?": "have a minute | have a second | got a minute | got a second | have a sec",
+    "Is now a good time?": "is this a good time | is now a good time | is it a good time | is this a bad time",
+  },
+  "office-hours-question-about-homework": {
+    "I had a question about number 3 on the homework.": "had a question | have a question | got a question | have a couple of questions | had a couple of questions",
+    "I wanted to ask about problem 3.": "wanted to ask | want to ask | wanted to ask you",
+  },
+  "office-hours-can-i-show-you-what-i-tried": {
+    "Can I show you what I tried?": "show you what i | what i tried to do | tell you what i did | show you what i did",
+    "Here's what I have so far.": "what i have so far | what i've got so far | what i got so far | so far i have | so far i've",
+  },
+  "office-hours-am-i-on-the-right-track": {
+    "Am I on the right track?": "on the right track | in the right direction | right direction",
+    "Is this approach going to work?": "will this work | would this work | would that work | will that work | is this going to work | is that going to work",
+  },
+  "office-hours-hint-not-the-answer": {
+    "Could you give me a hint without giving away the answer?": "a hint | any hints | a little hint | some hints",
+    "Could you point me in the right direction?": "point me in the right direction | point us in the right direction",
+  },
+  "office-hours-why-did-i-lose-points": {
+    "I'm not sure why I lost points here.": "lost points | lose points | took off points | take off points | points off | lost a point | took points off",
+    "Could you explain what was wrong with my answer?": "what was wrong with my | what's wrong with my | what i did wrong",
+  },
+  "office-hours-regrade": {
+    "Would you mind taking another look at the grading on this problem?": "another look | regrade | re-grade | look at it again | look at this again",
+    "I think this might have been graded incorrectly.": "graded wrong | graded incorrectly | grading was wrong | grading error",
+  },
+  "office-hours-how-to-study": {
+    "How would you recommend studying for the midterm?": "study for | studying for | how to study | how should i study | best way to study",
+    "What should I focus on for the exam?": "focus on for | should i focus on | should we focus on | should i concentrate on",
+  },
+  "office-hours-extra-practice": {
+    "Do you have any old exams I could practice with?": "old exams | past exams | old tests | practice exams | practice exam | old midterms | old quizzes",
+    "Are there any extra practice problems I could do?": "practice problems | extra problems | more problems | extra practice | more practice",
+  },
+  "office-hours-understand-in-class-not-alone": {
+    "I understand it when you do it in class, but I get stuck when I try it on my own.": "do it on my own | do it by myself | try it on my own | try it by myself | on my own i | by myself i",
+    "I keep getting stuck on the homework.": "get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost",
+  },
+  "office-hours-intuition": {
+    "I can follow the algebra, but I don't get the intuition behind it.": "intuition | intuitive | intuitively",
+    "What's the big picture here?": "the big picture",
+  },
+  "office-hours-when-to-use-which": {
+    "How do I know when to use substitution and when to use integration by parts?": "when to use | when do you use | when do i use | when would you use | when should i use",
+    "How do I know which method to use?": "which method | which one to use | which formula to use | which equation to use",
+  },
+  "office-hours-english-terms-are-new": {
+    "I learned this in Japanese, so I'm still getting used to the English terms.": "getting used to | get used to | not used to",
+    "English isn't my first language.": "english is not my first language | english isn't my first language | english is my second language | not a native speaker | i'm not a native speaker",
+  },
+  "office-hours-is-this-rigorous-enough": {
+    "Could you look over my proof and tell me if it's rigorous enough?": "look over my | look it over | look this over | look over this | looked over my | get it looked over | look at my proof | look at my work",
+    "Is this rigorous enough?": "rigorous | enough justification | is this enough | is that enough | explain enough",
+  },
+  "office-hours-which-course-next": {
+    "Should I take Linear Algebra or Calc II next semester?": "should i take | should i be taking | would you recommend taking | do you recommend taking",
+    "Do you think I'm ready for Calc III?": "i'm ready for | am i ready for | ready to take",
+  },
+  "office-hours-can-i-come-back": {
+    "Is it okay if I come back if I'm still stuck?": "can i come back | could i come back | if i come back | come back later | come back tomorrow | come back next week | stop by again | come by again | come back if",
+  },
+  "office-hours-thanks-that-helps": {
+    "That makes a lot more sense now.": "makes more sense now | makes a lot more sense now | makes sense now | make sense now | make more sense now | makes more sense then",
+    "Thanks, that really helps.": "that really helps | that helps a lot | that helped a lot | that's helpful | that was helpful | that's very helpful | that was really helpful | that's really helpful | that's so helpful",
+  },
+  "explaining-solution-overall-plan": {
+    "The idea is to find the intersection points first and then integrate.": "the idea is to | the idea here is | the idea was to | the basic idea is | the whole idea is",
+    "My plan was to find where the curves meet and then integrate.": "my plan was | the plan is | our plan is | the plan was | my plan is | the game plan",
+  },
+  "explaining-solution-let-x-be": {
+    "For the width, I just called it x.": "call it x | called it x | call that x | call this x",
+    "I let x be the width of the rectangle.": "let x be | let x equal | let x equals | let x represent | let x stand for",
+  },
+  "explaining-solution-set-up-an-equation": {
+    "First I wrote an equation from the given information.": "write an equation | wrote an equation | write down an equation | write the equation",
+    "I set up an equation from what the problem says.": "set up an equation | set up the equation | set up equations | set up a system",
+  },
+  "explaining-solution-isolated-x": {
+    "Then I solved for x.": "solve for x | solved for x",
+    "I got x by itself.": "x by itself | x alone | x all by itself",
+    "Then I isolated x.": "isolate x | isolate the x | isolate the variable",
+  },
+  "explaining-solution-plugging-back-in": {
+    "When I plugged it back in, I got 17, so it checks out.": "plug … back in | plug back in | plug … back into",
+    "I substituted it back into the original equation.": "substitute it back | substitute that back | substitute … back into the original | back into the original",
+  },
+  "explaining-solution-moved-everything-to-one-side": {
+    "I moved everything to one side.": "everything to one side | everything on one side | all to one side | everything over to one side | all on one side",
+    "I got everything on the left side.": "everything on the left | everything to the left | everything over to the left | everything on the left side",
+  },
+  "explaining-solution-factored-and-set-to-zero": {
+    "I factored it and set each factor equal to zero.": "each factor equal to zero | each factor equal to 0 | each factor to zero | set each factor | each factor is equal to zero",
+    "Then I used the zero product property.": "zero product property | zero-product property | zero product rule",
+  },
+  "explaining-solution-threw-out-a-solution": {
+    "I rejected the negative solution because a length can't be negative.": "reject … solution | reject that solution | extraneous solution | extraneous root",
+    "I threw out the negative solution.": "throw out … solution | throw away … solution | throw out … answer | throw away … answer | throw that out | throw that one out | throw it out",
+  },
+  "explaining-solution-used-the-rule": {
+    "I used the chain rule here.": "use the … rule | using the … rule",
+    "Here I applied the product rule.": "apply the … rule | applying the … rule",
+  },
+  "explaining-solution-multiplied-both-sides": {
+    "I divided both sides by x, which is okay since x isn't zero.": "divide both sides by | divide both sides",
+    "I multiplied both sides by 2.": "multiply both sides by | multiply both sides",
+  },
+  "explaining-solution-flipped-the-inequality": {
+    "I divided by a negative, so I flipped the inequality sign.": "flip the inequality | flip the inequality sign | flip the sign of the inequality | flip the direction of the inequality",
+    "Dividing by a negative switches the inequality.": "switch the inequality | reverse the inequality | switch the direction of the inequality | reverse the direction of the inequality | switch the sign of the inequality",
+  },
+  "explaining-solution-drew-a-picture": {
+    "I started by drawing a picture.": "draw a picture | drew a picture | draw a diagram | drew a diagram | draw a figure | drew a figure",
+    "I sketched the graph to see what was going on.": "sketch the graph | sketch a graph | draw the graph | draw a graph | drew the graph | drew a graph",
+  },
+  "explaining-solution-worked-backwards": {
+    "I worked backwards from what we want to show.": "work backwards | work backward | working backwards | working backward | worked backwards",
+  },
+  "explaining-solution-the-key-was": {
+    "The key was noticing that the two triangles are similar.": "the key is | the key was | the key here is | the key thing is | the key idea is | the key step is",
+    "The trick is to see that the triangles are similar.": "the trick is | the trick here is | the trick was | the trick is to",
+  },
+  "explaining-solution-thats-where-it-comes-from": {
+    "That's where the 2 comes from.": "that's where … comes from | that's where … come from | that is where … comes from | that's where that comes from | that's where it comes from",
+  },
+  "explaining-solution-these-cancel": {
+    "These two terms cancel out.": "cancel out | cancel each other | cancel with each other",
+    "Everything in the middle cancels.": "everything cancels | all cancel | everything in the middle cancels | everything else cancels",
+  },
+  "explaining-solution-so-the-answer-is": {
+    "So the answer is 12.": "the answer is | our answer is | my answer is | the final answer is",
+    "So I got 12.": "",
+    "And that gives us 12.": "",
+  },
+  "explaining-solution-with-units": {
+    "So the velocity is 4 meters per second.": "meters per second | feet per second | miles per hour | per second squared",
+    "The units are meters per second.": "the units are | the units would be | the units will be | units of | in units of",
+  },
+  "explaining-solution-in-context": {
+    "So this means the tank is draining at 3 liters per minute at t = 5.": "so this means | what this means is",
+    "In context, that means the tank is losing 3 liters per minute.": "in context | in the context of the problem | in the context of this problem",
+  },
+  "explaining-solution-not-sure-about-this-step": {
+    "I'm not totally sure about this step.": "not sure about | not totally sure | not really sure | not quite sure | not entirely sure | not a hundred percent sure",
+    "This part might be wrong.": "might be wrong | could be wrong | may be wrong",
+  },
+  "explaining-solution-let-me-back-up": {
+    "Wait, let me back up — I made a mistake here.": "let me back up | let's back up | back up a little | back up a second | back up a step",
+    "Actually, scratch that.": "scratch that",
+  },
 };
 
 /**

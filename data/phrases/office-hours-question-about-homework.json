@@ -1,0 +1,35 @@
+{
+  "id": "office-hours-question-about-homework",
+  "situation": "office-hours",
+  "intent": "宿題の特定の問題について質問しに来たと切り出す",
+  "en": "I had a question about number 3 on the homework.",
+  "ja": "宿題の 3 番について質問があって来ました。",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "I wanted to ask about problem 3.",
+      "register": "polite"
+    }
+  ],
+  "tags": [
+    "office-hours",
+    "homework"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "had a question | have a question | got a question | have a couple of questions | had a couple of questions": 78,
+      "wanted to ask | want to ask | wanted to ask you": 6
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

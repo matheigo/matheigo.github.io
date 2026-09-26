@@ -1,0 +1,42 @@
+{
+  "id": "office-hours-understand-in-class-not-alone",
+  "situation": "office-hours",
+  "intent": "授業では分かるのに、一人で解くと手が止まることを相談する",
+  "en": "I understand it when you do it in class, but I get stuck when I try it on my own.",
+  "ja": "授業で先生が解くと分かるのに、自分でやると手が止まります。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "I keep getting stuck on the homework.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "office-hours",
+    "studying"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost": 2,
+      "do it on my own | do it by myself | try it on my own | try it by myself | on my own i | by myself i": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost 2 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

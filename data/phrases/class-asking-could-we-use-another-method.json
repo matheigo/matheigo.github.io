@@ -1,0 +1,35 @@
+{
+  "id": "class-asking-could-we-use-another-method",
+  "situation": "class-asking",
+  "intent": "先生と違う方法（別の公式や定理）を使ってもよいかを聞く",
+  "en": "Couldn't we just use the quadratic formula?",
+  "ja": "ここで解の公式を使ってはだめですか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Can I use L'Hôpital's rule here instead?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "asking",
+    "methods"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "use … instead | instead of using": 5,
+      "couldn't we just | couldn't you just | can't we just | can't you just | couldn't i just | can't i just": 12
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

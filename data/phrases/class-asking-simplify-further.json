@@ -1,0 +1,41 @@
+{
+  "id": "class-asking-simplify-further",
+  "situation": "class-asking",
+  "intent": "答えをさらに簡単にする必要があるか、これで最終的な答えかを聞く",
+  "en": "Do we need to simplify further, or is that the final answer?",
+  "ja": "これ以上簡単にする必要はありますか。これで答えですか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Is that as simple as it gets?",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "asking",
+    "simplifying"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "simplify further | simplify it further | simplify it more | simplify any further | simplify that further | simplify more": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。simplify further | simplify it further | simplify it more | simplify any further | simplify that further | simplify more 1 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

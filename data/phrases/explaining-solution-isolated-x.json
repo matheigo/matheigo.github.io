@@ -1,0 +1,53 @@
+{
+  "id": "explaining-solution-isolated-x",
+  "situation": "explaining-solution",
+  "intent": "方程式を x について解いたと説明する",
+  "en": "Then I solved for x.",
+  "ja": "それから x について解きました。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "I got x by itself.",
+      "register": "casual"
+    },
+    {
+      "en": "Then I isolated x.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "equations"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "x by itself | x alone | x all by itself": 45,
+      "solve for x | solved for x": 182,
+      "isolate x | isolate the x | isolate the variable": 21
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

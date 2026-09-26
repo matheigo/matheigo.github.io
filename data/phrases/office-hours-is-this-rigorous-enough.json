@@ -1,0 +1,41 @@
+{
+  "id": "office-hours-is-this-rigorous-enough",
+  "situation": "office-hours",
+  "intent": "自分の証明が十分に厳密かを見てもらう",
+  "en": "Could you look over my proof and tell me if it's rigorous enough?",
+  "ja": "この証明、これで十分厳密か見ていただけますか。",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "Is this rigorous enough?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "office-hours",
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "look over my | look it over | look this over | look over this | looked over my | get it looked over | look at my proof | look at my work": 6
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 look over my | look it over | look this over | look over this | looked over my | get it looked over | look at my proof | look at my work（6 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

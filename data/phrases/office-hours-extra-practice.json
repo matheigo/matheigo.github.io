@@ -1,0 +1,43 @@
+{
+  "id": "office-hours-extra-practice",
+  "situation": "office-hours",
+  "intent": "練習用の問題や過去の試験があるかを聞く",
+  "en": "Do you have any old exams I could practice with?",
+  "ja": "練習に使える過去の試験はありますか。",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "Are there any extra practice problems I could do?",
+      "register": "polite"
+    }
+  ],
+  "tags": [
+    "office-hours",
+    "exam",
+    "practice"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "old exams | past exams | old tests | practice exams | practice exam | old midterms | old quizzes": 8,
+      "practice problems | extra problems | more problems | extra practice | more practice": 3
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 old exams | past exams | old tests | practice exams | practice exam | old midterms | old quizzes（8 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

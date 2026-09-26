@@ -1,0 +1,42 @@
+{
+  "id": "office-hours-when-to-use-which",
+  "situation": "office-hours",
+  "intent": "2 つの方法をどう使い分けるかを聞く",
+  "en": "How do I know when to use substitution and when to use integration by parts?",
+  "ja": "置換積分と部分積分、どういうときにどちらを使えばいいですか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "How do I know which method to use?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "office-hours",
+    "methods",
+    "integration"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "when to use | when do you use | when do i use | when would you use | when should i use": 2
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。when to use | when do you use | when do i use | when would you use | when should i use 2 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "explaining-solution-set-up-an-equation",
+  "situation": "explaining-solution",
+  "intent": "問題の条件から方程式を立てたと説明する",
+  "en": "First I wrote an equation from the given information.",
+  "ja": "問題の条件から方程式を立てました。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "I set up an equation from what the problem says.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "equations"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "set up an equation | set up the equation | set up equations | set up a system": 18,
+      "write an equation | wrote an equation | write down an equation | write the equation": 69
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.03",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "class-asking-is-there-an-easier-way",
+  "situation": "class-asking",
+  "intent": "もっと楽な解き方がないかを聞く",
+  "en": "Is there an easier way to do this?",
+  "ja": "もっと楽な解き方はありますか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Is there a shortcut?",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "asking",
+    "methods"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "easier way | simpler way | quicker way | faster way": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。easier way | simpler way | quicker way | faster way 1 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

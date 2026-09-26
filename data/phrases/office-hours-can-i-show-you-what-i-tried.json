@@ -1,0 +1,42 @@
+{
+  "id": "office-hours-can-i-show-you-what-i-tried",
+  "situation": "office-hours",
+  "intent": "自分で途中までやったものを見てもらう",
+  "en": "Can I show you what I tried?",
+  "ja": "自分でやったところを見ていただけますか。",
+  "register": "polite",
+  "variants": [
+    {
+      "en": "Here's what I have so far.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "office-hours",
+    "checking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "what i have so far | what i've got so far | what i got so far | so far i have | so far i've": 1,
+      "show you what i | what i tried to do | tell you what i did | show you what i did": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。what i have so far | what i've got so far | what i got so far | so far i have | so far i've 1 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

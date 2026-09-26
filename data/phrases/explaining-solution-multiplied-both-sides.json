@@ -1,0 +1,48 @@
+{
+  "id": "explaining-solution-multiplied-both-sides",
+  "situation": "explaining-solution",
+  "intent": "両辺に同じ操作をしたことと、それが許される理由を説明する",
+  "en": "I divided both sides by x, which is okay since x isn't zero.",
+  "ja": "両辺を x で割りました。x は 0 ではないので大丈夫です。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "I multiplied both sides by 2.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "equations"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "multiply both sides by | multiply both sides": 305,
+      "divide both sides by | divide both sides": 508
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

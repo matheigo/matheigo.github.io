@@ -1,0 +1,48 @@
+{
+  "id": "explaining-solution-used-the-rule",
+  "situation": "explaining-solution",
+  "intent": "どの公式・法則を使ったかを示す",
+  "en": "I used the chain rule here.",
+  "ja": "ここで連鎖律を使いました。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Here I applied the product rule.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "rules"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "use the … rule | using the … rule": 352,
+      "apply the … rule | applying the … rule": 107
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

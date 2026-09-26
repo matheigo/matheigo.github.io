@@ -1,0 +1,34 @@
+{
+  "id": "office-hours-can-i-come-back",
+  "situation": "office-hours",
+  "intent": "まだ分からなければまた来てよいかを聞く",
+  "en": "Is it okay if I come back if I'm still stuck?",
+  "ja": "まだ分からなかったら、また来てもいいですか。",
+  "register": "polite",
+  "tags": [
+    "office-hours"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "can i come back | could i come back | if i come back | come back later | come back tomorrow | come back next week | stop by again | come by again | come back if": 2
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。can i come back | could i come back | if i come back | come back later | come back tomorrow | come back next week | stop by again | come by again | come back if 2 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

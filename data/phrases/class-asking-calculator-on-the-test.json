@@ -1,0 +1,42 @@
+{
+  "id": "class-asking-calculator-on-the-test",
+  "situation": "class-asking",
+  "intent": "テストで電卓を使えるかを聞く",
+  "en": "Can we use a calculator on the test?",
+  "ja": "次のテストで電卓は使えますか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Is the test calculator or non-calculator?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "asking",
+    "exam",
+    "calculator"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "use a calculator | use calculators | use our calculators | bring a calculator | bring calculators": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。use a calculator | use calculators | use our calculators | bring a calculator | bring calculators 1 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

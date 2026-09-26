@@ -1,0 +1,35 @@
+{
+  "id": "class-asking-will-this-be-on-the-test",
+  "situation": "class-asking",
+  "intent": "今の内容がテストの範囲かを聞く",
+  "en": "Do we need to know this for the exam?",
+  "ja": "これ、試験で必要ですか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Will this be on the test?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "asking",
+    "exam"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "need to know this | have to know this | need to know that | have to know that | need to know all": 13,
+      "be on the test | be on the exam | be on the midterm | be on the final | be on the quiz": 2
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  }
+}

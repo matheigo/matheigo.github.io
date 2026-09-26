@@ -1,0 +1,42 @@
+{
+  "id": "office-hours-am-i-on-the-right-track",
+  "situation": "office-hours",
+  "intent": "今の方針で合っているかを確かめる",
+  "en": "Am I on the right track?",
+  "ja": "この方針で合っていますか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Is this approach going to work?",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "office-hours",
+    "checking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "will this work | would this work | would that work | will that work | is this going to work | is that going to work": 2,
+      "on the right track | in the right direction | right direction": 2
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。will this work | would this work | would that work | will that work | is this going to work | is that going to work 2 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

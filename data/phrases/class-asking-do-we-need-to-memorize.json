@@ -1,0 +1,44 @@
+{
+  "id": "class-asking-do-we-need-to-memorize",
+  "situation": "class-asking",
+  "intent": "公式を覚える必要があるか（公式集が配られるか）を聞く",
+  "en": "Do we need to memorize this formula?",
+  "ja": "この公式は覚える必要がありますか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Will we get a formula sheet?",
+      "register": "neutral",
+      "note": "試験に公式集（formula sheet）が付くかを聞く。"
+    }
+  ],
+  "tags": [
+    "asking",
+    "exam",
+    "formulas"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "formula sheet | equation sheet | cheat sheet | note card | index card": 1,
+      "need to memorize | have to memorize | should we memorize | do we memorize": 3
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 need to memorize | have to memorize | should we memorize | do we memorize（3 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

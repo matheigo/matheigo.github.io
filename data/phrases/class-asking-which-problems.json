@@ -1,0 +1,37 @@
+{
+  "id": "class-asking-which-problems",
+  "situation": "class-asking",
+  "intent": "宿題の範囲（どの問題か）を確かめる",
+  "en": "Which problems are for homework?",
+  "ja": "宿題はどの問題ですか。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Was that odds only?",
+      "register": "casual",
+      "note": "教科書の奇数番の問題（巻末に答えがあることが多い）だけかを聞く。"
+    }
+  ],
+  "tags": [
+    "asking",
+    "homework"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。0 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

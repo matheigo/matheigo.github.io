@@ -1,0 +1,42 @@
+{
+  "id": "explaining-solution-threw-out-a-solution",
+  "situation": "explaining-solution",
+  "intent": "条件に合わない解を除いたと説明する",
+  "en": "I rejected the negative solution because a length can't be negative.",
+  "ja": "長さは負にならないので、負の解は捨てました。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "I threw out the negative solution.",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "solutions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "reject … solution | reject that solution | extraneous solution | extraneous root": 21,
+      "throw out … solution | throw away … solution | throw out … answer | throw away … answer | throw that out | throw that one out | throw it out": 11
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "micase",
+      "mit-18.03",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-26"
+  }
+}

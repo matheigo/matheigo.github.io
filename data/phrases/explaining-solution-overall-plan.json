@@ -1,0 +1,47 @@
+{
+  "id": "explaining-solution-overall-plan",
+  "situation": "explaining-solution",
+  "intent": "解き方の方針を最初に述べる",
+  "en": "The idea is to find the intersection points first and then integrate.",
+  "ja": "方針としては、まず交点を求めて、それから積分します。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "My plan was to find where the curves meet and then integrate.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "strategy"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "the idea is to | the idea here is | the idea was to | the basic idea is | the whole idea is": 67,
+      "my plan was | the plan is | our plan is | the plan was | my plan is | the game plan": 5
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

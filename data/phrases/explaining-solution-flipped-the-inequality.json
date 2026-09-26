@@ -1,0 +1,46 @@
+{
+  "id": "explaining-solution-flipped-the-inequality",
+  "situation": "explaining-solution",
+  "intent": "負の数で割ったので不等号の向きを変えたと説明する",
+  "en": "I divided by a negative, so I flipped the inequality sign.",
+  "ja": "負の数で割ったので、不等号の向きを逆にしました。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Dividing by a negative switches the inequality.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "inequality"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "flip the inequality | flip the inequality sign | flip the sign of the inequality | flip the direction of the inequality": 3,
+      "switch the inequality | reverse the inequality | switch the direction of the inequality | reverse the direction of the inequality | switch the sign of the inequality": 3
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "yt:nancypi",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE 全体で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 flip the inequality | flip the inequality sign | flip the sign of the inequality | flip the direction of the inequality（3 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

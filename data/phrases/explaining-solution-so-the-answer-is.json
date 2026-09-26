@@ -1,0 +1,52 @@
+{
+  "id": "explaining-solution-so-the-answer-is",
+  "situation": "explaining-solution",
+  "intent": "最終的な答えを述べる",
+  "en": "So the answer is 12.",
+  "ja": "なので、答えは 12 です。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "So I got 12.",
+      "register": "casual"
+    },
+    {
+      "en": "And that gives us 12.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "answers"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "the answer is | our answer is | my answer is | the final answer is": 444
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

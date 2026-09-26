@@ -1,0 +1,46 @@
+{
+  "id": "explaining-solution-let-me-back-up",
+  "situation": "explaining-solution",
+  "intent": "説明の途中で誤りに気づき、少し戻る",
+  "en": "Wait, let me back up — I made a mistake here.",
+  "ja": "ちょっと戻ります。ここで間違えました。",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "Actually, scratch that.",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "mistakes"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "let me back up | let's back up | back up a little | back up a second | back up a step": 7,
+      "scratch that": 5
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-6.042"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE 全体で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 let me back up | let's back up | back up a little | back up a second | back up a step（7 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

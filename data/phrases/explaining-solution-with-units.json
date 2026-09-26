@@ -1,0 +1,46 @@
+{
+  "id": "explaining-solution-with-units",
+  "situation": "explaining-solution",
+  "intent": "答えを単位つきで述べる",
+  "en": "So the velocity is 4 meters per second.",
+  "ja": "速度は毎秒 4 メートルです。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "The units are meters per second.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "units"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "meters per second | feet per second | miles per hour | per second squared": 307,
+      "the units are | the units would be | the units will be | units of | in units of": 137
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "yt:3blue1brown",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}
