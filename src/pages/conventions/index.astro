@@ -1,0 +1,50 @@
+---
+import Base from "../../layouts/Base.astro";
+import HiddenNote from "../../components/HiddenNote.astro";
+import { conventions, isUnverified, CONVENTION_CATEGORY_LABELS, SITE_NAME } from "../../lib/data";
+
+const order = Object.keys(CONVENTION_CATEGORY_LABELS);
+const groups = order
+  .map((cat) => ({ cat, items: conventions.filter((c) => c.category === cat) }))
+  .filter((g) => g.items.length);
+const hidden = conventions.filter(isUnverified).length;
+---
+
+<Base
+  title={`日米の数学の慣習差（記法・用語・答案）— ${SITE_NAME}`}
+  description="同じ数学でも日本と米国で書き方・言い方が違うところ。≦ と ≤、log と ln、答案の書き方など。"
+  noindex={hidden === conventions.length}
+  section="conventions"
+>
+  <h1 class="page-title">日米の慣習差</h1>
+  <p class="lede">内容は同じでも、書き方や言い方が日本と米国で違うところです。日米の両側を資料で確かめた項目だけを載せています。</p>
+  <HiddenNote count={hidden} total={conventions.length} />
+
+  <ul class="jump" aria-label="分類">
+    {
+      groups.map((g) => (
+        <li data-unverified-item={g.items.every(isUnverified) ? "" : undefined}>
+          <a href={`#${g.cat}`}>{CONVENTION_CATEGORY_LABELS[g.cat]}</a>
+        </li>
+      ))
+    }
+  </ul>
+
+  {
+    groups.map((g) => (
+      <section id={g.cat} data-unverified-item={g.items.every(isUnverified) ? "" : undefined}>
+        <h2 class="group">{CONVENTION_CATEGORY_LABELS[g.cat]}</h2>
+        <ul class="rows">
+          {g.items.map((c) => (
+            <li data-unverified-item={isUnverified(c) ? "" : undefined}>
+              <a href={`/conventions/${c.id}/`}>
+                <span class="row-ja">{c.title_ja}</span>
+                <span class="row-sub">{c.advice_ja}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Base>
