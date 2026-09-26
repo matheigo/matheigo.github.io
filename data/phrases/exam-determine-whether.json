@@ -1,0 +1,42 @@
+{
+  "id": "exam-determine-whether",
+  "situation": "exam",
+  "intent": "問題文の「〜かどうか判定せよ」",
+  "en": "Determine whether the series converges or diverges.",
+  "ja": "この級数が収束するか発散するか判定せよ。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Tell whether the series converges or diverges.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "exam",
+    "instructions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "determine whether": 612,
+      "tell whether": 4
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

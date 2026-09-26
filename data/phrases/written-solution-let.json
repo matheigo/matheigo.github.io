@@ -1,0 +1,46 @@
+{
+  "id": "written-solution-let",
+  "situation": "written-solution",
+  "intent": "答案で文字を導入する（〜を x とする）",
+  "en": "Let x be the number of tickets sold.",
+  "ja": "売れたチケットの枚数を x とする。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Let x represent the number of tickets sold.",
+      "register": "written"
+    },
+    {
+      "en": "Let x denote the number of tickets sold.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "variables"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "let … be the": 278,
+      "let … denote": 64,
+      "let … represent": 74
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-26"
+  }
+}

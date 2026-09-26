@@ -1,0 +1,42 @@
+{
+  "id": "exam-exact-form",
+  "situation": "exam",
+  "intent": "問題文の「正確な値で答えよ」",
+  "en": "Give the exact value, not a decimal approximation.",
+  "ja": "近似値ではなく、正確な値で答えよ。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Leave your answer in exact form.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "exam",
+    "instructions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "the exact value | an exact value | exact answer": 117,
+      "in exact form | exact form": 18
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

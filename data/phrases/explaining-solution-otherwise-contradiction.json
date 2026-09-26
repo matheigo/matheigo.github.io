@@ -1,0 +1,37 @@
+{
+  "id": "explaining-solution-otherwise-contradiction",
+  "situation": "explaining-solution",
+  "intent": "成り立たないと矛盾が出るので成り立つ、と説明する",
+  "en": "If it weren't true, we'd get a contradiction, so it has to be true.",
+  "ja": "もし成り立たないとすると矛盾が出るので、成り立ちます。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "Assuming the opposite leads to a contradiction.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "leads to a contradiction | lead to a contradiction | leading to a contradiction": 3,
+      "we'd get a contradiction | we get a contradiction | we would get a contradiction | that's a contradiction | get a contradiction": 15
+    },
+    "sources": [
+      "micase",
+      "mit-18.03",
+      "mit-6.042"
+    ],
+    "counted": "2026-09-26"
+  }
+}

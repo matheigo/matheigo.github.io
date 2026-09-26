@@ -1,0 +1,35 @@
+{
+  "id": "exam-show-that",
+  "situation": "exam",
+  "intent": "問題文の「〜であることを示せ」",
+  "en": "Show that f has a zero on [0, 1].",
+  "ja": "f が [0, 1] に零点をもつことを示せ。",
+  "register": "written",
+  "tags": [
+    "exam",
+    "instructions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "show that": 635
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

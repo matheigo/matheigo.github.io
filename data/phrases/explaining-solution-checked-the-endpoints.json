@@ -1,0 +1,42 @@
+{
+  "id": "explaining-solution-checked-the-endpoints",
+  "situation": "explaining-solution",
+  "intent": "区間の端点の値も調べたと言う",
+  "en": "I also checked the endpoints.",
+  "ja": "端点での値も調べました。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "I plugged in the endpoints too.",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "extrema"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "check the endpoints | checked the endpoints | check the end points | checked the end points": 5
+    },
+    "sources": [
+      "mit-18.01",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE 全体で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 check the endpoints | checked the endpoints | check the end points | checked the end points（5 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

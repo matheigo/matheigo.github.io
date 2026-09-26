@@ -1,0 +1,40 @@
+{
+  "id": "written-solution-hypotheses-are-met",
+  "situation": "written-solution",
+  "intent": "定理の仮定が満たされることを書く",
+  "en": "Since f is continuous on [1, 3] and differentiable on (1, 3), the Mean Value Theorem applies.",
+  "ja": "f は [1, 3] で連続、(1, 3) で微分可能なので、平均値の定理が使える。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "The hypotheses of the Mean Value Theorem are satisfied.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "theorems"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "hypotheses … are satisfied | conditions … are satisfied | hypotheses are met | conditions are met | hypotheses are satisfied | conditions are satisfied": 16,
+      "theorem applies | rule applies | theorem can be applied | theorem may be applied | rule can be applied": 25
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

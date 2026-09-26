@@ -1,0 +1,50 @@
+{
+  "id": "written-solution-it-suffices-to-show",
+  "situation": "written-solution",
+  "intent": "答案で「〜を示せば十分である」と書く",
+  "en": "It suffices to show that f′(x) > 0.",
+  "ja": "f′(x) > 0 を示せば十分である。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "It is enough to show that f′(x) > 0.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "5.5 Similarity and Diagonalization・7.2 Kernel and Image of a Linear Transformation ほか（it suffices to show）"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "it suffices to show | it suffices to prove | suffices to show": 2,
+      "it is enough to show | it's enough to show | enough to show that": 1
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（書き言葉のコーパスと参照で数えた。話: 対象外 ／ 書: どの要の部分も 10 件に届かない（①②③ で判定しない））。要の部分は Nicholson の呼び方 it suffices to show | it suffices to prove | suffices to show（7.2 Kernel and Image of a Linear Transformation・7.4 A Theorem about Differential Equations・5.5 Similarity and Diagonalization）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

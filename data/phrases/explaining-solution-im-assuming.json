@@ -1,0 +1,47 @@
+{
+  "id": "explaining-solution-im-assuming",
+  "situation": "explaining-solution",
+  "intent": "解法の前提（仮定）を述べる",
+  "en": "I'm assuming the speed is constant.",
+  "ja": "速さが一定だと仮定しています。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "This only works if the speed is constant.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "assumptions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "only works if | only work if": 15,
+      "i'm assuming | i am assuming | we're assuming | we are assuming": 223
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

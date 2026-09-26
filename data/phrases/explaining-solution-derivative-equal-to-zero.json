@@ -1,0 +1,40 @@
+{
+  "id": "explaining-solution-derivative-equal-to-zero",
+  "situation": "explaining-solution",
+  "intent": "導関数を 0 とおいて臨界点を求めたと説明する",
+  "en": "I found the critical points by setting the derivative equal to zero.",
+  "ja": "微分して 0 とおき、臨界点を求めました。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "I took the derivative and set it equal to zero.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "derivatives"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "find the critical points | found the critical points": 21,
+      "derivative and set it equal to | derivative and set it to | set the derivative equal to | set the derivative to | derivative equal to zero": 17
+    },
+    "sources": [
+      "khan-ap-calc",
+      "micase",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

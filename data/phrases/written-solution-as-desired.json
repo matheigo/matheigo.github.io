@@ -1,0 +1,50 @@
+{
+  "id": "written-solution-as-desired",
+  "situation": "written-solution",
+  "intent": "証明の最後に「以上で示された」と書く",
+  "en": "This completes the proof.",
+  "ja": "以上で示された。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Hence a + b is even, as desired.",
+      "register": "written"
+    },
+    {
+      "en": "Hence a + b is even, as required.",
+      "register": "written"
+    },
+    {
+      "en": "Hence a + b is even, which is what we wanted to show.",
+      "register": "written"
+    },
+    {
+      "en": "∎",
+      "register": "written",
+      "note": "証明の終わりの記号（Q.E.D. とも書く）。数えない。"
+    }
+  ],
+  "tags": [
+    "writing",
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "completes the proof": 13,
+      "as desired": 5,
+      "as required": 4
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

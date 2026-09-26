@@ -1,0 +1,38 @@
+{
+  "id": "written-solution-i-e",
+  "situation": "written-solution",
+  "intent": "答案で「すなわち」と言い換える",
+  "en": "f is increasing on (0, ∞), i.e., f′(x) > 0 there.",
+  "ja": "f は (0, ∞) で増加、すなわち f′(x) > 0 である。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "f is increasing on (0, ∞); that is to say, f′(x) > 0 there.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "connectives"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "i.e.": 84,
+      "that is to say": 1
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-26"
+  }
+}

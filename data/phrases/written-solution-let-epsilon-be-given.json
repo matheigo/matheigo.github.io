@@ -1,0 +1,36 @@
+{
+  "id": "written-solution-let-epsilon-be-given",
+  "situation": "written-solution",
+  "intent": "ε-δ の証明を書き始める",
+  "en": "For any ε > 0, there is a δ > 0 such that |f(x) − L| < ε whenever 0 < |x − a| < δ.",
+  "ja": "任意の ε > 0 に対して、",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Let ε > 0 be given.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "proof",
+    "limits"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "for any ε | for every ε | for all ε | given any ε": 20,
+      "let ε > zero be given | ε > zero be given | let ε > zero": 15
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

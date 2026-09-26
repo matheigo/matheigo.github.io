@@ -1,0 +1,47 @@
+{
+  "id": "explaining-solution-used-a-calculator",
+  "situation": "explaining-solution",
+  "intent": "電卓を使った箇所を説明する",
+  "en": "I used my calculator to get a decimal approximation at the end.",
+  "ja": "最後は電卓で近似値を出しました。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "At the end, I put it into my calculator.",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "calculator"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "use a calculator | use my calculator | use your calculator | on my calculator | on your calculator": 127,
+      "into my calculator | into your calculator | into the calculator | into a calculator": 25
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.03",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

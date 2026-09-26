@@ -1,0 +1,49 @@
+{
+  "id": "explaining-solution-that-cant-be-right",
+  "situation": "explaining-solution",
+  "intent": "自分の答えがおかしいと気づいて言う",
+  "en": "Wait, that can't be right — a probability can't be bigger than 1.",
+  "ja": "あれ、おかしい。確率が 1 を超えています。",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "Hmm, that doesn't seem right.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "checking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "that can't be right | that cannot be right | that can't be true": 6,
+      "doesn't seem right | does not seem right | doesn't look right | does not look right": 5
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "micase",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE 全体で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 that can't be right | that cannot be right | that can't be true（6 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "written-solution-which-implies",
+  "situation": "written-solution",
+  "intent": "答案で「〜となり、…である」と結論を導く",
+  "en": "2x = 6. It follows that x = 3.",
+  "ja": "2x = 6 となり、x = 3 である。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "2x = 6, which implies x = 3.",
+      "register": "written"
+    },
+    {
+      "en": "2x = 6, so x = 3.",
+      "register": "neutral",
+      "note": "so は口語的。答案でも使う。"
+    },
+    {
+      "en": "2x = 6 ⟹ x = 3",
+      "register": "written",
+      "note": "記号だけの書き方。数えない。"
+    }
+  ],
+  "tags": [
+    "writing",
+    "connectives"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "which implies": 31,
+      "it follows that": 46
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-26"
+  }
+}

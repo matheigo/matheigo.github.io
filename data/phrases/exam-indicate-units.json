@@ -1,0 +1,53 @@
+{
+  "id": "exam-indicate-units",
+  "situation": "exam",
+  "intent": "問題文の「単位をつけて答えよ」",
+  "en": "Use appropriate units.",
+  "ja": "単位をつけて答えよ。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Indicate units of measure.",
+      "register": "written",
+      "note": "AP Calculus の CED の問題の指示（2 件）。"
+    }
+  ],
+  "tags": [
+    "exam",
+    "instructions",
+    "units"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "exam（問題例の指示 Indicate units of measure.）"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "indicate units | include units | include the units": 7,
+      "appropriate units | correct units": 7
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（書き言葉のコーパスと参照で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 appropriate units | correct units（7 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

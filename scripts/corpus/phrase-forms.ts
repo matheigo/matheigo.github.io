@@ -602,6 +602,214 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Wait, let me back up — I made a mistake here.": "let me back up | let's back up | back up a little | back up a second | back up a step",
     "Actually, scratch that.": "scratch that",
   },
+  "explaining-solution-that-cant-be-right": {
+    "Wait, that can't be right — a probability can't be bigger than 1.": "that can't be right | that cannot be right | that can't be true",
+    "Hmm, that doesn't seem right.": "doesn't seem right | does not seem right | doesn't look right | does not look right",
+  },
+  "explaining-solution-that-makes-sense": {
+    "That makes sense, because the answer should be a little less than 10.": "makes sense because | make sense because",
+    "That seems reasonable, since it should be a little less than 10.": "seems reasonable | seem reasonable | sounds reasonable",
+  },
+  "explaining-solution-matches-the-other-way": {
+    "I got the same answer as before, so it's probably right.": "same answer as before | the same answer as | same answer we got | same answer i got",
+    "This matches what we got the other way.": "matches what we got | matches what i got | agrees with what we got | agrees with what i got",
+  },
+  "explaining-solution-another-way": {
+    "You could also complete the square.": "you could also",
+    "Another way to do it is to complete the square.": "another way to do | another way of doing",
+  },
+  "explaining-solution-by-symmetry": {
+    "By symmetry, the other half is the same, so I just doubled it.": "by symmetry",
+    "Since it's symmetric, I found one half and doubled it.": "since it's symmetric | because it's symmetric | since it is symmetric | because it is symmetric",
+  },
+  "explaining-solution-derivative-equal-to-zero": {
+    "I found the critical points by setting the derivative equal to zero.": "find the critical points | found the critical points",
+    "I took the derivative and set it equal to zero.": "derivative and set it equal to | derivative and set it to | set the derivative equal to | set the derivative to | derivative equal to zero",
+  },
+  "explaining-solution-checked-the-endpoints": {
+    "I also checked the endpoints.": "check the endpoints | checked the endpoints | check the end points | checked the end points",
+    "I plugged in the endpoints too.": "plug in the endpoints | plugged in the endpoints | evaluate at the endpoints | evaluated at the endpoints",
+  },
+  "explaining-solution-used-a-calculator": {
+    "I used my calculator to get a decimal approximation at the end.": "use a calculator | use my calculator | use your calculator | on my calculator | on your calculator",
+    "At the end, I put it into my calculator.": "into my calculator | into your calculator | into the calculator | into a calculator",
+  },
+  "explaining-solution-rounded-at-the-end": {
+    "I didn't round until the very end.": "round until | rounding until | round at the very end | round at the end | don't round until",
+    "I kept the exact value until the last step.": "keep the exact | kept the exact | keep it exact | leave it exact | keep everything exact",
+  },
+  "explaining-solution-im-assuming": {
+    "I'm assuming the speed is constant.": "i'm assuming | i am assuming | we're assuming | we are assuming",
+    "This only works if the speed is constant.": "only works if | only work if",
+  },
+  "explaining-solution-rewrote-it-as": {
+    "I rewrote it as (x − 3)^2 + 1.": "rewrote it as | rewrite it as | rewrote this as | rewrite this as | rewrote that as | rewrite that as",
+    "I wrote it as (x − 3)^2 + 1 instead.": "wrote it as | wrote this as | wrote that as",
+  },
+  "explaining-solution-tried-small-cases": {
+    "I plugged in some numbers first to get a feel for it.": "plug in some numbers | plug in a few | try some numbers | try some values",
+    "I tried a few simple cases first to see what happens.": "simple cases | simpler cases | small cases | a few cases",
+  },
+  "explaining-solution-otherwise-contradiction": {
+    "If it weren't true, we'd get a contradiction, so it has to be true.": "we'd get a contradiction | we get a contradiction | we would get a contradiction | that's a contradiction | get a contradiction",
+    "Assuming the opposite leads to a contradiction.": "leads to a contradiction | lead to a contradiction | leading to a contradiction",
+  },
+  "written-solution-let": {
+    "Let x be the number of tickets sold.": "let … be the",
+    "Let x represent the number of tickets sold.": "let … represent",
+    "Let x denote the number of tickets sold.": "let … denote",
+  },
+  "written-solution-suppose": {
+    "Suppose that f(a) = f(b).": "suppose that",
+    "Assume that f(a) = f(b).": "assume that",
+  },
+  "written-solution-suppose-for-contradiction": {
+    "Suppose, for the sake of contradiction, that √2 is rational.": "for the sake of contradiction | for contradiction",
+    "Assume to the contrary that √2 is rational.": "to the contrary",
+    "Suppose not. Then √2 is rational.": "suppose not | assume not",
+  },
+  "written-solution-then": {
+    "This gives f′(x) = 2x − 4.": "this gives | which gives",
+    "Then we have f′(x) = 2x − 4.": "then we have",
+  },
+  "written-solution-which-implies": {
+    "2x = 6. It follows that x = 3.": "it follows that",
+    "2x = 6, which implies x = 3.": "which implies",
+    "2x = 6, so x = 3.": "",
+    "2x = 6 ⟹ x = 3": "",
+  },
+  "written-solution-as-desired": {
+    "This completes the proof.": "completes the proof",
+    "Hence a + b is even, as desired.": "as desired",
+    "Hence a + b is even, as required.": "as required",
+    "Hence a + b is even, which is what we wanted to show.": "what we wanted to show | what we wanted to prove | what we needed to show",
+    "∎": "",
+  },
+  "written-solution-note-that": {
+    "Notice that x^2 + 1 > 0 for all x.": "notice that",
+    "Note that x^2 + 1 > 0 for all x.": "note that",
+  },
+  "written-solution-similarly": {
+    "Similarly, BD = CE.": "similarly",
+    "By the same argument, BD = CE.": "by the same argument | by the same reasoning | by a similar argument",
+  },
+  "written-solution-on-the-other-hand": {
+    "On the other hand, f(3) < 0.": "on the other hand",
+  },
+  "written-solution-we-have": {
+    "We have that f(2) = 5, so f has a zero in (2, 3).": "we have that",
+    "We get that f(2) = 5.": "we get that",
+  },
+  "written-solution-taking-the-limit": {
+    "Taking the limit as n → ∞, we get L = 1/2.": "taking the limit as | taking the limit of both sides | taking limits",
+    "Letting n approach infinity, we get L = 1/2.": "letting … approach | letting … go to | letting … tend to",
+  },
+  "written-solution-reject-extraneous": {
+    "x = −2 is an extraneous solution, so we reject it.": "is extraneous | are extraneous | extraneous solution | extraneous solutions",
+    "x = −2 does not satisfy the original equation.": "not satisfy the original",
+  },
+  "written-solution-for-some-integer": {
+    "n = 2k + 1, where k is an integer.": "where … is an integer | where … is any integer | where … are integers",
+    "n = 2k + 1 for some integer k.": "for some integer",
+  },
+  "written-solution-case": {
+    "There are two cases: x ≥ 0 and x < 0.": "two cases | three cases",
+    "Case 1: x ≥ 0.": "case one",
+  },
+  "written-solution-final-answer": {
+    "The solution is x = 3.": "the solution is | the solutions are | the solution set is",
+    "Answer: x = 3": "",
+  },
+  "written-solution-combining": {
+    "Combining these two results, we get x = 2.": "combining these | combining the two | combining this with | combining both",
+    "Putting this together, x = 2.": "putting this together | putting these together | putting it all together | putting everything together",
+    "From (1) and (2), x = 2.": "",
+  },
+  "written-solution-by-induction": {
+    "By induction, the statement holds for all n ≥ 1.": "by induction",
+    "By mathematical induction, the statement holds for all n ≥ 1.": "by mathematical induction | by the principle of mathematical induction",
+  },
+  "written-solution-it-suffices-to-show": {
+    "It suffices to show that f′(x) > 0.": "it suffices to show | it suffices to prove | suffices to show",
+    "It is enough to show that f′(x) > 0.": "it is enough to show | it's enough to show | enough to show that",
+  },
+  "written-solution-given-prove": {
+    "Given: AB ≅ CD. Prove: △ABC ≅ △CDA.": "given … prove",
+  },
+  "written-solution-i-e": {
+    "f is increasing on (0, ∞), i.e., f′(x) > 0 there.": "i.e.",
+    "f is increasing on (0, ∞); that is to say, f′(x) > 0 there.": "that is to say",
+  },
+  "written-solution-by-the-theorem": {
+    "Using the Pythagorean Theorem, AC = 5.": "using the … theorem",
+    "By the Pythagorean Theorem, AC = 5.": "by the … theorem",
+    "It follows from the Pythagorean Theorem that AC = 5.": "follows from the … theorem",
+  },
+  "written-solution-hypotheses-are-met": {
+    "Since f is continuous on [1, 3] and differentiable on (1, 3), the Mean Value Theorem applies.": "theorem applies | rule applies | theorem can be applied | theorem may be applied | rule can be applied",
+    "The hypotheses of the Mean Value Theorem are satisfied.": "hypotheses … are satisfied | conditions … are satisfied | hypotheses are met | conditions are met | hypotheses are satisfied | conditions are satisfied",
+  },
+  "written-solution-conclusion-because-reason": {
+    "f changes from increasing to decreasing at x = 2, so f has a relative maximum there.": "changes from increasing to decreasing | changes from decreasing to increasing",
+    "f has a relative minimum at x = 2 because f′ changes from negative to positive there.": "changes from negative to positive | changes from positive to negative | changes sign from negative to positive | changes sign from positive to negative",
+  },
+  "written-solution-from-the-graph": {
+    "From the graph, f(2) = 3.": "from the graph | from the graphs",
+    "The graph shows that f(2) = 3.": "the graph shows | graph shows that",
+  },
+  "written-solution-no-solution": {
+    "Therefore, there is no solution.": "no solution | no solutions",
+    "The equation has no real solutions.": "no real solution | no real solutions | no real roots",
+  },
+  "written-solution-let-epsilon-be-given": {
+    "For any ε > 0, there is a δ > 0 such that |f(x) − L| < ε whenever 0 < |x − a| < δ.": "for any ε | for every ε | for all ε | given any ε",
+    "Let ε > 0 be given.": "let ε > zero be given | ε > zero be given | let ε > zero",
+  },
+  "exam-show-that": {
+    "Show that f has a zero on [0, 1].": "show that",
+  },
+  "exam-justify-your-answer": {
+    "Justify your answer.": "justify your answer",
+    "Give a reason for your answer.": "give a reason for your answer | give a reason for",
+  },
+  "exam-explain-your-reasoning": {
+    "Explain your reasoning.": "explain your reasoning",
+    "Explain how you know.": "explain how you know",
+  },
+  "exam-show-your-work": {
+    "Show your work.": "show your work | show all your work | show all work",
+    "Show the work that leads to your answer.": "show the work that leads to | show the work that led to",
+    "Answers without supporting work will receive no credit.": "without supporting work | receive no credit | no work, no credit",
+  },
+  "exam-exact-form": {
+    "Give the exact value, not a decimal approximation.": "the exact value | an exact value | exact answer",
+    "Leave your answer in exact form.": "in exact form | exact form",
+  },
+  "exam-three-decimal-places": {
+    "Round your answer to three decimal places.": "round to three decimal places | round … to three decimal places | rounded to three decimal places",
+    "Give your answer correct to three decimal places.": "correct to three decimal places | accurate to three decimal places | correct to three places",
+    "Your answer should be accurate to three places after the decimal point.": "places after the decimal point",
+  },
+  "exam-simplest-form": {
+    "Write your answer in simplest form.": "in simplest form | simplest form",
+    "Express your answer as a fraction in lowest terms.": "in lowest terms",
+  },
+  "exam-express-in-terms-of": {
+    "Express y in terms of x.": "express … in terms of",
+    "Write your answer in terms of x.": "write … in terms of",
+  },
+  "exam-determine-whether": {
+    "Determine whether the series converges or diverges.": "determine whether",
+    "Tell whether the series converges or diverges.": "tell whether",
+  },
+  "exam-interpret-in-context": {
+    "Interpret the meaning of f′(5) in context.": "in context",
+    "Interpret the meaning of f′(5) in the context of the problem.": "in the context of the problem | in the context of this problem",
+  },
+  "exam-indicate-units": {
+    "Use appropriate units.": "appropriate units | correct units",
+    "Indicate units of measure.": "indicate units | include units | include the units",
+  },
 };
 
 /**

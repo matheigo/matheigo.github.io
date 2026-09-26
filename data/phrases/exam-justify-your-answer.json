@@ -1,0 +1,36 @@
+{
+  "id": "exam-justify-your-answer",
+  "situation": "exam",
+  "intent": "問題文の「理由を述べよ」",
+  "en": "Justify your answer.",
+  "ja": "理由を述べよ。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Give a reason for your answer.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "exam",
+    "instructions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "justify your answer": 41
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats"
+    ],
+    "counted": "2026-09-26"
+  }
+}

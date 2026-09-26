@@ -1,0 +1,44 @@
+{
+  "id": "written-solution-we-have",
+  "situation": "written-solution",
+  "intent": "答案で「〜であるから」と成り立つ事実を示す",
+  "en": "We have that f(2) = 5, so f has a zero in (2, 3).",
+  "ja": "f(2) = 5 であるから、f は (2, 3) に零点をもつ。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "We get that f(2) = 5.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "connectives"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "we have that": 10,
+      "we get that": 1
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-intalg"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（書き言葉のコーパスと参照で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 we have that（10 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

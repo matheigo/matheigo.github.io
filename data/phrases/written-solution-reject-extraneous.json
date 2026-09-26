@@ -1,0 +1,38 @@
+{
+  "id": "written-solution-reject-extraneous",
+  "situation": "written-solution",
+  "intent": "答案で「x = −2 は不適」と書く",
+  "en": "x = −2 is an extraneous solution, so we reject it.",
+  "ja": "x = −2 は不適。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "x = −2 does not satisfy the original equation.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "equations"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "is extraneous | are extraneous | extraneous solution | extraneous solutions": 51,
+      "not satisfy the original": 2
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg"
+    ],
+    "counted": "2026-09-26"
+  }
+}

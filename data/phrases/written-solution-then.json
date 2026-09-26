@@ -1,0 +1,42 @@
+{
+  "id": "written-solution-then",
+  "situation": "written-solution",
+  "intent": "答案で「すると」と式をつなぐ",
+  "en": "This gives f′(x) = 2x − 4.",
+  "ja": "すると f′(x) = 2x − 4 である。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Then we have f′(x) = 2x − 4.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "connectives"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "this gives | which gives": 167,
+      "then we have": 29
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

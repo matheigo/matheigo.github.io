@@ -1,0 +1,41 @@
+{
+  "id": "explaining-solution-rounded-at-the-end",
+  "situation": "explaining-solution",
+  "intent": "途中で丸めず最後に丸めたと言う",
+  "en": "I didn't round until the very end.",
+  "ja": "途中では丸めず、最後に丸めました。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "I kept the exact value until the last step.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "rounding"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "round until | rounding until | round at the very end | round at the end | don't round until": 1
+    },
+    "sources": [
+      "mit-18.03"
+    ],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（講義のコーパスと MICASE 全体で数えた。round until | rounding until | round at the very end | round at the end | don't round until 1 件）。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

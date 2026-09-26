@@ -1,0 +1,42 @@
+{
+  "id": "written-solution-final-answer",
+  "situation": "written-solution",
+  "intent": "答案の最後に答えを書く",
+  "en": "The solution is x = 3.",
+  "ja": "答　x = 3",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Answer: x = 3",
+      "register": "written",
+      "note": "「Answer:」の書き方。数えない。"
+    }
+  ],
+  "tags": [
+    "writing",
+    "answer"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "the solution is | the solutions are | the solution set is": 145
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "written-solution-case",
+  "situation": "written-solution",
+  "intent": "答案で場合分けを書く",
+  "en": "There are two cases: x ≥ 0 and x < 0.",
+  "ja": "(i) x ≥ 0 のとき、(ii) x < 0 のとき",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Case 1: x ≥ 0.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "cases"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "case one": 29,
+      "two cases | three cases": 45
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg"
+    ],
+    "counted": "2026-09-26"
+  }
+}

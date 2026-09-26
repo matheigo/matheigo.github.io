@@ -1,0 +1,37 @@
+{
+  "id": "written-solution-conclusion-because-reason",
+  "situation": "written-solution",
+  "intent": "答案で結論と理由を 1 文で書く（極値の判定）",
+  "en": "f changes from increasing to decreasing at x = 2, so f has a relative maximum there.",
+  "ja": "f′ が x = 2 で負から正に変わるので、f は x = 2 で極小となる。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "f has a relative minimum at x = 2 because f′ changes from negative to positive there.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "extrema"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "changes from negative to positive | changes from positive to negative | changes sign from negative to positive | changes sign from positive to negative": 3,
+      "changes from increasing to decreasing | changes from decreasing to increasing": 11
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

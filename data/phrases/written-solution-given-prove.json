@@ -1,0 +1,31 @@
+{
+  "id": "written-solution-given-prove",
+  "situation": "written-solution",
+  "intent": "幾何の証明で仮定と結論を書く",
+  "en": "Given: AB ≅ CD. Prove: △ABC ≅ △CDA.",
+  "ja": "仮定：AB = CD　結論：△ABC ≡ △CDA",
+  "register": "written",
+  "tags": [
+    "writing",
+    "proof",
+    "geometry"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "draft",
+  "updated": "2026-09-26",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも要の部分を 3 件以上使わない（書き言葉のコーパスと参照で数えた。書: どの要の部分も 10 件に届かない（①②③ で判定しない））。人間レビューへ。",
+      "raised": "2026-09-26"
+    }
+  ]
+}

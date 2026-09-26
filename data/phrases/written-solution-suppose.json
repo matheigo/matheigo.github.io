@@ -1,0 +1,41 @@
+{
+  "id": "written-solution-suppose",
+  "situation": "written-solution",
+  "intent": "答案で仮定を置く",
+  "en": "Suppose that f(a) = f(b).",
+  "ja": "f(a) = f(b) とする（と仮定する）。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Assume that f(a) = f(b).",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "proof"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "assume that": 289,
+      "suppose that": 402
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

@@ -77,6 +77,7 @@ import {
   type Verdict,
   WIKIPEDIA_NOT_SAME,
 } from "./lib.js";
+import { loadMseCache, mseLeader } from "./mse.js";
 import type { ManifestEntry } from "./fetch.js";
 import { loadReferences, REFERENCE_NAMES, wikipediaNames } from "./references.js";
 
@@ -204,9 +205,17 @@ function probePhrase(
     .map(([c, by]) => [c, Object.values(by).reduce((a, b) => a + b, 0)] as const)
     .sort((a, b) => b[1] - a[1]);
   const rawLine = raw.map(([c, n]) => `${c} ${n}`).join(", ");
+  // Math Stack Exchange (mse.ts): read from the cache only; pnpm corpus:fetch:mse fills it after corpus:count.
+  const mseLine = () => {
+    const m = mseLeader(block, loadMseCache());
+    if (!m) return "  Math Stack Exchange: no key part can be searched";
+    const miss = m.missing.length ? `; not fetched: ${m.missing.join(", ")}` : "";
+    return `  Math Stack Exchange: ${m.hits >= PHRASE_ATTESTED ? "likely" : "③"} (${m.wording} ${m.hits})   {${m.all.map((a) => `${a.wording} ${a.hits}`).join(", ")}}${miss}`;
+  };
   if (group === "email") {
     const top = raw[0]?.[1] ?? 0;
     console.log(`  ${top >= STUDENT_SEEN ? "likely" : "draft"} (most-used key part ${top})   {${rawLine}}`);
+    if (top < STUDENT_SEEN) console.log(mseLine());
     return;
   }
   // Rule 1 (lib.ts phraseBelowFloor): no key part reaches 10, not judged ①②③.
@@ -216,7 +225,10 @@ function probePhrase(
   if (below === null) console.log(`  ${mark} ${verdict(v)}   {${rawLine}}`);
   else if (below.hits >= PHRASE_ATTESTED) {
     console.log(`  ${mark} likely, attested only (${below.wording} ${below.hits}; no key part reaches 10)   {${rawLine}}`);
-  } else console.log(`  ${mark} ③ below ${PHRASE_ATTESTED} (${below.wording ?? "—"} ${below.hits})   {${rawLine}}`);
+  } else {
+    console.log(`  ${mark} ③ below ${PHRASE_ATTESTED} (${below.wording ?? "—"} ${below.hits})   {${rawLine}}`);
+    if (group === "student") console.log(mseLine());
+  }
   if (below !== null && below.hits < PHRASE_ATTESTED && group === "written") {
     const ref = referenceHits(block, refs.ced, openstax, titles, refs, matcherFor("phrases"));
     const s = settlePhraseReference(ref, block);

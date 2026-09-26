@@ -1,0 +1,39 @@
+{
+  "id": "exam-explain-your-reasoning",
+  "situation": "exam",
+  "intent": "問題文の「考え方を説明せよ」",
+  "en": "Explain your reasoning.",
+  "ja": "考え方を説明せよ。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Explain how you know.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "exam",
+    "instructions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "explain your reasoning": 23,
+      "explain how you know": 3
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-26"
+  }
+}

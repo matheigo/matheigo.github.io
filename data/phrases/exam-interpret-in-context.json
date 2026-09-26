@@ -1,0 +1,39 @@
+{
+  "id": "exam-interpret-in-context",
+  "situation": "exam",
+  "intent": "問題文の「状況に即して意味を説明せよ」",
+  "en": "Interpret the meaning of f′(5) in context.",
+  "ja": "f′(5) の意味を、問題の状況に即して説明せよ。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Interpret the meaning of f′(5) in the context of the problem.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "exam",
+    "instructions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "in the context of the problem | in the context of this problem": 9,
+      "in context": 14
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-introstats",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

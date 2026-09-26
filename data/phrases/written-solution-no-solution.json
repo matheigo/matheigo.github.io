@@ -1,0 +1,40 @@
+{
+  "id": "written-solution-no-solution",
+  "situation": "written-solution",
+  "intent": "答案で「解なし」と書く",
+  "en": "Therefore, there is no solution.",
+  "ja": "よって解なし。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "The equation has no real solutions.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "equations"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "no solution | no solutions": 257,
+      "no real solution | no real solutions | no real roots": 46
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

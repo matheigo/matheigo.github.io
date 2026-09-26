@@ -1,0 +1,40 @@
+{
+  "id": "exam-express-in-terms-of",
+  "situation": "exam",
+  "intent": "問題文の「〜を…の式で表せ」",
+  "en": "Express y in terms of x.",
+  "ja": "y を x の式で表せ。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Write your answer in terms of x.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "exam",
+    "instructions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "write … in terms of": 42,
+      "express … in terms of": 51
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

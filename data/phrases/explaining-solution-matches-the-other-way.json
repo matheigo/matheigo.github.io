@@ -1,0 +1,39 @@
+{
+  "id": "explaining-solution-matches-the-other-way",
+  "situation": "explaining-solution",
+  "intent": "別の方法で出した答えと一致したと言う",
+  "en": "I got the same answer as before, so it's probably right.",
+  "ja": "別の方法で出した答えと一致します。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "This matches what we got the other way.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "checking"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "same answer as before | the same answer as | same answer we got | same answer i got": 11
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "yt:patrickjmt"
+    ],
+    "counted": "2026-09-26"
+  }
+}

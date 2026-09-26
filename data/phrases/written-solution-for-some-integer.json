@@ -1,0 +1,41 @@
+{
+  "id": "written-solution-for-some-integer",
+  "situation": "written-solution",
+  "intent": "答案で「k は整数」と条件を添える",
+  "en": "n = 2k + 1, where k is an integer.",
+  "ja": "n = 2k + 1（k は整数）と表せる。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "n = 2k + 1 for some integer k.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "integers"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "for some integer": 7,
+      "where … is an integer | where … is any integer | where … are integers": 43
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "written-solution-note-that",
+  "situation": "written-solution",
+  "intent": "答案で「〜に注意する」と書く",
+  "en": "Notice that x^2 + 1 > 0 for all x.",
+  "ja": "ここで、すべての x について x² + 1 > 0 であることに注意する。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Note that x^2 + 1 > 0 for all x.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "connectives"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "note that": 474,
+      "notice that": 590
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

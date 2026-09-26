@@ -1,0 +1,42 @@
+{
+  "id": "written-solution-from-the-graph",
+  "situation": "written-solution",
+  "intent": "答案で「グラフより」と根拠を示す",
+  "en": "From the graph, f(2) = 3.",
+  "ja": "グラフより、f(2) = 3 である。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "The graph shows that f(2) = 3.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "graphs"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "from the graph | from the graphs": 51,
+      "the graph shows | graph shows that": 40
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

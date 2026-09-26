@@ -1,0 +1,48 @@
+{
+  "id": "explaining-solution-rewrote-it-as",
+  "situation": "explaining-solution",
+  "intent": "式を別の形に書き直したと説明する",
+  "en": "I rewrote it as (x − 3)^2 + 1.",
+  "ja": "(x − 3)² + 1 の形に書き直しました。",
+  "register": "neutral",
+  "variants": [
+    {
+      "en": "I wrote it as (x − 3)^2 + 1 instead.",
+      "register": "casual"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "algebra"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "rewrote it as | rewrite it as | rewrote this as | rewrite this as | rewrote that as | rewrite that as": 233,
+      "wrote it as | wrote this as | wrote that as": 15
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "micase",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}

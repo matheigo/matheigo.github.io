@@ -1,0 +1,44 @@
+{
+  "id": "written-solution-combining",
+  "situation": "written-solution",
+  "intent": "答案で「(1)、(2) より」と結果を合わせる",
+  "en": "Combining these two results, we get x = 2.",
+  "ja": "(1)、(2) より（以上より）、x = 2 である。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Putting this together, x = 2.",
+      "register": "written"
+    },
+    {
+      "en": "From (1) and (2), x = 2.",
+      "register": "written",
+      "note": "式番号を引く書き方。数えない。"
+    }
+  ],
+  "tags": [
+    "writing",
+    "connectives"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "combining these | combining the two | combining this with | combining both": 20,
+      "putting this together | putting these together | putting it all together | putting everything together": 11
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg"
+    ],
+    "counted": "2026-09-26"
+  }
+}

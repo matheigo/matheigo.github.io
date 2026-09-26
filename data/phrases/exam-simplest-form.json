@@ -1,0 +1,41 @@
+{
+  "id": "exam-simplest-form",
+  "situation": "exam",
+  "intent": "問題文の「最も簡単な形で答えよ」",
+  "en": "Write your answer in simplest form.",
+  "ja": "最も簡単な形（既約分数）で答えよ。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Express your answer as a fraction in lowest terms.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "exam",
+    "instructions",
+    "fractions"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "in simplest form | simplest form": 31,
+      "in lowest terms": 12
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-26"
+  }
+}

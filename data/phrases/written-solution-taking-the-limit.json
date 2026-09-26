@@ -1,0 +1,36 @@
+{
+  "id": "written-solution-taking-the-limit",
+  "situation": "written-solution",
+  "intent": "答案で「n → ∞ とすると」と極限をとる",
+  "en": "Taking the limit as n → ∞, we get L = 1/2.",
+  "ja": "n → ∞ とすると、L = 1/2 を得る。",
+  "register": "written",
+  "variants": [
+    {
+      "en": "Letting n approach infinity, we get L = 1/2.",
+      "register": "written"
+    }
+  ],
+  "tags": [
+    "writing",
+    "limits"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "written": {
+      "letting … approach | letting … go to | letting … tend to": 3,
+      "taking the limit as | taking the limit of both sides | taking limits": 33
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-26"
+  }
+}

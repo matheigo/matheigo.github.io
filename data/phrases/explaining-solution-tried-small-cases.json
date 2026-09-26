@@ -1,0 +1,43 @@
+{
+  "id": "explaining-solution-tried-small-cases",
+  "situation": "explaining-solution",
+  "intent": "まず簡単な場合を試したと説明する",
+  "en": "I plugged in some numbers first to get a feel for it.",
+  "ja": "まず簡単な場合をいくつか試しました。",
+  "register": "casual",
+  "variants": [
+    {
+      "en": "I tried a few simple cases first to see what happens.",
+      "register": "neutral"
+    }
+  ],
+  "tags": [
+    "explaining",
+    "strategy"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "updated": "2026-09-26",
+  "evidence": {
+    "spoken": {
+      "simple cases | simpler cases | small cases | a few cases": 17,
+      "plug in some numbers | plug in a few | try some numbers | try some values": 19
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "micase",
+      "mit-18.01",
+      "mit-18.06",
+      "mit-6.042",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-26"
+  }
+}
