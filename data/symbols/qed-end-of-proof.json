@@ -7,11 +7,11 @@
       "register": "standard"
     },
     {
-      "text": "Q E D",
+      "text": "end of proof",
       "register": "spoken"
     },
     {
-      "text": "end of proof",
+      "text": "Q E D",
       "register": "spoken"
     }
   ],
@@ -30,14 +30,21 @@
     ]
   },
   "notes": [
-    "∎ や □ は記号の名前を読まず、which completes the proof や and that's the proof と言って締める。Q.E.D. は文字どおり Q E D と読む。"
+    "∎ や □ は記号の名前を読まず、which completes the proof と言って締める。Q.E.D. は文字どおり Q E D と読む。",
+    "言葉の締めは米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない。OpenStax Calculus は証明の終わりに □ だけを置く。Nicholson は this completes the proof と書く（5 件）。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "2.5・2.7・3.2・5.7・11.2。this completes the proof（5 件。読みを決めた参照）"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
@@ -53,8 +60,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 対象外）。読みは Nicholson の呼び方 completes the proof（2.5 Elementary Matrices・2.7 LU-Factorization・3.2 Determinants and Matrix Inverses）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

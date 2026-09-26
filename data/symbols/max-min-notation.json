@@ -3,15 +3,15 @@
   "latex": "\\max\\{a, b\\},\\ \\min\\{a, b\\}",
   "spoken_en": [
     {
-      "text": "the maximum of a and b",
+      "text": "the larger of a and b",
       "register": "standard"
     },
     {
-      "text": "the max of a and b",
+      "text": "the maximum of a and b",
       "register": "spoken"
     },
     {
-      "text": "the larger of a and b",
+      "text": "the max of a and b",
       "register": "spoken"
     }
   ],
@@ -27,8 +27,8 @@
     ]
   },
   "notes": [
-    "max{a, b} は the maximum of a and b（短く the max of a and b）、min{a, b} は the minimum of a and b と読む。",
-    "言葉で the larger of a and b（大きい方）とも言う。"
+    "max{a, b} は the larger of a and b、min{a, b} は the smaller of a and b と読む。記号の名前どおり the maximum of a and b（短く the max of a and b）とも言う。",
+    "AP Statistics の CED は、2 標本の t の自由度の範囲を the smaller of … and … と言葉で書く（topic 4.7・4.10）。"
   ],
   "sources": [
     {
@@ -37,6 +37,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "topic 4.7・4.10。min を the smaller of … and … と書く（2 件。読みを決めた参照）"
     }
   ],
   "confidence": "likely",
@@ -60,8 +66,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 8 件（10 未満） ／ 書: 対象外）。読みは AP Statistics の CED の呼び方 the larger of * and * | the smaller of * and * | the bigger of * and *（topic 4.7・topic 4.10）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

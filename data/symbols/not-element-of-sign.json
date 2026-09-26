@@ -24,14 +24,21 @@
     ]
   },
   "notes": [
-    "a ∉ A は a is not an element of A（a is not in A）と読む。"
+    "a ∉ A は a is not an element of A と読む。",
+    "∉ は米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない。Levin は a ∉ A を is not an element of と言葉で書く（6 件）。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "5.1 Sets ほか。is not an element of（6 件。読みを決めた参照）"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
@@ -45,8 +52,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 対象外）。読みは Levin の呼び方 is not an element of * | isn't an element of *（5.1 Sets・1.5 Proofs about Discrete Structures・2.1 Problems and Definitions）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

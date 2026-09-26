@@ -13,7 +13,7 @@
   `-- <id>` で絞る）／ `./scripts/corpus/fetch-captions.sh <id> <url>`（任意の 1 URL）
 - pnpm corpus:fetch:openstax … OpenStax 9 冊の本文（CNXML）を written コーパスとして取得（CC BY-NC-SA、コミット固定）
 - pnpm corpus:fetch:notes … MIT OCW の講義ノート（PDF → pdftotext）を written コーパス mit-notes として取得
-- pnpm corpus:fetch:micase -- <zip> … MICASE（TalkBank CABank）の書き起こしを話し言葉コーパス micase にする。**phrases だけに数える**。
+- pnpm corpus:fetch:micase -- <zip か展開済みフォルダ> … MICASE（TalkBank CABank）の書き起こしを話し言葉コーパス micase にする。**phrases だけに数える**。
   TalkBank はサインインした人にしか zip を出さないので、人間が落として手で実行する（docs/SOURCES.md）
 - pnpm corpus:count … コーパスの重複（同じファイル・同じ文）を除いて候補表現を数える → corpus/counts.json
 - pnpm corpus:probe … 書く前に候補表現を数える。`-- --decide --file x.txt` で 1 ブロック 1 エントリの判定まで出す
@@ -38,6 +38,7 @@
    件数の最も多いソースを抜くと別の言い方が首位になる ① は ② に下げる（1 ソース頼み。抜いて ③ になるだけなら ① のまま記録）。
    terms は語形変化をまとめ、「…」は 1〜3 語の空き。話・書とも ③ の語は、mapping near/none で全候補が話・書とも 10 件未満なら
    「英語に決まった言い方がない」（参照のどれかが候補を 3 件以上使っていれば除く）、それ以外は CED（AP Calculus ／ AP Statistics）→ OpenStax・IM・CK-12（同じ段、件数の多い候補）→ Nicholson ／ Levin → 英語版 Wikipedia の記事名（数学カテゴリから 4 段以内）の呼び方を見出しにする（どちらも register は主張しない）。
+   記号の ③ も同じ段の順で、参照の 1 つが 3 件以上使う読み（CED は 1 件から。Wikipedia は使わない）にする（lib.ts settleSymbolReading）。
    話し言葉の首位が 1 ソース頼み（抜くと ③ か別の候補が首位）で、書き言葉（①）か CED が別の言い方で決まっていれば、
    その言い方を en.term にし、話し言葉の言い方は register spoken の variant にする（書き言葉か CED が同じ言い方なら当てない）。
    **人間レビューに回るのは、そのどれにも当たらない ③ と、コーパスの結論がエントリの register と食い違うものだけ。**

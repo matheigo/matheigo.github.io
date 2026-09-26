@@ -5,10 +5,6 @@
     {
       "text": "the vector with components a and b",
       "register": "standard"
-    },
-    {
-      "text": "angle bracket a, b",
-      "register": "spoken"
     }
   ],
   "spoken_ja": "成分表示 (a, b) ／ ベクトル a b",
@@ -33,7 +29,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 3"
+      "title": "OpenStax Calculus Volume 3",
+      "note": "⟨ ⟩ のベクトルを a vector with components … と言葉で書く（5 件。読みを決めた参照）"
     }
   ],
   "confidence": "likely",
@@ -51,8 +48,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 with components *（本文 5 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

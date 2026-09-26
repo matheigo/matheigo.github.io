@@ -122,4 +122,7 @@ Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を�
 - 数えられないもの（別の意味を締め出す形がない言い方）は候補（en.alt・variants・collocations）に置かず、pitfalls に書く（phase-shift の horizontal shift）。
 - 新しい単元の行が既存のエントリに当たったら、その単元の意味・例文・level・ja.alt が足りているかを見て、足りなければ足す（飛ばさない）。
 - TERM_FORMS の形に複数形だけの語を置かない（constants、unknowns、solids、cubes）。語形変化をまとめて数えるので、複数形は単数や過去形にも当たる（cubes は x cubed に当たる）。名詞として数えたいときは a ／ the を付けた単数の形にする（a constant !of ／ the constant !of）。
+- **記号の読みも ③ なら参照で決める**（DECISIONS「Phase 3 記号と慣習差の前の修正」2）。参照（CED → OpenStax・IM・CK-12 → Nicholson・Levin）が記号を定義・説明するところの言い方（x ∈ A を is an element of A と書く）を、読みの形のまま数える。
+  1 つの参照で 3 件以上（CED は 1 件から）使う読みを spoken_en の 1 つ目（standard）にし、決めた参照を出典に入れる。flag は corpus-reference-fallback、register は主張しない。
+  Levin ／ Nicholson で決まり高校の参照が 0 件の記号は notes に「米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない」と参照の件数を書く。
 - **フレーズ（phrases）は文を丸ごと数えない。** 要の部分（意図を運ぶ言い方）を、terms の動詞句と同じ規則（語形変化をまとめ、「…」は 1〜3 語の空き、「A | B」「!w」も使える）で数える。形は `scripts/corpus/lib.ts` の `PHRASE_FORMS`（フレーズの id → en ／ variants の文 → 要の部分）に書き、evidence にも要の部分のまま記録する。別の使い方と分けられない要の部分（文頭の So）は数えない（`""`）。variants は同じ意図の言い換えにする（別の質問を variants に並べると、件数の比べ合いに意味がなくなる。exam-clarify-instruction）。学生の側の言い方（質問・オフィスアワー）は講義のコーパスにほとんど出てこないので ③ になりやすい（PLAN 15 の注意）

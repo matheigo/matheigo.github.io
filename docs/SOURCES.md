@@ -23,6 +23,10 @@ count.ts と probe.ts は `scripts/corpus/references.ts` で読む。
    英語の記事も数学カテゴリから 4 段以内（ja 側と同じ規則。wikicat.py）で、曖昧さ回避ページ・別の記事の節へのリダイレクトは使わない。
    記事が別の概念のものは lib.ts `WIKIPEDIA_NOT_SAME` に理由付きで外す。flag は corpus-reference-fallback、note は「Wikipedia の記事名」
 
+**記号（symbols）**も話し言葉で ③ なら同じ段の順で読みを決める（lib.ts `settleSymbolReading`。DECISIONS「Phase 3 記号と慣習差の前の修正」2）。
+ただし段が読みを決めるのは、その段の参照の 1 つが読みの形（SYMBOL_PATTERNS）を 3 件以上使うとき（CED は 1 件から）。4 の Wikipedia は使わない（記事名は読みではない）。
+参照の本文の数学用英数字（Levin の 𝑃・𝐴）は普通の文字に畳んで数える（lib.ts `cedText`）。添字の読み方だけが違う候補（{aₙ}）は参照で比べられないので決めない（`SYMBOL_NOT_READ_IN_REFERENCES`）。
+
 3 か 4 で決まった語（CED・OpenStax・IM・CK-12 のどの候補も 0 件）は、mapping_note に「米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない」と件数を書く
 （decide が「直すこと」に出す）。
 「英語に決まった言い方がない」の例外（英語の名前があると分かっているもの）に数えるのは、1 の CED の呼び方、
@@ -68,12 +72,14 @@ count.ts・decide.ts・probe.ts が terms・symbols の件数と重みから外�
 
 引用（TalkBank の MICASE のページの指定）: R. C. Simpson, S. L. Briggs, J. Ovens, and J. M. Swales. (1999). *The Michigan Corpus of Academic Spoken English*. Ann Arbor, MI: The Regents of the University of Michigan.
 
-- 取り方: talkbank.org にサインインし、上のページの Download transcripts で zip を落として `pnpm corpus:fetch:micase -- <zip>` を回す（人間が手で実行する。
+- 取り方: talkbank.org にサインインし、上のページの Download transcripts で zip を落として `pnpm corpus:fetch:micase -- <zip>` を回す（Safari が展開したフォルダでもよい: `-- ~/Downloads/MICASE`。人間が手で実行する。
   YouTube の字幕と同じ扱い）。スクリプトは zip を `corpus/micase/raw/` に 1 回だけ展開し、書き起こしごとに学生・教員・その他の発話を
   `corpus/micase/<ID>.<student|instructor|other>.txt` に分け、manifest に source `micase`・場面（scene）・話者（speaker）を付けて足す（変換済みは取り直さない）
 - 場面はファイル名の発話イベントの記号（MICASE Manual 2.3。OFC office hours、SGR study group、DIS discussion section、LES／LEL small／large lecture ほか）、
-  話者は CHAT の @Participants と @ID の役割（Manual 2.4 の学年・職の記号。JU・SU・MU・JG・SG・MG は学生、JF・SF・MF は教員、ほかは other）。
-  場面と話者ごとの語数は `corpus/micase/stats.json`
+  話者は @ID の役割の欄（語: Student・Teacher・Speaker・Audience ほか）を先に見て、Teacher は教員・Student は学生、それ以外の語は教育の欄の
+  Manual 2.4 の学年・職の記号で振る（JU・SU・MU・JG・SG・MG は学生、JF・SF・MF は教員、ほかは other。2026-09-25 に実データで確かめた）。
+  場面と話者ごとの語数は `corpus/micase/stats.json`。CABank 版のフォルダ分けは Manual の表 4-4 と少し違う（office hours 14、advising 2、tutorial の区分なし）
+- 取り込んだもの（2026-09-25）: 152 書き起こし・1,796,311 語（CHAT の記号を除いた語数。Manual の 1,695,540 語とは数え方が違う）
 - ソースの重み（1 ソース 25% まで）は MICASE を 1 ソースとして phrases にだけ当てる。MICASE のマニュアル（https://ca.talkbank.org/access/0docs/MICASE.pdf）は公開されている
 
 ### 注意

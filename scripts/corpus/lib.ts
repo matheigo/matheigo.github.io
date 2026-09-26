@@ -643,7 +643,9 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "square brackets": "square brackets | square bracket",
   },
   "curly-braces": {
-    "braces": "!curly braces | !curly brace",
+    // Plural only (Phase 3 記号と慣習差の前の修正 2): a singular "brace" is mostly a
+    // wooden brace in the references (Pythagorean word problems)
+    "braces": "!curly braces",
     "curly braces": "curly braces | curly brace | curly brackets | curly bracket",
   },
   "percent-sign": {
@@ -962,7 +964,8 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   },
   "product-pi-notation": {
     "the product from i equals one to n of a sub i": "the product from * to * of | the product from * equals",
-    "the product of a sub i, i from one to n": "the product of * from * to *",
+    // "from one to": "the product of three and eight translate from math notation to words" is not a reading
+    "the product of a sub i, i from one to n": "the product of * from one to *",
   },
   "factorial-n": {
     "n factorial": "* factorial",
@@ -1038,8 +1041,9 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "power-set-notation": {
     "the power set of A": "the power set of * | power set",
   },
+  // "A minus B" is not counted: numbers are subtracted the same way (notes)
   "set-difference": {
-    "A minus B": "set difference",
+    "the set difference of A and B": "set difference | difference of sets",
     "A without B": "a without b",
   },
   "closed-interval-brackets": {
@@ -1101,7 +1105,7 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "v vector": "v vector | u vector",
   },
   "vector-ab-arrow": {
-    "vector AB": "vector a b | vector ab",
+    "vector AB": "vector a b | vector ab | vector p q | vector pq",
     "the vector from A to B": "the vector from * to *",
   },
   "angle-bracket-vector": {
@@ -1844,8 +1848,20 @@ export function cedSections(text: string): [string, string][] {
   return out;
 }
 
-/** pdftotext output to countable text: soft hyphens and line-end hyphenation joined. */
-export const cedText = (s: string) => normalize(s.replace(/­/g, "").replace(/-\n/g, ""));
+/**
+ * pdftotext output to countable text: soft hyphens and line-end hyphenation
+ * joined, and the mathematical italic / bold letters and digits (U+1D400–1D7FF)
+ * that Levin sets its variables in read as plain ones ("𝑃 ∨ 𝑄 is read “𝑃 or 𝑄”"
+ * is "p or q"; DECISIONS, Phase 3 記号と慣習差の前の修正 2). ℕ, ℤ, ℚ, ℝ stay
+ * symbols.
+ */
+export const cedText = (s: string) =>
+  normalize(
+    s
+      .replace(/­/g, "")
+      .replace(/-\n/g, "")
+      .replace(/[\u{1D400}-\u{1D7FF}]/gu, (ch) => ch.normalize("NFKC")),
+  );
 
 /**
  * A book of the references split into sections (Nicholson, Levin). pdftotext
@@ -2025,6 +2041,8 @@ export interface MoreReferences {
  * normalized, and the IM glossaries. A CK-12 section title ("… 1.17
  * Vertical Angles") counts like an OpenStax one. A glossary counts a candidate when the
  * whole headword is that wording ("translation", "arc (of a circle)" is arc).
+ * Symbol readings are counted as their patterns (`regexOf` matcherFor("symbols");
+ * DECISIONS, Phase 3 記号と慣習差の前の修正 2).
  */
 export function referenceHits(
   candidates: string[],
@@ -2032,6 +2050,7 @@ export function referenceHits(
   openstax: string[],
   titles: string[],
   more: MoreReferences = {},
+  regexOf: (wording: string) => RegExp | null = termRegex,
 ): ReferenceHits {
   const out = emptyReference();
   const bySection = (into: Record<string, Record<string, number>>, c: string, re: RegExp, sections: [string, string][]) => {
@@ -2041,7 +2060,7 @@ export function referenceHits(
     }
   };
   for (const c of candidates) {
-    const re = termRegex(c);
+    const re = regexOf(c);
     if (!re) continue;
     bySection(out.ced, c, re, ced);
     bySection(out.cedStats!, c, re, more.cedStats ?? []);
@@ -2143,6 +2162,7 @@ export function settleUndecided(
   raw: { spoken: number; written: number },
   ref: ReferenceHits,
   order: string[],
+  minHits = 1,
 ): Settled {
   const { mapping, ja, en } = entry;
   const best = (score: (c: string) => number) =>
@@ -2178,7 +2198,10 @@ export function settleUndecided(
       ? { kind: "reference", by: "ced-stats", head: ced, where: topicsOf(ref.cedStats![ced]) }
       : { kind: "reference", by: "ced", head: ced, where: topicsOf(ref.ced[ced]) };
   }
-  const os = best((c) => openstax(c) + im(c) + ck12(c));
+  // A tier names a wording when one of its references uses it minHits times or more
+  // (terms: any hit; symbols: REFERENCE_NAMED, settleSymbolReading).
+  const atLeast = (...ns: number[]) => ns.some((n) => n >= minHits);
+  const os = best((c) => (atLeast(openstax(c), im(c), ck12(c)) ? openstax(c) + im(c) + ck12(c) : 0));
   if (os) {
     if (ck12(os) > openstax(os) && ck12(os) > im(os)) {
       const titles = ref.ck12Titles?.[os] ?? [];
@@ -2194,7 +2217,9 @@ export function settleUndecided(
     const titles = ref.openstaxTitles[os] ?? [];
     return { kind: "reference", by: "openstax", head: os, where: titles.length ? titles : [`本文 ${ref.openstax[os]} 件`] };
   }
-  const book = best((c) => sum(ref.nicholson, c) + sum(ref.levin, c));
+  const book = best((c) =>
+    atLeast(sum(ref.nicholson, c), sum(ref.levin, c)) ? sum(ref.nicholson, c) + sum(ref.levin, c) : 0,
+  );
   if (book) {
     const levin = sum(ref.levin, book) > sum(ref.nicholson, book);
     const by = (levin ? ref.levin : ref.nicholson)![book];
@@ -2207,6 +2232,37 @@ export function settleUndecided(
     return { kind: "reference", by: "wikipedia", head, where: [w.title, w.via === "ja-langlink" ? "ja の langlink 先" : "en.term のリダイレクト先"] };
   }
   return { kind: "undecided" };
+}
+
+/**
+ * Symbols whose readings the references cannot tell apart, so rule 2 does not
+ * settle them (DECISIONS, Phase 3 記号と慣習差の前の修正 2). id -> why.
+ */
+export const SYMBOL_NOT_READ_IN_REFERENCES: Record<string, string> = {
+  // The candidates differ in how a subscript is said (a sub n / a n); the references
+  // write the subscript as math ("the sequence aₙ = …", OpenStax and Levin), which the
+  // text shows as "a n" whichever way it is read
+  "sequence-braces": "the sequence aₙ is written as math in the references",
+};
+
+/**
+ * Rule 2 for symbols (DECISIONS, Phase 3 記号と慣習差の前の修正 2): a symbol
+ * whose readings the spoken corpus leaves undecided (③) is read the way the
+ * references read it where they define or explain it in words ("x ∈ A" is
+ * "x is an element of A"). The readings are counted in the references as
+ * their patterns (referenceHits with the symbols' matcher), in the tiers of
+ * terms - the CEDs (any number), then OpenStax, IM and CK-12 as one tier, then
+ * Nicholson and Levin - and a tier names a reading only when one of its
+ * references uses it REFERENCE_NAMED times or more (per reference and per
+ * reading, the forms of one reading added up, as for terms). Within a tier the
+ * reading with the most hits in its references together. Symbols have no
+ * mapping, so "no fixed expression" does not apply, and the Wikipedia step
+ * does not either: an article's name is not a reading. No register is claimed.
+ */
+export function settleSymbolReading(id: string, ref: ReferenceHits, order: string[]): Settled {
+  if (SYMBOL_NOT_READ_IN_REFERENCES[id]) return { kind: "undecided" };
+  const { wikipedia: _w, ...withoutWikipedia } = ref;
+  return settleUndecided({}, { spoken: 0, written: 0 }, withoutWikipedia, order, REFERENCE_NAMED);
 }
 
 // ------------------------- 見出しの規則: 1 ソース頼みの話し言葉 (中学の単元 2)

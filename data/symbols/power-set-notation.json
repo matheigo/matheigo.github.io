@@ -20,14 +20,21 @@
     ]
   },
   "notes": [
-    "𝒫(A) は the power set of A と読む。文字どおり P of A とも言う。"
+    "𝒫(A) は the power set of A と読む。",
+    "べき集合は米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない。Levin は 𝒫(A) を the power set of A と書く（5.1 Sets、4 件）。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "5.1 Sets。𝒫(A) を the power set of A と書く（4 件。読みを決めた参照）"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-25",
   "evidence": {
     "sources": [],
@@ -35,8 +42,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。読みは Levin の呼び方 the power set of * | power set（5.1 Sets）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

@@ -34,7 +34,11 @@ export const MICASE_EVENTS: Record<string, string> = {
   TUT: "tutorial",
 };
 
-/** Academic roles (Manual 2.4): students and instructors; the rest are "other". */
+/**
+ * Academic roles (Manual 2.4), the MICASE code in the @ID tier's education
+ * field (JU, SU, JF ...): students and instructors; the rest (RE researcher,
+ * ST staff, VO visitor, UN unknown) are "other".
+ */
 const STUDENT_ROLES = new Set(["JU", "SU", "MU", "JG", "SG", "MG"]);
 const INSTRUCTOR_ROLES = new Set(["JF", "SF", "MF"]);
 
@@ -59,17 +63,23 @@ export function micaseEvent(fileName: string): MicaseEvent | null {
   return { id: stem.toUpperCase(), type, scene: MICASE_EVENTS[type] ?? "unknown", discipline: m[2], level: m[3].toUpperCase() };
 }
 
-/** Classifies a speaker from the role words and codes CHAT records for them (@Participants role, @ID fields). */
-export function speakerClass(fields: string[]): SpeakerClass {
-  const words = fields.flatMap((f) => f.split(/[\s_,|]+/)).filter(Boolean);
-  for (const w of words) {
-    const u = w.toUpperCase();
-    if (INSTRUCTOR_ROLES.has(u) || /^(teacher|instructor|professor|faculty|lecturer)$/i.test(w)) return "instructor";
-  }
-  for (const w of words) {
-    const u = w.toUpperCase();
-    if (STUDENT_ROLES.has(u) || /^(student|undergraduate|graduate)$/i.test(w)) return "student";
-  }
+/**
+ * Classifies a speaker. The CABank MICASE transcripts (checked on the corpus,
+ * 2026-09-25) carry a CHAT role word in the @ID role field - Student, Teacher,
+ * Speaker, Audience, Member, Participant, Investigator, Leader, Visitor,
+ * Other, Unidentified - and the Manual's academic-role code in the education
+ * field (JU, SG, SF ...). The role word decides when it is Teacher or Student
+ * (a graduate student teaching a section is Teacher / SG: an instructor); any
+ * other role word (a colloquium Speaker, an Audience member, a study-group
+ * Member) goes by the code.
+ */
+export function speakerClass(role: string | undefined, code: string | undefined): SpeakerClass {
+  const r = (role ?? "").trim();
+  if (/^(teacher|instructor|professor|faculty|lecturer)$/i.test(r)) return "instructor";
+  if (/^(student|undergraduate|graduate)$/i.test(r)) return "student";
+  const c = (code ?? "").trim().toUpperCase();
+  if (INSTRUCTOR_ROLES.has(c)) return "instructor";
+  if (STUDENT_ROLES.has(c)) return "student";
   return "other";
 }
 
@@ -111,25 +121,30 @@ export function parseChat(chat: string): ChatTranscript {
     else tiers.push(l);
   }
 
-  const roleFields: Record<string, string[]> = {};
-  const add = (code: string, f: string) => (roleFields[code] ??= []).push(f);
+  // speaker code -> role word and academic-role code. @ID wins; @Participants
+  // ("S1 Teacher" or "S1 Name Teacher": the role is the last word) fills in.
+  const roles: Record<string, { role?: string; code?: string }> = {};
   for (const t of tiers) {
     const participants = t.match(/^@Participants:\s*(.*)$/);
     if (participants) {
       for (const p of participants[1].split(",")) {
         const parts = p.trim().split(/\s+/);
-        if (parts[0]) add(parts[0], parts.slice(1).join(" "));
+        if (parts[0] && parts.length > 1) (roles[parts[0]] ??= {}).role ??= parts[parts.length - 1];
       }
     }
+  }
+  for (const t of tiers) {
     const id = t.match(/^@ID:\s*(.*)$/);
-    if (id) {
-      const f = id[1].split("|");
-      // language|corpus|code|age|sex|group|SES|role|education|custom|
-      if (f[2]) add(f[2].trim(), [f[5], f[7], f[8], f[9]].filter(Boolean).join(" "));
-    }
+    if (!id) continue;
+    // language|corpus|code|age|sex|group|SES|role|education|custom|
+    const f = id[1].split("|").map((x) => x.trim());
+    if (!f[2]) continue;
+    const r = (roles[f[2]] ??= {});
+    if (f[7]) r.role = f[7];
+    if (f[8]) r.code = f[8];
   }
   const speakers: Record<string, SpeakerClass> = {};
-  for (const [code, fields] of Object.entries(roleFields)) speakers[code] = speakerClass(fields);
+  for (const [code, r] of Object.entries(roles)) speakers[code] = speakerClass(r.role, r.code);
 
   const text: Record<SpeakerClass, string[]> = { student: [], instructor: [], other: [] };
   for (const t of tiers) {

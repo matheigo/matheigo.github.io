@@ -5,10 +5,6 @@
     {
       "text": "the rational numbers",
       "register": "standard"
-    },
-    {
-      "text": "the rationals",
-      "register": "spoken"
     }
   ],
   "spoken_ja": "有理数全体の集合 Q",
@@ -24,14 +20,25 @@
     ]
   },
   "notes": [
-    "ℚ は the rational numbers（the rationals）と読む。"
+    "ℚ は the rational numbers と読む。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "the rational numbers ／ the set of rational numbers（OpenStax 4 冊で 11 件。読みを決めた参照）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Algebra (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Algebra",
+      "note": "the rational numbers（5 件）"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
@@ -45,8 +52,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 the rational numbers | the set of rational numbers（本文 11 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

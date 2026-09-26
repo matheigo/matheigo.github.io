@@ -31,6 +31,12 @@
       "type": "reference",
       "title": "CK-12 Foundation, CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.1 Mathematical Statements。P ∨ Q の読みを P or Q とする（5 件。読みを決めた参照）"
     }
   ],
   "confidence": "likely",
@@ -41,8 +47,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。読みは Levin の呼び方 p or q（1.1 Mathematical Statements・1.6 Chapter Summary）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

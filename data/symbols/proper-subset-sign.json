@@ -20,14 +20,21 @@
     ]
   },
   "notes": [
-    "A ⊊ B は A is a proper subset of B と読む。"
+    "A ⊊ B は A is a proper subset of B と読む。Levin は真部分集合を A ⊂ B と書き、A ⊆ B（部分集合）と分ける（5.1 Sets）。",
+    "真部分集合は米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない。Levin は is a proper subset of と書く（3 件）。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.5・5.1 Sets。is a proper subset of（3 件。読みを決めた参照）"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-25",
   "evidence": {
     "sources": [],
@@ -35,8 +42,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。読みは Levin の呼び方 proper subset（1.5 Proofs about Discrete Structures・5.1 Sets）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

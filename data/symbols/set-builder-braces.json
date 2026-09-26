@@ -5,10 +5,6 @@
     {
       "text": "the set of all x such that x is greater than zero",
       "register": "standard"
-    },
-    {
-      "text": "the set of x such that x is greater than zero",
-      "register": "spoken"
     }
   ],
   "spoken_ja": "x > 0 を満たす x 全体の集合",
@@ -35,11 +31,12 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Calculus Volume 1"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 1"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "the set of all … such that（3 件。OpenStax Calculus Volume 1 と合わせて 5 件。読みを決めた参照）"
     }
   ],
   "confidence": "likely",
@@ -57,8 +54,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 the set of all * such that（本文 5 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

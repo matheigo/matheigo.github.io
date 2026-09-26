@@ -3,6 +3,8 @@
  * TalkBank CABank; DECISIONS, Phase 3 記号の前の修正 5).
  *
  *   pnpm corpus:fetch:micase -- <MICASE.zip>     default corpus/micase/MICASE.zip
+ *   pnpm corpus:fetch:micase -- <MICASE folder>  the zip already unpacked (Safari
+ *                                                unpacks a download on its own)
  *
  * TalkBank serves the MICASE transcripts only to a signed-in user (the zip at
  * https://talkbank.org/data/ca/MICASE?f=zip, the folder and each .cha answer
@@ -16,7 +18,8 @@
  * manifest as source "micase" with the speech event (scene) and the speaker
  * class, and `collections: ["phrases"]`: MICASE counts for phrases only, never
  * for terms or symbols. corpus/micase/stats.json has the words by scene and
- * speaker. Cached: the zip is unpacked once (corpus/micase/raw/), and a
+ * speaker. Cached: the zip is unpacked (or the folder copied) once
+ * (corpus/micase/raw/), and a
  * transcript already converted is skipped on a re-run. Progress is done/total.
  *
  * Use (TalkBank rules, https://ca.talkbank.org/access/MICASE.html): any use is
@@ -52,9 +55,24 @@ async function unpack(zip: string) {
     console.log(`raw transcripts already unpacked: ${path.relative(ROOT, RAW)} (delete it to unpack again)`);
     return;
   }
+  if (fs.existsSync(zip) && fs.statSync(zip).isDirectory()) {
+    const files = walk(zip);
+    if (files.length === 0) {
+      console.error(`no .cha transcripts under ${zip}`);
+      process.exit(1);
+    }
+    fs.mkdirSync(RAW, { recursive: true });
+    files.forEach((f, i) => {
+      const to = path.join(RAW, path.relative(zip, f));
+      fs.mkdirSync(path.dirname(to), { recursive: true });
+      fs.copyFileSync(f, to);
+      if ((i + 1) % 50 === 0 || i + 1 === files.length) console.log(`  copied ${i + 1}/${files.length}`);
+    });
+    return;
+  }
   if (!fs.existsSync(zip)) {
     console.error(`no zip at ${zip}`);
-    console.error(`sign in at talkbank.org, download the transcripts from ${URL}, and pass the zip's path.`);
+    console.error(`sign in at talkbank.org, download the transcripts from ${URL}, and pass the zip's (or the unpacked folder's) path.`);
     process.exit(1);
   }
   fs.mkdirSync(RAW, { recursive: true });

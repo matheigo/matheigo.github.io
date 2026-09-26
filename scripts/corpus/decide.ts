@@ -33,6 +33,10 @@
  *     failing that OpenStax, IM or CK-12 (one tier), failing that Nicholson / Levin
  *     call it, failing that the English Wikipedia article's name
  *     (corpus-reference-fallback). No register is claimed
+ *   - a symbol (no mapping, no written register) is read the way those
+ *     references read it, when one of them uses the reading 3 times or more
+ *     (the CEDs: any number); Wikipedia does not read symbols (lib.ts
+ *     settleSymbolReading, DECISIONS Phase 3 記号と慣習差の前の修正 2)
  *
  * Only two things reach the human (the user's call on 2026-09-11):
  *   - undecided entries that neither reference names (corpus-undecided),
@@ -59,8 +63,11 @@ import {
   emptyReference,
   flatten,
   headsOf,
+  highSchoolHits,
   sameWording,
+  settleSymbolReading,
   settleUndecided,
+  SYMBOL_NOT_READ_IN_REFERENCES,
   sourceWeights,
   spokenLeanHead,
   wordsFor,
@@ -298,7 +305,9 @@ function main() {
             c.reference ?? emptyReference(),
             candidatesOf(c.collection, record),
           )
-        : { kind: "undecided" };
+        : c.collection === "symbols"
+          ? settleSymbolReading(entry.data.id, c.reference ?? emptyReference(), candidatesOf(c.collection, record))
+          : { kind: "undecided" };
     // The human's call comes before the rules.
     const settled: Settled | null = bothUndecided && human ? { kind: "undecided" } : ruleSettled;
     const todo: string[] = [];
@@ -307,7 +316,22 @@ function main() {
       const en = (record.en ?? {}) as { register?: string };
       if (en.register) todo.push(`en.register（${en.register}）を外す（register は主張しない）`);
     }
-    if (settled && settled.kind !== "undecided") {
+    if (settled && settled.kind === "reference" && c.collection === "symbols") {
+      // The reading the references use comes first (standard); the others stay if the
+      // corpus has them at all (DECISIONS, Phase 3 記号と慣習差の前の修正 2).
+      const readings = (record.spoken_en as { text: string }[]) ?? [];
+      const as = (w: string) => countedAs(c.collection, entry.data.id, w);
+      const at = readings.findIndex((r) => sameWording(as(r.text), settled.head) || sameWording(r.text, settled.head));
+      if (at !== 0) todo.push(`spoken_en の 1 つ目（standard）を ${at > 0 ? readings[at].text : settled.head} にする（今は ${readings[0]?.text}）`);
+      const hs = highSchoolHits(c.reference ?? emptyReference(), candidatesOf(c.collection, record));
+      if (
+        ["nicholson", "levin"].includes(settled.by) &&
+        hs.ced + hs.openstax + hs.im + hs.ck12 === 0 &&
+        !((record.notes as string[] | undefined) ?? []).some((n) => n.includes(NOT_IN_HIGH_SCHOOL))
+      ) {
+        todo.push(`notes に「${NOT_IN_HIGH_SCHOOL}」と件数を書く`);
+      }
+    } else if (settled && settled.kind !== "undecided") {
       const en = record.en as { term: string; register?: string };
       if (en.register) todo.push(`en.register（${en.register}）を外す（register は主張しない）`);
       // A word counted in a form is compared as that form; a Wikipedia name is a plain wording.
@@ -419,7 +443,7 @@ function main() {
     } else if (settled?.kind === "reference") {
       flags.push({
         code: "corpus-reference-fallback",
-        note: `コーパスで決まらない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。見出しは ${describeSettled(settled)}。register は主張しない。`,
+        note: `コーパスで決まらない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。${c.collection === "symbols" ? "読み" : "見出し"}は ${describeSettled(settled)}。register は主張しない。`,
         raised: TODAY,
       } as { code: string });
     } else if (settled?.kind === "undecided" && human) {
@@ -430,7 +454,11 @@ function main() {
         note:
           c.collection === "terms"
             ? `コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`
-            : `コーパスで決まらない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`,
+            : c.collection === "symbols" && SYMBOL_NOT_READ_IN_REFERENCES[entry.data.id]
+              ? `コーパスで決まらず、参照では読みを比べられない（${SYMBOL_NOT_READ_IN_REFERENCES[entry.data.id]}。lib.ts SYMBOL_NOT_READ_IN_REFERENCES）（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`
+              : c.collection === "symbols"
+              ? `コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも読みを 3 件以上使わない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`
+              : `コーパスで決まらない（話: ${describe(spoken)} ／ 書: ${describe(written)}）。人間レビューへ。`,
         raised: TODAY,
       } as { code: string });
     }

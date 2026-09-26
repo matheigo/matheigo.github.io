@@ -31,9 +31,15 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "5.1 Sets。{1, 2, 3} の読みを the set containing … とする（10 件。読みを決めた参照）"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
@@ -47,8 +53,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 対象外）。読みは Levin の呼び方 the set containing *（5.1 Sets・1.5 Proofs about Discrete Structures）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

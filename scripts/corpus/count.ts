@@ -32,6 +32,7 @@ import {
   countedAs,
   dedupe,
   forCollection,
+  matcherFor,
   normalize,
   referenceHits,
   referred as anyReference,
@@ -62,7 +63,7 @@ export interface EntryCounts {
   sources: string[];
   /** True when every spoken hit came from auto captions (weak evidence for symbols). */
   autoOnly: boolean;
-  /** terms: what the CEDs, OpenStax, IM, CK-12, Nicholson, Levin and Wikipedia call it, for the ③ fallback (lib.ts settleUndecided). */
+  /** terms: what the CEDs, OpenStax, IM, CK-12, Nicholson, Levin and Wikipedia call it, for the ③ fallback (lib.ts settleUndecided); symbols: how those references (not Wikipedia) read it (settleSymbolReading). */
   reference?: ReferenceHits;
 }
 
@@ -175,10 +176,14 @@ function main() {
       const candidates = candidatesOf(collection, record);
       const t = countEntry(counted, collection, candidates, headwordOf(collection, record));
       const wiki = collection === "terms" ? wikipedia.get(data.id) : undefined;
+      // Symbols too, as their patterns: rule 2 reads a ③ symbol the way the references do
+      // (lib.ts settleSymbolReading, DECISIONS Phase 3 記号と慣習差の前の修正 2).
       const reference =
         collection === "terms"
           ? { ...referenceHits(candidates, refs.ced, openstax, titles, { ...refs, ...calculus }), ...(wiki ? { wikipedia: wiki } : {}) }
-          : undefined;
+          : collection === "symbols"
+            ? referenceHits(candidates, refs.ced, openstax, titles, refs, matcherFor("symbols"))
+            : undefined;
       const referred = reference !== undefined && anyReference(reference);
       if (t.sources.length === 0 && !referred) continue;
       if (WITH_CONTEXTS) {

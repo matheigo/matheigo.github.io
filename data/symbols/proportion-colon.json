@@ -5,10 +5,6 @@
     {
       "text": "a is to b as c is to d",
       "register": "standard"
-    },
-    {
-      "text": "the ratio of a to b equals the ratio of c to d",
-      "register": "spoken"
     }
   ],
   "spoken_ja": "a 対 b イコール c 対 d",
@@ -24,14 +20,26 @@
     ]
   },
   "notes": [
-    "a : b = c : d は a is to b as c is to d と読む。米国の教科書は比例式を a/b = c/d の分数の形で書くことが多く、そのときは a over b equals c over d と読む。"
+    "a : b = c : d は a is to b as c is to d と読む。米国の教科書は比例式を a/b = c/d の分数の形で書くことが多く、そのときは a over b equals c over d と読む。",
+    "OpenStax Prealgebra は比例式の読み方を a is to b as c is to d と示す（14 件）。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 3 の指導の例で … is to … as … is to … の形（1 件。規則 2 で読みを決めた参照）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "比例式の読み方 a is to b as c is to d（14 件）"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
@@ -45,8 +53,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 対象外）。読みは CED の呼び方 is to * as * is to（unit3）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

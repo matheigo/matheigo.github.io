@@ -25,6 +25,8 @@ import {
   referenceHits,
   sameWording,
   sampleTermContexts,
+  cedText,
+  settleSymbolReading,
   settleUndecided,
   sourceWeights,
   spokenLeanHead,
@@ -565,6 +567,38 @@ describe("levelReferenceOf", () => {
   });
 });
 
+describe("settleSymbolReading (rule 2 for symbols)", () => {
+  const ref = (r: Partial<ReferenceHits>): ReferenceHits => ({ ced: {}, openstax: {}, openstaxTitles: {}, ...r });
+  const order = ["the empty set | an empty set", "the null set"];
+
+  it("reads a symbol the way a reference reads it three times or more", () => {
+    const s = settleSymbolReading("empty-set-symbol", ref({ levin: { [order[0]]: { "5.1 Sets": 8, "1.5 Proofs": 4 } } }), order);
+    expect(s).toMatchObject({ kind: "reference", by: "levin", head: order[0] });
+  });
+
+  it("leaves it undecided when no reference uses a reading three times", () => {
+    const hits = ref({ openstax: { [order[0]]: 1 }, im: { [order[0]]: { "Grade 6 1.1": 2 } }, levin: { [order[1]]: { "5.1 Sets": 2 } } });
+    expect(settleSymbolReading("empty-set-symbol", hits, order)).toEqual({ kind: "undecided" });
+  });
+
+  it("takes a CED reading at any number, before the other references", () => {
+    const s = settleSymbolReading("x", ref({ cedStats: { [order[1]]: { "4.7": 1 } }, levin: { [order[0]]: { "5.1 Sets": 9 } } }), order);
+    expect(s).toMatchObject({ kind: "reference", by: "ced-stats", head: order[1] });
+  });
+
+  it("does not use the Wikipedia article name, and skips the listed symbols", () => {
+    const wiki = ref({ wikipedia: { title: "Empty set", via: "en-redirect" } });
+    expect(settleSymbolReading("empty-set-symbol", wiki, order)).toEqual({ kind: "undecided" });
+    const hits = ref({ openstax: { "the sequence a n": 6 } });
+    expect(settleSymbolReading("sequence-braces", hits, ["the sequence a n"])).toEqual({ kind: "undecided" });
+  });
+
+  it("reads Levin's mathematical italic letters as plain ones", () => {
+    expect(cedText("𝑃 ∨ 𝑄 is read “𝑃 or 𝑄” and ℚ stays")).toBe('p ∨ q is read "p or q" and ℚ stays');
+    expect(countPattern(cedText("𝐴 × 𝐵 is the Cartesian product of 𝐴 and 𝐵"), "the cartesian product of *")).toBe(1);
+  });
+});
+
 describe("settleUndecided", () => {
   const ref = (r: Partial<ReferenceHits>): ReferenceHits => ({ ced: {}, openstax: {}, openstaxTitles: {}, ...r });
   const order = ["integration by long division", "integrating using long division"];
@@ -1052,9 +1086,11 @@ describe("MICASE (phrases only)", () => {
   const chat = [
     "@UTF8",
     "@Begin",
-    "@Participants:\tS1 Student_1 Student, S2 Instructor Teacher, S3 Unknown Unidentified",
-    "@ID:\teng|MICASE|S1|20;|female|||Student|JU||",
-    "@ID:\teng|MICASE|S2|45;|male|||Teacher|SF||",
+    "@Participants:\tS1 Student, S2 Teacher, S3 Unidentified, S4 Speaker",
+    "@ID:\teng|MICASE|S1|20;|female|NS||Student|JU||",
+    "@ID:\teng|MICASE|S2|45;|male|NS||Teacher|SG||",
+    "@ID:\teng|MICASE|S3||female|NS||Unidentified|UN||",
+    "@ID:\teng|MICASE|S4|50;|male|NS||Speaker|SF||",
     "*S1:\tcould you walk me through [/] through this step ? \u001512_34\u0015",
     "*S2:\tsure &-uh so (be)cause the <derivative> [>] is zero +...",
     "\twe get a critical point .",
@@ -1070,17 +1106,20 @@ describe("MICASE (phrases only)", () => {
 
   it("splits a transcript into students, instructors and the rest, without CHAT markup", () => {
     const t = parseChat(chat);
-    expect(t.speakers).toEqual({ S1: "student", S2: "instructor", S3: "other" });
+    expect(t.speakers).toEqual({ S1: "student", S2: "instructor", S3: "other", S4: "instructor" });
     expect(t.text.student).toEqual(["could you walk me through through this step ?"]);
     expect(t.text.instructor).toEqual(["sure so because the derivative is zero we get a critical point ."]);
     expect(t.text.other).toEqual(["okay ."]);
     expect(wordCount(t.text.instructor)).toBe(13);
   });
 
-  it("classifies academic-role codes", () => {
-    expect(speakerClass(["JG"])).toBe("student");
-    expect(speakerClass(["JF"])).toBe("instructor");
-    expect(speakerClass(["ST staff"])).toBe("other");
+  it("classifies by the role word first, then by the academic-role code", () => {
+    expect(speakerClass("Teacher", "SG")).toBe("instructor"); // a graduate student teaching a section
+    expect(speakerClass("Student", "SU")).toBe("student");
+    expect(speakerClass("Speaker", "JG")).toBe("student");
+    expect(speakerClass("Audience", "JF")).toBe("instructor");
+    expect(speakerClass("Participant", "ST")).toBe("other");
+    expect(speakerClass("Unidentified", "UN")).toBe("other");
   });
 
   it("keeps a phrases-only source out of the terms' docs and weights", () => {

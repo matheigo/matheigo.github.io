@@ -3,12 +3,8 @@
   "latex": "\\prod_{i=1}^{n} a_i",
   "spoken_en": [
     {
-      "text": "the product from i equals one to n of a sub i",
-      "register": "standard"
-    },
-    {
       "text": "the product of a sub i, i from one to n",
-      "register": "spoken"
+      "register": "standard"
     }
   ],
   "spoken_ja": "パイ（総乗）、i = 1 から n まで a i",
@@ -24,15 +20,20 @@
     ]
   },
   "notes": [
-    "∏ は Σ と同じ形で読み、sum を product に替える: the product from i equals one to n of a sub i。",
-    "記号の名前は capital pi だが、読むときは product と言う。"
+    "∏ は the product of a sub i, i from one to n と読む。記号の名前は capital pi だが、読むときは product と言う。",
+    "OpenStax Algebra and Trigonometry は n! を 1 から n までの整数の積として the product of … from 1 to n の形で言葉にする（3 件）。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "n! の定義で the product of … from 1 to n の形を使う（3 件。読みを決めた参照）"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-25",
   "evidence": {
     "sources": [],
@@ -40,8 +41,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 the product of * from one to *（本文 3 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

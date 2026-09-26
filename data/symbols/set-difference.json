@@ -3,12 +3,8 @@
   "latex": "A \\setminus B,\\ A - B",
   "spoken_en": [
     {
-      "text": "A minus B",
+      "text": "the set difference of A and B",
       "register": "standard"
-    },
-    {
-      "text": "A without B",
-      "register": "spoken"
     }
   ],
   "spoken_ja": "A から B を除いた集合（日本の高校では A ∩ B̄）",
@@ -24,14 +20,21 @@
     ]
   },
   "notes": [
-    "A ∖ B は A minus B と読み、名前は the set difference of A and B。数の引き算と同じ読みになる。"
+    "A ∖ B の名前は the set difference of A and B。A minus B とも読むが、数の引き算と同じ言い方なので読みの件数には数えていない。",
+    "差集合は米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない。Levin は A ∖ B を set difference と書く（3 件）。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.5・5.1 Sets。set difference ／ difference of sets（3 件。読みを決めた参照）"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "updated": "2026-09-25",
   "evidence": {
     "sources": [],
@@ -39,8 +42,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。読みは Levin の呼び方 set difference | difference of sets（5.1 Sets・1.5 Proofs about Discrete Structures）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

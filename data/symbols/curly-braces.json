@@ -37,27 +37,30 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "グループ化の記号と集合の { } を braces と呼ぶ（OpenStax 4 冊で 9 件。読みを決めた参照）"
     }
   ],
   "confidence": "likely",
   "updated": "2026-09-25",
   "evidence": {
     "spoken": {
-      "curly braces | curly brace | curly brackets | curly bracket": 5,
-      "!curly braces | !curly brace": 2
+      "curly braces | curly brace | curly brackets | curly bracket": 5
     },
     "sources": [
       "khan-algebra",
       "mit-18.03",
-      "yt:blackpenredpen",
       "yt:profleonard"
     ],
     "counted": "2026-09-25"
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 !curly braces（本文 9 件）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]

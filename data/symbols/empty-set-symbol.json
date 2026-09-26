@@ -5,10 +5,6 @@
     {
       "text": "the empty set",
       "register": "standard"
-    },
-    {
-      "text": "the null set",
-      "register": "spoken"
     }
   ],
   "spoken_ja": "空集合",
@@ -25,7 +21,7 @@
     ]
   },
   "notes": [
-    "∅ は the empty set と読む。the null set とも言う。ギリシャ文字の φ（phi）とは別の記号。"
+    "∅ は the empty set と読む。ギリシャ文字の φ（phi）とは別の記号。"
   ],
   "sources": [
     {
@@ -38,6 +34,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "5.1 Sets ほか。∅ を the empty set と書く（12 件。読みを決めた参照）"
     }
   ],
   "confidence": "likely",
@@ -54,8 +56,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 対象外）。読みは Levin の呼び方 the empty set | an empty set（5.1 Sets・1.5 Proofs about Discrete Structures・3.1 Pascal’s Arithmetical Triangle）。register は主張しない。",
       "raised": "2026-09-25"
     }
   ]
