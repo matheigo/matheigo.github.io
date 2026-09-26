@@ -26,7 +26,7 @@
     ]
   },
   "definition_ja": "各階級の度数を度数の合計で割った値。全体に対する割合を表す。",
-  "definition_en": "The frequency of a class divided by the total number of data values: the fraction of the data in that class.",
+  "definition_en": "The frequency of a class as a fraction of the whole: the frequency divided by how many data values there are.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -44,7 +44,7 @@
   "collocations": [],
   "pitfalls": [
     "用例コーパスでは cumulative relative frequency（累積相対度数）の中の relative frequency を除いて数えた。",
-    "相対度数を確率とみなしたものが統計的確率（experimental probability）。"
+    "相対度数を確率とみなしたものが統計的確率（empirical probability。エントリ experimental-probability）。"
   ],
   "related": [
     "frequency",
@@ -63,7 +63,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "!cumulative relative frequency": 19

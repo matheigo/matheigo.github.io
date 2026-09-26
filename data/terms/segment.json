@@ -20,7 +20,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスでは、書き言葉は line segment が多く、話し言葉は line を省いた segment のほうが多い（line segment も使う）。英語の line は両方向に限りなく伸びる直線で、線分の意味にはならない。英語の記法では線分 AB を AB の上に横線を引いて表し、その長さは横線なしの AB と書き分ける（日本の教科書では線分も長さも AB）。",
+  "mapping_note": "用例コーパスでは、書き言葉は line segment が多く、話し言葉は line を省いた segment のほうが多い（line segment も使う）。英語の line は両方向に限りなく伸びる直線で、線分の意味にはならない。英語の記法では線分 AB を AB の上に横線を引いて表し、その長さは横線なしの AB と書き分ける（共通テストの問題文では線分も長さも AB と書く）。",
   "domains": [
     "geometry"
   ],
@@ -76,6 +76,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和5年度 大学入学共通テスト 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20240408/https://www.dnc.ac.jp/albums/abm.php?d=432&f=abm00003627.pdf&n=2023_ot_19_sugaku1A.pdf",
+      "note": "線分 AB と長さ AB = … の書き方"
     }
   ],
   "confidence": "likely",
@@ -84,7 +90,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "!line segment": 189,
