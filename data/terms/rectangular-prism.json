@@ -1,0 +1,104 @@
+{
+  "id": "rectangular-prism",
+  "ja": {
+    "term": "直方体",
+    "reading": "ちょくほうたい",
+    "alt": []
+  },
+  "en": {
+    "term": "rectangular box",
+    "alt": [],
+    "variants": [
+      {
+        "term": "rectangular prism",
+        "register": "spoken",
+        "note": "話し言葉ではこちらがずっと多いが、ほとんどが Khan Academy の中学の講義。中学・Geometry の教材（IM・CK-12）もこの呼び方。"
+      }
+    ],
+    "uk": "cuboid",
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "6 つの面がすべて長方形の角柱。向かい合う面どうしは合同で平行である。",
+  "definition_en": "A prism whose six faces are all rectangles. Each pair of opposite faces is congruent and parallel.",
+  "latex": "V = lwh",
+  "spoken_en": "V equals l times w times h",
+  "examples": [
+    {
+      "en": "A cereal box is a rectangular prism, so its volume is just length times width times height.",
+      "ja": "シリアルの箱は直方体だから、体積は縦 × 横 × 高さで求められるよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "A rectangular box is 8 cm long, 5 cm wide, and 3 cm tall. Find its volume and its surface area.",
+      "ja": "縦 8 cm、横 5 cm、高さ 3 cm の直方体の体積と表面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英国では cuboid と言う。",
+    "立方体（cube、エントリ cube-solid）は、6 つの面がすべて正方形の特別な直方体。cube は数の 3 乗（エントリ cube）と同じ語。",
+    "V = lwh の l、w、h は length、width、height の頭文字で、日本の「縦 × 横 × 高さ」と同じ計算。",
+    "中学・Geometry の教材（IM・CK-12）と授業では rectangular prism と呼ぶことが多い。見出しの rectangular box は教科書（OpenStax Calculus）の書き方。"
+  ],
+  "related": [
+    "prism",
+    "cube-solid",
+    "volume",
+    "surface-area",
+    "cubic-units"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "直方体",
+      "en": "Rectangular cuboid"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "rectangular box": 1,
+      "rectangular prism": 24
+    },
+    "written": {
+      "rectangular box": 26,
+      "rectangular prism": 3
+    },
+    "sources": [
+      "khan-middle",
+      "mit-18.06",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "quadratic-expression",
+  "ja": {
+    "term": "二次式",
+    "reading": "にじしき",
+    "alt": []
+  },
+  "en": {
+    "term": "quadratic expression",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "次数が 2 の式。x² + 3x − 4 のように、2 次の項をふくみ、3 次以上の項をふくまない式。",
+  "definition_en": "A polynomial expression of degree 2, such as x² + 3x − 4. In one variable, it can be written as ax² + bx + c with a ≠ 0.",
+  "latex": "ax^2 + bx + c \\quad (a \\neq 0)",
+  "spoken_en": "a x squared plus b x plus c, where a is not equal to zero",
+  "examples": [
+    {
+      "en": "The highest power of x is 2, so it's a quadratic expression; if there were an x cubed, it wouldn't be.",
+      "ja": "x の最高次が 2 だから、これは二次式。x³ があったら二次式じゃない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Factor the quadratic expression x² + 3x − 4.",
+      "ja": "二次式 x² + 3x − 4 を因数分解せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "quadratic は「2 次の」。quad- から「4」を連想しやすいが、ここでは「正方形」（x² は正方形の面積）から来ている。4 次は quartic（エントリ quartic-equation）。",
+    "二次方程式は quadratic equation、二次関数は quadratic function と、「二次」はどれも quadratic。一次は linear（エントリ linear-expression）、三次は cubic。",
+    "ax² + bx + c で a = 0 なら 1 次式になる。二次式であるためには a ≠ 0 が必要。"
+  ],
+  "related": [
+    "degree",
+    "polynomial",
+    "linear-expression",
+    "factored-form",
+    "quadratic-formula"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "quadratic expression": 20
+    },
+    "written": {
+      "quadratic expression": 14
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.06",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

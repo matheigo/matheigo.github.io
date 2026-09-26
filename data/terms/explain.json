@@ -1,0 +1,113 @@
+{
+  "id": "explain",
+  "ja": {
+    "term": "説明する",
+    "reading": "せつめいする",
+    "alt": []
+  },
+  "en": {
+    "term": "explain",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "答えの出し方や、あることがなぜ正しいのかを、言葉や式を使って相手に分かるように述べる。",
+  "definition_en": "To tell clearly, using words and math, how you got an answer or why something is true.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Don't just give me the number. Explain how you got it.",
+      "ja": "数だけ言うんじゃなくて、どうやって出したか説明して。",
+      "register": "spoken"
+    },
+    {
+      "en": "If x is an integer, is 2x + 3 always odd? Explain your reasoning.",
+      "ja": "x が整数のとき、2x + 3 はいつも奇数になるか。理由を説明せよ。",
+      "register": "written"
+    },
+    {
+      "en": "Explain why the sum of two even numbers is always even.",
+      "ja": "2 つの偶数の和がいつも偶数になる理由を説明せよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "問題文の「理由を説明せよ」は Explain your reasoning. や Explain why …。根拠をはっきり示すことを求めるときは justify（根拠を示す）も使う（Justify your answer.）。",
+    "「私に説明して」は Explain it to me.。explain は説明を受ける人を直接の目的語にとらないので、Explain me … とは言わない。",
+    "「証明する」「〜を示せ」は prove ／ show that（エントリ prove）で、explain とは別の動詞。"
+  ],
+  "related": [
+    "prove",
+    "proof",
+    "deductive-reasoning",
+    "counterexample",
+    "even-number"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "explain": 381
+    },
+    "written": {
+      "explain": 868
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

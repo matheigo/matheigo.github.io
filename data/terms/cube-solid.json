@@ -1,0 +1,102 @@
+{
+  "id": "cube-solid",
+  "ja": {
+    "term": "立方体",
+    "reading": "りっぽうたい",
+    "alt": [
+      "正六面体"
+    ]
+  },
+  "en": {
+    "term": "cube",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "6 つの面がすべて合同な正方形でできている立体。縦・横・高さがすべて等しい直方体ともいえる。",
+  "definition_en": "A solid with six faces that are all congruent squares. It is a rectangular prism whose length, width, and height are all equal.",
+  "latex": "V = s^3",
+  "spoken_en": "V equals s cubed",
+  "examples": [
+    {
+      "en": "A cube is a rectangular prism with all its edges the same length, so its volume is s cubed.",
+      "ja": "立方体は、辺の長さが全部等しい直方体。だから体積は s³ になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "A cube has an edge length of 4 cm. Find its volume and its surface area.",
+      "ja": "1 辺の長さが 4 cm の立方体の体積と表面積を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "3 乗（立方、エントリ cube）と同じ cube という単語。1 辺 s の立方体の体積が s³ なので、s³ を s cubed と読む。",
+    "米国の問題文（IM ほか）の number cube は「さいころ」のこと。",
+    "立方体の面は face（6 つ）、辺は edge（12 本）、頂点は vertex（8 つ。複数形は vertices）。1 辺の長さは edge length や side length と言う。"
+  ],
+  "related": [
+    "cube",
+    "rectangular-prism",
+    "regular-polyhedron",
+    "volume",
+    "net"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "a cube !root !roots | the cube !root !roots !of | unit cube": 140
+    },
+    "written": {
+      "a cube !root !roots | the cube !root !roots !of | unit cube": 86
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

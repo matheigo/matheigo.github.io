@@ -1,0 +1,95 @@
+{
+  "id": "solution-pair",
+  "ja": {
+    "term": "解の組",
+    "reading": "かいのくみ",
+    "alt": []
+  },
+  "en": {
+    "term": "ordered pair",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「解の組」は方程式を満たすことまで含む言い方だが、英語の ordered pair は x と y の値を順に並べた組そのものを指し、座標平面上の点の座標にも使う。解であることは The solution is the ordered pair (2, 3). のように文で言う。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "2 つの文字をふくむ方程式（や連立方程式）を成り立たせる、x の値と y の値の組。x = 2, y = 3 や (x, y) = (2, 3) のように書く。",
+  "definition_en": "An ordered pair (x, y) of values that makes an equation in two variables, or every equation in a system, true. The x-value is written first and the y-value second.",
+  "latex": "(x, y)",
+  "spoken_en": "the ordered pair x comma y",
+  "examples": [
+    {
+      "en": "x = 2 and y = 3 work in both equations, so the solution is the ordered pair (2, 3).",
+      "ja": "x = 2, y = 3 は両方の式を満たすから、解の組は (2, 3) だ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Which ordered pair is a solution of 3x − y = 5: (1, 2), (2, 1), or (3, 3)?",
+      "ja": "(1, 2)、(2, 1)、(3, 3) のうち、方程式 3x − y = 5 の解の組になっているものを選べ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "ordered pair は座標平面上の点の座標にも使う（エントリ coordinates）。解の組 (2, 3) は、グラフでは点 (2, 3) に当たる。",
+    "ordered（順序のある）は、(2, 3) と (3, 2) が別の組であることを表す。x の値を先、y の値を後に書く。",
+    "日本の教科書は解を x = 2, y = 3 や (x, y) = (2, 3) と書く。英語では The solution is the ordered pair (2, 3). のように、ordered pair 1 つで解を言う書き方もある。"
+  ],
+  "related": [
+    "solution",
+    "linear-equation-in-two-variables",
+    "coordinates",
+    "point-of-intersection",
+    "satisfy"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "ordered pair": 46
+    },
+    "written": {
+      "ordered pair": 404
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

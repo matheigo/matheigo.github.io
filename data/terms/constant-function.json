@@ -1,0 +1,97 @@
+{
+  "id": "constant-function",
+  "ja": {
+    "term": "定数関数",
+    "reading": "ていすうかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "constant function",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "x がどんな値をとっても、y がいつも同じ値 c になる関数 y = c。グラフは x 軸に平行な直線。",
+  "definition_en": "A function whose output is the same number for every input, y = c. Its graph is a horizontal line with a slope of 0.",
+  "latex": "y = c",
+  "spoken_en": "y equals c",
+  "examples": [
+    {
+      "en": "y = 4 is a constant function: whatever x is, y is always 4.",
+      "ja": "y = 4 は定数関数。x が何でも、y はいつも 4。",
+      "register": "spoken"
+    },
+    {
+      "en": "Graph the constant function y = −2 and state its slope.",
+      "ja": "定数関数 y = −2 のグラフをかき、その傾きを答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "グラフは x 軸に平行な直線で、英語では horizontal line（水平な線）と言う。傾きは 0。",
+    "x = 3 のような y 軸に平行な直線（縦の直線）は、x の関数ではない。傾きも定義されない（undefined）。",
+    "日本の中学の一次関数は y = ax + b で a ≠ 0 とするので、定数関数は一次関数に含めない（エントリ linear-function）。"
+  ],
+  "related": [
+    "linear-function",
+    "slope",
+    "constant",
+    "function",
+    "x-axis"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "定数関数",
+      "en": "Constant function"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "constant function": 23
+    },
+    "written": {
+      "constant function": 38
+    },
+    "sources": [
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "id": "monomial",
+  "ja": {
+    "term": "単項式",
+    "reading": "たんこうしき",
+    "alt": []
+  },
+  "en": {
+    "term": "monomial",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "数と文字の掛け算だけでできている式。3x²、ab のほか、−5 や x のように 1 つの数や文字だけの式も単項式とする。",
+  "definition_en": "An expression that is a number, a variable, or a product of numbers and variables, such as 3x², ab, or −5. A monomial has exactly one term.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "5x squared is a monomial, but once you add another term, like 5x squared plus 1, it's not a monomial anymore.",
+      "ja": "5x² は単項式。でも 5x² + 1 みたいに項をもう 1 つ足したら、もう単項式じゃない。",
+      "register": "spoken"
+    },
+    {
+      "en": "Which of the following expressions are monomials? 6ab, x² − 1, −9, 5x + 2y",
+      "ja": "次の式のうち、単項式であるものをすべて選べ。6ab、x² − 1、−9、5x + 2y",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本の中学では多項式を単項式の和（項が 2 つ以上）として単項式と区別するが、英語の polynomial は monomial も含む（エントリ polynomial）。",
+    "mono- は「1 つの」の意味。項が 2 つの式は binomial（二項式）、3 つの式は trinomial（三項式）と、項の数で呼び名が変わる。",
+    "x/3 は (1/3)x なので単項式だが、3/x のように文字で割る式は単項式ではない。"
+  ],
+  "related": [
+    "polynomial",
+    "term",
+    "coefficient",
+    "degree",
+    "like-terms"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "単項式",
+      "en": "Monomial"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "monomial": 15
+    },
+    "written": {
+      "monomial": 268
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

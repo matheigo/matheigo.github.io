@@ -1,0 +1,91 @@
+{
+  "id": "linear-equation-in-two-variables",
+  "ja": {
+    "term": "二元一次方程式",
+    "reading": "にげんいちじほうていしき",
+    "alt": []
+  },
+  "en": {
+    "term": "linear equation in two variables",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra",
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "2 つの文字をふくむ一次方程式で、ax + by = c の形に整理できるもの。解は無数にあり、解を座標とする点を集めるとグラフは直線になる。",
+  "definition_en": "An equation with two variables that can be written in the form ax + by = c. It has infinitely many solutions, and they make up a line when graphed.",
+  "latex": "ax + by = c",
+  "spoken_en": "a x plus b y equals c",
+  "examples": [
+    {
+      "en": "x + y = 10 is a linear equation in two variables, so there isn't just one answer: x = 3, y = 7 works, x = 4, y = 6 works, and so on.",
+      "ja": "x + y = 10 は二元一次方程式だから、答えは 1 つじゃない。x = 3, y = 7 でも、x = 4, y = 6 でも成り立つ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Adult tickets cost $8 and child tickets cost $5, and the total was $61. Using x for the number of adult tickets and y for the number of child tickets, write a linear equation in two variables.",
+      "ja": "大人券は 1 枚 8 ドル、子ども券は 1 枚 5 ドルで、合計は 61 ドルだった。大人券を x 枚、子ども券を y 枚として、二元一次方程式をつくれ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「元」は文字（未知数）の数のこと。英語では「二元」を in two variables と言う。",
+    "英語の linear equation（一次方程式、エントリ linear-equation）は、文字の数を区別せずに使う。文字が 2 つであることを言うときに in two variables を付ける。",
+    "二元一次方程式 1 つだけでは解は 1 組に決まらない。もう 1 つの式と組にした連立方程式（エントリ system-of-linear-equations）にすると決まることがある。"
+  ],
+  "related": [
+    "linear-equation",
+    "solution-pair",
+    "system-of-linear-equations",
+    "linear-function",
+    "variable"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "linear equation in two variables": 4
+    },
+    "written": {
+      "linear equation in two variables": 35
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  }
+}

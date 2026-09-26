@@ -6,7 +6,8 @@
     "alt": [
       "線形方程式系",
       "線型方程式系",
-      "連立 1 次方程式"
+      "連立 1 次方程式",
+      "連立方程式"
     ]
   },
   "en": {
@@ -26,19 +27,23 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
+    "algebra",
     "linear-algebra"
   ],
   "level": {
     "jp": [
+      "中2",
       "数C",
       "大学"
     ],
     "us": [
+      "Algebra 1",
+      "Integrated Math 1",
       "Precalculus",
       "Linear Algebra"
     ]
   },
-  "definition_ja": "1 次方程式をいくつか組にしたもの。係数を並べた行列 A と定数のベクトル b を使って Ax = b と書ける。",
+  "definition_ja": "1 次方程式をいくつか組にしたもの。中 2 の連立方程式（2 つの文字の一次方程式 2 つ）もその 1 つで、係数を並べた行列 A と定数のベクトル b を使って Ax = b とも書ける。",
   "definition_en": "A set of linear equations taken together; with the coefficient matrix A and the constant vector b it can be written Ax = b.",
   "latex": "A\\vec{x} = \\vec{b}",
   "spoken_en": null,
@@ -52,11 +57,16 @@
       "en": "Write the system of linear equations as a matrix equation Ax = b.",
       "ja": "連立一次方程式を行列の方程式 Ax = b の形で表せ。",
       "register": "written"
+    },
+    {
+      "en": "Solve the system of linear equations x + y = 10 and x − y = 4.",
+      "ja": "連立方程式 x + y = 10、x − y = 4 を解け。",
+      "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "中学の連立方程式（system of equations）は別のエントリ。system of equations は 1 次でない連立も含むので、この語の候補にしなかった。",
+    "中学の連立方程式は、1 次の式だけなら system of linear equations、一般には system of equations とも言う。system of equations は 1 次でない連立も含むので、この語の候補にしなかった。",
     "用例コーパスの話し言葉の linear system には、MIT 18.03 の線形微分方程式の系も混ざる。"
   ],
   "related": [

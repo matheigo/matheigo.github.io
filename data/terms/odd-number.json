@@ -1,0 +1,104 @@
+{
+  "id": "odd-number",
+  "ja": {
+    "term": "奇数",
+    "reading": "きすう",
+    "alt": []
+  },
+  "en": {
+    "term": "odd number",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "2 で割り切れない整数。n を整数として 2n + 1 と表せる。",
+  "definition_en": "An integer that cannot be divided evenly by 2, such as −3, 1, 7, or 15. Every odd number can be written as 2n + 1, where n is an integer.",
+  "latex": "2n + 1",
+  "spoken_en": "two n plus one",
+  "examples": [
+    {
+      "en": "Take any even number, add 1, and you get an odd number.",
+      "ja": "どんな偶数でも、1 を足せば奇数になるよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the sum of two odd numbers is an even number.",
+      "ja": "2 つの奇数の和は偶数であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "odd は日常語では「変な、奇妙な」の意味にもなる（an odd question）。数学の文では odd number や 7 is odd の形で「奇数」。",
+    "奇数を 2n − 1 と表してもよい。n を整数全体で動かせば、2n + 1 と同じ数の集まりになる。",
+    "奇関数（odd function、エントリ odd-function）の odd と同じ語。"
+  ],
+  "related": [
+    "even-number",
+    "parity",
+    "integer",
+    "remainder",
+    "odd-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "奇数",
+      "en": "Odd number"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "odd number": 62
+    },
+    "written": {
+      "odd number": 46
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

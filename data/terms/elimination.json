@@ -1,0 +1,99 @@
+{
+  "id": "elimination",
+  "ja": {
+    "term": "加減法",
+    "reading": "かげんほう",
+    "alt": [
+      "消去法"
+    ]
+  },
+  "en": {
+    "term": "elimination",
+    "alt": [
+      "addition method"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の「加減法」は式を足す・引くという操作から付いた名前で、英語は文字を消去することから elimination method（method of elimination）と呼ぶ。OpenStax Algebra and Trigonometry は addition method とも呼ぶ。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "連立方程式の 2 つの式を、必要なら何倍かしてから足したり引いたりして、1 つの文字を消去して解く方法。",
+  "definition_en": "A method for solving a system of equations: add or subtract the equations, after multiplying one or both by a number if needed, so that one variable is eliminated.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The y's already have opposite coefficients, so the elimination method is the way to go: just add the equations.",
+      "ja": "y の係数がもう符号違いだから、ここは加減法がいい。2 つの式を足すだけ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the system 2x + 3y = 7, 4x − 3y = 5 by the elimination method.",
+      "ja": "連立方程式 2x + 3y = 7、4x − 3y = 5 を加減法で解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "代入法は substitution method（エントリ substitution-method）。加減法と代入法のどちらでも文字を「消去する」（eliminate、エントリ eliminate）が、elimination method と呼ぶのは加減法のほう。",
+    "行列を使うガウスの消去法（Gaussian elimination、エントリ gaussian-elimination）とは別の語。"
+  ],
+  "related": [
+    "substitution-method",
+    "eliminate",
+    "cancel-out",
+    "system-of-linear-equations",
+    "gaussian-elimination"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "by elimination | using elimination | use elimination | elimination method | method of elimination": 50
+    },
+    "written": {
+      "addition method": 12,
+      "by elimination | using elimination | use elimination | elimination method | method of elimination": 105
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

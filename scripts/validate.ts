@@ -97,6 +97,9 @@ const SAME_EN_TERM: [string, string][] = [
   ["graph", "draw-a-graph"],
   ["graph", "graph-network"],
   ["draw-a-graph", "graph-network"],
+  ["base-of-a-power", "base-of-a-solid"], // 底（累乗） ／ 底面（立体）
+  ["cube", "cube-solid"], // 立方（3 乗） ／ 立方体
+  ["edge", "edge-of-a-graph"], // 辺・稜（立体） ／ 辺（グラフ）
 ];
 const intendedHomonym = (a: string, b: string) =>
   SAME_EN_TERM.some(([x, y]) => (x === a && y === b) || (x === b && y === a));
@@ -117,6 +120,10 @@ const SAME_JA: [string, string, string][] = [
   ["像", "column-space", "image"],
   // 直線・線分の垂直 ／ ベクトルの垂直（直交） (Phase 2 中学の単元 2)
   ["垂直", "orthogonal", "perpendicular"],
+  // 多項式の次数 ／ グラフの頂点の次数
+  ["次数", "degree", "degree-vertex"],
+  // 多角形の辺 ／ 立体の辺（稜）
+  ["辺", "edge", "side"],
 ];
 
 // ------------------------------------------------------------ per-entry ----

@@ -1,0 +1,86 @@
+{
+  "id": "line-of-intersection",
+  "ja": {
+    "term": "交線",
+    "reading": "こうせん",
+    "alt": []
+  },
+  "en": {
+    "term": "line of intersection",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1",
+      "数C"
+    ],
+    "us": [
+      "Geometry",
+      "Calculus III"
+    ]
+  },
+  "definition_ja": "2 つの平面が交わってできる直線。交わる 2 平面の交線は、ちょうど 1 本の直線になる。",
+  "definition_en": "The line where two planes meet. Two planes that intersect always meet in exactly one line.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Two planes that cross always meet in a line, and we call it the line of intersection.",
+      "ja": "交わる 2 つの平面は、必ず直線で交わる。その直線を交線と言うんだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In the rectangular box ABCD-EFGH shown, which edge is the line of intersection of the top face ABCD and the side face containing B, C, and G?",
+      "ja": "図の直方体 ABCD-EFGH で、上の面 ABCD と、B、C、G を含む側面の交線になっている辺を答えよ。",
+      "register": "written"
+    },
+    {
+      "en": "Find parametric equations for the line of intersection of the planes x + y + z = 1 and x − y + z = 3.",
+      "ja": "2 平面 x + y + z = 1、x − y + z = 3 の交線の媒介変数表示を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "2 直線や 2 曲線が交わるところは点（point of intersection、エントリ point-of-intersection）、2 平面が交わるところは直線（line of intersection）。",
+    "集合の「共通部分」も intersection（エントリ intersection）と言う。line of intersection は図形どうしが交わってできる直線のこと。"
+  ],
+  "related": [
+    "point-of-intersection",
+    "intersect",
+    "plane",
+    "equation-of-a-plane",
+    "lie-in"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "line of intersection": 12
+    },
+    "sources": [
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  }
+}

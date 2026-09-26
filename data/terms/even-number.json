@@ -1,0 +1,110 @@
+{
+  "id": "even-number",
+  "ja": {
+    "term": "偶数",
+    "reading": "ぐうすう",
+    "alt": []
+  },
+  "en": {
+    "term": "even number",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "2 で割り切れる整数。n を整数として 2n と表せる数で、0 も偶数である。",
+  "definition_en": "An integer that can be divided by 2 with no remainder, such as −4, 0, 2, or 10. Every even number can be written as 2n, where n is an integer.",
+  "latex": "2n",
+  "spoken_en": "two n",
+  "examples": [
+    {
+      "en": "Remember, zero is an even number too, since 2 times 0 is 0.",
+      "ja": "0 も偶数だよ。2 × 0 = 0 だからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Let m and n be integers. Show that the sum of the even numbers 2m and 2n is also an even number.",
+      "ja": "m, n を整数とする。偶数 2m と 2n の和も偶数であることを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「12 は偶数だ」は 12 is even. と形容詞 even だけでも言える。",
+    "0 も偶数（0 = 2 × 0）。負の数も −4 = 2 × (−2) のように 2n の形になれば偶数。",
+    "偶関数（even function、エントリ even-function）の even と同じ語。偶数か奇数かという性質は parity（エントリ parity）。"
+  ],
+  "related": [
+    "odd-number",
+    "parity",
+    "integer",
+    "multiple",
+    "even-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "偶数",
+      "en": "Even number"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "even number": 94
+    },
+    "written": {
+      "even number": 56
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

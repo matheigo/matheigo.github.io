@@ -1,0 +1,105 @@
+{
+  "id": "cancel-out",
+  "ja": {
+    "term": "消える",
+    "reading": "きえる",
+    "alt": []
+  },
+  "en": {
+    "term": "cancel out",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "日本語の「消える」は項がなくなった結果を言い、英語の cancel out は 2 つの項が「打ち消し合う」ことを言う。加減法で y の項どうしが打ち消し合うとき（the y's cancel out）にも、約分で分子と分母の共通因数が消えるとき（cancel）にも使う。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "2 つの項や因数が打ち消し合って、式からなくなること。3y と −3y のように符号だけが違う項を足したときや、分数の分子と分母の共通因数を約分したときに言う。",
+  "definition_en": "Of two terms or factors: to undo each other so that both drop out of the expression. Opposite terms like 3y and −3y cancel out when added, and a common factor of the numerator and denominator cancels out when a fraction is simplified.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "When you add these two equations, the 2y and the negative 2y cancel out, so you're left with just x's.",
+      "ja": "2 つの式を足すと、2y と −2y が消えて x だけが残るね。",
+      "register": "spoken"
+    },
+    {
+      "en": "In 3x over 4x, the x on top and the x on the bottom cancel out, and you get 3 over 4.",
+      "ja": "3x/4x では、分子の x と分母の x が消えて 3/4 になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "When the equations x + 2y = 7 and 3x − 2y = 5 are added, the y-terms cancel out, giving 4x = 12.",
+      "ja": "2 つの式 x + 2y = 7 と 3x − 2y = 5 を加えると、y の項が消えて 4x = 12 となる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "cancel out は「打ち消し合う」という意味で、主語は打ち消し合う項どうし（the y's cancel out、2y and −2y cancel out）。日本語の「消える」は、なくなった結果のほうを言う。",
+    "「y を消去する」と解く人を主語にして言うなら eliminate y（エントリ eliminate）。",
+    "約分で分子と分母の共通因数が消えるのも cancel と言う（エントリ reduce）。足して 0 になるときにも、割って 1 になるときにも使う。"
+  ],
+  "related": [
+    "elimination",
+    "eliminate",
+    "reduce",
+    "common-factor",
+    "opposite"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "cancel out": 628
+    },
+    "written": {
+      "cancel out": 32
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

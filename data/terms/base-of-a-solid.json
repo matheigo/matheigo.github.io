@@ -1,0 +1,100 @@
+{
+  "id": "base-of-a-solid",
+  "ja": {
+    "term": "底面",
+    "reading": "ていめん",
+    "alt": []
+  },
+  "en": {
+    "term": "base",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "角柱・円柱で、向かい合って平行な 2 つの面。角錐・円錐では、頂点と向かい合う 1 つの面をいう。",
+  "definition_en": "One of the two parallel, congruent faces of a prism or cylinder, or the face of a pyramid or cone that is opposite its vertex. The height of the solid is measured perpendicular to the base.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A cone has just one base, and it's a circle, but a cylinder has two.",
+      "ja": "円錐の底面は 1 つだけで、円。でも円柱には底面が 2 つある。",
+      "register": "spoken"
+    },
+    {
+      "en": "The base of a pyramid is a regular hexagon. Find the number of faces, edges, and vertices of the pyramid.",
+      "ja": "底面が正六角形の角錐がある。この角錐の面の数、辺の数、頂点の数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語の base は、三角形の底辺や累乗の底（エントリ base-of-a-power）にも使う同じ単語。立体の底面かどうかは、the base of the prism のような前後の語で見分ける。",
+    "角柱・円柱には底面が 2 つあり、複数形は bases。底面積は area of the base（エントリ area-of-the-base）で、公式 V = Bh では大文字の B で書く。",
+    "底面は、下に置いた面とは限らない。横に倒して置いた三角柱でも、底面は三角形の 2 つの面。"
+  ],
+  "related": [
+    "area-of-the-base",
+    "prism",
+    "pyramid",
+    "lateral-face",
+    "base-of-a-power"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7・Grade 8) / IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/MS/students/3/index.html",
+      "note": "Grade 8 5.13 The Volume of a Cylinder・Geometry 5.13 Building a Volume Formula for a Pyramid・Grade 7 7.12 Volume of Right Prisms"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "base of the prism | base of a prism | base of the cylinder | base of a cylinder | base of the pyramid | base of a pyramid | base of the cone | base of a cone": 5
+    },
+    "written": {
+      "base of the prism | base of a prism | base of the cylinder | base of a cylinder | base of the pyramid | base of a pyramid | base of the cone | base of a cone": 4
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "openstax-calculus",
+      "openstax-prealgebra",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 4 件（10 未満））。見出しは IM の呼び方 base of the prism | base of a prism | base of the cylinder | base of a cylinder | base of the pyramid | base of a pyramid | base of the cone | base of a cone（Grade 8 5.13 The Volume of a Cylinder・Geometry 5.13 Building a Volume Formula for a Pyramid・Grade 7 7.12 Volume of Right Prisms・計 10 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

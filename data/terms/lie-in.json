@@ -1,0 +1,96 @@
+{
+  "id": "lie-in",
+  "ja": {
+    "term": "含まれる",
+    "reading": "ふくまれる",
+    "alt": []
+  },
+  "en": {
+    "term": "lie in",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "phrase",
+  "mapping": "near",
+  "mapping_note": "日本語の「含まれる」は、直線が平面に含まれる（図形）ときにも、集合が別の集合に含まれるときにも使う。英語では、図形の場合は line ℓ lies in plane P と lie in を使い、集合の場合は A is contained in B ／ A is a subset of B（エントリ subset）と言い分ける。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "直線や点が、ある平面の上にすっかりのっていること。直線 ℓ のすべての点が平面 P 上にあるとき、ℓ は P に含まれるという。",
+  "definition_en": "To be completely on a given plane, said of a line or a point. A line lies in a plane when every point of the line is a point of the plane.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Both of these edges lie in the top face, so they're in the same plane.",
+      "ja": "この 2 本の辺はどちらも上の面に含まれているから、同じ平面上にある。",
+      "register": "spoken"
+    },
+    {
+      "en": "In the rectangular prism shown, which edges lie in plane ABCD?",
+      "ja": "図の直方体で、平面 ABCD に含まれる辺をすべて答えよ。",
+      "register": "written"
+    },
+    {
+      "en": "True or false: If lines ℓ and m both lie in plane P, then ℓ and m must intersect.",
+      "ja": "正しいか誤りか答えよ。直線 ℓ と m がどちらも平面 P に含まれるならば、ℓ と m は必ず交わる。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "集合の「含まれる」（A は B に含まれる）は A is a subset of B ／ A is contained in B（エントリ subset）で、lie in は使わない。",
+    "平面を主語にすると plane P contains line ℓ（P は ℓ を含む）。主語と目的語が日本語の「含まれる」と逆になる。",
+    "点が直線の上にあるときは lie on を使う（point A lies on line ℓ）。"
+  ],
+  "related": [
+    "plane",
+    "line",
+    "coplanar",
+    "subset",
+    "line-of-intersection"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "lies in the plane | lie in the plane | lies in a plane | lie in a plane | contained in the plane": 6
+    },
+    "written": {
+      "lies in the plane | lie in the plane | lies in a plane | lie in a plane | contained in the plane": 8
+    },
+    "sources": [
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 6 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは OpenStax の呼び方 lies in the plane | lie in the plane | lies in a plane | lie in a plane | contained in the plane（本文 6 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

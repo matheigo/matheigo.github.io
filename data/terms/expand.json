@@ -1,0 +1,110 @@
+{
+  "id": "expand",
+  "ja": {
+    "term": "展開する",
+    "reading": "てんかいする",
+    "alt": []
+  },
+  "en": {
+    "term": "expand",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "かっこのある式の積を、かっこを外して単項式の和の形に書き直す。",
+  "definition_en": "To rewrite a product of expressions as a sum of terms by multiplying out the parentheses; for example, (x + 2)(x + 3) expands to x² + 5x + 6.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To expand (x + 2)(x + 3), multiply every term in the first by every term in the second.",
+      "ja": "(x + 2)(x + 3) を展開するには、前のかっこのすべての項に後ろのかっこのすべての項を掛ける。",
+      "register": "spoken"
+    },
+    {
+      "en": "Expand (2x − 1)(x + 4).",
+      "ja": "(2x − 1)(x + 4) を展開せよ。",
+      "register": "written"
+    },
+    {
+      "en": "Careful: when you expand (x + 3) squared, you get x squared plus 6x plus 9, not just x squared plus 9.",
+      "ja": "気をつけて。(x + 3)² を展開すると x² + 6x + 9 で、x² + 9 じゃないよ。",
+      "register": "spoken"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "名詞は expansion（エントリ expansion）。同じ操作を multiply out とも言う。",
+    "展開の逆は因数分解（factor）。問題文の Expand と Factor は向きが逆の指示なので、取り違えない。因数分解した積の形は factored form（エントリ factored-form）。",
+    "(x + 3)² は x² + 9 ではない。(a + b)² = a² + 2ab + b² の 2ab を落とさない。"
+  ],
+  "related": [
+    "expansion",
+    "distribute",
+    "distributive-property",
+    "factored-form",
+    "polynomial"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "expand": 262
+    },
+    "written": {
+      "expand": 316
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

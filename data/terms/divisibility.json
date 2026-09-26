@@ -5,7 +5,8 @@
     "reading": "せいじょせい",
     "alt": [
       "整除",
-      "割り切れること"
+      "割り切れること",
+      "割り切れる"
     ]
   },
   "en": {
@@ -18,13 +19,18 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
+    "algebra",
     "number-theory"
   ],
   "level": {
     "jp": [
-      "数A"
+      "中2",
+      "数A",
+      "大学"
     ],
     "us": [
+      "Algebra 1",
+      "Integrated Math 1",
       "Discrete Math"
     ]
   },
@@ -42,13 +48,19 @@
       "en": "Use the definition of divisibility to prove that if 6 | n, then 3 | n.",
       "ja": "n が 6 の倍数ならば 3 の倍数でもあることを、倍数の定義を用いて証明せよ。",
       "register": "written"
+    },
+    {
+      "en": "Explain why the sum of three consecutive integers is always divisible by 3.",
+      "ja": "連続する 3 つの整数の和がいつも 3 で割り切れる理由を説明せよ。",
+      "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
     "b | a は「b が a を割り切る」（b divides a）で、縦棒の左が約数。分数 b/a や a ÷ b と読み違えない。",
     "数A では「a は b で割り切れる」「a は b の倍数」と言い、divisibility に当たる名詞はあまり使わない。",
-    "用例コーパスでは話し言葉・書き言葉とも使う。書き言葉は OpenStax Prealgebra・MIT の講義ノート・OpenStax Elementary Algebra、話し言葉は Khan Academy の中学の講義が中心。"
+    "用例コーパスでは話し言葉・書き言葉とも使う。書き言葉は OpenStax Prealgebra・MIT の講義ノート・OpenStax Elementary Algebra、話し言葉は Khan Academy の中学の講義が中心。",
+    "「a は 3 で割り切れる」は a is divisible by 3。中 2 の証明では、3 の倍数になること（3 × 整数の形に書けること）を示して割り切れることを言う。"
   ],
   "related": [
     "divisibility-rules",

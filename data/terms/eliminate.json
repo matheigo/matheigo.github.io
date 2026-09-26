@@ -1,0 +1,105 @@
+{
+  "id": "eliminate",
+  "ja": {
+    "term": "消去する",
+    "reading": "しょうきょする",
+    "alt": []
+  },
+  "en": {
+    "term": "eliminate",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "verb",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "連立方程式で、式を足したり引いたり、一方の式を他方に代入したりして、ある文字をふくまない式をつくること。",
+  "definition_en": "To get rid of a variable in a system of equations by adding or subtracting the equations or by substituting, leaving an equation with one fewer variable.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "If I multiply the second equation by 2, I can eliminate x when I subtract.",
+      "ja": "2 つ目の式を 2 倍すれば、引いたときに x を消去できる。",
+      "register": "spoken"
+    },
+    {
+      "en": "We know y = 2x + 1, so substitute that in and you've eliminated y.",
+      "ja": "y = 2x + 1 とわかっているから、それを代入すれば y を消去できる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Eliminate y from the system x + y = 5, 2x − 3y = 0, and find the value of x.",
+      "ja": "連立方程式 x + y = 5、2x − 3y = 0 から y を消去して、x の値を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "eliminate は解く人を主語にして、消す文字を目的語にとる（eliminate x、eliminate the y's）。項どうしが主語になって「消える」ときは cancel out（エントリ cancel-out）。",
+    "加減法の英語 elimination method（エントリ elimination）はこの動詞の名詞形を使う。ただし eliminate は、代入法（エントリ substitution-method）で文字を消すときにも使う。"
+  ],
+  "related": [
+    "elimination",
+    "cancel-out",
+    "substitution-method",
+    "substitute",
+    "system-of-linear-equations"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "eliminate": 145
+    },
+    "written": {
+      "eliminate": 234
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

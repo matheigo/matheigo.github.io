@@ -1,0 +1,102 @@
+{
+  "id": "rearranging-an-equation",
+  "ja": {
+    "term": "等式の変形",
+    "reading": "とうしきのへんけい",
+    "alt": [
+      "公式を変形する"
+    ]
+  },
+  "en": {
+    "term": "solve the formula for",
+    "alt": [
+      "rearrange the equation"
+    ],
+    "variants": [
+      {
+        "term": "solve for a variable",
+        "register": "spoken",
+        "note": "話し言葉ではこちらが多い（大半が Professor Leonard）。CK-12 Algebra の節の名前（Solving for a Variable）。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語では、V = Bh を B について解くことを solve the formula for B と言うように、「〜について解く」（エントリ solve-for）の形で言う（話し言葉では solve for a variable とも）。文字だけでできた等式は literal equation と呼ぶ（OpenStax Intermediate Algebra ほか）。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "等式の性質を使って、等式を「ある文字 = 〜」の形に変えること。たとえば V = Bh を B について解くと B = V/h となる。",
+  "definition_en": "Using the properties of equality to rewrite an equation or formula so that a chosen variable is alone on one side. For example, solving V = Bh for B gives B = V/h.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "To solve for a variable in a formula, treat the other letters like numbers: V = Bh, so divide both sides by h, and B = V over h.",
+      "ja": "公式をある文字について解くときは、ほかの文字を数と同じように扱う。V = Bh なら両辺を h で割って、B = V/h。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the formula A = ½bh for h.",
+      "ja": "等式 A = ½bh を h について解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「B について解く」は solve for B で、前置詞 for を落とさない。",
+    "英語の問題文は Solve A = ½bh for h. のように、解く文字が文の最後に来る。日本語の「h について解け」とは語順が逆。"
+  ],
+  "related": [
+    "solve-for",
+    "properties-of-equality",
+    "both-sides",
+    "equation",
+    "variable"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "solve for a variable | solve for the variable": 9,
+      "rearrange the equation | rearrange the formula | rearrange an equation | rearrange a formula": 1
+    },
+    "written": {
+      "solve the formula for | solve a formula for | solve each formula for": 38,
+      "solve for a variable | solve for the variable": 9,
+      "rearrange the equation | rearrange the formula | rearrange an equation | rearrange a formula": 2
+    },
+    "sources": [
+      "khan-algebra",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

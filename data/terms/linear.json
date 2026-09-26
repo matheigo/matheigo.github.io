@@ -1,0 +1,108 @@
+{
+  "id": "linear",
+  "ja": {
+    "term": "一次の",
+    "reading": "いちじの",
+    "alt": [
+      "線形",
+      "線型"
+    ]
+  },
+  "en": {
+    "term": "linear",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "adjective",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "式や関数が、文字について 1 次であること。一次関数や一次方程式のグラフは直線になる。",
+  "definition_en": "Describes an expression, equation, or function in which the variables appear only to the first power. The graph of a linear equation or function is a straight line.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "It's linear because x is only to the first power, so the graph is a straight line.",
+      "ja": "x が 1 乗しかないから一次だね。だからグラフは直線になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Which of the following functions are linear: y = 4x − 7, y = x² + 1, y = 6/x?",
+      "ja": "次の関数のうち、一次関数であるものを選べ。y = 4x − 7、y = x² + 1、y = 6/x",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「一次の」は英語で linear。一次方程式は linear equation、一次関数は linear function、一次式は linear expression（エントリ linear-equation、linear-function、linear-expression）。",
+    "大学の「線形代数」も linear algebra で同じ語。ja.alt の「線形」「線型」はこの訳。語源はグラフが直線（line）になること。",
+    "同じ並びで、「二次の」は quadratic（エントリ quadratic-expression）、「三次の」は cubic（エントリ cubic-function）。"
+  ],
+  "related": [
+    "linear-expression",
+    "linear-equation",
+    "linear-function",
+    "degree",
+    "line"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "linear": 1252
+    },
+    "written": {
+      "linear": 1789
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

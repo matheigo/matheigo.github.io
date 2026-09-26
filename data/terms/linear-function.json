@@ -1,0 +1,110 @@
+{
+  "id": "linear-function",
+  "ja": {
+    "term": "一次関数",
+    "reading": "いちじかんすう",
+    "alt": []
+  },
+  "en": {
+    "term": "linear function",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions",
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "y が x の一次式 y = ax + b（a ≠ 0）で表される関数。グラフは直線になる。",
+  "definition_en": "A function that can be written as y = mx + b, where m is the slope and b is the y-intercept. Its graph is a straight line.",
+  "latex": "y = ax + b",
+  "spoken_en": "y equals a x plus b",
+  "examples": [
+    {
+      "en": "A linear function has a constant rate of change, so its graph is always a straight line.",
+      "ja": "一次関数は変化の割合が一定だから、グラフはいつも直線になる。",
+      "register": "spoken"
+    },
+    {
+      "en": "Write an equation for the linear function whose graph has a slope of −3 and a y-intercept of 5.",
+      "ja": "グラフの傾きが −3、切片が 5 である一次関数の式を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語では y = mx + b と書く。m が傾き（slope）、b が y 切片（y-intercept）で、日本の y = ax + b の a が m に当たる。",
+    "日本の中学の一次関数は a ≠ 0 とする。a = 0 の y = b は定数関数（エントリ constant-function）。",
+    "「一次」は英語で linear（エントリ linear）。"
+  ],
+  "related": [
+    "slope",
+    "y-intercept",
+    "rate-of-change",
+    "constant-function",
+    "direct-proportion"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "一次関数",
+      "en": "Linear function (calculus)"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "linear function": 48
+    },
+    "written": {
+      "linear function": 277
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "substitution-method",
+  "ja": {
+    "term": "代入法",
+    "reading": "だいにゅうほう",
+    "alt": []
+  },
+  "en": {
+    "term": "substitution method",
+    "alt": [
+      "method of substitution",
+      "solve by substitution"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "連立方程式の一方の式を y = …（または x = …）の形に変形し、それをもう一方の式に代入して文字を 1 つ消す解き方。",
+  "definition_en": "A way to solve a system of equations: solve one equation for one variable, then substitute that expression into the other equation.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The first equation is already solved for y, so the substitution method is the way to go here.",
+      "ja": "1 つ目の式がもう y = … の形になっているから、ここは代入法がいいね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the system y = 2x − 1 and 3x + y = 9 using the substitution method.",
+      "ja": "代入法を用いて、連立方程式 y = 2x − 1、3x + y = 9 を解け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "積分の置換積分（エントリ integration-by-substitution）も英語では substitution と言う。連立方程式の代入法とは別のもの。",
+    "加減法は elimination（エントリ elimination）。代入法と並べて問われることが多いので、2 つの名前を組で覚える。",
+    "代入する式は、かっこでくくって入れる。3x + y = 9 に y = 2x − 1 を入れると 3x + (2x − 1) = 9。"
+  ],
+  "related": [
+    "substitute",
+    "elimination",
+    "system-of-linear-equations",
+    "linear-equation-in-two-variables",
+    "integration-by-substitution"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "substitution method": 7,
+      "method of substitution": 3,
+      "solve by substitution": 2
+    },
+    "written": {
+      "method of substitution": 2,
+      "substitution method": 11,
+      "solve by substitution": 3
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "mit-18.01",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

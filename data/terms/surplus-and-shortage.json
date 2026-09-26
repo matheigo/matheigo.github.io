@@ -1,0 +1,78 @@
+{
+  "id": "surplus-and-shortage",
+  "ja": {
+    "term": "過不足",
+    "reading": "かぶそく",
+    "alt": []
+  },
+  "en": {
+    "term": "surplus and shortage",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "none",
+  "mapping_note": "英語に決まった言い方がない。過不足算に当たる決まった名前はなく、見出しの surplus and shortage は本プロジェクトの説明的な訳。英語で説明するときは「余る」を left over、「足りない」を short（2 short）と言って、状況をそのまま文にする。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "物を何人かに分けるとき、1 人あたりの数を変えると余ったり足りなくなったりする 2 通りの分け方から、人数や物の個数を求める問題。例えば「1 人 3 個ずつ配ると 5 個余り、4 個ずつ配ると 2 個足りない」から人数を求める。",
+  "definition_en": "A type of word problem where sharing things one way leaves some left over and sharing another way leaves you short, and you find the number of people or things. For example, 3 each with 5 left over and 4 each with 2 short gives 3x + 5 = 4x − 2.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For a surplus and shortage problem like this, write the total two ways: 3x + 5 with 5 left over, and 4x − 2 when you're 2 short.",
+      "ja": "こういう過不足の問題では、全体の個数を 2 通りに表そう。5 個余るなら 3x + 5、2 個足りないなら 4x − 2。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve the surplus and shortage problem: if each student gets 3 pencils, 5 are left over, and if each student gets 4, we are 2 pencils short. Find the number of students.",
+      "ja": "次の過不足の問題を解け。生徒 1 人に鉛筆を 3 本ずつ配ると 5 本余り、4 本ずつ配ると 2 本足りない。生徒の人数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「余る」は left over（5 are left over）、「足りない」は short（2 short、we're 2 short）と言う。",
+    "「余る」は割り算の余り（remainder、エントリ remainder）と同じ漢字だが、配った後に残る数は left over と言う。"
+  ],
+  "related": [
+    "word-problem",
+    "write-an-equation",
+    "linear-equation",
+    "remainder"
+  ],
+  "sources": [
+    {
+      "type": "editorial"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "sources": [],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 0 件 ／ 書 0 件）。mapping none なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

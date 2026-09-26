@@ -1,0 +1,101 @@
+{
+  "id": "motion-problem",
+  "ja": {
+    "term": "速さの問題",
+    "reading": "はやさのもんだい",
+    "alt": []
+  },
+  "en": {
+    "term": "uniform motion",
+    "alt": [],
+    "variants": [
+      {
+        "term": "distance, rate, and time",
+        "register": "written",
+        "note": "教科書（OpenStax）の問題の立て方で、D = rt の 3 つの量を並べた言い方。"
+      },
+      {
+        "term": "motion problem",
+        "register": "written",
+        "note": "教科書（OpenStax）で uniform motion problem と並んで使う短い言い方。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "「速さの問題」は、道のり・速さ・時間の関係を使う文章題をまとめた呼び方。OpenStax の Algebra の教科書はこれを uniform motion applications と呼び、D = rt（distance = rate × time）の式を立てる。速さは rate と言う（エントリ speed）。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "道のり・速さ・時間の関係（道のり = 速さ × 時間）を使って、分からない量を求める文章題。",
+  "definition_en": "A word problem about something moving at a constant speed. It is solved with the relationship distance = rate × time (D = rt).",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For uniform motion problems, always start with d = rt: distance equals rate times time.",
+      "ja": "速さの問題は、いつも d = rt、つまり「道のり = 速さ × 時間」から始めよう。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve this uniform motion problem: two trains leave the same station at the same time and travel in opposite directions at 50 mph and 70 mph. In how many hours will they be 360 miles apart?",
+      "ja": "次の速さの問題を解け。2 本の列車が同じ駅を同時に出発し、時速 50 マイルと時速 70 マイルで反対方向に進む。2 本の列車が 360 マイル離れるのは何時間後か。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "uniform motion の uniform は「一定の」という意味で、速さが変わらない（等速の）動きを指す。",
+    "D = rt の r は rate で、速さのこと（エントリ speed）。rate は rate of change（変化の割合）のように「割合・率」の意味でも使うので、文脈で読み分ける。",
+    "mph は miles per hour の略（時速 … マイル）。"
+  ],
+  "related": [
+    "speed",
+    "word-problem",
+    "write-an-equation",
+    "mixture-problem",
+    "linear-equation"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "motion problem": 1
+    },
+    "written": {
+      "motion problem": 12,
+      "distance, rate, and time": 18,
+      "uniform motion": 35
+    },
+    "sources": [
+      "mit-18.03",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-09-25"
+  }
+}

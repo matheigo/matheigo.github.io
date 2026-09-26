@@ -1,0 +1,106 @@
+{
+  "id": "domain",
+  "ja": {
+    "term": "定義域",
+    "reading": "ていぎいき",
+    "alt": []
+  },
+  "en": {
+    "term": "domain",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "関数で、x がとることのできる値全体の範囲。中学では「x の変域」と言う。",
+  "definition_en": "The set of all input values (x-values) that a function can take.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The domain is all the x-values you're allowed to plug in.",
+      "ja": "定義域というのは、代入していい x の値全部のこと。",
+      "register": "spoken"
+    },
+    {
+      "en": "If the domain of y = −2x + 5 is −1 ≤ x ≤ 3, find all possible values of y.",
+      "ja": "関数 y = −2x + 5 の定義域が −1 ≦ x ≦ 3 のとき、y のとりうる値の範囲を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "中学の「x の変域」も英語では domain（エントリ domain-and-range）。",
+    "定義域は domain、値域は range。domain は入力（x）の側、range は出力（y）の側で、取り違えやすい。",
+    "定義域を求めるは find the domain（エントリ find-the-domain）。"
+  ],
+  "related": [
+    "domain-and-range",
+    "find-the-domain",
+    "function",
+    "restricted-domain",
+    "linear-function"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "定義域",
+      "en": "Domain of a function"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the domain !and | domain of": 298
+    },
+    "written": {
+      "the domain !and | domain of": 884
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

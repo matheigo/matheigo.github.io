@@ -1,0 +1,93 @@
+{
+  "id": "face",
+  "ja": {
+    "term": "面",
+    "reading": "めん",
+    "alt": []
+  },
+  "en": {
+    "term": "face",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "多面体を囲んでいる、平らな多角形の部分。立方体には 6 つの面がある。",
+  "definition_en": "One of the flat polygon surfaces that form the boundary of a polyhedron. A cube has 6 faces.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A cube has six faces, and every face is a square.",
+      "ja": "立方体には面が 6 つあって、どの面も正方形だよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Complete the table by counting the faces, edges, and vertices of each solid.",
+      "ja": "それぞれの立体の面・辺・頂点の数を数えて、表を完成させよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "限りなく広がる平らな「面」（平面）は plane（エントリ plane）。face は立体の表面のうちの 1 枚の多角形。",
+    "角柱・角錐の底面以外の面は lateral face（側面、エントリ lateral-face）。円柱・円錐の曲がった側面は多角形ではないので、face とは区別して lateral surface と言う。",
+    "オイラーの多面体定理 V − E + F = 2 の F は faces の頭文字（エントリ eulers-formula-for-polyhedra）。"
+  ],
+  "related": [
+    "edge",
+    "vertex",
+    "lateral-face",
+    "polyhedron",
+    "eulers-formula-for-polyhedra"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "face of the | face of a | faces, edges | faces and edges | lateral face | number of faces": 19
+    },
+    "written": {
+      "face of the | face of a | faces, edges | faces and edges | lateral face | number of faces": 26
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

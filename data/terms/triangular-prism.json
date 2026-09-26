@@ -1,0 +1,82 @@
+{
+  "id": "triangular-prism",
+  "ja": {
+    "term": "三角柱",
+    "reading": "さんかくちゅう",
+    "alt": []
+  },
+  "en": {
+    "term": "triangular prism",
+    "alt": [],
+    "uk": null,
+    "register": "spoken"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "底面が三角形の角柱。面は 5 つ（底面 2 つと側面 3 つ）、辺は 9 本、頂点は 6 つある。",
+  "definition_en": "A prism whose two bases are triangles. It has 5 faces, 9 edges, and 6 vertices.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "A triangular prism has two triangles for bases and three rectangles on the sides, so that's five faces.",
+      "ja": "三角柱は、三角形の底面が 2 つと、側面の長方形が 3 つ。だから面は 5 つだね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Draw a net for a triangular prism whose bases are equilateral triangles.",
+      "ja": "底面が正三角形の三角柱の展開図をかけ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "三角柱の高さ（height of the prism）は 2 つの底面の間の距離で、底面の三角形の高さ（height of the triangle）とは別。1 つの問題に両方が出てくるので区別する。",
+    "角柱は prism、角錐は pyramid。三角錐は triangular pyramid（エントリ tetrahedron）で、三角柱とは別の立体。",
+    "三角柱が横に倒れた図では、両端の三角形が底面（base）で、下に接している長方形は側面（lateral face）。"
+  ],
+  "related": [
+    "prism",
+    "rectangular-prism",
+    "lateral-face",
+    "net",
+    "volume"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "三角柱",
+      "en": "Triangular prism"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "triangular prism": 16
+    },
+    "sources": [
+      "khan-middle",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

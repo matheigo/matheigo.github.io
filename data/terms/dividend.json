@@ -1,0 +1,93 @@
+{
+  "id": "dividend",
+  "ja": {
+    "term": "被除数",
+    "reading": "ひじょすう",
+    "alt": [
+      "割られる数"
+    ]
+  },
+  "en": {
+    "term": "dividend",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "割り算で割られる数。a ÷ b の a のこと。",
+  "definition_en": "The number being divided in a division problem. In a ÷ b, the dividend is a.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In 24 divided by 6, 24 is the dividend and 6 is the divisor.",
+      "ja": "24 ÷ 6 では、24 が割られる数で、6 が割る数だよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In 84 ÷ 7 = 12, identify the dividend, the divisor, and the quotient.",
+      "ja": "84 ÷ 7 = 12 で、被除数・除数・商はそれぞれどれか答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "株の「配当」も dividend で、同じ語。",
+    "割る数は divisor（エントリ divisor-in-division）。divisor は「約数」の意味にもなる（エントリ divisor）。",
+    "a ÷ b を分数 a/b で書くと、被除数 a は分子（numerator）になる。"
+  ],
+  "related": [
+    "divisor-in-division",
+    "quotient",
+    "remainder",
+    "division",
+    "divide"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "dividend": 23
+    },
+    "written": {
+      "dividend": 95
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

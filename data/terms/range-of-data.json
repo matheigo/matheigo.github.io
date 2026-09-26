@@ -1,0 +1,88 @@
+{
+  "id": "range-of-data",
+  "ja": {
+    "term": "範囲",
+    "reading": "はんい",
+    "alt": []
+  },
+  "en": {
+    "term": "range",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "statistics"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra"
+    ]
+  },
+  "definition_ja": "データの最大値から最小値を引いた値。データの散らばりの大きさを表す目安の 1 つ。",
+  "definition_en": "The difference between the greatest and the least values in a data set. It is one way to measure how spread out the data are.",
+  "latex": "\\text{range} = \\text{maximum} - \\text{minimum}",
+  "spoken_en": "the range equals the maximum minus the minimum",
+  "examples": [
+    {
+      "en": "The top score was 95 and the lowest was 62, so the range is 33 points.",
+      "ja": "最高点が 95 点で最低点が 62 点だから、範囲は 33 点。",
+      "register": "spoken"
+    },
+    {
+      "en": "The numbers of books read by eight students last month were 3, 7, 2, 9, 4, 6, 1, and 5. Find the range of the data.",
+      "ja": "8 人の生徒が先月読んだ本の冊数は 3, 7, 2, 9, 4, 6, 1, 5 冊であった。このデータの範囲を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "関数の値域も英語は range で、同じ単語（エントリ domain-and-range）。データの range は 1 つの数（最大値 − 最小値）で、値域は値の集まり。",
+    "四分位範囲は interquartile range（IQR、エントリ interquartile-range）。範囲は最大値と最小値だけで決まるので、外れ値が 1 つあると大きく変わる。",
+    "動詞の range は「（値が）〜から〜にわたる」の意味で、The scores range from 62 to 95. のように使う。"
+  ],
+  "related": [
+    "spread",
+    "interquartile-range",
+    "maximum",
+    "minimum",
+    "box-plot"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "range of the data | range of a data | range of the scores | range of each data set | range of the data set": 5
+    },
+    "written": {
+      "range of the data | range of a data | range of the scores | range of each data set | range of the data set": 10
+    },
+    "sources": [
+      "khan-ap-stats",
+      "openstax-algtrig",
+      "openstax-introstats",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "divisor-in-division",
+  "ja": {
+    "term": "除数",
+    "reading": "じょすう",
+    "alt": [
+      "割る数"
+    ]
+  },
+  "en": {
+    "term": "divisor",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "割り算で、割るほうの数。a ÷ b の b のこと。",
+  "definition_en": "The number you divide by. In a ÷ b, the divisor is b.",
+  "latex": "\\text{dividend} \\div \\text{divisor} = \\text{quotient}",
+  "spoken_en": "the dividend divided by the divisor equals the quotient",
+  "examples": [
+    {
+      "en": "In 24 divided by 6, 6 is the divisor, the number you're dividing by.",
+      "ja": "24 ÷ 6 では、6 が除数、つまり割る数だよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "In 84 ÷ 7 = 12, name the dividend, the divisor, and the quotient.",
+      "ja": "84 ÷ 7 = 12 で、被除数・除数・商をそれぞれ答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "divisor は「約数」の意味でも使う（エントリ divisor）。6 is a divisor of 24 は「6 は 24 の約数」で、割り算の除数の話ではない。",
+    "割られる数（被除数）は dividend（エントリ dividend）、答えの商は quotient（エントリ quotient）。dividend ÷ divisor = quotient の順に並ぶ。",
+    "分数 a/b で割る数に当たる b は、denominator（分母、エントリ denominator）と呼ぶ。"
+  ],
+  "related": [
+    "division",
+    "dividend",
+    "quotient",
+    "divisor",
+    "remainder"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "the divisor is | divide by the divisor | dividend and divisor | dividend by the divisor | divisor and the dividend": 4
+    },
+    "written": {
+      "the divisor is | divide by the divisor | dividend and divisor | dividend by the divisor | divisor and the dividend": 17
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-algtrig",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

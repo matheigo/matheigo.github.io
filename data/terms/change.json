@@ -1,0 +1,95 @@
+{
+  "id": "change",
+  "ja": {
+    "term": "増加量",
+    "reading": "ぞうかりょう",
+    "alt": []
+  },
+  "en": {
+    "term": "change",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の中学の「x の増加量」「y の増加量」は、英語で change in x、change in y と言い、Δx、Δy（delta x、delta y と読む）とも書く。「増加」の字が付いていても、英語の change は増えても減っても使い、減ったときは負の change になる。変化の割合は y の増加量 ÷ x の増加量（エントリ rate-of-change）。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "x や y の値が変わったときの、変わった後の値から変わる前の値を引いた量。減ったときは負の数になる。",
+  "definition_en": "How much a quantity goes up or down: the final value minus the starting value. It is negative when the quantity decreases.",
+  "latex": "\\Delta y = y_2 - y_1",
+  "spoken_en": "delta y equals y two minus y one",
+  "examples": [
+    {
+      "en": "As x goes from 2 to 5, the change in x is 3 and the change in y is negative 6.",
+      "ja": "x が 2 から 5 まで変わると、x の増加量は 3、y の増加量は −6。",
+      "register": "spoken"
+    },
+    {
+      "en": "For y = −2x + 1, find the change in y when x increases from 2 to 5.",
+      "ja": "y = −2x + 1 で、x が 2 から 5 まで増加するときの y の増加量を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「増加量」も、減ったときは負の数になる（y が 6 減れば y の増加量は −6）。英語では同じ量を change in y と言い、増えても減っても change を使う。",
+    "変化の割合 =（y の増加量）÷（x の増加量）は、英語で change in y over change in x。Δy/Δx と書き、delta y over delta x と読む（エントリ rate-of-change）。"
+  ],
+  "related": [
+    "rate-of-change",
+    "slope",
+    "increase",
+    "decrease",
+    "linear-function"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "change in x | change in y | change in the x | change in the y": 744
+    },
+    "written": {
+      "change in x | change in y | change in the x | change in the y": 38
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

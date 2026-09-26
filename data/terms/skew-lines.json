@@ -1,0 +1,96 @@
+{
+  "id": "skew-lines",
+  "ja": {
+    "term": "ねじれの位置",
+    "reading": "ねじれのいち",
+    "alt": []
+  },
+  "en": {
+    "term": "skew lines",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本語の「ねじれの位置」は 2 直線の位置関係の名前だが、英語では 2 直線そのものを skew lines と呼ぶ。「直線 AB と CD はねじれの位置にある」は lines AB and CD are skew と、skew を形容詞にして言う。CK-12 Geometry は平行線と並べて 3.2 Parallel and Skew Lines で扱う。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "空間で、平行でなく交わりもしない 2 直線の位置関係。ねじれの位置にある 2 直線は、同じ平面上にない。",
+  "definition_en": "Two lines in space that are not parallel and never intersect. Skew lines cannot lie in the same plane.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "These two edges never meet, but they're not parallel either, so they're skew lines.",
+      "ja": "この 2 本の辺は交わらないけど、平行でもない。だから、ねじれの位置にある。",
+      "register": "spoken"
+    },
+    {
+      "en": "Name two pairs of skew lines in the rectangular prism shown.",
+      "ja": "図の直方体で、ねじれの位置にある 2 直線の組を 2 つ答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "平面上の 2 直線は、交わるか平行（parallel lines、エントリ parallel-lines）のどちらかで、skew にはならない。skew lines は空間の中でだけ起こる。",
+    "立体の辺どうしがねじれの位置かどうかは、辺を延ばした直線で考える。辺そのものが交わっていなくても、延ばして交われば skew ではない。",
+    "統計で分布が偏っている skewed（エントリ be-skewed）と同じ語。"
+  ],
+  "related": [
+    "relative-positions-of-two-lines",
+    "parallel-lines",
+    "coplanar",
+    "intersect",
+    "plane"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ねじれの位置",
+      "en": "Skew lines"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "3.2 Parallel and Skew Lines"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "written": {
+      "skew lines": 3
+    },
+    "sources": [
+      "openstax-calculus"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは CK-12 の呼び方 skew lines（CK-12 Geometry 3.2 Parallel and Skew Lines・計 12 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

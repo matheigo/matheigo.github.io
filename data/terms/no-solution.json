@@ -1,0 +1,109 @@
+{
+  "id": "no-solution",
+  "ja": {
+    "term": "解なし",
+    "reading": "かいなし",
+    "alt": [
+      "矛盾する連立方程式"
+    ]
+  },
+  "en": {
+    "term": "no solution",
+    "alt": [
+      "inconsistent system"
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "連立方程式を満たす x, y の値の組が 1 つもないこと。2 つの式のグラフが平行で交わらないときで、解いていくと 0 = 5 のような成り立たない式になる。",
+  "definition_en": "A system has no solution when no pair of values makes both equations true. The two lines are parallel and never meet, and solving leads to a statement that is never true, such as 0 = 5.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The x's and y's are all gone and you're left with 0 = 5, which is never true, so there's no solution.",
+      "ja": "x も y も消えて 0 = 5 が残る。これは絶対に成り立たないから、解なしだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Same slope, different y-intercepts, so the lines are parallel and it's an inconsistent system.",
+      "ja": "傾きが同じで切片が違うから 2 直線は平行で、この連立方程式は解なしだ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Show that the system y = 2x + 1, y = 2x − 4 has no solution.",
+      "ja": "連立方程式 y = 2x + 1、y = 2x − 4 は解をもたないことを示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "教科書（OpenStax）は、解のない連立方程式そのものを inconsistent system と呼ぶ。「解なし」という答えは no solution と書く。",
+    "解が無数にある場合（エントリ infinitely-many-solutions）と区別する。式を整理して x も y も消えたとき、残る式が 0 = 5 のように成り立たなければ解なし、0 = 0 のようにいつでも成り立てば解が無数にある。"
+  ],
+  "related": [
+    "infinitely-many-solutions",
+    "parallel-lines",
+    "system-of-linear-equations",
+    "solution",
+    "point-of-intersection"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "no solution": 100,
+      "inconsistent system": 9
+    },
+    "written": {
+      "no solution": 257,
+      "inconsistent system": 27
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

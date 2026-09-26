@@ -14,13 +14,17 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
+    "algebra",
     "number-theory"
   ],
   "level": {
     "jp": [
+      "中2",
       "数A"
     ],
     "us": [
+      "Algebra 1",
+      "Integrated Math 1",
       "Discrete Math"
     ]
   },
@@ -43,12 +47,18 @@
       "en": "Round the answer to two decimal places, and keep at least four significant digits along the way.",
       "ja": "答えは小数第 2 位までに丸め、途中の計算は有効数字 4 桁以上で行え。",
       "register": "written"
+    },
+    {
+      "en": "Show that the sum of a two-digit number and the number formed by reversing its digits is a multiple of 11.",
+      "ja": "2 桁の自然数と、その十の位の数字と一の位の数字を入れかえた数の和は、11 の倍数であることを示せ。",
+      "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
     "digit は「数字」そのもの（0〜9 の 1 つ）。「桁」の位置のほうは place（一の位 = ones place）で、「桁数」は number of digits。",
-    "「3 桁の数」は a three-digit number。形容詞として使うときは digit を複数形にしない（three digits long とは言うが a three-digits number とは言わない）。"
+    "「3 桁の数」は a three-digit number。形容詞として使うときは digit を複数形にしない（three digits long とは言うが a three-digits number とは言わない）。",
+    "中 2 の文字式の証明では、十の位の数字が a、一の位の数字が b の 2 桁の数を 10a + b と表す（a two-digit number with tens digit a and ones digit b）。"
   ],
   "related": [
     "number-of-digits",

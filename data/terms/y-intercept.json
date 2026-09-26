@@ -1,0 +1,106 @@
+{
+  "id": "y-intercept",
+  "ja": {
+    "term": "切片",
+    "reading": "せっぺん",
+    "alt": [
+      "y 切片"
+    ]
+  },
+  "en": {
+    "term": "y-intercept",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の中学では「切片」と言えば y 切片、つまり直線が y 軸と交わる点の y 座標（y = ax + b の b）を指す。英語では必ず y を付けて y-intercept と言い、x 軸と交わる点は x-intercept（エントリ x-intercept）と言い分ける。",
+  "domains": [
+    "functions"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "直線やグラフが y 軸と交わる点の y 座標。y = ax + b では b。",
+  "definition_en": "The y-coordinate of the point where a line or graph crosses the y-axis. In y = mx + b, it is b.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "The y-intercept is where the line crosses the y-axis, so just plug in 0 for x.",
+      "ja": "切片は直線が y 軸と交わるところ。だから x に 0 を代入すればいい。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the slope and the y-intercept of the line 2x + y = 6.",
+      "ja": "直線 2x + y = 6 の傾きと切片を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "日本語の「切片」は y 切片のことだが、英語では y を付けて y-intercept と言う。x 軸と交わる点は x-intercept（エントリ x-intercept）。",
+    "y-intercept は x = 0 を、x-intercept は y = 0 を代入して求める。取り違えやすい。"
+  ],
+  "related": [
+    "x-intercept",
+    "slope",
+    "linear-function",
+    "y-axis",
+    "equation-of-a-line"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "切片 (数学)",
+      "en": "Y-intercept"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "y-intercept": 288
+    },
+    "written": {
+      "y-intercept": 476
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:blackpenredpen",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

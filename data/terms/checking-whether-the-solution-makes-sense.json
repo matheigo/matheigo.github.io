@@ -1,0 +1,104 @@
+{
+  "id": "checking-whether-the-solution-makes-sense",
+  "ja": {
+    "term": "解の吟味",
+    "reading": "かいのぎんみ",
+    "alt": [
+      "解の吟味をする"
+    ]
+  },
+  "en": {
+    "term": "check that the answer makes sense",
+    "alt": [
+      "check that the answer is reasonable"
+    ],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語には「解の吟味」に当たる 1 語がなく、Does the answer make sense? ／ Is the answer reasonable? と問いの形で言うか、check that the answer makes sense のように動詞句で言う。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2",
+      "中3"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1",
+      "Integrated Math 2"
+    ]
+  },
+  "definition_ja": "文章題で求めた方程式の解が、問題の条件（個数や人数は自然数、長さは正の数など）に合っているかを確かめること。合わない解は問題の答えにしない。",
+  "definition_en": "Checking whether a solution of the equation fits the situation in the word problem, for example that a number of people is a positive whole number or that a length is positive. A solution that does not fit is not used as the answer.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "Before you box your answer, check that the answer makes sense: you can't have negative 3 students.",
+      "ja": "答えを囲む前に解の吟味をしよう。生徒が −3 人なんてありえないよね。",
+      "register": "spoken"
+    },
+    {
+      "en": "We got 4.5 buses, so check that the answer is reasonable: can you rent half a bus?",
+      "ja": "バスが 4.5 台と出たから、解の吟味をしよう。バスを半台だけ借りられる？",
+      "register": "spoken"
+    },
+    {
+      "en": "Let the side length of a square with area 49 cm² be x cm. Solve x² = 49 and check that the answer makes sense.",
+      "ja": "面積が 49 cm² の正方形の 1 辺の長さを x cm とする。x² = 49 を解き、解の吟味をせよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "英語には「吟味」に当たる 1 語がない。Does the answer make sense? ／ Is the answer reasonable? のように問いの形で言う。",
+    "解を元の式に代入して成り立つかを確かめる検算（エントリ check）とは別。吟味では、式の上では正しい解が問題の条件（人数は自然数、長さは正など）に合うかを見る。"
+  ],
+  "related": [
+    "word-problem",
+    "check",
+    "solution",
+    "natural-number",
+    "solve"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "answer makes sense | solution makes sense | answer is reasonable | solution is reasonable | reasonable answer | makes sense in the context": 8
+    },
+    "written": {
+      "answer makes sense | solution makes sense | answer is reasonable | solution is reasonable | reasonable answer | makes sense in the context": 34
+    },
+    "sources": [
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.06",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "yt:3blue1brown"
+    ],
+    "counted": "2026-09-25"
+  }
+}

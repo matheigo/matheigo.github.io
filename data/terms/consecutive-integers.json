@@ -1,0 +1,89 @@
+{
+  "id": "consecutive-integers",
+  "ja": {
+    "term": "連続する整数",
+    "reading": "れんぞくするせいすう",
+    "alt": []
+  },
+  "en": {
+    "term": "consecutive integers",
+    "alt": [],
+    "uk": null,
+    "register": "written"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "1 ずつ違う整数を小さい順に並べたもの。最も小さい数を n とすると、n, n + 1, n + 2, … と表せる。",
+  "definition_en": "Integers that come one right after another, each 1 more than the one before. If the smallest one is n, they are n, n + 1, n + 2, and so on.",
+  "latex": "n,\\ n + 1,\\ n + 2",
+  "spoken_en": "n, n plus one, n plus two",
+  "examples": [
+    {
+      "en": "For three consecutive integers, call the first one n, and then the next two are n plus 1 and n plus 2.",
+      "ja": "連続する 3 つの整数なら、最初を n とおいて、次の 2 つは n + 1 と n + 2 だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "The sum of three consecutive integers is 72. Find the three integers.",
+      "ja": "連続する 3 つの整数の和が 72 である。この 3 つの整数を求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "連続する偶数は consecutive even integers（n, n + 2, n + 4, …）、連続する奇数は consecutive odd integers。どちらも隣どうしの差は 2。",
+    "並びの「連続する」は consecutive で、関数の「連続」は continuous（エントリ continuous）。別の語。",
+    "「連続する 2 つの整数」は two consecutive integers と、個数を consecutive の前に置く。数列の隣り合う項は consecutive terms（エントリ consecutive-terms）。"
+  ],
+  "related": [
+    "integer",
+    "even-number",
+    "odd-number",
+    "consecutive-terms",
+    "word-problem"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "consecutive integers": 3
+    },
+    "written": {
+      "consecutive integers": 85
+    },
+    "sources": [
+      "khan-middle",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

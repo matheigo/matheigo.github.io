@@ -1,0 +1,94 @@
+{
+  "id": "degree",
+  "ja": {
+    "term": "次数",
+    "reading": "じすう",
+    "alt": []
+  },
+  "en": {
+    "term": "degree",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "単項式では、かけ合わされている文字の個数（3x²y の次数は 3）。多項式では、各項の次数のうちで最も大きいもの。",
+  "definition_en": "For a monomial, the number of variable factors multiplied together, which is the sum of the exponents; the degree of 3x²y is 3. For a polynomial, it is the greatest degree among its terms.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "x squared y has degree 3: add the exponents, 2 for the x and 1 for the y.",
+      "ja": "x²y の次数は 3。指数を足すんだ。x が 2 で y が 1 だからね。",
+      "register": "spoken"
+    },
+    {
+      "en": "State the degree of the polynomial 4x³ − 2x²y² + 7.",
+      "ja": "多項式 4x³ − 2x²y² + 7 の次数を答えよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "角の大きさの度（エントリ degree-measure）や、グラフの頂点の次数（エントリ degree-vertex）も同じ degree。「3 次の多項式」は a polynomial of degree 3、「3 度」は 3 degrees。",
+    "多項式の次数は、いちばん大きい指数ではなく、項ごとの指数の和のうち最大のもの。4x³ − 2x²y² の次数は 3 ではなく 4。",
+    "0 でない定数項（7 など）の次数は 0。特定の文字だけに注目した次数は、degree in x のように in を付けて言う。"
+  ],
+  "related": [
+    "monomial",
+    "polynomial",
+    "quadratic-expression",
+    "degree-measure",
+    "degree-vertex"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "degree of the polynomial | degree of a polynomial | degree of the term | degree of a term | degree of the monomial | degree of each term | highest degree | degree two polynomial | degree three polynomial | degree n polynomial": 52
+    },
+    "written": {
+      "degree of the polynomial | degree of a polynomial | degree of the term | degree of a term | degree of the monomial | degree of each term | highest degree | degree two polynomial | degree three polynomial | degree n polynomial": 65
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "mit-18.01",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:nancypi",
+      "yt:organicchem"
+    ],
+    "counted": "2026-09-25"
+  }
+}

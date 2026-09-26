@@ -1,0 +1,105 @@
+{
+  "id": "quotient",
+  "ja": {
+    "term": "商",
+    "reading": "しょう",
+    "alt": []
+  },
+  "en": {
+    "term": "quotient",
+    "alt": [],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "exact",
+  "mapping_note": null,
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "割り算の答え。余りのある割り算では、17 ÷ 5 = 3 余り 2 の 3 を商という。",
+  "definition_en": "The answer to a division problem. When there is a remainder, as in 17 divided by 5 giving 3 with a remainder of 2, the quotient is 3.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "20 divided by 4 is 5, so the quotient is 5.",
+      "ja": "20 ÷ 4 = 5 だから、商は 5 だね。",
+      "register": "spoken"
+    },
+    {
+      "en": "Find the quotient and the remainder when 47 is divided by 6.",
+      "ja": "47 を 6 で割ったときの商と余りを求めよ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "「a を b で割った商」は the quotient when a is divided by b、または the quotient of a and b（a ÷ b の順）。",
+    "余りは remainder（エントリ remainder）。整式の割り算でも、商と余りは quotient と remainder。",
+    "微分の「商の微分公式」は quotient rule（エントリ quotient-rule）。quotient はそこでも割り算の結果 f(x)/g(x) の意味。"
+  ],
+  "related": [
+    "remainder",
+    "division",
+    "dividend",
+    "divisor-in-division",
+    "quotient-rule"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "商 (数学)",
+      "en": "Quotient"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "quotient !rule": 167
+    },
+    "written": {
+      "quotient !rule": 929
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.03",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "divisor",
+  "ja": {
+    "term": "約数",
+    "reading": "やくすう",
+    "alt": []
+  },
+  "en": {
+    "term": "factor",
+    "alt": [],
+    "variants": [
+      {
+        "term": "divisor",
+        "register": "spoken",
+        "note": "話し言葉では factor に次いで使う。数論や割り算の文脈の言い方。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "米国の小中学校の教材（IM・OpenStax Prealgebra）は「約数」を factor と言い、the factors of 12 のように使う。divisor も同じ意味だが、数論や割り算の文脈で使われる。factor は多項式の「因数」の意味にもなるので、日本語の「約数」と「因数」の両方に当たる。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "ある整数を割り切ることのできる整数。たとえば 12 の約数は 1, 2, 3, 4, 6, 12 である。",
+  "definition_en": "A whole number that divides another number evenly, with no remainder. For example, the factors of 12 are 1, 2, 3, 4, 6, and 12.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "What are the factors of 18? Think of pairs that multiply to 18: 1 and 18, 2 and 9, 3 and 6.",
+      "ja": "18 の約数は何かな。かけて 18 になる組を考えよう。1 と 18、2 と 9、3 と 6。",
+      "register": "spoken"
+    },
+    {
+      "en": "List all the factors of 36.",
+      "ja": "36 の約数をすべて書け。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "factor は多項式の「因数」（x − 2 is a factor of x² − 4）や、動詞「因数分解する」（factor x² − 4）にもなる。約数の意味かどうかは文脈で決まる。",
+    "divisor は割り算の「割る数」（a ÷ b の b、エントリ divisor-in-division）の意味にもなる。",
+    "「a は b の約数」は a is a factor of b ／ a divides b。逆向きの「b は a の倍数」は b is a multiple of a（エントリ multiple）。"
+  ],
+  "related": [
+    "multiple",
+    "number-of-divisors",
+    "greatest-common-divisor",
+    "prime-factorization",
+    "divisor-in-division"
+  ],
+  "sources": [
+    {
+      "type": "wikipedia-langlink",
+      "ja": "約数",
+      "en": "Divisor"
+    },
+    {
+      "type": "mext-translation"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "is a factor of | are factors of | factors of": 346,
+      "divisor": 141
+    },
+    "written": {
+      "is a factor of | are factors of | factors of": 454,
+      "divisor": 140
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "mit-18.02",
+      "mit-18.03",
+      "mit-18.06",
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
+      "yt:nancypi",
+      "yt:organicchem",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  }
+}

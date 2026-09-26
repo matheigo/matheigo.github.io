@@ -1,0 +1,91 @@
+{
+  "id": "mixture-problem",
+  "ja": {
+    "term": "濃度の問題",
+    "reading": "のうどのもんだい",
+    "alt": []
+  },
+  "en": {
+    "term": "mixture problem",
+    "alt": [],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "日本の「濃度の問題」は、食塩水の濃度など、濃さの違うものを混ぜ合わせる文章題を指す。英語ではこれを mixture problem と呼び、濃度は concentration と言って percent で表す。食塩水は salt solution。",
+  "domains": [
+    "algebra"
+  ],
+  "level": {
+    "jp": [
+      "中2"
+    ],
+    "us": [
+      "Algebra 1",
+      "Integrated Math 1"
+    ]
+  },
+  "definition_ja": "濃さの違う食塩水などを混ぜ合わせたときの、濃度や量を求める文章題。混ぜる前と後で食塩の量が変わらないことを使って式を立てる。",
+  "definition_en": "A word problem about combining mixtures, such as salt solutions with different concentrations. The amount of salt before mixing equals the amount after, and that fact gives the equation.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "For mixture problems, I always make a table: amount of solution, percent, and amount of salt.",
+      "ja": "濃度の問題では、いつも表をつくるよ。食塩水の量、濃度、食塩の量の 3 列。",
+      "register": "spoken"
+    },
+    {
+      "en": "Solve this mixture problem: how many grams of a 10% salt solution must be added to 200 g of a 4% salt solution to make a 6% salt solution?",
+      "ja": "次の濃度の問題を解け。4% の食塩水 200 g に 10% の食塩水を何 g 混ぜると、6% の食塩水になるか。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "solution は「溶液」の意味で、方程式の「解」（エントリ solution）と同じ語。salt solution は食塩水。",
+    "濃度は計算では小数に直して使う。5% の食塩水 300 g に含まれる食塩は 300 × 0.05 = 15 g。",
+    "「濃度」は concentration。「5% の食塩水」は a 5% salt solution。"
+  ],
+  "related": [
+    "percent",
+    "solution",
+    "word-problem",
+    "write-an-equation",
+    "motion-problem"
+  ],
+  "sources": [
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "mixture problem": 7
+    },
+    "written": {
+      "mixture problem": 6
+    },
+    "sources": [
+      "openstax-elemalg",
+      "yt:organicchem",
+      "yt:profleonard"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 mixture problem（本文 6 件）。register は主張しない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}

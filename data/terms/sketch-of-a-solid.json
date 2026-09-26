@@ -1,0 +1,88 @@
+{
+  "id": "sketch-of-a-solid",
+  "ja": {
+    "term": "見取図",
+    "reading": "みとりず",
+    "alt": []
+  },
+  "en": {
+    "term": "perspective drawing",
+    "alt": [
+      "three-dimensional drawing"
+    ],
+    "uk": null
+  },
+  "pos": "noun",
+  "mapping": "near",
+  "mapping_note": "英語に決まった言い方がない。見取図は a drawing of the solid、a 3D sketch、perspective drawing などと言い、見えない辺は hidden edges と呼んで dashed lines（点線）でかく。",
+  "domains": [
+    "geometry"
+  ],
+  "level": {
+    "jp": [
+      "中1"
+    ],
+    "us": [
+      "Pre-Algebra",
+      "Geometry"
+    ]
+  },
+  "definition_ja": "立体の全体の形がひと目で分かるように、斜めから見たようにかいた図。見えない辺は点線でかく。",
+  "definition_en": "A drawing of a solid as seen from an angle, so that its whole shape can be seen at once. Edges that would be hidden from view are drawn with dashed lines.",
+  "latex": null,
+  "spoken_en": null,
+  "examples": [
+    {
+      "en": "In this perspective drawing, the dashed lines are the edges hidden in the back.",
+      "ja": "この見取図で点線になっているのは、奥に隠れて見えない辺だよ。",
+      "register": "spoken"
+    },
+    {
+      "en": "Make a perspective drawing of a triangular prism. Show the hidden edges with dashed lines.",
+      "ja": "三角柱の見取図をかけ。ただし、見えない辺は点線で示せ。",
+      "register": "written"
+    }
+  ],
+  "collocations": [],
+  "pitfalls": [
+    "投影図（エントリ orthographic-projection）とは別の図。見取図は 1 枚の図で立体を斜めから表し、投影図は正面から見た図と真上から見た図を組にする。",
+    "perspective は美術では遠近法（遠くのものを小さくかく方法）のことも指す。中学の見取図では、平行な辺は平行にかく。"
+  ],
+  "related": [
+    "orthographic-projection",
+    "net",
+    "solid",
+    "edge",
+    "prism"
+  ],
+  "sources": [
+    {
+      "type": "mext-translation"
+    }
+  ],
+  "confidence": "likely",
+  "reviewed": {
+    "machine": "2026-09-25",
+    "audit": null,
+    "human": null
+  },
+  "updated": "2026-09-25",
+  "evidence": {
+    "spoken": {
+      "three-dimensional drawing": 1,
+      "perspective drawing": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-calc"
+    ],
+    "counted": "2026-09-25"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "英語に決まった言い方がない（話 2 件 ／ 書 0 件）。mapping near なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-25"
+    }
+  ]
+}
