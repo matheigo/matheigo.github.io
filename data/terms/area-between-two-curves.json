@@ -58,7 +58,7 @@
       "register": "spoken"
     },
     {
-      "en": "If the region is bounded on the left and right by curves, slice it horizontally and integrate with respect to y.",
+      "en": "If curves bound the region on the left and on the right, slice it horizontally and integrate with respect to y.",
       "ja": "部分が左右の曲線で決まるなら、横に切って y で積分する。",
       "register": "spoken"
     },
@@ -71,9 +71,9 @@
   "collocations": [],
   "pitfalls": [
     "区間の途中で曲線の上下が入れ替わるときは、交点で積分を分けて、それぞれ上 − 下にする。",
-    "米国では同じ単元で、y で積分するやり方（右の曲線 − 左の曲線）も扱い、dx と dy のどちらで積分するかを選ぶ練習をする。AP の CED は x の関数・y の関数・3 点以上で交わる場合を別の topic（8.4・8.5・8.6）にしている。",
+    "OpenStax Calculus は同じ節で、y で積分するやり方（右の曲線 − 左の曲線）も扱う。AP の CED は x の関数・y の関数・3 点以上で交わる場合を別の topic（8.4・8.5・8.6）にしている。",
     "問題文では Find the area of the region bounded by the parabola y = x² and the line y = x + 2. のように the region bounded by で書かれる。",
-    "数IIIでは媒介変数表示の曲線で囲まれた面積も扱うが、米国では Calc II の parametric curves の単元で別に扱う。"
+    "媒介変数表示の曲線で囲まれた面積は、OpenStax では Calculus Volume 2 の parametric curves の章で扱う。"
   ],
   "related": [
     "area-under-the-curve",
@@ -100,7 +100,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "area between curves": 5,

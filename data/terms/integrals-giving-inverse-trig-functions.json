@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語に決まった言い方がない。見出しの integrals resulting in inverse trigonometric functions は OpenStax Calculus Volume 1 の節の名前。日本の高校では逆三角関数を扱わないので、∫1/(1 + x²)dx は x = tan θ と置換して定積分の値だけを求める。米国では Calc I で arcsin・arctan を学び、∫dx/(1 + x²) = arctan x + C、∫dx/√(1 − x²) = arcsin x + C を公式として使う。",
+  "mapping_note": "英語に決まった言い方がない。見出しの integrals resulting in inverse trigonometric functions は OpenStax Calculus Volume 1 の節の名前。学習指導要領解説には逆三角関数が出てこないので、∫1/(1 + x²)dx は x = tan θ と置換して定積分の値だけを求める。OpenStax Calculus Volume 1（Calc I）は arcsin・arctan を扱い、∫dx/(1 + x²) = arctan x + C、∫dx/√(1 − x²) = arcsin x + C を公式として使う。",
   "domains": [
     "calculus",
     "trigonometry"
@@ -62,7 +62,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "evidence": {
     "written": {
       "integrals resulting in inverse trigonometric functions": 1

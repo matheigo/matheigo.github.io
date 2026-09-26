@@ -25,7 +25,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の高校でも x = a sin θ などの置換は使うが、手法に名前は付けない。米国では OpenStax Calculus Volume 2 が Trigonometric Substitution の節で体系的に扱い、不定積分の答えを x に戻すために直角三角形（reference triangle）を描く。",
+  "mapping_note": "学習指導要領解説（数学III）は x = a sin θ の置き換えを置換積分法に含め、別の名前を付けない。OpenStax Calculus Volume 2 は Trigonometric Substitution の節で体系的に扱い、不定積分の答えを x に戻すために直角三角形（reference triangle）を描く。",
   "domains": [
     "calculus",
     "trigonometry"
@@ -61,9 +61,9 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本では 1/cos²θ と書くところを、米国では sec²θ と書く。",
+    "1/cos²θ は OpenStax では sec²θ と書く（学習指導要領解説には sec が出てこない）。",
     "AP Calculus の CED（2020 年版）には trigonometric substitution の topic がない。BC の積分の技法は topic 6.11（部分積分）・6.12（部分分数）・6.13（広義積分）。",
-    "√ を含む関数（日本の「無理関数」）は、米国では irrational function とはまず言わず、radical function ／ square root function と呼ぶ。√(ax + b) は u-substitution、√(a² − x²) などは trigonometric substitution で扱う。"
+    "√ を含む関数（日本の「無理関数」）は、OpenStax と AP の CED では irrational function と呼ばず、radical function ／ square root function と呼ぶ。√(ax + b) は u-substitution、√(a² − x²) などは trigonometric substitution で扱う。"
   ],
   "related": [
     "integration-by-substitution",
@@ -82,6 +82,12 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "topic なし（Unit 6 の積分の技法は 6.9–6.14。三角置換は含まれない）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学III 積分法: 置換積分法は ax + b = t、x = a sin θ と置き換えるもの"
     }
   ],
   "confidence": "likely",
@@ -90,7 +96,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "trig substitution": 79,

@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "区分求積法は、区間を n 等分して長方形の面積の和をつくり、その極限を定積分として求める手法の名前。米国では手法の名前を立てず、長方形の和を Riemann sum、その極限を定積分の定義として教える。日本の「lim (1/n)Σ f(k/n) を定積分で表せ」型の問題は、米国では express the limit as a definite integral のように指示される。",
+  "mapping_note": "区分求積法は、区間を n 等分して長方形の面積の和をつくり、その極限を定積分として求める手法の名前（学習指導要領解説も区分求積法の考えで定積分を導入する扱いに触れる）。AP の CED と OpenStax Calculus は手法の名前を立てず、長方形の和を Riemann sum、その極限を定積分の定義として扱う。日本の「lim (1/n)Σ f(k/n) を定積分で表せ」型の問題は、OpenStax Calculus では express the limit as a definite integral のように指示される。",
   "domains": [
     "calculus"
   ],
@@ -83,6 +83,12 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 6.2（left ／ right ／ midpoint Riemann sums と trapezoidal sums）、6.3"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II・III: 区分求積法の考えで定積分を導入"
     }
   ],
   "confidence": "likely",
@@ -91,7 +97,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "Riemann sum": 174

@@ -62,9 +62,9 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "∫xⁿ dx の公式は、米国では power rule（for integrals）と呼ぶ。",
-    "n = −1 のときは ln|x| + C（日本の教科書では log|x| + C）。",
-    "∫aˣ dx = aˣ/log a + C の log a（自然対数）は、米国では ln a と書く。米国の高校の教科書では log a は底 10 の常用対数を表すので、答案では ln を使う。",
+    "∫xⁿ dx の公式は、OpenStax Calculus では power rule for integrals と呼ぶ。",
+    "n = −1 のときは ln|x| + C（日本語では log|x| + C と書く）。",
+    "∫aˣ dx = aˣ/log a + C の log a（自然対数）は、OpenStax Calculus では ln a と書く。OpenStax Algebra and Trigonometry は底を省いた log を常用対数（底 10）とする（学習指導要領解説には ln が出てこない）ので、英語の答案では ln を使う。",
     "OpenStax Calculus Volume 2 は、積分表や計算ソフト（computer algebra system, CAS）を使う方法も扱う。"
   ],
   "related": [
@@ -93,7 +93,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "integration formulas": 4,

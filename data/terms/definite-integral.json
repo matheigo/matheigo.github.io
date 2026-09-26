@@ -50,8 +50,8 @@
     }
   ],
   "pitfalls": [
-    "日本の数IIは定積分を F(b) − F(a) で定義するが、米国の教科書は Riemann sum の極限で定義し、F(b) − F(a) で計算できることを微積分学の基本定理として示す。",
-    "[F(x)]ₐᵇ の書き方は米国でも使うが、F(x) の右に縦線を引いて上下に b と a を書く形もよく見る。どちらも F of x evaluated from a to b と読む。"
+    "学習指導要領解説（数学II）は、面積 S(t) の導関数が f(t) になることから定積分が面積を表すことを導く扱いと、区分求積法の考えで定義する扱いに触れる。OpenStax Calculus は Riemann sum の極限で定義し、F(b) − F(a) で計算できることを微積分学の基本定理として示す。",
+    "OpenStax Calculus は [F(x)]ₐᵇ のほかに、F(x) の右に縦線を引いて上下に b と a を書く形も使う。どちらも F of x evaluated from a to b と読む。"
   ],
   "related": [
     "indefinite-integral",
@@ -66,6 +66,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II 微分・積分の考え: 面積 S(t) と定積分、区分求積法の考え"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 6.3・6.7（definite integral）"
     }
   ],
   "confidence": "likely",
@@ -74,7 +86,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "definite integral": 476,

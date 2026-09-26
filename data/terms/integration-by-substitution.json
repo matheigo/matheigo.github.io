@@ -27,7 +27,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の置換積分法は、g(x) = t とおく形と x = g(t) とおく形の両方を含む。米国の u-substitution は u = g(x) とおく形が中心で、x = a sin θ のように x を置き換える形は trigonometric substitution として別の名前で教える。教科書の節の名前や答案では単に substitution（教科書によっては the substitution rule）とも書く。ja.alt の「置換法則」は学習指導要領解説に無い、本プロジェクトの訳語（英語 substitution rule の訳）。",
+  "mapping_note": "日本の置換積分法は、g(x) = t とおく形と x = g(t) とおく形の両方を含む（学習指導要領解説の数学III は ax + b = t と x = a sin θ の置き換えを挙げる）。OpenStax Calculus の u-substitution は u = g(x) とおく形で、x = a sin θ のように x を置き換える形は trigonometric substitution として別の節（Volume 2）で扱う。教科書の節の名前や答案では単に substitution（教科書によっては the substitution rule）とも書く。ja.alt の「置換法則」は学習指導要領解説に無い、本プロジェクトの訳語（英語 substitution rule の訳）。",
   "domains": [
     "calculus"
   ],
@@ -63,7 +63,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の教科書は新しい変数に t を使うことが多いが、米国ではほぼ u を使う（名前も u-substitution）。",
+    "OpenStax Calculus と AP の CED は新しい変数に u を使う（名前も u-substitution）。",
     "口頭では u-sub と略すこともある。",
     "dx を du で書き直すのを忘れない（du = g′(x) dx）。"
   ],
@@ -92,6 +92,12 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 6.9（substitution による積分）。Unit 6 の概要では u-substitution"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学III 積分法: 置換積分法は ax + b = t、x = a sin θ と置き換えるもの"
     }
   ],
   "confidence": "likely",

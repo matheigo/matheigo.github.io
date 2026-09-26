@@ -49,7 +49,7 @@
   "collocations": [],
   "pitfalls": [
     "Δx は delta x、xᵢ は x sub i、xᵢ* は x sub i star と読む。",
-    "日本の区分求積法は区間を n 等分して端点をとる形がほとんどだが、OpenStax Calculus Volume 1 の定義では幅の違う分け方や任意の代表点（sample point, xᵢ*）も許す。"
+    "区分求積法の lim (1/n)Σ f(k/n) は区間を n 等分して右端をとる形だが、OpenStax Calculus Volume 1 の定義では幅の違う分け方や任意の代表点（sample point, xᵢ*）も許す。"
   ],
   "related": [
     "riemann-sum",
@@ -82,7 +82,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "limit of a Riemann sum": 1

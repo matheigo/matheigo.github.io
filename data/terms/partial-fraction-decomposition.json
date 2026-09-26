@@ -80,11 +80,11 @@
     }
   ],
   "pitfalls": [
-    "数Bの数列の和で使う 1/k(k + 1) = 1/k − 1/(k + 1) の分解も英語では同じく partial fractions。和が打ち消し合って求まるものは telescoping sum と呼ぶ。",
-    "日本の答案では log|x| − log|x + 1| + C = log|x/(x + 1)| + C とまとめることが多いが、米国の教科書では ln を使う。まとめるかどうかは自由。",
-    "日本の高校の「分数関数」は主に (ax + b)/(cx + d) の形を指すが、米国の rational function は多項式 ÷ 多項式の関数全般を指す。",
+    "数列の和で使う 1/k(k + 1) = 1/k − 1/(k + 1) の分解も英語では同じく partial fractions。和が打ち消し合って求まるものは telescoping sum と呼ぶ。",
+    "log|x| − log|x + 1| + C を log|x/(x + 1)| + C とまとめるかどうかは自由。OpenStax Calculus は ln を使う。",
+    "日本の数III の「分数関数」は、学習指導要領解説では「簡単な分数関数」のグラフを扱う。OpenStax の rational function は多項式 ÷ 多項式の関数全般を指す。",
     "分子の次数が分母以上なら、先に多項式の割り算（long division）で次数を下げる。",
-    "∫(1/x)dx は、日本では log|x| + C、米国では ln|x| + C と書く。"
+    "∫(1/x)dx は、日本語では log|x| + C、OpenStax Calculus では ln|x| + C と書く。"
   ],
   "related": [
     "decompose-into-partial-fractions",
@@ -120,7 +120,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "partial fractions": 111,

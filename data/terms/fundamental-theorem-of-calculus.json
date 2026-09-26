@@ -28,7 +28,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の高校では「微分と積分の関係」として d/dx ∫ₐˣ f(t)dt = f(x) と F(b) − F(a) の計算を扱うことが多く、定理の名前はあまり前面に出ない。米国では定理を名前で呼ぶ。OpenStax Calculus Volume 1 は Part 1（積分を微分すると元に戻る）と Part 2（F(b) − F(a) で計算できる）に分ける。番号の付け方は教科書による。AP の CED は番号を付けず、topic 6.4（accumulation functions）と 6.7（definite integrals）で扱う。",
+  "mapping_note": "学習指導要領解説（数学II）は「微分と積分の関係」に着目して扱い、定理の名前（微分積分学の基本定理）は出てこない。AP の CED と OpenStax Calculus は定理を名前で呼ぶ。OpenStax Calculus Volume 1 は Part 1（積分を微分すると元に戻る）と Part 2（F(b) − F(a) で計算できる）に分ける。番号の付け方は教科書による。AP の CED は番号を付けず、topic 6.4（accumulation functions）と 6.7（definite integrals）で扱う。",
   "domains": [
     "calculus"
   ],
@@ -91,6 +91,12 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 6.4、6.7（番号 Part 1 ／ Part 2 は使わない）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II 微分・積分の考え: 微分と積分の関係"
     }
   ],
   "confidence": "likely",
@@ -99,7 +105,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "fundamental theorem of calculus": 118,

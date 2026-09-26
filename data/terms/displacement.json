@@ -44,9 +44,9 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "数IIIでは「位置の変化量」と言い、変位は物理の用語。",
+    "学習指導要領解説（数学III）は「位置の変化」と言い、「変位」は物理の項目にだけ出てくる。",
     "実際に動いた道のりは total distance traveled で、速度の絶対値を積分する。",
-    "米国の教科書では、数直線上を動く点を a particle moving along a line と言い、位置を s(t) や x(t)、速度を v(t) と書く。",
+    "OpenStax Calculus と AP の CED は、数直線上を動く点を a particle moving along a line と言い、位置を s(t) や x(t)、速度を v(t) と書く。",
     "velocity は向き（符号）を含み、speed はその絶対値。"
   ],
   "related": [
@@ -67,6 +67,12 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 8.2（位置・速度・加速度と積分。displacement と total distance）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学III 積分法: 時刻 t₁ から t₂ までの点 P の位置の変化"
     }
   ],
   "confidence": "likely",
@@ -75,7 +81,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "displacement": 70
