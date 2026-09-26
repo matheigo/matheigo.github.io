@@ -33,7 +33,9 @@
     "spell": "cspell \"data/**/*.json\" \"docs/**/*.md\" \"*.md\"",
     "format": "prettier --write .",
     "lint": "eslint .",
-    "postbuild": "tsx scripts/export.ts"
+    "postbuild": "tsx scripts/export.ts && pnpm run export:anki && pnpm run export:pdf",
+    "export:anki": "if [ -x .venv/bin/python ]; then .venv/bin/python scripts/export-anki.py; else python3 scripts/export-anki.py; fi",
+    "export:pdf": "tsx scripts/export-pdf.ts"
   },
   "dependencies": {
     "astro": "^5.14.1",

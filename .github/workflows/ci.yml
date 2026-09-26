@@ -27,6 +27,13 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
+      # genanki for the Anki deck (tests/export.test.ts builds one from verified fixtures).
+      # The word-to-word PDF test uses the runner's Google Chrome.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r scripts/requirements.txt
+
       # Stage 1 of PLAN.md 8: machine checks. Any failure blocks the merge.
       - name: Schema, duplicates, LaTeX, references
         run: pnpm validate
@@ -86,9 +93,14 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r scripts/requirements.txt
 
       # Public build: unverified entries are shipped but hidden behind an
       # off-by-default toggle, and their pages carry noindex (PLAN 8).
+      # postbuild writes dist/data, and the Anki deck and PDF once anything is verified.
       - run: pnpm build
         env:
           MB_SHOW_UNVERIFIED: "0"

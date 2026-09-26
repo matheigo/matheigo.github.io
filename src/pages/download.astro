@@ -1,45 +1,123 @@
 ---
 import Base from "../layouts/Base.astro";
-import { terms, symbols, phrases, conventions } from "../lib/data";
+import { terms, symbols, phrases, conventions, curriculum, REPO, SITE_NAME } from "../lib/data";
+import { GLOSS_LABEL } from "../lib/gloss";
 
-const counts = [
-  { label: "用語", n: terms.length },
-  { label: "記号・式", n: symbols.length },
-  { label: "フレーズ", n: phrases.length },
-  { label: "慣習差", n: conventions.length },
+const verifiedCount = (xs: { confidence: string }[]) => xs.filter((x) => x.confidence === "verified").length;
+const vTerms = verifiedCount(terms);
+const vSymbols = verifiedCount(symbols);
+const vPhrases = verifiedCount(phrases);
+const newest = [...terms, ...symbols, ...phrases, ...conventions, ...curriculum]
+  .map((x) => x.updated ?? "")
+  .reduce((a, b) => (b > a ? b : a), "");
+const built = new Date().toISOString().slice(0, 10);
+
+const data = [
+  { name: "terms", label: "用語", n: terms.length, csv: true },
+  { name: "symbols", label: "記号・式の読み上げ", n: symbols.length, csv: true },
+  { name: "phrases", label: "場面別フレーズ", n: phrases.length, csv: true },
+  { name: "conventions", label: "日米の慣習差", n: conventions.length, csv: true },
+  { name: "curriculum", label: "カリキュラム対応表", n: curriculum.length, csv: false },
+];
+const drill = [
+  {
+    label: "Anki デッキ（.apkg）",
+    detail: "用語は「日本語→英語」と「音声→日本語」の 2 枚（英語の音声は Anki の読み上げ）。記号・フレーズも入ります。単元ごとのサブデッキ。",
+    href: "/data/matheigo.apkg",
+    n: vTerms + vSymbols + vPhrases,
+  },
+  {
+    label: "単語対訳表 PDF（定義なし）",
+    detail: "日本語→英語と English→Japanese の一対一の表。定義は載せていません。",
+    href: "/data/matheigo-word-to-word.pdf",
+    n: vTerms,
+  },
+  {
+    label: "Quizlet 取り込み用（.tsv）",
+    detail: "英語<TAB>日本語（読み）の 2 列。",
+    href: "/data/terms.quizlet.tsv",
+    n: vTerms,
+  },
 ];
 ---
 
-<Base title="ダウンロード — MathEigo" description="辞典データを JSON / CSV / Anki / PDF で配布しています。">
-  <h1 class="term-ja" style="font-size:var(--step-2)">ダウンロード</h1>
+<Base
+  title={`ダウンロード（JSON・CSV・Anki・PDF）— ${SITE_NAME}`}
+  description="数学の日英辞典のデータを JSON・CSV で配布しています（CC0 1.0）。Anki デッキと単語対訳表 PDF は監査の後に公開します。"
+  section="download"
+>
+  <h1 class="page-title">ダウンロード</h1>
 
   <p>
-    データは <strong>CC0 1.0</strong>（パブリックドメイン提供）です。表示義務はありません。
-    学習アプリへの組み込み、言語モデルの学習・評価、翻訳の下敷き、どれも自由に使えます。
-    コードは MIT。
+    データは <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.ja" rel="license noopener">CC0 1.0</a>（パブリックドメイン提供）です。表示義務はありません。
+    学習アプリへの組み込み、言語モデルの学習・評価、翻訳の下敷き、どれも自由に使えます。サイトとスクリプトのコードは <a href={`${REPO}/blob/main/LICENSE`}>MIT</a>。
   </p>
-
-  <table class="grid">
-    <tbody>
-      {counts.map((c) => <tr><th>{c.label}</th><td>{c.n} 件</td></tr>)}
-    </tbody>
-  </table>
+  <ul class="facts meta">
+    <li>データの更新日: <time datetime={newest}>{newest}</time></li>
+    <li>このページの生成日: <time datetime={built}>{built}</time></li>
+  </ul>
 
   <section class="block">
-    <h2>形式</h2>
-    <ul class="plain">
-      <li><a href="/data/terms.json">terms.json</a> — 全項目（定義・例文・出典つき）</li>
-      <li><a href="/data/terms.csv">terms.csv</a> — 表計算ソフト用の平坦な表</li>
-      <li><a href="/data/terms.quizlet.tsv">terms.quizlet.tsv</a> — Quizlet 取り込み用（英語 ＋ 日本語・読み）</li>
-      <li><a href="/data/symbols.json">symbols.json</a> ／ <a href="/data/phrases.json">phrases.json</a> ／ <a href="/data/conventions.json">conventions.json</a></li>
-    </ul>
+    <h2>データセット（JSON・CSV）</h2>
+    <p>
+      未確認（監査前）の項目も <code>confidence</code> 付きで入っています。監査済みだけを使うときは <code>confidence</code> が
+      <code>verified</code> の行に絞ってください。
+    </p>
+    <div class="table-scroll">
+      <table class="grid">
+        <thead>
+          <tr><th scope="col">内容</th><th scope="col" class="num">件数</th><th scope="col">ファイル</th></tr>
+        </thead>
+        <tbody>
+          {
+            data.map((d) => (
+              <tr>
+                <td>{d.label}</td>
+                <td class="num">{d.n.toLocaleString("en-US")}</td>
+                <td>
+                  <a href={`/data/${d.name}.json`} download>JSON</a>
+                  {d.csv && (
+                    <>
+                      {" ／ "}
+                      <a href={`/data/${d.name}.csv`} download>CSV</a>
+                    </>
+                  )}
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+    <p class="meta">
+      用語の <code>en_is_explanatory_translation</code> が true の行は、英語に決まった言い方がない日本の概念で、<code>en.term</code>
+      はこの辞典が付けた説明の訳です（{GLOSS_LABEL}）。英語の用語として使わないでください。
+    </p>
   </section>
 
   <section class="block">
-    <h2>Anki と PDF</h2>
-    <p>
-      Anki デッキ (.apkg、音声同梱) と、定義なしの word-to-word PDF は GitHub Release に添付します。
-      PDF は「試験に持ち込む一対一辞書」を想定した定義なし版ですが、持ち込みの可否は各学校・各州の方針によります。必ず担当の先生に確認してください。
+    <h2>暗記用・印刷用（監査済みの項目だけ）</h2>
+    <p>毎日回す暗記カードと試験に持ち込む紙は、間違いのコストが高いので、監査（別の作業での確認）を通った項目だけを入れます。</p>
+    <ul class="links">
+      {
+        drill.map((d) => (
+          <li>
+            {d.n > 0 ? (
+              <a href={d.href} download>
+                {d.label}
+              </a>
+            ) : (
+              <strong>{d.label}</strong>
+            )}
+            <span class="detail">{d.detail}</span>
+            <span class="detail">{d.n > 0 ? `${d.n} 件` : "監査の後に公開します（監査済みの項目はまだありません）。"}</span>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="meta">
+      「{GLOSS_LABEL}」の語は、Anki・PDF・Quizlet でも同じ印を付けます（Anki では聞き取りのカードを作りません）。単語対訳表 PDF
+      は「試験に持ち込む一対一の辞書」を想定した定義なしの表ですが、持ち込みの可否は各学校・各州の方針によります。必ず担当の先生に確認してください。
     </p>
   </section>
 </Base>
