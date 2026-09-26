@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語に決まった言い方がない（用例コーパスには integer part は出てこない。説明的な greatest integer less than or equal to が書き言葉（OpenStax Calculus）にわずかに出てくるだけ）。正の数の整数部分は床関数の値 ⌊x⌋（the floor of x）と同じなので、英語では floor か the greatest integer less than or equal to x で言う。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスには integer part は出てこない。説明的な greatest integer less than or equal to が書き言葉（OpenStax Calculus）にわずかに出てくるだけ）。正の数の整数部分は床関数の値 ⌊x⌋（the floor of x）と同じなので、英語では floor か the greatest integer less than or equal to x で言う。英語版 Wikipedia「Floor and ceiling functions」（en.term のリダイレクト先）は冒頭で integer part を太字で定義する。",
   "domains": [
     "algebra"
   ],
@@ -54,6 +54,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Floor_and_ceiling_functions",
+      "note": "記事名 Floor and ceiling functions（en.term integer part のリダイレクト先。冒頭で integer part を太字で定義。数学カテゴリから 2 段）"
     }
   ],
   "confidence": "likely",
@@ -62,7 +68,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "sources": [],
     "counted": "2026-09-25"

@@ -12,8 +12,10 @@ PLAN.md §6 をそのまま作業用に移したもの。**生成時に毎バッ
    どちらも実際に使われているのに一方を選ぶと、コーパスに無い好みを辞典が作ることになる。
    首位だけが 10 件以上（2 位は 10 件未満）なら 3 倍に届かなくても ①。2 位は少数の variant にする。
    ③ 総件数 10 件未満 → 判断不能。話・書とも ③ のときは次の順に決める（register は主張しない）。
-     ・mapping near ／ none で全候補が話・書とも 10 件未満 → 「英語に決まった言い方がない」（`corpus-no-fixed-expression`）。
-       mapping_note にそう書く。英語の名前をそのまま見出しにした語（LIATE）、CED の呼び方になっている語、
+     ・mapping near ／ none で全候補が話・書とも 10 件未満 → 「用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない」（`corpus-no-fixed-expression`）。
+       mapping_note にそう書く（「英語に決まった言い方がない」とは書かない。資料の外の英語は確かめていない。Phase 5 監査 2 の H-1）。
+       英語版 Wikipedia の数学記事（数学カテゴリから 4 段以内）がその語を記事名か本文の太字・節の見出しで定義しているなら、
+       mapping_note に「英語版 Wikipedia には記事「X」がある」と書き、記事を出典に入れる（`python3 scripts/audit/enwiki.py <記事名> <語>`）。英語の名前をそのまま見出しにした語（LIATE）、CED の呼び方になっている語、
        参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）のどれかが候補を 3 件以上使っている語、
        mapping none で ja が本プロジェクトの訳語の語（two-column proof など米国の名前が元の語）は除く。
      ・それ以外 → 見出しは CED（AP Calculus ／ AP Statistics）→ OpenStax・IM・CK-12（同じ段）→ Nicholson ／ Levin → 英語版 Wikipedia の記事名の順に最初に見つかった呼び方（`corpus-reference-fallback`。docs/SOURCES.md）。
@@ -38,6 +40,9 @@ PLAN.md §6 をそのまま作業用に移したもの。**生成時に毎バッ
    **用例コーパスの文も転載しない。** MIT OCW・OpenStax（と Khan Academy の字幕）は CC BY-NC-SA なので、
    例文・定義文・note にコーパスの文を写さない。コーパスから使うのは件数だけで、その件数も本文には書かない（追記欄の最初）。
    辞典のデータは CC0 のまま（NC-SA の文が混ざると CC0 で出せなくなる）。
+   **書き写しの目安**（Phase 5 監査 2 の H-7）: `pnpm audit:copy` の一致のうち、**10 語以上で 1〜2 ソースにしかない一致**と、**定義文の一致**（語数にかかわらず）は言い換える。
+   3 ソース以上にある短い決まった言い回し（数式の読み the limit as x approaches a of f、問題文の型 find the equation of the tangent line to）は書き写しとしない。
+   言い換えは意味と役割を変えない（監査では小さな直し）。例文を別の内容に差し替えたら大きな直し（追記欄「監査の判定」）。
 6. 読み（ひらがな）必須。ローマ字は wanakana で自動生成。カタカナ語（インテグラル、シグマ）も `ja.alt` に入れる。
 7. 出典 1 件以上。無ければ `confidence: draft` のまま。
 8. 数式は LaTeX、KaTeX でレンダリングできる範囲。`\displaystyle` 乱用禁止。
@@ -135,3 +140,7 @@ Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を�
   「学習指導要領解説（数学III）には〜が出てこない」「共通テストの問題文は〜と書く」「日本語版 Wikipedia「〜」は〜」のように書き、その資料を出典に入れる。
   資料は `python3 scripts/audit/refgrep.py jp <語>`（解説・共通テスト／センター試験・日本語版 Wikipedia）で引く。記事が手元に無ければ `python3 scripts/audit/jawiki.py <記事名>` で取る。
   米国側も同じで、「米国では〜」は `refgrep.py us`・`ced.py` で確かめて「OpenStax Calculus は〜」「AP の CED（topic 5.4）は〜」と書く
+- **監査の判定（Phase 5 監査 2 の H-8）**: 書き写しの疑いで、意味と役割を変えずに言い換えた定義文・例文は**小さな直し**（verified にできる）。例文を別の内容に差し替えたもの、定義の意味を変えたもの、en・mapping を変えたものは**大きな直し**（likely のまま flag audit-major-fix。次の監査のセッションが見直す）。
+- **確かめられない言い方は validate が警告する**（Phase 5 監査 2 の H-5。scripts/lib/wording.ts）: 通じる／通じない、一番よく使う・最もよく使う、減点される／されない、資料の名前のない「ことが多い」。mapping_note・pitfalls・variants の note・定義（terms）、notes（symbols・phrases）、jp・us・advice_ja（conventions）が対象。例文・フレーズの文は対象外。
+- **例文の少なくとも 1 つは見出し（en.term）の語を使う**（Phase 5 監査 2 の 5）。variant や alt の語だけで例文を作らない（midpoint Riemann sum の例文が midpoint rule だけ、では見出しの使い方が分からない）。`python3 scripts/audit/examples_headword.py` が一覧にする。見出しが単元の名前のような句（derivatives of trigonometric functions）で例文に入らないものは、この一覧に残ってよい。
+- **CED の出典の note は CED の本文と合わせる**（Phase 5 監査 2 の H-3。scripts/lib/ced-notes.ts）: 「Topic n.m（語）」の語は、その topic の本文にある言い方で書く（CED の題は Integrating Functions Using Long Division and Completing the Square）。「Unit N の概要（語）」は単元の概要のページ、「Unit N（語）」は単元全体。validate が CED のテキスト（corpus/ref/）があるときに警告する。

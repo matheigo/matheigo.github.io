@@ -10,7 +10,7 @@ count.ts と probe.ts は `scripts/corpus/references.ts` で読む。
 
 ## 規則 2 の参照の順
 
-話・書とも ③ で「英語に決まった言い方がない」に当たらない語は、次の順に最初に呼び方が見つかった資料の呼び方を見出しにする
+話・書とも ③ で「用例コーパスと参照には決まった言い方が出てこない」（corpus-no-fixed-expression）に当たらない語は、次の順に最初に呼び方が見つかった資料の呼び方を見出しにする
 （`corpus-reference-fallback`。register は主張しない。lib.ts `settleUndecided`）。同じ段の中では件数の多い候補。
 
 1. **CED**: AP Calculus ／ AP Statistics（College Board）
@@ -29,7 +29,7 @@ count.ts と probe.ts は `scripts/corpus/references.ts` で読む。
 
 3 か 4 で決まった語（CED・OpenStax・IM・CK-12 のどの候補も 0 件）は、mapping_note に「米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない」と件数を書く
 （decide が「直すこと」に出す）。
-「英語に決まった言い方がない」の例外（英語の名前があると分かっているもの）に数えるのは、1 の CED の呼び方、
+「決まった言い方が出てこない」の例外（英語の名前があると分かっているもの）に数えるのは、1 の CED の呼び方、
 参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）のどれか 1 つが候補の 1 つを 3 件以上使っている語（lib.ts `REFERENCE_NAMED`。IM の glossary の見出しの例外を一般にしたもの）、
 mapping none で ja が本プロジェクトの訳語の語（米国の名前が元）、ja と en が同じ語（LIATE）（DECISIONS「Phase 2 幾何・離散の単元 2」「単元 3 の前の修正」）。
 

@@ -17,7 +17,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { COLLECTIONS, ROOT, isPublishable, isVerified, loadAll, localDate, type Entry } from "./lib/load.js";
-import { GLOSS_LABEL, isExplanatoryTranslation } from "../src/lib/gloss.js";
+import { GLOSS_LABEL, isExplanatoryTranslation as glossOf, referenceWordings } from "../src/lib/gloss.js";
 
 export const OUT = path.join(ROOT, "dist", "data");
 
@@ -29,6 +29,16 @@ const csvCell = (v: unknown): string => {
 export const toCsv = (rows: unknown[][]): string => rows.map((r) => r.map(csvCell).join(",")).join("\n") + "\n";
 
 const join = (xs: unknown) => (Array.isArray(xs) ? xs.join("; ") : "");
+
+/**
+ * 「説明の訳」 with the exception for a CED / reference wording inside en (gloss.ts,
+ * H-2), read from all the terms once (the export and the tests call it entry by entry).
+ */
+let wordings: Set<string> | null = null;
+const isExplanatoryTranslation = (d: Entry): boolean => {
+  if (wordings === null) wordings = referenceWordings(loadAll().terms.map((e) => e.data));
+  return glossOf(d, wordings);
+};
 
 /** Adds the derived flag to a term; other collections pass through unchanged. */
 export function withGloss(d: Entry): Entry {

@@ -308,7 +308,7 @@ function probeDecide(docs: CorpusDoc[], blocks: string[][], group: PhraseGroup |
       const s = settleUndecided({ mapping, ja, en: block[0], projectTranslation }, { spoken: total(t.spoken), written: total(t.written) }, ref, block);
       const how =
         s.kind === "no-fixed-expression"
-          ? "英語に決まった言い方がない"
+          ? "用例コーパスと参照には決まった言い方が出てこない"
           : s.kind === "reference"
             ? `${REFERENCE_NAMES[s.by]} の呼び方 ${s.head} (${s.where.slice(0, 3).join(", ")})`
             : `③ のまま${mapping ? "" : "（@mapping なし）"}`;

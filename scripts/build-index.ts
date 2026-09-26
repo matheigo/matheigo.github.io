@@ -13,7 +13,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { ROOT, isPublishable, loadAll } from "./lib/load.js";
-import { isExplanatoryTranslation } from "../src/lib/gloss.js";
+import { isExplanatoryTranslation, referenceWordings } from "../src/lib/gloss.js";
 import { BIT_GLOSS, BIT_VERIFIED, type CompactDoc, type CompactIndex } from "../src/lib/search.js";
 
 const bits = (data: Record<string, unknown>, gloss = false): number =>
@@ -22,12 +22,13 @@ const bits = (data: Record<string, unknown>, gloss = false): number =>
 function build(): CompactDoc[] {
   const all = loadAll();
   const docs: CompactDoc[] = [];
+  const wordings = referenceWordings(all.terms.map((e) => e.data));
 
   for (const { data } of all.terms) {
     if (!isPublishable(data)) continue;
     const ja = data.ja as { term: string; reading: string; alt?: string[] };
     const en = data.en as { term: string; alt?: string[] };
-    docs.push(["t", data.id, [ja.term, ...(ja.alt ?? [])], ja.reading, [en.term, ...(en.alt ?? [])], "", bits(data, isExplanatoryTranslation(data))]);
+    docs.push(["t", data.id, [ja.term, ...(ja.alt ?? [])], ja.reading, [en.term, ...(en.alt ?? [])], "", bits(data, isExplanatoryTranslation(data, wordings))]);
   }
 
   for (const { data } of all.symbols) {

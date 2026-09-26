@@ -1,6 +1,6 @@
 /** Build-time access to data/. Vite's import.meta.glob keeps the site static. */
 import { CORPUS_SOURCES } from "../../scripts/corpus/sources";
-import { isExplanatoryTranslation } from "./gloss";
+import { isExplanatoryTranslation as glossOf, referenceWordings } from "./gloss";
 
 const termMods = import.meta.glob("../../data/terms/*.json", { eager: true, import: "default" });
 const symbolMods = import.meta.glob("../../data/symbols/*.json", {
@@ -184,7 +184,13 @@ export const symbolById = new Map(symbols.map((s) => [s.id, s]));
 export const conventionById = new Map(conventions.map((c) => [c.id, c]));
 export const unitById = new Map(curriculum.map((u) => [u.id, u]));
 
-export { isExplanatoryTranslation };
+/**
+ * 「説明の訳」 with the exception for a CED / reference wording inside en
+ * (gloss.ts; DECISIONS, Phase 5 監査 セッション 2, H-2), read once from all the terms.
+ */
+const REFERENCE_WORDINGS = referenceWordings(terms as unknown as Record<string, unknown>[]);
+export const isExplanatoryTranslation = (t: { [key: string]: unknown } | Term): boolean =>
+  glossOf(t as unknown as Record<string, unknown>, REFERENCE_WORDINGS);
 
 // reverse links ---------------------------------------------------------------
 

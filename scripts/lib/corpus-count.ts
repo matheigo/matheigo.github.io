@@ -26,8 +26,14 @@ export const CORPUS_WORDS =
 /** Words that name a reference whose counts may be written. */
 export const REFERENCE_WORDS = /CED|OpenStax|(?<![A-Za-z])IM(?![A-Za-z])|CK-12|Nicholson|Levin|Wikipedia/;
 
-/** "12 件", or two counts set against each other ("138 対 353"; "1 対 1" is a one-to-one correspondence). */
-const COUNT = /\d[\d,]*\s*件|(?!1\s*対\s*1(?![\d,]))\d[\d,]*\s*対\s*\d[\d,]*/;
+/**
+ * "12 件", or counts set against each other: "138 対 353", "16・11 に対し 6"
+ * (two or more counts joined by ・ against one; Phase 5 audit-1 H-4: validate
+ * missed "話し言葉 16・11 に対し 6" on integrate-by-parts). "1 対 1" is a
+ * one-to-one correspondence, and "20 に対して 3 増えた" (one number) is
+ * arithmetic, not a count.
+ */
+const COUNT = /\d[\d,]*\s*件|(?!1\s*対\s*1(?![\d,]))\d[\d,]*\s*対\s*\d[\d,]*|\d[\d,]*(?:\s*・\s*\d[\d,]*)+\s*に対し(?:て)?\s*\d[\d,]*/;
 
 /** Cuts at 。 outside parentheses: a 。 inside （…） ends a sentence within the aside, not the aside. */
 export function sentences(text: string): string[] {

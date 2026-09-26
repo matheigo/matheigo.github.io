@@ -52,4 +52,11 @@ describe("counts set against each other", () => {
     expect(corpusCountSentences("どちらも 10 件未満で、OpenStax の節の名前を見出しにした。")).toHaveLength(1);
     expect(corpusCountSentences("f が 1 対 1 のときに存在する。")).toEqual([]);
   });
+
+  // Phase 5 audit-1 H-4: "話し言葉 16・11 に対し 6" slipped past validate (integrate-by-parts)
+  it("flags counts joined by ・ against one (16・11 に対し 6), not one number に対して", () => {
+    expect(corpusCountSentences("話し言葉では by parts を伴う言い方が 16・11 に対し 6 で少ない。")).toHaveLength(1);
+    expect(corpusCountSentences("講義では 40・12・3 に対して 5 と少ない。")).toHaveLength(1);
+    expect(corpusCountSentences("20 から 23 になったから、もとの 20 に対して 3 増えた。")).toEqual([]);
+  });
 });

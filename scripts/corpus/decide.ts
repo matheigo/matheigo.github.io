@@ -189,7 +189,8 @@ interface Line {
   mse: ReturnType<typeof mseLeader>;
 }
 
-const NO_FIXED_NOTE = "英語に決まった言い方がない";
+/** The mapping_note sentence of a ③ with no set way to say it (DECISIONS, Phase 5 監査 セッション 2, H-1: the corpus and the references are what was checked, not English). */
+const NO_FIXED_NOTE = "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない";
 
 /** mapping_note of a Japanese headword this project translated from a US name (STYLE 追記欄). */
 const PROJECT_TRANSLATION = "本プロジェクトの訳語";
@@ -253,7 +254,7 @@ function describeSettled(s: Settled): string {
   if (s.kind === "attested" && s.by === "mse")
     return `MICASE の学生の発話では首位が ${PHRASE_ATTESTED} 件未満（${s.micase?.wording ? `${s.micase.wording} ${s.micase.hits} 件` : "0 件"}）。Math Stack Exchange の質問で最も多い要の部分 ${s.head}（${s.hits} 件。${PHRASE_ATTESTED} 件以上）なので使われている。${s.enNote}`;
   if (s.kind === "attested") return `話者のコーパスで首位の要の部分 ${s.head}（${s.hits} 件。${PHRASE_ATTESTED} 件以上）`;
-  if (s.kind === "no-fixed-expression") return `英語に決まった言い方がない（話 ${s.spoken} 件 ／ 書 ${s.written} 件）`;
+  if (s.kind === "no-fixed-expression") return `${NO_FIXED_NOTE}（話 ${s.spoken} 件 ／ 書 ${s.written} 件）`;
   if (s.kind === "reference") {
     if (s.by === "ced") return `CED の呼び方 ${s.head}（${s.where.map((w) => (/^\d/.test(w) ? `topic ${w}` : w)).join("・")}）`;
     if (s.by === "ced-stats") return `AP Statistics の CED の呼び方 ${s.head}（${s.where.map((w) => (/^\d/.test(w) ? `topic ${w}` : w)).join("・")}）`;
@@ -542,7 +543,7 @@ function main() {
     if (settled?.kind === "no-fixed-expression") {
       flags.push({
         code: "corpus-no-fixed-expression",
-        note: `${describeSettled(settled)}。mapping ${record.mapping as string} なので、英語に決まった言い方がないと判定した。register は主張しない。人間レビューには回さない。`,
+        note: `${describeSettled(settled)}。mapping ${record.mapping as string} なので、決まった言い方が出てこないと判定した（英語版 Wikipedia は見ていない）。register は主張しない。人間レビューには回さない。`,
         raised: TODAY,
       } as { code: string });
     } else if (settled?.kind === "reference") {
@@ -648,7 +649,7 @@ function main() {
   const md = [
     `# コーパス集計 ${TODAY}`,
     "",
-    `対象 ${lines.length} 件。主見出し決着 ${single.length} ／ 併記 ${both.length} ／ 英語に決まった言い方なし ${noFixed.length} ／ 参照で見出しを決めた ${byReference.length} ／ フレーズの要の部分が ${PHRASE_ATTESTED} 件以上 ${attestedLines.length} ／ 人間が決めた ${human.length} ／ 判断不能 ${undecided.length} ／ register 不一致 ${mismatched.length}。`,
+    `対象 ${lines.length} 件。主見出し決着 ${single.length} ／ 併記 ${both.length} ／ 決まった言い方が出てこない ${noFixed.length} ／ 参照で見出しを決めた ${byReference.length} ／ フレーズの要の部分が ${PHRASE_ATTESTED} 件以上 ${attestedLines.length} ／ 人間が決めた ${human.length} ／ 判断不能 ${undecided.length} ／ register 不一致 ${mismatched.length}。`,
     "",
     scope.size
       ? `data/ に書き戻したのは ${writtenBack.length} 件（${[...UNITS, ...IDS].join("、")}）。ほかは判定を表示しただけで、evidence と flags は前回のまま。`
@@ -755,7 +756,7 @@ function main() {
     "",
     "## ③ のうち規則で決着したもの",
     "",
-    "話・書とも判断不能のうち、mapping が near ／ none で全候補の合計が話・書とも 10 件未満のものは「英語に決まった言い方がない」",
+    "話・書とも判断不能のうち、mapping が near ／ none で全候補の合計が話・書とも 10 件未満のものは「用例コーパスと参照には決まった言い方が出てこない」",
     "（corpus-no-fixed-expression）。それ以外は見出しを CED（AP Calculus ／ AP Statistics）の呼び方、無ければ OpenStax・IM・CK-12 の呼び方（同じ段。本文・節の名前・レッスン・glossary の件数の多い候補。参照のどれかが候補を 3 件以上使う語は「決まった言い方がない」にしない）、",
     "無ければ Nicholson ／ Levin の呼び方、無ければ英語版 Wikipedia の記事名で決める",
     "（corpus-reference-fallback）。どちらも register は主張せず、人間レビューに回さない。",

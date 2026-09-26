@@ -9,6 +9,9 @@
  * - a verified entry carries no problem flag (record flags may stay; lib/flags.ts)
  * - a Japanese word shared by two entries is a listed homonym (SAME_JA)
  * - no count from the example corpus in the body text (lib/corpus-count.ts; a warning)
+ * - no wording STYLE forbids in the claim fields (lib/wording.ts: 通じる, 一番よく使う, 減点, ことが多い without a source; a warning)
+ * - a CED source's note names topics the CED has, and words those topics use (lib/ced-notes.ts; a warning,
+ *   only when the CED texts are fetched into corpus/ref/)
  * - no id shared by two collections (the search index keys entries by bare id)
  *
  * Exit code 1 on any error. Warnings do not fail the build.
@@ -16,9 +19,14 @@
 import Ajv2020, { type ErrorObject } from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import katex from "katex";
+import fs from "node:fs";
+import path from "node:path";
+import { checkCedNote } from "./lib/ced-notes.js";
 import { bodyTexts, corpusCountSentences } from "./lib/corpus-count.js";
 import { PROBLEM_FLAGS, RECORD_FLAGS, isProblemFlag } from "./lib/flags.js";
-import { COLLECTIONS, loadAll, readSchema, type Collection, type Entry } from "./lib/load.js";
+import { COLLECTIONS, ROOT, loadAll, readSchema, type Collection, type Entry } from "./lib/load.js";
+import { CLAIM_FIELDS, unverifiableSentences } from "./lib/wording.js";
+import { cedSections, cedText } from "./corpus/lib.js";
 
 const errors: string[] = [];
 const warnings: string[] = [];
@@ -66,6 +74,22 @@ function checkRef(where: string, field: string, id: unknown, target: Collection)
 }
 
 const sourcesOf = (d: Entry) => (Array.isArray(d.sources) ? d.sources : []);
+
+/**
+ * The two CEDs split into sections (scripts/corpus/lib.ts cedSections), when
+ * they are fetched (corpus/ref/ is gitignored: CI skips this check).
+ */
+const CED_FILES = { calc: "ap-calculus-ab-bc-ced.txt", stats: "ap-statistics-ced.txt" } as const;
+const ceds: Partial<Record<keyof typeof CED_FILES, Map<string, string>>> = {};
+for (const [k, f] of Object.entries(CED_FILES) as [keyof typeof CED_FILES, string][]) {
+  const file = path.join(ROOT, "corpus", "ref", f);
+  if (!fs.existsSync(file)) continue;
+  const m = new Map<string, string>();
+  for (const [name, text] of cedSections(fs.readFileSync(file, "utf8"))) m.set(name, (m.get(name) ?? "") + " " + cedText(text));
+  ceds[k] = m;
+}
+const isCedSource = (src: { type?: unknown; title?: unknown }) =>
+  src.type === "reference" && typeof src.title === "string" && /Course and Exam Description|(?<![A-Za-z])CED(?![A-Za-z])/.test(src.title);
 
 /** The phrase mapping_note uses for a Japanese headword not found in Japanese textbooks. */
 const PROJECT_TRANSLATION = "本プロジェクトの訳語";
@@ -198,9 +222,35 @@ for (const collection of COLLECTIONS) {
       }
     }
 
+    // wordings STYLE forbids (lib/wording.ts) ---------------------------
+    const claimField = CLAIM_FIELDS[collection];
+    if (claimField) {
+      for (const [field, text] of bodyTexts(data)) {
+        if (!claimField.test(field)) continue;
+        for (const s of unverifiableSentences(text)) {
+          warn(where, `${field} has a wording STYLE forbids (通じる ／ 一番よく使う ／ 減点 ／ ことが多い without a source): ${s}`);
+        }
+      }
+    }
+
     // definition of done (CLAUDE.md) -------------------------------------
     const confidence = data.confidence as string;
     const sources = sourcesOf(data);
+
+    // a CED note says what the CED says (lib/ced-notes.ts) ---------------
+    sources.forEach((src: { type?: unknown; title?: unknown; note?: unknown }, i: number) => {
+      if (!isCedSource(src) || typeof src.note !== "string") return;
+      const ced = ceds[/Statistics/.test(src.title as string) ? "stats" : "calc"];
+      if (!ced) return;
+      for (const m of checkCedNote(src.note, ced)) {
+        warn(
+          where,
+          m.noSuchSection
+            ? `sources[${i}].note names ${m.sections.join("・")}, which the CED does not have`
+            : `sources[${i}].note says the CED (${m.sections.join("・")}) uses "${m.word}", which is not there`,
+        );
+      }
+    });
 
     if (confidence !== "draft" && sources.length === 0) {
       err(where, `confidence "${confidence}" requires at least one source (PLAN 6-7)`);

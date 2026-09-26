@@ -15,7 +15,7 @@ import { fileURLToPath } from "node:url";
 import satori from "satori";
 import sharp from "sharp";
 import { ROOT, loadAll, type Entry } from "./lib/load.js";
-import { GLOSS_SHORT, isExplanatoryTranslation } from "../src/lib/gloss.js";
+import { GLOSS_SHORT, isExplanatoryTranslation, referenceWordings } from "../src/lib/gloss.js";
 
 const FONT_DIR = path.join(ROOT, "node_modules", "@fontsource", "noto-sans-jp");
 export const OG_DIR = path.join(ROOT, "public", "og");
@@ -141,9 +141,10 @@ export const DEFAULT_CARD: Card = {
 export function cardsFor(all: ReturnType<typeof loadAll>): { file: string; card: Card }[] {
   const ok = (d: Entry) => d.confidence === "verified";
   const out: { file: string; card: Card }[] = [];
+  const wordings = referenceWordings(all.terms.map((e) => e.data));
   for (const { data: t } of all.terms.filter((e) => ok(e.data))) {
     const ja = t.ja as { term: string; reading: string };
-    const gloss = isExplanatoryTranslation(t);
+    const gloss = isExplanatoryTranslation(t, wordings);
     out.push({
       file: `terms/${t.id}.png`,
       card: { kicker: "数学の用語 日本語 → 英語", title: ja.term, sub: ja.reading, en: (t.en as { term: string }).term, mark: gloss ? GLOSS_SHORT + "（英語の用語ではない）" : undefined },
