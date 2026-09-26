@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。日本の中学の投影図は、立面図（正面から見た図）と平面図（真上から見た図）を組にしたもので、英語では front view（立面図）・top view（平面図）・side view と、見る向きで図を呼ぶ。見出しの orthographic projection は製図でこの図法を呼ぶ名前で、米国の中学・高校の教材（OpenStax・IM・CK-12）には出てこない。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。中学校学習指導要領解説の投影図は、空間図形を上から見た図（平面図）や前から見た図（立面図）に表現したもので、英語では IM Grade 6 が front view・top view と、見る向きで図を呼ぶ。見出しの orthographic projection はこの図法の英語の名前（英語版 Wikipedia の記事名。数学カテゴリの外）で、米国の中学・高校の教材（OpenStax・IM・CK-12）には出てこない。",
   "domains": [
     "geometry"
   ],
@@ -56,6 +56,18 @@
   "sources": [
     {
       "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 1 学年 B 図形: 投影図（上から見た図（平面図）や前から見た図（立面図））"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 6)",
+      "url": "https://im.kendallhunt.com/MS/students/1/index.html",
+      "note": "front view（2 件）・top view（1 件）"
     }
   ],
   "confidence": "likely",

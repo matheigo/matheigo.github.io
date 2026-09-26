@@ -11,16 +11,14 @@
   "en": {
     "term": "cross-multiply",
     "alt": [
-      "cross multiplication",
-      "product of the means",
-      "product of the extremes"
+      "cross multiplication"
     ],
     "uk": null,
     "register": "spoken"
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "日本語は比例式の性質として「内項の積と外項の積は等しい」と名前で言う。英語の授業では、比例式を a/b = c/d の分数の形にして cross-multiply する（ad = bc）と、手順を動詞で言う。内項・外項に当たる means・extremes という名前もあり、product of the means、product of the extremes と言う。",
+  "mapping_note": "日本語の「内項の積と外項の積は等しい」（学習指導要領解説には内項・外項の語は無く、日本語版 Wikipedia「比例式」にある）に当たる性質を、英語の参照（OpenStax・IM・CK-12）は名前で呼ばず、比例式を a/b = c/d の分数の形にして cross-multiply する（ad = bc）と手順を動詞で言う。内項・外項に当たる名前（means・extremes）は用例コーパスにも参照にも出てこない。",
   "domains": [
     "algebra"
   ],
@@ -52,7 +50,7 @@
   "collocations": [],
   "pitfalls": [
     "因数分解の「たすき掛け」を直訳して cross multiplication と言うと、英語では比例式のこの操作の意味になる。たすき掛けに当たる英語は ac method ／ grouping ／ box method。",
-    "ベクトルの外積は cross product（エントリ cross-product）で、「外項の積」（product of the extremes）とは別の語。",
+    "ベクトルの外積は cross product（エントリ cross-product）で、cross-multiply とは別の語。",
     "cross-multiply できるのは、a/b = c/d のように両辺がそれぞれ 1 つの分数のとき。a/b + 1 = c/d のように他の項があるときは、そのままでは使えない。"
   ],
   "related": [
@@ -73,7 +71,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "cross-multiply | cross-multiplying | cross-multiplied | cross-multiplies | cross-multiplication": 49
