@@ -23,7 +23,7 @@
     "corpus:probe": "tsx scripts/corpus/probe.ts",
     "corpus:scenes": "tsx scripts/corpus/micase-scenes.ts",
     "build:index": "tsx scripts/build-index.ts",
-    "prebuild": "pnpm run validate && pnpm run build:index",
+    "prebuild": "pnpm run validate && pnpm run build:index && pnpm run build:og",
     "build": "astro build",
     "dev": "astro dev",
     "preview": "astro preview",
@@ -35,7 +35,8 @@
     "lint": "eslint .",
     "postbuild": "tsx scripts/export.ts && pnpm run export:anki && pnpm run export:pdf",
     "export:anki": "if [ -x .venv/bin/python ]; then .venv/bin/python scripts/export-anki.py; else python3 scripts/export-anki.py; fi",
-    "export:pdf": "tsx scripts/export-pdf.ts"
+    "export:pdf": "tsx scripts/export-pdf.ts",
+    "build:og": "tsx scripts/build-og.ts"
   },
   "dependencies": {
     "astro": "^5.14.1",

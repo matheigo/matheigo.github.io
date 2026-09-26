@@ -25,7 +25,7 @@
 - 2026-09-10 | 0 | `pnpm export` は JSON / CSV / Quizlet TSV まで実装。Anki `.apkg`（genanki）と word-to-word PDF（Playwright）は骨組みのみ | Phase 0 の完了条件は validate と build。Anki はデッキ ID を固定する必要があり、Phase 4 で一度に決める
 - 2026-09-10 | 0 | `astro.config.mjs` の `site` は `https://example.invalid`。用語ページの報告リンクは `USERNAME/matheigo` | ドメインと GitHub アカウントは人間が接続する（PLAN 10）。接続時にこの 2 箇所を置換する
 - 2026-09-10 | 0 | pnpm 12 のビルドスクリプト承認は `pnpm-workspace.yaml` の `allowBuilds` に記録（`onlyBuiltDependencies` も併記して pnpm 10-11 に対応） | 承認が無いと `pnpm install` が exit 1 になり CI が落ちる
-- 2026-09-10 | 0 | Anki のデッキ ID / モデル ID は未採番 | Phase 4 で採番してこの行を更新する。更新時に重複デッキを作らないため、一度決めたら変えない
+- 2026-09-10 | 0 | Anki のデッキ ID / モデル ID は未採番 | Phase 4 で採番してこの行を更新する。更新時に重複デッキを作らないため、一度決めたら変えない（→ 2026-09-26 に採番。「Phase 4 サイト」の節）
 
 ## Phase 0（2026-09-11 の確定分）
 
@@ -930,3 +930,6 @@
 - 2026-09-26 | 4 | 単語対訳表 PDF は PLAN §7 の「Astro のプリント用ページ → Playwright」ではなく、scripts/lib/print.ts が HTML を作り、puppeteer-core ＋ 手元の Chrome（CHROME_PATH か既定の場所）で印刷する。日本語→英語（読みの順）と English→Japanese（A–Z）の 2 部、定義なし。説明の訳の語は日本語→英語に印付きで載せ、English→Japanese には載せない（英語の見出しではない） | 公開しないページ（監査前）をサイトに置かない。Playwright は Chromium を落とすが、Chrome は手元と GitHub の Ubuntu ランナーにある
 - 2026-09-26 | 4 | Anki（export:anki）・PDF（export:pdf）は postbuild で export の後に回す。監査済みが 0 のあいだは何も書かず（genanki も Chrome も使わない）、1 件でもあれば dist/data/matheigo.apkg ・ matheigo-word-to-word.pdf を書いてサイトと一緒に配る。ダウンロードのページは監査済みの件数が 0 なら「監査の後に公開します」と出す。CI（validate・deploy）に Python と genanki（scripts/requirements.txt、0.13.1）を足した。手元は .venv | DECISIONS Phase 0（Anki・Quizlet・PDF は verified のみ）。PLAN の「GitHub Release に添付」より手順が少なく、サイトの /download から落とせる
 - 2026-09-26 | 4 | 生成の仕組みは tests/export.test.ts で確かめる: 実データの 4 項目（rate・quadratic-formula・integral-definite・office-hours-stuck-at-step）を一時ディレクトリで verified にして genanki で .apkg を作り、中の SQLite（ノート・カード・モデル ID・デッキ名・説明の訳の印）を読む。PDF は HTML の中身（定義なし・両方向・印）と、Chrome で印刷した先頭が %PDF- であること。likely の substitute が入らないこと、監査済み 0 のとき何も書かないこと | ユーザーの指示（今は verified が 0 なので、生成の仕組みはテストで確かめる）
+- 2026-09-26 | 4 | SEO: title は PLAN の型（「解の公式 英語 | quadratic formula — MathEigo」。PLAN の MathBridge は MathEigo に読み替え）、description は定義文（記号は読み、慣習差は「米国では」の一文）、canonical は末尾スラッシュの URL、JSON-LD は用語・記号に DefinedTerm（DefinedTermSet に属す）、トップに WebSite ＋ SearchAction（/?q=）。hreflang は付けない（1 ページに両言語。PLAN §7） | PLAN §9 Phase 4 の 5
+- 2026-09-26 | 4 | sitemap.xml は src/lib/seo.ts の indexablePages（トップ・このサイト・ダウンロード・カリキュラム 164 ページと、verified の項目のページ、verified を含む一覧）だけを載せる。noindex のページとの食い違いはビルドの出力で 0 を確かめた（2,006 ページ中 noindex 1,839、sitemap 167）。robots.txt は全体を許し sitemap を示す（noindex はページ自身が言う）。404.html を足した | 未確認のページを索引させない（DECISIONS Phase 0）
+- 2026-09-26 | 4 | OGP 画像は scripts/build-og.ts（prebuild）が satori ＋ sharp で作る。フォントは @fontsource/noto-sans-jp（OFL）の woff を、文字が入っている unicode-range の部分だけ読む（satori は同じ名前の書体の間で字形を探さないので、部分ごとに別の名前にして並べる）。作るのはサイト共通の 1 枚と、verified の用語・記号・慣習差のページの分だけ（今は共通の 1 枚）。noindex のページは共通の画像を使う。説明の訳の語の画像には印を入れる | 公開前のページは見つけられる・共有されることを想定しない。1,500 枚を毎回作らない

@@ -1,29 +1,56 @@
 ---
 import Base from "../layouts/Base.astro";
+import { REPO, SITE_NAME } from "../lib/data";
+import { GLOSS_LABEL } from "../lib/gloss";
 ---
 
-<Base title="このサイトについて — MathEigo" description="MathEigo の目的、作り方、出典、貢献の方法。">
-  <h1 class="term-ja" style="font-size:var(--step-2)">このサイトについて</h1>
+<Base
+  title={`このサイトについて — ${SITE_NAME}`}
+  description="MathEigo の目的、英語の言い方の決め方（用例コーパス）、未確認の項目の扱い、出典、誤りの報告の仕方。"
+  section="about"
+>
+  <h1 class="page-title">このサイトについて</h1>
 
   <section class="block">
     <h2>目的</h2>
     <p>
       日本で数学を学んだ人が、米国の教室・オフィスアワー・宿題・試験で
       <strong>言える・書ける・聞き取れる</strong>ようになるための辞典です。
-      単語の対訳だけでなく、式の読み上げ、場面ごとの言い回し、日米で違う書き方の 4 つを同じ場所に置いています。
+      用語の対訳だけでなく、式の読み上げ、場面ごとの言い回し、日米で違う書き方、カリキュラムの対応を同じ場所に置いています。
     </p>
   </section>
 
   <section class="block">
-    <h2>作り方</h2>
+    <h2>英語の言い方の決め方</h2>
     <p>
-      定義と例文はこのプロジェクトで書き下ろしています。他の辞書・教科書・サイトの文章は書き写していません。
-      日英の対応は Wikipedia の言語間リンク、文部科学省の学習指導要領英訳、CRICED の日英対訳などと機械的に突き合わせ、
-      合わないものは未確認として印をつけています。
+      見出しの英語は「米国の教室で先生・TA が実際に言う言い方」を基準にしています。米国の講義の書き起こし・字幕（MIT OpenCourseWare、Khan
+      Academy ほか）と教科書（OpenStax ほか）で候補の言い方を数え、話し言葉と書き言葉のどちらで多いかで決めました。数えた件数は各ページの「用例コーパスの件数」の表にあります（本文には件数を書いていません）。
     </p>
     <p>
       1 対 1 で対応しない語（増減表、移項、微分係数…）は、対応するふりをせず
       <strong>「対応する語がない」「近いが同じではない」</strong>と明示して、米国ではどう扱われるかを書いています。
+      英語に決まった言い方がない日本の概念には、この辞典が意味を説明するための訳を付け、「{GLOSS_LABEL}」の印を付けています。英語の用語として覚えないでください。
+    </p>
+    <p>定義と例文はこのプロジェクトで書き下ろしています。他の辞書・教科書・サイトの文章は書き写していません。</p>
+  </section>
+
+  <section class="block">
+    <h2>未確認の項目</h2>
+    <p>
+      すべての項目は、作った作業とは別の作業で監査してから公開します。監査の前の項目は「未確認」で、初めは隠れています。画面上の「未確認の語も表示」をオンにすると見られます（設定はこの端末に保存されます）。未確認のページは検索エンジンに載せません。
+    </p>
+  </section>
+
+  <section class="block">
+    <h2>読み上げ</h2>
+    <p>🔊 のボタンは、端末のブラウザの音声合成（英語・米国）で読み上げます。声と発音は端末によって違います。英語の声がない端末ではボタンが出ません。</p>
+  </section>
+
+  <section class="block">
+    <h2>出典</h2>
+    <p>
+      各ページの下に、その項目で確かめた資料（Wikipedia の言語間リンク、文部科学省の学習指導要領と解説、AP の Course and Exam
+      Description、OpenStax ほか）を載せています。一覧は <a href={`${REPO}/blob/main/SOURCES.md`}>SOURCES.md</a> にあります。
     </p>
   </section>
 
@@ -38,7 +65,13 @@ import Base from "../layouts/Base.astro";
   <section class="block">
     <h2>間違いを見つけたら</h2>
     <p>
-      GitHub の issue で報告してください。「米国の教室ではこう言う」という実例の報告が一番ありがたいです。
+      各ページの「間違いを報告する」から GitHub の issue で報告してください（<a href={`${REPO}/issues/new?template=error-report.md`}>誤りの報告</a> ／
+      <a href={`${REPO}/issues/new?template=add-term.md`}>語の追加の提案</a>）。「米国の教室ではこう言う」という実例の報告が一番ありがたいです。
     </p>
+  </section>
+
+  <section class="block">
+    <h2>ライセンス</h2>
+    <p>データは CC0 1.0（パブリックドメイン提供）、コードは MIT です。<a href="/download/">ダウンロード</a>から JSON・CSV を落とせます。</p>
   </section>
 </Base>
