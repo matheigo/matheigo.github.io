@@ -1,0 +1,953 @@
+{
+  "checked": "2026-09-26",
+  "named": 277,
+  "noReference": [
+    {
+      "collection": "terms",
+      "id": "arrange-by-the-variable-of-lowest-degree",
+      "field": "mapping_note",
+      "sentence": "いちばん近い米国の手法は factoring by grouping（項をまとめて共通因数をくくる）だが、同じ手法ではない。"
+    },
+    {
+      "collection": "terms",
+      "id": "auxiliary-angle-form",
+      "field": "mapping_note",
+      "sentence": "英国の教科書では harmonic form ／ auxiliary angle method と呼ぶことがあるが、米国の用例には出てこない。"
+    },
+    {
+      "collection": "terms",
+      "id": "auxiliary-angle-form",
+      "field": "mapping_note",
+      "sentence": "米国では write a sin θ + b cos θ as a single sine function（R sin(θ + α) の形に書く）と手順で言う。"
+    },
+    {
+      "collection": "terms",
+      "id": "cauchy-schwarz-inequality",
+      "field": "pitfalls[0]",
+      "sentence": "米国の高校課程では名前を出さず、ベクトルの |u · v| ≤ |u||v| として触れる程度。"
+    },
+    {
+      "collection": "terms",
+      "id": "congruence-criteria-for-right-triangles",
+      "field": "mapping_note",
+      "sentence": "米国の Geometry は、日本の 2 つの条件のうち「斜辺と他の 1 辺がそれぞれ等しい」を HL（hypotenuse-leg）と呼んで定理として扱い、「斜辺と 1 つの鋭角がそれぞれ等しい」は AAS で示せる。"
+    },
+    {
+      "collection": "terms",
+      "id": "cross-method",
+      "field": "mapping_note",
+      "sentence": "係数を斜めに掛けて組み合わせを探すのは日本の方法で、米国では ac method（ac を 2 つに分けて factoring by grouping、エントリ factoring-by-grouping）、box method、guess and check などと呼ばれる方法で ax² + bx + c を因数分解する。"
+    },
+    {
+      "collection": "terms",
+      "id": "derivative-of-the-logarithm",
+      "field": "pitfalls[0]",
+      "sentence": "日本の数III の log x（自然対数）は、米国では ln x と書き、ell en x や natural log of x と読む。"
+    },
+    {
+      "collection": "terms",
+      "id": "equivalence-relation",
+      "field": "pitfalls[0]",
+      "sentence": "米国の Geometry で習う reflexive property などは、等号や合同についての同じ性質の名前。"
+    },
+    {
+      "collection": "terms",
+      "id": "nth-roots-of-unity",
+      "field": "pitfalls[1]",
+      "sentence": "数II の 1 の 3 乗根 ω（ω² + ω + 1 = 0、ω³ = 1）は、英語でも cube roots of unity と呼び、ω（omega）の記号を使うが、米国の高校課程では ω に決まった呼び名や性質の練習はほぼない。"
+    },
+    {
+      "collection": "terms",
+      "id": "position-of-a-line-relative-to-a-circle",
+      "field": "mapping_note",
+      "sentence": "米国では「直線が円と 2 点で交わる／接する／交わらない」を how many points the line and the circle have in common として個別に言い、ひとまとめの名前はない。"
+    },
+    {
+      "collection": "terms",
+      "id": "postulate",
+      "field": "mapping_note",
+      "sentence": "米国の Geometry では証明の前提を postulate と呼び、名前付きで使う（segment addition postulate、parallel postulate など）。"
+    },
+    {
+      "collection": "terms",
+      "id": "standard-score",
+      "field": "mapping_note",
+      "sentence": "英語に決まった言い方がない（米国の学校の用語ではない）。"
+    },
+    {
+      "collection": "terms",
+      "id": "transformation-of-a-variable",
+      "field": "pitfalls[1]",
+      "sentence": "AP Statistics では、散布図が曲がっているとき y の対数をとるなどして直線に近づけることも transforming data と言う。"
+    },
+    {
+      "collection": "terms",
+      "id": "triple-angle-formulas",
+      "field": "pitfalls[0]",
+      "sentence": "米国の高校課程では公式として覚えさせず、必要なら加法定理から導く。"
+    },
+    {
+      "collection": "terms",
+      "id": "vector-equation-of-a-circle",
+      "field": "mapping_note",
+      "sentence": "米国の教科書は円を (x − h)² + (y − k)² = r² の形で扱い、ベクトル方程式としては立てない。"
+    },
+    {
+      "collection": "symbols",
+      "id": "combination-ncr",
+      "field": "notes[0]",
+      "sentence": "日本の教科書は ₙCᵣ と書き、米国の教科書は C(n, r)、ₙCᵣ、または縦に並べた二項係数 (n over r) の形で書く。"
+    },
+    {
+      "collection": "symbols",
+      "id": "integers-symbol",
+      "field": "notes[0]",
+      "sentence": "文字どおり Z（米国の発音は zee）とも言う。"
+    },
+    {
+      "collection": "symbols",
+      "id": "mixed-number",
+      "field": "notes[1]",
+      "sentence": "米国の Pre-Algebra の教材は帯分数を使い続ける。"
+    },
+    {
+      "collection": "symbols",
+      "id": "piecewise-brace",
+      "field": "notes[1]",
+      "sentence": "米国の教科書は条件を式の右に書き（x² if x ≥ 0）、日本のように ( ) でくくらないことが多い。"
+    },
+    {
+      "collection": "symbols",
+      "id": "vector-arrow-notation",
+      "field": "notes[1]",
+      "sentence": "米国の教科書は太字で書き、手書きでは矢印を付ける。"
+    },
+    {
+      "collection": "phrases",
+      "id": "explaining-solution-in-context",
+      "field": "variants[0].note",
+      "sentence": "AP の記述問題で求められる「文脈に即した解釈」。"
+    }
+  ],
+  "entryHasReference": [
+    {
+      "collection": "terms",
+      "id": "accumulation-function",
+      "field": "mapping_note",
+      "sentence": "後者の「定積分を定数 k とおく」型の問題が米国の教科書にあるかは教科書による。",
+      "entrySources": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "accumulation-function",
+      "field": "pitfalls[0]",
+      "sentence": "米国の教科書も同じ書き方をする。",
+      "entrySources": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "angle-addition-formulas",
+      "field": "pitfalls[0]",
+      "sentence": "値を「求めよ」は、米国の問題では find the exact value（小数ではなく正確な値）と書くことが多い。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "angle-sum-of-a-triangle",
+      "field": "mapping_note",
+      "sentence": "日本語は「三角形の内角の和」という量の名前で言うが、米国の Geometry はこれを定理の名前 triangle sum theorem（triangle angle sum theorem）で呼ぶ。",
+      "entrySources": "CK-12 Geometry (K12 LibreTexts)"
+    },
+    {
+      "collection": "terms",
+      "id": "arc-measure",
+      "field": "mapping_note",
+      "sentence": "米国の Geometry では弧 AB の度数を、AB の上に弧の記号を付けた記号に m を添えて書き、中心角と同じ度数で表す（長さの arc length とは別）。",
+      "entrySources": "Illustrative Mathematics, IM 9–12 Math (Geometry); CK-12 Geometry (K12 LibreTexts)"
+    },
+    {
+      "collection": "terms",
+      "id": "arcsine",
+      "field": "pitfalls[1]",
+      "sentence": "米国の Geometry では、直角三角形の辺の比から角を求めるときに電卓の sin⁻¹ キーを使い、inverse sine と呼ぶ。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "arctangent",
+      "field": "pitfalls[0]",
+      "sentence": "日本の数III の積分 ∫ dx/(1 + x²) は x = tan θ と置換して求めるが、米国では答えを arctan x と書く。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "area-between-two-curves",
+      "field": "pitfalls[1]",
+      "sentence": "米国では同じ単元で、y で積分するやり方（右の曲線 − 左の曲線）も扱い、dx と dy のどちらで積分するかを選ぶ練習をする。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "area-between-two-curves",
+      "field": "pitfalls[3]",
+      "sentence": "数IIIでは媒介変数表示の曲線で囲まれた面積も扱うが、米国では Calc II の parametric curves の単元で別に扱う。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "asymptote",
+      "field": "pitfalls[0]",
+      "sentence": "米国では垂直（vertical）・水平（horizontal）・斜め（slant ／ oblique）と漸近線の向きで呼び分ける。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "axiom",
+      "field": "pitfalls[0]",
+      "sentence": "米国の Geometry の授業では、ユークリッド幾何の公理を postulate と呼ぶ。",
+      "entrySources": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "base-of-the-natural-logarithm",
+      "field": "pitfalls[1]",
+      "sentence": "日本の数III は自然対数を log x と書くが、米国の教科書は ln x と書く。",
+      "entrySources": "OpenStax Calculus Volume 1; OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "chain-rule",
+      "field": "pitfalls[0]",
+      "sentence": "米国では高校（AP）から chain rule と呼ぶ。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "conditional-statement",
+      "field": "mapping_note",
+      "sentence": "英語では論理・離散数学が implication、米国の Geometry の教科書が conditional statement（if-then statement）と呼ぶ。",
+      "entrySources": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition"
+    },
+    {
+      "collection": "terms",
+      "id": "congruence-criteria",
+      "field": "mapping_note",
+      "sentence": "米国の Geometry は SSS・SAS・ASA に AAS と直角三角形の HL を加え、それぞれを定理（theorem）や公準（postulate）として名前で呼ぶ（エントリ sss-congruence、sas-congruence、asa-congruence、aas-congruence、hl-congruence）。",
+      "entrySources": "Illustrative Mathematics, IM 9–12 Math (Geometry)"
+    },
+    {
+      "collection": "terms",
+      "id": "constant-of-integration",
+      "field": "pitfalls[0]",
+      "sentence": "米国の教科書の解答例では省くことが多い。",
+      "entrySources": "OpenStax Calculus Volume 3"
+    },
+    {
+      "collection": "terms",
+      "id": "convergence-of-improper-integrals",
+      "field": "pitfalls[0]",
+      "sentence": "∫₁^∞ dx/xᵖ の形を米国では p-integral と呼ぶ教材がある。",
+      "entrySources": "OpenStax Calculus Volume 2"
+    },
+    {
+      "collection": "terms",
+      "id": "corollary",
+      "field": "pitfalls[1]",
+      "sentence": "米国式の発音は第 1 音節に強勢（COR-uh-lair-ee）。",
+      "entrySources": "OpenStax Calculus Volume 1; OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "corresponding-angles-postulate",
+      "field": "mapping_note",
+      "sentence": "米国の教科書では公準（postulate）とするものと定理（theorem）とするものがある。",
+      "entrySources": "CK-12 Geometry (K12 LibreTexts)"
+    },
+    {
+      "collection": "terms",
+      "id": "critical-point",
+      "field": "mapping_note",
+      "sentence": "米国では f′(c) = 0 か f′(c) が存在しない点 c を critical point と呼び、極値の候補として必ず使う。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "cylindrical-shell",
+      "field": "mapping_note",
+      "sentence": "米国では shell method の説明で、厚さ Δx の薄い円筒の皮を cylindrical shell と呼ぶ。",
+      "entrySources": "OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "definite-integral",
+      "field": "pitfalls[0]",
+      "sentence": "日本の数IIは定積分を F(b) − F(a) で定義するが、米国の教科書は Riemann sum の極限で定義し、F(b) − F(a) で計算できることを微積分学の基本定理として示す。",
+      "entrySources": "OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "definite-integral",
+      "field": "pitfalls[1]",
+      "sentence": "[F(x)]ₐᵇ の書き方は米国でも使うが、F(x) の右に縦線を引いて上下に b と a を書く形もよく見る。",
+      "entrySources": "OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "derivative-of-the-exponential-function",
+      "field": "pitfalls[0]",
+      "sentence": "日本の教科書は aˣ log a と書くが、米国の教科書は aˣ ln a と書く（log は常用対数を指すことがある）。",
+      "entrySources": "OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "derivatives-of-trigonometric-functions",
+      "field": "pitfalls[0]",
+      "sentence": "日本の教科書の (tan x)′ = 1/cos²x は、米国では sec²x（secant squared x）と書く。",
+      "entrySources": "OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "difference-quotient",
+      "field": "mapping_note",
+      "sentence": "米国の Precalculus・Calculus では difference quotient と名前で呼ぶ。",
+      "entrySources": "OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "disk-method",
+      "field": "mapping_note",
+      "sentence": "米国では disk method ／ washer method ／ shell method と名前で呼び分け、問題に応じて選ばせる。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "disk",
+      "field": "pitfalls[0]",
+      "sentence": "米国の教科書は disk。",
+      "entrySources": "OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "displacement",
+      "field": "pitfalls[2]",
+      "sentence": "米国の教科書では、数直線上を動く点を a particle moving along a line と言い、位置を s(t) や x(t)、速度を v(t) と書く。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "distance",
+      "field": "pitfalls[0]",
+      "sentence": "2 点間の距離の式は、米国では distance formula と名前で呼ぶ。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "diverge-to-negative-infinity",
+      "field": "pitfalls[0]",
+      "sentence": "日本の数III は自然対数を log x と書くが、米国の教科書は ln x と書く。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "end-behavior",
+      "field": "pitfalls[2]",
+      "sentence": "behavior は米国の綴り（英国は behaviour）。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "equal",
+      "field": "pitfalls[1]",
+      "sentence": "米国の Geometry は、線分や角そのものが重なることを congruent（≅）、その長さや大きさが同じことを equal（=）と分けて書く（AB ≅ CD のとき AB = CD）。",
+      "entrySources": "OpenStax Prealgebra 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "equation-of-a-line",
+      "field": "pitfalls[1]",
+      "sentence": "米国では形に名前をつけて呼ぶ: slope-intercept form（y = mx + b）、point-slope form（y − y₁ = m(x − x₁)）、standard form（Ax + By = C）。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 3"
+    },
+    {
+      "collection": "terms",
+      "id": "even-function",
+      "field": "pitfalls[0]",
+      "sentence": "米国の問題は even, odd, or neither（どちらでもない）の 3 択で聞くことが多い。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "expanding-and-condensing-logs",
+      "field": "mapping_note",
+      "sentence": "米国の授業では、対数の性質で 1 つの log を和・差に分けることを expand、和・差を 1 つの log にまとめることを condense と呼ぶ。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "first-derivative-test",
+      "field": "mapping_note",
+      "sentence": "米国では first derivative test と名前で呼ぶ。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "fundamental-theorem-of-calculus-part-1",
+      "field": "pitfalls[0]",
+      "sentence": "米国の試験でよく出る形。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "fundamental-theorem-of-calculus",
+      "field": "mapping_note",
+      "sentence": "米国では定理を名前で呼ぶ。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "general-form-of-a-circle",
+      "field": "pitfalls[0]",
+      "sentence": "米国の教科書は係数に D, E, F を使うことが多い。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "geometric-mean",
+      "field": "pitfalls[0]",
+      "sentence": "米国の Geometry では、直角三角形の高さが斜辺の 2 つの部分の geometric mean になる（相似の単元）ことで出てくる。",
+      "entrySources": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "half-angle-formulas",
+      "field": "pitfalls[0]",
+      "sentence": "米国の教科書は sin(α/2) = ±√((1 − cos α)/2) と平方根の形で書く（符号は α/2 の象限で決める）。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "hypothesis",
+      "field": "mapping_note",
+      "sentence": "証明の「仮定」は、論理・定理の文脈では hypothesis（p ならば q の p）、米国の Geometry の答案では Given（2 列証明の最初の行の見出し）と言い、1 語に決まらない。",
+      "entrySources": "CK-12 Geometry (K12 LibreTexts)"
+    },
+    {
+      "collection": "terms",
+      "id": "hypothesis",
+      "field": "pitfalls[1]",
+      "sentence": "米国の Geometry の 2 列証明では、仮定を Given:、示すことを Prove: という見出しで書き、hypothesis とは書かない。",
+      "entrySources": "CK-12 Geometry (K12 LibreTexts)"
+    },
+    {
+      "collection": "terms",
+      "id": "identity-matrix",
+      "field": "definition_ja",
+      "sentence": "E（米国の教科書では I）と書く。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "indefinite-integral",
+      "field": "pitfalls[1]",
+      "sentence": "∫(1/x)dx は日本では log|x| + C と書くが、米国の教科書では ln|x| + C と書く。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "indefinite-integral",
+      "field": "pitfalls[1]",
+      "sentence": "米国の高校では log x を底 10 の常用対数と読むので、答案では ln を使う。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "initial-side",
+      "field": "pitfalls[0]",
+      "sentence": "始線を x 軸の正の部分にとった角を、米国では an angle in standard position（標準の位置の角）と呼ぶ。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "integrals-giving-inverse-trig-functions",
+      "field": "mapping_note",
+      "sentence": "米国では Calc I で arcsin・arctan を学び、∫dx/(1 + x²) = arctan x + C、∫dx/√(1 − x²) = arcsin x + C を公式として使う。",
+      "entrySources": "OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "integration-by-completing-the-square",
+      "field": "mapping_note",
+      "sentence": "米国では ∫dx/(x² + 2x + 5) を (x + 1)² + 4 と平方完成して arctan で答える。",
+      "entrySources": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "integration-by-long-division",
+      "field": "mapping_note",
+      "sentence": "多項式の割り算そのものは、米国では polynomial long division と呼ぶ。",
+      "entrySources": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "integration-by-long-division",
+      "field": "pitfalls[0]",
+      "sentence": "日本の「整式の割り算」は、米国では long division と言い、筆算の形で書く。",
+      "entrySources": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "integration-by-parts",
+      "field": "pitfalls[0]",
+      "sentence": "日本の教科書の ∫fg′dx = fg − ∫f′g dx の形より、米国では u と dv を決めて ∫u dv = uv − ∫v du と書くのがふつう。",
+      "entrySources": "OpenStax Calculus Volume 2"
+    },
+    {
+      "collection": "terms",
+      "id": "integration-by-substitution",
+      "field": "mapping_note",
+      "sentence": "米国の u-substitution は u = g(x) とおく形が中心で、x = a sin θ のように x を置き換える形は trigonometric substitution として別の名前で教える。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "integration-by-substitution",
+      "field": "pitfalls[0]",
+      "sentence": "日本の教科書は新しい変数に t を使うことが多いが、米国ではほぼ u を使う（名前も u-substitution）。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "integration-formulas",
+      "field": "pitfalls[0]",
+      "sentence": "∫xⁿ dx の公式は、米国では power rule（for integrals）と呼ぶ。",
+      "entrySources": "OpenStax Calculus Volume 1; OpenStax Calculus Volume 2"
+    },
+    {
+      "collection": "terms",
+      "id": "integration-formulas",
+      "field": "pitfalls[2]",
+      "sentence": "∫aˣ dx = aˣ/log a + C の log a（自然対数）は、米国では ln a と書く。",
+      "entrySources": "OpenStax Calculus Volume 1; OpenStax Calculus Volume 2"
+    },
+    {
+      "collection": "terms",
+      "id": "integration-formulas",
+      "field": "pitfalls[2]",
+      "sentence": "米国の高校の教科書では log a は底 10 の常用対数を表すので、答案では ln を使う。",
+      "entrySources": "OpenStax Calculus Volume 1; OpenStax Calculus Volume 2"
+    },
+    {
+      "collection": "terms",
+      "id": "law-of-detachment",
+      "field": "pitfalls[0]",
+      "sentence": "米国の Geometry の教科書では law of detachment、論理学・離散数学では modus ponens と呼ぶ。",
+      "entrySources": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition; CK-12 Geometry (K12 LibreTexts)"
+    },
+    {
+      "collection": "terms",
+      "id": "left-hand-limit",
+      "field": "pitfalls[0]",
+      "sentence": "日本の教科書は x → a − 0 と書くが、米国の教科書は x → a⁻ と書き、a minus と読む（approaches a from the left）。",
+      "entrySources": "OpenStax Calculus Volume 1; OpenStax Precalculus 2e; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "logarithm",
+      "field": "pitfalls[2]",
+      "sentence": "米国では log x は常用対数（底 10）、ln x は自然対数を表す。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "natural-logarithm",
+      "field": "definition_ja",
+      "sentence": "米国では ln x と書く。",
+      "entrySources": "OpenStax Calculus Volume 1; OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "natural-logarithm",
+      "field": "pitfalls[1]",
+      "sentence": "米国の log x は常用対数なので、答案では ln を使う。",
+      "entrySources": "OpenStax Calculus Volume 1; OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "numerical-integration",
+      "field": "pitfalls[0]",
+      "sentence": "米国の Calc II では誤差の上限（error bound）まで扱うことが多い。",
+      "entrySources": "OpenStax Calculus Volume 2"
+    },
+    {
+      "collection": "terms",
+      "id": "parentheses",
+      "field": "mapping_note",
+      "sentence": "日本語の「かっこ」は ( )・[ ]・{ } のどれにも使うが、米国では ( ) を parentheses（単数 parenthesis）、[ ] を brackets、{ } を braces と呼び分ける。",
+      "entrySources": "OpenStax Prealgebra 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "partial-fraction-decomposition",
+      "field": "pitfalls[1]",
+      "sentence": "日本の答案では log|x| − log|x + 1| + C = log|x/(x + 1)| + C とまとめることが多いが、米国の教科書では ln を使う。",
+      "entrySources": "OpenStax Calculus Volume 2; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "partial-fraction-decomposition",
+      "field": "pitfalls[2]",
+      "sentence": "日本の高校の「分数関数」は主に (ax + b)/(cx + d) の形を指すが、米国の rational function は多項式 ÷ 多項式の関数全般を指す。",
+      "entrySources": "OpenStax Calculus Volume 2; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "partial-fraction-decomposition",
+      "field": "pitfalls[4]",
+      "sentence": "∫(1/x)dx は、日本では log|x| + C、米国では ln|x| + C と書く。",
+      "entrySources": "OpenStax Calculus Volume 2; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "permutation",
+      "field": "pitfalls[0]",
+      "sentence": "米国の教科書では P(n, r) や ₙPᵣ と書く。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 3"
+    },
+    {
+      "collection": "terms",
+      "id": "perpendicular-lines",
+      "field": "pitfalls[0]",
+      "sentence": "米国では傾きの条件を negative reciprocals（負の逆数）と言う。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "power-rule",
+      "field": "mapping_note",
+      "sentence": "米国では power rule と呼び、名前で指して使う。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "probability-density-function",
+      "field": "pitfalls[1]",
+      "sentence": "米国の微積分の教科書には、積分の応用として P(a ≤ X ≤ b) = ∫ₐᵇ f(x)dx や平均 ∫ x f(x) dx を扱う節を置くものがある（教科書による）。",
+      "entrySources": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "proving-an-identity",
+      "field": "pitfalls[1]",
+      "sentence": "証明の途中で両辺に同じ操作をして 1 = 1 を導く書き方は、米国の教科書でも避ける（片側を変形していく）。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "pythagorean-identity",
+      "field": "pitfalls[0]",
+      "sentence": "米国の教科書は 1 + tan²θ = sec²θ、1 + cot²θ = csc²θ も合わせて Pythagorean identities（複数形）と呼ぶ。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "rational-expression",
+      "field": "pitfalls[0]",
+      "sentence": "米国の教科書は excluded values（または restrictions）と呼ぶ。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "rational-function",
+      "field": "mapping_note",
+      "sentence": "米国の rational function は多項式 ÷ 多項式の関数全般を指し、日本語では有理関数に当たる。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "reflexive-property",
+      "field": "pitfalls[0]",
+      "sentence": "米国の Geometry の 2 列証明では、理由の列に Reflexive Property（of Congruence）と書く。",
+      "entrySources": "CK-12 Geometry (K12 LibreTexts)"
+    },
+    {
+      "collection": "terms",
+      "id": "remainder-theorem",
+      "field": "pitfalls[0]",
+      "sentence": "2 次式で割った余り（ax + b の形）を求める問題は、米国の高校ではあまり扱わない。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "riemann-sum",
+      "field": "mapping_note",
+      "sentence": "米国では手法の名前を立てず、長方形の和を Riemann sum、その極限を定積分の定義として教える。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "riemann-sum",
+      "field": "mapping_note",
+      "sentence": "日本の「lim (1/n)Σ f(k/n) を定積分で表せ」型の問題は、米国では express the limit as a definite integral のように指示される。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "right-hand-limit",
+      "field": "pitfalls[0]",
+      "sentence": "日本の教科書は x → a + 0 と書くが、米国の教科書は x → a⁺ と書き、a plus と読む（approaches a from the right）。",
+      "entrySources": "OpenStax Calculus Volume 1; OpenStax Precalculus 2e; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "scientific-notation",
+      "field": "pitfalls[0]",
+      "sentence": "英国では standard form と言うが、米国の standard form は別の意味（直線の式 Ax + By = C など、エントリ standard-form-of-a-line）。",
+      "entrySources": "OpenStax Prealgebra 2e; OpenStax Elementary Algebra 2e; OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "second-derivative-test",
+      "field": "mapping_note",
+      "sentence": "米国では second derivative test と呼ぶ。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "similar-triangles",
+      "field": "pitfalls[0]",
+      "sentence": "相似の記号は日本では ∽、米国では ~（△ABC ~ △DEF）。",
+      "entrySources": "OpenStax Calculus Volume 1; OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "similarity-criteria",
+      "field": "mapping_note",
+      "sentence": "米国の Geometry はこれを SSS similarity、SAS similarity、AA similarity（エントリ aa-similarity）と名前で呼ぶ。",
+      "entrySources": "Illustrative Mathematics, IM 9–12 Math (Geometry)"
+    },
+    {
+      "collection": "terms",
+      "id": "sss-congruence",
+      "field": "pitfalls[0]",
+      "sentence": "米国の Geometry の答案では、理由を by SSS のように略号で書く。",
+      "entrySources": "Illustrative Mathematics, IM 9–12 Math (Geometry)"
+    },
+    {
+      "collection": "terms",
+      "id": "statistics",
+      "field": "pitfalls[1]",
+      "sentence": "AP Statistics・Intro Statistics のように科目名にも使う。",
+      "entrySources": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "substitution-in-a-definite-integral",
+      "field": "mapping_note",
+      "sentence": "米国の教科書が示すのは、区間を u の値に書き換える方法と、いったん不定積分を求めて x に戻し元の区間で計算する方法で、どちらを示すか、対応表を書くかは教科書による。",
+      "entrySources": "OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "taylors-theorem",
+      "field": "pitfalls[0]",
+      "sentence": "AP では剰余の評価を Lagrange error bound と呼ぶ（lagrange-error-bound を参照）。",
+      "entrySources": "OpenStax Calculus Volume 2"
+    },
+    {
+      "collection": "terms",
+      "id": "transitive-property",
+      "field": "pitfalls[1]",
+      "sentence": "米国の Geometry の証明では、等式なら transitive property of equality、合同なら transitive property of congruence と対象を付けて書く。",
+      "entrySources": "CK-12 Geometry (K12 LibreTexts)"
+    },
+    {
+      "collection": "terms",
+      "id": "trapezoid",
+      "field": "mapping_note",
+      "sentence": "米国の教材では台形の定義が分かれる。",
+      "entrySources": "OpenStax Prealgebra 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "trapezoidal-rule",
+      "field": "pitfalls[1]",
+      "sentence": "trapezoid（台形）は米国の言い方。",
+      "entrySources": "OpenStax Calculus Volume 2; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "trigonometric-function",
+      "field": "pitfalls[0]",
+      "sentence": "米国の教科書は sin・cos・tan に加えて csc（cosecant）・sec（secant）・cot（cotangent）も使う。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "trigonometric-integrals",
+      "field": "pitfalls[0]",
+      "sentence": "日本では ∫(1/cos²x)dx = tan x + C と書くが、米国では sec²x（secant squared x）を使って ∫sec²x dx = tan x + C と書く。",
+      "entrySources": "OpenStax Calculus Volume 2; OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "trigonometric-substitution",
+      "field": "pitfalls[0]",
+      "sentence": "日本では 1/cos²θ と書くところを、米国では sec²θ と書く。",
+      "entrySources": "OpenStax Calculus Volume 2; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "trigonometric-substitution",
+      "field": "pitfalls[2]",
+      "sentence": "√ を含む関数（日本の「無理関数」）は、米国では irrational function とはまず言わず、radical function ／ square root function と呼ぶ。",
+      "entrySources": "OpenStax Calculus Volume 2; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "trinomial",
+      "field": "pitfalls[1]",
+      "sentence": "米国の Algebra 1 では、x² + bx + c の形の式を因数分解することを factor trinomials と言う。",
+      "entrySources": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "vector",
+      "field": "pitfalls[0]",
+      "sentence": "日本の教科書は矢印（→）を文字の上に書くが、米国の教科書は太字（v）か、手書きでは上の矢印 v⃗ を使う。",
+      "entrySources": "OpenStax Calculus Volume 3; OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "volume-of-a-solid-of-revolution",
+      "field": "pitfalls[0]",
+      "sentence": "米国では体積の求め方を disk method ／ washer method ／ shell method と方法の名前で呼び分ける。",
+      "entrySources": "OpenStax Calculus Volume 1"
+    },
+    {
+      "collection": "terms",
+      "id": "washer-method",
+      "field": "mapping_note",
+      "sentence": "米国では断面がワッシャー（座金。中央に穴のある円板）の形になるので washer method と呼ぶ。",
+      "entrySources": "OpenStax Calculus Volume 1; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "terms",
+      "id": "which-one-to-differentiate",
+      "field": "mapping_note",
+      "sentence": "日本の教科書は「どちらを微分し、どちらを積分するか」と考えるが、米国では ∫u dv の u（微分する側）と dv（積分する側）を選ぶ、と言う。",
+      "entrySources": "OpenStax Calculus Volume 2"
+    },
+    {
+      "collection": "terms",
+      "id": "write-in-descending-order",
+      "field": "mapping_note",
+      "sentence": "米国の授業では、項が次数の高いものから順に並んでいる多項式を in standard form と言う。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "terms",
+      "id": "zeros-of-a-polynomial",
+      "field": "pitfalls[0]",
+      "sentence": "米国では zero（関数の値が 0 になる x）・root（方程式の解）・x-intercept（グラフの交点）を使い分ける。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "symbols",
+      "id": "alpha",
+      "field": "notes[1]",
+      "sentence": "AP Statistics では有意水準も α で表す。",
+      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Precalculus 2e; OpenStax Introductory Statistics 2e; College Board, AP Statistics Course and Exam Description (Effective Fall 2026)"
+    },
+    {
+      "collection": "symbols",
+      "id": "conditional-probability-subscript-jp",
+      "field": "notes[0]",
+      "sentence": "日本の P_A(B) は、米国の書き方では P(B | A)。",
+      "entrySources": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編"
+    },
+    {
+      "collection": "symbols",
+      "id": "curl-del-cross",
+      "field": "notes[1]",
+      "sentence": "日本の本の rot F（ローテーション）は、米国の教科書では curl F と書く。",
+      "entrySources": "OpenStax Calculus Volume 3"
+    },
+    {
+      "collection": "symbols",
+      "id": "equals-question-mark",
+      "field": "notes[0]",
+      "sentence": "≟ は米国の教科書の検算（Check）で使い、「等しいか確かめる」ことを示す。",
+      "entrySources": "OpenStax Elementary Algebra 2e; CK-12 Foundation, CK-12 Geometry (K12 LibreTexts)"
+    },
+    {
+      "collection": "symbols",
+      "id": "geq-sign",
+      "field": "notes[1]",
+      "sentence": "米国の教科書は ≥ と書く（≧ との違いは inequality-symbols）。",
+      "entrySources": "中学校学習指導要領（平成29年告示）〔用語・記号〕; OpenStax Intermediate Algebra 2e; OpenStax Calculus Volume 2"
+    },
+    {
+      "collection": "symbols",
+      "id": "implies-arrow",
+      "field": "notes[1]",
+      "sentence": "米国の Geometry と離散数学は条件文を p → q とも書く。",
+      "entrySources": "OpenStax Precalculus 2e; CK-12 Foundation, CK-12 Geometry (K12 LibreTexts)"
+    },
+    {
+      "collection": "symbols",
+      "id": "leq-sign",
+      "field": "notes[1]",
+      "sentence": "米国の教科書は ≤ と書く（≦ との違いは inequality-symbols）。",
+      "entrySources": "中学校学習指導要領（平成29年告示）〔用語・記号〕; OpenStax Calculus Volume 3; OpenStax Intermediate Algebra 2e; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)"
+    },
+    {
+      "collection": "symbols",
+      "id": "proportion-colon",
+      "field": "notes[0]",
+      "sentence": "米国の教科書は比例式を a/b = c/d の分数の形で書くことが多く、そのときは a over b equals c over d と読む。",
+      "entrySources": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020); OpenStax Prealgebra 2e"
+    },
+    {
+      "collection": "symbols",
+      "id": "ray-ab-arrow",
+      "field": "notes[0]",
+      "sentence": "米国の幾何の矢印の AB は ray AB と読む。",
+      "entrySources": "CK-12 Geometry (K12 LibreTexts)"
+    },
+    {
+      "collection": "symbols",
+      "id": "repeated-combination-h-jp",
+      "field": "notes[0]",
+      "sentence": "ₙHᵣ は日本の教科書の記号で、米国にこの記号はない。",
+      "entrySources": "Oscar Levin, Discrete Mathematics: An Open Introduction (4th edition); 日本語版 Wikipedia「重複組合せ」"
+    },
+    {
+      "collection": "symbols",
+      "id": "repeated-combination-h-jp",
+      "field": "notes[1]",
+      "sentence": "米国では C(n + r − 1, r) と書く（repeated-combination-notation）。",
+      "entrySources": "Oscar Levin, Discrete Mathematics: An Open Introduction (4th edition); 日本語版 Wikipedia「重複組合せ」"
+    },
+    {
+      "collection": "symbols",
+      "id": "union-sign",
+      "field": "notes[1]",
+      "sentence": "米国の統計の教科書は確率で A OR B とも書く（probability-of-union）。",
+      "entrySources": "OpenStax Precalculus 2e; OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "collection": "symbols",
+      "id": "vector-ab-arrow",
+      "field": "notes[1]",
+      "sentence": "米国の Geometry の教科書では、同じ形の矢印を半直線 AB（ray AB）に使うことがある（ray-ab-arrow）。",
+      "entrySources": "OpenStax Calculus Volume 3"
+    },
+    {
+      "collection": "phrases",
+      "id": "written-solution-given-prove",
+      "field": "notes[0]",
+      "sentence": "米国の二段組の証明（two-column proof）の型。",
+      "entrySources": "CK-12 Geometry (K12 LibreTexts)"
+    }
+  ]
+}
