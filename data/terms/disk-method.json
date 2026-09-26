@@ -25,7 +25,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "日本の数IIIでは回転体の体積を V = π∫ₐᵇ {f(x)}²dx の式で求めるだけで、方法に名前を付けない。米国では disk method ／ washer method ／ shell method と名前で呼び分け、問題に応じて選ばせる。見出しの「円板法」は学習指導要領解説に無い、本プロジェクトの訳語。",
+  "mapping_note": "学習指導要領解説（数学III）には、回転体の体積の求め方の名前が出てこない。OpenStax Calculus は disk method ／ washer method ／ shell method と名前で呼び分ける。見出しの「円板法」は学習指導要領解説に無い（日本語版 Wikipedia「回転体」にはある）。",
   "domains": [
     "calculus"
   ],
@@ -71,6 +71,12 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 8.9–8.10（disc method）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「回転体」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%9E%E8%BB%A2%E4%BD%93",
+      "note": "円板法"
     }
   ],
   "confidence": "likely",

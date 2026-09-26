@@ -71,7 +71,7 @@
     }
   ],
   "pitfalls": [
-    "日本の数Bの教科書は Σ_{k=1}^{n} のように添字に k を使うことが多い。OpenStax Calculus Volume 1 のリーマン和・定積分の節では i を使う（k・j より多い）。この i は虚数単位ではない。",
+    "センター試験（数学Ⅱ・数学Ｂ）の数列の問題は Σ_{k=1}^{n} のように添字に k を使う（慣習差 summation-index-letter）。OpenStax Calculus Volume 1 のリーマン和・定積分の節では i を使う（k・j より多い）。この i は虚数単位ではない。",
     "Σ は sigma と読み、式全体は the sum from i equals one to n of … と読む。"
   ],
   "related": [
@@ -97,6 +97,12 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 6.3（summation notation。sigma notation の語は使わない）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学Ⅱ・数学Ｂ（問題）",
+      "url": "https://web.archive.org/web/20190601/https://www.dnc.ac.jp/albums/abm.php?f=abm00033144.pdf&n=h30+suugaku2+02suugaku2B.pdf",
+      "note": "第3問: Σ の添字 k"
     }
   ],
   "confidence": "likely",
@@ -105,7 +111,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "sigma notation": 43,

@@ -27,7 +27,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の数IIでは d/dx ∫ₐˣ f(t)dt = f(x) を「微分と積分の関係」として式だけで扱い、定理の番号は付けない。OpenStax Calculus Volume 1 はこれを Part 1 と呼ぶ。番号や名前（first ／ second fundamental theorem）の付け方は教科書による。AP の CED は番号を付けず、topic 6.4 で accumulation functions とあわせて扱う。",
+  "mapping_note": "学習指導要領解説（数学II）は d/dx ∫ₐˣ f(t)dt = f(x) を「微分と積分の関係」に着目して扱い、定理の名前や番号は出てこない。OpenStax Calculus Volume 1 はこれを Part 1 と呼ぶ。番号や名前（first ／ second fundamental theorem）の付け方は教科書による。AP の CED は番号を付けず、topic 6.4 で accumulation functions とあわせて扱う。",
   "domains": [
     "calculus"
   ],
@@ -53,7 +53,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "上端が x² のような式なら連鎖律が要る: d/dx ∫ₐ^{x²} f(t)dt = f(x²)·2x。米国の試験でよく出る形。"
+    "上端が x² のような式なら連鎖律が要る: d/dx ∫ₐ^{x²} f(t)dt = f(x²)·2x。AP の CED も topic 6.4 でこの形を扱う。"
   ],
   "related": [
     "fundamental-theorem-of-calculus",
@@ -70,6 +70,12 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 6.4（番号は付けない）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II 微分・積分の考え: 微分と積分の関係"
     }
   ],
   "confidence": "likely",
@@ -78,7 +84,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "first fundamental theorem of calculus": 1,

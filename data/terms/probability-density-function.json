@@ -48,7 +48,7 @@
   "collocations": [],
   "pitfalls": [
     "関数そのものは probability density function（pdf）、その値は probability density と言う。density function と略すことも多い。",
-    "日本の数Bでは正規分布表で確率を求めることが多い。米国の微積分の教科書には、積分の応用として P(a ≤ X ≤ b) = ∫ₐᵇ f(x)dx や平均 ∫ x f(x) dx を扱う節を置くものがある（教科書による）。",
+    "日本の共通テスト（数学B）は正規分布表を添えて確率を求めさせる。OpenStax Calculus にも、積分の応用として確率密度関数の例（P(a ≤ X ≤ b) = ∫ₐᵇ f(x)dx）がある。",
     "OpenStax Introductory Statistics は離散型の確率分布を probability distribution function（PDF）とも呼ぶ。略称が同じなので、PDF が連続型の確率密度関数か離散型の確率分布かを文脈で見分ける。"
   ],
   "related": [
@@ -67,6 +67,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和5年度 大学入学共通テスト 本試験 数学Ⅱ・数学Ｂ（問題）",
+      "url": "https://web.archive.org/web/20240408/https://www.dnc.ac.jp/albums/abm.php?d=432&f=abm00003626.pdf&n=2023_ot_21_sugaku2B.pdf",
+      "note": "正規分布表"
     }
   ],
   "confidence": "likely",
@@ -75,7 +81,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "probability density function": 15
