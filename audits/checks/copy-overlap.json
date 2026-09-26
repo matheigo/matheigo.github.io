@@ -2,11 +2,11 @@
   "summary": {
     "checked": "2026-09-26",
     "rule": "English: 8+ consecutive words; Japanese: 20+ characters (whitespace removed)",
-    "fields": 15626,
+    "fields": 15624,
     "englishSources": 3884,
-    "japaneseSources": 367,
-    "spans": 568,
-    "entries": 466
+    "japaneseSources": 371,
+    "spans": 559,
+    "entries": 462
   },
   "spans": [
     {
@@ -271,17 +271,6 @@
       "sources": {
         "openstax-algtrig": 1,
         "openstax-precalculus": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "area-between-two-curves",
-      "field": "examples[1].en",
-      "lang": "en",
-      "length": 10,
-      "span": "the region is bounded on the left and right by",
-      "sources": {
-        "openstax-calculus": 2
       }
     },
     {
@@ -847,21 +836,6 @@
     {
       "collection": "terms",
       "id": "circle",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 17,
-      "span": "the set of all points in a plane that are the same distance from a fixed point",
-      "sources": {
-        "openstax-algtrig": 5,
-        "openstax-precalculus": 5,
-        "openstax-intalg": 4,
-        "openstax-calculus": 1,
-        "ref:ck12-geometry": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "circle",
       "field": "examples[1].en",
       "lang": "en",
       "length": 9,
@@ -1364,21 +1338,10 @@
       "id": "cross-section",
       "field": "examples[1].en",
       "lang": "en",
-      "length": 8,
-      "span": "the x axis and the line x 4",
+      "length": 14,
+      "span": "each cross section perpendicular to the x axis is a square find the volume",
       "sources": {
-        "openstax-calculus": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "cross-section",
-      "field": "examples[1].en",
-      "lang": "en",
-      "length": 15,
-      "span": "cross sections perpendicular to the x axis are squares find the volume of the solid",
-      "sources": {
-        "khan-ap-calc": 1
+        "khan-ap-calc": 4
       }
     },
     {
@@ -1490,17 +1453,6 @@
       "sources": {
         "openstax-calculus": 2,
         "openstax-precalculus": 1,
-        "khan-ap-calc": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "derivative-at-a-point",
-      "field": "examples[0].en",
-      "lang": "en",
-      "length": 10,
-      "span": "of two is the slope of the tangent line there",
-      "sources": {
         "khan-ap-calc": 1
       }
     },
@@ -1704,6 +1656,17 @@
       "sources": {
         "openstax-elemalg": 1,
         "ref:levin-dmoi4": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "differential-equation",
+      "field": "pitfalls[0]",
+      "lang": "ja",
+      "length": 20,
+      "span": "程度の簡単な微分方程式の意味と解法を扱う",
+      "sources": {
+        "jp:kaisetsu-kou": 1
       }
     },
     {
@@ -2084,17 +2047,6 @@
     },
     {
       "collection": "terms",
-      "id": "experimental-probability",
-      "field": "examples[1].en",
-      "lang": "en",
-      "length": 8,
-      "span": "the probability that a thumbtack lands point up",
-      "sources": {
-        "ref:levin-dmoi4": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "exponent",
       "field": "pitfalls[0]",
       "lang": "en",
@@ -2274,28 +2226,6 @@
       "span": "point p 1 2 3 to the plane",
       "sources": {
         "openstax-calculus": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "frequency-polygon",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 9,
-      "span": "the midpoints of the tops of the bars of",
-      "sources": {
-        "openstax-introstats": 2
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "frequency-polygon",
-      "field": "examples[0].en",
-      "lang": "en",
-      "length": 8,
-      "span": "the midpoints of the tops of the bars",
-      "sources": {
-        "openstax-introstats": 2
       }
     },
     {
@@ -3097,6 +3027,17 @@
       "span": "use l'h pital's rule to evaluate lim x 0",
       "sources": {
         "openstax-calculus": 3
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "limit-at-infinity",
+      "field": "mapping_note",
+      "lang": "ja",
+      "length": 23,
+      "span": "xの値を限りなく大きくしたときのf(x)の極限",
+      "sources": {
+        "jp:kaisetsu-kou": 1
       }
     },
     {
@@ -4347,17 +4288,6 @@
     },
     {
       "collection": "terms",
-      "id": "range-of-data",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "is one way to measure how spread out",
-      "sources": {
-        "ref:im-6-8": 14
-      }
-    },
-    {
-      "collection": "terms",
       "id": "rank",
       "field": "examples[1].en",
       "lang": "en",
@@ -4517,17 +4447,6 @@
       "sources": {
         "mit-notes": 2,
         "mit-6.042": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "relative-frequency",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 9,
-      "span": "divided by the total number of data values the",
-      "sources": {
-        "openstax-introstats": 2
       }
     },
     {
@@ -4973,17 +4892,6 @@
       "span": "the side length of a square whose area is",
       "sources": {
         "ref:im-6-8": 7
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "sign-chart",
-      "field": "examples[1].en",
-      "lang": "en",
-      "length": 13,
-      "span": "by the first derivative test f has a local maximum at x 1",
-      "sources": {
-        "openstax-calculus": 7
       }
     },
     {
@@ -5702,18 +5610,6 @@
       "span": "find an equation of the tangent plane to",
       "sources": {
         "openstax-calculus": 6
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "tangent-problem",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 13,
-      "span": "finding the slope of the tangent line to a curve at a point",
-      "sources": {
-        "yt:profleonard": 4,
-        "openstax-calculus": 3
       }
     },
     {

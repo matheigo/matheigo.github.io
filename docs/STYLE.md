@@ -131,3 +131,7 @@ Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を�
 - **フレーズは、どの要の部分も 10 件に届かなければ ①②③ で競わせない**（DECISIONS「Phase 3 フレーズ 2 の前の修正」1）。首位の要の部分が話者のコーパスに 3 件以上なら likely（flag corpus-attested-only。記録の flag）、3 件未満なら draft と corpus-undecided（書き言葉は参照を先に見る）。explaining-solution は講義のコーパスと MICASE 全体で数える（`--group classroom`）。exam の口で言う文は話者で数える（学生の質問は student、監督の合図は instructor）
 - **学生の場面は Math Stack Exchange の件数も使う**（DECISIONS「Phase 3 フレーズ 3 の前の修正」1）。class-asking・office-hours・group-study・exam の学生の質問で MICASE の学生の発話の首位が 3 件未満なら、`pnpm corpus:fetch:mse` の件数（質問の完全一致）で首位が 3 件以上なら likely（corpus-attested-only）。email・discord は MICASE か Math Stack Exchange のどちらかで 3 件以上なら likely。①② には使わない。**Math Stack Exchange は「使われている証拠」にだけ使い、en を選ばない**（本文を見ないので文脈が分からない。DECISIONS「Phase 3 慣習差 2 の前の修正」1）。en は人間が決めた文か台帳の文のままにし、Math Stack Exchange の首位の文は自然なら variant に置く。数学の質問のサイトで別の意味になる選択肢は `MSE_SKIP` に入れる。止める規則は学生の場面と email・discord の ③ を数えない（一覧にしてレポートに書く）
 - phrases の `notes`（任意）: 使うときの注意・米国での扱い（terms の pitfalls と同じ役割）。本文なので用例コーパスの件数は書かない
+- **日本側の主張は、確かめた資料を主語にして書く**（Phase 5 の監査。慣習差と同じ基準）。「日本の教科書は〜」「日本の高校では扱わない」「日本の答案では〜が多い」は確かめられないので書かない。
+  「学習指導要領解説（数学III）には〜が出てこない」「共通テストの問題文は〜と書く」「日本語版 Wikipedia「〜」は〜」のように書き、その資料を出典に入れる。
+  資料は `python3 scripts/audit/refgrep.py jp <語>`（解説・共通テスト／センター試験・日本語版 Wikipedia）で引く。記事が手元に無ければ `python3 scripts/audit/jawiki.py <記事名>` で取る。
+  米国側も同じで、「米国では〜」は `refgrep.py us`・`ced.py` で確かめて「OpenStax Calculus は〜」「AP の CED（topic 5.4）は〜」と書く

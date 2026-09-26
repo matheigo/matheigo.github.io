@@ -7,9 +7,9 @@
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15626
-- 英語のソース: 3884 ファイル ／ 日本語のソース: 367 ファイル
-- 一致した箇所: **568**（466 項目）
+- 調べた本文の欄: 15624
+- 英語のソース: 3884 ファイル ／ 日本語のソース: 371 ファイル
+- 一致した箇所: **559**（462 項目）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
 |---|---|---|---|---|---|---|---|
@@ -75,7 +75,6 @@
 | terms | arc-length | definition_en | en | 8 | the length of an arc of a circle | 2 | openstax-algtrig, openstax-precalculus |
 | terms | area | examples[0].en | en | 12 | the area of a triangle is one half base times height so | 6 | yt:organicchem, khan-middle, openstax-prealgebra, openstax-elemalg, openstax-intalg, ref:ck12-geometry |
 | terms | area | examples[1].en | en | 10 | find the area of a triangle with sides of length | 2 | openstax-algtrig, openstax-precalculus |
-| terms | area-between-two-curves | examples[1].en | en | 10 | the region is bounded on the left and right by | 1 | openstax-calculus |
 | terms | area-between-two-curves | pitfalls[2] | en | 9 | find the area of the region bounded by the | 1 | openstax-calculus |
 | terms | area-in-polar-coordinates | definition_en | en | 10 | the area of a region bounded by a polar curve | 1 | openstax-calculus |
 | terms | area-in-polar-coordinates | examples[1].en | en | 8 | find the area of the region enclosed by | 1 | openstax-calculus |
@@ -121,7 +120,6 @@
 | terms | change-of-base-formula | definition_ja | en | 8 | log a b log c b log c | 1 | openstax-algtrig |
 | terms | change-of-base-formula | definition_en | en | 8 | log a b log c b log c | 1 | openstax-algtrig |
 | terms | checking-whether-the-solution-makes-sense | examples[2].en | en | 8 | the side length of a square with area | 2 | ref:im-6-8, ref:im-9-12 |
-| terms | circle | definition_en | en | 17 | the set of all points in a plane that are the same distance from a fixed point | 5 | openstax-algtrig, openstax-precalculus, openstax-intalg, openstax-calculus, ref:ck12-geometry |
 | terms | circle | examples[1].en | en | 9 | find the area of a circle with a radius | 2 | ref:ck12-geometry, khan-middle |
 | terms | circumcenter | definition_en | en | 8 | the point where the perpendicular bisectors of the | 1 | ref:ck12-geometry |
 | terms | circumference | examples[1].en | en | 10 | find the circumference of a circle with a radius of | 2 | openstax-algtrig, ref:ck12-geometry |
@@ -165,9 +163,8 @@
 | terms | cpctc | definition_en | en | 9 | corresponding parts of congruent triangles are congruent it is | 1 | ref:ck12-geometry |
 | terms | cpctc | pitfalls[2] | en | 8 | cpctc corresponding parts of congruent triangles are congruent | 2 | ref:ck12-geometry, yt:organicchem |
 | terms | cross-method | examples[0].en | en | 8 | numbers that multiply to 6 and add to | 1 | openstax-elemalg |
-| terms | cross-section | examples[1].en | en | 15 | cross sections perpendicular to the x axis are squares find the volume of the solid | 1 | khan-ap-calc |
+| terms | cross-section | examples[1].en | en | 14 | each cross section perpendicular to the x axis is a square find the volume | 1 | khan-ap-calc |
 | terms | cross-section | examples[1].en | en | 8 | the base of a solid is the region | 1 | khan-ap-calc |
-| terms | cross-section | examples[1].en | en | 8 | the x axis and the line x 4 | 1 | openstax-calculus |
 | terms | cryptography | pitfalls[2] | en | 10 | 8 8 an application to linear codes over finite fields | 1 | ref:nicholson-lawa-2021a |
 | terms | cubic-units | pitfalls[2] | en | 8 | geometry 5 7 the root of the problem | 1 | ref:im-9-12 |
 | terms | curve-sketching | pitfalls[0] | en | 10 | connecting a function its first derivative and its second derivative | 1 | ref:ap-calculus-ab-bc-ced |
@@ -179,7 +176,6 @@
 | terms | density-curve | examples[0].en | en | 8 | the area under the density curve between two | 1 | openstax-introstats |
 | terms | derivative | definition_en | en | 11 | the slope of the tangent line to the graph of f | 8 | openstax-calculus, khan-ap-calc, yt:profleonard, openstax-precalculus, mit-18.01, mit-notes ほか |
 | terms | derivative-at-a-point | definition_en | en | 10 | to the slope of the tangent line at the point | 3 | openstax-calculus, openstax-precalculus, khan-ap-calc |
-| terms | derivative-at-a-point | examples[0].en | en | 10 | of two is the slope of the tangent line there | 1 | khan-ap-calc |
 | terms | derivative-at-a-point | collocations[1].en | en | 8 | the slope of the tangent line at x | 1 | khan-ap-calc |
 | terms | derivative-of-a-sum | definition_en | en | 8 | of a sum is the sum of the | 2 | mit-notes, openstax-calculus |
 | terms | derivative-of-a-vector-function | examples[1].en | en | 9 | the derivative of the vector valued function r t | 1 | openstax-calculus |
@@ -195,6 +191,7 @@
 | terms | diameter | examples[0].en | en | 9 | all the way across the circle through the center | 1 | khan-middle |
 | terms | die | examples[1].en | en | 9 | find the probability of rolling a number greater than | 3 | openstax-algtrig, openstax-precalculus, khan-middle |
 | terms | difference | pitfalls[0] | en | 10 | the difference of a and b a b the difference | 2 | openstax-elemalg, ref:levin-dmoi4 |
+| terms | differential-equation | pitfalls[0] | ja | 20 | 程度の簡単な微分方程式の意味と解法を扱う | 1 | jp:kaisetsu-kou |
 | terms | dilation | pitfalls[2] | en | 10 | ck 12 geometry 7 16 dilation in the coordinate plane | 1 | ref:ck12-geometry |
 | terms | dimension | examples[1].en | en | 8 | the dimension of the null space of a | 1 | mit-18.06 |
 | terms | directed-segment | definition_en | en | 8 | from its initial point to its terminal point | 1 | openstax-calculus |
@@ -227,7 +224,6 @@
 | terms | even-function | definition_en | en | 8 | its graph is symmetric about the y axis | 3 | ref:im-9-12, openstax-algtrig, openstax-precalculus |
 | terms | exist | examples[1].en | en | 8 | there exists a real number x such that | 3 | openstax-calculus, openstax-algtrig, openstax-precalculus |
 | terms | expected-value | examples[1].en | en | 9 | find the expected value of the number of heads | 2 | mit-notes, openstax-introstats |
-| terms | experimental-probability | examples[1].en | en | 8 | the probability that a thumbtack lands point up | 1 | ref:levin-dmoi4 |
 | terms | exponent | pitfalls[0] | en | 8 | x to the fifth x to the fifth | 1 | khan-ap-calc |
 | terms | exponential-model | definition_en | en | 8 | the rate of change is proportional to the | 1 | yt:3blue1brown |
 | terms | exterior-angle-theorem | definition_en | en | 9 | the two interior angles that are not adjacent to | 1 | ref:ck12-geometry |
@@ -244,8 +240,6 @@
 | terms | floor-function | definition_en | en | 9 | the greatest integer less than or equal to x | 1 | openstax-calculus |
 | terms | foil | definition_en | en | 8 | to multiply two binomials multiply the first terms | 1 | openstax-elemalg |
 | terms | foot-of-the-perpendicular | examples[1].en | en | 8 | point p 1 2 3 to the plane | 1 | openstax-calculus |
-| terms | frequency-polygon | definition_en | en | 9 | the midpoints of the tops of the bars of | 1 | openstax-introstats |
-| terms | frequency-polygon | examples[0].en | en | 8 | the midpoints of the tops of the bars | 1 | openstax-introstats |
 | terms | function | examples[1].en | en | 8 | an equation for y in terms of x | 2 | mit-18.01, yt:nancypi |
 | terms | general-angle | examples[1].en | en | 11 | find the angle between 0 and 360 that is coterminal with | 2 | openstax-algtrig, openstax-precalculus |
 | terms | general-form-of-a-circle | examples[1].en | en | 8 | find the center and radius of the circle | 1 | ref:im-9-12 |
@@ -316,6 +310,7 @@
 | terms | let-u-equal | examples[3].en | en | 8 | the sum of the two numbers is 31 | 1 | openstax-algtrig |
 | terms | lhopitals-rule | examples[1].en | en | 9 | use l'h pital's rule to evaluate lim x 0 | 1 | openstax-calculus |
 | terms | limit | pitfalls[1] | en | 8 | the limit as x approaches a of f | 2 | khan-ap-calc, yt:organicchem |
+| terms | limit-at-infinity | mapping_note | ja | 23 | xの値を限りなく大きくしたときのf(x)の極限 | 1 | jp:kaisetsu-kou |
 | terms | limit-definition-of-the-derivative | examples[1].en | en | 8 | use the definition of the derivative to find | 1 | yt:organicchem |
 | terms | limit-laws | examples[1].en | en | 9 | use the limit laws to evaluate lim x 2 | 1 | openstax-calculus |
 | terms | limit-of-a-riemann-sum | examples[1].en | en | 8 | is defined as a limit of riemann sums | 1 | openstax-calculus |
@@ -422,7 +417,6 @@
 | terms | radius | examples[0].en | en | 8 | the diameter so if the diameter is 10 | 1 | yt:organicchem |
 | terms | random-variable | examples[0].en | en | 8 | be the random variable for the number of | 1 | mit-6.042 |
 | terms | random-variable | examples[1].en | en | 8 | the random variable x is the number of | 1 | khan-ap-stats |
-| terms | range-of-data | definition_en | en | 8 | is one way to measure how spread out | 1 | ref:im-6-8 |
 | terms | rank | examples[1].en | en | 9 | the rank of the matrix and the dimension of | 1 | mit-18.06 |
 | terms | ratio-of-areas-of-similar-figures | examples[1].en | en | 9 | 3 find the ratio of the areas of the | 1 | ref:ck12-geometry |
 | terms | ratio-of-areas-of-similar-figures | mapping_note | en | 8 | 5 22 area and perimeter of similar polygons | 1 | ref:ck12-geometry |
@@ -437,7 +431,6 @@
 | terms | region | definition_en | en | 8 | the set of all points x y satisfying | 2 | openstax-algtrig, openstax-precalculus |
 | terms | regression-line | examples[1].en | en | 10 | find the equation of the least squares regression line and | 2 | openstax-introstats, ref:ap-statistics-ced |
 | terms | relation | definition_en | en | 10 | a relation from a set a to a set b | 2 | mit-notes, mit-6.042 |
-| terms | relative-frequency | definition_en | en | 9 | divided by the total number of data values the | 1 | openstax-introstats |
 | terms | remainder-theorem | examples[1].en | en | 9 | use the remainder theorem to find the remainder when | 3 | openstax-intalg, openstax-algtrig, openstax-precalculus |
 | terms | restricted-domain | definition_en | en | 8 | a function that is not one to one | 2 | openstax-algtrig, openstax-precalculus |
 | terms | restricted-domain | examples[1].en | en | 8 | find the inverse of f x x 2 | 2 | openstax-algtrig, openstax-precalculus |
@@ -476,7 +469,6 @@
 | terms | side-angle-inequality | mapping_note | en | 8 | 4 25 comparing angles and sides in triangles | 1 | ref:ck12-geometry |
 | terms | side-angle-inequality | mapping_note | en | 8 | the largest angle is opposite the longest side | 1 | ref:ck12-geometry |
 | terms | side-angle-inequality | definition_en | en | 8 | the largest angle is opposite the longest side | 1 | ref:ck12-geometry |
-| terms | sign-chart | examples[1].en | en | 13 | by the first derivative test f has a local maximum at x 1 | 1 | openstax-calculus |
 | terms | similarity-criteria | mapping_note | ja | 20 | 2組の辺の比とその間の角がそれぞれ等しい | 2 | jp:kaisetsu-chu, jp:wikipedia |
 | terms | similarity-criteria | definition_ja | ja | 20 | 2組の辺の比とその間の角がそれぞれ等しい | 2 | jp:kaisetsu-chu, jp:wikipedia |
 | terms | simplify | definition_en | en | 8 | by removing parentheses combining like terms or reducing | 1 | ref:ck12-algebra |
@@ -537,7 +529,6 @@
 | terms | take-the-partial-derivative | examples[0].en | en | 8 | take the partial derivative with respect to y | 1 | yt:profleonard |
 | terms | tangent-line | examples[1].en | en | 9 | find the equation of the tangent line to the | 3 | openstax-calculus, openstax-precalculus, khan-ap-calc |
 | terms | tangent-plane | examples[1].en | en | 8 | find an equation of the tangent plane to | 1 | openstax-calculus |
-| terms | tangent-problem | definition_en | en | 13 | finding the slope of the tangent line to a curve at a point | 2 | yt:profleonard, openstax-calculus |
 | terms | tessellation | pitfalls[2] | en | 8 | grade 8 9 1 tessellations of the plane | 1 | ref:im-6-8 |
 | terms | test-point | examples[1].en | en | 9 | choose a test point in each interval to determine | 1 | openstax-calculus |
 | terms | the-limit-does-not-exist | examples[1].en | en | 8 | lim x 0 x x does not exist | 1 | openstax-calculus |
