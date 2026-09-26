@@ -1,0 +1,111 @@
+---
+import Base from "../../layouts/Base.astro";
+import { curriculum, JP_SUBJECTS, US_TRACKS, subjectAnchor, SITE_NAME } from "../../lib/data";
+
+const jp = JP_SUBJECTS.map((s) => ({ s, units: curriculum.filter((u) => u.system === "jp" && u.subject === s) })).filter(
+  (g) => g.units.length,
+);
+const known = new Set(US_TRACKS.flatMap(([, , courses]) => courses));
+const us = US_TRACKS.map(([track, label, courses]) => ({
+  track,
+  label,
+  courses: courses
+    .map((c) => ({ c, units: curriculum.filter((u) => u.system === "us" && u.subject === c) }))
+    .filter((g) => g.units.length),
+}));
+// Anything the data has that the fixed order does not name still shows, at the end.
+const rest = curriculum.filter((u) => u.system === "us" && !known.has(u.subject));
+const unshownJp = curriculum.filter((u) => u.system === "jp" && !JP_SUBJECTS.includes(u.subject));
+---
+
+<Base
+  title={`数学のカリキュラム対応表（日本 ⇄ 米国）— ${SITE_NAME}`}
+  description="中1〜数学C と、米国の Pre-Algebra・Algebra 1・Geometry・Algebra 2・Precalculus・Integrated Math・AP・大学初年次の単元の対応。単元を押すと、その単元の用語の英語の一覧。"
+  section="curriculum"
+>
+  <h1 class="page-title">カリキュラム対応表</h1>
+  <p class="lede">
+    日本の単元と米国の科目の単元を並べています（広い画面では左右、スマホでは上下）。単元を押すと、対応する相手側の科目と、その単元の用語（日本語と英語）の一覧が出ます。
+  </p>
+  <ul class="jump">
+    <li><a href="#jp">日本の単元</a></li>
+    <li><a href="#us">米国の科目</a></li>
+  </ul>
+
+  <div class="sides">
+    <section class="side" id="jp" aria-labelledby="jp-h">
+      <h2 id="jp-h">日本</h2>
+      {
+        jp.map((g) => (
+          <>
+            <h3 id={subjectAnchor(g.s)}>{g.s}</h3>
+            <ul>
+              {g.units.map((u) => (
+                <li>
+                  <a href={`/curriculum/${u.id}/`}>
+                    <span>{u.unit}</span>
+                    <span class="n">{u.term_refs.length} 語</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </>
+        ))
+      }
+      {
+        unshownJp.length > 0 && (
+          <ul>
+            {unshownJp.map((u) => (
+              <li>
+                <a href={`/curriculum/${u.id}/`}>
+                  {u.subject} {u.unit}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </section>
+
+    <section class="side" id="us" aria-labelledby="us-h">
+      <h2 id="us-h">米国</h2>
+      {
+        us.map((t) => (
+          <>
+            <p class="track">{t.label}</p>
+            {t.courses.map((g) => (
+              <>
+                <h3 id={subjectAnchor(g.c)} lang="en">
+                  {g.c}
+                </h3>
+                <ul>
+                  {g.units.map((u) => (
+                    <li>
+                      <a href={`/curriculum/${u.id}/`}>
+                        <span lang="en">{u.unit}</span>
+                        <span class="n">{u.term_refs.length} 語</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ))}
+          </>
+        ))
+      }
+      {
+        rest.length > 0 && (
+          <ul>
+            {rest.map((u) => (
+              <li>
+                <a href={`/curriculum/${u.id}/`} lang="en">
+                  {u.subject}: {u.unit}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </section>
+  </div>
+</Base>

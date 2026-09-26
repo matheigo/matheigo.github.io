@@ -1,0 +1,119 @@
+---
+import Base from "../../layouts/Base.astro";
+import En from "../../components/En.astro";
+import HiddenNote from "../../components/HiddenNote.astro";
+import Sources from "../../components/Sources.astro";
+import {
+  curriculum,
+  termById,
+  isUnverified,
+  isExplanatoryTranslation,
+  subjectAnchor,
+  COVERAGE_LABELS,
+  SITE_NAME,
+} from "../../lib/data";
+
+export function getStaticPaths() {
+  return curriculum.map((u) => ({ params: { id: u.id }, props: { unit: u } }));
+}
+
+const { unit: u } = Astro.props;
+const jp = u.system === "jp";
+const byName = new Map(curriculum.filter((x) => x.system === "jp").map((x) => [`${x.subject} ${x.unit}`, x]));
+const terms = u.term_refs.map((r) => termById.get(r)).filter((t) => t !== undefined);
+const hidden = terms.filter(isUnverified).length;
+const heading = jp ? `${u.subject} ${u.unit}` : `${u.subject}: ${u.unit}`;
+const title = jp
+  ? `${u.subject}「${u.unit}」の用語の英語と米国の科目 — ${SITE_NAME}`
+  : `${u.subject} ${u.unit} — 日本の単元との対応と用語 — ${SITE_NAME}`;
+const others = jp
+  ? (u.us_equivalents ?? []).map((e) => ({ name: e.course, href: `/curriculum/#${subjectAnchor(e.course)}`, coverage: e.coverage, note: e.note, en: true }))
+  : (u.jp_equivalents ?? []).map((e) => {
+      const hit = byName.get(e.subject);
+      const subject = e.subject.split(" ")[0];
+      return {
+        name: e.subject,
+        href: hit ? `/curriculum/${hit.id}/` : `/curriculum/#${subjectAnchor(subject)}`,
+        coverage: e.coverage,
+        note: e.note,
+        en: false,
+      };
+    });
+---
+
+<Base
+  title={title}
+  description={`${heading}。${jp ? "米国では" : "日本では"} ${others.map((o) => o.name).join("・") || "—"} に当たる。主な用語: ${terms
+    .slice(0, 6)
+    .map((t) => t.ja.term)
+    .join("、")}`}
+  section="curriculum"
+>
+  <p class="meta"><a href="/curriculum/">カリキュラム対応表</a> ／ <a href={`/curriculum/#${subjectAnchor(u.subject)}`}>{u.subject}</a></p>
+  <h1 class="page-title" lang={jp ? "ja" : "en"}>{heading}</h1>
+  <p lang={jp ? "ja" : "en"}>{u.topics.join(jp ? "・" : " ・ ")}</p>
+
+  <section class="block">
+    <h2>{jp ? "米国の科目" : "日本の単元"}</h2>
+    {
+      others.length ? (
+        <div class="table-scroll">
+          <table class="grid">
+            <thead>
+              <tr>
+                <th scope="col">{jp ? "科目" : "単元"}</th>
+                <th scope="col">対応</th>
+                <th scope="col">注記</th>
+              </tr>
+            </thead>
+            <tbody>
+              {others.map((o) => (
+                <tr>
+                  <td>
+                    <a href={o.href} lang={o.en ? "en" : undefined}>
+                      {o.name}
+                    </a>
+                  </td>
+                  <td>{COVERAGE_LABELS[o.coverage] ?? o.coverage}</td>
+                  <td>{o.note ?? ""}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <p class="empty-note">対応する単元はありません。</p>
+      )
+    }
+  </section>
+
+  <section class="block">
+    <h2>この単元の用語（{terms.length} 語）</h2>
+    <HiddenNote count={hidden} total={terms.length} />
+    <ul class="rows">
+      {
+        terms.map((t) => (
+          <li data-unverified-item={isUnverified(t) ? "" : undefined}>
+            <a href={`/terms/${t.id}/`}>
+              <span class="row-ja">{t.ja.term}</span>
+              <span class="row-sub">{t.ja.reading}</span>
+              <span lang="en">
+                <En text={t.en.term} gloss={isExplanatoryTranslation(t)} />
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  {
+    u.sources?.length ? (
+      <section class="block meta">
+        <h2>出典</h2>
+        <Sources sources={u.sources} />
+        {u.updated && <p>更新: {u.updated}</p>}
+      </section>
+    ) : null
+  }
+</Base>

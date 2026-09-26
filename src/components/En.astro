@@ -13,4 +13,4 @@ interface Props {
 const { text, gloss = false, class: cls = "en" } = Astro.props;
 ---
 
-<span class={cls}>{text}</span>{gloss && <span class="gloss-mark" title={GLOSS_LABEL}>{GLOSS_SHORT}</span>}
+<span class={cls}>{text}</span>{gloss && <span class="gloss-mark" lang="ja" title={GLOSS_LABEL}>{GLOSS_SHORT}</span>}
