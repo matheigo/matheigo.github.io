@@ -1,0 +1,16 @@
+---
+/**
+ * An English headword in a list. Explanatory translations carry the mark
+ * everywhere they appear (PLAN §9 Phase 4 の 2).
+ */
+import { GLOSS_LABEL, GLOSS_SHORT } from "../lib/gloss";
+
+interface Props {
+  text: string;
+  gloss?: boolean;
+  class?: string;
+}
+const { text, gloss = false, class: cls = "en" } = Astro.props;
+---
+
+<span class={cls}>{text}</span>{gloss && <span class="gloss-mark" title={GLOSS_LABEL}>{GLOSS_SHORT}</span>}

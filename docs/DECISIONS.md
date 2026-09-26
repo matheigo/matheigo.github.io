@@ -908,3 +908,12 @@
 - 2026-09-26 | 4 | 1. conditional-probability-subscript-jp に高等学校学習指導要領解説 数学編 理数編（数学A 場合の数と確率、p.94 の P(A∩B) = P(A)P_A(B) = P(B)P_B(A)）を出典に足し、likely にした（解説の本文で P_A(B) を確かめた）。ceiling-brackets（symbols）・quadratic-regression（terms）は draft のまま、written-solution-given-prove の en は具体例の文のまま | ユーザーの判断（phase3-final-report E-2）
 - 2026-09-26 | 4 | 2. NHK 高校講座は資料に使わない（人間が同意して使うこともしない）。外した慣習差 41 行は外したまま。docs/SOURCES.md の NHK の行を書き直した | ユーザーの判断。NHK ONE の利用規約の同意に受信契約の確認・地域の選択が含まれる
 - 2026-09-26 | 4 | 3. Phase 5 の監査の論点に足した（PLAN §9 Phase 5 の 1、audits/phase3-final-report.md F-6）: terms の pitfalls・mapping_note の日本側の主張にも慣習差と同じ基準（日本側を資料で確かめる）を当て、確かめられない文は弱めるか消す。目安の数は 286 語・300 文（正規表現で数えた） | ユーザーの指示。直すのは生成と別のセッション（CLAUDE.md 絶対ルール 8）なので、ここでは書き換えない
+
+## Phase 4 サイト — 2026-09-26
+
+- 2026-09-26 | 4 | フォントは Web フォントを読み込まない（Phase 0 の保留を決めた）。`"Noto Sans JP", "Noto Sans CJK JP", "Hiragino Sans", …, system-ui`。Android の日本語のシステムフォントは Noto Sans CJK JP（Noto Sans JP と同じ字形）、iOS・macOS はヒラギノになる | 日本語の Web フォントは 1 ページで数百 KB になり、Lighthouse（モバイル）の Performance 95 と「初回の検索まで 1 秒」に響く。PLAN の「Noto Sans JP ＋ system-ui」はシステムにある Noto で満たす
+- 2026-09-26 | 4 | CSS はページに埋め込む（astro.config の `build.inlineStylesheets: "always"`）。KaTeX の CSS は数式のあるページだけ（Math.astro で読み込む）。URL は末尾スラッシュ（`trailingSlash: "always"`）に揃え、内部リンクも末尾スラッシュで書く | 1 ページ 1 リクエストで最初の描画を待たせない。GitHub Pages はスラッシュなしの URL をリダイレクトするので、リンクをスラッシュ付きにして往復を 1 回減らす
+- 2026-09-26 | 4 | 未確認（likely）の詳細ページは、トグルが OFF（ビルドの既定）なら本文を隠し「この用語はまだ監査を通っていません」と「未確認の内容を表示する」ボタンだけを出す（ボタンはトグルを ON にする）。ページは noindex。一覧のページは隠した件数を出す | DECISIONS Phase 0（likely は既定 OFF のトグル、未確認のページは noindex）をページ単位に当てた
+- 2026-09-26 | 4 | 用語ページの evidence の表: 行は言い方（話し言葉と書き言葉の件数の和の多い順）、列は話し言葉・書き言葉。その側を数えていない（evidence に spoken ／ written がない）ときは「—」、数えて 0 件なら 0。取得元は evidence.sources を話し言葉・書き言葉に分け、scripts/corpus/sources.ts の名前（fetch.ts から切り出した）で出す。数えた日は evidence.counted。「*」は「…」で出す | PLAN Phase 4 の 2（言い方ごとに話し言葉・書き言葉の件数、取得元、数えた日）
+- 2026-09-26 | 4 | 「説明の訳（英語の用語ではない）」の印は src/lib/gloss.ts の 1 つの規則（mapping none かつ flags に corpus-no-fixed-expression）で決め、用語ページ・関連語・検索結果・単元の一覧・書き出しのすべてがこれを使う（今 14 語）。用語ページは見出しの横にラベル、下に注記、「こう言う」を「英語で説明するなら」に、title を「割合 英語での説明 | ratio to the base amount（説明の訳）」にし、JSON-LD の alternateName に英語を入れない。「今日の10語」には出さない | PLAN Phase 4 の 2。英語の用語として覚えさせない
+- 2026-09-26 | 4 | 用語ページに足したもの: ローマ字（wanakana で読みから。PLAN §6-6）、日米の慣習差（conventions の term_refs の逆引き）、記号・式の読み上げ（symbols の term_ref の逆引き）、出てくる単元（curriculum の term_refs の逆引き）、出典のリンク（Wikipedia の言語間リンクは両方の記事へ）、確認の段階。「間違いを報告」は GitHub の issue テンプレ error-report.md に id と URL を入れて開く | PLAN §7 の用語ページの項目（慣習差・単元リンク・報告ボタン）

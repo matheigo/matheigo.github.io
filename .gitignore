@@ -20,3 +20,8 @@ scripts/ledger/fix_stats.json
 # 学習指導要領の本文（fetch_mext.py で取得。リポジトリには〔用語・記号〕一覧だけ置く）
 scripts/ledger/mext/
 __pycache__/
+
+# Python の書き出し（genanki）用の仮想環境: python3 -m venv .venv && .venv/bin/pip install -r scripts/requirements.txt
+.venv/
+# Lighthouse の計測結果（scripts/perf/measure.ts）
+perf/

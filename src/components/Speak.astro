@@ -6,10 +6,12 @@ interface Props {
 const { text, label = "音声で聞く" } = Astro.props;
 ---
 
-<button class="speak" data-text={text} hidden>🔊 {label}</button>
+<button type="button" class="speak" data-text={text} aria-label={`英語の音声: ${text}`} hidden>
+  <span aria-hidden="true">🔊</span>{label && <span>&nbsp;{label}</span>}
+</button>
 
 <script>
-  // Web Speech API (PLAN 7). If the device has no en-US voice the button stays hidden.
+  // Web Speech API (PLAN 7). If the device has no English voice the buttons stay hidden.
   const synth = window.speechSynthesis;
   if (synth) {
     const reveal = () => {
@@ -26,6 +28,8 @@ const { text, label = "音声で聞く" } = Astro.props;
       synth.cancel();
       const u = new SpeechSynthesisUtterance(btn.dataset.text ?? "");
       u.lang = "en-US";
+      const voice = synth.getVoices().find((v) => v.lang === "en-US");
+      if (voice) u.voice = voice;
       u.rate = 0.92;
       synth.speak(u);
     });

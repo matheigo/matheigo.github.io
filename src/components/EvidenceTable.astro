@@ -1,0 +1,83 @@
+---
+/**
+ * The corpus counts behind the headword (PLAN §9 Phase 4 の 2). Body text never
+ * carries corpus counts (STYLE, CLAUDE.md rule 10), so this table is where a
+ * reader sees them: per expression, spoken and written, the sources that were
+ * searched, and the date they were counted.
+ */
+import { corpusSourceLabel, corpusSourceRegister, type Evidence } from "../lib/data";
+
+interface Props {
+  evidence?: Evidence;
+  /** What was counted: the whole expression (terms, symbols) or its key part (phrases). */
+  unit?: "expression" | "key";
+}
+const { evidence, unit = "expression" } = Astro.props;
+
+const spoken = evidence?.spoken;
+const written = evidence?.written;
+const keys = [...new Set([...Object.keys(spoken ?? {}), ...Object.keys(written ?? {})])];
+const total = (k: string) => (spoken?.[k] ?? 0) + (written?.[k] ?? 0);
+keys.sort((a, b) => total(b) - total(a));
+const show = (k: string) => k.replace(/\*/g, "…");
+const cell = (m: Record<string, number> | undefined, k: string) => (m ? (m[k] ?? 0).toLocaleString("en-US") : "—");
+
+const sources = evidence?.sources ?? [];
+const spokenSources = sources.filter((s) => corpusSourceRegister(s) !== "written").map(corpusSourceLabel);
+const writtenSources = sources.filter((s) => corpusSourceRegister(s) === "written").map(corpusSourceLabel);
+---
+
+{
+  evidence && (
+    <section class="block evidence">
+      <h2>用例コーパスの件数</h2>
+      {keys.length ? (
+        <div class="table-scroll">
+          <table class="grid counts">
+            <thead>
+              <tr>
+                <th scope="col">{unit === "key" ? "言い方（要の部分）" : "言い方"}</th>
+                <th scope="col" class="num">話し言葉</th>
+                <th scope="col" class="num">書き言葉</th>
+              </tr>
+            </thead>
+            <tbody>
+              {keys.map((k) => (
+                <tr>
+                  <th scope="row" class="expr" lang="en">
+                    {show(k)}
+                  </th>
+                  <td class="num">{cell(spoken, k)}</td>
+                  <td class="num">{cell(written, k)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <p>数えた言い方は、どの取得元にも出てきませんでした。</p>
+      )}
+      <p class="meta">
+        米国の講義の書き起こし・字幕（話し言葉）と教科書・講義ノート（書き言葉）で、言い方ごとに数えた回数です。語形変化はまとめ、「…」は 1〜3 語の空き。「—」はその側では数えていないことを示します。
+      </p>
+      <dl class="meta evidence-meta">
+        {spokenSources.length > 0 && (
+          <>
+            <dt>取得元（話し言葉）</dt>
+            <dd>{spokenSources.join(" ／ ")}</dd>
+          </>
+        )}
+        {writtenSources.length > 0 && (
+          <>
+            <dt>取得元（書き言葉）</dt>
+            <dd>{writtenSources.join(" ／ ")}</dd>
+          </>
+        )}
+        <dt>数えた日</dt>
+        <dd>
+          <time datetime={evidence.counted}>{evidence.counted}</time>
+        </dd>
+      </dl>
+    </section>
+  )
+}

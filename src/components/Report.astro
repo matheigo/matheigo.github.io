@@ -1,0 +1,16 @@
+---
+import { REPO } from "../lib/data";
+
+interface Props {
+  id: string;
+  path: string;
+}
+const { id, path } = Astro.props;
+const title = encodeURIComponent("[誤り報告] " + id);
+const body = encodeURIComponent(
+  ["**どの項目ですか**", id + "（https://matheigo.github.io" + path + "）", "", "**何が違いますか**", "", "**米国の教室では実際にどう言いますか**", "", "**出典・根拠があれば**", ""].join("\n"),
+);
+const href = REPO + "/issues/new?template=error-report.md&title=" + title + "&body=" + body;
+---
+
+<p class="report"><a href={href} rel="noopener">間違いを報告する（GitHub）</a></p>

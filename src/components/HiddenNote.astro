@@ -1,0 +1,19 @@
+---
+/** On list pages: says how many unverified rows the toggle is hiding. */
+interface Props {
+  count: number;
+  total?: number;
+}
+const { count, total } = Astro.props;
+---
+
+{
+  count > 0 && (
+    <p class="hidden-note" data-when-hidden>
+      {total !== undefined && count === total
+        ? `監査を通った項目はまだありません。未確認の ${count} 件を隠しています。`
+        : `未確認の ${count} 件を隠しています。`}
+      <button type="button" data-show-unverified>表示する</button>
+    </p>
+  )
+}

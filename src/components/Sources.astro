@@ -1,0 +1,33 @@
+---
+import { sourceView, type Source } from "../lib/data";
+
+interface Props {
+  sources: Source[];
+}
+const views = Astro.props.sources.map(sourceView);
+---
+
+<ul class="sources">
+  {
+    views.map((v) => (
+      <li>
+        {v.href ? (
+          <a href={v.href} rel="noopener">
+            {v.label}
+          </a>
+        ) : (
+          v.label
+        )}
+        {v.links?.map((l) => (
+          <>
+            {" "}
+            <a href={l.href} rel="noopener" lang={l.text.startsWith("ja") ? "ja" : "en"}>
+              {l.text}
+            </a>
+          </>
+        ))}
+        {v.detail && <span class="detail"> — {v.detail}</span>}
+      </li>
+    ))
+  }
+</ul>

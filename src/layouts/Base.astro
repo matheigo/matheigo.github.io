@@ -1,24 +1,47 @@
 ---
 import "../styles/global.css";
-import "katex/dist/katex.min.css";
 
-import { SHOW_UNVERIFIED_BY_DEFAULT } from "../lib/data";
+import { SHOW_UNVERIFIED_BY_DEFAULT, SITE_NAME } from "../lib/data";
 
 interface Props {
   title: string;
   description?: string;
-  /** Set on pages whose content has not passed the audit: adds noindex. */
+  /** Content that has not passed the audit: noindex, and hidden behind the toggle. */
   unverified?: boolean;
+  /** noindex for other reasons (a list page with nothing verified on it, the print page). */
+  noindex?: boolean;
+  /** Path of the OGP image under the site root; the site-wide image when absent. */
+  ogImage?: string;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  /** Which nav item to mark as current. */
+  section?: string;
 }
 
-const { title, unverified = false, description = "日本で学んだ数学を、米国の教室で言える・書ける・聞き取れるようにする日英辞典。" } = Astro.props;
+const DEFAULT_DESCRIPTION =
+  "日本で学んだ数学を、米国の教室で言える・書ける・聞き取れるようにする日英辞典。用語・記号の読み上げ・場面別フレーズ・日米の慣習差・カリキュラム対応表。";
+
+const {
+  title,
+  unverified = false,
+  noindex = false,
+  description = DEFAULT_DESCRIPTION,
+  ogImage = "/og/default.png",
+  jsonLd,
+  section,
+} = Astro.props;
+
+const site = Astro.site ?? new URL("https://matheigo.github.io");
+const canonical = new URL(Astro.url.pathname, site).href;
+const og = new URL(ogImage, site).href;
+const robotsNoindex = unverified || noindex;
+
 const nav = [
-  { href: "/symbols", label: "記号" },
-  { href: "/phrases/office-hours", label: "フレーズ" },
-  { href: "/conventions", label: "慣習差" },
-  { href: "/curriculum", label: "対応表" },
-  { href: "/download", label: "ダウンロード" },
-  { href: "/about", label: "このサイト" },
+  { href: "/symbols/", label: "記号", key: "symbols" },
+  { href: "/phrases/", label: "フレーズ", key: "phrases" },
+  { href: "/conventions/", label: "慣習差", key: "conventions" },
+  { href: "/curriculum/", label: "対応表", key: "curriculum" },
+  { href: "/download/", label: "ダウンロード", key: "download" },
+  { href: "/about/", label: "このサイト", key: "about" },
 ];
 ---
 
@@ -26,50 +49,89 @@ const nav = [
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    {unverified && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={canonical} />
+    {robotsNoindex && <meta name="robots" content="noindex" />}
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fdfdfc" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f131b" media="(prefers-color-scheme: dark)" />
+    <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={og} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap.xml" />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     <script is:inline define:vars={{ fallback: SHOW_UNVERIFIED_BY_DEFAULT }}>
       // Runs before paint so unverified rows never flash into view.
-      const stored = localStorage.getItem("matheigo:show-unverified");
+      let stored = null;
+      try {
+        stored = localStorage.getItem("matheigo:show-unverified");
+      } catch {}
       const show = stored === null ? fallback : stored === "1";
       document.documentElement.dataset.unverified = show ? "show" : "hide";
     </script>
   </head>
   <body>
-    <div class="wrap">
-      <header class="masthead">
+    <a class="skip" href="#main">本文へ</a>
+    <header class="masthead">
+      <div class="bar">
         <a class="home" href="/">MathEigo</a>
-        <nav>
-          {nav.map((n) => <a href={n.href}>{n.label}</a>)}
-          <label class="toggle">
-            <input type="checkbox" id="show-unverified" />
-            未確認の語も表示
-          </label>
-        </nav>
-      </header>
-      <main>
-        <slot />
-      </main>
-      <script is:inline>
-        {
-          const box = document.getElementById("show-unverified");
-          box.checked = document.documentElement.dataset.unverified === "show";
-          box.addEventListener("change", () => {
-            document.documentElement.dataset.unverified = box.checked ? "show" : "hide";
-            localStorage.setItem("matheigo:show-unverified", box.checked ? "1" : "0");
-            document.dispatchEvent(new CustomEvent("matheigo:unverified-changed"));
-          });
-        }
-      </script>
-      <footer class="site">
-        データは CC0 1.0、コードは MIT。誤りを見つけたら <a href="/about">報告</a> してください。
-      </footer>
-    </div>
+        <a class="search-link" href="/#q" aria-label="検索">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"
+            ><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"></circle><path
+              d="M15.5 15.5 21 21"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"></path></svg
+          >
+          <span>検索</span>
+        </a>
+      </div>
+      <nav aria-label="サイト内">
+        {nav.map((n) => <a href={n.href} aria-current={section === n.key ? "page" : undefined}>{n.label}</a>)}
+      </nav>
+      <label class="toggle">
+        <input type="checkbox" id="show-unverified" />
+        <span>未確認の語も表示</span>
+      </label>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site">
+      <p>
+        データは <a href="/download/">CC0 1.0</a>、コードは MIT。誤りを見つけたら
+        <a href={`https://github.com/matheigo/matheigo.github.io/issues/new?template=error-report.md`}>報告</a>
+        してください。
+      </p>
+    </footer>
+    <script is:inline>
+      {
+        const root = document.documentElement;
+        const box = document.getElementById("show-unverified");
+        const set = (show) => {
+          root.dataset.unverified = show ? "show" : "hide";
+          box.checked = show;
+          try {
+            localStorage.setItem("matheigo:show-unverified", show ? "1" : "0");
+          } catch {}
+          document.dispatchEvent(new CustomEvent("matheigo:unverified-changed"));
+        };
+        box.checked = root.dataset.unverified === "show";
+        box.addEventListener("change", () => set(box.checked));
+        document.addEventListener("click", (e) => {
+          if (e.target instanceof Element && e.target.closest("[data-show-unverified]")) set(true);
+        });
+      }
+    </script>
   </body>
 </html>
