@@ -47,7 +47,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の教科書の −1 ≦ x ≦ 3 は、英語では ≤ を使って −1 ≤ x ≤ 3 と書く。区間記法 [−1, 3] で書くこともある（エントリ interval）。",
+    "日本の −1 ≦ x ≦ 3（共通テスト・センター試験の問題文も ≦ を使う）は、英語では ≤ を使って −1 ≤ x ≤ 3 と書く。区間記法 [−1, 3] で書くこともある（エントリ interval）。",
     "range は統計では「範囲」（最大値 − 最小値）の意味でも使う。関数の値域とは別の意味。",
     "domain を「領域」と訳さない。不等式が表す平面の「領域」は region と言う。"
   ],
@@ -65,6 +65,11 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "問題文の不等号 ≦"
     }
   ],
   "confidence": "likely",
@@ -73,7 +78,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "domain and range": 14

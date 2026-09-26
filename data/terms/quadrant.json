@@ -28,7 +28,7 @@
     ]
   },
   "definition_ja": "座標平面を x 軸と y 軸で 4 つに分けた部分のそれぞれ。x 軸・y 軸の上の点は、どの象限にも入らない。",
-  "definition_en": "One of the four regions that the x-axis and the y-axis divide the coordinate plane into. Points on the axes are not in any quadrant.",
+  "definition_en": "One of the four regions of the coordinate plane cut out by the two axes. A point on an axis is in no quadrant.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -45,7 +45,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の教科書は第 1 象限〜第 4 象限と書くが、米国の教科書（OpenStax）はローマ数字で Quadrant I〜IV と書く（Quadrant III は quadrant three と読む）。授業では the first quadrant のように序数で言うことも、quadrant one と数で言うこともある（Khan Academy は序数、YouTube の解説は数が多い）。番号の付け方は同じで、第 1 象限から反時計回り。",
+    "日本の「第 1 象限」〜「第 4 象限」（センター試験の問題文・学習指導要領解説も第 1 象限と書く）に対し、米国の教科書（OpenStax）はローマ数字で Quadrant I〜IV と書く（Quadrant III は quadrant three と読む）。授業では the first quadrant のように序数で言うことも、quadrant one と数で言うこともある（Khan Academy は序数、YouTube の解説は数が多い）。番号の付け方は同じで、第 1 象限から反時計回り。",
     "x 軸・y 軸の上の点（(4, 0)、(0, −3)、原点など）はどの象限にも入らない。",
     "quadrantal angle（エントリ quadrantal-angle）は「座標軸上の角」で、象限の中にある角のことではない。"
   ],
@@ -65,6 +65,11 @@
     {
       "type": "textbook",
       "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター試験 平成29年度 本試験 数学（問題）",
+      "note": "問題文の「第 1 象限」"
     }
   ],
   "confidence": "likely",
@@ -73,7 +78,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "quadrant": 475

@@ -28,8 +28,8 @@
       "Precalculus"
     ]
   },
-  "definition_ja": "反比例 y = a/x のグラフのように、2 つに分かれた曲線が組になった形の曲線。数学 C では、2 つの定点（焦点）からの距離の差が一定である点の集まりとして定める。",
-  "definition_en": "A curve made of two separate branches, like the graph of y = a/x. In Precalculus, it is the set of all points for which the difference of the distances to two fixed points (the foci) is constant.",
+  "definition_ja": "反比例 y = a/x のグラフのように、2 つに分かれた曲線が組になった形の曲線。二次曲線としては、2 つの定点（焦点）からの距離の差が一定である点の集まり（日本語版 Wikipedia「双曲線」。学習指導要領解説（数学C）は双曲線を二次式で表される曲線として扱う）。",
+  "definition_en": "A curve with two separate branches, like the graph of y = a/x. In Precalculus it is defined by two fixed points (the foci): a point is on the hyperbola when the difference of its distances to the foci is constant.",
   "latex": "\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1",
   "spoken_en": "x squared over a squared minus y squared over b squared equals one",
   "examples": [
@@ -69,6 +69,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「双曲線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8F%8C%E6%9B%B2%E7%B7%9A",
+      "note": "2 焦点からの距離の差 |PF − PF′| は 2a"
     }
   ],
   "confidence": "likely",
@@ -77,7 +83,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "hyperbola": 68

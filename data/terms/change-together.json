@@ -16,7 +16,7 @@
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。「ともなって変わる」は日本の中 1 で関数を導入するときの言い方で、英語では y changes as x changes、y depends on x、as x increases, y increases のように、文で言い表す。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。「伴って変わる」は中学校学習指導要領解説が関数を導入する言い方（「伴って変わる二つの数量」）で、英語では y changes as x changes、y depends on x、as x increases, y increases のように、文で言い表す。",
   "domains": [
     "functions"
   ],
@@ -62,6 +62,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "C 関数「伴って変わる二つの数量」"
     }
   ],
   "confidence": "likely",

@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の中学では、式の中の x や a を「文字」と呼ぶことが多い。英語では letter ではなく variable と言う（x is a variable）ので、「文字」も「変数」も英語では variable になる。",
+  "mapping_note": "中学校学習指導要領解説は、式の中の x や a を「文字」と呼ぶ（「文字を用いた式」）。英語では letter ではなく variable と言う（x is a variable）ので、「文字」も「変数」も英語では variable になる。",
   "domains": [
     "algebra",
     "functions"
@@ -70,6 +70,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 1 学年 A 数と式「文字を用いた式」"
     }
   ],
   "confidence": "likely",
@@ -78,7 +84,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "!random !independent !dependent !response !explanatory !categorical !quantitative !lurking !confounding !dummy !free !basic !indicator variable": 1586
