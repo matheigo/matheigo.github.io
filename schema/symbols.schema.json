@@ -23,6 +23,11 @@
     "name_en": { "type": "string", "minLength": 1 },
     "name_ja": { "type": "string", "minLength": 1 },
     "term_ref": { "anyOf": [{ "$ref": "_common.schema.json#/$defs/id" }, { "type": "null" }] },
+    "related": {
+      "type": "array",
+      "items": { "$ref": "_common.schema.json#/$defs/id" },
+      "description": "symbols ↔ conventions: the reading and writing of a notation live in symbols, the JP/US difference in conventions; each names the other here (DECISIONS, Phase 3 記号の前の修正 2)."
+    },
     "level": { "$ref": "_common.schema.json#/$defs/level" },
     "notes": { "type": "array", "items": { "type": "string" } },
     "tts_text": { "type": "string" },

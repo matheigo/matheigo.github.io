@@ -1,321 +1,268 @@
-id,situation,ja,en,level,source
-dont-forget-the-plus-c,class-listening,積分定数の C を忘れないでね。,Don't forget the plus C. ／ Don't forget your constant of integration. ／ Remember to add C.,数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (4d47e6f:data/terms/dont-forget-the-plus-c.json)
-top-minus-bottom,class-listening,上の曲線から下の曲線を引きます。,It's top minus bottom. ／ Subtract the lower curve from the upper curve.,数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (4d47e6f:data/terms/top-minus-bottom.json)
-area-is-never-negative,class-listening,面積は負にはなりません。負になったらどこかで間違えています。,"Area is never negative. ／ If you get a negative area, something went wrong.",数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (4d47e6f:data/terms/area-is-never-negative.json)
-check-by-differentiating,class-listening,微分して確かめられます。,You can always check by differentiating. ／ Take the derivative of your answer — you should get back the integrand.,数III|AP Calculus BC|Calculus II,ledger/phrases-candidates.csv (4d47e6f:data/terms/check-by-differentiating.json)
-add-up-thin-disks,class-listening,薄い円板を足し合わせるイメージです。,We're adding up a bunch of thin disks. ／ Think of it as slicing the solid into thin disks and adding up their volumes.,数III|AP Calculus BC|Calculus II,ledger/phrases-candidates.csv (4d47e6f:data/terms/add-up-thin-disks.json)
-find-the-intersections-to-get-the-limits,class-listening,まず交点を求めて、それを積分区間にします。,First find where the curves intersect — those are your limits of integration. ／ Set them equal to get the bounds.,数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (4d47e6f:data/terms/find-the-intersections-to-get-the-limits.json)
-split-the-integral,class-listening,ここで積分区間を分けます。,We need to split the integral here. ／ Break it into two integrals at x = 0.,数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (4d47e6f:data/terms/split-the-integral.json)
-write-as-a-limit-of-a-sum,class-listening,和の極限の形に書き直しましょう。,Let's write this as the limit of a sum. ／ Write it as the limit of a Riemann sum.,数III|AP Calculus BC|Calculus II,ledger/phrases-candidates.csv (4d47e6f:data/terms/write-as-a-limit-of-a-sum.json)
-integrate-the-inequality,written-solution,不等式の各辺を 0 から 1 まで積分すると、,"Integrating each side of the inequality from 0 to 1, we get ／ Integrate both sides of the inequality.",数III|AP Calculus BC|Calculus II,ledger/phrases-candidates.csv (4d47e6f:data/terms/integrate-the-inequality.json)
-the-area-of-the-region-bounded-by,exam,曲線 y = x² と直線 y = x + 2 で囲まれた部分の面積を求めよ。,Find the area of the region bounded by y = x^2 and y = x + 2. ／ Find the area of the region enclosed by the two curves.,数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (4d47e6f:data/terms/the-area-of-the-region-bounded-by.json)
-enclosed-region,exam,囲まれた部分,the region bounded by … ／ the enclosed region ／ the shaded region,数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (4d47e6f:data/terms/enclosed-region.json)
-find-the-area-by-integration,class-listening,面積は積分で求めます。,We'll find the area by integrating. ／ Set up an integral for the area.,数III|AP Calculus BC|Calculus II,ledger/phrases-candidates.csv (4d47e6f:data/terms/find-the-area-by-integration.json)
-integrate-by-parts-repeatedly,class-listening,部分積分を 2 回やることになります。,You'll have to integrate by parts twice. ／ Just keep integrating by parts.,数III|AP Calculus BC|Calculus II,ledger/phrases-candidates.csv (4d47e6f:data/terms/integrate-by-parts-repeatedly.json)
-let-h-go-to-zero,class-listening,ここで h を 0 に近づけます。,Now let h go to zero. ／ Take the limit as h approaches 0.,数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-bibun-no-kangae)
-the-tangent-line-passes-through,written-solution,"接線が点 (0, −1) を通るので、","Since the tangent line passes through (0, −1), … ／ The tangent line goes through (0, −1).",数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-bibun-no-kangae)
-increasing-on-all-reals,written-solution,f(x) はすべての実数で増加する。,"f is increasing on (−∞, ∞). ／ f is increasing for all real numbers x. ／ f is increasing everywhere.",数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-bibun-no-kangae)
-converges-to-zero,written-solution,よって、この数列は 0 に収束する。,Therefore the sequence converges to 0. ／ So it goes to zero.,数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-kyokugen)
-divide-numerator-and-denominator-by-n,class-listening,分母と分子を n で割ります。,Divide the numerator and denominator by n. ／ Divide top and bottom by n.,数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-kyokugen)
-rationalize-and-take-the-limit,class-listening,有理化してから極限をとります。,"Rationalize, then take the limit. ／ Multiply by the conjugate and then take the limit.",数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-kyokugen)
-the-function-is-continuous,written-solution,f(x) は x = a で連続である。,"f is continuous at x = a. ／ f is continuous on [a, b].",数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-kyokugen)
-the-one-sided-limits-agree,written-solution,左側極限と右側極限が一致するので、,"Since the left-hand and right-hand limits are equal, … ／ The one-sided limits agree.",数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-kyokugen)
-take-the-log-and-differentiate,class-listening,両辺の対数をとってから微分します。,Take the log of both sides and differentiate. ／ Use logarithmic differentiation.,数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-bibun)
-differentiate-the-outside-first,class-listening,外側から微分します。,Differentiate the outside first. ／ Take the derivative of the outside and leave the inside alone.,数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-bibun)
-multiply-by-the-derivative-of-the-inside,class-listening,そのあと内側の微分を掛けます。,Then multiply by the derivative of the inside. ／ … times the derivative of the inside.,数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-bibun)
-f-double-prime-is-positive,written-solution,f''(x) > 0 なので、グラフは下に凸である。,"Since f''(x) > 0, the graph of f is concave up. ／ f double prime is positive.",数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-bibun)
-changes-from-increasing-to-decreasing,written-solution,f(x) は x = 2 で増加から減少に変わるので、極大値をとる。,"f changes from increasing to decreasing at x = 2, so f has a relative maximum there. ／ f′ changes from positive to negative at x = 2.",数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-bibun)
-the-derivative-is-zero,written-solution,x = a で微分係数が 0 になる。,f′(a) = 0. ／ The derivative is zero at x = a.,数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-bibun)
-the-tangent-line-is-horizontal,class-listening,ここで接線が水平になります。,The tangent line is horizontal here. ／ There's a horizontal tangent at x = 1.,数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-bibun)
-continuous-but-not-differentiable,class-listening,連続だけど微分可能ではない、という例です。,"It's continuous but not differentiable at 0. ／ Think of |x|: it's continuous, but there's a corner.",数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-bibun)
-has-no-local-extrema,written-solution,f(x) は極値をもたない。,f has no local extrema. ／ f has no relative extrema.,数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-bibun)
-the-limit-exists,written-solution,よって極限が存在する。,So the limit exists. ／ The limit does not exist.,数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-bibun-no-kangae)
-assume-it-holds-for-n-k,written-solution,n = k のとき成り立つと仮定する。,Assume the statement holds for n = k. ／ Suppose it is true for n = k.,数B|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-b-suuretsu)
-it-also-holds-for-n-k-1,written-solution,よって n = k + 1 のときも成り立つ。,Then it also holds for n = k + 1. ／ So it's true for n = k + 1 as well.,数B|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-b-suuretsu)
-the-common-ratio-is-less-than-1,written-solution,公比の絶対値が 1 より小さいので、この級数は収束する。,"Since |r| < 1, the series converges. ／ The common ratio is less than 1 in absolute value.",数B|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-b-suuretsu)
-multiply-by-r-and-subtract,class-listening,両辺に r を掛けて、もとの式から引きます。,"Multiply both sides by r and subtract. ／ Multiply by r, then subtract one equation from the other.",数B|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-b-suuretsu)
-find-the-pattern,class-listening,規則性を見つけましょう。,Do you see a pattern? ／ Let's find the pattern.,数B|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-b-suuretsu)
-squares-are-nonnegative,written-solution,実数の 2 乗は 0 以上なので、,"Since the square of a real number is nonnegative, … ／ A square is never negative.",数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-shiki-to-shoumei)
-take-the-difference-of-the-two-sides,class-listening,両辺の差をとって考えます。,Look at the difference of the two sides. ／ Subtract the right side from the left side.,数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-shiki-to-shoumei)
-left-side-minus-right-side,written-solution,（左辺）−（右辺）= …,LHS − RHS = … ／ (left side) − (right side) = …,数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-shiki-to-shoumei)
-form-the-difference,explaining-solution,差をとって、それが 0 以上になることを示しました。,I took the difference and showed it's nonnegative. ／ I looked at left side minus right side.,数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-shiki-to-shoumei)
-the-equation-holds,written-solution,よって等式が成り立つ。,Hence the equation holds. ／ So the identity is true.,数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-shiki-to-shoumei)
-what-we-want-to-show,written-solution,示すべき式は …… である。,We want to show that … ／ We need to show that …,数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-shiki-to-shoumei)
-involves-imaginary-numbers,class-listening,解に虚数が出てきます。,The solutions involve imaginary numbers. ／ You get complex solutions. ／ There are no real solutions.,数II|Algebra 2|Integrated Math 3,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-fukusosuu-to-houteishiki)
-one-of-the-solutions-is,exam,方程式の解の 1 つが 1 + i であるとき、,"Given that one of the solutions is 1 + i, … ／ If 1 + i is a solution of the equation, …",数II|Algebra 2|Integrated Math 3,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-fukusosuu-to-houteishiki)
-the-other-solutions,exam,残りの解を求めよ。,Find the other solutions. ／ Find the remaining roots.,数II|Algebra 2|Integrated Math 3,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-fukusosuu-to-houteishiki)
-as-p-moves,exam,点 P が円周上を動くとき、,"As P moves along the circle, … ／ As P varies, …",数II|Geometry|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-zukei-to-houteishiki)
-conversely,written-solution,逆に、,"Conversely, … ／ Now for the other direction, …",数II|Geometry|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-zukei-to-houteishiki)
-relation-between-x-and-y,exam,x と y の関係式を求めよ。,Find an equation relating x and y. ／ Find the relationship between x and y.,数II|Geometry|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-zukei-to-houteishiki)
-rewrite-the-expression,class-listening,式を変形します。,Let's rewrite the expression. ／ Rewrite it as …,数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-sankaku-kansuu)
-on-the-interval-from-0-to-2,exam,0 ≦ θ < 2π の範囲で解け。,"Solve for 0 ≤ θ < 2π. ／ Find all solutions in the interval [0, 2π).",数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-sankaku-kansuu)
-the-value-of-sine-theta,exam,sin θ の値を求めよ。,Find the value of sin θ. ／ Find sin θ.,数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-sankaku-kansuu)
-the-base-is-greater-than-1,written-solution,底が 1 より大きいので、不等号の向きは変わらない。,"Since the base is greater than 1, the direction of the inequality stays the same. ／ Since the base is greater than 1, the function is increasing.",数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-shisuu-taisuu)
-the-domain-is-the-positive-reals,written-solution,定義域は正の実数全体（x > 0）である。,"The domain is all positive real numbers. ／ The domain is (0, ∞).",数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-shisuu-taisuu)
-split-at-the-median,class-listening,中央値でデータを 2 つに分けます。,Split the data at the median. ／ The median splits the data into a lower half and an upper half.,中2|Algebra 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-2-data-no-katsuyou)
-evaluate-critically,class-listening,この結論が正しいか、批判的に考えてみましょう。,Does this conclusion hold up? ／ Critique the reasoning.,中2|Algebra 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-2-data-no-katsuyou)
-organize-the-data,class-listening,まずデータを整理しましょう。,Let's organize the data first. ／ Put the data in order.,数I|Algebra 1|AP Statistics,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-1-data-no-bunseki)
-probabilities-sum-to-1,class-listening,確率を全部足すと 1 になります。,The probabilities have to add up to 1. ／ The probabilities sum to 1.,数B|AP Statistics|Intro Statistics,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-b-toukei-teki-na-suisoku)
-using-real-numbers-s-and-t,written-solution,"実数 s, t を用いて OP = s a + t b と表せる。","We can write OP = s a + t b for some real numbers s and t. ／ …, where s and t are real numbers.",数C|Precalculus|Calculus III,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-c-vector)
-let-p-be-the-position-vector-of-p,written-solution,点 P の位置ベクトルを p とする。,Let p be the position vector of P. ／ Let p = OP.,数C|Precalculus|Calculus III,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-c-vector)
-express-as-a-vector,exam,"AB を a, b で表せ。",Express vector AB in terms of a and b. ／ Write AB as a vector.,数C|Precalculus|Calculus III,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-c-vector)
-organize-in-a-table,class-listening,表にまとめてみましょう。,Let's organize this in a table. ／ Make a table.,数C|Precalculus|Linear Algebra,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-c-hyougen-no-kufuu)
-represent-with-a-graph,class-listening,グラフで表してみましょう。,Let's represent this with a graph. ／ Graph it and see what it looks like.,数C|Precalculus|Linear Algebra,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-c-hyougen-no-kufuu)
-checking-conditions,written-solution,条件の確認,"Check conditions: Random, 10%, Large Counts. ／ All conditions are met.",数B|AP Statistics,ledger/phrases-candidates.csv (from 空; unit us-ap-statistics-3-inference-for-proportions)
-where,written-solution,ただし a > 0 とする。,"…, where a > 0. ／ Assume a > 0.",数I|Algebra 1|Algebra 2,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-1-kazu-to-shiki)
-clearly,written-solution,明らかに、,"Clearly, … ／ It is clear that …",数I|Geometry|Discrete Math,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-1-shuugou-to-meidai)
-in-general,written-solution,一般に、,"In general, … ／ This isn't true in general.",数I|Geometry|Discrete Math,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-1-shuugou-to-meidai)
-assuming-leads-to-a-contradiction,written-solution,〜と仮定すると矛盾が生じる。,"Assuming …, we get a contradiction. ／ This contradicts … ／ …, which is a contradiction.",数I|Geometry|Discrete Math,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-1-shuugou-to-meidai)
-take-positive-values,written-solution,f(x) は常に正の値をとる。,f(x) is always positive. ／ f takes only positive values.,数I|Algebra 1|Algebra 2,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-1-niji-kansuu)
-for-the-angle-theta,class-listening,角 θ に対する辺（向かい側の辺）です。,This is the side opposite θ. ／ The side opposite the angle θ.,数I|Geometry|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-1-zukei-to-keiryou)
-point-outside-the-circle,exam,円の外部の点 P から引いた 2 本の接線,"a point outside the circle ／ From a point P outside the circle, two tangent lines are drawn.",数A|Geometry,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-a-zukei-no-seishitsu)
-apply-the-theorem,class-listening,ここで定理が使えます。,Now we can apply the theorem. ／ Now use the theorem.,数A|Geometry,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-a-zukei-no-seishitsu)
-there-are-infinitely-many,written-solution,解は無数に存在する。,There are infinitely many solutions. ／ There are infinitely many.,数A|Discrete Math,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-a-suugaku-to-ningen-no-katsudou)
-by-definition,written-solution,定義より、,"By definition, … ／ By the definition of the derivative, …",大学|Geometry,ledger/phrases-candidates.csv (from 空; unit us-geometry-reasoning-and-proof)
-check-the-sign,class-listening,符号を調べましょう。,Check the sign. ／ Let's check the sign of f′ on each interval.,数I|Algebra 1|Algebra 2,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-1-niji-kansuu)
-omit,class-listening,掛け算の記号 × は省略します。,We drop the multiplication sign. ／ You can leave out the times sign.,中1|Pre-Algebra|Algebra 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-1-moji-to-shiki)
-in-order,class-listening,左から順に計算します。,Go in order from left to right. ／ Work left to right.,中1|Pre-Algebra|Algebra 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-1-moji-to-shiki)
-by-hypothesis,written-solution,仮定より、,"By hypothesis, … ／ Since AB = CD is given, … ／ Given",中2|Geometry|Integrated Math 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-2-heikou-to-goudou)
-since,written-solution,〜より（〜なので）、,"Since …, … ／ Because …, … ／ By …, …",中2|Geometry|Integrated Math 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-2-heikou-to-goudou)
-therefore,written-solution,よって、,"Therefore, … ／ Thus, … ／ So …",中2|Geometry|Integrated Math 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-2-heikou-to-goudou)
-hence,written-solution,ゆえに、,Hence … ／ Thus …,中2|Geometry|Integrated Math 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-2-heikou-to-goudou)
-are-equal-respectively,written-solution,3 組の辺がそれぞれ等しい。,"The three pairs of corresponding sides are equal, respectively. ／ AB = DE, BC = EF, and CA = FD.",中2|Geometry|Integrated Math 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-2-heikou-to-goudou)
-divide-the-figure,class-listening,図形をいくつかに分けて考えます。,Break the figure into smaller shapes. ／ Divide the figure into a rectangle and a triangle.,中2|Geometry,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-2-sankakkei-to-shikakkei)
-square-and-add,class-listening,両方の式を 2 乗して足します。,Square both equations and add them. ／ Square and add.,中3|Geometry|Integrated Math 2,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-3-sanpeihou)
-class-asking-repeat,class-asking,すみません、最後のところをもう一度お願いできますか。,"Sorry, could you say that last part again? ／ Could you repeat the last step? ／ Sorry, I missed that.",all,data/phrases
-exam-clarify-instruction,exam,ここでの simplify は、分母を有理化しろという意味ですか。,"Does ""simplify"" here mean I should rationalize the denominator? ／ Do you want the answer in exact form or as a decimal? ／ Should I show all the steps for this one?",all,data/phrases
-explaining-solution-first-step,explaining-solution,まず 2 つの式を等号で結んで、x について解いて、最後に答えを確かめました。,"First I set the two expressions equal, then I solved for x and checked the answer. ／ What I did was set them equal and solve for x. ／ I started by setting the two expressions equal to each other.",all,data/phrases
-office-hours-stuck-at-step,office-hours,ここまでは分かるのですが、この行から次の行への変形が分かりません。,"I follow it up to here, but I don't see how you get from this line to the next one. ／ I'm lost at this step. ／ Could you walk me through this step?",大学,data/phrases
-written-solution-therefore,written-solution,よって x=3 が唯一の解である。,Therefore x = 3 is the only solution. ／ Hence x = 3 is the only solution. ／ So x = 3 is the only solution.,all,data/phrases
-class-listening-does-that-make-sense,class-listening,ここまで分かりましたか。次に進む前に質問は？,Does that make sense? ／ Any questions before we move on? ／ Everybody good?,all,editorial
-class-listening-take-out-a-sheet-of-paper,class-listening,紙を 1 枚出してください（小テストをします）。,Take out a sheet of paper. ／ Clear your desks — pop quiz.,all,editorial
-class-listening-turn-to-page,class-listening,教科書の 112 ページを開いてください。,Turn to page 112. ／ Open your books to page 112.,all,editorial
-class-listening-homework-is,class-listening,宿題は 3.2 節の 1 番から 25 番までの奇数番です。,"For homework, do section 3.2, 1 through 25, odds. ／ Tonight's homework is 3.2, odd problems 1 to 25.",all,editorial
-class-listening-answers-in-the-back,class-listening,奇数番の答えは教科書の巻末に載っています。,The answers to the odd-numbered problems are in the back of the book. ／ Check your answers in the back.,all,editorial
-class-listening-its-due,class-listening,提出は金曜日です。,It's due Friday. ／ Turn it in at the start of class on Friday.,all,editorial
-class-listening-pass-your-papers-forward,class-listening,答案を前に回してください。,Pass your papers forward. ／ Pass them up to the front.,all,editorial
-class-listening-try-this-one,class-listening,この問題を自分で解いてみてください。数分とります。,Go ahead and try this one — I'll give you a couple of minutes. ／ You guys try this one.,all,editorial
-class-listening-work-with-a-partner,class-listening,隣の人と答えを比べてみて。,Turn to your neighbor and compare answers. ／ Work with a partner.,all,editorial
-class-listening-who-wants-to-come-up,class-listening,誰か前に出て解いてくれる人？,Who wants to come up and do this one? ／ Can I get a volunteer?,all,editorial
-class-listening-write-this-down,class-listening,これはノートに書いておいてください。,Write this down. ／ You'll want this in your notes.,all,editorial
-class-listening-this-will-be-on-the-test,class-listening,ここはテストに出ます。,This will be on the test. ／ Know this for the exam.,all,editorial
-class-listening-you-dont-need-to-memorize,class-listening,この公式は覚えなくていいです。公式集に載っています。,You don't need to memorize this — it's on the formula sheet. ／ You'll be given this formula.,all,editorial
-class-listening-common-mistake,class-listening,ここはよくある間違いです。,This is a really common mistake. ／ Watch out — this is where people lose points.,all,editorial
-class-listening-notice-that,class-listening,ここで〜に注目してください。,Notice that … ／ The key thing to see here is …,all,editorial
-class-listening-recall-that,class-listening,前にやった〜を思い出してください。,Recall that … ／ Remember from last week …,all,editorial
-class-listening-whats-the-next-step,class-listening,次は何をすればいいですか。,What's the next step? ／ What do I do now? Anybody?,all,editorial
-class-listening-plug-it-back-in,class-listening,元の式に代入して確かめましょう。,Let's plug it back in to check. ／ Always check your answer.,all,editorial
-class-listening-oops-good-catch,class-listening,あ、ここ間違えました。指摘ありがとう。,"Oops, that should be a minus. Good catch. ／ Hang on, let me fix that.",all,editorial
-class-listening-well-come-back-to-this,class-listening,これは後でまたやります。,We'll come back to this later. ／ Hold that thought.,all,editorial
-class-listening-extra-credit,class-listening,これは加点（エクストラクレジット）の問題です。,This one's for extra credit. ／ Bonus question.,all,editorial
-class-listening-lowest-quiz-dropped,class-listening,小テストは一番低い点を成績から除きます。,I'll drop your lowest quiz score. ／ Your lowest quiz grade gets dropped.,all,editorial
-class-listening-final-is-cumulative,class-listening,期末試験は全範囲から出ます。,The final is cumulative. ／ The final covers everything.,all,editorial
-class-listening-office-hours-are,class-listening,オフィスアワーは火曜の 2 時から 4 時です。,My office hours are Tuesdays from 2 to 4. ／ Come see me in office hours.,大学,editorial
-class-listening-raise-your-hand-if,class-listening,5 になった人は手を挙げて。,Raise your hand if you got 5. ／ Thumbs up if you got 5.,all,editorial
-class-listening-lets-go-over-the-homework,class-listening,宿題の答え合わせをしましょう。,Let's go over the homework. ／ Any questions on the homework?,all,editorial
-class-listening-what-do-you-notice,class-listening,何か気づいたことはありますか。,What do you notice? ／ What do you think happens if we make x bigger?,all,editorial
-class-listening-same-idea-as-before,class-listening,これはさっきと同じ考え方です。,This is the same idea as before. ／ It's just like the last problem.,all,editorial
-class-listening-warm-up,class-listening,最初に復習の問題を 1 問やりましょう。,Let's start with a quick warm-up. ／ Do the warm-up on the board.,中1|中2|中3|Pre-Algebra|Algebra 1|Geometry|Algebra 2,editorial
-class-listening-in-your-own-words,class-listening,自分の言葉で説明してみて。,Explain it in your own words. ／ Can you say why that works?,all,editorial
-class-listening-sanity-check,class-listening,その答え、大きさとして妥当ですか。,Does that answer make sense? ／ Let's do a quick sanity check.,all,editorial
-class-asking-where-did-that-come-from,class-asking,その 2 はどこから出てきたんですか。,Where did the 2 come from? ／ How did you get from this line to that one?,all,editorial
-class-asking-why-can-we,class-asking,なぜここで x で割っていいんですか。,Why are we allowed to divide by x here? ／ Why does that work?,all,editorial
-class-asking-how-do-you-read-this,class-asking,この記号は何と読むんですか。,How do you read this symbol? ／ How do you say this out loud? ／ What does this symbol mean?,all,editorial
-class-asking-is-there-a-name-for-this,class-asking,これは英語で何と言いますか。,Is there a name for this? ／ What do you call this in English?,all,editorial
-class-asking-difference-between,class-asking,極大値と最大値の違いは何ですか。,What's the difference between a local max and an absolute max? ／ How is this different from …?,all,editorial
-class-asking-can-i-write-it-this-way,class-asking,こう書いても大丈夫ですか。,Is it okay if I write it like this? ／ Would it also be correct to write …?,all,editorial
-class-asking-does-it-still-work-if,class-asking,x が負のときでもこれは使えますか。,Does this still work if x is negative? ／ What if x is negative?,all,editorial
-class-asking-typo-on-the-board,class-asking,すみません、黒板のそこ、マイナスではないですか。,"Sorry, I think there's a typo — should that be a minus? ／ Is that supposed to be x squared?",all,editorial
-class-asking-go-back,class-asking,前のスライドに戻ってもらえますか。,Could you go back to the previous slide? ／ Can you scroll back up?,all,editorial
-class-asking-slow-down,class-asking,もう少しゆっくりお願いできますか。,Could you go over that a little more slowly? ／ Could you slow down a bit?,all,editorial
-class-asking-i-got-a-different-answer,class-asking,8 になったんですが、どこか間違えていますか。,I got 8 — did I do something wrong? ／ I got a different answer.,all,editorial
-class-asking-which-problems,class-asking,宿題はどの問題ですか。,Which problems are for homework? ／ Was that odds only?,all,editorial
-class-asking-when-is-it-due,class-asking,提出はいつまでですか。,When is it due? ／ Is that due Friday or Monday?,all,editorial
-class-asking-will-this-be-on-the-test,class-asking,これはテストに出ますか。,Will this be on the test? ／ Do we need to know this for the exam?,all,editorial
-class-asking-do-we-need-to-memorize,class-asking,この公式は覚える必要がありますか。,Do we need to memorize this formula? ／ Will we get a formula sheet?,all,editorial
-class-asking-calculator-on-the-test,class-asking,次のテストで電卓は使えますか。,Can we use a calculator on the test? ／ Is the test calculator or non-calculator?,all,editorial
-class-asking-is-there-an-easier-way,class-asking,もっと楽な解き方はありますか。,Is there an easier way to do this? ／ Is there a shortcut?,all,editorial
-class-asking-could-we-use-another-method,class-asking,ここで解の公式を使ってはだめですか。,Couldn't we just use the quadratic formula? ／ Can I use L'Hôpital's rule here instead?,all,editorial
-class-asking-another-example,class-asking,例をもう 1 つやってもらえますか。,Could you do one more example? ／ Can we see another example?,all,editorial
-class-asking-simplify-further,class-asking,これ以上簡単にする必要はありますか。これで答えですか。,"Do we need to simplify further, or is that the final answer? ／ Is that as simple as it gets?",all,editorial
-office-hours-do-you-have-a-minute,office-hours,今少しお時間よろしいですか。,Do you have a minute? ／ Is now a good time?,大学,editorial
-office-hours-question-about-homework,office-hours,宿題の 3 番について質問があって来ました。,I had a question about number 3 on the homework. ／ I wanted to ask about problem 3.,大学,editorial
-office-hours-can-i-show-you-what-i-tried,office-hours,自分でやったところを見ていただけますか。,Can I show you what I tried? ／ Here's what I have so far.,大学,editorial
-office-hours-am-i-on-the-right-track,office-hours,この方針で合っていますか。,Am I on the right track? ／ Is this approach going to work?,大学,editorial
-office-hours-hint-not-the-answer,office-hours,答えではなく、ヒントだけいただけますか。,Could you give me a hint without giving away the answer? ／ Maybe just a nudge in the right direction?,大学,editorial
-office-hours-why-did-i-lose-points,office-hours,ここでなぜ減点されたのか分からなくて。,I'm not sure why I lost points here. ／ Could you explain what was wrong with this?,大学,editorial
-office-hours-regrade,office-hours,この問題の採点をもう一度見ていただけませんか。,Would you mind taking another look at the grading on this problem? ／ I think this might have been graded incorrectly.,大学,editorial
-office-hours-how-to-study,office-hours,中間試験に向けて、どう勉強すればいいでしょうか。,How would you recommend studying for the midterm? ／ What should I focus on for the exam?,大学,editorial
-office-hours-extra-practice,office-hours,追加の練習問題や過去の試験はありますか。,Are there any extra practice problems I could do? ／ Do you have old exams I could practice with?,大学,editorial
-office-hours-understand-in-class-not-alone,office-hours,授業で先生が解くと分かるのに、自分でやると手が止まります。,"I understand it when you do it in class, but I get stuck when I try it on my own.",大学,editorial
-office-hours-intuition,office-hours,計算は追えるのですが、直感的な意味が分かりません。,"I can follow the algebra, but I don't get the intuition behind it. ／ What's the big picture here?",大学,editorial
-office-hours-when-to-use-which,office-hours,置換積分と部分積分、どういうときにどちらを使えばいいですか。,How do I know when to use substitution and when to use integration by parts?,大学,editorial
-office-hours-english-terms-are-new,office-hours,日本語で習ったので、英語の数学用語にまだ慣れていません。,"I learned this in Japanese, so I'm still getting used to the English terms.",大学,editorial
-office-hours-is-this-rigorous-enough,office-hours,この証明、これで十分厳密か見ていただけますか。,Could you look over my proof and tell me if it's rigorous enough? ／ Is this enough justification?,大学,editorial
-office-hours-which-course-next,office-hours,次の学期は線形代数と Calc II のどちらを取るべきでしょうか。,Should I take Linear Algebra or Calc II next semester? ／ Do you think I'm ready for …?,大学,editorial
-office-hours-can-i-come-back,office-hours,まだ分からなかったら、また来てもいいですか。,Is it okay if I come back if I'm still stuck?,大学,editorial
-office-hours-thanks-that-helps,office-hours,ありがとうございます、よく分かりました。,"Thanks, that really helps. ／ That makes a lot more sense now.",大学,editorial
-explaining-solution-overall-plan,explaining-solution,方針としては、まず交点を求めて、それから積分しました。,My plan was to find the intersection points first and then integrate. ／ The idea is to …,all,editorial
-explaining-solution-let-x-be,explaining-solution,長方形の幅を x とおきました。,I let x be the width of the rectangle. ／ I called the width x.,all,editorial
-explaining-solution-set-up-an-equation,explaining-solution,問題の条件から方程式を立てました。,"First I set up an equation from the given information. ／ From the problem, I got 2x + 5 = 17.",all,editorial; PLAN §9 Phase 3
-explaining-solution-isolated-x,explaining-solution,それから x を片方に寄せて解きました。,Then I isolated x. ／ I got x by itself. ／ I solved for x.,all,editorial; PLAN §9 Phase 3
-explaining-solution-plugging-back-in,explaining-solution,元の式に代入すると 17 になるので、合っています。,"Plugging back in gives 17, which checks out. ／ I plugged it back in and it works.",all,editorial; PLAN §9 Phase 3
-explaining-solution-moved-everything-to-one-side,explaining-solution,全部左辺に移項しました。,I moved everything to one side. ／ I brought everything over to the left.,all,editorial
-explaining-solution-factored-and-set-to-zero,explaining-solution,因数分解して、それぞれの因数を 0 とおきました。,I factored it and set each factor equal to zero.,中3|数I|Algebra 1,editorial
-explaining-solution-threw-out-a-solution,explaining-solution,長さは負にならないので、負の解は捨てました。,"I threw out the negative solution because a length can't be negative. ／ x = −3 doesn't make sense here, so I rejected it.",all,editorial
-explaining-solution-used-the-rule,explaining-solution,ここで連鎖律を使いました。,I used the chain rule here. ／ This is where the quadratic formula comes in.,all,editorial
-explaining-solution-u-substitution,explaining-solution,u = x² + 1 と置換しました。,I did a u-substitution with u = x^2 + 1. ／ I let u = x^2 + 1.,数III|AP Calculus AB|Calculus I,editorial
-explaining-solution-multiplied-both-sides,explaining-solution,両辺に x を掛けました。x は 0 ではないので大丈夫です。,"I multiplied both sides by x, which is okay since x isn't zero. ／ I divided both sides by 2.",all,editorial
-explaining-solution-flipped-the-inequality,explaining-solution,負の数で割ったので、不等号の向きを逆にしました。,"I divided by a negative, so I flipped the inequality sign.",中1|Algebra 1,editorial
-explaining-solution-drew-a-picture,explaining-solution,まず図を描きました。,I started by drawing a picture. ／ I sketched the graph to see what was going on.,all,editorial
-explaining-solution-split-into-cases,explaining-solution,x ≥ 0 と x < 0 で場合分けしました。,I split it into two cases: x ≥ 0 and x < 0. ／ I did it case by case.,all,editorial
-explaining-solution-worked-backwards,explaining-solution,示したい式から逆にたどりました。,I worked backwards from what we want to show.,all,editorial
-explaining-solution-the-key-was,explaining-solution,2 つの三角形が相似だと気づくのがポイントです。,The key was noticing that the two triangles are similar. ／ The trick is to see that …,all,editorial
-explaining-solution-thats-where-it-comes-from,explaining-solution,その 2 はここから来ています。,That's where the 2 comes from. ／ The 2 comes from the chain rule.,all,editorial
-explaining-solution-these-cancel,explaining-solution,この項とこの項が打ち消し合います。,These two terms cancel out. ／ Everything in the middle cancels.,all,editorial
-explaining-solution-so-the-answer-is,explaining-solution,なので、答えは 12 です。,So the answer is 12. ／ So I got 12. ／ And that gives us 12.,all,editorial
-explaining-solution-with-units,explaining-solution,速度は毎秒 4 メートルです。,So the velocity is 4 meters per second. ／ The units are meters per second.,all,editorial
-explaining-solution-in-context,explaining-solution,つまり、t = 5 のとき水槽の水は毎分 3 リットルの割合で減っているということです。,"So this means the tank is draining at 3 liters per minute at t = 5. ／ In context, that means …",AP Calculus AB|AP Statistics|数III,"editorial; CED (""in context"")"
-explaining-solution-not-sure-about-this-step,explaining-solution,このステップにはあまり自信がありません。,I'm not totally sure about this step. ／ This part might be wrong.,all,editorial
-explaining-solution-let-me-back-up,explaining-solution,ちょっと戻ります。ここで間違えました。,"Wait, let me back up — I made a mistake here. ／ Actually, scratch that.",all,editorial
-explaining-solution-that-cant-be-right,explaining-solution,あれ、おかしい。確率が 1 を超えています。,"Wait, that can't be right — a probability can't be bigger than 1. ／ That doesn't seem right.",all,editorial
-explaining-solution-that-makes-sense,explaining-solution,10 より少し小さいはずなので、妥当な答えです。,"That makes sense, because the answer should be a little less than 10. ／ That seems reasonable.",all,editorial
-explaining-solution-matches-the-other-way,explaining-solution,別の方法で出した答えと一致します。,"This matches what we got the other way. ／ Same answer as before, so it's probably right.",all,editorial
-explaining-solution-another-way,explaining-solution,平方完成を使う別の解き方もあります。,Another way to do it is to complete the square. ／ You could also …,all,editorial
-explaining-solution-by-symmetry,explaining-solution,対称性から残りの半分も同じなので、2 倍しました。,"By symmetry, the other half is the same, so I just doubled it.",all,editorial
-explaining-solution-derivative-equal-to-zero,explaining-solution,微分して 0 とおきました。,I took the derivative and set it equal to zero.,数II|数III|AP Calculus AB|Calculus I,editorial
-explaining-solution-checked-the-endpoints,explaining-solution,端点での値も調べました。,I also checked the endpoints.,数III|AP Calculus AB|Calculus I,editorial
-explaining-solution-used-a-calculator,explaining-solution,最後は電卓で近似値を出しました。,I used my calculator to get a decimal approximation at the end.,all,editorial
-explaining-solution-rounded-at-the-end,explaining-solution,途中では丸めず、最後に丸めました。,I didn't round until the very end. ／ I kept the exact value until the last step.,all,editorial
-explaining-solution-im-assuming,explaining-solution,速さが一定だと仮定しています。,I'm assuming the speed is constant. ／ This only works if …,all,editorial
-explaining-solution-rewrote-it-as,explaining-solution,(x − 3)² + 1 の形に書き直しました。,I rewrote it as (x − 3)^2 + 1. ／ I rewrote the fraction as …,all,editorial
-explaining-solution-graph-agrees,explaining-solution,Desmos でグラフを描いて確かめたら、一致しました。,"I checked it on Desmos, and the graph agrees.",all,editorial
-explaining-solution-tried-small-cases,explaining-solution,まず小さい場合をいくつか試しました。,I tried a few small cases first to see what happens.,all,editorial
-explaining-solution-otherwise-contradiction,explaining-solution,もし成り立たないとすると矛盾が出るので、成り立ちます。,"If it weren't true, we'd get a contradiction, so it has to be true.",数I|Geometry|大学,editorial
-explaining-solution-simplified-to,explaining-solution,整理すると 3x + 2 になりました。,"After simplifying, I got 3x + 2. ／ That simplifies to 3x + 2.",all,editorial
-explaining-solution-added-to-eliminate,explaining-solution,2 つの式を足して y を消しました。,I added the two equations to eliminate y.,中2|Algebra 1,editorial
-explaining-solution-substituted-into-the-other,explaining-solution,1 つ目の式を 2 つ目の式に代入しました。,I substituted the first equation into the second one.,中2|Algebra 1,editorial
-written-solution-let,written-solution,売れたチケットの枚数を x とする。,Let x be the number of tickets sold. ／ Let x denote …,all,editorial; PLAN §9 Phase 3; OpenStax
-written-solution-suppose,written-solution,f(a) = f(b) とする（と仮定する）。,Suppose that f(a) = f(b). ／ Assume that …,all,editorial; PLAN §9 Phase 3; OpenStax
-written-solution-suppose-for-contradiction,written-solution,√2 が有理数であると仮定する（背理法）。,"Suppose, for the sake of contradiction, that √2 is rational. ／ Assume to the contrary that …",数I|Geometry|大学,editorial
-written-solution-then,written-solution,すると f′(x) = 2x − 4 である。,Then f′(x) = 2x − 4.,all,editorial; PLAN §9 Phase 3
-written-solution-which-implies,written-solution,2x = 6 となり、x = 3 である。,"2x = 6, which implies x = 3. ／ 2x = 6, so x = 3. ／ 2x = 6 ⟹ x = 3",all,editorial; PLAN §9 Phase 3; OpenStax
-written-solution-it-follows-that,written-solution,"これより、f は (0, ∞) で増加する。","It follows that f is increasing on (0, ∞).",all,editorial; OpenStax
-written-solution-as-desired,written-solution,以上で示された。,"…, as desired. ／ …, as required. ／ …, which is what we wanted to show.",数II|Geometry|大学,editorial; PLAN §9 Phase 3; OpenStax
-written-solution-qed,written-solution,（証明終わり）,∎ ／ Q.E.D. ／ This completes the proof.,数I|Geometry|大学,editorial
-written-solution-note-that,written-solution,ここで、すべての x について x² + 1 > 0 であることに注意する。,Note that x^2 + 1 > 0 for all x. ／ Notice that …,all,editorial; OpenStax
-written-solution-without-loss-of-generality,written-solution,一般性を失わずに a ≤ b としてよい。,"Without loss of generality, assume a ≤ b. ／ WLOG, a ≤ b.",大学,editorial; OpenStax
-written-solution-if-and-only-if,written-solution,f′(x) = 0 となるのは x = 2 のときに限る。,f′(x) = 0 if and only if x = 2. ／ iff,数I|大学,editorial; OpenStax
-written-solution-similarly,written-solution,同様にして BD = CE である。,"Similarly, BD = CE. ／ By the same argument, …",all,editorial; OpenStax
-written-solution-on-the-other-hand,written-solution,一方、,"On the other hand, …",all,editorial; OpenStax
-written-solution-substituting,written-solution,(1) を (2) に代入すると、,"Substituting (1) into (2), we get … ／ Plugging (1) into (2) gives …",all,editorial; OpenStax
-written-solution-solving-for,written-solution,x について解くと x = 4。,"Solving for x, we get x = 4.",all,editorial; OpenStax
-written-solution-we-have,written-solution,f(2) = 5 であるから、,"We have f(2) = 5, so … ／ We get …",all,editorial; OpenStax
-written-solution-differentiating-both-sides,written-solution,両辺を x で微分すると、,"Differentiating both sides with respect to x, we get …",数III|AP Calculus AB|Calculus I,editorial; OpenStax
-written-solution-taking-the-limit,written-solution,n → ∞ とすると、,"Taking the limit as n → ∞, we get … ／ Letting n → ∞, …",数III|AP Calculus BC|Calculus II,editorial
-written-solution-reject-extraneous,written-solution,x = −2 は不適。,"x = −2 is extraneous, so we reject it. ／ Since x > 0, x = −2 does not work.",数I|数II|Algebra 2,editorial; OpenStax
-written-solution-equality-holds,written-solution,等号が成り立つのは a = b のときである。,"Equality holds if and only if a = b. ／ …, with equality when a = b.",数II|大学,editorial; OpenStax
-written-solution-for-some-integer,written-solution,n = 2k + 1（k は整数）と表せる。,"n = 2k + 1 for some integer k. ／ …, where k is an integer.",数A|Discrete Math,editorial; OpenStax
-written-solution-case,written-solution,(i) x ≥ 0 のとき,Case 1: x ≥ 0. ／ Case 2: x < 0.,all,editorial
-written-solution-final-answer,written-solution,答　x = 3,Answer: x = 3 ／ The solution is x = 3.,all,editorial
-written-solution-combining,written-solution,(1)、(2) より（以上より）、,"Combining (1) and (2), we get … ／ From (1) and (2), … ／ Putting this together, …",all,editorial
-written-solution-base-case,written-solution,n = 1 のとき、左辺 = 1、右辺 = 1 より成り立つ。,"Base case: When n = 1, both sides equal 1, so the statement holds.",数B|Algebra 2|大学,editorial; MIT OCW notes
-written-solution-by-induction,written-solution,以上より、数学的帰納法によってすべての自然数 n について成り立つ。,"By induction, the statement holds for all n ≥ 1. ／ By mathematical induction, …",数B|Algebra 2|大学,editorial
-written-solution-it-suffices-to-show,written-solution,f′(x) > 0 を示せば十分である。,It suffices to show that f′(x) > 0. ／ It is enough to show that …,数II|大学,editorial; OpenStax
-written-solution-given-prove,written-solution,仮定：AB = CD　結論：△ABC ≡ △CDA,Given: AB ≅ CD. Prove: △ABC ≅ △CDA.,中2|Geometry,editorial
-written-solution-i-e,written-solution,すなわち、,"i.e., … ／ that is, …",all,editorial; OpenStax
-written-solution-by-the-theorem,written-solution,三平方の定理より AC = 5。,"By the Pythagorean Theorem, AC = 5. ／ By the Mean Value Theorem, …",all,editorial; OpenStax
-written-solution-hypotheses-are-met,written-solution,"f は [1, 3] で連続、(1, 3) で微分可能なので、平均値の定理が使える。","Since f is continuous on [1, 3] and differentiable on (1, 3), the Mean Value Theorem applies. ／ …, so L'Hôpital's rule applies.",数III|AP Calculus AB|Calculus I,"editorial; CED (""show that the rule applies"")"
-written-solution-conclusion-because-reason,written-solution,f′ が x = 2 で負から正に変わるので、f は x = 2 で極小となる。,f has a relative minimum at x = 2 because f′ changes from negative to positive there.,AP Calculus AB|数II|数III,"editorial; CED (""changes from negative to positive"")"
-written-solution-from-the-graph,written-solution,グラフより、,"From the graph, …",all,editorial
-written-solution-no-solution,written-solution,よって解なし。,Therefore there is no solution. ／ The equation has no real solutions.,all,editorial; OpenStax
-written-solution-let-epsilon-be-given,written-solution,任意の ε > 0 に対して、,"Let ε > 0 be given. ／ For any ε > 0, …",大学,editorial
-exam-find,exam,〜を求めよ。,Find … ／ Determine …,all,editorial; OpenStax
-exam-evaluate,exam,（式・積分の値を）計算せよ。,Evaluate the integral. ／ Evaluate f(3).,all,editorial; OpenStax; CED
-exam-show-that,exam,〜であることを示せ。,"Show that f has a zero on [0, 1].",all,editorial; OpenStax; CED
-exam-prove,exam,〜を証明せよ。,Prove that …,all,editorial; OpenStax
-exam-sketch-the-graph,exam,グラフの概形をかけ。,Sketch the graph of y = …,all,editorial; OpenStax
-exam-simplify,exam,簡単にせよ。,Simplify. ／ Simplify your answer.,all,editorial; OpenStax
-exam-solve-for-x,exam,x について解け。,Solve for x.,all,editorial; OpenStax
-exam-factor-completely,exam,因数分解せよ。,Factor completely.,中3|数I|Algebra 1,editorial; OpenStax
-exam-justify-your-answer,exam,理由を述べよ。,Justify your answer. ／ Give a reason for your answer.,AP Calculus AB|AP Calculus BC|AP Statistics,editorial; CED
-exam-explain-your-reasoning,exam,考え方を説明せよ。,Explain your reasoning.,all,editorial; OpenStax; CED (AP Statistics)
-exam-show-your-work,exam,途中の過程も書け。,Show the work that leads to your answer. ／ Show your work.,all,editorial; CED; OpenStax
-exam-no-work-no-credit,exam,途中式のない答えには点を与えない。,"No work, no credit. ／ Answers without supporting work will receive no credit.",all,editorial
-exam-exact-form,exam,近似値ではなく、正確な値で答えよ。,Leave your answer in exact form. ／ Give an exact answer.,all,editorial; OpenStax
-exam-round-to-the-nearest-tenth,exam,小数第 2 位を四捨五入して、小数第 1 位まで求めよ。,Round to the nearest tenth. ／ Round your answer to the nearest hundredth.,all,editorial; OpenStax
-exam-three-decimal-places,exam,（電卓問題）小数点以下 3 桁まで正確に答えよ。,Give your answer correct to three decimal places. ／ three places after the decimal point,AP Calculus AB|AP Calculus BC,editorial; CED
-exam-simplest-form,exam,最も簡単な形（既約分数）で答えよ。,Write your answer in simplest form. ／ Express your answer as a fraction in lowest terms.,all,editorial; OpenStax
-exam-express-in-terms-of,exam,y を x の式で表せ。,Express y in terms of x. ／ Write your answer in terms of x.,all,editorial; OpenStax
-exam-determine-whether,exam,この級数が収束するか発散するか判定せよ。,Determine whether the series converges or diverges.,all,editorial; CED; OpenStax
-exam-interpret-in-context,exam,f′(5) の意味を、問題の状況に即して説明せよ。,Interpret the meaning of f′(5) in the context of the problem. ／ State your conclusion in context.,AP Calculus AB|AP Statistics|数III|数B,editorial; CED
-exam-indicate-units,exam,単位をつけて答えよ。,Indicate units of measure. ／ Use appropriate units.,AP Calculus AB|AP Calculus BC,editorial; CED
-exam-use-the-table-to-approximate,exam,表のデータを用いて R′(5) の近似値を求めよ。,Use the data in the table to approximate R′(5). ／ Show the computations that lead to your answer.,AP Calculus AB|AP Calculus BC,editorial; CED
-exam-write-an-equation-for-the-tangent-line,exam,x = 2 における y = f(x) の接線の方程式を求めよ。,Write an equation for the line tangent to the graph of f at x = 2.,数II|AP Calculus AB|Calculus I,editorial; CED
-exam-describe-the-distribution,exam,分布の形・中心・散らばりを述べよ。,"Describe the shape, center, and variability of the distribution. ／ Describe the distribution.",数I|AP Statistics,editorial; CED (AP Statistics)
-exam-which-of-the-following,exam,次のうち正しいものを選べ。,Which of the following is true? ／ Which of the following could be the graph of f?,all,editorial; CED
-exam-set-up-but-do-not-evaluate,exam,積分の式を立てるだけでよい（計算しなくてよい）。,"Set up, but do not evaluate, an integral for the volume. ／ Write, but do not evaluate, an integral expression.",数III|AP Calculus AB|Calculus I,editorial; OpenStax
-exam-label-your-axes,exam,軸に名前と目盛りを書け。,Label your axes. ／ Label the diagram.,all,editorial
-exam-box-your-answer,exam,最終的な答えを四角で囲め。,Box your final answer. ／ Circle your answer.,all,editorial; PLAN §15
-exam-calculator-allowed,exam,この部分は電卓使用可（不可）です。,Calculators are allowed on this part. ／ This section is non-calculator. ／ Calculator Not Permitted,all,editorial; CED
-exam-multiple-choice-and-free-response,exam,試験は選択問題と記述問題に分かれています。,The exam has a multiple-choice section and a free-response section.,all,editorial; CED
-exam-partial-credit,exam,部分点があるので、分かるところは書きなさい。,"You can get partial credit, so write down what you know.",all,editorial
-exam-notes-allowed,exam,ノート 1 枚（両面）まで持ち込みできます。,"You can bring one page of notes, front and back. ／ This is a closed-book exam.",all,editorial
-exam-time-remaining,exam,残り 10 分です。,You have 10 minutes left. ／ Ten minutes remaining.,all,editorial
-exam-pencils-down,exam,時間です。筆記用具を置いてください。,Time's up — pencils down. ／ Please stop writing.,all,editorial
-exam-ask-typo,exam,4 番の問題文、誤植ではありませんか。,Is there a typo in number 4? ／ Should this be f(2) instead of f(3)?,all,editorial
-exam-ask-scratch-paper,exam,計算用紙をもう 1 枚いただけますか。,Could I have another sheet of scratch paper?,all,editorial
-exam-ask-can-i-write-on-the-back,exam,裏に書いてもいいですか。,Can I write on the back?,all,editorial
-exam-ask-how-much-time,exam,あと何分ありますか。,How much time is left?,all,editorial
-exam-when-do-we-get-it-back,exam,テストはいつ返却されますか。,When will we get the exams back?,all,editorial
-exam-is-it-curved,exam,この試験は得点調整（カーブ）がありますか。,Is the exam curved? ／ Will there be a curve?,大学,editorial
-email-subject-line,email,件名：MATH 221 セクション 3 ― 課題 5 についての質問,Subject: MATH 221 Sec. 3 – Question about HW 5,大学,editorial
-email-greeting,email,〜先生（メールの書き出し）,"Dear Professor Smith, ／ Hi Professor Smith, ／ Hello Dr. Smith,",大学,editorial
-email-introduce-yourself,email,月水金 10 時の MATH 221 を受講している山田太郎です。,"My name is Taro Yamada, and I'm in your MATH 221 section that meets MWF at 10.",大学,editorial
-email-writing-to-ask,email,課題の 4 番についてお伺いしたく、ご連絡しました。,I'm writing to ask about problem 4 on the homework.,大学,editorial
-email-describe-where-stuck,email,3 番は積分の式を立てるところまではできたのですが、絶対値の扱いが分かりません。,"For problem 3, I got as far as setting up the integral, but I'm not sure how to handle the absolute value.",大学,editorial
-email-missed-class,email,水曜日の授業を欠席してしまいました。何か補っておくべきことはありますか。,I'm sorry I had to miss class on Wednesday. Is there anything I should do to catch up?,大学,editorial
-email-cannot-make-office-hours,email,オフィスアワーの時間は授業があるため、別の時間にお会いできないでしょうか。,I have a class during your office hours. Would it be possible to meet at another time?,大学,editorial
-email-regrade-request,email,中間試験の 2 番の採点について、見直しをお願いできないでしょうか。答案のスキャンを添付します。,I'd like to ask about the grading on problem 2 of the midterm. I've attached a scan of my work.,大学,editorial
-email-extension,email,月曜から体調を崩しており、課題 6 の提出期限を少し延ばしていただくことは可能でしょうか。,Would it be possible to get a short extension on Homework 6? I've been sick since Monday.,大学,editorial
-email-attached,email,解答を PDF で添付しました。,I've attached my work as a PDF. ／ Please see the attached file.,大学,editorial
-email-dictionary-during-exam,email,英語が母語ではないため、試験中に紙の英和辞書を使ってもよいか伺いたいです。,English is not my first language. Would it be possible for me to use a paper bilingual dictionary during the exam?,大学,editorial
-email-exam-conflict,email,期末試験の時間が別の試験と重なっています。別の時間に受けることはできますか。,I have a conflict with the final exam time. Would it be possible to take it at a different time?,大学,editorial
-email-prerequisite,email,日本で数学 III を履修しましたが、MATH 221 の前提科目を満たしますか。,I took calculus in Japan (Math III). Would that satisfy the prerequisite for MATH 221?,大学,editorial
-email-confirm,email,金曜日の小テストに 4.3 節も含まれるか確認させてください。,Could you confirm whether the quiz on Friday covers Section 4.3?,大学,editorial
-email-follow-up,email,先週お送りしたメールの件で、改めてご連絡しました。,I just wanted to follow up on my email from last week.,大学,editorial
-email-thank-you-for-your-time,email,お忙しいところありがとうございます。,Thank you for your time. ／ Thanks in advance.,大学,editorial
-email-sign-off,email,（結び・署名）,"Best, Taro Yamada ／ Sincerely, ／ Thanks,",大学,editorial
-group-study-work-together,group-study,一緒に課題やらない？,Do you want to work on the problem set together? ／ Want to study for the midterm together?,all,editorial
-group-study-where-to-meet,group-study,7 時に図書館でいい？,Does 7 at the library work? ／ Let's meet at the library at 7.,all,editorial
-group-study-what-did-you-get,group-study,5 番、答え何になった？,What did you get for number 5?,all,editorial
-group-study-how-did-you-get-that,group-study,私は違う答えになった。どうやったか見せて。,I got something different — can you show me how you got that?,all,editorial
-group-study-you-dropped-a-sign,group-study,ここ、マイナスが抜けてると思う。,I think you dropped a negative sign. ／ I think you forgot the 2 here.,all,editorial
-group-study-split-them-up,group-study,何問かずつ分担して、あとで説明し合おう。,Let's each do a few and then explain them to each other. ／ Should we split them up?,all,editorial
-group-study-write-up-our-own,group-study,相談はいいけど、答案はそれぞれ自分で書かないといけないよ。,"We can talk about the problems, but we have to write up our own solutions.",大学,editorial
-group-study-check-on-desmos,group-study,Desmos でグラフ描いて確かめてみよう。,Let's check it on Desmos. ／ Let's graph it and see.,all,editorial
-group-study-answer-key-wrong,group-study,解答が間違ってる気がする。何回やっても 13 になる。,"I think the answer key might be wrong. ／ The back of the book says 12, but I keep getting 13.",all,editorial
-group-study-ask-the-ta,group-study,TA に聞いてみようか。,Should we ask the TA? ／ Let's ask at office hours.,all,editorial
-group-study-can-i-see-your-notes,group-study,月曜のノート見せてもらってもいい？,Can I see your notes from Monday?,all,editorial
-group-study-quiz-each-other,group-study,問題出し合おう。,Let's quiz each other.,all,editorial
-group-study-not-sure-but,group-study,自信ないけど、4 だと思う。,"I'm not sure, but I think it's 4. ／ Don't quote me on this, but …",all,editorial
-group-study-oh-that-makes-sense,group-study,あ、なるほど！,"Oh, that makes sense now. ／ Ohh, I see.",all,editorial
-group-study-practice-exam,group-study,時間を計って模擬試験を解こう。,Let's do the practice exam under timed conditions. ／ Let's go over the practice exam.,all,editorial
-group-study-what-is-it-asking,group-study,この問題、何を聞いてるの？,What is this question even asking? ／ What are they asking for here?,all,editorial
-group-study-where-do-we-start,group-study,これ、どこから手をつける？,Where do we even start with this one? ／ Any ideas for number 7?,all,editorial
-discord-anyone-get,discord,3 番解けた人いる？,Did anyone get #3? ／ anyone figure out 3?,all,editorial
-discord-due-tonight,discord,課題って今夜 11:59 締め切り？,Is the hw due tonight at 11:59?,all,editorial
-discord-can-someone-explain,discord,ここで極限が 0 になる理由、誰か説明してくれない？,Can someone explain why the limit is 0 here?,all,editorial
-discord-here-is-my-work,discord,途中までの計算貼るね。どこが違う？,Here's my work so far — where did I go wrong?,all,editorial
-discord-hint-no-spoilers,discord,ヒントだけちょうだい。答えは書かないで。,Can someone give me a hint? No full solutions pls.,all,editorial
-discord-nvm-figured-it-out,discord,ごめん、自己解決した。,"nvm, figured it out ／ never mind, got it",all,editorial
-discord-thanks,discord,ありがとう、助かった！,"ty! ／ thanks, that helped",all,editorial
-discord-same-answer,discord,自分も 12 になった。,"Same, I got 12 too. ／ +1",all,editorial
-discord-notes-from-today,discord,今日の講義ノート持ってる人いる？,Does anyone have notes from today's lecture?,大学,editorial
-discord-office-hours-today,discord,今日のオフィスアワーってある？,Are office hours still happening today?,大学,editorial
-discord-quiz-covers,discord,小テストって 4.3 も入る？,Is 4.3 on the quiz too? ／ Does the quiz cover 4.3?,all,editorial
-discord-when-is-the-midterm,discord,中間いつだっけ？,When's the midterm again?,all,editorial
-discord-typo-in-the-pset,discord,課題の 5 番、誤植っぽくない？,I think there's a typo in #5 on the pset.,all,editorial
-discord-online-homework-not-accepting,discord,WebAssign が答えを受け付けてくれない。正確な値で入れないとだめ？,WebAssign keeps marking my answer wrong — does it want an exact answer?,all,editorial
-discord-right-channel,discord,微積の質問ってここでいい？,Is this the right channel for calc questions?,all,editorial
-discord-study-on-a-call,discord,今夜通話で勉強しない？,Anyone want to hop on a call and study tonight?,all,editorial
+id,situation,ja,en,level,source,merged_from
+dont-forget-the-plus-c,class-listening,積分定数の C を忘れないでね。,Don't forget the plus C. ／ Don't forget your constant of integration. ／ Remember to add C.,数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (4d47e6f:data/terms/dont-forget-the-plus-c.json),
+top-minus-bottom,class-listening,上の曲線から下の曲線を引きます。,It's top minus bottom. ／ Subtract the lower curve from the upper curve.,数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (4d47e6f:data/terms/top-minus-bottom.json),
+area-is-never-negative,class-listening,面積は負にはなりません。負になったらどこかで間違えています。,"Area is never negative. ／ If you get a negative area, something went wrong.",数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (4d47e6f:data/terms/area-is-never-negative.json),
+check-by-differentiating,class-listening,微分して確かめられます。,You can always check by differentiating. ／ Take the derivative of your answer — you should get back the integrand.,数III|AP Calculus BC|Calculus II,ledger/phrases-candidates.csv (4d47e6f:data/terms/check-by-differentiating.json),
+add-up-thin-disks,class-listening,薄い円板を足し合わせるイメージです。,We're adding up a bunch of thin disks. ／ Think of it as slicing the solid into thin disks and adding up their volumes.,数III|AP Calculus BC|Calculus II,ledger/phrases-candidates.csv (4d47e6f:data/terms/add-up-thin-disks.json),
+find-the-intersections-to-get-the-limits,class-listening,まず交点を求めて、それを積分区間にします。,First find where the curves intersect — those are your limits of integration. ／ Set them equal to get the bounds.,数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (4d47e6f:data/terms/find-the-intersections-to-get-the-limits.json),
+split-the-integral,class-listening,ここで積分区間を分けます。,We need to split the integral here. ／ Break it into two integrals at x = 0.,数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (4d47e6f:data/terms/split-the-integral.json),
+write-as-a-limit-of-a-sum,class-listening,和の極限の形に書き直しましょう。,Let's write this as the limit of a sum. ／ Write it as the limit of a Riemann sum.,数III|AP Calculus BC|Calculus II,ledger/phrases-candidates.csv (4d47e6f:data/terms/write-as-a-limit-of-a-sum.json),
+integrate-the-inequality,written-solution,不等式の各辺を 0 から 1 まで積分すると、,"Integrating each side of the inequality from 0 to 1, we get ／ Integrate both sides of the inequality.",数III|AP Calculus BC|Calculus II,ledger/phrases-candidates.csv (4d47e6f:data/terms/integrate-the-inequality.json),
+the-area-of-the-region-bounded-by,exam,曲線 y = x² と直線 y = x + 2 で囲まれた部分の面積を求めよ。,Find the area of the region bounded by y = x^2 and y = x + 2. ／ Find the area of the region enclosed by the two curves.,数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (4d47e6f:data/terms/the-area-of-the-region-bounded-by.json),
+find-the-area-by-integration,class-listening,面積は積分で求めます。,We'll find the area by integrating. ／ Set up an integral for the area.,数III|AP Calculus BC|Calculus II,ledger/phrases-candidates.csv (4d47e6f:data/terms/find-the-area-by-integration.json),
+integrate-by-parts-repeatedly,class-listening,部分積分を 2 回やることになります。,You'll have to integrate by parts twice. ／ Just keep integrating by parts.,数III|AP Calculus BC|Calculus II,ledger/phrases-candidates.csv (4d47e6f:data/terms/integrate-by-parts-repeatedly.json),
+let-h-go-to-zero,class-listening,ここで h を 0 に近づけます。,Now let h go to zero. ／ Take the limit as h approaches 0.,数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-bibun-no-kangae),
+the-tangent-line-passes-through,written-solution,"接線が点 (0, −1) を通るので、","Since the tangent line passes through (0, −1), … ／ The tangent line goes through (0, −1).",数II|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-bibun-no-kangae),
+divide-numerator-and-denominator-by-n,class-listening,分母と分子を n で割ります。,Divide the numerator and denominator by n. ／ Divide top and bottom by n.,数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-kyokugen),
+rationalize-and-take-the-limit,class-listening,有理化してから極限をとります。,"Rationalize, then take the limit. ／ Multiply by the conjugate and then take the limit.",数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-kyokugen),
+the-one-sided-limits-agree,written-solution,左側極限と右側極限が一致するので、,"Since the left-hand and right-hand limits are equal, … ／ The one-sided limits agree.",数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-kyokugen),
+differentiate-the-outside-first,class-listening,外側から微分します。,Differentiate the outside first. ／ Take the derivative of the outside and leave the inside alone.,数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-bibun),
+multiply-by-the-derivative-of-the-inside,class-listening,そのあと内側の微分を掛けます。,Then multiply by the derivative of the inside. ／ … times the derivative of the inside.,数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-bibun),
+f-double-prime-is-positive,written-solution,f''(x) > 0 なので、グラフは下に凸である。,"Since f''(x) > 0, the graph of f is concave up. ／ f double prime is positive.",数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-bibun),
+the-derivative-is-zero,written-solution,x = a で微分係数が 0 になる。,f′(a) = 0. ／ The derivative is zero at x = a. ／ The tangent line is horizontal here. ／ There's a horizontal tangent at x = 1.,数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-bibun),the-tangent-line-is-horizontal
+continuous-but-not-differentiable,class-listening,連続だけど微分可能ではない、という例です。,"It's continuous but not differentiable at 0. ／ Think of |x|: it's continuous, but there's a corner.",数III|AP Calculus AB|Calculus I,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-3-bibun),
+assume-it-holds-for-n-k,written-solution,n = k のとき成り立つと仮定する。,Assume the statement holds for n = k. ／ Suppose it is true for n = k.,数B|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-b-suuretsu),
+it-also-holds-for-n-k-1,written-solution,よって n = k + 1 のときも成り立つ。,Then it also holds for n = k + 1. ／ So it's true for n = k + 1 as well.,数B|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-b-suuretsu),
+the-common-ratio-is-less-than-1,written-solution,公比の絶対値が 1 より小さいので、この級数は収束する。,"Since |r| < 1, the series converges. ／ The common ratio is less than 1 in absolute value.",数B|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-b-suuretsu),
+multiply-by-r-and-subtract,class-listening,両辺に r を掛けて、もとの式から引きます。,"Multiply both sides by r and subtract. ／ Multiply by r, then subtract one equation from the other.",数B|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-b-suuretsu),
+find-the-pattern,class-listening,規則性を見つけましょう。,Do you see a pattern? ／ Let's find the pattern.,数B|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-b-suuretsu),
+squares-are-nonnegative,written-solution,実数の 2 乗は 0 以上なので、,"Since the square of a real number is nonnegative, … ／ A square is never negative.",数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-shiki-to-shoumei),
+left-side-minus-right-side,written-solution,（左辺）−（右辺）= …,LHS − RHS = … ／ (left side) − (right side) = … ／ Look at the difference of the two sides. ／ Subtract the right side from the left side. ／ I took the difference and showed it's nonnegative. ／ I looked at left side minus right side.,数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-shiki-to-shoumei),take-the-difference-of-the-two-sides|form-the-difference
+the-equation-holds,written-solution,よって等式が成り立つ。,Hence the equation holds. ／ So the identity is true.,数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-shiki-to-shoumei),
+what-we-want-to-show,written-solution,示すべき式は …… である。,We want to show that … ／ We need to show that …,数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-shiki-to-shoumei),
+involves-imaginary-numbers,class-listening,解に虚数が出てきます。,The solutions involve imaginary numbers. ／ You get complex solutions. ／ There are no real solutions.,数II|Algebra 2|Integrated Math 3,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-fukusosuu-to-houteishiki),
+conversely,written-solution,逆に、,"Conversely, … ／ Now for the other direction, …",数II|Geometry|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-zukei-to-houteishiki),
+rewrite-the-expression,class-listening,式を変形します。,Let's rewrite the expression. ／ Rewrite it as …,数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-sankaku-kansuu),
+on-the-interval-from-0-to-2,exam,0 ≦ θ < 2π の範囲で解け。,"Solve for 0 ≤ θ < 2π. ／ Find all solutions in the interval [0, 2π).",数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-sankaku-kansuu),
+the-base-is-greater-than-1,written-solution,底が 1 より大きいので、不等号の向きは変わらない。,"Since the base is greater than 1, the direction of the inequality stays the same. ／ Since the base is greater than 1, the function is increasing.",数II|Algebra 2|Precalculus,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-2-shisuu-taisuu),
+split-at-the-median,class-listening,中央値でデータを 2 つに分けます。,Split the data at the median. ／ The median splits the data into a lower half and an upper half.,中2|Algebra 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-2-data-no-katsuyou),
+evaluate-critically,class-listening,この結論が正しいか、批判的に考えてみましょう。,Does this conclusion hold up? ／ Critique the reasoning.,中2|Algebra 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-2-data-no-katsuyou),
+organize-the-data,class-listening,まずデータを整理しましょう。,Let's organize the data first. ／ Put the data in order.,数I|Algebra 1|AP Statistics,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-1-data-no-bunseki),
+probabilities-sum-to-1,class-listening,確率を全部足すと 1 になります。,The probabilities have to add up to 1. ／ The probabilities sum to 1.,数B|AP Statistics|Intro Statistics,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-b-toukei-teki-na-suisoku),
+let-p-be-the-position-vector-of-p,written-solution,点 P の位置ベクトルを p とする。,Let p be the position vector of P. ／ Let p = OP.,数C|Precalculus|Calculus III,ledger/phrases-candidates.csv|OpenStax Calculus Volume 3（Let … be the position vector of …）,
+organize-in-a-table,class-listening,表にまとめてみましょう。,Let's organize this in a table. ／ Make a table.,数C|Precalculus|Linear Algebra,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-c-hyougen-no-kufuu),
+represent-with-a-graph,class-listening,グラフで表してみましょう。,Let's represent this with a graph. ／ Graph it and see what it looks like.,数C|Precalculus|Linear Algebra,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-c-hyougen-no-kufuu),
+where,written-solution,ただし a > 0 とする。,"…, where a > 0. ／ Assume a > 0.",数I|Algebra 1|Algebra 2,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-1-kazu-to-shiki),
+clearly,written-solution,明らかに、,"Clearly, … ／ It is clear that …",数I|Geometry|Discrete Math,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-1-shuugou-to-meidai),
+in-general,written-solution,一般に、,"In general, … ／ This isn't true in general.",数I|Geometry|Discrete Math,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-1-shuugou-to-meidai),
+take-positive-values,written-solution,f(x) は常に正の値をとる。,f(x) is always positive. ／ f takes only positive values.,数I|Algebra 1|Algebra 2,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-1-niji-kansuu),
+apply-the-theorem,class-listening,ここで定理が使えます。,Now we can apply the theorem. ／ Now use the theorem.,数A|Geometry,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-a-zukei-no-seishitsu),
+by-definition,written-solution,定義より、,"By definition, … ／ By the definition of the derivative, …",大学|Geometry,ledger/phrases-candidates.csv (from 空; unit us-geometry-reasoning-and-proof),
+check-the-sign,class-listening,符号を調べましょう。,Check the sign. ／ Let's check the sign of f′ on each interval.,数I|Algebra 1|Algebra 2,ledger/phrases-candidates.csv (from 空; unit jp-suugaku-1-niji-kansuu),
+omit,class-listening,掛け算の記号 × は省略します。,We drop the multiplication sign. ／ You can leave out the times sign.,中1|Pre-Algebra|Algebra 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-1-moji-to-shiki),
+in-order,class-listening,左から順に計算します。,Go in order from left to right. ／ Work left to right.,中1|Pre-Algebra|Algebra 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-1-moji-to-shiki),
+by-hypothesis,written-solution,仮定より、,"By hypothesis, … ／ Since AB = CD is given, … ／ Given",中2|Geometry|Integrated Math 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-2-heikou-to-goudou),
+since,written-solution,〜より（〜なので）、,"Since …, … ／ Because …, … ／ By …, …",中2|Geometry|Integrated Math 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-2-heikou-to-goudou),
+are-equal-respectively,written-solution,3 組の辺がそれぞれ等しい。,"The three pairs of corresponding sides are equal, respectively. ／ AB = DE, BC = EF, and CA = FD.",中2|Geometry|Integrated Math 1,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-2-heikou-to-goudou),
+divide-the-figure,class-listening,図形をいくつかに分けて考えます。,Break the figure into smaller shapes. ／ Divide the figure into a rectangle and a triangle.,中2|Geometry,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-2-sankakkei-to-shikakkei),
+square-and-add,class-listening,両方の式を 2 乗して足します。,Square both equations and add them. ／ Square and add.,中3|Geometry|Integrated Math 2,ledger/phrases-candidates.csv (from 空; unit jp-chuugaku-3-sanpeihou),
+class-asking-repeat,class-asking,すみません、最後のところをもう一度お願いできますか。,"Sorry, could you say that last part again? ／ Could you repeat the last step? ／ Sorry, I missed that.",all,data/phrases,
+exam-clarify-instruction,exam,ここでの simplify は、分母を有理化しろという意味ですか。,"Does ""simplify"" here mean I should rationalize the denominator? ／ When it says ""simplify,"" do you want the denominator rationalized? ／ What do you mean by ""simplify"" here?",all,data/phrases,
+explaining-solution-first-step,explaining-solution,まず 2 つの式を等号で結んで、x について解いて、最後に答えを確かめました。,"First I set the two expressions equal, then I solved for x and checked the answer. ／ What I did was set them equal and solve for x. ／ I started by setting the two expressions equal to each other.",all,data/phrases,
+office-hours-stuck-at-step,office-hours,ここまでは分かるのですが、この行から次の行への変形が分かりません。,"I follow it up to here, but I don't see how you get from this line to the next one. ／ I'm lost at this step. ／ Could you walk me through this step?",大学,data/phrases,
+written-solution-therefore,written-solution,よって x=3 が唯一の解である。,"Therefore x = 3 is the only solution. ／ Hence x = 3 is the only solution. ／ So x = 3 is the only solution. ／ Therefore, … ／ Thus, … ／ So … ／ Hence … ／ Thus …",all,data/phrases,therefore|hence
+class-listening-does-that-make-sense,class-listening,ここまで分かりましたか。次に進む前に質問は？,Does that make sense? ／ Any questions before we move on? ／ Everybody good?,all,editorial,
+class-listening-take-out-a-sheet-of-paper,class-listening,紙を 1 枚出してください（小テストをします）。,Take out a sheet of paper. ／ Clear your desks — pop quiz.,all,editorial,
+class-listening-turn-to-page,class-listening,教科書の 112 ページを開いてください。,Turn to page 112. ／ Open your books to page 112.,all,editorial,
+class-listening-homework-is,class-listening,宿題は 3.2 節の 1 番から 25 番までの奇数番です。,"For homework, do section 3.2, 1 through 25, odds. ／ Tonight's homework is 3.2, odd problems 1 to 25.",all,editorial,
+class-listening-answers-in-the-back,class-listening,奇数番の答えは教科書の巻末に載っています。,The answers to the odd-numbered problems are in the back of the book. ／ Check your answers in the back.,all,editorial,
+class-listening-its-due,class-listening,提出は金曜日です。,It's due Friday. ／ Turn it in at the start of class on Friday.,all,editorial,
+class-listening-pass-your-papers-forward,class-listening,答案を前に回してください。,Pass your papers forward. ／ Pass them up to the front.,all,editorial,
+class-listening-try-this-one,class-listening,この問題を自分で解いてみてください。数分とります。,Go ahead and try this one — I'll give you a couple of minutes. ／ You guys try this one.,all,editorial,
+class-listening-work-with-a-partner,class-listening,隣の人と答えを比べてみて。,Turn to your neighbor and compare answers. ／ Work with a partner.,all,editorial,
+class-listening-who-wants-to-come-up,class-listening,誰か前に出て解いてくれる人？,Who wants to come up and do this one? ／ Can I get a volunteer?,all,editorial,
+class-listening-write-this-down,class-listening,これはノートに書いておいてください。,Write this down. ／ You'll want this in your notes.,all,editorial,
+class-listening-this-will-be-on-the-test,class-listening,ここはテストに出ます。,This will be on the test. ／ Know this for the exam.,all,editorial,
+class-listening-you-dont-need-to-memorize,class-listening,この公式は覚えなくていいです。公式集に載っています。,You don't need to memorize this — it's on the formula sheet. ／ You'll be given this formula.,all,editorial,
+class-listening-common-mistake,class-listening,ここはよくある間違いです。,This is a really common mistake. ／ Watch out — this is where people lose points.,all,editorial,
+class-listening-notice-that,class-listening,ここで〜に注目してください。,Notice that … ／ The key thing to see here is …,all,editorial,
+class-listening-recall-that,class-listening,前にやった〜を思い出してください。,Recall that … ／ Remember from last week …,all,editorial,
+class-listening-whats-the-next-step,class-listening,次は何をすればいいですか。,What's the next step? ／ What do I do now? Anybody?,all,editorial,
+class-listening-oops-good-catch,class-listening,あ、ここ間違えました。指摘ありがとう。,"Oops, that should be a minus. Good catch. ／ Hang on, let me fix that.",all,editorial,
+class-listening-well-come-back-to-this,class-listening,これは後でまたやります。,We'll come back to this later. ／ Hold that thought.,all,editorial,
+class-listening-extra-credit,class-listening,これは加点（エクストラクレジット）の問題です。,This one's for extra credit. ／ Bonus question.,all,editorial,
+class-listening-lowest-quiz-dropped,class-listening,小テストは一番低い点を成績から除きます。,I'll drop your lowest quiz score. ／ Your lowest quiz grade gets dropped.,all,editorial,
+class-listening-final-is-cumulative,class-listening,期末試験は全範囲から出ます。,The final is cumulative. ／ The final covers everything.,all,editorial,
+class-listening-office-hours-are,class-listening,オフィスアワーは火曜の 2 時から 4 時です。,My office hours are Tuesdays from 2 to 4. ／ Come see me in office hours.,大学,editorial,
+class-listening-raise-your-hand-if,class-listening,5 になった人は手を挙げて。,Raise your hand if you got 5. ／ Thumbs up if you got 5.,all,editorial,
+class-listening-lets-go-over-the-homework,class-listening,宿題の答え合わせをしましょう。,Let's go over the homework. ／ Any questions on the homework?,all,editorial,
+class-listening-what-do-you-notice,class-listening,何か気づいたことはありますか。,What do you notice? ／ What do you think happens if we make x bigger?,all,editorial,
+class-listening-same-idea-as-before,class-listening,これはさっきと同じ考え方です。,This is the same idea as before. ／ It's just like the last problem.,all,editorial,
+class-listening-warm-up,class-listening,最初に復習の問題を 1 問やりましょう。,Let's start with a quick warm-up. ／ Do the warm-up on the board.,中1|中2|中3|Pre-Algebra|Algebra 1|Geometry|Algebra 2,editorial,
+class-listening-in-your-own-words,class-listening,自分の言葉で説明してみて。,Explain it in your own words. ／ Can you say why that works?,all,editorial,
+class-listening-sanity-check,class-listening,その答え、大きさとして妥当ですか。,Does that answer make sense? ／ Let's do a quick sanity check.,all,editorial,
+class-asking-where-did-that-come-from,class-asking,その 2 はどこから出てきたんですか。,Where did the 2 come from? ／ How did you get from this line to that one?,all,editorial,
+class-asking-why-can-we,class-asking,なぜここで x で割っていいんですか。,Why are we allowed to divide by x here? ／ Why does that work?,all,editorial,
+class-asking-how-do-you-read-this,class-asking,この記号は何と読むんですか。,How do you read this symbol? ／ How do you say this out loud? ／ What does this symbol mean?,all,editorial,
+class-asking-is-there-a-name-for-this,class-asking,これは英語で何と言いますか。,Is there a name for this? ／ What do you call this in English?,all,editorial,
+class-asking-difference-between,class-asking,極大値と最大値の違いは何ですか。,What's the difference between a local max and an absolute max? ／ How is this different from …?,all,editorial,
+class-asking-can-i-write-it-this-way,class-asking,こう書いても大丈夫ですか。,Is it okay if I write it like this? ／ Would it also be correct to write …?,all,editorial,
+class-asking-does-it-still-work-if,class-asking,x が負のときでもこれは使えますか。,Does this still work if x is negative? ／ What if x is negative?,all,editorial,
+class-asking-typo-on-the-board,class-asking,すみません、黒板のそこ、マイナスではないですか。,"Sorry, I think there's a typo — should that be a minus? ／ Is that supposed to be x squared?",all,editorial,
+class-asking-go-back,class-asking,前のスライドに戻ってもらえますか。,Could you go back to the previous slide? ／ Can you scroll back up?,all,editorial,
+class-asking-slow-down,class-asking,もう少しゆっくりお願いできますか。,Could you go over that a little more slowly? ／ Could you slow down a bit?,all,editorial,
+class-asking-i-got-a-different-answer,class-asking,8 になったんですが、どこか間違えていますか。,I got 8 — did I do something wrong? ／ I got a different answer.,all,editorial,
+class-asking-which-problems,class-asking,宿題はどの問題ですか。,Which problems are for homework? ／ Was that odds only?,all,editorial,
+class-asking-when-is-it-due,class-asking,提出はいつまでですか。,When is it due? ／ Is that due Friday or Monday?,all,editorial,
+class-asking-will-this-be-on-the-test,class-asking,これはテストに出ますか。,Will this be on the test? ／ Do we need to know this for the exam?,all,editorial,
+class-asking-do-we-need-to-memorize,class-asking,この公式は覚える必要がありますか。,Do we need to memorize this formula? ／ Will we get a formula sheet?,all,editorial,
+class-asking-calculator-on-the-test,class-asking,次のテストで電卓は使えますか。,Can we use a calculator on the test? ／ Is the test calculator or non-calculator?,all,editorial,
+class-asking-is-there-an-easier-way,class-asking,もっと楽な解き方はありますか。,Is there an easier way to do this? ／ Is there a shortcut?,all,editorial,
+class-asking-could-we-use-another-method,class-asking,ここで解の公式を使ってはだめですか。,Couldn't we just use the quadratic formula? ／ Can I use L'Hôpital's rule here instead?,all,editorial,
+class-asking-another-example,class-asking,例をもう 1 つやってもらえますか。,Could you do one more example? ／ Can we see another example?,all,editorial,
+class-asking-simplify-further,class-asking,これ以上簡単にする必要はありますか。これで答えですか。,"Do we need to simplify further, or is that the final answer? ／ Is that as simple as it gets?",all,editorial,
+office-hours-do-you-have-a-minute,office-hours,今少しお時間よろしいですか。,Do you have a minute? ／ Is now a good time?,大学,editorial,
+office-hours-question-about-homework,office-hours,宿題の 3 番について質問があって来ました。,I had a question about number 3 on the homework. ／ I wanted to ask about problem 3.,大学,editorial,
+office-hours-can-i-show-you-what-i-tried,office-hours,自分でやったところを見ていただけますか。,Can I show you what I tried? ／ Here's what I have so far.,大学,editorial,
+office-hours-am-i-on-the-right-track,office-hours,この方針で合っていますか。,Am I on the right track? ／ Is this approach going to work?,大学,editorial,
+office-hours-hint-not-the-answer,office-hours,答えではなく、ヒントだけいただけますか。,Could you give me a hint without giving away the answer? ／ Maybe just a nudge in the right direction?,大学,editorial,
+office-hours-why-did-i-lose-points,office-hours,ここでなぜ減点されたのか分からなくて。,I'm not sure why I lost points here. ／ Could you explain what was wrong with this?,大学,editorial,
+office-hours-regrade,office-hours,この問題の採点をもう一度見ていただけませんか。,Would you mind taking another look at the grading on this problem? ／ I think this might have been graded incorrectly.,大学,editorial,
+office-hours-how-to-study,office-hours,中間試験に向けて、どう勉強すればいいでしょうか。,How would you recommend studying for the midterm? ／ What should I focus on for the exam?,大学,editorial,
+office-hours-extra-practice,office-hours,追加の練習問題や過去の試験はありますか。,Are there any extra practice problems I could do? ／ Do you have old exams I could practice with?,大学,editorial,
+office-hours-understand-in-class-not-alone,office-hours,授業で先生が解くと分かるのに、自分でやると手が止まります。,"I understand it when you do it in class, but I get stuck when I try it on my own.",大学,editorial,
+office-hours-intuition,office-hours,計算は追えるのですが、直感的な意味が分かりません。,"I can follow the algebra, but I don't get the intuition behind it. ／ What's the big picture here?",大学,editorial,
+office-hours-when-to-use-which,office-hours,置換積分と部分積分、どういうときにどちらを使えばいいですか。,How do I know when to use substitution and when to use integration by parts?,大学,editorial,
+office-hours-english-terms-are-new,office-hours,日本語で習ったので、英語の数学用語にまだ慣れていません。,"I learned this in Japanese, so I'm still getting used to the English terms.",大学,editorial,
+office-hours-is-this-rigorous-enough,office-hours,この証明、これで十分厳密か見ていただけますか。,Could you look over my proof and tell me if it's rigorous enough? ／ Is this enough justification?,大学,editorial,
+office-hours-which-course-next,office-hours,次の学期は線形代数と Calc II のどちらを取るべきでしょうか。,Should I take Linear Algebra or Calc II next semester? ／ Do you think I'm ready for …?,大学,editorial,
+office-hours-can-i-come-back,office-hours,まだ分からなかったら、また来てもいいですか。,Is it okay if I come back if I'm still stuck?,大学,editorial,
+office-hours-thanks-that-helps,office-hours,ありがとうございます、よく分かりました。,"Thanks, that really helps. ／ That makes a lot more sense now.",大学,editorial,
+explaining-solution-overall-plan,explaining-solution,方針としては、まず交点を求めて、それから積分しました。,My plan was to find the intersection points first and then integrate. ／ The idea is to …,all,editorial,
+explaining-solution-let-x-be,explaining-solution,長方形の幅を x とおきました。,I let x be the width of the rectangle. ／ I called the width x.,all,editorial,
+explaining-solution-set-up-an-equation,explaining-solution,問題の条件から方程式を立てました。,"First I set up an equation from the given information. ／ From the problem, I got 2x + 5 = 17.",all,editorial; PLAN §9 Phase 3,
+explaining-solution-isolated-x,explaining-solution,それから x を片方に寄せて解きました。,Then I isolated x. ／ I got x by itself. ／ I solved for x.,all,editorial; PLAN §9 Phase 3,
+explaining-solution-plugging-back-in,explaining-solution,元の式に代入すると 17 になるので、合っています。,"Plugging back in gives 17, which checks out. ／ I plugged it back in and it works.",all,editorial; PLAN §9 Phase 3,
+explaining-solution-moved-everything-to-one-side,explaining-solution,全部左辺に移項しました。,I moved everything to one side. ／ I brought everything over to the left.,all,editorial,
+explaining-solution-factored-and-set-to-zero,explaining-solution,因数分解して、それぞれの因数を 0 とおきました。,I factored it and set each factor equal to zero.,中3|数I|Algebra 1,editorial,
+explaining-solution-threw-out-a-solution,explaining-solution,長さは負にならないので、負の解は捨てました。,"I threw out the negative solution because a length can't be negative. ／ x = −3 doesn't make sense here, so I rejected it.",all,editorial,
+explaining-solution-used-the-rule,explaining-solution,ここで連鎖律を使いました。,I used the chain rule here. ／ This is where the quadratic formula comes in.,all,editorial,
+explaining-solution-multiplied-both-sides,explaining-solution,両辺に x を掛けました。x は 0 ではないので大丈夫です。,"I multiplied both sides by x, which is okay since x isn't zero. ／ I divided both sides by 2.",all,editorial,
+explaining-solution-flipped-the-inequality,explaining-solution,負の数で割ったので、不等号の向きを逆にしました。,"I divided by a negative, so I flipped the inequality sign.",中1|Algebra 1,editorial,
+explaining-solution-drew-a-picture,explaining-solution,まず図を描きました。,I started by drawing a picture. ／ I sketched the graph to see what was going on.,all,editorial,
+explaining-solution-worked-backwards,explaining-solution,示したい式から逆にたどりました。,I worked backwards from what we want to show.,all,editorial,
+explaining-solution-the-key-was,explaining-solution,2 つの三角形が相似だと気づくのがポイントです。,The key was noticing that the two triangles are similar. ／ The trick is to see that …,all,editorial,
+explaining-solution-thats-where-it-comes-from,explaining-solution,その 2 はここから来ています。,That's where the 2 comes from. ／ The 2 comes from the chain rule.,all,editorial,
+explaining-solution-these-cancel,explaining-solution,この項とこの項が打ち消し合います。,These two terms cancel out. ／ Everything in the middle cancels.,all,editorial,
+explaining-solution-so-the-answer-is,explaining-solution,なので、答えは 12 です。,So the answer is 12. ／ So I got 12. ／ And that gives us 12.,all,editorial,
+explaining-solution-with-units,explaining-solution,速度は毎秒 4 メートルです。,So the velocity is 4 meters per second. ／ The units are meters per second.,all,editorial,
+explaining-solution-in-context,explaining-solution,つまり、t = 5 のとき水槽の水は毎分 3 リットルの割合で減っているということです。,"So this means the tank is draining at 3 liters per minute at t = 5. ／ In context, that means …",AP Calculus AB|AP Statistics|数III,"editorial; CED (""in context"")",
+explaining-solution-not-sure-about-this-step,explaining-solution,このステップにはあまり自信がありません。,I'm not totally sure about this step. ／ This part might be wrong.,all,editorial,
+explaining-solution-let-me-back-up,explaining-solution,ちょっと戻ります。ここで間違えました。,"Wait, let me back up — I made a mistake here. ／ Actually, scratch that.",all,editorial,
+explaining-solution-that-cant-be-right,explaining-solution,あれ、おかしい。確率が 1 を超えています。,"Wait, that can't be right — a probability can't be bigger than 1. ／ That doesn't seem right.",all,editorial,
+explaining-solution-that-makes-sense,explaining-solution,10 より少し小さいはずなので、妥当な答えです。,"That makes sense, because the answer should be a little less than 10. ／ That seems reasonable.",all,editorial,
+explaining-solution-matches-the-other-way,explaining-solution,別の方法で出した答えと一致します。,"This matches what we got the other way. ／ Same answer as before, so it's probably right.",all,editorial,
+explaining-solution-another-way,explaining-solution,平方完成を使う別の解き方もあります。,Another way to do it is to complete the square. ／ You could also …,all,editorial,
+explaining-solution-by-symmetry,explaining-solution,対称性から残りの半分も同じなので、2 倍しました。,"By symmetry, the other half is the same, so I just doubled it.",all,editorial,
+explaining-solution-derivative-equal-to-zero,explaining-solution,微分して 0 とおきました。,I took the derivative and set it equal to zero.,数II|数III|AP Calculus AB|Calculus I,editorial,
+explaining-solution-checked-the-endpoints,explaining-solution,端点での値も調べました。,I also checked the endpoints.,数III|AP Calculus AB|Calculus I,editorial,
+explaining-solution-used-a-calculator,explaining-solution,最後は電卓で近似値を出しました。,I used my calculator to get a decimal approximation at the end.,all,editorial,
+explaining-solution-rounded-at-the-end,explaining-solution,途中では丸めず、最後に丸めました。,I didn't round until the very end. ／ I kept the exact value until the last step.,all,editorial,
+explaining-solution-im-assuming,explaining-solution,速さが一定だと仮定しています。,I'm assuming the speed is constant. ／ This only works if …,all,editorial,
+explaining-solution-rewrote-it-as,explaining-solution,(x − 3)² + 1 の形に書き直しました。,I rewrote it as (x − 3)^2 + 1. ／ I rewrote the fraction as …,all,editorial,
+explaining-solution-tried-small-cases,explaining-solution,まず小さい場合をいくつか試しました。,I tried a few small cases first to see what happens.,all,editorial,
+explaining-solution-otherwise-contradiction,explaining-solution,もし成り立たないとすると矛盾が出るので、成り立ちます。,"If it weren't true, we'd get a contradiction, so it has to be true.",数I|Geometry|大学,editorial,
+written-solution-let,written-solution,売れたチケットの枚数を x とする。,Let x be the number of tickets sold. ／ Let x denote …,all,editorial; PLAN §9 Phase 3; OpenStax,
+written-solution-suppose,written-solution,f(a) = f(b) とする（と仮定する）。,Suppose that f(a) = f(b). ／ Assume that …,all,editorial; PLAN §9 Phase 3; OpenStax,
+written-solution-suppose-for-contradiction,written-solution,√2 が有理数であると仮定する（背理法）。,"Suppose, for the sake of contradiction, that √2 is rational. ／ Assume to the contrary that …",数I|Geometry|大学,editorial,
+written-solution-then,written-solution,すると f′(x) = 2x − 4 である。,Then f′(x) = 2x − 4.,all,editorial; PLAN §9 Phase 3,
+written-solution-which-implies,written-solution,2x = 6 となり、x = 3 である。,"2x = 6, which implies x = 3. ／ 2x = 6, so x = 3. ／ 2x = 6 ⟹ x = 3 ／ It follows that f is increasing on (0, ∞).",all,editorial; PLAN §9 Phase 3; OpenStax,written-solution-it-follows-that
+written-solution-as-desired,written-solution,以上で示された。,"…, as desired. ／ …, as required. ／ …, which is what we wanted to show. ／ ∎ ／ Q.E.D. ／ This completes the proof.",数II|Geometry|大学,editorial; PLAN §9 Phase 3; OpenStax,written-solution-qed
+written-solution-note-that,written-solution,ここで、すべての x について x² + 1 > 0 であることに注意する。,Note that x^2 + 1 > 0 for all x. ／ Notice that …,all,editorial; OpenStax,
+written-solution-similarly,written-solution,同様にして BD = CE である。,"Similarly, BD = CE. ／ By the same argument, …",all,editorial; OpenStax,
+written-solution-on-the-other-hand,written-solution,一方、,"On the other hand, …",all,editorial; OpenStax,
+written-solution-we-have,written-solution,f(2) = 5 であるから、,"We have f(2) = 5, so … ／ We get …",all,editorial; OpenStax,
+written-solution-taking-the-limit,written-solution,n → ∞ とすると、,"Taking the limit as n → ∞, we get … ／ Letting n → ∞, …",数III|AP Calculus BC|Calculus II,editorial,
+written-solution-reject-extraneous,written-solution,x = −2 は不適。,"x = −2 is extraneous, so we reject it. ／ Since x > 0, x = −2 does not work.",数I|数II|Algebra 2,editorial; OpenStax,
+written-solution-for-some-integer,written-solution,n = 2k + 1（k は整数）と表せる。,"n = 2k + 1 for some integer k. ／ …, where k is an integer.",数A|Discrete Math,editorial; OpenStax,
+written-solution-case,written-solution,(i) x ≥ 0 のとき,Case 1: x ≥ 0. ／ Case 2: x < 0.,all,editorial,
+written-solution-final-answer,written-solution,答　x = 3,Answer: x = 3 ／ The solution is x = 3.,all,editorial,
+written-solution-combining,written-solution,(1)、(2) より（以上より）、,"Combining (1) and (2), we get … ／ From (1) and (2), … ／ Putting this together, …",all,editorial,
+written-solution-by-induction,written-solution,以上より、数学的帰納法によってすべての自然数 n について成り立つ。,"By induction, the statement holds for all n ≥ 1. ／ By mathematical induction, …",数B|Algebra 2|大学,editorial,
+written-solution-it-suffices-to-show,written-solution,f′(x) > 0 を示せば十分である。,It suffices to show that f′(x) > 0. ／ It is enough to show that …,数II|大学,editorial; OpenStax,
+written-solution-given-prove,written-solution,仮定：AB = CD　結論：△ABC ≡ △CDA,Given: AB ≅ CD. Prove: △ABC ≅ △CDA.,中2|Geometry,editorial,
+written-solution-i-e,written-solution,すなわち、,"i.e., … ／ that is, …",all,editorial; OpenStax,
+written-solution-by-the-theorem,written-solution,三平方の定理より AC = 5。,"By the Pythagorean Theorem, AC = 5. ／ By the Mean Value Theorem, …",all,editorial; OpenStax,
+written-solution-hypotheses-are-met,written-solution,"f は [1, 3] で連続、(1, 3) で微分可能なので、平均値の定理が使える。","Since f is continuous on [1, 3] and differentiable on (1, 3), the Mean Value Theorem applies. ／ …, so L'Hôpital's rule applies.",数III|AP Calculus AB|Calculus I,"editorial; CED (""show that the rule applies"")",
+written-solution-conclusion-because-reason,written-solution,f′ が x = 2 で負から正に変わるので、f は x = 2 で極小となる。,"f has a relative minimum at x = 2 because f′ changes from negative to positive there. ／ f changes from increasing to decreasing at x = 2, so f has a relative maximum there. ／ f′ changes from positive to negative at x = 2.",AP Calculus AB|数II|数III,"editorial; CED (""changes from negative to positive"")",changes-from-increasing-to-decreasing
+written-solution-from-the-graph,written-solution,グラフより、,"From the graph, …",all,editorial,
+written-solution-no-solution,written-solution,よって解なし。,Therefore there is no solution. ／ The equation has no real solutions.,all,editorial; OpenStax,
+written-solution-let-epsilon-be-given,written-solution,任意の ε > 0 に対して、,"Let ε > 0 be given. ／ For any ε > 0, …",大学,editorial,
+exam-show-that,exam,〜であることを示せ。,"Show that f has a zero on [0, 1].",all,editorial; OpenStax; CED,
+exam-justify-your-answer,exam,理由を述べよ。,Justify your answer. ／ Give a reason for your answer.,AP Calculus AB|AP Calculus BC|AP Statistics,editorial; CED,
+exam-explain-your-reasoning,exam,考え方を説明せよ。,Explain your reasoning.,all,editorial; OpenStax; CED (AP Statistics),
+exam-show-your-work,exam,途中の過程も書け。,"Show the work that leads to your answer. ／ Show your work. ／ No work, no credit. ／ Answers without supporting work will receive no credit.",all,editorial; CED; OpenStax,exam-no-work-no-credit
+exam-exact-form,exam,近似値ではなく、正確な値で答えよ。,Leave your answer in exact form. ／ Give an exact answer.,all,editorial; OpenStax,
+exam-three-decimal-places,exam,（電卓問題）小数点以下 3 桁まで正確に答えよ。,Give your answer correct to three decimal places. ／ three places after the decimal point,AP Calculus AB|AP Calculus BC,editorial; CED,
+exam-simplest-form,exam,最も簡単な形（既約分数）で答えよ。,Write your answer in simplest form. ／ Express your answer as a fraction in lowest terms.,all,editorial; OpenStax,
+exam-express-in-terms-of,exam,y を x の式で表せ。,Express y in terms of x. ／ Write your answer in terms of x. ／ Express vector AB in terms of a and b. ／ Write AB as a vector.,all,editorial; OpenStax,express-as-a-vector
+exam-determine-whether,exam,この級数が収束するか発散するか判定せよ。,Determine whether the series converges or diverges.,all,editorial; CED; OpenStax,
+exam-interpret-in-context,exam,f′(5) の意味を、問題の状況に即して説明せよ。,Interpret the meaning of f′(5) in the context of the problem. ／ State your conclusion in context.,AP Calculus AB|AP Statistics|数III|数B,editorial; CED,
+exam-indicate-units,exam,単位をつけて答えよ。,Indicate units of measure. ／ Use appropriate units.,AP Calculus AB|AP Calculus BC,editorial; CED,
+exam-use-the-table-to-approximate,exam,表のデータを用いて R′(5) の近似値を求めよ。,Use the data in the table to approximate R′(5). ／ Show the computations that lead to your answer.,AP Calculus AB|AP Calculus BC,editorial; CED,
+exam-write-an-equation-for-the-tangent-line,exam,x = 2 における y = f(x) の接線の方程式を求めよ。,Write an equation for the line tangent to the graph of f at x = 2.,数II|AP Calculus AB|Calculus I,editorial; CED,
+exam-describe-the-distribution,exam,分布の形・中心・散らばりを述べよ。,"Describe the shape, center, and variability of the distribution. ／ Describe the distribution.",数I|AP Statistics,editorial; CED (AP Statistics),
+exam-which-of-the-following,exam,次のうち正しいものを選べ。,Which of the following is true? ／ Which of the following could be the graph of f?,all,editorial; CED,
+exam-set-up-but-do-not-evaluate,exam,積分の式を立てるだけでよい（計算しなくてよい）。,"Set up, but do not evaluate, an integral for the volume. ／ Write, but do not evaluate, an integral expression.",数III|AP Calculus AB|Calculus I,editorial; OpenStax,
+exam-label-your-axes,exam,軸に名前と目盛りを書け。,Label your axes. ／ Label the diagram.,all,editorial,
+exam-box-your-answer,exam,最終的な答えを四角で囲め。,Box your final answer. ／ Circle your answer.,all,editorial; PLAN §15,
+exam-calculator-allowed,exam,この部分は電卓使用可（不可）です。,Calculators are allowed on this part. ／ This section is non-calculator. ／ Calculator Not Permitted,all,editorial; CED,
+exam-multiple-choice-and-free-response,exam,試験は選択問題と記述問題に分かれています。,The exam has a multiple-choice section and a free-response section.,all,editorial; CED,
+exam-partial-credit,exam,部分点があるので、分かるところは書きなさい。,"You can get partial credit, so write down what you know.",all,editorial,
+exam-notes-allowed,exam,ノート 1 枚（両面）まで持ち込みできます。,"You can bring one page of notes, front and back. ／ This is a closed-book exam.",all,editorial,
+exam-time-remaining,exam,残り 10 分です。,You have 10 minutes left. ／ Ten minutes remaining.,all,editorial,
+exam-pencils-down,exam,時間です。筆記用具を置いてください。,Time's up — pencils down. ／ Please stop writing.,all,editorial,
+exam-ask-typo,exam,4 番の問題文、誤植ではありませんか。,Is there a typo in number 4? ／ Should this be f(2) instead of f(3)?,all,editorial,
+exam-ask-scratch-paper,exam,計算用紙をもう 1 枚いただけますか。,Could I have another sheet of scratch paper?,all,editorial,
+exam-ask-can-i-write-on-the-back,exam,裏に書いてもいいですか。,Can I write on the back?,all,editorial,
+exam-ask-how-much-time,exam,あと何分ありますか。,How much time is left?,all,editorial,
+exam-when-do-we-get-it-back,exam,テストはいつ返却されますか。,When will we get the exams back?,all,editorial,
+exam-is-it-curved,exam,この試験は得点調整（カーブ）がありますか。,Is the exam curved? ／ Will there be a curve?,大学,editorial,
+email-subject-line,email,件名：MATH 221 セクション 3 ― 課題 5 についての質問,Subject: MATH 221 Sec. 3 – Question about HW 5,大学,editorial,
+email-greeting,email,〜先生（メールの書き出し）,"Dear Professor Smith, ／ Hi Professor Smith, ／ Hello Dr. Smith,",大学,editorial,
+email-introduce-yourself,email,月水金 10 時の MATH 221 を受講している山田太郎です。,"My name is Taro Yamada, and I'm in your MATH 221 section that meets MWF at 10.",大学,editorial,
+email-writing-to-ask,email,課題の 4 番についてお伺いしたく、ご連絡しました。,I'm writing to ask about problem 4 on the homework.,大学,editorial,
+email-describe-where-stuck,email,3 番は積分の式を立てるところまではできたのですが、絶対値の扱いが分かりません。,"For problem 3, I got as far as setting up the integral, but I'm not sure how to handle the absolute value.",大学,editorial,
+email-missed-class,email,水曜日の授業を欠席してしまいました。何か補っておくべきことはありますか。,I'm sorry I had to miss class on Wednesday. Is there anything I should do to catch up?,大学,editorial,
+email-cannot-make-office-hours,email,オフィスアワーの時間は授業があるため、別の時間にお会いできないでしょうか。,I have a class during your office hours. Would it be possible to meet at another time?,大学,editorial,
+email-regrade-request,email,中間試験の 2 番の採点について、見直しをお願いできないでしょうか。答案のスキャンを添付します。,I'd like to ask about the grading on problem 2 of the midterm. I've attached a scan of my work.,大学,editorial,
+email-extension,email,月曜から体調を崩しており、課題 6 の提出期限を少し延ばしていただくことは可能でしょうか。,Would it be possible to get a short extension on Homework 6? I've been sick since Monday.,大学,editorial,
+email-attached,email,解答を PDF で添付しました。,I've attached my work as a PDF. ／ Please see the attached file.,大学,editorial,
+email-dictionary-during-exam,email,英語が母語ではないため、試験中に紙の英和辞書を使ってもよいか伺いたいです。,English is not my first language. Would it be possible for me to use a paper bilingual dictionary during the exam?,大学,editorial,
+email-exam-conflict,email,期末試験の時間が別の試験と重なっています。別の時間に受けることはできますか。,I have a conflict with the final exam time. Would it be possible to take it at a different time?,大学,editorial,
+email-prerequisite,email,日本で数学 III を履修しましたが、MATH 221 の前提科目を満たしますか。,I took calculus in Japan (Math III). Would that satisfy the prerequisite for MATH 221?,大学,editorial,
+email-confirm,email,金曜日の小テストに 4.3 節も含まれるか確認させてください。,Could you confirm whether the quiz on Friday covers Section 4.3?,大学,editorial,
+email-follow-up,email,先週お送りしたメールの件で、改めてご連絡しました。,I just wanted to follow up on my email from last week.,大学,editorial,
+email-thank-you-for-your-time,email,お忙しいところありがとうございます。,Thank you for your time. ／ Thanks in advance.,大学,editorial,
+email-sign-off,email,（結び・署名）,"Best, Taro Yamada ／ Sincerely, ／ Thanks,",大学,editorial,
+group-study-work-together,group-study,一緒に課題やらない？,Do you want to work on the problem set together? ／ Want to study for the midterm together?,all,editorial,
+group-study-where-to-meet,group-study,7 時に図書館でいい？,Does 7 at the library work? ／ Let's meet at the library at 7.,all,editorial,
+group-study-what-did-you-get,group-study,5 番、答え何になった？,What did you get for number 5?,all,editorial,
+group-study-how-did-you-get-that,group-study,私は違う答えになった。どうやったか見せて。,I got something different — can you show me how you got that?,all,editorial,
+group-study-you-dropped-a-sign,group-study,ここ、マイナスが抜けてると思う。,I think you dropped a negative sign. ／ I think you forgot the 2 here.,all,editorial,
+group-study-split-them-up,group-study,何問かずつ分担して、あとで説明し合おう。,Let's each do a few and then explain them to each other. ／ Should we split them up?,all,editorial,
+group-study-write-up-our-own,group-study,相談はいいけど、答案はそれぞれ自分で書かないといけないよ。,"We can talk about the problems, but we have to write up our own solutions.",大学,editorial,
+group-study-answer-key-wrong,group-study,解答が間違ってる気がする。何回やっても 13 になる。,"I think the answer key might be wrong. ／ The back of the book says 12, but I keep getting 13.",all,editorial,
+group-study-ask-the-ta,group-study,TA に聞いてみようか。,Should we ask the TA? ／ Let's ask at office hours.,all,editorial,
+group-study-can-i-see-your-notes,group-study,月曜のノート見せてもらってもいい？,Can I see your notes from Monday?,all,editorial,
+group-study-quiz-each-other,group-study,問題出し合おう。,Let's quiz each other.,all,editorial,
+group-study-not-sure-but,group-study,自信ないけど、4 だと思う。,"I'm not sure, but I think it's 4. ／ Don't quote me on this, but …",all,editorial,
+group-study-oh-that-makes-sense,group-study,あ、なるほど！,"Oh, that makes sense now. ／ Ohh, I see.",all,editorial,
+group-study-practice-exam,group-study,時間を計って模擬試験を解こう。,Let's do the practice exam under timed conditions. ／ Let's go over the practice exam.,all,editorial,
+group-study-what-is-it-asking,group-study,この問題、何を聞いてるの？,What is this question even asking? ／ What are they asking for here?,all,editorial,
+group-study-where-do-we-start,group-study,これ、どこから手をつける？,Where do we even start with this one? ／ Any ideas for number 7?,all,editorial,
+discord-anyone-get,discord,3 番解けた人いる？,Did anyone get #3? ／ anyone figure out 3?,all,editorial,
+discord-due-tonight,discord,課題って今夜 11:59 締め切り？,Is the hw due tonight at 11:59?,all,editorial,
+discord-can-someone-explain,discord,ここで極限が 0 になる理由、誰か説明してくれない？,Can someone explain why the limit is 0 here?,all,editorial,
+discord-here-is-my-work,discord,途中までの計算貼るね。どこが違う？,Here's my work so far — where did I go wrong?,all,editorial,
+discord-hint-no-spoilers,discord,ヒントだけちょうだい。答えは書かないで。,Can someone give me a hint? No full solutions pls.,all,editorial,
+discord-nvm-figured-it-out,discord,ごめん、自己解決した。,"nvm, figured it out ／ never mind, got it",all,editorial,
+discord-thanks,discord,ありがとう、助かった！,"ty! ／ thanks, that helped",all,editorial,
+discord-same-answer,discord,自分も 12 になった。,"Same, I got 12 too. ／ +1",all,editorial,
+discord-notes-from-today,discord,今日の講義ノート持ってる人いる？,Does anyone have notes from today's lecture?,大学,editorial,
+discord-office-hours-today,discord,今日のオフィスアワーってある？,Are office hours still happening today?,大学,editorial,
+discord-quiz-covers,discord,小テストって 4.3 も入る？,Is 4.3 on the quiz too? ／ Does the quiz cover 4.3?,all,editorial,
+discord-when-is-the-midterm,discord,中間いつだっけ？,When's the midterm again?,all,editorial,
+discord-typo-in-the-pset,discord,課題の 5 番、誤植っぽくない？,I think there's a typo in #5 on the pset.,all,editorial,
+discord-right-channel,discord,微積の質問ってここでいい？,Is this the right channel for calc questions?,all,editorial,
+discord-study-on-a-call,discord,今夜通話で勉強しない？,Anyone want to hop on a call and study tonight?,all,editorial,

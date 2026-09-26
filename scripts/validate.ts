@@ -4,7 +4,7 @@
  * - JSON Schema (schema/*.schema.json)
  * - filename stem == id, no duplicate ids, no duplicate ja.term
  * - every LaTeX string compiles under KaTeX
- * - related / term_ref / term_refs resolve to an existing entry
+ * - related / term_ref / term_refs resolve to an existing entry (symbols and conventions relate to each other, both ways)
  * - the "definition of done" in CLAUDE.md (sources, examples, mapping_note)
  * - a verified entry carries no problem flag (record flags may stay; lib/flags.ts)
  * - a Japanese word shared by two entries is a listed homonym (SAME_JA)
@@ -169,8 +169,12 @@ for (const collection of COLLECTIONS) {
     checkLatex(where, data.latex);
 
     // cross-references ---------------------------------------------------
+    // terms relate to terms; symbols and conventions relate to each other (a notation's reading ↔ the JP/US difference)
     for (const r of (data.related as string[] | undefined) ?? []) {
-      checkRef(where, "related", r, "terms");
+      if (collection === "terms") checkRef(where, "related", r, "terms");
+      else if (!idsByCollection.symbols.has(r) && !idsByCollection.conventions.has(r)) {
+        err(where, `related points at "${r}", which has no file in data/symbols/ or data/conventions/`);
+      }
       if (r === data.id) err(where, "related refers to itself");
     }
     checkRef(where, "term_ref", data.term_ref, "terms");
@@ -263,6 +267,24 @@ for (const collection of COLLECTIONS) {
       const other = owner.get(data.id);
       if (other && other !== c) err(`${c}/${data.id}.json`, `id "${data.id}" is also used in data/${other}/ (the search index needs one id namespace)`);
       owner.set(data.id, c);
+    }
+  }
+}
+
+// ------------------------------------- symbols ↔ conventions both ways ---
+// A symbol and a convention on the same notation name each other in related,
+// so the reading and the difference are one click apart and written once.
+{
+  const relatedOf = new Map<string, string[]>();
+  for (const c of ["symbols", "conventions"] as const) {
+    for (const { data } of all[c]) relatedOf.set(`${c}/${data.id}`, (data.related as string[] | undefined) ?? []);
+  }
+  for (const [key, rel] of relatedOf) {
+    const [c, id] = key.split("/");
+    for (const r of rel) {
+      const other = idsByCollection.symbols.has(r) ? `symbols/${r}` : `conventions/${r}`;
+      if (other.split("/")[0] === c) continue;
+      if (relatedOf.has(other) && !relatedOf.get(other)!.includes(id)) warn(`${other}.json`, `related should include ${id} (${key} names it)`);
     }
   }
 }

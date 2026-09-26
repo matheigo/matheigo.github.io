@@ -13,6 +13,8 @@
   `-- <id>` で絞る）／ `./scripts/corpus/fetch-captions.sh <id> <url>`（任意の 1 URL）
 - pnpm corpus:fetch:openstax … OpenStax 9 冊の本文（CNXML）を written コーパスとして取得（CC BY-NC-SA、コミット固定）
 - pnpm corpus:fetch:notes … MIT OCW の講義ノート（PDF → pdftotext）を written コーパス mit-notes として取得
+- pnpm corpus:fetch:micase -- <zip> … MICASE（TalkBank CABank）の書き起こしを話し言葉コーパス micase にする。**phrases だけに数える**。
+  TalkBank はサインインした人にしか zip を出さないので、人間が落として手で実行する（docs/SOURCES.md）
 - pnpm corpus:count … コーパスの重複（同じファイル・同じ文）を除いて候補表現を数える → corpus/counts.json
 - pnpm corpus:probe … 書く前に候補表現を数える。`-- --decide --file x.txt` で 1 ブロック 1 エントリの判定まで出す
 - pnpm corpus:decide … 頻度比で register を決め、`-- --write` で evidence と flags を書き戻す（`--units <curriculum id,…>` で単元に絞る）

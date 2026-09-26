@@ -20,6 +20,22 @@ export interface CorpusDoc {
   text: string;
   /** Path under corpus/, for reports. */
   file?: string;
+  /** Collections this doc may be counted for; absent means all (MICASE: phrases only). */
+  collections?: string[];
+}
+
+/** The docs a collection is counted on: MICASE is for phrases only (DECISIONS, Phase 3 記号の前の修正 5). */
+export function forCollection<T extends { collections?: string[] }>(docs: T[], collection: string): T[] {
+  return docs.filter((d) => !d.collections || d.collections.includes(collection));
+}
+
+/**
+ * The source words a collection is weighted on: a source restricted to other
+ * collections is left out, so adding MICASE does not move the weights of the
+ * terms and symbols.
+ */
+export function wordsFor(words: Record<string, number>, restricted: Record<string, string[]> | undefined, collection: string): Record<string, number> {
+  return Object.fromEntries(Object.entries(words).filter(([id]) => !restricted?.[id] || restricted[id].includes(collection)));
 }
 
 export interface Counts {

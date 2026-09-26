@@ -18,6 +18,8 @@
  *       or the CED / OpenStax / IM / Nicholson / Levin / Wikipedia headword)
  *   --literal   count as written (phrases); the default counts as terms do:
  *               inflection folded, "…" = a one-to-three-word blank
+ *   --phrases   count on the phrases' corpus (adds MICASE, which terms and
+ *               symbols never see)
  *   --contexts [n]  also print n contexts (default 10) of each wording per
  *               register, picked at even steps through its hits (lib.ts
  *               sampleTermContexts). For the check of an everyday-word
@@ -51,6 +53,7 @@ import {
   normalize,
   sampleTermContexts,
   sourceWeights,
+  forCollection,
   VARIANTS,
   type CorpusDoc,
   type Verdict,
@@ -87,6 +90,7 @@ function load(): CorpusDoc[] {
       auto: m.auto,
       file: m.file,
       text: normalize(fs.readFileSync(path.join(CORPUS, m.file), "utf8")),
+      ...(m.collections ? { collections: m.collections } : {}),
     }));
   const deduped = dedupe(docs).docs;
   fs.writeFileSync(CACHE, JSON.stringify({ manifestMtime: mtime, rules: RULES, docs: deduped } satisfies Cache));
@@ -255,7 +259,8 @@ function main() {
     return;
   }
 
-  const docs = load();
+  // MICASE is for phrases only (lib.ts forCollection): --phrases counts on the phrases' corpus.
+  const docs = forCollection(load(), args.includes("--phrases") ? "phrases" : "terms");
   if (decideMode) {
     const blocks: string[][] = [[]];
     for (const line of lines.map((l) => l.trim())) {

@@ -281,6 +281,12 @@ US = [
     ("us-geometry-congruent-triangles", "traditional", "Geometry", "Congruent triangles",
      ["classifying triangles", "triangle angle sum", "SSS, SAS, ASA, AAS, HL", "CPCTC", "isosceles and equilateral triangles"],
      [("中2 平行と合同", "most"), ("中2 三角形と四角形", "most")], "geometry", [CCSS, GEO]),
+    ("us-geometry-relationships-within-triangles", "traditional", "Geometry", "Relationships within triangles",
+     ["midsegments", "perpendicular bisectors and angle bisectors in triangles", "points of concurrency: circumcenter, incenter, centroid, orthocenter", "medians and altitudes", "comparing sides and angles in a triangle", "triangle inequality theorem"],
+     [("数学A 図形の性質", "most"), ("中3 相似な図形", "some", "中点連結定理")], "geometry", [CCSS]),  # Phase 3 記号の前の修正 1 (CK-12 Geometry 4.19-4.26)
+    ("us-geometry-quadrilaterals", "traditional", "Geometry", "Quadrilaterals",
+     ["interior and exterior angle sums of polygons", "properties of parallelograms", "proving a quadrilateral is a parallelogram", "rectangles, rhombuses, and squares", "trapezoids and kites", "classifying quadrilaterals"],
+     [("中2 三角形と四角形", "most"), ("中2 平行と合同", "some", "多角形の内角の和・外角の和")], "geometry", [CCSS]),  # 同上 (CK-12 Geometry 5.7-5.19, 5.27-5.28)
     ("us-geometry-similarity", "traditional", "Geometry", "Similarity",
      ["dilations", "similar polygons", "AA, SAS, SSS similarity", "triangle proportionality theorem", "indirect measurement"],
      [("中3 相似な図形", "full")], "geometry", [CCSS, GEO]),

@@ -635,6 +635,7 @@ sec / csc / cot、hyperbolic functions、interval notation、slope-intercept / p
 3. **YouTube の講義録画・解説チャンネル（米国）**: Professor Leonard（コミュニティカレッジの講義録画）、The Organic Chemistry Tutor、PatrickJMT、NancyPi、blackpenredpen、3Blue1Brown。字幕または自動字幕を取得。
    - 除外または別タグ: 英国・豪州系（Eddie Woo 等）、非ネイティブ講師の個人チャンネル。
    - 1 チャンネルの比率上限 25%（講師の癖を辞典にしない）。
+4. **MICASE**（Michigan Corpus of Academic Spoken English、TalkBank CABank、1997〜2001 年収録。研究・教育目的は無料、商用は許可が必要）: office hours・study group・discussion section など学生の側の発話がある。**phrases の数え方にだけ使い、terms と symbols の判定には入れない**（2026-09-26 追加。docs/SOURCES.md）。
 規模の目安: 300〜500 本、300〜500 時間、数百万語。
 
 ### コーパス — 書き言葉

@@ -16,6 +16,7 @@ import {
   decide,
   decideRobust,
   dedupe,
+  forCollection,
   headsOf,
   inflections,
   mergeCandidates,
@@ -34,9 +35,11 @@ import {
   matcherFor,
   weigh,
   wikipediaHead,
+  wordsFor,
   type CorpusDoc,
   type ReferenceHits,
 } from "../scripts/corpus/lib";
+import { micaseEvent, parseChat, speakerClass, wordCount } from "../scripts/corpus/micase";
 
 describe("normalize", () => {
   it("reads a typed dy/dx as it is said", () => {
@@ -1041,5 +1044,56 @@ describe("SYMBOL_PATTERNS for square-root and summation-sigma", () => {
     expect(countPattern(text, countedAs("symbols", "summation-sigma", "the sum from k equals one to n of a sub k"))).toBe(1);
     // the short reading stays literal
     expect(countedAs("symbols", "square-root", "root x squared plus one")).toBe("root x squared plus one");
+  });
+});
+
+describe("MICASE (phrases only)", () => {
+  // A made-up transcript in CHAT form, not MICASE text.
+  const chat = [
+    "@UTF8",
+    "@Begin",
+    "@Participants:\tS1 Student_1 Student, S2 Instructor Teacher, S3 Unknown Unidentified",
+    "@ID:\teng|MICASE|S1|20;|female|||Student|JU||",
+    "@ID:\teng|MICASE|S2|45;|male|||Teacher|SF||",
+    "*S1:\tcould you walk me through [/] through this step ? \u001512_34\u0015",
+    "*S2:\tsure &-uh so (be)cause the <derivative> [>] is zero +...",
+    "\twe get a critical point .",
+    "*S3:\txxx okay .",
+    "%com:\tlaughter",
+    "@End",
+  ].join("\n");
+
+  it("reads the speech event from the file name", () => {
+    expect(micaseEvent("raw/MICASE/ofc575mu046.cha")).toEqual({ id: "OFC575MU046", type: "OFC", scene: "office hours", discipline: "575", level: "MU" });
+    expect(micaseEvent("0metadata.cha")).toBeNull();
+  });
+
+  it("splits a transcript into students, instructors and the rest, without CHAT markup", () => {
+    const t = parseChat(chat);
+    expect(t.speakers).toEqual({ S1: "student", S2: "instructor", S3: "other" });
+    expect(t.text.student).toEqual(["could you walk me through through this step ?"]);
+    expect(t.text.instructor).toEqual(["sure so because the derivative is zero we get a critical point ."]);
+    expect(t.text.other).toEqual(["okay ."]);
+    expect(wordCount(t.text.instructor)).toBe(13);
+  });
+
+  it("classifies academic-role codes", () => {
+    expect(speakerClass(["JG"])).toBe("student");
+    expect(speakerClass(["JF"])).toBe("instructor");
+    expect(speakerClass(["ST staff"])).toBe("other");
+  });
+
+  it("keeps a phrases-only source out of the terms' docs and weights", () => {
+    const docs: CorpusDoc[] = [
+      { id: "mit", register: "spoken", auto: false, text: "a" },
+      { id: "micase", register: "spoken", auto: false, text: "b", collections: ["phrases"] },
+    ];
+    expect(forCollection(docs, "terms").map((d) => d.id)).toEqual(["mit"]);
+    expect(forCollection(docs, "phrases").map((d) => d.id)).toEqual(["mit", "micase"]);
+    const words = { mit: 100, micase: 300 };
+    const restricted = { micase: ["phrases"] };
+    expect(wordsFor(words, restricted, "terms")).toEqual({ mit: 100 });
+    expect(wordsFor(words, restricted, "phrases")).toEqual(words);
+    expect(sourceWeights(wordsFor(words, restricted, "terms"))).toEqual({ mit: 1 });
   });
 });

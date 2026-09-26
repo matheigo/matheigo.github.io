@@ -13,6 +13,9 @@
  *             fetch-notes.ts (`pnpm corpus:fetch:notes`).
  *   OpenStax  automated - the book source (CNXML) is public on GitHub. See
  *             fetch-openstax.ts (`pnpm corpus:fetch:openstax`).
+ *   MICASE    manual - TalkBank serves it to signed-in users only. Download
+ *             the zip by hand and run fetch-micase.ts on it
+ *             (`pnpm corpus:fetch:micase -- <zip>`). Phrases only.
  *   YouTube   manual - terms of service are the operator's call, and it needs
  *   / Khan    yt-dlp. fetch-captions.ts runs every configured Khan playlist and
  *             YouTube channel as one batch; fetch-captions.sh takes any one
@@ -33,6 +36,11 @@ export interface ManifestEntry {
   title: string;
   license: string;
   url?: string;
+  /** Collections this file may be counted for; absent means all (MICASE: phrases only). */
+  collections?: string[];
+  /** MICASE: the speech event and the speaker class (fetch-micase.ts). */
+  scene?: string;
+  speaker?: string;
 }
 
 const PLANNED: Omit<ManifestEntry, "file">[] = [
@@ -54,6 +62,9 @@ const PLANNED: Omit<ManifestEntry, "file">[] = [
   { id: "yt:nancypi", register: "spoken", auto: true, title: "NancyPi", license: "captions, counted as facts only" },
   { id: "yt:blackpenredpen", register: "spoken", auto: true, title: "blackpenredpen", license: "captions, counted as facts only" },
   { id: "yt:3blue1brown", register: "spoken", auto: true, title: "3Blue1Brown", license: "captions, counted as facts only" },
+  // spoken, hand-transcribed academic speech (office hours, study groups, discussion sections ...).
+  // Counted for phrases only, never for terms or symbols (DECISIONS, Phase 3 記号の前の修正 5).
+  { id: "micase", register: "spoken", auto: false, title: "MICASE (Michigan Corpus of Academic Spoken English, TalkBank CABank)", license: "TalkBank; research and education free, commercial use needs permission", url: "https://ca.talkbank.org/access/MICASE.html", collections: ["phrases"] },
   // written
   { id: "openstax-calculus", register: "written", auto: false, title: "OpenStax Calculus Vol 1-3", license: "CC BY-NC-SA 4.0" },
   { id: "openstax-precalculus", register: "written", auto: false, title: "OpenStax Precalculus 2e", license: "CC BY-NC-SA 4.0" },
@@ -78,7 +89,7 @@ function list() {
   for (const reg of ["spoken", "written"] as const) {
     console.log(`[${reg}]`);
     for (const s of PLANNED.filter((p) => p.register === reg)) {
-      console.log(`  ${s.id.padEnd(22)} ${s.auto ? "auto " : "human"}  ${s.title}  (${s.license})`);
+      console.log(`  ${s.id.padEnd(22)} ${s.auto ? "auto " : "human"}  ${s.title}  (${s.license})${s.collections ? `  [${s.collections.join(", ")} only]` : ""}`);
     }
     console.log("");
   }
@@ -88,6 +99,7 @@ function list() {
   console.log(`OCW notes:      pnpm corpus:fetch:notes`);
   console.log(`OpenStax:       pnpm corpus:fetch:openstax`);
   console.log(`Khan / YouTube: pnpm corpus:fetch:captions [-- <id> ...]   (run by hand)`);
+  console.log(`MICASE:         pnpm corpus:fetch:micase -- <MICASE.zip>   (download by hand after signing in to TalkBank; phrases only)`);
   console.log(`YouTube / Khan: ./scripts/corpus/fetch-captions.sh <id> <url>   (run by hand)`);
   console.log(`Anything else:  plain text at corpus/<id>/*.txt, listed in corpus/manifest.json.`);
   console.log(`See scripts/corpus/manifest.example.json for the shape.`);

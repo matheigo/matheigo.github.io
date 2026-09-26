@@ -63,6 +63,7 @@ import {
   settleUndecided,
   sourceWeights,
   spokenLeanHead,
+  wordsFor,
   type LeanHead,
   type Register,
   type Settled,
@@ -232,7 +233,11 @@ function main() {
     return;
   }
   const file = JSON.parse(fs.readFileSync(countsPath, "utf8")) as CountsFile;
-  const weights = sourceWeights(file.sources);
+  // Each collection is weighted on the sources it is counted on (MICASE: phrases only; lib.ts wordsFor).
+  const weightsOf = Object.fromEntries(
+    COUNTED.map((c) => [c, sourceWeights(wordsFor(file.sources, file.restricted, c))]),
+  ) as Record<Collection, Record<string, number>>;
+  const weights = weightsOf.terms;
 
   const all = loadAll();
   const byId = new Map<string, (typeof all)[Collection][number]>(
@@ -269,8 +274,9 @@ function main() {
     };
     const record = entry.data as unknown as Record<string, unknown>;
 
-    const spoken = decideRobust(c.spoken, weights, "spoken");
-    const written = c.collection === "symbols" ? null : decideRobust(c.written, weights, "written");
+    const w = weightsOf[c.collection] ?? weights;
+    const spoken = decideRobust(c.spoken, w, "spoken");
+    const written = c.collection === "symbols" ? null : decideRobust(c.written, w, "written");
 
     // ③: settle it where the rules allow (lib.ts settleUndecided). Only terms
     // carry a mapping and are counted against the references.
@@ -466,8 +472,10 @@ function main() {
   const writtenBack = lines.filter((l) => l.wroteBack);
   const leaning = lines.filter((l) => l.lean);
 
-  const totalWords = Object.values(file.sources).reduce((a, b) => a + b, 0) || 1;
-  const weightRows = Object.entries(file.sources)
+  // The table shows the terms' weights; a source counted for other collections only (MICASE) is listed under it.
+  const termSources = wordsFor(file.sources, file.restricted, "terms");
+  const totalWords = Object.values(termSources).reduce((a, b) => a + b, 0) || 1;
+  const weightRows = Object.entries(termSources)
     .sort((a, b) => b[1] - a[1])
     .map(([id, w]) => {
       const raw = (w / totalWords) * 100;
@@ -490,6 +498,10 @@ function main() {
     "",
     "1 ソースの寄与は max(25%, 1/ソース数) までに均す。拒否ではなく重み付けなので、OCW だけの状態でも回る。",
     "",
+    ...Object.entries(file.restricted ?? {}).map(
+      ([id, cs]) => `${id}（${(file.sources[id] ?? 0).toLocaleString()} 語）は ${cs.join("・")} だけに数える。下の表（terms の重み）には入れず、${cs.join("・")} はそれを含めて重みを付ける。`,
+    ),
+    ...(file.restricted ? [""] : []),
     "| ソース | 語数 | 生の比率 | 重み付け後 | 係数 |",
     "|---|---|---|---|---|",
     ...weightRows,

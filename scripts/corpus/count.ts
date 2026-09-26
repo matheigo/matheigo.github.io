@@ -31,6 +31,7 @@ import {
   countEntry,
   countedAs,
   dedupe,
+  forCollection,
   normalize,
   referenceHits,
   referred as anyReference,
@@ -69,6 +70,8 @@ export interface CountsFile {
   counted: string;
   /** source id -> words, used by decide.ts to compute weights */
   sources: Record<string, number>;
+  /** source id -> the only collections it is counted for (MICASE: phrases); sources not listed count for all */
+  restricted?: Record<string, string[]>;
   /** source id -> what dedupe removed; absent with --no-dedupe */
   dedupe?: Record<string, DedupeStats>;
   entries: EntryCounts[];
@@ -94,6 +97,7 @@ function loadCorpus(): CorpusDoc[] {
       auto: m.auto,
       text: normalize(fs.readFileSync(path.join(CORPUS, m.file), "utf8")),
       file: m.file,
+      ...(m.collections ? { collections: m.collections } : {}),
     }));
 }
 
@@ -160,11 +164,16 @@ function main() {
   };
   const wikipedia = wikipediaNames(new Set(Object.keys(WIKIPEDIA_NOT_SAME)));
 
+  const restricted: Record<string, string[]> = {};
+  for (const d of docs) if (d.collections) restricted[d.id] = d.collections;
+
   for (const collection of COUNTED) {
+    // MICASE is for phrases only (lib.ts forCollection).
+    const counted = forCollection(docs, collection);
     for (const { data } of all[collection]) {
       const record = data as unknown as Record<string, unknown>;
       const candidates = candidatesOf(collection, record);
-      const t = countEntry(docs, collection, candidates, headwordOf(collection, record));
+      const t = countEntry(counted, collection, candidates, headwordOf(collection, record));
       const wiki = collection === "terms" ? wikipedia.get(data.id) : undefined;
       const reference =
         collection === "terms"
@@ -174,7 +183,7 @@ function main() {
       if (t.sources.length === 0 && !referred) continue;
       if (WITH_CONTEXTS) {
         for (const candidate of candidates) {
-          for (const doc of docs) hits.push(...contexts(doc.text, candidate, doc.id));
+          for (const doc of counted) hits.push(...contexts(doc.text, candidate, doc.id));
         }
       }
       entries.push({
@@ -193,6 +202,7 @@ function main() {
   const out: CountsFile = {
     counted: localDate(),
     sources: words,
+    ...(Object.keys(restricted).length ? { restricted } : {}),
     ...(removed ? { dedupe: removed } : {}),
     entries,
   };

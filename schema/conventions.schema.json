@@ -15,6 +15,11 @@
     },
     "level": { "$ref": "_common.schema.json#/$defs/level" },
     "term_refs": { "type": "array", "items": { "$ref": "_common.schema.json#/$defs/id" } },
+    "related": {
+      "type": "array",
+      "items": { "$ref": "_common.schema.json#/$defs/id" },
+      "description": "symbols ↔ conventions: the reading and writing of a notation live in symbols, the JP/US difference in conventions; each names the other here (DECISIONS, Phase 3 記号の前の修正 2)."
+    },
     "sources": { "$ref": "_common.schema.json#/$defs/sources" },
     "confidence": { "$ref": "_common.schema.json#/$defs/confidence" },
     "flags": { "$ref": "_common.schema.json#/$defs/flags" },
