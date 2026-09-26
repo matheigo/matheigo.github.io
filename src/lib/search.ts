@@ -151,6 +151,16 @@ export function createIndex(docs: SearchDoc[]): MiniSearch<SearchDoc> {
   return mini;
 }
 
+/**
+ * The page builds MiniSearch in chunks, yielding between them, so a keystroke
+ * right after load is answered by the scan instead of waiting for the build.
+ */
+export async function createIndexAsync(docs: SearchDoc[], chunkSize = 150): Promise<MiniSearch<SearchDoc>> {
+  const mini = new MiniSearch<SearchDoc>(indexOptions);
+  await mini.addAllAsync(docs, { chunkSize });
+  return mini;
+}
+
 /** The query as typed, and as kana when the input looks like romaji. */
 export function queryForms(raw: string): string[] {
   const q = raw.trim();

@@ -103,7 +103,7 @@ const sections = [
 </Base>
 
 <script>
-  import { createIndex, expand, lookup, type CompactIndex, type SearchDoc } from "../lib/search";
+  import { createIndexAsync, expand, lookup, type CompactIndex, type SearchDoc } from "../lib/search";
   import { GLOSS_LABEL, GLOSS_SHORT } from "../lib/gloss";
 
   const KIND: Record<string, string> = { term: "用語", symbol: "記号", phrase: "フレーズ", convention: "慣習差" };
@@ -114,7 +114,7 @@ const sections = [
   const home = document.getElementById("home") as HTMLDivElement;
 
   let docs: SearchDoc[] | null = null;
-  let mini: ReturnType<typeof createIndex> | null = null;
+  let mini: Awaited<ReturnType<typeof createIndexAsync>> | null = null;
 
   const escape = (s: string) =>
     s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
@@ -159,12 +159,14 @@ const sections = [
     .then((r) => r.json() as Promise<CompactIndex>)
     .then((index) => {
       docs = expand(index);
+      document.documentElement.dataset.search = "scan";
       run();
-      // The substring scan answers until MiniSearch is ready; build it off the input path.
-      setTimeout(() => {
-        mini = createIndex(docs!);
+      // The substring scan answers until MiniSearch is ready; build it in chunks off the input path.
+      return createIndexAsync(docs).then((built) => {
+        mini = built;
+        document.documentElement.dataset.search = "ready";
         if (input.value.trim()) run();
-      }, 0);
+      });
     })
     .catch(() => {
       status.textContent = "検索の索引を読み込めませんでした。";
@@ -189,9 +191,8 @@ const sections = [
   document.addEventListener("matheigo:unverified-changed", run);
 
   const initial = new URLSearchParams(location.search).get("q");
-  if (initial) {
-    input.value = initial;
-    run();
-  }
+  if (initial) input.value = initial;
+  // On a slow connection the user may have typed before this script arrived.
+  if (input.value.trim()) run();
   if (location.hash === "#q") input.focus();
 </script>

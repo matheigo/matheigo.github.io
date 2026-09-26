@@ -36,7 +36,8 @@
     "postbuild": "tsx scripts/export.ts && pnpm run export:anki && pnpm run export:pdf",
     "export:anki": "if [ -x .venv/bin/python ]; then .venv/bin/python scripts/export-anki.py; else python3 scripts/export-anki.py; fi",
     "export:pdf": "tsx scripts/export-pdf.ts",
-    "build:og": "tsx scripts/build-og.ts"
+    "build:og": "tsx scripts/build-og.ts",
+    "perf": "tsx scripts/perf/measure.ts"
   },
   "dependencies": {
     "astro": "^5.14.1",
@@ -49,6 +50,7 @@
     "@types/node": "^22.10.2",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
+    "chrome-launcher": "^1.2.1",
     "cspell": "^8.17.1",
     "eslint": "^9.17.0",
     "fast-glob": "^3.3.3",

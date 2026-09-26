@@ -21,8 +21,10 @@
 - pnpm corpus:decide … 頻度比で register を決め、`-- --write` で evidence と flags を書き戻す（`--units <curriculum id,…>` で単元に絞る）
 - python3 scripts/ledger/refetch.py … 台帳の langlink と参照（AP Calculus ／ AP Statistics の CED・Nicholson・Levin。docs/SOURCES.md）を一括取得（キャッシュ・タイムアウト・リトライ上限つき）
 - python3 scripts/ledger/fetch_jp_exams.py … 慣習差の日本側: 共通テスト・センター試験の本試験 数学の問題と正解（センターのサイトと Internet Archive の写し）を一括取得し、画像だけの PDF は macOS の Vision で OCR（docs/SOURCES.md）
-- pnpm build      … validate → search-index → サイト → dist/data の書き出しまで通す
+- pnpm build      … validate → search-index → OGP 画像 → サイト → dist/data の書き出し（Anki・PDF は verified があるときだけ）まで通す
 - pnpm export     … JSON/CSV/Quizlet TSV を dist/data に出力
+- pnpm export:anki ／ pnpm export:pdf … Anki デッキ（genanki。`python3 -m venv .venv && .venv/bin/pip install -r scripts/requirements.txt`）と単語対訳表 PDF（手元の Chrome）。verified だけ。0 件なら何も書かない
+- pnpm perf       … Phase 4 の完了条件を測る（Lighthouse モバイル・初回の検索までの時間）。`-- --site <dir> --label <name>`。結果は perf/（gitignore）
 - pnpm test       … スクリプトと検索のユニットテスト
 - pnpm dev        … ローカルで確認
 
