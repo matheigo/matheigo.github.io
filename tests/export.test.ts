@@ -41,10 +41,12 @@ beforeAll(() => {
   write(dir, "phrases", [verified(phrase)]);
   write(dir, "curriculum", loadCollection("curriculum").map((e) => e.data));
 
+  // nothing verified: the real entries may have been verified by the Phase 5 audit since, so the fixture forces likely
+  const likely = (e: Entry): Entry => ({ ...e, confidence: "likely" });
   empty = fs.mkdtempSync(path.join(os.tmpdir(), "matheigo-export-empty-"));
-  write(empty, "terms", [rate, quadratic].map(withGloss));
-  write(empty, "symbols", [symbol]);
-  write(empty, "phrases", [phrase]);
+  write(empty, "terms", [likely(rate), likely(quadratic)].map(withGloss));
+  write(empty, "symbols", [likely(symbol)]);
+  write(empty, "phrases", [likely(phrase)]);
   write(empty, "curriculum", []);
 });
 
