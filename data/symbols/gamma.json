@@ -62,6 +62,16 @@
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 gamma（本文 7 件）。register は主張しない。",
       "raised": "2026-09-27"
+    },
+    {
+      "code": "audit-human",
+      "note": "Phase 5 監査（2026-09-27）で判断がつかない: γ の読み gamma を決める根拠が規則に足りない: 用例コーパスは γ の読み 3 件の ③、③ で読みを決めた OpenStax の本文 7 件のうち γ を読む文は Algebra and Trigonometry 7.1 の表と 10.1 の angle γ (gamma) の 2 件（Precalculus 5.1・8.1 の同じ文は重複除去で 1 回。残りはガンマ関数・合金・変異株の名前）で、どの参照も 3 件に届かない。人間に決めてほしいこと: 読み gamma でよいか。人間レビューへ。",
+      "raised": "2026-09-27"
     }
-  ]
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-09-27",
+    "human": null
+  }
 }
