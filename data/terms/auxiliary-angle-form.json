@@ -97,13 +97,13 @@
   },
   "flags": [
     {
-      "code": "audit-human",
-      "note": "Phase 5 監査（2026-09-27）で判断がつかない: 見出し auxiliary-angle form（alt の harmonic form も）は用例コーパス・参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）・英語版 Wikipedia に 0 件で、STYLE の直訳禁止リストの行から来た言い方。資料にある言い方は MIT OCW 18.03 の amplitude-phase form（話し言葉）、OpenStax Calculus Volume 3（7.3）の in the form A sin(ωt + ϕ)、英語版 Wikipedia「List of trigonometric identities」の harmonic addition（本文。太字ではない）で、どれも規則では見出しにならない（決まった言い方が出てこない）。見出しを人間が決める（監査 2 の the-five-centers-of-a-triangle と同じ型）。決まったら STYLE の直訳禁止リストの行と conventions/jp-named-techniques-unnamed-in-us の single sine function も合わせる。続きのセッションが 0 件の alt・確かめられない mapping_note・level.us（Calculus III）を直した。人間レビューへ。",
+      "code": "corpus-no-fixed-expression",
+      "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 5 件 ／ 書 0 件）。mapping none なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
       "raised": "2026-09-27"
     },
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 5 件 ／ 書 0 件）。mapping none なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: ユーザーの決定 1（監査 8 の前。監査 7 の H-a）で見出しを rewriting a sin θ + b cos θ as a single sine function（説明の訳）にし、mapping near → none、MIT OCW 18.03 の amplitude-phase form を register spoken の variant に、資料に 0 件の auxiliary-angle form・harmonic form を en から外した（flag audit-human は外した）。見直す点: mapping_note（ユーザーの決定の文と corpus:decide の文、OpenStax Calculus Volume 3 7.3 の事実、説明の訳であること）、variant の note（18.03 の A cos(ωt − φ) の形と複素数の極形式）、例文が見出しの言い方を使わないこと（説明の訳の例外）、STYLE の直訳禁止リストの行と conventions/jp-named-techniques-unnamed-in-us の us・advice_ja。次の監査のセッションが見直す。",
       "raised": "2026-09-27"
     }
   ]
