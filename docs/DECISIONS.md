@@ -1087,3 +1087,12 @@
 - 2026-09-27 | 5 | audit-major-fix の 12 語（バッチ 15・16）はすべて資料で確かめて verified に（合格 5・小さな直し 7）。③ の語は参照の根拠の文脈を corpus:probe --contexts で読んだ（決定 9）。資料（解説・共通テスト・日本語版 Wikipedia）に 0 件の ja.alt（solution-set の 解の範囲）と、用例コーパス・参照に 0 件の en.alt（universal-set の universal set。pitfalls が触れる）は外した。endpoint の langlink（区間 (数学) ↔ Interval (mathematics)）は区間の記事で端点とは別の概念なので、reference の出典に直した | 監査の観点 ⑧（langlink の概念）と、0 件の alt を外すこれまでの扱い
 - 2026-09-27 | 5 | バッチ 17・18 は、見直し役 10 人（Opus 5.5）に頼み、親も 100 語を読んだところで区切った（ユーザーの指示: キリのいいところで終わる）。見直し役の結果は audits/work/batch17-r1〜r5.md・batch18-r1〜r5.md、親の気づきは audits/work/batch17-parent.md・batch18-parent.md（どれも gitignore、2026-09-27 のデータに対するもの）。次のセッションはこれを使って直しと判定から始める | 直しの途中でセッションを終えると、直しと判定が別のセッションに割れる。読んだ結果だけを残して区切った
 
+
+## Phase 5 監査（セッション 7）の前の決定 — 2026-09-27
+
+- 2026-09-27 | 5 | 進め方（公開まで）: 規則と仕組みの変更は、学生が読む中身（en・mapping・定義・例文・注記の事実・level）が間違うものだけにする。それ以外の規則の問題（書き方の揃え、警告の範囲、記録の欄、出どころの文など）は直さず audits/backlog.md に積み、公開の後にまとめて判断する。監査のレポートの H も「中身が間違うもの」と「backlog に積んだもの」を分けて書く | ユーザーの決定。エントリの監査（13 の観点を今の規則で当てる）は変えない
+- 2026-09-27 | 5 | 1. 監査 6 の H-1: 規則は変えない（「米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない」の型の文と決定 1 の level.us はそのまま）。power-of-a-point・eulers-formula-for-polyhedra など、型の文が概念として誤りの語（参照が同じ概念を別の名前で扱う: CK-12 Geometry の Intersecting Chords ほかの定理、Euler's Theorem）は、バッチ 18 の監査で文と level を直す | ユーザーの決定
+- 2026-09-27 | 5 | 2. 監査 6 の H-2: level.us は概念で決めてよい。参照の本文に同じ概念があれば（言い方が違っても）そのコースを level.us に残す。その言い方は見出しを決める候補（en.alt・variants）には足さない。バッチ 18 の point-of-internal-division（CK-12 Geometry 1.6 の partition）・relative-positions-of-two-lines（CK-12 Geometry の skew lines）に当てる | ユーザーの決定。決定 7 の機械の判定（言い方の有無）は残し、概念で残したコースは level-us.ts が外す案に出さない
+- 2026-09-27 | 5 | 3. 監査 6 の H-3: 見出しの語を含む参照の定理名（side-angle-side triangle congruence theorem・exterior angle sum theorem など）は、監査 5 の決定 3 の collocation と同じく見出しと競わせない。数え直して、sas-congruence・sss-congruence・asa-congruence・sum-of-the-exterior-angles の見出しの形を揃え、flag audit-major-fix の 4 語の見直し（監査 6 の J-2）で確かめる | ユーザーの決定（H-3 の (b)）
+- 2026-09-27 | 5 | 4. 監査 6 の H-7: ja.alt は資料（学習指導要領・解説、共通テスト・センター試験、日本語版 Wikipedia）に根拠があるものだけ残す、を STYLE の追記欄に書いた。全体の洗い直しはせず、監査の中で当てる | ユーザーの決定。原則 6 のカタカナ語（インテグラル・シグマは日本語版 Wikipedia にある）も同じ扱い
+- 2026-09-27 | 5 | 5. 監査 6 の H-4（mapping_note の判定の説明）・H-5（用例コーパスの出どころだけの文）・H-6（latex があるのに spoken_en が null）・H-9（人間が見出しを決めた語の register）は audits/backlog.md に積む。H-8（nonresponse の見出しと定義）は予定どおりバッチ 28 の監査で | ユーザーの決定。どれも学生が読む中身は間違わない（判定の説明・出どころは事実として正しく、spoken_en が無いのは欠け）

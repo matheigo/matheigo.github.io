@@ -165,3 +165,4 @@ Algebra 1 の先生は、口頭でも「両辺に同じ操作」の言い方を�
 - **英語版 Wikipedia の記事名で決めた見出しは記事を読む**（Phase 5 監査 6 の決定 5）: `python3 scripts/audit/wikipedia_heads.py` の一覧（audits/checks/wikipedia-heads.md、show_batch の !WIKI）の語は、`enwiki.py` で記事を読んで見出しと同じ概念かを確かめる。別の概念なら lib.ts `WIKIPEDIA_NOT_SAME` に理由付きで足して数え直す
 - **③ で参照が決めた見出しは根拠の文脈を読む**（Phase 5 監査 6 の決定 9）: `pnpm corpus:probe -- --contexts "<見出し>"` で用例コーパスと参照（行頭「参」: CED・IM・CK-12・Nicholson・Levin）の文脈を読み、件数が別の意味・別の用法（練習問題の指示、定理の前提）で数えられていないかを確かめる（show_batch の !③REF）
 
+- **ja.alt は資料に根拠があるものだけ**（Phase 5 監査 7 の前の決定 4。監査 6 の H-7）: ja.alt は学習指導要領・解説（〔用語・記号〕を含む）、共通テスト・センター試験、日本語版 Wikipedia のどれかに同じ意味で出てくる言い方だけにする（`python3 scripts/audit/refgrep.py jp -s <語>`、記事は `python3 scripts/audit/jawiki.py --search <語>`）。資料に 0 件の ja.alt は外す。原則 6 のカタカナ語（インテグラル・シグマ）も同じ。全体の洗い直しはせず、監査の中で当てる
