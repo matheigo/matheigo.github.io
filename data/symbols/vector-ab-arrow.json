@@ -27,7 +27,7 @@
   },
   "notes": [
     "AB⃗ は vector A B か the vector from A to B と読む。",
-    "米国の Geometry の教科書では、同じ形の矢印を半直線 AB（ray AB）に使うことがある（ray-ab-arrow）。"
+    "CK-12 Geometry（1.1 Geometry Terms）は同じ形の矢印の AB を ray AB と読む（ray-ab-arrow）。"
   ],
   "sources": [
     {
@@ -36,11 +36,22 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3",
-      "note": "vector PQ ／ vector AB（7 件。OpenStax Algebra and Trigonometry と合わせて 8 件。読みを決めた参照）"
+      "note": "2.1 Vectors in the Plane（PQ→）・2.2・2.3（vector PQ→ ／ vector AB→。OpenStax Algebra and Trigonometry と合わせて 8 件。読みを決めた参照）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.1 Geometry Terms（矢印の CD を Ray CD と読む）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "8.8 Vectors（PQ→）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "the vector from * to *": 3,
@@ -50,13 +61,13 @@
       "mit-18.02",
       "mit-18.06"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 vector a b | vector ab | vector p q | vector pq（本文 8 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

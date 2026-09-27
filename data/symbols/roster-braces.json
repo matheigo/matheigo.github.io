@@ -13,7 +13,7 @@
   ],
   "spoken_ja": "1, 2, 3 を要素とする集合",
   "name_en": "roster notation",
-  "name_ja": "要素を並べて表す集合",
+  "name_ja": "要素を列挙して表す集合",
   "category": "sets",
   "term_ref": "set",
   "level": {
@@ -37,11 +37,22 @@
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "5.1 Sets。{1, 2, 3} の読みを the set containing … とする（10 件。読みを決めた参照）"
+      "note": "5.1 Sets（{1, 2, 3} を the set containing 1, 2, and 3 と読む。読みを決めた参照）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "11.7 Probability（roster notation）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「集合」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%9B%86%E5%90%88",
+      "note": "記法（要素をすべて列挙する方法、条件を明示する方法）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "the set one | the set zero | the set a comma": 7
@@ -50,13 +61,13 @@
       "khan-algebra",
       "mit-6.042"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 対象外）。読みは Levin の呼び方 the set containing *（5.1 Sets・1.5 Proofs about Discrete Structures）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

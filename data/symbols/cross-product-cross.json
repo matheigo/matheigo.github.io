@@ -3,11 +3,11 @@
   "latex": "\\vec{u} \\times \\vec{v}",
   "spoken_en": [
     {
-      "text": "the cross product of u and v",
+      "text": "u cross v",
       "register": "standard"
     },
     {
-      "text": "u cross v",
+      "text": "the cross product of u and v",
       "register": "spoken"
     }
   ],
@@ -26,7 +26,7 @@
     ]
   },
   "notes": [
-    "u⃗ × v⃗ は u cross v と読む。× を cross と読む。",
+    "u⃗ × v⃗ は u cross v か the cross product of u and v と読む。× を cross と読む。",
     "× は数の掛け算（times）と同じ形の記号。"
   ],
   "sources": [
@@ -35,34 +35,28 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 3"
+      "title": "OpenStax Calculus Volume 3",
+      "note": "2.4 The Cross Product（the cross product of r and F: τ = r × F ほか）"
     },
     {
       "type": "reference",
       "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
       "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
-      "note": "4.3 More on the Cross Product"
+      "note": "4.2 Projections and Planes（Definition 4.8 Cross Product）・4.3 More on the Cross Product"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "the cross product of *": 9,
-      "u cross v | a cross b | v cross w | v cross u | b cross a | u cross w | a cross c | b cross c": 6
+      "u cross v | a cross b | v cross w | v cross u | b cross a | u cross w | a cross c | b cross c | r cross v | v cross v | w cross v": 23
     },
     "sources": [
       "mit-18.02",
       "mit-6.042",
       "yt:3blue1brown"
     ],
-    "counted": "2026-09-25"
-  },
-  "flags": [
-    {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満 ／ 書: 対象外）。読みは OpenStax の呼び方 the cross product of *（本文 32 件）。register は主張しない。",
-      "raised": "2026-09-25"
-    }
-  ]
+    "counted": "2026-09-27"
+  }
 }

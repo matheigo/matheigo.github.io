@@ -3,12 +3,8 @@
   "latex": "(a, b)",
   "spoken_en": [
     {
-      "text": "the open interval a, b",
-      "register": "standard"
-    },
-    {
       "text": "the open interval from a to b",
-      "register": "spoken"
+      "register": "standard"
     }
   ],
   "spoken_ja": "開区間 a b ／ a より大きく b より小さい",
@@ -31,7 +27,7 @@
     ]
   },
   "notes": [
-    "(a, b) は the open interval a, b（from a to b）と読む。点 (a, b) と同じ形なので、区間なら interval を付けて言う。"
+    "(a, b) は the open interval from a to b と読む。点 (a, b) と同じ形なので、区間なら interval を付けて言う。"
   ],
   "sources": [
     {
@@ -40,21 +36,19 @@
     {
       "type": "reference",
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
-      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf"
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 5.1（open interval）・Topic 5.6（open interval）・Topic 10.13（open interval）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "open interval !from": 100,
-      "open interval from *": 14
+      "open interval from * | open interval, from *": 16
     },
     "sources": [
-      "khan-ap-calc",
-      "mit-18.03",
-      "yt:profleonard"
+      "khan-ap-calc"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -3,15 +3,11 @@
   "latex": "p \\Leftrightarrow q,\\ p \\leftrightarrow q",
   "spoken_en": [
     {
-      "text": "p is equivalent to q",
-      "register": "standard"
-    },
-    {
       "text": "p if and only if q",
       "register": "standard"
     },
     {
-      "text": "p iff q",
+      "text": "p is equivalent to q",
       "register": "spoken"
     }
   ],
@@ -38,21 +34,34 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Precalculus 2e"
+      "title": "OpenStax Precalculus 2e",
+      "note": "6.3 Logarithmic Functions（⇔ の使用）"
     },
     {
       "type": "reference",
       "title": "CK-12 Foundation, CK-12 Geometry (K12 LibreTexts)",
-      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry"
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.12 Converse, Inverse, and Contrapositive Statements（p ↔ q, said p if and only if q）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.1 Mathematical Statements（P ↔ Q is read P if and only if Q）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "2.4 Matrix Inverses の脚注（written p ⇔ q, spoken p if and only if q）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "if and only if": 76,
-      "is equivalent to *": 109,
-      "iff": 2
+      "is equivalent to *": 109
     },
     "sources": [
       "khan-algebra",
@@ -69,6 +78,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

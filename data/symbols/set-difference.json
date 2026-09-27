@@ -7,7 +7,7 @@
       "register": "standard"
     }
   ],
-  "spoken_ja": "A から B を除いた集合（日本の高校では A ∩ B̄）",
+  "spoken_ja": "A から B を除いた集合",
   "name_en": "set difference",
   "name_ja": "差集合",
   "category": "sets",
@@ -21,8 +21,8 @@
     ]
   },
   "notes": [
-    "A minus B とも読む（数の引き算と同じ言い方）。",
-    "差集合は米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない。Levin は A ∖ B を set difference と書く（3 件）。"
+    "A − B とも書く（英語版 Wikipedia「Complement (set theory)」の Relative complement）。A ∖ B は A ∩ B̄ と同じ集合（Levin 5.1）。",
+    "差集合は米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない。Levin は A ∖ B を set difference ／ difference of sets と書く（3 件）。"
   ],
   "sources": [
     {
@@ -32,20 +32,32 @@
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "1.5・5.1 Sets。set difference ／ difference of sets（3 件。読みを決めた参照）"
+      "note": "1.5 Proofs about Discrete Structures・5.1 Sets。set difference ／ difference of sets（3 件。読みを決めた参照）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「差集合」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B7%AE%E9%9B%86%E5%90%88",
+      "note": "差集合（B ∖ A、B − A）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Complement_(set_theory)",
+      "note": "節 Relative complement（B − A とも書く）"
     }
   ],
   "confidence": "likely",
   "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。読みは Levin の呼び方 set difference | difference of sets（5.1 Sets・1.5 Proofs about Discrete Structures）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

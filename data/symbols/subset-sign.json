@@ -8,7 +8,7 @@
     },
     {
       "text": "A is contained in B",
-      "register": "standard"
+      "register": "spoken"
     }
   ],
   "spoken_ja": "A は B の部分集合 ／ A は B に含まれる",
@@ -24,6 +24,7 @@
       "数I"
     ],
     "us": [
+      "Calculus III",
       "Discrete Math",
       "Linear Algebra"
     ]
@@ -37,11 +38,24 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 3"
+      "title": "OpenStax Calculus Volume 3",
+      "note": "5.2 Double Integrals over General Regions（D is a subset of R (D ⊆ R)）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.5 Proofs about Discrete Structures・5.1 Sets（A ⊆ B asserts that A is a subset of B）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "5.1 Subspaces and Spanning（X ⊆ Y、X is a subset of Y）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "is contained in *": 10,
@@ -56,6 +70,6 @@
       "mit-6.042",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

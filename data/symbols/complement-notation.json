@@ -5,10 +5,6 @@
     {
       "text": "the complement of A",
       "register": "standard"
-    },
-    {
-      "text": "A complement",
-      "register": "spoken"
     }
   ],
   "spoken_ja": "A バー ／ A の補集合",
@@ -31,7 +27,7 @@
     ]
   },
   "notes": [
-    "補集合・余事象は the complement of A か A complement と読む。A′ と書いた本では A prime、Ā は A bar とも読むが、文字どおりの読みは点の名前などと区別しにくい。"
+    "補集合・余事象は the complement of A と読む。A′ は OpenStax Introductory Statistics（3.1 Terminology）が A prime と読む。"
   ],
   "sources": [
     {
@@ -39,21 +35,39 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "3.1 Terminology（The complement of event A is denoted A′、read A prime）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.4（complement。E′・E^C の書き方）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 集合と命題（Ā（A の補集合））・数学A 場合の数と確率（余事象）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "5.1 Sets（the complement of A）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "the complement of *": 12,
-      "a complement | b complement | e complement": 3
+      "the complement of *": 12
     },
     "sources": [
       "mit-6.042",
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

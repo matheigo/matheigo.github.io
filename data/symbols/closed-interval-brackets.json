@@ -3,12 +3,12 @@
   "latex": "[a, b]",
   "spoken_en": [
     {
-      "text": "the closed interval a, b",
+      "text": "the closed interval from a to b",
       "register": "standard"
     },
     {
-      "text": "the closed interval from a to b",
-      "register": "standard"
+      "text": "the closed interval a, b",
+      "register": "spoken"
     }
   ],
   "spoken_ja": "閉区間 a b ／ a 以上 b 以下",
@@ -31,7 +31,7 @@
     ]
   },
   "notes": [
-    "[a, b] は the closed interval a, b（from a to b）と読む。on the closed interval from zero to two のように使う。",
+    "[a, b] は the closed interval from a to b と読む（the closed interval a, b とも）。on the closed interval from zero to two のように使う。",
     "端点を含むので角かっこ（brackets）。"
   ],
   "sources": [
@@ -41,22 +41,27 @@
     {
       "type": "reference",
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
-      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf"
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 1.16（closed interval）・Topic 5.5（closed interval）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学III 積分法（閉区間[a,b]において）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "closed interval !from": 101,
-      "closed interval from *": 42
+      "closed interval from * | closed interval, from *": 45,
+      "closed interval a, b | closed interval a b | closed interval a and b | closed interval a to b": 4
     },
     "sources": [
-      "khan-algebra",
       "khan-ap-calc",
-      "yt:organicchem",
-      "yt:profleonard"
+      "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

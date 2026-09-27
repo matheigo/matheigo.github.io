@@ -22,7 +22,7 @@
     ]
   },
   "notes": [
-    "p ∧ q は p and q と読む。記号の名前は wedge だが、読むときは and。"
+    "p ∧ q は p and q と読む。LaTeX では \\land（\\wedge）と書くが、読むときは and。"
   ],
   "sources": [
     {
@@ -31,11 +31,18 @@
     {
       "type": "reference",
       "title": "CK-12 Foundation, CK-12 Geometry (K12 LibreTexts)",
-      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry"
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.8 Truth Tables（We would write p and q as p∧q）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.1 Mathematical Statements（P ∧ Q is read P and Q）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "p and q": 16
@@ -49,7 +56,7 @@
       "mit-6.042",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "related": [
     "logic-notation"

@@ -23,7 +23,7 @@
   },
   "notes": [
     "p ⇒ q は p implies q と読むか、if p, then q と文で言う。",
-    "米国の Geometry と離散数学は条件文を p → q とも書く。"
+    "CK-12 Geometry（2.8・2.12）と Levin（1.1）は条件文を p → q と書く。"
   ],
   "sources": [
     {
@@ -31,12 +31,26 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Precalculus 2e"
+      "title": "OpenStax Precalculus 2e",
+      "note": "8.8 Vectors（⇒ の使用）"
     },
     {
       "type": "reference",
       "title": "CK-12 Foundation, CK-12 Geometry (K12 LibreTexts)",
-      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry"
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.8 Truth Tables・2.12（p → q）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.1 Mathematical Statements（P → Q is read if P then Q）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "2.4 Matrix Inverses の脚注（p implies q (written p ⇒ q)）"
     }
   ],
   "confidence": "likely",
@@ -59,6 +73,9 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-09-27"
+  },
+  "related": [
+    "logic-notation"
+  ]
 }

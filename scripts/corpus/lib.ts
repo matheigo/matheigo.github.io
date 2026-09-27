@@ -963,14 +963,16 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "jacobian-notation": {
     "the Jacobian of x and y with respect to u and v": "the jacobian",
   },
+  // "div *" also counted "div if i divide" (captions) and "div t-h-m" (Phase 5 監査 10, batch 34)
   "divergence-del-dot": {
     "the divergence of F": "the divergence of *",
-    "div F": "div *",
+    "div F": "div f | div g | div v | div e | div b",
     "del dot F": "del dot *",
   },
+  // "curl of F" without the article is the first reading; curl F has no "of" (Phase 5 監査 10, batch 34)
   "curl-del-cross": {
-    "the curl of F": "the curl of *",
-    "curl F": "!the curl f | !the curl of",
+    "the curl of F": "curl of *",
+    "curl F": "!the curl f | !the curl g | !the curl v | !the curl e | !the curl b",
   },
   "integral-indefinite": {
     "the integral of f of x d x": "integral of * dx",
@@ -1028,17 +1030,21 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "proper-subset-sign": {
     "A is a proper subset of B": "proper subset",
   },
+  // "!the union !of" also counted a labor union, the Soviet Union and "take their union" (Phase 5 監査 10, batch 34)
   "union-sign": {
-    "A union B": "!the union !of",
+    "A union B": "!the !their !labor !soviet !this !for !use union !of !sign !bound",
     "the union of A and B": "the union of *",
   },
+  // "the intersection of * and *" was mostly geometry (the intersection of a plane and a cone): sets' letters only
+  // (Phase 5 監査 10, batch 34)
   "intersection-sign": {
-    "the intersection of A and B": "the intersection of * and *",
-    "A intersect B": "a intersect b | b intersect a | a intersect c | b intersect c",
+    "the intersection of A and B":
+      "the intersection of a and b | the intersection of b and a | the intersection of a and c | the intersection of b and c | the intersection of set a and set b | the intersection of sets a and b",
+    "A intersect B": "a intersect b | b intersect a | a intersect c | b intersect c | s intersect u | s intersect t | p intersect l",
   },
+  // "a complement" was the article (a complement of a girl): the reading A complement is not in the corpus (Phase 5 監査 10)
   "complement-notation": {
     "the complement of A": "the complement of *",
-    "A complement": "a complement | b complement | e complement",
   },
   "empty-set-symbol": {
     "the empty set": "the empty set | an empty set",
@@ -1083,13 +1089,14 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "the set difference of A and B": "set difference | difference of sets",
     "A without B": "a without b",
   },
+  // A reading reaches the endpoints: "closed interval !from" counted the name (continuous over the closed interval)
+  // (Phase 5 監査 10, batch 34)
   "closed-interval-brackets": {
-    "the closed interval a, b": "closed interval !from",
-    "the closed interval from a to b": "closed interval from *",
+    "the closed interval from a to b": "closed interval from * | closed interval, from *",
+    "the closed interval a, b": "closed interval a, b | closed interval a b | closed interval a and b | closed interval a to b",
   },
   "open-interval-parentheses": {
-    "the open interval a, b": "open interval !from",
-    "the open interval from a to b": "open interval from *",
+    "the open interval from a to b": "open interval from * | open interval, from *",
   },
   "half-open-interval": {
     "the half-open interval from a to b": "half-open interval | half open interval",
@@ -1098,10 +1105,11 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "implies-arrow": {
     "p implies q": "* implies *",
   },
+  // "is equivalent to *" is mostly equal values (three tenths is equivalent to 30 over 100): the order is by the
+  // contexts read in full (DECISIONS, Phase 5 監査 10). "iff" was only the written abbreviation explained (batch 34)
   "iff-arrow": {
     "p is equivalent to q": "is equivalent to *",
     "p if and only if q": "if and only if",
-    "p iff q": "iff",
   },
   "negation-sign": {
     "not p": "not p | not q",
@@ -1145,7 +1153,10 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "vector AB": "vector a b | vector ab | vector p q | vector pq",
     "the vector from A to B": "the vector from * to *",
   },
+  // The components read after "the vector" (the vector one, zero, minus one) (Phase 5 監査 10, batch 34)
   "angle-bracket-vector": {
+    "the vector a, b":
+      "the vector zero | the vector one | the vector two | the vector three | the vector four | the vector five | the vector six | the vector seven | the vector eight | the vector nine | the vector minus | the vector negative",
     "the vector with components a and b": "with components *",
     "angle bracket a, b": "angle bracket",
   },
@@ -1156,17 +1167,23 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   // "r squared" whatever r is (pi r squared too), P(A) "p of a" as p(a) is. A capital Greek
   // letter has the same name (Σ, Δ): counted with the lowercase one, except where noted
   // (DECISIONS Phase 3 記号 バッチ 4).
+  // "the magnitude of *" also counted speeds, absolute values, complex moduli and errors: vectors only; the length
+  // of v with the letters (Phase 5 監査 10, batch 34)
   "vector-magnitude-bars": {
-    "the magnitude of v": "the magnitude of *",
+    "the magnitude of v":
+      "the magnitude of * vector | the magnitude of v | the magnitude of u | the magnitude of w | the magnitude of f | the magnitude of t | the magnitude of * gradient | the magnitude of * displacement | the magnitude of the cross product",
     "the norm of v": "the norm of *",
-    "the length of v": "the length of the vector | the length of vector *",
+    "the length of v": "the length of the vector | the length of vector * | the length of v | the length of w | the length of f",
   },
+  // Any letters (batch 4 above): F dot dr, F dot n, r dot v are the same reading; not x dot (Newton's ẋ), dot plot
+  // or del dot F (Phase 5 監査 10, batch 34)
   "dot-product-dot": {
-    "u dot v": "u dot v | a dot b | v dot w | u dot w | v dot u | b dot a | v dot v | u dot u | a dot a",
-    "the dot product of u and v": "the dot product of *",
+    "a dot b":
+      "u dot v | a dot b | v dot w | u dot w | v dot u | b dot a | v dot v | u dot u | a dot a | f dot dr | f dot n | r dot v | r dot r | v dot r | g dot dr | g dot n | f dot t | f dot ds | pq dot n | qp dot qr",
+    "the dot product of a and b": "the dot product of *",
   },
   "cross-product-cross": {
-    "u cross v": "u cross v | a cross b | v cross w | v cross u | b cross a | u cross w | a cross c | b cross c",
+    "u cross v": "u cross v | a cross b | v cross w | v cross u | b cross a | u cross w | a cross c | b cross c | r cross v | v cross v | w cross v",
     "the cross product of u and v": "the cross product of *",
   },
   "projection-notation": {
@@ -1175,15 +1192,19 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "the vector projection of u onto v": "vector projection of *",
   },
   // The entries read out; the references print them as numbers, which reads the same
+  // Any first entry (Phase 5 監査 10, batch 34)
   "matrix-brackets": {
-    "the matrix a, b, c, d": "the matrix one | the matrix two | the matrix zero | the matrix three | the matrix a b",
+    "the matrix a, b, c, d":
+      "the matrix zero | the matrix one | the matrix two | the matrix three | the matrix four | the matrix five | the matrix six | the matrix seven | the matrix eight | the matrix nine | the matrix minus | the matrix negative | the matrix a b",
     "the two-by-two matrix with entries a, b, c, d": "matrix with entries *",
   },
   "matrix-dimensions-by": {
     "a two-by-three matrix": "by two matrix | by three matrix | by n matrix | by-two matrix | by-three matrix | by-n matrix | by one matrix | by four matrix | by m matrix | by-one matrix",
     "a matrix with two rows and three columns": "rows and * columns",
   },
+  // OpenStax Precalculus 9.5 reads aᵢⱼ as the entry in row i, column j (Phase 5 監査 10, batch 34)
   "matrix-entry-aij": {
+    "the entry in row i, column j": "the entry in row *",
     "the i j entry of A": "the i j entry | the i j-th entry | the ij entry | i comma j entry | the i j th entry | i-j entry | i jth entry | i-jth entry | (i, j)-entry | (i, j) entry | i, j entry | i, j-entry | ij-entry",
     "a sub i j": "a sub i j | a sub i comma j | a sub ij",
   },
@@ -1199,7 +1220,10 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "A inverse": "a inverse | b inverse | m inverse | p inverse | s inverse | c inverse | ab inverse | a b inverse",
     "the inverse of A": "the inverse of a | the inverse of the matrix | the inverse of b | the inverse of m | the inverse matrix",
   },
+  // "the identity" alone is the identity matrix in MIT 18.06 / 18.03, a trig identity elsewhere: the form cannot
+  // tell them apart, so the order is by the contexts read in full (DECISIONS, Phase 5 監査 10, batch 34)
   "identity-matrix-i": {
+    "the identity": "the identity !matrix !function !property !map !transformation !operator !element !permutation",
     "the identity matrix": "the identity matrix | an identity matrix",
     "I sub n": "i sub n",
     "the n by n identity matrix": "by n identity matrix | by-n identity matrix",
@@ -1319,9 +1343,10 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "complex-a-plus-bi": {
     "a plus b i": "plus b i | plus bi | minus b i | minus bi",
   },
+  // Any letter under the bar (lambda bar, c1 bar); not x bar (the sample mean) (Phase 5 監査 10, batch 34)
   "complex-conjugate-bar": {
     "the complex conjugate of z": "the complex conjugate of *",
-    "z bar": "z bar | z-bar | w bar",
+    "z bar": "z bar | z-bar | w bar | lambda bar | c1 bar | c2 bar | z1 bar | z2 bar | zn bar",
     "the conjugate of z": "the conjugate of z | the conjugate of w",
     "z conjugate": "z conjugate | w conjugate",
   },

@@ -8,7 +8,7 @@
     },
     {
       "text": "the union of A and B",
-      "register": "spoken"
+      "register": "standard"
     }
   ],
   "spoken_ja": "A カップ B ／ A と B の和集合",
@@ -29,8 +29,7 @@
     ]
   },
   "notes": [
-    "A ∪ B は A union B、the union of A and B と読む。日本語の「カップ」は英語では使わない。",
-    "米国の統計の教科書は確率で A OR B とも書く（probability-of-union）。"
+    "A ∪ B は A union B、the union of A and B と読む。∪ を cup と読む例は、用例コーパスと参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）には出てこない。"
   ],
   "sources": [
     {
@@ -38,22 +37,46 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Precalculus 2e"
+      "title": "OpenStax Precalculus 2e",
+      "note": "1.2 Domain and Range（a symbol known as the union, ∪）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.7 Probability（The union of two events E and F, written E ∪ F）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "5.1 Sets（C = A ∪ B, read, C is the union of A and B）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "3.1 Terminology（A OR B can also be written as A Union B、A ∪ B）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.7（union）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 集合と命題（A∪B）・数学A 場合の数と確率（n(A∪B)）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "the union of *": 14,
-      "!the union !of": 53
+      "!the !their !labor !soviet !this !for !use union !of !sign !bound": 42
     },
     "sources": [
-      "khan-algebra",
       "khan-ap-stats",
       "mit-18.01",
       "mit-18.06",
@@ -63,6 +86,9 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-09-27"
+  },
+  "related": [
+    "probability-and-or-notation"
+  ]
 }

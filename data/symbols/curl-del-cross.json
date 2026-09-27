@@ -8,7 +8,7 @@
     },
     {
       "text": "curl F",
-      "register": "standard"
+      "register": "spoken"
     }
   ],
   "spoken_ja": "ローテーション F ／ rot F",
@@ -25,8 +25,8 @@
     ]
   },
   "notes": [
-    "∇ × F と curl F は the curl of F（curl F）と読む。∇ × F を del cross F とも読める。",
-    "日本の本の rot F（ローテーション）は、米国の教科書では curl F と書く。"
+    "∇ × F と curl F は the curl of F（curl F）と読む。",
+    "日本語版 Wikipedia「回転 (ベクトル解析)」は rot F・curl F・∇ × F を挙げ、OpenStax Calculus Volume 3（6.5 Divergence and Curl）は curl F と ∇ × F を使う。"
   ],
   "sources": [
     {
@@ -34,19 +34,26 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 3"
+      "title": "OpenStax Calculus Volume 3",
+      "note": "6.5 Divergence and Curl（curl F = ∇ × F）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「回転 (ベクトル解析)」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%9E%E8%BB%A2_%28%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E8%A7%A3%E6%9E%90%29",
+      "note": "記法（rot F・curl F・∇×F）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "the curl of *": 37,
-      "!the curl f | !the curl of": 21
+      "curl of *": 50,
+      "!the curl f | !the curl g | !the curl v | !the curl e | !the curl b": 10
     },
     "sources": [
       "mit-18.02"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

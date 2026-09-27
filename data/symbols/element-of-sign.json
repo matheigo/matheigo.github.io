@@ -7,11 +7,11 @@
       "register": "standard"
     },
     {
-      "text": "a belongs to A",
+      "text": "a is an element of A",
       "register": "spoken"
     },
     {
-      "text": "a is an element of A",
+      "text": "a belongs to A",
       "register": "spoken"
     }
   ],
@@ -25,14 +25,14 @@
       "数I"
     ],
     "us": [
-      "Precalculus",
+      "Calculus I",
       "Discrete Math",
       "Linear Algebra"
     ]
   },
   "notes": [
-    "a ∈ A は a is an element of A、a is a member of A、a belongs to A と読む。短く a is in A とも言う。",
-    "x ∈ ℝ は x is a real number と言いかえることが多い。"
+    "a ∈ A は a is a member of A、a is an element of A、a belongs to A と読む。短く a is in A とも言う。",
+    "x ∈ ℝ は x is a real number と言いかえることもある。"
   ],
   "sources": [
     {
@@ -44,11 +44,30 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 1"
+      "title": "OpenStax Calculus Volume 1",
+      "note": "1.1 Review of Functions（x is an element of A）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "0.2（The ∈ symbol means is an element of）・5.1 Sets（2 is an element of the set {1, 2, 3}）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "6.4（a ∈ X、a is an element of the set X）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 集合と命題（a∈A）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "belongs to *": 7,
@@ -64,6 +83,6 @@
       "mit-6.042",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

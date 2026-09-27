@@ -3,12 +3,12 @@
   "latex": "A \\cap B",
   "spoken_en": [
     {
-      "text": "the intersection of A and B",
+      "text": "A intersect B",
       "register": "standard"
     },
     {
-      "text": "A intersect B",
-      "register": "standard"
+      "text": "the intersection of A and B",
+      "register": "spoken"
     }
   ],
   "spoken_ja": "A キャップ B ／ A と B の共通部分",
@@ -29,7 +29,7 @@
     ]
   },
   "notes": [
-    "A ∩ B は A intersect B か the intersection of A and B と読む。日本語の「キャップ」は英語では使わない。"
+    "A ∩ B は A intersect B か the intersection of A and B と読む。∩ を cap と読む例は、用例コーパスと参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）には出てこない。"
   ],
   "sources": [
     {
@@ -37,28 +37,34 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Precalculus 2e"
+      "title": "OpenStax Precalculus 2e",
+      "note": "11.7 Probability（the intersection of E and F, written E ∩ F）"
     },
     {
       "type": "reference",
       "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
-      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf"
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.5（intersect）・Topic 2.7（intersect）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 集合と命題（A∩B）・数学A 場合の数と確率（n(A∪B)=n(A)+n(B)−n(A∩B)）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "the intersection of * and *": 15,
-      "a intersect b | b intersect a | a intersect c | b intersect c": 12
+      "a intersect b | b intersect a | a intersect c | b intersect c | s intersect u | s intersect t | p intersect l": 16,
+      "the intersection of a and b | the intersection of b and a | the intersection of a and c | the intersection of b and c | the intersection of set a and set b | the intersection of sets a and b": 1
     },
     "sources": [
-      "khan-algebra",
-      "khan-ap-calc",
       "mit-18.06",
       "mit-6.042",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

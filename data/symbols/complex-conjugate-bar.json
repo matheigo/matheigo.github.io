@@ -3,8 +3,12 @@
   "latex": "\\bar{z}",
   "spoken_en": [
     {
-      "text": "the complex conjugate of z",
+      "text": "z bar",
       "register": "standard"
+    },
+    {
+      "text": "the complex conjugate of z",
+      "register": "spoken"
     }
   ],
   "spoken_ja": "z バー ／ z の共役複素数",
@@ -23,7 +27,7 @@
     ]
   },
   "notes": [
-    "z̄ は the complex conjugate of z と読む。文字の上の横線が共役を表す。"
+    "z̄ は z bar と読む（文字の上の横線が共役を表す）。the complex conjugate of z とも言う。"
   ],
   "sources": [
     {
@@ -31,30 +35,32 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "2.4 Complex Numbers（the complex conjugate of a + bi）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Precalculus 2e"
+      "title": "OpenStax Precalculus 2e",
+      "note": "3.1 Complex Numbers（the complex conjugate of a + bi）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "Appendix A Complex Numbers（z̄ を the conjugate of z と定義）・8.7 Complex Matrices"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
+      "z bar | z-bar | w bar | lambda bar | c1 bar | c2 bar | z1 bar | z2 bar | zn bar": 17,
       "the complex conjugate of *": 9
     },
     "sources": [
       "mit-18.03",
       "mit-18.06"
     ],
-    "counted": "2026-09-25"
-  },
-  "flags": [
-    {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 the complex conjugate of *（本文 20 件）。register は主張しない。",
-      "raised": "2026-09-25"
-    }
-  ]
+    "counted": "2026-09-27"
+  }
 }
