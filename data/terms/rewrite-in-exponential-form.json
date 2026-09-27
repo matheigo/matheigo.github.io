@@ -104,7 +104,7 @@
       "note": "Algebra 2 4.10〜4.18（write … in exponential form）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-24",
     "audit": "2026-09-27",
@@ -132,12 +132,5 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-27"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: 見出し rewrite in exponential form → convert … to exponential form（OpenStax Algebra and Trigonometry 6.3・Precalculus 4.3 の節の題と Intermediate Algebra 10.3 の言い方が候補に無かった。足し、in exponential form の累乗の記法・科学的記数法の意味を TERM_FORMS の印で除くと書き言葉 ② to exponential form 28 ／ in exponential form 18 で首位が見出し）。見直す点: TERM_FORMS の除く語（!expression ほか 7 つ。Intermediate Algebra の rewrite the expression in exponential form 1 件も除かれる）、variants の note、例文、pitfalls[0] の別の意味、rewrite-in-logarithmic-form と対であること。次の監査のセッションが見直す。",
-      "raised": "2026-09-27"
-    }
-  ]
+  }
 }

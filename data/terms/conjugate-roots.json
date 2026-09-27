@@ -98,7 +98,7 @@
       "note": "3.6 Zeros of Polynomial Functions（Complex Conjugate Theorem）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-24",
     "audit": "2026-09-27",
@@ -113,12 +113,5 @@
       "openstax-calculus"
     ],
     "counted": "2026-09-27"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: 監査 7 の大きな直し（見出し complex conjugate roots、mapping exact）は正しい。本セッションで定義を性質（a − bi も解になること）から解の組に変えた（exact の理由の資料は解の組を指し、見出しも名詞）。見直す点: definition_ja・definition_en の新しい定義、reference_names_same.json で Complex Conjugate Theorem を related にしたこと、level.us の Precalculus の出典（OpenStax Precalculus 3.6）と単元。次の監査のセッションが見直す。",
-      "raised": "2026-09-27"
-    }
-  ]
+  }
 }

@@ -79,7 +79,7 @@
       "note": "Algebra 2 4.10〜4.14（in logarithmic form）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-24",
     "audit": "2026-09-27",
@@ -101,12 +101,5 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-27"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: 見出し rewrite in logarithmic form → convert … to logarithmic form（OpenStax の節の題・学習目標の言い方が候補に無かった。足すと書き言葉 ① to logarithmic form 14 対 in logarithmic form 5。OpenStax Intermediate Algebra 8/14 で、抜くと ③ なので ① のまま）。見直す点: 形 to logarithmic form（convert from exponential to logarithmic form ほか）、alt rewrite … in logarithmic form（OpenStax Algebra and Trigonometry の練習問題・IM Algebra 2）、例文、rewrite-in-exponential-form と対であること。次の監査のセッションが見直す。",
-      "raised": "2026-09-27"
-    }
-  ]
+  }
 }
