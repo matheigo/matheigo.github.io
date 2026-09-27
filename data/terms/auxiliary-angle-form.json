@@ -19,7 +19,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。米国の高校の資料（CED・OpenStax・IM・CK-12）には名前が出てこない。大学の微分方程式の講義（MIT OCW 18.03）では、できた形を amplitude-phase form と呼ぶ。OpenStax Calculus Volume 3（7.3 Applications）は、単振動の x(t) = c₁ cos(ωt) + c₂ sin(ωt) を A sin(ωt + ϕ)（A = √(c₁² + c₂²)）の形に書き、例題で Express … in the form A sin(ωt + ϕ) と問う。見出しの rewriting a sin θ + b cos θ as a single sine function は本プロジェクトの説明的な訳で、英語の名前ではない。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。米国の高校の資料（CED・OpenStax・IM・CK-12）には名前が出てこない。大学の微分方程式の講義（MIT OCW 18.03）では、できた形を amplitude-phase form と呼ぶ。OpenStax Calculus Volume 3（7.3 Applications）は、単振動の x(t) = c₁ cos(ωt) + c₂ sin(ωt) を A sin(ωt + ϕ)（A = √(c₁² + c₂²)）の形に書き、例題で Express … in the form A sin(ωt + ϕ) と問う。英語版 Wikipedia「List of trigonometric identities」は節 Linear combinations（Sine and cosine）でこの変形を扱い、本文で harmonic addition とも呼ぶ。見出しの rewriting a sin θ + b cos θ as a single sine function は本プロジェクトの説明的な訳で、英語の名前ではない。",
   "domains": [
     "trigonometry"
   ],
@@ -32,7 +32,7 @@
     ]
   },
   "definition_ja": "a sin θ + b cos θ を r sin(θ + α)（r = √(a² + b²)）の形に直すこと。最大・最小や方程式に使う。",
-  "definition_en": "Rewriting a sin θ + b cos θ as r sin(θ + α) with r = √(a² + b²), used for maxima, minima, and equations.",
+  "definition_en": "Rewriting a sin θ + b cos θ as r sin(θ + α) with r = √(a² + b²), used to find maximum and minimum values and to solve equations.",
   "latex": "a\\sin\\theta + b\\cos\\theta = \\sqrt{a^2 + b^2}\\,\\sin(\\theta + \\alpha)",
   "spoken_en": "a sine theta plus b cosine theta equals the square root of a squared plus b squared, times sine of theta plus alpha",
   "examples": [
@@ -42,8 +42,8 @@
       "register": "spoken"
     },
     {
-      "en": "Write √3 sin θ + cos θ in the form r sin(θ + α), and find its maximum value.",
-      "ja": "√3 sin θ + cos θ を r sin(θ + α) の形に表し、最大値を求めよ。",
+      "en": "Rewrite √3 sin θ + cos θ as a single sine function r sin(θ + α), and find its maximum value.",
+      "ja": "√3 sin θ + cos θ を 1 つの sin の式 r sin(θ + α) に直し、最大値を求めよ。",
       "register": "written"
     }
   ],
@@ -55,7 +55,8 @@
     "angle-addition-formulas",
     "amplitude",
     "trigonometric-function",
-    "phase"
+    "phase",
+    "phase-shift"
   ],
   "sources": [
     {
@@ -77,6 +78,12 @@
       "title": "大学入試センター 令和3年度 大学入学共通テスト 第1日程 数学Ⅱ（問題）",
       "url": "https://web.archive.org/web/20220601/https://www.dnc.ac.jp/albums/abm.php?d=88&f=abm00001261.pdf&n=R3_%E6%95%B0%E5%AD%A6%E2%85%A1%EF%BC%88%EF%BC%91%E6%9C%8816%E6%97%A5%E3%83%BB17%E6%97%A5%EF%BC%89%E3%81%AE%E5%95%8F%E9%A1%8C.pdf",
       "note": "第1問: 三角関数の合成"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_trigonometric_identities",
+      "note": "記事「List of trigonometric identities」の節 Linear combinations ＞ Sine and cosine（a cos x + b sin x を 1 つの cos で書く。本文で harmonic addition とも呼ぶ）"
     }
   ],
   "confidence": "likely",
@@ -97,13 +104,13 @@
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 5 件 ／ 書 0 件）。mapping none なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: ユーザーの決定 1（監査 8 の前。監査 7 の H-a）で見出しを rewriting a sin θ + b cos θ as a single sine function（説明の訳）にし、mapping near → none、MIT OCW 18.03 の amplitude-phase form を register spoken の variant に、資料に 0 件の auxiliary-angle form・harmonic form を en から外した（flag audit-human は外した）。見直す点: mapping_note（ユーザーの決定の文と corpus:decide の文、OpenStax Calculus Volume 3 7.3 の事実、説明の訳であること）、variant の note（18.03 の A cos(ωt − φ) の形と複素数の極形式）、例文が見出しの言い方を使わないこと（説明の訳の例外）、STYLE の直訳禁止リストの行と conventions/jp-named-techniques-unnamed-in-us の us・advice_ja。次の監査のセッションが見直す。",
       "raised": "2026-09-27"
     },
     {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: ユーザーの決定 1（監査 8 の前。監査 7 の H-a）で見出しを rewriting a sin θ + b cos θ as a single sine function（説明の訳）にし、mapping near → none、MIT OCW 18.03 の amplitude-phase form を register spoken の variant に、資料に 0 件の auxiliary-angle form・harmonic form を en から外した（flag audit-human は外した）。見直す点: mapping_note（ユーザーの決定の文と corpus:decide の文、OpenStax Calculus Volume 3 7.3 の事実、説明の訳であること）、variant の note（18.03 の A cos(ωt − φ) の形と複素数の極形式）、例文が見出しの言い方を使わないこと（説明の訳の例外）、STYLE の直訳禁止リストの行と conventions/jp-named-techniques-unnamed-in-us の us・advice_ja。次の監査のセッションが見直す。",
+      "code": "corpus-no-fixed-expression",
+      "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 5 件 ／ 書 0 件）。mapping none なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
       "raised": "2026-09-27"
     }
   ]

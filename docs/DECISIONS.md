@@ -1139,3 +1139,7 @@
 - 2026-09-27 | 5 | 3. 進め方: flag audit-major-fix の 5 語の見直し（監査 8 の J-2）→ terms の verified が 1,000 に届いたら、監査 8 の J-4 のとおり見直し役への指示（audits/reviewer-instructions.md）に symbols・phrases・conventions の観点を足してから symbols のバッチ 32 へ | ユーザーの決定
 - 2026-09-27 | 5 | 4. symbols と phrases は 1 セッション 3 バッチまで（1 項目が短く、見直し役が 3 人のため。terms・conventions は監査 8 の前の決定 2 の 2 バッチのまま）。1 バッチごとに、直し・判定のコミットのあと push する | ユーザーの決定
 - 2026-09-27 | 5 | 5. symbols は 220 のうち 200 が verified にならないと公開の閾値に届かない。大きな直しで likely になった記号は、次のセッションの最初に必ず見直す（各監査のレポートの J に書く） | ユーザーの決定
+
+## Phase 5 監査（セッション 9）— 2026-09-27
+
+- 2026-09-27 | 5 | flag audit-major-fix の 5 語（監査 8 の J-2）の見直し: 見直し役 2 人（audits/work/major-a9-r1・r2）と親が、直した内容と「見直す点」を資料で確かめた。auxiliary-angle-form（ユーザーの決定の当て方）・conjugate-roots（解の組の定義）・write-with-the-same-base ／ rewrite-in-exponential-form ／ rewrite-in-logarithmic-form（規則で決め直した見出しと TERM_FORMS の形）は 5 語とも資料どおり。周りの小さな直し（英語版 Wikipedia「List of trigonometric identities」の harmonic addition の事実、例文を見出しの言い方に、near の理由の文、確かめられない複素数 re^(iθ) の用法を科学的記数法の用法（OpenStax Prealgebra 10.5・Elementary Algebra 6.7・Intermediate Algebra 5.2）に、IM は write と書くこと、書き言葉 ① の 2 位 rewrite … in logarithmic form を alt から variant に、related を相互に）をして verified。conjugate-roots の ja.term 共役な解は資料に 0 件（日本語版 Wikipedia「ペラン数」の「複素共役な解」だけ）だが、共役な＋解の一般の日本語として残した（backlog 27 と同じ扱い） | 監査 8 の J-2。直したセッションではない

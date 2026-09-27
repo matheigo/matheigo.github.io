@@ -69,3 +69,6 @@
 | 58 | 監査 8（バッチ 20 の r4） | 参照の件数が脚注の書名を本文の使用として数える（Nicholson の Linear Programming and Extensions） | 19 と合わせて除く仕組みを足す | 判定は変わらない |
 | 59 | 監査 8（バッチ 20 の r5） | 統計・確率の書き言葉のコーパスは OpenStax Introductory Statistics だけなので、参照（CED・IM）が書き言葉で多用する語でも書き言葉が ③ になり register spoken になる（simulation） | 書き言葉の参照を register の判断に入れるか | register は ① の側だけの主張で誤りではない（監査は pitfalls に参照の事実を足した） |
 | 60 | 監査 8（バッチ 20 の r3） | TERM_FORMS の印で別の意味を除くと、同じ前の語を持つ本来の意味の一致も除かれる（rewrite-in-exponential-form の !expression は Intermediate Algebra の rewrite the expression in exponential form 1 件も除く） | 除く語を文脈で確かめる手順を書く | 判定（② の順）は変わらない |
+| 61 | 監査 9（5 語の見直しの r2） | 60 の続き: rewrite-in-exponential-form の !write は話し言葉の本来の意味 2 件（Khan Academy）も除き、外すと話し言葉が ③ から ① in exponential form（9:2）になる（印が register の判定を変えうる） | 印を足すときは、除いた本来の意味の件数と、除かない場合の判定を flag の note に残す | 残りの 9 件に別の意味が 3 件あり、文脈を読むと話し言葉は ③ で今の結論と同じ |
+| 62 | 監査 9（5 語の見直しの r2） | 数える形 to exponential form は動詞を問わず、Intermediate Algebra の change … to exponential form（5 件ほど）も見出し convert … to exponential form に数える | 動詞ごとの形にするか、同じ操作の言い方としてまとめることを書く | convert が大半で見出しは変わらない |
+| 63 | 監査 9（5 語の見直しの r1） | PLAN.md §6 の直訳禁止語リストの初期例は、三角関数の合成を今も near・auxiliary-angle form / harmonic form と書き、STYLE の表（監査 8 の前の決定 1 で none・説明の訳）と字面で食い違う | PLAN の行を STYLE に合わせるか、「初期例は STYLE の表が上書きする」と一言足す | エントリと STYLE の表はユーザーの決定どおり |
