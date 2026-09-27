@@ -9,7 +9,7 @@
  * - a verified entry carries no problem flag (record flags may stay; lib/flags.ts)
  * - a Japanese word shared by two entries is a listed homonym (SAME_JA)
  * - no count from the example corpus in the body text (lib/corpus-count.ts; a warning)
- * - no wording STYLE forbids in the claim fields (lib/wording.ts: 通じる, 一番よく使う, 減点, ことが多い without a source; a warning)
+ * - no wording STYLE forbids in the claim fields (lib/wording.ts: 通じる, 一番よく使う, 減点, ことが多い and 英語には〜がない without a source; a warning)
  * - a CED source's note names topics the CED has, and words those topics use (lib/ced-notes.ts; a warning,
  *   only when the CED texts are fetched into corpus/ref/)
  * - no id shared by two collections (the search index keys entries by bare id)
@@ -228,7 +228,7 @@ for (const collection of COLLECTIONS) {
       for (const [field, text] of bodyTexts(data)) {
         if (!claimField.test(field)) continue;
         for (const s of unverifiableSentences(text)) {
-          warn(where, `${field} has a wording STYLE forbids (通じる ／ 一番よく使う ／ 減点 ／ ことが多い without a source): ${s}`);
+          warn(where, `${field} has a wording STYLE forbids (通じる ／ 一番よく使う ／ 減点 ／ ことが多い・英語には〜がない without a source): ${s}`);
         }
       }
     }

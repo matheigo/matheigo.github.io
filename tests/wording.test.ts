@@ -18,6 +18,15 @@ describe("unverifiableSentences", () => {
     expect(unverifiableSentences("学習指導要領解説は「増減表」と書くことが多い。")).toEqual([]);
   });
 
+  it("flags claims about English at large unless the sentence names what was checked (監査 3 の抜き取り)", () => {
+    expect(unverifiableSentences("英語には「微分係数」に当たる独立した名詞がなく、the derivative at a point と言う。")).toHaveLength(1);
+    expect(unverifiableSentences("この公式に英語の決まった名前はない。")).toHaveLength(1);
+    expect(unverifiableSentences("見出しの cross method も英語の決まった名前ではない。")).toHaveLength(1);
+    expect(unverifiableSentences("「変域」1 語に当たる語は用例コーパスと参照に出てこない。")).toEqual([]);
+    expect(unverifiableSentences("OpenStax Prealgebra にはこの図の決まった名前はない。")).toEqual([]);
+    expect(unverifiableSentences("英語には x と y の 2 つの言い方がある。")).toEqual([]);
+  });
+
   it("leaves sourced comparisons and plain facts alone", () => {
     expect(unverifiableSentences("話し言葉では take the derivative が多く、書き言葉では differentiate が多い。")).toEqual([]);
     expect(unverifiableSentences("極大・極小は local maximum ／ minimum。")).toEqual([]);
