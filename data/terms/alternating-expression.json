@@ -67,7 +67,7 @@
       "note": "交代多項式（英: alternating polynomial）: 任意の 2 変数を入れ替えると符号が反転する多項式"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-09-26",
@@ -87,11 +87,6 @@
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 alternating polynomial（英語版「Alternating polynomial」、ja の langlink 先）。register は主張しない。",
-      "raised": "2026-09-26"
-    },
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-26）で大きな直し: 監査 2 の大きな直し（mapping none → near）を見直し、mapping を exact にした（交代式 = alternating polynomial は 1 対 1。米国の高校で扱わないのは範囲の違いで note が書く）。見直す点: exact でよいか（同じ構図の symmetric-expression・elementary-symmetric-polynomial と揃っているか）。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]
