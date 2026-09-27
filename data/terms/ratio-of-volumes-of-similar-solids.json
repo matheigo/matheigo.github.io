@@ -73,7 +73,7 @@
       "note": "9.8: 相似な立体の体積（名前は無い）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-09-26",
@@ -93,11 +93,6 @@
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 1 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
-    },
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-26）で大きな直し: 見出し volume ratio の根拠だった IM の 5 件が surface area to volume ratio（別の概念）だったので、mapping を near にし、決まった言い方が出てこない型に（TERM_FORMS で to volume ratio を除いて数え直し）。見直す点: near でよいか、flag（corpus-no-fixed-expression）、出典（IM 5.6・CK-12 9.8）。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]

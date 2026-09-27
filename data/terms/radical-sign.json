@@ -94,7 +94,7 @@
       "note": "Algebra 1 7.15・Algebra 2 3.18: square root symbol"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-09-26",
@@ -127,12 +127,5 @@
       "yt:organicchem"
     ],
     "counted": "2026-09-26"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-26）で大きな直し: mapping を near から exact に（記号 √ と根号の対応は 1 対 1。mapping_note が書いていたのは読み方の違い）、候補 square root symbol（IM）を足して数え直し。見直す点: exact でよいか、en.alt（square root sign・square root symbol）。次の監査のセッションが見直す。",
-      "raised": "2026-09-26"
-    }
-  ]
+  }
 }

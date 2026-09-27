@@ -88,7 +88,7 @@
       "note": "「立体の対角線」は 0 件"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-09-26",
@@ -113,11 +113,6 @@
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは Wikipedia の記事名 space diagonal（英語版「Space diagonal」、en.term のリダイレクト先）。register は主張しない。",
-      "raised": "2026-09-26"
-    },
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-26）で大きな直し: mapping を exact から near にし（日本語は立体一般、参照の言い方は直方体だけ）、見出しを diagonal of a rectangular prism から英語版 Wikipedia の記事名 space diagonal に（near では記事名が参照の 1 件より先。監査 3 の決定 3）。見直す点: 見出し、mapping、ja.alt 体対角線。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]

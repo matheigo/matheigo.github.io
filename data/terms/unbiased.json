@@ -76,7 +76,7 @@
       "note": "第 3 学年 標本調査: 偏りなく抽出するための代表的な方法として無作為抽出"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-09-26",
@@ -91,12 +91,5 @@
       "khan-ap-stats"
     ],
     "counted": "2026-09-26"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-26）で大きな直し: mapping を exact から near に（英語の unbiased は標本の選び方・推定量（不偏）・硬貨の公平さにまたがる）、例文 [0] を標本の選び方の文に差し替え、TERM_FORMS で公平の意味を除いて数え直し（register spoken）。見直す点: near でよいか、ja.alt（偏りのない・不偏）、例文。次の監査のセッションが見直す。",
-      "raised": "2026-09-26"
-    }
-  ]
+  }
 }

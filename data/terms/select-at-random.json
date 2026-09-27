@@ -85,7 +85,7 @@
       "note": "Geometry Unit 8（確率）ほか: selected at random"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-09-26",
@@ -112,12 +112,5 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-26"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-26）で大きな直し: mapping を near から exact に（無作為に抽出する と randomly select は 1 対 1。漢語と副詞＋動詞の形の違いは mapping の理由にしない）。見直す点: exact でよいか、参照の言い方（IM は selected at random が多い）。次の監査のセッションが見直す。",
-      "raised": "2026-09-26"
-    }
-  ]
+  }
 }

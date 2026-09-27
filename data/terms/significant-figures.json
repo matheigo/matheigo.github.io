@@ -80,7 +80,7 @@
       "note": "中学校 第 3 学年 誤差や近似値（［内容の取扱い］（1））: 2300 m を 2.30×10³ m のように表して有効数字を明らかにする"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-09-26",
@@ -106,12 +106,5 @@
       "openstax-introstats"
     ],
     "counted": "2026-09-26"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-26）で大きな直し: mapping を near から exact に（有効数字 と significant figures は 1 対 1。書き方の名前 scientific notation の違いは別エントリが受ける）。見直す点: exact でよいか、level.us（Algebra 2・Precalculus）。次の監査のセッションが見直す。",
-      "raised": "2026-09-26"
-    }
-  ]
+  }
 }

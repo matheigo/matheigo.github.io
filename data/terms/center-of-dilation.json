@@ -93,7 +93,7 @@
       "note": "7.16 Dilation in the Coordinate Plane: 正の scale factor だけ"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-09-26",
@@ -108,12 +108,5 @@
       "khan-middle"
     ],
     "counted": "2026-09-26"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-26）で大きな直し: mapping を exact から near に（日本語の相似の中心は中心が 2 図形の間にある場合も含み、英語の center of dilation は IM・CK-12 が正の scale factor だけを扱うので外相似点に当たる）。見直す点: near でよいか、mapping_note。次の監査のセッションが見直す。",
-      "raised": "2026-09-26"
-    }
-  ]
+  }
 }
