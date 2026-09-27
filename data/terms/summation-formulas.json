@@ -45,8 +45,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "OpenStax Calculus Volume 1（5.1 Approximating Areas）は Σi・Σi²・Σi³ の公式を Rule: Sums and Powers of Integers としてまとめ、本文では the summation formula for ∑ i² のようにも書く。",
-    "sum formulas は三角関数の加法定理（sum formula for sine）も指す。"
+    "OpenStax Calculus Volume 1 は Σi・Σi²・Σi³ の公式を Rule: Sums and Powers of Integers（5.1 Approximating Areas）としてまとめ、5.2（The Definite Integral）では the summation formula for Σi² のようにも書く。",
+    "sum formula は、OpenStax Algebra and Trigonometry（9.2 Sum and Difference Identities）では三角関数の加法定理（the sum formula for sine）、Intermediate Algebra（12.2・12.3）では等差・等比数列の和の公式を指す。"
   ],
   "related": [
     "summation-notation",
@@ -58,7 +58,17 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1",
-      "note": "5.1 Approximating Areas（Rule: Sums and Powers of Integers、the summation formula）"
+      "note": "5.1 Approximating Areas（Rule: Sums and Powers of Integers）・5.2 The Definite Integral（the summation formula）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "9.2 Sum and Difference Identities（the sum formula for sine ／ cosine）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "12.2 Arithmetic Sequences・12.3 Geometric Sequences and Series（the sum formula）"
     }
   ],
   "confidence": "likely",
@@ -85,13 +95,13 @@
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 sums and powers of integers（本文 5 件）。register は主張しない。",
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: 見出し summation formulas → sums and powers of integers（③ の参照決め: OpenStax Calculus Volume 1 5.1 の規則の名前 Rule: Sums and Powers of Integers 5 件）。見直す点: 規則の名前を見出しにしてよいか（STYLE 追記欄の参照の定理・法則の名前）、pitfalls[0]、例文の言い方、level.us Calculus I と単元、ja.term Σ の公式（資料に 0 件）。次の監査のセッションが見直す。",
       "raised": "2026-09-27"
     },
     {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: 見出し summation formulas → sums and powers of integers（③ の参照決め: OpenStax Calculus Volume 1 5.1 の規則の名前 Rule: Sums and Powers of Integers 5 件）。見直す点: 規則の名前を見出しにしてよいか（STYLE 追記欄の参照の定理・法則の名前）、pitfalls[0]、例文の言い方、level.us Calculus I と単元、ja.term Σ の公式（資料に 0 件）。次の監査のセッションが見直す。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 sums and powers of integers（本文 5 件）。register は主張しない。",
       "raised": "2026-09-27"
     }
   ]

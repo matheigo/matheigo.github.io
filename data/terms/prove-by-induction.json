@@ -7,12 +7,14 @@
   },
   "en": {
     "term": "use induction",
-    "alt": [],
+    "alt": [
+      "prove by induction"
+    ],
     "variants": [
       {
         "term": "prove … by induction",
         "register": "both",
-        "note": "前の見出し。Levin（4.5）と Nicholson（11.2）も prove … by induction と書く。"
+        "note": "Levin（2.2・4.7。4.5 は prove … by mathematical induction）と Nicholson（Appendix C）も prove … by induction と書く。"
       }
     ],
     "uk": null,
@@ -65,13 +67,13 @@
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "4.5 Proof by Induction（Use induction to prove、prove … by induction）"
+      "note": "4.5 Proof by Induction（Use induction to prove、prove … by mathematical induction）・2.2・4.7（prove … by induction）"
     },
     {
       "type": "reference",
       "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
       "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
-      "note": "11.2 The Jordan Canonical Form（prove … by induction）"
+      "note": "Appendix C Mathematical Induction（prove … by induction）"
     }
   ],
   "confidence": "likely",
@@ -84,11 +86,11 @@
   "evidence": {
     "spoken": {
       "use induction !hypothesis": 33,
-      "prove … by induction": 8
+      "prove … by induction": 10
     },
     "written": {
       "use induction !hypothesis": 22,
-      "prove … by induction": 1
+      "prove by induction": 4
     },
     "sources": [
       "mit-6.042",

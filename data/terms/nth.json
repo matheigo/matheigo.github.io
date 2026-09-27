@@ -26,11 +26,12 @@
       "Algebra 2",
       "Precalculus",
       "AP Calculus BC",
+      "Calculus I",
       "Calculus II"
     ]
   },
-  "definition_ja": "n 番目の、また n 次・n 回目の。第 n 項（the nth term）、n 乗根（the nth root）、第 n 次導関数（the nth derivative）のように使う。",
-  "definition_en": "The ordinal of n: in position n (the nth term), or of order n (the nth root, the nth derivative).",
+  "definition_ja": "n 番目の。第 n 項（the nth term）のほか、n 乗根（the nth root。n は根の指数）・第 n 次導関数（the nth derivative。n は微分の回数）のように、位置でない n にも使う。",
+  "definition_en": "The ordinal form of n: in position n (the nth term), or with n as the index or the order (the nth root, the nth derivative).",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -61,7 +62,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.1 Sequences and Their Notations（the nth term）・1.3 Radicals and Rational Exponents（the nth root）"
     },
     {
       "type": "reference",
@@ -86,6 +88,16 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 10.1（nth partial sum）・Topic 10.3（nth term test）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "3.2 The Derivative as a Function（from the second derivative to the nth derivative）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "5.1 Sequences・6.3 Taylor and Maclaurin Series（the nth term、the nth Taylor polynomial）"
     }
   ],
   "confidence": "likely",

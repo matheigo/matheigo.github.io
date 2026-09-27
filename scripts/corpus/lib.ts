@@ -1524,14 +1524,15 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   // batch 4
   "eulers-formula-for-polyhedra": {
     // CK-12 Geometry 9.1's name, in the sentences it uses it in: the bare "Euler's theorem" is the number-theory
-    // theorem (a^φ(n) ≡ 1 mod n) everywhere in the corpus (MIT 6.042). Levin's "Euler's formula for planar
-    // graphs" is its own candidate (Phase 5 監査 7, batch 18: the three names were one form before)
+    // theorem (a^φ(n) ≡ 1 mod n) everywhere in the corpus (MIT 6.042). Levin's theorem title "Euler's formula
+    // for planar graphs" holds the headword since it became Euler's formula, so it is a collocation, not a
+    // candidate (Phase 5 監査 5 の決定 3), and counted in the headword's sentences below (監査 10)
     "Euler's theorem": "Euler's theorem: f | into Euler's theorem | Euler's theorem to solve | for v in Euler's theorem | table using Euler's theorem | called Euler's theorem",
     // The bare "Euler's formula" is mostly e^(iθ) = cos θ + i sin θ (terms/eulers-formula): counted in the
     // sentences of the lecture notes (MIT 6.042's planar graphs) and The Organic Chemistry Tutor that use it
     // for V − E + F = 2, as the CK-12 name is (監査 9 の前のユーザーの決定 1: the headword is Euler's formula)
     "Euler's formula":
-      "five.eight.three Euler's formula | five.eight.three (Euler's formula | as Euler's formula claims | planar graph like Euler's formula | five.eight.five with Euler's formula | by Euler's formula, and substitute | use Euler's formula to show | in Euler's formula, we find | substitute into Euler's formula | in harmony with Euler's formula | relates to Euler's formula | use Euler's formula to confirm",
+      "five.eight.three Euler's formula | five.eight.three (Euler's formula | as Euler's formula claims | planar graph like Euler's formula | five.eight.five with Euler's formula | by Euler's formula, and substitute | use Euler's formula to show | in Euler's formula, we find | substitute into Euler's formula | in harmony with Euler's formula | relates to Euler's formula | use Euler's formula to confirm | Euler's formula for planar graphs",
   },
   "supplementary-angle": { "supplementary angles": "supplementary" }, // the pair is supplementary; "supplementary angles" is inside it
   // "in base e" is an exponential model's base and "in based on" folds into "in base" (Phase 5 監査 7, batch 17)
