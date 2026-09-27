@@ -38,7 +38,7 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "!in !log !logarithm base two | !in !log !logarithm base five | !in !log !logarithm base eight | !in !log !logarithm base sixteen": 40,
@@ -57,5 +57,17 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-27"
+  },
+  "flags": [
+    {
+      "code": "audit-human",
+      "note": "Phase 5 監査（2026-09-27）で判断がつかない: 数字の列の読み（one zero one one base two ほか）の根拠が無い。首位の形 base two の 40 件のうち 29 件は対数・三角形の底、残りと in binary の多くは記数法の名前の言及で、数字の列を読んだ例は in binary の後置の 3〜4 件だけの ③。参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）にも数字の列の読みは無い。人間に決めてほしいこと: 1 つ目の読み（one zero one one in binary ／ one zero one one base two ほか）と、2 つ目 binary one zero one one（前置）を残すか。人間レビューへ。",
+      "raised": "2026-09-27"
+    }
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-09-27",
+    "human": null
   }
 }

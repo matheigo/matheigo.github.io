@@ -35,7 +35,7 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
     "counted": "2026-09-27"
@@ -45,6 +45,16 @@
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。読みは IM の呼び方 parallelogram a b c d | parallelogram abcd | parallelogram p q r s | parallelogram pqrs | parallelogram e f g h | parallelogram efgh | parallelogram w x y z | parallelogram wxyz（Geometry 2.13 Proofs about Parallelograms・Geometry 5.5 Scaling and Unscaling・Geometry 2.12 Proofs about Quadrilaterals・計 15 件）。register は主張しない。",
       "raised": "2026-09-27"
+    },
+    {
+      "code": "audit-human",
+      "note": "Phase 5 監査（2026-09-27）で判断がつかない: 記号 ▱（□ABCD とも）そのものが日本側の資料（〔用語・記号〕・解説・共通テスト／センター試験・日本語版 Wikipedia）にも米国の参照（CK-12・IM・OpenStax・CED）にも 0 件で、latex \\square は ▱ でなく □ を出す。読み parallelogram ABCD は IM が平行四辺形を頂点で名付ける言い方で正しい。人間に決めてほしいこと: 記号の字形（▱ ／ □ ／ 言葉だけ）と、この項目を記号として残すか（残すなら level.jp の中2 の根拠）。人間レビューへ。",
+      "raised": "2026-09-27"
     }
-  ]
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-09-27",
+    "human": null
+  }
 }
