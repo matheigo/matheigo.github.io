@@ -3,9 +3,7 @@
   "ja": {
     "term": "加法定理",
     "reading": "かほうていり",
-    "alt": [
-      "和と差の公式"
-    ]
+    "alt": []
   },
   "en": {
     "term": "sum and difference formulas",
@@ -14,11 +12,23 @@
       "addition formula"
     ],
     "uk": null,
-    "register": "written"
+    "register": "written",
+    "variants": [
+      {
+        "term": "sum and difference formulas",
+        "register": "written",
+        "note": "OpenStax Algebra and Trigonometry の本文の言い方。話し言葉では angle addition formula・addition formula も使い、どれも少ない。"
+      },
+      {
+        "term": "sum and difference identities",
+        "register": "written",
+        "note": "OpenStax Algebra and Trigonometry の節の題（Sum and Difference Identities）と本文の言い方。話し言葉には出てこない。"
+      }
+    ]
   },
   "pos": "noun",
-  "mapping": "near",
-  "mapping_note": "日本語は「定理」、英語は formulas（公式）と呼ぶ。OpenStax Algebra and Trigonometry は sum and difference formulas と呼ぶ。授業では angle addition formula とも言うが少ない（話し言葉では 3 つの言い方に割れる）。",
+  "mapping": "exact",
+  "mapping_note": null,
   "domains": [
     "trigonometry"
   ],
@@ -49,23 +59,41 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "値を「求めよ」は、米国の問題では find the exact value（小数ではなく正確な値）と書くことが多い。"
+    "日本語は「定理」だが、OpenStax Algebra and Trigonometry は sum and difference formulas と呼ぶ（節の題は Sum and Difference Identities）。英語版 Wikipedia「List of trigonometric identities」は angle addition and subtraction theorems (or formulae) とも書く。",
+    "addition theorem と訳すと、英語版 Wikipedia「Addition theorem」の一般の加法定理（f(x + y) を f(x), f(y) で表す式）の名前になる。用例コーパスと参照には出てこない。",
+    "「値を求めよ」は、OpenStax Algebra and Trigonometry では find the exact value（小数ではなく正確な値）と書く（41 件）。"
   ],
   "related": [
     "double-angle-formulas",
     "half-angle-formulas",
     "product-to-sum-formulas",
-    "auxiliary-angle-form"
+    "auxiliary-angle-form",
+    "triple-angle-formulas",
+    "sum-to-product-formulas"
   ],
   "sources": [
     {
-      "type": "wikipedia-langlink",
-      "ja": "加法定理",
-      "en": "Addition theorem"
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Sum and Difference Identities（sum and difference formulas、find the exact value）"
     },
     {
-      "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "type": "reference",
+      "title": "日本語版 Wikipedia「三角関数の公式の一覧」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0%E3%81%AE%E5%85%AC%E5%BC%8F%E3%81%AE%E4%B8%80%E8%A6%A7",
+      "note": "節「加法定理」"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_trigonometric_identities",
+      "note": "記事「List of trigonometric identities」の節 Angle sum and difference identities（数学カテゴリから 2 段）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Addition_theorem",
+      "note": "記事「Addition theorem」（一般の加法定理）"
     }
   ],
   "confidence": "likely",
@@ -74,7 +102,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "angle addition formula": 4,
@@ -83,6 +111,7 @@
     },
     "written": {
       "sum and difference formulas": 30,
+      "sum and difference identities": 12,
       "angle addition formula": 3
     },
     "sources": [

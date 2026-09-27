@@ -26,8 +26,6 @@
     ],
     "us": [
       "Geometry",
-      "Algebra 2",
-      "Precalculus",
       "Integrated Math 2"
     ]
   },
@@ -49,13 +47,14 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "米国の Geometry では、直角三角形の高さが斜辺の 2 つの部分の geometric mean になる（相似の単元）ことで出てくる。",
+    "IM Geometry（3.13 Using the Pythagorean Theorem and Similarity）は、直角三角形の斜辺に下ろした高さが斜辺の 2 つの部分の相乗平均になること（3 と 7 なら高さ √21）を相似で扱う（geometric mean の語は使わない）。CK-12 Geometry（4.6 の練習問題）は、三角形の高さを the geometric mean で求めさせる。",
     "用例コーパスの話し言葉は大半が The Organic Chemistry Tutor。書き言葉にはほとんど出てこない。"
   ],
   "related": [
     "arithmetic-mean",
     "am-gm-inequality",
-    "geometric-middle-term"
+    "geometric-middle-term",
+    "right-triangle-similarity"
   ],
   "sources": [
     {
@@ -66,6 +65,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 3.13 Using the Pythagorean Theorem and Similarity（斜辺に下ろした高さ √21）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.6 Area and Perimeter of Triangles（the geometric mean）"
     }
   ],
   "confidence": "likely",
@@ -74,7 +85,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "geometric mean": 39
@@ -89,6 +100,6 @@
       "yt:3blue1brown",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

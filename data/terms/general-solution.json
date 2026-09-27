@@ -15,19 +15,24 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
-    "trigonometry"
+    "trigonometry",
+    "calculus"
   ],
   "level": {
     "jp": [
-      "数II"
+      "数II",
+      "大学"
     ],
     "us": [
       "Algebra 2",
-      "Precalculus"
+      "Precalculus",
+      "AP Calculus AB",
+      "AP Calculus BC",
+      "Calculus II"
     ]
   },
-  "definition_ja": "方程式の解をすべて、整数 n や任意定数 C を使って 1 つの式で表したもの。三角方程式では θ = π/6 + 2nπ など、微分方程式では任意定数を含む解。",
-  "definition_en": "All solutions of an equation written as one formula with an integer n or an arbitrary constant C: θ = π/6 + 2nπ for a trigonometric equation, a solution with arbitrary constants for a differential equation.",
+  "definition_ja": "方程式の解をすべて、整数 n や任意定数 C を含む式で表したもの。三角方程式では θ = π/6 + 2nπ など、微分方程式では任意定数を含む解。",
+  "definition_en": "All solutions of an equation, written with an integer n or arbitrary constants: θ = π/6 + 2nπ for a trigonometric equation, a solution with arbitrary constants for a differential equation.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -44,7 +49,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスの general solution の多くは微分方程式（MIT 18.03・OpenStax Calculus）。三角方程式の意味では OpenStax Algebra and Trigonometry に少し出る。"
+    "用例コーパスの general solution の多くは微分方程式（MIT 18.03・OpenStax Calculus）。三角方程式のすべての解を、OpenStax Algebra and Trigonometry（Solving Trigonometric Equations）は general solution と呼ばず all possible solutions と書き、θ = π/3 ± 2kπ（k is an integer）の形で示す（同書の general solution は連立一次方程式の解）。"
   ],
   "related": [
     "trigonometric-equation",
@@ -54,7 +59,8 @@
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 2"
+      "title": "OpenStax Calculus Volume 2",
+      "note": "4.1 Basics of Differential Equations（general solution、particular solution）"
     },
     {
       "type": "textbook",
@@ -62,7 +68,14 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Solving Trigonometric Equations（all possible solutions）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 7.6（general solutions）"
     }
   ],
   "confidence": "likely",
@@ -71,7 +84,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "general solution": 129
@@ -94,6 +107,6 @@
       "yt:blackpenredpen",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -29,8 +29,8 @@
       "Integrated Math 3"
     ]
   },
-  "definition_ja": "未知数の最高次数が 4 の方程式。高校では複2次式 x⁴ + ax² + b = 0 を x² = t とおいて解く形が多い。",
-  "definition_en": "An equation whose highest power of the unknown is 4; in high school, often biquadratic, x⁴ + ax² + b = 0, solved by letting t = x².",
+  "definition_ja": "未知数の最高次数が 4 の方程式。",
+  "definition_en": "An equation whose highest power of the unknown is 4.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -47,7 +47,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "Wikipedia の記事名は quartic equation だが、用例コーパスでは話し言葉にわずかに出てくるだけ。OpenStax Algebra and Trigonometry は fourth-degree と書く（本文 2 件）。"
+    "英語版 Wikipedia の記事名は Quartic equation。OpenStax Algebra and Trigonometry（2.6 Other Types of Equations）は fourth-degree equation と書く（例題の題 Solving a Fourth-degree Equation in Quadratic Form）。",
+    "学習指導要領解説（数学II）は、x⁴ + x² − 2 = 0 のような複二次方程式（x² = t とおくと t の 2 次方程式になる）を取り上げる。"
   ],
   "related": [
     "polynomial-equation-of-higher-degree",
@@ -61,7 +62,14 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "2.6 Other Types of Equations（fourth-degree equation）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II いろいろな式: x⁴＋x²−2＝0 のような複二次方程式"
     }
   ],
   "confidence": "likely",
@@ -70,7 +78,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "quartic equation": 2
@@ -83,13 +91,13 @@
       "openstax-algtrig",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは OpenStax の呼び方 fourth-degree equation（本文 2 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

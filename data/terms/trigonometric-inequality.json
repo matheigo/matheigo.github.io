@@ -3,9 +3,7 @@
   "ja": {
     "term": "三角不等式",
     "reading": "さんかくふとうしき",
-    "alt": [
-      "三角関数を含む不等式"
-    ]
+    "alt": []
   },
   "en": {
     "term": "trigonometric inequality",
@@ -14,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（trigonometric inequality は用例コーパスにも OpenStax にも出てこない）。単位円やグラフで範囲を読む問題として solve sin θ > 1/2 on [0, 2π) のように問題文で言う。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（trigonometric inequality は用例コーパスにも OpenStax にも出てこない）。参照には、三角関数を含む不等式を解く問題そのものが出てこない（OpenStax Algebra and Trigonometry（7.3 Unit Circle）は、sin t と cos t の符号から t が決める単位円上の点の象限を答えさせるだけ）。",
   "domains": [
     "trigonometry"
   ],
@@ -22,10 +20,7 @@
     "jp": [
       "数II"
     ],
-    "us": [
-      "Algebra 2",
-      "Precalculus"
-    ]
+    "us": []
   },
   "definition_ja": "角 θ の三角関数を含む不等式。単位円やグラフを使って θ の範囲を求める。",
   "definition_en": "An inequality involving trigonometric functions of an angle θ, solved for a range of θ using the unit circle or a graph.",
@@ -45,7 +40,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本語の「三角不等式」は |a + b| ≦ |a| + |b|（英語の triangle inequality）を指すこともある。英語では別の語（triangle-inequality を参照）。"
+    "日本語版 Wikipedia「三角不等式」は、三角不等式を |a + b| ≦ |a| + |b|（英語の triangle inequality。エントリ triangle-inequality）とし、三角比を含む不等式も三角不等式と呼ぶ場合があるので注意が要ると書く。"
   ],
   "related": [
     "trigonometric-equation",
@@ -54,6 +49,23 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「三角不等式」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E4%B8%8D%E7%AD%89%E5%BC%8F",
+      "note": "三角不等式は triangle inequality。三角比を含む不等式も三角不等式（英: trigonometric inequalities）と呼ぶ場合がある"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学 (教科)」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6_%28%E6%95%99%E7%A7%91%29",
+      "note": "数学II の内容: 三角方程式と三角不等式"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "7.3 Unit Circle（sin t と cos t の符号から象限を答える問題）"
     }
   ],
   "confidence": "likely",
@@ -62,16 +74,16 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

@@ -32,8 +32,8 @@
   "spoken_en": "a squared plus b squared, times x squared plus y squared, is greater than or equal to a x plus b y, squared",
   "examples": [
     {
-      "en": "This is really the dot product: u dot v is at most the length of u times the length of v.",
-      "ja": "これは実は内積の話で、u·v は |u||v| 以下になる。",
+      "en": "The Cauchy-Schwarz inequality is really about the dot product: u dot v is at most the length of u times the length of v.",
+      "ja": "コーシー・シュワルツの不等式は実は内積の話で、u·v は |u||v| 以下になる。",
       "register": "spoken"
     },
     {
@@ -44,18 +44,31 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパス（OpenStax 9 冊を含む）には出てこない。米国の高校課程では名前を出さず、ベクトルの |u · v| ≤ |u||v| として触れる程度。"
+    "用例コーパス（OpenStax 9 冊を含む）には出てこない。Nicholson（Linear Algebra with Applications）は、Rⁿ の |x · y| ≤ ‖x‖‖y‖ を Cauchy inequality（Theorem 5.3.2）、内積空間の形を Cauchy-Schwarz inequality（Theorem 10.1.4）と呼ぶ。OpenStax Calculus Volume 3（2.3 The Dot Product）は u · v = ‖u‖‖v‖ cos θ を扱うが、この不等式は書かない。"
   ],
   "related": [
     "am-gm-inequality",
     "prove",
-    "triangle-inequality"
+    "triangle-inequality",
+    "dot-product",
+    "equality-holds"
   ],
   "sources": [
     {
       "type": "wikipedia-langlink",
       "ja": "コーシー＝シュワルツの不等式",
       "en": "Cauchy–Schwarz inequality"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "5.3 Orthogonality（Theorem 5.3.2 Cauchy Inequality）・10.1 Inner Products and Norms（Theorem 10.1.4 Cauchy-Schwarz Inequality）・Exercise 4.2.37（the Cauchy-Schwarz inequality）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3",
+      "note": "2.3 The Dot Product"
     }
   ],
   "confidence": "likely",
@@ -64,10 +77,10 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {

@@ -91,6 +91,8 @@ export const VARIANTS: [RegExp, string][] = [
   [/\bchange\s+of\s+base\b/g, "change-of-base"],
   // and "row echelon form" (captions, MIT OCW) against "row-echelon form" (OpenStax)
   [/\brow\s+echelon\b/g, "row-echelon"],
+  // (Phase 5 監査 7, batch 19) captions write "double angle formula", "half angle formula"; OpenStax hyphenates
+  [/\b(double|half|triple)\s+angle\b/g, "$1-angle"],
   // (Phase 2 統計・ベクトルの単元 2) "LU factorization" against Nicholson's "LU-factorization"
   [/\b(lu|qr)\s+factorization/g, "$1-factorization"],
   // and Levin's "inclusion/exclusion" against "inclusion-exclusion"
@@ -1480,7 +1482,6 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   // 小数部分 {x}: IM Grade 6's two "fractional parts" are parts of a whole cut into fractions
   // 単元 3: OpenStax Elementary / Intermediate Algebra's "conjugate pair" is mostly the pair of
   // binomials (a − b)(a + b); the roots come "in conjugate pairs"
-  "conjugate-roots": { "conjugate pairs": "in conjugate pairs | conjugate pair of roots | conjugate pair of solutions | conjugate pair of zeros" },
   // 単元 3: "intercept form" after "slope" is the slope-intercept form of a line (captions write no hyphen)
   "factored-form": { "intercept form": "!slope intercept form" },
   // 単元 3 (batch 6)
@@ -1586,7 +1587,9 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   // "expansion of" was eight tenths series expansion in speech (Phase 2 統計・ベクトルの単元の前の修正)
   expansion: { expansion: "expansion of (" }, // the expansion of (x + y)^n, not a power series expansion
   identity: { identity: "an identity" }, // not the identity matrix or function
-  period: { period: "period of" }, // not a period of time
+  period: { period: "period of !time" }, // not a period of time (the "!time" mark: Phase 5 監査 7, batch 19)
+  // not phase shift (its own entry) or the phase line / portrait / space / plane / diagram of differential equations
+  phase: { phase: "phase !shift !shifts !shifted !line !lines !portrait !portraits !space !spaces !plane !planes !diagram !diagrams" },
   logarithm: { logarithm: "the logarithm of", log: "the log of" }, // "log" alone is too short to count as a word
   argument: { argument: "argument of the logarithm" }, // 真数, not a function's argument in general
   // "with the same base" was mostly the exponent rule "multiply powers with the same base"

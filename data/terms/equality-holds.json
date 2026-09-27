@@ -14,7 +14,7 @@
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスで equality holds は話し言葉・書き言葉ともほとんど出てこない）。答案では equality holds when (if and only if) a = b、口頭では it's equal exactly when a = b のように言う。「等号成立条件」という名詞にまとめた言い方はない。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスで equality holds は話し言葉・書き言葉ともほとんど出てこない）。Nicholson は Cauchy inequality の等号の場合を if equality holds（5.3）、equality occurs if and only if …（10.1）と書き、OpenStax Calculus Volume 1（5.2 The Definite Integral）は where equality holds only at the endpoints と書く。「等号成立条件」に当たる condition for equality・equality condition は、用例コーパスにも参照にも出てこない。",
   "domains": [
     "algebra"
   ],
@@ -23,12 +23,12 @@
       "数II"
     ],
     "us": [
-      "Algebra 2",
-      "Precalculus"
+      "Calculus I",
+      "Linear Algebra"
     ]
   },
-  "definition_ja": "不等式 A ≧ B で A = B となること。どのような場合に等号が成り立つかを答案に書くことが求められる。",
-  "definition_en": "In an inequality A ≥ B, the case A = B; Japanese solutions are expected to state when it happens.",
+  "definition_ja": "不等式 A ≧ B で A = B となること。",
+  "definition_en": "In an inequality A ≥ B, the case A = B.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -38,8 +38,8 @@
       "register": "spoken"
     },
     {
-      "en": "Find the minimum value of x + 4/x for x > 0, and the value of x at which equality holds.",
-      "ja": "x > 0 のとき x + 4/x の最小値と、そのときの x の値を求めよ。",
+      "en": "Use the AM-GM inequality to find the minimum value of x + 4/x for x > 0 and the value of x at which equality holds.",
+      "ja": "相加平均と相乗平均の関係を用いて、x > 0 のとき x + 4/x の最小値と、等号が成り立つときの x の値を求めよ。",
       "register": "written"
     }
   ],
@@ -49,11 +49,25 @@
   ],
   "related": [
     "am-gm-inequality",
-    "prove"
+    "prove",
+    "equal",
+    "hold",
+    "cauchy-schwarz-inequality"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "5.3 Orthogonality（if equality holds）・10.1 Inner Products and Norms（equality occurs if and only if）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "5.2 The Definite Integral（where equality holds only at the endpoints）"
     }
   ],
   "confidence": "likely",
@@ -62,7 +76,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "equality holds": 3
@@ -77,13 +91,13 @@
       "mit-notes",
       "openstax-calculus"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 3 件 ／ 書 4 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

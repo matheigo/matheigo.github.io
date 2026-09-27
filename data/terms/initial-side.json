@@ -28,7 +28,7 @@
     ]
   },
   "definition_ja": "角をはかる基準の半直線。座標平面では x 軸の正の部分にとる。",
-  "definition_en": "The ray from which an angle is measured; on the coordinate plane, the positive x-axis.",
+  "definition_en": "The ray from which an angle is measured; for an angle in standard position, the positive x-axis.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -45,16 +45,26 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "始線を x 軸の正の部分にとった角を、米国では an angle in standard position（標準の位置の角）と呼ぶ。"
+    "OpenStax Algebra and Trigonometry（7.1）は、頂点が原点にあり始線が x 軸の正の部分にある角を an angle in standard position（標準の位置の角）と呼ぶ。",
+    "極座標（学習指導要領解説 数学C）の始線は、英語では polar axis（エントリ polar-coordinates）。"
   ],
   "related": [
     "terminal-side",
-    "general-angle"
+    "general-angle",
+    "coterminal-angle",
+    "polar-coordinates"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "7.1 Angles（initial side、standard position）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学C 平面上の曲線: 半直線 OX を始線、角 θ を偏角"
     }
   ],
   "confidence": "likely",
@@ -63,7 +73,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "initial side": 11
@@ -78,6 +88,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

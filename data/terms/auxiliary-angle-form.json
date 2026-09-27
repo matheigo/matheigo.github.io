@@ -7,14 +7,12 @@
   },
   "en": {
     "term": "auxiliary-angle form",
-    "alt": [
-      "harmonic form"
-    ],
+    "alt": [],
     "uk": null
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。米国では write a sin θ + b cos θ as a single sine function（R sin(θ + α) の形に書く）と手順で言う。「合成」を synthesis と訳すと通じない言い方になる（STYLE の直訳禁止リスト）。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。OpenStax Calculus Volume 3（7.3 Applications）は、単振動の x(t) = c₁ cos(ωt) + c₂ sin(ωt) を A sin(ωt + ϕ)（A = √(c₁² + c₂²)）の形に書き、例題で Express … in the form A sin(ωt + ϕ) と問う。",
   "domains": [
     "trigonometry"
   ],
@@ -23,8 +21,7 @@
       "数II"
     ],
     "us": [
-      "Algebra 2",
-      "Precalculus"
+      "Calculus III"
     ]
   },
   "definition_ja": "a sin θ + b cos θ を r sin(θ + α)（r = √(a² + b²)）の形に直すこと。最大・最小や方程式に使う。",
@@ -45,16 +42,34 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "「synthesis of trigonometric functions」は用例コーパスに出てこない。"
+    "「合成」を直訳した synthesis of trigonometric functions は、用例コーパスにも参照（CED・OpenStax・IM・CK-12）にも出てこない。"
   ],
   "related": [
     "angle-addition-formulas",
     "amplitude",
-    "trigonometric-function"
+    "trigonometric-function",
+    "phase"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3",
+      "note": "7.3 Applications（in the form A sin(ωt + ϕ)）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II (4) 三角関数 ア(エ): 三角関数の加法定理や2倍角の公式，三角関数の合成について理解すること"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和3年度 大学入学共通テスト 第1日程 数学Ⅱ（問題）",
+      "url": "https://web.archive.org/web/20220601/https://www.dnc.ac.jp/albums/abm.php?d=88&f=abm00001261.pdf&n=R3_%E6%95%B0%E5%AD%A6%E2%85%A1%EF%BC%88%EF%BC%91%E6%9C%8816%E6%97%A5%E3%83%BB17%E6%97%A5%EF%BC%89%E3%81%AE%E5%95%8F%E9%A1%8C.pdf",
+      "note": "第1問: 三角関数の合成"
     }
   ],
   "confidence": "likely",
@@ -63,7 +78,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"
@@ -72,7 +87,7 @@
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

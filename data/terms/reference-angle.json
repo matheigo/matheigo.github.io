@@ -3,9 +3,7 @@
   "ja": {
     "term": "基準角",
     "reading": "きじゅんかく",
-    "alt": [
-      "参照角"
-    ]
+    "alt": []
   },
   "en": {
     "term": "reference angle",
@@ -15,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "日本の教科書には名前がない。見出しの「基準角」は本プロジェクトの訳語。米国の Algebra 2 ／ Precalculus では、動径と x 軸がつくる鋭角を reference angle と呼び、三角関数の値を第 1 象限の値から求める定番の手順に使う（用例コーパスでは話し言葉・書き言葉ともよく出てくる）。",
+  "mapping_note": "見出しの「基準角」は学習指導要領解説に無い、本プロジェクトの訳語（「基準角」「参照角」は学習指導要領解説・共通テスト／センター試験・日本語版 Wikipedia に出てこない）。OpenStax Algebra and Trigonometry（7.1 Angles・7.3 Unit Circle）は、動径と x 軸がつくる鋭角を reference angle と呼び、三角関数の値を reference angle の値と象限の符号から求める（用例コーパスでは話し言葉・書き言葉ともよく出てくる）。",
   "domains": [
     "trigonometry"
   ],
@@ -29,7 +27,7 @@
       "Integrated Math 3"
     ]
   },
-  "definition_ja": "角の動径と x 軸がつくる鋭角（0 < θ' ≦ 90°）。三角関数の値は、基準角の値に象限で決まる符号をつけたものになる。",
+  "definition_ja": "角の動径と x 軸がつくる鋭角（0° < θ' < 90°）。三角関数の値は、基準角の値に象限で決まる符号をつけたものになる。",
   "definition_en": "The acute angle between the terminal side of an angle and the x-axis; a trigonometric value equals the value at the reference angle with the sign set by the quadrant.",
   "latex": null,
   "spoken_en": null,
@@ -52,12 +50,26 @@
   "related": [
     "terminal-side",
     "quadrantal-angle",
-    "trigonometric-function"
+    "trigonometric-function",
+    "unit-circle",
+    "coterminal-angle"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "7.1 Angles・7.3 Unit Circle（reference angle）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "「基準角」「参照角」は出てこない"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "「基準角」「参照角」は 0 件"
     }
   ],
   "confidence": "likely",
@@ -66,7 +78,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "reference angle": 76
@@ -81,6 +93,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

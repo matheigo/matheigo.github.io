@@ -15,18 +15,21 @@
   },
   "pos": "adjective",
   "mapping": "near",
-  "mapping_note": "日本語の「正の向き」は角の回転の向きの約束で、中身は反時計回り。英語では角の向きをそのまま counterclockwise と言う。the positive direction は用例コーパスでは主に数直線上の運動の向き（Khan Academy）。英国などの anticlockwise（英語版 Wikipedia「Clockwise」は Commonwealth English の言い方とする）は用例コーパスに出てこない。",
+  "mapping_note": "日本語の「正の向き」は角の回転の向きの約束で、中身は反時計回り。英語では角の向きをそのまま counterclockwise と言う。the positive direction は用例コーパスでは主に数直線上の運動の向き（Khan Academy）。英国などの anticlockwise（英語版 Wikipedia「Clockwise」は Commonwealth English の言い方とする）は用例コーパスに出てこない。共通テスト・センター試験の問題文の「x 軸上を正の向きに」（令和6年度 本試験 数学I 第3問）、「数直線上を…正の向きに」（平成28年度 本試験 数学II・数学B 第5問）は座標が増える向きのことで、英語は in the positive direction（counterclockwise ではない）。",
   "domains": [
-    "trigonometry"
+    "trigonometry",
+    "geometry"
   ],
   "level": {
     "jp": [
       "数II"
     ],
     "us": [
+      "Pre-Algebra",
+      "Geometry",
       "Algebra 2",
-      "Precalculus",
-      "Integrated Math 3"
+      "Integrated Math 3",
+      "Precalculus"
     ]
   },
   "definition_ja": "時計の針と逆の回転の向き。角の正の向き。",
@@ -69,6 +72,48 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Clockwise",
       "note": "記事「Clockwise」の冒頭: 反時計回りは Commonwealth English で anticlockwise、North American English で counterclockwise"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「三角関数」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0",
+      "note": "反時計回りを正の向きとして角を測る"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「時計回り・反時計回り」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%99%82%E8%A8%88%E5%9B%9E%E3%82%8A%E3%83%BB%E5%8F%8D%E6%99%82%E8%A8%88%E5%9B%9E%E3%82%8A",
+      "note": "節「数学」: 平面角は反時計回りが正の向き"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和6年度 大学入学共通テスト 本試験 数学Ⅰ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=666&f=abm00004687.pdf&n=2024_or_18_sugaku1.pdf",
+      "note": "第3問: x 軸上を正の向きに、y 軸上を負の向きに（座標軸の向き）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成28年度 大学入試センター試験 本試験 数学Ⅱ・数学Ｂ（問題）",
+      "url": "https://web.archive.org/web/20170601/https://www.dnc.ac.jp/albums/abm.php?f=abm00007097.pdf&n=2801-0502+suugaku2B.pdf",
+      "note": "第5問: 数直線上を正の向きに 3、負の向きに 1 だけ移動"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 8 1.2 Naming the Moves〜1.6 Describing Transformations（counterclockwise）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 1.13〜1.15（1.14 Defining Rotations ほか。counterclockwise）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "8.10 Defining Rotation・8.12 Geometry Software and Graphing Rotations（counterclockwise）"
     }
   ],
   "confidence": "likely",
@@ -77,7 +122,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "counterclockwise": 86
@@ -101,6 +146,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

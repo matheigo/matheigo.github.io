@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "見出しの「座標軸上の角」は学習指導要領解説に無い、本プロジェクトの訳語。日本の教科書では 0°, 90°, 180°, 270° などの角にまとめた名前をつけない。",
+  "mapping_note": "見出しの「座標軸上の角」は学習指導要領解説に無い、本プロジェクトの訳語。学習指導要領解説・共通テスト／センター試験・日本語版 Wikipedia にも、動径が座標軸に重なる角をまとめて呼ぶ名前は出てこない。",
   "domains": [
     "trigonometry"
   ],
@@ -48,12 +48,25 @@
   ],
   "related": [
     "reference-angle",
-    "terminal-side"
+    "terminal-side",
+    "quadrant"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "7.1 Angles（quadrantal angle）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "「座標軸上の角」ほか、動径が座標軸に重なる角をまとめて呼ぶ名前は出てこない"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "「座標軸上の角」ほか、動径が座標軸に重なる角をまとめて呼ぶ名前は 0 件"
     }
   ],
   "confidence": "likely",
@@ -62,7 +75,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "quadrantal angle": 1
@@ -74,13 +87,13 @@
       "openstax-algtrig",
       "yt:blackpenredpen"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 quadrantal angle（本文 6 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

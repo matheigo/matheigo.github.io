@@ -14,11 +14,23 @@
       "reduce the fraction"
     ],
     "uk": null,
-    "register": "written"
+    "register": "written",
+    "variants": [
+      {
+        "term": "simplify the fraction",
+        "register": "written",
+        "note": "OpenStax Prealgebra・Elementary Algebra・Intermediate Algebra の言い方。話し言葉では少ない。"
+      },
+      {
+        "term": "remove common factors",
+        "register": "written",
+        "note": "同じ OpenStax の 3 冊が、約分の手順（simplify by removing common factors）として書く。話し言葉には出てこない。"
+      }
+    ]
   },
   "pos": "verb",
   "mapping": "near",
-  "mapping_note": "日本語の「約分」に 1 対 1 で当たる英語の名詞はない。書き言葉では simplify the fraction が最も多い（OpenStax Prealgebra・Elementary Algebra・Intermediate Algebra）。分数式では cancel the common factor(s) とも書く（OpenStax Calculus・Algebra and Trigonometry）。話し言葉では simplify ／ reduce the fraction、単に cancel と言う（どれも少ない）。結果の形は in lowest terms（既約）。",
+  "mapping_note": "「約分（する）」は、用例コーパスと参照では動詞句で言う（名詞にするときは CK-12 Algebra の reducing fractions）。書き言葉では simplify the fraction と、その手順を言う remove common factors が並ぶ（OpenStax Prealgebra・Elementary Algebra・Intermediate Algebra）。分数式では cancel the common factor(s) とも書く（OpenStax Calculus・Algebra and Trigonometry）。話し言葉では simplify the fraction・reduce the fraction は少なく、約分も cancel で言う（the x + 1's cancel）。結果の形は in lowest terms（既約）。",
   "domains": [
     "algebra"
   ],
@@ -59,13 +71,17 @@
   "pitfalls": [
     "約分しきった形は in lowest terms（既約）。",
     "cancel だけでは「打ち消し合う」（x − x が消える）意味も多い。約分の意味をはっきりさせるときは cancel the common factor。",
-    "約分できる因数は掛け算の因数だけ。(x + 2)/2 の 2 を消すのは誤り（You can only cancel factors, not terms.）。"
+    "約分できる因数は掛け算の因数だけ。(x + 2)/2 の 2 を消すのは誤り（You can only cancel factors, not terms.）。",
+    "OpenStax Prealgebra・Elementary Algebra は、約分の根拠 a/b = (a·c)/(b·c) を Equivalent Fractions Property と呼ぶ。"
   ],
   "related": [
     "rational-expression",
     "find-a-common-denominator",
     "numerator",
-    "denominator"
+    "denominator",
+    "cancel-out",
+    "simplify",
+    "fraction"
   ],
   "sources": [
     {
@@ -81,7 +97,19 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Prealgebra 2e"
+      "title": "OpenStax Prealgebra 2e",
+      "note": "Multiply and Divide Fractions（removing common factors、Equivalent Fractions Property）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "Add and Subtract Rational Expressions with a Common Denominator（removing common factors）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Algebra (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Algebra",
+      "note": "1.6.1 Real Number Properties and Axioms（reducing fractions）"
     }
   ],
   "confidence": "likely",
@@ -90,7 +118,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "simplify the fraction": 6,
@@ -99,7 +127,8 @@
     "written": {
       "cancel the common factor": 8,
       "reduce the fraction": 4,
-      "simplify the fraction": 73
+      "simplify the fraction": 73,
+      "remove common factors": 70
     },
     "sources": [
       "khan-middle",
@@ -113,6 +142,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

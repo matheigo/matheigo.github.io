@@ -3,9 +3,7 @@
   "ja": {
     "term": "横に縮める",
     "reading": "よこにちぢめる",
-    "alt": [
-      "x 軸方向に縮小する"
-    ]
+    "alt": []
   },
   "en": {
     "term": "compress … horizontally",
@@ -36,8 +34,8 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "The 3 inside compresses it horizontally, so the period gets three times shorter.",
-      "ja": "中の 3 で横に縮むので、周期が 3 分の 1 になる。",
+      "en": "The 3 inside compresses it horizontally, so the period shrinks from 2π to 2π/3.",
+      "ja": "中の 3 で横に縮むので、周期は 2π から 2π/3 になる。",
       "register": "spoken"
     },
     {
@@ -48,21 +46,31 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "中の係数は外の係数と逆に働く（f(2x) は縦ではなく横に 1/2 倍）。英語の授業でも the inside does the opposite と言って注意する。",
-    "名詞の言い方 horizontal compression は書き言葉（OpenStax）に多い。動詞の形は書き言葉でも少ない。"
+    "中の係数は外の係数と逆に働く（f(2x) は縦ではなく横に 1/2 倍）。",
+    "名詞の言い方 horizontal compression は書き言葉（OpenStax）に多い。動詞の形は書き言葉でも少ない。",
+    "f(bx) の横の縮小を何倍と書くかは資料で逆になる。IM Algebra 2（5.9 Scaling the Inputs）は f(2t) を compressed horizontally by a factor of 1/2、OpenStax Algebra and Trigonometry（Transformation of Functions）は |−4x| を horizontally compressed by a factor of 1/4 と書き、OpenStax Calculus Volume 1（1.3 Trigonometric Functions）は sin(4x) を compressed horizontally by a factor of 4 と書く。"
   ],
   "related": [
     "stretch-vertically",
-    "period"
+    "period",
+    "transformations-of-functions"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Transformation of Functions（horizontally compressed by a factor of 1/4）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 1"
+      "title": "OpenStax Calculus Volume 1",
+      "note": "1.3 Trigonometric Functions（compressed horizontally by a factor of 4）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 5.9 Scaling the Inputs（compressed horizontally by a factor of 1/2）"
     }
   ],
   "confidence": "likely",
@@ -71,7 +79,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "compress … horizontally": 7
@@ -80,13 +88,13 @@
       "openstax-algtrig",
       "openstax-calculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 7 件（10 未満））。見出しは OpenStax の呼び方 compress horizontally（本文 5 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

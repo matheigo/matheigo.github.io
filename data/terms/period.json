@@ -27,7 +27,7 @@
       "Integrated Math 3"
     ]
   },
-  "definition_ja": "関数の値が同じ変化を繰り返す最小の正の間隔 p（f(x + p) = f(x)）。",
+  "definition_ja": "関数の値が同じ変化を繰り返す最小の正の間隔 p（すべての x で f(x + p) = f(x)）。",
   "definition_en": "The smallest positive p with f(x + p) = f(x) for all x: the length after which a function repeats.",
   "latex": "f(x + p) = f(x)",
   "spoken_en": null,
@@ -44,16 +44,25 @@
     }
   ],
   "collocations": [],
-  "pitfalls": [],
+  "pitfalls": [
+    "period は a period of time（期間）の意味にも使う。関数の周期は the period of the function ／ the period of f のように言う（IM Algebra 2 6.9・6.11 ほか）。"
+  ],
   "related": [
     "periodic-function",
     "amplitude",
-    "trigonometric-function"
+    "trigonometric-function",
+    "midline"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 6.9・6.11（period、glossary）"
     }
   ],
   "confidence": "likely",
@@ -62,19 +71,18 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "period of": 45
+      "period of !time": 37
     },
     "written": {
-      "period of": 128
+      "period of !time": 109
     },
     "sources": [
       "khan-algebra",
       "khan-ap-calc",
       "khan-ap-stats",
-      "khan-middle",
       "mit-18.01",
       "mit-18.02",
       "mit-18.03",
@@ -90,6 +98,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -3,7 +3,9 @@
   "ja": {
     "term": "ラジアン",
     "reading": "らじあん",
-    "alt": []
+    "alt": [
+      "弧度"
+    ]
   },
   "en": {
     "term": "radian",
@@ -24,7 +26,8 @@
     "us": [
       "Algebra 2",
       "Precalculus",
-      "Integrated Math 3"
+      "Integrated Math 3",
+      "Geometry"
     ]
   },
   "definition_ja": "弧度法での角の単位。半径 1 の円で長さ 1 の弧に対する中心角が 1 ラジアン。",
@@ -45,11 +48,12 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の答案ではラジアンの単位を省略して θ = π/3 と書く。米国でも単位のない角はラジアンとみなすのが普通（OpenStax Algebra and Trigonometry）。"
+    "センター試験（平成 30 年度 本試験 数学II 第 1 問）は、度との換算では … π ラジアンと書き、θ の範囲には単位を付けない。OpenStax Algebra and Trigonometry（7.1）も、単位の書かれていない角はラジアンを指すと書く。"
   ],
   "related": [
     "radian-measure",
-    "degree-measure"
+    "degree-measure",
+    "area-of-a-sector"
   ],
   "sources": [
     {
@@ -59,7 +63,20 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "7.1 Angles（an angle without a unit is in radians）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学Ⅱ（問題）",
+      "url": "https://web.archive.org/web/20190601/https://www.dnc.ac.jp/albums/abm.php?f=abm00033143.pdf&n=h30+suugaku2+01suugaku2.pdf",
+      "note": "第1問: 1 ラジアン、144° を弧度で表す、… π ラジアン"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 7.11 A New Way to Measure Angles（glossary: radian）"
     }
   ],
   "confidence": "likely",
@@ -68,7 +85,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "radian": 299
@@ -93,6 +110,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

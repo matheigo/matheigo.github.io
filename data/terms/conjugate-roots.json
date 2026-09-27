@@ -4,20 +4,18 @@
     "term": "共役な解",
     "reading": "きょうやくなかい",
     "alt": [
-      "共役な複素数解"
+      "共役複素数解"
     ]
   },
   "en": {
-    "term": "conjugate roots",
-    "alt": [
-      "conjugate pairs"
-    ],
+    "term": "complex conjugate roots",
+    "alt": [],
     "uk": null,
     "register": "written"
   },
   "pos": "noun",
-  "mapping": "near",
-  "mapping_note": "日本の「共役な解」は、実数係数の方程式で a + bi が解なら a − bi も解になる、という関係を指す。英語は complex conjugate roots（複素共役な根の組）と言い、この性質そのものは OpenStax Algebra and Trigonometry が Complex Conjugate Theorem と名前をつけて扱う（本文 3 件）。",
+  "mapping": "exact",
+  "mapping_note": null,
   "domains": [
     "algebra"
   ],
@@ -27,7 +25,8 @@
     ],
     "us": [
       "Algebra 2",
-      "Integrated Math 3"
+      "Integrated Math 3",
+      "Precalculus"
     ]
   },
   "definition_ja": "実数係数の方程式が虚数解 a + bi をもつとき、それと共役な a − bi も解になること。またその 2 つの解。",
@@ -36,7 +35,7 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "Since the coefficients are real, the complex roots come in conjugate pairs: 1 + 2i and 1 − 2i are conjugate roots.",
+      "en": "Since the coefficients are real, the complex roots come in conjugate pairs: 1 + 2i and 1 − 2i are complex conjugate roots.",
       "ja": "係数が実数なので、虚数解は共役な組で出てくる。1 + 2i と 1 − 2i は共役な解だ。",
       "register": "spoken"
     },
@@ -48,8 +47,9 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "係数が実数であることが前提（with real coefficients）。書き落とすと成り立たない。英語ではふつう complex conjugate roots（共役な虚数解）と complex を付けて言う。",
-    "OpenStax Elementary Algebra ／ Intermediate Algebra の conjugate pair は多くが 2 項式の組 (a − b)(a + b) の意味。"
+    "係数が実数であることが前提（with real coefficients）。書き落とすと成り立たない。",
+    "実数係数の多項式が a + bi を零点にもてば a − bi も零点である、という性質を、OpenStax Algebra and Trigonometry（5.5 Zeros of Polynomial Functions）は Complex Conjugate Theorem と呼ぶ。",
+    "OpenStax Elementary Algebra（6.4 Special Products）・Intermediate Algebra（5.3 Multiply Polynomials）の conjugate pair は、多くが 2 項式の組 (a − b)(a + b) の意味。"
   ],
   "related": [
     "complex-conjugate",
@@ -62,11 +62,35 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 3"
+      "title": "OpenStax Calculus Volume 3",
+      "note": "7.1 Second-Order Linear Equations（complex conjugate roots）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "5.5 Zeros of Polynomial Functions（Complex Conjugate Theorem）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "6.4 Special Products（conjugate pair）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "5.3 Multiply Polynomials（conjugate pair）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和5年度 大学入学共通テスト 本試験 数学Ⅱ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=432&f=abm00003620.pdf&n=2023_ot_20_sugaku2.pdf",
+      "note": "第4問: 二つの虚数解は互いに共役な複素数"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「四次方程式」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%9B%E6%AC%A1%E6%96%B9%E7%A8%8B%E5%BC%8F",
+      "note": "共役複素数解"
     }
   ],
   "confidence": "likely",
@@ -78,11 +102,11 @@
   "updated": "2026-09-27",
   "evidence": {
     "written": {
-      "conjugate roots": 11
+      "complex conjugate roots": 11
     },
     "sources": [
       "openstax-calculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

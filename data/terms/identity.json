@@ -22,9 +22,10 @@
       "数II"
     ],
     "us": [
+      "Algebra 1",
       "Algebra 2",
-      "Precalculus",
-      "Integrated Math 3"
+      "Integrated Math 3",
+      "Precalculus"
     ]
   },
   "definition_ja": "文字にどんな値を代入しても成り立つ等式。",
@@ -38,7 +39,7 @@
       "register": "spoken"
     },
     {
-      "en": "Determine the constants a and b so that (x + 1)(x + a) = x² + 3x + b is an identity in x.",
+      "en": "Determine the constants a and b so that (x + 1)(x + a) = x² + 3x + b is an identity.",
       "ja": "(x + 1)(x + a) = x² + 3x + b が x についての恒等式となるように、定数 a, b の値を定めよ。",
       "register": "written"
     }
@@ -50,14 +51,16 @@
     }
   ],
   "pitfalls": [
-    "identity は identity matrix（単位行列）・identity function（恒等関数）にも使う。",
-    "「x についての恒等式」は an identity in x、または true for all x。"
+    "identity は identity matrix（単位行列）・identity function（恒等関数）にも使う。OpenStax Prealgebra（Properties of Identity, Inverses, and Zero）の Identity Property of Addition（a + 0 = a）の identity も別の意味。",
+    "「x についての恒等式」は is an identity、または true for all values of x。IM Algebra 2（2.23 Polynomial Identities (Part 1)）と OpenStax Algebra and Trigonometry（Linear Equations in One Variable）は、恒等式を変数のどんな値でも成り立つ等式（true for all values of the variable(s)）と定義する。"
   ],
   "related": [
     "compare-coefficients",
     "substituting-values",
     "proving-an-identity",
-    "trigonometric-identities"
+    "trigonometric-identities",
+    "equation",
+    "hold"
   ],
   "sources": [
     {
@@ -67,7 +70,19 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Linear Equations in One Variable（identity equation）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 2.23・2.24 Polynomial Identities（glossary: identity）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "Properties of Identity, Inverses, and Zero（Identity Property of Addition）"
     }
   ],
   "confidence": "likely",
@@ -76,7 +91,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "an identity": 36
@@ -100,6 +115,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

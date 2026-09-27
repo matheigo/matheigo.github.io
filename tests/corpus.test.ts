@@ -73,6 +73,11 @@ describe("normalize", () => {
     expect(normalize("d x")).toBe("dx");
   });
 
+  it("hyphenates the angle formulas as OpenStax does (captions write them open)", () => {
+    expect(normalize("the double angle formula and a half angle formula")).toBe("the double-angle formula and a half-angle formula");
+    expect(countTerm(normalize("use the double angle formula"), "double-angle formula")).toBe(1);
+  });
+
   it("reads an en dash between two words as the hyphen of one word", () => {
     expect(normalize("write it in slope\u2013intercept form")).toBe("write it in slope-intercept form");
     expect(countTerm(normalize("the slope\u2013intercept form"), "intercept form")).toBe(0);

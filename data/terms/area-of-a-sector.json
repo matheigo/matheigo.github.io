@@ -3,13 +3,13 @@
   "ja": {
     "term": "扇形の面積",
     "reading": "おうぎがたのめんせき",
-    "alt": [
-      "おうぎ形の面積"
-    ]
+    "alt": []
   },
   "en": {
     "term": "area of a sector",
-    "alt": [],
+    "alt": [
+      "sector area"
+    ],
     "uk": null,
     "register": "written"
   },
@@ -22,6 +22,7 @@
   ],
   "level": {
     "jp": [
+      "中1",
       "数II"
     ],
     "us": [
@@ -58,12 +59,40 @@
   ],
   "related": [
     "radian-measure",
-    "radian"
+    "radian",
+    "sector",
+    "arc-length",
+    "central-angle"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "7.1 Angles（area of a sector）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第1学年 B(2) 空間図形: 扇形の弧の長さと面積を求めること"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II (4) 三角関数: 扇形の弧の長さや面積を求めるなどの活動を通して，弧度法に関する理解を深める"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 7.8 Arcs and Sectors・7.13 Using Radians・7.14 Putting It All Together（area of a sector、sector area）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.10 Area of Sectors and Segments（area of a sector、sector area）"
     }
   ],
   "confidence": "likely",
@@ -72,15 +101,16 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
-      "area of a sector": 13
+      "area of a sector": 13,
+      "sector area": 1
     },
     "sources": [
       "openstax-algtrig",
       "openstax-calculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

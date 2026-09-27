@@ -3,9 +3,7 @@
   "ja": {
     "term": "三角方程式",
     "reading": "さんかくほうていしき",
-    "alt": [
-      "三角関数を含む方程式"
-    ]
+    "alt": []
   },
   "en": {
     "term": "trigonometric equation",
@@ -28,8 +26,8 @@
       "Precalculus"
     ]
   },
-  "definition_ja": "角 θ の三角関数を含む方程式。範囲を指定して解を求める。",
-  "definition_en": "An equation involving trigonometric functions of an angle θ, solved within a given interval.",
+  "definition_ja": "角 θ の三角関数を含む方程式。範囲を指定して、またはすべての解（一般解）を求める。",
+  "definition_en": "An equation involving trigonometric functions of an angle θ, solved on a given interval or for all solutions.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -47,7 +45,7 @@
   "collocations": [],
   "pitfalls": [
     "「0 ≦ θ < 2π の範囲で」は on the interval [0, 2π) または for 0 ≤ θ < 2π。",
-    "用例コーパスでは書き言葉（OpenStax Algebra and Trigonometry・Precalculus）に出てくるが、話し言葉には出てこない。授業では solve for θ と言う。"
+    "用例コーパスでは書き言葉（OpenStax Algebra and Trigonometry・Precalculus）に出てくるが、話し言葉には出てこない。"
   ],
   "related": [
     "trigonometric-inequality",
@@ -58,11 +56,18 @@
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Solving Trigonometric Equations（trigonometric equation、all possible solutions）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学 (教科)」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6_%28%E6%95%99%E7%A7%91%29",
+      "note": "数学II の内容: 三角方程式と三角不等式"
     }
   ],
   "confidence": "likely",
@@ -71,7 +76,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "trigonometric equation": 60
@@ -81,6 +86,6 @@
       "openstax-calculus",
       "openstax-precalculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

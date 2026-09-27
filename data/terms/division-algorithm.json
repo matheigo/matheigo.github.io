@@ -1,12 +1,9 @@
 {
   "id": "division-algorithm",
   "ja": {
-    "term": "割り算の原理",
-    "reading": "わりざんのげんり",
-    "alt": [
-      "除法の定理",
-      "除法の原理"
-    ]
+    "term": "除法の原理",
+    "reading": "じょほうのげんり",
+    "alt": []
   },
   "en": {
     "term": "division algorithm",
@@ -32,35 +29,67 @@
       "Integrated Math 3"
     ]
   },
-  "definition_ja": "整式（または整数）A と B（≠ 0）に対して、A = BQ + R（R の次数は B より小さい）を満たす商 Q と余り R がただ 1 組あるという事実。",
-  "definition_en": "The fact that for polynomials (or integers) A and B ≠ 0 there is exactly one quotient Q and remainder R with A = BQ + R, R of lower degree than B.",
+  "definition_ja": "整式 A と 0 でない整式 B に対して、A = BQ + R（R = 0 か、R の次数 < B の次数）を満たす商 Q と余り R がただ 1 組あるという事実。整数でも同じで、余りは 0 ≦ R < |B|。",
+  "definition_en": "The fact that for polynomials A and B ≠ 0 there is exactly one pair Q, R with A = BQ + R and R = 0 or deg R < deg B; for integers the remainder satisfies 0 ≤ R < |B|.",
   "latex": "A = BQ + R",
   "spoken_en": "A equals B Q plus R",
   "examples": [
     {
       "en": "By the division algorithm, f of x equals x minus 2 times q of x, plus some constant r.",
-      "ja": "割り算の原理から、f(x) = (x − 2)q(x) + r（r は定数）と書ける。",
+      "ja": "除法の原理から、f(x) = (x − 2)q(x) + r（r は定数）と書ける。",
       "register": "spoken"
     },
     {
       "en": "Use the division algorithm to write x³ + 1 in the form (x − 1)Q(x) + R.",
-      "ja": "割り算の原理を使って、x³ + 1 を (x − 1)Q(x) + R の形に表せ。",
+      "ja": "除法の原理を使って、x³ + 1 を (x − 1)Q(x) + R の形に表せ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは書き言葉（大半が OpenStax Algebra and Trigonometry）にだけ出てきて、話し言葉には出てこない。授業では式 A = BQ + R をそのまま言うことが多い。"
+    "用例コーパスでは書き言葉（大半が OpenStax Algebra and Trigonometry）にだけ出てきて、話し言葉には出てこない。名前は algorithm（手順）だが、OpenStax Algebra and Trigonometry（Dividing Polynomials）と Levin（6.2）は商と余りがただ 1 組決まるという事実を the division algorithm と呼び、Nicholson（Appendix D Polynomials）は割り算の手順そのものをこう呼ぶ。"
   ],
   "related": [
     "polynomial-division",
     "remainder",
-    "remainder-theorem"
+    "remainder-theorem",
+    "euclidean-algorithm"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Dividing Polynomials（the Division Algorithm）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「除法の原理」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%99%A4%E6%B3%95%E3%81%AE%E5%8E%9F%E7%90%86",
+      "note": "記事名（英: division theorem）: n = am + b（0 ≤ b < m）の a, b がただ 1 組"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「剰余の定理」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%89%B0%E4%BD%99%E3%81%AE%E5%AE%9A%E7%90%86",
+      "note": "多項式における除法の原理（deg r < deg d）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II いろいろな式（因数定理の項）: A＝BQ＋R（R の次数＜B の次数）という関係式"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "6.2 Introduction to Number Theory（the division algorithm）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "Appendix D Polynomials（the division algorithm）"
     }
   ],
   "confidence": "likely",
@@ -69,7 +98,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "division algorithm": 18
@@ -78,6 +107,6 @@
       "mit-notes",
       "openstax-algtrig"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -24,40 +24,61 @@
     ],
     "us": [
       "Algebra 2",
-      "Precalculus"
+      "Precalculus",
+      "AP Calculus BC",
+      "Calculus II"
     ]
   },
   "definition_ja": "展開式や数列の項を、番号（k や n）を使って 1 つの式で表したもの。二項定理では nCr aⁿ⁻ʳ bʳ。",
-  "definition_en": "A formula for a typical term of an expansion or a sequence in terms of its index; in the binomial theorem, C(n, r) aⁿ⁻ʳ bʳ.",
+  "definition_en": "A formula for a typical term of a sequence or an expansion in terms of its index: aₙ as a formula in n for a sequence, C(n, r) aⁿ⁻ʳ bʳ for a binomial expansion.",
   "latex": "{}_n\\mathrm{C}_r\\, a^{n-r} b^r",
   "spoken_en": null,
   "examples": [
     {
-      "en": "Write down the general term first, then choose r so the power of x is 4.",
-      "ja": "まず一般項を書いて、x の次数が 4 になるように r を決める。",
+      "en": "Write down the (r + 1)th term first, then choose r so the power of x is 4.",
+      "ja": "まず第 r + 1 項（一般項）を書いて、x の次数が 4 になるように r を決める。",
       "register": "spoken"
     },
     {
-      "en": "Find the general term of the expansion of (2x − 1/x)^8, and find the constant term.",
-      "ja": "(2x − 1/x)⁸ の展開式の一般項を求め、定数項を求めよ。",
+      "en": "Find the general term of the geometric sequence 5, 20, 80, 320, …",
+      "ja": "等比数列 5, 20, 80, 320, … の一般項を求めよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "数列の一般項 aₙ も英語では general term（または the nth term、the formula for the nth term）。",
+    "数列の一般項 aₙ は、英語でも general term（または the nth term、the formula for the nth term）。",
+    "二項定理の展開式の一般項 ₙCᵣ aⁿ⁻ʳ bʳ を、OpenStax Algebra and Trigonometry（Binomial Theorem）は the (r+1)th term of the binomial expansion、OpenStax Intermediate Algebra（Binomial Theorem）は the (r + 1)st term と書き、general term とは呼ばない。",
     "用例コーパスの書き言葉は OpenStax Intermediate Algebra が中心で、次が OpenStax Algebra and Trigonometry（数列と二項定理）。"
   ],
   "related": [
     "expansion",
     "nth-term",
     "find-the-nth-term",
-    "multinomial-theorem"
+    "multinomial-theorem",
+    "binomial-theorem"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Sequences and Their Notations・Binomial Theorem（general term、the (r+1)th term）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "試験の例題 Question 4 と採点基準（the general term of the Maclaurin series、General term）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "Sequences・Binomial Theorem（general term、the (r + 1)st term）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "5.1 Sequences・5.2 Infinite Series（general term）"
     }
   ],
   "confidence": "likely",
@@ -66,7 +87,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "general term": 45
@@ -88,6 +109,6 @@
       "openstax-introstats",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

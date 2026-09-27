@@ -3,9 +3,7 @@
   "ja": {
     "term": "有理根定理",
     "reading": "ゆうりこんていり",
-    "alt": [
-      "有理数解の定理"
-    ]
+    "alt": []
   },
   "en": {
     "term": "rational zero theorem",
@@ -27,7 +25,8 @@
     ],
     "us": [
       "Algebra 2",
-      "Integrated Math 3"
+      "Integrated Math 3",
+      "Precalculus"
     ]
   },
   "definition_ja": "整数係数の方程式 aₙ xⁿ + … + a₀ = 0 の有理数解は、±（a₀ の約数）/（aₙ の約数）の形に限られるという定理。",
@@ -41,8 +40,8 @@
       "register": "spoken"
     },
     {
-      "en": "Use the rational zero theorem to list all possible rational zeros of f(x) = 2x³ + x² − 7x − 6.",
-      "ja": "f(x) = 2x³ + x² − 7x − 6 の有理数解の候補を、有理根定理を用いてすべて挙げよ。",
+      "en": "By the rational zero theorem, what are the possible rational zeros of f(x) = 2x³ + x² − 7x − 6?",
+      "ja": "有理根定理によると、f(x) = 2x³ + x² − 7x − 6 の有理数解の候補は何か。",
       "register": "written"
     }
   ],
@@ -52,7 +51,9 @@
   ],
   "related": [
     "factor-theorem",
-    "polynomial-equation-of-higher-degree"
+    "polynomial-equation-of-higher-degree",
+    "zeros-of-a-polynomial",
+    "descartes-rule-of-signs"
   ],
   "sources": [
     {
@@ -62,7 +63,13 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "5.5 Zeros of Polynomial Functions（Rational Zero Theorem）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "3.6 Zeros of Polynomial Functions（Rational Zero Theorem）"
     }
   ],
   "confidence": "likely",
@@ -71,7 +78,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "rational root theorem": 2
@@ -86,6 +93,6 @@
       "openstax-calculus",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

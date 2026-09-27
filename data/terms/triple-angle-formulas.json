@@ -3,7 +3,9 @@
   "ja": {
     "term": "3 倍角の公式",
     "reading": "さんばいかくのこうしき",
-    "alt": []
+    "alt": [
+      "三倍角の公式"
+    ]
   },
   "en": {
     "term": "triple-angle formulas",
@@ -43,7 +45,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパス（OpenStax の教科書を含む）には出てこない。米国の高校課程では公式として覚えさせず、必要なら加法定理から導く。"
+    "用例コーパスと参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）には triple-angle formula の名前が出てこない。OpenStax Algebra and Trigonometry・Precalculus（節 Double-Angle, Half-Angle, and Reduction Formulas の練習問題）は、sin(3x) = 3 sin x cos²x − sin³x を sin(x + 2x) と書いて加法定理と 2 倍角の公式で示させる（cos²x = 1 − sin²x で書き直すと 3 sin x − 4 sin³x）。"
   ],
   "related": [
     "double-angle-formulas",
@@ -58,6 +60,28 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/List_of_trigonometric_identities",
       "note": "記事「List of trigonometric identities」の節 Triple-angle formulae（節の見出し。数学カテゴリから 2 段）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Double-Angle, Half-Angle, and Reduction Formulas（練習問題: sin(3x)、cos(3x)）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "Double-Angle, Half-Angle, and Reduction Formulas（練習問題）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「三角関数の公式の一覧」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0%E3%81%AE%E5%85%AC%E5%BC%8F%E3%81%AE%E4%B8%80%E8%A6%A7",
+      "note": "節「倍角・三倍角・半角の公式」（三倍角の公式）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II (4) 三角関数 イ(ア): 三角関数の加法定理から新たな性質を導く（3 倍角の公式の名前は無い）"
     }
   ],
   "confidence": "likely",
@@ -66,7 +90,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "flags": [
     {
       "code": "corpus-human-settled",
@@ -76,6 +100,6 @@
   ],
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

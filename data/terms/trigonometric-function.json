@@ -40,7 +40,7 @@
     ]
   },
   "definition_ja": "一般角 θ に対して sin θ, cos θ, tan θ などを対応させる関数。単位円上の点の座標で定める。",
-  "definition_en": "A function, such as sin θ, cos θ, or tan θ, that assigns a value to an angle θ of any size, defined through the coordinates of a point on the unit circle.",
+  "definition_en": "A function such as sin θ, cos θ, or tan θ that assigns a value to an angle θ of any size; sin θ and cos θ are the y- and x-coordinates where the terminal side of θ crosses the unit circle.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -57,15 +57,16 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "米国の教科書は sin・cos・tan に加えて csc（cosecant）・sec（secant）・cot（cotangent）も使う。日本の高校では使わない。",
-    "三角関数のグラフ・最大最小（教科書の節）は、英語では graphs of trigonometric functions の節で扱う。"
+    "OpenStax Algebra and Trigonometry は sin・cos・tan に加えて csc（cosecant）・sec（secant）・cot（cotangent）を定義して使う（節 The Other Trigonometric Functions）。高等学校学習指導要領の〔用語・記号〕は sin・cos・tan だけを挙げ、解説に sec・csc・cot は出てこない。",
+    "OpenStax Algebra and Trigonometry は三角関数のグラフを、章 Periodic Functions の節 Graphs of the Sine and Cosine Functions・Graphs of the Other Trigonometric Functions で扱う。"
   ],
   "related": [
     "tangent",
     "trigonometric-identities",
     "period",
     "amplitude",
-    "inverse-trigonometric-function"
+    "inverse-trigonometric-function",
+    "periodic-function"
   ],
   "sources": [
     {
@@ -75,11 +76,23 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "The Other Trigonometric Functions・Graphs of the Sine and Cosine Functions"
     },
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）〔用語・記号〕",
+      "note": "数I 図形と計量: sin、cos、tan"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "sec・csc・cot（正割・余割・余接）は出てこない"
     }
   ],
   "confidence": "likely",
@@ -88,7 +101,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "trig function": 174,
@@ -115,6 +128,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

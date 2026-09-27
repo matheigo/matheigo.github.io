@@ -3,9 +3,7 @@
   "ja": {
     "term": "積和公式",
     "reading": "せきわこうしき",
-    "alt": [
-      "積を和に直す公式"
-    ]
+    "alt": []
   },
   "en": {
     "term": "product-to-sum formulas",
@@ -34,8 +32,8 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "The product-to-sum formulas come straight from adding two addition formulas.",
-      "ja": "積和公式は、加法定理を 2 つ足せばすぐ出る。",
+      "en": "The product-to-sum formulas come straight from adding or subtracting two addition formulas.",
+      "ja": "積和公式は、加法定理の 2 式を足したり引いたりすればすぐ出る。",
       "register": "spoken"
     },
     {
@@ -56,7 +54,14 @@
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Sum-to-Product and Product-to-Sum Formulas（product-to-sum formulas）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「三角関数の公式の一覧」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0%E3%81%AE%E5%85%AC%E5%BC%8F%E3%81%AE%E4%B8%80%E8%A6%A7",
+      "note": "節「和積公式と積和公式」"
     }
   ],
   "confidence": "likely",
@@ -65,7 +70,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "product-to-sum formulas": 18
@@ -73,6 +78,6 @@
     "sources": [
       "openstax-algtrig"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -4,8 +4,7 @@
     "term": "等式を証明する",
     "reading": "とうしきをしょうめいする",
     "alt": [
-      "等式の証明",
-      "恒等式の検証"
+      "等式の証明"
     ]
   },
   "en": {
@@ -52,7 +51,7 @@
   "collocations": [],
   "pitfalls": [
     "OpenStax Algebra and Trigonometry は三角関数の恒等式の証明を verify the identity と書くことが多い。prove the identity も使う。用例コーパスの話し言葉にはどちらも出てこない。",
-    "証明の途中で両辺に同じ操作をして 1 = 1 を導く書き方は、米国の教科書でも避ける（片側を変形していく）。"
+    "OpenStax Algebra and Trigonometry（Verifying Trigonometric Identities… の節）は、片方の辺（ふつうは複雑なほう）を変形して他方の辺に一致させる手順を示し、恒等式を確かめる手順は方程式を解く手順とは違うと書く（Sum-to-Product and Product-to-Sum Formulas）。両辺に同じ操作をして 1 = 1 を導く書き方は、この手順に当たらない。"
   ],
   "related": [
     "identity",
@@ -62,7 +61,14 @@
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Verifying Trigonometric Identities and Using Trigonometric Identities to Simplify Trigonometric Expressions・Sum-to-Product and Product-to-Sum Formulas（verify the identity）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II いろいろな式: 等式や不等式が成り立つことを証明する（等式の証明）"
     }
   ],
   "confidence": "likely",
@@ -71,7 +77,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "verify the identity": 17,
@@ -81,6 +87,6 @@
       "openstax-algtrig",
       "openstax-calculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

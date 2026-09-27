@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "見出しの「位相のずれ」は学習指導要領解説に無い、本プロジェクトの訳語（日本語版 Wikipedia「位相のずれ」は量子力学の散乱理論の位相差の記事で、別の概念）。学習指導要領解説（数学II 三角関数）は、この内容を三角関数の式の定数とグラフの関係として扱い、「位相」の語は使わない。",
   "domains": [
     "trigonometry"
   ],
@@ -45,14 +45,17 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "horizontal shift（x 軸方向の平行移動）は三角関数に限らないグラフの平行移動の言い方で、OpenStax Algebra and Trigonometry は正弦曲線の説明にも使う。",
-    "日本の教科書では「x 軸方向に π/2 だけ平行移動」と表す。",
-    "b をくくり出さずに c を読むのはよくある間違い（sin(2x − π) のずれは π ではなく π/2）。"
+    "horizontal shift（x 軸方向の平行移動）は三角関数に限らないグラフの平行移動の言い方で、OpenStax Algebra and Trigonometry は正弦曲線の説明にも使う。IM Algebra 2（6.15・6.17〜6.19）は phase shift と言わず horizontal translation と書く。",
+    "学習指導要領解説（数学I）と共通テスト（令和7年度 本試験 数学I 第3問）は、グラフの横のずれを「x 軸方向に p だけ平行移動」と書く（二次関数のグラフ）。",
+    "b をくくり出さずに c を読むのはよくある間違い（sin(2x − π) のずれは π ではなく π/2）。",
+    "微分方程式（OpenStax Calculus Volume 3 の 7.3 Applications、Volume 2 の 4.5 First-order Linear Equations）では、A sin(ωt + ϕ) の角 ϕ そのものを phase shift と呼ぶ（グラフは左に ϕ/ω ずれる）。Algebra and Trigonometry の phase shift C/B はずれの量そのもので、数の意味が違う。"
   ],
   "related": [
     "phase",
     "amplitude",
-    "period"
+    "period",
+    "translation",
+    "sinusoid"
   ],
   "sources": [
     {
@@ -62,6 +65,40 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II (4) 三角関数: 三角関数の式における定数とグラフとの関係（「位相」の語は無い）。数学I 二次関数: x 軸方向に p だけ平行移動"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和7年度 大学入学共通テスト 本試験 数学Ⅰ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=771&f=abm00005954.pdf&n=2025_op_27_sugaku1.pdf",
+      "note": "第3問: x 軸方向に s … だけ平行移動した放物線"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「位相のずれ」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%BD%8D%E7%9B%B8%E3%81%AE%E3%81%9A%E3%82%8C",
+      "note": "量子力学の散乱理論の位相差（別の概念）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 6.15・6.17・6.18・6.19（horizontal translation）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3",
+      "note": "7.3 Applications（the constant ϕ is called a phase shift）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "4.5 First-order Linear Equations（the phase shift φ）"
     }
   ],
   "confidence": "likely",
@@ -70,7 +107,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "phase shift": 10
@@ -85,6 +122,6 @@
       "openstax-precalculus",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

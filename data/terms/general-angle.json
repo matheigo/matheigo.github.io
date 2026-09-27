@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "「一般角」に当たる名前は用例コーパスと参照に出てこない。回転の量として 360° を超える角や負の角を考えることは英語でも同じで（angles of any measure）、θ + 360°n の形の角は coterminal angles（動径が同じ角）と呼ぶ。OpenStax Algebra and Trigonometry は coterminal angles と呼ぶ。",
+  "mapping_note": "「一般角」に当たる決まった名前は、用例コーパスと参照にほとんど出てこない（OpenStax Calculus Volume 1 の 1.3 Trigonometric Functions に for a general angle θ が 1 回）。回転の量として 360° を超える角や負の角を考えることは英語でも同じで、OpenStax Algebra and Trigonometry（7.1 Angles）は positive angle ／ negative angle と呼び、IM Algebra 2（6.10・6.11）は angle of rotation と呼ぶ。θ + 360°n の形の角は coterminal angles（動径が同じ角）と呼ぶ（OpenStax Algebra and Trigonometry 7.1）。",
   "domains": [
     "trigonometry"
   ],
@@ -38,15 +38,15 @@
       "register": "spoken"
     },
     {
-      "en": "Find the angle between 0° and 360° that is coterminal with −750°.",
-      "ja": "−750° と動径が同じで、0° 以上 360° 未満の角を求めよ。",
+      "en": "Among the coterminal angles of −750°, find the one between 0° and 360°.",
+      "ja": "−750° と動径が同じ角のうち、0° 以上 360° 未満のものを求めよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "general angle は用例コーパスにほとんど出てこず、出てくるものも別の意味。",
-    "動径が同じ角どうしの関係そのもの（30° と 390°）は coterminal angle（エントリ coterminal-angle）。このエントリの見出しは、一般角 θ + 360°n の表す角をまとめて呼ぶ言い方として同じ語を使っている。"
+    "日本語版 Wikipedia「一般角」は英語を general angle と書き、OpenStax Calculus Volume 1（1.3）も for a general angle θ と使うが、用例コーパスと参照ではほとんど使わない。",
+    "動径が同じ角どうしの関係そのもの（30° と 390°）は coterminal angle（エントリ coterminal-angle）。OpenStax Algebra and Trigonometry（7.1）は、360° の整数倍を足し引きしてできる角をまとめて coterminal angles と呼ぶ。"
   ],
   "related": [
     "terminal-side",
@@ -58,7 +58,25 @@
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "7.1 Angles（coterminal angles、positive ／ negative angle）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "1.3 Trigonometric Functions（a general angle θ）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 6.10 Beyond 2π・6.11 Extending the Domain of Trigonometric Functions（angle of rotation）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「一般角」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%80%E8%88%AC%E8%A7%92",
+      "note": "英: general angle"
     }
   ],
   "confidence": "likely",
@@ -67,7 +85,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "coterminal angles": 9
@@ -81,6 +99,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

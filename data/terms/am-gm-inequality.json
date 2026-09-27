@@ -4,14 +4,13 @@
     "term": "相加平均と相乗平均の関係",
     "reading": "そうかへいきんとそうじょうへいきんのかんけい",
     "alt": [
-      "相加相乗平均の不等式",
-      "相加相乗"
+      "相加相乗平均の不等式"
     ]
   },
   "en": {
     "term": "AM-GM inequality",
     "alt": [
-      "arithmetic mean-geometric mean inequality"
+      "inequality of arithmetic and geometric means"
     ],
     "uk": null
   },
@@ -34,7 +33,7 @@
   "spoken_en": "a plus b over two is greater than or equal to the square root of a b",
   "examples": [
     {
-      "en": "Use AM-GM here; equality holds when the two terms are equal.",
+      "en": "Use the AM-GM inequality here; equality holds when the two terms are equal.",
       "ja": "ここは相加相乗を使う。等号は 2 つが等しいときです。",
       "register": "spoken"
     }
@@ -50,16 +49,50 @@
     }
   ],
   "pitfalls": [
-    "日本の高校（数II）では最小値を求める定番の道具。一方、用例コーパス（米国の授業の書き起こしと OpenStax の教科書 9 冊）にも AP Calculus の CED にも AM-GM は出てこない。",
+    "学習指導要領解説（数学II いろいろな式）は、相加・相乗平均の関係などを用いて不等式が成り立つことを証明する、と書く。センター試験・共通テストは、最小値を求める問題で相加平均と相乗平均の関係を使わせる（センター試験 平成27年度 本試験 数学II、共通テスト 令和3年度 第1日程 数学II ほか）。",
     "等号成立条件は equality holds when … と書く。"
   ],
   "related": [
     "geometric-middle-term",
-    "arithmetic-middle-term"
+    "arithmetic-middle-term",
+    "arithmetic-mean",
+    "geometric-mean",
+    "cauchy-schwarz-inequality",
+    "equality-holds"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II いろいろな式: 相加・相乗平均の関係などを用いて等式や不等式が成り立つことを証明する"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成27年度 大学入試センター試験 本試験 数学Ⅱ（問題）",
+      "url": "https://web.archive.org/web/20160601/https://www.dnc.ac.jp/albums/abm.php?f=abm00004812.pdf&n=2701-0501+suugaku2.pdf",
+      "note": "相加平均と相乗平均の関係を利用して最小値を求める"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和3年度 大学入学共通テスト 第1日程 数学Ⅱ（問題）",
+      "url": "https://web.archive.org/web/20220601/https://www.dnc.ac.jp/albums/abm.php?d=88&f=abm00001261.pdf&n=R3_%E6%95%B0%E5%AD%A6%E2%85%A1%EF%BC%88%EF%BC%91%E6%9C%8816%E6%97%A5%E3%83%BB17%E6%97%A5%EF%BC%89%E3%81%AE%E5%95%8F%E9%A1%8C.pdf",
+      "note": "相加平均と相乗平均の関係から最小値を求める"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/AM%E2%80%93GM_inequality",
+      "note": "記事「AM–GM inequality」の冒頭の太字 inequality of arithmetic and geometric means（数学カテゴリから 3 段）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「二乗平均・算術平均・幾何平均・調和平均の大小関係」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%BA%8C%E4%B9%97%E5%B9%B3%E5%9D%87%E3%83%BB%E7%AE%97%E8%A1%93%E5%B9%B3%E5%9D%87%E3%83%BB%E5%B9%BE%E4%BD%95%E5%B9%B3%E5%9D%87%E3%83%BB%E8%AA%BF%E5%92%8C%E5%B9%B3%E5%9D%87%E3%81%AE%E5%A4%A7%E5%B0%8F%E9%96%A2%E4%BF%82",
+      "note": "相加相乗平均の不等式"
     }
   ],
   "confidence": "likely",
@@ -68,10 +101,10 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {

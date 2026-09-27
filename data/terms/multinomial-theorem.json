@@ -30,8 +30,8 @@
   "spoken_en": "n factorial over p factorial q factorial r factorial, times a to the p b to the q c to the r",
   "examples": [
     {
-      "en": "It's like the binomial theorem, but now you split n into three parts instead of two.",
-      "ja": "二項定理と同じ考えで、n を 2 つではなく 3 つに分ける。",
+      "en": "The multinomial theorem is like the binomial theorem, but now you split n into three parts instead of two.",
+      "ja": "多項定理は二項定理と同じ考えで、n を 2 つではなく 3 つに分ける。",
       "register": "spoken"
     },
     {
@@ -42,17 +42,23 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは書き言葉（MIT の講義ノート）にわずかに出てくるだけ。OpenStax の高校向けの本には出てこない。"
+    "用例コーパスでは書き言葉（MIT の講義ノート）にわずかに出てくるだけ。multinomial は CED・OpenStax・IM・CK-12 に出てこない。a^p b^q c^r の係数 n!/(p! q! r!) は、OpenStax Algebra and Trigonometry（Counting Principles）が同じものを含む順列の数（Permutations of n Non-Distinct Objects）として扱う式と同じ。"
   ],
   "related": [
     "expansion",
-    "general-term"
+    "general-term",
+    "binomial-theorem"
   ],
   "sources": [
     {
       "type": "wikipedia-langlink",
       "ja": "多項定理",
       "en": "Multinomial theorem"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Counting Principles（Permutations of n Non-Distinct Objects）"
     }
   ],
   "confidence": "likely",
@@ -61,7 +67,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "multinomial theorem": 2
@@ -69,7 +75,7 @@
     "sources": [
       "mit-notes"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {

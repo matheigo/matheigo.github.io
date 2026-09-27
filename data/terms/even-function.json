@@ -29,7 +29,7 @@
     ]
   },
   "definition_ja": "f(−x) = f(x) がすべての x で成り立つ関数。グラフは y 軸に関して対称。",
-  "definition_en": "A function with f(−x) = f(x) for every x; its graph is symmetric about the y-axis.",
+  "definition_en": "A function with f(−x) = f(x) for every x; reflecting its graph across the y-axis leaves it unchanged.",
   "latex": "f(-x) = f(x)",
   "spoken_en": "f of negative x equals f of x",
   "examples": [
@@ -46,7 +46,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "米国の問題は even, odd, or neither（どちらでもない）の 3 択で聞くことが多い。"
+    "OpenStax Algebra and Trigonometry は、関数が even, odd, or neither（どちらでもない）のどれかを判定させる問題を扱う（13 件）。IM Algebra 2（5.6 Symmetry in Equations）も同じ 3 択で聞く。"
   ],
   "related": [
     "odd-function",
@@ -66,6 +66,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 5.6 Symmetry in Equations（even, odd, or neither）"
     }
   ],
   "confidence": "likely",
@@ -74,7 +80,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "even function": 69
@@ -93,6 +99,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

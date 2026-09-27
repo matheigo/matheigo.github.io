@@ -3,31 +3,42 @@
   "ja": {
     "term": "繁分数",
     "reading": "はんぶんすう",
-    "alt": [
-      "繁分数式"
-    ]
+    "alt": []
   },
   "en": {
     "term": "complex fraction",
     "alt": [],
     "uk": null,
-    "register": "both"
+    "register": "both",
+    "variants": [
+      {
+        "term": "complex fraction",
+        "register": "both",
+        "note": "話し言葉ではほとんどがこの言い方。書き言葉では OpenStax Prealgebra（数の分数）と Elementary Algebra に多い。"
+      },
+      {
+        "term": "complex rational expression",
+        "register": "written",
+        "note": "分子・分母が文字の式のときの言い方（OpenStax Elementary Algebra・Intermediate Algebra の節 Simplify Complex Rational Expressions、Algebra and Trigonometry の Rational Expressions）。話し言葉にはほとんど出てこない。"
+      }
+    ]
   },
   "pos": "noun",
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
     "algebra",
-    "functions"
+    "arithmetic"
   ],
   "level": {
     "jp": [
       "数II"
     ],
     "us": [
+      "Pre-Algebra",
       "Algebra 2",
-      "Precalculus",
-      "Integrated Math 3"
+      "Integrated Math 3",
+      "Precalculus"
     ]
   },
   "definition_ja": "分子や分母にさらに分数（分数式）を含む分数。",
@@ -64,7 +75,19 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Prealgebra 2e"
+      "title": "OpenStax Prealgebra 2e",
+      "note": "Multiply and Divide Mixed Numbers and Complex Fractions（complex fraction）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「分数」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%88%86%E6%95%B0",
+      "note": "節「繁分数」: 分子または分母が分数の分数（英: compound fraction, complex fraction）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "Simplify Complex Rational Expressions（complex rational expression）"
     }
   ],
   "confidence": "likely",
@@ -73,13 +96,15 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "complex fraction": 43
+      "complex fraction": 43,
+      "complex rational expression": 2
     },
     "written": {
-      "complex fraction": 56
+      "complex fraction": 56,
+      "complex rational expression": 38
     },
     "sources": [
       "khan-middle",
@@ -90,9 +115,10 @@
       "openstax-prealgebra",
       "openstax-precalculus",
       "yt:blackpenredpen",
+      "yt:nancypi",
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }
