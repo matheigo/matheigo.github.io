@@ -58,5 +58,17 @@
       "yt:3blue1brown"
     ],
     "counted": "2026-09-27"
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: 1 つ目の読み the cross product of u and v → u cross v（形が 8 組の文字しか数えていなかった。r cross v ほかを足すと ① 23 対 9）。見直す点: SYMBOL_PATTERNS の文字の組と evidence、notes[0]。次の監査のセッションが見直す。",
+      "raised": "2026-09-27"
+    }
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-09-27",
+    "human": null
   }
 }

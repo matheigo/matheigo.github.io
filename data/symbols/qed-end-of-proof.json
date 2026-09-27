@@ -84,6 +84,16 @@
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 対象外）。読みは Nicholson の呼び方 completes the proof（2.5 Elementary Matrices・2.7 LU-Factorization・3.2 Determinants and Matrix Inverses）。register は主張しない。",
       "raised": "2026-09-27"
+    },
+    {
+      "code": "audit-human",
+      "note": "Phase 5 監査（2026-09-27）で判断がつかない: ∎・□ の読みを決める参照が無い。③ で読みを決めた Nicholson の this completes the proof（5 件）は証明を閉じる文で ∎ を定義・説明する文ではなく、CED・OpenStax・IM・CK-12・Levin にも ∎・□ を読む文は無い（Levin の QED 2 件は文末の印）。話し言葉は end of the proof 5・Q.E.D. 2 で ③。人間に決めてほしいこと: 1 つ目の読み（end of proof ／ Q.E.D. ／ which completes the proof）。notes・level・出典の小さな直しは済み。人間レビューへ。",
+      "raised": "2026-09-27"
     }
-  ]
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-09-27",
+    "human": null
+  }
 }

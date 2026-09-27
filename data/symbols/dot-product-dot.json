@@ -65,5 +65,17 @@
       "yt:3blue1brown"
     ],
     "counted": "2026-09-27"
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: 1 つ目の読み the dot product of u and v → a dot b（F dot dr・F dot n・r dot v ほかを足すと 143 対 21、MIT 18.02 頼みで ②）。読みの文字を a, b に。見直す点: SYMBOL_PATTERNS の文字の組（x dot・dot plot・del dot を除いたか）と evidence、2 つとも standard の並び、notes[0]。次の監査のセッションが見直す。",
+      "raised": "2026-09-27"
+    }
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-09-27",
+    "human": null
   }
 }

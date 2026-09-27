@@ -50,5 +50,17 @@
       "khan-ap-calc"
     ],
     "counted": "2026-09-27"
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: 1 つ目の読み the open interval a, b → the open interval from a to b（端点を読む形で from の読み 16 件、a, b は 0 件で外した）。見直す点: SYMBOL_PATTERNS の新しい形と evidence、notes[0]。次の監査のセッションが見直す。",
+      "raised": "2026-09-27"
+    }
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-09-27",
+    "human": null
   }
 }

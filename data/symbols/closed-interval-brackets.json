@@ -63,5 +63,17 @@
       "yt:organicchem"
     ],
     "counted": "2026-09-27"
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: 1 つ目の読み the closed interval a, b → the closed interval from a to b（形 closed interval !from が区間の名前の言及を数えていた。端点を読む形で ① 45 対 4）。見直す点: SYMBOL_PATTERNS の新しい形（closed interval from * | closed interval, from *、a, b の 4 つの形）と数え直した evidence、読みの並び、notes[0]。次の監査のセッションが見直す。",
+      "raised": "2026-09-27"
+    }
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-09-27",
+    "human": null
   }
 }

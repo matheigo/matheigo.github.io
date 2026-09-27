@@ -62,5 +62,17 @@
       "mit-18.06"
     ],
     "counted": "2026-09-27"
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: 1 つ目の読み the complex conjugate of z → z bar（形 z bar | w bar は 0 件で、lambda bar・c1 bar ほかを足すと ① 17 対 9。③ の OpenStax は z̄ を書かない）。見直す点: SYMBOL_PATTERNS の文字（x bar を除いた）と evidence、notes[0]、用語 complex-conjugate（verified）の pitfalls[0]「z̄ は the complex conjugate of z と読む」との揃え（この記号の直しを確かめてから）。次の監査のセッションが見直す。",
+      "raised": "2026-09-27"
+    }
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-09-27",
+    "human": null
   }
 }
