@@ -91,7 +91,7 @@
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -103,6 +103,11 @@
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 determine a unique triangle | determine one unique triangle | define a unique triangle（Geometry 2.11 Side-Side-Angle (Sometimes) Congruence・Grade 7 7.9 Drawing Triangles (Part 1)・Grade 7 7.10 Drawing Triangles (Part 2)・計 4 件）。register は主張しない。",
+      "raised": "2026-09-26"
+    },
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: 見出しを conditions that determine a triangle（本プロジェクトの訳語）から IM の言い方 determine a unique triangle に（IM Grade 7 7.9・7.10 が determine one unique triangle と 3 件、IM Geometry 2.4・2.11・2.12 が define a unique triangle と 4 件。TERM_FORMS でまとめる。「参照には決まった言い方が出てこない」は IM に反していた）。pos を phrase に、元の見出しを en.alt、mapping_note・例文・出典（IM 2 つ・解説 数I・中2）・level.jp 中2・related congruence-criteria を直した。見直す点: 動詞句の見出しと名詞の日本語の見出し（mapping near）、pos。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]

@@ -75,7 +75,7 @@
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -95,5 +95,12 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-25"
-  }
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: 見出しの日本語を 方位 から 方位角 に（日本語版 Wikipedia「方位」は東西南北の向きの記事で、北から測った角で方向を表す語は「方位角」。pitfalls[0] 自身が「東西南北のような向きの名前は bearing ではない」と書いていた）。方位 は ja.alt、日本語版 Wikipedia「方位角」を出典に、参照で確かめられない読みと 3 桁表記の主張を外した。見直す点: ja.term 方位角（数I の単元の語として自然か）、mapping exact。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
+    }
+  ]
 }

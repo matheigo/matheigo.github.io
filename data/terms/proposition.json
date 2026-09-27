@@ -107,7 +107,7 @@
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -146,5 +146,12 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-25"
-  }
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: mapping を near から exact に（Levin の Definition 1.1.5 の statement は「真か偽かが定まる平叙文」で、日本語版 Wikipedia「命題」の定義と一致。statement に一般の「文」の意味があることは多義であって near の理由にならない）。mapping_note の内容を pitfalls に移し、例文の 11 語の一致を言い換え、variants の note と「日本の教科書では条件」を資料の名前で、level.jp に 中2。見直す点: exact でよいか、pitfalls[2] の説明。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
+    }
+  ]
 }
