@@ -3,7 +3,7 @@
   "latex": "\\prod_{i=1}^{n} a_i",
   "spoken_en": [
     {
-      "text": "the product of a sub i, i from one to n",
+      "text": "the product from i equals one to n of a sub i",
       "register": "standard"
     }
   ],
@@ -21,7 +21,7 @@
     ]
   },
   "notes": [
-    "∏ は the product of a sub i, i from one to n と読む。"
+    "∏ は the product from i equals one to n of a sub i と読む（Σ の the sum from k equals one to n of a sub k と同じ形）。"
   ],
   "sources": [
     {
@@ -32,6 +32,12 @@
       "title": "日本語版 Wikipedia「三角関数の公式の一覧」",
       "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0%E3%81%AE%E5%85%AC%E5%BC%8F%E3%81%AE%E4%B8%80%E8%A6%A7",
       "note": "総乗記号 ∏"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.1 Describing Sequences の練習問題（Use summation (Σ) or product (Π) notation。name_en と level.us の Discrete Math）"
     }
   ],
   "confidence": "likely",
@@ -42,13 +48,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも読みを 3 件以上使わない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
-      "raised": "2026-09-27"
-    },
-    {
-      "code": "audit-human",
-      "note": "Phase 5 監査（2026-09-27）で判断がつかない: ∏ の読み the product of a sub i, i from one to n は、用例コーパスに 0 件（読みの形 the product of a sub *）。前に読みを決めた OpenStax Algebra and Trigonometry の 3 件は n! の定義（the product of the positive integers from 1 to n）で ∏ の読みではなく、ほかの参照（Levin は product notation の名前、Nicholson は the product ∏(aᵢ − aⱼ)）も読みを 3 件以上使わない。規則どおり corpus-undecided で人間レビューへ。人間に決めてほしいこと: ∏ の読み（the product of a sub i, i from one to n ／ the product from i equals one to n of a sub i ほか）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "読みは人間が決めた（2026-09-27。docs/DECISIONS.md「Phase 5 監査（セッション 10）の前の決定」の 3）。the product from i equals one to n of a sub i。register は主張しない。",
       "raised": "2026-09-27"
     }
   ],

@@ -3,6 +3,10 @@
   "latex": "[x]",
   "spoken_en": [
     {
+      "text": "the greatest integer less than or equal to x",
+      "register": "standard"
+    },
+    {
       "text": "the floor of x",
       "register": "standard"
     }
@@ -13,7 +17,8 @@
   "category": "functions",
   "term_ref": "floor-function",
   "related": [
-    "floor-function-notation"
+    "floor-function-notation",
+    "floor-brackets"
   ],
   "level": {
     "jp": [
@@ -24,7 +29,8 @@
     ]
   },
   "notes": [
-    "[x] は the floor of x と読む（英語の資料では ⌊x⌋ と書く）。"
+    "[x] は the greatest integer less than or equal to x（x を超えない最大の整数）か the floor of x と読む。",
+    "米国では ⌊x⌋ と書く。"
   ],
   "sources": [
     {
@@ -45,7 +51,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 2",
-      "note": "[x]（the greatest integer less than or equal to x）"
+      "note": "5.6 Ratio and Root Tests の練習問題（[x] is the greatest integer less than or equal to x。1 つ目の読み）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "4.4 The Mean Value Theorem の練習問題（f(x) = ⌊x⌋、This is called the floor function。notes の ⌊x⌋）"
     }
   ],
   "confidence": "likely",
@@ -62,13 +73,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも読みを 3 件以上使わない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
-      "raised": "2026-09-27"
-    },
-    {
-      "code": "audit-human",
-      "note": "Phase 5 監査（2026-09-27）で判断がつかない: 床関数の読み the floor of x は、読みの形を床関数の意味だけにすると話し言葉 4 件で ③。参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）のどれも the floor of を 3 件以上使わず（OpenStax Calculus は This is called the floor function と名前だけ）、Phase 3 の人間の決定（③ 8 件）にも入っていないので、規則どおり corpus-undecided で人間レビューへ。人間に決めてほしいこと: 読み the floor of x でよいか（ceiling-brackets の the ceiling of x は人間が決めた読み）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "読みは人間が決めた（2026-09-27。docs/DECISIONS.md「Phase 5 監査（セッション 10）の前の決定」の 3）。the greatest integer less than or equal to x ／ the floor of x。register は主張しない。",
       "raised": "2026-09-27"
     }
   ],
