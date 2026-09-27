@@ -51,7 +51,7 @@
   "collocations": [],
   "pitfalls": [
     "高等学校学習指導要領解説（数学I 集合と命題）は必要条件・十分条件・対偶や簡単な命題の証明を扱い、集合の記号として a ∈ A、A ∩ B、A ∪ B、A ⊂ B、Ā を挙げ、発展の内容として真理値表と「p → q」の否定「p ∧ (¬q)」に触れるが、「論理結合子」の名前は出てこない。",
-    "数学の or は両方が真の場合も真になる（CK-12 Geometry 2.9: p ∨ q is true if p or q are true, or both。Levin は inclusive or と書く）。日本の「または」と同じ。",
+    "数学の or は両方が真の場合も真になる（CK-12 Geometry 2.9 は p ∨ q を、p と q の少なくとも一方が真のとき真とし、Levin は inclusive or と書く）。日本語版 Wikipedia「論理和」も、命題の少なくとも一つが真であれば真とする（非排他的な論理和）。",
     "用例コーパスでは書き言葉（MIT の講義ノート）にわずかにあるだけで、話し言葉には出てこない。CK-12 Geometry（2.9 And and Or Statements・2.10 Negative Statements）は logical connective を 18 件、Levin（1.1 Mathematical Statements）は 19 件使う。"
   ],
   "related": [
@@ -90,6 +90,12 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "1.1 Mathematical Statements: logical connectives（5 connectives: and, or, not, if…then, if and only if）。inclusive or"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「論理和」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%AB%96%E7%90%86%E5%92%8C",
+      "note": "複数の命題の少なくとも一つが真であることを示す（非排他的な）論理演算"
     }
   ],
   "confidence": "likely",
@@ -98,7 +104,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "logical connective": 1

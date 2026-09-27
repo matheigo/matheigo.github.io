@@ -2,7 +2,7 @@
 
 作成: `python3 scripts/audit/source_mentions.py`（規則は scripts/audit/source_mentions.py の説明）。主張が正しいかは見ない（それは監査）。
 
-- 項目: **157**（draft 1・likely 156）
+- 項目: **152**（draft 1・likely 151）
 
 | コレクション | id | confidence | 名指しされた資料 | 欄 |
 |---|---|---|---|---|
@@ -31,7 +31,6 @@
 | terms | cofactor-expansion | likely | OpenStax Algebra and Trigonometry | pitfalls[0] |
 | terms | cofactor | likely | OpenStax Algebra and Trigonometry | pitfalls[0] |
 | terms | completely-randomized-design | likely | 学習指導要領解説 | mapping_note |
-| terms | conditions-that-determine-a-triangle | likely | CK-12 | mapping_note |
 | terms | confounding-variable | likely | OpenStax Introductory Statistics | pitfalls[0] |
 | terms | conjugate-roots | likely | OpenStax Elementary Algebra | pitfalls[1] |
 | terms | convenience-sample | likely | 学習指導要領解説 | mapping_note |
@@ -54,13 +53,11 @@
 | terms | decimal-system | likely | Nicholson | pitfalls[0] |
 | terms | deductive-reasoning | likely | IM | pitfalls[0] |
 | terms | derivatives-in-polar-form | likely | 学習指導要領解説 | mapping_note |
-| terms | determine-the-coefficients | likely | 学習指導要領解説 | pitfalls[0] |
 | terms | difference-quotient | likely | 日本語版 Wikipedia「微分」 | mapping_note |
 | terms | difference-quotient | likely | 学習指導要領解説 | mapping_note |
 | terms | directed-graph | likely | Levin | pitfalls[2] |
 | terms | directed-graph | likely | Nicholson | pitfalls[2] |
 | terms | end-behavior | likely | 学習指導要領解説 | mapping_note |
-| terms | endpoint | likely | IM | pitfalls[0] |
 | terms | equation-in-quadratic-form | likely | 学習指導要領解説 | mapping_note |
 | terms | equation-in-quadratic-form | likely | OpenStax Algebra and Trigonometry | pitfalls[1] |
 | terms | equiangular-triangle | likely | IM | pitfalls[1] |
@@ -129,7 +126,7 @@
 | terms | perpendicular-postulate | likely | IM | pitfalls[1] |
 | terms | perpendicular-postulate | likely | 学習指導要領解説 | mapping_note |
 | terms | pigeonhole-principle | likely | Levin | pitfalls[2] |
-| terms | pivot | likely | Nicholson | pitfalls[1] |
+| terms | pivot | likely | Nicholson | pitfalls[0] |
 | terms | planar-graph | likely | Levin | pitfalls[2] |
 | terms | point-slope-form | likely | 学習指導要領解説 | mapping_note |
 | terms | polynomial-inequality | likely | 学習指導要領解説 | mapping_note |
@@ -147,12 +144,10 @@
 | terms | reflex-angle | likely | CK-12 | mapping_note |
 | terms | rejection-region | likely | AP Statistics の CED | mapping_note |
 | terms | rejection-region | likely | OpenStax Introductory Statistics | mapping_note |
-| terms | relation | likely | Levin | pitfalls[2] |
 | terms | resistant-statistic | likely | 学習指導要領解説 | mapping_note |
 | terms | right-triangle-similarity | likely | IM | pitfalls[2] |
 | terms | right-triangle-similarity | likely | 学習指導要領解説 | mapping_note |
 | terms | rise-over-run | likely | 学習指導要領解説 | mapping_note |
-| terms | ruler-postulate | likely | IM | pitfalls[2] |
 | terms | ruler-postulate | likely | 学習指導要領解説 | mapping_note |
 | terms | same-side-exterior-angles | likely | 学習指導要領解説 | mapping_note |
 | terms | sampling-distribution-of-a-proportion | likely | OpenStax Introductory Statistics | pitfalls[0] |
@@ -188,7 +183,6 @@
 | terms | unbiased-estimator | likely | OpenStax Introductory Statistics | pitfalls[0] |
 | terms | union-of-events | likely | OpenStax Introductory Statistics | pitfalls[0] |
 | terms | universal-quantifier | likely | Levin | pitfalls[2] |
-| terms | universal-set | likely | 学習指導要領解説 | pitfalls[0] |
 | terms | vertical-line-test | likely | 学習指導要領解説 | mapping_note |
 | terms | voluntary-response-bias | likely | 学習指導要領解説 | mapping_note |
 | terms | without-loss-of-generality | likely | Levin | pitfalls[2] |
