@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。2 つの方程式に k を掛けて足す考え方（k f + g = 0）は、米国の高校課程の用例コーパスには出てこない。説明するなら the family of circles through the two intersection points。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。一方の式に k を掛けてもう一方に足す考え方（kf + g = 0）は、米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない。英語版 Wikipedia には記事「Pencil (geometry)」がある（節 Pencil of circles。同じ 2 点を通る円の族を elliptic pencil と呼ぶ）。説明するなら the family of circles through the two intersection points。",
   "domains": [
     "geometry"
   ],
@@ -20,13 +20,10 @@
     "jp": [
       "数II"
     ],
-    "us": [
-      "Geometry",
-      "Precalculus"
-    ]
+    "us": []
   },
   "definition_ja": "2 円 f = 0, g = 0 の 2 つの交点を通る円（または直線）を kf + g = 0 の形で表す考え方。",
-  "definition_en": "The idea of writing any circle (or line) through the two intersection points of circles f = 0 and g = 0 as kf + g = 0.",
+  "definition_en": "The idea of writing a circle (or line) through the two intersection points of circles f = 0 and g = 0 as kf + g = 0 (every such circle except f = 0 itself).",
   "latex": "k(x^2 + y^2 - 4) + (x^2 + y^2 - 4x - 2y) = 0",
   "spoken_en": null,
   "examples": [
@@ -36,22 +33,42 @@
       "register": "spoken"
     },
     {
-      "en": "Find the equation of the circle that passes through the two intersection points of x² + y² = 4 and x² + y² − 4x − 2y = 0 and through the origin.",
-      "ja": "2 円 x² + y² = 4, x² + y² − 4x − 2y = 0 の 2 つの交点と原点を通る円の方程式を求めよ。",
+      "en": "Find the equation of the circle that passes through the two intersection points of x² + y² = 4 and x² + y² − 4x − 2y = 0 and through the point (1, 1).",
+      "ja": "2 円 x² + y² = 4, x² + y² − 4x − 2y = 0 の 2 つの交点と点 (1, 1) を通る円の方程式を求めよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "k = −1 のときは 2 円の交点を通る直線（共通弦）になる。"
+    "k = −1 のときは 2 円の交点を通る直線（共通弦を含む直線）になる。",
+    "kf + g = 0 は円 f = 0 自身を表せない（f = 0 も含めるなら kf + lg = 0 と 2 つの文字を使う）。"
   ],
   "related": [
     "equation-of-a-circle",
-    "point-of-intersection"
+    "point-of-intersection",
+    "relative-positions-of-two-circles"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pencil_%28geometry%29",
+      "note": "節 Pencil of circles（pencil of circles・elliptic pencil を太字）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「円束 (射影幾何学)」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%86%86%E6%9D%9F_%28%E5%B0%84%E5%BD%B1%E5%B9%BE%E4%BD%95%E5%AD%A6%29",
+      "note": "英: pencil of circles。二円の交点を通る円（または直線）全体の成す族"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和8年度 大学入学共通テスト 本試験 数学Ⅱ，数学Ｂ，数学Ｃ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=2144&f=abm00017550.pdf&n=2026_ol_18_sugaku2BC.pdf",
+      "note": "第1問: 2 円の式の差が 2 つの交点を通る直線"
     }
   ],
   "confidence": "likely",
@@ -60,7 +77,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"
@@ -69,7 +86,7 @@
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping none なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

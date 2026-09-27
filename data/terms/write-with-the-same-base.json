@@ -6,13 +6,13 @@
     "alt": []
   },
   "en": {
-    "term": "write with a common base",
+    "term": "rewrite … with a common base",
     "alt": [],
     "variants": [
       {
-        "term": "write with the same base",
+        "term": "write … with the same base",
         "register": "written",
-        "note": "as a power with the same base の形で数えた。用例コーパスにはほとんど出てこない（書き言葉の OpenStax Algebra and Trigonometry だけ）。with the same base のままでは、指数法則の「同じ底の累乗を掛ける」（multiply powers with the same base）の意味が多い。"
+        "note": "OpenStax Intermediate Algebra（10.2）の手順は Write both sides of the equation with the same base と書く。with the same base は、指数法則の multiply powers with the same base（同じ底の累乗の積）にも使う。"
       }
     ],
     "uk": null,
@@ -20,7 +20,7 @@
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "日本語の「底をそろえる」は 1 つの動詞句だが、英語は rewrite each side with a common base（両辺を共通の底で書き直す）と前置詞句で言う。OpenStax Algebra and Trigonometry は with a common base（10 件）を使う。",
+  "mapping_note": "日本語の「底をそろえる」は 1 つの動詞句だが、OpenStax Algebra and Trigonometry（6.6）は rewrite each side with a common base（両辺を共通の底で書き直す）と前置詞句で書く（with a common base 10 件）。",
   "domains": [
     "functions"
   ],
@@ -63,7 +63,13 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "6.6 Exponential and Logarithmic Equations（rewrite each side with a common base）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "10.2 Evaluate and Graph Exponential Functions（Write both sides of the equation with the same base）"
     }
   ],
   "confidence": "likely",
@@ -72,7 +78,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "with a common base": 2
@@ -86,6 +92,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -12,12 +12,12 @@
       {
         "term": "log function",
         "register": "spoken",
-        "note": "話し言葉の短い言い方。話し言葉では logarithmic function よりやや多く、MIT OCW が最も多い。書き言葉ではほとんど使わない。"
+        "note": "話し言葉の短い言い方（natural log function の形でもよく使う）。書き言葉ではほとんど使わない。"
       },
       {
         "term": "logarithmic function",
         "register": "both",
-        "note": "話し言葉では log function のほうがやや多いが、書き言葉ではこちらがずっと多い（OpenStax Calculus・OpenStax Algebra and Trigonometry・OpenStax Intermediate Algebra）。"
+        "note": "書き言葉ではこちらがずっと多い（OpenStax Calculus・OpenStax Algebra and Trigonometry・OpenStax Intermediate Algebra）。話し言葉でも使う。"
       }
     ],
     "uk": null,
@@ -31,12 +31,16 @@
   ],
   "level": {
     "jp": [
-      "数II"
+      "数II",
+      "数III"
     ],
     "us": [
       "Algebra 2",
       "Precalculus",
-      "Integrated Math 3"
+      "Integrated Math 3",
+      "AP Calculus AB",
+      "AP Calculus BC",
+      "Calculus I"
     ]
   },
   "definition_ja": "y = log_a x（a > 0, a ≠ 1）で表される関数。指数関数 y = aˣ の逆関数で、定義域は x > 0。",
@@ -61,7 +65,8 @@
     "exponential-function",
     "logarithm",
     "inverse-function",
-    "asymptote"
+    "asymptote",
+    "logarithmic-scale"
   ],
   "sources": [
     {
@@ -76,6 +81,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 1.12・2.7（logarithmic functions）"
     }
   ],
   "confidence": "likely",
@@ -84,7 +95,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "log function": 34,
@@ -108,6 +119,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

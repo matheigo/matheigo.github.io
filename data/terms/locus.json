@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "米国の高校・OpenStax はほぼ locus と言わず、the set of all points … such that … と書く（用例コーパスで locus は話・書とも出てこない。the set of all points は書き言葉に多く〔ほとんど OpenStax Algebra and Trigonometry と OpenStax Calculus〕、話し言葉には少ない）。",
+  "mapping_note": "CED・OpenStax・IM・CK-12（と Nicholson・Levin）に locus の語は出てこず、条件を満たす点全体は the set of all points … such that …（OpenStax Algebra and Trigonometry・Precalculus）／ the set of all points that …（IM・CK-12 Geometry）と書く（用例コーパスでも locus は話・書とも出てこない）。",
   "domains": [
     "geometry",
     "complex-numbers"
@@ -41,6 +41,11 @@
       "en": "Find the locus of the point z that satisfies |z − 1| = |z + i|.",
       "ja": "|z − 1| = |z + i| を満たす点 z の軌跡を求めよ。",
       "register": "written"
+    },
+    {
+      "en": "Find the locus of points P that are equidistant from A(1, 0) and B(3, 2).",
+      "ja": "2 点 A(1, 0), B(3, 2) から等しい距離にある点 P の軌跡を求めよ。",
+      "register": "written"
     }
   ],
   "collocations": [
@@ -55,13 +60,36 @@
   "related": [
     "conic-section",
     "ellipse",
-    "complex-plane"
+    "complex-plane",
+    "apollonian-circle"
   ],
   "sources": [
     {
       "type": "wikipedia-langlink",
       "ja": "軌跡 (数学)",
       "en": "Locus (mathematics)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "12 章 Analytic Geometry の円錐曲線の定義（the set of all points … such that）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "10 章 Analytic Geometry の円錐曲線の定義（the set of all points … such that）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "the set of all points that …"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "the set of all points that …"
     }
   ],
   "confidence": "likely",
@@ -70,10 +98,10 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   },
   "flags": [
     {

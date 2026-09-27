@@ -25,7 +25,8 @@
       "Algebra 2",
       "Precalculus",
       "AP Calculus BC",
-      "Integrated Math 1"
+      "Integrated Math 1",
+      "Calculus II"
     ]
   },
   "definition_ja": "数列の n 番目の項 aₙ。n の式で表したものを一般項という。",
@@ -46,14 +47,15 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "nth は「エンス」と読む。the nth term = a sub n。",
-    "日本の「一般項」は、第 n 項を n の式で表したもの。英語では formula for the nth term や explicit formula と言う（find-the-nth-term を参照）。"
+    "nth は「エンス」と読む（Merriam-Webster: ˈen(t)th）。the nth term = a sub n。",
+    "数列の一般項（センター試験 平成 26 年度 数学II・数学B の「数列 {aₙ} の一般項を求めよう」は aₙ を n の式で表すこと）は、英語でも general term（エントリ general-term）。OpenStax Algebra and Trigonometry（13.1）・Intermediate Algebra（12.1）は the general term (nth term) と書く。n の式そのものは、OpenStax Algebra and Trigonometry は explicit formula、Calculus Volume 2（5.1）は an explicit formula for the nth term と書く（find-the-nth-term を参照）。"
   ],
   "related": [
     "sequence",
     "first-term",
     "find-the-nth-term",
-    "nth"
+    "nth",
+    "general-term"
   ],
   "sources": [
     {
@@ -66,6 +68,23 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "Merriam-Webster「nth」",
+      "url": "https://www.merriam-webster.com/dictionary/nth",
+      "note": "発音 ˈen(t)th（2026-09-27 に確かめた）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成26年度 大学入試センター試験 本試験 数学Ⅱ・数学Ｂ（問題）",
+      "url": "https://web.archive.org/web/20150601/https://www.dnc.ac.jp/albums/abm.php?f=abm00003015.pdf&n=26suugaku_2b.pdf",
+      "note": "数列 {aₙ} の一般項を求めよう"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "12.1 Sequences（general term (nth term)）"
     }
   ],
   "confidence": "likely",
@@ -74,7 +93,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "nth term": 19
@@ -91,6 +110,6 @@
       "openstax-intalg",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

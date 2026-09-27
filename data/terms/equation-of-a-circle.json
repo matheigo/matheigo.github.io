@@ -3,9 +3,7 @@
   "ja": {
     "term": "円の方程式",
     "reading": "えんのほうていしき",
-    "alt": [
-      "円の標準形"
-    ]
+    "alt": []
   },
   "en": {
     "term": "equation of a circle",
@@ -47,22 +45,44 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "米国の教科書は (x − h)² + (y − k)² = r² と中心を (h, k) で書き、standard form of the equation of a circle と呼ぶ（OpenStax Algebra and Trigonometry）。",
+    "OpenStax（Intermediate Algebra 11.1・Algebra and Trigonometry 11.3）・IM Geometry（6.4）・CK-12 Geometry（6.21）は中心を (h, k) として (x − h)² + (y − k)² = r² と書き、OpenStax はこれを standard form of the equation of a circle と呼ぶ。",
     "用例コーパスでは話し言葉には少ない。冠詞の違う equation of the circle も書き言葉ではよく使い、話し言葉では少ない。"
   ],
   "related": [
     "general-form-of-a-circle",
     "tangent-line",
-    "find-the-equation"
+    "find-the-equation",
+    "position-of-a-line-relative-to-a-circle",
+    "relative-positions-of-two-circles",
+    "vector-equation-of-a-circle",
+    "circle-through-the-intersections-of-two-circles"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "11.3（standard form of the equation of a circle）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "11.1 Distance and Midpoint Formulas; Circles（standard form of the equation of a circle）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "6.4 Distances and Circles"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.21 Circles in the Coordinate Plane"
     }
   ],
   "confidence": "likely",
@@ -71,7 +91,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "equation of a circle": 9
@@ -89,6 +109,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

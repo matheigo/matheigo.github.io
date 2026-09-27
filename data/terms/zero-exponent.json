@@ -4,8 +4,7 @@
     "term": "0 乗",
     "reading": "ぜろじょう",
     "alt": [
-      "零乗",
-      "0 の指数"
+      "零乗"
     ]
   },
   "en": {
@@ -32,6 +31,7 @@
       "数II"
     ],
     "us": [
+      "Pre-Algebra",
       "Algebra 2",
       "Precalculus",
       "Integrated Math 1",
@@ -50,13 +50,13 @@
     },
     {
       "en": "Use the zero exponent rule to simplify (3x²y)⁰.",
-      "ja": "(3x²y)⁰ を簡単にせよ。",
+      "ja": "0 乗の定め方を使って (3x²y)⁰ を簡単にせよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "0⁰ は定義しない（undefined、または indeterminate と言う）。"
+    "OpenStax Prealgebra（10.5）は a ≠ 0 のときだけ a⁰ = 1 とし、0⁰ の値は決めない。indeterminate（不定形）は極限の形 0⁰ の呼び方（OpenStax Calculus Volume 1 の 4.8）。べき級数では x = 0 でも x⁰ = 1 とする（OpenStax Calculus Volume 2 の 6.1）。"
   ],
   "related": [
     "negative-exponent",
@@ -66,6 +66,27 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "10.5 Integer Exponents and Scientific Notation（Zero Exponent Property）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "4.8 L’Hôpital’s Rule（indeterminate form 0⁰）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "6.1 Power Series and Functions（x⁰ = 1）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 8 7.4 Dividing Powers of 10（zero exponent）"
     }
   ],
   "confidence": "likely",
@@ -74,7 +95,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "to the zero power": 92
@@ -97,6 +118,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

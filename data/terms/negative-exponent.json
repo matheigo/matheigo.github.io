@@ -3,9 +3,7 @@
   "ja": {
     "term": "負の指数",
     "reading": "ふのしすう",
-    "alt": [
-      "負の整数の指数"
-    ]
+    "alt": []
   },
   "en": {
     "term": "negative exponent",
@@ -24,6 +22,7 @@
       "数II"
     ],
     "us": [
+      "Pre-Algebra",
       "Algebra 2",
       "Precalculus",
       "Integrated Math 1",
@@ -48,7 +47,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "x⁻² を −x² とする誤りに注意（The negative exponent does not make it negative.）。用例コーパスの話し言葉では Professor Leonard が最も多く、次が The Organic Chemistry Tutor。"
+    "x⁻² を −x² とする誤りに注意（The negative exponent does not make it negative.）。用例コーパスの話し言葉では Professor Leonard が最も多く、次が The Organic Chemistry Tutor。",
+    "OpenStax Algebra and Trigonometry（1.2）は、この定め方を negative rule of exponents と呼ぶ。"
   ],
   "related": [
     "zero-exponent",
@@ -58,7 +58,19 @@
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "1.2 Exponents and Scientific Notation（negative rule of exponents）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 8 7.5〜7.8（negative exponents）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "10.5 Integer Exponents and Scientific Notation"
     }
   ],
   "confidence": "likely",
@@ -67,7 +79,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "negative exponent": 78
@@ -90,6 +102,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

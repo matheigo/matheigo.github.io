@@ -3,15 +3,11 @@
   "ja": {
     "term": "最小二乗法",
     "reading": "さいしょうにじょうほう",
-    "alt": [
-      "最小二乗解"
-    ]
+    "alt": []
   },
   "en": {
     "term": "least squares",
-    "alt": [
-      "method of least squares"
-    ],
+    "alt": [],
     "uk": null,
     "register": "both"
   },
@@ -28,7 +24,9 @@
     ],
     "us": [
       "Algebra 2",
-      "Linear Algebra"
+      "Linear Algebra",
+      "AP Statistics",
+      "Intro Statistics"
     ]
   },
   "definition_ja": "データの点と直線（や曲線）との縦のずれ（残差）の 2 乗の和が最小になるように、直線（や曲線）を決める方法。",
@@ -49,11 +47,12 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "線形代数では、解のない連立方程式 Ax = b の最小二乗解（least-squares solution）として扱う。"
+    "線形代数では、解のない連立方程式 Ax = b に最も近い解を求める方法として扱う。Nicholson 5.6（Best Approximation and Least Squares）はこれを best approximation と呼び、正規方程式 AᵀA z = Aᵀ b で求める。"
   ],
   "related": [
     "regression-line",
-    "scatter-plot"
+    "scatter-plot",
+    "residual"
   ],
   "sources": [
     {
@@ -64,6 +63,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "5.6 Best Approximation and Least Squares（best approximation、normal equations）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 5.5 Least-Squares Regression"
     }
   ],
   "confidence": "likely",
@@ -72,7 +83,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "least squares": 51
@@ -89,6 +100,6 @@
       "openstax-algtrig",
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

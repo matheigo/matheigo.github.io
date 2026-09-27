@@ -20,6 +20,16 @@
         "term": "take the log",
         "register": "spoken",
         "note": "話し言葉は 3Blue1Brown と MIT OCW が中心。書き言葉では少ない。"
+      },
+      {
+        "term": "take the natural logarithm",
+        "register": "written",
+        "note": "書き言葉の言い方（OpenStax Calculus Volume 1 3.9 の対数微分法の Take the natural logarithm of both sides、OpenStax Algebra and Trigonometry 6.6）。"
+      },
+      {
+        "term": "take the logarithm",
+        "register": "written",
+        "note": "書き言葉の言い方（OpenStax Algebra and Trigonometry 6.6 の taking the logarithm of each side、Intermediate Algebra 10.5）。"
       }
     ],
     "uk": null,
@@ -42,7 +52,7 @@
     ]
   },
   "definition_ja": "等式（不等式）の両辺の対数を考えて、指数を係数に下ろす。",
-  "definition_en": "To apply a logarithm to both sides of an equation (or inequality) so that exponents come down as coefficients.",
+  "definition_en": "To apply a logarithm to each side of an equation (or inequality) so that exponents come down as coefficients.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -59,14 +69,15 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは話し言葉で take the natural log と take the log が並ぶ。書き言葉は take the log・take the natural log とも少ない。",
-    "底を 10 にするか e にするかは自由。米国の授業では ln を使うことが多い（take the natural log は大半が Khan Academy）。"
+    "書き言葉（OpenStax Algebra and Trigonometry・Calculus）は log を略さず、take the logarithm of each side ／ take the natural logarithm of both sides と書く。",
+    "底を 10 にするか e にするかは自由（OpenStax Intermediate Algebra（10.5）は、どちらをとっても同じ結果になると書く）。OpenStax Algebra and Trigonometry（6.6）の手順は、底 10 の項があれば常用対数、なければ自然対数をとる。"
   ],
   "related": [
     "logarithm",
     "natural-logarithm",
     "exponential-equation",
-    "logarithmic-differentiation"
+    "logarithmic-differentiation",
+    "undo-the-log"
   ],
   "sources": [
     {
@@ -74,7 +85,18 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "6.6 Exponential and Logarithmic Equations（take the logarithm of each side）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "10.5 Solve Exponential and Logarithmic Equations（take the logarithm）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "3.9 Derivatives of Exponential and Logarithmic Functions（Take the natural logarithm of both sides）"
     }
   ],
   "confidence": "likely",
@@ -83,13 +105,17 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "take the log": 12,
-      "take the natural log": 21
+      "take the logarithm": 7,
+      "take the natural log": 21,
+      "take the natural logarithm": 2
     },
     "written": {
+      "take the natural logarithm": 13,
+      "take the logarithm": 11,
       "take the log": 8,
       "take the natural log": 7
     },
@@ -98,12 +124,15 @@
       "khan-ap-calc",
       "mit-18.01",
       "mit-6.042",
+      "mit-notes",
       "openstax-algtrig",
+      "openstax-calculus",
       "openstax-intalg",
       "yt:3blue1brown",
       "yt:blackpenredpen",
-      "yt:organicchem"
+      "yt:organicchem",
+      "yt:patrickjmt"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -39,7 +39,7 @@
       "register": "spoken"
     },
     {
-      "en": "Using log₁₀ 2 = 0.3010 and log₁₀ 3 = 0.4771, find the leading digit of 3^40.",
+      "en": "Using log₁₀ 2 = 0.3010 and log₁₀ 3 = 0.4771, find the first digit of 3^40.",
       "ja": "log₁₀ 2 = 0.3010, log₁₀ 3 = 0.4771 として、3⁴⁰ の最高位の数字を求めよ。",
       "register": "written"
     }
@@ -50,11 +50,18 @@
   ],
   "related": [
     "number-of-digits",
-    "common-logarithm"
+    "common-logarithm",
+    "digit"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「常用対数」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B8%B8%E7%94%A8%E5%AF%BE%E6%95%B0",
+      "note": "最高位の数字の求め方"
     }
   ],
   "confidence": "likely",
@@ -63,7 +70,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "first digit": 15,
@@ -81,6 +88,6 @@
       "openstax-algtrig",
       "openstax-prealgebra"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

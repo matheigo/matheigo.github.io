@@ -26,7 +26,8 @@
       "Precalculus",
       "AP Calculus BC",
       "Calculus II",
-      "Integrated Math 1"
+      "Integrated Math 1",
+      "Discrete Math"
     ]
   },
   "definition_ja": "数を 1 列に並べたもの。n 番目の数を第 n 項といい、aₙ のように書く。",
@@ -60,7 +61,10 @@
     "arithmetic-sequence",
     "geometric-sequence",
     "infinite-series",
-    "limit-of-a-sequence"
+    "limit-of-a-sequence",
+    "find-the-nth-term",
+    "recursive-definition",
+    "general-term"
   ],
   "sources": [
     {
@@ -75,6 +79,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.1 Describing Sequences（sequence）"
     }
   ],
   "confidence": "likely",
@@ -83,7 +93,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "sequence": 378
@@ -112,6 +122,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

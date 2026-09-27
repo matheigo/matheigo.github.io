@@ -31,7 +31,7 @@
     ]
   },
   "definition_ja": "隣り合う項の差が一定の数列。その一定の差を公差という。",
-  "definition_en": "A sequence in which each term is the previous one plus a fixed number, the common difference.",
+  "definition_en": "A sequence in which the difference between each term and the one before it is always the same number, the common difference.",
   "latex": "a_n = a_1 + (n-1)d",
   "spoken_en": "a sub n equals a sub one plus n minus one times d",
   "examples": [
@@ -53,13 +53,14 @@
     }
   ],
   "pitfalls": [
-    "Wikipedia の記事名は arithmetic progression だが、用例コーパスには出てこない。"
+    "英語版 Wikipedia の記事名は Arithmetic progression だが、参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）はどれも arithmetic sequence と書き、arithmetic progression は出てこない。"
   ],
   "related": [
     "common-difference",
     "geometric-sequence",
     "sum-of-an-arithmetic-sequence",
-    "arithmetic-middle-term"
+    "arithmetic-middle-term",
+    "sequence"
   ],
   "sources": [
     {
@@ -78,7 +79,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "arithmetic sequence": 28
@@ -94,6 +95,6 @@
       "yt:blackpenredpen",
       "yt:organicchem"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

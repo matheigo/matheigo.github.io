@@ -4,7 +4,6 @@
     "term": "数学的モデル",
     "reading": "すうがくてきもでる",
     "alt": [
-      "モデル化",
       "数理モデル"
     ]
   },
@@ -26,6 +25,7 @@
       "数B"
     ],
     "us": [
+      "Algebra 1",
       "Algebra 2",
       "Integrated Math 1",
       "Integrated Math 3"
@@ -49,13 +49,14 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語では a model、modeling（モデル化）と言うことが多い。",
+    "IM Algebra 1（3.4 Linear Models、5.11 Modeling Exponential Behavior）と OpenStax Algebra and Trigonometry（4.3・6.7）は、linear model・exponential model のように種類を付けて model と言い、作ることを modeling（モデル化）と言う。",
     "データに当てはめる（fit the data）モデルは、回帰直線（regression line）や指数関数のモデル（exponential model）など。"
   ],
   "related": [
     "regression-line",
     "exponential-model",
-    "simulation"
+    "simulation",
+    "predict"
   ],
   "sources": [
     {
@@ -69,7 +70,14 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "4.3 Fitting Linear Models to Data・6.7 Exponential and Logarithmic Models"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 1 3.4 Linear Models・5.11 Modeling Exponential Behavior ほか（mathematical model、modeling）"
     }
   ],
   "confidence": "likely",
@@ -78,7 +86,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "mathematical model": 1
@@ -93,6 +101,6 @@
       "openstax-calculus",
       "openstax-elemalg"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（moving average の言い方は CED・OpenStax・IM・CK-12・Nicholson・Levin で 0 件）。",
   "domains": [
     "statistics"
   ],
@@ -20,9 +20,7 @@
     "jp": [
       "数B"
     ],
-    "us": [
-      "Algebra 2"
-    ]
+    "us": []
   },
   "definition_ja": "時系列データで、一定の期間の値の平均を、期間を 1 つずつずらしながら求めたもの。短期の変動をならして傾向を見るのに使う。",
   "definition_en": "In a time series, the mean of the values over a fixed period, recomputed as the period slides forward one step at a time; it smooths out short-term changes to show the trend.",
@@ -54,6 +52,12 @@
       "type": "wikipedia-langlink",
       "ja": "移動平均",
       "en": "Moving average"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学B 数学と社会生活: 移動平均の定義と平均気温のデータの例"
     }
   ],
   "confidence": "likely",
@@ -62,7 +66,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "moving average": 3
@@ -70,7 +74,7 @@
     "sources": [
       "yt:3blue1brown"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {

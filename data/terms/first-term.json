@@ -8,6 +8,18 @@
   "en": {
     "term": "first term",
     "alt": [],
+    "variants": [
+      {
+        "term": "first term",
+        "register": "written",
+        "note": "数列・級数の初項。IM Algebra 2（1.3）も first term of a sequence と書く。式の最初の項にも使う。"
+      },
+      {
+        "term": "initial term",
+        "register": "written",
+        "note": "OpenStax Algebra and Trigonometry（13.1 ほか）・Calculus Volume 2 と Levin（4.1〜4.4）の言い方。Levin は番号を 0 から始めて初項を a₀ とすることがある。"
+      }
+    ],
     "uk": null,
     "register": "written"
   },
@@ -52,7 +64,8 @@
     "nth-term",
     "last-term",
     "common-difference",
-    "common-ratio"
+    "common-ratio",
+    "term"
   ],
   "sources": [
     {
@@ -61,6 +74,17 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.1 Describing Sequences・4.2 Arithmetic and Geometric Sequences（initial term）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "5.2 Infinite Series（initial term）"
     }
   ],
   "confidence": "likely",
@@ -69,12 +93,14 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "first term of … sequence | first term of … series | where the first term is": 5
+      "first term of … sequence | first term of … series | where the first term is": 5,
+      "initial term": 1
     },
     "written": {
+      "initial term": 33,
       "first term of … sequence | first term of … series | where the first term is": 38
     },
     "sources": [
@@ -82,8 +108,9 @@
       "khan-ap-calc",
       "mit-18.03",
       "openstax-algtrig",
+      "openstax-calculus",
       "openstax-intalg"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

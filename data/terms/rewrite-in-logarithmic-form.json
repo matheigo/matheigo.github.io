@@ -6,9 +6,12 @@
     "alt": []
   },
   "en": {
-    "term": "rewrite in logarithmic form",
-    "alt": [],
-    "uk": null
+    "term": "convert … to logarithmic form",
+    "alt": [
+      "rewrite … in logarithmic form"
+    ],
+    "uk": null,
+    "register": "written"
   },
   "pos": "phrase",
   "mapping": "exact",
@@ -37,8 +40,8 @@
       "register": "spoken"
     },
     {
-      "en": "Rewrite 3^(−2) = 1/9 in logarithmic form.",
-      "ja": "3⁻² = 1/9 を対数の形で表せ。",
+      "en": "Convert 3^(−2) = 1/9 to logarithmic form.",
+      "ja": "3⁻² = 1/9 を対数の形に直せ。",
       "register": "written"
     }
   ],
@@ -51,7 +54,24 @@
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "6.3 Logarithmic Functions（Converting from Exponential to Logarithmic Form、rewrite … in logarithmic form）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "10.3 Evaluate and Graph Logarithmic Functions（convert from exponential to logarithmic form）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "4.3 Logarithmic Functions（Converting from Exponential to Logarithmic Form）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 4.10〜4.14（in logarithmic form）"
     }
   ],
   "confidence": "likely",
@@ -60,25 +80,21 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "in logarithmic form": 1
     },
     "written": {
+      "to logarithmic form": 14,
       "in logarithmic form": 5
     },
     "sources": [
       "openstax-algtrig",
+      "openstax-intalg",
+      "openstax-introstats",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
-  },
-  "flags": [
-    {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 5 件（10 未満））。見出しは OpenStax の呼び方 in logarithmic form（本文 5 件）。register は主張しない。",
-      "raised": "2026-09-25"
-    }
-  ]
+    "counted": "2026-09-27"
+  }
 }

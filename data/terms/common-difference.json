@@ -33,8 +33,8 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "The common difference is negative, so the terms go down by 3 each time.",
-      "ja": "公差が負だから、項は 3 ずつ減っていく。",
+      "en": "The common difference is negative three, so the terms go down by 3 each time.",
+      "ja": "公差が −3 だから、項は 3 ずつ減っていく。",
       "register": "spoken"
     },
     {
@@ -46,12 +46,14 @@
   "collocations": [],
   "pitfalls": [
     "話し言葉では少なく、書き言葉（OpenStax Algebra and Trigonometry・OpenStax Intermediate Algebra）で多い語。",
-    "工学の「公差」（tolerance）とは別の語。"
+    "日本語版 Wikipedia「公差」は工学の許容差（tolerance）の記事で、数列の公差とは別の語。"
   ],
   "related": [
     "arithmetic-sequence",
     "common-ratio",
-    "first-term"
+    "first-term",
+    "consecutive-terms",
+    "difference"
   ],
   "sources": [
     {
@@ -60,6 +62,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「公差」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%85%AC%E5%B7%AE",
+      "note": "機械工学などで許容される差（tolerance）"
     }
   ],
   "confidence": "likely",
@@ -68,7 +76,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "common difference": 7
@@ -82,6 +90,6 @@
       "yt:blackpenredpen",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

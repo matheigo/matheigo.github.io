@@ -7,7 +7,9 @@
   },
   "en": {
     "term": "distance from a point to a line",
-    "alt": [],
+    "alt": [
+      "distance between a point and a line"
+    ],
     "uk": null
   },
   "pos": "noun",
@@ -22,7 +24,8 @@
     ],
     "us": [
       "Geometry",
-      "Precalculus"
+      "Precalculus",
+      "Calculus III"
     ]
   },
   "definition_ja": "点から直線に下ろした垂線の長さ。点 (x₁, y₁) と直線 ax + by + c = 0 の距離は |ax₁ + by₁ + c|/√(a² + b²)。",
@@ -43,13 +46,16 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "この公式は米国の高校（OpenStax Algebra and Trigonometry）には出てこず、用例コーパスでは OpenStax Calculus Volume 3（空間の点と直線の距離）にわずかに出てくるだけ。"
+    "点 (x₁, y₁) と直線 ax + by + c = 0 の距離の公式は、CED・OpenStax・IM・CK-12 に出てこない。IM Geometry（7.3）・CK-12 Geometry（4.21）は点と直線の最短距離が垂線に沿うことだけを使い、OpenStax Calculus Volume 3（2.5）は空間の点と直線の距離を d = ‖PM⃗ × v‖/‖v‖ で求める。"
   ],
   "related": [
     "perpendicular-lines",
     "equation-of-a-line",
     "tangent-line",
-    "distance"
+    "distance",
+    "foot-of-the-perpendicular",
+    "distance-formula",
+    "position-of-a-line-relative-to-a-circle"
   ],
   "sources": [
     {
@@ -59,7 +65,20 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 3"
+      "title": "OpenStax Calculus Volume 3",
+      "note": "2.5 Equations of Lines and Planes in Space（Distance from a Point to a Line）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "7.3 Tangent Lines（the shortest distance from a point to a line）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.21（点と直線の最短距離）"
     }
   ],
   "confidence": "likely",
@@ -68,21 +87,22 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
-      "distance from a point to a line": 3
+      "distance from a point to a line": 3,
+      "distance between a point and a line": 3
     },
     "sources": [
       "openstax-calculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 distance from a point to a line（本文 3 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 distance from a point to a line（本文 3 件）。register は主張しない。",
+      "raised": "2026-09-27"
     }
   ]
 }

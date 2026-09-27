@@ -35,8 +35,8 @@
   "spoken_en": "y equals a to the x",
   "examples": [
     {
-      "en": "The graph of an exponential function always passes through (0, 1).",
-      "ja": "指数関数のグラフは必ず (0, 1) を通る。",
+      "en": "The graph of the exponential function y = a to the x always passes through (0, 1).",
+      "ja": "指数関数 y = aˣ のグラフは必ず (0, 1) を通る。",
       "register": "spoken"
     },
     {
@@ -47,7 +47,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "米国の Precalculus では y = abˣ の形（a は初期値、b は増加・減少の率）でも書く（OpenStax Algebra and Trigonometry）。"
+    "OpenStax Algebra and Trigonometry（6.1）は y = abˣ（a は initial value、b は x が 1 増えるごとに掛かる倍率 growth factor）の形も exponential function と呼ぶ。"
   ],
   "related": [
     "exponential-equation",
@@ -64,7 +64,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "6.1 Exponential Functions（f(x) = abˣ、growth factor）"
     },
     {
       "type": "textbook",
@@ -77,7 +78,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "exponential function": 153
@@ -104,6 +105,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

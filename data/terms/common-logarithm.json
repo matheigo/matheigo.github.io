@@ -8,7 +8,8 @@
   "en": {
     "term": "common logarithm",
     "alt": [
-      "common log"
+      "common log",
+      "base 10 logarithm"
     ],
     "variants": [
       {
@@ -54,13 +55,16 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "米国では底を省いた log x が常用対数（OpenStax Algebra and Trigonometry）。日本の高校の数II では底 10 を省かず log₁₀ x と書く。",
+    "OpenStax Algebra and Trigonometry（6.3）は、底を書かない log x を常用対数とする（IM Algebra 2 の 4.9 も同じ）。高等学校学習指導要領解説（数学II）と共通テスト（令和 7 年度 本試験 数学II，数学B，数学C 第 2 問）は、底 10 を書いて log₁₀ と表す。",
     "話し言葉の log base 10 は大半が 3Blue1Brown。"
   ],
   "related": [
     "logarithm",
     "natural-logarithm",
-    "number-of-digits"
+    "number-of-digits",
+    "logarithmic-scale",
+    "leading-digit",
+    "change-of-base-formula"
   ],
   "sources": [
     {
@@ -70,7 +74,26 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "6.3 Logarithmic Functions（Definition of the Common Logarithm）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 4.9 What is a Logarithm?（base 10 logarithm）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II 指数関数・対数関数: 例は log₁₀ と底を書く"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和7年度 大学入学共通テスト 本試験 数学Ⅱ，数学Ｂ，数学Ｃ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=771&f=abm00005945.pdf&n=2025_op_30_sugaku2BC.pdf",
+      "note": "第2問: log₁₀ と底を書く"
     }
   ],
   "confidence": "likely",
@@ -79,7 +102,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "log base 10": 67,
@@ -104,6 +127,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

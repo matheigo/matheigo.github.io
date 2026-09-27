@@ -32,7 +32,7 @@
       "Integrated Math 3"
     ]
   },
-  "definition_ja": "n 乗すると a になる数。実数の範囲では ⁿ√a と書き、複素数の範囲では n 個ある。",
+  "definition_ja": "n 乗すると a になる数。実数の範囲では a と同じ符号のもの（a > 0 で n が偶数なら正のもの）を ⁿ√a と書き、複素数の範囲では 0 でない a に n 個ある。",
   "definition_en": "A number whose nth power is a; among the complex numbers every nonzero a has exactly n of them.",
   "latex": "\\sqrt[n]{a}",
   "spoken_en": "the nth root of a",
@@ -55,12 +55,13 @@
     }
   ],
   "pitfalls": [
-    "nth は「エンス」と読む（the enth root）。2 乗根は square root、3 乗根は cube root と特別な名前で呼ぶ。"
+    "nth は「エンス」と読む（the enth root。Merriam-Webster: ˈen(t)th）。2 乗根は square root、3 乗根は cube root と特別な名前で呼ぶ。"
   ],
   "related": [
     "nth",
     "nth-roots-of-unity",
-    "de-moivres-theorem"
+    "de-moivres-theorem",
+    "rational-exponent"
   ],
   "sources": [
     {
@@ -71,6 +72,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Merriam-Webster「nth」",
+      "url": "https://www.merriam-webster.com/dictionary/nth",
+      "note": "発音 ˈen(t)th（2026-09-27 に確かめた）"
     }
   ],
   "confidence": "likely",
@@ -79,7 +86,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "nth root": 13
@@ -100,6 +107,6 @@
       "yt:blackpenredpen",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

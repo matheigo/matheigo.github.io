@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。対数を含む不等式を問題の型として名前で呼ぶことはなく、solve log₂(x − 1) < 3 のように問題文で言う。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。参照（CED・OpenStax・IM・CK-12）には、対数を含む不等式を解く問題そのものが出てこない（OpenStax Algebra and Trigonometry（6.4 Graphs of Logarithmic Functions）は、真数が正になる x の範囲を不等式で求めて定義域を出すだけ）。",
   "domains": [
     "functions"
   ],
@@ -20,10 +20,7 @@
     "jp": [
       "数II"
     ],
-    "us": [
-      "Algebra 2",
-      "Precalculus"
-    ]
+    "us": []
   },
   "definition_ja": "未知数を対数の真数に含む不等式。真数条件と、底が 1 より大きいか小さいかに注意して解く。",
   "definition_en": "An inequality with the unknown inside a logarithm, solved while watching the positivity of the arguments and whether the base is greater or less than 1.",
@@ -51,6 +48,23 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "6.4 Graphs of Logarithmic Functions（定義域の不等式だけ）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学 (教科)」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6_%28%E6%95%99%E7%A7%91%29",
+      "note": "数学II: 対数方程式と対数不等式"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学Ⅱ・数学Ｂ（問題）",
+      "url": "https://web.archive.org/web/20190601/https://www.dnc.ac.jp/albums/abm.php?f=abm00033144.pdf&n=h30+suugaku2+02suugaku2B.pdf",
+      "note": "第1問〔2〕: 対数を含む不等式（両辺の対数をとり、真数の条件を考えて）"
     }
   ],
   "confidence": "likely",
@@ -59,7 +73,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"
@@ -68,7 +82,7 @@
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

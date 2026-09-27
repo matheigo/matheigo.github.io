@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。指数を含む不等式を 1 つの問題の型として名前で呼ぶことはなく、solve 2^x > 8 のように問題文で言う。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。参照は指数を含む不等式を名前で呼ばず、式を変形して解く問題も無い。IM Algebra 1（5.4 ほか）・IM Algebra 2（4.2・4.5・4.16）は、指数関数のモデルで「何回で〜より小さくなるか」のように境目を問い、表やグラフで答えさせる。",
   "domains": [
     "functions"
   ],
@@ -21,8 +21,8 @@
       "数II"
     ],
     "us": [
-      "Algebra 2",
-      "Precalculus"
+      "Algebra 1",
+      "Algebra 2"
     ]
   },
   "definition_ja": "未知数を指数に含む不等式。底が 1 より大きいか小さいかで、指数の大小と不等号の向きの関係が変わる。",
@@ -51,6 +51,18 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 1 5.4 ほか・Algebra 2 4.2・4.5・4.16（指数関数のモデルで境目を問う文章題）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学 (教科)」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6_%28%E6%95%99%E7%A7%91%29",
+      "note": "数学II: 指数方程式と指数不等式"
     }
   ],
   "confidence": "likely",
@@ -59,7 +71,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"
@@ -68,7 +80,7 @@
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

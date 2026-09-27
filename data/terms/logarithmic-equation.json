@@ -34,8 +34,8 @@
       "Integrated Math 3"
     ]
   },
-  "definition_ja": "未知数を対数の真数（や底）に含む方程式。真数条件を確かめて解く。",
-  "definition_en": "An equation with the unknown inside a logarithm (or in its base), solved while checking that each argument is positive.",
+  "definition_ja": "未知数を対数の真数（や底）に含む方程式。真数条件（底に未知数があれば底の条件も）を確かめて解く。",
+  "definition_en": "An equation with the unknown inside a logarithm (or in its base), solved while checking that each argument is positive (and that the base is positive and not 1 when it contains the unknown).",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -58,7 +58,10 @@
     "argument",
     "logarithmic-inequality",
     "exponential-equation",
-    "rewrite-in-exponential-form"
+    "rewrite-in-exponential-form",
+    "one-to-one-property",
+    "extraneous-solution",
+    "undo-the-log"
   ],
   "sources": [
     {
@@ -72,7 +75,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "logarithmic equation": 7,
@@ -90,6 +93,6 @@
       "yt:organicchem",
       "yt:patrickjmt"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

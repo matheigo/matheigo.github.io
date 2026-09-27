@@ -22,8 +22,10 @@
       "数B"
     ],
     "us": [
+      "Pre-Algebra",
       "Algebra 2",
-      "Integrated Math 3"
+      "Integrated Math 3",
+      "AP Statistics"
     ]
   },
   "definition_ja": "実際に試行する代わりに、乱数などを使って同じ仕組みの試行を模擬的に何度も行い、結果の分布を調べること。",
@@ -44,11 +46,13 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスの書き言葉は少ない（ほとんどが OpenStax Introductory Statistics）。"
+    "用例コーパスの書き言葉は少ない（ほとんどが OpenStax Introductory Statistics）。",
+    "AP Statistics の CED（topic 2.3 Estimating Probabilities Using Simulation）と IM（Grade 7 8.6、Algebra 2 7.11・7.14）は、単元の題や問題文でも simulation と書く。"
   ],
   "related": [
     "random-number",
-    "experimental-probability"
+    "experimental-probability",
+    "mathematical-model"
   ],
   "sources": [
     {
@@ -59,6 +63,24 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.3 Estimating Probabilities Using Simulation（2.3.A.4 simulation）・2.8・2.10・2.12"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 7 8.6 Estimating Probabilities Using Simulation・8.10 Designing Simulations"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 7.11・7.14（simulation）"
     }
   ],
   "confidence": "likely",
@@ -67,7 +89,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "simulation": 56
@@ -83,6 +105,6 @@
       "openstax-introstats",
       "yt:3blue1brown"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

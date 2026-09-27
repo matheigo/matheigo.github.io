@@ -30,8 +30,8 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "If the ratio of the distances is 2 to 1, the locus turns out to be a circle.",
-      "ja": "距離の比が 2 : 1 なら、軌跡は円になる。",
+      "en": "If the ratio of the distances is 2 to 1, the locus turns out to be a circle, called an Apollonian circle.",
+      "ja": "距離の比が 2 : 1 なら、軌跡は円（アポロニウスの円）になる。",
       "register": "spoken"
     },
     {
@@ -42,18 +42,25 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパス（OpenStax 9 冊を含む）には出てこない。Wikipedia の記事名は Circles of Apollonius（複数形）。"
+    "用例コーパス（OpenStax 9 冊を含む）には出てこない。英語版 Wikipedia「Circles of Apollonius」は、アポロニウスにちなむ何種類かの円をまとめた記事で、この円はその 1 つ目（節 Apollonius's definition of a circle。冒頭で Apollonian circle と太字）。複数形の Apollonian circles は、互いに直交する 2 つの円の族を指す別の記事。"
   ],
   "related": [
     "locus",
     "point-of-internal-division",
-    "equation-of-a-circle"
+    "equation-of-a-circle",
+    "point-of-external-division"
   ],
   "sources": [
     {
       "type": "wikipedia-langlink",
       "ja": "アポロニウスの円",
       "en": "Circles of Apollonius"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Circle",
+      "note": "節 Circle of Apollonius（数学カテゴリから 3 段）"
     }
   ],
   "confidence": "likely",
@@ -65,7 +72,7 @@
   "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {

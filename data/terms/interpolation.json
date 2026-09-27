@@ -24,7 +24,10 @@
       "数B"
     ],
     "us": [
-      "Algebra 2"
+      "Algebra 2",
+      "Precalculus",
+      "AP Statistics",
+      "Intro Statistics"
     ]
   },
   "definition_ja": "データの範囲の内側にある、観測していない値を、モデルなどを使って推定すること。",
@@ -44,7 +47,9 @@
     }
   ],
   "collocations": [],
-  "pitfalls": [],
+  "pitfalls": [
+    "interpolation は、線形代数や数値計算では、与えられた点をすべて通る関数（多項式）を作ることも指す（Nicholson 3.2 の Polynomial Interpolation、6.5 の Lagrange interpolation expansion）。日本語版 Wikipedia「内挿」も、データ列の区間の内側を埋める値や関数を求めることとし、最小二乗近似とは別のものとする。"
+  ],
   "related": [
     "extrapolation",
     "regression-line",
@@ -59,6 +64,28 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 5.3（interpolation）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "12.5 Prediction（interpolation）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "2.4 Fitting Linear Models to Data（Recognizing Interpolation or Extrapolation）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "3.2（Polynomial Interpolation）・6.5（Lagrange interpolation expansion）"
     }
   ],
   "confidence": "likely",
@@ -67,7 +94,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "interpolation": 21
@@ -77,6 +104,6 @@
       "openstax-algtrig",
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

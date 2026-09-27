@@ -6,8 +6,20 @@
     "alt": []
   },
   "en": {
-    "term": "rewrite in exponential form",
+    "term": "convert … to exponential form",
     "alt": [],
+    "variants": [
+      {
+        "term": "convert … to exponential form",
+        "register": "written",
+        "note": "OpenStax Algebra and Trigonometry（6.3）・Precalculus（4.3）の節の題 Converting from Logarithmic to Exponential Form と学習目標、Intermediate Algebra（10.3）の言い方。"
+      },
+      {
+        "term": "rewrite … in exponential form",
+        "register": "written",
+        "note": "OpenStax Algebra and Trigonometry（6.3 の練習問題）・Intermediate Algebra（10.3）と IM Algebra 2 の言い方。"
+      }
+    ],
     "uk": null,
     "register": "written"
   },
@@ -38,24 +50,47 @@
       "register": "spoken"
     },
     {
-      "en": "Rewrite log₄ 64 = 3 in exponential form.",
-      "ja": "log₄ 64 = 3 を指数の形で表せ。",
+      "en": "Convert to exponential form: log₄ 64 = 3.",
+      "ja": "log₄ 64 = 3 を指数の形に直せ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "in exponential form は複素数の極形式 re^(iθ)（exponential form）にも使う。"
+    "in exponential form は、同じ数のかけ算を累乗で書く（3 · 3 · 3 · 3 を 3⁴ と書く）意味（OpenStax Prealgebra 2.1、CK-12 Algebra 1.4.3）や、複素数を re^(iθ) と書く形（極形式 r(cos θ + i sin θ) を指数で書いたもの）にも使う。"
   ],
   "related": [
     "rewrite-in-logarithmic-form",
     "logarithm",
-    "undo-the-log"
+    "undo-the-log",
+    "logarithmic-equation"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "6.3 Logarithmic Functions（Converting from Logarithmic to Exponential Form、rewrite … in exponential form）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "2.1 Use the Language of Algebra（write … in exponential form）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Algebra (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Algebra",
+      "note": "1.4.3（write … in exponential form）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "10.3 Evaluate and Graph Logarithmic Functions（convert between exponential and logarithmic form）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "4.3 Logarithmic Functions（Converting from Logarithmic to Exponential Form）"
     }
   ],
   "confidence": "likely",
@@ -64,13 +99,15 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "in exponential form": 9
+      "!expression !write !factorization !answer !ten !written !n in exponential form": 7,
+      "to exponential form": 2
     },
     "written": {
-      "in exponential form": 34
+      "to exponential form": 28,
+      "!expression !write !factorization !answer !ten !written !n in exponential form": 18
     },
     "sources": [
       "khan-algebra",
@@ -78,12 +115,11 @@
       "mit-18.01",
       "mit-18.03",
       "openstax-algtrig",
-      "openstax-elemalg",
       "openstax-intalg",
-      "openstax-prealgebra",
       "yt:nancypi",
+      "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

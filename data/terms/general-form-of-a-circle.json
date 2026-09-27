@@ -27,13 +27,13 @@
     ]
   },
   "definition_ja": "円の方程式を展開した形 x² + y² + lx + my + n = 0。平方完成すると中心と半径がわかる。",
-  "definition_en": "The expanded form x² + y² + Dx + Ey + F = 0 of a circle's equation; completing the square gives the center and radius.",
+  "definition_en": "The expanded form x² + y² + lx + my + n = 0 of a circle's equation; completing the square gives the center and radius.",
   "latex": "x^2 + y^2 + lx + my + n = 0",
   "spoken_en": null,
   "examples": [
     {
-      "en": "Complete the square in x and in y to get it back into standard form.",
-      "ja": "x と y それぞれで平方完成して、標準形に戻そう。",
+      "en": "This is the general form of the equation of a circle, so complete the square in x and in y to get it back into standard form.",
+      "ja": "これは円の方程式の一般形なので、x と y それぞれで平方完成して標準形に戻そう。",
       "register": "spoken"
     },
     {
@@ -44,7 +44,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "米国の教科書は係数に D, E, F を使うことが多い。",
+    "OpenStax Intermediate Algebra（11.1）・Algebra and Trigonometry は円の一般形を x² + y² + ax + by + c = 0 と書く（この a, b は係数で、エントリ equation-of-a-circle の (x − a)² + (y − b)² = r² の中心の座標ではない）。D, E, F は 2 次曲線の一般形 Ax² + Bxy + Cy² + Dx + Ey + F = 0 の係数（Algebra and Trigonometry 12.4）。",
     "x² + y² + lx + my + n = 0 が円を表さない（点になる、図形がない）場合があることにも注意する。"
   ],
   "related": [
@@ -54,11 +54,13 @@
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "12.1・12.4（x² + y² + ax + by + c = 0、Ax² + Bxy + Cy² + Dx + Ey + F = 0）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Intermediate Algebra 2e"
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "11.1 Distance and Midpoint Formulas; Circles（General Form of the Equation of a Circle）"
     }
   ],
   "confidence": "likely",
@@ -67,7 +69,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "general form of the equation of a circle": 6
@@ -76,13 +78,13 @@
       "openstax-algtrig",
       "openstax-intalg"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 general form of the equation of a circle（本文 6 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

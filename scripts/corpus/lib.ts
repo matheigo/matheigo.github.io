@@ -1593,10 +1593,18 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   logarithm: { logarithm: "the logarithm of", log: "the log of" }, // "log" alone is too short to count as a word
   argument: { argument: "argument of the logarithm" }, // 真数, not a function's argument in general
   // "with the same base" was mostly the exponent rule "multiply powers with the same base"
-  // (Phase 2 統計・ベクトルの単元の前の修正); "with a common base" is the rewriting
-  "write-with-the-same-base": { "write with the same base": "as a power with the same base", "write with a common base": "with a common base" },
-  "rewrite-in-exponential-form": { "rewrite in exponential form": "in exponential form" },
-  "rewrite-in-logarithmic-form": { "rewrite in logarithmic form": "in logarithmic form" },
+  // (Phase 2 統計・ベクトルの単元の前の修正); "with a common base" is the rewriting. The headword's verb is
+  // rewrite (OpenStax Algebra and Trigonometry 6.6: rewrite each side with a common base; Phase 5 監査 8, batch 20)
+  "write-with-the-same-base": { "write … with the same base": "as a power with the same base", "rewrite … with a common base": "with a common base" },
+  // OpenStax's own wording is convert … to exponential / logarithmic form (Algebra and Trigonometry 6.3 and
+  // Precalculus 4.3 section titles, Intermediate Algebra 10.3). "in exponential form" also writes repeated
+  // multiplication as a power (OpenStax Prealgebra 2.1: write each expression in exponential form) and a power
+  // of ten in scientific notation: those words before it are left out (Phase 5 監査 8, batch 20)
+  "rewrite-in-exponential-form": {
+    "convert … to exponential form": "to exponential form",
+    "rewrite … in exponential form": "!expression !write !factorization !answer !ten !written !n in exponential form",
+  },
+  "rewrite-in-logarithmic-form": { "convert … to logarithmic form": "to logarithmic form", "rewrite … in logarithmic form": "in logarithmic form" },
   work: { work: "work done" }, // not "let's work it out"
   // Phase 2 統計・ベクトルの単元の前の修正: everyday-word headwords whose leading wording
   // meant something else in half or more of ten sampled contexts, or enough to change the verdict

@@ -22,7 +22,10 @@
       "数B"
     ],
     "us": [
-      "Algebra 2"
+      "Algebra 1",
+      "Algebra 2",
+      "AP Statistics",
+      "Intro Statistics"
     ]
   },
   "definition_ja": "モデルや回帰直線などを使って、まだ観測していない値を見積もる。",
@@ -49,7 +52,8 @@
     "regression-line",
     "extrapolation",
     "interpolation",
-    "mathematical-model"
+    "mathematical-model",
+    "residual"
   ],
   "sources": [
     {
@@ -59,6 +63,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 5.1・5.3（predict、predicted response value）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 1 3.4 Linear Models・5.21 Predicting Populations（predict）"
     }
   ],
   "confidence": "likely",
@@ -67,7 +83,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "predict": 99
@@ -96,6 +112,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

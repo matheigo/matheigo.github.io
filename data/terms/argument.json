@@ -46,23 +46,25 @@
   ],
   "collocations": [
     {
-      "en": "the argument must be positive",
+      "en": "the argument of a logarithm must be positive",
       "ja": "真数は正"
     }
   ],
   "pitfalls": [
-    "「真数条件」に当たる名前は英語にない。the argument must be positive、または the domain of the log（定義域）として言う。",
+    "「真数条件」に当たる名前は用例コーパスと参照（CED・OpenStax・IM・CK-12）に出てこない。OpenStax Algebra and Trigonometry は the argument of a logarithm must be positive と文で言い（6.5）、定義域を求めるときは真数が 0 より大きいという不等式を立てる（6.4）。",
     "argument は関数の引数（入力）一般を指す語で、複素数の偏角（argument-of-a-complex-number）も argument。"
   ],
   "related": [
     "logarithm",
     "argument-of-a-complex-number",
-    "logarithmic-equation"
+    "logarithmic-equation",
+    "logarithmic-inequality"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "6.4〜6.6（argument of the logarithm、must be positive）"
     }
   ],
   "confidence": "likely",
@@ -71,7 +73,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "argument of the logarithm": 1,
@@ -85,13 +87,13 @@
       "yt:nancypi",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 4 件（10 未満））。見出しは OpenStax の呼び方 argument of the logarithm（本文 4 件）。register は主張しない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

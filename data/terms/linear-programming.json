@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "OpenStax は linear programming という名前を出さず、feasible region（実行可能領域）で扱う（書き言葉ではすべて OpenStax Algebra and Trigonometry。linear programming は出てこない）。",
+  "mapping_note": "OpenStax は linear programming という名前を出さず、feasible region（実行可能領域）で扱う（書き言葉ではすべて OpenStax Algebra and Trigonometry。linear programming は出てこない）。OpenStax Algebra and Trigonometry（11.3）・Precalculus（9.3）の feasible region は連立不等式の解の領域の名前で、1 次式の最大・最小を求める問題は出てこない（objective function も 0 件）。Nicholson 8.10 は、1 次の目的関数を 1 次不等式の制約のもとで最大にする例を the general linear programming problem の簡単な場合と呼ぶ。",
   "domains": [
     "geometry"
   ],
@@ -21,8 +21,7 @@
       "数II"
     ],
     "us": [
-      "Geometry",
-      "Precalculus"
+      "Linear Algebra"
     ]
   },
   "definition_ja": "1 次不等式で表される条件（制約）のもとで、1 次式（目的関数）の最大値・最小値を求める方法。領域の頂点で最大・最小になる。",
@@ -31,12 +30,12 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "The maximum has to occur at one of the corners of the feasible region, so just check the corners.",
-      "ja": "最大値は実行可能領域の頂点のどれかでとるので、頂点を調べればいい。",
+      "en": "This is a linear programming problem, so the maximum has to occur at a corner of the feasible region; just check the corners.",
+      "ja": "線形計画法の問題なので、最大値は実行可能領域の頂点のどれかでとる。頂点を調べればいい。",
       "register": "spoken"
     },
     {
-      "en": "x and y satisfy x ≥ 0, y ≥ 0, x + 2y ≤ 8, 3x + y ≤ 9. Find the maximum value of x + y.",
+      "en": "If x and y satisfy x ≥ 0, y ≥ 0, x + 2y ≤ 8, and 3x + y ≤ 9, find the maximum value of x + y.",
       "ja": "x, y が x ≧ 0, y ≧ 0, x + 2y ≦ 8, 3x + y ≦ 9 を満たすとき、x + y の最大値を求めよ。",
       "register": "written"
     }
@@ -49,13 +48,25 @@
     "region",
     "constraint",
     "feasible-region",
-    "objective-function"
+    "objective-function",
+    "optimization-problem"
   ],
   "sources": [
     {
       "type": "wikipedia-langlink",
       "ja": "線形計画法",
       "en": "Linear programming"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "11.3 Systems of Nonlinear Equations and Inequalities: Two Variables（feasible region）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "8.10 An Application to Constrained Optimization（Example 8.10.3 の後の the general linear programming problem）"
     }
   ],
   "confidence": "likely",
@@ -64,10 +75,10 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {

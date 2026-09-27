@@ -22,12 +22,12 @@
       "数II"
     ],
     "us": [
-      "Geometry",
+      "Algebra 1",
       "Precalculus"
     ]
   },
   "definition_ja": "不等式を満たす点 (x, y) 全体の集合。座標平面上に図示すると、境界線で区切られた部分になる。",
-  "definition_en": "The set of all points (x, y) satisfying an inequality; on the coordinate plane it is a part of the plane cut off by a boundary.",
+  "definition_en": "All the points (x, y) that make an inequality true, taken as a set; on the coordinate plane it is a part of the plane cut off by a boundary.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -49,13 +49,15 @@
     }
   ],
   "pitfalls": [
-    "用例コーパスの region は話し言葉・書き言葉ともよく出てきて、その多くは微積分の「曲線で囲まれた部分」（the region bounded by …）。日本語では「囲まれた部分」「図形」と言うところも英語は region。",
-    "連立不等式の表す領域は the region defined by the system、線形計画法では feasible region。"
+    "用例コーパスの region は話し言葉・書き言葉ともよく出てきて、その多くは微積分の「曲線で囲まれた部分」（the region bounded by …）。学習指導要領解説（数学II 微分・積分の考え）が「直線や関数のグラフで囲まれた図形の面積」と書くところも、英語は region。",
+    "不等式・連立不等式の表す領域を、IM Algebra 1（2.21〜2.26）は solution region、OpenStax Algebra and Trigonometry（11.3）は feasible region と呼ぶ。"
   ],
   "related": [
     "boundary",
     "linear-programming",
-    "sketch"
+    "sketch",
+    "feasible-region",
+    "system-of-linear-inequalities"
   ],
   "sources": [
     {
@@ -68,7 +70,20 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "11.3 Systems of Nonlinear Equations and Inequalities: Two Variables（feasible region）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 1 2.21〜2.26（solution region）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II 微分・積分の考え: 直線や関数のグラフで囲まれた図形の面積"
     }
   ],
   "confidence": "likely",
@@ -77,7 +92,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "region": 960
@@ -109,6 +124,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

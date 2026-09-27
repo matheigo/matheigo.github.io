@@ -7,7 +7,9 @@
   },
   "en": {
     "term": "change-of-base formula",
-    "alt": [],
+    "alt": [
+      "change-of-base rule"
+    ],
     "uk": null,
     "register": "both"
   },
@@ -27,8 +29,8 @@
       "Integrated Math 3"
     ]
   },
-  "definition_ja": "log_a b = log_c b / log_c a（c > 0, c ≠ 1）。底の違う対数を同じ底にそろえる。",
-  "definition_en": "log_a b = log_c b / log_c a (c > 0, c ≠ 1), used to rewrite logarithms with a common base.",
+  "definition_ja": "log_a b = log_c b / log_c a（a, c は 1 でない正の数、b > 0）。底の違う対数を同じ底にそろえる。",
+  "definition_en": "log_a b = log_c b / log_c a (a, c > 0, a ≠ 1, c ≠ 1, b > 0), used to rewrite logarithms with a common base.",
   "latex": "\\log_a b = \\frac{\\log_c b}{\\log_c a}",
   "spoken_en": "log base a of b equals log base c of b over log base c of a",
   "examples": [
@@ -45,12 +47,13 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "字幕では change of base formula とハイフンなしで書かれることが多い（用例コーパスでは同じ言い方としてまとめた）。"
+    "ハイフンなしの change of base formula とも書く（OpenStax Algebra and Trigonometry にも両方の書き方がある）。"
   ],
   "related": [
     "logarithm",
     "common-logarithm",
-    "natural-logarithm"
+    "natural-logarithm",
+    "write-with-the-same-base"
   ],
   "sources": [
     {
@@ -68,13 +71,14 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "change-of-base formula": 23
     },
     "written": {
-      "change-of-base formula": 42
+      "change-of-base formula": 42,
+      "change-of-base rule": 1
     },
     "sources": [
       "khan-ap-calc",
@@ -88,6 +92,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }
