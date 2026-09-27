@@ -1082,3 +1082,8 @@
 - 2026-09-27 | 5 | 決定 8 の 2 回目: 「用例コーパス」が前の文にあって、次の文が「そのため…の形だけを数えた」「数えなかった」「同じ言い方として数えた」と書く型を、文ごとの検査が拾っていなかった（バッチ 17 を読んで見つけた。combination・circular-permutation）。validate の判定の説明に「数えた／数えていない／数えなかった／数えている」の文を足し（scripts/lib/wording.ts `COUNTED`。数学の意味の数え方は「数えると」「数えるとき」と書くので当たらない: pascals-triangle の row 0 と数えると、double-root、rise-over-run）、23 項目（verified 7: arc-length・axis-of-symmetry・class・first-order-linear-differential-equation・intersect・reflection・sampling-with-replacement）から消すか学習者に要る部分だけに短くした。警告は 0 | ユーザーの決定 8 の「ほか」。tests/wording.test.ts
 - 2026-09-27 | 5 | 決定 8 の 3 回目: 「…の形で数え、」「まとめて数え、」（連用形で次の句に続く）も判定の説明として validate が警告する（wording.ts `COUNTED` に「形で数え」「形だけを数え」「まとめて数え」を足した。数学の意味の「データを数え、」は当たらない: tally）。connected・mode（verified）・tree を直した。バッチ 17 の order-matters とバッチ 18 の eulers-formula-for-polyhedra に残る 2 文は、そのバッチの監査で直す | 決定 8 の「ほか」
 
+## Phase 5 監査（セッション 6）— 2026-09-27
+
+- 2026-09-27 | 5 | audit-major-fix の 12 語（バッチ 15・16）はすべて資料で確かめて verified に（合格 5・小さな直し 7）。③ の語は参照の根拠の文脈を corpus:probe --contexts で読んだ（決定 9）。資料（解説・共通テスト・日本語版 Wikipedia）に 0 件の ja.alt（solution-set の 解の範囲）と、用例コーパス・参照に 0 件の en.alt（universal-set の universal set。pitfalls が触れる）は外した。endpoint の langlink（区間 (数学) ↔ Interval (mathematics)）は区間の記事で端点とは別の概念なので、reference の出典に直した | 監査の観点 ⑧（langlink の概念）と、0 件の alt を外すこれまでの扱い
+- 2026-09-27 | 5 | バッチ 17・18 は、見直し役 10 人（Opus 5.5）に頼み、親も 100 語を読んだところで区切った（ユーザーの指示: キリのいいところで終わる）。見直し役の結果は audits/work/batch17-r1〜r5.md・batch18-r1〜r5.md、親の気づきは audits/work/batch17-parent.md・batch18-parent.md（どれも gitignore、2026-09-27 のデータに対するもの）。次のセッションはこれを使って直しと判定から始める | 直しの途中でセッションを終えると、直しと判定が別のセッションに割れる。読んだ結果だけを残して区切った
+

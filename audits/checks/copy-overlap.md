@@ -1,16 +1,16 @@
 # 書き写しの検出（Phase 5 の監査の前の機械の確かめ 1）
 
-作成: 2026-09-26 ／ `pnpm audit:copy`（scripts/audit/copy-check.ts）
+作成: 2026-09-27 ／ `pnpm audit:copy`（scripts/audit/copy-check.ts）
 
 規則: 英語は連続 8 語以上、日本語は空白を除いて 20 文字以上、エントリの本文（定義・例文・pitfalls・mapping_note・variants の note・コロケーション、記号の notes・日本語の読み、フレーズの en・ja・意図・variants・notes、慣習差の題・jp・us・advice_ja）が
 用例コーパス（manifest の全ファイル: MIT OCW・Khan Academy・YouTube・MICASE・OpenStax・MIT の講義ノート）と参照（CED 2 つ・Nicholson・Levin・IM 2 つ・CK-12 2 つ）、
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15686
-- 英語のソース: 3884 ファイル ／ 日本語のソース: 425 ファイル
-- 一致した箇所: **325**（290 項目）
-- 見出しの句を含む一致で除いたもの: 137 箇所（127 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
+- 調べた本文の欄: 15607
+- 英語のソース: 3884 ファイル ／ 日本語のソース: 454 ファイル
+- 一致した箇所: **322**（289 項目）
+- 見出しの句を含む一致で除いたもの: 138 箇所（128 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
 |---|---|---|---|---|---|---|---|
@@ -194,7 +194,6 @@
 | terms | integrate-by-parts | examples[1].en | en | 8 | integration by parts with u ln x and | 1 | openstax-calculus |
 | terms | intercepted-arc | mapping_note | en | 8 | 6 16 angles on and inside a circle | 1 | ref:ck12-geometry |
 | terms | interquartile-range | examples[0].en | en | 8 | spread out the middle half of the data | 1 | ref:im-6-8 |
-| terms | intersecting-chords-theorem | pitfalls[2] | en | 8 | ck 12 geometry 6 13 segments from chords | 1 | ref:ck12-geometry |
 | terms | isosceles-triangle-theorem | definition_en | en | 8 | base angles of an isosceles triangle are congruent | 2 | ref:im-9-12, ref:ck12-geometry |
 | terms | joint-variation | definition_en | en | 9 | a relationship in which one quantity is a constant | 2 | openstax-algtrig, openstax-precalculus |
 | terms | lateral-area | examples[1].en | en | 9 | a radius of 3 cm and a height of | 1 | ref:im-6-8 |
@@ -212,7 +211,6 @@
 | terms | linear-pair | examples[0].en | en | 8 | so they have to add up to 180 | 1 | yt:organicchem |
 | terms | linearity-of-expectation | definition_en | en | 10 | that the expected value of a sum of random variables | 2 | mit-notes, mit-6.042 |
 | terms | linearly-dependent | definition_en | en | 9 | can be written as a linear combination of the | 3 | mit-notes, ref:nicholson-lawa-2021a, openstax-calculus |
-| terms | logical-connective | pitfalls[1] | en | 10 | is true if p or q are true or both | 1 | ref:ck12-geometry |
 | terms | logical-connective | pitfalls[2] | en | 9 | ck 12 geometry 2 9 and and or statements | 1 | ref:ck12-geometry |
 | terms | major-arc | pitfalls[2] | en | 8 | ck 12 geometry 6 9 arcs in circles | 1 | ref:ck12-geometry |
 | terms | mean-absolute-deviation | definition_en | en | 8 | distance between each data value and the mean | 2 | ref:im-6-8, ref:im-9-12 |
@@ -288,7 +286,7 @@
 | terms | side-angle-inequality | mapping_note | en | 11 | ck 12 geometry 4 25 comparing angles and sides in triangles | 1 | ref:ck12-geometry |
 | terms | side-angle-inequality | mapping_note | en | 8 | the largest angle is opposite the longest side | 1 | ref:ck12-geometry |
 | terms | similarity-criteria | mapping_note | ja | 20 | 2組の辺の比とその間の角がそれぞれ等しい | 2 | jp:kaisetsu-chu, jp:wikipedia |
-| terms | simplify-radicals | pitfalls[4] | ja | 24 | 根号の中に現れる自然数が最小となる形で答えなさい | 2 | jp:exams/h30-hon-01, jp:exams/h30-hon-04 |
+| terms | simplify-radicals | pitfalls[3] | ja | 24 | 根号の中に現れる自然数が最小となる形で答えなさい | 2 | jp:exams/h30-hon-01, jp:exams/h30-hon-04 |
 | terms | slant-asymptote | definition_en | en | 15 | the degree of the numerator is exactly one more than the degree of the denominator | 2 | yt:patrickjmt, openstax-calculus |
 | terms | slope-formula | examples[1].en | en | 13 | use the slope formula to find the slope of the line passing through | 5 | openstax-elemalg, openstax-prealgebra, openstax-intalg, openstax-algtrig, openstax-calculus |
 | terms | slope-intercept-form-of-a-line | definition_en | en | 11 | where m is the slope and b is the y intercept | 5 | khan-ap-calc, khan-middle, khan-algebra, ref:ck12-geometry, yt:organicchem |
@@ -327,7 +325,6 @@
 | terms | trigonometric-function | examples[1].en | en | 8 | find the maximum and minimum values of the | 2 | openstax-calculus, ref:im-9-12 |
 | terms | trigonometric-integrals | definition_ja | en | 11 | sin x dx cos x c cos x dx sin x | 1 | mit-notes |
 | terms | trinomial | examples[0].en | en | 9 | numbers that multiply to 6 and add to 5 | 2 | openstax-elemalg, yt:nancypi |
-| terms | truth-value | pitfalls[1] | en | 9 | ck 12 geometry 2 9 and and or statements | 1 | ref:ck12-geometry |
 | terms | truth-value | examples[1].en | en | 8 | determine whether each statement is true or false | 1 | ref:ck12-geometry |
 | terms | truth-value | pitfalls[0] | en | 8 | determine whether the statement is true or false | 3 | openstax-calculus, ref:ck12-geometry, openstax-algtrig |
 | terms | turning-points | definition_en | en | 9 | from increasing to decreasing or from decreasing to increasing | 2 | khan-ap-calc, yt:profleonard |

@@ -1,16 +1,18 @@
 # 確かめられない言い方の警告（validate。scripts/lib/wording.ts・scripts/lib/corpus-count.ts）
 
-作成: 2026-09-26 ／ `python3 scripts/audit/wording_warnings.py`（`pnpm validate` の warn を集めた）。監査 2 の H-5 で足した警告（通じる／一番よく使う／減点／資料の名前のない「ことが多い」）、監査 3 の AT_LARGE（資料の名前のない「英語には〜がない」）、本文の用例コーパスの件数らしい数字。
+作成: 2026-09-27 ／ `python3 scripts/audit/wording_warnings.py`（`pnpm validate` の warn を集めた）。監査 2 の H-5 で足した警告（通じる／一番よく使う／減点／資料の名前のない「ことが多い」）、監査 3 の AT_LARGE（資料の名前のない「英語には〜がない」）、本文の用例コーパスの件数らしい数字、監査 6 の決定 8 の判定の説明（pitfalls・notes の「用例コーパスでは…の形で数えた」など）。
 
-- 文: **45**（verified 0）
+- 文: **46**（verified 0）
 
 | バッチ | コレクション | id | confidence | 欄 | 文 |
 |---|---|---|---|---|---|
 | 17 | terms | circular-permutation | likely | pitfalls[1] | 問題文では arrange … around a round table のように並べ方を文で書くことが多い。 |
 | 17 | terms | diophantine-equation | likely | definition_ja | 未知数の数が式の数より多く、解が 1 つに定まらないことが多い。 |
 | 17 | terms | intersection-of-events | likely | pitfalls[0] | 確率では A ∩ B を「A and B」と読むことが多い。 |
+| 17 | terms | order-matters | likely | pitfalls[0] | 用例コーパスでは order matters ／ order doesn't matter ／ order does not matter をまとめて数え、話し言葉（Khan Academy の中学の講義が最も多い）・書き言葉（大半が OpenStax Algebra and Trigonometry）の両方に出てくる。 |
 | 17 | terms | union-of-events | likely | pitfalls[0] | 確率では A ∪ B を「A or B」と読むことが多い。 |
 | 18 | terms | cubic-equation | likely | pitfalls[0] | 授業では単に a cubic（3 次式）と言うことが多い。 |
+| 18 | terms | eulers-formula-for-polyhedra | likely | pitfalls[0] | 用例コーパスでは Euler's formula for polyhedra ／ Euler's polyhedron formula ／ Euler's formula for planar graphs のどれかの形でだけ数え、書き言葉（MIT の講義ノート）にわずかに出てくるだけだった。 |
 | 18 | terms | polynomial-equation-of-higher-degree | likely | definition_ja | 因数定理で因数分解して解くことが多い。 |
 | 19 | terms | angle-addition-formulas | likely | pitfalls[0] | 値を「求めよ」は、米国の問題では find the exact value（小数ではなく正確な値）と書くことが多い。 |
 | 19 | terms | auxiliary-angle-form | likely | mapping_note | 「合成」を synthesis と訳すと通じない言い方になる（STYLE の直訳禁止リスト）。 |
@@ -33,7 +35,6 @@
 | 24 | terms | point-slope-form | likely | mapping_note | 中 2 では y = ax + b に点の座標を代入して b を求めることが多い。 |
 | 25 | terms | image | likely | mapping_note | 日本の中学では「移した図形」「移動後の図形」と言い、像という言葉は写像（大学）で使うことが多い。 |
 | 26 | terms | continuous-compounding | likely | pitfalls[0] | 英語は名詞の continuous compounding より、interest compounded continuously ／ continuously compounded interest の形で言うことが多い（教科書は compounded continuously、授業では continuously compounded の語順が多い）。 |
-| 28 | terms | statistical-power | likely | pitfalls[0] | 授業では単に power と言うことが多いが、語のままの power は累乗（x to the power of）と同じ語で数えられない。 |
 | 30 | terms | generating-function | likely | pitfalls[1] | 母関数では x に値を代入せず、係数を並べる入れ物として扱うことが多い。 |
 | 31 | terms | recursive-algorithm | likely | pitfalls[1] | 日本語の「帰納的」も「再帰的」も英語では recursive になることが多い（帰納的定義 = recursive definition）。 |
 | 32 | symbols | piecewise-brace | likely | notes[1] | 米国の教科書は条件を式の右に書き（x² if x ≥ 0）、日本のように ( ) でくくらないことが多い。 |

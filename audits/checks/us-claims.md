@@ -1,11 +1,11 @@
 # 米国側の主張の文で出典に当たる参照がないもの（Phase 5 の監査の前の機械の確かめ 3）
 
-作成: 2026-09-26 ／ `pnpm audit:claims`（scripts/audit/claims.ts）
+作成: 2026-09-27 ／ `pnpm audit:claims`（scripts/audit/claims.ts）
 
 対象の欄は日本側と同じ。米国側の主張（米国・アメリカ・AP・CED・College Board・英語圏・Calc I〜III・Calculus AB／BC）の文のうち、
 文の中に参照（CED・OpenStax・IM・CK-12・Nicholson・Levin・Wikipedia・topic の番号ほか）も用例コーパス（講義・話し言葉・書き言葉・Khan・MIT ほか）も名指ししないもの。
 
-- 米国側の主張の文で参照かコーパスを名指しするもの: 396 文（一覧にしない）
+- 米国側の主張の文で参照かコーパスを名指しするもの: 383 文（一覧にしない）
 - **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 11 項目・11 文**
 - B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 49 項目・51 文
 
@@ -48,7 +48,7 @@
 | terms | identity-matrix | definition_ja | E（米国の教科書では I）と書く。 | OpenStax Algebra and Trigonometry 2e |
 | terms | initial-side | pitfalls[0] | 始線を x 軸の正の部分にとった角を、米国では an angle in standard position（標準の位置の角）と呼ぶ。 | OpenStax Algebra and Trigonometry 2e |
 | terms | law-of-detachment | pitfalls[0] | 米国の Geometry の教科書では law of detachment、論理学・離散数学では modus ponens と呼ぶ。 | Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition; CK-12 Geometry (K12 LibreTexts) |
-| terms | logarithm | pitfalls[2] | 米国では log x は常用対数（底 10）、ln x は自然対数を表す。 | OpenStax Algebra and Trigonometry 2e; OpenStax Intermediate Algebra 2e |
+| terms | logarithm | pitfalls[1] | 米国では log x は常用対数（底 10）、ln x は自然対数を表す。 | OpenStax Algebra and Trigonometry 2e; OpenStax Intermediate Algebra 2e |
 | terms | permutation | pitfalls[0] | 米国の教科書では P(n, r) や ₙPᵣ と書く。 | OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 3 |
 | terms | proving-an-identity | pitfalls[1] | 証明の途中で両辺に同じ操作をして 1 = 1 を導く書き方は、米国の教科書でも避ける（片側を変形していく）。 | OpenStax Algebra and Trigonometry 2e |
 | terms | pythagorean-identity | pitfalls[0] | 米国の教科書は 1 + tan²θ = sec²θ、1 + cot²θ = csc²θ も合わせて Pythagorean identities（複数形）と呼ぶ。 | OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1 |
