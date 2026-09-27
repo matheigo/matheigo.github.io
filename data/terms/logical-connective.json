@@ -95,7 +95,7 @@
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -112,6 +112,11 @@
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは CK-12 の呼び方 logical connective（CK-12 Geometry 2.9 And and Or Statements・CK-12 Geometry 2.10 Negative Statements・計 11 件）。register は主張しない。",
+      "raised": "2026-09-26"
+    },
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: 見出しを connective から logical connective に（CK-12 Geometry 18／20 件、Levin 19／37 件が logical connective の形。connective 単独は長い候補の中でも数えられていた）、en.alt を connective に（logical operator は 0 件）。TERM_FORMS で connective を logical connective の中では数えない形にして数え直した。pitfalls の「¬ は使わない」は解説の発展の内容 p∧（¬q）と食い違うので直した。見直す点: 見出し、mapping_note の型の文（日本語版 Wikipedia「命題」）。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]

@@ -76,7 +76,7 @@
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -100,6 +100,11 @@
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは AP Statistics の CED の呼び方 causal relationship（topic 1.10）。register は主張しない。",
+      "raised": "2026-09-26"
+    },
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: 見出しを causation から causal relationship に（参照で見出しを決める規則: CED は causal relationships 2 件（topic 1.10）・causation 1 件（5.2）、IM Algebra 1 は 3.9 Causal Relationships 9 件。レビューの指摘で causal relationship を候補に足して数え直すと corpus:decide がこの見出しにした）。causation・cause and effect は en.alt、CED・IM を出典に、cause-and-effect conclusion を pitfalls に。見直す点: 見出し（causation のほうが概念の名前として自然か）、例文。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]

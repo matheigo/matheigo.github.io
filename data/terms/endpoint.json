@@ -106,7 +106,7 @@
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -140,5 +140,12 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-26"
-  }
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: 定義を区間の端から線分・半直線の端の点に広げた（CK-12 Geometry 1.1 の定義、IM、解説・共通テストの端点は線分・半直線。区間の端は CED 5.5・10.13）。domains に geometry、level.us に Geometry・AP Calculus AB、langlink（End (topology) は別の概念）を 区間 (数学) に、TERM_FORMS で end point の綴りをまとめた。見直す点: 定義の範囲、langlink、level。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
+    }
+  ]
 }
