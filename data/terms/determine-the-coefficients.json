@@ -84,10 +84,10 @@
       "note": "「二次関数の決定」「2次関数の決定」は 0 件"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": "2026-09-26",
+    "audit": "2026-09-27",
     "human": null
   },
   "updated": "2026-09-27",
@@ -111,11 +111,6 @@
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 find a quadratic function | find the quadratic function | quadratic function from its graph（本文 4 件）。register は主張しない。",
-      "raised": "2026-09-26"
-    },
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-26）で大きな直し: 見出しを find the coefficients から find a quadratic function に（見出しの件数は二項係数・フーリエ係数・部分分数の係数で、二次関数の決定の意味では 0 件。OpenStax Intermediate Algebra の Find a Quadratic Function from its Graph 4 件）、mapping を near に、TERM_FORMS で find the coefficients を二次関数の意味の形だけで数え直し（reference fallback、register は主張しない）。例文を見出しの語に。見直す点: 見出し、mapping、TERM_FORMS の形、例文。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]

@@ -84,10 +84,10 @@
       "note": "数学I 集合と命題: 「全体集合」は 0 件"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": "2026-09-26",
+    "audit": "2026-09-27",
     "human": null
   },
   "updated": "2026-09-27",
@@ -104,11 +104,6 @@
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 the universe of all things | universe of discourse | universe is u | universe u | the universe be the set（CK-12 Geometry 2.10 Negative Statements・計 1 件）。register は主張しない。",
-      "raised": "2026-09-26"
-    },
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-26）で大きな直し: 見出しを universal set から universe に（英語版 Wikipedia「Universal set」はすべての集合を含む集合という別の概念（WIKIPEDIA_NOT_SAME）。同じ概念の記事は「Universe (mathematics)」。参照は CK-12 Geometry 2.10 の the universe of all things と Levin の the universe 𝒰）。TERM_FORMS で集合の意味の形だけを数え直し。出典を同じ概念の記事・Levin・CK-12・共通テストに。見直す点: 見出し universe、en.alt universal set、TERM_FORMS の形、pitfalls の説明。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]
