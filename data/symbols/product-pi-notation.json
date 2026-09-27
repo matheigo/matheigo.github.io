@@ -45,6 +45,16 @@
       "code": "corpus-undecided",
       "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも読みを 3 件以上使わない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
       "raised": "2026-09-27"
+    },
+    {
+      "code": "audit-human",
+      "note": "Phase 5 監査（2026-09-27）で判断がつかない: ∏ の読み the product of a sub i, i from one to n は、用例コーパスに 0 件（読みの形 the product of a sub *）。前に読みを決めた OpenStax Algebra and Trigonometry の 3 件は n! の定義（the product of the positive integers from 1 to n）で ∏ の読みではなく、ほかの参照（Levin は product notation の名前、Nicholson は the product ∏(aᵢ − aⱼ)）も読みを 3 件以上使わない。規則どおり corpus-undecided で人間レビューへ。人間に決めてほしいこと: ∏ の読み（the product of a sub i, i from one to n ／ the product from i equals one to n of a sub i ほか）。人間レビューへ。",
+      "raised": "2026-09-27"
     }
-  ]
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-09-27",
+    "human": null
+  }
 }
