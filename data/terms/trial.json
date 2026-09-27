@@ -13,15 +13,18 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本語の「試行」は、標本空間や事象を考える実験そのもの（学習指導要領解説（数学B）の「2枚の硬貨を投げる試行についての標本空間」、センター試験 平成 30 年度 数学I・数学A 第 3 問の「大小 2 個のさいころを同時に投げる試行」）にも、その 1 回 1 回（同じ問題の「試行を 2 回繰り返す」）にも使う。英語の trial は 1 回 1 回のほうで、AP Statistics の CED（topic 2.3）は outcome を one trial of a random process の結果と書く。実験そのものは、CED は random process、IM（Grade 7）は chance experiment、OpenStax Introductory Statistics は experiment と呼ぶ。",
+  "mapping_note": "日本語の「試行」は、標本空間や事象を考える実験そのもの（学習指導要領解説（数学B）の「2枚の硬貨を投げる試行についての標本空間」、センター試験 平成 30 年度 数学I・数学A 第 3 問の「大小 2 個のさいころを同時に投げる試行」）にも、その 1 回 1 回（共通テスト 令和 6 年度 数学I・数学A 第 3 問の「n 回の試行で」「n 回目の試行で初めて」）にも使う。日本語版 Wikipedia「試行 (確率論)」も英名に trial と experiment を並べる。AP Statistics の CED（topic 2.3）は outcome を one trial of a random process の結果と書き、IM（Grade 7 8.6・8.7）・OpenStax Introductory Statistics も trial を 1 回 1 回に使う。実験そのものは、CED は random process、IM（Grade 7）は chance experiment、OpenStax Introductory Statistics は experiment と呼ぶ。",
   "domains": [
-    "combinatorics"
+    "combinatorics",
+    "probability"
   ],
   "level": {
     "jp": [
+      "中1",
       "数A"
     ],
     "us": [
+      "Pre-Algebra",
       "Algebra 2",
       "Integrated Math 2",
       "AP Statistics",
@@ -54,7 +57,8 @@
     "elementary-event",
     "sample-space",
     "probability",
-    "experiment"
+    "experiment",
+    "toss"
   ],
   "sources": [
     {
@@ -64,7 +68,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.5 Counting Principles（an experiment or trial）"
     },
     {
       "type": "reference",
@@ -76,7 +81,7 @@
       "type": "reference",
       "title": "Illustrative Mathematics, IM 6–8 Math",
       "url": "https://im.kendallhunt.com/MS/students/index.html",
-      "note": "Grade 7 8.2・8.3（chance experiment）"
+      "note": "Grade 7 8.2・8.3（chance experiment）・8.6・8.7（trial）"
     },
     {
       "type": "reference",
@@ -89,6 +94,18 @@
       "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
       "url": "https://web.archive.org/web/20190601/https://www.dnc.ac.jp/albums/abm.php?f=abm00033141.pdf&n=h30+suugaku1+02suugaku1A.pdf",
       "note": "第3問: 大小2個のさいころを同時に投げる試行、試行を2回繰り返す"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和6年度 大学入学共通テスト 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=666&f=abm00004685.pdf&n=2024_or_19_sugaku1A.pdf",
+      "note": "第3問: n回の試行、n回目の試行で初めて"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「試行 (確率論)」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%A9%A6%E8%A1%8C_%28%E7%A2%BA%E7%8E%87%E8%AB%96%29",
+      "note": "英: trial, experiment"
     }
   ],
   "confidence": "likely",

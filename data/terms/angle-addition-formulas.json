@@ -3,7 +3,9 @@
   "ja": {
     "term": "加法定理",
     "reading": "かほうていり",
-    "alt": []
+    "alt": [
+      "三角関数の加法定理"
+    ]
   },
   "en": {
     "term": "sum and difference formulas",
@@ -61,7 +63,9 @@
   "pitfalls": [
     "日本語は「定理」だが、OpenStax Algebra and Trigonometry は sum and difference formulas と呼ぶ（節の題は Sum and Difference Identities）。英語版 Wikipedia「List of trigonometric identities」は angle addition and subtraction theorems (or formulae) とも書く。",
     "addition theorem と訳すと、英語版 Wikipedia「Addition theorem」の一般の加法定理（f(x + y) を f(x), f(y) で表す式）の名前になる。用例コーパスと参照には出てこない。",
-    "「値を求めよ」は、OpenStax Algebra and Trigonometry では find the exact value（小数ではなく正確な値）と書く（41 件）。"
+    "「値を求めよ」は、OpenStax Algebra and Trigonometry では find the exact value（小数ではなく正確な値）と書く（41 件）。",
+    "1 つ 1 つの式は、OpenStax Algebra and Trigonometry（9.2）では the sum formula for cosine（cos(α + β) の式）、the difference formula for sine（sin(α − β) の式）のように呼ぶ。",
+    "数学A の確率の加法定理（互いに排反な事象の和の確率）は別のエントリ general-addition-rule（addition rule）。日本語版 Wikipedia「加法定理」はどちらも加法定理の例に挙げる。"
   ],
   "related": [
     "double-angle-formulas",
@@ -94,6 +98,12 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Addition_theorem",
       "note": "記事「Addition theorem」（一般の加法定理）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「加法定理」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8A%A0%E6%B3%95%E5%AE%9A%E7%90%86",
+      "note": "三角関数の加法定理と確率の加法定理（和の法則）を例に挙げる一般の記事"
     }
   ],
   "confidence": "likely",

@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本語版 Wikipedia「虚数」は、実数でない複素数 a + bi（b ≠ 0）を虚数とする（センター試験 平成 27 年度 数学II も 1 + 2i を虚数と呼ぶ）。OpenStax Algebra and Trigonometry（Complex Numbers）と IM Algebra 2（3.10 の用語集）は imaginary number を bi の形の数とし（英語版 Wikipedia「Imaginary number」も実数と i の積と定義する）、実数でない a + bi は、IM Algebra 2（3.17・3.19）は non-real、Nicholson は nonreal complex number と書く。",
+  "mapping_note": "日本語版 Wikipedia「虚数」は、実数でない複素数 a + bi（b ≠ 0）を虚数とする（センター試験 平成 27 年度 数学II も 1 + 2i を虚数と呼ぶ）。IM Algebra 2（3.10 の用語集）と OpenStax Precalculus（3.1 Complex Numbers）は imaginary number を bi の形の数とし（英語版 Wikipedia「Imaginary number」も実数と i の積と定義する）、OpenStax Algebra and Trigonometry（2.4）は bi を pure imaginary number と呼ぶ。OpenStax Intermediate Algebra（8.8）は b ≠ 0 の a + bi を imaginary number と呼び、日本語と同じ範囲になる。実数でない a + bi を、IM Algebra 2（3.17・3.19）は non-real、Nicholson は nonreal complex number と書く。",
   "domains": [
     "algebra",
     "complex-numbers"
@@ -30,7 +30,7 @@
     ]
   },
   "definition_ja": "実数でない複素数。a + bi で b ≠ 0 のもの。",
-  "definition_en": "A complex number that is not real, a + bi with b ≠ 0 (the Japanese 虚数). US textbooks such as OpenStax and IM call only numbers of the form bi imaginary numbers.",
+  "definition_en": "A complex number that is not real, a + bi with b ≠ 0 (the Japanese 虚数). IM Algebra 2 and OpenStax Precalculus use imaginary number only for numbers of the form bi, while OpenStax Intermediate Algebra uses it for every a + bi with b ≠ 0.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -47,7 +47,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "「虚数解」（実数でない解）は、英語では complex solution（エントリ imaginary-solution）か non-real solution（IM Algebra 2 3.19）と言う。−1 ± 2i のような解は、OpenStax・IM の意味の imaginary number（bi）ではない。",
+    "「虚数解」（実数でない解）は、OpenStax Algebra and Trigonometry・Intermediate Algebra は complex solution（エントリ imaginary-solution）、IM Algebra 2（3.17・3.19）は non-real solution と書く。−1 ± 2i のような解は、IM Algebra 2・OpenStax Precalculus の意味の imaginary number（bi）ではない。",
     "実数でない複素数（日本語の虚数）をはっきり言うときは、Nicholson は nonreal complex number、IM Algebra 2（3.17・3.19）は non-real と書く。"
   ],
   "related": [
@@ -55,18 +55,20 @@
     "pure-imaginary-number",
     "imaginary-unit",
     "imaginary-solution",
-    "square-root-of-a-negative-number"
+    "square-root-of-a-negative-number",
+    "real-number"
   ],
   "sources": [
     {
       "type": "wikipedia-langlink",
       "ja": "虚数",
-      "en": "Imaginary number"
+      "en": "Imaginary number",
+      "note": "英語版の記事は bi（実数と i の積）の意味。日本語版は b ≠ 0 の a + bi"
     },
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "Complex Numbers（imaginary number）"
+      "note": "2.4 Complex Numbers（pure imaginary number）"
     },
     {
       "type": "reference",
@@ -77,6 +79,7 @@
     {
       "type": "reference",
       "title": "大学入試センター 平成27年度 大学入試センター試験 本試験 数学Ⅱ（問題）",
+      "url": "https://web.archive.org/web/20160601/https://www.dnc.ac.jp/albums/abm.php?f=abm00004812.pdf&n=2701-0501+suugaku2.pdf",
       "note": "1 + 2i を虚数と呼ぶ"
     },
     {
@@ -90,6 +93,16 @@
       "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
       "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
       "note": "Appendix A Complex Numbers（nonreal complex number）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "3.1 Complex Numbers（imaginary number: bi）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "8.8 Use the Complex Number System（imaginary number: a + bi, b ≠ 0）"
     }
   ],
   "confidence": "likely",

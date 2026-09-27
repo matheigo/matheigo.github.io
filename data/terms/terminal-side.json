@@ -47,13 +47,16 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "OpenStax Algebra and Trigonometry（7.1 Angles）は、固定した半直線を initial side、回転させた半直線を terminal side と呼ぶ。「動径 OP の表す角」は the angle whose terminal side is OP。"
+    "OpenStax Algebra and Trigonometry（7.1 Angles）は、固定した半直線を initial side、回転させた半直線を terminal side と呼ぶ。「動径 OP の表す角」は the angle whose terminal side is OP。",
+    "日本語版 Wikipedia「半径」（「動径」はここへの転送）と「極座標系」は、極座標の r（原点からの距離）も動径と呼ぶ。この r は OpenStax Calculus Volume 2（7.3 Polar Coordinates）では radial coordinate で、terminal side ではない（エントリ polar-coordinates）。"
   ],
   "related": [
     "initial-side",
     "general-angle",
     "reference-angle",
-    "coterminal-angle"
+    "coterminal-angle",
+    "quadrantal-angle",
+    "polar-coordinates"
   ],
   "sources": [
     {
@@ -72,6 +75,23 @@
       "title": "大学入試センター 令和4年度 大学入学共通テスト 本試験 数学Ⅱ（問題）",
       "url": "https://web.archive.org/web/20230601/https://www.dnc.ac.jp/albums/abm.php?d=67&f=abm00000831.pdf&n=R4%E5%95%8F%E9%A1%8C_%E5%95%8F%E9%A1%8C_%E6%95%B0%E5%AD%A6%E2%85%A1.pdf",
       "note": "第3問: β の動径は第…象限にあり、角の動径は x 軸の正の部分を始線とする"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「半径」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%BE%84",
+      "note": "「動径」はここへの転送。極座標の r（座標系の動径）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「極座標系」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%A5%B5%E5%BA%A7%E6%A8%99%E7%B3%BB",
+      "note": "1 個の動径 r と n − 1 個の偏角"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "7.3 Polar Coordinates（radial coordinate、the terminal ray of the angle）"
     }
   ],
   "confidence": "likely",

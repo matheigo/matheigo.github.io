@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "OpenStax Elementary Algebra（Simplify Rational Expressions）は rational expression を多項式の商 p/q（q ≠ 0）と定義し、−13/42 のような数の分数も例に挙げる。日本語版 Wikipedia「数式」は分数式を「文字の分母を含む式」とし、多項式の商全体は有理式と呼ぶ（「多項式」。「部分分数分解」は有理式を分数式とも呼ぶ）。英語の rational expression は、この有理式に当たる。",
+  "mapping_note": "OpenStax Elementary Algebra（Simplify Rational Expressions）は rational expression を多項式の商 p/q（q ≠ 0）と定義し、−13/42 のような数の分数も例に挙げる。日本語版 Wikipedia「数式」は分数式を「文字の分母を含む式」とし、多項式の商全体は有理式と呼ぶ（「多項式」。「部分分数分解」は有理式を分数式とも呼ぶ）。学習指導要領解説（数学II）は多項式の除法と分数式の四則計算を分けて扱い、「簡単な場合」を分数式の分母の次数が二次程度までのものとする。英語の rational expression は、この有理式に当たる。",
   "domains": [
     "algebra"
   ],
@@ -28,7 +28,7 @@
     ]
   },
   "definition_ja": "分母に文字を含む式で、整式を整式で割った形のもの。約分・通分して計算する。",
-  "definition_en": "An expression that is a quotient of two polynomials with a nonzero denominator, such as (x + 1)/(x − 2); simplified by canceling and by common denominators.",
+  "definition_en": "An expression that is a quotient of two polynomials with a nonzero denominator, such as (x + 1)/(x − 2); such expressions are simplified by canceling common factors and are added or subtracted over a common denominator.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -52,7 +52,9 @@
     "reduce",
     "find-a-common-denominator",
     "rational-function",
-    "rational-equation"
+    "rational-equation",
+    "numerator",
+    "denominator"
   ],
   "sources": [
     {
@@ -87,7 +89,7 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "数学II いろいろな式: 多項式の除法や分数式の四則計算"
+      "note": "数学II いろいろな式: 多項式の除法や分数式の四則計算（簡単な場合は分数式の分母の次数が二次程度まで）"
     }
   ],
   "confidence": "likely",

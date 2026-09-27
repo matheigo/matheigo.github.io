@@ -15,7 +15,8 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
-    "algebra"
+    "algebra",
+    "sequences"
   ],
   "level": {
     "jp": [
@@ -29,7 +30,7 @@
       "Calculus II"
     ]
   },
-  "definition_ja": "展開式や数列の項を、番号（k や n）を使って 1 つの式で表したもの。二項定理では nCr aⁿ⁻ʳ bʳ。",
+  "definition_ja": "数列や展開式の項を、番号（n や r）を使って 1 つの式で表したもの。二項定理では nCr aⁿ⁻ʳ bʳ。",
   "definition_en": "A formula for a typical term of a sequence or an expansion in terms of its index: aₙ as a formula in n for a sequence, C(n, r) aⁿ⁻ʳ bʳ for a binomial expansion.",
   "latex": "{}_n\\mathrm{C}_r\\, a^{n-r} b^r",
   "spoken_en": null,
@@ -47,9 +48,9 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "数列の一般項 aₙ は、英語でも general term（または the nth term、the formula for the nth term）。",
+    "数列の一般項 aₙ は、OpenStax Algebra and Trigonometry（13.1）・Intermediate Algebra（12.1）でも general term (nth term)。n の式そのものは explicit formula（漸化式の recursive formula と対。エントリ find-the-nth-term）とも呼ぶ。",
     "二項定理の展開式の一般項 ₙCᵣ aⁿ⁻ʳ bʳ を、OpenStax Algebra and Trigonometry（Binomial Theorem）は the (r+1)th term of the binomial expansion、OpenStax Intermediate Algebra（Binomial Theorem）は the (r + 1)st term と書き、general term とは呼ばない。",
-    "用例コーパスの書き言葉は OpenStax Intermediate Algebra が中心で、次が OpenStax Algebra and Trigonometry（数列と二項定理）。"
+    "用例コーパスの書き言葉は OpenStax Intermediate Algebra が中心で、次が OpenStax Algebra and Trigonometry（数列と級数）。"
   ],
   "related": [
     "expansion",

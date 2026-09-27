@@ -18,6 +18,7 @@
   ],
   "level": {
     "jp": [
+      "数I",
       "数A"
     ],
     "us": [
@@ -74,6 +75,12 @@
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
       "note": "4.22 Concurrence and Constructions・6.2 Identify Circle Components（externally tangent）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 正弦定理: 三角形に外接する円"
     }
   ],
   "confidence": "likely",
@@ -89,13 +96,13 @@
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 circumscribed about（Geometry 7.4 Quadrilaterals in Circles・計 1 件）。register は主張しない。",
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: mapping near → exact（near の理由は 2 円が外接する（externally tangent）という日本語の多義で、多義は near の理由にしない。対の be-inscribed-in は exact）。見直す点: mapping_note を pitfalls に移したこと（IM Geometry の用語集の circumscribed by の向き、CK-12 Geometry 4.22・6.2）、flag が corpus-reference-fallback（IM Geometry 7.4）になったこと、0 件の alt circumscribed around を外したこと。次の監査のセッションが見直す。",
       "raised": "2026-09-27"
     },
     {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: mapping near → exact（near の理由は 2 円が外接する（externally tangent）という日本語の多義で、多義は near の理由にしない。対の be-inscribed-in は exact）。見直す点: mapping_note を pitfalls に移したこと（IM Geometry の用語集の circumscribed by の向き、CK-12 Geometry 4.22・6.2）、flag が corpus-reference-fallback（IM Geometry 7.4）になったこと、0 件の alt circumscribed around を外したこと。次の監査のセッションが見直す。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 circumscribed about（Geometry 7.4 Quadrilaterals in Circles・計 1 件）。register は主張しない。",
       "raised": "2026-09-27"
     }
   ]

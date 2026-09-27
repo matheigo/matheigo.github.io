@@ -41,8 +41,8 @@
       "register": "spoken"
     },
     {
-      "en": "Use the rules of probability to find P(A or B).",
-      "ja": "確率の基本性質を使って P(A または B) を求めよ。",
+      "en": "If A and B are mutually exclusive, use the rules of probability to find P(A or B).",
+      "ja": "A と B が互いに排反のとき、確率の基本性質を使って P(A または B) を求めよ。",
       "register": "written"
     }
   ],
@@ -84,7 +84,13 @@
       "type": "reference",
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Probability_axioms",
-      "note": "記事「Probability axioms」（First axiom: non-negativity、節 Consequences）"
+      "note": "記事「Probability axioms」（First axiom: non-negativity、節 Elementary consequences）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学 (教科)」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6_%28%E6%95%99%E7%A7%91%29",
+      "note": "数学A: 確率の基本性質"
     }
   ],
   "confidence": "likely",
@@ -111,13 +117,13 @@
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 7 件（10 未満））。見出しは AP Statistics の CED の呼び方 rules of probability（topic 2.8・topic 2.10）。register は主張しない。",
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: mapping exact → near（見出しの rules of probability は CED（Unit 2・topic 2.8・2.10）では確率を求める規則全体で、学習指導要領解説（数学A）の確率の性質や法則 4 つより広い）。見直す点: mapping_note の CED・OpenStax・解説の範囲の書き方、確率の公理の pitfalls（公理は P(A) ≥ 0）、ja.alt 確率の公理を外したこと。次の監査のセッションが見直す。",
       "raised": "2026-09-27"
     },
     {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: mapping exact → near（見出しの rules of probability は CED（Unit 2・topic 2.8・2.10）では確率を求める規則全体で、学習指導要領解説（数学A）の確率の性質や法則 4 つより広い）。見直す点: mapping_note の CED・OpenStax・解説の範囲の書き方、確率の公理の pitfalls（公理は P(A) ≥ 0）、ja.alt 確率の公理を外したこと。次の監査のセッションが見直す。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 7 件（10 未満））。見出しは AP Statistics の CED の呼び方 rules of probability（topic 2.8・topic 2.10）。register は主張しない。",
       "raised": "2026-09-27"
     }
   ]

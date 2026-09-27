@@ -25,7 +25,8 @@
     ],
     "us": [
       "Algebra 2",
-      "Discrete Math"
+      "Discrete Math",
+      "Geometry"
     ]
   },
   "definition_ja": "同じ場合を 2 回以上数えてしまい、個数を実際より多く数えること。場合分けの重なりや、並べ方の入れ替えを別々に数えたときに起こる。",
@@ -52,7 +53,7 @@
   "collocations": [],
   "pitfalls": [
     "英語は double count（名詞形 double counting）か overcount（多く数えすぎる）という動詞で言う。「ダブり」のような重なりそのものは overlap。",
-    "書き言葉では、IM Geometry（8.6 The Addition Rule）や Levin（3.8 Advanced Counting Using PIE）のように double counting や is counted twice と書く。",
+    "書き言葉では、IM Geometry（8.6 The Addition Rule）や Levin（3.3・3.8）のように double counting や is counted twice と書く。",
     "組合せ論の double counting は「同じものを 2 通りの方法で数えて等式を示す証明法」の名前でもある（英語版 Wikipedia「Double counting (proof technique)」）。数えすぎのミスとは別の意味。"
   ],
   "related": [
@@ -70,7 +71,7 @@
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "3.8 Advanced Counting Using PIE（double counting、overcount）"
+      "note": "3.3（counted twice）・3.8 Advanced Counting Using PIE（double counting、overcount）"
     },
     {
       "type": "reference",

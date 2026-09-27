@@ -29,8 +29,8 @@
       "Precalculus"
     ]
   },
-  "definition_ja": "実数係数の方程式が虚数解 a + bi をもつとき、それと共役な a − bi も解になること。またその 2 つの解。",
-  "definition_en": "For an equation with real coefficients, the fact that if a + bi is a root, so is a − bi; also the two roots themselves.",
+  "definition_ja": "実数係数の方程式の、互いに共役な 2 つの虚数解 a + bi と a − bi。係数が実数なら、a + bi が解のとき a − bi も解になる。",
+  "definition_en": "Two roots a + bi and a − bi (b ≠ 0) of an equation with real coefficients that are complex conjugates of each other; with real coefficients, if a + bi is a root, so is a − bi.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -91,6 +91,11 @@
       "title": "日本語版 Wikipedia「四次方程式」",
       "url": "https://ja.wikipedia.org/wiki/%E5%9B%9B%E6%AC%A1%E6%96%B9%E7%A8%8B%E5%BC%8F",
       "note": "共役複素数解"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "3.6 Zeros of Polynomial Functions（Complex Conjugate Theorem）"
     }
   ],
   "confidence": "likely",

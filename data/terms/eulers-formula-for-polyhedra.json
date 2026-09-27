@@ -3,7 +3,9 @@
   "ja": {
     "term": "オイラーの多面体定理",
     "reading": "おいらーのためんたいていり",
-    "alt": []
+    "alt": [
+      "オイラーの多面体公式"
+    ]
   },
   "en": {
     "term": "Euler's theorem",
@@ -17,7 +19,8 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
-    "geometry"
+    "geometry",
+    "discrete"
   ],
   "level": {
     "jp": [
@@ -29,7 +32,7 @@
     ]
   },
   "definition_ja": "凸多面体の頂点の数を V、辺の数を E、面の数を F とすると V − E + F = 2 が成り立つという定理。連結な平面グラフでも同じ式が成り立つ。",
-  "definition_en": "The numbers of vertices V, edges E, and faces F of any convex polyhedron satisfy V − E + F = 2; the same equation holds for a connected planar graph.",
+  "definition_en": "If a convex polyhedron has V vertices, E edges, and F faces, then V − E + F = 2; a connected planar graph satisfies the same equation.",
   "latex": "V - E + F = 2",
   "spoken_en": "V minus E plus F equals 2",
   "examples": [
@@ -46,8 +49,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "Euler's theorem は整数論の定理（a^φ(n) ≡ 1 (mod n)、オイラーの定理）の名前でもあり、Euler's formula だけだと e^(iθ) = cos θ + i sin θ（オイラーの公式）の名前でもある。多面体の定理だとはっきりさせるときは、英語版 Wikipedia「Euler characteristic」（節 Polyhedra）の Euler's polyhedron formula と言う。",
-    "CK-12 Geometry（9.1 Polyhedrons）は F + V = E + 2 の形で Euler's Theorem と呼ぶ。Levin（2.3 Planar Graphs）は平面グラフの定理 Euler's formula for planar graphs（v − e + f = 2）を多面体にも当てる。",
+    "Euler's theorem は整数論の定理（a^φ(n) ≡ 1 (mod n)。英語版 Wikipedia「Euler's theorem」）の名前でもあり、Euler's formula は e^(iθ) = cos θ + i sin θ（Nicholson Appendix A・OpenStax Calculus Volume 2・3）の名前でもある。英語版 Wikipedia「Euler characteristic」（節 Polyhedra）は多面体の定理を Euler's polyhedron formula と呼ぶ。",
+    "CK-12 Geometry（9.1 Polyhedrons）は F + V = E + 2 の形で Euler's Theorem と呼ぶ。Levin（2.3 Planar Graphs）は平面グラフの定理を Euler's formula（定理の題は Euler's formula for planar graphs）と呼び、多面体にも当てる。",
     "頂点・辺・面の数は number of vertices ／ edges ／ faces。vertex の複数形は vertices。"
   ],
   "related": [
@@ -59,7 +62,8 @@
     "polyhedron",
     "face",
     "edge",
-    "planar-graph"
+    "planar-graph",
+    "regular-polyhedron"
   ],
   "sources": [
     {
@@ -79,6 +83,34 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Euler_characteristic",
       "note": "記事「Euler characteristic」の節 Polyhedra（Euler's polyhedron formula を太字。数学カテゴリから 4 段）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Euler%27s_theorem",
+      "note": "記事「Euler's theorem」（整数論の定理）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "Appendix A Complex Numbers（Euler's formula e^(iθ) = cos θ + i sin θ）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "6.4 Working with Taylor Series（Euler's formula）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3",
+      "note": "7.1 Second-Order Linear Equations（Euler's formula）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「多面体」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A4%9A%E9%9D%A2%E4%BD%93",
+      "note": "節 オイラーの多面体定理（オイラーの多面体公式）"
     }
   ],
   "confidence": "likely",
@@ -99,13 +131,13 @@
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは CK-12 の呼び方 Euler's theorem: f | into Euler's theorem | Euler's theorem to solve | for v in Euler's theorem | table using Euler's theorem | called Euler's theorem（CK-12 Geometry 9.1 Polyhedrons・計 6 件）。register は主張しない。",
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: 見出し Euler's formula for polyhedra（どの資料にも無い言い方。前の件数は Levin の Euler's formula for planar graphs）→ CK-12 Geometry 9.1 Polyhedrons の Euler's theorem（③ で CK-12 の段は Levin より先。数論の Euler's theorem と分けるため CK-12 の文の形で数える）。見直す点: 形の数え方、Euler's theorem・Euler's formula の別の意味の pitfalls、英語版 Wikipedia「Euler characteristic」の Euler's polyhedron formula と Levin の名前を alt にしたこと、例文、level.us の Geometry。次の監査のセッションが見直す。",
       "raised": "2026-09-27"
     },
     {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: 見出し Euler's formula for polyhedra（どの資料にも無い言い方。前の件数は Levin の Euler's formula for planar graphs）→ CK-12 Geometry 9.1 Polyhedrons の Euler's theorem（③ で CK-12 の段は Levin より先。数論の Euler's theorem と分けるため CK-12 の文の形で数える）。見直す点: 形の数え方、Euler's theorem・Euler's formula の別の意味の pitfalls、英語版 Wikipedia「Euler characteristic」の Euler's polyhedron formula と Levin の名前を alt にしたこと、例文、level.us の Geometry。次の監査のセッションが見直す。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは CK-12 の呼び方 Euler's theorem: f | into Euler's theorem | Euler's theorem to solve | for v in Euler's theorem | table using Euler's theorem | called Euler's theorem（CK-12 Geometry 9.1 Polyhedrons・計 6 件）。register は主張しない。",
       "raised": "2026-09-27"
     }
   ]
