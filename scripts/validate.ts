@@ -139,6 +139,7 @@ const SAME_EN_TERM: [string, string][] = [
   ["divisor", "factor"], // 約数 ／ 因数（英語はどちらも factor）
   ["estimation", "bound-estimate"], // 推定（統計） ／ 評価する（値の範囲をはさむ）
   ["general-angle", "coterminal-angle"], // 一般角（英語に名前がなく coterminal angles） ／ 共終角（動径が同じ角どうし）
+  ["eulers-formula", "eulers-formula-for-polyhedra"], // オイラーの公式 e^(iθ) ／ オイラーの多面体定理（英語はどちらも Euler's formula。監査 9 の前の決定 1）
 ];
 const intendedHomonym = (a: string, b: string) =>
   SAME_EN_TERM.some(([x, y]) => (x === a && y === b) || (x === b && y === a));
