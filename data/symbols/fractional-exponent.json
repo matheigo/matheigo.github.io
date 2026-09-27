@@ -59,5 +59,17 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-27"
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: 1 つ目の読み a to the m over n → a to the one half（読みの形 to the * over * が x⁴/4 などを数えていた。分子を数・文字に絞ると ② 67 対 54 で、どちらも standard、頻度順）。見直す点: SYMBOL_PATTERNS の新しい形（to the one over * ほか）、latex に足した a^{1/2}、2 つの読みの並び、notes[1] の OpenStax Algebra and Trigonometry。次の監査のセッションが見直す。",
+      "raised": "2026-09-27"
+    }
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-09-27",
+    "human": null
   }
 }
