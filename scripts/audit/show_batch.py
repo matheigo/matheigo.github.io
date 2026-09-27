@@ -117,7 +117,8 @@ def show(collection, id_, copy, jp, us, ref=None):
     for r in (ref or {}).get((collection, id_), []):
         refs = "、".join(f"{l} {n}" for l, n in r["refs"].items())
         kind = "REF（関連）" if r["judged"].get("related") else "REF"
-        p(f"  !{kind} {r['name']}（{refs}）: {r['judged'].get('note', '')}")
+        # the match is by name only: the audit reads the reference's passage and checks that the theorem's content is the same (audit 5, decision 1)
+        p(f"  !{kind} {r['name']}（{refs}）: {r['judged'].get('note', '')}  ※名前の一致は手がかり。参照のその箇所を読んで中身が同じかを確かめる")
 
 
 def main():

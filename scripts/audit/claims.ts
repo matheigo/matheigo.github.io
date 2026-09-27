@@ -20,7 +20,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { ROOT, loadCollection, type Collection } from "../lib/load";
+import { ROOT, loadCollection, localDate, type Collection } from "../lib/load";
 import { CORPUS_WORDS, REFERENCE_WORDS, bodyTexts, sentences } from "../lib/corpus-count";
 
 /** Fields where the claims live: the notes, not the definitions or the examples. */
@@ -92,7 +92,7 @@ function main() {
 
   const outDir = path.join(ROOT, "audits", "checks");
   fs.mkdirSync(outDir, { recursive: true });
-  const today = new Date().toISOString().slice(0, 10);
+  const today = localDate(); // the Mac's own date, as the commits and the Python checks (Phase 5 監査 5 の決定 8)
   const esc = (s: string) => s.replace(/\|/g, "\\|").replace(/\n/g, " ");
   const count = (l: Claim[]) =>
     `${new Set(l.map((x) => `${x.collection}/${x.id}`)).size} 項目・${l.length} 文`;

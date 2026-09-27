@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { cedNoteGroups, checkCedNote, sectionsIn, wordPattern } from "../scripts/lib/ced-notes";
+import { cedNoteGroups, cedSectionTexts, checkCedNote, sectionsIn, wordPattern } from "../scripts/lib/ced-notes";
 
 // DECISIONS, Phase 5 監査 セッション 2, H-3: a CED source's note ("Topic 5.4（first
 // derivative test）") is checked against the CED's own text
@@ -84,5 +84,34 @@ describe("checkCedNote", () => {
   it("reads a unit without の概要 as the opener and its topics", () => {
     expect(checkCedNote("Unit 5（concavity）", ced)).toEqual([]);
     expect(checkCedNote("Unit 9（first derivative test）", ced)).toEqual([{ word: "first derivative test", sections: ["unit9:*"], noSuchSection: false }]);
+  });
+});
+
+// Phase 5 監査 5 の決定 5 and 9 (audit 4 report H-7, audit 3 report H-6): validate and the audit's ced tool
+// read the CED through one function, which cuts it as cedSections does and keeps the CED's own spelling
+// next to the normalized one, so "scatterplot" in a note is found where the CED writes it in one word
+describe("cedSectionTexts", () => {
+  const ced = [
+    "front matter",
+    "UNIT 1",
+    "Exploring One-Variable Data",
+    "TOPIC 1.1",
+    "A scatterplot shows two variables.",
+    "TOPIC 1.2",
+    "Boxplots here.",
+    "Exam Overview",
+    "the exam",
+  ].join("\n");
+
+  it("cuts the CED into the sections validate names (front, unit openers, topics, exam)", () => {
+    expect([...cedSectionTexts(ced).keys()]).toEqual(["front", "unit1", "1.1", "1.2", "exam"]);
+  });
+
+  it("finds a note's word in the CED's own spelling and in the normalized one", () => {
+    const m = cedSectionTexts(ced);
+    expect(checkCedNote("Topic 1.1（scatterplot）", m)).toEqual([]);
+    expect(checkCedNote("Topic 1.1（scatter plot）", m)).toEqual([]);
+    expect(checkCedNote("Topic 1.2（boxplot ／ box plot）", m)).toEqual([]);
+    expect(checkCedNote("Topic 1.2（scatter plot）", m)).toHaveLength(1);
   });
 });

@@ -2,6 +2,11 @@ import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import {
+  FORM_OR,
+  GAP,
+  SYMBOL_PATTERNS,
+  TERM_FORMS,
+  containsWording,
   balance,
   bookSections,
   candidatesOf,
@@ -46,6 +51,7 @@ import {
   type CorpusDoc,
   type ReferenceHits,
 } from "../scripts/corpus/lib";
+import { PHRASE_FORMS } from "../scripts/corpus/phrase-forms";
 import { micaseEvent, parseChat, speakerClass, wordCount } from "../scripts/corpus/micase";
 import { MSE_SKIP, mseCount, mseLeader, mseQueries, needsMse } from "../scripts/corpus/mse";
 
@@ -1273,5 +1279,94 @@ describe("Math Stack Exchange counts for the student phrases (mse.ts)", () => {
     expect(needsMse("instructor", {}, w)).toBe(false);
     expect(needsMse("classroom", {}, w)).toBe(false);
     expect(needsMse("written", {}, w)).toBe(false);
+  });
+});
+
+// Phase 5 監査 5 の決定 2 (audit 4 report H-2): every "!w" mark of every counted form works, and in the
+// direction it is written. factorization's "factorization !prime" had the mark after the word, so
+// "prime factorization" was still counted; standard-deviation-sigma's "!u" / "!matrix" stood after
+// sigma while U and matrix stand before it (u sigma v transpose). The tests below build, for each
+// alternative of each form, the form itself and the form with each excluded word on the marked side and
+// on the other side, so a mark facing the wrong way fails here.
+describe('every "!w" mark of TERM_FORMS, PHRASE_FORMS and SYMBOL_PATTERNS', () => {
+  const marked = (forms: Record<string, Record<string, string>>) =>
+    Object.entries(forms).flatMap(([id, byWording]) =>
+      Object.entries(byWording).flatMap(([wording, form]) =>
+        form
+          .split(FORM_OR)
+          .filter((alt) => /(^|\s)!/.test(alt))
+          .map((alt) => ({ id, wording, alt })),
+      ),
+    );
+  const parse = (alt: string) => {
+    const toks = alt.trim().split(/\s+/);
+    let i = 0;
+    while (i < toks.length && toks[i].startsWith("!")) i++;
+    let j = toks.length;
+    while (j > i && toks[j - 1].startsWith("!")) j--;
+    return { before: toks.slice(0, i).map((t) => t.slice(1)), body: toks.slice(i, j), after: toks.slice(j).map((t) => t.slice(1)) };
+  };
+  type Case = { id: string; wording: string; alt: string; count: (t: string, p: string) => number; filler: string };
+  const cases: Case[] = [
+    ...marked(TERM_FORMS).map((c) => ({ ...c, count: countTerm, filler: "it" })),
+    ...marked(PHRASE_FORMS).map((c) => ({ ...c, count: countTerm, filler: "it" })),
+    ...marked(SYMBOL_PATTERNS).map((c) => ({ ...c, count: countPattern, filler: "x" })),
+  ];
+  const sentence = (c: Case) => parse(c.alt).body.map((t) => (GAP.test(t) || t === "*" ? c.filler : t)).join(" ");
+
+  it("has marks at the head or the tail of a form only (a mark in the middle would be read as a word)", () => {
+    expect(cases.length).toBeGreaterThan(50);
+    for (const c of cases) expect(parse(c.alt).body.some((t) => t.startsWith("!")), `${c.id}: ${c.alt}`).toBe(false);
+  });
+
+  it("counts the form itself once", () => {
+    for (const c of cases) expect(c.count(normalize(sentence(c)), c.alt), `${c.id}: ${c.alt}`).toBe(1);
+  });
+
+  it("does not count the form with an excluded word on the marked side", () => {
+    for (const c of cases) {
+      const { before, after } = parse(c.alt);
+      const text = sentence(c);
+      for (const w of before) expect(c.count(normalize(`${w} ${text}`), c.alt), `${c.id}: !${w} before "${text}"`).toBe(0);
+      for (const w of after) expect(c.count(normalize(`${text} ${w}`), c.alt), `${c.id}: "${text}" !${w} after`).toBe(0);
+    }
+  });
+
+  it("still counts the form with that word on the other side (a mark faces one way)", () => {
+    for (const c of cases) {
+      const { before, after } = parse(c.alt);
+      const text = sentence(c);
+      for (const w of before) if (!after.includes(w)) expect(c.count(normalize(`${text} ${w}`), c.alt), `${c.id}: "${text}" ${w} (mark is before)`).toBe(1);
+      for (const w of after) if (!before.includes(w)) expect(c.count(normalize(`${w} ${text}`), c.alt), `${c.id}: ${w} "${text}" (mark is after)`).toBe(1);
+    }
+  });
+
+  it("keeps U Σ Vᵀ and the matrix Σ out of the standard deviation's sigma, on the side they stand", () => {
+    const form = SYMBOL_PATTERNS["standard-deviation-sigma"].sigma;
+    expect(countPattern(normalize("a equals u sigma v transpose"), form)).toBe(0);
+    expect(countPattern(normalize("this diagonal matrix sigma"), form)).toBe(0);
+    expect(countPattern(normalize("the mean plus one sigma"), form)).toBe(1);
+  });
+});
+
+// Phase 5 監査 5 の決定 3 (audit 4 report H-3): a collocation built on the headword (use the quadratic
+// formula) is not another way to say it and does not compete with it: it is not a candidate.
+describe("containsWording and the candidates (a collocation on the headword is not one)", () => {
+  it("finds the headword's words in order, and the pieces of a blank each in order", () => {
+    expect(containsWording("use the quadratic formula", "quadratic formula")).toBe(true);
+    expect(containsWording("plug into the quadratic formula", "quadratic formula")).toBe(true);
+    expect(containsWording("write the polynomial in descending order", "write … in descending order")).toBe(true);
+    expect(containsWording("in descending order", "write … in descending order")).toBe(false);
+    expect(containsWording("the discriminant is negative", "quadratic formula")).toBe(false);
+    expect(containsWording("quadratic formulas", "quadratic formula")).toBe(true);
+  });
+
+  it("leaves a collocation that contains the headword out of the candidates, and keeps the others", () => {
+    const got = candidatesOf("terms", {
+      id: "quadratic-formula",
+      en: { term: "quadratic formula", alt: [] },
+      collocations: [{ en: "use the quadratic formula" }, { en: "the discriminant is negative" }],
+    });
+    expect(got).toEqual(["quadratic formula", "the discriminant is negative"]);
   });
 });

@@ -21,12 +21,12 @@ import addFormats from "ajv-formats";
 import katex from "katex";
 import fs from "node:fs";
 import path from "node:path";
-import { checkCedNote } from "./lib/ced-notes.js";
+import { cedSectionTexts, checkCedNote } from "./lib/ced-notes.js";
 import { bodyTexts, corpusCountSentences } from "./lib/corpus-count.js";
 import { PROBLEM_FLAGS, RECORD_FLAGS, isProblemFlag } from "./lib/flags.js";
 import { COLLECTIONS, ROOT, loadAll, readSchema, type Collection, type Entry } from "./lib/load.js";
 import { CLAIM_FIELDS, unverifiableSentences } from "./lib/wording.js";
-import { cedSections, cedText } from "./corpus/lib.js";
+
 
 const errors: string[] = [];
 const warnings: string[] = [];
@@ -84,9 +84,7 @@ const ceds: Partial<Record<keyof typeof CED_FILES, Map<string, string>>> = {};
 for (const [k, f] of Object.entries(CED_FILES) as [keyof typeof CED_FILES, string][]) {
   const file = path.join(ROOT, "corpus", "ref", f);
   if (!fs.existsSync(file)) continue;
-  const m = new Map<string, string>();
-  for (const [name, text] of cedSections(fs.readFileSync(file, "utf8"))) m.set(name, (m.get(name) ?? "") + " " + cedText(text));
-  ceds[k] = m;
+  ceds[k] = cedSectionTexts(fs.readFileSync(file, "utf8"));
 }
 const isCedSource = (src: { type?: unknown; title?: unknown }) =>
   src.type === "reference" && typeof src.title === "string" && /Course and Exam Description|(?<![A-Za-z])CED(?![A-Za-z])/.test(src.title);
@@ -194,6 +192,21 @@ for (const collection of COLLECTIONS) {
         warn(where, `en.term "${en}" already used by ${other}`);
       }
       seenEn.set(en, where);
+
+      // one wording twice among en.term / en.alt / en.variants is an error (Phase 5 監査 3 の H-4、監査 5 の決定 9):
+      // decide would count it twice, and the site would show it twice. en.term itself may stand once in
+      // en.variants: a ② 併記 lists every wording there in frequency order, the headword with its register.
+      const enFields = data.en as { term: string; alt?: string[]; variants?: { term: string }[] };
+      const key = (w: string) => w.trim().toLowerCase();
+      const listedAt = new Map<string, string>([[key(enFields.term), "en.term"]]);
+      const listed = (w: string, at: string, allowTerm: boolean) => {
+        const prev = listedAt.get(key(w));
+        if (prev === "en.term" && allowTerm) listedAt.set(key(w), at);
+        else if (prev) err(where, `en "${w}" is listed twice (${prev} and ${at})`);
+        else listedAt.set(key(w), at);
+      };
+      (enFields.alt ?? []).forEach((w, i) => listed(w, `en.alt[${i}]`, false));
+      (enFields.variants ?? []).forEach((v, i) => listed(v.term, `en.variants[${i}]`, true));
     }
 
     // LaTeX --------------------------------------------------------------

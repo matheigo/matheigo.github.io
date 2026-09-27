@@ -1215,7 +1215,9 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   // sigma notation is Σ, and sigma squared is the variance entry; the diagonal matrix Σ of
   // MIT 18.06 is kept out where a following word shows it (sigma transpose)
   "standard-deviation-sigma": {
-    sigma: "!capital sigma !notation !transpose !inverse !plus !matrix !one !two !r !n !v !u !squared",
+    // Phase 5 監査 5 の決定 2: the U of "U Σ Vᵀ" (u sigma v transpose) and "the matrix Σ" stand before sigma, so
+    // !u and !matrix are marks before the word (they stood after it and excluded nothing); Σ⁺ (sigma plus sigma) on both sides
+    sigma: "!capital !u !matrix !plus sigma !notation !transpose !inverse !plus !one !two !r !n !v !squared",
     "the standard deviation of X": "the standard deviation of *",
     "sigma sub X": "sigma sub x | sigma x",
     "sigma of X": "sigma of x",
@@ -2077,13 +2079,39 @@ export function headsOf(v: Verdict): string[] {
 }
 
 /**
+ * Does `a` contain the wording `lead`: its words (stemmed) in order, and when
+ * `lead` has a "…" blank, the pieces on either side of it each in order ("write
+ * the polynomial in descending order" contains "write … in descending order")?
+ * A collocation built on the headword (use the quadratic formula) is not
+ * another way to say it and never competes with it (Phase 5 監査 5 の決定 3):
+ * candidatesOf leaves such a collocation out.
+ */
+export function containsWording(a: string, lead: string): boolean {
+  const x = ` ${wordsOf(a).map(stem).join(" ")} `;
+  const pieces: string[][] = [[]];
+  for (const w of lead.trim().split(/\s+/)) {
+    if (GAP.test(w)) pieces.push([]);
+    else pieces[pieces.length - 1].push(w);
+  }
+  const parts = pieces.map((p) => wordsOf(p.join(" ")).map(stem).join(" ")).filter(Boolean);
+  if (parts.length === 0) return false;
+  let from = 0;
+  for (const part of parts) {
+    const i = x.indexOf(` ${part} `, from);
+    if (i < 0) return false;
+    from = i + part.length + 1;
+  }
+  return true;
+}
+
+/**
  * Does `a` contain the wording `lead` and add to it? "the integrand is odd"
  * extends "integrand": a collocation built on the headword, not another way
  * to say it, so it is never set side by side with it.
  */
 function extendsWording(a: string, lead: string): boolean {
   const [x, y] = [wordsOf(a).map(stem).join(" "), wordsOf(lead).map(stem).join(" ")];
-  return x !== y && ` ${x} `.includes(` ${y} `);
+  return x !== y && containsWording(a, lead);
 }
 
 /** Removes one source from every candidate's tally. */
@@ -3059,7 +3087,11 @@ export function candidatesOf(collection: string, entry: Record<string, unknown>)
   if (collection === "terms") {
     const en = entry.en as { term: string; alt?: string[]; variants?: { term: string }[] };
     const words = [en.term, ...(en.alt ?? []), ...(en.variants ?? []).map((v) => v.term)];
-    for (const c of (entry.collocations as { en: string }[] | undefined) ?? []) words.push(c.en);
+    // A collocation built on the headword (use the quadratic formula) is not another way to say it and
+    // must not compete with it (Phase 5 監査 5 の決定 3): it is not a candidate and is not counted.
+    for (const c of (entry.collocations as { en: string }[] | undefined) ?? []) {
+      if (!containsWording(c.en, en.term)) words.push(c.en);
+    }
     out.push(...words.map((w) => countedAs(collection, entry.id as string, w)));
   } else if (collection === "symbols") {
     for (const s of (entry.spoken_en as { text: string }[]) ?? []) out.push(countedAs(collection, entry.id as string, s.text));

@@ -21,6 +21,12 @@ function word / verb), up to 5, plus an "of / for …" tail (Fundamental Theorem
 Sines, Addition Property of Equality, Test for Divergence), and "converse of the" in front when the
 text has it. "Theorem 2.3" (a numbered theorem of Nicholson / Levin) is not a name. An all-lowercase
 name is listed when a reference uses it twice or more; a capitalized one from one use.
+
+A match is a match of names, not of concepts (audit 4 report H-1, audit 5 decision 1): CK-12 Geometry
+4.21's Angle Bisector Theorem is another theorem (a point on the bisector is equidistant from the sides),
+so before a name becomes a headword or an en.alt the audit reads the reference's passage (refgrep.py us)
+and checks that the theorem's content is the same; a same-named other theorem is judged {"skip": true}
+with the reason, and the entry's pitfalls mention it.
 """
 import collections
 import datetime

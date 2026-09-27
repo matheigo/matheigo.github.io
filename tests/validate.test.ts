@@ -80,6 +80,30 @@ describe("validate.ts", () => {
     flags: [{ code, note: "fixture" }],
   });
 
+  // Phase 5 監査 5 の決定 9 (audit 3 report H-4): one wording may not sit in two of en.term, en.alt, en.variants
+  it("refuses a wording listed twice among en.term, en.alt and en.variants", () => {
+    const file = path.join(ROOT, "data", "terms", "zz-twice-fixture.json");
+    try {
+      fs.writeFileSync(
+        file,
+        JSON.stringify({
+          ...verifiedFixture("corpus-reference-fallback"),
+          id: "zz-twice-fixture",
+          ja: { term: "検証用の二重登録", reading: "けんしょうようのにじゅうとうろく" },
+          en: { term: "twice fixture term", alt: ["Twice fixture term"], variants: [{ term: "another wording", register: "spoken" }, { term: "another wording", register: "written" }] },
+          confidence: "likely",
+          flags: undefined,
+        }),
+      );
+      const { code, out } = runValidate();
+      expect(code).toBe(1);
+      expect(out).toMatch(/en "Twice fixture term" is listed twice \(en\.term and en\.alt\[0\]\)/);
+      expect(out).toMatch(/en "another wording" is listed twice \(en\.variants\[0\] and en\.variants\[1\]\)/);
+    } finally {
+      fs.rmSync(file, { force: true });
+    }
+  });
+
   it("lets a verified entry keep a record flag, not a problem flag", () => {
     const file = path.join(ROOT, "data", "terms", "zz-flag-fixture.json");
     try {

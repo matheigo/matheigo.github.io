@@ -11,6 +11,14 @@
  * The entry side is small, so its windows go in a map and every source is
  * streamed past it once.
  *
+ * A match that is the entry's own headword and little else is the name of the
+ * thing, not copied text (solving-by-taking-square-roots: "by taking the square
+ * root of each side"): a span that contains a headword phrase of the entry
+ * (terms: en.term, en.alt, en.variants; ja.term, ja.alt; a "…" blank splits the
+ * phrase into pieces found in order) is left out when what remains after the
+ * headword's words is shorter than the threshold (Phase 5 監査 5 の決定 7). A
+ * definition copied along with the headword stays in the list.
+ *
  * Output (committed; it holds only the entry's own words, never corpus text):
  *   audits/checks/copy-overlap.json   every span with the sources it was found in
  *   audits/checks/copy-overlap.md     the same as a table
@@ -19,7 +27,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { COLLECTIONS, ROOT, loadCollection, type Collection } from "../lib/load";
+import { COLLECTIONS, ROOT, loadCollection, localDate, type Collection } from "../lib/load";
 import { bodyTexts } from "../lib/corpus-count";
 
 const EN_N = 8;
@@ -67,8 +75,58 @@ interface Field {
   text: string;
   en: string[];
   ja: string;
+  /** the entry's English headword phrases as token pieces (a "…" blank splits a phrase), and its Japanese ones */
+  enHeads: string[][][];
+  jaHeads: string[];
   enHits: Map<number, Map<string, number>>; // window start -> source -> count
   jaHits: Map<number, Map<string, number>>;
+}
+
+/** The headword phrases of a term (en.term, en.alt, en.variants), each as the token pieces on either side of a "…" blank. */
+export function enHeadwords(collection: Collection, data: Record<string, unknown>): string[][][] {
+  if (collection !== "terms") return [];
+  const en = data.en as { term: string; alt?: string[]; variants?: { term: string }[] };
+  return [en.term, ...(en.alt ?? []), ...(en.variants ?? []).map((v) => v.term)]
+    .map((w) => w.split(/…|\.\.\./).map(enTokens).filter((p) => p.length > 0))
+    .filter((p) => p.length > 0);
+}
+
+/** The Japanese headwords of a term (ja.term, ja.alt), whitespace removed as the windows are. */
+export function jaHeadwords(collection: Collection, data: Record<string, unknown>): string[] {
+  if (collection !== "terms") return [];
+  const ja = data.ja as { term: string; alt?: string[] };
+  return [ja.term, ...(ja.alt ?? [])].map(jaChars).filter(Boolean);
+}
+
+/** Are the pieces found in order (each piece contiguous) in the tokens? */
+function piecesIn(tokens: string[], pieces: string[][]): boolean {
+  let from = 0;
+  for (const p of pieces) {
+    let at = -1;
+    for (let i = from; i + p.length <= tokens.length; i++) {
+      if (p.every((w, k) => tokens[i + k] === w)) {
+        at = i;
+        break;
+      }
+    }
+    if (at < 0) return false;
+    from = at + p.length;
+  }
+  return true;
+}
+
+/**
+ * How much of a span is the entry's own headword: the longest headword phrase
+ * the span contains, in words (en) or characters (ja); 0 when it contains none.
+ */
+export function headwordLength(lang: "en" | "ja", span: string[] | string, enHeads: string[][][], jaHeads: string[]): number {
+  let best = 0;
+  if (lang === "en") {
+    for (const h of enHeads) if (piecesIn(span as string[], h)) best = Math.max(best, h.reduce((a, p) => a + p.length, 0));
+  } else {
+    for (const h of jaHeads) if ((span as string).includes(h)) best = Math.max(best, h.length);
+  }
+  return best;
 }
 
 function loadFields(): Field[] {
@@ -77,6 +135,8 @@ function loadFields(): Field[] {
     const re = PROSE[c];
     if (!re) continue;
     for (const e of loadCollection(c)) {
+      const enHeads = enHeadwords(c, e.data as Record<string, unknown>);
+      const jaHeads = jaHeadwords(c, e.data as Record<string, unknown>);
       for (const [at, text] of bodyTexts(e.data)) {
         if (!re.test(at)) continue;
         out.push({
@@ -86,6 +146,8 @@ function loadFields(): Field[] {
           text,
           en: enTokens(text),
           ja: JA_CHAR.test(text) ? jaChars(text) : "",
+          enHeads,
+          jaHeads,
           enHits: new Map(),
           jaHits: new Map(),
         });
@@ -164,12 +226,17 @@ interface Span {
   sources: Record<string, number>;
 }
 
-/** Joins overlapping windows of one field into maximal spans. */
-function spans(f: Field, lang: "en" | "ja"): Span[] {
+/**
+ * Joins overlapping windows of one field into maximal spans. A span that is the
+ * entry's headword and less than a threshold's worth of other words goes to
+ * `headword` instead of `kept` (Phase 5 監査 5 の決定 7).
+ */
+function spans(f: Field, lang: "en" | "ja"): { kept: Span[]; headword: Span[] } {
   const hits = lang === "en" ? f.enHits : f.jaHits;
   const n = lang === "en" ? EN_N : JA_N;
   const starts = [...hits.keys()].sort((a, b) => a - b);
-  const out: Span[] = [];
+  const kept: Span[] = [];
+  const headword: Span[] = [];
   let i = 0;
   while (i < starts.length) {
     const from = starts[i];
@@ -181,9 +248,10 @@ function spans(f: Field, lang: "en" | "ja"): Span[] {
       for (const [s, c] of hits.get(starts[j])!) src.set(s, Math.max(src.get(s) ?? 0, c));
       j++;
     }
-    const span =
-      lang === "en" ? f.en.slice(from, to).join(" ") : [...f.ja].slice(from, to).join("");
-    out.push({
+    const words = lang === "en" ? f.en.slice(from, to) : [...f.ja].slice(from, to).join("");
+    const span = Array.isArray(words) ? words.join(" ") : words;
+    const own = headwordLength(lang, words, f.enHeads, f.jaHeads);
+    (own > 0 && to - from - own < n ? headword : kept).push({
       collection: f.collection,
       id: f.id,
       field: f.field,
@@ -194,7 +262,7 @@ function spans(f: Field, lang: "en" | "ja"): Span[] {
     });
     i = j;
   }
-  return out;
+  return { kept, headword };
 }
 
 function main() {
@@ -251,21 +319,25 @@ function main() {
   }
   process.stderr.write(`ja ${done}/${ja.length}\n`);
 
-  const all = fields.flatMap((f) => [...spans(f, "en"), ...spans(f, "ja")]);
+  const found = fields.map((f) => [spans(f, "en"), spans(f, "ja")]).flat();
+  const all = found.flatMap((s) => s.kept);
+  const headword = found.flatMap((s) => s.headword);
   const outDir = path.join(ROOT, "audits", "checks");
   fs.mkdirSync(outDir, { recursive: true });
   const summary = {
-    checked: new Date().toISOString().slice(0, 10),
-    rule: `English: ${EN_N}+ consecutive words; Japanese: ${JA_N}+ characters (whitespace removed)`,
+    checked: localDate(), // the Mac's own date, as the commits and the Python checks (Phase 5 監査 5 の決定 8)
+    rule: `English: ${EN_N}+ consecutive words; Japanese: ${JA_N}+ characters (whitespace removed); a span that is the entry's headword and fewer than that many other words / characters is left out`,
     fields: fields.length,
     englishSources: en.length,
     japaneseSources: ja.length,
     spans: all.length,
     entries: new Set(all.map((s) => `${s.collection}/${s.id}`)).size,
+    headwordSpans: headword.length,
+    headwordEntries: new Set(headword.map((s) => `${s.collection}/${s.id}`)).size,
   };
   fs.writeFileSync(
     path.join(outDir, "copy-overlap.json"),
-    JSON.stringify({ summary, spans: all }, null, 2) + "\n",
+    JSON.stringify({ summary, spans: all, headword }, null, 2) + "\n",
   );
 
   const srcLabel = (s: Record<string, number>) => {
@@ -294,6 +366,7 @@ function main() {
     `- 調べた本文の欄: ${summary.fields}`,
     `- 英語のソース: ${summary.englishSources} ファイル ／ 日本語のソース: ${summary.japaneseSources} ファイル`,
     `- 一致した箇所: **${summary.spans}**（${summary.entries} 項目）`,
+    `- 見出しの句を含む一致で除いたもの: ${summary.headwordSpans} 箇所（${summary.headwordEntries} 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが ${EN_N} 語（日本語 ${JA_N} 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）`,
     "",
     "| コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |",
     "|---|---|---|---|---|---|---|---|",

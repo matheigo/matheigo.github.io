@@ -27,6 +27,22 @@
  * it uses the sections named earlier in the note.
  */
 
+import { cedSections, cedText } from "../corpus/lib.js";
+
+/**
+ * A CED's sections as validate's note check and the audit's ced tool read them
+ * (one implementation, Phase 5 監査 5 の決定 9): section name (scripts/corpus/lib.ts
+ * cedSections: "n.m" topic pages, "unitN" unit openers, "front", "exam") -> the
+ * section's text, normalized (cedText) and raw. A note's word is looked for in
+ * both, so the CED's own spelling is found as well as the normalized one
+ * (scatterplot / scatter plot, boxplot / box plot; Phase 5 監査 5 の決定 5).
+ */
+export function cedSectionTexts(text: string): Map<string, string> {
+  const m = new Map<string, string>();
+  for (const [name, t] of cedSections(text)) m.set(name, `${m.get(name) ?? ""} ${cedText(t)} ${t}`);
+  return m;
+}
+
 export interface NoteGroup {
   /** "5.4", "unit9" ... as cedSections names them; a unit without の概要 also lists its topics as "unit5:*" */
   sections: string[];
