@@ -122,7 +122,7 @@
       "note": "節 オイラーの多面体定理（オイラーの多面体公式）"
     }
   ],
-  "confidence": "verified",
+  "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-09-27",
@@ -142,5 +142,12 @@
       "yt:organicchem"
     ],
     "counted": "2026-09-27"
-  }
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: ユーザーの決定 1（監査 9 の前。監査 8 の H-a の 1、案 (b)）で見出しを Euler's formula（MIT の講義ノートと Levin の呼び方）にし、CK-12 Geometry 9.1 の Euler's theorem を register written の variant に、eulers-formula との対を SAME_EN_TERM に足した。見直す点: TERM_FORMS の文の枠（講義ノート・The Organic Chemistry Tutor の多面体・平面グラフの文だけか）と数え直した evidence（書き言葉 ① 9 対 1、register written）、pitfalls の e^(iθ) の注意と CK-12・整数論の Euler's theorem の文、例文の言い方、variant の note。次の監査のセッションが見直す。",
+      "raised": "2026-09-27"
+    }
+  ]
 }
