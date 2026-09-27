@@ -68,7 +68,7 @@ Stewart *Calculus* や Larson *Precalculus* は書名を出典に挙げるだけ
 |---|---|---|---|
 | 増減表 | increase-decrease table | sign chart ／ first-derivative test。凹凸は f″ の別の sign chart（concavity）| none |
 | 場合の数 | number of cases | counting（分野名）／ the number of ways（個数） | near |
-| 三角関数の合成 | synthesis of trig functions | writing a sin θ + b cos θ as R sin(θ+α)（auxiliary-angle form / harmonic form） | near |
+| 三角関数の合成 | synthesis of trig functions | rewriting a sin θ + b cos θ as a single sine function（説明の訳。米国の高校の資料（CED・OpenStax・IM・CK-12）には名前が出てこない。大学の微分方程式の講義（MIT OCW 18.03）は、できた形を amplitude-phase form と呼ぶ） | none |
 | 内分点 | internally dividing point | the point that divides the segment internally in the ratio m:n | near |
 | 整式 | integral expression | polynomial（「多項式」と区別しない） | exact |
 | 微分係数 | differential coefficient | derivative at a point ／ the value of the derivative at x=a | near |
