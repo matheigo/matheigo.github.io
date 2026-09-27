@@ -2,7 +2,7 @@
 
 作成: `python3 scripts/audit/source_mentions.py`（規則は scripts/audit/source_mentions.py の説明）。主張が正しいかは見ない（それは監査）。
 
-- 項目: **180**（draft 1・likely 179）
+- 項目: **174**（draft 1・likely 173）
 
 | コレクション | id | confidence | 名指しされた資料 | 欄 |
 |---|---|---|---|---|
@@ -37,8 +37,6 @@
 | terms | confounding-variable | likely | OpenStax Introductory Statistics | pitfalls[0] |
 | terms | conjugate-roots | likely | OpenStax Elementary Algebra | pitfalls[1] |
 | terms | convenience-sample | likely | 学習指導要領解説 | mapping_note |
-| terms | converse-of-the-inscribed-angle-theorem | likely | CK-12 | mapping_note |
-| terms | converse-of-the-inscribed-angle-theorem | likely | IM | mapping_note |
 | terms | coordinate-proof | likely | IM | mapping_note、pitfalls[0] |
 | terms | coordinate-rule | likely | IM | pitfalls[0] |
 | terms | coordinate-rule | likely | 学習指導要領解説 | mapping_note |
@@ -57,7 +55,6 @@
 | terms | cryptography | likely | Nicholson | pitfalls[2] |
 | terms | cubic-units | likely | IM | pitfalls[2] |
 | terms | cubic-units | likely | 学習指導要領解説 | mapping_note |
-| terms | cyclic-quadrilateral | likely | CK-12 | pitfalls[2] |
 | terms | decimal-system | likely | IM | pitfalls[0]、pitfalls[1] |
 | terms | decimal-system | likely | Nicholson | pitfalls[0] |
 | terms | deductive-reasoning | likely | IM | pitfalls[0] |
@@ -67,7 +64,6 @@
 | terms | dilation | likely | CK-12 | pitfalls[2] |
 | terms | directed-graph | likely | Levin | pitfalls[2] |
 | terms | directed-graph | likely | Nicholson | pitfalls[2] |
-| terms | divisor | likely | IM | mapping_note |
 | terms | end-behavior | likely | 学習指導要領解説 | mapping_note |
 | terms | equation-in-quadratic-form | likely | 学習指導要領解説 | mapping_note |
 | terms | equation-in-quadratic-form | likely | OpenStax Algebra and Trigonometry | pitfalls[1] |
@@ -139,8 +135,6 @@
 | terms | order-of-operations | likely | CK-12 | pitfalls[1] |
 | terms | paragraph-proof | likely | IM | pitfalls[1] |
 | terms | paragraph-proof | likely | 学習指導要領解説 | mapping_note |
-| terms | parallelogram | likely | CK-12 | pitfalls[1] |
-| terms | parallelogram | likely | IM | pitfalls[1] |
 | terms | parent-function | likely | 学習指導要領解説 | mapping_note |
 | terms | partial-order | likely | Levin | pitfalls[2] |
 | terms | pemdas | likely | OpenStax Elementary Algebra | pitfalls[1] |
@@ -164,8 +158,6 @@
 | terms | quartile-deviation | likely | OpenStax Introductory Statistics | mapping_note |
 | terms | radical-equation | likely | OpenStax Elementary Algebra | pitfalls[1] |
 | terms | radical-expression | likely | 学習指導要領解説 | mapping_note |
-| terms | rearranging-an-equation | likely | CK-12 | en.variants[0].note |
-| terms | rearranging-an-equation | likely | OpenStax Intermediate Algebra | mapping_note |
 | terms | recursive-algorithm | likely | Levin | pitfalls[0] |
 | terms | reflex-angle | likely | CK-12 | mapping_note |
 | terms | rejection-region | likely | AP Statistics の CED | mapping_note |
@@ -207,8 +199,6 @@
 | terms | tautology | likely | Levin | pitfalls[2] |
 | terms | telescoping-series | likely | 学習指導要領解説 | mapping_note |
 | terms | transitive-property | likely | IM | pitfalls[2] |
-| terms | trapezoid | likely | CK-12 | mapping_note |
-| terms | trapezoid | likely | IM | mapping_note |
 | terms | triangle-proportionality-theorem | likely | IM | pitfalls[1] |
 | terms | truth-table | likely | Levin | pitfalls[2] |
 | terms | two-column-proof | likely | IM | pitfalls[2] |

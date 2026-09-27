@@ -1,5 +1,5 @@
 {
-  "checked": "2026-09-26",
+  "checked": "2026-09-27",
   "claims": [
     {
       "collection": "terms",
@@ -19,7 +19,7 @@
       "collection": "terms",
       "id": "aas-congruence",
       "field": "mapping_note",
-      "sentence": "見出しの「2 組の角とその間にない 1 辺がそれぞれ等しい」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「2 組の角とその間にない 1 辺がそれぞれ等しい」は学習指導要領解説に無い（日本語版 Wikipedia「図形の合同」は AAS をほぼ同じ言い方で挙げる）。",
       "g1": false
     },
     {
@@ -138,7 +138,7 @@
       "collection": "terms",
       "id": "alternating-series-test",
       "field": "mapping_note",
-      "sentence": "見出しの「交代級数判定法」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「交代級数判定法」は学習指導要領解説に無い（日本語版 Wikipedia に記事「交代級数判定法」がある）。",
       "g1": false
     },
     {
@@ -290,13 +290,6 @@
     },
     {
       "collection": "terms",
-      "id": "auxiliary-angle-form",
-      "field": "mapping_note",
-      "sentence": "英国の教科書では harmonic form ／ auxiliary angle method と呼ぶことがあるが、米国の用例には出てこない。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "average-value-of-a-function",
       "field": "pitfalls[0]",
       "sentence": "学習指導要領解説には出てこない。",
@@ -390,7 +383,7 @@
       "collection": "terms",
       "id": "blocking",
       "field": "mapping_note",
-      "sentence": "見出しの「ブロック化」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「ブロック化」は学習指導要領解説に無い（日本語版 Wikipedia「実験計画法」にはある）。",
       "g1": false
     },
     {
@@ -460,8 +453,8 @@
       "collection": "terms",
       "id": "change",
       "field": "mapping_note",
-      "sentence": "日本の中学の「x の増加量」「y の増加量」は、英語で change in x、change in y と言い、Δx、Δy（delta x、delta y と読む）とも書く。",
-      "g1": true
+      "sentence": "中学校学習指導要領解説の「x の増加量」「y の増加量」（変化の割合は x の増加量に対する y の増加量の割合）は、英語で change in x、change in y と言い、Δx、Δy（delta x、delta y と読む）とも書く。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -551,8 +544,15 @@
       "collection": "terms",
       "id": "complementary-event",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書は Ā と書くが、英語の教科書では A^c や A′ などを使う（教科書による）。",
-      "g1": true
+      "sentence": "センター試験の問題文（平成 30 年度 数学Ⅰ・数学Ａ）は余事象を Ā と書き、学習指導要領解説も P(Ā) = 1 − P(A) と書く。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "complementary-event",
+      "field": "pitfalls[0]",
+      "sentence": "OpenStax Introductory Statistics は A′、Algebra and Trigonometry は E′ と書く（教科書による）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -635,7 +635,7 @@
       "collection": "terms",
       "id": "conditions-for-a-parallelogram",
       "field": "mapping_note",
-      "sentence": "日本の中 2 では四角形が平行四辺形になるための条件を 5 つまとめて学ぶが、英語にはそれらをまとめた決まった名前がなく、「四角形が平行四辺形であることを示す」（prove that a quadrilateral is a parallelogram）のように、示すことを文で言う。",
+      "sentence": "中学校学習指導要領解説（第 2 学年）は「平行四辺形になるための条件」を平行四辺形の性質と並べて挙げる（本エントリの定義の 5 つ）が、用例コーパスと参照にはそれらをまとめた名前が出てこず、「四角形が平行四辺形であることを示す」（prove that a quadrilateral is a parallelogram）のように、示すことを文で言う。",
       "g1": false
     },
     {
@@ -649,7 +649,7 @@
       "collection": "terms",
       "id": "congruence-criteria-for-right-triangles",
       "field": "mapping_note",
-      "sentence": "米国の Geometry は、日本の 2 つの条件のうち「斜辺と他の 1 辺がそれぞれ等しい」を HL（hypotenuse-leg）と呼んで定理として扱い、「斜辺と 1 つの鋭角がそれぞれ等しい」は AAS で示せる。",
+      "sentence": "CK-12 Geometry は、日本の 2 つの条件のうち「斜辺と他の 1 辺がそれぞれ等しい」を Hypotenuse-Leg (HL) Congruence Theorem と呼んで定理として扱う（4.16 HL Triangle Congruence）。",
       "g1": false
     },
     {
@@ -703,16 +703,9 @@
     },
     {
       "collection": "terms",
-      "id": "constant-function",
-      "field": "pitfalls[2]",
-      "sentence": "日本の中学の一次関数は y = ax + b で a ≠ 0 とするので、定数関数は一次関数に含めない（エントリ linear-function）。",
-      "g1": true
-    },
-    {
-      "collection": "terms",
       "id": "constant-multiple-rule",
       "field": "mapping_note",
-      "sentence": "見出しの「定数倍の法則」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「定数倍の法則」は学習指導要領解説に無い（日本語版 Wikipedia「積の微分法則」にはある）。",
       "g1": false
     },
     {
@@ -747,7 +740,7 @@
       "collection": "terms",
       "id": "convenience-sample",
       "field": "mapping_note",
-      "sentence": "見出しの「便宜的抽出」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「便宜的抽出」は学習指導要領解説に無い（日本語版 Wikipedia「標本調査」には節「便宜的抽出」がある）。",
       "g1": false
     },
     {
@@ -803,8 +796,8 @@
       "collection": "terms",
       "id": "corresponding-angles-of-congruent-figures",
       "field": "pitfalls[1]",
-      "sentence": "日本の教科書は合同の記号に ≡ を使い、英語では ≅ を使う（エントリ congruent）。",
-      "g1": true
+      "sentence": "中学校学習指導要領の〔用語・記号〕は合同の記号に ≡ を挙げ、英語（CK-12 Geometry・IM）では ≅ を使う（エントリ congruent）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -866,7 +859,7 @@
       "collection": "terms",
       "id": "cpctc",
       "field": "mapping_note",
-      "sentence": "見出しの「CPCTC」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「CPCTC」は英語の略語をそのまま使う（学習指導要領解説に無い）。",
       "g1": false
     },
     {
@@ -985,7 +978,7 @@
       "collection": "terms",
       "id": "derivative-of-the-exponential-function",
       "field": "mapping_note",
-      "sentence": "日本の「指数関数の導関数」は (eˣ)′ = eˣ と (aˣ)′ = aˣ log a をまとめて言う。",
+      "sentence": "学習指導要領解説（数学III）は「指数関数の導関数」を三角関数・対数関数の導関数と並べて挙げる（(eˣ)′ = eˣ と (aˣ)′ = aˣ log a をまとめた言い方）。",
       "g1": false
     },
     {
@@ -1130,16 +1123,16 @@
     },
     {
       "collection": "terms",
-      "id": "divergence",
+      "id": "divisibility",
       "field": "pitfalls[1]",
-      "sentence": "日本の数III と同じく、英語でも振動する数列は diverge する（収束しないもの全体が divergence）。",
+      "sentence": "学習指導要領解説（中学校・高等学校）は約数・倍数の言い方で扱い、「整除性」「整除」は出てこない。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "divisibility",
       "field": "pitfalls[1]",
-      "sentence": "数A では「a は b で割り切れる」「a は b の倍数」と言い、divisibility に当たる名詞はあまり使わない。",
+      "sentence": "センター試験の問題文は「37a が 4 で割り切れる」のように「割り切れる」と言う。",
       "g1": false
     },
     {
@@ -1167,7 +1160,7 @@
       "collection": "terms",
       "id": "domain",
       "field": "definition_ja",
-      "sentence": "中学では「x の変域」と言う。",
+      "sentence": "中学校学習指導要領解説は「x の変域」と言う。",
       "g1": false
     },
     {
@@ -1188,7 +1181,7 @@
       "collection": "terms",
       "id": "elimination",
       "field": "mapping_note",
-      "sentence": "日本の「加減法」は式を足す・引くという操作から付いた名前で、英語は文字を消去することから elimination method（method of elimination）と呼ぶ。",
+      "sentence": "中学校学習指導要領解説の「加減法」は式を足す・引くという操作から付いた名前で、英語は文字を消去することから elimination method（method of elimination）と呼ぶ。",
       "g1": false
     },
     {
@@ -1251,8 +1244,8 @@
       "collection": "terms",
       "id": "equal",
       "field": "pitfalls[1]",
-      "sentence": "日本の教科書は線分や角にも = を使う（エントリ congruent、equal-angles）。",
-      "g1": true
+      "sentence": "共通テスト・センター試験の問題文は、線分の長さや角にも = を使う（AB = AC、∠ABC = B）（エントリ congruent、equal-angles）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -1391,7 +1384,7 @@
       "collection": "terms",
       "id": "extreme-value-theorem",
       "field": "mapping_note",
-      "sentence": "ja.alt の「極値定理」は学習指導要領解説に無い、本プロジェクトの訳語（extreme value theorem の直訳）。",
+      "sentence": "ja.alt の「極値定理」は学習指導要領解説に無い（日本語版 Wikipedia「最大値最小値定理」は extreme value theorem の訳として挙げる）。",
       "g1": false
     },
     {
@@ -1776,7 +1769,7 @@
       "collection": "terms",
       "id": "implicit-differentiation",
       "field": "mapping_note",
-      "sentence": "ja.alt の「陰関数微分」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "ja.alt の「陰関数微分」は学習指導要領解説に無い（日本語版 Wikipedia「対数微分法」にはある）。",
       "g1": false
     },
     {
@@ -1860,7 +1853,7 @@
       "collection": "terms",
       "id": "inductive-step",
       "field": "mapping_note",
-      "sentence": "見出しの「帰納段階」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「帰納段階」は学習指導要領解説に無い（日本語版 Wikipedia「再帰」は数学的帰納法の証明の段を「基底段階」「帰納段階」と呼ぶ）。",
       "g1": false
     },
     {
@@ -1895,21 +1888,21 @@
       "collection": "terms",
       "id": "infinite-discontinuity",
       "field": "mapping_note",
-      "sentence": "見出しの「無限不連続」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「無限不連続」は学習指導要領解説に無い（日本語版 Wikipedia「不連続性の分類」には「無限不連続点」がある）。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "infinite-limit",
       "field": "mapping_note",
-      "sentence": "見出しの「無限大の極限」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「無限大の極限」は学習指導要領解説に無い（日本語版 Wikipedia「数列の極限」には節「無限大の極限」がある）。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "infinite-series",
       "field": "pitfalls[1]",
-      "sentence": "日本の「級数」はふつう無限級数を指す。",
+      "sentence": "日本語版 Wikipedia「級数」は級数を無限項の和として定義し（有限個の和は残りの項を 0 とみる場合）、学習指導要領解説は「無限級数」「無限等比級数」の形で使う。",
       "g1": false
     },
     {
@@ -2033,9 +2026,16 @@
     },
     {
       "collection": "terms",
+      "id": "intersect",
+      "field": "mapping_note",
+      "sentence": "共通テストの問題文は「2 点で交わる」「接する」「共有点をもたない」を分けて言う（令和 3 年度 第 1 日程 数学II）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "intersecting-chords-theorem",
       "field": "mapping_note",
-      "sentence": "見出しの「交わる弦の定理」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「交わる弦の定理」は学習指導要領解説に無い（日本語版 Wikipedia「方べきの定理」の図の説明にはある）。",
       "g1": false
     },
     {
@@ -2096,13 +2096,6 @@
     },
     {
       "collection": "terms",
-      "id": "is-monotonically-increasing",
-      "field": "mapping_note",
-      "sentence": "等号を含めるかどうかの定義は教科書によるので、区別するときは strictly increasing（狭義）と nondecreasing（広義）を使う。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "joint-variation",
       "field": "mapping_note",
       "sentence": "見出しの「結合変化」は学習指導要領解説に無い、本プロジェクトの訳語。",
@@ -2119,7 +2112,7 @@
       "collection": "terms",
       "id": "jump-discontinuity",
       "field": "mapping_note",
-      "sentence": "見出しの「跳躍不連続」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「跳躍不連続」は学習指導要領解説に無い（日本語版 Wikipedia「不連続性の分類」には「跳躍不連続点」がある）。",
       "g1": false
     },
     {
@@ -2203,7 +2196,7 @@
       "collection": "terms",
       "id": "left-riemann-sum",
       "field": "mapping_note",
-      "sentence": "見出しの「左リーマン和」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「左リーマン和」は学習指導要領解説に無い（日本語版 Wikipedia「リーマン和」にはある）。",
       "g1": false
     },
     {
@@ -2233,13 +2226,6 @@
       "field": "pitfalls[2]",
       "sentence": "学習指導要領（平成30年告示）の本文に「ロピタル」は無く、解説は数学III の課題学習の例で発展として触れるだけ。",
       "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "lhopitals-rule",
-      "field": "pitfalls[2]",
-      "sentence": "日本の高校の答案で使ってよいかは教科書・先生による。",
-      "g1": true
     },
     {
       "collection": "terms",
@@ -2273,7 +2259,7 @@
       "collection": "terms",
       "id": "limit-at-infinity",
       "field": "mapping_note",
-      "sentence": "見出しの「無限遠での極限」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「無限遠での極限」は学習指導要領解説に無い（日本語版 Wikipedia「拡大実数」には「無限遠における極限」がある）。",
       "g1": false
     },
     {
@@ -2287,7 +2273,7 @@
       "collection": "terms",
       "id": "limit-comparison-test",
       "field": "mapping_note",
-      "sentence": "見出しの「極限比較判定法」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「極限比較判定法」は学習指導要領解説に無い（日本語版 Wikipedia「積分判定法」の関連項目に「極限比較判定法」がある）。",
       "g1": false
     },
     {
@@ -2308,22 +2294,15 @@
       "collection": "terms",
       "id": "linear-approximation",
       "field": "mapping_note",
-      "sentence": "ja.alt の「接線近似」は学習指導要領解説に無い、本プロジェクトの訳語（tangent line approximation の訳）。",
+      "sentence": "ja.alt の「接線近似」は学習指導要領解説に無い（日本語版 Wikipedia「線型近似」は接線近似とも呼ぶと書く）。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "linear-function",
       "field": "pitfalls[0]",
-      "sentence": "m が傾き（slope）、b が y 切片（y-intercept）で、日本の y = ax + b の a が m に当たる。",
+      "sentence": "m が傾き（slope）、b が y 切片（y-intercept）で、中学校学習指導要領解説の y = ax + b の a が m に当たる。",
       "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "linear-function",
-      "field": "pitfalls[1]",
-      "sentence": "日本の中学の一次関数は a ≠ 0 とする。",
-      "g1": true
     },
     {
       "collection": "terms",
@@ -2495,17 +2474,10 @@
     },
     {
       "collection": "terms",
-      "id": "mixture-problem",
-      "field": "mapping_note",
-      "sentence": "日本の「濃度の問題」は、食塩水の濃度など、濃さの違うものを混ぜ合わせる文章題を指す。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "monomial",
       "field": "pitfalls[0]",
-      "sentence": "日本の中学では多項式を単項式の和（項が 2 つ以上）として単項式と区別するが、英語の polynomial は monomial も含む（エントリ polynomial）。",
-      "g1": true
+      "sentence": "中学校学習指導要領解説は「単項式と多項式の意味」と対比で挙げ、日本語版 Wikipedia「多項式」は「多項式」を単項式でない整式の意味で用いる流儀があると書く。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -2630,7 +2602,7 @@
       "collection": "terms",
       "id": "normal-probability-plot",
       "field": "mapping_note",
-      "sentence": "見出しの「正規確率プロット」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「正規確率プロット」は学習指導要領解説に無い（日本語版 Wikipedia「Q-Qプロット」にはある）。",
       "g1": false
     },
     {
@@ -2702,13 +2674,6 @@
       "field": "pitfalls[0]",
       "sentence": "日本の高校の問題文は「x + y の最大値を求めよ」のように書く。",
       "g1": true
-    },
-    {
-      "collection": "terms",
-      "id": "one-sixth-formula",
-      "field": "mapping_note",
-      "sentence": "日本の受験で使う公式で、OpenStax Calculus にも AP の CED にも無く、用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。",
-      "g1": false
     },
     {
       "collection": "terms",
@@ -2796,6 +2761,13 @@
     },
     {
       "collection": "terms",
+      "id": "parallel",
+      "field": "definition_ja",
+      "sentence": "直線 AB と CD が平行であることを、中学校学習指導要領の〔用語・記号〕どおり AB // CD と書く（英語の教材の記号は ∥。エントリ parallel-sign）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "parametric-equations",
       "field": "mapping_note",
       "sentence": "ja.alt の「媒介変数方程式」は学習指導要領解説に無い、本プロジェクトの訳語。",
@@ -2819,7 +2791,7 @@
       "collection": "terms",
       "id": "partial-fraction-decomposition",
       "field": "pitfalls[2]",
-      "sentence": "日本の数III の「分数関数」は、学習指導要領解説では「簡単な分数関数」のグラフを扱う。",
+      "sentence": "学習指導要領解説（数学III）は「分数関数」について「簡単な分数関数」のグラフを扱う。",
       "g1": false
     },
     {
@@ -2915,13 +2887,6 @@
     },
     {
       "collection": "terms",
-      "id": "point-of-internal-division",
-      "field": "mapping_note",
-      "sentence": "内分点の座標の公式は英国・インドの教科書では section formula と呼ぶが、米国の用例コーパスには出てこない。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "point-of-intersection",
       "field": "pitfalls[1]",
       "sentence": "日本の「共有点」は接する点も含む。",
@@ -2959,7 +2924,7 @@
       "collection": "terms",
       "id": "polynomial",
       "field": "pitfalls[1]",
-      "sentence": "中学の「多項式」は単項式の和（2 項以上）で単項式と区別するが、英語の polynomial は単項式（monomial）も含む。",
+      "sentence": "中学校学習指導要領解説は「単項式と多項式の意味」と対比で挙げ、日本語版 Wikipedia「多項式」は「多項式」を単項式でない整式の意味で用いる流儀があると書く。",
       "g1": false
     },
     {
@@ -3001,7 +2966,7 @@
       "collection": "terms",
       "id": "power-rule",
       "field": "mapping_note",
-      "sentence": "ja.alt の「べき乗則」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "ja.alt の「べき乗則」は学習指導要領解説に無い。",
       "g1": false
     },
     {
@@ -3043,8 +3008,8 @@
       "collection": "terms",
       "id": "probability",
       "field": "pitfalls[2]",
-      "sentence": "日本の高校では全事象を U で表すが、上の式では標本空間を S とした（sample-space を参照）。",
-      "g1": true
+      "sentence": "高等学校学習指導要領解説（数学A）は全事象を U で表す（P(U) = 1）が、上の式では標本空間を S とした（sample-space を参照）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -3197,21 +3162,21 @@
       "collection": "terms",
       "id": "radical-function",
       "field": "mapping_note",
-      "sentence": "日本の数III の「無理関数」は √ を含む式で表される関数（y = √(ax + b) など）。",
+      "sentence": "学習指導要領解説（数学III）の「無理関数」は √ を含む式で表される関数で、y = √(ax + b) の形のものを中心に扱う。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "radical-function",
       "field": "mapping_note",
-      "sentence": "ja.alt の「根号関数」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "ja.alt の「根号関数」は学習指導要領解説に無い（日本語版 Wikipedia「冪根」は n 乗根をとる関数を根号関数と呼ぶ）。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "range",
       "field": "definition_ja",
-      "sentence": "中学で習う「y の変域」のこと。",
+      "sentence": "中学校学習指導要領解説の「y の変域」のこと。",
       "g1": false
     },
     {
@@ -3309,7 +3274,7 @@
       "collection": "terms",
       "id": "reflexive-property",
       "field": "pitfalls[0]",
-      "sentence": "日本の証明では「BD は共通」と書き、反射律という名前は使わない。",
+      "sentence": "センター試験の問題文（平成 27 年度 数学Ⅰ・数学Ａ）は「∠C は共通」のように書き、反射律という名前は使わない。",
       "g1": false
     },
     {
@@ -3335,13 +3300,6 @@
     },
     {
       "collection": "terms",
-      "id": "relationship-between-roots-and-coefficients",
-      "field": "mapping_note",
-      "sentence": "米国の高校の参照（CED・OpenStax・IM・CK-12）にはこの名前も relationship between roots and coefficients も出てこず、the sum of the roots is −b/a, the product is c/a と式で言う。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "relatively-prime",
       "field": "mapping_note",
       "sentence": "日本の教科書は「互いに素」を 2 つの整数について定義する。",
@@ -3359,13 +3317,6 @@
       "id": "remainder-theorem",
       "field": "pitfalls[0]",
       "sentence": "2 次式で割った余り（ax + b の形）を求める問題は、米国の高校ではあまり扱わない。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "remainder",
-      "field": "pitfalls[2]",
-      "sentence": "数A の合同式では、余りを剰余とも言う。",
       "g1": false
     },
     {
@@ -3393,8 +3344,8 @@
       "collection": "terms",
       "id": "representations-of-a-function",
       "field": "mapping_note",
-      "sentence": "日本の中学では、1 つの関数を表・式・グラフの 3 つで表し、互いに行き来する。",
-      "g1": true
+      "sentence": "中学校学習指導要領解説は、関数を表，式，グラフを相互に関連付けて考えることを挙げる。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -3421,14 +3372,14 @@
       "collection": "terms",
       "id": "right-hand-limit",
       "field": "pitfalls[0]",
-      "sentence": "日本の数III は x → a + 0 と書く（学習指導要領解説も lim_{x→+0}）が、OpenStax は x → a⁺ と書き、a plus と読む（approaches a from the right）。",
+      "sentence": "学習指導要領解説（数学III）は lim_{x→+0} と書き、日本語版 Wikipedia「片側極限」は lim_{x→a+0} と書く。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "right-riemann-sum",
       "field": "mapping_note",
-      "sentence": "見出しの「右リーマン和」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「右リーマン和」は学習指導要領解説に無い（日本語版 Wikipedia「リーマン和」にはある）。",
       "g1": false
     },
     {
@@ -3533,8 +3484,8 @@
       "collection": "terms",
       "id": "sample-space",
       "field": "pitfalls[0]",
-      "sentence": "日本の高校では全事象を U で表す。",
-      "g1": true
+      "sentence": "高等学校学習指導要領解説（数学A）は全事象を U で表す（P(U) = 1）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -3778,7 +3729,7 @@
       "collection": "terms",
       "id": "sketch",
       "field": "mapping_note",
-      "sentence": "日本の問題文の「図示せよ」「図示すると」（共通テストの問題文にもある）は、領域なら Sketch ／ Graph ／ Shade the region、曲線なら Sketch the graph と言う。",
+      "sentence": "日本語の問題文の「図示せよ」「図示すると」（共通テストの問題文には「図示すると」がある）は、領域なら Sketch ／ Graph ／ Shade the region、曲線なら Sketch the graph と言う。",
       "g1": false
     },
     {
@@ -3792,7 +3743,7 @@
       "collection": "terms",
       "id": "slope-formula",
       "field": "mapping_note",
-      "sentence": "見出しの「傾きの公式」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「傾きの公式」は学習指導要領解説に無い（日本語版 Wikipedia「中点法」は 2 点を結ぶ直線の傾きの式を「傾きの公式」と呼ぶ）。",
       "g1": false
     },
     {
@@ -3827,14 +3778,14 @@
       "collection": "terms",
       "id": "slope",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書の y = ax + b の a に当たる。",
-      "g1": true
+      "sentence": "中学校学習指導要領解説の y = ax + b の a に当たる。",
+      "g1": false
     },
     {
       "collection": "terms",
       "id": "sohcahtoa",
       "field": "mapping_note",
-      "sentence": "見出しの「SOHCAHTOA」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「SOHCAHTOA」は英語の語呂合わせをそのまま使う（学習指導要領解説に無い。日本語版 Wikipedia「三角関数の暗記方法」は英語圏の覚え方として SOH-CAH-TOA を挙げる）。",
       "g1": false
     },
     {
@@ -3842,13 +3793,6 @@
       "id": "sohcahtoa",
       "field": "mapping_note",
       "sentence": "日本では sin・cos・tan の定義を筆記体の s・c・t の形で覚える方法があり、この語呂合わせは使わない。",
-      "g1": true
-    },
-    {
-      "collection": "terms",
-      "id": "solution-pair",
-      "field": "pitfalls[2]",
-      "sentence": "日本の教科書は解を x = 2, y = 3 や (x, y) = (2, 3) と書く。",
       "g1": true
     },
     {
@@ -4126,16 +4070,23 @@
     },
     {
       "collection": "terms",
+      "id": "tangent-chord-theorem",
+      "field": "mapping_note",
+      "sentence": "日本の接弦定理の形（接線と弦のなす角は、その角の内部にある弧に対する円周角に等しい）は、the angle between a tangent and a chord equals the inscribed angle on the other side of the chord のように文で言う（本プロジェクトの書き方の例）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "tangent-problem",
       "field": "mapping_note",
-      "sentence": "見出しの「接線問題」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「接線問題」は学習指導要領解説に無い（日本語版 Wikipedia「解析学」は「曲線の接線問題」と書く）。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "telescoping-series",
       "field": "mapping_note",
-      "sentence": "見出しの「望遠鏡級数」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「望遠鏡級数」は学習指導要領解説に無い（日本語版 Wikipedia「畳み込み級数」は telescoping series の別名として挙げる）。",
       "g1": false
     },
     {
@@ -4492,8 +4443,8 @@
       "collection": "terms",
       "id": "y-intercept",
       "field": "mapping_note",
-      "sentence": "日本の中学では「切片」と言えば y 切片、つまり直線が y 軸と交わる点の y 座標（y = ax + b の b）を指す。",
-      "g1": true
+      "sentence": "日本語版 Wikipedia「一次関数」は y = ax + b の b（直線と y 軸との交点の座標）を y 切片、あるいは単に切片と呼び、センター試験の問題文（平成 31 年度 数学Ⅰ）も直線について「切片が −15」と書く。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -4549,13 +4500,6 @@
       "id": "congruent-sign",
       "field": "notes[0]",
       "sentence": "日本の記号 ≡ で書いた合同も、英語では同じく is congruent to と読む。",
-      "g1": false
-    },
-    {
-      "collection": "symbols",
-      "id": "cosecant-of-theta",
-      "field": "notes[0]",
-      "sentence": "書くときは csc（英国や日本の大学の本は cosec とも）。",
       "g1": false
     },
     {

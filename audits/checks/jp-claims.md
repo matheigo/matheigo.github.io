@@ -1,18 +1,18 @@
 # 日本側の主張の文（Phase 5 の監査の前の機械の確かめ 2）
 
-作成: 2026-09-26 ／ `pnpm audit:claims`（scripts/audit/claims.ts）
+作成: 2026-09-27 ／ `pnpm audit:claims`（scripts/audit/claims.ts）
 
 対象の欄: terms の mapping_note・pitfalls・variants の note・definition_ja、symbols の notes、phrases の notes・variants の note。
 慣習差（conventions）は jp の欄そのものが日本側の主張で、生成のときに項目ごとに日本側の資料を出典に入れたので、ここには入れない（監査は慣習差の順で見る）。
 
-- phase4-report G-1 の正規表現（日本(の教科書|では|の高校|の授業|の答案|の中学|の入試|の数学|で)）に当たる文: **174 項目・181 文**
-- 広い正規表現（日本・数学 I〜C・中学・高校・学習指導要領・教科書・入試・共通テスト・センター試験）に当たる文: **497 項目・675 文**（主張でない文も混じる。監査の ⑦ で 1 文ずつ見る）
+- phase4-report G-1 の正規表現（日本(の教科書|では|の高校|の授業|の答案|の中学|の入試|の数学|で)）に当たる文: **160 項目・167 文**
+- 広い正規表現（日本・数学 I〜C・中学・高校・学習指導要領・教科書・入試・共通テスト・センター試験）に当たる文: **489 項目・667 文**（主張でない文も混じる。監査の ⑦ で 1 文ずつ見る）
 
 | コレクション | id | 欄 | G-1 | 文 |
 |---|---|---|---|---|
 | terms | 30-60-90-triangle | pitfalls[1] | ○ | 日本では三角定規の形として覚えるが、英語では辺を短い方から x, x√3, 2x と書く。 |
 | terms | aa-similarity | pitfalls[1] | ○ | 相似の記号は日本では ∽、英語では ~（△ADE ~ △ABC）。 |
-| terms | aas-congruence | mapping_note |  | 見出しの「2 組の角とその間にない 1 辺がそれぞれ等しい」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | aas-congruence | mapping_note |  | 見出しの「2 組の角とその間にない 1 辺がそれぞれ等しい」は学習指導要領解説に無い（日本語版 Wikipedia「図形の合同」は AAS をほぼ同じ言い方で挙げる）。 |
 | terms | aas-congruence | mapping_note |  | 日本の三角形の合同条件には無い（1 辺とその両端の角が等しい、に帰着する）。 |
 | terms | aas-congruence | pitfalls[1] | ○ | 日本の合同条件にはこの形がないので、日本の答案では残りの角も等しいことを示してから「1 組の辺とその両端の角がそれぞれ等しい」を使う。 |
 | terms | absolute-extrema | mapping_note |  | ja.alt の「絶対極値」は学習指導要領解説に無い、本プロジェクトの訳語。 |
@@ -29,7 +29,7 @@
 | terms | alternate-interior-angles-theorem | mapping_note |  | 見出しの「錯角の定理」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | alternate-interior-angles-theorem | mapping_note |  | 日本の中2 では「平行線の錯角は等しい」を平行線の性質として扱う。 |
 | terms | alternating-series-error-bound | mapping_note |  | 見出しの「交代級数の誤差限界」は学習指導要領解説に無い、本プロジェクトの訳語。 |
-| terms | alternating-series-test | mapping_note |  | 見出しの「交代級数判定法」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | alternating-series-test | mapping_note |  | 見出しの「交代級数判定法」は学習指導要領解説に無い（日本語版 Wikipedia に記事「交代級数判定法」がある）。 |
 | terms | am-gm-inequality | pitfalls[0] | ○ | 日本の高校（数II）では最小値を求める定番の道具。 |
 | terms | ambiguous-case | mapping_note |  | 見出しの「曖昧な場合」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | ambiguous-case | mapping_note | ○ | 日本の教科書では、2 辺とその一方の対角が与えられたときに三角形が 2 つできる場合を、名前をつけずに扱う。 |
@@ -51,7 +51,6 @@
 | terms | area-problem | mapping_note |  | 見出しの「面積問題」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | arrange-by-the-variable-of-lowest-degree | mapping_note |  | 日本の因数分解の技法で、英語で説明するなら「次数の最も低い文字について式を整理する」と手順をそのまま言う。 |
 | terms | augmented-matrix | pitfalls[0] | ○ | 日本の高校の学習指導要領には含まれないが、米国では Precalculus（OpenStax Algebra and Trigonometry）で扱う。 |
-| terms | auxiliary-angle-form | mapping_note |  | 英国の教科書では harmonic form ／ auxiliary angle method と呼ぶことがあるが、米国の用例には出てこない。 |
 | terms | average-value-of-a-function | pitfalls[0] |  | 学習指導要領解説には出てこない。 |
 | terms | bar-chart | pitfalls[0] |  | Khan Academy はどちらも使う（中学の講義では bar graph、AP Statistics では bar chart が多い）。 |
 | terms | base-case | mapping_note | ○ | 日本の答案は「[1] n = 1 のとき」と書くだけで、この段に名前をつけないことが多い。 |
@@ -65,7 +64,7 @@
 | terms | biconditional | pitfalls[0] |  | 日本の数I では「双条件文」という名前を使わず、「p ⇔ q」「p は q であるための必要十分条件」「p と q は同値」と言う。 |
 | terms | binomial-identities | pitfalls[0] | ○ | 日本の教科書は nCk と書くが、英語の本では縦に並べた (n k) や C(n, k) と書き、n choose k と読む。 |
 | terms | binomial-probability | pitfalls[0] |  | 日本の ₙCₖ は、英語では括弧の記号 (n k)（縦に並べる）で書き、n choose k と読む。 |
-| terms | blocking | mapping_note |  | 見出しの「ブロック化」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | blocking | mapping_note |  | 見出しの「ブロック化」は学習指導要領解説に無い（日本語版 Wikipedia「実験計画法」にはある）。 |
 | terms | boundary | pitfalls[0] | ○ | 日本の答案の「境界線を含む／含まない」は、英語ではグラフの実線（solid line）と点線（dashed line）の描き分けでも示す（用例コーパスでは dashed line は話し言葉にも書き言葉にも出てくる）。 |
 | terms | box-plot | en.variants[1].note |  | 話し言葉は Khan Academy の中学の講義と Professor Leonard。 |
 | terms | candidates-test | mapping_note |  | 学習指導要領解説には、閉区間で端点と極値の値を比べて最大値・最小値を求める方法の名前が出てこない。 |
@@ -75,7 +74,7 @@
 | terms | central-limit-theorem | pitfalls[1] |  | 標本の大きさの目安を n ≥ 30（at least 30 など）とすることが多いが、教科書によって違う。 |
 | terms | chain-rule | pitfalls[0] |  | 学習指導要領解説（数学III）は「合成関数の微分法」と言い、「連鎖律」は出てこない（日本語版 Wikipedia の記事名は「連鎖律」）。 |
 | terms | change-together | mapping_note |  | 「伴って変わる」は中学校学習指導要領解説が関数を導入する言い方（「伴って変わる二つの数量」）で、英語では y changes as x changes、y depends on x、as x increases, y increases のように、文で言い表す。 |
-| terms | change | mapping_note | ○ | 日本の中学の「x の増加量」「y の増加量」は、英語で change in x、change in y と言い、Δx、Δy（delta x、delta y と読む）とも書く。 |
+| terms | change | mapping_note |  | 中学校学習指導要領解説の「x の増加量」「y の増加量」（変化の割合は x の増加量に対する y の増加量の割合）は、英語で change in x、change in y と言い、Δx、Δy（delta x、delta y と読む）とも書く。 |
 | terms | characteristic-equation | mapping_note |  | 日本の数B の「特性方程式」は、aₙ₊₁ = paₙ + q に対して α = pα + q とおく式を指すことが多い。 |
 | terms | chinese-remainder-theorem | pitfalls[1] |  | 日本の数A では「3 で割ると 2 余り、5 で割ると 3 余る整数」のような問題として、定理の名前を出さずに扱うことがある。 |
 | terms | closed-interval | pitfalls[0] |  | 数I では定義域を 0 ≦ x ≦ 3 のように不等式で書くのがふつう。 |
@@ -88,7 +87,8 @@
 | terms | compare-coefficients | pitfalls[1] |  | 「係数比較法」と「数値代入法」は日本語の呼び名（学習指導要領解説には出てこない）。 |
 | terms | complement | pitfalls[0] | ○ | 日本の教科書は補集合を Ā と書く。 |
 | terms | complement | pitfalls[0] |  | 英語の本では Aᶜ、A′、Ā など記号は教科書による。 |
-| terms | complementary-event | pitfalls[0] | ○ | 日本の教科書は Ā と書くが、英語の教科書では A^c や A′ などを使う（教科書による）。 |
+| terms | complementary-event | pitfalls[0] |  | センター試験の問題文（平成 30 年度 数学Ⅰ・数学Ａ）は余事象を Ā と書き、学習指導要領解説も P(Ā) = 1 − P(A) と書く。 |
+| terms | complementary-event | pitfalls[0] |  | OpenStax Introductory Statistics は A′、Algebra and Trigonometry は E′ と書く（教科書による）。 |
 | terms | completely-randomized-design | mapping_note |  | 見出しの「完全無作為化計画」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | completing-the-square | pitfalls[0] |  | 平方完成した形 a(x − h)² + k の呼び方は教科書で分かれる。 |
 | terms | complex-number | pitfalls[0] |  | 米国の教科書では a + bi の形を standard form（または rectangular form）と呼ぶ（OpenStax Algebra and Trigonometry）。 |
@@ -100,9 +100,9 @@
 | terms | condition | pitfalls[0] |  | 数I では、真偽が決まる文を「命題」、変数の値で真偽が変わる文を「条件」と分ける。 |
 | terms | conditional-probability | pitfalls[0] | ○ | 日本の教科書は P_A(B) と書くが、英語では P(B \| A) と書き、the probability of B given A と読む。 |
 | terms | conditional-statement | mapping_note |  | 日本の数I は「命題 p ⇒ q」と言い、この形の命題そのものに名前を付けない（含意は論理学の語）。 |
-| terms | conditions-for-a-parallelogram | mapping_note |  | 日本の中 2 では四角形が平行四辺形になるための条件を 5 つまとめて学ぶが、英語にはそれらをまとめた決まった名前がなく、「四角形が平行四辺形であることを示す」（prove that a quadrilateral is a parallelogram）のように、示すことを文で言う。 |
+| terms | conditions-for-a-parallelogram | mapping_note |  | 中学校学習指導要領解説（第 2 学年）は「平行四辺形になるための条件」を平行四辺形の性質と並べて挙げる（本エントリの定義の 5 つ）が、用例コーパスと参照にはそれらをまとめた名前が出てこず、「四角形が平行四辺形であることを示す」（prove that a quadrilateral is a parallelogram）のように、示すことを文で言う。 |
 | terms | confidence-level | pitfalls[0] | ○ | 日本の教科書では「信頼度 95%」と言い、英語では 95% confidence level または at the 95% level と言う。 |
-| terms | congruence-criteria-for-right-triangles | mapping_note |  | 米国の Geometry は、日本の 2 つの条件のうち「斜辺と他の 1 辺がそれぞれ等しい」を HL（hypotenuse-leg）と呼んで定理として扱い、「斜辺と 1 つの鋭角がそれぞれ等しい」は AAS で示せる。 |
+| terms | congruence-criteria-for-right-triangles | mapping_note |  | CK-12 Geometry は、日本の 2 つの条件のうち「斜辺と他の 1 辺がそれぞれ等しい」を Hypotenuse-Leg (HL) Congruence Theorem と呼んで定理として扱う（4.16 HL Triangle Congruence）。 |
 | terms | congruence-criteria | mapping_note |  | 中学校学習指導要領解説の三角形の合同条件は 3 つ（対応する 3 組の辺、2 組の辺とその間の角、1 組の辺とその両端の角）で、「合同条件」とまとめて呼ぶ。 |
 | terms | congruence-criteria | definition_ja |  | 中学校学習指導要領解説（第 2 学年）では「3 組の辺」「2 組の辺とその間の角」「1 組の辺とその両端の角」がそれぞれ等しい、の 3 つ。 |
 | terms | congruence-criteria | pitfalls[0] |  | AAS（エントリ aas-congruence）は学習指導要領解説の合同条件に無い。 |
@@ -110,13 +110,12 @@
 | terms | congruent | pitfalls[0] | ○ | 合同の記号は日本では ≡（中学校学習指導要領の〔用語・記号〕）、英語では ≅（CK-12 Geometry・IM）。 |
 | terms | conic-section | pitfalls[0] |  | 日本の数C は「二次曲線」、英語は円錐の切り口として conic section と呼ぶ。 |
 | terms | conjugate-roots | mapping_note |  | 日本の「共役な解」は、実数係数の方程式で a + bi が解なら a − bi も解になる、という関係を指す。 |
-| terms | constant-function | pitfalls[2] | ○ | 日本の中学の一次関数は y = ax + b で a ≠ 0 とするので、定数関数は一次関数に含めない（エントリ linear-function）。 |
-| terms | constant-multiple-rule | mapping_note |  | 見出しの「定数倍の法則」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | constant-multiple-rule | mapping_note |  | 見出しの「定数倍の法則」は学習指導要領解説に無い（日本語版 Wikipedia「積の微分法則」にはある）。 |
 | terms | constant-multiple-rule | mapping_note |  | 学習指導要領解説には {kf(x)}′ = kf′(x) の性質の名前が出てこない。 |
 | terms | constant-of-proportionality | pitfalls[0] |  | 見出しは中学の教材（IM Grade 7・Grade 8 の glossary）と授業（Khan Academy の中学）の constant of proportionality にした。 |
 | terms | continuous-compounding | mapping_note | ○ | 日本の高校数学では連続複利を扱わない（e は数III で極限として導入する）。 |
 | terms | continuous-compounding | pitfalls[0] |  | 英語は名詞の continuous compounding より、interest compounded continuously ／ continuously compounded interest の形で言うことが多い（教科書は compounded continuously、授業では continuously compounded の語順が多い）。 |
-| terms | convenience-sample | mapping_note |  | 見出しの「便宜的抽出」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | convenience-sample | mapping_note |  | 見出しの「便宜的抽出」は学習指導要領解説に無い（日本語版 Wikipedia「標本調査」には節「便宜的抽出」がある）。 |
 | terms | coordinate-plane | en.variants[0].note |  | 中学・Algebra の講義と教科書は coordinate plane。 |
 | terms | coordinate-proof | mapping_note |  | 日本の数II では「座標を用いて証明せよ」として、図形を座標平面に置き、2 点間の距離や中点の座標で性質を示す。 |
 | terms | coordinate-proof | pitfalls[2] |  | 数II では中線定理 AB² + AC² = 2(AM² + BM²) の証明が代表的な例。 |
@@ -124,7 +123,7 @@
 | terms | coordinate-rule | mapping_note | ○ | 日本の教科書は平行移動を「x 軸方向に 3、y 軸方向に −2 だけ平行移動」と言葉で書き、(x, y) → (x + 3, y − 2) の形の記法を使わない。 |
 | terms | coordinates | pitfalls[1] |  | 数Aの「座標の考え方」で扱う空間の点の位置も、英語では coordinates in space（(x, y, z)）で言う。 |
 | terms | corner-nondifferentiable | mapping_note |  | 見出しの「角（微分不可能点）」は学習指導要領解説に無い、本プロジェクトの訳語。 |
-| terms | corresponding-angles-of-congruent-figures | pitfalls[1] | ○ | 日本の教科書は合同の記号に ≡ を使い、英語では ≅ を使う（エントリ congruent）。 |
+| terms | corresponding-angles-of-congruent-figures | pitfalls[1] |  | 中学校学習指導要領の〔用語・記号〕は合同の記号に ≡ を挙げ、英語（CK-12 Geometry・IM）では ≅ を使う（エントリ congruent）。 |
 | terms | corresponding-angles-postulate | mapping_note |  | 見出しの「同位角の公準」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | corresponding-angles-postulate | mapping_note |  | 日本の中2 では「平行線の同位角は等しい」を平行線の性質として扱う。 |
 | terms | corresponding-angles-postulate | mapping_note |  | 米国の教科書では公準（postulate）とするものと定理（theorem）とするものがある。 |
@@ -133,7 +132,7 @@
 | terms | coterminal-angle | mapping_note |  | 見出しの「共終角」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | coterminal-angle | mapping_note |  | 日本の数II では一般角 θ + 360°n（動径が同じ角）として扱い、この関係の角に名前を付けない。 |
 | terms | coterminal-angle | pitfalls[0] |  | 日本の一般角（エントリ general-angle）は θ + 360°n という角の表し方で、coterminal angle は動径が同じ角どうしの関係を指す。 |
-| terms | cpctc | mapping_note |  | 見出しの「CPCTC」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | cpctc | mapping_note |  | 見出しの「CPCTC」は英語の略語をそのまま使う（学習指導要領解説に無い）。 |
 | terms | cpctc | mapping_note |  | 日本の証明では「合同な図形の対応する辺（角）は等しい」と文で書き、略語はない。 |
 | terms | cramers-rule | pitfalls[0] | ○ | 日本の高校の学習指導要領には含まれない。 |
 | terms | critical-point | mapping_note |  | 学習指導要領解説には f′(x) = 0 となる x の名前が出てこない。 |
@@ -150,7 +149,7 @@
 | terms | definite-integral | pitfalls[0] |  | 学習指導要領解説（数学II）は、面積 S(t) の導関数が f(t) になることから定積分が面積を表すことを導く扱いと、区分求積法の考えで定義する扱いに触れる。 |
 | terms | degree-measure | pitfalls[0] |  | 用例コーパスでは degree measure は話・書とも少ない（話し言葉は Khan Academy の中学の講義だけ）。 |
 | terms | derivative-of-a-parametric-curve | mapping_note |  | ja.alt の「媒介変数曲線の微分」は学習指導要領解説に無い、本プロジェクトの訳語。 |
-| terms | derivative-of-the-exponential-function | mapping_note |  | 日本の「指数関数の導関数」は (eˣ)′ = eˣ と (aˣ)′ = aˣ log a をまとめて言う。 |
+| terms | derivative-of-the-exponential-function | mapping_note |  | 学習指導要領解説（数学III）は「指数関数の導関数」を三角関数・対数関数の導関数と並べて挙げる（(eˣ)′ = eˣ と (aˣ)′ = aˣ log a をまとめた言い方）。 |
 | terms | derivative-of-the-exponential-function | pitfalls[0] |  | OpenStax Calculus は aˣ ln a と書く（OpenStax Algebra and Trigonometry は底を省いた log x を常用対数とし、学習指導要領解説には ln が出てこない）。 |
 | terms | derivative-of-the-logarithm | pitfalls[0] |  | OpenStax は自然対数を ln x と書き（学習指導要領解説には ln が出てこない）、ell en x や natural log of x と読む。 |
 | terms | derivatives-in-polar-form | mapping_note |  | 見出しの「極曲線の微分」は学習指導要領解説に無い、本プロジェクトの訳語。 |
@@ -171,15 +170,15 @@
 | terms | displacement | pitfalls[0] |  | 学習指導要領解説（数学III）は「位置の変化」と言い、「変位」は物理の項目にだけ出てくる。 |
 | terms | distance-formula | pitfalls[0] | ○ | 日本では中 3 で三平方の定理を使って 2 点間の距離を求め、数II で公式として扱う。 |
 | terms | diverge-to-negative-infinity | pitfalls[0] |  | OpenStax Algebra and Trigonometry は自然対数を ln x、底を省いた log x を常用対数（底 10）と書く（学習指導要領解説には ln が出てこない）。 |
-| terms | divergence | pitfalls[1] |  | 日本の数III と同じく、英語でも振動する数列は diverge する（収束しないもの全体が divergence）。 |
-| terms | divisibility | pitfalls[1] |  | 数A では「a は b で割り切れる」「a は b の倍数」と言い、divisibility に当たる名詞はあまり使わない。 |
+| terms | divisibility | pitfalls[1] |  | 学習指導要領解説（中学校・高等学校）は約数・倍数の言い方で扱い、「整除性」「整除」は出てこない。 |
+| terms | divisibility | pitfalls[1] |  | センター試験の問題文は「37a が 4 で割り切れる」のように「割り切れる」と言う。 |
 | terms | divisibility | pitfalls[2] |  | 書き言葉は OpenStax Prealgebra・MIT の講義ノート・OpenStax Elementary Algebra、話し言葉は Khan Academy の中学の講義が中心。 |
 | terms | divisor | mapping_note |  | 米国の小中学校の教材（IM・OpenStax Prealgebra）は「約数」を factor と言い、the factors of 12 のように使う。 |
 | terms | domain-and-range | pitfalls[0] |  | 日本の −1 ≦ x ≦ 3（共通テスト・センター試験の問題文も ≦ を使う）は、英語では ≤ を使って −1 ≤ x ≤ 3 と書く。 |
-| terms | domain | definition_ja |  | 中学では「x の変域」と言う。 |
+| terms | domain | definition_ja |  | 中学校学習指導要領解説は「x の変域」と言う。 |
 | terms | domain | pitfalls[0] |  | 中学の「x の変域」も英語では domain（エントリ domain-and-range）。 |
 | terms | dot-product | mapping_note |  | 高校の「内積」は英語の dot product（OpenStax は scalar product とも書く）。 |
-| terms | elimination | mapping_note |  | 日本の「加減法」は式を足す・引くという操作から付いた名前で、英語は文字を消去することから elimination method（method of elimination）と呼ぶ。 |
+| terms | elimination | mapping_note |  | 中学校学習指導要領解説の「加減法」は式を足す・引くという操作から付いた名前で、英語は文字を消去することから elimination method（method of elimination）と呼ぶ。 |
 | terms | empirical-rule | mapping_note |  | 日本の数B では正規分布表を使って確率を求め、この目安に名前を付けない。 |
 | terms | end-behavior | mapping_note |  | 見出しの「関数の終端挙動」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | end-behavior | mapping_note |  | 日本の数III では x → ±∞ のときの極限（エントリ limit-at-infinity）として扱い、まとめた名前はない。 |
@@ -188,7 +187,7 @@
 | terms | end-of-proof | definition_ja | ○ | 日本の答案では「（証明終わり）」や「終」と書く。 |
 | terms | epsilon-delta-definition | pitfalls[0] |  | 学習指導要領解説（数学III）には出てこない。 |
 | terms | equal-angles | pitfalls[0] | ○ | 日本の教科書は ∠A = ∠B と書くが、∠A ≅ ∠B と m∠A = m∠B を使い分ける書き方もある。 |
-| terms | equal | pitfalls[1] | ○ | 日本の教科書は線分や角にも = を使う（エントリ congruent、equal-angles）。 |
+| terms | equal | pitfalls[1] |  | 共通テスト・センター試験の問題文は、線分の長さや角にも = を使う（AB = AC、∠ABC = B）（エントリ congruent、equal-angles）。 |
 | terms | equation-in-quadratic-form | mapping_note |  | 見出しの「2 次方程式の形の方程式」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | equation-in-quadratic-form | mapping_note | ○ | 日本では「x² = t とおく」のように、おき換えの手順として扱い、この種類の方程式に名前を付けない（x⁴ + ax² + b = 0 の形は「複 2 次式」と呼ぶことがある）。 |
 | terms | equation-of-a-circle | pitfalls[0] |  | 米国の教科書は (x − h)² + (y − k)² = r² と中心を (h, k) で書き、standard form of the equation of a circle と呼ぶ（OpenStax Algebra and Trigonometry）。 |
@@ -208,7 +207,7 @@
 | terms | exponential-regression | pitfalls[0] | ○ | 日本の高校では扱わない。 |
 | terms | extended-euclidean-algorithm | pitfalls[0] |  | 数A の一次不定方程式では、この手順を名前を付けずに「互除法の式を逆にたどる」形で使う。 |
 | terms | extraneous-solution | pitfalls[1] | ○ | 日本では「解の吟味」（エントリ checking-whether-the-solution-makes-sense）で除くと言う。 |
-| terms | extreme-value-theorem | mapping_note |  | ja.alt の「極値定理」は学習指導要領解説に無い、本プロジェクトの訳語（extreme value theorem の直訳）。 |
+| terms | extreme-value-theorem | mapping_note |  | ja.alt の「極値定理」は学習指導要領解説に無い（日本語版 Wikipedia「最大値最小値定理」は extreme value theorem の訳として挙げる）。 |
 | terms | factored-form | mapping_note |  | 見出しの「因数分解形」は学習指導要領解説に無い（日本語版 Wikipedia「二次関数」にはある）。 |
 | terms | factored-form | mapping_note | ○ | 日本の教科書では y = a(x − α)(x − β) を「x 軸と x = α, β で交わる放物線」の式として扱う。 |
 | terms | factoring-by-grouping | mapping_note |  | 見出しの「グループ分けによる因数分解」は学習指導要領解説に無い、本プロジェクトの訳語。 |
@@ -263,7 +262,7 @@
 | terms | imaginary-number | pitfalls[0] |  | 英語の imaginary number は、教科書によって bi（純虚数）だけを指すこともある（OpenStax Algebra and Trigonometry は bi の形の数として説明する）。 |
 | terms | imaginary-number | pitfalls[0] |  | 日本の「虚数」は b ≠ 0 の複素数全体。 |
 | terms | imaginary-solution | mapping_note |  | 日本の「虚数解」（実数でない解）をはっきり言うときは nonreal (complex) solution、imaginary solution。 |
-| terms | implicit-differentiation | mapping_note |  | ja.alt の「陰関数微分」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | implicit-differentiation | mapping_note |  | ja.alt の「陰関数微分」は学習指導要領解説に無い（日本語版 Wikipedia「対数微分法」にはある）。 |
 | terms | improper-integral | pitfalls[1] |  | 学習指導要領解説には出てこない。 |
 | terms | inclusion-exclusion-principle | pitfalls[0] |  | 数 A の n(A ∪ B) = n(A) + n(B) − n(A ∩ B) は 2 つの集合の場合。 |
 | terms | inclusion-exclusion-principle | pitfalls[0] | ○ | 日本の高校の教科書はこの原理に名前を付けない。 |
@@ -275,14 +274,14 @@
 | terms | independent-system | mapping_note | ○ | 日本では「解がただ 1 組」「解が無数にある（不定）」「解がない（不能）」と言い、連立方程式の種類に名前を付けない。 |
 | terms | independent-system | pitfalls[1] |  | 教科書によって分類の仕方が違う。 |
 | terms | indirect-measurement | mapping_note |  | 数I の「測量」は、直接測れない高さや距離を三角比・相似で求める問題を指す。 |
-| terms | inductive-step | mapping_note |  | 見出しの「帰納段階」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | inductive-step | mapping_note |  | 見出しの「帰納段階」は学習指導要領解説に無い（日本語版 Wikipedia「再帰」は数学的帰納法の証明の段を「基底段階」「帰納段階」と呼ぶ）。 |
 | terms | inductive-step | mapping_note | ○ | 日本の答案では「n = k のとき成り立つと仮定すると、n = k + 1 のとき …」と書き、段階に名前をつけない。 |
 | terms | inequality-sign | pitfalls[0] |  | 日本の ≦ ≧（共通テスト・センター試験の問題文、学習指導要領解説）は、米国の教科書（OpenStax）では ≤ ≥ と書く。 |
 | terms | inequality | pitfalls[0] |  | 日本の ≦ ≧（共通テスト・センター試験の問題文、学習指導要領解説）は、米国の教科書（OpenStax）では ≤ ≥ と書く。 |
 | terms | inferential-statistics | pitfalls[0] | ○ | 日本の数学 B の単元名は「統計的な推測」。 |
-| terms | infinite-discontinuity | mapping_note |  | 見出しの「無限不連続」は学習指導要領解説に無い、本プロジェクトの訳語。 |
-| terms | infinite-limit | mapping_note |  | 見出しの「無限大の極限」は学習指導要領解説に無い、本プロジェクトの訳語。 |
-| terms | infinite-series | pitfalls[1] |  | 日本の「級数」はふつう無限級数を指す。 |
+| terms | infinite-discontinuity | mapping_note |  | 見出しの「無限不連続」は学習指導要領解説に無い（日本語版 Wikipedia「不連続性の分類」には「無限不連続点」がある）。 |
+| terms | infinite-limit | mapping_note |  | 見出しの「無限大の極限」は学習指導要領解説に無い（日本語版 Wikipedia「数列の極限」には節「無限大の極限」がある）。 |
+| terms | infinite-series | pitfalls[1] |  | 日本語版 Wikipedia「級数」は級数を無限項の和として定義し（有限個の和は残りの項を 0 とみる場合）、学習指導要領解説は「無限級数」「無限等比級数」の形で使う。 |
 | terms | influential-point | mapping_note |  | 見出しの「影響点」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | inscribed-polygon | pitfalls[1] |  | 日本の数A では「円に内接する四角形」の性質（向かい合う角の和が 180°）として習う。 |
 | terms | instantaneous-rate-of-change | mapping_note |  | 見出しの「瞬間変化率」は学習指導要領解説に無いが、日本語版 Wikipedia「微分」は微分係数を x = a における瞬間変化率と説明する。 |
@@ -300,7 +299,8 @@
 | terms | intercepted-arc | mapping_note |  | 見出しの「切片の弧」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | intercepted-arc | mapping_note |  | 日本の数A は「弧 AB に対する円周角」と言い、角の側から弧を「切り取られた弧」と呼ばない。 |
 | terms | intercepted-arc | pitfalls[0] | ○ | 日本では同じことを「同じ弧に対する中心角の半分」と中心角で言う。 |
-| terms | intersecting-chords-theorem | mapping_note |  | 見出しの「交わる弦の定理」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | intersect | mapping_note |  | 共通テストの問題文は「2 点で交わる」「接する」「共有点をもたない」を分けて言う（令和 3 年度 第 1 日程 数学II）。 |
+| terms | intersecting-chords-theorem | mapping_note |  | 見出しの「交わる弦の定理」は学習指導要領解説に無い（日本語版 Wikipedia「方べきの定理」の図の説明にはある）。 |
 | terms | intersecting-chords-theorem | mapping_note | ○ | 日本では方べきの定理の 1 つの場合（2 本の弦 AB, CD が円の内部の点 P で交わるとき PA·PB = PC·PD）として扱い、この場合だけの名前は付けない。 |
 | terms | intersecting-chords-theorem | pitfalls[0] | ○ | 日本では方べきの定理の 1 つの場合として習い、この場合だけの名前は付けない。 |
 | terms | interval-notation | pitfalls[0] | ○ | 日本の高校では 2 < x ≦ 5 のように不等式で書き、この書き方は大学で使う（閉区間 closed-interval、開区間 open-interval）。 |
@@ -309,10 +309,9 @@
 | terms | interval | pitfalls[0] | ○ | 日本の教科書は区間を a ≦ x ≦ b と不等式で書くが、英語の教科書では区間記法 [a, b]、(a, b)、[a, ∞) も使う。 |
 | terms | inverse-proportion | mapping_note |  | 中学校学習指導要領解説（第 1 学年）の「反比例」は、a を比例定数として y = a/x または xy = a で表される関係。 |
 | terms | inverse-trigonometric-function | pitfalls[0] |  | 学習指導要領解説には出てこないが、OpenStax Algebra and Trigonometry（Precalculus）で扱い、AP Calculus でも微分する（CED topic 3.4）。 |
-| terms | is-monotonically-increasing | mapping_note |  | 等号を含めるかどうかの定義は教科書によるので、区別するときは strictly increasing（狭義）と nondecreasing（広義）を使う。 |
 | terms | joint-variation | mapping_note |  | 見出しの「結合変化」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | joint-variation | mapping_note | ○ | 日本では「z は x と y の積に比例する」と言う。 |
-| terms | jump-discontinuity | mapping_note |  | 見出しの「跳躍不連続」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | jump-discontinuity | mapping_note |  | 見出しの「跳躍不連続」は学習指導要領解説に無い（日本語版 Wikipedia「不連続性の分類」には「跳躍不連続点」がある）。 |
 | terms | lagrange-error-bound | mapping_note |  | 見出しの「ラグランジュの誤差限界」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | lagrange-error-bound | mapping_note |  | 日本の大学の教科書はテイラーの定理の剰余項（ラグランジュの剰余項）として扱い、その上からの評価に名前をつけない。 |
 | terms | law-of-detachment | pitfalls[0] |  | 米国の Geometry の教科書では law of detachment、論理学・離散数学では modus ponens と呼ぶ。 |
@@ -324,24 +323,22 @@
 | terms | least-common-denominator | en.variants[0].note |  | 教科書は最初にこの形で導入し、あとは LCD と書く（OpenStax）。 |
 | terms | least-common-multiple | en.variants[0].note |  | 話し言葉では少ない（Khan Academy の中学の講義・NancyPi）。 |
 | terms | least-common-multiple | en.variants[1].note |  | 話し言葉ではこちらがずっと多く、ほとんどが Khan Academy の中学の講義。 |
-| terms | left-riemann-sum | mapping_note |  | 見出しの「左リーマン和」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | left-riemann-sum | mapping_note |  | 見出しの「左リーマン和」は学習指導要領解説に無い（日本語版 Wikipedia「リーマン和」にはある）。 |
 | terms | left-riemann-sum | pitfalls[0] |  | 区分求積法の和 Σ_{k=0}^{n−1}（左端）と Σ_{k=1}^{n}（右端）の名前は学習指導要領解説に出てこないが、AP の CED（topic 6.2）は left ／ right ／ midpoint Riemann sums と trapezoidal sums に名前を付けて比べる。 |
 | terms | less-than-or-equal-to | pitfalls[0] | ○ | 記号は日本では ≦（共通テスト・センター試験の問題文、学習指導要領解説）、米国の教科書（OpenStax）では ≤。 |
 | terms | let-u-equal | en.variants[2].note |  | 答案・教科書では Let u = x² + 1. のように = で書く。 |
 | terms | lhopitals-rule | pitfalls[2] |  | 学習指導要領（平成30年告示）の本文に「ロピタル」は無く、解説は数学III の課題学習の例で発展として触れるだけ。 |
-| terms | lhopitals-rule | pitfalls[2] | ○ | 日本の高校の答案で使ってよいかは教科書・先生による。 |
 | terms | liate | mapping_note |  | OpenStax Calculus Volume 2 が紹介する覚え方で、学習指導要領解説には対応するものが出てこない。 |
 | terms | like-radicals | mapping_note |  | 見出しの「同類根号」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | like-radicals | mapping_note |  | 日本の中 3 では「根号の中が同じ数」の和・差として、名前を付けずに計算する。 |
 | terms | likelihood | pitfalls[0] |  | 中学の確率で言う likelihood は「起こりやすさ」の意味。 |
-| terms | limit-at-infinity | mapping_note |  | 見出しの「無限遠での極限」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | limit-at-infinity | mapping_note |  | 見出しの「無限遠での極限」は学習指導要領解説に無い（日本語版 Wikipedia「拡大実数」には「無限遠における極限」がある）。 |
 | terms | limit-at-infinity | mapping_note |  | 学習指導要領解説（数学III）は「x の値を限りなく大きくしたときの f(x) の極限」と言う。 |
-| terms | limit-comparison-test | mapping_note |  | 見出しの「極限比較判定法」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | limit-comparison-test | mapping_note |  | 見出しの「極限比較判定法」は学習指導要領解説に無い（日本語版 Wikipedia「積分判定法」の関連項目に「極限比較判定法」がある）。 |
 | terms | limit-of-sine-x-over-x | mapping_note |  | 学習指導要領解説（数学III）は「三角関数の極限」で lim_{θ→0} sin θ / θ = 1 を取り扱うとし、英語では名前を付けず、式をそのまま the limit as x approaches 0 of sine x over x equals 1 と読む。 |
 | terms | line | pitfalls[1] |  | 共通テストの問題文は記号を使わず「直線 AB」と書く。 |
-| terms | linear-approximation | mapping_note |  | ja.alt の「接線近似」は学習指導要領解説に無い、本プロジェクトの訳語（tangent line approximation の訳）。 |
-| terms | linear-function | pitfalls[0] |  | m が傾き（slope）、b が y 切片（y-intercept）で、日本の y = ax + b の a が m に当たる。 |
-| terms | linear-function | pitfalls[1] | ○ | 日本の中学の一次関数は a ≠ 0 とする。 |
+| terms | linear-approximation | mapping_note |  | ja.alt の「接線近似」は学習指導要領解説に無い（日本語版 Wikipedia「線型近似」は接線近似とも呼ぶと書く）。 |
+| terms | linear-function | pitfalls[0] |  | m が傾き（slope）、b が y 切片（y-intercept）で、中学校学習指導要領解説の y = ax + b の a が m に当たる。 |
 | terms | linear-inequality | pitfalls[0] | ○ | 日本の教科書は ≦ ≧、英語の教材は ≤ ≥ と書く。 |
 | terms | linear-inequality | pitfalls[1] | ○ | そのグラフ（半平面）は日本では数II の「不等式の表す領域」で扱う。 |
 | terms | linear-pair | mapping_note |  | 見出しの「一直線をなす角」は学習指導要領解説に無い、本プロジェクトの訳語。 |
@@ -366,8 +363,7 @@
 | terms | midpoint-formula | mapping_note |  | 見出しの「中点公式」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | midpoint-formula | mapping_note | ○ | 日本の教科書は「中点の座標」として式を示す。 |
 | terms | midpoint-riemann-sum | mapping_note |  | 見出しの「中点リーマン和」は学習指導要領解説に無い、本プロジェクトの訳語。 |
-| terms | mixture-problem | mapping_note |  | 日本の「濃度の問題」は、食塩水の濃度など、濃さの違うものを混ぜ合わせる文章題を指す。 |
-| terms | monomial | pitfalls[0] | ○ | 日本の中学では多項式を単項式の和（項が 2 つ以上）として単項式と区別するが、英語の polynomial は monomial も含む（エントリ polynomial）。 |
+| terms | monomial | pitfalls[0] |  | 中学校学習指導要領解説は「単項式と多項式の意味」と対比で挙げ、日本語版 Wikipedia「多項式」は「多項式」を単項式でない整式の意味で用いる流儀があると書く。 |
 | terms | monotone-convergence-theorem | pitfalls[1] |  | 数III の教科書では「有界な単調数列は収束する」を定理の名前なしで扱うことがある。 |
 | terms | motion-problem | mapping_note |  | OpenStax の Algebra の教科書はこれを uniform motion applications と呼び、D = rt（distance = rate × time）の式を立てる。 |
 | terms | move-term-to-other-side | en.variants[0].note |  | Khan Academy（中学の講義と高校向け）と YouTube の解説が中心で、大学の講義（MIT OCW）には少ない。 |
@@ -385,7 +381,7 @@
 | terms | nonlinear-system | mapping_note | ○ | 日本では数I・数II で「連立方程式（2 次を含む）」として扱い、放物線と直線の共有点を求める問題として学ぶ。 |
 | terms | normal-approximation-to-the-binomial | pitfalls[0] |  | 近似を使ってよい目安（np ≥ 10 かつ n(1 − p) ≥ 10 など）は教科書によって数が違う。 |
 | terms | normal-distribution | pitfalls[0] | ○ | 日本の教科書は N(μ, σ²) と分散を書くが、OpenStax Introductory Statistics は X ~ N(μ, σ) と標準偏差を書く（51 件）。 |
-| terms | normal-probability-plot | mapping_note |  | 見出しの「正規確率プロット」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | normal-probability-plot | mapping_note |  | 見出しの「正規確率プロット」は学習指導要領解説に無い（日本語版 Wikipedia「Q-Qプロット」にはある）。 |
 | terms | nth-roots-of-unity | pitfalls[1] |  | 数II の 1 の 3 乗根 ω（ω² + ω + 1 = 0、ω³ = 1）は、英語でも cube roots of unity と呼び、ω（omega）の記号を使うが、米国の高校課程では ω に決まった呼び名や性質の練習はほぼない。 |
 | terms | nth-term-test | mapping_note |  | 見出しの「n 項判定法」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | nth-term-test | mapping_note | ○ | 日本の教科書では「級数が収束すれば aₙ → 0」の対偶として扱い、判定法の名前はつけない。 |
@@ -396,7 +392,6 @@
 | terms | number-of-elements | pitfalls[1] |  | 高校の「要素の個数」の意味だけなら number of elements でよい。 |
 | terms | numerical-integration | pitfalls[0] |  | 学習指導要領解説には数値積分が出てこない。 |
 | terms | objective-function | pitfalls[0] | ○ | 日本の高校の問題文は「x + y の最大値を求めよ」のように書く。 |
-| terms | one-sixth-formula | mapping_note |  | 日本の受験で使う公式で、OpenStax Calculus にも AP の CED にも無く、用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。 |
 | terms | one-to-one-property | mapping_note |  | 見出しの「一対一の性質」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | one-to-one-property | mapping_note | ○ | 日本の教科書では、指数関数・対数関数が単調であることから直接 aˣ = aʸ ⇔ x = y を使い、名前をつけない。 |
 | terms | optimization-problem | mapping_note |  | 学習指導要領解説（数学II・III）は、文章題の最大・最小を「最適化」とは呼ばない（解説の「最適化」は IoT の話だけ）。 |
@@ -409,10 +404,11 @@
 | terms | paragraph-proof | mapping_note |  | 日本の証明はふつうこの形（文章で書く）なので、わざわざ名前を付けない。 |
 | terms | paragraph-proof | pitfalls[0] | ○ | 日本の答案の証明はほぼこの形。 |
 | terms | parallel-vectors | pitfalls[0] | ○ | 日本の教科書の「平行条件」（a ∥ b ⇔ b = ka）は、英語では条件に名前をつけず、one vector is a scalar multiple of the other のように言う（scalar multiple of は用例コーパスに少し出てくる）。 |
+| terms | parallel | definition_ja |  | 直線 AB と CD が平行であることを、中学校学習指導要領の〔用語・記号〕どおり AB // CD と書く（英語の教材の記号は ∥。エントリ parallel-sign）。 |
 | terms | parametric-equations | mapping_note |  | ja.alt の「媒介変数方程式」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | parent-function | mapping_note |  | 見出しの「親関数」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | parent-function | mapping_note | ○ | 日本では「y = x² のグラフを平行移動したもの」と言い、もとになる関数に名前を付けない（エントリ transformations-of-functions）。 |
-| terms | partial-fraction-decomposition | pitfalls[2] |  | 日本の数III の「分数関数」は、学習指導要領解説では「簡単な分数関数」のグラフを扱う。 |
+| terms | partial-fraction-decomposition | pitfalls[2] |  | 学習指導要領解説（数学III）は「分数関数」について「簡単な分数関数」のグラフを扱う。 |
 | terms | partial-sum | pitfalls[0] |  | 数B では「初項から第 n 項までの和」、数III では「部分和」。 |
 | terms | pemdas | mapping_note |  | 日本には演算の順序の覚え方の決まった名前がない。 |
 | terms | percent-change | mapping_note | ○ | 日本では「〜% 増える」「〜% 減る」「増加率」と言い、増減をまとめた名前はない。 |
@@ -426,25 +422,24 @@
 | terms | pigeonhole-principle | pitfalls[1] | ○ | 日本の入試問題の解説では「部屋割り論法」と呼ぶことがある。 |
 | terms | place | en.variants[0].note |  | 話し言葉はほとんどが Khan Academy の中学の講義。 |
 | terms | place | en.variants[1].note |  | 話し言葉は大半が Khan Academy の中学の講義、書き言葉は大半が OpenStax Prealgebra。 |
-| terms | point-of-internal-division | mapping_note |  | 内分点の座標の公式は英国・インドの教科書では section formula と呼ぶが、米国の用例コーパスには出てこない。 |
 | terms | point-of-intersection | pitfalls[1] |  | 日本の「共有点」は接する点も含む。 |
 | terms | point-slope-form | mapping_note |  | 見出しの「点傾き形」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | point-slope-form | mapping_note | ○ | 日本では数II で「点 (x₁, y₁) を通り傾き m の直線の方程式」として同じ式を学ぶが、形の名前はない。 |
 | terms | polynomial-inequality | mapping_note | ○ | 見出しの「多項式不等式」は学習指導要領解説に無い、本プロジェクトの訳語（日本では 3 次以上のものを高次不等式と呼ぶ）。 |
 | terms | polynomial | pitfalls[0] |  | 高校の「整式」を integral expression と直訳しない。 |
-| terms | polynomial | pitfalls[1] |  | 中学の「多項式」は単項式の和（2 項以上）で単項式と区別するが、英語の polynomial は単項式（monomial）も含む。 |
+| terms | polynomial | pitfalls[1] |  | 中学校学習指導要領解説は「単項式と多項式の意味」と対比で挙げ、日本語版 Wikipedia「多項式」は「多項式」を単項式でない整式の意味で用いる流儀があると書く。 |
 | terms | polynomial | pitfalls[1] |  | 範囲は高校の「整式」と同じ。 |
 | terms | positive-and-negative-numbers | en.variants[0].note |  | 話し言葉ではこちらだけを使う（ほとんどが Khan Academy の中学の講義）。 |
 | terms | positive-number | pitfalls[1] |  | 正の整数（positive integer）は 1, 2, 3, … で、日本の自然数と同じ範囲（エントリ natural-number）。 |
 | terms | postulate | mapping_note | ○ | 日本の高校数学では「公理」と言い、「公準」はユークリッド原論の訳語として出てくる程度。 |
 | terms | power-rule | mapping_note |  | 学習指導要領解説には (xⁿ)′ = nxⁿ⁻¹ の公式の名前が出てこない。 |
-| terms | power-rule | mapping_note |  | ja.alt の「べき乗則」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | power-rule | mapping_note |  | ja.alt の「べき乗則」は学習指導要領解説に無い。 |
 | terms | predicate | pitfalls[0] |  | 日本の数I では、x > 3 のように変数を含み値を決めると真偽が決まる文を「条件」と呼び、「述語」とは言わない。 |
 | terms | preimage | mapping_note | ○ | 日本の中学では「もとの図形」と言い、原像という言葉は写像（大学）で使う。 |
 | terms | prime-factorization | pitfalls[2] |  | 話し言葉はほとんどが Khan Academy の中学の講義、書き言葉は大半が OpenStax Prealgebra と Elementary Algebra。 |
 | terms | prime-polynomial | mapping_note | ○ | 日本の中学・高校では「これ以上因数分解できない」と言い、名前を付けない。 |
 | terms | probability-density-function | pitfalls[1] |  | 日本の共通テスト（数学B）は正規分布表を添えて確率を求めさせる。 |
-| terms | probability | pitfalls[2] | ○ | 日本の高校では全事象を U で表すが、上の式では標本空間を S とした（sample-space を参照）。 |
+| terms | probability | pitfalls[2] |  | 高等学校学習指導要領解説（数学A）は全事象を U で表す（P(U) = 1）が、上の式では標本空間を S とした（sample-space を参照）。 |
 | terms | projectile-motion | mapping_note |  | 日本の中 3 の数学では、物を落としたときの落ちる距離 y m と時間 x 秒の関係 y = 4.9x² を、関数 y = ax² の例として扱う。 |
 | terms | projectile-motion | pitfalls[0] |  | 日本の中 3 の y = 4.9x² は落ちた距離（下向きに測る）なので x² の係数が正。 |
 | terms | proposition | mapping_note |  | 日本の「命題」は真か偽かがはっきり決まる文や式。 |
@@ -466,9 +461,9 @@
 | terms | radical-equation | pitfalls[1] | ○ | 日本では数III で扱うが、米国の教科書では Algebra 1 の OpenStax Elementary Algebra から扱う（Intermediate Algebra、Algebra and Trigonometry にも出てくる）。 |
 | terms | radical-expression | mapping_note |  | 見出しの「根号式」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | radical-expression | mapping_note | ○ | 日本では「根号を含む式」と言う。 |
-| terms | radical-function | mapping_note |  | 日本の数III の「無理関数」は √ を含む式で表される関数（y = √(ax + b) など）。 |
-| terms | radical-function | mapping_note |  | ja.alt の「根号関数」は学習指導要領解説に無い、本プロジェクトの訳語。 |
-| terms | range | definition_ja |  | 中学で習う「y の変域」のこと。 |
+| terms | radical-function | mapping_note |  | 学習指導要領解説（数学III）の「無理関数」は √ を含む式で表される関数で、y = √(ax + b) の形のものを中心に扱う。 |
+| terms | radical-function | mapping_note |  | ja.alt の「根号関数」は学習指導要領解説に無い（日本語版 Wikipedia「冪根」は n 乗根をとる関数を根号関数と呼ぶ）。 |
+| terms | range | definition_ja |  | 中学校学習指導要領解説の「y の変域」のこと。 |
 | terms | range | pitfalls[1] |  | 中学の「y の変域」も range と言い、x の変域と合わせて言うときは domain and range（エントリ domain-and-range）。 |
 | terms | rank-nullity-theorem | pitfalls[0] |  | rank theorem は教科書によって別の定理（行の階数と列の階数が等しい）を指すので候補にしなかった。 |
 | terms | rate-of-change | mapping_note |  | 中学の「変化の割合」は x の増加量に対する y の増加量の比。 |
@@ -482,24 +477,22 @@
 | terms | reduced-row-echelon-form | pitfalls[0] |  | 教科書では Nicholson が使う。 |
 | terms | reduced-row-echelon-form | pitfalls[1] |  | 日本語は教科書により簡約階段形・既約行階段形など呼び方が分かれる。 |
 | terms | reference-angle | mapping_note | ○ | 日本の教科書には名前がない。 |
-| terms | reflexive-property | pitfalls[0] |  | 日本の証明では「BD は共通」と書き、反射律という名前は使わない。 |
+| terms | reflexive-property | pitfalls[0] |  | センター試験の問題文（平成 27 年度 数学Ⅰ・数学Ａ）は「∠C は共通」のように書き、反射律という名前は使わない。 |
 | terms | regression-line | pitfalls[1] |  | OpenStax は ŷ = a + bx（a が切片、b が傾き）と書き（11 件）、日本の y = ax + b と文字の役割が逆になる。 |
 | terms | related-rates | mapping_note |  | 学習指導要領解説（数学III）には、時刻とともに変わる 2 つの量の変化率の関係を求める問題の名前が出てこない。 |
 | terms | related-rates | mapping_note |  | 見出しの「関連変化率」は学習指導要領解説に無い、本プロジェクトの訳語。 |
-| terms | relationship-between-roots-and-coefficients | mapping_note |  | 米国の高校の参照（CED・OpenStax・IM・CK-12）にはこの名前も relationship between roots and coefficients も出てこず、the sum of the roots is −b/a, the product is c/a と式で言う。 |
 | terms | relatively-prime | mapping_note | ○ | 日本の教科書は「互いに素」を 2 つの整数について定義する。 |
 | terms | relatively-prime | mapping_note |  | 用例コーパスの relatively prime はほとんどが MIT（話し言葉は大半が MIT OCW で、ほかは Khan Academy の中学の講義。書き言葉はすべて MIT の講義ノート）。 |
 | terms | remainder-theorem | pitfalls[0] |  | 2 次式で割った余り（ax + b の形）を求める問題は、米国の高校ではあまり扱わない。 |
-| terms | remainder | pitfalls[2] |  | 数A の合同式では、余りを剰余とも言う。 |
 | terms | removable-discontinuity | pitfalls[0] |  | 学習指導要領解説（数学III）には不連続点の種類の名前が出てこない。 |
 | terms | repeated-trials | mapping_note |  | 日本の「反復試行」は、同じ試行を独立に何回も繰り返すこと。 |
 | terms | repeating-decimal | pitfalls[0] | ○ | 日本の教科書は繰り返す部分の最初と最後の数字の上に点を打つ（0.1̇23̇）。 |
-| terms | representations-of-a-function | mapping_note | ○ | 日本の中学では、1 つの関数を表・式・グラフの 3 つで表し、互いに行き来する。 |
+| terms | representations-of-a-function | mapping_note |  | 中学校学習指導要領解説は、関数を表，式，グラフを相互に関連付けて考えることを挙げる。 |
 | terms | resistant-statistic | mapping_note |  | 見出しの「抵抗性がある」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | riemann-sum | mapping_note |  | 区分求積法は、区間を n 等分して長方形の面積の和をつくり、その極限を定積分として求める手法の名前（学習指導要領解説も区分求積法の考えで定積分を導入する扱いに触れる）。 |
 | terms | riemann-sum | mapping_note |  | 日本の「lim (1/n)Σ f(k/n) を定積分で表せ」型の問題は、OpenStax Calculus では express the limit as a definite integral のように指示される。 |
-| terms | right-hand-limit | pitfalls[0] |  | 日本の数III は x → a + 0 と書く（学習指導要領解説も lim_{x→+0}）が、OpenStax は x → a⁺ と書き、a plus と読む（approaches a from the right）。 |
-| terms | right-riemann-sum | mapping_note |  | 見出しの「右リーマン和」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | right-hand-limit | pitfalls[0] |  | 学習指導要領解説（数学III）は lim_{x→+0} と書き、日本語版 Wikipedia「片側極限」は lim_{x→a+0} と書く。 |
+| terms | right-riemann-sum | mapping_note |  | 見出しの「右リーマン和」は学習指導要領解説に無い（日本語版 Wikipedia「リーマン和」にはある）。 |
 | terms | right-triangle-similarity | mapping_note |  | 見出しの「直角三角形の相似」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | right-triangle-similarity | mapping_note | ○ | 日本では直角三角形の直角の頂点から斜辺に垂線を引いてできる 3 つの三角形が相似であることを、定理の名前を付けずに使う。 |
 | terms | right-triangle-similarity | pitfalls[2] |  | 定理の英語名は教科書による。 |
@@ -514,7 +507,7 @@
 | terms | same-side-exterior-angles | mapping_note |  | 見出しの「同側外角」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | same-side-exterior-angles | mapping_note | ○ | 日本の教科書には名前がない。 |
 | terms | same-side-exterior-angles | pitfalls[1] |  | same-side と consecutive のどちらを使うかは教科書による。 |
-| terms | sample-space | pitfalls[0] | ○ | 日本の高校では全事象を U で表す。 |
+| terms | sample-space | pitfalls[0] |  | 高等学校学習指導要領解説（数学A）は全事象を U で表す（P(U) = 1）。 |
 | terms | scale-factor | mapping_note |  | 日本の相似比は 2 つの図形の対応する長さの比（2 : 3 のように比で書く）。 |
 | terms | scale-factor | pitfalls[0] |  | 日本の相似比 2 : 3 は向きを言わずに比で書く。 |
 | terms | scale-factor | pitfalls[2] |  | 用例コーパスでは、話し言葉はほとんどが Khan Academy の中学の講義で、書き言葉は少ない（MIT の講義ノートと OpenStax）。 |
@@ -549,17 +542,16 @@
 | terms | simplify-radicals | en.variants[0].note |  | 話し言葉は NancyPi と Khan Academy の中学の講義に出てくるが、数は少ない。 |
 | terms | simplify-radicals | pitfalls[0] |  | 話し言葉はどれも少ない（いちばん多い simplify radicals も NancyPi と Khan Academy の中学の講義だけ）。 |
 | terms | sinusoid | mapping_note |  | 日本の数II では y = sin θ のグラフを「正弦曲線」と呼ぶ。 |
-| terms | sketch | mapping_note |  | 日本の問題文の「図示せよ」「図示すると」（共通テストの問題文にもある）は、領域なら Sketch ／ Graph ／ Shade the region、曲線なら Sketch the graph と言う。 |
+| terms | sketch | mapping_note |  | 日本語の問題文の「図示せよ」「図示すると」（共通テストの問題文には「図示すると」がある）は、領域なら Sketch ／ Graph ／ Shade the region、曲線なら Sketch the graph と言う。 |
 | terms | slope-field | pitfalls[0] |  | 学習指導要領解説には出てこない。 |
-| terms | slope-formula | mapping_note |  | 見出しの「傾きの公式」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | slope-formula | mapping_note |  | 見出しの「傾きの公式」は学習指導要領解説に無い（日本語版 Wikipedia「中点法」は 2 点を結ぶ直線の傾きの式を「傾きの公式」と呼ぶ）。 |
 | terms | slope-formula | mapping_note | ○ | 日本では「変化の割合 = y の増加量 ÷ x の増加量」（エントリ rate-of-change）として同じ計算をするが、公式の名前はない。 |
 | terms | slope-intercept-form-of-a-line | mapping_note |  | 見出しの「傾き切片形」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | slope-intercept-form-of-a-line | mapping_note | ○ | 日本では y = ax + b を一次関数の式として扱い、形に名前を付けない。 |
 | terms | slope-intercept-form-of-a-line | pitfalls[0] |  | 日本の一次関数 y = ax + b の a が m にあたる。 |
-| terms | slope | pitfalls[0] | ○ | 日本の教科書の y = ax + b の a に当たる。 |
-| terms | sohcahtoa | mapping_note |  | 見出しの「SOHCAHTOA」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | slope | pitfalls[0] |  | 中学校学習指導要領解説の y = ax + b の a に当たる。 |
+| terms | sohcahtoa | mapping_note |  | 見出しの「SOHCAHTOA」は英語の語呂合わせをそのまま使う（学習指導要領解説に無い。日本語版 Wikipedia「三角関数の暗記方法」は英語圏の覚え方として SOH-CAH-TOA を挙げる）。 |
 | terms | sohcahtoa | mapping_note | ○ | 日本では sin・cos・tan の定義を筆記体の s・c・t の形で覚える方法があり、この語呂合わせは使わない。 |
-| terms | solution-pair | pitfalls[2] | ○ | 日本の教科書は解を x = 2, y = 3 や (x, y) = (2, 3) と書く。 |
 | terms | solution-set | pitfalls[0] | ○ | 区間の記法 (2, 3)、[1, ∞) は日本の高校の教科書では使わない（2 < x < 3、x ≧ 1 と書く）。 |
 | terms | solve-the-right-triangle | mapping_note |  | 見出しの「三角比で辺を求める」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | solving-triangles | pitfalls[0] |  | 米国の教科書は正弦定理を law of sines、余弦定理を law of cosines と呼ぶ（OpenStax Algebra and Trigonometry）。 |
@@ -599,8 +591,9 @@
 | terms | system-of-linear-inequalities | mapping_note |  | 日本の数I の「連立不等式」は 1 変数（英語の compound inequality、エントリ system-of-inequalities）。 |
 | terms | system-of-linear-inequalities | mapping_note |  | 2 変数の連立不等式は数II の「不等式の表す領域」で扱う。 |
 | terms | system-of-linear-inequalities | pitfalls[1] |  | 日本の数I の「連立不等式」は 1 変数の不等式の組で、英語では compound inequality と言う（エントリ system-of-inequalities）。 |
-| terms | tangent-problem | mapping_note |  | 見出しの「接線問題」は学習指導要領解説に無い、本プロジェクトの訳語。 |
-| terms | telescoping-series | mapping_note |  | 見出しの「望遠鏡級数」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | tangent-chord-theorem | mapping_note |  | 日本の接弦定理の形（接線と弦のなす角は、その角の内部にある弧に対する円周角に等しい）は、the angle between a tangent and a chord equals the inscribed angle on the other side of the chord のように文で言う（本プロジェクトの書き方の例）。 |
+| terms | tangent-problem | mapping_note |  | 見出しの「接線問題」は学習指導要領解説に無い（日本語版 Wikipedia「解析学」は「曲線の接線問題」と書く）。 |
+| terms | telescoping-series | mapping_note |  | 見出しの「望遠鏡級数」は学習指導要領解説に無い（日本語版 Wikipedia「畳み込み級数」は telescoping series の別名として挙げる）。 |
 | terms | telescoping-series | mapping_note |  | 日本の数B では Σ1/(k(k + 1)) を 1/k − 1/(k + 1) に分けて途中を消す方法として扱い、級数に名前をつけない。 |
 | terms | terminal-side | mapping_note |  | 日本の「動径」は、始線から回転して角をつくる半直線そのもの。 |
 | terms | test-point | mapping_note |  | 見出しの「テスト点」は学習指導要領解説に無い、本プロジェクトの訳語。 |
@@ -651,7 +644,7 @@
 | terms | washer-method | mapping_note |  | 学習指導要領解説にはこの求め方の名前が出てこない。 |
 | terms | washer-method | mapping_note |  | 見出しの「ワッシャー法」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | write-dx-in-terms-of-du | pitfalls[0] |  | dx を解き出す（solve for dx）か、被積分関数の中の 2x dx をそのまま du に置き換えるかは教科書による。 |
-| terms | y-intercept | mapping_note | ○ | 日本の中学では「切片」と言えば y 切片、つまり直線が y 軸と交わる点の y 座標（y = ax + b の b）を指す。 |
+| terms | y-intercept | mapping_note |  | 日本語版 Wikipedia「一次関数」は y = ax + b の b（直線と y 軸との交点の座標）を y 切片、あるいは単に切片と呼び、センター試験の問題文（平成 31 年度 数学Ⅰ）も直線について「切片が −15」と書く。 |
 | terms | z-score | pitfalls[0] |  | 日本の偏差値（hensachi）とは別。 |
 | terms | zero-product-property | mapping_note |  | 見出しの「零因子の性質」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | zero-product-property | mapping_note | ○ | 日本の教科書はこの性質に名前を付けず、「AB = 0 ならば A = 0 または B = 0」という文のまま使う。 |
@@ -660,7 +653,6 @@
 | symbols | conditional-probability-subscript-jp | notes[0] |  | 日本の P_A(B) は、米国の書き方では P(B \| A)。 |
 | symbols | congruence-mod | notes[1] | ○ | ≡ は日本の中学では図形の合同の記号（congruent-sign）。 |
 | symbols | congruent-sign | notes[0] |  | 日本の記号 ≡ で書いた合同も、英語では同じく is congruent to と読む。 |
-| symbols | cosecant-of-theta | notes[0] |  | 書くときは csc（英国や日本の大学の本は cosec とも）。 |
 | symbols | curl-del-cross | notes[1] |  | 日本の本の rot F（ローテーション）は、米国の教科書では curl F と書く。 |
 | symbols | equals-question-mark | notes[1] | ○ | 日本の教科書では使わない。 |
 | symbols | for-all-quantifier | notes[1] | ○ | 記号は英語の本で使い、日本の高校の教科書は言葉で「すべての」と書く。 |

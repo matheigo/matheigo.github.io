@@ -1,12 +1,12 @@
 {
   "summary": {
-    "checked": "2026-09-26",
+    "checked": "2026-09-27",
     "rule": "English: 8+ consecutive words; Japanese: 20+ characters (whitespace removed)",
-    "fields": 15644,
+    "fields": 15645,
     "englishSources": 3884,
     "japaneseSources": 403,
-    "spans": 489,
-    "entries": 413
+    "spans": 483,
+    "entries": 409
   },
   "spans": [
     {
@@ -203,18 +203,6 @@
       "span": "ck 12 geometry 5 21 area of regular and irregular polygons",
       "sources": {
         "ref:ck12-geometry": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "arc-length",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the length of an arc of a circle",
-      "sources": {
-        "openstax-algtrig": 1,
-        "openstax-precalculus": 1
       }
     },
     {
@@ -960,17 +948,6 @@
     },
     {
       "collection": "terms",
-      "id": "congruence-criteria-for-right-triangles",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the hypotenuses and one pair of legs are",
-      "sources": {
-        "ref:ck12-geometry": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "congruence-criteria",
       "field": "mapping_note",
       "lang": "en",
@@ -1046,6 +1023,17 @@
       "span": "you can draw it without lifting your pencil",
       "sources": {
         "yt:profleonard": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "converse-of-the-inscribed-angle-theorem",
+      "field": "mapping_note",
+      "lang": "en",
+      "length": 9,
+      "span": "ck 12 geometry 6 14 inscribed angles in circles",
+      "sources": {
+        "ref:ck12-geometry": 1
       }
     },
     {
@@ -1400,11 +1388,10 @@
       "id": "difference",
       "field": "pitfalls[0]",
       "lang": "en",
-      "length": 10,
-      "span": "the difference of a and b a b the difference",
+      "length": 8,
+      "span": "a b the difference of a and b",
       "sources": {
-        "openstax-elemalg": 1,
-        "ref:levin-dmoi4": 1
+        "openstax-elemalg": 1
       }
     },
     {
@@ -2260,39 +2247,6 @@
     },
     {
       "collection": "terms",
-      "id": "inscribed-angle-theorem",
-      "field": "definition_ja",
-      "lang": "ja",
-      "length": 23,
-      "span": "その弧に対する中心角の大きさの半分であるという",
-      "sources": {
-        "jp:kaisetsu-chu": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "inscribed-angle-theorem",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 12,
-      "span": "that the measure of an inscribed angle is half the measure of",
-      "sources": {
-        "ref:ck12-geometry": 4
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "inscribed-angle-theorem",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "inscribed angles that intercept the same arc are",
-      "sources": {
-        "ref:ck12-geometry": 2
-      }
-    },
-    {
-      "collection": "terms",
       "id": "instantaneous-rate-of-change",
       "field": "examples[0].en",
       "lang": "en",
@@ -2909,8 +2863,8 @@
       "id": "midsegment-theorem",
       "field": "definition_en",
       "lang": "en",
-      "length": 19,
-      "span": "joining the midpoints of two sides of a triangle is parallel to the third side and half as long",
+      "length": 9,
+      "span": "connecting the midpoints of two sides of a triangle",
       "sources": {
         "ref:ck12-geometry": 3,
         "ref:nicholson-lawa-2021a": 1
@@ -3216,17 +3170,6 @@
         "openstax-precalculus": 2,
         "khan-middle": 1,
         "ref:im-9-12": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "parallelogram",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 9,
-      "span": "a quadrilateral with both pairs of opposite sides parallel",
-      "sources": {
-        "ref:im-9-12": 2
       }
     },
     {
@@ -3552,17 +3495,6 @@
       "sources": {
         "openstax-algtrig": 2,
         "openstax-precalculus": 2
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "product",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the result of multiplying two or more numbers",
-      "sources": {
-        "openstax-prealgebra": 1
       }
     },
     {
@@ -4565,17 +4497,6 @@
     },
     {
       "collection": "terms",
-      "id": "square-shape",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "with four equal sides and four right angles",
-      "sources": {
-        "ref:ck12-geometry": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "square-units",
       "field": "examples[1].en",
       "lang": "en",
@@ -4749,17 +4670,6 @@
     },
     {
       "collection": "terms",
-      "id": "sum",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the result of adding two or more numbers",
-      "sources": {
-        "openstax-prealgebra": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "summation-notation",
       "field": "pitfalls[1]",
       "lang": "en",
@@ -4886,6 +4796,17 @@
     },
     {
       "collection": "terms",
+      "id": "tangent-chord-theorem",
+      "field": "mapping_note",
+      "lang": "en",
+      "length": 8,
+      "span": "6 16 angles on and inside a circle",
+      "sources": {
+        "ref:ck12-geometry": 1
+      }
+    },
+    {
+      "collection": "terms",
       "id": "tangent-line",
       "field": "examples[1].en",
       "lang": "en",
@@ -4906,6 +4827,17 @@
       "span": "find an equation of the tangent plane to",
       "sources": {
         "openstax-calculus": 6
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "tangent-segments-are-equal",
+      "field": "mapping_note",
+      "lang": "en",
+      "length": 21,
+      "span": "two tangents theorem if two tangent segments are drawn to one circle from the same external point then they are congruent",
+      "sources": {
+        "ref:ck12-geometry": 2
       }
     },
     {

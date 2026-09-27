@@ -1,15 +1,15 @@
 # 書き写しの検出（Phase 5 の監査の前の機械の確かめ 1）
 
-作成: 2026-09-26 ／ `pnpm audit:copy`（scripts/audit/copy-check.ts）
+作成: 2026-09-27 ／ `pnpm audit:copy`（scripts/audit/copy-check.ts）
 
 規則: 英語は連続 8 語以上、日本語は空白を除いて 20 文字以上、エントリの本文（定義・例文・pitfalls・mapping_note・variants の note・コロケーション、記号の notes・日本語の読み、フレーズの en・ja・意図・variants・notes、慣習差の題・jp・us・advice_ja）が
 用例コーパス（manifest の全ファイル: MIT OCW・Khan Academy・YouTube・MICASE・OpenStax・MIT の講義ノート）と参照（CED 2 つ・Nicholson・Levin・IM 2 つ・CK-12 2 つ）、
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15644
+- 調べた本文の欄: 15645
 - 英語のソース: 3884 ファイル ／ 日本語のソース: 403 ファイル
-- 一致した箇所: **489**（413 項目）
+- 一致した箇所: **483**（409 項目）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
 |---|---|---|---|---|---|---|---|
@@ -67,7 +67,6 @@
 | terms | angle-of-elevation | examples[1].en | en | 8 | building the angle of elevation to the top | 2 | openstax-algtrig, openstax-precalculus |
 | terms | angle-sum-of-a-triangle | mapping_note | en | 9 | ck 12 geometry 4 17 triangle angle sum theorem | 1 | ref:ck12-geometry |
 | terms | apothem | pitfalls[2] | en | 11 | ck 12 geometry 5 21 area of regular and irregular polygons | 1 | ref:ck12-geometry |
-| terms | arc-length | definition_en | en | 8 | the length of an arc of a circle | 2 | openstax-algtrig, openstax-precalculus |
 | terms | area | examples[0].en | en | 12 | the area of a triangle is one half base times height so | 6 | yt:organicchem, khan-middle, openstax-prealgebra, openstax-elemalg, openstax-intalg, ref:ck12-geometry |
 | terms | area-between-two-curves | pitfalls[2] | en | 9 | find the area of the region bounded by the | 1 | openstax-calculus |
 | terms | area-in-polar-coordinates | definition_en | en | 10 | the area of a region bounded by a polar curve | 1 | openstax-calculus |
@@ -132,7 +131,6 @@
 | terms | conditions-for-a-parallelogram | examples[0].en | en | 8 | to prove that a quadrilateral is a parallelogram | 1 | ref:ck12-geometry |
 | terms | confidence-interval | examples[1].en | en | 9 | construct a 95 confidence interval for the population mean | 2 | openstax-introstats, yt:profleonard |
 | terms | congruence-criteria | mapping_note | en | 8 | geometry 2 6 side angle side triangle congruence | 1 | ref:im-9-12 |
-| terms | congruence-criteria-for-right-triangles | definition_en | en | 8 | the hypotenuses and one pair of legs are | 1 | ref:ck12-geometry |
 | terms | congruence-modulo-n | examples[1].en | en | 9 | prove that congruence modulo n is an equivalence relation | 1 | ref:levin-dmoi4 |
 | terms | congruent-arcs | pitfalls[0] | en | 8 | ck 12 geometry 6 9 arcs in circles | 1 | ref:ck12-geometry |
 | terms | connected | definition_en | en | 9 | there is a path between every pair of vertices | 2 | mit-notes, ref:levin-dmoi4 |
@@ -140,6 +138,7 @@
 | terms | contingency-table | examples[1].en | en | 9 | find the probability that a randomly chosen student is | 1 | openstax-introstats |
 | terms | continuous | examples[0].en | en | 8 | you can draw it without lifting your pencil | 1 | yt:profleonard |
 | terms | converse | examples[1].en | en | 9 | if two angles are vertical angles then they are | 1 | ref:ck12-geometry |
+| terms | converse-of-the-inscribed-angle-theorem | mapping_note | en | 9 | ck 12 geometry 6 14 inscribed angles in circles | 1 | ref:ck12-geometry |
 | terms | converse-of-the-pythagorean-theorem | examples[1].en | en | 8 | the converse of the pythagorean theorem to determine | 1 | ref:ck12-geometry |
 | terms | coordinate-proof | examples[1].en | en | 9 | that the diagonals of a parallelogram bisect each other | 3 | ref:im-9-12, mit-18.02, ref:nicholson-lawa-2021a |
 | terms | coordinate-vector | definition_en | en | 10 | a vector as a linear combination of the basis vectors | 1 | ref:nicholson-lawa-2021a |
@@ -169,7 +168,7 @@
 | terms | diagonalization | definition_en | en | 8 | finding an invertible matrix p such that p | 1 | ref:nicholson-lawa-2021a |
 | terms | diameter | examples[0].en | en | 9 | all the way across the circle through the center | 1 | khan-middle |
 | terms | die | examples[1].en | en | 9 | find the probability of rolling a number greater than | 3 | openstax-algtrig, openstax-precalculus, khan-middle |
-| terms | difference | pitfalls[0] | en | 10 | the difference of a and b a b the difference | 2 | openstax-elemalg, ref:levin-dmoi4 |
+| terms | difference | pitfalls[0] | en | 8 | a b the difference of a and b | 1 | openstax-elemalg |
 | terms | differential-equation | pitfalls[0] | ja | 20 | 程度の簡単な微分方程式の意味と解法を扱う | 1 | jp:kaisetsu-kou |
 | terms | dilation | pitfalls[2] | en | 10 | ck 12 geometry 7 16 dilation in the coordinate plane | 1 | ref:ck12-geometry |
 | terms | dimension | examples[1].en | en | 8 | the dimension of the null space of a | 1 | mit-18.06 |
@@ -243,9 +242,6 @@
 | terms | infinite-geometric-series | examples[1].en | en | 8 | find the sum of the infinite geometric series | 3 | openstax-algtrig, openstax-precalculus, openstax-intalg |
 | terms | initial-point | examples[0].en | en | 9 | put the tail of the second vector at the | 1 | khan-ap-calc |
 | terms | inner-function | examples[0].en | en | 9 | to multiply by the derivative of the inside function | 5 | yt:patrickjmt, mit-18.01, yt:nancypi, mit-18.02, yt:profleonard |
-| terms | inscribed-angle-theorem | definition_ja | ja | 23 | その弧に対する中心角の大きさの半分であるという | 1 | jp:kaisetsu-chu |
-| terms | inscribed-angle-theorem | definition_en | en | 12 | that the measure of an inscribed angle is half the measure of | 1 | ref:ck12-geometry |
-| terms | inscribed-angle-theorem | definition_en | en | 8 | inscribed angles that intercept the same arc are | 1 | ref:ck12-geometry |
 | terms | instantaneous-rate-of-change | examples[0].en | en | 8 | is the slope of the tangent line there | 1 | khan-ap-calc |
 | terms | instantaneous-rate-of-change | examples[1].en | en | 8 | the instantaneous rate of change of f x | 1 | openstax-calculus |
 | terms | instantaneous-velocity | examples[1].en | en | 9 | find the instantaneous velocity of the ball at t | 3 | openstax-calculus, openstax-precalculus, yt:organicchem |
@@ -298,7 +294,7 @@
 | terms | midline | examples[1].en | en | 8 | the amplitude period and midline of the graph | 2 | openstax-algtrig, openstax-precalculus |
 | terms | midpoint | examples[1].en | en | 8 | find the coordinates of the midpoint of the | 1 | openstax-algtrig |
 | terms | midpoint-formula | examples[1].en | en | 10 | use the midpoint formula to find the midpoint of the | 1 | openstax-intalg |
-| terms | midsegment-theorem | definition_en | en | 19 | joining the midpoints of two sides of a triangle is parallel to the third side and half as long | 2 | ref:ck12-geometry, ref:nicholson-lawa-2021a |
+| terms | midsegment-theorem | definition_en | en | 9 | connecting the midpoints of two sides of a triangle | 2 | ref:ck12-geometry, ref:nicholson-lawa-2021a |
 | terms | midsegment-theorem | mapping_note | en | 8 | theorem ck 12 geometry 4 19 midsegment theorem | 1 | ref:ck12-geometry |
 | terms | minor | examples[1].en | en | 8 | by minors along the first row to evaluate | 3 | openstax-intalg, openstax-algtrig, openstax-precalculus |
 | terms | minor-arc | pitfalls[2] | en | 8 | ck 12 geometry 6 9 arcs in circles | 1 | ref:ck12-geometry |
@@ -326,7 +322,6 @@
 | terms | p-value | definition_en | en | 8 | the probability assuming the null hypothesis is true | 1 | khan-ap-stats |
 | terms | paragraph-proof | examples[1].en | en | 10 | that the base angles of an isosceles triangle are congruent | 2 | ref:im-9-12, ref:ck12-geometry |
 | terms | parallel-lines | examples[0].en | en | 10 | parallel lines have the same slope but different y intercepts | 5 | openstax-elemalg, openstax-algtrig, openstax-precalculus, khan-middle, ref:im-9-12 |
-| terms | parallelogram | definition_en | en | 9 | a quadrilateral with both pairs of opposite sides parallel | 1 | ref:im-9-12 |
 | terms | parametric-equations | examples[1].en | en | 8 | the curve given by the parametric equations x | 1 | openstax-calculus |
 | terms | partial-derivative | examples[1].en | en | 8 | the partial derivatives f x and f y | 1 | openstax-calculus |
 | terms | partial-order | definition_en | en | 8 | a relation that is reflexive antisymmetric and transitive | 1 | ref:levin-dmoi4 |
@@ -354,7 +349,6 @@
 | terms | preimage | examples[1].en | en | 8 | the y axis find the coordinates of the | 1 | ref:ck12-geometry |
 | terms | prism | examples[1].en | en | 8 | the height of the prism is 10 cm | 1 | ref:im-6-8 |
 | terms | probability-density-function | examples[1].en | en | 9 | the probability density function of x is f x | 1 | openstax-introstats |
-| terms | product | definition_en | en | 8 | the result of multiplying two or more numbers | 1 | openstax-prealgebra |
 | terms | product-to-sum-formulas | pitfalls[0] | en | 8 | sum to product and product to sum formulas | 2 | openstax-algtrig, openstax-precalculus |
 | terms | properties-of-inequalities | definition_en | en | 8 | multiplying or dividing by a negative number reverses | 1 | openstax-algtrig |
 | terms | properties-of-logarithms | definition_ja | en | 8 | log a m log a n log a | 3 | openstax-intalg, openstax-algtrig, openstax-precalculus |
@@ -440,7 +434,6 @@
 | terms | square-matrix | definition_en | en | 8 | a matrix with the same number of rows | 1 | openstax-intalg |
 | terms | square-of-a-binomial | definition_en | en | 11 | the middle term is twice the product of the two terms | 2 | openstax-algtrig, openstax-elemalg |
 | terms | square-root-of-a-number | definition_en | en | 8 | square root of a is a number that | 1 | openstax-algtrig |
-| terms | square-shape | definition_en | en | 8 | with four equal sides and four right angles | 1 | ref:ck12-geometry |
 | terms | square-units | examples[1].en | en | 8 | 4 so the area of the rectangle is | 1 | ref:im-6-8 |
 | terms | square-units | examples[2].en | en | 8 | find the area of the triangle with vertices | 1 | ref:nicholson-lawa-2021a |
 | terms | standard-deviation | definition_en | en | 8 | spread in the same units as the data | 1 | openstax-introstats |
@@ -452,7 +445,6 @@
 | terms | straight-angle | definition_en | en | 9 | point in opposite directions and form a straight line | 1 | ref:im-6-8 |
 | terms | subset | definition_en | en | 9 | every element of a is also an element of | 1 | ref:levin-dmoi4 |
 | terms | subset | definition_en | en | 8 | set a is a subset of a set | 1 | ref:levin-dmoi4 |
-| terms | sum | definition_en | en | 8 | the result of adding two or more numbers | 1 | openstax-prealgebra |
 | terms | sum-of-a-geometric-sequence | definition_en | en | 11 | the sum of the first n terms of a geometric sequence | 8 | openstax-algtrig, openstax-precalculus, openstax-intalg, ref:levin-dmoi4, khan-ap-calc, openstax-calculus ほか |
 | terms | sum-of-an-arithmetic-sequence | definition_en | en | 12 | the sum of the first n terms of an arithmetic sequence the | 9 | openstax-algtrig, openstax-precalculus, openstax-intalg, ref:levin-dmoi4, khan-ap-calc, openstax-calculus ほか |
 | terms | sum-of-the-interior-angles | examples[1].en | en | 10 | the sum of the interior angles of a polygon is | 4 | ref:ck12-geometry, ref:levin-dmoi4, khan-algebra, openstax-prealgebra |
@@ -467,8 +459,10 @@
 | terms | take-the-limit | examples[1].en | en | 8 | taking the limit of both sides as n | 1 | openstax-calculus |
 | terms | take-the-log-of-both-sides | definition_en | en | 8 | to both sides of an equation or inequality | 1 | khan-middle |
 | terms | take-the-partial-derivative | examples[0].en | en | 8 | take the partial derivative with respect to y | 1 | yt:profleonard |
+| terms | tangent-chord-theorem | mapping_note | en | 8 | 6 16 angles on and inside a circle | 1 | ref:ck12-geometry |
 | terms | tangent-line | examples[1].en | en | 9 | find the equation of the tangent line to the | 3 | openstax-calculus, openstax-precalculus, khan-ap-calc |
 | terms | tangent-plane | examples[1].en | en | 8 | find an equation of the tangent plane to | 1 | openstax-calculus |
+| terms | tangent-segments-are-equal | mapping_note | en | 21 | two tangents theorem if two tangent segments are drawn to one circle from the same external point then they are congruent | 1 | ref:ck12-geometry |
 | terms | tessellation | pitfalls[2] | en | 8 | grade 8 9 1 tessellations of the plane | 1 | ref:im-6-8 |
 | terms | test-point | examples[1].en | en | 9 | choose a test point in each interval to determine | 1 | openstax-calculus |
 | terms | the-limit-does-not-exist | examples[1].en | en | 8 | lim x 0 x x does not exist | 1 | openstax-calculus |

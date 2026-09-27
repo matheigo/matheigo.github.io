@@ -1,10 +1,9 @@
 # 確かめられない言い方の警告（validate。scripts/lib/wording.ts）
 
-作成: 2026-09-26 ／ `pnpm validate` の warn を集めた。監査 2 の H-5 で足した警告（通じる／一番よく使う／減点／資料の名前のない「ことが多い」）。**59 文**（verified 0。監査 2 の範囲の文は直した）。各語の監査で直すか、資料の名前を主語にする。
+作成: 2026-09-26 ／ `pnpm validate` の warn を集めた。監査 2 の H-5 で足した警告（通じる／一番よく使う／減点／資料の名前のない「ことが多い」）と、監査 3（Fable）で足した「英語には〜がない」「決まった名前はない」（資料の外の英語・日本語の主張。AT_LARGE）。**59 文**（verified 0。監査 2・3 の範囲の文は直した）。各語の監査で直すか、資料の名前を主語にする。
 
 | バッチ | コレクション | id | confidence | 欄 | 文 |
 |---|---|---|---|---|---|
-| 11 | terms | substitution-method | likely | pitfalls[1] | 代入法と並べて問われることが多いので、2 つの名前を組で覚える。 |
 | 13 | terms | error | likely | pitfalls[0] | 誤差の意味では absolute error、measurement error、rounding error のように前に語を付けて言うことが多い。 |
 | 13 | terms | radical-sign | likely | mapping_note | 日本語では記号 √ を「ルート」と読むことが多いが、英語では記号そのものを radical sign（radical symbol）と呼び、√a は the square root of a と読む。 |
 | 13 | terms | rationalizing-the-denominator | likely | pitfalls[0] | 英語では名詞句より、動詞句 rationalize the denominator で言うことが多い（問題文の Rationalize the denominator. が「分母を有理化せよ」）。 |
@@ -25,7 +24,6 @@
 | 17 | terms | union-of-events | likely | pitfalls[0] | 確率では A ∪ B を「A or B」と読むことが多い。 |
 | 18 | terms | cubic-equation | likely | pitfalls[0] | 授業では単に a cubic（3 次式）と言うことが多い。 |
 | 18 | terms | polynomial-equation-of-higher-degree | likely | definition_ja | 因数定理で因数分解して解くことが多い。 |
-| 18 | terms | relationship-between-roots-and-coefficients | likely | pitfalls[1] | 英語は roots と言うことが多い。 |
 | 19 | terms | angle-addition-formulas | likely | pitfalls[0] | 値を「求めよ」は、米国の問題では find the exact value（小数ではなく正確な値）と書くことが多い。 |
 | 19 | terms | auxiliary-angle-form | likely | mapping_note | 「合成」を synthesis と訳すと通じない言い方になる（STYLE の直訳禁止リスト）。 |
 | 19 | terms | division-algorithm | likely | pitfalls[0] | 授業では式 A = BQ + R をそのまま言うことが多い。 |
@@ -40,6 +38,8 @@
 | 22 | terms | statistical-graph | likely | pitfalls[0] | 英語では総称より、個々のグラフの名前（bar graph、line graph、pie chart など）で呼ぶことが多い。 |
 | 23 | terms | argument-of-a-complex-number | likely | pitfalls[2] | 極座標の θ（偏角）には名前をつけないことが多い（polar-angle を参照）。 |
 | 23 | terms | linearly-independent | likely | pitfalls[0] | 日本の高校は「一次独立」、大学の線形代数は「線形独立」と呼ぶことが多いが、英語はどちらも linearly independent（名詞は linear independence）。 |
+| 23 | terms | pemdas | likely | mapping_note | 日本には演算の順序の覚え方の決まった名前がない。 |
+| 24 | terms | area-model | likely | mapping_note | 日本の中 3 の教科書も、長方形の面積で式の展開を説明するが、図に決まった名前はない。 |
 | 24 | terms | foil | likely | pitfalls[2] | Outer と Inner の項は同類項になることが多いので、FOIL のあとでまとめる（(x + 4)(x − 3) = x² − 3x + 4x − 12 = x² + x − 12）。 |
 | 24 | terms | piecewise-function | likely | mapping_note | 日本の高校では「場合分けして定義された関数」として扱い、名前を付けないことが多い。 |
 | 24 | terms | point-slope-form | likely | mapping_note | 中 2 では y = ax + b に点の座標を代入して b を求めることが多い。 |
