@@ -9,10 +9,6 @@
     {
       "text": "cosecant theta",
       "register": "standard"
-    },
-    {
-      "text": "csc theta",
-      "register": "spoken"
     }
   ],
   "spoken_ja": "コセカント シータ",
@@ -56,14 +52,19 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Trigonometric_functions",
       "note": "記事「Trigonometric functions」: cosecant の略記は csc か cosec"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「三角関数」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0",
+      "note": "読み（sin: サイン、cos: コサイン、tan: タンジェント、sec: セカント、cosec: コセカント、cot: コタンジェント）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "cosecant of *": 36,
-      "csc theta | csc x | cosec": 1,
       "cosecant theta | cosecant x | cosecant squared": 34
     },
     "sources": [
@@ -75,6 +76,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -7,7 +7,7 @@
       "register": "standard"
     }
   ],
-  "spoken_ja": "u 方向の方向微分係数",
+  "spoken_ja": "u 方向の方向微分",
   "name_en": "directional derivative",
   "name_ja": "方向微分",
   "category": "derivatives",
@@ -21,7 +21,7 @@
     ]
   },
   "notes": [
-    "D_u f は the directional derivative of f in the direction of u と読む。記号どおりに D sub u of f とも読める。"
+    "D_u f は the directional derivative of f in the direction of u と読む。"
   ],
   "sources": [
     {
@@ -29,11 +29,18 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 3"
+      "title": "OpenStax Calculus Volume 3",
+      "note": "Directional Derivatives and the Gradient（the directional derivative of f in the direction of u）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「方向微分」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%96%B9%E5%90%91%E5%BE%AE%E5%88%86",
+      "note": "方向微分"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "directional derivative": 24
@@ -42,6 +49,6 @@
       "mit-18.02",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

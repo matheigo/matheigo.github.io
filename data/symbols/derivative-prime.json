@@ -11,11 +11,11 @@
       "register": "spoken"
     }
   ],
-  "spoken_ja": "エフ ダッシュ エックス（日本では「ダッシュ」、英語では prime）",
+  "spoken_ja": "エフ ダッシュ エックス",
   "name_en": "derivative (prime notation)",
   "name_ja": "導関数（プライム記法）",
   "category": "derivatives",
-  "term_ref": "derivative",
+  "term_ref": "prime-notation",
   "level": {
     "jp": [
       "数II",
@@ -27,16 +27,33 @@
     ]
   },
   "notes": [
-    "日本語の「エフ ダッシュ」をそのまま f dash と言う例は用例コーパスにない。英語は prime（f prime of x）。",
+    "f′(x) は f prime of x と読む（′ は prime）。",
     "二階微分 f''(x) は 'f double prime of x'。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「プライム」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%A9%E3%82%A4%E3%83%A0",
+      "note": "ダッシュと呼ぶ"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 2.2（f′(x)）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "The Derivative as a Function（f′(x)）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "f prime of x": 742
@@ -52,6 +69,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

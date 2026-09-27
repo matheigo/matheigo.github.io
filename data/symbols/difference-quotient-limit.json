@@ -27,7 +27,7 @@
     ]
   },
   "notes": [
-    "the limit as h approaches zero of f of x plus h minus f of x, all over h と読む。all over で分子全体を h で割ることを示す。",
+    "all over h で、分子の f(x + h) − f(x) 全体を h で割ることを示す。",
     "分数の部分だけを difference quotient と呼ぶ。"
   ],
   "sources": [
@@ -41,10 +41,16 @@
     {
       "type": "textbook",
       "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 2.2（f′(x) = lim_{h→0} (f(x + h) − f(x))/h）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "the limit as h approaches zero of": 18,
@@ -57,6 +63,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

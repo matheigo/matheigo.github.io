@@ -7,10 +7,6 @@
       "register": "standard"
     },
     {
-      "text": "l n x",
-      "register": "standard"
-    },
-    {
       "text": "log base e of x",
       "register": "standard"
     }
@@ -32,20 +28,35 @@
     ]
   },
   "notes": [
-    "数III の log x（底 e）は、英語では ln x と書いて the natural log of x か L N x と読む。底を言うなら log base e of x。",
-    "∫ 1/x dx = log|x| + C は英語の教科書では ln|x| + C と書く。"
+    "log x（底 e）は the natural log of x と読む。底を言うなら log base e of x。英語で ln x と書いたときの読みは natural-log-ln。",
+    "OpenStax Calculus Volume 1（Antiderivatives）は ∫ 1/x dx = ln|x| + C と書く。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "Antiderivatives（∫ 1/x dx = ln|x| + C）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）〔用語・記号〕",
+      "note": "数III 微分法: 自然対数・e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「自然対数」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%87%AA%E7%84%B6%E5%AF%BE%E6%95%B0",
+      "note": "底を省略して log x と書く"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "natural log of * | natural log *": 874,
-      "l n | ln": 744,
       "log base e": 33
     },
     "sources": [
@@ -61,6 +72,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

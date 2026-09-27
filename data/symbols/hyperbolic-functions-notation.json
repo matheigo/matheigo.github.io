@@ -30,8 +30,8 @@
     ]
   },
   "notes": [
-    "cosh x は cosh（kosh）と読み、hyperbolic cosine of x とも言う。sinh は cinch と読むか hyperbolic sine と言う。",
-    "tanh は hyperbolic tangent と言う（tanch と読むこともあるが、講義にはほとんど出てこない）。"
+    "cosh x は cosh と読み（OpenStax Calculus Volume 1 1.5 は gosh と韻を踏むと書く）、hyperbolic cosine of x とも言う。sinh は cinch と読むか hyperbolic sine と言う。",
+    "tanh は tanch と読む（OpenStax Calculus Volume 1 1.5）。hyperbolic tangent とも言う。"
   ],
   "sources": [
     {
@@ -39,28 +39,34 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 1"
+      "title": "OpenStax Calculus Volume 1",
+      "note": "1.5 Exponential and Logarithmic Functions（cosh は gosh と韻、sinh は cinch、tanh は tanch と発音）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「双曲線関数」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8F%8C%E6%9B%B2%E7%B7%9A%E9%96%A2%E6%95%B0",
+      "note": "ハイパボリックサイン・ハイパボリックコサイン"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "cosh": 69,
       "hyperbolic sine | hyperbolic cosine | hyperbolic tangent": 26,
-      "cinch | sinch": 6
+      "!a cinch | sinch": 2
     },
     "sources": [
       "mit-18.01",
       "mit-18.03",
-      "mit-18.06",
       "yt:blackpenredpen",
       "yt:patrickjmt"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

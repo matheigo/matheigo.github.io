@@ -17,12 +17,13 @@
       "数II"
     ],
     "us": [
+      "Geometry",
       "Algebra 2",
       "Precalculus"
     ]
   },
   "notes": [
-    "π/2 rad は pi over two radians と読む。単位を書かずに π/2 とだけ書くことが多く、そのときも角は radians で測っている。"
+    "π/2 rad は pi over two radians と読む。OpenStax Precalculus（7.1 Angles）は radian を単位のない量とし、書かなくてよいとする。単位を書かない π/2 も radians で測った角。"
   ],
   "sources": [
     {
@@ -35,10 +36,27 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "7.1 Angles（radians are a unitless measure）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Geometry 7.12 Radian Sense（π/3 radians）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「ラジアン」",
+      "url": "https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%B8%E3%82%A2%E3%83%B3",
+      "note": "ラジアン"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "* radians": 252
@@ -56,6 +74,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

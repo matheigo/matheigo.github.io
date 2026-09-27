@@ -27,8 +27,8 @@
     ]
   },
   "notes": [
-    "dx は 'd x' と2音で読む。'dee ex' と書くこともある。",
-    "日本では「インテグラル a から b、f(x) dx」と記号を左から順に読むことが多い。英語は the integral from a to b of f of x dx と、of f of x で被積分関数を読み、最後に dx を読む。",
+    "dx は d x と 2 音で読む。",
+    "英語は the integral from a to b of f of x dx と、of f of x で被積分関数を読み、最後に dx を読む。",
     "∫₀¹ は the integral from zero to one と読む。上端・下端が文字でも数でも同じ形で読む。"
   ],
   "tts_text": "the integral from a to b of f of x, d x",
@@ -36,10 +36,27 @@
     {
       "type": "reference",
       "title": "Nekovar, Mathematical English (a brief summary)"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 6.3（definite integral notation）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "The Definite Integral"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「積分記号」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%A9%8D%E5%88%86%E8%A8%98%E5%8F%B7",
+      "note": "インテグラル"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "the integral from * to * of": 246,
@@ -56,6 +73,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -9,10 +9,6 @@
     {
       "text": "the number of elements in A",
       "register": "spoken"
-    },
-    {
-      "text": "n of A",
-      "register": "spoken"
     }
   ],
   "spoken_ja": "A の要素の個数 ／ n(A)",
@@ -28,33 +24,46 @@
       "数A"
     ],
     "us": [
-      "Intro Statistics",
+      "Precalculus",
       "Discrete Math"
     ]
   },
   "notes": [
-    "|A| も n(A) も the number of elements in A と読める。離散数学の講義は the cardinality of A と言う。",
-    "n(A) は文字どおり n of A とも読む。"
+    "|A| も n(A) も the number of elements in A と読める。Levin（1.5・5.1）は |A| を the cardinality of A（the number of elements in A）と説明する。",
+    "OpenStax Algebra and Trigonometry（13.7）は n(E) を the number of elements in E として確率を n(E)/n(S) と書く。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.5・5.1（|A| denotes the cardinality of A）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.7 Probability（n(E) = number of elements in E）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A (2) 場合の数と確率（n(A∪B) = n(A) + n(B) − n(A∩B)）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "n of a | n of b": 4,
       "the cardinality of *": 57,
       "the number of elements in *": 4
     },
     "sources": [
-      "khan-algebra",
-      "khan-ap-calc",
-      "mit-18.06",
       "mit-6.042"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

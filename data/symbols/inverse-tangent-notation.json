@@ -28,6 +28,7 @@
       "大学"
     ],
     "us": [
+      "Geometry",
       "Precalculus",
       "AP Calculus AB",
       "Calculus I"
@@ -35,7 +36,7 @@
   },
   "notes": [
     "tan⁻¹ x も arctan x も、arctangent of x か inverse tangent of x と読む。短く arctan x とも言う。",
-    "∫ 1/(1 + x²) dx = arctan x + C は the integral of one over one plus x squared is arctangent of x plus C。"
+    "∫ 1/(1 + x²) dx = arctan x + C は the integral of one over the quantity one plus x squared is arctangent of x plus C。"
   ],
   "sources": [
     {
@@ -48,15 +49,26 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "Inverse Trigonometric Functions（the inverse tangent function is sometimes called the arctangent function）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Geometry 4.9 Using Trigonometric Ratios to Find Angles（arctangent）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "inverse tangent": 37,
       "arctangent | arc tangent | arctan": 95,
-      "tangent inverse": 7
+      "!hyperbolic tangent inverse": 4
     },
     "sources": [
       "khan-ap-calc",
@@ -68,6 +80,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -828,7 +828,7 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "hyperbolic-functions-notation": {
     "cosh x": "cosh",
     "hyperbolic sine of x": "hyperbolic sine | hyperbolic cosine | hyperbolic tangent",
-    "cinch x": "cinch | sinch",
+    "cinch x": "!a cinch | sinch", // not "it's a cinch" (batch 33)
   },
   "sine-of-theta": {
     "sine of theta": "!the sine of *",
@@ -843,7 +843,7 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "tangent-of-theta": {
     "tangent of theta": "!the tangent of *",
     "tangent theta": "tangent theta | tangent x | tangent alpha",
-    "tan theta": "tan theta | tan x | tan alpha",
+    "tan theta": "tan theta | !arc tan x | tan alpha", // not arctan (batch 33)
   },
   "secant-of-theta": {
     "secant theta": "secant theta | secant x | secant squared",
@@ -865,7 +865,7 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "sine squared of theta": "sine squared of *",
   },
   "inverse-sine-notation": {
-    "arcsine of x": "arcsine | arc sine",
+    "arcsine of x": "arcsine | arc sine | arcsin", // as arctan is counted in inverse-tangent (batch 33)
     "sine inverse of x": "sine inverse",
     "inverse sine of x": "inverse sine",
   },
@@ -877,7 +877,7 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "inverse-tangent-notation": {
     "arctangent of x": "arctangent | arc tangent | arctan",
     "inverse tangent of x": "inverse tangent",
-    "tangent inverse of x": "tangent inverse",
+    "tangent inverse of x": "!hyperbolic tangent inverse", // not artanh (batch 33)
   },
   "radian-unit": {
     "pi over two radians": "* radians",
@@ -887,7 +887,7 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "the logarithm of x to the base a": "to the base *",
   },
   "common-log-notation": {
-    "log of x": "log of *",
+    "log of x": "!natural log of *", // ln x is natural-log-ln's (batch 33)
     "log base ten of x": "log base ten",
     "the common log of x": "common log | common logarithm",
   },
@@ -948,7 +948,8 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "change in x": "change in x | change in y | change in t",
   },
   "partial-derivative-leibniz": {
-    "partial f partial x": "partial * partial *",
+    // a letter each side: "partial * partial *" also counted "partial sums", "partial order" (batch 33)
+    "partial f partial x": "partial f partial * | partial g partial * | partial h partial * | partial u partial * | partial v partial * | partial w partial * | partial x partial * | partial y partial * | partial z partial * | partial t partial * | partial r partial * | partial s partial * | partial p partial * | partial q partial *",
     "the partial derivative of f with respect to x": "the partial derivative of * with respect to",
     "the partial of f with respect to x": "the partial of * with respect to",
     "del f del x": "del * del *",
@@ -977,7 +978,7 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "the integral of f of x with respect to x": "integral of * with respect to",
   },
   "plus-c-constant": {
-    "plus C": "plus c",
+    "plus C": "!b !bx !a plus c !sub !times !prime !to !one !two", // not ax² + bx + c, c sub two, c times (batch 33)
   },
   // Phase 3 記号 バッチ 3 (ledger rows 101-150).
   "evaluation-bar": {
@@ -1000,7 +1001,8 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "product-pi-notation": {
     "the product from i equals one to n of a sub i": "the product from * to * of | the product from * equals",
     // "from one to": "the product of three and eight translate from math notation to words" is not a reading
-    "the product of a sub i, i from one to n": "the product of * from one to *",
+    // the reading itself: "the product of * from one to *" counted the definition of n! (batch 33)
+    "the product of a sub i, i from one to n": "the product of a sub * | the product of x sub *",
   },
   "factorial-n": {
     "n factorial": "* factorial",

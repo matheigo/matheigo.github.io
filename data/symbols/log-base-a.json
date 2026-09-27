@@ -11,7 +11,7 @@
       "register": "spoken"
     }
   ],
-  "spoken_ja": "ログ a x ／ a を底とする x の対数",
+  "spoken_ja": "a を底とする x の対数",
   "name_en": "logarithm with base a",
   "name_ja": "a を底とする対数",
   "category": "logarithms",
@@ -27,7 +27,7 @@
   },
   "notes": [
     "logₐ x は log base a of x と読む。log₂ 8 = 3 は log base two of eight is three。",
-    "the logarithm of x to the base a は書き言葉に近い言い方。"
+    "OpenStax Precalculus（6.3 Logarithmic Functions）は log_b(x) を the logarithm with base b of x とも読むと書く。"
   ],
   "sources": [
     {
@@ -35,16 +35,29 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Precalculus 2e"
+      "title": "OpenStax Precalculus 2e",
+      "note": "6.3 Logarithmic Functions（log_b(x) is read the log base b of x）"
     },
     {
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）〔用語・記号〕",
       "note": "数II 指数関数・対数関数: log_a x"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 4.9 What is a Logarithm?（read the log, base 10, of 250）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「対数」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%AF%BE%E6%95%B0",
+      "note": "底を b とする x の対数"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "log base *": 413,
@@ -64,6 +77,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

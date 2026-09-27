@@ -7,16 +7,12 @@
       "register": "standard"
     },
     {
-      "text": "the limit as x approaches a minus",
-      "register": "spoken"
-    },
-    {
       "text": "the left-hand limit of f at a",
       "register": "spoken"
     }
   ],
   "spoken_ja": "x が a に左から近づくときの極限 ／ リミット x → a マイナス 0",
-  "name_en": "left-hand limit",
+  "name_en": "limit from the left",
   "name_ja": "左側極限",
   "category": "limits",
   "term_ref": "left-hand-limit",
@@ -34,20 +30,30 @@
     ]
   },
   "notes": [
-    "x → a⁻ は x approaches a from the left と読む。記号どおりに x approaches a minus とも言う。",
+    "x → a⁻ は x approaches a from the left と読む。AP の CED（Unit 1）と OpenStax Calculus Volume 1 は the limit of f(x) as x approaches a from the left と関数を先にも読む。",
     "a⁻ の右上の − は「左から」の印で、a から数を引くのではない。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "The Limit of a Function（the limit of f(x) as x approaches a from the left）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「片側極限」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%89%87%E5%81%B4%E6%A5%B5%E9%99%90",
+      "note": "x → a − 0 ／ a + 0 の書き方"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "from the left": 264,
-      "approaches * minus | goes to * minus": 57,
       "left-hand limit | left hand limit": 6
     },
     "sources": [
@@ -67,6 +73,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -8,7 +8,7 @@
     },
     {
       "text": "the gradient of f",
-      "register": "spoken"
+      "register": "standard"
     }
   ],
   "spoken_ja": "ナブラ エフ",
@@ -25,9 +25,9 @@
     ]
   },
   "notes": [
-    "∇f は del f か the gradient of f と読む（用例コーパスの話し言葉ではどちらも同じくらいで、del f はすべて Professor Leonard）。nabla という名前は話し言葉に出てこず、書き言葉にもほとんど出てこない。",
-    "∂ も del と読むことがある（MIT 18.02、3Blue1Brown）ので、del と聞いたら ∇ か ∂ かを式で確かめる。",
-    "∇ · F（発散）は del dot F、∇ × F（回転）は del cross F と読み、div F、curl F とも書く（書き言葉ではどちらもよく出てくる）。"
+    "∇f は del f か the gradient of f と読む。OpenStax Calculus Volume 3 は ∇ を nabla と呼び、∇f を del f と読むと書く（grad f とも書く）。",
+    "∂ も del と読むことがあるので、del と聞いたら ∇ か ∂ かを式で確かめる。",
+    "∇ · F（発散）と ∇ × F（回転）の読みは divergence-del-dot・curl-del-cross を見る。"
   ],
   "sources": [
     {
@@ -35,11 +35,12 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 3"
+      "title": "OpenStax Calculus Volume 3",
+      "note": "Directional Derivatives and the Gradient（∇ is called nabla、∇f is read del f）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "the gradient of f": 12,
@@ -49,6 +50,6 @@
       "mit-18.02",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

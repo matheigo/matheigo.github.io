@@ -21,30 +21,30 @@
     ]
   },
   "notes": [
-    "∏ は the product of a sub i, i from one to n と読む。記号の名前は capital pi だが、読むときは product と言う。",
-    "OpenStax Algebra and Trigonometry は n! を 1 から n までの整数の積として the product of … from 1 to n の形で言葉にする（3 件）。"
+    "∏ は the product of a sub i, i from one to n と読む。"
   ],
   "sources": [
     {
       "type": "editorial"
     },
     {
-      "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "n! の定義で the product of … from 1 to n の形を使う（3 件。読みを決めた参照）"
+      "type": "reference",
+      "title": "日本語版 Wikipedia「三角関数の公式の一覧」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0%E3%81%AE%E5%85%AC%E5%BC%8F%E3%81%AE%E4%B8%80%E8%A6%A7",
+      "note": "総乗記号 ∏"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 the product of * from one to *（本文 3 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "code": "corpus-undecided",
+      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin のどれも読みを 3 件以上使わない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。人間レビューへ。",
+      "raised": "2026-09-27"
     }
   ]
 }

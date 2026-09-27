@@ -28,6 +28,7 @@
       "大学"
     ],
     "us": [
+      "Geometry",
       "Precalculus",
       "AP Calculus AB",
       "Calculus I"
@@ -48,13 +49,30 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "Inverse Trigonometric Functions（the inverse sine function is sometimes called the arcsine function）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Geometry 4.9 Using Trigonometric Ratios to Find Angles（arcsine）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「三角関数」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0",
+      "note": "逆正弦関数（inverse sine、sin⁻¹x）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "arcsine | arc sine": 20,
+      "arcsine | arc sine | arcsin": 26,
       "sine inverse": 20,
       "inverse sine": 17
     },
@@ -67,6 +85,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }
