@@ -50,8 +50,8 @@
   "collocations": [],
   "pitfalls": [
     "用例コーパスでは the set of ／ a set of ／ set of all の形だけを数えている。set は動詞（set it equal to zero など）でも大量に使うため。",
-    "集合の演算は、共通部分 A ∩ B が intersection、和集合 A ∪ B が union、補集合が complement。補集合の記号は Ā のほか、英語の本では Aᶜ や A′ も使われる（本による）。",
-    "{ x | x > 0 } の書き方は set-builder notation と呼ぶ。英語の本では縦棒の代わりにコロンで { x : x > 0 } と書くものもある。"
+    "集合の演算は、共通部分 A ∩ B が intersection、和集合 A ∪ B が union、補集合が complement。補集合の記号は Ā のほか、OpenStax Algebra and Trigonometry は E′（余事象）、Levin は Ā と書き、英語版 Wikipedia「Complement (set theory)」は Aᶜ も挙げる。",
+    "{ x | x > 0 } の書き方は set-builder notation と呼ぶ（OpenStax Algebra and Trigonometry）。Levin は縦棒の代わりにコロンで { x ∈ ℕ : x < 10 } と書く。"
   ],
   "related": [
     "element",
@@ -73,6 +73,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "0.2.2・5.1 Sets: set builder notation { x ∈ ℕ : x < 10 }、Ā"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Complement_(set_theory)",
+      "note": "冒頭: Aᶜ の記号"
     }
   ],
   "confidence": "likely",
@@ -81,7 +93,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "the set of | a set of | set of all": 183

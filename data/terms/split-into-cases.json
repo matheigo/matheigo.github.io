@@ -14,7 +14,7 @@
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "日本語の「場合分けする」は 1 語の動詞だが、英語では consider two cases ／ break it into cases のように cases を目的語にした句で言う。数 I の「軸の位置で場合分けする」は、英語で説明するなら頂点（軸）が区間の左・内側・右のどこにあるかで cases を分ける、という言い方になる。",
+  "mapping_note": "日本語の「場合分けする」は 1 語の動詞だが、英語では consider two cases ／ break it into cases のように cases を目的語にした句で言う。二次関数の最大・最小で「軸の位置で場合分けする」と言うときは、英語で説明するなら頂点（軸）が区間の左・内側・右のどこにあるかで cases を分ける、という言い方になる。",
   "domains": [
     "algebra",
     "functions",
@@ -47,8 +47,8 @@
       "register": "written"
     },
     {
-      "en": "To count the even three-digit numbers, consider two cases: the last digit is 0, or it is not.",
-      "ja": "3 桁の偶数の個数は、一の位が 0 の場合と 0 でない場合に分けて数える。",
+      "en": "To count the even three-digit numbers with distinct digits, consider two cases: the last digit is 0, or it is not.",
+      "ja": "異なる 3 つの数字を並べてできる 3 桁の偶数の個数は、一の位が 0 の場合と 0 でない場合に分けて数える。",
       "register": "written"
     }
   ],
@@ -80,7 +80,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "consider … cases": 15

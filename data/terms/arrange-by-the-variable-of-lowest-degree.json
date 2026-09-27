@@ -12,7 +12,7 @@
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスに arrange by the variable of lowest degree は出てこない）。英語の見出しは本プロジェクトの訳語。日本の因数分解の技法で、英語で説明するなら「次数の最も低い文字について式を整理する」と手順をそのまま言う。いちばん近い米国の手法は factoring by grouping（項をまとめて共通因数をくくる）だが、同じ手法ではない。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスに arrange by the variable of lowest degree は出てこない）。英語の見出しは本プロジェクトの訳語。因数分解の手順の一つで、英語で説明するなら「次数の最も低い文字について式を整理する」と手順をそのまま言う。参照でいちばん近い手法は OpenStax Elementary Algebra・Intermediate Algebra の Factor by Grouping（項を組にして共通因数をくくる。17・19 件）だが、同じ手法ではない。見出しの日本語は学習指導要領解説に出てこない。",
   "domains": [
     "algebra"
   ],
@@ -31,8 +31,8 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "Here y only shows up to the first power, so arrange by the variable of lowest degree: y(x + 1) + (x + 1)².",
-      "ja": "ここでは y が 1 次までしか出てこないので、最低次の文字 y について整理すると y(x + 1) + (x + 1)² になる。",
+      "en": "In x² + xy + 2x + y + 1, y only shows up to the first power, so arrange by the variable of lowest degree: y(x + 1) + (x + 1)² = (x + 1)(x + y + 1).",
+      "ja": "x² + xy + 2x + y + 1 では y が 1 次までしか出てこないので、最低次の文字 y について整理すると y(x + 1) + (x + 1)² = (x + 1)(x + y + 1) になる。",
       "register": "spoken"
     },
     {
@@ -43,7 +43,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語の見出しは訳語で、決まった言い方ではない。英語で説明するときは手順を言葉にする。「c について整理する」は write it as a polynomial in c、「c でくくる」は factor out c のように、手順を言葉で説明する。",
+    "英語の見出しは訳語で、決まった言い方ではない。英語で説明するときは手順を言葉にする: 「c について整理する」は write it as a polynomial in c、「c でくくる」は factor out c。",
     "factoring by grouping は項を 2 つずつ組にしてくくる手法で、1 つの文字について整理する手順とは別物。結果として同じ組分けになることはある。"
   ],
   "related": [
@@ -56,6 +56,16 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "Greatest Common Factor and Factor by Grouping: factor by grouping（17 件）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "Factor by Grouping（19 件）"
     }
   ],
   "confidence": "likely",

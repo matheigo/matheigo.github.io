@@ -28,7 +28,7 @@
     ]
   },
   "definition_ja": "不等式の両辺に同じ数を足しても引いても、正の数を掛けても割っても不等号の向きは変わらないが、負の数を掛けたり割ったりすると向きが逆になるという性質。",
-  "definition_en": "The rules for working with inequalities: adding or subtracting the same number, or multiplying or dividing both sides by a positive number, keeps the direction of the inequality, while multiplying or dividing by a negative number reverses it.",
+  "definition_en": "The rules that say what you may do to both sides of an inequality: add or subtract the same number, or multiply or divide by the same positive number, and the inequality sign stays as it is; multiply or divide by the same negative number, and the sign turns around.",
   "latex": "a < b,\\ c < 0 \\implies ac > bc",
   "spoken_en": "if a is less than b and c is negative, then a c is greater than b c",
   "examples": [
@@ -56,8 +56,9 @@
   ],
   "pitfalls": [
     "「不等号の向きが変わる」は、用例コーパスでは話し言葉で flip the inequality がわずかに出てきて、書き言葉では reverse the inequality を使う（OpenStax Elementary Algebra ほか）。",
-    "「両辺を負の数で割る」は divide both sides by a negative number。負の数を掛けたり割ったりしたのに向きを変え忘れるのが定番の誤り。",
-    "文字 a で割るときは a の符号が分からないので、a > 0 と a < 0 で場合分けする。"
+    "「両辺を負の数で割る」は divide both sides by a negative number。負の数を掛けたり割ったりしたのに向きを変え忘れやすい。",
+    "文字 a で割るときは a の符号が分からないので、a > 0 と a < 0 で場合分けする。a = 0 のときは割れないので別に扱う。",
+    "OpenStax Elementary Algebra・Intermediate Algebra（Solve Linear Inequalities）は性質を 1 つずつ Addition ／ Subtraction ／ Multiplication ／ Division Property of Inequality と名付け、まとめて Properties of Inequality と呼ぶ。中身はこのエントリの定義と同じ（両辺に同じ数を足す・引く、掛ける・割る）。"
   ],
   "related": [
     "linear-inequality",
@@ -69,6 +70,16 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "Solve Linear Inequalities: Subtraction and Addition Properties of Inequality ／ Division and Multiplication Properties of Inequality"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "Solve Linear Inequalities: Addition and Subtraction Property of Inequality ／ Multiplication and Division Property of Inequality"
     }
   ],
   "confidence": "likely",
@@ -77,7 +88,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "written": {
       "properties of inequalities": 20

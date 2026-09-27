@@ -27,7 +27,7 @@
     ]
   },
   "definition_ja": "集合 B の要素だけでできている集合 A のこと。A のどの要素も B の要素であるとき、A を B の部分集合という。",
-  "definition_en": "A set A is a subset of a set B when every element of A is also an element of B.",
+  "definition_en": "A set A is a subset of a set B when nothing in A lies outside B: each member of A belongs to B as well.",
   "latex": "A \\subset B",
   "spoken_en": "A is a subset of B",
   "examples": [
@@ -50,7 +50,7 @@
   "collocations": [],
   "pitfalls": [
     "「含む」「含まれる」は contain ／ is contained in。A ⊂ B は A is contained in B、B ⊃ A は B contains A と読む。",
-    "日本の教科書の ⊂ は A = B の場合も含む。英語の本では ⊆ と ⊂（真部分集合）を書き分けるものと、⊂ だけを使うものがあり、記号は教科書による。",
+    "共通テスト（平成 26 年度 数学I・A）は「集合 X が集合 Y の部分集合であるとき X ⊂ Y と表す」と定め、A = B の場合も ⊂ で書く。日本語版 Wikipedia「部分集合」は ⊂ を真部分集合（A ⊆ B かつ A ≠ B）に使い、記法は統一されていないと書く。英語の本も分かれ、Levin（1.5）は ⊆ を部分集合・⊂ を真部分集合に使い、OpenStax Calculus は D ⊆ R と R ⊂ ℝ² の両方を書く。",
     "要素と部分集合を混同しない。1 ∈ A（1 is an element of A）と {1} ⊂ A（{1} is a subset of A）は別の主張。"
   ],
   "related": [
@@ -73,6 +73,23 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "平成 26 年度 数学I・A: 集合 X が集合 Y の部分集合であるとき X ⊂ Y と表す"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「部分集合」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%83%A8%E5%88%86%E9%9B%86%E5%90%88",
+      "note": "⊆ と真部分集合 ⊂。記法は統一されていない"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.5: ⊆（subset）と ⊂（proper subset）"
     }
   ],
   "confidence": "likely",
@@ -81,7 +98,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "subset": 117

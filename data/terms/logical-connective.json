@@ -10,16 +10,15 @@
     ]
   },
   "en": {
-    "term": "connective",
+    "term": "logical connective",
     "alt": [
-      "logical connective",
-      "logical operator"
+      "connective"
     ],
     "uk": null
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "見出しの「論理結合子」は学習指導要領解説に無い（日本語版 Wikipedia「命題」にはある。langlink の「論理演算」は論理演算子と書く）。",
   "domains": [
     "logic"
   ],
@@ -44,16 +43,16 @@
       "register": "spoken"
     },
     {
-      "en": "Identify the connective in the statement \"x > 2 and x < 5,\" and write the statement in symbols.",
+      "en": "Identify the logical connective in the statement \"x > 2 and x < 5,\" and write the statement in symbols.",
       "ja": "命題「x > 2 かつ x < 5」に使われている論理結合子を答え、その命題を記号で表せ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の数I では「かつ」「または」「でない」を扱うが、「論理結合子」という名前は使わない。否定も数I では上線（p̄）で書き、¬p や ~p の記号は使わない。",
-    "数学の or は両方が真の場合も真になる（日本の「または」と同じ）。",
-    "用例コーパスでは connective と logical connective は書き言葉（MIT の講義ノート）にわずかにあるだけで、話し言葉には出てこない。CK-12 Geometry では connective が 13 件（2.9 And and Or Statements ほか）、Levin の本では 26 件。"
+    "高等学校学習指導要領解説（数学I 集合と命題）は必要条件・十分条件・対偶や簡単な命題の証明を扱い、集合の記号として a ∈ A、A ∩ B、A ∪ B、A ⊂ B、Ā を挙げ、発展の内容として真理値表と「p → q」の否定「p ∧ (¬q)」に触れるが、「論理結合子」の名前は出てこない。",
+    "数学の or は両方が真の場合も真になる（CK-12 Geometry 2.9: p ∨ q is true if p or q are true, or both。Levin は inclusive or と書く）。日本の「または」と同じ。",
+    "用例コーパスでは書き言葉（MIT の講義ノート）にわずかにあるだけで、話し言葉には出てこない。CK-12 Geometry（2.9 And and Or Statements・2.10 Negative Statements）は logical connective を 18 件、Levin（1.1 Mathematical Statements）は 19 件使う。"
   ],
   "related": [
     "negation",
@@ -73,6 +72,24 @@
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
       "note": "2.9 And and Or Statements・2.10 Negative Statements"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「命題」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%91%BD%E9%A1%8C",
+      "note": "五つの論理結合子"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 集合と命題: 必要条件・十分条件・対偶、集合の記号 a∈A・A∩B・A∪B・A⊂B・Ā、発展の内容として真理値表と p∧（¬q）（論理結合子の名前は無い）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.1 Mathematical Statements: logical connectives（5 connectives: and, or, not, if…then, if and only if）。inclusive or"
     }
   ],
   "confidence": "likely",
@@ -81,22 +98,21 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "written": {
-      "connective": 1,
       "logical connective": 1
     },
     "sources": [
       "mit-notes"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは CK-12 の呼び方 connective（CK-12 Geometry 2.9 And and Or Statements・CK-12 Geometry 2.10 Negative Statements・計 13 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは CK-12 の呼び方 logical connective（CK-12 Geometry 2.9 And and Or Statements・CK-12 Geometry 2.10 Negative Statements・計 11 件）。register は主張しない。",
+      "raised": "2026-09-26"
     }
   ]
 }

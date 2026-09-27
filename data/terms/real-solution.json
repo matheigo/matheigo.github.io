@@ -13,7 +13,7 @@
       {
         "term": "real solution",
         "register": "both",
-        "note": "話し言葉・書き言葉とも多い。話し言葉は MIT OCW 18.03 が半分ほど、書き言葉は OpenStax Elementary Algebra・Intermediate Algebra が中心。"
+        "note": "話し言葉・書き言葉とも多い。話し言葉は MIT OCW が半分ほど、書き言葉は OpenStax Elementary Algebra・Intermediate Algebra が中心。"
       },
       {
         "term": "real root",
@@ -23,8 +23,7 @@
     ]
   },
   "pos": "noun",
-  "mapping": "near",
-  "mapping_note": "日本語の「実数解」1 語に、英語では real solution（方程式の解として）と real root（多項式の根として）の 2 つが当たる。用例コーパスでは話し言葉も書き言葉も real solution のほうが多いが、差が小さく、どちらもよく使われるので併記した。",
+  "mapping": "exact",
   "domains": [
     "functions"
   ],
@@ -67,7 +66,8 @@
   "collocations": [],
   "pitfalls": [
     "「実数解をもたない」は has no real solutions（has no real roots）。複素数の解まで考える場面で real を落として has no solutions と言うと、解がまったく無い意味になる。",
-    "「異なる 2 つの実数解」は two distinct real solutions。distinct を落とすと重解の場合と区別できない。"
+    "「異なる 2 つの実数解」は two distinct real solutions。distinct を落とすと重解の場合と区別できない。",
+    "英語では方程式の解を solution、多項式の根を root と使い分け、実数解にも real solution と real root の 2 つが当たる（用例コーパスでは話し言葉も書き言葉も real solution のほうが多いが、差が小さく併記した）。関数の零点として OpenStax Algebra and Trigonometry・Precalculus は real zero と書く（各 30 件前後）。"
   ],
   "related": [
     "discriminant",
@@ -92,7 +92,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "real root": 15,

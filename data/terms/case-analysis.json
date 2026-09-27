@@ -12,13 +12,14 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスで case analysis は話し言葉には出てこず、書き言葉にもわずか（MIT の講義ノート））。英語では動詞句で split into cases、consider two cases のように「場合に分ける」と言う（→ 場合分けする split-into-cases）。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスで case analysis は話し言葉には出てこず、書き言葉にもわずか（MIT の講義ノート））。英語では動詞句で consider two cases ／ break it into cases のように「場合に分ける」と言う（エントリ split-into-cases）。英語版 Wikipedia「Proof by exhaustion」は、証明法の別名として case analysis（proof by cases）を冒頭で挙げる（エントリ proof-by-cases）。",
   "domains": [
     "algebra"
   ],
   "level": {
     "jp": [
-      "数I"
+      "数I",
+      "数A"
     ],
     "us": [
       "Algebra 1",
@@ -31,7 +32,7 @@
   "spoken_en": "the absolute value of x is x when x is greater than or equal to zero, and negative x when x is less than zero",
   "examples": [
     {
-      "en": "Let's split this into two cases, depending on the sign of x − 1.",
+      "en": "Let's consider two cases, depending on the sign of x − 1.",
       "ja": "x − 1 の符号で 2 つの場合に分けよう。",
       "register": "spoken"
     },
@@ -44,17 +45,31 @@
   "collocations": [],
   "pitfalls": [
     "各場合で出た解は、その場合の条件（x ≧ 1 など）と共通部分をとってから、最後にすべての場合を合わせる。",
-    "「場合分けする」という動詞は split into cases ／ consider … cases。「x ≧ 1 のとき」は in the case x ≥ 1 か when x ≥ 1。"
+    "「場合分けする」という動詞は consider … cases ／ break … into cases（エントリ split-into-cases）。「x ≧ 1 のとき」は in the case x ≥ 1 か when x ≥ 1。",
+    "証明で場合を尽くす形（n が偶数か奇数か）は proof by cases（エントリ proof-by-cases。en.alt に case analysis）。"
   ],
   "related": [
     "split-into-cases",
     "absolute-value-inequality",
     "absolute-value-equation",
-    "proof"
+    "proof",
+    "proof-by-cases"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Proof_by_exhaustion",
+      "note": "記事「Proof by exhaustion」（数学カテゴリから 2 段）の冒頭: case analysis と proof by cases を太字の別名として挙げる"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A 数学と人間の活動: 余りで場合分け（1 件）"
     }
   ],
   "confidence": "likely",

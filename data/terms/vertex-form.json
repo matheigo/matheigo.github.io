@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の「標準形」y = a(x − p)² + q は英語の vertex form に当たる。英語では頂点を (h, k) として y = a(x − h)² + k と書く。「標準形」を standard form と直訳すると食い違う: OpenStax Algebra and Trigonometry は a(x − h)² + k を quadratic function の standard form と呼び、vertex form とも呼ぶと書くが、ax² + bx + c（日本の一般形）を standard form と呼ぶ話し手もいる。",
+  "mapping_note": "日本語版 Wikipedia「二次関数」が「標準形」と呼ぶ y = a(x − p)² + q は英語の vertex form に当たる。高等学校学習指導要領解説（数学I）はこの形を y = a(x − p)² + q に変形して頂点 (p, q) に着目すると書き、名前は付けない（「標準形」は数学C の放物線・楕円の方程式に使う）。英語では頂点を (h, k) として y = a(x − h)² + k と書く。「標準形」を standard form と直訳すると食い違う: OpenStax Algebra and Trigonometry は二次関数の a(x − h)² + k を standard form（vertex form とも）と呼ぶ一方、二次方程式 ax² + bx + c = 0 を standard form と呼び、IM Algebra 1 は ax² + bx + c を standard form と呼ぶ。見出しの「標準形」は学習指導要領解説に無い（日本語版 Wikipedia「二次関数」にはある）。",
   "domains": [
     "functions"
   ],
@@ -52,8 +52,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の「標準形」を standard form と直訳しない。英語の standard form は ax² + bx + c を指すことも a(x − h)² + k を指すこともある（OpenStax Algebra and Trigonometry は後者）。どちらの形か式で確かめる。",
-    "英語では頂点を (h, k) と書き、日本の教科書の (p, q) と文字が違う。符号にも注意: y = 2(x + 1)² − 5 の頂点は (−1, −5)。"
+    "日本の「標準形」を standard form と直訳しない。英語の standard form は ax² + bx + c を指すことも a(x − h)² + k を指すこともある（OpenStax Algebra and Trigonometry は二次関数では後者、二次方程式では前者。IM Algebra 1 は前者）。どちらの形か式で確かめる。",
+    "英語では頂点を (h, k) と書き、学習指導要領解説（数学I）や日本語版 Wikipedia「二次関数」の (p, q) と文字が違う。符号にも注意: y = 2(x + 1)² − 5 の頂点は (−1, −5)。"
   ],
   "related": [
     "vertex",
@@ -70,6 +70,24 @@
     {
       "type": "textbook",
       "title": "OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「二次関数」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%BA%8C%E6%AC%A1%E9%96%A2%E6%95%B0",
+      "note": "標準形 f(x) = a(x − p)² + q（vertex form）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 二次関数: y = a(x − p)² + q の形に変形し、頂点 (p, q) に着目（名前は無い）。標準形は数学C の放物線・楕円の方程式"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Algebra 1)",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "用語集: standard form (of a quadratic expression) は ax² + bx + c"
     }
   ],
   "confidence": "likely",
@@ -78,7 +96,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "vertex form": 35

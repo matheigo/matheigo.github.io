@@ -12,8 +12,13 @@
     "variants": [
       {
         "term": "function value",
-        "register": "written",
-        "note": "書き言葉で value of the function と併記（②）。OpenStax Algebra and Trigonometry と OpenStax Calculus に多い。話し言葉では少なく、value of the function のほうがずっと多い。"
+        "register": "both",
+        "note": "OpenStax Algebra and Trigonometry と OpenStax Calculus に多い。話し言葉では value of the function より少ない。"
+      },
+      {
+        "term": "output value",
+        "register": "both",
+        "note": "入力と出力の言い方。OpenStax Algebra and Trigonometry・Precalculus は各 180 件前後使い、IM・CK-12 Algebra も使う。用例コーパスの書き言葉では 3 つの言い方の中で最も多く、話し言葉では value of the function より少ない。"
       }
     ]
   },
@@ -56,7 +61,6 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは、話し言葉は value of the function が function value よりずっと多い。書き言葉は value of the function と function value が同じくらいで、両方を使う。",
     "「x = −1 における値」は英語では at x = −1 で言う（the value of f at x = −1）。"
   ],
   "related": [
@@ -74,6 +78,11 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "output value（178 件）"
     }
   ],
   "confidence": "likely",
@@ -82,15 +91,17 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "value of the function": 136,
-      "function value": 34
+      "function value": 34,
+      "output value": 41
     },
     "written": {
       "function value": 94,
-      "value of the function": 116
+      "value of the function": 116,
+      "output value": 185
     },
     "sources": [
       "khan-algebra",
@@ -111,6 +122,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

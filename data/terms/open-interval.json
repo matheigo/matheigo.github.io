@@ -18,11 +18,14 @@
   ],
   "level": {
     "jp": [
-      "数I"
+      "数I",
+      "数III"
     ],
     "us": [
-      "Algebra 1",
-      "Algebra 2"
+      "Algebra 2",
+      "Precalculus",
+      "AP Calculus AB",
+      "Calculus I"
     ]
   },
   "definition_ja": "両端の数を含まない区間。a < x < b を満たす実数 x 全体で、(a, b) と書く。",
@@ -50,7 +53,8 @@
     "closed-interval",
     "interval",
     "endpoint",
-    "increasing-and-decreasing"
+    "increasing-and-decreasing",
+    "interval-notation"
   ],
   "sources": [
     {
@@ -60,6 +64,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 5.1・5.6・10.13（open interval）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Interval_(mathematics)",
+      "note": "節 Open and closed intervals: open interval を太字で定義（日本語版「区間 (数学)」も同じ）"
     }
   ],
   "confidence": "likely",
@@ -68,7 +84,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "open interval": 121

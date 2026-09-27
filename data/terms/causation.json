@@ -6,8 +6,9 @@
     "alt": []
   },
   "en": {
-    "term": "causation",
+    "term": "causal relationship",
     "alt": [
+      "causation",
       "cause and effect"
     ],
     "uk": null
@@ -40,14 +41,15 @@
       "register": "spoken"
     },
     {
-      "en": "Does the study show causation? Explain your reasoning.",
+      "en": "Does the study show a causal relationship? Explain your reasoning.",
       "ja": "この研究は因果関係を示しているか。理由を説明せよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "因果関係を示すには、観察研究（observational study）ではなく、無作為に処理を割り当てた実験（experiment）が要る。"
+    "因果関係を示すには、観察研究（observational study）ではなく、無作為に処理を割り当てた実験（experiment）が要る。",
+    "AP Statistics の CED（topic 1.10・1.13）は cause-and-effect conclusion と形容詞の形で使い、IM Algebra 1（3.9）は causal relationship と言う。"
   ],
   "related": [
     "correlation",
@@ -57,6 +59,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 5.2（correlation does not necessarily imply causation。見出しの根拠）・1.10・1.13（cause-and-effect conclusion）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Algebra 1)",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "3.9 Causal Relationships（causal relationship 9 件）"
     }
   ],
   "confidence": "likely",
@@ -65,9 +79,10 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
+      "causal relationship": 6,
       "cause and effect": 1
     },
     "written": {
@@ -79,13 +94,13 @@
       "mit-notes",
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは AP Statistics の CED の呼び方 causation（topic 5.2）。register は主張しない。",
-      "raised": "2026-09-25"
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは AP Statistics の CED の呼び方 causal relationship（topic 1.10）。register は主張しない。",
+      "raised": "2026-09-26"
     }
   ]
 }

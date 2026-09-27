@@ -22,7 +22,6 @@
       "数I"
     ],
     "us": [
-      "Geometry",
       "Discrete Math"
     ]
   },
@@ -45,7 +44,7 @@
   "collocations": [],
   "pitfalls": [
     "{0} は 0 という要素を 1 つ持つ集合で、空集合ではない。{∅} も空集合ではない。",
-    "null set という言い方もあるが、用例コーパスでは数えていない。empty set 自体も少なく、話し言葉はすべて MIT OCW、書き言葉はほとんどが MIT の講義ノート。"
+    "英語版 Wikipedia「Empty set」は null set とも呼ばれると書くが、参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）と用例コーパスには null set は出てこない。empty set 自体も用例コーパスには少なく、話し言葉はすべて MIT OCW、書き言葉はほとんどが MIT の講義ノート。Levin は 17 件使う。"
   ],
   "related": [
     "set",
@@ -62,6 +61,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "0.2.2 Sets: The empty set, written ∅（17 件）"
     }
   ],
   "confidence": "likely",
@@ -70,7 +75,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "empty set": 9

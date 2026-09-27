@@ -6,13 +6,14 @@
     "alt": []
   },
   "en": {
-    "term": "universal set",
-    "alt": [],
+    "term": "universe",
+    "alt": [
+      "universal set"
+    ],
     "uk": null
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（universal set は CED・OpenStax・IM・CK-12 とも 0 件）。",
   "domains": [
     "logic",
     "set-theory"
@@ -32,7 +33,7 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "Let's take the universal set to be the integers from 1 to 10.",
+      "en": "Let's take the universe to be the integers from 1 to 10.",
       "ja": "全体集合を 1 から 10 までの整数としよう。",
       "register": "spoken"
     },
@@ -44,8 +45,9 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "Levin の離散数学の本は全体集合を universe と呼び、論理の文脈では universe of discourse とも言う。用例コーパスの universe は宇宙の意味がほとんどなので数えていない。",
-    "補集合は全体集合を決めてはじめて決まる。同じ A でも U が変われば補集合も変わる。"
+    "「全体集合」は共通テストの数学I 第1問（令和 3〜8 年度ほか）が「全体集合 U を…とする」と書く語で、学習指導要領解説には出てこない。",
+    "補集合は全体集合を決めてはじめて決まる。同じ A でも U が変われば補集合も変わる。",
+    "universal set という言い方は米国の高校課程の参照（CED・OpenStax・IM・CK-12）に 0 件。CK-12 Geometry 2.10 Negative Statements はベン図の全体を the universe of all things と呼び、Levin は the universe 𝒰（0.2.2・5.1 Sets）、論理の文脈では universe of discourse（1.6）と言う。英語版 Wikipedia の同じ概念の記事は「Universe (mathematics)」で、「Universal set」はすべての集合を含む集合（通常の集合論には存在しない）という別の概念。用例コーパスの universe は宇宙の意味がほとんどなので、集合の意味の形だけで数える。"
   ],
   "related": [
     "set",
@@ -55,13 +57,27 @@
   ],
   "sources": [
     {
-      "type": "editorial"
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Universe_(mathematics)",
+      "note": "記事「Universe (mathematics)」（数学カテゴリから 3 段。冒頭で universe を太字で定義）。「Universal set」は別の概念（WIKIPEDIA_NOT_SAME）"
     },
     {
       "type": "reference",
-      "title": "English Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Universal_set",
-      "note": "記事名 Universal set（en.term のリダイレクト先）"
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "0.2.2・5.1 Sets: the universe 𝒰。1.6: universe of discourse"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.10 Negative Statements: the universe of all things（ベン図の全体）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "数学I 第1問（令和 3〜8 年度、平成 26・30 年度）: 全体集合 U"
     }
   ],
   "confidence": "likely",
@@ -70,16 +86,21 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
-    "sources": [],
-    "counted": "2026-09-25"
+    "spoken": {
+      "the universe of all things | universe of discourse | universe is u | universe u | the universe be the set": 1
+    },
+    "sources": [
+      "mit-6.042"
+    ],
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 universal set（英語版「Universal set」、en.term のリダイレクト先）。register は主張しない。",
-      "raised": "2026-09-25"
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 the universe of all things | universe of discourse | universe is u | universe u | the universe be the set（CK-12 Geometry 2.10 Negative Statements・計 1 件）。register は主張しない。",
+      "raised": "2026-09-26"
     }
   ]
 }

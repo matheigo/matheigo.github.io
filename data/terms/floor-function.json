@@ -10,7 +10,6 @@
   "en": {
     "term": "floor function",
     "alt": [
-      "greatest integer function",
       "floor of"
     ],
     "uk": null
@@ -24,7 +23,8 @@
   ],
   "level": {
     "jp": [
-      "数I"
+      "数I",
+      "数A"
     ],
     "us": [
       "Algebra 1",
@@ -32,8 +32,8 @@
       "Discrete Math"
     ]
   },
-  "definition_ja": "実数 x に、x を超えない最大の整数を対応させる関数。日本では [x]、英語では ⌊x⌋ と書く。",
-  "definition_en": "The function that sends a real number x to the greatest integer less than or equal to x, written ⌊x⌋.",
+  "definition_ja": "実数 x に、x を超えない最大の整数を対応させる関数。日本語版 Wikipedia「床関数と天井関数」はガウス記号 [x] と書き、英語の本は ⌊x⌋ と書く（OpenStax Calculus Volume 2 は [x] を使うときに the greatest integer less than or equal to x と断る）。",
+  "definition_en": "The function whose value at a real number x is the largest integer not exceeding x, written ⌊x⌋.",
   "latex": "\\lfloor x \\rfloor = n \\iff n \\le x < n + 1",
   "spoken_en": "the floor of x equals n if and only if n is less than or equal to x, which is less than n plus 1",
   "examples": [
@@ -55,8 +55,8 @@
     }
   ],
   "pitfalls": [
-    "日本語の「ガウス記号」は記号 [x] の名前で、英語の見出しは関数の名前（floor function）。記号は ⌊x⌋ と書き、the floor of x と読む。用例コーパスでは話・書とも少なくて決まらず（話し言葉では数学の意味の floor of と floor function が同じくらい）、見出しは OpenStax Calculus の呼び方。",
-    "日本の [x] を英語の文にそのまま書くと、ただの角かっこ（brackets）に見える。英語で書くときは ⌊x⌋ を使う。",
+    "日本語の「ガウス記号」は記号 [x] の名前で、英語の見出しは関数の名前（floor function）。記号は ⌊x⌋ と書き、the floor of x と読む。",
+    "ガウス記号の [x] を英語の文にそのまま書くと、ただの角かっこ（brackets）に見える（日本語版 Wikipedia「床関数と天井関数」は、日本の高校数学ではガウス記号が使われることがほとんどと書く）。英語で書くときは ⌊x⌋ を使う。",
     "負の数に注意。⌊−3.7⌋ は −3 ではなく −4（−3.7 を超えない最大の整数）。",
     "切り上げの ⌈x⌉ は ceiling function（the ceiling of x）。床関数と天井関数は対になっている。"
   ],
@@ -75,6 +75,23 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「床関数と天井関数」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%BA%8A%E9%96%A2%E6%95%B0%E3%81%A8%E5%A4%A9%E4%BA%95%E9%96%A2%E6%95%B0",
+      "note": "ガウス記号 [x]"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "級数の練習問題: [x] は the greatest integer less than or equal to x"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学 (教科)」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6%20%28%E6%95%99%E7%A7%91%29",
+      "note": "数学A 整数の性質: ガウス記号"
     }
   ],
   "confidence": "likely",
@@ -83,7 +100,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "floor function": 4,

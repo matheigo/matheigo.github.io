@@ -22,7 +22,6 @@
       "数I"
     ],
     "us": [
-      "Geometry",
       "Discrete Math"
     ]
   },
@@ -44,7 +43,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の教科書は補集合を Ā と書く。英語の本では Aᶜ、A′、Ā など記号は教科書による。",
+    "高等学校学習指導要領解説（数学I）は集合の記号として Ā（A の補集合）を挙げ、共通テスト（令和 4 年度 数学I ほか）は「X の補集合を X̄ と表す」と書く。英語の本の記号は分かれる: OpenStax Introductory Statistics は A′、Algebra and Trigonometry は E′、Levin は Ā と書き、英語版 Wikipedia「Complement (set theory)」は Aᶜ も挙げる。",
     "同じ complement が余事象（complement of an event）にも使われ、complementary angle（余角）という形でも出てくる。用例コーパスの complement of の件数には余事象の意味も入っている（書き言葉の半分以上は OpenStax Introductory Statistics）。",
     "つづりは complement（補う）。compliment（ほめ言葉）と取り違えない。"
   ],
@@ -53,7 +52,8 @@
     "union",
     "de-morgans-laws",
     "venn-diagram",
-    "set"
+    "set",
+    "intersection"
   ],
   "sources": [
     {
@@ -63,6 +63,28 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 集合と命題: 集合の記号 Ā（A の補集合）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "令和 4 年度 数学I ほか: X の補集合を X̄ と表す（8 件）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "Sets: Ā（complement）"
+    },
+    {
+      "type": "wikipedia-langlink",
+      "ja": "補集合",
+      "en": "Complement (set theory)"
     }
   ],
   "confidence": "likely",
@@ -71,7 +93,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "complement of": 14

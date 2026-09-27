@@ -11,8 +11,7 @@
     "uk": null
   },
   "pos": "verb",
-  "mapping": "near",
-  "mapping_note": "日本語の「〜となる x が存在する」（∃）は、英語では there exists x such that … ／ there is … と、存在するものを後ろに置く形になる（用例コーパスでは there exists は話し言葉・書き言葉ともよく出てくる。exist の件数に含まれる）。exist は the limit exists ／ the inverse exists のように、値や物が「ある・定まる」の意味でも使う。",
+  "mapping": "exact",
   "domains": [
     "algebra",
     "logic"
@@ -57,7 +56,8 @@
   ],
   "pitfalls": [
     "記号 ∃ は there exists と読む。「ただ 1 つ存在する」は there exists a unique … ／ there is exactly one …。",
-    "「存在する」の否定を言うときは doesn't exist（話し言葉）／ does not exist（答案）。there is no x such that … も同じ意味。"
+    "「存在する」の否定を言うときは doesn't exist（話し言葉）／ does not exist（答案）。there is no x such that … も同じ意味。",
+    "日本語の「〜となる x が存在する」（∃）は、英語では there exists x such that … ／ there is … と、存在するものを後ろに置く形になる（用例コーパスでは there exists は話し言葉・書き言葉ともよく出てくる。exist の件数に含まれる）。exist は the limit exists ／ the inverse exists のように、値や物が「ある・定まる」の意味でも使う。"
   ],
   "related": [
     "at-least-one",
@@ -82,7 +82,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "exist": 718

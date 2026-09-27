@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（fractional part of の形で CED・OpenStax・IM・CK-12 とも 0 件。IM Grade 6 の fractional parts 2 件は 1 を分数に分けた部分の意味）。",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（fractional part of の形で CED・OpenStax・IM・CK-12 とも 0 件。IM Grade 6 の fractional parts 2 件と CK-12 Algebra の 2 件は、1 や小数の位を分数に分けた部分の意味）。",
   "domains": [
     "algebra"
   ],
@@ -49,7 +49,8 @@
   ],
   "pitfalls": [
     "無理数の小数部分は 0.236… と書き並べず、√5 − 2 のように「元の数 − 整数部分」の式で表す。",
-    "fractional part の fractional は「分数の」ではなく「1 に満たない端の」の意味。答えが分数になるわけではない。"
+    "fractional part の fractional は「分数の」ではなく「1 に満たない端の」の意味。答えが分数になるわけではない。",
+    "負の数では流儀が分かれる。英語版 Wikipedia「Fractional part」（For negative numbers の節）は x − ⌊x⌋ 以外の流儀も挙げるので、負の数のときはどちらの意味かを書く（エントリ integer-part）。"
   ],
   "related": [
     "integer-part",
@@ -62,6 +63,18 @@
       "type": "wikipedia-langlink",
       "ja": "小数部分",
       "en": "Fractional part"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 6)",
+      "url": "https://im.kendallhunt.com/MS/students/1/index.html",
+      "note": "Grade 6 4.3・7.x: fractional parts は 1 を分数に分けた部分の意味（2 件）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Algebra (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Algebra",
+      "note": "a fractional part of a power of one-tenth（小数の位の意味、2 件）"
     }
   ],
   "confidence": "likely",
@@ -70,7 +83,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "!a fractional part of | fractional part is": 1

@@ -13,17 +13,17 @@
   },
   "pos": "adjective",
   "mapping": "near",
-  "mapping_note": "日本語の「偏りがある」は分布の形（skewed）にも使うが、英語の biased は標本の選び方や推定のかたよりに限る。",
+  "mapping_note": "英語の biased は、標本の選び方（OpenStax Introductory Statistics の biased sample）・推定量（エントリ unbiased-estimator の反対）・硬貨の公平さ（biased coin）にまたがる。中学校学習指導要領解説の「偏り」は標本の抽出について言い（偏りなく抽出する）、日本語の「偏りがある」はこの 1 つ目に当たる。",
   "domains": [
     "statistics"
   ],
   "level": {
     "jp": [
-      "数I"
+      "中3"
     ],
     "us": [
-      "Algebra 1",
       "AP Statistics",
+      "Intro Statistics",
       "Integrated Math 3"
     ]
   },
@@ -56,6 +56,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 3 学年 標本調査: 偏りなく抽出するための代表的な方法として無作為抽出"
     }
   ],
   "confidence": "likely",
@@ -64,7 +70,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "biased": 65

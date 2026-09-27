@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスには integer part は出てこない。説明的な greatest integer less than or equal to が書き言葉（OpenStax Calculus）にわずかに出てくるだけ）。正の数の整数部分は床関数の値 ⌊x⌋（the floor of x）と同じなので、英語では floor か the greatest integer less than or equal to x で言う。英語版 Wikipedia「Floor and ceiling functions」（en.term のリダイレクト先）は冒頭で integer part を太字で定義する。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスには integer part は出てこない。説明的な greatest integer less than or equal to が書き言葉（OpenStax Calculus）にわずかに出てくるだけ）。正の数の整数部分は床関数の値 ⌊x⌋（the floor of x）と同じで、OpenStax Calculus Volume 1 は ⌊x⌋ を the floor function と呼び、Volume 2 は [x] を the greatest integer less than or equal to x と説明する。英語版 Wikipedia「Floor and ceiling functions」は integer part のほか integral part・greatest integer とも呼ぶ。英語版 Wikipedia「Floor and ceiling functions」（en.term のリダイレクト先）は冒頭で integer part を太字で定義する。",
   "domains": [
     "algebra"
   ],
@@ -43,7 +43,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "負の数では意味が分かれる。⌊x⌋ で考えると −2.5 の整数部分は −3 になるが、小数点より前を取って −2 とする使い方もある。負の数のときはどちらの意味かを書く。"
+    "負の数では意味が分かれる。⌊x⌋ で考えると −2.5 の整数部分は −3 になるが、英語版 Wikipedia「Floor and ceiling functions」が書くように、integer part を 0 に向かう切り捨て（truncation）の意味に使って −2 とする流儀もある。負の数のときはどちらの意味かを書く。"
   ],
   "related": [
     "floor-function",
@@ -60,6 +60,16 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Floor_and_ceiling_functions",
       "note": "記事名 Floor and ceiling functions（en.term integer part のリダイレクト先。冒頭で integer part を太字で定義。数学カテゴリから 2 段）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "The Mean Value Theorem: the floor function ⌊x⌋"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "級数の練習問題: [x] は the greatest integer less than or equal to x"
     }
   ],
   "confidence": "likely",

@@ -1579,6 +1579,20 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   unbiased: { unbiased: "unbiased sample | unbiased estimate | unbiased estimator | unbiased statistic" },
   // the ratio of the volumes of similar solids: IM's "surface area to volume ratio" is another concept (Phase 5 監査 4, batch 14)
   "ratio-of-volumes-of-similar-solids": { "volume ratio": "!to volume ratio" },
+  // Phase 5 監査 5 バッチ 15: the bare "connective" must not count the "logical connective" it sits in
+  // (CK-12 Geometry writes logical connective 18 times, connective alone twice)
+  "logical-connective": { connective: "!logical connective" },
+  // Phase 5 監査 5 バッチ 15: the two spellings are one wording (IM and OpenStax write "end point" too)
+  endpoint: { endpoint: "endpoint | end point" },
+  // universe in the set sense only (the physical universe fills the captions); CK-12 Geometry 2.10 "the universe of all things",
+  // Levin "the universe is 𝒰" (read as "u" in the references) and "universe of discourse"
+  "universal-set": { universe: "the universe of all things | universe of discourse | universe is u | universe u | the universe be the set" },
+  // 二次関数の決定: "find the coefficients" alone counts binomial, Fourier and partial-fraction coefficients, so only the
+  // quadratic-fitting forms count; OpenStax Intermediate Algebra says "find a quadratic function from its graph"
+  "determine-the-coefficients": {
+    "find the coefficients": "find the coefficients a, b, and c | find the coefficients a b and c | find the coefficients of the quadratic",
+    "find a quadratic function": "find a quadratic function | find the quadratic function | quadratic function from its graph",
+  },
   // the order of a polynomial's terms only: "increasing powers" alone is the partial-fraction denominators and the powers of i (Phase 5 監査 4, batch 14)
   "ascending-order": { "increasing powers": "increasing powers of x | increasing powers of the variable" },
   "arithmetic-mean": { mean: "the mean !value" }, // the mean of data; not "I mean" or the mean value theorem
@@ -2323,6 +2337,10 @@ export interface WikipediaName {
  * 単元 2: a reference's name counts only for the same concept). id -> why.
  */
 export const WIKIPEDIA_NOT_SAME: Record<string, string> = {
+  // en.term "universal set" is that article's name, but the article is the set of all objects (of all
+  // sets), which ordinary set theory proves does not exist; the 全体集合 U of 数I (the universe of
+  // discourse) is the article "Universe (mathematics)" (Phase 5 監査 5 バッチ 15)
+  "universal-set": "Universal set",
   // en.term "circular permutation" redirects there: a permutation with one cycle (group theory),
   // not the arrangements around a circle of 円順列
   "circular-permutation": "Cyclic permutation",

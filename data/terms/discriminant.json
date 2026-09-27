@@ -19,7 +19,6 @@
   ],
   "level": {
     "jp": [
-      "中3",
       "数I",
       "数II"
     ],
@@ -56,7 +55,7 @@
     }
   ],
   "pitfalls": [
-    "日本の答案では D と置いて「D > 0 より」と書く。OpenStax（Algebra and Trigonometry・Calculus）は判別式に文字を置かず、b² − 4ac のまま書いて the discriminant と呼ぶ。"
+    "共通テスト・センター試験（数学II）の問題文は「判別式を D とすると」と置き（平成 28・31 年度 第1問、令和 5 年度 第3問）、日本語版 Wikipedia「判別式」も D で表記する。OpenStax Algebra and Trigonometry は二次方程式の判別式に文字を置かず b² − 4ac のまま the discriminant と呼び、OpenStax Calculus Volume 3 は円錐曲線や 2 変数関数の判別式を D と置く。"
   ],
   "related": [
     "quadratic-formula"
@@ -70,6 +69,16 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "平成 28・31 年度 数学II 第1問、令和 5 年度 数学II 第3問: 判別式を D とする"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3",
+      "note": "円錐曲線の判別式 D = 4AC − B²、2 変数関数の判別式 D"
     }
   ],
   "confidence": "likely",
@@ -79,7 +88,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "discriminant": 32

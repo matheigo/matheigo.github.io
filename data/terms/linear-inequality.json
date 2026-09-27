@@ -50,8 +50,8 @@
     }
   ],
   "pitfalls": [
-    "日本の教科書は ≦ ≧、英語の教材は ≤ ≥ と書く。読みは less than or equal to ／ greater than or equal to。",
-    "英語の linear inequality は 1 変数に限らず、y ≤ 2x + 1 のような 2 変数の一次の不等式も指す。そのグラフ（半平面）は日本では数II の「不等式の表す領域」で扱う。"
+    "中学校学習指導要領〔用語・記号〕（中1 数と式）は ≦ ≧、OpenStax と AP の CED は ≤ ≥ と書く（慣習差 inequality-symbols）。読みは less than or equal to ／ greater than or equal to。",
+    "英語の linear inequality は 1 変数に限らず、y ≤ 2x + 1 のような 2 変数の一次の不等式も指す。そのグラフ（半平面）は、学習指導要領解説では数学II「図形と方程式」の「不等式の表す領域」で扱う（慣習差 inequality-terms-scope、エントリ system-of-linear-inequalities）。"
   ],
   "related": [
     "properties-of-inequalities",
@@ -74,7 +74,24 @@
       "type": "reference",
       "title": "Illustrative Mathematics, IM 9–12 Math (Algebra 1)",
       "url": "https://im.kendallhunt.com/HS/students/1/index.html",
-      "note": "Algebra 1 2.24 Solutions to Systems of Linear Inequalities in Two Variables・Algebra 1 2.21 Graphing Linear Inequalities in Two Variables (Part 1)・Algebra 1 2.22 Graphing Linear Inequalities in Two Var"
+      "note": "Algebra 1 2.21・2.22 Graphing Linear Inequalities in Two Variables (Part 1・2)・2.24 Solutions to Systems of Linear Inequalities in Two Variables"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）〔用語・記号〕",
+      "note": "中1 A 数と式: ≦ ≧"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II 図形と方程式: 不等式の表す領域（8 件）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Linear_inequality",
+      "note": "記事「Linear inequality」（数学カテゴリから 4 段。冒頭で太字で定義）"
     }
   ],
   "confidence": "likely",
@@ -83,7 +100,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "linear inequality": 9

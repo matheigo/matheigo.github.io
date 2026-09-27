@@ -3,7 +3,9 @@
   "ja": {
     "term": "因数分解形",
     "reading": "いんすうぶんかいけい",
-    "alt": []
+    "alt": [
+      "分解形"
+    ]
   },
   "en": {
     "term": "factored form",
@@ -13,13 +15,13 @@
       {
         "term": "intercept form",
         "register": "both",
-        "note": "x 切片が読める形という名前。slope-intercept form（傾き・切片形）と区別して、前に slope が付かない形で数えた。話し言葉・書き言葉ともほとんど出てこず、factored form よりずっと少ない。"
+        "note": "x 切片が読める形という名前。slope-intercept form（傾き・切片形）と区別して、前に slope が付かない形で数えた。用例コーパスにわずかで、参照（OpenStax・IM・CK-12）には出てこない。factored form よりずっと少ない。"
       }
     ]
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "見出しの「因数分解形」は学習指導要領解説に無い（日本語版 Wikipedia「二次関数」にはある）。日本の教科書では y = a(x − α)(x − β) を「x 軸と x = α, β で交わる放物線」の式として扱う。英語ではこの形に factored form ／ intercept form という名前があり、話し言葉・書き言葉とも factored form が多い（書き言葉は OpenStax Algebra and Trigonometry が中心）。",
+  "mapping_note": "見出しの「因数分解形」は学習指導要領解説に無い（日本語版 Wikipedia「二次関数」にはある）。日本語版 Wikipedia「二次関数」は f(x) = a(x − s)(x − t) の形を因数分解形（単に分解形とも）と呼び、高等学校学習指導要領解説（数学I）はこの形に名前を付けず、二次方程式の解を二次関数のグラフと x 軸との共有点の x 座標として扱う。英語ではこの形に factored form ／ intercept form という名前があり、話し言葉・書き言葉とも factored form が多い（書き言葉は OpenStax Algebra and Trigonometry が中心）。",
   "domains": [
     "functions"
   ],
@@ -74,6 +76,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「二次関数」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%BA%8C%E6%AC%A1%E9%96%A2%E6%95%B0",
+      "note": "因数分解形 f(x) = a(x − s)(x − t)（factored form）、単に分解形とも"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 二次関数: 二次方程式の解を二次関数のグラフと x 軸との共有点の x 座標として扱う（因数分解形の名前は無い）"
     }
   ],
   "confidence": "likely",

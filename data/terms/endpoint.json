@@ -16,7 +16,8 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
-    "functions"
+    "functions",
+    "geometry"
   ],
   "level": {
     "jp": [
@@ -24,11 +25,13 @@
     ],
     "us": [
       "Algebra 1",
-      "Algebra 2"
+      "Algebra 2",
+      "Geometry",
+      "AP Calculus AB"
     ]
   },
-  "definition_ja": "区間の両端にあたる数（点）。区間 a ≦ x ≦ b では a と b。",
-  "definition_en": "Either of the two numbers that bound an interval; the endpoints of [a, b] are a and b.",
+  "definition_ja": "線分や半直線の端の点。区間では両端の数（点）で、区間 a ≦ x ≦ b の端点は a と b。",
+  "definition_en": "A point at either end of a segment or the starting point of a ray; for an interval, either of the two numbers that bound it, so the endpoints of [a, b] are a and b.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -50,22 +53,19 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本語では「区間の端」「両端」と言うことが多いが、英語は endpoint 1 語で、「両端」は the endpoints (of the interval)。",
-    "端点を含むかどうかは区間記法のかっこで表す。[ ] は含む、( ) は含まない。∞ の側は端点がないので必ず丸かっこ。"
+    "英語は線分・半直線・区間のどの端も endpoint 1 語で言い（IM・OpenStax は end point と 2 語に綴ることもある）、「両端」は the endpoints (of the interval)。高等学校学習指導要領解説（数学I 図形と計量）と共通テストは線分・半直線の端を「端点」と書き、区間の端は日本語版 Wikipedia「区間 (数学)」が端点 (endpoints) と呼ぶ。",
+    "端点を含むかどうかは区間記法のかっこで表す。[ ] は含む、( ) は含まない。∞ は数ではないので端点として含められず、必ず丸かっこ（英語版 Wikipedia「Interval (mathematics)」は infinite endpoints の節で扱う）。"
   ],
   "related": [
     "interval",
     "closed-interval",
     "open-interval",
     "vertex",
-    "maximum"
+    "maximum",
+    "interval-notation",
+    "segment"
   ],
   "sources": [
-    {
-      "type": "wikipedia-langlink",
-      "ja": "端点",
-      "en": "End (topology)"
-    },
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
@@ -73,6 +73,34 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "wikipedia-langlink",
+      "ja": "区間 (数学)",
+      "en": "Interval (mathematics)"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.1 Geometry Terms: An endpoint is a point at the end of a line segment（endpoint 110 件）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 図形と計量: 原点を一方の端点とする半直線"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "平成 30 年度 数学I・A: 辺 AC の端点。令和 8 年度 数学I 第2問: 点 B を端点とする半直線"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 5.5（endpoints: 閉区間の最大・最小は critical points か endpoints で）・10.13（endpoints of the interval: 収束区間の両端）"
     }
   ],
   "confidence": "likely",
@@ -81,13 +109,13 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
-      "endpoint": 216
+      "endpoint | end point": 316
     },
     "written": {
-      "endpoint": 307
+      "endpoint | end point": 319
     },
     "sources": [
       "khan-algebra",
@@ -108,8 +136,9 @@
       "yt:3blue1brown",
       "yt:blackpenredpen",
       "yt:organicchem",
+      "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

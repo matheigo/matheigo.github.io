@@ -3,13 +3,13 @@
   "ja": {
     "term": "対称式",
     "reading": "たいしょうしき",
-    "alt": []
+    "alt": [
+      "対称多項式"
+    ]
   },
   "en": {
     "term": "symmetric polynomial",
-    "alt": [
-      "symmetric expression"
-    ],
+    "alt": [],
     "uk": null
   },
   "pos": "noun",
@@ -20,7 +20,8 @@
   ],
   "level": {
     "jp": [
-      "数I"
+      "数I",
+      "数II"
     ],
     "us": [
       "Algebra 1",
@@ -38,7 +39,7 @@
       "register": "spoken"
     },
     {
-      "en": "If x + y = 3 and xy = 1, find the value of the symmetric expression x³ + y³.",
+      "en": "If x + y = 3 and xy = 1, find the value of the symmetric polynomial x³ + y³.",
       "ja": "x + y = 3, xy = 1 のとき、対称式 x³ + y³ の値を求めよ。",
       "register": "written"
     }
@@ -59,6 +60,12 @@
       "type": "wikipedia-langlink",
       "ja": "対称式",
       "en": "Symmetric polynomial"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II 複素数と方程式: 解と係数の関係で対称式（2 件）"
     }
   ],
   "confidence": "likely",

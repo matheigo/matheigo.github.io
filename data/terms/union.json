@@ -22,18 +22,17 @@
       "数I"
     ],
     "us": [
-      "Geometry",
       "Discrete Math"
     ]
   },
   "definition_ja": "集合 A と B の少なくとも一方に属する要素全体の集合。A ∪ B と書く。",
-  "definition_en": "The set of all elements that belong to A, to B, or to both, written A ∪ B.",
+  "definition_en": "The set made up of everything in A together with everything in B (an element in both counts once), written A ∪ B.",
   "latex": "A \\cup B",
   "spoken_en": "A union B",
   "examples": [
     {
       "en": "A union B means anything that's in A or in B, or in both.",
-      "ja": "A 和集合 B は、A か B の少なくとも一方に入っているもの全部だ。",
+      "ja": "A ∪ B（A と B の和集合）は、A か B の少なくとも一方に入っているもの全部だ。",
       "register": "spoken"
     },
     {
@@ -52,7 +51,8 @@
     "complement",
     "de-morgans-laws",
     "venn-diagram",
-    "number-of-elements"
+    "number-of-elements",
+    "intersection"
   ],
   "sources": [
     {
@@ -75,7 +75,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "union of": 16

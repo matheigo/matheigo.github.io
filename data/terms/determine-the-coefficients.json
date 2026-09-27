@@ -6,16 +6,16 @@
     "alt": []
   },
   "en": {
-    "term": "find the coefficients",
+    "term": "find a quadratic function",
     "alt": [
+      "find the coefficients",
       "determine the coefficients"
     ],
-    "uk": null,
-    "register": "written"
+    "uk": null
   },
   "pos": "phrase",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "日本語の「係数を決定する」「二次関数の決定」は係数を求めることとして言うが、参照の英語は関数そのものを求めると言う: OpenStax Intermediate Algebra は Find a Quadratic Function from its Graph（頂点と 1 点から）。3 点を通る場合は a, b, c の連立方程式を解く。find the coefficients は用例コーパス・参照では二項係数・部分分数の係数などの意味で使われ、二次関数の決定の意味では出てこない。",
   "domains": [
     "functions"
   ],
@@ -40,20 +40,19 @@
       "register": "spoken"
     },
     {
-      "en": "The graph of y = ax² + bx + c passes through (0, 3), (1, 2), and (2, 5). Find the coefficients a, b, and c.",
-      "ja": "放物線 y = ax² + bx + c が 3 点 (0, 3), (1, 2), (2, 5) を通るとき、係数 a, b, c を決定せよ。",
+      "en": "The graph of y = ax² + bx + c passes through (0, 3), (1, 2), and (2, 5). Find a quadratic function that fits these points, that is, the values of a, b, and c.",
+      "ja": "放物線 y = ax² + bx + c が 3 点 (0, 3), (1, 2), (2, 5) を通るとき、この二次関数を求めよ（係数 a, b, c を決定せよ）。",
       "register": "written"
     },
     {
-      "en": "The parabola y = a(x − 1)² − 2 passes through (3, 6). Determine the coefficients of the quadratic function.",
-      "ja": "放物線 y = a(x − 1)² − 2 が点 (3, 6) を通る。この二次関数の係数を決定せよ。",
+      "en": "The parabola y = a(x − 1)² − 2 passes through (3, 6). Find the value of a.",
+      "ja": "放物線 y = a(x − 1)² − 2 が点 (3, 6) を通る。a の値を求めよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは find the coefficients は話し言葉では少なく（大半が MIT OCW）、書き言葉では主に OpenStax Intermediate Algebra・OpenStax Algebra and Trigonometry に出てくる。determine the coefficients は書き言葉にほとんど出てこない。書き言葉は find the coefficients で決まる。",
-    "数I の「二次関数の決定」はこのエントリで扱う。英語の問題文では求めるもの（the coefficients a, b, c や the quadratic function）を目的語にして find で書けばよい。",
+    "「二次関数の決定」（学習指導要領解説には無い教科書の節の名前）の内容はこのエントリで扱う。英語の問題文では求めるもの（the quadratic function や the values of a, b, and c）を目的語にして find で書けばよい。",
     "条件に頂点があれば vertex form y = a(x − p)² + q、通る 3 点なら standard form y = ax² + bx + c とおくと式が少なくて済む。"
   ],
   "related": [
@@ -70,7 +69,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 2"
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "Graph Quadratic Functions Using Transformations: Find a Quadratic Function from its Graph（4 件）"
     }
   ],
   "confidence": "likely",
@@ -79,26 +79,28 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
-      "find the coefficients": 7
+      "find a quadratic function | find the quadratic function | quadratic function from its graph": 1
     },
     "written": {
-      "find the coefficients": 14,
-      "determine the coefficients": 2
+      "determine the coefficients": 2,
+      "find a quadratic function | find the quadratic function | quadratic function from its graph": 4
     },
     "sources": [
-      "mit-18.03",
-      "mit-18.06",
-      "mit-6.042",
       "mit-notes",
-      "openstax-algtrig",
       "openstax-calculus",
       "openstax-intalg",
-      "openstax-introstats",
-      "yt:3blue1brown"
+      "yt:organicchem"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 find a quadratic function | find the quadratic function | quadratic function from its graph（本文 4 件）。register は主張しない。",
+      "raised": "2026-09-26"
+    }
+  ]
 }

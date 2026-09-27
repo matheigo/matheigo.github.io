@@ -18,11 +18,13 @@
   ],
   "level": {
     "jp": [
-      "数I"
+      "数I",
+      "数III"
     ],
     "us": [
-      "Algebra 1",
-      "Algebra 2"
+      "Algebra 2",
+      "AP Calculus AB",
+      "Calculus I"
     ]
   },
   "definition_ja": "両端の数を含む区間。a ≦ x ≦ b を満たす実数 x 全体で、[a, b] と書く。",
@@ -43,7 +45,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "数I では定義域を 0 ≦ x ≦ 3 のように不等式で書くのがふつう。英語の問題文では [0, 3] の区間記号でも 0 ≤ x ≤ 3 でも書ける。",
+    "共通テスト・センター試験の数学I は定義域を 0 ≦ x ≦ 3 のように不等式で書き、学習指導要領解説で閉区間 [a, b] が出るのは数学III の積分だけ。OpenStax Calculus と AP Calculus の CED（topic 1.16・5.5）は on the closed interval [a, b] と書く。",
     "角括弧 [ ] は端を含む、丸括弧 ( ) は端を含まない。[0, 3) のように片方だけ含む区間は閉区間でも開区間でもない。"
   ],
   "related": [
@@ -51,7 +53,8 @@
     "interval",
     "endpoint",
     "extreme-value-theorem",
-    "maximum"
+    "maximum",
+    "interval-notation"
   ],
   "sources": [
     {
@@ -61,6 +64,29 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "平成 30 年度 数学I: ア ≦ x ≦ イ における関数の最小値（区間の記法は無い）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学III 積分: 閉区間 [a, b]（1 件）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 1.16・5.5（closed interval）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Interval_(mathematics)",
+      "note": "節 Open and closed intervals: closed interval を太字で定義（日本語版「区間 (数学)」も同じ）"
     }
   ],
   "confidence": "likely",
@@ -69,7 +95,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "closed interval": 147

@@ -25,24 +25,25 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "見出しの「定義域の制限」は学習指導要領解説に無い（日本語版 Wikipedia「定義域」の節「定義域の制限と延長」にはある）。高等学校学習指導要領解説は同じ内容を「区間が制限された関数の最大値や最小値」（数学II 微分）、逆関数は「元の関数が 1 対 1 の対応であるとき」（数学III）と書く。",
   "domains": [
     "functions"
   ],
   "level": {
     "jp": [
       "数I",
+      "数II",
+      "数III",
       "大学"
     ],
     "us": [
-      "Precalculus",
-      "Algebra 1",
       "Algebra 2",
+      "Precalculus",
       "Integrated Math 3"
     ]
   },
   "definition_ja": "関数の定義域を一部に限ること。1 対 1 でない関数に逆関数を考えるときなどに使う。",
-  "definition_en": "Limiting a function's domain to part of it, for example so that a function that is not one-to-one has an inverse.",
+  "definition_en": "Cutting a function's domain down to part of it, for instance so that a function which fails the horizontal line test can be given an inverse.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -80,6 +81,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「定義域」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9%E5%9F%9F",
+      "note": "節「定義域の制限と延長」"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II 微分: 区間が制限された関数の最大値や最小値（数学I の二次関数を振り返る）。数学III: 逆関数は元の関数が 1 対 1 の対応であるとき"
     }
   ],
   "confidence": "likely",
@@ -88,7 +101,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "restrict the domain": 4,

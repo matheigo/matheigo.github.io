@@ -1,10 +1,11 @@
 {
   "id": "solution-set",
   "ja": {
-    "term": "解の範囲",
-    "reading": "かいのはんい",
+    "term": "解集合",
+    "reading": "かいしゅうごう",
     "alt": [
-      "解集合"
+      "解の範囲",
+      "x の値の範囲"
     ]
   },
   "en": {
@@ -40,7 +41,7 @@
     },
     {
       "en": "Find the solution set of x² − 5x + 6 < 0 and write it in interval notation.",
-      "ja": "x² − 5x + 6 < 0 を満たす x の範囲を求めよ。",
+      "ja": "x² − 5x + 6 < 0 の解集合を求め、区間の記法で表せ。",
       "register": "written"
     },
     {
@@ -56,7 +57,7 @@
     }
   ],
   "pitfalls": [
-    "区間の記法 (2, 3)、[1, ∞) は日本の高校の教科書では使わない（2 < x < 3、x ≧ 1 と書く）。(2, 3) は点の座標と同じ書き方なので読み違えに注意。読みは the open interval from 2 to 3。",
+    "区間の記法 (2, 3)、[1, ∞) は、高等学校学習指導要領解説では数学III の積分に閉区間 [a, b] が出てくる程度で、共通テストの問題文は 2 < x < 3、x ≧ 1 と不等式で書く（慣習差 interval-notation-vs-inequalities）。(2, 3) は点の座標と同じ書き方なので読み違えに注意。読みは the open interval from 2 to 3。",
     "問題文の「〜を満たす x の範囲を求めよ」は Find the values of x that satisfy … か Find the solution set of …。集合の記法では {x | x > 2}（the set of all x such that x > 2）。",
     "解が無いときは no solution（解集合は the empty set ∅）、すべての実数が解なら all real numbers。"
   ],
@@ -75,6 +76,23 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学III 積分: 閉区間 [a, b]（1 件。数学I の不等式の解は 2 < x < 3 の形）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "解の範囲は不等式で書く（区間の記法は無い）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「方程式」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%96%B9%E7%A8%8B%E5%BC%8F",
+      "note": "解全体の集合を解集合という"
     }
   ],
   "confidence": "likely",
@@ -83,7 +101,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "solution set": 64
