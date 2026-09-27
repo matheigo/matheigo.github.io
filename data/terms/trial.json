@@ -94,7 +94,7 @@
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-27",
     "human": null
   },
   "updated": "2026-09-27",
@@ -122,5 +122,12 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-27"
-  }
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: mapping exact → near と definition_ja（日本語の試行は実験そのものにも 1 回 1 回にも使い、英語の trial は 1 回 1 回。CED topic 2.3 の random process、IM Grade 7 の chance experiment、OpenStax の experiment）。見直す点: mapping_note の資料の対応（解説（数学B）・センター試験 平成 30 年度）、definition_ja、related の experiment。次の監査のセッションが見直す。",
+      "raised": "2026-09-27"
+    }
+  ]
 }
