@@ -15,7 +15,8 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
-    "combinatorics"
+    "combinatorics",
+    "probability"
   ],
   "level": {
     "jp": [
@@ -25,7 +26,8 @@
       "Algebra 2",
       "Discrete Math",
       "Integrated Math 2",
-      "Intro Statistics"
+      "Intro Statistics",
+      "AP Statistics"
     ]
   },
   "definition_ja": "事象 A と事象 B の少なくとも一方が起こるという事象。A ∪ B と書く。",
@@ -46,18 +48,31 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "確率では A ∪ B を「A or B」と読むことが多い。OpenStax Introductory Statistics は P(A OR B) と書く。"
+    "OpenStax Introductory Statistics（3.1 Terminology）は A ∪ B を A OR B と書き（A Union B とも）、AP Statistics の CED（topic 2.7）は P(A union B) と書いて the probability of the union と呼ぶ。"
   ],
   "related": [
     "union",
     "intersection-of-events",
     "general-addition-rule",
-    "mutually-exclusive-events"
+    "mutually-exclusive-events",
+    "complementary-event",
+    "double-count"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "3.1 Terminology（A OR B、A Union B）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.7（the union of two events、P(A union B)）"
     }
   ],
   "confidence": "likely",
@@ -66,7 +81,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "union of two events | union of events": 1
@@ -78,6 +93,6 @@
       "mit-6.042",
       "openstax-algtrig"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

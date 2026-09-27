@@ -4,10 +4,7 @@
     "term": "事象の独立",
     "reading": "じしょうのどくりつ",
     "alt": [
-      "独立事象",
-      "独立",
-      "独立な試行",
-      "従属"
+      "独立"
     ]
   },
   "en": {
@@ -33,7 +30,9 @@
       "Algebra 2",
       "Intro Statistics",
       "Discrete Math",
-      "Integrated Math 2"
+      "Integrated Math 2",
+      "AP Statistics",
+      "Geometry"
     ]
   },
   "definition_ja": "一方の事象が起こるかどうかが、もう一方の事象の起こる確率に影響しないこと。P(A ∩ B) = P(A)P(B) が成り立つ。",
@@ -42,8 +41,8 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "Two coin flips are independent events: the first flip doesn't change the second.",
-      "ja": "2 回の硬貨投げは独立な事象だ。1 回目は 2 回目に影響しない。",
+      "en": "Getting heads on the first flip and getting heads on the second flip are independent events: the first flip doesn't change the second.",
+      "ja": "1 回目に表が出ることと 2 回目に表が出ることは独立な事象だ。1 回目は 2 回目に影響しない。",
       "register": "spoken"
     },
     {
@@ -52,22 +51,24 @@
       "register": "written"
     },
     {
-      "en": "The two tosses are independent trials, so multiply the probabilities: (1/2)(1/6) = 1/12.",
-      "ja": "2 回の試行は独立なので、確率を掛けて (1/2)(1/6) = 1/12。",
+      "en": "A coin toss and a die roll are independent trials, so P(heads and a 6) = (1/2)(1/6) = 1/12.",
+      "ja": "硬貨を投げることとさいころを振ることは独立な試行なので、P(表かつ 6) = (1/2)(1/6) = 1/12。",
       "register": "spoken"
     }
   ],
   "collocations": [],
   "pitfalls": [
     "排反（mutually exclusive）と取り違えない。確率が 0 でない 2 つの事象が排反なら、独立ではない。",
-    "数 A の「独立な試行」も同じ考え方。確率変数の独立は independent-random-variables。",
+    "学習指導要領解説（数学A）は、独立な試行（2 つの試行の結果が互いに影響を及ぼさない試行）の確率を P(C) = P(A)P(B) で扱い、事象の独立・従属は理数数学I の発展・拡充の内容に挙げる。確率変数の独立は independent-random-variables。",
     "独立でない事象は dependent events（従属な事象）と言う。"
   ],
   "related": [
     "general-multiplication-rule",
     "independent-random-variables",
     "test-for-independence",
-    "repeated-trials"
+    "repeated-trials",
+    "mutually-exclusive-events",
+    "conditional-probability"
   ],
   "sources": [
     {
@@ -79,6 +80,18 @@
       "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
       "note": "Topic 2.7"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A (2): 独立な試行の確率 P(C)=P(A)P(B)。事象の独立や従属は理数数学I の発展・拡充"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 8.7 Related Events〜8.10 Using Probability to Determine Whether Events Are Independent"
     }
   ],
   "confidence": "likely",
@@ -87,7 +100,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "independent events | events are independent | independence of events | event … independent of": 22,
@@ -104,6 +117,6 @@
       "openstax-introstats",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

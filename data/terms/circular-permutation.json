@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "英語版 Wikipedia の Cyclic permutation（circular permutation のリダイレクト先）は群論の巡回置換（1 つの巡回だけからなる置換）で、円順列とは別の概念。",
+  "mapping_note": "英語版 Wikipedia の Cyclic permutation（circular permutation のリダイレクト先）は群論の巡回置換（1 つの巡回だけからなる置換）で、円順列とは別の概念。円順列に当たるのは英語版 Wikipedia「Permutation」の節 Circular permutations で、円形に並べて回転で重なるものを同じとみなす並べ方を circular permutation と呼ぶ。",
   "domains": [
     "combinatorics"
   ],
@@ -43,8 +43,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "数珠や首飾りのように裏返しても同じとみなす並べ方（じゅず順列）は、円順列をさらに 2 で割って (n − 1)!/2 通りになる。",
-    "用例コーパスで circular permutation が出てくるのは OpenStax Calculus Volume 3 だけで、どれも変数 x, y, z を順に入れ替える（巡回置換の）意味。問題文では arrange … around a round table のように並べ方を文で書くことが多い。"
+    "数珠や首飾りのように裏返しても同じとみなす並べ方（じゅず順列）は、異なる n 個（n ≥ 3）なら円順列をさらに 2 で割って (n − 1)!/2 通りになる。",
+    "OpenStax Calculus Volume 3（5.4 Triple Integrals）の circular permutation は、変数 x, y, z を順に入れ替える（巡回置換の）意味で、円順列ではない。円卓の問題は、Levin（3.4 の練習問題）のように seating arrangements … around a round table と並べ方を文で書く。"
   ],
   "related": [
     "permutation",
@@ -55,6 +55,23 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Permutation",
+      "note": "記事「Permutation」の節 Circular permutations（circular permutation を太字で定義。数学カテゴリから 4 段）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3",
+      "note": "5.4 Triple Integrals（circular permutation of the variables）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.4 Combinations and Permutations（練習問題: seating arrangements around a round table）"
     }
   ],
   "confidence": "likely",
@@ -66,7 +83,7 @@
   "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {

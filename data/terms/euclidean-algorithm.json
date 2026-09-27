@@ -3,7 +3,9 @@
   "ja": {
     "term": "ユークリッドの互除法",
     "reading": "ゆーくりっどのごじょほう",
-    "alt": []
+    "alt": [
+      "互除法"
+    ]
   },
   "en": {
     "term": "Euclidean algorithm",
@@ -25,7 +27,7 @@
     ]
   },
   "definition_ja": "2 つの自然数の最大公約数を、割り算を繰り返して求める方法。a を b で割った余りを r とすると a と b の最大公約数は b と r の最大公約数に等しいことを使い、余りが 0 になるまで続ける。",
-  "definition_en": "A method for finding the greatest common divisor of two whole numbers by repeated division: replace the pair (a, b) with (b, r), where r is the remainder of a divided by b, until the remainder is 0.",
+  "definition_en": "A method for finding the greatest common divisor of two positive integers by repeated division: replace the pair (a, b) with (b, r), where r is the remainder of a divided by b, until the remainder is 0.",
   "latex": "a = bq + r \\;\\Rightarrow\\; \\gcd(a, b) = \\gcd(b, r)",
   "spoken_en": "if a equals b q plus r, then the gcd of a and b equals the gcd of b and r",
   "examples": [
@@ -43,14 +45,16 @@
   "collocations": [],
   "pitfalls": [
     "「互除法」だけでは英語の名前にならない。Euclidean algorithm と言う。",
-    "英語の答案では最大公約数を gcd(a, b) と書く。",
-    "互除法の式を下から逆にたどると、ax + by = gcd(a, b) の整数解が 1 つ見つかる（一次不定方程式を解くときに使う）。"
+    "Levin（6.2）は最大公約数を gcd(a, b) と書く（慣習差 gcd-written-in-words）。",
+    "互除法の式を下から逆にたどると、ax + by = gcd(a, b) の整数解が 1 つ見つかる（一次不定方程式を解くときに使う。エントリ extended-euclidean-algorithm）。"
   ],
   "related": [
     "greatest-common-divisor",
     "division-algorithm",
     "remainder",
-    "linear-diophantine-equation"
+    "linear-diophantine-equation",
+    "extended-euclidean-algorithm",
+    "bezouts-identity"
   ],
   "sources": [
     {
@@ -63,6 +67,12 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "6.2 Introduction to Number Theory"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A 数学と人間の活動: ユークリッドの互除法"
     }
   ],
   "confidence": "likely",
@@ -71,7 +81,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "Euclidean algorithm": 1
@@ -79,13 +89,13 @@
     "sources": [
       "mit-6.042"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 Euclidean algorithm（6.2 Introduction to Number Theory）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

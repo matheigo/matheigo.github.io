@@ -3,7 +3,9 @@
   "ja": {
     "term": "倍数の判定法",
     "reading": "ばいすうのはんていほう",
-    "alt": []
+    "alt": [
+      "倍数判定法"
+    ]
   },
   "en": {
     "term": "divisibility test",
@@ -24,7 +26,8 @@
       "数A"
     ],
     "us": [
-      "Discrete Math"
+      "Discrete Math",
+      "Pre-Algebra"
     ]
   },
   "definition_ja": "実際に割り算をせずに、各位の数字の和や下の何桁かだけを見て、ある整数が 3・4・9 などの倍数かどうかを見分ける方法。",
@@ -33,13 +36,13 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "By the divisibility test for 3, add up the digits: 1 + 2 + 3 is 6, so 123 is a multiple of 3.",
+      "en": "By the divisibility rule for 3, add up the digits: 1 + 2 + 3 is 6, so 123 is a multiple of 3.",
       "ja": "3 の倍数の判定法で、各位の数字を足すと 1 + 2 + 3 = 6 だから、123 は 3 の倍数。",
       "register": "spoken"
     },
     {
-      "en": "Use a divisibility rule to decide whether 4,356 is divisible by 9.",
-      "ja": "倍数の判定法を用いて、4356 が 9 の倍数かどうか調べよ。",
+      "en": "Use the divisibility test for 9 to decide whether 4,356 is divisible by 9.",
+      "ja": "9 の倍数の判定法を用いて、4356 が 9 の倍数かどうか調べよ。",
       "register": "written"
     }
   ],
@@ -53,7 +56,8 @@
     "multiple",
     "digit",
     "classification-by-remainder",
-    "modulus"
+    "modulus",
+    "divisibility"
   ],
   "sources": [
     {
@@ -64,7 +68,19 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Prealgebra 2e"
+      "title": "OpenStax Prealgebra 2e",
+      "note": "2.4 Find Multiples and Factors（Use Common Divisibility Tests）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "Introduction to Whole Numbers（Identify Multiples and Apply Divisibility Tests）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「倍数判定法」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%80%8D%E6%95%B0%E5%88%A4%E5%AE%9A%E6%B3%95",
+      "note": "整除性の判定法、倍数の判定法ともいう"
     }
   ],
   "confidence": "likely",
@@ -73,7 +89,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "divisibility rule": 3
@@ -87,6 +103,6 @@
       "openstax-elemalg",
       "openstax-prealgebra"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

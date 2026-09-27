@@ -3,9 +3,7 @@
   "ja": {
     "term": "確率の基本性質",
     "reading": "かくりつのきほんせいしつ",
-    "alt": [
-      "確率の公理"
-    ]
+    "alt": []
   },
   "en": {
     "term": "rules of probability",
@@ -15,8 +13,8 @@
     "uk": null
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "AP Statistics の CED（Unit 2 の概要・topic 2.8・2.10）は、確率を求める規則全体を the rules of probability と呼ぶ。OpenStax Introductory Statistics の節 Two Basic Rules of Probability は乗法定理（multiplication rule）と加法定理（addition rule）の 2 つを指す。学習指導要領解説（数学A）が確率の性質や法則として挙げるのは 0 ≦ P(A) ≦ 1、P(∅) = 0・P(U) = 1、互いに排反な事象の P(A ∪ B) = P(A) + P(B)、余事象の確率で、乗法定理は入らない。",
   "domains": [
     "probability"
   ],
@@ -28,11 +26,12 @@
       "Algebra 2",
       "Discrete Math",
       "AP Statistics",
-      "Integrated Math 2"
+      "Integrated Math 2",
+      "Intro Statistics"
     ]
   },
   "definition_ja": "確率がもつ基本的な性質。0 ≤ P(A) ≤ 1、全事象の確率は 1、互いに排反な事象の和事象の確率は各確率の和、など。",
-  "definition_en": "The basic properties every probability has: 0 ≤ P(A) ≤ 1, the probability of the sample space is 1, and the probability of a union of mutually exclusive events is the sum of their probabilities.",
+  "definition_en": "The basic properties every probability has: 0 ≤ P(A) ≤ 1, P(S) = 1 for the whole sample space S, and the probability of a union of mutually exclusive events is the sum of their probabilities.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -49,18 +48,43 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "OpenStax Introductory Statistics の節の名前は Two Basic Rules of Probability で、乗法定理（multiplication rule）と加法定理（addition rule）を指す。日本の「確率の基本性質」の範囲とは少し違う。",
-    "確率の公理（probability axioms）は、0 ≦ P(A) ≦ 1、P(全事象) = 1、排反な事象の和の確率は確率の和、の 3 つを出発点に置いたもの。数A の確率の基本性質と同じ内容。"
+    "確率の公理（日本語版 Wikipedia「確率の公理」、英語版 Wikipedia「Probability axioms」）は、P(A) ≥ 0、全事象の確率が 1、互いに排反な事象の和の確率は確率の和、の 3 つ。P(A) ≤ 1 や P(∅) = 0 はそこから導かれる性質で、公理そのものではない。"
   ],
   "related": [
     "sample-space",
     "general-addition-rule",
-    "general-multiplication-rule"
+    "general-multiplication-rule",
+    "probability"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "3.3 Two Basic Rules of Probability"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Unit 2 の概要・Topic 2.8・2.10（rules of probability）、Topic 2.4（the sample space、between 0 and 1）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A (2) 場合の数と確率: 確率の性質や法則（0≦P(A)≦1、P(φ)=0・P(U)=1、排反な事象の和、余事象の確率）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「確率の公理」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%A2%BA%E7%8E%87%E3%81%AE%E5%85%AC%E7%90%86",
+      "note": "公理は P(A) ≥ 0・全事象の確率 1・排反な事象の和"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Probability_axioms",
+      "note": "記事「Probability axioms」（First axiom: non-negativity、節 Consequences）"
     }
   ],
   "confidence": "likely",
@@ -69,7 +93,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "probability rules": 1
@@ -83,13 +107,13 @@
       "mit-notes",
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 7 件（10 未満））。見出しは AP Statistics の CED の呼び方 rules of probability（topic 2.8・topic 2.10）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

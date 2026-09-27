@@ -8,7 +8,8 @@
   "en": {
     "term": "addition principle",
     "alt": [
-      "rule of sum"
+      "rule of sum",
+      "sum principle"
     ],
     "uk": null,
     "register": "written"
@@ -48,6 +49,7 @@
   "pitfalls": [
     "2 つの場合に重なりがあるときは、足すだけでは数えすぎる。重なりを引く包除原理（inclusion-exclusion principle）を使う。",
     "確率の加法定理（addition rule）とは別の語。和の法則は場合の数を数える法則。",
+    "用例コーパスの MIT OCW 6.042（Mathematics for Computer Science）は和の法則を sum rule と呼ぶ。微分の sum rule（derivative-of-a-sum）と同じ名前なので、文脈で区別する。",
     "用例コーパスの addition principle は書き言葉ではすべて OpenStax Algebra and Trigonometry。話し言葉には出てこない。"
   ],
   "related": [
@@ -63,6 +65,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.2 Combining Outcomes（Sum Principle）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Addition_principle",
+      "note": "記事「Addition principle」の冒頭（addition principle・rule of sum。数学カテゴリから 3 段）"
     }
   ],
   "confidence": "likely",
@@ -71,7 +85,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "addition principle": 19
@@ -79,6 +93,6 @@
     "sources": [
       "openstax-algtrig"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

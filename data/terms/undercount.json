@@ -7,14 +7,12 @@
   },
   "en": {
     "term": "undercount",
-    "alt": [
-      "miss a case"
-    ],
+    "alt": [],
     "uk": null
   },
   "pos": "verb",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスには undercount・miss a case が話・書とも出てこない）。英語では miss a case ／ leave out some cases のように「場合を落とす」と説明するか、count too few と言う。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスには undercount が話・書とも出てこない）。",
   "domains": [
     "combinatorics"
   ],
@@ -43,14 +41,14 @@
       "register": "spoken"
     },
     {
-      "en": "Listing only the ordered pairs with x < y undercounts the outcomes; the pairs with x = y are missing.",
-      "ja": "x < y の組だけを書き出すと数え落としがある。x = y の組が抜けている。",
+      "en": "To count the pairs with x ≤ y, listing only those with x < y undercounts: the pairs with x = y are missing.",
+      "ja": "x ≦ y となる組を数えるのに x < y の組だけを書き出すと、x = y の組が抜けて数え落とす。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "教科書の「もれなく、重複なく数える」は、英語では without missing any case and without counting any case twice のように説明する。"
+    "学習指導要領解説（数学A）の「場合の数をもれなく重複なく数え上げる」は、英語では Levin（3.3）のように each case is counted exactly once と説明できる。"
   ],
   "related": [
     "double-count",
@@ -61,6 +59,18 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A (2) 場合の数と確率: 場合の数をもれなく重複なく数え上げる（数え上げの原則）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.3 Non-Disjoint Outcomes（counted exactly once）"
     }
   ],
   "confidence": "likely",
@@ -69,7 +79,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"
@@ -78,7 +88,7 @@
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

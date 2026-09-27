@@ -3,7 +3,9 @@
   "ja": {
     "term": "不定方程式",
     "reading": "ふていほうていしき",
-    "alt": []
+    "alt": [
+      "ディオファントス方程式"
+    ]
   },
   "en": {
     "term": "Diophantine equation",
@@ -24,7 +26,7 @@
       "Discrete Math"
     ]
   },
-  "definition_ja": "整数係数の方程式で、整数（または自然数）の解だけを考えるもの。未知数の数が式の数より多く、解が 1 つに定まらないことが多い。",
+  "definition_ja": "整数係数の方程式で、整数（または自然数）の解だけを考えるもの。日本語版 Wikipedia「ディオファントス方程式」は整係数多変数の不定方程式と説明する。",
   "definition_en": "An equation with integer coefficients for which only integer (or positive integer) solutions are sought.",
   "latex": null,
   "spoken_en": null,
@@ -57,6 +59,16 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "6.2 Introduction to Number Theory"
+    },
+    {
+      "type": "wikipedia-langlink",
+      "ja": "ディオファントス方程式",
+      "en": "Diophantine equation"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成28年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "note": "第4問: 不定方程式"
     }
   ],
   "confidence": "likely",
@@ -65,16 +77,16 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 Diophantine equation（6.2 Introduction to Number Theory）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

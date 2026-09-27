@@ -16,6 +16,8 @@
  * 2. A 数I / 数A term with Geometry in level.us none of whose wordings (nor a same-concept name) is in
  *    CK-12 Geometry or IM Geometry (lessons, glossary) loses Geometry.
  * The curriculum units of a removed course drop the term from their term_refs.
+ * 3. A course in CONCEPT_LEVELS stays: a reference treats the term's concept under another name (Phase 5
+ *    監査 7 の前の決定 2, 監査 6 の H-2: level.us may rest on the concept; the name is not a candidate).
  *
  * Reads corpus/counts.json (the reference hits; `pnpm corpus:count` first) and
  * audits/checks/reference-theorem-names.json. Writes nothing to data/ itself.
@@ -39,6 +41,16 @@ const COLLEGE: Record<string, (r: ReferenceHits, w: string) => number> = {
 /** Which reference's names (reference-theorem-names.json refs) stand for a college course. */
 const COLLEGE_NAMES: Record<string, RegExp> = { "Discrete Math": /^Levin$/, "Linear Algebra": /^Nicholson$/, "Intro Statistics": /Introductory Statistics/, "Calculus I": /Calculus Volume/, "Calculus II": /Calculus Volume/, "Calculus III": /Calculus Volume/ };
 const ADDED = ["Discrete Math", "Linear Algebra"];
+/**
+ * Courses kept because a reference's text has the term's concept under another name (Phase 5 監査 7 の前の
+ * 決定 2): term id -> course -> where. The audit reads the passage; neither rule above takes these out.
+ */
+export const CONCEPT_LEVELS: Record<string, Record<string, string>> = {
+  "intersection-of-events": {
+    "AP Statistics": "CED topic 2.5 (the probability of the intersection of A and B, joint probability)",
+    "Intro Statistics": "OpenStax Introductory Statistics 3.1 Terminology (the event A AND B, also A Intersection B)",
+  },
+};
 
 type Term = { id: string; en: { term: string; alt?: string[]; variants?: { term: string }[] }; level: { jp: string[]; us: string[] }; mapping_note?: string; pitfalls?: string[]; confidence: string };
 interface Change {
@@ -72,11 +84,12 @@ function main() {
     const r = ref.get(d.id);
     const text = [d.mapping_note ?? "", ...(d.pitfalls ?? [])].join("\n");
     let us = [...d.level.us];
+    const byConcept = (c: string) => c in (CONCEPT_LEVELS[d.id] ?? {});
 
     if (NOT_IN_HIGH_SCHOOL.test(text)) {
       const hits = (course: string) => (r ? Math.max(0, ...wordings.map((w) => COLLEGE[course](r, w))) : 0);
       const named = (course: string) => (judged.get(d.id) ?? []).some((n) => Object.keys(n.refs).some((k) => COLLEGE_NAMES[course].test(k)));
-      const kept = us.filter((c) => c in COLLEGE && (hits(c) > 0 || named(c)));
+      const kept = us.filter((c) => (c in COLLEGE && (hits(c) > 0 || named(c))) || byConcept(c));
       const added = ADDED.filter((c) => !us.includes(c) && hits(c) >= REFERENCE_NAMED);
       const next = [...kept, ...added];
       if (next.join() !== us.join()) {
@@ -102,7 +115,7 @@ function main() {
       const namedInGeometry = (judged.get(d.id) ?? []).some(
         (n) => (n.refs["CK-12 Geometry"] ?? 0) > 0 || (n.sections["IM 9–12"] ?? []).some((s) => s.startsWith("Geometry ")),
       );
-      if (!inGeometry && !namedInGeometry) {
+      if (!inGeometry && !namedInGeometry && !byConcept("Geometry")) {
         const next = us.filter((c) => c !== "Geometry");
         changes.push({ id: d.id, confidence: d.confidence, rule: 7, from: us, to: next, why: "見出し・alt・variants が CK-12 Geometry・IM Geometry に 0 件" });
         us = next;

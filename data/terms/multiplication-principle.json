@@ -9,7 +9,8 @@
     "term": "multiplication principle",
     "alt": [
       "fundamental counting principle",
-      "rule of product"
+      "rule of product",
+      "product principle"
     ],
     "uk": null,
     "register": "written"
@@ -50,7 +51,8 @@
   "pitfalls": [
     "OpenStax Algebra and Trigonometry は multiplication principle を 31 件、fundamental counting principle を 4 件使う。用例コーパスの話し言葉にはどちらも出てこない。",
     "確率の乗法定理（multiplication rule）とは別の語。積の法則は場合の数を数える法則。",
-    "使えるのは、2 つ目の選び方の数が 1 つ目の結果によらず同じ n 通りのとき。選べるものの中身は変わってもよい（順列の数え方）。"
+    "使えるのは、2 つ目の選び方の数が 1 つ目の結果によらず同じ n 通りのとき。選べるものの中身は変わってもよい（順列の数え方）。",
+    "用例コーパスの MIT OCW 6.042 は積の法則を product rule と呼ぶ（選び方の数が同じなら中身が変わってよい形は generalized product rule）。微分の product rule（product-rule）と同じ名前なので、文脈で区別する。"
   ],
   "related": [
     "addition-principle",
@@ -66,6 +68,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.2 Combining Outcomes（Product Principle）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rule_of_product",
+      "note": "記事「Rule of product」の冒頭（rule of product・multiplication principle。数学カテゴリから 3 段）"
     }
   ],
   "confidence": "likely",
@@ -74,7 +88,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "multiplication principle": 31,
@@ -83,6 +97,6 @@
     "sources": [
       "openstax-algtrig"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

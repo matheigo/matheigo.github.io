@@ -6,15 +6,15 @@
     "alt": []
   },
   "en": {
-    "term": "permutation of a multiset",
+    "term": "permutation of n non-distinct objects",
     "alt": [
-      "distinguishable permutation"
+      "permutation of a multiset"
     ],
     "uk": null
   },
   "pos": "noun",
-  "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスには permutation of a multiset は話・書とも出てこない）。英語では、同じ文字を含む単語の文字の並べ方（arrangements of the letters of a word with repeated letters）のように問題の中身で説明し、n!/(p! q! r!) で数える。",
+  "mapping": "exact",
+  "mapping_note": null,
   "domains": [
     "combinatorics"
   ],
@@ -38,13 +38,14 @@
       "register": "spoken"
     },
     {
-      "en": "How many distinguishable permutations of the letters of BANANA are there?",
-      "ja": "BANANA の 6 文字を 1 列に並べる並べ方は何通りあるか。",
+      "en": "Use the formula for permutations of n non-distinct objects to count the arrangements of the letters in BANANA.",
+      "ja": "同じものを含む順列の公式を使って、BANANA の 6 文字の並べ方の数を求めよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
+    "OpenStax Algebra and Trigonometry（13.5 Counting Principles）は permutations of n non-distinct objects と呼び、n!/(r₁! r₂! ⋯ r_k!) で数える。英語版 Wikipedia「Permutation」の節 Permutations of multisets は multiset permutation と呼ぶ。",
     "「重複順列」（同じものを何度でも選べる、nʳ）とは別物。こちらは並べるものの中に同じものが決まった個数だけある。",
     "割るのは同じものの個数の階乗。BANANA なら A が 3 個、N が 2 個なので 6!/(3! 2!) = 60。"
   ],
@@ -58,6 +59,23 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.5 Counting Principles（Finding the Number of Permutations of n Non-Distinct Objects）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Permutation",
+      "note": "記事「Permutation」の節 Permutations of multisets（multiset permutation。数学カテゴリから 4 段）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.4・3.6（anagrams、STATISTICS の並べ方）"
     }
   ],
   "confidence": "likely",
@@ -66,16 +84,21 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
-    "sources": [],
-    "counted": "2026-09-26"
+    "written": {
+      "permutation of n non-distinct objects": 4
+    },
+    "sources": [
+      "openstax-algtrig"
+    ],
+    "counted": "2026-09-27"
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 4 件（10 未満））。見出しは OpenStax の呼び方 permutation of n non-distinct objects（本文 4 件）。register は主張しない。",
+      "raised": "2026-09-27"
     }
   ]
 }

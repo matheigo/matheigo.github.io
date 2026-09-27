@@ -15,7 +15,8 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
-    "combinatorics"
+    "combinatorics",
+    "probability"
   ],
   "level": {
     "jp": [
@@ -25,7 +26,8 @@
       "Algebra 2",
       "Discrete Math",
       "Integrated Math 2",
-      "Intro Statistics"
+      "Intro Statistics",
+      "AP Statistics"
     ]
   },
   "definition_ja": "事象 A が起こったという条件のもとで、事象 B が起こる確率。P(A ∩ B) を P(A) で割って求める。",
@@ -46,7 +48,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の教科書は P_A(B) と書くが、英語では P(B | A) と書き、the probability of B given A と読む。条件の A が縦棒の右に来るので、文字の順が逆になる。",
+    "学習指導要領解説（数学A）は P_A(B) と書くが、AP Statistics の CED（topic 2.6）と OpenStax Introductory Statistics は P(B | A) の形で書き、the probability of B given A と読む。条件の A が縦棒の右に来るので、文字の順が逆になる。",
     "P(B | A) と P(A | B) は一般に違う。入れ替えるにはベイズの定理を使う。"
   ],
   "related": [
@@ -54,7 +56,9 @@
     "bayes-theorem",
     "intersection-of-events",
     "independence-of-events",
-    "tree-diagram"
+    "tree-diagram",
+    "conditional-relative-frequency",
+    "sampling-without-replacement"
   ],
   "sources": [
     {
@@ -65,6 +69,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A (2) 条件付き確率: PA(B)"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.6（conditional probability、P(A | B)）"
     }
   ],
   "confidence": "likely",
@@ -73,7 +89,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "conditional probability": 31
@@ -88,6 +104,6 @@
       "openstax-introstats",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

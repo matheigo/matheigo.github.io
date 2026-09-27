@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（大学の用語 residue class も用例コーパスには話・書とも出てこない）。英語では分類そのものに名前を付けず、consider the cases n = 3k, n = 3k + 1, n = 3k + 2 のように場合を書き出して言う。大学の整数論では、余りの等しい整数の組を residue class と呼ぶ（Levin 6.2）。見出しの classification by remainder は本プロジェクトの説明的な訳。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（大学の用語 remainder class・residue class も用例コーパスには話・書とも出てこない）。Nicholson（付録 B の練習問題のヒント）も、どの整数も 3k・3k + 1・3k + 2 のどれかの形になると場合を書き出して示す。Levin（6.2.2 Remainder Classes）は、余りで分けたそれぞれの組を remainder class modulo b（residue class とも）と呼ぶ。英語版 Wikipedia「Modular arithmetic」の節 Congruence classes は congruence class ／ residue class と呼ぶ。見出しの classification by remainder は本プロジェクトの説明的な訳。",
   "domains": [
     "number-theory"
   ],
@@ -50,11 +50,30 @@
     "division-algorithm",
     "split-into-cases",
     "modulus",
-    "parity"
+    "parity",
+    "divisibility-rules"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "6.2.2 Remainder Classes（remainder class modulo b、residue class とも）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "Appendix B（Exercise B.1 のヒント: 3k, 3k + 1, or 3k + 2）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Modular_arithmetic",
+      "note": "記事「Modular arithmetic」の節 Congruence classes（congruence class・residue class。数学カテゴリから 4 段）"
     }
   ],
   "confidence": "likely",
@@ -63,7 +82,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"
@@ -72,7 +91,7 @@
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

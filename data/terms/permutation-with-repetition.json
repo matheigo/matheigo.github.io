@@ -3,9 +3,7 @@
   "ja": {
     "term": "重複順列",
     "reading": "ちょうふくじゅんれつ",
-    "alt": [
-      "一般化順列"
-    ]
+    "alt": []
   },
   "en": {
     "term": "permutation with repetition",
@@ -14,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスでは permutation with repetition は話し言葉には出てこず、書き言葉も MIT の講義ノートにわずかにあるだけ）。英語で説明するときは、名前を出さずに「r か所それぞれに n 通りの選び方がある」と積の法則で nʳ を導けばよい。大学の離散数学の「一般化順列」（generalized permutations）もこのエントリにまとめた。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスでは permutation with repetition は話し言葉には出てこず、書き言葉も MIT の講義ノートにわずかにあるだけ）。英語版 Wikipedia「Permutation」の節 Permutations with repetition は、重複を許して並べたものを k-tuples（words、strings）と呼び、permutations with repetition とも呼ばれると書く（日本語版 Wikipedia には記事「重複順列」がある）。OpenStax Algebra and Trigonometry（13.5 の問題）と Levin（3.3）は名前を出さず、can be repeated と条件を書いて積の法則で 10³・26³ を求める。",
   "domains": [
     "combinatorics"
   ],
@@ -52,11 +50,35 @@
     "permutation",
     "permutation-of-a-multiset",
     "combination-with-repetition",
-    "counting"
+    "counting",
+    "circular-permutation"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Permutation",
+      "note": "記事「Permutation」の節 Permutations with repetition（k-tuples。数学カテゴリから 4 段）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「重複順列」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%87%8D%E8%A4%87%E9%A0%86%E5%88%97",
+      "note": "総数 nᵏ"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.5 Counting Principles（the digits can be repeated → 10³）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.3（letters can be repeated → 26³）"
     }
   ],
   "confidence": "likely",
@@ -65,7 +87,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "permutation with repetition": 1
@@ -73,13 +95,13 @@
     "sources": [
       "mit-notes"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 1 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

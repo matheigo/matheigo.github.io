@@ -57,12 +57,20 @@
     "circular-permutation",
     "permutation-of-a-multiset",
     "order-matters",
-    "counting"
+    "counting",
+    "choose"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.5 Counting Principles・13.7 Probability（練習問題）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.4 Combinations and Permutations（ways to arrange）"
     }
   ],
   "confidence": "likely",
@@ -71,7 +79,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "ways to arrange | ways can … be arranged | arrange … in a row | ways of arranging | number of arrangements": 4
@@ -84,13 +92,13 @@
       "openstax-algtrig",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 ways to arrange | ways can … be arranged | arrange … in a row | ways of arranging | number of arrangements（本文 3 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

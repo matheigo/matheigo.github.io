@@ -12,16 +12,19 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（intersection of events は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "mapping_note": "intersection of events という名前は、米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（4 つとも 0 件。Levin 3.7 に 1 件）。概念は、AP Statistics の CED（topic 2.5）が P(A ∩ B) を joint probability と呼んで intersection of A and B の確率と説明し、OpenStax Introductory Statistics（3.1 Terminology）が A AND B（A Intersection B とも）と書いて扱う。",
   "domains": [
-    "combinatorics"
+    "combinatorics",
+    "probability"
   ],
   "level": {
     "jp": [
       "数A"
     ],
     "us": [
-      "Discrete Math"
+      "Discrete Math",
+      "AP Statistics",
+      "Intro Statistics"
     ]
   },
   "definition_ja": "事象 A と事象 B がともに起こるという事象。A ∩ B と書く。",
@@ -35,21 +38,23 @@
       "register": "spoken"
     },
     {
-      "en": "A die is rolled. Let A be the event of an even number and B the event of a number greater than 3. Describe the intersection of events A and B.",
+      "en": "A die is rolled. Let event A be rolling an even number and event B be rolling a number greater than 3. Find the intersection of events A and B.",
       "ja": "さいころを 1 個投げる。偶数の目が出る事象を A、3 より大きい目が出る事象を B とする。積事象 A ∩ B を求めよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "確率では A ∩ B を「A and B」と読むことが多い。「かつ」は and、「または」は or。"
+    "AP Statistics の CED（topic 2.5）は P(A ∩ B) を P(A intersect B) とも書く。「かつ」は and、「または」は or。"
   ],
   "related": [
     "union-of-events",
     "general-multiplication-rule",
     "independence-of-events",
     "conditional-probability",
-    "mutually-exclusive-events"
+    "mutually-exclusive-events",
+    "intersection",
+    "complementary-event"
   ],
   "sources": [
     {
@@ -57,6 +62,17 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "3.7 Applications to Probability"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.5（the intersection of A and B、joint probability、P(A intersect B)）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "3.1 Terminology（A AND B、A Intersection B）"
     }
   ],
   "confidence": "likely",
@@ -73,13 +89,13 @@
     "sources": [
       "mit-6.042"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 intersection of two events | intersection of events（3.7 Applications to Probability）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

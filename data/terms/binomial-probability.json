@@ -8,14 +8,14 @@
   "en": {
     "term": "binomial probability",
     "alt": [],
-    "uk": null,
-    "register": "written"
+    "uk": null
   },
   "pos": "noun",
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
-    "combinatorics"
+    "combinatorics",
+    "probability"
   ],
   "level": {
     "jp": [
@@ -23,7 +23,9 @@
     ],
     "us": [
       "Algebra 2",
-      "Discrete Math"
+      "Discrete Math",
+      "AP Statistics",
+      "Intro Statistics"
     ]
   },
   "definition_ja": "1 回の確率が p の試行を独立に n 回繰り返すとき、その事象がちょうど k 回起こる確率。ₙCₖ pᵏ(1 − p)ⁿ⁻ᵏ で求める。",
@@ -44,20 +46,37 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の ₙCₖ は、英語では括弧の記号 (n k)（縦に並べる）で書き、n choose k と読む。",
-    "「ちょうど k 回」は exactly k times。「少なくとも k 回」（at least k times）は余事象を使うことが多く、式が変わる。",
+    "高等学校学習指導要領〔用語・記号〕（数学A）は nCr と書く。AP Statistics の CED（topic 2.10）は二項係数を縦に並べた (n k) で書き、OpenStax Intermediate Algebra（12.4 Binomial Theorem）はそれを n choose k と読む。",
+    "「ちょうど k 回」は exactly k times。「少なくとも 1 回」（at least once）の確率は、余事象（1 回も起こらない）から 1 − (1 − p)ⁿ と求められる。",
     "用例コーパスでは書き言葉がすべて OpenStax Introductory Statistics で、話し言葉は少ない（Professor Leonard・Khan Academy）。"
   ],
   "related": [
     "binomial-distribution",
     "repeated-trials",
     "binomial-coefficient",
-    "combination"
+    "combination",
+    "sampling-with-replacement"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）〔用語・記号〕",
+      "note": "数学A 場合の数と確率: nCr"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.10（the binomial probability function、二項係数の縦書き）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "12.4 Binomial Theorem（n choose r）"
     }
   ],
   "confidence": "likely",
@@ -66,19 +85,25 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "binomial probability": 6
+      "binomial probability !distribution !distributions": 4
     },
     "written": {
-      "binomial probability": 15
+      "binomial probability !distribution !distributions": 7
     },
     "sources": [
-      "khan-ap-stats",
       "openstax-introstats",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-09-27"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 7 件（10 未満））。見出しは AP Statistics の CED の呼び方 binomial probability !distribution !distributions（topic 2.10）。register は主張しない。",
+      "raised": "2026-09-27"
+    }
+  ]
 }

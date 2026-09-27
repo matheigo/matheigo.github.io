@@ -27,8 +27,8 @@
       "Integrated Math 2"
     ]
   },
-  "definition_ja": "いくつかのものから何個かを取り出し、順序を付けて 1 列に並べたもの。n 個から r 個を取る順列の総数は ₙPᵣ = n!/(n − r)!。",
-  "definition_en": "An arrangement of some or all of a set of objects in a definite order; the number of permutations of n objects taken r at a time is n!/(n − r)!.",
+  "definition_ja": "いくつかのものから何個かを取り出し、順序を付けて 1 列に並べたもの。異なる n 個から r 個を取る順列の総数は ₙPᵣ = n!/(n − r)!。",
+  "definition_en": "An arrangement of some or all of a set of objects in a definite order; r of n distinct objects can be arranged in order in n!/(n − r)! ways.",
   "latex": "{}_n P_r = \\frac{n!}{(n-r)!}",
   "spoken_en": "n P r equals n factorial over n minus r factorial",
   "examples": [
@@ -50,7 +50,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "記号は日本では ₙPᵣ。米国の教科書では P(n, r) や ₙPᵣ と書く。",
+    "高等学校学習指導要領〔用語・記号〕（数学A）は nPr と書く。OpenStax Algebra and Trigonometry（13.5 Counting Principles）は P(n, r) と書き、nPr は計算機の表記として出てくる。",
     "大学の数学では permutation は集合からそれ自身への全単射（置換）の意味にもなる。線形代数の permutation matrix は置換行列。"
   ],
   "related": [
@@ -62,17 +62,32 @@
   ],
   "sources": [
     {
-      "type": "wikipedia-langlink",
-      "ja": "順列",
-      "en": "Partial permutation"
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.5 Counting Principles（P(n, r)）"
     },
     {
-      "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Permutation",
+      "note": "記事「Permutation」の節 k-permutations of n（ₙPₖ・P(n, k)。数学カテゴリから 4 段）"
     },
     {
-      "type": "textbook",
-      "title": "OpenStax Calculus Volume 3"
+      "type": "reference",
+      "title": "日本語版 Wikipedia「順列」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%A0%86%E5%88%97",
+      "note": "定義（n 個から k 個を取る順列）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）〔用語・記号〕",
+      "note": "数学A 場合の数と確率: nPr"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.4 Combinations and Permutations"
     }
   ],
   "confidence": "likely",
@@ -81,7 +96,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "permutation": 196
@@ -98,6 +113,6 @@
       "openstax-calculus",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

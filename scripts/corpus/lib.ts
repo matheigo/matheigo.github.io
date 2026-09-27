@@ -1449,6 +1449,25 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   "union-of-events": { "union of events": "union of two events | union of events" },
   "intersection-of-events": { "intersection of events": "intersection of two events | intersection of events" },
   "order-matters": { "order matters": "order matters | order doesn't matter | order does not matter" }, // 順序を考える ／ 考えない
+  // Phase 5 監査 7 (batch 17): everyday words counted in the sense of the entry (contexts checked)
+  counting: {
+    // the field, not "count one, two, three", counting numbers or expected counts
+    counting: "counting principle | counting problem | counting theory | counting technique | counting argument | counting method | art of counting | counting rule",
+    "number of ways": "!a number of ways", // not the idiom "in a number of ways"
+  },
+  // listing every case, not "list all the points on the line" or "list all intervals where f is increasing"
+  enumeration: {
+    "list all":
+      "list all the possible | list all possible | list all the outcomes | list all outcomes | list all the possibilities | list all your options | list all the ways | list all the subsets | list all the permutations | list all the arrangements | list all the combinations",
+  },
+  "binomial-probability": { "binomial probability": "binomial probability !distribution !distributions" }, // the binomial distribution is its own entry
+  choose: { pick: "pick !up !out" }, // 選ぶ, not "pick up" or "pick out"
+  "multiplication-principle": { "product principle": "!zero product principle" }, // Levin's name, not the zero products principle
+  occur: {
+    // an event occurring, not "the maximum occurs at" or "what happens when"
+    occur: "event … occur | event occur | probability that … occur | probability of … occurring | occur at the same time | occur together",
+    happen: "event … happen | event happen | probability that … happen | probability of … happening | happen at the same time | happen together",
+  },
   // 円順列; the only OpenStax hits are cyclic permutations of the variables x, y, z (vector calculus)
   // 内接円; OpenStax Calculus's "inscribed circle" is the osculating circle of a curve
   // ("the curvature / radius of the inscribed circle"). IM Geometry's are a triangle's
@@ -1497,8 +1516,10 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
     "Euler's formula for polyhedra": "Euler's formula for polyhedra | Euler's polyhedron formula | Euler's formula for planar graphs",
   },
   "supplementary-angle": { "supplementary angles": "supplementary" }, // the pair is supplementary; "supplementary angles" is inside it
-  "base-n": { "base n": "in base | written in base | base-n representation" }, // "base b" is mostly the base of a logarithm
-  binary: { binary: "in binary | binary number | binary representation | base 2 | base two" }, // not a binary relation / tree
+  // "in base e" is an exponential model's base and "in based on" folds into "in base" (Phase 5 監査 7, batch 17)
+  "base-n": { "base n": "in base !e !on | written in base | base-n representation" }, // "base b" is mostly the base of a logarithm
+  // "base 2" alone is mostly log base 2 or a power's base (Phase 5 監査 7, batch 17)
+  binary: { binary: "in binary | binary number | binary representation | in base 2 | in base two" }, // not a binary relation / tree
   place: { place: "ones place | tens place | hundreds place" }, // 位, not "take place"
   "undefined-terms": {
     // OpenStax's one "undefined term" is an expression that is undefined (division by zero)

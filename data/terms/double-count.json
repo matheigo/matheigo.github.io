@@ -3,9 +3,7 @@
   "ja": {
     "term": "重複して数える",
     "reading": "ちょうふくしてかぞえる",
-    "alt": [
-      "ダブり"
-    ]
+    "alt": []
   },
   "en": {
     "term": "double count",
@@ -16,8 +14,8 @@
     "register": "spoken"
   },
   "pos": "phrase",
-  "mapping": "near",
-  "mapping_note": "英語は double count（名詞形 double counting）か overcount（多く数えすぎる）という動詞で言う。「ダブり」のような重なりそのものは overlap。",
+  "mapping": "exact",
+  "mapping_note": null,
   "domains": [
     "combinatorics"
   ],
@@ -53,8 +51,9 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは double count は話し言葉だけに出てきて（大半が Professor Leonard）、書き言葉には出てこない。答案では counted twice と説明的に書いてもよい。",
-    "組合せ論の double counting は「同じものを 2 通りの方法で数えて等式を示す証明法」の名前でもある。数えすぎのミスとは別の意味。"
+    "英語は double count（名詞形 double counting）か overcount（多く数えすぎる）という動詞で言う。「ダブり」のような重なりそのものは overlap。",
+    "書き言葉では、IM Geometry（8.6 The Addition Rule）や Levin（3.8 Advanced Counting Using PIE）のように double counting や is counted twice と書く。",
+    "組合せ論の double counting は「同じものを 2 通りの方法で数えて等式を示す証明法」の名前でもある（英語版 Wikipedia「Double counting (proof technique)」）。数えすぎのミスとは別の意味。"
   ],
   "related": [
     "inclusion-exclusion-principle",
@@ -66,6 +65,24 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.8 Advanced Counting Using PIE（double counting、overcount）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 8.6 The Addition Rule（double counting、counted twice）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Double_counting_%28proof_technique%29",
+      "note": "記事「Double counting (proof technique)」の冒頭（double counting・counting in two ways。数学カテゴリから 2 段）"
     }
   ],
   "confidence": "likely",
@@ -74,7 +91,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "double count": 21
@@ -84,6 +101,6 @@
       "mit-6.042",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

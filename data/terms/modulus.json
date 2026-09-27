@@ -33,13 +33,13 @@
     ]
   },
   "definition_ja": "合同式 a ≡ b (mod n) の n のこと。a − b が n で割り切れるとき、a と b は n を法として合同という。",
-  "definition_en": "The positive integer n in a congruence a ≡ b (mod n); two integers are congruent modulo n when n divides their difference.",
+  "definition_en": "The positive integer n in a congruence a ≡ b (mod n), read \"a is congruent to b modulo n\"; n itself is called the modulus. Two integers are congruent modulo n when n divides their difference.",
   "latex": "a \\equiv b \\pmod{n}",
   "spoken_en": "a is congruent to b modulo n",
   "examples": [
     {
       "en": "17 is congruent to 2 modulo 5, because 17 minus 2 is divisible by 5.",
-      "ja": "17 − 2 は 5 で割り切れるので、17 ≡ 2 (mod 5)。",
+      "ja": "17 − 2 は 5 で割り切れるので、17 は 5 を法として 2 と合同（17 ≡ 2 (mod 5)）。",
       "register": "spoken"
     },
     {
@@ -50,20 +50,39 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "名詞 modulus は複素数の絶対値（modulus of a complex number）と同じ綴り。",
+    "法そのもの（名詞）は modulus と言う（Nicholson（8.8）は n を the modulus と呼び、Levin 6.2 も divide the modulus と書く）。複素数の絶対値（modulus of a complex number）と同じ綴り。",
     "≡ は is congruent to と読む。図形の「合同」と同じ単語 congruent を使う。",
-    "日本語の「5 を法として」は modulo 5（話し言葉では mod 5 とも読む）。"
+    "日本語の「5 を法として」は modulo 5。Levin（6.2）は 8 ≡ 23 (mod 5) を eight is congruent to 23 modulo five と読み、just mod five とも言うと書く。"
   ],
   "related": [
     "remainder",
     "classification-by-remainder",
     "congruent",
     "modulus-of-a-complex-number",
-    "euclidean-algorithm"
+    "euclidean-algorithm",
+    "congruence-modulo-n"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "8.8 An Application to Linear Codes over Finite Fields（We refer to n as the modulus）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "6.2 Introduction to Number Theory（modulo、the modulus）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「整数の合同」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B4%E6%95%B0%E3%81%AE%E5%90%88%E5%90%8C",
+      "note": "n を法として、法 n のもとで、mod n で"
     }
   ],
   "confidence": "likely",
@@ -72,7 +91,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "modulo": 87,
@@ -87,6 +106,6 @@
       "mit-6.042",
       "mit-notes"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

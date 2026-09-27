@@ -14,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（combination with repetition は用例コーパスの話し言葉には出てこず、書き言葉も MIT の講義ノートにわずかにあるだけ）。ₙHᵣ は日本の教科書の記法なので、英語で書くときは ₙ₊ᵣ₋₁Cᵣ（二項係数）の形に直す。〇と仕切りを並べるこの数え方を、Levin の Discrete Mathematics は stars and bars と呼ぶ（3.5 Counting Multisets、1 件）。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（combination with repetition は用例コーパスの話し言葉には出てこず、書き言葉も MIT の講義ノートにわずかにあるだけ）。英語版 Wikipedia には記事「Combination」の節 Number of combinations with repetition がある。日本語版 Wikipedia「重複組合せ」は総数を H の記号で書くが、高等学校学習指導要領〔用語・記号〕の数学A の記号は nPr・nCr・n! で H は無い。英語で書くときは ₙ₊ᵣ₋₁Cᵣ（二項係数）の形に直す。〇と仕切りを並べるこの数え方を、Levin の Discrete Mathematics は sticks and stones と呼び（3.5 Counting Multisets ほか）、stars and bars・balls and bins とも呼ぶと添える。",
   "domains": [
     "combinatorics"
   ],
@@ -23,7 +23,6 @@
       "数A"
     ],
     "us": [
-      "Algebra 2",
       "Discrete Math"
     ]
   },
@@ -45,7 +44,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "ₙHᵣ の H は日本の教科書の記号。英語の答案では使わず、ₙ₊ᵣ₋₁Cᵣ か (n + r − 1 choose r) で書く。",
+    "ₙHᵣ の H は、日本語版 Wikipedia「重複組合せ」が使う記号。Levin（3.5）は二項係数で書くので、英語で書くときは ₙ₊ᵣ₋₁Cᵣ か (n + r − 1 choose r) にする。",
     "「各文字を 1 個以上」の条件があるときは、先に 1 個ずつ配ってから重複組合せにする。条件を読み落とすと 0 個の場合まで数えてしまう。"
   ],
   "related": [
@@ -62,7 +61,24 @@
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "3.5 Counting Multisets"
+      "note": "3.5 Counting Multisets（sticks and stones。stars and bars・balls and bins とも）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Combination",
+      "note": "記事「Combination」の節 Number of combinations with repetition（数学カテゴリから 3 段）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「重複組合せ」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%87%8D%E8%A4%87%E7%B5%84%E5%90%88%E3%81%9B",
+      "note": "総数を H の記号で書く"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）〔用語・記号〕",
+      "note": "数学A 場合の数と確率: nPr、nCr、n!（H は無い）"
     }
   ],
   "confidence": "likely",
@@ -71,7 +87,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "combination with repetition": 1
@@ -79,13 +95,13 @@
     "sources": [
       "mit-notes"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 1 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

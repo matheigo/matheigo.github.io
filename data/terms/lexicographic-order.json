@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "見出しは英語版 Wikipedia の記事名 Lexicographic order（「辞書式順序」の langlink 先）。OpenStax Prealgebra は alphabetical order と書く（1 件、語を並べる順序として）。Levin の Discrete Mathematics も alphabetical order と書く（3.3・3.5・3.4 ほか、8 件）。用例コーパスでは alphabetical order も少なく（話し言葉は MIT OCW・Khan Academy）、lexicographic order と dictionary order は出てこない。英語では「辞書のように並べる」と、並べ方そのものを言う。",
+  "mapping_note": "見出しは英語版 Wikipedia の記事名 Lexicographic order（「辞書式順序」の langlink 先）。OpenStax Prealgebra は alphabetical order と書く（1 件、語を並べる順序として）。Levin の Discrete Mathematics は、1 語の中の文字の順を in alphabetical order と書き（3.3・3.4・3.5）、名前を並べる順にも使う（3.9）。用例コーパスでは alphabetical order も少なく（話し言葉は MIT OCW・Khan Academy）、lexicographic order と dictionary order は参照（CED・OpenStax・IM・CK-12・Levin）にも用例コーパスにも出てこない。",
   "domains": [
     "combinatorics"
   ],
@@ -24,7 +24,6 @@
       "数A"
     ],
     "us": [
-      "Algebra 2",
       "Discrete Math"
     ]
   },
@@ -46,8 +45,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "数字だけの並び（123, 132, 213, …）なら、辞書式順序は小さい順と同じ。in increasing order（小さい順）と言い換えられる。",
-    "「〇番目の文字列」を求める問題は、先頭の文字ごとに何通りあるか（4! = 24 など）を数えて絞り込む。英語でも手順として説明する（how many start with a?）。"
+    "桁数が同じ数字の並び（123, 132, 213, …）なら、辞書式順序は小さい順と同じ。in increasing order（小さい順）と言い換えられる。",
+    "「〇番目の文字列」を求める問題は、先頭の文字ごとに何通りあるか（4! = 24 など）を数えて絞り込む。"
   ],
   "related": [
     "permutation",
@@ -63,11 +62,16 @@
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "3.3 Non-Disjoint Outcomes・3.5 Counting Multisets・3.4 Combinations and Permutations"
+      "note": "3.3・3.4・3.5（1 語の中の文字の in alphabetical order）・3.9"
     },
     {
       "type": "textbook",
       "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "wikipedia-langlink",
+      "ja": "辞書式順序",
+      "en": "Lexicographic order"
     }
   ],
   "confidence": "likely",
@@ -76,7 +80,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "alphabetical order": 5
@@ -90,7 +94,7 @@
       "mit-6.042",
       "openstax-prealgebra"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {

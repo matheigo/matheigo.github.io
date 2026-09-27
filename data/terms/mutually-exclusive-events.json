@@ -18,7 +18,8 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
-    "combinatorics"
+    "combinatorics",
+    "probability"
   ],
   "level": {
     "jp": [
@@ -28,7 +29,8 @@
       "Algebra 2",
       "Discrete Math",
       "Integrated Math 2",
-      "Intro Statistics"
+      "Intro Statistics",
+      "AP Statistics"
     ]
   },
   "definition_ja": "2 つの事象が同時には起こらないこと。A ∩ B = ∅ のとき A と B は互いに排反で、P(A ∪ B) = P(A) + P(B) が成り立つ。",
@@ -50,7 +52,7 @@
   "collocations": [],
   "pitfalls": [
     "排反と独立（independent）を取り違えない。確率が 0 でない 2 つの事象が排反なら、独立ではない。",
-    "集合の言葉の disjoint も同じ意味で使われる（用例コーパスでは disjoint events は話し言葉・書き言葉とも少ない）。",
+    "AP Statistics の CED（topic 2.5）は mutually exclusive, or disjoint と書き、OpenStax Algebra and Trigonometry（13.5）も disjoint events を mutually exclusive と言い換える。集合の言葉の disjoint（共通部分が空）と同じ意味。",
     "用例コーパスの話し言葉はほとんど Professor Leonard。「排反事象」という名詞は mutually exclusive events と言う。"
   ],
   "related": [
@@ -58,7 +60,9 @@
     "general-addition-rule",
     "union-of-events",
     "intersection-of-events",
-    "empty-set"
+    "empty-set",
+    "complementary-event",
+    "event"
   ],
   "sources": [
     {
@@ -67,7 +71,19 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.5 Counting Principles（disjoint events）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.5（mutually exclusive, or disjoint）"
+    },
+    {
+      "type": "wikipedia-langlink",
+      "ja": "排反",
+      "en": "Mutual exclusivity"
     }
   ],
   "confidence": "likely",
@@ -76,7 +92,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "mutually exclusive": 22
@@ -90,6 +106,6 @@
       "openstax-introstats",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

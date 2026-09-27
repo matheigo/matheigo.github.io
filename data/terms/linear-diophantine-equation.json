@@ -25,7 +25,7 @@
     ]
   },
   "definition_ja": "a, b, c を整数とする ax + by = c の形の方程式で、整数解を求めるもの。整数解をもつのは c が a と b の最大公約数の倍数のときに限る。",
-  "definition_en": "An equation of the form ax + by = c with integer coefficients, where only integer solutions are wanted. It has integer solutions exactly when gcd(a, b) divides c.",
+  "definition_en": "An equation ax + by = c whose coefficients are integers and whose solutions must be integers. It has integer solutions exactly when gcd(a, b) divides c.",
   "latex": "ax + by = c",
   "spoken_en": null,
   "examples": [
@@ -50,14 +50,28 @@
     "integer-solution",
     "euclidean-algorithm",
     "greatest-common-divisor",
-    "relatively-prime"
+    "relatively-prime",
+    "extended-euclidean-algorithm",
+    "bezouts-identity"
   ],
   "sources": [
     {
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "6.2 Introduction to Number Theory"
+      "note": "6.2.5 Solving Linear Diophantine Equations"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A 数学と人間の活動: 一次不定方程式の整数解"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成27年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20160601/https://www.dnc.ac.jp/albums/abm.php?f=abm00004808.pdf&n=2701-0402+suugaku1A.pdf",
+      "note": "第4問: 1次不定方程式"
     }
   ],
   "confidence": "likely",
@@ -66,16 +80,16 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 linear Diophantine equation（6.2 Introduction to Number Theory）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

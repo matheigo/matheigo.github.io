@@ -3,9 +3,7 @@
   "ja": {
     "term": "確率の乗法定理",
     "reading": "かくりつのじょうほうていり",
-    "alt": [
-      "一般乗法法則"
-    ]
+    "alt": []
   },
   "en": {
     "term": "general multiplication rule",
@@ -22,7 +20,6 @@
   ],
   "level": {
     "jp": [
-      "大学",
       "数A"
     ],
     "us": [
@@ -30,7 +27,8 @@
       "Algebra 2",
       "Discrete Math",
       "Integrated Math 2",
-      "Intro Statistics"
+      "Intro Statistics",
+      "Geometry"
     ]
   },
   "definition_ja": "積事象の確率を条件付き確率で表す式 P(A ∩ B) = P(A) P(B | A)。A, B が独立なら P(A ∩ B) = P(A) P(B)。",
@@ -51,17 +49,39 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の教科書は条件付き確率を P_A(B) と書くが、OpenStax Introductory Statistics は P(B | A) と書き（P(A | B) と合わせて 44 件）、B given A と読む。",
+    "学習指導要領解説（数学A）は条件付き確率を P_A(B) と書き、P(A ∩ B) = P(A)P_A(B) を「一般的な確率の乗法定理」、独立な試行の P(C) = P(A)P(B) を「確率の乗法定理」と呼ぶ。AP Statistics の CED（topic 2.6）と OpenStax Introductory Statistics は P(B | A) と書き（OpenStax は P(A | B) と合わせて 44 件）、B given A と読む。",
     "場合の数の「積の法則」（multiplication principle）とは別。"
   ],
   "related": [
     "general-addition-rule",
-    "tree-diagram"
+    "tree-diagram",
+    "conditional-probability",
+    "independence-of-events",
+    "multiplication-principle"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "3.3 Two Basic Rules of Probability（multiplication rule、P(A | B)）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.6（general multiplication rule、P(A ∩ B) = P(A)·P(B|A)）、Unit 2 の概要"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A (2) 場合の数と確率: P(A∩B)=P(A)PA(B)（一般的な確率の乗法定理）、独立な試行の P(C)=P(A)P(B)（確率の乗法定理）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 8.8 Conditional Probability（multiplication rule）"
     }
   ],
   "confidence": "likely",

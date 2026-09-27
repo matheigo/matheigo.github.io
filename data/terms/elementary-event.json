@@ -13,9 +13,10 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語では根元事象という用語を立てず、起こりうる 1 つ 1 つの結果を outcome と呼ぶ（「同様に確からしい」は each outcome is equally likely）。1 つの outcome だけからなる事象は simple event と呼ぶが、用例コーパスでは話し言葉に少し出てくるだけ。elementary event は用例コーパスには出てこない。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）には根元事象に当たる名前は出てこず、起こりうる 1 つ 1 つの結果を outcome と呼ぶ（「同様に確からしい」は each outcome is equally likely）。英語版 Wikipedia には記事「Elementary event」がある（elementary event・atomic event・sample point を太字で定義）。日本語版 Wikipedia「標本空間」は単純事象（simple event）とも書く。",
   "domains": [
-    "combinatorics"
+    "combinatorics",
+    "probability"
   ],
   "level": {
     "jp": [
@@ -24,7 +25,9 @@
     "us": [
       "Algebra 2",
       "Discrete Math",
-      "Integrated Math 2"
+      "Integrated Math 2",
+      "AP Statistics",
+      "Intro Statistics"
     ]
   },
   "definition_ja": "試行の結果として起こりうることのうち、それ以上細かく分けられない 1 つ 1 つの事象。全事象の要素 1 個だけからなる事象。",
@@ -45,23 +48,43 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "厳密には、outcome は全事象の要素 ω で、根元事象はそれだけを含む集合 {ω}。英語の授業では outcome と event の区別で説明する。",
+    "厳密には、outcome は全事象の要素 ω で、根元事象はそれだけを含む集合 {ω}。AP Statistics の CED（topic 2.3）と OpenStax Introductory Statistics（3.1 Terminology）は、outcome を 1 回の試行の結果、event を outcome の集まりとして分けて定義する。",
     "outcome は「結果」一般にも使う語。確率の文脈で「根元事象の個数」は the number of outcomes と言う。"
   ],
   "related": [
     "sample-space",
     "trial",
     "probability",
-    "element"
+    "element",
+    "event",
+    "equally-likely"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "3.1 Terminology（outcome、event）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "wikipedia-langlink",
+      "ja": "根元事象",
+      "en": "Elementary event"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「標本空間」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%A8%99%E6%9C%AC%E7%A9%BA%E9%96%93",
+      "note": "単純事象（simple event）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.3（outcome、event）"
     }
   ],
   "confidence": "likely",
@@ -70,7 +93,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "outcome": 310
@@ -95,6 +118,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

@@ -13,9 +13,10 @@
       {
         "term": "happen",
         "register": "both",
-        "note": "話し言葉で最も多い言い方。話し言葉では occur よりずっと多く、MIT OCW・Khan Academy・Professor Leonard が中心。書き言葉では occur と同じくらい使う。"
+        "note": "事象について話すときは、話し言葉で occur と同じくらい使う（MIT OCW・Professor Leonard・Khan Academy）。書き言葉では occur のほうが多い。"
       }
-    ]
+    ],
+    "register": "both"
   },
   "pos": "verb",
   "mapping": "exact",
@@ -40,7 +41,7 @@
   "examples": [
     {
       "en": "What's the chance that at least one six happens in four rolls? Easier to look at the complement.",
-      "ja": "4 回振って 6 が少なくとも 1 回起こる確率は？ 余事象を考えたほうが楽だ。",
+      "ja": "4 回振って少なくとも 1 回 6 の目が出る確率は？ 余事象を考えたほうが楽だ。",
       "register": "spoken"
     },
     {
@@ -56,7 +57,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは話し言葉は happen が occur を大きく上回る。書き言葉は occur のほうがやや多いが、両方使う。",
+    "事象について言うとき、話し言葉では occur と happen を同じくらい使い、書き言葉では occur のほうが多い。occur は「〜で生じる」の意味でも使う（the maximum occurs at x = 2）。",
     "「起こりうるすべての場合」は all possible outcomes と言う。"
   ],
   "related": [
@@ -74,6 +75,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.5・2.6（the probability that event A will occur）"
     }
   ],
   "confidence": "likely",
@@ -82,41 +89,30 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "happen": 3059,
-      "occur": 248
+      "event … happen | event happen | probability that … happen | probability of … happening | happen at the same time | happen together": 62,
+      "event … occur | event occur | probability that … occur | probability of … occurring | occur at the same time | occur together": 68
     },
     "written": {
-      "happen": 331,
-      "occur": 445
+      "event … occur | event occur | probability that … occur | probability of … occurring | occur at the same time | occur together": 82,
+      "event … happen | event happen | probability that … happen | probability of … happening | happen at the same time | happen together": 24
     },
     "sources": [
-      "khan-algebra",
-      "khan-ap-calc",
       "khan-ap-stats",
       "khan-middle",
       "mit-18.01",
-      "mit-18.02",
-      "mit-18.03",
-      "mit-18.06",
       "mit-6.042",
       "mit-notes",
       "openstax-algtrig",
       "openstax-calculus",
-      "openstax-elemalg",
-      "openstax-intalg",
       "openstax-introstats",
       "openstax-prealgebra",
-      "openstax-precalculus",
       "yt:3blue1brown",
-      "yt:blackpenredpen",
-      "yt:nancypi",
       "yt:organicchem",
-      "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

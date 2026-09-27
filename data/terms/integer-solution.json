@@ -21,7 +21,8 @@
       "数A"
     ],
     "us": [
-      "Discrete Math"
+      "Discrete Math",
+      "Pre-Algebra"
     ]
   },
   "definition_ja": "方程式の解のうち、値が整数であるもの。未知数が 2 つ以上なら、どれも整数である組をいう。",
@@ -42,8 +43,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "「自然数解」は positive integer solution。0 を含めるかどうかは英語でも問題文で決める（nonnegative integer solution なら 0 を含む）。",
-    "未知数が 2 つの整数解は、英語の問題文では pairs of integers (x, y) と組で言うこともできる。"
+    "「自然数解」は positive integer solution。0 を含めるかどうかは英語でも問題文で決める（nonnegative integer solution なら 0 を含む）。Levin は自然数に 0 を含めるので、Levin の natural number solutions は 0 を含む。",
+    "未知数が 2 つの整数解は、(x, y) の組（pairs of integers）で答える（エントリ diophantine-equation の例文）。"
   ],
   "related": [
     "diophantine-equation",
@@ -60,7 +61,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Prealgebra 2e"
+      "title": "OpenStax Prealgebra 2e",
+      "note": "Solve Equations Using Integers（integer solutions）"
     }
   ],
   "confidence": "likely",
@@ -69,7 +71,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "integer solution": 2
@@ -81,13 +83,13 @@
       "mit-6.042",
       "openstax-prealgebra"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは OpenStax の呼び方 integer solution（本文 2 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

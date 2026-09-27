@@ -50,7 +50,7 @@
   "collocations": [],
   "pitfalls": [
     "combination は一次結合（linear combination）や混ぜ合わせの意味でも使う。",
-    "ₙCᵣ は日本の教科書の書き方。英語の文献では C(n, r) や二項係数の記号 (n r) で書くこともあり、読みは n choose r。",
+    "高等学校学習指導要領〔用語・記号〕（数学A）は nCr と書く。OpenStax Algebra and Trigonometry（13.5 Counting Principles）は C(n, r) と書き、二項定理（13.6）では縦に並べた (n r) も使う。OpenStax Intermediate Algebra（12.4 Binomial Theorem）は (n r) を n choose r と読む。",
     "組合せ錠（combination lock）の combination は「番号の並び」で、順序が大事。数学の combination とは逆なので注意。"
   ],
   "related": [
@@ -68,7 +68,18 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.5 Counting Principles（C(n, r)）・13.6 Binomial Theorem"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "12.4 Binomial Theorem（n choose r）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）〔用語・記号〕",
+      "note": "数学A 場合の数と確率: nCr"
     }
   ],
   "confidence": "likely",
@@ -90,13 +101,13 @@
       "openstax-algtrig",
       "yt:nancypi"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 number of combinations | permutations and combinations | combinations of n | combination formula | combinations of r | a combination of r | combinations of k（本文 8 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

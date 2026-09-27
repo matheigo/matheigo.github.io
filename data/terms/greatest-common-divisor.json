@@ -40,10 +40,13 @@
   ],
   "level": {
     "jp": [
+      "小学校",
       "数A"
     ],
     "us": [
-      "Discrete Math"
+      "Discrete Math",
+      "Pre-Algebra",
+      "Algebra 1"
     ]
   },
   "definition_ja": "2 つ以上の整数に共通する約数のうち、最も大きいもの。",
@@ -58,7 +61,7 @@
     },
     {
       "en": "Before you do anything else, pull out the GCF, which here is 4x.",
-      "ja": "まずは最大公約数をくくり出そう。ここでは 4x だ。",
+      "ja": "まずは共通因数をくくり出そう。ここでは 4x だ。",
       "register": "spoken"
     },
     {
@@ -69,21 +72,68 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "divisor（約数）と factor（因数）はどちらも「割り切る数」だが、GCD は数論、GCF は代数の文脈に偏る（variants の件数を参照）。",
-    "日本の教科書は記号 gcd(a, b) を使わず言葉で書く。英語の数論では gcd(a, b) や (a, b) と書く。"
+    "GCD（greatest common divisor）は大学の数論（Levin 6.2）、GCF（greatest common factor）は学校の数学（IM Grade 6 は整数の最大公約数、OpenStax は多項式の因数分解の共通因数）で使う。",
+    "共通テスト・センター試験の問題文は最大公約数を言葉で書き、記号 gcd は出てこない（日本語版 Wikipedia「最大公約数」は gcd(a, b) と書く）。英語版 Wikipedia「Greatest common divisor」は gcd(a, b) と書き、(a, b) を使う著者もあると注記する。"
   ],
   "related": [
     "least-common-multiple",
     "relatively-prime",
     "euclidean-algorithm",
     "common-factor",
-    "prime-factorization"
+    "prime-factorization",
+    "divisor"
   ],
   "sources": [
     {
       "type": "wikipedia-langlink",
       "ja": "最大公約数",
       "en": "Greatest common divisor"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "6.2 Introduction to Number Theory（GCD、greatest common divisor）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「最大公約数」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%B4%84%E6%95%B0",
+      "note": "gcd(a, b) の記号"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Greatest_common_divisor",
+      "note": "記事「Greatest common divisor」の節 Definition（gcd(a, b)、(a, b) と書く著者もあるという注）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 1 学年 A 数と式（素因数分解）: 小学校算数科で最大公約数・最小公倍数を学習"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 6 7.16 Common Factors（greatest common factor）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成31年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20200601/https://www.dnc.ac.jp/albums/abm.php?f=abm00036453.pdf&n=k+19+suugaku1A.pdf",
+      "note": "a と a+1 の最大公約数は 1（最大公約数を言葉で書く）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "Greatest Common Factor and Factor by Grouping（GCF）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "2.5 Prime Factorization and the Least Common Multiple・Introduction to Factoring Polynomials"
     }
   ],
   "confidence": "likely",
@@ -92,7 +142,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "greatest common divisor": 94,
@@ -120,6 +170,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

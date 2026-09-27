@@ -31,10 +31,12 @@
   ],
   "level": {
     "jp": [
+      "小学校",
       "数A"
     ],
     "us": [
-      "Discrete Math"
+      "Pre-Algebra",
+      "Algebra 1"
     ]
   },
   "definition_ja": "2 つ以上の正の整数に共通する倍数のうち、最も小さい正のもの。",
@@ -61,13 +63,14 @@
   "collocations": [],
   "pitfalls": [
     "正の整数 a, b について gcd(a, b) × lcm(a, b) = ab。最大公約数から最小公倍数を出すときに使う。",
-    "通分は find a common denominator（find-a-common-denominator）。分母の最小公倍数を使った分母は least common denominator（LCD）と言う。"
+    "通分は find a common denominator（find-a-common-denominator）。分母の最小公倍数を使った分母は least common denominator（LCD、エントリ least-common-denominator）と言う。"
   ],
   "related": [
     "greatest-common-divisor",
     "multiple",
     "find-a-common-denominator",
-    "prime-factorization"
+    "prime-factorization",
+    "least-common-denominator"
   ],
   "sources": [
     {
@@ -82,6 +85,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 6 7.17・7.18 Common Multiples（least common multiple）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 1 学年 A 数と式（素因数分解）: 小学校算数科で最大公約数・最小公倍数を学習"
     }
   ],
   "confidence": "likely",
@@ -90,7 +105,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "least common multiple": 109,
@@ -110,6 +125,6 @@
       "yt:nancypi",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -19,7 +19,8 @@
   ],
   "level": {
     "jp": [
-      "数A"
+      "数A",
+      "数II"
     ],
     "us": [
       "Algebra 2",
@@ -49,7 +50,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは binomial coefficient は書き言葉（OpenStax Algebra and Trigonometry・OpenStax Intermediate Algebra が中心）のほうが話し言葉（MIT OCW・Khan Academy）よりずっと多い。見出しの register は書き言葉。",
+    "OpenStax Algebra and Trigonometry（13.6 Binomial Theorem）は (n r) を binomial coefficient と呼び、C(n, r) と同じ数だと書く。",
     "記号 (n k) は縦に並べて書き、分数の線は引かない。n/k と書くと別物になる。読みは n choose k。"
   ],
   "related": [
@@ -66,7 +67,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.6 Binomial Theorem"
     },
     {
       "type": "textbook",
@@ -79,7 +81,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "binomial coefficient": 10
@@ -97,6 +99,6 @@
       "openstax-calculus",
       "openstax-intalg"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

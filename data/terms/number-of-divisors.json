@@ -25,9 +25,9 @@
     ]
   },
   "definition_ja": "ある自然数の正の約数が全部でいくつあるかという数。n = pᵃ·qᵇ（p, q は異なる素数）なら (a + 1)(b + 1) 個になる。",
-  "definition_en": "How many positive divisors a whole number has. If n = pᵃ·qᵇ with distinct primes p and q, it has (a + 1)(b + 1) divisors.",
+  "definition_en": "How many positive divisors a positive integer has. If n = pᵃ·qᵇ with distinct primes p and q, it has (a + 1)(b + 1) divisors.",
   "latex": "n = p^{a} q^{b} \\;\\Rightarrow\\; (a+1)(b+1)",
-  "spoken_en": "if n is p to the a times q to the b, the number of divisors is a plus one times b plus one",
+  "spoken_en": "if n is p to the a times q to the b, the number of divisors is the quantity a plus one times the quantity b plus one",
   "examples": [
     {
       "en": "72 is 2³ times 3², so the number of divisors is 4 times 3, which is 12.",
@@ -49,11 +49,30 @@
     "prime-factorization",
     "multiple",
     "greatest-common-divisor",
-    "composite-number"
+    "composite-number",
+    "divisor"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Divisor_function",
+      "note": "記事「Divisor function」の節 Definition（number of divisors、σ₀。数学カテゴリから 3 段）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.2 Combining Outcomes（練習問題: How many divisors does it have?）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20190601/https://www.dnc.ac.jp/albums/abm.php?f=abm00033141.pdf&n=h30+suugaku1+02suugaku1A.pdf",
+      "note": "第4問: 144 の正の約数の個数"
     }
   ],
   "confidence": "likely",
@@ -62,10 +81,10 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {

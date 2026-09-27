@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスで split … into groups は話し言葉（Khan Academy）にわずかにあるだけで、書き言葉には出てこない）。英語では「組分け」という名前を立てず、6 人を 2 人ずつ 3 組に分ける、のように何をするかをそのまま文にする。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスで split … into groups は話し言葉（Khan Academy）にわずかにあるだけで、書き言葉には出てこない）。参照（CED・OpenStax・IM・CK-12・Levin）にも組分けの問題の名前は出てこず、Levin（3.9）は split up 11 kids into five named teams のように、何をするかを文で問う。",
   "domains": [
     "combinatorics"
   ],
@@ -28,7 +28,7 @@
   "definition_ja": "いくつかのものを、決まった人数（個数）ずつのいくつかの組に分ける方法を数える問題。組に区別がないときは、同じ大きさの組の並べ替えの分だけ割る。",
   "definition_en": "Counting the ways to split a set of people or objects into groups of given sizes; when groups of the same size are not labeled, divide by the number of ways to reorder those groups.",
   "latex": "\\frac{6!}{2!\\,2!\\,2!\\,3!} = 15",
-  "spoken_en": "six factorial over two factorial cubed times three factorial equals fifteen",
+  "spoken_en": "six factorial over the quantity two factorial cubed times three factorial equals fifteen",
   "examples": [
     {
       "en": "How many ways can we split six people into three groups of two? Careful, the groups don't have names.",
@@ -61,6 +61,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.9（split up 11 kids into five named teams）"
     }
   ],
   "confidence": "likely",
@@ -69,7 +75,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "split … into groups": 1
@@ -77,13 +83,13 @@
     "sources": [
       "khan-ap-stats"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 1 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

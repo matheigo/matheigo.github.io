@@ -9,7 +9,14 @@
     "term": "choose",
     "alt": [],
     "uk": null,
-    "register": "both"
+    "register": "both",
+    "variants": [
+      {
+        "term": "pick",
+        "register": "spoken",
+        "note": "話し言葉では choose より多く使う（MIT OCW・Khan Academy・Professor Leonard）。書き言葉では choose のほうがずっと多い。"
+      }
+    ]
   },
   "pos": "verb",
   "mapping": "exact",
@@ -50,7 +57,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "₁₀C₃ は英語で ten choose three と読む（記号は C(10, 3) か二項係数の縦書き）。n choose r は記号の読み方で、動詞 choose と同じ語。",
+    "₁₀C₃ は ten choose three と読む（OpenStax Intermediate Algebra は (n r) を n choose r と読むと書く）。記号は C(10, 3) か二項係数の縦書き。n choose r は記号の読み方で、動詞 choose と同じ語。",
     "証明の「δ をこう選ぶ」「適当に選ぶ」も choose（Choose δ = … ／ choose any point）。場合の数以外でも普通に使う。"
   ],
   "related": [
@@ -68,6 +75,11 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "12.4 Binomial Theorem（n choose r）"
     }
   ],
   "confidence": "likely",
@@ -76,15 +88,18 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "choose": 513
+      "choose": 513,
+      "pick !up !out": 960
     },
     "written": {
-      "choose": 839
+      "choose": 839,
+      "pick !up !out": 222
     },
     "sources": [
+      "khan-algebra",
       "khan-ap-calc",
       "khan-ap-stats",
       "khan-middle",
@@ -105,8 +120,9 @@
       "yt:blackpenredpen",
       "yt:nancypi",
       "yt:organicchem",
+      "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

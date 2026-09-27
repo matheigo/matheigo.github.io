@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "in base ／ written in base ／ base-n representation をまとめて数えると、OpenStax Algebra and Trigonometry の本文にはわずかで、用例コーパスの話し言葉のほうが多い（大半が Khan Academy の中学の講義）。英語は体系に名前を付けず、底を言う（in base 2、base 10、a base-5 numeral）。「n 進法で表す」は write … in base n。base b は用例コーパスでは主に対数の底の意味なので数えていない。",
+  "mapping_note": "英語は表し方（n 進法）と表された数（n 進数）を呼び分けず、どちらも base n を使って言う（in base 5 ／ a base-5 number）。英語版 Wikipedia「Positional notation」も底を base（radix）と呼び、1111011₂ のように書く。「n 進法で表す」は write … in base n。",
   "domains": [
     "number-theory"
   ],
@@ -48,21 +48,41 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本語の「n 進法」は表し方、「n 進数」は表された数。英語はどちらも base n を使って言い分ける（in base 5 ／ a base-5 number）。",
-    "日本の教科書は 142₍₅₎ と括弧付きの添え字で書く。英語の文献には 142₅ と括弧なしで書くものもある。",
-    "10 進法の decimal は「小数」の意味でも使う。「10 進法で」は in base 10 と言うと紛れない。"
+    "共通テスト（令和 6 年度 本試験 数学I・数学A 第 4 問）は「n 進数とは n 進法で表された数のこと」と書き、表し方と数を呼び分ける。英語はどちらも base n を使い、in base 5（5 進法で）と a base-5 number（5 進数）のように言い分ける。",
+    "センター試験（平成 28 年度 本試験 数学I・数学A 第 4 問）は 11011₍₂₎ のように括弧付きの添え字で書く。英語版 Wikipedia「Positional notation」は 1111011₂ と括弧なしで書く。",
+    "10 進法の decimal は「小数」の意味でも使う。「10 進法で」は in base 10 と言うと紛れない。",
+    "base は対数・累乗の底（log base 2、エントリ base-of-a-power）にも使う。「n 進法で」は in base n と in を付けて言う。"
   ],
   "related": [
     "binary",
     "hexadecimal",
     "numeral-system",
     "digit",
-    "place"
+    "place",
+    "decimal-system"
   ],
   "sources": [
     {
-      "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Positional_notation",
+      "note": "記事「Positional notation」（base、radix、1111011₂。数学カテゴリから 2 段）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和6年度 大学入学共通テスト 本試験 数学Ⅰ・数学Ａ（問題）",
+      "note": "第4問: n 進数とは n 進法で表された数のこと"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成28年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "note": "第4問: 11011(2)、4 進法・6 進法"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A 数学と人間の活動: 二進法・六十進法"
     }
   ],
   "confidence": "likely",
@@ -71,20 +91,14 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "in base | written in base | base-n representation": 20
-    },
-    "written": {
-      "in base | written in base | base-n representation": 4
+      "in base !e !on | written in base | base-n representation": 17
     },
     "sources": [
-      "khan-middle",
-      "mit-18.01",
-      "openstax-algtrig",
-      "yt:profleonard"
+      "khan-middle"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

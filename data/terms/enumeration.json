@@ -8,17 +8,17 @@
   "en": {
     "term": "list all",
     "alt": [],
-    "uk": null,
-    "register": "both"
+    "uk": null
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "英語では名詞の enumeration はほとんど使わず（用例コーパスでは話し言葉に出てこず、書き言葉にもほとんど出てこない）、list all the possibilities ／ make an organized list のように動詞句で言う（list all は話し言葉・書き言葉とも使う）。大学の組合せ論では enumeration（enumerative combinatorics）が「数え上げ」の分野名になる。",
+  "mapping_note": "用例コーパスでは名詞の enumeration は話し言葉に出てこず、書き言葉にもわずか。list all the possibilities や make a list of all possible outcomes（OpenStax Algebra and Trigonometry 13.7、IM Geometry 8.3）のように動詞句で言う。英語版 Wikipedia には記事「Enumerative combinatorics」（数え上げの組合せ論）がある。",
   "domains": [
     "combinatorics"
   ],
   "level": {
     "jp": [
+      "中2",
       "数A"
     ],
     "us": [
@@ -55,17 +55,33 @@
   ],
   "sources": [
     {
-      "type": "wikipedia-langlink",
-      "ja": "数え上げ",
-      "en": "Enumeration"
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.7 Probability（a list of all possible outcomes）"
     },
     {
-      "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Enumeration",
+      "note": "記事「Enumeration」の冒頭（集まりの要素の完全な並べ上げ）と節 Combinatorics（数学カテゴリから 3 段）"
     },
     {
-      "type": "textbook",
-      "title": "OpenStax Calculus Volume 1"
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Enumerative_combinatorics",
+      "note": "記事「Enumerative combinatorics」の冒頭（数学カテゴリから 4 段）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 8.3 Sample Spaces（list all the possible outcomes）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 2 学年 D データの活用: 起こり得る場合を順序よく整理し，落ちや重なりがないように数え上げる"
     }
   ],
   "confidence": "likely",
@@ -74,29 +90,27 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "list all": 21
+      "list all the possible | list all possible | list all the outcomes | list all outcomes | list all the possibilities | list all your options | list all the ways | list all the subsets | list all the permutations | list all the arrangements | list all the combinations": 1
     },
     "written": {
-      "list all": 30
+      "list all the possible | list all possible | list all the outcomes | list all outcomes | list all the possibilities | list all your options | list all the ways | list all the subsets | list all the permutations | list all the arrangements | list all the combinations": 9
     },
     "sources": [
-      "khan-middle",
-      "mit-18.02",
-      "mit-18.03",
-      "mit-18.06",
-      "mit-notes",
       "openstax-algtrig",
-      "openstax-calculus",
       "openstax-elemalg",
       "openstax-introstats",
-      "openstax-prealgebra",
-      "yt:3blue1brown",
-      "yt:nancypi",
-      "yt:patrickjmt"
+      "yt:nancypi"
     ],
-    "counted": "2026-09-26"
-  }
+    "counted": "2026-09-27"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 list all the possible | list all possible | list all the outcomes | list all outcomes | list all the possibilities | list all your options | list all the ways | list all the subsets | list all the permutations | list all the arrangements | list all the combinations（本文 9 件）。register は主張しない。",
+      "raised": "2026-09-27"
+    }
+  ]
 }
