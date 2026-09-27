@@ -51,11 +51,14 @@ describe("judgementSentences (Phase 5 監査 6 の決定 8)", () => {
     // the sentence before named the corpus
     expect(judgementSentences("そのため数え上げの形だけを数えた。")).toHaveLength(1);
     expect(judgementSentences("PIE は pie chart と同じ語なので数えなかった。")).toHaveLength(1);
+    expect(judgementSentences("用例コーパスでは a tree の形で数え、a tree diagram を除いた。")).toHaveLength(1);
+    expect(judgementSentences("order matters ／ order doesn't matter をまとめて数え、両方に出てくる。")).toHaveLength(1);
   });
 
   it("leaves a learner's note alone", () => {
     expect(judgementSentences("講義では A、教科書では B を多く使う（用例コーパス）。")).toEqual([]);
     expect(judgementSentences("一番上の 1 を row 0 と数えると、n 段目が (a + b)ⁿ の係数になる。")).toEqual([]);
+    expect(judgementSentences("データを数え、種類や階級ごとの個数にまとめる。")).toEqual([]);
     expect(judgementSentences("IM は ratio を Grade 6 の glossary の見出しにしている。")).toEqual([]);
     expect(judgementSentences("英語の見出しは訳語で、決まった言い方ではない。")).toEqual([]);
   });

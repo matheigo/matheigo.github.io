@@ -42,10 +42,10 @@ export const JUDGEMENT = /判定|見出しは|見出しに|数えた|数える|�
 export const HEADWORD_BASIS = /見出しにした|見出しとした|見出しは[^。]*?(?:による|で決めた|に合わせた|の呼び方|の記事名)/;
 /**
  * How a wording was counted, when the sentence before named the corpus: "…の形で数えた", "同じ言い方として数えた",
- * "数えていない", "数えなかった". Counting in the mathematical sense says 数えると / 数えるとき ("row 0 と数えると"),
+ * "数えていない", "数えなかった", "…の形で数え、", "まとめて数え、". Counting in the mathematical sense says 数えると / 数えるとき ("row 0 と数えると"),
  * which this leaves alone.
  */
-export const COUNTED = /数えた|数えていない|数えなかった|数えている/;
+export const COUNTED = /数えた|形で(?:だけ)?数え|形だけを?数え|まとめて数え|数えていない|数えなかった|数えている/;
 
 /** The sentences of a learner's note that explain the counting or the verdict. */
 export function judgementSentences(text: string): string[] {
