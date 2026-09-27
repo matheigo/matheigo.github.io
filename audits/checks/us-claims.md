@@ -5,9 +5,9 @@
 対象の欄は日本側と同じ。米国側の主張（米国・アメリカ・AP・CED・College Board・英語圏・Calc I〜III・Calculus AB／BC）の文のうち、
 文の中に参照（CED・OpenStax・IM・CK-12・Nicholson・Levin・Wikipedia・topic の番号ほか）も用例コーパス（講義・話し言葉・書き言葉・Khan・MIT ほか）も名指ししないもの。
 
-- 米国側の主張の文で参照かコーパスを名指しするもの: 365 文（一覧にしない）
-- **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 15 項目・15 文**
-- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 54 項目・56 文
+- 米国側の主張の文で参照かコーパスを名指しするもの: 389 文（一覧にしない）
+- **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 13 項目・13 文**
+- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 51 項目・53 文
 
 ## A. エントリの出典にも参照がない
 
@@ -16,14 +16,12 @@
 | terms | arrange-by-the-variable-of-lowest-degree | mapping_note | いちばん近い米国の手法は factoring by grouping（項をまとめて共通因数をくくる）だが、同じ手法ではない。 |
 | terms | auxiliary-angle-form | mapping_note | 米国では write a sin θ + b cos θ as a single sine function（R sin(θ + α) の形に書く）と手順で言う。 |
 | terms | cauchy-schwarz-inequality | pitfalls[0] | 米国の高校課程では名前を出さず、ベクトルの \|u · v\| ≤ \|u\|\|v\| として触れる程度。 |
-| terms | cross-method | mapping_note | 係数を斜めに掛けて組み合わせを探すのは日本の方法で、米国では ac method（ac を 2 つに分けて factoring by grouping、エントリ factoring-by-grouping）、box method、guess and check などと呼ばれる方法で ax² + bx + c を因数分解する。 |
 | terms | equivalence-relation | pitfalls[0] | 米国の Geometry で習う reflexive property などは、等号や合同についての同じ性質の名前。 |
 | terms | nth-roots-of-unity | pitfalls[1] | 数II の 1 の 3 乗根 ω（ω² + ω + 1 = 0、ω³ = 1）は、英語でも cube roots of unity と呼び、ω（omega）の記号を使うが、米国の高校課程では ω に決まった呼び名や性質の練習はほぼない。 |
 | terms | postulate | mapping_note | 米国の Geometry では証明の前提を postulate と呼び、名前付きで使う（segment addition postulate、parallel postulate など）。 |
 | terms | transformation-of-a-variable | pitfalls[1] | AP Statistics では、散布図が曲がっているとき y の対数をとるなどして直線に近づけることも transforming data と言う。 |
 | terms | vector-equation-of-a-circle | mapping_note | 米国の教科書は円を (x − h)² + (y − k)² = r² の形で扱い、ベクトル方程式としては立てない。 |
 | symbols | combination-ncr | notes[0] | 日本の教科書は ₙCᵣ と書き、米国の教科書は C(n, r)、ₙCᵣ、または縦に並べた二項係数 (n over r) の形で書く。 |
-| symbols | integers-symbol | notes[0] | 文字どおり Z（米国の発音は zee）とも言う。 |
 | symbols | mixed-number | notes[1] | 米国の Pre-Algebra の教材は帯分数を使い続ける。 |
 | symbols | piecewise-brace | notes[1] | 米国の教科書は条件を式の右に書き（x² if x ≥ 0）、日本のように ( ) でくくらないことが多い。 |
 | symbols | vector-arrow-notation | notes[1] | 米国の教科書は太字で書き、手書きでは矢印を付ける。 |
@@ -40,7 +38,7 @@
 | terms | axiom | pitfalls[0] | 米国の Geometry の授業では、ユークリッド幾何の公理を postulate と呼ぶ。 | OpenStax Introductory Statistics 2e |
 | terms | conditional-statement | mapping_note | 英語では論理・離散数学が implication、米国の Geometry の教科書が conditional statement（if-then statement）と呼ぶ。 | Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition |
 | terms | congruence-criteria | mapping_note | 米国の Geometry は SSS・SAS・ASA に AAS と直角三角形の HL を加え、それぞれを定理（theorem）や公準（postulate）として名前で呼ぶ（エントリ sss-congruence、sas-congruence、asa-congruence、aas-congruence、hl-congruence）。 | Illustrative Mathematics, IM 9–12 Math (Geometry); 中学校学習指導要領（平成29年告示）解説 数学編 |
-| terms | corollary | pitfalls[1] | 米国式の発音は第 1 音節に強勢（COR-uh-lair-ee）。 | OpenStax Calculus Volume 1; OpenStax Algebra and Trigonometry 2e |
+| terms | corollary | pitfalls[1] | 米国式の発音は第 1 音節に強勢（COR-uh-lair-ee。Merriam-Webster: ˈkȯr-ə-ˌler-ē、英国式は kə-ˈrä-lə-rē）。 | OpenStax Calculus Volume 1; OpenStax Algebra and Trigonometry 2e; Merriam-Webster「corollary」 |
 | terms | corresponding-angles-postulate | mapping_note | 米国の教科書では公準（postulate）とするものと定理（theorem）とするものがある。 | CK-12 Geometry (K12 LibreTexts) |
 | terms | difference-quotient | mapping_note | 米国の Precalculus・Calculus では difference quotient と名前で呼ぶ。 | OpenStax Calculus Volume 1 |
 | terms | end-behavior | pitfalls[2] | behavior は米国の綴り（英国は behaviour）。 | OpenStax Algebra and Trigonometry 2e; English Wikipedia |
@@ -62,18 +60,14 @@
 | terms | rational-function | mapping_note | 米国の rational function は多項式 ÷ 多項式の関数全般を指し、日本語では有理関数に当たる。 | OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1; 高等学校学習指導要領（平成30年告示）解説 数学編 理数編 |
 | terms | remainder-theorem | pitfalls[0] | 2 次式で割った余り（ax + b の形）を求める問題は、米国の高校ではあまり扱わない。 | OpenStax Algebra and Trigonometry 2e |
 | terms | scientific-notation | pitfalls[0] | 英国では standard form と言うが、米国の standard form は別の意味（直線の式 Ax + By = C など、エントリ standard-form-of-a-line）。 | OpenStax Prealgebra 2e; OpenStax Elementary Algebra 2e; OpenStax Algebra and Trigonometry 2e; English Wikipedia |
-| terms | similar-triangles | pitfalls[0] | 相似の記号は日本では ∽、米国では ~（△ABC ~ △DEF）。 | OpenStax Calculus Volume 1; OpenStax Algebra and Trigonometry 2e |
-| terms | similarity-criteria | mapping_note | 米国の Geometry はこれを SSS similarity、SAS similarity、AA similarity（エントリ aa-similarity）と名前で呼ぶ。 | Illustrative Mathematics, IM 9–12 Math (Geometry) |
 | terms | statistics | pitfalls[1] | AP Statistics・Intro Statistics のように科目名にも使う。 | OpenStax Introductory Statistics 2e |
 | terms | taylors-theorem | pitfalls[0] | AP では剰余の評価を Lagrange error bound と呼ぶ（lagrange-error-bound を参照）。 | OpenStax Calculus Volume 2 |
 | terms | transitive-property | pitfalls[1] | 米国の Geometry の証明では、等式なら transitive property of equality、合同なら transitive property of congruence と対象を付けて書く。 | CK-12 Geometry (K12 LibreTexts) |
 | terms | trapezoid | mapping_note | 米国の教材では台形の定義が分かれる。 | OpenStax Prealgebra 2e; English Wikipedia; CK-12 Geometry (K12 LibreTexts); Illustrative Mathematics, IM 9–12 Math (Geometry) |
 | terms | trapezoidal-rule | pitfalls[1] | trapezoid（台形）は米国の言い方。 | OpenStax Calculus Volume 2; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020); English Wikipedia |
 | terms | trigonometric-function | pitfalls[0] | 米国の教科書は sin・cos・tan に加えて csc（cosecant）・sec（secant）・cot（cotangent）も使う。 | OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1 |
-| terms | trinomial | pitfalls[1] | 米国の Algebra 1 では、x² + bx + c の形の式を因数分解することを factor trinomials と言う。 | OpenStax Elementary Algebra 2e |
 | terms | triple-angle-formulas | pitfalls[0] | 米国の高校課程では公式として覚えさせず、必要なら加法定理から導く。 | English Wikipedia |
 | terms | vector | pitfalls[0] | 日本の教科書は矢印（→）を文字の上に書くが、米国の教科書は太字（v）か、手書きでは上の矢印 v⃗ を使う。 | OpenStax Calculus Volume 3; OpenStax Algebra and Trigonometry 2e |
-| terms | write-in-descending-order | mapping_note | 米国の授業では、項が次数の高いものから順に並んでいる多項式を in standard form と言う。 | OpenStax Algebra and Trigonometry 2e |
 | terms | zeros-of-a-polynomial | pitfalls[0] | 米国では zero（関数の値が 0 になる x）・root（方程式の解）・x-intercept（グラフの交点）を使い分ける。 | OpenStax Algebra and Trigonometry 2e |
 | symbols | alpha | notes[1] | AP Statistics では有意水準も α で表す。 | OpenStax Algebra and Trigonometry 2e; OpenStax Precalculus 2e; OpenStax Introductory Statistics 2e; College Board, AP Statistics Course and Exam Description (Effective Fall 2026) |
 | symbols | conditional-probability-subscript-jp | notes[0] | 日本の P_A(B) は、米国の書き方では P(B \| A)。 | 高等学校学習指導要領（平成30年告示）解説 数学編 理数編 |
@@ -81,6 +75,7 @@
 | symbols | equals-question-mark | notes[0] | ≟ は米国の教科書の検算（Check）で使い、「等しいか確かめる」ことを示す。 | OpenStax Elementary Algebra 2e; CK-12 Foundation, CK-12 Geometry (K12 LibreTexts) |
 | symbols | geq-sign | notes[1] | 米国の教科書は ≥ と書く（≧ との違いは inequality-symbols）。 | 中学校学習指導要領（平成29年告示）〔用語・記号〕; OpenStax Intermediate Algebra 2e; OpenStax Calculus Volume 2 |
 | symbols | implies-arrow | notes[1] | 米国の Geometry と離散数学は条件文を p → q とも書く。 | OpenStax Precalculus 2e; CK-12 Foundation, CK-12 Geometry (K12 LibreTexts) |
+| symbols | integers-symbol | notes[0] | 文字どおり Z（米国の発音は zee。Merriam-Webster: ˈzē、カナダ・英国・オーストラリアは ˈzed）とも言う。 | Merriam-Webster「z」 |
 | symbols | leq-sign | notes[1] | 米国の教科書は ≤ と書く（≦ との違いは inequality-symbols）。 | 中学校学習指導要領（平成29年告示）〔用語・記号〕; OpenStax Calculus Volume 3; OpenStax Intermediate Algebra 2e; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020) |
 | symbols | proportion-colon | notes[0] | 米国の教科書は比例式を a/b = c/d の分数の形で書くことが多く、そのときは a over b equals c over d と読む。 | College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020); OpenStax Prealgebra 2e |
 | symbols | ray-ab-arrow | notes[0] | 米国の幾何の矢印の AB は ray AB と読む。 | CK-12 Geometry (K12 LibreTexts) |

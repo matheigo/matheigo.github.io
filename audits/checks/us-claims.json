@@ -1,6 +1,6 @@
 {
   "checked": "2026-09-27",
-  "named": 365,
+  "named": 389,
   "noReference": [
     {
       "collection": "terms",
@@ -19,12 +19,6 @@
       "id": "cauchy-schwarz-inequality",
       "field": "pitfalls[0]",
       "sentence": "米国の高校課程では名前を出さず、ベクトルの |u · v| ≤ |u||v| として触れる程度。"
-    },
-    {
-      "collection": "terms",
-      "id": "cross-method",
-      "field": "mapping_note",
-      "sentence": "係数を斜めに掛けて組み合わせを探すのは日本の方法で、米国では ac method（ac を 2 つに分けて factoring by grouping、エントリ factoring-by-grouping）、box method、guess and check などと呼ばれる方法で ax² + bx + c を因数分解する。"
     },
     {
       "collection": "terms",
@@ -61,12 +55,6 @@
       "id": "combination-ncr",
       "field": "notes[0]",
       "sentence": "日本の教科書は ₙCᵣ と書き、米国の教科書は C(n, r)、ₙCᵣ、または縦に並べた二項係数 (n over r) の形で書く。"
-    },
-    {
-      "collection": "symbols",
-      "id": "integers-symbol",
-      "field": "notes[0]",
-      "sentence": "文字どおり Z（米国の発音は zee）とも言う。"
     },
     {
       "collection": "symbols",
@@ -147,8 +135,8 @@
       "collection": "terms",
       "id": "corollary",
       "field": "pitfalls[1]",
-      "sentence": "米国式の発音は第 1 音節に強勢（COR-uh-lair-ee）。",
-      "entrySources": "OpenStax Calculus Volume 1; OpenStax Algebra and Trigonometry 2e"
+      "sentence": "米国式の発音は第 1 音節に強勢（COR-uh-lair-ee。Merriam-Webster: ˈkȯr-ə-ˌler-ē、英国式は kə-ˈrä-lə-rē）。",
+      "entrySources": "OpenStax Calculus Volume 1; OpenStax Algebra and Trigonometry 2e; Merriam-Webster「corollary」"
     },
     {
       "collection": "terms",
@@ -299,20 +287,6 @@
     },
     {
       "collection": "terms",
-      "id": "similar-triangles",
-      "field": "pitfalls[0]",
-      "sentence": "相似の記号は日本では ∽、米国では ~（△ABC ~ △DEF）。",
-      "entrySources": "OpenStax Calculus Volume 1; OpenStax Algebra and Trigonometry 2e"
-    },
-    {
-      "collection": "terms",
-      "id": "similarity-criteria",
-      "field": "mapping_note",
-      "sentence": "米国の Geometry はこれを SSS similarity、SAS similarity、AA similarity（エントリ aa-similarity）と名前で呼ぶ。",
-      "entrySources": "Illustrative Mathematics, IM 9–12 Math (Geometry)"
-    },
-    {
-      "collection": "terms",
       "id": "statistics",
       "field": "pitfalls[1]",
       "sentence": "AP Statistics・Intro Statistics のように科目名にも使う。",
@@ -355,13 +329,6 @@
     },
     {
       "collection": "terms",
-      "id": "trinomial",
-      "field": "pitfalls[1]",
-      "sentence": "米国の Algebra 1 では、x² + bx + c の形の式を因数分解することを factor trinomials と言う。",
-      "entrySources": "OpenStax Elementary Algebra 2e"
-    },
-    {
-      "collection": "terms",
       "id": "triple-angle-formulas",
       "field": "pitfalls[0]",
       "sentence": "米国の高校課程では公式として覚えさせず、必要なら加法定理から導く。",
@@ -373,13 +340,6 @@
       "field": "pitfalls[0]",
       "sentence": "日本の教科書は矢印（→）を文字の上に書くが、米国の教科書は太字（v）か、手書きでは上の矢印 v⃗ を使う。",
       "entrySources": "OpenStax Calculus Volume 3; OpenStax Algebra and Trigonometry 2e"
-    },
-    {
-      "collection": "terms",
-      "id": "write-in-descending-order",
-      "field": "mapping_note",
-      "sentence": "米国の授業では、項が次数の高いものから順に並んでいる多項式を in standard form と言う。",
-      "entrySources": "OpenStax Algebra and Trigonometry 2e"
     },
     {
       "collection": "terms",
@@ -429,6 +389,13 @@
       "field": "notes[1]",
       "sentence": "米国の Geometry と離散数学は条件文を p → q とも書く。",
       "entrySources": "OpenStax Precalculus 2e; CK-12 Foundation, CK-12 Geometry (K12 LibreTexts)"
+    },
+    {
+      "collection": "symbols",
+      "id": "integers-symbol",
+      "field": "notes[0]",
+      "sentence": "文字どおり Z（米国の発音は zee。Merriam-Webster: ˈzē、カナダ・英国・オーストラリアは ˈzed）とも言う。",
+      "entrySources": "Merriam-Webster「z」"
     },
     {
       "collection": "symbols",

@@ -2,11 +2,11 @@
 
 作成: `python3 scripts/audit/source_mentions.py`（規則は scripts/audit/source_mentions.py の説明）。主張が正しいかは見ない（それは監査）。
 
-- 項目: **174**（draft 1・likely 173）
+- 項目: **166**（draft 1・likely 165）
 
 | コレクション | id | confidence | 名指しされた資料 | 欄 |
 |---|---|---|---|---|
-| terms | 45-45-90-triangle | likely | CK-12 | pitfalls[0] |
+| terms | aa-similarity | likely | 〔用語・記号〕 | pitfalls[1] |
 | terms | aas-congruence | likely | IM | pitfalls[2] |
 | terms | aas-congruence | likely | 学習指導要領解説 | mapping_note |
 | terms | adjacent-angles | likely | 学習指導要領解説 | mapping_note |
@@ -20,6 +20,8 @@
 | terms | angle-addition-postulate | likely | 学習指導要領解説 | mapping_note |
 | terms | arc-measure | likely | 学習指導要領解説 | mapping_note |
 | terms | area-in-polar-coordinates | likely | 学習指導要領解説 | mapping_note |
+| terms | ascending-order | likely | IM | pitfalls[0] |
+| terms | ascending-order | likely | OpenStax Elementary Algebra | mapping_note |
 | terms | bayes-theorem | likely | AP Statistics の CED | pitfalls[0] |
 | terms | bijection | likely | OpenStax Algebra and Trigonometry | pitfalls[2] |
 | terms | bipartite-graph | likely | Levin | pitfalls[2] |
@@ -46,9 +48,6 @@
 | terms | corresponding-angles-postulate | likely | 学習指導要領解説 | mapping_note |
 | terms | coterminal-angle | likely | 学習指導要領解説 | mapping_note |
 | terms | countable | likely | AP Statistics の CED | pitfalls[2] |
-| terms | covariance | likely | AP Statistics の CED | mapping_note |
-| terms | covariance | likely | Nicholson | pitfalls[0] |
-| terms | covariance | likely | OpenStax Introductory Statistics | mapping_note |
 | terms | cpctc | likely | IM | pitfalls[2] |
 | terms | cpctc | likely | 学習指導要領解説 | mapping_note |
 | terms | cryptography | likely | Levin | pitfalls[2] |
@@ -61,7 +60,6 @@
 | terms | derivatives-in-polar-form | likely | 学習指導要領解説 | mapping_note |
 | terms | difference-quotient | likely | 日本語版 Wikipedia「微分」 | mapping_note |
 | terms | difference-quotient | likely | 学習指導要領解説 | mapping_note |
-| terms | dilation | likely | CK-12 | pitfalls[2] |
 | terms | directed-graph | likely | Levin | pitfalls[2] |
 | terms | directed-graph | likely | Nicholson | pitfalls[2] |
 | terms | end-behavior | likely | 学習指導要領解説 | mapping_note |
@@ -76,7 +74,6 @@
 | terms | exterior-angle-theorem | likely | IM | pitfalls[2] |
 | terms | factored-form | likely | 日本語版 Wikipedia「二次関数」 | mapping_note |
 | terms | factored-form | likely | 学習指導要領解説 | mapping_note |
-| terms | factoring-by-grouping | likely | 学習指導要領解説 | mapping_note |
 | terms | flowchart-proof | likely | 学習指導要領解説 | mapping_note |
 | terms | fractional-part | likely | IM | mapping_note |
 | terms | free-variable | draft | Levin | pitfalls[0] |
@@ -94,7 +91,6 @@
 | terms | image | likely | Nicholson | pitfalls[2] |
 | terms | independent-system | likely | 学習指導要領解説 | mapping_note |
 | terms | independent-system | likely | OpenStax Elementary Algebra | pitfalls[1] |
-| terms | indirect-measurement | likely | IM | mapping_note |
 | terms | inductive-step | likely | 学習指導要領解説 | mapping_note |
 | terms | inductive-step | likely | OpenStax | pitfalls[0] |
 | terms | influential-point | likely | 学習指導要領解説 | mapping_note |
@@ -123,7 +119,6 @@
 | terms | midpoint-formula | likely | 学習指導要領解説 | mapping_note |
 | terms | minor-arc | likely | IM | pitfalls[2] |
 | terms | multinomial-theorem | likely | OpenStax | pitfalls[0] |
-| terms | negative-correlation | likely | AP Statistics の CED | pitfalls[0] |
 | terms | negative-reciprocal | likely | 学習指導要領解説 | mapping_note |
 | terms | normal-probability-plot | likely | AP Statistics の CED | pitfalls[0] |
 | terms | normal-probability-plot | likely | 学習指導要領解説 | mapping_note |
@@ -131,7 +126,6 @@
 | terms | nth-term-test | likely | 学習指導要領解説 | mapping_note |
 | terms | one-sample-t-test | likely | OpenStax | pitfalls[0] |
 | terms | one-to-one-property | likely | 学習指導要領解説 | mapping_note |
-| terms | opens-upward | likely | CED | mapping_note |
 | terms | order-of-operations | likely | CK-12 | pitfalls[1] |
 | terms | paragraph-proof | likely | IM | pitfalls[1] |
 | terms | paragraph-proof | likely | 学習指導要領解説 | mapping_note |
@@ -155,9 +149,7 @@
 | terms | quadrantal-angle | likely | 学習指導要領解説 | mapping_note |
 | terms | quadratic-form | likely | OpenStax Algebra and Trigonometry | pitfalls[0] |
 | terms | quantifier | likely | Levin | pitfalls[2] |
-| terms | quartile-deviation | likely | OpenStax Introductory Statistics | mapping_note |
 | terms | radical-equation | likely | OpenStax Elementary Algebra | pitfalls[1] |
-| terms | radical-expression | likely | 学習指導要領解説 | mapping_note |
 | terms | recursive-algorithm | likely | Levin | pitfalls[0] |
 | terms | reflex-angle | likely | CK-12 | mapping_note |
 | terms | rejection-region | likely | AP Statistics の CED | mapping_note |
@@ -178,6 +170,7 @@
 | terms | slope-intercept-form-of-a-line | likely | 学習指導要領解説 | mapping_note |
 | terms | sohcahtoa | likely | 学習指導要領解説 | mapping_note |
 | terms | solve-the-right-triangle | likely | 学習指導要領解説 | mapping_note |
+| terms | space-diagonal | likely | IM | mapping_note |
 | terms | spanning-tree | likely | Levin | pitfalls[2] |
 | terms | square-units | likely | CK-12 | pitfalls[2] |
 | terms | square-units | likely | IM | pitfalls[2] |
@@ -199,7 +192,6 @@
 | terms | tautology | likely | Levin | pitfalls[2] |
 | terms | telescoping-series | likely | 学習指導要領解説 | mapping_note |
 | terms | transitive-property | likely | IM | pitfalls[2] |
-| terms | triangle-proportionality-theorem | likely | IM | pitfalls[1] |
 | terms | truth-table | likely | Levin | pitfalls[2] |
 | terms | two-column-proof | likely | IM | pitfalls[2] |
 | terms | two-column-proof | likely | 学習指導要領解説 | mapping_note |
@@ -212,7 +204,6 @@
 | terms | vertical-line-test | likely | 学習指導要領解説 | mapping_note |
 | terms | voluntary-response-bias | likely | 学習指導要領解説 | mapping_note |
 | terms | without-loss-of-generality | likely | Levin | pitfalls[2] |
-| terms | zero-product-property | likely | 学習指導要領解説 | mapping_note |
 | symbols | permutation-npr | likely | OpenStax | notes[1] |
 | symbols | permutation-npr | likely | OpenStax Algebra and Trigonometry | notes[0] |
 | symbols | polar-form-cis | likely | 日本語版 Wikipedia「複素数」 | notes[1] |

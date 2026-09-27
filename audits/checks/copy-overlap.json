@@ -2,24 +2,33 @@
   "summary": {
     "checked": "2026-09-27",
     "rule": "English: 8+ consecutive words; Japanese: 20+ characters (whitespace removed)",
-    "fields": 15645,
+    "fields": 15679,
     "englishSources": 3884,
-    "japaneseSources": 403,
-    "spans": 483,
-    "entries": 409
+    "japaneseSources": 420,
+    "spans": 473,
+    "entries": 405
   },
   "spans": [
     {
       "collection": "terms",
       "id": "aa-similarity",
-      "field": "definition_en",
+      "field": "examples[2].en",
+      "lang": "en",
+      "length": 8,
+      "span": "two triangles have two pairs of congruent angles",
+      "sources": {
+        "ref:ck12-geometry": 2
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "aa-similarity",
+      "field": "examples[2].en",
       "lang": "en",
       "length": 9,
-      "span": "the angles of a triangle add up to 180",
+      "span": "are similar by the angle angle triangle similarity theorem",
       "sources": {
-        "khan-algebra": 1,
-        "openstax-intalg": 1,
-        "khan-middle": 1
+        "ref:im-9-12": 7
       }
     },
     {
@@ -134,17 +143,6 @@
         "openstax-algtrig": 1,
         "openstax-precalculus": 1,
         "openstax-calculus": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "angle-bisector-theorem",
-      "field": "examples[1].ja",
-      "lang": "ja",
-      "length": 21,
-      "span": "∠Aの二等分線と辺BCの交点をDとするとき",
-      "sources": {
-        "jp:kaisetsu-chu": 1
       }
     },
     {
@@ -417,29 +415,6 @@
         "openstax-precalculus": 4,
         "openstax-algtrig": 3,
         "khan-ap-calc": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "axis-of-symmetry",
-      "field": "examples[0].en",
-      "lang": "en",
-      "length": 10,
-      "span": "the axis of symmetry goes right through the vertex so",
-      "sources": {
-        "yt:profleonard": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "axis-of-symmetry",
-      "field": "examples[1].en",
-      "lang": "en",
-      "length": 11,
-      "span": "the vertex and the equation of the axis of symmetry of",
-      "sources": {
-        "openstax-intalg": 1,
-        "openstax-elemalg": 1
       }
     },
     {
@@ -1049,6 +1024,28 @@
     },
     {
       "collection": "terms",
+      "id": "converse-of-the-pythagorean-theorem",
+      "field": "pitfalls[1]",
+      "lang": "en",
+      "length": 10,
+      "span": "ck 12 geometry 4 29 pythagorean theorem to classify triangles",
+      "sources": {
+        "ref:ck12-geometry": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "converse-of-the-pythagorean-theorem",
+      "field": "pitfalls[1]",
+      "lang": "en",
+      "length": 10,
+      "span": "4 36 distance and triangle classification using the pythagorean theorem",
+      "sources": {
+        "ref:ck12-geometry": 2
+      }
+    },
+    {
+      "collection": "terms",
       "id": "converse",
       "field": "examples[1].en",
       "lang": "en",
@@ -1080,17 +1077,6 @@
       "span": "a vector as a linear combination of the basis vectors",
       "sources": {
         "ref:nicholson-lawa-2021a": 3
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "correlation-coefficient",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 9,
-      "span": "the strength and direction of the linear relationship between",
-      "sources": {
-        "openstax-introstats": 1
       }
     },
     {
@@ -1385,6 +1371,17 @@
     },
     {
       "collection": "terms",
+      "id": "difference-of-squares",
+      "field": "mapping_note",
+      "lang": "en",
+      "length": 8,
+      "span": "a product of a sum and a difference",
+      "sources": {
+        "ref:im-9-12": 1
+      }
+    },
+    {
+      "collection": "terms",
       "id": "difference",
       "field": "pitfalls[0]",
       "lang": "en",
@@ -1403,6 +1400,17 @@
       "span": "程度の簡単な微分方程式の意味と解法を扱う",
       "sources": {
         "jp:kaisetsu-kou": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "dilation",
+      "field": "mapping_note",
+      "lang": "ja",
+      "length": 20,
+      "span": "一つの図形を操作して新たな図形を作ること",
+      "sources": {
+        "jp:kaisetsu-chu": 1
       }
     },
     {
@@ -1463,17 +1471,6 @@
     {
       "collection": "terms",
       "id": "distance-formula",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "points x1 y1 and x2 y2 in the",
-      "sources": {
-        "ref:nicholson-lawa-2021a": 2
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "distance-formula",
       "field": "examples[0].en",
       "lang": "en",
       "length": 8,
@@ -1487,8 +1484,8 @@
       "id": "distance-formula",
       "field": "examples[1].en",
       "lang": "en",
-      "length": 9,
-      "span": "use the distance formula to find the distance between",
+      "length": 11,
+      "span": "use the distance formula to find the distance between the points",
       "sources": {
         "openstax-intalg": 6,
         "openstax-algtrig": 3,
@@ -2149,17 +2146,6 @@
     },
     {
       "collection": "terms",
-      "id": "hypothesis-testing",
-      "field": "examples[1].en",
-      "lang": "en",
-      "length": 9,
-      "span": "conduct a hypothesis test at the 5 significance level",
-      "sources": {
-        "openstax-introstats": 2
-      }
-    },
-    {
-      "collection": "terms",
       "id": "image",
       "field": "pitfalls[2]",
       "lang": "en",
@@ -2523,28 +2509,6 @@
         "openstax-calculus": 5,
         "openstax-precalculus": 2,
         "ref:ap-calculus-ab-bc-ced": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "legs",
-      "field": "examples[0].en",
-      "lang": "en",
-      "length": 8,
-      "span": "the two sides that make the right angle",
-      "sources": {
-        "ref:im-6-8": 2
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "legs",
-      "field": "examples[1].en",
-      "lang": "en",
-      "length": 10,
-      "span": "in right triangle abc angle c is a right angle",
-      "sources": {
-        "ref:im-9-12": 3
       }
     },
     {
@@ -3101,6 +3065,17 @@
     },
     {
       "collection": "terms",
+      "id": "one-sixth-formula",
+      "field": "mapping_note",
+      "lang": "en",
+      "length": 13,
+      "span": "topic 8 4 finding the area between curves expressed as functions of x",
+      "sources": {
+        "ref:ap-calculus-ab-bc-ced": 2
+      }
+    },
+    {
+      "collection": "terms",
       "id": "one-to-one-property",
       "field": "examples[0].en",
       "lang": "en",
@@ -3253,6 +3228,17 @@
       "span": "as a percent of the original amount the",
       "sources": {
         "openstax-prealgebra": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "perfect-square-trinomial",
+      "field": "pitfalls[0]",
+      "lang": "en",
+      "length": 8,
+      "span": "algebra 1 7 11 what are perfect squares",
+      "sources": {
+        "ref:im-9-12": 1
       }
     },
     {
@@ -3571,29 +3557,6 @@
     {
       "collection": "terms",
       "id": "pythagorean-theorem",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 10,
-      "span": "right triangle with legs a and b and hypotenuse c",
-      "sources": {
-        "ref:im-9-12": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "pythagorean-theorem",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the sum of the squares of the legs",
-      "sources": {
-        "ref:im-6-8": 7,
-        "ref:ck12-geometry": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "pythagorean-theorem",
       "field": "examples[1].en",
       "lang": "en",
       "length": 12,
@@ -3607,29 +3570,6 @@
         "openstax-precalculus": 1,
         "ref:im-6-8": 1,
         "ref:im-9-12": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "pythagorean-triple",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "are the side lengths of a right triangle",
-      "sources": {
-        "ref:levin-dmoi4": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "quadratic-equation",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 9,
-      "span": "an equation that can be written in the form",
-      "sources": {
-        "openstax-calculus": 6,
-        "openstax-prealgebra": 4
       }
     },
     {
@@ -3703,47 +3643,12 @@
     {
       "collection": "terms",
       "id": "ratio-of-areas-of-similar-figures",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the ratio of the areas of two similar",
-      "sources": {
-        "ref:ck12-geometry": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "ratio-of-areas-of-similar-figures",
       "field": "examples[1].en",
       "lang": "en",
       "length": 9,
       "span": "3 find the ratio of the areas of the",
       "sources": {
         "ref:ck12-geometry": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "rational-number",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "a number that can be written as a",
-      "sources": {
-        "openstax-prealgebra": 1,
-        "openstax-elemalg": 1,
-        "openstax-intalg": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "rational-number",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 10,
-      "span": "m n where m and n are integers and n",
-      "sources": {
-        "openstax-algtrig": 1
       }
     },
     {
@@ -3761,13 +3666,12 @@
     {
       "collection": "terms",
       "id": "rationalizing-the-denominator",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 10,
-      "span": "multiplying the numerator and the denominator by the same number",
+      "field": "pitfalls[2]",
+      "lang": "ja",
+      "length": 27,
+      "span": "分母が二項程度までの分数の形に表された数の分母の有理化",
       "sources": {
-        "khan-middle": 11,
-        "khan-ap-calc": 2
+        "jp:kaisetsu-kou": 1
       }
     },
     {
@@ -4022,11 +3926,10 @@
       "id": "sample-mean",
       "field": "examples[1].en",
       "lang": "en",
-      "length": 9,
-      "span": "construct a 95 confidence interval for the population mean",
+      "length": 8,
+      "span": "a 95 confidence interval for the population mean",
       "sources": {
-        "openstax-introstats": 14,
-        "yt:profleonard": 1
+        "openstax-introstats": 11
       }
     },
     {
@@ -4044,12 +3947,12 @@
     {
       "collection": "terms",
       "id": "scale-factor",
-      "field": "definition_en",
+      "field": "mapping_note",
       "lang": "en",
-      "length": 10,
-      "span": "a scaled copy a scale factor greater than 1 enlarges",
+      "length": 9,
+      "span": "the scale factor from polygon a to polygon b",
       "sources": {
-        "ref:im-9-12": 1
+        "ref:im-6-8": 1
       }
     },
     {
@@ -4061,6 +3964,17 @@
       "span": "way to write very large or very small numbers",
       "sources": {
         "ref:im-6-8": 3
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "semicircle",
+      "field": "pitfalls[3]",
+      "lang": "en",
+      "length": 8,
+      "span": "ck 12 geometry 6 9 arcs in circles",
+      "sources": {
+        "ref:ck12-geometry": 1
       }
     },
     {
@@ -4195,14 +4109,14 @@
     },
     {
       "collection": "terms",
-      "id": "similarity-criteria",
-      "field": "definition_ja",
+      "id": "simplify-radicals",
+      "field": "pitfalls[4]",
       "lang": "ja",
-      "length": 20,
-      "span": "2組の辺の比とその間の角がそれぞれ等しい",
+      "length": 24,
+      "span": "根号の中に現れる自然数が最小となる形で答えなさい",
       "sources": {
-        "jp:kaisetsu-chu": 1,
-        "jp:wikipedia": 1
+        "jp:exams/h30-hon-01": 1,
+        "jp:exams/h30-hon-04": 1
       }
     },
     {
@@ -4399,22 +4313,9 @@
       "field": "definition_en",
       "lang": "en",
       "length": 8,
-      "span": "to solve a quadratic equation of the form",
+      "span": "by taking the square root of each side",
       "sources": {
-        "openstax-intalg": 3,
-        "openstax-elemalg": 2
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "solving-by-taking-square-roots",
-      "field": "examples[1].en",
-      "lang": "en",
-      "length": 10,
-      "span": "use the square root property to solve x 3 2",
-      "sources": {
-        "openstax-algtrig": 2,
-        "openstax-precalculus": 2
+        "ref:ck12-geometry": 1
       }
     },
     {
@@ -4452,6 +4353,17 @@
     },
     {
       "collection": "terms",
+      "id": "special-right-triangles",
+      "field": "mapping_note",
+      "lang": "en",
+      "length": 10,
+      "span": "ck 12 geometry 4 41 special right triangles and ratios",
+      "sources": {
+        "ref:ck12-geometry": 1
+      }
+    },
+    {
+      "collection": "terms",
       "id": "spherical-coordinates",
       "field": "examples[1].en",
       "lang": "en",
@@ -4474,29 +4386,6 @@
     },
     {
       "collection": "terms",
-      "id": "square-of-a-binomial",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 11,
-      "span": "the middle term is twice the product of the two terms",
-      "sources": {
-        "openstax-algtrig": 2,
-        "openstax-elemalg": 2
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "square-root-of-a-number",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "square root of a is a number that",
-      "sources": {
-        "openstax-algtrig": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "square-units",
       "field": "examples[1].en",
       "lang": "en",
@@ -4515,17 +4404,6 @@
       "span": "find the area of the triangle with vertices",
       "sources": {
         "ref:nicholson-lawa-2021a": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "standard-deviation",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "spread in the same units as the data",
-      "sources": {
-        "openstax-introstats": 1
       }
     },
     {
@@ -4615,6 +4493,17 @@
       "span": "every element of a is also an element of",
       "sources": {
         "ref:levin-dmoi4": 4
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "subtended-by",
+      "field": "mapping_note",
+      "lang": "en",
+      "length": 9,
+      "span": "ck 12 geometry 6 14 inscribed angles in circles",
+      "sources": {
+        "ref:ck12-geometry": 1
       }
     },
     {
@@ -4898,17 +4787,6 @@
     },
     {
       "collection": "terms",
-      "id": "triangle-proportionality-theorem",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 9,
-      "span": "a line parallel to one side of a triangle",
-      "sources": {
-        "ref:im-9-12": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "trigonometric-function",
       "field": "definition_en",
       "lang": "en",
@@ -5109,6 +4987,17 @@
     },
     {
       "collection": "terms",
+      "id": "variance",
+      "field": "pitfalls[0]",
+      "lang": "ja",
+      "length": 28,
+      "span": "平均値との差に基づいてデータの散らばりの度合いを表す指標",
+      "sources": {
+        "jp:kaisetsu-kou": 1
+      }
+    },
+    {
+      "collection": "terms",
       "id": "vector-field",
       "field": "examples[1].en",
       "lang": "en",
@@ -5207,17 +5096,6 @@
       "span": "the slope and the y intercept of the",
       "sources": {
         "ref:im-9-12": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "zero-product-property",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 9,
-      "span": "if the product of two numbers is 0 then",
-      "sources": {
-        "ref:im-9-12": 8
       }
     },
     {
