@@ -90,7 +90,7 @@
       "note": "第 4 問: 2 点で交わる・接する・共有点をもたない を分ける選択肢"
     }
   ],
-  "confidence": "verified",
+  "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-24",
     "audit": "2026-09-26",
@@ -128,5 +128,12 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-25"
-  }
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: 監査 1 で verified にした語の抜き取り（監査 3、種 2026092603）を Claude Fable 5.1 のセッションでやり直し（読み取り専用の 5 人 ＋ 本セッションの読み。見つけた問題は本セッションが資料で確かめた）、前のセッション（Opus 5.5）の直しの後に残っていた問題を直した。mapping を exact から near に: 英語の intersect は接する場合（共有点 1 つ）も含む（IM Geometry・CK-12 Geometry の接線の定義、OpenStax Algebra and Trigonometry）が、共通テストの問題文は「2 点で交わる」「接する」「共有点をもたない」を分けて言う。見直す点: near でよいか、定義の日本語。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
+    }
+  ]
 }
