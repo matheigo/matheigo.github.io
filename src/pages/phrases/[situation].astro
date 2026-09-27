@@ -8,6 +8,7 @@ import HiddenNote from "../../components/HiddenNote.astro";
 import {
   isUnverified,
   phrases,
+  symbolsByPhrase,
   SITUATIONS,
   SITUATION_LABELS,
   PHRASE_REGISTER_LABELS,
@@ -78,6 +79,14 @@ const path = `/phrases/${situation}/`;
               </>
             ))}
           </dl>
+        ) : null}
+        {symbolsByPhrase.get(p.id)?.length ? (
+          <p class="meta">
+            記号:{" "}
+            {symbolsByPhrase.get(p.id)!.map((s) => (
+              <a href={`/symbols/${s.id}/`}>{s.name_ja}</a>
+            ))}
+          </p>
         ) : null}
         {p.notes?.length ? (
           <section class="block">

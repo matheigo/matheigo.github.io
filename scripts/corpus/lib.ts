@@ -447,6 +447,28 @@ function starts(haystack: string, re: RegExp | null): number[] {
   return [...haystack.matchAll(re)].map((m) => m.index ?? 0);
 }
 
+/** Where each match starts and ends. */
+function spans(haystack: string, re: RegExp | null): [number, number][] {
+  if (!re) return [];
+  return [...haystack.matchAll(re)].map((m) => [m.index ?? 0, (m.index ?? 0) + m[0].length]);
+}
+
+/**
+ * The starts of `re`'s matches that stand outside every longer match of
+ * `longer` (Phase 5 監査 6 の決定 4): a match lying inside a longer match of
+ * another candidate - "connective" inside "logical connective" - is that
+ * candidate's occurrence, not a second one of the shorter wording.
+ */
+function startsOutside(haystack: string, re: RegExp | null, longer: RegExp[]): number[] {
+  if (longer.length === 0) return starts(haystack, re);
+  const own = spans(haystack, re);
+  if (own.length === 0) return [];
+  const cover = longer.flatMap((l) => spans(haystack, l));
+  return own
+    .filter(([s, e]) => !cover.some(([cs, ce]) => cs <= s && e <= ce && ce - cs > e - s))
+    .map(([s]) => s);
+}
+
 function phraseRegex(phrase: string): RegExp | null {
   const p = normalize(phrase);
   return p ? wholeWords(escape(p)) : null;
@@ -1579,12 +1601,6 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   unbiased: { unbiased: "unbiased sample | unbiased estimate | unbiased estimator | unbiased statistic" },
   // the ratio of the volumes of similar solids: IM's "surface area to volume ratio" is another concept (Phase 5 監査 4, batch 14)
   "ratio-of-volumes-of-similar-solids": { "volume ratio": "!to volume ratio" },
-  // Phase 5 監査 5 バッチ 16: the closing of a proof only. "as desired" closes OpenStax Calculus's proofs (", as desired." □),
-  // not "as small as desired"; "completes the proof" is the closing sentence, not "Complete the proof that …" (an exercise)
-  "end-of-proof": {
-    "as desired": "!small !large !close !accurate !accurately as desired. | !small !large !close !accurate !accurately as desired,",
-    "completes the proof": "this completes the proof !that !of | which completes the proof !that !of | completes the proof. | completes the proof, | completing the proof !that !of",
-  },
   // negate in the logic sense (the captions' "negate each other" and "negate the sign" are other senses; CK-12 Geometry 2.10, Levin 1.3)
   negate: { negate: "negate the statement | negate a statement | negate statements | negate complex statements | negate an atomic sentence | negate the original statement | negate both parts | negate a conjunction | negate a disjunction | negate for all | negate the hypothesis | negate p and q" },
   // the CED's one "all necessary conditions are met" (a test's premises) is not the logic term
@@ -1648,7 +1664,9 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   }, // not an independent variable or linear independence
   "error-bound": { "error bound": "!lagrange !legrange error bound" }, // not the Lagrange error bound (Taylor polynomials)
   "quadratic-form": { "quadratic form": "!in !the !standard !undoing quadratic form" }, // not an equation "in quadratic form" (u = x²)
-  blocking: { blocking: "block design" }, // "blocking" folds into "block": stacks of blocks, Jordan blocks
+  // "blocking" folds into "block": stacks of blocks, Jordan blocks. The AP Statistics CED names the technique
+  // in "blocking variable" (1.13.B; 5 of its 7 blocking), which "block design" alone missed (Phase 5 監査 6 の決定 4)
+  blocking: { blocking: "block design | blocking variable" },
   // Phase 2 中学の単元 (batch 1): everyday words and words that name other entries too
   sign: { sign: "!radical !equal !equals !inequality !summation !integral !plus !minus sign" }, // 符号, not a symbol's name
   // A plural in a form folds back to its singular (inflection), so a form never lists "constants" or
@@ -2130,6 +2148,37 @@ export function containsWording(a: string, lead: string): boolean {
   return true;
 }
 
+/** A counted form's alternatives without its "!w" marks ("!logical connective" -> "connective"). */
+const bareForms = (c: string) => c.split(FORM_OR).map((f) => f.split(/\s+/).filter((w) => !NOT.test(w)).join(" "));
+
+/**
+ * The candidates of one entry that contain another of its candidates (Phase 5
+ * 監査 6 の決定 4, 監査 5 の H-4): connective / logical connective, derivative /
+ * derivative function, partial fractions / method of partial fractions. The
+ * shorter wording is counted only where it stands outside the longer one
+ * (countEntry, referenceHits): inside it, the longer wording is what was said,
+ * and counting it twice lets the shorter one ride on the longer one's hits.
+ * Decision 3 (監査 5) left out a collocation built on the headword; this
+ * extends containsWording to every pair of candidates - en.term, en.alt,
+ * en.variants, the collocations and a phrase's key parts - form by form, with
+ * the "!w" marks left out. Same-wording pairs (Riemann sum / Riemann sums,
+ * f prime / f prime of x) are one wording and are folded instead.
+ * candidate -> the longer candidates that contain it.
+ */
+export function longerCandidates(candidates: string[]): Map<string, string[]> {
+  const out = new Map<string, string[]>();
+  for (const c of candidates) {
+    const longer = candidates.filter(
+      (d) =>
+        d !== c &&
+        !sameWording(c, d) &&
+        bareForms(d).some((fd) => bareForms(c).some((fc) => fc.trim() !== "" && containsWording(fd, fc) && !sameWording(fd, fc))),
+    );
+    if (longer.length) out.set(c, longer);
+  }
+  return out;
+}
+
 /**
  * Does `a` contain the wording `lead` and add to it? "the integrand is odd"
  * extends "integrand": a collocation built on the headword, not another way
@@ -2433,9 +2482,14 @@ export function referenceHits(
   regexOf: (wording: string) => RegExp | null = termRegex,
 ): ReferenceHits {
   const out = emptyReference();
+  // A candidate inside a longer candidate counts only outside it (longerCandidates; Phase 5 監査 6 の決定 4).
+  // Terms and phrases only: symbol readings (patternRegex) keep a longer reading out with their "!w" marks.
+  const nested = regexOf === termRegex ? longerCandidates(candidates) : new Map<string, string[]>();
+  const count = (text: string, c: string, re: RegExp) =>
+    startsOutside(text, re, (nested.get(c) ?? []).map(regexOf).filter((r): r is RegExp => r !== null)).length;
   const bySection = (into: Record<string, Record<string, number>>, c: string, re: RegExp, sections: [string, string][]) => {
     for (const [section, text] of sections) {
-      const n = starts(text, re).length;
+      const n = count(text, c, re);
       if (n) (into[c] ??= {})[section] = (into[c]?.[section] ?? 0) + n;
     }
   };
@@ -2444,13 +2498,13 @@ export function referenceHits(
     if (!re) continue;
     bySection(out.ced, c, re, ced);
     bySection(out.cedStats!, c, re, more.cedStats ?? []);
-    const body = openstax.reduce((n, text) => n + starts(text, re).length, 0);
+    const body = openstax.reduce((n, text) => n + count(text, c, re), 0);
     if (body) out.openstax[c] = body;
-    const inTitles = [...new Set(titles.filter((t) => starts(normalize(t), re).length > 0))];
+    const inTitles = [...new Set(titles.filter((t) => count(normalize(t), c, re) > 0))];
     if (inTitles.length) out.openstaxTitles[c] = inTitles;
-    const calculus = (more.openstaxCalculus ?? []).reduce((n, text) => n + starts(text, re).length, 0);
+    const calculus = (more.openstaxCalculus ?? []).reduce((n, text) => n + count(text, c, re), 0);
     if (calculus) out.openstaxCalculus![c] = calculus;
-    const calculusTitles = [...new Set((more.openstaxCalculusTitles ?? []).filter((t) => starts(normalize(t), re).length > 0))];
+    const calculusTitles = [...new Set((more.openstaxCalculusTitles ?? []).filter((t) => count(normalize(t), c, re) > 0))];
     if (calculusTitles.length) out.openstaxCalculusTitles![c] = calculusTitles;
     bySection(out.nicholson!, c, re, more.nicholson ?? []);
     bySection(out.levin!, c, re, more.levin ?? []);
@@ -2458,7 +2512,7 @@ export function referenceHits(
     bySection(out.ck12!, c, re, more.ck12 ?? []);
     const ck12Titles = (more.ck12 ?? [])
       .map(([name]) => name)
-      .filter((name) => starts(normalize(name.replace(/^CK-12 \S+ [\d.]+ /, "")), re).length > 0);
+      .filter((name) => count(normalize(name.replace(/^CK-12 \S+ [\d.]+ /, "")), c, re) > 0);
     if (ck12Titles.length) out.ck12Titles![c] = ck12Titles;
     // A form's alternatives without its "!w" marks ("vertical shift | shifted … units").
     const forms = c.split(FORM_OR).map((f) => f.split(/\s+/).filter((w) => !NOT.test(w)).join(" "));
@@ -2976,6 +3030,10 @@ export function countEntry(
 ): EntryTally {
   const regexOf = matcherFor(collection);
   const res = new Map(candidates.map((c) => [c, regexOf(c)] as const));
+  // A candidate inside a longer candidate of the entry counts only outside it (longerCandidates).
+  // Symbol readings are patterns: their "!w" marks keep a longer reading out (the !the of "the cosine of *").
+  const nested = collection === "symbols" ? new Map<string, string[]>() : longerCandidates(candidates);
+  const longerRes = new Map([...nested].map(([c, ls]) => [c, ls.map((l) => res.get(l)).filter((r): r is RegExp => r != null)] as const));
   const sources = new Set<string>();
   let auto = false;
   let human = false;
@@ -2991,7 +3049,7 @@ export function countEntry(
     const hits = new Map<string, Map<number, number[]>>();
     inRegister.forEach((doc, i) => {
       for (const c of candidates) {
-        const at = starts(doc.text, res.get(c) ?? null);
+        const at = startsOutside(doc.text, res.get(c) ?? null, longerRes.get(c) ?? []);
         if (at.length === 0) continue;
         if (!hits.has(c)) hits.set(c, new Map());
         hits.get(c)!.set(i, at);

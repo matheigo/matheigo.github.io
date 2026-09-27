@@ -182,6 +182,7 @@ export const curriculum: CurriculumUnit[] = values<CurriculumUnit>(curriculumMod
 export const termById = new Map(terms.map((t) => [t.id, t]));
 export const symbolById = new Map(symbols.map((s) => [s.id, s]));
 export const conventionById = new Map(conventions.map((c) => [c.id, c]));
+export const phraseById = new Map(phrases.map((p) => [p.id, p]));
 export const unitById = new Map(curriculum.map((u) => [u.id, u]));
 
 /**
@@ -209,6 +210,14 @@ export const conventionsByTerm = groupBy(
 /** Symbols whose term_ref is the term. */
 export const symbolsByTerm = groupBy(
   symbols.filter((s) => s.term_ref).map((s) => [s.term_ref!, s] as [string, Symbol_]),
+);
+/**
+ * Symbols that name a phrase in related (the phrase that says the symbol in words: qed-end-of-proof ↔
+ * written-solution-as-desired; DECISIONS, Phase 5 監査 6 の決定 11). phrases carry no related field, so
+ * the phrase's side of the link is this reverse lookup.
+ */
+export const symbolsByPhrase = groupBy(
+  symbols.flatMap((s) => (s.related ?? []).filter((r) => phraseById.has(r)).map((r) => [r, s] as [string, Symbol_])),
 );
 
 // labels ----------------------------------------------------------------------

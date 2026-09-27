@@ -11,6 +11,7 @@ import {
   symbols,
   termById,
   conventionById,
+  phraseById,
   symbolById,
   symbolCategory,
   SYMBOL_CATEGORIES,
@@ -36,6 +37,8 @@ const term = s.term_ref ? termById.get(s.term_ref) : undefined;
 const related = (s.related ?? [])
   .map((r) => conventionById.get(r) ?? symbolById.get(r))
   .filter((x) => x !== undefined);
+// the phrase that says the symbol in words (Phase 5 監査 6 の決定 11)
+const relatedPhrases = (s.related ?? []).map((r) => phraseById.get(r)).filter((x) => x !== undefined);
 const category = SYMBOL_CATEGORIES.find(([k]) => k === (symbolCategory.get(s.id) ?? "notation-other"));
 const say = s.tts_text ?? first;
 const jsonLd = {
@@ -139,6 +142,24 @@ const jsonLd = {
                 </li>
               ),
             )}
+          </ul>
+        </section>
+      ) : null
+    }
+
+    {
+      relatedPhrases.length ? (
+        <section class="block">
+          <h2>言葉で言うとき（フレーズ）</h2>
+          <ul class="links">
+            {relatedPhrases.map((p) => (
+              <li>
+                <a href={`/phrases/${p.situation}/#${p.id}`}>{p.intent}</a>
+                <span class="detail" lang="en">
+                  {p.en}
+                </span>
+              </li>
+            ))}
           </ul>
         </section>
       ) : null

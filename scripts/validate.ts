@@ -10,6 +10,7 @@
  * - a Japanese word shared by two entries is a listed homonym (SAME_JA)
  * - no count from the example corpus in the body text (lib/corpus-count.ts; a warning)
  * - no wording STYLE forbids in the claim fields (lib/wording.ts: 通じる, 一番よく使う, 減点, ことが多い and 英語には〜がない without a source; a warning)
+ * - no judgement explanation in pitfalls / notes (lib/wording.ts judgementSentences: the corpus and 数えた, 判定, 見出しは ...; a warning)
  * - a CED source's note names topics the CED has, and words those topics use (lib/ced-notes.ts; a warning,
  *   only when the CED texts are fetched into corpus/ref/)
  * - no id shared by two collections (the search index keys entries by bare id)
@@ -25,7 +26,7 @@ import { cedSectionTexts, checkCedNote } from "./lib/ced-notes.js";
 import { bodyTexts, corpusCountSentences } from "./lib/corpus-count.js";
 import { PROBLEM_FLAGS, RECORD_FLAGS, isProblemFlag } from "./lib/flags.js";
 import { COLLECTIONS, ROOT, loadAll, readSchema, type Collection, type Entry } from "./lib/load.js";
-import { CLAIM_FIELDS, unverifiableSentences } from "./lib/wording.js";
+import { CLAIM_FIELDS, NOTE_FIELDS, judgementSentences, unverifiableSentences } from "./lib/wording.js";
 
 
 const errors: string[] = [];
@@ -213,11 +214,15 @@ for (const collection of COLLECTIONS) {
     checkLatex(where, data.latex);
 
     // cross-references ---------------------------------------------------
-    // terms relate to terms; symbols and conventions relate to each other (a notation's reading ↔ the JP/US difference)
+    // terms relate to terms; symbols and conventions relate to each other (a notation's reading ↔ the JP/US difference);
+    // a symbol may also name the phrase that says it in words (qed-end-of-proof ↔ written-solution-as-desired: the
+    // closing of a proof; Phase 5 監査 6 の決定 11). phrases carry no related: the site shows the link on both pages
     for (const r of (data.related as string[] | undefined) ?? []) {
       if (collection === "terms") checkRef(where, "related", r, "terms");
-      else if (!idsByCollection.symbols.has(r) && !idsByCollection.conventions.has(r)) {
-        err(where, `related points at "${r}", which has no file in data/symbols/ or data/conventions/`);
+      else if (collection === "symbols" && idsByCollection.phrases.has(r)) {
+        // a phrase
+      } else if (!idsByCollection.symbols.has(r) && !idsByCollection.conventions.has(r)) {
+        err(where, `related points at "${r}", which has no file in data/symbols/ or data/conventions/${collection === "symbols" ? " or data/phrases/" : ""}`);
       }
       if (r === data.id) err(where, "related refers to itself");
     }
@@ -242,6 +247,16 @@ for (const collection of COLLECTIONS) {
         if (!claimField.test(field)) continue;
         for (const s of unverifiableSentences(text)) {
           warn(where, `${field} has a wording STYLE forbids (通じる ／ 一番よく使う ／ 減点 ／ ことが多い・英語には〜がない without a source): ${s}`);
+        }
+      }
+    }
+    // how the corpus was counted / how the headword was settled belongs to flags and evidence (Phase 5 監査 6 の決定 8)
+    const noteField = NOTE_FIELDS[collection];
+    if (noteField) {
+      for (const [field, text] of bodyTexts(data)) {
+        if (!noteField.test(field)) continue;
+        for (const s of judgementSentences(text)) {
+          warn(where, `${field} has a judgement explanation (how the corpus was counted or the headword settled; flags and evidence carry it): ${s}`);
         }
       }
     }

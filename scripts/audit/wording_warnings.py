@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Phase 5 audit: the wording warnings of validate as a list (audits/checks/wording-warnings.md).
 
-    python3 scripts/audit/wording_warnings.py        runs `pnpm validate` and collects its "has a wording STYLE forbids"
-                                                     and "looks like a count from the example corpus" warnings
+    python3 scripts/audit/wording_warnings.py        runs `pnpm validate` and collects its "has a wording STYLE forbids",
+                                                     "looks like a count from the example corpus" and "has a judgement
+                                                     explanation" (pitfalls / notes; audit 6, decision 8) warnings
 
 Audit 2 (H-5) and audit 3 (AT_LARGE) added the warnings to validate (scripts/lib/wording.ts,
 scripts/lib/corpus-count.ts); the sessions since collected them into this list by hand.
@@ -17,7 +18,7 @@ import subprocess
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OUT = os.path.join(ROOT, "audits", "checks", "wording-warnings.md")
-WARN = re.compile(r"warn\s+(terms|symbols|phrases|conventions)/([a-z0-9-]+)\.json: (\S+) has (?:a wording STYLE forbids|what looks like a count from the example corpus)[^:]*: (.*)$")
+WARN = re.compile(r"warn\s+(terms|symbols|phrases|conventions)/([a-z0-9-]+)\.json: (\S+) has (?:a wording STYLE forbids|what looks like a count from the example corpus|a judgement explanation)[^:]*: (.*)$")
 
 
 def main():
@@ -37,7 +38,7 @@ def main():
     rows.sort()
     verified = sum(1 for x in rows if x[3] == "verified")
     lines = ["# 確かめられない言い方の警告（validate。scripts/lib/wording.ts・scripts/lib/corpus-count.ts）", "",
-             f"作成: {datetime.date.today().isoformat()} ／ `python3 scripts/audit/wording_warnings.py`（`pnpm validate` の warn を集めた）。監査 2 の H-5 で足した警告（通じる／一番よく使う／減点／資料の名前のない「ことが多い」）、監査 3 の AT_LARGE（資料の名前のない「英語には〜がない」）、本文の用例コーパスの件数らしい数字。", "",
+             f"作成: {datetime.date.today().isoformat()} ／ `python3 scripts/audit/wording_warnings.py`（`pnpm validate` の warn を集めた）。監査 2 の H-5 で足した警告（通じる／一番よく使う／減点／資料の名前のない「ことが多い」）、監査 3 の AT_LARGE（資料の名前のない「英語には〜がない」）、本文の用例コーパスの件数らしい数字、監査 6 の決定 8 の判定の説明（pitfalls・notes の「用例コーパスでは…の形で数えた」など）。", "",
              f"- 文: **{len(rows)}**（verified {verified}）", "",
              "| バッチ | コレクション | id | confidence | 欄 | 文 |", "|---|---|---|---|---|---|"]
     for b, c, i, conf, field, s in rows:

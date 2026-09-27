@@ -32,7 +32,9 @@
  *               フレーズ 2 の前の修正 1). Implies --phrases
  *   --contexts [n]  also print n contexts (default 10) of each wording per
  *               register, picked at even steps through its hits (lib.ts
- *               sampleTermContexts). For the check of an everyday-word
+ *               sampleTermContexts), and n per reference (参: the CEDs, IM,
+ *               CK-12, Nicholson, Levin): the ground of a ③ headword a
+ *               reference settled is read there (Phase 5 監査 6 の決定 9). For the check of an everyday-word
  *               headword before it is settled (DECISIONS, Phase 2 統計・ベクトル
  *               の単元の前の修正). Terminal only: corpus text is never written
  *
@@ -180,11 +182,26 @@ function breakdown(label: string, by: Record<string, number> | undefined): strin
   return `${label}で ${total} 件（${top.join("・")}${rest ? ` ほか ${rest}` : ""}）`;
 }
 
-function printContexts(docs: CorpusDoc[], wording: string, n: number) {
+function printContexts(docs: CorpusDoc[], wording: string, n: number, refs?: ReturnType<typeof loadReferences>) {
   for (const register of ["spoken", "written"] as const) {
     for (const h of sampleTermContexts(docs.filter((d) => d.register === register), wording, n)) {
       console.log(`      ${register === "spoken" ? "話" : "書"} ${h.source.padEnd(20)} ${h.snippet}`);
     }
+  }
+  if (!refs) return;
+  // The passages of the references (the CEDs, IM, CK-12, Nicholson, Levin; OpenStax is in the written
+  // corpus above): a ③ headword a reference settled is read in them (Phase 5 監査 6 の決定 9).
+  const sectioned: [string, [string, string][]][] = [
+    ["CED", refs.ced],
+    ["CED(stats)", refs.cedStats ?? []],
+    ["IM", refs.im ?? []],
+    ["CK-12", refs.ck12 ?? []],
+    ["Nicholson", refs.nicholson ?? []],
+    ["Levin", refs.levin ?? []],
+  ];
+  for (const [name, sections] of sectioned) {
+    const asDocs = sections.map(([section, text]) => ({ id: (name === "CK-12" ? section : `${name} ${section}`).slice(0, 60), register: "written" as const, auto: false, text }));
+    for (const h of sampleTermContexts(asDocs, wording, n)) console.log(`      参 ${h.source.padEnd(40)} ${h.snippet}`);
   }
 }
 
@@ -363,6 +380,7 @@ function main() {
     return;
   }
   const count = literal ? countPhrase : countTerm;
+  let refsForContexts: ReturnType<typeof loadReferences> | undefined;
   for (const phrase of phrases) {
     if (phrase.startsWith("#")) {
       console.log(phrase);
@@ -389,7 +407,7 @@ function main() {
     console.log(
       `  ${phrase.padEnd(46)} S ${String(spoken).padStart(5)}  W ${String(written).padStart(5)}   ${lead.padEnd(30)} ${detail}`,
     );
-    if (ctxN) printContexts(docs, phrase, ctxN);
+    if (ctxN) printContexts(docs, phrase, ctxN, (refsForContexts ??= loadReferences()));
   }
 }
 

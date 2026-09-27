@@ -6,6 +6,13 @@
  *   pnpm corpus:count                 corpus/ -> corpus/counts.json
  *   pnpm corpus:count -- --contexts   also writes corpus/contexts.txt for review
  *   pnpm corpus:count -- --no-dedupe  counts duplicates too (to measure what dedupe removes)
+ *   pnpm corpus:count -- --ids terms/endpoint,phrases/x
+ *                                     recounts only those entries and puts them into the
+ *                                     existing corpus/counts.json (the others stay as they
+ *                                     were counted; each recounted entry carries its own
+ *                                     `counted` date). For the recounts of an audit batch
+ *                                     after a candidate or a TERM_FORMS form changed
+ *                                     (Phase 5 監査 6 の決定 10, 監査 5 の H-10)
  *
  * Duplicates are removed first (lib.ts dedupe): a file that is another copy
  * of an earlier one is dropped, and a long sentence seen before is removed.
@@ -57,6 +64,11 @@ import { loadReferences, wikipediaNames } from "./references.js";
 const CORPUS = path.join(ROOT, "corpus");
 const WITH_CONTEXTS = process.argv.includes("--contexts");
 const DEDUPE = !process.argv.includes("--no-dedupe");
+/** --ids collection/id,…: recount only these entries into the existing counts.json. */
+const IDS = (() => {
+  const i = process.argv.indexOf("--ids");
+  return i >= 0 ? new Set((process.argv[i + 1] ?? "").split(",").filter(Boolean)) : null;
+})();
 const COUNTED: Collection[] = ["terms", "symbols", "phrases"];
 
 export type { BySource };
@@ -74,6 +86,8 @@ export interface EntryCounts {
   group?: PhraseGroup;
   /** terms: what the CEDs, OpenStax, IM, CK-12, Nicholson, Levin and Wikipedia call it, for the ③ fallback (lib.ts settleUndecided); symbols: how those references (not Wikipedia) read it (settleSymbolReading). */
   reference?: ReferenceHits;
+  /** Set when the entry was recounted alone (--ids) after the file's `counted` date. */
+  counted?: string;
 }
 
 export interface CountsFile {
@@ -188,10 +202,16 @@ function main() {
     for (const r of balance(phraseDocs(phraseCorpus, group)).rows) phraseSources[group][r.source] = r.words;
   }
 
+  if (IDS) {
+    const known = new Set(COUNTED.flatMap((c) => all[c].map((e) => `${c}/${e.data.id}`)));
+    const unknown = [...IDS].filter((k) => !known.has(k));
+    if (unknown.length) throw new Error(`--ids: no such entry ${unknown.join(", ")} (collection/id; terms, symbols and phrases are counted)`);
+  }
   for (const collection of COUNTED) {
     // MICASE is for phrases only (lib.ts forCollection).
     const counted = forCollection(docs, collection);
     for (const { data } of all[collection]) {
+      if (IDS && !IDS.has(`${collection}/${data.id}`)) continue;
       const record = data as unknown as Record<string, unknown>;
       const candidates = candidatesOf(collection, record);
       const group = collection === "phrases" ? phraseGroup(data.id, record.situation as string) : undefined;
@@ -225,25 +245,45 @@ function main() {
         autoOnly: t.auto && !t.human,
         ...(group ? { group } : {}),
         ...(referred ? { reference } : {}),
+        ...(IDS ? { counted: localDate() } : {}),
       });
     }
   }
 
-  const out: CountsFile = {
-    counted: localDate(),
-    sources: words,
-    ...(Object.keys(restricted).length ? { restricted } : {}),
-    phraseSources,
-    ...(removed ? { dedupe: removed } : {}),
-    entries,
-  };
-  fs.mkdirSync(CORPUS, { recursive: true });
-  fs.writeFileSync(path.join(CORPUS, "counts.json"), JSON.stringify(out, null, 2) + "\n", "utf8");
+  const countsPath = path.join(CORPUS, "counts.json");
+  if (IDS) {
+    // Only the named entries were counted: put them into the existing file, in its order.
+    if (!fs.existsSync(countsPath)) throw new Error("--ids: corpus/counts.json is missing - run `pnpm corpus:count` first");
+    const old = JSON.parse(fs.readFileSync(countsPath, "utf8")) as CountsFile;
+    const fresh = new Map(entries.map((e) => [`${e.collection}/${e.id}`, e]));
+    const merged = old.entries.filter((e) => !IDS.has(`${e.collection}/${e.id}`));
+    // An entry with no hit at all is left out, as a full count leaves it out.
+    for (const key of IDS) if (fresh.has(key)) merged.push(fresh.get(key)!);
+    const order = new Map(COUNTED.flatMap((c) => all[c].map((e, i) => [`${c}/${e.data.id}`, COUNTED.indexOf(c) * 1e6 + i] as const)));
+    merged.sort((a, b) => (order.get(`${a.collection}/${a.id}`) ?? 0) - (order.get(`${b.collection}/${b.id}`) ?? 0));
+    fs.writeFileSync(countsPath, JSON.stringify({ ...old, entries: merged }, null, 2) + "\n", "utf8");
+    console.log(`\nrecounted ${IDS.size} entr${IDS.size === 1 ? "y" : "ies"} (${entries.length} with a hit) into corpus/counts.json; the others stay as counted on ${old.counted}`);
+    for (const e of entries) {
+      const sum = (by: BySource) => Object.values(by).reduce((n, s) => n + Object.values(s).reduce((a, b) => a + b, 0), 0);
+      console.log(`  ${e.collection}/${e.id}: spoken ${sum(e.spoken)}, written ${sum(e.written)}`);
+    }
+  } else {
+    const out: CountsFile = {
+      counted: localDate(),
+      sources: words,
+      ...(Object.keys(restricted).length ? { restricted } : {}),
+      phraseSources,
+      ...(removed ? { dedupe: removed } : {}),
+      entries,
+    };
+    fs.mkdirSync(CORPUS, { recursive: true });
+    fs.writeFileSync(countsPath, JSON.stringify(out, null, 2) + "\n", "utf8");
 
-  const merged = entries.reduce((n, e) => n + e.merges.length, 0);
-  console.log(`\ncounted ${entries.length} entr${entries.length === 1 ? "y" : "ies"} with at least one hit (corpus or reference)`);
-  console.log(`  ${merged} same-wording merge(s) folded into headwords`);
-  console.log("  -> corpus/counts.json");
+    const merged = entries.reduce((n, e) => n + e.merges.length, 0);
+    console.log(`\ncounted ${entries.length} entr${entries.length === 1 ? "y" : "ies"} with at least one hit (corpus or reference)`);
+    console.log(`  ${merged} same-wording merge(s) folded into headwords`);
+    console.log("  -> corpus/counts.json");
+  }
 
   if (WITH_CONTEXTS) {
     fs.writeFileSync(

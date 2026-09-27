@@ -270,6 +270,24 @@ function describeSettled(s: Settled): string {
   return "判断不能";
 }
 
+/**
+ * The register of a ① headword that records none (Phase 5 監査 6 の決定 2): the
+ * registers where en.term is the ① head, and where it is one of the heads of a ②.
+ * null when the entry records a register, or en.term is ① in neither register.
+ */
+function headRegister(record: Record<string, unknown>, spoken: Verdict | null, written: Verdict | null): Register | "both" | null {
+  const en = record.en as { term: string; register?: string } | undefined;
+  if (!en || en.register) return null;
+  const as = countedAs("terms", record.id as string, en.term);
+  const isHead = (h: string) => sameWording(h, as) || sameWording(h, en.term);
+  const single = (v: Verdict | null) => v !== null && v.kind === "single" && isHead(v.head);
+  if (!single(spoken) && !single(written)) return null;
+  const used = (v: Verdict | null) => single(v) || (v !== null && v.kind === "both" && v.heads.some(isHead));
+  const sp = used(spoken);
+  const wr = used(written);
+  return sp && wr ? "both" : sp ? "spoken" : "written";
+}
+
 function main() {
   const countsPath = path.join(CORPUS, "counts.json");
   if (!fs.existsSync(countsPath)) {
@@ -491,6 +509,17 @@ function main() {
       }
     }
 
+    // A ① headword with no en.register (Phase 5 監査 6 の決定 2, 監査 5 の H-2): the register
+    // is written from the verdicts - both when the headword is ① in both registers, else the
+    // register where it is ①. A register where it is one of a ② is also its register (the
+    // ② lists it there), so ① in one and ② in the other is both (DECISIONS 2026-09-25「① は both」).
+    const writeBack = WRITE && inScope(key);
+    const register = c.collection === "terms" && !human ? headRegister(record, spoken, written) : null;
+    if (register) {
+      if (writeBack) (record.en as { register?: string }).register = register;
+      else todo.push(`en.register を ${register} にする（見出しが ①: ${describe(spoken)} ／ ${describe(written)}）`);
+    }
+
     // Contradiction: the corpus settled on a wording the entry does not file
     // at that register. Merging already folded inflection and ellipsis away,
     // so what is left is a real disagreement.
@@ -510,7 +539,6 @@ function main() {
     }
     const mismatch = problems.length ? problems.join(" ／ ") : null;
 
-    const writeBack = WRITE && inScope(key);
     lines.push({
       key,
       wroteBack: writeBack,
@@ -536,7 +564,8 @@ function main() {
       ...(Object.keys(c.spoken).length ? { spoken: flatten(c.spoken) } : {}),
       ...(Object.keys(c.written).length ? { written: flatten(c.written) } : {}),
       sources: c.sources,
-      counted: file.counted,
+      // an entry recounted alone (corpus:count --ids) carries its own date
+      counted: c.counted ?? file.counted,
     };
 
     // corpus-human-settled is the human's, written by hand: kept as it is.

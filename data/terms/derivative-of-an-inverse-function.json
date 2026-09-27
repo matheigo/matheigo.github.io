@@ -72,7 +72,7 @@
       "note": "Topic 3.3（derivative of an inverse function）"
     }
   ],
-  "confidence": "verified",
+  "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-24",
     "audit": "2026-09-26",
@@ -86,6 +86,7 @@
     },
     "written": {
       "derivative of the inverse": 5,
+      "inverse function theorem": 16,
       "derivative of an inverse function": 2
     },
     "sources": [
@@ -97,6 +98,13 @@
       "yt:organicchem",
       "yt:patrickjmt"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-09-27"
+  },
+  "flags": [
+    {
+      "code": "corpus-register-mismatch",
+      "note": "コーパスの結論がエントリの register と食い違う（書: inverse function theorem）。人間レビューへ。",
+      "raised": "2026-09-27"
+    }
+  ]
 }

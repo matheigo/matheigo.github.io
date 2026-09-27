@@ -24,9 +24,7 @@
     "jp": [
       "大学"
     ],
-    "us": [
-      "Discrete Math"
-    ]
+    "us": []
   },
   "definition_ja": "正の整数からなる空でない集合には、必ず最小の要素があるという性質。数学的帰納法と同値で、「最小の反例」をとる背理法の証明に使う。",
   "definition_en": "The principle that every nonempty set of positive integers has a smallest element. It is equivalent to induction and is used in proofs that pick a smallest counterexample.",
@@ -47,8 +45,7 @@
   "collocations": [],
   "pitfalls": [
     "整数全体や正の実数では成り立たない。負の整数全体にも、区間 (0, 1) にも最小の要素は無い。",
-    "英語の natural numbers が 0 を含むかは本によるが、整列原理はどちらでも成り立つ。",
-    "用例コーパスでは話・書ともほとんど出てこない（MIT だけ）。CED・OpenStax・IM・CK-12 では 0 件。見出しは英語版 Wikipedia の記事名。"
+    "英語の natural numbers が 0 を含むかは本によるが、整列原理はどちらでも成り立つ。"
   ],
   "related": [
     "proof-by-induction",
@@ -72,7 +69,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "well-ordering principle": 1

@@ -12,7 +12,10 @@ so that points ⑤ and ⑦ of the audit can be read next to the text. Prints to 
 import csv
 import json
 import os
+import re
 import sys
+
+from wikipedia_heads import heads as wikipedia_heads
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CHECKS = os.path.join(ROOT, "audits", "checks")
@@ -114,6 +117,15 @@ def show(collection, id_, copy, jp, us, ref=None):
         p(f"  !JP {c['field']}: {c['sentence']}")
     for k, c in us.get((collection, id_), []):
         p(f"  !US({'参照なし' if k == 'noReference' else 'エントリに参照'}) {c['field']}: {c['sentence']}")
+    # the headword is an English Wikipedia article's name: read the article (audit 6, decision 5)
+    w = WIKI.get((collection, id_))
+    if w:
+        p(f"  !WIKI 見出しは記事名「{w[1]}」（{w[2]}）。記事を読んで同じ概念かを確かめる: python3 scripts/audit/enwiki.py \"{w[1]}\" \"{d['en']['term']}\"")
+    # a ③ headword a reference settled: read the passages it rests on (audit 6, decision 9)
+    for f in d.get("flags", []):
+        m = re.search(r"見出しは (AP Calculus の CED|AP Statistics の CED|CED|OpenStax|IM|CK-12|Nicholson|Levin) の呼び方 (.+?)（", f["note"]) if f["code"] == "corpus-reference-fallback" else None
+        if m:
+            p(f"  !③REF 見出しは {m.group(1)} の呼び方。根拠の文脈を読む: pnpm corpus:probe -- --contexts \"{m.group(2).split(' | ')[0].lstrip('!')}\"")
     for r in (ref or {}).get((collection, id_), []):
         refs = "、".join(f"{l} {n}" for l, n in r["refs"].items())
         kind = "REF（関連）" if r["judged"].get("related") else "REF"
@@ -121,7 +133,11 @@ def show(collection, id_, copy, jp, us, ref=None):
         p(f"  !{kind} {r['name']}（{refs}）: {r['judged'].get('note', '')}  ※名前の一致は手がかり。参照のその箇所を読んで中身が同じかを確かめる")
 
 
+WIKI = {}
+
+
 def main():
+    WIKI.update(wikipedia_heads())
     copy, jp, us, ref = checks()
     if sys.argv[1] == "--ids":
         ids = [x.split("/", 1) for x in sys.argv[2].split(",")]

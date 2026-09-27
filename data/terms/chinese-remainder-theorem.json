@@ -22,9 +22,7 @@
     "jp": [
       "大学"
     ],
-    "us": [
-      "Discrete Math"
-    ]
+    "us": []
   },
   "definition_ja": "法 m₁, …, mₖ がどの 2 つも互いに素なとき、連立合同式 x ≡ aᵢ (mod mᵢ) は必ず解をもち、その解は m₁m₂⋯mₖ を法としてただ 1 つに定まるという定理。",
   "definition_en": "If the moduli m₁, …, mₖ are pairwise relatively prime, then the system x ≡ aᵢ (mod mᵢ) always has a solution. The solution is unique modulo the product m₁m₂⋯mₖ.",
@@ -45,8 +43,7 @@
   "collocations": [],
   "pitfalls": [
     "法が互いに素でないと解が無いことがある。x ≡ 0 (mod 2) と x ≡ 1 (mod 4) を同時に満たす x は無い。",
-    "日本の数A では「3 で割ると 2 余り、5 で割ると 3 余る整数」のような問題として、定理の名前を出さずに扱うことがある。",
-    "用例コーパスにも CED・OpenStax・IM・CK-12 にも出てこない。見出しは英語版 Wikipedia の記事名。"
+    "日本の数A では「3 で割ると 2 余り、5 で割ると 3 余る整数」のような問題として、定理の名前を出さずに扱うことがある。"
   ],
   "related": [
     "remainder",
@@ -69,7 +66,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
     "counted": "2026-09-25"

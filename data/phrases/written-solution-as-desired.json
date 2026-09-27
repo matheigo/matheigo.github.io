@@ -1,7 +1,7 @@
 {
   "id": "written-solution-as-desired",
   "situation": "written-solution",
-  "intent": "証明の最後に「以上で示された」と書く",
+  "intent": "証明の最後に「以上で示された」「（証明終わり）」と書く",
   "en": "This completes the proof.",
   "ja": "以上で示された。",
   "register": "written",
@@ -31,20 +31,59 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「証明 (数学)」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%A8%BC%E6%98%8E%20%28%E6%95%B0%E5%AD%A6%29",
+      "note": "証明の終わりの書き方: Q.E.D.、証明終わり、[証明終]"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "解答の末尾の QED.（2 件）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "2.14 Bisect It: This completes the proof.（見出しの根拠）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
-      "completes the proof": 13,
-      "as desired": 5,
+      "this completes the proof !that !of | which completes the proof !that !of | completes the proof. | completes the proof, | completing the proof !that !of": 6,
+      "!small !large !close !accurate !accurately as desired. | !small !large !close !accurate !accurately as desired,": 5,
       "as required": 4
     },
     "sources": [
       "mit-notes",
       "openstax-calculus"
     ],
-    "counted": "2026-09-26"
-  }
+    "counted": "2026-09-27"
+  },
+  "notes": [
+    "日本語版 Wikipedia「証明 (数学)」は、証明の終わりに「Q.E.D.」「証明終わり」「[証明終]」などを書くとする。英語では最後の文で締めるか（This completes the proof. ／ …, as desired.）、∎ や □ を置く（記号のエントリ qed-end-of-proof）。",
+    "「証明終わり」を直訳して proof end などと書かない。",
+    "IM Geometry（2.14 Bisect It）は This completes the proof. と締め、OpenStax Calculus は …, as desired. と締めて □ を置く。",
+    "Q.E.D. はラテン語 quod erat demonstrandum（示すべきことが示された）の略。Levin では解答の末尾に出る程度。"
+  ],
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（書き言葉のコーパスと参照で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 this completes the proof !that !of | which completes the proof !that !of | completes the proof. | completes the proof, | completing the proof !that !of（6 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-27"
+    }
+  ]
 }

@@ -26,9 +26,7 @@
     "jp": [
       "大学"
     ],
-    "us": [
-      "Discrete Math"
-    ]
+    "us": []
   },
   "definition_ja": "整数 a と法 n について、ax ≡ 1 (mod n) を満たす整数 x のこと。a と n が互いに素のときに限って存在し、n を法としてただ 1 つに定まる。",
   "definition_en": "An integer x with ax ≡ 1 (mod n), for a given integer a and modulus n. It exists exactly when a and n are relatively prime, and it is unique modulo n.",
@@ -49,8 +47,7 @@
   "collocations": [],
   "pitfalls": [
     "「逆数」とあっても分数 1/a ではなく整数である。英語でも multiplicative inverse だけでは実数の逆数 1/a と区別がつかないので、modulo n を付けて言う。",
-    "a と n が互いに素でなければ存在しない。たとえば 4 を法とする 2 の逆元は無い（2x は常に偶数）。",
-    "用例コーパスには見出しの modular multiplicative inverse と modular inverse は出てこない。inverse modulo と multiplicative inverse modulo が話し言葉・書き言葉とも少しあるだけ（すべて MIT）。見出しは英語版 Wikipedia の記事名。"
+    "a と n が互いに素でなければ存在しない。たとえば 4 を法とする 2 の逆元は無い（2x は常に偶数）。"
   ],
   "related": [
     "bezouts-identity",
@@ -77,27 +74,27 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "inverse modulo": 2,
+      "inverse modulo": 1,
       "multiplicative inverse modulo": 1
     },
     "written": {
-      "inverse modulo": 2,
+      "inverse modulo": 1,
       "multiplicative inverse modulo": 1
     },
     "sources": [
       "mit-6.042",
       "mit-notes"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは Wikipedia の記事名 modular multiplicative inverse（英語版「Modular multiplicative inverse」、ja の langlink 先）。register は主張しない。",
-      "raised": "2026-09-25"
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは Wikipedia の記事名 modular multiplicative inverse（英語版「Modular multiplicative inverse」、ja の langlink 先）。register は主張しない。",
+      "raised": "2026-09-27"
     }
   ]
 }

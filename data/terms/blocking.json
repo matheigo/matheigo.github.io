@@ -50,7 +50,6 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは block design（話し言葉だけで、すべて Khan Academy）の形で数えた。語のままの blocking は積み木や行列のブロックの block と同じ語になる。",
     "AP Statistics の CED は topic 1.13 で blocking を扱い、randomized block design の名前も出す。"
   ],
   "related": [
@@ -81,18 +80,19 @@
   "updated": "2026-09-26",
   "evidence": {
     "spoken": {
+      "block design | blocking variable": 9,
       "block design": 9
     },
     "sources": [
       "khan-ap-stats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 9 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは AP Statistics の CED の呼び方 block design（topic 1.13）。register は主張しない。",
-      "raised": "2026-09-25"
+      "note": "コーパスで決まらない（話: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満 ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは AP Statistics の CED の呼び方 block design | blocking variable（topic 1.13）。register は主張しない。",
+      "raised": "2026-09-27"
     }
   ]
 }

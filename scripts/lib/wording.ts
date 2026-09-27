@@ -30,6 +30,29 @@ export function unverifiableSentences(text: string): string[] {
   return sentences(text).filter((s) => UNVERIFIABLE.test(s) || ((OFTEN.test(s) || AT_LARGE.test(s)) && !NAMES_A_SOURCE.test(s)));
 }
 
+/**
+ * A learner's note that explains how the example corpus was counted or how the headword was
+ * settled (Phase 5 監査 6 の決定 8, 監査 5 の H-8): "用例コーパスでは … の形で数えた", "…の件数には
+ * …も含まれる", "話し言葉では判定できなかった", "見出しは … による". That is what the flags and
+ * `evidence` record; pitfalls (and the notes of symbols and phrases, which play their part) keep
+ * only what a learner needs. A sentence that names the corpus and one of these words.
+ */
+export const JUDGEMENT = /判定|見出しは|見出しに|数えた|数える|数えると|数えて|件数|併記|首位|決まらな|判断でき|規則/;
+/** How the headword was settled, with or without the corpus: "CED の呼び方を見出しにした", "見出しは Levin の呼び方による". */
+export const HEADWORD_BASIS = /見出しにした|見出しとした|見出しは[^。]*?(?:による|で決めた|に合わせた|の呼び方|の記事名)/;
+
+/** The sentences of a learner's note that explain the counting or the verdict. */
+export function judgementSentences(text: string): string[] {
+  return sentences(text).filter((s) => (s.includes("コーパス") && JUDGEMENT.test(s)) || HEADWORD_BASIS.test(s));
+}
+
+/** The learner's notes of each collection, where a judgement explanation does not belong. */
+export const NOTE_FIELDS: Record<string, RegExp> = {
+  terms: /^pitfalls\[\d+\]$/,
+  symbols: /^notes\[\d+\]$/,
+  phrases: /^notes\[\d+\]$/,
+};
+
 /** The claim fields of each collection (the notes; examples and phrases' sentences are not claims). */
 export const CLAIM_FIELDS: Record<string, RegExp> = {
   terms: /^(mapping_note|pitfalls\[\d+\]|en\.variants\[\d+\]\.note|definition_ja|definition_en)$/,

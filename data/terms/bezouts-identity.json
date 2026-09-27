@@ -22,9 +22,7 @@
     "jp": [
       "数A"
     ],
-    "us": [
-      "Discrete Math"
-    ]
+    "us": []
   },
   "definition_ja": "少なくとも一方が 0 でない整数 a, b に対し、ax + by = gcd(a, b) を満たす整数 x, y が存在するという定理。特に a, b が互いに素なら、ax + by = 1 は整数解をもつ。",
   "definition_en": "For integers a and b, not both zero, there exist integers x and y with ax + by = gcd(a, b). In particular, if a and b are relatively prime, then ax + by = 1 has an integer solution.",
@@ -45,8 +43,7 @@
   "collocations": [],
   "pitfalls": [
     "日本の数A では、一次不定方程式の単元で「a, b が互いに素なら ax + by = 1 は整数解をもつ」という形で出てくる。",
-    "Bézout's theorem は代数曲線の交点の個数についての別の定理。identity と theorem を取り違えない。",
-    "用例コーパスにも参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）にも出てこないので、見出しは英語版 Wikipedia の記事名による。"
+    "Bézout's theorem は代数曲線の交点の個数についての別の定理。identity と theorem を取り違えない。"
   ],
   "related": [
     "linear-diophantine-equation",
@@ -68,7 +65,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
     "counted": "2026-09-25"

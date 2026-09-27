@@ -44,6 +44,7 @@ import {
   levelReferenceOf,
   levelReferences,
   levelTiersOf,
+  longerCandidates,
   matcherFor,
   weigh,
   wikipediaHead,
@@ -856,10 +857,11 @@ describe("cedSections / referenceHits", () => {
   it("counts candidates per CED section, in the OpenStax body and in section titles", () => {
     const sections = cedSections(ced).map(([n, t]) => [n, normalize(t)] as [string, string]);
     const r = referenceHits(["limit", "one-sided limit"], sections, ["the limit of f", "limits"], ["One-Sided Limits"]);
-    expect(r.ced.limit).toEqual({ unit1: 1, "1.1": 1, "1.2": 1, exam: 1 });
+    // "limit" inside "one-sided limit" is that candidate's hit, not a second one of "limit" (Phase 5 監査 6 の決定 4)
+    expect(r.ced.limit).toEqual({ unit1: 1, "1.1": 1, exam: 1 });
     expect(r.ced["one-sided limit"]).toEqual({ "1.2": 1 });
     expect(r.openstax).toEqual({ limit: 2 });
-    expect(r.openstaxTitles).toEqual({ limit: ["One-Sided Limits"], "one-sided limit": ["One-Sided Limits"] });
+    expect(r.openstaxTitles).toEqual({ "one-sided limit": ["One-Sided Limits"] });
   });
 });
 
@@ -1368,5 +1370,55 @@ describe("containsWording and the candidates (a collocation on the headword is n
       collocations: [{ en: "use the quadratic formula" }, { en: "the discriminant is negative" }],
     });
     expect(got).toEqual(["quadratic formula", "the discriminant is negative"]);
+  });
+});
+
+describe("a candidate inside a longer candidate counts only outside it (Phase 5 監査 6 の決定 4)", () => {
+  const doc = (id: string, text: string, register: "spoken" | "written" = "written") => ({ id, register, auto: false, text: normalize(text) });
+
+  it("pairs each candidate with the longer candidates that contain it, form by form and without the !w marks", () => {
+    expect(longerCandidates(["logical connective", "connective"])).toEqual(new Map([["connective", ["logical connective"]]]));
+    expect(longerCandidates(["derivative", "derivative function", "f prime"])).toEqual(new Map([["derivative", ["derivative function"]]]));
+    // a form's alternatives and its marks: "!logical connective" is the wording "connective"
+    expect(longerCandidates(["logical connective", "!logical connective"]).get("!logical connective")).toEqual(["logical connective"]);
+    // same wording (inflection, argument words) is folded, not nested
+    expect(longerCandidates(["Riemann sum", "Riemann sums"]).size).toBe(0);
+    expect(longerCandidates(["f prime", "f prime of x"]).size).toBe(0);
+    // a blank: "write … in descending order" contains "in descending order"
+    expect(longerCandidates(["write … in descending order", "in descending order"]).get("in descending order")).toEqual(["write … in descending order"]);
+  });
+
+  it("countEntry counts the shorter wording only where the longer one does not cover it", () => {
+    const t = countEntry(
+      [doc("levin", "a logical connective joins statements. the main connective of the formula is and. every logical connective has a truth table")],
+      "terms",
+      ["logical connective", "connective"],
+      "logical connective",
+    );
+    expect(t.written["logical connective"]).toEqual({ levin: 2 });
+    expect(t.written["connective"]).toEqual({ levin: 1 });
+  });
+
+  it("does the same with a blank and inflection", () => {
+    const t = countEntry(
+      [doc("openstax-intalg", "write the polynomial in descending order. the terms are in descending order. written in descending order")],
+      "terms",
+      ["write … in descending order", "in descending order"],
+      "write … in descending order",
+    );
+    expect(t.written["write … in descending order"]).toEqual({ "openstax-intalg": 1 });
+    // "written in descending order" is the verb without a blank: not the blank form, so the shorter wording keeps it
+    expect(t.written["in descending order"]).toEqual({ "openstax-intalg": 2 });
+  });
+
+  it("leaves symbol readings alone (their !w marks do this)", () => {
+    const t = countEntry([doc("mit-18.01", "the cosine of x and cosine of y", "spoken")], "symbols", ["the cosine of *", "cosine of *"], "the cosine of *");
+    expect(t.spoken["cosine of *"]).toEqual({ "mit-18.01": 2 });
+  });
+
+  it("referenceHits counts the shorter wording only outside the longer one too", () => {
+    const text = normalize("A logical connective joins statements. The main connective of the formula is and.");
+    const r = referenceHits(["logical connective", "connective"], [], [], [], { levin: [["Levin 1.1", text]] });
+    expect(r.levin).toEqual({ "logical connective": { "Levin 1.1": 1 }, connective: { "Levin 1.1": 1 } });
   });
 });

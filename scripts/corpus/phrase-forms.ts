@@ -677,9 +677,12 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "2x = 6, so x = 3.": "",
     "2x = 6 ⟹ x = 3": "",
   },
+  // The closing of a proof only (Phase 5 監査 5 バッチ 16, moved here with terms/end-of-proof by 監査 6 の決定 11):
+  // "as desired" closes OpenStax Calculus's proofs (", as desired." □), not "as small as desired"; "completes the proof"
+  // is the closing sentence, not "Complete the proof that …" (an exercise)
   "written-solution-as-desired": {
-    "This completes the proof.": "completes the proof",
-    "Hence a + b is even, as desired.": "as desired",
+    "This completes the proof.": "this completes the proof !that !of | which completes the proof !that !of | completes the proof. | completes the proof, | completing the proof !that !of",
+    "Hence a + b is even, as desired.": "!small !large !close !accurate !accurately as desired. | !small !large !close !accurate !accurately as desired,",
     "Hence a + b is even, as required.": "as required",
     "Hence a + b is even, which is what we wanted to show.": "what we wanted to show | what we wanted to prove | what we needed to show",
     "∎": "",
