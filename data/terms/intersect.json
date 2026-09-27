@@ -14,8 +14,8 @@
     "register": "both"
   },
   "pos": "verb",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "英語の intersect は共有点をもつことで、接する場合も含む: IM Geometry と CK-12 Geometry は接線を円と exactly one point で intersect する直線と定義し、OpenStax Algebra and Trigonometry も接線が放物線と intersects … at exactly one point と書く。共通テストの問題文は「2 点で交わる」「接する」「共有点をもたない」を分けて言う（令和 3 年度 第 1 日程 数学II）。日本語の「交わる」だけを言うなら intersect at two points、「接する」は is tangent to。",
   "domains": [
     "geometry"
   ],
@@ -32,7 +32,7 @@
       "Integrated Math 1"
     ]
   },
-  "definition_ja": "2 つの図形（直線・曲線）が共有点をもつ。",
+  "definition_ja": "2 つの図形（直線・曲線）が共有点をもつ。英語では、接する場合（共有点が 1 つ）も含めて言う。",
   "definition_en": "Of two lines or curves: to have at least one point in common.",
   "latex": null,
   "spoken_en": null,
@@ -55,8 +55,8 @@
     }
   ],
   "pitfalls": [
-    "「共有点をもつ」も intersect で言える。「接する」は is tangent to と言う。",
-    "話し言葉では cross（the line crosses the x-axis）や meet も使う（件数は他の意味を含むので数えていない）。"
+    "「共有点をもつ」も intersect で言える（接する場合も intersect に含まれる。mapping_note）。「接する」とはっきり言うなら is tangent to。",
+    "cross（the line crosses the x-axis）や meet も話し言葉・書き言葉とも使う（件数は他の意味を含むので数えていない）。"
   ],
   "related": [
     "tangent-line",
@@ -70,6 +70,24 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 7.4 Quadrilaterals in Circles: 接線は円と exactly one point で intersect する直線"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.2 Identify Circle Components: tangent は円と exactly one point で intersect する直線"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和3年度 大学入学共通テスト 第1日程 数学Ⅱ（問題）",
+      "url": "https://web.archive.org/web/20220601/https://www.dnc.ac.jp/albums/abm.php?d=88&f=abm00001261.pdf&n=R3_%E6%95%B0%E5%AD%A6%E2%85%A1%EF%BC%88%EF%BC%91%E6%9C%8816%E6%97%A5%E3%83%BB17%E6%97%A5%EF%BC%89%E3%81%AE%E5%95%8F%E9%A1%8C.pdf",
+      "note": "第 4 問: 2 点で交わる・接する・共有点をもたない を分ける選択肢"
     }
   ],
   "confidence": "verified",
