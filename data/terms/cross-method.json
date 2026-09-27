@@ -4,27 +4,23 @@
     "term": "たすき掛け",
     "reading": "たすきがけ",
     "alt": [
-      "ac 法",
-      "ボックス法"
+      "たすきがけ"
     ]
   },
   "en": {
     "term": "cross method",
-    "alt": [
-      "ac method",
-      "box method"
-    ],
+    "alt": [],
     "uk": null
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。係数を斜めに掛けて組み合わせを探すのは日本の方法で、米国では ac method（ac を 2 つに分けて factoring by grouping、エントリ factoring-by-grouping）、box method、guess and check などと呼ばれる方法で ax² + bx + c を因数分解する。見出しの cross method も用例コーパスと参照には出てこない。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。日本語版 Wikipedia「因数分解」には節「たすきがけ」がある。OpenStax Elementary Algebra 7.3 は、因数の組を試す trial and error と、ac を 2 つに分けて factoring by grouping（エントリ factoring-by-grouping）する “ac” method（grouping method とも）で ax² + bx + c を因数分解し、Intermediate Algebra 6.2 も AC method を扱う。IM Algebra 1 7.10 は (3x + □)(2x + □) の候補を guessing and checking で探す。見出しの cross method も用例コーパスと参照には出てこない。",
   "domains": [
     "algebra"
   ],
   "level": {
     "jp": [
-      "中3"
+      "数I"
     ],
     "us": [
       "Algebra 1",
@@ -32,13 +28,13 @@
     ]
   },
   "definition_ja": "ax² + bx + c（a ≠ 1）を因数分解するとき、a と c をそれぞれ 2 つの数の積に分けて並べ、斜めに掛けた積の和が b になる組み合わせを探す方法。",
-  "definition_en": "A Japanese method for factoring ax² + bx + c when a ≠ 1: list factor pairs of a and of c, multiply them diagonally, and look for the arrangement whose two diagonal products add up to b.",
+  "definition_en": "A method for factoring ax² + bx + c when a ≠ 1: list factor pairs of a and of c, multiply them diagonally, and look for the arrangement whose two diagonal products add up to b.",
   "latex": "(px + q)(rx + s) = prx^2 + (ps + qr)x + qs",
   "spoken_en": "the quantity p x plus q times the quantity r x plus s equals p r x squared plus the quantity p s plus q r times x, plus q s",
   "examples": [
     {
       "en": "For 3x² + 7x + 2, the ac method says multiply 3 times 2 to get 6, then find two numbers that multiply to 6 and add to 7.",
-      "ja": "3x² + 7x + 2 なら、ac 法では 3 × 2 = 6 を計算して、掛けて 6、足して 7 になる 2 つの数を探す。",
+      "ja": "3x² + 7x + 2 なら、ac method では 3 × 2 = 6 を計算して、掛けて 6、足して 7 になる 2 つの数を探す。",
       "register": "spoken"
     },
     {
@@ -63,6 +59,32 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「因数分解」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%A0%E6%95%B0%E5%88%86%E8%A7%A3",
+      "note": "節「たすきがけ」"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Algebra 1 7.10: guessing and checking"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 数と式: (ax + b)(cx + d) の公式"
     }
   ],
   "confidence": "likely",

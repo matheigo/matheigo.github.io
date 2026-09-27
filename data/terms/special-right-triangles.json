@@ -12,8 +12,8 @@
     "register": "spoken"
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "見出しの「特別な直角三角形」は学習指導要領解説に無い、本プロジェクトの訳語。CK-12 Geometry 4.41 Special Right Triangles and Ratios は special right triangles を 30-60-90・45-45-90・Pythagorean triple の 3 種類とし（4.43 は「2 つの special right triangles」と書く）、英語版 Wikipedia「Special right triangle」も角による型（angle-based）と辺による型（side-based、ピタゴラス数）に分ける。この見出しは角の型の 2 種類を指す。日本語版 Wikipedia「三角定規」は、この 2 種類を直角二等辺三角形と半正三角形の 2 枚 1 組の三角定規として書く。",
   "domains": [
     "geometry"
   ],
@@ -44,8 +44,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語は複数形 special right triangles で 2 種類をまとめて言うことが多い。1 つだけを指すときは角の大きさで 45-45-90 triangle、30-60-90 triangle と呼ぶ（エントリ 45-45-90-triangle、30-60-90-triangle）。",
-    "1 : √3 : 2 は短い辺からの順。英語では x, x√3, 2x と書く。√3 がつくのは長い方の leg で、斜辺は 2x。",
+    "CK-12 Geometry は複数形 special right triangles で 2 種類をまとめて扱う（4.41 Special Right Triangles and Ratios）。1 つだけを指すときは角の大きさで 45-45-90 triangle、30-60-90 triangle と呼ぶ（エントリ 45-45-90-triangle、30-60-90-triangle）。",
+    "1 : √3 : 2 は短い辺からの順。CK-12 Geometry 4.41・4.43 は x, x√3, 2x と書く。√3 がつくのは長い方の leg で、斜辺は 2x。",
     "CK-12 Geometry は Special Right Triangles and Ratios の節で扱う。"
   ],
   "related": [
@@ -60,7 +60,25 @@
       "type": "reference",
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
-      "note": "4.41 Special Right Triangles and Ratios"
+      "note": "4.41 Special Right Triangles and Ratios（3 種類）・4.43 30-60-90 Right Triangles（2 つの special right triangles）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Special_right_triangle",
+      "note": "記事「Special right triangle」（数学カテゴリから 4 段）: angle-based と side-based の節"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "「特別な直角三角形」は 0 件（見出しは本プロジェクトの訳語）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「三角定規」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E5%AE%9A%E8%A6%8F",
+      "note": "直角二等辺三角形と半正三角形の 2 枚 1 組"
     }
   ],
   "confidence": "likely",
@@ -69,7 +87,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "special right triangles": 17
@@ -79,6 +97,6 @@
       "yt:nancypi",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

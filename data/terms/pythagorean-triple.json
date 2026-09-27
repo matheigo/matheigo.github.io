@@ -7,7 +7,9 @@
   },
   "en": {
     "term": "Pythagorean triple",
-    "alt": [],
+    "alt": [
+      "Pythagorean number triple"
+    ],
     "uk": null
   },
   "pos": "noun",
@@ -26,13 +28,13 @@
     ]
   },
   "definition_ja": "a² + b² = c² を満たす 3 つの自然数の組 (a, b, c)。(3, 4, 5)、(5, 12, 13)、(8, 15, 17) など。",
-  "definition_en": "A set of three positive integers a, b, and c with a² + b² = c², such as 3, 4, 5. The three numbers are the side lengths of a right triangle.",
+  "definition_en": "Three positive integers a, b, c satisfying a² + b² = c², such as 3, 4, 5; a right triangle can have these numbers as its side lengths.",
   "latex": "3^2 + 4^2 = 5^2",
   "spoken_en": "three squared plus four squared equals five squared",
   "examples": [
     {
       "en": "3, 4, 5 is a Pythagorean triple, so 6, 8, 10 works too; just double everything.",
-      "ja": "3、4、5 はピタゴラス数だから、6、8、10 も成り立つ。全部 2 倍すればいい。",
+      "ja": "3、4、5 はピタゴラス数だから、6、8、10 もピタゴラス数になる。全部 2 倍すればいい。",
       "register": "spoken"
     },
     {
@@ -72,16 +74,16 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 Pythagorean triple（CK-12 Geometry 4.30 Pythagorean Triples・CK-12 Geometry 4.27 The Pythagorean Theorem・CK-12 Geometry 4.28 Basics of Pythagorean Theorem・計 61 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-26"
     }
   ]
 }

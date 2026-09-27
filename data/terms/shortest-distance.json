@@ -27,13 +27,13 @@
       "Integrated Math 2"
     ]
   },
-  "definition_ja": "2 点を結ぶ道のりのうち、最も短いものの長さ。立体の表面を通るときは、展開図の上で 2 点を結ぶ線分の長さになる。",
-  "definition_en": "The length of the shortest path between two points, or between a point and a figure. Along the surface of a solid, it is the length of the straight segment joining the two points on the net.",
+  "definition_ja": "2 点を結ぶ道のり（または点と図形の間の距離）のうち、最も短いものの長さ。立体の表面を通るときは、適切な展開図の上で 2 点を結ぶ線分の長さになる。",
+  "definition_en": "The length of the shortest path between two points, or between a point and a figure. Along the surface of a solid, it is the length of the straight segment joining the two points on a suitable net.",
   "latex": null,
   "spoken_en": null,
   "examples": [
     {
-      "en": "To get the shortest distance across the box, unfold it into a net and draw a straight line.",
+      "en": "To get the shortest distance along the surface of the box, unfold it into a net and draw a straight line.",
       "ja": "箱の表面を通る最短距離は、展開図に開いてまっすぐな線を引けば分かる。",
       "register": "spoken"
     },
@@ -46,7 +46,7 @@
   "collocations": [],
   "pitfalls": [
     "点と直線の最短距離は、点から直線に下ろした垂線の長さ（エントリ distance-from-a-point-to-a-line）。CK-12 Geometry は点と直線・平行線の間の距離を shortest distance として説明する。",
-    "中 3 の問題では、立体の表面にかけたひもの最短の長さを、展開図の上の線分として三平方の定理で求める（エントリ net）。",
+    "立体の表面にかけたひもの最短の長さは、展開図の上の線分として三平方の定理で求める（エントリ net）。",
     "格子の道順の数を数える「最短経路」とは別の話（エントリ shortest-path）。こちらは道のりの長さ。"
   ],
   "related": [
@@ -61,7 +61,7 @@
       "type": "reference",
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
-      "note": "4.34 Solving Equations Using the Pythagorean Theorem・4.38 Distance Between Parallel Lines"
+      "note": "4.21 Angle Bisectors in Triangles・4.38 Distance Between Parallel Lines（点と直線・平行線の間の距離を shortest distance と説明）"
     }
   ],
   "confidence": "likely",
@@ -70,7 +70,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "shortest distance": 2
@@ -84,13 +84,13 @@
       "openstax-algtrig",
       "openstax-calculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満）。見出しは CK-12 の呼び方 shortest distance（CK-12 Geometry 4.21 Angle Bisectors in Triangles・CK-12 Geometry 4.38 Distance Between Parallel Lines・CK-12 Geometry 4.34 Solving Equations Using the Pythagorean Theorem・計 6 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-26"
     }
   ]
 }

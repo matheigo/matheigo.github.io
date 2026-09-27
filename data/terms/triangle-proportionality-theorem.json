@@ -4,14 +4,12 @@
     "term": "三角形と比の定理",
     "reading": "さんかくけいとひのていり",
     "alt": [
-      "三角形の比例定理"
+      "平行線と線分の比"
     ]
   },
   "en": {
     "term": "triangle proportionality theorem",
-    "alt": [
-      "side splitter theorem"
-    ],
+    "alt": [],
     "uk": null
   },
   "pos": "noun",
@@ -30,7 +28,7 @@
     ]
   },
   "definition_ja": "三角形の 1 辺に平行な直線が他の 2 辺と交わるとき、その 2 辺を同じ比に分けるという定理。逆も成り立つ。",
-  "definition_en": "If a line parallel to one side of a triangle crosses the other two sides, it divides those two sides proportionally. The converse is also true.",
+  "definition_en": "When a line runs parallel to one side of a triangle and meets the other two sides, it splits those two sides in the same ratio. The converse holds as well.",
   "latex": "DE \\parallel BC \\implies \\frac{AD}{DB} = \\frac{AE}{EC}",
   "spoken_en": "If DE is parallel to BC, then AD over DB equals AE over EC.",
   "examples": [
@@ -48,8 +46,9 @@
   "collocations": [],
   "pitfalls": [
     "DE ∥ BC のとき AD : DB = AE : EC だが、DE : BC は AD : DB ではなく AD : AB に等しい。平行な辺の比を部分の比で立てない。",
-    "用例コーパスには triangle proportionality theorem も side splitter theorem も出てこない。IM はこの定理に名前を付けない。",
-    "英語版 Wikipedia はこの仲間の定理を intercept theorem の名で扱う。"
+    "用例コーパスには triangle proportionality theorem が出てこない。IM Geometry 3.5・3.11 Splitting Triangle Sides with Dilation はこの性質を扱うが、定理に名前を付けない。",
+    "英語版 Wikipedia はこの仲間の定理を記事「Intercept theorem」で扱い、冒頭で side splitter theorem・basic proportionality theorem という別名も挙げる。",
+    "中学校学習指導要領解説はこの内容を「平行線と線分の比についての性質」と呼び、「三角形と比の定理」は出てこない（見出しは本プロジェクトの言い方）。"
   ],
   "related": [
     "similar-triangles",
@@ -59,6 +58,24 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Geometry 3.11 Splitting Triangle Sides with Dilation, Part 2: 平行線が 2 辺を同じ比に分けること（定理の名前は無い）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Intercept_theorem",
+      "note": "記事「Intercept theorem」（数学カテゴリから 4 段）: 冒頭で side splitter theorem・basic proportionality theorem とも"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 3 学年 図形: 平行線と線分の比についての性質（「三角形と比の定理」は 0 件）"
     }
   ],
   "confidence": "likely",
@@ -67,10 +84,10 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {

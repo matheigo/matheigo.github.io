@@ -4,7 +4,8 @@
     "term": "最高次の係数",
     "reading": "さいこうじのけいすう",
     "alt": [
-      "主係数"
+      "主係数",
+      "最高次係数"
     ]
   },
   "en": {
@@ -25,6 +26,7 @@
     ],
     "us": [
       "Algebra 1",
+      "Algebra 2",
       "Integrated Math 1",
       "Integrated Math 2"
     ]
@@ -49,7 +51,7 @@
   "pitfalls": [
     "先頭の項の係数とは限らない。1 + 2x − 5x² の最高次の係数は、最後の項の −5。",
     "係数の 1 は書かないので見落としやすい。x² − 4x + 3 の最高次の係数は 1、−x³ + 4x² − 2 では −1。",
-    "二次関数 y = ax² + bx + c のグラフは、最高次の係数 a が正なら上に開き（エントリ opens-upward）、負なら下に開く（エントリ opens-downward）。"
+    "二次関数 y = ax² + bx + c のグラフは、最高次の係数 a が正なら下に凸（opens upward、エントリ opens-upward）、負なら上に凸（opens downward、エントリ opens-downward）。"
   ],
   "related": [
     "leading-term",
@@ -70,7 +72,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "leading coefficient": 47
@@ -94,6 +96,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

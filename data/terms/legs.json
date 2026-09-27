@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本語には 1 語の名前がなく「直角をはさむ辺」と言うが、英語では 1 本ずつを leg と呼ぶ（2 本で legs）。英語の leg は直角三角形だけでなく、二等辺三角形の等しい 2 辺（等辺）や台形の平行でない 2 辺にも使う。",
+  "mapping_note": "日本語版 Wikipedia「直角三角形」は斜辺以外の 2 辺を「直角をはさむ 2 辺」か「隣辺」と呼ぶ（隣辺は三角比では角のとなりの辺の意味にも使う）。英語では 1 本ずつを leg と呼ぶ（2 本で legs）。CK-12 Geometry 4.4 Isosceles Triangles は二等辺三角形の等しい 2 辺も legs と呼ぶ。台形の平行でない 2 辺を leg と呼ぶのは CK-12 5.26 の問題と IM Grade 6 の図の説明にあり、CK-12 5.13 は non-parallel sides と書く。",
   "domains": [
     "geometry"
   ],
@@ -22,6 +22,7 @@
       "中3"
     ],
     "us": [
+      "Pre-Algebra",
       "Geometry",
       "Integrated Math 2",
       "Integrated Math 1"
@@ -33,19 +34,19 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "The two sides that make the right angle are the legs, so if one leg is 3 and the other is 4, the hypotenuse is 5.",
-      "ja": "直角をつくる 2 辺が直角をはさむ辺。だから一方が 3、もう一方が 4 なら、斜辺は 5 だ。",
+      "en": "If one leg is 3 and the other leg is 4, the hypotenuse has to be 5.",
+      "ja": "直角をはさむ辺の一方が 3、もう一方が 4 なら、斜辺は 5 だ。",
       "register": "spoken"
     },
     {
-      "en": "In right triangle ABC, angle C is a right angle, AC = 8, and AB = 17. Find the length of leg BC.",
+      "en": "Right triangle ABC has its right angle at C, with AC = 8 and AB = 17. How long is leg BC?",
       "ja": "∠C = 90° の直角三角形 ABC で、AC = 8、AB = 17 である。直角をはさむ辺 BC の長さを求めよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "1 本なら a leg、2 本なら the legs ／ both legs。日本語の「直角をはさむ辺」は 2 辺をまとめて言うことが多いので、単数・複数に気をつける。",
+    "学習指導要領解説（中学校）と日本語版 Wikipedia「直角三角形」は「直角をはさむ 2 辺」と 2 辺まとめて書くので、英語では 1 本なら a leg、2 本なら the legs ／ both legs と単数・複数に気をつける。",
     "斜辺 hypotenuse は leg に入らない（エントリ hypotenuse）。",
     "二等辺三角形の legs は等しい 2 辺で、直角をはさむとは限らない（エントリ isosceles-triangle、trapezoid）。"
   ],
@@ -64,6 +65,30 @@
     {
       "type": "textbook",
       "title": "OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.4 Isosceles Triangles: 等しい 2 辺を legs と呼ぶ"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 6)",
+      "url": "https://im.kendallhunt.com/MS/students/1/index.html",
+      "note": "2.8 How Much for One?: 台形の legs"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「直角三角形」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%9B%B4%E8%A7%92%E4%B8%89%E8%A7%92%E5%BD%A2",
+      "note": "斜辺以外の 2 辺は「直角をはさむ 2 辺」か「隣辺」"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 3 学年 三平方の定理: 「直角をはさむ 2 辺」"
     }
   ],
   "confidence": "likely",
@@ -72,7 +97,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "leg of a right triangle | legs of a right triangle | leg of the right triangle | legs of the right triangle | the other leg | legs and the hypotenuse | leg and the hypotenuse | hypotenuse and a leg | hypotenuse and one leg | length of the leg | lengths of the legs": 3
@@ -91,6 +116,6 @@
       "yt:organicchem",
       "yt:patrickjmt"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

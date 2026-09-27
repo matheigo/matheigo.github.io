@@ -17,7 +17,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本語の「和と差の積」は左辺の積 (a + b)(a − b) の名前だが、英語の difference of squares は右辺 a² − b² の名前で、a² − b² = (a + b)(a − b) と因数分解するときに言う。OpenStax Elementary Algebra は展開の向きを Product of Conjugates Pattern（共役な 2 式の積）と呼ぶ。",
+  "mapping_note": "日本語の「和と差の積」は左辺の積 (a + b)(a − b) の名前だが、英語の difference of squares は右辺 a² − b² の名前で、a² − b² = (a + b)(a − b) と因数分解するときに言う。OpenStax Elementary Algebra は展開の向きを Product of Conjugates Pattern（共役な 2 式の積）と呼ぶ。IM Algebra 1 7.8 は (a + b)(a − b) を a product of a sum and a difference、a² − b² を a difference of two squares と書く。",
   "domains": [
     "algebra"
   ],
@@ -64,6 +64,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Algebra 1 7.8: a product of a sum and a difference ／ a difference of two squares"
     }
   ],
   "confidence": "likely",
@@ -72,7 +78,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "difference of two squares": 16,
@@ -98,6 +104,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

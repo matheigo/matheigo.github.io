@@ -4,8 +4,8 @@
   "note": "IM Geometry の名前（Angle-Angle Triangle Similarity Theorem）と CK-12 の名前（AA Similarity Postulate、AAA Similarity Theorem）"
  },
  "aaa similarity theorem": {
-  "id": "aa-similarity",
-  "note": "IM Geometry の名前（Angle-Angle Triangle Similarity Theorem）と CK-12 の名前（AA Similarity Postulate、AAA Similarity Theorem）"
+  "skip": true,
+  "note": "CK-12 Geometry 7.8 の Vocabulary は AAA Similarity Theorem に SSS（3 組の辺が比例）の文を付けていて、AA の別名としては使えない（バッチ 14 のレビュー）"
  },
  "abel's theorem": {
   "skip": true,
@@ -1166,8 +1166,8 @@
   "note": "一般的な言い方（generic）"
  },
  "polygons theorem": {
-  "skip": true,
-  "note": "CK-12 の番号付きの定理（Chord Theorem #1 など）"
+  "id": "ratio-of-areas-of-similar-figures",
+  "note": "CK-12 Geometry 5.22 の Area of Similar Polygons Theorem の切れ端（2 件）。バッチ 14 で en.alt に入れた"
  },
  "possible pattern rules": {
   "skip": true,
@@ -1545,9 +1545,8 @@
   "note": "相似条件の 1 つ 1 つの CK-12・IM の名前（SAS ／ SSS Similarity Theorem、Side-Angle-Side ／ Side-Side-Side Triangle Similarity Theorem）"
  },
  "side side angle triangle similarity theorem": {
-  "id": "similarity-criteria",
-  "related": true,
-  "note": "相似条件の 1 つ 1 つの CK-12・IM の名前（SAS ／ SSS Similarity Theorem、Side-Angle-Side ／ Side-Side-Side Triangle Similarity Theorem）"
+  "skip": true,
+  "note": "IM Geometry が「証明するか反証せよ」と問う予想で、相似条件ではない（バッチ 14 のレビュー）"
  },
  "side side side triangle congruence theorem": {
   "id": "sss-congruence",
@@ -1567,6 +1566,10 @@
   "id": "positive-and-negative-numbers",
   "related": true,
   "note": "CK-12 Algebra の sign rules for multiplication（符号の規則）"
+ },
+ "similar polygons theorem": {
+  "id": "ratio-of-areas-of-similar-figures",
+  "note": "CK-12 Geometry 5.22 の Area of Similar Polygons Theorem（2 件）。バッチ 14 で en.alt に入れた"
  },
  "specific rules": {
   "skip": true,

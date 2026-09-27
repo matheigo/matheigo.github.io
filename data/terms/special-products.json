@@ -8,20 +8,22 @@
   "en": {
     "term": "special products",
     "alt": [
-      "product formulas"
+      "special product formulas"
     ],
     "uk": null,
     "register": "written"
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本語の「乗法公式」は展開の公式をまとめた呼び名。米国の教科書 OpenStax Elementary Algebra はこれらを special products と呼び、1 つずつ Binomial Squares Pattern（(a + b)²、(a − b)²、エントリ square-of-a-binomial）、Product of Conjugates Pattern（(a + b)(a − b)、エントリ difference-of-squares）という名前で扱う。",
+  "mapping_note": "日本語の「乗法公式」は展開の公式をまとめた呼び名。米国の教科書 OpenStax Elementary Algebra は 6.4 Special Products で Binomial Squares Pattern（(a + b)²、(a − b)²、エントリ square-of-a-binomial）と Product of Conjugates Pattern（(a + b)(a − b)、エントリ difference-of-squares）を扱い、(x + a)(x + b) は 6.3 でふつうの二項式の積として扱う（日本の乗法公式はこれも含む）。",
   "domains": [
     "algebra"
   ],
   "level": {
     "jp": [
-      "中3"
+      "中3",
+      "数I",
+      "数II"
     ],
     "us": [
       "Algebra 1",
@@ -30,7 +32,7 @@
     ]
   },
   "definition_ja": "(x + a)(x + b)、(a + b)²、(a − b)²、(a + b)(a − b) のような、よく出てくる積を展開するための公式。左辺と右辺を入れ替えて使うと、因数分解の公式になる。",
-  "definition_en": "Shortcut patterns for multiplying common kinds of binomials, such as (a + b)², (a − b)², and (a + b)(a − b). Used in reverse, they become patterns for factoring.",
+  "definition_en": "Shortcut patterns for multiplying common kinds of binomials: (x + a)(x + b), (a + b)², (a − b)², and (a + b)(a − b). Used in reverse, they become patterns for factoring.",
   "latex": "(x + a)(x + b) = x^2 + (a + b)x + ab",
   "spoken_en": "the quantity x plus a times the quantity x plus b equals x squared plus the quantity a plus b times x, plus a b",
   "examples": [
@@ -73,25 +75,17 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
-    "spoken": {
-      "product formulas": 6
-    },
     "written": {
-      "product formulas": 11,
-      "special products": 42
+      "special products": 42,
+      "special product formulas": 5
     },
     "sources": [
-      "mit-18.01",
-      "mit-18.03",
-      "mit-notes",
       "openstax-algtrig",
-      "openstax-calculus",
       "openstax-elemalg",
-      "openstax-intalg",
-      "yt:3blue1brown"
+      "openstax-intalg"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

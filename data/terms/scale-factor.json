@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の相似比は 2 つの図形の対応する長さの比（2 : 3 のように比で書く）。英語の scale factor は元の図形から像への 1 つの数（3/2）で、向きがある。",
+  "mapping_note": "学習指導要領解説（中学校）は対応する線分の長さの比を相似比とし、日本語版 Wikipedia「図形の相似」は F を r 倍して G と合同になるとき F と G の相似比を 1 : r と定義する（2 つの図形を挙げた順に比で書き、1 つの数にはしない）。共通テスト（令和 7 年度 数学I・A）の問題文も「その相似比は □ : □」。英語の scale factor は元の図形から像への 1 つの数（3/2）で、向きがある（IM Grade 7 の問題文は the scale factor from Polygon A to Polygon B と書く）。",
   "domains": [
     "geometry"
   ],
@@ -24,12 +24,13 @@
       "中3"
     ],
     "us": [
+      "Pre-Algebra",
       "Geometry",
       "Integrated Math 2"
     ]
   },
   "definition_ja": "相似な 2 つの図形の、対応する長さの比。英語の scale factor は、もとの図形の長さを何倍すると像の長さになるかを 1 つの数で表す。",
-  "definition_en": "The number that every length of a figure is multiplied by to get the corresponding length of its image, as in a dilation or a scaled copy. A scale factor greater than 1 enlarges the figure, and one between 0 and 1 shrinks it.",
+  "definition_en": "The number by which every length of a figure is multiplied to produce the matching length of its image under a dilation or in a scaled copy. Above 1 it enlarges the figure; between 0 and 1 it shrinks it.",
   "latex": "k = \\frac{A'B'}{AB}",
   "spoken_en": "k equals A prime B prime over A B",
   "examples": [
@@ -55,7 +56,7 @@
     }
   ],
   "pitfalls": [
-    "向きに注意。A から B への scale factor が 3/2 なら、B から A へは 2/3。日本の相似比 2 : 3 は向きを言わずに比で書く。",
+    "向きに注意。A から B への scale factor が 3/2 なら、B から A へは 2/3。日本語の相似比 2 : 3 は 2 つの図形を挙げた順に比で書き、1 つの数にはしない（日本語版 Wikipedia「図形の相似」）。",
     "面積は scale factor の 2 乗倍、体積は 3 乗倍になる（相似比 m : n なら面積比 m² : n²、体積比 m³ : n³）。",
     "用例コーパスでは、話し言葉はほとんどが Khan Academy の中学の講義で、書き言葉は少ない（MIT の講義ノートと OpenStax）。IM では 522 件で、Grade 7・Grade 8・Geometry の glossary の見出し。"
   ],
@@ -71,6 +72,30 @@
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
       "note": "glossary の見出し scale factor（Grade 7・Grade 8・Geometry）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 3 学年 図形: 相似比と面積比・体積比"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「図形の相似」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%B3%E5%BD%A2%E3%81%AE%E7%9B%B8%E4%BC%BC",
+      "note": "相似比 1 : r（欧米は ∼、日本は ∽ の記号）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和7年度 大学入学共通テスト 本試験 数学Ⅰ，数学Ａ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=771&f=abm00005956.pdf&n=2025_op_26_sugaku1A.pdf",
+      "note": "問題文「その相似比は □ : □」"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7)",
+      "url": "https://im.kendallhunt.com/MS/students/2/index.html",
+      "note": "Unit 1 Scale Drawings・glossary: the scale factor from Polygon A to Polygon B"
     }
   ],
   "confidence": "likely",
@@ -79,7 +104,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "scale factor": 87,
@@ -98,6 +123,6 @@
       "openstax-algtrig",
       "yt:3blue1brown"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

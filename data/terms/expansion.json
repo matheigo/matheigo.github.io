@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "名詞の「展開」（展開式）は expansion だが、式を展開する操作は動詞 expand ／ multiply out で言うことが多い。二項定理の展開は binomial expansion。",
+  "mapping_note": "名詞の「展開」（展開式）は expansion。式を展開する操作は、IM Algebra 1 6.8 Equivalent Quadratic Expressions が multiply out（expand）と書き、OpenStax Elementary Algebra の問題文は Multiply: … の形。用例コーパスの話し言葉でも multiply out を使う。二項定理の展開は binomial expansion（OpenStax Algebra and Trigonometry 13.6）。",
   "domains": [
     "algebra"
   ],
@@ -55,13 +55,14 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "expansion だけでは series expansion（級数展開）や decimal expansion（小数展開）も多い。用例コーパスでは expansion of ( の形（(x + y)ⁿ のような式の展開）で数えた。expansion of のままでは話し言葉の 8 割が級数展開だった。",
+    "expansion だけでは series expansion（級数展開。OpenStax Calculus）や decimal expansion（小数展開。IM Grade 8）の意味が多い。用例コーパスでは expansion of ( の形（(x + y)ⁿ のような式の展開）で数えた。expansion of のままでは話し言葉のほとんどが級数展開だった。",
     "「展開せよ」は Expand …（または Multiply out …）。"
   ],
   "related": [
-    "general-term",
-    "multinomial-theorem",
-    "binomial-series"
+    "expand",
+    "binomial-theorem",
+    "factoring",
+    "distribute"
   ],
   "sources": [
     {
@@ -70,6 +71,16 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Algebra 1 6.8 Equivalent Quadratic Expressions: multiply out（expand）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
     }
   ],
   "confidence": "likely",
@@ -78,7 +89,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "written": {
       "expansion of (": 15
@@ -88,6 +99,6 @@
       "openstax-calculus",
       "openstax-intalg"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

@@ -3,9 +3,7 @@
   "ja": {
     "term": "グループ分けによる因数分解",
     "reading": "ぐるーぷわけによるいんすうぶんかい",
-    "alt": [
-      "まとめてくくる"
-    ]
+    "alt": []
   },
   "en": {
     "term": "factoring by grouping",
@@ -15,13 +13,12 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "見出しの「グループ分けによる因数分解」は学習指導要領解説に無い、本プロジェクトの訳語。日本の教科書では名前を付けず、「組み合わせてくくる」「共通因数をくくり出す」と手順で説明する。米国の教科書（OpenStax Elementary Algebra）は Factor by Grouping という名前で扱い、ax² + bx + c を因数分解する ac method もこの方法を使う。",
+  "mapping_note": "見出しの「グループ分けによる因数分解」は学習指導要領解説に無い、本プロジェクトの訳語。学習指導要領解説にも日本語版 Wikipedia「因数分解」にも、この方法の名前は出てこない（Wikipedia の因数分解の節は共通因数でくくる・たすきがけ・因数定理などで、項を組にしてくくる方法の節はない）。OpenStax Elementary Algebra（Greatest Common Factor and Factor by Grouping）は Factor by Grouping という名前で扱い、ax² + bx + c を因数分解する ac method（grouping method とも）もこの方法を使う。",
   "domains": [
     "algebra"
   ],
   "level": {
     "jp": [
-      "大学",
       "中3"
     ],
     "us": [
@@ -63,6 +60,24 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 3 学年 数と式: 「グループ分けによる因数分解」は 0 件（見出しは本プロジェクトの訳語）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「因数分解」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%A0%E6%95%B0%E5%88%86%E8%A7%A3",
+      "note": "共通因数でくくる（全ての項に共通している因数でくくり出す）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "「グループ分けによる因数分解」は 0 件"
     }
   ],
   "confidence": "likely",
@@ -89,6 +104,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

@@ -6,13 +6,15 @@
     "alt": []
   },
   "en": {
-    "term": "negative correlation",
-    "alt": [],
+    "term": "negative association",
+    "alt": [
+      "negative correlation"
+    ],
     "variants": [
       {
         "term": "negative linear relationship",
         "register": "spoken",
-        "note": "話し言葉では negative correlation より多いが、すべて Khan Academy（AP Statistics と中学の講義）。"
+        "note": "話し言葉では negative association・negative correlation より多いが、すべて Khan Academy（AP Statistics と中学の講義）。"
       }
     ],
     "uk": null
@@ -40,7 +42,7 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "The more you practice, the fewer mistakes you make, so that's a negative correlation.",
+      "en": "The more you practice, the fewer mistakes you make, so that's a negative association.",
       "ja": "練習するほどミスが減るので、これは負の相関。",
       "register": "spoken"
     },
@@ -52,7 +54,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスの話し言葉では negative linear relationship のほうが多いが、すべて Khan Academy（AP Statistics と中学の講義）なので、見出しは AP Statistics の CED（topic 5.2）の negative correlation にし、negative linear relationship は話し言葉の variant にした。書き言葉でも negative correlation のほうが多い（OpenStax Introductory Statistics・Algebra and Trigonometry）。"
+    "AP Statistics の CED（topic 5.1）と IM Grade 8 は、散布図の右下がりの傾向を negative association と呼ぶ。見出しはこの言い方（用例コーパスの話し言葉の首位 negative linear relationship は Khan Academy だけなので、CED の言い方を見出しにする規則）。OpenStax Introductory Statistics・Algebra and Trigonometry と IM Algebra 1 は negative correlation と書く（CED の negative correlation は相関係数の値の話の 1 件）。"
   ],
   "related": [
     "positive-correlation",
@@ -63,6 +65,22 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 5.1（negative association）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 8)",
+      "url": "https://im.kendallhunt.com/MS/students/3/index.html",
+      "note": "Unit 6 glossary: negative association"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
     }
   ],
   "confidence": "likely",
@@ -71,7 +89,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "negative linear relationship": 12,
@@ -79,6 +97,7 @@
     },
     "written": {
       "negative correlation": 7,
+      "negative association": 1,
       "negative linear relationship": 1
     },
     "sources": [
@@ -87,6 +106,6 @@
       "openstax-algtrig",
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

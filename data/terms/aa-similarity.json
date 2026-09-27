@@ -8,9 +8,10 @@
     ]
   },
   "en": {
-    "term": "angle-angle triangle similarity",
+    "term": "angle-angle triangle similarity theorem",
     "alt": [
       "AA similarity",
+      "AA similarity postulate",
       "angle-angle similarity"
     ],
     "uk": null
@@ -32,7 +33,7 @@
     ]
   },
   "definition_ja": "2 つの三角形で、2 組の角がそれぞれ等しければ相似であるという相似条件。内角の和が 180° なので、残りの角も等しくなる。",
-  "definition_en": "A triangle similarity criterion: if two angles of one triangle are congruent to two angles of another, the triangles are similar. The third angles then match as well, since the angles of a triangle add up to 180°.",
+  "definition_en": "A triangle similarity criterion: two triangles are similar whenever two angles of one are congruent to two angles of the other. The third pair then agrees too, since the three angles of any triangle total 180°.",
   "latex": "\\angle A = \\angle D,\\ \\angle B = \\angle E \\implies \\triangle ABC \\sim \\triangle DEF",
   "spoken_en": "if angle A equals angle D and angle B equals angle E, then triangle ABC is similar to triangle DEF",
   "examples": [
@@ -45,6 +46,11 @@
       "en": "In the figure, DE ∥ BC. Prove that △ADE ~ △ABC.",
       "ja": "図で DE ∥ BC のとき、△ADE ∽ △ABC であることを証明せよ。",
       "register": "written"
+    },
+    {
+      "en": "The two triangles have two pairs of congruent angles, so they are similar by the Angle-Angle Triangle Similarity Theorem.",
+      "ja": "2 つの三角形は 2 組の角がそれぞれ等しいので、相似である。",
+      "register": "written"
     }
   ],
   "collocations": [
@@ -55,8 +61,8 @@
   ],
   "pitfalls": [
     "AA は相似条件で、合同条件ではない。角がすべて等しくても大きさは決まらない（AAA でも合同にはならない）。",
-    "相似の記号は日本では ∽、英語では ~（△ADE ~ △ABC）。",
-    "IM Geometry は Angle-Angle Triangle Similarity Theorem と呼ぶ（angle-angle triangle similarity 16 件、angle-angle similarity 1 件）。用例コーパスには出てこない。"
+    "相似の記号は、中学校学習指導要領解説（〔用語・記号〕）では ∽、IM Geometry・CK-12 Geometry では ∼（△ABC ∼ △DEF）。",
+    "IM Geometry は Angle-Angle Triangle Similarity Theorem と呼び（angle-angle triangle similarity 16 件、angle-angle similarity 1 件）、CK-12 Geometry は AA Similarity Postulate と呼ぶ（7.7 AA Similarity、10 件。AAA Similarity Theorem とも）。用例コーパスには出てこない。"
   ],
   "related": [
     "similar-triangles",
@@ -70,6 +76,18 @@
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
       "note": "3.9 Conditions for Triangle Similarity ほか（16 件）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "7.7 AA Similarity（AA Similarity Postulate）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 3 学年 図形〔用語・記号〕: ∽"
     }
   ],
   "confidence": "likely",
@@ -78,16 +96,16 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 angle-angle triangle similarity（Geometry 3.9 Conditions for Triangle Similarity・Geometry 3.13 Using the Pythagorean Theorem and Similarity・Geometry 3.16 Bank Shot・計 16 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 angle-angle triangle similarity theorem（Geometry 3.9 Conditions for Triangle Similarity・Geometry 3.13 Using the Pythagorean Theorem and Similarity・Geometry 3.16 Bank Shot・計 16 件）。register は主張しない。",
+      "raised": "2026-09-26"
     }
   ]
 }

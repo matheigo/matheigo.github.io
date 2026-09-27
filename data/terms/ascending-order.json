@@ -3,25 +3,24 @@
   "ja": {
     "term": "昇べきの順",
     "reading": "しょうべきのじゅん",
-    "alt": []
+    "alt": [
+      "昇冪の順"
+    ]
   },
   "en": {
     "term": "increasing powers",
-    "alt": [
-      "ascending order"
-    ],
-    "uk": null,
-    "register": "written"
+    "alt": [],
+    "uk": null
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（多項式の項を次数の低い順に並べる言い方。用例コーパスの increasing powers は部分分数分解の分母の累乗や i の累乗の並び、ascending order は素数や数の並び）。OpenStax Elementary Algebra は次数の高い順の並びだけを standard form と呼ぶ。見出しの increasing powers は本プロジェクトの説明の訳。",
   "domains": [
     "algebra"
   ],
   "level": {
     "jp": [
-      "中3"
+      "数I"
     ],
     "us": [
       "Algebra 1",
@@ -34,7 +33,7 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "Let's put the terms in ascending order, lowest power first, so the constant goes in front.",
+      "en": "Let's put the terms in order from the lowest power to the highest, so the constant goes in front.",
       "ja": "項を昇べきの順に並べよう。次数の低いほうからだから、定数項が先頭に来る。",
       "register": "spoken"
     },
@@ -46,8 +45,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "ascending order だけでは、数を小さい順に並べる意味にもなる。多項式の項の並べ方だとはっきりさせるには、OpenStax Algebra and Trigonometry のように in increasing powers（of x）と書く。",
-    "文字が 2 つ以上ある式では、どの文字について並べるかを of x のように付けて言う（in increasing powers of x）。",
+    "ascending order だけでは、数を小さい順に並べる意味になる（OpenStax・IM では素数や定義域の値の並び）。多項式の項の並べ方だとはっきりさせるなら、in increasing powers of x のように何の順かを添える（本プロジェクトの書き方の例）。",
+    "文字が 2 つ以上ある式では、どの文字についてかを of x のように付けて言う（本プロジェクトの書き方の例）。",
     "次数の高い順に並べるのは降べきの順（エントリ write-in-descending-order）。"
   ],
   "related": [
@@ -69,23 +68,21 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
-      "increasing powers": 3
-    },
-    "written": {
-      "increasing powers": 9,
-      "ascending order": 3
+      "increasing powers of x | increasing powers of the variable": 1
     },
     "sources": [
-      "khan-ap-stats",
-      "mit-18.01",
-      "openstax-algtrig",
-      "openstax-elemalg",
-      "openstax-intalg",
-      "openstax-introstats"
+      "mit-18.01"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "corpus-no-fixed-expression",
+      "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 1 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-26"
+    }
+  ]
 }

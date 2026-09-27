@@ -23,13 +23,14 @@
     ],
     "us": [
       "Algebra 1",
+      "Algebra 2",
       "AP Statistics",
       "Integrated Math 1",
       "Integrated Math 3"
     ]
   },
-  "definition_ja": "分散の正の平方根。データの散らばりを、もとのデータと同じ単位で表す。",
-  "definition_en": "The positive square root of the variance, measuring spread in the same units as the data.",
+  "definition_ja": "分散の 0 以上の平方根。データの散らばりを、もとのデータと同じ単位で表す。",
+  "definition_en": "The nonnegative square root of the variance. It describes how spread out the data are, in the original units of the data.",
   "latex": "s = \\sqrt{\\frac{1}{n}\\sum_{i=1}^{n}(x_i - \\bar{x})^2}",
   "spoken_en": null,
   "examples": [
@@ -46,8 +47,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "米国の教科書の sample standard deviation（s）は n − 1 で割った分散の平方根（OpenStax Introductory Statistics）。数I の標準偏差は n で割る。",
-    "「標準偏差が大きい」は a large standard deviation、「散らばりが大きい」は more spread out。"
+    "OpenStax Introductory Statistics と AP Statistics の CED（topic 1.7）の sample standard deviation（s）は n − 1 で割った分散の平方根。日本語版 Wikipedia「標準偏差」は、n で割った標本分散の平方根を標本標準偏差と呼び、不偏分散の平方根と分けて書く（同じ「標本」でも式が違う。エントリ variance）。",
+    "「標準偏差が大きい」は OpenStax Introductory Statistics では a larger standard deviation ／ the standard deviation is small のように言い、「散らばりが大きい」は more spread out（IM・OpenStax）。"
   ],
   "related": [
     "variance",
@@ -63,6 +64,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 1.7（sample standard deviation）"
     }
   ],
   "confidence": "likely",
@@ -71,7 +78,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "standard deviation": 764
@@ -90,6 +97,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

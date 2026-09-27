@@ -9,15 +9,12 @@
   },
   "en": {
     "term": "volume ratio",
-    "alt": [
-      "ratio of the volumes",
-      "ratio of volumes"
-    ],
+    "alt": [],
     "uk": null
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（IM の volume ratio は surface area to volume ratio の一部で別の概念）。IM Geometry 5.6 Scaling Solids は the volume is multiplied by k³ と文で言い、CK-12 Geometry 9.8 も名前を付けない。相似比に当たる語は scale factor（エントリ scale-factor）。",
   "domains": [
     "geometry"
   ],
@@ -61,10 +58,19 @@
   ],
   "sources": [
     {
+      "type": "editorial"
+    },
+    {
       "type": "reference",
-      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
-      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
-      "note": "Geometry 5.16 Surface Area and Volume"
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Geometry 5.6 Scaling Solids: the volume is multiplied by k³（名前は無い）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "9.8: 相似な立体の体積（名前は無い）"
     }
   ],
   "confidence": "likely",
@@ -73,21 +79,21 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
-      "volume ratio": 1
+      "!to volume ratio": 1
     },
     "sources": [
       "mit-18.01"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 volume ratio（Geometry 5.16 Surface Area and Volume・Geometry 6.6 Completing the Square・計 5 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "code": "corpus-no-fixed-expression",
+      "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 1 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-26"
     }
   ]
 }

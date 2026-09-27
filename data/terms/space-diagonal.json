@@ -3,19 +3,21 @@
   "ja": {
     "term": "立体の対角線",
     "reading": "りったいのたいかくせん",
-    "alt": []
+    "alt": [
+      "体対角線"
+    ]
   },
   "en": {
-    "term": "diagonal of a rectangular prism",
+    "term": "space diagonal",
     "alt": [
-      "diagonal of a box",
-      "space diagonal"
+      "diagonal of a rectangular prism",
+      "diagonal of a box"
     ],
     "uk": null
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（space diagonal は CED・OpenStax・IM・CK-12 とも 0 件。diagonal of the rectangular prism ／ diagonal of the box は OpenStax Calculus Volume 3（2.2）に各 1 件で、CK-12 Geometry 4.33・4.35 と IM Grade 8 はどの頂点からどの頂点への diagonal かを言って説明する）。見出しは英語版 Wikipedia の記事名「Space diagonal」（数学カテゴリから 4 段、冒頭で太字）。見出しの「立体の対角線」は学習指導要領解説に無い（日本語版 Wikipedia「対角線」は、内部を通る対角線を体対角線、面の上のものを面対角線と呼ぶ）。",
   "domains": [
     "geometry"
   ],
@@ -46,7 +48,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語に決まった 1 語はなく、教科書は diagonal of the rectangular prism ／ box のように立体の名前をつけて言う。space diagonal は面の対角線（face diagonal）と区別するときの言い方。",
+    "diagonal だけでは多角形の対角線や面の対角線と区別がつかない（エントリ diagonal）。英語版 Wikipedia「Space diagonal」は面の対角線を face diagonal と呼んで区別する。",
     "diagonal だけでは多角形の対角線や面の対角線と区別がつかない（エントリ diagonal）。",
     "長さは三平方の定理を 2 回使う。底面の対角線が √(a² + b²)、それと高さ c から √(a² + b² + c²)。"
   ],
@@ -61,6 +63,30 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Space_diagonal",
+      "note": "記事「Space diagonal」（数学カテゴリから 4 段）の冒頭: space diagonal を太字で定義"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「対角線」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%AF%BE%E8%A7%92%E7%B7%9A",
+      "note": "体対角線・面対角線"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.33・4.35: 直方体の頂点を結ぶ diagonal"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "「立体の対角線」は 0 件"
     }
   ],
   "confidence": "likely",
@@ -69,7 +95,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "diagonal of a rectangular prism | diagonal of the rectangular prism": 1
@@ -82,13 +108,13 @@
       "openstax-calculus",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは OpenStax の呼び方 diagonal of a rectangular prism | diagonal of the rectangular prism（本文 1 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは Wikipedia の記事名 space diagonal（英語版「Space diagonal」、en.term のリダイレクト先）。register は主張しない。",
+      "raised": "2026-09-26"
     }
   ]
 }

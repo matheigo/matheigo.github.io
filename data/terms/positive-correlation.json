@@ -6,10 +6,16 @@
     "alt": []
   },
   "en": {
-    "term": "positive correlation",
+    "term": "positive association",
     "alt": [],
     "uk": null,
-    "register": "spoken"
+    "variants": [
+      {
+        "term": "positive correlation",
+        "register": "spoken",
+        "note": "話し言葉の首位だが、すべて Khan Academy（AP Statistics）。OpenStax Introductory Statistics も positive correlation と書く。"
+      }
+    ]
   },
   "pos": "noun",
   "mapping": "exact",
@@ -34,7 +40,7 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "Height and weight have a positive correlation: taller people tend to weigh more.",
+      "en": "Height and weight have a positive association: taller people tend to weigh more.",
       "ja": "身長と体重には正の相関がある。背が高い人ほど体重が重い傾向がある。",
       "register": "spoken"
     },
@@ -46,7 +52,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "話し言葉では positive linear relationship（正の直線的な関係）とも言う（用例コーパスでは少ない）。"
+    "AP Statistics の CED（topic 5.1）と IM Grade 8 は、散布図の右上がりの傾向を positive association と呼ぶ。見出しはこの言い方（用例コーパスの話し言葉の首位 positive correlation は Khan Academy だけなので、CED の言い方を見出しにする規則。Khan Academy は positive linear relationship とも言う）。CED の positive correlation は相関係数の値の話に 1 件。"
   ],
   "related": [
     "negative-correlation",
@@ -57,6 +63,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 5.1（positive association）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 8)",
+      "url": "https://im.kendallhunt.com/MS/students/3/index.html",
+      "note": "Unit 6 glossary: positive association"
     }
   ],
   "confidence": "likely",
@@ -65,19 +83,21 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "positive correlation": 14
     },
     "written": {
+      "positive association": 1,
       "positive correlation": 4
     },
     "sources": [
       "khan-ap-stats",
       "khan-middle",
+      "openstax-algtrig",
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

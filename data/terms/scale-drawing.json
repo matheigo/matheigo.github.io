@@ -12,16 +12,18 @@
     "register": "spoken"
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "IM Grade 7 1.7 Scale Drawings は、図の長さを同じ scale factor で enlarged or reduced した図をまとめて scale drawing と呼ぶ。日本語の「縮図」は縮めた図だけで、拡大した図は拡大図（学習指導要領解説は縮図・拡大図を小学校第 6 学年の内容とする）。",
   "domains": [
     "geometry"
   ],
   "level": {
     "jp": [
+      "小学校",
       "中3"
     ],
     "us": [
+      "Pre-Algebra",
       "Geometry",
       "Integrated Math 2"
     ]
@@ -44,7 +46,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語の scale drawing は、縮めた図にも拡大した図にも使う。日本語の「縮図」と「拡大図」の両方に当たる。",
+    "IM Grade 7 1.7 の scale drawing は、縮めた図にも拡大した図にも使う。日本語の「縮図」と「拡大図」の両方に当たる。",
     "縮尺（エントリ scale）は 1 : 5000 のように単位のない比でも、1 cm で 50 m のように単位付きでも表せる。単位付きのときは単位をそろえてから比に直す（1 cm : 50 m = 1 cm : 5000 cm = 1 : 5000）。",
     "scale は「縮尺」のほかに、グラフの軸の「目盛り」や「はかり」の意味でも使う。"
   ],
@@ -60,7 +62,13 @@
       "type": "reference",
       "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7)",
       "url": "https://im.kendallhunt.com/MS/students/2/index.html",
-      "note": "Grade 7 のレッスン（1.1 What are Scaled Copies? の単元ほか）で scale drawing を使う"
+      "note": "Grade 7 1.7 Scale Drawings・1.9・1.10 と glossary（enlarged or reduced by the same scale factor）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "縮図や拡大図は小学校第 6 学年の内容"
     }
   ],
   "confidence": "likely",
@@ -69,7 +77,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "scale drawing": 11
@@ -77,6 +85,6 @@
     "sources": [
       "khan-middle"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

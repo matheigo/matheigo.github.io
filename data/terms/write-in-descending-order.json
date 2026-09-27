@@ -6,13 +6,15 @@
     "alt": []
   },
   "en": {
-    "term": "write in descending order",
-    "alt": [],
+    "term": "written in descending order",
+    "alt": [
+      "write … in descending order"
+    ],
     "uk": null
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスで descending order は話し言葉では少なく、書き言葉は OpenStax の代数の教科書（Algebra and Trigonometry・Elementary Algebra・Intermediate Algebra）に出てくる）。米国の授業では、項が次数の高いものから順に並んでいる多項式を in standard form と言う。",
+  "mapping_note": "OpenStax Algebra and Trigonometry（5.2・5.4・5.5）と Elementary Algebra（6.1・6.6・7.3）は written in descending order ／ in descending order of degrees と書く。OpenStax Elementary Algebra 6.1・Intermediate Algebra 5.1・Prealgebra 10.1 は、次数の高い順に並べた多項式を standard form（standard form of a polynomial）と定義し、IM Algebra 2 2.6 Different Forms も同じ（Algebra and Trigonometry 5.2 は general form）。",
   "domains": [
     "algebra"
   ],
@@ -43,8 +45,13 @@
       "register": "written"
     },
     {
-      "en": "Write x² + 3xy − 2y² + x − 4y in descending order of x.",
+      "en": "Write x² + 3xy − 2y² + x − 4y in descending order of powers of x, grouping the terms with the same power of x.",
       "ja": "x² + 3xy − 2y² + x − 4y を x について降べきの順に整理せよ。",
+      "register": "written"
+    },
+    {
+      "en": "A polynomial written in descending order has its leading term first.",
+      "ja": "降べきの順に整理した多項式は、最高次の項が先頭に来る。",
       "register": "written"
     }
   ],
@@ -52,17 +59,32 @@
   "pitfalls": [
     "「x について整理する」では x 以外の文字を係数とみなし、x の次数ごとにまとめる：x² + (3y + 1)x − (2y² + 4y)。",
     "日本語の「整理する」は同類項をまとめること（combine like terms）も含む。並べるだけの「降べきの順」と分けて考える。",
-    "逆の、次数の低い順は ascending order（昇べきの順）。"
+    "逆の、次数の低い順は昇べきの順（エントリ ascending-order）。"
   ],
   "related": [
-    "polynomial",
-    "arrange-by-the-variable-of-lowest-degree",
-    "polynomial-division"
+    "ascending-order",
+    "leading-term",
+    "combine-like-terms",
+    "arrange-by-the-variable-of-lowest-degree"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Algebra 2 2.6 Different Forms: standard form of a polynomial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
     }
   ],
   "confidence": "likely",
@@ -73,13 +95,26 @@
   },
   "updated": "2026-09-26",
   "evidence": {
-    "sources": [],
+    "spoken": {
+      "write … in descending order": 2,
+      "written in descending order": 1
+    },
+    "written": {
+      "written in descending order": 7,
+      "write … in descending order": 2
+    },
+    "sources": [
+      "openstax-algtrig",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "yt:patrickjmt"
+    ],
     "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 written in descending order（本文 7 件）。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

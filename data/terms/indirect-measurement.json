@@ -14,14 +14,16 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "数I の「測量」は、直接測れない高さや距離を三角比・相似で求める問題を指す。英語の surveying は土地の測量の仕事の名前で、授業の単元では indirect measurement（Geometry）や angle of elevation の問題として出てくる。CK-12 Geometry は indirect measurement と呼ぶ（7.5 Indirect Measurement・7.6 Indirect Measurement Applications ほか、8 件。IM は 3 件）。用例コーパスには出てこない。",
+  "mapping_note": "高等学校学習指導要領解説は、数学A「数学と人間の活動」で三角比を用いた測量の方法を題材にすると書き、数学I「図形と計量」では直接測定できない 2 地点間の距離などを三角比で求める活動として書く（「測量」の語は数学A）。中学校学習指導要領解説（第 3 学年）は相似・三平方の定理で高さや距離を求める学習を挙げる。英語の授業の単元では indirect measurement（CK-12 Geometry 7.5 Indirect Measurement・7.6 Indirect Measurement Applications ほか、8 件。IM は 3 件）や angle of elevation の問題として出てくる。用例コーパスには出てこない。",
   "domains": [
     "geometry",
     "trigonometry"
   ],
   "level": {
     "jp": [
-      "数I"
+      "中3",
+      "数I",
+      "数A"
     ],
     "us": [
       "Geometry",
@@ -53,7 +55,7 @@
   "collocations": [],
   "pitfalls": [
     "用例コーパスの surveying は統計の調査（survey）の意味で、土地の測量の意味では数えていない。",
-    "英語の問題文では「測量」という語を使わず、angle of elevation ／ angle of depression と長さを与えて高さや距離を求めさせる形になる。"
+    "OpenStax Algebra and Trigonometry・Precalculus の問題文は「測量」という語を使わず、angle of elevation（各 44 件）／ angle of depression と長さを与えて高さや距離を求めさせる形になる。"
   ],
   "related": [
     "angle-of-elevation",
@@ -70,6 +72,32 @@
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
       "note": "7.5 Indirect Measurement・7.6 Indirect Measurement Applications・4.28 Basics of Pythagorean Theorem"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A 数学と人間の活動: 図形の性質や三角比を用いた測量の方法"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Geometry 4.1 Angles and Steepness ほか: indirect measurement（3 件）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 3 学年 図形: 相似・三平方の定理で高さや距離を求める"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
     }
   ],
   "confidence": "likely",
@@ -78,16 +106,16 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 indirect measurement（CK-12 Geometry 7.5 Indirect Measurement・CK-12 Geometry 7.6 Indirect Measurement Applications・CK-12 Geometry 4.28 Basics of Pythagorean Theorem・計 8 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-26"
     }
   ]
 }

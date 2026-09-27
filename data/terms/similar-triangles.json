@@ -8,7 +8,8 @@
   "en": {
     "term": "similar triangles",
     "alt": [],
-    "uk": null
+    "uk": null,
+    "register": "both"
   },
   "pos": "noun",
   "mapping": "exact",
@@ -19,6 +20,7 @@
   ],
   "level": {
     "jp": [
+      "中3",
       "数I"
     ],
     "us": [
@@ -38,14 +40,14 @@
       "register": "spoken"
     },
     {
-      "en": "Use similar triangles to find the height of the tree, given that its shadow is 15 m long.",
-      "ja": "相似な三角形を使って、影の長さが 15 m の木の高さを求めよ。",
+      "en": "A 2 m pole casts a 3 m shadow while the tree's shadow is 15 m long. Use similar triangles to find the height of the tree.",
+      "ja": "2 m の棒の影が 3 m のとき、木の影は 15 m であった。相似な三角形を使って、木の高さを求めよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "相似の記号は日本では ∽、米国では ~（△ABC ~ △DEF）。どちらも対応する頂点の順に書く。",
+    "相似の記号は、中学校学習指導要領解説（〔用語・記号〕）では ∽、IM Geometry・CK-12 Geometry では ∼（△ABC ∼ △DEF）。どちらも対応する頂点の順に書く。",
     "「対応する辺の比が等しい」は corresponding sides are proportional と言う（比例する辺）。"
   ],
   "related": [
@@ -63,6 +65,24 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 3 学年 図形〔用語・記号〕: ∽"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Geometry: △DHF ∼ △EHG と書く"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「図形の相似」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%B3%E5%BD%A2%E3%81%AE%E7%9B%B8%E4%BC%BC",
+      "note": "欧米は ∼、日本は ∽ の記号"
     }
   ],
   "confidence": "likely",
@@ -71,7 +91,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "similar triangles": 28
@@ -91,6 +111,6 @@
       "openstax-prealgebra",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

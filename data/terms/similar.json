@@ -4,7 +4,6 @@
     "term": "相似",
     "reading": "そうじ",
     "alt": [
-      "相似",
       "相似な図形"
     ]
   },
@@ -25,6 +24,7 @@
       "中3"
     ],
     "us": [
+      "Pre-Algebra",
       "Geometry",
       "Integrated Math 2"
     ]
@@ -48,7 +48,7 @@
   "collocations": [],
   "pitfalls": [
     "日常語の similar は「似ている」という広い意味。数学の similar は「拡大・縮小すると重なる」という決まった意味で、形がなんとなく似ているだけでは similar とは言わない。",
-    "英語の similar は形容詞で、two figures are similar ／ triangle ABC is similar to triangle DEF と言う。日本の記号 ∽ で書いた △ABC ∽ △DEF も、triangle ABC is similar to triangle DEF と読む。名詞の「相似」は similarity。",
+    "英語の similar は形容詞で、two figures are similar ／ triangle ABC is similar to triangle DEF と言う。相似の記号は、中学校学習指導要領解説（〔用語・記号〕）では ∽、IM Geometry・CK-12 Geometry では ∼（△ABC ∼ △DEF）。どちらも triangle ABC is similar to triangle DEF と読む。名詞の「相似」は similarity。",
     "相似な三角形はエントリ similar-triangles、相似比はエントリ scale-factor。合同（congruent）は、相似のうち大きさも同じ場合。"
   ],
   "related": [
@@ -65,6 +65,24 @@
     {
       "type": "textbook",
       "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 3 学年 図形〔用語・記号〕: ∽"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Geometry: △DHF ∼ △EHG と書く"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「図形の相似」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%B3%E5%BD%A2%E3%81%AE%E7%9B%B8%E4%BC%BC",
+      "note": "欧米は ∼、日本は ∽ の記号"
     }
   ],
   "confidence": "likely",
@@ -73,7 +91,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "triangles are similar | figures are similar | polygons are similar | rectangles are similar | shapes are similar | similar figures | similar polygons | similar solids | similar rectangles | is similar to triangle": 12
@@ -89,6 +107,6 @@
       "openstax-prealgebra",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

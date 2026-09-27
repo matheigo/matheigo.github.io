@@ -4,7 +4,8 @@
     "term": "拡大・縮小",
     "reading": "かくだい・しゅくしょう",
     "alt": [
-      "相似の中心による拡大"
+      "相似拡大",
+      "中心相似"
     ]
   },
   "en": {
@@ -15,7 +16,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の中3 の相似は拡大図・縮図や相似の位置で扱い、中心と比を決めた変換そのものに名前を付けない。英語の dilation は中心と scale factor で決まる変換。",
+  "mapping_note": "中学校学習指導要領解説（第 3 学年）は、拡大・縮小を一つの図形を操作して新たな図形を作ることと書き、相似の位置・相似の中心を扱うが、変換の名前は出てこない（縮図・拡大図は小学校第 6 学年）。日本語版 Wikipedia「図形の相似」は、中心のある変換を相似拡大・中心相似と呼ぶ。英語の dilation は中心と scale factor で決まる変換。",
   "domains": [
     "geometry"
   ],
@@ -29,7 +30,7 @@
     ]
   },
   "definition_ja": "中心 O と正の数 k を決め、各点 P を半直線 OP 上で OP′ = k·OP となる点 P′ に移す変換。k > 1 なら拡大、0 < k < 1 なら縮小で、移した図形はもとの図形と相似になる。",
-  "definition_en": "A transformation with a center O and a scale factor k that sends each point P to the point P′ on ray OP with OP′ = k · OP. The image is similar to the original: larger if k > 1 and smaller if 0 < k < 1.",
+  "definition_en": "A transformation with a center O and a positive scale factor k that sends each point P to the point P′ on ray OP with OP′ = k · OP. The image is similar to the original: larger if k > 1 and smaller if 0 < k < 1.",
   "latex": "OP' = k \\cdot OP",
   "spoken_en": "O P prime equals k times O P",
   "examples": [
@@ -52,7 +53,7 @@
   ],
   "pitfalls": [
     "動詞は dilate（dilate the figure by a scale factor of 1/2）。縮小も dilation で、scale factor が 1 より小さいことで言い分ける。",
-    "dilation は物理の time dilation（時間の遅れ）など、別の意味でも使う。関数のグラフの拡大・縮小は stretch ／ compress と言う教科書もある。",
+    "dilation は物理の time dilation（時間の遅れ）など、別の意味でも使う。関数のグラフの拡大・縮小は、OpenStax Algebra and Trigonometry・Precalculus では vertical stretch ／ vertical compression と言う（エントリ stretch-vertically）。",
     "用例コーパスでは、話し言葉はほとんどが Khan Academy の中学の講義で、書き言葉にはほとんど出てこない。IM では 295 件で、Grade 8 と Geometry の glossary の見出し。CK-12 Geometry は 7.16 Dilation in the Coordinate Plane ほかで 27 件。"
   ],
   "related": [
@@ -68,6 +69,34 @@
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
       "note": "glossary の見出し dilation（Grade 8・Geometry）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 3 学年 図形: 相似の位置・相似の中心（縮図や拡大図は小学校第 6 学年）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "7.16 Dilation in the Coordinate Plane ほか（27 件）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「図形の相似」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%B3%E5%BD%A2%E3%81%AE%E7%9B%B8%E4%BC%BC",
+      "note": "相似拡大・中心相似"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 8)",
+      "url": "https://im.kendallhunt.com/MS/students/3/index.html",
+      "note": "Unit 2 glossary: dilation（positive scale factor）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
     }
   ],
   "confidence": "likely",
@@ -76,7 +105,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "dilation": 40
@@ -89,6 +118,6 @@
       "mit-18.01",
       "mit-notes"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

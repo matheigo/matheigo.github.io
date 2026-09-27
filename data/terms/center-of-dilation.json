@@ -12,8 +12,8 @@
     "register": "spoken"
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "中学校学習指導要領解説の相似の位置は、対応する点を通る直線が 1 点を通ることで定め、中心が 2 つの図形の間にある場合も含む。日本語版 Wikipedia「相似の中心」は外相似点（相似比が正）と内相似点（負）に分け、英語版 Wikipedia「Homothetic center」も external と internal を挙げる。英語の center of dilation は、IM Grade 8 の glossary と CK-12 Geometry 7.16 が正の scale factor の dilation だけを扱うので、外相似点に当たる。",
   "domains": [
     "geometry"
   ],
@@ -22,6 +22,7 @@
       "中3"
     ],
     "us": [
+      "Pre-Algebra",
       "Geometry",
       "Integrated Math 2"
     ]
@@ -45,7 +46,7 @@
   "collocations": [],
   "pitfalls": [
     "dilation は拡大にも縮小にも使う（エントリ dilation）。center of dilation も、拡大・縮小どちらの中心にも使う。",
-    "日本の「相似の位置にある」2 つの図形で、対応する点を結ぶ直線が集まる点がこれに当たる。英語では、一方の図形をこの点を中心に dilation するともう一方になる、と変換として見る（エントリ dilation）。",
+    "中学校学習指導要領解説の「相似の位置」にある 2 つの図形で、対応する点を結ぶ直線が集まる点（相似の中心）がこれに当たる。IM Grade 8（2.2〜2.5）は、一方の図形をこの点を中心に dilation するともう一方になる、と変換として見る（エントリ dilation）。",
     "中心は図形の外・内・周上のどこにとってもよい。中心の点だけは移しても動かない。"
   ],
   "related": [
@@ -66,6 +67,30 @@
       "title": "Illustrative Mathematics, IM 6–8 Math / IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/",
       "note": "レッスンで center of dilation を使う"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 3 学年 図形: その点を相似の中心として、相似の位置にある"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「相似の中心」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%9B%B8%E4%BC%BC%E3%81%AE%E4%B8%AD%E5%BF%83",
+      "note": "外相似点・内相似点"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Homothetic_center",
+      "note": "記事「Homothetic center」（数学カテゴリから 4 段）: external と internal"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "7.16 Dilation in the Coordinate Plane: 正の scale factor だけ"
     }
   ],
   "confidence": "likely",
@@ -74,7 +99,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "center of dilation": 21
@@ -82,6 +107,6 @@
     "sources": [
       "khan-middle"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

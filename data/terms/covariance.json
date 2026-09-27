@@ -21,7 +21,7 @@
       "数I"
     ],
     "us": [
-      "Algebra 1"
+      "Linear Algebra"
     ]
   },
   "definition_ja": "2 つの変量の偏差の積の平均値。正なら正の相関、負なら負の相関の傾向を表す。",
@@ -42,7 +42,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "線形代数の Nicholson（8.11 主成分分析の応用）には出てくる（3 件）。規則だけならこの呼び方で見出しが決まる。"
+    "線形代数の Nicholson は 8.11 で、確率変数の共分散（期待値による定義）として使う（3 件）。"
   ],
   "related": [
     "correlation-coefficient",
@@ -54,6 +54,22 @@
       "type": "wikipedia-langlink",
       "ja": "共分散",
       "en": "Covariance"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Unit 5（covariance は 0 件）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "8.11 An Application to Statistical Principal Component Analysis: covariance（3 件）"
     }
   ],
   "confidence": "likely",
@@ -62,10 +78,10 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {

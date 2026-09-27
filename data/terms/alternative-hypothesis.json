@@ -7,7 +7,9 @@
   },
   "en": {
     "term": "alternative hypothesis",
-    "alt": [],
+    "alt": [
+      "alternate hypothesis"
+    ],
     "uk": null,
     "register": "both"
   },
@@ -19,11 +21,11 @@
   ],
   "level": {
     "jp": [
-      "数I"
+      "数B"
     ],
     "us": [
-      "Algebra 1",
-      "AP Statistics"
+      "AP Statistics",
+      "Intro Statistics"
     ]
   },
   "definition_ja": "仮説検定で、帰無仮説が棄却されたときに採る仮説。Hₐ や H₁ と書く。",
@@ -44,7 +46,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "Hₐ は H sub a と読む。"
+    "書き方が分かれる。高等学校学習指導要領解説（数学B）は H₁、AP Statistics の CED と OpenStax Introductory Statistics は Hₐ と書く。読み上げでは the alternative hypothesis と言う（記号エントリ h-sub-a-alternative。記号を読む H sub one ／ H sub a は用例コーパスでは少ない）。"
   ],
   "related": [
     "null-hypothesis",
@@ -59,6 +61,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学B 統計的な推測: 対立仮説 H₁"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Unit 3（alternative hypothesis Hₐ）"
     }
   ],
   "confidence": "likely",
@@ -67,13 +81,15 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
-      "alternative hypothesis": 63
+      "alternative hypothesis": 63,
+      "alternate hypothesis": 1
     },
     "written": {
-      "alternative hypothesis": 111
+      "alternative hypothesis": 111,
+      "alternate hypothesis": 23
     },
     "sources": [
       "khan-ap-stats",
@@ -81,6 +97,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

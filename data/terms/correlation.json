@@ -58,7 +58,8 @@
   ],
   "pitfalls": [
     "「相関がない」は there is no correlation（no linear relationship）。",
-    "相関があっても因果関係（causation）があるとは限らない。"
+    "相関があっても因果関係（causation）があるとは限らない。",
+    "AP Statistics の CED は、散布図に見える傾向を association（topic 5.1）、相関係数 r を correlation（topic 5.2）と呼び分ける。"
   ],
   "related": [
     "correlation-coefficient",
@@ -76,6 +77,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 5.1（association）"
     }
   ],
   "confidence": "likely",
@@ -84,7 +91,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "correlation": 58,
@@ -103,6 +110,6 @@
       "openstax-introstats",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

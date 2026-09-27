@@ -22,9 +22,9 @@
       "中3"
     ],
     "us": [
-      "Algebra 1",
-      "Integrated Math 1",
-      "Integrated Math 2"
+      "Algebra 2",
+      "Precalculus",
+      "Integrated Math 3"
     ]
   },
   "definition_ja": "多項式の項のうち、次数がいちばん高い項。3x² − 5x + 1 では 3x²。",
@@ -47,14 +47,13 @@
   "pitfalls": [
     "leading term は「先頭に書いてある項」ではなく、次数が最も高い項。5 + 2x − x² の最高次の項は、最後に書いてある −x²。降べきの順（エントリ write-in-descending-order）に並べると先頭に来る。",
     "係数の符号も含めて答える。−3x² + 5x − 1 の最高次の項は 3x² ではなく −3x²。",
-    "多項式のグラフの端のふるまい（x を大きくしたり小さくしたりしたときにグラフがどちらへ向かうか、end behavior）は、最高次の項で決まる。最高次の項の係数だけを指すときは leading coefficient（エントリ leading-coefficient）。"
+    "多項式のグラフの端のふるまい（x を大きくしたり小さくしたりしたときにグラフがどちらへ向かうか、end behavior。エントリ end-behavior）は、最高次の項で決まる。最高次の項の係数だけを指すときは leading coefficient（エントリ leading-coefficient）。"
   ],
   "related": [
     "leading-coefficient",
     "degree",
-    "polynomial",
-    "term",
-    "write-in-descending-order"
+    "write-in-descending-order",
+    "end-behavior"
   ],
   "sources": [
     {
@@ -68,7 +67,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "leading term": 60
@@ -88,6 +87,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

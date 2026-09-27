@@ -29,7 +29,7 @@
     ]
   },
   "definition_ja": "2 つの変量の直線的な相関の強さと向きを表す −1 から 1 までの値 r。共分散を 2 つの標準偏差の積で割って求める。",
-  "definition_en": "A number r from −1 to 1 measuring the strength and direction of the linear relationship between two variables: the covariance divided by the product of the two standard deviations.",
+  "definition_en": "A number r between −1 and 1. Its sign tells whether the two variables tend to rise together or move in opposite directions, and its size tells how closely the points follow a line. It equals the covariance divided by the product of the two standard deviations.",
   "latex": "r = \\frac{s_{xy}}{s_x s_y}",
   "spoken_en": null,
   "examples": [
@@ -50,7 +50,7 @@
   ],
   "related": [
     "correlation",
-    "covariance",
+    "coefficient-of-determination",
     "scatter-plot"
   ],
   "sources": [
@@ -70,7 +70,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "correlation coefficient": 11
@@ -83,6 +83,6 @@
       "openstax-algtrig",
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

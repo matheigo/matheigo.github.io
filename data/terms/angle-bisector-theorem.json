@@ -3,9 +3,7 @@
   "ja": {
     "term": "角の二等分線の定理",
     "reading": "かくのにとうぶんせんのていり",
-    "alt": [
-      "角の二等分線と比"
-    ]
+    "alt": []
   },
   "en": {
     "term": "angle bisector theorem",
@@ -28,7 +26,7 @@
       "Integrated Math 2"
     ]
   },
-  "definition_ja": "△ABC で ∠A の二等分線が辺 BC と交わる点を D とすると、BD : DC = AB : AC になるという定理。外角の二等分線と直線 BC の交点についても同じ比が成り立つ（こちらは外分）。",
+  "definition_ja": "△ABC で ∠A の二等分線が辺 BC と交わる点を D とすると、BD : DC = AB : AC になるという定理。AB ≠ AC のとき、外角の二等分線と直線 BC の交点についても同じ比が成り立つ（こちらは外分）。",
   "definition_en": "In triangle ABC, if the bisector of angle A meets side BC at D, then BD : DC = AB : AC. In other words, the bisector cuts the opposite side in the ratio of the two sides that form the angle.",
   "latex": "\\frac{BD}{DC} = \\frac{AB}{AC}",
   "spoken_en": "BD over DC equals AB over AC",
@@ -40,7 +38,7 @@
     },
     {
       "en": "In triangle ABC, AB = 6, AC = 4, and BC = 5. The bisector of angle A meets BC at D. Use the angle bisector theorem to find BD.",
-      "ja": "△ABC において AB = 6, AC = 4, BC = 5 とする。∠A の二等分線と辺 BC の交点を D とするとき、線分 BD の長さを求めよ。",
+      "ja": "△ABC において AB = 6, AC = 4, BC = 5 とする。∠A の二等分線が辺 BC と交わる点を D とおく。角の二等分線の定理を用いて、線分 BD の長さを求めよ。",
       "register": "written"
     }
   ],
@@ -52,13 +50,14 @@
   ],
   "pitfalls": [
     "比は角をはさむ 2 辺の比。BD : DC = AB : AC で、AB : BC などと取り違えない。",
-    "日本の数A では内角の二等分線（D は辺 BC を内分）と外角の二等分線（交点は辺 BC を外分）をセットで学ぶ。"
+    "高等学校学習指導要領解説（数学A）は角の二等分線と辺の比の関係を外角の場合も含めて扱い、中学校学習指導要領解説は相似の活用の例としてこの性質の証明を挙げる。",
+    "米国の高校課程（CED・OpenStax・IM・CK-12）には比の定理としての angle bisector theorem が出てこない。CK-12 Geometry 4.21 の Angle Bisector Theorem は、角の二等分線上の点が角の 2 辺から等距離にあるという別の定理。名前は英語版 Wikipedia「Angle bisector theorem」（外角の節もある）。"
   ],
   "related": [
-    "triangle",
-    "angle",
-    "segment",
-    "perpendicular-bisector"
+    "angle-bisector",
+    "point-of-internal-division",
+    "point-of-external-division",
+    "similar-triangles"
   ],
   "sources": [
     {
@@ -70,7 +69,31 @@
       "type": "reference",
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
-      "note": "4.21 Angle Bisectors in Triangles"
+      "note": "4.21 Angle Bisectors in Triangles: 同名の Angle Bisector Theorem は角の二等分線上の点が角の 2 辺から等距離という別の定理（比の定理は 0 件）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Angle_bisector_theorem",
+      "note": "記事「Angle bisector theorem」（数学カテゴリから 4 段）: 冒頭で太字。外角の節もある"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A 図形の性質: 角の二等分線と辺の比（外角の場合も）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 3 学年 図形: 相似の活用の例（角の二等分線と辺の比の証明）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「角の二等分線の定理」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%A7%92%E3%81%AE%E4%BA%8C%E7%AD%89%E5%88%86%E7%B7%9A%E3%81%AE%E5%AE%9A%E7%90%86",
+      "note": "外角の場合は AB ≠ AC"
     }
   ],
   "confidence": "likely",
@@ -79,16 +102,16 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 angle bisector theorem（CK-12 Geometry 4.21 Angle Bisectors in Triangles・計 10 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（監査 4、2026-09-26）: 英語版 Wikipedia の記事名「Angle bisector theorem」（ja 記事「角の二等分線の定理」の langlink 先、数学カテゴリから 4 段、冒頭で太字）。corpus:decide が根拠にした CK-12 Geometry 4.21 の Angle Bisector Theorem（10 件）は「角の二等分線上の点は角の 2 辺から等距離」という別の定理で、比の定理は CED・OpenStax・IM・CK-12 に出てこない。register は主張しない。",
+      "raised": "2026-09-26"
     }
   ]
 }

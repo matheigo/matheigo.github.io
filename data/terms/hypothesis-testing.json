@@ -6,19 +6,19 @@
     "alt": []
   },
   "en": {
-    "term": "hypothesis testing",
+    "term": "hypothesis test",
     "alt": [],
     "uk": null,
     "variants": [
       {
         "term": "significance test",
         "register": "spoken",
-        "note": "話し言葉はすべて Khan Academy で、書き言葉には出てこない。"
+        "note": "話し言葉はすべて Khan Academy で、用例コーパスの書き言葉（OpenStax Introductory Statistics）には出てこない。AP Statistics の CED は significance test とも書く（6 件）。"
       },
       {
-        "term": "hypothesis testing",
+        "term": "hypothesis test",
         "register": "written",
-        "note": "hypothesis test を含めて、話し言葉では少なく、書き言葉に多い（すべて OpenStax Introductory Statistics）。"
+        "note": "hypothesis testing を含めて、話し言葉では少なく、書き言葉に多い（すべて OpenStax Introductory Statistics）。OpenStax と AP Statistics の CED は数えられる名詞 hypothesis test（a hypothesis test）を主に使う。"
       }
     ],
     "register": "written"
@@ -31,10 +31,10 @@
   ],
   "level": {
     "jp": [
-      "数I"
+      "数I",
+      "数B"
     ],
     "us": [
-      "Algebra 1",
       "AP Statistics",
       "Intro Statistics"
     ]
@@ -50,8 +50,8 @@
       "register": "spoken"
     },
     {
-      "en": "Conduct a hypothesis test at the 5% significance level.",
-      "ja": "有意水準 5% で仮説検定を行え。",
+      "en": "Using a 5% significance level, carry out a hypothesis test of the claim.",
+      "ja": "有意水準 5% で、その主張の仮説検定を行え。",
       "register": "written"
     }
   ],
@@ -76,6 +76,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Unit 3（hypothesis test。significance test は 6 件）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学B 統計的な推測: 仮説検定の方法"
     }
   ],
   "confidence": "likely",
@@ -84,14 +96,14 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "significance test": 36,
-      "hypothesis testing": 7
+      "hypothesis test": 7
     },
     "written": {
-      "hypothesis testing": 245
+      "hypothesis test": 245
     },
     "sources": [
       "khan-ap-stats",
@@ -99,6 +111,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

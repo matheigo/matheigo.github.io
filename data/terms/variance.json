@@ -22,14 +22,14 @@
       "数I"
     ],
     "us": [
-      "Algebra 1",
-      "AP Statistics"
+      "AP Statistics",
+      "Intro Statistics"
     ]
   },
   "definition_ja": "各データの偏差の 2 乗の平均値。データの散らばりの大きさを表す。",
   "definition_en": "The mean of the squared deviations of the data from their mean; a measure of spread.",
   "latex": "s^2 = \\frac{1}{n}\\sum_{i=1}^{n}(x_i - \\bar{x})^2",
-  "spoken_en": "s squared equals one over n times the sum of x sub i minus x bar squared",
+  "spoken_en": "s squared equals one over n times the sum from i equals one to n of the quantity x sub i minus x bar, squared",
   "examples": [
     {
       "en": "The variance is in squared units, which is why we usually take the square root.",
@@ -44,7 +44,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の数I は n で割るが、米国の教科書の sample variance（s²）は n − 1 で割る（OpenStax Introductory Statistics）。n で割るのは母集団の分散（population variance, σ²）の式。"
+    "センター試験 平成 30 年度 数学I の問題文は分散 s² を n で割る式で示し、日本語版 Wikipedia「分散 (確率論)」も n で割る分散（標本分散）と n − 1 で割る不偏分散を分ける。高等学校学習指導要領解説（数学I）は分散を、平均値との差に基づいてデータの散らばりの度合いを表す指標と書く。OpenStax Introductory Statistics（Measures of the Spread of the Data）と AP Statistics の CED（topic 1.7）の sample variance（s²）は n − 1 で割る。n で割るのは母集団の分散（population variance, σ²。エントリ population-variance）の式。"
   ],
   "related": [
     "standard-deviation",
@@ -60,6 +60,24 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I データの分析: 分散、標準偏差（平均値との差に基づく散らばりの指標）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学Ⅰ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?f=abm00033140.pdf&n=h30+suugaku1+01suugaku1.pdf",
+      "note": "分散 s² を n で割る式"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 1.7（sample variance）"
     }
   ],
   "confidence": "likely",
@@ -68,7 +86,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "variance": 366
@@ -84,6 +102,6 @@
       "yt:3blue1brown",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

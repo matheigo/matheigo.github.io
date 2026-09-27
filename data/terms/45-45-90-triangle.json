@@ -10,7 +10,8 @@
   "en": {
     "term": "isosceles right triangle",
     "alt": [
-      "45-45-90 triangle"
+      "45-45-90 triangle",
+      "right isosceles triangle"
     ],
     "uk": null
   },
@@ -47,9 +48,9 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "IM Geometry は isosceles right triangle と呼び、正方形を対角線で半分にした形として扱う（Half a Square の課）。CK-12 は 45-45-90 triangle と呼ぶ。",
-    "45-45-90 triangle は forty-five forty-five ninety triangle と読む。",
-    "斜辺から直角をはさむ辺を求めるときは √2 で割るので、答えは分母を有理化した形になる（10 ÷ √2 = 5√2。エントリ rationalizing-the-denominator）。"
+    "CK-12 Geometry 4.42 は isosceles right triangle を用語として定義し、節の名前と glossary では 45-45-90 triangle を使い、辺の比を 45-45-90 Theorem と名づける。IM Geometry 4.2 Half a Square も isosceles right triangle と呼び（right isosceles triangle とも）、正方形を対角線で半分にした形として扱う。",
+    "45-45-90 triangle の数字は forty-five, forty-five, ninety と読む（本プロジェクトの読みの案内）。",
+    "斜辺から直角をはさむ辺を求めるときは √2 で割る（10 ÷ √2 = 5√2）。CK-12 4.42 は分母を有理化した形で書き、IM Geometry 4.2 は 12/√2 のまま書く（エントリ rationalizing-the-denominator）。"
   ],
   "related": [
     "special-right-triangles",
@@ -64,6 +65,12 @@
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
       "note": "Geometry 4.2 Half a Square"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.42 45-45-90 Right Triangles"
     }
   ],
   "confidence": "likely",
@@ -72,28 +79,30 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "45-45-90 triangle": 2,
       "isosceles right triangle": 3
     },
     "written": {
+      "right isosceles triangle": 1,
       "isosceles right triangle": 1
     },
     "sources": [
       "khan-algebra",
       "khan-ap-calc",
+      "openstax-calculus",
       "openstax-prealgebra",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは IM の呼び方 isosceles right triangle（Geometry 4.2 Half a Square・Grade 8 6.1 Organizing Data・Grade 8 1.8 Rotation Patterns・計 9 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 2 件（10 未満））。見出しは IM の呼び方 isosceles right triangle（Geometry 4.2 Half a Square・Grade 8 6.1 Organizing Data・Grade 8 1.8 Rotation Patterns・計 9 件）。register は主張しない。",
+      "raised": "2026-09-26"
     }
   ]
 }

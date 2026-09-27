@@ -46,7 +46,7 @@
   "collocations": [],
   "pitfalls": [
     "tri- は「3 つの」の意味。項が 1 つなら monomial（エントリ monomial）、2 つなら binomial（エントリ binomial）。",
-    "米国の Algebra 1 では、x² + bx + c の形の式を因数分解することを factor trinomials と言う。",
+    "OpenStax Elementary Algebra は x² + bx + c ／ ax² + bx + c の因数分解を Factor Trinomials of the Form … の節で扱う（IM Algebra 1 は trinomial を使わず、Rewriting Quadratic Expressions in Factored Form）。",
     "x² + 6x + 9 = (x + 3)² のように、2 乗の形に因数分解できる三項式は perfect square trinomial（完全平方式、エントリ perfect-square-trinomial）と呼ぶ。"
   ],
   "related": [
@@ -65,6 +65,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Algebra 1 7.6〜7.10 Rewriting Quadratic Expressions in Factored Form（trinomial は 0 件）"
     }
   ],
   "confidence": "likely",
@@ -73,7 +79,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "trinomial": 49
@@ -94,6 +100,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

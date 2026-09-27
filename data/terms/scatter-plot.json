@@ -24,6 +24,7 @@
       "数I"
     ],
     "us": [
+      "Pre-Algebra",
       "Algebra 1",
       "AP Statistics",
       "Integrated Math 1",
@@ -48,7 +49,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "scatterplot と 1 語で書くこともある（用例コーパスでは同じ言い方として数えた）。OpenStax Introductory Statistics は scatter diagram とも書く（22 件）。"
+    "AP Statistics の CED は 1 語の scatterplot だけを使う（16 件、topic 5.1）。用例コーパスでも scatterplot は同じ言い方として数えた。OpenStax Algebra and Trigonometry は scatter diagram とも書く（22 件。Precalculus 21 件、Introductory Statistics は 1 件）。"
   ],
   "related": [
     "correlation",
@@ -64,6 +65,16 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 5.1（scatterplot）"
     }
   ],
   "confidence": "likely",
@@ -72,7 +83,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "scatter plot": 32
@@ -87,6 +98,6 @@
       "openstax-algtrig",
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }
