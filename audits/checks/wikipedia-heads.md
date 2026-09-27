@@ -2,7 +2,7 @@
 
 作成: 2026-09-27 ／ `python3 scripts/audit/wikipedia_heads.py`。flag corpus-reference-fallback の note が「見出しは Wikipedia の記事名」の語。記事が見出しと同じ概念かを機械で確かめる方法は無いので、監査で記事を読む（`python3 scripts/audit/enwiki.py "<記事>" "<見出し>"`）。別の概念なら lib.ts `WIKIPEDIA_NOT_SAME` に理由付きで足して数え直す。
 
-- 語: **19**（verified 7）
+- 語: **19**（verified 12）
 
 | バッチ | id | confidence | en.term | ja.term | 記事 | 記事の見つけ方 |
 |---|---|---|---|---|---|---|
@@ -12,11 +12,11 @@
 | 15 | fractional-part | verified | fractional part | 小数部分 | Fractional part | ja の langlink 先 |
 | 15 | nested-radical | verified | nested radical | 二重根号 | Nested radical | en.term のリダイレクト先 |
 | 15 | symmetric-expression | verified | symmetric polynomial | 対称式 | Symmetric polynomial | ja の langlink 先 |
-| 18 | cevas-theorem | likely | Ceva's theorem | チェバの定理 | Ceva's theorem | ja の langlink 先 |
-| 18 | dihedral-angle | likely | dihedral angle | 二面角 | Dihedral angle | ja の langlink 先 |
-| 18 | menelauss-theorem | likely | Menelaus's theorem | メネラウスの定理 | Menelaus's theorem | ja の langlink 先 |
-| 18 | numeral-system | likely | numeral system | 記数法 | Numeral system | en.term のリダイレクト先 |
-| 18 | power-of-a-point | likely | power of a point | 方べきの定理 | Power of a point | ja の langlink 先 |
+| 18 | cevas-theorem | verified | Ceva's theorem | チェバの定理 | Ceva's theorem | ja の langlink 先 |
+| 18 | dihedral-angle | verified | dihedral angle | 二面角 | Dihedral angle | ja の langlink 先 |
+| 18 | menelauss-theorem | verified | Menelaus's theorem | メネラウスの定理 | Menelaus's theorem | ja の langlink 先 |
+| 18 | numeral-system | verified | numeral system | 記数法 | Numeral system | en.term のリダイレクト先 |
+| 18 | power-of-a-point | verified | power of a point | 方べきの定理 | Power of a point | ja の langlink 先 |
 | 18 | relationship-between-roots-and-coefficients | verified | Vieta's formulas | 解と係数の関係 | Vieta's formulas | ja の langlink 先 |
 | 31 | bezouts-identity | likely | Bézout's identity | ベズーの等式 | Bézout's identity | ja の langlink 先 |
 | 31 | chinese-remainder-theorem | likely | Chinese remainder theorem | 中国剰余定理 | Chinese remainder theorem | ja の langlink 先 |

@@ -1,30 +1,12 @@
 {
   "checked": "2026-09-27",
-  "named": 383,
+  "named": 394,
   "noReference": [
-    {
-      "collection": "terms",
-      "id": "auxiliary-angle-form",
-      "field": "mapping_note",
-      "sentence": "米国では write a sin θ + b cos θ as a single sine function（R sin(θ + α) の形に書く）と手順で言う。"
-    },
-    {
-      "collection": "terms",
-      "id": "cauchy-schwarz-inequality",
-      "field": "pitfalls[0]",
-      "sentence": "米国の高校課程では名前を出さず、ベクトルの |u · v| ≤ |u||v| として触れる程度。"
-    },
     {
       "collection": "terms",
       "id": "equivalence-relation",
       "field": "pitfalls[0]",
       "sentence": "米国の Geometry で習う reflexive property などは、等号や合同についての同じ性質の名前。"
-    },
-    {
-      "collection": "terms",
-      "id": "nth-roots-of-unity",
-      "field": "pitfalls[1]",
-      "sentence": "数II の 1 の 3 乗根 ω（ω² + ω + 1 = 0、ω³ = 1）は、英語でも cube roots of unity と呼び、ω（omega）の記号を使うが、米国の高校課程では ω に決まった呼び名や性質の練習はほぼない。"
     },
     {
       "collection": "terms",
@@ -79,13 +61,6 @@
     },
     {
       "collection": "terms",
-      "id": "angle-addition-formulas",
-      "field": "pitfalls[0]",
-      "sentence": "値を「求めよ」は、米国の問題では find the exact value（小数ではなく正確な値）と書くことが多い。",
-      "entrySources": "OpenStax Algebra and Trigonometry 2e"
-    },
-    {
-      "collection": "terms",
       "id": "angle-sum-of-a-triangle",
       "field": "mapping_note",
       "sentence": "日本語は「三角形の内角の和」という量の名前で言うが、米国の Geometry はこれを定理の名前 triangle sum theorem（triangle angle sum theorem）で呼ぶ。",
@@ -135,13 +110,6 @@
     },
     {
       "collection": "terms",
-      "id": "even-function",
-      "field": "pitfalls[0]",
-      "sentence": "米国の問題は even, odd, or neither（どちらでもない）の 3 択で聞くことが多い。",
-      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1"
-    },
-    {
-      "collection": "terms",
       "id": "expanding-and-condensing-logs",
       "field": "mapping_note",
       "sentence": "米国の授業では、対数の性質で 1 つの log を和・差に分けることを expand、和・差を 1 つの log にまとめることを condense と呼ぶ。",
@@ -153,20 +121,6 @@
       "field": "pitfalls[0]",
       "sentence": "米国の教科書は係数に D, E, F を使うことが多い。",
       "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Intermediate Algebra 2e"
-    },
-    {
-      "collection": "terms",
-      "id": "geometric-mean",
-      "field": "pitfalls[0]",
-      "sentence": "米国の Geometry では、直角三角形の高さが斜辺の 2 つの部分の geometric mean になる（相似の単元）ことで出てくる。",
-      "entrySources": "OpenStax Introductory Statistics 2e"
-    },
-    {
-      "collection": "terms",
-      "id": "half-angle-formulas",
-      "field": "pitfalls[0]",
-      "sentence": "米国の教科書は sin(α/2) = ±√((1 − cos α)/2) と平方根の形で書く（符号は α/2 の象限で決める）。",
-      "entrySources": "OpenStax Algebra and Trigonometry 2e"
     },
     {
       "collection": "terms",
@@ -191,13 +145,6 @@
     },
     {
       "collection": "terms",
-      "id": "initial-side",
-      "field": "pitfalls[0]",
-      "sentence": "始線を x 軸の正の部分にとった角を、米国では an angle in standard position（標準の位置の角）と呼ぶ。",
-      "entrySources": "OpenStax Algebra and Trigonometry 2e"
-    },
-    {
-      "collection": "terms",
       "id": "law-of-detachment",
       "field": "pitfalls[0]",
       "sentence": "米国の Geometry の教科書では law of detachment、論理学・離散数学では modus ponens と呼ぶ。",
@@ -212,20 +159,6 @@
     },
     {
       "collection": "terms",
-      "id": "permutation",
-      "field": "pitfalls[0]",
-      "sentence": "米国の教科書では P(n, r) や ₙPᵣ と書く。",
-      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 3"
-    },
-    {
-      "collection": "terms",
-      "id": "proving-an-identity",
-      "field": "pitfalls[1]",
-      "sentence": "証明の途中で両辺に同じ操作をして 1 = 1 を導く書き方は、米国の教科書でも避ける（片側を変形していく）。",
-      "entrySources": "OpenStax Algebra and Trigonometry 2e"
-    },
-    {
-      "collection": "terms",
       "id": "pythagorean-identity",
       "field": "pitfalls[0]",
       "sentence": "米国の教科書は 1 + tan²θ = sec²θ、1 + cot²θ = csc²θ も合わせて Pythagorean identities（複数形）と呼ぶ。",
@@ -233,24 +166,10 @@
     },
     {
       "collection": "terms",
-      "id": "rational-expression",
-      "field": "pitfalls[0]",
-      "sentence": "米国の教科書は excluded values（または restrictions）と呼ぶ。",
-      "entrySources": "OpenStax Algebra and Trigonometry 2e"
-    },
-    {
-      "collection": "terms",
       "id": "rational-function",
       "field": "mapping_note",
       "sentence": "米国の rational function は多項式 ÷ 多項式の関数全般を指し、日本語では有理関数に当たる。",
       "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1; 高等学校学習指導要領（平成30年告示）解説 数学編 理数編"
-    },
-    {
-      "collection": "terms",
-      "id": "remainder-theorem",
-      "field": "pitfalls[0]",
-      "sentence": "2 次式で割った余り（ax + b の形）を求める問題は、米国の高校ではあまり扱わない。",
-      "entrySources": "OpenStax Algebra and Trigonometry 2e"
     },
     {
       "collection": "terms",
@@ -293,20 +212,6 @@
       "field": "pitfalls[1]",
       "sentence": "trapezoid（台形）は米国の言い方。",
       "entrySources": "OpenStax Calculus Volume 2; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020); English Wikipedia"
-    },
-    {
-      "collection": "terms",
-      "id": "trigonometric-function",
-      "field": "pitfalls[0]",
-      "sentence": "米国の教科書は sin・cos・tan に加えて csc（cosecant）・sec（secant）・cot（cotangent）も使う。",
-      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1"
-    },
-    {
-      "collection": "terms",
-      "id": "triple-angle-formulas",
-      "field": "pitfalls[0]",
-      "sentence": "米国の高校課程では公式として覚えさせず、必要なら加法定理から導く。",
-      "entrySources": "English Wikipedia"
     },
     {
       "collection": "terms",

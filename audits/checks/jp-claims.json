@@ -152,8 +152,15 @@
       "collection": "terms",
       "id": "am-gm-inequality",
       "field": "pitfalls[0]",
-      "sentence": "日本の高校（数II）では最小値を求める定番の道具。",
-      "g1": true
+      "sentence": "学習指導要領解説（数学II いろいろな式）は、相加・相乗平均の関係などを用いて不等式が成り立つことを証明する、と書く。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "am-gm-inequality",
+      "field": "pitfalls[0]",
+      "sentence": "センター試験・共通テストは、最小値を求める問題で相加平均と相乗平均の関係を使わせる（センター試験 平成27年度 本試験 数学II、共通テスト 令和3年度 第1日程 数学II ほか）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -319,16 +326,16 @@
     {
       "collection": "terms",
       "id": "base-n",
-      "field": "mapping_note",
-      "sentence": "in base ／ written in base ／ base-n representation をまとめて数えると、OpenStax Algebra and Trigonometry の本文にはわずかで、用例コーパスの話し言葉のほうが多い（大半が Khan Academy の中学の講義）。",
+      "field": "pitfalls[0]",
+      "sentence": "共通テスト（令和 6 年度 本試験 数学I・数学A 第 4 問）は「n 進数とは n 進法で表された数のこと」と書き、表し方と数を呼び分ける。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "base-n",
       "field": "pitfalls[1]",
-      "sentence": "日本の教科書は 142₍₅₎ と括弧付きの添え字で書く。",
-      "g1": true
+      "sentence": "センター試験（平成 28 年度 本試験 数学I・数学A 第 4 問）は 11011₍₂₎ のように括弧付きの添え字で書く。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -340,15 +347,8 @@
     {
       "collection": "terms",
       "id": "basic-properties-of-probability",
-      "field": "pitfalls[0]",
-      "sentence": "日本の「確率の基本性質」の範囲とは少し違う。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "basic-properties-of-probability",
-      "field": "pitfalls[1]",
-      "sentence": "数A の確率の基本性質と同じ内容。",
+      "field": "mapping_note",
+      "sentence": "学習指導要領解説（数学A）が確率の性質や法則として挙げるのは 0 ≦ P(A) ≦ 1、P(∅) = 0・P(U) = 1、互いに排反な事象の P(A ∪ B) = P(A) + P(B)、余事象の確率で、乗法定理は入らない。",
       "g1": false
     },
     {
@@ -383,7 +383,7 @@
       "collection": "terms",
       "id": "binomial-probability",
       "field": "pitfalls[0]",
-      "sentence": "日本の ₙCₖ は、英語では括弧の記号 (n k)（縦に並べる）で書き、n choose k と読む。",
+      "sentence": "高等学校学習指導要領〔用語・記号〕（数学A）は nCr と書く。",
       "g1": false
     },
     {
@@ -486,6 +486,20 @@
     },
     {
       "collection": "terms",
+      "id": "clockwise",
+      "field": "mapping_note",
+      "sentence": "回転の向きとしての「負の向き」は学習指導要領解説・共通テスト／センター試験・日本語版 Wikipedia には出てこない（日本語版 Wikipedia「時計回り・反時計回り」は、数学では反時計回りを正の向き、測量の方位角では時計回りを正の向きとする）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "clockwise",
+      "field": "mapping_note",
+      "sentence": "共通テストの問題文の「y 軸上を負の向きに」（令和6年度 本試験 数学I 第3問）は座標が減る向きのことで、英語は in the negative direction（clockwise ではない）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "closed-interval",
       "field": "pitfalls[0]",
       "sentence": "共通テスト・センター試験の数学I は定義域を 0 ≦ x ≦ 3 のように不等式で書き、学習指導要領解説で閉区間 [a, b] が出るのは数学III の積分だけ。",
@@ -523,22 +537,15 @@
       "collection": "terms",
       "id": "combination-with-repetition",
       "field": "mapping_note",
-      "sentence": "ₙHᵣ は日本の教科書の記法なので、英語で書くときは ₙ₊ᵣ₋₁Cᵣ（二項係数）の形に直す。",
-      "g1": true
-    },
-    {
-      "collection": "terms",
-      "id": "combination-with-repetition",
-      "field": "pitfalls[0]",
-      "sentence": "ₙHᵣ の H は日本の教科書の記号。",
-      "g1": true
+      "sentence": "日本語版 Wikipedia「重複組合せ」は総数を H の記号で書くが、高等学校学習指導要領〔用語・記号〕の数学A の記号は nPr・nCr・n! で H は無い。",
+      "g1": false
     },
     {
       "collection": "terms",
       "id": "combination",
       "field": "pitfalls[1]",
-      "sentence": "ₙCᵣ は日本の教科書の書き方。",
-      "g1": true
+      "sentence": "高等学校学習指導要領〔用語・記号〕（数学A）は nCr と書く。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -580,13 +587,6 @@
       "id": "completely-randomized-design",
       "field": "mapping_note",
       "sentence": "見出しの「完全無作為化計画」は学習指導要領解説に無い、本プロジェクトの訳語。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "complex-number",
-      "field": "pitfalls[0]",
-      "sentence": "米国の教科書では a + bi の形を standard form（または rectangular form）と呼ぶ（OpenStax Algebra and Trigonometry）。",
       "g1": false
     },
     {
@@ -642,8 +642,8 @@
       "collection": "terms",
       "id": "conditional-probability",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書は P_A(B) と書くが、英語では P(B | A) と書き、the probability of B given A と読む。",
-      "g1": true
+      "sentence": "学習指導要領解説（数学A）は P_A(B) と書くが、AP Statistics の CED（topic 2.6）と OpenStax Introductory Statistics は P(B | A) の形で書き、the probability of B given A と読む。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -727,13 +727,6 @@
       "id": "conic-section",
       "field": "pitfalls[0]",
       "sentence": "日本の数C は「二次曲線」、英語は円錐の切り口として conic section と呼ぶ。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "conjugate-roots",
-      "field": "mapping_note",
-      "sentence": "日本の「共役な解」は、実数係数の方程式で a + bi が解なら a − bi も解になる、という関係を指す。",
       "g1": false
     },
     {
@@ -892,6 +885,13 @@
     },
     {
       "collection": "terms",
+      "id": "counterclockwise",
+      "field": "mapping_note",
+      "sentence": "共通テスト・センター試験の問題文の「x 軸上を正の向きに」（令和6年度 本試験 数学I 第3問）、「数直線上を…正の向きに」（平成28年度 本試験 数学II・数学B 第5問）は座標が増える向きのことで、英語は in the positive direction（counterclockwise ではない）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "cpctc",
       "field": "mapping_note",
       "sentence": "見出しの「CPCTC」は英語の略語をそのまま使う（学習指導要領解説に無い）。",
@@ -986,13 +986,6 @@
       "id": "definite-integral",
       "field": "pitfalls[0]",
       "sentence": "学習指導要領解説（数学II）は、面積 S(t) の導関数が f(t) になることから定積分が面積を表すことを導く扱いと、区分求積法の考えで定義する扱いに触れる。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "degree-measure",
-      "field": "pitfalls[0]",
-      "sentence": "用例コーパスでは degree measure は話・書とも少ない（話し言葉は Khan Academy の中学の講義だけ）。",
       "g1": false
     },
     {
@@ -1272,8 +1265,8 @@
       "collection": "terms",
       "id": "equal-angles",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書は ∠A = ∠B と書くが、∠A ≅ ∠B と m∠A = m∠B を使い分ける書き方もある。",
-      "g1": true
+      "sentence": "学習指導要領解説（中学校、第 2 学年）は ∠AOC = ∠BOD のように角の大きさの等しさを = で書く。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -1601,7 +1594,14 @@
       "collection": "terms",
       "id": "general-addition-rule",
       "field": "mapping_note",
-      "sentence": "日本の数A の「確率の加法定理」は互いに排反な事象の式 P(A ∪ B) = P(A) + P(B) を指し、重なりを引く式は「和事象の確率」として別に扱う。",
+      "sentence": "日本語版 Wikipedia「加法定理」は、確率の加法定理（和の法則）を、事象が互いに排反なら確率の和に分けられるという式とし、重なりがあるときは包除原理によると書く（「数学 (教科)」も数学A の項目に「排反と加法定理」を挙げる）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "general-addition-rule",
+      "field": "mapping_note",
+      "sentence": "学習指導要領解説（数学A）も、互いに排反なときの P(A ∪ B) = P(A) + P(B) を確率の性質や法則に挙げる。",
       "g1": false
     },
     {
@@ -1615,14 +1615,14 @@
       "collection": "terms",
       "id": "general-multiplication-rule",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書は条件付き確率を P_A(B) と書くが、OpenStax Introductory Statistics は P(B | A) と書き（P(A | B) と合わせて 44 件）、B given A と読む。",
-      "g1": true
+      "sentence": "学習指導要領解説（数学A）は条件付き確率を P_A(B) と書き、P(A ∩ B) = P(A)P_A(B) を「一般的な確率の乗法定理」、独立な試行の P(C) = P(A)P(B) を「確率の乗法定理」と呼ぶ。",
+      "g1": false
     },
     {
       "collection": "terms",
       "id": "general-solution",
       "field": "definition_ja",
-      "sentence": "方程式の解をすべて、整数 n や任意定数 C を使って 1 つの式で表したもの。",
+      "sentence": "方程式の解をすべて、整数 n や任意定数 C を含む式で表したもの。",
       "g1": false
     },
     {
@@ -1664,8 +1664,8 @@
       "collection": "terms",
       "id": "greatest-common-divisor",
       "field": "pitfalls[1]",
-      "sentence": "日本の教科書は記号 gcd(a, b) を使わず言葉で書く。",
-      "g1": true
+      "sentence": "共通テスト・センター試験の問題文は最大公約数を言葉で書き、記号 gcd は出てこない（日本語版 Wikipedia「最大公約数」は gcd(a, b) と書く）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -1676,24 +1676,10 @@
     },
     {
       "collection": "terms",
-      "id": "half-angle-formulas",
-      "field": "pitfalls[0]",
-      "sentence": "米国の教科書は sin(α/2) = ±√((1 − cos α)/2) と平方根の形で書く（符号は α/2 の象限で決める）。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "half-angle-formulas",
-      "field": "pitfalls[0]",
-      "sentence": "日本の教科書は 2 乗の形で書く。",
-      "g1": true
-    },
-    {
-      "collection": "terms",
       "id": "hexadecimal",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書は 2F₍₁₆₎ のように括弧つきの添字で基数を書く。",
-      "g1": true
+      "sentence": "センター試験（平成 28 年度 本試験 数学I・数学A 第 4 問）は 11011₍₂₎ のように括弧つきの添字で基数を書く。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -1782,22 +1768,8 @@
     {
       "collection": "terms",
       "id": "imaginary-number",
-      "field": "pitfalls[0]",
-      "sentence": "英語の imaginary number は、教科書によって bi（純虚数）だけを指すこともある（OpenStax Algebra and Trigonometry は bi の形の数として説明する）。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "imaginary-number",
-      "field": "pitfalls[0]",
-      "sentence": "日本の「虚数」は b ≠ 0 の複素数全体。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "imaginary-solution",
       "field": "mapping_note",
-      "sentence": "日本の「虚数解」（実数でない解）をはっきり言うときは nonreal (complex) solution、imaginary solution。",
+      "sentence": "日本語版 Wikipedia「虚数」は、実数でない複素数 a + bi（b ≠ 0）を虚数とする（センター試験 平成 27 年度 数学II も 1 + 2i を虚数と呼ぶ）。",
       "g1": false
     },
     {
@@ -1853,7 +1825,7 @@
       "collection": "terms",
       "id": "independence-of-events",
       "field": "pitfalls[1]",
-      "sentence": "数 A の「独立な試行」も同じ考え方。",
+      "sentence": "学習指導要領解説（数学A）は、独立な試行（2 つの試行の結果が互いに影響を及ぼさない試行）の確率を P(C) = P(A)P(B) で扱い、事象の独立・従属は理数数学I の発展・拡充の内容に挙げる。",
       "g1": false
     },
     {
@@ -1952,6 +1924,13 @@
       "id": "influential-point",
       "field": "mapping_note",
       "sentence": "見出しの「影響点」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "initial-side",
+      "field": "pitfalls[1]",
+      "sentence": "極座標（学習指導要領解説 数学C）の始線は、英語では polar axis（エントリ polar-coordinates）。",
       "g1": false
     },
     {
@@ -2649,13 +2628,6 @@
     },
     {
       "collection": "terms",
-      "id": "nth-roots-of-unity",
-      "field": "pitfalls[1]",
-      "sentence": "数II の 1 の 3 乗根 ω（ω² + ω + 1 = 0、ω³ = 1）は、英語でも cube roots of unity と呼び、ω（omega）の記号を使うが、米国の高校課程では ω に決まった呼び名や性質の練習はほぼない。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "nth-term-test",
       "field": "mapping_note",
       "sentence": "見出しの「n 項判定法」は学習指導要領解説に無い、本プロジェクトの訳語。",
@@ -2722,13 +2694,6 @@
       "id": "optimization-problem",
       "field": "definition_ja",
       "sentence": "微分を使うほか、不等式の表す領域を使うもの（線形計画法。学習指導要領解説の数学II の例）もある。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "order-matters",
-      "field": "pitfalls[0]",
-      "sentence": "用例コーパスでは order matters ／ order doesn't matter ／ order does not matter をまとめて数え、話し言葉（Khan Academy の中学の講義が最も多い）・書き言葉（大半が OpenStax Algebra and Trigonometry）の両方に出てくる。",
       "g1": false
     },
     {
@@ -2840,14 +2805,7 @@
       "collection": "terms",
       "id": "permutation",
       "field": "pitfalls[0]",
-      "sentence": "記号は日本では ₙPᵣ。",
-      "g1": true
-    },
-    {
-      "collection": "terms",
-      "id": "permutation",
-      "field": "pitfalls[0]",
-      "sentence": "米国の教科書では P(n, r) や ₙPᵣ と書く。",
+      "sentence": "高等学校学習指導要領〔用語・記号〕（数学A）は nPr と書く。",
       "g1": false
     },
     {
@@ -2874,9 +2832,23 @@
     {
       "collection": "terms",
       "id": "phase-shift",
+      "field": "mapping_note",
+      "sentence": "見出しの「位相のずれ」は学習指導要領解説に無い、本プロジェクトの訳語（日本語版 Wikipedia「位相のずれ」は量子力学の散乱理論の位相差の記事で、別の概念）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "phase-shift",
+      "field": "mapping_note",
+      "sentence": "学習指導要領解説（数学II 三角関数）は、この内容を三角関数の式の定数とグラフの関係として扱い、「位相」の語は使わない。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "phase-shift",
       "field": "pitfalls[1]",
-      "sentence": "日本の教科書では「x 軸方向に π/2 だけ平行移動」と表す。",
-      "g1": true
+      "sentence": "学習指導要領解説（数学I）と共通テスト（令和7年度 本試験 数学I 第3問）は、グラフの横のずれを「x 軸方向に p だけ平行移動」と書く（二次関数のグラフ）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -2926,6 +2898,13 @@
       "field": "mapping_note",
       "sentence": "日本では数II で「点 (x₁, y₁) を通り傾き m の直線の方程式」として同じ式を学ぶが、形の名前はない。",
       "g1": true
+    },
+    {
+      "collection": "terms",
+      "id": "polynomial-equation-of-higher-degree",
+      "field": "pitfalls[1]",
+      "sentence": "学習指導要領解説（数学II）は、簡単な高次方程式を因数定理などを用いて解くことを扱う。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -3076,13 +3055,6 @@
     },
     {
       "collection": "terms",
-      "id": "proving-an-identity",
-      "field": "pitfalls[1]",
-      "sentence": "証明の途中で両辺に同じ操作をして 1 = 1 を導く書き方は、米国の教科書でも避ける（片側を変形していく）。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "pythagorean-identity",
       "field": "mapping_note",
       "sentence": "見出しの「ピタゴラスの恒等式」は学習指導要領解説に無い、本プロジェクトの訳語。",
@@ -3120,8 +3092,8 @@
       "collection": "terms",
       "id": "quadrantal-angle",
       "field": "mapping_note",
-      "sentence": "日本の教科書では 0°, 90°, 180°, 270° などの角にまとめた名前をつけない。",
-      "g1": true
+      "sentence": "学習指導要領解説・共通テスト／センター試験・日本語版 Wikipedia にも、動径が座標軸に重なる角をまとめて呼ぶ名前は出てこない。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -3168,16 +3140,16 @@
     {
       "collection": "terms",
       "id": "quartic-equation",
-      "field": "definition_ja",
-      "sentence": "高校では複2次式 x⁴ + ax² + b = 0 を x² = t とおいて解く形が多い。",
+      "field": "pitfalls[1]",
+      "sentence": "学習指導要領解説（数学II）は、x⁴ + x² − 2 = 0 のような複二次方程式（x² = t とおくと t の 2 次方程式になる）を取り上げる。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "radian",
       "field": "pitfalls[0]",
-      "sentence": "日本の答案ではラジアンの単位を省略して θ = π/3 と書く。",
-      "g1": true
+      "sentence": "センター試験（平成 30 年度 本試験 数学II 第 1 問）は、度との換算では … π ラジアンと書き、θ の範囲には単位を付けない。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -3244,13 +3216,6 @@
     },
     {
       "collection": "terms",
-      "id": "rational-expression",
-      "field": "pitfalls[0]",
-      "sentence": "米国の教科書は excluded values（または restrictions）と呼ぶ。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "rational-function",
       "field": "mapping_note",
       "sentence": "日本の数III の「分数関数」は、学習指導要領解説では「簡単な分数関数」のグラフを平行移動と結びつけて扱う。",
@@ -3288,8 +3253,8 @@
       "collection": "terms",
       "id": "reference-angle",
       "field": "mapping_note",
-      "sentence": "日本の教科書には名前がない。",
-      "g1": true
+      "sentence": "見出しの「基準角」は学習指導要領解説に無い、本プロジェクトの訳語（「基準角」「参照角」は学習指導要領解説・共通テスト／センター試験・日本語版 Wikipedia に出てこない）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -3321,23 +3286,9 @@
     },
     {
       "collection": "terms",
-      "id": "relatively-prime",
-      "field": "mapping_note",
-      "sentence": "日本の教科書は「互いに素」を 2 つの整数について定義する。",
-      "g1": true
-    },
-    {
-      "collection": "terms",
-      "id": "relatively-prime",
-      "field": "mapping_note",
-      "sentence": "用例コーパスの relatively prime はほとんどが MIT（話し言葉は大半が MIT OCW で、ほかは Khan Academy の中学の講義。書き言葉はすべて MIT の講義ノート）。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "remainder-theorem",
       "field": "pitfalls[0]",
-      "sentence": "2 次式で割った余り（ax + b の形）を求める問題は、米国の高校ではあまり扱わない。",
+      "sentence": "学習指導要領解説（数学II）は、A = BQ + R（R の次数は B の次数より低い）から剰余の定理を導く。",
       "g1": false
     },
     {
@@ -3351,7 +3302,7 @@
       "collection": "terms",
       "id": "repeated-trials",
       "field": "mapping_note",
-      "sentence": "日本の「反復試行」は、同じ試行を独立に何回も繰り返すこと。",
+      "sentence": "学習指導要領解説（数学B）は反復試行を、ある試行を独立に何回も繰り返すものとして書く。",
       "g1": false
     },
     {
@@ -3687,7 +3638,7 @@
       "collection": "terms",
       "id": "shortest-path",
       "field": "pitfalls[0]",
-      "sentence": "日本の「最短経路の数」の問題は lattice path で言う。",
+      "sentence": "学習指導要領解説（数学C）の「最短経路の探索」も離散グラフの話。",
       "g1": false
     },
     {
@@ -4079,8 +4030,8 @@
       "collection": "terms",
       "id": "synthetic-division",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書では発展的な扱いのことがある。",
-      "g1": true
+      "sentence": "学習指導要領解説（数学II）には組立除法が出てこない（日本語版 Wikipedia「数学 (教科)」は数学II の高次方程式に挙げる）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -4168,13 +4119,6 @@
     },
     {
       "collection": "terms",
-      "id": "terminal-side",
-      "field": "mapping_note",
-      "sentence": "日本の「動径」は、始線から回転して角をつくる半直線そのもの。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "test-point",
       "field": "mapping_note",
       "sentence": "見出しの「テスト点」は学習指導要領解説に無い、本プロジェクトの訳語。",
@@ -4245,9 +4189,16 @@
     },
     {
       "collection": "terms",
+      "id": "trial",
+      "field": "mapping_note",
+      "sentence": "日本語の「試行」は、標本空間や事象を考える実験そのもの（学習指導要領解説（数学B）の「2枚の硬貨を投げる試行についての標本空間」、センター試験 平成 30 年度 数学I・数学A 第 3 問の「大小 2 個のさいころを同時に投げる試行」）にも、その 1 回 1 回（同じ問題の「試行を 2 回繰り返す」）にも使う。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "triangle-inequality",
       "field": "pitfalls[1]",
-      "sentence": "数II の「絶対値と不等式」で扱う |a| + |b| ≧ |a + b| も英語では triangle inequality と呼ぶ。",
+      "sentence": "学習指導要領解説（数学II）は、絶対値の性質などを用いて不等式が成り立つことを証明することを挙げる。",
       "g1": false
     },
     {
@@ -4261,15 +4212,8 @@
       "collection": "terms",
       "id": "trigonometric-function",
       "field": "pitfalls[0]",
-      "sentence": "米国の教科書は sin・cos・tan に加えて csc（cosecant）・sec（secant）・cot（cotangent）も使う。",
+      "sentence": "高等学校学習指導要領の〔用語・記号〕は sin・cos・tan だけを挙げ、解説に sec・csc・cot は出てこない。",
       "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "trigonometric-function",
-      "field": "pitfalls[0]",
-      "sentence": "日本の高校では使わない。",
-      "g1": true
     },
     {
       "collection": "terms",
@@ -4381,6 +4325,13 @@
       "id": "unbiased",
       "field": "mapping_note",
       "sentence": "英語の unbiased は 3 つの意味にまたがる: 標本の選び方（中学校学習指導要領解説は「偏りなく抽出する」と書く）、推定量（日本語は「不偏」。エントリ unbiased-estimator。AP Statistics の CED topic 3.1）、硬貨などの公平さ（MIT OCW の講義ノート）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "undercount",
+      "field": "pitfalls[0]",
+      "sentence": "学習指導要領解説（数学A）の「場合の数をもれなく重複なく数え上げる」は、英語では Levin（3.3）のように each case is counted exactly once と説明できる。",
       "g1": false
     },
     {

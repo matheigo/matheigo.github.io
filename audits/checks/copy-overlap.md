@@ -7,10 +7,10 @@
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15607
-- 英語のソース: 3884 ファイル ／ 日本語のソース: 454 ファイル
-- 一致した箇所: **322**（289 項目）
-- 見出しの句を含む一致で除いたもの: 138 箇所（128 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
+- 調べた本文の欄: 15630
+- 英語のソース: 3884 ファイル ／ 日本語のソース: 474 ファイル
+- 一致した箇所: **320**（286 項目）
+- 見出しの句を含む一致で除いたもの: 142 箇所（132 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
 |---|---|---|---|---|---|---|---|
@@ -72,9 +72,9 @@
 | terms | auxiliary-line | examples[1].en | en | 9 | prove that the sum of the interior angles of | 2 | ref:levin-dmoi4, khan-algebra |
 | terms | base-of-a-solid | examples[1].en | en | 9 | find the number of faces edges and vertices of | 1 | ref:ck12-geometry |
 | terms | base-of-the-natural-logarithm | examples[0].en | en | 8 | e to the x is its own derivative | 1 | yt:3blue1brown |
-| terms | basic-properties-of-probability | definition_en | en | 8 | the probability of the sample space is 1 | 1 | ref:ap-statistics-ced |
 | terms | basic-variable | examples[1].en | en | 8 | the leading variables in terms of the parameters | 1 | ref:nicholson-lawa-2021a |
-| terms | be-circumscribed-about | mapping_note | en | 8 | the circle that passes through all three vertices | 1 | ref:ck12-geometry |
+| terms | be-circumscribed-about | pitfalls[2] | en | 8 | ck 12 geometry 4 22 concurrence and constructions | 1 | ref:ck12-geometry |
+| terms | be-circumscribed-about | pitfalls[3] | en | 8 | ck 12 geometry 6 2 identify circle components | 1 | ref:ck12-geometry |
 | terms | biconditional | definition_en | en | 8 | p and q have the same truth value | 1 | ref:levin-dmoi4 |
 | terms | bisect | examples[0].en | en | 9 | the diagonals of a parallelogram bisect each other so | 3 | ref:im-9-12, mit-18.02, ref:nicholson-lawa-2021a |
 | terms | both-sides | definition_en | en | 9 | the left hand side and the right hand side | 5 | khan-ap-calc, mit-18.01, khan-algebra, yt:3blue1brown, khan-middle |
@@ -87,19 +87,17 @@
 | terms | change-of-base-formula | definition_en | en | 8 | log a b log c b log c | 1 | openstax-algtrig |
 | terms | checking-whether-the-solution-makes-sense | examples[2].en | en | 8 | the side length of a square with area | 2 | ref:im-6-8, ref:im-9-12 |
 | terms | circle | examples[1].en | en | 9 | find the area of a circle with a radius | 2 | ref:ck12-geometry, khan-middle |
-| terms | circumcenter | definition_en | en | 8 | the point where the perpendicular bisectors of the | 1 | ref:ck12-geometry |
 | terms | circumscribed-circle | pitfalls[2] | en | 8 | ck 12 geometry 4 22 concurrence and constructions | 1 | ref:ck12-geometry |
 | terms | clear-the-denominators | definition_en | en | 10 | multiply both sides of an equation by the lcd of | 5 | openstax-prealgebra, openstax-elemalg, openstax-intalg, ref:im-9-12, ref:ck12-algebra |
 | terms | clear-the-denominators | examples[2].en | en | 8 | multiply both sides by 10 to clear the | 1 | openstax-prealgebra |
-| terms | complementary-angle | examples[0].en | en | 10 | the two acute angles in a right triangle are complementary | 3 | openstax-algtrig, openstax-precalculus, ref:im-9-12 |
 | terms | complementary-event | examples[0].en | en | 8 | the probability of the complement of the event | 1 | ref:levin-dmoi4 |
-| terms | complex-conjugate | examples[0].en | en | 12 | multiply the top and bottom by the complex conjugate of the denominator | 1 | mit-18.03 |
 | terms | complex-conjugate | examples[1].en | en | 8 | is a real number if and only if | 1 | openstax-calculus |
-| terms | complex-number | definition_en | en | 8 | the real part and b the imaginary part | 1 | openstax-intalg |
 | terms | complex-number | examples[0].en | en | 8 | multiply the top and bottom by the conjugate | 1 | yt:blackpenredpen |
 | terms | composite-figure | mapping_note | en | 8 | 5 18 area and perimeter of composite shapes | 1 | ref:ck12-geometry |
 | terms | composite-figure | pitfalls[0] | en | 8 | 5 18 area and perimeter of composite shapes | 1 | ref:ck12-geometry |
+| terms | compress-horizontally | pitfalls[2] | en | 8 | horizontally compressed by a factor of 1 4 | 2 | openstax-algtrig, openstax-precalculus |
 | terms | compute | examples[2].en | en | 8 | the area of a circle with a radius | 1 | khan-middle |
+| terms | concurrent | mapping_note | en | 8 | ck 12 geometry 4 22 concurrence and constructions | 1 | ref:ck12-geometry |
 | terms | condition | pitfalls[0] | ja | 22 | 実数xに関する次の条件p,q,r,sを考える | 2 | jp:exams/h30-hon-02, jp:exams/h30-hon-03 |
 | terms | conditional-statement | examples[0].en | en | 9 | the hypothesis is true and the conclusion is false | 1 | ref:levin-dmoi4 |
 | terms | conditional-statement | mapping_note | en | 8 | ck 12 geometry 2 11 if then statements | 1 | ref:ck12-geometry |
@@ -153,11 +151,9 @@
 | terms | entry | examples[1].en | en | 9 | the entry in row 1 column 2 of the | 2 | openstax-algtrig, openstax-precalculus |
 | terms | equal-angles | examples[1].en | en | 8 | the base angles of an isosceles triangle are | 2 | ref:im-9-12, ref:ck12-geometry |
 | terms | equal-vectors | definition_en | en | 9 | they have the same magnitude and the same direction | 3 | openstax-algtrig, openstax-precalculus, openstax-calculus |
-| terms | equality-of-complex-numbers | examples[1].en | en | 10 | find the real numbers x and y such that x | 2 | ref:nicholson-lawa-2021a, ref:levin-dmoi4 |
 | terms | equation-of-a-line | examples[1].en | en | 8 | find the equation of the line passing through | 1 | openstax-algtrig |
 | terms | equation-of-a-sphere | definition_en | en | 10 | the sphere with center a b c and radius r | 2 | openstax-calculus, ref:im-9-12 |
-| terms | eulers-formula-for-polyhedra | definition_en | en | 8 | with v vertices e edges and f faces | 1 | ref:levin-dmoi4 |
-| terms | even-function | definition_en | en | 8 | its graph is symmetric about the y axis | 3 | ref:im-9-12, openstax-algtrig, openstax-precalculus |
+| terms | eulers-formula-for-polyhedra | definition_en | en | 8 | of vertices v edges e and faces f | 2 | mit-notes, ref:levin-dmoi4 |
 | terms | exist | examples[1].en | en | 8 | there exists a real number x such that | 3 | openstax-calculus, openstax-algtrig, openstax-precalculus |
 | terms | exponent | pitfalls[0] | en | 8 | x to the fifth x to the fifth | 1 | khan-ap-calc |
 | terms | exterior-angle-theorem | definition_en | en | 9 | the two interior angles that are not adjacent to | 1 | ref:ck12-geometry |
@@ -169,21 +165,24 @@
 | terms | foil | definition_en | en | 8 | to multiply two binomials multiply the first terms | 1 | openstax-elemalg |
 | terms | foot-of-the-perpendicular | examples[1].en | en | 8 | point p 1 2 3 to the plane | 1 | openstax-calculus |
 | terms | function | examples[1].en | en | 8 | an equation for y in terms of x | 2 | mit-18.01, yt:nancypi |
-| terms | general-angle | examples[1].en | en | 11 | find the angle between 0 and 360 that is coterminal with | 2 | openstax-algtrig, openstax-precalculus |
 | terms | general-form-of-a-circle | examples[1].en | en | 8 | find the center and radius of the circle | 1 | ref:im-9-12 |
+| terms | general-term | pitfalls[1] | en | 9 | the r 1 th term of the binomial expansion | 2 | openstax-algtrig, openstax-precalculus |
 | terms | generating-function | examples[1].en | en | 11 | find the generating function for the sequence 1 2 4 8 | 1 | ref:levin-dmoi4 |
+| terms | geometric-mean | pitfalls[0] | en | 9 | geometry 3 13 using the pythagorean theorem and similarity | 1 | ref:im-9-12 |
 | terms | geometric-mean | examples[0].en | en | 8 | the square root of 16 which is 4 | 3 | yt:organicchem, khan-ap-stats, khan-middle |
 | terms | geometric-sequence | definition_en | en | 9 | a sequence in which each term is the previous | 1 | ref:im-9-12 |
 | terms | graph-coloring | definition_en | en | 8 | different colors the smallest number of colors needed | 1 | ref:levin-dmoi4 |
 | terms | greater-than | examples[0].en | en | 8 | farther to the right on the number line | 1 | ref:ck12-algebra |
 | terms | greatest-common-divisor | examples[0].en | en | 8 | is the biggest number that goes into both | 1 | khan-middle |
-| terms | half-angle-formulas | examples[1].en | en | 10 | a half angle formula to find the exact value of | 2 | openstax-algtrig, openstax-precalculus |
 | terms | hl-congruence | definition_en | en | 8 | right triangle are congruent to the hypotenuse and | 1 | ref:ck12-geometry |
 | terms | horizontal-asymptote | definition_en | en | 8 | the degrees of the numerator and the denominator | 3 | openstax-algtrig, openstax-precalculus, yt:nancypi |
 | terms | horizontal-line-test | definition_en | en | 10 | one to one if no horizontal line crosses the graph | 2 | openstax-algtrig, openstax-precalculus |
 | terms | hyperbolic-functions | examples[0].en | en | 10 | e to the x and e to the negative x | 1 | mit-18.03 |
 | terms | hypotenuse | examples[1].en | en | 8 | the legs of a right triangle are 6 | 1 | ref:ck12-geometry |
+| terms | identity | pitfalls[1] | en | 8 | algebra 2 2 23 polynomial identities part 1 | 1 | ref:im-9-12 |
 | terms | image | pitfalls[2] | en | 9 | 7 2 kernel and image of a linear transformation | 1 | ref:nicholson-lawa-2021a |
+| terms | imaginary-part | pitfalls[0] | en | 8 | algebra 2 3 12 arithmetic with complex numbers | 1 | ref:im-9-12 |
+| terms | imaginary-solution | mapping_note | en | 8 | find all complex solutions real and non real | 2 | openstax-algtrig, openstax-precalculus |
 | terms | inequality | pitfalls[0] | en | 20 | less than or equal to greater than or equal to less than or equal to greater than or equal to | 3 | khan-middle, openstax-introstats, khan-ap-calc |
 | terms | inequality | examples[1].en | en | 8 | and graph the solution on a number line | 1 | ref:im-6-8 |
 | terms | inequality-sign | pitfalls[2] | en | 9 | less than b a b a is greater than | 3 | openstax-prealgebra, openstax-elemalg, openstax-intalg |
@@ -206,7 +205,6 @@
 | terms | limit-at-infinity | mapping_note | ja | 23 | xの値を限りなく大きくしたときのf(x)の極限 | 1 | jp:kaisetsu-kou |
 | terms | limit-of-sine-x-over-x | definition_en | en | 9 | the limit of sin x x as x approaches | 1 | yt:nancypi |
 | terms | limit-of-sine-x-over-x | mapping_note | en | 8 | the limit as x approaches 0 of sine | 2 | khan-ap-calc, yt:profleonard |
-| terms | linear-diophantine-equation | definition_en | en | 8 | an equation of the form ax by c | 1 | ref:nicholson-lawa-2021a |
 | terms | linear-inequality | pitfalls[0] | en | 10 | less than or equal to greater than or equal to | 1 | khan-middle |
 | terms | linear-pair | examples[0].en | en | 8 | so they have to add up to 180 | 1 | yt:organicchem |
 | terms | linearity-of-expectation | definition_en | en | 10 | that the expected value of a sum of random variables | 2 | mit-notes, mit-6.042 |
@@ -214,7 +212,6 @@
 | terms | logical-connective | pitfalls[2] | en | 9 | ck 12 geometry 2 9 and and or statements | 1 | ref:ck12-geometry |
 | terms | major-arc | pitfalls[2] | en | 8 | ck 12 geometry 6 9 arcs in circles | 1 | ref:ck12-geometry |
 | terms | mean-absolute-deviation | definition_en | en | 8 | distance between each data value and the mean | 2 | ref:im-6-8, ref:im-9-12 |
-| terms | median-of-a-triangle | definition_en | en | 12 | a vertex of a triangle to the midpoint of the opposite side | 1 | ref:im-9-12 |
 | terms | midline | definition_en | en | 9 | halfway between the maximum and minimum values of a | 2 | ref:im-9-12, ref:im-6-8 |
 | terms | midpoint-formula | examples[1].en | en | 10 | use the midpoint formula to find the midpoint of the | 1 | openstax-intalg |
 | terms | midsegment-theorem | definition_en | en | 9 | connecting the midpoints of two sides of a triangle | 2 | ref:ck12-geometry, ref:nicholson-lawa-2021a |
@@ -238,7 +235,6 @@
 | terms | pass-through | examples[1].en | en | 14 | find the equation of the line that passes through the origin and the point | 4 | openstax-algtrig, openstax-precalculus, ref:im-9-12, yt:3blue1brown |
 | terms | percent-change | definition_en | en | 8 | as a percent of the original amount the | 1 | openstax-prealgebra |
 | terms | perfect-square-trinomial | pitfalls[0] | en | 8 | algebra 1 7 11 what are perfect squares | 1 | ref:im-9-12 |
-| terms | permutation | definition_en | en | 8 | the number of permutations of n objects taken | 2 | openstax-algtrig, openstax-precalculus |
 | terms | piecewise-function | definition_en | en | 10 | defined by different formulas on different parts of its domain | 1 | openstax-calculus |
 | terms | planar-graph | definition_en | en | 9 | a graph that can be drawn in the plane | 1 | mit-notes |
 | terms | point-of-internal-division | mapping_note | en | 12 | ck 12 geometry 1 6 points that partition line segments section formula | 1 | ref:ck12-geometry |
@@ -254,18 +250,19 @@
 | terms | preimage | examples[1].en | en | 8 | the y axis find the coordinates of the | 1 | ref:ck12-geometry |
 | terms | properties-of-logarithms | definition_ja | en | 8 | log a m log a n log a | 3 | openstax-intalg, openstax-algtrig, openstax-precalculus |
 | terms | proposition | examples[1].en | en | 9 | determine whether the following statement is true or false | 3 | openstax-algtrig, openstax-precalculus, ref:ck12-geometry |
-| terms | pure-imaginary-number | definition_en | en | 10 | whose real part is 0 and whose imaginary part is | 1 | yt:3blue1brown |
+| terms | proving-an-identity | pitfalls[1] | en | 9 | identities sum to product and product to sum formulas | 2 | openstax-algtrig, openstax-precalculus |
 | terms | pythagorean-theorem | examples[1].en | en | 12 | 12 use the pythagorean theorem to find the length of the hypotenuse | 8 | openstax-elemalg, openstax-prealgebra, openstax-intalg, ref:ck12-geometry, openstax-algtrig, openstax-precalculus ほか |
 | terms | quotient | pitfalls[0] | en | 11 | divided by b the quotient of a and b a b | 3 | openstax-prealgebra, openstax-intalg, openstax-elemalg |
 | terms | radius | examples[0].en | en | 8 | the diameter so if the diameter is 10 | 1 | yt:organicchem |
 | terms | rank | examples[1].en | en | 9 | the rank of the matrix and the dimension of | 1 | mit-18.06 |
 | terms | ratio-of-areas-of-similar-figures | mapping_note | en | 8 | 5 22 area and perimeter of similar polygons | 1 | ref:ck12-geometry |
-| terms | rational-root-theorem | examples[1].en | en | 14 | use the rational zero theorem to list all possible rational zeros of f x | 2 | openstax-algtrig, openstax-precalculus |
 | terms | rationalizing-the-denominator | pitfalls[2] | ja | 27 | 分母が二項程度までの分数の形に表された数の分母の有理化 | 1 | jp:kaisetsu-kou |
 | terms | reduced-row-echelon-form | definition_en | en | 8 | is the only nonzero entry in its column | 1 | ref:nicholson-lawa-2021a |
 | terms | region | definition_en | en | 8 | the set of all points x y satisfying | 2 | openstax-algtrig, openstax-precalculus |
 | terms | regression-line | examples[1].en | en | 10 | find the equation of the least squares regression line and | 2 | openstax-introstats, ref:ap-statistics-ced |
 | terms | relation | definition_en | en | 10 | a relation from a set a to a set b | 2 | mit-notes, mit-6.042 |
+| terms | relative-positions-of-two-circles | mapping_note | en | 8 | ck 12 geometry 6 2 identify circle components | 1 | ref:ck12-geometry |
+| terms | relative-positions-of-two-lines | mapping_note | en | 9 | ck 12 geometry 3 2 parallel and skew lines | 1 | ref:ck12-geometry |
 | terms | restricted-domain | examples[1].en | en | 8 | find the inverse of f x x 2 | 2 | openstax-algtrig, openstax-precalculus |
 | terms | revolve-around-the-x-axis | examples[1].en | en | 9 | the x axis find the volume of the solid | 1 | openstax-calculus |
 | terms | revolve-around-the-x-axis | examples[0].en | en | 8 | take this region and rotate it around the | 1 | khan-ap-calc |
@@ -282,6 +279,7 @@
 | terms | set-builder-notation | definition_en | en | 12 | the set of all x such that x is greater than 2 | 3 | openstax-algtrig, openstax-precalculus, ref:levin-dmoi4 |
 | terms | set-builder-notation | examples[0].en | en | 9 | all x such that x is greater than 2 | 1 | ref:levin-dmoi4 |
 | terms | shortest-path | examples[1].en | en | 9 | the number of lattice paths from 0 0 to | 1 | ref:levin-dmoi4 |
+| terms | shortest-path | pitfalls[0] | en | 8 | how many lattice paths from 0 0 to | 1 | ref:levin-dmoi4 |
 | terms | side | examples[1].en | en | 9 | the side length of a square whose area is | 1 | ref:im-6-8 |
 | terms | side-angle-inequality | mapping_note | en | 11 | ck 12 geometry 4 25 comparing angles and sides in triangles | 1 | ref:ck12-geometry |
 | terms | side-angle-inequality | mapping_note | en | 8 | the largest angle is opposite the longest side | 1 | ref:ck12-geometry |
@@ -321,7 +319,6 @@
 | terms | the-limit-does-not-exist | examples[1].en | en | 8 | lim x 0 x x does not exist | 1 | openstax-calculus |
 | terms | theorem | examples[1].en | en | 8 | the base angles of an isosceles triangle are | 2 | ref:im-9-12, ref:ck12-geometry |
 | terms | three-perpendiculars-theorem | examples[1].en | en | 8 | the foot of the perpendicular from p to | 1 | ref:nicholson-lawa-2021a |
-| terms | trigonometric-function | definition_en | en | 9 | the coordinates of a point on the unit circle | 3 | openstax-precalculus, ref:im-9-12, openstax-algtrig |
 | terms | trigonometric-function | examples[1].en | en | 8 | find the maximum and minimum values of the | 2 | openstax-calculus, ref:im-9-12 |
 | terms | trigonometric-integrals | definition_ja | en | 11 | sin x dx cos x c cos x dx sin x | 1 | mit-notes |
 | terms | trinomial | examples[0].en | en | 9 | numbers that multiply to 6 and add to 5 | 2 | openstax-elemalg, yt:nancypi |
@@ -329,6 +326,7 @@
 | terms | truth-value | pitfalls[0] | en | 8 | determine whether the statement is true or false | 3 | openstax-calculus, ref:ck12-geometry, openstax-algtrig |
 | terms | turning-points | definition_en | en | 9 | from increasing to decreasing or from decreasing to increasing | 2 | khan-ap-calc, yt:profleonard |
 | terms | union-of-events | examples[1].en | en | 8 | a card is drawn from a standard deck | 2 | openstax-algtrig, openstax-precalculus |
+| terms | union-of-events | pitfalls[0] | en | 8 | a union b the probability of the union | 1 | ref:ap-statistics-ced |
 | terms | unit-normal-vector | examples[1].en | en | 8 | unit normal vector n t for r t | 1 | openstax-calculus |
 | terms | unit-tangent-vector | examples[1].en | en | 11 | find the unit tangent vector t t for r t 3 | 1 | openstax-calculus |
 | terms | variable-of-integration | examples[1].en | en | 8 | x does not change the value of the | 1 | openstax-algtrig |

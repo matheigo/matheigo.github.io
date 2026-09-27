@@ -5,18 +5,15 @@
 対象の欄は日本側と同じ。米国側の主張（米国・アメリカ・AP・CED・College Board・英語圏・Calc I〜III・Calculus AB／BC）の文のうち、
 文の中に参照（CED・OpenStax・IM・CK-12・Nicholson・Levin・Wikipedia・topic の番号ほか）も用例コーパス（講義・話し言葉・書き言葉・Khan・MIT ほか）も名指ししないもの。
 
-- 米国側の主張の文で参照かコーパスを名指しするもの: 383 文（一覧にしない）
-- **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 11 項目・11 文**
-- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 49 項目・51 文
+- 米国側の主張の文で参照かコーパスを名指しするもの: 394 文（一覧にしない）
+- **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 8 項目・8 文**
+- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 38 項目・40 文
 
 ## A. エントリの出典にも参照がない
 
 | コレクション | id | 欄 | 文 |
 |---|---|---|---|
-| terms | auxiliary-angle-form | mapping_note | 米国では write a sin θ + b cos θ as a single sine function（R sin(θ + α) の形に書く）と手順で言う。 |
-| terms | cauchy-schwarz-inequality | pitfalls[0] | 米国の高校課程では名前を出さず、ベクトルの \|u · v\| ≤ \|u\|\|v\| として触れる程度。 |
 | terms | equivalence-relation | pitfalls[0] | 米国の Geometry で習う reflexive property などは、等号や合同についての同じ性質の名前。 |
-| terms | nth-roots-of-unity | pitfalls[1] | 数II の 1 の 3 乗根 ω（ω² + ω + 1 = 0、ω³ = 1）は、英語でも cube roots of unity と呼び、ω（omega）の記号を使うが、米国の高校課程では ω に決まった呼び名や性質の練習はほぼない。 |
 | terms | postulate | mapping_note | 米国の Geometry では証明の前提を postulate と呼び、名前付きで使う（segment addition postulate、parallel postulate など）。 |
 | terms | vector-equation-of-a-circle | mapping_note | 米国の教科書は円を (x − h)² + (y − k)² = r² の形で扱い、ベクトル方程式としては立てない。 |
 | symbols | combination-ncr | notes[0] | 日本の教科書は ₙCᵣ と書き、米国の教科書は C(n, r)、ₙCᵣ、または縦に並べた二項係数 (n over r) の形で書く。 |
@@ -30,7 +27,6 @@
 | コレクション | id | 欄 | 文 | エントリの参照 |
 |---|---|---|---|---|
 | terms | accumulation-function | mapping_note | 後者の「定積分を定数 k とおく」型の問題が米国の教科書にあるかは教科書による。 | College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020); 高等学校学習指導要領（平成30年告示）解説 数学編 理数編; OpenStax Calculus Volume 1 |
-| terms | angle-addition-formulas | pitfalls[0] | 値を「求めよ」は、米国の問題では find the exact value（小数ではなく正確な値）と書くことが多い。 | OpenStax Algebra and Trigonometry 2e |
 | terms | angle-sum-of-a-triangle | mapping_note | 日本語は「三角形の内角の和」という量の名前で言うが、米国の Geometry はこれを定理の名前 triangle sum theorem（triangle angle sum theorem）で呼ぶ。 | CK-12 Geometry (K12 LibreTexts) |
 | terms | arc-measure | mapping_note | 米国の Geometry では弧 AB の度数を、AB の上に弧の記号を付けた記号に m を添えて書き、中心角と同じ度数で表す（長さの arc length とは別）。 | Illustrative Mathematics, IM 9–12 Math (Geometry); CK-12 Geometry (K12 LibreTexts) |
 | terms | congruence-criteria | mapping_note | 米国の Geometry は SSS・SAS・ASA に AAS と直角三角形の HL を加え、それぞれを定理（theorem）や公準（postulate）として名前で呼ぶ（エントリ sss-congruence、sas-congruence、asa-congruence、aas-congruence、hl-congruence）。 | Illustrative Mathematics, IM 9–12 Math (Geometry); 中学校学習指導要領（平成29年告示）解説 数学編 |
@@ -38,31 +34,21 @@
 | terms | corresponding-angles-postulate | mapping_note | 米国の教科書では公準（postulate）とするものと定理（theorem）とするものがある。 | CK-12 Geometry (K12 LibreTexts) |
 | terms | difference-quotient | mapping_note | 米国の Precalculus・Calculus では difference quotient と名前で呼ぶ。 | OpenStax Calculus Volume 1 |
 | terms | end-behavior | pitfalls[2] | behavior は米国の綴り（英国は behaviour）。 | OpenStax Algebra and Trigonometry 2e; English Wikipedia |
-| terms | even-function | pitfalls[0] | 米国の問題は even, odd, or neither（どちらでもない）の 3 択で聞くことが多い。 | OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1 |
 | terms | expanding-and-condensing-logs | mapping_note | 米国の授業では、対数の性質で 1 つの log を和・差に分けることを expand、和・差を 1 つの log にまとめることを condense と呼ぶ。 | OpenStax Algebra and Trigonometry 2e; OpenStax Intermediate Algebra 2e |
 | terms | general-form-of-a-circle | pitfalls[0] | 米国の教科書は係数に D, E, F を使うことが多い。 | OpenStax Algebra and Trigonometry 2e; OpenStax Intermediate Algebra 2e |
-| terms | geometric-mean | pitfalls[0] | 米国の Geometry では、直角三角形の高さが斜辺の 2 つの部分の geometric mean になる（相似の単元）ことで出てくる。 | OpenStax Introductory Statistics 2e |
-| terms | half-angle-formulas | pitfalls[0] | 米国の教科書は sin(α/2) = ±√((1 − cos α)/2) と平方根の形で書く（符号は α/2 の象限で決める）。 | OpenStax Algebra and Trigonometry 2e |
 | terms | hypothesis | mapping_note | 証明の「仮定」は、論理・定理の文脈では hypothesis（p ならば q の p）、米国の Geometry の答案では Given（2 列証明の最初の行の見出し）と言い、1 語に決まらない。 | CK-12 Geometry (K12 LibreTexts) |
 | terms | hypothesis | pitfalls[1] | 米国の Geometry の 2 列証明では、仮定を Given:、示すことを Prove: という見出しで書き、hypothesis とは書かない。 | CK-12 Geometry (K12 LibreTexts) |
 | terms | identity-matrix | definition_ja | E（米国の教科書では I）と書く。 | OpenStax Algebra and Trigonometry 2e |
-| terms | initial-side | pitfalls[0] | 始線を x 軸の正の部分にとった角を、米国では an angle in standard position（標準の位置の角）と呼ぶ。 | OpenStax Algebra and Trigonometry 2e |
 | terms | law-of-detachment | pitfalls[0] | 米国の Geometry の教科書では law of detachment、論理学・離散数学では modus ponens と呼ぶ。 | Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition; CK-12 Geometry (K12 LibreTexts) |
 | terms | logarithm | pitfalls[1] | 米国では log x は常用対数（底 10）、ln x は自然対数を表す。 | OpenStax Algebra and Trigonometry 2e; OpenStax Intermediate Algebra 2e |
-| terms | permutation | pitfalls[0] | 米国の教科書では P(n, r) や ₙPᵣ と書く。 | OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 3 |
-| terms | proving-an-identity | pitfalls[1] | 証明の途中で両辺に同じ操作をして 1 = 1 を導く書き方は、米国の教科書でも避ける（片側を変形していく）。 | OpenStax Algebra and Trigonometry 2e |
 | terms | pythagorean-identity | pitfalls[0] | 米国の教科書は 1 + tan²θ = sec²θ、1 + cot²θ = csc²θ も合わせて Pythagorean identities（複数形）と呼ぶ。 | OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1 |
-| terms | rational-expression | pitfalls[0] | 米国の教科書は excluded values（または restrictions）と呼ぶ。 | OpenStax Algebra and Trigonometry 2e |
 | terms | rational-function | mapping_note | 米国の rational function は多項式 ÷ 多項式の関数全般を指し、日本語では有理関数に当たる。 | OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1; 高等学校学習指導要領（平成30年告示）解説 数学編 理数編 |
-| terms | remainder-theorem | pitfalls[0] | 2 次式で割った余り（ax + b の形）を求める問題は、米国の高校ではあまり扱わない。 | OpenStax Algebra and Trigonometry 2e |
 | terms | scientific-notation | pitfalls[0] | 英国では standard form と言うが、米国の standard form は別の意味（直線の式 Ax + By = C など、エントリ standard-form-of-a-line）。 | OpenStax Prealgebra 2e; OpenStax Elementary Algebra 2e; OpenStax Algebra and Trigonometry 2e; English Wikipedia |
 | terms | statistics | pitfalls[1] | AP Statistics・Intro Statistics のように科目名にも使う。 | OpenStax Introductory Statistics 2e |
 | terms | taylors-theorem | pitfalls[0] | AP では剰余の評価を Lagrange error bound と呼ぶ（lagrange-error-bound を参照）。 | OpenStax Calculus Volume 2 |
 | terms | transitive-property | pitfalls[1] | 米国の Geometry の証明では、等式なら transitive property of equality、合同なら transitive property of congruence と対象を付けて書く。 | CK-12 Geometry (K12 LibreTexts) |
 | terms | trapezoid | mapping_note | 米国の教材では台形の定義が分かれる。 | OpenStax Prealgebra 2e; English Wikipedia; CK-12 Geometry (K12 LibreTexts); Illustrative Mathematics, IM 9–12 Math (Geometry) |
 | terms | trapezoidal-rule | pitfalls[1] | trapezoid（台形）は米国の言い方。 | OpenStax Calculus Volume 2; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020); English Wikipedia |
-| terms | trigonometric-function | pitfalls[0] | 米国の教科書は sin・cos・tan に加えて csc（cosecant）・sec（secant）・cot（cotangent）も使う。 | OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1 |
-| terms | triple-angle-formulas | pitfalls[0] | 米国の高校課程では公式として覚えさせず、必要なら加法定理から導く。 | English Wikipedia |
 | terms | vector | pitfalls[0] | 日本の教科書は矢印（→）を文字の上に書くが、米国の教科書は太字（v）か、手書きでは上の矢印 v⃗ を使う。 | OpenStax Calculus Volume 3; OpenStax Algebra and Trigonometry 2e |
 | terms | zeros-of-a-polynomial | pitfalls[0] | 米国では zero（関数の値が 0 になる x）・root（方程式の解）・x-intercept（グラフの交点）を使い分ける。 | OpenStax Algebra and Trigonometry 2e |
 | symbols | alpha | notes[1] | AP Statistics では有意水準も α で表す。 | OpenStax Algebra and Trigonometry 2e; OpenStax Precalculus 2e; OpenStax Introductory Statistics 2e; College Board, AP Statistics Course and Exam Description (Effective Fall 2026) |

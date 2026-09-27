@@ -1189,10 +1189,6 @@
    "matched": [],
    "candidates": [
     [
-     "complex-fraction",
-     1
-    ],
-    [
      "fraction",
      1
     ],
@@ -1202,6 +1198,10 @@
     ],
     [
      "equal-vectors",
+     1
+    ],
+    [
+     "complex-fraction",
      1
     ]
    ],
@@ -2021,10 +2021,25 @@
      "Integrals Involving Exponential and Logarithmic Functions"
     ]
    },
-   "matched": [
-    "net-change"
+   "matched": [],
+   "candidates": [
+    [
+     "net-change",
+     2
+    ],
+    [
+     "small-change",
+     1
+    ],
+    [
+     "rate-of-change",
+     1
+    ],
+    [
+     "net",
+     1
+    ]
    ],
-   "candidates": [],
    "judged": null
   },
   {
@@ -2886,6 +2901,10 @@
    "matched": [],
    "candidates": [
     [
+     "angle-addition-formulas",
+     2
+    ],
+    [
      "pythagorean-identity",
      1
     ],
@@ -2895,10 +2914,6 @@
     ],
     [
      "cofunction-identity",
-     1
-    ],
-    [
-     "vector-addition",
      1
     ]
    ],
@@ -4675,25 +4690,10 @@
      "4.29 Pythagorean Theorem to Classify Triangles"
     ]
    },
-   "matched": [],
-   "candidates": [
-    [
-     "triangle-inequality",
-     2
-    ],
-    [
-     "trigonometric-inequality",
-     1
-    ],
-    [
-     "scalene-triangle",
-     1
-    ],
-    [
-     "right-triangle",
-     1
-    ]
+   "matched": [
+    "triangle-inequality"
    ],
+   "candidates": [],
    "judged": {
     "id": "triangle-inequality",
     "note": "CK-12 の Triangle Inequality Theorem"
@@ -6107,10 +6107,6 @@
    "matched": [],
    "candidates": [
     [
-     "relationship-between-roots-and-coefficients",
-     2
-    ],
-    [
      "product-rule",
      1
     ],
@@ -6120,6 +6116,10 @@
     ],
     [
      "cartesian-product",
+     1
+    ],
+    [
+     "scalar-triple-product",
      1
     ]
    ],
@@ -6450,25 +6450,10 @@
      "9.1 Polyhedrons"
     ]
    },
-   "matched": [],
-   "candidates": [
-    [
-     "eulers-method",
-     1
-    ],
-    [
-     "eulers-formula",
-     1
-    ],
-    [
-     "eulers-formula-for-polyhedra",
-     1
-    ],
-    [
-     "eulerian-path",
-     1
-    ]
+   "matched": [
+    "eulers-formula-for-polyhedra"
    ],
+   "candidates": [],
    "judged": {
     "id": "eulers-formula-for-polyhedra",
     "note": "CK-12 Geometry は多面体の F + V = E + 2 を Euler's Theorem と呼ぶ"
@@ -7276,15 +7261,15 @@
      2
     ],
     [
+     "conjugate-roots",
+     2
+    ],
+    [
      "complex-plane",
      1
     ],
     [
      "complex-number",
-     1
-    ],
-    [
-     "complex-fraction",
      1
     ]
    ],
@@ -11120,6 +11105,10 @@
    "matched": [],
    "candidates": [
     [
+     "angle-addition-formulas",
+     2
+    ],
+    [
      "vector-addition",
      1
     ],
@@ -11129,10 +11118,6 @@
     ],
     [
      "segment-addition-postulate",
-     1
-    ],
-    [
-     "scalar-multiplication",
      1
     ]
    ],
@@ -12750,15 +12735,15 @@
      2
     ],
     [
+     "complex-fraction",
+     2
+    ],
+    [
      "equality-of-complex-numbers",
      2
     ],
     [
      "argument-of-a-complex-number",
-     2
-    ],
-    [
-     "rational-number",
      2
     ]
    ],
@@ -12795,7 +12780,7 @@
      1
     ],
     [
-     "imaginary-solution",
+     "conjugate-roots",
      1
     ]
    ],
@@ -14667,7 +14652,7 @@
      1
     ],
     [
-     "imaginary-solution",
+     "check-the-concavity",
      1
     ]
    ],
@@ -18661,11 +18646,11 @@
      1
     ],
     [
-     "zero-exponent",
+     "complex-fraction",
      1
     ],
     [
-     "symmetric-expression",
+     "zero-exponent",
      1
     ]
    ],
@@ -19562,6 +19547,10 @@
    "matched": [],
    "candidates": [
     [
+     "angle-addition-formulas",
+     2
+    ],
+    [
      "zero-exponent",
      1
     ],
@@ -19571,10 +19560,6 @@
     ],
     [
      "supplementary-angle-identity",
-     1
-    ],
-    [
-     "segment-addition-postulate",
      1
     ]
    ],
@@ -20706,7 +20691,7 @@
      1
     ],
     [
-     "imaginary-solution",
+     "check-the-concavity",
      1
     ]
    ],
@@ -21089,15 +21074,15 @@
      2
     ],
     [
-     "terminal-side",
-     1
-    ],
-    [
      "opposite-vector",
      1
     ],
     [
      "opposite-angle",
+     1
+    ],
+    [
+     "initial-side",
      1
     ]
    ],
@@ -21155,10 +21140,6 @@
    "matched": [],
    "candidates": [
     [
-     "conjugate-roots",
-     1
-    ],
-    [
      "vector-subtraction",
      1
     ],
@@ -21168,6 +21149,10 @@
     ],
     [
      "paired-t-test",
+     1
+    ],
+    [
+     "linear-pair",
      1
     ]
    ],
@@ -21229,15 +21214,15 @@
      2
     ],
     [
+     "terminal-side",
+     1
+    ],
+    [
      "side-angle-inequality",
      1
     ],
     [
      "right-hand-side",
-     1
-    ],
-    [
-     "opposite",
      1
     ]
    ],
@@ -22286,15 +22271,15 @@
      1
     ],
     [
-     "terminal-side",
-     1
-    ],
-    [
      "opposite-side",
      1
     ],
     [
      "initial-side",
+     1
+    ],
+    [
+     "terminal-side",
      1
     ]
    ],
