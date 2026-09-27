@@ -7,14 +7,17 @@
   },
   "en": {
     "term": "derivative of the inverse",
-    "alt": [
-      "inverse function theorem"
-    ],
+    "alt": [],
     "variants": [
       {
         "term": "derivative of an inverse function",
         "register": "written",
         "note": "AP の CED（topic 3.3）と OpenStax Calculus の書き方。件数は少ない。話し言葉にはほとんど出てこず、書き言葉はすべて OpenStax Calculus。"
+      },
+      {
+        "term": "inverse function theorem",
+        "register": "written",
+        "note": "OpenStax Calculus Volume 1（Derivatives of Inverse Functions）が、この公式を述べる定理の名前として書く。書き言葉はすべて OpenStax Calculus で、話し言葉には出てこない。"
       }
     ],
     "uk": null,
@@ -72,13 +75,13 @@
       "note": "Topic 3.3（derivative of an inverse function）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-24",
-    "audit": "2026-09-26",
+    "audit": "2026-09-27",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "derivative of the inverse": 22,
@@ -86,8 +89,8 @@
     },
     "written": {
       "derivative of the inverse": 5,
-      "inverse function theorem": 16,
-      "derivative of an inverse function": 2
+      "derivative of an inverse function": 2,
+      "inverse function theorem": 16
     },
     "sources": [
       "khan-ap-calc",
@@ -99,12 +102,5 @@
       "yt:patrickjmt"
     ],
     "counted": "2026-09-27"
-  },
-  "flags": [
-    {
-      "code": "corpus-register-mismatch",
-      "note": "コーパスの結論がエントリの register と食い違う（書: inverse function theorem）。人間レビューへ。",
-      "raised": "2026-09-27"
-    }
-  ]
+  }
 }

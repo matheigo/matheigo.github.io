@@ -84,10 +84,10 @@
       "note": "4.13 SSS ほか（by SSS 11 件・side-side-side 3 件）"
     }
   ],
-  "confidence": "verified",
+  "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": "2026-09-26",
+    "audit": "2026-09-27",
     "human": null
   },
   "updated": "2026-09-27",
@@ -108,6 +108,11 @@
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは CK-12 の呼び方 by SSS | SSS congruence | (SSS) congruence | SSS postulate | SSS criterion | SSS theorem | SSS triangle congruence（CK-12 Geometry 4.13 SSS・CK-12 Geometry 1.12 Constructions and Bisectors・CK-12 Geometry 4.12 Congruent Triangles・計 12 件）。register は主張しない。",
+      "raised": "2026-09-27"
+    },
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: 監査 6 の決定 4 の数え直しで見出しを SSS に（IM の side-side-side は定理の名前の中が多く、IM・CK-12 の段では CK-12 Geometry の by SSS などの略号の形が最も多い）。見直す点: CK-12 Geometry の略号の形の文脈、side-side-side を en.alt にしたこと、asa・sas の見出しとの揃え。次の監査のセッションが見直す。",
       "raised": "2026-09-27"
     }
   ]
