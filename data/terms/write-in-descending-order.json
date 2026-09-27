@@ -90,7 +90,7 @@
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -115,6 +115,11 @@
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 written in descending order（本文 7 件）。register は主張しない。",
+      "raised": "2026-09-26"
+    },
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: 見出しを write in descending order から write … in descending order に（目的語が間に入る動詞句。「…」が無く件数が 0 だった）、alt に OpenStax の written in descending order。参照の件数（OpenStax 3 件以上）で決まった言い方が出てこない型から参照の言い方に変わる。見直す点: 見出し、flag、mapping_note の standard form の資料。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]

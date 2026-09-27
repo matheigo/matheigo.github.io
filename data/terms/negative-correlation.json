@@ -86,7 +86,7 @@
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -107,5 +107,12 @@
       "openstax-introstats"
     ],
     "counted": "2026-09-26"
-  }
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: 見出しを negative correlation から CED の negative association に（話し言葉の首位 negative linear relationship は Khan Academy だけで、CED が別の言い方で決まっているときは CED の言い方を見出しにする規則。negative correlation は en.alt、negative linear relationship は spoken の variant）。見直す点: 見出し、pitfalls[0]、例文。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
+    }
+  ]
 }

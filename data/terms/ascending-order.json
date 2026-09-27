@@ -65,7 +65,7 @@
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -82,6 +82,11 @@
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 1 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-26"
+    },
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: mapping を exact から near にし、決まった言い方が出てこない型に（用例コーパスの increasing powers 12 件は部分分数分解の分母の累乗と i の累乗の並び、ascending order は数の並びで、多項式の項の順の言い方は出てこない。TERM_FORMS で数え直し、register を外す）。見直す点: near でよいか、見出し increasing powers（本プロジェクトの説明の訳）、level.jp 数I。次の監査のセッションが見直す。",
       "raised": "2026-09-26"
     }
   ]

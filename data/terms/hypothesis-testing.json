@@ -93,7 +93,7 @@
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -112,5 +112,12 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-26"
-  }
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: 見出しを hypothesis testing から hypothesis test に（OpenStax Introductory Statistics 231 件・AP Statistics の CED 60 件は数えられる名詞 hypothesis test。用例コーパスは -ing を同じ言い方として数えるので判定は変わらない）。見直す点: 見出し、variants（significance test の CED 6 件）、level（数B、Algebra 1 を外した）。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
+    }
+  ]
 }
