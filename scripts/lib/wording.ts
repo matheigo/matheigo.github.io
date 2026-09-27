@@ -40,10 +40,16 @@ export function unverifiableSentences(text: string): string[] {
 export const JUDGEMENT = /判定|見出しは|見出しに|数えた|数える|数えると|数えて|件数|併記|首位|決まらな|判断でき|規則/;
 /** How the headword was settled, with or without the corpus: "CED の呼び方を見出しにした", "見出しは Levin の呼び方による". */
 export const HEADWORD_BASIS = /見出しにした|見出しとした|見出しは[^。]*?(?:による|で決めた|に合わせた|の呼び方|の記事名)/;
+/**
+ * How a wording was counted, when the sentence before named the corpus: "…の形で数えた", "同じ言い方として数えた",
+ * "数えていない", "数えなかった". Counting in the mathematical sense says 数えると / 数えるとき ("row 0 と数えると"),
+ * which this leaves alone.
+ */
+export const COUNTED = /数えた|数えていない|数えなかった|数えている/;
 
 /** The sentences of a learner's note that explain the counting or the verdict. */
 export function judgementSentences(text: string): string[] {
-  return sentences(text).filter((s) => (s.includes("コーパス") && JUDGEMENT.test(s)) || HEADWORD_BASIS.test(s));
+  return sentences(text).filter((s) => (s.includes("コーパス") && JUDGEMENT.test(s)) || HEADWORD_BASIS.test(s) || COUNTED.test(s));
 }
 
 /** The learner's notes of each collection, where a judgement explanation does not belong. */

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { CLAIM_FIELDS, unverifiableSentences } from "../scripts/lib/wording";
+import { CLAIM_FIELDS, judgementSentences, unverifiableSentences } from "../scripts/lib/wording";
 
 // DECISIONS, Phase 5 監査 セッション 2, H-5: STYLE's forbidden wordings (通じる,
 // 一番よく使う, 減点されない) become validate warnings in the claim fields
@@ -41,3 +41,23 @@ describe("unverifiableSentences", () => {
     expect(CLAIM_FIELDS.conventions.test("advice_ja")).toBe(true);
   });
 });
+
+describe("judgementSentences (Phase 5 監査 6 の決定 8)", () => {
+  it("finds how the corpus was counted and how the headword was settled", () => {
+    expect(judgementSentences("用例コーパスでは the span of の形で数えた。span は区間の意味でも使う。")).toEqual(["用例コーパスでは the span of の形で数えた。"]);
+    expect(judgementSentences("用例コーパスでは話・書とも決まらなかった。")).toHaveLength(1);
+    expect(judgementSentences("見出しは Levin の本の呼び方（2.1 ほか 4 件）。")).toHaveLength(1);
+    expect(judgementSentences("AP の CED の呼び方を見出しにした。")).toHaveLength(1);
+    // the sentence before named the corpus
+    expect(judgementSentences("そのため数え上げの形だけを数えた。")).toHaveLength(1);
+    expect(judgementSentences("PIE は pie chart と同じ語なので数えなかった。")).toHaveLength(1);
+  });
+
+  it("leaves a learner's note alone", () => {
+    expect(judgementSentences("講義では A、教科書では B を多く使う（用例コーパス）。")).toEqual([]);
+    expect(judgementSentences("一番上の 1 を row 0 と数えると、n 段目が (a + b)ⁿ の係数になる。")).toEqual([]);
+    expect(judgementSentences("IM は ratio を Grade 6 の glossary の見出しにしている。")).toEqual([]);
+    expect(judgementSentences("英語の見出しは訳語で、決まった言い方ではない。")).toEqual([]);
+  });
+});
+
