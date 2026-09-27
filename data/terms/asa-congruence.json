@@ -10,7 +10,8 @@
   "en": {
     "term": "angle-side-angle",
     "alt": [
-      "ASA"
+      "ASA",
+      "angle-side-angle triangle congruence theorem"
     ],
     "uk": null
   },
@@ -60,7 +61,8 @@
   "pitfalls": [
     "日本語は辺から見て「両端の角」と言い、英語は角から見て included side（2 角にはさまれた辺）と言う。A-S-A の並びで、辺が 2 角の間にあることを表す。",
     "2 角と 1 辺が等しくても、その辺が 2 角の間にないときは AAS（angle-angle-side）と呼んで区別する。",
-    "統計の文脈（AP Statistics の CED など）で出てくる ASA は American Statistical Association で、合同条件とは関係ない。"
+    "統計の文脈（AP Statistics の CED など）で出てくる ASA は American Statistical Association で、合同条件とは関係ない。",
+    "IM Geometry はこの合同条件を Angle-Side-Angle Triangle Congruence Theorem と呼び（Geometry 2.7 ほか、12 件）、CK-12 Geometry は略号 ASA の postulate として扱う（4.15 ASA and AAS）。"
   ],
   "related": [
     "sss-congruence",
@@ -80,6 +82,12 @@
       "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
       "note": "ASA は American Statistical Association（3 件）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.15 ASA and AAS（ASA を postulate として扱う）"
     }
   ],
   "confidence": "verified",

@@ -21,7 +21,7 @@ count.ts と probe.ts は `scripts/corpus/references.ts` で読む。
 4. **英語版 Wikipedia の記事名**: ja 側の langlink 先（エントリの wikipedia-langlink の出典、無ければ ja.term の記事。
    ja の記事は数学カテゴリから 4 段以内で、別の記事へのリダイレクトでないもの）、無ければ en.term がリダイレクト解決後に当たる記事。
    英語の記事も数学カテゴリから 4 段以内（ja 側と同じ規則。wikicat.py）で、曖昧さ回避ページ・別の記事の節へのリダイレクトは使わない。
-   記事が別の概念のものは lib.ts `WIKIPEDIA_NOT_SAME` に理由付きで外す。flag は corpus-reference-fallback、note は「Wikipedia の記事名」
+   **見出しと同じ概念の記事に限る**（記事が定理でエントリがその定理の角、など概念が違えば記事名は候補にしない。Phase 5 監査 4 の決定 3）。記事が別の概念のものは lib.ts `WIKIPEDIA_NOT_SAME` に理由付きで外す。flag は corpus-reference-fallback、note は「Wikipedia の記事名」
 
 **記号（symbols）**も話し言葉で ③ なら同じ段の順で読みを決める（lib.ts `settleSymbolReading`。DECISIONS「Phase 3 記号と慣習差の前の修正」2）。
 ただし段が読みを決めるのは、その段の参照の 1 つが読みの形（SYMBOL_PATTERNS）を 3 件以上使うとき（CED は 1 件から）。4 の Wikipedia は使わない（記事名は読みではない）。
@@ -32,7 +32,7 @@ count.ts と probe.ts は `scripts/corpus/references.ts` で読む。
 「決まった言い方が出てこない」の例外（英語の名前があると分かっているもの）に数えるのは、1 の CED の呼び方、
 参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）のどれか 1 つが候補の 1 つを 3 件以上使っている語（lib.ts `REFERENCE_NAMED`。IM の glossary の見出しの例外を一般にしたもの）、
 mapping none で ja が本プロジェクトの訳語の語（米国の名前が元）、ja と en が同じ語（LIATE）（DECISIONS「Phase 2 幾何・離散の単元 2」「単元 3 の前の修正」）、
-4 の英語版 Wikipedia の記事名が候補の 1 つである語（DECISIONS「Phase 5 監査（セッション 3）の前の決定」3）。記事名だけでこの例外に当たる語は、
+4 の英語版 Wikipedia の記事名が候補の 1 つである語（DECISIONS「Phase 5 監査（セッション 3）の前の決定」3。見出しと同じ概念の記事に限る）。記事名だけでこの例外に当たる語は、
 2・3 の参照の 1〜2 件（名前があるとするには足りない件数）より記事名を先にして、記事名を見出しにする（Nicholson が 1 回だけ使う連語 sum of the roots を 解と係数の関係 の見出しにしない）。
 
 ## 一覧
@@ -99,6 +99,17 @@ count.ts・decide.ts・probe.ts が terms・symbols の件数と重みから外�
 - 完全一致で語形変化はまとめない。「A | B」は選択肢ごとの件数を足す（1 つの質問に 2 つあれば 2 回数える）。「!w」は外して数え、「…」の空きの選択肢は数えない。
   数学の質問のサイトでは語がほとんど別の意味になる選択肢（scroll up、more slowly、have a second ほか）は検索しない（mse.ts `MSE_SKIP`）
 - 本文を取らないので、件数に別の意味が混じっていても文脈で確かめられない。レポートの怪しい点に書く
+
+### 発音の出典（2026-09-26）
+
+発音の主張（強勢の位置、同音の語、語末の読み）は用例コーパスにも参照にも確かめる手だてがないので、辞書で確かめたものだけ書く（Phase 5 監査 4 の決定 2。STYLE 追記欄）。
+
+| id | 資料 | 取得元 | 使うもの |
+|---|---|---|---|
+| merriam-webster | *Merriam-Webster.com Dictionary*（Merriam-Webster） | https://www.merriam-webster.com/dictionary/<語>（ブラウザで読む。curl は 403 になる） | 見出し語の発音の表記（respelling と強勢）、複数形、異綴り。本文（定義文）は写さない |
+
+- 出典は `type: reference`、`title`「Merriam-Webster「hypotenuse」」、`url` はその語のページ、`note` に表記（hī-ˈpä-tə-ˌnüs）と確かめた日
+- 辞書に無い語・確かめられない主張（「〜に近く発音する」だけの文）は消す。カタカナの近似は、辞書の表記を添えて残してよい
 
 ### 慣習差の日本側の資料（2026-09-25・2026-09-26）
 

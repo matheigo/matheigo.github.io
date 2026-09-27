@@ -5,8 +5,9 @@
     python3 scripts/audit/show_batch.py --ids terms/limit,symbols/x
 
 Each entry is shown with the results of the pre-audit checks that concern it
-(audits/checks/: copy-overlap, jp-claims, us-claims), so that points ⑤ and ⑦
-of the audit can be read next to the text. Prints to the terminal only.
+(audits/checks/: copy-overlap, jp-claims, us-claims, and the reference names judged
+to be the entry's concept but missing from en / alt / variants, reference-theorem-names),
+so that points ⑤ and ⑦ of the audit can be read next to the text. Prints to the terminal only.
 """
 import csv
 import json
@@ -34,7 +35,15 @@ def checks():
     for k in ("noReference", "entryHasReference"):
         for c in u[k]:
             us.setdefault((c["collection"], c["id"]), []).append((k, c))
-    return copy, jp, us
+    # reference names judged to be the entry's concept but absent from en / alt / variants (audit 4, decision 1)
+    ref = {}
+    names = os.path.join(CHECKS, "reference-theorem-names.json")
+    if os.path.exists(names):
+        for r in load(names)["names"]:
+            j = r.get("judged") or {}
+            if j.get("id") and j["id"] not in r["matched"]:
+                ref.setdefault(("terms", j["id"]), []).append(r)
+    return copy, jp, us, ref
 
 
 def top(counts, n=4):
@@ -42,7 +51,7 @@ def top(counts, n=4):
     return ", ".join(f"{k} {v}" for k, v in items)
 
 
-def show(collection, id_, copy, jp, us):
+def show(collection, id_, copy, jp, us, ref=None):
     d = load(os.path.join(ROOT, "data", collection, f"{id_}.json"))
     p = print
     p("=" * 100)
@@ -105,10 +114,14 @@ def show(collection, id_, copy, jp, us):
         p(f"  !JP {c['field']}: {c['sentence']}")
     for k, c in us.get((collection, id_), []):
         p(f"  !US({'参照なし' if k == 'noReference' else 'エントリに参照'}) {c['field']}: {c['sentence']}")
+    for r in (ref or {}).get((collection, id_), []):
+        refs = "、".join(f"{l} {n}" for l, n in r["refs"].items())
+        kind = "REF（関連）" if r["judged"].get("related") else "REF"
+        p(f"  !{kind} {r['name']}（{refs}）: {r['judged'].get('note', '')}")
 
 
 def main():
-    copy, jp, us = checks()
+    copy, jp, us, ref = checks()
     if sys.argv[1] == "--ids":
         ids = [x.split("/", 1) for x in sys.argv[2].split(",")]
     else:
@@ -116,7 +129,7 @@ def main():
         with open(os.path.join(ROOT, "audits", "phase5-order.csv"), encoding="utf-8") as f:
             ids = [(r["collection"], r["id"]) for r in csv.DictReader(f) if r["batch"] == b]
     for c, i in ids:
-        show(c, i, copy, jp, us)
+        show(c, i, copy, jp, us, ref)
 
 
 if __name__ == "__main__":

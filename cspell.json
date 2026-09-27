@@ -14,7 +14,8 @@
     "/\"(latex|reading|romaji)\":\\s*\"[^\"]*\"/g",
     "/\"(respelling|ipa)\":\\s*\"[^\"]*\"/g",
     "/\"id\":\\s*\"[a-z0-9-]+\"/g",
-    "/`[^`\\n]*`/g"
+    "/`[^`\\n]*`/g",
+    "/[ˈˌ][^\\s\"、。「」（）]*/g"
   ],
   "words": [
     "adjugate",
@@ -99,8 +100,8 @@
     "elemalg",
     "enth",
     "Euler",
-    "eulerian",
     "Eulerian",
+    "eulerian",
     "eulers",
     "excenter",
     "excenters",
@@ -160,6 +161,7 @@
     "memoryless",
     "Menelaus",
     "menelauss",
+    "Merriam",
     "mext",
     "micase",
     "MICASE",
