@@ -9,10 +9,10 @@
     ]
   },
   "en": {
-    "term": "side-angle-side triangle congruence theorem",
+    "term": "side-angle-side",
     "alt": [
-      "side-angle-side",
-      "SAS"
+      "SAS",
+      "side-angle-side triangle congruence theorem"
     ],
     "uk": null
   },
@@ -71,7 +71,7 @@
     "英語の並び side-angle-side は、角が 2 辺の間にあることを表す。2 辺とその間にない角（SSA）は合同条件にならない（正弦定理の ambiguous case）。",
     "三角比の教科書（OpenStax Algebra and Trigonometry など）では、SAS は「2 辺とその間の角が分かっている三角形」を解く場合の名前としても使う（余弦定理を使う）。同じ文字だが、合同の証明とは別の使い方。",
     "CK-12 Geometry は by SAS などの略号の形が 13 件、side-angle-side が 3 件。",
-    "IM Geometry はこの合同条件を Side-Angle-Side Triangle Congruence Theorem と呼ぶ（Geometry 2.6 ほか、16 件）。CK-12 Geometry は SAS Postulate（4.14 SAS）。"
+    "IM Geometry はこの合同条件を Side-Angle-Side Triangle Congruence Theorem と呼ぶ（Geometry 2.6 ほか、17 件）。CK-12 Geometry は SAS Postulate（4.14 SAS）。"
   ],
   "related": [
     "sss-congruence",
@@ -122,13 +122,13 @@
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは IM の呼び方 side-angle-side triangle congruence theorem（Geometry 2.6 Side-Angle-Side Triangle Congruence・Geometry 2.7 Angle-Side-Angle Triangle Congruence・Geometry 2.8 The Perpendicular Bisector Theorem・計 17 件）。register は主張しない。",
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-27）で大きな直し: 監査 6 の決定 4 の数え直しで見出しを side-angle-side triangle congruence theorem に（IM Geometry の side-angle-side は定理の名前の中が多い）。見直す点: IM Geometry 2.6 ほかの本文でこの名前が合同条件そのものを指すか、side-angle-side・SAS を en.alt にしたこと、足した例文、asa・sss の見出しとの揃え。次の監査のセッションが見直す。",
       "raised": "2026-09-27"
     },
     {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: 監査 6 の決定 4 の数え直しで見出しを side-angle-side triangle congruence theorem に（IM Geometry の side-angle-side は定理の名前の中が多い）。見直す点: IM Geometry 2.6 ほかの本文でこの名前が合同条件そのものを指すか、side-angle-side・SAS を en.alt にしたこと、足した例文、asa・sss の見出しとの揃え。次の監査のセッションが見直す。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 2 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは IM の呼び方 side-angle-side（Geometry 2.6 Side-Angle-Side Triangle Congruence・Geometry 3.10 Other Conditions for Triangle Similarity・Geometry 2.7 Angle-Side-Angle Triangle Congruence・計 27 件）。register は主張しない。",
       "raised": "2026-09-27"
     }
   ]

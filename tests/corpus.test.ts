@@ -10,6 +10,7 @@ import {
   balance,
   bookSections,
   candidatesOf,
+  namedOnHeadword,
   cedSections,
   cnxmlToText,
   countEntry,
@@ -1361,6 +1362,25 @@ describe("containsWording and the candidates (a collocation on the headword is n
     expect(containsWording("in descending order", "write … in descending order")).toBe(false);
     expect(containsWording("the discriminant is negative", "quadratic formula")).toBe(false);
     expect(containsWording("quadratic formulas", "quadratic formula")).toBe(true);
+  });
+
+  it("leaves a reference's theorem name built on the headword out of the candidates (Phase 5 監査 7 の前の決定 3)", () => {
+    expect(namedOnHeadword("side-angle-side triangle congruence theorem", "side-angle-side")).toBe(true);
+    expect(namedOnHeadword("exterior angle sum theorem", "exterior angle sum")).toBe(true);
+    expect(namedOnHeadword("net change theorem", "net change")).toBe(true);
+    // not a theorem name, not built on the headword, or the headword itself
+    expect(namedOnHeadword("algebraic properties of limits", "properties of limits")).toBe(false);
+    expect(namedOnHeadword("SAS postulate", "side-angle-side")).toBe(false);
+    expect(namedOnHeadword("the ratio test", "the ratio test")).toBe(false);
+    // the headword being the longer name, the shorter candidate still competes
+    expect(namedOnHeadword("multiplication rule", "general multiplication rule")).toBe(false);
+    const got = candidatesOf("terms", {
+      id: "x",
+      en: { term: "angle-side-angle", alt: ["ASA", "angle-side-angle triangle congruence theorem"], variants: [{ term: "angle-side-angle theorem" }] },
+    });
+    expect(got).toEqual(["angle-side-angle", "ASA"]);
+    // with the name out, the headword is counted inside it as well (no longer candidate holds its hits)
+    expect(longerCandidates(got).size).toBe(0);
   });
 
   it("leaves a collocation that contains the headword out of the candidates, and keeps the others", () => {

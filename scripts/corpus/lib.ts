@@ -3169,12 +3169,31 @@ export function balance(docs: CorpusDoc[]): { rows: Balance[]; over: Balance[] }
   return { rows, over: rows.filter((r) => r.share > MAX_SHARE) };
 }
 
+/**
+ * A reference's name of a theorem, postulate, property, rule, law or test (the kinds
+ * scripts/audit/reference_names.py extracts: Side-Angle-Side Triangle Congruence Theorem,
+ * Exterior Angle Sum Theorem, Net Change Theorem).
+ */
+const THEOREM_NAME = /\b(?:theorems?|postulates?|propert(?:y|ies)|rules?|laws?|tests?)$/i;
+
+/**
+ * Is `w` a reference's theorem name built on the headword (side-angle-side triangle
+ * congruence theorem for side-angle-side)? Such a name does not compete with the
+ * headword, as a collocation built on it does not (Phase 5 監査 7 の前の決定 3, 監査 6
+ * の H-3): it is not a candidate, so the headword counts inside it too, and the
+ * containment rule (longerCandidates) never hands the headword's hits to it.
+ */
+export function namedOnHeadword(w: string, head: string): boolean {
+  return THEOREM_NAME.test(w.trim()) && containsWording(w, head) && !sameWording(w, head);
+}
+
 /** Candidate wordings to count for one entry (PLAN 15, step 3). */
 export function candidatesOf(collection: string, entry: Record<string, unknown>): string[] {
   const out: string[] = [];
   if (collection === "terms") {
     const en = entry.en as { term: string; alt?: string[]; variants?: { term: string }[] };
-    const words = [en.term, ...(en.alt ?? []), ...(en.variants ?? []).map((v) => v.term)];
+    // A reference's theorem name built on the headword does not compete with it (監査 7 の前の決定 3).
+    const words = [en.term, ...[...(en.alt ?? []), ...(en.variants ?? []).map((v) => v.term)].filter((w) => !namedOnHeadword(w, en.term))];
     // A collocation built on the headword (use the quadratic formula) is not another way to say it and
     // must not compete with it (Phase 5 監査 5 の決定 3): it is not a candidate and is not counted.
     for (const c of (entry.collocations as { en: string }[] | undefined) ?? []) {
