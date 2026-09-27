@@ -71,7 +71,7 @@
       "note": "12.2 Arithmetic Sequences・12.3 Geometric Sequences and Series（the sum formula）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-24",
     "audit": "2026-09-27",
@@ -94,11 +94,6 @@
     "counted": "2026-09-27"
   },
   "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: 見出し summation formulas → sums and powers of integers（③ の参照決め: OpenStax Calculus Volume 1 5.1 の規則の名前 Rule: Sums and Powers of Integers 5 件）。見直す点: 規則の名前を見出しにしてよいか（STYLE 追記欄の参照の定理・法則の名前）、pitfalls[0]、例文の言い方、level.us Calculus I と単元、ja.term Σ の公式（資料に 0 件）。次の監査のセッションが見直す。",
-      "raised": "2026-09-27"
-    },
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 sums and powers of integers（本文 5 件）。register は主張しない。",

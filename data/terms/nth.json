@@ -100,7 +100,7 @@
       "note": "5.1 Sequences・6.3 Taylor and Maclaurin Series（the nth term、the nth Taylor polynomial）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-24",
     "audit": "2026-09-27",
@@ -135,12 +135,5 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-27"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: 定義を「n 番目の」から「n 番目の、また n 次・n 回目の」に（nth root・nth derivative の nth は位置ではない）。見直す点: definition_ja・definition_en、pitfalls の Merriam-Webster の発音と n-th の出典、level.us の AP Calculus BC・Calculus II と単元。次の監査のセッションが見直す。",
-      "raised": "2026-09-27"
-    }
-  ]
+  }
 }

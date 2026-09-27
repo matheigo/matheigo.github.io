@@ -47,7 +47,7 @@
       "note": "4.3 Partial Derivatives（the partial derivative of f with respect to x, written ∂f/∂x or f_x。∂f/∂x is spoken as the partial of f with respect to x）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "updated": "2026-09-27",
   "evidence": {
     "spoken": {
@@ -64,13 +64,6 @@
     ],
     "counted": "2026-09-27"
   },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: 1 つ目の読み partial f partial x → the partial derivative of f with respect to x（読みの形 partial * partial * が partial sums・partial order などを数えていた。文字を挟む形にすると ② 40・32・27）。見直す点: SYMBOL_PATTERNS の新しい形（partial f partial * ほか 14 文字）と数え直した evidence、読みの並び（3 つとも standard）、notes[0]・[1]、OpenStax Calculus Volume 3 の note。次の監査のセッションが見直す。",
-      "raised": "2026-09-27"
-    }
-  ],
   "reviewed": {
     "machine": null,
     "audit": "2026-09-27",
