@@ -348,7 +348,7 @@
 | terms | line | pitfalls[1] |  | 共通テストの問題文は記号を使わず「直線 AB」と書く。 |
 | terms | linear-approximation | mapping_note |  | ja.alt の「接線近似」は学習指導要領解説に無い（日本語版 Wikipedia「線型近似」は接線近似とも呼ぶと書く）。 |
 | terms | linear-function | pitfalls[0] |  | m が傾き（slope）、b が y 切片（y-intercept）で、中学校学習指導要領解説の y = ax + b の a が m に当たる。 |
-| terms | linear-inequality | pitfalls[0] |  | 中学校学習指導要領〔用語・記号〕（中1 数と式）は ≦ ≧、OpenStax と AP の CED は ≤ ≥ と書く（慣習差 inequality-symbols）。 |
+| terms | linear-inequality | pitfalls[0] |  | 中学校学習指導要領〔用語・記号〕（中1 数と式）は ≦ ≧、OpenStax・IM は ≤ ≥ と書く（慣習差 inequality-symbols）。 |
 | terms | linear-inequality | pitfalls[1] |  | そのグラフ（半平面）は、学習指導要領解説では数学II「図形と方程式」の「不等式の表す領域」で扱う（慣習差 inequality-terms-scope、エントリ system-of-linear-inequalities）。 |
 | terms | linear-pair | mapping_note |  | 見出しの「一直線をなす角」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | linear-pair | mapping_note | ○ | 日本では「隣り合う 2 つの角の和が 180°」を性質として扱い、2 角の組に名前を付けない。 |
