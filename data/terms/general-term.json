@@ -82,7 +82,7 @@
       "note": "5.1 Sequences・5.2 Infinite Series（general term）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-24",
     "audit": "2026-09-27",
@@ -111,12 +111,5 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-27"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: 例文の差し替え（二項展開の項を general term と呼ぶ例は用例コーパス・参照・英語版 Wikipedia「Binomial theorem」に無く、OpenStax Algebra and Trigonometry は the (r+1)th term、Intermediate Algebra は the (r + 1)st term と書く。話し言葉の例文を OpenStax の言い方に、書き言葉の例文を数列の一般項に）。続きのセッションの直し。見直す点: mapping を exact のまま pitfalls に書いたこと（near にする案もある）、definition_en の並び、level.us の AP Calculus BC（CED の試験の例題 Question 4）・Calculus II。次の監査のセッションが見直す。",
-      "raised": "2026-09-27"
-    }
-  ]
+  }
 }

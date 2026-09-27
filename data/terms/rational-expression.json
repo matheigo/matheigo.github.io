@@ -92,7 +92,7 @@
       "note": "数学II いろいろな式: 多項式の除法や分数式の四則計算（簡単な場合は分数式の分母の次数が二次程度まで）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-24",
     "audit": "2026-09-27",
@@ -119,12 +119,5 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-27"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: mapping exact → near（OpenStax Elementary Algebra は rational expression を多項式の商 p/q とし −13/42 も含める。日本語版 Wikipedia「数式」の分数式は文字の分母を含む式で、rational expression は有理式に当たる。rational-function（verified）と同じ関係）。続きのセッションの直し。見直す点: mapping_note の資料（「部分分数分解」は有理式を分数式とも呼ぶ）、definition_en を英語の定義にしたこと、Algebra 1 を足さなかったこと（CCSS Appendix A は有理式を Algebra II に置く）、pitfalls の excluded values（OpenStax Algebra and Trigonometry の Linear Equations in One Variable）。次の監査のセッションが見直す。",
-      "raised": "2026-09-27"
-    }
-  ]
+  }
 }
