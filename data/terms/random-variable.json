@@ -51,7 +51,9 @@
     "probability-distribution",
     "expected-value",
     "discrete-random-variable",
-    "continuous-random-variable"
+    "continuous-random-variable",
+    "independent-random-variables",
+    "binomial-distribution"
   ],
   "sources": [
     {
@@ -61,7 +63,14 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "4 章の導入（Random Variable Notation: X と x）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.8（random variable）"
     }
   ],
   "confidence": "likely",
@@ -70,7 +79,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "random variable": 491
@@ -87,6 +96,6 @@
       "yt:3blue1brown",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

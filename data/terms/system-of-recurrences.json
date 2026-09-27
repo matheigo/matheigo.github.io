@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。2 つの数列 {aₙ}, {bₙ} を互いの式で表す漸化式の組で、英語で説明するなら a pair of recurrences for aₙ and bₙ と言う。行列で aₙ₊₁ = Maₙ の形に書く扱いは線形代数（MIT 18.06）にある。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。Nicholson の Linear Algebra with Applications（3.3）は、2 つ以上の量を互いの前の値で表す漸化式を行列で vₖ₊₁ = Avₖ と書き、このベクトルの列を linear dynamical system と呼ぶ。",
   "domains": [
     "sequences"
   ],
@@ -21,12 +21,11 @@
       "数B"
     ],
     "us": [
-      "Algebra 2",
-      "Precalculus"
+      "Linear Algebra"
     ]
   },
-  "definition_ja": "2 つ以上の数列の項を、互いの前の項で表す漸化式の組。",
-  "definition_en": "A set of recurrences in which each of two or more sequences is given in terms of the earlier terms of the others.",
+  "definition_ja": "2 つ以上の数列の次の項を、それらの数列の前の項で表す漸化式の組。",
+  "definition_en": "A set of recurrences that give the next terms of two or more sequences in terms of the earlier terms of all of them.",
   "latex": "a_{n+1} = a_n + 2b_n, \\quad b_{n+1} = a_n + b_n",
   "spoken_en": null,
   "examples": [
@@ -36,8 +35,8 @@
       "register": "spoken"
     },
     {
-      "en": "The sequences {aₙ} and {bₙ} satisfy a₁ = b₁ = 1, aₙ₊₁ = 3aₙ + bₙ, bₙ₊₁ = aₙ + 3bₙ. Find aₙ.",
-      "ja": "数列 {aₙ}, {bₙ} は a₁ = b₁ = 1、aₙ₊₁ = 3aₙ + bₙ、bₙ₊₁ = aₙ + 3bₙ を満たす。aₙ を求めよ。",
+      "en": "The sequences {aₙ} and {bₙ} satisfy the system of recurrences aₙ₊₁ = 3aₙ + bₙ, bₙ₊₁ = aₙ + 3bₙ with a₁ = b₁ = 1. Find aₙ.",
+      "ja": "数列 {aₙ}, {bₙ} は a₁ = b₁ = 1 と連立漸化式 aₙ₊₁ = 3aₙ + bₙ、bₙ₊₁ = aₙ + 3bₙ を満たす。aₙ を求めよ。",
       "register": "written"
     }
   ],
@@ -45,11 +44,18 @@
   "pitfalls": [],
   "related": [
     "recurrence-relation",
-    "solve-the-recurrence"
+    "solve-the-recurrence",
+    "characteristic-equation"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "3.3 Diagonalization and Eigenvalues（linear dynamical system、Example 3.3.1）"
     }
   ],
   "confidence": "likely",
@@ -58,7 +64,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"
@@ -67,7 +73,7 @@
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping none なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

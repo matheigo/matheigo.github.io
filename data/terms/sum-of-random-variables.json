@@ -3,9 +3,7 @@
   "ja": {
     "term": "確率変数の和",
     "reading": "かくりつへんすうのわ",
-    "alt": [
-      "確率変数の和と差"
-    ]
+    "alt": []
   },
   "en": {
     "term": "sum of random variables",
@@ -41,21 +39,40 @@
       "en": "X and Y are independent with SD(X) = 3 and SD(Y) = 4. Find the standard deviation of X + Y.",
       "ja": "X と Y は独立で、SD(X) = 3, SD(Y) = 4 である。X + Y の標準偏差を求めよ。",
       "register": "written"
+    },
+    {
+      "en": "For any sum of random variables the means add, but the variances add only when the variables are independent.",
+      "ja": "確率変数の和では平均はいつも足せるが、分散が足せるのは独立なときだけ。",
+      "register": "spoken"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "標準偏差はそのまま足さない。分散を足してから平方根をとる。"
+    "標準偏差はそのまま足さない。独立なら分散を足してから平方根をとる。"
   ],
   "related": [
     "independent-random-variables",
     "expected-value",
-    "variance"
+    "variance",
+    "linearity-of-expectation"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "7.2 The Central Limit Theorem for Sums・巻末 Practice Tests（sums of random variables）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Independence_(probability_theory)",
+      "note": "節 Expectation, covariance, variance, and correlation（独立なら分散が和になる）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "理数数学II (8) 統計的な推測の発展・拡充の内容（確率変数の和、和の期待値、互いに独立であるときの分散の性質）"
     }
   ],
   "confidence": "likely",
@@ -64,7 +81,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "sum of random variables": 4
@@ -78,13 +95,13 @@
       "mit-notes",
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは OpenStax の呼び方 sum of random variables（本文 2 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

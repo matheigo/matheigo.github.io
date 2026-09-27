@@ -42,18 +42,26 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "近似を使ってよい目安（np ≥ 10 かつ n(1 − p) ≥ 10 など）は教科書によって数が違う。",
-    "the normal approximation だけだと、t 分布などほかの分布の正規近似も指す。"
+    "目安は資料で違う: OpenStax Introductory Statistics（7.3）は np > 5 かつ nq > 5、AP Statistics の CED（topic 3.2。標本比率の分布）は np ≥ 10 かつ n(1 − p) ≥ 10。",
+    "the normal approximation だけだと、ほかの分布の正規近似も指す（OpenStax Introductory Statistics 10.2 は normal approximation to the Student's t と書く）。"
   ],
   "related": [
     "binomial-distribution",
     "normal-distribution",
-    "continuity-correction"
+    "continuity-correction",
+    "sampling-distribution-of-a-proportion"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "7.3 Using the Central Limit Theorem・9.3（normal approximation to the binomial、np > 5 and nq > 5）・10.2（normal approximation to the Student's t）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 3.2（np ≥ 10、n(1 − p) ≥ 10）"
     }
   ],
   "confidence": "likely",
@@ -62,7 +70,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "normal approximation to the binomial": 9
@@ -70,13 +78,13 @@
     "sources": [
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 normal approximation to the binomial（本文 9 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

@@ -17,6 +17,11 @@
         "note": "OpenStax Intermediate Algebra と OpenStax Algebra and Trigonometry の問題の言い方。話し言葉にはほとんど出てこない（Professor Leonard だけ）。"
       },
       {
+        "term": "write an explicit formula",
+        "register": "written",
+        "note": "OpenStax Algebra and Trigonometry（13.2・13.3）の問題文の言い方（Write an explicit formula for …）。"
+      },
+      {
         "term": "find an explicit formula",
         "register": "written",
         "note": "同じ問いの別の言い方。explicit formula は漸化式（recursive formula）と対になる語。話し言葉には出てこず、書き言葉では find the general term より少ない（OpenStax Calculus・Algebra and Trigonometry）。"
@@ -75,7 +80,13 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.2 Arithmetic Sequences・13.3 Geometric Sequences（write an explicit formula）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "12.2 Arithmetic Sequences・12.3 Geometric Sequences and Series（Find the General Term (nth Term)）"
     }
   ],
   "confidence": "likely",
@@ -93,7 +104,8 @@
     "written": {
       "find an explicit formula": 11,
       "find the general term": 34,
-      "find the nth term": 1
+      "find the nth term": 1,
+      "write an explicit formula": 21
     },
     "sources": [
       "openstax-algtrig",
@@ -101,6 +113,6 @@
       "openstax-intalg",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

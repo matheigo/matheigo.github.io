@@ -21,8 +21,7 @@
       "数B"
     ],
     "us": [
-      "Algebra 2",
-      "Precalculus"
+      "Algebra 2"
     ]
   },
   "definition_ja": "3 つの数 a, b, c がこの順に等差数列をなすときの b。2b = a + c を満たす。",
@@ -31,24 +30,25 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "The middle term is just the average of its neighbors.",
-      "ja": "等差中項は、両隣の平均にすぎない。",
+      "en": "The middle term is just the arithmetic mean of its neighbors: b is a plus c over two.",
+      "ja": "等差中項は両隣の相加平均、b = (a + c)/2。",
       "register": "spoken"
     },
     {
-      "en": "If x − 1, 2x, and 3x + 4 form an arithmetic sequence, find x.",
-      "ja": "x − 1、2x、3x + 4 がこの順に等差数列をなすとき、x を求めよ。",
+      "en": "If x + 1, 2x, and 4x − 3 form an arithmetic sequence, find x.",
+      "ja": "x + 1、2x、4x − 3 がこの順に等差数列をなすとき、x を求めよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "arithmetic mean は統計の「平均」（相加平均）と同じ語。"
+    "等差中項の意味では the arithmetic mean of a and c と 2 数を添えて言う。arithmetic mean だけだと統計の平均（arithmetic-mean）と同じ語。"
   ],
   "related": [
     "arithmetic-sequence",
     "geometric-middle-term",
-    "arithmetic-mean"
+    "arithmetic-mean",
+    "am-gm-inequality"
   ],
   "sources": [
     {
@@ -61,7 +61,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "arithmetic mean of … and": 7
@@ -69,13 +69,13 @@
     "sources": [
       "yt:organicchem"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 7 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

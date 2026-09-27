@@ -3,9 +3,7 @@
   "ja": {
     "term": "n=1 のとき",
     "reading": "えぬいこーるいちのとき",
-    "alt": [
-      "基底段階"
-    ]
+    "alt": []
   },
   "en": {
     "term": "base case",
@@ -17,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の答案は「[1] n = 1 のとき」と書くだけで、この段に名前をつけないことが多い。英語では base case と名前で呼ぶ。見出しの「n=1 のとき」は答案の書き方。",
+  "mapping_note": "日本語版 Wikipedia「数学的帰納法」は手順を番号で書くだけでこの段に名前をつけず、「多項定理」などの証明は「n=1 のとき」と書き出す。英語では base case と名前で呼ぶ（英語版 Wikipedia「Mathematical induction」）。見出しの「n=1 のとき」は答案の書き方。",
   "domains": [
     "proof"
   ],
@@ -26,8 +24,6 @@
       "数B"
     ],
     "us": [
-      "Algebra 2",
-      "Precalculus",
       "Discrete Math"
     ]
   },
@@ -53,7 +49,10 @@
   ],
   "related": [
     "proof-by-induction",
-    "inductive-hypothesis"
+    "inductive-hypothesis",
+    "inductive-step",
+    "prove-by-induction",
+    "strong-induction"
   ],
   "sources": [
     {
@@ -64,6 +63,24 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Mathematical_induction",
       "note": "記事「Mathematical induction」の冒頭と節 Description で base case を太字で定義（数学カテゴリから 3 段）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学的帰納法」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6%E7%9A%84%E5%B8%B0%E7%B4%8D%E6%B3%95",
+      "note": "手順を番号で書き、最初の段に名前をつけない"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「多項定理」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A4%9A%E9%A0%85%E5%AE%9A%E7%90%86",
+      "note": "証明を「n=1 のとき」と書き出す"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.5 Proof by Induction・4.6 Strong Induction（base case）"
     }
   ],
   "confidence": "likely",
@@ -72,8 +89,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
-  "flags": [],
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "base case": 61,
@@ -88,6 +104,6 @@
       "mit-6.042",
       "mit-notes"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

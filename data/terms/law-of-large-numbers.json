@@ -20,6 +20,8 @@
   ],
   "level": {
     "jp": [
+      "中2",
+      "数A",
       "数B"
     ],
     "us": [
@@ -28,13 +30,13 @@
     ]
   },
   "definition_ja": "試行の回数や標本の大きさを大きくすると、相対度数や標本平均が、真の確率や母平均に近づくという法則。",
-  "definition_en": "The principle that as the number of trials or the sample size grows, the relative frequency or the sample mean gets close to the true probability or the population mean.",
+  "definition_en": "The principle that as more trials are run or larger samples are taken, the relative frequency or the sample mean settles close to the true probability or the population mean.",
   "latex": null,
   "spoken_en": null,
   "examples": [
     {
-      "en": "Flip it ten times and you might get seven heads, but flip it ten thousand times and you'll be close to half.",
-      "ja": "10 回なら表が 7 回出るかもしれないが、1 万回投げれば半分に近くなる。",
+      "en": "Flip a coin ten times and you might get seven heads, but flip it ten thousand times and you'll be close to half.",
+      "ja": "コインを 10 回投げるなら表が 7 回出るかもしれないが、1 万回投げれば半分に近くなる。",
       "register": "spoken"
     },
     {
@@ -61,6 +63,24 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第2学年 D(2) 確率（大数の法則）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A (2) 場合の数と確率（「大数の法則」を基にして理解）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.3（law of large numbers）"
     }
   ],
   "confidence": "likely",
@@ -69,7 +89,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "law of large numbers": 15
@@ -77,6 +97,6 @@
     "sources": [
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

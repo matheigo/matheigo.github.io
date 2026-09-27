@@ -49,20 +49,33 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "単に geometric series とも言う（用例コーパスの話し言葉では geometric series が infinite geometric series よりずっと多い。前者には有限の和も含まれる）。",
-    "公比が 1 以上（|r| ≥ 1）なら発散する。"
+    "AP の CED（topic 10.2）と OpenStax Calculus Volume 2（5.2）は単に geometric series と呼ぶ。geometric series は有限の和にも使う。",
+    "初項が 0 でなく、公比の絶対値が 1 以上（|r| ≥ 1）なら発散する。"
   ],
   "related": [
     "geometric-sequence",
     "common-ratio",
     "infinite-series",
     "sum-of-the-series",
-    "sum-of-a-geometric-sequence"
+    "sum-of-a-geometric-sequence",
+    "repeating-decimal"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.4 Series and Their Notations（infinite geometric series）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.2（geometric series）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "5.2 Infinite Series（geometric series）"
     }
   ],
   "confidence": "likely",
@@ -71,7 +84,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "infinite geometric series": 28
@@ -86,6 +99,6 @@
       "openstax-algtrig",
       "openstax-intalg"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

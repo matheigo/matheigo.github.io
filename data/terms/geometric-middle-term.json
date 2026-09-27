@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスでは geometric mean of … and … の形も少なく、書き言葉には出てこない）。3 数 a, b, c が等比数列をなすときの b に名前はつけず、b is the geometric mean of a and c（b² = ac）と相乗平均で言う。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスでは geometric mean of … and … の形も少なく、書き言葉には出てこない）。3 数 a, b, c が等比数列をなすときの b に名前はつけず、b is the geometric mean of a and c（b² = ac）と相乗平均で言う。相乗平均（geometric mean）は正の数 √(ac) についての言い方なので、b が負のとき（2, −6, 18）や a, c が負のときには当たらない。",
   "domains": [
     "sequences"
   ],
@@ -21,8 +21,7 @@
       "数B"
     ],
     "us": [
-      "Algebra 2",
-      "Precalculus"
+      "Algebra 2"
     ]
   },
   "definition_ja": "3 つの数 a, b, c がこの順に等比数列をなすときの b。b² = ac を満たす。",
@@ -39,11 +38,16 @@
       "en": "If 2, x, and 18 form a geometric sequence, find all possible values of x.",
       "ja": "2、x、18 がこの順に等比数列をなすとき、x の値をすべて求めよ。",
       "register": "written"
+    },
+    {
+      "en": "Since 2, 6, 18 is geometric, 6 is the geometric mean of 2 and 18: six squared is 2 times 18.",
+      "ja": "2, 6, 18 は等比数列なので、6 は 2 と 18 の等比中項（6² = 2 × 18）。",
+      "register": "spoken"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "geometric mean は統計や、直角三角形の比例（geometric mean theorem）でも使う語。",
+    "英語版 Wikipedia「Geometric mean theorem」は、直角三角形の斜辺に下ろした高さについての定理をこの名前で呼ぶ。相乗平均（geometric-mean）とも同じ英語。",
     "b² = ac からは b = ±√(ac) の 2 通りが出る。"
   ],
   "related": [
@@ -55,6 +59,24 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Geometric_mean_theorem",
+      "note": "記事「Geometric mean theorem」（冒頭で geometric mean theorem を太字）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「等比数列」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%AD%89%E6%AF%94%E6%95%B0%E5%88%97",
+      "note": "脚注（a, b, c が 0 でないとき b を等比中項と呼ぶ）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 1.3 Different Types of Sequences・1.8（等比数列の間の項を求める）"
     }
   ],
   "confidence": "likely",
@@ -63,7 +85,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "geometric mean of … and": 5
@@ -71,13 +93,13 @@
     "sources": [
       "yt:organicchem"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 5 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

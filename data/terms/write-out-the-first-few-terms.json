@@ -6,11 +6,19 @@
     "alt": []
   },
   "en": {
-    "term": "write out the first few terms",
+    "term": "write the first … terms",
     "alt": [
-      "list the first few terms"
+      "list the first … terms"
     ],
-    "uk": null
+    "variants": [
+      {
+        "term": "write out the first few terms",
+        "register": "written",
+        "note": "前の見出し。OpenStax Calculus Volume 2（5.1）・Intermediate Algebra（12.3）と Levin（4.1）の言い方。"
+      }
+    ],
+    "uk": null,
+    "register": "written"
   },
   "pos": "phrase",
   "mapping": "exact",
@@ -25,7 +33,9 @@
     "us": [
       "Algebra 2",
       "Precalculus",
-      "Integrated Math 1"
+      "Integrated Math 1",
+      "Discrete Math",
+      "Calculus II"
     ]
   },
   "definition_ja": "数列の初めのいくつかの項を具体的に書き並べて、規則を見る。",
@@ -39,8 +49,8 @@
       "register": "spoken"
     },
     {
-      "en": "Write out the first few terms of the sequence aₙ = (−1)ⁿ/n.",
-      "ja": "数列 aₙ = (−1)ⁿ/n の初めのいくつかの項を書き出せ。",
+      "en": "Write the first five terms of the sequence aₙ = (−1)ⁿ/n.",
+      "ja": "数列 aₙ = (−1)ⁿ/n の初めの 5 項を書き出せ。",
       "register": "written"
     }
   ],
@@ -56,7 +66,30 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 2"
+      "title": "OpenStax Calculus Volume 2",
+      "note": "5.1 Sequences（write out the first few terms）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.1 Sequences and Their Notations（Write the first five terms of the sequence …）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "12.1 Sequences（Write the first few terms of a sequence）・12.3 Geometric Sequences and Series（write out the first few terms）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 1.5 Sequences are Functions・1.6 Representing Sequences（Write the first five terms of each sequence）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.1 Describing Sequences（writing out the first few terms）"
     }
   ],
   "confidence": "likely",
@@ -65,22 +98,18 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
-      "write out the first few terms": 6
+      "write out the first few terms": 6,
+      "write the first … terms of the sequence | write the first … terms of a sequence | write the first … terms of each sequence | write the first few terms": 67,
+      "list the first … terms": 8
     },
     "sources": [
+      "openstax-algtrig",
       "openstax-calculus",
       "openstax-intalg"
     ],
-    "counted": "2026-09-25"
-  },
-  "flags": [
-    {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 write out the first few terms（本文 6 件）。register は主張しない。",
-      "raised": "2026-09-25"
-    }
-  ]
+    "counted": "2026-09-27"
+  }
 }

@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。項をいくつかずつの組（group）に分けて考える日本の受験の手法で、英語で説明するなら group the terms like this: (1), (2, 3), (4, 5, 6), … と式で見せる。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。日本語版 Wikipedia「数学 (教科)」は数学B の数列の項目に群数列を挙げる（学習指導要領解説には出てこない）。英語で説明するなら group the terms like this: (1), (2, 3), (4, 5, 6), … と式で見せる。",
   "domains": [
     "sequences"
   ],
@@ -20,10 +20,7 @@
     "jp": [
       "数B"
     ],
-    "us": [
-      "Algebra 2",
-      "Precalculus"
-    ]
+    "us": []
   },
   "definition_ja": "数列の項を、ある規則で区切った組（群）に分けて考えるもの。第何群の何番目かで項を特定する。",
   "definition_en": "A sequence whose terms are split into groups by a rule, so that a term is located by its group and its place in the group.",
@@ -50,6 +47,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学 (教科)」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6_%28%E6%95%99%E7%A7%91%29",
+      "note": "数学B の数列の項目（群数列）"
     }
   ],
   "confidence": "likely",
@@ -58,7 +61,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"
@@ -67,7 +70,7 @@
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping none なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

@@ -7,7 +7,9 @@
   },
   "en": {
     "term": "standard normal table",
-    "alt": [],
+    "alt": [
+      "standard normal probability table"
+    ],
     "variants": [
       {
         "term": "z-table",
@@ -19,7 +21,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の数B の正規分布表は 0 から u までの確率 P(0 ≤ Z ≤ u) を載せる形が多い。OpenStax Introductory Statistics の表は z の左側の面積（area to the left of the z-score）を載せ、Khan Academy も使う表の種類に注意するよう言う。",
+  "mapping_note": "センター試験（数学II・数学B）の問題に付く正規分布表は P(0 ≤ Z ≤ z₀) を載せる。OpenStax Introductory Statistics の表は z の左側の面積（area to the left of the z-score）を載せ、Khan Academy も使う表の種類に注意するよう言う。",
   "domains": [
     "statistics"
   ],
@@ -30,7 +32,8 @@
     "us": [
       "AP Statistics",
       "Intro Statistics",
-      "Integrated Math 3"
+      "Integrated Math 3",
+      "Algebra 2"
     ]
   },
   "definition_ja": "標準正規分布について、z の値とそれに対応する確率（面積）をまとめた表。",
@@ -51,17 +54,37 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスの話し言葉の z-table はすべて Khan Academy。書き言葉には normal table・standard normal table がわずかに出てくるだけ。OpenStax Introductory Statistics は確率を電卓の normalcdf で求める。見出しは AP Statistics の CED（2026 年版。topic 2.11）の呼び方にした。"
+    "用例コーパスの話し言葉の z-table はすべて Khan Academy。書き言葉には normal table・standard normal table がわずかに出てくるだけ。OpenStax Introductory Statistics は確率を電卓の normalcdf で求める。AP Statistics の CED（topic 2.11）は standard normal table と書く。"
   ],
   "related": [
     "standard-normal-distribution",
     "z-score",
-    "normal-distribution"
+    "normal-distribution",
+    "empirical-rule"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "6.2 Using the Normal Distribution・8.1・8.3（standard normal probability table、normalcdf）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成28年度 大学入試センター試験 本試験 数学Ⅱ・数学Ｂ（問題）",
+      "url": "https://web.archive.org/web/20170601/https://www.dnc.ac.jp/albums/abm.php?f=abm00007097.pdf&n=2801-0502+suugaku2B.pdf",
+      "note": "数学II・数学B の正規分布表（標準正規分布の P(0 ≤ Z ≤ z₀)）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.11（standard normal table）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 7.15（Using Tables for Normal Distribution Areas）"
     }
   ],
   "confidence": "likely",
@@ -70,18 +93,19 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "z-table": 51
     },
     "written": {
-      "standard normal table": 1
+      "standard normal table": 1,
+      "standard normal probability table": 3
     },
     "sources": [
       "khan-ap-stats",
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -1920,6 +1920,19 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
       "observational study or an experiment | observational studies and experiments | designed experiment | randomized experiment | controlled experiment | well-designed experiment | randomized comparative experiment | conduct an experiment | design an experiment",
   }, // a study design, not a probability experiment (試行, trial) or "let's experiment"
   secant: { secant: "secant !line !lines !method !slope !slopes" }, // sec x, not the secant line (secant-line)
+  // Phase 5 監査 9, batch 21: the reference's problem wording, in the sense of the entry
+  "prove-by-induction": { "use induction": "use induction !hypothesis" }, // not "we can use induction hypothesis"
+  "write-out-the-first-few-terms": {
+    // OpenStax Algebra and Trigonometry 13.1 / Intermediate Algebra 12.1, IM Algebra 2 1.5: a sequence's terms,
+    // not a Taylor series' "write the first four nonzero terms" (Khan Academy, the AP Calculus CED)
+    "write the first … terms":
+      "write the first … terms of the sequence | write the first … terms of a sequence | write the first … terms of each sequence | write the first few terms",
+  },
+  "shift-the-index": { reindex: "reindex | re-index" }, // one word, spelled both ways (OpenStax Calculus Volume 2 / 3)
+  // "each / every successive term" is the next term in turn, not a pair of terms
+  "consecutive-terms": { "successive terms": "!each !every !next successive terms" },
+  // the article only: OpenStax Calculus Volume 2 5.1 uses both as one name
+  "limit-of-a-sequence": { "limit of a sequence": "limit of a sequence | limit of the sequence | limits of sequences" },
 };
 
 /**

@@ -30,7 +30,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語は本によって呼び方が割れる。高校レベルの教科書（OpenStax Algebra and Trigonometry）は recursive formula、大学初年次の教科書（OpenStax Calculus Volume 2）は recurrence relation と呼ぶ。日本の「漸化式」はどちらにも当たる。",
+  "mapping_note": "英語は本によって呼び方が割れる。高校レベルの教科書（OpenStax Algebra and Trigonometry）は recursive formula、大学初年次の教科書（OpenStax Calculus Volume 2）は recurrence relation と呼ぶ。学習指導要領解説（数学B）は初項と漸化式を分けて書き、漸化式は項の間の関係式だけを指す。OpenStax Algebra and Trigonometry（13.1）の recursive formula は初項と式の 2 つを合わせたもので、Levin（4.1）は式だけを recurrence relation、初項と合わせたものを recursive definition（recursive-definition）と呼ぶ。",
   "domains": [
     "sequences"
   ],
@@ -63,7 +63,6 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "話し言葉ではどの言い方も少ない。",
     "a_{n+1} = pa_n + q を α = pα + q で解く方法は characteristic-equation を参照。"
   ],
   "related": [
@@ -71,7 +70,11 @@
     "solve-the-recurrence",
     "set-up-a-recurrence",
     "characteristic-equation",
-    "system-of-recurrences"
+    "system-of-recurrences",
+    "linear-recurrence-relation",
+    "fibonacci-sequence",
+    "sequence-of-differences",
+    "find-the-nth-term"
   ],
   "sources": [
     {
@@ -81,11 +84,25 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.1 Sequences and Their Notations（recursive formula）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 2"
+      "title": "OpenStax Calculus Volume 2",
+      "note": "5.1 Sequences（recurrence relation）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学B (1) 数列（漸化式）と課題学習の例（初項 a₁ と漸化式で定義される数列）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.1 Describing Sequences（Definition 4.1.4: recurrence relation と recursive definition）"
     }
   ],
   "confidence": "likely",
@@ -94,7 +111,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "recurrence equation": 1,
@@ -112,6 +129,6 @@
       "openstax-calculus",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

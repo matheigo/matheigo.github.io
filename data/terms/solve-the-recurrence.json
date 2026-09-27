@@ -27,14 +27,14 @@
       "Discrete Math"
     ]
   },
-  "definition_ja": "漸化式と初項から、数列の一般項を求める。",
-  "definition_en": "To find a formula for the nth term of a sequence from its recurrence and first term.",
+  "definition_ja": "漸化式と初めの項（初期条件）から、数列の一般項を n の式で求める。",
+  "definition_en": "To get a closed formula for aₙ in terms of n from a recurrence and its initial term(s).",
   "latex": null,
   "spoken_en": null,
   "examples": [
     {
       "en": "To solve the recurrence, subtract the fixed point from both sides first.",
-      "ja": "漸化式を解くには、まず両辺から特性方程式の解を引く。",
+      "ja": "漸化式を解くには、まず両辺から不動点（特性方程式の解）を引く。",
       "register": "spoken"
     },
     {
@@ -45,16 +45,25 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "書き言葉はすべて MIT の講義ノート（6.042 のテキスト）。"
+    "Levin（4.4）は solve the recurrence relation と書き、求める式を closed formula と呼ぶ。"
   ],
   "related": [
     "recurrence-relation",
     "characteristic-equation",
-    "find-the-nth-term"
+    "find-the-nth-term",
+    "set-up-a-recurrence",
+    "linear-recurrence-relation",
+    "system-of-recurrences"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.4 Exponential Sequences（solve the recurrence relation、closed formula）"
     }
   ],
   "confidence": "likely",
@@ -63,7 +72,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "solve the recurrence": 1,
@@ -77,6 +86,6 @@
       "mit-6.042",
       "mit-notes"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

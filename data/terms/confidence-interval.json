@@ -49,13 +49,15 @@
     }
   ],
   "pitfalls": [
-    "「95% の確率で母平均がこの区間に入る」とは言わない。区間を作る方法の 95% が母平均を含む、という意味で 95% confident と言う。",
+    "「95% の確率で母平均がこの区間に入る」とは言わない。同じ大きさの標本を繰り返し取って同じ方法で区間を作ると、そのおよそ 95% が母平均を含む（AP Statistics の CED topic 4.3）。この意味で 95% confident と言う。",
     "z* は z star と読む（用例コーパスの話し言葉ではすべて Khan Academy）。"
   ],
   "related": [
     "confidence-level",
     "interval-estimation",
-    "point-estimate"
+    "point-estimate",
+    "error-bound",
+    "standard-error"
   ],
   "sources": [
     {
@@ -66,6 +68,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 4.3（confidence level）"
     }
   ],
   "confidence": "likely",
@@ -74,7 +82,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "confidence interval": 127
@@ -87,6 +95,6 @@
       "openstax-introstats",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

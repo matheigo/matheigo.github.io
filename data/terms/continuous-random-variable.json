@@ -27,7 +27,7 @@
       "Intro Statistics"
     ]
   },
-  "definition_ja": "ある区間のすべての実数値をとりうる確率変数。確率は確率密度関数の面積で表す。",
+  "definition_ja": "ある区間のすべての実数値をとりうる確率変数。確率は確率密度関数のグラフと x 軸の間の面積で表す。",
   "definition_en": "A random variable that can take any real value in an interval; probabilities are areas under its probability density function.",
   "latex": null,
   "spoken_en": null,
@@ -48,12 +48,20 @@
   "related": [
     "discrete-random-variable",
     "probability-density-function",
-    "random-variable"
+    "random-variable",
+    "uniform-distribution"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "5.1 Continuous Probability Functions（continuous random variable）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.11（continuous random variable）"
     }
   ],
   "confidence": "likely",
@@ -62,7 +70,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "continuous random variable": 2
@@ -76,6 +84,6 @@
       "openstax-calculus",
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -52,22 +52,31 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語では数列全体を the Fibonacci numbers と複数形で呼ぶことが多い（話し言葉・書き言葉とも Fibonacci sequence より多く、多くは MIT の講義と講義ノート）。"
+    "MIT の講義と講義ノートは数列全体を the Fibonacci numbers と複数形で呼ぶ。OpenStax Algebra and Trigonometry（13.1）と英語版 Wikipedia の記事名は Fibonacci sequence。1 つの項は the nth Fibonacci number。",
+    "F₀ = 0, F₁ = 1 から始める本もある（Levin 4.1、英語版 Wikipedia「Fibonacci sequence」）。第何項かが 1 つずれる。"
   ],
   "related": [
     "recurrence-relation",
     "sequence",
-    "characteristic-equation"
+    "characteristic-equation",
+    "linear-recurrence-relation"
   ],
   "sources": [
     {
       "type": "wikipedia-langlink",
       "ja": "フィボナッチ数",
-      "en": "Fibonacci number"
+      "en": "Fibonacci sequence"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.1 Sequences and Their Notations（Fibonacci sequence）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.1 Describing Sequences（F₀ = 0 から始める Fibonacci numbers）"
     }
   ],
   "confidence": "likely",
@@ -76,7 +85,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "Fibonacci numbers": 21,
@@ -93,6 +102,6 @@
       "openstax-algtrig",
       "openstax-calculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

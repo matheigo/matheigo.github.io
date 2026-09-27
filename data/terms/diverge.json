@@ -51,14 +51,16 @@
     }
   ],
   "pitfalls": [
-    "振動する数列も diverge（英語でも収束しないもの全体を diverge と言う）。名詞は divergence（divergence を参照）。"
+    "振動する数列も diverge。OpenStax Calculus Volume 2（5.1）は収束しない数列を divergent sequence と呼び、振動する (−1)ⁿ もその例に挙げる。名詞は divergence（divergence を参照）。"
   ],
   "related": [
     "converge",
     "divergence",
     "diverge-to-positive-infinity",
     "oscillate",
-    "nth-term-test"
+    "nth-term-test",
+    "limit-of-a-sequence",
+    "infinite-series"
   ],
   "sources": [
     {
@@ -66,7 +68,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 2"
+      "title": "OpenStax Calculus Volume 2",
+      "note": "5.1 Sequences（divergent sequence、(−1)ⁿ）"
     },
     {
       "type": "reference",
@@ -81,7 +84,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "diverge": 310
@@ -104,6 +107,6 @@
       "yt:blackpenredpen",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

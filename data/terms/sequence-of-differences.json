@@ -13,8 +13,8 @@
     "uk": null
   },
   "pos": "noun",
-  "mapping": "near",
-  "mapping_note": "Levin の Discrete Mathematics は sequence of differences と呼ぶ（4.3・6.1・4.1 ほか、36 件。first differences は 8 件）。米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（sequence of differences ／ first differences は CED・OpenStax・IM・CK-12 とも 0 件）。用例コーパスには first differences が話し言葉にわずかに出てくるだけ。数列 {aₙ₊₁ − aₙ} を指すときは the differences between consecutive terms と説明することも多い。",
+  "mapping": "exact",
+  "mapping_note": "Levin の Discrete Mathematics は sequence of differences と呼ぶ（4.3・6.1・4.1 ほか、36 件。first differences は 8 件）。米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（sequence of differences ／ first differences は CED・OpenStax・IM・CK-12 とも 0 件）。IM Algebra 2（1.3）や OpenStax Algebra and Trigonometry（13.2）は、等差数列かどうかを見るときに隣り合う項の差（the difference between consecutive terms）を調べるが、差を並べた数列には名前を付けない。",
   "domains": [
     "sequences"
   ],
@@ -49,7 +49,9 @@
   "related": [
     "sequence",
     "arithmetic-sequence",
-    "recurrence-relation"
+    "recurrence-relation",
+    "difference",
+    "consecutive-terms"
   ],
   "sources": [
     {
@@ -64,6 +66,17 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "4.3 Polynomial Sequences・6.1 Generating Functions・4.1 Describing Sequences"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 1.3 Different Types of Sequences（the differences of consecutive terms）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.2 Arithmetic Sequences（the difference between consecutive terms）"
     }
   ],
   "confidence": "likely",
@@ -80,13 +93,13 @@
     "sources": [
       "mit-18.06"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 sequence of differences（4.3 Polynomial Sequences・6.1 Generating Functions・4.1 Describing Sequences）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

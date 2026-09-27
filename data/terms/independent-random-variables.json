@@ -23,7 +23,7 @@
       "数B"
     ],
     "us": [
-      "Intro Statistics"
+      "Calculus III"
     ]
   },
   "definition_ja": "一方の確率変数の値が、他方の確率変数の値のとり方に影響しないような確率変数の組。",
@@ -48,12 +48,20 @@
   ],
   "related": [
     "sum-of-random-variables",
-    "random-variable"
+    "random-variable",
+    "independence-of-events"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Calculus Volume 3",
+      "note": "5.2 Double Integrals over General Regions（independent random variables）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Independence_(probability_theory)",
+      "note": "節 Two random variables（independent random variables の定義）"
     }
   ],
   "confidence": "likely",
@@ -62,7 +70,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "independent random variables": 11
@@ -76,6 +84,6 @@
       "mit-notes",
       "openstax-calculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

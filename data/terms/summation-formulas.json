@@ -3,13 +3,13 @@
   "ja": {
     "term": "Σ の公式",
     "reading": "しぐまのこうしき",
-    "alt": [
-      "和の公式"
-    ]
+    "alt": []
   },
   "en": {
-    "term": "summation formulas",
-    "alt": [],
+    "term": "sums and powers of integers",
+    "alt": [
+      "summation formulas"
+    ],
     "uk": null
   },
   "pos": "noun",
@@ -24,8 +24,7 @@
       "数B"
     ],
     "us": [
-      "Algebra 2",
-      "Precalculus"
+      "Calculus I"
     ]
   },
   "definition_ja": "1 から n までの k、k²、k³ の和を n の式で表す公式。",
@@ -39,25 +38,27 @@
       "register": "spoken"
     },
     {
-      "en": "Use the summation formulas to evaluate Σₖ₌₁ⁿ (3k² − 2k).",
+      "en": "Use the formulas for sums and powers of integers to evaluate Σₖ₌₁ⁿ (3k² − 2k).",
       "ja": "Σ の公式を用いて Σₖ₌₁ⁿ (3k² − 2k) を計算せよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは summation formulas は話し言葉・書き言葉とも少なく、決まった呼び名とは言えない。OpenStax Calculus Volume 1 は節の中で sums and powers of integers として扱う（5 件）。",
+    "OpenStax Calculus Volume 1（5.1 Approximating Areas）は Σi・Σi²・Σi³ の公式を Rule: Sums and Powers of Integers としてまとめ、本文では the summation formula for ∑ i² のようにも書く。",
     "sum formulas は三角関数の加法定理（sum formula for sine）も指す。"
   ],
   "related": [
     "summation-notation",
     "partial-sum",
-    "find-the-sum"
+    "find-the-sum",
+    "grouped-sequence"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 1"
+      "title": "OpenStax Calculus Volume 1",
+      "note": "5.1 Approximating Areas（Rule: Sums and Powers of Integers、the summation formula）"
     }
   ],
   "confidence": "likely",
@@ -66,12 +67,13 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "summation formulas": 1
     },
     "written": {
+      "sums and powers of integers": 5,
       "summation formulas": 4
     },
     "sources": [
@@ -79,13 +81,13 @@
       "mit-notes",
       "openstax-calculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 4 件（10 未満））。見出しは OpenStax の呼び方 summation formulas（本文 1 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 sums and powers of integers（本文 5 件）。register は主張しない。",
+      "raised": "2026-09-27"
     }
   ]
 }

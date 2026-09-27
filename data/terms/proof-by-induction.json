@@ -11,7 +11,14 @@
       "mathematical induction"
     ],
     "uk": null,
-    "register": "spoken"
+    "register": "spoken",
+    "variants": [
+      {
+        "term": "induction proof",
+        "register": "written",
+        "note": "MIT 6.042（離散数学）のテキストの言い方。Levin（4.5）も Induction Proof Structure と書く。"
+      }
+    ]
   },
   "pos": "noun",
   "mapping": "exact",
@@ -25,8 +32,6 @@
       "数B"
     ],
     "us": [
-      "Algebra 2",
-      "Precalculus",
       "Discrete Math"
     ]
   },
@@ -60,13 +65,21 @@
     "inductive-hypothesis",
     "base-case",
     "prove-by-induction",
-    "recursive-definition"
+    "recursive-definition",
+    "inductive-step",
+    "strong-induction"
   ],
   "sources": [
     {
       "type": "wikipedia-langlink",
       "ja": "数学的帰納法",
       "en": "Mathematical induction"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.5 Proof by Induction（proof by induction、mathematical induction、Induction Proof Structure）"
     }
   ],
   "confidence": "likely",
@@ -75,15 +88,17 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "mathematical induction": 3,
       "by induction on n": 2,
-      "proof by induction": 10
+      "proof by induction": 10,
+      "induction proof": 2
     },
     "written": {
       "proof by induction": 4,
+      "induction proof": 19,
       "by induction on n": 7
     },
     "sources": [
@@ -93,6 +108,6 @@
       "mit-notes",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

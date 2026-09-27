@@ -12,7 +12,7 @@
     ],
     "uk": null
   },
-  "pos": "phrase",
+  "pos": "verb",
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
@@ -24,7 +24,6 @@
       "数B"
     ],
     "us": [
-      "Precalculus",
       "Calculus II"
     ]
   },
@@ -57,7 +56,13 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 2"
+      "title": "OpenStax Calculus Volume 2",
+      "note": "5.2 Infinite Series・5.6 Ratio and Root Tests（reindex）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3",
+      "note": "7.5 Series Solutions of Differential Equations（re-index）"
     }
   ],
   "confidence": "likely",
@@ -66,22 +71,22 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
-      "reindex": 2,
+      "reindex | re-index": 5,
       "shift the index": 1
     },
     "sources": [
       "openstax-calculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 3 件（10 未満））。見出しは OpenStax の呼び方 reindex（本文 2 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 reindex | re-index（本文 5 件）。register は主張しない。",
+      "raised": "2026-09-27"
     }
   ]
 }

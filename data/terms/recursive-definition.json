@@ -68,12 +68,15 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語の recursive は、情報科学の「再帰」と同じ語。"
+    "英語の recursive は、情報科学の「再帰」と同じ語。",
+    "帰納的定義の「帰納的」は英語では recursive。Levin（4.1）は inductive definition という別名も挙げる。"
   ],
   "related": [
     "recurrence-relation",
     "sequence",
-    "proof-by-induction"
+    "proof-by-induction",
+    "set-up-a-recurrence",
+    "recursive-algorithm"
   ],
   "sources": [
     {
@@ -83,7 +86,20 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 2"
+      "title": "OpenStax Calculus Volume 2",
+      "note": "5.1 Sequences（defined recursively）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 1.5 Sequences are Functions〜1.9（recursive definition）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.1 Describing Sequences（Definition 4.1.4 Recursive definition、inductive definition）"
     }
   ],
   "confidence": "likely",
@@ -92,7 +108,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "recursive definition": 7,
@@ -112,6 +128,6 @@
       "yt:3blue1brown",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

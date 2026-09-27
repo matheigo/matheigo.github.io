@@ -17,7 +17,7 @@
       {
         "term": "inductive hypothesis",
         "register": "spoken",
-        "note": "同じく MIT 6.042 の講義で使う。話し言葉（MIT OCW）・書き言葉（MIT の講義ノート）とも induction hypothesis より少ない。"
+        "note": "同じく MIT 6.042 の講義で使う。話し言葉（MIT OCW）・書き言葉（MIT の講義ノート）とも induction hypothesis より少ない。Levin（4.5・4.6）は inductive hypothesis と書く。"
       }
     ],
     "uk": null,
@@ -34,8 +34,6 @@
       "数B"
     ],
     "us": [
-      "Algebra 2",
-      "Precalculus",
       "Discrete Math"
     ]
   },
@@ -57,12 +55,14 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "「n = k のとき成り立つと仮定する」は Assume the statement holds for n = k. と書く。"
+    "「n = k のとき成り立つと仮定する」は Assume P(k) is true for some k ≥ 1. のように書く（Levin 4.5）。"
   ],
   "related": [
     "proof-by-induction",
     "base-case",
-    "prove-by-induction"
+    "prove-by-induction",
+    "inductive-step",
+    "strong-induction"
   ],
   "sources": [
     {
@@ -73,6 +73,12 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Mathematical_induction",
       "note": "記事「Mathematical induction」の節 Description で induction hypothesis と inductive hypothesis を太字で定義（数学カテゴリから 3 段）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.5 Proof by Induction・4.6 Strong Induction（inductive hypothesis、Assume P(k) is true）"
     }
   ],
   "confidence": "likely",
@@ -81,8 +87,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
-  "flags": [],
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "induction hypothesis": 53,
@@ -96,6 +101,6 @@
       "mit-6.042",
       "mit-notes"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

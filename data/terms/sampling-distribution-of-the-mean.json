@@ -11,7 +11,14 @@
       "sampling distribution of the mean"
     ],
     "uk": null,
-    "register": "spoken"
+    "register": "spoken",
+    "variants": [
+      {
+        "term": "distribution of the sample mean",
+        "register": "written",
+        "note": "OpenStax Introductory Statistics（7.1 The Central Limit Theorem for Sample Means）の書き方。"
+      }
+    ]
   },
   "pos": "noun",
   "mapping": "exact",
@@ -51,12 +58,14 @@
   "related": [
     "sample-mean",
     "central-limit-theorem",
-    "standard-error"
+    "standard-error",
+    "sampling-distribution"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "7.1 The Central Limit Theorem for Sample Means（distribution of the sample mean）"
     }
   ],
   "confidence": "likely",
@@ -65,19 +74,21 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "sampling distribution of the sample mean": 38
+      "sampling distribution of the sample mean": 38,
+      "distribution of the sample mean": 1
     },
     "written": {
       "sampling distribution of the mean": 7,
+      "distribution of the sample mean": 11,
       "sampling distribution of the sample mean": 7
     },
     "sources": [
       "khan-ap-stats",
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -24,11 +24,13 @@
     ],
     "us": [
       "Algebra 2",
-      "Precalculus"
+      "Precalculus",
+      "AP Calculus BC",
+      "Calculus II"
     ]
   },
-  "definition_ja": "n 番目の。第 n 項（the nth term）、n 乗根（the nth root）のように使う。",
-  "definition_en": "In position n: the nth term, the nth root, the nth derivative.",
+  "definition_ja": "n 番目の、また n 次・n 回目の。第 n 項（the nth term）、n 乗根（the nth root）、第 n 次導関数（the nth derivative）のように使う。",
+  "definition_en": "The ordinal of n: in position n (the nth term), or of order n (the nth root, the nth derivative).",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -45,13 +47,13 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "「エンス」と読む（/ɛnθ/）。n-th とハイフンを入れて書くこともある（話し言葉の字幕にも出てくる）。",
-    "OpenStax の本文では n が数式なので「n th」と分かれて見えるが、読みは同じ。"
+    "「エンス」と読む（Merriam-Webster: ˈen(t)th）。n-th とハイフンを入れて書くこともある（IM Algebra 1 5.4、Levin 0.2）。"
   ],
   "related": [
     "nth-term",
     "nth-root",
-    "nth-derivative"
+    "nth-derivative",
+    "raise-to-the-nth-power"
   ],
   "sources": [
     {
@@ -60,6 +62,30 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Merriam-Webster「nth」",
+      "url": "https://www.merriam-webster.com/dictionary/nth",
+      "note": "発音 ˈen(t)th（2026-09-27 に確かめた）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 1 5.4（n-th）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "0.2（n-th）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.1（nth partial sum）・Topic 10.3（nth term test）"
     }
   ],
   "confidence": "likely",
@@ -68,7 +94,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "nth": 182
@@ -96,6 +122,6 @@
       "yt:blackpenredpen",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -52,13 +52,21 @@
   ],
   "sources": [
     {
-      "type": "wikipedia-langlink",
-      "ja": "確率変数",
-      "en": "Random variable"
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "4 章 Discrete Random Variables"
     },
     {
-      "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Random_variable",
+      "note": "節 Discrete random variable"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.9（discrete random variable）"
     }
   ],
   "confidence": "likely",
@@ -67,7 +75,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "discrete random variable": 6
@@ -79,6 +87,6 @@
       "khan-ap-stats",
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

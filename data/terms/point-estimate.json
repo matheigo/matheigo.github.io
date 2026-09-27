@@ -26,7 +26,8 @@
     "us": [
       "AP Statistics",
       "Intro Statistics",
-      "Integrated Math 3"
+      "Integrated Math 3",
+      "Algebra 2"
     ]
   },
   "definition_ja": "母数を 1 つの値で推定すること。また、その値。母平均の点推定には標本平均を使う。",
@@ -52,7 +53,8 @@
   "related": [
     "estimation",
     "interval-estimation",
-    "confidence-interval"
+    "confidence-interval",
+    "error-bound"
   ],
   "sources": [
     {
@@ -63,6 +65,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 7.10 Estimating Proportions from Samples・7.12 Estimating a Population Mean"
     }
   ],
   "confidence": "likely",
@@ -71,7 +79,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "point estimate": 14
@@ -83,6 +91,6 @@
       "openstax-introstats",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -47,12 +47,15 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "話し言葉はほとんどが Khan Academy。"
+    "話し言葉はほとんどが Khan Academy。",
+    "IM Algebra 2（1.2）は公比を growth factor とも呼ぶ（指数関数の増え方の言い方と同じ）。"
   ],
   "related": [
     "geometric-sequence",
     "common-difference",
-    "infinite-geometric-series"
+    "infinite-geometric-series",
+    "sum-of-a-geometric-sequence",
+    "first-term"
   ],
   "sources": [
     {
@@ -60,7 +63,14 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.3 Geometric Sequences（common ratio）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 1.2 Introducing Geometric Sequences（growth factor or common ratio）"
     }
   ],
   "confidence": "likely",
@@ -69,7 +79,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "common ratio": 169
@@ -87,6 +97,6 @@
       "openstax-introstats",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

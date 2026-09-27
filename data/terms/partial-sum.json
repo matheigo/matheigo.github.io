@@ -44,7 +44,7 @@
     ]
   },
   "definition_ja": "数列の初項から第 n 項までの和 Sₙ。無限級数の収束は、部分和の数列の極限で決める。",
-  "definition_en": "The sum Sₙ of the first n terms of a sequence; an infinite series converges when its sequence of partial sums has a limit.",
+  "definition_en": "Sₙ = a₁ + a₂ + ⋯ + aₙ, the total of a sequence's terms up through the nth; an infinite series converges when its sequence of partial sums has a limit.",
   "latex": "S_n = \\sum_{k=1}^{n} a_k",
   "spoken_en": "S sub n equals the sum from k equals one to n of a sub k",
   "examples": [
@@ -66,28 +66,45 @@
     }
   ],
   "pitfalls": [
-    "数B では「初項から第 n 項までの和」、数III では「部分和」。英語はどちらも partial sum で言える。"
+    "共通テスト・センター試験（数学II・数学B）の問題文は「初項から第 n 項までの和」と書き、学習指導要領解説（数学III）は無限級数で「部分和」と書く。OpenStax Algebra and Trigonometry（13.4）は sum of the first n terms を nth partial sum と呼ぶ。"
   ],
   "related": [
     "infinite-series",
     "sum-of-the-series",
     "summation-notation",
-    "find-the-sum"
+    "find-the-sum",
+    "sum-of-a-geometric-sequence",
+    "sum-of-an-arithmetic-sequence",
+    "telescoping-series"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 2"
+      "title": "OpenStax Calculus Volume 2",
+      "note": "5.2 Infinite Series（partial sum）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.4 Series and Their Notations（nth partial sum）"
     },
     {
       "type": "reference",
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 10.1（partial sum）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学Ⅱ・数学Ｂ（問題）",
+      "url": "https://web.archive.org/web/20190601/https://www.dnc.ac.jp/albums/abm.php?f=abm00033144.pdf&n=h30+suugaku2+02suugaku2B.pdf",
+      "note": "第3問: 初項から第 n 項までの和"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学III (1) 極限 無限級数（部分和）"
     }
   ],
   "confidence": "likely",
@@ -96,7 +113,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "partial sum": 66,
@@ -116,6 +133,6 @@
       "yt:3blue1brown",
       "yt:blackpenredpen"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

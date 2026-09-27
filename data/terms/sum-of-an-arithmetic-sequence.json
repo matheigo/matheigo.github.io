@@ -29,7 +29,7 @@
     ]
   },
   "definition_ja": "等差数列の初項から第 n 項までの和。初項と末項の平均に項数を掛けたものになる。",
-  "definition_en": "The sum of the first n terms of an arithmetic sequence: the number of terms times the average of the first and last terms.",
+  "definition_en": "Adding up an arithmetic sequence from the first term through the nth: the result is the number of terms times the average of the first and last terms.",
   "latex": "S_n = \\frac{n(a_1 + a_n)}{2}",
   "spoken_en": "S sub n equals n times a sub one plus a sub n, over two",
   "examples": [
@@ -52,7 +52,8 @@
     "arithmetic-sequence",
     "sum-of-a-geometric-sequence",
     "partial-sum",
-    "last-term"
+    "last-term",
+    "find-the-sum"
   ],
   "sources": [
     {
@@ -60,7 +61,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.4 Series and Their Notations（arithmetic series）"
     }
   ],
   "confidence": "likely",
@@ -69,7 +71,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "arithmetic series": 3,
@@ -84,6 +86,6 @@
       "openstax-algtrig",
       "openstax-intalg"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

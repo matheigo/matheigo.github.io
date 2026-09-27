@@ -3,9 +3,7 @@
   "ja": {
     "term": "確率分布",
     "reading": "かくりつぶんぷ",
-    "alt": [
-      "確率分布関数"
-    ]
+    "alt": []
   },
   "en": {
     "term": "probability distribution",
@@ -29,8 +27,8 @@
       "Intro Statistics"
     ]
   },
-  "definition_ja": "確率変数のとる値と、その値をとる確率との対応。表や式、グラフで表す。",
-  "definition_en": "The correspondence between the values of a random variable and their probabilities, shown as a table, a formula, or a graph.",
+  "definition_ja": "確率変数のとる値（連続型では値の範囲）と、その確率との対応。表や式、グラフで表す。",
+  "definition_en": "The correspondence between the values (for a continuous variable, intervals of values) of a random variable and their probabilities, shown as a table, a formula, or a graph.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -54,7 +52,8 @@
     "expected-value",
     "binomial-distribution",
     "normal-distribution",
-    "probability-density-function"
+    "probability-density-function",
+    "discrete-random-variable"
   ],
   "sources": [
     {
@@ -64,7 +63,14 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "4.1 Probability Distribution Function (PDF) for a Discrete Random Variable・5.1 Continuous Probability Functions（pdf）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.8（probability distribution）"
     }
   ],
   "confidence": "likely",
@@ -73,7 +79,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "probability distribution": 55
@@ -89,6 +95,6 @@
       "openstax-introstats",
       "yt:3blue1brown"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

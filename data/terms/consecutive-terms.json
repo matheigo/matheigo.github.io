@@ -11,8 +11,8 @@
     "variants": [
       {
         "term": "successive terms",
-        "register": "spoken",
-        "note": "話し言葉で多い（ほとんどが Khan Academy）。CED（topic 10.2）もこの語を使う。書き言葉では少ない。"
+        "register": "written",
+        "note": "AP の CED（topic 10.2）の言い方（a constant ratio between successive terms）。Levin（4.2）も使う。each ／ every successive term（次々の項）は 2 項の組の意味ではない。"
       }
     ],
     "uk": null,
@@ -54,7 +54,8 @@
   "related": [
     "common-difference",
     "common-ratio",
-    "sequence-of-differences"
+    "sequence-of-differences",
+    "consecutive-integers"
   ],
   "sources": [
     {
@@ -62,13 +63,20 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.2 Arithmetic Sequences・13.3 Geometric Sequences（consecutive terms）"
     },
     {
       "type": "reference",
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 10.2（successive terms）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.2（successive terms）"
     }
   ],
   "confidence": "likely",
@@ -77,26 +85,23 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "successive terms": 19,
-      "consecutive terms": 7
+      "consecutive terms": 7,
+      "!each !every !next successive terms": 1
     },
     "written": {
       "consecutive terms": 53,
-      "successive terms": 9
+      "!each !every !next successive terms": 3
     },
     "sources": [
-      "khan-algebra",
       "khan-ap-calc",
-      "mit-18.03",
       "mit-notes",
       "openstax-algtrig",
       "openstax-calculus",
-      "openstax-intalg",
-      "yt:organicchem"
+      "openstax-intalg"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

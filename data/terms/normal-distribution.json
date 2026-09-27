@@ -35,7 +35,8 @@
     "us": [
       "AP Statistics",
       "Intro Statistics",
-      "Integrated Math 3"
+      "Integrated Math 3",
+      "Algebra 2"
     ]
   },
   "definition_ja": "平均 μ を中心に左右対称な釣り鐘形の確率密度関数をもつ連続型の確率分布。N(μ, σ²) と書く。",
@@ -56,15 +57,18 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の教科書は N(μ, σ²) と分散を書くが、OpenStax Introductory Statistics は X ~ N(μ, σ) と標準偏差を書く（51 件）。記号を見たら 2 つ目が分散か標準偏差かを確かめる。",
+    "学習指導要領解説（数学B）は N(μ, σ²) と分散を書くが、OpenStax Introductory Statistics（6.1）は X ~ N(μ, σ) と標準偏差を書く（同じ本の巻末の公式集は X ~ N(μ, σ²)）。記号を見たら 2 つ目が分散か標準偏差かを確かめる。",
     "「正規分布に従う」は follows a normal distribution か is normally distributed。",
-    "平均から ±1σ・±2σ・±3σ の範囲に約 68%・95%・99.7% が入ることを empirical rule（68-95-99.7 rule）と言う（用例コーパスにも出てくる）。"
+    "平均から ±1σ・±2σ・±3σ の範囲に約 68%・95%・99.7% が入ることを empirical rule（68-95-99.7 rule）と言う（AP Statistics の CED topic 2.11）。"
   ],
   "related": [
     "standard-normal-distribution",
     "z-score",
     "standard-normal-table",
-    "central-limit-theorem"
+    "central-limit-theorem",
+    "empirical-rule",
+    "probability-density-function",
+    "probability-distribution"
   ],
   "sources": [
     {
@@ -74,7 +78,26 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "6.1 The Standard Normal Distribution（X ~ N(μ, σ)）、巻末の公式集（X ~ N(μ, σ²)）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学B (2) 統計的な推測（正規分布 N(μ, σ²)）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.11（normal distribution・empirical rule）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 7.5 Normal Distributions（normal distribution）"
     }
   ],
   "confidence": "likely",
@@ -83,7 +106,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "normal distribution": 174,
@@ -109,6 +132,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

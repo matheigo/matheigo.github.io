@@ -11,11 +11,18 @@
       "sum of a geometric sequence"
     ],
     "uk": null,
-    "register": "spoken"
+    "register": "spoken",
+    "variants": [
+      {
+        "term": "geometric sum",
+        "register": "written",
+        "note": "MIT の講義ノート（離散数学）と Levin（4.4）の言い方。"
+      }
+    ]
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語では項を足したもの自体を series と呼ぶ。有限個の項の和であることを言うときは finite geometric series（話し言葉はほとんどが Khan Academy）。geometric series は無限等比級数にも使う（infinite-geometric-series を参照）。",
+  "mapping_note": "英語では項を足したもの自体を series と呼ぶ。有限個の項の和であることを言うときは finite geometric series（話し言葉はほとんどが Khan Academy）。geometric series は無限等比級数にも使う（infinite-geometric-series を参照）。OpenStax Algebra and Trigonometry（13.4）は等比数列の項の和を geometric series と呼び、有限の和は the sum of the first n terms of a geometric series と書く。",
   "domains": [
     "sequences"
   ],
@@ -29,7 +36,7 @@
     ]
   },
   "definition_ja": "等比数列の初項から第 n 項までの和。公比 r ≠ 1 のとき a₁(1 − rⁿ)/(1 − r)。",
-  "definition_en": "The sum of the first n terms of a geometric sequence, a₁(1 − rⁿ)/(1 − r) when r ≠ 1.",
+  "definition_en": "Adding up a geometric sequence from the first term through the nth; when r ≠ 1 the total is a₁(1 − rⁿ)/(1 − r).",
   "latex": "S_n = \\frac{a_1(1 - r^n)}{1 - r} \\quad (r \\ne 1)",
   "spoken_en": "S sub n equals a sub one times one minus r to the n, over one minus r",
   "examples": [
@@ -58,6 +65,23 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.4 Series and Their Notations（geometric series、the sum of the first n terms of a geometric series）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 2.25 Summing Up・2.26 Using the Sum（sum of a geometric sequence）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.4 Exponential Sequences（geometric sum）"
     }
   ],
   "confidence": "likely",
@@ -66,20 +90,27 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
+      "geometric sum": 3,
       "finite geometric series": 10,
       "sum of a geometric sequence": 2
     },
     "written": {
+      "geometric sum": 13,
       "sum of a geometric sequence": 1
     },
     "sources": [
       "khan-algebra",
       "khan-ap-calc",
-      "openstax-intalg"
+      "mit-6.042",
+      "mit-notes",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-intalg",
+      "yt:3blue1brown"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

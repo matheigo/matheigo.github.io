@@ -33,8 +33,8 @@
   "spoken_en": "the probability that X equals k is n choose k times p to the k times one minus p to the n minus k",
   "examples": [
     {
-      "en": "Each trial is success or failure with the same p, so this is binomial.",
-      "ja": "各回が成功か失敗で p が同じなので、これは二項分布。",
+      "en": "A fixed number of independent trials, each a success or failure with the same p, so this is binomial.",
+      "ja": "回数が決まった独立な試行で、各回が成功か失敗、p も同じなので、これは二項分布。",
       "register": "spoken"
     },
     {
@@ -46,12 +46,14 @@
   "collocations": [],
   "pitfalls": [
     "平均は np、分散は np(1 − p)。",
-    "OpenStax Introductory Statistics は X ~ B(n, p) と書く（13 件）。"
+    "OpenStax Introductory Statistics（4.3）は X ~ B(n, p) と書く（学習指導要領解説（数学B）の B(n, p) と同じ文字）。"
   ],
   "related": [
     "random-variable",
     "normal-approximation-to-the-binomial",
-    "expected-value"
+    "expected-value",
+    "probability-distribution",
+    "binomial-probability"
   ],
   "sources": [
     {
@@ -61,7 +63,20 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "4.3 Binomial Distribution（X ~ B(n, p)）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学B (2) 統計的な推測（二項分布 B(n, p)）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.10（binomial distribution）"
     }
   ],
   "confidence": "likely",
@@ -70,7 +85,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "binomial distribution": 25
@@ -86,6 +101,6 @@
       "yt:3blue1brown",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }
