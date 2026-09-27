@@ -2,7 +2,7 @@
 
 作成: `python3 scripts/audit/source_mentions.py`（規則は scripts/audit/source_mentions.py の説明）。主張が正しいかは見ない（それは監査）。
 
-- 項目: **138**（draft 1・likely 137）
+- 項目: **135**（draft 1・likely 134）
 
 | コレクション | id | confidence | 名指しされた資料 | 欄 |
 |---|---|---|---|---|
@@ -170,11 +170,6 @@
 | terms | vertical-line-test | likely | 学習指導要領解説 | mapping_note |
 | terms | voluntary-response-bias | likely | 学習指導要領解説 | mapping_note |
 | terms | without-loss-of-generality | likely | Levin | pitfalls[2] |
-| symbols | permutation-npr | likely | OpenStax | notes[1] |
-| symbols | permutation-npr | likely | OpenStax Algebra and Trigonometry | notes[0] |
-| symbols | polar-form-cis | likely | 日本語版 Wikipedia「複素数」 | notes[1] |
-| symbols | polar-form-cis | likely | 高等学校学習指導要領解説 | notes[1] |
-| symbols | qed-end-of-proof | likely | OpenStax Calculus | notes[1] |
 | phrases | explaining-solution-factored-and-set-to-zero | likely | IM | variants[0].note |
 | phrases | explaining-solution-factored-and-set-to-zero | likely | OpenStax Elementary Algebra | variants[0].note |
 | conventions | approximately-equal-notation | likely | OpenStax Introductory Statistics | us |

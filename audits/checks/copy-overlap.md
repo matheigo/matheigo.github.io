@@ -7,9 +7,9 @@
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15660
-- 英語のソース: 3884 ファイル ／ 日本語のソース: 512 ファイル
-- 一致した箇所: **311**（275 項目）
+- 調べた本文の欄: 15662
+- 英語のソース: 3884 ファイル ／ 日本語のソース: 532 ファイル
+- 一致した箇所: **312**（275 項目）
 - 見出しの句を含む一致で除いたもの: 147 箇所（136 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
@@ -34,6 +34,7 @@
 | symbols | derivative-leibniz | notes[1] | en | 9 | the derivative of x squared with respect to x | 1 | khan-ap-calc |
 | symbols | directional-derivative-notation | notes[0] | en | 10 | the directional derivative of f in the direction of u | 1 | openstax-calculus |
 | symbols | floor-brackets | notes[0] | en | 9 | the greatest integer less than or equal to x | 1 | openstax-calculus |
+| symbols | gauss-bracket-jp | notes[0] | en | 9 | the greatest integer less than or equal to x | 1 | openstax-calculus |
 | symbols | gcd-notation | notes[0] | en | 8 | the greatest common divisor of a and b | 2 | mit-6.042, mit-notes |
 | symbols | geq-sign | notes[0] | en | 8 | x is greater than or equal to zero | 5 | khan-ap-calc, yt:profleonard, khan-algebra, yt:organicchem, yt:patrickjmt |
 | symbols | integral-definite | notes[1] | en | 8 | the integral from a to b of f | 3 | mit-18.01, khan-ap-calc, yt:patrickjmt |
@@ -47,7 +48,7 @@
 | symbols | natural-log-ln | notes[1] | en | 9 | the natural log of the absolute value of x | 1 | khan-ap-calc |
 | symbols | partial-derivative-leibniz | notes[0] | en | 9 | the partial derivative of f with respect to x | 3 | yt:profleonard, openstax-calculus, mit-18.02 |
 | symbols | partial-derivative-leibniz | notes[0] | en | 8 | the partial of f with respect to x | 3 | yt:profleonard, mit-18.03, openstax-calculus |
-| symbols | permutation-npr | notes[1] | en | 13 | the number of permutations of n distinct objects taken r at a time | 2 | openstax-algtrig, openstax-precalculus |
+| symbols | partial-derivative-leibniz | notes[2] | en | 8 | the partial of f with respect to x | 3 | yt:profleonard, mit-18.03, openstax-calculus |
 | symbols | probability-of-union | notes[0] | en | 8 | probability of a or b the probability of | 1 | micase |
 | symbols | second-derivative-leibniz | notes[0] | en | 9 | the second derivative of y with respect to x | 2 | khan-ap-calc, mit-18.01 |
 | symbols | set-builder-braces | notes[0] | en | 11 | the set of all x such that x is greater than | 3 | openstax-algtrig, openstax-precalculus, ref:levin-dmoi4 |

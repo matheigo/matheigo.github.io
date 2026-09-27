@@ -1,21 +1,19 @@
 # 例文が見出し（en.term）の語を使わない用語（scripts/audit/examples_headword.py）
 
-作成: 2026-09-27 ／ `python3 scripts/audit/examples_headword.py`。監査 2 の 5（例文の少なくとも 1 つは見出しの語を使う）の機械の一覧。90 terms whose examples do not use en.term (5 use a variant / alt instead)。
+作成: 2026-09-27 ／ `python3 scripts/audit/examples_headword.py`。監査 2 の 5（例文の少なくとも 1 つは見出しの語を使う）の機械の一覧。80 terms whose examples do not use en.term (5 use a variant / alt instead)。
 「variant ／ alt」の列が空でないものは、例文が variant や alt の語だけを使っている（監査 2 で 25 語を直した後の残り。直さない理由はレポートに）。
 空のもの（neither）は見出しの語も variant の語も例文にない。単元の名前のような見出し（derivatives of trigonometric functions）や、見出しの句の間に式が入るもの（solve the formula A = ½bh for h）が多く、規則にはしない。各語の監査で見る。
 
 | id | confidence | en.term | variant ／ alt | 例文 |
 |---|---|---|---|---|
 | absolute-convergence | likely | absolute convergence |  | If it converges absolutely, it converges — you can drop the signs and check.<br>Determine whether Σ (−1)ⁿ/n² converges absolutely, converges conditionally, or diverges. |
-| apollonian-circle | likely | Apollonian circle |  | If the ratio of the distances is 2 to 1, the locus turns out to be a circle.<br>Find the locus of the point P such that PA : PB = 2 : 1, where A(0, 0) and B(3, 0). |
 | area-in-polar-coordinates | likely | area of a polar region |  | For area in polar, think thin pie slices, not rectangles.<br>Find the area of the region enclosed by one petal of r = sin 2θ. |
 | area-of-a-triangle-using-vectors | likely | area of a triangle using vectors |  | You can get the area straight from the dot product, without finding the angle.<br>Find the area of the triangle with vertices O(0, 0), A(3, 1), and B(1, 4). |
 | area-preserving-transformation | verified | area-preserving transformation | alt same base and height | Slide point C along this parallel line, and the triangle keeps the same base and height, so the area doesn't change.<br>Since AD ∥ BC, triangles ABC and DBC have the same base and height, so their areas are equal. |
-| arithmetic-middle-term | likely | arithmetic mean |  | The middle term is just the average of its neighbors.<br>If x − 1, 2x, and 3x + 4 form an arithmetic sequence, find x. |
-| auxiliary-angle-form | likely | auxiliary-angle form |  | Combine sine and cosine into a single sine: the amplitude is the square root of a squared plus b squared.<br>Write √3 sin θ + cos θ in the form r sin(θ + α), and find its maximum value. |
+| auxiliary-angle-form | verified | rewriting a sin θ + b cos θ as a single sine function |  | Combine sine and cosine into a single sine: the amplitude is the square root of a squared plus b squared.<br>Rewrite √3 sin θ + cos θ as a single sine function r sin(θ + α), and find its maximum value. |
 | be-tangent-to | verified | be tangent to |  | See how the line just touches the circle here and doesn't cut through it? It's tangent to the circle at P.<br>Construct a line that is tangent to circle O at point A. |
 | bezouts-identity | likely | Bézout's identity |  | Bézout's identity says we can write the gcd as a combination of a and b, and the extended Euclidean algorithm actually finds the x and y.<br>Use Bézout's identity to show that 7x + 12y = 1 has an integer solution, and find one. |
-| circle-through-the-intersections-of-two-circles | likely | circle through the intersections of two circles |  | Any curve of the form k times the first plus the second passes through both intersection points.<br>Find the equation of the circle that passes through the two intersection points of x² + y² = 4 and x² + y² − 4x − 2y = 0 and through the origin. |
+| circle-through-the-intersections-of-two-circles | verified | circle through the intersections of two circles |  | Any curve of the form k times the first plus the second passes through both intersection points.<br>Find the equation of the circle that passes through the two intersection points of x² + y² = 4 and x² + y² − 4x − 2y = 0 and through the point (1, 1). |
 | classification-by-remainder | verified | classification by remainder |  | Every integer is 3k, 3k + 1, or 3k + 2, so let's just check each case.<br>Let k be an integer. Consider the cases n = 3k, n = 3k + 1, and n = 3k + 2, and show that n² leaves a remainder of 0 or 1 when divided by 3. |
 | collinearity-condition | likely | condition for collinearity |  | If AC is a multiple of AB, then A, B, and C are collinear.<br>Show that the points A(1, 2), B(3, 5), and C(7, 11) are collinear. |
 | comparison-for-divergence | verified | comparison for divergence |  | Since a sub n is always bigger than n, and n goes to infinity, a sub n goes to infinity too.<br>Since 2ⁿ ≥ n for all n ≥ 1 and n → ∞, it follows that 2ⁿ → ∞. |
@@ -34,13 +32,11 @@
 | double-angle-formulas | verified | double-angle formulas |  | Cosine of 2θ has three versions — pick the one that has only cosine in it.<br>Use a double-angle formula to solve cos 2θ + cos θ = 0 for 0 ≤ θ < 2π. |
 | equal-vectors | likely | equivalent vectors |  | These two arrows are in different places, but they're the same vector.<br>Show that the vectors from A to B and from C to D are equivalent. |
 | equality-of-complex-numbers | verified | equality of complex numbers |  | Set the real parts equal and the imaginary parts equal, and you get two equations.<br>If x and y are real and (x + 2i)(1 − i) = 5 + yi, find x and y. |
-| exponential-inequality | likely | exponential inequality |  | The base is one half, which is less than 1, so the inequality flips when you compare the exponents.<br>Solve (1/3)^(2x − 1) > 1/27. |
+| exponential-inequality | verified | exponential inequality |  | The base is one half, which is less than 1, so the inequality flips when you compare the exponents.<br>Solve (1/3)^(2x − 1) > 1/27. |
 | exterior-angle-theorem | likely | exterior angle theorem |  | The exterior angle equals the two remote interior angles added together, so x is 50 plus 65, which is 115.<br>In △ABC, side BC is extended through C to point D. If m∠A = 48° and m∠ACD = 121°, find m∠B. |
 | function-of-several-variables | likely | function of several variables |  | With a function of two variables, the graph is a surface, not a curve.<br>Find the domain of the function of two variables f(x, y) = √(9 − x² − y²). |
 | fundamental-theorem-of-calculus-part-1 | verified | fundamental theorem of calculus, part 1 |  | Part 1 says that if you integrate f and then differentiate, you get f back. |
 | fundamental-theorem-of-calculus-part-2 | verified | fundamental theorem of calculus, part 2 |  | Thanks to Part 2, we never have to compute a limit of Riemann sums by hand again. |
-| general-form-of-a-circle | likely | general form of the equation of a circle |  | Complete the square in x and in y to get it back into standard form.<br>Find the center and radius of the circle x² + y² − 4x + 6y − 3 = 0. |
-| geometric-middle-term | likely | geometric mean |  | For a geometric sequence, the middle term squared equals the product of its neighbors.<br>If 2, x, and 18 form a geometric sequence, find all possible values of x. |
 | half-angle-formulas | verified | half-angle formulas |  | To get sin 22.5 degrees, use the half-angle formula with 45 degrees.<br>Find the exact value of cos(π/8) with a half-angle formula. |
 | hypergeometric-distribution | likely | hypergeometric distribution |  | Without replacement, the draws aren't independent, so it's hypergeometric, not binomial.<br>A committee of 5 is chosen from 8 women and 6 men. Find the probability that exactly 3 women are chosen. |
 | integral-involving-absolute-value | verified | integral of the absolute value |  | With an absolute value inside, figure out where x minus one is negative and split the integral there. |
@@ -53,9 +49,8 @@
 | lhopitals-rule | verified | L'Hôpital's rule |  | It's zero over zero, so use L'Hôpital's rule: differentiate the top and the bottom separately.<br>Use L'Hôpital's rule to evaluate lim_{x→0} (eˣ − 1)/x. |
 | limacon | likely | limaçon |  | When b is bigger than a, the limaçon has an inner loop.<br>Sketch the limaçon r = 1 + 2 cos θ. |
 | limit-of-sine-x-over-x | verified | sin x over x |  | The limit of sine x over x as x goes to zero is one. You'll use that a lot.<br>Using lim_{x→0} (sin x)/x = 1, find lim_{x→0} (sin 3x)/x. |
-| linear-programming | likely | linear programming |  | The maximum has to occur at one of the corners of the feasible region, so just check the corners.<br>x and y satisfy x ≥ 0, y ≥ 0, x + 2y ≤ 8, 3x + y ≤ 9. Find the maximum value of x + y. |
 | linear-transformation-of-a-random-variable | likely | linear transformation of a random variable |  | Adding a constant shifts the mean but doesn't change the standard deviation.<br>If Y = 3X − 2 and E(X) = 5, Var(X) = 4, find E(Y) and Var(Y). |
-| logarithmic-inequality | likely | logarithmic inequality |  | The base is bigger than 1, so the log is increasing and the inequality keeps its direction.<br>Solve log_{1/2}(x − 2) > −1. |
+| logarithmic-inequality | verified | logarithmic inequality |  | The base is bigger than 1, so the log is increasing and the inequality keeps its direction.<br>Solve log_{1/2}(x − 2) > −1. |
 | logistic-differential-equation | verified | logistic differential equation |  | In the logistic model, the population grows fastest when it's at half the carrying capacity. |
 | multivariable-chain-rule | likely | generalized chain rule |  | Draw a tree diagram so you don't miss any path in the chain rule.<br>Use the chain rule to find dz/dt for z = x²y, x = cos t, y = sin t. |
 | one-sixth-formula | verified | one-sixth formula |  | I used a shortcut I learned in Japan: the integral of (x − α)(x − β) from α to β is −(β − α)³ over 6. Is it OK to use that on the exam? |
@@ -70,19 +65,15 @@
 | rearranging-an-equation | verified | solve the formula for | variant solve for a variable | To solve for a variable in a formula, treat the other letters like numbers: V = Bh, so divide both sides by h, and B = V over h.<br>Solve the formula A = ½bh for h. |
 | relative-positions-of-two-circles | verified | relative position of two circles |  | If the distance between the centers equals r₁ plus r₂, the circles are externally tangent — they touch at exactly one point from the outside.<br>When d equals the difference of the radii, one circle is internally tangent to the other.<br>Circle C₁ has center (0, 0) and radius 2, and circle C₂ has center (5, 0) and radius r. Find the range of r for which C₁ and C₂ intersect at two points. |
 | relative-positions-of-two-lines | verified | relative position of two lines |  | These two edges of the cube never meet, but they're not parallel either — they're skew lines.<br>In the cube ABCD-EFGH, name every edge that is skew to edge AB. |
-| rewrite-in-exponential-form | likely | rewrite in exponential form |  | Rewrite it in exponential form: log base 2 of x equals 5 means 2 to the fifth equals x.<br>Rewrite log₄ 64 = 3 in exponential form. |
-| rewrite-in-logarithmic-form | likely | rewrite in logarithmic form |  | Rewrite 10 squared equals 100 in logarithmic form: log of 100 equals 2.<br>Rewrite 3^(−2) = 1/9 in logarithmic form. |
 | right-triangle-similarity | likely | right triangle similarity theorem |  | Once you drop the altitude to the hypotenuse, you get three similar right triangles, so match up the corresponding sides carefully.<br>In right triangle ABC, ∠C = 90° and CD is the altitude to the hypotenuse. If AD = 4 and DB = 9, find CD. |
 | separable-differential-equation | verified | separable differential equation |  | This one's separable: get all the y's on one side with dy, and all the x's on the other side with dx.<br>Since the equation is separable, we write dy/y = 2x dx and integrate both sides. |
 | solve-for-y-prime | verified | solve for dy/dx |  | Now get all the dy/dx terms on one side and solve for dy/dx.<br>Differentiate implicitly and solve for dy/dx: x² + xy + y² = 7. |
 | substitute | verified | plug in | variant substitute | Plug x = 2 into the equation and see what you get.<br>Substituting t = 2x gives a quadratic in t. |
 | substituting-values | verified | plug in convenient values |  | Plug in x = 1 so the B term drops out, and you get A right away.<br>By substituting suitable values of x, find A and B such that 1/((x − 1)(x + 2)) = A/(x − 1) + B/(x + 2). |
 | substitution-in-a-definite-integral | verified | substitution with definite integrals |  | If you change the limits to u-values, you never have to go back to x. |
-| sum-of-random-variables | likely | sum of random variables |  | Even for a difference, the variances add, as long as the variables are independent.<br>X and Y are independent with SD(X) = 3 and SD(Y) = 4. Find the standard deviation of X + Y. |
 | sum-to-product-formulas | verified | sum-to-product formulas |  | Use sum-to-product to turn sin 3x + sin x into a product, then set each factor equal to zero.<br>Solve sin 3x + sin x = 0 for 0 ≤ x < π using a sum-to-product formula. |
 | supplementary-angle-identity | verified | supplementary angle identity |  | Sine of 180 minus theta is the same as sine theta, but cosine and tangent flip sign.<br>Use the supplementary angle identities to write sin 150° and cos 150° in terms of the trigonometric ratios of 30°. |
 | surface-area-of-revolution | verified | area of a surface of revolution |  | Surface area uses the arc length piece, not just dx, so don't drop the square root. |
-| system-of-recurrences | likely | system of recurrences |  | Add and subtract the two recurrences to decouple them.<br>The sequences {aₙ} and {bₙ} satisfy a₁ = b₁ = 1, aₙ₊₁ = 3aₙ + bₙ, bₙ₊₁ = aₙ + 3bₙ. Find aₙ. |
 | systematic-sampling | likely | systematic sampling |  | Start at a random name and take every tenth one after that.<br>Describe how to select a systematic sample of 50 from a list of 1,000 names. |
 | tangent-chord-theorem | verified | chord/tangent angle theorem | alt tangent-chord angle | The tangent-chord angle is half the intercepted arc, so if the arc is 100°, the angle is 50°.<br>Line AT is tangent to the circle at A, and C is a point on the circle on the other side of chord AB. If ∠BAT = 65°, find ∠ACB.<br>By the chord/tangent angle theorem, ∠ACB = ∠BAT = 65°. |
 | tangent-segments-are-equal | verified | tangent segments are equal |  | PA and PB are tangent segments from the same point, so they have to be equal.<br>From a point P outside a circle, tangent lines touch the circle at A and B. Prove that PA = PB. |
@@ -95,4 +86,3 @@
 | volume-by-cross-sections | verified | slicing method |  | The cross sections perpendicular to the x-axis are squares, so A of x is the side length squared. |
 | volume-of-a-solid-of-revolution | verified | volume of a solid of revolution |  | When you spin this region around the x-axis, every slice is a disk, so the volume is pi times the integral of f squared. |
 | washer-method | verified | washer method |  | It's big R squared minus little r squared, not the difference squared. |
-| write-with-the-same-base | likely | write with a common base |  | Write both sides with the same base: 8 is 2 cubed and 4 is 2 squared.<br>Solve 8^(x+1) = 4^(2x) by rewriting both sides with a common base. |

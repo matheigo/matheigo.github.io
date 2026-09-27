@@ -1,6 +1,6 @@
 {
   "checked": "2026-09-27",
-  "named": 408,
+  "named": 409,
   "noReference": [
     {
       "collection": "terms",
@@ -19,18 +19,6 @@
       "id": "vector-equation-of-a-circle",
       "field": "mapping_note",
       "sentence": "米国の教科書は円を (x − h)² + (y − k)² = r² の形で扱い、ベクトル方程式としては立てない。"
-    },
-    {
-      "collection": "symbols",
-      "id": "combination-ncr",
-      "field": "notes[0]",
-      "sentence": "日本の教科書は ₙCᵣ と書き、米国の教科書は C(n, r)、ₙCᵣ、または縦に並べた二項係数 (n over r) の形で書く。"
-    },
-    {
-      "collection": "symbols",
-      "id": "vector-arrow-notation",
-      "field": "notes[1]",
-      "sentence": "米国の教科書は太字で書き、手書きでは矢印を付ける。"
     },
     {
       "collection": "phrases",
@@ -203,80 +191,17 @@
     },
     {
       "collection": "symbols",
-      "id": "alpha",
+      "id": "gauss-bracket-jp",
       "field": "notes[1]",
-      "sentence": "AP Statistics では有意水準も α で表す。",
-      "entrySources": "OpenStax Algebra and Trigonometry 2e; OpenStax Precalculus 2e; OpenStax Introductory Statistics 2e; College Board, AP Statistics Course and Exam Description (Effective Fall 2026)"
-    },
-    {
-      "collection": "symbols",
-      "id": "conditional-probability-subscript-jp",
-      "field": "notes[0]",
-      "sentence": "日本の P_A(B) は、米国の書き方では P(B | A)。",
-      "entrySources": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編"
-    },
-    {
-      "collection": "symbols",
-      "id": "curl-del-cross",
-      "field": "notes[1]",
-      "sentence": "日本の本の rot F（ローテーション）は、米国の教科書では curl F と書く。",
-      "entrySources": "OpenStax Calculus Volume 3"
-    },
-    {
-      "collection": "symbols",
-      "id": "equals-question-mark",
-      "field": "notes[0]",
-      "sentence": "≟ は米国の教科書の検算（Check）で使い、「等しいか確かめる」ことを示す。",
-      "entrySources": "OpenStax Elementary Algebra 2e; CK-12 Foundation, CK-12 Geometry (K12 LibreTexts)"
-    },
-    {
-      "collection": "symbols",
-      "id": "implies-arrow",
-      "field": "notes[1]",
-      "sentence": "米国の Geometry と離散数学は条件文を p → q とも書く。",
-      "entrySources": "OpenStax Precalculus 2e; CK-12 Foundation, CK-12 Geometry (K12 LibreTexts)"
+      "sentence": "米国では ⌊x⌋ と書く。",
+      "entrySources": "日本語版 Wikipedia「床関数と天井関数」; 日本語版 Wikipedia「数学 (教科)」; OpenStax Calculus Volume 2; OpenStax Calculus Volume 1"
     },
     {
       "collection": "symbols",
       "id": "integers-symbol",
       "field": "notes[0]",
       "sentence": "文字どおり Z（米国の発音は zee。Merriam-Webster: ˈzē、カナダ・英国・オーストラリアは ˈzed）とも言う。",
-      "entrySources": "Merriam-Webster「z」"
-    },
-    {
-      "collection": "symbols",
-      "id": "ray-ab-arrow",
-      "field": "notes[0]",
-      "sentence": "米国の幾何の矢印の AB は ray AB と読む。",
-      "entrySources": "CK-12 Geometry (K12 LibreTexts)"
-    },
-    {
-      "collection": "symbols",
-      "id": "repeated-combination-h-jp",
-      "field": "notes[0]",
-      "sentence": "ₙHᵣ は日本の教科書の記号で、米国にこの記号はない。",
-      "entrySources": "Oscar Levin, Discrete Mathematics: An Open Introduction (4th edition); 日本語版 Wikipedia「重複組合せ」"
-    },
-    {
-      "collection": "symbols",
-      "id": "repeated-combination-h-jp",
-      "field": "notes[1]",
-      "sentence": "米国では C(n + r − 1, r) と書く（repeated-combination-notation）。",
-      "entrySources": "Oscar Levin, Discrete Mathematics: An Open Introduction (4th edition); 日本語版 Wikipedia「重複組合せ」"
-    },
-    {
-      "collection": "symbols",
-      "id": "union-sign",
-      "field": "notes[1]",
-      "sentence": "米国の統計の教科書は確率で A OR B とも書く（probability-of-union）。",
-      "entrySources": "OpenStax Precalculus 2e; OpenStax Algebra and Trigonometry 2e"
-    },
-    {
-      "collection": "symbols",
-      "id": "vector-ab-arrow",
-      "field": "notes[1]",
-      "sentence": "米国の Geometry の教科書では、同じ形の矢印を半直線 AB（ray AB）に使うことがある（ray-ab-arrow）。",
-      "entrySources": "OpenStax Calculus Volume 3"
+      "entrySources": "Merriam-Webster「z」; Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition"
     },
     {
       "collection": "phrases",

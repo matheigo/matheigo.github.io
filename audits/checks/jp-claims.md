@@ -5,8 +5,8 @@
 対象の欄: terms の mapping_note・pitfalls・variants の note・definition_ja、symbols の notes、phrases の notes・variants の note。
 慣習差（conventions）は jp の欄そのものが日本側の主張で、生成のときに項目ごとに日本側の資料を出典に入れたので、ここには入れない（監査は慣習差の順で見る）。
 
-- phase4-report G-1 の正規表現（日本(の教科書|では|の高校|の授業|の答案|の中学|の入試|の数学|で)）に当たる文: **111 項目・114 文**
-- 広い正規表現（日本・数学 I〜C・中学・高校・学習指導要領・教科書・入試・共通テスト・センター試験）に当たる文: **491 項目・668 文**（主張でない文も混じる。監査の ⑦ で 1 文ずつ見る）
+- phase4-report G-1 の正規表現（日本(の教科書|では|の高校|の授業|の答案|の中学|の入試|の数学|で)）に当たる文: **105 項目・108 文**
+- 広い正規表現（日本・数学 I〜C・中学・高校・学習指導要領・教科書・入試・共通テスト・センター試験）に当たる文: **483 項目・660 文**（主張でない文も混じる。監査の ⑦ で 1 文ずつ見る）
 
 | コレクション | id | 欄 | G-1 | 文 |
 |---|---|---|---|---|
@@ -657,24 +657,16 @@
 | terms | zero-product-property | mapping_note |  | 見出しの「零積法則」は学習指導要領解説に無い（日本語版 Wikipedia「整域」が零因子の非存在を零積法則と呼び、「整数の合同」は零積性質と書く）。 |
 | terms | zero-product-property | mapping_note |  | 中学校学習指導要領解説はこの性質に名前を付けず、「AB = 0 ならば、A = 0 または B = 0」と文で書く。 |
 | terms | zeros-of-a-polynomial | pitfalls[0] | ○ | 日本の高校の教科書は「方程式 P(x) = 0 の解」として扱う。 |
-| symbols | combination-ncr | notes[0] | ○ | 日本の教科書は ₙCᵣ と書き、米国の教科書は C(n, r)、ₙCᵣ、または縦に並べた二項係数 (n over r) の形で書く。 |
-| symbols | conditional-probability-subscript-jp | notes[0] |  | 日本の P_A(B) は、米国の書き方では P(B \| A)。 |
-| symbols | congruence-mod | notes[1] | ○ | ≡ は日本の中学では図形の合同の記号（congruent-sign）。 |
+| symbols | congruence-mod | notes[1] |  | ≡ は中学校学習指導要領〔用語・記号〕（中2 B 図形）では図形の合同の記号（congruent-sign）。 |
 | symbols | congruent-sign | notes[0] |  | 日本の記号 ≡ で書いた合同も、英語では同じく is congruent to と読む。 |
-| symbols | curl-del-cross | notes[1] |  | 日本の本の rot F（ローテーション）は、米国の教科書では curl F と書く。 |
-| symbols | equals-question-mark | notes[1] | ○ | 日本の教科書では使わない。 |
-| symbols | for-all-quantifier | notes[1] | ○ | 記号は英語の本で使い、日本の高校の教科書は言葉で「すべての」と書く。 |
-| symbols | gcd-notation | notes[1] |  | 米国の Pre-Algebra の教材は greatest common factor（GCF）と呼び、中学の教材（Khan Academy の中学）と解説チャンネルに多い。 |
 | symbols | geq-sign | notes[1] |  | 日本の記号（≧）との違いは慣習差 inequality-symbols。 |
 | symbols | leq-sign | notes[1] |  | 日本の記号（≦）との違いは慣習差 inequality-symbols。 |
 | symbols | negative-sign | notes[1] |  | the opposite of は中学の教材（Khan Academy の中学）に多い。 |
-| symbols | parallel-sign | notes[1] | ○ | 日本の中学校の〔用語・記号〕は // と書き、CK-12 Geometry は ∥ と書く。 |
-| symbols | permutation-npr | notes[0] | ○ | 記法の違い: 日本の教科書は ₙPᵣ と書くが、OpenStax Algebra and Trigonometry 2e ／ Precalculus 2e（13.5 ／ 11.5 Counting Principles）は P(n, r) と書く（各 11 件、数を入れた P(12, 9) の形が各 12 件）。 |
+| symbols | parallel-sign | notes[1] |  | 中学校学習指導要領〔用語・記号〕（中1）は // と書き、CK-12 Geometry は ∥ と書く。 |
+| symbols | permutation-npr | notes[0] |  | 〔用語・記号〕（数A）は ₙPᵣ と書き、OpenStax Algebra and Trigonometry 2e ／ Precalculus 2e（13.5 ／ 11.5 Counting Principles）は P(n, r) と書く（各 11 件、数を入れた P(12, 9) の形が各 12 件）。 |
 | symbols | polar-form-cis | notes[1] |  | 日本の高等学校学習指導要領解説には cis が出てこない（日本語版 Wikipedia「複素数」は r cis(φ) と書くこともあると説明する）。 |
-| symbols | repeated-combination-h-jp | notes[0] | ○ | ₙHᵣ は日本の教科書の記号で、米国にこの記号はない。 |
-| symbols | similar-sign | notes[0] |  | 日本の ∽ も読みは同じ。 |
-| symbols | union-sign | notes[1] |  | 米国の統計の教科書は確率で A OR B とも書く（probability-of-union）。 |
-| symbols | vector-ab-arrow | notes[1] |  | 米国の Geometry の教科書では、同じ形の矢印を半直線 AB（ray AB）に使うことがある（ray-ab-arrow）。 |
-| symbols | vector-arrow-notation | notes[1] |  | 米国の教科書は太字で書き、手書きでは矢印を付ける。 |
-| symbols | wave-dash-range-jp | notes[0] |  | 日本の「3〜5」は英語では from three to five か between three and five と言う。 |
+| symbols | prime-label-image | notes[0] | ○ | 日本語版 Wikipedia「プライム」は ′ を日本ではダッシュと呼ぶとする（″ はツーダッシュ）。 |
+| symbols | repeated-combination-h-jp | notes[1] |  | 英語で書くときは二項係数 C(n + r − 1, r) に直す（Levin 3.5。repeated-combination-notation）。 |
+| symbols | similar-sign | notes[0] |  | 中学校学習指導要領〔用語・記号〕（中3）の ∽ で書いた相似も、英語では同じく is similar to と読む。 |
+| symbols | wave-dash-range-jp | notes[1] |  | 度数分布表の階級「10〜20」は 10 以上 20 未満（中学校学習指導要領解説 中1）で、IM Grade 6 8.7 もヒストグラムの階級は左端を含み右端を含まないとする。 |
 | phrases | left-side-minus-right-side | notes[0] | ○ | 日本の答案の型。 |

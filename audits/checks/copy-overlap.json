@@ -2,10 +2,10 @@
   "summary": {
     "checked": "2026-09-27",
     "rule": "English: 8+ consecutive words; Japanese: 20+ characters (whitespace removed); a span that is the entry's headword and fewer than that many other words / characters is left out",
-    "fields": 15660,
+    "fields": 15662,
     "englishSources": 3884,
-    "japaneseSources": 512,
-    "spans": 311,
+    "japaneseSources": 532,
+    "spans": 312,
     "entries": 275,
     "headwordSpans": 147,
     "headwordEntries": 136
@@ -3220,6 +3220,17 @@
     },
     {
       "collection": "symbols",
+      "id": "gauss-bracket-jp",
+      "field": "notes[0]",
+      "lang": "en",
+      "length": 9,
+      "span": "the greatest integer less than or equal to x",
+      "sources": {
+        "openstax-calculus": 1
+      }
+    },
+    {
+      "collection": "symbols",
       "id": "gcd-notation",
       "field": "notes[0]",
       "lang": "en",
@@ -3383,14 +3394,15 @@
     },
     {
       "collection": "symbols",
-      "id": "permutation-npr",
-      "field": "notes[1]",
+      "id": "partial-derivative-leibniz",
+      "field": "notes[2]",
       "lang": "en",
-      "length": 13,
-      "span": "the number of permutations of n distinct objects taken r at a time",
+      "length": 8,
+      "span": "the partial of f with respect to x",
       "sources": {
-        "openstax-algtrig": 4,
-        "openstax-precalculus": 4
+        "yt:profleonard": 5,
+        "mit-18.03": 2,
+        "openstax-calculus": 1
       }
     },
     {

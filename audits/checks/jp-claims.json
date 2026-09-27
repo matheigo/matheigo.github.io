@@ -4532,58 +4532,16 @@
     },
     {
       "collection": "symbols",
-      "id": "combination-ncr",
-      "field": "notes[0]",
-      "sentence": "日本の教科書は ₙCᵣ と書き、米国の教科書は C(n, r)、ₙCᵣ、または縦に並べた二項係数 (n over r) の形で書く。",
-      "g1": true
-    },
-    {
-      "collection": "symbols",
-      "id": "conditional-probability-subscript-jp",
-      "field": "notes[0]",
-      "sentence": "日本の P_A(B) は、米国の書き方では P(B | A)。",
-      "g1": false
-    },
-    {
-      "collection": "symbols",
       "id": "congruence-mod",
       "field": "notes[1]",
-      "sentence": "≡ は日本の中学では図形の合同の記号（congruent-sign）。",
-      "g1": true
+      "sentence": "≡ は中学校学習指導要領〔用語・記号〕（中2 B 図形）では図形の合同の記号（congruent-sign）。",
+      "g1": false
     },
     {
       "collection": "symbols",
       "id": "congruent-sign",
       "field": "notes[0]",
       "sentence": "日本の記号 ≡ で書いた合同も、英語では同じく is congruent to と読む。",
-      "g1": false
-    },
-    {
-      "collection": "symbols",
-      "id": "curl-del-cross",
-      "field": "notes[1]",
-      "sentence": "日本の本の rot F（ローテーション）は、米国の教科書では curl F と書く。",
-      "g1": false
-    },
-    {
-      "collection": "symbols",
-      "id": "equals-question-mark",
-      "field": "notes[1]",
-      "sentence": "日本の教科書では使わない。",
-      "g1": true
-    },
-    {
-      "collection": "symbols",
-      "id": "for-all-quantifier",
-      "field": "notes[1]",
-      "sentence": "記号は英語の本で使い、日本の高校の教科書は言葉で「すべての」と書く。",
-      "g1": true
-    },
-    {
-      "collection": "symbols",
-      "id": "gcd-notation",
-      "field": "notes[1]",
-      "sentence": "米国の Pre-Algebra の教材は greatest common factor（GCF）と呼び、中学の教材（Khan Academy の中学）と解説チャンネルに多い。",
       "g1": false
     },
     {
@@ -4611,15 +4569,15 @@
       "collection": "symbols",
       "id": "parallel-sign",
       "field": "notes[1]",
-      "sentence": "日本の中学校の〔用語・記号〕は // と書き、CK-12 Geometry は ∥ と書く。",
-      "g1": true
+      "sentence": "中学校学習指導要領〔用語・記号〕（中1）は // と書き、CK-12 Geometry は ∥ と書く。",
+      "g1": false
     },
     {
       "collection": "symbols",
       "id": "permutation-npr",
       "field": "notes[0]",
-      "sentence": "記法の違い: 日本の教科書は ₙPᵣ と書くが、OpenStax Algebra and Trigonometry 2e ／ Precalculus 2e（13.5 ／ 11.5 Counting Principles）は P(n, r) と書く（各 11 件、数を入れた P(12, 9) の形が各 12 件）。",
-      "g1": true
+      "sentence": "〔用語・記号〕（数A）は ₙPᵣ と書き、OpenStax Algebra and Trigonometry 2e ／ Precalculus 2e（13.5 ／ 11.5 Counting Principles）は P(n, r) と書く（各 11 件、数を入れた P(12, 9) の形が各 12 件）。",
+      "g1": false
     },
     {
       "collection": "symbols",
@@ -4630,44 +4588,30 @@
     },
     {
       "collection": "symbols",
-      "id": "repeated-combination-h-jp",
+      "id": "prime-label-image",
       "field": "notes[0]",
-      "sentence": "ₙHᵣ は日本の教科書の記号で、米国にこの記号はない。",
+      "sentence": "日本語版 Wikipedia「プライム」は ′ を日本ではダッシュと呼ぶとする（″ はツーダッシュ）。",
       "g1": true
+    },
+    {
+      "collection": "symbols",
+      "id": "repeated-combination-h-jp",
+      "field": "notes[1]",
+      "sentence": "英語で書くときは二項係数 C(n + r − 1, r) に直す（Levin 3.5。repeated-combination-notation）。",
+      "g1": false
     },
     {
       "collection": "symbols",
       "id": "similar-sign",
       "field": "notes[0]",
-      "sentence": "日本の ∽ も読みは同じ。",
-      "g1": false
-    },
-    {
-      "collection": "symbols",
-      "id": "union-sign",
-      "field": "notes[1]",
-      "sentence": "米国の統計の教科書は確率で A OR B とも書く（probability-of-union）。",
-      "g1": false
-    },
-    {
-      "collection": "symbols",
-      "id": "vector-ab-arrow",
-      "field": "notes[1]",
-      "sentence": "米国の Geometry の教科書では、同じ形の矢印を半直線 AB（ray AB）に使うことがある（ray-ab-arrow）。",
-      "g1": false
-    },
-    {
-      "collection": "symbols",
-      "id": "vector-arrow-notation",
-      "field": "notes[1]",
-      "sentence": "米国の教科書は太字で書き、手書きでは矢印を付ける。",
+      "sentence": "中学校学習指導要領〔用語・記号〕（中3）の ∽ で書いた相似も、英語では同じく is similar to と読む。",
       "g1": false
     },
     {
       "collection": "symbols",
       "id": "wave-dash-range-jp",
-      "field": "notes[0]",
-      "sentence": "日本の「3〜5」は英語では from three to five か between three and five と言う。",
+      "field": "notes[1]",
+      "sentence": "度数分布表の階級「10〜20」は 10 以上 20 未満（中学校学習指導要領解説 中1）で、IM Grade 6 8.7 もヒストグラムの階級は左端を含み右端を含まないとする。",
       "g1": false
     },
     {
