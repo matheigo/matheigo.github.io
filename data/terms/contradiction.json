@@ -21,12 +21,11 @@
       "数I"
     ],
     "us": [
-      "Geometry",
       "Discrete Math"
     ]
   },
-  "definition_ja": "ある命題とその否定が同時に成り立つこと。背理法では、仮定から矛盾を導いて仮定が誤りだと結論する。",
-  "definition_en": "A situation in which a statement and its negation are both true; in a proof by contradiction, reaching one shows that the starting assumption was false.",
+  "definition_ja": "ある命題とその否定が両方とも導かれること（両方が成り立つことはない）。背理法では、仮定から矛盾を導いて仮定が誤りだと結論する。",
+  "definition_en": "A situation in which a statement and its negation have both been derived, which cannot actually be the case; in a proof by contradiction, reaching one shows that the starting assumption was false.",
   "latex": "p \\land \\neg p",
   "spoken_en": "p and not p",
   "examples": [
@@ -44,13 +43,15 @@
   "collocations": [],
   "pitfalls": [
     "動詞の「矛盾する」は別エントリ（lead-to-a-contradiction：arrive at ／ lead to ／ get a contradiction）。「仮定に矛盾する」は contradicts the assumption と動詞 contradict を使う。",
-    "用例コーパスでは話し言葉はすべて MIT OCW。背理法（proof by contradiction）の説明で出てくることが多い語。"
+    "用例コーパスでは話し言葉はすべて MIT OCW で、背理法（proof by contradiction）の説明の中で出てくる。",
+    "OpenStax Elementary Algebra・Intermediate Algebra は、解の無い方程式（すべての値で偽になる方程式）も contradiction と呼び、identity・conditional equation と並べる。Algebra and Trigonometry・Precalculus は連立方程式を消去して出る 3 = 0 のような文を contradiction と呼ぶ。"
   ],
   "related": [
     "proof-by-contradiction",
     "lead-to-a-contradiction",
     "negation",
-    "assume"
+    "assume",
+    "tautology"
   ],
   "sources": [
     {
@@ -65,6 +66,16 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 2"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "解の無い方程式を contradiction と呼ぶ（32 件）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "解の無い方程式を contradiction と呼ぶ（36 件）"
     }
   ],
   "confidence": "likely",
@@ -73,7 +84,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "contradiction": 79

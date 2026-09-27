@@ -43,7 +43,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の教科書は否定を p の上に線を引いて p̄ と書く。記号論理では ¬p（~p と書く本もある）。「〜を否定する」の動詞は negate で、別エントリ。",
+    "共通テスト（平成 27 年度 数学I 第1問）は条件 p の否定を p̄ と上線で書き、高等学校学習指導要領解説（数学I）は発展の内容として ¬（p ∧ (¬q)）に触れる。日本語版 Wikipedia「否定」は ¬P・P̄・!P を並べ、Levin は ¬p、CK-12 Geometry（2.8）は ∼p と書く。「〜を否定する」の動詞は negate で、別エントリ。",
     "「すべての x について p」の否定は「ある x について p でない」、「p かつ q」の否定は「p でないまたは q でない」（ド・モルガンの法則）。",
     "用例コーパスでは話し言葉に少しあるだけで書き言葉には出てこず、判定できなかった。見出しは CK-12 Geometry の呼び方（2.10 Negative Statements ほか、25 件）。"
   ],
@@ -71,6 +71,17 @@
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
       "note": "2.10 Negative Statements・2.8 Truth Tables・2.12 Converse Inverse and Contrapositive Statements"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "平成 27 年度 数学I 第1問: 条件 p の否定を p̄ と書く"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 集合と命題（発展）: 真理値表を用いて命題「p→q」の否定が「p∧（¬q）」であること"
     }
   ],
   "confidence": "likely",
@@ -79,7 +90,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "negation": 3

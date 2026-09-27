@@ -4,7 +4,6 @@
     "term": "要素の個数",
     "reading": "ようそのこすう",
     "alt": [
-      "基数",
       "濃度"
     ]
   },
@@ -22,17 +21,17 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の数Iの n(A) は有限集合の要素の個数だけを指す。英語の cardinality は無限集合の大きさ（日本の大学でいう「濃度」）まで含む語で、用例コーパスでは話し言葉はすべて MIT OCW（6.042）、書き言葉はすべて MIT の講義ノート。高校の範囲の問題文は number of elements の形で書ける。記号は英語の本では |A| と書くものと n(A) と書くものがある。",
+  "mapping_note": "高等学校学習指導要領解説は、要素の個数の関係式 n(A ∪ B) = n(A) + n(B) − n(A ∩ B) を数学A（場合の数と確率）で扱う。英語の cardinality は無限集合の大きさ（日本語版 Wikipedia「濃度 (数学)」の濃度）まで含む語で、用例コーパスでは話し言葉はすべて MIT OCW（6.042）、書き言葉はすべて MIT の講義ノート。OpenStax（Algebra and Trigonometry・Precalculus）は number of elements と書き、cardinality は Levin（離散数学）に出る。記号は Levin が |A|、OpenStax Algebra and Trigonometry（13.7 Probability）が n(E)。",
   "domains": [
     "logic",
     "set-theory"
   ],
   "level": {
     "jp": [
-      "数I"
+      "数A"
     ],
     "us": [
-      "Geometry",
+      "Algebra 2",
       "Discrete Math"
     ]
   },
@@ -60,7 +59,7 @@
   "collocations": [],
   "pitfalls": [
     "|A| は絶対値と同じ記号だが、集合に付くと要素の個数を表す。n(A) は n of A と読む。",
-    "cardinality は無限集合にも使う（自然数全体と実数全体では cardinality が違う）。高校の「要素の個数」の意味だけなら number of elements でよい。"
+    "cardinality は無限集合にも使う（自然数全体と実数全体では cardinality が違う）。有限集合の要素の個数の意味だけなら number of elements でよい（OpenStax の言い方）。"
   ],
   "related": [
     "set",
@@ -72,8 +71,25 @@
   "sources": [
     {
       "type": "wikipedia-langlink",
-      "ja": "基数",
-      "en": "Cardinal number"
+      "ja": "濃度 (数学)",
+      "en": "Cardinality"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A 場合の数と確率: 集合の要素の個数 n(A∪B) = n(A) + n(B) − n(A∩B)（数学I の節は数学A に回すと書く）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "Sets: |A| denotes the cardinality"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.7 Probability: n(E) ／ n(S)（number of elements）"
     }
   ],
   "confidence": "likely",
@@ -82,7 +98,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "cardinality": 82,

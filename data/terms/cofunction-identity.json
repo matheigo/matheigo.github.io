@@ -3,7 +3,9 @@
   "ja": {
     "term": "90° − θ の三角比",
     "reading": "きゅうじゅうどまいなすしーたのさんかくひ",
-    "alt": []
+    "alt": [
+      "余角公式"
+    ]
   },
   "en": {
     "term": "cofunction identity",
@@ -13,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の教科書は名前を付けずに公式を並べる（「90° − θ の三角比」）が、英語では cofunction identities と名前で呼ぶ。用例コーパスの書き言葉はすべて OpenStax Algebra and Trigonometry。",
+  "mapping_note": "高等学校学習指導要領解説（数学I 図形と計量）は三角比の基本的な相互関係として sin A = cos(90° − A)・cos A = sin(90° − A) を挙げるだけで名前を付けず、OpenStax Algebra and Trigonometry（Right Triangle Trigonometry の節）は cofunction identities と呼ぶ（15 件）。near なのは、OpenStax の cofunction identities が sin／cos・tan／cot・sec／csc の 3 組で、高等学校学習指導要領〔用語・記号〕の数学I が sin・cos・tan だけだから。見出しの「90° − θ の三角比」は学習指導要領解説に無い（日本語版 Wikipedia「三角関数」は余角公式）。",
   "domains": [
     "trigonometry"
   ],
@@ -46,7 +48,7 @@
   "collocations": [],
   "pitfalls": [
     "cosine の co- は complement（余角）の意味で、「余角の sine」が cosine。それで sine と cosine、tangent と cotangent を cofunction と呼ぶ。",
-    "日本の高校では cot をふつう使わないので tan(90° − θ) = 1/tan θ と書くが、英語の cofunction identity は tan(90° − θ) = cot θ の形になる。",
+    "高等学校学習指導要領〔用語・記号〕（数学I 図形と計量）は sin・cos・tan だけで cot は無く、共通テストの問題文にも cot は出てこないので tan(90° − θ) = 1/tan θ と書くが、英語の cofunction identity は tan(90° − θ) = cot θ の形になる。",
     "ラジアンでは 90° − θ が π/2 − θ になる。"
   ],
   "related": [
@@ -60,6 +62,23 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 図形と計量: 三角比の基本的な相互関係として sin A = cos(90° − A)・cos A = sin(90° − A) を挙げる（名前は無い。cot も無い）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）〔用語・記号〕",
+      "note": "数I 図形と計量: 正弦・余弦・正接、sin・cos・tan（cot は無い）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「三角関数」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0",
+      "note": "節「負角・余角・補角公式」: 余角公式"
     }
   ],
   "confidence": "likely",
@@ -68,7 +87,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "cofunction identity": 2

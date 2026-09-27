@@ -18,6 +18,7 @@
   ],
   "level": {
     "jp": [
+      "中1",
       "数I"
     ],
     "us": [
@@ -46,17 +47,23 @@
       "register": "written"
     }
   ],
-  "collocations": [],
+  "collocations": [
+    {
+      "en": "logically equivalent",
+      "ja": "論理的に同値"
+    }
+  ],
   "pitfalls": [
     "論理の同値をはっきり言うときは logically equivalent（用例コーパスでは書き言葉に出てくる）。見出しの equivalent を含むので別の言い方としては数えない。",
     "英語の equivalent は equivalent fractions（等しい分数）、equivalent expressions など論理以外にも広く使うので、件数にはその意味も含まれる。",
-    "同値変形は、方程式を equivalent equation に変形していくこと。両辺を 2 乗するなどの変形は同値でなくなることがある。"
+    "同値変形は、方程式を equivalent equation に変形していくこと（中学校学習指導要領解説（第 1 学年 方程式）は「同値な方程式」「同値変形」と書く）。両辺を 2 乗するなどの変形は同値でなくなることがある。"
   ],
   "related": [
     "necessary-and-sufficient-condition",
     "contrapositive",
     "proposition",
-    "condition"
+    "condition",
+    "biconditional"
   ],
   "sources": [
     {
@@ -64,8 +71,16 @@
       "title": "OpenStax Algebra and Trigonometry 2e"
     },
     {
-      "type": "textbook",
-      "title": "OpenStax Calculus Volume 3"
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.3 Rules of Logic: logically equivalent（44 件）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 1 学年 方程式: もとの方程式と同値な方程式、同値変形（3 件）"
     }
   ],
   "confidence": "likely",
@@ -74,7 +89,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "equivalent": 543

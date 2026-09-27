@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "CK-12 Geometry には side-angle inequality と、中身を言う opposite the longer side ／ opposite the longest side の形が合わせて 3 件ある（4.25 Comparing Angles and Sides in Triangles・4.31 Converse of the Pythagorean Theorem）。用例コーパスには出てこない。定理の中身をそのまま言う形は the larger angle is opposite the longer side（大きい角の対辺は長い）／ the largest angle is opposite the longest side（最大の角は最大の辺の対角）。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。CK-12 Geometry 4.25 Comparing Angles and Sides in Triangles はこの定理に名前を付けず（this idea is actually a theorem）、中身を the larger angle is opposite the longer side ／ the largest angle is opposite the longest side と言う。同じレッスンの SAS Inequality Theorem・SSS Inequality Theorem は 2 つの三角形を比べる別の定理（ヒンジ定理）。見出しの英語 side-angle inequality と日本語の「三角形の辺と角の大小」は本プロジェクトの言い方で、学習指導要領解説・日本語版 Wikipedia に無い。",
   "domains": [
     "geometry",
     "trigonometry"
@@ -23,12 +23,11 @@
       "数I"
     ],
     "us": [
-      "Geometry",
-      "Precalculus"
+      "Geometry"
     ]
   },
   "definition_ja": "1 つの三角形で、大きい辺に向かい合う角は大きく、大きい角に向かい合う辺は大きいという関係。a > b ⇔ A > B で、特に最大の辺の対角が最大の角になる。",
-  "definition_en": "In any triangle, the longer of two sides is opposite the larger angle, and the larger of two angles is opposite the longer side. In particular, the largest angle is opposite the longest side.",
+  "definition_en": "In any triangle, the bigger of two angles faces the longer of the two sides opposite them, and the longer side faces the bigger angle; so the biggest angle faces the longest side.",
   "latex": "a > b \\iff A > B",
   "spoken_en": "a is greater than b if and only if A is greater than B",
   "examples": [
@@ -51,7 +50,8 @@
   "collocations": [],
   "pitfalls": [
     "等号の場合（a = b ⇔ A = B）は二等辺三角形の性質。",
-    "数I では「最大の角」を求める問題で使う。最大の辺の対角を余弦定理で求め、鋭角・直角・鈍角を判定する。"
+    "余弦定理で最大の辺の対角を求めて鋭角・直角・鈍角を判定するときに使う。最大の辺の対角を余弦定理で求め、鋭角・直角・鈍角を判定する。",
+    "CK-12 Geometry 4.25 の SAS Inequality Theorem・SSS Inequality Theorem は 2 つの三角形の辺と角を比べる別の定理で、1 つの三角形の中の辺と角の大小とは違う。"
   ],
   "related": [
     "triangle",
@@ -76,16 +76,16 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 side-angle inequality | opposite the longer side | opposite the longest side（CK-12 Geometry 4.25 Comparing Angles and Sides in Triangles・CK-12 Geometry 4.31 Converse of the Pythagorean Theorem・計 3 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "code": "corpus-no-fixed-expression",
+      "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-09-26"
     }
   ]
 }

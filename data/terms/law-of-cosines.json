@@ -7,7 +7,9 @@
   },
   "en": {
     "term": "law of cosines",
-    "alt": [],
+    "alt": [
+      "generalized Pythagorean theorem"
+    ],
     "register": "written"
   },
   "pos": "noun",
@@ -21,13 +23,13 @@
       "数I"
     ],
     "us": [
-      "Geometry",
+      "Algebra 2",
       "Precalculus",
       "Integrated Math 3"
     ]
   },
   "definition_ja": "三角形の 1 辺の長さの 2 乗を、他の 2 辺の長さとその間の角の余弦で表す定理。三平方の定理を一般の三角形に広げたもの。",
-  "definition_en": "The theorem that expresses the square of one side of a triangle in terms of the other two sides and the cosine of the angle between them. It generalizes the Pythagorean theorem to any triangle.",
+  "definition_en": "The theorem giving the square of one side of a triangle from the other two sides and the angle they enclose: a² = b² + c² − 2bc cos A. It extends the Pythagorean theorem to every triangle.",
   "latex": "a^2 = b^2 + c^2 - 2bc\\cos A",
   "spoken_en": "a squared equals b squared plus c squared minus two b c cosine A",
   "examples": [
@@ -45,8 +47,9 @@
   "collocations": [],
   "pitfalls": [
     "角を求めるときは cos A = (b² + c² − a²)/(2bc) の形で使う。3 辺がわかれば角が 1 つに決まる。",
-    "用例コーパスでは話し言葉には出てこず、書き言葉はほとんどが OpenStax Algebra and Trigonometry。英語版 Wikipedia「Law of cosines」は cosine rule ／ cosine formula という別名も挙げる。",
-    "A = 90° のとき cos A = 0 となり、三平方の定理 a² = b² + c² に一致する。"
+    "英語版 Wikipedia「Law of cosines」は cosine rule ／ cosine formula という別名も挙げる。",
+    "A = 90° のとき cos A = 0 となり、三平方の定理 a² = b² + c² に一致する。",
+    "OpenStax Algebra and Trigonometry・Precalculus は余弦定理を Generalized Pythagorean Theorem（三平方の定理を直角でない三角形に広げたもの）とも呼ぶ。"
   ],
   "related": [
     "law-of-sines",
@@ -84,13 +87,14 @@
   "updated": "2026-09-26",
   "evidence": {
     "written": {
-      "law of cosines": 52
+      "law of cosines": 52,
+      "generalized Pythagorean theorem": 3
     },
     "sources": [
       "mit-notes",
       "openstax-algtrig",
       "openstax-calculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

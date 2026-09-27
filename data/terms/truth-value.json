@@ -3,7 +3,9 @@
   "ja": {
     "term": "真偽",
     "reading": "しんぎ",
-    "alt": []
+    "alt": [
+      "真理値"
+    ]
   },
   "en": {
     "term": "truth value",
@@ -26,7 +28,7 @@
     ]
   },
   "definition_ja": "命題が真であるか偽であるかということ。",
-  "definition_en": "Whether a statement is true or false.",
+  "definition_en": "The value, true or false, that a statement takes.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -43,7 +45,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "問題文の「真偽を調べよ」は truth value を使わず、Determine whether … is true or false. と書くのがふつう。",
+    "問題文は truth value を使わず、OpenStax Calculus・Algebra and Trigonometry・CK-12 Geometry とも Determine whether the statement is true or false. と書く。truth value は CK-12 Geometry・Levin の説明の文に出る。",
     "用例コーパスで truth value は話し言葉には出てこず、書き言葉も MIT の講義ノートだけと少ない。見出しは CK-12 Geometry（2.9 And and Or Statements ほか、14 件）の呼び方による。Levin の離散数学の本も truth value と呼ぶ（1.1 Mathematical Statements ほか）。"
   ],
   "related": [
@@ -64,6 +66,21 @@
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
       "note": "2.9 And and Or Statements・2.10 Negative Statements・2.8 Truth Tables"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "determine whether the statement is true or false（7 件）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Determine whether the statement is true or false（2 件）"
+    },
+    {
+      "type": "wikipedia-langlink",
+      "ja": "真理値",
+      "en": "Truth value"
     }
   ],
   "confidence": "likely",
@@ -72,7 +89,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "written": {
       "truth value": 3

@@ -13,18 +13,18 @@
       {
         "term": "proposition",
         "register": "written",
-        "note": "大学の論理・離散数学の書き方。話し言葉ではほとんどが MIT OCW、書き言葉ではほとんどが MIT の講義ノート。"
+        "note": "MIT 6.042 の講義とその講義ノートの言い方。Levin の離散数学は statement が主で、proposition は propositional logic などに少数（37 件）。"
       }
     ]
   },
   "pos": "noun",
-  "mapping": "near",
-  "mapping_note": "日本の「命題」は真か偽かがはっきり決まる文や式。用例コーパスでは話し言葉は statement が proposition（ほとんどが MIT OCW）を大きく上回り、書き言葉は statement と proposition の併記（proposition はほとんどが MIT の講義ノート）。proposition は大学の論理・離散数学の言い方で、本によっては番号付きの小さな定理（Proposition 2.3 など）の名前としても使う。",
+  "mapping": "exact",
   "domains": [
     "logic"
   ],
   "level": {
     "jp": [
+      "中2",
       "数I"
     ],
     "us": [
@@ -48,7 +48,7 @@
       "register": "written"
     },
     {
-      "en": "A proposition is a statement that is either true or false, but not both.",
+      "en": "In logic, a proposition is a sentence that has exactly one truth value: it is true or it is false, never both.",
       "ja": "命題とは、真か偽かのどちらか一方に定まる文である。",
       "register": "written"
     }
@@ -56,7 +56,8 @@
   "collocations": [],
   "pitfalls": [
     "statement は「命題」のほかに、一般の「文・主張」（problem statement ＝問題文など）の意味でも使う。",
-    "「x > 3」のように変数の値で真偽が変わるものは、日本の教科書では「条件」と呼んで命題と区別する。"
+    "「x > 3」のように変数の値で真偽が変わるものは、センター試験（平成 30 年度 数学I・A）・共通テスト（令和 3 年度 数学I・A）は「実数 x に関する次の条件 p, q」のように「条件」と呼んで命題と区別する（エントリ condition）。",
+    "日本語版 Wikipedia「命題」は命題を真偽が確定した言明と定義し、高等学校学習指導要領解説（数学I 集合と命題）は命題の真偽と「条件や結論」を扱う。用例コーパスでは話し言葉は statement が proposition（ほとんどが MIT OCW）を大きく上回り、書き言葉は statement と proposition の併記。Levin は statement を「真か偽かが定まる平叙文」と定義し、番号付きの結果の名前にも Proposition を使う（Proposition 2.2.2）。"
   ],
   "related": [
     "true",
@@ -78,6 +79,29 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 集合と命題: 命題の条件や結論に着目（命題 34 件）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "平成 30 年度 数学I・A: 実数 x に関する次の条件 p, q, r, s。令和 3 年度 数学I・A: 条件 p, q を次のように定める"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.1 Mathematical Statements: Definition 1.1.5（a statement is a declarative sentence that is either true or false）、Proposition 2.2.2"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 2 学年 図形: 命題の逆、推測や命題が常に成り立つとは限らない（命題 24 件）"
     }
   ],
   "confidence": "likely",
@@ -86,7 +110,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "statement": 505,

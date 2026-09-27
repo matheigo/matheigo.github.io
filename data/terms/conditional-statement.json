@@ -18,7 +18,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の数I は「命題 p ⇒ q」と言い、この形の命題そのものに名前を付けない（含意は論理学の語）。英語では論理・離散数学が implication、米国の Geometry の教科書が conditional statement（if-then statement）と呼ぶ。",
+  "mapping_note": "高等学校学習指導要領解説（数学I）は命題「p → q」と書き、この形の命題そのものに名前を付けない（含意は論理学の語）。英語では Levin の離散数学が implication、CK-12 Geometry（2.11 If Then Statements）が conditional statement（33 件）・if-then statement（11 件）と呼ぶ。見出しの「含意」は学習指導要領解説に無い（日本語版 Wikipedia「論理包含」「必要条件と十分条件」にはある）。",
   "domains": [
     "proof",
     "logic"
@@ -55,7 +55,6 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスで implication は、話し言葉では MIT OCW が半分以上、書き言葉では MIT の講義ノートが大半。conditional statement と if-then statement は用例コーパスにほとんど出てこない。IM では if-then statement が 1 件。CK-12 Geometry では conditional statement が 31 件、if-then statement が 11 件（2.11 If Then Statements ほか）。",
     "日常英語の implication は「含み・影響」の意味でも使う。",
     "「p ならば q」の p を hypothesis、q を conclusion と呼ぶ。"
   ],
@@ -74,6 +73,24 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "1.2 Implications"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 集合と命題: 命題「p→q」"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2.11 If Then Statements: conditional statement（33 件）・if-then statement（11 件）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「論理包含」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%AB%96%E7%90%86%E5%8C%85%E5%90%AB",
+      "note": "含意"
     }
   ],
   "confidence": "likely",
@@ -82,7 +99,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "implication": 29

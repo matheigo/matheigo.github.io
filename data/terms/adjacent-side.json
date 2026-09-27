@@ -7,7 +7,9 @@
   },
   "en": {
     "term": "adjacent side",
-    "alt": [],
+    "alt": [
+      "adjacent leg"
+    ],
     "uk": null
   },
   "pos": "noun",
@@ -45,7 +47,7 @@
   "collocations": [],
   "pitfalls": [
     "隣辺はどの角から見るかで決まる。もう一方の鋭角から見ると、隣辺と対辺が入れ替わる。",
-    "adjacent sides は多角形の「隣り合う辺」の意味にも使う（平行四辺形の隣り合う 2 辺など）。用例コーパスの件数にはこの意味も混ざりうる。"
+    "adjacent sides は多角形の「隣り合う辺」の意味にも使う（平行四辺形の隣り合う 2 辺など）。用例コーパスの件数にはこの意味も混ざりうる。IM Geometry は adjacent leg（4.6 ほか）、OpenStax Algebra and Trigonometry は the side adjacent to the angle と言う。"
   ],
   "related": [
     "cosine",
@@ -55,17 +57,24 @@
   ],
   "sources": [
     {
-      "type": "wikipedia-langlink",
-      "ja": "隣辺",
-      "en": "Cathetus"
-    },
-    {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
     },
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「直角三角形」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%9B%B4%E8%A7%92%E4%B8%89%E8%A7%92%E5%BD%A2",
+      "note": "鋭角 A に対する斜辺 c・隣辺 a・対辺 b"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "4.6 Working with Trigonometric Ratios ほか: adjacent leg（42 件）"
     }
   ],
   "confidence": "likely",
@@ -74,12 +83,13 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "adjacent side": 80
     },
     "written": {
+      "adjacent leg": 1,
       "adjacent side": 37
     },
     "sources": [
@@ -96,6 +106,6 @@
       "yt:organicchem",
       "yt:patrickjmt"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

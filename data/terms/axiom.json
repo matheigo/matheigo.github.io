@@ -18,11 +18,12 @@
   ],
   "level": {
     "jp": [
-      "数I"
+      "大学"
     ],
     "us": [
-      "Geometry",
-      "Discrete Math"
+      "Algebra 1",
+      "Intro Statistics",
+      "Linear Algebra"
     ]
   },
   "definition_ja": "証明なしに正しいと認め、理論の出発点とする命題。",
@@ -43,14 +44,16 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "米国の Geometry の授業では、ユークリッド幾何の公理を postulate と呼ぶ。",
+    "CK-12 Geometry（1.1 Geometry Terms ほか）はユークリッド幾何の公理を postulate と呼ぶ（81 件。axiom は 0 件。エントリ postulate）。",
     "用例コーパスでは axiom は話し言葉のほとんどが MIT OCW、書き言葉のほとんどが MIT の講義ノートで、大学の講義寄りの語。"
   ],
   "related": [
     "proof",
     "lemma",
     "corollary",
-    "proposition"
+    "proposition",
+    "postulate",
+    "theorem"
   ],
   "sources": [
     {
@@ -61,6 +64,24 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "postulate（81 件。axiom は 0 件）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Algebra (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Algebra",
+      "note": "1.6.1 Real Number Properties and Axioms（3 件）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "axiom（98 件）"
     }
   ],
   "confidence": "likely",
@@ -69,7 +90,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "axiom": 58

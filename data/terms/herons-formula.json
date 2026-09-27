@@ -22,7 +22,7 @@
       "数I"
     ],
     "us": [
-      "Geometry",
+      "Algebra 2",
       "Precalculus"
     ]
   },
@@ -37,15 +37,14 @@
       "register": "spoken"
     },
     {
-      "en": "Use Heron's formula to find the area of a triangle with sides 5, 6, and 7.",
+      "en": "Find the area of the triangle with sides 5, 6, and 7 by Heron's formula.",
       "ja": "3 辺の長さが 5, 6, 7 の三角形の面積を、ヘロンの公式を用いて求めよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "s は周の長さの半分で、英語では semiperimeter と呼ぶ。",
-    "用例コーパスでは話し言葉にはほとんど出てこない（The Organic Chemistry Tutor だけ）。書き言葉はすべて OpenStax Algebra and Trigonometry。"
+    "OpenStax Algebra and Trigonometry は s を周の長さの半分（one half of the perimeter）と説明し、sometimes called the semi-perimeter と書く（2 件。semiperimeter と続けて綴るのは英語版 Wikipedia）。"
   ],
   "related": [
     "area-of-a-triangle",
@@ -62,6 +61,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学 (教科)」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6%20%28%E6%95%99%E7%A7%91%29",
+      "note": "数学I 図形と計量: 三角形の面積・ヘロンの公式"
     }
   ],
   "confidence": "likely",
@@ -70,7 +75,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "Heron's formula": 1

@@ -22,11 +22,12 @@
       "数I"
     ],
     "us": [
+      "Algebra 2",
       "Discrete Math"
     ]
   },
   "definition_ja": "集合 A と集合 B の両方に属する要素全体の集合のこと。A ∩ B と書く。",
-  "definition_en": "The set of all elements that belong to both A and B. It is written A ∩ B.",
+  "definition_en": "The set whose elements are exactly the ones that lie in A and also in B, written A ∩ B.",
   "latex": "A \\cap B",
   "spoken_en": "A intersect B",
   "examples": [
@@ -45,7 +46,7 @@
   "pitfalls": [
     "A ∩ B は A intersect B と読む。確率では A and B とも読む（積事象）。「かつ」の ∩（intersection）と「または」の ∪（union）を取り違えない。",
     "共通部分が空集合のとき、A と B は disjoint（互いに素）という。",
-    "用例コーパスでは intersection of A and B ／ A intersect B などの形で数え、話し言葉はほとんどが MIT OCW、書き言葉にはほとんど出てこない。2 直線の交わりの意味の intersection は数えていない（交点は point of intersection）。"
+    "交点（point of intersection）や 2 直線の交わりの intersection と取り違えない。"
   ],
   "related": [
     "union",
@@ -59,6 +60,16 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "wikipedia-langlink",
+      "ja": "共通部分 (数学)",
+      "en": "Intersection (set theory)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Linear Inequalities: the intersection of two sets"
     }
   ],
   "confidence": "likely",
@@ -67,7 +78,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "intersection of a and b | intersection of sets | intersection of two sets | intersection of the sets | a intersect b | a intersection b": 12

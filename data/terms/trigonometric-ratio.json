@@ -29,7 +29,7 @@
     ]
   },
   "definition_ja": "直角三角形の辺の比で定める sin θ, cos θ, tan θ の総称。鈍角を含む 0° ≦ θ ≦ 180° では、原点を中心とする半円上の点の座標で定める。",
-  "definition_en": "The ratios sine, cosine, and tangent of an angle, defined from the sides of a right triangle; for angles up to 180°, they are defined from the coordinates of a point on a circle centered at the origin.",
+  "definition_en": "The ratios sine, cosine, and tangent of an angle, defined from the sides of a right triangle; for angles up to 180°, they are read off from where a ray at that angle meets a circle centered at the origin.",
   "latex": "\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}},\\quad \\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}},\\quad \\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}",
   "spoken_en": "sine theta is opposite over hypotenuse, cosine theta is adjacent over hypotenuse, tangent theta is opposite over adjacent",
   "examples": [
@@ -51,17 +51,17 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは trigonometric ratio も trig ratio も少なく、register は決めていない。IM Geometry では glossary の見出しで、レッスン（4 章）と Algebra 2 に 8 件。",
     "鈍角では cos と tan が負になる。sin(180° − θ) = sin θ、cos(180° − θ) = −cos θ、tan(180° − θ) = −tan θ。",
     "英語の覚え方 SOH-CAH-TOA は、Sine = Opposite/Hypotenuse、Cosine = Adjacent/Hypotenuse、Tangent = Opposite/Adjacent の頭文字。",
-    "数I の三角比は、直角三角形の鋭角で定めてから、座標を使って 0° ≦ θ ≦ 180° まで広げる。数II で一般角に広げたものが三角関数（trigonometric function）。"
+    "高等学校学習指導要領解説では、数学I の三角比を直角三角形の鋭角で定めてから鈍角（0° ≦ θ ≦ 180°）まで広げ、数学II で一般角に広げたものを三角関数（trigonometric function）と呼ぶ。"
   ],
   "related": [
     "sine",
     "cosine",
     "tangent",
     "adjacent-side",
-    "trigonometric-function"
+    "trigonometric-function",
+    "sohcahtoa"
   ],
   "sources": [
     {
@@ -77,6 +77,12 @@
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
       "note": "Geometry glossary・Geometry 4.6 Working with Trigonometric Ratios・Geometry 4.9 Using Trigonometric Ratios to Find Angles"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 図形と計量: 鋭角の三角比・鈍角の三角比。数学II 三角関数: 一般角"
     }
   ],
   "confidence": "likely",
@@ -85,7 +91,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "trig ratio": 1

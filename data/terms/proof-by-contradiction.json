@@ -26,7 +26,6 @@
       "数A"
     ],
     "us": [
-      "Geometry",
       "Discrete Math"
     ]
   },
@@ -53,22 +52,35 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "「背理法で示す」は prove … by contradiction。答案は Suppose, for the sake of contradiction, that … のように否定の仮定から書き出し、矛盾を示して終える。",
+    "「背理法で示す」は prove … by contradiction。Levin（1.4 Proofs）は Suppose, for the sake of contradiction, that … と書き出し（4 件）、OpenStax Calculus Volume 1（平均値の定理）は By way of contradiction, suppose … と書く。矛盾を示して終える。",
     "対偶を利用した証明（proof by contrapositive）とは別物。背理法は結論の否定から矛盾を導き、対偶の証明は結論の否定から仮定の否定を導く。",
-    "用例コーパスでは話し言葉が少なく（すべて MIT OCW）、話し言葉の判定はできなかった。書き言葉はすべて MIT の講義ノート。"
+    "用例コーパスでは話し言葉は MIT OCW だけ、書き言葉は MIT の講義ノートだけ。",
+    "英語版 Wikipedia「Proof by contradiction」は indirect proof・reductio ad absurdum とも呼ぶが、参照と用例コーパスにはどちらも出てこない。"
   ],
   "related": [
     "contradiction",
     "proof-by-contrapositive",
     "assume",
     "negation",
-    "proof"
+    "proof",
+    "infinitude-of-primes"
   ],
   "sources": [
     {
       "type": "wikipedia-langlink",
       "ja": "背理法",
       "en": "Proof by contradiction"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "1.4 Proofs: proof by contradiction（28 件）、Suppose, for the sake of contradiction（4 件）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "平均値の定理の証明: By way of contradiction, suppose"
     }
   ],
   "confidence": "likely",
@@ -77,7 +89,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "proof by contradiction": 8

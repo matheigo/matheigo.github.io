@@ -2,11 +2,10 @@
 
 作成: `python3 scripts/audit/source_mentions.py`（規則は scripts/audit/source_mentions.py の説明）。主張が正しいかは見ない（それは監査）。
 
-- 項目: **166**（draft 1・likely 165）
+- 項目: **165**（draft 1・likely 164）
 
 | コレクション | id | confidence | 名指しされた資料 | 欄 |
 |---|---|---|---|---|
-| terms | aa-similarity | likely | 〔用語・記号〕 | pitfalls[1] |
 | terms | aas-congruence | likely | IM | pitfalls[2] |
 | terms | aas-congruence | likely | 学習指導要領解説 | mapping_note |
 | terms | adjacent-angles | likely | 学習指導要領解説 | mapping_note |
@@ -20,8 +19,6 @@
 | terms | angle-addition-postulate | likely | 学習指導要領解説 | mapping_note |
 | terms | arc-measure | likely | 学習指導要領解説 | mapping_note |
 | terms | area-in-polar-coordinates | likely | 学習指導要領解説 | mapping_note |
-| terms | ascending-order | likely | IM | pitfalls[0] |
-| terms | ascending-order | likely | OpenStax Elementary Algebra | mapping_note |
 | terms | bayes-theorem | likely | AP Statistics の CED | pitfalls[0] |
 | terms | bijection | likely | OpenStax Algebra and Trigonometry | pitfalls[2] |
 | terms | bipartite-graph | likely | Levin | pitfalls[2] |
@@ -33,9 +30,9 @@
 | terms | coefficient-of-variation | likely | OpenStax Introductory Statistics | mapping_note |
 | terms | cofactor-expansion | likely | OpenStax Algebra and Trigonometry | pitfalls[0] |
 | terms | cofactor | likely | OpenStax Algebra and Trigonometry | pitfalls[0] |
+| terms | cofunction-identity | likely | 共通テスト | pitfalls[1] |
 | terms | completely-randomized-design | likely | 学習指導要領解説 | mapping_note |
-| terms | conditional-statement | likely | CK-12 | pitfalls[0] |
-| terms | conditional-statement | likely | IM | pitfalls[0] |
+| terms | conditions-that-determine-a-triangle | likely | CK-12 | mapping_note |
 | terms | confounding-variable | likely | OpenStax Introductory Statistics | pitfalls[0] |
 | terms | conjugate-roots | likely | OpenStax Elementary Algebra | pitfalls[1] |
 | terms | convenience-sample | likely | 学習指導要領解説 | mapping_note |
@@ -58,11 +55,14 @@
 | terms | decimal-system | likely | Nicholson | pitfalls[0] |
 | terms | deductive-reasoning | likely | IM | pitfalls[0] |
 | terms | derivatives-in-polar-form | likely | 学習指導要領解説 | mapping_note |
+| terms | determine-the-coefficients | likely | 学習指導要領解説 | pitfalls[0] |
 | terms | difference-quotient | likely | 日本語版 Wikipedia「微分」 | mapping_note |
 | terms | difference-quotient | likely | 学習指導要領解説 | mapping_note |
+| terms | direct-proof | likely | 学習指導要領解説 | mapping_note |
 | terms | directed-graph | likely | Levin | pitfalls[2] |
 | terms | directed-graph | likely | Nicholson | pitfalls[2] |
 | terms | end-behavior | likely | 学習指導要領解説 | mapping_note |
+| terms | endpoint | likely | IM | pitfalls[0] |
 | terms | equation-in-quadratic-form | likely | 学習指導要領解説 | mapping_note |
 | terms | equation-in-quadratic-form | likely | OpenStax Algebra and Trigonometry | pitfalls[1] |
 | terms | equiangular-triangle | likely | IM | pitfalls[1] |
@@ -72,10 +72,7 @@
 | terms | existential-quantifier | likely | Levin | pitfalls[2] |
 | terms | expanding-and-condensing-logs | likely | 学習指導要領解説 | mapping_note |
 | terms | exterior-angle-theorem | likely | IM | pitfalls[2] |
-| terms | factored-form | likely | 日本語版 Wikipedia「二次関数」 | mapping_note |
-| terms | factored-form | likely | 学習指導要領解説 | mapping_note |
 | terms | flowchart-proof | likely | 学習指導要領解説 | mapping_note |
-| terms | fractional-part | likely | IM | mapping_note |
 | terms | free-variable | draft | Levin | pitfalls[0] |
 | terms | free-variable | draft | Nicholson | pitfalls[1] |
 | terms | generating-function | likely | Levin | pitfalls[2] |
@@ -94,14 +91,19 @@
 | terms | inductive-step | likely | 学習指導要領解説 | mapping_note |
 | terms | inductive-step | likely | OpenStax | pitfalls[0] |
 | terms | influential-point | likely | 学習指導要領解説 | mapping_note |
-| terms | inscribed-circle | likely | CK-12 | pitfalls[2] |
+| terms | inscribed-circle | likely | 英語版 Wikipedia「Incircle and excircles」 | pitfalls[1] |
+| terms | inscribed-circle | likely | OpenStax | pitfalls[1] |
+| terms | inscribed-circle | likely | OpenStax Calculus Volume 3（Curvature） | pitfalls[2] |
 | terms | intercepted-arc | likely | IM | pitfalls[2] |
 | terms | intercepted-arc | likely | 学習指導要領解説 | mapping_note |
 | terms | intersecting-chords-theorem | likely | 学習指導要領解説 | mapping_note |
 | terms | interval-notation | likely | OpenStax Elementary Algebra | pitfalls[0] |
+| terms | inverse | likely | 学習指導要領解説 | mapping_note |
 | terms | isomorphism | likely | Levin | pitfalls[0] |
 | terms | joint-variation | likely | 学習指導要領解説 | mapping_note |
 | terms | lagrange-error-bound | likely | 学習指導要領解説 | mapping_note |
+| terms | law-of-sines | likely | CK-12 | pitfalls[0] |
+| terms | law-of-sines | likely | IM | pitfalls[0] |
 | terms | law-of-syllogism | likely | IM | pitfalls[2] |
 | terms | law-of-syllogism | likely | Levin | pitfalls[2] |
 | terms | like-radicals | likely | 学習指導要領解説 | mapping_note |
@@ -111,7 +113,6 @@
 | terms | linear-programming | likely | OpenStax Algebra and Trigonometry | pitfalls[0] |
 | terms | linear-recurrence-relation | likely | Nicholson | pitfalls[2] |
 | terms | literal-equation | likely | 学習指導要領解説 | mapping_note |
-| terms | logical-connective | likely | Levin | pitfalls[2] |
 | terms | logistic-growth | likely | 学習指導要領解説 | mapping_note |
 | terms | major-arc | likely | IM | pitfalls[2] |
 | terms | median-of-a-triangle | likely | CK-12 | pitfalls[2] |
@@ -119,11 +120,13 @@
 | terms | midpoint-formula | likely | 学習指導要領解説 | mapping_note |
 | terms | minor-arc | likely | IM | pitfalls[2] |
 | terms | multinomial-theorem | likely | OpenStax | pitfalls[0] |
+| terms | necessary-condition | likely | AP Calculus の CED | pitfalls[1] |
 | terms | negative-reciprocal | likely | 学習指導要領解説 | mapping_note |
 | terms | normal-probability-plot | likely | AP Statistics の CED | pitfalls[0] |
 | terms | normal-probability-plot | likely | 学習指導要領解説 | mapping_note |
 | terms | nth-roots-of-unity | likely | OpenStax Algebra and Trigonometry | pitfalls[0] |
 | terms | nth-term-test | likely | 学習指導要領解説 | mapping_note |
+| terms | number-of-elements | likely | OpenStax Precalculus | mapping_note |
 | terms | one-sample-t-test | likely | OpenStax | pitfalls[0] |
 | terms | one-to-one-property | likely | 学習指導要領解説 | mapping_note |
 | terms | order-of-operations | likely | CK-12 | pitfalls[1] |
@@ -165,24 +168,20 @@
 | terms | sampling-distribution-of-a-proportion | likely | OpenStax Introductory Statistics | pitfalls[0] |
 | terms | secant-tangent-theorem | likely | 学習指導要領解説 | mapping_note |
 | terms | segment-addition-postulate | likely | 学習指導要領解説 | mapping_note |
+| terms | side-angle-inequality | likely | 学習指導要領解説 | mapping_note |
 | terms | sign-chart-inequality | likely | 学習指導要領解説 | mapping_note |
 | terms | slope-formula | likely | 学習指導要領解説 | mapping_note |
 | terms | slope-intercept-form-of-a-line | likely | 学習指導要領解説 | mapping_note |
 | terms | sohcahtoa | likely | 学習指導要領解説 | mapping_note |
 | terms | solve-the-right-triangle | likely | 学習指導要領解説 | mapping_note |
-| terms | space-diagonal | likely | IM | mapping_note |
 | terms | spanning-tree | likely | Levin | pitfalls[2] |
 | terms | square-units | likely | CK-12 | pitfalls[2] |
 | terms | square-units | likely | IM | pitfalls[2] |
 | terms | square-units | likely | 学習指導要領解説 | mapping_note |
 | terms | standard-form-of-a-line | likely | 日本語版 Wikipedia「一次関数」 | mapping_note |
 | terms | standard-form-of-a-line | likely | 学習指導要領解説 | mapping_note |
-| terms | standard-form | likely | OpenStax Elementary Algebra | mapping_note |
-| terms | standard-form | likely | OpenStax Intermediate Algebra | mapping_note |
 | terms | standard-matrix | likely | 学習指導要領解説 | mapping_note |
 | terms | standard-normal-table | likely | AP Statistics の CED | pitfalls[0] |
-| terms | statistical-hypothesis | likely | AP Statistics の CED | pitfalls[2] |
-| terms | statistical-variable | likely | AP Statistics の CED | pitfalls[2] |
 | terms | strong-induction | likely | Levin | pitfalls[2] |
 | terms | substitution-property | likely | IM | pitfalls[2] |
 | terms | substitution-property | likely | 学習指導要領解説 | mapping_note |
@@ -200,7 +199,7 @@
 | terms | unbiased-estimator | likely | OpenStax Introductory Statistics | pitfalls[0] |
 | terms | union-of-events | likely | OpenStax Introductory Statistics | pitfalls[0] |
 | terms | universal-quantifier | likely | Levin | pitfalls[2] |
-| terms | universal-set | likely | Levin | pitfalls[0] |
+| terms | universal-set | likely | 学習指導要領解説 | pitfalls[0] |
 | terms | vertical-line-test | likely | 学習指導要領解説 | mapping_note |
 | terms | voluntary-response-bias | likely | 学習指導要領解説 | mapping_note |
 | terms | without-loss-of-generality | likely | Levin | pitfalls[2] |
@@ -212,4 +211,3 @@
 | phrases | explaining-solution-factored-and-set-to-zero | likely | IM | variants[0].note |
 | phrases | explaining-solution-factored-and-set-to-zero | likely | OpenStax Elementary Algebra | variants[0].note |
 | conventions | approximately-equal-notation | likely | OpenStax Introductory Statistics | us |
-| conventions | slope-intercept-form | likely | 〔用語・記号〕 | jp |

@@ -2,26 +2,15 @@
   "summary": {
     "checked": "2026-09-26",
     "rule": "English: 8+ consecutive words; Japanese: 20+ characters (whitespace removed); a span that is the entry's headword and fewer than that many other words / characters is left out",
-    "fields": 15679,
+    "fields": 15686,
     "englishSources": 3884,
-    "japaneseSources": 420,
-    "spans": 337,
-    "entries": 302,
-    "headwordSpans": 136,
-    "headwordEntries": 126
+    "japaneseSources": 425,
+    "spans": 325,
+    "entries": 290,
+    "headwordSpans": 137,
+    "headwordEntries": 127
   },
   "spans": [
-    {
-      "collection": "terms",
-      "id": "aa-similarity",
-      "field": "examples[2].en",
-      "lang": "en",
-      "length": 8,
-      "span": "two triangles have two pairs of congruent angles",
-      "sources": {
-        "ref:ck12-geometry": 2
-      }
-    },
     {
       "collection": "terms",
       "id": "aas-congruence",
@@ -111,30 +100,6 @@
         "openstax-algtrig": 1,
         "openstax-precalculus": 1,
         "openstax-calculus": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "angle-of-depression",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the angle between the horizontal and the line",
-      "sources": {
-        "openstax-algtrig": 4,
-        "openstax-precalculus": 4
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "angle-of-elevation",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the angle between the horizontal and the line",
-      "sources": {
-        "openstax-algtrig": 4,
-        "openstax-precalculus": 4
       }
     },
     {
@@ -484,10 +449,10 @@
     {
       "collection": "terms",
       "id": "circumscribed-circle",
-      "field": "definition_en",
+      "field": "pitfalls[2]",
       "lang": "en",
       "length": 8,
-      "span": "where the perpendicular bisectors of the sides meet",
+      "span": "ck 12 geometry 4 22 concurrence and constructions",
       "sources": {
         "ref:ck12-geometry": 1
       }
@@ -617,6 +582,29 @@
       "span": "the area of a circle with a radius",
       "sources": {
         "khan-middle": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "condition",
+      "field": "pitfalls[0]",
+      "lang": "ja",
+      "length": 22,
+      "span": "実数xに関する次の条件p,q,r,sを考える",
+      "sources": {
+        "jp:exams/h30-hon-02": 1,
+        "jp:exams/h30-hon-03": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "conditional-statement",
+      "field": "mapping_note",
+      "lang": "en",
+      "length": 8,
+      "span": "ck 12 geometry 2 11 if then statements",
+      "sources": {
+        "ref:ck12-geometry": 1
       }
     },
     {
@@ -1341,7 +1329,7 @@
     {
       "collection": "terms",
       "id": "floor-function",
-      "field": "definition_en",
+      "field": "definition_ja",
       "lang": "en",
       "length": 9,
       "span": "the greatest integer less than or equal to x",
@@ -1488,19 +1476,6 @@
     },
     {
       "collection": "terms",
-      "id": "herons-formula",
-      "field": "examples[1].en",
-      "lang": "en",
-      "length": 12,
-      "span": "use heron's formula to find the area of a triangle with sides",
-      "sources": {
-        "openstax-algtrig": 5,
-        "openstax-precalculus": 5,
-        "ref:im-6-8": 2
-      }
-    },
-    {
-      "collection": "terms",
       "id": "hl-congruence",
       "field": "definition_en",
       "lang": "en",
@@ -1618,6 +1593,17 @@
     },
     {
       "collection": "terms",
+      "id": "inscribed-circle",
+      "field": "pitfalls[2]",
+      "lang": "en",
+      "length": 8,
+      "span": "ck 12 geometry 4 22 concurrence and constructions",
+      "sources": {
+        "ref:ck12-geometry": 1
+      }
+    },
+    {
+      "collection": "terms",
       "id": "instantaneous-rate-of-change",
       "field": "examples[0].en",
       "lang": "en",
@@ -1684,29 +1670,6 @@
     },
     {
       "collection": "terms",
-      "id": "intersection",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the set of all elements that belong to",
-      "sources": {
-        "openstax-algtrig": 1,
-        "openstax-precalculus": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "inverse",
-      "field": "pitfalls[1]",
-      "lang": "en",
-      "length": 10,
-      "span": "ck 12 geometry 2 12 converse inverse and contrapositive statements",
-      "sources": {
-        "ref:ck12-geometry": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "isosceles-triangle-theorem",
       "field": "definition_en",
       "lang": "en",
@@ -1738,19 +1701,6 @@
       "span": "a radius of 3 cm and a height of",
       "sources": {
         "ref:im-6-8": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "law-of-cosines",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 13,
-      "span": "of the other two sides and the cosine of the angle between them",
-      "sources": {
-        "openstax-algtrig": 2,
-        "openstax-precalculus": 2,
-        "openstax-calculus": 1
       }
     },
     {
@@ -1914,6 +1864,28 @@
         "mit-notes": 2,
         "ref:nicholson-lawa-2021a": 2,
         "openstax-calculus": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "logical-connective",
+      "field": "pitfalls[1]",
+      "lang": "en",
+      "length": 10,
+      "span": "is true if p or q are true or both",
+      "sources": {
+        "ref:ck12-geometry": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "logical-connective",
+      "field": "pitfalls[2]",
+      "lang": "en",
+      "length": 9,
+      "span": "ck 12 geometry 2 9 and and or statements",
+      "sources": {
+        "ref:ck12-geometry": 1
       }
     },
     {
@@ -2388,17 +2360,6 @@
     },
     {
       "collection": "terms",
-      "id": "properties-of-inequalities",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "multiplying or dividing by a negative number reverses",
-      "sources": {
-        "openstax-algtrig": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "properties-of-logarithms",
       "field": "definition_ja",
       "lang": "en",
@@ -2421,18 +2382,6 @@
         "openstax-algtrig": 2,
         "openstax-precalculus": 1,
         "ref:ck12-geometry": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "proposition",
-      "field": "examples[2].en",
-      "lang": "en",
-      "length": 11,
-      "span": "a proposition is a statement that is either true or false",
-      "sources": {
-        "mit-notes": 2,
-        "mit-6.042": 1
       }
     },
     {
@@ -2535,19 +2484,6 @@
     },
     {
       "collection": "terms",
-      "id": "real-number",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "a number that is either rational or irrational",
-      "sources": {
-        "openstax-elemalg": 2,
-        "openstax-intalg": 2,
-        "openstax-prealgebra": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "reduced-row-echelon-form",
       "field": "definition_en",
       "lang": "en",
@@ -2591,18 +2527,6 @@
       "sources": {
         "mit-notes": 2,
         "mit-6.042": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "restricted-domain",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "a function that is not one to one",
-      "sources": {
-        "openstax-algtrig": 2,
-        "openstax-precalculus": 2
       }
     },
     {
@@ -2800,8 +2724,8 @@
       "id": "side-angle-inequality",
       "field": "mapping_note",
       "lang": "en",
-      "length": 8,
-      "span": "4 25 comparing angles and sides in triangles",
+      "length": 11,
+      "span": "ck 12 geometry 4 25 comparing angles and sides in triangles",
       "sources": {
         "ref:ck12-geometry": 1
       }
@@ -2810,17 +2734,6 @@
       "collection": "terms",
       "id": "side-angle-inequality",
       "field": "mapping_note",
-      "lang": "en",
-      "length": 8,
-      "span": "the largest angle is opposite the longest side",
-      "sources": {
-        "ref:ck12-geometry": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "side-angle-inequality",
-      "field": "definition_en",
       "lang": "en",
       "length": 8,
       "span": "the largest angle is opposite the longest side",
@@ -2861,17 +2774,6 @@
       "sources": {
         "jp:exams/h30-hon-01": 1,
         "jp:exams/h30-hon-04": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "sine",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "on the unit circle the y coordinate of",
-      "sources": {
-        "ref:im-9-12": 1
       }
     },
     {
@@ -3086,17 +2988,6 @@
     },
     {
       "collection": "terms",
-      "id": "subset",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 9,
-      "span": "every element of a is also an element of",
-      "sources": {
-        "ref:levin-dmoi4": 4
-      }
-    },
-    {
-      "collection": "terms",
       "id": "subtended-by",
       "field": "mapping_note",
       "lang": "en",
@@ -3176,17 +3067,6 @@
         "openstax-algtrig": 2,
         "openstax-precalculus": 2,
         "openstax-calculus": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "system-of-inequalities",
-      "field": "examples[2].en",
-      "lang": "en",
-      "length": 8,
-      "span": "and graph the solution on a number line",
-      "sources": {
-        "ref:im-6-8": 2
       }
     },
     {
@@ -3341,18 +3221,6 @@
     },
     {
       "collection": "terms",
-      "id": "trigonometric-ratio",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the coordinates of a point on a circle",
-      "sources": {
-        "openstax-algtrig": 1,
-        "openstax-precalculus": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "trinomial",
       "field": "examples[0].en",
       "lang": "en",
@@ -3372,6 +3240,19 @@
       "span": "determine whether each statement is true or false",
       "sources": {
         "ref:ck12-geometry": 3
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "truth-value",
+      "field": "pitfalls[0]",
+      "lang": "en",
+      "length": 8,
+      "span": "determine whether the statement is true or false",
+      "sources": {
+        "openstax-calculus": 7,
+        "ref:ck12-geometry": 3,
+        "openstax-algtrig": 2
       }
     },
     {
@@ -3407,32 +3288,6 @@
       "sources": {
         "openstax-algtrig": 4,
         "openstax-precalculus": 4
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "union",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the set of all elements that belong to",
-      "sources": {
-        "openstax-algtrig": 1,
-        "openstax-precalculus": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "unit-circle",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 9,
-      "span": "the circle of radius 1 centered at the origin",
-      "sources": {
-        "mit-18.02": 2,
-        "openstax-calculus": 1,
-        "openstax-algtrig": 1,
-        "openstax-precalculus": 1
       }
     },
     {
@@ -3959,8 +3814,8 @@
       "id": "aa-similarity",
       "field": "examples[2].en",
       "lang": "en",
-      "length": 9,
-      "span": "are similar by the angle angle triangle similarity theorem",
+      "length": 12,
+      "span": "so the triangles are similar by the angle angle triangle similarity theorem",
       "sources": {
         "ref:im-9-12": 7
       }
@@ -3975,6 +3830,19 @@
       "sources": {
         "openstax-algtrig": 1,
         "openstax-precalculus": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "all",
+      "field": "pitfalls[1]",
+      "lang": "en",
+      "length": 9,
+      "span": "c f x for all x in the domain",
+      "sources": {
+        "openstax-calculus": 18,
+        "openstax-algtrig": 5,
+        "openstax-precalculus": 4
       }
     },
     {

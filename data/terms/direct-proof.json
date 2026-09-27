@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（direct proof は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（direct proof は CED・OpenStax・IM・CK-12 とも 0 件）。見出しの「直接証明」は学習指導要領解説に無い（日本語版 Wikipedia「証明 (数学)」にはある）。数I に置くのは対偶を利用した証明・背理法と対比する語として。",
   "domains": [
     "logic"
   ],
@@ -21,7 +21,6 @@
       "数I"
     ],
     "us": [
-      "Geometry",
       "Discrete Math"
     ]
   },
@@ -43,7 +42,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは direct proof はほとんど出てこない（話し言葉は MIT OCW、書き言葉は MIT の講義ノートだけ）。見出しは Levin（1.4 Proofs）の呼び方による。",
+    "用例コーパスでは MIT OCW と MIT の講義ノートにしか出てこない。",
     "direct proof は、背理法（proof by contradiction）や対偶を使った証明（proof by contrapositive）と区別するための名前。"
   ],
   "related": [
@@ -58,6 +57,12 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "1.4 Proofs"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「証明 (数学)」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%A8%BC%E6%98%8E%20%28%E6%95%B0%E5%AD%A6%29",
+      "note": "P をそのまま証明することを直接証明という"
     }
   ],
   "confidence": "likely",
@@ -66,7 +71,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "direct proof": 2

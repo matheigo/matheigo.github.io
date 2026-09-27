@@ -18,11 +18,11 @@
   ],
   "level": {
     "jp": [
-      "数I"
+      "大学"
     ],
     "us": [
-      "Geometry",
-      "Discrete Math"
+      "Discrete Math",
+      "Linear Algebra"
     ]
   },
   "definition_ja": "大きな定理を証明するための足がかりとして、先に証明しておく補助的な命題。",
@@ -44,18 +44,25 @@
   "collocations": [],
   "pitfalls": [
     "用例コーパスでは lemma は話し言葉がすべて MIT OCW、書き言葉がすべて MIT の講義ノートで、高校向けのソースには出てこない。",
-    "複数形はふつう lemmas（lemmata は古い形）。"
+    "複数形は lemmas と lemmata（英語版 Wikipedia「Lemma (mathematics)」が冒頭で並べる）。参照（Nicholson）は lemmas。"
   ],
   "related": [
     "corollary",
     "axiom",
-    "proof"
+    "proof",
+    "theorem"
   ],
   "sources": [
     {
       "type": "wikipedia-langlink",
       "ja": "補題",
       "en": "Lemma (mathematics)"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "lemma（193 件）、lemmas"
     }
   ],
   "confidence": "likely",
@@ -64,7 +71,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "lemma": 81

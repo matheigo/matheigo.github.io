@@ -1,9 +1,11 @@
 {
   "id": "bearing",
   "ja": {
-    "term": "方位",
-    "reading": "ほうい",
-    "alt": []
+    "term": "方位角",
+    "reading": "ほういかく",
+    "alt": [
+      "方位"
+    ]
   },
   "en": {
     "term": "bearing",
@@ -45,8 +47,7 @@
   "collocations": [],
   "pitfalls": [
     "方位のうち東西南北のような向きの名前（compass directions）は bearing ではない。bearing は北から測った角度で方向を表したもの。",
-    "N 15° E は「北から東へ 15°」と読む（north fifteen degrees east）。北から時計回りの 3 桁表記では同じ方向が 015° になる。",
-    "bearing は別の意味でも使う語なので、用例コーパスでは bearing of の形で数えた（書き言葉は OpenStax Calculus・OpenStax Algebra and Trigonometry・OpenStax Precalculus に同じくらい出てくる）。"
+    "N 15° E は北から東へ 15° の方向。OpenStax Calculus Volume 3 は a bearing of N 15 E とも書き、OpenStax は 52° east of north のように向きを書くこともある。"
   ],
   "related": [
     "angle-of-elevation",
@@ -63,6 +64,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「方位角」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%96%B9%E4%BD%8D%E8%A7%92",
+      "note": "北から測った角で方向を表す"
     }
   ],
   "confidence": "likely",
@@ -71,7 +78,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "bearing of": 8

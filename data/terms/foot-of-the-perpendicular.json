@@ -7,7 +7,9 @@
   },
   "en": {
     "term": "foot of the perpendicular",
-    "alt": [],
+    "alt": [
+      "foot of a perpendicular"
+    ],
     "uk": null
   },
   "pos": "noun",
@@ -22,7 +24,7 @@
     ],
     "us": [
       "Geometry",
-      "Precalculus"
+      "Linear Algebra"
     ]
   },
   "definition_ja": "点から直線（または平面）に垂線を下ろしたとき、垂線と直線（平面）が交わる点。",
@@ -44,8 +46,7 @@
   "collocations": [],
   "pitfalls": [
     "「垂線を下ろす」は drop a perpendicular (from A to BC)。",
-    "ベクトルで求めるときは、垂線の足は点の直線（平面）への正射影（orthogonal projection）になる。",
-    "用例コーパスでは foot of the perpendicular は話し言葉（MIT OCW）にわずかに出てくるだけで、書き言葉には出てこない。"
+    "ベクトルで求めるときは、垂線の足は点の直線（平面）への正射影（orthogonal projection）になる。"
   ],
   "related": [
     "perpendicular-lines",
@@ -60,6 +61,12 @@
       "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
       "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
       "note": "4.2 Projections and Planes"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Perpendicular",
+      "note": "節 Foot of a perpendicular"
     }
   ],
   "confidence": "likely",
@@ -68,7 +75,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "foot of the perpendicular": 1
@@ -76,13 +83,13 @@
     "sources": [
       "mit-18.01"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 foot of the perpendicular（4.2 Projections and Planes）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-26"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "checked": "2026-09-27",
+  "checked": "2026-09-26",
   "claims": [
     {
       "collection": "terms",
@@ -90,6 +90,13 @@
       "id": "all",
       "field": "en.variants[3].note",
       "sentence": "話し言葉は半分が Khan Academy の中学の講義で、MIT OCW・Professor Leonard が次ぐ。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "all",
+      "field": "pitfalls[1]",
+      "sentence": "共通テスト（令和 5・6 年度 数学II 第3問）の「すべての実数 r に対して」は文頭や文中に置くが、用例コーパスの for all x は述語の後ろに置く（f(c) ≥ f(x) for all x in the domain）。",
       "g1": false
     },
     {
@@ -278,7 +285,7 @@
       "collection": "terms",
       "id": "arrange-by-the-variable-of-lowest-degree",
       "field": "mapping_note",
-      "sentence": "日本の因数分解の技法で、英語で説明するなら「次数の最も低い文字について式を整理する」と手順をそのまま言う。",
+      "sentence": "見出しの日本語は学習指導要領解説に出てこない。",
       "g1": false
     },
     {
@@ -481,22 +488,36 @@
       "collection": "terms",
       "id": "closed-interval",
       "field": "pitfalls[0]",
-      "sentence": "数I では定義域を 0 ≦ x ≦ 3 のように不等式で書くのがふつう。",
+      "sentence": "共通テスト・センター試験の数学I は定義域を 0 ≦ x ≦ 3 のように不等式で書き、学習指導要領解説で閉区間 [a, b] が出るのは数学III の積分だけ。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "cofunction-identity",
       "field": "mapping_note",
-      "sentence": "日本の教科書は名前を付けずに公式を並べる（「90° − θ の三角比」）が、英語では cofunction identities と名前で呼ぶ。",
-      "g1": true
+      "sentence": "高等学校学習指導要領解説（数学I 図形と計量）は三角比の基本的な相互関係として sin A = cos(90° − A)・cos A = sin(90° − A) を挙げるだけで名前を付けず、OpenStax Algebra and Trigonometry（Right Triangle Trigonometry の節）は cofunction identities と呼ぶ（15 件）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "cofunction-identity",
+      "field": "mapping_note",
+      "sentence": "near なのは、OpenStax の cofunction identities が sin／cos・tan／cot・sec／csc の 3 組で、高等学校学習指導要領〔用語・記号〕の数学I が sin・cos・tan だけだから。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "cofunction-identity",
+      "field": "mapping_note",
+      "sentence": "見出しの「90° − θ の三角比」は学習指導要領解説に無い（日本語版 Wikipedia「三角関数」は余角公式）。",
+      "g1": false
     },
     {
       "collection": "terms",
       "id": "cofunction-identity",
       "field": "pitfalls[1]",
-      "sentence": "日本の高校では cot をふつう使わないので tan(90° − θ) = 1/tan θ と書くが、英語の cofunction identity は tan(90° − θ) = cot θ の形になる。",
-      "g1": true
+      "sentence": "高等学校学習指導要領〔用語・記号〕（数学I 図形と計量）は sin・cos・tan だけで cot は無く、共通テストの問題文にも cot は出てこないので tan(90° − θ) = 1/tan θ と書くが、英語の cofunction identity は tan(90° − θ) = cot θ の形になる。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -537,14 +558,7 @@
       "collection": "terms",
       "id": "complement",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書は補集合を Ā と書く。",
-      "g1": true
-    },
-    {
-      "collection": "terms",
-      "id": "complement",
-      "field": "pitfalls[0]",
-      "sentence": "英語の本では Aᶜ、A′、Ā など記号は教科書による。",
+      "sentence": "高等学校学習指導要領解説（数学I）は集合の記号として Ā（A の補集合）を挙げ、共通テスト（令和 4 年度 数学I ほか）は「X の補集合を X̄ と表す」と書く。",
       "g1": false
     },
     {
@@ -614,7 +628,14 @@
       "collection": "terms",
       "id": "condition",
       "field": "pitfalls[0]",
-      "sentence": "数I では、真偽が決まる文を「命題」、変数の値で真偽が変わる文を「条件」と分ける。",
+      "sentence": "センター試験（平成 30 年度 数学I・A）は「実数 x に関する次の条件 p, q, r, s を考える」、共通テスト（令和 3 年度 数学I・A）は「条件 p, q を次のように定める」と、変数を含み真偽が変わる文を「条件」と呼ぶ。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "condition",
+      "field": "pitfalls[0]",
+      "sentence": "高等学校学習指導要領解説（数学I）の「条件」は「命題の条件や結論」（仮定）の意味。",
       "g1": false
     },
     {
@@ -628,7 +649,14 @@
       "collection": "terms",
       "id": "conditional-statement",
       "field": "mapping_note",
-      "sentence": "日本の数I は「命題 p ⇒ q」と言い、この形の命題そのものに名前を付けない（含意は論理学の語）。",
+      "sentence": "高等学校学習指導要領解説（数学I）は命題「p → q」と書き、この形の命題そのものに名前を付けない（含意は論理学の語）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "conditional-statement",
+      "field": "mapping_note",
+      "sentence": "見出しの「含意」は学習指導要領解説に無い（日本語版 Wikipedia「論理包含」「必要条件と十分条件」にはある）。",
       "g1": false
     },
     {
@@ -636,6 +664,13 @@
       "id": "conditions-for-a-parallelogram",
       "field": "mapping_note",
       "sentence": "中学校学習指導要領解説（第 2 学年）は「平行四辺形になるための条件」を平行四辺形の性質と並べて挙げる（本エントリの定義の 5 つ）が、用例コーパスと参照にはそれらをまとめた名前が出てこず、「四角形が平行四辺形であることを示す」（prove that a quadrilateral is a parallelogram）のように、示すことを文で言う。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "conditions-that-determine-a-triangle",
+      "field": "mapping_note",
+      "sentence": "高等学校学習指導要領解説（数学I）は正弦定理・余弦定理を三角形の決定条件と関連付けて理解すると書き、中学校学習指導要領解説（第 2 学年）は合同条件を三角形の決定条件を基に認めると書く。",
       "g1": false
     },
     {
@@ -1019,8 +1054,8 @@
     {
       "collection": "terms",
       "id": "determine-the-coefficients",
-      "field": "pitfalls[1]",
-      "sentence": "数I の「二次関数の決定」はこのエントリで扱う。",
+      "field": "pitfalls[0]",
+      "sentence": "「二次関数の決定」（学習指導要領解説には無い教科書の節の名前）の内容はこのエントリで扱う。",
       "g1": false
     },
     {
@@ -1067,6 +1102,20 @@
     },
     {
       "collection": "terms",
+      "id": "direct-proof",
+      "field": "mapping_note",
+      "sentence": "見出しの「直接証明」は学習指導要領解説に無い（日本語版 Wikipedia「証明 (数学)」にはある）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "direct-proof",
+      "field": "mapping_note",
+      "sentence": "数I に置くのは対偶を利用した証明・背理法と対比する語として。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "direct-proportion",
       "field": "mapping_note",
       "sentence": "中学校学習指導要領解説（第 1 学年）の「比例」は、a を比例定数として y = ax で表される関係。",
@@ -1076,8 +1125,8 @@
       "collection": "terms",
       "id": "discriminant",
       "field": "pitfalls[0]",
-      "sentence": "日本の答案では D と置いて「D > 0 より」と書く。",
-      "g1": true
+      "sentence": "共通テスト・センター試験（数学II）の問題文は「判別式を D とすると」と置き（平成 28・31 年度 第1問、令和 5 年度 第3問）、日本語版 Wikipedia「判別式」も D で表記する。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -1207,17 +1256,10 @@
     },
     {
       "collection": "terms",
-      "id": "end-of-proof",
-      "field": "mapping_note",
-      "sentence": "日本の答案は最後に「（証明終わり）」や「終」と書く。",
-      "g1": true
-    },
-    {
-      "collection": "terms",
-      "id": "end-of-proof",
-      "field": "definition_ja",
-      "sentence": "日本の答案では「（証明終わり）」や「終」と書く。",
-      "g1": true
+      "id": "endpoint",
+      "field": "pitfalls[0]",
+      "sentence": "高等学校学習指導要領解説（数学I 図形と計量）と共通テストは線分・半直線の端を「端点」と書き、区間の端は日本語版 Wikipedia「区間 (数学)」が端点 (endpoints) と呼ぶ。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -1288,6 +1330,13 @@
       "field": "pitfalls[1]",
       "sentence": "日本の高校で習う「命題 p と q は同値」は equivalent（論理の同値）で、同値関係（equivalence relation）とは別の話。",
       "g1": true
+    },
+    {
+      "collection": "terms",
+      "id": "equivalent",
+      "field": "pitfalls[2]",
+      "sentence": "同値変形は、方程式を equivalent equation に変形していくこと（中学校学習指導要領解説（第 1 学年 方程式）は「同値な方程式」「同値変形」と書く）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -1391,8 +1440,8 @@
       "collection": "terms",
       "id": "factored-form",
       "field": "mapping_note",
-      "sentence": "日本の教科書では y = a(x − α)(x − β) を「x 軸と x = α, β で交わる放物線」の式として扱う。",
-      "g1": true
+      "sentence": "日本語版 Wikipedia「二次関数」は f(x) = a(x − s)(x − t) の形を因数分解形（単に分解形とも）と呼び、高等学校学習指導要領解説（数学I）はこの形に名前を付けず、二次方程式の解を二次関数のグラフと x 軸との共有点の x 座標として扱う。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -1460,16 +1509,9 @@
     {
       "collection": "terms",
       "id": "floor-function",
-      "field": "definition_ja",
-      "sentence": "日本では [x]、英語では ⌊x⌋ と書く。",
-      "g1": true
-    },
-    {
-      "collection": "terms",
-      "id": "floor-function",
       "field": "pitfalls[1]",
-      "sentence": "日本の [x] を英語の文にそのまま書くと、ただの角かっこ（brackets）に見える。",
-      "g1": false
+      "sentence": "ガウス記号の [x] を英語の文にそのまま書くと、ただの角かっこ（brackets）に見える（日本語版 Wikipedia「床関数と天井関数」は、日本の高校数学ではガウス記号が使われることがほとんどと書く）。",
+      "g1": true
     },
     {
       "collection": "terms",
@@ -1491,6 +1533,13 @@
       "field": "mapping_note",
       "sentence": "日本では分配法則で 1 項ずつ掛けて展開し、順序の覚え方に名前はない。",
       "g1": true
+    },
+    {
+      "collection": "terms",
+      "id": "function-notation",
+      "field": "mapping_note",
+      "sentence": "見出しの「関数記号」は学習指導要領解説に無い、本プロジェクトの訳語（日本語版 Wikipedia「関数記号」は数理論理学の別の意味）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -2070,8 +2119,8 @@
       "collection": "terms",
       "id": "interval",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書は区間を a ≦ x ≦ b と不等式で書くが、英語の教科書では区間記法 [a, b]、(a, b)、[a, ∞) も使う。",
-      "g1": true
+      "sentence": "高等学校学習指導要領解説（数学II 積分）と共通テストは区間を a ≦ x ≦ b と不等式で書き、閉区間 [a, b] の記号が解説に出るのは数学III の積分だけ。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -2085,6 +2134,20 @@
       "id": "inverse-trigonometric-function",
       "field": "pitfalls[0]",
       "sentence": "学習指導要領解説には出てこないが、OpenStax Algebra and Trigonometry（Precalculus）で扱い、AP Calculus でも微分する（CED topic 3.4）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "inverse",
+      "field": "mapping_note",
+      "sentence": "見出しの「裏」は学習指導要領解説に無い（日本語版 Wikipedia「裏 (論理学)」にはある。解説（数学I）が挙げるのは対偶・必要条件・十分条件）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "is-biased",
+      "field": "mapping_note",
+      "sentence": "中学校学習指導要領解説の「偏り」は標本の抽出について言い（偏りなく抽出する）、日本語の「偏りがある」はこの 1 つ目に当たる。",
       "g1": false
     },
     {
@@ -2133,7 +2196,7 @@
       "collection": "terms",
       "id": "law-of-sines",
       "field": "pitfalls[0]",
-      "sentence": "日本の正弦定理は「= 2R」（R は外接円の半径）まで含めて書く。",
+      "sentence": "高等学校学習指導要領解説（数学I）の正弦定理は a/sin A = b/sin B = c/sin C = 2R（R は △ABC の外接円の半径）と、= 2R まで含めて書く。",
       "g1": false
     },
     {
@@ -2308,15 +2371,15 @@
       "collection": "terms",
       "id": "linear-inequality",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書は ≦ ≧、英語の教材は ≤ ≥ と書く。",
-      "g1": true
+      "sentence": "中学校学習指導要領〔用語・記号〕（中1 数と式）は ≦ ≧、OpenStax と AP の CED は ≤ ≥ と書く（慣習差 inequality-symbols）。",
+      "g1": false
     },
     {
       "collection": "terms",
       "id": "linear-inequality",
       "field": "pitfalls[1]",
-      "sentence": "そのグラフ（半平面）は日本では数II の「不等式の表す領域」で扱う。",
-      "g1": true
+      "sentence": "そのグラフ（半平面）は、学習指導要領解説では数学II「図形と方程式」の「不等式の表す領域」で扱う（慣習差 inequality-terms-scope、エントリ system-of-linear-inequalities）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -2405,22 +2468,22 @@
     {
       "collection": "terms",
       "id": "logical-connective",
-      "field": "pitfalls[0]",
-      "sentence": "日本の数I では「かつ」「または」「でない」を扱うが、「論理結合子」という名前は使わない。",
+      "field": "mapping_note",
+      "sentence": "見出しの「論理結合子」は学習指導要領解説に無い（日本語版 Wikipedia「命題」にはある。langlink の「論理演算」は論理演算子と書く）。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "logical-connective",
       "field": "pitfalls[0]",
-      "sentence": "否定も数I では上線（p̄）で書き、¬p や ~p の記号は使わない。",
+      "sentence": "高等学校学習指導要領解説（数学I 集合と命題）は必要条件・十分条件・対偶や簡単な命題の証明を扱い、集合の記号として a ∈ A、A ∩ B、A ∪ B、A ⊂ B、Ā を挙げ、発展の内容として真理値表と「p → q」の否定「p ∧ (¬q)」に触れるが、「論理結合子」の名前は出てこない。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "logical-connective",
       "field": "pitfalls[1]",
-      "sentence": "数学の or は両方が真の場合も真になる（日本の「または」と同じ）。",
+      "sentence": "日本の「または」と同じ。",
       "g1": false
     },
     {
@@ -2525,8 +2588,8 @@
       "collection": "terms",
       "id": "negation",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書は否定を p の上に線を引いて p̄ と書く。",
-      "g1": true
+      "sentence": "共通テスト（平成 27 年度 数学I 第1問）は条件 p の否定を p̄ と上線で書き、高等学校学習指導要領解説（数学I）は発展の内容として ¬（p ∧ (¬q)）に触れる。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -2630,28 +2693,7 @@
       "collection": "terms",
       "id": "number-of-elements",
       "field": "mapping_note",
-      "sentence": "日本の数Iの n(A) は有限集合の要素の個数だけを指す。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "number-of-elements",
-      "field": "mapping_note",
-      "sentence": "英語の cardinality は無限集合の大きさ（日本の大学でいう「濃度」）まで含む語で、用例コーパスでは話し言葉はすべて MIT OCW（6.042）、書き言葉はすべて MIT の講義ノート。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "number-of-elements",
-      "field": "mapping_note",
-      "sentence": "高校の範囲の問題文は number of elements の形で書ける。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "number-of-elements",
-      "field": "pitfalls[1]",
-      "sentence": "高校の「要素の個数」の意味だけなら number of elements でよい。",
+      "sentence": "高等学校学習指導要領解説は、要素の個数の関係式 n(A ∪ B) = n(A) + n(B) − n(A ∩ B) を数学A（場合の数と確率）で扱う。",
       "g1": false
     },
     {
@@ -3028,16 +3070,16 @@
     {
       "collection": "terms",
       "id": "proposition",
-      "field": "mapping_note",
-      "sentence": "日本の「命題」は真か偽かがはっきり決まる文や式。",
+      "field": "pitfalls[1]",
+      "sentence": "「x > 3」のように変数の値で真偽が変わるものは、センター試験（平成 30 年度 数学I・A）・共通テスト（令和 3 年度 数学I・A）は「実数 x に関する次の条件 p, q」のように「条件」と呼んで命題と区別する（エントリ condition）。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "proposition",
-      "field": "pitfalls[1]",
-      "sentence": "「x > 3」のように変数の値で真偽が変わるものは、日本の教科書では「条件」と呼んで命題と区別する。",
-      "g1": true
+      "field": "pitfalls[2]",
+      "sentence": "日本語版 Wikipedia「命題」は命題を真偽が確定した言明と定義し、高等学校学習指導要領解説（数学I 集合と命題）は命題の真偽と「条件や結論」を扱う。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -3113,8 +3155,15 @@
       "collection": "terms",
       "id": "quadratic-inequality",
       "field": "pitfalls[0]",
-      "sentence": "日本の答案は −2 < x < 3 のように不等式で書くが、英語の答案では区間記法 (−2, 3) で書くこともある。",
-      "g1": true
+      "sentence": "共通テスト・センター試験の問題文と正解は解を −2 < x < 3 のように不等式で書き、OpenStax Intermediate Algebra（Solve Quadratic Inequalities）は解を区間記法 (−2, 3) で書く。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "quadratic-inequality",
+      "field": "pitfalls[1]",
+      "sentence": "共通テスト・センター試験（平成 30 年度 数学II）は解を x < −2, 2 < x のように読点で並べ、この読点は「または」の意味。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -3230,20 +3279,6 @@
     },
     {
       "collection": "terms",
-      "id": "real-number",
-      "field": "pitfalls[1]",
-      "sentence": "日本の「自然数」は 1 から始まる。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "real-number",
-      "field": "pitfalls[1]",
-      "sentence": "英語の natural numbers は 0 を含めるかどうかが教科書による。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "recurrence-relation",
       "field": "mapping_note",
       "sentence": "日本の「漸化式」はどちらにも当たる。",
@@ -3352,6 +3387,20 @@
       "id": "resistant-statistic",
       "field": "mapping_note",
       "sentence": "見出しの「抵抗性がある」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "restricted-domain",
+      "field": "mapping_note",
+      "sentence": "見出しの「定義域の制限」は学習指導要領解説に無い（日本語版 Wikipedia「定義域」の節「定義域の制限と延長」にはある）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "restricted-domain",
+      "field": "mapping_note",
+      "sentence": "高等学校学習指導要領解説は同じ内容を「区間が制限された関数の最大値や最小値」（数学II 微分）、逆関数は「元の関数が 1 対 1 の対応であるとき」（数学III）と書く。",
       "g1": false
     },
     {
@@ -3658,8 +3707,8 @@
     {
       "collection": "terms",
       "id": "side-angle-inequality",
-      "field": "pitfalls[1]",
-      "sentence": "数I では「最大の角」を求める問題で使う。",
+      "field": "mapping_note",
+      "sentence": "見出しの英語 side-angle inequality と日本語の「三角形の辺と角の大小」は本プロジェクトの言い方で、学習指導要領解説・日本語版 Wikipedia に無い。",
       "g1": false
     },
     {
@@ -3820,8 +3869,8 @@
       "collection": "terms",
       "id": "solution-set",
       "field": "pitfalls[0]",
-      "sentence": "区間の記法 (2, 3)、[1, ∞) は日本の高校の教科書では使わない（2 < x < 3、x ≧ 1 と書く）。",
-      "g1": true
+      "sentence": "区間の記法 (2, 3)、[1, ∞) は、高等学校学習指導要領解説では数学III の積分に閉区間 [a, b] が出てくる程度で、共通テストの問題文は 2 < x < 3、x ≧ 1 と不等式で書く（慣習差 interval-notation-vs-inequalities）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -3856,13 +3905,6 @@
       "id": "special-right-triangles",
       "field": "mapping_note",
       "sentence": "見出しの「特別な直角三角形」は学習指導要領解説に無い、本プロジェクトの訳語。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "split-into-cases",
-      "field": "mapping_note",
-      "sentence": "数 I の「軸の位置で場合分けする」は、英語で説明するなら頂点（軸）が区間の左・内側・右のどこにあるかで cases を分ける、という言い方になる。",
       "g1": false
     },
     {
@@ -3931,6 +3973,13 @@
     {
       "collection": "terms",
       "id": "standard-form",
+      "field": "mapping_note",
+      "sentence": "見出しの「一般形」は学習指導要領解説に無い（日本語版 Wikipedia「二次関数」にはある）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "standard-form",
       "field": "pitfalls[0]",
       "sentence": "日本の「一般形」を standard form と訳すと、日本の「標準形」a(x − h)² + k の意味に取られることがある（OpenStax Algebra and Trigonometry の standard form はこちら）。",
       "g1": false
@@ -3960,7 +4009,7 @@
       "collection": "terms",
       "id": "statistical-variable",
       "field": "mapping_note",
-      "sentence": "日本の数I「データの分析」では、データの項目（身長・点数など）を変量と呼び、式の文字の「変数」と言葉を分ける。",
+      "sentence": "高等学校学習指導要領解説（数学I データの分析）はデータの項目（身長・点数など）を変量と呼び（共通テストも「英語の得点を変量 x」のように書く）、式の文字の「変数」とは言葉を分ける。",
       "g1": false
     },
     {
@@ -3975,6 +4024,13 @@
       "id": "straight-angle",
       "field": "pitfalls[0]",
       "sentence": "用例コーパスの話し言葉では straight angle はほとんどが Khan Academy の中学の講義。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "stretch-vertically",
+      "field": "mapping_note",
+      "sentence": "日本語の「縦に伸縮する」「y 軸方向に拡大・縮小する」は両方を指す（高等学校学習指導要領解説（数学III 式と曲線）は、中心が原点で半径 a の円を「y 軸方向に b/a 倍して」楕円の標準形を導く、と拡大も縮小も一つの言い方で書く）。",
       "g1": false
     },
     {
@@ -3995,14 +4051,7 @@
       "collection": "terms",
       "id": "subset",
       "field": "pitfalls[1]",
-      "sentence": "日本の教科書の ⊂ は A = B の場合も含む。",
-      "g1": true
-    },
-    {
-      "collection": "terms",
-      "id": "subset",
-      "field": "pitfalls[1]",
-      "sentence": "英語の本では ⊆ と ⊂（真部分集合）を書き分けるものと、⊂ だけを使うものがあり、記号は教科書による。",
+      "sentence": "共通テスト（平成 26 年度 数学I・A）は「集合 X が集合 Y の部分集合であるとき X ⊂ Y と表す」と定め、A = B の場合も ⊂ で書く。",
       "g1": false
     },
     {
@@ -4031,6 +4080,20 @@
       "id": "summation-notation",
       "field": "pitfalls[0]",
       "sentence": "センター試験（数学Ⅱ・数学Ｂ）の数列の問題は Σ_{k=1}^{n} のように添字に k を使う（慣習差 summation-index-letter）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "supplementary-angle-identity",
+      "field": "mapping_note",
+      "sentence": "高等学校学習指導要領解説（数学I）は cos A = −cos(180° − A) の形で公式を示すだけで名前を付けない。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "supplementary-angle-identity",
+      "field": "mapping_note",
+      "sentence": "見出しの「180° − θ の三角比」は学習指導要領解説に無い（日本語版 Wikipedia「三角関数」は補角公式）。",
       "g1": false
     },
     {
@@ -4065,7 +4128,7 @@
       "collection": "terms",
       "id": "system-of-inequalities",
       "field": "pitfalls[2]",
-      "sentence": "system of inequalities は、OpenStax では 2 変数の不等式の組をグラフで解く節（Elementary Algebra の Graphing Systems of Linear Inequalities ほか）の言い方で、数II の「連立不等式の表す領域」に当たる（書き言葉では OpenStax Elementary Algebra と OpenStax Algebra and Trigonometry に出てくるが、話し言葉にはほとんど出てこない）。",
+      "sentence": "system of inequalities は、OpenStax では 2 変数の不等式の組をグラフで解く節（Elementary Algebra の Graphing Systems of Linear Inequalities ほか）の言い方で、高等学校学習指導要領解説（数学II 図形と方程式）の「不等式の表す領域」（慣習差 inequality-terms-scope、エントリ system-of-linear-inequalities）に当たる（書き言葉では OpenStax Elementary Algebra と OpenStax Algebra and Trigonometry に出てくるが、話し言葉にはほとんど出てこない）。",
       "g1": false
     },
     {
@@ -4094,6 +4157,20 @@
       "id": "system-of-linear-inequalities",
       "field": "pitfalls[1]",
       "sentence": "日本の数I の「連立不等式」は 1 変数の不等式の組で、英語では compound inequality と言う（エントリ system-of-inequalities）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "table-of-trigonometric-ratios",
+      "field": "mapping_note",
+      "sentence": "高等学校学習指導要領解説（数学I 内容の取扱い）は「三角比表」を積極的に利用すると書き、共通テスト（令和 4・6 年度 数学I 第2問）は問題冊子に「三角比の表」を付ける。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "table-of-trigonometric-ratios",
+      "field": "mapping_note",
+      "sentence": "IM の表は自分たちで測って作る直角三角形の比の表で、日本の三角比の表（0° から 90° の値の表）とは作りが違う。",
       "g1": false
     },
     {
@@ -4157,6 +4234,13 @@
       "id": "total-distance-traveled",
       "field": "pitfalls[0]",
       "sentence": "数IIIの「道のり」に当たる。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "transformation-of-a-variable",
+      "field": "mapping_note",
+      "sentence": "見出しの「変量の変換」は学習指導要領解説に無く、共通テスト（平成 31 年度 数学I・A 第2問、令和 5 年度 数学I・A）は「(x_i − x̄)/s と変換した」「千円単位に変換する」と動詞で言う。",
       "g1": false
     },
     {
@@ -4226,7 +4310,7 @@
       "collection": "terms",
       "id": "trigonometric-identities",
       "field": "mapping_note",
-      "sentence": "日本の「相互関係」は同じ角の sin・cos・tan の 3 つの関係式（sin²θ + cos²θ = 1、tan θ = sin θ / cos θ、1 + tan²θ = 1/cos²θ）を指す。",
+      "sentence": "高等学校学習指導要領解説（数学I）の「三角比の基本的な相互関係」は、sin A = cos(90° − A)・cos A = sin(90° − A)、tan A = sin A / cos A、sin²A + cos²A = 1、1 + tan²A = 1/cos²A と、180° − A の三角比の関係を含む（数学II は「三角関数の相互関係」）。",
       "g1": false
     },
     {
@@ -4240,8 +4324,8 @@
       "collection": "terms",
       "id": "trigonometric-identities",
       "field": "pitfalls[0]",
-      "sentence": "日本の高校では sec を使わない。",
-      "g1": true
+      "sentence": "学習指導要領解説には sec（正割）が出てこない。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -4253,15 +4337,8 @@
     {
       "collection": "terms",
       "id": "trigonometric-ratio",
-      "field": "pitfalls[3]",
-      "sentence": "数I の三角比は、直角三角形の鋭角で定めてから、座標を使って 0° ≦ θ ≦ 180° まで広げる。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "trigonometric-ratio",
-      "field": "pitfalls[3]",
-      "sentence": "数II で一般角に広げたものが三角関数（trigonometric function）。",
+      "field": "pitfalls[2]",
+      "sentence": "高等学校学習指導要領解説では、数学I の三角比を直角三角形の鋭角で定めてから鈍角（0° ≦ θ ≦ 180°）まで広げ、数学II で一般角に広げたものを三角関数（trigonometric function）と呼ぶ。",
       "g1": false
     },
     {
@@ -4345,14 +4422,21 @@
       "collection": "terms",
       "id": "unit-circle",
       "field": "pitfalls[0]",
-      "sentence": "数I では単位円の上半分（0° ≦ θ ≦ 180°）を使って鈍角の sin・cos・tan を定める。",
+      "sentence": "高等学校学習指導要領解説（数学I 図形と計量）は単位円を使わず、座標平面の第 1 象限で原点を端点とする長さ α の線分 OP と点 P の座標 (α cos θ, α sin θ) で三角比を鈍角まで拡張する。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "unit-circle",
       "field": "pitfalls[0]",
-      "sentence": "全周を使って一般角に広げるのは数II。",
+      "sentence": "単位円を使うのは数学II の三角関数（共通テスト（令和 7 年度 数学II・B・C）は「単位円を用いて」と書く）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "unit-circle",
+      "field": "pitfalls[1]",
+      "sentence": "解説（数学I）の長さ α の線分 OP による定め方でも、単位円（α = 1）なら座標がそのまま (cos θ, sin θ) になる。",
       "g1": false
     },
     {
@@ -4360,6 +4444,13 @@
       "id": "universal-quantifier",
       "field": "pitfalls[1]",
       "sentence": "数I の「すべての…」の否定が「ある…でない」になるのと同じ規則。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "universal-set",
+      "field": "pitfalls[0]",
+      "sentence": "「全体集合」は共通テストの数学I 第1問（令和 3〜8 年度ほか）が「全体集合 U を…とする」と書く語で、学習指導要領解説には出てこない。",
       "g1": false
     },
     {
@@ -4401,21 +4492,21 @@
       "collection": "terms",
       "id": "venn-diagram",
       "field": "pitfalls[1]",
-      "sentence": "補集合の記号は日本の教科書では Ā。",
-      "g1": true
-    },
-    {
-      "collection": "terms",
-      "id": "vertex-form",
-      "field": "mapping_note",
-      "sentence": "日本の「標準形」y = a(x − p)² + q は英語の vertex form に当たる。",
+      "sentence": "補集合の記号は高等学校学習指導要領解説（数学I）では Ā、OpenStax Introductory Statistics では A′（エントリ complement）。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "vertex-form",
       "field": "mapping_note",
-      "sentence": "「標準形」を standard form と直訳すると食い違う: OpenStax Algebra and Trigonometry は a(x − h)² + k を quadratic function の standard form と呼び、vertex form とも呼ぶと書くが、ax² + bx + c（日本の一般形）を standard form と呼ぶ話し手もいる。",
+      "sentence": "高等学校学習指導要領解説（数学I）はこの形を y = a(x − p)² + q に変形して頂点 (p, q) に着目すると書き、名前は付けない（「標準形」は数学C の放物線・楕円の方程式に使う）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "vertex-form",
+      "field": "mapping_note",
+      "sentence": "見出しの「標準形」は学習指導要領解説に無い（日本語版 Wikipedia「二次関数」にはある）。",
       "g1": false
     },
     {
@@ -4429,8 +4520,8 @@
       "collection": "terms",
       "id": "vertex-form",
       "field": "pitfalls[1]",
-      "sentence": "英語では頂点を (h, k) と書き、日本の教科書の (p, q) と文字が違う。",
-      "g1": true
+      "sentence": "英語では頂点を (h, k) と書き、学習指導要領解説（数学I）や日本語版 Wikipedia「二次関数」の (p, q) と文字が違う。",
+      "g1": false
     },
     {
       "collection": "terms",

@@ -1,25 +1,23 @@
 # 米国側の主張の文で出典に当たる参照がないもの（Phase 5 の監査の前の機械の確かめ 3）
 
-作成: 2026-09-27 ／ `pnpm audit:claims`（scripts/audit/claims.ts）
+作成: 2026-09-26 ／ `pnpm audit:claims`（scripts/audit/claims.ts）
 
 対象の欄は日本側と同じ。米国側の主張（米国・アメリカ・AP・CED・College Board・英語圏・Calc I〜III・Calculus AB／BC）の文のうち、
 文の中に参照（CED・OpenStax・IM・CK-12・Nicholson・Levin・Wikipedia・topic の番号ほか）も用例コーパス（講義・話し言葉・書き言葉・Khan・MIT ほか）も名指ししないもの。
 
-- 米国側の主張の文で参照かコーパスを名指しするもの: 389 文（一覧にしない）
-- **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 13 項目・13 文**
-- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 51 項目・53 文
+- 米国側の主張の文で参照かコーパスを名指しするもの: 397 文（一覧にしない）
+- **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 11 項目・11 文**
+- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 49 項目・51 文
 
 ## A. エントリの出典にも参照がない
 
 | コレクション | id | 欄 | 文 |
 |---|---|---|---|
-| terms | arrange-by-the-variable-of-lowest-degree | mapping_note | いちばん近い米国の手法は factoring by grouping（項をまとめて共通因数をくくる）だが、同じ手法ではない。 |
 | terms | auxiliary-angle-form | mapping_note | 米国では write a sin θ + b cos θ as a single sine function（R sin(θ + α) の形に書く）と手順で言う。 |
 | terms | cauchy-schwarz-inequality | pitfalls[0] | 米国の高校課程では名前を出さず、ベクトルの \|u · v\| ≤ \|u\|\|v\| として触れる程度。 |
 | terms | equivalence-relation | pitfalls[0] | 米国の Geometry で習う reflexive property などは、等号や合同についての同じ性質の名前。 |
 | terms | nth-roots-of-unity | pitfalls[1] | 数II の 1 の 3 乗根 ω（ω² + ω + 1 = 0、ω³ = 1）は、英語でも cube roots of unity と呼び、ω（omega）の記号を使うが、米国の高校課程では ω に決まった呼び名や性質の練習はほぼない。 |
 | terms | postulate | mapping_note | 米国の Geometry では証明の前提を postulate と呼び、名前付きで使う（segment addition postulate、parallel postulate など）。 |
-| terms | transformation-of-a-variable | pitfalls[1] | AP Statistics では、散布図が曲がっているとき y の対数をとるなどして直線に近づけることも transforming data と言う。 |
 | terms | vector-equation-of-a-circle | mapping_note | 米国の教科書は円を (x − h)² + (y − k)² = r² の形で扱い、ベクトル方程式としては立てない。 |
 | symbols | combination-ncr | notes[0] | 日本の教科書は ₙCᵣ と書き、米国の教科書は C(n, r)、ₙCᵣ、または縦に並べた二項係数 (n over r) の形で書く。 |
 | symbols | mixed-number | notes[1] | 米国の Pre-Algebra の教材は帯分数を使い続ける。 |
@@ -35,8 +33,6 @@
 | terms | angle-addition-formulas | pitfalls[0] | 値を「求めよ」は、米国の問題では find the exact value（小数ではなく正確な値）と書くことが多い。 | OpenStax Algebra and Trigonometry 2e |
 | terms | angle-sum-of-a-triangle | mapping_note | 日本語は「三角形の内角の和」という量の名前で言うが、米国の Geometry はこれを定理の名前 triangle sum theorem（triangle angle sum theorem）で呼ぶ。 | CK-12 Geometry (K12 LibreTexts) |
 | terms | arc-measure | mapping_note | 米国の Geometry では弧 AB の度数を、AB の上に弧の記号を付けた記号に m を添えて書き、中心角と同じ度数で表す（長さの arc length とは別）。 | Illustrative Mathematics, IM 9–12 Math (Geometry); CK-12 Geometry (K12 LibreTexts) |
-| terms | axiom | pitfalls[0] | 米国の Geometry の授業では、ユークリッド幾何の公理を postulate と呼ぶ。 | OpenStax Introductory Statistics 2e |
-| terms | conditional-statement | mapping_note | 英語では論理・離散数学が implication、米国の Geometry の教科書が conditional statement（if-then statement）と呼ぶ。 | Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition |
 | terms | congruence-criteria | mapping_note | 米国の Geometry は SSS・SAS・ASA に AAS と直角三角形の HL を加え、それぞれを定理（theorem）や公準（postulate）として名前で呼ぶ（エントリ sss-congruence、sas-congruence、asa-congruence、aas-congruence、hl-congruence）。 | Illustrative Mathematics, IM 9–12 Math (Geometry); 中学校学習指導要領（平成29年告示）解説 数学編 |
 | terms | corollary | pitfalls[1] | 米国式の発音は第 1 音節に強勢（COR-uh-lair-ee。Merriam-Webster: ˈkȯr-ə-ˌler-ē、英国式は kə-ˈrä-lə-rē）。 | OpenStax Calculus Volume 1; OpenStax Algebra and Trigonometry 2e; Merriam-Webster「corollary」 |
 | terms | corresponding-angles-postulate | mapping_note | 米国の教科書では公準（postulate）とするものと定理（theorem）とするものがある。 | CK-12 Geometry (K12 LibreTexts) |

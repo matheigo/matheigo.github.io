@@ -6,18 +6,21 @@
     "alt": []
   },
   "en": {
-    "term": "conditions that determine a triangle",
-    "alt": [],
+    "term": "determine a unique triangle",
+    "alt": [
+      "conditions that determine a triangle"
+    ],
     "uk": null
   },
-  "pos": "noun",
+  "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（determine a triangle も用例コーパスには話・書とも出てこない）。英語では同じ事実を合同条件の名前 SSS（3 辺）・SAS（2 辺とその間の角）・ASA（1 辺とその両端の角）で言う。この条件がそろえば三角形は 1 つに決まる、という言い方になる。",
+  "mapping_note": "名詞の「決定条件」に当たる語は用例コーパスと参照に出てこない。IM Grade 7（7.9・7.10 Drawing Triangles）は「どの測定値の組が三角形をただ 1 つに決めるか」を determine one unique triangle と言い、IM Geometry（2.4・2.11・2.12）は define a unique triangle と言う。IM Geometry・CK-12 Geometry は同じ事実を合同条件 SSS・SAS・ASA として扱う。高等学校学習指導要領解説（数学I）は正弦定理・余弦定理を三角形の決定条件と関連付けて理解すると書き、中学校学習指導要領解説（第 2 学年）は合同条件を三角形の決定条件を基に認めると書く。",
   "domains": [
     "trigonometry"
   ],
   "level": {
     "jp": [
+      "中2",
       "数I"
     ],
     "us": [
@@ -39,6 +42,11 @@
       "en": "State the conditions that determine a triangle, and explain why two sides and a non-included angle are not enough.",
       "ja": "三角形の決定条件を述べ、2 辺とその間にない角では足りない理由を説明せよ。",
       "register": "written"
+    },
+    {
+      "en": "Which of the given sets of measurements determine a unique triangle?",
+      "ja": "与えられた測定値の組のうち、三角形がただ 1 つに決まるのはどれか。",
+      "register": "written"
     }
   ],
   "collocations": [],
@@ -51,11 +59,33 @@
     "congruent",
     "similar-triangles",
     "law-of-sines",
-    "law-of-cosines"
+    "law-of-cosines",
+    "congruence-criteria"
   ],
   "sources": [
     {
-      "type": "editorial"
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7)",
+      "url": "https://im.kendallhunt.com/MS/students/2/index.html",
+      "note": "7.9・7.10 Drawing Triangles: determine one unique triangle（3 件）、unique triangle（10 件）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "2.4・2.11・2.12: define a unique triangle（4 件）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 図形と計量: 正弦定理や余弦定理について三角形の決定条件や三平方の定理と関連付けて理解（4 件）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 2 学年 図形: 合同条件を三角形の決定条件を基に認める（1 件）"
     }
   ],
   "confidence": "likely",
@@ -71,8 +101,8 @@
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 determine a unique triangle | determine one unique triangle | define a unique triangle（Geometry 2.11 Side-Side-Angle (Sometimes) Congruence・Grade 7 7.9 Drawing Triangles (Part 1)・Grade 7 7.10 Drawing Triangles (Part 2)・計 4 件）。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

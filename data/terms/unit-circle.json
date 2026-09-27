@@ -18,16 +18,17 @@
   ],
   "level": {
     "jp": [
-      "数I"
+      "数I",
+      "数II"
     ],
     "us": [
-      "Geometry",
+      "Algebra 2",
       "Precalculus",
       "Integrated Math 3"
     ]
   },
   "definition_ja": "原点を中心とする半径 1 の円。円周上の点の x 座標を cos θ、y 座標を sin θ として三角比・三角関数を定める。",
-  "definition_en": "The circle of radius 1 centered at the origin. For the point on it at angle θ, the x-coordinate is cos θ and the y-coordinate is sin θ.",
+  "definition_en": "The circle with center at the origin and radius 1. For the point on it at angle θ, the x-coordinate is cos θ and the y-coordinate is sin θ.",
   "latex": "x^2 + y^2 = 1",
   "spoken_en": "x squared plus y squared equals one",
   "examples": [
@@ -44,8 +45,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "数I では単位円の上半分（0° ≦ θ ≦ 180°）を使って鈍角の sin・cos・tan を定める。全周を使って一般角に広げるのは数II。",
-    "半径 r の半円で定める教科書もあるが、単位円なら座標がそのまま (cos θ, sin θ) になる。tan θ は y/x で、θ = 90° では定まらない。"
+    "高等学校学習指導要領解説（数学I 図形と計量）は単位円を使わず、座標平面の第 1 象限で原点を端点とする長さ α の線分 OP と点 P の座標 (α cos θ, α sin θ) で三角比を鈍角まで拡張する。単位円を使うのは数学II の三角関数（共通テスト（令和 7 年度 数学II・B・C）は「単位円を用いて」と書く）。",
+    "解説（数学I）の長さ α の線分 OP による定め方でも、単位円（α = 1）なら座標がそのまま (cos θ, sin θ) になる。tan θ は y/x で、θ = 90° では定まらない。"
   ],
   "related": [
     "trigonometric-ratio",
@@ -67,6 +68,17 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 図形と計量: 鈍角の三角比。数学II 三角関数: 一般角"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "令和 7 年度 数学II・B・C: 単位円を用いて考える"
     }
   ],
   "confidence": "likely",
@@ -75,7 +87,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "unit circle": 302

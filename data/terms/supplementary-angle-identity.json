@@ -3,7 +3,9 @@
   "ja": {
     "term": "180° − θ の三角比",
     "reading": "ひゃくはちじゅうどまいなすしーたのさんかくひ",
-    "alt": []
+    "alt": [
+      "補角公式"
+    ]
   },
   "en": {
     "term": "supplementary angle identity",
@@ -12,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（supplementary angle identity は用例コーパスに出てこない）。見出しの supplementary angle identity は、cofunction identity にならった説明的な呼び方。英語で言うときは sin(180° − θ) = sin θ のように式をそのまま読むか、単位円上の点 (cos θ, sin θ) と (−cos θ, sin θ) が y 軸について対称であることで説明する。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（supplementary angle identity は用例コーパス・参照に出てこず、cofunction identity にならった本プロジェクトの説明的な呼び方）。OpenStax Algebra and Trigonometry は 180° − θ の三角比を reference angle（|180° − t|）で鋭角の三角比に直す。高等学校学習指導要領解説（数学I）は cos A = −cos(180° − A) の形で公式を示すだけで名前を付けない。見出しの「180° − θ の三角比」は学習指導要領解説に無い（日本語版 Wikipedia「三角関数」は補角公式）。",
   "domains": [
     "trigonometry"
   ],
@@ -56,6 +58,23 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Unit Circle: reference angle |180° − t|（reference angle 84 件）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 図形と計量: 鈍角の三角比 cos A = −cos(180° − A)（名前は無い）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「三角関数」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E9%96%A2%E6%95%B0",
+      "note": "節「負角・余角・補角公式」: 補角公式"
     }
   ],
   "confidence": "likely",

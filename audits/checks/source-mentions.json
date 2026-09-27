@@ -1,24 +1,10 @@
 {
- "entries": 166,
+ "entries": 165,
  "byConfidence": {
-  "likely": 165,
+  "likely": 164,
   "draft": 1
  },
  "rows": [
-  {
-   "collection": "terms",
-   "id": "aa-similarity",
-   "confidence": "likely",
-   "missing": [
-    {
-     "source": "yougo",
-     "named": "〔用語・記号〕",
-     "fields": [
-      "pitfalls[1]"
-     ]
-    }
-   ]
-  },
   {
    "collection": "terms",
    "id": "aas-congruence",
@@ -189,27 +175,6 @@
   },
   {
    "collection": "terms",
-   "id": "ascending-order",
-   "confidence": "likely",
-   "missing": [
-    {
-     "source": "im",
-     "named": "IM",
-     "fields": [
-      "pitfalls[0]"
-     ]
-    },
-    {
-     "source": "openstax:Elementary Algebra",
-     "named": "OpenStax Elementary Algebra",
-     "fields": [
-      "mapping_note"
-     ]
-    }
-   ]
-  },
-  {
-   "collection": "terms",
    "id": "bayes-theorem",
    "confidence": "likely",
    "missing": [
@@ -357,6 +322,20 @@
   },
   {
    "collection": "terms",
+   "id": "cofunction-identity",
+   "confidence": "likely",
+   "missing": [
+    {
+     "source": "exam",
+     "named": "共通テスト",
+     "fields": [
+      "pitfalls[1]"
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "terms",
    "id": "completely-randomized-design",
    "confidence": "likely",
    "missing": [
@@ -371,21 +350,14 @@
   },
   {
    "collection": "terms",
-   "id": "conditional-statement",
+   "id": "conditions-that-determine-a-triangle",
    "confidence": "likely",
    "missing": [
     {
      "source": "ck12",
      "named": "CK-12",
      "fields": [
-      "pitfalls[0]"
-     ]
-    },
-    {
-     "source": "im",
-     "named": "IM",
-     "fields": [
-      "pitfalls[0]"
+      "mapping_note"
      ]
     }
    ]
@@ -660,6 +632,20 @@
   },
   {
    "collection": "terms",
+   "id": "determine-the-coefficients",
+   "confidence": "likely",
+   "missing": [
+    {
+     "source": "kaisetsu:",
+     "named": "学習指導要領解説",
+     "fields": [
+      "pitfalls[0]"
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "terms",
    "id": "difference-quotient",
    "confidence": "likely",
    "missing": [
@@ -670,6 +656,20 @@
       "mapping_note"
      ]
     },
+    {
+     "source": "kaisetsu:",
+     "named": "学習指導要領解説",
+     "fields": [
+      "mapping_note"
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "terms",
+   "id": "direct-proof",
+   "confidence": "likely",
+   "missing": [
     {
      "source": "kaisetsu:",
      "named": "学習指導要領解説",
@@ -710,6 +710,20 @@
      "named": "学習指導要領解説",
      "fields": [
       "mapping_note"
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "terms",
+   "id": "endpoint",
+   "confidence": "likely",
+   "missing": [
+    {
+     "source": "im",
+     "named": "IM",
+     "fields": [
+      "pitfalls[0]"
      ]
     }
    ]
@@ -828,47 +842,12 @@
   },
   {
    "collection": "terms",
-   "id": "factored-form",
-   "confidence": "likely",
-   "missing": [
-    {
-     "source": "jawiki:二次関数",
-     "named": "日本語版 Wikipedia「二次関数」",
-     "fields": [
-      "mapping_note"
-     ]
-    },
-    {
-     "source": "kaisetsu:",
-     "named": "学習指導要領解説",
-     "fields": [
-      "mapping_note"
-     ]
-    }
-   ]
-  },
-  {
-   "collection": "terms",
    "id": "flowchart-proof",
    "confidence": "likely",
    "missing": [
     {
      "source": "kaisetsu:",
      "named": "学習指導要領解説",
-     "fields": [
-      "mapping_note"
-     ]
-    }
-   ]
-  },
-  {
-   "collection": "terms",
-   "id": "fractional-part",
-   "confidence": "likely",
-   "missing": [
-    {
-     "source": "im",
-     "named": "IM",
      "fields": [
       "mapping_note"
      ]
@@ -1098,8 +1077,22 @@
    "confidence": "likely",
    "missing": [
     {
-     "source": "ck12",
-     "named": "CK-12",
+     "source": "enwiki:Incircle and excircles",
+     "named": "英語版 Wikipedia「Incircle and excircles」",
+     "fields": [
+      "pitfalls[1]"
+     ]
+    },
+    {
+     "source": "openstax:",
+     "named": "OpenStax",
+     "fields": [
+      "pitfalls[1]"
+     ]
+    },
+    {
+     "source": "openstax:Calculus Volume 3",
+     "named": "OpenStax Calculus Volume 3（Curvature）",
      "fields": [
       "pitfalls[2]"
      ]
@@ -1157,6 +1150,20 @@
   },
   {
    "collection": "terms",
+   "id": "inverse",
+   "confidence": "likely",
+   "missing": [
+    {
+     "source": "kaisetsu:",
+     "named": "学習指導要領解説",
+     "fields": [
+      "mapping_note"
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "terms",
    "id": "isomorphism",
    "confidence": "likely",
    "missing": [
@@ -1193,6 +1200,27 @@
      "named": "学習指導要領解説",
      "fields": [
       "mapping_note"
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "terms",
+   "id": "law-of-sines",
+   "confidence": "likely",
+   "missing": [
+    {
+     "source": "ck12",
+     "named": "CK-12",
+     "fields": [
+      "pitfalls[0]"
+     ]
+    },
+    {
+     "source": "im",
+     "named": "IM",
+     "fields": [
+      "pitfalls[0]"
      ]
     }
    ]
@@ -1311,20 +1339,6 @@
   },
   {
    "collection": "terms",
-   "id": "logical-connective",
-   "confidence": "likely",
-   "missing": [
-    {
-     "source": "levin",
-     "named": "Levin",
-     "fields": [
-      "pitfalls[2]"
-     ]
-    }
-   ]
-  },
-  {
-   "collection": "terms",
    "id": "logistic-growth",
    "confidence": "likely",
    "missing": [
@@ -1423,6 +1437,20 @@
   },
   {
    "collection": "terms",
+   "id": "necessary-condition",
+   "confidence": "likely",
+   "missing": [
+    {
+     "source": "ced:",
+     "named": "AP Calculus の CED",
+     "fields": [
+      "pitfalls[1]"
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "terms",
    "id": "negative-reciprocal",
    "confidence": "likely",
    "missing": [
@@ -1478,6 +1506,20 @@
     {
      "source": "kaisetsu:",
      "named": "学習指導要領解説",
+     "fields": [
+      "mapping_note"
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "terms",
+   "id": "number-of-elements",
+   "confidence": "likely",
+   "missing": [
+    {
+     "source": "openstax:Precalculus",
+     "named": "OpenStax Precalculus",
      "fields": [
       "mapping_note"
      ]
@@ -2018,6 +2060,20 @@
   },
   {
    "collection": "terms",
+   "id": "side-angle-inequality",
+   "confidence": "likely",
+   "missing": [
+    {
+     "source": "kaisetsu:",
+     "named": "学習指導要領解説",
+     "fields": [
+      "mapping_note"
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "terms",
    "id": "sign-chart-inequality",
    "confidence": "likely",
    "missing": [
@@ -2080,20 +2136,6 @@
     {
      "source": "kaisetsu:",
      "named": "学習指導要領解説",
-     "fields": [
-      "mapping_note"
-     ]
-    }
-   ]
-  },
-  {
-   "collection": "terms",
-   "id": "space-diagonal",
-   "confidence": "likely",
-   "missing": [
-    {
-     "source": "im",
-     "named": "IM",
      "fields": [
       "mapping_note"
      ]
@@ -2165,27 +2207,6 @@
   },
   {
    "collection": "terms",
-   "id": "standard-form",
-   "confidence": "likely",
-   "missing": [
-    {
-     "source": "openstax:Elementary Algebra",
-     "named": "OpenStax Elementary Algebra",
-     "fields": [
-      "mapping_note"
-     ]
-    },
-    {
-     "source": "openstax:Intermediate Algebra",
-     "named": "OpenStax Intermediate Algebra",
-     "fields": [
-      "mapping_note"
-     ]
-    }
-   ]
-  },
-  {
-   "collection": "terms",
    "id": "standard-matrix",
    "confidence": "likely",
    "missing": [
@@ -2208,34 +2229,6 @@
      "named": "AP Statistics の CED",
      "fields": [
       "pitfalls[0]"
-     ]
-    }
-   ]
-  },
-  {
-   "collection": "terms",
-   "id": "statistical-hypothesis",
-   "confidence": "likely",
-   "missing": [
-    {
-     "source": "ced:stats",
-     "named": "AP Statistics の CED",
-     "fields": [
-      "pitfalls[2]"
-     ]
-    }
-   ]
-  },
-  {
-   "collection": "terms",
-   "id": "statistical-variable",
-   "confidence": "likely",
-   "missing": [
-    {
-     "source": "ced:stats",
-     "named": "AP Statistics の CED",
-     "fields": [
-      "pitfalls[2]"
      ]
     }
    ]
@@ -2463,8 +2456,8 @@
    "confidence": "likely",
    "missing": [
     {
-     "source": "levin",
-     "named": "Levin",
+     "source": "kaisetsu:",
+     "named": "学習指導要領解説",
      "fields": [
       "pitfalls[0]"
      ]
@@ -2600,20 +2593,6 @@
      "named": "OpenStax Introductory Statistics",
      "fields": [
       "us"
-     ]
-    }
-   ]
-  },
-  {
-   "collection": "conventions",
-   "id": "slope-intercept-form",
-   "confidence": "likely",
-   "missing": [
-    {
-     "source": "yougo",
-     "named": "〔用語・記号〕",
-     "fields": [
-      "jp"
      ]
     }
    ]

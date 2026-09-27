@@ -1505,7 +1505,7 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
     hypothesis:
       "hypothesis and conclusion | hypothesis and the conclusion | hypotheses of the theorem | hypothesis of the theorem | hypothesis of the conditional | hypothesis of the implication | hypothesis of an implication",
   },
-  "side-angle-inequality": { "side-angle inequality": "side-angle inequality | opposite the longer side | opposite the longest side" },
+
   "standard-form": {
     // 一般形 ax² + bx + c. "standard form" names both forms (OpenStax: a(x − h)² + k), so it is not counted
     "general form": "general form of a quadratic | quadratic function in general form | general form of the quadratic",
@@ -1579,6 +1579,18 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   unbiased: { unbiased: "unbiased sample | unbiased estimate | unbiased estimator | unbiased statistic" },
   // the ratio of the volumes of similar solids: IM's "surface area to volume ratio" is another concept (Phase 5 監査 4, batch 14)
   "ratio-of-volumes-of-similar-solids": { "volume ratio": "!to volume ratio" },
+  // Phase 5 監査 5 バッチ 16: the closing of a proof only. "as desired" closes OpenStax Calculus's proofs (", as desired." □),
+  // not "as small as desired"; "completes the proof" is the closing sentence, not "Complete the proof that …" (an exercise)
+  "end-of-proof": {
+    "as desired": "!small !large !close !accurate !accurately as desired. | !small !large !close !accurate !accurately as desired,",
+    "completes the proof": "this completes the proof !that !of | which completes the proof !that !of | completes the proof. | completes the proof, | completing the proof !that !of",
+  },
+  // negate in the logic sense (the captions' "negate each other" and "negate the sign" are other senses; CK-12 Geometry 2.10, Levin 1.3)
+  negate: { negate: "negate the statement | negate a statement | negate statements | negate complex statements | negate an atomic sentence | negate the original statement | negate both parts | negate a conjunction | negate a disjunction | negate for all | negate the hypothesis | negate p and q" },
+  // the CED's one "all necessary conditions are met" (a test's premises) is not the logic term
+  "necessary-condition": { "necessary condition": "!all necessary condition" },
+  // 三角形の決定条件: IM Grade 7 asks which measurements "determine one unique triangle", IM Geometry "define a unique triangle"
+  "conditions-that-determine-a-triangle": { "determine a unique triangle": "determine a unique triangle | determine one unique triangle | define a unique triangle" },
   // Phase 5 監査 5 バッチ 15: the bare "connective" must not count the "logical connective" it sits in
   // (CK-12 Geometry writes logical connective 18 times, connective alone twice)
   "logical-connective": { connective: "!logical connective" },

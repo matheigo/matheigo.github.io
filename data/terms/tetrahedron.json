@@ -3,7 +3,9 @@
   "ja": {
     "term": "四面体",
     "reading": "しめんたい",
-    "alt": []
+    "alt": [
+      "三角錐"
+    ]
   },
   "en": {
     "term": "tetrahedron",
@@ -14,15 +16,18 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
+    "geometry",
     "trigonometry"
   ],
   "level": {
     "jp": [
-      "数I"
+      "中1",
+      "数I",
+      "数A"
     ],
     "us": [
       "Geometry",
-      "Precalculus"
+      "Calculus III"
     ]
   },
   "definition_ja": "4 つの三角形の面で囲まれた立体。三角錐と同じ図形で、4 つの面がすべて正三角形のものを正四面体という。",
@@ -71,6 +76,17 @@
       "title": "Merriam-Webster「tetrahedron」",
       "url": "https://www.merriam-webster.com/dictionary/tetrahedron",
       "note": "発音 ˌte-trə-ˈhē-drən、複数形 tetrahedrons または tetrahedra（2026-09-26 に確かめた）"
+    },
+    {
+      "type": "wikipedia-langlink",
+      "ja": "三角錐",
+      "en": "Tetrahedron"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 1 学年 図形: 正四面体の模型・展開図"
     }
   ],
   "confidence": "likely",

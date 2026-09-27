@@ -20,7 +20,7 @@
       "数I"
     ],
     "us": [
-      "Geometry",
+      "Algebra 2",
       "Precalculus",
       "Integrated Math 3"
     ]
@@ -43,8 +43,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の正弦定理は「= 2R」（R は外接円の半径）まで含めて書く。R は英語で circumradius（外接円 circumcircle の半径）。",
-    "用例コーパスの話し言葉はすべて NancyPi（書き言葉はほとんどが OpenStax Algebra and Trigonometry）。英語版 Wikipedia「Law of sines」は sine rule ／ sine formula という別名も挙げる。",
+    "高等学校学習指導要領解説（数学I）の正弦定理は a/sin A = b/sin B = c/sin C = 2R（R は △ABC の外接円の半径）と、= 2R まで含めて書く。OpenStax Algebra and Trigonometry と Calculus Volume 1 は 2R を書かない。英語版 Wikipedia「Circumcircle」は外接円の半径を circumradius と呼ぶ（IM Geometry・CK-12 Geometry は circumcenter だけ。circumradius は参照と用例コーパスに出てこない）。",
+    "英語版 Wikipedia「Law of sines」は sine rule ／ sine formula という別名も挙げる。",
     "2 辺とその一方の対角から角を求めると、解が 2 つになることがある（ambiguous case）。"
   ],
   "related": [
@@ -73,6 +73,18 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Law_of_sines",
       "note": "記事「Law of sines」の冒頭: sine formula ／ sine rule とも呼ぶ（地域は書いていない）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 図形と計量: 正弦定理 a/sinA = b/sinB = c/sinC = 2R（R は外接円の半径）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Circumcircle",
+      "note": "半径 circumradius（三角形の外接円の記事。数学カテゴリから 5 段）"
     }
   ],
   "confidence": "likely",

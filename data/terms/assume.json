@@ -30,6 +30,7 @@
   ],
   "level": {
     "jp": [
+      "中2",
       "数I"
     ],
     "us": [
@@ -65,7 +66,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "Suppose … と Assume … はどちらも「〜と仮定する」。用例コーパスでは話し言葉 953 ／ 898、書き言葉 1082 ／ 768 と件数が近く、併記にした。",
+    "Suppose … と Assume … はどちらも「〜と仮定する」。用例コーパスでは話し言葉も書き言葉も件数が近く、併記にした。",
     "名詞の「仮定」は assumption。命題「p ならば q」の p（仮定）は hypothesis と呼ぶ。",
     "that は省略できる（Suppose x > 0. ／ Assume n is even.）。"
   ],
@@ -83,6 +84,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 2 学年 図形: 命題は「仮定」と「結論」からなる、仮定から結論を導く（仮定 15 件）"
     }
   ],
   "confidence": "likely",
@@ -91,7 +98,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "assume": 1067,

@@ -23,11 +23,12 @@
     ],
     "us": [
       "Geometry",
-      "Discrete Math"
+      "Discrete Math",
+      "Intro Statistics"
     ]
   },
-  "definition_ja": "集合を円などの閉じた図形で表し、共通部分・和集合・補集合の関係を目で見えるようにした図。全体集合は長方形で表すことが多い。",
-  "definition_en": "A diagram that shows sets as overlapping circles or other closed shapes, usually inside a rectangle for the universal set, so that intersections, unions, and complements can be seen at a glance.",
+  "definition_ja": "集合を円などの閉じた図形で表し、共通部分・和集合・補集合の関係を目で見えるようにした図。全体集合を長方形で囲み、その中に集合を円などでかく。",
+  "definition_en": "A diagram that shows sets as overlapping circles or other closed shapes, inside a rectangle that stands for the universal set, so that intersections, unions, and complements can be seen at a glance.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -45,7 +46,7 @@
   "collocations": [],
   "pitfalls": [
     "Venn は人名なので大文字で書く（Venn diagram）。",
-    "補集合の記号は日本の教科書では Ā。英語の本では A′ や Aᶜ と書くものもある。「斜線を引く」は shade。"
+    "補集合の記号は高等学校学習指導要領解説（数学I）では Ā、OpenStax Introductory Statistics では A′（エントリ complement）。「斜線を引く」は shade。"
   ],
   "related": [
     "set",
@@ -63,6 +64,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 集合と命題: 集合の記号 Ā（A の補集合）"
     }
   ],
   "confidence": "likely",
@@ -71,7 +78,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "Venn diagram": 10

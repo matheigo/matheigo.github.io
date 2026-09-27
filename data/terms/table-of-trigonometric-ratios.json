@@ -3,18 +3,22 @@
   "ja": {
     "term": "三角比の表",
     "reading": "さんかくひのひょう",
-    "alt": []
+    "alt": [
+      "三角比表"
+    ]
   },
   "en": {
-    "term": "table of trigonometric ratios",
+    "term": "right triangle table",
     "alt": [
-      "trig table"
+      "trigonometric table",
+      "trigonometry table",
+      "table of trigonometric ratios"
     ],
     "uk": null
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスには table of trigonometric ratios も trig table も話・書とも出てこない）。英語で言うときは「sin・cos・tan の値の表」のように説明的に言う。",
+  "mapping_note": "IM Geometry（4.6 Working with Trigonometric Ratios・4.9）は right triangle table と呼び、trigonometry table とも言う（1 件）。英語版 Wikipedia の記事名は Trigonometric table。用例コーパスにはどの言い方も出てこない。高等学校学習指導要領解説（数学I 内容の取扱い）は「三角比表」を積極的に利用すると書き、共通テスト（令和 4・6 年度 数学I 第2問）は問題冊子に「三角比の表」を付ける。IM の表は自分たちで測って作る直角三角形の比の表で、日本の三角比の表（0° から 90° の値の表）とは作りが違う。",
   "domains": [
     "trigonometry"
   ],
@@ -23,8 +27,7 @@
       "数I"
     ],
     "us": [
-      "Geometry",
-      "Precalculus"
+      "Geometry"
     ]
   },
   "definition_ja": "0° から 90° までの角について、sin・cos・tan の値の近似値をまとめた表。",
@@ -33,8 +36,8 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "Grab the trig table and look up tan 25°; it should be about 0.4663.",
-      "ja": "三角比の表で tan 25° を引いてごらん。0.4663 くらいになるはずだ。",
+      "en": "Look it up in the right triangle table: tan 25° is about 0.4663.",
+      "ja": "三角比の表で tan 25° を引いてごらん。0.4663 くらいだ。",
       "register": "spoken"
     },
     {
@@ -57,7 +60,27 @@
   ],
   "sources": [
     {
-      "type": "editorial"
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "4.6 Working with Trigonometric Ratios・4.9 Using Trigonometric Ratios to Find Angles: right triangle table（6 件）、trigonometry table（1 件）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Trigonometric_table",
+      "note": "記事「Trigonometric table」（数学カテゴリから 4 段。冒頭で太字）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 内容の取扱い: 三角比表を積極的に利用する（2 件）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "令和 4・6 年度 数学I 第2問: 問題冊子の三角比の表"
     }
   ],
   "confidence": "likely",
@@ -73,8 +96,8 @@
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 right triangle table（Geometry 4.6 Working with Trigonometric Ratios・Geometry 4.4 Ratios in Right Triangles・Geometry 4.9 Using Trigonometric Ratios to Find Angles・計 6 件）。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

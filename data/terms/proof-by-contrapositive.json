@@ -9,9 +9,7 @@
   },
   "en": {
     "term": "proof by contrapositive",
-    "alt": [
-      "proof by contraposition"
-    ],
+    "alt": [],
     "uk": null
   },
   "pos": "noun",
@@ -25,7 +23,6 @@
       "数I"
     ],
     "us": [
-      "Geometry",
       "Discrete Math"
     ]
   },
@@ -45,9 +42,13 @@
       "register": "spoken"
     }
   ],
-  "collocations": [],
+  "collocations": [
+    {
+      "en": "prove the contrapositive",
+      "ja": "対偶を証明する"
+    }
+  ],
   "pitfalls": [
-    "proof by contraposition とも言う。用例コーパスにはどちらも話・書とも出てこず、見出しは Levin（1.4 Proofs）の呼び方。",
     "背理法（proof by contradiction）と名前が似ているので聞き間違えない。contrapositive は対偶、contradiction は矛盾。"
   ],
   "related": [
@@ -70,16 +71,21 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
-    "sources": [],
-    "counted": "2026-09-25"
+    "written": {
+      "prove the contrapositive": 4
+    },
+    "sources": [
+      "mit-notes"
+    ],
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Levin の呼び方 proof by contrapositive（1.4 Proofs・2.2 Trees・6.2 Introduction to Number Theory）。register は主張しない。",
-      "raised": "2026-09-25"
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 4 件（10 未満））。見出しは Levin の呼び方 proof by contrapositive（1.4 Proofs・2.2 Trees・6.2 Introduction to Number Theory）。register は主張しない。",
+      "raised": "2026-09-26"
     }
   ]
 }

@@ -2,8 +2,8 @@
 
 作成: 2026-09-26 ／ `python3 scripts/audit/reference_names.py`。参照（CK-12・IM・CED・Nicholson・Levin・OpenStax 9 冊）の本文と節の名前から「… Theorem ／ Postulate ／ Property ／ Rule ／ Law ／ Test」の名前を機械で抜き出し、terms の en.term・en.alt・en.variants と突き合わせた（規則は scripts/audit/reference_names.py の説明）。本文は写さず、名前・件数・節の名前だけ。
 
-- 名前: **726**（見出しと一致 128、一致しない 433。うち監査が判断した名前 217、未判断 216）
-- **監査で見る**（同じ概念のエントリがあるのに、参照の名前が en・alt・variants に無い）: **55**（scripts/audit/reference_names_same.json。各語の監査で、参照の名前を en.alt か variant に入れるか、見出しにするか（参照が 3 件以上使う呼び方は見出し。STYLE 原則 1 ③）を決める）
+- 名前: **726**（見出しと一致 129、一致しない 433。うち監査が判断した名前 217、未判断 216）
+- **監査で見る**（同じ概念のエントリがあるのに、参照の名前が en・alt・variants に無い）: **54**（scripts/audit/reference_names_same.json。各語の監査で、参照の名前を en.alt か variant に入れるか、見出しにするか（参照が 3 件以上使う呼び方は見出し。STYLE 原則 1 ③）を決める）
 - 関連する名前（別の概念だが、エントリの mapping_note ／ pitfalls で触れる候補。alt にはしない）: **110**
 
 ## 監査で見る: 同じ概念のエントリがあるのに、参照の名前が en・alt・variants に無いもの
@@ -34,7 +34,6 @@
 | Fubini’s Theorem for Spherical Coordinates | OpenStax Calculus Volume 3 1 | OpenStax Calculus Volume 3: Triple Integrals in Cylindrical and Spherical Coordinates | fubinis-theorem（フビニの定理） | likely | OpenStax Calculus Volume 3 の Fubini's Theorem for Improper ／ Triple Integrals、for Spherical Coordinates |
 | Fubini’s Theorem for Triple Integrals | OpenStax Calculus Volume 3 1 | OpenStax Calculus Volume 3: Triple Integrals | fubinis-theorem（フビニの定理） | likely | OpenStax Calculus Volume 3 の Fubini's Theorem for Improper ／ Triple Integrals、for Spherical Coordinates |
 | HL Theorem | CK-12 Geometry 2 | CK-12 Geometry: 4.16 HL | hl-congruence（斜辺と他の 1 辺がそれぞれ等しい） | likely | CK-12 の HL Theorem |
-| Generalized Pythagorean Theorem | OpenStax Algebra and Trigonometry 2e 2、OpenStax Precalculus 2e 2 | OpenStax Algebra and Trigonometry 2e: Non-right Triangles: Law of Cosines、OpenStax Precalculus 2e: Non-right Triangles: Law of Cosines | law-of-cosines（余弦定理） | likely | OpenStax Algebra and Trigonometry・Precalculus は余弦定理を Generalized Pythagorean Theorem とも呼ぶ |
 | Exponent Properties | OpenStax Elementary Algebra 2e 8、OpenStax Prealgebra 2e 6、OpenStax Intermediate Algebra 2e 2 | OpenStax Prealgebra 2e: Integer Exponents and Scientific Notation ／ Use Multiplication Properties of Exponents ／ Divide Monomials、OpenStax Elementary Algebra 2e: Rational Exponents ／ Divide Monomials ／ Integer Exponents and Scientific Notation、OpenStax Intermediate Algebra 2e: Properties of Exponents and Scientific Notation | laws-of-exponents（指数法則） | likely | OpenStax の Exponent Properties・Laws of Exponents |
 | Algebra Laws of Exponents | OpenStax Calculus Volume 1 1、OpenStax Calculus Volume 2 1、OpenStax Calculus Volume 3 1 | OpenStax Calculus Volume 1: Review of Pre-Calculus、OpenStax Calculus Volume 2: Review of Pre-Calculus、OpenStax Calculus Volume 3: Review of Pre-Calculus | laws-of-exponents（指数法則） | likely | OpenStax の Exponent Properties・Laws of Exponents |
 | chain rule for functions of | OpenStax Calculus Volume 3 4 | OpenStax Calculus Volume 3: The Chain Rule ／ Directional Derivatives and the Gradient | multivariable-chain-rule（多変数の連鎖律） | likely | OpenStax Calculus Volume 3 の chain rule for functions of two ／ three variables |
@@ -145,11 +144,11 @@
 | Multiplication Properties of Equality | OpenStax Elementary Algebra 2e 9、OpenStax Prealgebra 2e 7 | properties-of-equality（等式の性質） | verified | 等式の性質の 1 つ 1 つの OpenStax・CK-12 の名前（Addition ／ Subtraction ／ Multiplication ／ Division Property of Equality） |
 | Division Properties of Equality | OpenStax Prealgebra 2e 7 | properties-of-equality（等式の性質） | verified | 等式の性質の 1 つ 1 つの OpenStax・CK-12 の名前（Addition ／ Subtraction ／ Multiplication ／ Division Property of Equality） |
 | Subtraction Properties of Equality | OpenStax Prealgebra 2e 4 | properties-of-equality（等式の性質） | verified | 等式の性質の 1 つ 1 つの OpenStax・CK-12 の名前（Addition ／ Subtraction ／ Multiplication ／ Division Property of Equality） |
-| Multiplication Properties of Inequality | OpenStax Elementary Algebra 2e 6 | properties-of-inequalities（不等式の性質） | likely | 不等式の性質の 1 つ 1 つの OpenStax の名前 |
-| Addition Properties of Inequality | OpenStax Elementary Algebra 2e 5 | properties-of-inequalities（不等式の性質） | likely | 不等式の性質の 1 つ 1 つの OpenStax の名前 |
-| Division Property of Inequality | OpenStax Intermediate Algebra 2e 3 | properties-of-inequalities（不等式の性質） | likely | 不等式の性質の 1 つ 1 つの OpenStax の名前 |
-| Subtraction Property of Inequality | OpenStax Intermediate Algebra 2e 2、OpenStax Elementary Algebra 2e 1 | properties-of-inequalities（不等式の性質） | likely | 不等式の性質の 1 つ 1 つの OpenStax の名前 |
-| addition property for inequalities | OpenStax Algebra and Trigonometry 2e 2 | properties-of-inequalities（不等式の性質） | likely | 不等式の性質の 1 つ 1 つの OpenStax の名前 |
+| Multiplication Properties of Inequality | OpenStax Elementary Algebra 2e 6 | properties-of-inequalities（不等式の性質） | verified | 不等式の性質の 1 つ 1 つの OpenStax の名前 |
+| Addition Properties of Inequality | OpenStax Elementary Algebra 2e 5 | properties-of-inequalities（不等式の性質） | verified | 不等式の性質の 1 つ 1 つの OpenStax の名前 |
+| Division Property of Inequality | OpenStax Intermediate Algebra 2e 3 | properties-of-inequalities（不等式の性質） | verified | 不等式の性質の 1 つ 1 つの OpenStax の名前 |
+| Subtraction Property of Inequality | OpenStax Intermediate Algebra 2e 2、OpenStax Elementary Algebra 2e 1 | properties-of-inequalities（不等式の性質） | verified | 不等式の性質の 1 つ 1 つの OpenStax の名前 |
+| addition property for inequalities | OpenStax Algebra and Trigonometry 2e 2 | properties-of-inequalities（不等式の性質） | verified | 不等式の性質の 1 つ 1 つの OpenStax の名前 |
 | Comparison Properties of Integrals | OpenStax Calculus Volume 1 1、OpenStax Calculus Volume 2 1 | properties-of-integrals（積分の性質） | verified | OpenStax Calculus の Comparison Properties of Integrals |
 | product rule for logarithms | OpenStax Algebra and Trigonometry 2e 11、OpenStax Precalculus 2e 11、Levin 1 | properties-of-logarithms（対数の性質） | likely | 対数の性質の 1 つ 1 つの OpenStax の名前（Product ／ Quotient ／ Power Property (Rule) of Logarithms） |
 | power rule for logarithms | OpenStax Algebra and Trigonometry 2e 10、OpenStax Precalculus 2e 10 | properties-of-logarithms（対数の性質） | likely | 対数の性質の 1 つ 1 つの OpenStax の名前（Product ／ Quotient ／ Power Property (Rule) of Logarithms） |
@@ -292,6 +291,7 @@
 | commutative law | Nicholson 2、OpenStax Algebra and Trigonometry 2e 1、OpenStax Precalculus 2e 1 | commutative-property |
 | Congruence Theorem | CK-12 Geometry 4 | congruence-criteria |
 | distributive laws | Nicholson 4 | distributive-property |
+| Generalized Pythagorean Theorem | OpenStax Algebra and Trigonometry 2e 2、OpenStax Precalculus 2e 2 | law-of-cosines |
 | transitive property | CK-12 Geometry 4 | transitive-property |
 | Candidates Test | AP Calculus CED 3 | candidates-test |
 | congruence postulate | CK-12 Geometry 3 | congruence-criteria |
@@ -383,7 +383,7 @@
 | Equality Addition Property of Equality | OpenStax Prealgebra 2e 3、OpenStax Elementary Algebra 2e 2 | OpenStax Prealgebra 2e: Solve Equations Using Integers; The Division Property of Equality ／ Solve Equations with Decimals、OpenStax Elementary Algebra 2e: Solve Equations using the Division and Multiplication Properties of Equality ／ Solve Linear Inequalities | equality-holds（1）、vector-addition（1）、substitution-property（1）、segment-addition-postulate（1） |  |
 | Factoring Square Root Property | OpenStax Intermediate Algebra 2e 4、OpenStax Elementary Algebra 2e 1 | OpenStax Elementary Algebra 2e: Solve Quadratic Equations Using the Quadratic Formula、OpenStax Intermediate Algebra 2e: Solve Quadratic Equations Using the Quadratic Formula ／ Solve Applications of Quadratic Equations | radical-function（2）、principal-square-root（2）、square-root-of-a-number（2）、simplify-radicals（2） |  |
 | Fundamental Theorem of Line Integrals | OpenStax Calculus Volume 3 5 | OpenStax Calculus Volume 3: Conservative Vector Fields | line-integral（2）、vertical-line-test（1）、skew-lines（1）、perpendicular-lines（1） | エントリの概念ではない: 線積分の基本定理。エントリなし |
-| input-output rule | IM 6–8 5 | IM 6–8: Grade 8 5.1 Inputs and Outputs ／ Grade 8 5.2 Introduction to Functions | table-of-values（2） | エントリの概念ではない: CK-12 の function machine の規則。エントリなし |
+| input-output rule | IM 6–8 5 | IM 6–8: Grade 8 5.1 Inputs and Outputs ／ Grade 8 5.2 Introduction to Functions | table-of-values（2）、value-of-the-function（1） | エントリの概念ではない: CK-12 の function machine の規則。エントリなし |
 | Kepler’s laws | OpenStax Calculus Volume 3 3、OpenStax Calculus Volume 1 1、OpenStax Calculus Volume 2 1 | OpenStax Calculus Volume 1: The Fundamental Theorem of Calculus、OpenStax Calculus Volume 2: The Fundamental Theorem of Calculus、OpenStax Calculus Volume 3: Motion in Space |  | エントリの概念ではない: 物理の法則（数学の用語ではない） |
 | Multiplication Property of Equality and multiply | CK-12 Algebra 2、OpenStax Prealgebra 2e 1、OpenStax Elementary Algebra 2e 1、OpenStax Intermediate Algebra 2e 1 | CK-12 Algebra: 2.1.8 Input-Output Tables for Function Rules ／ 2.3.1 Two-Step Equations、OpenStax Prealgebra 2e: Solve Equations with Fraction or Decimal Coefficients、OpenStax Elementary Algebra 2e: Solve Equations with Fractions or Decimals、OpenStax Intermediate Algebra 2e: Use a General Strategy to Solve Linear Equations | cross-multiply（2）、matrix-multiplication（2）、substitution-property（1）、scalar-multiplication（1） |  |
 | Ohm’s Law | Nicholson 3、CK-12 Algebra 1、OpenStax Calculus Volume 3 1 | CK-12 Algebra: 2.4.6 Applications of Multi-Step Equations、Nicholson: 1.5 An Application to Electrical Networks ／ 11.2 The Jordan Canonical Form、OpenStax Calculus Volume 3: Applications |  | エントリの概念ではない: 物理の法則（数学の用語ではない） |
@@ -426,7 +426,7 @@
 | division property of equality and check the solution | OpenStax Prealgebra 2e 3 | OpenStax Prealgebra 2e: Solve Equations Using Integers; The Division Property of Equality ／ Solve Equations Using the Division and Multiplication Properties of Equality | checking-whether-the-solution-makes-sense（2）、polynomial-division（1）、no-solution（1）、integration-by-long-division（1） |  |
 | Existence theorems | AP Calculus CED 3 | AP Calculus CED: exam | existence-proof（1） | エントリの概念ではない: エントリなし |
 | final test | IM 6–8 3 | IM 6–8: Grade 6 5.14 Using Operations on Decimals to Solve Problems |  | エントリの概念ではない: 試験・検査の意味の test（定理の名前ではない） |
-| Function Rules for Input-Output Tables | CK-12 Algebra 3 | CK-12 Algebra: 2.1.7 Function Rules for Input-Output Tables | table-of-values（3）、value-of-the-function（1）、random-number-table（1）、radical-function（1） | エントリの概念ではない: CK-12 の function machine の規則。エントリなし |
+| Function Rules for Input-Output Tables | CK-12 Algebra 3 | CK-12 Algebra: 2.1.7 Function Rules for Input-Output Tables | table-of-values（3）、value-of-the-function（2）、random-number-table（1）、radical-function（1） | エントリの概念ではない: CK-12 の function machine の規則。エントリなし |
 | hypothesis test for matched | OpenStax Introductory Statistics 2e 3 | OpenStax Introductory Statistics 2e: Matched or Paired Samples | hypothesis（1）、statistical-hypothesis（1）、null-hypothesis（1）、inductive-hypothesis（1） | エントリの概念ではない: 仮説検定の場面ごとの節の名前（OpenStax・CED）。hypothesis test はエントリ hypothesis-testing に |
 | Identity Properties of Addition and Multiplication | OpenStax Prealgebra 2e 3 | OpenStax Prealgebra 2e: Properties of Identity, Inverses, and Zero | vector-addition（1）、supplementary-angle-identity（1）、segment-addition-postulate（1）、scalar-multiplication（1） | エントリの概念ではない: 単位元の性質（identity property）。エントリなし |
 | investigative question Decision Rules | AP Statistics CED 3 | AP Statistics CED: exam |  | エントリの概念ではない: AP Statistics の CED の表の見出し（Decision Rules） |
@@ -471,7 +471,7 @@
 | Cross-Partial Property of Conservative Vector Fields | OpenStax Calculus Volume 3 2 | OpenStax Calculus Volume 3: Vector Fields | conservative-vector-field（3）、cross-product（2）、vector-field（2）、vector-equation-of-a-line（1） | エントリの概念ではない: エントリなし |
 | cross-partials property | OpenStax Calculus Volume 3 2 | OpenStax Calculus Volume 3: Divergence and Curl | partial-derivative（1）、cross-section（1）、cross-method（1）、partial-order（1） | エントリの概念ではない: エントリなし |
 | Determinant Properties | OpenStax Algebra and Trigonometry 2e 1、OpenStax Precalculus 2e 1 | OpenStax Algebra and Trigonometry 2e: Solving Systems with Cramer's Rule、OpenStax Precalculus 2e: Solving Systems with Cramer's Rule | determinant（1） | エントリの概念ではない: 一般的な言い方（generic） |
-| determines whether outliers exist Decision Rules | AP Statistics CED 2 | AP Statistics CED: exam | determine-the-coefficients（1）、the-limit-does-not-exist（1）、find-the-domain（1）、conditions-that-determine-a-triangle（1） | エントリの概念ではない: AP Statistics の CED の表の見出し（Decision Rules） |
+| determines whether outliers exist Decision Rules | AP Statistics CED 2 | AP Statistics CED: exam | the-limit-does-not-exist（1）、find-the-domain（1）、check-the-concavity（1）、determine-the-coefficients（1） | エントリの概念ではない: AP Statistics の CED の表の見出し（Decision Rules） |
 | divergence theorem for vector field | OpenStax Calculus Volume 3 2 | OpenStax Calculus Volume 3: The Divergence Theorem | conservative-vector-field（2）、vector-field（2）、divergence-vector（2）、vector-valued-function（1） |  |
 | Division Properties | OpenStax Prealgebra 2e 2 | OpenStax Prealgebra 2e: Divide Whole Numbers | division（1）、synthetic-division（1）、division-algorithm（1）、divisor-in-division（1） | エントリの概念ではない: 一般的な言い方（generic） |
 | Elementary Properties | Nicholson 2 | Nicholson: front ／ 6.6 An Application to Differential Equations | elementary-matrix（1）、elementary-symmetric-polynomial（1）、elementary-event（1）、row-operations（1） | エントリの概念ではない: Nicholson の線形代数の定理。エントリなし |
@@ -493,7 +493,7 @@
 | hypothesis test for single mean | OpenStax Introductory Statistics 2e 2 | OpenStax Introductory Statistics 2e: NOTEs for the TI-83, 83+, 84, 84+ Calculators | statistical-hypothesis（1）、population-mean（1）、null-hypothesis（1）、mean-absolute-deviation（1） | エントリの概念ではない: 仮説検定の場面ごとの節の名前（OpenStax・CED）。hypothesis test はエントリ hypothesis-testing に |
 | Hypothesis test for the mean | OpenStax Introductory Statistics 2e 2 | OpenStax Introductory Statistics 2e: Probability Distribution Needed for Hypothesis Testing | sample-mean（1）、hypothesis（1）、geometric-mean（1）、arithmetic-mean（1） | エントリの概念ではない: 仮説検定の場面ごとの節の名前（OpenStax・CED）。hypothesis test はエントリ hypothesis-testing に |
 | Identity Laws | OpenStax Calculus Volume 3 2 | OpenStax Calculus Volume 3: Limits and Continuity | identity（1）、pythagorean-identity（1）、identity-matrix（1）、cofunction-identity（1） | エントリの概念ではない: 単位元の性質（identity property）。エントリなし |
-| included angle Generalized Pythagorean Theorem | OpenStax Algebra and Trigonometry 2e 1、OpenStax Precalculus 2e 1 | OpenStax Algebra and Trigonometry 2e: Non-right Triangles: Law of Cosines、OpenStax Precalculus 2e: Non-right Triangles: Law of Cosines | triple-angle-formulas（1）、tangent-chord-theorem（1）、multivariable-chain-rule（1）、half-angle-formulas（1） |  |
+| included angle Generalized Pythagorean Theorem | OpenStax Algebra and Trigonometry 2e 1、OpenStax Precalculus 2e 1 | OpenStax Algebra and Trigonometry 2e: Non-right Triangles: Law of Cosines、OpenStax Precalculus 2e: Non-right Triangles: Law of Cosines | law-of-cosines（2）、triple-angle-formulas（1）、tangent-chord-theorem（1）、multivariable-chain-rule（1） |  |
 | individual properties of limits | OpenStax Calculus Volume 1 2 | OpenStax Calculus Volume 1: The Limit Laws | infinite-limit（1）、upper-limit（1）、take-the-limit（1）、one-sided-limit（1） | エントリの概念ではない: 一般的な言い方（generic） |
 | inference procedure Decision Rules | AP Statistics CED 2 | AP Statistics CED: exam | rules-of-inference（1）、inferential-statistics（1） | エントリの概念ではない: AP Statistics の CED の表の見出し（Decision Rules） |
 | Intersecting Lines Theorem | CK-12 Geometry 2 | CK-12 Geometry: 8.17 Composite Transformations | tangent-line（1）、segment（1）、secant-line（1）、number-line（1） | エントリの概念ではない: CK-12 の番号付きの定理（Chord Theorem #1 など） |
@@ -616,7 +616,7 @@
 | F test for the equality of | OpenStax Introductory Statistics 2e 1 | OpenStax Introductory Statistics 2e: Test of Two Variances | equality-holds（1）、substitution-property（1）、properties-of-equality（1）、equality-of-complex-numbers（1） |  |
 | FCC conducts broadband speed tests | OpenStax Introductory Statistics 2e 1 | OpenStax Introductory Statistics 2e: Test of a Single Variance | instantaneous-velocity（1）、speed（1） |  |
 | Figuring out pattern rules | CK-12 Algebra 1 | CK-12 Algebra: 2.1.1 Writing Basic Equations | cancel-out（1）、write-out-the-first-few-terms（1） |  |
-| Four input-output rule | IM 6–8 1 | IM 6–8: Grade 8 5.3 Equations for Functions | table-of-values（2）、the-four-operations（1） | エントリの概念ではない: CK-12 の function machine の規則。エントリなし |
+| Four input-output rule | IM 6–8 1 | IM 6–8: Grade 8 5.3 Equations for Functions | table-of-values（2）、value-of-the-function（1）、the-four-operations（1） | エントリの概念ではない: CK-12 の function machine の規則。エントリなし |
 | Fourier’s law of heat transfer | OpenStax Calculus Volume 3 1 | OpenStax Calculus Volume 3: The Divergence Theorem |  |  |
 | freedom Test | OpenStax Introductory Statistics 2e 1 | OpenStax Introductory Statistics 2e: Test of a Single Variance | degrees-of-freedom（1） |  |
 | Fubini’s theorem for improper integrals and evaluate | OpenStax Calculus Volume 3 1 | OpenStax Calculus Volume 3: Double Integrals over General Regions | evaluate-the-integral（2）、improper-integral（2）、convergence-of-improper-integrals（2）、trigonometric-integrals（1） |  |
@@ -685,7 +685,7 @@
 | Naegele’s rule | OpenStax Introductory Statistics 2e 1 | OpenStax Introductory Statistics 2e: Using the Normal Distribution |  |  |
 | Negative rule | OpenStax Algebra and Trigonometry 2e 1 | OpenStax Algebra and Trigonometry 2e: Exponents and Scientific Notation | negative-reciprocal（1）、negative-number（1）、negative-exponent（1）、negative-correlation（1） |  |
 | Newton’s law of gravitation | OpenStax Calculus Volume 3 1 | OpenStax Calculus Volume 3: Vector Fields | newtons-method（1）、newtons-law-of-cooling（1） | エントリの概念ではない: 物理の法則（数学の用語ではない） |
-| Newton’s law of universal gravitation | OpenStax Calculus Volume 1 1 | OpenStax Calculus Volume 1: Differentiation Rules | newtons-method（1）、universal-set（1）、universal-quantifier（1）、newtons-law-of-cooling（1） |  |
+| Newton’s law of universal gravitation | OpenStax Calculus Volume 1 1 | OpenStax Calculus Volume 1: Differentiation Rules | universal-set（1）、newtons-method（1）、universal-quantifier（1）、newtons-law-of-cooling（1） |  |
 | Newton’s laws of motion imply | Nicholson 1 | Nicholson: 5.6 Best Approximation and Least Squares | rigid-motion（1）、newtons-method（1）、projectile-motion（1）、rectilinear-motion（1） |  |
 | Noah’s tests | IM 9–12 1 | IM 9–12: Geometry 8.9 Using Tables for Conditional Probability |  |  |
 | Old Theorem | IM 9–12 1 | IM 9–12: Algebra 2 2.24 Polynomial Identities (Part 2) |  |  |
@@ -718,7 +718,7 @@
 | SAS Triangle Inequality Theorem | CK-12 Geometry 1 | CK-12 Geometry: 4.25 Comparing Angles and Sides in Triangles | triangle-inequality（2）、sas-congruence（2）、triangle-proportionality-theorem（1）、similar-triangles（1） | エントリの概念ではない: ヒンジの定理（SAS ／ SSS Inequality Theorem）。エントリなし |
 | Satisfaction Test | IM 9–12 1 | IM 9–12: Algebra 2 7.13 Experimenting |  |  |
 | Scholastic Aptitude Test | OpenStax Introductory Statistics 2e 1 | OpenStax Introductory Statistics 2e: Practice Tests (1-4) and Final Exams |  |  |
-| Set up hypothesis test | OpenStax Introductory Statistics 2e 1 | OpenStax Introductory Statistics 2e: Additional Information and Full Hypothesis Test Examples | write-an-equation（2）、set-up-a-recurrence（2）、statistical-hypothesis（1）、set-builder-notation（1） | エントリの概念ではない: 仮説検定の場面ごとの節の名前（OpenStax・CED）。hypothesis test はエントリ hypothesis-testing に |
+| Set up hypothesis test | OpenStax Introductory Statistics 2e 1 | OpenStax Introductory Statistics 2e: Additional Information and Full Hypothesis Test Examples | write-an-equation（2）、set-up-a-recurrence（2）、universal-set（1）、statistical-hypothesis（1） | エントリの概念ではない: 仮説検定の場面ごとの節の名前（OpenStax・CED）。hypothesis test はエントリ hypothesis-testing に |
 | Shang Gao Theorem | IM 6–8 1 | IM 6–8: Grade 8 8.6 Finding Side Lengths of Triangles |  |  |
 | shape decreasing One-to-One Property of Exponential | OpenStax Intermediate Algebra 2e 1 | OpenStax Intermediate Algebra 2e: Evaluate and Graph Exponential Functions | increasing-and-decreasing（1）、composite-figure（1）、square-shape（1）、rewrite-in-exponential-form（1） |  |
 | Shoe Survey Test | OpenStax Introductory Statistics 2e 1 | OpenStax Introductory Statistics 2e: Hypothesis Testing for Two Means and Two Proportions | sample-survey（1）、survey（1） |  |
@@ -749,5 +749,5 @@
 | Uniform Distribution Test | OpenStax Introductory Statistics 2e 1 | OpenStax Introductory Statistics 2e: Lab 1: Chi-Square Goodness-of-Fit | uniform-distribution（2）、t-distribution（1）、sampling-distribution（1）、probability-distribution（1） | エントリの概念ではない: 試験・検査の意味の test（定理の名前ではない） |
 | valid investigative question Decision Rules | AP Statistics CED 1 | AP Statistics CED: exam |  |  |
 | We’ll test | OpenStax Elementary Algebra 2e 1 | OpenStax Elementary Algebra 2e: Factor Trinomials of the Form x 2 +bx+c |  |  |
-| Writing Function Rules for Input-Output Tables | CK-12 Algebra 1 | CK-12 Algebra: 2.1.7 Function Rules for Input-Output Tables | table-of-values（3）、sinusoid（1）、integration-formulas（1）、implicit-function（1） | エントリの概念ではない: CK-12 の function machine の規則。エントリなし |
+| Writing Function Rules for Input-Output Tables | CK-12 Algebra 1 | CK-12 Algebra: 2.1.7 Function Rules for Input-Output Tables | table-of-values（3）、value-of-the-function（2）、sinusoid（1）、integration-formulas（1） | エントリの概念ではない: CK-12 の function machine の規則。エントリなし |
 | Zero Property | OpenStax Intermediate Algebra 2e 1 | OpenStax Intermediate Algebra 2e: Polynomial Equations | zero-vector（1）、zero-matrix（1）、zero-exponent（1）、zero-product-property（1） |  |

@@ -20,16 +20,16 @@
   ],
   "level": {
     "jp": [
-      "数I"
+      "数I",
+      "数A"
     ],
     "us": [
       "Geometry",
-      "Precalculus",
       "Integrated Math 2"
     ]
   },
   "definition_ja": "三角形（多角形）のすべての頂点を通る円。三角形の外接円の中心（外心）は 3 辺の垂直二等分線の交点で、半径 R は正弦定理から a/sin A = 2R で求まる。",
-  "definition_en": "The circle that passes through all the vertices of a triangle or polygon. For a triangle, its center is where the perpendicular bisectors of the sides meet, and its radius R satisfies a/sin A = 2R.",
+  "definition_en": "The circle that passes through all the vertices of a triangle or polygon. For a triangle, its center is the common point of the three perpendicular bisectors, and its radius R satisfies a/sin A = 2R.",
   "latex": "R = \\frac{a}{2\\sin A}",
   "spoken_en": "R equals a over two sine A",
   "examples": [
@@ -46,9 +46,9 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "外接円の半径は circumradius、中心（外心）は circumcenter。",
+    "英語版 Wikipedia「Circumcircle」は外接円の半径を circumradius、中心（外心）を circumcenter と呼ぶ（IM Geometry・CK-12 Geometry は circumcenter だけで、circumradius は参照と用例コーパスに出てこない）。",
     "主語の向きに注意。「円が三角形に外接する」は the circle is circumscribed about the triangle、「三角形が円に内接する」は the triangle is inscribed in the circle。",
-    "IM Geometry（7.4〜7.7）は circumscribed circle と書く（18 件）。circumcircle は用例コーパスにほとんど出てこない。見出しは IM の言い方にした。"
+    "IM Geometry（7.4・7.5・7.7・7.13 ほか、21 件）と CK-12 Geometry（4.22 Concurrence and Constructions、13 件）は circumscribed circle と書き、英語版 Wikipedia の三角形の外接円の記事名は Circumcircle。"
   ],
   "related": [
     "law-of-sines",
@@ -71,7 +71,25 @@
       "type": "reference",
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
-      "note": "Geometry 7.4 Quadrilaterals in Circles・Geometry 7.5 Triangles in Circles・Geometry 7.7 Circles in Triangles"
+      "note": "Geometry 7.4 Quadrilaterals in Circles（9 件）・7.5 Triangles in Circles（6）・7.7 Circles in Triangles（2）・7.13 Using Radians（2）ほか、計 21 件"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.22 Concurrence and Constructions: circumscribed circle（12 件）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Circumcircle",
+      "note": "三角形の外接円の記事（数学カテゴリから 5 段）: circumradius・circumcenter"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A 図形の性質: 外心・内心・重心の性質。数学I 図形と計量: 正弦定理の R は外接円の半径"
     }
   ],
   "confidence": "likely",
@@ -80,7 +98,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "written": {
       "circumcircle": 1
