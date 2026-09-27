@@ -5,9 +5,9 @@
 対象の欄は日本側と同じ。米国側の主張（米国・アメリカ・AP・CED・College Board・英語圏・Calc I〜III・Calculus AB／BC）の文のうち、
 文の中に参照（CED・OpenStax・IM・CK-12・Nicholson・Levin・Wikipedia・topic の番号ほか）も用例コーパス（講義・話し言葉・書き言葉・Khan・MIT ほか）も名指ししないもの。
 
-- 米国側の主張の文で参照かコーパスを名指しするもの: 398 文（一覧にしない）
-- **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 8 項目・8 文**
-- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 36 項目・38 文
+- 米国側の主張の文で参照かコーパスを名指しするもの: 408 文（一覧にしない）
+- **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 6 項目・6 文**
+- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 33 項目・35 文
 
 ## A. エントリの出典にも参照がない
 
@@ -17,8 +17,6 @@
 | terms | postulate | mapping_note | 米国の Geometry では証明の前提を postulate と呼び、名前付きで使う（segment addition postulate、parallel postulate など）。 |
 | terms | vector-equation-of-a-circle | mapping_note | 米国の教科書は円を (x − h)² + (y − k)² = r² の形で扱い、ベクトル方程式としては立てない。 |
 | symbols | combination-ncr | notes[0] | 日本の教科書は ₙCᵣ と書き、米国の教科書は C(n, r)、ₙCᵣ、または縦に並べた二項係数 (n over r) の形で書く。 |
-| symbols | mixed-number | notes[1] | 米国の Pre-Algebra の教材は帯分数を使い続ける。 |
-| symbols | piecewise-brace | notes[1] | 米国の教科書は条件を式の右に書き（x² if x ≥ 0）、日本のように ( ) でくくらないことが多い。 |
 | symbols | vector-arrow-notation | notes[1] | 米国の教科書は太字で書き、手書きでは矢印を付ける。 |
 | phrases | explaining-solution-in-context | variants[0].note | AP の記述問題で求められる「文脈に即した解釈」。 |
 
@@ -53,11 +51,8 @@
 | symbols | conditional-probability-subscript-jp | notes[0] | 日本の P_A(B) は、米国の書き方では P(B \| A)。 | 高等学校学習指導要領（平成30年告示）解説 数学編 理数編 |
 | symbols | curl-del-cross | notes[1] | 日本の本の rot F（ローテーション）は、米国の教科書では curl F と書く。 | OpenStax Calculus Volume 3 |
 | symbols | equals-question-mark | notes[0] | ≟ は米国の教科書の検算（Check）で使い、「等しいか確かめる」ことを示す。 | OpenStax Elementary Algebra 2e; CK-12 Foundation, CK-12 Geometry (K12 LibreTexts) |
-| symbols | geq-sign | notes[1] | 米国の教科書は ≥ と書く（≧ との違いは inequality-symbols）。 | 中学校学習指導要領（平成29年告示）〔用語・記号〕; OpenStax Intermediate Algebra 2e; OpenStax Calculus Volume 2 |
 | symbols | implies-arrow | notes[1] | 米国の Geometry と離散数学は条件文を p → q とも書く。 | OpenStax Precalculus 2e; CK-12 Foundation, CK-12 Geometry (K12 LibreTexts) |
 | symbols | integers-symbol | notes[0] | 文字どおり Z（米国の発音は zee。Merriam-Webster: ˈzē、カナダ・英国・オーストラリアは ˈzed）とも言う。 | Merriam-Webster「z」 |
-| symbols | leq-sign | notes[1] | 米国の教科書は ≤ と書く（≦ との違いは inequality-symbols）。 | 中学校学習指導要領（平成29年告示）〔用語・記号〕; OpenStax Calculus Volume 3; OpenStax Intermediate Algebra 2e; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020) |
-| symbols | proportion-colon | notes[0] | 米国の教科書は比例式を a/b = c/d の分数の形で書くことが多く、そのときは a over b equals c over d と読む。 | College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020); OpenStax Prealgebra 2e |
 | symbols | ray-ab-arrow | notes[0] | 米国の幾何の矢印の AB は ray AB と読む。 | CK-12 Geometry (K12 LibreTexts) |
 | symbols | repeated-combination-h-jp | notes[0] | ₙHᵣ は日本の教科書の記号で、米国にこの記号はない。 | Oscar Levin, Discrete Mathematics: An Open Introduction (4th edition); 日本語版 Wikipedia「重複組合せ」 |
 | symbols | repeated-combination-h-jp | notes[1] | 米国では C(n + r − 1, r) と書く（repeated-combination-notation）。 | Oscar Levin, Discrete Mathematics: An Open Introduction (4th edition); 日本語版 Wikipedia「重複組合せ」 |

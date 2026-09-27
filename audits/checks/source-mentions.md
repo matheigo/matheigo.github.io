@@ -2,7 +2,7 @@
 
 作成: `python3 scripts/audit/source_mentions.py`（規則は scripts/audit/source_mentions.py の説明）。主張が正しいかは見ない（それは監査）。
 
-- 項目: **140**（draft 1・likely 139）
+- 項目: **138**（draft 1・likely 137）
 
 | コレクション | id | confidence | 名指しされた資料 | 欄 |
 |---|---|---|---|---|
@@ -131,7 +131,6 @@
 | terms | rejection-region | likely | AP Statistics の CED | mapping_note |
 | terms | rejection-region | likely | OpenStax Introductory Statistics | mapping_note |
 | terms | resistant-statistic | likely | 学習指導要領解説 | mapping_note |
-| terms | rewrite-in-exponential-form | likely | IM | en.variants[1].note |
 | terms | right-triangle-similarity | likely | IM | pitfalls[2] |
 | terms | right-triangle-similarity | likely | 学習指導要領解説 | mapping_note |
 | terms | rise-over-run | likely | 学習指導要領解説 | mapping_note |
@@ -152,7 +151,6 @@
 | terms | standard-form-of-a-line | likely | 日本語版 Wikipedia「一次関数」 | mapping_note |
 | terms | standard-form-of-a-line | likely | 学習指導要領解説 | mapping_note |
 | terms | standard-matrix | likely | 学習指導要領解説 | mapping_note |
-| terms | standard-normal-table | likely | AP Statistics の CED | pitfalls[0] |
 | terms | strong-induction | likely | Levin | pitfalls[2] |
 | terms | substitution-property | likely | IM | pitfalls[2] |
 | terms | substitution-property | likely | 学習指導要領解説 | mapping_note |

@@ -332,13 +332,6 @@
     },
     {
       "collection": "terms",
-      "id": "base-case",
-      "field": "mapping_note",
-      "sentence": "日本の答案は「[1] n = 1 のとき」と書くだけで、この段に名前をつけないことが多い。",
-      "g1": true
-    },
-    {
-      "collection": "terms",
       "id": "base-n",
       "field": "pitfalls[0]",
       "sentence": "共通テスト（令和 6 年度 本試験 数学I・数学A 第 4 問）は「n 進数とは n 進法で表された数のこと」と書き、表し方と数を呼び分ける。",
@@ -384,6 +377,13 @@
       "id": "biconditional",
       "field": "pitfalls[0]",
       "sentence": "日本の数I では「双条件文」という名前を使わず、「p ⇔ q」「p は q であるための必要十分条件」「p と q は同値」と言う。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "binomial-distribution",
+      "field": "pitfalls[1]",
+      "sentence": "OpenStax Introductory Statistics（4.3）は X ~ B(n, p) と書く（学習指導要領解説（数学B）の B(n, p) と同じ文字）。",
       "g1": false
     },
     {
@@ -458,13 +458,6 @@
     },
     {
       "collection": "terms",
-      "id": "central-limit-theorem",
-      "field": "pitfalls[1]",
-      "sentence": "標本の大きさの目安を n ≥ 30（at least 30 など）とすることが多いが、教科書によって違う。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "chain-rule",
       "field": "pitfalls[0]",
       "sentence": "学習指導要領解説（数学III）は「合成関数の微分法」と言い、「連鎖律」は出てこない（日本語版 Wikipedia の記事名は「連鎖律」）。",
@@ -482,13 +475,6 @@
       "id": "change",
       "field": "mapping_note",
       "sentence": "中学校学習指導要領解説の「x の増加量」「y の増加量」（変化の割合は x の増加量に対する y の増加量の割合）は、英語で change in x、change in y と言い、Δx、Δy（delta x、delta y と読む）とも書く。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "characteristic-equation",
-      "field": "mapping_note",
-      "sentence": "日本の数B の「特性方程式」は、aₙ₊₁ = paₙ + q に対して α = pα + q とおく式を指すことが多い。",
       "g1": false
     },
     {
@@ -1671,7 +1657,7 @@
       "collection": "terms",
       "id": "grouped-sequence",
       "field": "mapping_note",
-      "sentence": "項をいくつかずつの組（group）に分けて考える日本の受験の手法で、英語で説明するなら group the terms like this: (1), (2, 3), (4, 5, 6), … と式で見せる。",
+      "sentence": "日本語版 Wikipedia「数学 (教科)」は数学B の数列の項目に群数列を挙げる（学習指導要領解説には出てこない）。",
       "g1": false
     },
     {
@@ -2607,17 +2593,10 @@
     },
     {
       "collection": "terms",
-      "id": "normal-approximation-to-the-binomial",
-      "field": "pitfalls[0]",
-      "sentence": "近似を使ってよい目安（np ≥ 10 かつ n(1 − p) ≥ 10 など）は教科書によって数が違う。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "normal-distribution",
       "field": "pitfalls[0]",
-      "sentence": "日本の教科書は N(μ, σ²) と分散を書くが、OpenStax Introductory Statistics は X ~ N(μ, σ) と標準偏差を書く（51 件）。",
-      "g1": true
+      "sentence": "学習指導要領解説（数学B）は N(μ, σ²) と分散を書くが、OpenStax Introductory Statistics（6.1）は X ~ N(μ, σ) と標準偏差を書く（同じ本の巻末の公式集は X ~ N(μ, σ²)）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -2784,7 +2763,7 @@
       "collection": "terms",
       "id": "partial-sum",
       "field": "pitfalls[0]",
-      "sentence": "数B では「初項から第 n 項までの和」、数III では「部分和」。",
+      "sentence": "共通テスト・センター試験（数学II・数学B）の問題文は「初項から第 n 項までの和」と書き、学習指導要領解説（数学III）は無限級数で「部分和」と書く。",
       "g1": false
     },
     {
@@ -3239,7 +3218,7 @@
       "collection": "terms",
       "id": "recurrence-relation",
       "field": "mapping_note",
-      "sentence": "日本の「漸化式」はどちらにも当たる。",
+      "sentence": "学習指導要領解説（数学B）は初項と漸化式を分けて書き、漸化式は項の間の関係式だけを指す。",
       "g1": false
     },
     {
@@ -3939,7 +3918,7 @@
       "collection": "terms",
       "id": "standard-normal-table",
       "field": "mapping_note",
-      "sentence": "日本の数B の正規分布表は 0 から u までの確率 P(0 ≤ Z ≤ u) を載せる形が多い。",
+      "sentence": "センター試験（数学II・数学B）の問題に付く正規分布表は P(0 ≤ Z ≤ z₀) を載せる。",
       "g1": false
     },
     {
@@ -4602,13 +4581,6 @@
     },
     {
       "collection": "symbols",
-      "id": "gauss-bracket-jp",
-      "field": "notes[0]",
-      "sentence": "日本のガウス記号 [x] は英語では床関数 ⌊x⌋ と書き、the floor of x と読む。",
-      "g1": false
-    },
-    {
-      "collection": "symbols",
       "id": "gcd-notation",
       "field": "notes[1]",
       "sentence": "米国の Pre-Algebra の教材は greatest common factor（GCF）と呼び、中学の教材（Khan Academy の中学）と解説チャンネルに多い。",
@@ -4618,42 +4590,14 @@
       "collection": "symbols",
       "id": "geq-sign",
       "field": "notes[1]",
-      "sentence": "米国の教科書は ≥ と書く（≧ との違いは inequality-symbols）。",
+      "sentence": "日本の記号（≧）との違いは慣習差 inequality-symbols。",
       "g1": false
-    },
-    {
-      "collection": "symbols",
-      "id": "integral-definite",
-      "field": "notes[1]",
-      "sentence": "日本では「インテグラル a から b、f(x) dx」と記号を左から順に読むことが多い。",
-      "g1": true
     },
     {
       "collection": "symbols",
       "id": "leq-sign",
       "field": "notes[1]",
-      "sentence": "米国の教科書は ≤ と書く（≦ との違いは inequality-symbols）。",
-      "g1": false
-    },
-    {
-      "collection": "symbols",
-      "id": "log-e-jp",
-      "field": "notes[0]",
-      "sentence": "数III の log x（底 e）は、英語では ln x と書いて the natural log of x か L N x と読む。",
-      "g1": false
-    },
-    {
-      "collection": "symbols",
-      "id": "log-e-jp",
-      "field": "notes[1]",
-      "sentence": "∫ 1/x dx = log|x| + C は英語の教科書では ln|x| + C と書く。",
-      "g1": false
-    },
-    {
-      "collection": "symbols",
-      "id": "long-division-bracket",
-      "field": "notes[0]",
-      "sentence": "筆算を進めるときは five goes into twenty four times（5 は 20 に 4 回入る）のように goes into を使い、中学の教材（Khan Academy の中学）に多い。",
+      "sentence": "日本の記号（≦）との違いは慣習差 inequality-symbols。",
       "g1": false
     },
     {
@@ -4679,23 +4623,9 @@
     },
     {
       "collection": "symbols",
-      "id": "piecewise-brace",
-      "field": "notes[1]",
-      "sentence": "米国の教科書は条件を式の右に書き（x² if x ≥ 0）、日本のように ( ) でくくらないことが多い。",
-      "g1": false
-    },
-    {
-      "collection": "symbols",
       "id": "polar-form-cis",
       "field": "notes[1]",
       "sentence": "日本の高等学校学習指導要領解説には cis が出てこない（日本語版 Wikipedia「複素数」は r cis(φ) と書くこともあると説明する）。",
-      "g1": false
-    },
-    {
-      "collection": "symbols",
-      "id": "proportion-colon",
-      "field": "notes[0]",
-      "sentence": "米国の教科書は比例式を a/b = c/d の分数の形で書くことが多く、そのときは a over b equals c over d と読む。",
       "g1": false
     },
     {

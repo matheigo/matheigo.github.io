@@ -7,9 +7,9 @@
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15651
-- 英語のソース: 3884 ファイル ／ 日本語のソース: 494 ファイル
-- 一致した箇所: **314**（280 項目）
+- 調べた本文の欄: 15660
+- 英語のソース: 3884 ファイル ／ 日本語のソース: 512 ファイル
+- 一致した箇所: **311**（275 項目）
 - 見出しの句を含む一致で除いたもの: 147 箇所（136 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
@@ -32,16 +32,18 @@
 | phrases | write-as-a-limit-of-a-sum | en | en | 10 | this as the limit as n approaches infinity of a | 1 | khan-ap-calc |
 | symbols | delta-x | notes[1] | en | 9 | the change in y over the change in x | 5 | khan-middle, khan-ap-calc, khan-algebra, openstax-algtrig, yt:profleonard |
 | symbols | derivative-leibniz | notes[1] | en | 9 | the derivative of x squared with respect to x | 1 | khan-ap-calc |
-| symbols | difference-quotient-limit | notes[0] | en | 17 | the limit as h approaches zero of f of x plus h minus f of x all | 2 | khan-ap-calc, yt:organicchem |
 | symbols | directional-derivative-notation | notes[0] | en | 10 | the directional derivative of f in the direction of u | 1 | openstax-calculus |
 | symbols | floor-brackets | notes[0] | en | 9 | the greatest integer less than or equal to x | 1 | openstax-calculus |
 | symbols | gcd-notation | notes[0] | en | 8 | the greatest common divisor of a and b | 2 | mit-6.042, mit-notes |
 | symbols | geq-sign | notes[0] | en | 8 | x is greater than or equal to zero | 5 | khan-ap-calc, yt:profleonard, khan-algebra, yt:organicchem, yt:patrickjmt |
 | symbols | integral-definite | notes[1] | en | 8 | the integral from a to b of f | 3 | mit-18.01, khan-ap-calc, yt:patrickjmt |
 | symbols | leq-sign | notes[0] | en | 9 | x is less than or equal to five is | 1 | yt:organicchem |
-| symbols | limit-from-left | notes[0] | en | 9 | x a x approaches a from the left x | 2 | openstax-algtrig, openstax-precalculus |
-| symbols | limit-from-right | notes[0] | en | 9 | x a x approaches a from the right x | 2 | openstax-algtrig, openstax-precalculus |
+| symbols | limit-from-left | notes[0] | en | 12 | the limit of f x as x approaches a from the left | 4 | khan-ap-calc, openstax-calculus, openstax-precalculus, ref:ap-calculus-ab-bc-ced |
+| symbols | limit-from-left | notes[0] | en | 8 | x a x approaches a from the left | 2 | openstax-algtrig, openstax-precalculus |
+| symbols | limit-from-right | notes[0] | en | 12 | the limit of f x as x approaches a from the right | 4 | khan-ap-calc, openstax-calculus, openstax-precalculus, ref:ap-calculus-ab-bc-ced |
+| symbols | limit-from-right | notes[0] | en | 8 | x a x approaches a from the right | 2 | openstax-algtrig, openstax-precalculus |
 | symbols | limit-x-to-a | notes[0] | en | 8 | the limit as x approaches a of f | 2 | khan-ap-calc, yt:organicchem |
+| symbols | long-division-bracket | notes[0] | en | 8 | the divisor 3 goes into 18 six times | 1 | openstax-prealgebra |
 | symbols | natural-log-ln | notes[1] | en | 9 | the natural log of the absolute value of x | 1 | khan-ap-calc |
 | symbols | partial-derivative-leibniz | notes[0] | en | 9 | the partial derivative of f with respect to x | 3 | yt:profleonard, openstax-calculus, mit-18.02 |
 | symbols | partial-derivative-leibniz | notes[0] | en | 8 | the partial of f with respect to x | 3 | yt:profleonard, mit-18.03, openstax-calculus |
@@ -79,7 +81,6 @@
 | terms | both-sides | definition_en | en | 9 | the left hand side and the right hand side | 5 | khan-ap-calc, mit-18.01, khan-algebra, yt:3blue1brown, khan-middle |
 | terms | cartesian-product | definition_en | en | 8 | of all ordered pairs a b with a | 1 | ref:levin-dmoi4 |
 | terms | cavalieris-principle | definition_en | en | 8 | then the two solids have the same volume | 1 | ref:im-9-12 |
-| terms | central-limit-theorem | definition_en | en | 9 | the distribution of the sample mean is approximately normal | 1 | openstax-introstats |
 | terms | centroid | examples[1].en | en | 9 | find the coordinates of the centroid of the triangle | 1 | ref:ck12-geometry |
 | terms | chain-rule | examples[0].en | en | 8 | then multiply by the derivative of the inside | 2 | yt:profleonard, yt:organicchem |
 | terms | change-of-base-formula | definition_ja | en | 8 | log a b log c b log c | 1 | openstax-algtrig |
@@ -194,7 +195,6 @@
 | terms | joint-variation | definition_en | en | 9 | a relationship in which one quantity is a constant | 2 | openstax-algtrig, openstax-precalculus |
 | terms | lateral-area | examples[1].en | en | 9 | a radius of 3 cm and a height of | 1 | ref:im-6-8 |
 | terms | law-of-detachment | definition_en | en | 11 | q is true and p is true then q is true | 1 | ref:ck12-geometry |
-| terms | law-of-large-numbers | definition_en | en | 8 | the number of trials or the sample size | 1 | openstax-introstats |
 | terms | laws-of-exponents | examples[0].en | en | 10 | x squared times x cubed is x to the fifth | 1 | yt:organicchem |
 | terms | left-hand-limit | definition_en | en | 8 | the limit of f x as x approaches | 4 | khan-ap-calc, openstax-calculus, openstax-precalculus, ref:ap-calculus-ab-bc-ced |
 | terms | less-than | pitfalls[1] | en | 10 | less than or equal to less than or equal to | 2 | khan-ap-calc, openstax-introstats |
@@ -228,7 +228,6 @@
 | terms | parallel-lines | examples[0].en | en | 10 | parallel lines have the same slope but different y intercepts | 5 | openstax-elemalg, openstax-algtrig, openstax-precalculus, khan-middle, ref:im-9-12 |
 | terms | partial-derivative | examples[1].en | en | 8 | the partial derivatives f x and f y | 1 | openstax-calculus |
 | terms | partial-order | definition_en | en | 8 | a relation that is reflexive antisymmetric and transitive | 1 | ref:levin-dmoi4 |
-| terms | partial-sum | definition_en | en | 8 | of the first n terms of a sequence | 4 | openstax-algtrig, openstax-precalculus, openstax-intalg, ref:levin-dmoi4 |
 | terms | pass-through | examples[1].en | en | 14 | find the equation of the line that passes through the origin and the point | 4 | openstax-algtrig, openstax-precalculus, ref:im-9-12, yt:3blue1brown |
 | terms | percent-change | definition_en | en | 8 | as a percent of the original amount the | 1 | openstax-prealgebra |
 | terms | perfect-square-trinomial | pitfalls[0] | en | 8 | algebra 1 7 11 what are perfect squares | 1 | ref:im-9-12 |
@@ -267,6 +266,7 @@
 | terms | ruler-postulate | examples[1].en | en | 8 | points a and b on a number line | 1 | openstax-calculus |
 | terms | saddle-point | definition_en | en | 9 | is neither a local maximum nor a local minimum | 1 | openstax-calculus |
 | terms | sample-mean | examples[1].en | en | 8 | a 95 confidence interval for the population mean | 1 | openstax-introstats |
+| terms | sampling-distribution-of-the-mean | en.variants[0].note | en | 9 | 7 1 the central limit theorem for sample means | 1 | openstax-introstats |
 | terms | scalar-triple-product | examples[1].en | en | 16 | the triple scalar product to find the volume of the parallelepiped determined by u v and | 2 | openstax-calculus, ref:nicholson-lawa-2021a |
 | terms | scientific-notation | definition_en | en | 9 | way to write very large or very small numbers | 1 | ref:im-6-8 |
 | terms | semicircle | pitfalls[3] | en | 8 | ck 12 geometry 6 9 arcs in circles | 1 | ref:ck12-geometry |
@@ -285,7 +285,6 @@
 | terms | slope-intercept-form-of-a-line | definition_en | en | 11 | where m is the slope and b is the y intercept | 5 | khan-ap-calc, khan-middle, khan-algebra, ref:ck12-geometry, yt:organicchem |
 | terms | sohcahtoa | examples[1].en | en | 8 | the opposite side the adjacent side and the | 1 | yt:organicchem |
 | terms | solution-set | pitfalls[1] | en | 8 | the set of all x such that x | 3 | openstax-algtrig, openstax-precalculus, ref:levin-dmoi4 |
-| terms | solve-the-recurrence | definition_en | en | 8 | find a formula for the nth term of | 1 | ref:levin-dmoi4 |
 | terms | solving-by-graphing | definition_en | en | 8 | of solving a system of equations by graphing | 1 | openstax-intalg |
 | terms | solving-by-taking-square-roots | definition_en | en | 8 | by taking the square root of each side | 1 | ref:ck12-geometry |
 | terms | spanning-tree | examples[1].en | en | 8 | find two different spanning trees of the graph | 1 | ref:levin-dmoi4 |
@@ -295,12 +294,10 @@
 | terms | square-units | examples[1].en | en | 8 | 4 so the area of the rectangle is | 1 | ref:im-6-8 |
 | terms | square-units | examples[2].en | en | 8 | find the area of the triangle with vertices | 1 | ref:nicholson-lawa-2021a |
 | terms | standard-form-of-a-line | definition_en | en | 9 | on the left and the constant on the right | 2 | openstax-prealgebra, openstax-elemalg |
-| terms | standard-normal-distribution | definition_en | en | 9 | normal distribution with mean 0 and standard deviation 1 | 1 | ref:ap-statistics-ced |
 | terms | standard-normal-table | mapping_note | en | 8 | area to the left of the z score | 1 | openstax-introstats |
 | terms | straight-angle | definition_en | en | 9 | point in opposite directions and form a straight line | 1 | ref:im-6-8 |
 | terms | subtended-by | mapping_note | en | 9 | ck 12 geometry 6 14 inscribed angles in circles | 1 | ref:ck12-geometry |
-| terms | sum-of-a-geometric-sequence | definition_en | en | 11 | the sum of the first n terms of a geometric sequence | 8 | openstax-algtrig, openstax-precalculus, openstax-intalg, ref:levin-dmoi4, khan-ap-calc, openstax-calculus ほか |
-| terms | sum-of-an-arithmetic-sequence | definition_en | en | 12 | the sum of the first n terms of an arithmetic sequence the | 9 | openstax-algtrig, openstax-precalculus, openstax-intalg, ref:levin-dmoi4, khan-ap-calc, openstax-calculus ほか |
+| terms | sum-of-a-geometric-sequence | mapping_note | en | 13 | geometric series the sum of the first n terms of a geometric series | 8 | openstax-algtrig, openstax-precalculus, openstax-intalg, ref:levin-dmoi4, khan-ap-calc, openstax-calculus ほか |
 | terms | summation-notation | pitfalls[1] | en | 8 | the sum from i equals one to n | 1 | khan-ap-calc |
 | terms | surface-integral | examples[1].en | en | 10 | the plane x y z 1 in the first octant | 1 | openstax-calculus |
 | terms | symmetric | examples[0].en | en | 12 | the graph of an even function is symmetric about the y axis | 3 | openstax-algtrig, openstax-precalculus, openstax-calculus |

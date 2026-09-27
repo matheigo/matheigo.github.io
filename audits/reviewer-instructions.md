@@ -48,8 +48,8 @@ Phase 5 監査の各バッチで、監査のセッション（親）が 10 語�
 
 ### symbols（記号の読み。3 人で 17・17・16 項目）
 
-- **S1 読み（spoken_en）の 1 つ目（standard）が規則どおりか**: 読みは読みの形（lib.ts `SYMBOL_PATTERNS`。`*` は 1〜5 語の空き、「A | B」「!w」も使う）で数え、①②③（CLAUDE.md 規則 9）。話し言葉だけで数える（書き言葉は「対象外」）。③ は参照で決める（lib.ts `settleSymbolReading`）: CED → OpenStax・IM・CK-12 → Nicholson・Levin の**本文**（節の題・IM の用語集は数えない）で、1 つの参照が **3 件以上**使う読み（CED も 3 件から。英語版 Wikipedia は使わない）。flag corpus-reference-fallback の記号は `pnpm corpus:probe -- --contexts "<読みの形>"` で参照の根拠（行頭「参」）を読み、その記号を読む文（記号の定義・説明のところ）か、別の意味の同じ語句ではないかを確かめる
-- **S2 読みの形が別のものを数えていないか**: evidence のパターンが別の記号・別の意味を拾っていないか（`* squared` が square feet、`* prime` が prime number、`the quantity *` が数量の意味、など）。`--contexts` で読む。register（standard ／ spoken ／ written）の付け方が evidence と合うか
+- **S1 読み（spoken_en）の 1 つ目（standard）が規則どおりか**: 読みは読みの形（lib.ts `SYMBOL_PATTERNS`。`*` は 1〜5 語の空き、「A | B」「!w」も使う）で数え、①②③（CLAUDE.md 規則 9）。話し言葉だけで数える（書き言葉は「対象外」）。③ は参照で決める（lib.ts `settleSymbolReading`）: CED → OpenStax・IM・CK-12 → Nicholson・Levin の**本文**（節の題・IM の用語集は数えない）で、1 つの参照が **3 件以上**使う読み（CED も 3 件から。英語版 Wikipedia は使わない）。flag corpus-reference-fallback の記号は `pnpm exec tsx scripts/audit/symctx.ts "<読みの形>"` で参照の根拠（行頭「参」）を読み（**`pnpm corpus:probe` は記号の `*` を数えない**。監査 9 で足した道具。backlog 79）、その記号を読む文（記号の定義・説明のところ）か、別の意味の同じ語句ではないかを確かめる
+- **S2 読みの形が別のものを数えていないか**: evidence のパターンが別の記号・別の意味を拾っていないか（`* squared` が square feet、`* prime` が prime number、`the quantity *` が数量の意味、`floor of *` が部屋の床、など。監査 9 のバッチ 32・33 で多数）。`symctx.ts` で首位の文脈を 10 件以上読む。形を直すと件数・並びが変わりうるので、直し案には数え直した件数を添えるregister（standard ／ spoken ／ written）の付け方が evidence と合うか
 - **S3 読みの正しさ**: latex と spoken_en が同じ式を読んでいるか（範囲・括弧の読み分け: a sub n plus one と a sub n, plus one、the quantity）。latex が KaTeX で表示できる書き方か
 - **S4 日本語側**: spoken_ja・name_ja が〔用語・記号〕・学習指導要領解説・共通テスト／センター試験・日本語版 Wikipedia の読み・呼び方か（`refgrep.py jp`）。資料に無い読みを言い切っていないか
 - **S5 notes**: 日米の違いの説明は related の慣習差に任せ、記号の notes は読み方と書き方だけ（DECISIONS「Phase 3 記号の前の修正」2。同じ説明を 2 か所に書かない）。発音の主張（「カイ」「エンス」など）は Merriam-Webster を出典に（監査 4 の決定 2。WebFetch・curl では開けないので、既存の出典に無ければ「要確認」で親に回す）。Levin ／ Nicholson で決まり高校の参照が 0 件の記号は「米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない」と参照の件数（STYLE 追記欄）

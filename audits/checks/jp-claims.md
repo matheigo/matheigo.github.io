@@ -5,8 +5,8 @@
 対象の欄: terms の mapping_note・pitfalls・variants の note・definition_ja、symbols の notes、phrases の notes・variants の note。
 慣習差（conventions）は jp の欄そのものが日本側の主張で、生成のときに項目ごとに日本側の資料を出典に入れたので、ここには入れない（監査は慣習差の順で見る）。
 
-- phase4-report G-1 の正規表現（日本(の教科書|では|の高校|の授業|の答案|の中学|の入試|の数学|で)）に当たる文: **114 項目・117 文**
-- 広い正規表現（日本・数学 I〜C・中学・高校・学習指導要領・教科書・入試・共通テスト・センター試験）に当たる文: **500 項目・678 文**（主張でない文も混じる。監査の ⑦ で 1 文ずつ見る）
+- phase4-report G-1 の正規表現（日本(の教科書|では|の高校|の授業|の答案|の中学|の入試|の数学|で)）に当たる文: **111 項目・114 文**
+- 広い正規表現（日本・数学 I〜C・中学・高校・学習指導要領・教科書・入試・共通テスト・センター試験）に当たる文: **491 項目・668 文**（主張でない文も混じる。監査の ⑦ で 1 文ずつ見る）
 
 | コレクション | id | 欄 | G-1 | 文 |
 |---|---|---|---|---|
@@ -57,7 +57,6 @@
 | terms | auxiliary-angle-form | mapping_note |  | 米国の高校の資料（CED・OpenStax・IM・CK-12）には名前が出てこない。 |
 | terms | average-value-of-a-function | pitfalls[0] |  | 学習指導要領解説には出てこない。 |
 | terms | bar-chart | pitfalls[0] |  | Khan Academy はどちらも使う（中学の講義では bar graph、AP Statistics では bar chart が多い）。 |
-| terms | base-case | mapping_note | ○ | 日本の答案は「[1] n = 1 のとき」と書くだけで、この段に名前をつけないことが多い。 |
 | terms | base-n | pitfalls[0] |  | 共通テスト（令和 6 年度 本試験 数学I・数学A 第 4 問）は「n 進数とは n 進法で表された数のこと」と書き、表し方と数を呼び分ける。 |
 | terms | base-n | pitfalls[1] |  | センター試験（平成 28 年度 本試験 数学I・数学A 第 4 問）は 11011₍₂₎ のように括弧付きの添え字で書く。 |
 | terms | base-of-the-natural-logarithm | pitfalls[1] |  | OpenStax Algebra and Trigonometry は自然対数を ln x、底を省いた log x を常用対数（底 10）と書く（学習指導要領解説には ln が出てこない）。 |
@@ -65,6 +64,7 @@
 | terms | basic-variable | pitfalls[0] |  | 教科書により呼び方が違う: MIT 18.06 は pivot variable、Nicholson は leading variable。 |
 | terms | bezouts-identity | pitfalls[0] |  | 日本の数A では、一次不定方程式の単元で「a, b が互いに素なら ax + by = 1 は整数解をもつ」という形で出てくる。 |
 | terms | biconditional | pitfalls[0] |  | 日本の数I では「双条件文」という名前を使わず、「p ⇔ q」「p は q であるための必要十分条件」「p と q は同値」と言う。 |
+| terms | binomial-distribution | pitfalls[1] |  | OpenStax Introductory Statistics（4.3）は X ~ B(n, p) と書く（学習指導要領解説（数学B）の B(n, p) と同じ文字）。 |
 | terms | binomial-identities | pitfalls[0] | ○ | 日本の教科書は nCk と書くが、英語の本では縦に並べた (n k) や C(n, k) と書き、n choose k と読む。 |
 | terms | binomial-probability | pitfalls[0] |  | 高等学校学習指導要領〔用語・記号〕（数学A）は nCr と書く。 |
 | terms | blocking | mapping_note |  | 見出しの「ブロック化」は学習指導要領解説に無い（日本語版 Wikipedia「実験計画法」にはある）。 |
@@ -75,11 +75,9 @@
 | terms | ceiling-function | pitfalls[0] | ○ | 日本の高校のガウス記号 [x] は x 以下の最大の整数（床関数 ⌊x⌋）で、天井関数ではない。 |
 | terms | center-of-dilation | mapping_note |  | 中学校学習指導要領解説の相似の位置は、対応する点を通る直線が 1 点を通ることで定め、中心が 2 つの図形の間にある場合も含む。 |
 | terms | center-of-dilation | pitfalls[1] |  | 中学校学習指導要領解説の「相似の位置」にある 2 つの図形で、対応する点を結ぶ直線が集まる点（相似の中心）がこれに当たる。 |
-| terms | central-limit-theorem | pitfalls[1] |  | 標本の大きさの目安を n ≥ 30（at least 30 など）とすることが多いが、教科書によって違う。 |
 | terms | chain-rule | pitfalls[0] |  | 学習指導要領解説（数学III）は「合成関数の微分法」と言い、「連鎖律」は出てこない（日本語版 Wikipedia の記事名は「連鎖律」）。 |
 | terms | change-together | mapping_note |  | 「伴って変わる」は中学校学習指導要領解説が関数を導入する言い方（「伴って変わる二つの数量」）で、英語では y changes as x changes、y depends on x、as x increases, y increases のように、文で言い表す。 |
 | terms | change | mapping_note |  | 中学校学習指導要領解説の「x の増加量」「y の増加量」（変化の割合は x の増加量に対する y の増加量の割合）は、英語で change in x、change in y と言い、Δx、Δy（delta x、delta y と読む）とも書く。 |
-| terms | characteristic-equation | mapping_note |  | 日本の数B の「特性方程式」は、aₙ₊₁ = paₙ + q に対して α = pα + q とおく式を指すことが多い。 |
 | terms | chinese-remainder-theorem | pitfalls[1] |  | 日本の数A では「3 で割ると 2 余り、5 で割ると 3 余る整数」のような問題として、定理の名前を出さずに扱うことがある。 |
 | terms | clockwise | mapping_note |  | 回転の向きとしての「負の向き」は学習指導要領解説・共通テスト／センター試験・日本語版 Wikipedia には出てこない（日本語版 Wikipedia「時計回り・反時計回り」は、数学では反時計回りを正の向き、測量の方位角では時計回りを正の向きとする）。 |
 | terms | clockwise | mapping_note |  | 共通テストの問題文の「y 軸上を負の向きに」（令和6年度 本試験 数学I 第3問）は座標が減る向きのことで、英語は in the negative direction（clockwise ではない）。 |
@@ -248,7 +246,7 @@
 | terms | greatest-common-divisor | en.variants[1].note |  | 話し言葉では Khan Academy の中学の講義が最も多く、The Organic Chemistry Tutor・Professor Leonard・patrickJMT が続く。 |
 | terms | greatest-common-divisor | en.variants[3].note |  | 話し言葉は MIT OCW が中心で、Khan Academy の中学の講義にも出てくる。 |
 | terms | greatest-common-divisor | pitfalls[1] |  | 共通テスト・センター試験の問題文は最大公約数を言葉で書き、記号 gcd は出てこない（日本語版 Wikipedia「最大公約数」は gcd(a, b) と書く）。 |
-| terms | grouped-sequence | mapping_note |  | 項をいくつかずつの組（group）に分けて考える日本の受験の手法で、英語で説明するなら group the terms like this: (1), (2, 3), (4, 5, 6), … と式で見せる。 |
+| terms | grouped-sequence | mapping_note |  | 日本語版 Wikipedia「数学 (教科)」は数学B の数列の項目に群数列を挙げる（学習指導要領解説には出てこない）。 |
 | terms | hexadecimal | pitfalls[0] |  | センター試験（平成 28 年度 本試験 数学I・数学A 第 4 問）は 11011₍₂₎ のように括弧つきの添字で基数を書く。 |
 | terms | hl-congruence | pitfalls[0] |  | 日本の直角三角形の合同条件は 2 つある。 |
 | terms | horizontal-line-test | mapping_note |  | 見出しの「水平線テスト」は学習指導要領解説に無い、本プロジェクトの訳語。 |
@@ -382,8 +380,7 @@
 | terms | net-change | mapping_note |  | 見出しの「純変化量」と ja.alt の「純変化定理」は、学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | newtons-law-of-cooling | pitfalls[0] | ○ | 日本の高校の学習指導要領（数学）には含まれない。 |
 | terms | nonlinear-system | mapping_note | ○ | 日本では数I・数II で「連立方程式（2 次を含む）」として扱い、放物線と直線の共有点を求める問題として学ぶ。 |
-| terms | normal-approximation-to-the-binomial | pitfalls[0] |  | 近似を使ってよい目安（np ≥ 10 かつ n(1 − p) ≥ 10 など）は教科書によって数が違う。 |
-| terms | normal-distribution | pitfalls[0] | ○ | 日本の教科書は N(μ, σ²) と分散を書くが、OpenStax Introductory Statistics は X ~ N(μ, σ) と標準偏差を書く（51 件）。 |
+| terms | normal-distribution | pitfalls[0] |  | 学習指導要領解説（数学B）は N(μ, σ²) と分散を書くが、OpenStax Introductory Statistics（6.1）は X ~ N(μ, σ) と標準偏差を書く（同じ本の巻末の公式集は X ~ N(μ, σ²)）。 |
 | terms | normal-probability-plot | mapping_note |  | 見出しの「正規確率プロット」は学習指導要領解説に無い（日本語版 Wikipedia「Q-Qプロット」にはある）。 |
 | terms | nth-term-test | mapping_note |  | 見出しの「n 項判定法」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | nth-term-test | mapping_note | ○ | 日本の教科書では「級数が収束すれば aₙ → 0」の対偶として扱い、判定法の名前はつけない。 |
@@ -407,7 +404,7 @@
 | terms | parent-function | mapping_note |  | 見出しの「親関数」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | parent-function | mapping_note | ○ | 日本では「y = x² のグラフを平行移動したもの」と言い、もとになる関数に名前を付けない（エントリ transformations-of-functions）。 |
 | terms | partial-fraction-decomposition | pitfalls[2] |  | 学習指導要領解説（数学III）は「分数関数」について「簡単な分数関数」のグラフを扱う。 |
-| terms | partial-sum | pitfalls[0] |  | 数B では「初項から第 n 項までの和」、数III では「部分和」。 |
+| terms | partial-sum | pitfalls[0] |  | 共通テスト・センター試験（数学II・数学B）の問題文は「初項から第 n 項までの和」と書き、学習指導要領解説（数学III）は無限級数で「部分和」と書く。 |
 | terms | pemdas | mapping_note |  | 日本には演算の順序の覚え方の決まった名前がない。 |
 | terms | percent-change | mapping_note | ○ | 日本では「〜% 増える」「〜% 減る」「増加率」と言い、増減をまとめた名前はない。 |
 | terms | permutation | pitfalls[0] |  | 高等学校学習指導要領〔用語・記号〕（数学A）は nPr と書く。 |
@@ -472,7 +469,7 @@
 | terms | rational-expression | mapping_note |  | 学習指導要領解説（数学II）は多項式の除法と分数式の四則計算を分けて扱い、「簡単な場合」を分数式の分母の次数が二次程度までのものとする。 |
 | terms | rational-function | mapping_note |  | 日本の数III の「分数関数」は、学習指導要領解説では「簡単な分数関数」のグラフを平行移動と結びつけて扱う。 |
 | terms | rationalizing-the-denominator | pitfalls[2] |  | 分母が √3 + √2 のような 2 項の和のときは、√3 − √2 を分母と分子に掛けて有理化する（高等学校学習指導要領解説は数学I で「分母が二項程度までの分数の形に表された数の分母の有理化」を挙げる）。 |
-| terms | recurrence-relation | mapping_note |  | 日本の「漸化式」はどちらにも当たる。 |
+| terms | recurrence-relation | mapping_note |  | 学習指導要領解説（数学B）は初項と漸化式を分けて書き、漸化式は項の間の関係式だけを指す。 |
 | terms | reduced-row-echelon-form | pitfalls[0] |  | 教科書では Nicholson が使う。 |
 | terms | reduced-row-echelon-form | pitfalls[1] |  | 日本語は教科書により簡約階段形・既約行階段形など呼び方が分かれる。 |
 | terms | reference-angle | mapping_note |  | 見出しの「基準角」は学習指導要領解説に無い、本プロジェクトの訳語（「基準角」「参照角」は学習指導要領解説・共通テスト／センター試験・日本語版 Wikipedia に出てこない）。 |
@@ -572,7 +569,7 @@
 | terms | standard-form | mapping_note |  | 見出しの「一般形」は学習指導要領解説に無い（日本語版 Wikipedia「二次関数」にはある）。 |
 | terms | standard-form | pitfalls[0] |  | 日本の「一般形」を standard form と訳すと、日本の「標準形」a(x − h)² + k の意味に取られることがある（OpenStax Algebra and Trigonometry の standard form はこちら）。 |
 | terms | standard-matrix | mapping_note |  | 見出しの「標準行列」は学習指導要領解説に無い、本プロジェクトの訳語（日本語は「線形写像の表現行列」と言うことが多い）。 |
-| terms | standard-normal-table | mapping_note |  | 日本の数B の正規分布表は 0 から u までの確率 P(0 ≤ Z ≤ u) を載せる形が多い。 |
+| terms | standard-normal-table | mapping_note |  | センター試験（数学II・数学B）の問題に付く正規分布表は P(0 ≤ Z ≤ z₀) を載せる。 |
 | terms | standard-unit-vectors | pitfalls[0] | ○ | 日本の教科書は e₁, e₂（空間では e₃）、米国の教科書は i, j, k と書く（OpenStax Calculus Volume 3）。 |
 | terms | statistical-variable | mapping_note |  | 高等学校学習指導要領解説（数学I データの分析）はデータの項目（身長・点数など）を変量と呼び（共通テストも「英語の得点を変量 x」のように書く）、式の文字の「変数」とは言葉を分ける。 |
 | terms | step-function | pitfalls[0] |  | 最大整数関数 ⌊x⌋（日本のガウス記号、エントリ floor-function）は step function の代表。 |
@@ -667,20 +664,13 @@
 | symbols | curl-del-cross | notes[1] |  | 日本の本の rot F（ローテーション）は、米国の教科書では curl F と書く。 |
 | symbols | equals-question-mark | notes[1] | ○ | 日本の教科書では使わない。 |
 | symbols | for-all-quantifier | notes[1] | ○ | 記号は英語の本で使い、日本の高校の教科書は言葉で「すべての」と書く。 |
-| symbols | gauss-bracket-jp | notes[0] |  | 日本のガウス記号 [x] は英語では床関数 ⌊x⌋ と書き、the floor of x と読む。 |
 | symbols | gcd-notation | notes[1] |  | 米国の Pre-Algebra の教材は greatest common factor（GCF）と呼び、中学の教材（Khan Academy の中学）と解説チャンネルに多い。 |
-| symbols | geq-sign | notes[1] |  | 米国の教科書は ≥ と書く（≧ との違いは inequality-symbols）。 |
-| symbols | integral-definite | notes[1] | ○ | 日本では「インテグラル a から b、f(x) dx」と記号を左から順に読むことが多い。 |
-| symbols | leq-sign | notes[1] |  | 米国の教科書は ≤ と書く（≦ との違いは inequality-symbols）。 |
-| symbols | log-e-jp | notes[0] |  | 数III の log x（底 e）は、英語では ln x と書いて the natural log of x か L N x と読む。 |
-| symbols | log-e-jp | notes[1] |  | ∫ 1/x dx = log\|x\| + C は英語の教科書では ln\|x\| + C と書く。 |
-| symbols | long-division-bracket | notes[0] |  | 筆算を進めるときは five goes into twenty four times（5 は 20 に 4 回入る）のように goes into を使い、中学の教材（Khan Academy の中学）に多い。 |
+| symbols | geq-sign | notes[1] |  | 日本の記号（≧）との違いは慣習差 inequality-symbols。 |
+| symbols | leq-sign | notes[1] |  | 日本の記号（≦）との違いは慣習差 inequality-symbols。 |
 | symbols | negative-sign | notes[1] |  | the opposite of は中学の教材（Khan Academy の中学）に多い。 |
 | symbols | parallel-sign | notes[1] | ○ | 日本の中学校の〔用語・記号〕は // と書き、CK-12 Geometry は ∥ と書く。 |
 | symbols | permutation-npr | notes[0] | ○ | 記法の違い: 日本の教科書は ₙPᵣ と書くが、OpenStax Algebra and Trigonometry 2e ／ Precalculus 2e（13.5 ／ 11.5 Counting Principles）は P(n, r) と書く（各 11 件、数を入れた P(12, 9) の形が各 12 件）。 |
-| symbols | piecewise-brace | notes[1] |  | 米国の教科書は条件を式の右に書き（x² if x ≥ 0）、日本のように ( ) でくくらないことが多い。 |
 | symbols | polar-form-cis | notes[1] |  | 日本の高等学校学習指導要領解説には cis が出てこない（日本語版 Wikipedia「複素数」は r cis(φ) と書くこともあると説明する）。 |
-| symbols | proportion-colon | notes[0] |  | 米国の教科書は比例式を a/b = c/d の分数の形で書くことが多く、そのときは a over b equals c over d と読む。 |
 | symbols | repeated-combination-h-jp | notes[0] | ○ | ₙHᵣ は日本の教科書の記号で、米国にこの記号はない。 |
 | symbols | similar-sign | notes[0] |  | 日本の ∽ も読みは同じ。 |
 | symbols | union-sign | notes[1] |  | 米国の統計の教科書は確率で A OR B とも書く（probability-of-union）。 |

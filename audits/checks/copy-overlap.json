@@ -2,11 +2,11 @@
   "summary": {
     "checked": "2026-09-27",
     "rule": "English: 8+ consecutive words; Japanese: 20+ characters (whitespace removed); a span that is the entry's headword and fewer than that many other words / characters is left out",
-    "fields": 15651,
+    "fields": 15660,
     "englishSources": 3884,
-    "japaneseSources": 494,
-    "spans": 314,
-    "entries": 280,
+    "japaneseSources": 512,
+    "spans": 311,
+    "entries": 275,
     "headwordSpans": 147,
     "headwordEntries": 136
   },
@@ -342,17 +342,6 @@
       "span": "then the two solids have the same volume",
       "sources": {
         "ref:im-9-12": 2
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "central-limit-theorem",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 9,
-      "span": "the distribution of the sample mean is approximately normal",
-      "sources": {
-        "openstax-introstats": 1
       }
     },
     {
@@ -1657,17 +1646,6 @@
     },
     {
       "collection": "terms",
-      "id": "law-of-large-numbers",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "the number of trials or the sample size",
-      "sources": {
-        "openstax-introstats": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "laws-of-exponents",
       "field": "examples[0].en",
       "lang": "en",
@@ -2050,20 +2028,6 @@
       "length": 8,
       "span": "a relation that is reflexive antisymmetric and transitive",
       "sources": {
-        "ref:levin-dmoi4": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "partial-sum",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "of the first n terms of a sequence",
-      "sources": {
-        "openstax-algtrig": 2,
-        "openstax-precalculus": 2,
-        "openstax-intalg": 2,
         "ref:levin-dmoi4": 1
       }
     },
@@ -2520,6 +2484,17 @@
     },
     {
       "collection": "terms",
+      "id": "sampling-distribution-of-the-mean",
+      "field": "en.variants[0].note",
+      "lang": "en",
+      "length": 9,
+      "span": "7 1 the central limit theorem for sample means",
+      "sources": {
+        "openstax-introstats": 2
+      }
+    },
+    {
+      "collection": "terms",
       "id": "scalar-triple-product",
       "field": "examples[1].en",
       "lang": "en",
@@ -2737,17 +2712,6 @@
     },
     {
       "collection": "terms",
-      "id": "solve-the-recurrence",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 8,
-      "span": "find a formula for the nth term of",
-      "sources": {
-        "ref:levin-dmoi4": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "solving-by-graphing",
       "field": "definition_en",
       "lang": "en",
@@ -2848,17 +2812,6 @@
     },
     {
       "collection": "terms",
-      "id": "standard-normal-distribution",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 9,
-      "span": "normal distribution with mean 0 and standard deviation 1",
-      "sources": {
-        "ref:ap-statistics-ced": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "standard-normal-table",
       "field": "mapping_note",
       "lang": "en",
@@ -2893,10 +2846,10 @@
     {
       "collection": "terms",
       "id": "sum-of-a-geometric-sequence",
-      "field": "definition_en",
+      "field": "mapping_note",
       "lang": "en",
-      "length": 11,
-      "span": "the sum of the first n terms of a geometric sequence",
+      "length": 13,
+      "span": "geometric series the sum of the first n terms of a geometric series",
       "sources": {
         "openstax-algtrig": 31,
         "openstax-precalculus": 31,
@@ -2906,25 +2859,6 @@
         "openstax-calculus": 1,
         "ref:ap-calculus-ab-bc-ced": 1,
         "ref:im-9-12": 1
-      }
-    },
-    {
-      "collection": "terms",
-      "id": "sum-of-an-arithmetic-sequence",
-      "field": "definition_en",
-      "lang": "en",
-      "length": 12,
-      "span": "the sum of the first n terms of an arithmetic sequence the",
-      "sources": {
-        "openstax-algtrig": 31,
-        "openstax-precalculus": 31,
-        "openstax-intalg": 15,
-        "ref:levin-dmoi4": 4,
-        "khan-ap-calc": 2,
-        "openstax-calculus": 1,
-        "ref:ap-calculus-ab-bc-ced": 1,
-        "ref:im-9-12": 1,
-        "khan-algebra": 1
       }
     },
     {
@@ -3264,18 +3198,6 @@
     },
     {
       "collection": "symbols",
-      "id": "difference-quotient-limit",
-      "field": "notes[0]",
-      "lang": "en",
-      "length": 17,
-      "span": "the limit as h approaches zero of f of x plus h minus f of x all",
-      "sources": {
-        "khan-ap-calc": 7,
-        "yt:organicchem": 1
-      }
-    },
-    {
-      "collection": "symbols",
       "id": "directional-derivative-notation",
       "field": "notes[0]",
       "lang": "en",
@@ -3352,8 +3274,34 @@
       "id": "limit-from-left",
       "field": "notes[0]",
       "lang": "en",
-      "length": 9,
-      "span": "x a x approaches a from the left x",
+      "length": 8,
+      "span": "x a x approaches a from the left",
+      "sources": {
+        "openstax-algtrig": 1,
+        "openstax-precalculus": 1
+      }
+    },
+    {
+      "collection": "symbols",
+      "id": "limit-from-left",
+      "field": "notes[0]",
+      "lang": "en",
+      "length": 12,
+      "span": "the limit of f x as x approaches a from the left",
+      "sources": {
+        "khan-ap-calc": 7,
+        "openstax-calculus": 5,
+        "openstax-precalculus": 3,
+        "ref:ap-calculus-ab-bc-ced": 1
+      }
+    },
+    {
+      "collection": "symbols",
+      "id": "limit-from-right",
+      "field": "notes[0]",
+      "lang": "en",
+      "length": 8,
+      "span": "x a x approaches a from the right",
       "sources": {
         "openstax-algtrig": 1,
         "openstax-precalculus": 1
@@ -3364,11 +3312,13 @@
       "id": "limit-from-right",
       "field": "notes[0]",
       "lang": "en",
-      "length": 9,
-      "span": "x a x approaches a from the right x",
+      "length": 12,
+      "span": "the limit of f x as x approaches a from the right",
       "sources": {
-        "openstax-algtrig": 1,
-        "openstax-precalculus": 1
+        "khan-ap-calc": 7,
+        "openstax-calculus": 5,
+        "openstax-precalculus": 3,
+        "ref:ap-calculus-ab-bc-ced": 1
       }
     },
     {
@@ -3381,6 +3331,17 @@
       "sources": {
         "khan-ap-calc": 6,
         "yt:organicchem": 4
+      }
+    },
+    {
+      "collection": "symbols",
+      "id": "long-division-bracket",
+      "field": "notes[0]",
+      "lang": "en",
+      "length": 8,
+      "span": "the divisor 3 goes into 18 six times",
+      "sources": {
+        "openstax-prealgebra": 1
       }
     },
     {
@@ -5370,11 +5331,12 @@
       "id": "write-out-the-first-few-terms",
       "field": "examples[1].en",
       "lang": "en",
-      "length": 9,
-      "span": "write out the first few terms of the sequence",
+      "length": 8,
+      "span": "write the first five terms of the sequence",
       "sources": {
-        "ref:levin-dmoi4": 8,
-        "openstax-intalg": 1
+        "openstax-intalg": 26,
+        "openstax-algtrig": 16,
+        "openstax-precalculus": 16
       }
     },
     {
