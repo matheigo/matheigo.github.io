@@ -7,7 +7,7 @@
       "register": "standard"
     },
     {
-      "text": "curly braces",
+      "text": "curly brackets",
       "register": "spoken"
     }
   ],
@@ -18,14 +18,15 @@
   "term_ref": null,
   "level": {
     "jp": [
-      "中1"
+      "中1",
+      "数I"
     ],
     "us": [
       "Pre-Algebra"
     ]
   },
   "notes": [
-    "{ } は braces か curly braces と呼ぶ。集合 {1, 2, 3} を読むときは記号の名前を言わず the set one, two, three と言う（roster-braces）。"
+    "{ } は braces と呼び、curly brackets とも言う。集合を読むときは波かっこの名前を言わず、{1, 2, 3} は the set containing one, two, and three（roster-braces）、{x | x > 0} は the set of all x such that …（set-builder-braces）と読む。"
   ],
   "sources": [
     {
@@ -33,20 +34,39 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Intermediate Algebra 2e"
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "1.1 Use the Language of Algebra（Grouping Symbols: braces { }）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Elementary Algebra 2e"
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "1.2 Use the Language of Algebra（Grouping Symbols: braces { }）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "グループ化の記号と集合の { } を braces と呼ぶ（OpenStax 4 冊で 9 件。読みを決めた参照）"
+      "note": "1.1・2.7（braces are used to indicate a set）・3.2 Domain and Range（Use braces）。グループ化の記号と集合の { } を braces と呼ぶ（OpenStax 4 冊で 9 件。読みを決めた参照）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "2.1 Use the Language of Algebra（Common Grouping Symbols: braces { }）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「括弧」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%8B%AC%E5%BC%A7",
+      "note": "波括弧（なみかっこ）。中括弧とも"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 集合と命題（A={x|x>2}）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "curly braces | curly brace | curly brackets | curly bracket": 5
@@ -56,13 +76,13 @@
       "mit-18.03",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 !curly braces（本文 9 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

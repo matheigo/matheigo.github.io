@@ -1,6 +1,6 @@
 {
   "id": "wave-dash-range-jp",
-  "latex": "3 \\sim 5",
+  "latex": "3\\text{〜}5",
   "spoken_en": [
     {
       "text": "from three to five",
@@ -11,7 +11,7 @@
       "register": "spoken"
     }
   ],
-  "spoken_ja": "3 から 5 ／ 10 以上 20 未満",
+  "spoken_ja": "3 から 5",
   "name_en": "range written with a wave dash (Japanese)",
   "name_ja": "範囲の〜",
   "category": "notation-other",
@@ -23,20 +23,43 @@
     "us": []
   },
   "notes": [
-    "日本の「3〜5」は英語では from three to five か between three and five と言う。",
-    "端を含むかは「〜」でも to でもはっきりしないので、必要なら inclusive と言うか不等号で書く。"
+    "「3〜5」は from three to five か between three and five と言う（範囲の「〜」は日本語の書き方で、「から」と読む: 日本語版 Wikipedia「波ダッシュ」）。",
+    "「〜」は前後の数を含む（日本語版 Wikipedia「波ダッシュ」）。度数分布表の階級「10〜20」は 10 以上 20 未満（中学校学習指導要領解説 中1）で、IM Grade 6 8.7 もヒストグラムの階級は左端を含み右端を含まないとする。英語で端を含むことをはっきりさせるときは inclusive を添える（OpenStax Introductory Statistics 1.3・3.1）か、不等号で書く。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「波ダッシュ」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%B3%A2%E3%83%80%E3%83%83%E3%82%B7%E3%83%A5",
+      "note": "範囲を表す波ダッシュ（「から」と読む。前後の語を含む）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "中1 D データの活用 表1（階級 0〜10、10〜20 …、以上・未満）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "1.3 Frequency, Frequency Tables, and Levels of Measurement（from five to 20 years, inclusive）・3.1 Terminology（between zero and one, inclusive）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 6 8.7（ヒストグラムの階級は左端を含み右端を含まない）"
     }
   ],
   "confidence": "likely",
   "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "from one to * | from two to * | from three to * | from four to * | from five to * | from ten to *": 472,
-      "between one and * | between two and * | between three and * | between four and * | between five and * | between ten and *": 150
+      "!went !get from one to * | !went !get from two to * | !went !get from three to * | !went !get from four to * | !went !get from five to * | !went !get from ten to *": 459,
+      "!difference !distance !halfway !average !way between one and * | !difference !distance !halfway !average !way between two and * | !difference !distance !halfway !average !way between three and * | !difference !distance !halfway !average !way between four and * | !difference !distance !halfway !average !way between five and * | !difference !distance !halfway !average !way between ten and *": 122
     },
     "sources": [
       "khan-algebra",
@@ -55,6 +78,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -15,7 +15,7 @@
   "name_en": "brackets",
   "name_ja": "角かっこ（[ ]）",
   "category": "notation-other",
-  "term_ref": "parentheses",
+  "term_ref": null,
   "level": {
     "jp": [
       "中1"
@@ -34,18 +34,32 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Precalculus 2e"
+      "title": "OpenStax Precalculus 2e",
+      "note": "1.2 Domain and Range（Brackets, [ or ], are used to indicate that an endpoint is included）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 2"
+      "title": "OpenStax Prealgebra 2e",
+      "note": "2.1 Use the Language of Algebra（Common Grouping Symbols: brackets [ ]）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Algebra (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Algebra",
+      "note": "1.4.1 Order of Operations（Brackets [ ], second level of grouping symbols）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「括弧」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%8B%AC%E5%BC%A7",
+      "note": "角括弧（ブラケット）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "!square brackets | !square bracket": 180,
+      "!square !curly !angle !round brackets | !square !curly !angle !round bracket": 173,
       "square brackets | square bracket": 2
     },
     "sources": [
@@ -64,6 +78,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -669,15 +669,16 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "the quantity a plus b, squared": "the quantity *",
     "a plus b, all squared": "all squared",
   },
+  // not curly / angle / round brackets (Phase 5 監査 10, batch 36)
   "square-brackets": {
-    "brackets": "!square brackets | !square bracket",
+    "brackets": "!square !curly !angle !round brackets | !square !curly !angle !round bracket",
     "square brackets": "square brackets | square bracket",
   },
   "curly-braces": {
     // Plural only (Phase 3 記号と慣習差の前の修正 2): a singular "brace" is mostly a
     // wooden brace in the references (Pythagorean word problems)
     "braces": "!curly braces",
-    "curly braces": "curly braces | curly brace | curly brackets | curly bracket",
+    "curly brackets": "curly braces | curly brace | curly brackets | curly bracket", // the corpus says curly brackets (Phase 5 監査 10, batch 36)
   },
   "percent-sign": {
     "twenty-five percent": "* percent",
@@ -707,9 +708,12 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "equals-question-mark": {
     "does three times two plus one equal seven": "does * equal *",
   },
+  // not a change (she went from ten to 40) or a difference / distance / midpoint (Phase 5 監査 10, batch 36)
   "wave-dash-range-jp": {
-    "from three to five": "from one to * | from two to * | from three to * | from four to * | from five to * | from ten to *",
-    "between three and five": "between one and * | between two and * | between three and * | between four and * | between five and * | between ten and *",
+    "from three to five":
+      "!went !get from one to * | !went !get from two to * | !went !get from three to * | !went !get from four to * | !went !get from five to * | !went !get from ten to *",
+    "between three and five":
+      "!difference !distance !halfway !average !way between one and * | !difference !distance !halfway !average !way between two and * | !difference !distance !halfway !average !way between three and * | !difference !distance !halfway !average !way between four and * | !difference !distance !halfway !average !way between five and * | !difference !distance !halfway !average !way between ten and *",
   },
   "fraction-a-over-b": {
     "a over b": "* over *",
@@ -1421,8 +1425,9 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "parallelogram ABCD": "parallelogram a b c d | parallelogram abcd | parallelogram p q r s | parallelogram pqrs | parallelogram e f g h | parallelogram efgh | parallelogram w x y z | parallelogram wxyz",
   },
   // A′ and the derivative a′(t) are said the same; "a prime number" and "a prime suspect" are not the mark
+  // also not "the square of a prime", "all a prime", "a prime source of confusion" (Phase 5 監査 10, batch 36)
   "prime-label-image": {
-    "A prime": "!is !not !have a prime !number !numbers !factor !factors !factorization !suspect !or | b prime | c prime | d prime",
+    "A prime": "!is !not !have !of !all !like !it's !what a prime !number !numbers !factor !factors !factorization !suspect !or !source !course | b prime | c prime | d prime",
     "A double prime": "a double prime | b double prime | c double prime",
   },
   "ordered-pair": {

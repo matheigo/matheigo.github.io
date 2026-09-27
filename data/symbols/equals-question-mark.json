@@ -16,12 +16,12 @@
     "jp": [],
     "us": [
       "Pre-Algebra",
-      "Algebra 1"
+      "Algebra 1",
+      "Geometry"
     ]
   },
   "notes": [
-    "≟ は米国の教科書の検算（Check）で使い、「等しいか確かめる」ことを示す。does … equal …? と疑問文で読む。",
-    "日本の教科書では使わない。"
+    "OpenStax Prealgebra 2e（2.3）は ≟ を左辺と右辺が等しいかを問う記号とし、OpenStax の Prealgebra・Elementary Algebra・Intermediate Algebra は解の確かめ（Check）で使う。CK-12 Geometry は三平方の定理の確かめに使う。does … equal …? と疑問文で読む。"
   ],
   "sources": [
     {
@@ -30,16 +30,22 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e",
-      "note": "解の検算（Check）で ≟ を使う"
+      "note": "2.1 ほか（解の検算（Check）で ≟ を使う）"
     },
     {
       "type": "reference",
       "title": "CK-12 Foundation, CK-12 Geometry (K12 LibreTexts)",
-      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry"
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.27 The Pythagorean Theorem・4.30・4.33（a² + b² ≟ c² で確かめる）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "2.3 Solving Equations Using the Subtraction and Addition Properties of Equality（≟ asks whether the left side is equal to the right side）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "does * equal *": 189
@@ -60,6 +66,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

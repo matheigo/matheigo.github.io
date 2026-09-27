@@ -15,11 +15,12 @@
   "level": {
     "jp": [],
     "us": [
-      "Geometry"
+      "Geometry",
+      "Precalculus"
     ]
   },
   "notes": [
-    "米国の幾何の矢印の AB は ray AB と読む。始点が A。"
+    "矢印の AB は ray AB と読む（CK-12 Geometry 1.1 Geometry Terms）。始点の A を先に言う。同じ形の矢印はベクトル AB にも使う（vector-ab-arrow）。"
   ],
   "sources": [
     {
@@ -29,11 +30,16 @@
       "type": "reference",
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
-      "note": "矢印の AB（39 件）"
+      "note": "1.1 Geometry Terms（Say It: Ray CD）・矢印の AB（39 件）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "5.1 Angles（ray EF, or in symbol form EF→）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "ray a b | ray ab | ray b a | ray ba | ray b c | ray bc | ray a c | ray ac | ray c d | ray cd | ray a d | ray ad | ray b d | ray bd": 17
@@ -42,6 +48,9 @@
       "khan-middle",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-09-27"
+  },
+  "related": [
+    "figure-and-measure-notation"
+  ]
 }

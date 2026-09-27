@@ -29,15 +29,23 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Precalculus 2e"
+      "title": "OpenStax Precalculus 2e",
+      "note": "5.1 Angles（ギリシャ文字の表: γ gamma）・8.1 Non-right Triangles: Law of Sines（angle γ (gamma)）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "7.1 Angles・10.1 Non-right Triangles: Law of Sines（angle γ (gamma)）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「Γ」",
+      "url": "https://ja.wikipedia.org/wiki/%CE%93",
+      "note": "ガンマ（英: gamma）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "gamma": 4
@@ -47,13 +55,13 @@
       "khan-middle",
       "mit-18.06"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 gamma（本文 7 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }
