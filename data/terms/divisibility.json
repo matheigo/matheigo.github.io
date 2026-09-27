@@ -58,7 +58,7 @@
   "collocations": [],
   "pitfalls": [
     "b | a は「b が a を割り切る」（b divides a）で、縦棒の左が約数。分数 b/a や a ÷ b と読み違えない。",
-    "数A では「a は b で割り切れる」「a は b の倍数」と言い、divisibility に当たる名詞はあまり使わない。",
+    "学習指導要領解説（中学校・高等学校）は約数・倍数の言い方で扱い、「整除性」「整除」は出てこない。センター試験の問題文は「37a が 4 で割り切れる」のように「割り切れる」と言う。",
     "用例コーパスでは話し言葉・書き言葉とも使う。書き言葉は OpenStax Prealgebra・MIT の講義ノート・OpenStax Elementary Algebra、話し言葉は Khan Academy の中学の講義が中心。",
     "「a は 3 で割り切れる」は a is divisible by 3。中 2 の証明では、3 の倍数になること（3 × 整数の形に書けること）を示して割り切れることを言う。"
   ],
@@ -72,6 +72,24 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "「整除性」「整除」は出てこない（約数・倍数の言い方）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "「整除性」「整除」は出てこない（約数・倍数の言い方）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成29年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20180601/https://www.dnc.ac.jp/albums/abm.php?f=abm00009412.pdf&n=%E6%95%B0%E5%AD%A6%E2%85%A0%E3%83%BB%E6%95%B0%E5%AD%A6%EF%BC%A1.pdf",
+      "note": "第 4 問: 37a が 4 で割り切れるのは"
     }
   ],
   "confidence": "likely",
@@ -80,7 +98,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "divisibility": 19

@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "米国の教材（CED・OpenStax・IM・CK-12）には出てこない（4 つとも 0 件）。CK-12 Geometry と IM Geometry は円周角（inscribed angle）と円周角の定理は扱うが、その逆は扱わない。見出しの英語は本プロジェクトの訳。",
+  "mapping_note": "米国の教材（CED・OpenStax・IM・CK-12）には出てこない（4 つとも 0 件）。CK-12 Geometry（6.14 Inscribed Angles in Circles）と IM Geometry（7.4 Quadrilaterals in Circles・7.5 Triangles in Circles）は円周角（inscribed angle）と円周角の定理を扱うが、その逆（2 点が直線の同じ側にあって角が等しければ 4 点は同じ円周上）は出てこない。見出しの英語は本プロジェクトの訳。",
   "domains": [
     "geometry"
   ],
@@ -57,6 +57,18 @@
   "sources": [
     {
       "type": "mext-translation"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.14 Inscribed Angles in Circles（円周角の定理。逆は出てこない）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 7.4 Quadrilaterals in Circles・7.5 Triangles in Circles（円周角。逆は出てこない）"
     }
   ],
   "confidence": "likely",
@@ -65,7 +77,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "sources": [],
     "counted": "2026-09-25"

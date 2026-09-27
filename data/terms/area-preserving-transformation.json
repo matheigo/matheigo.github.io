@@ -14,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。等積変形に当たる決まった名前はなく、底辺が共通で高さが等しい三角形は面積が等しい（triangles with the same base and the same height have equal areas）と文で説明する。見出しの area-preserving transformation は本プロジェクトの説明的な訳。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。等積変形に当たる名前は出てこず、底辺が共通で高さが等しい三角形は面積が等しい（triangles with the same base and the same height have equal areas）と文で説明する。見出しの area-preserving transformation は本プロジェクトの説明的な訳。",
   "domains": [
     "geometry"
   ],
@@ -46,7 +46,7 @@
   "pitfalls": [
     "高さが等しいと言えるのは、動かす頂点が底辺に平行な直線の上にあるとき。平行でない直線にそって動かすと高さが変わり、面積も変わる。",
     "等積変形では形が変わる。平行移動・回転・対称移動（エントリ rigid-motion）のように形も大きさも変わらない移動とは別のもの。",
-    "見出しの area-preserving transformation は本プロジェクトの説明的な訳で、英語の決まった名前ではない。"
+    "見出しの area-preserving transformation は本プロジェクトの説明的な訳で、用例コーパスと参照には出てこない。"
   ],
   "related": [
     "area",

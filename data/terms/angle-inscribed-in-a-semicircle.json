@@ -8,14 +8,13 @@
   "en": {
     "term": "angle inscribed in a semicircle",
     "alt": [
-      "inscribed in a semicircle",
-      "Thales' theorem"
+      "inscribed in a semicircle"
     ],
     "uk": null
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。日本語の「直径に対する円周角」に当たる名前はなく、an angle inscribed in a semicircle is a right angle のように性質を文で言う。この性質を Thales' theorem（タレスの定理）と人名で呼ぶこともある。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。日本語の「直径に対する円周角」に当たる名前は出てこず、an angle inscribed in a semicircle is a right angle のように性質を文で言う（本プロジェクトの書き方の例）。英語版 Wikipedia「Thales's theorem」は、この性質（直径に対する円周角は直角）を Thales's theorem と呼ぶ（記事は定理の名前で、角の名前ではない）。",
   "domains": [
     "geometry"
   ],
@@ -60,6 +59,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Thales%27s_theorem",
+      "note": "記事「Thales's theorem」（数学カテゴリから 3 段。冒頭で太字）: 直径に対する円周角は直角"
     }
   ],
   "confidence": "likely",

@@ -8,14 +8,15 @@
     ]
   },
   "en": {
-    "term": "tangent-chord theorem",
+    "term": "chord/tangent angle theorem",
     "alt": [
+      "tangent-chord theorem",
       "tangent-chord angle"
     ]
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスには tangent-chord theorem・tangent-chord angle が話・書とも出てこない）。英語では中身をそのまま言う: the angle between a tangent and a chord equals the inscribed angle on the other side of the chord ／ is half the intercepted arc（接線と弦のなす角は、その角の内部にある弧に対する円周角に等しく、その弧の中心角の半分）。英語版 Wikipedia「Circumcircle」は同じ定理を alternate segment theorem と呼ぶ（地域は書いていない）。",
+  "mapping_note": "CK-12 Geometry はこの定理を Chord/Tangent Angle Theorem と呼び、接線と弦のなす角はその角の内部にある弧の中心角の半分（half the measure of the intercepted arc）と述べる（6.16 Angles On and Inside a Circle、5 件）。見出しは CK-12 の呼び方。用例コーパスには chord/tangent angle theorem・tangent-chord theorem・tangent-chord angle が話・書とも出てこない。日本の接弦定理の形（接線と弦のなす角は、その角の内部にある弧に対する円周角に等しい）は、the angle between a tangent and a chord equals the inscribed angle on the other side of the chord のように文で言う（本プロジェクトの書き方の例）。英語版 Wikipedia「Circumcircle」は同じ定理を alternate segment theorem と呼ぶ（地域は書いていない）。",
   "domains": [
     "geometry"
   ],
@@ -44,7 +45,7 @@
       "register": "written"
     },
     {
-      "en": "By the tangent-chord theorem, ∠ACB = ∠BAT = 65°.",
+      "en": "By the chord/tangent angle theorem, ∠ACB = ∠BAT = 65°.",
       "ja": "接弦定理より ∠ACB = ∠BAT = 65°。",
       "register": "written"
     }
@@ -69,6 +70,12 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Circumcircle",
       "note": "記事「Circumcircle」: 接線と弦のなす角が反対側の弧の円周角に等しいことを alternate segment theorem と呼ぶ"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.16 Angles On and Inside a Circle（Chord/Tangent Angle Theorem、5 件）"
     }
   ],
   "confidence": "likely",
@@ -84,8 +91,8 @@
   },
   "flags": [
     {
-      "code": "corpus-no-fixed-expression",
-      "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 chord/tangent angle theorem（CK-12 Geometry 6.16 Angles On and Inside a Circle・計 5 件）。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]

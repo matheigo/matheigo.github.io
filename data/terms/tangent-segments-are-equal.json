@@ -7,12 +7,14 @@
   },
   "en": {
     "term": "tangent segments are equal",
-    "alt": [],
+    "alt": [
+      "two tangents theorem"
+    ],
     "uk": null
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "CK-12 Geometry は tangent segments と呼ぶ（6.18 Tangent Lines ほか、3 件）。用例コーパスには tangent segments がほとんど出てこない（話し言葉の blackpenredpen だけで、書き言葉には出てこない）。英語では定理の中身をそのまま文で言う: the two tangent segments drawn to a circle from a point outside it are congruent（円の外部の 1 点から引いた 2 本の接線の、その点から接点までの線分は合同）。",
+  "mapping_note": "CK-12 Geometry は tangent segments と呼ぶ（6.18 Tangent Lines ほか、3 件）。用例コーパスには tangent segments がほとんど出てこない（話し言葉の blackpenredpen だけで、書き言葉には出てこない）。CK-12 Geometry はこの性質を Two Tangents Theorem と呼び、if two tangent segments are drawn to one circle from the same external point, then they are congruent と文で述べる（6.18 Tangent Lines）。",
   "domains": [
     "geometry"
   ],
@@ -69,7 +71,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "tangent segments": 1
@@ -77,13 +79,13 @@
     "sources": [
       "yt:blackpenredpen"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 tangent segments（CK-12 Geometry 6.18 Tangent Lines・CK-12 Geometry 6.2 Identify Circle Components・計 3 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-26"
     }
   ]
 }

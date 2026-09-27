@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。米国の Geometry は、日本の 2 つの条件のうち「斜辺と他の 1 辺がそれぞれ等しい」を HL（hypotenuse-leg）と呼んで定理として扱い、「斜辺と 1 つの鋭角がそれぞれ等しい」は AAS で示せる。2 つをまとめた決まった名前はない。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。CK-12 Geometry は、日本の 2 つの条件のうち「斜辺と他の 1 辺がそれぞれ等しい」を Hypotenuse-Leg (HL) Congruence Theorem と呼んで定理として扱う（4.16 HL Triangle Congruence）。「斜辺と 1 つの鋭角がそれぞれ等しい」は AAS で示せる。2 つをまとめた名前は用例コーパスと参照に出てこない。",
   "domains": [
     "geometry"
   ],
@@ -29,7 +29,7 @@
     ]
   },
   "definition_ja": "2 つの直角三角形が合同になるための条件。「斜辺と 1 つの鋭角がそれぞれ等しい」「斜辺と他の 1 辺がそれぞれ等しい」の 2 つがある。",
-  "definition_en": "The conditions that make two right triangles congruent: the hypotenuses and one pair of acute angles are equal, or the hypotenuses and one pair of legs are equal.",
+  "definition_en": "The two tests for congruent right triangles: equal hypotenuses together with one pair of equal acute angles, or equal hypotenuses together with one pair of equal legs.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -60,6 +60,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.16 HL Triangle Congruence（Hypotenuse-Leg (HL) Congruence Theorem）"
     }
   ],
   "confidence": "likely",
