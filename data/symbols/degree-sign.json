@@ -5,6 +5,10 @@
     {
       "text": "thirty degrees",
       "register": "standard"
+    },
+    {
+      "text": "a thirty-degree angle",
+      "register": "spoken"
     }
   ],
   "spoken_ja": "30 度",
@@ -22,7 +26,7 @@
     ]
   },
   "notes": [
-    "30° は thirty degrees と読む。"
+    "30° は thirty degrees と読む。名詞の前では a thirty-degree angle のように degree と単数で言う。"
   ],
   "sources": [
     {
@@ -32,18 +36,20 @@
       "type": "reference",
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
-      "note": "角の大きさ（° 1,568 件）"
+      "note": "1.9 Measuring Angles・1.10 Classifying Angles（° の記号は degrees）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "7.1 Angles（90 degrees = 90°）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "* degrees !of !fahrenheit !celsius !f !c": 1185
+      "* degrees !of !fahrenheit !celsius !f !c": 1185,
+      "* degree angle": 95
     },
     "sources": [
       "khan-algebra",
@@ -62,6 +68,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

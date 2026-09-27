@@ -22,8 +22,8 @@
     "us": []
   },
   "notes": [
-    "ₙHᵣ は日本の教科書の記号で、米国にこの記号はない。読みは the number of combinations with repetition of n things taken r at a time。",
-    "米国では C(n + r − 1, r) と書く（repeated-combination-notation）。"
+    "ₙHᵣ は日本語版 Wikipedia「重複組合せ」が使う記号。読みは the number of combinations with repetition of n things taken r at a time。",
+    "英語で書くときは二項係数 C(n + r − 1, r) に直す（Levin 3.5。repeated-combination-notation）。"
   ],
   "sources": [
     {
@@ -33,7 +33,7 @@
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction (4th edition)",
       "url": "https://discrete.openmathbooks.org/pdfs/dmoi4.pdf",
-      "note": "3.5 Stars and Bars"
+      "note": "3.5 Counting Multisets（sticks and stones。stars and bars・balls and bins とも）"
     },
     {
       "type": "reference",
@@ -43,7 +43,7 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"

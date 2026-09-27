@@ -33,15 +33,17 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Precalculus 2e"
+      "title": "OpenStax Precalculus 2e",
+      "note": "8.5 Polar Form of Complex Numbers（|z| を the absolute value of z と定義。modulus とも呼ぶ。読みを決めた参照）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "10.5 Polar Form of Complex Numbers（the absolute value of z、modulus）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "the modulus of *": 4,
@@ -51,13 +53,13 @@
       "mit-18.03",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 the absolute value of z | the absolute value of a complex（本文 12 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

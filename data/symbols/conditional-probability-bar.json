@@ -20,9 +20,9 @@
       "数A"
     ],
     "us": [
-      "Algebra 2",
       "AP Statistics",
-      "Intro Statistics"
+      "Intro Statistics",
+      "Discrete Math"
     ]
   },
   "notes": [
@@ -34,17 +34,24 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "3.1 Terminology（The conditional probability of A given B is written P(A|B)）・付録 Mathematical Phrases, Symbols, and Formulas（P(A | B)、probability of A given B）"
     },
     {
       "type": "reference",
       "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
-      "note": "Unit 2（確率）"
+      "note": "Topic 2.6（conditional probability、P(A | B)）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.7 Probability（Definition 3.7.14: the conditional probability of A given B, P(A|B)）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "the probability of * given *": 68
@@ -56,6 +63,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -1135,9 +1135,11 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "divides-bar": {
     "a divides b": "* divides *",
   },
+  // An abbreviation and its full name are two readings, as gcd and lcm are (the GCF of was the full name's count) (Phase 5 監査 10, batch 35)
   "gcd-notation": {
-    "the GCF of a and b": "gcf | greatest common factor",
     "the greatest common divisor of a and b": "greatest common divisor",
+    "the greatest common factor of a and b": "greatest common factor",
+    "the GCF of a and b": "gcf | g c f",
     "the gcd of a and b": "gcd | g c d",
   },
   "lcm-notation": {
@@ -1256,9 +1258,9 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "the probability that X equals k": "the probability that x equals * | the probability that x is equal to * | the probability that x is *",
     "P of X equals k": "p of x equals * | p of x is equal to",
   },
+  // E of X was log base e of x and the error function (Phase 5 監査 10, batch 35)
   "expected-value-e-of-x": {
     "the expected value of X": "the expected value of *",
-    "E of X": "e of x | e of y | e of capital x",
     "the mean of X": "the mean of x | the mean of the random variable",
     "mu sub X": "mu sub x | mu x",
   },
@@ -1277,8 +1279,9 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "sigma sub X": "sigma sub x | sigma x",
     "sigma of X": "sigma of x",
   },
+  // not the complex conjugate x̄ of MIT 18.06 (x bar transpose, lambda x bar) (Phase 5 監査 10, batch 35)
   "x-bar-sample-mean": {
-    "x bar": "x bar | x-bar",
+    "x bar": "!lambda !ax x bar !transpose | x-bar !transpose",
   },
   "p-hat-sample-proportion": {
     "p hat": "p hat | p-hat",
@@ -1315,13 +1318,15 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "chi-square": "chi-square | chi square",
     "chi-squared": "chi-squared | chi squared",
   },
+  // the corpus says h sub zero (Phase 5 監査 10, batch 35)
   "h-naught-null": {
-    "H zero": "h zero | h sub zero",
+    "H sub zero": "h zero | h sub zero",
     "H naught": "h naught | h-naught | h sub naught",
   },
   "h-sub-a-alternative": {
     "the alternative hypothesis": "the alternative hypothesis | the alternate hypothesis",
-    "H one": "h one | h sub one",
+    // h one was a parameter h1 (MIT 18.03); h sub one h sub two a harmonic sequence (Phase 5 監査 10, batch 35)
+    "H sub one": "h sub one !h",
   },
   "quartile-q1-q3": {
     "Q one": "q one | q three | q1 | q3",
@@ -1367,6 +1372,7 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   },
   "degree-sign": {
     "thirty degrees": "* degrees !of !fahrenheit !celsius !f !c",
+    "a thirty-degree angle": "* degree angle", // before a noun, degree (Phase 5 監査 10, batch 35)
   },
   "parallel-sign": {
     "AB is parallel to CD": "is parallel to *",

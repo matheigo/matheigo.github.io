@@ -13,7 +13,7 @@
   ],
   "spoken_ja": "ミュー ／ 母平均 m",
   "name_en": "population mean (mu)",
-  "name_ja": "母平均（μ、日本の数B では m）",
+  "name_ja": "母平均（μ、m）",
   "category": "probability-statistics",
   "term_ref": "population-mean",
   "level": {
@@ -21,12 +21,13 @@
       "数B"
     ],
     "us": [
+      "Algebra 2",
       "AP Statistics",
       "Intro Statistics"
     ]
   },
   "notes": [
-    "μ は mu（ミュー）と読む。"
+    "μ は mu と読む（Merriam-Webster: ˈmyü, ˈmü。OpenStax Introductory Statistics 2.5 は pronounced mew と書く）。"
   ],
   "sources": [
     {
@@ -34,17 +35,36 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "2.5 Measures of the Center of the Data（μ (pronounced mew)）"
     },
     {
       "type": "reference",
       "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
       "note": "Unit 4（量的データの推測）"
+    },
+    {
+      "type": "reference",
+      "title": "Merriam-Webster「mu」",
+      "url": "https://www.merriam-webster.com/dictionary/mu",
+      "note": "発音 ˈmyü, ˈmü（2026-09-27 に確かめた）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学B 統計的な推測（母平均m、母標準偏差σの母集団）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 7.5 Normal Distributions（μ is the mean）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "the population mean": 44,
@@ -57,6 +77,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

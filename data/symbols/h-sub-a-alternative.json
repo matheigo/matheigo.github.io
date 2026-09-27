@@ -7,8 +7,8 @@
       "register": "standard"
     },
     {
-      "text": "H one",
-      "register": "standard"
+      "text": "H sub one",
+      "register": "spoken"
     },
     {
       "text": "H sub a",
@@ -30,7 +30,7 @@
     ]
   },
   "notes": [
-    "Hₐ は H sub a、H₁ は H one と読む。"
+    "Hₐ は H sub a、H₁ は H sub one と読む。"
   ],
   "sources": [
     {
@@ -38,7 +38,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "9.1 Null and Alternative Hypotheses・付録 Mathematical Phrases, Symbols, and Formulas（Hₐ: H-a, H-sub a、H₁: H-1, H-sub 1）"
     },
     {
       "type": "reference",
@@ -48,19 +49,18 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "h one | h sub one": 11,
       "H sub a": 1,
-      "the alternative hypothesis | the alternate hypothesis": 25
+      "the alternative hypothesis | the alternate hypothesis": 25,
+      "h sub one !h": 9
     },
     "sources": [
       "khan-ap-stats",
-      "mit-18.03",
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

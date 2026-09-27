@@ -19,7 +19,8 @@
     "us": [
       "Algebra 2",
       "Precalculus",
-      "AP Statistics",
+      "AP Calculus BC",
+      "Intro Statistics",
       "Discrete Math"
     ]
   },
@@ -33,20 +34,34 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Precalculus 2e"
+      "title": "OpenStax Precalculus 2e",
+      "note": "11.1 Sequences and Their Notations（n factorial, written as n!）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Intermediate Algebra 2e"
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "12.1 Sequences（5!, read five factorial）"
     },
     {
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）〔用語・記号〕",
       "note": "数A 場合の数と確率: n!"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.4 Combinations and Permutations（n! を n factorial と読む）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.11（n!）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "* factorial": 542
@@ -64,6 +79,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

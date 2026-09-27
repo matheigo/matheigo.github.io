@@ -3,11 +3,15 @@
   "latex": "\\gcd(a, b),\\ \\text{GCF}(a, b)",
   "spoken_en": [
     {
-      "text": "the GCF of a and b",
+      "text": "the greatest common divisor of a and b",
       "register": "standard"
     },
     {
-      "text": "the greatest common divisor of a and b",
+      "text": "the greatest common factor of a and b",
+      "register": "standard"
+    },
+    {
+      "text": "the GCF of a and b",
       "register": "standard"
     },
     {
@@ -33,8 +37,8 @@
     ]
   },
   "notes": [
-    "gcd(a, b) は the gcd of a and b（G C D）か the greatest common divisor of a and b と読む。",
-    "米国の Pre-Algebra の教材は greatest common factor（GCF）と呼び、中学の教材（Khan Academy の中学）と解説チャンネルに多い。"
+    "gcd(a, b) は the greatest common divisor of a and b か the gcd of a and b（G C D）と読む。GCF(a, b) は the greatest common factor of a and b か the GCF of a and b と読む。",
+    "IM Grade 6（7.16 Common Factors）と OpenStax Prealgebra 2e（10.6）は greatest common factor（GCF）と呼ぶ。"
   ],
   "sources": [
     {
@@ -43,16 +47,29 @@
     {
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction (4th edition)",
-      "url": "https://discrete.openmathbooks.org/pdfs/dmoi4.pdf"
+      "url": "https://discrete.openmathbooks.org/pdfs/dmoi4.pdf",
+      "note": "6.2 Introduction to Number Theory（gcd(d, n), for greatest common divisor）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 6 7.16 Common Factors（The greatest common factor (sometimes written as GCF)）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "10.6 Introduction to Factoring Polynomials（greatest common factor、GCF）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "greatest common divisor": 91,
       "gcd | g c d": 29,
-      "gcf | greatest common factor": 124
+      "greatest common factor": 85,
+      "gcf | g c f": 39
     },
     "sources": [
       "khan-algebra",
@@ -63,6 +80,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

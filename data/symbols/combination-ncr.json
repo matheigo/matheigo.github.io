@@ -11,7 +11,7 @@
   "name_en": "binomial coefficient (combination)",
   "name_ja": "組合せの数（ₙCᵣ）",
   "category": "probability-statistics",
-  "term_ref": null,
+  "term_ref": "combination",
   "related": [
     "combination-permutation-notation"
   ],
@@ -27,13 +27,34 @@
     ]
   },
   "notes": [
-    "日本の教科書は ₙCᵣ と書き、米国の教科書は C(n, r)、ₙCᵣ、または縦に並べた二項係数 (n over r) の形で書く。読みはどれも n choose r（5 choose 2 のように数を入れて読む）。",
+    "ₙCᵣ・C(n, r)・縦に並べた二項係数はどれも n choose r と読む（5 choose 2 のように数を入れて読む）。書き方の違いは combination-permutation-notation。",
     "二項定理の一般項 ₙCᵣ aⁿ⁻ʳbʳ でも同じ読み方をする。"
   ],
   "tts_text": "n choose r",
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）〔用語・記号〕",
+      "note": "数A 場合の数と確率: nCr"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "12.4 Binomial Theorem（We read (n r) as n choose r）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "11.5 Counting Principles・11.6 Binomial Theorem（C(n, r)、nCr、(n r)）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.1 Pascal's Arithmetical Triangle（(n k) を n choose k と読む）"
     }
   ],
   "confidence": "likely",
@@ -42,7 +63,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "n choose *": 31
@@ -54,6 +75,6 @@
       "yt:3blue1brown",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }
