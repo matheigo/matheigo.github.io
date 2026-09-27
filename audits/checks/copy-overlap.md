@@ -7,10 +7,10 @@
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15630
-- 英語のソース: 3884 ファイル ／ 日本語のソース: 474 ファイル
-- 一致した箇所: **320**（286 項目）
-- 見出しの句を含む一致で除いたもの: 142 箇所（132 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
+- 調べた本文の欄: 15651
+- 英語のソース: 3884 ファイル ／ 日本語のソース: 494 ファイル
+- 一致した箇所: **314**（280 項目）
+- 見出しの句を含む一致で除いたもの: 147 箇所（136 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
 |---|---|---|---|---|---|---|---|
@@ -67,7 +67,6 @@
 | terms | area-of-a-regular-polygon | pitfalls[0] | en | 11 | ck 12 geometry 5 21 area of regular and irregular polygons | 1 | ref:ck12-geometry |
 | terms | area-of-a-regular-polygon | examples[1].en | en | 8 | use the formula for the area of a | 5 | openstax-calculus, ref:ck12-geometry, openstax-intalg, openstax-elemalg, ref:ck12-algebra |
 | terms | area-of-a-triangle-using-vectors | examples[1].en | en | 8 | find the area of the triangle with vertices | 1 | ref:nicholson-lawa-2021a |
-| terms | arithmetic-sequence | definition_en | en | 9 | a sequence in which each term is the previous | 1 | ref:im-9-12 |
 | terms | auxiliary-angle-form | examples[0].en | en | 9 | the square root of a squared plus b squared | 3 | yt:organicchem, mit-18.06, mit-18.03 |
 | terms | auxiliary-line | examples[1].en | en | 9 | prove that the sum of the interior angles of | 2 | ref:levin-dmoi4, khan-algebra |
 | terms | base-of-a-solid | examples[1].en | en | 9 | find the number of faces edges and vertices of | 1 | ref:ck12-geometry |
@@ -153,7 +152,6 @@
 | terms | equal-vectors | definition_en | en | 9 | they have the same magnitude and the same direction | 3 | openstax-algtrig, openstax-precalculus, openstax-calculus |
 | terms | equation-of-a-line | examples[1].en | en | 8 | find the equation of the line passing through | 1 | openstax-algtrig |
 | terms | equation-of-a-sphere | definition_en | en | 10 | the sphere with center a b c and radius r | 2 | openstax-calculus, ref:im-9-12 |
-| terms | eulers-formula-for-polyhedra | definition_en | en | 8 | of vertices v edges e and faces f | 2 | mit-notes, ref:levin-dmoi4 |
 | terms | exist | examples[1].en | en | 8 | there exists a real number x such that | 3 | openstax-calculus, openstax-algtrig, openstax-precalculus |
 | terms | exponent | pitfalls[0] | en | 8 | x to the fifth x to the fifth | 1 | khan-ap-calc |
 | terms | exterior-angle-theorem | definition_en | en | 9 | the two interior angles that are not adjacent to | 1 | ref:ck12-geometry |
@@ -170,7 +168,6 @@
 | terms | generating-function | examples[1].en | en | 11 | find the generating function for the sequence 1 2 4 8 | 1 | ref:levin-dmoi4 |
 | terms | geometric-mean | pitfalls[0] | en | 9 | geometry 3 13 using the pythagorean theorem and similarity | 1 | ref:im-9-12 |
 | terms | geometric-mean | examples[0].en | en | 8 | the square root of 16 which is 4 | 3 | yt:organicchem, khan-ap-stats, khan-middle |
-| terms | geometric-sequence | definition_en | en | 9 | a sequence in which each term is the previous | 1 | ref:im-9-12 |
 | terms | graph-coloring | definition_en | en | 8 | different colors the smallest number of colors needed | 1 | ref:levin-dmoi4 |
 | terms | greater-than | examples[0].en | en | 8 | farther to the right on the number line | 1 | ref:ck12-algebra |
 | terms | greatest-common-divisor | examples[0].en | en | 8 | is the biggest number that goes into both | 1 | khan-middle |
@@ -198,7 +195,7 @@
 | terms | lateral-area | examples[1].en | en | 9 | a radius of 3 cm and a height of | 1 | ref:im-6-8 |
 | terms | law-of-detachment | definition_en | en | 11 | q is true and p is true then q is true | 1 | ref:ck12-geometry |
 | terms | law-of-large-numbers | definition_en | en | 8 | the number of trials or the sample size | 1 | openstax-introstats |
-| terms | laws-of-exponents | examples[0].en | en | 12 | when you multiply powers with the same base you add the exponents | 2 | ref:im-6-8, khan-middle |
+| terms | laws-of-exponents | examples[0].en | en | 10 | x squared times x cubed is x to the fifth | 1 | yt:organicchem |
 | terms | left-hand-limit | definition_en | en | 8 | the limit of f x as x approaches | 4 | khan-ap-calc, openstax-calculus, openstax-precalculus, ref:ap-calculus-ab-bc-ced |
 | terms | less-than | pitfalls[1] | en | 10 | less than or equal to less than or equal to | 2 | khan-ap-calc, openstax-introstats |
 | terms | let-u-equal | examples[3].en | en | 8 | the sum of the two numbers is 31 | 1 | openstax-algtrig |
@@ -258,8 +255,6 @@
 | terms | ratio-of-areas-of-similar-figures | mapping_note | en | 8 | 5 22 area and perimeter of similar polygons | 1 | ref:ck12-geometry |
 | terms | rationalizing-the-denominator | pitfalls[2] | ja | 27 | 分母が二項程度までの分数の形に表された数の分母の有理化 | 1 | jp:kaisetsu-kou |
 | terms | reduced-row-echelon-form | definition_en | en | 8 | is the only nonzero entry in its column | 1 | ref:nicholson-lawa-2021a |
-| terms | region | definition_en | en | 8 | the set of all points x y satisfying | 2 | openstax-algtrig, openstax-precalculus |
-| terms | regression-line | examples[1].en | en | 10 | find the equation of the least squares regression line and | 2 | openstax-introstats, ref:ap-statistics-ced |
 | terms | relation | definition_en | en | 10 | a relation from a set a to a set b | 2 | mit-notes, mit-6.042 |
 | terms | relative-positions-of-two-circles | mapping_note | en | 8 | ck 12 geometry 6 2 identify circle components | 1 | ref:ck12-geometry |
 | terms | relative-positions-of-two-lines | mapping_note | en | 9 | ck 12 geometry 3 2 parallel and skew lines | 1 | ref:ck12-geometry |
@@ -312,7 +307,6 @@
 | terms | system-of-linear-inequalities | definition_en | en | 9 | is the set of all points x y that | 3 | openstax-algtrig, openstax-precalculus, yt:3blue1brown |
 | terms | system-of-three-equations | examples[1].en | en | 13 | solve the system of three equations in three variables x y z 2 | 2 | openstax-algtrig, openstax-precalculus |
 | terms | take-the-limit | examples[1].en | en | 8 | taking the limit of both sides as n | 1 | openstax-calculus |
-| terms | take-the-log-of-both-sides | definition_en | en | 8 | to both sides of an equation or inequality | 1 | khan-middle |
 | terms | tangent-chord-theorem | mapping_note | en | 8 | 6 16 angles on and inside a circle | 1 | ref:ck12-geometry |
 | terms | tangent-segments-are-equal | mapping_note | en | 21 | two tangents theorem if two tangent segments are drawn to one circle from the same external point then they are congruent | 1 | ref:ck12-geometry |
 | terms | tessellation | pitfalls[2] | en | 8 | grade 8 9 1 tessellations of the plane | 1 | ref:im-6-8 |

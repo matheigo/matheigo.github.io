@@ -92,7 +92,6 @@
 | terms | limit-comparison-test | likely | 学習指導要領解説 | mapping_note |
 | terms | linear-pair | likely | IM | pitfalls[1] |
 | terms | linear-pair | likely | 学習指導要領解説 | mapping_note |
-| terms | linear-programming | likely | OpenStax Algebra and Trigonometry | pitfalls[0] |
 | terms | linear-recurrence-relation | likely | Nicholson | pitfalls[2] |
 | terms | literal-equation | likely | 学習指導要領解説 | mapping_note |
 | terms | logistic-growth | likely | 学習指導要領解説 | mapping_note |
@@ -132,6 +131,7 @@
 | terms | rejection-region | likely | AP Statistics の CED | mapping_note |
 | terms | rejection-region | likely | OpenStax Introductory Statistics | mapping_note |
 | terms | resistant-statistic | likely | 学習指導要領解説 | mapping_note |
+| terms | rewrite-in-exponential-form | likely | IM | en.variants[1].note |
 | terms | right-triangle-similarity | likely | IM | pitfalls[2] |
 | terms | right-triangle-similarity | likely | 学習指導要領解説 | mapping_note |
 | terms | rise-over-run | likely | 学習指導要領解説 | mapping_note |

@@ -178,6 +178,13 @@
     },
     {
       "collection": "terms",
+      "id": "angle-addition-formulas",
+      "field": "pitfalls[4]",
+      "sentence": "数学A の確率の加法定理（互いに排反な事象の和の確率）は別のエントリ general-addition-rule（addition rule）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "angle-addition-postulate",
       "field": "mapping_note",
       "sentence": "見出しの「角の加法公理」は学習指導要領解説に無い、本プロジェクトの訳語。",
@@ -304,6 +311,13 @@
     },
     {
       "collection": "terms",
+      "id": "auxiliary-angle-form",
+      "field": "mapping_note",
+      "sentence": "米国の高校の資料（CED・OpenStax・IM・CK-12）には名前が出てこない。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "average-value-of-a-function",
       "field": "pitfalls[0]",
       "sentence": "学習指導要領解説には出てこない。",
@@ -397,8 +411,8 @@
       "collection": "terms",
       "id": "boundary",
       "field": "pitfalls[0]",
-      "sentence": "日本の答案の「境界線を含む／含まない」は、英語ではグラフの実線（solid line）と点線（dashed line）の描き分けでも示す（用例コーパスでは dashed line は話し言葉にも書き言葉にも出てくる）。",
-      "g1": true
+      "sentence": "共通テストの問題文は、領域の図に「ただし，境界線を含まない」と添える（令和 8 年度 本試験 数学II，数学B，数学C 第 1 問。令和 6 年度 本試験 数学II 第 1 問は「境界（境界線）は含まない」）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -551,8 +565,8 @@
       "collection": "terms",
       "id": "common-logarithm",
       "field": "pitfalls[0]",
-      "sentence": "日本の高校の数II では底 10 を省かず log₁₀ x と書く。",
-      "g1": true
+      "sentence": "高等学校学習指導要領解説（数学II）と共通テスト（令和 7 年度 本試験 数学II，数学B，数学C 第 2 問）は、底 10 を書いて log₁₀ と表す。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -1291,13 +1305,6 @@
     },
     {
       "collection": "terms",
-      "id": "equation-of-a-circle",
-      "field": "pitfalls[0]",
-      "sentence": "米国の教科書は (x − h)² + (y − k)² = r² と中心を (h, k) で書き、standard form of the equation of a circle と呼ぶ（OpenStax Algebra and Trigonometry）。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "equation-of-a-plane",
       "field": "pitfalls[1]",
       "sentence": "数C では法線ベクトルとの内積で導く。",
@@ -1602,13 +1609,6 @@
       "id": "general-addition-rule",
       "field": "mapping_note",
       "sentence": "学習指導要領解説（数学A）も、互いに排反なときの P(A ∪ B) = P(A) + P(B) を確率の性質や法則に挙げる。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "general-form-of-a-circle",
-      "field": "pitfalls[0]",
-      "sentence": "米国の教科書は係数に D, E, F を使うことが多い。",
       "g1": false
     },
     {
@@ -2434,8 +2434,8 @@
       "collection": "terms",
       "id": "logarithm",
       "field": "pitfalls[1]",
-      "sentence": "日本の高校の log x（数III）は自然対数。",
-      "g1": true
+      "sentence": "OpenStax Algebra and Trigonometry（6.3）と Intermediate Algebra（10.3）は、底を省いた log x を常用対数（底 10）、ln x を自然対数とする（学習指導要領解説には ln が出てこない）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -2644,7 +2644,7 @@
       "collection": "terms",
       "id": "nth-term",
       "field": "pitfalls[1]",
-      "sentence": "日本の「一般項」は、第 n 項を n の式で表したもの。",
+      "sentence": "数列の一般項（センター試験 平成 26 年度 数学II・数学B の「数列 {aₙ} の一般項を求めよう」は aₙ を n の式で表すこと）は、英語でも general term（エントリ general-term）。",
       "g1": false
     },
     {
@@ -3216,6 +3216,13 @@
     },
     {
       "collection": "terms",
+      "id": "rational-expression",
+      "field": "mapping_note",
+      "sentence": "学習指導要領解説（数学II）は多項式の除法と分数式の四則計算を分けて扱い、「簡単な場合」を分数式の分母の次数が二次程度までのものとする。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "rational-function",
       "field": "mapping_note",
       "sentence": "日本の数III の「分数関数」は、学習指導要領解説では「簡単な分数関数」のグラフを平行移動と結びつけて扱う。",
@@ -3265,9 +3272,16 @@
     },
     {
       "collection": "terms",
+      "id": "region",
+      "field": "pitfalls[0]",
+      "sentence": "学習指導要領解説（数学II 微分・積分の考え）が「直線や関数のグラフで囲まれた図形の面積」と書くところも、英語は region。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "regression-line",
       "field": "pitfalls[1]",
-      "sentence": "OpenStax は ŷ = a + bx（a が切片、b が傾き）と書き（11 件）、日本の y = ax + b と文字の役割が逆になる。",
+      "sentence": "中学校学習指導要領解説（第 2 学年 一次関数）の y = ax + b とは a と b の役割が逆になる。",
       "g1": false
     },
     {
@@ -4191,7 +4205,7 @@
       "collection": "terms",
       "id": "trial",
       "field": "mapping_note",
-      "sentence": "日本語の「試行」は、標本空間や事象を考える実験そのもの（学習指導要領解説（数学B）の「2枚の硬貨を投げる試行についての標本空間」、センター試験 平成 30 年度 数学I・数学A 第 3 問の「大小 2 個のさいころを同時に投げる試行」）にも、その 1 回 1 回（同じ問題の「試行を 2 回繰り返す」）にも使う。",
+      "sentence": "日本語の「試行」は、標本空間や事象を考える実験そのもの（学習指導要領解説（数学B）の「2枚の硬貨を投げる試行についての標本空間」、センター試験 平成 30 年度 数学I・数学A 第 3 問の「大小 2 個のさいころを同時に投げる試行」）にも、その 1 回 1 回（共通テスト 令和 6 年度 数学I・数学A 第 3 問の「n 回の試行で」「n 回目の試行で初めて」）にも使う。",
       "g1": false
     },
     {
@@ -4332,6 +4346,13 @@
       "id": "undercount",
       "field": "pitfalls[0]",
       "sentence": "学習指導要領解説（数学A）の「場合の数をもれなく重複なく数え上げる」は、英語では Levin（3.3）のように each case is counted exactly once と説明できる。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "undo-the-log",
+      "field": "mapping_note",
+      "sentence": "見出しの「log を外す」は日本側の資料には出てこない言い方で、log が消えるという結果で言う。",
       "g1": false
     },
     {

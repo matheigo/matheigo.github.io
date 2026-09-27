@@ -2754,11 +2754,11 @@
      1
     ],
     [
-     "properties-of-logarithms",
+     "common-logarithm",
      1
     ],
     [
-     "common-logarithm",
+     "properties-of-logarithms",
      1
     ]
    ],
@@ -7275,7 +7275,8 @@
    ],
    "judged": {
     "id": "conjugate-roots",
-    "note": "OpenStax Algebra and Trigonometry・Precalculus の Complex Conjugate Theorem"
+    "related": true,
+    "note": "OpenStax Algebra and Trigonometry・Precalculus の Complex Conjugate Theorem（a + bi が解なら a − bi も解、という性質。エントリは解の組）"
    }
   },
   {
@@ -9617,11 +9618,11 @@
    "matched": [],
    "candidates": [
     [
-     "first-term",
+     "leading-digit",
      1
     ],
     [
-     "leading-digit",
+     "first-term",
      1
     ],
     [
@@ -9675,25 +9676,10 @@
      "Fitting Exponential Models to Data"
     ]
    },
-   "matched": [],
-   "candidates": [
-    [
-     "logarithmic-scale",
-     1
-    ],
-    [
-     "logarithmic-inequality",
-     1
-    ],
-    [
-     "logarithmic-differentiation",
-     1
-    ],
-    [
-     "logarithmic-function",
-     1
-    ]
+   "matched": [
+    "properties-of-logarithms"
    ],
+   "candidates": [],
    "judged": {
     "id": "properties-of-logarithms",
     "note": "OpenStax の Logarithmic Properties"
@@ -11614,15 +11600,15 @@
      2
     ],
     [
-     "least-squares",
-     1
-    ],
-    [
      "substitution-method",
      1
     ],
     [
      "statistical-hypothesis",
+     1
+    ],
+    [
+     "shell-method",
      1
     ]
    ],
@@ -13615,7 +13601,7 @@
      1
     ],
     [
-     "first-term",
+     "statistic",
      1
     ]
    ],
@@ -20069,10 +20055,6 @@
    "matched": [],
    "candidates": [
     [
-     "least-squares",
-     1
-    ],
-    [
      "substitution-method",
      1
     ],
@@ -20082,6 +20064,10 @@
     ],
     [
      "partial-fraction-decomposition",
+     1
+    ],
+    [
+     "newtons-method",
      1
     ]
    ],
@@ -20102,10 +20088,6 @@
    "matched": [],
    "candidates": [
     [
-     "least-squares",
-     1
-    ],
-    [
      "substitution-method",
      1
     ],
@@ -20115,6 +20097,10 @@
     ],
     [
      "partial-fraction-decomposition",
+     1
+    ],
+    [
+     "newtons-method",
      1
     ]
    ],
@@ -22128,7 +22114,7 @@
      1
     ],
     [
-     "rewrite-in-exponential-form",
+     "exponential-regression",
      1
     ]
    ],

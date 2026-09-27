@@ -42,3 +42,30 @@
 | 31 | 監査 7（バッチ 19 の r5） | 語形変化をまとめる数え方（lib.ts `inflections`）が別の語に当たる: geometric mean が geometric meaning（「幾何的な意味」）に当たる（話し言葉の数件） | 見出しの最後の語の語形変化を名詞の複数形に限るか、除く語を持つ | 見出し・register は変わらない |
 | 32 | 監査 7（バッチ 19 の r5） | 成句を持つ数学の名詞（general term の in general terms、話し言葉の約半分）は、STYLE 追記欄の「ふつうの英単語だけの句は文脈を 10 件見る」に当たらない | 文脈の確かめを成句を持つ語にも広げる | "!in general term" で数えても ① both |
 | 33 | 監査 7（バッチ 19 の r5） | `scripts/lib/wording.ts` の AT_LARGE は「1 対 1 で当たる英語の名詞はない」（reduce）・「名詞にまとめた言い方はない」（equality-holds）も拾わない（10 と同じ型） | 10 と合わせて形を足す | 当たった 2 語は監査で直した |
+| 34 | 監査 8（14 語の r1、バッチ 20 の全員） | related の片方向を一覧にする道具が無く、見直し役が毎回手で突き合わせている（14 語だけで 21 組）。サイトの用語ページも related を片方向にしか出さない | validate の警告か audits/checks の一覧にし、verified の相手側にも足すかを決める | リンクの欠けで誤りではない（監査はバッチの語の側で相互にした） |
+| 35 | 監査 8（14 語の r1） | 台帳の Wikipedia の突き合わせ（scripts/ledger/wiki_head.json）が曖昧さ回避のページに当たると、(確率論)・(整数論) の記事を見ない（trial の 試行 (確率論)） | 曖昧さ回避のときに括弧つきの記事を探す | 出典の欠け（監査が手で足した） |
+| 36 | 監査 8（14 語の r2） | mapping near の語の definition_en を、日本語の概念で書く語（imaginary-number）と英語の概念で書く語（rational-expression・rational-function）が混ざる | どちらで書くかを決める | どちらの語も範囲の違いを注記で書いていて誤りではない |
+| 37 | 監査 8（14 語の r2） | reference_names_same.json で同じ概念とした参照の名前が参照で 3 件以上あり、見出しは用例コーパスの ① で決まる語の置き方（alt か related の印か）を STYLE が書いていない | 決める | alt の有無と !REF の表示だけ |
+| 38 | 監査 8（14 語の r2、バッチ 20 の r4） | 用例コーパス・参照に 0 件で、英語版 Wikipedia の本文の太字・節の見出しにだけある言い方（Euler's polyhedron formula、circle of Apollonius）を en.alt に置いてよいか | 決める | 件数 0 で判定は変わらない |
+| 39 | 監査 8（14 語の r3） | scripts/ledger/wiki_head.json は angle-addition-formulas の ja の記事を、監査 7 が外した langlink の Addition theorem のまま持ち、WIKIPEDIA_NOT_SAME にも無い | wikihead.py を回し直すか WIKIPEDIA_NOT_SAME に足す | 書き言葉 ② で決まり、記事名は使われない |
+| 40 | 監査 8（14 語の r3、バッチ 20 の r4・r5） | level.us と単元の term_refs を突き合わせる検査が無い（単元にあるのに level.us に無い、level.us にあるのに単元にも参照にも無い、対の語で揃わない、単元の topics にあるのに term_refs に無い） | 一覧にする（24 と合わせる） | バッチ 20 は監査で揃えた。残るのは単元のページの語の一覧の抜け |
+| 41 | 監査 8（バッチ 20 の r4） | 単元 us-precalculus-matrices-and-systems の topics に linear programming があり、出典は OpenStax Precalculus 2e だが、OpenStax Precalculus は 1 次式の最大・最小を扱わない（9.3 の feasible region だけ） | 単元の topics を資料と突き合わせる | 監査は linear-programming を単元の term_refs から外した。topics は単元の説明で、米国の Precalculus の一般の範囲としては誤りと言い切れない |
+| 42 | 監査 8（14 語の r3） | refgrep.py・corpus:probe は OpenStax Intermediate Algebra の上付きの序数（本文では (r + 1) s t term）を (r + 1)st term で見つけない | 序数の分かち書きをそろえる | 見直しで 0 件と読み違えうるだけ |
+| 43 | 監査 8（バッチ 20 の r1） | scripts/audit/reference_names_same.json の negative power property → negative-exponent は誤り（Quotient to a Negative Power Property の切れ端で、a⁻ⁿ = 1/aⁿ の定め方ではない） | related か skip に | !REF の表示だけ（11 と同じ型） |
+| 44 | 監査 8（バッチ 20 の r1・r3） | scripts/audit/claims.ts の !JP が「Khan Academy の中学の講義」（用例コーパスの khan-middle の名前）を日本側の主張として拾う | ソースの名前を除く | 一覧の誤検出 |
+| 45 | 監査 8（バッチ 20 の r1・r2） | scripts/audit/copy-check.ts が 3 文字の log を文の語に数え、公式だけの一致（log a b log c b log c）が数式の窓として除かれない | log・ln・sin・cos などを記号として扱う | 一覧の誤検出 |
+| 46 | 監査 8（バッチ 20 の r1・r5） | 発音の主張（「〜と読む」）で Merriam-Webster の出典が無いものを validate が拾わない（nth（likely）に残る）。Merriam-Webster は WebFetch・curl では開けず、アプリのブラウザでは開けた | 「と読む」の文と出典を突き合わせる警告 | 監査で確かめた nth-term・nth-root には出典を足した |
+| 47 | 監査 8（バッチ 20 の r1） | DECISIONS 2026-09-24 の規則 4（② の見出しは両方の register の首位集合に入る言い方）で、2 つ以上の言い方が両方に入り話し言葉も ② のときの決め手が無い（laws-of-exponents に参照の Exponent Properties を足すと exponent properties 46 ／ exponent rules 40 で、どちらも両方に入る。監査は足さなかった） | 決め手を書く | どちらも資料にある言い方 |
+| 48 | 監査 8（バッチ 20 の r1・r2） | 問題の型の語で、参照が式を書かずに境目を問う文章題だけを持つとき、監査 7 の前の決定 2（概念）で level.us を決めてよいか（監査は exponential-inequality を IM の文章題で Algebra 1・Algebra 2 にし、問題そのものが無い logarithmic-inequality は [] にした） | 決める | 監査は決定 2 で決めた |
+| 49 | 監査 8（バッチ 20 の r2・r4） | wording.ts が「（用例コーパスでは同じ言い方としてまとめた）」「（② の併記）」のように、判定の語と「コーパス」がそろわない数え方・判定の説明を拾わない | 形を足す | 当たった文は監査で消した |
+| 50 | 監査 8（バッチ 20 の r2） | TERM_FORMS の形が参照の言い回しの一部を数えない（argument of the logarithm は argument of a logarithm を、write-with-the-same-base の variant の形は Write both sides of the equation with the same base を数えない） | 形を広げる | 広げても判定は変わらない（probe） |
+| 51 | 監査 8（バッチ 20 の r2） | corpus:decide は --write なしでも audits/corpus-<日付>.md を書き換える（見直し役が走らせて作業ツリーが汚れた） | 報告のファイルは明示したときだけ書く | 道具の問題 |
+| 52 | 監査 8（バッチ 20 の r3） | ③ の語で、参照が同じ操作に使う別の動詞の言い方（節の題・学習目標の convert … to logarithmic form）が候補に無いと、候補の中だけで見出しが決まる | ③ で参照が決めた語について、見出しの名詞句を含む参照の節の題・学習目標を機械で並べる | バッチ 20 の 2 語は監査で直した（中身が間違いうる型） |
+| 53 | 監査 8（バッチ 20 の r3） | scripts/audit/level-us.ts は決まった文「米国の高校課程（…）では扱わない」でしか動かず、同じ中身を別の言い方で書いた語は学校のコースが残る | corpus-no-fixed-expression の語と「出てこない」を持つ mapping none ／ near の語の level.us を一覧にする | circle-through-the-intersections-of-two-circles は監査で直した（中身が間違いうる型） |
+| 54 | 監査 8（バッチ 20 の r3） | examples_headword.py は、目的語が間に入る動詞句を「…」なしで書いた見出しと、目的語を挟んだ例文を同じ言い方としない | 照合をそろえる | 一覧の誤検出 |
+| 55 | 監査 8（バッチ 20 の r3） | STYLE 原則 1 ③ の「英語版 Wikipedia の数学記事が本文の太字・節の見出しで定義していれば mapping_note に書く」を、corpus-no-fixed-expression の語について機械で探していない（2 円の交点を通る円の pencil of circles） | ja.term を日本語版 Wikipedia で全文検索し、当たった記事の英語名・太字・節の見出しを並べる | 注記の欠け（監査で足した） |
+| 56 | 監査 8（バッチ 20 の r3） | scripts/ledger/wiki_cat_cache.json の en:Pencil (geometry) の親カテゴリが空で、enwiki.py --depth が None を返す | 空の行を取り直す | 道具の問題 |
+| 57 | 監査 8（バッチ 20 の r4） | 人間が決めた見出し（corpus-human-settled）と今の規則の答えを並べる一覧が無い（apollonian-circle は今の規則なら英語版 Wikipedia の記事名 circle of Apollonius） | 4 を見出しにも広げる | どちらの名前も英語版 Wikipedia にある |
+| 58 | 監査 8（バッチ 20 の r4） | 参照の件数が脚注の書名を本文の使用として数える（Nicholson の Linear Programming and Extensions） | 19 と合わせて除く仕組みを足す | 判定は変わらない |
+| 59 | 監査 8（バッチ 20 の r5） | 統計・確率の書き言葉のコーパスは OpenStax Introductory Statistics だけなので、参照（CED・IM）が書き言葉で多用する語でも書き言葉が ③ になり register spoken になる（simulation） | 書き言葉の参照を register の判断に入れるか | register は ① の側だけの主張で誤りではない（監査は pitfalls に参照の事実を足した） |
+| 60 | 監査 8（バッチ 20 の r3） | TERM_FORMS の印で別の意味を除くと、同じ前の語を持つ本来の意味の一致も除かれる（rewrite-in-exponential-form の !expression は Intermediate Algebra の rewrite the expression in exponential form 1 件も除く） | 除く語を文脈で確かめる手順を書く | 判定（② の順）は変わらない |

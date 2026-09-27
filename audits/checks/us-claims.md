@@ -5,9 +5,9 @@
 対象の欄は日本側と同じ。米国側の主張（米国・アメリカ・AP・CED・College Board・英語圏・Calc I〜III・Calculus AB／BC）の文のうち、
 文の中に参照（CED・OpenStax・IM・CK-12・Nicholson・Levin・Wikipedia・topic の番号ほか）も用例コーパス（講義・話し言葉・書き言葉・Khan・MIT ほか）も名指ししないもの。
 
-- 米国側の主張の文で参照かコーパスを名指しするもの: 394 文（一覧にしない）
+- 米国側の主張の文で参照かコーパスを名指しするもの: 398 文（一覧にしない）
 - **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 8 項目・8 文**
-- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 38 項目・40 文
+- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 36 項目・38 文
 
 ## A. エントリの出典にも参照がない
 
@@ -35,12 +35,10 @@
 | terms | difference-quotient | mapping_note | 米国の Precalculus・Calculus では difference quotient と名前で呼ぶ。 | OpenStax Calculus Volume 1 |
 | terms | end-behavior | pitfalls[2] | behavior は米国の綴り（英国は behaviour）。 | OpenStax Algebra and Trigonometry 2e; English Wikipedia |
 | terms | expanding-and-condensing-logs | mapping_note | 米国の授業では、対数の性質で 1 つの log を和・差に分けることを expand、和・差を 1 つの log にまとめることを condense と呼ぶ。 | OpenStax Algebra and Trigonometry 2e; OpenStax Intermediate Algebra 2e |
-| terms | general-form-of-a-circle | pitfalls[0] | 米国の教科書は係数に D, E, F を使うことが多い。 | OpenStax Algebra and Trigonometry 2e; OpenStax Intermediate Algebra 2e |
 | terms | hypothesis | mapping_note | 証明の「仮定」は、論理・定理の文脈では hypothesis（p ならば q の p）、米国の Geometry の答案では Given（2 列証明の最初の行の見出し）と言い、1 語に決まらない。 | CK-12 Geometry (K12 LibreTexts) |
 | terms | hypothesis | pitfalls[1] | 米国の Geometry の 2 列証明では、仮定を Given:、示すことを Prove: という見出しで書き、hypothesis とは書かない。 | CK-12 Geometry (K12 LibreTexts) |
 | terms | identity-matrix | definition_ja | E（米国の教科書では I）と書く。 | OpenStax Algebra and Trigonometry 2e |
 | terms | law-of-detachment | pitfalls[0] | 米国の Geometry の教科書では law of detachment、論理学・離散数学では modus ponens と呼ぶ。 | Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition; CK-12 Geometry (K12 LibreTexts) |
-| terms | logarithm | pitfalls[1] | 米国では log x は常用対数（底 10）、ln x は自然対数を表す。 | OpenStax Algebra and Trigonometry 2e; OpenStax Intermediate Algebra 2e |
 | terms | pythagorean-identity | pitfalls[0] | 米国の教科書は 1 + tan²θ = sec²θ、1 + cot²θ = csc²θ も合わせて Pythagorean identities（複数形）と呼ぶ。 | OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1 |
 | terms | rational-function | mapping_note | 米国の rational function は多項式 ÷ 多項式の関数全般を指し、日本語では有理関数に当たる。 | OpenStax Algebra and Trigonometry 2e; OpenStax Calculus Volume 1; 高等学校学習指導要領（平成30年告示）解説 数学編 理数編 |
 | terms | scientific-notation | pitfalls[0] | 英国では standard form と言うが、米国の standard form は別の意味（直線の式 Ax + By = C など、エントリ standard-form-of-a-line）。 | OpenStax Prealgebra 2e; OpenStax Elementary Algebra 2e; OpenStax Algebra and Trigonometry 2e; English Wikipedia |
