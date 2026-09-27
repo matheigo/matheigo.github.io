@@ -8,11 +8,7 @@
     },
     {
       "text": "x to the negative first power",
-      "register": "spoken"
-    },
-    {
-      "text": "x inverse",
-      "register": "spoken"
+      "register": "standard"
     }
   ],
   "spoken_ja": "x のマイナス 1 乗 ／ x のマイナス n 乗",
@@ -25,6 +21,7 @@
       "数II"
     ],
     "us": [
+      "Pre-Algebra",
       "Algebra 1",
       "Algebra 2"
     ]
@@ -36,27 +33,36 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 8 Unit 7（10 to the negative 4 power）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "Properties of Exponents and Scientific Notation（a to the negative n equals one divided by a to the n）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "x inverse": 7,
-      "to the negative one !power | to the negative n !power": 105,
+      "to the negative one !power !half | to the negative n !power": 91,
       "to the negative first power | to the negative one power": 35
     },
     "sources": [
       "khan-algebra",
       "khan-ap-calc",
       "khan-middle",
-      "mit-18.03",
       "yt:3blue1brown",
       "yt:blackpenredpen",
       "yt:organicchem",
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

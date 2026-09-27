@@ -21,27 +21,26 @@
     ]
   },
   "notes": [
-    "a : b = c : d は a is to b as c is to d と読む。米国の教科書は比例式を a/b = c/d の分数の形で書くことが多く、そのときは a over b equals c over d と読む。",
-    "OpenStax Prealgebra は比例式の読み方を a is to b as c is to d と示す（14 件）。"
+    "a : b = c : d は a is to b as c is to d と読む。OpenStax Prealgebra（Solve Proportions and their Applications）は比例式を a/b = c/d と書き、a is to b as c is to d と読むと示す。分数の形は a over b equals c over d とも読む。"
   ],
   "sources": [
     {
       "type": "editorial"
     },
     {
-      "type": "reference",
-      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
-      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
-      "note": "Unit 3 の指導の例で … is to … as … is to … の形（1 件）"
-    },
-    {
       "type": "textbook",
       "title": "OpenStax Prealgebra 2e",
-      "note": "比例式の読み方 a is to b as c is to d（14 件。規則 2 で読みを決めた参照。OpenStax 全体で 18 件）"
+      "note": "Solve Proportions and their Applications（a is to b, as c is to d。規則 2 で読みを決めた参照。OpenStax 全体で 18 件）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「比」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%AF%94",
+      "note": "a:b は「a対b」と読む、比例式"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "is to * as * is to": 3
@@ -50,13 +49,13 @@
       "khan-middle",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 is to * as * is to（本文 18 件）。register は主張しない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

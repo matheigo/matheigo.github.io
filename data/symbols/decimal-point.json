@@ -22,15 +22,27 @@
   },
   "notes": [
     "小数点は point と読み、小数点より下は 1 桁ずつ読む。3.14 は three point one four、0.5 は zero point five か point five。",
-    "3.14 を three point fourteen とは読まない。"
+    "3.14 を three point fourteen とは読まない。",
+    "OpenStax Prealgebra（Decimals）は 5.03 を five and three hundredths と位の名前でも読む。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "Decimals（five and three hundredths）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 6 3.15・Grade 7 8.17 ほかの図の説明（zero point four nine）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "zero point * | one point * | two point * | three point * | four point * | five point * | six point * | seven point * | eight point * | nine point *": 331
@@ -52,6 +64,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

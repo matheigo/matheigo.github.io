@@ -7,11 +7,11 @@
       "register": "standard"
     },
     {
-      "text": "three fourths",
+      "text": "three over four",
       "register": "standard"
     },
     {
-      "text": "three over four",
+      "text": "three fourths",
       "register": "standard"
     },
     {
@@ -33,20 +33,37 @@
     ]
   },
   "notes": [
-    "数の分数は分母を序数で読む: 3/4 は three fourths、2/3 は two thirds、分子が 2 以上なら序数に s を付ける。1/2 は one half（a half）。",
-    "three over four とも読み、計算の途中では over が多い。quarter は 4 分の 1 の別の言い方で、fourth と同じ意味。"
+    "数の分数は分母を序数で読む: 3/4 は three fourths、2/3 は two thirds、分子が 2 以上なら序数に s を付ける。分母が 2 のときは half（1/2 は one half か a half、3/2 は three halves）。",
+    "three over four とも読む。quarter は 4 分の 1 の別の言い方で、fourth と同じ意味。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「分数」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%88%86%E6%95%B0",
+      "note": "読み（d 分の n）と英語の読み（one half、three halves）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 6（three fourths、one half ほか）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "4.1 Visualize Fractions"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
+      "one over two | one over four | three over four | one over three | two over three | one over five | two over five | three over five": 496,
       "one half": 608,
-      "one over four | three over four | one over three | two over three | one over five | two over five | three over five": 313,
       "one quarter | three quarters": 25,
       "one fourth | three fourths | one third | two thirds | one fifth | two fifths | three fifths": 371
     },
@@ -67,6 +84,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

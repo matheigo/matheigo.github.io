@@ -22,12 +22,12 @@
     ],
     "us": [
       "Calculus I",
-      "Calculus III"
+      "Calculus II"
     ]
   },
   "notes": [
-    "exp x は exp of x（エクスプ）か the exponential of x と読み、中身は eˣ と同じ。指数が長い式のときに exp(…) と書く。",
-    "exp of の読みはほとんどが 3Blue1Brown で、大学の講義は the exponential of と言う。"
+    "exp x は exp of x か the exponential of x と読み、中身は eˣ と同じ。指数が長い式のときに exp(…) と書く。",
+    "exp of の読みはほとんどが 3Blue1Brown で、MIT OCW の講義は the exponential of と言う。"
   ],
   "sources": [
     {
@@ -35,15 +35,23 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 1"
+      "title": "OpenStax Calculus Volume 1",
+      "note": "Integrals, Exponential Functions, and Logarithms（exp x）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 2"
+      "title": "OpenStax Calculus Volume 2",
+      "note": "Integrals, Exponential Functions, and Logarithms（exp x）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「指数関数」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%8C%87%E6%95%B0%E9%96%A2%E6%95%B0",
+      "note": "exp x のようにも書く"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "the exponential of *": 17,
@@ -56,6 +64,6 @@
       "mit-6.042",
       "yt:3blue1brown"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

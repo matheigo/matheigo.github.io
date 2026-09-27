@@ -15,7 +15,7 @@
   "name_en": "square root",
   "name_ja": "平方根（ルート）",
   "category": "roots",
-  "term_ref": null,
+  "term_ref": "square-root-of-a-number",
   "level": {
     "jp": [
       "中3",
@@ -26,19 +26,31 @@
     ]
   },
   "notes": [
-    "根号が全体にかかっていることをはっきりさせたいときは the square root of the quantity x squared plus one と言うことがある（用例コーパスでは MIT OCW に少しだけ出てくる）。the quantity が括弧の役割をする。",
+    "根号が全体にかかっていることをはっきりさせたいときは the square root of the quantity x squared plus one と言うことがある。the quantity が括弧の役割をする。",
     "3 乗根は 'the cube root of', n 乗根は 'the nth root of'。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）〔用語・記号〕",
+      "note": "中3 A 数と式: √"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 8 8.2 Side Lengths and Areas（the square root of 73）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "the square root of *": 1677
+      "the square root of *": 1677,
+      "!square !cube !nth !the !a root two | !square !cube !nth !the !a root three | !square !cube !nth !the !a root x": 151
     },
     "sources": [
       "khan-algebra",
@@ -57,6 +69,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

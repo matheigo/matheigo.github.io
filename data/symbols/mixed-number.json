@@ -11,7 +11,7 @@
       "register": "spoken"
     }
   ],
-  "spoken_ja": "2 と 4 分の 3（帯分数）",
+  "spoken_ja": "2 と 4 分の 3",
   "name_en": "mixed number",
   "name_ja": "帯分数",
   "category": "fractions",
@@ -26,32 +26,48 @@
   },
   "notes": [
     "帯分数 2¾ は two and three fourths と読み、and で整数部分と分数部分をつなぐ。",
-    "米国の Pre-Algebra の教材は帯分数を使い続ける。"
+    "OpenStax Prealgebra（Visualize Fractions）と IM Grade 6 は帯分数（mixed number）を使う。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「分数」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%88%86%E6%95%B0",
+      "note": "帯分数は「k と d 分の n」と読む、英語は and で読む"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "4.1 Visualize Fractions（mixed numbers）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 6（three and one half cups ほか）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "and * quarters | and a quarter": 6,
-      "and * fourths | and * thirds | and * fifths | and one half": 36
+      "and a quarter | and three quarters | and one quarter": 4,
+      "and one fourth | and three fourths | and one third | and two thirds | and one fifth | and two fifths | and three fifths | and four fifths | and one half": 16
     },
     "sources": [
       "khan-ap-calc",
       "khan-ap-stats",
       "khan-middle",
       "mit-18.01",
-      "mit-18.02",
       "mit-18.03",
       "mit-18.06",
       "yt:3blue1brown",
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

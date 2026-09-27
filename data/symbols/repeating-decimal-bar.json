@@ -8,10 +8,10 @@
     },
     {
       "text": "zero point three with a bar over the three",
-      "register": "standard"
+      "register": "spoken"
     }
   ],
-  "spoken_ja": "0.3 の循環小数 ／ れい てん さん さん …",
+  "spoken_ja": "れい てん さん さん …",
   "name_en": "repeating decimal bar",
   "name_ja": "循環小数の上線",
   "category": "arithmetic",
@@ -42,24 +42,34 @@
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e",
       "note": "循環節全体の上に横線を引く書き方"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 8 8.14 Decimal Representations of Rational Numbers（the bar over part of the expansion）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "Rational and irrational numbers の説明（the bar over the 3）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "bar over the * | line over the * | bar over it | line over it | bar on top": 10,
-      "point * repeating | three repeating | six repeating | nine repeating | one repeating | two repeating | repeating forever": 24
+      "point * repeating | three repeating | six repeating | nine repeating | one repeating | two repeating | repeating forever": 24,
+      "bar over the * | line over the * | bar on top": 5
     },
     "sources": [
       "khan-ap-stats",
       "khan-middle",
-      "mit-18.03",
       "mit-6.042",
       "yt:3blue1brown",
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

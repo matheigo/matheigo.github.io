@@ -7,11 +7,11 @@
       "register": "standard"
     }
   ],
-  "spoken_ja": "a n ／ a の n",
+  "spoken_ja": "a n",
   "name_en": "subscript",
   "name_ja": "添字",
   "category": "subscripts",
-  "term_ref": "general-term",
+  "term_ref": "subscript",
   "related": [
     "sequence-starting-index"
   ],
@@ -26,8 +26,8 @@
     ]
   },
   "notes": [
-    "aₙ は a sub n と読む。講義では sub を言わずに a n と読むことも多い。",
-    "aₙ₊₁ は a sub n plus one。aₙ + 1 と区別したいときは a sub n, plus one と区切るか、the quantity を使う。"
+    "aₙ は a sub n と読む。sub を言わずに a n と読む人もいる。",
+    "aₙ₊₁ は a sub n plus one。aₙ + 1 は a sub n, plus one と区切って読む。"
   ],
   "sources": [
     {
@@ -40,10 +40,15 @@
     {
       "type": "textbook",
       "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "Summation Notation（the sum of a sub i from i equals one to five）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "a sub *": 307
@@ -61,6 +66,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -1135,8 +1135,10 @@ describe("SYMBOL_PATTERNS for square-root and summation-sigma", () => {
     const text = normalize("the square root of two over two. the sum from k equals one to n of k squared");
     expect(countPattern(text, countedAs("symbols", "square-root", "the square root of x squared plus one"))).toBe(1);
     expect(countPattern(text, countedAs("symbols", "summation-sigma", "the sum from k equals one to n of a sub k"))).toBe(1);
-    // the short reading stays literal
-    expect(countedAs("symbols", "square-root", "root x squared plus one")).toBe("root x squared plus one");
+    // the short reading: "root" before two, three or x, not inside "the square root of" (Phase 5 監査 9, batch 32)
+    const short = countedAs("symbols", "square-root", "root x squared plus one");
+    expect(countPattern(normalize("so this is root two over two, times root x"), short)).toBe(2);
+    expect(countPattern(normalize("the square root two. a cube root x. the root x"), short)).toBe(0);
   });
 });
 

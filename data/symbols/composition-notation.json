@@ -7,7 +7,7 @@
       "register": "standard"
     }
   ],
-  "spoken_ja": "f マル g (x) ／ f(g(x))",
+  "spoken_ja": "f マル g (x)",
   "name_en": "composition of functions",
   "name_ja": "合成関数の記号",
   "category": "functions",
@@ -23,7 +23,7 @@
     ]
   },
   "notes": [
-    "f(g(x)) も (f ∘ g)(x) も f of g of x と読む。∘ を記号どおりに読む f composed with g、f circle g は講義にはほとんど出てこない。",
+    "f(g(x)) も (f ∘ g)(x) も f of g of x と読む。OpenStax Algebra and Trigonometry（3.4 Composition of Functions）は (f ∘ g)(x) を f composed with g at x、f(g(x)) を f of g of x と読む。",
     "内側の g(x) を先に計算する（the inside function first）。"
   ],
   "sources": [
@@ -32,7 +32,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "3.4 Composition of Functions（f composed with g at x、f of g of x）"
     },
     {
       "type": "textbook",
@@ -44,7 +45,7 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "f of g of *": 61
@@ -55,6 +56,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

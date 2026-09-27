@@ -11,14 +11,14 @@
       "register": "standard"
     }
   ],
-  "spoken_ja": "a ノットイコール b ／ a は b に等しくない",
+  "spoken_ja": "a は b に等しくない",
   "name_en": "not-equal sign",
   "name_ja": "等しくない（≠）",
   "category": "arithmetic",
   "term_ref": null,
   "level": {
     "jp": [
-      "数I"
+      "中1"
     ],
     "us": [
       "Pre-Algebra",
@@ -27,7 +27,7 @@
   },
   "notes": [
     "≠ は does not equal（doesn't equal）か is not equal to と読む。x ≠ 0 は x is not equal to zero。",
-    "日本語の「ノットイコール」に当たる not equal だけで読むことは少ない。"
+    "OpenStax Elementary Algebra（1.1）は a ≠ b を a is not equal to b と読む。"
   ],
   "sources": [
     {
@@ -44,10 +44,21 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第1学年 A(3) 一次方程式（Ax = B（A ≠ 0））"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "1.1 Use the Language of Algebra の Inequality Symbols の表（a ≠ b is read a is not equal to b）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "is not equal to *": 72,
@@ -69,6 +80,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

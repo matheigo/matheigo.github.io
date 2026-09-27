@@ -596,10 +596,11 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "the integral from a to b of f of x d x": "the integral from * to * of",
     "the integral of f of x from a to b": "the integral of * from * to *",
   },
-  // The short reading "root x squared plus one" stays literal: a `*` cannot
-  // leave out "square … of", so any pattern for it also counts the long one.
+  // The short reading "root x squared plus one": "root" before a number or x, not after "square"
+  // (Phase 5 監査 9, batch 32: the literal had no hits)
   "square-root": {
     "the square root of x squared plus one": "the square root of *",
+    "root x squared plus one": "!square !cube !nth !the !a root two | !square !cube !nth !the !a root three | !square !cube !nth !the !a root x",
   },
   // (Phase 2 代数 2 の単元) "n choose k", "n choose r", "n choose two": the top is n. A
   // bare "* choose *" would also count "we choose u".
@@ -642,7 +643,7 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "a is not equal to b": "is not equal to *",
   },
   "approximately-equal-sign": {
-    "a is approximately b": "is approximately !equal",
+    "a is approximately b": "is approximately !equal !normal !the !going", // not "is approximately normal" (batch 32)
     "a is approximately equal to b": "is approximately equal to * | approximately equals *",
   },
   "less-than-sign": {
@@ -686,7 +687,8 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   },
   "repeating-decimal-bar": {
     "zero point three repeating": "point * repeating | three repeating | six repeating | nine repeating | one repeating | two repeating | repeating forever",
-    "zero point three with a bar over the three": "bar over the * | line over the * | bar over it | line over it | bar on top",
+    // "bar over it" / "line over it" are mostly x̄ and conjugates (Phase 5 監査 9, batch 32)
+    "zero point three with a bar over the three": "bar over the * | line over the * | bar on top",
   },
   "scientific-notation-form": {
     "three point two times ten to the fifth": "times ten to the *",
@@ -715,12 +717,13 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   },
   "numeric-fraction": {
     "three fourths": "one fourth | three fourths | one third | two thirds | one fifth | two fifths | three fifths",
-    "three over four": "one over four | three over four | one over three | two over three | one over five | two over five | three over five",
+    "three over four": "one over two | one over four | three over four | one over three | two over three | one over five | two over five | three over five",
     "three quarters": "one quarter | three quarters",
   },
   "mixed-number": {
-    "two and three fourths": "and * fourths | and * thirds | and * fifths | and one half",
-    "two and three quarters": "and * quarters | and a quarter",
+    // the numbers spelled out: "and * thirds" also counted "and then you have negative two thirds" (batch 32)
+    "two and three fourths": "and one fourth | and three fourths | and one third | and two thirds | and one fifth | and two fifths | and three fifths | and four fifths | and one half",
+    "two and three quarters": "and a quarter | and three quarters | and one quarter",
   },
   "rational-expression-fraction": {
     "x plus one, all over x minus one": "all over *",
@@ -737,17 +740,18 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "x to the power of four": "to the power of four",
   },
   "power-n": {
-    "x to the n": "to the n !power",
+    "x to the n": "to the n !power !plus !minus", // x^{n+1} is expression-exponent's
     "x to the nth power": "to the nth power",
-    "x to the nth": "to the nth !power",
+    "x to the nth": "to the nth !power !derivative !point !component !term",
     "x to the power of n": "to the power of n",
   },
   "negative-exponent-power": {
-    "x to the negative one": "to the negative one !power | to the negative n !power",
+    "x to the negative one": "to the negative one !power !half | to the negative n !power", // not x^{-1/2}
     "x to the negative first power": "to the negative first power | to the negative one power",
   },
   "fractional-exponent": {
-    "a to the m over n": "to the * over *",
+    // a number or a letter on top: "to the * over *" was mostly x⁴/4 ("x to the fourth over four", batch 32)
+    "a to the m over n": "to the one over * | to the two over * | to the three over * | to the m over n | to the p over q | to the r over s | to the a over b",
     "a to the one half": "to the one half | to the one third | to the two thirds | to the three halves",
   },
   "expression-exponent": {
@@ -777,7 +781,7 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   "x-naught": {
     "x sub zero": "* sub zero",
     "x naught": "* naught",
-    "x zero": "x zero | t zero",
+    "x zero": "x zero", // "t zero" was mostly "isn' t zero" (batch 32)
   },
   "sequence-braces": {
     "the sequence a sub n": "the sequence a sub * | the sequence of a sub *",
@@ -810,11 +814,12 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "the max of a and b": "the max of * and * | the min of * and * | max of * and * | min of * and *",
     "the larger of a and b": "the larger of * and * | the smaller of * and * | the bigger of * and *",
   },
+  // "floor of *" was mostly a room's or a building's floor (batch 32): the function's readings only
   "floor-brackets": {
-    "the floor of x": "floor of *",
+    "the floor of x": "floor of x | floor of n | floor of one | floor of two | floor of something",
   },
   "gauss-bracket-jp": {
-    "the floor of x": "floor of *",
+    "the floor of x": "floor of x | floor of n | floor of one | floor of two | floor of something",
   },
   "ceiling-brackets": {
     "the ceiling of x": "ceiling of *",

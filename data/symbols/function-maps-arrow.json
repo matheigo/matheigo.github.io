@@ -23,15 +23,27 @@
   },
   "notes": [
     "f: A → B は f maps A to B、または f is a function from A to B と読む。",
-    "x ↦ f(x) は x maps to f of x（x goes to f of x とも）と読み、矢印の形が → と違う（根元に縦棒）。"
+    "x ↦ f(x) は x maps to f of xと読み、矢印の形が → と違う（根元に縦棒）。"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "0.2（a function maps one set to another set）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "8.1（f maps S to S′）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "maps * to *": 20
@@ -43,6 +55,6 @@
       "mit-6.042",
       "yt:3blue1brown"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }
