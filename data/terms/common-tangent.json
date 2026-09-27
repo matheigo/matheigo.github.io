@@ -25,12 +25,12 @@
     ]
   },
   "definition_ja": "2 つの円（または 2 つの曲線）の両方に接する直線。2 円が共通接線の同じ側にあれば共通外接線、反対側にあれば共通内接線という。",
-  "definition_en": "A line tangent to each of two circles (or curves). It is a common external tangent if both circles lie on the same side of it and a common internal tangent if they lie on opposite sides.",
+  "definition_en": "A line tangent to each of two circles (or curves). It is an external tangent if both circles lie on the same side of it and an internal tangent if they lie on opposite sides.",
   "latex": null,
   "spoken_en": null,
   "examples": [
     {
-      "en": "These two circles don't overlap, so they have four common tangents: two external ones and two internal ones that cross between the circles.",
+      "en": "These two circles are completely separate — they don't even touch — so they have four common tangents: two external ones and two internal ones that cross between the circles.",
       "ja": "この 2 円は離れているので、共通接線は 4 本ある。共通外接線が 2 本と、2 円の間で交わる共通内接線が 2 本。",
       "register": "spoken"
     },
@@ -42,7 +42,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "共通外接線は common external tangent、共通内接線は common internal tangent。日本語の「外接・内接」を circumscribed ／ inscribed と訳さない。",
+    "英語版 Wikipedia「Tangent lines to circles」は、共通外接線を external tangent line（節 Outer tangent）、共通内接線を internal tangent line（節 Inner tangent）と書く。日本語の「外接・内接」を circumscribed ／ inscribed と訳さない。",
     "本数は 2 円の位置関係で決まる。離れていれば 4 本、外接なら 3 本、2 点で交われば 2 本、内接なら 1 本、一方が内部にあれば 0 本。"
   ],
   "related": [
@@ -60,6 +60,12 @@
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
       "note": "6.2 Identify Circle Components"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tangent_lines_to_circles",
+      "note": "記事「Tangent lines to circles」の節 Outer tangent ／ Inner tangent（external ／ internal tangent line。数学カテゴリから 4 段）"
     }
   ],
   "confidence": "likely",
@@ -68,16 +74,16 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 common tangent（CK-12 Geometry 6.2 Identify Circle Components・計 1 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

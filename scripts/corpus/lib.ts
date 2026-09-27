@@ -1500,7 +1500,10 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   "median-of-a-triangle": { median: "median of a triangle | median of the triangle | medians of a triangle | medians of the triangle" },
   "congruence-modulo-n": { "congruence modulo n": "congruent modulo | congruent mod | congruence modulo | congruence mod" },
   // 10 進法: "base ten" alone is mostly "log, base ten"
-  "decimal-system": { "base ten": "base-ten | base ten system | base ten number | base ten numeral | base ten place | in base ten" },
+  // "base-ten logarithmic scale" is a logarithm's base (Phase 5 監査 7, batch 18)
+  "decimal-system": { "base ten": "base-ten !logarithmic | base ten system | base ten number | base ten numeral | base ten place | in base ten" },
+  parity: { parity: "!power parity" }, // not purchasing power parity (Phase 5 監査 7, batch 18)
+  "triangle-inequality": { "triangle inequality": "!sas triangle inequality" }, // not CK-12's SAS Triangle Inequality Theorem (the hinge theorem)
   // 割線: "secant" alone is also sec θ
   "secant-line": { "secant line": "secant line | a secant of | secant of the circle | secants of the circle" },
   // CK-12 Algebra's "a fractional part of a power of one-tenth" is a decimal place, not x − ⌊x⌋ (単元 3)
@@ -1512,8 +1515,10 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   "circular-permutation": { "circular permutation": "number of circular permutations | circular permutations of n | circular permutation formula" },
   // batch 4
   "eulers-formula-for-polyhedra": {
-    // the bare name is also e^(iθ) = cos θ + i sin θ
-    "Euler's formula for polyhedra": "Euler's formula for polyhedra | Euler's polyhedron formula | Euler's formula for planar graphs",
+    // CK-12 Geometry 9.1's name, in the sentences it uses it in: the bare "Euler's theorem" is the number-theory
+    // theorem (a^φ(n) ≡ 1 mod n) everywhere in the corpus (MIT 6.042). Levin's "Euler's formula for planar
+    // graphs" is its own candidate (Phase 5 監査 7, batch 18: the three names were one form before)
+    "Euler's theorem": "Euler's theorem: f | into Euler's theorem | Euler's theorem to solve | for v in Euler's theorem | table using Euler's theorem | called Euler's theorem",
   },
   "supplementary-angle": { "supplementary angles": "supplementary" }, // the pair is supplementary; "supplementary angles" is inside it
   // "in base e" is an exponential model's base and "in based on" folds into "in base" (Phase 5 監査 7, batch 17)

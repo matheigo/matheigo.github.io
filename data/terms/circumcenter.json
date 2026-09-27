@@ -26,7 +26,7 @@
     ]
   },
   "definition_ja": "三角形の 3 辺の垂直二等分線が交わる点。3 頂点から等しい距離にあり、外接円の中心になる。",
-  "definition_en": "The point where the perpendicular bisectors of the three sides of a triangle meet. It is the same distance from all three vertices, so it is the center of the circumscribed circle.",
+  "definition_en": "The single point shared by the perpendicular bisectors of a triangle's three sides. It is equally far from all three vertices, so it is the center of the circumscribed circle.",
   "latex": "OA = OB = OC",
   "spoken_en": null,
   "examples": [
@@ -44,13 +44,15 @@
   "collocations": [],
   "pitfalls": [
     "外心は鋭角三角形では内部、直角三角形では斜辺の中点、鈍角三角形では三角形の外部にある。",
-    "外接円は circumcircle（circumscribed circle）、その半径は circumradius。英国式のつづりは circumcentre。"
+    "英語版 Wikipedia「Circumcircle」は、外接円を circumcircle（circumscribed circle）、その半径を circumradius と書く。英国式のつづりは circumcentre。"
   ],
   "related": [
     "circumscribed-circle",
     "perpendicular-bisector",
     "the-five-centers-of-a-triangle",
-    "law-of-sines"
+    "law-of-sines",
+    "incenter",
+    "orthocenter"
   ],
   "sources": [
     {
@@ -67,6 +69,12 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences#re_er",
       "note": "記事「American and British English spelling differences」の節 -re, -er（英国の綴りは centre、米国は center）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Circumcircle",
+      "note": "記事「Circumcircle」の冒頭（circumcircle・circumradius・circumcenter を太字で定義。数学カテゴリから 5 段）"
     }
   ],
   "confidence": "likely",
@@ -75,16 +83,16 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 circumcenter（Geometry glossary・Geometry 7.5 Triangles in Circles・Geometry 7.6 A Special Point・計 20 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

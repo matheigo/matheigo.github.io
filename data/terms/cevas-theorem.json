@@ -22,8 +22,8 @@
     ],
     "us": []
   },
-  "definition_ja": "△ABC の頂点と 1 点 O を結ぶ直線 AO, BO, CO が対辺（またはその延長）と P, Q, R で交わるとき、(BP/PC)(CQ/QA)(AR/RB) = 1 が成り立つという定理。逆も成り立ち、3 本の直線が 1 点で交わることの証明に使う。",
-  "definition_en": "If lines through the vertices of triangle ABC and a common point O meet the opposite sides (or their extensions) at P, Q, and R, then (BP/PC)(CQ/QA)(AR/RB) = 1. The converse also holds, so the theorem is a tool for proving that three such lines are concurrent.",
+  "definition_ja": "△ABC の頂点と 1 点 O を結ぶ直線 AO, BO, CO が対辺（またはその延長）と P, Q, R で交わるとき、(BP/PC)(CQ/QA)(AR/RB) = 1 が成り立つという定理。逆（P, Q, R が辺 BC, CA, AB 上にあり、積が 1 なら AP, BQ, CR は 1 点で交わる）も成り立ち、3 本の直線が 1 点で交わることの証明に使う。",
+  "definition_en": "If lines through the vertices of triangle ABC and a common point O meet the opposite sides (or their extensions) at P, Q, and R, then (BP/PC)(CQ/QA)(AR/RB) = 1. The converse also holds when P, Q, and R lie on the sides themselves, so the theorem is a tool for proving that three such lines are concurrent.",
   "latex": "\\frac{BP}{PC}\\cdot\\frac{CQ}{QA}\\cdot\\frac{AR}{RB} = 1",
   "spoken_en": "BP over PC, times CQ over QA, times AR over RB, equals one",
   "examples": [
@@ -42,7 +42,7 @@
   "pitfalls": [
     "比は三角形の周りを一方向にたどって書く。順番を崩すと積が 1 にならない。",
     "点 O が三角形の外部にあっても成り立つ（そのときは 2 つの分点が辺の延長上にくる）。",
-    "頂点と対辺上の点を結ぶ線分は英語で cevian と呼ぶ。"
+    "英語版 Wikipedia「Cevian」は、頂点と対辺（またはその延長）上の点を結ぶ線分を cevian と呼ぶ。"
   ],
   "related": [
     "menelauss-theorem",
@@ -55,6 +55,12 @@
       "type": "wikipedia-langlink",
       "ja": "チェバの定理",
       "en": "Ceva's theorem"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cevian",
+      "note": "記事「Cevian」の冒頭（cevian を太字で定義。数学カテゴリから 4 段）"
     }
   ],
   "confidence": "likely",
@@ -66,13 +72,13 @@
   "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 Ceva's theorem（英語版「Ceva's theorem」、ja の langlink 先）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

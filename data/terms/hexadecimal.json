@@ -3,7 +3,10 @@
   "ja": {
     "term": "16 進法",
     "reading": "じゅうろくしんほう",
-    "alt": []
+    "alt": [
+      "十六進法",
+      "16 進数"
+    ]
   },
   "en": {
     "term": "hexadecimal",
@@ -43,14 +46,15 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の教科書は 2F₍₁₆₎ のように括弧つきの添字で基数を書く。英語の資料には 2F₁₆ のように括弧なしで書くものや、プログラミングの 0x2F の書き方もある。",
+    "センター試験（平成 28 年度 本試験 数学I・数学A 第 4 問）は 11011₍₂₎ のように括弧つきの添字で基数を書く。英語版 Wikipedia「Hexadecimal」は、数学では基数を括弧なしの添字で示し（2F₁₆ の形）、C などのプログラミングでは接頭辞 0x を付ける（0x2F）と書く。",
     "hexadecimal は名詞にも形容詞にも使う（in hexadecimal ／ a hexadecimal number）。「16 進数」も同じ語で言える。"
   ],
   "related": [
     "base-n",
     "binary",
     "numeral-system",
-    "digit"
+    "digit",
+    "decimal-system"
   ],
   "sources": [
     {
@@ -58,6 +62,23 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "3.2 Combining Outcomes"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成28年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "note": "第4問: 11011(2) の括弧つきの添字"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hexadecimal",
+      "note": "記事「Hexadecimal」の冒頭と節 Identification（添字、接頭辞 0x。数学カテゴリから 4 段）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「十六進法」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8D%81%E5%85%AD%E9%80%B2%E6%B3%95",
+      "note": "十六進法（16 進数）"
     }
   ],
   "confidence": "likely",
@@ -66,7 +87,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "hexadecimal": 26
@@ -74,6 +95,6 @@
     "sources": [
       "khan-middle"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

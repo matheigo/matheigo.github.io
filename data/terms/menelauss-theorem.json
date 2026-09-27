@@ -24,8 +24,8 @@
     ],
     "us": []
   },
-  "definition_ja": "△ABC の頂点を通らない 1 本の直線が、直線 BC, CA, AB と P, Q, R で交わるとき、(BP/PC)(CQ/QA)(AR/RB) = 1 が成り立つという定理。逆も成り立ち、3 点が一直線上にあることの証明に使う。",
-  "definition_en": "If a line that passes through no vertex of triangle ABC meets lines BC, CA, and AB at P, Q, and R, then (BP/PC)(CQ/QA)(AR/RB) = 1. The converse also holds, so the theorem is a tool for proving that three points are collinear.",
+  "definition_ja": "△ABC の頂点を通らない 1 本の直線が、直線 BC, CA, AB と P, Q, R で交わるとき、(BP/PC)(CQ/QA)(AR/RB) = 1 が成り立つという定理。逆（P, Q, R のうち 1 個か 3 個が辺の延長上にあり、積が 1 なら 3 点は一直線上にある）も成り立ち、3 点が一直線上にあることの証明に使う。",
+  "definition_en": "If a line that passes through no vertex of triangle ABC meets lines BC, CA, and AB at P, Q, and R, then (BP/PC)(CQ/QA)(AR/RB) = 1. The converse also holds when one or all three of P, Q, and R lie on extensions of the sides, so the theorem is a tool for proving that three points are collinear.",
   "latex": "\\frac{BP}{PC}\\cdot\\frac{CQ}{QA}\\cdot\\frac{AR}{RB} = 1",
   "spoken_en": "BP over PC, times CQ over QA, times AR over RB, equals one",
   "examples": [
@@ -42,7 +42,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "Menelaus は英語で「メネレイアス」に近く読む（第 3 音節 LAY に強勢。Merriam-Webster: ˌme-nə-ˈlā-əs）。所有格は Menelaus's と Menelaus' の 2 通りのつづりがある。",
+    "Menelaus は英語で「メネレイアス」に近く読む（第 3 音節 LAY に強勢。Merriam-Webster: ˌme-nə-ˈlā-əs）。所有格のつづりは 2 通りあり、英語版 Wikipedia の記事名は Menelaus's theorem、記事が参考文献に挙げる MathWorld の項目名は Menelaus' Theorem。",
     "直線は 3 辺のうち 2 辺と内分点で、1 辺と延長上（外分点）で交わるか、3 辺とも延長上で交わる。比は三角形の周りを一方向にたどって書く。"
   ],
   "related": [
@@ -62,6 +62,12 @@
       "title": "Merriam-Webster「Menelaus」",
       "url": "https://www.merriam-webster.com/dictionary/Menelaus",
       "note": "発音 ˌme-nə-ˈlā-əs（2026-09-26 に確かめた）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Menelaus%27s_theorem",
+      "note": "記事「Menelaus's theorem」の冒頭（Menelaus's theorem を太字で定義。参考文献に MathWorld の Menelaus' Theorem。数学カテゴリから 3 段）"
     }
   ],
   "confidence": "likely",
@@ -73,13 +79,13 @@
   "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 Menelaus's theorem（英語版「Menelaus's theorem」、ja の langlink 先）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

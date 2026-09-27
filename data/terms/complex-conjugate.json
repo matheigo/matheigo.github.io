@@ -37,8 +37,8 @@
   "spoken_en": "the conjugate of a plus b i is a minus b i",
   "examples": [
     {
-      "en": "Multiply the top and bottom by the complex conjugate of the denominator.",
-      "ja": "分母の共役複素数を分子と分母に掛けよう。",
+      "en": "Multiply top and bottom by 3 + 4i, the complex conjugate of the denominator.",
+      "ja": "分子と分母に、分母の共役複素数 3 + 4i を掛けよう。",
       "register": "spoken"
     },
     {
@@ -54,7 +54,7 @@
     }
   ],
   "pitfalls": [
-    "記号 z̄ は z bar と読む。",
+    "記号 z̄ は the complex conjugate of z と読む（記号のエントリ complex-conjugate-bar と同じ）。MIT OCW の講義は x bar のように文字に bar を付けても読む。",
     "「z が実数となる条件」は z̄ = z、「純虚数となる条件」は z̄ = −z かつ z ≠ 0。英語でも同じ式で書く。",
     "「共役をとる」は take the conjugate（口頭）。"
   ],
@@ -62,7 +62,9 @@
     "pure-imaginary-number",
     "complex-plane",
     "real-axis",
-    "modulus-of-a-complex-number"
+    "modulus-of-a-complex-number",
+    "complex-number",
+    "conjugate-roots"
   ],
   "sources": [
     {
@@ -81,7 +83,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "complex conjugate": 38
@@ -97,6 +99,6 @@
       "openstax-calculus",
       "openstax-intalg"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

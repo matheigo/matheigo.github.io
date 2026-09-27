@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（three perpendiculars theorem は用例コーパスにも CED・OpenStax・Nicholson・Levin にも出てこない）。英語では定理の名前を出さず、「PH が平面に垂直で、HO が直線 ℓ に垂直だから PO も ℓ に垂直」のように、垂直の関係を順に述べて説明する。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（three perpendiculars theorem は用例コーパスにも CED・OpenStax・Nicholson・Levin にも出てこない）。英語で説明するときは、「PH が平面に垂直で、HO が直線 ℓ に垂直だから PO も ℓ に垂直」のように、垂直の関係を順に述べる。",
   "domains": [
     "geometry"
   ],
@@ -40,7 +40,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "答案では定理名に頼らず、直線と平面の垂直の定義（平面上の交わる 2 直線と垂直）から PO ⊥ ℓ を導く形で書くと、英語でもそのまま通る説明になる。"
+    "答案では定理名に頼らず、直線と平面の垂直の条件（平面上の交わる 2 直線と垂直）から PO ⊥ ℓ を導く形で書く。"
   ],
   "related": [
     "line-perpendicular-to-a-plane",
@@ -51,6 +51,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「代数・幾何」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%BB%A3%E6%95%B0%E3%83%BB%E5%B9%BE%E4%BD%95",
+      "note": "旧課程の内容の取扱い: 三垂線の定理を導く程度の内容"
     }
   ],
   "confidence": "likely",
@@ -68,7 +74,7 @@
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping none なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

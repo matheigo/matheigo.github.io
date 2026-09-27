@@ -15,12 +15,13 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "CK-12 Geometry は congruent angles と呼ぶ（1.11 Congruent Angles and Angle Bisectors ほか、31 件。equal angles は 3 件）。用例コーパスにはどちらも少なく、congruent angles は話し言葉（大半が The Organic Chemistry Tutor）、equal angles は書き言葉（すべて MIT の講義ノート）にだけ出てくる。大きさの等しい角は congruent angles とも equal angles とも言う。記号では、角そのものの関係を ∠A ≅ ∠B（the angles are congruent）、角の大きさ（measure）の関係を m∠A = m∠B と書き分ける書き方がある。",
+  "mapping_note": "CK-12 Geometry は congruent angles と呼ぶ（1.11 Congruent Angles and Angle Bisectors ほか、31 件。equal angles は 3 件）。用例コーパスには congruent angles が話し言葉に少しあるだけ（大半が The Organic Chemistry Tutor）。大きさの等しい角は congruent angles とも equal angles とも言う。CK-12 Geometry（1.11）は、角そのものの関係を ∠A ≅ ∠B（the angles are congruent）、角の大きさ（measure）の関係を m∠A = m∠B と書き分ける。",
   "domains": [
     "geometry"
   ],
   "level": {
     "jp": [
+      "中2",
       "数A"
     ],
     "us": [
@@ -46,13 +47,14 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の教科書は ∠A = ∠B と書くが、∠A ≅ ∠B と m∠A = m∠B を使い分ける書き方もある。m は measure（大きさ）の m。"
+    "学習指導要領解説（中学校、第 2 学年）は ∠AOC = ∠BOD のように角の大きさの等しさを = で書く。∠A ≅ ∠B と m∠A = m∠B を書き分けるのは CK-12 Geometry の書き方で、m は measure（大きさ）の m。"
   ],
   "related": [
     "congruent",
     "angle",
     "isosceles-triangle",
-    "supplementary-angle"
+    "supplementary-angle",
+    "isosceles-triangle-theorem"
   ],
   "sources": [
     {
@@ -63,6 +65,12 @@
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
       "note": "1.11 Congruent Angles and Angle Bisectors・4.12 Congruent Triangles・5.20 Regular and Irregular Polygons"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 2 学年 B 図形: ∠AOC＝∠BOD（角の大きさの等しさ）"
     }
   ],
   "confidence": "likely",
@@ -71,7 +79,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "congruent angles": 11
@@ -84,6 +92,6 @@
       "mit-notes",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -21,7 +21,9 @@
   ],
   "level": {
     "jp": [
-      "数A"
+      "中1",
+      "数A",
+      "数C"
     ],
     "us": [
       "Geometry"
@@ -52,11 +54,42 @@
   "related": [
     "collinear",
     "collinearity-condition",
-    "equation-of-a-plane"
+    "equation-of-a-plane",
+    "coplanarity-condition",
+    "skew-lines"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.1 Geometry Terms（coplanar）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「共面」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%85%B1%E9%9D%A2",
+      "note": "共面（英: coplanar）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Coplanarity",
+      "note": "記事「Coplanarity」の冒頭（coplanar を太字で定義。数学カテゴリから 3 段）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3",
+      "note": "2.4 The Cross Product（coplanar）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 1 学年 B 図形（空間図形）: その二つの直線は同一平面上にある"
     }
   ],
   "confidence": "likely",
@@ -65,7 +98,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "coplanar": 10
@@ -74,6 +107,6 @@
       "mit-notes",
       "openstax-calculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -5,8 +5,7 @@
     "reading": "ないぶんてん",
     "alt": [
       "内分する点",
-      "内分",
-      "線分の分点"
+      "内分"
     ]
   },
   "en": {
@@ -28,7 +27,7 @@
       "数II"
     ],
     "us": [
-      "Precalculus"
+      "Geometry"
     ]
   },
   "definition_ja": "線分 AB 上にあって、AP : PB = m : n となる点 P。座標は両端の座標を n : m の重みで平均したもの。",
@@ -37,7 +36,7 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "The point that divides AB in the ratio 2 to 1 is two-thirds of the way from A to B.",
+      "en": "The point that divides the segment internally in the ratio 2 to 1 is two-thirds of the way from A to B.",
       "ja": "AB を 2 : 1 に内分する点は、A から B への 3 分の 2 のところにある。",
       "register": "spoken"
     },
@@ -49,13 +48,15 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "外分点は point-of-external-division（外分点）。「内分する」は動詞で divides … internally と言う。",
-    "「線分 AB を 2:3 に内分する点」は、the point that partitions segment AB in the ratio 2:3 とも言う。"
+    "外分点は point-of-external-division（外分点）。英語版 Wikipedia「Section formula」は内分を節 Internal divisions で扱い、divided internally と書く。",
+    "IM Geometry（6.15〜6.17）と CK-12 Geometry（1.6）は、内分点を partition（分ける）で言う（the point that partitions segment AB …）。"
   ],
   "related": [
     "midpoint",
     "centroid",
-    "point-of-external-division"
+    "point-of-external-division",
+    "angle-bisector-theorem",
+    "apollonian-circle"
   ],
   "sources": [
     {
@@ -66,6 +67,18 @@
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
       "note": "1.6 Points that Partition Line Segments（section formula、10 件）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 6.15〜6.17（the point that partitions segment AB）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Section_formula",
+      "note": "記事「Section formula」の節 Internal divisions（数学カテゴリから 5 段）"
     }
   ],
   "confidence": "likely",
@@ -83,7 +96,7 @@
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

@@ -33,8 +33,8 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "A cubic equation always has at least one real root.",
-      "ja": "3 次方程式は必ず実数解を少なくとも 1 つもつ。",
+      "en": "A cubic equation with real coefficients always has at least one real root.",
+      "ja": "実数係数の 3 次方程式は必ず実数解を少なくとも 1 つもつ。",
       "register": "spoken"
     },
     {
@@ -45,7 +45,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは話し言葉・書き言葉とも少ない。授業では単に a cubic（3 次式）と言うことが多い。"
+    "講義では名詞の a cubic（3 次式・3 次方程式）だけで言う例もある（MIT OCW 18.01、Professor Leonard）。a cubic は a cubic foot のように体積の単位にも使う。"
   ],
   "related": [
     "polynomial-equation-of-higher-degree",
@@ -61,7 +61,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Zeros of Polynomial Functions（cubic equation）"
     }
   ],
   "confidence": "likely",
@@ -70,7 +71,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "cubic equation": 3
@@ -83,13 +84,13 @@
       "mit-18.06",
       "openstax-algtrig"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは OpenStax の呼び方 cubic equation（本文 1 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

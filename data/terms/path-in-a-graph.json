@@ -23,7 +23,6 @@
   ],
   "level": {
     "jp": [
-      "数A",
       "数C"
     ],
     "us": [
@@ -48,7 +47,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "同じ頂点を何度通ってもよいものは walk（歩道）と呼び分ける（Levin）。"
+    "同じ頂点を何度通ってもよいものは walk（歩道）と呼び分ける（Levin）。",
+    "Nicholson（2.3 Matrix Multiplication）は、頂点をくり返してよい道も path（長さ r の r-path）と呼び、隣接行列の累乗で数える（Levin の walk に当たる）。"
   ],
   "related": [
     "edge-of-a-graph",
@@ -62,6 +62,24 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "2.1 Problems and Definitions"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "2.3 Matrix Multiplication（paths of length r、r-path）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「道 (グラフ理論)」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%81%93_%28%E3%82%B0%E3%83%A9%E3%83%95%E7%90%86%E8%AB%96%29",
+      "note": "道（パス）、歩道（walk）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学C 数学的な表現の工夫: 離散グラフ（経路、最短経路の探索）"
     }
   ],
   "confidence": "likely",
@@ -70,7 +88,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "path in the graph | path in a graph | path from u to v | path of length | hamilton path | hamiltonian path | shortest path | simple path | walk or path": 22
@@ -82,6 +100,6 @@
       "mit-6.042",
       "mit-notes"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

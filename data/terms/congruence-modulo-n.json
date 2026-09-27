@@ -4,8 +4,7 @@
     "term": "合同式",
     "reading": "ごうどうしき",
     "alt": [
-      "〜を法として合同",
-      "モジュラー算術"
+      "〜を法として合同"
     ]
   },
   "en": {
@@ -57,7 +56,8 @@
     "chinese-remainder-theorem",
     "fermats-little-theorem",
     "congruent",
-    "equivalence-relation"
+    "equivalence-relation",
+    "modulus"
   ],
   "sources": [
     {
@@ -70,6 +70,12 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "6.2 Introduction to Number Theory"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学 (教科)」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6_%28%E6%95%99%E7%A7%91%29",
+      "note": "数学A 数学と人間の活動: 整数の合同"
     }
   ],
   "confidence": "likely",
@@ -78,7 +84,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "congruent modulo | congruent mod | congruence modulo | congruence mod": 2,
@@ -92,13 +98,13 @@
       "mit-6.042",
       "mit-notes"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 首位が 3 倍に届かず、次点も 10 件未満）。見出しは Levin の呼び方 congruent modulo | congruent mod | congruence modulo | congruence mod（6.2 Introduction to Number Theory）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

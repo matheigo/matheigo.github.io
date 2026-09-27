@@ -44,14 +44,15 @@
   "collocations": [],
   "pitfalls": [
     "内心は 3 辺から等距離（頂点から等距離なのは外心）。外心と取り違えない。",
-    "内接円の半径は inradius。内心は必ず三角形の内部にある。",
+    "英語版 Wikipedia「Incircle and excircles」は、内接円の半径を inradius と書く（節 Radius）。内心は必ず三角形の内部にある。",
     "英国式のつづりは incentre。"
   ],
   "related": [
     "inscribed-circle",
     "circumcenter",
     "excenter",
-    "the-five-centers-of-a-triangle"
+    "the-five-centers-of-a-triangle",
+    "angle-bisector"
   ],
   "sources": [
     {
@@ -68,6 +69,12 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences#re_er",
       "note": "記事「American and British English spelling differences」の節 -re, -er（英国の綴りは centre、米国は center）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Incircle_and_excircles",
+      "note": "記事「Incircle and excircles」の冒頭（incircle・incenter）と節 Radius（inradius）。数学カテゴリから 5 段"
     }
   ],
   "confidence": "likely",
@@ -76,7 +83,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "written": {
       "incenter": 1
@@ -84,13 +91,13 @@
     "sources": [
       "mit-notes"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは IM の呼び方 incenter（Geometry glossary・Geometry 7.7 Circles in Triangles・Geometry 7.6 A Special Point・計 27 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

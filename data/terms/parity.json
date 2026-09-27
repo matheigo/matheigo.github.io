@@ -3,7 +3,9 @@
   "ja": {
     "term": "偶奇",
     "reading": "ぐうき",
-    "alt": []
+    "alt": [
+      "偶奇性"
+    ]
   },
   "en": {
     "term": "parity",
@@ -44,7 +46,7 @@
   "collocations": [],
   "pitfalls": [
     "説明的に whether n is even or odd と言っても同じ意味になる。",
-    "「偶奇が一致する」は have the same parity、「偶奇が異なる」は have opposite parity。"
+    "「偶奇が一致する」は have the same parity、「偶奇が異なる」は have opposite parity（英語版 Wikipedia「Parity (mathematics)」）。"
   ],
   "related": [
     "classification-by-remainder",
@@ -54,8 +56,16 @@
   ],
   "sources": [
     {
-      "type": "textbook",
-      "title": "OpenStax Introductory Statistics 2e"
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Parity_%28mathematics%29",
+      "note": "記事「Parity (mathematics)」の冒頭（整数の偶奇。same parity・opposite parity。数学カテゴリから 4 段）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「偶奇性」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%81%B6%E5%A5%87%E6%80%A7",
+      "note": "英: parity"
     }
   ],
   "confidence": "likely",
@@ -64,19 +74,18 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "parity": 21
+      "!power parity": 21
     },
     "written": {
-      "parity": 15
+      "!power parity": 14
     },
     "sources": [
       "mit-6.042",
-      "mit-notes",
-      "openstax-introstats"
+      "mit-notes"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

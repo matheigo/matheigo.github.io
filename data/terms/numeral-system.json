@@ -7,14 +7,12 @@
   },
   "en": {
     "term": "numeral system",
-    "alt": [
-      "positional notation"
-    ],
+    "alt": [],
     "uk": null
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（numeral system ／ positional notation は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（numeral system は CED・OpenStax・IM・CK-12 とも 0 件）。",
   "domains": [
     "number-theory"
   ],
@@ -42,14 +40,15 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "number system は実数・複素数のような「数の体系」の意味にも使うので、記数法の意味では numeral system ／ positional notation のほうが紛れない。"
+    "英語版 Wikipedia「Numeral system」は、記数法を number system とも呼ぶが、実数・複素数のような「数の体系」の意味と紛れると書く。位取り記数法は英語版 Wikipedia「Positional notation」の言い方。"
   ],
   "related": [
     "base-n",
     "binary",
     "hexadecimal",
     "digit",
-    "place"
+    "place",
+    "decimal-system"
   ],
   "sources": [
     {
@@ -60,6 +59,12 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Numeral_system",
       "note": "記事名 Numeral system（en.term のリダイレクト先）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Positional_notation",
+      "note": "記事「Positional notation」（位取り記数法。数学カテゴリから 2 段）"
     }
   ],
   "confidence": "likely",
@@ -71,13 +76,13 @@
   "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 numeral system（英語版「Numeral system」、en.term のリダイレクト先）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

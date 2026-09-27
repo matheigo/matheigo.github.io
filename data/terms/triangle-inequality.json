@@ -4,12 +4,15 @@
     "term": "三角形の成立条件",
     "reading": "さんかくけいのせいりつじょうけん",
     "alt": [
-      "三角不等式"
+      "三角不等式",
+      "三角形が成立するための条件"
     ]
   },
   "en": {
     "term": "triangle inequality",
-    "alt": [],
+    "alt": [
+      "triangle inequality theorem"
+    ],
     "uk": null
   },
   "pos": "noun",
@@ -26,8 +29,8 @@
     ],
     "us": [
       "Geometry",
-      "Algebra 2",
-      "Precalculus"
+      "Calculus I",
+      "Calculus III"
     ]
   },
   "definition_ja": "三角形の 2 辺の長さの和は他の 1 辺より大きいという不等式。絶対値では |a + b| ≦ |a| + |b| の形になる。",
@@ -48,27 +51,42 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本語の「三角不等式」は、この |a + b| ≦ |a| + |b| を指すことも、三角関数を含む不等式（trigonometric-inequality）を指すこともある。英語の triangle inequality は前者だけ。",
-    "数II の「絶対値と不等式」で扱う |a| + |b| ≧ |a + b| も英語では triangle inequality と呼ぶ。"
+    "日本語版 Wikipedia「三角不等式」は、三角比（三角関数）を含む不等式（trigonometric-inequality）も三角不等式と呼ぶ場合があると注意する。英語の triangle inequality は |a + b| ≦ |a| + |b| と三角形の辺の不等式だけ。",
+    "学習指導要領解説（数学II）は、絶対値の性質などを用いて不等式が成り立つことを証明することを挙げる。OpenStax Calculus Volume 1（2.5 The Precise Definition of a Limit）は |a + b| ≤ |a| + |b| を the triangle inequality と呼ぶ。"
   ],
   "related": [
-    "prove",
-    "trigonometric-inequality"
+    "trigonometric-inequality",
+    "side-angle-inequality",
+    "absolute-value"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 1"
+      "title": "OpenStax Calculus Volume 1",
+      "note": "2.5 The Precise Definition of a Limit（the triangle inequality）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 3"
+      "title": "OpenStax Calculus Volume 3",
+      "note": "2.1 Vectors in the Plane（triangle inequality）"
     },
     {
       "type": "reference",
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
-      "note": "4.26 Triangle Inequality Theorem・4.25 Comparing Angles and Sides in Triangles・4.29 Pythagorean Theorem to Classify Triangles"
+      "note": "4.26 Triangle Inequality Theorem・4.29 Pythagorean Theorem to Classify Triangles"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「三角不等式」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E4%B8%8D%E7%AD%89%E5%BC%8F",
+      "note": "冒頭: 三角比を含む不等式を三角不等式と呼ぶ場合がある"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A 図形の性質: 三角形が成立するための条件、数学II: 絶対値の性質を用いた不等式の証明"
     }
   ],
   "confidence": "likely",
@@ -77,26 +95,26 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
-      "triangle inequality": 4
+      "!sas triangle inequality": 4
     },
     "written": {
-      "triangle inequality": 6
+      "!sas triangle inequality": 6
     },
     "sources": [
       "khan-middle",
       "openstax-calculus",
       "yt:blackpenredpen"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは CK-12 の呼び方 triangle inequality（CK-12 Geometry 4.26 Triangle Inequality Theorem・CK-12 Geometry 4.25 Comparing Angles and Sides in Triangles・CK-12 Geometry 4.29 Pythagorean Theorem to Classify Triangles・計 13 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは CK-12 の呼び方 !sas triangle inequality（CK-12 Geometry 4.26 Triangle Inequality Theorem・CK-12 Geometry 4.29 Pythagorean Theorem to Classify Triangles・計 12 件）。register は主張しない。",
+      "raised": "2026-09-27"
     }
   ]
 }

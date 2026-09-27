@@ -12,10 +12,11 @@
     "register": "both"
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "日本語版 Wikipedia「虚数」は、実数でない複素数 a + bi（b ≠ 0）を虚数とする（センター試験 平成 27 年度 数学II も 1 + 2i を虚数と呼ぶ）。OpenStax Algebra and Trigonometry（Complex Numbers）と IM Algebra 2（3.10 の用語集）は imaginary number を bi の形の数とし（英語版 Wikipedia「Imaginary number」も実数と i の積と定義する）、実数でない a + bi は、IM Algebra 2（3.17・3.19）は non-real、Nicholson は nonreal complex number と書く。",
   "domains": [
-    "algebra"
+    "algebra",
+    "complex-numbers"
   ],
   "level": {
     "jp": [
@@ -29,7 +30,7 @@
     ]
   },
   "definition_ja": "実数でない複素数。a + bi で b ≠ 0 のもの。",
-  "definition_en": "A complex number that is not real: a + bi with b ≠ 0.",
+  "definition_en": "A complex number that is not real, a + bi with b ≠ 0 (the Japanese 虚数). US textbooks such as OpenStax and IM call only numbers of the form bi imaginary numbers.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -39,20 +40,22 @@
       "register": "spoken"
     },
     {
-      "en": "Show that the equation x² + 2x + 5 = 0 has no real solutions and find its imaginary solutions.",
-      "ja": "方程式 x² + 2x + 5 = 0 が実数解をもたないことを示し、虚数解を求めよ。",
+      "en": "Find all imaginary numbers z such that z² = −16.",
+      "ja": "z² = −16 を満たす虚数 z をすべて求めよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "英語の imaginary number は、教科書によって bi（純虚数）だけを指すこともある（OpenStax Algebra and Trigonometry は bi の形の数として説明する）。日本の「虚数」は b ≠ 0 の複素数全体。",
-    "虚数でない複素数を強調するときは nonreal complex number とも言う。"
+    "「虚数解」（実数でない解）は、英語では complex solution（エントリ imaginary-solution）か non-real solution（IM Algebra 2 3.19）と言う。−1 ± 2i のような解は、OpenStax・IM の意味の imaginary number（bi）ではない。",
+    "実数でない複素数（日本語の虚数）をはっきり言うときは、Nicholson は nonreal complex number、IM Algebra 2（3.17・3.19）は non-real と書く。"
   ],
   "related": [
     "complex-number",
     "pure-imaginary-number",
-    "imaginary-unit"
+    "imaginary-unit",
+    "imaginary-solution",
+    "square-root-of-a-negative-number"
   ],
   "sources": [
     {
@@ -62,7 +65,31 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Complex Numbers（imaginary number）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「虚数」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%99%9A%E6%95%B0",
+      "note": "実数でない複素数（b ≠ 0）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成27年度 大学入試センター試験 本試験 数学Ⅱ（問題）",
+      "note": "1 + 2i を虚数と呼ぶ"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 3.10（glossary: imaginary number）・3.17・3.19（non-real）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "Appendix A Complex Numbers（nonreal complex number）"
     }
   ],
   "confidence": "likely",
@@ -71,7 +98,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "imaginary number": 43
@@ -95,6 +122,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

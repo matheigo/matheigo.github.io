@@ -19,9 +19,13 @@
   ],
   "level": {
     "jp": [
+      "中1",
       "数A"
     ],
-    "us": []
+    "us": [
+      "Calculus III",
+      "Linear Algebra"
+    ]
   },
   "definition_ja": "直線が平面と交わり、その交点を通る平面上のすべての直線と垂直であること。平面上の交わる 2 直線と垂直であれば、それで十分である。",
   "definition_en": "A line meets a plane and is perpendicular to every line in the plane through the point of intersection; being perpendicular to two intersecting lines in the plane is enough.",
@@ -29,8 +33,8 @@
   "spoken_en": "line ell is perpendicular to plane alpha",
   "examples": [
     {
-      "en": "Once the line is perpendicular to the plane, it's perpendicular to every line in that plane, not just the two we checked.",
-      "ja": "直線が平面に垂直なら、確かめた 2 本だけでなく、その平面上のすべての直線と垂直になる。",
+      "en": "Once the line is perpendicular to the plane, it's perpendicular to every line in that plane through its foot, not just the two we checked.",
+      "ja": "直線が平面に垂直なら、確かめた 2 本だけでなく、交点を通る平面上のすべての直線と垂直になる。",
       "register": "spoken"
     },
     {
@@ -50,12 +54,26 @@
     "normal-vector",
     "three-perpendiculars-theorem",
     "equation-of-a-plane",
-    "perpendicular-lines"
+    "perpendicular-lines",
+    "dihedral-angle"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 3"
+      "title": "OpenStax Calculus Volume 3",
+      "note": "2.5 Equations of Lines and Planes in Space（perpendicular to the plane）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "4.2 Projections and Planes・4.3 More on the Cross Product（perpendicular to the plane）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 1 学年 B 図形（空間図形）: 直線と平面の垂直"
     }
   ],
   "confidence": "likely",
@@ -78,6 +96,6 @@
       "mit-notes",
       "openstax-calculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

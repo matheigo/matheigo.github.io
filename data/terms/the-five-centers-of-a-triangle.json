@@ -28,8 +28,8 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "These triangle centers all come from three lines meeting at one point: medians give the centroid, perpendicular bisectors the circumcenter, angle bisectors the incenter, altitudes the orthocenter, and exterior angle bisectors an excenter.",
-      "ja": "五心はどれも 3 本の直線が 1 点で交わる点。中線なら重心、垂直二等分線なら外心、角の二等分線なら内心、垂線なら垂心、外角の二等分線なら傍心。",
+      "en": "These triangle centers all come from three lines meeting at one point: medians give the centroid, perpendicular bisectors the circumcenter, angle bisectors the incenter, altitudes the orthocenter, and one interior and two exterior angle bisectors an excenter.",
+      "ja": "五心はどれも 3 本の直線が 1 点で交わる点。中線なら重心、垂直二等分線なら外心、角の二等分線なら内心、垂線なら垂心、内角の二等分線 1 本と外角の二等分線 2 本なら傍心。",
       "register": "spoken"
     },
     {
@@ -40,7 +40,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "「the five centers」と直訳しても決まった言い方にはならない。英語で五心を言うときは 5 つの名前（circumcenter, incenter, centroid, orthocenter, excenter）を並べるか、まとめて the triangle centers と言う。",
+    "用例コーパスと参照には、五心の意味の the five centers は出てこない。英語で五心を言うときは 5 つの名前（circumcenter, incenter, centroid, orthocenter, excenter）を並べるか、まとめて the triangle centers と言う。ただし英語版 Wikipedia「Triangle center」は、傍心は一般には triangle center にならないと書く（節 Excenters）。",
     "正三角形では外心・内心・重心・垂心が 1 点に重なる。"
   ],
   "related": [
@@ -48,7 +48,8 @@
     "incenter",
     "centroid",
     "orthocenter",
-    "excenter"
+    "excenter",
+    "concurrent"
   ],
   "sources": [
     {
@@ -88,7 +89,7 @@
   "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {

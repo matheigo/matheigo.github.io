@@ -14,13 +14,14 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスには divides … externally は出てこず、OpenStax にもない）。the point that divides the segment AB externally in the ratio m:n と説明する。「外分」は external division、「外分する」は divide … externally。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスには divides … externally は出てこず、OpenStax にもない）。the point that divides the segment AB externally in the ratio m:n と説明する。英語版 Wikipedia「Section formula」は外分を節 External divisions で扱い、divided externally と書く。",
   "domains": [
     "geometry"
   ],
   "level": {
     "jp": [
-      "数A"
+      "数A",
+      "数II"
     ],
     "us": []
   },
@@ -35,7 +36,7 @@
       "register": "spoken"
     },
     {
-      "en": "Find the coordinates of the point that divides the segment joining A(1, 2) and B(5, 4) externally in the ratio 3 : 1.",
+      "en": "Find the coordinates of the point that divides the segment externally in the ratio 3 : 1, where A = (1, 2) and B = (5, 4).",
       "ja": "2 点 A(1, 2), B(5, 4) を結ぶ線分を 3 : 1 に外分する点の座標を求めよ。",
       "register": "written"
     }
@@ -49,11 +50,25 @@
     "point-of-internal-division",
     "midpoint",
     "directed-segment",
-    "apollonian-circle"
+    "apollonian-circle",
+    "exterior-angle-bisector",
+    "angle-bisector-theorem"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Section_formula",
+      "note": "記事「Section formula」の節 External divisions（数学カテゴリから 5 段）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II 図形と方程式: 線分を内分する点、外分する点"
     }
   ],
   "confidence": "likely",
@@ -71,7 +86,7 @@
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

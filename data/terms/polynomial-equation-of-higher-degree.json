@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "米国では次数で呼び分けず polynomial equation と言う（OpenStax Algebra and Trigonometry）。「高次」に当たる決まった言い方（higher-degree equation）は用例コーパスに出てこない。個別には cubic equation、quartic（fourth-degree）equation。",
+  "mapping_note": "「3 次以上」をまとめる決まった言い方は、用例コーパスと参照に出てこない（higher-degree equation も出てこない）。OpenStax Intermediate Algebra は 1 次・2 次も polynomial equation に含め、次数は polynomial equation of degree n と言う。OpenStax Algebra and Trigonometry は、2 次より高い次数の多項式を含む方程式を因数分解で解く。個別には cubic equation、fourth-degree equation（OpenStax Algebra and Trigonometry）。",
   "domains": [
     "algebra"
   ],
@@ -28,8 +28,8 @@
       "Integrated Math 3"
     ]
   },
-  "definition_ja": "3 次以上の整式 = 0 の形の方程式。因数定理で因数分解して解くことが多い。",
-  "definition_en": "An equation of the form polynomial = 0 of degree three or more, often solved by factoring with the factor theorem.",
+  "definition_ja": "3 次以上の整式 = 0 の形の方程式。",
+  "definition_en": "An equation of the form polynomial = 0 of degree three or more.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -46,18 +46,31 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "n 次方程式は a polynomial equation of degree n。"
+    "n 次方程式は a polynomial equation of degree n。",
+    "学習指導要領解説（数学II）は、簡単な高次方程式を因数定理などを用いて解くことを扱う。"
   ],
   "related": [
     "cubic-equation",
     "quartic-equation",
     "factor-theorem",
-    "fundamental-theorem-of-algebra"
+    "fundamental-theorem-of-algebra",
+    "rational-root-theorem"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "Polynomial Equations（polynomial equation of degree n）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II いろいろな式: 因数定理について理解し，簡単な高次方程式について因数定理などを用いてその解を求める"
     }
   ],
   "confidence": "likely",
@@ -66,7 +79,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "polynomial equation": 3
@@ -81,6 +94,6 @@
       "openstax-intalg",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

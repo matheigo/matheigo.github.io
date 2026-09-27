@@ -14,7 +14,7 @@
   },
   "pos": "adjective",
   "mapping": "exact",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（concurrent は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "mapping_note": "concurrent という名前は、米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（4 つとも 0 件）。概念は、IM Geometry（7.5 Triangles in Circles・7.6 A Special Point）が meet at a single point、CK-12 Geometry（4.22 Concurrence and Constructions・4.23 Medians）が intersect at one point と言って扱う。",
   "domains": [
     "geometry"
   ],
@@ -23,7 +23,8 @@
       "数A"
     ],
     "us": [
-      "Linear Algebra"
+      "Linear Algebra",
+      "Geometry"
     ]
   },
   "definition_ja": "3 本以上の直線が、すべて同じ 1 点を通ること。",
@@ -44,7 +45,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "concurrent は形容詞で、「3 直線が 1 点で交わる」は The three lines are concurrent. と言う。交わる点そのものは the point of concurrency。",
+    "concurrent は形容詞で、「3 直線が 1 点で交わる」は The three lines are concurrent. と言う。英語版 Wikipedia「Concurrent lines」は、交わる点を the point of concurrency と呼ぶ（節 Triangles）。",
     "日常英語の concurrent は「同時に起こる」の意味。幾何の concurrent は「1 点を共有する」で、時間の意味はない。"
   ],
   "related": [
@@ -58,7 +59,24 @@
       "type": "reference",
       "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
       "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
-      "note": "4.1 Vectors and Lines（三角形の中線・高さが 1 点で交わる問題）"
+      "note": "4.1 Vectors and Lines（練習問題 4.1.35: 四面体の 4 本の中線）・Supplementary Exercises for Chapter 4（三角形の中線・高さ）"
+    },
+    {
+      "type": "wikipedia-langlink",
+      "ja": "共点",
+      "en": "Concurrent lines"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 7.5 Triangles in Circles・7.6 A Special Point（meet at a single point）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "4.22 Concurrence and Constructions・4.23 Medians（intersect at one point）"
     }
   ],
   "confidence": "likely",
@@ -75,13 +93,13 @@
     "sources": [
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Nicholson の呼び方 concurrent（4.5 An Application to Computer Graphics・4.1 Vectors and Lines）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

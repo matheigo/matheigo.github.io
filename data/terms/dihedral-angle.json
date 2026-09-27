@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（dihedral angle は CED・OpenStax・IM・CK-12 とも 0 件）。",
+  "mapping_note": "dihedral angle という名前は、米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（4 つとも 0 件）。2 平面のなす角そのものは、OpenStax Calculus Volume 3（2.5 Equations of Lines and Planes in Space）が angle between two planes と呼び、法線ベクトルのなす角で求める。",
   "domains": [
     "geometry"
   ],
@@ -20,7 +20,9 @@
     "jp": [
       "数A"
     ],
-    "us": []
+    "us": [
+      "Calculus III"
+    ]
   },
   "definition_ja": "1 本の直線を共有する 2 つの半平面がつくる角。共有する直線上の 1 点から、それぞれの半平面上にその直線と垂直な半直線を引き、その 2 本がなす角で測る。",
   "definition_en": "The angle formed by two half-planes that share an edge, measured by the angle between two rays, one in each half-plane, drawn perpendicular to the edge from the same point.",
@@ -55,6 +57,11 @@
       "type": "wikipedia-langlink",
       "ja": "二面角",
       "en": "Dihedral angle"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3",
+      "note": "2.5 Equations of Lines and Planes in Space（Finding the Angle between Two Planes）"
     }
   ],
   "confidence": "likely",
@@ -66,13 +73,13 @@
   "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 dihedral angle（英語版「Dihedral angle」、ja の langlink 先）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-27"
     }
   ]
 }

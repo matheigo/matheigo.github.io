@@ -4,7 +4,9 @@
     "term": "1 の n 乗根",
     "reading": "いちのえぬじょうこん",
     "alt": [
-      "1 の 3 乗根"
+      "1 の 3 乗根",
+      "1 の累乗根",
+      "1 の冪根"
     ]
   },
   "en": {
@@ -24,8 +26,7 @@
       "数C"
     ],
     "us": [
-      "Precalculus",
-      "Algebra 2"
+      "Precalculus"
     ]
   },
   "definition_ja": "zⁿ = 1 を満たす n 個の複素数。複素数平面では単位円に内接する正 n 角形の頂点になる。",
@@ -34,8 +35,8 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "The cube roots of unity are evenly spaced around the unit circle.",
-      "ja": "1 の 3 乗根は単位円上に等間隔に並ぶ。",
+      "en": "The nth roots of unity are evenly spaced around the unit circle.",
+      "ja": "1 の n 乗根は単位円上に等間隔に並ぶ。",
       "register": "spoken"
     },
     {
@@ -44,15 +45,15 @@
       "register": "written"
     },
     {
-      "en": "Let ω be one of the imaginary cube roots of unity. Find the value of ω^{100} + ω^{50} + 1.",
+      "en": "Let ω be one of the non-real cube roots of unity. Find the value of ω^{100} + ω^{50} + 1.",
       "ja": "ω を 1 の 3 乗根のうち虚数であるものの 1 つとする。ω¹⁰⁰ + ω⁵⁰ + 1 の値を求めよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスでは nth roots of unity は書き言葉（MIT の講義ノート）にわずかに出てくるだけ。OpenStax Algebra and Trigonometry は一般の複素数の n 乗根（nth roots of a complex number）として扱う。",
-    "数II の 1 の 3 乗根 ω（ω² + ω + 1 = 0、ω³ = 1）は、英語でも cube roots of unity と呼び、ω（omega）の記号を使うが、米国の高校課程では ω に決まった呼び名や性質の練習はほぼない。"
+    "参照では Nicholson（Appendix A、Theorem A.3）だけが nth roots of unity と書き、OpenStax・IM・CK-12 には roots of unity が出てこない（0 件）。OpenStax Algebra and Trigonometry（Polar Form of Complex Numbers）は、一般の複素数の n 乗根（nth roots of a complex number）として扱う。",
+    "1 の 3 乗根 ω（ω² + ω + 1 = 0、ω³ = 1）は、英語でも cube roots of unity（Nicholson Appendix A の例）。英語版 Wikipedia「Root of unity」は、1 以外の 2 つを x² + x + 1 の根として書く。OpenStax・IM・CK-12 には cube roots of unity も出てこない（0 件）。"
   ],
   "related": [
     "nth-root",
@@ -64,6 +65,29 @@
       "type": "wikipedia-langlink",
       "ja": "1の冪根",
       "en": "Root of unity"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Polar Form of Complex Numbers（nth roots of a complex number）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "Appendix A Complex Numbers（Theorem A.3 nth Roots of Unity、cube roots of unity）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Root_of_unity",
+      "note": "記事「Root of unity」（1 の 3 乗根は x² + x + 1 の根。数学カテゴリから 4 段）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「1の冪根」",
+      "url": "https://ja.wikipedia.org/wiki/1%E3%81%AE%E5%86%AA%E6%A0%B9",
+      "note": "1の冪根、1の累乗根"
     }
   ],
   "confidence": "likely",
@@ -72,7 +96,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "flags": [
     {
       "code": "corpus-human-settled",
@@ -87,6 +111,6 @@
     "sources": [
       "mit-notes"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -23,7 +23,8 @@
     ],
     "us": [
       "Algebra 2",
-      "Integrated Math 3"
+      "Integrated Math 3",
+      "Precalculus"
     ]
   },
   "definition_ja": "整式 P(x) が x − a を因数にもつことと、P(a) = 0 であることが同じだという定理。",
@@ -49,7 +50,7 @@
     }
   ],
   "pitfalls": [
-    "用例コーパスでは書き言葉（OpenStax Algebra and Trigonometry・Intermediate Algebra）に出てくる。話し言葉にはほとんど出てこず、授業では「plug in 1 and get zero, so x − 1 is a factor」と中身で言うことが多い。"
+    "OpenStax Intermediate Algebra は剰余の定理と組にして教える（Use the Remainder and Factor Theorems）。OpenStax Algebra and Trigonometry の Zero Factor Theorem（zero-product property）は別の性質。"
   ],
   "related": [
     "remainder-theorem",
@@ -66,6 +67,16 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "Use the Remainder and Factor Theorems"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "Zeros of Polynomial Functions（Factor Theorem）"
     }
   ],
   "confidence": "likely",
@@ -74,7 +85,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "factor theorem": 3
@@ -87,6 +98,6 @@
       "openstax-intalg",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   }
 }

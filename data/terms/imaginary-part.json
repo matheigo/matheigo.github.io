@@ -15,7 +15,8 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
-    "algebra"
+    "algebra",
+    "complex-numbers"
   ],
   "level": {
     "jp": [
@@ -28,13 +29,13 @@
     ]
   },
   "definition_ja": "複素数 a + bi の b。bi ではなく実数 b を指す。",
-  "definition_en": "The real number b in the complex number a + bi (b, not bi).",
+  "definition_en": "The real number b in the complex number a + bi. Some US textbooks, such as IM Algebra 2 and OpenStax Precalculus, call bi the imaginary part instead.",
   "latex": "\\operatorname{Im}(a + bi) = b",
   "spoken_en": null,
   "examples": [
     {
-      "en": "Careful — the imaginary part is just b, not bi.",
-      "ja": "注意。虚部は b で、bi ではない。",
+      "en": "Careful — some books call bi the imaginary part, but Im(z) is the real number b.",
+      "ja": "注意。bi を虚部と呼ぶ教科書もあるが、Im(z) は実数 b。",
       "register": "spoken"
     },
     {
@@ -45,17 +46,42 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "虚部を bi と書く誤りは英語の教室でも注意される（The imaginary part is a real number.）。"
+    "虚部は実数 b（日本語版 Wikipedia「複素数」、英語版 Wikipedia「Complex number」、OpenStax Algebra and Trigonometry）。IM Algebra 2（3.12 Arithmetic with Complex Numbers）と OpenStax Precalculus は bi を imaginary part と呼ぶので、授業の教科書の定義を確かめる（Im(z) と書けば b）。"
   ],
   "related": [
     "real-part",
     "complex-number",
-    "pure-imaginary-number"
+    "pure-imaginary-number",
+    "equality-of-complex-numbers"
   ],
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Complex Numbers（the imaginary part is 3）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 3.12 Arithmetic with Complex Numbers（bi is the imaginary part）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "Complex Numbers（the imaginary part is 3i）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Complex_number",
+      "note": "記事「Complex number」（the real number b, not the complex number bi）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「複素数」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%A4%87%E7%B4%A0%E6%95%B0",
+      "note": "虚部は実数 b"
     }
   ],
   "confidence": "likely",
@@ -64,7 +90,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "imaginary part": 137
@@ -82,6 +108,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

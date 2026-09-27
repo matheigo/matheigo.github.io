@@ -12,15 +12,19 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（用例コーパスには relative position of two lines は話・書とも出てこず、CED・OpenStax・Nicholson・Levin にも出てこない）。英語では分類に名前を付けず、場合ごとに the lines intersect ／ are parallel ／ are skew と言う。「ねじれの位置にある」は are skew（skew lines）。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（relative position of two lines は参照（CED・OpenStax・IM・CK-12・Nicholson・Levin）にも用例コーパスにも出てこない）。OpenStax Calculus Volume 3（2.5 Equations of Lines and Planes in Space）は小見出し Relationships between Lines を立て、空間の 2 直線を parallel but not equal ／ equal ／ intersecting ／ skew に分ける。CK-12 Geometry（3.2 Parallel and Skew Lines）は平行と skew lines を並べて扱う。「ねじれの位置にある」は are skew（skew lines）。",
   "domains": [
     "geometry"
   ],
   "level": {
     "jp": [
+      "中1",
       "数A"
     ],
-    "us": []
+    "us": [
+      "Geometry",
+      "Calculus III"
+    ]
   },
   "definition_ja": "空間の 2 直線の関係。1 点で交わる・平行である・ねじれの位置にある（同じ平面上にない）の 3 通りがある。",
   "definition_en": "How two lines in space are related: they intersect in one point, are parallel, or are skew (not in any common plane).",
@@ -48,11 +52,29 @@
     "perpendicular-lines",
     "intersect",
     "coplanarity-condition",
-    "line-perpendicular-to-a-plane"
+    "line-perpendicular-to-a-plane",
+    "skew-lines"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3",
+      "note": "2.5 Equations of Lines and Planes in Space（Relationships between Lines）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "3.2 Parallel and Skew Lines"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 1 学年 B 図形（空間図形）: 交わる・平行・ねじれの位置"
     }
   ],
   "confidence": "likely",
@@ -70,7 +92,7 @@
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

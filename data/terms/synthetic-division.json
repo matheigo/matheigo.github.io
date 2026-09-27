@@ -45,7 +45,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "米国の Algebra 2 ／ Precalculus では標準の手順（用例コーパスでも話し言葉・書き言葉ともよく出てくる）。日本の教科書では発展的な扱いのことがある。"
+    "OpenStax Algebra and Trigonometry・Precalculus（Dividing Polynomials）と Intermediate Algebra は synthetic division を使う（51・43・25 件）。IM Algebra 2 は long division で割る（synthetic division は 0 件）。学習指導要領解説（数学II）には組立除法が出てこない（日本語版 Wikipedia「数学 (教科)」は数学II の高次方程式に挙げる）。"
   ],
   "related": [
     "polynomial-division",
@@ -60,7 +60,36 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Dividing Polynomials（synthetic division）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "Dividing Polynomials（synthetic division）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "Divide Polynomials（synthetic division）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 2.12・2.13 Polynomial Division（long division）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II いろいろな式: 組立除法は出てこない"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学 (教科)」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6_%28%E6%95%99%E7%A7%91%29",
+      "note": "数学II 高次方程式: 組立除法"
     }
   ],
   "confidence": "likely",
@@ -69,7 +98,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "synthetic division": 74
@@ -87,6 +116,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

@@ -23,7 +23,8 @@
     ],
     "us": [
       "Geometry",
-      "Integrated Math 1"
+      "Integrated Math 1",
+      "Pre-Algebra"
     ]
   },
   "definition_ja": "和が 90° になる 2 つの角の、一方から見た他方の角。θ の余角は 90° − θ。",
@@ -32,8 +33,8 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "The two acute angles in a right triangle are complementary angles, so if one is 30, the other is 60.",
-      "ja": "直角三角形の 2 つの鋭角は余角どうしだから、一方が 30° なら他方は 60° だ。",
+      "en": "The acute angles of a right triangle always add to 90, so they're complementary angles: if one is 30, the other is 60.",
+      "ja": "直角三角形の 2 つの鋭角は足すと 90° になるので余角どうしだ。一方が 30° なら他方は 60° だ。",
       "register": "spoken"
     },
     {
@@ -45,19 +46,32 @@
   "collocations": [],
   "pitfalls": [
     "「補角」は supplementary、「余角」は complementary。「補」の字から complement を補角と取り違えやすい。",
-    "complement は「補集合」「余事象」にも使う（the complement of A）。三角関数の sin(90° − θ) = cos θ の co- も「余角（complement）の」の意味（cofunction-identity）。",
+    "complement は「補集合」「余事象」にも使う（the complement of A）。三角関数の cosine の co- も、英語版 Wikipedia「Sine and cosine」（Etymology）によると余角（complement）の sine の意味（cofunction-identity）。",
     "complementary（補い合う）と complimentary（無料の、ほめる）はつづりが 1 字違い。"
   ],
   "related": [
     "supplementary-angle",
     "complement",
     "cofunction-identity",
-    "angle"
+    "angle",
+    "adjacent-angles"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sine_and_cosine",
+      "note": "記事「Sine and cosine」の節 Etymology（cosine は complementi sinus から）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 7 7.2〜7.5（complementary、glossary）"
     }
   ],
   "confidence": "likely",
@@ -66,7 +80,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "complementary angles": 4
@@ -82,6 +96,6 @@
       "openstax-prealgebra",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

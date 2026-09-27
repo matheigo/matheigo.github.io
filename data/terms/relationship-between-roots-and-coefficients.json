@@ -10,14 +10,13 @@
   "en": {
     "term": "Vieta's formulas",
     "alt": [
-      "relationship between roots and coefficients",
-      "sum and product of the roots"
+      "relationship between roots and coefficients"
     ],
     "uk": null
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（Vieta's formulas ／ relationship between roots and coefficients ／ sum and product of the roots は CED・OpenStax・IM・CK-12 とも 0 件）。見出しは英語版 Wikipedia の記事名「Vieta's formulas」（ja 記事「根と係数の関係」の langlink 先。冒頭で太字で定義し、n 次の多項式の係数と根の和・積の関係として書く）。用例コーパスにも名前は出てこず、the sum of the roots ／ the product of the roots と中身を言う講義がわずかにある（すべて 3Blue1Brown）。",
+  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（Vieta's formulas ／ relationship between roots and coefficients は CED・OpenStax・IM・CK-12 とも 0 件）。見出しは英語版 Wikipedia の記事名「Vieta's formulas」（ja 記事「根と係数の関係」の langlink 先。冒頭で太字で定義し、n 次の多項式の係数と根の和・積の関係として書く）。用例コーパスにも名前は出てこず、the sum of the roots ／ the product of the roots と中身を言う講義がわずかにある（すべて 3Blue1Brown）。",
   "domains": [
     "algebra"
   ],
@@ -54,13 +53,15 @@
     }
   ],
   "pitfalls": [
-    "2 次式の因数分解 ax² + bx + c = a(x − α)(x − β)（複素数の範囲）は、英語では factor over the complex numbers と説明する。",
+    "2 次式の因数分解 ax² + bx + c = a(x − α)(x − β)（複素数の範囲）は、OpenStax Algebra and Trigonometry（Zeros of Polynomial Functions）の Linear Factorization Theorem に当たる。",
     "日本語の「解」と「根」はここでは同じ。英語版 Wikipedia「Vieta's formulas」も roots と書く。"
   ],
   "related": [
     "quadratic-formula",
     "discriminant",
-    "imaginary-solution"
+    "imaginary-solution",
+    "elementary-symmetric-polynomial",
+    "symmetric-expression"
   ],
   "sources": [
     {
@@ -70,6 +71,11 @@
     },
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "Zeros of Polynomial Functions（Linear Factorization Theorem）"
     }
   ],
   "confidence": "verified",
@@ -87,13 +93,13 @@
     "sources": [
       "yt:3blue1brown"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 Vieta's formulas（英語版「Vieta's formulas」、ja の langlink 先）。register は主張しない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

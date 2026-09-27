@@ -50,6 +50,15 @@ export const CONCEPT_LEVELS: Record<string, Record<string, string>> = {
     "AP Statistics": "CED topic 2.5 (the probability of the intersection of A and B, joint probability)",
     "Intro Statistics": "OpenStax Introductory Statistics 3.1 Terminology (the event A AND B, also A Intersection B)",
   },
+  concurrent: { Geometry: "IM Geometry 7.5, 7.6 (meet at a single point); CK-12 Geometry 4.22 Concurrence and Constructions, 4.23 Medians (intersect at one point)" },
+  "dihedral-angle": { "Calculus III": "OpenStax Calculus Volume 3 2.5 Equations of Lines and Planes in Space (the angle between two planes)" },
+  "point-of-internal-division": { Geometry: "IM Geometry 6.15-6.17, CK-12 Geometry 1.6 Points that Partition Line Segments (the point that partitions segment AB in a 2:1 ratio)" },
+  "power-of-a-point": { Geometry: "CK-12 Geometry 6.13 Intersecting Chords Theorem, 6.19 Two Secants Segments Theorem, 6.20 Tangent Secant Segment Theorem" },
+  "relative-positions-of-two-circles": { Geometry: "CK-12 Geometry 6.2 Identify Circle Components (tangent circles, concentric circles, externally tangent)" },
+  "relative-positions-of-two-lines": {
+    Geometry: "CK-12 Geometry 3.2 Parallel and Skew Lines",
+    "Calculus III": "OpenStax Calculus Volume 3 2.5 Equations of Lines and Planes in Space (Relationships between Lines)",
+  },
 };
 
 type Term = { id: string; en: { term: string; alt?: string[]; variants?: { term: string }[] }; level: { jp: string[]; us: string[] }; mapping_note?: string; pitfalls?: string[]; confidence: string };

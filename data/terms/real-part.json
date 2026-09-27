@@ -15,11 +15,13 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
-    "algebra"
+    "algebra",
+    "complex-numbers"
   ],
   "level": {
     "jp": [
-      "数II"
+      "数II",
+      "数C"
     ],
     "us": [
       "Algebra 2",
@@ -45,16 +47,24 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "用例コーパスの話し言葉は大半が MIT OCW 18.03（微分方程式の複素数解）。"
+    "用例コーパスの話し言葉は大半が MIT OCW 18.03（微分方程式の複素数解）。",
+    "記号 Re z（Re(z)）は the real part of z と読む。"
   ],
   "related": [
     "imaginary-part",
-    "complex-number"
+    "complex-number",
+    "equality-of-complex-numbers"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和7年度 大学入学共通テスト 本試験 数学Ⅱ，数学Ｂ，数学Ｃ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=771&f=abm00005945.pdf&n=2025_op_30_sugaku2BC.pdf",
+      "note": "第7問: 純虚数（実部が 0 である虚数）"
     }
   ],
   "confidence": "likely",
@@ -63,7 +73,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "real part": 244
@@ -81,6 +91,6 @@
       "yt:3blue1brown",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

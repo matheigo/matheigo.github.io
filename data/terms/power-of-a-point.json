@@ -3,7 +3,9 @@
   "ja": {
     "term": "方べきの定理",
     "reading": "ほうべきのていり",
-    "alt": []
+    "alt": [
+      "方冪の定理"
+    ]
   },
   "en": {
     "term": "power of a point",
@@ -12,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（power of a point は CED・OpenStax・IM・CK-12 とも 0 件で、Nicholson・Levin にも出てこない）。用例コーパスにも出てこない。見出しは英語版 Wikipedia の記事名「Power of a point」（ja 記事「方べきの定理」の langlink 先）。記事が冒頭で太字で定義する power of a point は、点 P と円に対して決まる量 PA·PB（中心との距離 d と半径 r で d² − r²）の名前で、定理として言うなら the power of a point theorem。2 本の弦の場合（intersecting chords theorem）と、割線と接線の場合（secant-tangent theorem）は、本辞典では別の見出しで扱う。",
+  "mapping_note": "power of a point という名前は、米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない（CED・OpenStax・IM・CK-12・Nicholson・Levin とも 0 件）。用例コーパスにも出てこない。CK-12 Geometry は方べきの定理を 1 つの名前でまとめず、3 つの場合を別の定理として扱う: 2 本の弦は Intersecting Chords Theorem（6.13 Segments from Chords。本辞典の intersecting-chords-theorem）、2 本の割線は Two Secants Segments Theorem（6.19 Intersecting Secants Theorem）、接線と割線は Tangent Secant Segment Theorem（6.20 Tangent Secant Theorem。本辞典の secant-tangent-theorem）。見出しは英語版 Wikipedia の記事名「Power of a point」（ja 記事「方べきの定理」の langlink 先）で、記事が冒頭で太字で定義する power of a point は、点 P と円に対して決まる量（中心との距離 d と半径 r で d² − r²。P が円の外なら PA·PB に等しく、内なら −PA·PB）の名前。",
   "domains": [
     "geometry"
   ],
@@ -20,7 +22,9 @@
     "jp": [
       "数A"
     ],
-    "us": []
+    "us": [
+      "Geometry"
+    ]
   },
   "definition_ja": "点 P を通る 2 直線が円とそれぞれ A, B と C, D で交わるとき PA·PB = PC·PD が成り立ち、一方が点 T で接するときは PA·PB = PT² が成り立つという定理。",
   "definition_en": "For a point P and a circle, if two lines through P meet the circle at A, B and at C, D, then PA·PB = PC·PD; if one line is tangent at T, then PA·PB = PT².",
@@ -45,7 +49,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語の power of a point は定理の名前というより「点の方べき」という量（PA·PB の値）を指す。定理として言いたいときは the power of a point theorem と言うか、式 PA·PB = PC·PD を示す。",
+    "英語の power of a point は定理の名前というより「点の方べき」という量を指す。日本語版 Wikipedia「方べきの定理」は定理の英語名を power of a point theorem と書く（英語版「Power of a point」では外部リンクの題にだけ出てくる）。式 PA·PB = PC·PD を示して言ってもよい。",
     "「方べき」の「べき」は冪（power）。power を「力」と訳すと意味が通らない。"
   ],
   "related": [
@@ -53,13 +57,27 @@
     "tangent-line",
     "similar-triangles",
     "tangent-chord-theorem",
-    "tangent-segments-are-equal"
+    "tangent-segments-are-equal",
+    "intersecting-chords-theorem",
+    "secant-tangent-theorem"
   ],
   "sources": [
     {
       "type": "wikipedia-langlink",
       "ja": "方べきの定理",
       "en": "Power of a point"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.13 Segments from Chords（Intersecting Chords Theorem）・6.19 Intersecting Secants Theorem（Two Secants Segments Theorem）・6.20 Tangent Secant Theorem（Tangent Secant Segment Theorem）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「方べきの定理」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%96%B9%E3%81%B9%E3%81%8D%E3%81%AE%E5%AE%9A%E7%90%86",
+      "note": "冒頭: 方冪の定理、英: power of a point theorem"
     }
   ],
   "confidence": "likely",
@@ -71,13 +89,13 @@
   "updated": "2026-09-27",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-26"
+    "counted": "2026-09-27"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは Wikipedia の記事名 power of a point（英語版「Power of a point」、ja の langlink 先）。register は主張しない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

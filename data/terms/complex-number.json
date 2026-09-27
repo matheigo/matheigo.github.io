@@ -15,7 +15,8 @@
   "mapping": "exact",
   "mapping_note": null,
   "domains": [
-    "algebra"
+    "algebra",
+    "complex-numbers"
   ],
   "level": {
     "jp": [
@@ -29,7 +30,7 @@
     ]
   },
   "definition_ja": "実数 a, b と虚数単位 i を使って a + bi と表される数。a を実部、b を虚部という。",
-  "definition_en": "A number of the form a + bi, with real numbers a and b and the imaginary unit i; a is the real part and b the imaginary part.",
+  "definition_en": "A number of the form a + bi, with real numbers a and b and the imaginary unit i; a is called its real part, and b is called its imaginary part.",
   "latex": "a + bi",
   "spoken_en": "a plus b i",
   "examples": [
@@ -46,7 +47,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "米国の教科書では a + bi の形を standard form（または rectangular form）と呼ぶ（OpenStax Algebra and Trigonometry）。"
+    "OpenStax Algebra and Trigonometry は a + bi の形を standard form と呼び、極形式（polar form）と比べるときは rectangular form と呼ぶ。IM Algebra 2 は the form a + bi と書く。"
   ],
   "related": [
     "imaginary-number",
@@ -54,7 +55,9 @@
     "real-part",
     "imaginary-part",
     "complex-conjugate",
-    "complex-plane"
+    "complex-plane",
+    "equality-of-complex-numbers",
+    "square-root-of-a-negative-number"
   ],
   "sources": [
     {
@@ -65,6 +68,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 3.12〜3.18（the form a + bi）"
     }
   ],
   "confidence": "likely",
@@ -73,7 +82,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "complex number": 319
@@ -100,6 +109,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }

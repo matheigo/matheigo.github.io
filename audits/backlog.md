@@ -18,3 +18,7 @@
 | 7 | 監査 7（バッチ 17） | decide の register の確かめは片方向で、en.register がコーパスで ③ の側（話し言葉 ③ なのに both）を主張していても「エントリ側で直すこと」に出ない（数え直した counting・binary は both のままだった） | ③ の側を主張する en.register を一覧に出す | ③ は「判断不能」で「使わない」ではない。数え直した語は監査で直した |
 | 8 | 監査 7（バッチ 17 の r4） | order-matters の件数（order matters ／ order doesn't matter）は、交換法則・行列の積・積分の順序の意味を含み、形で数える意味だけに分けられない（話し言葉 20 件のうち数える意味は 4 件） | 分けられる形が見つかれば TERM_FORMS に。見つからなければ en.register を外すかを決める | 見出しの言い方と意味は正しく、pitfalls で別の意味に触れた |
 | 9 | 監査 7（バッチ 17 の r5） | variants の note に判定の語（「併記」）が残る（modulus の mod n）。監査 6 の決定 8 の警告は pitfalls・notes だけを見る | 警告を variants の note にも広げる（1 の mapping_note と同じ扱い） | 判定の結果を言っているだけで誤りではない |
+| 10 | 監査 7（バッチ 18 の r2・r3） | `scripts/lib/wording.ts` の AT_LARGE（資料の外の英語の主張）は「英語には〜ない」の形だけを拾い、「英語に…なく」「英語では…ず」「決まった言い方にはならない」「通る」を拾わない（the-five-centers-of-a-triangle の mapping_note はユーザーの決定の文言） | 形を足して一覧にする | 監査が見つけた文は直した。残るのはユーザーの決定の文言 |
+| 11 | 監査 7（バッチ 18 の r2） | `scripts/audit/reference_names_same.json` の tangents secant segments theorem（CK-12 6.20、接線と割線）が power-of-a-point の関連の名前になっている。中身は secant-tangent-theorem の定理 | 判断の id を secant-tangent-theorem に直す | 道具のデータで、!REF の表示が変わるだけ |
+| 12 | 監査 7（バッチ 18 の r2） | `scripts/audit/enwiki.py` は語ごとに語尾（s・es・ing・ed）を許すので、Menelaus' が Menelaus's にも当たり、「bold in」が別の綴りの太字を数える | アポストロフィで終わる語は語尾を許さない | 監査が記事を読んで確かめた |
+| 13 | 監査 7（バッチ 18 の r3・r5） | 参照の切り分けが、Nicholson の番号の無い節（Supplementary Exercises for Chapter 4、付録 A・D）を直前の番号付きの節（4.5、11.2 The Jordan Canonical Form）に入れる。flag の note と probe の節の表示がずれる | 切り分けに番号の無い節と付録を足す | 出典の note は監査が本文で確かめて書いた |

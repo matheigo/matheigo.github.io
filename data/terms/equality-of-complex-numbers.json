@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。two complex numbers are equal when their real parts are equal and their imaginary parts are equal と文で言う。手順は set the real parts equal and the imaginary parts equal。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。Nicholson（Appendix A）は、2 つの複素数は実部どうし・虚部どうしが等しいときに等しいと定め、実部と虚部を等しいとおく手順を equating real and imaginary parts と書く。",
   "domains": [
     "algebra"
   ],
@@ -37,8 +37,8 @@
       "register": "spoken"
     },
     {
-      "en": "Find the real numbers x and y such that (x + 2i)(1 − i) = 5 + yi.",
-      "ja": "(x + 2i)(1 − i) = 5 + yi を満たす実数 x, y を求めよ。",
+      "en": "If x and y are real and (x + 2i)(1 − i) = 5 + yi, find x and y.",
+      "ja": "x, y が実数で (x + 2i)(1 − i) = 5 + yi のとき、x と y を求めよ。",
       "register": "written"
     }
   ],
@@ -54,6 +54,18 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "Appendix A Complex Numbers（equal if and only if they have the same real parts and the same imaginary parts、equating real and imaginary parts）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「複素数」",
+      "url": "https://ja.wikipedia.org/wiki/%E8%A4%87%E7%B4%A0%E6%95%B0",
+      "note": "節「相等関係」"
     }
   ],
   "confidence": "likely",
@@ -62,7 +74,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"
@@ -71,7 +83,7 @@
     {
       "code": "corpus-no-fixed-expression",
       "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-27"
     }
   ]
 }

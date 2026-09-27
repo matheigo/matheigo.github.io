@@ -9,7 +9,9 @@
   },
   "en": {
     "term": "remainder theorem",
-    "alt": [],
+    "alt": [
+      "polynomial remainder theorem"
+    ],
     "uk": null,
     "register": "both"
   },
@@ -47,7 +49,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "2 次式で割った余り（ax + b の形）を求める問題は、米国の高校ではあまり扱わない。"
+    "OpenStax Algebra and Trigonometry・Intermediate Algebra と IM Algebra 2（2.15 The Remainder Theorem）は、剰余の定理を 1 次式 x − k で割る場合だけで扱い、2 次式で割った余り（ax + b の形）を求める問題は出てこない。学習指導要領解説（数学II）は、A = BQ + R（R の次数は B の次数より低い）から剰余の定理を導く。",
+    "AP Calculus BC で出てくる Taylor's remainder theorem（CED topic 10.12 の呼び方は Lagrange error bound）は、テイラー多項式の誤差の定理で、別の定理。"
   ],
   "related": [
     "remainder",
@@ -64,6 +67,29 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 2.15 The Remainder Theorem"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "Use the Remainder and Factor Theorems"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II いろいろな式: A=BQ+R から剰余の定理や因数定理を導く"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.12（Lagrange error bound）"
     }
   ],
   "confidence": "likely",
@@ -72,7 +98,7 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "evidence": {
     "spoken": {
       "remainder theorem": 19
@@ -88,6 +114,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-27"
   }
 }
