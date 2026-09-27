@@ -12,8 +12,8 @@
     "register": "written"
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "英語の error は符号の扱いが資料で分かれる。IM Grade 7（4.13 Measurement Error）は measurement error を測定値と実際の値の差の大きさ（正の数）とし、OpenStax Calculus Volume 2（3.6）は absolute error を |A − B| と定義する。OpenStax Calculus Volume 1（4.2）は、測定値 a + dx の dx を符号つきで measurement error と呼ぶ。日本語の誤差 = 近似値 − 真の値 は符号をもつ（pitfalls）。",
   "domains": [
     "arithmetic"
   ],
@@ -37,15 +37,15 @@
       "register": "spoken"
     },
     {
-      "en": "The number 3.786 is rounded to the nearest tenth, 3.8. Find the error of this approximation.",
+      "en": "The number 3.786 is rounded to the nearest tenth, 3.8. Find the error in this approximation.",
       "ja": "3.786 の小数第 2 位を四捨五入して 3.8 とした。この近似値の誤差を求めよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "英語の error は「まちがい」の意味でもよく使うので、Find the error. だけだと「まちがいを見つけよ」ともとれる。誤差の意味では absolute error、measurement error、rounding error のように前に語を付けて言うことが多い。",
-    "統計の margin of error（誤差の範囲、エントリ error-bound）や標本誤差（sampling error、エントリ sampling-error）は別の用語。",
+    "英語の error は「まちがい」の意味でもよく使うので、Find the error. だけだと「まちがいを見つけよ」ともとれる。誤差の意味では absolute error（OpenStax Calculus Volume 1）や rounding error（OpenStax Algebra and Trigonometry）のように前に語を付けて言う。",
+    "統計の margin of error（誤差限界、エントリ error-bound）や標本誤差（sampling error、エントリ sampling-error）は別の用語。",
     "誤差 = 近似値 − 真の値 なので、近似値が真の値より小さいと誤差は負の数になる（真の値 3.14159… に対して近似値 3.14 なら、誤差は約 −0.0016）。"
   ],
   "related": [
@@ -67,15 +67,29 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7)",
+      "url": "https://im.kendallhunt.com/MS/students/2/index.html",
+      "note": "Grade 7 4.13 Measurement Error: 測定値と実際の値の差（正の数）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2"
     }
   ],
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "absolute error | measurement error | error in the measurement | error in measurement | amount of error | round-off error | rounding error": 1
@@ -90,6 +104,13 @@
       "openstax-introstats",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: mapping を exact から near に（IM Grade 7 の measurement error と OpenStax Calculus Volume 2 の absolute error は正の差、日本語の誤差 = 近似値 − 真の値 は符号をもつ）。見直す点: near でよいか、mapping_note。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
+    }
+  ]
 }

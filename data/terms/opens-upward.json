@@ -17,7 +17,8 @@
         "register": "both",
         "note": "微積分での言い方（凹凸）。書き言葉はほとんど OpenStax Calculus。話し言葉は Khan Academy・Professor Leonard・MIT OCW が中心。"
       }
-    ]
+    ],
+    "register": "both"
   },
   "pos": "phrase",
   "mapping": "near",
@@ -32,7 +33,8 @@
     "us": [
       "Algebra 1",
       "Algebra 2",
-      "Integrated Math 2"
+      "Integrated Math 2",
+      "AP Calculus AB"
     ]
   },
   "definition_ja": "グラフが下にふくらんだ形であること。二次関数 y = ax² + bx + c では a > 0 のとき放物線が下に凸で、頂点が最も低い点になる。",
@@ -76,15 +78,21 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 5.6（concave up）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "concave up": 48,
@@ -116,6 +124,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

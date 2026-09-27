@@ -9,7 +9,9 @@
   },
   "en": {
     "term": "population mean",
-    "alt": [],
+    "alt": [
+      "true mean"
+    ],
     "uk": null,
     "register": "both"
   },
@@ -25,13 +27,14 @@
       "数B"
     ],
     "us": [
-      "Algebra 1",
+      "Pre-Algebra",
+      "Algebra 2",
       "AP Statistics",
       "Intro Statistics",
       "Integrated Math 3"
     ]
   },
-  "definition_ja": "母集団全体の平均値。μ と書く。",
+  "definition_ja": "母集団全体の平均値。",
   "definition_en": "The mean of the whole population, written μ.",
   "latex": null,
   "spoken_en": null,
@@ -49,7 +52,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "μ は mu と読む。"
+    "μ は mu と読む。",
+    "学習指導要領解説（数学B）と共通テストの問題文（令和 6 年度 数学II・数学B ほか）は母平均を m と書く。AP Statistics の CED と OpenStax Introductory Statistics は μ と書く。"
   ],
   "related": [
     "sample-mean",
@@ -59,28 +63,50 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学B 統計的な推測: 母平均 m"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和6年度 大学入学共通テスト 本試験 数学Ⅱ・数学Ｂ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=666&f=abm00004690.pdf&n=2024_or_21_sugaku2B.pdf",
+      "note": "母平均 m と書く問題文"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Unit 4（population mean）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
+      "true mean": 23,
       "population mean": 86
     },
     "written": {
-      "population mean": 186
+      "population mean": 186,
+      "true mean": 24
     },
     "sources": [
       "khan-ap-stats",
+      "mit-18.03",
+      "mit-notes",
       "openstax-introstats",
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

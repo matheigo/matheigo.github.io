@@ -19,8 +19,8 @@
     "register": "spoken"
   },
   "pos": "noun",
-  "mapping": "near",
-  "mapping_note": "日本の中 3 では、有効数字をはっきりさせるために測定値を 2.30 × 10³ のように（整数部分が 1 桁の数）×（10 の累乗）の形で書く。英語ではこの書き方を scientific notation と呼び、有効数字そのもの（significant figures）とは別の名前で言う。見出しは授業の言い方の significant figures（sig figs）で、教科書（OpenStax Calculus）は significant digits と書く。",
+  "mapping": "exact",
+  "mapping_note": null,
   "domains": [
     "arithmetic"
   ],
@@ -29,8 +29,8 @@
       "中3"
     ],
     "us": [
-      "Algebra 1",
-      "Integrated Math 2"
+      "Algebra 2",
+      "Precalculus"
     ]
   },
   "definition_ja": "測定値などの近似値のうち、信頼できる桁の数字。2.30 × 10³ のように（整数部分が 1 桁の数）×（10 の累乗）の形で書くと、どの桁までが有効数字かがはっきりする。",
@@ -51,15 +51,16 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語では、2.30 × 10³ のように（整数部分が 1 桁の数）×（10 の累乗）で書く形を scientific notation と呼ぶ。有効数字（significant figures）とは別の名前。",
-    "教科書（OpenStax Calculus）は significant digits と書く。話し言葉では sig figs と縮めることもある。",
-    "2.30 の最後の 0 は有効数字に数える。2.3 × 10³ と書くと有効数字は 2 桁で、2.30 × 10³ とは測定の精度が違う。"
+    "英語では、2.30 × 10³ のように（整数部分が 1 桁の数）×（10 の累乗）で書く形を scientific notation と呼ぶ（エントリ scientific-notation）。有効数字（significant figures）とは別の名前。",
+    "OpenStax Calculus（Volume 1〜3）は significant digits と書く（10 件。significant figures は 2 件）。",
+    "2.30 の最後の 0 は有効数字に数える。2.3 × 10³ と書くと有効数字は 2 桁で、2.30 × 10³ とは測定の精度が違う。",
+    "見出しは話し言葉の首位 significant figures（すべて Khan Academy）。中学校学習指導要領解説（誤差や近似値）は、測定値を 2300 m ではなく 2.30 × 10³ m のように（整数部分が 1 桁の数）×（10 の累乗）の形で表して、どの数字までが有効数字かを明らかにする、と書く。"
   ],
   "related": [
     "measurement",
     "error",
     "approximate-value",
-    "round",
+    "scientific-notation",
     "digit"
   ],
   "sources": [
@@ -71,15 +72,21 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "中学校 第 3 学年 誤差や近似値（［内容の取扱い］（1））: 2300 m を 2.30×10³ m のように表して有効数字を明らかにする"
     }
   ],
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "significant digits": 35,
@@ -98,6 +105,13 @@
       "openstax-calculus",
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: mapping を near から exact に（有効数字 と significant figures は 1 対 1。書き方の名前 scientific notation の違いは別エントリが受ける）。見直す点: exact でよいか、level.us（Algebra 2・Precalculus）。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
+    }
+  ]
 }

@@ -1,24 +1,25 @@
 {
   "id": "zero-product-property",
   "ja": {
-    "term": "零因子の性質",
-    "reading": "れいいんしのせいしつ",
+    "term": "零積法則",
+    "reading": "れいせきほうそく",
     "alt": [
-      "零積の性質"
+      "零積の性質",
+      "零因子の性質"
     ]
   },
   "en": {
     "term": "zero product property",
     "alt": [
       "zero-product property",
-      "zero product rule"
+      "zero factor property"
     ],
     "uk": null,
     "register": "written"
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "見出しの「零因子の性質」は学習指導要領解説に無い、本プロジェクトの訳語。日本の教科書はこの性質に名前を付けず、「AB = 0 ならば A = 0 または B = 0」という文のまま使う。米国の教科書 OpenStax Elementary Algebra は zero product property と名前を付け、因数分解で二次方程式を解くときの根拠として書く。",
+  "mapping_note": "見出しの「零積法則」は学習指導要領解説に無い（日本語版 Wikipedia「整域」が零因子の非存在を零積法則と呼び、「整数の合同」は零積性質と書く）。中学校学習指導要領解説はこの性質に名前を付けず、「AB = 0 ならば、A = 0 または B = 0」と文で書く。米国の教科書 OpenStax Elementary Algebra は zero product property と名前を付け、因数分解で二次方程式を解くときの根拠として書く。OpenStax Algebra and Trigonometry・Precalculus は zero factor property と呼ぶ。",
   "domains": [
     "algebra"
   ],
@@ -32,7 +33,7 @@
     ]
   },
   "definition_ja": "2 つの数の積が 0 ならば、少なくとも一方は 0 であるという性質。AB = 0 ならば A = 0 または B = 0。",
-  "definition_en": "If the product of two numbers is 0, then at least one of them must be 0. In symbols, if ab = 0, then a = 0 or b = 0.",
+  "definition_en": "When a product of two numbers equals 0, at least one factor is 0: ab = 0 forces a = 0 or b = 0.",
   "latex": "ab = 0 \\Rightarrow a = 0 \\text{ or } b = 0",
   "spoken_en": "if a times b equals zero, then a equals zero or b equals zero",
   "examples": [
@@ -51,7 +52,7 @@
   "pitfalls": [
     "右辺が 0 のときだけ使える。(x − 1)(x − 2) = 6 から x − 1 = 6 や x − 2 = 6 とはできない（積が 6 になる 2 数の組は無数にある）。展開して x² − 3x − 4 = 0 と右辺を 0 にしてから因数分解する。",
     "「または」（or）は両方が 0 の場合も含む。A = 0 or B = 0 は「どちらか一方だけが 0」の意味ではない。",
-    "「零因子」は大学の代数学では zero divisor（0 でない元で、0 でない元とかけると 0 になるもの）の訳語。実数には zero divisor がないというのがこの性質の中身で、英語の名前は zero product property。"
+    "「零因子」（zero divisor）は 0 でない元どうしをかけて 0 になるもの。実数に零因子が無いというのがこの性質の中身なので、日本語版 Wikipedia「整域」はこれを零積法則と呼ぶ。英語の名前は zero product property（OpenStax Elementary Algebra）と zero factor property（OpenStax Algebra and Trigonometry・Precalculus）。"
   ],
   "related": [
     "solving-by-factoring",
@@ -64,12 +65,38 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "中学校 第 3 学年 数と式（二次方程式）: 「AB=0ならば,A=0またはB=0」であることを用いる方法（性質の名前は無い。「零因子の性質」「零積の性質」は 0 件）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「整域」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B4%E5%9F%9F",
+      "note": "零因子の非存在（零積法則）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「整数の合同」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B4%E6%95%B0%E3%81%AE%E5%90%88%E5%90%8C",
+      "note": "零積性質「積が 0 に等しいならばいずれかの数が 0 に等しい」"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
     }
   ],
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -79,7 +106,8 @@
     },
     "written": {
       "zero-product property": 16,
-      "zero product property": 80
+      "zero product property": 80,
+      "zero factor property": 3
     },
     "sources": [
       "openstax-algtrig",
@@ -88,6 +116,13 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: 見出しの日本語を 零因子の性質 から 零積法則 に（零因子＝zero divisor が無いことがこの性質の中身。日本語版 Wikipedia「整域」の零積法則）。見直す点: ja.term、mapping_note、en.alt の zero factor property。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
+    }
+  ]
 }

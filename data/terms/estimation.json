@@ -49,7 +49,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語は名詞・動詞とも estimate（推定する・推定値）で言う。名詞の estimation は、用例コーパスでは多くが微積分の「見積もり」（積分の値の評価など）の意味だった。",
+    "AP Statistics の CED と OpenStax Introductory Statistics は、推定を動詞 estimate と名詞 estimate（point estimate・interval estimate）で書き、名詞 estimation はどちらも 1 件。名詞の estimation は、用例コーパスでは多くが微積分の「見積もり」（積分の値の評価など）の意味だった。",
     "用例コーパスでは estimate the population ／ estimate of the population ／ estimate a population ／ estimate of a population の形で数えた。",
     "推定の方法は、1 つの値で推定する点推定（point estimate）と、区間で推定する区間推定（interval estimate、confidence interval）に分かれる。",
     "√10 が 3 と 4 の間にあることを調べるような、値の範囲をはさむ「評価する」も英語は estimate（エントリ bound-estimate）で、統計の推定とは別の意味。"
@@ -64,15 +64,21 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 1.10（estimation）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "estimate the population | estimate of the population | estimate a population | estimate of a population": 21
@@ -88,6 +94,6 @@
       "openstax-introstats",
       "openstax-prealgebra"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

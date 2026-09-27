@@ -29,7 +29,7 @@
     ]
   },
   "definition_ja": "分母に根号をふくむ分数の分母と分子に同じ数を掛けて、分母に根号をふくまない形に直すこと。1/√2 = √2/2 など。",
-  "definition_en": "Rewriting a fraction so that there is no radical in the denominator, by multiplying the numerator and the denominator by the same number. For example, 1/√2 = √2/2.",
+  "definition_en": "Rewriting a fraction so that no radical is left in the denominator, done by multiplying top and bottom by a suitable factor. For example, 1/√2 = √2/2.",
   "latex": "\\frac{1}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2}",
   "spoken_en": "one over the square root of two equals the square root of two over two",
   "examples": [
@@ -46,9 +46,9 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語では名詞句より、動詞句 rationalize the denominator で言うことが多い（問題文の Rationalize the denominator. が「分母を有理化せよ」）。",
+    "問題文は動詞句の命令形 Rationalize the denominator.（分母を有理化せよ）の形で出る（OpenStax Elementary Algebra）。名詞句 rationalizing the denominator は手順を説明するときの言い方。",
     "根号の中の数を小さくする操作（simplify the radical、エントリ simplify-radicals）とは別の操作。6/√3 = 6√3/3 = 2√3 のように、有理化したあとで約分できることがある。",
-    "分母が √3 + √2 のような 2 項の和のときは、√3 − √2 を分母と分子に掛けて有理化する（日本では数学 I で扱う）。"
+    "分母が √3 + √2 のような 2 項の和のときは、√3 − √2 を分母と分子に掛けて有理化する（高等学校学習指導要領解説は数学I で「分母が二項程度までの分数の形に表された数の分母の有理化」を挙げる）。"
   ],
   "related": [
     "simplify-radicals",
@@ -61,15 +61,21 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 数と式: 分母が二項程度までの分数の形に表された数の分母の有理化"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "rationalizing the denominator": 13
@@ -87,6 +93,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

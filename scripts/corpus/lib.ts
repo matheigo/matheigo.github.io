@@ -1571,7 +1571,14 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   "take-the-average": { "take the average": "take the average of", "find the average": "find the average of" }, // not the average rate of change
   sampling: { sampling: "sampling method | sampling technique" }, // "sampling" folds into "sample"
   deviation: { deviation: "!standard !absolute !quartile deviation" }, // not a standard deviation
-  census: { census: "census !bureau" }, // not the U.S. Census Bureau
+  // "a census": the survey method. The written hits of bare "census" are the U.S. Census (Bureau) and census.gov (Phase 5 監査 4, batch 13)
+  census: { census: "a census !bureau" },
+  // the sampling / estimation sense only: the unbiased coins, dice and random walks of MIT 6.042 are "fair" (Phase 5 監査 4, batch 13)
+  unbiased: { unbiased: "unbiased sample | unbiased estimate | unbiased estimator | unbiased statistic" },
+  // the ratio of the volumes of similar solids: IM's "surface area to volume ratio" is another concept (Phase 5 監査 4, batch 14)
+  "ratio-of-volumes-of-similar-solids": { "volume ratio": "!to volume ratio" },
+  // the order of a polynomial's terms only: "increasing powers" alone is the partial-fraction denominators and the powers of i (Phase 5 監査 4, batch 14)
+  "ascending-order": { "increasing powers": "increasing powers of x | increasing powers of the variable" },
   "arithmetic-mean": { mean: "the mean !value" }, // the mean of data; not "I mean" or the mean value theorem
   // batch 2
   test: { test: "test the claim | test the hypothesis | conduct a hypothesis test | perform a hypothesis test | do a hypothesis test" }, // not a comparison test or a school test
@@ -1683,12 +1690,12 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   // 因数分解: the verb in use. "factoring" folds into every "factor" (a factor of 15, a scale factor)
   factoring: {
     factoring: "factor the | factor this | factor each | factor it | factor completely",
-    factorization: "factorization !prime",
+    factorization: "!prime factorization", // not prime factorization (Phase 5 監査 4: the "!prime" stood after the word)
   },
   factor: { factor: "linear factor | quadratic factor | each factor | two factors | the factors are | irreducible factor" }, // 因数 of a product
   binomial: {
     binomial:
-      "binomial !theorem !distribution !distributions !coefficient !coefficients !expansion !probability !random !experiment !setting !formula !model !squares !square",
+      "binomial !theorem !distribution !distributions !coefficient !coefficients !expansion !probability !random !experiment !setting !formula !model !squares !square !variable !series",
   }, // 二項式, not the binomial theorem / distribution, or binomial squares (square-of-a-binomial)
   error: {
     error: "absolute error | measurement error | error in the measurement | error in measurement | amount of error | round-off error | rounding error",
@@ -1699,7 +1706,7 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
       "between two consecutive integers | between which two integers | between two consecutive whole numbers | estimate the square root | estimate the value of the square root",
   }, // 評価する (√10 lies between 3 and 4), not an estimate in general (estimation)
   scale: {
-    scale: "scale of the map | scale of the drawing | the scale is | map scale | scale on the map | scale of a map | scale of a drawing",
+    scale: "scale of the map | scale of the drawing | map scale | scale on the map | scale of a map | scale of a drawing", // not "the scale is (balanced)" (Phase 5 監査 4)
   }, // 縮尺, not a scale factor or the scale of an axis
   // 相似 of figures; "are similar" / "is similar to" are mostly "alike" (proofs, methods) or similar matrices
   similar: {

@@ -4,13 +4,15 @@
     "term": "軸",
     "reading": "じく",
     "alt": [
-      "放物線の軸"
+      "放物線の軸",
+      "対称軸"
     ]
   },
   "en": {
     "term": "axis of symmetry",
     "alt": [],
-    "uk": null
+    "uk": null,
+    "register": "both"
   },
   "pos": "noun",
   "mapping": "exact",
@@ -35,12 +37,12 @@
   "spoken_en": "x equals negative b over two a",
   "examples": [
     {
-      "en": "The axis of symmetry goes right through the vertex, so here it's x equals 3.",
+      "en": "The axis of symmetry always passes through the vertex, so for this parabola it's x equals 3.",
       "ja": "軸は頂点を通るので、ここでは x = 3。",
       "register": "spoken"
     },
     {
-      "en": "Find the vertex and the equation of the axis of symmetry of y = 2x² − 8x + 5.",
+      "en": "For the parabola y = 2x² − 8x + 5, find the vertex and write the equation of its axis of symmetry.",
       "ja": "放物線 y = 2x² − 8x + 5 の頂点と軸の方程式を求めよ。",
       "register": "written"
     },
@@ -58,7 +60,7 @@
   ],
   "pitfalls": [
     "日本語は「軸」だけで放物線の軸を指すが、英語で axis とだけ言うと x 軸・y 軸（x-axis, y-axis）と紛れる。放物線の軸は axis of symmetry と言う。",
-    "線対称な図形の「対称の軸」には line of symmetry も使う（用例コーパスでは話し言葉には少なく、書き言葉では OpenStax Elementary Algebra・OpenStax Intermediate Algebra などに出てくる）。放物線の軸の言い方としては数えていない。",
+    "OpenStax Elementary Algebra・Intermediate Algebra と IM Geometry（6.8）は放物線の軸を line of symmetry とも書く。line of symmetry は図形一般の対称の軸（エントリ line-of-reflection）にも使うので、放物線の軸の言い方としては数えていない。",
     "軸の方程式は x = p の形の直線の式で答える。y = p と書き間違えない。"
   ],
   "related": [
@@ -75,15 +77,35 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Geometry 6.8: 放物線の line of symmetry"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 二次関数: グラフの対称軸（直線 x = p）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "axis of symmetry": 19
@@ -102,6 +124,6 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

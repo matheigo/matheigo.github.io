@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（sample survey は用例コーパスに出てこない）。take a sample（標本をとる。話し言葉ではほとんどが Khan Academy）のように動詞で言う。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（sample survey は用例コーパスに出てこない）。take a sample（標本をとる。話し言葉ではほとんどが Khan Academy）のように動詞で言う。IM Grade 7 と OpenStax Introductory Statistics も take a sample ／ select a sample と動詞で言い、AP Statistics の CED は sampling method（topic 1.11）と言う。",
   "domains": [
     "statistics"
   ],
@@ -21,7 +21,10 @@
       "中3"
     ],
     "us": [
-      "Algebra 1"
+      "Pre-Algebra",
+      "Algebra 2",
+      "AP Statistics",
+      "Intro Statistics"
     ]
   },
   "definition_ja": "集団の一部を取り出して調べ、その結果から集団全体の傾向を推測する調査。",
@@ -42,7 +45,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "調査全体の方法は sampling（標本抽出）と言う。"
+    "母集団から標本を取り出すことは sampling（エントリ sampling）、全員を調べる調査は census（エントリ census。AP Statistics の CED topic 1.10）。"
   ],
   "related": [
     "census",
@@ -55,12 +58,28 @@
       "type": "wikipedia-langlink",
       "ja": "標本調査",
       "en": "Sampling (statistics)"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7)",
+      "url": "https://im.kendallhunt.com/MS/students/2/index.html",
+      "note": "Grade 7 8.14・8.16: take a sample ／ select a sample"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 1.11（sampling method）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",

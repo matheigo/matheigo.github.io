@@ -7,7 +7,9 @@
   },
   "en": {
     "term": "semicircle",
-    "alt": [],
+    "alt": [
+      "half circle"
+    ],
     "uk": null,
     "register": "both"
   },
@@ -19,14 +21,16 @@
   ],
   "level": {
     "jp": [
+      "中1",
       "中3"
     ],
     "us": [
+      "Pre-Algebra",
       "Geometry",
       "Integrated Math 2"
     ]
   },
-  "definition_ja": "円を直径で 2 つに分けたときの一方。弧だけを指すことも、弧と直径で囲まれた図形を指すこともある。",
+  "definition_ja": "円を直径で 2 つに分けたときの一方の図形（中心角 180° の扇形）。",
   "definition_en": "Half of a circle, cut off by a diameter. It can mean just the arc or the region bounded by the arc and the diameter.",
   "latex": "A = \\frac{1}{2}\\pi r^2",
   "spoken_en": "A equals one half pi r squared",
@@ -45,8 +49,9 @@
   "collocations": [],
   "pitfalls": [
     "半円の周の長さ（perimeter）は、弧の長さ πr に直径 2r を足した πr + 2r。弧の長さ πr だけと取り違えない。",
-    "semi- は「半分」の意味。弧としての半円は semicircular arc とも言い、semicircular は「半円の」という形容詞。",
-    "ちょうど 180° の弧である半円の弧は、優弧（major arc）にも劣弧（minor arc）にも入れない（エントリ major-arc、minor-arc）。"
+    "semi- は「半分」の意味。OpenStax Calculus は弧としての半円を semicircular arc とも書き、semicircular は「半円の」という形容詞。",
+    "ちょうど 180° の弧である半円の弧は、優弧（major arc）にも劣弧（minor arc）にも入れない（エントリ major-arc、minor-arc）。",
+    "CK-12 Geometry 6.9 Arcs in Circles は semicircle を 180° の弧と定義し、6.7 では面積を求める図形の意味でも使う。日本語版 Wikipedia「円 (数学)」は、直径で分けた 2 つの弧を半円周と呼ぶ。"
   ],
   "related": [
     "circle",
@@ -64,21 +69,49 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.9 Arcs in Circles（semicircle は 180° の弧）・6.7 Areas of Combined Figures Involving Semicircles"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「円 (数学)」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%86%86_(%E6%95%B0%E5%AD%A6)",
+      "note": "直径で分けた 2 つの弧を半円周と呼ぶ"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7)",
+      "url": "https://im.kendallhunt.com/MS/students/2/index.html",
+      "note": "half circle"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
-      "semicircle": 28
+      "semicircle": 28,
+      "half circle": 8
     },
     "written": {
-      "semicircle": 43
+      "semicircle": 43,
+      "half circle": 2
     },
     "sources": [
       "khan-ap-calc",
@@ -87,8 +120,9 @@
       "mit-18.02",
       "mit-notes",
       "openstax-calculus",
-      "openstax-prealgebra"
+      "openstax-prealgebra",
+      "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

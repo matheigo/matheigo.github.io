@@ -31,8 +31,8 @@
       "Integrated Math 2"
     ]
   },
-  "definition_ja": "二次式を a(x−p)²+q の形に変形すること。頂点や最大最小を読み取るために使う。",
-  "definition_en": "Rewriting a quadratic as a(x−p)²+q so that the vertex, or the maximum or minimum, can be read off.",
+  "definition_ja": "二次式を a(x − p)² + q の形に変形すること。二次方程式を解くときや、二次関数の頂点・最大最小を求めるときに使う。",
+  "definition_en": "Rewriting a quadratic expression as a(x − h)² + k. It is used to solve quadratic equations and to read off the vertex, or the maximum or minimum, of a quadratic function.",
   "latex": "x^2 + 6x + 5 = (x+3)^2 - 4",
   "spoken_en": "x squared plus six x plus five equals the quantity x plus three, squared, minus four",
   "examples": [
@@ -58,7 +58,7 @@
     }
   ],
   "pitfalls": [
-    "平方完成した形 a(x − h)² + k の呼び方は教科書で分かれる。OpenStax Algebra and Trigonometry は standard form と呼び、vertex form とも言うと書く。授業の書き起こしでは vertex form がよく出てくる（多くは YouTube の解説）。"
+    "平方完成した形 a(x − h)² + k の呼び方は資料で分かれる。OpenStax Algebra and Trigonometry は standard form と呼び、vertex form とも言うと書く。OpenStax Intermediate Algebra は両方の名前を挙げ、IM Algebra 1 は 6.15 Vertex Form の題にする。用例コーパスの話し言葉の vertex form はほぼ YouTube の解説。"
   ],
   "related": [
     "quadratic-formula",
@@ -73,15 +73,25 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Algebra 1 6.15 Vertex Form"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-10",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "completing the square": 145,
@@ -110,6 +120,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

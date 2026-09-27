@@ -26,13 +26,13 @@
     ]
   },
   "definition_ja": "同じ円、または合同な円で、長さの等しい弧。等しい弧に対する中心角・円周角は、それぞれ等しい。",
-  "definition_en": "Arcs in the same circle, or in congruent circles, that have the same length. Central angles and inscribed angles that intercept congruent arcs are equal.",
+  "definition_en": "Arcs in the same circle, or in congruent circles, that have the same length. Central angles on congruent arcs are equal, and so are inscribed angles on them.",
   "latex": "\\overset{\\frown}{AB} \\cong \\overset{\\frown}{CD}",
   "spoken_en": "arc AB is congruent to arc CD",
   "examples": [
     {
-      "en": "Both central angles are 70 degrees, so the arcs they cut off are congruent arcs.",
-      "ja": "どちらの中心角も 70° だから、それに対する弧は等しい弧だ。",
+      "en": "In the same circle, both central angles are 70 degrees, so the arcs they cut off are congruent arcs.",
+      "ja": "同じ円で、どちらの中心角も 70° だから、それに対する弧は等しい弧だ。",
       "register": "spoken"
     },
     {
@@ -43,9 +43,10 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の教科書は等しい弧を「弧 AB = 弧 CD」のように等号で書き、「等しい弧」と呼ぶ。CK-12 Geometry 6.9 Arcs in Circles は、合同の語 congruent を使って congruent arcs と呼ぶ。",
+    "CK-12 Geometry 6.9 Arcs in Circles は合同の語を使って congruent arcs と呼び、弧どうしを ≅ で結ぶ（6.12 Chords and Central Angle Arcs も）。本プロジェクトの例文では、日本語は 弧 AB = 弧 CD、英語は arc AB ≅ arc CD と書く。",
     "比べるのは同じ円か合同な円の弧。半径の違う円の弧は、長さが同じでも曲がり方が違うので congruent arcs ではない。",
-    "同じ円の中では、弧の長さが等しいことと、弧の度数（エントリ arc-measure）や中心角が等しいことは同じ。"
+    "同じ円の中では、弧の長さが等しいことと、弧の度数（エントリ arc-measure）や中心角が等しいことは同じ。",
+    "中学校学習指導要領解説は「同じ弧に対する円周角」と書き、「等しい弧」という語は出てこない。CK-12 Geometry 6.9 は congruent arcs と呼ぶ。"
   ],
   "related": [
     "arc",
@@ -60,24 +61,30 @@
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
       "note": "6.9 Arcs in Circles"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 3 学年 図形: 「同じ弧に対する円周角」（「等しい弧」は 0 件）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 congruent arcs（CK-12 Geometry 6.9 Arcs in Circles・計 2 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-26"
     }
   ]
 }

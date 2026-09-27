@@ -27,7 +27,7 @@
     ]
   },
   "definition_ja": "移項して整理すると ax² + bx + c = 0（a ≠ 0）の形になる方程式。x の 2 乗の項をふくみ、3 乗以上の項をふくまない。",
-  "definition_en": "An equation that can be written in the form ax² + bx + c = 0, where a ≠ 0. The highest power of the variable is 2.",
+  "definition_en": "Any equation that rearranges to ax² + bx + c = 0 with a ≠ 0; the variable's highest power is 2.",
   "latex": "ax^2 + bx + c = 0 \\quad (a \\neq 0)",
   "spoken_en": "a x squared plus b x plus c equals zero, where a is not equal to zero",
   "examples": [
@@ -44,7 +44,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "quadratic の quad- は「4」の意味ではなく、ラテン語の「正方形」（2 乗）から来ている。x² の項があることを表す。",
+    "quadratic は 2 次の意味で、4 次は quartic（エントリ quartic-equation）。英語版 Wikipedia「Quadratic equation」は語源をラテン語 quadratus（正方形）と書く。",
     "二次式（エントリ quadratic-expression）や二次関数（エントリ quadratic-function）とは別の語。二次方程式は等式で、成り立つ x の値（解）を求めるもの。",
     "解き方は、因数分解（エントリ solving-by-factoring）、平方根の考え（エントリ solving-by-taking-square-roots）、平方完成（エントリ completing-the-square）、解の公式（エントリ quadratic-formula）。どれも、まず式を整理してから使う。"
   ],
@@ -67,15 +67,21 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Quadratic_equation",
+      "note": "記事「Quadratic equation」（数学カテゴリから 4 段）の冒頭: 語源はラテン語 quadratus（square）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "quadratic equation": 95
@@ -102,6 +108,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

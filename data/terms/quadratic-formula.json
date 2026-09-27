@@ -43,16 +43,13 @@
   ],
   "collocations": [
     {
-      "en": "plug into the quadratic formula",
-      "ja": "解の公式に代入する"
-    },
-    {
       "en": "apply the quadratic formula",
       "ja": "解の公式を適用する"
     }
   ],
   "pitfalls": [
-    "判別式を D と置かず b² − 4ac と書いたまま進めるのが OpenStax（Algebra and Trigonometry・Calculus）の書き方。"
+    "共通テストの問題文は判別式を D とおく（令和 5 年度 数学II ほか）。OpenStax Algebra and Trigonometry・Elementary Algebra は二次方程式の判別式を b² − 4ac のまま書き、D の文字は使わない（エントリ discriminant）。",
+    "動詞と組むときは use the quadratic formula の形が用例コーパスで最も多く、apply the quadratic formula は少ない。"
   ],
   "related": [
     "discriminant",
@@ -67,15 +64,25 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和5年度 大学入学共通テスト 本試験 数学Ⅱ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=432&f=abm00003620.pdf&n=2023_ot_20_sugaku2.pdf",
+      "note": "判別式を D とおく問題文"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-10",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "quadratic formula": 126,
@@ -106,6 +113,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

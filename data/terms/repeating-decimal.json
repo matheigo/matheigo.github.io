@@ -20,7 +20,8 @@
   "level": {
     "jp": [
       "中3",
-      "数A"
+      "数A",
+      "数I"
     ],
     "us": [
       "Algebra 1",
@@ -56,7 +57,7 @@
     }
   ],
   "pitfalls": [
-    "記号が違う。日本の教科書は繰り返す部分の最初と最後の数字の上に点を打つ（0.1̇23̇）。英語では繰り返す部分全体の上に横線を引く（0.1̅2̅3̅、bar notation）。",
+    "記号が違う。英語版 Wikipedia「Repeating decimal」の Notation の節は、米国などは繰り返す部分の上に横線（vinculum）を引き、日本・英国などは両端の数字の上に点を打つ、と書く。日本語版 Wikipedia「循環小数」も点・上線・下線の書き方を挙げる。OpenStax Intermediate Algebra と IM Grade 8 は横線（bar）を引く（0.1̅2̅3̅）。",
     "循環小数は有理数。√2 や π は循環しない無限小数で、無理数。",
     "英語版 Wikipedia「Repeating decimal」は recurring decimal とも呼ぶ。"
   ],
@@ -83,13 +84,29 @@
       "type": "reference",
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Repeating_decimal",
-      "note": "記事「Repeating decimal」の冒頭: repeating decimal or recurring decimal（地域は書いていない）"
+      "note": "記事「Repeating decimal」の冒頭: repeating decimal or recurring decimal。Notation の節: 米国などは横線、日本・英国などは点"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「循環小数」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%BE%AA%E7%92%B0%E5%B0%8F%E6%95%B0",
+      "note": "表記法: 循環節の先頭と末尾の数に点をつける ／ 循環節全体に上線をつける"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 8)",
+      "url": "https://im.kendallhunt.com/MS/students/3/index.html",
+      "note": "Grade 8 8.14 Decimal Representations of Rational Numbers: the bar over part of the expansion"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -110,6 +127,6 @@
       "openstax-intalg",
       "openstax-prealgebra"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

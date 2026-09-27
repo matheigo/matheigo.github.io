@@ -14,8 +14,8 @@
     "register": "both"
   },
   "pos": "phrase",
-  "mapping": "near",
-  "mapping_note": "日本語の「無作為に抽出する」は漢語の決まった言い方だが、英語はふつうの動詞 select ／ choose に副詞 randomly を付ける。用例コーパスでは話し言葉・書き言葉とも randomly select のほうが select at random より多い。",
+  "mapping": "exact",
+  "mapping_note": null,
   "domains": [
     "statistics"
   ],
@@ -24,7 +24,10 @@
       "中3"
     ],
     "us": [
-      "Algebra 1"
+      "Pre-Algebra",
+      "Geometry",
+      "Algebra 2",
+      "AP Statistics"
     ]
   },
   "definition_ja": "母集団のどの個体も同じ確率で選ばれるように、標本を取り出す。",
@@ -38,14 +41,15 @@
       "register": "spoken"
     },
     {
-      "en": "Fifty students are randomly selected from the school. Find the probability that more than 30 of them walk to school.",
-      "ja": "学校から 50 人の生徒を無作為に選ぶ。そのうち 30 人より多くが徒歩通学である確率を求めよ。",
+      "en": "Fifty students are randomly selected from a school where 40% of the students walk to school. Find the probability that more than 30 of them walk to school.",
+      "ja": "生徒の 40% が徒歩通学の学校から、50 人の生徒を無作為に選ぶ。そのうち 30 人より多くが徒歩通学である確率を求めよ。",
       "register": "written"
     }
   ],
   "collocations": [],
   "pitfalls": [
-    "受け身の a randomly selected student（無作為に選ばれた生徒）の形が問題文に多い。"
+    "学習指導要領解説（中学校・高等学校）は「無作為に抽出する」と書く。AP Statistics の CED（topic 1.10・1.11）と OpenStax Introductory Statistics は randomly select(ed) と書き、IM は selected at random のほうを多く使う（Geometry の確率の単元ほか 60 件。randomly select は 36 件）。用例コーパスでは話し言葉・書き言葉とも randomly select のほうが select at random より多い。",
+    "OpenStax Introductory Statistics の問題文は受け身・分詞の randomly selected を多く使う（142 件。能動の形は 20 件）。"
   ],
   "related": [
     "random-sampling",
@@ -55,15 +59,39 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 3 学年 標本調査: 無作為に抽出する"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学B 統計的な推測: 無作為に抽出する"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 1.10（randomly select）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Geometry Unit 8（確率）ほか: selected at random"
     }
   ],
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "randomly select": 31,
@@ -83,6 +111,13 @@
       "openstax-prealgebra",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: mapping を near から exact に（無作為に抽出する と randomly select は 1 対 1。漢語と副詞＋動詞の形の違いは mapping の理由にしない）。見直す点: exact でよいか、参照の言い方（IM は selected at random が多い）。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
+    }
+  ]
 }

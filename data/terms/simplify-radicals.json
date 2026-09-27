@@ -7,16 +7,24 @@
   },
   "en": {
     "term": "simplify the radical",
-    "alt": [
-      "simplest radical form"
-    ],
+    "alt": [],
     "uk": null,
     "register": "written",
     "variants": [
       {
+        "term": "simplify the radical",
+        "register": "written",
+        "note": "書き言葉の首位（OpenStax Elementary Algebra・Intermediate Algebra が中心）。"
+      },
+      {
+        "term": "simplify square roots",
+        "register": "written",
+        "note": "OpenStax Elementary Algebra の節の名前 Simplify Square Roots。書き言葉では 2 番目。"
+      },
+      {
         "term": "simplify radicals",
-        "register": "spoken",
-        "note": "話し言葉は NancyPi と Khan Academy の中学の講義に出てくるが、数は少ない。書き言葉は大半が OpenStax Intermediate Algebra。"
+        "register": "both",
+        "note": "話し言葉の首位（NancyPi と Khan Academy の中学の講義）。書き言葉では 3 番目。"
       }
     ]
   },
@@ -29,7 +37,7 @@
   ],
   "level": {
     "jp": [
-      "大学",
+      "中3",
       "数I"
     ],
     "us": [
@@ -41,7 +49,7 @@
   "definition_ja": "根号の中の数から平方因数を外に出し、根号の中をできるだけ小さい自然数にする。根号を含む式では、そのうえで同じ根号の項をまとめる。",
   "definition_en": "To pull square factors out from under a radical so that the number left inside is as small as possible, then combine like radical terms in an expression.",
   "latex": "\\sqrt{12} = \\sqrt{4 \\cdot 3} = 2\\sqrt{3}",
-  "spoken_en": "root twelve is root four times three, which is two root three",
+  "spoken_en": "root twelve is the square root of four times three, which is two root three",
   "examples": [
     {
       "en": "To simplify the radical, look for the biggest perfect square that goes into 72. That's 36, so √72 is 6√2.",
@@ -59,11 +67,18 @@
       "register": "written"
     }
   ],
-  "collocations": [],
+  "collocations": [
+    {
+      "en": "write … in simplest radical form",
+      "ja": "根号の中をできるだけ小さい自然数にした形で表す"
+    }
+  ],
   "pitfalls": [
-    "用例コーパスの書き言葉では simplify the radical（OpenStax Elementary Algebra・Intermediate Algebra が中心）が、simplify radicals・simplest radical form より多い。話し言葉はどれも少ない（いちばん多い simplify radicals も NancyPi と Khan Academy の中学の講義だけ）。",
+    "用例コーパスの書き言葉では simplify the radical（OpenStax Elementary Algebra・Intermediate Algebra が中心）が首位だが、simplify square roots（OpenStax Elementary Algebra の節の名前）と simplify radicals も 3 倍の差がつかず、併記にした。話し言葉はどれも少ない（いちばん多い simplify radicals も NancyPi と Khan Academy の中学の講義だけ）。",
     "simplest radical form は「簡単にした結果の形」を指す名詞句。問題文の Write … in simplest radical form が「簡単にせよ」に当たる。",
-    "分母の根号を消す「有理化」は別の操作で、英語では rationalize the denominator と言う。"
+    "分母の根号を消す「有理化」は別の操作で、英語では rationalize the denominator と言う。",
+    "根拠になる性質 √(ab) = √a·√b と √(a/b) = √a/√b を、OpenStax Elementary Algebra は Product Property of Square Roots ／ Quotient Property of Square Roots と呼ぶ（Intermediate Algebra は Product Property of Roots）。",
+    "センター試験の注意事項は「根号の中に現れる自然数が最小となる形で答えなさい」と書く（平成 30 年度）。"
   ],
   "related": [
     "nth-root",
@@ -75,25 +90,40 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?f=abm00033137.pdf&n=h30+suugaku1+00hyousi.pdf",
+      "note": "注意事項: 根号の中に現れる自然数が最小となる形で答えなさい"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "simplify the radical": 1,
-      "simplest radical form": 1,
+      "simplify square roots": 1,
       "simplify radicals": 8
     },
     "written": {
       "simplify radicals": 29,
       "simplify the radical": 105,
-      "simplest radical form": 2
+      "simplify square roots": 37,
+      "write … in simplest radical form": 2
     },
     "sources": [
       "khan-algebra",
@@ -103,6 +133,6 @@
       "openstax-intalg",
       "yt:nancypi"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

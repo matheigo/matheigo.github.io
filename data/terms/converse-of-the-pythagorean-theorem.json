@@ -44,7 +44,7 @@
   "collocations": [],
   "pitfalls": [
     "c には最も長い辺を入れて調べる。短い辺を c にすると a² + b² = c² が成り立たず、直角三角形を見落とす。",
-    "CK-12 Geometry は同じ節（Converse of the Pythagorean Theorem）で、最も長い辺を c として c² < a² + b² なら鋭角三角形、c² > a² + b² なら鈍角三角形と判定する使い方も扱う（エントリ acute-triangle、obtuse-triangle）。",
+    "CK-12 Geometry は 4.29 Pythagorean Theorem to Classify Triangles と 4.36 Distance and Triangle Classification Using the Pythagorean Theorem で、最も長い辺を c として c² < a² + b² なら鋭角三角形、c² > a² + b² なら鈍角三角形と判定する（4.36 は逆定理を広げる形で導入する。エントリ acute-triangle、obtuse-triangle）。",
     "converse は「逆」（エントリ converse）。the converse of … の形で、もとの定理の名前につけて呼ぶ。"
   ],
   "related": [
@@ -59,25 +59,25 @@
       "type": "reference",
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
-      "note": "4.31 Converse of the Pythagorean Theorem"
+      "note": "4.31 Converse of the Pythagorean Theorem（鋭角・鈍角の判定は 4.29・4.36）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 converse of the Pythagorean theorem（CK-12 Geometry 4.31 Converse of the Pythagorean Theorem・CK-12 Geometry 4.33 Pythagorean Theorem and its Converse・CK-12 Geometry 4.36 Distance and Triangle Classification Using the Pythagorean Theorem・計 16 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-26"
     }
   ]
 }

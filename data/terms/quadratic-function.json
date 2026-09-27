@@ -19,14 +19,15 @@
   ],
   "level": {
     "jp": [
-      "中3"
+      "中3",
+      "数I"
     ],
     "us": [
       "Algebra 1",
       "Integrated Math 2"
     ]
   },
-  "definition_ja": "y が x の二次式で表される関数。中 3 では y = ax²（a ≠ 0）の形だけを扱い、高校で y = ax² + bx + c の形に広げる。",
+  "definition_ja": "y が x の二次式で表される関数。学習指導要領解説では、中学校は関数 y = ax²（a ≠ 0）を扱い、高等学校（数学I）の二次関数で y = ax² + bx + c の形に広げる。",
   "definition_en": "A function whose rule is a degree-2 polynomial, such as f(x) = ax² + bx + c with a ≠ 0. Its graph is a parabola.",
   "latex": "y = ax^2 + bx + c \\quad (a \\neq 0)",
   "spoken_en": "y equals a x squared plus b x plus c, where a is not equal to zero",
@@ -45,7 +46,7 @@
   "collocations": [],
   "pitfalls": [
     "中 3 の「y は x の 2 乗に比例する」関数 y = ax² も、英語では quadratic function に入る（y = ax² + bx + c で b = c = 0 の場合）。",
-    "quadratic は「2 次の」。quad- から「4」を連想しやすいが、4 次は quartic（エントリ quadratic-expression）。二次式は quadratic expression、二次方程式は quadratic equation（エントリ quadratic-equation）。",
+    "quadratic は「2 次の」。quad- から「4」を連想しやすいが、4 次は quartic（エントリ quartic-equation）。二次式は quadratic expression、二次方程式は quadratic equation（エントリ quadratic-equation）。",
     "y = ax² + bx + c の形と y = a(x − p)² + q の形の呼び名は、日本語と英語で対応がずれる（エントリ standard-form、vertex-form）。"
   ],
   "related": [
@@ -67,15 +68,27 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "中学校 第 3 学年 関数: 関数 y = ax²"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 二次関数（中学校では関数 y = ax² を取り扱い、と書く）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "quadratic function": 36
@@ -97,6 +110,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

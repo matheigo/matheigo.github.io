@@ -1,34 +1,34 @@
 {
   "id": "projectile-motion",
   "ja": {
-    "term": "投射運動",
-    "reading": "とうしゃうんどう",
+    "term": "放物運動",
+    "reading": "ほうぶつうんどう",
     "alt": [
-      "落下"
+      "投射運動"
     ]
   },
   "en": {
     "term": "projectile motion",
-    "alt": [
-      "free fall"
-    ],
+    "alt": [],
     "uk": null,
     "register": "written"
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本の中 3 の数学では、物を落としたときの落ちる距離 y m と時間 x 秒の関係 y = 4.9x² を、関数 y = ax² の例として扱う。米国の教科書 OpenStax Algebra and Trigonometry は、二次関数の応用として projectile motion の問題を扱い、高さを h(t) = −16t² + v₀t + h₀ のような式で表す（長さをフィートで書くことも多い）。",
+  "mapping_note": "見出しの「放物運動」は数学の学習指導要領解説には無い（高等学校学習指導要領解説の物理の項目「放物運動」と日本語版 Wikipedia「放物運動」にはある）。中学校学習指導要領解説（第 3 学年 関数 y = ax²）は、y = ax² で捉える事象の例に斜面をころがる物の運動・車の制動距離・噴水の水が作る形を挙げ、落下の式は挙げていない。本プロジェクトは落ちる距離 y m と時間 x 秒の関係 y = 4.9x² を例にする。米国の教科書 OpenStax Algebra and Trigonometry は、二次関数の応用として projectile motion の問題を扱い、高さを h(t) = −16t² + v₀t + h₀ のような式で表す（長さをフィートで書く）。",
   "domains": [
     "functions"
   ],
   "level": {
     "jp": [
-      "大学",
-      "中3"
+      "中3",
+      "大学"
     ],
     "us": [
       "Algebra 1",
-      "Integrated Math 2"
+      "Integrated Math 2",
+      "Precalculus",
+      "Calculus III"
     ]
   },
   "definition_ja": "投げ上げたり落としたりした物体の運動。空気の抵抗を考えなければ、物体の高さや落ちる距離は時間の二次関数で表される。",
@@ -37,8 +37,8 @@
   "spoken_en": "h of t equals negative sixteen t squared plus v naught t plus h naught",
   "examples": [
     {
-      "en": "In projectile motion, the ball goes up, slows down, and falls back, so the graph of its height is a parabola.",
-      "ja": "投射運動では、ボールは上がって、だんだん遅くなり、また落ちてくる。だから高さのグラフは放物線になる。",
+      "en": "In projectile motion, the height is a quadratic function of time, so its graph is a parabola: the ball goes up, slows down, and comes back down.",
+      "ja": "放物運動では高さが時間の二次関数なので、そのグラフは放物線になる。ボールは上がって、だんだん遅くなり、また落ちてくる。",
       "register": "spoken"
     },
     {
@@ -49,9 +49,10 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本の中 3 の y = 4.9x² は落ちた距離（下向きに測る）なので x² の係数が正。高さ（上向きに測る）を表す h(t) = −16t² + … は t² の係数が負になる。",
+    "落ちた距離を表す y = 4.9x²（下向きに測る）は x² の係数が正。高さ（上向きに測る）を表す h(t) = −16t² + … は t² の係数が負になる。",
     "係数の 4.9 はメートル（9.8 m/s² の半分）、16 はフィート（32 ft/s² の半分）で、長さの単位が違うと係数も変わる。",
-    "最高点の高さ（maximum height）を求める問題は、放物線の頂点を求める問題になる（エントリ vertex）。"
+    "最高点の高さ（maximum height）を求める問題は、放物線の頂点を求める問題になる（エントリ vertex）。",
+    "投げ上げずに落とすだけの運動は free fall（自由落下）と言う（OpenStax Calculus Volume 1）。projectile motion は投げ上げ・打ち上げも含む。"
   ],
   "related": [
     "quadratic-function",
@@ -64,21 +65,50 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "中学校 第 3 学年 関数: 関数 y = ax² を具体的な事象と関連付けて扱う（落下の式 y = 4.9x² は 0 件）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「放物運動」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%94%BE%E7%89%A9%E9%81%8B%E5%8B%95",
+      "note": "見出しの日本語の記事"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "物理: 放物運動（水平投射及び斜方投射された物体の運動）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3"
     }
   ],
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "projectile motion": 3
     },
     "written": {
-      "free fall": 7,
       "projectile motion": 18
     },
     "sources": [
@@ -89,6 +119,13 @@
       "openstax-intalg",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: 見出しの日本語を 投射運動 から 放物運動 に（投射運動は学習指導要領解説にも日本語版 Wikipedia にも無く、放物運動は高等学校学習指導要領解説（物理）と日本語版 Wikipedia「放物運動」にある）。見直す点: ja.term、mapping_note（解説が挙げる y = ax² の事象の例）、level。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
+    }
+  ]
 }

@@ -20,13 +20,14 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語では double root ／ repeated root と言い、日本語の「解」ではなく root（根）を使う。多項式の根が何回重なっているかは multiplicity（多重度）で言い、x = 3 is a root of multiplicity 2 のように数で表す。",
+  "mapping_note": "英語では「解」ではなく root（根）や solution・zero の語で言う。OpenStax Elementary Algebra は解が重なるときを double root と呼び、Algebra and Trigonometry は判別式の表で double solution、多項式の零点では double zero と書く。repeated root は Levin（漸化式の特性方程式）ほかにある。用例コーパスの話し言葉の double root・repeated root はほぼ MIT OCW。多項式の根が何回重なっているかは multiplicity（重複度、エントリ multiplicity）で言い、x = 3 is a root of multiplicity 2 のように数で表す。",
   "domains": [
     "algebra"
   ],
   "level": {
     "jp": [
-      "中3"
+      "中3",
+      "数II"
     ],
     "us": [
       "Algebra 1",
@@ -51,7 +52,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "解の個数の数え方に注意。重解は「解が 1 つ」とも言うが、重なりを込めて数えれば 2 つ。重なりも数えることを英語では counting multiplicity と言う（エントリ fundamental-theorem-of-algebra）。",
+    "解の個数の数え方に注意。日本語版 Wikipedia「判別式」は、判別式が 0 のとき重複する実数解を 1 個もつと書く。重なりを込めて 2 つと数えるときは、Nicholson のように counting multiplicities と断る（エントリ fundamental-theorem-of-algebra）。",
     "グラフでは、重解の x 座標のところで放物線が x 軸に接する（横切らない）。",
     "判別式 b² − 4ac が 0 なら重解、正なら異なる 2 つの実数解、負なら実数解はない（エントリ discriminant）。"
   ],
@@ -66,15 +67,37 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction (4th ed.)",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "漸化式の特性方程式の repeated root"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「判別式」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%88%A4%E5%88%A5%E5%BC%8F",
+      "note": "判別式が 0 のとき 1 個の重複する実数解をもつ"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "counting multiplicities（重複を込めて数える）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "double root": 29,
@@ -96,6 +119,6 @@
       "yt:3blue1brown",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

@@ -11,14 +11,15 @@
     "term": "radical sign",
     "alt": [
       "radical symbol",
-      "root sign"
+      "square root sign",
+      "square root symbol"
     ],
     "uk": null,
     "register": "both"
   },
   "pos": "noun",
-  "mapping": "near",
-  "mapping_note": "日本語では記号 √ を「ルート」と読むことが多いが、英語では記号そのものを radical sign（radical symbol）と呼び、√a は the square root of a と読む。英語で root と言うと、方程式の解（roots of an equation）の意味にもなる。",
+  "mapping": "exact",
+  "mapping_note": null,
   "domains": [
     "arithmetic"
   ],
@@ -49,6 +50,7 @@
   ],
   "collocations": [],
   "pitfalls": [
+    "日本語版 Wikipedia「根号」は √2 に「ルート 2」と読みを添える。英語では記号そのものを radical sign（radical symbol、IM は square root symbol）と呼び、√a は the square root of a と読む（IM Grade 8）。話し言葉では root two のように root だけでも読む（用例コーパス。エントリ square-root）。英語で root と言うと、方程式の解（roots of an equation）の意味にもなる。",
     "根号の中の数や式は radicand と呼ぶ。根号を含む式は radical expression（エントリ radical-expression）。",
     "根号は横線の下にある部分全体にかかる。√(16 + 9) = √25 = 5 で、√16 + √9 = 4 + 3 = 7 とは違う。",
     "3 乗根は √ の左上に小さく 3 を書いて、∛8 = 2 のように表す（エントリ nth-root）。"
@@ -72,20 +74,39 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「根号」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%A0%B9%E5%8F%B7",
+      "note": "√2（ルート 2）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 8)",
+      "url": "https://im.kendallhunt.com/MS/students/3/index.html",
+      "note": "the square root of 73 の読み、square root symbol"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Algebra 1 7.15・Algebra 2 3.18: square root symbol"
     }
   ],
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
-      "root sign": 4,
+      "square root sign": 3,
       "radical sign": 16,
-      "radical symbol": 5
+      "radical symbol": 5,
+      "square root symbol": 12
     },
     "written": {
       "radical sign": 36,
@@ -102,8 +123,16 @@
       "openstax-elemalg",
       "openstax-intalg",
       "openstax-prealgebra",
-      "yt:nancypi"
+      "yt:nancypi",
+      "yt:organicchem"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: mapping を near から exact に（記号 √ と根号の対応は 1 対 1。mapping_note が書いていたのは読み方の違い）、候補 square root symbol（IM）を足して数え直し。見直す点: exact でよいか、en.alt（square root sign・square root symbol）。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
+    }
+  ]
 }

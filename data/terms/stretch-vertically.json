@@ -10,14 +10,15 @@
   "en": {
     "term": "stretch … vertically",
     "alt": [
-      "stretch vertically"
+      "stretch vertically",
+      "vertically stretch"
     ],
     "uk": null,
     "register": "written"
   },
   "pos": "phrase",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "英語の stretch は a > 1 の拡大だけを指し、0 < a < 1 の縮小は compress（vertical compression）と言う。OpenStax Algebra and Trigonometry・Precalculus・Calculus Volume 1 と IM Algebra 2（5.8 Scaling the Outputs）は vertical stretch と vertical compression を分ける。日本語の「縦に伸縮する」「y 軸方向に拡大・縮小する」は両方を指す。",
   "domains": [
     "trigonometry"
   ],
@@ -33,7 +34,7 @@
     ]
   },
   "definition_ja": "グラフの各点の y 座標を a 倍して、y 軸方向に拡大（a > 1）または縮小（0 < a < 1）する。y = f(x) は y = af(x) になる。",
-  "definition_en": "To multiply every y-coordinate of a graph by a, stretching it vertically (a > 1) or compressing it (0 < a < 1); y = f(x) becomes y = af(x).",
+  "definition_en": "To multiply every y-coordinate of a graph by a number a > 1, so that the graph is stretched vertically; y = f(x) becomes y = af(x). For 0 < a < 1 the graph is compressed vertically instead.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -51,7 +52,7 @@
   "collocations": [],
   "pitfalls": [
     "日本語の「y 軸方向に 3 倍に拡大」は vertically stretched by a factor of 3。縮小は compress（vertical compression）。",
-    "名詞の言い方 vertical stretch もよく使う（用例コーパスでは話し言葉にも出てくるが、書き言葉に多い）。"
+    "OpenStax Algebra and Trigonometry は変換の名前として vertical stretch（40 件）・vertical compression（11 件）と書く。用例コーパスでは名詞の形のほうが stretch … vertically より多い。"
   ],
   "related": [
     "compress-horizontally",
@@ -65,21 +66,33 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Algebra 2 5.8 Scaling the Outputs: stretch と compress を分ける"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
     }
   ],
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-24",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
+      "vertically stretch": 1,
       "stretch … vertically": 4
     },
     "written": {
-      "stretch … vertically": 19
+      "stretch … vertically": 19,
+      "vertically stretch": 10
     },
     "sources": [
       "openstax-algtrig",
@@ -88,6 +101,13 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: mapping を exact から near に（英語の stretch は a > 1 だけ、0 < a < 1 は compress。日本語の伸縮は両方）、定義の英語を a > 1 に限った。見直す点: near でよいか、ja.term を「縦に伸ばす」にする案。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
+    }
+  ]
 }

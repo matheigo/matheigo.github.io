@@ -8,8 +8,7 @@
   "en": {
     "term": "non-terminating decimal",
     "alt": [
-      "nonterminating decimal",
-      "infinite decimal"
+      "infinite decimal expansion"
     ],
     "uk": null
   },
@@ -47,7 +46,7 @@
   "collocations": [],
   "pitfalls": [
     "無限小数には、循環する小数（repeating decimal、エントリ repeating-decimal）と循環しない小数がある。循環する無限小数は有理数（エントリ rational-number）、循環しない無限小数は無理数（エントリ irrational-number）。",
-    "つづりは non-terminating（ハイフンあり）と nonterminating（ハイフンなし）の両方があり、infinite decimal とも言う。",
+    "CK-12 Algebra は non-terminating decimal（ハイフンあり）と書き、OpenStax Algebra and Trigonometry（1.1）は無理数の説明で nonterminating（ハイフンなし）と書く。IM Grade 8 は infinite decimal expansion（無限小数展開）と言う（8.15 Infinite Decimal Expansions）。",
     "3.14 や 1.414 は無限小数を途中で切った近似値（エントリ approximate-value）で、π や √2 そのものではない。"
   ],
   "related": [
@@ -69,24 +68,34 @@
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
       "note": "6.3 Use Diameter Radius and Pi"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 8)",
+      "url": "https://im.kendallhunt.com/MS/students/3/index.html",
+      "note": "Grade 8 8.15 Infinite Decimal Expansions（infinite decimal expansion）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 non-terminating decimal（CK-12 Algebra 1.1 Real Numbers・CK-12 Geometry 6.3 Use Diameter Radius and Pi・計 6 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-09-26"
     }
   ]
 }

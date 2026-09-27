@@ -13,17 +13,17 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "見出しの「根号式」は学習指導要領解説に無い、本プロジェクトの訳語。日本では「根号を含む式」と言う。米国の教科書（OpenStax Elementary Algebra）は radical expression と呼び、簡単にすることを simplify radical expressions と言う（エントリ simplify-radicals）。",
+  "mapping_note": "見出しの「根号式」は学習指導要領解説に無い、本プロジェクトの訳語。日本語版 Wikipedia「有理化」は「根号を含む式」と書く。OpenStax Intermediate Algebra は radical expression と呼び（8.2 Simplify Radical Expressions、75 件）、簡単にすることを simplify radical expressions と言う（エントリ simplify-radicals）。",
   "domains": [
     "arithmetic"
   ],
   "level": {
     "jp": [
-      "大学",
       "中3"
     ],
     "us": [
       "Algebra 1",
+      "Algebra 2",
       "Integrated Math 2"
     ]
   },
@@ -47,7 +47,7 @@
   "pitfalls": [
     "radical は根号（√、radical sign、エントリ radical-sign）や、根号のついた数・式のこと。radical expression は根号をふくむ式全体を指す。",
     "英語の radical は日常語では「過激な」「根本的な」の意味で使う単語。",
-    "根号をふくむ式を簡単にすることは simplify radical expressions と言う（エントリ simplify-radicals）。分母の根号をなくすのは rationalize the denominator（エントリ rationalizing-the-denominator）。"
+    "根号をふくむ式を簡単にすることは simplify radical expressions と言う（OpenStax Intermediate Algebra 8.2。エントリ simplify-radicals）。分母の根号をなくすのは rationalize the denominator（エントリ rationalizing-the-denominator）。"
   ],
   "related": [
     "radical-sign",
@@ -60,12 +60,28 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "中学校 第 3 学年 数と式: 「根号式」「根号を含む式」は 0 件（見出しは本プロジェクトの訳語）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「有理化」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9C%89%E7%90%86%E5%8C%96",
+      "note": "冒頭の定義に「根号を含む式」"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -85,6 +101,6 @@
       "openstax-intalg",
       "yt:nancypi"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

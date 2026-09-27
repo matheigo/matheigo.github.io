@@ -9,14 +9,17 @@
   },
   "en": {
     "term": "square root property",
-    "alt": [
-      "taking square roots"
-    ],
+    "alt": [],
     "variants": [
       {
         "term": "take the square root of both sides",
         "register": "spoken",
-        "note": "授業では方法の名前より、手順をこの形で言うことが多い。"
+        "note": "用例コーパスの話し言葉では、方法の名前より手順をこの形で言うほうが多い（The Organic Chemistry Tutor・Khan Academy が中心）。"
+      },
+      {
+        "term": "taking square roots",
+        "register": "spoken",
+        "note": "話し言葉の言い方（用例コーパスでは話し言葉が中心）。"
       }
     ],
     "uk": null,
@@ -24,7 +27,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "米国の教科書 OpenStax Elementary Algebra は、この解き方を square root property（x² = k ならば x = ±√k）という性質の名前で呼び、節の名前も Solve Quadratic Equations Using the Square Root Property とする。授業では方法の名前より、take the square root of both sides（両辺の平方根をとる）と手順で言うことが多い。",
+  "mapping_note": "米国の教科書 OpenStax Elementary Algebra は、この解き方を square root property（k ≥ 0 のとき、x² = k ならば x = ±√k）という性質の名前で呼び、節の名前も Solve Quadratic Equations Using the Square Root Property とする。用例コーパスの話し言葉では、方法の名前 square root property より、take the square root of both sides（両辺の平方根をとる）と手順で言う形のほうが多い（書き言葉は逆で、square root property は OpenStax に多い）。",
   "domains": [
     "algebra",
     "functions"
@@ -39,7 +42,7 @@
     ]
   },
   "definition_ja": "x² = k や (x + a)² = k の形の二次方程式を、両辺の平方根をとって解く方法。k > 0 なら、x² = k の解は x = √k と x = −√k の 2 つ。",
-  "definition_en": "A way to solve a quadratic equation of the form x² = k or (x + a)² = k by taking square roots of both sides. It uses the square root property: if x² = k, then x = √k or x = −√k.",
+  "definition_en": "Solving an equation of the form x² = k or (x + a)² = k by taking the square root of each side, which rests on the square root property: for k ≥ 0, x² = k gives x = √k or x = −√k.",
   "latex": "x^2 = k \\Rightarrow x = \\pm\\sqrt{k}",
   "spoken_en": "x squared equals k, so x equals plus or minus the square root of k",
   "examples": [
@@ -49,8 +52,8 @@
       "register": "spoken"
     },
     {
-      "en": "Use the square root property to solve (x − 3)² = 25.",
-      "ja": "平方根の考えを使って、方程式 (x − 3)² = 25 を解け。",
+      "en": "Solve (x − 3)² = 25 with the square root property, and check both solutions.",
+      "ja": "平方根の考えを使って方程式 (x − 3)² = 25 を解き、2 つの解を確かめよ。",
       "register": "written"
     }
   ],
@@ -73,13 +76,13 @@
       "title": "OpenStax Elementary Algebra 2e"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "take the square root of both sides": 73,
@@ -109,6 +112,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

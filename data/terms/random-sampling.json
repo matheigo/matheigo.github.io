@@ -9,9 +9,7 @@
   },
   "en": {
     "term": "random sampling",
-    "alt": [
-      "SRS"
-    ],
+    "alt": [],
     "uk": null,
     "register": "both"
   },
@@ -27,7 +25,8 @@
     ],
     "us": [
       "Algebra 1",
-      "AP Statistics"
+      "AP Statistics",
+      "Intro Statistics"
     ]
   },
   "definition_ja": "母集団のどの個体も同じ確率で選ばれるように標本を取り出すこと。",
@@ -48,7 +47,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "OpenStax Introductory Statistics は simple random sample（SRS、単純無作為標本）と書く（48 件）。用例コーパスでは random sampling の語形変化 random sample(s) の中に入るので、別の候補にしていない。"
+    "OpenStax Introductory Statistics は simple random sample（31 件）・simple random sampling（18 件）と書く。略語 SRS は AP Statistics の CED（topic 1.11）にある（CED は答案で SRS とだけ書かず、単純無作為標本をとったことを説明するよう求める）。用例コーパスでは random sampling の語形変化 random sample(s) の中に入るので、別の候補にしていない。"
   ],
   "related": [
     "sampling",
@@ -65,19 +64,24 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 1.11（SRS）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
-      "random sampling": 87,
-      "SRS": 2
+      "random sampling": 87
     },
     "written": {
       "random sampling": 171
@@ -90,6 +94,6 @@
       "openstax-introstats",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

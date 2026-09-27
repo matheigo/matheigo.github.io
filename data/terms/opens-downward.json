@@ -17,7 +17,8 @@
         "register": "both",
         "note": "微積分での言い方（凹凸）で、書き言葉では最も多い（ほとんど OpenStax Calculus）。話し言葉でも最も多く、MIT OCW・Professor Leonard・Khan Academy が中心。"
       }
-    ]
+    ],
+    "register": "both"
   },
   "pos": "phrase",
   "mapping": "near",
@@ -32,7 +33,8 @@
     "us": [
       "Algebra 1",
       "Algebra 2",
-      "Integrated Math 2"
+      "Integrated Math 2",
+      "AP Calculus AB"
     ]
   },
   "definition_ja": "グラフが上にふくらんだ形であること。二次関数 y = ax² + bx + c では a < 0 のとき放物線が上に凸で、頂点が最も高い点になる。",
@@ -78,13 +80,13 @@
       "title": "OpenStax Calculus Volume 1"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "concave down": 37,
@@ -110,6 +112,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

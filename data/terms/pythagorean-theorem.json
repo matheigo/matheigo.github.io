@@ -9,7 +9,9 @@
   },
   "en": {
     "term": "Pythagorean theorem",
-    "alt": [],
+    "alt": [
+      "Pythagoras' theorem"
+    ],
     "register": "both"
   },
   "pos": "noun",
@@ -23,12 +25,13 @@
       "中3"
     ],
     "us": [
+      "Pre-Algebra",
       "Geometry",
       "Integrated Math 2"
     ]
   },
   "definition_ja": "直角三角形で、直角をはさむ 2 辺の長さを a、b、斜辺の長さを c とすると、a² + b² = c² が成り立つという定理。",
-  "definition_en": "In a right triangle with legs a and b and hypotenuse c, the sum of the squares of the legs equals the square of the hypotenuse: a² + b² = c².",
+  "definition_en": "For a right triangle, squaring the two shorter sides (the legs) and adding gives the square of the longest side (the hypotenuse): a² + b² = c².",
   "latex": "a^2 + b^2 = c^2",
   "spoken_en": "a squared plus b squared equals c squared",
   "examples": [
@@ -45,9 +48,9 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "OpenStax は a と b を legs、c を hypotenuse と呼んで説明する。日本語の「直角をはさむ辺」には leg という名前がある（エントリ legs、hypotenuse）。",
+    "OpenStax Elementary Algebra・Intermediate Algebra は a と b を legs、c を hypotenuse と呼んで公式を書く。「直角をはさむ辺」には、英語では leg という 1 語の名前がある（エントリ legs、hypotenuse）。",
     "c は必ず斜辺（直角の向かいの辺）。直角をはさむ辺を c に入れると式が成り立たない。",
-    "英語版 Wikipedia「Pythagorean theorem」は Pythagoras's theorem という別名も挙げる。Pythagorean は人名 Pythagoras から来た語なので大文字で始める。"
+    "英語版 Wikipedia「Pythagorean theorem」は Pythagoras's theorem という別名も挙げ、Nicholson は Pythagoras' theorem と書く（19 件）。Pythagorean は人名 Pythagoras から来た語なので大文字で始める。"
   ],
   "related": [
     "legs",
@@ -82,12 +85,22 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Pythagorean_theorem",
       "note": "記事「Pythagorean theorem」の冒頭: Pythagoras's theorem とも呼ぶ（地域は書いていない）"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "4.1 Vectors and Lines ほか: Pythagoras' theorem（19 件）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
   "updated": "2026-09-26",
@@ -120,6 +133,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

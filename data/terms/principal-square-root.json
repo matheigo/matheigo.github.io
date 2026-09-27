@@ -4,7 +4,7 @@
     "term": "正の平方根",
     "reading": "せいのへいほうこん",
     "alt": [
-      "主根"
+      "主平方根"
     ]
   },
   "en": {
@@ -14,7 +14,7 @@
       {
         "term": "principal root",
         "register": "spoken",
-        "note": "話し言葉で最も多い言い方（n 乗根にも使う）。書き言葉では少ない。"
+        "note": "話し言葉で最も多い言い方（すべて Khan Academy。n 乗根にも使う）。書き言葉では少ない。"
       },
       {
         "term": "positive square root",
@@ -27,7 +27,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語の principal square root は、0 の平方根 0 も含めて「負でない平方根」の意味で使い、記号 √a はこれを表す。日本語の「正の平方根」は正の数 a の 2 つの平方根のうち正のほうを言い、0 を含まない点が違う。英語では positive square root とも言い、話し言葉では principal root とも言う。",
+  "mapping_note": "英語の principal square root は、OpenStax Algebra and Trigonometry では負でない平方根（0 の平方根 0 も含む）、OpenStax Prealgebra・Elementary Algebra では正の平方根と定義され、記号 √a はこれを表す。日本語版 Wikipedia「平方根」は √a を正の（あるいは非負の）平方根、主平方根と書く。0 を含めるかどうかは日米どちらの資料でも割れる。英語では positive square root とも言い、話し言葉では principal root とも言う。",
   "domains": [
     "arithmetic",
     "functions"
@@ -60,7 +60,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語の principal square root は、0 の平方根 0 も含めて「負でない平方根」の意味で使う。日本語の「正の平方根」は 0 を含まない。",
+    "OpenStax Algebra and Trigonometry の principal square root は 0 の平方根 0 も含む「負でない平方根」。日本語の「正の平方根」は字のとおりなら 0 を含まない（日本語版 Wikipedia「平方根」は「正の（あるいは非負の）平方根」と書く）。",
     "負のほうの平方根は −√a で、the negative square root と言う（エントリ square-root-of-a-number）。",
     "「25 の平方根」は ±5 の 2 つだが、√25 は 5 だけを表す。√25 = ±5 とは書かない。"
   ],
@@ -75,15 +75,25 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「平方根」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%96%B9%E6%A0%B9",
+      "note": "√a は正の（あるいは非負の）平方根、主平方根"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "positive square root": 57,
@@ -114,6 +124,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

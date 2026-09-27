@@ -27,7 +27,7 @@
     ]
   },
   "definition_ja": "2 乗すると a になる数を、a の平方根という。正の数 a の平方根は正と負の 2 つあり、まとめて ±√a と表す。",
-  "definition_en": "A square root of a is a number that gives a when you square it. Every positive number a has two square roots, √a and −√a.",
+  "definition_en": "Either of the numbers that give a when squared. For a > 0 there are exactly two of them, √a and −√a.",
   "latex": "x^2 = a \\Rightarrow x = \\pm\\sqrt{a} \\quad (a > 0)",
   "spoken_en": "if x squared equals a, then x equals plus or minus the square root of a, where a is greater than zero",
   "examples": [
@@ -46,7 +46,8 @@
   "pitfalls": [
     "日本語の「9 の平方根」は 3 と −3 の 2 つ。記号 √9 は正のほう（principal square root、エントリ principal-square-root）だけを表すので √9 = 3 で、√9 = ±3 ではない。",
     "√a は the square root of a と読む。記号 √ の名前は radical sign（エントリ radical-sign）。",
-    "2 乗して負になる実数はないので、負の数の平方根は実数の範囲にはない（エントリ square-root-of-a-negative-number）。"
+    "2 乗して負になる実数はないので、負の数の平方根は実数の範囲にはない（エントリ square-root-of-a-negative-number）。",
+    "英語の the square root of 49 は √49 = 7 だけを指す。±7 の両方は both square roots of 49 と言う（OpenStax Elementary Algebra は根号が正の平方根を表すと書く）。"
   ],
   "related": [
     "principal-square-root",
@@ -67,15 +68,19 @@
     {
       "type": "textbook",
       "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "square root": 3472
@@ -108,6 +113,6 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

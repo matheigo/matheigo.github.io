@@ -3,17 +3,20 @@
   "ja": {
     "term": "かたよりのない",
     "reading": "かたよりのない",
-    "alt": []
+    "alt": [
+      "偏りのない",
+      "不偏"
+    ]
   },
   "en": {
     "term": "unbiased",
     "alt": [],
     "uk": null,
-    "register": "both"
+    "register": "spoken"
   },
   "pos": "adjective",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "英語の unbiased は 3 つの意味にまたがる: 標本の選び方（中学校学習指導要領解説は「偏りなく抽出する」と書く）、推定量（日本語は「不偏」。エントリ unbiased-estimator。AP Statistics の CED topic 3.1）、硬貨などの公平さ（MIT OCW の講義ノート）。日本語の「かたよりのない」は 1 つ目に当たる。",
   "domains": [
     "statistics"
   ],
@@ -22,7 +25,8 @@
       "中3"
     ],
     "us": [
-      "Algebra 1"
+      "AP Statistics",
+      "Intro Statistics"
     ]
   },
   "definition_ja": "標本の選び方や推定の方法が、特定の結果に系統的に寄っていないこと。",
@@ -31,8 +35,8 @@
   "spoken_en": null,
   "examples": [
     {
-      "en": "Dividing by n minus 1 gives an unbiased estimate of the population variance.",
-      "ja": "n − 1 で割ると、母分散のかたよりのない推定になる。",
+      "en": "If you only count the people who volunteer to answer, the sample isn't unbiased, because the people who care most are overrepresented.",
+      "ja": "自分から答えてくれた人だけを数えると、関心の強い人が多く入るので、かたよりのない標本にはならない。",
       "register": "spoken"
     },
     {
@@ -43,38 +47,56 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "unbiased coin（表と裏が同じ確率で出る硬貨）のように「公平な」の意味でも使う。",
+    "表と裏が同じ確率で出る硬貨は、OpenStax Introductory Statistics では fair coin と書く（unbiased coin は用例コーパスでは MIT OCW の講義ノートだけ）。",
     "反対は biased（偏った）。"
   ],
   "related": [
-    "random-sampling",
-    "sample"
+    "is-biased",
+    "unbiased-estimator",
+    "random-sampling"
   ],
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 3.1（unbiased）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 3 学年 標本調査: 偏りなく抽出するための代表的な方法として無作為抽出"
     }
   ],
   "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
-      "unbiased": 44
-    },
-    "written": {
-      "unbiased": 16
+      "unbiased sample | unbiased estimate | unbiased estimator | unbiased statistic": 33
     },
     "sources": [
-      "khan-ap-stats",
-      "mit-6.042",
-      "mit-notes",
-      "openstax-introstats"
+      "khan-ap-stats"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-09-26"
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-09-26）で大きな直し: mapping を exact から near に（英語の unbiased は標本の選び方・推定量（不偏）・硬貨の公平さにまたがる）、例文 [0] を標本の選び方の文に差し替え、TERM_FORMS で公平の意味を除いて数え直し（register spoken）。見直す点: near でよいか、ja.alt（偏りのない・不偏）、例文。次の監査のセッションが見直す。",
+      "raised": "2026-09-26"
+    }
+  ]
 }

@@ -26,7 +26,9 @@
     "us": [
       "Algebra 1",
       "Algebra 2",
-      "Integrated Math 3"
+      "Integrated Math 3",
+      "AP Statistics",
+      "Intro Statistics"
     ]
   },
   "definition_ja": "母集団から標本を取り出すこと。また、その方法。",
@@ -58,15 +60,21 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 1.11（sampling method）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "written": {
       "sampling method | sampling technique": 26
@@ -74,6 +82,6 @@
     "sources": [
       "openstax-introstats"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

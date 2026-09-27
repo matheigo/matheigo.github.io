@@ -15,7 +15,7 @@
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "日本語の「弧 AB に対する円周角」の「に対する」はふつうの助詞だが、英語では subtend という決まった動詞を使い、the inscribed angle subtended by arc AB と言う。動詞 subtend は「（弧や辺が、ある角を）張る・対する」の意味。",
+  "mapping_note": "日本語の「弧 AB に対する円周角」の「に対する」はふつうの助詞。CK-12 Geometry 6.14 Inscribed Angles in Circles は角の側から intercepted arc（角の内部にある弧）・the angle that intercepts arc AB と言い、subtend は使わない（IM も 0 件）。subtend は OpenStax Algebra and Trigonometry・Precalculus の Angles の節（弧度法）と Calculus、Khan Academy の弧度法の講義に出てくる動詞で、「（弧や辺が、ある角を）張る・対する」の意味。the inscribed angle subtended by arc AB は本プロジェクトの書き方の例。",
   "domains": [
     "geometry"
   ],
@@ -25,7 +25,9 @@
     ],
     "us": [
       "Geometry",
-      "Integrated Math 2"
+      "Integrated Math 2",
+      "Algebra 2",
+      "Precalculus"
     ]
   },
   "definition_ja": "円周角や中心角が、ある弧（または線分）の両端を通る 2 辺でできていることを表す言い方。「弧 AB に対する円周角」の「に対する」に当たる。",
@@ -46,7 +48,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "主語の向きに注意。弧を主語にすると能動で arc AB subtends ∠APB（弧 AB が ∠APB を張る）、角を主語にすると受け身で ∠APB is subtended by arc AB（∠APB は弧 AB に対する角）。",
+    "主語の向きに注意。弧を主語にすると能動で arc AB subtends ∠APB（弧 AB が ∠APB を張る）、角を主語にすると受け身で ∠APB is subtended by arc AB（∠APB は弧 AB に対する角）。OpenStax（Angles の節）は the arc subtended by the angle と逆の向きにも書くので、主語がどちらかは文ごとに確かめる。",
     "subtend は弧だけでなく、辺（線分）がある点に対して角を張るときにも使う（∠APB is subtended by segment AB）。",
     "角の側から弧を言う言い方はエントリ intercepted-arc。subtend とは主語と目的語が入れかわる。"
   ],
@@ -60,15 +62,35 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "6.14 Inscribed Angles in Circles: intercepted arc（角の内部の弧）。subtend は 0 件"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "subtend は 0 件（intercepted arc を使う）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
-    "audit": null,
+    "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "evidence": {
     "spoken": {
       "subtended by": 14
@@ -81,6 +103,6 @@
       "openstax-algtrig",
       "openstax-calculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }
