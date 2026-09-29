@@ -1,6 +1,6 @@
 {
   "id": "parallelogram-abcd",
-  "latex": "\\square ABCD",
+  "latex": "\\text{▱}ABCD",
   "spoken_en": [
     {
       "text": "parallelogram ABCD",
@@ -31,25 +31,26 @@
       "type": "reference",
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
-      "note": "Geometry 2.13 Proofs about Parallelograms ほか。parallelogram ABCD の形（15 件。読みを決めた参照）"
+      "note": "Geometry 2.13 Proofs about Parallelograms ほか。parallelogram ABCD の形（15 件。決めた読みの言い方）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第2学年 B 図形 (2) イ(ア)（三角形の合同条件などを基にして三角形や平行四辺形の基本的な性質を論理的に確かめる。level.jp の中2: 平行四辺形を扱う学年）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-27"
+    "counted": "2026-09-28"
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 対象外）。読みは IM の呼び方 parallelogram a b c d | parallelogram abcd | parallelogram p q r s | parallelogram pqrs | parallelogram e f g h | parallelogram efgh | parallelogram w x y z | parallelogram wxyz（Geometry 2.13 Proofs about Parallelograms・Geometry 5.5 Scaling and Unscaling・Geometry 2.12 Proofs about Quadrilaterals・計 15 件）。register は主張しない。",
-      "raised": "2026-09-27"
-    },
-    {
-      "code": "audit-human",
-      "note": "Phase 5 監査（2026-09-27）で判断がつかない: 記号 ▱（□ABCD とも）そのものが日本側の資料（〔用語・記号〕・解説・共通テスト／センター試験・日本語版 Wikipedia）にも米国の参照（CK-12・IM・OpenStax・CED）にも 0 件で、latex \\square は ▱ でなく □ を出す。読み parallelogram ABCD は IM が平行四辺形を頂点で名付ける言い方で正しい。人間に決めてほしいこと: 記号の字形（▱ ／ □ ／ 言葉だけ）と、この項目を記号として残すか（残すなら level.jp の中2 の根拠）。人間レビューへ。",
-      "raised": "2026-09-27"
+      "code": "corpus-human-settled",
+      "note": "字形と読みは人間が決めた。▱ABCD、parallelogram ABCD（IM）（2026-09-28。docs/DECISIONS.md「Phase 5 監査（セッション 11）の前の決定」の 2）。register は主張しない。",
+      "raised": "2026-09-28"
     }
   ],
   "reviewed": {

@@ -3,16 +3,12 @@
   "latex": "\\blacksquare,\\ \\square,\\ \\text{Q.E.D.}",
   "spoken_en": [
     {
-      "text": "which completes the proof",
+      "text": "end of proof",
       "register": "standard"
     },
     {
-      "text": "end of proof",
-      "register": "spoken"
-    },
-    {
-      "text": "Q E D",
-      "register": "spoken"
+      "text": "Q.E.D.",
+      "register": "standard"
     }
   ],
   "spoken_ja": "証明終わり",
@@ -29,13 +25,15 @@
       "数I"
     ],
     "us": [
+      "Calculus I",
       "Linear Algebra",
       "Discrete Math"
     ]
   },
   "notes": [
-    "∎ や □ は記号の名前を読まない。書くときは This completes the proof. で締める（Nicholson、Levin 1.4）。Q.E.D. は文字どおり Q E D と読む（Merriam-Webster: ˌkyü-ˌē-ˈdē）。",
-    "言葉の締めは米国の高校課程（CED・OpenStax・IM・CK-12）では扱わない。OpenStax Calculus は証明の終わりに □ だけを置く。Nicholson は this completes the proof と書く（5 件）。"
+    "記号そのものは読まないことが多い。書き言葉では which completes the proof のような文で締める（Nicholson・Levin）。",
+    "Q.E.D. は文字どおり Q E D と読む（Merriam-Webster: ˌkyü-ˌē-ˈdē）。",
+    "OpenStax Calculus は証明の終わりに □ を置く。"
   ],
   "sources": [
     {
@@ -45,7 +43,7 @@
       "type": "reference",
       "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
       "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
-      "note": "2.5・2.7・3.2・5.7・11.2（this completes the proof、5 件。証明を閉じる文で ∎ を読む文ではない）"
+      "note": "2.5・2.7・3.2・5.7 と巻末の Selected Exercise Answers（2.7 の練習問題の解答）（this completes the proof、5 件。notes[0] の書き言葉の締め）"
     },
     {
       "type": "reference",
@@ -56,17 +54,17 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1",
-      "note": "1.5 Exponential and Logarithmic Functions ほか（証明の終わりに □）"
+      "note": "1.5 Exponential and Logarithmic Functions・2.4 Continuity・2.5 The Precise Definition of a Limit ほか（証明の終わりに □。notes[2] と level.us の Calculus I）"
     },
     {
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "1.4 Proofs（This completes the proof. ■）"
+      "note": "1.4 Proofs（This completes the proof. ■。notes[0] の書き言葉の締め）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
       "end of proof | end of the proof": 5,
@@ -77,18 +75,13 @@
       "mit-18.06",
       "mit-6.042"
     ],
-    "counted": "2026-09-27"
+    "counted": "2026-09-28"
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 7 件（10 未満） ／ 書: 対象外）。読みは Nicholson の呼び方 completes the proof（2.5 Elementary Matrices・2.7 LU-Factorization・3.2 Determinants and Matrix Inverses）。register は主張しない。",
-      "raised": "2026-09-27"
-    },
-    {
-      "code": "audit-human",
-      "note": "Phase 5 監査（2026-09-27）で判断がつかない: ∎・□ の読みを決める参照が無い。③ で読みを決めた Nicholson の this completes the proof（5 件）は証明を閉じる文で ∎ を定義・説明する文ではなく、CED・OpenStax・IM・CK-12・Levin にも ∎・□ を読む文は無い（Levin の QED 2 件は文末の印）。話し言葉は end of the proof 5・Q.E.D. 2 で ③。人間に決めてほしいこと: 1 つ目の読み（end of proof ／ Q.E.D. ／ which completes the proof）。notes・level・出典の小さな直しは済み。人間レビューへ。",
-      "raised": "2026-09-27"
+      "code": "corpus-human-settled",
+      "note": "読みは人間が決めた。end of proof ／ Q.E.D.（2026-09-28。docs/DECISIONS.md「Phase 5 監査（セッション 11）の前の決定」の 2）。register は主張しない。",
+      "raised": "2026-09-28"
     }
   ],
   "reviewed": {

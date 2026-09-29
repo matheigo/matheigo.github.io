@@ -791,10 +791,11 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "the sequence a sub n": "the sequence a sub * | the sequence of a sub *",
     "the sequence a n": "the sequence a n | the sequence of a n",
   },
+  // the digit string read out before the base; "base two" and "in binary" alone were mostly log and triangle
+  // bases and names of the system (Phase 5 監査 10, batch 35). Readings settled by the human (監査 11 の前の決定 2)
   "base-n-subscript": {
-    "one zero one one base two": "!in !log !logarithm base two | !in !log !logarithm base five | !in !log !logarithm base eight | !in !log !logarithm base sixteen",
-    "binary one zero one one": "in binary",
-    "one zero one one in base two": "in base two | in base five | in base eight | in base sixteen",
+    "one zero one one in binary": "one in binary | zero in binary",
+    "one zero one one base two": "one base two | zero base two",
   },
   // Phase 3 記号 バッチ 2 (ledger rows 51-100).
   "inverse-function-notation": {
@@ -1128,10 +1129,10 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "there exists an x": "there exists *",
     "there is an x such that": "there is * such that",
   },
+  // readings settled by the human (監査 11 の前の決定 2); "which completes the proof" closes a written proof, not a reading
   "qed-end-of-proof": {
-    "which completes the proof": "completes the proof",
-    "Q E D": "q e d | qed | q.e.d",
     "end of proof": "end of proof | end of the proof",
+    "Q.E.D.": "q e d | qed | q.e.d",
   },
   "congruence-mod": {
     "a is congruent to b modulo n": "congruent to * modulo *",
@@ -1344,6 +1345,11 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   // Δx (change in x) is also "delta": the lowercase δ is counted where epsilon-delta talk has it
   "delta-lowercase": {
     delta: "there exists a delta | find a delta | find you a delta | come up with a delta | epsilon delta | delta greater than zero | delta is greater than zero | delta neighborhood | within delta | pick a delta | choose a delta",
+  },
+  // gamma rays, the gamma function (Γ), an alloy's and a strain's name are not the letter γ (Phase 5 監査 10,
+  // batch 36). The reading is settled by the human (監査 11 の前の決定 2)
+  gamma: {
+    gamma: "!alloy gamma !ray !rays !function !functions !strain",
   },
   // A letter alone cannot be counted: i as said in i squared equals negative one
   "imaginary-unit-i": {
