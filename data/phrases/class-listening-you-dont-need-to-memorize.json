@@ -21,17 +21,23 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
-      "formula sheet": 13,
-      "don't need to memorize | don't have to memorize | don't memorize | do not need to memorize": 2
+      "don't need to memorize | don't have to memorize | don't memorize | do not need to memorize": 2,
+      "your formula sheet | a formula sheet": 5
     },
     "sources": [
       "micase",
-      "yt:blackpenredpen",
-      "yt:organicchem"
+      "yt:blackpenredpen"
     ],
-    "counted": "2026-09-26"
-  }
+    "counted": "2026-09-28"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE の教員の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 your formula sheet | a formula sheet（5 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-28"
+    }
+  ]
 }

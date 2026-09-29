@@ -22,10 +22,26 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 3.10（glossary: imaginary number）・3.17・3.19（non-real solutions）。notes"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "3.1 Complex Numbers（imaginary number: bi。notes）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "8.8 Use the Complex Number System（imaginary number: a + bi, b ≠ 0。notes）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
       "complex roots | complex solutions": 53,
@@ -41,6 +57,9 @@
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
-  }
+    "counted": "2026-09-28"
+  },
+  "notes": [
+    "IM Algebra 2 と OpenStax Precalculus は imaginary number を bi の形の数とし（OpenStax Intermediate Algebra は b ≠ 0 の a + bi）、実数でない解をはっきり言うとき IM Algebra 2（3.17・3.19）は non-real solutions と書く（エントリ imaginary-number）。"
+  ]
 }

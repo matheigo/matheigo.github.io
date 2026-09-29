@@ -2,12 +2,12 @@
   "id": "class-listening-work-with-a-partner",
   "situation": "class-listening",
   "intent": "隣の人と答えを比べさせる・ペアで取り組ませる",
-  "en": "Turn to your neighbor and compare.",
-  "ja": "隣の人と比べてください。",
+  "en": "Work with a partner.",
+  "ja": "ペアで取り組んでください。",
   "register": "neutral",
   "variants": [
     {
-      "en": "Work with a partner.",
+      "en": "Turn to your neighbor and compare.",
       "register": "neutral"
     }
   ],
@@ -21,23 +21,21 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
-      "turn to your neighbor | talk to your neighbor | with your neighbor | turn to the person next to you": 5,
       "with a partner": 3
     },
     "sources": [
-      "micase",
-      "mit-6.042"
+      "micase"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-28"
   },
   "flags": [
     {
       "code": "corpus-attested-only",
-      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE の教員の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 turn to your neighbor | talk to your neighbor | with your neighbor | turn to the person next to you（5 件。3 件以上）。register は主張しない。",
-      "raised": "2026-09-26"
+      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE の教員の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 with a partner（3 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-28"
     }
   ]
 }

@@ -53,12 +53,13 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   "area-is-never-negative": {
     "Area is never negative.": "area is never negative | areas are never negative | area is always positive | area can't be negative | area cannot be negative",
   },
+  // check your answer was mostly checking against the video's work or an equation's solution (Phase 5 監査 11)
   "check-by-differentiating": {
-    "You can always check your answer by taking the derivative.": "check your answer",
+    "You can always check your answer by taking the derivative.": "check by differentiating | check … by differentiating | check by taking the derivative | check … by taking the derivative",
     "Take the derivative, and you should get back the integrand.": "you should get back | you get back the",
   },
   "add-up-thin-disks": {
-    "Think of it as cutting the solid into a bunch of thin slices.": "bunch of slices | thin slices | little slices",
+    "Think of it as cutting the solid into a bunch of thin slices and adding up their volumes.": "bunch of slices | thin slices | little slices",
     "We're adding up a bunch of thin disks.": "bunch of disks | lot of disks | stack of disks | infinitely many disks | little disks | thin disks",
   },
   "find-the-intersections-to-get-the-limits": {
@@ -96,9 +97,10 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Since the tangent line passes through (0, −1),": "passes through",
     "The tangent line goes through (0, −1).": "goes through",
   },
+  // numerator and denominator by / top and bottom by were mostly multiplying (a conjugate, a common denominator) (Phase 5 監査 11)
   "divide-numerator-and-denominator-by-n": {
-    "Divide the numerator and denominator by n.": "numerator and denominator by",
-    "Divide top and bottom by n.": "top and bottom by",
+    "Divide the numerator and denominator by n.": "divide … numerator and denominator by | divide numerator and denominator by",
+    "Divide top and bottom by n.": "divide … top and bottom by | divide top and bottom by",
   },
   "rationalize-and-take-the-limit": {
     "Rationalize first, then take the limit.": "rationalize",
@@ -231,7 +233,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "By the definition of the derivative,": "by the definition of",
   },
   "check-the-sign": {
-    "Let's check the sign of f prime on each interval.": "sign of f prime | the sign of the derivative",
+    "Let's check the sign of f prime on each interval.": "sign of f prime !prime | the sign of the derivative",
     "Check the sign.": "check the sign",
   },
   "omit": {
@@ -253,8 +255,9 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "AB, BC, and CA are equal to DE, EF, and FD, respectively.": "respectively",
     "AB = DE, BC = EF, and CA = FD.": "",
   },
+  // into rectangles alone was mostly a Riemann sum's rectangles (Phase 5 監査 11)
   "divide-the-figure": {
-    "Break the figure up into rectangles and triangles.": "into rectangles | into triangles | into two triangles | into a rectangle | into two rectangles",
+    "Break the figure up into rectangles and triangles.": "into rectangles and triangles | into a rectangle and | into triangles | into two triangles | into two rectangles",
     "Break it up into smaller shapes.": "into smaller shapes | into simpler shapes | into shapes we know",
   },
   "square-and-add": {
@@ -270,7 +273,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "class-listening-turn-to-page": {
     "Turn to page 45.": "turn to page",
-    "Open your books to page 45.": "open your books to | open your book to",
+    "Open your books to page 45.": "open your books to | open your book to | open … to page",
   },
   "class-listening-homework-is": {
     "For homework, do section 3.2, problems 1 through 25, odds.": "for homework",
@@ -280,7 +283,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "The answers to the odd-numbered problems are in the back of the book.": "back of the book | back of your book",
   },
   "class-listening-its-due": {
-    "It's due Friday.": "it's due !to | is due !to | due on",
+    "It's due Friday.": "it's due !to | !credit is due !to | due on",
     "Turn it in at the start of class on Friday.": "turn it in | hand it in",
   },
   "class-listening-pass-your-papers-forward": {
@@ -289,24 +292,28 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   "class-listening-try-this-one": {
     "Go ahead and try this one — I'll give you a couple of minutes.": "try this one",
   },
+  // talk to your neighbor / with your neighbor were a neighbor next door, whispering in a quiz, shaking hands (Phase 5 監査 11)
   "class-listening-work-with-a-partner": {
-    "Turn to your neighbor and compare.": "turn to your neighbor | talk to your neighbor | with your neighbor | turn to the person next to you",
     "Work with a partner.": "with a partner",
+    "Turn to your neighbor and compare.": "turn to your neighbor | turn to the person next to you",
   },
   "class-listening-who-wants-to-come-up": {
-    "Can I get a volunteer?": "a volunteer | any volunteers",
+    "Can I get a volunteer?": "!as !with a volunteer | any volunteers",
     "Who wants to come up and do this one?": "come up to the board | come up and do | come on up",
   },
+  // let me / let's / I'll write that down is the lecturer writing on the board (Phase 5 監査 11)
   "class-listening-write-this-down": {
-    "Write this down.": "write this down | write that down",
+    "Write this down.": "!me !let's !lets !to !gonna !i'll !i !we !can !will !won't !shall !just !actually !quickly !also !again write this down | !me !let's !lets !to !gonna !i'll !i !we !can !will !won't !shall !just !actually !quickly !also !again write that down",
     "You'll want this in your notes.": "in your notes",
   },
+  // on the test / on the exam alone were mostly scores (their score on the test) (Phase 5 監査 11)
   "class-listening-this-will-be-on-the-test": {
-    "This will be on the test.": "on the test",
-    "This will be on the exam.": "on the exam",
+    "This will be on the exam.": "be on the exam | 's on the exam | is on the exam",
+    "This will be on the test.": "be on the test | 's on the test | is on the test",
   },
+  // the formula sheet alone was mostly a video's description section (Phase 5 監査 11)
   "class-listening-you-dont-need-to-memorize": {
-    "You'll get a formula sheet, so you don't need to memorize this.": "formula sheet",
+    "You'll get a formula sheet, so you don't need to memorize this.": "your formula sheet | a formula sheet",
     "You don't have to memorize this one.": "don't need to memorize | don't have to memorize | don't memorize | do not need to memorize",
   },
   "class-listening-common-mistake": {
@@ -321,12 +328,14 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Remember that the derivative of sin x is cos x.": "remember that",
     "Recall that the derivative of sin x is cos x.": "recall that",
   },
+  // next step alone was mostly the lecturer's own next step (the next step is to ...) (Phase 5 監査 11)
   "class-listening-whats-the-next-step": {
-    "What's the next step?": "next step",
+    "What's the next step?": "what's the next step | what is the next step | what's our next step | what is our next step | what about the next step | what would be the next step",
     "What do we do now? Anybody?": "what do we do now | what do we do next | what should we do next | what do i do now",
   },
   "class-listening-oops-good-catch": {
-    "Oops, my mistake — that should be a minus.": "my mistake | my bad",
+    "Oops, my mistake — that should be a minus.": "my mistake !was !i | my bad !little !attitude",
+    "Sorry, my bad — that should be a minus.": "my mistake !was !i | my bad !little !attitude",
     "Good catch, thank you.": "thanks for catching | thank you for catching | good catch",
   },
   "class-listening-well-come-back-to-this": {
@@ -345,17 +354,16 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "class-listening-office-hours-are": {
     "My office hours are Tuesdays from 2 to 4.": "office hours",
-    "Come see me in office hours.": "come see me | come and see me",
+    "I have office hours on Tuesdays from 2 to 4.": "i have office hours | i'll have office hours | i will have office hours",
   },
   "class-listening-raise-your-hand-if": {
     "Raise your hand if you got 5.": "raise your hand",
-    "Thumbs up if you got 5.": "thumbs up",
+    "Thumbs up if you got 5.": "!your thumbs up",
   },
   "class-listening-lets-go-over-the-homework": {
     "Let's go over the homework.": "go over the homework | go over homework | go over the problem set | go over the assignment",
   },
   "class-listening-what-do-you-notice": {
-    "What happens if we make x bigger?": "what happens if",
     "What do you notice?": "what do you notice",
   },
   "class-listening-same-idea-as-before": {
@@ -365,13 +373,14 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   "class-listening-warm-up": {
     "Let's start with a quick warm-up.": "warm-up | warm up",
   },
+  // why that works counted the lecturer's own explanations, not a question to the class (Phase 5 監査 11)
   "class-listening-in-your-own-words": {
-    "Can you explain why that works?": "why that works | why this works | why does that work | why does this work",
+    "Can you explain why that works?": "can you explain | can someone explain | can somebody explain | can anyone explain | can anybody explain | who can explain",
     "Explain it in your own words.": "in your own words",
   },
   "class-listening-sanity-check": {
-    "Does this answer make sense?": "answer make sense | answer makes sense | reasonable answer | answer is reasonable",
     "Let's do a quick sanity check.": "sanity check",
+    "Does this answer make sense?": "answer make sense | answer makes sense",
   },
   "class-asking-where-did-that-come-from": {
     "How do you get from this line to that one?": "how do you get",

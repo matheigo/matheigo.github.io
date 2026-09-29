@@ -2,13 +2,13 @@
   "id": "class-listening-sanity-check",
   "situation": "class-listening",
   "intent": "答えが妥当かを確かめさせる",
-  "en": "Does this answer make sense?",
-  "ja": "この答え、妥当ですか？",
-  "register": "neutral",
+  "en": "Let's do a quick sanity check.",
+  "ja": "答えが妥当か、さっと確かめてみましょう。",
+  "register": "casual",
   "variants": [
     {
-      "en": "Let's do a quick sanity check.",
-      "register": "casual"
+      "en": "Does this answer make sense?",
+      "register": "neutral"
     }
   ],
   "tags": [
@@ -20,28 +20,25 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
-      "answer make sense | answer makes sense | reasonable answer | answer is reasonable": 7,
+      "answer make sense | answer makes sense": 1,
       "sanity check": 7
     },
     "sources": [
-      "khan-ap-calc",
-      "khan-ap-stats",
       "mit-18.01",
       "mit-18.02",
-      "mit-18.06",
       "mit-6.042",
       "yt:3blue1brown"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-28"
   },
   "flags": [
     {
       "code": "corpus-attested-only",
-      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE の教員の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 answer make sense | answer makes sense | reasonable answer | answer is reasonable（7 件。3 件以上）。register は主張しない。",
-      "raised": "2026-09-26"
+      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE の教員の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 sanity check（7 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-28"
     }
   ]
 }
