@@ -1982,3 +1982,53 @@ batch,seq,collection,id,verdict,changes,note,date
 38,1850,phrases,office-hours-hint-not-the-answer,合格,,,2026-09-28
 38,1855,phrases,office-hours-question-about-homework,合格,,,2026-09-28
 38,1857,phrases,office-hours-stuck-at-step,合格,,,2026-09-28
+39,1883,phrases,explaining-solution-rewrote-it-as,大きな直し,en I rewrote it as (x − 3)^2 + 1. → I wrote it as (x − 3)² + 1.（2 つの要の部分の形をそろえると（rewrote ／ rewrite に合わせて wrote ／ write も両方の時制で）write … as 776 対 rewrite … as 233 の ① で、首位の要の部分の文を en に（variant の文から instead を外した）。^2 を ² に） ／ variants I wrote it as (x − 3)^2 + 1 instead.（casual） → I rewrote it as (x − 3)² + 1.（neutral）（前の en を variant に（^2 を ² に）） ／ register neutral → neutral（en の文（instead を外した）に）,2 つの要の部分の時制をそろえると write … as 776 対 rewrite … as 233 の ① → en を I wrote it as (x − 3)² + 1.、前の en を variant に。見直す点: 形のそろえ方（wrote は不規則変化）、write it as の文脈,2026-09-28
+39,1892,phrases,explaining-solution-threw-out-a-solution,大きな直し,en I rejected the negative solution because a length can't be negative. → I threw out the negative solution because a length can't be negative.（en の要の部分の 21 件はすべて用語 extraneous solution（無縁解。en の場面の長さが負の解とは別の概念）で、en の reject … solution は 0 件。用語を外すと、捨てる働きの throw out（4 件）が首位で、台帳の 1 つ目の文を en に） ／ register neutral → casual（en の threw out の文（前の variant と同じ register）） ／ variants I threw out the negative solution.（casual） → I rejected the negative solution because a length can't be negative.（neutral）（前の en を variant に）,en の要の部分の 21 件はすべて用語 extraneous solution（別の概念）で reject … solution は 0 件 → 用語を外し、捨てる働きの throw out（5 件）の文を en に（台帳の 1 つ目の文）。見直す点: 5 件の文脈（解・答え 2、項・段落 2）、形,2026-09-28
+39,1903,phrases,conversely,大きな直し,"en Conversely, if f′(x) > 0, then f is increasing. → Conversely, if a² + b² = c², then the triangle is a right triangle.（例の Conversely, if f′(x) > 0, then f is increasing. は、前の文として「f が増加するなら f′(x) > 0」（偽: f(x) = x³ は増加するが f′(0) = 0）を読ませる。逆も成り立つ組（三平方の定理の逆。用語 converse-of-the-pythagorean-theorem）の例に差し替えた（要の部分 conversely は同じ）） ／ ja 逆に、f′(x) > 0 ならば f は増加する。 → 逆に、a² + b² = c² ならば、その三角形は直角三角形である。（en に合わせた）",例が前の文として偽の「f が増加するなら f′(x) > 0」（x³）を読ませたので、三平方の定理の逆の例に差し替えた（ja も）。variant の要の部分を証明の形に（0 件）。見直す点: 例の数学、ja,2026-09-28
+39,1861,phrases,office-hours-which-course-next,小さな直し,variants Do you think I'm ready for Calc III?（neutral） → Which one would you recommend taking next semester?（neutral）（Do you think I'm ready for Calc III? は自分が進めるかという別の問い（要の部分の 2 件も野外実習の別の意味）。同じ意図（どちらを取るか）の言い換えに（要の部分 would you recommend taking は en と同じ））,,2026-09-28
+39,1862,phrases,office-hours-why-did-i-lose-points,小さな直し,要の部分を減点の理由を聞く形に（lost points ほか 3 件のうち減点の理由を聞く文は 1 件。Math Stack Exchange で points off（直線の外の点）・lose points（ゲームの得点）が別の意味になるので外した。phrase-forms.ts）,,2026-09-28
+39,1863,phrases,explaining-solution-another-way,小さな直し,ja 平方完成を使う別の解き方もあります。 → 平方完成して解くこともできます。（ja は台帳の 1 つ目の文（Another way to do it is …、今の variant）の訳のままだった。en の You could also complete the square. に）,,2026-09-28
+39,1865,phrases,explaining-solution-checked-the-endpoints,小さな直し,2 つの要の部分の綴り（endpoints ／ end points）をそろえ、en の要の部分を空き付きの形に（9 対 6 で en は変わらない。phrase-forms.ts）,,2026-09-28
+39,1868,phrases,explaining-solution-factored-and-set-to-zero,小さな直し,OpenStax Elementary Algebra を出典に（variant の note が名指す） ／ OpenStax Intermediate Algebra を出典に（variant の note が名指す） ／ IM 9–12 Math を出典に（variant の note が名指す）,,2026-09-28
+39,1869,phrases,explaining-solution-first-step,小さな直し,要の部分から the first i（添字）・at first i を除いた（phrase-forms.ts）,,2026-09-28
+39,1872,phrases,explaining-solution-in-context,小さな直し,variants[0].note の資料の名前の無い主張（AP の記述問題で求められる）を CED を主語にした文に ／ AP Calculus の CED を出典に（variant の note） ／ AP Statistics の CED を出典に（variant の note）,,2026-09-28
+39,1874,phrases,explaining-solution-let-me-back-up,小さな直し,"variants Actually, scratch that.（casual） → Wait, I take that back.（casual）（Actually, scratch that. の scratch that は 5 件とも線で消す・予定を消す文で、言ったことを取り消す意味は 0 件。同じ意図の I take that back.（take that back 12 件のうち 10 件が言い間違いを取り消す文）に）",,2026-09-28
+39,1875,phrases,explaining-solution-let-x-be,小さな直し,ja 長方形の幅を x とおきました。 → 幅は x とおきました。（ja の「長方形の」は台帳の 1 つ目の文（今の variant）の訳のままだった）,,2026-09-28
+39,1876,phrases,explaining-solution-matches-the-other-way,小さな直し,ja 別の方法で出した答えと一致します。 → 前に（別の方法で）出した答えと同じになったので、たぶん合っています。（ja は台帳の 1 つ目の文（今の variant）の訳のままで、en の「前と同じ答え」「たぶん合っている」が無かった）,,2026-09-28
+39,1877,phrases,explaining-solution-moved-everything-to-one-side,小さな直し,variant の要の部分から数直線・グラフの everything to the left of を除いた（phrase-forms.ts）,,2026-09-28
+39,1879,phrases,explaining-solution-not-sure-about-this-step,小さな直し,要の部分を一人称の形に（二人称・三人称の not sure 14 件を除く。phrase-forms.ts）,,2026-09-28
+39,1881,phrases,explaining-solution-overall-plan,小さな直し,要の部分を方針を言う to の形に（the idea (here) is that の概念の説明を除く。phrase-forms.ts）,,2026-09-28
+39,1882,phrases,explaining-solution-plugging-back-in,小さな直し,variant の要の部分から動詞の無い back into the original を外し（en の plug … back into と同じ発話を二重に数えていた）、en の要の部分から置換積分の u を戻す plug back in what を除いた（phrase-forms.ts）,,2026-09-28
+39,1885,phrases,explaining-solution-set-up-an-equation,小さな直し,ja 問題の条件から方程式を立てました。 → まず、問題の条件から方程式を立てました。（en の First を ja に）,,2026-09-28
+39,1887,phrases,explaining-solution-that-cant-be-right,小さな直し,ja あれ、おかしい。確率が 1 を超えています。 → あれ、おかしい。確率が 1 より大きくなるはずがありません。（en の「確率は 1 より大きくなれない（からおかしい）」に合わせた（ja は観察の文だった））,,2026-09-28
+39,1890,phrases,explaining-solution-the-key-was,小さな直し,ja 2 つの三角形が相似だと気づくのがポイントです。 → 2 つの三角形が相似だと気づくのがポイントでした。（en の過去（The key was …）に合わせた）,,2026-09-28
+39,1893,phrases,explaining-solution-tried-small-cases,小さな直し,ja まず簡単な場合をいくつか試しました。 → まずいくつか数を代入してみて、感じをつかみました。（ja は variant（台帳の文）の訳のままで、en の「数を代入する」「感じをつかむ」が無かった） ／ intent まず簡単な場合を試したと説明する → まず具体的な数や簡単な場合を試して様子を見たと説明する（en（数を代入する）と variant（簡単な場合）の両方に合う言い方に（意図は同じ））,,2026-09-28
+39,1895,phrases,explaining-solution-used-the-rule,小さな直し,ja ここで連鎖律を使いました。 → ここで合成関数の微分（連鎖律）を使いました。（連鎖律は学習指導要領解説に 0 件（合成関数の微分 2・合成関数の導関数 7）。用語 chain-rule の見出し「合成関数の微分」を添えた（意味は同じ））,,2026-09-28
+39,1896,phrases,explaining-solution-with-units,小さな直し,variant の要の部分から単独の units of（単位一般の話）を外した（114 件のうち答えの単位は 10〜15 件。① に。phrase-forms.ts）,,2026-09-28
+39,1899,phrases,assume-it-holds-for-n-k,小さな直し,variants Suppose the statement holds for n = k.（written） → Assume the statement is true for some k ≥ 1.（written）（米国の参照は帰納法の仮定を「ある k について」と書く（Levin 4.5 の練習問題 Assume P(k) is true for some arbitrary k ≥ 1、Nicholson suppose the theorem is true for some k ≥ 1）。for n = k は参照の証明の文に 0 件。用語 inductive-hypothesis の pitfalls と同じ形（要の部分 assume … true for は同じ）） ／ Levin を出典に（variant の形）,,2026-09-28
+39,1901,phrases,by-hypothesis,小さな直し,notes に米国の Geometry の 2 列証明の Given を書いた（用語 hypothesis の pitfalls と同じ中身） ／ CK-12 Geometry を出典に（notes）,,2026-09-28
+39,1904,phrases,f-double-prime-is-positive,小さな直し,notes に凹凸の言い方を書いた（用語 concavity の pitfalls と同じ中身。フレーズのページにも出す） ／ AP Calculus の CED を出典に（notes） ／ OpenStax Calculus Volume 1 を出典に（notes） ／ CED の出典の note を CED の本文の語だけに（validate の CED の note の検査）,,2026-09-28
+39,1905,phrases,in-general,小さな直し,要の部分から練習問題の小問の見出し ⓑ in general と in general form を除いた（phrase-forms.ts）,,2026-09-28
+39,1906,phrases,integrate-the-inequality,小さな直し,ja 不等式の各辺を 0 から 1 まで積分すると、 → 不等式の両辺を 0 から 1 まで積分すると、（en の both sides に合わせた（「各辺」は台帳の en（each side）の訳のままで、3 つの部分の不等式にも使う言い方））,,2026-09-28
+39,1907,phrases,it-also-holds-for-n-k-1,小さな直し,variants So it is also true for n = k + 1.（written） → Now we show that it is also true for n = k + 1.（written）（variant の So it is also true for n = k + 1. は締める文で、en・ja・intent（示すことを予告する段）と別の働き。予告の言い換えに（Levin 4.5 の We will now prove that P(k + 1) is also true と同じ働き））,,2026-09-28
+39,1908,phrases,left-side-minus-right-side,小さな直し,ja （左辺）−（右辺）= … ≧ 0 だから、 → 左辺から右辺を引く。（en（人間が決めた文 Subtract the right side from the left side.）の訳に。ja の「= … ≧ 0 だから」は en に無い（人間が決めたのは en と notes。答案の型は notes が書く））,,2026-09-28
+39,1909,phrases,let-p-be-the-position-vector-of-p,小さな直し,variants Let p = OP.（written） → Let p = OP⃗.（written）（矢印の無い OP は線分の長さになる。記号 vector-ab-arrow と同じく矢印を付けた） ／ OpenStax Calculus Volume 3 の出典の note に節（点の位置ベクトルの文）,,2026-09-28
+39,1864,phrases,explaining-solution-by-symmetry,合格,,,2026-09-28
+39,1866,phrases,explaining-solution-derivative-equal-to-zero,合格,,,2026-09-28
+39,1867,phrases,explaining-solution-drew-a-picture,合格,,,2026-09-28
+39,1870,phrases,explaining-solution-flipped-the-inequality,合格,,,2026-09-28
+39,1871,phrases,explaining-solution-im-assuming,合格,,,2026-09-28
+39,1873,phrases,explaining-solution-isolated-x,合格,,,2026-09-28
+39,1878,phrases,explaining-solution-multiplied-both-sides,合格,,,2026-09-28
+39,1880,phrases,explaining-solution-otherwise-contradiction,合格,,,2026-09-28
+39,1884,phrases,explaining-solution-rounded-at-the-end,合格,,,2026-09-28
+39,1886,phrases,explaining-solution-so-the-answer-is,合格,,,2026-09-28
+39,1888,phrases,explaining-solution-that-makes-sense,合格,,,2026-09-28
+39,1889,phrases,explaining-solution-thats-where-it-comes-from,合格,,,2026-09-28
+39,1891,phrases,explaining-solution-these-cancel,合格,,,2026-09-28
+39,1894,phrases,explaining-solution-used-a-calculator,合格,,,2026-09-28
+39,1897,phrases,explaining-solution-worked-backwards,合格,,,2026-09-28
+39,1898,phrases,are-equal-respectively,合格,,,2026-09-28
+39,1900,phrases,by-definition,合格,,,2026-09-28
+39,1902,phrases,clearly,合格,,,2026-09-28
+39,1910,phrases,since,合格,,,2026-09-28
