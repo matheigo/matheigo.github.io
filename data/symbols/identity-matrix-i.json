@@ -50,7 +50,7 @@
       "note": "2.2 Matrix-Vector Multiplication（Definition 2.7）ほか"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "updated": "2026-09-28",
   "evidence": {
     "spoken": {
@@ -70,16 +70,9 @@
     ],
     "counted": "2026-09-28"
   },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: 候補に the identity を足して 1 つ目に（MIT 18.06・18.03 は単位行列を the identity と言う。形の 159 件のうち単位行列の意味は 135 件で 135 対 66 の ②。DECISIONS）。見直す点: 全件を読んだ数え方（三角関数の恒等式を除いた）、読みの並び、notes[0]。次の監査のセッションが見直す。",
-      "raised": "2026-09-27"
-    }
-  ],
   "reviewed": {
     "machine": null,
-    "audit": "2026-09-27",
+    "audit": "2026-09-28",
     "human": null
   }
 }

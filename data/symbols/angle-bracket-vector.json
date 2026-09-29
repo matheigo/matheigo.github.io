@@ -43,7 +43,7 @@
       "note": "8.8 Vectors（component form ⟨a, b⟩）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "updated": "2026-09-28",
   "evidence": {
     "spoken": {
@@ -58,16 +58,9 @@
     ],
     "counted": "2026-09-28"
   },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: 1 つ目の読み the vector with components a and b → the vector a, b（③ の OpenStax の 5 件は ⟨a, b⟩ を読む文でなかった。the vector one, zero, minus one の形を候補に足すと ① 42 対 4）。見直す点: SYMBOL_PATTERNS の新しい形（the vector と数）と evidence、notes[0]、OpenStax の出典の note。次の監査のセッションが見直す。",
-      "raised": "2026-09-27"
-    }
-  ],
   "reviewed": {
     "machine": null,
-    "audit": "2026-09-27",
+    "audit": "2026-09-28",
     "human": null
   }
 }

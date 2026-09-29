@@ -69,7 +69,7 @@
       "note": "13.7 Probability（the intersection of E and F and is written as E ∩ F。level.us の Algebra 2）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "updated": "2026-09-28",
   "evidence": {
     "spoken": {
@@ -83,16 +83,9 @@
     ],
     "counted": "2026-09-28"
   },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-27）で大きな直し: 1 つ目の読み the intersection of A and B → A intersect B（the intersection of * and * の 15 件のうち 8 件は幾何の交わり。集合の文字の形で ① 16 対 1）。見直す点: SYMBOL_PATTERNS の新しい形（文字の組）と evidence、notes[0] の cap の文。次の監査のセッションが見直す。",
-      "raised": "2026-09-27"
-    }
-  ],
   "reviewed": {
     "machine": null,
-    "audit": "2026-09-27",
+    "audit": "2026-09-28",
     "human": null
   },
   "related": [
