@@ -1,7 +1,7 @@
 {
   "id": "class-asking-is-there-a-name-for-this",
   "situation": "class-asking",
-  "intent": "それに名前（英語の用語）があるかを聞く",
+  "intent": "それの名前（英語で何と呼ぶか）を聞く",
   "en": "What's this called?",
   "ja": "これって何て言うんですか。",
   "register": "neutral",
@@ -21,22 +21,22 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
       "what's it called | what is it called | what's that called | what is that called | what's this called | what is this called": 8,
-      "what do you call": 5
+      "what do you call !it": 2
     },
     "sources": [
       "micase"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-28"
   },
   "flags": [
     {
       "code": "corpus-attested-only",
       "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 what's it called | what is it called | what's that called | what is that called | what's this called | what is this called（8 件。3 件以上）。register は主張しない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-28"
     }
   ]
 }

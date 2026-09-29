@@ -2,12 +2,12 @@
   "id": "split-the-integral",
   "situation": "class-listening",
   "intent": "途中で式が変わるので、積分区間を分けて計算すると伝える",
-  "en": "Let's break this into two pieces at x = 0.",
+  "en": "We need to split the integral here.",
   "ja": "ここで積分区間を分けます。",
   "register": "neutral",
   "variants": [
     {
-      "en": "We need to split the integral here.",
+      "en": "Let's break this into two pieces at x = 0.",
       "register": "neutral"
     }
   ],
@@ -20,27 +20,19 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
-      "into two pieces | into two parts": 36,
-      "break … integral | split … integral": 14
+      "break … integral | split … integral": 14,
+      "into two intervals": 2
     },
     "sources": [
-      "khan-algebra",
       "khan-ap-calc",
-      "khan-middle",
-      "micase",
       "mit-18.01",
       "mit-18.02",
-      "mit-18.03",
-      "mit-18.06",
       "yt:blackpenredpen",
-      "yt:nancypi",
-      "yt:organicchem",
-      "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-28"
   }
 }

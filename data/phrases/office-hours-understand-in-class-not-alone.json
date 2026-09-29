@@ -3,7 +3,7 @@
   "situation": "office-hours",
   "intent": "授業では分かるのに、一人で解くと手が止まることを相談する",
   "en": "I understand it in class, but I get stuck when I try it on my own.",
-  "ja": "授業で先生が解くと分かるのに、自分でやると手が止まります。",
+  "ja": "授業では分かるのに、自分でやると手が止まります。",
   "register": "neutral",
   "variants": [
     {
@@ -11,7 +11,7 @@
       "register": "neutral"
     },
     {
-      "en": "I keep getting stuck on the homework.",
+      "en": "It makes sense in lecture, but I keep getting stuck on the homework.",
       "register": "neutral"
     }
   ],
@@ -25,7 +25,7 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
       "get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost": 2,
@@ -34,13 +34,13 @@
     "sources": [
       "micase"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-28"
   },
   "flags": [
     {
       "code": "corpus-attested-only",
       "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost 2 件）。Math Stack Exchange の質問で最も多い要の部分 get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost（33579 件。3 件以上）なので使われている。en の要の部分 get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost も 33579 件（3 件以上）なので en のまま。register は主張しない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-28"
     }
   ]
 }

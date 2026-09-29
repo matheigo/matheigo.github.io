@@ -84,6 +84,14 @@ export const MSE_SKIP: Record<string, string> = {
   "an extension on": "extending a function or a field",
   // added after its count was seen (7): "use the back substitution" is a named method
   "use the back": "back substitution",
+  // Phase 5 監査 11, batch 38, added after the counts and the search excerpts were seen (DECISIONS):
+  "is it a good time": "a good time to learn or to use something, not whether one may talk now",
+  "come back later": "the asker returning to a part later, not asking a teacher",
+  "another look": "looking at a problem or an equation again, not a regrade",
+  "look at it again": "looking at a problem or an equation again, not a regrade",
+  "look at this again": "looking at a problem or an equation again, not a regrade",
+  "which problems": "which problems are NP-hard, solvable ... (a general question), as what problems",
+  "just the odds": "the odds of an event (probability), as odd numbered",
 };
 
 /** The exact phrases a key part is searched as: one per alternative, "!w" dropped, "…" and MSE_SKIP not searched. */

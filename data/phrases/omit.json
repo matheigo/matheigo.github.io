@@ -3,7 +3,7 @@
   "situation": "class-listening",
   "intent": "式を書くとき掛け算の記号を省略すると伝える",
   "en": "We usually leave out the multiplication sign.",
-  "ja": "掛け算の記号は省略します。",
+  "ja": "掛け算の記号はふつう省略します。",
   "register": "neutral",
   "tags": [
     "notation",
@@ -12,10 +12,15 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "10.5 Integer Exponents and Scientific Notation（It is customary in scientific notation to use × as the multiplication sign。notes）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
       "multiplication sign | times sign | multiplication symbol": 22
@@ -28,6 +33,9 @@
       "mit-18.01",
       "yt:3blue1brown"
     ],
-    "counted": "2026-09-26"
-  }
+    "counted": "2026-09-28"
+  },
+  "notes": [
+    "科学的記数法（3.2 × 10⁴）の × は省かない（OpenStax Prealgebra 2e の 10.5 Integer Exponents and Scientific Notation は、代数のほかの式では避ける × を科学的記数法では使うのが慣習だと書く）。"
+  ]
 }

@@ -7,9 +7,8 @@
   "register": "neutral",
   "variants": [
     {
-      "en": "English isn't my first language.",
-      "register": "neutral",
-      "note": "英語が母語ではないことを先に伝える言い方。"
+      "en": "I understand the math, but I don't know the English terms yet.",
+      "register": "neutral"
     }
   ],
   "tags": [
@@ -22,21 +21,16 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
-    "spoken": {
-      "getting used to | get used to | not used to": 5
-    },
-    "sources": [
-      "micase"
-    ],
+    "sources": [],
     "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-attested-only",
-      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 getting used to | get used to | not used to（5 件。3 件以上）。register は主張しない。",
-      "raised": "2026-09-26"
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 the english terms | english terms | used to the english（43 件。3 件以上）なので使われている。en の要の部分 the english terms | english terms | used to the english も 43 件（3 件以上）なので en のまま。register は主張しない。",
+      "raised": "2026-09-28"
     }
   ]
 }

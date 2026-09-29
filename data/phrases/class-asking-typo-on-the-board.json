@@ -4,7 +4,7 @@
   "intent": "板書の誤りかもしれない箇所を確かめる",
   "en": "Should that be a minus?",
   "ja": "そこ、マイナスじゃないですか。",
-  "register": "polite",
+  "register": "neutral",
   "variants": [
     {
       "en": "Is that a typo?",
@@ -21,7 +21,7 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
       "should it be | shouldn't it be | should that be | shouldn't that be": 4,
@@ -30,13 +30,13 @@
     "sources": [
       "micase"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-28"
   },
   "flags": [
     {
       "code": "corpus-attested-only",
       "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 should it be | shouldn't it be | should that be | shouldn't that be（4 件。3 件以上）。register は主張しない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-28"
     }
   ]
 }

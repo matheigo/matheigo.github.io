@@ -18,7 +18,7 @@ import type { PhraseGroup } from "./lib.js";
  */
 export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   "class-asking-repeat": {
-    "Sorry, could you say that again?": "say … again",
+    "Sorry, could you say that again?": "!to !must say … again",
     "Could you repeat that last part?": "could you repeat | can you repeat",
     "Sorry, what did you say?": "what did you say",
   },
@@ -47,7 +47,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Don't forget your constant of integration.": "constant of integration",
   },
   "top-minus-bottom": {
-    "It's top minus bottom.": "top minus bottom | top … minus bottom | top minus … bottom | top … minus … bottom",
+    "It's top minus bottom.": "top minus bottom | top … minus bottom !exponent !power | top minus … bottom !exponent !power | top … minus … bottom !exponent !power",
     "Subtract the bottom curve from the top curve.": "subtract the bottom | subtract the lower",
   },
   "area-is-never-negative": {
@@ -66,13 +66,15 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "First find where the curves intersect — those are your bounds of integration.": "where … intersect",
     "Set them equal to get the bounds.": "set them equal | set … equal to each other",
   },
+  // into two pieces / into two parts alone were mostly other splits (a pie, partial fractions, a sum) (Phase 5 監査 11)
   "split-the-integral": {
-    "Let's break this into two pieces at x = 0.": "into two pieces | into two parts",
     "We need to split the integral here.": "break … integral | split … integral",
+    "Let's break this into two pieces at x = 0.": "into two intervals",
   },
+  // limit as n approaches infinity of alone was mostly a sequence or a series test (Phase 5 監査 11)
   "write-as-a-limit-of-a-sum": {
-    "Let's write this as the limit as n approaches infinity of a sum.": "limit as n approaches infinity of",
     "Write it as the limit of a Riemann sum.": "limit of … riemann sum | limit of the sum | limit of this sum",
+    "Let's write the integral as the limit as n approaches infinity of a sum.": "limit as n approaches infinity of a riemann sum | limit as n approaches infinity of the sum | limit as n approaches infinity of a sum",
   },
   "integrate-the-inequality": {
     "Integrating both sides of the inequality from 0 to 1, we get": "integrate both sides | integrate … sides",
@@ -204,7 +206,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "organize-in-a-table": {
     "Let's make a table.": "make a table",
-    "Let's organize this in a table.": "organize … in a table | put … in a table",
+    "Let's set up a table.": "set up a table",
   },
   "represent-with-a-graph": {
     "Let's graph it and see what it looks like.": "graph it",
@@ -386,24 +388,26 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "How do you get from this line to that one?": "how do you get",
     "Where did the 2 come from?": "where did … come from | where does … come from | where'd … come from",
   },
+  // how come you / I / they were questions about someone's life; you know why is that was rhetorical (Phase 5 監査 11)
   "class-asking-why-can-we": {
-    "How come we can divide by x here?": "how come",
-    "Why is that?": "why is that",
+    "Why is that?": "!you !know why is that",
+    "How come we can divide by x here?": "how come !you !i !they",
   },
   "class-asking-how-do-you-read-this": {
     "How do you say this symbol?": "how do you say",
   },
   "class-asking-is-there-a-name-for-this": {
     "What's this called?": "what's it called | what is it called | what's that called | what is that called | what's this called | what is this called",
-    "What do you call this?": "what do you call",
+    "What do you call this?": "what do you call !it",
   },
   "class-asking-difference-between": {
     "What's the difference between a local max and an absolute max?": "what's the difference between | what is the difference between",
     "How is this different from a local max?": "how is … different from | how is that different",
   },
+  // is that okay / can i just alone were mostly a schedule, a permission or another request (Phase 5 監査 11)
   "class-asking-can-i-write-it-this-way": {
-    "I wrote it as 2(x + 1) — is that okay?": "is that okay | is that ok | is that all right | is that alright",
-    "Can I just write it as 2x + 2?": "can i just",
+    "I wrote it as 2(x + 1) — is that okay?": "i wrote it as | i wrote this as | i wrote that as",
+    "Can I just write it as 2x + 2?": "can i just write | can i write it as | can i write this as",
   },
   "class-asking-does-it-still-work-if": {
     "What if x is negative?": "what if",
@@ -431,12 +435,14 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "When is this due?": "when is it due | when is that due | when's it due | when is this due | when's that due | when is the homework due | when is the paper due | when are they due",
     "Is that due Friday or Monday?": "due on friday | due friday | due on monday | due monday | due next week",
   },
+  // need to know this / that alone were mostly statements (Phase 5 監査 11)
   "class-asking-will-this-be-on-the-test": {
-    "Do we need to know this for the exam?": "need to know this | have to know this | need to know that | have to know that | need to know all",
+    "Do we need to know this for the exam?": "do we need to know | do we have to know | do we hafta know | do i need to know | do i have to know",
     "Will this be on the test?": "be on the test | be on the exam | be on the midterm | be on the final | be on the quiz",
   },
+  // need to memorize alone was students telling each other what to memorize (Phase 5 監査 11)
   "class-asking-do-we-need-to-memorize": {
-    "Do we need to memorize this formula?": "need to memorize | have to memorize | should we memorize | do we memorize",
+    "Do we need to memorize this formula?": "do we need to memorize | do we have to memorize | do i need to memorize | do i have to memorize | should we memorize | should i memorize | do we memorize",
     "Will we get a formula sheet?": "formula sheet | equation sheet | cheat sheet | note card | index card",
   },
   "class-asking-calculator-on-the-test": {
@@ -484,37 +490,41 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Could you explain what was wrong with my answer?": "what was wrong with my | what's wrong with my | what i did wrong",
   },
   "office-hours-regrade": {
-    "I think this might have been graded incorrectly. Could you take another look?": "another look | regrade | re-grade | look at it again | look at this again",
-    "I think this might have been graded incorrectly.": "graded wrong | graded incorrectly | grading was wrong | grading error",
+    "I think this might have been graded incorrectly. Could you take another look?": "another look | regrade | re-grade | look at it again | look at this again | graded wrong | graded incorrectly | grading was wrong | grading error",
   },
+  // study for alone was mostly a statement (I'm gonna go study for the quiz) (Phase 5 監査 11)
   "office-hours-how-to-study": {
-    "How would you recommend studying for the midterm?": "study for | studying for | how to study | how should i study | best way to study",
-    "What should I focus on for the exam?": "focus on for | should i focus on | should we focus on | should i concentrate on",
+    "How would you recommend studying for the midterm?": "how to study | how should i study | best way to study | how do i study | recommend studying | what would you recommend",
+    "What's the best way to study for the exam?": "how to study | how should i study | best way to study | how do i study | recommend studying | what would you recommend",
   },
+  // practice exam alone was students talking about the practice exam, not asking for one (Phase 5 監査 11)
   "office-hours-extra-practice": {
-    "Do you have any old exams I could practice with?": "old exams | past exams | old tests | practice exams | practice exam | old midterms | old quizzes",
-    "Are there any extra practice problems I could do?": "practice problems | extra problems | more problems | extra practice | more practice",
+    "Do you have any old exams I could practice with?": "any old exams | have old exams | are there old exams | any practice exams | is there a practice exam | any past exams | any old tests",
+    "Are there any extra practice problems I could do?": "any practice problems | any extra problems | more practice problems | extra practice problems | any extra practice",
   },
   "office-hours-understand-in-class-not-alone": {
     "I understand it in class, but I get stuck when I try it on my own.": "get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost",
     "I can follow it in class, but I can't do it on my own.": "do it on my own | do it by myself | try it on my own | try it by myself | on my own i | by myself i",
-    "I keep getting stuck on the homework.": "get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost",
+    "It makes sense in lecture, but I keep getting stuck on the homework.": "get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost",
   },
+  // intuition alone was mostly one's own intuition (0 of 9 not getting it) (Phase 5 監査 11)
   "office-hours-intuition": {
-    "I can follow the algebra, but I don't get the intuition behind it.": "intuition | intuitive | intuitively",
-    "What's the big picture here?": "the big picture",
+    "I can follow the algebra, but I don't get the intuition behind it.": "the intuition behind | intuition behind | the intuition for | don't get the intuition",
+    "What's the big picture here?": "what's the big picture | the big picture here",
   },
   "office-hours-when-to-use-which": {
     "How do I know which method to use?": "which method | which one to use | which formula to use | which equation to use",
     "How do I know when to use substitution and when to use integration by parts?": "when to use | when do you use | when do i use | when would you use | when should i use",
   },
+  // getting used to alone was a lab tool, a professor's speech, a reader (0 of 5 about English terms) (Phase 5 監査 11)
   "office-hours-english-terms-are-new": {
-    "I learned this in Japanese, so I'm still getting used to the English terms.": "getting used to | get used to | not used to",
-    "English isn't my first language.": "english is not my first language | english isn't my first language | english is my second language | not a native speaker | i'm not a native speaker",
+    "I learned this in Japanese, so I'm still getting used to the English terms.": "the english terms | english terms | used to the english",
+    "I understand the math, but I don't know the English terms yet.": "the english terms | english terms | used to the english",
   },
+  // look it over / look this over were a chair's handout or reading one's own draft (Phase 5 監査 11)
   "office-hours-is-this-rigorous-enough": {
-    "Could you look over my proof and tell me if it's rigorous enough?": "look over my | look it over | look this over | look over this | looked over my | get it looked over | look at my proof | look at my work",
-    "Is this rigorous enough?": "rigorous | enough justification | is this enough | is that enough | explain enough",
+    "Could you look over my proof and tell me if it's rigorous enough?": "look over my | look at my proof | check my proof | check my work | get it looked over",
+    "Is this rigorous enough?": "rigorous enough | is this rigorous | is my proof rigorous",
   },
   "office-hours-which-course-next": {
     "Should I take Linear Algebra or Calc II next semester?": "should i take | should i be taking | would you recommend taking | do you recommend taking",
@@ -523,9 +533,10 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   "office-hours-can-i-come-back": {
     "Can I come back if I get stuck again?": "can i come back | could i come back | if i come back | come back later | come back tomorrow | come back next week | stop by again | come by again | come back if",
   },
+  // make more sense now counted a question to another student; that's helpful to answer was not thanks (Phase 5 監査 11)
   "office-hours-thanks-that-helps": {
-    "That makes a lot more sense now.": "makes more sense now | makes a lot more sense now | makes sense now | make sense now | make more sense now | makes more sense then",
-    "Thanks, that really helps.": "that really helps | that helps a lot | that helped a lot | that's helpful | that was helpful | that's very helpful | that was really helpful | that's really helpful | that's so helpful",
+    "Thanks, that really helps.": "that really helps | that helps a lot | that helped a lot | that's helpful !to | that was helpful | that's very helpful | that was really helpful | that's really helpful | that's so helpful",
+    "That makes a lot more sense now.": "that makes more sense now | it makes more sense now | makes a lot more sense now | makes sense now | makes more sense then | starting to make sense",
   },
   "explaining-solution-overall-plan": {
     "The idea is to find the intersection points first and then integrate.": "the idea is to | the idea here is | the idea was to | the basic idea is | the whole idea is",
@@ -1067,9 +1078,10 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   "discord-study-on-a-call": {
     "Anyone want to hop on a call and study?": "hop on a call | jump on a call | on a zoom call",
   },
+  // i was wondering if opened requests (6) and polite questions (4) (Phase 5 監査 11)
   "office-hours-i-was-wondering": {
-    "I was wondering if you could look over my answer to number 2.": "i was wondering if",
-    "I was wondering whether this counts as a proof.": "i was wondering whether",
+    "I was wondering if you could look over my answer to number 2.": "i was wondering if you could | i was wondering if you might | i was wondering if i could",
+    "I was wondering whether you could take a look at my proof.": "i was wondering whether",
   },
   "group-study-does-that-mean": {
     "Does that mean it's not differentiable at x = 0?": "does that mean | does this mean",
