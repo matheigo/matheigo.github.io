@@ -21,7 +21,7 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
       "multiply by r | multiply … by r": 11,
@@ -39,5 +39,17 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-28"
+  },
+  "flags": [
+    {
+      "code": "audit-human",
+      "note": "Phase 5 監査（2026-09-28）で判断がつかない: 要の部分 multiply … by r の 11 件のうち等比数列の和を求める文は Khan AP Calc の 1 件（ほかは極座標・ヤコビアン・行列・半径の r）、subtract の 5 件のうち 2 件で、どちらも 3 件に届かない。講義の 3 本の導きは multiply every term by r ／ multiply by x … subtract the two equations ／ multiply the sum by x … subtract one from the other と言い方がそろわない。人間に決めてほしいこと: en（等比数列の和を r 倍して引いて求めるときの言い方）。人間レビューへ。",
+      "raised": "2026-09-28"
+    }
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-09-28",
+    "human": null
   }
 }

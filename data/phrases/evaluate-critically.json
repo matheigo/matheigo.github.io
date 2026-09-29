@@ -21,7 +21,7 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
       "critique": 25
@@ -30,5 +30,17 @@
       "micase"
     ],
     "counted": "2026-09-28"
+  },
+  "flags": [
+    {
+      "code": "audit-human",
+      "note": "Phase 5 監査（2026-09-28）で判断がつかない: 要の部分 critique の 25 件はすべて MICASE の人文系の授業（宗教学・歴史・哲学ほか）の critique で、数学の推論や結論を検討させる文は 0 件。形で除けず、ほかに試した言い方（critique the reasoning、what's wrong with this argument）も 0 件で、3 件に届く言い方が無い。人間に決めてほしいこと: en（数学の授業で推論を批判的に検討させるときの言い方）。ja「この推論を批判的に検討してみましょう」とも揃える。人間レビューへ。",
+      "raised": "2026-09-28"
+    }
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-09-28",
+    "human": null
   }
 }
