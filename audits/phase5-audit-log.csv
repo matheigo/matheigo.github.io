@@ -1932,3 +1932,53 @@ batch,seq,collection,id,verdict,changes,note,date
 37,1808,phrases,let-h-go-to-zero,合格,,,2026-09-28
 37,1810,phrases,multiply-by-the-derivative-of-the-inside,合格,,,2026-09-28
 0,894,terms,imaginary-solution,小さな直し,pitfalls[0] の「MIT 18.03（微分方程式の特性方程式）」を直した: 話し言葉の complex solution 31 件のうち 27 件は MIT 18.03 の微分方程式の複素数値の解で、特性方程式の解の意味は 4 件（バッチ 37 の見直し役 r3）,バッチ 37 の見直しで: pitfalls[0] の MIT 18.03 の complex solution の説明を直した（微分方程式の複素数値の解）,2026-09-28
+38,1819,phrases,split-the-integral,大きな直し,en Let's break this into two pieces at x = 0. → We need to split the integral here.（首位の要の部分の文を en に: into two pieces ｜ into two parts の 36 件のうち積分の区間・領域を分ける文は 7〜9 件（パイ・部分分数・被積分関数の和ほか）、variant の break ｜ split … integral の 14 件のうち 10 件が積分を分ける文。台帳 8 行の 1 つ目の文で、ja もこの文の訳） ／ variants We need to split the integral here.（neutral） → Let's break this into two pieces at x = 0.（neutral）（前の en を variant に（要の部分は into two intervals に））,into two pieces ｜ into two parts の 36 件のうち積分の区間を分ける文は 7〜9 件、variant の break ｜ split … integral は 14 件のうち 10 件 → en を We need to split the integral here.（台帳の 1 つ目の文）、前の en を variant（要の部分 into two intervals）に。見直す点: 36 件・14 件の文脈、ja,2026-09-28
+38,1822,phrases,write-as-a-limit-of-a-sum,大きな直し,en Let's write this as the limit as n approaches infinity of a sum. → Write it as the limit of a Riemann sum.（首位の要の部分の文を en に: limit as n approaches infinity of の 42 件のうち定積分を和の極限に書く文は 4 件（発散判定・比判定ほかの数列・級数）、variant の limit of … riemann sum ほか 7 件のうち 5〜6 件。AP の CED も limit of a Riemann sum と書く） ／ variants Write it as the limit of a Riemann sum.（neutral） → Let's write the integral as the limit as n approaches infinity of a sum.（neutral）（前の en を variant に。khan-ap-calc の 1 文と 10 語一致していた（this as the limit as n approaches infinity of a）ので the integral に言い換えた）,limit as n approaches infinity of の 42 件のうち定積分を和の極限に書く文は 4 件 → en を Write it as the limit of a Riemann sum.、前の en を the integral に言い換えて variant に（khan-ap-calc と 10 語一致していた）。見直す点: 42 件・7 件の文脈、variant の言い換え,2026-09-28
+38,1842,phrases,class-asking-why-can-we,大きな直し,en How come we can divide by x here? → Why is that?（首位の要の部分の文を en に: how come 15 件のうち内容の理由を聞く問いは 6 件（残りは身の上の how come you … ほか）、why is that 14 件のうち 9 件（残りは修辞疑問 you know why is that ほか）。形で除くと why is that 10 ／ how come 8 の ①） ／ ja どうしてここで x で割っていいんですか。 → それはどうしてですか。（en に合わせた） ／ intent その操作をしてよい理由を聞く → 理由を聞く（その操作をしてよい理由など）（en の Why is that? に合わせて広げた（その操作をしてよい理由を運ぶ形 how come we can ・why can we ほかは MICASE の学生の発話に 0 件）） ／ variants Why is that?（neutral） → How come we can divide by x here?（neutral）（前の en を variant に）,how come の身の上の問い・why is that の修辞疑問を除くと why is that 10 ／ how come 8（読むと 9 ／ 6）→ en を Why is that?、ja・intent（理由を聞く（その操作をしてよい理由など））を合わせ、前の en を variant に。見直す点: 29 件の文脈、intent を広げたこと,2026-09-28
+38,1858,phrases,office-hours-thanks-that-helps,大きな直し,"en That makes a lot more sense now. → Thanks, that really helps.（2 つの要の部分は同数（3 対 3、読むと 2 対 2）で、候補を見つけた文書の順で en が決まっていた。id・intent（お礼を言う）・ja・台帳の 1 つ目の文に合う Thanks, that really helps. を en に） ／ ja ありがとうございます、よく分かりました。 → ありがとうございます、おかげでよく分かりました。（en に合わせた（お礼と、分かったこと）） ／ variants Thanks, that really helps.（neutral） → That makes a lot more sense now.（neutral）（前の en を variant に）","2 つの要の部分は同数（3 対 3、読むと 2 対 2）で文書の順で en が決まっていた → id・intent・ja・台帳に合う Thanks, that really helps. を en に、ja を合わせた。形を主語つきに（学生どうしの問いを除く）、Math Stack Exchange で likely。見直す点: 同数の扱い、ja",2026-09-28
+38,1811,phrases,omit,小さな直し,ja 掛け算の記号は省略します。 → 掛け算の記号はふつう省略します。（en の usually（ふつうは）を ja に） ／ notes に科学的記数法の × を書いた（「× はいつも省く」と覚えないように） ／ OpenStax Prealgebra を出典に（notes）,,2026-09-28
+38,1812,phrases,organize-in-a-table,小さな直し,variants Let's organize this in a table.（neutral） → Let's set up a table.（neutral）（Let's organize this in a table. の要の部分（organize ／ put … in a table）は講義と MICASE の教員に 0 件。同じ意図で先生が言う set up a table（14 件）の文に）,,2026-09-28
+38,1813,phrases,organize-the-data,小さな直し,ja まずデータを小さい順に並べて整理しましょう。 → データを小さい順に並べましょう。（ja が台帳の 1 つ目の文（Let's organize the data first.）の「まず」「整理しましょう」を残していた）,,2026-09-28
+38,1821,phrases,top-minus-bottom,小さな直し,要の部分から指数法則の top exponent minus bottom exponent を除いた（phrase-forms.ts）,,2026-09-28
+38,1825,phrases,class-asking-can-i-write-it-this-way,小さな直し,要の部分を書き方の確認の形に（is that okay の 14 件のうち書き方の確認は 1〜3 件、can i just は 1 件。phrase-forms.ts）,,2026-09-28
+38,1828,phrases,class-asking-do-we-need-to-memorize,小さな直し,要の部分を問いの形に（need to memorize ほか 3 件はどれも学習会の平叙文。phrase-forms.ts）,,2026-09-28
+38,1833,phrases,class-asking-is-there-a-name-for-this,小さな直し,intent それに名前（英語の用語）があるかを聞く → それの名前（英語で何と呼ぶか）を聞く（intent が台帳の Is there a name for this?（名前があるか）のままだった。en は人間の決定で What's this called?（意図は同じ））,,2026-09-28
+38,1835,phrases,class-asking-repeat,小さな直し,variants[1].note の確かめられない「先生にも使う」を外した（what did you say の聞き返し 7 件はどれも学習会・実習の中の発話）,,2026-09-28
+38,1836,phrases,class-asking-simplify-further,小さな直し,"ja これ以上簡単にする必要はありますか。これで答えですか。 → これ以上簡単にする必要はありますか。（ja の 2 文目は台帳の en（…, or is that the final answer?）の後半の訳。en は指示の文の 1 文（DECISIONS フレーズ 3 の前の修正 1））",,2026-09-28
+38,1838,phrases,class-asking-typo-on-the-board,小さな直し,"register polite → neutral（en の Should that be a minus? に丁寧の標識は無い（台帳の Sorry, I think there's a typo — … のときの register））",,2026-09-28
+38,1840,phrases,class-asking-where-did-that-come-from,小さな直し,ja この行から次の行へはどうやって行くんですか。 → この行から次の行へは、どうやって変形するんですか。（「どうやって行く」は get from … to の直訳で道順の問いに聞こえる）,,2026-09-28
+38,1841,phrases,class-asking-which-problems,小さな直し,variants[0].note の資料の名前の無い「（巻末に答えがあることが多い）」を外した（validate の警告） ／ flag corpus-undecided を corpus-human-settled に（en は人間の指示の文。Math Stack Exchange の which problems（問題の種類を聞く一般の問い）・just the odds（確率の odds）を MSE_SKIP に入れると 3 件未満で、DECISIONS「Phase 3 フレーズ 3 の前の修正」3 の go-back ・slow-down と同じ扱い）,,2026-09-28
+38,1843,phrases,class-asking-will-this-be-on-the-test,小さな直し,要の部分を問いの形に（need to know this ほか 13 件のうち範囲を聞く問いは 1 件。phrase-forms.ts）,,2026-09-28
+38,1845,phrases,office-hours-can-i-come-back,小さな直し,ja まだ分からなかったら、また来てもいいですか。 → また行き詰まったら、もう一度来てもいいですか。（en の if I get stuck again（また行き詰まったら）に。ja は台帳の en（… if I'm still stuck?）の訳のままだった） ／ intent まだ分からなければまた来てよいかを聞く → また行き詰まったら、もう一度来てよいかを聞く（en に合わせた（意図は同じ））,,2026-09-28
+38,1847,phrases,office-hours-do-you-have-a-minute,小さな直し,,,2026-09-28
+38,1848,phrases,office-hours-english-terms-are-new,小さな直し,"variants English isn't my first language.（neutral） → I understand the math, but I don't know the English terms yet.（neutral）（English isn't my first language. は英語そのものが母語でないと伝える別の意図。同じ意図（数学の用語だけが英語で分からない）の言い換えに）",,2026-09-28
+38,1849,phrases,office-hours-extra-practice,小さな直し,要の部分を尋ねる形に（old exams ・practice exam ほか 8 件はどれも話題にするだけで、あるかを聞く文は 0 件。phrase-forms.ts）,,2026-09-28
+38,1851,phrases,office-hours-how-to-study,小さな直し,variants What should I focus on for the exam?（neutral） → What's the best way to study for the exam?（neutral）（What should I focus on for the exam? は何に重点を置くかという別の問い。同じ意図（勉強の仕方）の言い換えに）,,2026-09-28
+38,1852,phrases,office-hours-i-was-wondering,小さな直し,variants I was wondering whether this counts as a proof.（polite） → I was wondering whether you could take a look at my proof.（polite）（I was wondering whether this counts as a proof. は質問で、intent（丁寧に頼みごとを切り出す）の依頼ではない。依頼の文に）,,2026-09-28
+38,1853,phrases,office-hours-intuition,小さな直し,要の部分を意図を運ぶ形に（intuition ほか 9 件はどれも自分の直感の話で、直感的な意味が分からない文は 0 件。the big picture も両方絞った。phrase-forms.ts）,,2026-09-28
+38,1854,phrases,office-hours-is-this-rigorous-enough,小さな直し,要の部分を人に見てもらう形に（look it over ほか 6 件のうち自分の答案を見てもらう文は 1 件）。variant の rigorous（1 語）を問いの形に（phrase-forms.ts）,,2026-09-28
+38,1856,phrases,office-hours-regrade,小さな直し,variants I think this might have been graded incorrectly.（polite） → （なし）（variant は en の 1 文目そのもの（言い換えになっていない）なので外した。その要の部分（graded incorrectly ほか）は en の要の部分に入れた） ／ ja この問題の採点をもう一度見ていただけませんか。 → 採点が間違っているかもしれないのですが、もう一度見ていただけませんか。（ja が台帳の 1 文目（Would you mind taking another look at the grading …）の訳のままで、en の 1 文目（採点が間違っているかもしれない）が無かった）,,2026-09-28
+38,1859,phrases,office-hours-understand-in-class-not-alone,小さな直し,"ja 授業で先生が解くと分かるのに、自分でやると手が止まります。 → 授業では分かるのに、自分でやると手が止まります。（ja の「先生が解くと」は台帳の en（when you do it in class）の訳で、今の en（指示の文）に無い） ／ variants I can follow it in class, but I can't do it on my own.（neutral） ／ I keep getting stuck on the homework.（neutral） → I can follow it in class, but I can't do it on my own.（neutral） ／ It makes sense in lecture, but I keep getting stuck on the homework.（neutral）（variants[1] の I keep getting stuck on the homework. に「授業では分かるのに」の対比を入れた（要の部分 get stuck は同じ））",,2026-09-28
+38,1860,phrases,office-hours-when-to-use-which,小さな直し,ja 置換積分と部分積分、どういうときにどちらを使えばいいですか。 → どの方法を使えばいいか、どうやって見分ければいいですか。（ja は variant（台帳の文。置換積分と部分積分）の訳のままで、en は方法の名前を言わない）,,2026-09-28
+38,1814,phrases,probabilities-sum-to-1,合格,,,2026-09-28
+38,1815,phrases,rationalize-and-take-the-limit,合格,,,2026-09-28
+38,1816,phrases,represent-with-a-graph,合格,,,2026-09-28
+38,1817,phrases,rewrite-the-expression,合格,,,2026-09-28
+38,1818,phrases,split-at-the-median,合格,,,2026-09-28
+38,1820,phrases,square-and-add,合格,,,2026-09-28
+38,1823,phrases,class-asking-another-example,合格,,,2026-09-28
+38,1824,phrases,class-asking-calculator-on-the-test,合格,,,2026-09-28
+38,1826,phrases,class-asking-could-we-use-another-method,合格,,,2026-09-28
+38,1827,phrases,class-asking-difference-between,合格,,,2026-09-28
+38,1829,phrases,class-asking-does-it-still-work-if,合格,,,2026-09-28
+38,1830,phrases,class-asking-go-back,合格,,,2026-09-28
+38,1831,phrases,class-asking-how-do-you-read-this,合格,,,2026-09-28
+38,1832,phrases,class-asking-i-got-a-different-answer,合格,,,2026-09-28
+38,1834,phrases,class-asking-is-there-an-easier-way,合格,,,2026-09-28
+38,1837,phrases,class-asking-slow-down,合格,,,2026-09-28
+38,1839,phrases,class-asking-when-is-it-due,合格,,,2026-09-28
+38,1844,phrases,office-hours-am-i-on-the-right-track,合格,,,2026-09-28
+38,1846,phrases,office-hours-can-i-show-you-what-i-tried,合格,,,2026-09-28
+38,1850,phrases,office-hours-hint-not-the-answer,合格,,,2026-09-28
+38,1855,phrases,office-hours-question-about-homework,合格,,,2026-09-28
+38,1857,phrases,office-hours-stuck-at-step,合格,,,2026-09-28
