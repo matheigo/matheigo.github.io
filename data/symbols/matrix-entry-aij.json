@@ -43,11 +43,11 @@
       "type": "reference",
       "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
       "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
-      "note": "2.1・2.3 ほか。the (i, j)-entry（24 件）"
+      "note": "2.1・2.3 ほか。the (i, j)-entry（24 件）。2.1 は aᵢⱼ を the entry in row i and column j of A とも説明する"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
       "the entry in row *": 2,
@@ -57,18 +57,18 @@
       "mit-18.06",
       "mit-6.042"
     ],
-    "counted": "2026-09-27"
+    "counted": "2026-09-28"
   },
   "flags": [
-    {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 the entry in row *（本文 17 件）。register は主張しない。",
-      "raised": "2026-09-27"
-    },
     {
       "code": "audit-major-fix",
       "note": "Phase 5 監査（2026-09-27）で大きな直し: 候補に OpenStax Precalculus 9.5 の the entry in row i, column j を足し、③ の参照の段で OpenStax（17 件）が 1 つ目を決めた（前は Nicholson の the i j entry of A）。見直す点: OpenStax の 17 件の文脈（定義 2 件と成分を行・列で名指す手順の文）、notes[1] の直し、level.us の Precalculus。次の監査のセッションが見直す。",
       "raised": "2026-09-27"
+    },
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 対象外）。読みは OpenStax の呼び方 the entry in row *（本文 17 件）。register は主張しない。",
+      "raised": "2026-09-28"
     }
   ],
   "reviewed": {

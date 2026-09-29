@@ -7,6 +7,10 @@
       "register": "standard"
     },
     {
+      "text": "a dotted with b",
+      "register": "standard"
+    },
+    {
       "text": "the dot product of a and b",
       "register": "standard"
     }
@@ -27,7 +31,7 @@
     ]
   },
   "notes": [
-    "a⃗ · b⃗ は a dot b か the dot product of a and b と読む。点（·）を dot と読む。",
+    "a⃗ · b⃗ は a dot b、a dotted with b、the dot product of a and b と読む。点（·）を dot と読む。",
     "· は数の掛け算にも使う（times-sign）。"
   ],
   "sources": [
@@ -43,7 +47,7 @@
       "type": "reference",
       "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
       "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
-      "note": "4.2 Projections and Planes ほか"
+      "note": "4.2 Projections and Planes（Definition 4.4 Dot Product in R³: v · w）・2.2 Matrix-Vector Multiplication（Definition 2.6 Dot Product in Rⁿ）"
     },
     {
       "type": "textbook",
@@ -52,19 +56,21 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
       "u dot v | a dot b | v dot w | u dot w | v dot u | b dot a | v dot v | u dot u | a dot a | f dot dr | f dot n | r dot v | r dot r | v dot r | g dot dr | g dot n | f dot t | f dot ds | pq dot n | qp dot qr": 143,
+      "!del dotted with": 55,
       "the dot product of *": 21
     },
     "sources": [
       "mit-18.02",
       "mit-18.03",
       "mit-18.06",
-      "yt:3blue1brown"
+      "yt:3blue1brown",
+      "yt:profleonard"
     ],
-    "counted": "2026-09-27"
+    "counted": "2026-09-28"
   },
   "flags": [
     {

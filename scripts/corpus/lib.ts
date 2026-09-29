@@ -1188,6 +1188,8 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "a dot b":
       "u dot v | a dot b | v dot w | u dot w | v dot u | b dot a | v dot v | u dot u | a dot a | f dot dr | f dot n | r dot v | r dot r | v dot r | g dot dr | g dot n | f dot t | f dot ds | pq dot n | qp dot qr",
     "the dot product of a and b": "the dot product of *",
+    // F dotted with n (MIT 18.02, Professor Leonard); del dotted with is ∇· (divergence-del-dot) (Phase 5 監査 11)
+    "a dotted with b": "!del dotted with",
   },
   "cross-product-cross": {
     "u cross v": "u cross v | a cross b | v cross w | v cross u | b cross a | u cross w | a cross c | b cross c | r cross v | v cross v | w cross v",
@@ -1412,7 +1414,9 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
   },
   "length-ab": {
     "the length of segment AB": "the length of segment *",
-    "the length of AB": "the length of a b | the length of ab | the length of b c | the length of bc | the length of a c | the length of ac | the length of c d | the length of cd",
+    // any two letters read the same way (Phase 5 監査 11: ad, bd, dc, ea, op, jl, kl; not ‖Qx‖'s "q x" nor "my floor")
+    "the length of AB":
+      "the length of a b | the length of ab | the length of b c | the length of bc | the length of a c | the length of ac | the length of c d | the length of cd | the length of a d | the length of ad | the length of b d | the length of bd | the length of d c | the length of dc | the length of e a | the length of ea | the length of o p | the length of op | the length of j l | the length of jl | the length of k l | the length of kl",
   },
   "line-ab-arrow": {
     "line AB": "line a b | line ab | line c d | line cd | line b c | line bc | line a c | line ac | line p q | line pq | line x y | line xy",
