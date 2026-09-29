@@ -7,7 +7,7 @@
   "register": "written",
   "variants": [
     {
-      "en": "Suppose the statement holds for n = k.",
+      "en": "Assume the statement is true for some k ≥ 1.",
       "register": "written"
     }
   ],
@@ -18,10 +18,16 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.5 Proof by Induction の練習問題（Assume P(k) is true for some arbitrary k ≥ 1。variant）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "written": {
       "inductive hypothesis | induction hypothesis": 36,
@@ -30,6 +36,6 @@
     "sources": [
       "mit-notes"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-28"
   }
 }

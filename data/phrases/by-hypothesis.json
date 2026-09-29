@@ -22,10 +22,16 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "2 列証明の Given（Given: の見出し 33 件、by assumption・by hypothesis は 0 件。notes）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "written": {
       "by assumption": 5
@@ -34,13 +40,16 @@
       "mit-notes",
       "openstax-calculus"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-28"
   },
   "flags": [
     {
       "code": "corpus-attested-only",
       "note": "どの要の部分も 10 件に届かない（書き言葉のコーパスと参照で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 by assumption（5 件。3 件以上）。register は主張しない。",
-      "raised": "2026-09-26"
+      "raised": "2026-09-28"
     }
+  ],
+  "notes": [
+    "Geometry の 2 列証明では、仮定から書いた行の理由の欄に Given と書く（CK-12 Geometry。by assumption・by hypothesis は 0 件）。by assumption・by hypothesis は文で書く証明の言い方。"
   ]
 }

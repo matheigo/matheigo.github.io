@@ -2,13 +2,13 @@
   "id": "explaining-solution-threw-out-a-solution",
   "situation": "explaining-solution",
   "intent": "条件に合わない解を除いたと説明する",
-  "en": "I rejected the negative solution because a length can't be negative.",
+  "en": "I threw out the negative solution because a length can't be negative.",
   "ja": "長さは負にならないので、負の解は捨てました。",
-  "register": "neutral",
+  "register": "casual",
   "variants": [
     {
-      "en": "I threw out the negative solution.",
-      "register": "casual"
+      "en": "I rejected the negative solution because a length can't be negative.",
+      "register": "neutral"
     }
   ],
   "tags": [
@@ -21,22 +21,22 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
-      "reject … solution | reject that solution | extraneous solution | extraneous root": 21,
-      "throw out … solution | throw away … solution | throw out … answer | throw away … answer | throw that out | throw that one out | throw it out": 11
+      "throw out … solution | threw out … solution | throw away … solution | threw away … solution | throw out … answer | threw out … answer | thrown out as | throw it out !there": 5
     },
     "sources": [
-      "khan-algebra",
-      "khan-ap-calc",
-      "khan-middle",
       "micase",
-      "mit-18.03",
-      "yt:nancypi",
-      "yt:organicchem",
-      "yt:patrickjmt"
+      "yt:nancypi"
     ],
-    "counted": "2026-09-26"
-  }
+    "counted": "2026-09-28"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE 全体で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 throw out … solution | threw out … solution | throw away … solution | threw away … solution | throw out … answer | threw out … answer | thrown out as | throw it out !there（5 件。3 件以上）。register は主張しない。",
+      "raised": "2026-09-28"
+    }
+  ]
 }

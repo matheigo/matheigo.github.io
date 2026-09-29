@@ -29,7 +29,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Are we supposed to rationalize the denominator?": "are we supposed to",
   },
   "explaining-solution-first-step": {
-    "First I set the two expressions equal, then I solved for x and checked the answer.": "first i",
+    "First I set the two expressions equal, then I solved for x and checked the answer.": "!the !at first i",
     "What I did was set them equal and solve for x.": "what i did was",
   },
   "office-hours-stuck-at-step": {
@@ -132,11 +132,11 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "assume-it-holds-for-n-k": {
     "Inductive hypothesis: assume the statement is true for n = k.": "inductive hypothesis | induction hypothesis",
-    "Suppose the statement holds for n = k.": "assume … true for | assume that … true for | suppose … true for | assume … holds for | suppose … holds for",
+    "Assume the statement is true for some k ≥ 1.": "assume … true for | assume that … true for | suppose … true for | assume … holds for | suppose … holds for",
   },
   "it-also-holds-for-n-k-1": {
     "Inductive step: we show that the statement also holds for n = k + 1.": "inductive step | induction step",
-    "So it is also true for n = k + 1.": "also true for",
+    "Now we show that it is also true for n = k + 1.": "also true for",
   },
   "the-common-ratio-is-less-than-1": {
     "Since |r| < 1, the series converges.": "the series converges",
@@ -169,9 +169,10 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "You get imaginary solutions.": "imaginary roots | imaginary solutions",
     "There are no real solutions.": "no real solutions | no real roots | no real solution",
   },
+  // other direction alone was a direction in space or an order of integration (Phase 5 監査 11)
   "conversely": {
-    "Conversely, if f′(x) > 0, then f is increasing.": "conversely",
-    "Now for the other direction,": "other direction",
+    "Conversely, if a² + b² = c², then the triangle is a right triangle.": "conversely",
+    "Now for the other direction,": "for the other direction | the other direction of the proof | prove the other direction",
   },
   "rewrite-the-expression": {
     "Let's rewrite this as a single fraction.": "rewrite … as | rewrite this as | rewrite it as",
@@ -202,7 +203,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "let-p-be-the-position-vector-of-p": {
     "Let p be the position vector of P.": "position vector of",
-    "Let p = OP.": "",
+    "Let p = OP⃗.": "",
   },
   "organize-in-a-table": {
     "Let's make a table.": "make a table",
@@ -219,8 +220,9 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Clearly, f(0) = 1.": "clearly",
     "It is clear that f(0) = 1.": "it is clear that | it's clear that",
   },
+  // ⓑ in general was an exercise's part heading, in general form an equation's form (Phase 5 監査 11)
   "in-general": {
-    "In general, this is not true.": "in general",
+    "In general, this is not true.": "!ⓑ in general !form",
   },
   "take-positive-values": {
     "f(x) is always positive.": "is always positive | always positive",
@@ -485,8 +487,9 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Could you give me a hint instead of the answer?": "a hint | any hints | a little hint | some hints",
     "Could you point me in the right direction?": "point me in the right direction | point us in the right direction",
   },
+  // lost points / points off alone were the rules of an upcoming exam or one's own reason; on a math site they are points off a line or a game's score (Phase 5 監査 11)
   "office-hours-why-did-i-lose-points": {
-    "I'm not sure why I lost points here.": "lost points | lose points | took off points | take off points | points off | lost a point | took points off",
+    "I'm not sure why I lost points here.": "why i lost points | lost points on | lost points for | took points off | took off points | why did i lose points",
     "Could you explain what was wrong with my answer?": "what was wrong with my | what's wrong with my | what i did wrong",
   },
   "office-hours-regrade": {
@@ -528,7 +531,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "office-hours-which-course-next": {
     "Should I take Linear Algebra or Calc II next semester?": "should i take | should i be taking | would you recommend taking | do you recommend taking",
-    "Do you think I'm ready for Calc III?": "i'm ready for | am i ready for | ready to take",
+    "Which one would you recommend taking next semester?": "should i take | should i be taking | would you recommend taking | do you recommend taking",
   },
   "office-hours-can-i-come-back": {
     "Can I come back if I get stuck again?": "can i come back | could i come back | if i come back | come back later | come back tomorrow | come back next week | stop by again | come by again | come back if",
@@ -538,16 +541,18 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Thanks, that really helps.": "that really helps | that helps a lot | that helped a lot | that's helpful !to | that was helpful | that's very helpful | that was really helpful | that's really helpful | that's so helpful",
     "That makes a lot more sense now.": "that makes more sense now | it makes more sense now | makes a lot more sense now | makes sense now | makes more sense then | starting to make sense",
   },
+  // the idea here is that ... explained a concept, not a plan (Phase 5 監査 11)
   "explaining-solution-overall-plan": {
-    "The idea is to find the intersection points first and then integrate.": "the idea is to | the idea here is | the idea was to | the basic idea is | the whole idea is",
-    "My plan was to find where the curves meet and then integrate.": "my plan was | the plan is | our plan is | the plan was | my plan is | the game plan",
+    "The idea is to find the intersection points first and then integrate.": "the idea is to | the idea here is to | the idea was to | the basic idea is to | the whole idea is to",
+    "My plan was to find where the curves meet and then integrate.": "my plan was | my plan is | our plan is | the game plan",
   },
   "explaining-solution-let-x-be": {
     "For the width, I just called it x.": "call it x | called it x | call that x | call this x",
     "I let x be the width of the rectangle.": "let x be | let x equal | let x equals | let x represent | let x stand for",
   },
+  // write the equation of a line was finding a line's equation, not setting one up (Phase 5 監査 11)
   "explaining-solution-set-up-an-equation": {
-    "First I wrote an equation from the given information.": "write an equation | wrote an equation | write down an equation | write the equation",
+    "First I wrote an equation from the given information.": "write an equation !of | wrote an equation !of | write down an equation | write the equation !of !in !as !this !for",
     "I set up an equation from what the problem says.": "set up an equation | set up the equation | set up equations | set up a system",
   },
   "explaining-solution-isolated-x": {
@@ -555,21 +560,25 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "I got x by itself.": "x by itself | x alone | x all by itself",
     "Then I isolated x.": "isolate x | isolate the x | isolate the variable",
   },
+  // bare 'back into the original' counted the en's own plug ... back into twice; plug back in what u was undoes a u-substitution (Phase 5 監査 11)
   "explaining-solution-plugging-back-in": {
-    "When I plugged it back in, I got 17, so it checks out.": "plug … back in | plug back in | plug … back into",
-    "I substituted it back into the original equation.": "substitute it back | substitute that back | substitute … back into the original | back into the original",
+    "When I plugged it back in, I got 17, so it checks out.": "plug … back in !what !for | plug back in !what !for | plug … back into",
+    "I substituted it back into the original equation.": "substitute it back | substitute that back | substitute … back into the original",
   },
+  // everything to the left alone was mostly a number line (shade everything to the left of 2) (Phase 5 監査 11)
   "explaining-solution-moved-everything-to-one-side": {
     "I moved everything to one side.": "everything to one side | everything on one side | all to one side | everything over to one side | all on one side",
-    "I got everything on the left side.": "everything on the left | everything to the left | everything over to the left | everything on the left side",
+    "I got everything on the left side.": "everything to the left side | everything over to the left | move everything to the left | everything on the left side",
   },
   "explaining-solution-factored-and-set-to-zero": {
     "I factored it and set each factor equal to zero.": "each factor equal to zero | each factor equal to 0 | each factor to zero | set each factor | each factor is equal to zero",
     "Then I used the zero product property.": "zero product property | zero-product property | zero product rule",
   },
+  // extraneous solution is its own term (extraneous-solution), not throwing out a solution; bare thrown out / throw that out were mostly
+  // another sense (thrown out of school, I just throw that out for discussion) (Phase 5 監査 11)
   "explaining-solution-threw-out-a-solution": {
-    "I rejected the negative solution because a length can't be negative.": "reject … solution | reject that solution | extraneous solution | extraneous root",
-    "I threw out the negative solution.": "throw out … solution | throw away … solution | throw out … answer | throw away … answer | throw that out | throw that one out | throw it out",
+    "I threw out the negative solution because a length can't be negative.": "throw out … solution | threw out … solution | throw away … solution | threw away … solution | throw out … answer | threw out … answer | thrown out as | throw it out !there",
+    "I rejected the negative solution because a length can't be negative.": "reject … solution | reject that solution",
   },
   "explaining-solution-used-the-rule": {
     "I used the chain rule here.": "use the … rule | using the … rule",
@@ -606,32 +615,36 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "So I got 12.": "",
     "And that gives us 12.": "",
   },
+  // units of alone was mostly units in general (a unit of mass, units of time, a unit of labor) (Phase 5 監査 11)
   "explaining-solution-with-units": {
     "So the velocity is 4 meters per second.": "meters per second | feet per second | miles per hour | per second squared",
-    "The units are meters per second.": "the units are | the units would be | the units will be | units of | in units of",
+    "The units are meters per second.": "the units are | the units would be | the units will be | the units are going to be | in units of",
   },
   "explaining-solution-in-context": {
     "So this means the tank is draining at 3 liters per minute at t = 5.": "so this means | what this means is",
     "In context, that means the tank is losing 3 liters per minute.": "in context | in the context of the problem | in the context of this problem",
   },
+  // not sure about / might be wrong were often about someone else (if you're not sure about that) (Phase 5 監査 11)
   "explaining-solution-not-sure-about-this-step": {
-    "I'm not totally sure about this step.": "not sure about | not totally sure | not really sure | not quite sure | not entirely sure | not a hundred percent sure",
-    "This part might be wrong.": "might be wrong | could be wrong | may be wrong",
+    "I'm not totally sure about this step.": "i'm not sure about | i'm not totally sure | i'm not really sure | i'm not quite sure | i'm not entirely sure | i'm not a hundred percent sure",
+    "This part might be wrong.": "i might be wrong | i could be wrong | i may be wrong | this might be wrong | this could be wrong | that might be wrong | that could be wrong",
   },
+  // the en's key part gains its own 'I made a mistake', which carries the intent (Phase 5 監査 11)
   "explaining-solution-let-me-back-up": {
-    "Wait, let me back up — I made a mistake here.": "let me back up | let's back up | back up a little | back up a second | back up a step",
-    "Actually, scratch that.": "scratch that",
+    "Wait, let me back up — I made a mistake here.": "let me back up | let's back up | back up a little | back up a second | back up a step | i made a mistake | made a mistake here",
+    "Wait, I take that back.": "take that back !up",
   },
+  // that can't be true closed a proof by contradiction; both key parts narrowed alike (Phase 5 監査 11)
   "explaining-solution-that-cant-be-right": {
-    "Wait, that can't be right — a probability can't be bigger than 1.": "that can't be right | that cannot be right | that can't be true",
-    "Hmm, that doesn't seem right.": "doesn't seem right | does not seem right | doesn't look right | does not look right",
+    "Wait, that can't be right — a probability can't be bigger than 1.": "that can't be right | that cannot be right",
+    "Hmm, that doesn't seem right.": "doesn't seem right | does not seem right | !still doesn't look right | does not look right",
   },
   "explaining-solution-that-makes-sense": {
     "That makes sense, because the answer should be a little less than 10.": "makes sense because | make sense because",
     "That seems reasonable, since it should be a little less than 10.": "seems reasonable | seem reasonable | sounds reasonable",
   },
   "explaining-solution-matches-the-other-way": {
-    "I got the same answer as before, so it's probably right.": "same answer as before | the same answer as | same answer we got | same answer i got",
+    "I got the same answer as before, so it's probably right.": "same answer as before | the same answer as !long | same answer we got | same answer i got",
     "This matches what we got the other way.": "matches what we got | matches what i got | agrees with what we got | agrees with what i got",
   },
   "explaining-solution-another-way": {
@@ -646,9 +659,10 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "I found the critical points by setting the derivative equal to zero.": "find the critical points | found the critical points",
     "I took the derivative and set it equal to zero.": "derivative and set it equal to | derivative and set it to | set the derivative equal to | set the derivative to | derivative equal to zero",
   },
+  // the two key parts now both take end points (two words), as the captions spell it (Phase 5 監査 11)
   "explaining-solution-checked-the-endpoints": {
-    "I also checked the endpoints.": "check the endpoints | checked the endpoints | check the end points | checked the end points",
-    "I plugged in the endpoints too.": "plug in the endpoints | plugged in the endpoints | evaluate at the endpoints | evaluated at the endpoints",
+    "I also checked the endpoints.": "check … endpoints | check … end points | check the endpoint | check the end point",
+    "I plugged in the endpoints too.": "plug in the endpoints | plugged in the endpoints | plug in the end points | plugged in the end points | plug in the end point | evaluate at the endpoints | evaluated at the endpoints",
   },
   "explaining-solution-used-a-calculator": {
     "I used my calculator to get a decimal approximation at the end.": "use a calculator | use my calculator | use your calculator | on my calculator | on your calculator",
@@ -661,9 +675,10 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "I'm assuming the speed is constant.": "i'm assuming | i am assuming | we're assuming | we are assuming",
     "This only works if the speed is constant.": "only works if | only work if",
   },
+  // wrote is an irregular past, not folded with write: both key parts list both tenses (Phase 5 監査 11)
   "explaining-solution-rewrote-it-as": {
-    "I rewrote it as (x − 3)^2 + 1.": "rewrote it as | rewrite it as | rewrote this as | rewrite this as | rewrote that as | rewrite that as",
-    "I wrote it as (x − 3)^2 + 1 instead.": "wrote it as | wrote this as | wrote that as",
+    "I wrote it as (x − 3)² + 1.": "wrote it as | write it as | wrote this as | write this as | wrote that as | write that as",
+    "I rewrote it as (x − 3)² + 1.": "rewrote it as | rewrite it as | rewrote this as | rewrite this as | rewrote that as | rewrite that as",
   },
   "explaining-solution-tried-small-cases": {
     "I plugged in some numbers first to get a feel for it.": "plug in some numbers | plug in a few | try some numbers | try some values",

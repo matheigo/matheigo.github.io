@@ -3,7 +3,7 @@
   "situation": "explaining-solution",
   "intent": "別の方法で出した答えと一致したと言う",
   "en": "I got the same answer as before, so it's probably right.",
-  "ja": "別の方法で出した答えと一致します。",
+  "ja": "前に（別の方法で）出した答えと同じになったので、たぶん合っています。",
   "register": "neutral",
   "variants": [
     {
@@ -21,10 +21,10 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
-      "same answer as before | the same answer as | same answer we got | same answer i got": 11
+      "same answer as before | the same answer as !long | same answer we got | same answer i got": 10
     },
     "sources": [
       "khan-algebra",
@@ -34,6 +34,6 @@
       "mit-18.06",
       "yt:patrickjmt"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-28"
   }
 }

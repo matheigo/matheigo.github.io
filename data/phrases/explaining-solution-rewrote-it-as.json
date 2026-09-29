@@ -2,13 +2,13 @@
   "id": "explaining-solution-rewrote-it-as",
   "situation": "explaining-solution",
   "intent": "式を別の形に書き直したと説明する",
-  "en": "I rewrote it as (x − 3)^2 + 1.",
+  "en": "I wrote it as (x − 3)² + 1.",
   "ja": "(x − 3)² + 1 の形に書き直しました。",
   "register": "neutral",
   "variants": [
     {
-      "en": "I wrote it as (x − 3)^2 + 1 instead.",
-      "register": "casual"
+      "en": "I rewrote it as (x − 3)² + 1.",
+      "register": "neutral"
     }
   ],
   "tags": [
@@ -21,11 +21,11 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "evidence": {
     "spoken": {
-      "rewrote it as | rewrite it as | rewrote this as | rewrite this as | rewrote that as | rewrite that as": 233,
-      "wrote it as | wrote this as | wrote that as": 15
+      "wrote it as | write it as | wrote this as | write this as | wrote that as | write that as": 776,
+      "rewrote it as | rewrite it as | rewrote this as | rewrite this as | rewrote that as | rewrite that as": 233
     },
     "sources": [
       "khan-algebra",
@@ -38,11 +38,13 @@
       "mit-18.03",
       "mit-18.06",
       "mit-6.042",
+      "yt:3blue1brown",
+      "yt:blackpenredpen",
       "yt:nancypi",
       "yt:organicchem",
       "yt:patrickjmt",
       "yt:profleonard"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-09-28"
   }
 }
