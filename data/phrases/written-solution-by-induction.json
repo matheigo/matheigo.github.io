@@ -7,8 +7,9 @@
   "register": "written",
   "variants": [
     {
-      "en": "By mathematical induction, the statement holds for all n ≥ 1.",
-      "register": "written"
+      "en": "By the principle of mathematical induction, the statement holds for all n ≥ 1.",
+      "register": "written",
+      "note": "Levin（4.5 Proof by Induction）の締めの言い方。"
     }
   ],
   "tags": [
@@ -19,17 +20,23 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "4.5 Proof by Induction（by the principle of mathematical induction。variant）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "written": {
-      "by induction": 37
+      "by induction !hypothesis": 34
     },
     "sources": [
       "mit-notes"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-10-07"
   }
 }

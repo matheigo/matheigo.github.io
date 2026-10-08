@@ -7,6 +7,10 @@
   "register": "written",
   "variants": [
     {
+      "en": "Thus x = 3 is the only solution.",
+      "register": "written"
+    },
+    {
       "en": "Hence x = 3 is the only solution.",
       "register": "written"
     },
@@ -26,10 +30,11 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "written": {
       "therefore": 1293,
+      "thus": 631,
       "hence": 201
     },
     "sources": [
@@ -42,6 +47,6 @@
       "openstax-prealgebra",
       "openstax-precalculus"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-10-07"
   }
 }

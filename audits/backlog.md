@@ -154,3 +154,17 @@
 | 143 | 監査 12（12 フレーズの r2） | 要の部分が意図の一部しか運ばず、意図を運ぶ形が 0 件のとき、intent を広げるか（class-asking-why-can-we、監査 11）、意図を運ぶ形に絞って Math Stack Exchange で数えるか（バッチ 38 のほかの項目）の決まりが無い | 台帳の intent を保つ方（絞って MSE）を先にし、それでも 3 件に届かないときに広げるか人間に回す | why-can-we は人間レビュー第 3 週で妥当。今の文は誤りではない |
 | 144 | 監査 12（12 フレーズの r3） | 「同じ働きで対象だけが違うものは数える」を一般の動詞（throw out）に当てると、論文の文・一覧・索引語を捨てる文まで数え、解・答えを捨てる文（2）と同じ操作の文（4〜6）で likely ／ draft の境（3 件）をまたぐ。目的語が数学の対象かを読むかが決まっていない | 動詞が一般の語のときは目的語の種類まで読む、などを決める | en は変わらず、confidence と flag だけが変わる |
 | 145 | 監査 12（12 フレーズの r3） | 読んでも同数のとき（MICASE だけの学生の場面は重みも同じ）の決め方が無い（thanks-that-helps は 3 件未満で MSE の段に入って決まった） | 読んでも同数なら id・intent・ja に合う台帳の 1 つ目の文 | 中身は間違わない（どちらの文も意図どおり） |
+| 146 | 監査 12（バッチ 40 の r1・r3） | phrases の variants[].note の判定の説明（「数えない」）を validate が拾わない（wording.ts NOTE_FIELDS は phrases の notes だけ） | NOTE_FIELDS の phrases に variants の note を足す（backlog 98 と一緒に） | バッチ 40 の 4 つは直した。discord-same-answer・discord-thanks はバッチ 42 |
+| 147 | 監査 12（バッチ 40 の r1） | 要の部分の語形変化が、分詞・動名詞の構文（Using the … theorem, ／ combining these ／ completing the proof）を命令・不定詞の別の働き（Use the … theorem to …、combine like terms、to complete the proof）と一緒に数える | 語形変化をまとめない印を形に足すか、!to ・!then などで除く決まりを書く | **en が変わる**。監査では決定 1 の読みで当て、バッチ 40 で 3 項目直した |
+| 148 | 監査 12（バッチ 40 の r1） | 名詞だけの要の部分（the inequality sign、極限の名前）が意図と反対の文も数え、同数の首位が文書の順で決まる | written-solution の要の部分は意図の述語（stays the same ・are equal）を含む形にする | 決定 1 の読みで当てる。バッチ 40 で 2 項目直した |
+| 149 | 監査 12（バッチ 40 の r1・r2） | intent が対象を名指しするとき（実数の 2 乗、底、定理の仮定）に、働きで読むか対象で読むか（backlog 130 の続き） | 決まりを書く | 監査 12 は働きで読んだ（squares-are-nonnegative・the-base-is-greater-than-1 は likely のまま、hypotheses-are-met は intent の定理で読んで en のまま） |
+| 150 | 監査 12（バッチ 40 の r1） | phrases どうしで要の部分・en が重なる（where と written-solution-for-some-integer の where … is an integer） | 要の部分の重なりを一覧にする | どちらの文も正しい |
+| 151 | 監査 12（バッチ 40 の r1） | notes ・出典の note の参照の英語の引用（This completes the proof.）が参照にあるかを機械で確かめていない（source-mentions は資料の名前だけ） | 引用を refgrep で確かめる一覧を作る | **事実が間違う**。IM 2.14 の文は監査 12 で直した |
+| 152 | 監査 12（バッチ 40 の r2） | OpenStax の CNXML の図のキャプションが本文として数えられる（the graph shows の多くは図の説明） | cnxmlToText で caption を外すか、2 位の要の部分も読む | from-the-graph は形で直した。外すと全コレクションの件数が変わるので公開の後 |
+| 153 | 監査 12（バッチ 40 の r2・r3） | 生成で台帳の言い方を替えたり落としたりしても記録が残らない（i-e の that is, → that is to say、therefore の Thus） | 台帳の en の選択肢とエントリの en ・variants の差を一覧にする（backlog 123 ・137 の続き） | **en が変わる**（i-e は監査 12 で直した） |
+| 154 | 監査 12（バッチ 40 の r2） | 書き言葉の候補に記号の形（let x = the number of …、n → ∞）を数えるかの決まりが無い（STYLE の「= を書いた形は equal と読む同じ言い方」は話し言葉の見出しの決まり） | 決まりを書く | written-solution-let は足さなかった（参照は let … be だけ）。今の en は正しい |
+| 155 | 監査 12（バッチ 40 の r2） | corpus-human-settled のフレーズで、人間が決めたのが型か文かを flag の note が書き分けていない（given-prove の例の数学の誤りが「人間の文」として残った） | note に型か文かを書く | given-prove は監査 12 で直した |
+| 156 | 監査 12（バッチ 40 の r3） | 「同数は読んで決める」の同数が重み付け前か後かが決まっていない（exam-indicate-units は 7 対 7、重み付けで 7.28 ／ 7.03） | 重み付け前の同数（か差が重みだけによるもの）も読む、と書く | 監査 12 は読んで決めた |
+| 157 | 監査 12（バッチ 40 の r3） | exam の書く文（問題文の指示）を書き言葉で数えると、教科書の説明の平叙文・節の題・学習目標も当たる（backlog 136 の exam 版） | 命令形と平叙文を分ける形を足す | exam-express-in-terms-of は読み方で ② の順が変わりうる（監査 12 は手順の命令形も同じ働きと読んだ） |
+| 158 | 監査 12（バッチ 40 の r3） | 学生の場面で Math Stack Exchange に進むとき、物の名前だけの要の部分（scratch paper、exam back）を数えてよいか | 依頼・問いの形にする（監査 11 のバッチ 38 の前例）と書く | exam-ask-scratch-paper は依頼の形にして 0 件で人間レビューに |
+| 159 | 監査 12（バッチ 40 の r3） | probe --decide が、同じブロックの we have that と we have … = を 1 つの行にまとめる | 理由を調べる | 道具のずれ。中身は間違わない |

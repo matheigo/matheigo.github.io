@@ -2,12 +2,12 @@
   "id": "written-solution-by-the-theorem",
   "situation": "written-solution",
   "intent": "答案で定理を根拠に挙げる（〜の定理より）",
-  "en": "Using the Pythagorean Theorem, AC = 5.",
+  "en": "By the Pythagorean Theorem, AC = 5.",
   "ja": "三平方の定理より AC = 5。",
   "register": "written",
   "variants": [
     {
-      "en": "By the Pythagorean Theorem, AC = 5.",
+      "en": "Using the Pythagorean Theorem, AC = 5.",
       "register": "written"
     },
     {
@@ -25,11 +25,11 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "written": {
-      "using the … theorem": 272,
-      "by the … theorem": 60,
+      "using the … theorem,": 18,
+      "!guaranteed !predicted !implied by the … theorem": 55,
       "follows from the … theorem": 1
     },
     "sources": [
@@ -42,6 +42,6 @@
       "openstax-prealgebra",
       "openstax-precalculus"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-10-07"
   }
 }

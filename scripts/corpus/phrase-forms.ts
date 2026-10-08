@@ -22,7 +22,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Could you repeat that last part?": "could you repeat | can you repeat",
     "Sorry, what did you say?": "what did you say",
   },
-  // The variants are three different questions, not three ways to ask one (see the Phase 3 prep report).
+  // Three ways to ask what the instruction "simplify" means (narrowed to one intent in Phase 3; DECISIONS 750)
   "exam-clarify-instruction": {
     "What do you mean by \"simplify\" here?": "what do you mean by",
     "When it says \"simplify,\" do you want us to rationalize the denominator?": "do you want us to",
@@ -39,6 +39,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "written-solution-therefore": {
     "Therefore x = 3 is the only solution.": "therefore",
+    "Thus x = 3 is the only solution.": "thus",
     "Hence x = 3 is the only solution.": "hence",
     "So x = 3 is the only solution.": "",
   },
@@ -108,9 +109,10 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Rationalize first, then take the limit.": "rationalize",
     "Multiply by the conjugate, and then take the limit.": "multiply by the conjugate | multiply … by the conjugate",
   },
+  // the limits' names alone were mostly definitions and exercises; 22 to 22 after weighting was read (Phase 5 監査 12)
   "the-one-sided-limits-agree": {
-    "Since the left-hand and right-hand limits are equal, the limit exists.": "left-hand and right-hand limits | left- and right-hand limits | right-hand and left-hand limits",
-    "Since the one-sided limits are equal, the limit exists.": "one-sided limits",
+    "Since the left-hand and right-hand limits are equal, the limit exists.": "left-hand and right-hand limits … equal | left- and right-hand limits … equal | right-hand and left-hand limits … equal | left-hand and right-hand limits are the same | left- and right-hand limits are the same",
+    "Since the one-sided limits are equal, the limit exists.": "one-sided limits … equal | one-sided limits agree | one-sided limits are the same",
   },
   "differentiate-the-outside-first": {
     "Take the derivative of the outside first.": "derivative of the outside | derivative of the outer",
@@ -124,7 +126,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "the-derivative-is-zero": {
     "The graph of f has a horizontal tangent at x = a.": "horizontal tangent",
-    "The derivative is zero at x = a.": "derivative is zero | derivative equals zero | derivative is equal to zero",
+    "The derivative is zero at x = a.": "!second !partial !its !whose derivative is zero | !second !partial !its !whose derivative equals zero | !second !partial !its !whose derivative is equal to zero",
   },
   "continuous-but-not-differentiable": {
     "It's continuous at 0, but it's not differentiable there.": "not differentiable",
@@ -141,11 +143,12 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   "the-common-ratio-is-less-than-1": {
     "Since |r| < 1, the series converges.": "the series converges",
   },
-  // The human's en (監査 12 の前の決定 3). multiply … by r alone was mostly polar coordinates, a Jacobian, a radius (Phase 5 監査 11)
+  // The human's en (監査 12 の前の決定 3). multiply … by r alone was mostly polar coordinates, a Jacobian, a radius (Phase 5 監査 11);
+  // subtract one from the other was mostly a distance, rational expressions; multiply both sides by r alone was r² in physics, a formula, polar (監査 12)
   "multiply-by-r-and-subtract": {
-    "Multiply both sides by r, then subtract the two equations.": "multiply both sides by r",
+    "Multiply both sides by r, then subtract the two equations.": "multiply both sides by r, then subtract | multiply both sides by r and subtract | multiply … by r and subtract",
     "Multiply every term by r.": "multiply every term by r | multiply each term by r",
-    "Subtract one equation from the other.": "subtract one equation from the other | subtract one from the other | subtract the two equations | subtract these two equations",
+    "Subtract one equation from the other.": "subtract one equation from the other | subtract the two equations | subtract these two equations",
   },
   "find-the-pattern": {
     "Do you see a pattern?": "see a pattern | see the pattern",
@@ -185,7 +188,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Find all solutions in the interval [0, 2π).": "in the interval",
   },
   "the-base-is-greater-than-1": {
-    "Since the base is greater than 1, the inequality sign stays the same.": "the inequality sign",
+    "Since the base is greater than 1, the inequality sign stays the same.": "inequality stays the same | inequality … stays the same",
     "Since the base is greater than 1, the direction of the inequality does not change.": "direction of the inequality",
   },
   "split-at-the-median": {
@@ -231,7 +234,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "take-positive-values": {
     "f(x) is always positive.": "is always positive | always positive",
-    "f takes only positive values.": "takes only positive values | takes positive values | only positive values",
+    "f takes only positive values.": "takes only positive values | takes positive values | takes on only positive values | takes on positive values",
   },
   "apply-the-theorem": {
     "Now we can use the mean value theorem.": "use the … theorem",
@@ -720,16 +723,17 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   // The closing of a proof only (Phase 5 監査 5 バッチ 16, moved here with terms/end-of-proof by 監査 6 の決定 11):
   // "as desired" closes OpenStax Calculus's proofs (", as desired." □), not "as small as desired"; "completes the proof"
   // is the closing sentence, not "Complete the proof that …" (an exercise)
+  // to / then complete the proof and having completed the proof were plans, not the closing line; as required by … meant a condition (Phase 5 監査 12)
   "written-solution-as-desired": {
-    "This completes the proof.": "this completes the proof !that !of | which completes the proof !that !of | completes the proof. | completes the proof, | completing the proof !that !of",
+    "This completes the proof.": "this completes the proof !that !of | which completes the proof !that !of | !having !then !to completes the proof. | !having !then !to completes the proof, | !having !then !to completing the proof !that !of",
     "Hence a + b is even, as desired.": "!small !large !close !accurate !accurately as desired. | !small !large !close !accurate !accurately as desired,",
-    "Hence a + b is even, as required.": "as required",
+    "Hence a + b is even, as required.": "as required. | as required,",
     "Hence a + b is even, which is what we wanted to show.": "what we wanted to show | what we wanted to prove | what we needed to show",
     "∎": "",
   },
   "written-solution-note-that": {
-    "Notice that x^2 + 1 > 0 for all x.": "notice that",
-    "Note that x^2 + 1 > 0 for all x.": "note that",
+    "Notice that x² + 1 > 0 for all x.": "notice that",
+    "Note that x² + 1 > 0 for all x.": "note that",
   },
   "written-solution-similarly": {
     "Similarly, BD = CE.": "similarly",
@@ -739,7 +743,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "On the other hand, f(3) < 0.": "on the other hand",
   },
   "written-solution-we-have": {
-    "We have that f(2) = 5, so f has a zero in (2, 3).": "we have that",
+    "We have that f(2) = 5, so the point (2, 5) is on the graph of f.": "we have that",
     "We get that f(2) = 5.": "we get that",
   },
   "written-solution-taking-the-limit": {
@@ -762,29 +766,31 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "The solution is x = 3.": "the solution is | the solutions are | the solution set is",
     "Answer: x = 3": "",
   },
+  // combining these alone folded combine like terms, compose functions, add forces (Phase 5 監査 12)
   "written-solution-combining": {
-    "Combining these two results, we get x = 2.": "combining these | combining the two | combining this with | combining both",
     "Putting this together, x = 2.": "putting this together | putting these together | putting it all together | putting everything together",
+    "Combining these two results, we get x = 2.": "combining these two results | combining these results | combining the two results | combining these … equalities | combining these … inequalities | combining these … equations | combining these … approximations | combining these … conditions | combining these … cases | combining this with | combining both",
     "From (1) and (2), x = 2.": "",
   },
   "written-solution-by-induction": {
-    "By induction, the statement holds for all n ≥ 1.": "by induction",
-    "By mathematical induction, the statement holds for all n ≥ 1.": "by mathematical induction | by the principle of mathematical induction",
+    "By induction, the statement holds for all n ≥ 1.": "by induction !hypothesis",
+    "By the principle of mathematical induction, the statement holds for all n ≥ 1.": "by mathematical induction | by the principle of mathematical induction",
   },
   "written-solution-it-suffices-to-show": {
     "It suffices to show that f′(x) > 0.": "it suffices to show | it suffices to prove | suffices to show",
     "It is enough to show that f′(x) > 0.": "it is enough to show | it's enough to show | enough to show that",
   },
   "written-solution-given-prove": {
-    "Given: AB ≅ CD. Prove: △ABC ≅ △CDA.": "given … prove",
+    "Given: AB = CD, AB ∥ CD. Prove: △ABC ≅ △CDA.": "given … prove",
   },
   "written-solution-i-e": {
-    "f is increasing on (0, ∞), i.e., f′(x) > 0 there.": "i.e.",
-    "f is increasing on (0, ∞); that is to say, f′(x) > 0 there.": "that is to say",
+    "The tangent line at x = 1 is horizontal; that is, f′(1) = 0.": "that is,",
+    "The tangent line at x = 1 is horizontal, i.e., f′(1) = 0.": "i.e.",
   },
+  // using the … theorem folded the imperative "Use the … theorem to find …" of the exercises (Phase 5 監査 12)
   "written-solution-by-the-theorem": {
-    "Using the Pythagorean Theorem, AC = 5.": "using the … theorem",
-    "By the Pythagorean Theorem, AC = 5.": "by the … theorem",
+    "By the Pythagorean Theorem, AC = 5.": "!guaranteed !predicted !implied by the … theorem",
+    "Using the Pythagorean Theorem, AC = 5.": "using the … theorem,",
     "It follows from the Pythagorean Theorem that AC = 5.": "follows from the … theorem",
   },
   "written-solution-hypotheses-are-met": {
@@ -793,18 +799,17 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "written-solution-conclusion-because-reason": {
     "f changes from increasing to decreasing at x = 2, so f has a relative maximum there.": "changes from increasing to decreasing | changes from decreasing to increasing",
-    "f has a relative minimum at x = 2 because f′ changes from negative to positive there.": "changes from negative to positive | changes from positive to negative | changes sign from negative to positive | changes sign from positive to negative",
+    "f has a relative maximum at x = 2 because f′ changes from positive to negative there.": "changes from negative to positive | changes from positive to negative | changes sign from negative to positive | changes sign from positive to negative",
   },
   "written-solution-from-the-graph": {
     "From the graph, f(2) = 3.": "from the graph | from the graphs",
-    "The graph shows that f(2) = 3.": "the graph shows | graph shows that",
+    "The graph shows that f(2) = 3.": "graph shows that | graphs show that",
   },
   "written-solution-no-solution": {
     "Therefore, there is no solution.": "no solution | no solutions",
     "The equation has no real solutions.": "no real solution | no real solutions | no real roots",
   },
   "written-solution-let-epsilon-be-given": {
-    "For any ε > 0, there is a δ > 0 such that |f(x) − L| < ε whenever 0 < |x − a| < δ.": "for any ε | for every ε | for all ε | given any ε",
     "Let ε > 0 be given.": "let ε > zero be given | ε > zero be given | let ε > zero",
   },
   "exam-show-that": {
@@ -842,15 +847,19 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "exam-determine-whether": {
     "Determine whether the series converges or diverges.": "determine whether",
+    "Determine if the series converges or diverges.": "determine if",
+    "Decide whether the series converges or diverges.": "decide whether",
     "Tell whether the series converges or diverges.": "tell whether",
   },
   "exam-interpret-in-context": {
     "Interpret the meaning of f′(5) in context.": "in context",
     "Interpret the meaning of f′(5) in the context of the problem.": "in the context of the problem | in the context of this problem",
   },
+  // 7 to 7 read: include 5-6, appropriate 4 (unit conversions, Kepler's law) (Phase 5 監査 12)
   "exam-indicate-units": {
-    "Use appropriate units.": "appropriate units | correct units",
-    "Indicate units of measure.": "indicate units | include units | include the units",
+    "Include units in your answer.": "include units | include the units",
+    "Indicate units of measure.": "indicate units",
+    "Use appropriate units.": "appropriate units !conversions | !the correct units",
   },
   "exam-use-the-table-to-approximate": {
     "Use the table to approximate R′(5).": "use the table to | using the table",
@@ -906,8 +915,9 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Should this be f(2) instead of f(3)?": "should this be | should that be",
     "Is there a typo in number 4?": "a typo | typo in",
   },
+  // scratch paper alone named the thing, not a request for it (Phase 5 監査 12)
   "exam-ask-scratch-paper": {
-    "Could I have another sheet of scratch paper?": "scratch paper | another sheet",
+    "Could I have another sheet of scratch paper?": "another sheet of scratch paper | more scratch paper | extra scratch paper | another sheet of paper",
     "Can I get some more paper?": "more paper",
   },
   "exam-ask-can-i-write-on-the-back": {

@@ -18,10 +18,15 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "8.6 Solve Rational Equations・9.6 Solve Equations with Square Roots（extraneous solution）、10.4 Solve Applications Modeled by Quadratic Equations（eliminate the negative solution）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "written": {
       "is extraneous | are extraneous | extraneous solution | extraneous solutions": 51,
@@ -33,6 +38,9 @@
       "openstax-elemalg",
       "openstax-intalg"
     ],
-    "counted": "2026-09-26"
-  }
+    "counted": "2026-10-07"
+  },
+  "notes": [
+    "無縁解（もとの方程式を満たさない値）を除くときの言い方。長さが負になるなど問題の条件で除く値は extraneous と呼ばず、OpenStax Elementary Algebra（10.4）は eliminate the negative solution のように書く（フレーズ explaining-solution-threw-out-a-solution）。"
+  ]
 }

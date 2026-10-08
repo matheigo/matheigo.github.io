@@ -2,12 +2,12 @@
   "id": "written-solution-i-e",
   "situation": "written-solution",
   "intent": "答案で「すなわち」と言い換える",
-  "en": "f is increasing on (0, ∞), i.e., f′(x) > 0 there.",
-  "ja": "f は (0, ∞) で増加、すなわち f′(x) > 0 である。",
+  "en": "The tangent line at x = 1 is horizontal; that is, f′(1) = 0.",
+  "ja": "x = 1 における接線は水平、すなわち f′(1) = 0 である。",
   "register": "written",
   "variants": [
     {
-      "en": "f is increasing on (0, ∞); that is to say, f′(x) > 0 there.",
+      "en": "The tangent line at x = 1 is horizontal, i.e., f′(1) = 0.",
       "register": "written"
     }
   ],
@@ -21,18 +21,22 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "written": {
-      "i.e.": 84,
-      "that is to say": 1
+      "that is,": 297,
+      "i.e.": 84
     },
     "sources": [
       "mit-notes",
       "openstax-algtrig",
       "openstax-calculus",
-      "openstax-introstats"
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-introstats",
+      "openstax-prealgebra",
+      "openstax-precalculus"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-10-07"
   }
 }

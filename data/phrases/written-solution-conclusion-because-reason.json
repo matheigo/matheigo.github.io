@@ -3,11 +3,11 @@
   "situation": "written-solution",
   "intent": "答案で結論と理由を 1 文で書く（極値の判定）",
   "en": "f changes from increasing to decreasing at x = 2, so f has a relative maximum there.",
-  "ja": "f′ が x = 2 で負から正に変わるので、f は x = 2 で極小となる。",
+  "ja": "f は x = 2 で増加から減少に変わるので、x = 2 で極大となる。",
   "register": "written",
   "variants": [
     {
-      "en": "f has a relative minimum at x = 2 because f′ changes from negative to positive there.",
+      "en": "f has a relative maximum at x = 2 because f′ changes from positive to negative there.",
       "register": "written"
     }
   ],
@@ -18,10 +18,16 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "exam（changes from negative to positive）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "written": {
       "changes from negative to positive | changes from positive to negative | changes sign from negative to positive | changes sign from positive to negative": 3,
@@ -32,6 +38,9 @@
       "openstax-algtrig",
       "openstax-calculus"
     ],
-    "counted": "2026-09-26"
-  }
+    "counted": "2026-10-07"
+  },
+  "notes": [
+    "AP Calculus の CED の採点例（試験の章 Question 2）は、理由の行を f′ の符号の変化（negative から positive）で書く。f の増減で結論を書くときも、f′ の符号から増減を言う行を前に置くと理由がはっきりする。"
+  ]
 }

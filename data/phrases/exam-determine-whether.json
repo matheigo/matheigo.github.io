@@ -7,6 +7,14 @@
   "register": "written",
   "variants": [
     {
+      "en": "Determine if the series converges or diverges.",
+      "register": "written"
+    },
+    {
+      "en": "Decide whether the series converges or diverges.",
+      "register": "written"
+    },
+    {
       "en": "Tell whether the series converges or diverges.",
       "register": "written"
     }
@@ -21,10 +29,12 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "written": {
       "determine whether": 612,
+      "decide whether": 39,
+      "determine if": 267,
       "tell whether": 4
     },
     "sources": [
@@ -37,6 +47,6 @@
       "openstax-prealgebra",
       "openstax-precalculus"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-10-07"
   }
 }

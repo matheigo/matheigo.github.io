@@ -3,7 +3,7 @@
   "situation": "exam",
   "intent": "試験中に問題文の誤植を確認する",
   "en": "Should this be f(2) instead of f(3)?",
-  "ja": "4 番の問題文、誤植ではありませんか。",
+  "ja": "ここは f(3) ではなく f(2) ではありませんか。",
   "register": "neutral",
   "variants": [
     {
@@ -21,7 +21,7 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "spoken": {
       "should this be | should that be": 3,
@@ -30,13 +30,13 @@
     "sources": [
       "micase"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-10-07"
   },
   "flags": [
     {
       "code": "corpus-attested-only",
       "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 should this be | should that be（3 件。3 件以上）。register は主張しない。",
-      "raised": "2026-09-26"
+      "raised": "2026-10-07"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "situation": "written-solution",
   "intent": "その点で微分係数が 0 になる（接線が水平になる）と書く",
   "en": "The graph of f has a horizontal tangent at x = a.",
-  "ja": "f′(a) = 0 なので、x = a で接線は水平である。",
+  "ja": "f のグラフは x = a で水平な接線をもつ。",
   "register": "written",
   "variants": [
     {
@@ -21,16 +21,16 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "written": {
       "horizontal tangent": 19,
-      "derivative is zero | derivative equals zero | derivative is equal to zero": 12
+      "!second !partial !its !whose derivative is zero | !second !partial !its !whose derivative equals zero | !second !partial !its !whose derivative is equal to zero": 7
     },
     "sources": [
       "mit-notes",
       "openstax-calculus"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-10-07"
   }
 }

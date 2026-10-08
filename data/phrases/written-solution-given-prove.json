@@ -2,8 +2,8 @@
   "id": "written-solution-given-prove",
   "situation": "written-solution",
   "intent": "幾何の証明で仮定と結論を書く",
-  "en": "Given: AB ≅ CD. Prove: △ABC ≅ △CDA.",
-  "ja": "仮定：AB = CD　結論：△ABC ≡ △CDA",
+  "en": "Given: AB = CD, AB ∥ CD. Prove: △ABC ≅ △CDA.",
+  "ja": "仮定：AB = CD, AB // CD　結論：△ABC ≡ △CDA",
   "register": "written",
   "tags": [
     "writing",
@@ -11,7 +11,7 @@
     "geometry"
   ],
   "notes": [
-    "米国の二段組の証明（two-column proof）の型。CK-12 Geometry は証明の問題を Given（仮定）と Prove（示すこと）で始め、statements と reasons の 2 列で書く。"
+    "CK-12 Geometry の二段組みの証明（two-column proof）の型で、証明の問題を Given（仮定）と Prove（示すこと）で始め、statements と reasons の 2 列で書く。"
   ],
   "sources": [
     {
@@ -25,15 +25,15 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-26"
+    "counted": "2026-10-07"
   },
   "flags": [
     {
       "code": "corpus-human-settled",
-      "note": "文は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 慣習差 2 の前の修正」の 2）: 「Given: AB ≅ CD. Prove: △ABC ≅ △CDA.」。register は主張しない。",
+      "note": "型は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 慣習差 2 の前の修正」の 2）: 「Given: … Prove: …」。例の中身は台帳の文で、監査 12 で仮定 AB ∥ CD を足した（仮定が足りず結論を示せなかった）。register は主張しない。",
       "raised": "2026-09-26"
     }
   ]
