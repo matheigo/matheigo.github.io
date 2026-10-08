@@ -36,9 +36,19 @@
       "code": "corpus-attested-only",
       "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い  で 0 件）。Math Stack Exchange の質問で i got the same | got the same answer が 285 件（3 件以上）なので likely。en の要の部分 （数えない） は Math Stack Exchange で検索しない。en は Math Stack Exchange では選ばない。",
       "raised": "2026-10-07"
+    },
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-10-07）で大きな直し: en は台帳に無い生成の文だった → 台帳の 1 つ目 Same, I got 12 too. に戻し、前の en を variant に。notes に Same, の働き。見直す点: 台帳の文に戻したこと、notes。次の監査のセッションが見直す。",
+      "raised": "2026-10-07"
     }
   ],
   "notes": [
     "Same, は「自分も（同じ）」と返すチャットのくだけた書き方。"
-  ]
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-10-07",
+    "human": null
+  }
 }

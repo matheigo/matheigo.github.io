@@ -35,6 +35,16 @@
       "code": "corpus-undecided",
       "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。split them up | divide them up | split up the problems | divide up the problems | split the problems 1 件）。人間レビューへ。",
       "raised": "2026-10-07"
+    },
+    {
+      "code": "audit-human",
+      "note": "Phase 5 監査（2026-10-07）で判断がつかない: MSE の split them up ・divide them up は和・集合を分ける意味（MSE_SKIP に）。分担の形（split up the problems ほか）は MSE 0〜2、MICASE の分担の文は 1〜2 件で 3 件に届かない。人間に決めてほしいこと: en（学習会で問題を分担しようと持ちかける言い方。今は Let's each do a few and then explain them to each other.）。人間レビューへ。",
+      "raised": "2026-10-07"
     }
-  ]
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-10-07",
+    "human": null
+  }
 }
