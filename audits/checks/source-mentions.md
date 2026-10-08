@@ -2,7 +2,7 @@
 
 作成: `python3 scripts/audit/source_mentions.py`（規則は scripts/audit/source_mentions.py の説明）。主張が正しいかは見ない（それは監査）。
 
-- 項目: **134**（draft 1・likely 133）
+- 項目: **133**（likely 133）
 
 | コレクション | id | confidence | 名指しされた資料 | 欄 |
 |---|---|---|---|---|
@@ -62,8 +62,6 @@
 | terms | expanding-and-condensing-logs | likely | 学習指導要領解説 | mapping_note |
 | terms | exterior-angle-theorem | likely | IM | pitfalls[2] |
 | terms | flowchart-proof | likely | 学習指導要領解説 | mapping_note |
-| terms | free-variable | draft | Levin | pitfalls[0] |
-| terms | free-variable | draft | Nicholson | pitfalls[1] |
 | terms | generating-function | likely | Levin | pitfalls[2] |
 | terms | geometric-multiplicity | likely | Nicholson | pitfalls[0] |
 | terms | glide-reflection | likely | IM | pitfalls[2] |

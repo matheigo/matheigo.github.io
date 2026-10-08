@@ -5,8 +5,8 @@
 対象の欄: terms の mapping_note・pitfalls・variants の note・definition_ja、symbols の notes、phrases の notes・variants の note。
 慣習差（conventions）は jp の欄そのものが日本側の主張で、生成のときに項目ごとに日本側の資料を出典に入れたので、ここには入れない（監査は慣習差の順で見る）。
 
-- phase4-report G-1 の正規表現（日本(の教科書|では|の高校|の授業|の答案|の中学|の入試|の数学|で)）に当たる文: **105 項目・108 文**
-- 広い正規表現（日本・数学 I〜C・中学・高校・学習指導要領・教科書・入試・共通テスト・センター試験）に当たる文: **483 項目・660 文**（主張でない文も混じる。監査の ⑦ で 1 文ずつ見る）
+- phase4-report G-1 の正規表現（日本(の教科書|では|の高校|の授業|の答案|の中学|の入試|の数学|で)）に当たる文: **106 項目・109 文**
+- 広い正規表現（日本・数学 I〜C・中学・高校・学習指導要領・教科書・入試・共通テスト・センター試験）に当たる文: **484 項目・661 文**（主張でない文も混じる。監査の ⑦ で 1 文ずつ見る）
 
 | コレクション | id | 欄 | G-1 | 文 |
 |---|---|---|---|---|
@@ -453,6 +453,7 @@
 | terms | quadratic-function | definition_ja |  | 学習指導要領解説では、中学校は関数 y = ax²（a ≠ 0）を扱い、高等学校（数学I）の二次関数で y = ax² + bx + c の形に広げる。 |
 | terms | quadratic-inequality | pitfalls[0] |  | 共通テスト・センター試験の問題文と正解は解を −2 < x < 3 のように不等式で書き、OpenStax Intermediate Algebra（Solve Quadratic Inequalities）は解を区間記法 (−2, 3) で書く。 |
 | terms | quadratic-inequality | pitfalls[1] |  | 共通テスト・センター試験（平成 30 年度 数学II）は解を x < −2, 2 < x のように読点で並べ、この読点は「または」の意味。 |
+| terms | quadratic-regression | mapping_note | ○ | 日本の高校課程では扱わない。 |
 | terms | quadrilateral | pitfalls[2] |  | m∠A は「∠A の大きさ」（the measure of angle A、エントリ measure）の書き方で、共通テスト・センター試験の問題文の ∠ABC ＝ 60° の書き方にあたる。 |
 | terms | quantifier | pitfalls[0] |  | 日本の数I では「すべての」「ある」を言葉で扱い（「すべての x について p」の否定は「ある x について p でない」）、∀ ∃ の記号や「量化子」という名前は使わない。 |
 | terms | quartic-equation | pitfalls[1] |  | 学習指導要領解説（数学II）は、x⁴ + x² − 2 = 0 のような複二次方程式（x² = t とおくと t の 2 次方程式になる）を取り上げる。 |

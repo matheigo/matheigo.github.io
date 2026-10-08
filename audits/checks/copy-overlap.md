@@ -7,9 +7,9 @@
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15666
+- 調べた本文の欄: 15682
 - 英語のソース: 3884 ファイル ／ 日本語のソース: 532 ファイル
-- 一致した箇所: **312**（275 項目）
+- 一致した箇所: **314**（277 項目）
 - 見出しの句を含む一致で除いたもの: 147 箇所（136 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
@@ -18,10 +18,11 @@
 | conventions | natural-numbers-and-zero | us | en | 10 | in this book we define the natural numbers to be | 1 | ref:levin-dmoi4 |
 | phrases | class-listening-recall-that | en | en | 8 | the derivative of sin x is cos x | 1 | mit-18.01 |
 | phrases | class-listening-recall-that | variants[0].en | en | 8 | the derivative of sin x is cos x | 1 | mit-18.01 |
-| phrases | exam-set-up-but-do-not-evaluate | variants[0].en | en | 11 | write but do not evaluate an integral expression for the area | 1 | khan-ap-calc |
+| phrases | class-listening-what-do-you-notice | notes[0] | en | 8 | what do you notice what do you wonder | 3 | ref:im-9-12, ref:im-6-8, ref:levin-dmoi4 |
 | phrases | exam-set-up-but-do-not-evaluate | en | en | 8 | set up but do not evaluate an integral | 1 | openstax-calculus |
+| phrases | exam-set-up-but-do-not-evaluate | variants[0].en | en | 8 | write but do not evaluate an integral expression | 1 | khan-ap-calc |
 | phrases | exam-show-your-work | variants[0].en | en | 8 | show the work that leads to your answer | 1 | ref:ap-calculus-ab-bc-ced |
-| phrases | exam-use-the-table-to-approximate | variants[0].en | en | 10 | use the data in the table to approximate r 5 | 2 | ref:ap-calculus-ab-bc-ced, khan-ap-calc |
+| phrases | exam-use-the-table-to-approximate | variants[0].en | en | 8 | use the data in the table to approximate | 2 | ref:ap-calculus-ab-bc-ced, khan-ap-calc |
 | phrases | exam-write-an-equation-for-the-tangent-line | variants[0].en | en | 14 | write an equation for the line tangent to the graph of f at x | 4 | openstax-calculus, khan-ap-calc, ref:ap-calculus-ab-bc-ced, mit-notes |
 | phrases | exam-write-an-equation-for-the-tangent-line | en | en | 10 | find the equation of the tangent line at x 2 | 5 | khan-ap-calc, yt:profleonard, yt:patrickjmt, yt:nancypi, yt:organicchem |
 | phrases | explaining-solution-derivative-equal-to-zero | variants[0].en | en | 8 | the derivative and set it equal to zero | 1 | micase |
@@ -30,6 +31,7 @@
 | phrases | the-area-of-the-region-bounded-by | variants[0].en | en | 9 | find the area of the region enclosed by the | 1 | openstax-calculus |
 | phrases | the-area-of-the-region-bounded-by | en | en | 8 | find the area of the region bounded by | 1 | openstax-calculus |
 | phrases | write-as-a-limit-of-a-sum | variants[0].en | en | 9 | as the limit as n approaches infinity of a | 1 | khan-ap-calc |
+| phrases | written-solution-by-induction | variants[0].en | en | 8 | by the principle of mathematical induction the statement | 1 | ref:levin-dmoi4 |
 | symbols | delta-x | notes[1] | en | 9 | the change in y over the change in x | 5 | khan-middle, khan-ap-calc, khan-algebra, openstax-algtrig, yt:profleonard |
 | symbols | derivative-leibniz | notes[1] | en | 9 | the derivative of x squared with respect to x | 1 | khan-ap-calc |
 | symbols | directional-derivative-notation | notes[0] | en | 10 | the directional derivative of f in the direction of u | 1 | openstax-calculus |

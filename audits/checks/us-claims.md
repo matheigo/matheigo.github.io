@@ -5,9 +5,9 @@
 対象の欄は日本側と同じ。米国側の主張（米国・アメリカ・AP・CED・College Board・英語圏・Calc I〜III・Calculus AB／BC）の文のうち、
 文の中に参照（CED・OpenStax・IM・CK-12・Nicholson・Levin・Wikipedia・topic の番号ほか）も用例コーパス（講義・話し言葉・書き言葉・Khan・MIT ほか）も名指ししないもの。
 
-- 米国側の主張の文で参照かコーパスを名指しするもの: 410 文（一覧にしない）
-- **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 3 項目・3 文**
-- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 25 項目・26 文
+- 米国側の主張の文で参照かコーパスを名指しするもの: 414 文（一覧にしない）
+- **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 4 項目・4 文**
+- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 24 項目・25 文
 
 ## A. エントリの出典にも参照がない
 
@@ -15,6 +15,7 @@
 |---|---|---|---|
 | terms | equivalence-relation | pitfalls[0] | 米国の Geometry で習う reflexive property などは、等号や合同についての同じ性質の名前。 |
 | terms | postulate | mapping_note | 米国の Geometry では証明の前提を postulate と呼び、名前付きで使う（segment addition postulate、parallel postulate など）。 |
+| terms | quadratic-regression | mapping_note | 米国は Algebra 1・2 のグラフ電卓の QuadReg。 |
 | terms | vector-equation-of-a-circle | mapping_note | 米国の教科書は円を (x − h)² + (y − k)² = r² の形で扱い、ベクトル方程式としては立てない。 |
 
 ## B. エントリの出典に参照がある
@@ -46,4 +47,3 @@
 | terms | zeros-of-a-polynomial | pitfalls[0] | 米国では zero（関数の値が 0 になる x）・root（方程式の解）・x-intercept（グラフの交点）を使い分ける。 | OpenStax Algebra and Trigonometry 2e |
 | symbols | gauss-bracket-jp | notes[1] | 米国では ⌊x⌋ と書く。 | 日本語版 Wikipedia「床関数と天井関数」; 日本語版 Wikipedia「数学 (教科)」; OpenStax Calculus Volume 2; OpenStax Calculus Volume 1 |
 | symbols | integers-symbol | notes[0] | 文字どおり Z（米国の発音は zee。Merriam-Webster: ˈzē、カナダ・英国・オーストラリアは ˈzed）とも言う。 | Merriam-Webster「z」; Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition |
-| phrases | written-solution-given-prove | notes[0] | 米国の二段組の証明（two-column proof）の型。 | CK-12 Geometry (K12 LibreTexts) |

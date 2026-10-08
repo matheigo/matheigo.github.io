@@ -2,11 +2,11 @@
   "summary": {
     "checked": "2026-10-07",
     "rule": "English: 8+ consecutive words; Japanese: 20+ characters (whitespace removed); a span that is the entry's headword and fewer than that many other words / characters is left out",
-    "fields": 15666,
+    "fields": 15682,
     "englishSources": 3884,
     "japaneseSources": 532,
-    "spans": 312,
-    "entries": 275,
+    "spans": 314,
+    "entries": 277,
     "headwordSpans": 147,
     "headwordEntries": 136
   },
@@ -3488,6 +3488,19 @@
     },
     {
       "collection": "phrases",
+      "id": "class-listening-what-do-you-notice",
+      "field": "notes[0]",
+      "lang": "en",
+      "length": 8,
+      "span": "what do you notice what do you wonder",
+      "sources": {
+        "ref:im-9-12": 69,
+        "ref:im-6-8": 34,
+        "ref:levin-dmoi4": 1
+      }
+    },
+    {
+      "collection": "phrases",
       "id": "exam-set-up-but-do-not-evaluate",
       "field": "en",
       "lang": "en",
@@ -3502,8 +3515,8 @@
       "id": "exam-set-up-but-do-not-evaluate",
       "field": "variants[0].en",
       "lang": "en",
-      "length": 11,
-      "span": "write but do not evaluate an integral expression for the area",
+      "length": 8,
+      "span": "write but do not evaluate an integral expression",
       "sources": {
         "khan-ap-calc": 2
       }
@@ -3524,8 +3537,8 @@
       "id": "exam-use-the-table-to-approximate",
       "field": "variants[0].en",
       "lang": "en",
-      "length": 10,
-      "span": "use the data in the table to approximate r 5",
+      "length": 8,
+      "span": "use the data in the table to approximate",
       "sources": {
         "ref:ap-calculus-ab-bc-ced": 3,
         "khan-ap-calc": 2
@@ -3625,6 +3638,17 @@
       "span": "as the limit as n approaches infinity of a",
       "sources": {
         "khan-ap-calc": 7
+      }
+    },
+    {
+      "collection": "phrases",
+      "id": "written-solution-by-induction",
+      "field": "variants[0].en",
+      "lang": "en",
+      "length": 8,
+      "span": "by the principle of mathematical induction the statement",
+      "sources": {
+        "ref:levin-dmoi4": 1
       }
     },
     {
