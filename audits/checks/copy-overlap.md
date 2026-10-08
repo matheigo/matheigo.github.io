@@ -1,13 +1,13 @@
 # 書き写しの検出（Phase 5 の監査の前の機械の確かめ 1）
 
-作成: 2026-09-27 ／ `pnpm audit:copy`（scripts/audit/copy-check.ts）
+作成: 2026-10-07 ／ `pnpm audit:copy`（scripts/audit/copy-check.ts）
 
 規則: 英語は連続 8 語以上、日本語は空白を除いて 20 文字以上、エントリの本文（定義・例文・pitfalls・mapping_note・variants の note・コロケーション、記号の notes・日本語の読み、フレーズの en・ja・意図・variants・notes、慣習差の題・jp・us・advice_ja）が
 用例コーパス（manifest の全ファイル: MIT OCW・Khan Academy・YouTube・MICASE・OpenStax・MIT の講義ノート）と参照（CED 2 つ・Nicholson・Levin・IM 2 つ・CK-12 2 つ）、
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15662
+- 調べた本文の欄: 15666
 - 英語のソース: 3884 ファイル ／ 日本語のソース: 532 ファイル
 - 一致した箇所: **312**（275 項目）
 - 見出しの句を含む一致で除いたもの: 147 箇所（136 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
@@ -29,7 +29,7 @@
 | phrases | organize-the-data | variants[0].en | en | 8 | the numbers in order from smallest to largest | 1 | openstax-prealgebra |
 | phrases | the-area-of-the-region-bounded-by | variants[0].en | en | 9 | find the area of the region enclosed by the | 1 | openstax-calculus |
 | phrases | the-area-of-the-region-bounded-by | en | en | 8 | find the area of the region bounded by | 1 | openstax-calculus |
-| phrases | write-as-a-limit-of-a-sum | en | en | 10 | this as the limit as n approaches infinity of a | 1 | khan-ap-calc |
+| phrases | write-as-a-limit-of-a-sum | variants[0].en | en | 9 | as the limit as n approaches infinity of a | 1 | khan-ap-calc |
 | symbols | delta-x | notes[1] | en | 9 | the change in y over the change in x | 5 | khan-middle, khan-ap-calc, khan-algebra, openstax-algtrig, yt:profleonard |
 | symbols | derivative-leibniz | notes[1] | en | 9 | the derivative of x squared with respect to x | 1 | khan-ap-calc |
 | symbols | directional-derivative-notation | notes[0] | en | 10 | the directional derivative of f in the direction of u | 1 | openstax-calculus |

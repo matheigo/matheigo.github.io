@@ -1,6 +1,6 @@
 # 参照の定理・公理・性質・法則・判定法の名前と見出しの突き合わせ（Phase 5 監査 4 の決定 1）
 
-作成: 2026-09-27 ／ `python3 scripts/audit/reference_names.py`。参照（CK-12・IM・CED・Nicholson・Levin・OpenStax 9 冊）の本文と節の名前から「… Theorem ／ Postulate ／ Property ／ Rule ／ Law ／ Test」の名前を機械で抜き出し、terms の en.term・en.alt・en.variants と突き合わせた（規則は scripts/audit/reference_names.py の説明）。本文は写さず、名前・件数・節の名前だけ。
+作成: 2026-10-07 ／ `python3 scripts/audit/reference_names.py`。参照（CK-12・IM・CED・Nicholson・Levin・OpenStax 9 冊）の本文と節の名前から「… Theorem ／ Postulate ／ Property ／ Rule ／ Law ／ Test」の名前を機械で抜き出し、terms の en.term・en.alt・en.variants と突き合わせた（規則は scripts/audit/reference_names.py の説明）。本文は写さず、名前・件数・節の名前だけ。
 
 - 名前: **726**（見出しと一致 131、一致しない 434。うち監査が判断した名前 217、未判断 217）
 - **監査で見る**（同じ概念のエントリがあるのに、参照の名前が en・alt・variants に無い）: **50**（scripts/audit/reference_names_same.json。各語の監査で、参照の名前を en.alt か variant に入れるか、見出しにするか（参照が 3 件以上使う呼び方は見出し。STYLE 原則 1 ③）を決める）

@@ -1,8 +1,8 @@
 # 確かめられない言い方の警告（validate。scripts/lib/wording.ts・scripts/lib/corpus-count.ts）
 
-作成: 2026-09-27 ／ `python3 scripts/audit/wording_warnings.py`（`pnpm validate` の warn を集めた）。監査 2 の H-5 で足した警告（通じる／一番よく使う／減点／資料の名前のない「ことが多い」）、監査 3 の AT_LARGE（資料の名前のない「英語には〜がない」）、本文の用例コーパスの件数らしい数字、監査 6 の決定 8 の判定の説明（pitfalls・notes の「用例コーパスでは…の形で数えた」など）。
+作成: 2026-10-07 ／ `python3 scripts/audit/wording_warnings.py`（`pnpm validate` の warn を集めた）。監査 2 の H-5 で足した警告（通じる／一番よく使う／減点／資料の名前のない「ことが多い」）、監査 3 の AT_LARGE（資料の名前のない「英語には〜がない」）、本文の用例コーパスの件数らしい数字、監査 6 の決定 8 の判定の説明（pitfalls・notes の「用例コーパスでは…の形で数えた」など）。
 
-- 文: **23**（verified 0）
+- 文: **23**（verified 1）
 
 | バッチ | コレクション | id | confidence | 欄 | 文 |
 |---|---|---|---|---|---|
@@ -18,7 +18,7 @@
 | 26 | terms | continuous-compounding | likely | pitfalls[0] | 英語は名詞の continuous compounding より、interest compounded continuously ／ continuously compounded interest の形で言うことが多い（教科書は compounded continuously、授業では continuously compounded の語順が多い）。 |
 | 30 | terms | generating-function | likely | pitfalls[1] | 母関数では x に値を代入せず、係数を並べる入れ物として扱うことが多い。 |
 | 31 | terms | recursive-algorithm | likely | pitfalls[1] | 日本語の「帰納的」も「再帰的」も英語では recursive になることが多い（帰納的定義 = recursive definition）。 |
-| 38 | phrases | class-asking-which-problems | likely | variants[0].note | 教科書の奇数番の問題（巻末に答えがあることが多い）だけかを聞く。 |
+| 34 | symbols | qed-end-of-proof | verified | notes[0] | 記号そのものは読まないことが多い。 |
 | 42 | phrases | discord-anyone-get | likely | variants[0].note | チャットでは文頭を小文字で書くことが多い。 |
 | 43 | conventions | calculator-instead-of-tables | likely | advice_ja | 米国の授業では電卓の関数で確率を出すことが多い。 |
 | 43 | conventions | congruence-abbreviations-in-proofs | likely | advice_ja | 略号（SSS、CPCTC）は米国の答案では理由としてそのまま通じる。 |

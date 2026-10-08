@@ -65,6 +65,7 @@ Phase 5 監査の各バッチで、監査のセッション（親）が 10 語�
 - **P5 書き写し**: en・variants・ja が用例コーパス・参照の文を長く写していないか（!COPY の 10 語以上で 1〜2 ソースの一致は言い換える案。要の部分そのものの一致は決まった言い方なのでよい）
 - **P6 出典**: フレーズは editorial が基本（STYLE「出典の種類」）。notes が名指しした資料は sources にあるか
 - 重さ: **大** は en を変える・intent や situation を変える・ja の意味を変える、**小** は variants の追加・削除・register・notes の言い換え・出典
+- **監査 11（バッチ 37〜39）で多かった型**（DECISIONS「Phase 5 監査（セッション 11）」の数え方）: 要の部分が同じ語句の別の使い方を数えている（講師の独り言 let me write that down・平叙文 the next step is・別の意味 warm up の気温・一般の問い how come you …）。**10 件未満の要の部分は全件、①② の首位は 10 件以上の文脈を読み**、話し手の働きが違うもの・別の意味は形（「A ｜ B」「!w」、意図を運ぶ動詞句）で除いて数え直す案、除けなければ読んだ件数を書く。同じ働きで対象だけが違うもの（体積の set up the integral）は数える。同数の首位は文書の順で決まっているので読んで決める。en を差し替えた後の ja・intent・register・variants が台帳の前の文のまま残っていないか（ledger/phrases.csv と突き合わせる）。不規則動詞（wrote・threw）と綴りの揺れ（endpoints ／ end points）は、同じエントリの要の部分でそろっているか。学生の場面で読んで 3 件未満になったら、意図を運ぶ形なら親が Math Stack Exchange を検索する（mse-counts.json に無ければ「MSE の件数が要る」と書く。数学の質問のサイトで別の意味になる語は MSE_SKIP の案）
 
 ### conventions（日米慣習差。5 人で 10 項目ずつ）
 

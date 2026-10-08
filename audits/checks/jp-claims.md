@@ -1,6 +1,6 @@
 # 日本側の主張の文（Phase 5 の監査の前の機械の確かめ 2）
 
-作成: 2026-09-27 ／ `pnpm audit:claims`（scripts/audit/claims.ts）
+作成: 2026-10-07 ／ `pnpm audit:claims`（scripts/audit/claims.ts）
 
 対象の欄: terms の mapping_note・pitfalls・variants の note・definition_ja、symbols の notes、phrases の notes・variants の note。
 慣習差（conventions）は jp の欄そのものが日本側の主張で、生成のときに項目ごとに日本側の資料を出典に入れたので、ここには入れない（監査は慣習差の順で見る）。

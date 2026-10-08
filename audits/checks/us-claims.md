@@ -1,12 +1,12 @@
 # 米国側の主張の文で出典に当たる参照がないもの（Phase 5 の監査の前の機械の確かめ 3）
 
-作成: 2026-09-27 ／ `pnpm audit:claims`（scripts/audit/claims.ts）
+作成: 2026-10-07 ／ `pnpm audit:claims`（scripts/audit/claims.ts）
 
 対象の欄は日本側と同じ。米国側の主張（米国・アメリカ・AP・CED・College Board・英語圏・Calc I〜III・Calculus AB／BC）の文のうち、
 文の中に参照（CED・OpenStax・IM・CK-12・Nicholson・Levin・Wikipedia・topic の番号ほか）も用例コーパス（講義・話し言葉・書き言葉・Khan・MIT ほか）も名指ししないもの。
 
-- 米国側の主張の文で参照かコーパスを名指しするもの: 409 文（一覧にしない）
-- **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 4 項目・4 文**
+- 米国側の主張の文で参照かコーパスを名指しするもの: 410 文（一覧にしない）
+- **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 3 項目・3 文**
 - B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 25 項目・26 文
 
 ## A. エントリの出典にも参照がない
@@ -16,7 +16,6 @@
 | terms | equivalence-relation | pitfalls[0] | 米国の Geometry で習う reflexive property などは、等号や合同についての同じ性質の名前。 |
 | terms | postulate | mapping_note | 米国の Geometry では証明の前提を postulate と呼び、名前付きで使う（segment addition postulate、parallel postulate など）。 |
 | terms | vector-equation-of-a-circle | mapping_note | 米国の教科書は円を (x − h)² + (y − k)² = r² の形で扱い、ベクトル方程式としては立てない。 |
-| phrases | explaining-solution-in-context | variants[0].note | AP の記述問題で求められる「文脈に即した解釈」。 |
 
 ## B. エントリの出典に参照がある
 
