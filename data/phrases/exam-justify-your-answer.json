@@ -8,7 +8,8 @@
   "variants": [
     {
       "en": "Give a reason for your answer.",
-      "register": "written"
+      "register": "written",
+      "note": "AP Calculus の CED は Give a reason for … を Explain の問いの言い方とし、Justify には定義・定理・判定法を挙げ、当てはまる理由を言って当てはめることを求める（Exam Information の Task Verbs）。"
     }
   ],
   "tags": [
@@ -18,10 +19,16 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "exam（Give a reason for）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "written": {
       "justify your answer": 41
@@ -31,6 +38,6 @@
       "openstax-calculus",
       "openstax-introstats"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-10-07"
   }
 }

@@ -5,12 +5,6 @@
   "en": "You can bring one page of notes, front and back.",
   "ja": "ノート 1 枚（両面）まで持ち込みできます。",
   "register": "neutral",
-  "variants": [
-    {
-      "en": "This is a closed-book exam.",
-      "register": "neutral"
-    }
-  ],
   "tags": [
     "exam",
     "rules"
@@ -21,19 +15,16 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
-    "spoken": {
-      "page of notes | sheet of notes | index card | cheat sheet | note sheet": 13,
-      "closed book | closed-book | closed notes": 2
-    },
-    "sources": [
-      "micase",
-      "mit-18.01",
-      "mit-18.03",
-      "mit-18.06",
-      "yt:blackpenredpen"
-    ],
+    "sources": [],
     "counted": "2026-09-26"
-  }
+  },
+  "flags": [
+    {
+      "code": "corpus-undecided",
+      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（講義のコーパスと MICASE の教員の発話で数えた。0 件）。人間レビューへ。",
+      "raised": "2026-10-07"
+    }
+  ]
 }

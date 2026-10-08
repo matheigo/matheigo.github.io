@@ -3,7 +3,7 @@
   "situation": "email",
   "intent": "欠席を伝え、補うべきことを聞く",
   "en": "I'm sorry I had to miss class on Wednesday. Is there anything I should do to catch up?",
-  "ja": "水曜日の授業を欠席してしまいました。何か補っておくべきことはありますか。",
+  "ja": "水曜日の授業を欠席してしまい、申し訳ありません。何か補っておくべきことはありますか。",
   "register": "polite",
   "variants": [
     {
@@ -20,7 +20,7 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "spoken": {
       "catch up on": 1
@@ -28,13 +28,13 @@
     "sources": [
       "micase"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-10-07"
   },
   "flags": [
     {
       "code": "corpus-attested-only",
       "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い catch up on で 1 件）。Math Stack Exchange の質問で catch up on が 25 件（3 件以上）なので likely。en の要の部分 miss class は 0 件。en は Math Stack Exchange では選ばない。",
-      "raised": "2026-09-26"
+      "raised": "2026-10-07"
     }
   ]
 }

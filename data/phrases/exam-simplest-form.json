@@ -3,7 +3,7 @@
   "situation": "exam",
   "intent": "問題文の「最も簡単な形で答えよ」",
   "en": "Write your answer in simplest form.",
-  "ja": "最も簡単な形（既約分数）で答えよ。",
+  "ja": "最も簡単な形で答えよ。",
   "register": "written",
   "variants": [
     {
@@ -22,10 +22,10 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "written": {
-      "in simplest form | simplest form": 31,
+      "in simplest form | simplest form !of": 28,
       "in lowest terms": 12
     },
     "sources": [
@@ -33,9 +33,8 @@
       "openstax-algtrig",
       "openstax-elemalg",
       "openstax-intalg",
-      "openstax-introstats",
       "openstax-prealgebra"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-10-07"
   }
 }

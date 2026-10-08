@@ -5,12 +5,6 @@
   "en": "The exam has a multiple-choice section and a free-response section.",
   "ja": "試験は選択問題と記述問題に分かれています。",
   "register": "neutral",
-  "variants": [
-    {
-      "en": "Part B is free response.",
-      "register": "neutral"
-    }
-  ],
   "tags": [
     "exam",
     "format"
@@ -21,18 +15,22 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "spoken": {
-      "multiple-choice section | multiple choice section | multiple choice part | multiple-choice questions | multiple choice questions": 18,
-      "free-response section | free response section | free response questions | free-response questions": 9
+      "multiple-choice section | multiple choice section | multiple choice part | free-response section | free response section | free response part": 4
     },
     "sources": [
       "khan-ap-calc",
-      "khan-ap-stats",
-      "khan-middle",
-      "micase"
+      "khan-ap-stats"
     ],
-    "counted": "2026-09-26"
-  }
+    "counted": "2026-10-07"
+  },
+  "flags": [
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE の教員の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 multiple-choice section | multiple choice section | multiple choice part | free-response section | free response section | free response part（4 件。3 件以上）。register は主張しない。",
+      "raised": "2026-10-07"
+    }
+  ]
 }

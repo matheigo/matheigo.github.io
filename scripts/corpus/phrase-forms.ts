@@ -184,8 +184,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Let's rewrite the expression.": "rewrite the expression | rewrite this expression",
   },
   "on-the-interval-from-0-to-2": {
-    "Find all solutions on the interval [0, 2π).": "on the interval",
-    "Find all solutions in the interval [0, 2π).": "in the interval",
+    "Find all solutions on the interval [0, 2π).": "solutions … on the interval | solutions on the interval | solve … on the interval | solve on the interval | equations on the interval | equation on the interval | exactly on the interval",
+    "Find all solutions in the interval [0, 2π).": "solutions … in the interval | solutions in the interval | solve … in the interval | solve in the interval | equations in the interval | equation in the interval | exactly in the interval",
   },
   "the-base-is-greater-than-1": {
     "Since the base is greater than 1, the inequality sign stays the same.": "inequality stays the same | inequality … stays the same",
@@ -838,7 +838,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Your answer should be accurate to three places after the decimal point.": "places after the decimal point",
   },
   "exam-simplest-form": {
-    "Write your answer in simplest form.": "in simplest form | simplest form",
+    "Write your answer in simplest form.": "in simplest form | simplest form !of",
     "Express your answer as a fraction in lowest terms.": "in lowest terms",
   },
   "exam-express-in-terms-of": {
@@ -862,8 +862,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Use appropriate units.": "appropriate units !conversions | !the correct units",
   },
   "exam-use-the-table-to-approximate": {
-    "Use the table to approximate R′(5).": "use the table to | using the table",
-    "Use the data in the table to approximate R′(5).": "use the data in the table | using the data in the table",
+    "Use the table to approximate W′(12).": "use the table to | using the table",
+    "Use the data in the table to approximate W′(12).": "use the data in the table | using the data in the table",
   },
   "exam-write-an-equation-for-the-tangent-line": {
     "Find the equation of the tangent line at x = 2.": "equation of the tangent line | equation for the tangent line",
@@ -879,11 +879,11 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "exam-set-up-but-do-not-evaluate": {
     "Set up, but do not evaluate, an integral for the volume.": "do not evaluate | don't evaluate",
-    "Write, but do not evaluate, an integral expression for the area.": "do not evaluate | don't evaluate",
+    "Write, but do not evaluate, an integral expression that gives the area of R.": "do not evaluate | don't evaluate",
   },
   "exam-label-your-axes": {
-    "Label the axes.": "label the axes | label your axes | label each axis",
-    "Label the graph.": "label the diagram | label the graph | label the figure",
+    "Label and scale the axes.": "label and scale",
+    "Label the axes.": "label the axes !intercepts | label your axes | label each axis",
   },
   "exam-box-your-answer": {
     "Circle your final answer.": "circle your answer | circle the answer | circle your final answer",
@@ -894,15 +894,13 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Calculator not permitted": "calculator not permitted | calculator is not permitted | calculators are not permitted",
   },
   "exam-multiple-choice-and-free-response": {
-    "The exam has a multiple-choice section and a free-response section.": "multiple-choice section | multiple choice section | multiple choice part | multiple-choice questions | multiple choice questions",
-    "Part B is free response.": "free-response section | free response section | free response questions | free-response questions",
+    "The exam has a multiple-choice section and a free-response section.": "multiple-choice section | multiple choice section | multiple choice part | free-response section | free response section | free response part",
   },
   "exam-partial-credit": {
     "Show your work — you can get partial credit.": "partial credit",
   },
   "exam-notes-allowed": {
-    "You can bring one page of notes, front and back.": "page of notes | sheet of notes | index card | cheat sheet | note sheet",
-    "This is a closed-book exam.": "closed book | closed-book | closed notes",
+    "You can bring one page of notes, front and back.": "bring … page of note | bring … sheet of note | bring … index card | bring … cheat sheet | bring … note sheet",
   },
   "exam-time-remaining": {
     "You have 10 minutes left.": "minutes left",
@@ -941,7 +939,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Hi Professor Smith,": "hi professor | hello professor",
   },
   "email-introduce-yourself": {
-    "My name is Taro Yamada, and I'm in your MATH 221 section that meets MWF at 10.": "my name is",
+    "My name is Taro Yamada, and I'm in your MATH 221 section that meets MWF at 10.": "my name is | my name's",
   },
   "email-writing-to-ask": {
     "I'm writing to ask about problem 4 on the homework.": "i'm writing to | i am writing to",
@@ -960,7 +958,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "email-regrade-request": {
     "I'd like to ask about the grading on problem 2 of the midterm. I've attached a scan of my work.": "about the grading",
-    "Could you take another look at problem 2?": "another look",
+    "Could you take another look at problem 2?": "another look | regrade | re-grade | look at it again | look at this again | graded wrong | graded incorrectly | grading was wrong | grading error",
   },
   "email-extension": {
     "Would it be possible to get an extension on the homework?": "an extension on | extension on the homework",
@@ -973,11 +971,11 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "English is not my first language. Would it be possible for me to use a paper bilingual dictionary during the exam?": "my first language | my native language",
   },
   "email-exam-conflict": {
-    "I have a conflict with the final exam time. Would it be possible to take it at a different time?": "a conflict with | have a conflict",
+    "I have a conflict with the final exam time. Would it be possible to take it at a different time?": "a conflict with | have a conflict | conflict with my exam | conflict with my final | conflict with the final exam",
     "Could I take the exam at another time?": "at a different time | at another time",
   },
   "email-prerequisite": {
-    "I took calculus in Japan (Math III). Would that satisfy the prerequisite for MATH 221?": "prerequisite for | the prerequisite",
+    "I took calculus in Japan (Math III). Would that satisfy the prerequisite for MATH 221?": "prerequisite for | the prerequisite !of",
   },
   "email-confirm": {
     "Could you confirm whether the quiz on Friday covers Section 4.3?": "could you confirm | can you confirm",
@@ -1039,12 +1037,13 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Don't quote me on this, but I think it's 4.": "don't quote me",
   },
   "group-study-oh-that-makes-sense": {
-    "Ohh, I see.": "oh i see | ohh i see | oh okay i see",
-    "Oh, that makes sense now.": "oh that makes sense | that makes sense now | oh that make sense",
+    "Oh, I see.": "oh i see | ohh i see | oh okay i see",
+    "Okay, that makes sense.": "okay that makes sense | yeah that makes sense | oh that makes sense",
   },
+  // practice exam alone named the exam; no student suggested doing one (Phase 5 監査 12)
   "group-study-practice-exam": {
-    "Let's do the practice exam under timed conditions.": "practice exam | practice test | practice midterm",
-    "Let's time ourselves.": "time ourselves | timed conditions",
+    "Let's do the practice exam under timed conditions.": "let's do the practice | let's take the practice | let's do a practice | under timed conditions",
+    "Let's time ourselves.": "time ourselves | time yourself",
   },
   "group-study-what-is-it-asking": {
     "What is this question even asking?": "what is it asking | what's it asking | what is this question asking",
@@ -1114,7 +1113,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "I was wondering whether you could take a look at my proof.": "i was wondering whether",
   },
   "group-study-does-that-mean": {
-    "Does that mean it's not differentiable at x = 0?": "does that mean | does this mean",
+    "Does that mean it's not differentiable at x = 0?": "!what !exactly !world does that mean | !what !exactly !world does this mean",
     "So that means the limit doesn't exist?": "so that means",
   },
   "group-study-which-one-do-you-mean": {
@@ -1122,9 +1121,10 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Are you talking about the second equation?": "are you talking about",
     "Do you mean the second equation?": "do you mean the",
   },
+  // or is it just … asked which of two things; is that right here was a place (Phase 5 監査 12)
   "group-study-is-that-right": {
-    "Is it just 2x?": "is it just",
-    "The answer is 3, is that right?": "is that right",
+    "The answer is 3, is that right?": "is that right !here",
+    "Is it just 2x?": "!or is it just",
   },
   "group-study-so-youre-saying": {
     "Oh, so we find a common denominator first?": "oh so",

@@ -2,12 +2,12 @@
   "id": "group-study-oh-that-makes-sense",
   "situation": "group-study",
   "intent": "説明を聞いて納得したと伝える",
-  "en": "Ohh, I see.",
+  "en": "Oh, I see.",
   "ja": "あ、なるほど！",
   "register": "casual",
   "variants": [
     {
-      "en": "Oh, that makes sense now.",
+      "en": "Okay, that makes sense.",
       "register": "casual"
     }
   ],
@@ -21,14 +21,15 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "spoken": {
-      "oh i see | ohh i see | oh okay i see": 32
+      "oh i see | ohh i see | oh okay i see": 32,
+      "okay that makes sense | yeah that makes sense | oh that makes sense": 6
     },
     "sources": [
       "micase"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-10-07"
   }
 }

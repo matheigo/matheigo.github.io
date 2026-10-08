@@ -1,9 +1,9 @@
 {
   "id": "group-study-how-did-you-get-that",
   "situation": "group-study",
-  "intent": "違う答えになったので解き方を見せてもらう",
+  "intent": "違う答えになったので、相手の解き方を聞く",
   "en": "I got something different — how did you get that?",
-  "ja": "私は違う答えになった。どうやったか見せて。",
+  "ja": "私は違う答えになった。どうやって出したの？",
   "register": "casual",
   "variants": [
     {
@@ -21,7 +21,7 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "spoken": {
       "how did you get | how'd you get": 4
@@ -29,13 +29,13 @@
     "sources": [
       "micase"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-10-07"
   },
   "flags": [
     {
       "code": "corpus-attested-only",
       "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 how did you get | how'd you get（4 件。3 件以上）。register は主張しない。",
-      "raised": "2026-09-26"
+      "raised": "2026-10-07"
     }
   ]
 }

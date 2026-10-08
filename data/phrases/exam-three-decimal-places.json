@@ -3,7 +3,7 @@
   "situation": "exam",
   "intent": "問題文の「小数第 3 位まで答えよ」",
   "en": "Round your answer to three decimal places.",
-  "ja": "（電卓問題）小数点以下 3 桁まで正確に答えよ。",
+  "ja": "（電卓問題）答えは小数第 4 位を四捨五入して、小数第 3 位まで求めよ。",
   "register": "written",
   "variants": [
     {
@@ -13,7 +13,7 @@
     {
       "en": "Your answer should be accurate to three places after the decimal point.",
       "register": "written",
-      "note": "AP Calculus の CED の言い方（1 件）。"
+      "note": "three places after the decimal point は AP Calculus の CED（Unit 2 の概要）の言い方。CED は四捨五入か切り捨て（rounding or truncating）で小数第 3 位までにすると書く。"
     }
   ],
   "tags": [
@@ -29,11 +29,11 @@
       "type": "reference",
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
-      "note": "exam（places after the decimal point）"
+      "note": "Unit 2 の概要（places after the decimal point）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "written": {
       "round to three decimal places | round … to three decimal places | rounded to three decimal places": 39,
@@ -46,6 +46,6 @@
       "openstax-introstats",
       "openstax-prealgebra"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-10-07"
   }
 }

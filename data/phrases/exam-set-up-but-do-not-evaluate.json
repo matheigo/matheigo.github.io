@@ -3,11 +3,11 @@
   "situation": "exam",
   "intent": "問題文の「式を立てるだけでよい（計算しなくてよい）」",
   "en": "Set up, but do not evaluate, an integral for the volume.",
-  "ja": "積分の式を立てるだけでよい（計算しなくてよい）。",
+  "ja": "体積を表す積分の式を立てよ。ただし、計算はしなくてよい。",
   "register": "written",
   "variants": [
     {
-      "en": "Write, but do not evaluate, an integral expression for the area.",
+      "en": "Write, but do not evaluate, an integral expression that gives the area of R.",
       "register": "written"
     }
   ],
@@ -22,7 +22,7 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "written": {
       "do not evaluate | don't evaluate": 7
@@ -31,13 +31,13 @@
       "openstax-algtrig",
       "openstax-calculus"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-10-07"
   },
   "flags": [
     {
       "code": "corpus-attested-only",
       "note": "どの要の部分も 10 件に届かない（書き言葉のコーパスと参照で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 do not evaluate | don't evaluate（7 件。3 件以上）。register は主張しない。",
-      "raised": "2026-09-26"
+      "raised": "2026-10-07"
     }
   ]
 }

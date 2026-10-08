@@ -168,3 +168,12 @@
 | 157 | 監査 12（バッチ 40 の r3） | exam の書く文（問題文の指示）を書き言葉で数えると、教科書の説明の平叙文・節の題・学習目標も当たる（backlog 136 の exam 版） | 命令形と平叙文を分ける形を足す | exam-express-in-terms-of は読み方で ② の順が変わりうる（監査 12 は手順の命令形も同じ働きと読んだ） |
 | 158 | 監査 12（バッチ 40 の r3） | 学生の場面で Math Stack Exchange に進むとき、物の名前だけの要の部分（scratch paper、exam back）を数えてよいか | 依頼・問いの形にする（監査 11 のバッチ 38 の前例）と書く | exam-ask-scratch-paper は依頼の形にして 0 件で人間レビューに |
 | 159 | 監査 12（バッチ 40 の r3） | probe --decide が、同じブロックの we have that と we have … = を 1 つの行にまとめる | 理由を調べる | 道具のずれ。中身は間違わない |
+| 160 | 監査 12（バッチ 41 の r1） | PHRASE_FORMS の要の部分が自分の文に入っているかを確かめるテストが無い（exam-multiple-choice-and-free-response の variant が en の文の語を数えていた。backlog 142 の続き） | 当たらない要の部分の一覧をテストか機械の一覧に | 監査 12 で直した。今見つかったのは evidence の名前の付け違い |
+| 161 | 監査 12（バッチ 41 の r1） | inflections("notes") が not を含む（語尾の -es を外す）。PHRASE_FORMS に page of notes ほか複数形の語が残っていた | PHRASE_FORMS にも複数形だけの語を置かない検査（TERM_FORMS と同じ） | exam-notes-allowed は単数 note に直した。誤った一致は 0 件 |
+| 162 | 監査 12（バッチ 41 の r1） | 監督・教員が試験中に口で言う exam の文は、講義のコーパスに試験の場面がほとんど無く、読んで 3 件未満になったときの扱いが決まっていない（学生の場面は MSE がある） | draft と人間レビューにするか、講義の同じ働きの文を数えるかを決める | exam-notes-allowed は人間レビュー、exam-time-remaining は同じ働きで likely のまま |
+| 163 | 監査 12（バッチ 41 の r1） | CED の出典の note の検査（ced-notes.ts）は「exam（語）」の note を確かめない | exam の章も同じ検査に入れる | exam-three-decimal-places の章の誤りは直した |
+| 164 | 監査 12（バッチ 41 の r2） | Math Stack Exchange の検索は語形変化をまとめないので、要の部分が現在形だけだと過去形の文を検索しない（email-missed-class の missed class） | 決定 2 のそろえ方を MSE の選択肢にも当てる | note の件数だけ。likely は変わらない |
+| 165 | 監査 12（バッチ 41 の r2・r3） | email の要の部分に依頼の型（would it be possible to）や用件の名詞（question about）だけを置くと、意図を運ばない。予定・手続きの email（conflict ・extension）は MSE では別の意味になりやすく、人間の決定でしか likely にならない | email の要の部分も意図を運ぶ言い方を en の文から取る決まりを書く。人間に回すか draft で公開するかを決める | email-exam-conflict は人間レビューに |
+| 166 | 監査 12（バッチ 41 の r2） | MICASE は話し言葉なので、メールだけの書き方（Sincerely,・Dear Professor）の要の部分は別の意味か型の説明しか拾わない | email の書き方の型は MICASE を数えない（MSE か人間の決定だけ）か | evidence の件数だけ |
+| 167 | 監査 12（バッチ 41 の r3） | decide が ② の頻度順の 1 つ目で en を替えても ja ・intent を見直す手順が無い（group-study-is-that-right の en と ja が別の文） | en と ja の数が食い違う行を一覧にする（backlog 123 ・137 ・153 の続き） | **中身が間違う**（カードの en と ja）。監査 12 で直した |
+| 168 | 監査 12（バッチ 41 の r3） | MICASE の 1 ファイルの偏り（know what i mean 101 件のうち 58 件が 1 回の学習会の 1 人の口癖） | backlog 115 ・122 ・141 と一緒に決める | ② の順・likely は変わらない |

@@ -92,6 +92,9 @@ export const MSE_SKIP: Record<string, string> = {
   "look at this again": "looking at a problem or an equation again, not a regrade",
   "which problems": "which problems are NP-hard, solvable ... (a general question), as what problems",
   "just the odds": "the odds of an event (probability), as odd numbered",
+  // Phase 5 監査 12, batch 41, added after the counts and the search excerpts were seen (DECISIONS):
+  "a conflict with": "a conflict with an answer, a definition or a solution, not a timetable clash",
+  "have a conflict": "a conflict with an answer or the textbook's solution, not a timetable clash",
 };
 
 /** The exact phrases a key part is searched as: one per alternative, "!w" dropped, "…" and MSE_SKIP not searched. */
