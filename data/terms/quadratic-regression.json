@@ -1,9 +1,11 @@
 {
   "id": "quadratic-regression",
   "ja": {
-    "term": "二次関数の回帰",
-    "reading": "にじかんすうのかいき",
-    "alt": []
+    "term": "二次回帰",
+    "reading": "にじかいき",
+    "alt": [
+      "二次関数の回帰"
+    ]
   },
   "en": {
     "term": "quadratic regression",
@@ -12,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "日本の高校課程では扱わない。米国は Algebra 1・2 のグラフ電卓の QuadReg。",
   "domains": [
     "algebra"
   ],
@@ -21,6 +23,7 @@
       "大学"
     ],
     "us": [
+      "Algebra 1",
       "Algebra 2"
     ]
   },
@@ -31,12 +34,12 @@
   "examples": [
     {
       "en": "The points curve up, so a line won't fit well. Let's run a quadratic regression on the calculator.",
-      "ja": "点が曲がって上がっているから、直線ではうまく合わない。電卓で二次関数の回帰をしてみよう。",
+      "ja": "点が曲がって上がっているから、直線ではうまく合わない。電卓で二次回帰をしてみよう。",
       "register": "spoken"
     },
     {
       "en": "Use quadratic regression to find a quadratic function that models the data in the table.",
-      "ja": "二次関数の回帰を用いて、表のデータを表す二次関数を求めよ。",
+      "ja": "二次回帰を用いて、表のデータを表す二次関数を求めよ。",
       "register": "written"
     }
   ],
@@ -64,21 +67,21 @@
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
-    {
-      "code": "corpus-undecided",
-      "note": "コーパスで決まらず、CED・OpenStax・IM・CK-12・Nicholson・Levin・英語版 Wikipedia のどれにも呼び方がない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。人間レビューへ。",
-      "raised": "2026-09-25"
-    },
     {
       "code": "draft-reason",
       "note": "quadratic regression は英語で使う名前だが、用例コーパス・CED・OpenStax・IM・CK-12・Nicholson・Levin に 0 件で、台帳にも Wikipedia の記事がない。確かめられる出典が見つからない（2026-09-25、バッチ 7）。英語版 Wikipedia「Polynomial regression」の本文にも quadratic regression は出てこない（2026-09-26、監査 2）。",
       "raised": "2026-09-25"
+    },
+    {
+      "code": "corpus-human-settled",
+      "note": "見出しは人間が決めた（quadratic regression ／ 二次回帰。人間レビュー第 3 週で妥当。ユーザーの決定 4（監査 12 の前。人間レビュー第 3 週））。register は主張しない。",
+      "raised": "2026-10-07"
     }
   ]
 }

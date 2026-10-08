@@ -2,12 +2,16 @@
   "id": "multiply-by-r-and-subtract",
   "situation": "class-listening",
   "intent": "等比数列の和を、両辺に r を掛けて引き算して求める",
-  "en": "Multiply both sides by r and subtract.",
-  "ja": "両辺に r を掛けて、引き算します。",
+  "en": "Multiply both sides by r, then subtract the two equations.",
+  "ja": "両辺に r を掛けて、2 つの式を引き算します。",
   "register": "neutral",
   "variants": [
     {
-      "en": "Now subtract one equation from the other.",
+      "en": "Multiply every term by r.",
+      "register": "neutral"
+    },
+    {
+      "en": "Subtract one equation from the other.",
       "register": "neutral"
     }
   ],
@@ -21,30 +25,34 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-28",
+  "updated": "2026-10-07",
   "evidence": {
     "spoken": {
-      "multiply by r | multiply … by r": 11,
-      "subtract the two equations | subtract these two equations | subtract one from the other | subtract one equation from the other": 5
+      "multiply both sides by r": 3,
+      "subtract one equation from the other | subtract one from the other | subtract the two equations | subtract these two equations": 5,
+      "multiply every term by r | multiply each term by r": 1
     },
     "sources": [
       "khan-algebra",
       "khan-ap-calc",
       "khan-middle",
       "mit-18.01",
-      "mit-18.02",
       "mit-18.03",
-      "mit-18.06",
       "mit-6.042",
       "yt:profleonard"
     ],
-    "counted": "2026-09-28"
+    "counted": "2026-10-07"
   },
   "flags": [
     {
-      "code": "audit-human",
-      "note": "Phase 5 監査（2026-09-28）で判断がつかない: 要の部分 multiply … by r の 11 件のうち等比数列の和を求める文は Khan AP Calc の 1 件（ほかは極座標・ヤコビアン・行列・半径の r）、subtract の 5 件のうち 2 件で、どちらも 3 件に届かない。講義の 3 本の導きは multiply every term by r ／ multiply by x … subtract the two equations ／ multiply the sum by x … subtract one from the other と言い方がそろわない。人間に決めてほしいこと: en（等比数列の和を r 倍して引いて求めるときの言い方）。人間レビューへ。",
-      "raised": "2026-09-28"
+      "code": "corpus-human-settled",
+      "note": "en は人間が決めた（Multiply both sides by r, then subtract the two equations.。ユーザーの決定 3（監査 12 の前。監査 11 の人間レビュー行き））。講義の等比数列の和の導きは multiply every term by r ／ multiply by x … subtract the two equations ／ multiply the sum by x … subtract one from the other と言い方がそろわない（DECISIONS）。register は主張しない。",
+      "raised": "2026-10-07"
+    },
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE の教員の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 subtract one equation from the other | subtract one from the other | subtract the two equations | subtract these two equations（5 件。3 件以上）。register は主張しない。",
+      "raised": "2026-10-07"
     }
   ],
   "reviewed": {

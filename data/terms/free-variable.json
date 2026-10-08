@@ -43,8 +43,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "台帳の langlink（自由変数と束縛変数 → Free variables and bound variables）は論理学の自由変数で、別の概念。Levin の free variable（9 件）も論理学の意味。",
-    "Nicholson は free variable と言わず、parameter や nonleading variable と書く。"
+    "台帳の langlink（自由変数と束縛変数 → Free variables and bound variables）は論理学の自由変数で、別の概念。Levin の free variable も論理学の意味。",
+    "Nicholson（1.2）は nonleading variable（先頭の 1 の無い列の変数）と書き、それを free variable とも呼ぶ。自由変数に置く新しい文字（s、t）は parameter と呼ぶ。"
   ],
   "related": [
     "basic-variable",
@@ -54,22 +54,21 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
+      "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
+      "note": "1.2 Gaussian Elimination（nonleading variables を “free” variables とも呼び、新しい文字 s, t を parameters と呼ぶ。索引 free variables）"
     }
   ],
-  "confidence": "draft",
+  "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": null,
     "human": null
   },
-  "updated": "2026-09-26",
-  "flags": [
-    {
-      "code": "draft-reason",
-      "note": "英語は線形代数の用語（free variable）だが、OpenStax（6 冊）・Nicholson にはなく、台帳の Wikipedia は論理学の別の概念（用例コーパスでは MIT OCW 18.06 だけ）。線形代数の意味は英語版 Wikipedia「System of linear equations」の節 Describing the solution の本文に出てくるだけで、太字も節の見出しもない（2026-09-26、監査 2）。",
-      "raised": "2026-09-25"
-    }
-  ],
+  "updated": "2026-10-07",
   "evidence": {
     "spoken": {
       "free variable": 93
@@ -77,6 +76,6 @@
     "sources": [
       "mit-18.06"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-10-07"
   }
 }

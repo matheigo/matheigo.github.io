@@ -2,10 +2,15 @@
   "id": "evaluate-critically",
   "situation": "class-listening",
   "intent": "推論や結論が正しいかを批判的に検討させる",
-  "en": "Critique the reasoning.",
-  "ja": "この推論を批判的に検討してみましょう。",
+  "en": "Do you agree with this reasoning? Why or why not?",
+  "ja": "この考え方は正しいと思いますか。理由も説明してください。",
   "register": "neutral",
   "variants": [
+    {
+      "en": "Critique the reasoning.",
+      "register": "written",
+      "note": "Common Core の数学的実践 3（Construct viable arguments and critique the reasoning of others）の言い方。"
+    },
     {
       "en": "Does this conclusion hold up?",
       "register": "neutral"
@@ -18,24 +23,25 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Common Core State Standards for Mathematics: Standards for Mathematical Practice",
+      "url": "https://www.thecorestandards.org/Math/Practice/",
+      "note": "MP3 Construct viable arguments and critique the reasoning of others（variant の Critique the reasoning. の言い方。2026-10-07 に確かめた）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-28",
+  "updated": "2026-10-07",
   "evidence": {
-    "spoken": {
-      "critique": 25
-    },
-    "sources": [
-      "micase"
-    ],
-    "counted": "2026-09-28"
+    "sources": [],
+    "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "audit-human",
-      "note": "Phase 5 監査（2026-09-28）で判断がつかない: 要の部分 critique の 25 件はすべて MICASE の人文系の授業（宗教学・歴史・哲学ほか）の critique で、数学の推論や結論を検討させる文は 0 件。形で除けず、ほかに試した言い方（critique the reasoning、what's wrong with this argument）も 0 件で、3 件に届く言い方が無い。人間に決めてほしいこと: en（数学の授業で推論を批判的に検討させるときの言い方）。ja「この推論を批判的に検討してみましょう」とも揃える。人間レビューへ。",
-      "raised": "2026-09-28"
+      "code": "corpus-human-settled",
+      "note": "en は人間が決めた（Do you agree with this reasoning? Why or why not?。ユーザーの決定 3（監査 12 の前。監査 11 の人間レビュー行き））。用例コーパスの講義と MICASE の教員の発話には agree … why or why not も explain your reasoning も出てこない（Khan Academy の字幕も 0 件）。IM は Do you agree with …? Explain your reasoning. の形で問う（DECISIONS）。register は主張しない。",
+      "raised": "2026-10-07"
     }
   ],
   "reviewed": {

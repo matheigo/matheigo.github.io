@@ -141,9 +141,11 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   "the-common-ratio-is-less-than-1": {
     "Since |r| < 1, the series converges.": "the series converges",
   },
+  // The human's en (監査 12 の前の決定 3). multiply … by r alone was mostly polar coordinates, a Jacobian, a radius (Phase 5 監査 11)
   "multiply-by-r-and-subtract": {
-    "Multiply both sides by r and subtract.": "multiply by r | multiply … by r",
-    "Now subtract one equation from the other.": "subtract the two equations | subtract these two equations | subtract one from the other | subtract one equation from the other",
+    "Multiply both sides by r, then subtract the two equations.": "multiply both sides by r",
+    "Multiply every term by r.": "multiply every term by r | multiply each term by r",
+    "Subtract one equation from the other.": "subtract one equation from the other | subtract one from the other | subtract the two equations | subtract these two equations",
   },
   "find-the-pattern": {
     "Do you see a pattern?": "see a pattern | see the pattern",
@@ -189,8 +191,11 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   "split-at-the-median": {
     "The median splits the data into a lower half and an upper half.": "lower half | upper half",
   },
+  // The human's en (監査 12 の前の決定 3). critique alone was the humanities' critique of a text (Phase 5 監査 11).
+  // A "…" blank never crosses a "?", so "Do you agree with Noah? Why or why not?" is read by hand (DECISIONS)
   "evaluate-critically": {
-    "Critique the reasoning.": "critique",
+    "Do you agree with this reasoning? Why or why not?": "agree … why or why not | explain your reasoning",
+    "Critique the reasoning.": "critique the reasoning | critique reasoning",
     "Does this conclusion hold up?": "",
   },
   "organize-the-data": {
