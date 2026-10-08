@@ -11,10 +11,16 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "授業の始めの活動 Notice and Wonder（What do you notice? What do you wonder?）。IM 9–12 Math も同じ"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-28",
+  "updated": "2026-10-07",
   "evidence": {
     "spoken": {
       "what do you notice": 6
@@ -24,23 +30,26 @@
       "mit-18.06",
       "yt:profleonard"
     ],
-    "counted": "2026-09-28"
+    "counted": "2026-10-07"
   },
   "flags": [
-    {
-      "code": "corpus-attested-only",
-      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE の教員の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 what do you notice（6 件。3 件以上）。register は主張しない。",
-      "raised": "2026-09-28"
-    },
     {
       "code": "audit-major-fix",
       "note": "Phase 5 監査（2026-09-28）で大きな直し: en の What happens if … と variant の What do you notice? は別の問い → en を What do you notice?（id・台帳・IM）、ja・intent を合わせ、別の問いを外した。見直す点: intent・ja、what do you notice 6 件。次の監査のセッションが見直す。",
       "raised": "2026-09-28"
+    },
+    {
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE の教員の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 what do you notice（6 件。3 件以上）。register は主張しない。",
+      "raised": "2026-10-07"
     }
   ],
   "reviewed": {
     "machine": null,
     "audit": "2026-09-28",
     "human": null
-  }
+  },
+  "notes": [
+    "Illustrative Mathematics（IM）は授業の始めの活動 Notice and Wonder で、What do you notice? に続けて What do you wonder?（疑問に思ったことは何か）と聞く。"
+  ]
 }

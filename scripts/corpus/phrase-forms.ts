@@ -68,8 +68,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   // into two pieces / into two parts alone were mostly other splits (a pie, partial fractions, a sum) (Phase 5 監査 11)
   "split-the-integral": {
-    "We need to split the integral here.": "break … integral | split … integral",
-    "Let's break this into two pieces at x = 0.": "into two intervals",
+    "We need to split the integral here.": "break … integral | split … integral | splitting … integral | broke … integral | broken … integral",
+    "Let's break it into two intervals at x = 0.": "into two intervals",
   },
   // limit as n approaches infinity of alone was mostly a sequence or a series test (Phase 5 監査 11)
   "write-as-a-limit-of-a-sum": {
@@ -317,8 +317,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   // on the test / on the exam alone were mostly scores (their score on the test) (Phase 5 監査 11)
   "class-listening-this-will-be-on-the-test": {
-    "This will be on the exam.": "be on the exam | 's on the exam | is on the exam",
-    "This will be on the test.": "be on the test | 's on the test | is on the test",
+    "This will be on the exam.": "be on the exam | what's on the exam | that's on the exam | is on the exam",
+    "This will be on the test.": "be on the test | what's on the test | that's on the test | is on the test",
   },
   // the formula sheet alone was mostly a video's description section (Phase 5 監査 11)
   "class-listening-you-dont-need-to-memorize": {
@@ -395,9 +395,9 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "How do you get from this line to that one?": "how do you get",
     "Where did the 2 come from?": "where did … come from | where does … come from | where'd … come from",
   },
-  // how come you / I / they were questions about someone's life; you know why is that was rhetorical (Phase 5 監査 11)
+  // how come you / I / they were questions about someone's life; you know why is that was rhetorical (Phase 5 監査 11; !you dropped in 監査 12: "why do you why is that …")
   "class-asking-why-can-we": {
-    "Why is that?": "!you !know why is that",
+    "Why is that?": "!know why is that",
     "How come we can divide by x here?": "how come !you !i !they",
   },
   "class-asking-how-do-you-read-this": {
@@ -544,7 +544,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   // make more sense now counted a question to another student; that's helpful to answer was not thanks (Phase 5 監査 11)
   "office-hours-thanks-that-helps": {
     "Thanks, that really helps.": "that really helps | that helps a lot | that helped a lot | that's helpful !to | that was helpful | that's very helpful | that was really helpful | that's really helpful | that's so helpful",
-    "That makes a lot more sense now.": "that makes more sense now | it makes more sense now | makes a lot more sense now | makes sense now | makes more sense then | starting to make sense",
+    "Thanks, that makes a lot more sense now.": "that makes more sense now | it makes more sense now | makes a lot more sense now | makes sense now | makes more sense then | starting to make sense",
   },
   // the idea here is that ... explained a concept, not a plan (Phase 5 監査 11)
   "explaining-solution-overall-plan": {
@@ -582,7 +582,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   // extraneous solution is its own term (extraneous-solution), not throwing out a solution; bare thrown out / throw that out were mostly
   // another sense (thrown out of school, I just throw that out for discussion) (Phase 5 監査 11)
   "explaining-solution-threw-out-a-solution": {
-    "I threw out the negative solution because a length can't be negative.": "throw out … solution | threw out … solution | throw away … solution | threw away … solution | throw out … answer | threw out … answer | thrown out as | throw it out !there",
+    "I threw out the negative solution because a length can't be negative.": "throw out … solution | threw out … solution | throw away … solution | threw away … solution | throw out … answer | threw out … answer | thrown out as | throw it out !there | threw it out !there",
     "I rejected the negative solution because a length can't be negative.": "reject … solution | reject that solution",
   },
   "explaining-solution-used-the-rule": {
