@@ -39,6 +39,16 @@
       "code": "corpus-attested-only",
       "note": "どの要の部分も 10 件に届かない（書き言葉のコーパスと参照で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 we have that（10 件。3 件以上）。register は主張しない。",
       "raised": "2026-10-07"
+    },
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-10-07）で大きな直し: 例の「f(2) = 5 なので (2, 3) に零点」は誤り（数学）→ We have that f(2) = 5, so the point (2, 5) is on the graph of f.。見直す点: 例の数学、ja。次の監査のセッションが見直す。",
+      "raised": "2026-10-07"
     }
-  ]
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-10-07",
+    "human": null
+  }
 }
