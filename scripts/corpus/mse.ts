@@ -95,6 +95,13 @@ export const MSE_SKIP: Record<string, string> = {
   // Phase 5 監査 12, batch 41, added after the counts and the search excerpts were seen (DECISIONS):
   "a conflict with": "a conflict with an answer, a definition or a solution, not a timetable clash",
   "have a conflict": "a conflict with an answer or the textbook's solution, not a timetable clash",
+  // Phase 5 監査 12, batch 42, added after the counts and the search excerpts were seen (DECISIONS):
+  "split them up": "splitting a sum, an integral or a set into parts, not sharing problems among people",
+  "divide them up": "dividing objects into groups (counting), not sharing problems among people",
+  "study together": "a word problem's friends, or studying two subjects side by side (study X, together with Y), not inviting someone",
+  "studying together": "studying two subjects side by side, not inviting someone",
+  "office hours today": "going to (or missing) office hours (a mention), not asking whether they are held",
+  "right channel": "a communication or audio channel (information theory, stereo), not a chat channel",
 };
 
 /** The exact phrases a key part is searched as: one per alternative, "!w" dropped, "…" and MSE_SKIP not searched. */

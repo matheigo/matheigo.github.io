@@ -994,10 +994,12 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "group-study-work-together": {
     "Do you want to work on the problem set together?": "work on … together",
-    "Want to study together for the midterm?": "study together | studying together",
+    "Want to study together for the midterm?": "study together | studying together | want to study together | wanna study together | study together for the",
   },
+  // at the library named a place; the students' own question is do you wanna meet … (Phase 5 監査 12)
   "group-study-where-to-meet": {
-    "Does 7 at the library work?": "at the library",
+    "Do you want to meet at the library at 7?": "you wanna meet | we wanna meet | guys wanna meet | anybody wanna meet | anyone wanna meet | you want to meet | we want to meet | guys want to meet",
+    "Does 7 at the library work?": "",
     "Let's meet at the library at 7.": "let's meet | meet at the library",
   },
   "group-study-what-did-you-get": {
@@ -1013,10 +1015,10 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "group-study-split-them-up": {
     "Let's each do a few and then explain them to each other.": "explain them to each other | explain it to each other",
-    "Should we split them up?": "split them up | divide them up",
+    "Should we split them up?": "split them up | divide them up | split up the problems | divide up the problems | split the problems",
   },
   "group-study-write-up-our-own": {
-    "We can talk about the problems, but we have to write up our own solutions.": "write up our own | write up your own | our own solutions | your own solutions",
+    "We can talk about the problems, but we have to write up our own solutions.": "write up our own | write up your own | write our own solutions | write your own solutions | write up your own solutions",
   },
   "group-study-answer-key-wrong": {
     "I think the answer key might be wrong.": "the answer key",
@@ -1046,12 +1048,12 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Let's time ourselves.": "time ourselves | time yourself",
   },
   "group-study-what-is-it-asking": {
-    "What is this question even asking?": "what is it asking | what's it asking | what is this question asking",
+    "What is this question even asking?": "what is it asking | what's it asking | what is this question asking | what is this question even asking | what is it even asking",
     "What are they asking for here?": "what are they asking",
   },
   "group-study-where-do-we-start": {
-    "Where do we even start with this one?": "where do we start | where do i start | where to start",
-    "Any ideas for number 7?": "!have any ideas",
+    "Where do we even start with this one?": "where do we start | where do i start | where to start | where do we even start | where do i even start",
+    "Any ideas for number 7?": "!have !has any ideas",
   },
   "discord-anyone-get": {
     "Did anyone get #3?": "did anyone get | has anyone gotten",
@@ -1068,8 +1070,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Where did I go wrong?": "where did i go wrong",
   },
   "discord-hint-no-spoilers": {
-    "Can someone give me a hint? No full solutions pls.": "a hint | any hints",
-    "Just a nudge please, no spoilers.": "no spoilers | no full solutions",
+    "Can someone give me a hint? No full solutions pls.": "a hint | any hints | no full solutions",
+    "Just a nudge please, no spoilers.": "no spoilers | a nudge",
   },
   "discord-nvm-figured-it-out": {
     "never mind, got it": "never mind | nevermind",
@@ -1080,18 +1082,20 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "ty!": "",
   },
   "discord-same-answer": {
-    "I got the same answer — 12.": "i got the same | got the same answer",
     "Same, I got 12 too.": "",
+    "I got the same answer — 12.": "i got the same | got the same answer",
     "+1": "",
   },
   "discord-notes-from-today": {
     "Can someone share their notes from today?": "share their notes | share your notes | notes from today",
   },
   "discord-office-hours-today": {
+    "Are you still having office hours today?": "have office hours | having office hours",
     "Are office hours still happening today?": "office hours today | office hours still",
   },
+  // on the quiz alone was mostly grades (how did you do on the test) (Phase 5 監査 12)
   "discord-quiz-covers": {
-    "Is 4.3 on the quiz too?": "on the quiz | on the test | on the exam",
+    "Is 4.3 on the quiz too?": "be on the quiz | be on the test | be on the exam | is … on the quiz | is … on the test | is … on the exam | what's on the quiz | what's on the test | what's on the exam",
     "Does the quiz cover 4.3?": "quiz cover | exam cover | test cover",
   },
   "discord-when-is-the-midterm": {
@@ -1102,7 +1106,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "discord-right-channel": {
     "Is this the right channel for calc questions?": "right channel",
-    "Is this the right place to ask?": "the right place to ask | right place to ask",
+    "Is this the right place to ask?": "right place to ask",
   },
   "discord-study-on-a-call": {
     "Anyone want to hop on a call and study?": "hop on a call | jump on a call | on a zoom call",
@@ -1117,8 +1121,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "So that means the limit doesn't exist?": "so that means",
   },
   "group-study-which-one-do-you-mean": {
-    "Which one? The second equation?": "which one !of !is !you !we !they",
-    "Are you talking about the second equation?": "are you talking about",
+    "Which one? The second equation?": "which one ?",
+    "Are you talking about the second equation?": "!what are you talking about",
     "Do you mean the second equation?": "do you mean the",
   },
   // or is it just … asked which of two things; is that right here was a place (Phase 5 監査 12)

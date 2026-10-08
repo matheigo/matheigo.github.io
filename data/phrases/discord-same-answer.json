@@ -2,19 +2,18 @@
   "id": "discord-same-answer",
   "situation": "discord",
   "intent": "自分も同じ答えになったと言う",
-  "en": "I got the same answer — 12.",
+  "en": "Same, I got 12 too.",
   "ja": "自分も 12 になった。",
   "register": "casual",
   "variants": [
     {
-      "en": "Same, I got 12 too.",
-      "register": "casual",
-      "note": "数えない（same はほかの使い方と分けられない）。"
+      "en": "I got the same answer — 12.",
+      "register": "casual"
     },
     {
       "en": "+1",
       "register": "casual",
-      "note": "同意の印。数えない。"
+      "note": "同意の印。"
     }
   ],
   "tags": [
@@ -27,7 +26,7 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26",
+  "updated": "2026-10-07",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"
@@ -35,8 +34,11 @@
   "flags": [
     {
       "code": "corpus-attested-only",
-      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い i got the same | got the same answer で 0 件）。Math Stack Exchange の質問で i got the same | got the same answer が 285 件（3 件以上）なので likely。en の要の部分 i got the same | got the same answer も 285 件（3 件以上）なので en のまま。",
-      "raised": "2026-09-26"
+      "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い  で 0 件）。Math Stack Exchange の質問で i got the same | got the same answer が 285 件（3 件以上）なので likely。en の要の部分 （数えない） は Math Stack Exchange で検索しない。en は Math Stack Exchange では選ばない。",
+      "raised": "2026-10-07"
     }
+  ],
+  "notes": [
+    "Same, は「自分も（同じ）」と返すチャットのくだけた書き方。"
   ]
 }
