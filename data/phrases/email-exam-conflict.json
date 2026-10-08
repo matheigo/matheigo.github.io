@@ -31,6 +31,16 @@
       "code": "corpus-student-rare",
       "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い a conflict with | have a conflict | conflict with my exam | conflict with my final | conflict with the final exam で 0 件）。draft のまま。",
       "raised": "2026-10-07"
+    },
+    {
+      "code": "audit-human",
+      "note": "Phase 5 監査（2026-10-07）で判断がつかない: Math Stack Exchange の have a conflict は解答・教科書との食い違いの意味で MSE_SKIP に入れた。予定が重なる意味の形（conflict with my exam ほか）は MSE 0 件、MICASE の学生の発話も 2 件で 3 件に届かない（corpus-student-rare）。人間に決めてほしいこと: en（期末試験の時間が別の予定と重なると伝えるメールの文。今は I have a conflict with the final exam time. Would it be possible to take it at a different time?）。ja の「別の試験と」は en に無い。人間レビューへ。",
+      "raised": "2026-10-07"
     }
-  ]
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-10-07",
+    "human": null
+  }
 }

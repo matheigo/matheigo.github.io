@@ -34,5 +34,17 @@
       "openstax-introstats"
     ],
     "counted": "2026-10-07"
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-10-07）で大きな直し: ja ・intent の「名前と目盛り」が en に無かった。label and scale を候補に足すと ① 16 ／ 8 → en を Label and scale the axes.、Label the axes. を variant に、別の意図の Label the graph. を外した。見直す点: label and scale の 16 件（すべて OpenStax Introductory Statistics）、ja。次の監査のセッションが見直す。",
+      "raised": "2026-10-07"
+    }
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-10-07",
+    "human": null
   }
 }

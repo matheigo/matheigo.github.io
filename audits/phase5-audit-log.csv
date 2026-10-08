@@ -2096,3 +2096,53 @@ batch,seq,collection,id,verdict,changes,note,date
 40,1958,phrases,exam-explain-your-reasoning,合格,,,2026-10-07
 40,1959,phrases,exam-express-in-terms-of,合格,,,2026-10-07
 40,1960,phrases,exam-indicate-units,大きな直し,en Use appropriate units. → Include units in your answer.（2 つの要の部分は 7 対 7 の同数（重み付けの差だけで appropriate が上）。全 14 件を読むと、答えに単位をつけさせる指示は include 5〜6 ・appropriate ｜ correct 4（ほかは単位換算・ケプラーの法則の別の意味 3）。要の部分を分け（数えた 7 件はすべて include で、indicate は 0 件）、別の意味を形で除くと include 7 ／ appropriate 5 で include が首位） ／ variants: 前の en Use appropriate units. を 2 つ目に,7 対 7 の同数を読むと include 5〜6 ・appropriate 4 → 要の部分を分けて別の意味を除き include 7 ／ appropriate 5、en を Include units in your answer.（新しい文）、CED の Indicate units of measure. と Use appropriate units. を variants に。見直す点: 14 件の読み、形、en の文,2026-10-07
+41,1961,phrases,exam-interpret-in-context,合格,,,2026-10-07
+41,1962,phrases,exam-is-it-curved,合格,,,2026-10-07
+41,1963,phrases,exam-justify-your-answer,小さな直し,variants[0] に note（CED の Explain と Justify の違い）を足した ／ AP Calculus の CED を出典に（variant の note）,,2026-10-07
+41,1964,phrases,exam-label-your-axes,大きな直し,en Label the axes. → Label and scale the axes.（ja ・intent の「名前と目盛り」が en に無かった。目盛りまで言う label and scale（OpenStax Introductory Statistics の指示 16 件）を候補に足すと ① label and scale 16 ／ label the axes ほか 8 で、規則で en が変わる。台帳の ja ・intent の訳の元の言い方） ／ variants: 前の en Label the axes. を variant に。Label the graph. は外した（IM の label the graph はどのグラフがどの式かを書かせる指示で、軸の名前とは別の意図）,ja ・intent の「名前と目盛り」が en に無かった。label and scale を候補に足すと ① 16 ／ 8 → en を Label and scale the axes.、Label the axes. を variant に、別の意図の Label the graph. を外した。見直す点: label and scale の 16 件（すべて OpenStax Introductory Statistics）、ja,2026-10-07
+41,1965,phrases,exam-multiple-choice-and-free-response,小さな直し,variants Part B is free response. を外した（1 つの区分の形式を言う文で、試験全体の構成を言う en と別の意図。要の部分も en の文の語 free-response section を数えていた） ／ en の要の部分を en の文の 2 つの区分の名前に（multiple choice questions は比の文章題を数えていた。variant の要の部分は en の文の語を数えていた。phrase-forms.ts）,,2026-10-07
+41,1966,phrases,exam-notes-allowed,不合格,variants This is a closed-book exam. を外した（何も持ち込めないという反対の決まりで、同じ意図の言い換えではない） ／ 要の部分を持ち込む働きの形（bring … page of note ほか）に（page of notes ほか 13 件はすべて演習の板の公式一覧・配った講義ノートで、試験に持ち込む文は 0。phrase-forms.ts）,"要の部分 page of notes ほか 13 件はすべて演習の板の公式一覧（cheat sheet）・配った講義ノートで、試験に持ち込む文は 0。持ち込む形に絞ると 0 件で 3 件に届かない（MIT 6.042 の crib sheet 3 件は 1 本の講義）。反対の決まりの variant（closed-book）は外した。人間に決めてほしいこと: en（試験に持ち込めるもの（ノート 1 枚）を伝える監督・先生の言い方。今は You can bring one page of notes, front and back.）",2026-10-07
+41,1967,phrases,exam-partial-credit,合格,,,2026-10-07
+41,1968,phrases,exam-pencils-down,合格,,,2026-10-07
+41,1969,phrases,exam-set-up-but-do-not-evaluate,小さな直し,variants[0] を言い換えた（khan-ap-calc の AP の問題の読み上げと 11 語一致していた。…for the area → …that gives the area of R） ／ ja 積分の式を立てるだけでよい（計算しなくてよい）。 → 体積を表す積分の式を立てよ。ただし、計算はしなくてよい。（en の for the volume を ja に）,,2026-10-07
+41,1970,phrases,exam-show-that,合格,,,2026-10-07
+41,1971,phrases,exam-show-your-work,合格,,,2026-10-07
+41,1972,phrases,exam-simplest-form,小さな直し,ja 最も簡単な形（既約分数）で答えよ。 → 最も簡単な形で答えよ。（「（既約分数）」は variant の in lowest terms の訳で、en の simplest form（根号・有理式・指数にも使う）を分数に狭めていた） ／ 要の部分を in simplest form ｜ simplest form !of に（「最も簡単な形の回帰」ほかを除く。phrase-forms.ts）,,2026-10-07
+41,1973,phrases,exam-three-decimal-places,小さな直し,ja （電卓問題）小数点以下 3 桁まで正確に答えよ。 → …小数第 4 位を四捨五入して、小数第 3 位まで求めよ。（ja は台帳の 1 つ目の文（correct to、今の variant）の訳のままで、en の round（四捨五入）が無かった。センター試験の問題文の言い方に） ／ variants[1].note を CED の本文の場所（Unit 2 の概要）と中身（四捨五入か切り捨て）に ／ CED の出典の note の章を exam → Unit 2 の概要（本文は Unit 2 の Preparing for the AP Exam）,,2026-10-07
+41,1974,phrases,exam-time-remaining,合格,,,2026-10-07
+41,1975,phrases,exam-use-the-table-to-approximate,小さな直し,en の R′(5) を W′(12) に（variant が AP の CED の FRQ の問題文と R′(5) まで 10 語一致していた。en ・ja もそろえた） ／ variants[0] の R′(5) を W′(12) に（CED の問題文と khan-ap-calc の読み上げとの 10 語一致を外した）、note の「3 件」を 1 つの問題の言い方に ／ ja の R′(5) を W′(12) に,,2026-10-07
+41,1976,phrases,exam-when-do-we-get-it-back,合格,,,2026-10-07
+41,1977,phrases,exam-which-of-the-following,合格,,,2026-10-07
+41,1978,phrases,exam-write-an-equation-for-the-tangent-line,合格,,,2026-10-07
+41,1979,phrases,on-the-interval-from-0-to-2,小さな直し,要の部分を方程式を解く範囲の指示の形に（on ／ in the interval は increasing on the interval ほか区間一般を数えた ②。絞ると 11 対 1 の ①。phrase-forms.ts）,,2026-10-07
+41,1980,phrases,the-area-of-the-region-bounded-by,合格,,,2026-10-07
+41,1981,phrases,email-attached,合格,,,2026-10-07
+41,1982,phrases,email-cannot-make-office-hours,合格,,,2026-10-07
+41,1983,phrases,email-confirm,合格,,,2026-10-07
+41,1984,phrases,email-describe-where-stuck,合格,,,2026-10-07
+41,1985,phrases,email-dictionary-during-exam,合格,,,2026-10-07
+41,1986,phrases,email-exam-conflict,不合格,MSE_SKIP に a conflict with ・have a conflict（数学の質問のサイトでは解答・定義との食い違い）、要の部分に conflict with my exam ほか（mse.ts、phrase-forms.ts）,Math Stack Exchange の have a conflict は解答・教科書との食い違いの意味で MSE_SKIP に入れた。予定が重なる意味の形（conflict with my exam ほか）は MSE 0 件、MICASE の学生の発話も 2 件で 3 件に届かない（corpus-student-rare）。人間に決めてほしいこと: en（期末試験の時間が別の予定と重なると伝えるメールの文。今は I have a conflict with the final exam time. Would it be possible to take it at a different time?）。ja の「別の試験と」は en に無い,2026-10-07
+41,1987,phrases,email-extension,合格,,,2026-10-07
+41,1988,phrases,email-follow-up,合格,,,2026-10-07
+41,1989,phrases,email-greeting,小さな直し,"variants[0]（Hi Professor Smith,）の register neutral → casual（notes の人間の文「くだけた書き方」に合わせた）",,2026-10-07
+41,1990,phrases,email-introduce-yourself,小さな直し,要の部分に my name's を足した（縮約の綴りをそろえた。監査 12 の前の決定 2）,,2026-10-07
+41,1991,phrases,email-missed-class,小さな直し,ja に en の I'm sorry（お詫び）を足した,,2026-10-07
+41,1992,phrases,email-prerequisite,小さな直し,要の部分を the prerequisite !of に（哲学の the prerequisite of を除く。phrase-forms.ts）,,2026-10-07
+41,1993,phrases,email-regrade-request,小さな直し,variant の要の部分を office-hours-regrade と同じ並べ方に（another look が MSE_SKIP に入り、数え直すと draft になるところだった。phrase-forms.ts）,,2026-10-07
+41,1994,phrases,email-sign-off,合格,,,2026-10-07
+41,1995,phrases,email-subject-line,合格,,,2026-10-07
+41,1996,phrases,email-thank-you-for-your-time,合格,,,2026-10-07
+41,1997,phrases,email-writing-to-ask,合格,,,2026-10-07
+41,1998,phrases,group-study-answer-key-wrong,小さな直し,ja の 2 文目「何回やっても 13 になる。」を外した（en に無く、variant の文の中身。台帳が 2 文に付けた ja のままだった）,,2026-10-07
+41,1999,phrases,group-study-ask-the-ta,合格,,,2026-10-07
+41,2000,phrases,group-study-can-i-see-your-notes,合格,,,2026-10-07
+41,2001,phrases,group-study-do-you-see-what-i-mean,合格,,,2026-10-07
+41,2002,phrases,group-study-does-that-mean,小さな直し,要の部分から what does that mean（語の意味を聞く別の働き。group-study-what-do-you-mean の variant が数える）を除いた（② 14 ／ 12。phrase-forms.ts）,,2026-10-07
+41,2003,phrases,group-study-how-did-you-get-that,小さな直し,ja 私は違う答えになった。どうやったか見せて。 → …どうやって出したの？（en の how did you get that に。「見せて」は台帳の文（can you show me）の訳のままだった） ／ intent 違う答えになったので解き方を見せてもらう → 違う答えになったので、相手の解き方を聞く（en と variant の両方に合う言い方に）,,2026-10-07
+41,2004,phrases,group-study-i-thought-it-was,合格,,,2026-10-07
+41,2005,phrases,group-study-is-that-right,大きな直し,"en Is it just 2x? → The answer is 3, is that right?（decide の ②（is it just 17 ／ is that right 15）の頻度順で en が替わり、ja が台帳の文のまま残っていた。読むと is it just の 17 件のうち答えを確かめる文は 1〜2（多くは or is it just … の選択の問い）、is that right の 15 件のうち 13 件が確かめる問い。形で除くと is that right 14 ／ is it just 10 の ② で is that right が首位。台帳の 1 つ目の文、ja と合う） ／ variants: 前の en Is it just 2x? を variant に","decide の ② で en が Is it just 2x? に替わり ja が台帳の文のまま。読むと is that right 13 ／ is it just 1〜2、形で除くと 14 ／ 10 の ② → en を The answer is 3, is that right?（台帳の 1 つ目の文）、Is it just 2x? を variant に。見直す点: 17 ・15 件の読み、形（!here ・!or）",2026-10-07
+41,2006,phrases,group-study-not-sure-but,合格,,,2026-10-07
+41,2007,phrases,group-study-oh-that-makes-sense,小さな直し,"en Ohh, I see. → Oh, I see.（ohh は MICASE の学生の発話に 0 件で、要の部分の 32 件はすべて oh i see ／ oh okay i see） ／ variants[0] Oh, that makes sense now. → Okay, that makes sense.（前の文の要の部分は MICASE の学生の発話に 0 件。学生が納得を伝える that makes sense は okay ／ yeah を前に置く（6 件））",,2026-10-07
+41,2008,phrases,group-study-practice-exam,小さな直し,要の部分を誘う形（let's do the practice ほか ・under timed conditions）に（practice exam ほか 9 件は模擬試験を話題にするだけで、誘う文は 0。phrase-forms.ts）,,2026-10-07
+41,2009,phrases,group-study-quiz-each-other,合格,,,2026-10-07
+41,2010,phrases,group-study-so-youre-saying,合格,,,2026-10-07
