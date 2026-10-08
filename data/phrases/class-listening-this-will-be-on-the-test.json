@@ -20,8 +20,8 @@
       "type": "editorial"
     }
   ],
-  "confidence": "likely",
-  "updated": "2026-09-28",
+  "confidence": "verified",
+  "updated": "2026-10-07",
   "evidence": {
     "spoken": {
       "be on the exam | what's on the exam | that's on the exam | is on the exam": 7,
@@ -36,11 +36,6 @@
   },
   "flags": [
     {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-09-28）で大きな直し: 50 対 50 の同数を全件読むと「試験に出る」は exam 17・test 12 → en を This will be on the exam.、形を be on the … に（7 対 4）。見直す点: 全件の読み方（点数の例・百分位・済んだ試験を除いた）、形。次の監査のセッションが見直す。",
-      "raised": "2026-09-28"
-    },
-    {
       "code": "corpus-attested-only",
       "note": "どの要の部分も 10 件に届かない（講義のコーパスと MICASE の教員の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 be on the exam | what's on the exam | that's on the exam | is on the exam（7 件。3 件以上）。register は主張しない。",
       "raised": "2026-10-07"
@@ -48,7 +43,7 @@
   ],
   "reviewed": {
     "machine": null,
-    "audit": "2026-09-28",
+    "audit": "2026-10-07",
     "human": null
   }
 }
