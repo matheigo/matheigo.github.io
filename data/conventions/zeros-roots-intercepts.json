@@ -2,7 +2,7 @@
   "id": "zeros-roots-intercepts",
   "title_ja": "解・共有点と zero・x-intercept",
   "title_en": "Zeros, roots and intercepts",
-  "jp": "二次方程式の解を、二次関数のグラフと x 軸との共有点の x 座標として捉える（高等学校学習指導要領解説 数学I）。",
+  "jp": "高等学校学習指導要領解説 数学I は、二次方程式の解を二次関数のグラフと x 軸との共有点の x 座標として捉える。共通テスト（令和8年度 本試験 数学Ⅰ，数学Ａ 第2問〔1〕）も、点を「共有点の座標」、値を「共有点の x 座標」と書き分けて問う。",
   "us": "OpenStax Elementary Algebra（4.3 Graph with Intercepts）は x-intercept をグラフが x 軸と交わる点 (a, 0) と定義するが、同じ本の 4.5 は x-intercepts を −2 と −5 のように値でも書き、OpenStax Precalculus（2.3）も x-intercept を 8.75 weeks と値で書く。OpenStax Precalculus（3.2 Quadratic Functions）は x-intercepts が関数の zeros（roots）に当たると説明する。",
   "advice_ja": "zero は関数（root とも言う）、solution は方程式、x-intercept はグラフに使う。x-intercept を点 (3, 0) で答えるか値 3 で答えるかは問題文で確かめる。",
   "category": "terminology",
@@ -12,14 +12,14 @@
     ],
     "us": [
       "Algebra 1",
-      "Algebra 2"
+      "Algebra 2",
+      "Precalculus"
     ]
   },
   "term_refs": [
     "zeros-of-a-polynomial",
     "x-intercept",
-    "x-axis",
-    "y-axis"
+    "x-axis"
   ],
   "sources": [
     {
@@ -34,7 +34,7 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "3.2 Quadratic Functions（the zeros, or roots, of the quadratic function）"
+      "note": "5.1 Quadratic Functions（the zeros, or roots, of the quadratic function）"
     },
     {
       "type": "textbook",
@@ -45,6 +45,12 @@
       "type": "textbook",
       "title": "OpenStax Precalculus 2e",
       "note": "2.3 Modeling with Linear Functions（x-intercept を値で）、3.2 Quadratic Functions（zeros, or roots）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和8年度 大学入学共通テスト 本試験 数学Ⅰ，数学Ａ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=2144&f=abm00017544.pdf&n=2026_ol_16_sugaku1A.pdf",
+      "note": "第2問〔1〕(3): x 軸の共有点の座標・共有点の x 座標"
     }
   ],
   "confidence": "likely",

@@ -46,7 +46,7 @@
   "pitfalls": [
     "ordered pair は座標平面上の点の座標にも使う（エントリ coordinates）。解の組 (2, 3) は、グラフでは点 (2, 3) に当たる。",
     "ordered（順序のある）は、(2, 3) と (3, 2) が別の組であることを表す。x の値を先、y の値を後に書く。",
-    "日本語では解を x = 2, y = 3 や (x, y) = (2, 3) と書き表す。英語では The solution is the ordered pair (2, 3). のように、ordered pair 1 つで解を言う書き方もある。"
+    "センター試験の問題文は不定方程式の解を「x = ア，y = イウ」と分けて書き、組で答えるときは「(A, B) = (49 × ク，23 × ケコ)」と書く（平成31年度 本試験 数学Ⅰ・数学Ａ 第4問）。英語では The solution is the ordered pair (2, 3). のように、ordered pair 1 つで解を言う書き方もある。"
   ],
   "related": [
     "solution",
@@ -59,6 +59,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成31年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20200601/https://www.dnc.ac.jp/albums/abm.php?f=abm00036453.pdf&n=k+19+suugaku1A.pdf",
+      "note": "第4問: 不定方程式の解 x = ア，y = イウ、組 (A, B) = (49 × ク，23 × ケコ)"
     }
   ],
   "confidence": "verified",
@@ -67,7 +73,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "ordered pair": 46

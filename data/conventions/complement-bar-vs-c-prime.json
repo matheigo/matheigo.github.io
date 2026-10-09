@@ -3,8 +3,8 @@
   "title_ja": "補集合・余事象の記号",
   "title_en": "Complement notation",
   "jp": "高等学校学習指導要領解説は数学I で補集合を Ā と書き、数学A で余事象の確率を P(Ā) = 1 − P(A) と書く。センター試験（平成30年度 数学Ⅰ・数学Ａ 第3問）も「事象 A の余事象を Ā と表し」と書く。",
-  "us": "OpenStax Introductory Statistics（3.1 Terminology）は事象 A の余事象を A′ と書き、A prime と読む。AP Statistics の CED（topic 2.4）は E′・Ē・E^C の 3 通りを挙げ、Levin（3.7）は集合と同じく上線で書く。",
-  "advice_ja": "OpenStax Introductory Statistics の A′ は A の余事象（the complement of A）。AP Statistics の CED は E′・Ē・E^C のどれも挙げるので、上線の Ā もそのまま使える。",
+  "us": "OpenStax Introductory Statistics（3.1 Terminology）は事象 A の余事象を A′ と書き、A prime と読む。米国の高校の本の OpenStax Precalculus（11.7 Probability）・Algebra and Trigonometry（13.7）も余事象を E′ と書く。AP Statistics の CED（topic 2.4）は E′・Ē・E^C の 3 通りを挙げ、Levin（3.7）は集合と同じく上線で書く。",
+  "advice_ja": "OpenStax（Precalculus・Introductory Statistics）の E′・A′ は余事象（the complement of …）。AP Statistics の CED は E′・Ē・E^C のどれも挙げるので、上線の Ā もそのまま使える。",
   "category": "notation",
   "level": {
     "jp": [
@@ -12,8 +12,9 @@
       "数A"
     ],
     "us": [
-      "Intro Statistics",
-      "AP Statistics"
+      "Precalculus",
+      "AP Statistics",
+      "Intro Statistics"
     ]
   },
   "term_refs": [
@@ -63,6 +64,16 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "3.7: 事象の補集合を集合と同じ上線で書く"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "11.7 Probability: The complement of an event E, denoted E′（Complement Rule）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.7 Probability: 余事象 E′（Precalculus 11.7 と同じモジュール）"
     }
   ],
   "confidence": "likely",

@@ -3,8 +3,8 @@
   "title_ja": "全体集合と標本空間の文字",
   "title_en": "Universal set and sample space",
   "jp": "高等学校学習指導要領解説は、数学A の確率の性質で全事象を U と書く（P(U) = 1）。日本語版 Wikipedia「標本空間」も、全事象の意味では U で表すことも多いと書く。集合の全体も U で、共通テストの数学Ⅰは「全体集合 U を…とする」と書く（令和8年度 本試験 数学Ⅰ，数学Ａ 第1問 ほか）。なお同じ解説の数学B（確率分布）は標本空間を S と書く。",
-  "us": "OpenStax Introductory Statistics（3.1 Terminology）は標本空間（sample space）を大文字の S で表す。AP Statistics の CED・IM は sample space に文字を置かない。集合の全体は Levin（5.1 Sets）が universe と呼び、日本と同じく 𝒰 で書く。",
-  "advice_ja": "英語の確率の教科書（OpenStax Introductory Statistics）が S と書いたら、数A の全事象 U と同じもの（sample space）。集合の全体は英語でも U（Levin の 𝒰）でよいが、呼び方は universal set より universe（the universe 𝒰）。",
+  "us": "OpenStax Precalculus（11.7 Probability）・Algebra and Trigonometry（13.7）と Introductory Statistics（3.1 Terminology）は標本空間（sample space）を大文字の S で表す（Levin の 3.7 も S）。AP Statistics の CED・IM は sample space に文字を置かない。集合の全体は Levin（5.1 Sets）が universe と呼び、日本と同じく 𝒰 で書く。",
+  "advice_ja": "英語の確率の教科書（OpenStax Precalculus・Introductory Statistics）が S と書いたら、数A の全事象 U と同じもの（sample space）。集合の全体は英語でも U（Levin の 𝒰）でよいが、呼び方は universal set より universe（the universe 𝒰）。",
   "category": "letters",
   "level": {
     "jp": [
@@ -12,6 +12,7 @@
       "数A"
     ],
     "us": [
+      "Precalculus",
       "Intro Statistics",
       "Discrete Math"
     ]
@@ -35,7 +36,7 @@
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "5.1 Sets: universe 𝒰"
+      "note": "5.1 Sets: universe 𝒰。3.7 Applications to Probability: sample space S"
     },
     {
       "type": "textbook",
@@ -71,6 +72,16 @@
       "title": "Illustrative Mathematics, IM 9–12 Math",
       "url": "https://im.kendallhunt.com/HS/students/index.html",
       "note": "sample space に文字を置かない"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "11.7 Probability: The sample space S for a probability model"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.7 Probability: sample space S（Precalculus 11.7 と同じモジュール）"
     }
   ],
   "confidence": "likely",

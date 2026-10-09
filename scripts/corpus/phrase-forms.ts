@@ -417,7 +417,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   // is that okay / can i just alone were mostly a schedule, a permission or another request (Phase 5 監査 11)
   // the ledger's first sentence is the en again: Math Stack Exchange does not pick the en (Phase 5 監査 13)
   "class-asking-can-i-write-it-this-way": {
-    "Is it okay if I write it like this?": "okay if i write | ok if i write | alright if i write | all right if i write | okay to write it | ok to write it",
+    "Is it okay if I write it like this?": "okay if i write !on | ok if i write !on | alright if i write !on | all right if i write !on | okay to write it | ok to write it",
     "I wrote it as 2(x + 1) — is that okay?": "i wrote it as | i wrote this as | i wrote that as",
     "Can I just write it as 2x + 2?": "can i just write | can i write it as | can i write this as",
   },

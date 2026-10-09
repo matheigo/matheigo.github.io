@@ -3,14 +3,16 @@
   "title_ja": "積事象・和事象の書き方",
   "title_en": "And and or in probability",
   "jp": "高等学校学習指導要領解説 数学A は積事象の確率を P(A∩B)（条件付き確率）、和事象の確率を P(A∪B)（確率の性質）と集合の記号で書く。",
-  "us": "OpenStax Introductory Statistics は P(A AND B)・P(A OR B) と書き、A ∩ B・A ∪ B は別の書き方として挙げる（3.1 Terminology）。AP Statistics の CED は P(A ∩ B)・P(A ∪ B) と集合の記号で書き、P(A intersect B)・P(A union B) とも書く（topic 2.5・2.7）。",
-  "advice_ja": "OpenStax Introductory Statistics の AND・OR は ∩・∪ と同じ。AP Statistics の CED は ∩・∪ で書く。",
+  "us": "IM Geometry（8.6 The Addition Rule ほか）は P(A or B) = P(A) + P(B) − P(A and B) と言葉で書き、∩・∪ を使わない。OpenStax Introductory Statistics も P(A AND B)・P(A OR B) と書き、A ∩ B・A ∪ B は別の書き方として挙げる（3.1 Terminology）。AP Statistics の CED は P(A ∩ B)・P(A ∪ B) と集合の記号で書き、P(A intersect B)・P(A union B) とも書く（topic 2.5・2.7）。OpenStax Precalculus（11.7 Probability）も P(E ∪ F)・P(E ∩ F) と書く。",
+  "advice_ja": "IM Geometry と OpenStax Introductory Statistics の P(A and B)・P(A or B)（AND・OR）は P(A∩B)・P(A∪B) と同じ。AP Statistics の CED と OpenStax Precalculus は ∩・∪ で書く。授業の教科書がどちらで書くかを確かめる。",
   "category": "notation",
   "level": {
     "jp": [
       "数A"
     ],
     "us": [
+      "Geometry",
+      "Precalculus",
       "Intro Statistics"
     ]
   },
@@ -46,6 +48,17 @@
       "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
       "note": "Topic 2.5（joint probability、intersect）、Topic 2.7（union）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "8.6 The Addition Rule（P(A or B) = P(A) + P(B) − P(A and B)）ほか Unit 8（P(A and B)。∩・∪ は 0）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "11.7 Probability（P(E ∪ F)、P(E ∩ F)）"
     }
   ],
   "confidence": "likely",

@@ -2,7 +2,7 @@
   "id": "us-only-precalculus-topics",
   "title_ja": "米国の Algebra・Precalculus だけの内容",
   "title_en": "Topics in US algebra and precalculus only",
-  "jp": "高等学校学習指導要領解説にクラメルの公式・デカルトの符号法則・連続複利・組立除法は出てこない。無理方程式は、解説では理数数学I の発展・拡充の例（分数方程式・無理方程式を扱うことも考えられる、と書く）にだけ出てくる。",
+  "jp": "高等学校学習指導要領解説にクラメルの公式・デカルトの符号法則・組立除法は出てこない（日本語版 Wikipedia「数学 (教科)」は数学II の高次方程式に組立除法を挙げる）。連続複利は、解説の数学III が e を導入するときに、極限を限りなく短い時間ごとに金利が発生したら預けたお金は何倍になるかと関連付けることも考えられる、と書く例にだけ出てくる（A = Pe^{rt} で解く問題は書かない）。無理方程式は、解説では理数に関する学科の科目「理数数学I」の発展・拡充の例（分数方程式・無理方程式を扱うことも考えられる、と書く）にだけ出てくる。",
   "us": "OpenStax Algebra and Trigonometry は Cramer’s Rule・Descartes’ Rule of Signs・連続複利（compounded continuously）・synthetic division を扱う。radical equations は OpenStax Intermediate Algebra（Solve Radical Equations）と Algebra and Trigonometry（Other Types of Equations）が扱う。",
   "advice_ja": "Algebra 2・Precalculus には学習指導要領解説に出てこない手法（Cramer's Rule・Descartes' Rule of Signs・synthetic division）が入る。名前で検索すれば手順が分かる。",
   "category": "classroom-culture",
@@ -24,7 +24,6 @@
     "rotated-conics",
     "synthetic-division",
     "multiplicity",
-    "turning-points",
     "radical-equation"
   ],
   "sources": [
@@ -35,17 +34,23 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "記述なし（無理方程式は理数数学I の発展・拡充の例だけ）"
+      "note": "クラメルの公式・デカルトの符号法則・組立除法は出てこない。数学III (2) 微分法: e の極限と金利の例。無理方程式は理数数学I の発展・拡充の例だけ"
     },
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "Cramer’s Rule、Descartes’ Rule of Signs、compounded continuously、synthetic division、Other Types of Equations（radical equations）"
+      "note": "11.8 Solving Systems with Cramer’s Rule、5.5 Zeros of Polynomial Functions（Descartes’ Rule of Signs）、6.1 Exponential Functions（compounded continuously）、5.4 Dividing Polynomials（synthetic division）、2.6 Other Types of Equations（radical equations）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Intermediate Algebra 2e",
-      "note": "Solve Radical Equations"
+      "note": "8.6 Solve Radical Equations"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学 (教科)」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6_(%E6%95%99%E7%A7%91)",
+      "note": "数学II 高次方程式: 組立除法"
     }
   ],
   "confidence": "likely",

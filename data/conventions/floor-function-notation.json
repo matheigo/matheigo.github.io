@@ -2,9 +2,9 @@
   "id": "floor-function-notation",
   "title_ja": "ガウス記号と床関数",
   "title_en": "Gauss bracket and floor function",
-  "jp": "日本語版 Wikipedia「床関数と天井関数」は、x を超えない最大の整数をガウス記号 [x] で書き、日本の高校数学と大学入試ではほとんどガウス記号を使うと書く。",
-  "us": "OpenStax Calculus Volume 1 は ⌊x⌋ を floor function と呼び（4.4 The Mean Value Theorem の練習問題）、ceiling function の名前も使う（2.5 The Precise Definition of a Limit の練習問題）。Volume 2 は [x] を使うときに the greatest integer less than or equal to x と断る（5.6 Ratio and Root Tests の練習問題）。英語版 Wikipedia「Floor and ceiling functions」は [x] と ⌊x⌋ の両方が使われると書く。",
-  "advice_ja": "英語で [x] を使うなら、OpenStax Calculus Volume 2 のように the greatest integer less than or equal to x と断る。断らずに書くなら ⌊x⌋ にし、the floor of x と読む。",
+  "jp": "日本語版 Wikipedia「床関数と天井関数」は、x を超えない最大の整数を表す記号のうち [x] をガウス記号と呼び、日本の高校数学と大学入試ではほとんどガウス記号を使うと書く。",
+  "us": "OpenStax Calculus Volume 1 は ⌊x⌋ を floor function と呼んで x 以下の最大の整数と定義を添え（4.4 The Mean Value Theorem の練習問題）、ceiling function の名前も使う（2.5 The Precise Definition of a Limit の練習問題）。Volume 2 は [x] を使うときに the greatest integer less than or equal to x と断る（5.6 Ratio and Root Tests の練習問題）。英語版 Wikipedia「Floor and ceiling functions」は [x] と ⌊x⌋ の両方が使われると書く。",
+  "advice_ja": "英語で [x] を使うなら、OpenStax Calculus Volume 2 のように the greatest integer less than or equal to x と断る。記号で書くなら ⌊x⌋ にし（OpenStax Calculus Volume 1 の floor function）、the floor of x と読む。",
   "category": "notation",
   "level": {
     "jp": [
@@ -38,7 +38,7 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1",
-      "note": "4.4 The Mean Value Theorem の練習問題（f(x) = ⌊x⌋、floor function）、2.5 The Precise Definition of a Limit の練習問題（ceiling function）"
+      "note": "4.4 The Mean Value Theorem の練習問題（f(x) = ⌊x⌋、floor function、x 以下の最大の整数と定義を添える）、2.5 The Precise Definition of a Limit の練習問題（ceiling function）"
     },
     {
       "type": "textbook",
