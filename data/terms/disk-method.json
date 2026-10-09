@@ -84,10 +84,10 @@
       "note": "数学III: 回転体の体積の求め方の名前が出てこない・「円板法」は出てこない"
     }
   ],
-  "confidence": "verified",
+  "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-24",
-    "audit": "2026-09-26",
+    "audit": "2026-10-09",
     "human": null
   },
   "updated": "2026-10-09",
@@ -106,5 +106,12 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-25"
-  }
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-10-09）で大きな直し: 公開前の抜き取り（Fable）: mapping none → near（日本語版 Wikipedia「回転体」が同じ方法を円板法と呼び、数学III は回転体の体積を同じ積分で求める。shell-method と同じ型）。見直す点: mapping、pitfalls[0] を外した。次の監査のセッションが見直す。",
+      "raised": "2026-10-09"
+    }
+  ]
 }
