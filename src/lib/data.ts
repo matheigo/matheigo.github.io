@@ -419,8 +419,11 @@ export function sourceView(s: Source): SourceView {
 
 // small helpers ---------------------------------------------------------------
 
+/** level.jp 理数 is the 理数 courses (理数数学I・II・特論) of the 理数 department, not a general-course subject. */
+export const JP_LEVEL_LABEL: Record<string, string> = { 理数: "理数科（理数に関する学科の科目）" };
+
 export const levelText = (l: Level) =>
-  `日本 ${l.jp.length ? l.jp.join("・") : "—"} ／ 米国 ${l.us.length ? l.us.join("・") : "—"}`;
+  `日本 ${l.jp.length ? l.jp.map((j) => JP_LEVEL_LABEL[j] ?? j).join("・") : "—"} ／ 米国 ${l.us.length ? l.us.join("・") : "—"}`;
 
 /** 「今日の10語」— deterministic per build day so the page can stay static. */
 export function todaysTerms(n = 10): Term[] {

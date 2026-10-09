@@ -44,6 +44,8 @@ DECK_ID_ROOT = 1310870968
 DECK_ROOT = "MathEigo"
 SITE = "https://matheigo.github.io"
 GLOSS_LABEL = "説明の訳（英語の用語ではない）"
+# level.jp 理数 is the 理数 courses of the 理数 department (src/lib/data.ts JP_LEVEL_LABEL)
+JP_LEVEL_LABEL = {"理数": "理数科（理数に関する学科の科目）"}
 
 # Japanese subjects in teaching order (src/lib/data.ts JP_SUBJECTS).
 JP_SUBJECTS = ["中1", "中2", "中3", "数学I", "数学A", "数学II", "数学B", "数学III", "数学C"]
@@ -115,7 +117,7 @@ def term_fields(t):
         "LaTeX": f"\\({h(t['latex'])}\\)" if t.get("latex") else "",
         "Example_EN": h(ex.get("en", "")),
         "Example_JA": h(ex.get("ja", "")),
-        "Level_JP": "・".join(t["level"]["jp"]),
+        "Level_JP": "・".join(JP_LEVEL_LABEL.get(lv, lv) for lv in t["level"]["jp"]),
         "Level_US": ", ".join(t["level"]["us"]),
         "Domain": ", ".join(t["domains"]),
         "Audio": f"[sound:{os.path.basename(t['audio'])}]" if t.get("audio") else "",
