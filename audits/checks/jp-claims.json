@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-07",
+  "checked": "2026-10-09",
   "claims": [
     {
       "collection": "terms",
@@ -642,7 +642,7 @@
       "collection": "terms",
       "id": "conditional-probability",
       "field": "pitfalls[0]",
-      "sentence": "学習指導要領解説（数学A）は P_A(B) と書くが、AP Statistics の CED（topic 2.6）と OpenStax Introductory Statistics は P(B | A) の形で書き、the probability of B given A と読む。",
+      "sentence": "学習指導要領解説（数学A）は P_A(B) と書くが、AP Statistics の CED（topic 2.6）と OpenStax Introductory Statistics は P(B | A) の形で書く。",
       "g1": false
     },
     {
@@ -1118,7 +1118,7 @@
       "collection": "terms",
       "id": "discriminant",
       "field": "pitfalls[0]",
-      "sentence": "共通テスト・センター試験（数学II）の問題文は「判別式を D とすると」と置き（平成 28・31 年度 第1問、令和 5 年度 第3問）、日本語版 Wikipedia「判別式」も D で表記する。",
+      "sentence": "共通テスト・センター試験（数学II）の問題文は「判別式を D とすると」と置き（平成 28・31 年度 第4問、令和 5 年度 第4問）、日本語版 Wikipedia「判別式」も D で表記する。",
       "g1": false
     },
     {
@@ -1496,7 +1496,7 @@
       "collection": "terms",
       "id": "floor-function",
       "field": "pitfalls[1]",
-      "sentence": "ガウス記号の [x] を英語の文にそのまま書くと、ただの角かっこ（brackets）に見える（日本語版 Wikipedia「床関数と天井関数」は、日本の高校数学ではガウス記号が使われることがほとんどと書く）。",
+      "sentence": "日本語版 Wikipedia「床関数と天井関数」は、日本の高校数学ではガウス記号 [x] が使われることがほとんどと書く。",
       "g1": true
     },
     {
@@ -3351,7 +3351,7 @@
       "collection": "terms",
       "id": "riemann-sum",
       "field": "mapping_note",
-      "sentence": "日本の「lim (1/n)Σ f(k/n) を定積分で表せ」型の問題は、OpenStax Calculus では express the limit as a definite integral のように指示される。",
+      "sentence": "日本の「lim (1/n)Σ f(k/n) を定積分で表せ」型の問題は、OpenStax Calculus Volume 1（5.2 The Definite Integral）では express the limits as integrals と指示される（AP の CED topic 6.3 は、リーマン和の極限を定積分として表すことを学習目標に挙げる）。",
       "g1": false
     },
     {
@@ -3839,6 +3839,13 @@
     },
     {
       "collection": "terms",
+      "id": "sphere",
+      "field": "mapping_note",
+      "sentence": "中学校学習指導要領解説は球を柱体・錐体と並ぶ立体として扱い、日本語版 Wikipedia「球」は数学の球を「球体（ball）または球面（sphere）」と書く。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "spread",
       "field": "en.variants[1].note",
       "sentence": "話し言葉はすべて Khan Academy（中学の講義と AP Statistics）。",
@@ -3974,7 +3981,7 @@
       "collection": "terms",
       "id": "subset",
       "field": "pitfalls[1]",
-      "sentence": "共通テスト（平成 26 年度 数学I・A）は「集合 X が集合 Y の部分集合であるとき X ⊂ Y と表す」と定め、A = B の場合も ⊂ で書く。",
+      "sentence": "センター試験（平成26年度 数学Ⅰ・数学Ａ）は「集合 X が集合 Y の部分集合であるとき X ⊂ Y と表す」と定め、A = B の場合も ⊂ で書く。",
       "g1": false
     },
     {

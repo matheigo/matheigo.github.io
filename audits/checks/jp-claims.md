@@ -1,12 +1,12 @@
 # 日本側の主張の文（Phase 5 の監査の前の機械の確かめ 2）
 
-作成: 2026-10-07 ／ `pnpm audit:claims`（scripts/audit/claims.ts）
+作成: 2026-10-09 ／ `pnpm audit:claims`（scripts/audit/claims.ts）
 
 対象の欄: terms の mapping_note・pitfalls・variants の note・definition_ja、symbols の notes、phrases の notes・variants の note。
 慣習差（conventions）は jp の欄そのものが日本側の主張で、生成のときに項目ごとに日本側の資料を出典に入れたので、ここには入れない（監査は慣習差の順で見る）。
 
 - phase4-report G-1 の正規表現（日本(の教科書|では|の高校|の授業|の答案|の中学|の入試|の数学|で)）に当たる文: **106 項目・109 文**
-- 広い正規表現（日本・数学 I〜C・中学・高校・学習指導要領・教科書・入試・共通テスト・センター試験）に当たる文: **484 項目・661 文**（主張でない文も混じる。監査の ⑦ で 1 文ずつ見る）
+- 広い正規表現（日本・数学 I〜C・中学・高校・学習指導要領・教科書・入試・共通テスト・センター試験）に当たる文: **485 項目・662 文**（主張でない文も混じる。監査の ⑦ で 1 文ずつ見る）
 
 | コレクション | id | 欄 | G-1 | 文 |
 |---|---|---|---|---|
@@ -101,7 +101,7 @@
 | terms | concavity | pitfalls[0] |  | 日本の「下に凸」は concave up、「上に凸」は concave down。 |
 | terms | condition | pitfalls[0] |  | センター試験（平成 30 年度 数学I・A）は「実数 x に関する次の条件 p, q, r, s を考える」、共通テスト（令和 3 年度 数学I・A）は「条件 p, q を次のように定める」と、変数を含み真偽が変わる文を「条件」と呼ぶ。 |
 | terms | condition | pitfalls[0] |  | 高等学校学習指導要領解説（数学I）の「条件」は「命題の条件や結論」（仮定）の意味。 |
-| terms | conditional-probability | pitfalls[0] |  | 学習指導要領解説（数学A）は P_A(B) と書くが、AP Statistics の CED（topic 2.6）と OpenStax Introductory Statistics は P(B \| A) の形で書き、the probability of B given A と読む。 |
+| terms | conditional-probability | pitfalls[0] |  | 学習指導要領解説（数学A）は P_A(B) と書くが、AP Statistics の CED（topic 2.6）と OpenStax Introductory Statistics は P(B \| A) の形で書く。 |
 | terms | conditional-statement | mapping_note |  | 高等学校学習指導要領解説（数学I）は命題「p → q」と書き、この形の命題そのものに名前を付けない（含意は論理学の語）。 |
 | terms | conditional-statement | mapping_note |  | 見出しの「含意」は学習指導要領解説に無い（日本語版 Wikipedia「論理包含」「必要条件と十分条件」にはある）。 |
 | terms | conditions-for-a-parallelogram | mapping_note |  | 中学校学習指導要領解説（第 2 学年）は「平行四辺形になるための条件」を平行四辺形の性質と並べて挙げる（本エントリの定義の 5 つ）が、用例コーパスと参照にはそれらをまとめた名前が出てこず、「四角形が平行四辺形であることを示す」（prove that a quadrilateral is a parallelogram）のように、示すことを文で言う。 |
@@ -169,7 +169,7 @@
 | terms | direct-proof | mapping_note |  | 見出しの「直接証明」は学習指導要領解説に無い（日本語版 Wikipedia「証明 (数学)」にはある）。 |
 | terms | direct-proof | mapping_note |  | 数I に置くのは対偶を利用した証明・背理法と対比する語として。 |
 | terms | direct-proportion | mapping_note |  | 中学校学習指導要領解説（第 1 学年）の「比例」は、a を比例定数として y = ax で表される関係。 |
-| terms | discriminant | pitfalls[0] |  | 共通テスト・センター試験（数学II）の問題文は「判別式を D とすると」と置き（平成 28・31 年度 第1問、令和 5 年度 第3問）、日本語版 Wikipedia「判別式」も D で表記する。 |
+| terms | discriminant | pitfalls[0] |  | 共通テスト・センター試験（数学II）の問題文は「判別式を D とすると」と置き（平成 28・31 年度 第4問、令和 5 年度 第4問）、日本語版 Wikipedia「判別式」も D で表記する。 |
 | terms | disk-method | mapping_note |  | 学習指導要領解説（数学III）には、回転体の体積の求め方の名前が出てこない。 |
 | terms | disk-method | mapping_note |  | 見出しの「円板法」は学習指導要領解説に無い（日本語版 Wikipedia「回転体」にはある）。 |
 | terms | displacement | pitfalls[0] |  | 学習指導要領解説（数学III）は「位置の変化」と言い、「変位」は物理の項目にだけ出てくる。 |
@@ -223,7 +223,7 @@
 | terms | find-the-equation | en.variants[1].note |  | 話し言葉は大半が Khan Academy（特に中学の講義）、書き言葉は多くが OpenStax Algebra and Trigonometry。 |
 | terms | first-derivative-test | mapping_note |  | 学習指導要領解説（数学II・III）には、f′(x) の符号の変化から極大・極小を判定する方法の名前が出てこない。 |
 | terms | first-derivative-test | mapping_note |  | 見出しの「第 1 次導関数判定法」は学習指導要領解説に無い、本プロジェクトの訳語。 |
-| terms | floor-function | pitfalls[1] | ○ | ガウス記号の [x] を英語の文にそのまま書くと、ただの角かっこ（brackets）に見える（日本語版 Wikipedia「床関数と天井関数」は、日本の高校数学ではガウス記号が使われることがほとんどと書く）。 |
+| terms | floor-function | pitfalls[1] | ○ | 日本語版 Wikipedia「床関数と天井関数」は、日本の高校数学ではガウス記号 [x] が使われることがほとんどと書く。 |
 | terms | flowchart-proof | mapping_note |  | 見出しの「フローチャート証明」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | flowchart-proof | mapping_note | ○ | 日本の教科書には、根拠を矢印でつなぐこの答案の形式はない。 |
 | terms | foil | mapping_note | ○ | 日本では分配法則で 1 項ずつ掛けて展開し、順序の覚え方に名前はない。 |
@@ -488,7 +488,7 @@
 | terms | restricted-domain | mapping_note |  | 見出しの「定義域の制限」は学習指導要領解説に無い（日本語版 Wikipedia「定義域」の節「定義域の制限と延長」にはある）。 |
 | terms | restricted-domain | mapping_note |  | 高等学校学習指導要領解説は同じ内容を「区間が制限された関数の最大値や最小値」（数学II 微分）、逆関数は「元の関数が 1 対 1 の対応であるとき」（数学III）と書く。 |
 | terms | riemann-sum | mapping_note |  | 区分求積法は、区間を n 等分して長方形の面積の和をつくり、その極限を定積分として求める手法の名前（学習指導要領解説も区分求積法の考えで定積分を導入する扱いに触れる）。 |
-| terms | riemann-sum | mapping_note |  | 日本の「lim (1/n)Σ f(k/n) を定積分で表せ」型の問題は、OpenStax Calculus では express the limit as a definite integral のように指示される。 |
+| terms | riemann-sum | mapping_note |  | 日本の「lim (1/n)Σ f(k/n) を定積分で表せ」型の問題は、OpenStax Calculus Volume 1（5.2 The Definite Integral）では express the limits as integrals と指示される（AP の CED topic 6.3 は、リーマン和の極限を定積分として表すことを学習目標に挙げる）。 |
 | terms | right-hand-limit | pitfalls[0] |  | 学習指導要領解説（数学III）は lim_{x→+0} と書き、日本語版 Wikipedia「片側極限」は lim_{x→a+0} と書く。 |
 | terms | right-riemann-sum | mapping_note |  | 見出しの「右リーマン和」は学習指導要領解説に無い（日本語版 Wikipedia「リーマン和」にはある）。 |
 | terms | right-triangle-similarity | mapping_note |  | 見出しの「直角三角形の相似」は学習指導要領解説に無い、本プロジェクトの訳語。 |
@@ -558,6 +558,7 @@
 | terms | space-diagonal | mapping_note |  | 見出しの「立体の対角線」は学習指導要領解説に無い（日本語版 Wikipedia「対角線」は、内部を通る対角線を体対角線、面の上のものを面対角線と呼ぶ）。 |
 | terms | special-products | mapping_note |  | 米国の教科書 OpenStax Elementary Algebra は 6.4 Special Products で Binomial Squares Pattern（(a + b)²、(a − b)²、エントリ square-of-a-binomial）と Product of Conjugates Pattern（(a + b)(a − b)、エントリ difference-of-squares）を扱い、(x + a)(x + b) は 6.3 でふつうの二項式の積として扱う（日本の乗法公式はこれも含む）。 |
 | terms | special-right-triangles | mapping_note |  | 見出しの「特別な直角三角形」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | sphere | mapping_note |  | 中学校学習指導要領解説は球を柱体・錐体と並ぶ立体として扱い、日本語版 Wikipedia「球」は数学の球を「球体（ball）または球面（sphere）」と書く。 |
 | terms | spread | en.variants[1].note |  | 話し言葉はすべて Khan Academy（中学の講義と AP Statistics）。 |
 | terms | square-units | mapping_note |  | 見出しの「平方単位」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | square-units | mapping_note | ○ | 日本では cm²・m² のように決まった単位で答える。 |
@@ -577,7 +578,7 @@
 | terms | stretch-vertically | mapping_note |  | 日本語の「縦に伸縮する」「y 軸方向に拡大・縮小する」は両方を指す（高等学校学習指導要領解説（数学III 式と曲線）は、中心が原点で半径 a の円を「y 軸方向に b/a 倍して」楕円の標準形を導く、と拡大も縮小も一つの言い方で書く）。 |
 | terms | strong-induction | pitfalls[0] |  | 数B の「n = k, k + 1 のとき成り立つと仮定して n = k + 2 を示す」形の帰納法は、strong induction の特別な場合にあたる。 |
 | terms | structural-induction | pitfalls[1] | ○ | 日本の高校数学では扱わず、大学の離散数学や情報科学で出てくる。 |
-| terms | subset | pitfalls[1] |  | 共通テスト（平成 26 年度 数学I・A）は「集合 X が集合 Y の部分集合であるとき X ⊂ Y と表す」と定め、A = B の場合も ⊂ で書く。 |
+| terms | subset | pitfalls[1] |  | センター試験（平成26年度 数学Ⅰ・数学Ａ）は「集合 X が集合 Y の部分集合であるとき X ⊂ Y と表す」と定め、A = B の場合も ⊂ で書く。 |
 | terms | substitution-property | mapping_note |  | 見出しの「代入の性質」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | substitution-property | mapping_note | ○ | 日本では「等しいものを代入してよい」を名前のある性質として挙げない。 |
 | terms | substitution-property | pitfalls[1] |  | 日本の証明では「∠1 = ∠3 を代入して」と書くだけで、理由に名前を付けない。 |

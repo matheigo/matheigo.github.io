@@ -1,6 +1,6 @@
 # 英語版 Wikipedia の記事名で見出しを決めた語（監査 6 の決定 5）
 
-作成: 2026-10-07 ／ `python3 scripts/audit/wikipedia_heads.py`。flag corpus-reference-fallback の note が「見出しは Wikipedia の記事名」の語。記事が見出しと同じ概念かを機械で確かめる方法は無いので、監査で記事を読む（`python3 scripts/audit/enwiki.py "<記事>" "<見出し>"`）。別の概念なら lib.ts `WIKIPEDIA_NOT_SAME` に理由付きで足して数え直す。
+作成: 2026-10-09 ／ `python3 scripts/audit/wikipedia_heads.py`。flag corpus-reference-fallback の note が「見出しは Wikipedia の記事名」の語。記事が見出しと同じ概念かを機械で確かめる方法は無いので、監査で記事を読む（`python3 scripts/audit/enwiki.py "<記事>" "<見出し>"`）。別の概念なら lib.ts `WIKIPEDIA_NOT_SAME` に理由付きで足して数え直す。
 
 - 語: **19**（verified 12）
 

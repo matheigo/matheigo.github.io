@@ -1,8 +1,8 @@
 # 確かめられない言い方の警告（validate。scripts/lib/wording.ts・scripts/lib/corpus-count.ts）
 
-作成: 2026-10-07 ／ `python3 scripts/audit/wording_warnings.py`（`pnpm validate` の warn を集めた）。監査 2 の H-5 で足した警告（通じる／一番よく使う／減点／資料の名前のない「ことが多い」）、監査 3 の AT_LARGE（資料の名前のない「英語には〜がない」）、本文の用例コーパスの件数らしい数字、監査 6 の決定 8 の判定の説明（pitfalls・notes の「用例コーパスでは…の形で数えた」など）。
+作成: 2026-10-09 ／ `python3 scripts/audit/wording_warnings.py`（`pnpm validate` の warn を集めた）。監査 2 の H-5 で足した警告（通じる／一番よく使う／減点／資料の名前のない「ことが多い」）、監査 3 の AT_LARGE（資料の名前のない「英語には〜がない」）、本文の用例コーパスの件数らしい数字、監査 6 の決定 8 の判定の説明（pitfalls・notes の「用例コーパスでは…の形で数えた」など）。
 
-- 文: **22**（verified 1）
+- 文: **13**（verified 1）
 
 | バッチ | コレクション | id | confidence | 欄 | 文 |
 |---|---|---|---|---|---|
@@ -19,12 +19,3 @@
 | 30 | terms | generating-function | likely | pitfalls[1] | 母関数では x に値を代入せず、係数を並べる入れ物として扱うことが多い。 |
 | 31 | terms | recursive-algorithm | likely | pitfalls[1] | 日本語の「帰納的」も「再帰的」も英語では recursive になることが多い（帰納的定義 = recursive definition）。 |
 | 34 | symbols | qed-end-of-proof | verified | notes[0] | 記号そのものは読まないことが多い。 |
-| 43 | conventions | calculator-instead-of-tables | likely | advice_ja | 米国の授業では電卓の関数で確率を出すことが多い。 |
-| 43 | conventions | congruence-abbreviations-in-proofs | likely | advice_ja | 略号（SSS、CPCTC）は米国の答案では理由としてそのまま通じる。 |
-| 43 | conventions | constant-of-integration-remark | likely | advice_ja | C が何かの説明は、英語の教科書では省くことが多い。 |
-| 43 | conventions | interval-notation-vs-inequalities | likely | advice_ja | 米国では解を (2, 3]・[1, ∞) のように区間で答えることが多い。 |
-| 43 | conventions | jp-named-techniques-unnamed-in-us | likely | advice_ja | 名前で言っても通じないので、中身を言う（rewrite a sin θ + b cos θ as a single sine function、the sum of the roots is −b/a、the set of all points such that …）。 |
-| 43 | conventions | jp-only-number-theory | likely | advice_ja | 高校の授業では通じないことがある。 |
-| 43 | conventions | jp-only-synthetic-geometry | likely | advice_ja | Ceva’s theorem・Menelaus’s theorem は英語の名前もあるが、米国の高校の Geometry では扱わないことが多い。 |
-| 43 | conventions | logic-in-geometry-course | likely | advice_ja | 米国の Geometry の最初の単元に論理が入っていることが多い。 |
-| 43 | conventions | two-column-proof-format | likely | advice_ja | 米国の Geometry では two-column proof を指示されることが多い。 |

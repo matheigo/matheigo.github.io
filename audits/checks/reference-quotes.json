@@ -1,9 +1,9 @@
 {
- "rows": 2481,
+ "rows": 2478,
  "found": {
   "checked A": 60,
   "checked B": 43,
-  "yes": 2378
+  "yes": 2375
  },
  "verifiedNotFound": {},
  "list": [
@@ -891,18 +891,6 @@
   },
   {
    "collection": "terms",
-   "id": "conditional-probability",
-   "confidence": "verified",
-   "field": "pitfalls[0]",
-   "references": [
-    "ced",
-    "openstax:Introductory Statistics"
-   ],
-   "wording": "the probability that event B will occur given that event A has occurred",
-   "found": "checked B"
-  },
-  {
-   "collection": "terms",
    "id": "corresponding-angles-postulate",
    "confidence": "likely",
    "field": "pitfalls[2]",
@@ -966,6 +954,17 @@
     "im"
    ],
    "wording": "angle of elevation",
+   "found": "checked B"
+  },
+  {
+   "collection": "terms",
+   "id": "inductive-hypothesis",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "references": [
+    "levin"
+   ],
+   "wording": "Assume that P(k) holds for an arbitrary k",
    "found": "checked B"
   },
   {
@@ -3402,7 +3401,7 @@
     "openstax:Intermediate Algebra",
     "openstax:Precalculus"
    ],
-   "wording": "the sum of a sub i from i equals one to five",
+   "wording": "the sum of a sub i",
    "found": "yes"
   },
   {
@@ -17321,28 +17320,6 @@
    "collection": "terms",
    "id": "inductive-hypothesis",
    "confidence": "verified",
-   "field": "pitfalls[0]",
-   "references": [
-    "levin"
-   ],
-   "wording": "Assume P(k) is true for some arbitrary k",
-   "found": "yes"
-  },
-  {
-   "collection": "terms",
-   "id": "inductive-hypothesis",
-   "confidence": "verified",
-   "field": "pitfalls[0]",
-   "references": [
-    "levin"
-   ],
-   "wording": "Now assume that P(k) is true for an arbitrary integer k",
-   "found": "yes"
-  },
-  {
-   "collection": "terms",
-   "id": "inductive-hypothesis",
-   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "levin"
@@ -23116,18 +23093,6 @@
     "openstax:Calculus Volume 1"
    ],
    "wording": "express the limits as integrals",
-   "found": "yes"
-  },
-  {
-   "collection": "terms",
-   "id": "riemann-sum",
-   "confidence": "verified",
-   "field": "mapping_note",
-   "references": [
-    "ced",
-    "openstax:Calculus Volume 1"
-   ],
-   "wording": "Represent the limiting case of the Riemann sum as a definite integral",
    "found": "yes"
   },
   {

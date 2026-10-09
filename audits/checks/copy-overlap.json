@@ -1,12 +1,12 @@
 {
   "summary": {
-    "checked": "2026-10-07",
+    "checked": "2026-10-09",
     "rule": "English: 8+ consecutive words; Japanese: 20+ characters (whitespace removed); a span that is the entry's headword and fewer than that many other words / characters is left out",
-    "fields": 15682,
+    "fields": 15691,
     "englishSources": 3884,
     "japaneseSources": 532,
-    "spans": 314,
-    "entries": 277,
+    "spans": 331,
+    "entries": 288,
     "headwordSpans": 147,
     "headwordEntries": 136
   },
@@ -1258,6 +1258,17 @@
     },
     {
       "collection": "terms",
+      "id": "floor-function",
+      "field": "pitfalls[1]",
+      "lang": "en",
+      "length": 9,
+      "span": "the greatest integer less than or equal to x",
+      "sources": {
+        "openstax-calculus": 1
+      }
+    },
+    {
+      "collection": "terms",
       "id": "foil",
       "field": "definition_en",
       "lang": "en",
@@ -2219,6 +2230,28 @@
     },
     {
       "collection": "terms",
+      "id": "properties-of-inequalities",
+      "field": "pitfalls[3]",
+      "lang": "en",
+      "length": 8,
+      "span": "subtraction property of inequality addition property of inequality",
+      "sources": {
+        "openstax-elemalg": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "properties-of-inequalities",
+      "field": "pitfalls[3]",
+      "lang": "en",
+      "length": 9,
+      "span": "property of inequality multiplication and division property of inequality",
+      "sources": {
+        "openstax-intalg": 1
+      }
+    },
+    {
+      "collection": "terms",
       "id": "properties-of-logarithms",
       "field": "definition_ja",
       "lang": "en",
@@ -2594,6 +2627,17 @@
       "lang": "en",
       "length": 11,
       "span": "ck 12 geometry 4 25 comparing angles and sides in triangles",
+      "sources": {
+        "ref:ck12-geometry": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "side-angle-inequality",
+      "field": "mapping_note",
+      "lang": "en",
+      "length": 9,
+      "span": "the angle opposite the longer side will be larger",
       "sources": {
         "ref:ck12-geometry": 1
       }
@@ -3501,6 +3545,17 @@
     },
     {
       "collection": "phrases",
+      "id": "exam-label-your-axes",
+      "field": "variants[0].note",
+      "lang": "en",
+      "length": 9,
+      "span": "label the axes and decide on an appropriate scale",
+      "sources": {
+        "ref:im-6-8": 1
+      }
+    },
+    {
+      "collection": "phrases",
       "id": "exam-set-up-but-do-not-evaluate",
       "field": "en",
       "lang": "en",
@@ -3664,13 +3719,149 @@
     },
     {
       "collection": "conventions",
-      "id": "natural-numbers-and-zero",
+      "id": "constant-of-integration-remark",
       "field": "us",
       "lang": "en",
-      "length": 10,
-      "span": "in this book we define the natural numbers to be",
+      "length": 9,
+      "span": "f x c where c is any real number",
       "sources": {
-        "ref:levin-dmoi4": 1
+        "openstax-calculus": 1
+      }
+    },
+    {
+      "collection": "conventions",
+      "id": "descriptive-statistics-coverage",
+      "field": "advice_ja",
+      "lang": "en",
+      "length": 11,
+      "span": "grade 6 8 12 using mean and mad to make comparisons",
+      "sources": {
+        "ref:im-6-8": 3
+      }
+    },
+    {
+      "collection": "conventions",
+      "id": "floor-function-notation",
+      "field": "us",
+      "lang": "en",
+      "length": 9,
+      "span": "the greatest integer less than or equal to x",
+      "sources": {
+        "openstax-calculus": 1
+      }
+    },
+    {
+      "collection": "conventions",
+      "id": "floor-function-notation",
+      "field": "advice_ja",
+      "lang": "en",
+      "length": 9,
+      "span": "the greatest integer less than or equal to x",
+      "sources": {
+        "openstax-calculus": 1
+      }
+    },
+    {
+      "collection": "conventions",
+      "id": "hensachi",
+      "field": "us",
+      "lang": "en",
+      "length": 9,
+      "span": "2 3 measures of the location of the data",
+      "sources": {
+        "openstax-introstats": 2
+      }
+    },
+    {
+      "collection": "conventions",
+      "id": "inverse-trig-functions",
+      "field": "us",
+      "lang": "en",
+      "length": 9,
+      "span": "geometry 4 9 using trigonometric ratios to find angles",
+      "sources": {
+        "ref:im-9-12": 1
+      }
+    },
+    {
+      "collection": "conventions",
+      "id": "mapping-rule-notation",
+      "field": "jp",
+      "lang": "ja",
+      "length": 22,
+      "span": "図形を一定の方向に一定の距離だけ移動すること",
+      "sources": {
+        "jp:kaisetsu-chu": 1
+      }
+    },
+    {
+      "collection": "conventions",
+      "id": "mapping-rule-notation",
+      "field": "advice_ja",
+      "lang": "en",
+      "length": 8,
+      "span": "units to the right and 2 units down",
+      "sources": {
+        "openstax-calculus": 2
+      }
+    },
+    {
+      "collection": "conventions",
+      "id": "quadrant-roman-numerals",
+      "field": "us",
+      "lang": "en",
+      "length": 9,
+      "span": "algebra 2 6 6 the pythagorean identity part 2",
+      "sources": {
+        "ref:im-9-12": 1
+      }
+    },
+    {
+      "collection": "conventions",
+      "id": "rounding-place",
+      "field": "jp",
+      "lang": "ja",
+      "length": 22,
+      "span": "小数第2位を四捨五入して小数第1位まで求める",
+      "sources": {
+        "jp:exams/h29-hon-03": 1,
+        "jp:exams/h29-hon-04": 1
+      }
+    },
+    {
+      "collection": "conventions",
+      "id": "rounding-place",
+      "field": "jp",
+      "lang": "ja",
+      "length": 25,
+      "span": "指定された桁数の一つ下の桁を四捨五入して答えなさい",
+      "sources": {
+        "jp:exams/h30-hon-01": 1,
+        "jp:exams/h30-hon-04": 1,
+        "jp:exams/r3-dai1-01": 1,
+        "jp:exams/r3-dai1-02": 1
+      }
+    },
+    {
+      "collection": "conventions",
+      "id": "sample-variance-n-minus-1",
+      "field": "us",
+      "lang": "en",
+      "length": 9,
+      "span": "2 7 measures of the spread of the data",
+      "sources": {
+        "openstax-introstats": 2
+      }
+    },
+    {
+      "collection": "conventions",
+      "id": "transformations-define-congruence-and-similarity",
+      "field": "jp",
+      "lang": "ja",
+      "length": 25,
+      "span": "一方の図形を移動して他方の図形に重ねることができる",
+      "sources": {
+        "jp:kaisetsu-chu": 1
       }
     }
   ],

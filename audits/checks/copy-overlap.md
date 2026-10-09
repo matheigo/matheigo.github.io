@@ -1,24 +1,37 @@
 # 書き写しの検出（Phase 5 の監査の前の機械の確かめ 1）
 
-作成: 2026-10-07 ／ `pnpm audit:copy`（scripts/audit/copy-check.ts）
+作成: 2026-10-09 ／ `pnpm audit:copy`（scripts/audit/copy-check.ts）
 
 規則: 英語は連続 8 語以上、日本語は空白を除いて 20 文字以上、エントリの本文（定義・例文・pitfalls・mapping_note・variants の note・コロケーション、記号の notes・日本語の読み、フレーズの en・ja・意図・variants・notes、慣習差の題・jp・us・advice_ja）が
 用例コーパス（manifest の全ファイル: MIT OCW・Khan Academy・YouTube・MICASE・OpenStax・MIT の講義ノート）と参照（CED 2 つ・Nicholson・Levin・IM 2 つ・CK-12 2 つ）、
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15682
+- 調べた本文の欄: 15691
 - 英語のソース: 3884 ファイル ／ 日本語のソース: 532 ファイル
-- 一致した箇所: **314**（277 項目）
+- 一致した箇所: **331**（288 項目）
 - 見出しの句を含む一致で除いたもの: 147 箇所（136 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
 |---|---|---|---|---|---|---|---|
 | conventions | accumulation-function-scope | us | en | 11 | topic 6 4 the fundamental theorem of calculus and accumulation functions | 1 | ref:ap-calculus-ab-bc-ced |
-| conventions | natural-numbers-and-zero | us | en | 10 | in this book we define the natural numbers to be | 1 | ref:levin-dmoi4 |
+| conventions | constant-of-integration-remark | us | en | 9 | f x c where c is any real number | 1 | openstax-calculus |
+| conventions | descriptive-statistics-coverage | advice_ja | en | 11 | grade 6 8 12 using mean and mad to make comparisons | 1 | ref:im-6-8 |
+| conventions | floor-function-notation | us | en | 9 | the greatest integer less than or equal to x | 1 | openstax-calculus |
+| conventions | floor-function-notation | advice_ja | en | 9 | the greatest integer less than or equal to x | 1 | openstax-calculus |
+| conventions | hensachi | us | en | 9 | 2 3 measures of the location of the data | 1 | openstax-introstats |
+| conventions | inverse-trig-functions | us | en | 9 | geometry 4 9 using trigonometric ratios to find angles | 1 | ref:im-9-12 |
+| conventions | mapping-rule-notation | jp | ja | 22 | 図形を一定の方向に一定の距離だけ移動すること | 1 | jp:kaisetsu-chu |
+| conventions | mapping-rule-notation | advice_ja | en | 8 | units to the right and 2 units down | 1 | openstax-calculus |
+| conventions | quadrant-roman-numerals | us | en | 9 | algebra 2 6 6 the pythagorean identity part 2 | 1 | ref:im-9-12 |
+| conventions | rounding-place | jp | ja | 25 | 指定された桁数の一つ下の桁を四捨五入して答えなさい | 4 | jp:exams/h30-hon-01, jp:exams/h30-hon-04, jp:exams/r3-dai1-01, jp:exams/r3-dai1-02 |
+| conventions | rounding-place | jp | ja | 22 | 小数第2位を四捨五入して小数第1位まで求める | 2 | jp:exams/h29-hon-03, jp:exams/h29-hon-04 |
+| conventions | sample-variance-n-minus-1 | us | en | 9 | 2 7 measures of the spread of the data | 1 | openstax-introstats |
+| conventions | transformations-define-congruence-and-similarity | jp | ja | 25 | 一方の図形を移動して他方の図形に重ねることができる | 1 | jp:kaisetsu-chu |
 | phrases | class-listening-recall-that | en | en | 8 | the derivative of sin x is cos x | 1 | mit-18.01 |
 | phrases | class-listening-recall-that | variants[0].en | en | 8 | the derivative of sin x is cos x | 1 | mit-18.01 |
 | phrases | class-listening-what-do-you-notice | notes[0] | en | 8 | what do you notice what do you wonder | 3 | ref:im-9-12, ref:im-6-8, ref:levin-dmoi4 |
+| phrases | exam-label-your-axes | variants[0].note | en | 9 | label the axes and decide on an appropriate scale | 1 | ref:im-6-8 |
 | phrases | exam-set-up-but-do-not-evaluate | en | en | 8 | set up but do not evaluate an integral | 1 | openstax-calculus |
 | phrases | exam-set-up-but-do-not-evaluate | variants[0].en | en | 8 | write but do not evaluate an integral expression | 1 | khan-ap-calc |
 | phrases | exam-show-your-work | variants[0].en | en | 8 | show the work that leads to your answer | 1 | ref:ap-calculus-ab-bc-ced |
@@ -164,6 +177,7 @@
 | terms | find-the-equation-of-the-tangent-line | pitfalls[0] | en | 8 | equation of the tangent line the equation of | 1 | khan-ap-calc |
 | terms | find-the-nth-term | examples[1].en | en | 8 | formula for the nth term of the sequence | 1 | ref:levin-dmoi4 |
 | terms | floor-function | definition_ja | en | 9 | the greatest integer less than or equal to x | 1 | openstax-calculus |
+| terms | floor-function | pitfalls[1] | en | 9 | the greatest integer less than or equal to x | 1 | openstax-calculus |
 | terms | foil | definition_en | en | 8 | to multiply two binomials multiply the first terms | 1 | openstax-elemalg |
 | terms | foot-of-the-perpendicular | examples[1].en | en | 8 | point p 1 2 3 to the plane | 1 | openstax-calculus |
 | terms | function | examples[1].en | en | 8 | an equation for y in terms of x | 2 | mit-18.01, yt:nancypi |
@@ -247,6 +261,8 @@
 | terms | postulate | definition_en | en | 9 | a statement that is accepted as true without proof | 1 | ref:ck12-geometry |
 | terms | power-series | examples[1].en | en | 10 | find a power series representation for f x 1 1 | 1 | openstax-calculus |
 | terms | preimage | examples[1].en | en | 8 | the y axis find the coordinates of the | 1 | ref:ck12-geometry |
+| terms | properties-of-inequalities | pitfalls[3] | en | 9 | property of inequality multiplication and division property of inequality | 1 | openstax-intalg |
+| terms | properties-of-inequalities | pitfalls[3] | en | 8 | subtraction property of inequality addition property of inequality | 1 | openstax-elemalg |
 | terms | properties-of-logarithms | definition_ja | en | 8 | log a m log a n log a | 3 | openstax-intalg, openstax-algtrig, openstax-precalculus |
 | terms | proposition | examples[1].en | en | 9 | determine whether the following statement is true or false | 3 | openstax-algtrig, openstax-precalculus, ref:ck12-geometry |
 | terms | proving-an-identity | pitfalls[1] | en | 9 | identities sum to product and product to sum formulas | 2 | openstax-algtrig, openstax-precalculus |
@@ -280,6 +296,7 @@
 | terms | shortest-path | pitfalls[0] | en | 8 | how many lattice paths from 0 0 to | 1 | ref:levin-dmoi4 |
 | terms | side | examples[1].en | en | 9 | the side length of a square whose area is | 1 | ref:im-6-8 |
 | terms | side-angle-inequality | mapping_note | en | 11 | ck 12 geometry 4 25 comparing angles and sides in triangles | 1 | ref:ck12-geometry |
+| terms | side-angle-inequality | mapping_note | en | 9 | the angle opposite the longer side will be larger | 1 | ref:ck12-geometry |
 | terms | side-angle-inequality | mapping_note | en | 8 | the largest angle is opposite the longest side | 1 | ref:ck12-geometry |
 | terms | similarity-criteria | mapping_note | ja | 20 | 2組の辺の比とその間の角がそれぞれ等しい | 2 | jp:kaisetsu-chu, jp:wikipedia |
 | terms | simplify-radicals | pitfalls[3] | ja | 24 | 根号の中に現れる自然数が最小となる形で答えなさい | 2 | jp:exams/h30-hon-01, jp:exams/h30-hon-04 |
