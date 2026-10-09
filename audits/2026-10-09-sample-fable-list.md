@@ -1,0 +1,111 @@
+# 公開前の抜き取り（Fable）の 100 項目
+
+作成: 2026-10-09 ／ DECISIONS「監査のモデル」（2026-09-27）の決定: 公開の直前に一度、Claude Fable 5.1 で verified の全体から 100 項目を抜き取って見直し、見落としの率を出す。結果は `audits/2026-10-09-sample-fable.md`。
+
+- 母集団: 本セッションの開始時（2510669）の verified **1,616 項目**（terms 1,050・symbols 220・phrases 275・conventions 71）を (collection, id) の昇順に並べたリスト
+- 抜き取り: `random.Random(20261010).sample(リスト, 100)`（同じ種と同じ母集団で同じ 100 項目になる）
+- 内訳: terms 70・phrases 14・symbols 13・conventions 3
+- 見直し役（読み取り専用。Claude Fable 5.1、資料を引く道具つき）5 人に 20 項目ずつ: r1〜r3 は terms（抜き取りの順に 20 ずつ）、r4 は terms の残り 10・conventions 3・symbols 7、r5 は symbols 6・phrases 14
+
+| # | コレクション | id | 見直し役 |
+|---|---|---|---|
+| 1 | terms | commutative-property | r1 |
+| 2 | symbols | negative-sign | r4 |
+| 3 | terms | recursive-definition | r1 |
+| 4 | phrases | class-asking-does-it-still-work-if | r5 |
+| 5 | terms | sum-of-an-arithmetic-sequence | r1 |
+| 6 | symbols | repeated-combination-h-jp | r4 |
+| 7 | terms | central-angle | r1 |
+| 8 | terms | derivative-of-a-parametric-curve | r1 |
+| 9 | terms | causation | r1 |
+| 10 | terms | compose | r1 |
+| 11 | symbols | r-squared | r4 |
+| 12 | terms | probability-density-function | r1 |
+| 13 | symbols | base-n-subscript | r4 |
+| 14 | phrases | written-solution-suppose-for-contradiction | r5 |
+| 15 | terms | cusp | r1 |
+| 16 | terms | trigonometric-ratio | r1 |
+| 17 | terms | expression | r1 |
+| 18 | conventions | calculator-instead-of-tables | r4 |
+| 19 | terms | x-coordinate | r1 |
+| 20 | terms | monotonic | r1 |
+| 21 | terms | integrating-factor | r1 |
+| 22 | terms | arc-length | r1 |
+| 23 | terms | census | r1 |
+| 24 | terms | equilateral-triangle | r1 |
+| 25 | terms | perfect-square-trinomial | r1 |
+| 26 | terms | work | r1 |
+| 27 | symbols | alpha | r4 |
+| 28 | symbols | df-degrees-of-freedom | r4 |
+| 29 | terms | coin | r1 |
+| 30 | terms | angle-of-depression | r2 |
+| 31 | terms | area-of-the-base | r2 |
+| 32 | phrases | explaining-solution-plugging-back-in | r5 |
+| 33 | terms | trapezoid | r2 |
+| 34 | phrases | exam-notes-allowed | r5 |
+| 35 | terms | right-riemann-sum | r2 |
+| 36 | phrases | class-listening-this-will-be-on-the-test | r5 |
+| 37 | phrases | exam-ask-typo | r5 |
+| 38 | symbols | subset-sign | r4 |
+| 39 | terms | binary | r2 |
+| 40 | terms | cylinder | r2 |
+| 41 | terms | arccosine | r2 |
+| 42 | terms | represent | r2 |
+| 43 | phrases | class-listening-sanity-check | r5 |
+| 44 | terms | exterior-angle-bisector | r2 |
+| 45 | terms | covariance | r2 |
+| 46 | phrases | office-hours-do-you-have-a-minute | r5 |
+| 47 | terms | supplementary-angle | r2 |
+| 48 | terms | data | r2 |
+| 49 | terms | midpoint-riemann-sum | r2 |
+| 50 | terms | line-of-reflection | r2 |
+| 51 | phrases | class-asking-another-example | r5 |
+| 52 | terms | linear-diophantine-equation | r2 |
+| 53 | terms | distance | r2 |
+| 54 | symbols | complex-a-plus-bi | r5 |
+| 55 | terms | partitioning-into-groups | r2 |
+| 56 | symbols | infinity-symbol | r5 |
+| 57 | phrases | discord-notes-from-today | r5 |
+| 58 | terms | minimum | r2 |
+| 59 | terms | check-the-concavity | r2 |
+| 60 | terms | volume-by-cross-sections | r2 |
+| 61 | terms | as-x-approaches-infinity | r3 |
+| 62 | terms | permutation-of-a-multiset | r3 |
+| 63 | terms | opposite-angle | r3 |
+| 64 | terms | right-angle | r3 |
+| 65 | terms | perpendicular-bisector | r3 |
+| 66 | terms | disk-method | r3 |
+| 67 | terms | interval-estimation | r3 |
+| 68 | symbols | half-open-interval | r5 |
+| 69 | terms | revolve-around-the-y-axis | r3 |
+| 70 | terms | like-terms | r3 |
+| 71 | terms | derivative-of-an-inverse-function | r3 |
+| 72 | terms | double-root | r3 |
+| 73 | phrases | explaining-solution-derivative-equal-to-zero | r5 |
+| 74 | terms | basic-properties-of-probability | r3 |
+| 75 | conventions | inequality-graph-boundary | r4 |
+| 76 | terms | hydrostatic-force | r3 |
+| 77 | terms | height | r3 |
+| 78 | terms | limit-of-a-riemann-sum | r3 |
+| 79 | terms | subset | r3 |
+| 80 | terms | acceleration | r3 |
+| 81 | phrases | written-solution-given-prove | r5 |
+| 82 | conventions | similarity-symbol | r4 |
+| 83 | terms | quantity | r3 |
+| 84 | terms | square-shape | r3 |
+| 85 | terms | leading-coefficient | r3 |
+| 86 | phrases | email-subject-line | r5 |
+| 87 | terms | digit | r4 |
+| 88 | phrases | the-equation-holds | r5 |
+| 89 | terms | diverge-to-negative-infinity | r4 |
+| 90 | terms | substitution-method | r4 |
+| 91 | terms | imaginary-number | r4 |
+| 92 | terms | multiplication | r4 |
+| 93 | symbols | tangent-of-theta | r5 |
+| 94 | terms | local-maximum | r4 |
+| 95 | symbols | intersection-sign | r5 |
+| 96 | terms | open-interval | r4 |
+| 97 | symbols | cross-product-cross | r5 |
+| 98 | terms | differential-equation | r4 |
+| 99 | terms | radian | r4 |
+| 100 | terms | area-preserving-transformation | r4 |
