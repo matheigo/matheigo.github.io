@@ -84,14 +84,9 @@
       "note": "共通テスト（令和3〜8年度）の問題文に ∴・∵ は出てこない（jp）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "updated": "2026-10-09",
   "flags": [
-    {
-      "code": "audit-human",
-      "note": "Phase 5 監査（2026-10-09）で判断がつかない: 日本の高校の資料（解説・共通テスト／センター試験）に ∴ ∵ は 0 で、日本語版 Wikipedia は記号の説明だけ。CK-12 Geometry・Levin は ∴ を使う。資料で言える形に直した。人間に決めてほしいこと: 慣習差として残すか外すか（PLAN 付録 B #5）。人間レビューへ。",
-      "raised": "2026-10-09"
-    },
     {
       "code": "corpus-human-settled",
       "note": "jp は人間が決めた文（2026-10-09。docs/DECISIONS.md「Phase 5 監査（セッション 14）の前の決定」の 2）。慣習差として残す（PLAN 付録 B #5）。",
