@@ -1987,6 +1987,12 @@ export const TERM_FORMS: Record<string, Record<string, string>> = {
   "consecutive-terms": { "successive terms": "!each !every !next successive terms" },
   // the article only: OpenStax Calculus Volume 2 5.1 uses both as one name
   "limit-of-a-sequence": { "limit of a sequence": "limit of a sequence | limit of the sequence | limits of sequences" },
+  // the first derivative only: the CED's "derivatives of parametric equations" is part of the title of topic 9.2
+  // "Second Derivatives of Parametric Equations" (公開前の抜き取り（Fable）、2026-10-09)
+  "derivative-of-a-parametric-curve": { "derivatives of parametric equations": "!second derivatives of parametric equations" },
+  // the angles of a quadrilateral (and a side's opposite angle in a triangle): not the opposite inputs θ, −θ of an
+  // even / odd function, vertical angles, or "the side opposite angle θ" (公開前の抜き取り（Fable）、2026-10-09)
+  "opposite-angle": { "opposite angle": "opposite angles of | opposite angles in | pairs of opposite angles | its opposite angle" },
 };
 
 /**

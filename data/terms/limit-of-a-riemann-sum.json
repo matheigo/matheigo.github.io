@@ -2,10 +2,7 @@
   "id": "limit-of-a-riemann-sum",
   "ja": {
     "term": "リーマン和の極限",
-    "reading": "りーまんわのきょくげん",
-    "alt": [
-      "定積分と和の極限"
-    ]
+    "reading": "りーまんわのきょくげん"
   },
   "en": {
     "term": "limit of a Riemann sum",
@@ -49,7 +46,7 @@
   "collocations": [],
   "pitfalls": [
     "Δx は delta x、xᵢ は x sub i、xᵢ* は x sub i star と読む。",
-    "区分求積法の lim (1/n)Σ f(k/n) は区間を n 等分して右端をとる形だが、OpenStax Calculus Volume 1 の定義では幅の違う分け方や任意の代表点（sample point, xᵢ*）も許す。"
+    "区分求積法の lim (1/n)Σ f(k/n) は区間を n 等分して右端をとる形。OpenStax Calculus Volume 1（5.2）の定義も等分（regular partition）のままだが、代表点 xᵢ* は各小区間のどこにとってもよい（sample point）。幅のそろわない分け方を使うときは、いちばん広い小区間の幅を 0 に近づける極限をとると書く。"
   ],
   "related": [
     "riemann-sum",
@@ -87,7 +84,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "limit of a Riemann sum": 1

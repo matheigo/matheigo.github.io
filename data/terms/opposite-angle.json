@@ -8,8 +8,7 @@
   "en": {
     "term": "opposite angle",
     "alt": [],
-    "uk": null,
-    "register": "both"
+    "uk": null
   },
   "pos": "noun",
   "mapping": "exact",
@@ -44,7 +43,7 @@
   "collocations": [],
   "pitfalls": [
     "「対角」と「対角線」を取り違えない。opposite angle は角、対角線は diagonal（エントリ diagonal）で線分。",
-    "対頂角（vertical angles、エントリ vertical-angles）とは別。対頂角は 2 直線が交わってできる向かい合う角で、四角形の対角とは違う。",
+    "対頂角（vertical angles、エントリ vertical-angles）とは別。対頂角は 2 直線が交わってできる向かい合う角で、四角形の対角とは違う。ただし CK-12 Geometry（1.17）は対頂角を a pair of opposite angles created by intersecting lines と説明するので、聞くときは文脈で見分ける。",
     "円に内接する四角形では、対角の和が 180° になる（エントリ cyclic-quadrilateral）。平行四辺形の対角は等しいので、区別する。"
   ],
   "related": [
@@ -58,6 +57,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.17 Vertical Angles（a pair of opposite angles created by intersecting lines）・5.9 Parallelograms（Opposite Angles Theorem）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "2.12 Proofs about Quadrilaterals（opposite angles in a parallelogram）・7.4 Quadrilaterals in Circles"
     }
   ],
   "confidence": "verified",
@@ -66,21 +77,21 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
-    "spoken": {
-      "opposite angle": 12
-    },
     "written": {
-      "opposite angle": 10
+      "opposite angles of | opposite angles in | pairs of opposite angles | its opposite angle": 1
     },
     "sources": [
-      "khan-middle",
-      "openstax-algtrig",
-      "openstax-calculus",
-      "yt:organicchem",
-      "yt:profleonard"
+      "openstax-algtrig"
     ],
-    "counted": "2026-09-25"
-  }
+    "counted": "2026-10-09"
+  },
+  "flags": [
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 1 件（10 未満））。見出しは IM の呼び方 opposite angles of | opposite angles in | pairs of opposite angles | its opposite angle（Geometry 7.4 Quadrilaterals in Circles・Grade 6 1.4 Parallelograms・Geometry 2.10 Practicing Proofs・計 7 件）。register は主張しない。",
+      "raised": "2026-10-09"
+    }
+  ]
 }

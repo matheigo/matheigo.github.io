@@ -12,7 +12,7 @@
       {
         "term": "left Riemann sum",
         "register": "spoken",
-        "note": "AP の呼び方（CED topic 6.2）。話し言葉はほぼ Khan Academy。書き言葉（OpenStax Calculus）では少数で、left-endpoint approximation が主見出し。"
+        "note": "AP の呼び方（CED topic 6.2）。話し言葉はほぼ Khan Academy。書き言葉（OpenStax Calculus）は left-endpoint approximation が多く、こちらは少ない。"
       },
       {
         "term": "left-endpoint approximation",
@@ -38,7 +38,7 @@
       "Calculus I"
     ]
   },
-  "definition_ja": "区間を等分した各小区間の左端での関数の値を高さとする長方形の面積の和。",
+  "definition_ja": "区間をいくつかの小区間に分け、各小区間の左端での関数の値を高さとする長方形の面積の和。小区間の幅はそろっていなくてもよい。",
   "definition_en": "A Riemann sum whose rectangles take their heights from the left endpoint of each subinterval.",
   "latex": "L_n = \\sum_{i=0}^{n-1} f(x_i)\\,\\Delta x",
   "spoken_en": "L sub n equals the sum from i equals zero to n minus one of f of x sub i delta x",
@@ -51,7 +51,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "区分求積法の和 Σ_{k=0}^{n−1}（左端）と Σ_{k=1}^{n}（右端）の名前は学習指導要領解説に出てこないが、AP の CED（topic 6.2）は left ／ right ／ midpoint Riemann sums と trapezoidal sums に名前を付けて比べる（解説で台形公式に触れるのは、理数に関する学科の科目「理数数学II」の発展・拡充の例だけ）。"
+    "区分求積法の和 Σ_{k=0}^{n−1}（左端）と Σ_{k=1}^{n}（右端）の名前は学習指導要領解説に出てこないが、AP の CED（topic 6.2）は left ／ right ／ midpoint Riemann sums と trapezoidal sums に名前を付けて比べる（解説で台形公式に触れるのは、理数に関する学科の科目「理数数学II」の発展・拡充の例だけ）。",
+    "AP の CED（topic 6.2）は、小区間の幅がそろわない分け方（nonuniform partitions）でもリーマン和で近似する。表で与えられた関数では、表の x の値で区切るので幅がそろわないことがある。"
   ],
   "related": [
     "right-riemann-sum",
@@ -69,7 +70,7 @@
       "type": "reference",
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
-      "note": "Topic 6.2（left ／ right ／ midpoint Riemann sums）"
+      "note": "Topic 6.2（left ／ right ／ midpoint Riemann sums、uniform or nonuniform partitions）"
     },
     {
       "type": "reference",

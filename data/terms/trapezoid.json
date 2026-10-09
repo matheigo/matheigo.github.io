@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "米国の教材では台形の定義が分かれる。CK-12 Geometry は平行な辺がちょうど 1 組（exactly one pair）の四角形として平行四辺形を含めず、IM Geometry は少なくとも 1 組（at least one pair）として平行四辺形も台形に含める。英国では trapezium と呼ぶ。",
+  "mapping_note": "日本語版 Wikipedia「台形」と共通テスト（令和3年度 第1日程 数学Ⅱ・数学Ｂ 第5問）は、少なくとも一組の対辺が平行な四角形を台形とする（平行四辺形も台形に入る）。米国の教材では台形の定義が分かれる。CK-12 Geometry は平行な辺がちょうど 1 組（exactly one pair）の四角形として平行四辺形を含めず、IM Geometry は少なくとも 1 組（at least one pair）として平行四辺形も台形に含める。英国では trapezium と呼ぶ。",
   "domains": [
     "geometry"
   ],
@@ -43,7 +43,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "平行な 2 辺は、上底も下底もどちらも base（2 本で bases）。平行でない 2 辺は legs と呼び、直角三角形の直角をはさむ 2 辺（エントリ hypotenuse）と同じ語。",
+    "平行な 2 辺は、上底も下底もどちらも base（2 本で bases）。平行でない 2 辺は legs と呼び、直角三角形の直角をはさむ 2 辺（エントリ legs）と同じ語。",
     "「平行四辺形は台形か」の答えは教材の定義による。「ちょうど 1 組」の定義なら台形ではなく、「少なくとも 1 組」の定義なら台形でもある（エントリ parallelogram）。",
     "英国では trapezium と呼ぶ。"
   ],
@@ -81,6 +81,18 @@
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
       "note": "Geometry 6.17 Lines in Triangles の練習問題（Unit 6 Lesson 14 から）: at least one pair of parallel sides"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「台形」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8F%B0%E5%BD%A2",
+      "note": "少なくとも一組の対辺が互いに平行な四角形"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和3年度 大学入学共通テスト 第1日程 数学Ⅱ・数学Ｂ（問題）",
+      "url": "https://web.archive.org/web/20220601/https://www.dnc.ac.jp/albums/abm.php?d=88&f=abm00001266.pdf&n=R3_%E6%95%B0%E5%AD%A6%E2%85%A1%E3%83%BB%E6%95%B0%E5%AD%A6%EF%BC%A2%EF%BC%88%EF%BC%91%E6%9C%8816%E6%97%A5%E3%83%BB17%E6%97%A5%EF%BC%89%E3%81%AE%E5%95%8F%E9%A1%8C.pdf",
+      "note": "第5問: ただし，少なくとも一組の対辺が平行な四角形を台形という"
     }
   ],
   "confidence": "verified",
@@ -89,7 +101,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "trapezoid": 154

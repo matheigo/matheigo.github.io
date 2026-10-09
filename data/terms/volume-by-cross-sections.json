@@ -7,7 +7,9 @@
   },
   "en": {
     "term": "slicing method",
-    "alt": [],
+    "alt": [
+      "volumes with cross sections"
+    ],
     "variants": [
       {
         "term": "slicing method",
@@ -25,7 +27,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": null,
+  "mapping_note": "見出しの「断面積による体積」は学習指導要領解説に無い、本プロジェクトの訳語。",
   "domains": [
     "calculus",
     "geometry"
@@ -49,6 +51,11 @@
       "en": "The cross sections perpendicular to the x-axis are squares, so A of x is the side length squared.",
       "ja": "x 軸に垂直な断面が正方形だから、A(x) は 1 辺の長さの 2 乗。",
       "register": "spoken"
+    },
+    {
+      "en": "Use the slicing method to find the volume of a pyramid whose base is a square with side 6 and whose height is 9.",
+      "ja": "断面積を積分して、底面が 1 辺 6 の正方形で高さが 9 の角錐の体積を求めよ。",
+      "register": "written"
     }
   ],
   "collocations": [],
@@ -77,7 +84,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "method of slicing": 1
@@ -91,6 +98,6 @@
       "mit-notes",
       "openstax-calculus"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-10-09"
   }
 }

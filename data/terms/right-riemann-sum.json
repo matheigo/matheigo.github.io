@@ -12,7 +12,7 @@
       {
         "term": "right Riemann sum",
         "register": "spoken",
-        "note": "AP の呼び方（CED topic 6.2）。話し言葉はほぼ Khan Academy。書き言葉（OpenStax Calculus）では少数で、right-endpoint approximation が主見出し。"
+        "note": "AP の呼び方（CED topic 6.2）。話し言葉はほぼ Khan Academy。書き言葉（OpenStax Calculus）は right-endpoint approximation が多く、こちらは少ない。"
       },
       {
         "term": "right-endpoint approximation",
@@ -38,7 +38,7 @@
       "Calculus I"
     ]
   },
-  "definition_ja": "区間を等分した各小区間の右端での関数の値を高さとする長方形の面積の和。",
+  "definition_ja": "区間をいくつかの小区間に分け、各小区間の右端での関数の値を高さとする長方形の面積の和。小区間の幅はそろっていなくてもよい。",
   "definition_en": "A Riemann sum whose rectangles take their heights from the right endpoint of each subinterval.",
   "latex": "R_n = \\sum_{i=1}^{n} f(x_i)\\,\\Delta x",
   "spoken_en": "R sub n equals the sum from i equals one to n of f of x sub i delta x",
@@ -51,7 +51,8 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "区分求積法の (1/n)Σ_{k=1}^{n} f(k/n) は、区間 [0, 1] の right Riemann sum にあたる。"
+    "区分求積法の (1/n)Σ_{k=1}^{n} f(k/n) は、区間 [0, 1] の right Riemann sum にあたる。",
+    "AP の CED（topic 6.2）は、小区間の幅がそろわない分け方（nonuniform partitions）でもリーマン和で近似する。表で与えられた関数では、表の x の値で区切るので幅がそろわないことがある。"
   ],
   "related": [
     "left-riemann-sum",
@@ -69,7 +70,7 @@
       "type": "reference",
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
-      "note": "Topic 6.2（left ／ right ／ midpoint Riemann sums）"
+      "note": "Topic 6.2（left ／ right ／ midpoint Riemann sums、uniform or nonuniform partitions）"
     },
     {
       "type": "reference",
@@ -90,7 +91,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "right Riemann sum": 40

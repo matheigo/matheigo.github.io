@@ -13,8 +13,8 @@
     "uk": null
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "英語の trigonometric ratio は直角三角形の辺の比で、IM Geometry（用語集・4.6・4.9）は鋭角についてだけ使う。鈍角の sin・cos・tan は、OpenStax Precalculus・Algebra and Trigonometry では単位円で定める三角関数（trigonometric functions、エントリ trigonometric-function）の値として扱う。",
   "domains": [
     "trigonometry"
   ],
@@ -29,7 +29,7 @@
     ]
   },
   "definition_ja": "直角三角形の辺の比で定める sin θ, cos θ, tan θ の総称。鈍角を含む 0° ≦ θ ≦ 180° では、原点を中心とする半円上の点の座標で定める。",
-  "definition_en": "The ratios sine, cosine, and tangent of an angle, defined from the sides of a right triangle; for angles up to 180°, they are read off from where a ray at that angle meets a circle centered at the origin.",
+  "definition_en": "The ratios of the sides of a right triangle, sine, cosine, and tangent, taken for one of its acute angles: opposite over hypotenuse, adjacent over hypotenuse, and opposite over adjacent.",
   "latex": "\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}},\\quad \\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}},\\quad \\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}",
   "spoken_en": "sine theta is opposite over hypotenuse, cosine theta is adjacent over hypotenuse, tangent theta is opposite over adjacent",
   "examples": [
@@ -39,7 +39,7 @@
       "register": "spoken"
     },
     {
-      "en": "Find the values of the trigonometric ratios of 150°.",
+      "en": "Find sin 150°, cos 150°, and tan 150°.",
       "ja": "150° の三角比の値を求めよ。",
       "register": "written"
     },
@@ -91,7 +91,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "trig ratio": 1

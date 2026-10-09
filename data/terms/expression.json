@@ -12,8 +12,8 @@
     "register": "both"
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "日本語の「式」は等式や不等式も指す（日本語版 Wikipedia「等式」は等式を、相等関係を表す数式とする）が、英語の expression は等号を含まないもの（3x + 2）だけ。等号を含むもの（3x + 2 = 8）は equation、不等号を含むものは inequality と言う。",
   "domains": [
     "algebra"
   ],
@@ -45,7 +45,6 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本語の「式」は等式や不等式にも使うが、英語の expression は等号を含まないもの（3x + 2）だけ。等号を含むもの（3x + 2 = 8）は equation と言う。",
     "expression は solve しない。式は simplify（簡単にする）か evaluate（値を求める。エントリ evaluate）で、solve するのは equation。",
     "「式を立てる」は、等号を含むなら write an equation、含まないなら write an expression と言い分ける。"
   ],
@@ -60,6 +59,12 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「等式」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%AD%89%E5%BC%8F",
+      "note": "等式は二つの対象の相等関係を表す数式（mapping_note）"
     }
   ],
   "confidence": "verified",
@@ -68,7 +73,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "expression": 2164
