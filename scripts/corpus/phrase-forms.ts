@@ -415,7 +415,9 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "How is this different from a local max?": "how is … different from | how is that different",
   },
   // is that okay / can i just alone were mostly a schedule, a permission or another request (Phase 5 監査 11)
+  // the ledger's first sentence is the en again: Math Stack Exchange does not pick the en (Phase 5 監査 13)
   "class-asking-can-i-write-it-this-way": {
+    "Is it okay if I write it like this?": "okay if i write | ok if i write | alright if i write | all right if i write | okay to write it | ok to write it",
     "I wrote it as 2(x + 1) — is that okay?": "i wrote it as | i wrote this as | i wrote that as",
     "Can I just write it as 2x + 2?": "can i just write | can i write it as | can i write this as",
   },
@@ -769,7 +771,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   // combining these alone folded combine like terms, compose functions, add forces (Phase 5 監査 12)
   "written-solution-combining": {
     "Putting this together, x = 2.": "putting this together | putting these together | putting it all together | putting everything together",
-    "Combining these two results, we get x = 2.": "combining these two results | combining these results | combining the two results | combining these … equalities | combining these … inequalities | combining these … equations | combining these … approximations | combining these … conditions | combining these … cases | combining this with | combining both",
+    "Combining these two results, we get x = 2.": "combining these two results | combining these results | combining the two results | combining these equalities | combining these … equalities | combining these inequalities | combining these … inequalities | combining these equations | combining these … equations | combining these … approximations | combining these conditions !is | combining these … conditions | combining these … cases | combining this with | !property combining both",
     "From (1) and (2), x = 2.": "",
   },
   "written-solution-by-induction": {
@@ -790,7 +792,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   // using the … theorem folded the imperative "Use the … theorem to find …" of the exercises (Phase 5 監査 12)
   "written-solution-by-the-theorem": {
     "By the Pythagorean Theorem, AC = 5.": "!guaranteed !predicted !implied by the … theorem",
-    "Using the Pythagorean Theorem, AC = 5.": "using the … theorem,",
+    "Using the Pythagorean Theorem, AC = 5.": "!we !that !to !equation using the … theorem,",
     "It follows from the Pythagorean Theorem that AC = 5.": "follows from the … theorem",
   },
   "written-solution-hypotheses-are-met": {
@@ -1002,7 +1004,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   // at the library named a place; the students' own question is do you wanna meet … (Phase 5 監査 12)
   "group-study-where-to-meet": {
-    "Do you want to meet at the library at 7?": "you wanna meet | we wanna meet | guys wanna meet | anybody wanna meet | anyone wanna meet | you want to meet | we want to meet | guys want to meet",
+    "Do you want to meet at the library at 7?": "you wanna meet | we wanna meet | guys wanna meet | anybody wanna meet | anyone wanna meet | you want to meet | we want to meet | guys want to meet | anybody want to meet | anyone want to meet",
     "Does 7 at the library work?": "",
     "Let's meet at the library at 7.": "let's meet | meet at the library",
   },

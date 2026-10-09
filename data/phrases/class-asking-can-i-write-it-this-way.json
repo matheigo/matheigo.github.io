@@ -2,10 +2,14 @@
   "id": "class-asking-can-i-write-it-this-way",
   "situation": "class-asking",
   "intent": "自分の書き方でもよいか確かめる",
-  "en": "I wrote it as 2(x + 1) — is that okay?",
-  "ja": "2(x + 1) と書いたんですが、それでもいいですか。",
+  "en": "Is it okay if I write it like this?",
+  "ja": "こう書いても大丈夫ですか。",
   "register": "neutral",
   "variants": [
+    {
+      "en": "I wrote it as 2(x + 1) — is that okay?",
+      "register": "neutral"
+    },
     {
       "en": "Can I just write it as 2x + 2?",
       "register": "casual"
@@ -21,16 +25,21 @@
     }
   ],
   "confidence": "verified",
-  "updated": "2026-09-28",
+  "updated": "2026-10-08",
   "evidence": {
-    "sources": [],
-    "counted": "2026-09-26"
+    "spoken": {
+      "okay if i write | ok if i write | alright if i write | all right if i write | okay to write it | ok to write it": 1
+    },
+    "sources": [
+      "micase"
+    ],
+    "counted": "2026-10-08"
   },
   "flags": [
     {
       "code": "corpus-attested-only",
-      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 i wrote it as | i wrote this as | i wrote that as（156 件。3 件以上）なので使われている。en の要の部分 i wrote it as | i wrote this as | i wrote that as も 156 件（3 件以上）なので en のまま。register は主張しない。",
-      "raised": "2026-09-28"
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（okay if i write | ok if i write | alright if i write | all right if i write | okay to write it | ok to write it 1 件）。Math Stack Exchange の質問で最も多い要の部分 i wrote it as | i wrote this as | i wrote that as（156 件。3 件以上）なので使われている。en の要の部分 okay if i write | ok if i write | alright if i write | all right if i write | okay to write it | ok to write it も 14 件（3 件以上）なので en のまま。register は主張しない。",
+      "raised": "2026-10-08"
     }
   ],
   "reviewed": {

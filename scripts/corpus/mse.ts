@@ -104,6 +104,9 @@ export const MSE_SKIP: Record<string, string> = {
   "right channel": "a communication or audio channel (information theory, stereo), not a chat channel",
   // Phase 5 監査 13, the user's decision 3, added after the counts and the search excerpts were seen (DECISIONS):
   "another piece of paper": "a slip in a puzzle (writing a number down, drawing a name), not asking for scratch paper",
+  // audit 12's collapsed bases (batch 42), named in STYLE (監査 13 の前の決定 1); no key part searches them now
+  "at the library": "a place named in a question (where a book is), not proposing where to meet",
+  "your own solutions": "the noun phrase alone (one's own solutions to be checked), not writing them up oneself",
 };
 
 /** The exact phrases a key part is searched as: one per alternative, "!w" dropped, "…" and MSE_SKIP not searched. */

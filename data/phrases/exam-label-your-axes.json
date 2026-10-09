@@ -8,7 +8,8 @@
   "variants": [
     {
       "en": "Label the axes.",
-      "register": "written"
+      "register": "written",
+      "note": "軸の名前（変数と単位）を書かせる指示で、目盛りは言わない。IM Grade 8（4.12）は label the axes and decide on an appropriate scale と、目盛りを別に指示する。"
     }
   ],
   "tags": [
@@ -19,10 +20,16 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 8)",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "4.12 Systems of Equations（label the axes and decide on an appropriate scale。variants[0].note）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "evidence": {
     "written": {
       "label the axes !intercepts | label your axes | label each axis": 8,
