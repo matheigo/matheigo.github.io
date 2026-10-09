@@ -18,7 +18,7 @@
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "日本語の「内項の積と外項の積は等しい」（学習指導要領解説には内項・外項の語は無く、日本語版 Wikipedia「比例式」にある）に当たる性質を、OpenStax・IM は名前で呼ばず、比例式を a/b = c/d の分数の形にして cross-multiply する（ad = bc）と手順を動詞で言い、CK-12 Geometry はこの解き方を Cross-Multiplication Theorem と呼ぶ（7.2）。内項・外項に当たる名前（means・extremes）は用例コーパスにも参照にも出てこない。",
+  "mapping_note": "日本語の「内項の積と外項の積は等しい」（学習指導要領解説には内項・外項の語は無く、日本語版 Wikipedia「比例式」にある）に当たる性質を、OpenStax Algebra and Trigonometry（2.2）・Intermediate Algebra（7.5）は名前で呼ばず、比例式 a/b = c/d を cross-multiply する（ad = bc）と手順を動詞で言い、CK-12 Geometry はこの解き方を Cross-Multiplication Theorem と呼ぶ（7.2）。IM には cross-multiply の語が出てこない。内項・外項に当たる名前（means・extremes）は用例コーパスにも参照にも出てこない。",
   "domains": [
     "algebra"
   ],
@@ -81,6 +81,22 @@
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
       "note": "7.2 Ratio and Proportion in Similar Figures（Cross-Multiplication Theorem）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "2.2 Linear Equations in One Variable（cross-multiplication）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "7.5 Solve Applications with Rational Equations（cross-multiply）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "cross-multiply は IM 6–8・IM 9–12 とも 0 件"
     }
   ],
   "confidence": "verified",

@@ -1,23 +1,9 @@
 [
  {
   "collection": "conventions",
-  "id": "jp-only-algebra-and-discrete-topics",
-  "field": "jp",
-  "sentence": "高等学校学習指導要領解説は理数数学I（数学I の数と式を参照して扱う科目）で「二重根号をはずす計算まで扱い」と書き、数学B で階差数列を扱う。",
-  "class": "A"
- },
- {
-  "collection": "conventions",
   "id": "us-only-calculus-topics",
   "field": "advice_ja",
   "sentence": "AP Calculus の Unit 7（微分方程式）と Unit 8 の average value（topic 8.1）は学習指導要領解説の数学III に出てこない。",
-  "class": "B"
- },
- {
-  "collection": "conventions",
-  "id": "us-only-calculus-topics",
-  "field": "jp",
-  "sentence": "高等学校学習指導要領解説の数学III に微分方程式・方向場・関数の平均値（average value）は出てこない（微分方程式は理数数学II で dy/dx = ky 程度を扱う）。",
   "class": "B"
  },
  {
@@ -281,13 +267,6 @@
  },
  {
   "collection": "terms",
-  "id": "arctangent",
-  "field": "pitfalls[0]",
-  "sentence": "学習指導要領解説には逆三角関数が出てこないので、日本の数III の ∫ dx/(1 + x²) は x = tan θ と置換して定積分として求める。",
-  "class": "B"
- },
- {
-  "collection": "terms",
   "id": "basic-properties-of-probability",
   "field": "mapping_note",
   "sentence": "学習指導要領解説（数学A）が確率の性質や法則として挙げるのは 0 ≦ P(A) ≦ 1、P(∅) = 0・P(U) = 1、互いに排反な事象の P(A ∪ B) = P(A) + P(B)、余事象の確率で、乗法定理は入らない。",
@@ -348,20 +327,6 @@
   "field": "mapping_note",
   "sentence": "学習指導要領解説（数学A）も、互いに排反なときの P(A ∪ B) = P(A) + P(B) を確率の性質や法則に挙げる。",
   "class": "A"
- },
- {
-  "collection": "terms",
-  "id": "grouped-sequence",
-  "field": "mapping_note",
-  "sentence": "日本語版 Wikipedia「数学 (教科)」は数学B の数列の項目に群数列を挙げる（学習指導要領解説には出てこない）。",
-  "class": "B"
- },
- {
-  "collection": "terms",
-  "id": "grouped-sequence",
-  "field": "sources[2].note",
-  "sentence": "数学B (1) 数列（群数列は出てこない）",
-  "class": "B"
  },
  {
   "collection": "terms",
@@ -428,13 +393,6 @@
  },
  {
   "collection": "terms",
-  "id": "right-hand-limit",
-  "field": "pitfalls[0]",
-  "sentence": "学習指導要領解説（数学III）は lim_{x→+0} と書き、日本語版 Wikipedia「片側極限」は lim_{x→a+0} と書く。",
-  "class": "A"
- },
- {
-  "collection": "terms",
   "id": "secant-line",
   "field": "mapping_note",
   "sentence": "学習指導要領解説（数学II・III）には「割線」が出てこない。",
@@ -490,20 +448,6 @@
   "class": "A"
  },
  {
-  "collection": "conventions",
-  "id": "us-only-precalculus-topics",
-  "field": "jp",
-  "sentence": "連続複利は、解説の数学III が e を導入するときに、極限を限りなく短い時間ごとに金利が発生したら預けたお金は何倍になるかと関連付けることも考えられる、と書く例にだけ出てくる（A = Pe^{rt} で解く問題は書かない）。",
-  "class": "A"
- },
- {
-  "collection": "conventions",
-  "id": "us-only-precalculus-topics",
-  "field": "sources[1].note",
-  "sentence": "クラメルの公式・デカルトの符号法則・組立除法は出てこない。数学III (2) 微分法: e の極限と金利の例。無理方程式は理数数学I の発展・拡充の例だけ",
-  "class": "A"
- },
- {
   "collection": "terms",
   "id": "negation",
   "field": "sources[4].note",
@@ -529,13 +473,6 @@
   "id": "us-only-calculus-topics",
   "field": "jp",
   "sentence": "高等学校学習指導要領解説の数学III に微分方程式・方向場・関数の平均値（average value）は出てこない（微分方程式は理数に関する学科の科目「理数数学II」で dy/dx = ky 程度を扱う）。",
-  "class": "B"
- },
- {
-  "collection": "conventions",
-  "id": "us-only-precalculus-topics",
-  "field": "jp",
-  "sentence": "高等学校学習指導要領解説にクラメルの公式・デカルトの符号法則・組立除法は出てこない（日本語版 Wikipedia「数学 (教科)」は数学II の高次方程式に組立除法を挙げる）。",
   "class": "B"
  },
  {
@@ -578,6 +515,76 @@
   "id": "surface-area-of-revolution",
   "field": "sources[2].note",
   "sentence": "数学III: 回転体の体積の公式を扱う。回転面の面積の公式は無い（課題学習〈積分法〉の例に球の表面積を定積分で導くこと）",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "us-only-precalculus-topics",
+  "field": "jp",
+  "sentence": "高等学校学習指導要領解説にクラメルの公式・デカルトの符号法則は出てこない（数学II は簡単な高次方程式を因数定理などで解くが、係数の符号から正の解の個数を見積もることは書かない）。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "us-only-precalculus-topics",
+  "field": "jp",
+  "sentence": "連続複利の考えは、解説の数学III が e を導入するところに例として出てくるだけで（1 年間の合計の金利を一定にして、金利がつく間隔を 1 年・1 月・1 日…と短くしていくと元金が何倍になるかを考え、その極限が e だとする）、A = Pe^{rt} で解く問題は書かない。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "us-only-precalculus-topics",
+  "field": "sources[1].note",
+  "sentence": "クラメルの公式・デカルトの符号法則は出てこない。数学II (1) いろいろな式: 因数定理などで簡単な高次方程式を解く。数学III (2) 微分法: e の極限と金利の例。数学C (2) 平面上の曲線: 二次曲線を回転させて考察することは含まれない。無理方程式は理数数学I の発展・拡充の例だけ",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "compare-coefficients",
+  "field": "pitfalls[1]",
+  "sentence": "「係数比較法」と「数値代入法」は日本語の呼び名で、学習指導要領解説には出てこない（高等学校学習指導要領解説（数学II）は、恒等式の未定係数法を等式の証明とあわせて扱ってよいと書く）。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "grouped-sequence",
+  "field": "mapping_note",
+  "sentence": "日本語版 Wikipedia「数学 (教科)」は数学B の数列の項目に群数列を挙げる（学習指導要領解説に群数列の語は出てこない。",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "numerical-integration",
+  "field": "sources[2].note",
+  "sentence": "「数値積分」の語は無い。理数数学II (7) 積分法（発展・拡充）: 面積を台形公式やシンプソンの公式で求める（数学III には無い）",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "separable-differential-equation",
+  "field": "pitfalls[1]",
+  "sentence": "両辺を積分して出てくる ln|y| は、学習指導要領解説の書き方では log|y| になる（解説には ln が出てこず、数学III の課題学習の例は自然対数を lim x log x と底を書かずに書く）。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "separable-differential-equation",
+  "field": "sources[2].note",
+  "sentence": "ln が出てこない（数学III 課題学習〈微分法〉の例は自然対数を lim x log x と底を書かずに書く）／理数数学II (7) 積分法: dy/dx = ky（k は定数）程度の簡単な微分方程式の意味と解法",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "arctangent",
+  "field": "pitfalls[0]",
+  "sentence": "学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法で主に扱う置き換えは ax + b = t と x = a sin θ（〔内容の取扱い〕）。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "integrals-giving-inverse-trig-functions",
+  "field": "mapping_note",
+  "sentence": "学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法で主に扱う置き換えは ax + b = t と x = a sin θ（〔内容の取扱い〕）。",
   "class": "A"
  }
 ]
