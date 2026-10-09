@@ -1,0 +1,583 @@
+[
+ {
+  "collection": "conventions",
+  "id": "jp-only-algebra-and-discrete-topics",
+  "field": "jp",
+  "sentence": "高等学校学習指導要領解説は理数数学I（数学I の数と式を参照して扱う科目）で「二重根号をはずす計算まで扱い」と書き、数学B で階差数列を扱う。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "us-only-calculus-topics",
+  "field": "advice_ja",
+  "sentence": "AP Calculus の Unit 7（微分方程式）と Unit 8 の average value（topic 8.1）は学習指導要領解説の数学III に出てこない。",
+  "class": "B"
+ },
+ {
+  "collection": "conventions",
+  "id": "us-only-calculus-topics",
+  "field": "jp",
+  "sentence": "高等学校学習指導要領解説の数学III に微分方程式・方向場・関数の平均値（average value）は出てこない（微分方程式は理数数学II で dy/dx = ky 程度を扱う）。",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "nested-radical",
+  "field": "sources[2].note",
+  "sentence": "理数数学I 数と式: 二重根号をはずす計算まで扱うことも考えられる（数学I の節には無い。2 件）",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "optimization-problem",
+  "field": "definition_ja",
+  "sentence": "学習指導要領解説の数学II の例）もある。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "optimization-problem",
+  "field": "mapping_note",
+  "sentence": "学習指導要領解説（数学II・III）は、文章題の最大・最小を「最適化」とは呼ばない（解説の「最適化」は IoT の話だけ）。",
+  "class": "B"
+ },
+ {
+  "collection": "conventions",
+  "id": "jp-only-algebra-and-discrete-topics",
+  "field": "sources[1].note",
+  "sentence": "理数数学I (1) 数と式: 二重根号をはずす計算、数学B 数列: 階差数列",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "independence-of-events",
+  "field": "pitfalls[1]",
+  "sentence": "学習指導要領解説（数学A）は、独立な試行（2 つの試行の結果が互いに影響を及ぼさない試行）の確率を P(C) = P(A)P(B) で扱い、事象の独立・従属は理数数学I の発展・拡充の内容に挙げる。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "probability-and-or-notation",
+  "field": "jp",
+  "sentence": "高等学校学習指導要領解説 数学A は積事象の確率を P(A∩B)（条件付き確率）、和事象の確率を P(A∪B)（確率の性質）と集合の記号で書く。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "vertex-and-center-letters",
+  "field": "jp",
+  "sentence": "高等学校学習指導要領解説（数学I 二次関数）は、二次関数を y = a(x − p)² + q の形に変形し、頂点 (p, q) と軸 x = p に着目すると書く。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "distance-formula",
+  "field": "pitfalls[0]",
+  "sentence": "中学校学習指導要領解説は、三平方の定理の活用として座標平面における 2 点間の距離を求めることを挙げ、高等学校学習指導要領解説（数学II）は座標を用いて二点間の距離を表すことを扱う。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "inverse",
+  "field": "mapping_note",
+  "sentence": "解説（数学I）が挙げるのは対偶・必要条件・十分条件）。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "triangle-inequality",
+  "field": "pitfalls[1]",
+  "sentence": "学習指導要領解説（数学II）は、絶対値の性質などを用いて不等式が成り立つことを証明することを挙げる。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "unit-circle",
+  "field": "pitfalls[0]",
+  "sentence": "高等学校学習指導要領解説（数学I 図形と計量）は単位円を使わず、座標平面の第 1 象限で原点を端点とする長さ α の線分 OP と点 P の座標 (α cos θ, α sin θ) で三角比を鈍角まで拡張する。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "unit-circle",
+  "field": "pitfalls[1]",
+  "sentence": "解説（数学I）の長さ α の線分 OP による定め方でも、単位円（α = 1）なら座標がそのまま (cos θ, sin θ) になる。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "logarithm",
+  "field": "sources[3].note",
+  "sentence": "数学III: ln は出てこない（〔用語・記号〕は 自然対数, e）",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "accumulation-function-scope",
+  "field": "jp",
+  "sentence": "共通テスト 令和7年度 本試験 数学Ⅱ，数学Ｂ，数学Ｃ 第3問は F(x) = ∫₀ˣ f(t) dt の形の関数を名前を付けずに扱い（正解は上端 x、下端 0）、高等学校学習指導要領解説（数学II・数学III の積分）にもこの関数の名前は出てこない。",
+  "class": "B"
+ },
+ {
+  "collection": "conventions",
+  "id": "approximately-equal-notation",
+  "field": "sources[1].note",
+  "sentence": "数学Ⅲ 微分の近似、数学Ｂ 正規分布: ≒",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "factoring-trinomials-method",
+  "field": "jp",
+  "sentence": "高等学校学習指導要領解説は、(ax + b)(cx + d) = acx² + (ad + bc)x + bd を用いた因数分解を数学I で扱うと書く。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "graph-transformations",
+  "field": "jp",
+  "sentence": "関数のグラフの移動を「x 軸方向に p、y 軸方向に q だけ平行移動」と軸の方向で言う（高等学校学習指導要領解説 数学I）。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "line-standard-form",
+  "field": "jp",
+  "sentence": "高等学校学習指導要領解説（数学II 図形と方程式）は、中学校の二元一次方程式 ax + by + c = 0 を発展させ、すべての直線を二元一次方程式で表すとする。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "log-and-ln",
+  "field": "sources[3].note",
+  "sentence": "数学II 指数関数・対数関数の例: log₁₀ a／数学III 課題学習〈微分法〉: lim x log x（底なし）／ln は 0 件",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "mapping-rule-notation",
+  "field": "jp",
+  "sentence": "関数のグラフは「x 軸方向に p，y 軸方向に q だけ平行移動」と書く（高等学校学習指導要領解説 数学I 二次関数）。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "one-sided-limit-notation",
+  "field": "jp",
+  "sentence": "高等学校学習指導要領解説 数学III は lim_{x→+0} x log x のように、右から近づく極限を x → +0 と書く（課題学習の例）。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "subset-symbol",
+  "field": "jp",
+  "sentence": "高等学校学習指導要領解説 数学I は集合の記号に A ⊂ B を挙げ（⊆ は出てこない）、センター試験（平成26年度 数学Ⅰ・数学Ａ 第1問）は「集合 X が集合 Y の部分集合であるとき X ⊂ Y と表す」と定める。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "us-only-calculus-topics",
+  "field": "sources[1].note",
+  "sentence": "数学III に記述なし（微分方程式・方向場・関数の平均値）／理数数学II: dy/dx = ky",
+  "class": "B"
+ },
+ {
+  "collection": "symbols",
+  "id": "approximately-equal-sign",
+  "field": "sources[5].note",
+  "sentence": "数学III 微分法の応用（Δy ≒ f′(x)Δx）・数学B 統計的な推測（≒）",
+  "class": "A"
+ },
+ {
+  "collection": "symbols",
+  "id": "curly-braces",
+  "field": "sources[6].note",
+  "sentence": "数学I 集合と命題（A={x|x>2}）",
+  "class": "A"
+ },
+ {
+  "collection": "symbols",
+  "id": "delta-x",
+  "field": "sources[3].note",
+  "sentence": "数学III 微分法（x の増分 Δx、Δy ≒ f′(x)Δx）",
+  "class": "A"
+ },
+ {
+  "collection": "symbols",
+  "id": "element-of-sign",
+  "field": "sources[5].note",
+  "sentence": "数学I 集合と命題（a∈A）",
+  "class": "A"
+ },
+ {
+  "collection": "symbols",
+  "id": "function-f-of-x",
+  "field": "sources[1].note",
+  "sentence": "数学I 二次関数（記号 f(x) を使用することも考えられる）",
+  "class": "A"
+ },
+ {
+  "collection": "symbols",
+  "id": "intersection-sign",
+  "field": "sources[3].note",
+  "sentence": "数学I 集合と命題（A∩B）・数学A 場合の数と確率（n(A∪B)=n(A)+n(B)−n(A∩B)）",
+  "class": "A"
+ },
+ {
+  "collection": "symbols",
+  "id": "mu-population-mean",
+  "field": "sources[4].note",
+  "sentence": "数学B 統計的な推測（母平均m、母標準偏差σの母集団）",
+  "class": "A"
+ },
+ {
+  "collection": "symbols",
+  "id": "piecewise-brace",
+  "field": "sources[3].note",
+  "sentence": "数学III 微分法（g(x) = 0 (x < 0)、x² (x ≧ 0)）",
+  "class": "A"
+ },
+ {
+  "collection": "symbols",
+  "id": "polar-form-cis",
+  "field": "sources[4].note",
+  "sentence": "数学C 複素数平面（極形式は出てくるが cis は出てこない）",
+  "class": "A"
+ },
+ {
+  "collection": "symbols",
+  "id": "rational-expression-fraction",
+  "field": "sources[1].note",
+  "sentence": "数学II (1) いろいろな式（分数式）",
+  "class": "A"
+ },
+ {
+  "collection": "symbols",
+  "id": "set-builder-braces",
+  "field": "sources[4].note",
+  "sentence": "数学I 集合と命題（A={x|x>2}）",
+  "class": "A"
+ },
+ {
+  "collection": "symbols",
+  "id": "union-sign",
+  "field": "sources[6].note",
+  "sentence": "数学I 集合と命題（A∪B）・数学A 場合の数と確率（n(A∪B)）",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "am-gm-inequality",
+  "field": "pitfalls[0]",
+  "sentence": "学習指導要領解説（数学II いろいろな式）は、相加・相乗平均の関係などを用いて不等式が成り立つことを証明する、と書く。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "angle-bisector-theorem",
+  "field": "pitfalls[1]",
+  "sentence": "高等学校学習指導要領解説（数学A）は角の二等分線と辺の比の関係を外角の場合も含めて扱い、中学校学習指導要領解説は相似の活用の例としてこの性質の証明を挙げる。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "arctangent",
+  "field": "pitfalls[0]",
+  "sentence": "学習指導要領解説には逆三角関数が出てこないので、日本の数III の ∫ dx/(1 + x²) は x = tan θ と置換して定積分として求める。",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "basic-properties-of-probability",
+  "field": "mapping_note",
+  "sentence": "学習指導要領解説（数学A）が確率の性質や法則として挙げるのは 0 ≦ P(A) ≦ 1、P(∅) = 0・P(U) = 1、互いに排反な事象の P(A ∪ B) = P(A) + P(B)、余事象の確率で、乗法定理は入らない。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "cofunction-identity",
+  "field": "mapping_note",
+  "sentence": "高等学校学習指導要領解説（数学I 図形と計量）は三角比の基本的な相互関係として sin A = cos(90° − A)・cos A = sin(90° − A) を挙げるだけで名前を付けず、OpenStax Algebra and Trigonometry（Right Triangle Trigonometry の節）は cofunction identities と呼ぶ（15 件）。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "complement",
+  "field": "pitfalls[0]",
+  "sentence": "高等学校学習指導要領解説（数学I）は集合の記号として Ā（A の補集合）を挙げ、共通テスト（令和 4 年度 数学I ほか）は「X の補集合を X̄ と表す」と書く。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "disk-method",
+  "field": "mapping_note",
+  "sentence": "学習指導要領解説（数学III）には、回転体の体積の求め方の名前が出てこない。",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "disk-method",
+  "field": "sources[3].note",
+  "sentence": "数学III: 回転体の体積の求め方の名前が出てこない・「円板法」は出てこない",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "epsilon-delta-definition",
+  "field": "pitfalls[0]",
+  "sentence": "学習指導要領解説（数学III）には出てこない。",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "first-derivative-test",
+  "field": "mapping_note",
+  "sentence": "学習指導要領解説（数学II・III）には、f′(x) の符号の変化から極大・極小を判定する方法の名前が出てこない。",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "fundamental-theorem-of-calculus-part-2",
+  "field": "mapping_note",
+  "sentence": "学習指導要領解説（数学II）には、∫ₐᵇ f(x)dx = F(b) − F(a) を定理として名前で呼ぶ扱いが出てこない（定積分は面積 S(t) や区分求積法の考えと関連付けて導入する）。",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "general-addition-rule",
+  "field": "mapping_note",
+  "sentence": "学習指導要領解説（数学A）も、互いに排反なときの P(A ∪ B) = P(A) + P(B) を確率の性質や法則に挙げる。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "grouped-sequence",
+  "field": "mapping_note",
+  "sentence": "日本語版 Wikipedia「数学 (教科)」は数学B の数列の項目に群数列を挙げる（学習指導要領解説には出てこない）。",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "grouped-sequence",
+  "field": "sources[2].note",
+  "sentence": "数学B (1) 数列（群数列は出てこない）",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "instantaneous-rate-of-change",
+  "field": "mapping_note",
+  "sentence": "学習指導要領解説（数学II）は同じ量を微分係数と呼び、瞬間の速さや接線の傾きと関連付ける。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "partial-fraction-decomposition",
+  "field": "sources[4].note",
+  "sentence": "数学III: 簡単な分数関数のグラフ",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "phase-shift",
+  "field": "mapping_note",
+  "sentence": "学習指導要領解説（数学II 三角関数）は、この内容を三角関数の式の定数とグラフの関係として扱い、「位相」の語は使わない。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "phase-shift",
+  "field": "pitfalls[1]",
+  "sentence": "学習指導要領解説（数学I）と共通テスト（令和7年度 本試験 数学I 第3問）は、グラフの横のずれを「x 軸方向に p だけ平行移動」と書く（二次関数のグラフ）。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "quartic-equation",
+  "field": "pitfalls[1]",
+  "sentence": "学習指導要領解説（数学II）は、x⁴ + x² − 2 = 0 のような複二次方程式（x² = t とおくと t の 2 次方程式になる）を取り上げる。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "related-rates",
+  "field": "mapping_note",
+  "sentence": "学習指導要領解説（数学III）には、時刻とともに変わる 2 つの量の変化率の関係を求める問題の名前が出てこない。",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "related-rates",
+  "field": "sources[2].note",
+  "sentence": "数学III: 時刻とともに変わる 2 つの量の変化率の関係を求める問題の名前が出てこない・「関連変化率」は出てこない",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "removable-discontinuity",
+  "field": "pitfalls[0]",
+  "sentence": "学習指導要領解説（数学III）には不連続点の種類の名前が出てこない。",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "removable-discontinuity",
+  "field": "sources[2].note",
+  "sentence": "数学III: 不連続点の種類の名前が出てこない",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "right-hand-limit",
+  "field": "pitfalls[0]",
+  "sentence": "学習指導要領解説（数学III）は lim_{x→+0} と書き、日本語版 Wikipedia「片側極限」は lim_{x→a+0} と書く。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "secant-line",
+  "field": "mapping_note",
+  "sentence": "学習指導要領解説（数学II・III）には「割線」が出てこない。",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "set-up-a-recurrence",
+  "field": "sources[2].note",
+  "sentence": "数学B (1) 数列 ア(ウ)（事象の変化を漸化式で表す）",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "solution-set",
+  "field": "pitfalls[0]",
+  "sentence": "区間の記法 (2, 3)、[1, ∞) は、高等学校学習指導要領解説では数学III の積分に閉区間 [a, b] が出てくる程度で、共通テストの問題文は 2 < x < 3、x ≧ 1 と不等式で書く（慣習差 interval-notation-vs-inequalities）。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "supplementary-angle-identity",
+  "field": "mapping_note",
+  "sentence": "高等学校学習指導要領解説（数学I）は cos A = −cos(180° − A) の形で公式を示すだけで名前を付けない。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "synthetic-division",
+  "field": "pitfalls[0]",
+  "sentence": "学習指導要領解説（数学II）には組立除法が出てこない（日本語版 Wikipedia「数学 (教科)」は数学II の高次方程式に挙げる）。",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "trigonometric-substitution",
+  "field": "mapping_note",
+  "sentence": "学習指導要領解説（数学III）は x = a sin θ の置き換えを置換積分法に含め、別の名前を付けない。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "universal-set",
+  "field": "pitfalls[0]",
+  "sentence": "「全体集合」は共通テストの数学I 第1問（令和 3〜8 年度ほか）が「全体集合 U を…とする」と書く語で、学習指導要領解説には出てこない。",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "venn-diagram",
+  "field": "pitfalls[1]",
+  "sentence": "補集合の記号は高等学校学習指導要領解説（数学I）では Ā、OpenStax Introductory Statistics では A′（エントリ complement）。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "us-only-precalculus-topics",
+  "field": "jp",
+  "sentence": "連続複利は、解説の数学III が e を導入するときに、極限を限りなく短い時間ごとに金利が発生したら預けたお金は何倍になるかと関連付けることも考えられる、と書く例にだけ出てくる（A = Pe^{rt} で解く問題は書かない）。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "us-only-precalculus-topics",
+  "field": "sources[1].note",
+  "sentence": "クラメルの公式・デカルトの符号法則・組立除法は出てこない。数学III (2) 微分法: e の極限と金利の例。無理方程式は理数数学I の発展・拡充の例だけ",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "negation",
+  "field": "sources[4].note",
+  "sentence": "理数数学I (1) 数と式（発展・拡充）: 真理値表を用いて命題「p→q」の否定が「p∧（¬q）」であること（数学I の節には無い）",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "conditional-statement",
+  "field": "sources[1].note",
+  "sentence": "数学I 集合と命題: 命題「x>2 ならば x>0 である。」（「p→q」は理数数学I の発展・拡充）",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "logical-connective",
+  "field": "sources[3].note",
+  "sentence": "数学I 集合と命題: 必要条件・十分条件・対偶、集合の記号 a∈A・A∩B・A∪B・A⊂B・Ā（論理結合子の名前は無い）。理数数学I (1) 数と式（発展・拡充）: 真理値表と p∧（¬q）",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "us-only-calculus-topics",
+  "field": "jp",
+  "sentence": "高等学校学習指導要領解説の数学III に微分方程式・方向場・関数の平均値（average value）は出てこない（微分方程式は理数に関する学科の科目「理数数学II」で dy/dx = ky 程度を扱う）。",
+  "class": "B"
+ },
+ {
+  "collection": "conventions",
+  "id": "us-only-precalculus-topics",
+  "field": "jp",
+  "sentence": "高等学校学習指導要領解説にクラメルの公式・デカルトの符号法則・組立除法は出てこない（日本語版 Wikipedia「数学 (教科)」は数学II の高次方程式に組立除法を挙げる）。",
+  "class": "B"
+ },
+ {
+  "collection": "symbols",
+  "id": "iff-arrow",
+  "field": "sources[5].note",
+  "sentence": "数学I 集合と命題（必要条件,十分条件や対偶などの指導。「⇔」「同値」は出てこない。level.jp の数I はこの必要条件・十分条件による）",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "conditional-statement",
+  "field": "mapping_note",
+  "sentence": "高等学校学習指導要領解説（数学I）は命題を「x > 2 ならば x > 0 である。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "logical-connective",
+  "field": "pitfalls[0]",
+  "sentence": "高等学校学習指導要領解説（数学I 集合と命題）は必要条件・十分条件・対偶や簡単な命題の証明を扱い、集合の記号として a ∈ A、A ∩ B、A ∪ B、A ⊂ B、Ā を挙げるが、「論理結合子」の名前は出てこない。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "right-hand-limit",
+  "field": "pitfalls[0]",
+  "sentence": "学習指導要領解説（数学III）は lim_{x→+0} と書き、日本語版 Wikipedia「片側極限」は x → a⁺ などと並べて x → a + 0 の書き方を挙げる。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "surface-area-of-revolution",
+  "field": "pitfalls[0]",
+  "sentence": "学習指導要領解説（数学III）は回転体の体積の公式を扱うが、回転面の面積の公式は出てこない（課題学習〈積分法〉の例に、球の表面積を定積分を利用して導くことが挙がる）。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "surface-area-of-revolution",
+  "field": "sources[2].note",
+  "sentence": "数学III: 回転体の体積の公式を扱う。回転面の面積の公式は無い（課題学習〈積分法〉の例に球の表面積を定積分で導くこと）",
+  "class": "A"
+ }
+]

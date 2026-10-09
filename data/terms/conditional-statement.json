@@ -19,7 +19,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "高等学校学習指導要領解説（数学I）は命題「p → q」と書き、この形の命題そのものに名前を付けない（含意は論理学の語）。英語では Levin の離散数学が implication、CK-12 Geometry（2.11 If Then Statements）が conditional statement（33 件）・if-then statement（11 件）と呼ぶ。見出しの「含意」は学習指導要領解説に無い（日本語版 Wikipedia「論理包含」「必要条件と十分条件」にはある）。",
+  "mapping_note": "高等学校学習指導要領解説（数学I）は命題を「x > 2 ならば x > 0 である。」のように「ならば」で書き（記号の「p → q」は理数に関する学科の科目「理数数学I」の発展・拡充の内容に出てくる）、この形の命題そのものに名前を付けない（含意は論理学の語）。英語では Levin の離散数学が implication、CK-12 Geometry（2.11 If Then Statements）が conditional statement（33 件）・if-then statement（11 件）と呼ぶ。見出しの「含意」は学習指導要領解説に無い（日本語版 Wikipedia「論理包含」「必要条件と十分条件」にはある）。",
   "domains": [
     "proof",
     "logic"
@@ -79,7 +79,7 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "数学I 集合と命題: 命題「p→q」"
+      "note": "数学I 集合と命題: 命題「x>2 ならば x>0 である。」（「p→q」は理数数学I の発展・拡充）"
     },
     {
       "type": "reference",
@@ -100,7 +100,7 @@
     "audit": "2026-09-27",
     "human": null
   },
-  "updated": "2026-09-27",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "implication": 29
