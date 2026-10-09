@@ -49,5 +49,17 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-10-09"
+  "updated": "2026-10-09",
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-10-09）で大きな直し: AP Statistics の CED は ∩・∪ で日本と同じ → us に CED を足し、違いを OpenStax Introductory Statistics の AND・OR に、level.us から AP Statistics を外した。見直す点: 慣習差として成り立つか（大学の本との違い）、us・advice_ja。次の監査のセッションが見直す。",
+      "raised": "2026-10-09"
+    }
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-10-09",
+    "human": null
+  }
 }

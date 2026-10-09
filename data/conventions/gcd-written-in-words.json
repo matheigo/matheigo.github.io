@@ -51,5 +51,17 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-10-09"
+  "updated": "2026-10-09",
+  "flags": [
+    {
+      "code": "audit-human",
+      "note": "Phase 5 監査（2026-10-09）で判断がつかない: 同じ段では日米とも言葉で書く（米国の学校の参照は GCF、gcd は Levin だけ。日本語版 Wikipedia も gcd を使う）。事実の誤りは直した。人間に決めてほしいこと: 慣習差として残すか外すか（外すなら ledger/conventions-excluded.csv に）。人間レビューへ。",
+      "raised": "2026-10-09"
+    }
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-10-09",
+    "human": null
+  }
 }
