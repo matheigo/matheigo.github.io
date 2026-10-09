@@ -15,8 +15,8 @@
       "type": "editorial"
     }
   ],
-  "confidence": "likely",
-  "updated": "2026-10-07",
+  "confidence": "verified",
+  "updated": "2026-10-08",
   "evidence": {
     "written": {
       "let ε > zero be given | ε > zero be given | let ε > zero": 15
@@ -26,16 +26,9 @@
     ],
     "counted": "2026-10-07"
   },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-07）で大きな直し: en の for every ε ほか 20 件はすべて極限の定義の文で書き出しは 0、let ε > 0 の 15 件はすべて書き出し → en を Let ε > 0 be given.・ja を「任意の ε > 0 をとる。」、定義の文を外した。見直す点: 20 ・15 件の読み、ja。次の監査のセッションが見直す。",
-      "raised": "2026-10-07"
-    }
-  ],
   "reviewed": {
     "machine": null,
-    "audit": "2026-10-07",
+    "audit": "2026-10-08",
     "human": null
   }
 }

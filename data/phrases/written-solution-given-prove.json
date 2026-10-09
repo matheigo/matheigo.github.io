@@ -24,8 +24,8 @@
       "note": "Given : … Prove : … で始まる証明の問題（4.13 SSS・4.14 SAS・4.15 ASA and AAS ほか、32 件）"
     }
   ],
-  "confidence": "likely",
-  "updated": "2026-10-07",
+  "confidence": "verified",
+  "updated": "2026-10-08",
   "evidence": {
     "sources": [],
     "counted": "2026-10-07"
@@ -35,16 +35,11 @@
       "code": "corpus-human-settled",
       "note": "型は人間が決めた（2026-09-26。docs/DECISIONS.md「Phase 3 慣習差 2 の前の修正」の 2）: 「Given: … Prove: …」。例の中身は台帳の文で、監査 12 で仮定 AB ∥ CD を足した（仮定が足りず結論を示せなかった）。register は主張しない。",
       "raised": "2026-09-26"
-    },
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-07）で大きな直し: 例の仮定 AB ≅ CD だけでは合同を示せない（数学の誤り）→ 仮定に AB ∥ CD を足し AB = CD に（型 Given: … Prove: … は人間の決定のまま）。見直す点: 例の数学、ja の //。次の監査のセッションが見直す。",
-      "raised": "2026-10-07"
     }
   ],
   "reviewed": {
     "machine": null,
-    "audit": "2026-10-07",
+    "audit": "2026-10-08",
     "human": null
   }
 }

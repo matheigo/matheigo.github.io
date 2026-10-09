@@ -23,8 +23,8 @@
       "type": "editorial"
     }
   ],
-  "confidence": "likely",
-  "updated": "2026-10-07",
+  "confidence": "verified",
+  "updated": "2026-10-08",
   "evidence": {
     "spoken": {
       "you wanna meet | we wanna meet | guys wanna meet | anybody wanna meet | anyone wanna meet | you want to meet | we want to meet | guys want to meet | anybody want to meet | anyone want to meet": 6
@@ -36,11 +36,6 @@
   },
   "flags": [
     {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-07）で大きな直し: 要の部分 at the library は場所の名前だけ。MICASE の学生の do you wanna meet ほか 6 件の形の文を en に（Do you want to meet at the library at 7?）、ja を合わせた。見直す点: 6 件の文脈、ja、variant。次の監査のセッションが見直す。",
-      "raised": "2026-10-07"
-    },
-    {
       "code": "corpus-attested-only",
       "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。話者のコーパスで首位の要の部分 you wanna meet | we wanna meet | guys wanna meet | anybody wanna meet | anyone wanna meet | you want to meet | we want to meet | guys want to meet | anybody want to meet | anyone want to meet（6 件。3 件以上）。register は主張しない。",
       "raised": "2026-10-08"
@@ -48,7 +43,7 @@
   ],
   "reviewed": {
     "machine": null,
-    "audit": "2026-10-07",
+    "audit": "2026-10-08",
     "human": null
   }
 }
