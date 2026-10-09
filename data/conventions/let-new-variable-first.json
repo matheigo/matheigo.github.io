@@ -36,5 +36,17 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-10-09"
+  "updated": "2026-10-09",
+  "flags": [
+    {
+      "code": "audit-human",
+      "note": "Phase 5 監査（2026-10-09）で判断がつかない: 「〜とおく」と Let の語順は英語の言い方だけの違いで、terms/let-u-equal・substitute-new-variable の pitfalls に同じことがある（DECISIONS「Phase 3 記号の前の修正」3 で外した型）。事実の誤りは直した。人間に決めてほしいこと: 慣習差として残すか外すか。人間レビューへ。",
+      "raised": "2026-10-09"
+    }
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-10-09",
+    "human": null
+  }
 }

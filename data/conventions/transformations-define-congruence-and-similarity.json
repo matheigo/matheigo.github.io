@@ -39,5 +39,17 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-10-09"
+  "updated": "2026-10-09",
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-10-09）で大きな直し: 解説も合同・相似を移動・拡大縮小で定義していて定義の違いとしては差が立たない → jp に中2・中3 の定義、違いを三角形の合同条件の扱い（IM は証明、解説は直観的に認める）に。見直す点: jp・us・advice_ja。次の監査のセッションが見直す。",
+      "raised": "2026-10-09"
+    }
+  ],
+  "reviewed": {
+    "machine": null,
+    "audit": "2026-10-09",
+    "human": null
+  }
 }
