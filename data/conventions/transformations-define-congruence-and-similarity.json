@@ -2,9 +2,9 @@
   "id": "transformations-define-congruence-and-similarity",
   "title_ja": "移動と合同・相似",
   "title_en": "Transformations, congruence and similarity",
-  "jp": "中学校学習指導要領解説は、第1学年で平行移動・対称移動・回転移動を扱い、第2学年で合同を「一方の図形を移動して他方の図形に重ねることができる」（動的な定義）と「対応する線分と角がすべて等しい」（静的な定義）で定める。三角形の合同条件は演繹的に導かず、三角形の決定条件を基に直観的・実験的に認めて証明の根拠にする。第3学年の相似も、拡大・縮小して合同になること、対応する線分の比と角が等しいこと、相似の中心を使う「相似の位置」で定める。",
-  "us": "IM Geometry は、translations・rotations・reflections の列で重なることを congruent の定義にし（1.10 Rigid Transformations の用語集）、Side-Angle-Side Triangle Congruence Theorem などの三角形の合同条件をこの定義から証明する（2.6・2.7・2.9）。相似も rigid motions と dilations の列で定義し（3.6 Connecting Similarity and Transformations）、Angle-Angle Triangle Similarity Theorem を導く（3.9）。CK-12 Geometry は合同を移動で重なること（4.9）と対応する辺・角が等しいこと（4.12）で述べ、SSS・SAS・ASA を証明しない postulate（4.13〜4.15。postulate の定義は 2.15）、AAS・HL を theorem とする。",
-  "advice_ja": "合同を移動で重なることで定めるのは、解説・IM Geometry・CK-12 Geometry で同じ（相似を拡大・縮小で定めるのは解説と IM Geometry）。違うのは三角形の合同条件の扱いで、IM Geometry は SSS・SAS・ASA を rigid transformation から証明する theorem（Side-Angle-Side Triangle Congruence Theorem など）とし、CK-12 Geometry は解説と同じく証明せずに認める postulate とする。授業で合同条件を証明するかを確かめる。",
+  "jp": "中学校学習指導要領解説は、第1学年で平行移動・対称移動・回転移動を扱い、第2学年で合同を「一方の図形を移動して他方の図形に重ねることができる」（動的な定義）と「対応する線分と対応する角がすべて等しい」（静的な定義）で定める。三角形の合同条件は演繹的に導かず、三角形の決定条件を基に直観的・実験的に認めて証明の根拠にする。第3学年の相似も、拡大・縮小して合同になること、対応する線分の比と角が等しいこと、相似の中心を使う「相似の位置」で定める。",
+  "us": "IM Geometry は、translations・rotations・reflections の列で重なることを congruent の定義にし（1.10 Rigid Transformations の用語集）、Side-Angle-Side Triangle Congruence Theorem などの三角形の合同条件をこの定義から証明する（2.6・2.7・2.9）。相似も rigid motions と dilations の列で定義し（3.6 Connecting Similarity and Transformations）、Angle-Angle Triangle Similarity Theorem を導く（3.9）。CK-12 Geometry は合同を移動で重なること（4.9）と対応する辺・角が等しいこと（4.12）で述べ、SSS・SAS・ASA を証明しない postulate（4.13〜4.15。postulate の定義は 2.15）、AAS・HL を theorem とする（4.15・4.16）。相似も、rigid transformations と dilation を合わせた similarity transformation で重なることで定める（8.8）。",
+  "advice_ja": "合同を移動で重なることで、相似を拡大・縮小と移動で重なることで定めるのは、解説・IM Geometry・CK-12 Geometry（4.9・8.8）で同じ。違うのは三角形の合同条件の扱いで、IM Geometry は SSS・SAS・ASA を rigid transformation から証明する theorem（Side-Angle-Side Triangle Congruence Theorem など）とし、CK-12 Geometry は解説と同じく証明せずに認める postulate とする。授業で合同条件を証明するかを確かめる。",
   "category": "proof-style",
   "level": {
     "jp": [
@@ -30,7 +30,7 @@
       "type": "reference",
       "title": "中学校学習指導要領（平成29年告示）解説 数学編",
       "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
-      "note": "中1 B 図形: 平行移動、回転移動、対称移動／中2 B 図形: 合同の意味（移動して重ねる・線分と角が等しい）、三角形の合同条件は直観的・実験的に認める／中3 B 図形: 相似の意味（拡大・縮小、相似の位置）"
+      "note": "中1 B 図形: 平行移動、回転移動、対称移動／中2 B 図形: 合同の意味（移動して重ねる・線分と角が等しい）、三角形の合同条件は直観的・実験的に認める／中3 B 図形: 相似の意味（拡大・縮小、線分の比と角、相似の位置）"
     },
     {
       "type": "reference",
@@ -42,7 +42,7 @@
       "type": "reference",
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
-      "note": "4.9 CPCTC（turn, flip, and/or slide）、4.12 Congruent Triangles（対応する辺と角）、4.13〜4.15（SSS・SAS・ASA Postulate）、2.15（postulate の定義）"
+      "note": "4.9 CPCTC（turn, flip, and/or slide）、4.12 Congruent Triangles（対応する辺と角）、4.13〜4.15（SSS・SAS・ASA Postulate、AAS Congruence Theorem）、4.16 HL（Hypotenuse-Leg Congruence Theorem）、2.15（postulate の定義）、8.8（similarity transformation）"
     }
   ],
   "confidence": "likely",

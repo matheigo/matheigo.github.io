@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本語版 Wikipedia「加法定理」は、確率の加法定理（和の法則）を、事象が互いに排反なら確率の和に分けられるという式とし、重なりがあるときは包除原理によると書く（「数学 (教科)」も数学A の項目に「排反と加法定理」を挙げる）。学習指導要領解説（数学A）も、互いに排反なときの P(A ∪ B) = P(A) + P(B) を確率の性質や法則に挙げる。OpenStax Introductory Statistics の addition rule は、重なりを引く一般の式 P(A or B) = P(A) + P(B) − P(A and B) を指す。AP Statistics の CED（topic 2.7）は同じ式に名前を付けない。",
+  "mapping_note": "日本語版 Wikipedia「加法定理」は、確率の加法定理（和の法則）を、事象が互いに排反なら確率の和に分けられるという式とし、重なりがあるときは包除原理によると書く（「数学 (教科)」も数学A の項目に「排反と加法定理」を挙げる）。学習指導要領解説（数学A）も、互いに排反なときの P(A ∪ B) = P(A) + P(B) を確率の性質や法則に挙げる。OpenStax Introductory Statistics（3.3）の addition rule は、重なりを引く一般の式 P(A OR B) = P(A) + P(B) − P(A AND B) を指す（IM Geometry（8.6 The Addition Rule）は同じ式を P(A or B) = P(A) + P(B) − P(A and B) と書く）。AP Statistics の CED（topic 2.7）は同じ式に名前を付けない。",
   "domains": [
     "probability"
   ],
@@ -109,7 +109,7 @@
     "audit": "2026-09-27",
     "human": null
   },
-  "updated": "2026-09-27",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "addition rule": 20
