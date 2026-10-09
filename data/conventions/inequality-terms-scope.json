@@ -2,9 +2,9 @@
   "id": "inequality-terms-scope",
   "title_ja": "一次不等式の範囲",
   "title_en": "Linear inequalities",
-  "jp": "数学I で一次不等式を、数学II で不等式の表す領域を扱う（高等学校学習指導要領解説）。",
-  "us": "OpenStax Elementary Algebra は 2 変数の不等式も linear inequality と呼んでグラフで扱い、Intermediate Algebra は and・or でつないだものを compound inequality と呼ぶ。",
-  "advice_ja": "linear inequality は 2 変数（y ≤ 2x + 1）のこともある。",
+  "jp": "高等学校学習指導要領解説は、数学I（数と式）で一次不等式の解を求め、数学II（図形と方程式）で不等式の表す領域を座標平面上に表す。日本語版 Wikipedia「数学I」は、数学I の一次不等式を中学校から移った一元一次不等式と書く。共通テスト（令和8年度 本試験 数学Ⅰ 第1問）の「連立不等式」も x だけの不等式の組。",
+  "us": "OpenStax Elementary Algebra は 1 変数の不等式（2.7）も 2 変数の Ax + By > C（4.7 Graphs of Linear Inequalities）も linear inequality と呼び、2 変数の不等式の組を system of linear inequalities としてグラフで解く（5.6）。Intermediate Algebra は and・or でつないだ 1 変数の不等式を compound inequality と呼ぶ（2.6）。",
+  "advice_ja": "OpenStax Elementary Algebra の linear inequality は 2 変数（y ≤ 2x + 1）のこともある。数学I の x だけの連立不等式は compound inequality（and でつなぐ）、数学II の領域を表す 2 変数の不等式の組は system of linear inequalities と言う。",
   "category": "terminology",
   "level": {
     "jp": [
@@ -12,7 +12,8 @@
       "数II"
     ],
     "us": [
-      "Algebra 1"
+      "Algebra 1",
+      "Algebra 2"
     ]
   },
   "term_refs": [
@@ -28,19 +29,31 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "数学I 一次不等式、数学II 不等式の表す領域"
+      "note": "数学I 数と式: 一次不等式の解を求める、数学II 図形と方程式: 不等式の表す領域（線形計画法）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e",
-      "note": "linear inequalities in two variables"
+      "note": "2.7 Solve Linear Inequalities（1 変数）、4.7 Graphs of Linear Inequalities（Ax + By > C）、5.6 Graphing Systems of Linear Inequalities"
     },
     {
       "type": "textbook",
       "title": "OpenStax Intermediate Algebra 2e",
-      "note": "compound inequalities"
+      "note": "2.6 Solve Compound Inequalities（and・or）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学I」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6I",
+      "note": "一元一次不等式が中学校から削除され、不等式を数学I で初めて履修"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和8年度 大学入学共通テスト 本試験 数学Ⅰ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=2144&f=abm00017542.pdf&n=2026_ol_17_sugaku1.pdf",
+      "note": "第1問: x についての連立不等式"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

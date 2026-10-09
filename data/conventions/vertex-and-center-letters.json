@@ -2,9 +2,9 @@
   "id": "vertex-and-center-letters",
   "title_ja": "頂点の文字",
   "title_en": "Letters for the vertex",
-  "jp": "二次関数を y = a(x − p)² + q と書き、頂点を (p, q) とする（高等学校学習指導要領解説 数学I 二次関数）。",
+  "jp": "高等学校学習指導要領解説（数学I 二次関数）は、二次関数を y = a(x − p)² + q の形に変形し、頂点 (p, q) と軸 x = p に着目すると書く。日本語版 Wikipedia「円 (数学)」は、中心 (a, b)、半径 r の円を (x − a)² + (y − b)² = r² と書く。",
   "us": "OpenStax Algebra and Trigonometry は頂点・中心を (h, k) とし、y = a(x − h)² + k と書く。",
-  "advice_ja": "米国の頂点は (h, k)。p と q は別の意味（放物線の焦点の距離 p など）に使われることがある。",
+  "advice_ja": "OpenStax Algebra and Trigonometry と IM は、放物線の頂点も円の中心も (h, k) と書く（y = a(x − h)² + k、(x − h)² + (y − k)² = r²）。頂点を (p, q)、中心を (a, b) と書くときは、何を表す文字かを言葉で添える。",
   "category": "letters",
   "level": {
     "jp": [
@@ -34,9 +34,21 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "(h, k)"
+      "note": "5.1 Quadratic Functions: f(x) = a(x − h)² + k、vertex (h, k)／12.1 The Ellipse: center (h, k)"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Algebra 1)",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "6.15 Vertex Form: y = a(x − h)² + k、vertex (h, k)"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「円 (数学)」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%86%86_(%E6%95%B0%E5%AD%A6)",
+      "note": "円の方程式: 中心 (a, b)、(x − a)² + (y − b)² = r²"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

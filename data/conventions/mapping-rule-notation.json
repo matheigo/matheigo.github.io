@@ -2,9 +2,9 @@
   "id": "mapping-rule-notation",
   "title_ja": "平行移動の書き方",
   "title_en": "Mapping rule",
-  "jp": "平行移動を「x 軸方向に p、y 軸方向に q だけ平行移動」と方向と量の言葉で書く（高等学校学習指導要領解説 数学I 二次関数）。",
-  "us": "CK-12 Geometry は (x, y) → (x + 3, y − 2) の形の mapping rule で書き、IM Geometry は同じ形を coordinate rule と呼ぶ。",
-  "advice_ja": "米国の Geometry では移動を (x, y) → (x + a, y + b) の式で答える。",
+  "jp": "中学校学習指導要領解説（第1学年 B 図形）は、平行移動を「図形を一定の方向に一定の距離だけ移動すること」とし、移動は方向と距離で決まるとする。解説と共通テストに (x, y) → (x + a, y + b) の形の記法は出てこない。関数のグラフは「x 軸方向に p，y 軸方向に q だけ平行移動」と書く（高等学校学習指導要領解説 数学I 二次関数）。",
+  "us": "CK-12 Geometry（8.9 Translation Notation）は、図形の平行移動を言葉でも書けるとしたうえで、記法 T₍₃,₅₎ と (x, y) → (x + 3, y − 2) の形の mapping rule を挙げ、mapping rule を the most common な記法と書く。IM Geometry（6.2）は同じ形を coordinate rule と呼ぶ。関数のグラフの平行移動は、OpenStax Algebra and Trigonometry（3.5）が shifted 2 units to the right のように言葉で書く。",
+  "advice_ja": "CK-12 Geometry・IM Geometry の図形の移動の問題（Write the mapping rule）では (x, y) → (x + a, y + b) の式で書く。関数のグラフの平行移動は shift 3 units to the right and 2 units down のように向きと量を言葉で言う。",
   "category": "notation",
   "level": {
     "jp": [
@@ -16,7 +16,8 @@
     ]
   },
   "term_refs": [
-    "coordinate-rule"
+    "coordinate-rule",
+    "translation"
   ],
   "sources": [
     {
@@ -32,15 +33,31 @@
       "type": "reference",
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
-      "note": "mapping rule"
+      "note": "8.9 Translation Notation: mapping rule (x, y) → (x − 7, y + 5)、words も可（The mapping rule notation is the most common）"
     },
     {
       "type": "reference",
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
-      "note": "coordinate rule"
+      "note": "Geometry 6.2 Transformations as Functions: coordinate rule"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第1学年 B 図形(1): 平行移動は方向と距離によって決まる"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "3.5 Transformation of Functions: horizontal shift、shifted 2 units to the right"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "令和3〜8年度・平成26〜31年度の数学の問題に (x, y) → (x + a, y + b) の形の記法は 0 件（平行移動は「x 軸方向に」の言葉）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

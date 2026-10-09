@@ -2,9 +2,9 @@
   "id": "discriminant-letter-d",
   "title_ja": "判別式の D",
   "title_en": "The letter D for the discriminant",
-  "jp": "日本語版 Wikipedia「判別式」は判別式を D で表す。",
-  "us": "OpenStax は判別式に文字を置かず、b² − 4ac（Algebra and Trigonometry の二次曲線では B² − 4AC）のまま the discriminant と呼ぶ。OpenStax に D = b² − 4ac の形は出てこない。",
-  "advice_ja": "答案では D と置かずに b² − 4ac > 0 と書くか、the discriminant is positive と書く。",
+  "jp": "共通テスト・センター試験の数学Ⅱの問題文は、2 次方程式の判別式を「判別式を D とおくと」「D とすると」と D で置いて進める（共通テスト 令和5年度 本試験 数学Ⅱ 第4問、センター試験 平成31年度 本試験 数学Ⅱ 第4問）。日本語版 Wikipedia「判別式」も、判別式は通常 D か Δ で書くとする。",
+  "us": "OpenStax の代数の本（Elementary Algebra 10.3、Intermediate Algebra 9.3、Algebra and Trigonometry 2.5）は二次方程式の判別式に文字を置かず、b² − 4ac のまま the discriminant と呼ぶ（Algebra and Trigonometry 12.4 の二次曲線では B² − 4AC）。OpenStax に D = b² − 4ac の形は出てこない。D を置くのは OpenStax Calculus で、二次曲線の判別式 D = 4AC − B²（Volume 2 の 7.5 Conic Sections）と、二変数関数の極値の判定の D（Volume 3 の 4.7 Maxima/Minima Problems）。",
+  "advice_ja": "答案では D と置かずに b² − 4ac > 0 と書くか、the discriminant is positive と書く。D を使うなら、OpenStax Calculus が the discriminant D = 4AC − B² と書くように、Let D = b² − 4ac. と先に定義する。",
   "category": "notation",
   "level": {
     "jp": [
@@ -12,6 +12,7 @@
       "数II"
     ],
     "us": [
+      "Algebra 1",
       "Algebra 2"
     ]
   },
@@ -27,14 +28,46 @@
       "type": "reference",
       "title": "日本語版 Wikipedia「判別式」",
       "url": "https://ja.wikipedia.org/wiki/%E5%88%A4%E5%88%A5%E5%BC%8F",
-      "note": "D"
+      "note": "D あるいは Δ で表記"
     },
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "the discriminant"
+      "note": "2.5 Quadratic Equations: the discriminant（b² − 4ac、D = は 0 件）、12.4 Rotation of Axes: B² − 4AC"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和5年度 大学入学共通テスト 本試験 数学Ⅱ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=432&f=abm00003620.pdf&n=2023_ot_20_sugaku2.pdf",
+      "note": "第4問: 判別式を D とおく"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成31年度 大学入試センター試験 本試験 数学Ⅱ（問題）",
+      "url": "https://web.archive.org/web/20200601/https://www.dnc.ac.jp/albums/abm.php?f=abm00036455.pdf&n=k+20+suugaku2.pdf",
+      "note": "第4問: 判別式を D とすると、D > 0 ／ D = 0 ／ D < 0 の選択肢"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "10.3 Solve Quadratic Equations Using the Quadratic Formula: the discriminant（D = は 0 件）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "9.3: the discriminant（D = は 0 件）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "7.5 Conic Sections: the discriminant D = 4AC − B²"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3",
+      "note": "4.7 Maxima/Minima Problems: the discriminant D"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

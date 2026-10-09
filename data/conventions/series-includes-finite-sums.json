@@ -2,9 +2,9 @@
   "id": "series-includes-finite-sums",
   "title_ja": "級数の範囲",
   "title_en": "Series",
-  "jp": "日本語版 Wikipedia「級数」は級数を無限項の和として説明する。",
+  "jp": "高等学校学習指導要領解説は、数学B（数列）で有限個の項の和を「等差数列の和」「等比数列の和」と呼び、「級数」は数学III の「無限級数」「無限等比級数」の形で使う。日本語版 Wikipedia「級数」も級数を無限項の和として説明する（有限個の和は残りの項を 0 とみる場合）。",
   "us": "OpenStax Algebra and Trigonometry は有限個の項の和も arithmetic series・geometric series と呼ぶ。",
-  "advice_ja": "英語の series は有限の和にも使う。無限の和ははっきり infinite series と言う。",
+  "advice_ja": "OpenStax Algebra and Trigonometry（13.4）は有限個の項の和も series と呼び、無限の和は infinite series と言い分ける。OpenStax Calculus Volume 2（5.2 Infinite Series）は infinite series と定義した後、series だけで無限の和を指す。",
   "category": "terminology",
   "level": {
     "jp": [
@@ -13,7 +13,8 @@
     ],
     "us": [
       "Algebra 2",
-      "Precalculus"
+      "Precalculus",
+      "Calculus II"
     ]
   },
   "term_refs": [
@@ -27,14 +28,25 @@
       "type": "reference",
       "title": "日本語版 Wikipedia「級数」",
       "url": "https://ja.wikipedia.org/wiki/%E7%B4%9A%E6%95%B0",
-      "note": "無限項の和"
+      "note": "無限項の和（有限個の和は残りの項を 0 とみる）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "arithmetic series"
+      "note": "13.4 Series and Their Notations: arithmetic series・geometric series（初項から第 n 項までの和）、infinite series"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学B 数列: 等差数列の和・等比数列の和（級数の語は無い）／数学III 極限: 無限級数・無限等比級数"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "5.2 Infinite Series: infinite series の定義の後は series"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

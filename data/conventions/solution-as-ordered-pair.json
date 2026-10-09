@@ -2,9 +2,9 @@
   "id": "solution-as-ordered-pair",
   "title_ja": "解の組の書き方",
   "title_en": "Solutions as ordered pairs",
-  "jp": "共通テスト・センター試験の問題文は 2 つの値をまとめて「値の組 (p, r)」「組 (A, B)」と呼ぶ（共通テスト 令和5年度 本試験 数学Ⅱ 第4問、センター試験 平成31年度 本試験 数学Ⅰ・数学Ａ 第4問）。",
+  "jp": "センター試験の問題文は方程式の解を「x = ア，y = イウ」と x と y に分けて書き（平成31年度 本試験 数学Ⅰ・数学Ａ 第4問 (1) の不定方程式 49x − 23y = 1）、組で答えるときは「(A, B) = (49 × ク，23 × ケコ)」（同 (2)）や「p，r の値の組 (p, r)」（共通テスト 令和5年度 本試験 数学Ⅱ 第4問）と書く。",
   "us": "OpenStax Algebra and Trigonometry は連立方程式の解を ordered pair と呼び、答えを The solution is (−2, −4). と 1 つの組で書く（Systems of Linear Equations: Two Variables）。",
-  "advice_ja": "「解の組」は英語では ordered pair。答えは (x, y) = (2, 3) でも The solution is (2, 3). でもよい。",
+  "advice_ja": "「x = 2, y = 3」と分けて書く解は、OpenStax の教科書（Algebra and Trigonometry 11.1、Elementary Algebra 5.1）のように The solution is (2, 3). と ordered pair 1 つで言う。x の値を先に書く。",
   "category": "proof-style",
   "level": {
     "jp": [
@@ -33,14 +33,19 @@
       "type": "reference",
       "title": "大学入試センター 平成31年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
       "url": "https://web.archive.org/web/20200601/https://www.dnc.ac.jp/albums/abm.php?f=abm00036453.pdf&n=k+19+suugaku1A.pdf",
-      "note": "第4問: 自然数 A と B の組 (A, B)"
+      "note": "第4問: 不定方程式の解 x = ア，y = イウ、組 (A, B) = (49 × ク，23 × ケコ)"
     },
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "Systems of Linear Equations: Two Variables: ordered pair、The solution is (…)"
+      "note": "11.1 Systems of Linear Equations: Two Variables: ordered pair、The solution is (−2, −4)."
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "5.1 Solve Systems of Equations by Graphing・5.2 Solving Systems of Equations by Substitution: The solution is (1, 3)."
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26"
+  "updated": "2026-10-09"
 }

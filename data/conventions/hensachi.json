@@ -2,13 +2,13 @@
   "id": "hensachi",
   "title_ja": "偏差値",
   "title_en": "Hensachi (T-score)",
-  "jp": "日本語版 Wikipedia「偏差値」は、偏差値を平均 50・標準偏差 10 に変換した値（英語の T-score）と説明する。",
-  "us": "OpenStax Introductory Statistics はデータの位置を z-score（平均から標準偏差いくつ分か）と percentile で表す。",
-  "advice_ja": "偏差値 60 は z-score 1 に当たる。米国の統計の授業では z-score で話す。",
+  "jp": "日本語版 Wikipedia「偏差値」は、偏差値を平均 50・標準偏差 10 に変換した値（英語の T-score）と説明し、学力試験の得点の位置を表す学力偏差値としても使われると書く。",
+  "us": "OpenStax Introductory Statistics はデータの位置を z-score（平均から標準偏差いくつ分か。2.7・6.1）と percentile（2.3 Measures of the Location of the Data）で表し、平均 50・標準偏差 10 に直した値は出てこない（t-score は t 分布の値）。",
+  "advice_ja": "偏差値 60 は z-score 1 に当たる（(60 − 50) ÷ 10）。OpenStax Introductory Statistics と AP Statistics の CED（topic 1.9）は、データの位置を z-score で比べる。",
   "category": "classroom-culture",
   "level": {
     "jp": [
-      "数I"
+      "数B"
     ],
     "us": [
       "Intro Statistics",
@@ -32,9 +32,21 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e",
-      "note": "z-score、percentile"
+      "note": "2.3 percentile・2.7／6.1 z-score。平均 50・標準偏差 10 の換算は無い"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 1.9（z-scores、relative position）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学 (教科)」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6_%28%E6%95%99%E7%A7%91%29",
+      "note": "数学B 数学と社会生活: 社会の中の数学 - 偏差値（level.jp 数B）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

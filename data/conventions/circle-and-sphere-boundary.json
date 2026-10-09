@@ -1,10 +1,10 @@
 {
   "id": "circle-and-sphere-boundary",
   "title_ja": "球と sphere",
-  "title_en": "Sphere and ball",
-  "jp": "日本語の「球」は中身の詰まった球体も指し、表面は「球面」と言う（日本語版 Wikipedia「球」: 球体（ball）または球面（sphere））。",
-  "us": "OpenStax Calculus Volume 3 は sphere を空間の 1 点から等しい距離にある点の集まり（表面）と定義する。",
-  "advice_ja": "sphere は表面。体積の問題では the volume of a sphere と言うが、指すものは中身を含む立体。",
+  "title_en": "Sphere: surface or solid",
+  "jp": "中学校学習指導要領解説（第1学年 図形）は、球を柱体・錐体と並ぶ空間図形として扱い、球の表面積と体積を求める（解説に「球面」は出てこない）。日本語版 Wikipedia「球」は、数学の球を「球体（ball）または球面（sphere）」と書く。",
+  "us": "IM Geometry（5.2 Slicing Solids）・CK-12 Geometry（9.5 Volume）・OpenStax Calculus Volume 3（2.2 Vectors in Three Dimensions）は、sphere を中心から等しい距離にある空間の点の集まり（表面）と定義し、CK-12 Geometry 9.5 は同じ節で the volume of a sphere を求める。CK-12 Geometry 9.2 は sphere を a round, three-dimensional solid とも書く。",
+  "advice_ja": "IM Geometry・CK-12 Geometry 9.5・OpenStax Calculus Volume 3 の定義では sphere は表面（日本語の球面）。ただし the volume of a sphere のように、中身を含む立体（日本語の球）にも sphere と言う（CK-12 Geometry 9.2 は sphere を立体と書く）。",
   "category": "terminology",
   "level": {
     "jp": [
@@ -18,8 +18,7 @@
   },
   "term_refs": [
     "sphere",
-    "circle",
-    "concyclic"
+    "circle"
   ],
   "sources": [
     {
@@ -34,9 +33,27 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 3",
-      "note": "A sphere is the set of all points in space equidistant from a fixed point"
+      "note": "2.2 Vectors in Three Dimensions: A sphere is the set of all points in space equidistant from a fixed point"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "5.2 Slicing Solids: sphere（the set of points … the same distance from some center）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "9.5 Volume: sphere（set of all points in space equidistant from a center point）、Volume of a Sphere／9.2: a round, three-dimensional solid"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第1学年 B 図形: 柱体，錐体及び球の表面積と体積／球面は 0 件"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

@@ -2,16 +2,18 @@
   "id": "quadrant-roman-numerals",
   "title_ja": "象限の番号",
   "title_en": "Quadrant numbers",
-  "jp": "共通テスト・センター試験の問題文は象限を「第 1 象限」と算用数字で書く（センター試験 平成29年度 本試験 数学Ⅱ・数学Ｂ 第4問、共通テスト 令和4年度 本試験 数学Ⅱ 第3問は「第 ナ 象限」を数字で答えさせ、正解は 4）。",
-  "us": "OpenStax Algebra and Trigonometry・Elementary Algebra は Quadrant I〜IV とローマ数字で書く。",
-  "advice_ja": "「第 2 象限」は英語の本では Quadrant II。",
+  "jp": "共通テスト・センター試験の問題文は象限を「第 1 象限」と算用数字で書く（センター試験 平成29年度 本試験 数学Ⅱ・数学Ｂ 第4問、共通テスト 令和4年度 本試験 数学Ⅱ 第3問は「第 ナ 象限」を数字で答えさせ、正解は 4）。高等学校学習指導要領解説（数学I 図形と計量）も「第1象限」と書く。",
+  "us": "OpenStax Elementary Algebra（4.1）と CK-12 Geometry は象限をローマ数字 I〜IV で番号付けすると書き、Algebra and Trigonometry も Quadrant I〜IV と書く。IM Algebra 2（6.6 The Pythagorean Identity (Part 2) ほか）は quadrant 1〜4 と算用数字で書く。",
+  "advice_ja": "「第 2 象限」は OpenStax・CK-12 では Quadrant II と書く（IM は quadrant 2）。",
   "category": "notation",
   "level": {
     "jp": [
+      "数I",
       "数II"
     ],
     "us": [
       "Algebra 1",
+      "Geometry",
       "Precalculus"
     ]
   },
@@ -43,14 +45,32 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "The Rectangular Coordinate Systems and Graphs: Quadrant I〜IV"
+      "note": "2.1 The Rectangular Coordinate Systems and Graphs（Quadrant I〜IV）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e",
-      "note": "Quadrant I〜IV"
+      "note": "4.1 Use the Rectangular Coordinate System（The quadrants are identified by Roman numerals）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "1.20 Polygon Classification in the Coordinate Plane（Quadrants: numbered using Roman Numerals I, II, III, and IV）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 6.6 The Pythagorean Identity (Part 2)（quadrant 1〜4）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 図形と計量: 第1象限"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26"
+  "updated": "2026-10-09"
 }

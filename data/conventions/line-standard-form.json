@@ -2,12 +2,13 @@
   "id": "line-standard-form",
   "title_ja": "直線の方程式の一般形",
   "title_en": "Standard form of a line",
-  "jp": "直線を ax + by + c = 0 の形の方程式で表す（日本語版 Wikipedia「点と直線の距離」）。",
+  "jp": "高等学校学習指導要領解説（数学II 図形と方程式）は、中学校の二元一次方程式 ax + by + c = 0 を発展させ、すべての直線を二元一次方程式で表すとする。日本語版 Wikipedia「一次関数」はこの形を「一般形」と呼ぶ。",
   "us": "OpenStax Elementary Algebra と IM は直線の standard form を Ax + By = C（定数を右辺）と書く。",
-  "advice_ja": "米国の standard form は Ax + By = C。右辺を 0 にした形とは違う。",
+  "advice_ja": "OpenStax（Elementary Algebra 4.1、Algebra and Trigonometry 2.2）と IM（Algebra 1 2.10）の standard form は Ax + By = C（定数が右辺）。ax + by + c = 0 から書き直すときは定数を右辺に移す（2x − 3y + 12 = 0 は 2x − 3y = −12）。",
   "category": "notation",
   "level": {
     "jp": [
+      "中2",
       "数II"
     ],
     "us": [
@@ -30,15 +31,38 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e",
-      "note": "Ax + By = C"
+      "note": "4.1 Use the Rectangular Coordinate System: standard form Ax + By = C"
     },
     {
       "type": "reference",
       "title": "Illustrative Mathematics, IM 9–12 Math",
       "url": "https://im.kendallhunt.com/HS/students/index.html",
-      "note": "Ax + By = C"
+      "note": "Algebra 1 2.10・Geometry 6.9: standard form Ax + By = C"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II 図形と方程式: 二元一次方程式 ax+by+c=0（b≠0）、すべての直線が二元一次方程式で表される"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第2学年 C 関数: 二元一次方程式 ax+by+c=0 を関数を表す式とみる"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「一次関数」",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%80%E6%AC%A1%E9%96%A2%E6%95%B0",
+      "note": "一般形（general form）Ax + By + C = 0"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "2.2 Linear Equations in One Variable: Standard form is given as Ax + By = C"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

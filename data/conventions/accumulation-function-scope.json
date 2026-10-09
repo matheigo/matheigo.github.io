@@ -2,9 +2,9 @@
   "id": "accumulation-function-scope",
   "title_ja": "定積分で表された関数の呼び方",
   "title_en": "Accumulation functions",
-  "jp": "共通テストは F(x) = ∫₀ˣ f(t) dt の形の関数を、名前を付けずに扱う（令和7年度 本試験 数学Ⅱ，数学Ｂ，数学Ｃ 第3問。正解は上端 x、下端 0）。",
+  "jp": "共通テスト 令和7年度 本試験 数学Ⅱ，数学Ｂ，数学Ｃ 第3問は F(x) = ∫₀ˣ f(t) dt の形の関数を名前を付けずに扱い（正解は上端 x、下端 0）、高等学校学習指導要領解説（数学II・数学III の積分）にもこの関数の名前は出てこない。",
   "us": "AP Calculus の CED は topic 6.4 を The Fundamental Theorem of Calculus and Accumulation Functions と名付け、∫ₐˣ f(t) dt の形の関数を accumulation function と呼ぶ。",
-  "advice_ja": "∫ₐˣ f(t) dt の関数は AP の授業では accumulation function と呼ばれる。",
+  "advice_ja": "∫ₐˣ f(t) dt の関数を、AP Calculus の CED は accumulation function（functions defined by integrals とも）と呼ぶ。OpenStax Calculus Volume 1 は名前を付けずに F(x) = ∫ₐˣ f(t) dt と書く。",
   "category": "terminology",
   "level": {
     "jp": [
@@ -38,8 +38,19 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "topic 6.4 The Fundamental Theorem of Calculus and Accumulation Functions"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II・III 積分: 上端を変数とする定積分の関数の名前は出てこない"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "5.3 The Fundamental Theorem of Calculus（Part 1: the function F(x) is defined by F(x) = ∫ₐˣ f(t) dt）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26"
+  "updated": "2026-10-09"
 }

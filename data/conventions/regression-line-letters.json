@@ -2,14 +2,13 @@
   "id": "regression-line-letters",
   "title_ja": "直線の式の a と b",
   "title_en": "a and b in a line's equation",
-  "jp": "一次関数を y = ax + b と書き、a が傾き（中学校学習指導要領解説 中2）。",
-  "us": "OpenStax Introductory Statistics は回帰直線を y = a + bx と書き、a が切片、b が傾き。",
-  "advice_ja": "回帰直線では a と b の役割が逆。どちらが傾きかを式の形で確かめる。",
+  "jp": "中学校学習指導要領解説（第2学年 C 関数）は一次関数を y = ax + b と書き、a が直線の傾き、b が x = 0 のときの y の値（y 軸との交点の y 座標）とする。",
+  "us": "OpenStax Introductory Statistics（12.1・12.3）と AP Statistics の CED（topic 5.3）は回帰直線を ŷ = a + bx と書き、a が切片（y-intercept）、b が傾き（slope）。",
+  "advice_ja": "統計の本の ŷ = a + bx では a が切片、b が傾きで、y = ax + b と役割が逆になる（電卓の出力の y = ax + b は a が傾き）。どちらが傾きかを式の形で確かめる。",
   "category": "letters",
   "level": {
     "jp": [
-      "中2",
-      "数I"
+      "中2"
     ],
     "us": [
       "Intro Statistics",
@@ -27,14 +26,20 @@
       "type": "reference",
       "title": "中学校学習指導要領（平成29年告示）解説 数学編",
       "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
-      "note": "中2 C 関数: y = ax + b"
+      "note": "第2学年 C 関数: y = ax + b（a は傾き）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e",
-      "note": "y = a + bx"
+      "note": "12.1 Linear Equations（y = a + bx、b = slope、a = y-intercept）・12.3 The Regression Equation（ŷ = a + bx）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 5.3（a is the y-intercept、b is the slope of the regression line）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

@@ -2,13 +2,12 @@
   "id": "factoring-trinomials-method",
   "title_ja": "二次式の因数分解の方法",
   "title_en": "Factoring trinomials",
-  "jp": "二次式の因数分解に「たすき掛け」を使う（日本語版 Wikipedia「たすき」: 二次方程式を因数分解する際に用いる方法）。",
-  "us": "OpenStax Elementary Algebra は ax² + bx + c を trial and error と ‘ac’ method（bx を 2 つに分けて factor by grouping）で因数分解する。",
-  "advice_ja": "米国の授業では ac method を指示されることがある。たすき掛けで出した答えでもよいかを確かめる。",
+  "jp": "日本語版 Wikipedia「因数分解」は、2 次式の因数分解の方法として節「たすきがけ」を立て、x² の係数と定数項をそれぞれ 2 つの数の積に分け、斜めに掛けた積の和が x の係数になる組を探す、と説明する。高等学校学習指導要領解説は、(ax + b)(cx + d) = acx² + (ad + bc)x + bd を用いた因数分解を数学I で扱うと書く。",
+  "us": "OpenStax Elementary Algebra（7.3）は ax² + bx + c を trial and error と ‘ac’ method（bx を 2 つに分けて factor by grouping）で因数分解する。Trial and Error は a の約数の組と c の約数の組を ( )( ) に入れて試す方法で、たすき掛けと同じ組を探すが十字の図は書かない。",
+  "advice_ja": "OpenStax Elementary Algebra（7.3）は trial and error と ac method を並べて教える。たすき掛けは trial and error と同じ組を探す方法なので、英語で説明するなら trial and error（IM Algebra 1 7.10 は guessing and checking）と言える。課題が ac method を指定していればその手順（bx を 2 つに分けて factor by grouping）で書く。",
   "category": "proof-style",
   "level": {
     "jp": [
-      "中3",
       "数I"
     ],
     "us": [
@@ -17,8 +16,7 @@
   },
   "term_refs": [
     "cross-method",
-    "factoring-by-grouping",
-    "arrange-by-the-variable-of-lowest-degree"
+    "factoring-by-grouping"
   ],
   "sources": [
     {
@@ -26,16 +24,28 @@
     },
     {
       "type": "reference",
-      "title": "日本語版 Wikipedia「たすき」",
-      "url": "https://ja.wikipedia.org/wiki/%E3%81%9F%E3%81%99%E3%81%8D",
-      "note": "たすきがけ"
+      "title": "日本語版 Wikipedia「因数分解」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%A0%E6%95%B0%E5%88%86%E8%A7%A3",
+      "note": "節「たすきがけ」"
     },
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e",
-      "note": "trial and error、‘ac’ method"
+      "note": "7.3 Factor Trinomials of the Form ax²+bx+c: Trial and Error、“ac” method（grouping method）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 数と式: (ax + b)(cx + d) の公式を用いた展開と因数分解（「たすき」は 0 件）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Algebra 1)",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "7.10: (3x + □)(2x + □) を guessing and checking で探す"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

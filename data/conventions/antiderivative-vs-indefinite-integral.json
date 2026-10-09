@@ -2,8 +2,8 @@
   "id": "antiderivative-vs-indefinite-integral",
   "title_ja": "原始関数と不定積分",
   "title_en": "Antiderivative and indefinite integral",
-  "jp": "高等学校学習指導要領解説は「不定積分」の語を使い（35 回）、「原始関数」は出てこない。",
-  "us": "OpenStax Calculus Volume 1 は F′ = f となる関数 1 つを an antiderivative、+ C を付けた全体を indefinite integral と呼び分ける。",
+  "jp": "高等学校学習指導要領解説は「不定積分」の語だけを使い（35 回）、「原始関数」は出てこない。センター試験 平成30年度 本試験 数学Ⅱ・数学Ｂ 第2問は「F(x) を f(x) の不定積分とする」と関数 1 つを不定積分と呼び、共通テスト 令和5年度 本試験 数学Ⅱ 第2問は + C を付けた式を不定積分と呼ぶ。",
+  "us": "OpenStax Calculus Volume 1 は F′ = f となる関数 1 つを an antiderivative、+ C を付けた全体を indefinite integral と呼び分ける。AP Calculus の CED（topic 6.8）も ∫ f(x) dx = F(x) + C を indefinite integral と書く。",
   "advice_ja": "find an antiderivative は関数を 1 つ答えればよい。the indefinite integral には + C を付ける。",
   "category": "terminology",
   "level": {
@@ -17,7 +17,8 @@
     ]
   },
   "term_refs": [
-    "antiderivative"
+    "antiderivative",
+    "indefinite-integral"
   ],
   "sources": [
     {
@@ -27,14 +28,32 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "数学II・III 積分法: 不定積分"
+      "note": "数学II 微分・積分の考え・数学III 積分法: 不定積分（原始関数は出てこない）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1",
-      "note": "antiderivative、indefinite integral"
+      "note": "4.10 Antiderivatives（antiderivative、indefinite integral、most general antiderivative）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 6.8（indefinite integral、antiderivatives）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学Ⅱ・数学Ｂ（問題）",
+      "url": "https://web.archive.org/web/20190601/https://www.dnc.ac.jp/albums/abm.php?f=abm00033144.pdf&n=h30+suugaku2+02suugaku2B.pdf",
+      "note": "第2問: F(x)をf(x)の不定積分とする"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和5年度 大学入学共通テスト 本試験 数学Ⅱ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=432&f=abm00003620.pdf&n=2023_ot_20_sugaku2.pdf",
+      "note": "第2問: 不定積分は … + C（C は積分定数）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

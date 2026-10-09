@@ -2,7 +2,7 @@
   "id": "rounding-place",
   "title_ja": "四捨五入の位の言い方",
   "title_en": "Rounding place",
-  "jp": "日本語版 Wikipedia「端数処理」は、四捨五入を「小数第一位が 4 以下なら切り捨て」のように見る位で説明する。",
+  "jp": "センター試験の問題文は「小数第2位を四捨五入して小数第1位まで求める」と、四捨五入する位（捨てる位）を言う（平成29年度 本試験 数学Ⅱ・数学Ｂ 第1問）。解答上の注意も「指定された桁数の一つ下の桁を四捨五入して答えなさい」と書く（平成30年度 本試験 数学１ の表紙）。日本語版 Wikipedia「端数処理」も、四捨五入の名前を「小数第一位が 4 以下なら切り捨て」と見る位で説明する。",
   "us": "OpenStax Prealgebra は round to the nearest tenth のように残す位で言う。",
   "advice_ja": "「小数第 2 位を四捨五入」は round to the nearest tenth（1 つ上の位）。",
   "category": "terminology",
@@ -30,9 +30,21 @@
     {
       "type": "textbook",
       "title": "OpenStax Prealgebra 2e",
-      "note": "nearest tenth"
+      "note": "5.1 Decimals: round to the nearest tenth"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成29年度 大学入試センター試験 本試験 数学Ⅱ・数学Ｂ（問題）",
+      "url": "https://web.archive.org/web/20180601/https://www.dnc.ac.jp/albums/abm.php?f=abm00009415.pdf&n=%E6%95%B0%E5%AD%A6%E2%85%A1%E3%83%BB%E6%95%B0%E5%AD%A6%EF%BC%A2.pdf",
+      "note": "第1問〔2〕: 小数第2位を四捨五入して小数第1位まで求める"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学１（表紙・解答上の注意）",
+      "url": "https://web.archive.org/web/20190601/https://www.dnc.ac.jp/albums/abm.php?f=abm00033137.pdf&n=h30+suugaku1+00hyousi.pdf",
+      "note": "解答上の注意: 指定された桁数の一つ下の桁を四捨五入して答えなさい"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

@@ -2,12 +2,13 @@
   "id": "descriptive-statistics-coverage",
   "title_ja": "平均絶対偏差",
   "title_en": "Mean absolute deviation",
-  "jp": "中学校・高等学校の学習指導要領解説に平均絶対偏差は出てこない。散らばりは範囲・四分位範囲・分散・標準偏差で扱う。",
+  "jp": "学習指導要領解説（中学校・高等学校）に平均絶対偏差の名前は出てこない。中学校学習指導要領解説は散らばりの指標として範囲（中1）と四分位範囲（中2）を扱い、高等学校学習指導要領解説は数学I で分散・標準偏差を新たな指標とする。その指導の例として、平均値との差の絶対値の和をデータの総数で割った値なども生徒に考えさせ、比べた上で分散・標準偏差を取り上げることを挙げる。",
   "us": "IM 6–8 は Grade 6 で mean absolute deviation（MAD）を教える。",
-  "advice_ja": "MAD は平均からの距離の平均。米国の中学ではこれで散らばりを比べる。",
+  "advice_ja": "MAD は平均値からの距離の平均。IM 6–8 は Grade 6（8.12 Using Mean and MAD to Make Comparisons）と Grade 7（8.11 Comparing Groups）で 2 つの集団の散らばりを MAD で比べる。AP Statistics の CED と OpenStax Introductory Statistics には出てこず、散らばりは標準偏差と IQR で表す。",
   "category": "classroom-culture",
   "level": {
     "jp": [
+      "中1",
       "中2",
       "数I"
     ],
@@ -16,9 +17,10 @@
     ]
   },
   "term_refs": [
-    "covariance",
-    "quartile-deviation",
-    "mean-absolute-deviation"
+    "mean-absolute-deviation",
+    "range-of-data",
+    "interquartile-range",
+    "standard-deviation"
   ],
   "sources": [
     {
@@ -28,15 +30,32 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "記述なし"
+      "note": "平均絶対偏差は 0 件。数学I データの分析: 分散・標準偏差（指導の例に、平均値との差の絶対値の和をデータの総数で割った値を考えさせること）"
     },
     {
       "type": "reference",
       "title": "Illustrative Mathematics, IM 6–8 Math",
       "url": "https://im.kendallhunt.com/MS/students/index.html",
-      "note": "Grade 6 8.11 Variability and MAD"
+      "note": "Grade 6 8.11 Variability and MAD、8.12 Using Mean and MAD to Make Comparisons、Grade 7 8.11 Comparing Groups"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "平均絶対偏差は 0 件。散らばりの指標は範囲（中1）・四分位範囲（中2）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "mean absolute deviation は 0 件"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Introductory Statistics 2e",
+      "note": "mean absolute deviation は 0 件（散らばりは standard deviation・IQR）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

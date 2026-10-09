@@ -2,8 +2,8 @@
   "id": "slant-height-vs-generatrix",
   "title_ja": "母線と slant height",
   "title_en": "Generatrix and slant height",
-  "jp": "日本語の「母線」は、動いて面をつくる線を指す（日本語版 Wikipedia「母線」: 母線 (数学)）。",
-  "us": "OpenStax Calculus Volume 1 は円錐台の側面の斜めの長さを slant height と呼び、長さ（l）として式に使う。",
+  "jp": "日本語版 Wikipedia「円錐」は、円錐の側面をつくる線分（展開図の扇形の半径）を母線と呼び、その長さを「母線の長さ」と言う。「面積」も円錐台の側面積を πa(R + r)（a = 母線の長さ）と書く。",
+  "us": "OpenStax Calculus Volume 1（6.4）は円錐台の側面の斜めの長さを slant height と呼び、長さ（l）として式に使う。IM Grade 8 は角錐の側面の三角形の高さも slant height と呼ぶ。",
   "advice_ja": "slant height は線ではなく長さ。「母線の長さ」と訳す。",
   "category": "terminology",
   "level": {
@@ -11,8 +11,9 @@
       "中1"
     ],
     "us": [
+      "Pre-Algebra",
       "Geometry",
-      "Calculus II"
+      "Calculus I"
     ]
   },
   "term_refs": [
@@ -24,16 +25,28 @@
     },
     {
       "type": "reference",
-      "title": "日本語版 Wikipedia「母線」",
-      "url": "https://ja.wikipedia.org/wiki/%E6%AF%8D%E7%B7%9A",
-      "note": "母線 (数学)"
+      "title": "日本語版 Wikipedia「円錐」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%86%86%E9%8C%90",
+      "note": "母線（展開図の扇形の半径となる線分）、母線の長さ"
     },
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1",
-      "note": "slant height of the frustum"
+      "note": "6.4 Arc Length of a Curve and Surface Area: slant height of the frustum（l）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「面積」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%9D%A2%E7%A9%8D",
+      "note": "円錐台の側面積 πa(R + r)、a は母線の長さ"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 8)",
+      "url": "https://im.kendallhunt.com/MS/students/3/index.html",
+      "note": "Unit 8 の練習問題: the slant height ℓ of the triangular face of the pyramid"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

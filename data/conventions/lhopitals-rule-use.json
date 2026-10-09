@@ -1,10 +1,10 @@
 {
   "id": "lhopitals-rule-use",
   "title_ja": "ロピタルの定理",
-  "title_en": "L'Hospital's Rule",
-  "jp": "数学III の内容にロピタルの定理はない。高等学校学習指導要領解説では、数学III の課題学習の例（極限の求め方を文献で調べる）に出てくるだけ。",
+  "title_en": "L'Hôpital's Rule",
+  "jp": "高等学校学習指導要領解説は、数学III の内容にロピタルの定理を挙げず、課題学習の例〈微分法〉で lim_{x→+0} x log x の証明方法を文献で調べる過程で「ロピタルの定理」も調べる、と書くだけ。",
   "us": "AP Calculus の CED は topic 4.7 で L’Hospital’s Rule を扱う。",
-  "advice_ja": "AP Calculus では 0/0・∞/∞ の極限にロピタルの定理を使ってよい。使うときは条件（0/0 の形）を書く。",
+  "advice_ja": "AP Calculus の CED（topic 4.7）は 0/0・∞/∞ の不定形の極限にロピタルの定理（L’Hospital’s Rule）を使ってよいとする。使う前に lim f(x) = 0、lim g(x) = 0（またはどちらも ±∞）を書いて示し、lim f(x)/g(x) = 0/0 とは書かない（CED の Unit 4 の概要）。",
   "category": "classroom-culture",
   "level": {
     "jp": [
@@ -26,15 +26,15 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "数学III 課題学習の例: ロピタルの定理"
+      "note": "数学III 課題学習の例〈微分法〉: ロピタルの定理（内容には無い）"
     },
     {
       "type": "reference",
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
-      "note": "topic 4.7"
+      "note": "Topic 4.7（L’Hospital’s Rule）、Unit 4 の概要（L’Hospital’s Rule）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

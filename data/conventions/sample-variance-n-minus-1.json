@@ -2,13 +2,14 @@
   "id": "sample-variance-n-minus-1",
   "title_ja": "分散を n で割るか n − 1 で割るか",
   "title_en": "Dividing by n or n − 1",
-  "jp": "共通テストの数学Ⅰは分散を「偏差の 2 乗を合計してデータの個数で割った値」とする（令和5年度 本試験 数学Ⅰ 第3問の選択肢、正解 ②）。共分散も偏差の積の平均値と書く（令和6年度 本試験 数学Ⅰ 第4問）。",
-  "us": "OpenStax Introductory Statistics の標本標準偏差 s の式は n − 1 で割り、母集団の標準偏差 σ の式は N で割る（Measures of the Spread of the Data）。",
-  "advice_ja": "米国の統計の授業で sample variance・s と言えば n − 1 で割る。数Ⅰの分散（n で割る）は population variance の式と同じ形。",
+  "jp": "共通テストの数学Ⅰは分散を、偏差の 2 乗を合計してデータの個数（市の数）で割った値とする（令和5年度 本試験 数学Ⅰ 第3問の選択肢、正解 ②）。共分散も偏差の積の平均値と書く（令和6年度 本試験 数学Ⅰ 第4問）。数学B の統計的な推測でも、共通テスト 令和6年度 本試験 数学Ⅱ・数学Ｂ 第3問は「標本の標準偏差」S を偏差の 2 乗の和を n で割った値の平方根として示す。",
+  "us": "OpenStax Introductory Statistics（2.7 Measures of the Spread of the Data）の標本標準偏差 s の式は n − 1 で割り、母集団の標準偏差 σ の式は N で割る。AP Statistics の CED（topic 1.7）も s を n − 1 で割る式で示し、s² を sample variance と呼ぶ。",
+  "advice_ja": "OpenStax Introductory Statistics と AP Statistics の CED では、sample variance（s²）と s は n − 1 で割る。数Ⅰの分散（n で割る）は population variance の式と同じ形。数学B の「標本の標準偏差」も n で割るので、sample standard deviation（n − 1 で割る s）とは式が違う。",
   "category": "terminology",
   "level": {
     "jp": [
-      "数I"
+      "数I",
+      "数B"
     ],
     "us": [
       "Intro Statistics",
@@ -44,11 +45,23 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e",
-      "note": "Measures of the Spread of the Data: s の式は n − 1、σ の式は N"
+      "note": "2.7 Measures of the Spread of the Data: s の式は n − 1、σ の式は N"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 1.7（sample standard deviation、sample variance）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和6年度 大学入学共通テスト 本試験 数学Ⅱ・数学Ｂ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=666&f=abm00004690.pdf&n=2024_or_21_sugaku2B.pdf",
+      "note": "第3問: 標本の標準偏差 S は 1/n で割る式"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-27",
+  "updated": "2026-10-09",
   "related": [
     "s-sample-sd"
   ]

@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本語の「球」は中身の詰まった立体を指し、その表面を「球面」と言う。英語の sphere は本来は表面（中心から等しい距離にある点の集まり）を指すが、体積・表面積も the volume of a sphere ／ the surface area of a sphere と言い、立体の意味でも sphere を使う。中身まで含むことをはっきり言うときは ball（solid sphere）。",
+  "mapping_note": "中学校学習指導要領解説は球を柱体・錐体と並ぶ立体として扱い、日本語版 Wikipedia「球」は数学の球を「球体（ball）または球面（sphere）」と書く。IM Geometry（5.2）・CK-12 Geometry（9.5）・OpenStax Calculus Volume 3（2.2）は sphere を中心から等しい距離にある点の集まり（表面）と定義するが、the volume of a sphere ／ the surface area of a sphere とも言い、CK-12 Geometry 9.2 は sphere を a round, three-dimensional solid と書く。",
   "domains": [
     "geometry"
   ],
@@ -46,7 +46,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語の sphere は表面（球面）を指し、中身の詰まった球は ball とも言う。日本語は中身を含むほうが「球」、表面が「球面」。",
+    "IM Geometry・CK-12 Geometry・OpenStax Calculus Volume 3 の定義の sphere は表面（日本語の球面）。中身を含む立体（日本語の球）も sphere と呼ぶ（the volume of a sphere）。",
     "平面で中心から等しい距離にある点の集まりは circle（円。エントリ circle）。空間なら sphere。",
     "球を半分にした立体は hemisphere（半球）。"
   ],
@@ -60,7 +60,32 @@
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 3"
+      "title": "OpenStax Calculus Volume 3",
+      "note": "2.2 Vectors in Three Dimensions: A sphere is the set of all points in space equidistant from a fixed point"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "5.2 Slicing Solids: sphere（the set of points … the same distance from some center）"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "9.5 Volume: sphere（set of all points in space equidistant from a center point）、Volume of a Sphere／9.2: a round, three-dimensional solid"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「球」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%90%83",
+      "note": "球体（ball）または球面（sphere）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第1学年 B 図形: 柱体，錐体及び球の表面積と体積"
     }
   ],
   "confidence": "verified",
@@ -69,7 +94,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "sphere": 191

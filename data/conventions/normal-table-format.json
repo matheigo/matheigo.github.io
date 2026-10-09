@@ -2,9 +2,9 @@
   "id": "normal-table-format",
   "title_ja": "正規分布表の形",
   "title_en": "Standard normal table format",
-  "jp": "日本語版 Wikipedia「正規分布」の標準正規分布表は P(0 ≦ X ≦ z) の値をまとめた形。",
-  "us": "OpenStax Introductory Statistics は累積分布（CDF）が z より左の面積（area to the left）を与えるとして扱う（29 回）。",
-  "advice_ja": "表を使うときは、0 から z までの面積か z より左の面積かを確かめる（差は 0.5）。",
+  "jp": "共通テスト（令和7年度 本試験 数学Ⅱ，数学Ｂ，数学Ｃ）の正規分布表は、標準正規分布の 0 から z₀ までの面積 P(0 ≤ Z ≤ z₀) を z₀ ≥ 0 についてまとめる（日本語版 Wikipedia「正規分布」の表も同じ形）。",
+  "us": "AP Statistics の CED の表（Table A: Standard Normal Probabilities）は z より下の確率（the probability lying below z）を負の z も含めて載せる。OpenStax Introductory Statistics 6.2 も、正規分布表・電卓が P(X < x) を与えるとし、例で z-score より左の面積（area to the left）の表を使う。",
+  "advice_ja": "表を使うときは、0 から z までの面積か z より左の面積かを確かめる（z が正なら、左の面積は 0 から z までの面積に 0.5 を足した値）。",
   "category": "notation",
   "level": {
     "jp": [
@@ -31,9 +31,21 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e",
-      "note": "area to the left（29 件）"
+      "note": "6.2 Using the Normal Distribution（area to the left of the z-score）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和7年度 大学入学共通テスト 本試験 数学Ⅱ，数学Ｂ，数学Ｃ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=771&f=abm00005945.pdf&n=2025_op_30_sugaku2BC.pdf",
+      "note": "正規分布表（31 ページ）: 標準正規分布の分布曲線における灰色部分の面積、z₀ = 0.00 で 0.0000"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Tables for AP Statistics, Table A: Standard Normal Probabilities（the probability lying below z）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

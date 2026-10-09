@@ -2,12 +2,13 @@
   "id": "universal-set-and-sample-space",
   "title_ja": "全体集合と標本空間の文字",
   "title_en": "Universal set and sample space",
-  "jp": "全体集合を U で表す（日本語版 Wikipedia「差集合」: 全体集合 U）。",
-  "us": "Levin は全体集合を universe と呼び、OpenStax Introductory Statistics は確率の標本空間（sample space）を S で表す。",
-  "advice_ja": "確率の問題では S が全事象（標本空間）。",
+  "jp": "高等学校学習指導要領解説は、数学A の確率の性質で全事象を U と書く（P(U) = 1）。日本語版 Wikipedia「標本空間」も、全事象の意味では U で表すことも多いと書く。集合の全体も U で、共通テストの数学Ⅰは「全体集合 U を…とする」と書く（令和8年度 本試験 数学Ⅰ，数学Ａ 第1問 ほか）。なお同じ解説の数学B（確率分布）は標本空間を S と書く。",
+  "us": "OpenStax Introductory Statistics（3.1 Terminology）は標本空間（sample space）を大文字の S で表す。AP Statistics の CED・IM は sample space に文字を置かない。集合の全体は Levin（5.1 Sets）が universe と呼び、日本と同じく 𝒰 で書く。",
+  "advice_ja": "英語の確率の教科書（OpenStax Introductory Statistics）が S と書いたら、数A の全事象 U と同じもの（sample space）。集合の全体は英語でも U（Levin の 𝒰）でよいが、呼び方は universal set より universe（the universe 𝒰）。",
   "category": "letters",
   "level": {
     "jp": [
+      "数I",
       "数A"
     ],
     "us": [
@@ -17,7 +18,8 @@
   },
   "term_refs": [
     "probability",
-    "universal-set"
+    "universal-set",
+    "sample-space"
   ],
   "sources": [
     {
@@ -33,14 +35,44 @@
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "universe"
+      "note": "5.1 Sets: universe 𝒰"
     },
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e",
-      "note": "sample space S"
+      "note": "3.1 Terminology: The uppercase letter S is used to denote the sample space"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A 場合の数と確率: 全事象 U の確率 P(U) = 1。数学B 確率分布: 標本空間 S"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「標本空間」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%A8%99%E6%9C%AC%E7%A9%BA%E9%96%93",
+      "note": "ふつう Ω、全事象の意味では U"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和8年度 大学入学共通テスト 本試験 数学Ⅰ，数学Ａ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=2144&f=abm00017544.pdf&n=2026_ol_16_sugaku1A.pdf",
+      "note": "第1問: 全体集合 U"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "sample space に文字を置かない"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "sample space に文字を置かない"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

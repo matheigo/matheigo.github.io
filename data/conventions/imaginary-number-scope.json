@@ -3,8 +3,8 @@
   "title_ja": "虚数の範囲",
   "title_en": "Imaginary numbers",
   "jp": "日本語版 Wikipedia「虚数」は、虚数を「実数でない複素数」と定義する。",
-  "us": "OpenStax Algebra and Trigonometry は負の数の平方根を imaginary number と呼び、i を √−1 と定義する。実数でない解は nonreal とも書く。",
-  "advice_ja": "虚数解は nonreal solutions か complex solutions と言う。imaginary number は bi の形だけを指すことがある。",
+  "us": "OpenStax Algebra and Trigonometry（2.4）は負の数の平方根を imaginary number と呼んで i を √−1 と定義し、複素数を実数と imaginary number の和（a + bi）とする。IM Algebra 2（3.10 の用語集）も imaginary number を bi と書ける数とする。一方 OpenStax Intermediate Algebra（8.8）は b ≠ 0 の a + bi を imaginary number と呼ぶ。実数でない解は、IM Algebra 2（3.17・3.19）が non-real solutions、OpenStax Precalculus（3.1）が nonreal solutions と書き、Algebra and Trigonometry（5.5）は complex solutions (real and non-real) と実数解も complex solutions に含める。",
+  "advice_ja": "虚数解をはっきり言うなら non-real solutions（OpenStax Precalculus の綴りは nonreal）。complex solutions も使うが、OpenStax Algebra and Trigonometry（5.5）のように実数解を含めることがある。「虚数」を imaginary number と言うと、IM Algebra 2 と OpenStax Algebra and Trigonometry の意味では bi の形の数になるので、−1 + 2i のような数は a non-real complex number と言う。",
   "category": "terminology",
   "level": {
     "jp": [
@@ -32,9 +32,25 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "imaginary number、nonreal"
+      "note": "2.4 Complex Numbers: imaginary number（負の数の平方根）、pure imaginary number／5.5 Zeros of Polynomial Functions: complex solutions (real and non-real)"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 3.10（glossary: imaginary number = bi）・3.17・3.19（non-real solutions）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "8.8 Use the Complex Number System: b ≠ 0 の a + bi は imaginary number"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "3.1 Complex Numbers: real and nonreal solutions"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }
