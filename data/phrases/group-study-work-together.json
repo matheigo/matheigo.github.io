@@ -2,10 +2,15 @@
   "id": "group-study-work-together",
   "situation": "group-study",
   "intent": "一緒に勉強しよう（課題をやろう）と誘う",
-  "en": "Do you want to work on the problem set together?",
+  "en": "Do you want to work on the homework together?",
   "ja": "一緒に課題やらない？",
   "register": "casual",
   "variants": [
+    {
+      "en": "Do you want to work on the problem set together?",
+      "register": "casual",
+      "note": "problem set は大学でよく言う。"
+    },
     {
       "en": "Want to study together for the midterm?",
       "register": "casual"
@@ -20,21 +25,16 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。0 件）。人間レビューへ。",
-      "raised": "2026-10-07"
-    },
-    {
-      "code": "audit-human",
-      "note": "Phase 5 監査（2026-10-07）で判断がつかない: MSE の study together は文章題の友だち・2 つの分野を並べて学ぶ意味（MSE_SKIP に）。誘う形（want to study together ほか）は MSE 0、MICASE の誘う文は 2 件で 3 件に届かない。人間に決めてほしいこと: en（一緒に勉強・課題をやろうと誘う言い方。今は Do you want to work on the problem set together?）。人間レビューへ。",
-      "raised": "2026-10-07"
+      "code": "corpus-human-settled",
+      "note": "en は人間が決めた（Do you want to work on the homework together?。variants に Do you want to work on the problem set together?（problem set は大学でよく言う）。ユーザーの決定 3（監査 13 の前。監査 12 の人間レビュー行き））。一緒にやろうと誘う言い方は MICASE の学生の発話にも Math Stack Exchange の質問にも 3 件に届かない（DECISIONS）。register は主張しない。",
+      "raised": "2026-10-08"
     }
   ],
   "reviewed": {

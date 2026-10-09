@@ -102,6 +102,8 @@ export const MSE_SKIP: Record<string, string> = {
   "studying together": "studying two subjects side by side, not inviting someone",
   "office hours today": "going to (or missing) office hours (a mention), not asking whether they are held",
   "right channel": "a communication or audio channel (information theory, stereo), not a chat channel",
+  // Phase 5 監査 13, the user's decision 3, added after the counts and the search excerpts were seen (DECISIONS):
+  "another piece of paper": "a slip in a puzzle (writing a number down, drawing a name), not asking for scratch paper",
 };
 
 /** The exact phrases a key part is searched as: one per alternative, "!w" dropped, "…" and MSE_SKIP not searched. */

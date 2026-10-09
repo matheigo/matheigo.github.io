@@ -9,6 +9,10 @@
     {
       "en": "Can I get some more paper?",
       "register": "neutral"
+    },
+    {
+      "en": "Can I get another piece of scratch paper?",
+      "register": "neutral"
     }
   ],
   "tags": [
@@ -21,26 +25,22 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "evidence": {
     "spoken": {
-      "more paper": 1
+      "more paper": 1,
+      "another piece of scratch paper | another piece of paper": 1
     },
     "sources": [
       "micase"
     ],
-    "counted": "2026-10-07"
+    "counted": "2026-10-08"
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。more paper 1 件）。人間レビューへ。",
-      "raised": "2026-10-07"
-    },
-    {
-      "code": "audit-human",
-      "note": "Phase 5 監査（2026-10-07）で判断がつかない: 要の部分 scratch paper は物の名前で、MICASE の 1 件は紙を足す平叙文。依頼の形（another sheet of scratch paper ほか）に絞ると MICASE 0 ・Math Stack Exchange 0（4 件検索。more paper は 2）で 3 件に届かない。人間に決めてほしいこと: en（試験中に計算用紙をもう 1 枚もらうときの言い方。今は Could I have another sheet of scratch paper?）。人間レビューへ。",
-      "raised": "2026-10-07"
+      "code": "corpus-human-settled",
+      "note": "en は人間が決めた（Could I have another sheet of scratch paper? のまま。variants に Can I get another piece of scratch paper?。ユーザーの決定 3（監査 13 の前。監査 12 の人間レビュー行き））。計算用紙を頼む言い方は MICASE の学生の発話にも Math Stack Exchange の質問にも 3 件に届かない（DECISIONS）。register は主張しない。",
+      "raised": "2026-10-08"
     }
   ],
   "reviewed": {

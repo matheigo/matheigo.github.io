@@ -2,9 +2,18 @@
   "id": "exam-notes-allowed",
   "situation": "exam",
   "intent": "試験に持ち込めるものを伝える",
-  "en": "You can bring one page of notes, front and back.",
+  "en": "You can bring one sheet of notes, front and back.",
   "ja": "ノート 1 枚（両面）まで持ち込みできます。",
   "register": "neutral",
+  "variants": [
+    {
+      "en": "You're allowed a cheat sheet.",
+      "register": "casual"
+    }
+  ],
+  "notes": [
+    "crib sheet とも言う（MIT 6.042）。"
+  ],
   "tags": [
     "exam",
     "rules"
@@ -15,21 +24,16 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（講義のコーパスと MICASE の教員の発話で数えた。0 件）。人間レビューへ。",
-      "raised": "2026-10-07"
-    },
-    {
-      "code": "audit-human",
-      "note": "Phase 5 監査（2026-10-07）で判断がつかない: 要の部分 page of notes ほか 13 件はすべて演習の板の公式一覧（cheat sheet）・配った講義ノートで、試験に持ち込む文は 0。持ち込む形に絞ると 0 件で 3 件に届かない（MIT 6.042 の crib sheet 3 件は 1 本の講義）。反対の決まりの variant（closed-book）は外した。人間に決めてほしいこと: en（試験に持ち込めるもの（ノート 1 枚）を伝える監督・先生の言い方。今は You can bring one page of notes, front and back.）。人間レビューへ。",
-      "raised": "2026-10-07"
+      "code": "corpus-human-settled",
+      "note": "en は人間が決めた（You can bring one sheet of notes, front and back.。variants に You're allowed a cheat sheet.。ユーザーの決定 3（監査 13 の前。監査 12 の人間レビュー行き））。試験に持ち込むものを伝える言い方は講義のコーパスと MICASE の教員の発話に 3 件に届かない（DECISIONS）。register は主張しない。",
+      "raised": "2026-10-08"
     }
   ],
   "reviewed": {

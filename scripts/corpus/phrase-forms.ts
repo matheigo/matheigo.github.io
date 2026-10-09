@@ -900,7 +900,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Show your work — you can get partial credit.": "partial credit",
   },
   "exam-notes-allowed": {
-    "You can bring one page of notes, front and back.": "bring … page of note | bring … sheet of note | bring … index card | bring … cheat sheet | bring … note sheet",
+    "You can bring one sheet of notes, front and back.": "bring … page of note | bring … sheet of note | bring … index card | bring … cheat sheet | bring … note sheet",
+    "You're allowed a cheat sheet.": "allowed a cheat sheet | allowed one cheat sheet",
   },
   "exam-time-remaining": {
     "You have 10 minutes left.": "minutes left",
@@ -917,6 +918,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   "exam-ask-scratch-paper": {
     "Could I have another sheet of scratch paper?": "another sheet of scratch paper | more scratch paper | extra scratch paper | another sheet of paper",
     "Can I get some more paper?": "more paper",
+    "Can I get another piece of scratch paper?": "another piece of scratch paper | another piece of paper",
   },
   "exam-ask-can-i-write-on-the-back": {
     "Can I write on the back?": "write on the back | use the back",
@@ -973,6 +975,7 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   "email-exam-conflict": {
     "I have a conflict with the final exam time. Would it be possible to take it at a different time?": "a conflict with | have a conflict | conflict with my exam | conflict with my final | conflict with the final exam",
     "Could I take the exam at another time?": "at a different time | at another time",
+    "I have two finals scheduled at the same time.": "two finals scheduled at the same time | two exams scheduled at the same time | two finals at the same time | two exams at the same time",
   },
   "email-prerequisite": {
     "I took calculus in Japan (Math III). Would that satisfy the prerequisite for MATH 221?": "prerequisite for | the prerequisite !of",
@@ -993,7 +996,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Sincerely, Taro Yamada": "sincerely",
   },
   "group-study-work-together": {
-    "Do you want to work on the problem set together?": "work on … together",
+    "Do you want to work on the homework together?": "work on homework together | work on … homework together",
+    "Do you want to work on the problem set together?": "work on … problem set together",
     "Want to study together for the midterm?": "study together | studying together | want to study together | wanna study together | study together for the",
   },
   // at the library named a place; the students' own question is do you wanna meet … (Phase 5 監査 12)
@@ -1015,7 +1019,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   },
   "group-study-split-them-up": {
     "Let's each do a few and then explain them to each other.": "explain them to each other | explain it to each other",
-    "Should we split them up?": "split them up | divide them up | split up the problems | divide up the problems | split the problems",
+    "Should we split them up?": "split them up | divide them up",
+    "Should we split up the problems?": "split up the problems | divide up the problems | split the problems",
   },
   "group-study-write-up-our-own": {
     "We can talk about the problems, but we have to write up our own solutions.": "write up our own | write up your own | write our own solutions | write your own solutions | write up your own solutions",
