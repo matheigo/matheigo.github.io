@@ -628,7 +628,7 @@
       "collection": "terms",
       "id": "condition",
       "field": "pitfalls[0]",
-      "sentence": "センター試験（平成 30 年度 数学I・A）は「実数 x に関する次の条件 p, q, r, s を考える」、共通テスト（令和 3 年度 数学I・A）は「条件 p, q を次のように定める」と、変数を含み真偽が変わる文を「条件」と呼ぶ。",
+      "sentence": "センター試験（平成 30 年度 数学I・A）は「実数 x に関する次の条件 p, q, r, s を考える」、共通テスト（令和 3 年度 第1日程 数学I）は「条件 p, q を次のように定める」と、変数を含み真偽が変わる文を「条件」と呼ぶ。",
       "g1": false
     },
     {
@@ -649,7 +649,14 @@
       "collection": "terms",
       "id": "conditional-statement",
       "field": "mapping_note",
-      "sentence": "高等学校学習指導要領解説（数学I）は命題「p → q」と書き、この形の命題そのものに名前を付けない（含意は論理学の語）。",
+      "sentence": "高等学校学習指導要領解説（数学I）は命題を「x > 2 ならば x > 0 である。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "conditional-statement",
+      "field": "mapping_note",
+      "sentence": "」のように「ならば」で書き（記号の「p → q」は理数に関する学科の科目「理数数学I」の発展・拡充の内容に出てくる）、この形の命題そのものに名前を付けない（含意は論理学の語）。",
       "g1": false
     },
     {
@@ -2434,7 +2441,14 @@
       "collection": "terms",
       "id": "logical-connective",
       "field": "pitfalls[0]",
-      "sentence": "高等学校学習指導要領解説（数学I 集合と命題）は必要条件・十分条件・対偶や簡単な命題の証明を扱い、集合の記号として a ∈ A、A ∩ B、A ∪ B、A ⊂ B、Ā を挙げ、発展の内容として真理値表と「p → q」の否定「p ∧ (¬q)」に触れるが、「論理結合子」の名前は出てこない。",
+      "sentence": "高等学校学習指導要領解説（数学I 集合と命題）は必要条件・十分条件・対偶や簡単な命題の証明を扱い、集合の記号として a ∈ A、A ∩ B、A ∪ B、A ⊂ B、Ā を挙げるが、「論理結合子」の名前は出てこない。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "logical-connective",
+      "field": "pitfalls[0]",
+      "sentence": "真理値表と「p → q」の否定「p ∧ (¬q)」は、理数に関する学科の科目「理数数学I」の発展・拡充の内容に挙がる（数学I の節には無い）。",
       "g1": false
     },
     {
@@ -2539,7 +2553,7 @@
       "collection": "terms",
       "id": "negation",
       "field": "pitfalls[0]",
-      "sentence": "共通テスト（平成 27 年度 数学I 第1問）は条件 p の否定を p̄ と上線で書き、高等学校学習指導要領解説（数学I）は発展の内容として ¬（p ∧ (¬q)）に触れる。",
+      "sentence": "共通テスト（平成 27 年度 数学I 第1問）は条件 p の否定を p̄ と上線で書き、記号 ¬ は、高等学校学習指導要領解説では理数に関する学科の科目「理数数学I」の発展・拡充の内容（真理値表を用いて、命題「p → q」の否定が「p ∧ (¬q)」であること）にだけ出てくる。",
       "g1": false
     },
     {
@@ -3015,7 +3029,7 @@
       "collection": "terms",
       "id": "proposition",
       "field": "pitfalls[1]",
-      "sentence": "「x > 3」のように変数の値で真偽が変わるものは、センター試験（平成 30 年度 数学I・A）・共通テスト（令和 3 年度 数学I・A）は「実数 x に関する次の条件 p, q」のように「条件」と呼んで命題と区別する（エントリ condition）。",
+      "sentence": "「x > 3」のように変数の値で真偽が変わるものは、センター試験（平成 30 年度 数学I・A）は「実数 x に関する次の条件 p, q, r, s」、共通テスト（令和 3 年度 第1日程 数学I）は「条件 p, q を次のように定める」と「条件」と呼んで命題と区別する（エントリ condition）。",
       "g1": false
     },
     {
@@ -3358,7 +3372,7 @@
       "collection": "terms",
       "id": "right-hand-limit",
       "field": "pitfalls[0]",
-      "sentence": "学習指導要領解説（数学III）は lim_{x→+0} と書き、日本語版 Wikipedia「片側極限」は lim_{x→a+0} と書く。",
+      "sentence": "学習指導要領解説（数学III）は lim_{x→+0} と書き、日本語版 Wikipedia「片側極限」は x → a⁺ などと並べて x → a + 0 の書き方を挙げる。",
       "g1": false
     },
     {
@@ -3797,6 +3811,13 @@
     },
     {
       "collection": "terms",
+      "id": "solution-pair",
+      "field": "pitfalls[2]",
+      "sentence": "センター試験の問題文は不定方程式の解を「x = ア，y = イウ」と分けて書き、組で答えるときは「(A, B) = (49 × ク，23 × ケコ)」と書く（平成31年度 本試験 数学Ⅰ・数学Ａ 第4問）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "solution-set",
       "field": "pitfalls[0]",
       "sentence": "区間の記法 (2, 3)、[1, ∞) は、高等学校学習指導要領解説では数学III の積分に閉区間 [a, b] が出てくる程度で、共通テストの問題文は 2 < x < 3、x ≧ 1 と不等式で書く（慣習差 interval-notation-vs-inequalities）。",
@@ -3960,7 +3981,7 @@
       "collection": "terms",
       "id": "stretch-vertically",
       "field": "mapping_note",
-      "sentence": "日本語の「縦に伸縮する」「y 軸方向に拡大・縮小する」は両方を指す（高等学校学習指導要領解説（数学III 式と曲線）は、中心が原点で半径 a の円を「y 軸方向に b/a 倍して」楕円の標準形を導く、と拡大も縮小も一つの言い方で書く）。",
+      "sentence": "日本語の「縦に伸縮する」「y 軸方向に拡大・縮小する」は両方を指す（高等学校学習指導要領解説（数学C 平面上の曲線と複素数平面）は、中心が原点で半径 a の円を「y 軸方向に b/a 倍して」楕円の標準形を導く、と拡大も縮小も一つの言い方で書く）。",
       "g1": false
     },
     {
@@ -4009,7 +4030,7 @@
       "collection": "terms",
       "id": "summation-notation",
       "field": "pitfalls[0]",
-      "sentence": "センター試験（数学Ⅱ・数学Ｂ）の数列の問題は Σ_{k=1}^{n} のように添字に k を使う（慣習差 summation-index-letter）。",
+      "sentence": "センター試験（数学Ⅱ・数学Ｂ）の数列の問題は Σ_{k=1}^{n} のように添字に k を使い、OpenStax Precalculus（11.4 Series and Their Notations）も k を使う。",
       "g1": false
     },
     {
@@ -4030,7 +4051,7 @@
       "collection": "terms",
       "id": "surface-area-of-revolution",
       "field": "pitfalls[0]",
-      "sentence": "学習指導要領解説（数学III）は回転体の体積を扱うが、回転面の面積は出てこない。",
+      "sentence": "学習指導要領解説（数学III）は回転体の体積の公式を扱うが、回転面の面積の公式は出てこない（課題学習〈積分法〉の例に、球の表面積を定積分を利用して導くことが挙がる）。",
       "g1": false
     },
     {

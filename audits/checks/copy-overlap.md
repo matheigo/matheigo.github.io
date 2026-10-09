@@ -7,9 +7,9 @@
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15691
+- 調べた本文の欄: 15658
 - 英語のソース: 3884 ファイル ／ 日本語のソース: 532 ファイル
-- 一致した箇所: **331**（288 項目）
+- 一致した箇所: **331**（289 項目）
 - 見出しの句を含む一致で除いたもの: 147 箇所（136 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
@@ -22,7 +22,7 @@
 | conventions | hensachi | us | en | 9 | 2 3 measures of the location of the data | 1 | openstax-introstats |
 | conventions | inverse-trig-functions | us | en | 9 | geometry 4 9 using trigonometric ratios to find angles | 1 | ref:im-9-12 |
 | conventions | mapping-rule-notation | jp | ja | 22 | 図形を一定の方向に一定の距離だけ移動すること | 1 | jp:kaisetsu-chu |
-| conventions | mapping-rule-notation | advice_ja | en | 8 | units to the right and 2 units down | 1 | openstax-calculus |
+| conventions | probability-and-or-notation | us | en | 8 | the addition rule p a or b p | 1 | openstax-introstats |
 | conventions | quadrant-roman-numerals | us | en | 9 | algebra 2 6 6 the pythagorean identity part 2 | 1 | ref:im-9-12 |
 | conventions | rounding-place | jp | ja | 25 | 指定された桁数の一つ下の桁を四捨五入して答えなさい | 4 | jp:exams/h30-hon-01, jp:exams/h30-hon-04, jp:exams/r3-dai1-01, jp:exams/r3-dai1-02 |
 | conventions | rounding-place | jp | ja | 22 | 小数第2位を四捨五入して小数第1位まで求める | 2 | jp:exams/h29-hon-03, jp:exams/h29-hon-04 |

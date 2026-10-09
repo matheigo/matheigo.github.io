@@ -6,7 +6,7 @@
 慣習差（conventions）は jp の欄そのものが日本側の主張で、生成のときに項目ごとに日本側の資料を出典に入れたので、ここには入れない（監査は慣習差の順で見る）。
 
 - phase4-report G-1 の正規表現（日本(の教科書|では|の高校|の授業|の答案|の中学|の入試|の数学|で)）に当たる文: **106 項目・109 文**
-- 広い正規表現（日本・数学 I〜C・中学・高校・学習指導要領・教科書・入試・共通テスト・センター試験）に当たる文: **485 項目・662 文**（主張でない文も混じる。監査の ⑦ で 1 文ずつ見る）
+- 広い正規表現（日本・数学 I〜C・中学・高校・学習指導要領・教科書・入試・共通テスト・センター試験）に当たる文: **486 項目・665 文**（主張でない文も混じる。監査の ⑦ で 1 文ずつ見る）
 
 | コレクション | id | 欄 | G-1 | 文 |
 |---|---|---|---|---|
@@ -99,10 +99,11 @@
 | terms | component-form | pitfalls[0] | ○ | 日本の教科書は丸かっこ。 |
 | terms | composite-figure | mapping_note | ○ | 日本の教科書は「いくつかの図形を組み合わせた図形」と説明することが多く、決まった名前を使わない。 |
 | terms | concavity | pitfalls[0] |  | 日本の「下に凸」は concave up、「上に凸」は concave down。 |
-| terms | condition | pitfalls[0] |  | センター試験（平成 30 年度 数学I・A）は「実数 x に関する次の条件 p, q, r, s を考える」、共通テスト（令和 3 年度 数学I・A）は「条件 p, q を次のように定める」と、変数を含み真偽が変わる文を「条件」と呼ぶ。 |
+| terms | condition | pitfalls[0] |  | センター試験（平成 30 年度 数学I・A）は「実数 x に関する次の条件 p, q, r, s を考える」、共通テスト（令和 3 年度 第1日程 数学I）は「条件 p, q を次のように定める」と、変数を含み真偽が変わる文を「条件」と呼ぶ。 |
 | terms | condition | pitfalls[0] |  | 高等学校学習指導要領解説（数学I）の「条件」は「命題の条件や結論」（仮定）の意味。 |
 | terms | conditional-probability | pitfalls[0] |  | 学習指導要領解説（数学A）は P_A(B) と書くが、AP Statistics の CED（topic 2.6）と OpenStax Introductory Statistics は P(B \| A) の形で書く。 |
-| terms | conditional-statement | mapping_note |  | 高等学校学習指導要領解説（数学I）は命題「p → q」と書き、この形の命題そのものに名前を付けない（含意は論理学の語）。 |
+| terms | conditional-statement | mapping_note |  | 高等学校学習指導要領解説（数学I）は命題を「x > 2 ならば x > 0 である。 |
+| terms | conditional-statement | mapping_note |  | 」のように「ならば」で書き（記号の「p → q」は理数に関する学科の科目「理数数学I」の発展・拡充の内容に出てくる）、この形の命題そのものに名前を付けない（含意は論理学の語）。 |
 | terms | conditional-statement | mapping_note |  | 見出しの「含意」は学習指導要領解説に無い（日本語版 Wikipedia「論理包含」「必要条件と十分条件」にはある）。 |
 | terms | conditions-for-a-parallelogram | mapping_note |  | 中学校学習指導要領解説（第 2 学年）は「平行四辺形になるための条件」を平行四辺形の性質と並べて挙げる（本エントリの定義の 5 つ）が、用例コーパスと参照にはそれらをまとめた名前が出てこず、「四角形が平行四辺形であることを示す」（prove that a quadrilateral is a parallelogram）のように、示すことを文で言う。 |
 | terms | conditions-that-determine-a-triangle | mapping_note |  | 高等学校学習指導要領解説（数学I）は正弦定理・余弦定理を三角形の決定条件と関連付けて理解すると書き、中学校学習指導要領解説（第 2 学年）は合同条件を三角形の決定条件を基に認めると書く。 |
@@ -357,7 +358,8 @@
 | terms | local-maximum | mapping_note |  | ja.alt の「相対最大値」は学習指導要領解説に無い、本プロジェクトの訳語（relative maximum の訳）。 |
 | terms | logarithm | pitfalls[1] |  | OpenStax Algebra and Trigonometry（6.3）と Intermediate Algebra（10.3）は、底を省いた log x を常用対数（底 10）、ln x を自然対数とする（学習指導要領解説には ln が出てこない）。 |
 | terms | logical-connective | mapping_note |  | 見出しの「論理結合子」は学習指導要領解説に無い（日本語版 Wikipedia「命題」にはある。langlink の「論理演算」は論理演算子と書く）。 |
-| terms | logical-connective | pitfalls[0] |  | 高等学校学習指導要領解説（数学I 集合と命題）は必要条件・十分条件・対偶や簡単な命題の証明を扱い、集合の記号として a ∈ A、A ∩ B、A ∪ B、A ⊂ B、Ā を挙げ、発展の内容として真理値表と「p → q」の否定「p ∧ (¬q)」に触れるが、「論理結合子」の名前は出てこない。 |
+| terms | logical-connective | pitfalls[0] |  | 高等学校学習指導要領解説（数学I 集合と命題）は必要条件・十分条件・対偶や簡単な命題の証明を扱い、集合の記号として a ∈ A、A ∩ B、A ∪ B、A ⊂ B、Ā を挙げるが、「論理結合子」の名前は出てこない。 |
+| terms | logical-connective | pitfalls[0] |  | 真理値表と「p → q」の否定「p ∧ (¬q)」は、理数に関する学科の科目「理数数学I」の発展・拡充の内容に挙がる（数学I の節には無い）。 |
 | terms | logistic-growth | mapping_note |  | 見出しの「ロジスティック増加」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | mean-absolute-deviation | pitfalls[0] | ○ | 日本の中学・高校では扱わず、散らばりは範囲・四分位範囲・分散・標準偏差（エントリ standard-deviation）で表す。 |
 | terms | midline | mapping_note |  | 見出しの「振動の中心線」は学習指導要領解説に無い、本プロジェクトの訳語。 |
@@ -372,7 +374,7 @@
 | terms | multiplicity | pitfalls[0] | ○ | 日本の高校では重解（エントリ double-root）までで、重複度という語は大学で使う。 |
 | terms | natural-logarithm | pitfalls[1] |  | OpenStax Algebra and Trigonometry は底を省いた log x を常用対数（底 10）と定める（学習指導要領解説には ln が出てこない）ので、英語の答案では自然対数に ln を使う。 |
 | terms | natural-number | mapping_note | ○ | 日本の自然数は 1, 2, 3, … で、0 を含まない（日本語版 Wikipedia「自然数」は、日本では高校の教育課程で 0 を入れないとする）。 |
-| terms | negation | pitfalls[0] |  | 共通テスト（平成 27 年度 数学I 第1問）は条件 p の否定を p̄ と上線で書き、高等学校学習指導要領解説（数学I）は発展の内容として ¬（p ∧ (¬q)）に触れる。 |
+| terms | negation | pitfalls[0] |  | 共通テスト（平成 27 年度 数学I 第1問）は条件 p の否定を p̄ と上線で書き、記号 ¬ は、高等学校学習指導要領解説では理数に関する学科の科目「理数数学I」の発展・拡充の内容（真理値表を用いて、命題「p → q」の否定が「p ∧ (¬q)」であること）にだけ出てくる。 |
 | terms | negative-correlation | en.variants[0].note |  | 話し言葉では negative association・negative correlation より多いが、すべて Khan Academy（AP Statistics と中学の講義）。 |
 | terms | negative-reciprocal | mapping_note |  | 見出しの「符号を変えた逆数」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | negative-reciprocal | mapping_note | ○ | 日本では垂直条件を「傾きの積が −1」（m₁m₂ = −1）と言い、この数に名前を付けない。 |
@@ -440,7 +442,7 @@
 | terms | probability | pitfalls[2] |  | 高等学校学習指導要領解説（数学A）は全事象を U で表す（P(U) = 1）が、上の式では標本空間を S とした（sample-space を参照）。 |
 | terms | projectile-motion | mapping_note |  | 見出しの「放物運動」は数学の学習指導要領解説には無い（高等学校学習指導要領解説の物理の項目「放物運動」と日本語版 Wikipedia「放物運動」にはある）。 |
 | terms | projectile-motion | mapping_note |  | 中学校学習指導要領解説（第 3 学年 関数 y = ax²）は、y = ax² で捉える事象の例に斜面をころがる物の運動・車の制動距離・噴水の水が作る形を挙げ、落下の式は挙げていない。 |
-| terms | proposition | pitfalls[1] |  | 「x > 3」のように変数の値で真偽が変わるものは、センター試験（平成 30 年度 数学I・A）・共通テスト（令和 3 年度 数学I・A）は「実数 x に関する次の条件 p, q」のように「条件」と呼んで命題と区別する（エントリ condition）。 |
+| terms | proposition | pitfalls[1] |  | 「x > 3」のように変数の値で真偽が変わるものは、センター試験（平成 30 年度 数学I・A）は「実数 x に関する次の条件 p, q, r, s」、共通テスト（令和 3 年度 第1日程 数学I）は「条件 p, q を次のように定める」と「条件」と呼んで命題と区別する（エントリ condition）。 |
 | terms | proposition | pitfalls[2] |  | 日本語版 Wikipedia「命題」は命題を真偽が確定した言明と定義し、高等学校学習指導要領解説（数学I 集合と命題）は命題の真偽と「条件や結論」を扱う。 |
 | terms | propositional-logic | pitfalls[1] |  | 数I「集合と命題」では否定を p̄ と上に線を引いて書き、「かつ」「または」は言葉で書く。 |
 | terms | pythagorean-identity | mapping_note |  | 見出しの「ピタゴラスの恒等式」は学習指導要領解説に無い、本プロジェクトの訳語。 |
@@ -489,7 +491,7 @@
 | terms | restricted-domain | mapping_note |  | 高等学校学習指導要領解説は同じ内容を「区間が制限された関数の最大値や最小値」（数学II 微分）、逆関数は「元の関数が 1 対 1 の対応であるとき」（数学III）と書く。 |
 | terms | riemann-sum | mapping_note |  | 区分求積法は、区間を n 等分して長方形の面積の和をつくり、その極限を定積分として求める手法の名前（学習指導要領解説も区分求積法の考えで定積分を導入する扱いに触れる）。 |
 | terms | riemann-sum | mapping_note |  | 日本の「lim (1/n)Σ f(k/n) を定積分で表せ」型の問題は、OpenStax Calculus Volume 1（5.2 The Definite Integral）では express the limits as integrals と指示される（AP の CED topic 6.3 は、リーマン和の極限を定積分として表すことを学習目標に挙げる）。 |
-| terms | right-hand-limit | pitfalls[0] |  | 学習指導要領解説（数学III）は lim_{x→+0} と書き、日本語版 Wikipedia「片側極限」は lim_{x→a+0} と書く。 |
+| terms | right-hand-limit | pitfalls[0] |  | 学習指導要領解説（数学III）は lim_{x→+0} と書き、日本語版 Wikipedia「片側極限」は x → a⁺ などと並べて x → a + 0 の書き方を挙げる。 |
 | terms | right-riemann-sum | mapping_note |  | 見出しの「右リーマン和」は学習指導要領解説に無い（日本語版 Wikipedia「リーマン和」にはある）。 |
 | terms | right-triangle-similarity | mapping_note |  | 見出しの「直角三角形の相似」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | right-triangle-similarity | mapping_note | ○ | 日本では直角三角形の直角の頂点から斜辺に垂線を引いてできる 3 つの三角形が相似であることを、定理の名前を付けずに使う。 |
@@ -552,6 +554,7 @@
 | terms | slope | pitfalls[0] |  | 中学校学習指導要領解説の y = ax + b の a に当たる。 |
 | terms | sohcahtoa | mapping_note |  | 見出しの「SOHCAHTOA」は英語の語呂合わせをそのまま使う（学習指導要領解説に無い。日本語版 Wikipedia「三角関数の暗記方法」は英語圏の覚え方として SOH-CAH-TOA を挙げる）。 |
 | terms | sohcahtoa | mapping_note | ○ | 日本では sin・cos・tan の定義を筆記体の s・c・t の形で覚える方法があり、この語呂合わせは使わない。 |
+| terms | solution-pair | pitfalls[2] |  | センター試験の問題文は不定方程式の解を「x = ア，y = イウ」と分けて書き、組で答えるときは「(A, B) = (49 × ク，23 × ケコ)」と書く（平成31年度 本試験 数学Ⅰ・数学Ａ 第4問）。 |
 | terms | solution-set | pitfalls[0] |  | 区間の記法 (2, 3)、[1, ∞) は、高等学校学習指導要領解説では数学III の積分に閉区間 [a, b] が出てくる程度で、共通テストの問題文は 2 < x < 3、x ≧ 1 と不等式で書く（慣習差 interval-notation-vs-inequalities）。 |
 | terms | solve-the-right-triangle | mapping_note |  | 見出しの「三角比で辺を求める」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | solving-triangles | pitfalls[0] |  | 米国の教科書は正弦定理を law of sines、余弦定理を law of cosines と呼ぶ（OpenStax Algebra and Trigonometry）。 |
@@ -575,17 +578,17 @@
 | terms | standard-unit-vectors | pitfalls[0] | ○ | 日本の教科書は e₁, e₂（空間では e₃）、米国の教科書は i, j, k と書く（OpenStax Calculus Volume 3）。 |
 | terms | statistical-variable | mapping_note |  | 高等学校学習指導要領解説（数学I データの分析）はデータの項目（身長・点数など）を変量と呼び（共通テストも「英語の得点を変量 x」のように書く）、式の文字の「変数」とは言葉を分ける。 |
 | terms | step-function | pitfalls[0] |  | 最大整数関数 ⌊x⌋（日本のガウス記号、エントリ floor-function）は step function の代表。 |
-| terms | stretch-vertically | mapping_note |  | 日本語の「縦に伸縮する」「y 軸方向に拡大・縮小する」は両方を指す（高等学校学習指導要領解説（数学III 式と曲線）は、中心が原点で半径 a の円を「y 軸方向に b/a 倍して」楕円の標準形を導く、と拡大も縮小も一つの言い方で書く）。 |
+| terms | stretch-vertically | mapping_note |  | 日本語の「縦に伸縮する」「y 軸方向に拡大・縮小する」は両方を指す（高等学校学習指導要領解説（数学C 平面上の曲線と複素数平面）は、中心が原点で半径 a の円を「y 軸方向に b/a 倍して」楕円の標準形を導く、と拡大も縮小も一つの言い方で書く）。 |
 | terms | strong-induction | pitfalls[0] |  | 数B の「n = k, k + 1 のとき成り立つと仮定して n = k + 2 を示す」形の帰納法は、strong induction の特別な場合にあたる。 |
 | terms | structural-induction | pitfalls[1] | ○ | 日本の高校数学では扱わず、大学の離散数学や情報科学で出てくる。 |
 | terms | subset | pitfalls[1] |  | センター試験（平成26年度 数学Ⅰ・数学Ａ）は「集合 X が集合 Y の部分集合であるとき X ⊂ Y と表す」と定め、A = B の場合も ⊂ で書く。 |
 | terms | substitution-property | mapping_note |  | 見出しの「代入の性質」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | substitution-property | mapping_note | ○ | 日本では「等しいものを代入してよい」を名前のある性質として挙げない。 |
 | terms | substitution-property | pitfalls[1] |  | 日本の証明では「∠1 = ∠3 を代入して」と書くだけで、理由に名前を付けない。 |
-| terms | summation-notation | pitfalls[0] |  | センター試験（数学Ⅱ・数学Ｂ）の数列の問題は Σ_{k=1}^{n} のように添字に k を使う（慣習差 summation-index-letter）。 |
+| terms | summation-notation | pitfalls[0] |  | センター試験（数学Ⅱ・数学Ｂ）の数列の問題は Σ_{k=1}^{n} のように添字に k を使い、OpenStax Precalculus（11.4 Series and Their Notations）も k を使う。 |
 | terms | supplementary-angle-identity | mapping_note |  | 高等学校学習指導要領解説（数学I）は cos A = −cos(180° − A) の形で公式を示すだけで名前を付けない。 |
 | terms | supplementary-angle-identity | mapping_note |  | 見出しの「180° − θ の三角比」は学習指導要領解説に無い（日本語版 Wikipedia「三角関数」は補角公式）。 |
-| terms | surface-area-of-revolution | pitfalls[0] |  | 学習指導要領解説（数学III）は回転体の体積を扱うが、回転面の面積は出てこない。 |
+| terms | surface-area-of-revolution | pitfalls[0] |  | 学習指導要領解説（数学III）は回転体の体積の公式を扱うが、回転面の面積の公式は出てこない（課題学習〈積分法〉の例に、球の表面積を定積分を利用して導くことが挙がる）。 |
 | terms | synthetic-division | pitfalls[0] |  | 学習指導要領解説（数学II）には組立除法が出てこない（日本語版 Wikipedia「数学 (教科)」は数学II の高次方程式に挙げる）。 |
 | terms | system-of-inequalities | mapping_note |  | and でつないだもの（両方を満たす x、つまり共通範囲を答える）が日本の連立不等式にあたり、or でつないだもの（どちらかを満たす x）は連立不等式ではない。 |
 | terms | system-of-inequalities | pitfalls[2] |  | system of inequalities は、OpenStax では 2 変数の不等式の組をグラフで解く節（Elementary Algebra の Graphing Systems of Linear Inequalities ほか）の言い方で、高等学校学習指導要領解説（数学II 図形と方程式）の「不等式の表す領域」（慣習差 inequality-terms-scope、エントリ system-of-linear-inequalities）に当たる（書き言葉では OpenStax Elementary Algebra と OpenStax Algebra and Trigonometry に出てくるが、話し言葉にはほとんど出てこない）。 |

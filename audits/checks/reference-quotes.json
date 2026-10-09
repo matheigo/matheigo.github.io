@@ -1,9 +1,9 @@
 {
- "rows": 2478,
+ "rows": 2491,
  "found": {
   "checked A": 60,
   "checked B": 43,
-  "yes": 2375
+  "yes": 2388
  },
  "verifiedNotFound": {},
  "list": [
@@ -700,6 +700,17 @@
   },
   {
    "collection": "conventions",
+   "id": "floor-function-notation",
+   "confidence": "verified",
+   "field": "advice_ja",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "the floor of x",
+   "found": "checked B"
+  },
+  {
+   "collection": "conventions",
    "id": "imaginary-number-scope",
    "confidence": "verified",
    "field": "advice_ja",
@@ -785,18 +796,6 @@
     "openstax:Calculus Volume 1"
    ],
    "wording": "hyperbolic cosine of x",
-   "found": "checked B"
-  },
-  {
-   "collection": "symbols",
-   "id": "qed-end-of-proof",
-   "confidence": "verified",
-   "field": "notes[0]",
-   "references": [
-    "levin",
-    "nicholson"
-   ],
-   "wording": "which completes the proof",
    "found": "checked B"
   },
   {
@@ -1325,7 +1324,7 @@
   {
    "collection": "conventions",
    "id": "calculator-instead-of-tables",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "advice_ja",
    "references": [
     "ced"
@@ -1336,7 +1335,29 @@
   {
    "collection": "conventions",
    "id": "calculator-instead-of-tables",
-   "confidence": "likely",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "references": [
+    "openstax:Introductory Statistics"
+   ],
+   "wording": "Using the Normal Distribution",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "calculator-instead-of-tables",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "references": [
+    "openstax:Introductory Statistics"
+   ],
+   "wording": "Using the Central Limit Theorem",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "calculator-instead-of-tables",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "ced:stats"
@@ -1347,12 +1368,45 @@
   {
    "collection": "conventions",
    "id": "calculator-instead-of-tables",
-   "confidence": "likely",
+   "confidence": "verified",
+   "field": "sources[6].note",
+   "references": [
+    "im"
+   ],
+   "wording": "Working with Trigonometric Ratios",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "calculator-instead-of-tables",
+   "confidence": "verified",
+   "field": "sources[6].note",
+   "references": [
+    "im"
+   ],
+   "wording": "Using Trigonometric Ratios to Find Angles",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "calculator-instead-of-tables",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "ced:stats"
    ],
    "wording": "standard normal table",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "calculator-instead-of-tables",
+   "confidence": "verified",
+   "field": "us",
+   "references": [
+    "im"
+   ],
+   "wording": "Working with Trigonometric Ratios",
    "found": "yes"
   },
   {
@@ -1472,23 +1526,35 @@
   {
    "collection": "conventions",
    "id": "complement-bar-vs-c-prime",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "advice_ja",
    "references": [
-    "openstax:Introductory Statistics"
+    "openstax:Introductory Statistics",
+    "openstax:Precalculus"
    ],
-   "wording": "the complement of A",
+   "wording": "the complement of",
    "found": "yes"
   },
   {
    "collection": "conventions",
    "id": "complement-bar-vs-c-prime",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "openstax:Introductory Statistics"
    ],
    "wording": "The complement of event A is denoted A",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "complement-bar-vs-c-prime",
+   "confidence": "verified",
+   "field": "sources[7].note",
+   "references": [
+    "openstax:Precalculus"
+   ],
+   "wording": "The complement of an event E, denoted E",
    "found": "yes"
   },
   {
@@ -1891,7 +1957,7 @@
   {
    "collection": "conventions",
    "id": "floor-function-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "advice_ja",
    "references": [
     "openstax:Calculus Volume 2"
@@ -1902,7 +1968,7 @@
   {
    "collection": "conventions",
    "id": "floor-function-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Calculus Volume 1"
@@ -1913,7 +1979,7 @@
   {
    "collection": "conventions",
    "id": "floor-function-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Calculus Volume 1"
@@ -1924,7 +1990,7 @@
   {
    "collection": "conventions",
    "id": "floor-function-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "openstax:Calculus Volume 2"
@@ -1935,7 +2001,7 @@
   {
    "collection": "conventions",
    "id": "floor-function-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "openstax:Calculus Volume 2"
@@ -1946,7 +2012,7 @@
   {
    "collection": "conventions",
    "id": "floor-function-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "openstax:Calculus Volume 1"
@@ -1957,57 +2023,12 @@
   {
    "collection": "conventions",
    "id": "floor-function-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "openstax:Calculus Volume 1"
    ],
    "wording": "The Precise Definition of a Limit",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "gcd-written-in-words",
-   "confidence": "likely",
-   "field": "sources[2].note",
-   "references": [
-    "levin"
-   ],
-   "wording": "Introduction to Number Theory",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "gcd-written-in-words",
-   "confidence": "likely",
-   "field": "sources[3].note",
-   "references": [
-    "openstax:Prealgebra"
-   ],
-   "wording": "greatest common factor",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "gcd-written-in-words",
-   "confidence": "likely",
-   "field": "sources[4].note",
-   "references": [
-    "im"
-   ],
-   "wording": "greatest common factor",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "gcd-written-in-words",
-   "confidence": "likely",
-   "field": "us",
-   "references": [
-    "im",
-    "openstax:Prealgebra"
-   ],
-   "wording": "greatest common factor",
    "found": "yes"
   },
   {
@@ -2126,7 +2147,7 @@
   {
    "collection": "conventions",
    "id": "inequality-graph-boundary",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Elementary Algebra"
@@ -2137,7 +2158,7 @@
   {
    "collection": "conventions",
    "id": "inequality-graph-boundary",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[5].note",
    "references": [
     "im"
@@ -2148,7 +2169,7 @@
   {
    "collection": "conventions",
    "id": "inequality-graph-boundary",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[6].note",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -2291,7 +2312,7 @@
   {
    "collection": "conventions",
    "id": "jp-only-algebra-and-discrete-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "advice_ja",
    "references": [
     "levin"
@@ -2302,7 +2323,7 @@
   {
    "collection": "conventions",
    "id": "jp-only-algebra-and-discrete-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "levin"
@@ -2313,7 +2334,7 @@
   {
    "collection": "conventions",
    "id": "jp-only-algebra-and-discrete-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "levin"
@@ -2352,17 +2373,6 @@
     "levin"
    ],
    "wording": "Solving Linear Diophantine Equations",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "let-new-variable-first",
-   "confidence": "likely",
-   "field": "sources[2].note",
-   "references": [
-    "openstax:Prealgebra"
-   ],
-   "wording": "Use a Problem Solving Strategy",
    "found": "yes"
   },
   {
@@ -2456,7 +2466,7 @@
   {
    "collection": "conventions",
    "id": "mapping-rule-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "advice_ja",
    "references": [
     "ck12",
@@ -2468,7 +2478,18 @@
   {
    "collection": "conventions",
    "id": "mapping-rule-notation",
-   "confidence": "likely",
+   "confidence": "verified",
+   "field": "advice_ja",
+   "references": [
+    "openstax:Algebra and Trigonometry"
+   ],
+   "wording": "shifted 2 units to the right",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "mapping-rule-notation",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "ck12"
@@ -2479,7 +2500,7 @@
   {
    "collection": "conventions",
    "id": "mapping-rule-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "im"
@@ -2490,7 +2511,7 @@
   {
    "collection": "conventions",
    "id": "mapping-rule-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[5].note",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -2501,7 +2522,7 @@
   {
    "collection": "conventions",
    "id": "mapping-rule-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[5].note",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -2512,7 +2533,7 @@
   {
    "collection": "conventions",
    "id": "mapping-rule-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "ck12"
@@ -2523,23 +2544,12 @@
   {
    "collection": "conventions",
    "id": "mapping-rule-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "openstax:Algebra and Trigonometry"
    ],
    "wording": "shifted 2 units to the right",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "natural-numbers-and-zero",
-   "confidence": "likely",
-   "field": "sources[3].note",
-   "references": [
-    "openstax:Prealgebra"
-   ],
-   "wording": "Introduction to Whole Numbers",
    "found": "yes"
   },
   {
@@ -2687,19 +2697,8 @@
   },
   {
    "collection": "conventions",
-   "id": "number-of-elements-notation",
-   "confidence": "likely",
-   "field": "sources[3].note",
-   "references": [
-    "openstax:Algebra and Trigonometry"
-   ],
-   "wording": "number of elements in E",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
    "id": "one-sided-limit-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "advice_ja",
    "references": [
     "openstax:Calculus Volume 1"
@@ -2710,7 +2709,7 @@
   {
    "collection": "conventions",
    "id": "one-sided-limit-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "advice_ja",
    "references": [
     "openstax:Calculus Volume 1"
@@ -2721,12 +2720,68 @@
   {
    "collection": "conventions",
    "id": "one-sided-limit-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Calculus Volume 1"
    ],
    "wording": "The Limit of a Function",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "one-sided-limit-notation",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "references": [
+    "ced:calc"
+   ],
+   "wording": "Sample Exam Questions",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "one-sided-limit-notation",
+   "confidence": "verified",
+   "field": "sources[5].note",
+   "references": [
+    "openstax:Precalculus"
+   ],
+   "wording": "Numerical and Graphical Approaches",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "one-sided-limit-notation",
+   "confidence": "verified",
+   "field": "us",
+   "references": [
+    "ced",
+    "openstax:Precalculus"
+   ],
+   "wording": "Sample Exam Questions",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "probability-and-or-notation",
+   "confidence": "likely",
+   "field": "sources[4].note",
+   "references": [
+    "im"
+   ],
+   "wording": "The Addition Rule",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "probability-and-or-notation",
+   "confidence": "likely",
+   "field": "us",
+   "references": [
+    "im"
+   ],
+   "wording": "The Addition Rule",
    "found": "yes"
   },
   {
@@ -2798,7 +2853,7 @@
   {
    "collection": "conventions",
    "id": "quadrant-roman-numerals",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[4].note",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -2809,7 +2864,7 @@
   {
    "collection": "conventions",
    "id": "quadrant-roman-numerals",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[5].note",
    "references": [
     "openstax:Elementary Algebra"
@@ -2820,7 +2875,7 @@
   {
    "collection": "conventions",
    "id": "quadrant-roman-numerals",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[5].note",
    "references": [
     "openstax:Elementary Algebra"
@@ -2831,7 +2886,7 @@
   {
    "collection": "conventions",
    "id": "quadrant-roman-numerals",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[6].note",
    "references": [
     "ck12"
@@ -2842,7 +2897,7 @@
   {
    "collection": "conventions",
    "id": "quadrant-roman-numerals",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[6].note",
    "references": [
     "ck12"
@@ -2853,7 +2908,7 @@
   {
    "collection": "conventions",
    "id": "quadrant-roman-numerals",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[7].note",
    "references": [
     "im"
@@ -2864,7 +2919,7 @@
   {
    "collection": "conventions",
    "id": "quadrant-roman-numerals",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "im"
@@ -3105,28 +3160,6 @@
   },
   {
    "collection": "conventions",
-   "id": "set-builder-colon",
-   "confidence": "likely",
-   "field": "sources[3].note",
-   "references": [
-    "openstax:Precalculus"
-   ],
-   "wording": "the vertical bar",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "set-builder-colon",
-   "confidence": "likely",
-   "field": "sources[3].note",
-   "references": [
-    "openstax:Precalculus"
-   ],
-   "wording": "is read as such that",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
    "id": "similarity-symbol",
    "confidence": "verified",
    "field": "sources[2].note",
@@ -3352,6 +3385,28 @@
    "collection": "conventions",
    "id": "solution-as-ordered-pair",
    "confidence": "likely",
+   "field": "sources[5].note",
+   "references": [
+    "im"
+   ],
+   "wording": "Solving Systems by Substitution",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "solution-as-ordered-pair",
+   "confidence": "likely",
+   "field": "sources[5].note",
+   "references": [
+    "im"
+   ],
+   "wording": "Solving Systems by Elimination (Part",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "solution-as-ordered-pair",
+   "confidence": "likely",
    "field": "us",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -3372,48 +3427,13 @@
   },
   {
    "collection": "conventions",
-   "id": "summation-index-letter",
-   "confidence": "likely",
-   "field": "sources[3].note",
-   "references": [
-    "openstax:Intermediate Algebra"
-   ],
-   "wording": "the sum of a sub i from i equals one to five",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "summation-index-letter",
-   "confidence": "likely",
-   "field": "sources[4].note",
-   "references": [
-    "openstax:Precalculus"
-   ],
-   "wording": "Series and Their Notations",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "summation-index-letter",
+   "id": "solution-as-ordered-pair",
    "confidence": "likely",
    "field": "us",
    "references": [
-    "openstax:Intermediate Algebra",
-    "openstax:Precalculus"
+    "im"
    ],
-   "wording": "the sum of a sub i",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "summation-index-letter",
-   "confidence": "likely",
-   "field": "us",
-   "references": [
-    "openstax:Intermediate Algebra",
-    "openstax:Precalculus"
-   ],
-   "wording": "Series and Their Notations",
+   "wording": "or the point (6",
    "found": "yes"
   },
   {
@@ -3422,6 +3442,7 @@
    "confidence": "likely",
    "field": "advice_ja",
    "references": [
+    "ck12",
     "im"
    ],
    "wording": "Side-Angle-Side Triangle Congruence Theorem",
@@ -3458,6 +3479,17 @@
     "im"
    ],
    "wording": "Connecting Similarity and Transformations",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "transformations-define-congruence-and-similarity",
+   "confidence": "likely",
+   "field": "sources[3].note",
+   "references": [
+    "ck12"
+   ],
+   "wording": "turn, flip, and/or slide",
    "found": "yes"
   },
   {
@@ -3520,7 +3552,7 @@
   {
    "collection": "conventions",
    "id": "triangle-congruence-criteria",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "advice_ja",
    "references": [
     "im"
@@ -3531,7 +3563,7 @@
   {
    "collection": "conventions",
    "id": "triangle-congruence-criteria",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "ck12"
@@ -3542,7 +3574,7 @@
   {
    "collection": "conventions",
    "id": "triangle-congruence-criteria",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "im"
@@ -3553,7 +3585,7 @@
   {
    "collection": "conventions",
    "id": "triangle-congruence-criteria",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "im"
@@ -3564,7 +3596,7 @@
   {
    "collection": "conventions",
    "id": "triangle-congruence-criteria",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "im"
@@ -3575,7 +3607,7 @@
   {
    "collection": "conventions",
    "id": "two-column-proof-format",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "ck12"
@@ -3586,7 +3618,7 @@
   {
    "collection": "conventions",
    "id": "two-column-proof-format",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "ck12"
@@ -3597,12 +3629,34 @@
   {
    "collection": "conventions",
    "id": "universal-set-and-sample-space",
-   "confidence": "likely",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "references": [
+    "levin"
+   ],
+   "wording": "Applications to Probability",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "universal-set-and-sample-space",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "openstax:Introductory Statistics"
    ],
    "wording": "The uppercase letter S is used to denote the sample space",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "universal-set-and-sample-space",
+   "confidence": "verified",
+   "field": "sources[9].note",
+   "references": [
+    "openstax:Precalculus"
+   ],
+   "wording": "The sample space S for a probability model",
    "found": "yes"
   },
   {
@@ -3819,7 +3873,18 @@
   {
    "collection": "conventions",
    "id": "us-only-calculus-topics",
-   "confidence": "likely",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "references": [
+    "ced:calc"
+   ],
+   "wording": "separation of variables",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-calculus-topics",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "ced"
@@ -3830,12 +3895,34 @@
   {
    "collection": "conventions",
    "id": "us-only-calculus-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "ced"
    ],
    "wording": "average value of a function",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-precalculus-topics",
+   "confidence": "likely",
+   "field": "sources[2].note",
+   "references": [
+    "openstax:Algebra and Trigonometry"
+   ],
+   "wording": "Solving Systems with Cramer’s Rule",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-precalculus-topics",
+   "confidence": "likely",
+   "field": "sources[2].note",
+   "references": [
+    "openstax:Algebra and Trigonometry"
+   ],
+   "wording": "Zeros of Polynomial Functions",
    "found": "yes"
   },
   {
@@ -3896,7 +3983,7 @@
   {
    "collection": "conventions",
    "id": "zeros-roots-intercepts",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -3907,7 +3994,7 @@
   {
    "collection": "conventions",
    "id": "zeros-roots-intercepts",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "openstax:Elementary Algebra"
@@ -3918,7 +4005,7 @@
   {
    "collection": "conventions",
    "id": "zeros-roots-intercepts",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[4].note",
    "references": [
     "openstax:Precalculus"
@@ -3929,7 +4016,7 @@
   {
    "collection": "conventions",
    "id": "zeros-roots-intercepts",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[4].note",
    "references": [
     "openstax:Precalculus"
@@ -3940,7 +4027,7 @@
   {
    "collection": "conventions",
    "id": "zeros-roots-intercepts",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "openstax:Elementary Algebra",
@@ -8725,6 +8812,18 @@
     "openstax:Prealgebra"
    ],
    "wording": "a is to b, as c is to d",
+   "found": "yes"
+  },
+  {
+   "collection": "symbols",
+   "id": "qed-end-of-proof",
+   "confidence": "verified",
+   "field": "notes[0]",
+   "references": [
+    "levin",
+    "nicholson"
+   ],
+   "wording": "This completes the proof",
    "found": "yes"
   },
   {
@@ -15939,7 +16038,6 @@
    "confidence": "verified",
    "field": "pitfalls[1]",
    "references": [
-    "openstax:Calculus Volume 1",
     "openstax:Calculus Volume 2"
    ],
    "wording": "the greatest integer less than or equal to x",
@@ -17182,6 +17280,28 @@
     "ced:calc"
    ],
    "wording": "increasing or decreasing",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "indefinite-integral",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "openstax:Calculus"
+   ],
+   "wording": "Find the indefinite integral",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "indefinite-integral",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "openstax:Calculus"
+   ],
+   "wording": "find the antiderivative",
    "found": "yes"
   },
   {
@@ -25565,6 +25685,28 @@
     "openstax:Intermediate Algebra"
    ],
    "wording": "the sum formula",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "summation-notation",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "references": [
+    "openstax:Precalculus"
+   ],
+   "wording": "Series and Their Notations",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "summation-notation",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "references": [
+    "openstax:Precalculus"
+   ],
+   "wording": "Series and Their Notations",
    "found": "yes"
   },
   {
