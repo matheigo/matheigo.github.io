@@ -45,15 +45,8 @@
       "note": "4.9 CPCTC（turn, flip, and/or slide）、4.12 Congruent Triangles（対応する辺と角）、4.13〜4.15（SSS・SAS・ASA Postulate、AAS Congruence Theorem）、4.16 HL（Hypotenuse-Leg Congruence Theorem）、2.15（postulate の定義）、8.8（similarity transformation）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "updated": "2026-10-09",
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-09）で大きな直し: 監査 13 の直しの向きは資料どおりだが、同じ段の CK-12 Geometry は解説と同じく SSS・SAS・ASA を証明しない postulate とし（4.13〜4.15）、違いは IM Geometry だけに立つ → us に CK-12 を足し、advice_ja を「IM は証明、CK-12 は解説と同じく認める。授業で合同条件を証明するかを確かめる」に、category を proof-style、term_refs に congruence-criteria、jp に相似の静的な定義。見直す点: us・advice_ja、慣習差として成り立つか（米国の高校の参照の割れ。triangle-congruence-criteria・two-column-proof-format と同じ型）。次の監査のセッションが見直す。",
-      "raised": "2026-10-09"
-    }
-  ],
   "reviewed": {
     "machine": null,
     "audit": "2026-10-09",
