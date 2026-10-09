@@ -3,8 +3,8 @@
   "title_ja": "条件付き確率の書き方",
   "title_en": "Conditional probability notation",
   "jp": "条件付き確率を P_A(B)（A が起こったときに B が起こる確率）と書く（高等学校学習指導要領解説 数学A 条件付き確率）。",
-  "us": "P(B | A) と書き、B given A と読む。OpenStax Introductory Statistics（29 回）と AP Statistics の CED は P(A | B) の形で書く。条件が縦線の右に来るので、A と B の順が日本と逆になる。",
-  "advice_ja": "米国では P(B | A) と書く。添字の P_A(B) は読んでもらえないことがある。",
+  "us": "OpenStax Introductory Statistics（P(A | B) を 29 回）と AP Statistics の CED（topic 2.6）は、条件付き確率を P(A | B) と書き、the probability of A given B と呼ぶ。高等学校学習指導要領解説の P_A(B)（A が起こったときに B が起こる確率）は P(B | A) と書くことになり、条件の A が縦線の右に来る。",
+  "advice_ja": "答案では P(B | A) と書く（OpenStax Introductory Statistics と AP Statistics の CED の書き方）。英語版 Wikipedia「Conditional probability」は添字の P_B(A) を「ときに使う」書き方として挙げる。",
   "category": "notation",
   "level": {
     "jp": [
@@ -42,9 +42,15 @@
       "type": "reference",
       "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
-      "note": "topic 2.6"
+      "note": "Topic 2.6（conditional probability）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Conditional_probability",
+      "note": "記事「Conditional probability」の冒頭（P(A|B)。P_B(A) は occasionally）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

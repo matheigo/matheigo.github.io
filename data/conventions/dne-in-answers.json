@@ -2,16 +2,16 @@
   "id": "dne-in-answers",
   "title_ja": "「存在しない」と DNE",
   "title_en": "DNE",
-  "jp": "極限が存在しないことを「この極限は存在しない」と言葉で書く（日本語版 Wikipedia「ロピタルの定理」の例）。",
+  "jp": "日本語版 Wikipedia「ロピタルの定理」は、極限が存在しない例を「この極限は存在しない」と言葉で書く。",
   "us": "OpenStax Calculus Volume 1 は does not exist を DNE と略して書く（lim sin(1/x) DNE）。",
-  "advice_ja": "米国の答案では DNE と書いてよい。",
+  "advice_ja": "英語では does not exist と書くか DNE と略す（OpenStax Precalculus の練習問題は「write DNE」と答え方を指示する）。AP の CED の例は略さずに does not exist と書く。",
   "category": "notation",
   "level": {
     "jp": [
       "数III"
     ],
     "us": [
-      "AP Calculus AB",
+      "Precalculus",
       "Calculus I"
     ]
   },
@@ -34,9 +34,20 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1",
-      "note": "DNE"
+      "note": "2.2 The Limit of a Function（Mathematicians frequently abbreviate does not exist as DNE）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "Graphs of Logarithmic Functions の練習問題（If they do not exist, write DNE.）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 1.3（does not exist）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

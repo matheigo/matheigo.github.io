@@ -2,9 +2,9 @@
   "id": "log-and-ln",
   "title_ja": "log と ln",
   "title_en": "log and ln",
-  "jp": "高等学校学習指導要領の〔用語・記号〕は数学II に logₐ x・常用対数、数学III に自然対数・e を挙げ、解説に ln は出てこない。",
+  "jp": "高等学校学習指導要領の〔用語・記号〕は数学II に logₐ x・常用対数、数学III に自然対数・e を挙げる。解説は常用対数を log₁₀ a と底を書いて使い（数学II 指数関数・対数関数の例）、数学III の課題学習の例では自然対数を lim_{x→+0} x log x と底を書かずに使う。ln は解説に出てこない。",
   "us": "OpenStax Algebra and Trigonometry は自然対数を ln x、底を省いた log x を常用対数（底 10）と定める。",
-  "advice_ja": "米国の log x は底 10。自然対数は ln x と書く。",
+  "advice_ja": "OpenStax の教科書では、底を書かない log x は底 10（常用対数）。自然対数は ln x と書く。",
   "category": "notation",
   "level": {
     "jp": [
@@ -48,9 +48,15 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "ln x（natural logarithm）と log x（common logarithm）"
+      "note": "6.3 Logarithmic Functions: ln x（natural logarithm）と log x（common logarithm）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II 指数関数・対数関数の例: log₁₀ a／数学III 課題学習〈微分法〉: lim x log x（底なし）／ln は 0 件"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

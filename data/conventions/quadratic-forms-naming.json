@@ -2,9 +2,9 @@
   "id": "quadratic-forms-naming",
   "title_ja": "二次関数の式の形の名前",
   "title_en": "Names of quadratic forms",
-  "jp": "a(x − p)² + q の形を「標準形」と呼ぶ（日本語版 Wikipedia「二次関数」）。",
+  "jp": "日本語版 Wikipedia「二次関数」は a(x − p)² + q を「標準形」、ax² + bx + c を「一般形」、a(x − s)(x − t) を「因数分解形」と呼ぶ（学習指導要領解説の「標準形」は数学C の 2 次曲線の方程式だけ）。",
   "us": "OpenStax Algebra and Trigonometry は a(x − h)² + k を vertex form（または standard form）、ax² + bx + c を general form と呼ぶ。IM Algebra 1 は vertex form・factored form・standard form と呼び分ける。",
-  "advice_ja": "standard form が指す形は教材によって違う。授業で使う教材の呼び方を確かめる。",
+  "advice_ja": "「標準形」を standard form と訳さない（IM Algebra 1 の standard form は ax² + bx + c）。a(x − p)² + q は vertex form と言う。standard form と言われたら、どの形かを式で確かめる。",
   "category": "terminology",
   "level": {
     "jp": [
@@ -17,7 +17,6 @@
   },
   "term_refs": [
     "completing-the-square",
-    "complex-number",
     "determine-the-coefficients",
     "quadratic-function",
     "vertex-form",
@@ -32,7 +31,7 @@
       "type": "reference",
       "title": "日本語版 Wikipedia「二次関数」",
       "url": "https://ja.wikipedia.org/wiki/%E4%BA%8C%E6%AC%A1%E9%96%A2%E6%95%B0",
-      "note": "標準形"
+      "note": "標準形、一般形、因数分解形"
     },
     {
       "type": "textbook",
@@ -44,8 +43,14 @@
       "title": "Illustrative Mathematics, IM 9–12 Math",
       "url": "https://im.kendallhunt.com/HS/students/index.html",
       "note": "Algebra 1 6.15 Vertex Form、factored form、standard form"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学C: 放物線・楕円・双曲線の方程式の標準形"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

@@ -2,9 +2,9 @@
   "id": "repeated-combination-notation",
   "title_ja": "重複組合せの記号",
   "title_en": "Combinations with repetition",
-  "jp": "重複組合せの数を H の記号（nHr）で書く（日本語版 Wikipedia「重複組合せ」）。",
-  "us": "Levin は同じ数え上げを stars and bars（ほかに balls and bins）と呼び、二項係数で書く。H の記号は使わない。",
-  "advice_ja": "米国では ₙHᵣ を書かず、二項係数 (n+r−1 choose r) で書く。",
+  "jp": "日本語版 Wikipedia「重複組合せ」は重複組合せの総数を H の記号（ₙHᵣ）で書く。高等学校学習指導要領〔用語・記号〕の数学A の記号は nPr・nCr・n! で、H は無い。",
+  "us": "Levin（3.5 Counting Multisets）は同じ数え上げを sticks and stones と呼び（stars and bars・balls and bins とも呼ぶと添える）、二項係数で書く。H の記号は使わない。",
+  "advice_ja": "英語で書くときは ₙHᵣ を使わず、二項係数 (n+r−1 choose r) に直す（Levin 3.5）。",
   "category": "notation",
   "level": {
     "jp": [
@@ -34,9 +34,14 @@
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "3.5 Counting Multisets: stars and bars"
+      "note": "3.5 Counting Multisets（sticks and stones。stars and bars・balls and bins とも）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）〔用語・記号〕",
+      "note": "数学A 場合の数と確率: nPr、nCr、n!（H は無い）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

@@ -3,8 +3,8 @@
   "title_ja": "「C は積分定数」の書き添え",
   "title_en": "Saying what C is",
   "jp": "共通テストの問題文は不定積分に「C は積分定数」と書き添える（令和7年度 本試験 数学Ⅱ，数学Ｂ，数学Ｃ 第3問、令和5年度 本試験 数学Ⅱ 第2問）。",
-  "us": "OpenStax Calculus の不定積分の答えは + C で終わり、where C is a constant の一言はほとんど添えない。",
-  "advice_ja": "英語の答案でも + C は必ず付ける。C が何かの説明は、英語の教科書では省くことが多い。",
+  "us": "OpenStax Calculus Volume 1 は不定積分を定義する Antiderivatives の節で F(x) + C, where C is any real number と書き、その後の例題の答えは + C で終わって C の説明を添えない。",
+  "advice_ja": "英語の答案でも + C は必ず付ける（AP の CED の Unit 6 の概要は、不定積分に constant of integration を付けるよう求める）。OpenStax Calculus の例題の答えは + C で終わり、C の説明は添えない。",
   "category": "proof-style",
   "level": {
     "jp": [
@@ -40,9 +40,15 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1",
-      "note": "不定積分の答えの + C"
+      "note": "Antiderivatives（where C is any real number）、例題の答えの + C"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Unit 6 の概要（constant of integration）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26"
+  "updated": "2026-10-09"
 }

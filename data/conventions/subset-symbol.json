@@ -2,8 +2,8 @@
   "id": "subset-symbol",
   "title_ja": "部分集合の記号",
   "title_en": "Subset symbol",
-  "jp": "高等学校学習指導要領解説は部分集合の記号に A ⊂ B だけを挙げる。",
-  "us": "Levin は部分集合を ⊆、真部分集合を ⊂ と書き分ける。",
+  "jp": "高等学校学習指導要領解説 数学I は集合の記号に A ⊂ B を挙げ（⊆ は出てこない）、センター試験（平成26年度 数学Ⅰ・数学Ａ 第1問）は「集合 X が集合 Y の部分集合であるとき X ⊂ Y と表す」と定める。⊂ は等しい場合も含む部分集合の記号になる。",
+  "us": "Levin（5.1 Sets）は部分集合を ⊆、真部分集合を ⊂ と書き分ける。米国の高校の参照（CED・OpenStax・IM・CK-12）で ⊂・⊆ を使うのは OpenStax Calculus Volume 3 だけで、D ⊆ ℝ² と R ⊂ ℝ² の両方を書く。",
   "advice_ja": "⊆ と ⊂ を書き分ける本では、⊂ は等しい場合を含まない。",
   "category": "notation",
   "level": {
@@ -36,8 +36,19 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "5.1 Sets: ⊆、⊂"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成26年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20150601/https://www.dnc.ac.jp/albums/abm.php?f=abm00003012.pdf&n=26suugaku_1a.pdf",
+      "note": "第1問: 集合 X が集合 Y の部分集合であるとき X ⊂ Y と表す"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 3",
+      "note": "多変数関数の定義域 D ⊆ ℝ²、領域 R ⊂ ℝ²"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

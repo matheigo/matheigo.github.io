@@ -2,9 +2,9 @@
   "id": "inequality-symbols",
   "title_ja": "≦ と ≤",
   "title_en": "Inequality signs",
-  "jp": "中学校学習指導要領の〔用語・記号〕（中1）は ≦ ≧ を挙げ、教科書・答案もこの形で書く。",
-  "us": "≤ ≥ を使う。OpenStax の 9 冊と AP の CED に ≦ ≧ は出てこない（≤ は OpenStax で 3,888 回）。",
-  "advice_ja": "答案では ≤ ≥ を使う（米国の教科書と同じ）。",
+  "jp": "中学校学習指導要領の〔用語・記号〕（中1）は ≦ ≧ を挙げ、学習指導要領解説（中学校・高等学校）と共通テストの問題文もこの形で書く（≤ ≥ は出てこない）。",
+  "us": "OpenStax の 9 冊は ≤ ≥ で書き（≤ 3,888・≥ 1,431 回）、≦ ≧ は出てこない。AP Calculus と AP Statistics の CED も同じ（≦ ≧ は 0）。",
+  "advice_ja": "答案では ≤ ≥ を使う（OpenStax・CED と同じ）。",
   "category": "notation",
   "level": {
     "jp": [
@@ -37,14 +37,40 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "≤ 223 回、≦ は 0（OpenStax 9 冊で ≤ 3,888）"
     },
     {
       "type": "reference",
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
-      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf"
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "≤ ≥ で書く（≦ ≧ は 0）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "≤ ≥ で書く（≦ ≧ は 0）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "≦ 33・≧ 7 件、≤ ≥ は 0 件"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "≦ 3・≧ 3 件、≤ ≥ は 0 件"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和8年度 大学入学共通テスト 本試験 数学Ⅰ，数学Ａ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=2144&f=abm00017544.pdf&n=2026_ol_16_sugaku1A.pdf",
+      "note": "≦ ≧ で書く（≤ ≥ は 0 件）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

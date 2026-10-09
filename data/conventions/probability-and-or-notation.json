@@ -2,17 +2,16 @@
   "id": "probability-and-or-notation",
   "title_ja": "積事象・和事象の書き方",
   "title_en": "And and or in probability",
-  "jp": "積事象の確率を P(A∩B) と集合の記号で書く（高等学校学習指導要領解説 数学A 条件付き確率）。",
-  "us": "OpenStax Introductory Statistics は P(A AND B)・P(A OR B) と書く。",
-  "advice_ja": "統計の教科書の AND・OR は ∩・∪ と同じ。",
+  "jp": "高等学校学習指導要領解説 数学A は積事象の確率を P(A∩B)（条件付き確率）、和事象の確率を P(A∪B)（確率の性質）と集合の記号で書く。",
+  "us": "OpenStax Introductory Statistics は P(A AND B)・P(A OR B) と書き、A ∩ B・A ∪ B は別の書き方として挙げる（3.1 Terminology）。AP Statistics の CED は P(A ∩ B)・P(A ∪ B) と集合の記号で書き、P(A intersect B)・P(A union B) とも書く（topic 2.5・2.7）。",
+  "advice_ja": "OpenStax Introductory Statistics の AND・OR は ∩・∪ と同じ。AP Statistics の CED は ∩・∪ で書く。",
   "category": "notation",
   "level": {
     "jp": [
       "数A"
     ],
     "us": [
-      "Intro Statistics",
-      "AP Statistics"
+      "Intro Statistics"
     ]
   },
   "term_refs": [
@@ -35,14 +34,20 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "数学A: P(A∩B)"
+      "note": "数学A: P(A∩B) = P(A)P_A(B)（条件付き確率）、P(A∪B) = P(A) + P(B)（確率の性質）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e",
-      "note": "P(A AND B)、P(A OR B)"
+      "note": "3.1 Terminology: P(A AND B)、P(A OR B)（A Intersection B、A ∩ B とも）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.5（joint probability、intersect）、Topic 2.7（union）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-28"
+  "updated": "2026-10-09"
 }

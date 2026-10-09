@@ -2,9 +2,9 @@
   "id": "logic-notation",
   "title_ja": "否定と「かつ」「または」の書き方",
   "title_en": "Negation and connectives",
-  "jp": "センター試験の問題文は条件 p の否定を上線で p̄ と書き（平成29年度・平成31年度 本試験 数学Ⅰ・数学Ａ 第1問）、「p かつ q」「q または r」を言葉で書く（平成29年度・平成30年度 同 第1問）。",
-  "us": "CK-12 Geometry は否定を ~p、「ならば」を p → q と書く（2.8 Truth Tables ほか）。Levin は ¬P・P ∧ Q・P ∨ Q・∀x・∃x と記号で書き、¬P を not P と読む（1.1 Mathematical Statements）。",
-  "advice_ja": "p̄ は英語の本では ~p か ¬p になり、not p と読む。「かつ」「または」は and・or か ∧・∨。",
+  "jp": "センター試験の問題文は条件 p の否定を上線で p̄ と書き（平成29年度・平成31年度 本試験 数学Ⅰ・数学Ａ 第1問）、「p かつ q」「q または r」を言葉で書く（平成29年度・平成30年度 同 第1問）。命題の「ならば」は (p かつ q) ⟹ r と ⟹ で書く（平成29年度 同 第1問）。",
+  "us": "CK-12 Geometry は否定を ~p、「ならば」を p → q、「かつ」「または」を p ∧ q・p ∨ q と書く（2.8 Truth Tables ほか）。Levin は ¬P・P ∧ Q・P ∨ Q・∀x・∃x と記号で書き、¬P を not P と読む（1.1 Mathematical Statements）。",
+  "advice_ja": "p̄ は CK-12 Geometry では ~p、Levin では ¬P と書き、not p と読む。「かつ」「または」は and・or か ∧・∨。",
   "category": "notation",
   "level": {
     "jp": [
@@ -55,7 +55,7 @@
       "type": "reference",
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
-      "note": "2.8 Truth Tables、2.12 Converse, Inverse, and Contrapositive Statements: ~p、p → q"
+      "note": "2.8 Truth Tables（~、→、∧、∨）、2.12 Converse, Inverse, and Contrapositive Statements: ~p、p → q"
     },
     {
       "type": "reference",
@@ -65,5 +65,5 @@
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-27"
+  "updated": "2026-10-09"
 }

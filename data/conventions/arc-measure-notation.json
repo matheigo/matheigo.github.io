@@ -3,8 +3,8 @@
   "title_ja": "弧の大きさ",
   "title_en": "Arc measure",
   "jp": "円周角は同じ弧に対する中心角との関係（円周角の定理）として扱う（中学校学習指導要領解説 中3 円周角と中心角）。",
-  "us": "CK-12 Geometry は弧そのものに度数（arc measure）を持たせ、円周角を intercepted arc（27 回）との関係で述べ、等しい弧を congruent arcs、半円より大きい弧を major arc と呼ぶ。",
-  "advice_ja": "米国では「円周角は intercepted arc の半分」と弧の度数で言う。弧の度数は m と書く。",
+  "us": "CK-12 Geometry は弧そのものに度数（measure of the arc）を持たせ、円周角を intercepted arc（27 回）との関係で述べ、等しい弧を congruent arcs、半円より大きい弧を major arc と呼ぶ。",
+  "advice_ja": "CK-12 Geometry は「円周角は intercepted arc の半分」と弧の度数で言う（IM Geometry は中心角の半分と言うが、弧にも度数を持たせる）。弧の度数は m を付けて書く。",
   "category": "notation",
   "level": {
     "jp": [
@@ -38,9 +38,15 @@
       "type": "reference",
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
-      "note": "intercepted arc（27 件）、arc measure、congruent arcs、major arc"
+      "note": "6.9 Arcs in Circles（measure of the arc、congruent arcs、major arc）、6.14 Inscribed Angles in Circles（Inscribed Angle Theorem）、intercepted arc（6.13〜6.20 で 27 件）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Unit 7 Circles: inscribed angle は associated central angle の半分、the measure of the arc"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

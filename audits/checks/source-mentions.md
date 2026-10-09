@@ -2,7 +2,7 @@
 
 作成: `python3 scripts/audit/source_mentions.py`（規則は scripts/audit/source_mentions.py の説明）。主張が正しいかは見ない（それは監査）。
 
-- 項目: **133**（likely 133）
+- 項目: **132**（likely 132）
 
 | コレクション | id | confidence | 名指しされた資料 | 欄 |
 |---|---|---|---|---|
@@ -168,4 +168,3 @@
 | terms | vertical-line-test | likely | 学習指導要領解説 | mapping_note |
 | terms | voluntary-response-bias | likely | 学習指導要領解説 | mapping_note |
 | terms | without-loss-of-generality | likely | Levin | pitfalls[2] |
-| conventions | approximately-equal-notation | likely | OpenStax Introductory Statistics | us |

@@ -2,9 +2,9 @@
   "id": "triangle-congruence-criteria",
   "title_ja": "三角形の合同条件",
   "title_en": "Triangle congruence criteria",
-  "jp": "三角形の合同条件と、それとは別に直角三角形の合同条件を扱う（中学校学習指導要領解説 中2）。",
-  "us": "CK-12 Geometry は SSS・SAS・ASA に AAS と HL（直角三角形の斜辺と 1 辺）を加え、それぞれを名前で呼ぶ。",
-  "advice_ja": "米国では合同の理由を by SAS・by HL のように略号で書く。AAS も 1 つの条件として使ってよい。",
+  "jp": "中学校学習指導要領解説（中2）は三角形の合同条件を 3 つ（3 組の辺、2 組の辺とその間の角、1 組の辺とその両端の角）とし、直角三角形の合同条件（斜辺と 1 つの鋭角、斜辺と他の 1 辺）を別に挙げる。",
+  "us": "CK-12 Geometry は SSS・SAS・ASA に AAS と HL（斜辺と直角をはさむ 1 辺）を加え、それぞれを名前で呼ぶ（4.13〜4.16）。IM Geometry は SSS・SAS・ASA を Triangle Congruence Theorem の名前で扱い（2.6・2.7・2.9）、AAS・HL の名前は出てこない。",
+  "advice_ja": "CK-12 Geometry は合同の理由を by SAS・by HL と略号で書き、AAS と HL を含む 5 つを合同条件として数える。IM Geometry は略号を使わず Side-Angle-Side Triangle Congruence Theorem のように名前を書き、AAS・HL の名前は出てこない。授業でどの条件を名前で使うかを確かめる。",
   "category": "terminology",
   "level": {
     "jp": [
@@ -35,9 +35,15 @@
       "type": "reference",
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
-      "note": "4.15 ASA and AAS、4.16 HL"
+      "note": "4.13 SSS、4.14 SAS、4.15 ASA and AAS、4.16 HL"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "2.6 Side-Angle-Side Triangle Congruence、2.7、2.9（Triangle Congruence Theorem）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

@@ -2,9 +2,9 @@
   "id": "interval-notation-vs-inequalities",
   "title_ja": "区間の書き方",
   "title_en": "Interval notation",
-  "jp": "範囲は a ≦ x ≦ b のように不等式で書く。高等学校学習指導要領解説に区間の記号は、数学III の積分の説明に閉区間 [a, b] が出てくる程度。",
+  "jp": "共通テストの問題文は範囲を カ.キク ≦ x ≦ 2.40 のように不等式で書き（令和3年度 第1日程 数学Ⅰ・数学Ａ 第2問）、ヒストグラムの階級の区間は「左側の数値を含み、右側の数値を含まない」と言葉で断る（令和4年度 本試験 数学Ⅰ・数学Ａ 第2問）。高等学校学習指導要領解説に区間の記号は、数学III の積分の説明に閉区間 [a, b] が出てくるだけ。",
   "us": "OpenStax Elementary Algebra は Algebra 1 の段階から解の範囲を interval notation（71 回）で書かせる。[ ] は端を含み、( ) は含まない。",
-  "advice_ja": "米国では解を (2, 3]・[1, ∞) のように区間で答えることが多い。問題の指示（in interval notation）を読む。",
+  "advice_ja": "OpenStax Elementary Algebra（2.7）のように in interval notation と指示されたら、解を (2, 3]・[1, ∞) の形で答える。[ ] は端を含み、( ) は含まない。",
   "category": "notation",
   "level": {
     "jp": [
@@ -46,9 +46,21 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e",
-      "note": "interval notation（71 件）"
+      "note": "2.7 Solve Linear Inequalities: interval notation（71 件）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和3年度 大学入学共通テスト 第1日程 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20220601/https://www.dnc.ac.jp/albums/abm.php?d=88&f=abm00001267.pdf&n=R3_%E6%95%B0%E5%AD%A6%E2%85%A0%E3%83%BB%E6%95%B0%E5%AD%A6%EF%BC%A1%EF%BC%88%EF%BC%91%E6%9C%8816%E6%97%A5%E3%83%BB17%E6%97%A5%EF%BC%89%E3%81%AE%E5%95%8F%E9%A1%8C.pdf",
+      "note": "第2問: x の値の範囲は カ.キク ≦ x ≦ 2.40"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和4年度 大学入学共通テスト 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20230601/https://www.dnc.ac.jp/albums/abm.php?d=67&f=abm00000838.pdf&n=R4%E5%95%8F%E9%A1%8C_%E5%95%8F%E9%A1%8C_%E6%95%B0%E5%AD%A6%E2%85%A0%E3%83%BB%E6%95%B0%E5%AD%A6%EF%BC%A1.pdf",
+      "note": "第2問: ヒストグラムの各階級の区間は、左側の数値を含み、右側の数値を含まない"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

@@ -2,8 +2,8 @@
   "id": "natural-numbers-and-zero",
   "title_ja": "自然数と 0",
   "title_en": "Natural numbers and zero",
-  "jp": "日本語版 Wikipedia「自然数」は、日本の高校の教育課程では自然数に 0 を入れないと説明する。",
-  "us": "Levin は自然数を 0 から始める（In this book, we define the natural numbers to be …）。OpenStax Prealgebra は 0 を含む数を whole numbers と呼ぶ。",
+  "jp": "日本語版 Wikipedia「自然数」は、日本では高校の教育課程で自然数に 0 を入れず、大学以降では 0 を含めることもあると説明する。",
+  "us": "OpenStax Algebra and Trigonometry（1.1）と CK-12 Algebra は natural numbers を 1, 2, 3, … とし、0 を加えた 0, 1, 2, … を whole numbers と呼ぶ（OpenStax Prealgebra 1.1 も同じ）。大学の離散数学の Levin（0.2 Discrete Structures）は ℕ = {0, 1, 2, 3, …} とし、0 を入れるかは分野によると断る。",
   "advice_ja": "自然数解は positive integer solutions と言えば誤解がない。",
   "category": "terminology",
   "level": {
@@ -36,16 +36,27 @@
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "0.2 Discrete Structures"
+      "note": "0.2 Discrete Structures（ℕ は 0 から。0 を入れない本もある）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Prealgebra 2e",
-      "note": "whole numbers"
+      "note": "1.1 Introduction to Whole Numbers: counting numbers、whole numbers"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "1.1 Real Numbers: Algebra Essentials: natural numbers、whole numbers"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Algebra (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Algebra",
+      "note": "natural numbers、whole numbers"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-27",
+  "updated": "2026-10-09",
   "related": [
     "natural-numbers-symbol"
   ]

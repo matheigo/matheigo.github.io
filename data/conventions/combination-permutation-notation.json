@@ -3,7 +3,7 @@
   "title_ja": "ₙCᵣ と C(n, r)",
   "title_en": "Combinations and permutations notation",
   "jp": "組合せと順列を nCr・nPr と書く（高等学校学習指導要領〔用語・記号〕数学A: nPr、nCr）。",
-  "us": "OpenStax Algebra and Trigonometry は C(n, r)・P(n, r) と書き、二項定理では縦に並べた (n r) も使う。",
+  "us": "OpenStax Algebra and Trigonometry は C(n, r)・P(n, r) と書き（13.5 Counting Principles）、ₙCᵣ・ₙPᵣ は電卓などで見る別の書き方として挙げる。二項定理では縦に並べた (n r) を使う（13.6 Binomial Theorem）。",
   "advice_ja": "C(n, r) と (n r) は nCr と同じ。(n r) は n choose r と読む。",
   "category": "notation",
   "level": {
@@ -39,9 +39,14 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "C(n, r)（19 件）、(n r)"
+      "note": "13.5 Counting Principles: C(n, r)（19 件）・P(n, r)（11 件）、nCr・nPr も別の書き方／13.6 Binomial Theorem: (n r)"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "12.4 Binomial Theorem: (n r) を n choose r と読む"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

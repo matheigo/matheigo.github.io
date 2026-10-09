@@ -3,7 +3,7 @@
   "title_ja": "集合の内包的記法",
   "title_en": "Set-builder notation",
   "jp": "集合を {x | x > 2} と縦棒で書く（高等学校学習指導要領解説 数学I の例）。",
-  "us": "Levin は {x : x > 2} とコロンで書き、: を such that と読む。",
+  "us": "OpenStax Precalculus・Algebra and Trigonometry は日本と同じく縦棒で書き、| を such that と読む。大学の離散数学の Levin（5.1）はコロンで {x : x > 2} と書き、縦棒も使われると注記する。",
   "advice_ja": "縦棒でもコロンでも such that と読む。",
   "category": "notation",
   "level": {
@@ -11,6 +11,7 @@
       "数I"
     ],
     "us": [
+      "Precalculus",
       "Discrete Math"
     ]
   },
@@ -35,9 +36,19 @@
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "5.1 Sets: {x : x > 2}"
+      "note": "5.1 Sets: {x : x > 2}（5.1.1 Notation: | も使われる）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "set-builder notation: { x | 10 ≤ x < 30 }、the vertical bar | is read as such that"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "set-builder notation: { x | x ≥ 4 }"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

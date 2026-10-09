@@ -3,13 +3,12 @@
   "title_ja": "y = ax + b と y = mx + b",
   "title_en": "Slope-intercept form",
   "jp": "一次関数は y = ax + b と書き、a を傾き（中学校学習指導要領解説 中2 一次関数。〔用語・記号〕に 変化の割合・傾き）と呼ぶ。",
-  "us": "y = mx + b と書き、m を slope、b を y-intercept と呼ぶ。OpenStax はこの形を slope-intercept form（177 回）、点と傾きから書く形を point-slope form（96 回）と、式の形に名前を付けて呼び分ける。",
-  "advice_ja": "傾きは m と書く。式の「形」に名前があるので、slope-intercept form・point-slope form・standard form を覚えておくと指示が読める。",
+  "us": "OpenStax Algebra and Trigonometry（2.2）は y = mx + b と書き、m を slope、b を y-intercept と呼ぶ（OpenStax Elementary Algebra 4.5 は y-intercept を点 (0, b) と書く）。OpenStax Elementary Algebra はこの形を slope-intercept form（4.5）、点と傾きから書く形 y − y₁ = m(x − x₁) を point-slope form（4.6）、Ax + By = C を standard form（4.1）と、式の形に名前を付けて呼び分ける。",
+  "advice_ja": "傾きは m と書く。式の「形」に名前があるので、slope-intercept form（y = mx + b）・point-slope form・standard form（Ax + By = C）を覚えておくと指示が読める。",
   "category": "notation",
   "level": {
     "jp": [
-      "中2",
-      "数I"
+      "中2"
     ],
     "us": [
       "Algebra 1",
@@ -21,7 +20,8 @@
     "linear-function",
     "point-slope-form",
     "slope",
-    "slope-intercept-form-of-a-line"
+    "slope-intercept-form-of-a-line",
+    "standard-form-of-a-line"
   ],
   "sources": [
     {
@@ -35,18 +35,25 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "2.2 Linear Equations in One Variable: y = mx + b"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 1"
+      "title": "OpenStax Calculus Volume 1",
+      "note": "1.2 slope-intercept form、standard form of a line"
     },
     {
       "type": "reference",
       "title": "中学校学習指導要領（平成29年告示）〔用語・記号〕",
       "note": "中2 C 関数: 変化の割合・傾き"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "4.1 standard form、4.5 Use the Slope-Intercept Form of an Equation of a Line、4.6 Find the Equation of a Line"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-26"
+  "updated": "2026-10-09"
 }

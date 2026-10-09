@@ -2,8 +2,8 @@
   "id": "normal-distribution-parameter",
   "title_ja": "正規分布の 2 つ目の値",
   "title_en": "Second parameter of the normal distribution",
-  "jp": "日本語版 Wikipedia「正規分布」は正規分布を N(μ, σ²) と表し、2 つ目に分散を置く。",
-  "us": "OpenStax Introductory Statistics は X ~ N(μ, σ) と 2 つ目に標準偏差を置く。",
+  "jp": "高等学校学習指導要領解説 数学B は正規分布を N(μ, σ²) と書き（二項分布の近似も N(np, npq)）、2 つ目に分散を置く。日本語版 Wikipedia「正規分布」も N(μ, σ²) と書く。",
+  "us": "OpenStax Introductory Statistics は本文で X ~ N(μ, σ) と 2 つ目に標準偏差を置く（6.1 The Standard Normal Distribution ほか。巻末の記号表は N(μ, σ²)）。英語版 Wikipedia「Normal distribution」は N(μ, σ²) と書く。",
   "advice_ja": "N(0, 4) の 4 が分散か標準偏差かを必ず確かめる。",
   "category": "notation",
   "level": {
@@ -35,9 +35,21 @@
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e",
-      "note": "X ~ N(μ, σ)"
+      "note": "6.1 The Standard Normal Distribution ほか: X ~ N(μ, σ)（巻末の記号表は N(μ, σ²)）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学B 統計的な推測: N(μ, σ²)、N(np, npq)"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Normal_distribution",
+      "note": "記事「Normal distribution」の Notation: N(μ, σ²)"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

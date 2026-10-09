@@ -2,9 +2,9 @@
   "id": "calculator-instead-of-tables",
   "title_ja": "数表と電卓",
   "title_en": "Tables and calculators",
-  "jp": "数学B では正規分布表を用いて確率を求める（高等学校学習指導要領解説 数学B 統計的な推測）。",
-  "us": "OpenStax Introductory Statistics はグラフ電卓の normalcdf（54 回）・invNorm（37 回）で正規分布の確率と値を求める。",
-  "advice_ja": "米国の授業では電卓の関数で確率を出すことが多い。電卓の型番とキー操作を早めに確かめる。",
+  "jp": "高等学校学習指導要領解説（数学B 統計的な推測）は正規分布表を用いて確率を求めることを取り扱い、信頼区間ではコンピュータなどの情報機器を積極的に用いるとも書く。共通テストの問題冊子は正規分布表（令和6年度 本試験 数学Ⅱ・数学Ｂ ほか）と三角比の表（令和4年度 本試験 数学Ⅰ・数学Ａ ほか）を載せ、必要に応じて用いてよいとする。",
+  "us": "AP Statistics の CED は、正規分布の面積を technology か z-score と standard normal table で求めるとし（topic 2.11）、試験では統計機能付きのグラフ電卓を使うことを前提にする（表も配られる）。OpenStax Introductory Statistics はグラフ電卓の normalcdf（54 件）・invNorm（39 件）で確率と値を求める。",
+  "advice_ja": "AP Statistics の試験は統計機能付きのグラフ電卓を前提にするので、normalcdf・invNorm などの関数名とキー操作を早めに確かめる。CED は standard normal table の読み方も扱う。",
   "category": "calculator",
   "level": {
     "jp": [
@@ -17,9 +17,6 @@
   },
   "term_refs": [
     "arcsine",
-    "exponential-regression",
-    "random-number-table",
-    "random-number",
     "standard-normal-table"
   ],
   "sources": [
@@ -30,14 +27,32 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "数学B 統計的な推測: 正規分布表"
+      "note": "数学B 統計的な推測: 正規分布表、コンピュータなどの情報機器"
     },
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e",
-      "note": "normalcdf（54 件）、invNorm（37 件）"
+      "note": "normalcdf（54 件）、invNorm（39 件）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.11（standard normal table）。試験の説明は統計機能付きのグラフ電卓を前提にする"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和6年度 大学入学共通テスト 本試験 数学Ⅱ・数学Ｂ（問題）",
+      "url": "https://www.dnc.ac.jp/albums/abm.php?d=666&f=abm00004690.pdf&n=2024_or_21_sugaku2B.pdf",
+      "note": "正規分布表（必要に応じて用いてもよい）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和4年度 大学入学共通テスト 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20230601/https://www.dnc.ac.jp/albums/abm.php?d=67&f=abm00000838.pdf&n=R4%E5%95%8F%E9%A1%8C_%E5%95%8F%E9%A1%8C_%E6%95%B0%E5%AD%A6%E2%85%A0%E3%83%BB%E6%95%B0%E5%AD%A6%EF%BC%A1.pdf",
+      "note": "三角比の表"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

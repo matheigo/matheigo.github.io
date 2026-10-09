@@ -2,9 +2,9 @@
   "id": "variance-notation",
   "title_ja": "分散の記号",
   "title_en": "Variance notation",
-  "jp": "日本語版 Wikipedia「分散 (確率論)」は確率変数の分散を V[X] と書く。",
-  "us": "OpenStax Introductory Statistics は分散を σ² と書く。",
-  "advice_ja": "米国の統計では分散を σ²（母集団）・s²（標本）と書く。",
+  "jp": "日本語版 Wikipedia「分散 (確率論)」は確率変数の分散を V[X] と書く。センター試験（平成30年度 本試験 数学Ⅱ・数学Ｂ 第5問）は確率変数 Y の分散を σ² と書く。",
+  "us": "OpenStax Introductory Statistics は分散を σ² と書く。AP Statistics の CED（topic 2.9）は確率変数の分散を V(X) か σ²_X と書く。",
+  "advice_ja": "AP Statistics の CED（topic 2.9）は確率変数の分散を V(X) か σ²_X と書き、OpenStax Introductory Statistics は σ²（母集団）・s²（標本）と書く。どれも the variance of X と読める。",
   "category": "letters",
   "level": {
     "jp": [
@@ -16,6 +16,8 @@
     ]
   },
   "term_refs": [
+    "variance",
+    "population-variance",
     "linear-transformation-of-a-random-variable"
   ],
   "related": [
@@ -35,8 +37,20 @@
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e",
       "note": "σ²"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.9（variance、V(X)）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学Ⅱ・数学Ｂ（問題）",
+      "url": "https://web.archive.org/web/20190601/https://www.dnc.ac.jp/albums/abm.php?f=abm00033144.pdf&n=h30+suugaku2+02suugaku2B.pdf",
+      "note": "第5問: Y の分散 σ²"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

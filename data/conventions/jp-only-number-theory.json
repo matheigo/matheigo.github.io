@@ -2,9 +2,9 @@
   "id": "jp-only-number-theory",
   "title_ja": "日本の数学Aだけの整数の内容",
   "title_en": "Number theory in Japan's Math A",
-  "jp": "数学A「数学と人間の活動」で約数・倍数、ユークリッドの互除法、二進法を扱い、一次不定方程式の整数解も扱う（高等学校学習指導要領解説 数学A）。",
-  "us": "米国の高校課程（OpenStax・CED・IM・CK-12）に Euclidean algorithm・Chinese remainder theorem・Bézout の語は出てこない。大学の離散数学の Levin で出てくる。",
-  "advice_ja": "互除法や不定方程式を英語で説明するときは Euclidean algorithm・linear Diophantine equation と言う。高校の授業では通じないことがある。",
+  "jp": "高等学校学習指導要領解説（数学A「数学と人間の活動」）は、ユークリッドの互除法と二進法を扱うものとし、互除法を使って一次不定方程式の整数解を求めることも考えられる、と書く。",
+  "us": "米国の高校の参照（CED・OpenStax・IM・CK-12）に Euclidean algorithm・Diophantine equation の語は出てこない。大学の離散数学の Levin は 6.2 で congruent modulo n と一次不定方程式（6.2.5 Solving Linear Diophantine Equations）を扱い、Euclidean algorithm にも触れる。",
+  "advice_ja": "互除法や不定方程式を英語で説明するときは Euclidean algorithm・linear Diophantine equation と言う。米国の高校の参照（CED・OpenStax・IM・CK-12）にはどちらも出てこないので、手順も一緒に示す。",
   "category": "classroom-culture",
   "level": {
     "jp": [
@@ -16,7 +16,6 @@
   },
   "term_refs": [
     "bezouts-identity",
-    "chinese-remainder-theorem",
     "congruence-modulo-n",
     "diophantine-equation",
     "linear-diophantine-equation",
@@ -34,15 +33,15 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "数学A 数学と人間の活動: 約数・倍数、ユークリッドの互除法、二進法、不定方程式"
+      "note": "数学A 数学と人間の活動: ユークリッドの互除法、二進法（扱うものとする）、一次不定方程式の整数解（考えられる）"
     },
     {
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "6.2 Introduction to Number Theory"
+      "note": "6.2 Introduction to Number Theory（congruent modulo n、6.2.5 Solving Linear Diophantine Equations）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

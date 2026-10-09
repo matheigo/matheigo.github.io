@@ -3,8 +3,8 @@
   "title_ja": "底面積の文字",
   "title_en": "Letter for base area",
   "jp": "底面積を S、高さを h として角錐の体積を V = Sh/3 と書く（日本語版 Wikipedia「角錐」）。",
-  "us": "IM は底面積を B として柱体の体積を V = Bh と書く（IM 6–8・9–12）。",
-  "advice_ja": "米国の公式の B は底面積（base area）、小文字の b は底辺の長さ。",
+  "us": "IM は底面積を B として、柱体の体積を V = Bh（Grade 7・Geometry 5.9）、角錐・円錐の体積を (1/3)Bh（Geometry 5.13・5.14）と書く。",
+  "advice_ja": "IM の公式の大文字 B は底面積（area of the base）、小文字の b は三角形の底辺の長さ（A = ½bh、Grade 6 1.9）。",
   "category": "letters",
   "level": {
     "jp": [
@@ -17,8 +17,7 @@
   },
   "term_refs": [
     "area-of-the-base",
-    "base-of-a-solid",
-    "cross-sectional-area"
+    "base-of-a-solid"
   ],
   "sources": [
     {
@@ -34,15 +33,15 @@
       "type": "reference",
       "title": "Illustrative Mathematics, IM 6–8 Math",
       "url": "https://im.kendallhunt.com/MS/students/index.html",
-      "note": "Grade 7: V = Bh"
+      "note": "Grade 7: V = Bh、Grade 6 1.9: A = ½ · b · h"
     },
     {
       "type": "reference",
       "title": "Illustrative Mathematics, IM 9–12 Math",
       "url": "https://im.kendallhunt.com/HS/students/index.html",
-      "note": "Geometry: V = Bh"
+      "note": "Geometry 5.9 Cylinder Volumes: V = Bh、5.13・5.14: (1/3)Bh"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

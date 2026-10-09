@@ -2,9 +2,9 @@
   "id": "complement-bar-vs-c-prime",
   "title_ja": "補集合・余事象の記号",
   "title_en": "Complement notation",
-  "jp": "高等学校学習指導要領解説 数学I は集合の用語・記号に補集合の記号を挙げる。日本語版 Wikipedia「差集合」（「補集合」の転送先）は、A の補集合を A の上に横線を引いた Ā で表す書き方を挙げる。",
-  "us": "OpenStax Introductory Statistics は事象 A の余事象を A′（A prime と読む）と書く。",
-  "advice_ja": "統計の授業では A′ を見たら「A の余事象」と読む。",
+  "jp": "高等学校学習指導要領解説は数学I で補集合を Ā と書き、数学A で余事象の確率を P(Ā) = 1 − P(A) と書く。センター試験（平成30年度 数学Ⅰ・数学Ａ 第3問）も「事象 A の余事象を Ā と表し」と書く。",
+  "us": "OpenStax Introductory Statistics（3.1 Terminology）は事象 A の余事象を A′ と書き、A prime と読む。AP Statistics の CED（topic 2.4）は E′・Ē・E^C の 3 通りを挙げ、Levin（3.7）は集合と同じく上線で書く。",
+  "advice_ja": "OpenStax Introductory Statistics の A′ は A の余事象（the complement of A）。AP Statistics の CED は E′・Ē・E^C のどれも挙げるので、上線の Ā もそのまま使える。",
   "category": "notation",
   "level": {
     "jp": [
@@ -33,20 +33,38 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "数学I 数と式: 集合の用語・記号（補集合）"
+      "note": "数学I 集合（Ā）・数学A（P(Ā) = 1 − P(A)）"
     },
     {
       "type": "reference",
       "title": "日本語版 Wikipedia「差集合」",
       "url": "https://ja.wikipedia.org/wiki/%E5%B7%AE%E9%9B%86%E5%90%88",
-      "note": "補集合の記号 Ā"
+      "note": "A^c、∁A、Ā を挙げる"
     },
     {
       "type": "textbook",
       "title": "OpenStax Introductory Statistics 2e",
-      "note": "The complement of event A is denoted A′"
+      "note": "3.1 Terminology: The complement of event A is denoted A′"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20190601/https://www.dnc.ac.jp/albums/abm.php?f=abm00033141.pdf&n=h30+suugaku1+02suugaku1A.pdf",
+      "note": "第3問: 事象 A の余事象を Ā と表し"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+      "note": "Topic 2.4（complement）"
+    },
+    {
+      "type": "reference",
+      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "note": "3.7: 事象の補集合を集合と同じ上線で書く"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

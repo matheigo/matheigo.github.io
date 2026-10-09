@@ -3,14 +3,15 @@
   "title_ja": "要素の個数の記号",
   "title_en": "Number of elements",
   "jp": "集合の要素の個数を n(A) と書く（高等学校学習指導要領解説）。",
-  "us": "Levin は集合の大きさ（cardinality）を |A| と書く。",
-  "advice_ja": "|A| を見たら要素の個数。",
+  "us": "OpenStax Algebra and Trigonometry（13.7 Probability）は日本と同じく n(E) と書く。大学の離散数学の Levin（1.5・5.1）は |A| と書き、cardinality と呼ぶ。",
+  "advice_ja": "大学の離散数学では |A| を要素の個数（cardinality）に使う。絶対値と同じ縦棒に注意。",
   "category": "notation",
   "level": {
     "jp": [
       "数A"
     ],
     "us": [
+      "Precalculus",
       "Discrete Math"
     ]
   },
@@ -28,15 +29,20 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "n(A)"
+      "note": "数学A 場合の数と確率: n(A∪B) = n(A) + n(B) − n(A∩B)"
     },
     {
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "5.1 Sets: |A|"
+      "note": "1.5・5.1 Sets: |A|（cardinality）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "13.7 Probability: n(E)/n(S)（number of elements in E）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

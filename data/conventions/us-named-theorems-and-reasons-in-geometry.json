@@ -2,13 +2,14 @@
   "id": "us-named-theorems-and-reasons-in-geometry",
   "title_ja": "幾何の定理・公準の名前",
   "title_en": "Named postulates and theorems in geometry",
-  "jp": "平行線と角の性質は同位角・錯角の語で扱い、公準・定理の名前は付けない（中学校学習指導要領解説 中2 平行線と角）。",
-  "us": "CK-12 Geometry は Corresponding Angles Postulate・Triangle Sum Theorem・Segment Addition Postulate のように性質 1 つずつに名前を付け、証明の理由（reasons）にその名前を書く。",
-  "advice_ja": "米国の証明では理由の欄に定理・公準の名前を書く。名前の一覧を早めに作っておく。",
+  "jp": "中学校学習指導要領解説（中2 平行線と角）は、平行線の同位角・錯角の性質を名前のない文で挙げて証明の根拠とし、公準の語は出てこない（名前を付けるのは三平方の定理・円周角の定理などの大きな定理）。高等学校学習指導要領解説（数学A）は方べきの定理を 1 つの名前で挙げる。",
+  "us": "CK-12 Geometry は Corresponding Angles Postulate・Triangle Sum Theorem・Segment Addition Postulate のように性質 1 つずつに名前を付け、証明の理由（reasons）にその名前を書く。方べきの定理に当たる 3 つの場合も Intersecting Chords Theorem・Two Secants Segments Theorem・Tangent Secant Segment Theorem と別の名前にする（6.13・6.19・6.20）。",
+  "advice_ja": "CK-12 Geometry の証明（Statement ／ Reason の表）は理由の欄に Base Angles Theorem のような定理・公準の名前を書く。名前の一覧を早めに作っておく。",
   "category": "proof-style",
   "level": {
     "jp": [
-      "中2"
+      "中2",
+      "数A"
     ],
     "us": [
       "Geometry"
@@ -19,7 +20,6 @@
     "corresponding-angles-postulate",
     "alternate-interior-angles-theorem",
     "angle-sum-of-a-triangle",
-    "axiom",
     "postulate",
     "perpendicular-postulate",
     "ruler-postulate",
@@ -35,9 +35,6 @@
     "transitive-property",
     "substitution-property",
     "reflexive-property",
-    "zero-product-property",
-    "linearity-of-expectation",
-    "pigeonhole-principle",
     "intersecting-chords-theorem",
     "power-of-a-point",
     "secant-tangent-theorem"
@@ -56,9 +53,15 @@
       "type": "reference",
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
-      "note": "Corresponding Angles Postulate、Triangle Sum Theorem、Segment Addition Postulate"
+      "note": "Corresponding Angles Postulate、Triangle Sum Theorem、Segment Addition Postulate、6.13 Intersecting Chords Theorem・6.19 Two Secants Segments Theorem・6.20 Tangent Secant Segment Theorem、Statement ／ Reason の表"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学A 図形の性質: 方べきの定理"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

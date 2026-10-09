@@ -2,9 +2,9 @@
   "id": "reciprocal-trig-functions",
   "title_ja": "sec・csc・cot",
   "title_en": "Reciprocal trig functions",
-  "jp": "高等学校学習指導要領の〔用語・記号〕は正弦 sin・余弦 cos・正接 tan だけを挙げ、解説に sec・csc・cot は出てこない。",
-  "us": "OpenStax Algebra and Trigonometry は secant・cosecant・cotangent を定義して使い（secant 109 回）、sin²x + cos²x = 1 などを Pythagorean identities と呼ぶ。",
-  "advice_ja": "sec・csc・cot は 1/cos・1/sin・1/tan。米国の答案ではそのまま使ってよい。",
+  "jp": "高等学校学習指導要領の〔用語・記号〕は正弦 sin・余弦 cos・正接 tan だけを挙げ、解説は三角比の相互関係を 1 + tan²A = 1/cos²A と書く（数学I 図形と計量）。sec・csc・cot は解説にも共通テスト・センター試験の問題にも出てこない。",
+  "us": "OpenStax Algebra and Trigonometry は secant・cosecant・cotangent を定義して使い（7.4 The Other Trigonometric Functions）、1 + tan²θ = sec²θ を sin²θ + cos²θ = 1 と並べて Pythagorean identities と呼ぶ（9.1）。",
+  "advice_ja": "sec・csc・cot は 1/cos・1/sin・1/tan。OpenStax の教科書と AP Calculus の CED（topic 2.10）はそのまま式に使う。",
   "category": "notation",
   "level": {
     "jp": [
@@ -13,6 +13,7 @@
     ],
     "us": [
       "Precalculus",
+      "AP Calculus AB",
       "Calculus I"
     ]
   },
@@ -45,9 +46,26 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "secant、Pythagorean identity"
+      "note": "7.4 The Other Trigonometric Functions（secant ほか）、9.1 Pythagorean Identities"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 図形と計量: 三角比の相互関係 1 + tan²A = 1/cos²A／sec・csc・cot は 0 件"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 2.10（Cotangent、Secant、Cosecant）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "令和3〜8年度・平成26〜31年度の数学の問題に sec・csc・cot は 0 件"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

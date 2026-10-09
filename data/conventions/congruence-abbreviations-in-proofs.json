@@ -2,9 +2,9 @@
   "id": "congruence-abbreviations-in-proofs",
   "title_ja": "証明の理由の書き方",
   "title_en": "Reasons in congruence proofs",
-  "jp": "証明の理由は「3 組の辺がそれぞれ等しい」のように文で書く（中学校学習指導要領解説 中2）。",
-  "us": "CK-12 Geometry は理由を by SSS のような略号で書き、合同な図形の対応する部分を CPCTC と書く。IM Geometry は CPCTC を使わず corresponding parts と書く。",
-  "advice_ja": "略号（SSS、CPCTC）は米国の答案では理由としてそのまま通じる。先生がどちらを使うかを確かめる。",
+  "jp": "中学校学習指導要領解説（中2）は合同条件を「対応する 3 組の辺がそれぞれ等しい」のように文で挙げ、それを証明の根拠として用いるとする。解説には SSS などの略号は出てこない。",
+  "us": "CK-12 Geometry は理由を by SSS のような略号で書き、合同な図形の対応する部分を CPCTC と書く。IM Geometry は略号を使わず、Side-Side-Side Triangle Congruence Theorem のように名前を書き、対応する部分は corresponding parts of congruent triangles と書く。",
+  "advice_ja": "CK-12 Geometry の証明は理由の欄に SSS・CPCTC と略号だけを書き、IM Geometry は定理の名前を書く。先生がどちらを使うかを確かめる。",
   "category": "proof-style",
   "level": {
     "jp": [
@@ -17,8 +17,7 @@
   "term_refs": [
     "cpctc",
     "corresponding-sides",
-    "sss-congruence",
-    "similarity-criteria"
+    "sss-congruence"
   ],
   "sources": [
     {
@@ -28,21 +27,21 @@
       "type": "reference",
       "title": "中学校学習指導要領（平成29年告示）解説 数学編",
       "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
-      "note": "中2 B 図形: 3 組の辺がそれぞれ等しい"
+      "note": "中2 B 図形: 合同条件（対応する 3 組の辺がそれぞれ等しい ほか）、証明の根拠"
     },
     {
       "type": "reference",
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
-      "note": "CPCTC"
+      "note": "4.9 CPCTC、4.13〜4.16（by SSS ほか）"
     },
     {
       "type": "reference",
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
-      "note": "corresponding parts"
+      "note": "2.6・2.7・2.9（… Triangle Congruence Theorem）、corresponding parts of congruent triangles"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

@@ -3,14 +3,15 @@
   "title_ja": "逆三角関数",
   "title_en": "Inverse trig functions",
   "jp": "高等学校学習指導要領解説に逆三角関数（arcsin・arctan）は出てこない。",
-  "us": "OpenStax Algebra and Trigonometry は inverse sine・cosine・tangent を扱い、Calculus Volume 1 は tan⁻¹ と arctan の両方の書き方を挙げる。",
-  "advice_ja": "sin⁻¹ x は 1/sin x ではなく逆三角関数（arcsin x）。",
+  "us": "OpenStax Algebra and Trigonometry は inverse sine・cosine・tangent を扱い、Calculus Volume 1 は tan⁻¹ と arctan の両方の書き方を挙げる。IM Geometry（4.9 Using Trigonometric Ratios to Find Angles）は直角三角形の角を arctan などで求める。",
+  "advice_ja": "sin⁻¹ x は 1/sin x ではなく逆三角関数（arcsin x）。OpenStax Algebra and Trigonometry（8.3）もそう断る。",
   "category": "terminology",
   "level": {
     "jp": [
       "数III"
     ],
     "us": [
+      "Geometry",
       "Precalculus",
       "Calculus I"
     ]
@@ -41,14 +42,20 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "inverse sine, cosine, and tangent"
+      "note": "8.3 Inverse Trigonometric Functions: inverse sine, cosine, and tangent（sin⁻¹ x は 1/sin x ではない）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1",
-      "note": "tan⁻¹ または arctan"
+      "note": "1.4 Inverse Functions: tan⁻¹ または arctan（sin⁻¹ または arcsin）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "4.9 Using Trigonometric Ratios to Find Angles: arcsin、arccos、arctan"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

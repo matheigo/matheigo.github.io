@@ -2,9 +2,9 @@
   "id": "floor-function-notation",
   "title_ja": "ガウス記号と床関数",
   "title_en": "Gauss bracket and floor function",
-  "jp": "x を超えない最大の整数をガウス記号 [x] で書く（日本語版 Wikipedia「床関数と天井関数」）。",
-  "us": "Levin は床関数を ⌊x⌋（floor）、天井関数を ⌈x⌉（ceiling）で書く。",
-  "advice_ja": "[x] は米国ではただのかっこに見える。⌊x⌋ と書いて the floor of x と読む。",
+  "jp": "日本語版 Wikipedia「床関数と天井関数」は、x を超えない最大の整数をガウス記号 [x] で書き、日本の高校数学や大学入試ではガウス記号が使われることがほとんどと書く。",
+  "us": "OpenStax Calculus Volume 1 は ⌊x⌋ を floor function と呼び（4.4 The Mean Value Theorem の練習問題）、ceiling function の名前も使う（2.5 The Precise Definition of a Limit の練習問題）。Volume 2 は [x] を使うときに the greatest integer less than or equal to x と断る（5.6 Ratio and Root Tests の練習問題）。英語版 Wikipedia「Floor and ceiling functions」は [x] と ⌊x⌋ の両方が使われると書く。",
+  "advice_ja": "英語で [x] を使うなら、OpenStax Calculus Volume 2 のように the greatest integer less than or equal to x と断る。断らずに書くなら ⌊x⌋ にし、the floor of x と読む。",
   "category": "notation",
   "level": {
     "jp": [
@@ -12,7 +12,8 @@
       "大学"
     ],
     "us": [
-      "Discrete Math"
+      "Calculus I",
+      "Calculus II"
     ]
   },
   "term_refs": [
@@ -35,12 +36,28 @@
       "note": "ガウス記号"
     },
     {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "4.4 The Mean Value Theorem の練習問題（f(x) = ⌊x⌋、floor function）、2.5 The Precise Definition of a Limit の練習問題（ceiling function）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "5.6 Ratio and Root Tests の練習問題（[x] is the greatest integer less than or equal to x）"
+    },
+    {
       "type": "reference",
-      "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
-      "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "⌊x⌋、⌈x⌉"
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Floor_and_ceiling_functions",
+      "note": "記事「Floor and ceiling functions」の Notation（Gauss の [x] と Iverson の ⌊x⌋・⌈x⌉。両方の書き方が使われる）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学 (教科)」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6_%28%E6%95%99%E7%A7%91%29",
+      "note": "数学A 整数の性質: ガウス記号（level.jp 数A）"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }

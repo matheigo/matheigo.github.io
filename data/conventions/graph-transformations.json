@@ -3,8 +3,8 @@
   "title_ja": "グラフの移動の言い方",
   "title_en": "Graph transformations",
   "jp": "関数のグラフの移動を「x 軸方向に p、y 軸方向に q だけ平行移動」と軸の方向で言う（高等学校学習指導要領解説 数学I）。",
-  "us": "OpenStax Algebra and Trigonometry はもとの関数を parent function と呼び、正弦曲線の中心線を midline、横のずれを phase shift と呼ぶ。",
-  "advice_ja": "米国では shifted 3 units to the right のように向きで言い、もとの関数を parent function と呼ぶ。",
+  "us": "OpenStax Algebra and Trigonometry は移動を 3 units to the right ／ to the left のように向きの語で言い（IM も同じ）、もとの関数を parent function、正弦曲線の中心線を midline、横のずれを phase shift と呼ぶ。",
+  "advice_ja": "x 軸方向に −3 は 3 units to the left のように向きの語で言う。もとの関数は parent function と呼ぶ。",
   "category": "terminology",
   "level": {
     "jp": [
@@ -39,8 +39,14 @@
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
       "note": "parent function、midline、phase shift"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "units to the right ／ units to the left"
     }
   ],
   "confidence": "likely",
-  "updated": "2026-09-25"
+  "updated": "2026-10-09"
 }
