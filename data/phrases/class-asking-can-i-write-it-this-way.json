@@ -24,18 +24,13 @@
       "type": "editorial"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "updated": "2026-10-09",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"
   },
   "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-08）で大きな直し: en が台帳に無い生成の文で、生成のときの MICASE の ① が監査 11 で崩れたあとも Math Stack Exchange の件数で残っていた → 台帳の 1 つ目の文 Is it okay if I write it like this? に戻し、前の en を variant に。見直す点: 台帳の文に戻したこと、ja、新しい要の部分（MICASE 1 ・MSE 14）。次の監査のセッションが見直す。",
-      "raised": "2026-10-08"
-    },
     {
       "code": "corpus-attested-only",
       "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 can i just write | can i write it as | can i write this as（126 件。3 件以上）なので使われている。en の要の部分 okay if i write !on | ok if i write !on | alright if i write !on | all right if i write !on | okay to write it | ok to write it も 14 件（3 件以上）なので en のまま。register は主張しない。",
@@ -44,7 +39,7 @@
   ],
   "reviewed": {
     "machine": null,
-    "audit": "2026-10-08",
+    "audit": "2026-10-09",
     "human": null
   }
 }
