@@ -12,9 +12,6 @@
   "name_ja": "条件で表す集合（内包的記法）",
   "category": "sets",
   "term_ref": "set-builder-notation",
-  "related": [
-    "set-builder-colon"
-  ],
   "level": {
     "jp": [
       "数I"
@@ -27,7 +24,8 @@
     ]
   },
   "notes": [
-    "{x | x > 0} は the set of all x such that x is greater than zero と読む。縦線は such that。"
+    "{x | x > 0} は the set of all x such that x is greater than zero と読む。縦線は such that。",
+    "Levin（5.1）は {x : x > 2} のようにコロンで書き、コロンも such that と読む（縦棒 | を使うこともあると断る）。"
   ],
   "sources": [
     {
@@ -47,7 +45,7 @@
       "type": "reference",
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
-      "note": "5.1 Sets（{x : x > 2} is the set of all x such that x is greater than 2。1 つ目の読みの文）"
+      "note": "5.1 Sets（{x : x > 2} is the set of all x such that x is greater than 2。1 つ目の読みの文。コロンは such that と読み、| も使われると注記。notes[1]）"
     },
     {
       "type": "reference",
@@ -57,7 +55,7 @@
     }
   ],
   "confidence": "verified",
-  "updated": "2026-09-27",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "the set of all * such that": 4

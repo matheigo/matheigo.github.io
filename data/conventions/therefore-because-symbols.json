@@ -2,7 +2,7 @@
   "id": "therefore-because-symbols",
   "title_ja": "∴ と ∵",
   "title_en": "Therefore and because signs",
-  "jp": "日本語版 Wikipedia「∴」「∵」は ∴ を「ゆえに」、∵ を「なぜならば」と読む記号として挙げる。",
+  "jp": "日本の中学・高校では、板書やノート・答案の手書きで ∴（ゆえに）∵（なぜならば）をよく使う。学習指導要領解説と共通テストの問題文には出てこない。",
   "us": "OpenStax（9 冊で ∴ 3 回、∵ 0 回）と AP の CED（Calculus・Statistics とも 0 回）は、結論を Therefore, … と語で書く（OpenStax で Therefore は 1,000 回を超える）。CK-12 Geometry（2.8 Truth Tables）と Levin（1.1）は ∴ を論理の推論の形（前提の後の結論）の記号として使う。∵ はどの参照にも出てこない。",
   "advice_ja": "英語の答案は結論を Therefore, … と語で書く（OpenStax・AP の CED の書き方）。∵ は米国の参照に出てこないので、理由は Since か Because で書く。",
   "category": "proof-style",
@@ -65,6 +65,23 @@
       "title": "Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition",
       "url": "https://discrete.openmathbooks.org/dmoi4.html",
       "note": "1.1 Mathematical Statements: ∴（therefore）を推論の形に"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "∴・∵ は出てこない（jp）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "∴・∵ は出てこない（jp）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "共通テスト（令和3〜8年度）の問題文に ∴・∵ は出てこない（jp）"
     }
   ],
   "confidence": "likely",
@@ -73,6 +90,11 @@
     {
       "code": "audit-human",
       "note": "Phase 5 監査（2026-10-09）で判断がつかない: 日本の高校の資料（解説・共通テスト／センター試験）に ∴ ∵ は 0 で、日本語版 Wikipedia は記号の説明だけ。CK-12 Geometry・Levin は ∴ を使う。資料で言える形に直した。人間に決めてほしいこと: 慣習差として残すか外すか（PLAN 付録 B #5）。人間レビューへ。",
+      "raised": "2026-10-09"
+    },
+    {
+      "code": "corpus-human-settled",
+      "note": "jp は人間が決めた文（2026-10-09。docs/DECISIONS.md「Phase 5 監査（セッション 14）の前の決定」の 2）。慣習差として残す（PLAN 付録 B #5）。",
       "raised": "2026-10-09"
     }
   ],

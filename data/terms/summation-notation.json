@@ -71,7 +71,7 @@
     }
   ],
   "pitfalls": [
-    "センター試験（数学Ⅱ・数学Ｂ）の数列の問題は Σ_{k=1}^{n} のように添字に k を使う（慣習差 summation-index-letter）。OpenStax Calculus Volume 1 のリーマン和・定積分の節では i を使う（k・j より多い）。この i は虚数単位ではない。",
+    "センター試験（数学Ⅱ・数学Ｂ）の数列の問題は Σ_{k=1}^{n} のように添字に k を使い、OpenStax Precalculus（11.4 Series and Their Notations）も k を使う。OpenStax Calculus Volume 1 のリーマン和・定積分の節では i を使う（k・j より多い）。文字が違っても添字の役割は同じで、この i は虚数単位ではない。",
     "Σ は sigma と読み、式全体は the sum from i equals one to n of … と読む。"
   ],
   "related": [
@@ -103,6 +103,11 @@
       "title": "大学入試センター 平成30年度 大学入試センター試験 本試験 数学Ⅱ・数学Ｂ（問題）",
       "url": "https://web.archive.org/web/20190601/https://www.dnc.ac.jp/albums/abm.php?f=abm00033144.pdf&n=h30+suugaku2+02suugaku2B.pdf",
       "note": "第3問: Σ の添字 k"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "11.4 Series and Their Notations: Σ の添字 k（pitfalls[0]）"
     }
   ],
   "confidence": "verified",
@@ -111,7 +116,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "sigma notation": 43,

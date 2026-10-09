@@ -16,9 +16,6 @@
   "name_ja": "分散（V(X)、Var(X)、σ²）",
   "category": "probability-statistics",
   "term_ref": "variance",
-  "related": [
-    "variance-notation"
-  ],
   "level": {
     "jp": [
       "数B"
@@ -29,7 +26,8 @@
     ]
   },
   "notes": [
-    "V(X)・Var(X) は the variance of X と読む。σ² は sigma squared。"
+    "V(X)・Var(X) は the variance of X と読む。σ² は sigma squared。",
+    "AP Statistics の CED（topic 2.9）は確率変数の分散を V(X) か σ²_X と書く。"
   ],
   "sources": [
     {
@@ -44,11 +42,11 @@
       "type": "reference",
       "title": "College Board, AP Statistics Course and Exam Description (Effective Fall 2026)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
-      "note": "Topic 2.9（variance、V(X)）"
+      "note": "Topic 2.9（variance、V(X) か σ²_X。notes[1]）"
     }
   ],
   "confidence": "verified",
-  "updated": "2026-09-27",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "sigma squared": 10,
