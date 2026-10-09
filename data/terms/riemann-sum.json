@@ -15,7 +15,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "区分求積法は、区間を n 等分して長方形の面積の和をつくり、その極限を定積分として求める手法の名前（学習指導要領解説も区分求積法の考えで定積分を導入する扱いに触れる）。AP の CED と OpenStax Calculus は手法の名前を立てず、長方形の和を Riemann sum、その極限を定積分の定義として扱う。日本の「lim (1/n)Σ f(k/n) を定積分で表せ」型の問題は、OpenStax Calculus では express the limit as a definite integral のように指示される。",
+  "mapping_note": "区分求積法は、区間を n 等分して長方形の面積の和をつくり、その極限を定積分として求める手法の名前（学習指導要領解説も区分求積法の考えで定積分を導入する扱いに触れる）。AP の CED と OpenStax Calculus は手法の名前を立てず、長方形の和を Riemann sum、その極限を定積分の定義として扱う。日本の「lim (1/n)Σ f(k/n) を定積分で表せ」型の問題は、OpenStax Calculus Volume 1（5.2 The Definite Integral）では express the limits as integrals と指示される（AP の CED topic 6.3 は Represent the limiting case of the Riemann sum as a definite integral と書く）。",
   "domains": [
     "calculus"
   ],
@@ -73,7 +73,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 1"
+      "title": "OpenStax Calculus Volume 1",
+      "note": "5.2 The Definite Integral（express the limits as integrals）"
     },
     {
       "type": "editorial"
@@ -97,7 +98,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "Riemann sum": 174

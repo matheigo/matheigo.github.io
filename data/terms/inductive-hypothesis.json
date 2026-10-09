@@ -55,7 +55,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "「n = k のとき成り立つと仮定する」は Assume P(k) is true for some k ≥ 1. のように書く（Levin 4.5）。"
+    "「n = k のとき成り立つと仮定する」は、Levin 4.5 では Assume P(k) is true for some arbitrary k ≥ 1. や Now assume that P(k) is true for an arbitrary integer k ≥ 0. のように arbitrary を付けて書く。"
   ],
   "related": [
     "proof-by-induction",
@@ -87,7 +87,7 @@
     "audit": "2026-09-27",
     "human": null
   },
-  "updated": "2026-09-27",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "induction hypothesis": 53,
