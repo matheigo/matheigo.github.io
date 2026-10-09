@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。見出しの integrals resulting in inverse trigonometric functions は OpenStax Calculus Volume 1 の節の名前。学習指導要領解説には逆三角関数が出てこないので、∫1/(1 + x²)dx は x = tan θ と置換して定積分の値だけを求める。OpenStax Calculus Volume 1（Calc I）は arcsin・arctan を扱い、∫dx/(1 + x²) = arctan x + C、∫dx/√(1 − x²) = arcsin x + C を公式として使う。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。見出しの integrals resulting in inverse trigonometric functions は OpenStax Calculus Volume 1 の節の名前。学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法は ax + b = t、x = a sin θ と置き換えるものを中心に扱う（〔内容の取扱い〕）。逆三角関数を使わずに求めるなら、∫₀¹ dx/(1 + x²) のような定積分は x = tan θ と置換して値を出す。OpenStax Calculus Volume 1（Calc I）は arcsin・arctan を扱い、∫dx/(1 + x²) = arctan x + C、∫dx/√(1 − x²) = arcsin x + C を公式として使う。",
   "domains": [
     "calculus",
     "trigonometry"
@@ -68,7 +68,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "written": {
       "integrals resulting in inverse trigonometric functions": 1

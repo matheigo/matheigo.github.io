@@ -18,7 +18,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "学習指導要領解説は「変化量」とは言うが、定積分で求まる変化の合計の名前は出てこない。英語では net change（増えた分と減った分を差し引いた変化）と呼び、OpenStax Calculus Volume 1 は ∫ₐᵇ F′(x)dx = F(b) − F(a) を Net Change Theorem として示す。AP の CED は Unit 6 を accumulation of change（変化の積み重ね）として組み立て、net change を topic 8.3 で扱う。見出しの「純変化量」と ja.alt の「純変化定理」は、学習指導要領解説に無い、本プロジェクトの訳語。",
+  "mapping_note": "学習指導要領解説（数学III）は、速度 v を時刻 t₁ から t₂ まで積分して点の「位置の変化」を、|v| を積分して「道のり」を求める例を挙げるが、定積分で求まる変化の合計一般の名前は出てこない。英語では net change（増えた分と減った分を差し引いた変化）と呼び、OpenStax Calculus Volume 1 は ∫ₐᵇ F′(x)dx = F(b) − F(a) を Net Change Theorem として示す。AP の CED は Unit 6 を accumulation of change（変化の積み重ね）として組み立て、net change を topic 8.3 で扱う。見出しの「純変化量」と ja.alt の「純変化定理」は、学習指導要領解説に無い、本プロジェクトの訳語。",
   "domains": [
     "calculus"
   ],
@@ -82,7 +82,7 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "「変化量」は出てくるが、定積分で求まる変化の合計の名前と「純変化量」は出てこない"
+      "note": "数学III 積分法: 速度の定積分で「位置の変化」と「道のり」を求める例（定積分で求まる変化の合計の名前と「純変化量」は出てこない）"
     }
   ],
   "confidence": "verified",
@@ -91,7 +91,7 @@
     "audit": "2026-09-27",
     "human": null
   },
-  "updated": "2026-09-27",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "net change": 9,

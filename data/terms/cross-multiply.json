@@ -18,7 +18,7 @@
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "日本語の「内項の積と外項の積は等しい」（学習指導要領解説には内項・外項の語は無く、日本語版 Wikipedia「比例式」にある）に当たる性質を、英語の参照（OpenStax・IM・CK-12）は名前で呼ばず、比例式を a/b = c/d の分数の形にして cross-multiply する（ad = bc）と手順を動詞で言う。内項・外項に当たる名前（means・extremes）は用例コーパスにも参照にも出てこない。",
+  "mapping_note": "日本語の「内項の積と外項の積は等しい」（学習指導要領解説には内項・外項の語は無く、日本語版 Wikipedia「比例式」にある）に当たる性質を、OpenStax・IM は名前で呼ばず、比例式を a/b = c/d の分数の形にして cross-multiply する（ad = bc）と手順を動詞で言い、CK-12 Geometry はこの解き方を Cross-Multiplication Theorem と呼ぶ（7.2）。内項・外項に当たる名前（means・extremes）は用例コーパスにも参照にも出てこない。",
   "domains": [
     "algebra"
   ],
@@ -75,6 +75,12 @@
       "title": "中学校学習指導要領（平成29年告示）解説 数学編",
       "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
       "note": "内項・外項の語は出てこない"
+    },
+    {
+      "type": "reference",
+      "title": "CK-12 Geometry (K12 LibreTexts)",
+      "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
+      "note": "7.2 Ratio and Proportion in Similar Figures（Cross-Multiplication Theorem）"
     }
   ],
   "confidence": "verified",
@@ -83,7 +89,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "cross-multiply | cross-multiplying | cross-multiplied | cross-multiplies | cross-multiplication": 49

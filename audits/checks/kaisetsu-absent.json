@@ -1,0 +1,4435 @@
+{
+ "rows": 212,
+ "status": {
+  "checked A": 48,
+  "checked B": 100,
+  "語 0": 64
+ },
+ "toRead": 0,
+ "entriesToRead": 0,
+ "list": [
+  {
+   "collection": "conventions",
+   "id": "descriptive-statistics-coverage",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "平均絶対偏差は 0 件。散らばりの指標は範囲（中1）・四分位範囲（中2）",
+   "keys": {
+    "平均絶対偏差": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "平均値との差の絶対値": {}
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "inverse-trig-functions",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "高等学校学習指導要領解説に逆三角関数（arcsin・arctan）は出てこない。",
+   "keys": {
+    "逆三角関数": {},
+    "arcsin": {},
+    "arctan": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "逆関数": {
+     "高 数学編 総説": 1,
+     "高 数学II": 1,
+     "高 数学III": 10,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "jp-only-algebra-and-discrete-topics",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "高等学校学習指導要領解説は、理数に関する学科の科目「理数数学I」の (1) 数と式（「数学I」の (1) を参照して扱う）で「二重根号をはずす計算まで扱い，…ことも考えられる」と書き（数学I の節に二重根号は出てこない）、数学B で階差数列を扱う。",
+   "keys": {
+    "数学Iの節に二重根号": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-calculus-topics",
+   "confidence": "verified",
+   "field": "advice_ja",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "AP Calculus の Unit 7（微分方程式）と Unit 8 の average value（topic 8.1）は学習指導要領解説の数学III に出てこない。",
+   "keys": {},
+   "fallback": true,
+   "paraphrases": {
+    "微分方程式": {
+     "高 理数数学II": 5,
+     "高 付録 理数数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-calculus-topics",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "高等学校学習指導要領解説の数学III に微分方程式・方向場・関数の平均値（average value）は出てこない（微分方程式は理数に関する学科の科目「理数数学II」で dy/dx = ky 程度を扱う）。",
+   "keys": {
+    "微分方程式": {
+     "高 理数数学II": 5,
+     "高 付録 理数数学II": 1
+    },
+    "方向場": {},
+    "関数の平均値": {},
+    "averagevalue": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "微分方程式": {
+     "高 理数数学II": 5,
+     "高 付録 理数数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "arctangent",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "逆三角関数が出てこない",
+   "keys": {
+    "逆三角関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "逆関数": {
+     "高 数学編 総説": 1,
+     "高 数学II": 1,
+     "高 数学III": 10,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "average-value-of-a-function",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "学習指導要領解説には出てこない。",
+   "keys": {
+    "関数の平均値": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "cofunction-identity",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "高等学校学習指導要領〔用語・記号〕（数学I 図形と計量）は sin・cos・tan だけで cot は無く、共通テストの問題文にも cot は出てこない。",
+   "keys": {
+    "90° − θ の三角比": {},
+    "余角公式": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "(90°−A)": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "cofunction-identity",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "数I 図形と計量: 正弦・余弦・正接、sin・cos・tan（cot は無い）",
+   "keys": {
+    "cot": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "(90°−A)": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "critical-point",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "学習指導要領解説には f′(x) = 0 となる x の名前が出てこない。",
+   "keys": {
+    "臨界点": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "critical-point",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "f′(x) = 0 となる x の名前が出てこない",
+   "keys": {
+    "臨界点": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "cross-multiply",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "内項・外項の語は出てこない",
+   "keys": {
+    "内項": {},
+    "外項": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "cylindrical-shell",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "学習指導要領解説には、この薄い円筒の名前も、それを使う体積の求め方の名前も出てこない。",
+   "keys": {
+    "円柱の殻": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "回転させて": {
+     "高 数学III": 1,
+     "高 数学C": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "cylindrical-shell",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "この薄い円筒の名前も、それを使う体積の求め方の名前も出てこない・「円柱の殻」は出てこない",
+   "keys": {
+    "円柱の殻": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "回転させて": {
+     "高 数学III": 1,
+     "高 数学C": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "derivatives-of-inverse-trig-functions",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "学習指導要領解説には逆三角関数が出てこない。",
+   "keys": {
+    "逆三角関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "逆関数": {
+     "高 数学編 総説": 1,
+     "高 数学II": 1,
+     "高 数学III": 10,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "derivatives-of-inverse-trig-functions",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "逆三角関数が出てこない",
+   "keys": {
+    "逆三角関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "逆関数": {
+     "高 数学編 総説": 1,
+     "高 数学II": 1,
+     "高 数学III": 10,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "epsilon-delta-definition",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "学習指導要領解説（数学III）には出てこない。",
+   "keys": {
+    "ε-δ 論法": {},
+    "イプシロン・デルタ論法": {},
+    "極限の厳密な定義": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "epsilon-delta-definition",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "数学III 極限: ε-δ は出てこない",
+   "keys": {
+    "ε-δ": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "factored-form",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "数学I 二次関数: 二次方程式の解を二次関数のグラフと x 軸との共有点の x 座標として扱う（因数分解形の名前は無い）",
+   "keys": {
+    "因数分解形": {},
+    "分解形": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "factoring-by-grouping",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "学習指導要領解説にも日本語版 Wikipedia「因数分解」にも、この方法の名前は出てこない（Wikipedia の因数分解の節は共通因数でくくる・たすきがけ・因数定理などで、項を組にしてくくる方法の節はない）。",
+   "keys": {
+    "グループ分けによる因数分解": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "hydrostatic-force",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "高等学校学習指導要領解説（数学編 理数編）には出てこない。",
+   "keys": {
+    "静水圧による力": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "integrals-giving-inverse-trig-functions",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "逆三角関数が出てこない",
+   "keys": {
+    "逆三角関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "逆関数": {
+     "高 数学編 総説": 1,
+     "高 数学II": 1,
+     "高 数学III": 10,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "integration-by-completing-the-square",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "学習指導要領解説には逆三角関数が出てこない。",
+   "keys": {
+    "逆三角関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "逆関数": {
+     "高 数学編 総説": 1,
+     "高 数学II": 1,
+     "高 数学III": 10,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "integration-by-completing-the-square",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "逆三角関数が出てこない・「平方完成による積分」は出てこない",
+   "keys": {
+    "逆三角関数": {},
+    "平方完成による積分": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "逆関数": {
+     "高 数学編 総説": 1,
+     "高 数学II": 1,
+     "高 数学III": 10,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "inverse",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "checked A",
+   "sentence": "数学I 集合と命題: 「裏」は 0 件（対偶・必要条件・十分条件はある）",
+   "keys": {
+    "裏": {
+     "高 数学編 総説": 2,
+     "高 数学B": 12
+    }
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "inverse-trigonometric-function",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "学習指導要領解説には出てこないが、OpenStax Algebra and Trigonometry（Precalculus）で扱い、AP Calculus でも微分する（CED topic 3.4）。",
+   "keys": {
+    "逆三角関数": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "逆関数": {
+     "高 数学編 総説": 1,
+     "高 数学II": 1,
+     "高 数学III": 10,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "liate",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "OpenStax Calculus Volume 2 が紹介する覚え方で、学習指導要領解説には対応するものが出てこない。",
+   "keys": {
+    "対応するもの": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "liate",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "LIATE に当たる覚え方は出てこない",
+   "keys": {
+    "LIATEに当たる覚え方": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "negation",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "理数数学I (1) 数と式（発展・拡充）: 真理値表を用いて命題「p→q」の否定が「p∧（¬q）」であること（数学I の節には無い）",
+   "keys": {
+    "否定": {
+     "高 数学B": 5,
+     "高 理数数学I": 1
+    }
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "nested-radical",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "理数数学I 数と式: 二重根号をはずす計算まで扱うことも考えられる（数学I の節には無い。2 件）",
+   "keys": {
+    "二重根号": {
+     "高 理数数学I": 2
+    }
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "related-rates",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "学習指導要領解説（数学III）には、時刻とともに変わる 2 つの量の変化率の関係を求める問題の名前が出てこない。",
+   "keys": {
+    "関連変化率": {},
+    "関連変化率の問題": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "時刻": {
+     "高 数学編 総説": 4,
+     "高 数学III": 7,
+     "高 付録 理科": 1,
+     "中学校": 13
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "related-rates",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "数学III: 時刻とともに変わる 2 つの量の変化率の関係を求める問題の名前が出てこない・「関連変化率」は出てこない",
+   "keys": {
+    "関連変化率": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "時刻": {
+     "高 数学編 総説": 4,
+     "高 数学III": 7,
+     "高 付録 理科": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "removable-discontinuity",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "学習指導要領解説（数学III）には不連続点の種類の名前が出てこない。",
+   "keys": {
+    "除去可能な不連続点": {},
+    "除去可能な不連続": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "removable-discontinuity",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "数学III: 不連続点の種類の名前が出てこない",
+   "keys": {
+    "除去可能な不連続点": {},
+    "除去可能な不連続": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "second-derivative-test",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "学習指導要領解説には、f′(a) = 0 かつ f″(a) の符号で極大・極小を判定する方法の名前が出てこない。",
+   "keys": {
+    "第 2 次導関数判定法": {},
+    "第 2 次導関数テスト": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "second-derivative-test",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "f′(a) = 0 かつ f″(a) の符号で極大・極小を判定する方法の名前が出てこない・「第 2 次導関数判定法」は出てこない",
+   "keys": {
+    "第2次導関数判定法": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "shell-method",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "日本語ではバウムクーヘン積分と呼ばれ（日本語版 Wikipedia の記事名）、学習指導要領解説には出てこない。",
+   "keys": {
+    "シェル法": {},
+    "バウムクーヘン積分": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "回転させて": {
+     "高 数学III": 1,
+     "高 数学C": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "slope-field",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "学習指導要領解説には出てこない。",
+   "keys": {
+    "方向場": {},
+    "傾きの場": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "微分方程式": {
+     "高 理数数学II": 5,
+     "高 付録 理数数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "synthetic-division",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "学習指導要領解説（数学II）には組立除法が出てこない（日本語版 Wikipedia「数学 (教科)」は数学II の高次方程式に挙げる）。",
+   "keys": {
+    "組立除法": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "synthetic-division",
+   "confidence": "verified",
+   "field": "sources[5].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "数学II いろいろな式: 組立除法は出てこない",
+   "keys": {
+    "組立除法": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "test-point",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "学習指導要領解説には、区間の代表の値を代入して符号を調べる手順の名前が出てこない。",
+   "keys": {
+    "テスト点": {},
+    "代表点": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "test-point",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "「テスト点」は出てこない・区間の代表の値を代入して符号を調べる手順の名前が出てこない",
+   "keys": {
+    "テスト点": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "triple-angle-formulas",
+   "confidence": "verified",
+   "field": "sources[5].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "数学II (4) 三角関数 イ(ア): 三角関数の加法定理から新たな性質（2 倍角の公式・三角関数の合成）を導く（3 倍角の公式は出てこない）",
+   "keys": {
+    "3倍角の公式": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "倍角": {
+     "高 数学編 総説": 1,
+     "高 数学II": 3,
+     "高 付録 数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "universal-set",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "「全体集合」は共通テストの数学I 第1問（令和 3〜8 年度ほか）が「全体集合 U を…とする」と書く語で、学習指導要領解説には出てこない。",
+   "keys": {
+    "全体集合": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "vertical-tangent",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "学習指導要領解説には、接線が y 軸に平行になる点の名前が出てこない。",
+   "keys": {
+    "垂直接線": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "vertical-tangent",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "接線が y 軸に平行になる点の名前が出てこない",
+   "keys": {
+    "垂直接線": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "washer-method",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "学習指導要領解説にはこの求め方の名前が出てこない。",
+   "keys": {
+    "ワッシャー法": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "回転させて": {
+     "高 数学III": 1,
+     "高 数学C": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "washer-method",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked A",
+   "sentence": "この求め方の名前が出てこない・「ワッシャー法」は出てこない",
+   "keys": {
+    "ワッシャー法": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "回転させて": {
+     "高 数学III": 1,
+     "高 数学C": 1
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "accumulation-function-scope",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "共通テスト 令和7年度 本試験 数学Ⅱ，数学Ｂ，数学Ｃ 第3問は F(x) = ∫₀ˣ f(t) dt の形の関数を名前を付けずに扱い（正解は上端 x、下端 0）、高等学校学習指導要領解説（数学II・数学III の積分）にもこの関数の名前は出てこない。",
+   "keys": {},
+   "fallback": true,
+   "paraphrases": {
+    "S(t)": {
+     "高 数学II": 4
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "accumulation-function-scope",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "数学II・III 積分: 上端を変数とする定積分の関数の名前は出てこない",
+   "keys": {},
+   "fallback": true,
+   "paraphrases": {
+    "S(t)": {
+     "高 数学II": 4
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "antiderivative-vs-indefinite-integral",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学II 微分・積分の考え・数学III 積分法: 不定積分（原始関数は出てこない）",
+   "keys": {
+    "原始関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "逆の演算": {
+     "高 数学II": 3
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "circle-and-sphere-boundary",
+   "confidence": "verified",
+   "field": "sources[5].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "第1学年 B 図形: 柱体，錐体及び球の表面積と体積／球面は 0 件",
+   "keys": {
+    "球面": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "半円": {
+     "中学校": 5
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "congruence-abbreviations-in-proofs",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "解説には SSS などの略号は出てこない。",
+   "keys": {
+    "SSS": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "合同条件": {
+     "高 数学編 総説": 1,
+     "高 数学A": 1,
+     "高 付録 中学校": 2,
+     "中学校": 19
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "descriptive-statistics-coverage",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "学習指導要領解説（中学校・高等学校）に平均絶対偏差の名前は出てこない。",
+   "keys": {},
+   "fallback": true,
+   "paraphrases": {
+    "平均値との差の絶対値": {}
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "descriptive-statistics-coverage",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "平均絶対偏差は 0 件。数学I データの分析: 分散・標準偏差（指導の例に、平均値との差の絶対値の和をデータの総数で割った値を考えさせること）",
+   "keys": {
+    "平均絶対偏差": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "平均値との差の絶対値": {}
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "inequality-symbols",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "中学校学習指導要領の〔用語・記号〕（中1）は ≦ ≧ を挙げ、学習指導要領解説（中学校・高等学校）と共通テストの問題文もこの形で書く（≤ ≥ は出てこない）。",
+   "keys": {
+    "≤≥": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "≦": {
+     "高 数学II": 12,
+     "高 数学III": 6,
+     "高 数学A": 2,
+     "高 数学B": 8,
+     "高 理数数学II": 4,
+     "高 付録 中学校": 1,
+     "中学校": 3
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "inequality-symbols",
+   "confidence": "verified",
+   "field": "sources[5].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "≦ 33・≧ 7 件、≤ ≥ は 0 件",
+   "keys": {
+    "≤≥": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "≦": {
+     "高 数学II": 12,
+     "高 数学III": 6,
+     "高 数学A": 2,
+     "高 数学B": 8,
+     "高 理数数学II": 4,
+     "高 付録 中学校": 1
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "inequality-symbols",
+   "confidence": "verified",
+   "field": "sources[6].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "≦ 3・≧ 3 件、≤ ≥ は 0 件",
+   "keys": {
+    "≤≥": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "≦": {
+     "中学校": 3
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "lhopitals-rule-use",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学III 課題学習の例〈微分法〉: ロピタルの定理（内容には無い）",
+   "keys": {},
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "conventions",
+   "id": "log-and-ln",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "ln は解説に出てこない。",
+   "keys": {},
+   "fallback": true,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "log-and-ln",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学II 指数関数・対数関数の例: log₁₀ a／数学III 課題学習〈微分法〉: lim x log x（底なし）／ln は 0 件",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "mapping-rule-notation",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "中学校・高等学校の学習指導要領解説と共通テスト・センター試験の問題に (x, y) → (x + a, y + b) の形の記法は出てこない。",
+   "keys": {},
+   "fallback": true,
+   "paraphrases": {
+    "平行移動した点": {
+     "高 数学C": 1
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "reciprocal-trig-functions",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "sec・csc・cot は解説にも共通テスト・センター試験の問題にも出てこない。",
+   "keys": {},
+   "fallback": true,
+   "paraphrases": {
+    "1+tan": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "reciprocal-trig-functions",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学I 図形と計量: 三角比の相互関係 1 + tan²A = 1/cos²A／sec・csc・cot は 0 件",
+   "keys": {
+    "sec": {},
+    "csc": {},
+    "cot": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "1+tan": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "repeated-combination-notation",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "高等学校学習指導要領〔用語・記号〕の数学A の記号は nPr・nCr・n! で、H は無い。",
+   "keys": {
+    "H": {
+     "高 数学II": 1,
+     "高 数学B": 8,
+     "高 数学C": 2,
+     "高 理数数学I": 2,
+     "高 付録 理科": 3
+    }
+   },
+   "fallback": false,
+   "paraphrases": {
+    "重複組合せ": {
+     "高 理数数学I": 1
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "repeated-combination-notation",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学A 場合の数と確率: nPr、nCr、n!（H は無い）",
+   "keys": {
+    "H": {
+     "高 数学II": 1,
+     "高 数学B": 8,
+     "高 数学C": 2,
+     "高 理数数学I": 2,
+     "高 付録 理科": 3
+    }
+   },
+   "fallback": false,
+   "paraphrases": {
+    "重複組合せ": {
+     "高 理数数学I": 1
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "series-includes-finite-sums",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学B 数列: 等差数列の和・等比数列の和（級数の語は無い）／数学III 極限: 無限級数・無限等比級数",
+   "keys": {
+    "級数": {
+     "高 数学編 総説": 1,
+     "高 数学III": 21,
+     "高 理数数学II": 2,
+     "高 付録 数学III": 3
+    }
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "conventions",
+   "id": "subset-symbol",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "高等学校学習指導要領解説 数学I は集合の記号に A ⊂ B を挙げ（⊆ は出てこない）、センター試験（平成26年度 数学Ⅰ・数学Ａ 第1問）は「集合 X が集合 Y の部分集合であるとき X ⊂ Y と表す」と定める。",
+   "keys": {
+    "⊆": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "⊂": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "therefore-because-symbols",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "学習指導要領解説と共通テストの問題文には出てこない。",
+   "keys": {},
+   "fallback": true,
+   "paraphrases": {
+    "したがって": {
+     "高 数学I": 5,
+     "高 数学II": 4,
+     "高 数学III": 2,
+     "高 数学編 第3章": 1,
+     "高 理数（理科）": 4,
+     "中学校": 24
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "therefore-because-symbols",
+   "confidence": "verified",
+   "field": "sources[8].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "∴・∵ は出てこない（jp）",
+   "keys": {
+    "∴": {},
+    "∵": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "したがって": {
+     "中学校": 24
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "therefore-because-symbols",
+   "confidence": "verified",
+   "field": "sources[9].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "∴・∵ は出てこない（jp）",
+   "keys": {
+    "∴": {},
+    "∵": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "したがって": {
+     "高 数学I": 5,
+     "高 数学II": 4,
+     "高 数学III": 2,
+     "高 数学編 第3章": 1,
+     "高 理数（理科）": 4
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "us-named-rules-and-tests",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "中学校学習指導要領解説（中1）は等式の性質を 4 つ並べて番号（等式の性質 1〜4）で呼び、高等学校学習指導要領解説には導関数の計算・グラフの判定の名前（べき乗の法則・第二次導関数判定法・垂直線テスト）が出てこない。",
+   "keys": {},
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "conventions",
+   "id": "us-named-theorems-and-reasons-in-geometry",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "中2 B 図形: 平行線の性質・平行線になるための条件（同位角の 2 つの事柄を証明の根拠とする）、錯角はそこから演繹的に導く。証明の根拠は対頂角の性質・平行線の性質・三角形の合同条件など（公準の語は 0 件）",
+   "keys": {
+    "公準": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "平行線の性質": {
+     "中学校": 11
+    }
+   }
+  },
+  {
+   "collection": "symbols",
+   "id": "polar-form-cis",
+   "confidence": "verified",
+   "field": "notes[1]",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "日本の高等学校学習指導要領解説には cis が出てこない（日本語版 Wikipedia「複素数」は r cis(φ) と書くこともあると説明する）。",
+   "keys": {
+    "cis": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "極形式": {
+     "高 数学C": 5,
+     "高 理数数学II": 2,
+     "高 付録 数学C": 1
+    }
+   }
+  },
+  {
+   "collection": "symbols",
+   "id": "polar-form-cis",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学C 複素数平面（極形式は出てくるが cis は出てこない）",
+   "keys": {
+    "極形式は出てくるがcis": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "極形式": {
+     "高 数学C": 5,
+     "高 理数数学II": 2,
+     "高 付録 数学C": 1
+    }
+   }
+  },
+  {
+   "collection": "symbols",
+   "id": "wave-dash-range-jp",
+   "confidence": "verified",
+   "field": "notes[1]",
+   "docs": [
+    "chu"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "度数分布表の階級「10〜20」は 10 以上 20 未満（中学校学習指導要領解説 中1）で、IM Grade 6 8.7 もヒストグラムの階級は左端を含み右端を含まないとする。",
+   "keys": {
+    "範囲の〜": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "arrange-by-the-variable-of-lowest-degree",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "見出しの日本語は学習指導要領解説に出てこない。",
+   "keys": {
+    "最低次の文字について整理する": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "一つの文字に着目": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "arrange-by-the-variable-of-lowest-degree",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学I 数と式: 「最低次の文字について整理する」は 0 件（見出しの日本語は解説に出てこない）",
+   "keys": {
+    "最低次の文字について整理する": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "一つの文字に着目": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "base-of-the-natural-logarithm",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "OpenStax Algebra and Trigonometry は自然対数を ln x、底を省いた log x を常用対数（底 10）と書く（学習指導要領解説には ln が出てこない）。",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "base-of-the-natural-logarithm",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "ln が出てこない",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "candidates-test",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "学習指導要領解説には、閉区間で端点と極値の値を比べて最大値・最小値を求める方法の名前が出てこない。",
+   "keys": {
+    "候補点テスト": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "区間が制限された": {
+     "高 数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "candidates-test",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "閉区間で端点と極値の値を比べて最大値・最小値を求める方法の名前が出てこない",
+   "keys": {
+    "候補点テスト": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "区間が制限された": {
+     "高 数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "clockwise",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "回転の向きとしての「負の向き」は学習指導要領解説・共通テスト／センター試験・日本語版 Wikipedia には出てこない（日本語版 Wikipedia「時計回り・反時計回り」は、数学では反時計回りを正の向き、測量の方位角では時計回りを正の向きとする）。",
+   "keys": {
+    "負の向き": {},
+    "時計回り": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "右回り": {
+     "高 数学C": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "cofunction-identity",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "数学I 図形と計量: 三角比の基本的な相互関係として sin A = cos(90° − A)・cos A = sin(90° − A) を挙げる（名前は無い。cot も無い）",
+   "keys": {
+    "cot": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "(90°−A)": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "combination-with-repetition",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "日本語版 Wikipedia「重複組合せ」は総数を H の記号で書くが、高等学校学習指導要領〔用語・記号〕の数学A の記号は nPr・nCr・n! で H は無い。",
+   "keys": {
+    "記号〕の数学Aの記号はnPr": {},
+    "nCr": {
+     "高 数学II": 1,
+     "高 数学A": 2,
+     "高 付録 数学A": 1
+    },
+    "n!でH": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "重複組合せ": {
+     "高 理数数学I": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "combination-with-repetition",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学A 場合の数と確率: nPr、nCr、n!（H は無い）",
+   "keys": {
+    "H": {
+     "高 数学II": 1,
+     "高 数学B": 8,
+     "高 数学C": 2,
+     "高 理数数学I": 2,
+     "高 付録 理科": 3
+    }
+   },
+   "fallback": false,
+   "paraphrases": {
+    "重複組合せ": {
+     "高 理数数学I": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "compare-coefficients",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "「係数比較法」と「数値代入法」は日本語の呼び名で、学習指導要領解説には出てこない（高等学校学習指導要領解説（数学II）は、恒等式の未定係数法を等式の証明とあわせて扱ってよいと書く）。",
+   "keys": {
+    "係数を比較する": {},
+    "係数を比べる": {},
+    "係数比較": {},
+    "係数比較法": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "未定係数": {
+     "高 数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "constant-multiple-rule",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "学習指導要領解説には {kf(x)}′ = kf′(x) の性質の名前が出てこない。",
+   "keys": {
+    "定数倍の法則": {},
+    "定数倍": {
+     "高 数学編 総説": 1,
+     "高 数学II": 10,
+     "高 数学III": 2,
+     "高 付録 数学II": 2
+    }
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "constant-multiple-rule",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "「定数倍の法則」は出てこない・{kf(x)}′ = kf′(x) の性質の名前が出てこない",
+   "keys": {
+    "定数倍の法則": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "derivative-of-the-exponential-function",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "OpenStax Calculus は aˣ ln a と書く（OpenStax Algebra and Trigonometry は底を省いた log x を常用対数とし、学習指導要領解説には ln が出てこない）。",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "derivative-of-the-exponential-function",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学III 微分法: 三角関数・指数関数・対数関数の導関数（ln は出てこない）",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "derivative-of-the-logarithm",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "OpenStax は自然対数を ln x と書き（学習指導要領解説には ln が出てこない）、ell en x や natural log of x と読む。",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "derivative-of-the-logarithm",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "ln が出てこない",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "derivatives-of-trigonometric-functions",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "(tan x)′ = 1/cos²x は、OpenStax Calculus では sec²x（secant squared x）と書く（学習指導要領解説には sec が出てこない）。",
+   "keys": {
+    "sec": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "1+tan": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "derivatives-of-trigonometric-functions",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学III 微分法: 三角関数の導関数（sec は出てこない）",
+   "keys": {
+    "sec": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "1+tan": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "determine-the-coefficients",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "「二次関数の決定」（学習指導要領解説・共通テストには出てこない言い方）の内容はこのエントリで扱う。",
+   "keys": {
+    "係数を決定する": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "dilation",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "中学校学習指導要領解説（第 3 学年）は、拡大・縮小を一つの図形を操作して新たな図形を作ることと書き、相似の位置・相似の中心を扱うが、変換の名前は出てこない（縮図・拡大図は小学校第 6 学年）。",
+   "keys": {
+    "拡大・縮小": {},
+    "相似拡大": {},
+    "中心相似": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "disk-method",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "学習指導要領解説（数学III）には、回転体の体積の求め方の名前が出てこない。",
+   "keys": {
+    "円板法": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "回転させて": {
+     "高 数学III": 1,
+     "高 数学C": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "disk-method",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "数学III: 回転体の体積の求め方の名前が出てこない・「円板法」は出てこない",
+   "keys": {
+    "円板法": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "回転させて": {
+     "高 数学III": 1,
+     "高 数学C": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "diverge-to-negative-infinity",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "OpenStax Algebra and Trigonometry は自然対数を ln x、底を省いた log x を常用対数（底 10）と書く（学習指導要領解説には ln が出てこない）。",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "diverge-to-negative-infinity",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "ln が出てこない",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "first-derivative-test",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "学習指導要領解説（数学II・III）には、f′(x) の符号の変化から極大・極小を判定する方法の名前が出てこない。",
+   "keys": {
+    "第 1 次導関数判定法": {},
+    "第 1 次導関数テスト": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "first-derivative-test",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "数学II・III: f′(x) の符号の変化から極大・極小を判定する方法の名前が出てこない・「第 1 次導関数判定法」は出てこない",
+   "keys": {
+    "第1次導関数判定法": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "fundamental-theorem-of-calculus",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "学習指導要領解説（数学II）は「微分と積分の関係」に着目して扱い、定理の名前（微分積分学の基本定理）は出てこない。",
+   "keys": {
+    "微積分学の基本定理": {},
+    "微分積分学の基本定理": {},
+    "微分と積分の関係": {
+     "高 数学II": 4,
+     "高 付録 数学II": 1
+    }
+   },
+   "fallback": true,
+   "paraphrases": {
+    "微分と積分の関係": {
+     "高 数学II": 4,
+     "高 付録 数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "fundamental-theorem-of-calculus-part-1",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "学習指導要領解説（数学II）は d/dx ∫ₐˣ f(t)dt = f(x) を「微分と積分の関係」に着目して扱い、定理の名前や番号は出てこない。",
+   "keys": {
+    "微積分学の基本定理 第 1 部": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "微分と積分の関係": {
+     "高 数学II": 4,
+     "高 付録 数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "fundamental-theorem-of-calculus-part-2",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "学習指導要領解説（数学II）には、∫ₐᵇ f(x)dx = F(b) − F(a) を定理として名前で呼ぶ扱いが出てこない（定積分は面積 S(t) や区分求積法の考えと関連付けて導入する）。",
+   "keys": {
+    "微積分学の基本定理 第 2 部": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "区分求積": {
+     "高 数学II": 3,
+     "高 数学III": 1,
+     "高 理数数学II": 1
+    },
+    "微分と積分の関係": {
+     "高 数学II": 4,
+     "高 付録 数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "grouped-sequence",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "日本語版 Wikipedia「数学 (教科)」は数学B の数列の項目に群数列を挙げる（学習指導要領解説に群数列の語は出てこない。",
+   "keys": {
+    "群数列": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "調和級数": {
+     "高 数学III": 6
+    },
+    "群に区切": {
+     "高 数学III": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "grouped-sequence",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学B (1) 数列: 群数列は出てこない／数学III 課題学習〈積分法〉: 調和級数の項を群に区切り、群ごとに和を取る",
+   "keys": {
+    "群数列": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "調和級数": {
+     "高 数学III": 6
+    },
+    "群に区切": {
+     "高 数学III": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "improper-integral",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学III 積分法: 広義積分の語は無い（課題学習〈積分法〉の例に、調和級数の部分和と ∫₁ⁿ (1/x)dx を比べ、n を大きくしたときの値を観察すること）",
+   "keys": {
+    "広義積分": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "調和級数": {
+     "高 数学III": 6
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "indefinite-integral",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "OpenStax Algebra and Trigonometry は底を省いた log x を常用対数（底 10）と定める（学習指導要領解説には ln が出てこない）ので、英語の答案では ln を使う。",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    },
+    "逆の演算": {
+     "高 数学II": 3
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "indefinite-integral",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学II 微分・積分の考え・数学III 積分法: 不定積分（原始関数は出てこない）",
+   "keys": {
+    "原始関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    },
+    "逆の演算": {
+     "高 数学II": 3
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "integration-formulas",
+   "confidence": "verified",
+   "field": "pitfalls[2]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "OpenStax Algebra and Trigonometry は底を省いた log を常用対数（底 10）とする（学習指導要領解説には ln が出てこない）ので、英語の答案では ln を使う。",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "integration-formulas",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "ln が出てこない",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "left-riemann-sum",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "区分求積法の和 Σ_{k=0}^{n−1}（左端）と Σ_{k=1}^{n}（右端）の名前は学習指導要領解説に出てこないが、AP の CED（topic 6.2）は left ／ right ／ midpoint Riemann sums と trapezoidal sums に名前を付けて比べる（解説で台形公式に触れるのは、理数に関する学科の科目「理数数学II」の発展・拡充の例だけ）。",
+   "keys": {
+    "左リーマン和": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "台形公式": {
+     "高 理数数学II": 1
+    },
+    "区分求積": {
+     "高 数学II": 3,
+     "高 数学III": 1,
+     "高 理数数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "logarithm",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "OpenStax Algebra and Trigonometry（6.3）と Intermediate Algebra（10.3）は、底を省いた log x を常用対数（底 10）、ln x を自然対数とする（学習指導要領解説には ln が出てこない）。",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "logarithm",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学III: ln は出てこない（〔用語・記号〕は 自然対数, e）",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "logical-connective",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "数学I 集合と命題: 必要条件・十分条件・対偶、集合の記号 a∈A・A∩B・A∪B・A⊂B・Ā（論理結合子の名前は無い）。理数数学I (1) 数と式（発展・拡充）: 真理値表と p∧（¬q）",
+   "keys": {
+    "論理結合子": {},
+    "論理演算子": {},
+    "かつ": {
+     "高 数学編 総説": 4,
+     "高 理数編 総説": 1,
+     "高 理数数学I": 1,
+     "高 理数編 第3章": 2,
+     "高 付録 総則": 10,
+     "高 付録 理科": 1,
+     "高 付録 理数（理科）": 1,
+     "高 付録 その他": 15
+    },
+    "または": {
+     "高 数学I": 1,
+     "高 数学II": 1,
+     "高 数学III": 1,
+     "高 数学B": 1,
+     "高 数学C": 3
+    }
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "natural-logarithm",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "OpenStax Algebra and Trigonometry は底を省いた log x を常用対数（底 10）と定める（学習指導要領解説には ln が出てこない）ので、英語の答案では自然対数に ln を使う。",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "natural-logarithm",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "ln が出てこない",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "net-change",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "学習指導要領解説（数学III）は、速度 v を時刻 t₁ から t₂ まで積分して点の「位置の変化」を、|v| を積分して「道のり」を求める例を挙げるが、定積分で求まる変化の合計一般の名前は出てこない。",
+   "keys": {
+    "純変化量": {},
+    "純変化定理": {},
+    "累積": {
+     "高 数学編 総説": 1,
+     "高 数学C": 1,
+     "高 付録 中学校": 1,
+     "中学校": 11
+    }
+   },
+   "fallback": true,
+   "paraphrases": {
+    "位置の変化": {
+     "高 数学III": 1
+    },
+    "道のり": {
+     "高 数学III": 2,
+     "中学校": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "numerical-integration",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "「数値積分」の語は無い。理数数学II (7) 積分法（発展・拡充）: 面積を台形公式やシンプソンの公式で求める（数学III には無い）",
+   "keys": {
+    "数値積分": {},
+    "数学III": {
+     "高 前付": 1,
+     "高 数学編 総説": 16,
+     "高 数学II": 3,
+     "高 数学III": 15,
+     "高 数学編 第3章": 7,
+     "高 理数編 総説": 3,
+     "高 理数数学I": 3,
+     "高 理数数学II": 9,
+     "高 付録 総則": 2,
+     "高 付録 数学III": 1,
+     "高 付録 数学C": 2,
+     "高 付録 理数数学I": 2,
+     "高 付録 理数数学II": 4
+    }
+   },
+   "fallback": false,
+   "paraphrases": {
+    "台形公式": {
+     "高 理数数学II": 1
+    },
+    "シンプソン": {
+     "高 理数数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "optimization-problem",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "語",
+   "status": "checked B",
+   "sentence": "学習指導要領解説（数学II・III）は、文章題の最大・最小を「最適化」とは呼ばない（解説の「最適化」は IoT の話だけ）。",
+   "keys": {
+    "最適化": {
+     "高 数学編 総説": 1,
+     "高 理数編 総説": 1
+    }
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "power-rule",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "学習指導要領解説には (xⁿ)′ = nxⁿ⁻¹ の公式の名前が出てこない。",
+   "keys": {
+    "xⁿ の微分": {},
+    "べき乗則": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "power-rule",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "(xⁿ)′ = nxⁿ⁻¹ の公式の名前が出てこない・「べき乗則」は出てこない",
+   "keys": {
+    "べき乗則": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "projectile-motion",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "見出しの「放物運動」は数学の学習指導要領解説には無い（高等学校学習指導要領の理科「物理」の内容（解説 数学編 理数編の付録）の項目「放物運動」と日本語版 Wikipedia「放物運動」にはある）。",
+   "keys": {
+    "放物運動": {
+     "高 付録 理科": 1
+    },
+    "投射運動": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "噴水": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "projectile-motion",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "中学校 第 3 学年 関数: 関数 y = ax² を具体的な事象と関連付けて扱う（落下の式 y = 4.9x² は 0 件）",
+   "keys": {
+    "落下の式y=4.9x2": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "噴水": {
+     "中学校": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "quadrantal-angle",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "学習指導要領解説・共通テスト／センター試験・日本語版 Wikipedia にも、動径が座標軸に重なる角をまとめて呼ぶ名前は出てこない。",
+   "keys": {
+    "座標軸上の角": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "quadrantal-angle",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "「座標軸上の角」ほか、動径が座標軸に重なる角をまとめて呼ぶ名前は出てこない",
+   "keys": {
+    "座標軸上の角": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "reference-angle",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "見出しの「基準角」は学習指導要領解説に無い、本プロジェクトの訳語（「基準角」「参照角」は学習指導要領解説・共通テスト／センター試験・日本語版 Wikipedia に出てこない）。",
+   "keys": {
+    "基準角": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "鈍角の三角比": {
+     "高 数学編 総説": 1,
+     "高 数学I": 3,
+     "高 付録 数学I": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "separable-differential-equation",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "ln が出てこない（数学III 課題学習〈微分法〉の例は自然対数を lim x log x と底を書かずに書く）",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "significance-level",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学B 統計的な推測〔用語・記号〕: 有意水準（数学I の節には無い）",
+   "keys": {
+    "有意水準": {
+     "高 数学B": 3,
+     "高 付録 数学B": 1
+    }
+   },
+   "fallback": true,
+   "paraphrases": {
+    "基準として": {
+     "高 数学I": 1,
+     "高 付録 総則": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "standard-form",
+   "confidence": "verified",
+   "field": "sources[5].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学I 二次関数: 「一般形」は 0 件（見出しの日本語は解説に出てこない）",
+   "keys": {
+    "一般形": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "supplementary-angle-identity",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "高等学校学習指導要領解説（数学I）は cos A = −cos(180° − A) の形で公式を示すだけで名前を付けない。",
+   "keys": {
+    "cosA=−cosの形で公式を示すだけで": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "(180°−A)": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "supplementary-angle-identity",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "数学I 図形と計量: 鈍角の三角比 cos A = −cos(180° − A)（名前は無い）",
+   "keys": {
+    "180° − θ の三角比": {},
+    "補角公式": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "(180°−A)": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "surface-area-of-revolution",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "学習指導要領解説（数学III）は回転体の体積の公式を扱うが、回転面の面積の公式は出てこない（課題学習〈積分法〉の例に、球の表面積を定積分を利用して導くことが挙がる）。",
+   "keys": {
+    "回転面の面積の公式": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "表面積": {
+     "高 数学III": 2,
+     "高 数学A": 3,
+     "高 付録 中学校": 2,
+     "中学校": 12
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "surface-area-of-revolution",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学III: 回転体の体積の公式を扱う。回転面の面積の公式は無い（課題学習〈積分法〉の例に球の表面積を定積分で導くこと）",
+   "keys": {
+    "回転面の面積の公式": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "表面積": {
+     "高 数学III": 2,
+     "高 数学A": 3,
+     "高 付録 中学校": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "system-of-inequalities",
+   "confidence": "verified",
+   "field": "pitfalls[2]",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "system of inequalities は、OpenStax では 2 変数の不等式の組をグラフで解く節（Elementary Algebra の Graphing Systems of Linear Inequalities ほか）の言い方で、高等学校学習指導要領解説（数学II 図形と方程式）の「不等式の表す領域」（慣習差 inequality-terms-scope、エントリ system-of-linear-inequalities）に当たる（書き言葉では OpenStax Elementary Algebra と OpenStax Algebra and Trigonometry に出てくるが、話し言葉にはほとんど出てこない）。",
+   "keys": {
+    "話し言葉にはほとんど": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "transformation-of-a-variable",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学I データの分析: 「変量の変換」は 0 件（見出しの日本語は解説に出てこない）",
+   "keys": {
+    "変量の変換": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "と変換した": {
+     "高 数学I": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-function",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "高等学校学習指導要領の〔用語・記号〕は sin・cos・tan だけを挙げ、解説に sec・csc・cot は出てこない。",
+   "keys": {
+    "sec": {},
+    "csc": {},
+    "cot": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "1+tan": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-function",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "sec・csc・cot（正割・余割・余接）は出てこない",
+   "keys": {
+    "sec": {},
+    "csc": {},
+    "cot": {},
+    "正割": {},
+    "余割": {},
+    "余接": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "1+tan": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-identities",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "学習指導要領解説には sec（正割）が出てこない。",
+   "keys": {
+    "sec": {},
+    "正割": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "1+tan": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-identities",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "数学I 図形と計量: 三角比の基本的な相互関係（sin A = cos(90° − A)、1 + tan²A = 1/cos²A ほか。正割・sec は 0 件）",
+   "keys": {
+    "正割": {},
+    "sec": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "1+tan": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-integrals",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "∫(1/cos²x)dx = tan x + C は、OpenStax Calculus では sec²x（secant squared x）を使って ∫sec²x dx = tan x + C と書く（学習指導要領解説には sec が出てこない）。",
+   "keys": {
+    "sec": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "1+tan": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-integrals",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "sec が出てこない",
+   "keys": {
+    "sec": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "1+tan": {
+     "高 数学I": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-substitution",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "学習指導要領解説（数学III）は x = a sin θ の置き換えを置換積分法に含め、別の名前を付けない。",
+   "keys": {
+    "三角置換": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "1+tan": {
+     "高 数学I": 2
+    },
+    "x=asinθ": {
+     "高 数学III": 2,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-substitution",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "1/cos²θ は OpenStax では sec²θ と書く（学習指導要領解説には sec が出てこない）。",
+   "keys": {
+    "sec": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "1+tan": {
+     "高 数学I": 2
+    },
+    "x=asinθ": {
+     "高 数学III": 2,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "vertex-form",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "数学I 二次関数: y = a(x − p)² + q の形に変形し、頂点 (p, q) に着目（名前は無い）。標準形は数学C の放物線・楕円の方程式",
+   "keys": {
+    "標準形": {
+     "高 数学C": 4
+    },
+    "頂点形": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "zero-product-property",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "中学校 第 3 学年 数と式（二次方程式）: 「AB=0ならば,A=0またはB=0」であることを用いる方法（性質の名前は無い。「零因子の性質」「零積の性質」は 0 件）",
+   "keys": {
+    "零因子の性質": {},
+    "零積の性質": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "conventions",
+   "id": "antiderivative-vs-indefinite-integral",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "高等学校学習指導要領解説は「不定積分」の語だけを使い、「原始関数」は出てこない。",
+   "keys": {
+    "原始関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "逆の演算": {
+     "高 数学II": 3
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "circle-and-sphere-boundary",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "chu"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "中学校学習指導要領解説（第1学年 図形）は、球を柱体・錐体と並ぶ空間図形として扱い、球の表面積と体積を求める（解説に「球面」は出てこない）。",
+   "keys": {
+    "球面": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "半円": {
+     "中学校": 5
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "factoring-trinomials-method",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "数学I 数と式: (ax + b)(cx + d) の公式を用いた展開と因数分解（「たすき」は 0 件）",
+   "keys": {
+    "たすき": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "symbols",
+   "id": "iff-arrow",
+   "confidence": "verified",
+   "field": "sources[5].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "数学I 集合と命題（必要条件,十分条件や対偶などの指導。「⇔」「同値」は出てこない。level.jp の数I はこの必要条件・十分条件による）",
+   "keys": {
+    "⇔": {},
+    "同値": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "absolute-extrema",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「絶対極値」は出てこない",
+   "keys": {
+    "絶対極値": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "accumulation-function",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「定積分で表された関数」は出てこない・「累積関数」は出てこない",
+   "keys": {
+    "定積分で表された関数": {},
+    "累積関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "antiderivative",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "学習指導要領解説（数学II・III）には「不定積分」だけが出てきて「原始関数」は出てこない。",
+   "keys": {
+    "原始関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "逆の演算": {
+     "高 数学II": 3
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "antiderivative",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "数学II・III: 「不定積分」だけが出てきて「原始関数」は出てこない",
+   "keys": {
+    "原始関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "逆の演算": {
+     "高 数学II": 3
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "area-problem",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「面積問題」は出てこない",
+   "keys": {
+    "面積問題": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "average-value-of-a-function",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「関数の平均値」は出てこない",
+   "keys": {
+    "関数の平均値": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "chain-rule",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "学習指導要領解説（数学III）は「合成関数の微分法」と言い、「連鎖律」は出てこない（日本語版 Wikipedia の記事名は「連鎖律」）。",
+   "keys": {
+    "連鎖律": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "clockwise",
+   "confidence": "verified",
+   "field": "sources[9].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "回転の向きとしての「負の向き」は出てこない",
+   "keys": {
+    "負の向き": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "右回り": {
+     "高 数学C": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "compare-coefficients",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「係数比較法」「数値代入法」は出てこない",
+   "keys": {
+    "係数比較法": {},
+    "数値代入法": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "未定係数": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "compare-coefficients",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "数学II いろいろな式: 恒等式の未定係数法（等式の証明に関連して）。「係数比較法」「数値代入法」は出てこない",
+   "keys": {
+    "係数比較法": {},
+    "数値代入法": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "未定係数": {
+     "高 数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "congruent-arcs",
+   "confidence": "verified",
+   "field": "pitfalls[3]",
+   "docs": [
+    "chu"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "中学校学習指導要領解説は「同じ弧に対する円周角」と書き、「等しい弧」という語は出てこない。",
+   "keys": {
+    "等しい弧": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "congruent-arcs",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "第 3 学年 図形: 「同じ弧に対する円周角」（「等しい弧」は 0 件）",
+   "keys": {
+    "等しい弧": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "corner-nondifferentiable",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「角（微分不可能点）」は出てこない",
+   "keys": {
+    "角(微分不可能点)": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "decreasing",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「単調に減少する」は出てこない",
+   "keys": {
+    "単調に減少する": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "decreasing",
+   "confidence": "verified",
+   "field": "sources[5].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「単調に減少する」は出てこない",
+   "keys": {
+    "単調に減少する": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "derivative-of-a-parametric-curve",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「媒介変数曲線の微分」は出てこない",
+   "keys": {
+    "媒介変数曲線の微分": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "determine-the-coefficients",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "数学I 二次関数: 「二次関数の決定」「2次関数の決定」は 0 件",
+   "keys": {
+    "2次関数の決定": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "direct-proof",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「直接証明」は 0 件（対偶を利用した証明・背理法による証明はある）",
+   "keys": {
+    "直接証明": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "divisibility",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "学習指導要領解説（中学校・高等学校）は約数・倍数の言い方で扱い、「整除性」「整除」は出てこない。",
+   "keys": {
+    "整除性": {},
+    "整除": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "divisibility",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「整除性」「整除」は出てこない（約数・倍数の言い方）",
+   "keys": {
+    "整除性": {},
+    "整除": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "divisibility",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「整除性」「整除」は出てこない（約数・倍数の言い方）",
+   "keys": {
+    "整除性": {},
+    "整除": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "exponential-model",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「指数モデル」は出てこない",
+   "keys": {
+    "指数モデル": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "extreme-value-theorem",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「極値定理」は出てこない",
+   "keys": {
+    "極値定理": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "factoring-by-grouping",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "第 3 学年 数と式: 「グループ分けによる因数分解」は 0 件（見出しは本プロジェクトの訳語）",
+   "keys": {
+    "グループ分けによる因数分解": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "factoring-by-grouping",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「グループ分けによる因数分解」は 0 件",
+   "keys": {
+    "グループ分けによる因数分解": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "function-notation",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "数学I 二次関数: f(x) の書き方（「関数記号」は 0 件）",
+   "keys": {
+    "関数記号": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "hydrostatic-force",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「静水圧による力」は出てこない",
+   "keys": {
+    "静水圧による力": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "implicit-differentiation",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「陰関数微分」は出てこない",
+   "keys": {
+    "陰関数微分": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "improper-integral",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "学習指導要領解説に「広義積分」の語は出てこない。",
+   "keys": {
+    "広義積分": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "調和級数": {
+     "高 数学III": 6
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "indefinite-integral",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "学習指導要領解説（数学II・III）には「不定積分」だけが出てきて、「原始関数」は出てこない。",
+   "keys": {
+    "原始関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    },
+    "逆の演算": {
+     "高 数学II": 3
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "infinite-discontinuity",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「無限不連続」は出てこない",
+   "keys": {
+    "無限不連続": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "infinite-limit",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「無限大の極限」は出てこない",
+   "keys": {
+    "無限大の極限": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "integration-by-long-division",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「長除法による積分」は出てこない",
+   "keys": {
+    "長除法による積分": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "inverse-trigonometric-function",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「逆三角関数」は出てこない",
+   "keys": {
+    "逆三角関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "逆関数": {
+     "高 数学編 総説": 1,
+     "高 数学II": 1,
+     "高 数学III": 10,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "jump-discontinuity",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「跳躍不連続」は出てこない",
+   "keys": {
+    "跳躍不連続": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "left-riemann-sum",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「左リーマン和」は出てこない",
+   "keys": {
+    "左リーマン和": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "台形公式": {
+     "高 理数数学II": 1
+    },
+    "区分求積": {
+     "高 数学II": 3,
+     "高 数学III": 1,
+     "高 理数数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "linear-approximation",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「接線近似」は出てこない",
+   "keys": {
+    "接線近似": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "local-extremum",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「相対極値」は出てこない",
+   "keys": {
+    "相対極値": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "local-maximum",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「相対最大値」は出てこない",
+   "keys": {
+    "相対最大値": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "logical-connective",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "高等学校学習指導要領解説（数学I 集合と命題）は必要条件・十分条件・対偶や簡単な命題の証明を扱い、集合の記号として a ∈ A、A ∩ B、A ∪ B、A ⊂ B、Ā を挙げるが、「論理結合子」の名前は出てこない。",
+   "keys": {
+    "論理結合子": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "midpoint-riemann-sum",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「中点リーマン和」は出てこない",
+   "keys": {
+    "中点リーマン和": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "net-change",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "数学III 積分法: 速度の定積分で「位置の変化」と「道のり」を求める例（定積分で求まる変化の合計の名前と「純変化量」は出てこない）",
+   "keys": {
+    "純変化量": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "位置の変化": {
+     "高 数学III": 1
+    },
+    "道のり": {
+     "高 数学III": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "numerical-integration",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "学習指導要領解説に「数値積分」の語は出てこない。",
+   "keys": {
+    "数値積分": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "台形公式": {
+     "高 理数数学II": 1
+    },
+    "シンプソン": {
+     "高 理数数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "parametric-equations",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「媒介変数方程式」は出てこない",
+   "keys": {
+    "媒介変数方程式": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "phase-shift",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "学習指導要領解説（数学II 三角関数）は、この内容を三角関数の式の定数とグラフの関係として扱い、「位相」の語は使わない。",
+   "keys": {
+    "位相": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "phase-shift",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "数学II (4) 三角関数: 三角関数の式における定数とグラフとの関係（「位相」の語は無い）。数学I 二次関数: x 軸方向に p だけ平行移動",
+   "keys": {
+    "位相": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "radical-expression",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "中学校 第 3 学年 数と式: 「根号式」「根号を含む式」は 0 件（見出しは本プロジェクトの訳語）",
+   "keys": {
+    "根号式": {},
+    "根号を含む式": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "reference-angle",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「基準角」「参照角」は出てこない",
+   "keys": {
+    "基準角": {},
+    "参照角": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "鈍角の三角比": {
+     "高 数学編 総説": 1,
+     "高 数学I": 3,
+     "高 付録 数学I": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "right-riemann-sum",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「右リーマン和」は出てこない",
+   "keys": {
+    "右リーマン和": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "secant-line",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "学習指導要領解説（数学II・III）には「割線」が出てこない。",
+   "keys": {
+    "割線": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "secant-line",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "数学II・III: 「割線」が出てこない",
+   "keys": {
+    "割線": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "shell-method",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「シェル法」は出てこない",
+   "keys": {
+    "シェル法": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "回転させて": {
+     "高 数学III": 1,
+     "高 数学C": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "side-angle-inequality",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "数学I 図形と計量: 「辺と角の大小」は 0 件（辺と角との間に成り立つ基本的な関係は正弦・余弦定理の文）",
+   "keys": {
+    "辺と角の大小": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "slope-field",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「方向場」は出てこない",
+   "keys": {
+    "方向場": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "微分方程式": {
+     "高 理数数学II": 5,
+     "高 付録 理数数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "space-diagonal",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「立体の対角線」は 0 件",
+   "keys": {
+    "立体の対角線": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "special-right-triangles",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「特別な直角三角形」は 0 件（見出しは本プロジェクトの訳語）",
+   "keys": {
+    "特別な直角三角形": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "tangent-problem",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「接線問題」は出てこない",
+   "keys": {
+    "接線問題": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "triangle-proportionality-theorem",
+   "confidence": "verified",
+   "field": "pitfalls[3]",
+   "docs": [
+    "chu"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "中学校学習指導要領解説はこの内容を「平行線と線分の比についての性質」と呼び、「三角形と比の定理」は出てこない（見出しは本プロジェクトの言い方）。",
+   "keys": {
+    "三角形と比の定理": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "triangle-proportionality-theorem",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "第 3 学年 図形: 平行線と線分の比についての性質（「三角形と比の定理」は 0 件）",
+   "keys": {
+    "三角形と比の定理": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "universal-set",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "数学I 集合と命題: 「全体集合」は 0 件",
+   "keys": {
+    "全体集合": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  }
+ ]
+}

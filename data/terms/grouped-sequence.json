@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。日本語版 Wikipedia「数学 (教科)」は数学B の数列の項目に群数列を挙げる（学習指導要領解説には出てこない）。英語で説明するなら group the terms like this: (1), (2, 3), (4, 5, 6), … と式で見せる。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。日本語版 Wikipedia「数学 (教科)」は数学B の数列の項目に群数列を挙げる（学習指導要領解説に群数列の語は出てこない。項をいくつかごとに群に区切る考えは、数学III の課題学習〈積分法〉の例に、調和級数の発散を示す方法として出てくる）。英語で説明するなら group the terms like this: (1), (2, 3), (4, 5, 6), … と式で見せる。",
   "domains": [
     "sequences"
   ],
@@ -58,7 +58,7 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "数学B (1) 数列（群数列は出てこない）"
+      "note": "数学B (1) 数列: 群数列は出てこない／数学III 課題学習〈積分法〉: 調和級数の項を群に区切り、群ごとに和を取る"
     }
   ],
   "confidence": "verified",
@@ -67,7 +67,7 @@
     "audit": "2026-09-27",
     "human": null
   },
-  "updated": "2026-09-27",
+  "updated": "2026-10-09",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"
