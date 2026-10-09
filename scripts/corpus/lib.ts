@@ -836,17 +836,17 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "cinch x": "!a cinch | sinch", // not "it's a cinch" (batch 33)
   },
   "sine-of-theta": {
-    "sine of theta": "!the sine of *",
+    "sine of theta": "!the !inverse !arc sine of *", // not inverse sine of x / arc sine of x (公開前の抜き取り（Fable）、2026-10-09)
     "sine theta": "sine theta | sine x | sine alpha | sine two x",
     "the sine of theta": "the sine of *",
   },
   "cosine-of-theta": {
-    "cosine of theta": "!the cosine of *",
+    "cosine of theta": "!the !inverse !arc cosine of *", // not inverse cosine of x / arc cosine of x (同)
     "cosine theta": "cosine theta | cosine x | cosine alpha | cosine two x",
     "the cosine of theta": "the cosine of *",
   },
   "tangent-of-theta": {
-    "tangent of theta": "!the tangent of *",
+    "tangent of theta": "!the !inverse !arc tangent of *", // not inverse tangent of x / arc tangent of x (同)
     "tangent theta": "tangent theta | tangent x | tangent alpha",
     "tan theta": "tan theta | !arc tan x | tan alpha", // not arctan (batch 33)
   },

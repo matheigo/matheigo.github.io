@@ -14,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。等積変形に当たる名前は出てこず、底辺が共通で高さが等しい三角形は面積が等しい（triangles with the same base and the same height have equal areas）と文で説明する。見出しの area-preserving transformation は本プロジェクトの説明的な訳。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。等積変形に当たる名前は出てこず、IM Grade 6（1.6 Area of Parallelograms）は、底辺と高さが等しい平行四辺形は形によらず面積が等しい（parallelograms that have the same base and the same height will have the same area）と文で説明し、三角形の面積は同じ底辺と高さの平行四辺形の半分とする（1.9 Formula for the Area of a Triangle）。見出しの area-preserving transformation は本プロジェクトの説明的な訳。",
   "domains": [
     "geometry"
   ],
@@ -23,7 +23,7 @@
       "中2"
     ],
     "us": [
-      "Geometry"
+      "Pre-Algebra"
     ]
   },
   "definition_ja": "図形の面積を変えずに、形を変えること。底辺が共通で高さが等しい三角形は面積が等しいことを使い、底辺に平行な直線にそって頂点を動かす。",
@@ -58,6 +58,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 6 1.6 Area of Parallelograms（parallelograms that have the same base and the same height will have the same area）・1.9 Formula for the Area of a Triangle"
     }
   ],
   "confidence": "verified",
@@ -66,7 +72,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "written": {
       "same base and height": 2

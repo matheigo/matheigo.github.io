@@ -98,6 +98,11 @@ export const MSE_SKIP: Record<string, string> = {
   // Phase 5 監査 12, batch 42, added after the counts and the search excerpts were seen (DECISIONS):
   "split them up": "splitting a sum, an integral or a set into parts, not sharing problems among people",
   "divide them up": "dividing objects into groups (counting), not sharing problems among people",
+  // 公開前の抜き取り（Fable）、2026-10-09, added after the search excerpts were read (DECISIONS): the asker works an example
+  // or a step themselves, not asking a teacher for another example
+  "do another example": "the asker doing another example themselves (let's do another example), not asking a teacher",
+  "do one more example": "the asker doing another example themselves, not asking a teacher",
+  "do one more": "one more step, substitution or multiplication, not asking a teacher for another example",
   "study together": "a word problem's friends, or studying two subjects side by side (study X, together with Y), not inviting someone",
   "studying together": "studying two subjects side by side, not inviting someone",
   "office hours today": "going to (or missing) office hours (a mention), not asking whether they are held",

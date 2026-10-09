@@ -5,7 +5,8 @@
     "reading": "きょくだいち",
     "alt": [
       "極大",
-      "相対最大値"
+      "相対的最大値",
+      "局所的最大値"
     ]
   },
   "en": {
@@ -23,7 +24,7 @@
   },
   "pos": "noun",
   "mapping": "exact",
-  "mapping_note": "ja.alt の「相対最大値」は学習指導要領解説に無い、本プロジェクトの訳語（relative maximum の訳）。",
+  "mapping_note": "ja.alt の「相対的最大値」「局所的最大値」は学習指導要領解説に無い（日本語版 Wikipedia「最大と最小」にはある。relative maximum ／ local maximum に当たる）。",
   "domains": [
     "calculus"
   ],
@@ -86,7 +87,13 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "「相対最大値」は出てこない"
+      "note": "「相対的最大値」「局所的最大値」は出てこない"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「最大と最小」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9C%80%E5%A4%A7%E3%81%A8%E6%9C%80%E5%B0%8F",
+      "note": "極大値を局所的最大値（local maximum）・相対的最大値（relative maximum）とも呼ぶ（ja.alt）"
     }
   ],
   "confidence": "verified",
@@ -95,7 +102,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "local maximum": 23,
