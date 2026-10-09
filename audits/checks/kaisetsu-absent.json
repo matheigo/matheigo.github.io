@@ -1,8 +1,8 @@
 {
- "rows": 212,
+ "rows": 217,
  "status": {
-  "checked A": 48,
-  "checked B": 100,
+  "checked A": 51,
+  "checked B": 102,
   "語 0": 64
  },
  "toRead": 0,
@@ -72,6 +72,22 @@
   },
   {
    "collection": "conventions",
+   "id": "square-and-cubic-units",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "「平方単位」「立方単位」に当たる語は解説にも共通テストにも出てこず、共通テストは座標平面上の図形の面積を単位を付けない数で答えさせる（令和6年度 本試験 数学Ⅱ・数学Ｂ）。",
+   "keys": {},
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "conventions",
    "id": "us-only-calculus-topics",
    "confidence": "verified",
    "field": "advice_ja",
@@ -116,6 +132,31 @@
     "微分方程式": {
      "高 理数数学II": 5,
      "高 付録 理数数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "arctangent",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法で主に扱う置き換えは ax + b = t と x = a sin θ（〔内容の取扱い〕）。",
+   "keys": {
+    "逆三角関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "逆関数": {
+     "高 数学編 総説": 1,
+     "高 数学II": 1,
+     "高 数学III": 10,
+     "高 付録 数学III": 1
     }
    }
   },
@@ -440,6 +481,31 @@
    },
    "fallback": true,
    "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "integrals-giving-inverse-trig-functions",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法で主に扱う置き換えは ax + b = t と x = a sin θ（〔内容の取扱い〕）。",
+   "keys": {
+    "逆三角関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "逆関数": {
+     "高 数学編 総説": 1,
+     "高 数学II": 1,
+     "高 数学III": 10,
+     "高 付録 数学III": 1
+    }
+   }
   },
   {
    "collection": "terms",
@@ -1859,6 +1925,23 @@
   },
   {
    "collection": "terms",
+   "id": "conditions-for-a-parallelogram",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "中学校学習指導要領解説（第 2 学年）は「平行四辺形になるための条件」を平行四辺形の性質と並べて挙げる（本エントリの定義の 5 つ）が、用例コーパスと参照にはそれらをまとめた名前が出てこず、「四角形が平行四辺形であることを示す」（prove that a quadrilateral is a parallelogram）のように、示すことを文で言う。",
+   "keys": {
+    "平行四辺形になる条件": {}
+   },
+   "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
    "id": "constant-multiple-rule",
    "confidence": "verified",
    "field": "mapping_note",
@@ -2826,13 +2909,36 @@
    "collection": "terms",
    "id": "separable-differential-equation",
    "confidence": "verified",
+   "field": "pitfalls[1]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "両辺を積分して出てくる ln|y| は、学習指導要領解説の書き方では log|y| になる（解説には ln が出てこず、数学III の課題学習の例は自然対数を lim x log x と底を書かずに書く）。",
+   "keys": {
+    "ln": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "自然対数": {
+     "高 数学III": 3,
+     "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "separable-differential-equation",
+   "confidence": "verified",
    "field": "sources[2].note",
    "docs": [
     "kou"
    ],
    "kind": "中身",
    "status": "checked B",
-   "sentence": "ln が出てこない（数学III 課題学習〈微分法〉の例は自然対数を lim x log x と底を書かずに書く）",
+   "sentence": "ln が出てこない（数学III 課題学習〈微分法〉の例は自然対数を lim x log x と底を書かずに書く）／理数数学II (7) 積分法: dy/dx = ky（k は定数）程度の簡単な微分方程式の意味と解法",
    "keys": {
     "ln": {}
    },

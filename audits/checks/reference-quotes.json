@@ -1,9 +1,9 @@
 {
- "rows": 2491,
+ "rows": 2489,
  "found": {
   "checked A": 60,
   "checked B": 43,
-  "yes": 2388
+  "yes": 2386
  },
  "verifiedNotFound": {},
  "list": [
@@ -2765,7 +2765,7 @@
   {
    "collection": "conventions",
    "id": "probability-and-or-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[4].note",
    "references": [
     "im"
@@ -2776,7 +2776,7 @@
   {
    "collection": "conventions",
    "id": "probability-and-or-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "im"
@@ -3317,129 +3317,8 @@
   },
   {
    "collection": "conventions",
-   "id": "solution-as-ordered-pair",
-   "confidence": "likely",
-   "field": "advice_ja",
-   "references": [
-    "openstax:"
-   ],
-   "wording": "The solution is (2",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "solution-as-ordered-pair",
-   "confidence": "likely",
-   "field": "sources[3].note",
-   "references": [
-    "openstax:Algebra and Trigonometry"
-   ],
-   "wording": "Systems of Linear Equations",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "solution-as-ordered-pair",
-   "confidence": "likely",
-   "field": "sources[3].note",
-   "references": [
-    "openstax:Algebra and Trigonometry"
-   ],
-   "wording": "The solution is",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "solution-as-ordered-pair",
-   "confidence": "likely",
-   "field": "sources[4].note",
-   "references": [
-    "openstax:Elementary Algebra"
-   ],
-   "wording": "Solve Systems of Equations by Graphing",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "solution-as-ordered-pair",
-   "confidence": "likely",
-   "field": "sources[4].note",
-   "references": [
-    "openstax:Elementary Algebra"
-   ],
-   "wording": "Solving Systems of Equations by Substitution",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "solution-as-ordered-pair",
-   "confidence": "likely",
-   "field": "sources[4].note",
-   "references": [
-    "openstax:Elementary Algebra"
-   ],
-   "wording": "The solution is (1",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "solution-as-ordered-pair",
-   "confidence": "likely",
-   "field": "sources[5].note",
-   "references": [
-    "im"
-   ],
-   "wording": "Solving Systems by Substitution",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "solution-as-ordered-pair",
-   "confidence": "likely",
-   "field": "sources[5].note",
-   "references": [
-    "im"
-   ],
-   "wording": "Solving Systems by Elimination (Part",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "solution-as-ordered-pair",
-   "confidence": "likely",
-   "field": "us",
-   "references": [
-    "openstax:Algebra and Trigonometry"
-   ],
-   "wording": "The solution is",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "solution-as-ordered-pair",
-   "confidence": "likely",
-   "field": "us",
-   "references": [
-    "openstax:Algebra and Trigonometry"
-   ],
-   "wording": "Systems of Linear Equations",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
-   "id": "solution-as-ordered-pair",
-   "confidence": "likely",
-   "field": "us",
-   "references": [
-    "im"
-   ],
-   "wording": "or the point (6",
-   "found": "yes"
-  },
-  {
-   "collection": "conventions",
    "id": "transformations-define-congruence-and-similarity",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "advice_ja",
    "references": [
     "ck12",
@@ -3451,7 +3330,7 @@
   {
    "collection": "conventions",
    "id": "transformations-define-congruence-and-similarity",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "im"
@@ -3462,7 +3341,7 @@
   {
    "collection": "conventions",
    "id": "transformations-define-congruence-and-similarity",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "im"
@@ -3473,7 +3352,7 @@
   {
    "collection": "conventions",
    "id": "transformations-define-congruence-and-similarity",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "im"
@@ -3484,7 +3363,7 @@
   {
    "collection": "conventions",
    "id": "transformations-define-congruence-and-similarity",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "ck12"
@@ -3495,7 +3374,29 @@
   {
    "collection": "conventions",
    "id": "transformations-define-congruence-and-similarity",
-   "confidence": "likely",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "references": [
+    "ck12"
+   ],
+   "wording": "Angle-Angle-Side (AAS) Congruence Theorem",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "transformations-define-congruence-and-similarity",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "references": [
+    "ck12"
+   ],
+   "wording": "Hypotenuse-Leg (HL) Congruence Theorem",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "transformations-define-congruence-and-similarity",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "im"
@@ -3944,6 +3845,17 @@
    "references": [
     "openstax:Algebra and Trigonometry"
    ],
+   "wording": "Rotation of Axes",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-precalculus-topics",
+   "confidence": "likely",
+   "field": "sources[2].note",
+   "references": [
+    "openstax:Algebra and Trigonometry"
+   ],
    "wording": "Other Types of Equations",
    "found": "yes"
   },
@@ -3967,6 +3879,17 @@
     "openstax:Algebra and Trigonometry"
    ],
    "wording": "Descartes’ Rule of Signs",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-precalculus-topics",
+   "confidence": "likely",
+   "field": "us",
+   "references": [
+    "openstax:Algebra and Trigonometry"
+   ],
+   "wording": "Rotation of Axes",
    "found": "yes"
   },
   {
@@ -12875,6 +12798,17 @@
   },
   {
    "collection": "terms",
+   "id": "congruence-criteria",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "references": [
+    "ck12"
+   ],
+   "wording": "ASA and AAS",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
    "id": "congruence-criteria-for-right-triangles",
    "confidence": "verified",
    "field": "mapping_note",
@@ -13534,6 +13468,39 @@
     "im"
    ],
    "wording": "guessing and checking",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "cross-multiply",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "references": [
+    "ck12"
+   ],
+   "wording": "Ratio and Proportion in Similar Figures",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "cross-multiply",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "references": [
+    "openstax:Algebra and Trigonometry"
+   ],
+   "wording": "Linear Equations in One Variable",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "cross-multiply",
+   "confidence": "verified",
+   "field": "sources[5].note",
+   "references": [
+    "openstax:Intermediate Algebra"
+   ],
+   "wording": "Solve Applications with Rational Equations",
    "found": "yes"
   },
   {
@@ -16184,6 +16151,18 @@
     "nicholson"
    ],
    "wording": "fundamental theorem of algebra",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "general-addition-rule",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "im",
+    "openstax:Introductory Statistics"
+   ],
+   "wording": "The Addition Rule",
    "found": "yes"
   },
   {

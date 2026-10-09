@@ -1,9 +1,9 @@
 {
- "rows": 328,
+ "rows": 336,
  "status": {
-  "checked A": 57,
-  "checked B": 23,
-  "ok": 248
+  "checked A": 63,
+  "checked B": 21,
+  "ok": 252
  },
  "verifiedToRead": 0,
  "list": [
@@ -134,7 +134,7 @@
   {
    "collection": "conventions",
    "id": "probability-and-or-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "jp",
    "subjects": [
     "数学A"
@@ -147,7 +147,8 @@
     "共通部分": {
      "数学I": 1
     },
-    "和事象": {}
+    "和事象": {},
+    "和集合": {}
    }
   },
   {
@@ -170,18 +171,35 @@
    "confidence": "likely",
    "field": "jp",
    "subjects": [
-    "数学III"
+    "数学II"
    ],
    "status": "checked A",
-   "sentence": "連続複利は、解説の数学III が e を導入するときに、極限を限りなく短い時間ごとに金利が発生したら預けたお金は何倍になるかと関連付けることも考えられる、と書く例にだけ出てくる（A = Pe^{rt} で解く問題は書かない）。",
+   "sentence": "高等学校学習指導要領解説にクラメルの公式・デカルトの符号法則は出てこない（数学II は簡単な高次方程式を因数定理などで解くが、係数の符号から正の解の個数を見積もることは書かない）。",
    "hits": {
-    "拡大係数行列": {},
     "クラメルの公式": {},
     "デカルトの符号法則": {},
     "連続複利": {},
     "座標軸の回転": {},
-    "組立除法": {},
-    "重複度": {},
+    "無理方程式": {
+     "理数数学I": 1
+    }
+   }
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-precalculus-topics",
+   "confidence": "likely",
+   "field": "jp",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "checked A",
+   "sentence": "連続複利の考えは、解説の数学III が e を導入するところに例として出てくるだけで（1 年間の合計の金利を一定にして、金利がつく間隔を 1 年・1 月・1 日…と短くしていくと元金が何倍になるかを考え、その極限が e だとする）、A = Pe^{rt} で解く問題は書かない。",
+   "hits": {
+    "クラメルの公式": {},
+    "デカルトの符号法則": {},
+    "連続複利": {},
+    "座標軸の回転": {},
     "無理方程式": {
      "理数数学I": 1
     }
@@ -193,18 +211,17 @@
    "confidence": "likely",
    "field": "sources[1].note",
    "subjects": [
-    "数学III"
+    "数学II",
+    "数学III",
+    "数学C"
    ],
    "status": "checked A",
-   "sentence": "クラメルの公式・デカルトの符号法則・組立除法は出てこない。数学III (2) 微分法: e の極限と金利の例。無理方程式は理数数学I の発展・拡充の例だけ",
+   "sentence": "クラメルの公式・デカルトの符号法則は出てこない。数学II (1) いろいろな式: 因数定理などで簡単な高次方程式を解く。数学III (2) 微分法: e の極限と金利の例。数学C (2) 平面上の曲線: 二次曲線を回転させて考察することは含まれない。無理方程式は理数数学I の発展・拡充の例だけ",
    "hits": {
-    "拡大係数行列": {},
     "クラメルの公式": {},
     "デカルトの符号法則": {},
     "連続複利": {},
     "座標軸の回転": {},
-    "組立除法": {},
-    "重複度": {},
     "無理方程式": {
      "理数数学I": 1
     }
@@ -448,6 +465,22 @@
   },
   {
    "collection": "terms",
+   "id": "arctangent",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "checked A",
+   "sentence": "学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法で主に扱う置き換えは ax + b = t と x = a sin θ（〔内容の取扱い〕）。",
+   "hits": {
+    "アークタンジェント": {},
+    "逆正接": {},
+    "tan−1": {}
+   }
+  },
+  {
+   "collection": "terms",
    "id": "basic-properties-of-probability",
    "confidence": "verified",
    "field": "mapping_note",
@@ -473,6 +506,21 @@
    "hits": {
     "90°−θの三角比": {},
     "余角公式": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "compare-coefficients",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "subjects": [
+    "数学II"
+   ],
+   "status": "checked A",
+   "sentence": "「係数比較法」と「数値代入法」は日本語の呼び名で、学習指導要領解説には出てこない（高等学校学習指導要領解説（数学II）は、恒等式の未定係数法を等式の証明とあわせて扱ってよいと書く）。",
+   "hits": {
+    "係数比較法": {},
+    "数値代入法": {}
    }
   },
   {
@@ -622,6 +670,20 @@
    "sentence": "学習指導要領解説（数学II）は同じ量を微分係数と呼び、瞬間の速さや接線の傾きと関連付ける。",
    "hits": {
     "瞬間変化率": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "integrals-giving-inverse-trig-functions",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "checked A",
+   "sentence": "学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法で主に扱う置き換えは ax + b = t と x = a sin θ（〔内容の取扱い〕）。",
+   "hits": {
+    "逆三角関数の積分": {}
    }
   },
   {
@@ -867,6 +929,34 @@
   },
   {
    "collection": "terms",
+   "id": "separable-differential-equation",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "checked A",
+   "sentence": "両辺を積分して出てくる ln|y| は、学習指導要領解説の書き方では log|y| になる（解説には ln が出てこず、数学III の課題学習の例は自然対数を lim x log x と底を書かずに書く）。",
+   "hits": {
+    "変数分離形": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "separable-differential-equation",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "checked A",
+   "sentence": "ln が出てこない（数学III 課題学習〈微分法〉の例は自然対数を lim x log x と底を書かずに書く）／理数数学II (7) 積分法: dy/dx = ky（k は定数）程度の簡単な微分方程式の意味と解法",
+   "hits": {
+    "変数分離形": {}
+   }
+  },
+  {
+   "collection": "terms",
    "id": "set-up-a-recurrence",
    "confidence": "verified",
    "field": "sources[2].note",
@@ -1090,36 +1180,6 @@
    }
   },
   {
-   "collection": "conventions",
-   "id": "us-only-precalculus-topics",
-   "confidence": "likely",
-   "field": "jp",
-   "subjects": [
-    "数学II"
-   ],
-   "status": "checked B",
-   "sentence": "高等学校学習指導要領解説にクラメルの公式・デカルトの符号法則・組立除法は出てこない（日本語版 Wikipedia「数学 (教科)」は数学II の高次方程式に組立除法を挙げる）。",
-   "hits": {
-    "数学(教科)": {}
-   }
-  },
-  {
-   "collection": "terms",
-   "id": "arctangent",
-   "confidence": "verified",
-   "field": "pitfalls[0]",
-   "subjects": [
-    "数学III"
-   ],
-   "status": "checked B",
-   "sentence": "学習指導要領解説には逆三角関数が出てこないので、日本の数III の ∫ dx/(1 + x²) は x = tan θ と置換して定積分として求める。",
-   "hits": {
-    "アークタンジェント": {},
-    "逆正接": {},
-    "tan−1": {}
-   }
-  },
-  {
    "collection": "terms",
    "id": "disk-method",
    "confidence": "verified",
@@ -1204,23 +1264,9 @@
     "数学B"
    ],
    "status": "checked B",
-   "sentence": "日本語版 Wikipedia「数学 (教科)」は数学B の数列の項目に群数列を挙げる（学習指導要領解説には出てこない）。",
+   "sentence": "日本語版 Wikipedia「数学 (教科)」は数学B の数列の項目に群数列を挙げる（学習指導要領解説に群数列の語は出てこない。",
    "hits": {
     "数学(教科)": {}
-   }
-  },
-  {
-   "collection": "terms",
-   "id": "grouped-sequence",
-   "confidence": "verified",
-   "field": "sources[2].note",
-   "subjects": [
-    "数学B"
-   ],
-   "status": "checked B",
-   "sentence": "数学B (1) 数列（群数列は出てこない）",
-   "hits": {
-    "群数列": {}
    }
   },
   {
@@ -1256,6 +1302,20 @@
     "二重根号": {
      "理数数学I": 2
     }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "numerical-integration",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "checked B",
+   "sentence": "「数値積分」の語は無い。理数数学II (7) 積分法（発展・拡充）: 面積を台形公式やシンプソンの公式で求める（数学III には無い）",
+   "hits": {
+    "数値積分": {}
    }
   },
   {
@@ -2504,7 +2564,7 @@
   {
    "collection": "conventions",
    "id": "probability-and-or-notation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "subjects": [
     "数学A"
@@ -2782,7 +2842,7 @@
     "数学B"
    ],
    "status": "ok",
-   "sentence": "高等学校学習指導要領解説は、数学B（数列）で有限個の項の和を「等差数列の和」「等比数列の和」と呼び、「級数」は数学III の「無限級数」「無限等比級数」の形で使う。",
+   "sentence": "高等学校学習指導要領解説は、数学B（数列）で有限個の項の和を「等差数列の和」「等比数列の和」と呼び、「級数」は数学III の無限級数・無限等比級数・調和級数（課題学習の例）などで使う。",
    "hits": {
     "等差数列の和": {
      "数学B": 1
@@ -2795,16 +2855,6 @@
      "数学III": 21,
      "理数数学II": 2,
      "付録 数学III": 3
-    },
-    "無限級数": {
-     "数学III": 5,
-     "理数数学II": 1,
-     "付録 数学III": 2
-    },
-    "無限等比級数": {
-     "数学編 総説": 1,
-     "数学III": 5,
-     "付録 数学III": 1
     }
    }
   },
@@ -3959,6 +4009,39 @@
   },
   {
    "collection": "terms",
+   "id": "compare-coefficients",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "subjects": [
+    "数学II"
+   ],
+   "status": "ok",
+   "sentence": "数学II いろいろな式: 恒等式の未定係数法（等式の証明に関連して）。「係数比較法」「数値代入法」は出てこない",
+   "hits": {
+    "係数比較法": {},
+    "数値代入法": {},
+    "いろいろな式": {
+     "前付": 1,
+     "数学編 総説": 5,
+     "数学II": 8,
+     "数学B": 1,
+     "数学C": 1,
+     "理数編 総説": 2,
+     "理数数学II": 3,
+     "付録 数学II": 3,
+     "付録 理数数学II": 1
+    },
+    "恒等式の未定係数法": {
+     "数学II": 1
+    },
+    "等式の証明に関連して": {
+     "数学II": 1
+    },
+    "は出てこない": {}
+   }
+  },
+  {
+   "collection": "terms",
    "id": "complement",
    "confidence": "verified",
    "field": "sources[2].note",
@@ -4993,6 +5076,33 @@
   },
   {
    "collection": "terms",
+   "id": "grouped-sequence",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "subjects": [
+    "数学III",
+    "数学B"
+   ],
+   "status": "ok",
+   "sentence": "数学B (1) 数列: 群数列は出てこない／数学III 課題学習〈積分法〉: 調和級数の項を群に区切り、群ごとに和を取る",
+   "hits": {
+    "(1)数列": {
+     "前付": 1,
+     "数学編 総説": 1,
+     "数学III": 1,
+     "数学B": 6,
+     "理数編 総説": 1,
+     "理数数学II": 1,
+     "付録 数学B": 2
+    },
+    "群数列は出てこない/数学III課題学習〈積分法〉:調和級数の項を群に区切り": {},
+    "群ごとに和を取る": {
+     "数学III": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
    "id": "hyperbola",
    "confidence": "verified",
    "field": "definition_ja",
@@ -5078,7 +5188,7 @@
     "数学III"
    ],
    "status": "ok",
-   "sentence": "数学III 積分法: 広義積分は出てこない",
+   "sentence": "数学III 積分法: 広義積分の語は無い（課題学習〈積分法〉の例に、調和級数の部分和と ∫₁ⁿ (1/x)dx を比べ、n を大きくしたときの値を観察すること）",
    "hits": {
     "積分法": {
      "前付": 1,
@@ -5090,7 +5200,12 @@
      "付録 数学III": 7,
      "付録 理数数学II": 1
     },
-    "広義積分は出てこない": {}
+    "広義積分の語は無い": {},
+    "課題学習〈積分法〉の例に": {},
+    "調和級数の部分和と∫1n": {},
+    "1/x": {},
+    "dxを比べ": {},
+    "nを大きくしたときの値を観察すること": {}
    }
   },
   {
@@ -5127,11 +5242,9 @@
     "数学III"
    ],
    "status": "ok",
-   "sentence": "数学II・III 積分法: 不定積分（原始関数は出てこない）",
+   "sentence": "数学II 微分・積分の考え・数学III 積分法: 不定積分（原始関数は出てこない）",
    "hits": {
-    "III積分法": {
-     "数学III": 1
-    },
+    "微分・積分の考え・数学III積分法": {},
     "不定積分": {
      "数学編 総説": 2,
      "数学II": 14,
@@ -5906,6 +6019,61 @@
      "付録 数学B": 3
     },
     "移動平均の定義と平均気温のデータの例": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "net-change",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "ok",
+   "sentence": "学習指導要領解説（数学III）は、速度 v を時刻 t₁ から t₂ まで積分して点の「位置の変化」を、|v| を積分して「道のり」を求める例を挙げるが、定積分で求まる変化の合計一般の名前は出てこない。",
+   "hits": {
+    "位置の変化": {
+     "数学III": 1
+    },
+    "道のり": {
+     "数学III": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "net-change",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "ok",
+   "sentence": "数学III 積分法: 速度の定積分で「位置の変化」と「道のり」を求める例（定積分で求まる変化の合計の名前と「純変化量」は出てこない）",
+   "hits": {
+    "位置の変化": {
+     "数学III": 1
+    },
+    "道のり": {
+     "数学III": 2
+    },
+    "純変化量": {},
+    "積分法": {
+     "前付": 1,
+     "数学編 総説": 7,
+     "数学II": 1,
+     "数学III": 25,
+     "理数編 総説": 2,
+     "理数数学II": 4,
+     "付録 数学III": 7,
+     "付録 理数数学II": 1
+    },
+    "速度の定積分で": {},
+    "を求める例": {
+     "数学II": 2
+    },
+    "定積分で求まる変化の合計の名前と": {},
+    "は出てこない": {}
    }
   },
   {
@@ -7823,7 +7991,7 @@
     "数学I"
    ],
    "status": "ok",
-   "sentence": "数学I 図形と計量: 三角比の相互関係（16 件。正割・sec は 0 件）",
+   "sentence": "数学I 図形と計量: 三角比の基本的な相互関係（sin A = cos(90° − A)、1 + tan²A = 1/cos²A ほか。正割・sec は 0 件）",
    "hits": {
     "図形と計量": {
      "前付": 1,
@@ -7837,10 +8005,16 @@
      "付録 数学I": 3,
      "付録 理数数学I": 1
     },
-    "三角比の相互関係": {
+    "三角比の基本的な相互関係": {
      "数学I": 2
     },
-    "16件。正割": {},
+    "sinA=cos": {
+     "数学I": 1
+    },
+    "90°−A": {
+     "数学I": 2
+    },
+    "1+tan2A=1/cos2Aほか。正割": {},
     "secは0件": {}
    }
   },
@@ -7939,13 +8113,33 @@
     "数学II"
    ],
    "status": "ok",
-   "sentence": "数学II (4) 三角関数 イ(ア): 三角関数の加法定理から新たな性質を導く（3 倍角の公式の名前は無い）",
+   "sentence": "数学II (4) 三角関数 イ(ア): 三角関数の加法定理から新たな性質（2 倍角の公式・三角関数の合成）を導く（3 倍角の公式は出てこない）",
    "hits": {
     "(4)三角関数イ(ア)": {},
-    "三角関数の加法定理から新たな性質を導く": {
+    "三角関数の加法定理から新たな性質": {
      "数学II": 2
     },
-    "3倍角の公式の名前は無い": {}
+    "2倍角の公式": {
+     "数学編 総説": 1,
+     "数学II": 3,
+     "付録 数学II": 1
+    },
+    "三角関数の合成": {
+     "数学編 総説": 1,
+     "数学II": 3,
+     "付録 数学II": 1
+    },
+    "を導く": {
+     "数学I": 3,
+     "数学II": 8,
+     "数学III": 5,
+     "数学A": 3,
+     "数学B": 3,
+     "数学C": 8,
+     "理数数学特論": 1,
+     "付録 数学II": 1
+    },
+    "3倍角の公式は出てこない": {}
    }
   },
   {

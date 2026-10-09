@@ -264,7 +264,7 @@
       "collection": "terms",
       "id": "arctangent",
       "field": "pitfalls[0]",
-      "sentence": "学習指導要領解説には逆三角関数が出てこないので、日本の数III の ∫ dx/(1 + x²) は x = tan θ と置換して定積分として求める。",
+      "sentence": "学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法は ax + b = t、x = a sin θ と置き換えるものを中心に扱う（〔内容の取扱い〕）。",
       "g1": false
     },
     {
@@ -530,7 +530,7 @@
       "collection": "terms",
       "id": "cofunction-identity",
       "field": "pitfalls[1]",
-      "sentence": "高等学校学習指導要領〔用語・記号〕（数学I 図形と計量）は sin・cos・tan だけで cot は無く、共通テストの問題文にも cot は出てこないので tan(90° − θ) = 1/tan θ と書くが、英語の cofunction identity は tan(90° − θ) = cot θ の形になる。",
+      "sentence": "高等学校学習指導要領〔用語・記号〕（数学I 図形と計量）は sin・cos・tan だけで cot は無く、共通テストの問題文にも cot は出てこない。",
       "g1": false
     },
     {
@@ -558,7 +558,7 @@
       "collection": "terms",
       "id": "compare-coefficients",
       "field": "pitfalls[1]",
-      "sentence": "「係数比較法」と「数値代入法」は日本語の呼び名（学習指導要領解説には出てこない）。",
+      "sentence": "「係数比較法」と「数値代入法」は日本語の呼び名で、学習指導要領解説には出てこない（高等学校学習指導要領解説（数学II）は、恒等式の未定係数法を等式の証明とあわせて扱ってよいと書く）。",
       "g1": false
     },
     {
@@ -929,7 +929,7 @@
       "collection": "terms",
       "id": "cross-multiply",
       "field": "mapping_note",
-      "sentence": "日本語の「内項の積と外項の積は等しい」（学習指導要領解説には内項・外項の語は無く、日本語版 Wikipedia「比例式」にある）に当たる性質を、英語の参照（OpenStax・IM・CK-12）は名前で呼ばず、比例式を a/b = c/d の分数の形にして cross-multiply する（ad = bc）と手順を動詞で言う。",
+      "sentence": "日本語の「内項の積と外項の積は等しい」（学習指導要領解説には内項・外項の語は無く、日本語版 Wikipedia「比例式」にある）に当たる性質を、OpenStax Algebra and Trigonometry（2.2）・Intermediate Algebra（7.5）は名前で呼ばず、比例式 a/b = c/d を cross-multiply する（ad = bc）と手順を動詞で言い、CK-12 Geometry はこの解き方を Cross-Multiplication Theorem と呼ぶ（7.2）。",
       "g1": false
     },
     {
@@ -1664,7 +1664,7 @@
       "collection": "terms",
       "id": "grouped-sequence",
       "field": "mapping_note",
-      "sentence": "日本語版 Wikipedia「数学 (教科)」は数学B の数列の項目に群数列を挙げる（学習指導要領解説には出てこない）。",
+      "sentence": "日本語版 Wikipedia「数学 (教科)」は数学B の数列の項目に群数列を挙げる（学習指導要領解説に群数列の語は出てこない。項をいくつかごとに群に区切る考えは、数学III の課題学習〈積分法〉の例に、調和級数の発散を示す方法として出てくる）。",
       "g1": false
     },
     {
@@ -1776,7 +1776,14 @@
       "collection": "terms",
       "id": "improper-integral",
       "field": "pitfalls[1]",
-      "sentence": "学習指導要領解説には出てこない。",
+      "sentence": "学習指導要領解説に「広義積分」の語は出てこない。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "improper-integral",
+      "field": "pitfalls[1]",
+      "sentence": "数学III の課題学習〈積分法〉の例が、調和級数の発散を調べるのに、部分和と定積分 ∫₁ⁿ (1/x)dx を比べ、n を大きくしたときの定積分の値を観察することを挙げるだけ（∫₁^∞ の形では書かない）。",
       "g1": false
     },
     {
@@ -1965,14 +1972,14 @@
       "collection": "terms",
       "id": "integrals-giving-inverse-trig-functions",
       "field": "mapping_note",
-      "sentence": "学習指導要領解説には逆三角関数が出てこないので、∫1/(1 + x²)dx は x = tan θ と置換して定積分の値だけを求める。",
+      "sentence": "学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法は ax + b = t、x = a sin θ と置き換えるものを中心に扱う（〔内容の取扱い〕）。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "integration-by-completing-the-square",
       "field": "mapping_note",
-      "sentence": "学習指導要領解説には逆三角関数が出てこないので、x + 1 = 2 tan θ と置換して定積分の値だけを求める。",
+      "sentence": "学習指導要領解説には逆三角関数が出てこない。",
       "g1": false
     },
     {
@@ -2008,6 +2015,13 @@
       "id": "integration-by-substitution",
       "field": "mapping_note",
       "sentence": "ja.alt の「置換法則」は学習指導要領解説に無い、本プロジェクトの訳語（英語 substitution rule の訳）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "integration-formulas",
+      "field": "pitfalls[1]",
+      "sentence": "n = −1 のときは ln|x| + C（学習指導要領解説の書き方では log|x| + C。解説は自然対数を底を書かずに log と書く）。",
       "g1": false
     },
     {
@@ -2224,7 +2238,7 @@
       "collection": "terms",
       "id": "left-riemann-sum",
       "field": "pitfalls[0]",
-      "sentence": "区分求積法の和 Σ_{k=0}^{n−1}（左端）と Σ_{k=1}^{n}（右端）の名前は学習指導要領解説に出てこないが、AP の CED（topic 6.2）は left ／ right ／ midpoint Riemann sums と trapezoidal sums に名前を付けて比べる。",
+      "sentence": "区分求積法の和 Σ_{k=0}^{n−1}（左端）と Σ_{k=1}^{n}（右端）の名前は学習指導要領解説に出てこないが、AP の CED（topic 6.2）は left ／ right ／ midpoint Riemann sums と trapezoidal sums に名前を付けて比べる（解説で台形公式に触れるのは、理数に関する学科の科目「理数数学II」の発展・拡充の例だけ）。",
       "g1": false
     },
     {
@@ -2581,7 +2595,7 @@
       "collection": "terms",
       "id": "net-change",
       "field": "mapping_note",
-      "sentence": "学習指導要領解説は「変化量」とは言うが、定積分で求まる変化の合計の名前は出てこない。",
+      "sentence": "学習指導要領解説（数学III）は、速度 v を時刻 t₁ から t₂ まで積分して点の「位置の変化」を、|v| を積分して「道のり」を求める例を挙げるが、定積分で求まる変化の合計一般の名前は出てこない。",
       "g1": false
     },
     {
@@ -2651,7 +2665,14 @@
       "collection": "terms",
       "id": "numerical-integration",
       "field": "pitfalls[0]",
-      "sentence": "学習指導要領解説には数値積分が出てこない。",
+      "sentence": "学習指導要領解説に「数値積分」の語は出てこない。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "numerical-integration",
+      "field": "pitfalls[0]",
+      "sentence": "理数に関する学科の科目「理数数学II」の積分法が、発展・拡充させる内容として、面積を台形公式やシンプソンの公式で求めることを挙げる（数学III には無い）。",
       "g1": false
     },
     {
@@ -3015,7 +3036,7 @@
       "collection": "terms",
       "id": "projectile-motion",
       "field": "mapping_note",
-      "sentence": "見出しの「放物運動」は数学の学習指導要領解説には無い（高等学校学習指導要領解説の物理の項目「放物運動」と日本語版 Wikipedia「放物運動」にはある）。",
+      "sentence": "見出しの「放物運動」は数学の学習指導要領解説には無い（高等学校学習指導要領の理科「物理」の内容（解説 数学編 理数編の付録）の項目「放物運動」と日本語版 Wikipedia「放物運動」にはある）。",
       "g1": false
     },
     {
@@ -3610,7 +3631,7 @@
       "collection": "terms",
       "id": "separable-differential-equation",
       "field": "pitfalls[1]",
-      "sentence": "両辺を積分して出てくる ln|y| は、日本語では log|y| と書く（学習指導要領解説には ln が出てこない）。",
+      "sentence": "両辺を積分して出てくる ln|y| は、学習指導要領解説の書き方では log|y| になる（解説には ln が出てこず、数学III の課題学習の例は自然対数を lim x log x と底を書かずに書く）。",
       "g1": false
     },
     {

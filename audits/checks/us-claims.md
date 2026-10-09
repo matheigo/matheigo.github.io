@@ -7,7 +7,7 @@
 
 - 米国側の主張の文で参照かコーパスを名指しするもの: 418 文（一覧にしない）
 - **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 4 項目・4 文**
-- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 23 項目・24 文
+- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 22 項目・23 文
 
 ## A. エントリの出典にも参照がない
 
@@ -25,7 +25,6 @@
 | terms | accumulation-function | mapping_note | 後者の「定積分を定数 k とおく」型の問題が米国の教科書にあるかは教科書による。 | College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020); 高等学校学習指導要領（平成30年告示）解説 数学編 理数編; OpenStax Calculus Volume 1 |
 | terms | angle-sum-of-a-triangle | mapping_note | 日本語は「三角形の内角の和」という量の名前で言うが、米国の Geometry はこれを定理の名前 triangle sum theorem（triangle angle sum theorem）で呼ぶ。 | CK-12 Geometry (K12 LibreTexts) |
 | terms | arc-measure | mapping_note | 米国の Geometry では弧 AB の度数を、AB の上に弧の記号を付けた記号に m を添えて書き、中心角と同じ度数で表す（長さの arc length とは別）。 | Illustrative Mathematics, IM 9–12 Math (Geometry); CK-12 Geometry (K12 LibreTexts) |
-| terms | congruence-criteria | mapping_note | 米国の Geometry は SSS・SAS・ASA に AAS と直角三角形の HL を加え、それぞれを定理（theorem）や公準（postulate）として名前で呼ぶ（エントリ sss-congruence、sas-congruence、asa-congruence、aas-congruence、hl-congruence）。 | Illustrative Mathematics, IM 9–12 Math (Geometry); 中学校学習指導要領（平成29年告示）解説 数学編 |
 | terms | corollary | pitfalls[1] | 米国式の発音は第 1 音節に強勢（COR-uh-lair-ee。Merriam-Webster: ˈkȯr-ə-ˌler-ē、英国式は kə-ˈrä-lə-rē）。 | OpenStax Calculus Volume 1; OpenStax Algebra and Trigonometry 2e; Merriam-Webster「corollary」 |
 | terms | corresponding-angles-postulate | mapping_note | 米国の教科書では公準（postulate）とするものと定理（theorem）とするものがある。 | CK-12 Geometry (K12 LibreTexts) |
 | terms | difference-quotient | mapping_note | 米国の Precalculus・Calculus では difference quotient と名前で呼ぶ。 | OpenStax Calculus Volume 1 |
@@ -42,7 +41,7 @@
 | terms | taylors-theorem | pitfalls[0] | AP では剰余の評価を Lagrange error bound と呼ぶ（lagrange-error-bound を参照）。 | OpenStax Calculus Volume 2 |
 | terms | transitive-property | pitfalls[1] | 米国の Geometry の証明では、等式なら transitive property of equality、合同なら transitive property of congruence と対象を付けて書く。 | CK-12 Geometry (K12 LibreTexts) |
 | terms | trapezoid | mapping_note | 米国の教材では台形の定義が分かれる。 | OpenStax Prealgebra 2e; English Wikipedia; CK-12 Geometry (K12 LibreTexts); Illustrative Mathematics, IM 9–12 Math (Geometry) |
-| terms | trapezoidal-rule | pitfalls[1] | trapezoid（台形）は米国の言い方。 | OpenStax Calculus Volume 2; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020); English Wikipedia |
+| terms | trapezoidal-rule | pitfalls[1] | trapezoid（台形）は米国の言い方。 | OpenStax Calculus Volume 2; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020); English Wikipedia; 高等学校学習指導要領（平成30年告示）解説 数学編 理数編 |
 | terms | vector | pitfalls[0] | 日本の教科書は矢印（→）を文字の上に書くが、米国の教科書は太字（v）か、手書きでは上の矢印 v⃗ を使う。 | OpenStax Calculus Volume 3; OpenStax Algebra and Trigonometry 2e |
 | terms | zeros-of-a-polynomial | pitfalls[0] | 米国では zero（関数の値が 0 になる x）・root（方程式の解）・x-intercept（グラフの交点）を使い分ける。 | OpenStax Algebra and Trigonometry 2e |
 | symbols | integers-symbol | notes[0] | 文字どおり Z（米国の発音は zee。Merriam-Webster: ˈzē、カナダ・英国・オーストラリアは ˈzed）とも言う。 | Merriam-Webster「z」; Oscar Levin, Discrete Mathematics: An Open Introduction, 4th edition |
