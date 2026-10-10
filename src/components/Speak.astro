@@ -1,26 +1,47 @@
 ---
 interface Props {
   text: string;
-  label?: string;
+  /** "small" next to an example sentence; the round 44px button next to a headword otherwise. */
+  size?: "large" | "small";
+  /** What the button reads, for its accessible name; the text itself when absent. */
+  name?: string;
 }
-const { text, label = "音声で聞く" } = Astro.props;
+const { text, size = "large", name } = Astro.props;
+const px = size === "small" ? 15 : 18;
 ---
 
-<button type="button" class="speak" data-text={text} aria-label={`英語の音声: ${text}`} hidden>
-  <span aria-hidden="true">🔊</span>{label && <span>&nbsp;{label}</span>}
+<button
+  type="button"
+  class={size === "small" ? "speak small" : "speak"}
+  data-text={text}
+  aria-label={`${name ?? text} の発音を聞く`}
+  hidden
+>
+  <svg width={px} height={px} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"
+    ><path d="M4 9h4l5-4v14l-5-4H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg
+  >
 </button>
 
 <script>
-  // Web Speech API (PLAN 7). If the device has no English voice the buttons stay hidden.
+  // Web Speech API (PLAN 7). If the device has no English voice the buttons go.
   const synth = window.speechSynthesis;
-  if (synth) {
+  let found = false;
+  const none = () => {
+    if (!found) document.documentElement.dataset.noVoice = "";
+  };
+  if (!synth) none();
+  else {
     const reveal = () => {
       const hasEn = synth.getVoices().some((v) => v.lang.toLowerCase().startsWith("en"));
       if (!hasEn) return;
+      found = true;
+      delete document.documentElement.dataset.noVoice;
       document.querySelectorAll<HTMLButtonElement>("button.speak").forEach((b) => (b.hidden = false));
     };
     reveal();
     synth.addEventListener?.("voiceschanged", reveal);
+    // the voice list can arrive late; a device that has none after a few seconds has none
+    setTimeout(none, 4000);
 
     document.addEventListener("click", (e) => {
       const btn = (e.target as HTMLElement)?.closest("button.speak") as HTMLButtonElement | null;

@@ -1,10 +1,9 @@
 ---
-import { toRomaji } from "wanakana";
 import Base from "../../layouts/Base.astro";
 import Math from "../../components/Math.astro";
 import Speak from "../../components/Speak.astro";
-import En from "../../components/En.astro";
-import EvidenceTable from "../../components/EvidenceTable.astro";
+import Evidence from "../../components/Evidence.astro";
+import MapLine from "../../components/MapLine.astro";
 import Sources from "../../components/Sources.astro";
 import Report from "../../components/Report.astro";
 import UnverifiedGate from "../../components/UnverifiedGate.astro";
@@ -20,10 +19,11 @@ import {
   POS_LABELS,
   REGISTER_LABELS,
   DOMAIN_LABELS,
+  levelJp,
+  levelUs,
   SITE_NAME,
-  levelText,
 } from "../../lib/data";
-import { GLOSS_LABEL, GLOSS_NOTE } from "../../lib/gloss";
+import { GLOSS_LABEL, GLOSS_NOTE, GLOSS_SHORT } from "../../lib/gloss";
 import { ogPath } from "../../lib/og";
 
 export function getStaticPaths() {
@@ -38,11 +38,24 @@ const title = gloss
   ? `${term.ja.term} 英語での説明 | ${term.en.term}（説明の訳）— ${SITE_NAME}`
   : `${term.ja.term} 英語 | ${term.en.term} — ${SITE_NAME}`;
 const description = `${term.ja.term}（${term.ja.reading}）${gloss ? "を英語で説明すると" : "は英語で"} ${term.en.term}。${term.definition_ja}`;
-const say = term.tts_text ?? term.spoken_en ?? term.en.term;
-const romaji = toRomaji(term.ja.reading);
 const conventions = conventionsByTerm.get(term.id) ?? [];
 const symbols = symbolsByTerm.get(term.id) ?? [];
 const units = unitsByTerm.get(term.id) ?? [];
+const related = (term.related ?? []).map((r) => termById.get(r)).filter((t) => t !== undefined);
+
+// The headwords sit in one row with the line between them when both fit the 680px column at
+// the mockup's sizes (64px / 50px), one size down when that fits, and stack otherwise.
+const jaWidth = (s: string, px: number) => [...s].reduce((w, ch) => w + (/[\x20-\x7e]/.test(ch) ? 0.55 : 1.04) * px, 0);
+const enWidth = (s: string, px: number) => s.length * 0.46 * px;
+const fits = (ja: number, en: number) => jaWidth(term.ja.term, ja) + 176 + enWidth(term.en.term, en) + 58 <= 680;
+const row = !gloss && (fits(64, 50) || fits(48, 38));
+const small = !fits(64, 50) || jaWidth(term.ja.term, 64) > 680;
+
+const hearHead = term.tts_text ?? term.en.term;
+const sayLine = term.spoken_en ?? null;
+const readings = [term.ja.reading, ...(term.ja.alt ?? [])].join(" ／ ");
+const jpLevel = levelJp(term.level);
+const usLevel = levelUs(term.level);
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "DefinedTerm",
@@ -61,205 +74,268 @@ const jsonLd = {
   unverified={unverified}
   ogImage={ogPath("terms", term.id, !unverified)}
   jsonLd={jsonLd}
+  section="terms"
 >
   {unverified && <UnverifiedGate kind="用語" />}
 
   <article class="entry" data-unverified-item={unverified ? "" : undefined}>
-    {unverified && <p class="unverified-note">この用語はまだ監査を通っていません（未確認）。</p>}
-
-    <header class="term-head">
-      <h1 class="term-ja">{term.ja.term}</h1>
-      <p class="term-reading">
-        {term.ja.reading}<span class="romaji" lang="ja-Latn"> {romaji}</span>
-        {term.ja.alt?.length ? <span> ／ {term.ja.alt.join(" ／ ")}</span> : null}
-      </p>
-      <p class="term-en" lang="en">
-        {term.en.term}
-        {gloss && <span class="gloss-mark" lang="ja">{GLOSS_LABEL}</span>}
-        <small lang="ja">
-          {POS_LABELS[term.pos] ?? term.pos}
-          {term.en.register ? ` ・ ${REGISTER_LABELS[term.en.register] ?? term.en.register}` : ""}
-          {term.en.alt?.length ? <span lang="en"> ・ {term.en.alt.join(", ")}</span> : ""}
-          {term.en.uk ? <span> ・ 英国 <span lang="en">{term.en.uk}</span></span> : ""}
-          {term.respelling ? <span> ・ 発音 <span lang="en">{term.respelling}</span></span> : ""}
-        </small>
-      </p>
+    <header class="entry-head">
+      {unverified && <p class="unverified-note">この用語はまだ監査を通っていません（未確認）。</p>}
+      <div class={["heads", row && "row", small && "small"].filter(Boolean).join(" ")}>
+        <h1 class="ja">{term.ja.term}</h1>
+        <span class="reading">{readings}</span>
+        <span class="line"><MapLine mapping={term.mapping} /></span>
+        <span class="map-label">{MAPPING_LABELS[term.mapping]}</span>
+        <p class="en">
+          <span class="word" lang="en">{term.en.term}</span>
+          {gloss && <span class="gloss-mark" title={GLOSS_LABEL}>{GLOSS_LABEL}</span>}
+          <Speak text={hearHead} name={term.en.term} />
+        </p>
+        <p class="alt">
+          <span>
+            {POS_LABELS[term.pos] ?? term.pos}
+            {term.en.register ? `・${REGISTER_LABELS[term.en.register] ?? term.en.register}` : ""}
+          </span>
+          {
+            term.en.alt?.length ? (
+              <span>
+                別の言い方　<span class="lat" lang="en">{term.en.alt.join(", ")}</span>
+              </span>
+            ) : null
+          }
+          {
+            term.en.uk ? (
+              <span>
+                英国　<span class="lat" lang="en">{term.en.uk}</span>
+              </span>
+            ) : null
+          }
+          {
+            term.respelling ? (
+              <span>
+                発音　<span class="lat" lang="en">{term.respelling}</span>
+              </span>
+            ) : null
+          }
+        </p>
+      </div>
+      {
+        term.mapping !== "exact" && term.mapping_note && (
+          <p class="map-note">
+            {term.mapping_note}
+          </p>
+        )
+      }
       {gloss && <p class="gloss-note">{GLOSS_NOTE}</p>}
     </header>
 
-    <div class="say">
-      <span class="say-label">{gloss ? "英語で説明するなら" : "こう言う"}</span>
-      <span lang="en">{term.spoken_en ?? term.en.term}</span>
-      <Speak text={say} />
+    <div class="entry-body">
+      <div class="entry-main">
+        {
+          (term.latex || sayLine) && (
+            <section class="formula">
+              <h2>{term.latex ? "式と読み方" : gloss ? "英語で説明するなら" : "こう言う"}</h2>
+              {term.latex && <Math latex={term.latex} />}
+              {sayLine && (
+                <p class="said">
+                  <span lang="en">{sayLine}</span>
+                  <Speak text={sayLine} size="small" />
+                </p>
+              )}
+            </section>
+          )
+        }
+
+        {
+          term.en.variants?.length ? (
+            <section>
+              <h2>場面で変わる言い方</h2>
+              <dl class="pairs">
+                {term.en.variants.map((v) => (
+                  <div>
+                    <dt lang="en">{v.term}</dt>
+                    <dd>
+                      {REGISTER_LABELS[v.register] ?? v.register}
+                      {v.note && (
+                        <span class="note">
+                          {v.note}
+                        </span>
+                      )}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          ) : null
+        }
+
+        <section>
+          <h2>定義</h2>
+          <p>{term.definition_ja}</p>
+          <p lang="en" class="def-en">{term.definition_en}</p>
+        </section>
+
+        {
+          term.examples?.length ? (
+            <section>
+              <h2>例文</h2>
+              <div class="examples">
+                {term.examples.map((ex) => (
+                  <div class="example">
+                    <span class="reg">{REGISTER_LABELS[ex.register] ?? ex.register}</span>
+                    <span class="en" lang="en">
+                      {ex.en}
+                      <Speak text={ex.en} size="small" name="例文" />
+                    </span>
+                    <span class="ja">
+                      {ex.ja}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </section>
+          ) : null
+        }
+
+        {
+          term.collocations?.length ? (
+            <section>
+              <h2>よく使う言い方</h2>
+              <dl class="pairs">
+                {term.collocations.map((c) => (
+                  <div>
+                    <dt lang="en">{c.en}</dt>
+                    <dd>
+                      {c.ja}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          ) : null
+        }
+
+        {
+          term.pitfalls?.length ? (
+            <section>
+              <h2>言い間違えやすいところ</h2>
+              <ul class="pitfalls">
+                {term.pitfalls.map((p) => (
+                  <li>
+                    {p}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null
+        }
+
+        <Evidence evidence={term.evidence} lead={term.en.term} />
+      </div>
+
+      <aside class="entry-aside" aria-label="この用語について">
+        <section class="first">
+          <h2>習う時期</h2>
+          <dl class="when">
+            <dt>日本</dt>
+            <dd>{jpLevel || "—"}</dd>
+            <dt>米国</dt>
+            <dd>{usLevel ? <span class="lat" lang="en">{usLevel}</span> : "—"}</dd>
+          </dl>
+          {
+            units.length ? (
+              <ul class="units" aria-label="出てくる単元">
+                {units.map((u) => (
+                  <li>
+                    <a href={`/curriculum/${u.id}/`} lang={u.system === "us" ? "en" : undefined}>
+                      {u.subject} {u.unit}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            ) : null
+          }
+        </section>
+
+        {
+          related.length ? (
+            <section>
+              <h2>関連語</h2>
+              <ul class="rel">
+                {related.map((t) => (
+                  <li data-unverified-item={isUnverified(t) ? "" : undefined}>
+                    <a href={`/terms/${t.id}/`}>
+                      <span class="rel-ja">{t.ja.term}</span>
+                      <span class="rel-en" lang="en">
+                        {t.en.term}
+                        {isExplanatoryTranslation(t) && (
+                          <span class="gloss-short" lang="ja" title={GLOSS_LABEL}>
+                            {GLOSS_SHORT}
+                          </span>
+                        )}
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null
+        }
+
+        {
+          symbols.length ? (
+            <section>
+              <h2>記号・式の読み上げ</h2>
+              <ul class="rel">
+                {symbols.map((s) => (
+                  <li data-unverified-item={isUnverified(s) ? "" : undefined}>
+                    <a href={`/symbols/${s.id}/`}>
+                      <span class="rel-ja">{s.name_ja}</span>
+                      <span class="rel-en" lang="en">
+                        {s.spoken_en[0].text}
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null
+        }
+
+        {
+          conventions.length ? (
+            <section>
+              <h2>日米の慣習差</h2>
+              <ul class="rel">
+                {conventions.map((c) => (
+                  <li data-unverified-item={isUnverified(c) ? "" : undefined}>
+                    <a href={`/conventions/${c.id}/`}>
+                      <span class="rel-ja">{c.title_ja}</span>
+                      <span class="rel-en">
+                        {c.advice_ja}
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null
+        }
+
+        <section>
+          <h2>出典</h2>
+          <Sources sources={term.sources} />
+        </section>
+
+        <section class="about-entry">
+          <h2>この項目について</h2>
+          <p>
+            {term.confidence === "verified" ? "監査済み" : "未確認（監査前）"}。分野は{" "}
+            {term.domains.map((d) => DOMAIN_LABELS[d] ?? d).join("・")}。{term.updated && `更新 ${term.updated}。`}
+          </p>
+          <Report id={term.id} path={path} />
+        </section>
+      </aside>
     </div>
-
-    {term.latex && <Math latex={term.latex} />}
-
-    {
-      term.en.variants?.length ? (
-        <section class="block">
-          <h2>場面で変わる言い方</h2>
-          <dl class="pairs">
-            {term.en.variants.map((v) => (
-              <>
-                <dt lang="en">{v.term}</dt>
-                <dd>
-                  {REGISTER_LABELS[v.register] ?? v.register}
-                  {v.note ? ` — ${v.note}` : ""}
-                </dd>
-              </>
-            ))}
-          </dl>
-        </section>
-      ) : null
-    }
-
-    <section class="block">
-      <h2>意味</h2>
-      <p>{term.definition_ja}</p>
-      <p lang="en" class="en-text">{term.definition_en}</p>
-    </section>
-
-    {
-      term.mapping !== "exact" && (
-        <section class="block">
-          <h2>
-            日英の対応 <span class="badge mapping">{MAPPING_LABELS[term.mapping]}</span>
-          </h2>
-          <p>{term.mapping_note}</p>
-        </section>
-      )
-    }
-
-    {
-      term.examples?.length ? (
-        <section class="block">
-          <h2>例文</h2>
-          {term.examples.map((ex) => (
-            <div class="example">
-              <p class="en" lang="en">
-                {ex.en} <Speak text={ex.en} label="" />
-              </p>
-              <p class="ja">
-                {ex.ja}（{REGISTER_LABELS[ex.register] ?? ex.register}）
-              </p>
-            </div>
-          ))}
-        </section>
-      ) : null
-    }
-
-    {
-      term.collocations?.length ? (
-        <section class="block">
-          <h2>よく一緒に使う言い方</h2>
-          <dl class="pairs">
-            {term.collocations.map((c) => (
-              <>
-                <dt lang="en">{c.en}</dt>
-                <dd>{c.ja}</dd>
-              </>
-            ))}
-          </dl>
-        </section>
-      ) : null
-    }
-
-    {
-      term.pitfalls?.length ? (
-        <section class="block">
-          <h2>落とし穴</h2>
-          <ul class="plain">
-            {term.pitfalls.map((p) => (
-              <li>{p}</li>
-            ))}
-          </ul>
-        </section>
-      ) : null
-    }
-
-    {
-      conventions.length ? (
-        <section class="block">
-          <h2>日米の慣習差</h2>
-          <ul class="links">
-            {conventions.map((c) => (
-              <li>
-                <a href={`/conventions/${c.id}/`}>{c.title_ja}</a>
-                <span class="detail">{c.advice_ja}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null
-    }
-
-    {
-      symbols.length ? (
-        <section class="block">
-          <h2>記号・式の読み上げ</h2>
-          <ul class="links">
-            {symbols.map((s) => (
-              <li>
-                <a href={`/symbols/${s.id}/`}>{s.name_ja}</a>
-                <span class="detail" lang="en">
-                  {s.spoken_en[0].text}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null
-    }
-
-    {
-      term.related?.length ? (
-        <section class="block">
-          <h2>関連語</h2>
-          <ul class="links">
-            {term.related.map((r) => {
-              const t = termById.get(r);
-              return t ? (
-                <li>
-                  <a href={`/terms/${r}/`}>{t.ja.term}</a>
-                  <En text={t.en.term} gloss={isExplanatoryTranslation(t)} class="detail" />
-                </li>
-              ) : null;
-            })}
-          </ul>
-        </section>
-      ) : null
-    }
-
-    {
-      units.length ? (
-        <section class="block">
-          <h2>出てくる単元</h2>
-          <ul class="chips">
-            {units.map((u) => (
-              <li>
-                <a href={`/curriculum/${u.id}/`}>
-                  {u.subject} {u.unit}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null
-    }
-
-    <EvidenceTable evidence={term.evidence} />
-
-    <section class="block meta">
-      <h2>出典</h2>
-      <Sources sources={term.sources} />
-      <ul class="facts">
-        <li>範囲: {levelText(term.level)}</li>
-        <li>分野: {term.domains.map((d) => DOMAIN_LABELS[d] ?? d).join("・")}</li>
-        <li>確認の段階: {term.confidence === "verified" ? "監査済み" : "未確認（監査前）"}</li>
-        {term.updated && <li>更新: {term.updated}</li>}
-      </ul>
-      <Report id={term.id} path={path} />
-    </section>
   </article>
 </Base>

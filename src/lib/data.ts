@@ -422,13 +422,6 @@ export function sourceView(s: Source): SourceView {
 /** level.jp 理数 is the 理数 courses (理数数学I・II・特論) of the 理数 department, not a general-course subject. */
 export const JP_LEVEL_LABEL: Record<string, string> = { 理数: "理数科（理数に関する学科の科目）" };
 
-export const levelText = (l: Level) =>
-  `日本 ${l.jp.length ? l.jp.map((j) => JP_LEVEL_LABEL[j] ?? j).join("・") : "—"} ／ 米国 ${l.us.length ? l.us.join("・") : "—"}`;
-
-/** 「今日の10語」— deterministic per build day so the page can stay static. */
-export function todaysTerms(n = 10): Term[] {
-  const pool = terms.filter((t) => !isExplanatoryTranslation(t));
-  const day = Math.floor(Date.now() / 86_400_000);
-  const start = pool.length ? (day * 37) % pool.length : 0;
-  return Array.from({ length: Math.min(n, pool.length) }, (_, i) => pool[(start + i * 97) % pool.length]);
-}
+/** 「習う時期」 in an entry's margin: the Japanese subjects and the US courses. */
+export const levelJp = (l: Level) => l.jp.map((j) => JP_LEVEL_LABEL[j] ?? j).join("、");
+export const levelUs = (l: Level) => l.us.join(", ");

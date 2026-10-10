@@ -2,8 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import Math from "../../components/Math.astro";
 import Speak from "../../components/Speak.astro";
-import En from "../../components/En.astro";
-import EvidenceTable from "../../components/EvidenceTable.astro";
+import Evidence from "../../components/Evidence.astro";
 import Sources from "../../components/Sources.astro";
 import Report from "../../components/Report.astro";
 import UnverifiedGate from "../../components/UnverifiedGate.astro";
@@ -19,8 +18,10 @@ import {
   isExplanatoryTranslation,
   REGISTER_LABELS,
   SITE_NAME,
-  levelText,
+  levelJp,
+  levelUs,
 } from "../../lib/data";
+import { GLOSS_LABEL, GLOSS_SHORT } from "../../lib/gloss";
 import { ogPath } from "../../lib/og";
 
 export function getStaticPaths() {
@@ -41,6 +42,8 @@ const related = (s.related ?? [])
 const relatedPhrases = (s.related ?? []).map((r) => phraseById.get(r)).filter((x) => x !== undefined);
 const category = SYMBOL_CATEGORIES.find(([k]) => k === (symbolCategory.get(s.id) ?? "notation-other"));
 const say = s.tts_text ?? first;
+const jpLevel = levelJp(s.level);
+const usLevel = levelUs(s.level);
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "DefinedTerm",
@@ -64,9 +67,9 @@ const jsonLd = {
   {unverified && <UnverifiedGate kind="記号" />}
 
   <article class="entry" data-unverified-item={unverified ? "" : undefined}>
-    {unverified && <p class="unverified-note">この記号はまだ監査を通っていません（未確認）。</p>}
-    <header class="term-head">
-      <p class="meta">
+    <header class="entry-head">
+      {unverified && <p class="unverified-note">この記号はまだ監査を通っていません（未確認）。</p>}
+      <p class="crumbs">
         <a href="/symbols/">記号・式の読み上げ</a>
         {category && (
           <>
@@ -75,107 +78,142 @@ const jsonLd = {
           </>
         )}
       </p>
-      <h1 class="term-ja">{s.name_ja}</h1>
-      <p class="term-en" lang="en">{s.name_en}</p>
+      <h1 class="sym-ja">{s.name_ja}</h1>
+      <p class="sym-en" lang="en">{s.name_en}</p>
     </header>
 
-    <Math latex={s.latex} />
-
-    <div class="say">
-      <span class="say-label">英語ではこう読む</span>
-      {
-        s.spoken_en.map((sp) => (
-          <span class="reading" lang="en">
-            {sp.text} <small lang="ja">（{REGISTER_LABELS[sp.register] ?? sp.register}）</small>
-          </span>
-        ))
-      }
-      {s.respelling && <span class="ja-reading">発音: <span lang="en">{s.respelling}</span></span>}
-      <span class="ja-reading">日本語では: {s.spoken_ja}</span>
-      <Speak text={say} />
-    </div>
-
-    {
-      s.notes?.length ? (
-        <section class="block">
-          <h2>注意</h2>
-          <ul class="plain">
-            {s.notes.map((n) => (
-              <li>{n}</li>
-            ))}
-          </ul>
-        </section>
-      ) : null
-    }
-
-    {
-      term && (
-        <section class="block">
-          <h2>用語</h2>
-          <ul class="links">
-            <li>
-              <a href={`/terms/${term.id}/`}>{term.ja.term}</a>
-              <En text={term.en.term} gloss={isExplanatoryTranslation(term)} class="detail" />
-            </li>
-          </ul>
-        </section>
-      )
-    }
-
-    {
-      related.length ? (
-        <section class="block">
-          <h2>関連する慣習差・記号</h2>
-          <ul class="links">
-            {related.map((r) =>
-              "title_ja" in r ? (
-                <li>
-                  <a href={`/conventions/${r.id}/`}>{r.title_ja}</a>
-                  <span class="detail">日米の慣習差 — {r.advice_ja}</span>
-                </li>
-              ) : (
-                <li>
-                  <a href={`/symbols/${r.id}/`}>{r.name_ja}</a>
-                  <span class="detail" lang="en">
-                    {r.spoken_en[0].text}
-                  </span>
-                </li>
-              ),
-            )}
-          </ul>
-        </section>
-      ) : null
-    }
-
-    {
-      relatedPhrases.length ? (
-        <section class="block">
-          <h2>言葉で言うとき（フレーズ）</h2>
-          <ul class="links">
-            {relatedPhrases.map((p) => (
+    <div class="entry-body">
+      <div class="entry-main">
+        <section class="formula">
+          <h2>英語ではこう読む</h2>
+          <Math latex={s.latex} />
+          <ul class="readings">
+            {s.spoken_en.map((sp, i) => (
               <li>
-                <a href={`/phrases/${p.situation}/#${p.id}`}>{p.intent}</a>
-                <span class="detail" lang="en">
-                  {p.en}
+                <span class="said">
+                  <span lang="en">{sp.text}</span>
+                  {i === 0 && <Speak text={say} size="small" name={first} />}
                 </span>
+                <span class="reg">{REGISTER_LABELS[sp.register] ?? sp.register}</span>
               </li>
             ))}
           </ul>
+          {s.respelling && (
+            <p class="meta">
+              発音 <span class="lat" lang="en">{s.respelling}</span>
+            </p>
+          )}
+          <p class="meta">日本語では　{s.spoken_ja}</p>
         </section>
-      ) : null
-    }
 
-    <EvidenceTable evidence={s.evidence} />
+        {
+          s.notes?.length ? (
+            <section>
+              <h2>注意</h2>
+              <ul class="pitfalls">
+                {s.notes.map((n) => (
+                  <li>
+                    {n}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null
+        }
 
-    <section class="block meta">
-      <h2>出典</h2>
-      <Sources sources={s.sources} />
-      <ul class="facts">
-        <li>範囲: {levelText(s.level)}</li>
-        <li>確認の段階: {s.confidence === "verified" ? "監査済み" : "未確認（監査前）"}</li>
-        {s.updated && <li>更新: {s.updated}</li>}
-      </ul>
-      <Report id={s.id} path={path} />
-    </section>
+        <Evidence evidence={s.evidence} lead={first} />
+      </div>
+
+      <aside class="entry-aside" aria-label="この記号について">
+        <section class="first">
+          <h2>習う時期</h2>
+          <dl class="when">
+            <dt>日本</dt>
+            <dd>{jpLevel || "—"}</dd>
+            <dt>米国</dt>
+            <dd>{usLevel ? <span class="lat" lang="en">{usLevel}</span> : "—"}</dd>
+          </dl>
+        </section>
+
+        {
+          term && (
+            <section>
+              <h2>用語</h2>
+              <ul class="rel">
+                <li>
+                  <a href={`/terms/${term.id}/`}>
+                    <span class="rel-ja">{term.ja.term}</span>
+                    <span class="rel-en" lang="en">
+                      {term.en.term}
+                      {isExplanatoryTranslation(term) && <span class="gloss-short" lang="ja" title={GLOSS_LABEL}>{GLOSS_SHORT}</span>}
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          )
+        }
+
+        {
+          related.length ? (
+            <section>
+              <h2>関連する慣習差・記号</h2>
+              <ul class="rel">
+                {related.map((r) =>
+                  "title_ja" in r ? (
+                    <li>
+                      <a href={`/conventions/${r.id}/`}>
+                        <span class="rel-ja">{r.title_ja}</span>
+                        <span class="rel-en">日米の慣習差</span>
+                      </a>
+                    </li>
+                  ) : (
+                    <li>
+                      <a href={`/symbols/${r.id}/`}>
+                        <span class="rel-ja">{r.name_ja}</span>
+                        <span class="rel-en" lang="en">
+                          {r.spoken_en[0].text}
+                        </span>
+                      </a>
+                    </li>
+                  ),
+                )}
+              </ul>
+            </section>
+          ) : null
+        }
+
+        {
+          relatedPhrases.length ? (
+            <section>
+              <h2>言葉で言うとき（フレーズ）</h2>
+              <ul class="rel">
+                {relatedPhrases.map((p) => (
+                  <li>
+                    <a href={`/phrases/${p.situation}/#${p.id}`}>
+                      <span class="rel-ja">{p.intent}</span>
+                      <span class="rel-en" lang="en">
+                        {p.en}
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null
+        }
+
+        <section>
+          <h2>出典</h2>
+          <Sources sources={s.sources} />
+        </section>
+
+        <section class="about-entry">
+          <h2>この項目について</h2>
+          <p>{s.confidence === "verified" ? "監査済み" : "未確認（監査前）"}。{s.updated && `更新 ${s.updated}。`}</p>
+          <Report id={s.id} path={path} />
+        </section>
+      </aside>
+    </div>
   </article>
 </Base>

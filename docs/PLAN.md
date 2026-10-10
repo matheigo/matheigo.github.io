@@ -308,7 +308,8 @@ schema/         terms.schema.json symbols.schema.json ...
 
 サイトのページ構成:
 ```
-/                     検索ボックス（初期表示は「今日の10語」）
+/                     見出し・写像の図・検索ボックス・収録数・場面から引く（docs/design/D-Home。2026-10-10 デザイン D）
+/terms                用語の一覧（五十音順。2026-10-10 追加）
 /terms/{id}           用語ページ（日英・読み・定義・式・読み上げ・例文・慣習差・関連語・出典・報告ボタン）
 /symbols              記号・式の読み上げ一覧（単元別、🔊 付き）
 /phrases/{situation}  場面別フレーズ
@@ -388,12 +389,12 @@ URL は英語 id 固定。`hreflang` で ja/en を分けない（1ページに�
 やること:
 1. Astro で §7 のページを実装。検索は MiniSearch ＋ wanakana、初回ロードで `search-index.json`（gzip 後 300 KB 目安）を取得
 2. 用語ページ: 日英・読み・定義・式（KaTeX）・🔊（Web Speech API, en-US。ボイスが無ければボタン非表示）・例文・コロケーション・落とし穴・関連語・単元リンク・出典・「間違いを報告」（GitHub issue テンプレへ）
-   - `evidence` の件数を表で出す（言い方ごとに話し言葉・書き言葉の件数、取得元の一覧、数えた日）。本文には用例コーパスの件数を書かない（STYLE 追記欄。2026-09-25 追加）ので、件数はこの表で見せる
+   - `evidence` の件数を出す（話し言葉・書き言葉ごとに帯グラフ 1 本で、言い方ごとに黒と灰で塗り分け、件数も数字で書く。取得元の一覧、数えた日。2026-10-10 デザイン D で表から帯グラフに）。本文には用例コーパスの件数を書かない（STYLE 追記欄。2026-09-25 追加）ので、件数はこの表で見せる
    - mapping none の語のうち、en.term が英語の用語ではなく本プロジェクトの説明の訳の語（日本にしかない概念。rate の ratio to the base amount、one-sixth-formula の one-sixth formula など）は、en.term に「説明の訳（英語の用語ではない）」と分かる印（ラベルと注記）を付けて表示する。検索結果・一覧・書き出し（Anki・PDF）でも同じ印を付け、英語の用語として覚えさせない。対象は mapping none で flags に corpus-no-fixed-expression（英語に決まった言い方がない）がある語（2026-09-25 で 14 語）。米国の用語が元の語（PEMDAS・two-column proof など、ja が本プロジェクトの訳語）と、英語の用語をそのまま見出しにした語（LIATE・sign chart）には付けない（2026-09-25 追加）
 3. `/curriculum`: 日本側と米国側を左右に、単元クリックで用語一覧
 4. `/download`: JSON / CSV / Anki / PDF、ライセンス表示、更新日
 5. SEO: `<title>` は「解の公式 英語 | quadratic formula — MathBridge」型、`description` は定義文、JSON-LD `DefinedTerm`、sitemap、OGP 自動生成
-6. モバイル最優先（片手で検索できる）。ダークモード。フォントは Noto Sans JP ＋ system-ui。派手な装飾は不要、速さと読みやすさ
+6. モバイル最優先（片手で検索できる）。ダークモード。見た目は docs/design/（デザイン D「写像」、2026-10-10 ユーザーの決定）: 英語と数式は STIX Two Text、日本語は BIZ UDPMincho（Google Fonts、display=swap）、白地に黒、瑠璃 #1E50A2 は写像の矢印・リンク・主ボタンだけ。速さと読みやすさ
 
 完了条件: Lighthouse Performance 95+、モバイルで初回検索まで 1 秒以内、全ページ静的。
 

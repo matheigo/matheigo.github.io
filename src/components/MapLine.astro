@@ -1,0 +1,44 @@
+---
+/**
+ * The mapping of a term drawn as a line (design D): exact a solid arrow, near a dashed arrow,
+ * none a dotted line ending in an open circle. Horizontal beside the headwords on a wide
+ * screen, vertical between them when they stack. The label text sits next to it (Term page).
+ */
+interface Props {
+  mapping: "exact" | "near" | "none";
+}
+const { mapping } = Astro.props;
+const none = mapping === "none";
+const cls = `stroke ${mapping === "exact" ? "" : mapping}`.trim();
+---
+
+<svg class="mapline h" width="136" height="20" viewBox="0 0 136 20" aria-hidden="true">
+  {
+    none ? (
+      <>
+        <path class={cls} d="M 4 10 L 118 10" />
+        <circle class="dot" cx="127" cy="10" r="5.5" />
+      </>
+    ) : (
+      <>
+        <path class={cls} d="M 4 10 L 122 10" />
+        <path class="head" d="M 121 4.5 L 132 10 L 121 15.5 z" />
+      </>
+    )
+  }
+</svg>
+<svg class="mapline v" width="24" height="48" viewBox="0 0 24 48" aria-hidden="true">
+  {
+    none ? (
+      <>
+        <path class={cls} d="M 12 4 L 12 31" />
+        <circle class="dot" cx="12" cy="40" r="5" />
+      </>
+    ) : (
+      <>
+        <path class={cls} d="M 12 4 L 12 34" />
+        <path class="head" d="M 6.5 33 L 12 44 L 17.5 33 z" />
+      </>
+    )
+  }
+</svg>

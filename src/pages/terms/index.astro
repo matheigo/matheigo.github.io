@@ -1,0 +1,79 @@
+---
+import Base from "../../layouts/Base.astro";
+import HiddenNote from "../../components/HiddenNote.astro";
+import { isExplanatoryTranslation, isUnverified, terms, SITE_NAME } from "../../lib/data";
+import { GLOSS_LABEL, GLOSS_SHORT } from "../../lib/gloss";
+
+/** The kana row a reading starts in (濁音・半濁音・小書きは清音の行に). */
+const ROWS: [string, string][] = [
+  ["あ", "ぁあぃいぅうぇえぉおゔ"],
+  ["か", "かがきぎくぐけげこご"],
+  ["さ", "さざしじすずせぜそぞ"],
+  ["た", "ただちぢっつづてでとど"],
+  ["な", "なにぬねの"],
+  ["は", "はばぱひびぴふぶぷへべぺほぼぽ"],
+  ["ま", "まみむめも"],
+  ["や", "ゃやゅゆょよ"],
+  ["ら", "らりるれろ"],
+  ["わ", "ゎわゐゑをん"],
+];
+const rowOf = (reading: string) => ROWS.find(([, ks]) => ks.includes(reading[0] ?? ""))?.[0] ?? "ほか";
+const sorted = [...terms].sort((a, b) => a.ja.reading.localeCompare(b.ja.reading, "ja"));
+const groups = [...ROWS.map(([r]) => r), "ほか"]
+  .map((r) => ({ r, items: sorted.filter((t) => rowOf(t.ja.reading) === r) }))
+  .filter((g) => g.items.length);
+const hidden = terms.filter(isUnverified).length;
+const anchor = (r: string) => `row-${[...ROWS.map(([x]) => x), "ほか"].indexOf(r)}`;
+---
+
+<Base
+  title={`数学用語の英語 一覧（五十音順）— ${SITE_NAME}`}
+  description="中学・高校・大学初年次の数学用語を五十音順に。日本語の用語と、米国の教室で使う英語の言い方。"
+  noindex={hidden === terms.length}
+  section="terms"
+>
+  <div class="list">
+    <header class="page-head">
+      <h1 class="page-title">用語</h1>
+      <p class="lede">数学の用語を、日本語の読みの五十音順に並べています。押すと、英語の言い方・定義・例文・根拠の件数が出ます。</p>
+    </header>
+    <HiddenNote count={hidden} total={terms.length} />
+
+    <ul class="jump" aria-label="五十音">
+      {
+        groups.map((g) => (
+          <li data-unverified-item={g.items.every(isUnverified) ? "" : undefined}>
+            <a href={`#${anchor(g.r)}`}>{g.r}</a>
+          </li>
+        ))
+      }
+    </ul>
+
+    {
+      groups.map((g) => (
+        <section id={anchor(g.r)} data-unverified-item={g.items.every(isUnverified) ? "" : undefined}>
+          <h2 class="group">{g.r}</h2>
+          <ul class="rows term-rows">
+            {g.items.map((t) => (
+              <li data-unverified-item={isUnverified(t) ? "" : undefined}>
+                <a href={`/terms/${t.id}/`}>
+                  <span>
+                    <span class="row-ja">{t.ja.term}</span> <span class="row-sub">{t.ja.reading}</span>
+                  </span>
+                  <span class="row-en" lang="en">
+                    {t.en.term}
+                    {isExplanatoryTranslation(t) && (
+                      <span class="gloss-short" lang="ja" title={GLOSS_LABEL}>
+                        {GLOSS_SHORT}
+                      </span>
+                    )}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+</Base>

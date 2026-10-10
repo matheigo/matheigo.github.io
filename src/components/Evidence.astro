@@ -1,0 +1,120 @@
+---
+/**
+ * The corpus counts behind the headword (PLAN §9 Phase 4 の 2). Body text never carries corpus
+ * counts (STYLE, CLAUDE.md rule 10), so this is where a reader sees them: one bar per register,
+ * spoken and written, split by wording in black and greys, with every count also written out.
+ * A wording keeps its shade in both bars: the headword black, the rest in greys by their total.
+ */
+import { corpusSourceLabel, corpusSourceRegister, type Evidence } from "../lib/data";
+
+interface Props {
+  evidence?: Evidence;
+  /** What was counted: the whole expression (terms, symbols) or its key part (phrases). */
+  unit?: "expression" | "key";
+  /** Heading level: h2 in an entry's main column, h3 inside a phrase. */
+  level?: 2 | 3;
+  /** The headword: its wording comes first, in black. */
+  lead?: string;
+}
+const { evidence, unit = "expression", level = 2, lead } = Astro.props;
+
+const spoken = evidence?.spoken;
+const written = evidence?.written;
+const keys = [...new Set([...Object.keys(spoken ?? {}), ...Object.keys(written ?? {})])];
+const total = (k: string) => (spoken?.[k] ?? 0) + (written?.[k] ?? 0);
+const isLead = (k: string) => lead !== undefined && k.replace(/\*/g, "…").toLowerCase() === lead.toLowerCase();
+keys.sort((a, b) => Number(isLead(b)) - Number(isLead(a)) || total(b) - total(a));
+const shade = (i: number) => (i === 0 ? 1 : i % 2 === 1 ? 2 : 3);
+const show = (k: string) => k.replace(/\*/g, "…");
+const fmt = (n: number) => n.toLocaleString("en-US");
+
+const regs = (
+  [
+    ["話し言葉", spoken],
+    ["書き言葉", written],
+  ] as const
+).map(([label, m]) => {
+  const sum = m ? keys.reduce((s, k) => s + (m[k] ?? 0), 0) : 0;
+  return {
+    label,
+    counted: m !== undefined,
+    sum,
+    items: keys.map((k, i) => ({ k: show(k), n: m?.[k] ?? 0, shade: shade(i) })),
+  };
+});
+
+const sources = evidence?.sources ?? [];
+const spokenSources = sources.filter((s) => corpusSourceRegister(s) !== "written").map(corpusSourceLabel);
+const writtenSources = sources.filter((s) => corpusSourceRegister(s) === "written").map(corpusSourceLabel);
+const explain = `米国の講義の書き起こし・字幕（話し言葉）と教科書・講義ノート（書き言葉）で、${
+  unit === "key" ? "言い方の要の部分" : "言い方"
+}ごとに数えた回数です。語形変化はまとめ、「…」は 1〜3 語の空き。「数えていない」はその側では数えていないことを示します。`;
+const H = level === 2 ? "h2" : "h3";
+const R = level === 2 ? "h3" : "h4";
+---
+
+{
+  evidence && (
+    <section class="evidence">
+      <H>根拠の件数</H>
+      {keys.length ? (
+        regs.map((r) => (
+          <div class="reg">
+            <R class="reg-h">
+              <span>{r.label}</span>
+              <span class="total">{r.counted ? `計 ${fmt(r.sum)}` : "数えていない"}</span>
+            </R>
+            {r.counted && r.sum > 0 && (
+              <div class="ev-bar" aria-hidden="true">
+                {r.items
+                  .filter((x) => x.n > 0)
+                  .map((x) => (
+                    <span
+                      class={`sw-${x.shade}`}
+                      style={`flex:${x.n} 1 0`}
+                      title={`${x.k} ${fmt(x.n)}（${Math.round((x.n / r.sum) * 100)}%）`}
+                    />
+                  ))}
+              </div>
+            )}
+            {r.counted && (
+              <ul class="bar-key">
+                {r.items.map((x) => (
+                  <li>
+                    <span class={`sw sw-${x.shade}`} aria-hidden="true" />
+                    <span lang="en">{x.k}</span>
+                    <span class="num">{fmt(x.n)}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))
+      ) : (
+        <p class="empty-note">用例コーパスで数えた件数はありません（数えない言い方か、どの取得元にも出てこなかった言い方です）。</p>
+      )}
+      <p class="meta">{explain}</p>
+      <details class="meta">
+        <summary>取得元と数えた日</summary>
+        <dl>
+          {spokenSources.length > 0 && (
+            <>
+              <dt>取得元（話し言葉）</dt>
+              <dd>{spokenSources.join(" ／ ")}</dd>
+            </>
+          )}
+          {writtenSources.length > 0 && (
+            <>
+              <dt>取得元（書き言葉）</dt>
+              <dd>{writtenSources.join(" ／ ")}</dd>
+            </>
+          )}
+          <dt>数えた日</dt>
+          <dd>
+            <time datetime={evidence.counted}>{evidence.counted}</time>
+          </dd>
+        </dl>
+      </details>
+    </section>
+  )
+}

@@ -1,7 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import Speak from "../../components/Speak.astro";
-import EvidenceTable from "../../components/EvidenceTable.astro";
+import Evidence from "../../components/Evidence.astro";
 import Sources from "../../components/Sources.astro";
 import Report from "../../components/Report.astro";
 import HiddenNote from "../../components/HiddenNote.astro";
@@ -38,76 +38,87 @@ const path = `/phrases/${situation}/`;
   noindex={hidden === items.length}
   section="phrases"
 >
-  <p class="meta"><a href="/phrases/">場面別フレーズ</a></p>
-  <h1 class="page-title">{label}</h1>
+  <div class="list">
+    <header class="page-head">
+      <p class="crumbs"><a href="/phrases/">場面別フレーズ</a></p>
+      <h1 class="page-title">{label}</h1>
+    </header>
 
-  <ul class="jump" aria-label="場面">
-    {
-      all.map((s) => (
-        <li>
-          <a href={`/phrases/${s}/`} aria-current={s === situation ? "page" : undefined}>
-            {SITUATION_LABELS[s] ?? s}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+    <ul class="jump" aria-label="場面">
+      {
+        all.map((s) => (
+          <li>
+            <a href={`/phrases/${s}/`} aria-current={s === situation ? "page" : undefined}>
+              {SITUATION_LABELS[s] ?? s}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
 
-  <HiddenNote count={hidden} total={items.length} />
+    <HiddenNote count={hidden} total={items.length} />
 
-  {
-    items.map((p) => (
-      <section class="phrase" id={p.id} data-unverified-item={isUnverified(p) ? "" : undefined}>
-        <h2>{p.intent}</h2>
-        <div class="say">
-          <span lang="en">{p.en}</span>
-          <Speak text={p.en} />
-        </div>
-        <p class="meta">
-          {p.ja}（{PHRASE_REGISTER_LABELS[p.register] ?? p.register}）
-          {isUnverified(p) && <span class="badge unverified">未確認</span>}
-        </p>
-        {p.variants?.length ? (
-          <dl class="pairs">
-            {p.variants.map((v) => (
-              <>
-                <dt lang="en">{v.en}</dt>
-                <dd>
-                  {PHRASE_REGISTER_LABELS[v.register] ?? v.register}
-                  {v.note ? ` — ${v.note}` : ""}
-                </dd>
-              </>
-            ))}
-          </dl>
-        ) : null}
-        {symbolsByPhrase.get(p.id)?.length ? (
-          <p class="meta">
-            記号:{" "}
-            {symbolsByPhrase.get(p.id)!.map((s) => (
-              <a href={`/symbols/${s.id}/`}>{s.name_ja}</a>
-            ))}
-          </p>
-        ) : null}
-        {p.notes?.length ? (
-          <section class="block">
-            <h2>注意</h2>
-            <ul class="plain">
-              {p.notes.map((n) => (
-                <li>{n}</li>
-              ))}
-            </ul>
+    <div class="phrases">
+      {
+        items.map((p) => (
+          <section class="phrase" id={p.id} data-unverified-item={isUnverified(p) ? "" : undefined}>
+            <h2>
+              {p.intent}
+            </h2>
+            <p class="say-en">
+              <span lang="en">{p.en}</span>
+              <Speak text={p.en} size="small" name="フレーズ" />
+            </p>
+            <p class="ja">
+              {p.ja}（{PHRASE_REGISTER_LABELS[p.register] ?? p.register}）
+              {isUnverified(p) && <span class="badge">未確認</span>}
+            </p>
+            {p.variants?.length ? (
+              <dl class="pairs">
+                {p.variants.map((v) => (
+                  <div>
+                    <dt lang="en">{v.en}</dt>
+                    <dd>
+                      {PHRASE_REGISTER_LABELS[v.register] ?? v.register}
+                      {v.note && (
+                        <span class="note">
+                          {v.note}
+                        </span>
+                      )}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            ) : null}
+            {symbolsByPhrase.get(p.id)?.length ? (
+              <p class="meta">
+                記号:{" "}
+                {symbolsByPhrase.get(p.id)!.map((s) => (
+                  <a href={`/symbols/${s.id}/`}>{s.name_ja}</a>
+                ))}
+              </p>
+            ) : null}
+            {p.notes?.length ? (
+              <ul class="notes">
+                {p.notes.map((n) => (
+                  <li>
+                    {n}
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+            <details>
+              <summary>根拠の件数と出典</summary>
+              <Evidence evidence={p.evidence} unit="key" level={3} />
+              <div class="phrase-sources">
+                <h3>出典</h3>
+                <Sources sources={p.sources} />
+                <Report id={p.id} path={`${path}#${p.id}`} />
+              </div>
+            </details>
           </section>
-        ) : null}
-        <details>
-          <summary>件数と出典</summary>
-          <EvidenceTable evidence={p.evidence} unit="key" />
-          <section class="block meta">
-            <h2>出典</h2>
-            <Sources sources={p.sources} />
-            <Report id={p.id} path={`${path}#${p.id}`} />
-          </section>
-        </details>
-      </section>
-    ))
-  }
+        ))
+      }
+    </div>
+  </div>
 </Base>

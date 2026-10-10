@@ -1,0 +1,192 @@
+---
+/**
+ * The top page's figure (D-Home): five Japanese terms mapped into English. The pairs and the
+ * kind of each line come from the data, so the figure says what the entries say. The right-hand
+ * order is the mockup's, which makes the arrows cross. Each line is drawn once on load
+ * (a mask whose stroke grows); with reduced motion the lines are simply there.
+ */
+import { termById, MAPPING_LABELS, type Term } from "../lib/data";
+
+/** Left-hand order, and for each the row its English sits in on the right. */
+const PICKS: [string, number][] = [
+  ["definite-integral", 1],
+  ["substitute", 0],
+  ["derivative-at-a-point", 3],
+  ["opens-downward", 2],
+  ["sign-chart", 4],
+];
+const picks = PICKS.map(([id, to]) => ({ t: termById.get(id), to })).filter(
+  (p): p is { t: Term; to: number } => p.t !== undefined,
+);
+
+interface Layout {
+  key: string;
+  w: number;
+  h: number;
+  left: { cx: number; cy: number; rx: number; ry: number };
+  right: { cx: number; cy: number; rx: number; ry: number };
+  names: number;
+  nameJa: number;
+  nameEn: number;
+  f: { x: number; y: number; size: number };
+  rows: number[];
+  jaX: number;
+  enX: number;
+  jaSize: number;
+  enSize: number;
+  x1: number;
+  x2: number;
+  head: [number, number];
+  dot: number;
+  mask: number;
+}
+
+const WIDE: Layout = {
+  key: "w",
+  w: 600,
+  h: 424,
+  left: { cx: 140, cy: 230, rx: 118, ry: 186 },
+  right: { cx: 460, cy: 230, rx: 132, ry: 186 },
+  names: 26,
+  nameJa: 15,
+  nameEn: 18,
+  f: { x: 295, y: 92, size: 30 },
+  rows: [116, 176, 236, 296, 356],
+  jaX: 222,
+  enX: 368,
+  jaSize: 20,
+  enSize: 20,
+  x1: 230,
+  x2: 361,
+  head: [11, 4.5],
+  dot: 4.5,
+  mask: 16,
+};
+const NARROW: Layout = {
+  key: "n",
+  w: 350,
+  h: 336,
+  left: { cx: 78, cy: 182, rx: 72, ry: 150 },
+  right: { cx: 262, cy: 182, rx: 86, ry: 150 },
+  names: 18,
+  nameJa: 13,
+  nameEn: 15,
+  f: { x: 166, y: 66, size: 22 },
+  rows: [102, 142, 182, 222, 262],
+  jaX: 130,
+  enX: 198,
+  jaSize: 15,
+  enSize: 14,
+  x1: 136,
+  x2: 193,
+  head: [9, 3.75],
+  dot: 3.75,
+  mask: 12,
+};
+
+const f1 = (n: number) => Math.round(n * 10) / 10;
+
+function lines(L: Layout) {
+  return picks.map((p, i) => {
+    const y1 = L.rows[i];
+    const y2 = L.rows[p.to];
+    const m = p.t.mapping;
+    const dx = L.x2 - L.x1;
+    const dy = y2 - y1;
+    const len = Math.hypot(dx, dy);
+    const ux = dx / len;
+    const uy = dy / len;
+    const [hl, hw] = L.head;
+    const bx = L.x2 - ux * hl;
+    const by = y2 - uy * hl;
+    const reveal = `M ${f1(L.x1 - ux * 3)} ${f1(y1 - uy * 3)} L ${f1(L.x2 + ux * 4)} ${f1(y2 + uy * 4)}`;
+    if (m === "none") {
+      const end = L.x2 - L.dot * 2 - 3;
+      return {
+        m,
+        reveal,
+        line: `M ${L.x1} ${y1} L ${f1(end)} ${y2}`,
+        dot: { cx: f1(L.x2 - L.dot), cy: y2 },
+      };
+    }
+    return {
+      m,
+      reveal,
+      line: `M ${L.x1} ${y1} L ${f1(bx + ux)} ${f1(by + uy)}`,
+      head: `M ${f1(L.x2)} ${y2} L ${f1(bx - uy * hw)} ${f1(by + ux * hw)} L ${f1(bx + uy * hw)} ${f1(by - ux * hw)} z`,
+    };
+  });
+}
+
+const layouts = [WIDE, NARROW].map((L) => ({ L, ls: lines(L) }));
+const right = (to: number) => picks.find((p) => p.to === to)!;
+const caption =
+  "日本語の語から英語の言い方への写像の図。" +
+  picks.map((p) => `${p.t.ja.term}は ${p.t.en.term}（${MAPPING_LABELS[p.t.mapping]}）`).join("、") +
+  "。";
+---
+
+<figure class="map-figure">
+  <figcaption class="visually-hidden">{caption}</figcaption>
+  {
+    layouts.map(({ L, ls }) => (
+      <svg class={L.key === "w" ? "wide" : "narrow"} viewBox={`0 0 ${L.w} ${L.h}`} width={L.w} height={L.h} aria-hidden="true">
+        <defs>
+          {ls.map((l, i) => (
+            <mask id={`mf-${L.key}-${i}`} maskUnits="userSpaceOnUse" x="0" y="0" width={L.w} height={L.h}>
+              <path class="reveal" d={l.reveal} stroke-width={L.mask} pathLength="1" style={`animation-delay:${250 + i * 140}ms`} />
+            </mask>
+          ))}
+        </defs>
+        <ellipse class="set" cx={L.left.cx} cy={L.left.cy} rx={L.left.rx} ry={L.left.ry} />
+        <ellipse class="set" cx={L.right.cx} cy={L.right.cy} rx={L.right.rx} ry={L.right.ry} />
+        <text class="set-name" x={L.left.cx} y={L.names} font-size={L.nameJa} text-anchor="middle">
+          日本語
+        </text>
+        <text class="set-name" x={L.right.cx} y={L.names} font-size={L.nameEn} text-anchor="middle" lang="en">
+          English
+        </text>
+        <text class="f" x={L.f.x} y={L.f.y} font-size={L.f.size} text-anchor="middle">
+          f
+        </text>
+        {ls.map((l, i) => (
+          <g class="mapline" mask={`url(#mf-${L.key}-${i})`}>
+            <path class={`stroke ${l.m === "exact" ? "" : l.m}`} d={l.line} />
+            {l.head && <path class="head" d={l.head} />}
+            {l.dot && <circle class="dot" cx={l.dot.cx} cy={l.dot.cy} r={L.dot} />}
+          </g>
+        ))}
+        {picks.map((p, i) => (
+          <text class="ja" x={L.jaX} y={L.rows[i] + L.jaSize * 0.35} font-size={L.jaSize} text-anchor="end">
+            {p.t.ja.term}
+          </text>
+        ))}
+        {L.rows.map((y, r) => {
+          const p = right(r);
+          return (
+            <text class={`en ${p.t.mapping}`} x={L.enX} y={y + L.enSize * 0.33} font-size={L.enSize} lang="en">
+              {p.t.en.term}
+            </text>
+          );
+        })}
+      </svg>
+    ))
+  }
+  <ul class="legend" aria-hidden="true">
+    <li>
+      <svg class="mapline" width="32" height="10" viewBox="0 0 32 10"
+        ><path class="stroke" d="M 1 5 L 24 5"></path><path class="head" d="M 23 1.5 L 31 5 L 23 8.5 z"></path></svg
+      >{MAPPING_LABELS.exact}
+    </li>
+    <li>
+      <svg class="mapline" width="32" height="10" viewBox="0 0 32 10"
+        ><path class="stroke near" d="M 1 5 L 24 5"></path><path class="head" d="M 23 1.5 L 31 5 L 23 8.5 z"></path></svg
+      >{MAPPING_LABELS.near}
+    </li>
+    <li>
+      <svg class="mapline" width="32" height="10" viewBox="0 0 32 10"
+        ><path class="stroke none" d="M 2 5 L 21 5"></path><circle class="dot" cx="27" cy="5" r="3.5"></circle></svg
+      >{MAPPING_LABELS.none}
+    </li>
+  </ul>
+</figure>

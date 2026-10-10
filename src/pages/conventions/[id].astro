@@ -1,6 +1,5 @@
 ---
 import Base from "../../layouts/Base.astro";
-import En from "../../components/En.astro";
 import Sources from "../../components/Sources.astro";
 import Report from "../../components/Report.astro";
 import UnverifiedGate from "../../components/UnverifiedGate.astro";
@@ -13,8 +12,10 @@ import {
   isExplanatoryTranslation,
   CONVENTION_CATEGORY_LABELS,
   SITE_NAME,
-  levelText,
+  levelJp,
+  levelUs,
 } from "../../lib/data";
+import { GLOSS_LABEL, GLOSS_SHORT } from "../../lib/gloss";
 import { ogPath } from "../../lib/og";
 
 export function getStaticPaths() {
@@ -29,6 +30,8 @@ const related = (c.related ?? [])
   .map((r) => symbolById.get(r) ?? conventionById.get(r))
   .filter((x) => x !== undefined);
 const category = CONVENTION_CATEGORY_LABELS[c.category] ?? c.category;
+const jpLevel = levelJp(c.level);
+const usLevel = levelUs(c.level);
 ---
 
 <Base
@@ -41,79 +44,110 @@ const category = CONVENTION_CATEGORY_LABELS[c.category] ?? c.category;
   {unverified && <UnverifiedGate kind="慣習差" />}
 
   <article class="entry" data-unverified-item={unverified ? "" : undefined}>
-    {unverified && <p class="unverified-note">この項目はまだ監査を通っていません（未確認）。</p>}
-    <header class="term-head">
-      <p class="meta">
+    <header class="entry-head">
+      {unverified && <p class="unverified-note">この項目はまだ監査を通っていません（未確認）。</p>}
+      <p class="crumbs">
         <a href="/conventions/">日米の慣習差</a> ／ <a href={`/conventions/#${c.category}`}>{category}</a>
       </p>
-      <h1 class="term-ja">{c.title_ja}</h1>
-      <p class="term-en" lang="en">{c.title_en}</p>
+      <h1 class="sym-ja">{c.title_ja}</h1>
+      <p class="sym-en" lang="en">{c.title_en}</p>
+      <p class="advice">{c.advice_ja}</p>
     </header>
 
-    <p class="advice">{c.advice_ja}</p>
+    <div class="entry-body">
+      <div class="entry-main">
+        <div class="compare">
+          <section>
+            <h2>日本</h2>
+            <p>{c.jp}</p>
+          </section>
+          <section>
+            <h2>米国</h2>
+            <p>{c.us}</p>
+          </section>
+        </div>
+      </div>
 
-    <div class="compare">
-      <div>
-        <h2>日本</h2>
-        <p>{c.jp}</p>
-      </div>
-      <div>
-        <h2>米国</h2>
-        <p>{c.us}</p>
-      </div>
+      <aside class="entry-aside" aria-label="この項目について">
+        <section class="first">
+          <h2>習う時期</h2>
+          <dl class="when">
+            <dt>日本</dt>
+            <dd>{jpLevel || "—"}</dd>
+            <dt>米国</dt>
+            <dd>{usLevel ? <span class="lat" lang="en">{usLevel}</span> : "—"}</dd>
+          </dl>
+        </section>
+
+        {
+          terms.length ? (
+            <section>
+              <h2>関係する用語</h2>
+              <ul class="rel">
+                {terms.map((t) => (
+                  <li data-unverified-item={isUnverified(t) ? "" : undefined}>
+                    <a href={`/terms/${t.id}/`}>
+                      <span class="rel-ja">{t.ja.term}</span>
+                      <span class="rel-en" lang="en">
+                        {t.en.term}
+                        {isExplanatoryTranslation(t) && (
+                          <span class="gloss-short" lang="ja" title={GLOSS_LABEL}>
+                            {GLOSS_SHORT}
+                          </span>
+                        )}
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null
+        }
+
+        {
+          related.length ? (
+            <section>
+              <h2>関連する記号・慣習差</h2>
+              <ul class="rel">
+                {related.map((r) =>
+                  "latex" in r ? (
+                    <li>
+                      <a href={`/symbols/${r.id}/`}>
+                        <span class="rel-ja">{r.name_ja}</span>
+                        <span class="rel-en" lang="en">
+                          {r.spoken_en[0].text}
+                        </span>
+                      </a>
+                    </li>
+                  ) : (
+                    <li>
+                      <a href={`/conventions/${r.id}/`}>
+                        <span class="rel-ja">{r.title_ja}</span>
+                        <span class="rel-en" lang="en">
+                          {r.title_en}
+                        </span>
+                      </a>
+                    </li>
+                  ),
+                )}
+              </ul>
+            </section>
+          ) : null
+        }
+
+        <section>
+          <h2>出典</h2>
+          <Sources sources={c.sources} />
+        </section>
+
+        <section class="about-entry">
+          <h2>この項目について</h2>
+          <p>
+            {c.confidence === "verified" ? "監査済み" : "未確認（監査前）"}。分類は{category}。{c.updated && `更新 ${c.updated}。`}
+          </p>
+          <Report id={c.id} path={path} />
+        </section>
+      </aside>
     </div>
-
-    {
-      related.length ? (
-        <section class="block">
-          <h2>関連する記号・慣習差</h2>
-          <ul class="links">
-            {related.map((r) =>
-              "latex" in r ? (
-                <li>
-                  <a href={`/symbols/${r.id}/`}>{r.name_ja}</a>
-                  <span class="detail" lang="en">
-                    {r.spoken_en[0].text}
-                  </span>
-                </li>
-              ) : (
-                <li>
-                  <a href={`/conventions/${r.id}/`}>{r.title_ja}</a>
-                  <span class="detail">{r.advice_ja}</span>
-                </li>
-              ),
-            )}
-          </ul>
-        </section>
-      ) : null
-    }
-
-    {
-      terms.length ? (
-        <section class="block">
-          <h2>関係する用語</h2>
-          <ul class="links">
-            {terms.map((t) => (
-              <li>
-                <a href={`/terms/${t.id}/`}>{t.ja.term}</a>
-                <En text={t.en.term} gloss={isExplanatoryTranslation(t)} class="detail" />
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null
-    }
-
-    <section class="block meta">
-      <h2>出典</h2>
-      <Sources sources={c.sources} />
-      <ul class="facts">
-        <li>範囲: {levelText(c.level)}</li>
-        <li>分類: {category}</li>
-        <li>確認の段階: {c.confidence === "verified" ? "監査済み" : "未確認（監査前）"}</li>
-        {c.updated && <li>更新: {c.updated}</li>}
-      </ul>
-      <Report id={c.id} path={path} />
-    </section>
   </article>
 </Base>

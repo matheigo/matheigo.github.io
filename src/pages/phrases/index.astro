@@ -13,21 +13,33 @@ const hidden = phrases.filter(isUnverified).length;
   noindex={hidden === phrases.length}
   section="phrases"
 >
-  <h1 class="page-title">場面別フレーズ</h1>
-  <p class="lede">米国の数学の授業・オフィスアワー・答案・試験で使う言い回しを、場面ごとにまとめました。</p>
-  <HiddenNote count={hidden} total={phrases.length} />
-  <ul class="rows">
-    {
-      groups.map((g) => (
-        <li data-unverified-item={g.items.every(isUnverified) ? "" : undefined}>
-          <a href={`/phrases/${g.s}/`}>
-            <span class="row-ja">{SITUATION_LABELS[g.s]}</span>
-            <span class="row-sub">
-              {g.items.length} 件 — {g.items.slice(0, 3).map((p) => p.intent).join("、")} …
-            </span>
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+  <div class="list">
+    <header class="page-head">
+      <h1 class="page-title">場面別フレーズ</h1>
+      <p class="lede">米国の数学の授業・オフィスアワー・答案・試験で使う言い回しを、場面ごとにまとめました。</p>
+    </header>
+    <HiddenNote count={hidden} total={phrases.length} />
+
+    <ul class="rows scene-rows spaced">
+      {
+        groups.map((g) => (
+          <li data-unverified-item={g.items.every(isUnverified) ? "" : undefined}>
+            <a href={`/phrases/${g.s}/`}>
+              <span class="row-top">
+                <span class="row-ja">{SITUATION_LABELS[g.s]}</span>
+                <span class="n">{g.items.length}</span>
+              </span>
+              <span class="row-sub">
+                {g.items
+                  .slice(0, 3)
+                  .map((p) => p.intent)
+                  .join("、")}{" "}
+                …
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </Base>

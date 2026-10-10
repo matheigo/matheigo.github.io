@@ -1,20 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
-import En from "../components/En.astro";
-import HiddenNote from "../components/HiddenNote.astro";
-import {
-  conventions,
-  curriculum,
-  isUnverified,
-  isExplanatoryTranslation,
-  phrases,
-  symbols,
-  terms,
-  todaysTerms,
-  SITE_NAME,
-} from "../lib/data";
+import MappingFigure from "../components/MappingFigure.astro";
+import { conventions, phrases, symbols, terms, SITUATIONS, SITUATION_LABELS, SITE_NAME } from "../lib/data";
 
-const today = todaysTerms(10);
 const site = Astro.site?.href ?? "https://matheigo.github.io/";
 const jsonLd = {
   "@context": "https://schema.org",
@@ -28,76 +16,94 @@ const jsonLd = {
     "query-input": "required name=search_term_string",
   },
 };
-const sections = [
-  { href: "/symbols/", label: "記号・式の読み上げ", n: symbols.length },
-  { href: "/phrases/", label: "場面別フレーズ", n: phrases.length },
-  { href: "/conventions/", label: "日米の慣習差", n: conventions.length },
-  { href: "/curriculum/", label: "カリキュラム対応表", n: curriculum.length, unit: "単元" },
+const verified = <T extends { confidence: string }>(xs: T[]) => xs.filter((x) => x.confidence === "verified");
+const fmt = (n: number) => n.toLocaleString("en-US");
+const counts = {
+  terms: verified(terms).length,
+  symbols: verified(symbols).length,
+  phrases: verified(phrases).length,
+  conventions: verified(conventions).length,
+};
+const scenes = SITUATIONS.map((s) => ({ s, n: verified(phrases).filter((p) => p.situation === s).length })).filter((x) => x.n);
+const tries = [
+  { q: "増減表", en: false },
+  { q: "上に凸", en: false },
+  { q: "plug in", en: true },
 ];
 ---
 
-<Base title={`${SITE_NAME} — 数学の日英辞典（日本語⇄英語）`} jsonLd={jsonLd}>
+<Base title={`${SITE_NAME} — 数学の日英辞典（日本語⇄英語）`} jsonLd={jsonLd} home>
   <link slot="head" rel="preload" href="/search-index.json" as="fetch" crossorigin="anonymous" />
 
-  <h1 class="page-title">数学の日英辞典</h1>
-  <p class="lede">日本で学んだ数学の言葉を、米国の教室で使う英語に。かな・漢字・ローマ字・英語のどれでも引けます。</p>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>数学は同じ。<br />言葉が違う。</h1>
+      <p class="sub" lang="en">The math is the same. The words are not.</p>
+      <p>日本で学んだ数学の言葉を、米国の教室で通じる英語に。言い方は、米国の講義の書き起こしと教科書で数えて確かめています。</p>
 
-  <form class="search" role="search" action="/" method="get">
-    <label for="q" class="skip">検索</label>
-    <input
-      id="q"
-      name="q"
-      type="search"
-      autocomplete="off"
-      autocapitalize="off"
-      autocorrect="off"
-      spellcheck="false"
-      enterkeyhint="search"
-      placeholder="かいのこうしき / 解の公式 / quadratic"
-    />
-  </form>
-  <p id="status" class="meta" aria-live="polite"></p>
-  <ul class="hits" id="hits" hidden></ul>
+      <form class="search" role="search" action="/" method="get">
+        <label for="q">日本語でも英語でも引けます</label>
+        <div class="row">
+          <input
+            id="q"
+            name="q"
+            type="search"
+            autocomplete="off"
+            autocapitalize="off"
+            autocorrect="off"
+            spellcheck="false"
+            enterkeyhint="search"
+            placeholder="増減表、ぞうげんひょう、sign chart"
+          />
+          <button type="submit" class="primary">引く</button>
+        </div>
+        <p class="tries">
+          試しに引く
+          {
+            tries.map((t) => (
+              <a href={`/?q=${encodeURIComponent(t.q)}`} data-try={t.q}>
+                {t.en ? (
+                  <span class="lat" lang="en">
+                    {t.q}
+                  </span>
+                ) : (
+                  t.q
+                )}
+              </a>
+            ))
+          }
+        </p>
+      </form>
+      <p id="status" class="meta" aria-live="polite"></p>
+      <ul class="hits" id="hits" hidden></ul>
+    </div>
+
+    <MappingFigure />
+  </section>
 
   <div id="home">
-    <section class="block">
-      <h2>今日の10語</h2>
-      <HiddenNote count={today.filter(isUnverified).length} total={today.length} />
-      <ul class="hits">
-        {
-          today.map((t) => (
-            <li class="hit" data-unverified-item={isUnverified(t) ? "" : undefined}>
-              <a href={`/terms/${t.id}/`}>
-                <span class="hit-ja">{t.ja.term}</span>
-                <span class="hit-kind">用語</span>
-                <span class="hit-reading">{t.ja.reading}</span>
-                <span class="hit-en" lang="en">
-                  <En text={t.en.term} gloss={isExplanatoryTranslation(t)} class="" />
-                </span>
-              </a>
-            </li>
-          ))
-        }
-      </ul>
+    <section class="home-sec">
+      <p class="counts-line">
+        確かめ終えたのは、<a href="/terms/">用語 {fmt(counts.terms)} 語</a>、<a href="/symbols/">記号の読み方 {fmt(counts.symbols)}</a>、<a
+          href="/phrases/">場面別のフレーズ {fmt(counts.phrases)}</a
+        >、<a href="/conventions/">日米の書き方の違い {fmt(counts.conventions)}</a>。どれも、米国の講義と教科書で実際に使われている言い方かを数えてから載せています。
+      </p>
     </section>
 
-    <section class="block">
-      <h2>引く</h2>
-      <ul class="rows">
+    <section class="home-sec">
+      <h2>場面から引く</h2>
+      <ul class="scenes">
         {
-          sections.map((s) => (
+          scenes.map((x) => (
             <li>
-              <a href={s.href}>
-                <span class="row-ja">{s.label}</span>
-                <span class="row-sub">
-                  {s.n} {s.unit ?? "件"}
-                </span>
+              <a href={`/phrases/${x.s}/`}>
+                <span class="scene-ja">{SITUATION_LABELS[x.s]}</span>
+                <span class="n">{x.n}</span>
               </a>
             </li>
           ))
         }
       </ul>
-      <p class="meta">用語 {terms.length} 語。監査（Phase 5）を通るまでは「未確認の語も表示」をオンにすると見られます。</p>
     </section>
   </div>
 </Base>
@@ -121,10 +127,10 @@ const sections = [
 
   const row = (r: SearchDoc) => `<li class="hit"><a href="${r.url}">
       <span class="hit-ja">${escape(r.label)}</span>
-      <span class="hit-kind">${KIND[r.type] ?? r.type}${r.verified ? "" : ' <span class="badge unverified">未確認</span>'}</span>
+      <span class="hit-kind">${KIND[r.type] ?? r.type}${r.verified ? "" : ' <span class="badge">未確認</span>'}</span>
       ${r.type === "term" ? `<span class="hit-reading">${escape(r.reading)}</span>` : ""}
       <span class="hit-en" lang="en">${escape(r.hint)}${
-        r.gloss ? ` <span class="gloss-mark" lang="ja" title="${GLOSS_LABEL}">${GLOSS_SHORT}</span>` : ""
+        r.gloss ? ` <span class="gloss-short" lang="ja" title="${GLOSS_LABEL}">${GLOSS_SHORT}</span>` : ""
       }</span>
     </a></li>`;
 
@@ -172,22 +178,33 @@ const sections = [
       status.textContent = "検索の索引を読み込めませんでした。";
     });
 
+  const remember = () => {
+    const url = new URL(location.href);
+    if (input.value.trim()) url.searchParams.set("q", input.value);
+    else url.searchParams.delete("q");
+    history.replaceState(null, "", url);
+  };
   let timer = 0;
   input.addEventListener("input", () => {
     run();
     clearTimeout(timer);
-    timer = window.setTimeout(() => {
-      const url = new URL(location.href);
-      if (input.value.trim()) url.searchParams.set("q", input.value);
-      else url.searchParams.delete("q");
-      history.replaceState(null, "", url);
-    }, 400);
+    timer = window.setTimeout(remember, 400);
   });
   input.form!.addEventListener("submit", (e) => {
     e.preventDefault();
     const first = hits.querySelector("a");
     if (first) location.href = first.href;
   });
+  // 「試しに引く」 fills the box instead of reloading the page.
+  document.querySelectorAll<HTMLAnchorElement>("a[data-try]").forEach((a) =>
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      input.value = a.dataset.try ?? "";
+      run();
+      remember();
+      input.focus();
+    }),
+  );
   document.addEventListener("matheigo:unverified-changed", run);
 
   const initial = new URLSearchParams(location.search).get("q");

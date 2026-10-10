@@ -1,7 +1,8 @@
 ---
 import "../styles/global.css";
 
-import { SHOW_UNVERIFIED_BY_DEFAULT, SITE_NAME } from "../lib/data";
+import { REPO, SHOW_UNVERIFIED_BY_DEFAULT, SITE_NAME } from "../lib/data";
+import { FONTS_CSS, mathFontsCss } from "../lib/fonts";
 
 interface Props {
   title: string;
@@ -15,6 +16,8 @@ interface Props {
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   /** Which nav item to mark as current. */
   section?: string;
+  /** The top page: its own search box in the hero, so none in the masthead. */
+  home?: boolean;
 }
 
 const DEFAULT_DESCRIPTION =
@@ -28,20 +31,44 @@ const {
   ogImage = "/og/default.png",
   jsonLd,
   section,
+  home = false,
 } = Astro.props;
 
 const site = Astro.site ?? new URL("https://matheigo.github.io");
 const canonical = new URL(Astro.url.pathname, site).href;
 const og = new URL(ogImage, site).href;
 const robotsNoindex = unverified || noindex;
+const mathCss = mathFontsCss();
+// The faces are swapped in once, all together (html.wf). Google Fonts serves BIZ UDPMincho in
+// about 120 slices, and letting each slice swap in as it arrives re-flowed the page again and
+// again (Lighthouse CLS up to 0.47). The stylesheets are added only after the first paint, so
+// neither they nor the faces hold up the first paint; on a first visit also after the load
+// event, so they do not share the line with the top page's search index. The text shows in the
+// fallback serif until every face it needs has loaded (display=swap). Without JavaScript,
+// <noscript> links them and turns them on.
+const fontSheets = [FONTS_CSS, ...(mathCss ? [mathCss] : [])];
+const noscriptFonts =
+  fontSheets.map((href) => `<link rel="stylesheet" href="${href.replace(/&/g, "&amp;")}">`).join("") +
+  '<style>:root:root{--font:"STIX Two Text","BIZ UDPMincho",serif;--math:"STIX Two Text",KaTeX_Main,"BIZ UDPMincho",serif;--math-it:"STIX Two Text",KaTeX_Math,serif}</style>';
 
 const nav = [
+  { href: "/terms/", label: "用語", key: "terms" },
   { href: "/symbols/", label: "記号", key: "symbols" },
   { href: "/phrases/", label: "フレーズ", key: "phrases" },
   { href: "/conventions/", label: "慣習差", key: "conventions" },
   { href: "/curriculum/", label: "対応表", key: "curriculum" },
-  { href: "/download/", label: "ダウンロード", key: "download" },
-  { href: "/about/", label: "このサイト", key: "about" },
+  // the masthead of the top page also has room for the downloads (D-Home)
+  ...(home ? [{ href: "/download/", label: "ダウンロード", key: "download" }] : []),
+];
+const footNav = [
+  { href: "/terms/", label: "用語", dup: true },
+  { href: "/symbols/", label: "記号", dup: true },
+  { href: "/phrases/", label: "フレーズ", dup: true },
+  { href: "/conventions/", label: "慣習差", dup: true },
+  { href: "/curriculum/", label: "対応表", dup: true },
+  { href: "/download/", label: "ダウンロード", dup: false },
+  { href: "/about/", label: "このサイトについて", dup: false },
+  { href: REPO, label: "GitHub", dup: false },
 ];
 ---
 
@@ -55,8 +82,8 @@ const nav = [
     <link rel="canonical" href={canonical} />
     {robotsNoindex && <meta name="robots" content="noindex" />}
     <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#fdfdfc" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#0f131b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111318" media="(prefers-color-scheme: dark)" />
     <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -69,8 +96,78 @@ const nav = [
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="sitemap" href="/sitemap.xml" />
-    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     <slot name="head" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script is:inline define:vars={{ sheets: fontSheets }}>
+      const KEY = "matheigo:fonts";
+      const root = document.documentElement;
+      const link = (href) =>
+        new Promise((done) => {
+          const el = document.createElement("link");
+          el.rel = "stylesheet";
+          el.href = href;
+          el.onload = el.onerror = done;
+          document.head.append(el);
+        });
+      // Text set bold, italic or in the logo's weight; everything else is the regular faces.
+      const textOf = (sel) =>
+        [...document.querySelectorAll(sel)]
+          .filter((e) => e.checkVisibility?.() !== false)
+          .map((e) => e.textContent)
+          .join("");
+      const BOLD = "h1, h2, h3, h4, b, strong, th, .row-ja, .hit-ja, .advice, .primary, .track, .gloss-mark, .gloss-short, .badge";
+      let seen = false;
+      try {
+        seen = localStorage.getItem(KEY) === "1";
+      } catch {}
+      let started = false;
+      let painted = !window.PerformanceObserver?.supportedEntryTypes?.includes("paint");
+      let loaded = document.readyState === "complete";
+      const start = async () => {
+        if (started || !painted || !(loaded || seen)) return;
+        started = true;
+        await Promise.all(sheets.map(link));
+        const body = document.body.innerText;
+        const bold = textOf(BOLD);
+        const italic = textOf("i, em, .mathnormal, .mathit");
+        const want = [
+          ['400 1em "BIZ UDPMincho"', body],
+          ['700 1em "BIZ UDPMincho"', bold],
+          ['400 1em "STIX Two Text"', body],
+          ['italic 400 1em "STIX Two Text"', italic],
+          ['500 1em "STIX Two Text"', textOf(".home")],
+          ['600 1em "STIX Two Text"', bold],
+        ].filter(([, t]) => t.trim());
+        await Promise.all(want.map(([f, t]) => document.fonts.load(f, t).catch(() => [])));
+        root.classList.add("wf");
+        try {
+          localStorage.setItem(KEY, "1");
+        } catch {}
+      };
+      if (!painted)
+        new PerformanceObserver((list, obs) => {
+          if (!list.getEntriesByName("first-contentful-paint").length) return;
+          obs.disconnect();
+          painted = true;
+          start();
+        }).observe({ type: "paint", buffered: true });
+      addEventListener(
+        "load",
+        () => {
+          loaded = true;
+          start();
+          // a page opened behind another tab paints only when shown; do not wait forever
+          setTimeout(() => {
+            painted = true;
+            start();
+          }, 3000);
+        },
+        { once: true },
+      );
+    </script>
+    <noscript set:html={noscriptFonts} />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     <script is:inline define:vars={{ fallback: SHOW_UNVERIFIED_BY_DEFAULT }}>
       // Runs before paint so unverified rows never flash into view.
       let stored = null;
@@ -81,39 +178,62 @@ const nav = [
       document.documentElement.dataset.unverified = show ? "show" : "hide";
     </script>
   </head>
-  <body>
+  <body class={home ? "is-home" : undefined}>
     <a class="skip" href="#main">本文へ</a>
-    <header class="masthead">
+    <header class="masthead wrap">
       <div class="bar">
-        <a class="home" href="/">MathEigo</a>
-        <a class="search-link" href="/#q" aria-label="検索">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"
-            ><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"></circle><path
-              d="M15.5 15.5 21 21"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"></path></svg
-          >
-          <span>検索</span>
-        </a>
+        <a class="home" href="/" lang="en">MathEigo</a>
+        <span class="tagline"
+          ><i>f</i> : 日本語 → <span lang="en">English</span></span
+        >
+        {
+          !home && (
+            <form class="head-search" role="search" action="/" method="get">
+              <label class="visually-hidden" for="hq">
+                日本語でも英語でも引けます
+              </label>
+              <input
+                id="hq"
+                name="q"
+                type="search"
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false"
+                enterkeyhint="search"
+                placeholder="増減表、ぞうげんひょう、sign chart"
+              />
+            </form>
+          )
+        }
+        <nav aria-label="サイト内">
+          {nav.map((n) => <a href={n.href} aria-current={section === n.key ? "page" : undefined}>{n.label}</a>)}
+        </nav>
+        <a class="menu-link" href="#menu">メニュー</a>
       </div>
-      <nav aria-label="サイト内">
-        {nav.map((n) => <a href={n.href} aria-current={section === n.key ? "page" : undefined}>{n.label}</a>)}
-      </nav>
+    </header>
+    <main id="main" class="wrap">
+      <slot />
+    </main>
+    <footer class="site wrap">
+      <p>
+        データは <a href="/download/">CC0</a>、コードは MIT。誤りを見つけたら
+        <a href={`${REPO}/issues/new?template=error-report.md`}>報告</a> してください。
+      </p>
+      <ul class="foot-nav" id="menu" aria-label="メニュー">
+        {
+          footNav.map((n) => (
+            <li class={n.dup ? "dup" : undefined}>
+              <a href={n.href} lang={n.label === "GitHub" ? "en" : undefined}>
+                {n.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
       <label class="toggle">
         <input type="checkbox" id="show-unverified" />
         <span>未確認の語も表示</span>
       </label>
-    </header>
-    <main id="main">
-      <slot />
-    </main>
-    <footer class="site">
-      <p>
-        データは <a href="/download/">CC0 1.0</a>、コードは MIT。誤りを見つけたら
-        <a href={`https://github.com/matheigo/matheigo.github.io/issues/new?template=error-report.md`}>報告</a>
-        してください。
-      </p>
     </footer>
     <script is:inline>
       {
