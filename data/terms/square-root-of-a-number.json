@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本語の「a の平方根」は 2 乗して a になる数の両方を指す（中学校学習指導要領解説（第 3 学年）は、正の数 a の平方根を正と負の 2 つの数とし、√a はその正の方を表すとする）。英語の the square root of a は正の方の √a だけを指し（IM Grade 8 の用語集は square root を 2 乗して a になる正の数と定義する）、両方を言うときは square roots（OpenStax Elementary Algebra 9.1 は正の数には正と負の 2 つの square roots があると書く）、片方は a square root of a と言う。「49 の平方根を求めよ」は Find the square roots of 49. と書く。",
+  "mapping_note": "日本語の「a の平方根」は 2 乗して a になる数の両方を指す（中学校学習指導要領解説（第 3 学年）は、正の数 a の平方根を正と負の 2 つの数とし、√a はその正の方を表すとする）。英語の the square root of a は正の方の √a だけを指し（IM Grade 8 の用語集は square root を 2 乗して a になる正の数と定義する）、両方を言うときは square roots、片方は a square root of a と言う（OpenStax Elementary Algebra 1.8・9.1 は n² = m の n を a square root of m と呼び、正の数には正と負の 2 つの square roots があると書く。IM Algebra 1 7.15 は 6 と −6 を both square roots of 36 と書く）。",
   "domains": [
     "arithmetic"
   ],
@@ -22,6 +22,7 @@
       "中3"
     ],
     "us": [
+      "Pre-Algebra",
       "Algebra 1",
       "Integrated Math 2"
     ]
@@ -67,12 +68,13 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Prealgebra 2e"
+      "title": "OpenStax Prealgebra 2e",
+      "note": "5.7 Simplify and Use Square Roots（level.us Pre-Algebra）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e",
-      "note": "1.8 The Real Numbers・9.1 Simplify and Use Square Roots（two square roots。mapping_note・pitfalls[3]）"
+      "note": "1.8 The Real Numbers・9.1 Simplify and Use Square Roots（a square root of m・two square roots。mapping_note・pitfalls[3]）"
     },
     {
       "type": "reference",
@@ -85,6 +87,12 @@
       "title": "Illustrative Mathematics, IM 6–8 Math (Grade 8)",
       "url": "https://im.kendallhunt.com/MS/students/3/index.html",
       "note": "Grade 8 glossary（square root: 正の数として定義。mapping_note）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Algebra 1)",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Algebra 1 7.15 Quadratic Equations with Irrational Solutions（both square roots of 36。mapping_note）"
     }
   ],
   "confidence": "likely",

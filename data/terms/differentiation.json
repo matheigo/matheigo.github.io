@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本語版 Wikipedia「微分」は、微分係数や導関数を求めることを微分（differentiation）すると言い、求めた微分係数・導関数そのものも、本来の使い方ではないが微分と呼ばれることが多いと書く。英語では、OpenStax Calculus Volume 1（3.1）は導関数を求める過程を differentiation と呼び、求めた結果は derivative（エントリ derivative）と言う。",
+  "mapping_note": "日本語版 Wikipedia「微分」は、微分係数や導関数を求めることを微分（differentiation）すると言い、求めた微分係数・導関数そのものも、本来の使い方ではないが微分と呼ばれることが多いと書く。英語では、OpenStax Calculus Volume 1（3.1）は derivative（値の微分係数も関数の導関数も）を求める過程を differentiation と呼び、求めた結果は derivative（エントリ derivative）と言う。",
   "domains": [
     "calculus"
   ],
@@ -45,7 +45,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語では、操作は differentiation、結果の関数は derivative、動詞は differentiate か take the derivative と使い分ける（「x² の微分は 2x」は The derivative of x² is 2x.）。"
+    "英語では、操作は differentiation、結果（導関数も微分係数も）は derivative、動詞は differentiate か take the derivative と使い分ける（「x² の微分は 2x」は The derivative of x² is 2x.）。"
   ],
   "related": [
     "derivative",
@@ -61,7 +61,7 @@
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1",
-      "note": "3.1 Defining the Derivative（導関数を求める過程を differentiation と呼ぶ）"
+      "note": "3.1 Defining the Derivative（derivative を求める過程を differentiation と呼ぶ。用語集は the process of taking a derivative）"
     },
     {
       "type": "reference",
@@ -73,7 +73,7 @@
       "type": "reference",
       "title": "日本語版 Wikipedia「微分」",
       "url": "https://ja.wikipedia.org/wiki/%E5%BE%AE%E5%88%86",
-      "note": "冒頭: 微分係数・導関数を求めることも、求めた結果も微分と呼ぶ（mapping_note）"
+      "note": "冒頭: 微分係数・導関数を求めることを微分と言い、求めた結果も、用語の濫用としてしばしば微分と呼ぶと書く（mapping_note）"
     }
   ],
   "confidence": "likely",

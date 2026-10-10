@@ -8,8 +8,8 @@
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
 - 調べた本文の欄: 15676
-- 英語のソース: 3884 ファイル ／ 日本語のソース: 547 ファイル
-- 一致した箇所: **335**（292 項目）
+- 英語のソース: 3884 ファイル ／ 日本語のソース: 554 ファイル
+- 一致した箇所: **334**（291 項目）
 - 見出しの句を含む一致で除いたもの: 152 箇所（140 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
@@ -132,7 +132,6 @@
 | terms | coordinate-proof | examples[1].en | en | 9 | that the diagonals of a parallelogram bisect each other | 3 | ref:im-9-12, mit-18.02, ref:nicholson-lawa-2021a |
 | terms | coordinate-vector | definition_en | en | 10 | a vector as a linear combination of the basis vectors | 1 | ref:nicholson-lawa-2021a |
 | terms | cosecant | examples[1].en | en | 15 | in right triangle abc angle c is a right angle ab 13 and bc 5 | 1 | ref:im-9-12 |
-| terms | cross-method | examples[1].en | en | 8 | numbers that multiply to 6 and add to | 1 | openstax-elemalg |
 | terms | cross-section | examples[1].en | en | 9 | perpendicular to the x axis is a square find | 1 | khan-ap-calc |
 | terms | cryptography | pitfalls[2] | en | 10 | 8 8 an application to linear codes over finite fields | 1 | ref:nicholson-lawa-2021a |
 | terms | cubic-units | pitfalls[2] | en | 8 | geometry 5 7 the root of the problem | 1 | ref:im-9-12 |

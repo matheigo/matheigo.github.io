@@ -28,13 +28,14 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本語の「交点」は交わる点で、接する点も含めて言うときは「共有点」と言う（高等学校学習指導要領解説（数学I）は二次方程式の解をグラフと x 軸との共有点の x 座標と捉え、共通テスト（令和 3 年度 第 1 日程 数学II 第 3 問）は「2 点で交わる」「接する」「共有点をもたない」を分けて言う）。英語の point of intersection は intersect（エントリ intersect）する点で、接する場合の点も含む（IM Geometry の用語集（7.3 Tangent Lines）は接線を円と exactly one point で intersect する直線と定義し、OpenStax Algebra and Trigonometry 11.3 も接線は円と intersects … at exactly one point と書く）。接する点だとはっきり言うときは point of tangency（エントリ point-of-tangency）か、the graph touches the x-axis と言う。",
+  "mapping_note": "日本語の「交点」は交わる点で、接する点も含めて言うときは「共有点」と言う（高等学校学習指導要領解説（数学I）は二次方程式の解をグラフと x 軸との共有点の x 座標と捉え、共通テスト（令和 3 年度 第 1 日程 数学II 第 3 問）は「2 点で交わる」「接する」「共有点をもたない」を分けて言う）。英語の point of intersection は intersect（エントリ intersect）する点で、接する場合の点も含む（IM Geometry の用語集（7.3 Tangent Lines）は接線を円と exactly one point で intersect する直線と定義し、OpenStax Algebra and Trigonometry 11.3 も接線は円と intersects … at exactly one point と書き、放物線と直線の Points of Intersection の場合の 1 つに直線が放物線に接する場合を挙げる）。接する点だとはっきり言うときは point of tangency（エントリ point-of-tangency）か、the graph touches the x-axis と言う。",
   "domains": [
     "geometry"
   ],
   "level": {
     "jp": [
       "中1",
+      "中2",
       "数I",
       "数II"
     ],
@@ -76,13 +77,14 @@
   ],
   "related": [
     "intersect",
-    "circle-through-the-intersections-of-two-circles"
+    "circle-through-the-intersections-of-two-circles",
+    "point-of-tangency"
   ],
   "sources": [
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "11.3 Systems of Nonlinear Equations and Inequalities: Two Variables（intersects the circle at exactly one point。mapping_note）"
+      "note": "11.3 Systems of Nonlinear Equations and Inequalities: Two Variables（intersects the circle at exactly one point・Points of Intersection of a Parabola and a Line。mapping_note）"
     },
     {
       "type": "textbook",
@@ -105,6 +107,12 @@
       "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/HS/students/2/index.html",
       "note": "Geometry 7.3 Tangent Lines・glossary（tangent (line): intersects the circle at exactly one point。mapping_note）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 2 学年 C(1) 一次関数: 連立二元一次方程式の解を 2 直線の交点の座標として求める（level.jp 中2）"
     }
   ],
   "confidence": "likely",

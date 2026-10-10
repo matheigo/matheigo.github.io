@@ -3,22 +3,17 @@
   "ja": {
     "term": "純変化量",
     "reading": "じゅんへんかりょう",
-    "alt": [
-      "純変化定理",
-      "累積"
-    ]
+    "alt": []
   },
   "en": {
     "term": "net change",
-    "alt": [
-      "accumulation"
-    ],
+    "alt": [],
     "uk": null,
     "register": "written"
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "学習指導要領解説（数学III）は、速度 v を時刻 t₁ から t₂ まで積分して点の「位置の変化」を、|v| を積分して「道のり」を求める例を挙げるが、定積分で求まる変化の合計一般の名前は出てこない。OpenStax Calculus Volume 1 と AP の CED（topic 8.3）は、増えた分と減った分を差し引いた変化を net change と呼び、OpenStax Calculus Volume 1 は ∫ₐᵇ F′(x)dx = F(b) − F(a) を Net Change Theorem として示す。AP の CED は Unit 6 を accumulation of change（変化の積み重ね）として組み立て、net change を topic 8.3 で扱う。見出しの「純変化量」と ja.alt の「純変化定理」は、学習指導要領解説に無い、本プロジェクトの訳語。",
+  "mapping_note": "学習指導要領解説（数学III）は、速度 v を時刻 t₁ から t₂ まで積分して点の「位置の変化」を、|v| を積分して「道のり」を求める例を挙げるが、定積分で求まる変化の合計一般の名前は出てこない。OpenStax Calculus Volume 1 と AP の CED（topic 8.3）は、増えた分と減った分を差し引いた変化を net change と呼び、OpenStax Calculus Volume 1 は ∫ₐᵇ F′(x)dx = F(b) − F(a) を Net Change Theorem として示す。AP の CED は Unit 6 を accumulation of change（変化の積み重ね）として組み立て、net change を topic 8.3 で扱う。見出しの「純変化量」と例文の和訳の「純変化定理」は、学習指導要領解説に無い、本プロジェクトの訳語。",
   "domains": [
     "calculus"
   ],
@@ -56,7 +51,7 @@
   "collocations": [],
   "pitfalls": [
     "net は「差し引きの」の意味。net change が 0 でも、途中で動かなかったとは限らない。",
-    "動詞は accumulate（たまる・積み重なる）。"
+    "積分を変化の積み重ねとして見るときは accumulation と言い（AP の CED の Unit 6 の題は Integration and Accumulation of Change）、動詞は accumulate（たまる・積み重なる）。"
   ],
   "related": [
     "displacement",
@@ -67,7 +62,8 @@
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 1"
+      "title": "OpenStax Calculus Volume 1",
+      "note": "5.4 Integration Formulas and the Net Change Theorem（mapping_note・definition_ja）"
     },
     {
       "type": "editorial"
@@ -94,23 +90,18 @@
   "updated": "2026-10-09",
   "evidence": {
     "spoken": {
-      "net change": 9,
-      "accumulation": 5
+      "net change": 9
     },
     "written": {
-      "net change": 23,
-      "accumulation": 3
+      "net change": 23
     },
     "sources": [
       "khan-ap-calc",
       "khan-middle",
       "mit-18.01",
-      "mit-18.03",
-      "mit-notes",
-      "openstax-calculus",
-      "openstax-introstats"
+      "openstax-calculus"
     ],
-    "counted": "2026-09-27"
+    "counted": "2026-10-09"
   },
   "flags": [
     {
