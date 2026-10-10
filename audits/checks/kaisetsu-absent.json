@@ -1,9 +1,9 @@
 {
- "rows": 230,
+ "rows": 225,
  "status": {
-  "checked A": 59,
-  "checked B": 103,
-  "語 0": 68
+  "checked A": 57,
+  "checked B": 101,
+  "語 0": 67
  },
  "toRead": 0,
  "entriesToRead": 0,
@@ -1129,51 +1129,6 @@
   },
   {
    "collection": "terms",
-   "id": "washer-method",
-   "confidence": "verified",
-   "field": "mapping_note",
-   "docs": [
-    "chu",
-    "kou"
-   ],
-   "kind": "名前",
-   "status": "checked A",
-   "sentence": "学習指導要領解説にはこの求め方の名前が出てこない。",
-   "keys": {
-    "ワッシャー法": {}
-   },
-   "fallback": true,
-   "paraphrases": {
-    "回転させて": {
-     "高 数学III": 1,
-     "高 数学C": 1
-    }
-   }
-  },
-  {
-   "collection": "terms",
-   "id": "washer-method",
-   "confidence": "verified",
-   "field": "sources[2].note",
-   "docs": [
-    "kou"
-   ],
-   "kind": "名前",
-   "status": "checked A",
-   "sentence": "この求め方の名前が出てこない・「ワッシャー法」は出てこない",
-   "keys": {
-    "ワッシャー法": {}
-   },
-   "fallback": false,
-   "paraphrases": {
-    "回転させて": {
-     "高 数学III": 1,
-     "高 数学C": 1
-    }
-   }
-  },
-  {
-   "collection": "terms",
    "id": "work",
    "confidence": "verified",
    "field": "pitfalls[0]",
@@ -1904,49 +1859,6 @@
     "自然対数": {
      "高 数学III": 3,
      "高 付録 数学III": 1
-    }
-   }
-  },
-  {
-   "collection": "terms",
-   "id": "candidates-test",
-   "confidence": "verified",
-   "field": "mapping_note",
-   "docs": [
-    "chu",
-    "kou"
-   ],
-   "kind": "名前",
-   "status": "checked B",
-   "sentence": "学習指導要領解説には、閉区間で端点と極値の値を比べて最大値・最小値を求める方法の名前が出てこない。",
-   "keys": {
-    "候補点テスト": {}
-   },
-   "fallback": true,
-   "paraphrases": {
-    "区間が制限された": {
-     "高 数学II": 1
-    }
-   }
-  },
-  {
-   "collection": "terms",
-   "id": "candidates-test",
-   "confidence": "verified",
-   "field": "sources[1].note",
-   "docs": [
-    "kou"
-   ],
-   "kind": "名前",
-   "status": "checked B",
-   "sentence": "閉区間で端点と極値の値を比べて最大値・最小値を求める方法の名前が出てこない",
-   "keys": {
-    "候補点テスト": {}
-   },
-   "fallback": true,
-   "paraphrases": {
-    "区間が制限された": {
-     "高 数学II": 1
     }
    }
   },
@@ -2824,39 +2736,6 @@
   },
   {
    "collection": "terms",
-   "id": "net-change",
-   "confidence": "verified",
-   "field": "mapping_note",
-   "docs": [
-    "chu",
-    "kou"
-   ],
-   "kind": "名前",
-   "status": "checked B",
-   "sentence": "学習指導要領解説（数学III）は、速度 v を時刻 t₁ から t₂ まで積分して点の「位置の変化」を、|v| を積分して「道のり」を求める例を挙げるが、定積分で求まる変化の合計一般の名前は出てこない。",
-   "keys": {
-    "純変化量": {},
-    "純変化定理": {},
-    "累積": {
-     "高 数学編 総説": 1,
-     "高 数学C": 1,
-     "高 付録 中学校": 1,
-     "中学校": 11
-    }
-   },
-   "fallback": true,
-   "paraphrases": {
-    "位置の変化": {
-     "高 数学III": 1
-    },
-    "道のり": {
-     "高 数学III": 2,
-     "中学校": 2
-    }
-   }
-  },
-  {
-   "collection": "terms",
    "id": "numerical-integration",
    "confidence": "verified",
    "field": "sources[2].note",
@@ -3493,6 +3372,25 @@
     "頂点形": {}
    },
    "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "write-an-equation",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "日本語の「式で表す」は、等号を含まない式も、等式（方程式）や不等式も指す（中学校学習指導要領解説の第 1 学年 A(2) は、入館料の合計を a + 2b と表すことと、数量の相等関係・大小関係を等式・不等式に表すことを、同じ文字を用いた式の項目で扱う）が、英語は write an expression ／ write an equation ／ write an inequality と言い分ける（IM Algebra 1 2.2 の練習問題の指示は Write an expression, an equation, or an inequality）。",
+   "keys": {
+    "等号": {
+     "中学校": 8
+    }
+   },
+   "fallback": false,
    "paraphrases": {}
   },
   {
@@ -4378,30 +4276,6 @@
    },
    "fallback": false,
    "paraphrases": {}
-  },
-  {
-   "collection": "terms",
-   "id": "net-change",
-   "confidence": "verified",
-   "field": "sources[3].note",
-   "docs": [
-    "kou"
-   ],
-   "kind": "語",
-   "status": "語 0",
-   "sentence": "数学III 積分法: 速度の定積分で「位置の変化」と「道のり」を求める例（定積分で求まる変化の合計の名前と「純変化量」は出てこない）",
-   "keys": {
-    "純変化量": {}
-   },
-   "fallback": false,
-   "paraphrases": {
-    "位置の変化": {
-     "高 数学III": 1
-    },
-    "道のり": {
-     "高 数学III": 2
-    }
-   }
   },
   {
    "collection": "terms",

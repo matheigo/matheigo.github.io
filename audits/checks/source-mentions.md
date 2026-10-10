@@ -2,7 +2,7 @@
 
 作成: `python3 scripts/audit/source_mentions.py`（規則は scripts/audit/source_mentions.py の説明）。主張が正しいかは見ない（それは監査）。
 
-- 項目: **133**（likely 133）
+- 項目: **132**（likely 132）
 
 | コレクション | id | confidence | 名指しされた資料 | 欄 |
 |---|---|---|---|---|
@@ -97,7 +97,6 @@
 | terms | midline | likely | 学習指導要領解説 | mapping_note |
 | terms | midpoint-formula | likely | 学習指導要領解説 | mapping_note |
 | terms | minor-arc | likely | IM | pitfalls[2] |
-| terms | motion-problem | likely | OpenStax Prealgebra | pitfalls[1] |
 | terms | negative-reciprocal | likely | 学習指導要領解説 | mapping_note |
 | terms | normal-probability-plot | likely | AP Statistics の CED | pitfalls[0] |
 | terms | normal-probability-plot | likely | 学習指導要領解説 | mapping_note |

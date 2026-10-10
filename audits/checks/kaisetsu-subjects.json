@@ -1,12 +1,56 @@
 {
- "rows": 345,
+ "rows": 357,
  "status": {
+  "見つからない": 3,
   "checked A": 65,
   "checked B": 26,
-  "ok": 254
+  "ok": 263
  },
  "verifiedToRead": 0,
  "list": [
+  {
+   "collection": "terms",
+   "id": "candidates-test",
+   "confidence": "likely",
+   "field": "mapping_note",
+   "subjects": [
+    "数学II"
+   ],
+   "status": "見つからない",
+   "sentence": "学習指導要領解説（数学II）は、導関数でグラフの概形を調べて区間が制限された関数の最大値や最小値を考察すると書くが、端点と極値の値を比べて最大値・最小値を求める方法の名前は出てこない。",
+   "hits": {
+    "候補点テスト": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "washer-method",
+   "confidence": "likely",
+   "field": "mapping_note",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "見つからない",
+   "sentence": "学習指導要領解説（数学III）は、x 軸と曲線 y = f(x) の間の図形を x 軸のまわりに回してできる立体の体積を π∫{f(x)}²dx で求めることを挙げ、穴のある回転体の求め方の名前は出てこない。",
+   "hits": {
+    "ワッシャー法": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "x-intercept",
+   "confidence": "likely",
+   "field": "mapping_note",
+   "subjects": [
+    "数学I"
+   ],
+   "status": "見つからない",
+   "sentence": "日本語の「x 軸との交点」は x 軸と交わる点で、接する点も含めて言うときは「x 軸との共有点」と言う（高等学校学習指導要領解説（数学I）は二次方程式の解をグラフと x 軸との共有点の x 座標と捉える）。",
+   "hits": {
+    "x軸との交点": {},
+    "x軸との共有点": {}
+   }
+  },
   {
    "collection": "conventions",
    "id": "approximately-equal-notation",
@@ -3805,7 +3849,7 @@
   {
    "collection": "terms",
    "id": "be-circumscribed-about",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "sources[3].note",
    "subjects": [
     "数学I"
@@ -3918,6 +3962,26 @@
      "付録 数学II": 1
     },
     "記号nCrは数学A": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "candidates-test",
+   "confidence": "likely",
+   "field": "sources[1].note",
+   "subjects": [
+    "数学II"
+   ],
+   "status": "ok",
+   "sentence": "数学II 微分の考え: グラフの概形を観察して区間が制限された関数の最大値や最小値を考察する（方法の名前は出てこない）",
+   "hits": {
+    "微分の考え": {
+     "数学編 総説": 1,
+     "数学II": 3,
+     "理数数学II": 1
+    },
+    "グラフの概形を観察して区間が制限された関数の最大値や最小値を考察する": {},
+    "方法の名前は出てこない": {}
    }
   },
   {
@@ -4378,7 +4442,7 @@
   {
    "collection": "terms",
    "id": "cross-method",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "sources[5].note",
    "subjects": [
     "数学I"
@@ -4475,6 +4539,67 @@
      "数学II": 3,
      "数学III": 1
     }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "derivative",
+   "confidence": "likely",
+   "field": "mapping_note",
+   "subjects": [
+    "数学II"
+   ],
+   "status": "ok",
+   "sentence": "高等学校学習指導要領解説（数学II）は「微分係数や導関数の意味」「x = a における微分係数」と、ある点での値（微分係数、エントリ derivative-at-a-point）と関数（導関数）を別の語で書き、日本語版 Wikipedia「微分」も、a に微分係数 f′(a) を対応させる関数 f′ を導関数と呼んで分ける。",
+   "hits": {
+    "微分係数や導関数の意味": {
+     "数学II": 3,
+     "付録 数学II": 1
+    },
+    "x=aにおける微分係数": {
+     "数学II": 1
+    },
+    "微分": {
+     "前付": 2,
+     "数学編 総説": 11,
+     "数学II": 31,
+     "数学III": 59,
+     "理数編 総説": 3,
+     "理数数学II": 13,
+     "付録 数学II": 6,
+     "付録 数学III": 6,
+     "付録 理数数学II": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "derivative",
+   "confidence": "likely",
+   "field": "sources[3].note",
+   "subjects": [
+    "数学II"
+   ],
+   "status": "ok",
+   "sentence": "数学II (5) 微分・積分の考え: 微分係数や導関数の意味、x = a における微分係数（mapping_note）",
+   "hits": {
+    "(5)微分・積分の考え": {
+     "前付": 1,
+     "数学編 総説": 1,
+     "数学II": 6,
+     "数学III": 6,
+     "理数編 総説": 1,
+     "理数数学II": 2,
+     "付録 数学II": 1
+    },
+    "微分係数や導関数の意味": {
+     "数学II": 3,
+     "付録 数学II": 1
+    },
+    "x=aにおける微分係数": {
+     "数学II": 1
+    },
+    "mapping_note": {}
    }
   },
   {
@@ -5944,6 +6069,68 @@
   },
   {
    "collection": "terms",
+   "id": "limit",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "ok",
+   "sentence": "日本語は値を「極限値」とも「極限」とも言い（日本語版 Wikipedia「極限」は数列が限りなく近づく値を「数列の極限あるいは極限値」と書き、高等学校学習指導要領解説（数学III）は「数列の極限を求める」と書く）、考え方や操作も「極限」と言う。",
+   "hits": {
+    "極限値": {
+     "数学II": 1,
+     "数学III": 3,
+     "付録 数学II": 1
+    },
+    "極限": {
+     "前付": 1,
+     "数学編 総説": 8,
+     "数学II": 4,
+     "数学III": 62,
+     "数学A": 1,
+     "理数編 総説": 2,
+     "理数数学II": 4,
+     "付録 数学II": 2,
+     "付録 数学III": 12,
+     "付録 理数数学II": 1
+    },
+    "数列の極限あるいは極限値": {},
+    "数列の極限を求める": {
+     "数学III": 4,
+     "付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "limit",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "ok",
+   "sentence": "数学III (1) 極限: 簡単な数列の極限を求める（pitfalls[0]）",
+   "hits": {
+    "(1)極限": {
+     "前付": 1,
+     "数学編 総説": 1,
+     "数学II": 1,
+     "数学III": 6,
+     "理数編 総説": 1,
+     "理数数学II": 1,
+     "付録 数学III": 2
+    },
+    "簡単な数列の極限を求める": {
+     "数学III": 3,
+     "付録 数学III": 1
+    },
+    "pitfalls[0]": {}
+   }
+  },
+  {
+   "collection": "terms",
    "id": "limit-at-infinity",
    "confidence": "verified",
    "field": "mapping_note",
@@ -6191,7 +6378,7 @@
   {
    "collection": "terms",
    "id": "net-change",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "mapping_note",
    "subjects": [
     "数学III"
@@ -6210,7 +6397,7 @@
   {
    "collection": "terms",
    "id": "net-change",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "sources[3].note",
    "subjects": [
     "数学III"
@@ -6543,6 +6730,69 @@
      "数学A": 1,
      "付録 数学II": 1
     }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "point-of-intersection",
+   "confidence": "likely",
+   "field": "mapping_note",
+   "subjects": [
+    "数学I"
+   ],
+   "status": "ok",
+   "sentence": "日本語の「交点」は交わる点で、接する点も含めて言うときは「共有点」と言う（高等学校学習指導要領解説（数学I）は二次方程式の解をグラフと x 軸との共有点の x 座標と捉え、共通テスト（令和 3 年度 第 1 日程 数学II 第 3 問）は「2 点で交わる」「接する」「共有点をもたない」を分けて言う）。",
+   "hits": {
+    "交点": {
+     "数学II": 1,
+     "数学III": 4,
+     "数学C": 2,
+     "理数数学特論": 1
+    },
+    "共有点": {
+     "数学I": 1,
+     "理数数学II": 3,
+     "付録 理数数学II": 1
+    },
+    "2点で交わる": {},
+    "接する": {
+     "数学I": 5,
+     "数学II": 6,
+     "数学A": 9,
+     "理数編 総説": 1,
+     "付録 中学校": 7
+    },
+    "共有点をもたない": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "point-of-intersection",
+   "confidence": "likely",
+   "field": "sources[2].note",
+   "subjects": [
+    "数学I"
+   ],
+   "status": "ok",
+   "sentence": "数学I 二次関数: 二次方程式の解をグラフと x 軸との共有点の x 座標と捉える（mapping_note）",
+   "hits": {
+    "二次関数": {
+     "前付": 1,
+     "数学編 総説": 10,
+     "数学I": 40,
+     "数学II": 11,
+     "数学III": 3,
+     "数学C": 1,
+     "数学編 第3章": 1,
+     "理数編 総説": 2,
+     "理数数学I": 3,
+     "理数数学II": 1,
+     "理数数学特論": 1,
+     "付録 数学I": 9,
+     "付録 理数数学I": 1
+    },
+    "二次方程式の解をグラフとx軸との共有点のx座標と捉える": {},
+    "mapping_note": {}
    }
   },
   {
@@ -8608,6 +8858,68 @@
     "楕円の方程式": {
      "数学C": 1
     }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "washer-method",
+   "confidence": "likely",
+   "field": "sources[2].note",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "ok",
+   "sentence": "数学III 積分法: y = f(x) と x 軸の間の図形の回転体の体積 π∫{f(x)}²dx（穴のある回転体の求め方の名前・「ワッシャー法」は出てこない）",
+   "hits": {
+    "ワッシャー法": {},
+    "積分法": {
+     "前付": 1,
+     "数学編 総説": 7,
+     "数学II": 1,
+     "数学III": 25,
+     "理数編 総説": 2,
+     "理数数学II": 4,
+     "付録 数学III": 7,
+     "付録 理数数学II": 1
+    },
+    "y=f": {
+     "数学II": 4,
+     "数学III": 1
+    },
+    "とx軸の間の図形の回転体の体積π∫{f": {},
+    "}2dx": {},
+    "穴のある回転体の求め方の名前": {},
+    "は出てこない": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "x-intercept",
+   "confidence": "likely",
+   "field": "sources[3].note",
+   "subjects": [
+    "数学I"
+   ],
+   "status": "ok",
+   "sentence": "数学I 二次関数: 二次方程式の解をグラフと x 軸との共有点の x 座標と捉える（mapping_note）",
+   "hits": {
+    "二次関数": {
+     "前付": 1,
+     "数学編 総説": 10,
+     "数学I": 40,
+     "数学II": 11,
+     "数学III": 3,
+     "数学C": 1,
+     "数学編 第3章": 1,
+     "理数編 総説": 2,
+     "理数数学I": 3,
+     "理数数学II": 1,
+     "理数数学特論": 1,
+     "付録 数学I": 9,
+     "付録 理数数学I": 1
+    },
+    "二次方程式の解をグラフとx軸との共有点のx座標と捉える": {},
+    "mapping_note": {}
    }
   }
  ]

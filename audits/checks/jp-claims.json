@@ -369,7 +369,7 @@
       "collection": "terms",
       "id": "be-inscribed-in",
       "field": "mapping_note",
-      "sentence": "日本語の「内接する」は、2 円の一方が他方の内側にあって 1 点を共有する場合にも使う（日本語版 Wikipedia「円 (数学)」、共通テスト 令和3年度 第1日程 数学Ⅰ・数学Ａ 第5問の「外接円 O に内接する円」）が、英語の inscribed in は多角形と円・楕円の関係に使い、2 円は internally tangent と言う（英語版 Wikipedia「Tangent」の節 Tangent circles）。",
+      "sentence": "日本語の「内接する」は、2 円の一方が他方の内側にあって 1 点を共有する場合にも使う（日本語版 Wikipedia「円 (数学)」、共通テスト 令和3年度 第1日程 数学Ⅰ・数学Ａ 第5問の「外接円 O に内接する円」）が、IM Geometry の用語集は inscribed を多角形が円に・円が多角形に内接する場合で定義し、2 円が内側で接する場合は英語版 Wikipedia「Tangent」（節 Tangent circles）が internally tangent と呼ぶ。",
       "g1": false
     },
     {
@@ -432,7 +432,7 @@
       "collection": "terms",
       "id": "candidates-test",
       "field": "mapping_note",
-      "sentence": "学習指導要領解説には、閉区間で端点と極値の値を比べて最大値・最小値を求める方法の名前が出てこない。",
+      "sentence": "学習指導要領解説（数学II）は、導関数でグラフの概形を調べて区間が制限された関数の最大値や最小値を考察すると書くが、端点と極値の値を比べて最大値・最小値を求める方法の名前は出てこない。",
       "g1": false
     },
     {
@@ -1032,6 +1032,13 @@
     },
     {
       "collection": "terms",
+      "id": "derivative",
+      "field": "mapping_note",
+      "sentence": "高等学校学習指導要領解説（数学II）は「微分係数や導関数の意味」「x = a における微分係数」と、ある点での値（微分係数、エントリ derivative-at-a-point）と関数（導関数）を別の語で書き、日本語版 Wikipedia「微分」も、a に微分係数 f′(a) を対応させる関数 f′ を導関数と呼んで分ける。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "derivatives-in-polar-form",
       "field": "mapping_note",
       "sentence": "見出しの「極曲線の微分」は学習指導要領解説に無い、本プロジェクトの訳語。",
@@ -1182,13 +1189,6 @@
       "id": "divisibility",
       "field": "pitfalls[1]",
       "sentence": "センター試験の問題文は「37a が 4 で割り切れる」のように「割り切れる」と言う。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "divisibility",
-      "field": "pitfalls[2]",
-      "sentence": "書き言葉は OpenStax Prealgebra・MIT の講義ノート・OpenStax Elementary Algebra、話し言葉は Khan Academy の中学の講義が中心。",
       "g1": false
     },
     {
@@ -2327,6 +2327,13 @@
     },
     {
       "collection": "terms",
+      "id": "limit",
+      "field": "pitfalls[0]",
+      "sentence": "日本語は値を「極限値」とも「極限」とも言い（日本語版 Wikipedia「極限」は数列が限りなく近づく値を「数列の極限あるいは極限値」と書き、高等学校学習指導要領解説（数学III）は「数列の極限を求める」と書く）、考え方や操作も「極限」と言う。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "line",
       "field": "pitfalls[1]",
       "sentence": "共通テストの問題文は記号を使わず「直線 AB」と書く。",
@@ -2560,7 +2567,7 @@
       "collection": "terms",
       "id": "negation",
       "field": "pitfalls[0]",
-      "sentence": "共通テスト（平成 27 年度 数学I 第1問）は条件 p の否定を p̄ と上線で書き、記号 ¬ は、高等学校学習指導要領解説では理数に関する学科の科目「理数数学I」の発展・拡充の内容（真理値表を用いて、命題「p → q」の否定が「p ∧ (¬q)」であること）にだけ出てくる。",
+      "sentence": "センター試験（平成 27 年度 本試験 数学I 第1問）は条件 p の否定を p̄ と上線で書き、記号 ¬ は、高等学校学習指導要領解説では理数に関する学科の科目「理数数学I」の発展・拡充の内容（真理値表を用いて、命題「p → q」の否定が「p ∧ (¬q)」であること）にだけ出てくる。",
       "g1": false
     },
     {
@@ -2888,8 +2895,8 @@
     {
       "collection": "terms",
       "id": "point-of-intersection",
-      "field": "pitfalls[1]",
-      "sentence": "日本の「共有点」は接する点も含む。",
+      "field": "mapping_note",
+      "sentence": "日本語の「交点」は交わる点で、接する点も含めて言うときは「共有点」と言う（高等学校学習指導要領解説（数学I）は二次方程式の解をグラフと x 軸との共有点の x 座標と捉え、共通テスト（令和 3 年度 第 1 日程 数学II 第 3 問）は「2 点で交わる」「接する」「共有点をもたない」を分けて言う）。",
       "g1": false
     },
     {
@@ -2996,6 +3003,13 @@
       "field": "mapping_note",
       "sentence": "日本の中学では「もとの図形」と言い、原像という言葉は写像（大学）で使う。",
       "g1": true
+    },
+    {
+      "collection": "terms",
+      "id": "prime-factor",
+      "field": "pitfalls[0]",
+      "sentence": "素因数はその積に出てくる素数のことで、「12 の素因数」と言えば異なる素数 2 と 3 を挙げるが、「素因数 2 を 2 個もつ」のように重なりを数える言い方もある（センター試験 平成 26 年度 本試験 数学II・数学B 第6問）。",
+      "g1": false
     },
     {
       "collection": "terms",
@@ -3895,6 +3909,13 @@
     },
     {
       "collection": "terms",
+      "id": "square-root-of-a-number",
+      "field": "mapping_note",
+      "sentence": "日本語の「a の平方根」は 2 乗して a になる数の両方を指す（中学校学習指導要領解説（第 3 学年）は、正の数 a の平方根を正と負の 2 つの数とし、√a はその正の方を表すとする）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "square-units",
       "field": "mapping_note",
       "sentence": "見出しの「平方単位」は学習指導要領解説に無い、本プロジェクトの訳語。",
@@ -4198,7 +4219,7 @@
       "collection": "terms",
       "id": "transformation-of-a-variable",
       "field": "mapping_note",
-      "sentence": "見出しの「変量の変換」は学習指導要領解説に無く、共通テスト（平成 31 年度 数学I・A 第2問、令和 5 年度 数学I・A）は「(x_i − x̄)/s と変換した」「千円単位に変換する」と動詞で言う。",
+      "sentence": "見出しの「変量の変換」は学習指導要領解説に無く、センター試験（平成 31 年度 数学I・A 第2問）と共通テスト（令和 5 年度 数学I・A）は「(x_i − x̄)/s と変換した」「千円単位に変換する」と動詞で言う。",
       "g1": false
     },
     {
@@ -4548,14 +4569,14 @@
       "collection": "terms",
       "id": "washer-method",
       "field": "mapping_note",
-      "sentence": "学習指導要領解説にはこの求め方の名前が出てこない。",
+      "sentence": "学習指導要領解説（数学III）は、x 軸と曲線 y = f(x) の間の図形を x 軸のまわりに回してできる立体の体積を π∫{f(x)}²dx で求めることを挙げ、穴のある回転体の求め方の名前は出てこない。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "washer-method",
       "field": "mapping_note",
-      "sentence": "見出しの「ワッシャー法」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「ワッシャー法」は学習指導要領解説にも日本語版 Wikipedia にも無い、本プロジェクトの訳語。",
       "g1": false
     },
     {
@@ -4576,7 +4597,7 @@
       "collection": "terms",
       "id": "write-an-equation",
       "field": "mapping_note",
-      "sentence": "日本語の「式で表す」は、等式（方程式）も等号を含まない式も指す（中学校学習指導要領解説は「文字を用いて表す」と言う）が、英語は等号があれば write an equation、なければ write an expression と言い分ける（IM・CK-12・OpenStax とも両方を練習問題の指示に使う）。",
+      "sentence": "日本語の「式で表す」は、等号を含まない式も、等式（方程式）や不等式も指す（中学校学習指導要領解説の第 1 学年 A(2) は、入館料の合計を a + 2b と表すことと、数量の相等関係・大小関係を等式・不等式に表すことを、同じ文字を用いた式の項目で扱う）が、英語は write an expression ／ write an equation ／ write an inequality と言い分ける（IM Algebra 1 2.2 の練習問題の指示は Write an expression, an equation, or an inequality）。",
       "g1": false
     },
     {
@@ -4584,6 +4605,13 @@
       "id": "write-dx-in-terms-of-du",
       "field": "pitfalls[0]",
       "sentence": "dx を解き出す（solve for dx）か、被積分関数の中の 2x dx をそのまま du に置き換えるかは教科書による。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "x-intercept",
+      "field": "mapping_note",
+      "sentence": "日本語の「x 軸との交点」は x 軸と交わる点で、接する点も含めて言うときは「x 軸との共有点」と言う（高等学校学習指導要領解説（数学I）は二次方程式の解をグラフと x 軸との共有点の x 座標と捉える）。",
       "g1": false
     },
     {

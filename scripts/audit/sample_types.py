@@ -26,9 +26,17 @@ and fix before publication. Every row is a hint, not a verdict: the session read
        check with `python3 scripts/audit/jawiki.py --search <語>` before removing (audit 7's
        pre-decision 4; local-maximum's 相対最大値 was 相対的最大値 in 「最大と最小」).
 
+Audit 17 (the user's decision 1 before it): before publication the verified rows of T1a, T1b, T2
+and T7 are read; T4, T5 and T6 wait until after publication (audits/backlog.md 251-253). A row the
+audit read and found right goes in sample_types_checked.json (class A: right as it is; B: settled by
+a user's decision) with the row's own words as its key, so it no longer counts as a row to read and
+comes back if those words change. A fixed row drops out by itself (mapping no longer exact / none,
+the restriction or the headword gone).
+
 Reads data/, corpus/ref (references, Japanese sources), corpus/probe-cache.json (T4; run
-`pnpm corpus:probe -- x` once if it is missing) and docs/DECISIONS.md. Writes only the two files
-under audits/checks. Source text goes to no file: rows hold the entries' own words and counts.
+`pnpm corpus:probe -- x` once if it is missing), docs/DECISIONS.md and sample_types_checked.json.
+Writes only the two files under audits/checks. Source text goes to no file: rows hold the entries'
+own words and counts.
 """
 import argparse
 import datetime
@@ -43,6 +51,49 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 OUT_MD = os.path.join(ROOT, "audits", "checks", "sample-types.md")
 OUT_JSON = os.path.join(ROOT, "audits", "checks", "sample-types.json")
+CHECKED = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sample_types_checked.json")
+READ_TYPES = ("T1a", "T1b", "T2", "T7")  # the user's decision 1 before audit 17
+
+
+def row_key(kind, r):
+    """The words a checked row is matched on: the row comes back when they change."""
+    if kind == "T1a":
+        return (kind, r["id"], r["field"], r["text"])
+    if kind == "T1b":
+        return (kind, r["id"], "ja", r["ja"])
+    if kind == "T2":
+        return (kind, r["id"], r["word"], r["definition_ja"])
+    if kind == "T7":
+        return (kind, r["id"], "headword", r["headword"])
+    return None
+
+
+def load_checked():
+    if not os.path.exists(CHECKED):
+        return {}
+    return {(c["type"], c["id"], c["key"], c["text"]): c for c in json.load(open(CHECKED, encoding="utf-8"))}
+
+
+def mark(kind, rows, checked):
+    """status: 読む (verified, not checked; for T1b only the rows whose name is in a Japanese source), checked A / B, or "" (likely: its own audit)."""
+    for r in rows:
+        c = checked.get(row_key(kind, r))
+        if c:
+            r["status"] = "checked " + c["class"]
+            r["checkedNote"] = c.get("note", "")
+        elif r["confidence"] == "verified" and (kind != "T1b" or r["read"]):
+            r["status"] = "読む"
+        else:
+            r["status"] = ""
+    return rows
+
+
+def to_read(rows):
+    return sum(1 for r in rows if r.get("status") == "読む")
+
+
+def checked_count(rows):
+    return sum(1 for r in rows if r.get("status", "").startswith("checked"))
 
 
 def entries(collection):
@@ -105,7 +156,7 @@ def t1b(jp):
         names += re.findall(r"「([^」]{2,20})」", d.get("mapping_note") or "")
         counts = {n: jp.count(norm(n)) for n in dict.fromkeys(names) if norm(n)}
         named = bool(re.search(r"にはある|と呼(?:ぶ|ばれ)", d.get("mapping_note") or ""))
-        rows.append({"id": d["id"], "confidence": d["confidence"], "names": counts, "noteNamesJp": named,
+        rows.append({"id": d["id"], "confidence": d["confidence"], "ja": d["ja"]["term"], "names": counts, "noteNamesJp": named,
                      "read": named or any(v > 0 for v in counts.values())})
     return rows
 
@@ -295,27 +346,35 @@ def main():
     res["T4"] = order(t4rows) if t4rows is not None else None
     t7rows = t7()
     res["T7"] = order(t7rows) if t7rows is not None else None
+    checked = load_checked()
+    for kind in READ_TYPES:
+        if res[kind] is not None:
+            mark(kind, res[kind], checked)
+    st = lambda r: r["status"] if r["status"] != "checked A" and r["status"] != "checked B" else f"{r['status']}（{cut(r.get('checkedNote', ''), 60)}）"
+    reads = lambda kind: f"、**読む行 {to_read(res[kind])}**（verified の行から、監査が読んで正しいとした {checked_count(res[kind])} 行を除く。sample_types_checked.json）"
     today = datetime.date.today().isoformat()
     L = ["# 公開前の抜き取り（Fable）で見つかった型の一覧", "",
          f"作成: {today} ／ `python3 scripts/audit/sample_types.py`（規則は scripts/audit/sample_types.py の説明）。"
-         "抜き取りの 100 項目で大きな直し・不合格が 8（閾値 3 を超えた）だったので、その型と、小さな直しで 3 回出た型（T6）を全エントリで探した。"
-         "どの行も手がかりで、誤りとは限らない。次のセッションが 1 行ずつ資料で読んで直し、それから公開する（audits/2026-10-09-sample-fable.md の J）。", ""]
+         "抜き取りの 100 項目で大きな直し・不合格が 8（閾値 3 を超えた）だったので、その型と、小さな直しで 3 回出た型（T6）を全エントリで探した（第 2 回で T1a を広げ、T7 を足した）。"
+         "どの行も手がかりで、誤りとは限らない。ユーザーの決定（監査 17 の前の決定 1）で、公開の前に読むのは T1a・T1b・T2・T7 の verified の行（「読む」）で、"
+         "読んで正しいとした行は scripts/audit/sample_types_checked.json に入れて「checked」と出す（A: そのままで正しい、B: ユーザーの決定で決まった）。likely の行はその語の監査で、T4・T5・T6 は公開の後（audits/backlog.md 251〜253）。", ""]
     L += ["## T1a. mapping exact で、エントリ自身の文が日本語と英語の範囲の違いを書いている", "",
-          f"- 行: {count(res['T1a'])}。抜き取りで見つけた例: expression（「式」は等式・不等式も指す）・trigonometric-ratio（三角比は鈍角まで）、第 2 回: write-an-equation（等号を含むなら equation、含まないなら expression）・be-inscribed-in（inscribed in は多角形と円にだけ）。"
+          f"- 行: {count(res['T1a'])}{reads('T1a')}。抜き取りで見つけた例: expression（「式」は等式・不等式も指す）・trigonometric-ratio（三角比は鈍角まで）、第 2 回: write-an-equation（等号を含むなら equation、含まないなら expression）・be-inscribed-in（inscribed in は多角形と円にだけ）。"
           "範囲が違うなら mapping near（CLAUDE.md 規則 5。兄弟の equation・algebraic-expression は near）。言い方だけの注意なら exact のまま", ""]
-    L += table(res["T1a"], [lambda r: r["id"], lambda r: r["confidence"], lambda r: r["field"], lambda r: cut(r["text"], 160)], ["id", "confidence", "欄", "文"]) + [""]
+    L += table(res["T1a"], [lambda r: r["id"], lambda r: r["confidence"], st, lambda r: r["field"], lambda r: cut(r["text"], 160)], ["id", "confidence", "確かめ", "欄", "文"]) + [""]
     t1b_read = [r for r in res["T1b"] if r["read"]]
     L += ["## T1b. mapping none の語（日本語の名前が日本側の資料にあるか）", "",
-          f"- mapping none の terms: {count(res['T1b'])}、うち日本語の名前が日本側の資料（解説・試験・取得済みの日本語版 Wikipedia）にあるか mapping_note が名前を挙げる行 {count(t1b_read)}。"
+          f"- mapping none の terms: {count(res['T1b'])}、うち日本語の名前が日本側の資料（解説・試験・取得済みの日本語版 Wikipedia）にあるか mapping_note が名前を挙げる行 {count(t1b_read)}{reads('T1b')}。"
           "抜き取りで見つけた例: disk-method（日本語版 Wikipedia「回転体」の円板法。shell-method のバウムクーヘン積分と同じ型で near）。"
-          "方法そのものが日本の高校にあり名前だけが解説に無いなら near、日本の名前も方法も無い（washer-method の型）なら none のまま", ""]
-    L += table(res["T1b"], [lambda r: r["id"], lambda r: r["confidence"], lambda r: "読む" if r["read"] else "", lambda r: "、".join(f"{k} {v}" for k, v in r["names"].items())],
-               ["id", "confidence", "", "日本語の名前と日本側の資料の件数"]) + [""]
+          "方法そのものが日本の高校にあり名前だけが解説に無いなら near、日本の名前も方法も無い（washer-method の型）なら none のまま。"
+          "監査 17 の前の決定 2（cross-method）: 同じ手順が米国の参照にあり名前が違う（無い）だけなら near", ""]
+    L += table(res["T1b"], [lambda r: r["id"], lambda r: r["confidence"], st, lambda r: "、".join(f"{k} {v}" for k, v in r["names"].items())],
+               ["id", "confidence", "確かめ", "日本語の名前と日本側の資料の件数"]) + [""]
     L += ["## T2. 定義の日本語に、定義の英文が言わない限定がある", "",
-          f"- 行: {count(res['T2'])}。抜き取りで見つけた例: right-riemann-sum・left-riemann-sum（「区間を等分した」。CED topic 6.2 は nonuniform partitions も認める）。"
+          f"- 行: {count(res['T2'])}{reads('T2')}。抜き取りで見つけた例: right-riemann-sum・left-riemann-sum（「区間を等分した」。CED topic 6.2 は nonuniform partitions も認める）。"
           "英語の見出しの意味（参照の定義）より狭いなら定義の日本語を直す（定義の意味の変更は大きな直し）", ""]
-    L += table(res["T2"], [lambda r: r["id"], lambda r: r["confidence"], lambda r: r["word"], lambda r: cut(r["definition_ja"], 90), lambda r: cut(r["definition_en"], 110)],
-               ["id", "confidence", "語", "definition_ja", "definition_en"]) + [""]
+    L += table(res["T2"], [lambda r: r["id"], lambda r: r["confidence"], st, lambda r: r["word"], lambda r: cut(r["definition_ja"], 90), lambda r: cut(r["definition_en"], 110)],
+               ["id", "confidence", "確かめ", "語", "definition_ja", "definition_en"]) + [""]
     L += ["## T3. ③ で参照が決めた見出しの根拠が、すべて参照の別の名前（題）の一部", "",
           f"- 行: {count(res['T3'])}。抜き取りで見つけた例: derivative-of-a-parametric-curve（CED の derivatives of parametric equations は 2 件とも topic 9.2 の題 Second Derivatives of Parametric Equations の一部。直した後は 0 行）。"
           "`pnpm corpus:probe -- --contexts \"<見出し>\"` の参を読み、別の概念なら TERM_FORMS の「!w」で除いて数え直す（監査 6 の決定 9）", ""]
@@ -334,12 +393,12 @@ def main():
     if res["T7"] is None:
         L += ["- corpus/probe-cache.json が無いので数えていない（`pnpm corpus:probe -- x` を一度回す）", ""]
     else:
-        L += [f"- 行: {count(res['T7'])}（verified の terms で、書き言葉の生の件数が 5 以上、うち 6 割以上が直後に problem ／ application ／ method ／ theorem ／ rule ／ formula ／ function ／ equation ／ test ／ property ／ law ／ identity ／ sum ／ notation の語を伴うもの）。"
+        L += [f"- 行: {count(res['T7'])}{reads('T7')}（verified の terms で、書き言葉の生の件数が 5 以上、うち 6 割以上が直後に problem ／ application ／ method ／ theorem ／ rule ／ formula ／ function ／ equation ／ test ／ property ／ law ／ identity ／ sum ／ notation の語を伴うもの）。"
               "第 2 回で見つけた例: motion-problem（uniform motion の書き言葉はすべて uniform motion applications ／ problems の内側で、見出しが運動の名前になっていた → uniform motion problem）。"
               "見出しが単独の概念（the derivative、the product rule の product）として使われる語も混じるので、`pnpm corpus:probe -- --contexts \"<見出し>\"` で読んで決める", ""]
-        L += table(res["T7"], [lambda r: r["id"], lambda r: r["confidence"], lambda r: r["headword"], lambda r: r["total"], lambda r: r["inside"],
+        L += table(res["T7"], [lambda r: r["id"], lambda r: r["confidence"], st, lambda r: r["headword"], lambda r: r["total"], lambda r: r["inside"],
                                lambda r: "、".join(f"{k} {v}" for k, v in r["followers"].items())],
-                   ["id", "confidence", "見出し", "書き言葉の件数", "長い言い方の内側", "直後の語"]) + [""]
+                   ["id", "confidence", "確かめ", "見出し", "書き言葉の件数", "長い言い方の内側", "直後の語"]) + [""]
     t5_unread = [r for r in res["T5"] if not r["excerptsRead"]]
     L += ["## T5. likely の根拠が Math Stack Exchange だけのフレーズ（MICASE の学生の発話は 3 件未満）", "",
           f"- フレーズ: {count(res['T5'])}、うち DECISIONS に抜粋を読んだ記録が見当たらないもの {count(t5_unread)}。"
@@ -358,6 +417,7 @@ def main():
         json.dump({"made": today, **res}, f, ensure_ascii=False, indent=1)
     summary = {k: (None if v is None else len(v)) for k, v in res.items()}
     summary["T1b read"] = len(t1b_read)
+    summary["to read (verified, not checked)"] = {k: to_read(res[k]) for k in READ_TYPES if res[k] is not None}
     summary["T5 unread"] = len(t5_unread)
     print(f"{summary} -> audits/checks/sample-types.md")
 

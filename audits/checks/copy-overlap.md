@@ -7,10 +7,10 @@
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15661
-- 英語のソース: 3884 ファイル ／ 日本語のソース: 542 ファイル
-- 一致した箇所: **333**（291 項目）
-- 見出しの句を含む一致で除いたもの: 151 箇所（139 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
+- 調べた本文の欄: 15676
+- 英語のソース: 3884 ファイル ／ 日本語のソース: 547 ファイル
+- 一致した箇所: **335**（292 項目）
+- 見出しの句を含む一致で除いたもの: 152 箇所（140 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
 |---|---|---|---|---|---|---|---|
@@ -92,6 +92,7 @@
 | terms | base-of-a-solid | examples[1].en | en | 9 | find the number of faces edges and vertices of | 1 | ref:ck12-geometry |
 | terms | base-of-the-natural-logarithm | examples[0].en | en | 8 | e to the x is its own derivative | 1 | yt:3blue1brown |
 | terms | basic-variable | examples[1].en | en | 8 | the leading variables in terms of the parameters | 1 | ref:nicholson-lawa-2021a |
+| terms | be-circumscribed-about | mapping_note | en | 8 | ck 12 geometry 6 2 identify circle components | 1 | ref:ck12-geometry |
 | terms | be-circumscribed-about | pitfalls[2] | en | 8 | ck 12 geometry 4 22 concurrence and constructions | 1 | ref:ck12-geometry |
 | terms | be-circumscribed-about | pitfalls[3] | en | 8 | ck 12 geometry 6 2 identify circle components | 1 | ref:ck12-geometry |
 | terms | biconditional | definition_en | en | 8 | p and q have the same truth value | 1 | ref:levin-dmoi4 |
@@ -131,7 +132,7 @@
 | terms | coordinate-proof | examples[1].en | en | 9 | that the diagonals of a parallelogram bisect each other | 3 | ref:im-9-12, mit-18.02, ref:nicholson-lawa-2021a |
 | terms | coordinate-vector | definition_en | en | 10 | a vector as a linear combination of the basis vectors | 1 | ref:nicholson-lawa-2021a |
 | terms | cosecant | examples[1].en | en | 15 | in right triangle abc angle c is a right angle ab 13 and bc 5 | 1 | ref:im-9-12 |
-| terms | cross-method | examples[0].en | en | 8 | numbers that multiply to 6 and add to | 1 | openstax-elemalg |
+| terms | cross-method | examples[1].en | en | 8 | numbers that multiply to 6 and add to | 1 | openstax-elemalg |
 | terms | cross-section | examples[1].en | en | 9 | perpendicular to the x axis is a square find | 1 | khan-ap-calc |
 | terms | cryptography | pitfalls[2] | en | 10 | 8 8 an application to linear codes over finite fields | 1 | ref:nicholson-lawa-2021a |
 | terms | cubic-units | pitfalls[2] | en | 8 | geometry 5 7 the root of the problem | 1 | ref:im-9-12 |
@@ -140,6 +141,7 @@
 | terms | cycloid | examples[1].en | en | 14 | find the length of one arch of the cycloid x sin y 1 cos | 1 | openstax-calculus |
 | terms | cycloid | definition_en | en | 11 | the curve traced by a point on the rim of a | 1 | openstax-calculus |
 | terms | decomposition-of-a-vector | examples[1].en | en | 8 | as a linear combination of a and b | 1 | mit-notes |
+| terms | derivative | mapping_note | en | 9 | the derivative of a function at a point the | 2 | openstax-calculus, ref:ap-calculus-ab-bc-ced |
 | terms | derivative-at-a-point | examples[1].en | en | 8 | the slope of the tangent line there the | 1 | khan-ap-calc |
 | terms | derivative-at-a-point | collocations[1].en | en | 8 | the slope of the tangent line at x | 1 | khan-ap-calc |
 | terms | derivative-of-a-vector-function | examples[1].en | en | 9 | the derivative of the vector valued function r t | 1 | openstax-calculus |

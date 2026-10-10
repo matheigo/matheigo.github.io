@@ -1,0 +1,515 @@
+[
+ {
+  "type": "T1a",
+  "id": "alternate-interior-angles",
+  "key": "pitfalls[0]",
+  "text": "英語では外側の組 alternate exterior angles（エントリ alternate-exterior-angles）と区別するため interior を付ける。",
+  "class": "A",
+  "note": "英語の名前の言い分け（外側の組は別の名前）。錯角と alternate interior angles の範囲は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "angle-addition-formulas",
+  "key": "pitfalls[4]",
+  "text": "日本語版 Wikipedia「加法定理」はどちらも加法定理の例に挙げる。",
+  "class": "A",
+  "note": "確率の加法定理は別のエントリ（同じ名前の別の内容）。このエントリの範囲は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "binomial",
+  "key": "pitfalls[0]",
+  "text": "項が 1 つなら monomial（エントリ monomial）、3 つなら trinomial（エントリ trinomial）と、項の数で呼び名が変わる。",
+  "class": "A",
+  "note": "項の数による呼び分けの案内。範囲は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "check",
+  "key": "pitfalls[0]",
+  "text": "check は「チェックマークを付ける」「点検する」など意味が広い。",
+  "class": "A",
+  "note": "英単語の数学以外の意味の注意。数学の意味の範囲は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "circle",
+  "key": "pitfalls[0]",
+  "text": "英語の circle は周の曲線だけを指し、内部を含む「円板」は disk（エントリ disk）。",
+  "class": "A",
+  "note": "日英とも厳密には曲線で、内部を言うときは円板 ／ disk。範囲は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "circumference",
+  "key": "pitfalls[0]",
+  "text": "日本語は線（円周）と長さ（円周の長さ）を言い分けるが、英語はどちらも circumference で言う。",
+  "class": "A",
+  "note": "「円周」も長さに使う（中学校解説・日本語版 Wikipedia「円周率」）ので範囲は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "converse",
+  "key": "pitfalls[1]",
+  "text": "日常語の「逆」（反対）は opposite や reverse で、converse は命題の逆にだけ使う。",
+  "class": "A",
+  "note": "日本語の「逆」の別の意味（逆関数・逆数・日常語）の注意。命題の逆の範囲は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "discontinuous",
+  "key": "pitfalls[0]",
+  "text": "不連続の種類は、英語では removable（除去可能）・jump（跳躍）・infinite（無限）と名前で呼び分ける。",
+  "class": "A",
+  "note": "下位の種類の名前（日本語版 Wikipedia「不連続性の分類」も呼び分ける）。範囲は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "displacement",
+  "key": "pitfalls[0]",
+  "text": "学習指導要領解説（数学III）は「位置の変化」と言い、「変位」は物理の項目にだけ出てくる。",
+  "class": "A",
+  "note": "日本の資料での名前の在りか（解説は「位置の変化」）。量は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "exterior-angle",
+  "key": "definition_en",
+  "text": "The angle formed outside a polygon by one side and the extension of the side next to it. At each vertex, the interior angle and the exterior angle add up to 180°.",
+  "class": "A",
+  "note": "add up to 180°（内角との和）を拾った。範囲の差ではない",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "infinite-geometric-sequence",
+  "key": "pitfalls[0]",
+  "text": "英語では sequence（数列）と series（級数）を区別する。",
+  "class": "A",
+  "note": "sequence と series の取り違えの注意（日本語も数列と級数を分ける）",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "line",
+  "key": "pitfalls[0]",
+  "text": "英語の line は両方向に限りなくのびる直線だけを指す。",
+  "class": "A",
+  "note": "直線・線分・半直線の呼び分けは日英同じ。「線」は見出しでない別の語",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "line",
+  "key": "pitfalls[2]",
+  "text": "日本語の「線」は曲線も含むが、英語の line はまっすぐな線。",
+  "class": "A",
+  "note": "直線・線分・半直線の呼び分けは日英同じ。「線」は見出しでない別の語",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "linear-equation",
+  "key": "pitfalls[1]",
+  "text": "未知数が 1 つなら linear equation in one variable、2 つ（二元一次方程式）なら linear equation in two variables と言い分ける。",
+  "class": "A",
+  "note": "下位の種類（一元・二元）の呼び分け。範囲は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "measure",
+  "key": "pitfalls[1]",
+  "text": "道具は、長さなら ruler（定規・ものさし）、角なら protractor（分度器）。",
+  "class": "A",
+  "note": "道具の名前の注意（参照の言い方に直した）。範囲は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "negation",
+  "key": "pitfalls[0]",
+  "text": "センター試験（平成 27 年度 本試験 数学I 第1問）は条件 p の否定を p̄ と上線で書き、記号 ¬ は、高等学校学習指導要領解説では理数に関する学科の科目「理数数学I」の発展・拡充の内容（真理値表を用いて、命題「p → q」の否定が「p ∧ (¬q)」であること）にだけ出てくる。",
+  "class": "A",
+  "note": "記号の書き方の注意（試験の名前を直した）。範囲は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "parabola",
+  "key": "pitfalls[1]",
+  "text": "a > 0 なら opens upward（日本語の「下に凸」）、a < 0 なら opens downward（「上に凸」）。",
+  "class": "A",
+  "note": "向きの言い方の注意。範囲は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "phase-shift",
+  "key": "pitfalls[3]",
+  "text": "Algebra and Trigonometry の phase shift C/B はずれの量そのもので、数の意味が違う。",
+  "class": "A",
+  "note": "参照の間の数の意味（C/B と C）の注意。範囲の差ではない",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "ray",
+  "key": "pitfalls[1]",
+  "text": "端点が 2 つなら line segment（エントリ segment）、1 つなら ray、端点がなく両方向にのびるなら line（エントリ line）。",
+  "class": "A",
+  "note": "端点の数による呼び分けは日英同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "relatively-prime",
+  "key": "pitfalls[1]",
+  "text": "英語版 Wikipedia「Coprime integers」は setwise coprime と pairwise coprime、日本語版 Wikipedia「互いに素 (整数論)」は「互いに素」と「対ごとに素」と呼び分ける。",
+  "class": "A",
+  "note": "3 つ以上のときの呼び分けは日英同じ。集合の互いに素は別の概念",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "supplementary-angle",
+  "key": "definition_en",
+  "text": "Two angles are supplementary when their measures add up to 180°; the supplement of an angle θ is 180° − θ.",
+  "class": "A",
+  "note": "add up to 180° を拾った。範囲の差ではない",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "triangle",
+  "key": "definition_en",
+  "text": "A polygon with three sides, formed by joining three points that do not lie on one line; its three interior angles add up to 180°.",
+  "class": "A",
+  "note": "add up to 180° を拾った。範囲の差ではない",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "trinomial",
+  "key": "pitfalls[0]",
+  "text": "項が 1 つなら monomial（エントリ monomial）、2 つなら binomial（エントリ binomial）。",
+  "class": "A",
+  "note": "項の数による呼び分けの案内。範囲は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "unit-circle",
+  "key": "pitfalls[0]",
+  "text": "高等学校学習指導要領解説（数学I 図形と計量）は単位円を使わず、座標平面の第 1 象限で原点を端点とする長さ α の線分 OP と点 P の座標 (α cos θ, α sin θ) で三角比を鈍角まで拡張する。",
+  "class": "A",
+  "note": "解説の三角比の拡張の道具の話。単位円の範囲は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1a",
+  "id": "vertex",
+  "key": "pitfalls[1]",
+  "text": "グラフ理論（点と辺のグラフ）の頂点も vertex だが、意味が違うので別のエントリ（頂点（グラフ））にした。",
+  "class": "A",
+  "note": "グラフ理論の頂点は別のエントリ（日英同じ多義）",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1b",
+  "id": "auxiliary-angle-form",
+  "key": "ja",
+  "text": "三角関数の合成",
+  "class": "B",
+  "note": "ユーザーの決定（監査 8 の前の決定 1）で none。見出しは説明の訳",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1b",
+  "id": "circle-through-the-intersections-of-two-circles",
+  "key": "ja",
+  "text": "2 円の交点を通る円",
+  "class": "A",
+  "note": "見出しは説明の訳。英語版 Wikipedia の pencil of circles は族の名前で、この円の名前ではない",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1b",
+  "id": "comparison-for-divergence",
+  "key": "ja",
+  "text": "追い出しの原理",
+  "class": "A",
+  "note": "数列のこの性質は参照に名前も定理の形も無い（級数・広義積分の比較の定理は mapping_note に）。見出しは説明の訳",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1b",
+  "id": "grouped-sequence",
+  "key": "ja",
+  "text": "群数列",
+  "class": "A",
+  "note": "群数列の型の問題は参照に無い（項を群に区切る技法だけ）。見出しは説明の訳",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1b",
+  "id": "one-sixth-formula",
+  "key": "ja",
+  "text": "1/6 公式",
+  "class": "A",
+  "note": "公式も名前も参照に無い",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1b",
+  "id": "rate",
+  "key": "ja",
+  "text": "割合",
+  "class": "A",
+  "note": "「割合」1 語に当たる語は参照に無く、場面で言い分ける。見出しは説明の訳",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1b",
+  "id": "surplus-and-shortage",
+  "key": "ja",
+  "text": "過不足",
+  "class": "A",
+  "note": "問題の型の名前は参照に無い。見出しは説明の訳",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1b",
+  "id": "system-of-recurrences",
+  "key": "ja",
+  "text": "連立漸化式",
+  "class": "A",
+  "note": "見出しは説明の訳。Nicholson の matrix recurrence は線形・行列の形だけ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T1b",
+  "id": "three-perpendiculars-theorem",
+  "key": "ja",
+  "text": "三垂線の定理",
+  "class": "A",
+  "note": "定理の名前も形も参照に無い",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "change-of-base-formula",
+  "key": "正の数",
+  "text": "log_a b = log_c b / log_c a（a, c は 1 でない正の数、b > 0）。底の違う対数を同じ底にそろえる。",
+  "class": "A",
+  "note": "英文も a, c > 0 で同じ範囲",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "checking-whether-the-solution-makes-sense",
+  "key": "自然数",
+  "text": "文章題で求めた方程式の解が、問題の条件（個数や人数は自然数、長さは正の数など）に合っているかを確かめること。合わない解は問題の答えにしない。",
+  "class": "A",
+  "note": "例の挙げ方で、英文の positive whole number と同じ範囲",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "classification-by-remainder",
+  "key": "自然数",
+  "text": "整数を、ある自然数 m で割ったときの余り 0, 1, …, m − 1 によって m 個の組に分けること。整数の性質を場合分けで証明するときに使う。",
+  "class": "A",
+  "note": "m は正の整数の意味で英文と同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "decreasing",
+  "key": "必ず",
+  "text": "x が増えると、関数の値が必ず減る。1 次関数ではグラフが右下がりになること（傾きが負）。",
+  "class": "A",
+  "note": "「必ず」は英文の whenever と同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "divisibility-rules",
+  "key": "だけを",
+  "text": "実際に割り算をせずに、各位の数字の和や下の何桁かだけを見て、ある整数が 3・4・9 などの倍数かどうかを見分ける方法。",
+  "class": "A",
+  "note": "「だけを見て」は by looking at と同じ（限定ではない）",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "is-monotonically-increasing",
+  "key": "必ず",
+  "text": "x が増えると、関数の値も必ず増える。",
+  "class": "A",
+  "note": "「必ず」は英文の rise as x increases と同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "natural-number",
+  "key": "正の整数",
+  "text": "1, 2, 3, … のように、ものを数えるときに使う数。正の整数と同じで、0 を含まない。",
+  "class": "A",
+  "note": "日米の範囲の差（0 を含むか）は mapping near と英文が書く",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "polyhedron",
+  "key": "だけで",
+  "text": "平面の多角形だけで囲まれた立体。囲んでいる多角形を面、面と面が交わる線分を辺、辺が集まる点を頂点という。",
+  "class": "A",
+  "note": "「だけで」は entirely と同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "prime-factor",
+  "key": "自然数",
+  "text": "ある自然数の約数のうち、素数であるもの。たとえば 12 = 2 × 2 × 3 なので、12 の素因数は 2 と 3。",
+  "class": "A",
+  "note": "0 が関わらないので whole number と同じ範囲",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "prime-factorization",
+  "key": "自然数",
+  "text": "自然数を素数だけの積の形に表すこと。また、その積の形。1 より大きい自然数では、積の順番を除いてただ 1 通りに決まる。",
+  "class": "A",
+  "note": "0 が関わらない・素数だけの積は product of prime numbers と同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "prime-factorization",
+  "key": "だけの",
+  "text": "自然数を素数だけの積の形に表すこと。また、その積の形。1 より大きい自然数では、積の順番を除いてただ 1 通りに決まる。",
+  "class": "A",
+  "note": "0 が関わらない・素数だけの積は product of prime numbers と同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "prime-number",
+  "key": "自然数",
+  "text": "2 以上の自然数のうち、1 とその数自身のほかに正の約数をもたないもの。1 は素数ではない。",
+  "class": "A",
+  "note": "0 が関わらないので whole number greater than 1 と同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "restricted-domain",
+  "key": "に限る",
+  "text": "関数の定義域を一部に限ること。1 対 1 でない関数に逆関数を考えるときなどに使う。",
+  "class": "A",
+  "note": "「に限る」は cutting down to part of it と同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "simplify-radicals",
+  "key": "自然数",
+  "text": "根号の中の数から平方因数を外に出し、根号の中をできるだけ小さい自然数にする。根号を含む式では、そのうえで同じ根号の項をまとめる。",
+  "class": "A",
+  "note": "定義は中3・数I の範囲。英語の広い使い方は pitfalls に足した",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "subset",
+  "key": "だけで",
+  "text": "集合 B の要素だけでできている集合 A のこと。A のどの要素も B の要素であるとき、A を B の部分集合という。",
+  "class": "A",
+  "note": "「だけで」は nothing in A lies outside B と同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "sufficient-condition",
+  "key": "必ず",
+  "text": "「p ならば q」が真のとき、p を q であるための十分条件という。p が成り立てば q も必ず成り立つ。",
+  "class": "A",
+  "note": "「必ず」は whenever と同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "x-coordinate",
+  "key": "だけの",
+  "text": "点の座標 (x, y) の 1 つ目の数。点が原点から右（正）または左（負）にどれだけの位置にあるかを表す。",
+  "class": "A",
+  "note": "「どれだけの」（どのくらいの）を拾った。限定ではない",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "y-coordinate",
+  "key": "だけの",
+  "text": "点の座標 (x, y) の 2 つ目の数。点が原点から上（正）または下（負）にどれだけの位置にあるかを表す。",
+  "class": "A",
+  "note": "「どれだけの」（どのくらいの）を拾った。限定ではない",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T7",
+  "id": "arctangent",
+  "key": "headword",
+  "text": "inverse tangent",
+  "class": "A",
+  "note": "inverse tangent function は同じ概念の言い方",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T7",
+  "id": "differential",
+  "key": "headword",
+  "text": "differential",
+  "class": "A",
+  "note": "TERM_FORMS が differential equation(s) を除いて数える",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T7",
+  "id": "divisibility",
+  "key": "headword",
+  "text": "divisibility",
+  "class": "A",
+  "note": "判定法 divisibility tests を除いても ① で register both",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T7",
+  "id": "number-of-elements",
+  "key": "headword",
+  "text": "cardinality",
+  "class": "A",
+  "note": "cardinality rules はページの柱。除いても見出し・register は同じ",
+  "checked": "監査 17"
+ },
+ {
+  "type": "T7",
+  "id": "squeeze",
+  "key": "headword",
+  "text": "squeeze",
+  "class": "A",
+  "note": "TERM_FORMS が squeeze … between で数える（squeeze theorem は別エントリ）",
+  "checked": "監査 17"
+ }
+]

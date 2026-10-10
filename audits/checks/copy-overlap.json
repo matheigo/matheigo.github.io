@@ -2,13 +2,13 @@
   "summary": {
     "checked": "2026-10-09",
     "rule": "English: 8+ consecutive words; Japanese: 20+ characters (whitespace removed); a span that is the entry's headword and fewer than that many other words / characters is left out",
-    "fields": 15661,
+    "fields": 15676,
     "englishSources": 3884,
-    "japaneseSources": 542,
-    "spans": 333,
-    "entries": 291,
-    "headwordSpans": 151,
-    "headwordEntries": 139
+    "japaneseSources": 547,
+    "spans": 335,
+    "entries": 292,
+    "headwordSpans": 152,
+    "headwordEntries": 140
   },
   "spans": [
     {
@@ -281,6 +281,17 @@
       "span": "the leading variables in terms of the parameters",
       "sources": {
         "ref:nicholson-lawa-2021a": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "be-circumscribed-about",
+      "field": "mapping_note",
+      "lang": "en",
+      "length": 8,
+      "span": "ck 12 geometry 6 2 identify circle components",
+      "sources": {
+        "ref:ck12-geometry": 1
       }
     },
     {
@@ -733,7 +744,7 @@
     {
       "collection": "terms",
       "id": "cross-method",
-      "field": "examples[0].en",
+      "field": "examples[1].en",
       "lang": "en",
       "length": 8,
       "span": "numbers that multiply to 6 and add to",
@@ -860,6 +871,18 @@
       "span": "the derivative of the vector valued function r t",
       "sources": {
         "openstax-calculus": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "derivative",
+      "field": "mapping_note",
+      "lang": "en",
+      "length": 9,
+      "span": "the derivative of a function at a point the",
+      "sources": {
+        "openstax-calculus": 2,
+        "ref:ap-calculus-ab-bc-ced": 1
       }
     },
     {
@@ -5621,6 +5644,17 @@
       "sources": {
         "openstax-calculus": 1,
         "khan-middle": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "write-an-equation",
+      "field": "mapping_note",
+      "lang": "en",
+      "length": 8,
+      "span": "write an expression an equation or an inequality",
+      "sources": {
+        "ref:im-9-12": 2
       }
     },
     {

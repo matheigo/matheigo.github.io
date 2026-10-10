@@ -5,7 +5,7 @@
 対象の欄は日本側と同じ。米国側の主張（米国・アメリカ・AP・CED・College Board・英語圏・Calc I〜III・Calculus AB／BC）の文のうち、
 文の中に参照（CED・OpenStax・IM・CK-12・Nicholson・Levin・Wikipedia・topic の番号ほか）も用例コーパス（講義・話し言葉・書き言葉・Khan・MIT ほか）も名指ししないもの。
 
-- 米国側の主張の文で参照かコーパスを名指しするもの: 422 文（一覧にしない）
+- 米国側の主張の文で参照かコーパスを名指しするもの: 426 文（一覧にしない）
 - **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 4 項目・4 文**
 - B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 21 項目・22 文
 
