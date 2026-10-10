@@ -367,6 +367,13 @@
     },
     {
       "collection": "terms",
+      "id": "be-inscribed-in",
+      "field": "mapping_note",
+      "sentence": "日本語の「内接する」は、2 円の一方が他方の内側にあって 1 点を共有する場合にも使う（日本語版 Wikipedia「円 (数学)」、共通テスト 令和3年度 第1日程 数学Ⅰ・数学Ａ 第5問の「外接円 O に内接する円」）が、英語の inscribed in は多角形と円・楕円の関係に使い、2 円は internally tangent と言う（英語版 Wikipedia「Tangent」の節 Tangent circles）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "bezouts-identity",
       "field": "pitfalls[0]",
       "sentence": "日本の数A では、一次不定方程式の単元で「a, b が互いに素なら ax + by = 1 は整数解をもつ」という形で出てくる。",
@@ -1403,6 +1410,13 @@
     },
     {
       "collection": "terms",
+      "id": "expression",
+      "field": "mapping_note",
+      "sentence": "日本語の「式」は等式や不等式も指す（中学校学習指導要領解説（第 1 学年）は、数量の関係を表す式を等式または不等式に表すとし、日本語版 Wikipedia「等式」は等式を相等関係を表す数式とする）が、英語の expression は等号を含まないもの（3x + 2）だけ。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "extended-euclidean-algorithm",
       "field": "pitfalls[0]",
       "sentence": "数A の一次不定方程式では、この手順を名前を付けずに「互除法の式を逆にたどる」形で使う。",
@@ -2005,20 +2019,6 @@
     },
     {
       "collection": "terms",
-      "id": "integration-by-substitution",
-      "field": "mapping_note",
-      "sentence": "教科書の節の名前や答案では単に substitution（教科書によっては the substitution rule）とも書く。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
-      "id": "integration-by-substitution",
-      "field": "mapping_note",
-      "sentence": "ja.alt の「置換法則」は学習指導要領解説に無い、本プロジェクトの訳語（英語 substitution rule の訳）。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "integration-formulas",
       "field": "pitfalls[1]",
       "sentence": "n = −1 のときは ln|x| + C（学習指導要領解説の書き方では log|x| + C。解説は自然対数を底を書かずに log と書く）。",
@@ -2530,13 +2530,6 @@
     },
     {
       "collection": "terms",
-      "id": "motion-problem",
-      "field": "mapping_note",
-      "sentence": "OpenStax の Algebra の教科書はこれを uniform motion applications と呼び、D = rt（distance = rate × time）の式を立てる。",
-      "g1": false
-    },
-    {
-      "collection": "terms",
       "id": "move-term-to-other-side",
       "field": "en.variants[0].note",
       "sentence": "Khan Academy（中学の講義と高校向け）と YouTube の解説が中心で、大学の講義（MIT OCW）には少ない。",
@@ -2721,14 +2714,14 @@
       "collection": "terms",
       "id": "orthographic-projection",
       "field": "mapping_note",
-      "sentence": "中学校学習指導要領解説の投影図は、空間図形を上から見た図（平面図）や前から見た図（立面図）に表現したもので、英語では IM Grade 6 が front view・top view と、見る向きで図を呼ぶ。",
+      "sentence": "中学校学習指導要領解説の投影図は、平面図（上から見た図）と立面図（前から見た図）で空間図形を表す図で、英語では IM Grade 7 が front view・top view と、見る向きで図を呼ぶ。",
       "g1": false
     },
     {
       "collection": "terms",
       "id": "orthographic-projection",
       "field": "mapping_note",
-      "sentence": "見出しの orthographic projection はこの図法の英語の名前（英語版 Wikipedia の記事名。数学カテゴリの外）で、米国の中学・高校の教材（OpenStax・IM・CK-12）には出てこない。",
+      "sentence": "見出しの orthographic projection はこの図法の英語の名前（英語版 Wikipedia の記事名。数学カテゴリから 5 段で、見出しを決める記事名の 4 段には当たらない）で、米国の中学・高校の教材（OpenStax・IM・CK-12）には出てこない。",
       "g1": false
     },
     {
@@ -3503,6 +3496,13 @@
     },
     {
       "collection": "terms",
+      "id": "same-side-interior-angles",
+      "field": "mapping_note",
+      "sentence": "中学校学習指導要領解説（第 2 学年 B 図形）は平行線の性質として同位角・錯角を挙げ、「同側内角」は出てこない（日本語版 Wikipedia にも無い）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "sample-space",
       "field": "pitfalls[0]",
       "sentence": "高等学校学習指導要領解説（数学A）は全事象を U で表す（P(U) = 1）。",
@@ -4261,7 +4261,7 @@
       "collection": "terms",
       "id": "triangle-proportionality-theorem",
       "field": "pitfalls[3]",
-      "sentence": "中学校学習指導要領解説はこの内容を「平行線と線分の比についての性質」と呼び、「三角形と比の定理」は出てこない（見出しは本プロジェクトの言い方）。",
+      "sentence": "中学校学習指導要領解説はこの内容を「平行線と線分の比についての性質」と呼び、「三角形と比の定理」は出てこない（日本語版 Wikipedia「六円定理」はこの名前で使う）。",
       "g1": false
     },
     {
@@ -4570,6 +4570,13 @@
       "id": "work",
       "field": "pitfalls[0]",
       "sentence": "W = F·d は数学C の内積で計算できる。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "write-an-equation",
+      "field": "mapping_note",
+      "sentence": "日本語の「式で表す」は、等式（方程式）も等号を含まない式も指す（中学校学習指導要領解説は「文字を用いて表す」と言う）が、英語は等号があれば write an equation、なければ write an expression と言い分ける（IM・CK-12・OpenStax とも両方を練習問題の指示に使う）。",
       "g1": false
     },
     {

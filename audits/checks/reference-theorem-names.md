@@ -375,7 +375,7 @@
 | data Decision Rules | AP Statistics CED 6 | AP Statistics CED: exam | range-of-data（1）、quantitative-variable（1）、data（1）、two-variable-data（1） | エントリの概念ではない: AP Statistics の CED の表の見出し（Decision Rules） |
 | information Decision Rules | AP Statistics CED 6 | AP Statistics CED: exam |  | エントリの概念ではない: AP Statistics の CED の表の見出し（Decision Rules） |
 | Intersecting Chords Angle Theorem | CK-12 Geometry 6 | CK-12 Geometry: 6.16 Angles On and Inside a Circle | tangent-chord-theorem（2）、intersecting-chords-theorem（2）、vertical-angles（1）、supplementary-angle-identity（1） | エントリの概念ではない: 円の外部・内部にできる角の定理。エントリなし |
-| Kepler’s laws of planetary motion | OpenStax Calculus Volume 3 5、OpenStax Calculus Volume 2 1 | OpenStax Calculus Volume 2: Parametric Equations、OpenStax Calculus Volume 3: Motion in Space ／ Parametric Equations | rigid-motion（1）、projectile-motion（1）、rectilinear-motion（1）、motion-problem（1） | エントリの概念ではない: 物理の法則（数学の用語ではない） |
+| Kepler’s laws of planetary motion | OpenStax Calculus Volume 3 5、OpenStax Calculus Volume 2 1 | OpenStax Calculus Volume 2: Parametric Equations、OpenStax Calculus Volume 3: Motion in Space ／ Parametric Equations | rigid-motion（1）、motion-problem（1）、projectile-motion（1）、rectilinear-motion（1） | エントリの概念ではない: 物理の法則（数学の用語ではない） |
 | Pappus theorem | OpenStax Calculus Volume 1 3、OpenStax Calculus Volume 2 3 | OpenStax Calculus Volume 1: Moments and Centers of Mass、OpenStax Calculus Volume 2: Moments and Centers of Mass |  | エントリの概念ではない: エントリなし |
 | possible pattern rules | CK-12 Geometry 4、CK-12 Algebra 2 | CK-12 Geometry: 2.3 Number Patterns、CK-12 Algebra: 2.1.1 Writing Basic Equations | number-of-possible-outcomes（1） | エントリの概念ではない: CK-12 の function machine の規則。エントリなし |
 | rectangle properties | OpenStax Elementary Algebra 2e 6 | OpenStax Elementary Algebra 2e: Solve Geometry Applications: Triangles, Rectangles, and the Pythagorean Theorem ／ Solve Applications with Linear Inequalities | rectangle（1） | エントリの概念ではない: 一般的な言い方（generic） |
@@ -512,7 +512,7 @@
 | multiplying Binomial Theorem | OpenStax Algebra and Trigonometry 2e 1、OpenStax Precalculus 2e 1 | OpenStax Algebra and Trigonometry 2e: Binomial Theorem、OpenStax Precalculus 2e: Binomial Theorem | binomial-theorem（1）、binomial-probability（1）、binomial-distribution（1）、binomial-coefficient（1） |  |
 | Newton’s law of gravity | OpenStax Calculus Volume 1 1、OpenStax Calculus Volume 2 1 | OpenStax Calculus Volume 1: Integration Formulas and the Net Change Theorem、OpenStax Calculus Volume 2: Integration Formulas and the Net Change Theorem | newtons-method（1）、newtons-law-of-cooling（1） | エントリの概念ではない: 物理の法則（数学の用語ではない） |
 | Newton’s laws | OpenStax Calculus Volume 1 1、OpenStax Calculus Volume 2 1 | OpenStax Calculus Volume 1: The Fundamental Theorem of Calculus、OpenStax Calculus Volume 2: The Fundamental Theorem of Calculus | newtons-method（1）、newtons-law-of-cooling（1） | エントリの概念ではない: 物理の法則（数学の用語ではない） |
-| Newton’s second law of motion | OpenStax Calculus Volume 2 1、OpenStax Calculus Volume 3 1 | OpenStax Calculus Volume 2: Basics of Differential Equations、OpenStax Calculus Volume 3: Motion in Space | second-derivative-test（1）、rigid-motion（1）、newtons-method（1）、second-derivative（1） | エントリの概念ではない: 物理の法則（数学の用語ではない） |
+| Newton’s second law of motion | OpenStax Calculus Volume 2 1、OpenStax Calculus Volume 3 1 | OpenStax Calculus Volume 2: Basics of Differential Equations、OpenStax Calculus Volume 3: Motion in Space | second-derivative-test（1）、rigid-motion（1）、newtons-method（1）、motion-problem（1） | エントリの概念ではない: 物理の法則（数学の用語ではない） |
 | notation rule | CK-12 Geometry 2 | CK-12 Geometry: 8.11 Rotation Rules ／ 8.14 Rules for Reflections | scientific-notation（1）、leibniz-notation（1）、interval-notation（1）、function-notation（1） | エントリの概念ではない: エントリなし |
 | note label Properties of Determinants | OpenStax Algebra and Trigonometry 2e 1、OpenStax Precalculus 2e 1 | OpenStax Algebra and Trigonometry 2e: Solving Systems with Cramer's Rule、OpenStax Precalculus 2e: Solving Systems with Cramer's Rule | determinant（1） |  |
 | note label Properties of Vectors | OpenStax Algebra and Trigonometry 2e 1、OpenStax Precalculus 2e 1 | OpenStax Algebra and Trigonometry 2e: Vectors、OpenStax Precalculus 2e: Vectors | vector-valued-function（1）、vector-subtraction（1）、vector-space（1）、vector-addition（1） |  |
@@ -657,8 +657,8 @@
 | IQR rule for the AES encryption method | AP Statistics CED 1 | AP Statistics CED: exam | substitution-method（1）、shell-method（1）、partial-fraction-decomposition（1）、newtons-method（1） |  |
 | IQR rule for the DES encryption method | AP Statistics CED 1 | AP Statistics CED: exam | substitution-method（1）、shell-method（1）、partial-fraction-decomposition（1）、newtons-method（1） |  |
 | Kepler’s Third Law for Nonheliocentric Orbits | OpenStax Calculus Volume 3 1 | OpenStax Calculus Volume 3: Motion in Space |  |  |
-| Kepler’s third law of planetary motion | OpenStax Calculus Volume 3 1 | OpenStax Calculus Volume 3: Motion in Space | rigid-motion（1）、rectilinear-motion（1）、projectile-motion（1）、motion-problem（1） |  |
-| Kepler’s third law of planetary motion along | OpenStax Calculus Volume 3 1 | OpenStax Calculus Volume 3: Introduction | rectilinear-motion（2）、motion-problem（1）、rigid-motion（1）、projectile-motion（1） | エントリの概念ではない: 物理の法則（数学の用語ではない） |
+| Kepler’s third law of planetary motion | OpenStax Calculus Volume 3 1 | OpenStax Calculus Volume 3: Motion in Space | rigid-motion（1）、rectilinear-motion（1）、motion-problem（1）、projectile-motion（1） |  |
+| Kepler’s third law of planetary motion along | OpenStax Calculus Volume 3 1 | OpenStax Calculus Volume 3: Introduction | rectilinear-motion（2）、rigid-motion（1）、motion-problem（1）、projectile-motion（1） | エントリの概念ではない: 物理の法則（数学の用語ではない） |
 | Kirchhoff’s Laws | Nicholson 1 | Nicholson: 11.2 The Jordan Canonical Form |  |  |
 | Kirchhoff’s voltage rule | OpenStax Calculus Volume 3 1 | OpenStax Calculus Volume 3: Applications |  |  |
 | Kite Diagonals Theorem | CK-12 Geometry 1 | CK-12 Geometry: 5.16 Kites | diagonal（1）、space-diagonal（1） |  |
@@ -686,7 +686,7 @@
 | Negative rule | OpenStax Algebra and Trigonometry 2e 1 | OpenStax Algebra and Trigonometry 2e: Exponents and Scientific Notation | negative-reciprocal（1）、negative-number（1）、negative-exponent（1）、negative-correlation（1） |  |
 | Newton’s law of gravitation | OpenStax Calculus Volume 3 1 | OpenStax Calculus Volume 3: Vector Fields | newtons-method（1）、newtons-law-of-cooling（1） | エントリの概念ではない: 物理の法則（数学の用語ではない） |
 | Newton’s law of universal gravitation | OpenStax Calculus Volume 1 1 | OpenStax Calculus Volume 1: Differentiation Rules | universal-set（1）、newtons-method（1）、universal-quantifier（1）、newtons-law-of-cooling（1） |  |
-| Newton’s laws of motion imply | Nicholson 1 | Nicholson: 5.6 Best Approximation and Least Squares | rigid-motion（1）、newtons-method（1）、projectile-motion（1）、rectilinear-motion（1） |  |
+| Newton’s laws of motion imply | Nicholson 1 | Nicholson: 5.6 Best Approximation and Least Squares | rigid-motion（1）、newtons-method（1）、motion-problem（1）、projectile-motion（1） |  |
 | Noah’s tests | IM 9–12 1 | IM 9–12: Geometry 8.9 Using Tables for Conditional Probability |  |  |
 | Old Theorem | IM 9–12 1 | IM 9–12: Algebra 2 2.24 Polynomial Identities (Part 2) |  |  |
 | Opposite-Opposite Property | CK-12 Algebra 1 | CK-12 Algebra: 2.4.7 Equations with Variables on Both Sides | opposite-vector（1）、opposite-side（1）、opposite-angle（1）、opposite（1） |  |

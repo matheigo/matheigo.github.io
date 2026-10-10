@@ -1,9 +1,9 @@
 {
- "rows": 2512,
+ "rows": 2570,
  "found": {
-  "checked A": 60,
-  "checked B": 45,
-  "yes": 2407
+  "checked A": 64,
+  "checked B": 48,
+  "yes": 2458
  },
  "verifiedNotFound": {},
  "list": [
@@ -339,6 +339,29 @@
   },
   {
    "collection": "terms",
+   "id": "angle-sum-of-a-triangle",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "references": [
+    "im",
+    "openstax:Prealgebra"
+   ],
+   "wording": "the sum of the measures of the angles of a triangle is",
+   "found": "checked A"
+  },
+  {
+   "collection": "terms",
+   "id": "angle-sum-of-a-triangle",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "references": [
+    "openstax:Prealgebra"
+   ],
+   "wording": "the sum of the measures of the angles of a triangle is",
+   "found": "checked A"
+  },
+  {
+   "collection": "terms",
    "id": "boundary",
    "confidence": "verified",
    "field": "pitfalls[0]",
@@ -488,6 +511,17 @@
   },
   {
    "collection": "terms",
+   "id": "left-riemann-sum",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "ced:calc"
+   ],
+   "wording": "the width of the ith subinterval",
+   "found": "checked A"
+  },
+  {
+   "collection": "terms",
    "id": "logical-connective",
    "confidence": "verified",
    "field": "sources[4].note",
@@ -618,6 +652,17 @@
     "im"
    ],
    "wording": "the volume is multiplied by k",
+   "found": "checked A"
+  },
+  {
+   "collection": "terms",
+   "id": "right-riemann-sum",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "ced:calc"
+   ],
+   "wording": "the width of the ith subinterval",
    "found": "checked A"
   },
   {
@@ -851,6 +896,17 @@
     "enwiki:Unit vector"
    ],
    "wording": "is read v-hat",
+   "found": "checked B"
+  },
+  {
+   "collection": "terms",
+   "id": "acute-angle",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "references": [
+    "im"
+   ],
+   "wording": "level.us Pre-Algebra",
    "found": "checked B"
   },
   {
@@ -1176,6 +1232,30 @@
     "ced:stats"
    ],
    "wording": "multiply by a constant",
+   "found": "checked B"
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-ratio",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "im",
+    "openstax:Calculus"
+   ],
+   "wording": "Volume 2 3.3 Trigonometric Substitution",
+   "found": "checked B"
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-ratio",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "im",
+    "openstax:Calculus"
+   ],
+   "wording": "Volume 3 2.1 Vectors in the Plane",
    "found": "checked B"
   },
   {
@@ -5617,6 +5697,17 @@
    "collection": "symbols",
    "id": "cube-root",
    "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "openstax:Intermediate Algebra"
+   ],
+   "wording": "Simplify Expressions with Roots",
+   "found": "yes"
+  },
+  {
+   "collection": "symbols",
+   "id": "cube-root",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "im"
@@ -6859,6 +6950,17 @@
   },
   {
    "collection": "symbols",
+   "id": "hyperbolic-functions-notation",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "references": [
+    "openstax:Calculus Volume 2"
+   ],
+   "wording": "of the Hyperbolic Functions",
+   "found": "yes"
+  },
+  {
+   "collection": "symbols",
    "id": "identity-matrix-i",
    "confidence": "verified",
    "field": "sources[1].note",
@@ -7103,7 +7205,18 @@
    "collection": "symbols",
    "id": "inverse-cosine-notation",
    "confidence": "verified",
-   "field": "sources[3].note",
+   "field": "sources[1].note",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "Derivatives of Inverse Functions",
+   "found": "yes"
+  },
+  {
+   "collection": "symbols",
+   "id": "inverse-cosine-notation",
+   "confidence": "verified",
+   "field": "sources[2].note",
    "references": [
     "openstax:Precalculus"
    ],
@@ -7114,7 +7227,7 @@
    "collection": "symbols",
    "id": "inverse-cosine-notation",
    "confidence": "verified",
-   "field": "sources[3].note",
+   "field": "sources[2].note",
    "references": [
     "openstax:Precalculus"
    ],
@@ -7125,7 +7238,7 @@
    "collection": "symbols",
    "id": "inverse-cosine-notation",
    "confidence": "verified",
-   "field": "sources[4].note",
+   "field": "sources[3].note",
    "references": [
     "im"
    ],
@@ -9568,7 +9681,7 @@
   {
    "collection": "symbols",
    "id": "tangent-of-theta",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "notes[1]",
    "references": [
     "im"
@@ -9579,7 +9692,7 @@
   {
    "collection": "symbols",
    "id": "tangent-of-theta",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "notes[1]",
    "references": [
     "openstax:Precalculus"
@@ -9590,7 +9703,7 @@
   {
    "collection": "symbols",
    "id": "tangent-of-theta",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "openstax:Precalculus"
@@ -10446,9 +10559,70 @@
    "confidence": "verified",
    "field": "mapping_note",
    "references": [
-    "ck12"
+    "ck12",
+    "im"
    ],
    "wording": "Triangle Angle Sum Theorem",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "angle-sum-of-a-triangle",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "ck12",
+    "im"
+   ],
+   "wording": "triangle sum theorem",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "angle-sum-of-a-triangle",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "ck12",
+    "im"
+   ],
+   "wording": "One Hundred and Eighty",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "angle-sum-of-a-triangle",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "ck12",
+    "im"
+   ],
+   "wording": "Triangle Angle Sum Theorem",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "angle-sum-of-a-triangle",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "references": [
+    "im",
+    "openstax:Prealgebra"
+   ],
+   "wording": "the sum of the angles in a triangle",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "angle-sum-of-a-triangle",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "references": [
+    "im",
+    "openstax:Prealgebra"
+   ],
+   "wording": "sum of the angles",
    "found": "yes"
   },
   {
@@ -10471,6 +10645,61 @@
     "ck12"
    ],
    "wording": "Exterior Angles and Theorems",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "angle-sum-of-a-triangle",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "im"
+   ],
+   "wording": "One Hundred and Eighty",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "angle-sum-of-a-triangle",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "im"
+   ],
+   "wording": "Triangle Angle Sum Theorem",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "angle-sum-of-a-triangle",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "references": [
+    "openstax:Prealgebra"
+   ],
+   "wording": "Use Properties of Angles, Triangles, and the Pythagorean Theorem",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "angle-sum-of-a-triangle",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "references": [
+    "im"
+   ],
+   "wording": "Parallel Lines and the Angles in a Triangle",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "angle-sum-of-a-triangle",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "references": [
+    "im"
+   ],
+   "wording": "the sum of the angles in a triangle is always",
    "found": "yes"
   },
   {
@@ -10880,6 +11109,94 @@
     "im"
    ],
    "wording": "Formula for the Area of a Triangle",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "area-under-the-curve",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "The Definite Integral",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "area-under-the-curve",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "area under the curve",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "area-under-the-curve",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "net signed area",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "area-under-the-curve",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "the negative of the area under the curve",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "area-under-the-curve",
+   "confidence": "verified",
+   "field": "sources[0].note",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "The Definite Integral",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "area-under-the-curve",
+   "confidence": "verified",
+   "field": "sources[0].note",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "net signed area",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "area-under-the-curve",
+   "confidence": "verified",
+   "field": "sources[0].note",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "Integrals, Exponential Functions, and Logarithms",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "area-under-the-curve",
+   "confidence": "verified",
+   "field": "sources[0].note",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "the negative of the area under the curve",
    "found": "yes"
   },
   {
@@ -11372,7 +11689,7 @@
   {
    "collection": "terms",
    "id": "be-inscribed-in",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "pitfalls[2]",
    "references": [
     "ck12",
@@ -11384,7 +11701,7 @@
   {
    "collection": "terms",
    "id": "be-inscribed-in",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "sources[2].note",
    "references": [
     "im"
@@ -11395,7 +11712,7 @@
   {
    "collection": "terms",
    "id": "be-inscribed-in",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "sources[2].note",
    "references": [
     "im"
@@ -11406,7 +11723,7 @@
   {
    "collection": "terms",
    "id": "be-inscribed-in",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "sources[3].note",
    "references": [
     "ck12"
@@ -11417,7 +11734,7 @@
   {
    "collection": "terms",
    "id": "be-inscribed-in",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "sources[3].note",
    "references": [
     "ck12"
@@ -11712,6 +12029,28 @@
     "im"
    ],
    "wording": "center of dilation",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "center-of-dilation",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "im"
+   ],
+   "wording": "center of a dilation",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "center-of-dilation",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "im"
+   ],
+   "wording": "Are you ready for more",
    "found": "yes"
   },
   {
@@ -12365,6 +12704,63 @@
     "openstax:Prealgebra"
    ],
    "wording": "commutative property of addition",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "compare-coefficients",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "references": [
+    "openstax:Calculus Volume 2",
+    "openstax:Precalculus"
+   ],
+   "wording": "method of equating coefficients",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "compare-coefficients",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "references": [
+    "openstax:Calculus Volume 2",
+    "openstax:Precalculus"
+   ],
+   "wording": "compare the coefficients of both sides",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "compare-coefficients",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "openstax:Calculus Volume 2"
+   ],
+   "wording": "method of equating coefficients",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "compare-coefficients",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "references": [
+    "openstax:Precalculus"
+   ],
+   "wording": "compare the coefficients of both sides",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "compare-coefficients",
+   "confidence": "verified",
+   "field": "sources[5].note",
+   "references": [
+    "openstax:Algebra and Trigonometry"
+   ],
+   "wording": "compare the coefficients of both sides",
    "found": "yes"
   },
   {
@@ -14115,7 +14511,7 @@
   {
    "collection": "terms",
    "id": "derivative-of-a-parametric-curve",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "ced:calc"
@@ -14126,7 +14522,7 @@
   {
    "collection": "terms",
    "id": "derivative-of-a-parametric-curve",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "ced:calc"
@@ -14941,6 +15337,28 @@
     "nicholson"
    ],
    "wording": "Diagonalization and Eigenvalues",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "element",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "Review of Functions",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "element",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "x is an element of A",
    "found": "yes"
   },
   {
@@ -18018,6 +18436,17 @@
   },
   {
    "collection": "terms",
+   "id": "integration-by-substitution",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "the substitution rule for indefinite integrals",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
    "id": "integration-formulas",
    "confidence": "verified",
    "field": "pitfalls[0]",
@@ -18663,7 +19092,7 @@
   {
    "collection": "terms",
    "id": "left-riemann-sum",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "pitfalls[0]",
    "references": [
     "ced"
@@ -18674,7 +19103,7 @@
   {
    "collection": "terms",
    "id": "left-riemann-sum",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "ced:calc"
@@ -18685,7 +19114,7 @@
   {
    "collection": "terms",
    "id": "left-riemann-sum",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "ced:calc"
@@ -18889,6 +19318,17 @@
     "ced:calc"
    ],
    "wording": "limit of a Riemann sum",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "limit-of-a-riemann-sum",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "The Definite Integral",
    "found": "yes"
   },
   {
@@ -19509,23 +19949,133 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "verified",
-   "field": "en.variants[1].note",
+   "confidence": "likely",
+   "field": "mapping_note",
    "references": [
-    "openstax:"
+    "openstax:Elementary Algebra"
    ],
-   "wording": "uniform motion problem",
+   "wording": "Solve Uniform Motion Applications",
    "found": "yes"
   },
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "mapping_note",
    "references": [
-    "openstax:"
+    "openstax:Elementary Algebra"
    ],
    "wording": "uniform motion applications",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "motion-problem",
+   "confidence": "likely",
+   "field": "mapping_note",
+   "references": [
+    "openstax:Elementary Algebra"
+   ],
+   "wording": "uniform motion problems",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "motion-problem",
+   "confidence": "likely",
+   "field": "pitfalls[1]",
+   "references": [
+    "openstax:Prealgebra"
+   ],
+   "wording": "the distance, rate, and time formula",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "motion-problem",
+   "confidence": "likely",
+   "field": "sources[0].note",
+   "references": [
+    "openstax:Elementary Algebra"
+   ],
+   "wording": "Solve Uniform Motion Applications",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "motion-problem",
+   "confidence": "likely",
+   "field": "sources[0].note",
+   "references": [
+    "openstax:Elementary Algebra"
+   ],
+   "wording": "Solve Uniform Motion and Work Applications",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "motion-problem",
+   "confidence": "likely",
+   "field": "sources[0].note",
+   "references": [
+    "openstax:Elementary Algebra"
+   ],
+   "wording": "uniform motion problems",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "motion-problem",
+   "confidence": "likely",
+   "field": "sources[1].note",
+   "references": [
+    "openstax:Intermediate Algebra"
+   ],
+   "wording": "Solve Mixture and Uniform Motion Applications",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "motion-problem",
+   "confidence": "likely",
+   "field": "sources[1].note",
+   "references": [
+    "openstax:Intermediate Algebra"
+   ],
+   "wording": "a uniform motion application",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "motion-problem",
+   "confidence": "likely",
+   "field": "sources[1].note",
+   "references": [
+    "openstax:Intermediate Algebra"
+   ],
+   "wording": "uniform motion problems",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "motion-problem",
+   "confidence": "likely",
+   "field": "sources[2].note",
+   "references": [
+    "ced:calc"
+   ],
+   "wording": "rectilinear motion problems",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "motion-problem",
+   "confidence": "likely",
+   "field": "sources[3].note",
+   "references": [
+    "openstax:Algebra and Trigonometry"
+   ],
+   "wording": "projectile motion problems",
    "found": "yes"
   },
   {
@@ -20519,6 +21069,28 @@
     "nicholson"
    ],
    "wording": "Orthogonal Complements and Projections",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "orthographic-projection",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "references": [
+    "im"
+   ],
+   "wording": "Units in Scale Drawings",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "orthographic-projection",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "references": [
+    "im"
+   ],
+   "wording": "Applying Volume and Surface Area",
    "found": "yes"
   },
   {
@@ -23485,7 +24057,7 @@
   {
    "collection": "terms",
    "id": "right-riemann-sum",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "ced:calc"
@@ -23496,7 +24068,7 @@
   {
    "collection": "terms",
    "id": "right-riemann-sum",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "ced:calc"
@@ -26978,7 +27550,52 @@
   {
    "collection": "terms",
    "id": "trigonometric-ratio",
-   "confidence": "likely",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "im",
+    "openstax:Calculus"
+   ],
+   "wording": "The Pythagorean Identity (Part",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-ratio",
+   "confidence": "verified",
+   "field": "sources[0].note",
+   "references": [
+    "openstax:Calculus Volume 2"
+   ],
+   "wording": "the trigonometric ratios produced from the reference triangle",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-ratio",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "openstax:Calculus Volume 3"
+   ],
+   "wording": "Vectors in the Plane",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-ratio",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "openstax:Calculus Volume 3"
+   ],
+   "wording": "Use trigonometric ratios",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-ratio",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "im"
@@ -26989,7 +27606,7 @@
   {
    "collection": "terms",
    "id": "trigonometric-ratio",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "im"
@@ -27000,12 +27617,45 @@
   {
    "collection": "terms",
    "id": "trigonometric-ratio",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[4].note",
    "references": [
     "openstax:Precalculus"
    ],
    "wording": "Sine and Cosine Functions",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-ratio",
+   "confidence": "verified",
+   "field": "sources[6].note",
+   "references": [
+    "im"
+   ],
+   "wording": "The Pythagorean Identity (Part",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-ratio",
+   "confidence": "verified",
+   "field": "sources[6].note",
+   "references": [
+    "im"
+   ],
+   "wording": "the two missing trigonometric ratios",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-ratio",
+   "confidence": "verified",
+   "field": "sources[7].note",
+   "references": [
+    "ck12"
+   ],
+   "wording": "sides and angles of right triangles",
    "found": "yes"
   },
   {

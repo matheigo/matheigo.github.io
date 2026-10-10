@@ -4,38 +4,56 @@
 
 ## T1a. mapping exact で、エントリ自身の文が日本語と英語の範囲の違いを書いている
 
-- 行: **28**（verified 20・likely 8）。抜き取りで見つけた例: expression（「式」は等式・不等式も指す）・trigonometric-ratio（三角比は鈍角まで）。範囲が違うなら mapping near（CLAUDE.md 規則 5。兄弟の equation・algebraic-expression は near）。言い方だけの注意なら exact のまま
+- 行: **46**（verified 34・likely 12）。抜き取りで見つけた例: expression（「式」は等式・不等式も指す）・trigonometric-ratio（三角比は鈍角まで）、第 2 回: write-an-equation（等号を含むなら equation、含まないなら expression）・be-inscribed-in（inscribed in は多角形と円にだけ）。範囲が違うなら mapping near（CLAUDE.md 規則 5。兄弟の equation・algebraic-expression は near）。言い方だけの注意なら exact のまま
 
 | id | confidence | 欄 | 文 |
 |---|---|---|---|
 | alternate-interior-angles | verified | pitfalls[0] | 英語では外側の組 alternate exterior angles（エントリ alternate-exterior-angles）と区別するため interior を付ける。 |
+| angle-addition-formulas | verified | pitfalls[4] | 日本語版 Wikipedia「加法定理」はどちらも加法定理の例に挙げる。 |
+| binomial | verified | pitfalls[0] | 項が 1 つなら monomial（エントリ monomial）、3 つなら trinomial（エントリ trinomial）と、項の数で呼び名が変わる。 |
 | check | verified | pitfalls[0] | check は「チェックマークを付ける」「点検する」など意味が広い。 |
 | circle | verified | pitfalls[0] | 英語の circle は周の曲線だけを指し、内部を含む「円板」は disk（エントリ disk）。 |
+| circumference | verified | pitfalls[0] | 日本語は線（円周）と長さ（円周の長さ）を言い分けるが、英語はどちらも circumference で言う。 |
+| converse | verified | pitfalls[1] | 日常語の「逆」（反対）は opposite や reverse で、converse は命題の逆にだけ使う。 |
+| derivative | verified | pitfalls[0] | 日本語は「導関数」（関数）と「微分係数」（値）を呼び分けるが、英語はどちらも derivative と言い、値のときは the derivative at x = a（f prime of a）と言う。 |
 | differentiation | verified | pitfalls[0] | 日本語の「微分」は操作（differentiation）も結果の関数（derivative）も指す。 |
 | discontinuous | verified | pitfalls[0] | 不連続の種類は、英語では removable（除去可能）・jump（跳躍）・infinite（無限）と名前で呼び分ける。 |
+| displacement | verified | pitfalls[0] | 学習指導要領解説（数学III）は「位置の変化」と言い、「変位」は物理の項目にだけ出てくる。 |
 | edge | verified | pitfalls[0] | 英語では、多角形の辺は side（エントリ side）、立体の辺は edge と言い分ける。 |
 | exterior-angle | verified | definition_en | The angle formed outside a polygon by one side and the extension of the side next to it. At each vertex, the interior angle and the exterior angle add up to 180… |
 | infinite-geometric-sequence | verified | pitfalls[0] | 英語では sequence（数列）と series（級数）を区別する。 |
 | integration | verified | pitfalls[0] | 日本語の「積分」は操作にも式にも使うが、英語では操作は integration、∫ で書かれた式そのものは an integral と言い分ける（take the integral ／ this integral diverges）。 |
+| limit | verified | pitfalls[0] | 日本語は値を「極限値」、考え方や操作を「極限」と言い分けるが、英語はどちらも limit。 |
 | line | verified | pitfalls[0] | 英語の line は両方向に限りなくのびる直線だけを指す。 |
 | line | verified | pitfalls[2] | 日本語の「線」は曲線も含むが、英語の line はまっすぐな線。 |
+| linear-equation | verified | pitfalls[1] | 未知数が 1 つなら linear equation in one variable、2 つ（二元一次方程式）なら linear equation in two variables と言い分ける。 |
+| measure | verified | pitfalls[1] | 道具は、長さなら ruler（定規・ものさし）、角なら protractor（分度器）。 |
+| negation | verified | pitfalls[0] | 共通テスト（平成 27 年度 数学I 第1問）は条件 p の否定を p̄ と上線で書き、記号 ¬ は、高等学校学習指導要領解説では理数に関する学科の科目「理数数学I」の発展・拡充の内容（真理値表を用いて、命題「p → q」の否定が「p ∧ (¬q)」であること）にだけ出てくる。 |
+| parabola | verified | pitfalls[1] | a > 0 なら opens upward（日本語の「下に凸」）、a < 0 なら opens downward（「上に凸」）。 |
 | phase-shift | verified | pitfalls[3] | Algebra and Trigonometry の phase shift C/B はずれの量そのもので、数の意味が違う。 |
 | point-of-intersection | verified | pitfalls[1] | 英語では接する場合も point of intersection と言うか、the graph touches the x-axis（x 軸に接する）と言い分ける。 |
+| ray | verified | pitfalls[1] | 端点が 2 つなら line segment（エントリ segment）、1 つなら ray、端点がなく両方向にのびるなら line（エントリ line）。 |
+| relatively-prime | verified | pitfalls[1] | 英語版 Wikipedia「Coprime integers」は setwise coprime と pairwise coprime、日本語版 Wikipedia「互いに素 (整数論)」は「互いに素」と「対ごとに素」と呼び分ける。 |
 | square-root-of-a-number | verified | pitfalls[3] | 英語の the square root of 49 は √49 = 7 だけを指す。 |
 | supplementary-angle | verified | definition_en | Two angles are supplementary when their measures add up to 180°; the supplement of an angle θ is 180° − θ. |
 | triangle | verified | definition_en | A polygon with three sides, formed by joining three points that do not lie on one line; its three interior angles add up to 180°. |
 | triangle-inequality | verified | pitfalls[0] | 英語の triangle inequality は \|a + b\| ≦ \|a\| + \|b\| と三角形の辺の不等式だけ。 |
+| trinomial | verified | pitfalls[0] | 項が 1 つなら monomial（エントリ monomial）、2 つなら binomial（エントリ binomial）。 |
 | unit-circle | verified | pitfalls[0] | 高等学校学習指導要領解説（数学I 図形と計量）は単位円を使わず、座標平面の第 1 象限で原点を端点とする長さ α の線分 OP と点 P の座標 (α cos θ, α sin θ) で三角比を鈍角まで拡張する。 |
 | vertex | verified | pitfalls[1] | グラフ理論（点と辺のグラフ）の頂点も vertex だが、意味が違うので別のエントリ（頂点（グラフ））にした。 |
 | x-intercept | verified | pitfalls[0] | 日本語の「交点」は点 (3, 0) で答えるが、英語の x-intercept は x 座標の 3 だけを指すこともある。 |
 | dynamical-system | likely | pitfalls[0] | 日本語の「力学系」は微分方程式で表す連続の系も含む。 |
+| generating-function | likely | pitfalls[0] | 日本語では「母関数」と「生成関数」の 2 つの名前があるが、英語はどちらも generating function。 |
 | gradient | likely | pitfalls[1] | 日本語の「勾配」は直線の傾き（slope）の意味でも使うが、英語の gradient は多変数の勾配ベクトルを指す。 |
 | identity-matrix | likely | definition_en | The square matrix with 1s on the main diagonal and 0s elsewhere, written E in Japanese textbooks and I in US ones. |
 | minor-arc | likely | pitfalls[0] | 英語では 2 文字の arc AB が劣弧を指し、優弧は 3 文字（arc ACB）で書いて区別する。 |
+| planar-graph | likely | pitfalls[0] | 日本語の本によっては、交差なくかけるグラフを「平面的グラフ」、交差なくかいた図そのものを「平面グラフ」と呼び分ける。 |
 | proof-by-cases | likely | pitfalls[1] | 日本語の「場合分け」は証明だけでなく、絶対値を外す計算や不等式の解法にも使うが、この見出しは証明の方法の名前。 |
 | quantifier | likely | pitfalls[1] | ∀x ∃y と ∃y ∀x は意味が違う。 |
 | tautology | likely | pitfalls[0] | 日常英語の tautology は「同じことを言い換えて繰り返すだけの言い方（同語反復）」の意味で使う。 |
+| transitive-property | likely | pitfalls[1] | 米国の Geometry の証明では、等式なら transitive property of equality、合同なら transitive property of congruence と対象を付けて書く。 |
 | treatment | likely | pitfalls[0] | 日本語の「処理」はデータの処理の意味でも使うが、英語の treatment は実験の処理（与える条件）。 |
+| vector-projection | likely | pitfalls[1] | 用例コーパスでは書き言葉（OpenStax Calculus Volume 3）にだけ出てくる。 |
 
 ## T1b. mapping none の語（日本語の名前が日本側の資料にあるか）
 
@@ -134,9 +152,22 @@
 | sine-of-theta | verified | !the !inverse !arc sine of * | 931 | hyperbolic sine of | 1 | sine theta \| sine x \| sine alpha \| sine two x 418、the sine of * 126 |
 | sine-of-theta | verified | !the !inverse !arc sine of * | 931 | second sine of | 1 | sine theta \| sine x \| sine alpha \| sine two x 418、the sine of * 126 |
 
+## T7. 見出しの語を書き言葉のコーパスが、もっと長い言い方の先頭としてばかり使う（第 2 回）
+
+- 行: **6**（verified 6・likely 0）（verified の terms で、書き言葉の生の件数が 5 以上、うち 6 割以上が直後に problem ／ application ／ method ／ theorem ／ rule ／ formula ／ function ／ equation ／ test ／ property ／ law ／ identity ／ sum ／ notation の語を伴うもの）。第 2 回で見つけた例: motion-problem（uniform motion の書き言葉はすべて uniform motion applications ／ problems の内側で、見出しが運動の名前になっていた → uniform motion problem）。見出しが単独の概念（the derivative、the product rule の product）として使われる語も混じるので、`pnpm corpus:probe -- --contexts "<見出し>"` で読んで決める
+
+| id | confidence | 見出し | 書き言葉の件数 | 長い言い方の内側 | 直後の語 |
+|---|---|---|---|---|---|
+| arctangent | verified | inverse tangent | 15 | 10 | function 10 |
+| differential | verified | differential | 713 | 622 | equation 619、function 2、notation 1 |
+| divisibility | verified | divisibility | 33 | 21 | test 20、rule 1 |
+| net-change | verified | net change | 23 | 16 | theorem 16 |
+| number-of-elements | verified | cardinality | 34 | 22 | rule 22 |
+| squeeze | verified | squeeze | 17 | 13 | theorem 13 |
+
 ## T5. likely の根拠が Math Stack Exchange だけのフレーズ（MICASE の学生の発話は 3 件未満）
 
-- フレーズ: **46**（verified 45・likely 1）、うち DECISIONS に抜粋を読んだ記録が見当たらないもの **38**（verified 38・likely 0）。抜き取りで見つけた例: class-asking-another-example（do another example は質問者が自分で例を挙げる文）・office-hours-do-you-have-a-minute（have a minute 3 件のうち頼む文は 2 件）。内蔵ブラウザで `https://math.stackexchange.com/search?q=%22<要の部分>%22+is%3Aquestion` の抜粋（と質問の本文）を読み、意図を運ぶ文が 3 件に届かなければ MSE_SKIP と監査 13 の前の決定 1（MICASE に 3 件なければ人間レビュー）
+- フレーズ: **46**（verified 45・likely 1）、うち DECISIONS に抜粋を読んだ記録が見当たらないもの **37**（verified 37・likely 0）。抜き取りで見つけた例: class-asking-another-example（do another example は質問者が自分で例を挙げる文）・office-hours-do-you-have-a-minute（have a minute 3 件のうち頼む文は 2 件）。内蔵ブラウザで `https://math.stackexchange.com/search?q=%22<要の部分>%22+is%3Aquestion` の抜粋（と質問の本文）を読み、意図を運ぶ文が 3 件に届かなければ MSE_SKIP と監査 13 の前の決定 1（MICASE に 3 件なければ人間レビュー）
 
 | id | confidence | 抜粋 | en | flag の note（MSE の部分） |
 |---|---|---|---|---|
@@ -175,7 +206,7 @@
 | office-hours-am-i-on-the-right-track | verified | 読む | Am I on the right track? | 最も多い要の部分 on the right track \| in the right direction \| right direction（4350 件。3 件以上）なので使われている。en の要の部分 on the right track \| in the right… |
 | office-hours-can-i-come-back | verified | 読む | Can I come back if I get stuck again? | 最も多い要の部分 can i come back \| could i come back \| if i come back \| come back later \| come back tomorrow \| come back next week \| stop by again \|… |
 | office-hours-can-i-show-you-what-i-tried | verified | 読む | Can I show you what I tried? | 最も多い要の部分 what i have so far \| what i've got so far \| what i got so far \| so far i have \| so far i've（12929 件。3 件以上）なので使われている。en の要の部分 show… |
-| office-hours-english-terms-are-new | verified | 読む | I learned this in Japanese, so I'm still getting used to the English terms. | 最も多い要の部分 the english terms \| english terms \| used to the english（43 件。3 件以上）なので使われている。en の要の部分 the english terms \| english terms \| used to… |
+| office-hours-english-terms-are-new | verified | 記録あり | I learned this in Japanese, so I'm still getting used to the English terms. | 最も多い要の部分 the english terms \| english terms \| used to the english（43 件。3 件以上）なので使われている。en の要の部分 the english terms \| english terms \| used to… |
 | office-hours-extra-practice | verified | 記録あり | Do you have any old exams I could practice with? | 最も多い要の部分 any practice problems \| any extra problems \| more practice problems \| extra practice problems \| any extra practice（14 件。3 件以上）なので使わ… |
 | office-hours-hint-not-the-answer | verified | 読む | Could you give me a hint instead of the answer? | 最も多い要の部分 a hint \| any hints \| a little hint \| some hints（42142 件。3 件以上）なので使われている。en の要の部分 a hint \| any hints \| a little hint \| some hints も… |
 | office-hours-intuition | verified | 読む | I can follow the algebra, but I don't get the intuition behind it. | 最も多い要の部分 the intuition behind \| intuition behind \| the intuition for \| don't get the intuition（6203 件。3 件以上）なので使われている。en の要の部分 the… |
@@ -189,7 +220,7 @@
 
 ## T6. 日本側の手元の資料に 0 件の ja.alt（小さな直しの型）
 
-- 行: **196**（verified 97・likely 98）。抜き取りで見つけた例: local-maximum の「相対最大値」（日本語版 Wikipedia「最大と最小」は「相対的最大値」）、derivative-of-a-parametric-curve の「媒介変数曲線の微分」、limit-of-a-riemann-sum の「定積分と和の極限」、coin の「表（硬貨）」（硬貨の言い換えではない）。手元に無い記事は `python3 scripts/audit/jawiki.py --search <語>` で確かめてから、資料の言い方にするか外す（監査 7 の前の決定 4。言い換えでない台帳の統合の名残も外す）
+- 行: **186**（verified 87・likely 98）。抜き取りで見つけた例: local-maximum の「相対最大値」（日本語版 Wikipedia「最大と最小」は「相対的最大値」）、derivative-of-a-parametric-curve の「媒介変数曲線の微分」、limit-of-a-riemann-sum の「定積分と和の極限」、coin の「表（硬貨）」（硬貨の言い換えではない）。手元に無い記事は `python3 scripts/audit/jawiki.py --search <語>` で確かめてから、資料の言い方にするか外す（監査 7 の前の決定 4。言い換えでない台帳の統合の名残も外す）
 
 | id | confidence | ja.alt |
 |---|---|---|
@@ -203,18 +234,14 @@
 | area-between-two-curves | verified | 曲線間の面積 |
 | area-between-two-curves | verified | 曲線で囲まれた面積 |
 | area-between-two-curves | verified | 放物線と直線で囲まれた面積 |
-| ascending-order | verified | 昇冪の順 |
 | be-skewed | verified | 右に歪んだ |
 | be-skewed | verified | 分布が偏る |
 | change-together | verified | y が x に伴って変わる |
 | check | verified | 解の確かめ |
 | checking-whether-the-solution-makes-sense | verified | 解の吟味をする |
 | clear-the-denominators | verified | 係数を整数にする |
-| collinear | verified | 共線の点 |
-| combine-like-terms | verified | 同類項をまとめる計算 |
 | compare | verified | 大小を比較する |
 | compare-coefficients | verified | 係数を比べる |
-| compare-coefficients | verified | 係数比較法 |
 | concyclic | verified | 4 点が同一円周上にある |
 | conditional-statement | verified | 「p ならば q」の形の命題 |
 | congruence-modulo-n | verified | 〜を法として合同 |
@@ -225,7 +252,6 @@
 | difference-of-squares | verified | 二乗の差 |
 | differentiate-both-sides | verified | 両辺を x で微分する |
 | direct-proportion | verified | 〜に比例する |
-| distribute | verified | 分配して展開する |
 | dividend | verified | 割られる数 |
 | epsilon-delta-definition | verified | 極限の厳密な定義 |
 | exponential-model | verified | 指数増加・減衰のモデル |
@@ -239,8 +265,6 @@
 | inscribed-angle | verified | 内接角 |
 | integrals-of-even-and-odd-functions | verified | 偶関数の定積分 |
 | integrals-of-even-and-odd-functions | verified | 奇関数の定積分 |
-| integration-by-substitution | verified | u 置換 |
-| integration-by-substitution | verified | 置換法則 |
 | inverse-proportion | verified | 〜に反比例する |
 | inverse-proportion | verified | 逆変化 |
 | less-than | verified | 〜より小さい |
@@ -257,7 +281,6 @@
 | parametric-equations | verified | 媒介変数方程式 |
 | parentheses | verified | 丸かっこ |
 | partial-fraction-decomposition | verified | 部分分数による積分 |
-| perimeter | verified | 周囲の長さ |
 | perpendicular-lines | verified | 垂直な 2 直線 |
 | plot-a-point | verified | 点をとる操作 |
 | power-rule | verified | べき乗則 |
@@ -278,7 +301,6 @@
 | squeeze-theorem | verified | はさみうちの定理 |
 | stretch-vertically | verified | y 軸方向に拡大・縮小する |
 | sum-to-product-formulas | verified | 和を積に直す公式 |
-| summation-notation | verified | シグマ記法での和 |
 | survey | verified | 質問票 |
 | system-of-linear-equations | verified | 線形方程式系 |
 | system-of-linear-equations | verified | 連立 1 次方程式 |
@@ -287,7 +309,6 @@
 | transformation-of-a-variable | verified | データの変換 |
 | trapezoidal-rule | verified | 台形則 |
 | work-backwards | verified | 逆演算で解く |
-| write-an-equation | verified | 文字を使って表す |
 | zero-product-property | verified | 零積の性質 |
 | zero-product-property | verified | 零因子の性質 |
 | adjugate | likely | 古典随伴行列 |

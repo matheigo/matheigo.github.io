@@ -1,9 +1,9 @@
 {
- "rows": 342,
+ "rows": 345,
  "status": {
-  "checked A": 63,
+  "checked A": 65,
   "checked B": 26,
-  "ok": 253
+  "ok": 254
  },
  "verifiedToRead": 0,
  "list": [
@@ -539,6 +539,20 @@
   },
   {
    "collection": "terms",
+   "id": "composite-number",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "subjects": [
+    "数学A"
+   ],
+   "status": "checked A",
+   "sentence": "「合成数」は出てこない（数学A 数学と人間の活動は素数・素因数分解を扱う。level.jp 数A は素数の対概念として）",
+   "hits": {
+    "合成数": {}
+   }
+  },
+  {
+   "collection": "terms",
    "id": "conditional-statement",
    "confidence": "verified",
    "field": "mapping_note",
@@ -630,6 +644,20 @@
    "hits": {
     "確率の加法定理": {},
     "和事象の確率": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "implicit-function",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "checked A",
+   "sentence": "「陰関数」は出てこない（数学III 微分法は合成関数の導関数まで。level.jp 数III はその応用として。DECISIONS）",
+   "hits": {
+    "陰関数": {}
    }
   },
   {
@@ -1182,7 +1210,7 @@
   {
    "collection": "terms",
    "id": "derivative-of-a-parametric-curve",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "subjects": [
     "数学III"
@@ -1196,7 +1224,7 @@
   {
    "collection": "terms",
    "id": "derivative-of-a-parametric-curve",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "subjects": [
     "数学III"
@@ -1210,7 +1238,7 @@
   {
    "collection": "terms",
    "id": "disk-method",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "subjects": [
     "数学III"
@@ -1224,7 +1252,7 @@
   {
    "collection": "terms",
    "id": "disk-method",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "subjects": [
     "数学III"
@@ -3372,6 +3400,37 @@
     "P_A": {},
     "P_B": {},
     "p.94": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "acute-angle",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "subjects": [
+    "数学I"
+   ],
+   "status": "ok",
+   "sentence": "数学I 図形と計量: 鋭角の三角比（level.jp 数I）",
+   "hits": {
+    "図形と計量": {
+     "前付": 1,
+     "数学編 総説": 4,
+     "数学I": 10,
+     "数学II": 1,
+     "数学C": 2,
+     "数学編 第3章": 3,
+     "理数編 総説": 2,
+     "理数数学I": 4,
+     "付録 数学I": 3,
+     "付録 理数数学I": 1
+    },
+    "鋭角の三角比": {
+     "数学編 総説": 1,
+     "数学I": 8,
+     "付録 数学I": 2
+    },
+    "level.jp数I": {}
    }
   },
   {
@@ -5642,9 +5701,7 @@
     "置換積分": {
      "数学III": 5,
      "付録 数学III": 2
-    },
-    "u置換": {},
-    "置換法則": {}
+    }
    }
   },
   {
@@ -8131,7 +8188,7 @@
   {
    "collection": "terms",
    "id": "trigonometric-ratio",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "pitfalls[2]",
    "subjects": [
     "数学I",
@@ -8154,7 +8211,7 @@
   {
    "collection": "terms",
    "id": "trigonometric-ratio",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "subjects": [
     "数学I",

@@ -1,9 +1,9 @@
 {
- "rows": 219,
+ "rows": 230,
  "status": {
-  "checked A": 57,
-  "checked B": 100,
-  "語 0": 62
+  "checked A": 59,
+  "checked B": 103,
+  "語 0": 68
  },
  "toRead": 0,
  "entriesToRead": 0,
@@ -507,6 +507,23 @@
   },
   {
    "collection": "terms",
+   "id": "expression",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "日本語の「式」は等式や不等式も指す（中学校学習指導要領解説（第 1 学年）は、数量の関係を表す式を等式または不等式に表すとし、日本語版 Wikipedia「等式」は等式を相等関係を表す数式とする）が、英語の expression は等号を含まないもの（3x + 2）だけ。",
+   "keys": {
+    "英語のexpressionは等号": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
    "id": "factored-form",
    "confidence": "verified",
    "field": "sources[3].note",
@@ -860,6 +877,23 @@
     "除去可能な不連続": {}
    },
    "fallback": true,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "same-side-interior-angles",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "中学校学習指導要領解説（第 2 学年 B 図形）は平行線の性質として同位角・錯角を挙げ、「同側内角」は出てこない（日本語版 Wikipedia にも無い）。",
+   "keys": {
+    "同側内角": {}
+   },
+   "fallback": false,
    "paraphrases": {}
   },
   {
@@ -2028,8 +2062,7 @@
    "keys": {
     "係数を比較する": {},
     "係数を比べる": {},
-    "係数比較": {},
-    "係数比較法": {}
+    "係数比較": {}
    },
    "fallback": true,
    "paraphrases": {
@@ -2265,6 +2298,51 @@
    },
    "fallback": true,
    "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "disk-method",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "学習指導要領解説（数学III）には、回転体の体積の求め方の名前が出てこない。",
+   "keys": {
+    "円板法": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "回転させて": {
+     "高 数学III": 1,
+     "高 数学C": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "disk-method",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "数学III: 回転体の体積の求め方の名前が出てこない・「円板法」は出てこない",
+   "keys": {
+    "円板法": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "回転させて": {
+     "高 数学III": 1,
+     "高 数学C": 1
+    }
+   }
   },
   {
    "collection": "terms",
@@ -2589,6 +2667,33 @@
     "自然対数": {
      "高 数学III": 3,
      "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "left-riemann-sum",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "区分求積法の和 Σ_{k=0}^{n−1}（左端）と Σ_{k=1}^{n}（右端）の名前は学習指導要領解説に出てこないが、AP の CED（topic 6.2）は left ／ right ／ midpoint Riemann sums と trapezoidal sums に名前を付けて比べる（解説で台形公式に触れるのは、理数に関する学科の科目「理数数学II」の発展・拡充の例だけ）。",
+   "keys": {
+    "左リーマン和": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "台形公式": {
+     "高 理数数学II": 1
+    },
+    "区分求積": {
+     "高 数学II": 3,
+     "高 数学III": 1,
+     "高 理数数学II": 1
     }
    }
   },
@@ -3680,6 +3785,23 @@
   },
   {
    "collection": "terms",
+   "id": "composite-number",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「合成数」は出てこない（数学A 数学と人間の活動は素数・素因数分解を扱う。level.jp 数A は素数の対概念として）",
+   "keys": {
+    "合成数": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
    "id": "congruent-arcs",
    "confidence": "verified",
    "field": "pitfalls[3]",
@@ -3759,6 +3881,23 @@
    "sentence": "「単調に減少する」は出てこない",
    "keys": {
     "単調に減少する": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "derivative-of-a-parametric-curve",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「媒介変数表示された関数の微分」は出てこない。数学III (2) 微分法: 平面上を運動する点の座標 x = f(t), y = g(t) と速度 (f′(t), g′(t))。(3) 積分法: 媒介変数表示された曲線の長さ",
+   "keys": {
+    "媒介変数表示された関数の微分": {}
    },
    "fallback": false,
    "paraphrases": {}
@@ -3973,6 +4112,23 @@
   },
   {
    "collection": "terms",
+   "id": "implicit-function",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「陰関数」は出てこない（数学III 微分法は合成関数の導関数まで。level.jp 数III はその応用として。DECISIONS）",
+   "keys": {
+    "陰関数": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
    "id": "improper-integral",
    "confidence": "verified",
    "field": "pitfalls[1]",
@@ -4110,6 +4266,32 @@
    },
    "fallback": false,
    "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "left-riemann-sum",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「左リーマン和」は出てこない",
+   "keys": {
+    "左リーマン和": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "台形公式": {
+     "高 理数数学II": 1
+    },
+    "区分求積": {
+     "高 数学II": 3,
+     "高 数学III": 1,
+     "高 理数数学II": 1
+    }
+   }
   },
   {
    "collection": "terms",
@@ -4342,6 +4524,40 @@
   },
   {
    "collection": "terms",
+   "id": "right-riemann-sum",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「右リーマン和」は出てこない",
+   "keys": {
+    "右リーマン和": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "same-side-interior-angles",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "第 2 学年 B 図形: 平行線の性質（同位角・錯角。「同側内角」は出てこない）",
+   "keys": {
+    "同側内角": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
    "id": "secant-line",
    "confidence": "verified",
    "field": "mapping_note",
@@ -4497,7 +4713,7 @@
    ],
    "kind": "語",
    "status": "語 0",
-   "sentence": "中学校学習指導要領解説はこの内容を「平行線と線分の比についての性質」と呼び、「三角形と比の定理」は出てこない（見出しは本プロジェクトの言い方）。",
+   "sentence": "中学校学習指導要領解説はこの内容を「平行線と線分の比についての性質」と呼び、「三角形と比の定理」は出てこない（日本語版 Wikipedia「六円定理」はこの名前で使う）。",
    "keys": {
     "三角形と比の定理": {}
    },

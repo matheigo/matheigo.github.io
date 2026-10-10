@@ -8,6 +8,18 @@
    "text": "英語では外側の組 alternate exterior angles（エントリ alternate-exterior-angles）と区別するため interior を付ける。"
   },
   {
+   "id": "angle-addition-formulas",
+   "confidence": "verified",
+   "field": "pitfalls[4]",
+   "text": "日本語版 Wikipedia「加法定理」はどちらも加法定理の例に挙げる。"
+  },
+  {
+   "id": "binomial",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "項が 1 つなら monomial（エントリ monomial）、3 つなら trinomial（エントリ trinomial）と、項の数で呼び名が変わる。"
+  },
+  {
    "id": "check",
    "confidence": "verified",
    "field": "pitfalls[0]",
@@ -20,6 +32,24 @@
    "text": "英語の circle は周の曲線だけを指し、内部を含む「円板」は disk（エントリ disk）。"
   },
   {
+   "id": "circumference",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "日本語は線（円周）と長さ（円周の長さ）を言い分けるが、英語はどちらも circumference で言う。"
+  },
+  {
+   "id": "converse",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "text": "日常語の「逆」（反対）は opposite や reverse で、converse は命題の逆にだけ使う。"
+  },
+  {
+   "id": "derivative",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "日本語は「導関数」（関数）と「微分係数」（値）を呼び分けるが、英語はどちらも derivative と言い、値のときは the derivative at x = a（f prime of a）と言う。"
+  },
+  {
    "id": "differentiation",
    "confidence": "verified",
    "field": "pitfalls[0]",
@@ -30,6 +60,12 @@
    "confidence": "verified",
    "field": "pitfalls[0]",
    "text": "不連続の種類は、英語では removable（除去可能）・jump（跳躍）・infinite（無限）と名前で呼び分ける。"
+  },
+  {
+   "id": "displacement",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "学習指導要領解説（数学III）は「位置の変化」と言い、「変位」は物理の項目にだけ出てくる。"
   },
   {
    "id": "edge",
@@ -56,6 +92,12 @@
    "text": "日本語の「積分」は操作にも式にも使うが、英語では操作は integration、∫ で書かれた式そのものは an integral と言い分ける（take the integral ／ this integral diverges）。"
   },
   {
+   "id": "limit",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "日本語は値を「極限値」、考え方や操作を「極限」と言い分けるが、英語はどちらも limit。"
+  },
+  {
    "id": "line",
    "confidence": "verified",
    "field": "pitfalls[0]",
@@ -68,6 +110,30 @@
    "text": "日本語の「線」は曲線も含むが、英語の line はまっすぐな線。"
   },
   {
+   "id": "linear-equation",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "text": "未知数が 1 つなら linear equation in one variable、2 つ（二元一次方程式）なら linear equation in two variables と言い分ける。"
+  },
+  {
+   "id": "measure",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "text": "道具は、長さなら ruler（定規・ものさし）、角なら protractor（分度器）。"
+  },
+  {
+   "id": "negation",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "共通テスト（平成 27 年度 数学I 第1問）は条件 p の否定を p̄ と上線で書き、記号 ¬ は、高等学校学習指導要領解説では理数に関する学科の科目「理数数学I」の発展・拡充の内容（真理値表を用いて、命題「p → q」の否定が「p ∧ (¬q)」であること）にだけ出てくる。"
+  },
+  {
+   "id": "parabola",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "text": "a > 0 なら opens upward（日本語の「下に凸」）、a < 0 なら opens downward（「上に凸」）。"
+  },
+  {
    "id": "phase-shift",
    "confidence": "verified",
    "field": "pitfalls[3]",
@@ -78,6 +144,18 @@
    "confidence": "verified",
    "field": "pitfalls[1]",
    "text": "英語では接する場合も point of intersection と言うか、the graph touches the x-axis（x 軸に接する）と言い分ける。"
+  },
+  {
+   "id": "ray",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "text": "端点が 2 つなら line segment（エントリ segment）、1 つなら ray、端点がなく両方向にのびるなら line（エントリ line）。"
+  },
+  {
+   "id": "relatively-prime",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "text": "英語版 Wikipedia「Coprime integers」は setwise coprime と pairwise coprime、日本語版 Wikipedia「互いに素 (整数論)」は「互いに素」と「対ごとに素」と呼び分ける。"
   },
   {
    "id": "square-root-of-a-number",
@@ -104,6 +182,12 @@
    "text": "英語の triangle inequality は |a + b| ≦ |a| + |b| と三角形の辺の不等式だけ。"
   },
   {
+   "id": "trinomial",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "項が 1 つなら monomial（エントリ monomial）、2 つなら binomial（エントリ binomial）。"
+  },
+  {
    "id": "unit-circle",
    "confidence": "verified",
    "field": "pitfalls[0]",
@@ -128,6 +212,12 @@
    "text": "日本語の「力学系」は微分方程式で表す連続の系も含む。"
   },
   {
+   "id": "generating-function",
+   "confidence": "likely",
+   "field": "pitfalls[0]",
+   "text": "日本語では「母関数」と「生成関数」の 2 つの名前があるが、英語はどちらも generating function。"
+  },
+  {
    "id": "gradient",
    "confidence": "likely",
    "field": "pitfalls[1]",
@@ -144,6 +234,12 @@
    "confidence": "likely",
    "field": "pitfalls[0]",
    "text": "英語では 2 文字の arc AB が劣弧を指し、優弧は 3 文字（arc ACB）で書いて区別する。"
+  },
+  {
+   "id": "planar-graph",
+   "confidence": "likely",
+   "field": "pitfalls[0]",
+   "text": "日本語の本によっては、交差なくかけるグラフを「平面的グラフ」、交差なくかいた図そのものを「平面グラフ」と呼び分ける。"
   },
   {
    "id": "proof-by-cases",
@@ -164,10 +260,22 @@
    "text": "日常英語の tautology は「同じことを言い換えて繰り返すだけの言い方（同語反復）」の意味で使う。"
   },
   {
+   "id": "transitive-property",
+   "confidence": "likely",
+   "field": "pitfalls[1]",
+   "text": "米国の Geometry の証明では、等式なら transitive property of equality、合同なら transitive property of congruence と対象を付けて書く。"
+  },
+  {
    "id": "treatment",
    "confidence": "likely",
    "field": "pitfalls[0]",
    "text": "日本語の「処理」はデータの処理の意味でも使うが、英語の treatment は実験の処理（与える条件）。"
+  },
+  {
+   "id": "vector-projection",
+   "confidence": "likely",
+   "field": "pitfalls[1]",
+   "text": "用例コーパスでは書き言葉（OpenStax Calculus Volume 3）にだけ出てくる。"
   }
  ],
  "T1b": [
@@ -1019,7 +1127,7 @@
    "situation": "office-hours",
    "en": "I learned this in Japanese, so I'm still getting used to the English terms.",
    "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 the english terms | english terms | used to the english（43 件。3 件以上）なので使われている。en の要の部分 the english terms | english terms | used to the english も 43 件（3 件以上）なので en のまま。register は主張しない。",
-   "excerptsRead": false
+   "excerptsRead": true
   },
   {
    "id": "office-hours-extra-practice",
@@ -1154,11 +1262,6 @@
    "alt": "放物線と直線で囲まれた面積"
   },
   {
-   "id": "ascending-order",
-   "confidence": "verified",
-   "alt": "昇冪の順"
-  },
-  {
    "id": "be-skewed",
    "confidence": "verified",
    "alt": "右に歪んだ"
@@ -1189,16 +1292,6 @@
    "alt": "係数を整数にする"
   },
   {
-   "id": "collinear",
-   "confidence": "verified",
-   "alt": "共線の点"
-  },
-  {
-   "id": "combine-like-terms",
-   "confidence": "verified",
-   "alt": "同類項をまとめる計算"
-  },
-  {
    "id": "compare",
    "confidence": "verified",
    "alt": "大小を比較する"
@@ -1207,11 +1300,6 @@
    "id": "compare-coefficients",
    "confidence": "verified",
    "alt": "係数を比べる"
-  },
-  {
-   "id": "compare-coefficients",
-   "confidence": "verified",
-   "alt": "係数比較法"
   },
   {
    "id": "concyclic",
@@ -1262,11 +1350,6 @@
    "id": "direct-proportion",
    "confidence": "verified",
    "alt": "〜に比例する"
-  },
-  {
-   "id": "distribute",
-   "confidence": "verified",
-   "alt": "分配して展開する"
   },
   {
    "id": "dividend",
@@ -1332,16 +1415,6 @@
    "id": "integrals-of-even-and-odd-functions",
    "confidence": "verified",
    "alt": "奇関数の定積分"
-  },
-  {
-   "id": "integration-by-substitution",
-   "confidence": "verified",
-   "alt": "u 置換"
-  },
-  {
-   "id": "integration-by-substitution",
-   "confidence": "verified",
-   "alt": "置換法則"
   },
   {
    "id": "inverse-proportion",
@@ -1422,11 +1495,6 @@
    "id": "partial-fraction-decomposition",
    "confidence": "verified",
    "alt": "部分分数による積分"
-  },
-  {
-   "id": "perimeter",
-   "confidence": "verified",
-   "alt": "周囲の長さ"
   },
   {
    "id": "perpendicular-lines",
@@ -1529,11 +1597,6 @@
    "alt": "和を積に直す公式"
   },
   {
-   "id": "summation-notation",
-   "confidence": "verified",
-   "alt": "シグマ記法での和"
-  },
-  {
    "id": "survey",
    "confidence": "verified",
    "alt": "質問票"
@@ -1572,11 +1635,6 @@
    "id": "work-backwards",
    "confidence": "verified",
    "alt": "逆演算で解く"
-  },
-  {
-   "id": "write-an-equation",
-   "confidence": "verified",
-   "alt": "文字を使って表す"
   },
   {
    "id": "zero-product-property",
@@ -2151,6 +2209,71 @@
    "others": {
     "sine theta | sine x | sine alpha | sine two x": 418,
     "the sine of *": 126
+   }
+  }
+ ],
+ "T7": [
+  {
+   "id": "arctangent",
+   "confidence": "verified",
+   "headword": "inverse tangent",
+   "total": 15,
+   "inside": 10,
+   "followers": {
+    "function": 10
+   }
+  },
+  {
+   "id": "differential",
+   "confidence": "verified",
+   "headword": "differential",
+   "total": 713,
+   "inside": 622,
+   "followers": {
+    "equation": 619,
+    "function": 2,
+    "notation": 1
+   }
+  },
+  {
+   "id": "divisibility",
+   "confidence": "verified",
+   "headword": "divisibility",
+   "total": 33,
+   "inside": 21,
+   "followers": {
+    "test": 20,
+    "rule": 1
+   }
+  },
+  {
+   "id": "net-change",
+   "confidence": "verified",
+   "headword": "net change",
+   "total": 23,
+   "inside": 16,
+   "followers": {
+    "theorem": 16
+   }
+  },
+  {
+   "id": "number-of-elements",
+   "confidence": "verified",
+   "headword": "cardinality",
+   "total": 34,
+   "inside": 22,
+   "followers": {
+    "rule": 22
+   }
+  },
+  {
+   "id": "squeeze",
+   "confidence": "verified",
+   "headword": "squeeze",
+   "total": 17,
+   "inside": 13,
+   "followers": {
+    "theorem": 13
    }
   }
  ]

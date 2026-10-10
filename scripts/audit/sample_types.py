@@ -65,7 +65,11 @@ SCOPE = re.compile(
     r"|英語では[^。]*(?:言い分ける|区別する|呼び分ける)"
     r"|(?:範囲|意味)が(?:違う|異なる|広い|狭い)"
     r"|より(?:広い|狭い)範囲"
-    r"|(?:鈍角|一般角)まで(?:広げ|含め|拡張)")
+    r"|(?:鈍角|一般角)まで(?:広げ|含め|拡張)"
+    # round 2 (2026-10-09): "A なら X、B なら Y" with an English word (write-an-equation), "〜にだけ出てくる ／ 使う" (be-inscribed-in)
+    r"|なら [a-z]{4,}[^。]*(?:なら|なければ) [a-z]{4,}"  # 等号を含むなら equation、含まないなら expression
+    r"|にだけ(?:出てくる|使う|言う|用いる)"
+    r"|^(?=[^。]*日本語)[^。]*(?:言い分ける|呼び分ける|使い分ける|どちらも)")  # 日本語は A と B を言い分けるが、英語はどちらも X
 EN_SCOPE = re.compile(r"\(the Japanese [^)]*\)|\bin Japan(?:ese)?\b|\bup to 180", re.I)
 
 
@@ -202,6 +206,39 @@ def t4():
     return rows
 
 
+# ---------- T7 (round 2) ----------
+FOLLOWERS = ("problem", "application", "method", "theorem", "rule", "formula", "function", "equation", "test", "property", "law", "identity", "sum", "notation")
+
+
+def t7():
+    """A verified term whose en.term the written corpus uses mostly as the start of a longer wording
+    (uniform motion -> uniform motion problems / applications): the headword may name something else
+    (the motion, not the problem). Counts the written docs of corpus/probe-cache.json (as T4 does for spoken)."""
+    cache = os.path.join(ROOT, "corpus", "probe-cache.json")
+    if not os.path.exists(cache):
+        return None
+    written = "\n".join(x["text"] for x in json.load(open(cache, encoding="utf-8"))["docs"] if x["register"] == "written").lower()
+    rows = []
+    for d in entries("terms"):
+        if d["confidence"] != "verified":
+            continue
+        head = d["en"]["term"].lower()
+        if "…" in head or len(head) < 4 or head not in written:
+            continue
+        rx = re.compile(r"\b" + r"\s+".join(re.escape(w) for w in head.split()) + r"s?\b(?:\s+(" + "|".join(FOLLOWERS) + r")s?\b)?")
+        total = 0
+        after = {}
+        for m in rx.finditer(written):
+            total += 1
+            if m.group(1):
+                after[m.group(1)] = after.get(m.group(1), 0) + 1
+        inside = sum(after.values())
+        if total >= 5 and inside / total >= 0.6:
+            rows.append({"id": d["id"], "confidence": d["confidence"], "headword": d["en"]["term"], "total": total, "inside": inside,
+                         "followers": dict(sorted(after.items(), key=lambda x: -x[1]))})
+    return rows
+
+
 # ---------- T5 ----------
 def t5():
     dec = open(os.path.join(ROOT, "docs", "DECISIONS.md"), encoding="utf-8").read()
@@ -256,13 +293,15 @@ def main():
     res = {"T1a": order(t1a()), "T1b": order(t1b(jp)), "T2": order(t2()), "T3": order(t3()), "T5": order(t5()), "T6": order(t6(jp))}
     t4rows = t4()
     res["T4"] = order(t4rows) if t4rows is not None else None
+    t7rows = t7()
+    res["T7"] = order(t7rows) if t7rows is not None else None
     today = datetime.date.today().isoformat()
     L = ["# 公開前の抜き取り（Fable）で見つかった型の一覧", "",
          f"作成: {today} ／ `python3 scripts/audit/sample_types.py`（規則は scripts/audit/sample_types.py の説明）。"
          "抜き取りの 100 項目で大きな直し・不合格が 8（閾値 3 を超えた）だったので、その型と、小さな直しで 3 回出た型（T6）を全エントリで探した。"
          "どの行も手がかりで、誤りとは限らない。次のセッションが 1 行ずつ資料で読んで直し、それから公開する（audits/2026-10-09-sample-fable.md の J）。", ""]
     L += ["## T1a. mapping exact で、エントリ自身の文が日本語と英語の範囲の違いを書いている", "",
-          f"- 行: {count(res['T1a'])}。抜き取りで見つけた例: expression（「式」は等式・不等式も指す）・trigonometric-ratio（三角比は鈍角まで）。"
+          f"- 行: {count(res['T1a'])}。抜き取りで見つけた例: expression（「式」は等式・不等式も指す）・trigonometric-ratio（三角比は鈍角まで）、第 2 回: write-an-equation（等号を含むなら equation、含まないなら expression）・be-inscribed-in（inscribed in は多角形と円にだけ）。"
           "範囲が違うなら mapping near（CLAUDE.md 規則 5。兄弟の equation・algebraic-expression は near）。言い方だけの注意なら exact のまま", ""]
     L += table(res["T1a"], [lambda r: r["id"], lambda r: r["confidence"], lambda r: r["field"], lambda r: cut(r["text"], 160)], ["id", "confidence", "欄", "文"]) + [""]
     t1b_read = [r for r in res["T1b"] if r["read"]]
@@ -291,6 +330,16 @@ def main():
         L += table(res["T4"], [lambda r: r["id"], lambda r: r["confidence"], lambda r: r["form"], lambda r: r["count"], lambda r: r["modifier"], lambda r: r["hits"],
                                lambda r: "、".join(f"{k} {v}" for k, v in r["others"].items())],
                    ["id", "confidence", "形", "件数", "別の読み", "その件数", "ほかの形の件数"]) + [""]
+    L += ["## T7. 見出しの語を書き言葉のコーパスが、もっと長い言い方の先頭としてばかり使う（第 2 回）", ""]
+    if res["T7"] is None:
+        L += ["- corpus/probe-cache.json が無いので数えていない（`pnpm corpus:probe -- x` を一度回す）", ""]
+    else:
+        L += [f"- 行: {count(res['T7'])}（verified の terms で、書き言葉の生の件数が 5 以上、うち 6 割以上が直後に problem ／ application ／ method ／ theorem ／ rule ／ formula ／ function ／ equation ／ test ／ property ／ law ／ identity ／ sum ／ notation の語を伴うもの）。"
+              "第 2 回で見つけた例: motion-problem（uniform motion の書き言葉はすべて uniform motion applications ／ problems の内側で、見出しが運動の名前になっていた → uniform motion problem）。"
+              "見出しが単独の概念（the derivative、the product rule の product）として使われる語も混じるので、`pnpm corpus:probe -- --contexts \"<見出し>\"` で読んで決める", ""]
+        L += table(res["T7"], [lambda r: r["id"], lambda r: r["confidence"], lambda r: r["headword"], lambda r: r["total"], lambda r: r["inside"],
+                               lambda r: "、".join(f"{k} {v}" for k, v in r["followers"].items())],
+                   ["id", "confidence", "見出し", "書き言葉の件数", "長い言い方の内側", "直後の語"]) + [""]
     t5_unread = [r for r in res["T5"] if not r["excerptsRead"]]
     L += ["## T5. likely の根拠が Math Stack Exchange だけのフレーズ（MICASE の学生の発話は 3 件未満）", "",
           f"- フレーズ: {count(res['T5'])}、うち DECISIONS に抜粋を読んだ記録が見当たらないもの {count(t5_unread)}。"

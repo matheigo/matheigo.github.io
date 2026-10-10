@@ -5,9 +5,9 @@
 対象の欄は日本側と同じ。米国側の主張（米国・アメリカ・AP・CED・College Board・英語圏・Calc I〜III・Calculus AB／BC）の文のうち、
 文の中に参照（CED・OpenStax・IM・CK-12・Nicholson・Levin・Wikipedia・topic の番号ほか）も用例コーパス（講義・話し言葉・書き言葉・Khan・MIT ほか）も名指ししないもの。
 
-- 米国側の主張の文で参照かコーパスを名指しするもの: 421 文（一覧にしない）
+- 米国側の主張の文で参照かコーパスを名指しするもの: 422 文（一覧にしない）
 - **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 4 項目・4 文**
-- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 22 項目・23 文
+- B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 21 項目・22 文
 
 ## A. エントリの出典にも参照がない
 
@@ -23,7 +23,6 @@
 | コレクション | id | 欄 | 文 | エントリの参照 |
 |---|---|---|---|---|
 | terms | accumulation-function | mapping_note | 後者の「定積分を定数 k とおく」型の問題が米国の教科書にあるかは教科書による。 | College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020); 高等学校学習指導要領（平成30年告示）解説 数学編 理数編; OpenStax Calculus Volume 1 |
-| terms | angle-sum-of-a-triangle | mapping_note | 日本語は「三角形の内角の和」という量の名前で言うが、米国の Geometry はこれを定理の名前 triangle sum theorem（triangle angle sum theorem）で呼ぶ。 | CK-12 Geometry (K12 LibreTexts) |
 | terms | arc-measure | mapping_note | 米国の Geometry では弧 AB の度数を、AB の上に弧の記号を付けた記号に m を添えて書き、中心角と同じ度数で表す（長さの arc length とは別）。 | Illustrative Mathematics, IM 9–12 Math (Geometry); CK-12 Geometry (K12 LibreTexts) |
 | terms | corollary | pitfalls[1] | 米国式の発音は第 1 音節に強勢（COR-uh-lair-ee。Merriam-Webster: ˈkȯr-ə-ˌler-ē、英国式は kə-ˈrä-lə-rē）。 | OpenStax Calculus Volume 1; OpenStax Algebra and Trigonometry 2e; Merriam-Webster「corollary」 |
 | terms | corresponding-angles-postulate | mapping_note | 米国の教科書では公準（postulate）とするものと定理（theorem）とするものがある。 | CK-12 Geometry (K12 LibreTexts) |
