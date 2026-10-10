@@ -107,10 +107,10 @@
       "note": "Geometry 7.3 Tangent Lines・glossary（tangent (line): intersects the circle at exactly one point。mapping_note）"
     }
   ],
-  "confidence": "verified",
+  "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-24",
-    "audit": "2026-09-26",
+    "audit": "2026-10-09",
     "human": null
   },
   "updated": "2026-10-09",
@@ -140,5 +140,12 @@
       "yt:patrickjmt"
     ],
     "counted": "2026-09-26"
-  }
+  },
+  "flags": [
+    {
+      "code": "audit-major-fix",
+      "note": "Phase 5 監査（2026-10-09）で大きな直し: 監査 17 の型の一覧 T1a: mapping exact → near（日本語の「交点」は交わる点で、接する点を含めるときは「共有点」: 解説 数学I・共通テスト 令和 3 年度 第 1 日程 数学II 第 3 問。英語の point of intersection は接する点も含む: IM Geometry 7.3 の用語集・OpenStax Algebra and Trigonometry 11.3。兄弟の intersect と同じ）。見直す点: mapping・mapping_note・pitfalls[1]・出典。次の監査のセッションが見直す。",
+      "raised": "2026-10-09"
+    }
+  ]
 }
