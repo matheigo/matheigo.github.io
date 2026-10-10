@@ -6,7 +6,7 @@
 慣習差（conventions）は jp の欄そのものが日本側の主張で、生成のときに項目ごとに日本側の資料を出典に入れたので、ここには入れない（監査は慣習差の順で見る）。
 
 - phase4-report G-1 の正規表現（日本(の教科書|では|の高校|の授業|の答案|の中学|の入試|の数学|で)）に当たる文: **106 項目・109 文**
-- 広い正規表現（日本・数学 I〜C・中学・高校・学習指導要領・教科書・入試・共通テスト・センター試験）に当たる文: **486 項目・668 文**（主張でない文も混じる。監査の ⑦ で 1 文ずつ見る）
+- 広い正規表現（日本・数学 I〜C・中学・高校・学習指導要領・教科書・入試・共通テスト・センター試験）に当たる文: **489 項目・672 文**（主張でない文も混じる。監査の ⑦ で 1 文ずつ見る）
 
 | コレクション | id | 欄 | G-1 | 文 |
 |---|---|---|---|---|
@@ -47,7 +47,7 @@
 | terms | arc-measure | mapping_note |  | 見出しの「弧の度数」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | arc-measure | mapping_note | ○ | 日本では弧の大きさを中心角で言い、弧そのものに度数を付けない。 |
 | terms | arcsine | pitfalls[1] |  | 日本の共通テスト（数学I）は三角比の表を添えて角を読ませる。 |
-| terms | arctangent | pitfalls[0] |  | 学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法は ax + b = t、x = a sin θ と置き換えるものを中心に扱う（〔内容の取扱い〕）。 |
+| terms | arctangent | pitfalls[0] |  | 学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法で主に扱う置き換えは ax + b = t と x = a sin θ（〔内容の取扱い〕）。 |
 | terms | area-in-polar-coordinates | mapping_note |  | 見出しの「極座標での面積」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | area-model | mapping_note |  | 日本の中 3 の教科書も、長方形の面積で式の展開を説明するが、図に決まった名前はない。 |
 | terms | area-of-a-regular-polygon | pitfalls[0] |  | 日本の数I では、中心と各頂点を結んで n 個の合同な二等辺三角形に分け、外接円の半径 r を使って (n/2)r² sin(360°/n) と求める。 |
@@ -152,7 +152,7 @@
 | terms | cylindrical-shell | mapping_note |  | 見出しの「円柱の殻」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | decreasing | mapping_note |  | 見出しの「単調に減少する」は学習指導要領解説に無い（日本語版 Wikipedia には「単調減少」がある）。 |
 | terms | definite-integral | pitfalls[0] |  | 学習指導要領解説（数学II）は、面積 S(t) の導関数が f(t) になることから定積分が面積を表すことを導く扱いと、区分求積法の考えで定義する扱いに触れる。 |
-| terms | derivative-of-a-parametric-curve | mapping_note |  | ja.alt の「媒介変数曲線の微分」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | derivative-of-a-parametric-curve | mapping_note |  | 見出しの「媒介変数表示された関数の微分」は学習指導要領解説に無い、本プロジェクトの訳語（解説の数学III は、座標が x = f(t), y = g(t) で表される点の速度を (f′(t), g′(t)) とし、媒介変数表示された曲線の長さも扱う）。 |
 | terms | derivative-of-the-exponential-function | mapping_note |  | 学習指導要領解説（数学III）は「指数関数の導関数」を三角関数・対数関数の導関数と並べて挙げる（(eˣ)′ = eˣ と (aˣ)′ = aˣ log a をまとめた言い方）。 |
 | terms | derivative-of-the-exponential-function | pitfalls[0] |  | OpenStax Calculus は aˣ ln a と書く（OpenStax Algebra and Trigonometry は底を省いた log x を常用対数とし、学習指導要領解説には ln が出てこない）。 |
 | terms | derivative-of-the-logarithm | pitfalls[0] |  | OpenStax は自然対数を ln x と書き（学習指導要領解説には ln が出てこない）、ell en x や natural log of x と読む。 |
@@ -164,7 +164,7 @@
 | terms | determine-where-the-function-is-increasing-and-decreasing | pitfalls[0] |  | 端点を含めるかどうかは教科書による。 |
 | terms | difference-quotient | mapping_note |  | 見出しの「差分商」は学習指導要領解説に無い（日本語版 Wikipedia「微分」にはある）。 |
 | terms | difference-quotient | mapping_note | ○ | 日本の高校では (f(a + h) − f(a))/h を「平均変化率」として扱い、別の名前をつけない。 |
-| terms | differential-equation | pitfalls[0] |  | 高等学校学習指導要領（平成30年告示）の数学III には「微分方程式」の語が無く（理数数学II は dy/dx = ky 程度の簡単な微分方程式の意味と解法を扱う）、数IIIの教科書で扱うかは教科書による。 |
+| terms | differential-equation | pitfalls[0] |  | 高等学校学習指導要領（平成30年告示）の数学III には「微分方程式」の語が無く（理数数学II は dy/dx = ky 程度の簡単な微分方程式の意味と解法を扱う）。 |
 | terms | dilation | mapping_note |  | 中学校学習指導要領解説（第 3 学年）は、拡大・縮小を一つの図形を操作して新たな図形を作ることと書き、相似の位置・相似の中心を扱うが、変換の名前は出てこない（縮図・拡大図は小学校第 6 学年）。 |
 | terms | dilation | pitfalls[2] |  | 用例コーパスでは、話し言葉はほとんどが Khan Academy の中学の講義で、書き言葉にはほとんど出てこない。 |
 | terms | direct-proof | mapping_note |  | 見出しの「直接証明」は学習指導要領解説に無い（日本語版 Wikipedia「証明 (数学)」にはある）。 |
@@ -291,7 +291,7 @@
 | terms | instantaneous-rate-of-change | mapping_note |  | 学習指導要領解説（数学II）は同じ量を微分係数と呼び、瞬間の速さや接線の傾きと関連付ける。 |
 | terms | instantaneous-velocity | mapping_note |  | 数II の「瞬間の速さ」は位置の変化率で負にもなるので、英語では velocity（向きを含む）に当たる。 |
 | terms | instantaneous-velocity | mapping_note |  | 英語の speed は velocity の絶対値（数III の「速さ」）を指す。 |
-| terms | integrals-giving-inverse-trig-functions | mapping_note |  | 学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法は ax + b = t、x = a sin θ と置き換えるものを中心に扱う（〔内容の取扱い〕）。 |
+| terms | integrals-giving-inverse-trig-functions | mapping_note |  | 学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法で主に扱う置き換えは ax + b = t と x = a sin θ（〔内容の取扱い〕）。 |
 | terms | integration-by-completing-the-square | mapping_note |  | 学習指導要領解説には逆三角関数が出てこない。 |
 | terms | integration-by-completing-the-square | mapping_note |  | 見出しの「平方完成による積分」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | integration-by-long-division | mapping_note |  | 見出しの「長除法による積分」は学習指導要領解説に無い、本プロジェクトの訳語。 |
@@ -357,7 +357,7 @@
 | terms | literal-equation | mapping_note |  | 見出しの「リテラル方程式」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | literal-equation | mapping_note | ○ | 日本では中 2 で「等式の変形」（エントリ rearranging-an-equation）として扱い、この種の等式に名前はない。 |
 | terms | local-extremum | mapping_note |  | ja.alt の「相対極値」は学習指導要領解説に無い、本プロジェクトの訳語（relative extremum の訳）。 |
-| terms | local-maximum | mapping_note |  | ja.alt の「相対最大値」は学習指導要領解説に無い、本プロジェクトの訳語（relative maximum の訳）。 |
+| terms | local-maximum | mapping_note |  | ja.alt の「相対的最大値」「局所的最大値」は学習指導要領解説に無い（日本語版 Wikipedia「最大と最小」にはある。relative maximum ／ local maximum に当たる）。 |
 | terms | logarithm | pitfalls[1] |  | OpenStax Algebra and Trigonometry（6.3）と Intermediate Algebra（10.3）は、底を省いた log x を常用対数（底 10）、ln x を自然対数とする（学習指導要領解説には ln が出てこない）。 |
 | terms | logical-connective | mapping_note |  | 見出しの「論理結合子」は学習指導要領解説に無い（日本語版 Wikipedia「命題」にはある。langlink の「論理演算」は論理演算子と書く）。 |
 | terms | logical-connective | pitfalls[0] |  | 高等学校学習指導要領解説（数学I 集合と命題）は必要条件・十分条件・対偶や簡単な命題の証明を扱い、集合の記号として a ∈ A、A ∩ B、A ∪ B、A ⊂ B、Ā を挙げるが、「論理結合子」の名前は出てこない。 |
@@ -615,6 +615,7 @@
 | terms | translation | pitfalls[0] |  | 日本の「x 軸方向に p、y 軸方向に q だけ平行移動」は、英語では向きで言う（shift 3 units to the right and 2 units up）。 |
 | terms | transversal | pitfalls[0] | ○ | 日本の教科書は交わる直線に名前を付けず「2 直線に 1 直線が交わるとき」と言う。 |
 | terms | transversal | pitfalls[2] |  | 用例コーパスで transversal は話し言葉だけに出てくる（Khan Academy の中学の講義が最も多く、次が The Organic Chemistry Tutor）。 |
+| terms | trapezoid | mapping_note |  | 日本語版 Wikipedia「台形」と共通テスト（令和3年度 第1日程 数学Ⅱ・数学Ｂ 第5問）は、少なくとも一組の対辺が平行な四角形を台形とする（平行四辺形も台形に入る）。 |
 | terms | trial | mapping_note |  | 日本語の「試行」は、標本空間や事象を考える実験そのもの（学習指導要領解説（数学B）の「2枚の硬貨を投げる試行についての標本空間」、センター試験 平成 30 年度 数学I・数学A 第 3 問の「大小 2 個のさいころを同時に投げる試行」）にも、その 1 回 1 回（共通テスト 令和 6 年度 数学I・数学A 第 3 問の「n 回の試行で」「n 回目の試行で初めて」）にも使う。 |
 | terms | triangle-inequality | pitfalls[1] |  | 学習指導要領解説（数学II）は、絶対値の性質などを用いて不等式が成り立つことを証明することを挙げる。 |
 | terms | triangle-proportionality-theorem | pitfalls[3] |  | 中学校学習指導要領解説はこの内容を「平行線と線分の比についての性質」と呼び、「三角形と比の定理」は出てこない（見出しは本プロジェクトの言い方）。 |
@@ -656,9 +657,12 @@
 | terms | vertical-line-test | mapping_note |  | 見出しの「垂直線テスト」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | vertical-line-test | mapping_note | ○ | 日本では「x の値を決めると y の値がただ 1 つに決まるとき y は x の関数」という定義で考え、グラフでの判定法に名前を付けない。 |
 | terms | vertical-tangent | pitfalls[0] |  | 学習指導要領解説には、接線が y 軸に平行になる点の名前が出てこない。 |
+| terms | volume-by-cross-sections | mapping_note |  | 見出しの「断面積による体積」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | voluntary-response-bias | mapping_note |  | 見出しの「自発的回答の偏り」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | washer-method | mapping_note |  | 学習指導要領解説にはこの求め方の名前が出てこない。 |
 | terms | washer-method | mapping_note |  | 見出しの「ワッシャー法」は学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | work | pitfalls[0] |  | 学習指導要領解説の数学C のベクトルの節には仕事が出てこない（解説で仕事が出てくるのは付録の学習指導要領 理科「物理基礎」など）。 |
+| terms | work | pitfalls[0] |  | W = F·d は数学C の内積で計算できる。 |
 | terms | write-dx-in-terms-of-du | pitfalls[0] |  | dx を解き出す（solve for dx）か、被積分関数の中の 2x dx をそのまま du に置き換えるかは教科書による。 |
 | terms | y-intercept | mapping_note |  | 日本語版 Wikipedia「一次関数」は y = ax + b の b（直線と y 軸との交点の座標）を y 切片、あるいは単に切片と呼び、センター試験の問題文（平成 31 年度 数学Ⅰ）も直線について「切片が −15」と書く。 |
 | terms | z-score | pitfalls[0] |  | 日本の偏差値（hensachi）とは別。 |

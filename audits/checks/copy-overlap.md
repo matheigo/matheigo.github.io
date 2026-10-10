@@ -7,10 +7,10 @@
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15653
-- 英語のソース: 3884 ファイル ／ 日本語のソース: 532 ファイル
-- 一致した箇所: **331**（289 項目）
-- 見出しの句を含む一致で除いたもの: 148 箇所（137 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
+- 調べた本文の欄: 15660
+- 英語のソース: 3884 ファイル ／ 日本語のソース: 539 ファイル
+- 一致した箇所: **332**（290 項目）
+- 見出しの句を含む一致で除いたもの: 149 箇所（138 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
 |---|---|---|---|---|---|---|---|
@@ -85,6 +85,7 @@
 | terms | area-of-a-regular-polygon | pitfalls[0] | en | 11 | ck 12 geometry 5 21 area of regular and irregular polygons | 1 | ref:ck12-geometry |
 | terms | area-of-a-regular-polygon | examples[1].en | en | 8 | use the formula for the area of a | 5 | openstax-calculus, ref:ck12-geometry, openstax-intalg, openstax-elemalg, ref:ck12-algebra |
 | terms | area-of-a-triangle-using-vectors | examples[1].en | en | 8 | find the area of the triangle with vertices | 1 | ref:nicholson-lawa-2021a |
+| terms | area-preserving-transformation | mapping_note | en | 9 | 1 9 formula for the area of a triangle | 1 | ref:im-6-8 |
 | terms | auxiliary-angle-form | examples[0].en | en | 9 | the square root of a squared plus b squared | 3 | yt:organicchem, mit-18.06, mit-18.03 |
 | terms | auxiliary-line | examples[1].en | en | 9 | prove that the sum of the interior angles of | 2 | ref:levin-dmoi4, khan-algebra |
 | terms | base-of-a-solid | examples[1].en | en | 9 | find the number of faces edges and vertices of | 1 | ref:ck12-geometry |

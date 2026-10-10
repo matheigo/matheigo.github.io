@@ -1,9 +1,9 @@
 {
- "rows": 2489,
+ "rows": 2512,
  "found": {
   "checked A": 60,
-  "checked B": 43,
-  "yes": 2386
+  "checked B": 45,
+  "yes": 2407
  },
  "verifiedNotFound": {},
  "list": [
@@ -54,7 +54,7 @@
   {
    "collection": "conventions",
    "id": "us-only-precalculus-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "openstax:Intermediate Algebra"
@@ -719,6 +719,28 @@
     "openstax:Algebra and Trigonometry"
    ],
    "wording": "a non-real complex number",
+   "found": "checked B"
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-precalculus-topics",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "references": [
+    "im"
+   ],
+   "wording": "Descartes' Rule of Signs",
+   "found": "checked B"
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-precalculus-topics",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "references": [
+    "im"
+   ],
+   "wording": "rotation of axes",
    "found": "checked B"
   },
   {
@@ -3807,7 +3829,31 @@
   {
    "collection": "conventions",
    "id": "us-only-precalculus-topics",
-   "confidence": "likely",
+   "confidence": "verified",
+   "field": "advice_ja",
+   "references": [
+    "im",
+    "openstax:Algebra and Trigonometry"
+   ],
+   "wording": "Descartes' Rule of Signs",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-precalculus-topics",
+   "confidence": "verified",
+   "field": "advice_ja",
+   "references": [
+    "im",
+    "openstax:Algebra and Trigonometry"
+   ],
+   "wording": "rotation of axes",
+   "found": "yes"
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-precalculus-topics",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -3818,7 +3864,7 @@
   {
    "collection": "conventions",
    "id": "us-only-precalculus-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -3829,7 +3875,7 @@
   {
    "collection": "conventions",
    "id": "us-only-precalculus-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -3840,7 +3886,7 @@
   {
    "collection": "conventions",
    "id": "us-only-precalculus-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -3851,7 +3897,7 @@
   {
    "collection": "conventions",
    "id": "us-only-precalculus-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -3862,7 +3908,7 @@
   {
    "collection": "conventions",
    "id": "us-only-precalculus-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "openstax:Intermediate Algebra"
@@ -3873,7 +3919,7 @@
   {
    "collection": "conventions",
    "id": "us-only-precalculus-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -3884,7 +3930,7 @@
   {
    "collection": "conventions",
    "id": "us-only-precalculus-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -3895,7 +3941,7 @@
   {
    "collection": "conventions",
    "id": "us-only-precalculus-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "us",
    "references": [
     "openstax:Intermediate Algebra"
@@ -8828,6 +8874,28 @@
   },
   {
    "collection": "symbols",
+   "id": "r-squared",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "openstax:Introductory Statistics"
+   ],
+   "wording": "The Regression Equation",
+   "found": "yes"
+  },
+  {
+   "collection": "symbols",
+   "id": "r-squared",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "openstax:Introductory Statistics"
+   ],
+   "wording": "is called the coefficient of determination",
+   "found": "yes"
+  },
+  {
+   "collection": "symbols",
    "id": "radian-unit",
    "confidence": "verified",
    "field": "sources[3].note",
@@ -9500,7 +9568,7 @@
   {
    "collection": "symbols",
    "id": "tangent-of-theta",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "notes[1]",
    "references": [
     "im"
@@ -9511,7 +9579,7 @@
   {
    "collection": "symbols",
    "id": "tangent-of-theta",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "notes[1]",
    "references": [
     "openstax:Precalculus"
@@ -9522,7 +9590,7 @@
   {
    "collection": "symbols",
    "id": "tangent-of-theta",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "sources[1].note",
    "references": [
     "openstax:Precalculus"
@@ -10539,6 +10607,17 @@
   },
   {
    "collection": "terms",
+   "id": "arccosine",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "references": [
+    "openstax:Calculus Volume 3"
+   ],
+   "wording": "The Dot Product",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
    "id": "arcsine",
    "confidence": "verified",
    "field": "sources[4].note",
@@ -10746,6 +10825,61 @@
     "openstax:Algebra and Trigonometry"
    ],
    "wording": "area of an oblique triangle",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "area-preserving-transformation",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "im"
+   ],
+   "wording": "Area of Parallelograms",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "area-preserving-transformation",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "im"
+   ],
+   "wording": "Formula for the Area of a Triangle",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "area-preserving-transformation",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "im"
+   ],
+   "wording": "Area of Parallelograms",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "area-preserving-transformation",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "im"
+   ],
+   "wording": "parallelograms that have the same base and the same height will have the same area",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "area-preserving-transformation",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "im"
+   ],
+   "wording": "Formula for the Area of a Triangle",
    "found": "yes"
   },
   {
@@ -12228,7 +12362,7 @@
    "confidence": "verified",
    "field": "pitfalls[1]",
    "references": [
-    "openstax:"
+    "openstax:Prealgebra"
    ],
    "wording": "commutative property of addition",
    "found": "yes"
@@ -13981,12 +14115,23 @@
   {
    "collection": "terms",
    "id": "derivative-of-a-parametric-curve",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "sources[1].note",
    "references": [
     "ced:calc"
    ],
-   "wording": "derivatives of parametric equations",
+   "wording": "Calculate derivatives of parametric functions",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "derivative-of-a-parametric-curve",
+   "confidence": "likely",
+   "field": "sources[1].note",
+   "references": [
+    "ced:calc"
+   ],
+   "wording": "Second Derivatives of Parametric Equations",
    "found": "yes"
   },
   {
@@ -15545,6 +15690,17 @@
     "ck12"
    ],
    "wording": "Exterior Angles in Convex Polygons",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "exterior-angle-bisector",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "enwiki:Angle bisector theorem"
+   ],
+   "wording": "Exterior angle bisectors",
    "found": "yes"
   },
   {
@@ -18507,7 +18663,7 @@
   {
    "collection": "terms",
    "id": "left-riemann-sum",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "pitfalls[0]",
    "references": [
     "ced"
@@ -18518,12 +18674,23 @@
   {
    "collection": "terms",
    "id": "left-riemann-sum",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "sources[1].note",
    "references": [
     "ced:calc"
    ],
    "wording": "midpoint Riemann sums",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "left-riemann-sum",
+   "confidence": "likely",
+   "field": "sources[1].note",
+   "references": [
+    "ced:calc"
+   ],
+   "wording": "uniform or nonuniform partitions",
    "found": "yes"
   },
   {
@@ -20242,6 +20409,72 @@
     "enwiki:Interval (mathematics)"
    ],
    "wording": "Open and closed intervals",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "opposite-angle",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "references": [
+    "ck12"
+   ],
+   "wording": "a pair of opposite angles",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "opposite-angle",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "ck12"
+   ],
+   "wording": "a pair of opposite angles created by intersecting lines",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "opposite-angle",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "ck12"
+   ],
+   "wording": "Opposite Angles Theorem",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "opposite-angle",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "references": [
+    "im"
+   ],
+   "wording": "Proofs about Quadrilaterals",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "opposite-angle",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "references": [
+    "im"
+   ],
+   "wording": "opposite angles in a parallelogram",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "opposite-angle",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "references": [
+    "im"
+   ],
+   "wording": "Quadrilaterals in Circles",
    "found": "yes"
   },
   {
@@ -23252,12 +23485,23 @@
   {
    "collection": "terms",
    "id": "right-riemann-sum",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "sources[1].note",
    "references": [
     "ced:calc"
    ],
    "wording": "midpoint Riemann sums",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "right-riemann-sum",
+   "confidence": "likely",
+   "field": "sources[1].note",
+   "references": [
+    "ced:calc"
+   ],
+   "wording": "uniform or nonuniform partitions",
    "found": "yes"
   },
   {
@@ -26734,7 +26978,7 @@
   {
    "collection": "terms",
    "id": "trigonometric-ratio",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "sources[2].note",
    "references": [
     "im"
@@ -26745,12 +26989,23 @@
   {
    "collection": "terms",
    "id": "trigonometric-ratio",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "sources[2].note",
    "references": [
     "im"
    ],
    "wording": "Using Trigonometric Ratios to Find Angles",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "trigonometric-ratio",
+   "confidence": "likely",
+   "field": "sources[4].note",
+   "references": [
+    "openstax:Precalculus"
+   ],
+   "wording": "Sine and Cosine Functions",
    "found": "yes"
   },
   {

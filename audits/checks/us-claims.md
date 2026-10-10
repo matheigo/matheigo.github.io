@@ -5,7 +5,7 @@
 対象の欄は日本側と同じ。米国側の主張（米国・アメリカ・AP・CED・College Board・英語圏・Calc I〜III・Calculus AB／BC）の文のうち、
 文の中に参照（CED・OpenStax・IM・CK-12・Nicholson・Levin・Wikipedia・topic の番号ほか）も用例コーパス（講義・話し言葉・書き言葉・Khan・MIT ほか）も名指ししないもの。
 
-- 米国側の主張の文で参照かコーパスを名指しするもの: 418 文（一覧にしない）
+- 米国側の主張の文で参照かコーパスを名指しするもの: 421 文（一覧にしない）
 - **A. 名指しがなく、エントリの出典にも reference ／ textbook がない: 4 項目・4 文**
 - B. 名指しはないが、エントリの出典に reference ／ textbook がある（その参照が文を支えるかは監査で見る）: 22 項目・23 文
 
@@ -40,7 +40,7 @@
 | terms | statistics | pitfalls[1] | AP Statistics・Intro Statistics のように科目名にも使う。 | OpenStax Introductory Statistics 2e |
 | terms | taylors-theorem | pitfalls[0] | AP では剰余の評価を Lagrange error bound と呼ぶ（lagrange-error-bound を参照）。 | OpenStax Calculus Volume 2 |
 | terms | transitive-property | pitfalls[1] | 米国の Geometry の証明では、等式なら transitive property of equality、合同なら transitive property of congruence と対象を付けて書く。 | CK-12 Geometry (K12 LibreTexts) |
-| terms | trapezoid | mapping_note | 米国の教材では台形の定義が分かれる。 | OpenStax Prealgebra 2e; English Wikipedia; CK-12 Geometry (K12 LibreTexts); Illustrative Mathematics, IM 9–12 Math (Geometry) |
+| terms | trapezoid | mapping_note | 米国の教材では台形の定義が分かれる。 | OpenStax Prealgebra 2e; English Wikipedia; CK-12 Geometry (K12 LibreTexts); Illustrative Mathematics, IM 9–12 Math (Geometry); 日本語版 Wikipedia「台形」; 大学入試センター 令和3年度 大学入学共通テスト 第1日程 数学Ⅱ・数学Ｂ（問題） |
 | terms | trapezoidal-rule | pitfalls[1] | trapezoid（台形）は米国の言い方。 | OpenStax Calculus Volume 2; College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020); English Wikipedia; 高等学校学習指導要領（平成30年告示）解説 数学編 理数編 |
 | terms | vector | pitfalls[0] | 日本の教科書は矢印（→）を文字の上に書くが、米国の教科書は太字（v）か、手書きでは上の矢印 v⃗ を使う。 | OpenStax Calculus Volume 3; OpenStax Algebra and Trigonometry 2e |
 | terms | zeros-of-a-polynomial | pitfalls[0] | 米国では zero（関数の値が 0 になる x）・root（方程式の解）・x-intercept（グラフの交点）を使い分ける。 | OpenStax Algebra and Trigonometry 2e |

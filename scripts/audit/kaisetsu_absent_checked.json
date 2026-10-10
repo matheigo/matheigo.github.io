@@ -1069,5 +1069,54 @@
   "field": "mapping_note",
   "sentence": "中学校学習指導要領解説（第 2 学年）は「平行四辺形になるための条件」を平行四辺形の性質と並べて挙げる（本エントリの定義の 5 つ）が、用例コーパスと参照にはそれらをまとめた名前が出てこず、「四角形が平行四辺形であることを示す」（prove that a quadrilateral is a parallelogram）のように、示すことを文で言う。",
   "class": "B"
+ },
+ {
+  "collection": "conventions",
+  "id": "us-only-precalculus-topics",
+  "field": "sources[1].note",
+  "sentence": "クラメルの公式・デカルトの符号法則は出てこない。数学II (1) いろいろな式: 因数定理などで簡単な高次方程式を解く。数学III (2) 微分法: e の極限と金利の例。数学C (2) 平面上の曲線と複素数平面: 二次曲線を回転させて考察することは含まれない。無理方程式は理数数学I の発展・拡充の例だけ",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "work",
+  "field": "pitfalls[0]",
+  "sentence": "学習指導要領解説の数学C のベクトルの節には仕事が出てこない（解説で仕事が出てくるのは付録の学習指導要領 理科「物理基礎」など）。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "us-only-precalculus-topics",
+  "field": "advice_ja",
+  "sentence": "OpenStax Algebra and Trigonometry（Algebra 2・Precalculus の範囲）には学習指導要領解説に出てこない手法（Cramer's Rule・Descartes' Rule of Signs・rotation of axes）が入る（IM Algebra 2 には出てこない）。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "us-only-precalculus-topics",
+  "field": "jp",
+  "sentence": "高等学校学習指導要領解説にクラメルの公式・デカルトの符号法則は出てこない（数学II は簡単な高次方程式を因数定理などで解くが、係数の符号から正の解の個数を見積もることは書かない）。",
+  "class": "A"
+ },
+ {
+  "collection": "conventions",
+  "id": "us-only-precalculus-topics",
+  "field": "jp",
+  "sentence": "連続複利の考えは、解説の数学III が e を導入するところに例として出てくるだけで（1 年間の合計の金利を一定にして、金利がつく間隔を 1 年・1 月・1 日…と短くしていくと元金が何倍になるかを考え、その極限が e だとする）、A = Pe^{rt} で解く問題は書かない。",
+  "class": "A"
+ },
+ {
+  "collection": "terms",
+  "id": "open-interval",
+  "field": "sources[4].note",
+  "sentence": "開区間の語は出てこない。数学II (5) 微分・積分の考え: 区間を制限した関数の最大値・最小値。数学III (3) 積分法: 閉区間 [a, b]（level.jp）",
+  "class": "B"
+ },
+ {
+  "collection": "terms",
+  "id": "work",
+  "field": "sources[3].note",
+  "sentence": "数学C のベクトルに仕事は出てこない。付録の学習指導要領 理科「物理基礎」: 仕事と関連付けて運動エネルギーと位置エネルギーを理解する",
+  "class": "A"
  }
 ]

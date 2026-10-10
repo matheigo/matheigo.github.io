@@ -1,9 +1,9 @@
 {
- "rows": 336,
+ "rows": 342,
  "status": {
   "checked A": 63,
-  "checked B": 21,
-  "ok": 252
+  "checked B": 26,
+  "ok": 253
  },
  "verifiedToRead": 0,
  "list": [
@@ -168,7 +168,7 @@
   {
    "collection": "conventions",
    "id": "us-only-precalculus-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "jp",
    "subjects": [
     "数学II"
@@ -188,7 +188,7 @@
   {
    "collection": "conventions",
    "id": "us-only-precalculus-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "jp",
    "subjects": [
     "数学III"
@@ -208,7 +208,7 @@
   {
    "collection": "conventions",
    "id": "us-only-precalculus-topics",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "subjects": [
     "数学II",
@@ -216,7 +216,7 @@
     "数学C"
    ],
    "status": "checked A",
-   "sentence": "クラメルの公式・デカルトの符号法則は出てこない。数学II (1) いろいろな式: 因数定理などで簡単な高次方程式を解く。数学III (2) 微分法: e の極限と金利の例。数学C (2) 平面上の曲線: 二次曲線を回転させて考察することは含まれない。無理方程式は理数数学I の発展・拡充の例だけ",
+   "sentence": "クラメルの公式・デカルトの符号法則は出てこない。数学II (1) いろいろな式: 因数定理などで簡単な高次方程式を解く。数学III (2) 微分法: e の極限と金利の例。数学C (2) 平面上の曲線と複素数平面: 二次曲線を回転させて考察することは含まれない。無理方程式は理数数学I の発展・拡充の例だけ",
    "hits": {
     "クラメルの公式": {},
     "デカルトの符号法則": {},
@@ -1181,8 +1181,36 @@
   },
   {
    "collection": "terms",
+   "id": "derivative-of-a-parametric-curve",
+   "confidence": "likely",
+   "field": "mapping_note",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "checked B",
+   "sentence": "見出しの「媒介変数表示された関数の微分」は学習指導要領解説に無い、本プロジェクトの訳語（解説の数学III は、座標が x = f(t), y = g(t) で表される点の速度を (f′(t), g′(t)) とし、媒介変数表示された曲線の長さも扱う）。",
+   "hits": {
+    "媒介変数表示された関数の微分": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "derivative-of-a-parametric-curve",
+   "confidence": "likely",
+   "field": "sources[2].note",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "checked B",
+   "sentence": "「媒介変数表示された関数の微分」は出てこない。数学III (2) 微分法: 平面上を運動する点の座標 x = f(t), y = g(t) と速度 (f′(t), g′(t))。(3) 積分法: 媒介変数表示された曲線の長さ",
+   "hits": {
+    "媒介変数表示された関数の微分": {}
+   }
+  },
+  {
+   "collection": "terms",
    "id": "disk-method",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "mapping_note",
    "subjects": [
     "数学III"
@@ -1196,7 +1224,7 @@
   {
    "collection": "terms",
    "id": "disk-method",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "sources[3].note",
    "subjects": [
     "数学III"
@@ -1320,6 +1348,21 @@
   },
   {
    "collection": "terms",
+   "id": "open-interval",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "subjects": [
+    "数学II",
+    "数学III"
+   ],
+   "status": "checked B",
+   "sentence": "開区間の語は出てこない。数学II (5) 微分・積分の考え: 区間を制限した関数の最大値・最小値。数学III (3) 積分法: 閉区間 [a, b]（level.jp）",
+   "hits": {
+    "開区間": {}
+   }
+  },
+  {
+   "collection": "terms",
    "id": "optimization-problem",
    "confidence": "verified",
    "field": "mapping_note",
@@ -1438,6 +1481,48 @@
    "hits": {
     "全体集合": {},
     "全体集合Uを...とする": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "work",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "subjects": [
+    "数学C"
+   ],
+   "status": "checked B",
+   "sentence": "学習指導要領解説の数学C のベクトルの節には仕事が出てこない（解説で仕事が出てくるのは付録の学習指導要領 理科「物理基礎」など）。",
+   "hits": {
+    "物理基礎": {
+     "理数編 総説": 1,
+     "理数（理科）": 9,
+     "付録 総則": 3,
+     "付録 理科": 3,
+     "付録 理数（理科）": 5
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "work",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "subjects": [
+    "数学C"
+   ],
+   "status": "checked B",
+   "sentence": "数学C のベクトルに仕事は出てこない。付録の学習指導要領 理科「物理基礎」: 仕事と関連付けて運動エネルギーと位置エネルギーを理解する",
+   "hits": {
+    "物理基礎": {
+     "理数編 総説": 1,
+     "理数（理科）": 9,
+     "付録 総則": 3,
+     "付録 理科": 3,
+     "付録 理数（理科）": 5
+    },
+    "のベクトルに仕事は出てこない。付録の学習指導要領理科「物理基礎」": {},
+    "仕事と関連付けて運動エネルギーと位置エネルギーを理解する": {}
    }
   },
   {
@@ -6001,6 +6086,31 @@
   },
   {
    "collection": "terms",
+   "id": "monotonic",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "subjects": [
+    "数学II"
+   ],
+   "status": "ok",
+   "sentence": "数学II 指数関数・対数関数: 2^x が単調に増加する（level.jp 数II）",
+   "hits": {
+    "指数関数・対数関数": {
+     "前付": 1,
+     "数学編 総説": 5,
+     "数学II": 7,
+     "数学III": 1,
+     "理数編 総説": 2,
+     "理数数学I": 3,
+     "付録 数学II": 2,
+     "付録 理数数学I": 1
+    },
+    "2^xが単調に増加する": {},
+    "level.jp数II": {}
+   }
+  },
+  {
+   "collection": "terms",
    "id": "moving-average",
    "confidence": "verified",
    "field": "sources[1].note",
@@ -8021,7 +8131,7 @@
   {
    "collection": "terms",
    "id": "trigonometric-ratio",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "pitfalls[2]",
    "subjects": [
     "数学I",
@@ -8044,7 +8154,7 @@
   {
    "collection": "terms",
    "id": "trigonometric-ratio",
-   "confidence": "verified",
+   "confidence": "likely",
    "field": "sources[3].note",
    "subjects": [
     "数学I",

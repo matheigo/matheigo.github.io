@@ -264,7 +264,7 @@
       "collection": "terms",
       "id": "arctangent",
       "field": "pitfalls[0]",
-      "sentence": "学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法は ax + b = t、x = a sin θ と置き換えるものを中心に扱う（〔内容の取扱い〕）。",
+      "sentence": "学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法で主に扱う置き換えは ax + b = t と x = a sin θ（〔内容の取扱い〕）。",
       "g1": false
     },
     {
@@ -999,7 +999,7 @@
       "collection": "terms",
       "id": "derivative-of-a-parametric-curve",
       "field": "mapping_note",
-      "sentence": "ja.alt の「媒介変数曲線の微分」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "sentence": "見出しの「媒介変数表示された関数の微分」は学習指導要領解説に無い、本プロジェクトの訳語（解説の数学III は、座標が x = f(t), y = g(t) で表される点の速度を (f′(t), g′(t)) とし、媒介変数表示された曲線の長さも扱う）。",
       "g1": false
     },
     {
@@ -1083,7 +1083,7 @@
       "collection": "terms",
       "id": "differential-equation",
       "field": "pitfalls[0]",
-      "sentence": "高等学校学習指導要領（平成30年告示）の数学III には「微分方程式」の語が無く（理数数学II は dy/dx = ky 程度の簡単な微分方程式の意味と解法を扱う）、数IIIの教科書で扱うかは教科書による。",
+      "sentence": "高等学校学習指導要領（平成30年告示）の数学III には「微分方程式」の語が無く（理数数学II は dy/dx = ky 程度の簡単な微分方程式の意味と解法を扱う）。",
       "g1": false
     },
     {
@@ -1972,7 +1972,7 @@
       "collection": "terms",
       "id": "integrals-giving-inverse-trig-functions",
       "field": "mapping_note",
-      "sentence": "学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法は ax + b = t、x = a sin θ と置き換えるものを中心に扱う（〔内容の取扱い〕）。",
+      "sentence": "学習指導要領解説には逆三角関数が出てこず、数学III の置換積分法で主に扱う置き換えは ax + b = t と x = a sin θ（〔内容の取扱い〕）。",
       "g1": false
     },
     {
@@ -2434,7 +2434,7 @@
       "collection": "terms",
       "id": "local-maximum",
       "field": "mapping_note",
-      "sentence": "ja.alt の「相対最大値」は学習指導要領解説に無い、本プロジェクトの訳語（relative maximum の訳）。",
+      "sentence": "ja.alt の「相対的最大値」「局所的最大値」は学習指導要領解説に無い（日本語版 Wikipedia「最大と最小」にはある。relative maximum ／ local maximum に当たる）。",
       "g1": false
     },
     {
@@ -4238,6 +4238,13 @@
     },
     {
       "collection": "terms",
+      "id": "trapezoid",
+      "field": "mapping_note",
+      "sentence": "日本語版 Wikipedia「台形」と共通テスト（令和3年度 第1日程 数学Ⅱ・数学Ｂ 第5問）は、少なくとも一組の対辺が平行な四角形を台形とする（平行四辺形も台形に入る）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "trial",
       "field": "mapping_note",
       "sentence": "日本語の「試行」は、標本空間や事象を考える実験そのもの（学習指導要領解説（数学B）の「2枚の硬貨を投げる試行についての標本空間」、センター試験 平成 30 年度 数学I・数学A 第 3 問の「大小 2 個のさいころを同時に投げる試行」）にも、その 1 回 1 回（共通テスト 令和 6 年度 数学I・数学A 第 3 問の「n 回の試行で」「n 回目の試行で初めて」）にも使う。",
@@ -4525,6 +4532,13 @@
     },
     {
       "collection": "terms",
+      "id": "volume-by-cross-sections",
+      "field": "mapping_note",
+      "sentence": "見出しの「断面積による体積」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
       "id": "voluntary-response-bias",
       "field": "mapping_note",
       "sentence": "見出しの「自発的回答の偏り」は学習指導要領解説に無い、本プロジェクトの訳語。",
@@ -4542,6 +4556,20 @@
       "id": "washer-method",
       "field": "mapping_note",
       "sentence": "見出しの「ワッシャー法」は学習指導要領解説に無い、本プロジェクトの訳語。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "work",
+      "field": "pitfalls[0]",
+      "sentence": "学習指導要領解説の数学C のベクトルの節には仕事が出てこない（解説で仕事が出てくるのは付録の学習指導要領 理科「物理基礎」など）。",
+      "g1": false
+    },
+    {
+      "collection": "terms",
+      "id": "work",
+      "field": "pitfalls[0]",
+      "sentence": "W = F·d は数学C の内積で計算できる。",
       "g1": false
     },
     {

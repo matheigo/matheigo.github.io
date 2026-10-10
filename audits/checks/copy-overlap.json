@@ -2,13 +2,13 @@
   "summary": {
     "checked": "2026-10-09",
     "rule": "English: 8+ consecutive words; Japanese: 20+ characters (whitespace removed); a span that is the entry's headword and fewer than that many other words / characters is left out",
-    "fields": 15653,
+    "fields": 15660,
     "englishSources": 3884,
-    "japaneseSources": 532,
-    "spans": 331,
-    "entries": 289,
-    "headwordSpans": 148,
-    "headwordEntries": 137
+    "japaneseSources": 539,
+    "spans": 332,
+    "entries": 290,
+    "headwordSpans": 149,
+    "headwordEntries": 138
   },
   "spans": [
     {
@@ -185,6 +185,17 @@
       "span": "find the area of the triangle with vertices",
       "sources": {
         "ref:nicholson-lawa-2021a": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "area-preserving-transformation",
+      "field": "mapping_note",
+      "lang": "en",
+      "length": 9,
+      "span": "1 9 formula for the area of a triangle",
+      "sources": {
+        "ref:im-6-8": 3
       }
     },
     {
@@ -5470,6 +5481,17 @@
       "span": "choose a test point in each interval to determine",
       "sources": {
         "openstax-calculus": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "trapezoid",
+      "field": "mapping_note",
+      "lang": "ja",
+      "length": 21,
+      "span": "少なくとも一組の対辺が平行な四角形を台形と",
+      "sources": {
+        "jp:exams/r3-dai1-04": 1
       }
     },
     {

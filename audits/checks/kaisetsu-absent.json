@@ -1,9 +1,9 @@
 {
- "rows": 217,
+ "rows": 219,
  "status": {
-  "checked A": 51,
-  "checked B": 102,
-  "語 0": 64
+  "checked A": 57,
+  "checked B": 100,
+  "語 0": 62
  },
  "toRead": 0,
  "entriesToRead": 0,
@@ -134,6 +134,82 @@
      "高 付録 理数数学II": 1
     }
    }
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-precalculus-topics",
+   "confidence": "verified",
+   "field": "advice_ja",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "OpenStax Algebra and Trigonometry（Algebra 2・Precalculus の範囲）には学習指導要領解説に出てこない手法（Cramer's Rule・Descartes' Rule of Signs・rotation of axes）が入る（IM Algebra 2 には出てこない）。",
+   "keys": {
+    "IMAlgebra2に": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-precalculus-topics",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "高等学校学習指導要領解説にクラメルの公式・デカルトの符号法則は出てこない（数学II は簡単な高次方程式を因数定理などで解くが、係数の符号から正の解の個数を見積もることは書かない）。",
+   "keys": {
+    "クラメルの公式": {},
+    "デカルトの符号法則": {},
+    "係数の符号から正の解の個数を見積もること": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-precalculus-topics",
+   "confidence": "verified",
+   "field": "jp",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "連続複利の考えは、解説の数学III が e を導入するところに例として出てくるだけで（1 年間の合計の金利を一定にして、金利がつく間隔を 1 年・1 月・1 日…と短くしていくと元金が何倍になるかを考え、その極限が e だとする）、A = Pe^{rt} で解く問題は書かない。",
+   "keys": {
+    "A=Pe^{rt}で解く問題": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "conventions",
+   "id": "us-only-precalculus-topics",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "クラメルの公式・デカルトの符号法則は出てこない。数学II (1) いろいろな式: 因数定理などで簡単な高次方程式を解く。数学III (2) 微分法: e の極限と金利の例。数学C (2) 平面上の曲線と複素数平面: 二次曲線を回転させて考察することは含まれない。無理方程式は理数数学I の発展・拡充の例だけ",
+   "keys": {
+    "クラメルの公式": {},
+    "デカルトの符号法則": {},
+    "2次曲線を回転させて考察すること": {
+     "高 数学C": 1
+    }
+   },
+   "fallback": false,
+   "paraphrases": {}
   },
   {
    "collection": "terms",
@@ -1061,6 +1137,45 @@
      "高 数学C": 1
     }
    }
+  },
+  {
+   "collection": "terms",
+   "id": "work",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "学習指導要領解説の数学C のベクトルの節には仕事が出てこない（解説で仕事が出てくるのは付録の学習指導要領 理科「物理基礎」など）。",
+   "keys": {
+    "仕事": {
+     "高 付録 理科": 6,
+     "高 付録 中学校": 1,
+     "中学校": 1
+    }
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "work",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked A",
+   "sentence": "数学C のベクトルに仕事は出てこない。付録の学習指導要領 理科「物理基礎」: 仕事と関連付けて運動エネルギーと位置エネルギーを理解する",
+   "keys": {
+    "数学Cのベクトルに仕事": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
   },
   {
    "collection": "conventions",
@@ -2153,51 +2268,6 @@
   },
   {
    "collection": "terms",
-   "id": "disk-method",
-   "confidence": "verified",
-   "field": "mapping_note",
-   "docs": [
-    "chu",
-    "kou"
-   ],
-   "kind": "名前",
-   "status": "checked B",
-   "sentence": "学習指導要領解説（数学III）には、回転体の体積の求め方の名前が出てこない。",
-   "keys": {
-    "円板法": {}
-   },
-   "fallback": true,
-   "paraphrases": {
-    "回転させて": {
-     "高 数学III": 1,
-     "高 数学C": 1
-    }
-   }
-  },
-  {
-   "collection": "terms",
-   "id": "disk-method",
-   "confidence": "verified",
-   "field": "sources[3].note",
-   "docs": [
-    "kou"
-   ],
-   "kind": "名前",
-   "status": "checked B",
-   "sentence": "数学III: 回転体の体積の求め方の名前が出てこない・「円板法」は出てこない",
-   "keys": {
-    "円板法": {}
-   },
-   "fallback": false,
-   "paraphrases": {
-    "回転させて": {
-     "高 数学III": 1,
-     "高 数学C": 1
-    }
-   }
-  },
-  {
-   "collection": "terms",
    "id": "diverge-to-negative-infinity",
    "confidence": "verified",
    "field": "pitfalls[0]",
@@ -2524,33 +2594,6 @@
   },
   {
    "collection": "terms",
-   "id": "left-riemann-sum",
-   "confidence": "verified",
-   "field": "pitfalls[0]",
-   "docs": [
-    "chu",
-    "kou"
-   ],
-   "kind": "名前",
-   "status": "checked B",
-   "sentence": "区分求積法の和 Σ_{k=0}^{n−1}（左端）と Σ_{k=1}^{n}（右端）の名前は学習指導要領解説に出てこないが、AP の CED（topic 6.2）は left ／ right ／ midpoint Riemann sums と trapezoidal sums に名前を付けて比べる（解説で台形公式に触れるのは、理数に関する学科の科目「理数数学II」の発展・拡充の例だけ）。",
-   "keys": {
-    "左リーマン和": {}
-   },
-   "fallback": true,
-   "paraphrases": {
-    "台形公式": {
-     "高 理数数学II": 1
-    },
-    "区分求積": {
-     "高 数学II": 3,
-     "高 数学III": 1,
-     "高 理数数学II": 1
-    }
-   }
-  },
-  {
-   "collection": "terms",
    "id": "logarithm",
    "confidence": "verified",
    "field": "pitfalls[1]",
@@ -2745,6 +2788,23 @@
      "高 理数数学II": 1
     }
    }
+  },
+  {
+   "collection": "terms",
+   "id": "open-interval",
+   "confidence": "verified",
+   "field": "sources[4].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "開区間の語は出てこない。数学II (5) 微分・積分の考え: 区間を制限した関数の最大値・最小値。数学III (3) 積分法: 閉区間 [a, b]（level.jp）",
+   "keys": {
+    "開区間": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
   },
   {
    "collection": "terms",
@@ -3705,23 +3765,6 @@
   },
   {
    "collection": "terms",
-   "id": "derivative-of-a-parametric-curve",
-   "confidence": "verified",
-   "field": "sources[2].note",
-   "docs": [
-    "kou"
-   ],
-   "kind": "語",
-   "status": "語 0",
-   "sentence": "「媒介変数曲線の微分」は出てこない",
-   "keys": {
-    "媒介変数曲線の微分": {}
-   },
-   "fallback": false,
-   "paraphrases": {}
-  },
-  {
-   "collection": "terms",
    "id": "determine-the-coefficients",
    "confidence": "verified",
    "field": "sources[2].note",
@@ -4070,32 +4113,6 @@
   },
   {
    "collection": "terms",
-   "id": "left-riemann-sum",
-   "confidence": "verified",
-   "field": "sources[3].note",
-   "docs": [
-    "kou"
-   ],
-   "kind": "語",
-   "status": "語 0",
-   "sentence": "「左リーマン和」は出てこない",
-   "keys": {
-    "左リーマン和": {}
-   },
-   "fallback": false,
-   "paraphrases": {
-    "台形公式": {
-     "高 理数数学II": 1
-    },
-    "区分求積": {
-     "高 数学II": 3,
-     "高 数学III": 1,
-     "高 理数数学II": 1
-    }
-   }
-  },
-  {
-   "collection": "terms",
    "id": "linear-approximation",
    "confidence": "verified",
    "field": "sources[3].note",
@@ -4138,9 +4155,10 @@
    ],
    "kind": "語",
    "status": "語 0",
-   "sentence": "「相対最大値」は出てこない",
+   "sentence": "「相対的最大値」「局所的最大値」は出てこない",
    "keys": {
-    "相対最大値": {}
+    "相対的最大値": {},
+    "局所的最大値": {}
    },
    "fallback": false,
    "paraphrases": {}
@@ -4321,23 +4339,6 @@
      "高 付録 数学I": 1
     }
    }
-  },
-  {
-   "collection": "terms",
-   "id": "right-riemann-sum",
-   "confidence": "verified",
-   "field": "sources[3].note",
-   "docs": [
-    "kou"
-   ],
-   "kind": "語",
-   "status": "語 0",
-   "sentence": "「右リーマン和」は出てこない",
-   "keys": {
-    "右リーマン和": {}
-   },
-   "fallback": false,
-   "paraphrases": {}
   },
   {
    "collection": "terms",
@@ -4533,6 +4534,23 @@
    "sentence": "数学I 集合と命題: 「全体集合」は 0 件",
    "keys": {
     "全体集合": {}
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "volume-by-cross-sections",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "「断面積による体積」は出てこない（mapping_note）",
+   "keys": {
+    "断面積による体積": {}
    },
    "fallback": false,
    "paraphrases": {}
