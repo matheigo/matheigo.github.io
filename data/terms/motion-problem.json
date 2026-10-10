@@ -12,8 +12,8 @@
     "register": "written"
   },
   "pos": "noun",
-  "mapping": "near",
-  "mapping_note": "「速さの問題」は、道のり・速さ・時間の関係を使う文章題をまとめた呼び方。OpenStax Elementary Algebra（3.5 Solve Uniform Motion Applications・8.8）と Intermediate Algebra（2.4）は節の名前を uniform motion applications とし、本文では uniform motion problems と呼んで D = rt（distance = rate × time）の式を立てる。速さは rate と言う（エントリ speed）。uniform motion（等速運動）だけでは問題の型の名前にならない。",
+  "mapping": "exact",
+  "mapping_note": null,
   "domains": [
     "algebra"
   ],
@@ -23,6 +23,7 @@
       "中2"
     ],
     "us": [
+      "Pre-Algebra",
       "Algebra 1",
       "Integrated Math 1"
     ]
@@ -45,6 +46,7 @@
   ],
   "collocations": [],
   "pitfalls": [
+    "OpenStax Elementary Algebra（3.5 Solve Uniform Motion Applications ほか）は節の名前を uniform motion applications とし、本文では速さが一定の動きの文章題を uniform motion problems と呼んで D = rt の式を立てる（3.5・5.4・8.8。Intermediate Algebra は 2.4 の本文で a uniform motion application、4.2・7.5・9.5 で uniform motion problems と書く）。OpenStax の uniform motion は動きそのもの（a uniform motion situation）の言い方で、問題の型は uniform motion problem と言う。",
     "uniform motion の uniform は「一定の」という意味で、速さが変わらない（等速の）動きを指す。",
     "D = rt の r は rate で、速さのこと（エントリ speed）。OpenStax Prealgebra・Elementary Algebra はこの式を the distance, rate, and time formula と呼ぶ。rate は rate of change（変化の割合）のように「割合・率」の意味でも使うので、文脈で読み分ける。",
     "mph は miles per hour の略（時速 … マイル）。",
@@ -61,12 +63,17 @@
     {
       "type": "textbook",
       "title": "OpenStax Elementary Algebra 2e",
-      "note": "3.5 Solve Uniform Motion Applications・8.8 Solve Uniform Motion and Work Applications（本文は uniform motion problems）"
+      "note": "3.5 Solve Uniform Motion Applications・5.4 Solve Applications with Systems of Equations・8.8 Solve Uniform Motion and Work Applications（本文は uniform motion problems）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Intermediate Algebra 2e",
-      "note": "2.4 Solve Mixture and Uniform Motion Applications（a uniform motion application、uniform motion problems）"
+      "note": "2.4 Solve Mixture and Uniform Motion Applications（本文は a uniform motion application）・4.2・7.5・9.5（uniform motion problems）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "9.7 Solve a Formula for a Specific Variable（Use the Distance, Rate, and Time Formula。pitfalls[1]・level.us）"
     },
     {
       "type": "reference",
@@ -77,13 +84,13 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
-      "note": "projectile motion problems（pitfalls[3]）"
+      "note": "10.7 Parametric Equations: Graphs（projectile motion problems。pitfalls[3]）"
     },
     {
       "type": "reference",
       "title": "中学校学習指導要領（平成29年告示）解説 数学編",
       "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
-      "note": "第 1 学年 A 数と式: (道のり) = (速さ) × (時間) の言葉の式（level.jp 中1）"
+      "note": "第 1 学年 A 数と式: (道のり) = (速さ) × (時間) の言葉の式（level.jp 中1）・第 2 学年 A(2) 連立二元一次方程式を具体的な場面で活用する（速さ・道のりの語は無い。level.jp 中2）"
     }
   ],
   "confidence": "likely",

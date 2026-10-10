@@ -5,7 +5,8 @@
     "reading": "しきであらわす",
     "alt": [
       "文字を用いて表す",
-      "式を立てる"
+      "式を立てる",
+      "式に表す"
     ]
   },
   "en": {
@@ -25,7 +26,7 @@
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "日本語の「式で表す」は、等式（方程式）も等号を含まない式も指す（中学校学習指導要領解説は「文字を用いて表す」と言う）が、英語は等号があれば write an equation、なければ write an expression と言い分ける（IM・CK-12・OpenStax とも両方を練習問題の指示に使う）。",
+  "mapping_note": "日本語の「式で表す」は、等号を含まない式も、等式（方程式）や不等式も指す（中学校学習指導要領解説の第 1 学年 A(2) は、入館料の合計を a + 2b と表すことと、数量の相等関係・大小関係を等式・不等式に表すことを、同じ文字を用いた式の項目で扱う）が、英語は write an expression ／ write an equation ／ write an inequality と言い分ける（IM Algebra 1 2.2 の練習問題の指示は Write an expression, an equation, or an inequality）。",
   "domains": [
     "functions",
     "algebra"
@@ -40,8 +41,8 @@
       "Integrated Math 1"
     ]
   },
-  "definition_ja": "言葉で述べられた数量や数量の関係を、文字と数を使った式に書き表す。等号で結べば等式（方程式）、等号を含まなければ式になる。",
-  "definition_en": "To translate a quantity or a relationship given in words into math, using variables and numbers. The result is an equation if it has an equal sign and an expression if it does not.",
+  "definition_ja": "言葉で述べられた数量や数量の関係を、文字と数を使った式に書き表す。等号で結べば等式（方程式）、等号も不等号も含まなければ式になる。",
+  "definition_en": "To translate a quantity or a relationship given in words into math, using variables and numbers. The result is an equation if it has an equal sign and an expression if it has neither an equal sign nor an inequality sign.",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -63,7 +64,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "等号を含むなら equation、含まないなら expression（エントリ expression）。「代金を表す式を書け」は write an expression、「方程式で表せ」は write an equation。",
+    "等号を含むなら equation、含まないなら expression（エントリ expression）。「代金を表す式を書け」は write an expression、「方程式で表せ」は write an equation。不等号で結ぶ不等式は write an inequality（IM Algebra 1 2.2）。",
     "文章題で方程式をつくる「式を立てる」は write an equation ／ set up an equation。",
     "グラフや条件から直線・円などの式を決める「式を求める」は別のエントリ（find-the-equation）。"
   ],
@@ -86,7 +87,13 @@
       "type": "reference",
       "title": "中学校学習指導要領（平成29年告示）解説 数学編",
       "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
-      "note": "第 3 学年 A 数と式: 連続する数などを文字を用いて表す（ja.alt・mapping_note）"
+      "note": "第 1 学年 A(2) 文字を用いた式: 入館料の合計 a + 2b、相等関係・大小関係を等式・不等式に表す（mapping_note）・数量の関係や法則などを文字を用いた式に表す（ja.alt 式に表す）・第 3 学年 数学的活動: 連続する数などを文字を用いて表す（ja.alt）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Algebra 1)",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Algebra 1 2.2 Writing Equations to Model Relationships (Part 1): Write an expression, an equation, or an inequality（mapping_note・pitfalls[0]）"
     }
   ],
   "confidence": "likely",
@@ -123,7 +130,7 @@
       "yt:nancypi",
       "yt:organicchem"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-10-09"
   },
   "flags": [
     {

@@ -11,8 +11,8 @@
     "uk": null
   },
   "pos": "phrase",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。IM Geometry は 7.4 で circumscribed about を 1 回使い、用語集は a polygon is circumscribed by a circle と内側の図形を主語にする。日本語の「外接する」は、2 円が互いの外側にあって 1 点を共有する場合にも使う（日本語版 Wikipedia「円 (数学)」の節「位置関係」）が、IM Geometry の用語集は circumscribed を多角形と円の関係で定義し、2 円が外側で接する場合は CK-12 Geometry（6.2 Identify Circle Components）が externally tangent と書く。",
   "domains": [
     "geometry"
   ],
@@ -27,7 +27,7 @@
     ]
   },
   "definition_ja": "図形が別の図形の外側にあって、内側の図形の各頂点を周上に通る（円が多角形に外接する）か、内側の円に各辺が接する（多角形が円に外接する）こと。",
-  "definition_en": "To lie outside another figure and touch it: a circle passing through every vertex of a polygon, or a polygon whose sides are all tangent to a circle inside it.",
+  "definition_en": "To lie outside another figure and pass through all of its vertices (a circle circumscribed about a polygon), or to have every side tangent to it (a polygon circumscribed about a circle).",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -81,6 +81,12 @@
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
       "note": "数学I 正弦定理: 三角形に外接する円"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「円 (数学)」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%86%86_(%E6%95%B0%E5%AD%A6)",
+      "note": "節「位置関係」: 2 円が 1 点だけを共有し、互いの外側にある場合も「外接する」と呼ぶ（mapping_note）"
     }
   ],
   "confidence": "verified",
@@ -89,16 +95,16 @@
     "audit": "2026-09-27",
     "human": null
   },
-  "updated": "2026-09-27",
+  "updated": "2026-10-09",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-27"
+    "counted": "2026-10-09"
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 circumscribed about（Geometry 7.4 Quadrilaterals in Circles・計 1 件）。register は主張しない。",
-      "raised": "2026-09-27"
+      "code": "corpus-no-fixed-expression",
+      "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping near なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
+      "raised": "2026-10-09"
     }
   ]
 }

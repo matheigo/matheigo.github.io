@@ -12,7 +12,7 @@
   },
   "pos": "phrase",
   "mapping": "near",
-  "mapping_note": "日本語の「内接する」は、2 円の一方が他方の内側にあって 1 点を共有する場合にも使う（日本語版 Wikipedia「円 (数学)」、共通テスト 令和3年度 第1日程 数学Ⅰ・数学Ａ 第5問の「外接円 O に内接する円」）が、英語の inscribed in は多角形と円・楕円の関係に使い、2 円は internally tangent と言う（英語版 Wikipedia「Tangent」の節 Tangent circles）。",
+  "mapping_note": "日本語の「内接する」は、2 円の一方が他方の内側にあって 1 点を共有する場合にも使う（日本語版 Wikipedia「円 (数学)」、共通テスト 令和3年度 第1日程 数学Ⅰ・数学Ａ 第5問の「外接円 O に内接する円」）が、IM Geometry の用語集は inscribed を多角形が円に・円が多角形に内接する場合で定義し、2 円が内側で接する場合は英語版 Wikipedia「Tangent」（節 Tangent circles）が internally tangent と呼ぶ。",
   "domains": [
     "geometry"
   ],
@@ -26,7 +26,7 @@
     ]
   },
   "definition_ja": "図形が別の図形の内側にあって、各頂点が外側の図形の周上にある（多角形が円に内接する）か、各辺に接する（円が多角形に内接する）こと。",
-  "definition_en": "To lie inside another figure so that it touches the outer figure's boundary: a polygon whose vertices all lie on a circle, or a circle tangent to every side of a polygon.",
+  "definition_en": "To lie inside another figure with every vertex on its boundary (a polygon inscribed in a circle), or with every side of it tangent to the figure inside (a circle inscribed in a polygon).",
   "latex": null,
   "spoken_en": null,
   "examples": [
@@ -63,7 +63,8 @@
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 1"
+      "title": "OpenStax Calculus Volume 1",
+      "note": "4.7 Applied Optimization Problems（a rectangle inscribed in the ellipse。pitfalls[1]）"
     },
     {
       "type": "textbook",
@@ -91,7 +92,7 @@
       "type": "reference",
       "title": "日本語版 Wikipedia「円 (数学)」",
       "url": "https://ja.wikipedia.org/wiki/%E5%86%86_(%E6%95%B0%E5%AD%A6)",
-      "note": "円 A が円 B の周または内部にあり 1 点のみを共有する場合、円 A は円 B に内接する（mapping_note）"
+      "note": "節「位置関係」: 2 円が 1 点だけを共有し、一方が他方の内側にある場合も「内接する」と呼ぶ（mapping_note）"
     },
     {
       "type": "reference",
@@ -122,17 +123,17 @@
       "yt:organicchem",
       "yt:profleonard"
     ],
-    "counted": "2026-09-27"
+    "counted": "2026-10-09"
   },
   "flags": [
     {
-      "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは CK-12 の呼び方 inscribed in（CK-12 Geometry 6.15 Inscribed Quadrilaterals in Circles・CK-12 Geometry 5.23 Construct Regular Polygons・CK-12 Geometry 6.18 Tangent Lines・計 31 件）。register は主張しない。",
-      "raised": "2026-09-27"
-    },
-    {
       "code": "audit-major-fix",
       "note": "Phase 5 監査（2026-10-09）で大きな直し: 公開前の抜き取り（Fable、第 2 回）: mapping exact → near（日本語の「内接する」は 2 円の一方が他方の内側で 1 点を共有する場合にも使う: 日本語版 Wikipedia「円 (数学)」・共通テスト 令和3年度 第1日程 数学I・A 第5問。英語の inscribed in は多角形と円・楕円の関係で、2 円は internally tangent。エントリ自身の pitfalls[1] が書く範囲の差。前回の M1 型）。mapping_note を書き、出典 2 件を足した。見直す点: mapping・mapping_note・pitfalls[1]。次の監査のセッションが見直す。",
+      "raised": "2026-10-09"
+    },
+    {
+      "code": "corpus-reference-fallback",
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは CK-12 の呼び方 inscribed in（CK-12 Geometry 6.15 Inscribed Quadrilaterals in Circles・CK-12 Geometry 5.23 Construct Regular Polygons・CK-12 Geometry 6.18 Tangent Lines・計 31 件）。register は主張しない。",
       "raised": "2026-10-09"
     }
   ]
