@@ -17,8 +17,8 @@
     "register": "written"
   },
   "pos": "noun",
-  "mapping": "none",
-  "mapping_note": "学習指導要領解説（数学III）は、速度 v を時刻 t₁ から t₂ まで積分して点の「位置の変化」を、|v| を積分して「道のり」を求める例を挙げるが、定積分で求まる変化の合計一般の名前は出てこない。英語では net change（増えた分と減った分を差し引いた変化）と呼び、OpenStax Calculus Volume 1 は ∫ₐᵇ F′(x)dx = F(b) − F(a) を Net Change Theorem として示す。AP の CED は Unit 6 を accumulation of change（変化の積み重ね）として組み立て、net change を topic 8.3 で扱う。見出しの「純変化量」と ja.alt の「純変化定理」は、学習指導要領解説に無い、本プロジェクトの訳語。",
+  "mapping": "near",
+  "mapping_note": "学習指導要領解説（数学III）は、速度 v を時刻 t₁ から t₂ まで積分して点の「位置の変化」を、|v| を積分して「道のり」を求める例を挙げるが、定積分で求まる変化の合計一般の名前は出てこない。OpenStax Calculus Volume 1 と AP の CED（topic 8.3）は、増えた分と減った分を差し引いた変化を net change と呼び、OpenStax Calculus Volume 1 は ∫ₐᵇ F′(x)dx = F(b) − F(a) を Net Change Theorem として示す。AP の CED は Unit 6 を accumulation of change（変化の積み重ね）として組み立て、net change を topic 8.3 で扱う。見出しの「純変化量」と ja.alt の「純変化定理」は、学習指導要領解説に無い、本プロジェクトの訳語。",
   "domains": [
     "calculus"
   ],
@@ -32,7 +32,7 @@
       "Calculus I"
     ]
   },
-  "definition_ja": "ある量の、区間の始めから終わりまでの変化の合計。増えた分と減った分を差し引いたもので、変化率の定積分で求まる（∫ₐᵇ F′(x)dx = F(b) − F(a)。この形を純変化定理と呼ぶ）。",
+  "definition_ja": "ある量の、区間の始めから終わりまでの変化の合計。増えた分と減った分を差し引いたもので、変化率の定積分で求まる（∫ₐᵇ F′(x)dx = F(b) − F(a)。OpenStax Calculus はこの形を Net Change Theorem と呼ぶ）。",
   "definition_en": "The total change in a quantity over an interval, gains minus losses. It is the integral of the rate of change: ∫ₐᵇ F′(x) dx = F(b) − F(a) (the net change theorem).",
   "latex": "\\int_a^b F'(x)\\,dx = F(b) - F(a)",
   "spoken_en": "the integral from a to b of F prime of x dx equals F of b minus F of a",

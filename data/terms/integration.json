@@ -12,8 +12,8 @@
     "register": "both"
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "日本語版 Wikipedia「積分法」は「積分」という語が原始関数（不定積分）を指すこともあると書き、「積分記号」は ∫ で書いた式を「f(x) の積分」と呼ぶ。英語では、OpenStax Calculus は求める操作を integration（Volume 1 5.2 の the process of integration）、∫ で書いた式やその値を integral（this integral、the integral of …。エントリ integral・definite-integral・indefinite-integral）と呼び分ける。",
   "domains": [
     "calculus"
   ],
@@ -54,7 +54,7 @@
     }
   ],
   "pitfalls": [
-    "日本語の「積分」は操作にも式にも使うが、英語では操作は integration、∫ で書かれた式そのものは an integral と言い分ける（take the integral ／ this integral diverges）。"
+    "英語では、操作は integration、∫ で書かれた式そのものは an integral と言い分ける（take the integral ／ this integral diverges）。"
   ],
   "related": [
     "integrate",
@@ -71,7 +71,20 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 1"
+      "title": "OpenStax Calculus Volume 1",
+      "note": "5.2 The Definite Integral（the process of integration）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「積分法」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%A9%8D%E5%88%86%E6%B3%95",
+      "note": "冒頭: 「積分」（integral）という語は原始関数（不定積分）を指すこともある（mapping_note）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「積分記号」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%A9%8D%E5%88%86%E8%A8%98%E5%8F%B7",
+      "note": "使用例: ∫ で書いた式を「集合 D 上での f(x) の積分」と呼ぶ（mapping_note）"
     }
   ],
   "confidence": "verified",
@@ -80,7 +93,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "integration": 587

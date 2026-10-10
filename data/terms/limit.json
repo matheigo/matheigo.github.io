@@ -57,7 +57,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本語は値を「極限値」、考え方や操作を「極限」と言い分けるが、英語はどちらも limit。",
+    "日本語は値を「極限値」とも「極限」とも言い（日本語版 Wikipedia「極限」は数列が限りなく近づく値を「数列の極限あるいは極限値」と書き、高等学校学習指導要領解説（数学III）は「数列の極限を求める」と書く）、考え方や操作も「極限」と言う。英語はどれも limit（極限値が 4 は the limit is 4）。",
     "lim_{x→a} f(x) は the limit as x approaches a of f of x と、近づけ方（as x approaches a）を先に読む。"
   ],
   "related": [
@@ -83,6 +83,18 @@
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
       "note": "Topic 1.2（limit notation）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「極限」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%A5%B5%E9%99%90",
+      "note": "冒頭: 数列が限りなく近づく値を数列の極限あるいは極限値という（pitfalls[0]）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学III (1) 極限: 簡単な数列の極限を求める（pitfalls[0]）"
     }
   ],
   "confidence": "verified",
@@ -91,7 +103,7 @@
     "audit": "2026-09-27",
     "human": null
   },
-  "updated": "2026-09-27",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "limit": 3322,

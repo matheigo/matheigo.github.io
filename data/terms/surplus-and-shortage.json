@@ -3,7 +3,9 @@
   "ja": {
     "term": "過不足",
     "reading": "かぶそく",
-    "alt": []
+    "alt": [
+      "過不足算"
+    ]
   },
   "en": {
     "term": "surplus and shortage",
@@ -12,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。見出しの surplus and shortage は本プロジェクトの説明的な訳。英語で説明するときは「余る」を left over、「足りない」を short（2 short）と言って、状況をそのまま文にする。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。日本語版 Wikipedia「過不足算」は、ものを分けたときの過不足の情報 2 つから人数と全体の個数を求める算数の文章題とする。見出しの surplus and shortage は本プロジェクトの説明的な訳。英語で説明するときは「余る」を left over、「足りない」を short（2 short）と言って、状況をそのまま文にする。",
   "domains": [
     "algebra"
   ],
@@ -55,6 +57,12 @@
   "sources": [
     {
       "type": "editorial"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「過不足算」",
+      "url": "https://ja.wikipedia.org/wiki/%E9%81%8E%E4%B8%8D%E8%B6%B3%E7%AE%97",
+      "note": "概要: 算数の文章題の一種。ものを分けたときの過不足の情報 2 つから人数と全体の個数を求める（mapping_note・ja.alt）"
     }
   ],
   "confidence": "verified",
@@ -63,7 +71,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"

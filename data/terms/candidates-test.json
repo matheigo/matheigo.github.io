@@ -11,8 +11,8 @@
     "uk": null
   },
   "pos": "noun",
-  "mapping": "none",
-  "mapping_note": "学習指導要領解説には、閉区間で端点と極値の値を比べて最大値・最小値を求める方法の名前が出てこない。AP の CED（topic 5.5）はこの方法を Candidates Test と呼ぶ。見出しの「候補点テスト」は本プロジェクトの訳語。",
+  "mapping": "near",
+  "mapping_note": "学習指導要領解説（数学II）は、導関数でグラフの概形を調べて区間が制限された関数の最大値や最小値を考察すると書くが、端点と極値の値を比べて最大値・最小値を求める方法の名前は出てこない。AP の CED（topic 5.5）はこの方法を Candidates Test と呼び、OpenStax Calculus Volume 1（4.3）は同じ手順を名前を付けずに示す（Locating Absolute Extrema over a Closed Interval）。見出しの「候補点テスト」は本プロジェクトの訳語。",
   "domains": [
     "calculus"
   ],
@@ -60,7 +60,12 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "閉区間で端点と極値の値を比べて最大値・最小値を求める方法の名前が出てこない"
+      "note": "数学II 微分の考え: グラフの概形を観察して区間が制限された関数の最大値や最小値を考察する（方法の名前は出てこない）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 1",
+      "note": "4.3 Maxima and Minima（Locating Absolute Extrema over a Closed Interval。mapping_note）"
     }
   ],
   "confidence": "verified",
@@ -69,16 +74,16 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "sources": [],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CED の呼び方 candidates test（topic 5.5）。register は主張しない。",
-      "raised": "2026-09-25"
+      "raised": "2026-10-09"
     }
   ]
 }

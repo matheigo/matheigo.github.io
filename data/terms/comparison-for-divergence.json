@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。「aₙ ≧ bₙ で bₙ → ∞ なら aₙ → ∞」という性質に英語の名前はなく、英語で書くときは Since aₙ ≥ bₙ and bₙ → ∞, aₙ → ∞ as well. と理由を文で書く。見出しの英語は本プロジェクトの説明的な訳。日本語の「追い出しの原理」は大学受験で使われる名前（日本語版 Wikipedia「はさみうちの原理」）。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。数列の「aₙ ≧ bₙ で bₙ → ∞ なら aₙ → ∞」という性質は、参照に名前も定理の形も出てこない（同じ比較を、OpenStax Calculus Volume 2 は広義積分で A Comparison Theorem（3.7）、級数で Comparison Test（5.4）として示し、AP の CED（topic 10.6）も級数の comparison test を扱う）。数列で書くときは Since aₙ ≥ bₙ and bₙ → ∞, aₙ → ∞ as well. と理由を文で書く。見出しの英語は本プロジェクトの説明的な訳。日本語の「追い出しの原理」は大学受験で使われる名前（日本語版 Wikipedia「はさみうちの原理」）。",
   "domains": [
     "calculus",
     "analysis"
@@ -21,10 +21,7 @@
     "jp": [
       "数III"
     ],
-    "us": [
-      "AP Calculus AB",
-      "Calculus I"
-    ]
+    "us": []
   },
   "definition_ja": "すべての n で aₙ ≧ bₙ であり、bₙ が正の無限大に発散するなら、aₙ も正の無限大に発散するという性質。",
   "definition_en": "The property that if aₙ ≥ bₙ for every n and bₙ → ∞, then aₙ → ∞ as well.",
@@ -57,6 +54,17 @@
       "title": "日本語版 Wikipedia「はさみうちの原理」",
       "url": "https://ja.wikipedia.org/wiki/%E3%81%AF%E3%81%95%E3%81%BF%E3%81%86%E3%81%A1%E3%81%AE%E5%8E%9F%E7%90%86",
       "note": "追い出しの原理（日本の大学受験で使われる名前）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Calculus Volume 2",
+      "note": "3.7 Improper Integrals（A Comparison Theorem）・5.4 Comparison Tests（Comparison Test。mapping_note）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 10.6（comparison test。mapping_note）"
     }
   ],
   "confidence": "verified",
@@ -65,7 +73,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"

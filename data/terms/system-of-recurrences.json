@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "none",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。Nicholson の Linear Algebra with Applications（3.3）は、2 つ以上の量を互いの前の値で表す漸化式を行列で vₖ₊₁ = Avₖ と書き、このベクトルの列を linear dynamical system と呼ぶ。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。Nicholson の Linear Algebra with Applications（3.3）は、2 つ以上の量を互いの前の値で表す漸化式を行列で vₖ₊₁ = Avₖ と書き、この条件を matrix recurrence、ベクトルの列を linear dynamical system と呼ぶ（線形の場合で、行列の対角化で解く）。日本語版 Wikipedia「数列」も、連立線型漸化式を係数行列 A を使って同じ形に書く。",
   "domains": [
     "sequences"
   ],
@@ -55,7 +55,19 @@
       "type": "reference",
       "title": "W. Keith Nicholson, Linear Algebra with Applications (Lyryx, 2021A)",
       "url": "https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/897/2/Nicholson-OpenLAWA-2021A.pdf",
-      "note": "3.3 Diagonalization and Eigenvalues（linear dynamical system、Example 3.3.1）"
+      "note": "3.3 Diagonalization and Eigenvalues（matrix recurrence・linear dynamical system、Example 3.3.1）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数列」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%88%97",
+      "note": "節「連立線型漸化式」: 2 つの数列の連立漸化式を係数行列で書く（mapping_note）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「数学 (教科)」",
+      "url": "https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6_(%E6%95%99%E7%A7%91)",
+      "note": "新課程の学習内容: 数学B の漸化式に「二つの数列の漸化式」（level.jp 数B）"
     }
   ],
   "confidence": "verified",
@@ -64,7 +76,7 @@
     "audit": "2026-09-27",
     "human": null
   },
-  "updated": "2026-09-27",
+  "updated": "2026-10-09",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"

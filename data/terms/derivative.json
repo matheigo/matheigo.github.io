@@ -19,8 +19,8 @@
     "register": "both"
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "高等学校学習指導要領解説（数学II）は「微分係数や導関数の意味」「x = a における微分係数」と、ある点での値（微分係数、エントリ derivative-at-a-point）と関数（導関数）を別の語で書き、日本語版 Wikipedia「微分」も、a に微分係数 f′(a) を対応させる関数 f′ を導関数と呼んで分ける。英語の derivative はどちらにも使い、AP の CED（topic 2.2）は the derivative of a function at a point とも the derivative of f is the function とも書く。OpenStax Calculus Volume 1 は 3.1 で値 f′(a) も derivative と呼び、関数であることをはっきり言うときは 3.2 の derivative function を使う。",
   "domains": [
     "calculus"
   ],
@@ -52,7 +52,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "日本語は「導関数」（関数）と「微分係数」（値）を呼び分けるが、英語はどちらも derivative と言い、値のときは the derivative at x = a（f prime of a）と言う。",
+    "ある点での値（微分係数）を言うときは the derivative at x = a（f prime of a）と言う（エントリ derivative-at-a-point）。",
     "操作としての「微分」は differentiation、動詞は differentiate（take the derivative）。"
   ],
   "related": [
@@ -69,13 +69,26 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 1"
+      "title": "OpenStax Calculus Volume 1",
+      "note": "3.1 Defining the Derivative（the derivative of the function f(x) at a）・3.2 The Derivative as a Function（derivative function）"
     },
     {
       "type": "reference",
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
-      "note": "Unit 2（derivative）"
+      "note": "Unit 2（derivative）・Topic 2.2（derivative of a function at a point）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学II (5) 微分・積分の考え: 微分係数や導関数の意味、x = a における微分係数（mapping_note）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「微分」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%BE%AE%E5%88%86",
+      "note": "a に微分係数 f′(a) を対応させる関数 f′ を f の導関数という（mapping_note）"
     }
   ],
   "confidence": "verified",
@@ -84,7 +97,7 @@
     "audit": "2026-09-27",
     "human": null
   },
-  "updated": "2026-09-27",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "derivative": 7857,

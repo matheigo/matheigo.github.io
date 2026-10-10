@@ -11,8 +11,8 @@
     "uk": null
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "IM Grade 7（1.7 Scale Drawings）は、長さを同じ割合で拡大した scale drawing にも縮小した scale drawing にも scale を使う。日本語の「縮尺」は縮めて表した割合で、日本語版 Wikipedia「縮尺」は実物より大きい図面・模型の比を倍尺、実物大を現尺と呼んで縮尺と分ける。",
   "domains": [
     "geometry"
   ],
@@ -61,7 +61,13 @@
       "type": "reference",
       "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7)",
       "url": "https://im.kendallhunt.com/MS/students/2/index.html",
-      "note": "Unit 1: 1.8 Scale Drawings and Maps・1.11 Scales without Units・1.12 Units in Scale Drawings（scale of the map）"
+      "note": "Unit 1: 1.7 Scale Drawings（enlarged or reduced。mapping_note）・1.8 Scale Drawings and Maps・1.11 Scales without Units・1.12 Units in Scale Drawings（scale of the map）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「縮尺」",
+      "url": "https://ja.wikipedia.org/wiki/%E7%B8%AE%E5%B0%BA",
+      "note": "節「縮尺以外の尺度用語」: 倍尺・現尺（mapping_note）"
     }
   ],
   "confidence": "verified",
@@ -70,7 +76,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "scale of the map | scale of the drawing | map scale | scale on the map | scale of a map | scale of a drawing": 1
@@ -84,7 +90,7 @@
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 scale of the map | scale of the drawing | map scale | scale on the map | scale of a map | scale of a drawing（Grade 7 1.12 Units in Scale Drawings・Grade 7 1.7 Scale Drawings・Grade 7 1.8 Scale Drawings and Maps・計 10 件）。register は主張しない。",
-      "raised": "2026-09-26"
+      "raised": "2026-10-09"
     }
   ]
 }

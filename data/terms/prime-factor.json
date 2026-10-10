@@ -43,7 +43,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "素因数分解（エントリ prime-factorization）は数を素因数の積で表すこと。素因数はその積に出てくる素数のことで、同じ素数は 1 つと数える（12 = 2 × 2 × 3 の素因数は 2 と 3 の 2 つ）。",
+    "素因数分解（エントリ prime-factorization）は数を素因数の積で表すこと。素因数はその積に出てくる素数のことで、「12 の素因数」と言えば異なる素数 2 と 3 を挙げるが、「素因数 2 を 2 個もつ」のように重なりを数える言い方もある（センター試験 平成 26 年度 本試験 数学II・数学B 第6問）。英語でも OpenStax Elementary Algebra 1.1 は 12 の prime factors を 2 · 2 · 3 と重ねて書く。",
     "factor だけでは「因数・約数」の意味で、12 の factor には素数でない 4 や 6 も入る。factor は「因数分解する」という動詞にもなる。",
     "1 は素数ではないので、素因数にならない。"
   ],
@@ -63,6 +63,16 @@
     {
       "type": "textbook",
       "title": "OpenStax Prealgebra 2e"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "1.1 Introduction to Whole Numbers（the prime factors of 12（2 · 2 · 3）。pitfalls[0]）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入学共通テスト・大学入試センター試験 本試験 数学（問題）",
+      "note": "センター試験 平成 26 年度 数学II・数学B 第6問: 6! は素因数 2 を…個もつ（pitfalls[0]）"
     }
   ],
   "confidence": "verified",
@@ -71,7 +81,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "prime factor": 31

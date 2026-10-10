@@ -12,8 +12,8 @@
     "register": "both"
   },
   "pos": "noun",
-  "mapping": "none",
-  "mapping_note": "穴のある回転体の体積は「外側の回転体から内側の回転体を引く」π∫({f(x)}² − {g(x)}²)dx で求める。学習指導要領解説にはこの求め方の名前が出てこない。OpenStax Calculus と AP の CED（topic 8.11・8.12）は断面がワッシャー（座金。中央に穴のある円板）の形になるので washer method と呼ぶ。見出しの「ワッシャー法」は学習指導要領解説に無い、本プロジェクトの訳語。",
+  "mapping": "near",
+  "mapping_note": "学習指導要領解説（数学III）は、x 軸と曲線 y = f(x) の間の図形を x 軸のまわりに回してできる立体の体積を π∫{f(x)}²dx で求めることを挙げ、穴のある回転体の求め方の名前は出てこない。日本語版 Wikipedia「回転体」は、2 曲線 f(x), g(x) で囲まれた図形の回転体の体積 π∫|f(x)² − g(x)²|dx を円板法（円板分割法）の中で扱い、別の名前を付けない。OpenStax Calculus と AP の CED（topic 8.11・8.12）は、断面がワッシャー（座金。中央に穴のある円板）の形になる場合を disk method と分けて washer method と呼ぶ。見出しの「ワッシャー法」は学習指導要領解説にも日本語版 Wikipedia にも無い、本プロジェクトの訳語。",
   "domains": [
     "calculus"
   ],
@@ -63,7 +63,13 @@
       "type": "reference",
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
-      "note": "この求め方の名前が出てこない・「ワッシャー法」は出てこない"
+      "note": "数学III 積分法: y = f(x) と x 軸の間の図形の回転体の体積 π∫{f(x)}²dx（穴のある回転体の求め方の名前・「ワッシャー法」は出てこない）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「回転体」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%9E%E8%BB%A2%E4%BD%93",
+      "note": "節「円板法」: 2 曲線の間の図形の回転体の体積 π∫|f(x)² − g(x)²|dx（mapping_note）"
     }
   ],
   "confidence": "verified",
@@ -72,7 +78,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "washer method": 15
@@ -86,6 +92,6 @@
       "openstax-calculus",
       "yt:profleonard"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-09-26"
   }
 }

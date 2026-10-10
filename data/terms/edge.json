@@ -45,7 +45,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語では、多角形の辺は side（エントリ side）、立体の辺は edge と言い分ける。",
+    "英語では、立体の辺は edge と言い（立方体の辺は 12 edges。面・頂点と並べて faces, edges, and vertices）、多角形の辺の side（エントリ side）とは呼び名が違う。ただし立方体の辺の長さは edge length のほかに side length とも言う（IM Grade 6 は a cube with side length s、OpenStax Prealgebra 9.6 は a cube with sides of length s と書く）。",
     "グラフ理論の edge（エントリ edge-of-a-graph）も同じ語だが、頂点と頂点を結ぶ線のことで、別の概念。",
     "日常語の edge は「ふち・端」の意味（the edge of the table）。"
   ],
@@ -61,7 +61,12 @@
       "type": "reference",
       "title": "Illustrative Mathematics, IM 6–8 Math (Grade 6)",
       "url": "https://im.kendallhunt.com/MS/students/1/index.html",
-      "note": "Grade 6 4.15 Volume of Prisms・4.14 Fractional Lengths in Triangles and Prisms・1.18 Surface Area of a Cube"
+      "note": "Grade 6 4.15 Volume of Prisms・4.14 Fractional Lengths in Triangles and Prisms・1.18 Surface Area of a Cube（a cube with side length s）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "9.6 Solve Geometry Applications: Volume and Surface Area（a cube with sides of length s。pitfalls[0]）"
     }
   ],
   "confidence": "verified",
@@ -70,7 +75,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "edge of the cube | edge of a cube | edge length | edge of the prism | edge of a polyhedron | faces, edges | faces and edges | edges and vertices | edges, and vertices": 2

@@ -15,8 +15,8 @@
     "register": "both"
   },
   "pos": "noun",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "日本語の「x 軸との交点」は x 軸と交わる点で、接する点も含めて言うときは「x 軸との共有点」と言う（高等学校学習指導要領解説（数学I）は二次方程式の解をグラフと x 軸との共有点の x 座標と捉える）。日本語版 Wikipedia「切片 (数学)」は、x 軸との交点を x 切片と呼び、一次関数では交点の x 座標を x 切片と呼ぶ。英語の x-intercept は接する点も含み（OpenStax Algebra and Trigonometry 5.3 は重解のところでグラフが touches the axis at the intercept と書く）、ふつうは点を指すが（IM Algebra 1 の用語集は horizontal intercept（x-intercept）をグラフが横軸と交わる点とする）、x 座標の数だけを言うこともある（OpenStax Precalculus 2.3）。",
   "domains": [
     "functions"
   ],
@@ -64,7 +64,7 @@
     }
   ],
   "pitfalls": [
-    "日本語の「交点」は点 (3, 0) で答えるが、英語の x-intercept は x 座標の 3 だけを指すこともある。どちらで答えるかは問題文を見る。",
+    "答えを点 (3, 0) で書くか、x 座標の 3 で書くかは問題文を見る。",
     "グラフが x 軸に接する点（重解）も x-intercept に数える。「x 軸との共有点」の訳も x-intercept でよく、その個数は判別式の符号で決まる。"
   ],
   "related": [
@@ -77,11 +77,35 @@
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Algebra and Trigonometry 2e"
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "5.3 Graphs of Polynomial Functions（touches the axis at the intercept。mapping_note）"
     },
     {
       "type": "textbook",
       "title": "OpenStax Calculus Volume 1"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "2.3 Modeling with Linear Functions（x-intercept を数で言う。mapping_note）"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 二次関数: 二次方程式の解をグラフと x 軸との共有点の x 座標と捉える（mapping_note）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「切片 (数学)」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%88%87%E7%89%87_(%E6%95%B0%E5%AD%A6)",
+      "note": "冒頭・1 次関数の場合: x 軸との交点を x 切片、一次関数では交点の x 座標を x 切片と呼ぶ（mapping_note）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Algebra 1)",
+      "url": "https://im.kendallhunt.com/HS/students/1/index.html",
+      "note": "Algebra 1 glossary（horizontal intercept: also called the x-intercept。mapping_note）"
     }
   ],
   "confidence": "verified",
@@ -90,7 +114,7 @@
     "audit": "2026-09-27",
     "human": null
   },
-  "updated": "2026-09-27",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "x-intercept": 98
