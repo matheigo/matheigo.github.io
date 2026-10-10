@@ -1,56 +1,12 @@
 {
  "rows": 357,
  "status": {
-  "見つからない": 3,
-  "checked A": 65,
+  "checked A": 68,
   "checked B": 26,
   "ok": 263
  },
  "verifiedToRead": 0,
  "list": [
-  {
-   "collection": "terms",
-   "id": "candidates-test",
-   "confidence": "likely",
-   "field": "mapping_note",
-   "subjects": [
-    "数学II"
-   ],
-   "status": "見つからない",
-   "sentence": "学習指導要領解説（数学II）は、導関数でグラフの概形を調べて区間が制限された関数の最大値や最小値を考察すると書くが、端点と極値の値を比べて最大値・最小値を求める方法の名前は出てこない。",
-   "hits": {
-    "候補点テスト": {}
-   }
-  },
-  {
-   "collection": "terms",
-   "id": "washer-method",
-   "confidence": "likely",
-   "field": "mapping_note",
-   "subjects": [
-    "数学III"
-   ],
-   "status": "見つからない",
-   "sentence": "学習指導要領解説（数学III）は、x 軸と曲線 y = f(x) の間の図形を x 軸のまわりに回してできる立体の体積を π∫{f(x)}²dx で求めることを挙げ、穴のある回転体の求め方の名前は出てこない。",
-   "hits": {
-    "ワッシャー法": {}
-   }
-  },
-  {
-   "collection": "terms",
-   "id": "x-intercept",
-   "confidence": "likely",
-   "field": "mapping_note",
-   "subjects": [
-    "数学I"
-   ],
-   "status": "見つからない",
-   "sentence": "日本語の「x 軸との交点」は x 軸と交わる点で、接する点も含めて言うときは「x 軸との共有点」と言う（高等学校学習指導要領解説（数学I）は二次方程式の解をグラフと x 軸との共有点の x 座標と捉える）。",
-   "hits": {
-    "x軸との交点": {},
-    "x軸との共有点": {}
-   }
-  },
   {
    "collection": "conventions",
    "id": "approximately-equal-notation",
@@ -535,6 +491,20 @@
    "sentence": "学習指導要領解説（数学A）が確率の性質や法則として挙げるのは 0 ≦ P(A) ≦ 1、P(∅) = 0・P(U) = 1、互いに排反な事象の P(A ∪ B) = P(A) + P(B)、余事象の確率で、乗法定理は入らない。",
    "hits": {
     "確率の基本性質": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "candidates-test",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "subjects": [
+    "数学II"
+   ],
+   "status": "checked A",
+   "sentence": "学習指導要領解説（数学II）は、導関数でグラフの概形を調べて区間が制限された関数の最大値や最小値を考察すると書くが、端点と臨界点での値を比べて最大値・最小値を求める方法の名前は出てこない。",
+   "hits": {
+    "候補点テスト": {}
    }
   },
   {
@@ -1176,6 +1146,35 @@
    "sentence": "補集合の記号は高等学校学習指導要領解説（数学I）では Ā、OpenStax Introductory Statistics では A′（エントリ complement）。",
    "hits": {
     "ベン図": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "washer-method",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "subjects": [
+    "数学III"
+   ],
+   "status": "checked A",
+   "sentence": "学習指導要領解説（数学III）は、x 軸と曲線 y = f(x) の間の図形を x 軸のまわりに回してできる立体の体積を π∫{f(x)}²dx で求めることを挙げ、穴のある回転体の求め方の名前は出てこない。",
+   "hits": {
+    "ワッシャー法": {}
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "x-intercept",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "subjects": [
+    "数学I"
+   ],
+   "status": "checked A",
+   "sentence": "日本語の「x 軸との交点」は x 軸と交わる点で、接する点も含めて言うときは「x 軸との共有点」と言う（高等学校学習指導要領解説（数学I）は二次方程式の解をグラフと x 軸との共有点の x 座標と捉える）。",
+   "hits": {
+    "x軸との交点": {},
+    "x軸との共有点": {}
    }
   },
   {
@@ -3849,13 +3848,14 @@
   {
    "collection": "terms",
    "id": "be-circumscribed-about",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "subjects": [
-    "数学I"
+    "数学I",
+    "数学A"
    ],
    "status": "ok",
-   "sentence": "数学I 正弦定理: 三角形に外接する円",
+   "sentence": "数学I 正弦定理: 三角形に外接する円・数学A 図形の性質: 与えられた四角形に外接する正方形の作図（level.jp 数A）",
    "hits": {
     "正弦定理": {
      "数学編 総説": 1,
@@ -3864,7 +3864,9 @@
     },
     "三角形に外接する円": {
      "数学I": 3
-    }
+    },
+    "数学A図形の性質:与えられた四角形に外接する正方形の作図": {},
+    "level.jp数A": {}
    }
   },
   {
@@ -3967,7 +3969,7 @@
   {
    "collection": "terms",
    "id": "candidates-test",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "subjects": [
     "数学II"
@@ -4442,7 +4444,7 @@
   {
    "collection": "terms",
    "id": "cross-method",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[5].note",
    "subjects": [
     "数学I"
@@ -4544,7 +4546,7 @@
   {
    "collection": "terms",
    "id": "derivative",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "subjects": [
     "数学II"
@@ -4575,7 +4577,7 @@
   {
    "collection": "terms",
    "id": "derivative",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "subjects": [
     "数学II"
@@ -6378,7 +6380,7 @@
   {
    "collection": "terms",
    "id": "net-change",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "subjects": [
     "数学III"
@@ -6397,7 +6399,7 @@
   {
    "collection": "terms",
    "id": "net-change",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "subjects": [
     "数学III"
@@ -6735,7 +6737,7 @@
   {
    "collection": "terms",
    "id": "point-of-intersection",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "subjects": [
     "数学I"
@@ -6768,7 +6770,7 @@
   {
    "collection": "terms",
    "id": "point-of-intersection",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "subjects": [
     "数学I"
@@ -8863,7 +8865,7 @@
   {
    "collection": "terms",
    "id": "washer-method",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "subjects": [
     "数学III"
@@ -8895,7 +8897,7 @@
   {
    "collection": "terms",
    "id": "x-intercept",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "subjects": [
     "数学I"

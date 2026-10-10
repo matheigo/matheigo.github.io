@@ -511,5 +511,32 @@
   "class": "A",
   "note": "TERM_FORMS が squeeze … between で数える（squeeze theorem は別エントリ）",
   "checked": "監査 17"
+ },
+ {
+  "type": "T2",
+  "id": "scale",
+  "key": "だけの",
+  "text": "地図や縮図で、実際の長さをどれだけの割合に縮めて表したかを示すもの。1 : 25000 のような比で書く。",
+  "class": "A",
+  "note": "「どれだけの」の誤検出（backlog 264）。「縮めて」は日本語の縮尺の範囲で、英語の scale との差は mapping_note",
+  "checked": "監査 18"
+ },
+ {
+  "type": "T2",
+  "id": "square-root-of-a-number",
+  "key": "正の数",
+  "text": "2 乗すると a になる数を、a の平方根という。正の数 a の平方根は正と負の 2 つあり、まとめて ±√a と表す。",
+  "class": "A",
+  "note": "英文も For a > 0 で同じ範囲",
+  "checked": "監査 18"
+ },
+ {
+  "type": "T7",
+  "id": "net-change",
+  "key": "headword",
+  "text": "net change",
+  "class": "A",
+  "note": "Net Change Theorem は定義・latex・例文に入れた同じ概念（監査 17 の T7 の判断）",
+  "checked": "監査 18"
  }
 ]

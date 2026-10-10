@@ -378,7 +378,7 @@
    "confidence": "verified",
    "ja": "割合",
    "names": {
-    "割合": 230,
+    "割合": 235,
     "比べる量 ÷ もとにする量": 0
    },
    "noteNamesJp": true,
@@ -402,8 +402,8 @@
    "confidence": "verified",
    "ja": "過不足",
    "names": {
-    "過不足": 3,
-    "過不足算": 2,
+    "過不足": 6,
+    "過不足算": 4,
     "余る": 4,
     "足りない": 5
    },
@@ -802,6 +802,15 @@
    "checkedNote": "「に限る」は cutting down to part of it と同じ"
   },
   {
+   "id": "scale",
+   "confidence": "verified",
+   "word": "だけの",
+   "definition_ja": "地図や縮図で、実際の長さをどれだけの割合に縮めて表したかを示すもの。1 : 25000 のような比で書く。",
+   "definition_en": "On a map or a scale drawing, the relationship between lengths in the drawing and the actual lengths they stand for, such as 1 : 25,000 or 1 inch = 10 miles.",
+   "status": "checked A",
+   "checkedNote": "「どれだけの」の誤検出（backlog 264）。「縮めて」は日本語の縮尺の範囲で、英語の scale との差は mapping_note"
+  },
+  {
    "id": "simplify-radicals",
    "confidence": "verified",
    "word": "自然数",
@@ -809,6 +818,15 @@
    "definition_en": "To pull square factors out from under a radical so that the number left inside is as small as possible, then combine like radical terms in an expression.",
    "status": "checked A",
    "checkedNote": "定義は中3・数I の範囲。英語の広い使い方は pitfalls に足した"
+  },
+  {
+   "id": "square-root-of-a-number",
+   "confidence": "verified",
+   "word": "正の数",
+   "definition_ja": "2 乗すると a になる数を、a の平方根という。正の数 a の平方根は正と負の 2 つあり、まとめて ±√a と表す。",
+   "definition_en": "Either of the numbers that give a when squared. For a > 0 there are exactly two of them, √a and −√a.",
+   "status": "checked A",
+   "checkedNote": "英文も For a > 0 で同じ範囲"
   },
   {
    "id": "subset",
@@ -900,22 +918,6 @@
    "word": "だけで",
    "definition_ja": "ベクトルに対して、向きをもたず大きさだけで表される量。ふつうの実数。",
    "definition_en": "A quantity described by a single number, with no direction, as opposed to a vector; an ordinary real number.",
-   "status": ""
-  },
-  {
-   "id": "scale",
-   "confidence": "likely",
-   "word": "だけの",
-   "definition_ja": "地図や縮図で、実際の長さをどれだけの割合に縮めて表したかを示すもの。1 : 25000 のような比で書く。",
-   "definition_en": "On a map or a scale drawing, the relationship between lengths in the drawing and the actual lengths they stand for, such as 1 : 25,000 or 1 inch = 10 miles.",
-   "status": ""
-  },
-  {
-   "id": "square-root-of-a-number",
-   "confidence": "likely",
-   "word": "正の数",
-   "definition_ja": "2 乗すると a になる数を、a の平方根という。正の数 a の平方根は正と負の 2 つあり、まとめて ±√a と表す。",
-   "definition_en": "Either of the numbers that give a when squared. For a > 0 there are exactly two of them, √a and −√a.",
    "status": ""
   },
   {
@@ -1970,11 +1972,6 @@
    "alt": "単調数列定理"
   },
   {
-   "id": "net-change",
-   "confidence": "likely",
-   "alt": "純変化定理"
-  },
-  {
    "id": "newtons-law-of-cooling",
    "confidence": "likely",
    "alt": "ニュートンの冷却の法則"
@@ -2339,6 +2336,18 @@
    },
    "status": "checked A",
    "checkedNote": "判定法 divisibility tests を除いても ① で register both"
+  },
+  {
+   "id": "net-change",
+   "confidence": "verified",
+   "headword": "net change",
+   "total": 23,
+   "inside": 16,
+   "followers": {
+    "theorem": 16
+   },
+   "status": "checked A",
+   "checkedNote": "Net Change Theorem は定義・latex・例文に入れた同じ概念（監査 17 の T7 の判断）"
   },
   {
    "id": "number-of-elements",

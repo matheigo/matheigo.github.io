@@ -59,9 +59,9 @@
 | grouped-sequence | verified | checked A（群数列の型の問題は参照に無い（項を群に区切る技法だけ）。見出しは説明の訳） | 群数列 1、数学 (教科) 2 |
 | liate | verified |  | LIATE 0 |
 | one-sixth-formula | verified | checked A（公式も名前も参照に無い） | 1/6 公式 5、1/6公式 5 |
-| rate | verified | checked A（「割合」1 語に当たる語は参照に無く、場面で言い分ける。見出しは説明の訳） | 割合 230、比べる量 ÷ もとにする量 0 |
+| rate | verified | checked A（「割合」1 語に当たる語は参照に無く、場面で言い分ける。見出しは説明の訳） | 割合 235、比べる量 ÷ もとにする量 0 |
 | sign-chart | verified |  | 増減表 0 |
-| surplus-and-shortage | verified | checked A（問題の型の名前は参照に無い。見出しは説明の訳） | 過不足 3、過不足算 2、余る 4、足りない 5 |
+| surplus-and-shortage | verified | checked A（問題の型の名前は参照に無い。見出しは説明の訳） | 過不足 6、過不足算 4、余る 4、足りない 5 |
 | system-of-recurrences | verified | checked A（見出しは説明の訳。Nicholson の matrix recurrence は線形・行列の形だけ） | 連立漸化式 6、数列 1041 |
 | three-perpendiculars-theorem | verified | checked A（定理の名前も形も参照に無い） | 三垂線の定理 1 |
 | angle-addition-postulate | likely |  | 角の加法公理 0 |
@@ -88,7 +88,7 @@
 
 ## T2. 定義の日本語に、定義の英文が言わない限定がある
 
-- 行: **28**（verified 18・likely 10）、**読む行 0**（verified の行から、監査が読んで正しいとした 18 行を除く。sample_types_checked.json）。抜き取りで見つけた例: right-riemann-sum・left-riemann-sum（「区間を等分した」。CED topic 6.2 は nonuniform partitions も認める）。英語の見出しの意味（参照の定義）より狭いなら定義の日本語を直す（定義の意味の変更は大きな直し）
+- 行: **28**（verified 20・likely 8）、**読む行 0**（verified の行から、監査が読んで正しいとした 20 行を除く。sample_types_checked.json）。抜き取りで見つけた例: right-riemann-sum・left-riemann-sum（「区間を等分した」。CED topic 6.2 は nonuniform partitions も認める）。英語の見出しの意味（参照の定義）より狭いなら定義の日本語を直す（定義の意味の変更は大きな直し）
 
 | id | confidence | 確かめ | 語 | definition_ja | definition_en |
 |---|---|---|---|---|---|
@@ -105,7 +105,9 @@
 | prime-factorization | verified | checked A（0 が関わらない・素数だけの積は product of prime numbers と同じ） | だけの | 自然数を素数だけの積の形に表すこと。また、その積の形。1 より大きい自然数では、積の順番を除いてただ 1 通りに決まる。 | Writing a whole number as a product of prime numbers, or the product itself; for any whole number greater… |
 | prime-number | verified | checked A（0 が関わらないので whole number greater than 1 と同じ） | 自然数 | 2 以上の自然数のうち、1 とその数自身のほかに正の約数をもたないもの。1 は素数ではない。 | A whole number greater than 1 whose only positive factors are 1 and itself. The number 1 is not prime. |
 | restricted-domain | verified | checked A（「に限る」は cutting down to part of it と同じ） | に限る | 関数の定義域を一部に限ること。1 対 1 でない関数に逆関数を考えるときなどに使う。 | Cutting a function's domain down to part of it, for instance so that a function which fails the horizontal… |
+| scale | verified | checked A（「どれだけの」の誤検出（backlog 264）。「縮めて」は日本語の縮尺の範囲で、英語の scale との差は…） | だけの | 地図や縮図で、実際の長さをどれだけの割合に縮めて表したかを示すもの。1 : 25000 のような比で書く。 | On a map or a scale drawing, the relationship between lengths in the drawing and the actual lengths they… |
 | simplify-radicals | verified | checked A（定義は中3・数I の範囲。英語の広い使い方は pitfalls に足した） | 自然数 | 根号の中の数から平方因数を外に出し、根号の中をできるだけ小さい自然数にする。根号を含む式では、そのうえで同じ根号の項をまとめる。 | To pull square factors out from under a radical so that the number left inside is as small as possible, then… |
+| square-root-of-a-number | verified | checked A（英文も For a > 0 で同じ範囲） | 正の数 | 2 乗すると a になる数を、a の平方根という。正の数 a の平方根は正と負の 2 つあり、まとめて ±√a と表す。 | Either of the numbers that give a when squared. For a > 0 there are exactly two of them, √a and −√a. |
 | subset | verified | checked A（「だけで」は nothing in A lies outside B と同じ） | だけで | 集合 B の要素だけでできている集合 A のこと。A のどの要素も B の要素であるとき、A を B の部分集合という。 | A set A is a subset of a set B when nothing in A lies outside B: each member of A belongs to B as well. |
 | sufficient-condition | verified | checked A（「必ず」は whenever と同じ） | 必ず | 「p ならば q」が真のとき、p を q であるための十分条件という。p が成り立てば q も必ず成り立つ。 | If "if p, then q" is true, p is a sufficient condition for q: whenever p holds, q holds as well. |
 | x-coordinate | verified | checked A（「どれだけの」（どのくらいの）を拾った。限定ではない） | だけの | 点の座標 (x, y) の 1 つ目の数。点が原点から右（正）または左（負）にどれだけの位置にあるかを表す。 | In an ordered pair (x, y), the number written first. It tells how far right (positive) or left (negative) of… |
@@ -117,8 +119,6 @@
 | quantifier | likely |  | だけの | 述語の変数について、「すべての x について」「ある x について」のように、どれだけの値で成り立つかを指定する語や記号のこと。∀ と ∃ がある。 | A word or symbol, such as "for all" (∀) or "there exists" (∃), that tells for how many values of a variable a… |
 | row-echelon-form | likely |  | だけの | 各行の最初の 0 でない成分（先頭の 1）が、下の行ほど右にある形の行列。0 だけの行は下にまとめる。 | The form of a matrix in which each row's first nonzero entry (the leading 1) lies to the right of the one… |
 | scalar | likely |  | だけで | ベクトルに対して、向きをもたず大きさだけで表される量。ふつうの実数。 | A quantity described by a single number, with no direction, as opposed to a vector; an ordinary real number. |
-| scale | likely |  | だけの | 地図や縮図で、実際の長さをどれだけの割合に縮めて表したかを示すもの。1 : 25000 のような比で書く。 | On a map or a scale drawing, the relationship between lengths in the drawing and the actual lengths they… |
-| square-root-of-a-number | likely |  | 正の数 | 2 乗すると a になる数を、a の平方根という。正の数 a の平方根は正と負の 2 つあり、まとめて ±√a と表す。 | Either of the numbers that give a when squared. For a > 0 there are exactly two of them, √a and −√a. |
 | strong-induction | likely |  | だけで | 数学的帰納法の一種で、n = 1, 2, …, k のすべてで成り立つと仮定して、n = k + 1 でも成り立つことを示す証明法。直前の 1 つだけでなく、それより前のすべての場… | A form of induction in which you assume the statement holds for every case from the base case up to k, and… |
 
 ## T3. ③ で参照が決めた見出しの根拠が、すべて参照の別の名前（題）の一部
@@ -141,13 +141,14 @@
 
 ## T7. 見出しの語を書き言葉のコーパスが、もっと長い言い方の先頭としてばかり使う（第 2 回）
 
-- 行: **5**（verified 5・likely 0）、**読む行 0**（verified の行から、監査が読んで正しいとした 5 行を除く。sample_types_checked.json）（verified の terms で、書き言葉の生の件数が 5 以上、うち 6 割以上が直後に problem ／ application ／ method ／ theorem ／ rule ／ formula ／ function ／ equation ／ test ／ property ／ law ／ identity ／ sum ／ notation の語を伴うもの）。第 2 回で見つけた例: motion-problem（uniform motion の書き言葉はすべて uniform motion applications ／ problems の内側で、見出しが運動の名前になっていた → uniform motion problem）。見出しが単独の概念（the derivative、the product rule の product）として使われる語も混じるので、`pnpm corpus:probe -- --contexts "<見出し>"` で読んで決める
+- 行: **6**（verified 6・likely 0）、**読む行 0**（verified の行から、監査が読んで正しいとした 6 行を除く。sample_types_checked.json）（verified の terms で、書き言葉の生の件数が 5 以上、うち 6 割以上が直後に problem ／ application ／ method ／ theorem ／ rule ／ formula ／ function ／ equation ／ test ／ property ／ law ／ identity ／ sum ／ notation の語を伴うもの）。第 2 回で見つけた例: motion-problem（uniform motion の書き言葉はすべて uniform motion applications ／ problems の内側で、見出しが運動の名前になっていた → uniform motion problem）。見出しが単独の概念（the derivative、the product rule の product）として使われる語も混じるので、`pnpm corpus:probe -- --contexts "<見出し>"` で読んで決める
 
 | id | confidence | 確かめ | 見出し | 書き言葉の件数 | 長い言い方の内側 | 直後の語 |
 |---|---|---|---|---|---|---|
 | arctangent | verified | checked A（inverse tangent function は同じ概念の言い方） | inverse tangent | 15 | 10 | function 10 |
 | differential | verified | checked A（TERM_FORMS が differential equation(s) を除いて数える） | differential | 713 | 622 | equation 619、function 2、notation 1 |
 | divisibility | verified | checked A（判定法 divisibility tests を除いても ① で register both） | divisibility | 33 | 21 | test 20、rule 1 |
+| net-change | verified | checked A（Net Change Theorem は定義・latex・例文に入れた同じ概念（監査 17 の T7 の判断）） | net change | 23 | 16 | theorem 16 |
 | number-of-elements | verified | checked A（cardinality rules はページの柱。除いても見出し・register は同じ） | cardinality | 34 | 22 | rule 22 |
 | squeeze | verified | checked A（TERM_FORMS が squeeze … between で数える（squeeze theorem は別エントリ）） | squeeze | 17 | 13 | theorem 13 |
 
@@ -206,7 +207,7 @@
 
 ## T6. 日本側の手元の資料に 0 件の ja.alt（小さな直しの型）
 
-- 行: **186**（verified 86・likely 99）。抜き取りで見つけた例: local-maximum の「相対最大値」（日本語版 Wikipedia「最大と最小」は「相対的最大値」）、derivative-of-a-parametric-curve の「媒介変数曲線の微分」、limit-of-a-riemann-sum の「定積分と和の極限」、coin の「表（硬貨）」（硬貨の言い換えではない）。手元に無い記事は `python3 scripts/audit/jawiki.py --search <語>` で確かめてから、資料の言い方にするか外す（監査 7 の前の決定 4。言い換えでない台帳の統合の名残も外す）
+- 行: **185**（verified 86・likely 98）。抜き取りで見つけた例: local-maximum の「相対最大値」（日本語版 Wikipedia「最大と最小」は「相対的最大値」）、derivative-of-a-parametric-curve の「媒介変数曲線の微分」、limit-of-a-riemann-sum の「定積分と和の極限」、coin の「表（硬貨）」（硬貨の言い換えではない）。手元に無い記事は `python3 scripts/audit/jawiki.py --search <語>` で確かめてから、資料の言い方にするか外す（監査 7 の前の決定 4。言い換えでない台帳の統合の名残も外す）
 
 | id | confidence | ja.alt |
 |---|---|---|
@@ -344,7 +345,6 @@
 | linearly-dependent | likely | 線形従属 |
 | midline | likely | 中央線 |
 | monotone-convergence-theorem | likely | 単調数列定理 |
-| net-change | likely | 純変化定理 |
 | newtons-law-of-cooling | likely | ニュートンの冷却の法則 |
 | orientation | likely | 曲線の向き |
 | paired-t-test | likely | 対応のある標本 |

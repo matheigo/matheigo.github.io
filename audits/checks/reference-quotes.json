@@ -1,9 +1,9 @@
 {
- "rows": 2651,
+ "rows": 2669,
  "found": {
   "checked A": 64,
-  "checked B": 49,
-  "yes": 2538
+  "checked B": 51,
+  "yes": 2554
  },
  "verifiedNotFound": {},
  "list": [
@@ -923,6 +923,17 @@
   },
   {
    "collection": "terms",
+   "id": "be-circumscribed-about",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "references": [
+    "enwiki:Inscribed figure"
+   ],
+   "wording": "B is inscribed in A",
+   "found": "checked B"
+  },
+  {
+   "collection": "terms",
    "id": "biconditional",
    "confidence": "likely",
    "field": "sources[0].note",
@@ -1192,12 +1203,23 @@
   {
    "collection": "terms",
    "id": "square-root-of-a-number",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "pitfalls[3]",
    "references": [
     "openstax:Elementary Algebra"
    ],
    "wording": "both square roots of",
+   "found": "checked B"
+  },
+  {
+   "collection": "terms",
+   "id": "square-root-of-a-number",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "references": [
+    "openstax:Prealgebra"
+   ],
+   "wording": "level.us Pre-Algebra",
    "found": "checked B"
   },
   {
@@ -1261,7 +1283,7 @@
   {
    "collection": "terms",
    "id": "x-intercept",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[5].note",
    "references": [
     "im"
@@ -11634,7 +11656,7 @@
   {
    "collection": "terms",
    "id": "be-circumscribed-about",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "im"
@@ -11645,7 +11667,7 @@
   {
    "collection": "terms",
    "id": "be-circumscribed-about",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "ck12",
@@ -11657,7 +11679,7 @@
   {
    "collection": "terms",
    "id": "be-circumscribed-about",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "pitfalls[1]",
    "references": [
     "im"
@@ -11668,7 +11690,7 @@
   {
    "collection": "terms",
    "id": "be-circumscribed-about",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "pitfalls[2]",
    "references": [
     "ck12"
@@ -11679,7 +11701,7 @@
   {
    "collection": "terms",
    "id": "be-circumscribed-about",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "pitfalls[3]",
    "references": [
     "ck12"
@@ -11690,7 +11712,7 @@
   {
    "collection": "terms",
    "id": "be-circumscribed-about",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "im"
@@ -11701,7 +11723,7 @@
   {
    "collection": "terms",
    "id": "be-circumscribed-about",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "ck12"
@@ -11712,12 +11734,34 @@
   {
    "collection": "terms",
    "id": "be-circumscribed-about",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "ck12"
    ],
    "wording": "Identify Circle Components",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "be-circumscribed-about",
+   "confidence": "verified",
+   "field": "sources[5].note",
+   "references": [
+    "enwiki:Inscribed figure"
+   ],
+   "wording": "figure F is inscribed in figure G",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "be-circumscribed-about",
+   "confidence": "verified",
+   "field": "sources[5].note",
+   "references": [
+    "enwiki:Inscribed figure"
+   ],
+   "wording": "figure G is circumscribed about figure F",
    "found": "yes"
   },
   {
@@ -11957,7 +12001,7 @@
   {
    "collection": "terms",
    "id": "candidates-test",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "ced",
@@ -11969,7 +12013,7 @@
   {
    "collection": "terms",
    "id": "candidates-test",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Calculus Volume 1"
@@ -11980,7 +12024,7 @@
   {
    "collection": "terms",
    "id": "candidates-test",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Calculus Volume 1"
@@ -14038,7 +14082,7 @@
   {
    "collection": "terms",
    "id": "cross-method",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "en.variants[0].note",
    "references": [
     "im"
@@ -14049,7 +14093,7 @@
   {
    "collection": "terms",
    "id": "cross-method",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "openstax:Elementary Algebra"
@@ -14060,7 +14104,7 @@
   {
    "collection": "terms",
    "id": "cross-method",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "openstax:Elementary Algebra"
@@ -14071,7 +14115,7 @@
   {
    "collection": "terms",
    "id": "cross-method",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "im"
@@ -14082,10 +14126,10 @@
   {
    "collection": "terms",
    "id": "cross-method",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
-    "openstax:"
+    "openstax:Elementary Algebra"
    ],
    "wording": "ac",
    "found": "yes"
@@ -14093,10 +14137,10 @@
   {
    "collection": "terms",
    "id": "cross-method",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
-    "openstax:"
+    "openstax:Elementary Algebra"
    ],
    "wording": "factoring by grouping",
    "found": "yes"
@@ -14104,7 +14148,7 @@
   {
    "collection": "terms",
    "id": "cross-method",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Elementary Algebra"
@@ -14115,7 +14159,7 @@
   {
    "collection": "terms",
    "id": "cross-method",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Elementary Algebra"
@@ -14126,7 +14170,7 @@
   {
    "collection": "terms",
    "id": "cross-method",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Elementary Algebra"
@@ -14137,7 +14181,18 @@
   {
    "collection": "terms",
    "id": "cross-method",
-   "confidence": "likely",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "references": [
+    "openstax:Intermediate Algebra"
+   ],
+   "wording": "ac",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "cross-method",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "openstax:Intermediate Algebra"
@@ -14148,7 +14203,7 @@
   {
    "collection": "terms",
    "id": "cross-method",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[4].note",
    "references": [
     "im"
@@ -14608,7 +14663,7 @@
   {
    "collection": "terms",
    "id": "derivative",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "ced"
@@ -14619,7 +14674,7 @@
   {
    "collection": "terms",
    "id": "derivative",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "ced"
@@ -14630,7 +14685,7 @@
   {
    "collection": "terms",
    "id": "derivative",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "openstax:Calculus Volume 1"
@@ -14641,7 +14696,7 @@
   {
    "collection": "terms",
    "id": "derivative",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "openstax:Calculus Volume 1"
@@ -14652,7 +14707,7 @@
   {
    "collection": "terms",
    "id": "derivative",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "openstax:Calculus Volume 1"
@@ -14663,7 +14718,7 @@
   {
    "collection": "terms",
    "id": "derivative",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "ced:calc"
@@ -14997,12 +15052,23 @@
   {
    "collection": "terms",
    "id": "differentiation",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "openstax:Calculus Volume 1"
    ],
    "wording": "Defining the Derivative",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "differentiation",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "the process of taking a derivative",
    "found": "yes"
   },
   {
@@ -18737,7 +18803,7 @@
   {
    "collection": "terms",
    "id": "integration",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "openstax:Calculus"
@@ -18748,7 +18814,7 @@
   {
    "collection": "terms",
    "id": "integration",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "openstax:Calculus"
@@ -18759,7 +18825,7 @@
   {
    "collection": "terms",
    "id": "integration",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "openstax:Calculus Volume 1"
@@ -18770,7 +18836,7 @@
   {
    "collection": "terms",
    "id": "integration",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "openstax:Calculus Volume 1"
@@ -20440,7 +20506,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "pitfalls[0]",
    "references": [
     "openstax:Elementary Algebra"
@@ -20451,7 +20517,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "pitfalls[0]",
    "references": [
     "openstax:Elementary Algebra"
@@ -20462,7 +20528,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "pitfalls[0]",
    "references": [
     "openstax:Elementary Algebra"
@@ -20473,7 +20539,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "pitfalls[0]",
    "references": [
     "openstax:"
@@ -20484,7 +20550,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "pitfalls[0]",
    "references": [
     "openstax:"
@@ -20495,7 +20561,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "pitfalls[2]",
    "references": [
     "openstax:Prealgebra"
@@ -20506,7 +20572,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[0].note",
    "references": [
     "openstax:Elementary Algebra"
@@ -20517,7 +20583,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[0].note",
    "references": [
     "openstax:Elementary Algebra"
@@ -20528,7 +20594,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[0].note",
    "references": [
     "openstax:Elementary Algebra"
@@ -20539,7 +20605,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[0].note",
    "references": [
     "openstax:Elementary Algebra"
@@ -20550,7 +20616,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "openstax:Intermediate Algebra"
@@ -20561,7 +20627,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "openstax:Intermediate Algebra"
@@ -20572,7 +20638,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[1].note",
    "references": [
     "openstax:Intermediate Algebra"
@@ -20583,7 +20649,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Prealgebra"
@@ -20594,7 +20660,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Prealgebra"
@@ -20605,7 +20671,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "ced:calc"
@@ -20616,7 +20682,7 @@
   {
    "collection": "terms",
    "id": "motion-problem",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[4].note",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -20815,7 +20881,7 @@
   {
    "collection": "terms",
    "id": "net-change",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "ced",
@@ -20827,7 +20893,7 @@
   {
    "collection": "terms",
    "id": "net-change",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "ced"
@@ -20838,7 +20904,29 @@
   {
    "collection": "terms",
    "id": "net-change",
-   "confidence": "likely",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "references": [
+    "ced"
+   ],
+   "wording": "Integration and Accumulation of Change",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "net-change",
+   "confidence": "verified",
+   "field": "sources[0].note",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "Integration Formulas and the Net Change Theorem",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "net-change",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "ced:calc"
@@ -22151,7 +22239,7 @@
   {
    "collection": "terms",
    "id": "point-of-intersection",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "im",
@@ -22163,7 +22251,7 @@
   {
    "collection": "terms",
    "id": "point-of-intersection",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "im",
@@ -22175,7 +22263,7 @@
   {
    "collection": "terms",
    "id": "point-of-intersection",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "im",
@@ -22187,7 +22275,19 @@
   {
    "collection": "terms",
    "id": "point-of-intersection",
-   "confidence": "likely",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "im",
+    "openstax:Algebra and Trigonometry"
+   ],
+   "wording": "Points of Intersection",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "point-of-intersection",
+   "confidence": "verified",
    "field": "sources[0].note",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -22198,7 +22298,7 @@
   {
    "collection": "terms",
    "id": "point-of-intersection",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[0].note",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -22209,7 +22309,18 @@
   {
    "collection": "terms",
    "id": "point-of-intersection",
-   "confidence": "likely",
+   "confidence": "verified",
+   "field": "sources[0].note",
+   "references": [
+    "openstax:Algebra and Trigonometry"
+   ],
+   "wording": "Points of Intersection of a Parabola and a Line",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "point-of-intersection",
+   "confidence": "verified",
    "field": "sources[4].note",
    "references": [
     "im"
@@ -24926,7 +25037,7 @@
   {
    "collection": "terms",
    "id": "scale",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "pitfalls[1]",
    "references": [
     "im"
@@ -24937,7 +25048,7 @@
   {
    "collection": "terms",
    "id": "scale",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "pitfalls[1]",
    "references": [
     "im"
@@ -24948,7 +25059,7 @@
   {
    "collection": "terms",
    "id": "scale",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[0].note",
    "references": [
     "im"
@@ -24959,7 +25070,7 @@
   {
    "collection": "terms",
    "id": "scale",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[0].note",
    "references": [
     "im"
@@ -24970,7 +25081,7 @@
   {
    "collection": "terms",
    "id": "scale",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[0].note",
    "references": [
     "im"
@@ -24981,7 +25092,7 @@
   {
    "collection": "terms",
    "id": "scale",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[0].note",
    "references": [
     "im"
@@ -24992,7 +25103,7 @@
   {
    "collection": "terms",
    "id": "scale",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[0].note",
    "references": [
     "im"
@@ -26475,7 +26586,7 @@
   {
    "collection": "terms",
    "id": "square-root-of-a-number",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "im",
@@ -26487,7 +26598,7 @@
   {
    "collection": "terms",
    "id": "square-root-of-a-number",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "im",
@@ -26499,7 +26610,41 @@
   {
    "collection": "terms",
    "id": "square-root-of-a-number",
-   "confidence": "likely",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "im",
+    "openstax:Elementary Algebra"
+   ],
+   "wording": "a square root of m",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "square-root-of-a-number",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "references": [
+    "im"
+   ],
+   "wording": "both square roots of",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "square-root-of-a-number",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "references": [
+    "openstax:Prealgebra"
+   ],
+   "wording": "Simplify and Use Square Roots",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "square-root-of-a-number",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "openstax:Elementary Algebra"
@@ -26510,7 +26655,7 @@
   {
    "collection": "terms",
    "id": "square-root-of-a-number",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "openstax:Elementary Algebra"
@@ -26521,12 +26666,45 @@
   {
    "collection": "terms",
    "id": "square-root-of-a-number",
-   "confidence": "likely",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "references": [
+    "openstax:Elementary Algebra"
+   ],
+   "wording": "a square root of m",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "square-root-of-a-number",
+   "confidence": "verified",
    "field": "sources[3].note",
    "references": [
     "openstax:Elementary Algebra"
    ],
    "wording": "two square roots",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "square-root-of-a-number",
+   "confidence": "verified",
+   "field": "sources[6].note",
+   "references": [
+    "im"
+   ],
+   "wording": "Quadratic Equations with Irrational Solutions",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "square-root-of-a-number",
+   "confidence": "verified",
+   "field": "sources[6].note",
+   "references": [
+    "im"
+   ],
+   "wording": "both square roots of",
    "found": "yes"
   },
   {
@@ -28994,6 +29172,28 @@
   },
   {
    "collection": "terms",
+   "id": "washer-method",
+   "confidence": "verified",
+   "field": "sources[0].note",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "Determining Volumes by Slicing",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
+   "id": "washer-method",
+   "confidence": "verified",
+   "field": "sources[0].note",
+   "references": [
+    "openstax:Calculus Volume 1"
+   ],
+   "wording": "The Washer Method",
+   "found": "yes"
+  },
+  {
+   "collection": "terms",
    "id": "without-loss-of-generality",
    "confidence": "likely",
    "field": "sources[1].note",
@@ -29304,12 +29504,11 @@
   {
    "collection": "terms",
    "id": "x-intercept",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "mapping_note",
    "references": [
     "im",
-    "openstax:Algebra and Trigonometry",
-    "openstax:Precalculus"
+    "openstax:Algebra and Trigonometry"
    ],
    "wording": "touches the axis at the intercept",
    "found": "yes"
@@ -29317,7 +29516,7 @@
   {
    "collection": "terms",
    "id": "x-intercept",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[0].note",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -29328,7 +29527,7 @@
   {
    "collection": "terms",
    "id": "x-intercept",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[0].note",
    "references": [
     "openstax:Algebra and Trigonometry"
@@ -29339,7 +29538,7 @@
   {
    "collection": "terms",
    "id": "x-intercept",
-   "confidence": "likely",
+   "confidence": "verified",
    "field": "sources[2].note",
    "references": [
     "openstax:Precalculus"

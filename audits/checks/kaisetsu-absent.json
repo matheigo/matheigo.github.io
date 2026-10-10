@@ -1,9 +1,9 @@
 {
- "rows": 225,
+ "rows": 233,
  "status": {
   "checked A": 57,
-  "checked B": 101,
-  "語 0": 67
+  "checked B": 107,
+  "語 0": 69
  },
  "toRead": 0,
  "entriesToRead": 0,
@@ -1864,6 +1864,49 @@
   },
   {
    "collection": "terms",
+   "id": "candidates-test",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "学習指導要領解説（数学II）は、導関数でグラフの概形を調べて区間が制限された関数の最大値や最小値を考察すると書くが、端点と臨界点での値を比べて最大値・最小値を求める方法の名前は出てこない。",
+   "keys": {
+    "候補点テスト": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "区間が制限された": {
+     "高 数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "candidates-test",
+   "confidence": "verified",
+   "field": "sources[1].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "数学II 微分の考え: グラフの概形を観察して区間が制限された関数の最大値や最小値を考察する（方法の名前は出てこない）",
+   "keys": {
+    "候補点テスト": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "区間が制限された": {
+     "高 数学II": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
    "id": "clockwise",
    "confidence": "verified",
    "field": "mapping_note",
@@ -2691,6 +2734,28 @@
   },
   {
    "collection": "terms",
+   "id": "motion-problem",
+   "confidence": "verified",
+   "field": "sources[5].note",
+   "docs": [
+    "chu"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "第 1 学年 A 数と式: (道のり) = (速さ) × (時間) の言葉の式（level.jp 中1）・第 2 学年 A(2) 連立二元一次方程式を具体的な場面で活用する（速さ・道のりの語は無い。level.jp 中2）",
+   "keys": {
+    "速さ": {
+     "中学校": 6
+    },
+    "道のり": {
+     "中学校": 2
+    }
+   },
+   "fallback": false,
+   "paraphrases": {}
+  },
+  {
+   "collection": "terms",
    "id": "natural-logarithm",
    "confidence": "verified",
    "field": "pitfalls[1]",
@@ -2731,6 +2796,32 @@
     "自然対数": {
      "高 数学III": 3,
      "高 付録 数学III": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "net-change",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "学習指導要領解説（数学III）は、速度 v を時刻 t₁ から t₂ まで積分して点の「位置の変化」を、|v| を積分して「道のり」を求める例を挙げるが、定積分で求まる変化の合計一般の名前は出てこない。",
+   "keys": {
+    "純変化量": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "位置の変化": {
+     "高 数学III": 1
+    },
+    "道のり": {
+     "高 数学III": 2,
+     "中学校": 2
     }
    }
   },
@@ -3373,6 +3464,52 @@
    },
    "fallback": true,
    "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "washer-method",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "名前",
+   "status": "checked B",
+   "sentence": "学習指導要領解説（数学III）は、x 軸と曲線 y = f(x) の間の図形を x 軸のまわりに回してできる立体の体積を π∫{f(x)}²dx で求めることを挙げ、穴のある回転体の求め方の名前は出てこない。",
+   "keys": {
+    "ワッシャー法": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "回転させて": {
+     "高 数学III": 1,
+     "高 数学C": 1
+    }
+   }
+  },
+  {
+   "collection": "terms",
+   "id": "washer-method",
+   "confidence": "verified",
+   "field": "mapping_note",
+   "docs": [
+    "chu",
+    "kou"
+   ],
+   "kind": "中身",
+   "status": "checked B",
+   "sentence": "見出しの「ワッシャー法」は学習指導要領解説にも日本語版 Wikipedia にも無い、本プロジェクトの訳語。",
+   "keys": {
+    "ワッシャー法": {}
+   },
+   "fallback": true,
+   "paraphrases": {
+    "回転させて": {
+     "高 数学III": 1,
+     "高 数学C": 1
+    }
+   }
   },
   {
    "collection": "terms",
@@ -4279,6 +4416,30 @@
   },
   {
    "collection": "terms",
+   "id": "net-change",
+   "confidence": "verified",
+   "field": "sources[3].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "数学III 積分法: 速度の定積分で「位置の変化」と「道のり」を求める例（定積分で求まる変化の合計の名前と「純変化量」は出てこない）",
+   "keys": {
+    "純変化量": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "位置の変化": {
+     "高 数学III": 1
+    },
+    "道のり": {
+     "高 数学III": 2
+    }
+   }
+  },
+  {
+   "collection": "terms",
    "id": "numerical-integration",
    "confidence": "verified",
    "field": "pitfalls[0]",
@@ -4644,6 +4805,28 @@
    },
    "fallback": false,
    "paraphrases": {}
+  },
+  {
+   "collection": "terms",
+   "id": "washer-method",
+   "confidence": "verified",
+   "field": "sources[2].note",
+   "docs": [
+    "kou"
+   ],
+   "kind": "語",
+   "status": "語 0",
+   "sentence": "数学III 積分法: y = f(x) と x 軸の間の図形の回転体の体積 π∫{f(x)}²dx（穴のある回転体の求め方の名前・「ワッシャー法」は出てこない）",
+   "keys": {
+    "ワッシャー法": {}
+   },
+   "fallback": false,
+   "paraphrases": {
+    "回転させて": {
+     "高 数学III": 1,
+     "高 数学C": 1
+    }
+   }
   }
  ]
 }

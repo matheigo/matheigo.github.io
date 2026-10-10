@@ -71,7 +71,7 @@
 | terms | blocking | mapping_note |  | 見出しの「ブロック化」は学習指導要領解説に無い（日本語版 Wikipedia「実験計画法」にはある）。 |
 | terms | boundary | pitfalls[0] |  | 共通テストの問題文は、領域の図に「ただし，境界線を含まない」と添える（令和 8 年度 本試験 数学II，数学B，数学C 第 1 問。令和 6 年度 本試験 数学II 第 1 問は「境界（境界線）は含まない」）。 |
 | terms | box-plot | en.variants[1].note |  | 話し言葉は Khan Academy の中学の講義と Professor Leonard。 |
-| terms | candidates-test | mapping_note |  | 学習指導要領解説（数学II）は、導関数でグラフの概形を調べて区間が制限された関数の最大値や最小値を考察すると書くが、端点と極値の値を比べて最大値・最小値を求める方法の名前は出てこない。 |
+| terms | candidates-test | mapping_note |  | 学習指導要領解説（数学II）は、導関数でグラフの概形を調べて区間が制限された関数の最大値や最小値を考察すると書くが、端点と臨界点での値を比べて最大値・最小値を求める方法の名前は出てこない。 |
 | terms | cardioid | pitfalls[0] |  | 日本の数III ／ 数C の教科書では「カージオイド（心臓形）」と書く。 |
 | terms | ceiling-function | pitfalls[0] | ○ | 日本の高校のガウス記号 [x] は x 以下の最大の整数（床関数 ⌊x⌋）で、天井関数ではない。 |
 | terms | center-of-dilation | mapping_note |  | 中学校学習指導要領解説の相似の位置は、対応する点を通る直線が 1 点を通ることで定め、中心が 2 つの図形の間にある場合も含む。 |
@@ -381,7 +381,7 @@
 | terms | negative-reciprocal | mapping_note |  | 見出しの「符号を変えた逆数」は学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | negative-reciprocal | mapping_note | ○ | 日本では垂直条件を「傾きの積が −1」（m₁m₂ = −1）と言い、この数に名前を付けない。 |
 | terms | net-change | mapping_note |  | 学習指導要領解説（数学III）は、速度 v を時刻 t₁ から t₂ まで積分して点の「位置の変化」を、\|v\| を積分して「道のり」を求める例を挙げるが、定積分で求まる変化の合計一般の名前は出てこない。 |
-| terms | net-change | mapping_note |  | 見出しの「純変化量」と ja.alt の「純変化定理」は、学習指導要領解説に無い、本プロジェクトの訳語。 |
+| terms | net-change | mapping_note |  | 見出しの「純変化量」と例文の和訳の「純変化定理」は、学習指導要領解説に無い、本プロジェクトの訳語。 |
 | terms | newtons-law-of-cooling | pitfalls[0] | ○ | 日本の高校の学習指導要領（数学）には含まれない。 |
 | terms | nonlinear-system | mapping_note | ○ | 日本では数I・数II で「連立方程式（2 次を含む）」として扱い、放物線と直線の共有点を求める問題として学ぶ。 |
 | terms | normal-distribution | pitfalls[0] |  | 学習指導要領解説（数学B）は N(μ, σ²) と分散を書くが、OpenStax Introductory Statistics（6.1）は X ~ N(μ, σ) と標準偏差を書く（同じ本の巻末の公式集は X ~ N(μ, σ²)）。 |
