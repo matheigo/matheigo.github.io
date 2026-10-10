@@ -1,0 +1,2157 @@
+{
+ "made": "2026-10-09",
+ "T1a": [
+  {
+   "id": "alternate-interior-angles",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "英語では外側の組 alternate exterior angles（エントリ alternate-exterior-angles）と区別するため interior を付ける。"
+  },
+  {
+   "id": "check",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "check は「チェックマークを付ける」「点検する」など意味が広い。"
+  },
+  {
+   "id": "circle",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "英語の circle は周の曲線だけを指し、内部を含む「円板」は disk（エントリ disk）。"
+  },
+  {
+   "id": "differentiation",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "日本語の「微分」は操作（differentiation）も結果の関数（derivative）も指す。"
+  },
+  {
+   "id": "discontinuous",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "不連続の種類は、英語では removable（除去可能）・jump（跳躍）・infinite（無限）と名前で呼び分ける。"
+  },
+  {
+   "id": "edge",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "英語では、多角形の辺は side（エントリ side）、立体の辺は edge と言い分ける。"
+  },
+  {
+   "id": "exterior-angle",
+   "confidence": "verified",
+   "field": "definition_en",
+   "text": "The angle formed outside a polygon by one side and the extension of the side next to it. At each vertex, the interior angle and the exterior angle add up to 180°."
+  },
+  {
+   "id": "infinite-geometric-sequence",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "英語では sequence（数列）と series（級数）を区別する。"
+  },
+  {
+   "id": "integration",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "日本語の「積分」は操作にも式にも使うが、英語では操作は integration、∫ で書かれた式そのものは an integral と言い分ける（take the integral ／ this integral diverges）。"
+  },
+  {
+   "id": "line",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "英語の line は両方向に限りなくのびる直線だけを指す。"
+  },
+  {
+   "id": "line",
+   "confidence": "verified",
+   "field": "pitfalls[2]",
+   "text": "日本語の「線」は曲線も含むが、英語の line はまっすぐな線。"
+  },
+  {
+   "id": "phase-shift",
+   "confidence": "verified",
+   "field": "pitfalls[3]",
+   "text": "Algebra and Trigonometry の phase shift C/B はずれの量そのもので、数の意味が違う。"
+  },
+  {
+   "id": "point-of-intersection",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "text": "英語では接する場合も point of intersection と言うか、the graph touches the x-axis（x 軸に接する）と言い分ける。"
+  },
+  {
+   "id": "square-root-of-a-number",
+   "confidence": "verified",
+   "field": "pitfalls[3]",
+   "text": "英語の the square root of 49 は √49 = 7 だけを指す。"
+  },
+  {
+   "id": "supplementary-angle",
+   "confidence": "verified",
+   "field": "definition_en",
+   "text": "Two angles are supplementary when their measures add up to 180°; the supplement of an angle θ is 180° − θ."
+  },
+  {
+   "id": "triangle",
+   "confidence": "verified",
+   "field": "definition_en",
+   "text": "A polygon with three sides, formed by joining three points that do not lie on one line; its three interior angles add up to 180°."
+  },
+  {
+   "id": "triangle-inequality",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "英語の triangle inequality は |a + b| ≦ |a| + |b| と三角形の辺の不等式だけ。"
+  },
+  {
+   "id": "unit-circle",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "高等学校学習指導要領解説（数学I 図形と計量）は単位円を使わず、座標平面の第 1 象限で原点を端点とする長さ α の線分 OP と点 P の座標 (α cos θ, α sin θ) で三角比を鈍角まで拡張する。"
+  },
+  {
+   "id": "vertex",
+   "confidence": "verified",
+   "field": "pitfalls[1]",
+   "text": "グラフ理論（点と辺のグラフ）の頂点も vertex だが、意味が違うので別のエントリ（頂点（グラフ））にした。"
+  },
+  {
+   "id": "x-intercept",
+   "confidence": "verified",
+   "field": "pitfalls[0]",
+   "text": "日本語の「交点」は点 (3, 0) で答えるが、英語の x-intercept は x 座標の 3 だけを指すこともある。"
+  },
+  {
+   "id": "dynamical-system",
+   "confidence": "likely",
+   "field": "pitfalls[0]",
+   "text": "日本語の「力学系」は微分方程式で表す連続の系も含む。"
+  },
+  {
+   "id": "gradient",
+   "confidence": "likely",
+   "field": "pitfalls[1]",
+   "text": "日本語の「勾配」は直線の傾き（slope）の意味でも使うが、英語の gradient は多変数の勾配ベクトルを指す。"
+  },
+  {
+   "id": "identity-matrix",
+   "confidence": "likely",
+   "field": "definition_en",
+   "text": "The square matrix with 1s on the main diagonal and 0s elsewhere, written E in Japanese textbooks and I in US ones."
+  },
+  {
+   "id": "minor-arc",
+   "confidence": "likely",
+   "field": "pitfalls[0]",
+   "text": "英語では 2 文字の arc AB が劣弧を指し、優弧は 3 文字（arc ACB）で書いて区別する。"
+  },
+  {
+   "id": "proof-by-cases",
+   "confidence": "likely",
+   "field": "pitfalls[1]",
+   "text": "日本語の「場合分け」は証明だけでなく、絶対値を外す計算や不等式の解法にも使うが、この見出しは証明の方法の名前。"
+  },
+  {
+   "id": "quantifier",
+   "confidence": "likely",
+   "field": "pitfalls[1]",
+   "text": "∀x ∃y と ∃y ∀x は意味が違う。"
+  },
+  {
+   "id": "tautology",
+   "confidence": "likely",
+   "field": "pitfalls[0]",
+   "text": "日常英語の tautology は「同じことを言い換えて繰り返すだけの言い方（同語反復）」の意味で使う。"
+  },
+  {
+   "id": "treatment",
+   "confidence": "likely",
+   "field": "pitfalls[0]",
+   "text": "日本語の「処理」はデータの処理の意味でも使うが、英語の treatment は実験の処理（与える条件）。"
+  }
+ ],
+ "T1b": [
+  {
+   "id": "area-preserving-transformation",
+   "confidence": "verified",
+   "names": {
+    "等積変形": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "auxiliary-angle-form",
+   "confidence": "verified",
+   "names": {
+    "三角関数の合成": 13
+   },
+   "noteNamesJp": true,
+   "read": true
+  },
+  {
+   "id": "candidates-test",
+   "confidence": "verified",
+   "names": {
+    "候補点テスト": 0
+   },
+   "noteNamesJp": true,
+   "read": true
+  },
+  {
+   "id": "circle-through-the-intersections-of-two-circles",
+   "confidence": "verified",
+   "names": {
+    "2 円の交点を通る円": 0,
+    "Pencil (geometry)": 0
+   },
+   "noteNamesJp": true,
+   "read": true
+  },
+  {
+   "id": "comparison-for-divergence",
+   "confidence": "verified",
+   "names": {
+    "追い出しの原理": 2,
+    "はさみうちの原理": 14
+   },
+   "noteNamesJp": false,
+   "read": true
+  },
+  {
+   "id": "cross-method",
+   "confidence": "verified",
+   "names": {
+    "たすき掛け": 0,
+    "たすきがけ": 9,
+    "因数分解": 260
+   },
+   "noteNamesJp": false,
+   "read": true
+  },
+  {
+   "id": "grouped-sequence",
+   "confidence": "verified",
+   "names": {
+    "群数列": 1,
+    "数学 (教科)": 2
+   },
+   "noteNamesJp": false,
+   "read": true
+  },
+  {
+   "id": "liate",
+   "confidence": "verified",
+   "names": {
+    "LIATE": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "net-change",
+   "confidence": "verified",
+   "names": {
+    "純変化量": 0,
+    "純変化定理": 0,
+    "累積": 44,
+    "位置の変化": 5,
+    "道のり": 4
+   },
+   "noteNamesJp": false,
+   "read": true
+  },
+  {
+   "id": "one-sixth-formula",
+   "confidence": "verified",
+   "names": {
+    "1/6 公式": 5,
+    "1/6公式": 5
+   },
+   "noteNamesJp": false,
+   "read": true
+  },
+  {
+   "id": "rate",
+   "confidence": "verified",
+   "names": {
+    "割合": 230,
+    "比べる量 ÷ もとにする量": 0
+   },
+   "noteNamesJp": false,
+   "read": true
+  },
+  {
+   "id": "sign-chart",
+   "confidence": "verified",
+   "names": {
+    "増減表": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "surplus-and-shortage",
+   "confidence": "verified",
+   "names": {
+    "過不足": 0,
+    "余る": 2,
+    "足りない": 4
+   },
+   "noteNamesJp": false,
+   "read": true
+  },
+  {
+   "id": "system-of-recurrences",
+   "confidence": "verified",
+   "names": {
+    "連立漸化式": 6
+   },
+   "noteNamesJp": true,
+   "read": true
+  },
+  {
+   "id": "three-perpendiculars-theorem",
+   "confidence": "verified",
+   "names": {
+    "三垂線の定理": 1
+   },
+   "noteNamesJp": false,
+   "read": true
+  },
+  {
+   "id": "washer-method",
+   "confidence": "verified",
+   "names": {
+    "ワッシャー法": 0,
+    "外側の回転体から内側の回転体を引く": 0
+   },
+   "noteNamesJp": true,
+   "read": true
+  },
+  {
+   "id": "angle-addition-postulate",
+   "confidence": "likely",
+   "names": {
+    "角の加法公理": 0
+   },
+   "noteNamesJp": true,
+   "read": true
+  },
+  {
+   "id": "coordinate-rule",
+   "confidence": "likely",
+   "names": {
+    "座標の規則": 0
+   },
+   "noteNamesJp": true,
+   "read": true
+  },
+  {
+   "id": "coterminal-angle",
+   "confidence": "likely",
+   "names": {
+    "共終角": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "cpctc",
+   "confidence": "likely",
+   "names": {
+    "CPCTC": 0,
+    "合同な三角形の対応する部分は等しい": 0,
+    "合同な図形の対応する辺（角）は等しい": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "end-behavior",
+   "confidence": "likely",
+   "names": {
+    "関数の終端挙動": 0,
+    "終端挙動": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "flowchart-proof",
+   "confidence": "likely",
+   "names": {
+    "フローチャート証明": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "foil",
+   "confidence": "likely",
+   "names": {
+    "FOIL": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "horizontal-line-test",
+   "confidence": "likely",
+   "names": {
+    "水平線テスト": 0,
+    "単調増加（減少）なら逆関数がある": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "joint-variation",
+   "confidence": "likely",
+   "names": {
+    "結合変化": 0,
+    "z は x と y の積に比例する": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "literal-equation",
+   "confidence": "likely",
+   "names": {
+    "リテラル方程式": 0,
+    "等式の変形": 2
+   },
+   "noteNamesJp": false,
+   "read": true
+  },
+  {
+   "id": "midline",
+   "confidence": "likely",
+   "names": {
+    "振動の中心線": 0,
+    "中央線": 0,
+    "y 軸方向に 1 平行移動したもの": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "paragraph-proof",
+   "confidence": "likely",
+   "names": {
+    "段落証明": 0
+   },
+   "noteNamesJp": true,
+   "read": true
+  },
+  {
+   "id": "parent-function",
+   "confidence": "likely",
+   "names": {
+    "親関数": 0,
+    "y = x² のグラフを平行移動したもの": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "pemdas",
+   "confidence": "likely",
+   "names": {
+    "PEMDAS": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "perpendicular-postulate",
+   "confidence": "likely",
+   "names": {
+    "垂線の公準": 0,
+    "直線外の 1 点を通る垂線はただ 1 本": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "rise-over-run",
+   "confidence": "likely",
+   "names": {
+    "上昇分と水平移動分の比": 0,
+    "y の増加量 ÷ x の増加量": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "ruler-postulate",
+   "confidence": "likely",
+   "names": {
+    "数直線上の距離": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  },
+  {
+   "id": "segment-addition-postulate",
+   "confidence": "likely",
+   "names": {
+    "線分の加法公理": 0
+   },
+   "noteNamesJp": true,
+   "read": true
+  },
+  {
+   "id": "sohcahtoa",
+   "confidence": "likely",
+   "names": {
+    "SOHCAHTOA": 0,
+    "三角関数の暗記方法": 1
+   },
+   "noteNamesJp": false,
+   "read": true
+  },
+  {
+   "id": "two-column-proof",
+   "confidence": "likely",
+   "names": {
+    "二段組みの証明": 0,
+    "statements（主張）": 0,
+    "reasons（理由）": 0
+   },
+   "noteNamesJp": true,
+   "read": true
+  },
+  {
+   "id": "vertical-line-test",
+   "confidence": "likely",
+   "names": {
+    "垂直線テスト": 0
+   },
+   "noteNamesJp": false,
+   "read": false
+  }
+ ],
+ "T2": [
+  {
+   "id": "change-of-base-formula",
+   "confidence": "verified",
+   "word": "正の数",
+   "definition_ja": "log_a b = log_c b / log_c a（a, c は 1 でない正の数、b > 0）。底の違う対数を同じ底にそろえる。",
+   "definition_en": "log_a b = log_c b / log_c a (a, c > 0, a ≠ 1, c ≠ 1, b > 0), used to rewrite logarithms with a common base."
+  },
+  {
+   "id": "checking-whether-the-solution-makes-sense",
+   "confidence": "verified",
+   "word": "自然数",
+   "definition_ja": "文章題で求めた方程式の解が、問題の条件（個数や人数は自然数、長さは正の数など）に合っているかを確かめること。合わない解は問題の答えにしない。",
+   "definition_en": "Checking whether a solution of the equation fits the situation in the word problem, for example that a number of people is a positive whole number or that a length is positive. A solution that does not fit is not used as the answer."
+  },
+  {
+   "id": "classification-by-remainder",
+   "confidence": "verified",
+   "word": "自然数",
+   "definition_ja": "整数を、ある自然数 m で割ったときの余り 0, 1, …, m − 1 によって m 個の組に分けること。整数の性質を場合分けで証明するときに使う。",
+   "definition_en": "Sorting the integers into m groups by the remainder 0, 1, …, m − 1 they leave when divided by m, so that a statement can be checked case by case."
+  },
+  {
+   "id": "decreasing",
+   "confidence": "verified",
+   "word": "必ず",
+   "definition_ja": "x が増えると、関数の値が必ず減る。1 次関数ではグラフが右下がりになること（傾きが負）。",
+   "definition_en": "Of a function: its value goes down whenever x goes up; for a linear function, the graph falls from left to right (negative slope)."
+  },
+  {
+   "id": "divisibility-rules",
+   "confidence": "verified",
+   "word": "だけを",
+   "definition_ja": "実際に割り算をせずに、各位の数字の和や下の何桁かだけを見て、ある整数が 3・4・9 などの倍数かどうかを見分ける方法。",
+   "definition_en": "A shortcut for deciding whether an integer is divisible by a number such as 3, 4, or 9 by looking at its digit sum or its last few digits, without dividing."
+  },
+  {
+   "id": "is-monotonically-increasing",
+   "confidence": "verified",
+   "word": "必ず",
+   "definition_ja": "x が増えると、関数の値も必ず増える。",
+   "definition_en": "Of a function: to rise as x increases, over an interval."
+  },
+  {
+   "id": "natural-number",
+   "confidence": "verified",
+   "word": "正の整数",
+   "definition_ja": "1, 2, 3, … のように、ものを数えるときに使う数。正の整数と同じで、0 を含まない。",
+   "definition_en": "A counting number: 1, 2, 3, and so on. Some books, especially in college math, also count 0 as a natural number."
+  },
+  {
+   "id": "polyhedron",
+   "confidence": "verified",
+   "word": "だけで",
+   "definition_ja": "平面の多角形だけで囲まれた立体。囲んでいる多角形を面、面と面が交わる線分を辺、辺が集まる点を頂点という。",
+   "definition_en": "A solid whose surface is made up entirely of flat polygons. The polygons are its faces, the segments where two faces meet are its edges, and the points where edges meet are its vertices."
+  },
+  {
+   "id": "prime-factor",
+   "confidence": "verified",
+   "word": "自然数",
+   "definition_ja": "ある自然数の約数のうち、素数であるもの。たとえば 12 = 2 × 2 × 3 なので、12 の素因数は 2 と 3。",
+   "definition_en": "A factor of a whole number that is also a prime number. For example, 12 = 2 × 2 × 3, so the prime factors of 12 are 2 and 3."
+  },
+  {
+   "id": "prime-factorization",
+   "confidence": "verified",
+   "word": "自然数",
+   "definition_ja": "自然数を素数だけの積の形に表すこと。また、その積の形。1 より大きい自然数では、積の順番を除いてただ 1 通りに決まる。",
+   "definition_en": "Writing a whole number as a product of prime numbers, or the product itself; for any whole number greater than 1 it is unique apart from the order of the factors."
+  },
+  {
+   "id": "prime-factorization",
+   "confidence": "verified",
+   "word": "だけの",
+   "definition_ja": "自然数を素数だけの積の形に表すこと。また、その積の形。1 より大きい自然数では、積の順番を除いてただ 1 通りに決まる。",
+   "definition_en": "Writing a whole number as a product of prime numbers, or the product itself; for any whole number greater than 1 it is unique apart from the order of the factors."
+  },
+  {
+   "id": "prime-number",
+   "confidence": "verified",
+   "word": "自然数",
+   "definition_ja": "2 以上の自然数のうち、1 とその数自身のほかに正の約数をもたないもの。1 は素数ではない。",
+   "definition_en": "A whole number greater than 1 whose only positive factors are 1 and itself. The number 1 is not prime."
+  },
+  {
+   "id": "restricted-domain",
+   "confidence": "verified",
+   "word": "に限る",
+   "definition_ja": "関数の定義域を一部に限ること。1 対 1 でない関数に逆関数を考えるときなどに使う。",
+   "definition_en": "Cutting a function's domain down to part of it, for instance so that a function which fails the horizontal line test can be given an inverse."
+  },
+  {
+   "id": "scale",
+   "confidence": "verified",
+   "word": "だけの",
+   "definition_ja": "地図や縮図で、実際の長さをどれだけの割合に縮めて表したかを示すもの。1 : 25000 のような比で書く。",
+   "definition_en": "On a map or a scale drawing, the relationship between lengths in the drawing and the actual lengths they stand for, such as 1 : 25,000 or 1 inch = 10 miles."
+  },
+  {
+   "id": "simplify-radicals",
+   "confidence": "verified",
+   "word": "自然数",
+   "definition_ja": "根号の中の数から平方因数を外に出し、根号の中をできるだけ小さい自然数にする。根号を含む式では、そのうえで同じ根号の項をまとめる。",
+   "definition_en": "To pull square factors out from under a radical so that the number left inside is as small as possible, then combine like radical terms in an expression."
+  },
+  {
+   "id": "square-root-of-a-number",
+   "confidence": "verified",
+   "word": "正の数",
+   "definition_ja": "2 乗すると a になる数を、a の平方根という。正の数 a の平方根は正と負の 2 つあり、まとめて ±√a と表す。",
+   "definition_en": "Either of the numbers that give a when squared. For a > 0 there are exactly two of them, √a and −√a."
+  },
+  {
+   "id": "subset",
+   "confidence": "verified",
+   "word": "だけで",
+   "definition_ja": "集合 B の要素だけでできている集合 A のこと。A のどの要素も B の要素であるとき、A を B の部分集合という。",
+   "definition_en": "A set A is a subset of a set B when nothing in A lies outside B: each member of A belongs to B as well."
+  },
+  {
+   "id": "sufficient-condition",
+   "confidence": "verified",
+   "word": "必ず",
+   "definition_ja": "「p ならば q」が真のとき、p を q であるための十分条件という。p が成り立てば q も必ず成り立つ。",
+   "definition_en": "If \"if p, then q\" is true, p is a sufficient condition for q: whenever p holds, q holds as well."
+  },
+  {
+   "id": "x-coordinate",
+   "confidence": "verified",
+   "word": "だけの",
+   "definition_ja": "点の座標 (x, y) の 1 つ目の数。点が原点から右（正）または左（負）にどれだけの位置にあるかを表す。",
+   "definition_en": "In an ordered pair (x, y), the number written first. It tells how far right (positive) or left (negative) of the origin the point is."
+  },
+  {
+   "id": "y-coordinate",
+   "confidence": "verified",
+   "word": "だけの",
+   "definition_ja": "点の座標 (x, y) の 2 つ目の数。点が原点から上（正）または下（負）にどれだけの位置にあるかを表す。",
+   "definition_en": "In an ordered pair (x, y), the number written second. It tells how far above (positive) or below (negative) the origin the point is."
+  },
+  {
+   "id": "convenience-sample",
+   "confidence": "likely",
+   "word": "だけを",
+   "definition_ja": "調べやすい人や物だけを選んで標本にする方法。偏りが生じやすい。",
+   "definition_en": "A sample made of the individuals that are easiest to reach; it is likely to be biased."
+  },
+  {
+   "id": "existence-proof",
+   "confidence": "likely",
+   "word": "だけを",
+   "definition_ja": "ある条件を満たすものが少なくとも 1 つ存在することを示す証明のこと。実際に例を作って示す方法（構成的）と、例を作らずに存在だけを示す方法（非構成的）がある。",
+   "definition_en": "A proof that at least one object with a given property exists. It can be constructive, by giving an example, or it can show that such an object must exist without actually finding it."
+  },
+  {
+   "id": "graph-coloring",
+   "confidence": "likely",
+   "word": "必ず",
+   "definition_ja": "グラフの各頂点に色を割り当て、辺で結ばれた 2 頂点が必ず異なる色になるようにすること。必要な色の最小の個数を彩色数という。",
+   "definition_en": "An assignment of colors to the vertices of a graph so that any two vertices joined by an edge get different colors. The smallest number of colors needed is the chromatic number."
+  },
+  {
+   "id": "partial-derivative",
+   "confidence": "likely",
+   "word": "だけに",
+   "definition_ja": "多変数関数を 1 つの変数だけについて微分し、ほかの変数は定数とみなしたもの。",
+   "definition_en": "The derivative of a function of several variables with respect to one variable, holding the others constant."
+  },
+  {
+   "id": "quantifier",
+   "confidence": "likely",
+   "word": "だけの",
+   "definition_ja": "述語の変数について、「すべての x について」「ある x について」のように、どれだけの値で成り立つかを指定する語や記号のこと。∀ と ∃ がある。",
+   "definition_en": "A word or symbol, such as \"for all\" (∀) or \"there exists\" (∃), that tells for how many values of a variable a predicate is true."
+  },
+  {
+   "id": "row-echelon-form",
+   "confidence": "likely",
+   "word": "だけの",
+   "definition_ja": "各行の最初の 0 でない成分（先頭の 1）が、下の行ほど右にある形の行列。0 だけの行は下にまとめる。",
+   "definition_en": "The form of a matrix in which each row's first nonzero entry (the leading 1) lies to the right of the one above, with any zero rows at the bottom."
+  },
+  {
+   "id": "scalar",
+   "confidence": "likely",
+   "word": "だけで",
+   "definition_ja": "ベクトルに対して、向きをもたず大きさだけで表される量。ふつうの実数。",
+   "definition_en": "A quantity described by a single number, with no direction, as opposed to a vector; an ordinary real number."
+  },
+  {
+   "id": "strong-induction",
+   "confidence": "likely",
+   "word": "だけで",
+   "definition_ja": "数学的帰納法の一種で、n = 1, 2, …, k のすべてで成り立つと仮定して、n = k + 1 でも成り立つことを示す証明法。直前の 1 つだけでなく、それより前のすべての場合を仮定に使える。",
+   "definition_en": "A form of induction in which you assume the statement holds for every case from the base case up to k, and use that to prove it for k + 1. It helps when the k + 1 case depends on cases earlier than k."
+  }
+ ],
+ "T3": [],
+ "T5": [
+  {
+   "id": "class-asking-calculator-on-the-test",
+   "confidence": "verified",
+   "situation": "class-asking",
+   "en": "Can we use a calculator on the test?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（use a calculator | use calculators | use our calculators | bring a calculator | bring calculators 1 件）。Math Stack Exchange の質問で最も多い要の部分 use a calculator | use calculators | use our calculators | bring a calculator | bring calculators（248 件。3 件以上）なので使われている。en の要の部分 use a calculator | use calculators | use our calculators | bring a calculator | bring calculators も 248 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "class-asking-can-i-write-it-this-way",
+   "confidence": "verified",
+   "situation": "class-asking",
+   "en": "Is it okay if I write it like this?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 can i just write | can i write it as | can i write this as（126 件。3 件以上）なので使われている。en の要の部分 okay if i write !on | ok if i write !on | alright if i write !on | all right if i write !on | okay to write it | ok to write it も 14 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": true
+  },
+  {
+   "id": "class-asking-do-we-need-to-memorize",
+   "confidence": "verified",
+   "situation": "class-asking",
+   "en": "Do we need to memorize this formula?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（formula sheet | equation sheet | cheat sheet | note card | index card 1 件）。Math Stack Exchange の質問で最も多い要の部分 formula sheet | equation sheet | cheat sheet | note card | index card（79 件。3 件以上）なので使われている。en の要の部分 do we need to memorize | do we have to memorize | do i need to memorize | do i have to memorize | should we memorize | should i memorize | do we memorize も 10 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "class-asking-how-do-you-read-this",
+   "confidence": "verified",
+   "situation": "class-asking",
+   "en": "How do you say this symbol?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（how do you say 2 件）。Math Stack Exchange の質問で最も多い要の部分 how do you say（21 件。3 件以上）なので使われている。en の要の部分 how do you say も 21 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "class-asking-i-got-a-different-answer",
+   "confidence": "verified",
+   "situation": "class-asking",
+   "en": "I got a different answer.",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 did i do something wrong | what did i do wrong | where did i go wrong | what am i doing wrong（8141 件。3 件以上）なので使われている。en の要の部分 got a different answer | got something different | got a different number | get a different answer も 330 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "class-asking-is-there-an-easier-way",
+   "confidence": "verified",
+   "situation": "class-asking",
+   "en": "Is there an easier way to do this?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（easier way | simpler way | quicker way | faster way 1 件）。Math Stack Exchange の質問で最も多い要の部分 easier way | simpler way | quicker way | faster way（7163 件。3 件以上）なので使われている。en の要の部分 easier way | simpler way | quicker way | faster way も 7163 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "class-asking-simplify-further",
+   "confidence": "verified",
+   "situation": "class-asking",
+   "en": "Do we need to simplify this further?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（simplify further | simplify it further | simplify this further | simplify it more | simplify any further | simplify that further | simplify more 1 件）。Math Stack Exchange の質問で最も多い要の部分 simplify further | simplify it further | simplify this further | simplify it more | simplify any further | simplify that further | simplify more（716 件。3 件以上）なので使われている。en の要の部分 simplify further | simplify it further | simplify this further | simplify it more | simplify any further | simplify that further | simplify more も 716 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "class-asking-when-is-it-due",
+   "confidence": "verified",
+   "situation": "class-asking",
+   "en": "When is this due?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（due on friday | due friday | due on monday | due monday | due next week 1 件）。Math Stack Exchange の質問で最も多い要の部分 due on friday | due friday | due on monday | due monday | due next week（9 件。3 件以上）なので使われている。en の要の部分 when is it due | when is that due | when's it due | when is this due | when's that due | when is the homework due | when is the paper due | when are they due は 0 件。en は Math Stack Exchange では選ばない。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "discord-anyone-get",
+   "confidence": "verified",
+   "situation": "discord",
+   "en": "Did anyone get #3?",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い did anyone get | has anyone gotten で 1 件）。Math Stack Exchange の質問で anyone figure out | anyone figured out が 43 件（3 件以上）なので likely。en の要の部分 did anyone get | has anyone gotten は 2 件。en は Math Stack Exchange では選ばない。",
+   "excerptsRead": true
+  },
+  {
+   "id": "discord-can-someone-explain",
+   "confidence": "verified",
+   "situation": "discord",
+   "en": "Can someone explain why the limit is 0 here?",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い can someone explain | could someone explain で 0 件）。Math Stack Exchange の質問で can someone explain | could someone explain が 10187 件（3 件以上）なので likely。en の要の部分 can someone explain | could someone explain も 10187 件（3 件以上）なので en のまま。",
+   "excerptsRead": false
+  },
+  {
+   "id": "discord-here-is-my-work",
+   "confidence": "verified",
+   "situation": "discord",
+   "en": "Here's my work so far — where did I go wrong?",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い here's my work | here is my work で 0 件）。Math Stack Exchange の質問で where did i go wrong が 2305 件（3 件以上）なので likely。en の要の部分 here's my work | here is my work も 1105 件（3 件以上）なので en のまま。",
+   "excerptsRead": false
+  },
+  {
+   "id": "discord-hint-no-spoilers",
+   "confidence": "verified",
+   "situation": "discord",
+   "en": "Can someone give me a hint? No full solutions pls.",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い a hint | any hints | no full solutions で 2 件）。Math Stack Exchange の質問で a hint | any hints | no full solutions が 35939 件（3 件以上）なので likely。en の要の部分 a hint | any hints | no full solutions も 35939 件（3 件以上）なので en のまま。",
+   "excerptsRead": true
+  },
+  {
+   "id": "discord-right-channel",
+   "confidence": "verified",
+   "situation": "discord",
+   "en": "Is this the right channel for calc questions?",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い right channel で 0 件）。Math Stack Exchange の質問で right place to ask が 159 件（3 件以上）なので likely。en の要の部分 right channel は Math Stack Exchange で検索しない。en は Math Stack Exchange では選ばない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "discord-same-answer",
+   "confidence": "verified",
+   "situation": "discord",
+   "en": "Same, I got 12 too.",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い  で 0 件）。Math Stack Exchange の質問で i got the same | got the same answer が 285 件（3 件以上）なので likely。en の要の部分 （数えない） は Math Stack Exchange で検索しない。en は Math Stack Exchange では選ばない。",
+   "excerptsRead": true
+  },
+  {
+   "id": "discord-typo-in-the-pset",
+   "confidence": "verified",
+   "situation": "discord",
+   "en": "I think there's a typo in #5 on the pset.",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い a typo in | typo in the で 0 件）。Math Stack Exchange の質問で a typo in | typo in the が 1176 件（3 件以上）なので likely。en の要の部分 a typo in | typo in the も 1176 件（3 件以上）なので en のまま。",
+   "excerptsRead": false
+  },
+  {
+   "id": "email-attached",
+   "confidence": "verified",
+   "situation": "email",
+   "en": "I've attached my work as a PDF.",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い i've attached | i have attached で 0 件）。Math Stack Exchange の質問で i've attached | i have attached が 719 件（3 件以上）なので likely。en の要の部分 i've attached | i have attached も 719 件（3 件以上）なので en のまま。",
+   "excerptsRead": false
+  },
+  {
+   "id": "email-confirm",
+   "confidence": "verified",
+   "situation": "email",
+   "en": "Could you confirm whether the quiz on Friday covers Section 4.3?",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い could you confirm | can you confirm で 0 件）。Math Stack Exchange の質問で could you confirm | can you confirm が 256 件（3 件以上）なので likely。en の要の部分 could you confirm | can you confirm も 256 件（3 件以上）なので en のまま。",
+   "excerptsRead": false
+  },
+  {
+   "id": "email-describe-where-stuck",
+   "confidence": "verified",
+   "situation": "email",
+   "en": "For problem 3, I got as far as setting up the integral, but I'm not sure how to handle the absolute value.",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い not sure how to で 0 件）。Math Stack Exchange の質問で not sure how to が 33258 件（3 件以上）なので likely。en の要の部分 not sure how to も 33258 件（3 件以上）なので en のまま。",
+   "excerptsRead": false
+  },
+  {
+   "id": "email-dictionary-during-exam",
+   "confidence": "verified",
+   "situation": "email",
+   "en": "English is not my first language. Would it be possible for me to use a paper bilingual dictionary during the exam?",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い my first language | my native language で 0 件）。Math Stack Exchange の質問で my first language | my native language が 665 件（3 件以上）なので likely。en の要の部分 my first language | my native language も 665 件（3 件以上）なので en のまま。",
+   "excerptsRead": false
+  },
+  {
+   "id": "email-follow-up",
+   "confidence": "verified",
+   "situation": "email",
+   "en": "I just wanted to follow up on my email from last week.",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い follow up on | following up on で 1 件）。Math Stack Exchange の質問で follow up on | following up on が 194 件（3 件以上）なので likely。en の要の部分 follow up on | following up on も 194 件（3 件以上）なので en のまま。",
+   "excerptsRead": false
+  },
+  {
+   "id": "email-missed-class",
+   "confidence": "verified",
+   "situation": "email",
+   "en": "I'm sorry I had to miss class on Wednesday. Is there anything I should do to catch up?",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い catch up on で 1 件）。Math Stack Exchange の質問で catch up on が 25 件（3 件以上）なので likely。en の要の部分 miss class は 0 件。en は Math Stack Exchange では選ばない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "email-regrade-request",
+   "confidence": "verified",
+   "situation": "email",
+   "en": "I'd like to ask about the grading on problem 2 of the midterm. I've attached a scan of my work.",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い about the grading で 0 件）。Math Stack Exchange の質問で another look | regrade | re-grade | look at it again | look at this again | graded wrong | graded incorrectly | grading was wrong | grading error が 7 件（3 件以上）なので likely。en の要の部分 about the grading は 2 件。en は Math Stack Exchange では選ばない。",
+   "excerptsRead": true
+  },
+  {
+   "id": "email-sign-off",
+   "confidence": "verified",
+   "situation": "email",
+   "en": "Best, Taro Yamada",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い sincerely で 2 件）。Math Stack Exchange の質問で best regards | kind regards が 1683 件（3 件以上）なので likely。en の要の部分 （数えない） は Math Stack Exchange で検索しない。en は Math Stack Exchange では選ばない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "email-thank-you-for-your-time",
+   "confidence": "verified",
+   "situation": "email",
+   "en": "Thank you for your time.",
+   "note": "email・discord の要の部分が MICASE の学生の発話に 3 件未満（最も多い thank you for your time | thanks for your time で 1 件）。Math Stack Exchange の質問で thanks in advance | thank you in advance が 68661 件（3 件以上）なので likely。en の要の部分 thank you for your time | thanks for your time も 3724 件（3 件以上）なので en のまま。",
+   "excerptsRead": false
+  },
+  {
+   "id": "exam-when-do-we-get-it-back",
+   "confidence": "verified",
+   "situation": "exam",
+   "en": "When will we get the exams back?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 exam back | test back（22 件。3 件以上）なので使われている。en の要の部分 exam back | test back も 22 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "group-study-answer-key-wrong",
+   "confidence": "verified",
+   "situation": "group-study",
+   "en": "I think the answer key might be wrong.",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（back of the book 1 件）。Math Stack Exchange の質問で最も多い要の部分 the answer key（1150 件。3 件以上）なので使われている。en の要の部分 the answer key も 1150 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "group-study-ask-the-ta",
+   "confidence": "verified",
+   "situation": "group-study",
+   "en": "Should we ask the TA?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（ask at office hours | go to office hours 2 件）。Math Stack Exchange の質問で最も多い要の部分 ask at office hours | go to office hours（4 件。3 件以上）なので使われている。en の要の部分 ask the ta は 2 件。en は Math Stack Exchange では選ばない。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "group-study-not-sure-but",
+   "confidence": "verified",
+   "situation": "group-study",
+   "en": "I'm not sure, but I think it's 4.",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（not sure but 2 件）。Math Stack Exchange の質問で最も多い要の部分 not sure but（467 件。3 件以上）なので使われている。en の要の部分 not sure but も 467 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "group-study-practice-exam",
+   "confidence": "verified",
+   "situation": "group-study",
+   "en": "Let's do the practice exam under timed conditions.",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 let's do the practice | let's take the practice | let's do a practice | under timed conditions（3 件。3 件以上）なので使われている。en の要の部分 let's do the practice | let's take the practice | let's do a practice | under timed conditions も 3 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "group-study-what-is-it-asking",
+   "confidence": "verified",
+   "situation": "group-study",
+   "en": "What is this question even asking?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 what is it asking | what's it asking | what is this question asking | what is this question even asking | what is it even asking（53 件。3 件以上）なので使われている。en の要の部分 what is it asking | what's it asking | what is this question asking | what is this question even asking | what is it even asking も 53 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "group-study-where-do-we-start",
+   "confidence": "verified",
+   "situation": "group-study",
+   "en": "Where do we even start with this one?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（where do we start | where do i start | where to start | where do we even start | where do i even start 2 件）。Math Stack Exchange の質問で最も多い要の部分 !have !has any ideas（15320 件。3 件以上）なので使われている。en の要の部分 where do we start | where do i start | where to start | where do we even start | where do i even start も 9398 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "group-study-you-dropped-a-sign",
+   "confidence": "verified",
+   "situation": "group-study",
+   "en": "I think you dropped a negative sign.",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 dropped a negative | dropped a sign | dropped the negative | forgot the negative | forgot a negative（7 件。3 件以上）なので使われている。en の要の部分 dropped a negative | dropped a sign | dropped the negative | forgot the negative | forgot a negative も 7 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "office-hours-am-i-on-the-right-track",
+   "confidence": "verified",
+   "situation": "office-hours",
+   "en": "Am I on the right track?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（will this work | would this work | would that work | will that work | is this going to work | is that going to work 2 件）。Math Stack Exchange の質問で最も多い要の部分 on the right track | in the right direction | right direction（4350 件。3 件以上）なので使われている。en の要の部分 on the right track | in the right direction | right direction も 4350 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "office-hours-can-i-come-back",
+   "confidence": "verified",
+   "situation": "office-hours",
+   "en": "Can I come back if I get stuck again?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（can i come back | could i come back | if i come back | come back later | come back tomorrow | come back next week | stop by again | come by again | come back if 2 件）。Math Stack Exchange の質問で最も多い要の部分 can i come back | could i come back | if i come back | come back later | come back tomorrow | come back next week | stop by again | come by again | come back if（5 件。3 件以上）なので使われている。en の要の部分 can i come back | could i come back | if i come back | come back later | come back tomorrow | come back next week | stop by again | come by again | come back if も 5 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "office-hours-can-i-show-you-what-i-tried",
+   "confidence": "verified",
+   "situation": "office-hours",
+   "en": "Can I show you what I tried?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（what i have so far | what i've got so far | what i got so far | so far i have | so far i've 1 件）。Math Stack Exchange の質問で最も多い要の部分 what i have so far | what i've got so far | what i got so far | so far i have | so far i've（12929 件。3 件以上）なので使われている。en の要の部分 show you what i | what i tried to do | tell you what i did | show you what i did も 644 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "office-hours-english-terms-are-new",
+   "confidence": "verified",
+   "situation": "office-hours",
+   "en": "I learned this in Japanese, so I'm still getting used to the English terms.",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 the english terms | english terms | used to the english（43 件。3 件以上）なので使われている。en の要の部分 the english terms | english terms | used to the english も 43 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "office-hours-extra-practice",
+   "confidence": "verified",
+   "situation": "office-hours",
+   "en": "Do you have any old exams I could practice with?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 any practice problems | any extra problems | more practice problems | extra practice problems | any extra practice（14 件。3 件以上）なので使われている。en の要の部分 any old exams | have old exams | are there old exams | any practice exams | is there a practice exam | any past exams | any old tests は 0 件。en は Math Stack Exchange では選ばない。register は主張しない。",
+   "excerptsRead": true
+  },
+  {
+   "id": "office-hours-hint-not-the-answer",
+   "confidence": "verified",
+   "situation": "office-hours",
+   "en": "Could you give me a hint instead of the answer?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（a hint | any hints | a little hint | some hints 2 件）。Math Stack Exchange の質問で最も多い要の部分 a hint | any hints | a little hint | some hints（42142 件。3 件以上）なので使われている。en の要の部分 a hint | any hints | a little hint | some hints も 42142 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "office-hours-intuition",
+   "confidence": "verified",
+   "situation": "office-hours",
+   "en": "I can follow the algebra, but I don't get the intuition behind it.",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 the intuition behind | intuition behind | the intuition for | don't get the intuition（6203 件。3 件以上）なので使われている。en の要の部分 the intuition behind | intuition behind | the intuition for | don't get the intuition も 6203 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "office-hours-is-this-rigorous-enough",
+   "confidence": "verified",
+   "situation": "office-hours",
+   "en": "Could you look over my proof and tell me if it's rigorous enough?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（look over my | look at my proof | check my proof | check my work | get it looked over 1 件）。Math Stack Exchange の質問で最も多い要の部分 look over my | look at my proof | check my proof | check my work | get it looked over（1472 件。3 件以上）なので使われている。en の要の部分 look over my | look at my proof | check my proof | check my work | get it looked over も 1472 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "office-hours-regrade",
+   "confidence": "verified",
+   "situation": "office-hours",
+   "en": "I think this might have been graded incorrectly. Could you take another look?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 another look | regrade | re-grade | look at it again | look at this again | graded wrong | graded incorrectly | grading was wrong | grading error（7 件。3 件以上）なので使われている。en の要の部分 another look | regrade | re-grade | look at it again | look at this again | graded wrong | graded incorrectly | grading was wrong | grading error も 7 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": true
+  },
+  {
+   "id": "office-hours-thanks-that-helps",
+   "confidence": "verified",
+   "situation": "office-hours",
+   "en": "Thanks, that really helps.",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（that really helps | that helps a lot | that helped a lot | that's helpful !to | that was helpful | that's very helpful | that was really helpful | that's really helpful | that's so helpful 2 件）。Math Stack Exchange の質問で最も多い要の部分 that really helps | that helps a lot | that helped a lot | that's helpful !to | that was helpful | that's very helpful | that was really helpful | that's really helpful | that's so helpful（93 件。3 件以上）なので使われている。en の要の部分 that really helps | that helps a lot | that helped a lot | that's helpful !to | that was helpful | that's very helpful | that was really helpful | that's really helpful | that's so helpful も 93 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "office-hours-understand-in-class-not-alone",
+   "confidence": "verified",
+   "situation": "office-hours",
+   "en": "I understand it in class, but I get stuck when I try it on my own.",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost 2 件）。Math Stack Exchange の質問で最も多い要の部分 get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost（33579 件。3 件以上）なので使われている。en の要の部分 get stuck | got stuck | i'm stuck | i was stuck | i get lost | i got lost も 33579 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "office-hours-when-to-use-which",
+   "confidence": "verified",
+   "situation": "office-hours",
+   "en": "How do I know which method to use?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（when to use | when do you use | when do i use | when would you use | when should i use 2 件）。Math Stack Exchange の質問で最も多い要の部分 which method | which one to use | which formula to use | which equation to use（867 件。3 件以上）なので使われている。en の要の部分 which method | which one to use | which formula to use | which equation to use も 867 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "office-hours-why-did-i-lose-points",
+   "confidence": "verified",
+   "situation": "office-hours",
+   "en": "I'm not sure why I lost points here.",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 what was wrong with my | what's wrong with my | what i did wrong（1614 件。3 件以上）なので使われている。en の要の部分 why i lost points | lost points on | lost points for | took points off | took off points | why did i lose points も 9 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": false
+  },
+  {
+   "id": "office-hours-do-you-have-a-minute",
+   "confidence": "likely",
+   "situation": "office-hours",
+   "en": "Do you have a minute?",
+   "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 have a minute | have a second | got a minute | got a second | have a sec（3 件。3 件以上）なので使われている。en の要の部分 have a minute | have a second | got a minute | got a second | have a sec も 3 件（3 件以上）なので en のまま。register は主張しない。",
+   "excerptsRead": true
+  }
+ ],
+ "T6": [
+  {
+   "id": "30-60-90-triangle",
+   "confidence": "verified",
+   "alt": "30-60-90 の三角形"
+  },
+  {
+   "id": "45-45-90-triangle",
+   "confidence": "verified",
+   "alt": "45°, 45°, 90° の三角形"
+  },
+  {
+   "id": "aa-similarity",
+   "confidence": "verified",
+   "alt": "AA 相似"
+  },
+  {
+   "id": "absolute-extrema",
+   "confidence": "verified",
+   "alt": "絶対極値"
+  },
+  {
+   "id": "absolute-value-equation",
+   "confidence": "verified",
+   "alt": "絶対値方程式"
+  },
+  {
+   "id": "accumulation-function",
+   "confidence": "verified",
+   "alt": "累積関数"
+  },
+  {
+   "id": "accumulation-function",
+   "confidence": "verified",
+   "alt": "積分で定義された関数"
+  },
+  {
+   "id": "area-between-two-curves",
+   "confidence": "verified",
+   "alt": "曲線間の面積"
+  },
+  {
+   "id": "area-between-two-curves",
+   "confidence": "verified",
+   "alt": "曲線で囲まれた面積"
+  },
+  {
+   "id": "area-between-two-curves",
+   "confidence": "verified",
+   "alt": "放物線と直線で囲まれた面積"
+  },
+  {
+   "id": "ascending-order",
+   "confidence": "verified",
+   "alt": "昇冪の順"
+  },
+  {
+   "id": "be-skewed",
+   "confidence": "verified",
+   "alt": "右に歪んだ"
+  },
+  {
+   "id": "be-skewed",
+   "confidence": "verified",
+   "alt": "分布が偏る"
+  },
+  {
+   "id": "change-together",
+   "confidence": "verified",
+   "alt": "y が x に伴って変わる"
+  },
+  {
+   "id": "check",
+   "confidence": "verified",
+   "alt": "解の確かめ"
+  },
+  {
+   "id": "checking-whether-the-solution-makes-sense",
+   "confidence": "verified",
+   "alt": "解の吟味をする"
+  },
+  {
+   "id": "clear-the-denominators",
+   "confidence": "verified",
+   "alt": "係数を整数にする"
+  },
+  {
+   "id": "collinear",
+   "confidence": "verified",
+   "alt": "共線の点"
+  },
+  {
+   "id": "combine-like-terms",
+   "confidence": "verified",
+   "alt": "同類項をまとめる計算"
+  },
+  {
+   "id": "compare",
+   "confidence": "verified",
+   "alt": "大小を比較する"
+  },
+  {
+   "id": "compare-coefficients",
+   "confidence": "verified",
+   "alt": "係数を比べる"
+  },
+  {
+   "id": "compare-coefficients",
+   "confidence": "verified",
+   "alt": "係数比較法"
+  },
+  {
+   "id": "concyclic",
+   "confidence": "verified",
+   "alt": "4 点が同一円周上にある"
+  },
+  {
+   "id": "conditional-statement",
+   "confidence": "verified",
+   "alt": "「p ならば q」の形の命題"
+  },
+  {
+   "id": "congruence-modulo-n",
+   "confidence": "verified",
+   "alt": "〜を法として合同"
+  },
+  {
+   "id": "constant-of-integration",
+   "confidence": "verified",
+   "alt": "プラス C"
+  },
+  {
+   "id": "cross-multiply",
+   "confidence": "verified",
+   "alt": "内項の積"
+  },
+  {
+   "id": "cross-multiply",
+   "confidence": "verified",
+   "alt": "外項の積"
+  },
+  {
+   "id": "derivative-of-the-logarithm",
+   "confidence": "verified",
+   "alt": "ln x の導関数"
+  },
+  {
+   "id": "difference-of-squares",
+   "confidence": "verified",
+   "alt": "二乗の差"
+  },
+  {
+   "id": "differentiate-both-sides",
+   "confidence": "verified",
+   "alt": "両辺を x で微分する"
+  },
+  {
+   "id": "direct-proportion",
+   "confidence": "verified",
+   "alt": "〜に比例する"
+  },
+  {
+   "id": "distribute",
+   "confidence": "verified",
+   "alt": "分配して展開する"
+  },
+  {
+   "id": "dividend",
+   "confidence": "verified",
+   "alt": "割られる数"
+  },
+  {
+   "id": "epsilon-delta-definition",
+   "confidence": "verified",
+   "alt": "極限の厳密な定義"
+  },
+  {
+   "id": "exponential-model",
+   "confidence": "verified",
+   "alt": "指数増加・減衰のモデル"
+  },
+  {
+   "id": "first-derivative-test",
+   "confidence": "verified",
+   "alt": "第 1 次導関数テスト"
+  },
+  {
+   "id": "first-order-linear-differential-equation",
+   "confidence": "verified",
+   "alt": "線形一階微分方程式"
+  },
+  {
+   "id": "frequency-polygon",
+   "confidence": "verified",
+   "alt": "度数分布多角形"
+  },
+  {
+   "id": "function-notation",
+   "confidence": "verified",
+   "alt": "関数記法"
+  },
+  {
+   "id": "greater-than",
+   "confidence": "verified",
+   "alt": "〜を超える"
+  },
+  {
+   "id": "indirect-measurement",
+   "confidence": "verified",
+   "alt": "間接測定"
+  },
+  {
+   "id": "infinitely-many-solutions",
+   "confidence": "verified",
+   "alt": "従属な連立方程式"
+  },
+  {
+   "id": "inscribed-angle",
+   "confidence": "verified",
+   "alt": "内接角"
+  },
+  {
+   "id": "integrals-of-even-and-odd-functions",
+   "confidence": "verified",
+   "alt": "偶関数の定積分"
+  },
+  {
+   "id": "integrals-of-even-and-odd-functions",
+   "confidence": "verified",
+   "alt": "奇関数の定積分"
+  },
+  {
+   "id": "integration-by-substitution",
+   "confidence": "verified",
+   "alt": "u 置換"
+  },
+  {
+   "id": "integration-by-substitution",
+   "confidence": "verified",
+   "alt": "置換法則"
+  },
+  {
+   "id": "inverse-proportion",
+   "confidence": "verified",
+   "alt": "〜に反比例する"
+  },
+  {
+   "id": "inverse-proportion",
+   "confidence": "verified",
+   "alt": "逆変化"
+  },
+  {
+   "id": "less-than",
+   "confidence": "verified",
+   "alt": "〜より小さい"
+  },
+  {
+   "id": "let-u-equal",
+   "confidence": "verified",
+   "alt": "〜を x とする"
+  },
+  {
+   "id": "linear-approximation",
+   "confidence": "verified",
+   "alt": "一次近似"
+  },
+  {
+   "id": "linear-approximation",
+   "confidence": "verified",
+   "alt": "線形近似"
+  },
+  {
+   "id": "local-extremum",
+   "confidence": "verified",
+   "alt": "相対極値"
+  },
+  {
+   "id": "measure",
+   "confidence": "verified",
+   "alt": "長さを測る"
+  },
+  {
+   "id": "measure-of-center",
+   "confidence": "verified",
+   "alt": "中心の測度"
+  },
+  {
+   "id": "midpoint",
+   "confidence": "verified",
+   "alt": "中点の座標"
+  },
+  {
+   "id": "negate",
+   "confidence": "verified",
+   "alt": "否定をつくる"
+  },
+  {
+   "id": "net-change",
+   "confidence": "verified",
+   "alt": "純変化定理"
+  },
+  {
+   "id": "no-solution",
+   "confidence": "verified",
+   "alt": "矛盾する連立方程式"
+  },
+  {
+   "id": "parametric-equations",
+   "confidence": "verified",
+   "alt": "媒介変数方程式"
+  },
+  {
+   "id": "parentheses",
+   "confidence": "verified",
+   "alt": "丸かっこ"
+  },
+  {
+   "id": "partial-fraction-decomposition",
+   "confidence": "verified",
+   "alt": "部分分数による積分"
+  },
+  {
+   "id": "perimeter",
+   "confidence": "verified",
+   "alt": "周囲の長さ"
+  },
+  {
+   "id": "perpendicular-lines",
+   "confidence": "verified",
+   "alt": "垂直な 2 直線"
+  },
+  {
+   "id": "plot-a-point",
+   "confidence": "verified",
+   "alt": "点をとる操作"
+  },
+  {
+   "id": "power-rule",
+   "confidence": "verified",
+   "alt": "べき乗則"
+  },
+  {
+   "id": "projectile-motion",
+   "confidence": "verified",
+   "alt": "投射運動"
+  },
+  {
+   "id": "proof-by-contrapositive",
+   "confidence": "verified",
+   "alt": "対偶による証明"
+  },
+  {
+   "id": "prove",
+   "confidence": "verified",
+   "alt": "証明せよ"
+  },
+  {
+   "id": "rationalizing-the-denominator",
+   "confidence": "verified",
+   "alt": "有理化する"
+  },
+  {
+   "id": "related-rates",
+   "confidence": "verified",
+   "alt": "関連変化率の問題"
+  },
+  {
+   "id": "rigid-motion",
+   "confidence": "verified",
+   "alt": "剛体変換"
+  },
+  {
+   "id": "sampling",
+   "confidence": "verified",
+   "alt": "標本抽出法"
+  },
+  {
+   "id": "second-derivative-test",
+   "confidence": "verified",
+   "alt": "第 2 次導関数テスト"
+  },
+  {
+   "id": "sketch",
+   "confidence": "verified",
+   "alt": "図示せよ"
+  },
+  {
+   "id": "slant-height",
+   "confidence": "verified",
+   "alt": "斜高"
+  },
+  {
+   "id": "slope-field",
+   "confidence": "verified",
+   "alt": "傾きの場"
+  },
+  {
+   "id": "solving-by-taking-square-roots",
+   "confidence": "verified",
+   "alt": "平方根をとって解く"
+  },
+  {
+   "id": "spread",
+   "confidence": "verified",
+   "alt": "ばらつく"
+  },
+  {
+   "id": "spread",
+   "confidence": "verified",
+   "alt": "散らばりの測度"
+  },
+  {
+   "id": "squeeze-theorem",
+   "confidence": "verified",
+   "alt": "はさみうちの定理"
+  },
+  {
+   "id": "stretch-vertically",
+   "confidence": "verified",
+   "alt": "y 軸方向に拡大・縮小する"
+  },
+  {
+   "id": "sum-to-product-formulas",
+   "confidence": "verified",
+   "alt": "和を積に直す公式"
+  },
+  {
+   "id": "summation-notation",
+   "confidence": "verified",
+   "alt": "シグマ記法での和"
+  },
+  {
+   "id": "survey",
+   "confidence": "verified",
+   "alt": "質問票"
+  },
+  {
+   "id": "system-of-linear-equations",
+   "confidence": "verified",
+   "alt": "線形方程式系"
+  },
+  {
+   "id": "system-of-linear-equations",
+   "confidence": "verified",
+   "alt": "連立 1 次方程式"
+  },
+  {
+   "id": "take-the-log-of-both-sides",
+   "confidence": "verified",
+   "alt": "両辺の対数をとる"
+  },
+  {
+   "id": "tangent-chord-theorem",
+   "confidence": "verified",
+   "alt": "接線と弦のなす角"
+  },
+  {
+   "id": "transformation-of-a-variable",
+   "confidence": "verified",
+   "alt": "データの変換"
+  },
+  {
+   "id": "trapezoidal-rule",
+   "confidence": "verified",
+   "alt": "台形則"
+  },
+  {
+   "id": "work-backwards",
+   "confidence": "verified",
+   "alt": "逆演算で解く"
+  },
+  {
+   "id": "write-an-equation",
+   "confidence": "verified",
+   "alt": "文字を使って表す"
+  },
+  {
+   "id": "zero-product-property",
+   "confidence": "verified",
+   "alt": "零積の性質"
+  },
+  {
+   "id": "zero-product-property",
+   "confidence": "verified",
+   "alt": "零因子の性質"
+  },
+  {
+   "id": "adjugate",
+   "confidence": "likely",
+   "alt": "古典随伴行列"
+  },
+  {
+   "id": "ambiguous-case",
+   "confidence": "likely",
+   "alt": "2 通りの三角形ができる場合"
+  },
+  {
+   "id": "area-in-polar-coordinates",
+   "confidence": "likely",
+   "alt": "極座標の面積"
+  },
+  {
+   "id": "area-model",
+   "confidence": "likely",
+   "alt": "面積モデル"
+  },
+  {
+   "id": "biconditional",
+   "confidence": "likely",
+   "alt": "同値な命題"
+  },
+  {
+   "id": "blinding",
+   "confidence": "likely",
+   "alt": "盲検化"
+  },
+  {
+   "id": "cardioid",
+   "confidence": "likely",
+   "alt": "心臓形"
+  },
+  {
+   "id": "categorical-variable",
+   "confidence": "likely",
+   "alt": "カテゴリ変数"
+  },
+  {
+   "id": "categorical-variable",
+   "confidence": "likely",
+   "alt": "質的変数"
+  },
+  {
+   "id": "change-of-basis",
+   "confidence": "likely",
+   "alt": "基底変換"
+  },
+  {
+   "id": "chi-square-test",
+   "confidence": "likely",
+   "alt": "χ² 検定"
+  },
+  {
+   "id": "cluster-sampling",
+   "confidence": "likely",
+   "alt": "集落抽出法"
+  },
+  {
+   "id": "component-form",
+   "confidence": "likely",
+   "alt": "成分形"
+  },
+  {
+   "id": "composite-figure",
+   "confidence": "likely",
+   "alt": "合成図形"
+  },
+  {
+   "id": "composition-of-transformations",
+   "confidence": "likely",
+   "alt": "関数の変換の合成"
+  },
+  {
+   "id": "conservative-vector-field",
+   "confidence": "likely",
+   "alt": "保存ベクトル場"
+  },
+  {
+   "id": "contingency-table",
+   "confidence": "likely",
+   "alt": "二元分割表"
+  },
+  {
+   "id": "continuity-correction",
+   "confidence": "likely",
+   "alt": "半整数補正"
+  },
+  {
+   "id": "convenience-sample",
+   "confidence": "likely",
+   "alt": "便宜的標本"
+  },
+  {
+   "id": "coordinate-proof",
+   "confidence": "likely",
+   "alt": "座標証明"
+  },
+  {
+   "id": "coordinates-in-space",
+   "confidence": "likely",
+   "alt": "三次元座標系"
+  },
+  {
+   "id": "cpctc",
+   "confidence": "likely",
+   "alt": "合同な三角形の対応する部分は等しい"
+  },
+  {
+   "id": "decomposition-of-a-vector",
+   "confidence": "likely",
+   "alt": "ベクトルを分解する"
+  },
+  {
+   "id": "empirical-rule",
+   "confidence": "likely",
+   "alt": "68-95-99.7 則"
+  },
+  {
+   "id": "end-behavior",
+   "confidence": "likely",
+   "alt": "終端挙動"
+  },
+  {
+   "id": "error-bound",
+   "confidence": "likely",
+   "alt": "誤差の範囲"
+  },
+  {
+   "id": "exterior-angle-theorem",
+   "confidence": "likely",
+   "alt": "三角形の外角の性質"
+  },
+  {
+   "id": "gaussian-elimination",
+   "confidence": "likely",
+   "alt": "掃き出し法"
+  },
+  {
+   "id": "generating-function",
+   "confidence": "likely",
+   "alt": "生成関数"
+  },
+  {
+   "id": "glide-reflection",
+   "confidence": "likely",
+   "alt": "グライド反射"
+  },
+  {
+   "id": "gradient",
+   "confidence": "likely",
+   "alt": "グラディエント"
+  },
+  {
+   "id": "gram-schmidt-process",
+   "confidence": "likely",
+   "alt": "グラム・シュミットの直交化"
+  },
+  {
+   "id": "graph-coloring",
+   "confidence": "likely",
+   "alt": "彩色"
+  },
+  {
+   "id": "hamiltonian-path",
+   "confidence": "likely",
+   "alt": "ハミルトン経路"
+  },
+  {
+   "id": "homogeneous-system",
+   "confidence": "likely",
+   "alt": "斉次連立一次方程式"
+  },
+  {
+   "id": "homogeneous-system",
+   "confidence": "likely",
+   "alt": "同次連立一次方程式"
+  },
+  {
+   "id": "image",
+   "confidence": "likely",
+   "alt": "移した図形"
+  },
+  {
+   "id": "inclusion-exclusion-principle",
+   "confidence": "likely",
+   "alt": "包含排除原理"
+  },
+  {
+   "id": "inclusion-exclusion-principle",
+   "confidence": "likely",
+   "alt": "包含と排除の原理"
+  },
+  {
+   "id": "intercepted-arc",
+   "confidence": "likely",
+   "alt": "角に対する弧"
+  },
+  {
+   "id": "isosceles-triangle-theorem",
+   "confidence": "likely",
+   "alt": "二等辺三角形の底角は等しい"
+  },
+  {
+   "id": "isosceles-triangle-theorem",
+   "confidence": "likely",
+   "alt": "底角定理"
+  },
+  {
+   "id": "law-of-detachment",
+   "confidence": "likely",
+   "alt": "モーダスポネンス"
+  },
+  {
+   "id": "limacon",
+   "confidence": "likely",
+   "alt": "蝸牛形"
+  },
+  {
+   "id": "limacon",
+   "confidence": "likely",
+   "alt": "パスカルの蝸牛形"
+  },
+  {
+   "id": "linearly-dependent",
+   "confidence": "likely",
+   "alt": "線形従属"
+  },
+  {
+   "id": "midline",
+   "confidence": "likely",
+   "alt": "中央線"
+  },
+  {
+   "id": "monotone-convergence-theorem",
+   "confidence": "likely",
+   "alt": "単調数列定理"
+  },
+  {
+   "id": "newtons-law-of-cooling",
+   "confidence": "likely",
+   "alt": "ニュートンの冷却の法則"
+  },
+  {
+   "id": "orientation",
+   "confidence": "likely",
+   "alt": "曲線の向き"
+  },
+  {
+   "id": "paired-t-test",
+   "confidence": "likely",
+   "alt": "対応のある標本"
+  },
+  {
+   "id": "partial-order",
+   "confidence": "likely",
+   "alt": "半順序関係"
+  },
+  {
+   "id": "piecewise-function",
+   "confidence": "likely",
+   "alt": "区分的定義"
+  },
+  {
+   "id": "pigeonhole-principle",
+   "confidence": "likely",
+   "alt": "部屋割り論法"
+  },
+  {
+   "id": "pigeonhole-principle",
+   "confidence": "likely",
+   "alt": "ディリクレの箱入れ原理"
+  },
+  {
+   "id": "planar-graph",
+   "confidence": "likely",
+   "alt": "平面的グラフ"
+  },
+  {
+   "id": "polynomial-inequality",
+   "confidence": "likely",
+   "alt": "高次不等式"
+  },
+  {
+   "id": "preimage",
+   "confidence": "likely",
+   "alt": "もとの図形"
+  },
+  {
+   "id": "prime-polynomial",
+   "confidence": "likely",
+   "alt": "素多項式"
+  },
+  {
+   "id": "prime-polynomial",
+   "confidence": "likely",
+   "alt": "これ以上因数分解できない式"
+  },
+  {
+   "id": "quadratic-regression",
+   "confidence": "draft",
+   "alt": "二次関数の回帰"
+  },
+  {
+   "id": "quantitative-variable",
+   "confidence": "likely",
+   "alt": "量的変数"
+  },
+  {
+   "id": "radical-equation",
+   "confidence": "likely",
+   "alt": "根号方程式"
+  },
+  {
+   "id": "rank-nullity-theorem",
+   "confidence": "likely",
+   "alt": "次元定理"
+  },
+  {
+   "id": "ratio-test",
+   "confidence": "likely",
+   "alt": "ダランベールの判定法"
+  },
+  {
+   "id": "reduced-row-echelon-form",
+   "confidence": "likely",
+   "alt": "簡約階段形"
+  },
+  {
+   "id": "resistant-statistic",
+   "confidence": "likely",
+   "alt": "抵抗性のある統計量"
+  },
+  {
+   "id": "resultant",
+   "confidence": "likely",
+   "alt": "和ベクトル"
+  },
+  {
+   "id": "right-triangle-similarity",
+   "confidence": "likely",
+   "alt": "斜辺への垂線"
+  },
+  {
+   "id": "rose-curve",
+   "confidence": "likely",
+   "alt": "正葉曲線"
+  },
+  {
+   "id": "rotated-conics",
+   "confidence": "likely",
+   "alt": "回転した二次曲線"
+  },
+  {
+   "id": "rotated-conics",
+   "confidence": "likely",
+   "alt": "回転した円錐曲線"
+  },
+  {
+   "id": "row-echelon-form",
+   "confidence": "likely",
+   "alt": "階段行列"
+  },
+  {
+   "id": "sampling-error",
+   "confidence": "likely",
+   "alt": "標本抽出の誤り"
+  },
+  {
+   "id": "sampling-error",
+   "confidence": "likely",
+   "alt": "標本の変動"
+  },
+  {
+   "id": "skewness",
+   "confidence": "likely",
+   "alt": "分布の歪み"
+  },
+  {
+   "id": "solve-the-right-triangle",
+   "confidence": "likely",
+   "alt": "直角三角形を解く"
+  },
+  {
+   "id": "span",
+   "confidence": "likely",
+   "alt": "スパン"
+  },
+  {
+   "id": "standard-unit-vectors",
+   "confidence": "likely",
+   "alt": "単位ベクトル i, j"
+  },
+  {
+   "id": "statistic",
+   "confidence": "likely",
+   "alt": "標本統計量"
+  },
+  {
+   "id": "statistically-significant",
+   "confidence": "likely",
+   "alt": "統計的に有意"
+  },
+  {
+   "id": "stem-and-leaf-plot",
+   "confidence": "likely",
+   "alt": "幹葉表示"
+  },
+  {
+   "id": "strong-induction",
+   "confidence": "likely",
+   "alt": "強帰納法"
+  },
+  {
+   "id": "strong-induction",
+   "confidence": "likely",
+   "alt": "強い数学的帰納法"
+  },
+  {
+   "id": "subspace",
+   "confidence": "likely",
+   "alt": "線形部分空間"
+  },
+  {
+   "id": "system-of-linear-inequalities",
+   "confidence": "likely",
+   "alt": "連立不等式の表す領域"
+  },
+  {
+   "id": "system-of-linear-inequalities",
+   "confidence": "likely",
+   "alt": "連立不等式のグラフ"
+  },
+  {
+   "id": "system-of-three-equations",
+   "confidence": "likely",
+   "alt": "3 元 1 次連立方程式"
+  },
+  {
+   "id": "systematic-sampling",
+   "confidence": "likely",
+   "alt": "系統抽出法"
+  },
+  {
+   "id": "t-distribution",
+   "confidence": "likely",
+   "alt": "スチューデントの t 分布"
+  },
+  {
+   "id": "tessellation",
+   "confidence": "likely",
+   "alt": "テセレーション"
+  },
+  {
+   "id": "test-for-homogeneity",
+   "confidence": "likely",
+   "alt": "一様性の検定"
+  },
+  {
+   "id": "transformations-of-functions",
+   "confidence": "likely",
+   "alt": "関数の変換"
+  },
+  {
+   "id": "treatment",
+   "confidence": "likely",
+   "alt": "処理条件"
+  },
+  {
+   "id": "turning-points",
+   "confidence": "likely",
+   "alt": "極大・極小の点"
+  },
+  {
+   "id": "unit-normal-vector",
+   "confidence": "likely",
+   "alt": "単位主法線ベクトル"
+  },
+  {
+   "id": "vector-projection",
+   "confidence": "likely",
+   "alt": "ベクトル射影"
+  },
+  {
+   "id": "well-ordering-principle",
+   "confidence": "likely",
+   "alt": "自然数の整列性"
+  },
+  {
+   "id": "without-loss-of-generality",
+   "confidence": "likely",
+   "alt": "一般性を失うことなく"
+  }
+ ],
+ "T4": [
+  {
+   "id": "cosine-of-theta",
+   "confidence": "verified",
+   "form": "!the !inverse !arc cosine of *",
+   "count": 993,
+   "modifier": "hyperbolic cosine of",
+   "hits": 4,
+   "readings": [
+    "cosine of theta",
+    "cosine theta",
+    "the cosine of theta"
+   ],
+   "others": {
+    "cosine theta | cosine x | cosine alpha | cosine two x": 594,
+    "the cosine of *": 144
+   }
+  },
+  {
+   "id": "cosine-of-theta",
+   "confidence": "verified",
+   "form": "!the !inverse !arc cosine of *",
+   "count": 993,
+   "modifier": "third cosine of",
+   "hits": 1,
+   "readings": [
+    "cosine of theta",
+    "cosine theta",
+    "the cosine of theta"
+   ],
+   "others": {
+    "cosine theta | cosine x | cosine alpha | cosine two x": 594,
+    "the cosine of *": 144
+   }
+  },
+  {
+   "id": "sine-of-theta",
+   "confidence": "verified",
+   "form": "!the !inverse !arc sine of *",
+   "count": 931,
+   "modifier": "hyperbolic sine of",
+   "hits": 1,
+   "readings": [
+    "sine of theta",
+    "sine theta",
+    "the sine of theta"
+   ],
+   "others": {
+    "sine theta | sine x | sine alpha | sine two x": 418,
+    "the sine of *": 126
+   }
+  },
+  {
+   "id": "sine-of-theta",
+   "confidence": "verified",
+   "form": "!the !inverse !arc sine of *",
+   "count": 931,
+   "modifier": "second sine of",
+   "hits": 1,
+   "readings": [
+    "sine of theta",
+    "sine theta",
+    "the sine of theta"
+   ],
+   "others": {
+    "sine theta | sine x | sine alpha | sine two x": 418,
+    "the sine of *": 126
+   }
+  }
+ ]
+}
