@@ -103,7 +103,7 @@
       "note": "Algebra 2 6.6 The Pythagorean Identity (Part 2)（the two missing trigonometric ratios。mapping_note）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-10-09",
@@ -129,11 +129,6 @@
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 4 件（10 未満））。見出しは IM の呼び方 trigonometric ratio（Geometry glossary・Geometry 4.6 Working with Trigonometric Ratios・Geometry 4.9 Using Trigonometric Ratios to Find Angles・計 8 件）。register は主張しない。",
       "raised": "2026-09-25"
-    },
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-09）で大きな直し: 公開前の抜き取り（Fable）: mapping exact → near（参照の trigonometric ratio は直角三角形の鋭角の比。日本の三角比は鈍角まで）。定義の英文を鋭角の比に、例文 2 を Find sin 150°, cos 150°, and tan 150°. に差し替えた。見直す点: mapping・mapping_note・definition_en・examples[1]。次の監査のセッションが見直す。",
-      "raised": "2026-10-09"
     }
   ]
 }

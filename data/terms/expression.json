@@ -73,7 +73,7 @@
       "note": "第 1 学年 A 数と式: 数量の関係を表す式を等式または不等式に表す（mapping_note）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-10-09",
@@ -113,12 +113,5 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-25"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-09）で大きな直し: 公開前の抜き取り（Fable）: mapping exact → near（日本語の「式」は等式・不等式も指し、英語の expression は等号を含まない式だけ。pitfalls[0] を mapping_note に移し、日本語版 Wikipedia「等式」を出典に）。見直す点: mapping・mapping_note。次の監査のセッションが見直す。",
-      "raised": "2026-10-09"
-    }
-  ]
+  }
 }

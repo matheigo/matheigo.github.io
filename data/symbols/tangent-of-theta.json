@@ -75,7 +75,7 @@
       "note": "Geometry 7.3 Tangent Lines"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "updated": "2026-10-09",
   "evidence": {
     "spoken": {
@@ -103,12 +103,5 @@
     "machine": null,
     "audit": "2026-10-09",
     "human": null
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-09）で大きな直し: 公開前の抜き取り（Fable）: spoken_en の 1 つ目を tangent theta に（1 つ目の読みの形が inverse tangent of x・arc tangent of x を数えていた。数え直して 185 ／ 168 ／ 76。3 つとも standard のまま）。見直す点: spoken_en の並び・notes[0]、lib.ts SYMBOL_PATTERNS の !inverse !arc。次の監査のセッションが見直す。",
-      "raised": "2026-10-09"
-    }
-  ]
+  }
 }

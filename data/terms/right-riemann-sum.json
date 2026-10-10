@@ -85,7 +85,7 @@
       "note": "「右リーマン和」は出てこない"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-24",
     "audit": "2026-10-09",
@@ -107,12 +107,5 @@
       "openstax-calculus"
     ],
     "counted": "2026-09-25"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-09）で大きな直し: 公開前の抜き取り（Fable）: 定義の日本語の「区間を等分した」を外した（CED topic 6.2 は uniform or nonuniform partitions）。pitfalls に CED の nonuniform partitions。見直す点: definition_ja・pitfalls[1]・variants の note。次の監査のセッションが見直す。",
-      "raised": "2026-10-09"
-    }
-  ]
+  }
 }
