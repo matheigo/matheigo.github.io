@@ -276,7 +276,7 @@ schema/         terms.schema.json symbols.schema.json ...
    - 約分 → ○ reduce (a fraction) / cancel（動詞）
    - 通分 → ○ find a common denominator
    - 代入 → ○ substitute / plug in（教室では plug in が圧倒的）
-   - たすき掛け → `mapping: none`。米国は ac method / grouping / box method
+   - たすき掛け → `mapping: near`。同じ手順（a と c の因数の組を試して中央の項を確かめる）を OpenStax Elementary Algebra 7.3 は trial and error、IM Algebra 1 7.10 は guessing and checking と書く。たすき掛けの図に当たる名前は資料に出てこない。ac method・factoring by grouping は別の手順（2026-10-09 のユーザーの決定。前は none）
    - 相加相乗平均 → ○ AM–GM inequality
    - はさみうちの原理 → ○ squeeze theorem（sandwich theorem は英国寄り）
    - 区分求積法 → ○ Riemann sum（`near`。「区分求積」という名前の手法としては教えない）

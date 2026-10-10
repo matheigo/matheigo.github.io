@@ -78,7 +78,7 @@ Stewart *Calculus* や Larson *Precalculus* は書名を出典に挙げるだけ
 | 約分 | — | simplify the fraction（書き言葉で最も多い。OpenStax Prealgebra ほか）／ cancel the common factor（分数式）／ reduce ／ cancel（動詞） | near |
 | 通分 | — | find a common denominator（動詞句） | near |
 | 代入 | — | plug in ／ substitute（話し言葉は plug in、書き言葉は substitute。高校向けの Khan は話し言葉でも substitute） | exact |
-| たすき掛け | cross multiplication | ac method ／ grouping ／ box method | none |
+| たすき掛け | cross multiplication | trial and error（OpenStax Elementary Algebra 7.3）／ guess and check（IM Algebra 1 7.10 は guessing and checking）。同じ手順（a と c の因数の組を試して中央の項を確かめる）で、たすき掛けの図に当たる名前は用例コーパスと参照に出てこない。ac method・factoring by grouping は別の手順（2026-10-09 のユーザーの決定） | near |
 | 相加相乗平均 | — | AM–GM inequality | exact |
 | はさみうちの原理 | — | squeeze theorem（CED topic 1.8・OpenStax。sandwich theorem は Khan Academy の講義に少数） | exact |
 | 区分求積法 | piecewise quadrature | Riemann sum（手法名としては教えない） | near |

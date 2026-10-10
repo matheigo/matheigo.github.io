@@ -9,6 +9,10 @@
     {
       "en": "Can you show us one more?",
       "register": "neutral"
+    },
+    {
+      "en": "Could we do one more example?",
+      "register": "polite"
     }
   ],
   "tags": [
@@ -28,13 +32,8 @@
   },
   "flags": [
     {
-      "code": "corpus-undecided",
-      "note": "どの要の部分も 10 件に届かず、首位の要の部分も 3 件未満（MICASE の学生の発話で数えた。0 件）。人間レビューへ。",
-      "raised": "2026-10-09"
-    },
-    {
-      "code": "audit-human",
-      "note": "Phase 5 監査（2026-10-09）で判断がつかない: 公開前の抜き取り（Fable）: likely の根拠だった Math Stack Exchange の件数が意図を運ばない（do another example 6・do one more example 1 は質問者が自分で例を挙げる文、do one more 14 は one more step ほか。another example please 2 のうち頼む文は 1）。MICASE の学生の発話は 0 件で、監査 13 の前の決定 1 により人間レビューへ（en Could you do another example? の文そのものの誤りではない）。人間レビューへ。",
+      "code": "corpus-human-settled",
+      "note": "en は人間が決めた（Could you do another example? のまま。variants に Could we do one more example?。ユーザーの決定 3（監査 17 の前。第 1 回の人間レビュー行き））。例題をもう 1 つ頼む言い方は MICASE の学生の発話にも Math Stack Exchange の質問にも 3 件に届かない（DECISIONS）。register は主張しない。",
       "raised": "2026-10-09"
     }
   ],

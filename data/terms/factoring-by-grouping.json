@@ -46,7 +46,7 @@
   "collocations": [],
   "pitfalls": [
     "2 つ目の組から負の数をくくり出すときは符号に注意する。xy + 5x − 2y − 10 = x(y + 5) − 2(y + 5) = (x − 2)(y + 5) で、−2 でくくると −10 は +5 になる。",
-    "ax² + bx + c を因数分解する ac method（エントリ cross-method）は、bx を 2 つの項に分けて 4 項にし、この方法でくくる。2x² + 7x + 3 = 2x² + 6x + x + 3 = 2x(x + 3) + (x + 3) = (2x + 1)(x + 3)。",
+    "ax² + bx + c を因数分解する ac method（たすき掛け（エントリ cross-method）とは別の手順）は、bx を 2 つの項に分けて 4 項にし、この方法でくくる。2x² + 7x + 3 = 2x² + 6x + x + 3 = 2x(x + 3) + (x + 3) = (2x + 1)(x + 3)。",
     "組の作り方によっては共通の式が出てこない。そのときは項の順番を入れ替えて組み直す。1 つの文字について整理する方法（エントリ arrange-by-the-variable-of-lowest-degree）とは別の手順。"
   ],
   "related": [
@@ -86,7 +86,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "factoring by grouping": 39

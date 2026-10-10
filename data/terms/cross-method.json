@@ -8,13 +8,21 @@
     ]
   },
   "en": {
-    "term": "cross method",
+    "term": "trial and error",
     "alt": [],
-    "uk": null
+    "variants": [
+      {
+        "term": "guess and check",
+        "register": "spoken",
+        "note": "話し言葉では trial and error と並んで使う。講義や解説動画では、方程式の解や原始関数を当てて確かめるときにも言う。IM Algebra 1 7.10 は因数の組を探す手順を guessing and checking と書く。"
+      }
+    ],
+    "uk": null,
+    "register": "both"
   },
   "pos": "noun",
-  "mapping": "none",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。日本語版 Wikipedia「因数分解」には節「たすきがけ」がある。OpenStax Elementary Algebra 7.3 は、因数の組を試す trial and error と、ac を 2 つに分けて factoring by grouping（エントリ factoring-by-grouping）する “ac” method（grouping method とも）で ax² + bx + c を因数分解し、Intermediate Algebra 6.2 も AC method を扱う。IM Algebra 1 7.10 は (3x + □)(2x + □) の候補を guessing and checking で探す。見出しの cross method も用例コーパスと参照には出てこない。",
+  "mapping": "near",
+  "mapping_note": "OpenStax Elementary Algebra 7.3 は、ax² + bx + c の因数を、a の因数の組と c の因数の組を ( )( ) に当てはめ、外側と内側の積の和が中央の項 bx になるかを確かめて探す手順を trial and error と呼び（factor … using trial and error。Intermediate Algebra 6.2 も同じ）、IM Algebra 1 7.10 は同じ探し方を guessing and checking と書く。手順はたすき掛けと同じだが、斜めに掛ける図に当たる名前（cross method など）は用例コーパスと参照（CED・OpenStax・IM・CK-12）に出てこない。日本語版 Wikipedia「因数分解」には節「たすきがけ」がある。OpenStax の “ac” method（Intermediate Algebra 6.2 は AC method）は、ac を 2 つに分けて factoring by grouping（エントリ factoring-by-grouping）する別の手順。",
   "domains": [
     "algebra"
   ],
@@ -33,12 +41,17 @@
   "spoken_en": "the quantity p x plus q times the quantity r x plus s equals p r x squared plus the quantity p s plus q r times x, plus q s",
   "examples": [
     {
+      "en": "For 3x² + 7x + 2, let's use trial and error. Try (3x + 1)(x + 2): the outer product is 6x, the inner product is x, and 6x plus x is 7x, so that's it.",
+      "ja": "3x² + 7x + 2 をたすき掛けで因数分解しよう。(3x + 1)(x + 2) なら、外側の積が 6x、内側の積が x で、足すと 7x になるから、これで合っている。",
+      "register": "spoken"
+    },
+    {
       "en": "For 3x² + 7x + 2, the ac method says multiply 3 times 2 to get 6, then find two numbers that multiply to 6 and add to 7.",
       "ja": "3x² + 7x + 2 なら、ac method では 3 × 2 = 6 を計算して、掛けて 6、足して 7 になる 2 つの数を探す。",
       "register": "spoken"
     },
     {
-      "en": "Factor 3x² + 7x + 2 by the cross method.",
+      "en": "Factor 3x² + 7x + 2 using trial and error.",
       "ja": "たすき掛けを用いて、3x² + 7x + 2 を因数分解せよ。",
       "register": "written"
     }
@@ -46,6 +59,7 @@
   "collocations": [],
   "pitfalls": [
     "直訳の cross multiplication は、比例式 a/b = c/d から ad = bc を作る cross-multiply（エントリ cross-multiply）の意味になり、たすき掛けの意味にはならない。",
+    "trial and error・guess and check は因数分解だけの名前ではなく、答えの候補を当てはめて確かめるやり方一般を言う。たすき掛けの意味で言うときは、factor 3x² + 7x + 2 using trial and error のように因数分解と一緒に言う。",
     "ac method は、ac を 2 つの数に分けて x の項を 2 つに書き分け、factoring by grouping（エントリ factoring-by-grouping）で因数分解する方法。3x² + 7x + 2 = 3x² + x + 6x + 2 = x(3x + 1) + 2(3x + 1) = (x + 2)(3x + 1) のように、斜めに掛けるたすき掛けとは手順が違うが、答えは同じになる。",
     "a = 1 のとき（x² + 5x + 6 など）は、掛けて c、足して b になる 2 つの数を探せばよく、たすき掛けは要らない。"
   ],
@@ -68,11 +82,13 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Elementary Algebra 2e"
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "7.3 Factor Trinomials of the Form ax²+bx+c: Trial and Error、“ac” method（mapping_note）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Intermediate Algebra 2e"
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "6.2 Factor Trinomials: trial and error、AC method（mapping_note）"
     },
     {
       "type": "reference",
@@ -93,16 +109,31 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
-    "sources": [],
-    "counted": "2026-09-26"
-  },
-  "flags": [
-    {
-      "code": "corpus-no-fixed-expression",
-      "note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない（話 0 件 ／ 書 0 件）。mapping none なので、決まった言い方が出てこないと判定した（英語版 Wikipedia の数学記事の記事名にも候補が無い）。register は主張しない。人間レビューには回さない。",
-      "raised": "2026-09-26"
-    }
-  ]
+    "spoken": {
+      "guess and check": 10,
+      "trial and error": 16
+    },
+    "written": {
+      "trial and error": 19,
+      "guess and check": 1
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-ap-stats",
+      "khan-middle",
+      "mit-18.01",
+      "openstax-algtrig",
+      "openstax-calculus",
+      "openstax-elemalg",
+      "openstax-intalg",
+      "openstax-prealgebra",
+      "yt:3blue1brown",
+      "yt:nancypi",
+      "yt:patrickjmt",
+      "yt:profleonard"
+    ],
+    "counted": "2026-10-09"
+  }
 }

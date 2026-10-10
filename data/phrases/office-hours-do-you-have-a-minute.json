@@ -9,6 +9,10 @@
     {
       "en": "Is now a good time?",
       "register": "polite"
+    },
+    {
+      "en": "Do you have a few minutes?",
+      "register": "polite"
     }
   ],
   "tags": [
@@ -28,13 +32,13 @@
   },
   "flags": [
     {
-      "code": "corpus-attested-only",
-      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 have a minute | have a second | got a minute | got a second | have a sec（3 件。3 件以上）なので使われている。en の要の部分 have a minute | have a second | got a minute | got a second | have a sec も 3 件（3 件以上）なので en のまま。register は主張しない。",
-      "raised": "2026-09-28"
+      "code": "corpus-human-settled",
+      "note": "en は人間が決めた（Do you have a minute? のまま。variants に Do you have a few minutes?。ユーザーの決定 3（監査 17 の前。第 1 回の人間レビュー行き））。今話してよいかを聞く言い方は MICASE の学生の発話に 0 件で、Math Stack Exchange の have a minute 3 件のうち相手の時間を求める文は 2 件（DECISIONS）。register は主張しない。",
+      "raised": "2026-10-09"
     },
     {
-      "code": "audit-human",
-      "note": "Phase 5 監査（2026-10-09）で判断がつかない: 公開前の抜き取り（Fable）: likely の根拠の Math Stack Exchange の have a minute 3 件を読むと、相手の時間を求める文は 2 件（I really hope one of you guys have a minute to take a look・I'd appreciate if you have a minute to skim）で、1 件は you have a minute per question（1 問 1 分）。3 件に届かず MICASE の学生の発話も 0 件なので、監査 13 の前の決定 1 により人間レビューへ（en Do you have a minute? の文そのものの誤りではない。形では 1 件だけを除けないので MSE_SKIP にはしていない）。人間レビューへ。",
+      "code": "corpus-attested-only",
+      "note": "どの要の部分も 10 件に届かない（MICASE の学生の発話で数えた）ので ①②③ で判定しない。MICASE の学生の発話では首位が 3 件未満（0 件）。Math Stack Exchange の質問で最も多い要の部分 have a minute | have a second | got a minute | got a second | have a sec（3 件。3 件以上）なので使われている。en の要の部分 have a minute | have a second | got a minute | got a second | have a sec も 3 件（3 件以上）なので en のまま。register は主張しない。",
       "raised": "2026-10-09"
     }
   ],

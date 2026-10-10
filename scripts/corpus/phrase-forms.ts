@@ -470,8 +470,10 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
     "Can I use L'Hôpital's rule here instead?": "use … instead | instead of using",
   },
   "class-asking-another-example": {
-    "Could you do another example?": "do another example | give us another example | show us another example | go over another example | do one more example | another example please",
+    "Could you do another example?": "do another example | give us another example | show us another example | go over another example | another example please",
     "Can you show us one more?": "do one more | show us one more | go through one more",
+    // 監査 17 の前のユーザーの決定 3: the variant's own words (do one more example moved here from the en)
+    "Could we do one more example?": "do one more example | go over one more example | see one more example",
   },
   "class-asking-simplify-further": {
     "Do we need to simplify this further?": "simplify further | simplify it further | simplify this further | simplify it more | simplify any further | simplify that further | simplify more",
@@ -480,6 +482,8 @@ export const PHRASE_FORMS: Record<string, Record<string, string>> = {
   "office-hours-do-you-have-a-minute": {
     "Do you have a minute?": "have a minute | have a second | got a minute | got a second | have a sec",
     "Is now a good time?": "is this a good time | is now a good time | is it a good time | is this a bad time",
+    // 監査 17 の前のユーザーの決定 3
+    "Do you have a few minutes?": "have a few minutes | got a few minutes | have a couple of minutes | have a couple minutes",
   },
   "office-hours-question-about-homework": {
     "I had a question about number 3 on the homework.": "had a question | have a question | got a question | have a couple of questions | had a couple of questions",
