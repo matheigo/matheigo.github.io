@@ -13,7 +13,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本語の「式」は等式や不等式も指す（日本語版 Wikipedia「等式」は等式を、相等関係を表す数式とする）が、英語の expression は等号を含まないもの（3x + 2）だけ。等号を含むもの（3x + 2 = 8）は equation、不等号を含むものは inequality と言う。",
+  "mapping_note": "日本語の「式」は等式や不等式も指す（中学校学習指導要領解説（第 1 学年）は、数量の関係を表す式を等式または不等式に表すとし、日本語版 Wikipedia「等式」は等式を相等関係を表す数式とする）が、英語の expression は等号を含まないもの（3x + 2）だけ。等号を含むもの（3x + 2 = 8）は equation、不等号を含むものは inequality と言う。",
   "domains": [
     "algebra"
   ],
@@ -65,6 +65,12 @@
       "title": "日本語版 Wikipedia「等式」",
       "url": "https://ja.wikipedia.org/wiki/%E7%AD%89%E5%BC%8F",
       "note": "等式は二つの対象の相等関係を表す数式（mapping_note）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 1 学年 A 数と式: 数量の関係を表す式を等式または不等式に表す（mapping_note）"
     }
   ],
   "confidence": "likely",

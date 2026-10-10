@@ -849,6 +849,7 @@ export const SYMBOL_PATTERNS: Record<string, Record<string, string>> = {
     "tangent of theta": "!the !inverse !arc tangent of *", // not inverse tangent of x / arc tangent of x (同)
     "tangent theta": "tangent theta | tangent x | tangent alpha",
     "tan theta": "tan theta | !arc tan x | tan alpha", // not arctan (batch 33)
+    "the tangent of theta": "the tangent of *", // as sine / cosine (公開前の抜き取り（Fable、第 2 回）、2026-10-09)
   },
   "secant-of-theta": {
     "secant theta": "secant theta | secant x | secant squared",

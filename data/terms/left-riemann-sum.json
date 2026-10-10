@@ -40,8 +40,8 @@
   },
   "definition_ja": "区間をいくつかの小区間に分け、各小区間の左端での関数の値を高さとする長方形の面積の和。小区間の幅はそろっていなくてもよい。",
   "definition_en": "A Riemann sum whose rectangles take their heights from the left endpoint of each subinterval.",
-  "latex": "L_n = \\sum_{i=0}^{n-1} f(x_i)\\,\\Delta x",
-  "spoken_en": "L sub n equals the sum from i equals zero to n minus one of f of x sub i delta x",
+  "latex": "L_n = \\sum_{i=1}^{n} f(x_{i-1})\\,\\Delta x_i",
+  "spoken_en": "L sub n equals the sum from i equals one to n of f of x sub i minus one delta x sub i",
   "examples": [
     {
       "en": "For an increasing function, the left Riemann sum is an underestimate.",
@@ -70,7 +70,7 @@
       "type": "reference",
       "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
       "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
-      "note": "Topic 6.2（left ／ right ／ midpoint Riemann sums、uniform or nonuniform partitions）"
+      "note": "Topic 6.2（left ／ right ／ midpoint Riemann sums、uniform or nonuniform partitions）。Topic 6.3（the width of the ith subinterval）"
     },
     {
       "type": "reference",

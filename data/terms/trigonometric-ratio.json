@@ -14,7 +14,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "英語の trigonometric ratio は直角三角形の辺の比で、IM Geometry（用語集・4.6・4.9）は鋭角についてだけ使う。鈍角の sin・cos・tan は、OpenStax Precalculus・Algebra and Trigonometry では単位円で定める三角関数（trigonometric functions、エントリ trigonometric-function）の値として扱う。",
+  "mapping_note": "英語の trigonometric ratio は直角三角形の辺の比で、IM Geometry（用語集・4.6・4.9）は鋭角についてだけ使う。鈍角の sin・cos・tan は、OpenStax Precalculus・Algebra and Trigonometry では単位円で定める三角関数（trigonometric functions、エントリ trigonometric-function）の値として扱う。IM Algebra 2（6.6 The Pythagorean Identity (Part 2)）と OpenStax Calculus（Volume 2 3.3 Trigonometric Substitution、Volume 3 2.1 Vectors in the Plane）は、一般の角 θ の sin θ・cos θ・tan θ の値も trigonometric ratios と呼ぶ。定義として直角三角形の鋭角の比を言うのは IM Geometry・CK-12 Geometry。",
   "domains": [
     "trigonometry"
   ],
@@ -66,11 +66,13 @@
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 2"
+      "title": "OpenStax Calculus Volume 2",
+      "note": "3.3 Trigonometric Substitution（the trigonometric ratios produced from the reference triangle。mapping_note）"
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 3"
+      "title": "OpenStax Calculus Volume 3",
+      "note": "2.1 Vectors in the Plane（Use trigonometric ratios。mapping_note）"
     },
     {
       "type": "reference",
@@ -93,6 +95,12 @@
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e",
       "note": "7.3 Unit Circle（mapping_note）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math",
+      "url": "https://im.kendallhunt.com/HS/students/index.html",
+      "note": "Algebra 2 6.6 The Pythagorean Identity (Part 2)（the two missing trigonometric ratios。mapping_note）"
     }
   ],
   "confidence": "likely",
