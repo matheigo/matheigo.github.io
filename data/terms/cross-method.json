@@ -98,7 +98,7 @@
       "note": "数学I 数と式: (ax + b)(cx + d) の公式"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-10-09",
@@ -130,12 +130,5 @@
       "yt:profleonard"
     ],
     "counted": "2026-10-09"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-09）で大きな直し: ユーザーの決定 2（監査 17 の前。第 2 回の H-a 2）: mapping none → near、en.term cross method → trial and error（OpenStax Elementary Algebra 7.3・Intermediate Algebra 6.2）、variants に guess and check（register spoken。IM Algebra 1 7.10 の guessing and checking）。数え直して話 ② trial and error 16 ／ guess and check 10・書 ① 19 対 1、register both（corpus-no-fixed-expression が外れ、説明の訳の印も外れた）。mapping_note を資料を主語に、例文に見出しの語、pitfalls[1] に一般の言い方であること。見直す点: en.term・variants と register、mapping・mapping_note、例文 [0]・[2]、pitfalls[1]、出典の note（監査 8・9 の前のユーザーの決定 1 と同じく、ユーザーの決定の当て方を別のセッションが見直す）。次の監査のセッションが見直す。",
-      "raised": "2026-10-09"
-    }
-  ]
+  }
 }

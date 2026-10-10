@@ -70,7 +70,7 @@
       "note": "節「縮尺以外の尺度用語」: 倍尺・現尺（mapping_note）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-10-09",
@@ -90,11 +90,6 @@
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 1 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは IM の呼び方 scale of the map | scale of the drawing | map scale | scale on the map | scale of a map | scale of a drawing（Grade 7 1.12 Units in Scale Drawings・Grade 7 1.7 Scale Drawings・Grade 7 1.8 Scale Drawings and Maps・計 10 件）。register は主張しない。",
-      "raised": "2026-10-09"
-    },
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-09）で大きな直し: 監査 17 の型の一覧 T2: mapping exact → near（日本語の「縮尺」は縮めて表した割合で、日本語版 Wikipedia「縮尺」は大きい図の比を倍尺と分ける。英語の scale は拡大した図にも使う: IM Grade 7 1.7。兄弟の scale-drawing は near）。定義の日本語は変えていない。見直す点: mapping・mapping_note・出典。次の監査のセッションが見直す。",
       "raised": "2026-10-09"
     }
   ]

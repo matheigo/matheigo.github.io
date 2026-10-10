@@ -76,7 +76,7 @@
       "note": "冒頭: 微分係数・導関数を求めることを微分と言い、求めた結果も、用語の濫用としてしばしば微分と呼ぶと書く（mapping_note）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-24",
     "audit": "2026-10-09",
@@ -105,12 +105,5 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-26"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-09）で大きな直し: 監査 17 の型の一覧 T1a: mapping exact → near（日本語の「微分」は操作も結果の微分係数・導関数も指す: 日本語版 Wikipedia「微分」。英語の differentiation は操作だけ: OpenStax Calculus Volume 1 3.1）。見直す点: mapping・mapping_note・pitfalls[0]・出典。次の監査のセッションが見直す。",
-      "raised": "2026-10-09"
-    }
-  ]
+  }
 }

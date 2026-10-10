@@ -108,7 +108,7 @@
       "note": "Algebra 1 glossary（horizontal intercept: also called the x-intercept。mapping_note）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-10-09",
@@ -137,12 +137,5 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-26"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-09）で大きな直し: 監査 17 の型の一覧 T1a: mapping exact → near（日本語の「x 軸との交点」は交わる点で、接する点を含めるときは「x 軸との共有点」、数のときは「x 切片」: 解説 数学I・日本語版 Wikipedia「切片 (数学)」。英語の x-intercept は接する点も含み、点にも数にも使う: OpenStax Algebra and Trigonometry 5.3・Precalculus 2.3・IM Algebra 1 の用語集）。見直す点: mapping・mapping_note・pitfalls[0]・出典。次の監査のセッションが見直す。",
-      "raised": "2026-10-09"
-    }
-  ]
+  }
 }

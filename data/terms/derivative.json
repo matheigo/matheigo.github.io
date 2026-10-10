@@ -91,7 +91,7 @@
       "note": "冒頭は微分係数・微分商・導関数に英語の derivative を 1 つ当てる。節「直観的な説明」は、各点での微分係数を値にとる関数を導関数とする（mapping_note）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-24",
     "audit": "2026-10-09",
@@ -125,12 +125,5 @@
       "yt:profleonard"
     ],
     "counted": "2026-09-27"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-09）で大きな直し: 監査 17 の型の一覧 T1a: mapping exact → near（日本語は値を「微分係数」、関数を「導関数」と言い分け、英語の derivative はどちらにも使う: 解説 数学II・日本語版 Wikipedia「微分」・CED topic 2.2・OpenStax Calculus Volume 1 3.1・3.2）。mapping_note を書き、pitfalls[0] は値の言い方だけに。見直す点: mapping・mapping_note・pitfalls[0]・出典。次の監査のセッションが見直す。",
-      "raised": "2026-10-09"
-    }
-  ]
+  }
 }

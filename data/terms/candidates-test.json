@@ -68,7 +68,7 @@
       "note": "4.3 Maxima and Minima（Locating Absolute Extrema over a Closed Interval。mapping_note）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-24",
     "audit": "2026-10-09",
@@ -83,11 +83,6 @@
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CED の呼び方 candidates test（topic 5.5）。register は主張しない。",
-      "raised": "2026-10-09"
-    },
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-09）で大きな直し: 監査 17 の型の一覧 T1b: mapping none → near（閉区間で最大値・最小値を求める方法は解説 数学II にあり、名前が無いだけ。英語の名前は CED topic 5.5、OpenStax Calculus Volume 1 4.3 は名前なしで同じ手順。STYLE 追記欄の mapping の行）。見直す点: mapping・mapping_note・出典。次の監査のセッションが見直す。",
       "raised": "2026-10-09"
     }
   ]
