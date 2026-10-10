@@ -101,7 +101,7 @@
       "note": "第5問: 外接円 O に内接する円の中心を P（mapping_note）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-10-09",
@@ -126,11 +126,6 @@
     "counted": "2026-10-09"
   },
   "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-09）で大きな直し: 公開前の抜き取り（Fable、第 2 回）: mapping exact → near（日本語の「内接する」は 2 円の一方が他方の内側で 1 点を共有する場合にも使う: 日本語版 Wikipedia「円 (数学)」・共通テスト 令和3年度 第1日程 数学I・A 第5問。英語の inscribed in は多角形と円・楕円の関係で、2 円は internally tangent。エントリ自身の pitfalls[1] が書く範囲の差。前回の M1 型）。mapping_note を書き、出典 2 件を足した。見直す点: mapping・mapping_note・pitfalls[1]。次の監査のセッションが見直す。",
-      "raised": "2026-10-09"
-    },
     {
       "code": "corpus-reference-fallback",
       "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 8 件（10 未満））。見出しは CK-12 の呼び方 inscribed in（CK-12 Geometry 6.15 Inscribed Quadrilaterals in Circles・CK-12 Geometry 5.23 Construct Regular Polygons・CK-12 Geometry 6.18 Tangent Lines・計 31 件）。register は主張しない。",

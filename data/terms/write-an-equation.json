@@ -96,7 +96,7 @@
       "note": "Algebra 1 2.2 Writing Equations to Model Relationships (Part 1): Write an expression, an equation, or an inequality（mapping_note・pitfalls[0]）"
     }
   ],
-  "confidence": "likely",
+  "confidence": "verified",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-10-09",
@@ -131,12 +131,5 @@
       "yt:organicchem"
     ],
     "counted": "2026-10-09"
-  },
-  "flags": [
-    {
-      "code": "audit-major-fix",
-      "note": "Phase 5 監査（2026-10-09）で大きな直し: 公開前の抜き取り（Fable、第 2 回）: mapping exact → near（日本語の「式で表す」は等式（方程式）も等号を含まない式も指し、英語は write an equation ／ write an expression と言い分ける。エントリ自身の定義・pitfalls[0] が書く範囲の差。前回の M1 型。兄弟の expression・equation と同じ）。mapping_note を書き、ja.alt の「文字を使って表す」（0 件）を中学校解説の「文字を用いて表す」に。見直す点: mapping・mapping_note・ja.alt。次の監査のセッションが見直す。",
-      "raised": "2026-10-09"
-    }
-  ]
+  }
 }
