@@ -19,11 +19,13 @@
   ],
   "level": {
     "jp": [
-      "中2"
+      "中2",
+      "数I"
     ],
     "us": [
       "Geometry",
-      "Integrated Math 1"
+      "Integrated Math 1",
+      "Pre-Algebra"
     ]
   },
   "definition_ja": "大きさが 0° より大きく 90° より小さい角。直角よりも開きが小さい。",
@@ -62,6 +64,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
+      "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
+      "note": "数学I 図形と計量: 鋭角の三角比（level.jp 数I）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math",
+      "url": "https://im.kendallhunt.com/MS/students/index.html",
+      "note": "Grade 6 1.9・Grade 7 1.4・Grade 8 1.1（acute angle。level.us Pre-Algebra）"
     }
   ],
   "confidence": "verified",
@@ -70,7 +84,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "acute angle": 4

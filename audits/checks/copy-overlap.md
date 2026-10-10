@@ -7,10 +7,10 @@
 日本側の資料（学習指導要領解説 2 つ・共通テスト／センター試験の問題と正解の本文（画像だけの PDF は OCR）・日本語版 Wikipedia）と一致する箇所。数式だけの窓（3 文字以上の英単語が 3 語未満）と、日本語の窓でかな・漢字が 10 文字未満のもの（日本語の文の中の英語の名前）は数えない。
 表の「一致」はエントリ側の語（コーパスの文はここに書かない）。ソースの数は一致が見つかったソース（manifest の id、参照、日本側の資料）の数。3 つ以上のソースにある一致は、数式の読みや決まった言い回しのことが多い。
 
-- 調べた本文の欄: 15660
-- 英語のソース: 3884 ファイル ／ 日本語のソース: 539 ファイル
-- 一致した箇所: **332**（290 項目）
-- 見出しの句を含む一致で除いたもの: 149 箇所（138 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
+- 調べた本文の欄: 15661
+- 英語のソース: 3884 ファイル ／ 日本語のソース: 542 ファイル
+- 一致した箇所: **333**（291 項目）
+- 見出しの句を含む一致で除いたもの: 150 箇所（138 項目。見出し（en.term・en.alt・variants ／ ja.term・ja.alt）の語を除いた残りが 8 語（日本語 20 文字）に届かない一致は、手法の名前そのものなので一覧に出さない。Phase 5 監査 5 の決定 7。copy-overlap.json の headword に残す）
 
 | コレクション | id | 欄 | 言語 | 長さ | 一致（エントリの語） | ソースの数 | ソース |
 |---|---|---|---|---|---|---|---|
@@ -77,6 +77,7 @@
 | terms | alternate-exterior-angles | definition_en | en | 8 | lines and on opposite sides of the transversal | 1 | ref:im-6-8 |
 | terms | alternate-exterior-angles | examples[1].en | en | 8 | two parallel lines are cut by a transversal | 1 | ref:ck12-geometry |
 | terms | angle-between-vectors | examples[0].en | en | 12 | use the dot product to find the angle between the two vectors | 3 | openstax-algtrig, openstax-precalculus, openstax-calculus |
+| terms | angle-sum-of-a-triangle | pitfalls[0] | en | 8 | the sum of the angles in a triangle | 1 | ref:im-6-8 |
 | terms | apothem | pitfalls[2] | en | 11 | ck 12 geometry 5 21 area of regular and irregular polygons | 1 | ref:ck12-geometry |
 | terms | area | examples[0].en | en | 12 | the area of a triangle is one half base times height so | 6 | yt:organicchem, khan-middle, openstax-prealgebra, openstax-elemalg, openstax-intalg, ref:ck12-geometry |
 | terms | area-between-two-curves | pitfalls[2] | en | 9 | find the area of the region bounded by the | 1 | openstax-calculus |
@@ -240,7 +241,6 @@
 | terms | one-sample-t-test | definition_en | en | 9 | population mean when the population standard deviation is unknown | 2 | openstax-introstats, ref:ap-statistics-ced |
 | terms | one-sample-t-test | pitfalls[0] | en | 9 | a single population mean using the student t distribution | 1 | openstax-introstats |
 | terms | one-sixth-formula | mapping_note | en | 13 | topic 8 4 finding the area between curves expressed as functions of x | 1 | ref:ap-calculus-ab-bc-ced |
-| terms | orthographic-projection | mapping_note | ja | 28 | 空間図形を上から見た図(平面図)や前から見た図(立面図) | 1 | jp:kaisetsu-chu |
 | terms | p-value | definition_en | en | 8 | the probability assuming the null hypothesis is true | 1 | khan-ap-stats |
 | terms | paragraph-proof | examples[1].en | en | 10 | that the base angles of an isosceles triangle are congruent | 2 | ref:im-9-12, ref:ck12-geometry |
 | terms | parallel-lines | examples[0].en | en | 10 | parallel lines have the same slope but different y intercepts | 5 | openstax-elemalg, openstax-algtrig, openstax-precalculus, khan-middle, ref:im-9-12 |
@@ -333,6 +333,7 @@
 | terms | three-perpendiculars-theorem | examples[1].en | en | 8 | the foot of the perpendicular from p to | 1 | ref:nicholson-lawa-2021a |
 | terms | trigonometric-function | examples[1].en | en | 8 | find the maximum and minimum values of the | 2 | openstax-calculus, ref:im-9-12 |
 | terms | trigonometric-integrals | definition_ja | en | 11 | sin x dx cos x c cos x dx sin x | 1 | mit-notes |
+| terms | trigonometric-ratio | mapping_note | en | 9 | algebra 2 6 6 the pythagorean identity part 2 | 1 | ref:im-9-12 |
 | terms | trinomial | examples[0].en | en | 9 | numbers that multiply to 6 and add to 5 | 2 | openstax-elemalg, yt:nancypi |
 | terms | truth-value | examples[1].en | en | 8 | determine whether each statement is true or false | 1 | ref:ck12-geometry |
 | terms | truth-value | pitfalls[0] | en | 8 | determine whether the statement is true or false | 3 | openstax-calculus, ref:ck12-geometry, openstax-algtrig |

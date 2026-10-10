@@ -7,13 +7,15 @@
   },
   "en": {
     "term": "center of dilation",
-    "alt": [],
+    "alt": [
+      "center of a dilation"
+    ],
     "uk": null,
     "register": "spoken"
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "中学校学習指導要領解説の相似の位置は、対応する点を通る直線が 1 点を通ることで定め、中心が 2 つの図形の間にある場合も含む。日本語版 Wikipedia「相似の中心」は外相似点（相似比が正）と内相似点（負）に分け、英語版 Wikipedia「Homothetic center」も external と internal を挙げる。英語の center of dilation は、IM Grade 8 の glossary と CK-12 Geometry 7.16 が正の scale factor の dilation だけを扱うので、外相似点に当たる。",
+  "mapping_note": "中学校学習指導要領解説の相似の位置は、対応する点を通る直線が 1 点を通ることで定め、中心が 2 つの図形の間にある場合も含む。日本語版 Wikipedia「相似の中心」は外相似点（相似比が正）と内相似点（負）に分け、英語版 Wikipedia「Homothetic center」も external と internal を挙げる。英語の center of dilation は、IM Grade 8 の glossary と CK-12 Geometry 7.16 の例が正の scale factor の dilation なので、外相似点に当たる。IM Geometry の発展問題は負の scale factor（−1・−2）の dilation も出し、その中心は内相似点に当たる。",
   "domains": [
     "geometry"
   ],
@@ -66,7 +68,7 @@
       "type": "reference",
       "title": "Illustrative Mathematics, IM 6–8 Math / IM 9–12 Math (Geometry)",
       "url": "https://im.kendallhunt.com/",
-      "note": "レッスンで center of dilation を使う"
+      "note": "レッスンで center of dilation を使う（Grade 8 の glossary の見出しは center of a dilation）。IM Geometry の発展問題（Are you ready for more?）は負の scale factor の dilation も出す"
     },
     {
       "type": "reference",
@@ -99,7 +101,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "center of dilation": 21
@@ -107,6 +109,6 @@
     "sources": [
       "khan-middle"
     ],
-    "counted": "2026-09-26"
+    "counted": "2026-10-09"
   }
 }

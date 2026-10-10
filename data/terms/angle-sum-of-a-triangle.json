@@ -8,15 +8,16 @@
   "en": {
     "term": "triangle sum theorem",
     "alt": [
-      "angle sum of a triangle",
       "triangle angle sum",
-      "triangle angle sum theorem"
+      "triangle angle sum theorem",
+      "sum of the … angles of a triangle",
+      "sum of the angles of a triangle"
     ],
     "uk": null
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "日本語は「三角形の内角の和」という量の名前で言うが、米国の Geometry はこれを定理の名前 triangle sum theorem（triangle angle sum theorem）で呼ぶ。CK-12 Geometry は 4.17 Triangle Angle Sum Theorem でこの定理を扱う。",
+  "mapping_note": "日本語は「三角形の内角の和」という量の名前で言うが、CK-12 Geometry（4.17 Triangle Angle Sum Theorem）は本文でこれを定理の名前 triangle sum theorem で呼び、IM Geometry（1.21 One Hundred and Eighty）は Triangle Angle Sum Theorem と呼んで証明する。",
   "domains": [
     "geometry"
   ],
@@ -47,7 +48,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "triangle sum theorem は「3 つの内角の和は 180° である」という定理の名前で、和の値そのものを指す語ではない。「内角の和」という量を言うときは angle sum of a triangle の形（the angle sum of a triangle is 180°）になる。",
+    "triangle sum theorem は「3 つの内角の和は 180° である」という定理の名前で、和の値そのものを指す語ではない。「内角の和」という量を言うときは、OpenStax Prealgebra（9.3）の the sum of the measures of the angles of a triangle is 180° や、IM Grade 8（1.16）の the sum of the angles in a triangle のように、sum of the angles の形で言う。",
     "多角形の内角の和（エントリ sum-of-the-interior-angles）とは別の見出し。n 角形の内角の和は 180° × (n − 2) で、三角形の 180° は n = 3 の場合にあたる。",
     "三角形の 1 つの外角が、隣り合わない 2 つの内角の和に等しいこと（エントリ exterior-angle-theorem）は、内角の和が 180° であることから導ける。"
   ],
@@ -64,6 +65,23 @@
       "title": "CK-12 Geometry (K12 LibreTexts)",
       "url": "https://k12.libretexts.org/Bookshelves/Mathematics/Geometry",
       "note": "4.17 Triangle Angle Sum Theorem・4.18 Exterior Angles and Theorems"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 9–12 Math (Geometry)",
+      "url": "https://im.kendallhunt.com/HS/students/2/index.html",
+      "note": "Geometry 1.21 One Hundred and Eighty（Triangle Angle Sum Theorem。mapping_note・en.alt）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Prealgebra 2e",
+      "note": "9.3 Use Properties of Angles, Triangles, and the Pythagorean Theorem（the sum of the measures of the angles of a triangle is 180°。pitfalls[0]・en.alt）"
+    },
+    {
+      "type": "reference",
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 8)",
+      "url": "https://im.kendallhunt.com/MS/students/3/index.html",
+      "note": "1.16 Parallel Lines and the Angles in a Triangle（the sum of the angles in a triangle is always 180°。pitfalls[0]）"
     }
   ],
   "confidence": "verified",
@@ -72,16 +90,27 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
-    "sources": [],
-    "counted": "2026-09-25"
+    "spoken": {
+      "sum of the angles of a triangle": 3
+    },
+    "written": {
+      "sum of the … angles of a triangle": 6
+    },
+    "sources": [
+      "khan-algebra",
+      "khan-middle",
+      "openstax-elemalg",
+      "openstax-prealgebra"
+    ],
+    "counted": "2026-10-09"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 0 件（10 未満） ／ 書: 判断不能: 重み付け後 0 件（10 未満））。見出しは CK-12 の呼び方 triangle sum theorem（CK-12 Geometry 4.17 Triangle Angle Sum Theorem・CK-12 Geometry 4.18 Exterior Angles and Theorems・CK-12 Geometry 4.4 Isosceles Triangles・計 25 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 3 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは CK-12 の呼び方 triangle sum theorem（CK-12 Geometry 4.17 Triangle Angle Sum Theorem・CK-12 Geometry 4.18 Exterior Angles and Theorems・CK-12 Geometry 4.4 Isosceles Triangles・計 25 件）。register は主張しない。",
+      "raised": "2026-10-09"
     }
   ]
 }

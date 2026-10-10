@@ -11,8 +11,8 @@
     "uk": null
   },
   "pos": "phrase",
-  "mapping": "exact",
-  "mapping_note": null,
+  "mapping": "near",
+  "mapping_note": "日本語の「内接する」は、2 円の一方が他方の内側にあって 1 点を共有する場合にも使う（日本語版 Wikipedia「円 (数学)」、共通テスト 令和3年度 第1日程 数学Ⅰ・数学Ａ 第5問の「外接円 O に内接する円」）が、英語の inscribed in は多角形と円・楕円の関係に使い、2 円は internally tangent と言う（英語版 Wikipedia「Tangent」の節 Tangent circles）。",
   "domains": [
     "geometry"
   ],
@@ -49,7 +49,7 @@
   "collocations": [],
   "pitfalls": [
     "向きは日本語と同じ。A is inscribed in B は「A が B に内接する」で、A が内側。",
-    "「2 円が内接する」は、英語版 Wikipedia「Tangent」（節 Tangent circles）の internally tangent。用例コーパスと参照の inscribed in は、多角形と円の関係（と円周角）にだけ出てくる。",
+    "「2 円が内接する」は、英語版 Wikipedia「Tangent」（節 Tangent circles）の internally tangent。用例コーパスと参照の inscribed in は、多角形と円・楕円の関係（と円周角）にだけ出てくる。",
     "用例コーパスでは inscribed in は話し言葉・書き言葉とも少ない（書き言葉は OpenStax Calculus・OpenStax Algebra and Trigonometry）。IM Geometry は glossary の見出し（inscribed）にしてレッスンで 26 件、CK-12 Geometry は 31 件（6.15 Inscribed Quadrilaterals in Circles ほか）使う。"
   ],
   "related": [
@@ -86,6 +86,18 @@
       "title": "English Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Tangent",
       "note": "記事「Tangent」の節 Tangent circles（internally tangent。数学カテゴリから 4 段）"
+    },
+    {
+      "type": "reference",
+      "title": "日本語版 Wikipedia「円 (数学)」",
+      "url": "https://ja.wikipedia.org/wiki/%E5%86%86_(%E6%95%B0%E5%AD%A6)",
+      "note": "円 A が円 B の周または内部にあり 1 点のみを共有する場合、円 A は円 B に内接する（mapping_note）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 令和3年度 大学入学共通テスト 第1日程 数学Ⅰ・数学Ａ（問題）",
+      "url": "https://web.archive.org/web/20220601/https://www.dnc.ac.jp/albums/abm.php?d=88&f=abm00001267.pdf&n=R3_%E6%95%B0%E5%AD%A6%E2%85%A0%E3%83%BB%E6%95%B0%E5%AD%A6%EF%BC%A1%EF%BC%88%EF%BC%91%E6%9C%8816%E6%97%A5%E3%83%BB17%E6%97%A5%EF%BC%89%E3%81%AE%E5%95%8F%E9%A1%8C.pdf",
+      "note": "第5問: 外接円 O に内接する円の中心を P（mapping_note）"
     }
   ],
   "confidence": "verified",
@@ -94,7 +106,7 @@
     "audit": "2026-09-27",
     "human": null
   },
-  "updated": "2026-09-27",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "inscribed in": 4

@@ -12,7 +12,7 @@
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。中学校学習指導要領解説の投影図は、空間図形を上から見た図（平面図）や前から見た図（立面図）に表現したもので、英語では IM Grade 6 が front view・top view と、見る向きで図を呼ぶ。見出しの orthographic projection はこの図法の英語の名前（英語版 Wikipedia の記事名。数学カテゴリの外）で、米国の中学・高校の教材（OpenStax・IM・CK-12）には出てこない。",
+  "mapping_note": "用例コーパスと参照（CED・OpenStax・IM・CK-12）には決まった言い方が出てこない。中学校学習指導要領解説の投影図は、平面図（上から見た図）と立面図（前から見た図）で空間図形を表す図で、英語では IM Grade 7 が front view・top view と、見る向きで図を呼ぶ。見出しの orthographic projection はこの図法の英語の名前（英語版 Wikipedia の記事名。数学カテゴリから 5 段で、見出しを決める記事名の 4 段には当たらない）で、米国の中学・高校の教材（OpenStax・IM・CK-12）には出てこない。",
   "domains": [
     "geometry"
   ],
@@ -21,8 +21,7 @@
       "中1"
     ],
     "us": [
-      "Pre-Algebra",
-      "Geometry"
+      "Pre-Algebra"
     ]
   },
   "definition_ja": "立体を正面から見た図（立面図）と真上から見た図（平面図）を組にして、その立体を表した図。",
@@ -65,9 +64,15 @@
     },
     {
       "type": "reference",
-      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 6)",
-      "url": "https://im.kendallhunt.com/MS/students/1/index.html",
-      "note": "front view（2 件）・top view（1 件）"
+      "title": "Illustrative Mathematics, IM 6–8 Math (Grade 7)",
+      "url": "https://im.kendallhunt.com/MS/students/2/index.html",
+      "note": "1.7 Scale Drawings・1.12 Units in Scale Drawings（front view）、7.16 Applying Volume and Surface Area（top view）"
+    },
+    {
+      "type": "reference",
+      "title": "English Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Orthographic_projection",
+      "note": "記事「Orthographic projection」（数学カテゴリから 5 段。見出しを決める記事名の 4 段には当たらない）"
     }
   ],
   "confidence": "verified",
@@ -76,7 +81,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "sources": [],
     "counted": "2026-09-26"

@@ -6,31 +6,20 @@
     "alt": []
   },
   "en": {
-    "term": "uniform motion",
+    "term": "uniform motion problem",
     "alt": [],
-    "variants": [
-      {
-        "term": "distance, rate, and time",
-        "register": "written",
-        "note": "教科書（OpenStax）の問題の立て方で、D = rt の 3 つの量を並べた言い方。"
-      },
-      {
-        "term": "motion problem",
-        "register": "written",
-        "note": "教科書（OpenStax）で uniform motion problem と並んで使う短い言い方。"
-      }
-    ],
     "uk": null,
     "register": "written"
   },
   "pos": "noun",
   "mapping": "near",
-  "mapping_note": "「速さの問題」は、道のり・速さ・時間の関係を使う文章題をまとめた呼び方。OpenStax の Algebra の教科書はこれを uniform motion applications と呼び、D = rt（distance = rate × time）の式を立てる。速さは rate と言う（エントリ speed）。",
+  "mapping_note": "「速さの問題」は、道のり・速さ・時間の関係を使う文章題をまとめた呼び方。OpenStax Elementary Algebra（3.5 Solve Uniform Motion Applications・8.8）と Intermediate Algebra（2.4）は節の名前を uniform motion applications とし、本文では uniform motion problems と呼んで D = rt（distance = rate × time）の式を立てる。速さは rate と言う（エントリ speed）。uniform motion（等速運動）だけでは問題の型の名前にならない。",
   "domains": [
     "algebra"
   ],
   "level": {
     "jp": [
+      "中1",
       "中2"
     ],
     "us": [
@@ -57,8 +46,9 @@
   "collocations": [],
   "pitfalls": [
     "uniform motion の uniform は「一定の」という意味で、速さが変わらない（等速の）動きを指す。",
-    "D = rt の r は rate で、速さのこと（エントリ speed）。rate は rate of change（変化の割合）のように「割合・率」の意味でも使うので、文脈で読み分ける。",
-    "mph は miles per hour の略（時速 … マイル）。"
+    "D = rt の r は rate で、速さのこと（エントリ speed）。OpenStax Prealgebra・Elementary Algebra はこの式を the distance, rate, and time formula と呼ぶ。rate は rate of change（変化の割合）のように「割合・率」の意味でも使うので、文脈で読み分ける。",
+    "mph は miles per hour の略（時速 … マイル）。",
+    "AP の CED（topic 4.2・9.6）や OpenStax Algebra and Trigonometry の motion problems は、位置・速度・加速度の問題（直線運動）や媒介変数表示・放物運動の問題で（エントリ rectilinear-motion・projectile-motion）、速さの文章題ではない。"
   ],
   "related": [
     "speed",
@@ -70,32 +60,47 @@
   "sources": [
     {
       "type": "textbook",
-      "title": "OpenStax Elementary Algebra 2e"
+      "title": "OpenStax Elementary Algebra 2e",
+      "note": "3.5 Solve Uniform Motion Applications・8.8 Solve Uniform Motion and Work Applications（本文は uniform motion problems）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Intermediate Algebra 2e",
+      "note": "2.4 Solve Mixture and Uniform Motion Applications（a uniform motion application、uniform motion problems）"
+    },
+    {
+      "type": "reference",
+      "title": "College Board, AP Calculus AB and BC Course and Exam Description (Effective Fall 2020)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf",
+      "note": "Topic 4.2（rectilinear motion problems）・Topic 9.6（motion problems）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "projectile motion problems（pitfalls[3]）"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 1 学年 A 数と式: (道のり) = (速さ) × (時間) の言葉の式（level.jp 中1）"
     }
   ],
-  "confidence": "verified",
+  "confidence": "likely",
   "reviewed": {
     "machine": "2026-09-25",
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
-    "spoken": {
-      "motion problem": 1
-    },
     "written": {
-      "motion problem": 12,
-      "distance, rate, and time": 18,
-      "uniform motion": 35
+      "uniform motion problem": 10
     },
     "sources": [
-      "mit-18.03",
-      "openstax-algtrig",
       "openstax-elemalg",
-      "openstax-intalg",
-      "openstax-prealgebra"
+      "openstax-intalg"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-10-09"
   }
 }

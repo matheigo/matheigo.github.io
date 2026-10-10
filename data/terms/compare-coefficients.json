@@ -5,13 +5,13 @@
     "reading": "けいすうをひかくする",
     "alt": [
       "係数を比べる",
-      "係数比較",
-      "係数比較法"
+      "係数比較"
     ]
   },
   "en": {
     "term": "equate coefficients",
     "alt": [
+      "compare … coefficients",
       "compare coefficients"
     ],
     "uk": null
@@ -24,7 +24,6 @@
   ],
   "level": {
     "jp": [
-      "中3",
       "数II"
     ],
     "us": [
@@ -51,7 +50,7 @@
   ],
   "collocations": [],
   "pitfalls": [
-    "英語では「比べる」（compare）より「等しいとおく」（equate）で言う。OpenStax Calculus Volume 2 は部分分数分解の係数を決める手順を equate coefficients と書く。用例コーパスでは話し言葉・書き言葉とも少ない。",
+    "OpenStax Calculus Volume 2（3.4 Partial Fractions）は部分分数分解の係数を決める手順を equate coefficients（method of equating coefficients）と書き、OpenStax Precalculus（7.4 Partial Fractions）・Algebra and Trigonometry（11.4）は compare the coefficients of both sides と書く。用例コーパスでは話し言葉・書き言葉とも少ない。",
     "「係数比較法」と「数値代入法」は日本語の呼び名で、学習指導要領解説には出てこない（高等学校学習指導要領解説（数学II）は、恒等式の未定係数法を等式の証明とあわせて扱ってよいと書く）。英語はどちらも手順として言う（equate coefficients ／ plug in convenient values of x）。"
   ],
   "related": [
@@ -65,7 +64,8 @@
     },
     {
       "type": "textbook",
-      "title": "OpenStax Calculus Volume 2"
+      "title": "OpenStax Calculus Volume 2",
+      "note": "3.4 Partial Fractions（method of equating coefficients）"
     },
     {
       "type": "reference",
@@ -78,6 +78,16 @@
       "title": "高等学校学習指導要領（平成30年告示）解説 数学編 理数編",
       "url": "https://www.mext.go.jp/content/20260115-mxt_kyoiku02-100002620_04.pdf",
       "note": "数学II いろいろな式: 恒等式の未定係数法（等式の証明に関連して）。「係数比較法」「数値代入法」は出てこない"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Precalculus 2e",
+      "note": "7.4 Partial Fractions（compare the coefficients of both sides。pitfalls[0]・en.alt）"
+    },
+    {
+      "type": "textbook",
+      "title": "OpenStax Algebra and Trigonometry 2e",
+      "note": "11.4 Partial Fractions（compare the coefficients of both sides。pitfalls[0]・en.alt）"
     }
   ],
   "confidence": "verified",
@@ -89,25 +99,29 @@
   "updated": "2026-10-09",
   "evidence": {
     "spoken": {
-      "compare coefficients": 1,
+      "compare coefficients": 2,
       "equate coefficients": 3
     },
     "written": {
-      "equate coefficients": 6
+      "equate coefficients": 6,
+      "compare … coefficients": 3
     },
     "sources": [
       "mit-18.01",
+      "mit-18.02",
       "mit-18.03",
+      "openstax-algtrig",
       "openstax-calculus",
+      "openstax-elemalg",
       "yt:patrickjmt"
     ],
-    "counted": "2026-09-25"
+    "counted": "2026-10-09"
   },
   "flags": [
     {
       "code": "corpus-reference-fallback",
-      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 4 件（10 未満） ／ 書: 判断不能: 重み付け後 6 件（10 未満））。見出しは OpenStax の呼び方 equate coefficients（本文 6 件）。register は主張しない。",
-      "raised": "2026-09-25"
+      "note": "コーパスで決まらない（話: 判断不能: 重み付け後 5 件（10 未満） ／ 書: 判断不能: 重み付け後 9 件（10 未満））。見出しは OpenStax の呼び方 equate coefficients（本文 6 件）。register は主張しない。",
+      "raised": "2026-10-09"
     }
   ]
 }

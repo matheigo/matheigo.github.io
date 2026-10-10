@@ -2,12 +2,12 @@
   "summary": {
     "checked": "2026-10-09",
     "rule": "English: 8+ consecutive words; Japanese: 20+ characters (whitespace removed); a span that is the entry's headword and fewer than that many other words / characters is left out",
-    "fields": 15660,
+    "fields": 15661,
     "englishSources": 3884,
-    "japaneseSources": 539,
-    "spans": 332,
-    "entries": 290,
-    "headwordSpans": 149,
+    "japaneseSources": 542,
+    "spans": 333,
+    "entries": 291,
+    "headwordSpans": 150,
     "headwordEntries": 138
   },
   "spans": [
@@ -100,6 +100,17 @@
         "openstax-algtrig": 1,
         "openstax-precalculus": 1,
         "openstax-calculus": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "angle-sum-of-a-triangle",
+      "field": "pitfalls[0]",
+      "lang": "en",
+      "length": 8,
+      "span": "the sum of the angles in a triangle",
+      "sources": {
+        "ref:im-6-8": 1
       }
     },
     {
@@ -1984,17 +1995,6 @@
     },
     {
       "collection": "terms",
-      "id": "orthographic-projection",
-      "field": "mapping_note",
-      "lang": "ja",
-      "length": 28,
-      "span": "空間図形を上から見た図(平面図)や前から見た図(立面図)",
-      "sources": {
-        "jp:kaisetsu-chu": 1
-      }
-    },
-    {
-      "collection": "terms",
       "id": "p-value",
       "field": "definition_en",
       "lang": "en",
@@ -3079,6 +3079,17 @@
     },
     {
       "collection": "terms",
+      "id": "trigonometric-ratio",
+      "field": "mapping_note",
+      "lang": "en",
+      "length": 9,
+      "span": "algebra 2 6 6 the pythagorean identity part 2",
+      "sources": {
+        "ref:im-9-12": 1
+      }
+    },
+    {
+      "collection": "terms",
       "id": "trinomial",
       "field": "examples[0].en",
       "lang": "en",
@@ -3945,6 +3956,21 @@
       "span": "ck 12 geometry 4 17 triangle angle sum theorem",
       "sources": {
         "ref:ck12-geometry": 1
+      }
+    },
+    {
+      "collection": "terms",
+      "id": "angle-sum-of-a-triangle",
+      "field": "pitfalls[0]",
+      "lang": "en",
+      "length": 13,
+      "span": "the sum of the measures of the angles of a triangle is 180",
+      "sources": {
+        "openstax-elemalg": 4,
+        "openstax-intalg": 4,
+        "openstax-prealgebra": 3,
+        "khan-middle": 1,
+        "ref:im-9-12": 1
       }
     },
     {

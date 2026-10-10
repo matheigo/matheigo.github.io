@@ -4,8 +4,7 @@
     "term": "一直線上にある",
     "reading": "いっちょくせんじょうにある",
     "alt": [
-      "共線",
-      "共線の点"
+      "共線"
     ]
   },
   "en": {
@@ -22,7 +21,9 @@
   ],
   "level": {
     "jp": [
-      "数A"
+      "中1",
+      "数A",
+      "数II"
     ],
     "us": [
       "Geometry"
@@ -68,6 +69,18 @@
     {
       "type": "textbook",
       "title": "OpenStax Algebra and Trigonometry 2e"
+    },
+    {
+      "type": "reference",
+      "title": "中学校学習指導要領（平成29年告示）解説 数学編",
+      "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf",
+      "note": "第 1 学年 B 図形（空間図形）: 平面は同一直線上にない 3 点で決まる（level.jp 中1）"
+    },
+    {
+      "type": "reference",
+      "title": "大学入試センター 平成27年度 大学入試センター試験 本試験 数学Ⅱ（問題）",
+      "url": "https://web.archive.org/web/20160601/https://www.dnc.ac.jp/albums/abm.php?f=abm00004812.pdf&n=2701-0501+suugaku2.pdf",
+      "note": "第1問(2): 3 点 O, P, Q が一直線上にある（level.jp 数II）"
     }
   ],
   "confidence": "verified",
@@ -76,7 +89,7 @@
     "audit": "2026-09-26",
     "human": null
   },
-  "updated": "2026-09-26",
+  "updated": "2026-10-09",
   "evidence": {
     "spoken": {
       "collinear": 3
