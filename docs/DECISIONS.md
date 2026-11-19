@@ -1393,3 +1393,10 @@
 - 2026-10-12 | — | 測定を入れる: GoatCounter（クッキーなし・0 件検索をイベントで数える）と Google Search Console。フッターに「クッキーを使わない匿名の集計」の 1 行。Google Analytics と Cloudflare Web Analytics は使わない | 月間ユーザーの指標を測る手段が無かった。Cloudflare はイベントが無く 0 件検索を数えられない
 - 2026-10-12 | — | 人間レビュー（PLAN §8-4・§10 の「3 週分」）は公開のブロッカーにしない。公開後も毎週 30 分続け、likely → verified の昇格に使う | 閾値は機械＋別セッションの監査で満たしている
 - 2026-10-12 | — | ドメイン matheigo.org は告知の前に取る（.org 一本・非営利） | 告知に載せる URL を最終のものにする
+
+## 公開の準備 — 2026-11-18
+
+- 2026-11-18 | 5 | docs/LAUNCH.md（告知文の下書き。日本語の長い版・短い版・直接送る版、英語の長い版・Show HN・短い版・教員へのメール、送り先の順、書かないこと）を足した。投稿はユーザーの確認の後 | PLAN Phase 5 の 4、ROADMAP「v1.0 公開」の 3
+- 2026-11-18 | 5 | 告知文に「本文は AI（Claude）で下書きし、出典との照合と別セッションの監査を通ったものだけを出す。人間が全件を読んだわけではない」と書く。サイトの「このサイトについて」にも書くかはユーザーが決める（LAUNCH.md の 0 の 3） | サイトと README のどこにも書いていなかった。人間レビューの表（第 1〜3 週）は判定が空のまま。Hacker News や Reddit では作り方を聞かれ、AI 生成物を禁じるコミュニティもあるので、黙っていて後で分かるほうが信用を失う
+- 2026-11-18 | 5 | 告知の件数は verified だけ（用語 1,050。likely を足した 1,539 は使わない）。米国側の範囲は verified が厚い Pre-Algebra〜Calculus I（AP Calculus AB）とし、Calculus II・統計は一部、Linear Algebra（14 語）・Calculus III（13 語）はまだ少ないと書く | level.us で数えると、Linear Algebra・Calculus III は likely のほうがずっと多い。README の「Calculus III / Linear Algebra まで」は範囲の説明で、告知で厚さを約束すると外れる
+- 2026-11-18 | 5 | 告知の URL は https://matheigo.org/ で書く（2026-11-18 の whois で未登録）。取れなければ matheigo.github.io に置き換える | ROADMAP の決定 4。パスは同じなので置き換えだけで済む
